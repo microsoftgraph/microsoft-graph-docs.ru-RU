@@ -5,64 +5,64 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 27744d4d03ad7d54e2707f02c1a2d3f848f5ab9a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 05cc4cbcc320337bb8ef4a08a229893b309d3b47
+ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36363013"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36838985"
 ---
-# <a name="tablerowcollection-add"></a><span data-ttu-id="23f85-108">TableRowCollection: add</span><span class="sxs-lookup"><span data-stu-id="23f85-108">TableRowCollection: add</span></span>
+# <a name="tablerowcollection-add"></a><span data-ttu-id="f5480-108">TableRowCollection: add</span><span class="sxs-lookup"><span data-stu-id="f5480-108">TableRowCollection: add</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="23f85-109">Добавляет строки в конец таблицы.</span><span class="sxs-lookup"><span data-stu-id="23f85-109">Adds rows to the end of the table.</span></span> <span data-ttu-id="23f85-110">Обратите внимание, что API может принимать несколько строк данных с помощью этого API.</span><span class="sxs-lookup"><span data-stu-id="23f85-110">Note that the API can accept multiple rows data using this API.</span></span> <span data-ttu-id="23f85-111">Добавление по одной строке за раз может привести к ухудшению производительности.</span><span class="sxs-lookup"><span data-stu-id="23f85-111">Adding one row at a time could lead to performance degradation.</span></span> <span data-ttu-id="23f85-112">Рекомендуемый подход заключается в пакетировании строк в одном вызове, а не при вставке одиночной строки.</span><span class="sxs-lookup"><span data-stu-id="23f85-112">The recommended approach would be to batch the rows together in a single call rather than doing single row insertion.</span></span> <span data-ttu-id="23f85-113">Для достижения лучших результатов Соберите строки, которые необходимо вставить на стороне приложения, и выполните операцию добавления отдельных строк.</span><span class="sxs-lookup"><span data-stu-id="23f85-113">For best results, collect the rows to be inserted on the application side and perform single rows add operation.</span></span> <span data-ttu-id="23f85-114">Поэкспериментируйте с количеством строк, чтобы определить оптимальное количество строк для использования в едином вызове API.</span><span class="sxs-lookup"><span data-stu-id="23f85-114">Experiment with the number of rows to determine the ideal number of rows to use in single API call.</span></span> 
+<span data-ttu-id="f5480-109">Добавляет строки в конец таблицы.</span><span class="sxs-lookup"><span data-stu-id="f5480-109">Adds rows to the end of the table.</span></span> <span data-ttu-id="f5480-110">Обратите внимание, что API может принимать несколько строк данных с помощью этого API.</span><span class="sxs-lookup"><span data-stu-id="f5480-110">Note that the API can accept multiple rows data using this API.</span></span> <span data-ttu-id="f5480-111">Добавление по одной строке за раз может привести к ухудшению производительности.</span><span class="sxs-lookup"><span data-stu-id="f5480-111">Adding one row at a time could lead to performance degradation.</span></span> <span data-ttu-id="f5480-112">Рекомендуемый подход заключается в пакетировании строк в одном вызове, а не при вставке одиночной строки.</span><span class="sxs-lookup"><span data-stu-id="f5480-112">The recommended approach would be to batch the rows together in a single call rather than doing single row insertion.</span></span> <span data-ttu-id="f5480-113">Для достижения лучших результатов Соберите строки, которые необходимо вставить на стороне приложения, и выполните операцию добавления отдельных строк.</span><span class="sxs-lookup"><span data-stu-id="f5480-113">For best results, collect the rows to be inserted on the application side and perform single rows add operation.</span></span> <span data-ttu-id="f5480-114">Поэкспериментируйте с количеством строк, чтобы определить оптимальное количество строк для использования в едином вызове API.</span><span class="sxs-lookup"><span data-stu-id="f5480-114">Experiment with the number of rows to determine the ideal number of rows to use in single API call.</span></span> 
 
-## <a name="error-handling"></a><span data-ttu-id="23f85-115">Обработка ошибок</span><span class="sxs-lookup"><span data-stu-id="23f85-115">Error Handling</span></span>
+## <a name="error-handling"></a><span data-ttu-id="f5480-115">Обработка ошибок</span><span class="sxs-lookup"><span data-stu-id="f5480-115">Error Handling</span></span>
 
-<span data-ttu-id="23f85-116">Иногда при выполнении этого запроса может отображаться сообщение об ошибке 504 HTTP.</span><span class="sxs-lookup"><span data-stu-id="23f85-116">This request might occasionally receive a 504 HTTP error.</span></span> <span data-ttu-id="23f85-117">В этом случае нужно повторить запрос.</span><span class="sxs-lookup"><span data-stu-id="23f85-117">The appropriate response to this error is to repeat the request.</span></span>
+<span data-ttu-id="f5480-116">Иногда при выполнении этого запроса может отображаться сообщение об ошибке 504 HTTP.</span><span class="sxs-lookup"><span data-stu-id="f5480-116">This request might occasionally receive a 504 HTTP error.</span></span> <span data-ttu-id="f5480-117">В этом случае нужно повторить запрос.</span><span class="sxs-lookup"><span data-stu-id="f5480-117">The appropriate response to this error is to repeat the request.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="23f85-118">Разрешения</span><span class="sxs-lookup"><span data-stu-id="23f85-118">Permissions</span></span>
-<span data-ttu-id="23f85-p104">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="23f85-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f5480-118">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f5480-118">Permissions</span></span>
+<span data-ttu-id="f5480-p104">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f5480-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="23f85-121">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="23f85-121">Permission type</span></span>      | <span data-ttu-id="23f85-122">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="23f85-122">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f5480-121">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f5480-121">Permission type</span></span>      | <span data-ttu-id="f5480-122">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f5480-122">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="23f85-123">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="23f85-123">Delegated (work or school account)</span></span> | <span data-ttu-id="23f85-124">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="23f85-124">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="23f85-125">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="23f85-125">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="23f85-126">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="23f85-126">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="23f85-127">Для приложений</span><span class="sxs-lookup"><span data-stu-id="23f85-127">Application</span></span> | <span data-ttu-id="23f85-128">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="23f85-128">Not supported.</span></span> |
+|<span data-ttu-id="f5480-123">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f5480-123">Delegated (work or school account)</span></span> | <span data-ttu-id="f5480-124">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f5480-124">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="f5480-125">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f5480-125">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f5480-126">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f5480-126">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="f5480-127">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f5480-127">Application</span></span> | <span data-ttu-id="f5480-128">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f5480-128">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="23f85-129">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="23f85-129">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f5480-129">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f5480-129">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/rows/add
 POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="23f85-130">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="23f85-130">Request headers</span></span>
-| <span data-ttu-id="23f85-131">Имя</span><span class="sxs-lookup"><span data-stu-id="23f85-131">Name</span></span>       | <span data-ttu-id="23f85-132">Описание</span><span class="sxs-lookup"><span data-stu-id="23f85-132">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f5480-130">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f5480-130">Request headers</span></span>
+| <span data-ttu-id="f5480-131">Имя</span><span class="sxs-lookup"><span data-stu-id="f5480-131">Name</span></span>       | <span data-ttu-id="f5480-132">Описание</span><span class="sxs-lookup"><span data-stu-id="f5480-132">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="23f85-133">Авторизация</span><span class="sxs-lookup"><span data-stu-id="23f85-133">Authorization</span></span>  | <span data-ttu-id="23f85-p105">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="23f85-p105">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="23f85-136">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="23f85-136">Workbook-Session-Id</span></span>  | <span data-ttu-id="23f85-p106">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="23f85-p106">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="f5480-133">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f5480-133">Authorization</span></span>  | <span data-ttu-id="f5480-p105">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f5480-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f5480-136">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="f5480-136">Workbook-Session-Id</span></span>  | <span data-ttu-id="f5480-p106">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="f5480-p106">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="23f85-139">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="23f85-139">Request body</span></span>
-<span data-ttu-id="23f85-140">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="23f85-140">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f5480-139">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="f5480-139">Request body</span></span>
+<span data-ttu-id="f5480-140">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="f5480-140">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="23f85-141">Параметр</span><span class="sxs-lookup"><span data-stu-id="23f85-141">Parameter</span></span>    | <span data-ttu-id="23f85-142">Тип</span><span class="sxs-lookup"><span data-stu-id="23f85-142">Type</span></span>   |<span data-ttu-id="23f85-143">Описание</span><span class="sxs-lookup"><span data-stu-id="23f85-143">Description</span></span>|
+| <span data-ttu-id="f5480-141">Параметр</span><span class="sxs-lookup"><span data-stu-id="f5480-141">Parameter</span></span>    | <span data-ttu-id="f5480-142">Тип</span><span class="sxs-lookup"><span data-stu-id="f5480-142">Type</span></span>   |<span data-ttu-id="f5480-143">Описание</span><span class="sxs-lookup"><span data-stu-id="f5480-143">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="23f85-144">index</span><span class="sxs-lookup"><span data-stu-id="23f85-144">index</span></span>|<span data-ttu-id="23f85-145">number</span><span class="sxs-lookup"><span data-stu-id="23f85-145">number</span></span>|<span data-ttu-id="23f85-p107">Необязательный параметр. Определяет относительную позицию новой строки. Если параметру присвоено значение null, строка добавляется в конце. Все строки ниже вставляемой строки сдвигаются вниз. Используется нулевой индекс.</span><span class="sxs-lookup"><span data-stu-id="23f85-p107">Optional. Specifies the relative position of the new row. If null, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.</span></span>|
-|<span data-ttu-id="23f85-151">values</span><span class="sxs-lookup"><span data-stu-id="23f85-151">values</span></span>|<span data-ttu-id="23f85-152">(логическая или числовая) коллекция</span><span class="sxs-lookup"><span data-stu-id="23f85-152">(boolean or string or number) collection</span></span>|<span data-ttu-id="23f85-153">Необязательно.</span><span class="sxs-lookup"><span data-stu-id="23f85-153">Optional.</span></span> <span data-ttu-id="23f85-154">Двухмерный массив неформатированных значений строк таблицы.</span><span class="sxs-lookup"><span data-stu-id="23f85-154">A 2-dimensional array of unformatted values of the table rows.</span></span>|
+|<span data-ttu-id="f5480-144">index</span><span class="sxs-lookup"><span data-stu-id="f5480-144">index</span></span>|<span data-ttu-id="f5480-145">number</span><span class="sxs-lookup"><span data-stu-id="f5480-145">number</span></span>|<span data-ttu-id="f5480-p107">Необязательный параметр. Определяет относительную позицию новой строки. Если параметру присвоено значение null, строка добавляется в конце. Все строки ниже вставляемой строки сдвигаются вниз. Используется нулевой индекс.</span><span class="sxs-lookup"><span data-stu-id="f5480-p107">Optional. Specifies the relative position of the new row. If null, the addition happens at the end. Any rows below the inserted row are shifted downwards. Zero-indexed.</span></span>|
+|<span data-ttu-id="f5480-151">values</span><span class="sxs-lookup"><span data-stu-id="f5480-151">values</span></span>|<span data-ttu-id="f5480-152">(логическая или числовая) коллекция</span><span class="sxs-lookup"><span data-stu-id="f5480-152">(boolean or string or number) collection</span></span>|<span data-ttu-id="f5480-153">Необязательно.</span><span class="sxs-lookup"><span data-stu-id="f5480-153">Optional.</span></span> <span data-ttu-id="f5480-154">Двухмерный массив неформатированных значений строк таблицы.</span><span class="sxs-lookup"><span data-stu-id="f5480-154">A 2-dimensional array of unformatted values of the table rows.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="23f85-155">Отклик</span><span class="sxs-lookup"><span data-stu-id="23f85-155">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f5480-155">Отклик</span><span class="sxs-lookup"><span data-stu-id="f5480-155">Response</span></span>
 
-<span data-ttu-id="23f85-156">В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [воркбуктаблеров](../resources/workbooktablerow.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="23f85-156">If successful, this method returns `200 OK` response code and [workbookTableRow](../resources/workbooktablerow.md) object in the response body.</span></span>
+<span data-ttu-id="f5480-156">В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [воркбуктаблеров](../resources/workbooktablerow.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="f5480-156">If successful, this method returns `200 OK` response code and [workbookTableRow](../resources/workbooktablerow.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="23f85-157">Пример</span><span class="sxs-lookup"><span data-stu-id="23f85-157">Example</span></span>
-<span data-ttu-id="23f85-158">В этом примере две строки данных вставляются в конец таблицы.</span><span class="sxs-lookup"><span data-stu-id="23f85-158">In this example two rows of data are inserted at the end of the table.</span></span> 
+## <a name="example"></a><span data-ttu-id="f5480-157">Пример</span><span class="sxs-lookup"><span data-stu-id="f5480-157">Example</span></span>
+<span data-ttu-id="f5480-158">В этом примере две строки данных вставляются в конец таблицы.</span><span class="sxs-lookup"><span data-stu-id="f5480-158">In this example two rows of data are inserted at the end of the table.</span></span> 
 
-##### <a name="request"></a><span data-ttu-id="23f85-159">Запрос</span><span class="sxs-lookup"><span data-stu-id="23f85-159">Request</span></span>
-<span data-ttu-id="23f85-160">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="23f85-160">Here is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="f5480-159">Запрос</span><span class="sxs-lookup"><span data-stu-id="f5480-159">Request</span></span>
+<span data-ttu-id="f5480-160">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f5480-160">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="23f85-161">HTTP</span><span class="sxs-lookup"><span data-stu-id="23f85-161">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="f5480-161">HTTP</span><span class="sxs-lookup"><span data-stu-id="f5480-161">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tablerowcollection_add"
@@ -80,15 +80,19 @@ Content-length: 51
   ]
 }
 ```
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="23f85-162">JavaScript</span><span class="sxs-lookup"><span data-stu-id="23f85-162">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f5480-162">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f5480-162">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/tablerowcollection-add-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="ctabcsharp"></a>[<span data-ttu-id="f5480-163">C#</span><span class="sxs-lookup"><span data-stu-id="f5480-163">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/tablerowcollection-add-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="23f85-163">Отклик</span><span class="sxs-lookup"><span data-stu-id="23f85-163">Response</span></span>
-<span data-ttu-id="23f85-p109">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="23f85-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="f5480-164">Отклик</span><span class="sxs-lookup"><span data-stu-id="f5480-164">Response</span></span>
+<span data-ttu-id="f5480-p109">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f5480-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
