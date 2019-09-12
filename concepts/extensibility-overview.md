@@ -152,7 +152,6 @@ Azure AD поддерживает схожий тип расширения, из
 
 ## <a name="see-also"></a>См. также
 
-- 
-  [Домены Office 365](https://technet.microsoft.com/ru-RU/library/office-365-domains.aspx)
+- [Домены Office 365](https://technet.microsoft.com/ru-RU/library/office-365-domains.aspx)
 
 - [Добавление и подтверждение домена для клиента Office 365](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
