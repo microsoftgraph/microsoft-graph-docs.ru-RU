@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 05ea41eb7ec4a0c801587c0ce70040fd8489cb27
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: e7ee182238ea0b1f5216ac9aa79e776a0d225486
+ms.sourcegitcommit: 4ce5060cddfa92cc282321bd9cfbf0a39de51aae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450517"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "36853814"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -64,6 +64,7 @@ ms.locfileid: "36450517"
 |[assignLicense](../api/user-assignlicense.md)|[user](user.md)|Добавление или удаление подписок пользователя. Вы также можете включать и отключать отдельные планы, связанные с подпиской.|
 |[Перечисление licenseDetails](../api/user-list-licensedetails.md) |Коллекция объектов [licenseDetails](licensedetails.md)| Получение коллекции объектов licenseDetails.|
 |[checkMemberGroups](../api/user-checkmembergroups.md)|Коллекция строк|Проверка членства в списке групп. Это транзитивная проверка.|
+|[checkMemberObjects](../api/user-checkmemberobjects.md)|Коллекция строк|Проверка участия в списке группы, роли каталога или объектах административных единиц. Это транзитивная проверка.|
 |[delta](../api/user-delta.md)|Коллекция пользователей| Получение добавочных изменений для пользователей. |
 |[findMeetingTimes](../api/user-findmeetingtimes.md)|[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md)|Получение времени и местоположения для собрания с учетом доступности участника, а также ограничений по местоположению или времени.|
 |[findRoomLists](../api/user-findroomlists.md)|Коллекция [emailaddress.md](emailaddress.md) | Получение списка помещений, определенных в клиенте.|
@@ -198,7 +199,6 @@ ms.locfileid: "36450517"
 | Отношение | Тип |Описание|
 |:---------------|:--------|:----------|
 |agreementAcceptances|Коллекция [agreementAcceptance](agreementacceptance.md)| Состояния принятия пользователем условий использования. Только для чтения. Допускается значение null.|
-|analytics|Коллекция [userAnalytics](useranalytics.md)| Статистика активности пользователя и сопутствующие параметры. Только для чтения. Допускается значение null.|
 |calendar|[calendar](calendar.md)|Основной календарь пользователя. Только для чтения.|
 |calendarGroups|Коллекция [calendarGroup](calendargroup.md)|Группы календарей пользователя. Только для чтения. Допускается значение null.|
 |calendarView|Коллекция [event](event.md)|Представление календаря. Только для чтения. Допускается значение null.|
@@ -239,7 +239,6 @@ ms.locfileid: "36450517"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "analytics",
     "appRoleAssignments",
     "calendar",
     "calendarGroups",
@@ -339,7 +338,6 @@ ms.locfileid: "36450517"
   "usageLocation": "string",
   "userPrincipalName": "string",
   "userType": "string",
-  "analytics": [{"@odata.type": "microsoft.graph.userAnalytics"}],
   "calendar": {"@odata.type": "microsoft.graph.calendar"},
   "calendarGroups": [{"@odata.type": "microsoft.graph.calendarGroup"}],
   "calendarView": [{"@odata.type": "microsoft.graph.event"}],
