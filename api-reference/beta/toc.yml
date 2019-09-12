@@ -8028,6 +8028,8 @@
                   href: api/device-list-memberof.md
                 - name: Перечисление транзитивных групп устройств
                   href: api/device-list-transitivememberof.md
+                - name: Проверка объектов Member
+                  href: api/device-checkmemberobjects.md
             - name: Объект каталога
               href: resources/directoryobject.md
               items:
@@ -8470,6 +8472,8 @@
                   href: api/serviceprincipal-update.md
                 - name: Удаление субъекта службы
                   href: api/serviceprincipal-delete.md
+                - name: Проверка объектов Member
+                  href: api/serviceprincipal-checkmemberobjects.md
             - name: Подписанная единица SKU
               href: resources/subscribedsku.md
               items:
@@ -9697,7 +9701,7 @@
               items:
                 - name: Список
                   href: api/outlookuser-list-tasks.md
-                - name: Create
+                - name: Создание
                   href: api/outlookuser-post-tasks.md
                 - name: Получение
                   href: api/outlooktask-get.md
