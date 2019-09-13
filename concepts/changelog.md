@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: e46f95150bc0a50a43fc619955ce36adf48d95e3
-ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
+ms.openlocfilehash: fefe022cb3c2aafb14819f909efa58bc29fa8a95
+ms.sourcegitcommit: 4ce5060cddfa92cc282321bd9cfbf0a39de51aae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "36822755"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "36853807"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -95,10 +95,17 @@ ms.locfileid: "36822755"
 | Дополнение | Бета-версия | Добавлены следующие операции для поддержки ресурса unifiedRoleDefinition: <br><ul><li>[Список объектов unifiedRoleDefinition](/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta) — получение списка объектов unifiedRoleDefinition для поставщика.</li><li>[Создание объекта unifiedRoleDefinition](/graph/api/rbacapplication-post-roledefinitions?view=graph-rest-beta) — создание объекта unifiedRoleDefinition.</li><li>[Получение объекта unifiedRoleDefinition](/graph/api/unifiedroledefinition-get?view=graph-rest-beta) — извлечение свойств и связей объекта определения единой роли.</li><li>[Обновление объекта unifiedRoleDefinition](/graph/api/unifiedroledefinition-update?view=graph-rest-beta) — обновление свойств объекта unifiedRoleDefinition.</li><li>[Удаление объекта unifiedRoleDefinition](/graph/api/unifiedroledefinition-delete?view=graph-rest-beta) — удаление объекта unifiedRoleDefinition.</li></ul> |
 | Дополнение | Бета-версия | Добавлены следующие операции для поддержки ресурса unifiedRoleAssignment: <br><ul><li>[Список объектов unifiedRoleAssignment](/graph/api/rbacapplication-list-roleassignments?view=graph-rest-beta) — получение списка объектов unifiedRoleAssignment для поставщика.</li><li>[Создание объекта unifiedRoleAssignment]() — создание объекта unifiedRoleAssignment.</li><li>[Получение объекта unifiedRoleAssignment](/graph/api/unifiedroleassignment-get?view=graph-rest-beta) — извлечение свойств и связей объекта unifiedRoleAssignment.</li><li>[Удаление объекта unifiedRoleAssignment](/graph/api/unifiedroleassignment-delete?view=graph-rest-beta) — удаление объекта unifiedRoleAssignment. |
 | Дополнение | бета | Добавлена операция [Список объектов accessReviews](/graph/api/accessreview-list?view=graph-rest-beta). |
+| Дополнение | Бета | Добавлена операция [checkMemberObjects](/graph/api/device-checkmemberobjects?view=graph-rest-beta) для ресурса [device](/graph/api/resources/device?view=graph-rest-beta). |
+| Дополнение | бета | Добавлена операция [checkMemberObjects](/graph/api/directoryobject-checkmemberobjects?view=graph-rest-beta) для ресурса [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta). |
+| Дополнение | бета | Добавлена операция [checkMemberObjects](/graph/api/directoryrole-checkmemberobjects?view=graph-rest-beta) для ресурса [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-beta). |
+| Дополнение | бета | Добавлена операция [checkMemberObjects](/graph/api/group-checkmemberobjects?view=graph-rest-beta) для ресурса [group](/graph/api/resources/group?view=graph-rest-beta). |
+| Дополнение | Бета | Добавлена операция [checkMemberObjects](/graph/api/serviceprincipal-checkmemberobjects?view=graph-rest-beta) для ресурса [servicePrincipal](/graph/api/resources/serviceprinciple?view=graph-rest-beta). |
+| Дополнение | Бета-версия | Добавлена операция [checkMemberObjects](/graph/api/user-checkmemberobjects?view=graph-rest-beta) для ресурса[user](/graph/api/resources/user?view=graph-rest-beta). |
 |Дополнение  | Бета | Добавлены делегированные разрешения и [разрешения приложения для чтения контактов организации](permissions-reference.md#organizational-contact-permissions): OrgContact.Read.All |
 | Дополнение | Бета | Добавлен новый объект [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-beta). |
 | Дополнение | Бета | Добавлен новый сложный тип [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-beta). |
 | Дополнение | Бета | Добавлено новое отношение для ресурса **certificateBasedAuthConfiguration** в ресурсе [организации](/graph/api/resources/organization?view=graph-rest-beta). Это обеспечивает [аутентификацию на основе сертификата в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)|
+
 
 ### <a name="reports"></a>Отчеты
 
