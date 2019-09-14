@@ -3,12 +3,12 @@ title: Доступ к данным и методам с помощью Microsof
 description: Помимо чтения и записи данных с помощью API Microsoft Graph, вы можете использовать шаблоны запросов для просмотра ресурсов в Microsoft Graph. Документ метаданных поможет вам разобраться в модели данных ресурсов и отношений в Microsoft Graph.
 localization_priority: Priority
 scenarios: getting-started
-ms.openlocfilehash: 581efe1b14bb156b3ac53a6a06bf731f11150cb0
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: b2f9f5002b4743a61bbaf18af2408e10de12d463
+ms.sourcegitcommit: c739cbfab42181adfcda409ca12514ab7f4832b1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791045"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "36982875"
 ---
 # <a name="access-data-and-methods-by-navigating-microsoft-graph"></a>Доступ к данным и методам с помощью Microsoft Graph
 
@@ -36,7 +36,7 @@ ms.locfileid: "36791045"
 > [!NOTE]
 > - Используйте идентификаторы ресурсов в том же регистре, в котором они возвращаются из API Microsoft Graph.
 > - Считайте, что идентификаторы ресурсов, назначаемые значения и другие значения в кодировке base64 указываются _с учетом регистра_.
-> - Считайте, что имена ресурсов URL-адреса пути, параметры запросов, а также параметры и значения действий указываются _без учета регистра_.
+> - Считайте, что имена ресурсов URL-адреса пути, параметры запросов, имена действий и функций, их параметры текста запроса, включая названия и значения свойств API указываются _без учета регистра_.
 
 ## <a name="view-a-collection-of-resources"></a>Просмотр коллекции ресурсов
 
