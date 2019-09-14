@@ -3,14 +3,14 @@ title: Тип ресурса servicePrincipal
 description: Представляет экземпляр приложения в каталоге. Наследуется от directoryObject.
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 02cd5ee8d20ce963205d959cb91229a5621fe92f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: microsoft-identity-platform
+author: davidmu1
+ms.openlocfilehash: b50a23d2120222d2fd24ede4d4981bba3aa366dc
+ms.sourcegitcommit: 4ce5060cddfa92cc282321bd9cfbf0a39de51aae
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008490"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "36853835"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
@@ -120,9 +120,10 @@ ms.locfileid: "36008490"
 |[Перечисление владельцев](../api/serviceprincipal-list-owners.md) |Коллекция [directoryObject](directoryobject.md)| Получение коллекции объектов owner.|
 |[Обновление](../api/serviceprincipal-update.md) | [servicePrincipal](serviceprincipal.md)  |Обновление объекта servicePrincipal. |
 |[Удаление](../api/serviceprincipal-delete.md) | Нет. |Удаление объекта servicePrincipal. |
-|[checkMemberGroups](../api/serviceprincipal-checkmembergroups.md)|Коллекция String||
-|[getMemberGroups](../api/serviceprincipal-getmembergroups.md)|Коллекция String||
-|[getMemberObjects](../api/serviceprincipal-getmemberobjects.md)|Коллекция String||
+|[checkMemberGroups](../api/serviceprincipal-checkmembergroups.md)|Коллекция String|Проверка участия в указанном списке групп.|
+|[checkMemberObjects](../api/serviceprincipal-checkmemberobjects.md)|Коллекция String|Проверка участия в указанном списке группы, роли каталога или объектах административных единиц.|
+|[getMemberGroups](../api/serviceprincipal-getmembergroups.md)|Коллекция String|Список групп, в которых участвует субъект-служба.|
+|[getMemberObjects](../api/serviceprincipal-getmemberobjects.md)|Коллекция String|Список групп и ролей каталога, в которых участвует субъект-служба.|
 |[delta](../api/serviceprincipal-delta.md)|Коллекция servicePrincipal| Получение добавочных изменений для субъектов-служб. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
