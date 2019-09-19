@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: enumPageType
-ms.openlocfilehash: 687c2ea46e5e5768a14fa84ae74109fee830d5a3
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 108c17618d8042057263912d015f8a0fa6d2e7ce
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633848"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036209"
 ---
 ### <a name="contactrelationship-values"></a>значения Контактрелатионшип
 
@@ -412,34 +412,34 @@ ms.locfileid: "36633848"
 
 ### <a name="categorycolor-values"></a>значения Категориколор
 
-| Элемент   |Значение    
+| Элемент   |Значение
 |:---------|:--------
-| none     | –1      
-| preset0  | нуль       
-| preset1  | 1,1       
-| preset2  | 2       
-| preset3  | 4       
-| preset4  | SP4       
-| preset5  | 17:00       
-| preset6  | 6        
-| preset7  | 7        
-| preset8  | 8        
-| preset9  | 9        
-| preset10 | 10       
-| preset11 | -11:00      
-| preset12 | 12      
-| preset13 | 13      
-| preset14 | 14      
-| preset15 | означает      
-| preset16 | столбцов      
-| preset17 | 17      
-| preset18 | 0,18      
-| preset19 | 19      
-| preset20 | двадцать      
-| preset21 | 21      
-| preset22 | 22      
-| preset23 | 23      
-| preset24 | открыт      
+| none     | –1
+| preset0  | нуль
+| preset1  | 1,1
+| preset2  | 2
+| preset3  | 4
+| preset4  | SP4
+| preset5  | 17:00
+| preset6  | 6 
+| preset7  | 7 
+| preset8  | 8 
+| preset9  | 9 
+| preset10 | 10 
+| preset11 | -11:00
+| preset12 | 12
+| preset13 | 13
+| preset14 | 14
+| preset15 | означает
+| preset16 | столбцов
+| preset17 | 17
+| preset18 | 0,18
+| preset19 | 19
+| preset20 | двадцать
+| preset21 | 21
+| preset22 | 22
+| preset23 | 23
+| preset24 | открыт
 
 ### <a name="alertfeedback-values"></a>значения Алертфидбакк
 
@@ -655,3 +655,12 @@ Enum для типов значений реестра, определенных
 | конфирмедкомпромисед
 | unknownFutureValue
 
+### <a name="exchangeidformat-values"></a>значения Ексчанжеидформат
+
+|Member|
+|:---|
+|Код|
+|евсид|
+|иммутаблинтрид|
+|рестид|
+|рестиммутаблинтрид|
