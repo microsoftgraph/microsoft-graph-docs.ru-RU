@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: 2291f0009c7d54a62ac30d448a9f97ff8935a569
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: e267cda81418e7dfce1df61f389a8ed9e0d99339
+ms.sourcegitcommit: 997fbfe36b518e0a8c230ae2e62666bb5c829e7e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36726314"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37041879"
 ---
 # <a name="microsoft-graph-security-api-error-responses"></a>Ответы на ошибки API безопасности Microsoft Graph
 
@@ -53,13 +53,16 @@ Warning : 199 - "{Vendor2}/{Provider 2}/504/10000",    (usual timeout limit is s
 
 ## <a name="threat-indicator-bulk-action-errors"></a>Ошибки массовых действий индикатора угроз
 
-Групповые действия (то есть создание, обновление и удаление) могут привести к созданию двух различных возможных кодов ошибок.  Код ошибки 400 указывает на то, что во время сериализации во время сериализации получено сообщение об ошибке, а код ошибки 206 указывает на то, что одно или несколько массовых действий завершились неудачно, если они были объединены со своим поставщиком. Ответ будет содержать сведения об успешном выполнении и ошибках отдельных поставщиков для каждого индикатора логики операций с угрозами. В отличие от оповещений, все возможные сведения об ошибках будут содержаться в тексте ответа для массовых действий индикатора угроз.
+Групповые действия (создание, обновление, удаление) могут создавать два различных возможных кода ошибки: 
+
+- Код ошибки 400 указывает на то, что во время сериализации получено сообщение об ошибке.
+- Код ошибки 206 указывает на то, что одно или несколько массовых действий завершились неудачно, если они были объединены со своим поставщиком. Ответ будет содержать сведения об успешном выполнении и ошибках отдельных поставщиков для каждого индикатора логики операций с угрозами. В отличие от [оповещений](https://docs.microsoft.com/en-us/graph/api/resources/security-api-overview?view=graph-rest-1.0#alerts), все возможные сведения об ошибках будут содержаться в теле ответа для массовых действий [тииндикатор](https://docs.microsoft.com/en-us/graph/api/resources/security-api-overview?view=graph-rest-beta#threat-indicators-preview) .
 
 ## <a name="constraints"></a>Провероч
 
 Параметр `$top` запроса OData имеет предел в 1000 оповещений, а сочетание `$top`  +  `$skip` параметров запроса OData не может превышать 6000 оповещений. Например, `/security/alerts?$top=10&$skip=5990` вернет код отклика `200 OK`, но `/security/alerts?$top=10&$skip=5991` вернет код отклика `400 Bad Request`.
 
-Для обхода этого ограничения необходимо использовать параметр запроса `$filter` OData с `eventDateTime` объектом Alert из API безопасности Microsoft Graph, используя `?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}` и заменив значение DateTime на Последнее (6000th) оповещение. Кроме того, можно задать диапазон для объекта `eventDateTime`; Например, *Alerts? $Filter = евентдатетиме **gt** 2018-11 –**11**T00:00:00.000 z&евентдатетиме **lt** 2018-11 –**12**T00:00:00.000 z*
+Для этого ограничения требуется использовать параметр запроса `$filter` OData с `eventDateTime` объектом Alert из API безопасности Microsoft Graph, используя `?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}` и заменив значение DateTime на Последнее (6000th) оповещение. Кроме того, можно задать диапазон для объекта `eventDateTime`; Пример: `alerts?$filter=eventDateTime **gt** 2018-11-**11**T00:00:00.000Z&eventDateTime **lt** 2018-11-**12**T00:00:00.000Z`.
 
 ## <a name="see-also"></a>См. также
 

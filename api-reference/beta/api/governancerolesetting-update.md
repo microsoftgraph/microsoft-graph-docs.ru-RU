@@ -3,14 +3,14 @@ title: Обновление Говернанцеролесеттинг
 description: Обновление свойств объекта Говернанцеролесеттинг.
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: 6cbcdfbd3406226e23000c472467a42604c16c90
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+author: davidmu1
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 20e41f118f0da2248f0744c64ab25d69da8061f2
+ms.sourcegitcommit: 997fbfe36b518e0a8c230ae2e62666bb5c829e7e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419673"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37041781"
 ---
 # <a name="update-governancerolesetting"></a>Обновление Говернанцеролесеттинг
 
@@ -37,7 +37,7 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация  | Bearer {code}|
+| Авторизация  | Bearer {token}|
 | Content-Type  | application/json|
 
 
@@ -48,7 +48,7 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 |:---------------|:--------|:----------|
 |админелигиблесеттингс|Коллекция [говернанцерулесеттинг](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются, когда администратор пытается добавить подходящего назначения роли.|
 |админмемберсеттингс|Коллекция [говернанцерулесеттинг](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются при попытке администратора добавить назначение роли прямого члена.|
-|усерелигиблесеттингс|Коллекция [говернанцерулесеттинг](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются, когда пользователь пытается добавить подходящего назначения роли. В настоящее время этот `pimforazurerbac` сценарий не поддерживается и может быть доступен в следующих сценариях.|
+|усерелигиблесеттингс|Коллекция [говернанцерулесеттинг](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются, когда пользователь пытается добавить подходящего назначения роли. |
 |усермемберсеттингс|Коллекция [говернанцерулесеттинг](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются, когда пользователь пытается активировать назначение роли.|
 
 ## <a name="response"></a>Отклик
@@ -72,7 +72,7 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
   "name": "update_governancerolesetting"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/privilegedAccess/pimforazurerbac/roleSettings/5fb5aef8-1081-4b8e-bb16-9d5d0385bab5
+PATCH https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleSettings/5fb5aef8-1081-4b8e-bb16-9d5d0385bab5
 Content-type: application/json
 Content-length: 350
 
