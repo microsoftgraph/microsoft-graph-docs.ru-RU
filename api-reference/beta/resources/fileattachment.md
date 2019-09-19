@@ -5,18 +5,18 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: angelgolfer-ms
-ms.openlocfilehash: ab81c67bbf0c4d7ab6699d17977c4d1a3907f94e
-ms.sourcegitcommit: 496269b62d42cb7a96752a77b0f2e0cb16918f0b
+ms.openlocfilehash: 2b73c69b7fdb7099994e9925815d80e2bf99d5f6
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36484319"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036223"
 ---
 # <a name="fileattachment-resource-type"></a>Тип ресурса fileAttachment
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Файл (например, текстовый файл или документ Word), присоединенный к событию, [сообщению](../resources/message.md), [задаче Outlook](../resources/outlooktask.md)или [POST](../resources/post.md). [](../resources/event.md) Свойство **contentBytes** включает содержимое файла в кодировке Base 64.  
+Файл (например, текстовый файл или документ Word), присоединенный к пользовательскому [событию](../resources/event.md), [сообщению](../resources/message.md), [задаче Outlook](../resources/outlooktask.md)или [POST](../resources/post.md). Свойство **contentBytes** включает содержимое файла в кодировке Base 64.  
 
 При создании вложенного файла включите в текст запроса следующее:
 
@@ -29,14 +29,14 @@ ms.locfileid: "36484319"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Чтение свойств и связей объекта fileAttachment.|
+|[Получение](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Чтение свойств, связей или необработанного содержимого объекта fileAttachment.|
 |[Удаление](../api/attachment-delete.md) | Нет |Удаление объекта fileAttachment. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |contentBytes|EDM. binary|Содержимое файла в кодировке base64.|
-|contentId|String|Идентификатор вложения в хранилище Exchange.|
+|contentId|String.|Идентификатор вложения в хранилище Exchange.|
 |contentLocation|String|Не используйте это свойство, так как оно не поддерживается.|
 |contentType|String|Тип контента этого вложения.|
 |id|Строка|Идентификатор вложения.|

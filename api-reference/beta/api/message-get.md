@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ce6b071690a65714cc8414c2c93af215d92f7c1e
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 0746cddf987c6fed21fb27c2e0fffb09b596c520
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36726132"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036174"
 ---
 # <a name="get-message"></a>Вывод сообщения
 
@@ -89,8 +89,10 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 ## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [message](../resources/message.md) в тексте отклика.
-## <a name="example"></a>Пример
-##### <a name="request-1"></a>Запрос 1
+
+## <a name="examples"></a>Примеры
+### <a name="example-1"></a>Пример 1
+#### <a name="request"></a>Запрос
 В первом примере показано получение указанного сообщения. Он не задает заголовок, указывающий нужный формат возвращаемого текста.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
@@ -116,7 +118,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 
 ---
 
-##### <a name="response-1"></a>Отклик 1
+#### <a name="response"></a>Ответ
 Ниже приведен пример отклика. Свойства **Body** и **uniqueBody** возвращаются в формате HTML по умолчанию.
 Note: объект Response, показанный здесь, усекается для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
@@ -146,7 +148,9 @@ Content-length: 523
 }
 ```
 
-##### <a name="request-2"></a>Запрос 2
+
+### <a name="example-2"></a>Пример 2
+#### <a name="request"></a>Запрос
 В следующем примере вошедшего пользователя является дана свопе. В этом примере показано, как получить сведения обо всех упоминаниях в заданном сообщении в почтовом ящике пользователя дана.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
@@ -172,7 +176,7 @@ GET https://graph.microsoft.com/beta/me/messages/AQMkADJmMTUAAAgVZAAAA/?$expand=
 
 ---
 
-##### <a name="response-2"></a>Ответ 2
+#### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -270,8 +274,8 @@ Content-length: 2248
 }
 ```
 
-
-##### <a name="request-3"></a>Запрос 3
+### <a name="example-3"></a>Пример 3
+#### <a name="request"></a>Запрос
 
 В третьем примере показано, как использовать `Prefer: outlook.body-content-type="text"` заголовок для получения **основного текста** и **uniqueBody** указанного сообщения в текстовом формате.
 
@@ -302,7 +306,7 @@ Prefer: outlook.body-content-type="text"
 ---
 
 
-##### <a name="response-3"></a>Ответ 3
+#### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика. Note: ответ содержит `Preference-Applied: outlook.body-content-type` заголовок для подтверждения заголовка `Prefer: outlook.body-content-type` запроса.
 <!-- {
@@ -314,7 +318,6 @@ Prefer: outlook.body-content-type="text"
 HTTP/1.1 200 OK
 Content-type: application/json
 Preference-Applied: outlook.body-content-type="text"
-Content-length: 1550
 
 {
     "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/messages(subject,body,bodyPreview,uniqueBody)/$entity",
@@ -332,8 +335,8 @@ Content-length: 1550
     }
 }
 ```
-
-##### <a name="request-4"></a>Запрос 4
+### <a name="example-4"></a>Пример 4
+#### <a name="request"></a>Запрос
 
 В четвертом примере показано, как получить заголовки сообщений Интернета для определенного сообщения.  
 
@@ -363,7 +366,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGVmMDEz/?$select=internetM
 ---
 
 
-##### <a name="response-4"></a>Отклик 4
+#### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика. Note: количество заголовков сообщений в Интернете в объекте Response было сокращено для краткости.
 
@@ -409,8 +412,8 @@ Content-type: application/json
 ## <a name="see-also"></a>См. также
 
 - [Добавление пользовательских данных в ресурсы с помощью расширений](/graph/extensibility-overview)
-- [Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)](/graph/extensibility-open-users)
-- [Добавление пользовательских данных в ресурсы group с помощью расширений схемы (предварительная версия)](/graph/extensibility-schema-groups)
+- [Добавление пользовательских данных в ресурсы user с помощью открытых расширений](/graph/extensibility-open-users)
+- [Добавление пользовательских данных в группы с помощью расширений схемы](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

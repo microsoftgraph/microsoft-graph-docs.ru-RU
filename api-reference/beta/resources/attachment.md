@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: angelgolfer-ms
-ms.openlocfilehash: da7e66d1edbda224fe547b7e7afc8fd88dc5e5aa
-ms.sourcegitcommit: 83a053067f6248fb49ec5d473738ab1555fb4295
+ms.openlocfilehash: a71d7940e6825659143e69b2af6290f0671f59ae
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/24/2019
-ms.locfileid: "36622638"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036100"
 ---
 # <a name="attachment-resource-type"></a>Тип ресурса attachment
 
@@ -32,7 +32,7 @@ ms.locfileid: "36622638"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение вложения](../api/attachment-get.md) | [attachment](attachment.md) |Считывание свойств и связей вложений, вложенных в событие пользователя, сообщение, задачу Outlook или POST.|
+|[Получение вложения](../api/attachment-get.md) | [attachment](attachment.md) |Чтение свойств, связей или необработанного содержимого вложения, вложенного в пользовательское событие, сообщение, задачу Outlook или POST.|
 |[Добавление вложения в событие пользователя](../api/event-post-attachments.md) | [attachment](attachment.md) |Добавление файла, элемента или ссылки на вложение в событие в календаре пользователя.|
 |[Добавление вложения в сообщение](../api/message-post-attachments.md) | [attachment](attachment.md) |Добавление в сообщение файла, элемента или ссылки в качестве вложения.|
 |[Добавление вложения к задаче Outlook](../api/outlooktask-post-attachments.md) | [attachment](attachment.md) |Добавление файла, элемента или ссылки на вложение к задаче Outlook.|

@@ -5,23 +5,23 @@ localization_priority: Normal
 doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: de8243597044e2077c4b2a1b8b91f35d2b6eecca
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: a43cda1f55516d61383f6a31c1742d87eb5c42d2
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36718963"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036132"
 ---
 # <a name="get-attachment"></a>Получение вложения
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Считывание свойств и связей вложений, вложенных в [событие](../resources/event.md)пользователя, [сообщение](../resources/message.md), [задачу Outlook](../resources/outlooktask.md)или [POST](../resources/post.md).
+Чтение свойств, связей или необработанного содержимого вложения, вложенного в пользовательское [событие](../resources/event.md), [сообщение](../resources/message.md), [задачу Outlook](../resources/outlooktask.md)или [POST](../resources/post.md).
 
 Допустимые типы вложений:
 
 * файл (ресурс [fileAttachment](../resources/fileattachment.md));
-* элемент (контакт, событие или сообщение, представленные ресурсом [itemAttachment](../resources/itemattachment.md)); Вы можете использовать `$expand` для получения других свойств этого элемента. См. [пример](#request-2) ниже.
+* элемент (контакт, событие или сообщение, представленные ресурсом [itemAttachment](../resources/itemattachment.md)); Вы можете использовать `$expand` для получения других свойств этого элемента. См. [пример](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message).
 * ссылка на файл (ресурс [referenceAttachment](../resources/referenceattachment.md)).
 
 Все эти типы ресурсов вложений являются производными от ресурса [attachment](../resources/attachment.md).
@@ -56,9 +56,9 @@ ms.locfileid: "36718963"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-В этом разделе показан синтаксис HTTP-запроса GET для каждой сущности ([событие](../resources/event.md), [сообщение](../resources/message.md), [задача Outlook](../resources/outlooktask.md)или [POST](../resources/post.md)), поддерживающих вложения:
+В этом разделе показан синтаксис HTTP-запроса GET для каждого из сущностей ([event](../resources/event.md), [Message](../resources/message.md), [Task Task](../resources/outlooktask.md)и [POST](../resources/post.md)), поддерживающих вложения:
 
-- Чтобы получить свойства и связи вложения, укажите идентификатор вложения для индексирования в коллекции вложений, **** прикрепленных к указанному событию [](../resources/event.md), [сообщению](../resources/message.md), [задаче Outlook](../resources/outlooktask.md)или экземпляру [POST](../resources/post.md) .
+- Чтобы получить свойства и связи вложения, укажите идентификатор вложения для индексирования в коллекции **вложений** , прикрепленных к указанному [событию](../resources/event.md), [сообщению](../resources/message.md), [задаче Outlook](../resources/outlooktask.md)или экземпляру [POST](../resources/post.md) .
 - Если вложение представляет собой файл или элемент Outlook (контакт, событие или сообщение), вы можете получить необработанное содержимое вложения, добавив сегмент `/$value` пути в URL-адрес запроса.
 
 Вложение [события](../resources/event.md):
@@ -118,7 +118,7 @@ GET /me/outlook/tasks/{id}/attachments/{id}/$value
 GET /users/{id}/outlook/tasks/{id}/attachments/{id}/$value
 ```
 
-Вложение [записи](../resources/post.md) в [поток](../resources/conversationthread.md) , принадлежащее беседе группы [](../resources/conversation.md) :
+Вложение [записи](../resources/post.md) в [поток](../resources/conversationthread.md) , принадлежащее [беседе](../resources/conversation.md) группы:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -147,6 +147,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$va
 В случае успешного выполнения метод GET возвращает код `200 OK` отклика. 
 
 Если вы получаете свойства и связи вложения, текст отклика включает объект [вложения](../resources/attachment.md) .
+Кроме того, возвращаются свойства этого типа вложения: fileAttachment, [itemAttachment или referenceAttachment.
 
 Если вы получаете необработанное содержимое вложения файла или элемента, текст отклика включает необработанное значение вложения.
 
@@ -216,7 +217,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-В первом примере показано, как получить вложенный элемент в сообщении. Возвращаются свойства **itemAttachment**.
+В следующем примере показано, как получить вложение элемента для сообщения. Возвращаются свойства **itemAttachment**.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -271,7 +272,7 @@ Content-type: application/json
 ### <a name="example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message"></a>Пример 3: разверните и получите свойства элемента, вложенного в сообщение.
 #### <a name="request"></a>Запрос
 
-В следующем примере показано, как `$expand` получить свойства элемента (Event, Message, Task Task или POST), вложенных в сообщение. В этом примере вложением является сообщением. Свойства вложенного сообщения также возвращаются.
+В следующем примере показано, как `$expand` получить свойства элемента (контакта, события или сообщения), вложенного в сообщение. В этом примере вложением является сообщением. Свойства вложенного сообщения также возвращаются.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -536,7 +537,7 @@ END:VCARD
 GET https://graph.microsoft.com/beta/me/messages/AAMkADVIOAAA=/attachments/AAMkADVIOAAABEgAQACvkutl6c4FMifPyS6NvXsM=/$value
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 <!-- {
