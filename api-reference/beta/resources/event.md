@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 2604a56097635f8211824527dc031483d5c2e42a
-ms.sourcegitcommit: 23aa2941cfb8bd744d8d59e8bba9d2c5f57f8e29
+ms.openlocfilehash: 79c10718ab03cd23d03f9b6b9e9f3e2e2acfa31d
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "36667514"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036391"
 ---
 # <a name="event-resource-type"></a>Тип ресурса event
 
@@ -135,17 +135,21 @@ ms.locfileid: "36667514"
 |webLink|String|URL-адрес для открытия события в Outlook в Интернете.<br/><br/>Outlook в Интернете открывает это событие в браузере, если выполнен вход в почтовый ящик. В противном случае Outlook в Интернете предлагает выполнить вход.<br/><br/>Доступ к этому URL-адресу можно получить из объекта iFrame.|
 
 > [!NOTE]
-> Свойство **webLink** указывает URL-адрес, по которому можно открыть событие только в более ранних версиях Outlook в Интернете. Ниже представлен формат URL-адреса, где _{event-id}_  — это зашифрованное в виде URL-адреса значение свойства **id**.
+> Свойство **webLink** указывает URL-адрес, по которому можно открыть событие только в более ранних версиях Outlook в Интернете. Ниже представлен формат URL-адреса, где _{event-id}_ — это _**зашифрованное в виде URL-адреса**_ значение свойства **id**.
 >
-> `https://outlook.office365.com/owa/?itemid={event-id}&exvsurl=1&path=/calendar/item`
+> * Для рабочих или учебных учетных записей: `https://outlook.office365.com/owa/?itemid={event-id}&exvsurl=1&path=/calendar/item`
 >
-> Чтобы открыть URL-адрес в текущей версии Outlook в Интернете, преобразуйте его в следующий формат:
+> * Для учетных записей Майкрософт: `https://outlook.live.com/owa/?itemid={event-id}&exvsurl=1&path=/calendar/item`
 >
-> `https://outlook.office365.com/calendar/item/{event-id}`
+> Чтобы открыть событие в текущей версии Outlook в Интернете, преобразуйте URL-адрес в следующие форматы и используйте этот URL-адрес для открытия события: 
+>
+> * Для рабочих или учебных учетных записей: `https://outlook.office365.com/calendar/item/{event-id}`
+>
+> * Для учетных записей Майкрософт: `https://outlook.live.com/calendar/item/{event-id}`
 
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |attachments|Коллекция [Attachment](attachment.md)|Коллекция вложений [FileAttachment](fileattachment.md), [ItemAttachment](itemattachment.md) и [referenceAttachment](referenceattachment.md) для события. Свойство навигации. Только для чтения. Допускается значение null.|
 |calendar|[Calendar](calendar.md)|Календарь, который содержит событие. Свойство навигации. Только для чтения.|

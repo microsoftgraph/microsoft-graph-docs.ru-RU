@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: eead2eddd7f0980ba0889ece3d84861bcdf3c323
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cd998fd15390edef56554e1b6f1c37301d7b0ff8
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007727"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036352"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
@@ -34,7 +34,6 @@ ms.locfileid: "36007727"
 |[Распаковка команды](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Восстановление команды в состояние чтения и записи. |
 |[Перечисление ваших команд](../api/user-list-joinedteams.md) | Коллекция [team](team.md) | Перечисление команд, в которых вы являетесь участником. |
 |[Перечисление всех команд](/graph/teams-list-all-teams) | Коллекция [group](group.md) | Перечисление всех групп, содержащих команды. |
-|[Публикация приложений в организации](../resources/teamsapp.md)| [teamsApp](../resources/teamsapp.md) | Создание приложений Teams, видимых только для вашей организации. |
 |[Добавление приложения в команду](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsappinstallation.md) | Добавляет (устанавливает) приложение в команду.|
 |[Добавление вкладки в канал](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | Добавляет (устанавливает) вкладку в канал команды.|
 |[Перечисление сообщений в каналах](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | [Получение сообщений в канале](../api/channel-list-messages.md) |
@@ -61,14 +60,13 @@ ms.locfileid: "36007727"
 
 ## <a name="relationships"></a>Связи
 
-| Отношение | Тип | Описание |
+| Связь | Тип | Описание |
 |:---------------|:--------|:----------|
-|apps|Коллекция [teamsApp](teamsapp.md)| (Устарело) Приложения, установленные в команде.|
 |channels|Коллекция [channel](channel.md)|Коллекция каналов и сообщений, связанных с командой.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|Приложения, установленные в команде.|
 |owners|[user](user.md)| Список владельцев команды. В настоящее время при создании группы с использованием разрешений для приложения необходимо указать только одного владельца. При использовании делегированных разрешений нельзя указать владельца (владельцем является текущий пользователь). Владельца необходимо указать в виде ИД объекта (GUID), а не имени участника-пользователя (UPN). |
 |operations|Коллекция [teamsAsyncOperation](teamsasyncoperation.md)| Асинхронные операции, которые выполнялись или выполняются для этой команды. | 
-|primaryChannel|[channel](channel.md)|Основной канал, связанный с командой.|
+|primaryChannel|[channel](channel.md)| Общий канал для команды. | 
 |schedule|[schedule](schedule.md)| Расписание смен для команды.|
 |шаблон|[teamsTemplate](teamstemplate.md)| Шаблон, из которого создана команда. См. [доступные шаблоны](https://docs.microsoft.com/ru-RU/MicrosoftTeams/get-started-with-teams-templates). |
 
