@@ -78,7 +78,7 @@ items:
             href: outlook-schedule-recurring-events.md
           - name: Получение общих событий
             href: outlook-get-shared-events-calendars.md
-          - name: Неизменяемый идентификатор (предварительная версия)
+          - name: Неизменяемый идентификатор
             href: outlook-immutable-id.md
       - name: Взаимодействие с разными устройствами
         displayName: Project Rome
@@ -136,7 +136,7 @@ items:
             href: outlook-mail-concept-overview.md
           - name: Автоматизация обмена сообщениями
             href: outlook-create-send-messages.md
-          - name: Получение содержимого MIME (предварительная версия)
+          - name: Получение содержимого MIME
             href: outlook-get-mime-message.md
           - name: Получение общих сообщений
             href: outlook-share-messages-folders.md
@@ -144,7 +144,7 @@ items:
             href: outlook-send-mail-from-other-user.md
           - name: Упорядочение сообщений
             href: outlook-organize-messages.md
-          - name: Неизменяемый идентификатор (предварительная версия)
+          - name: Неизменяемый идентификатор
             href: outlook-immutable-id.md
       - name: Примечания
         displayName: OneNote
@@ -207,7 +207,7 @@ items:
             href: outlook-contacts-concept-overview.md
           - name: Получение общих контактов
             href: outlook-get-shared-contacts-folders.md
-          - name: Неизменяемый идентификатор (предварительная версия)
+          - name: Неизменяемый идентификатор
             href: outlook-immutable-id.md
       - name: Отчеты
         href: reportroot-concept-overview.md
