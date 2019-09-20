@@ -33,7 +33,7 @@
         - name: Регулирование
           href: /graph/throttling?context=graph/api/beta
         - name: Уведомления об изменениях
-          displayname: 'Webhooks, Azure AD, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
+          displayname: 'Webhooks, Azure AD, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
           items:
             - name: Общие сведения
               href: /graph/webhooks?context=graph/api/beta
@@ -7490,7 +7490,7 @@
                 - name: Получение ошибок синхронизации
                   href: api/educationsynchronizationerrors-get.md
         - name: Файлы
-          displayName: 'OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint'
+          displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
           items:
             - name: Общие сведения
               href: resources/onedrive.md
@@ -9205,7 +9205,7 @@
             - name: Ошибки
               href: resources/security-error-codes.md
         - name: Сайты и списки
-          displayName: 'SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal'
+          displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
           items:
             - name: Общие сведения
               href: resources/sharepoint.md
@@ -9952,7 +9952,7 @@
                 - name: Удаление расширения схемы
                   href: api/schemaextension-delete.md
             - name: Уведомления об изменениях
-              displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
+              displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
               items:
                 - name: Обзор
                   href: resources/webhooks.md

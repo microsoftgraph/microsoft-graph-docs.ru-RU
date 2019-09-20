@@ -4,7 +4,7 @@
       href: /graph/overview
     - name: Получение маркеров аутентификации
       items:
-        - name: Обзор
+        - name: Общие сведения
           href: /graph/auth/index?context=graph/api/1.0
         - name: Основы
           href: /graph/auth/auth-concepts?context=graph/api/1.0
@@ -22,7 +22,7 @@
           href: /graph/auth-limit-mailbox-access?context=graph/api/1.0
     - name: Использование API
       items:
-        - name: Обзор
+        - name: Общие сведения
           href: /graph/use-the-api?context=graph/api/1.0
         - name: Разбиение на страницы
           href: /graph/paging?context=graph/api/1.0
@@ -33,9 +33,9 @@
         - name: Регулирование
           href: /graph/throttling?context=graph/api/1.0
         - name: Уведомления об изменениях
-          displayname: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
+          displayname: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: /graph/webhooks?context=graph/api/1.0
             - name: Руководство
               href: /graph/tutorials/change-notifications
@@ -44,7 +44,7 @@
         - name: Отслеживание изменений
           displayname: 'Delta query, Outlook calendar, Groups, Outlook mail, Users'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: /graph/delta-query-overview?context=graph/api/1.0
             - name: Получение изменений для событий (пример)
               href: /graph/delta-query-events?context=graph/api/1.0
@@ -57,7 +57,7 @@
         - name: Добавление пользовательских данных
           displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: /graph/extensibility-overview?context=graph/api/1.0
             - name: Использование открытых расширений (пример)
               href: /graph/extensibility-open-users?context=graph/api/1.0
@@ -71,7 +71,7 @@
         - name: Azure AD Graph
           displayname: 'Migration, Azure AD Graph'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: /graph/migrate-azure-ad-graph-overview?context=graph/api/1.0
             - name: Контрольный список для переноса приложений
               href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
@@ -156,11 +156,11 @@
     - name: Справочник по версии 1.0
       expanded: true
       items:
-        - name: Обзор
+        - name: Общие сведения
           href: overview.md
         - name: Пользователи
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/users.md
             - name: Пользователь
               href: resources/user.md
@@ -266,10 +266,6 @@
                   href: api/user-post-mailfolders.md
                 - name: Отправка почты
                   href: api/user-sendmail.md
-                - name: Получение параметров почтового ящика
-                  href: api/user-get-mailboxsettings.md
-                - name: Обновление параметров почтового ящика
-                  href: api/user-update-mailboxsettings.md
                 - name: Перечисление правил
                   href: api/mailfolder-list-messagerules.md
                 - name: Создание правила
@@ -283,17 +279,6 @@
                   href: api/onenote-list-notebooks.md
                 - name: Создание записной книжки
                   href: api/onenote-post-notebooks.md
-            - name: Параметры Outlook
-              href: resources/outlookuser.md
-              items:
-                - name: Получение настроек языков
-                  href: api/outlookuser-supportedlanguages.md
-                - name: Получение настроек часовых поясов
-                  href: api/outlookuser-supportedtimezones.md
-                - name: Перечисление категорий
-                  href: api/outlookuser-list-mastercategories.md
-                - name: Создание категории
-                  href: api/outlookuser-post-mastercategories.md
             - name: Организационная иерархия
               href: resources/organization.md
               items:
@@ -303,6 +288,21 @@
                   href: api/user-list-manager.md
                 - name: Назначение руководителя
                   href: api/user-post-manager.md
+            - name: Параметры Outlook
+              href: resources/outlookuser.md
+              items:
+                - name: Получение настроек языков
+                  href: api/outlookuser-supportedlanguages.md
+                - name: Получение настроек часовых поясов
+                  href: api/outlookuser-supportedtimezones.md
+                - name: Получение параметров почтового ящика
+                  href: api/user-get-mailboxsettings.md
+                - name: Обновление параметров почтового ящика
+                  href: api/user-update-mailboxsettings.md
+                - name: Перечисление категорий
+                  href: api/outlookuser-list-mastercategories.md
+                - name: Создание категории
+                  href: api/outlookuser-post-mastercategories.md
             - name: Фотография
               href: resources/profilephoto.md
               items:
@@ -324,7 +324,7 @@
                   href: api/user-update-settings.md
         - name: Группы
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/groups-overview.md
             - name: Группа
               href: resources/group.md
@@ -740,7 +740,7 @@
         - name: Устройства и приложения
           displayName: Intune
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/intune-graph-overview.md
             - name: Управление приложениями
               href: resources/intune-app-conceptual.md
@@ -3034,7 +3034,7 @@
                       href: api/intune-tem-telecomexpensemanagementpartner-update.md
         - name: Образование
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/education-overview.md
             - name: Учебные заведения
               href: resources/educationschool.md
@@ -3100,9 +3100,9 @@
                 - name: Удаление пользователя
                   href: api/educationuser-delete.md
         - name: Файлы
-          displayName: 'OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint'
+          displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/onedrive.md
             - name: Диски
               href: resources/drive.md
@@ -3176,7 +3176,7 @@
         - name: Удостоверения и доступ
           displayName: 'Azure AD, Microsoft identity platform'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/azure-ad-overview.md
             - name: Журналы аудита
               href: resources/azure-ad-auditlog-overview.md
@@ -3683,7 +3683,7 @@
                       href: api/multivaluelegacyextendedproperty-get.md
         - name: Отчеты
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/report.md
             - name: Использование устройств Microsoft Teams
               href: resources/microsoft-teams-device-usage-reports.md
@@ -3914,9 +3914,9 @@
             - name: Ошибки
               href: resources/security-error-codes.md
         - name: Сайты и списки
-          displayName: 'SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal'
+          displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/sharepoint.md
             - name: Сайты
               href: resources/site.md
@@ -3955,7 +3955,7 @@
                   href: api/itemanalytics-get.md
         - name: 'Социальная аналитика: люди'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/social-overview.md
             - name: Человек
               href: resources/person.md
@@ -3965,7 +3965,7 @@
         - name: Задачи и планы
           displayName: Planner
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/planner-overview.md
             - name: План
               href: resources/plannerplan.md
@@ -4233,7 +4233,7 @@
                 - name: Создание ответа
                   href: api/workbookcomment-post-replies.md
                 - name: Получение ответа
-                  href: workbookcommentreply-get.md
+                  href: api/workbookcommentreply-get.md
             - name: Лист
               href: resources/worksheet.md
               items:
@@ -4361,7 +4361,7 @@
                 - name: Удаление расширения схемы
                   href: api/schemaextension-delete.md
             - name: Уведомления об изменениях
-              displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
+              displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
               items:
                 - name: Обзор
                   href: resources/webhooks.md
