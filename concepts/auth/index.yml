@@ -10,6 +10,7 @@ metadata:
   ms.topic: landing-page
   ms.date: 04/26/2019
   ms.reviewer: jawoods
+  ms.custom: graphiamtop20
 abstract:
   description: 'Узнайте, как проверять подлинность и работать с разрешениями для безопасного доступа к данным с помощью Microsoft Graph. Изучите документацию, приведенную ниже, чтобы узнать о регистрации приложений, библиотеках проверки подлинности, авторизации и других компонентах платформы Microsoft Identity, поддерживающих разработку Microsoft Graph.'
   aside:
