@@ -3,12 +3,13 @@ title: Получение добавочных изменений для соо�
 description: Разностный запрос позволяет запрашивать добавления, удаления или обновления для сообщений в папке с помощью ряда
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 0200c49c1a673a338af793649bb67f9628c2e8f2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.custom: graphiamtop20
+ms.openlocfilehash: 319810d899ded33d2d91e7f02f4b905a374c7e59
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526135"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37053936"
 ---
 # <a name="get-incremental-changes-to-messages-in-a-folder"></a>Получение добавочных изменений для сообщений в папке
 

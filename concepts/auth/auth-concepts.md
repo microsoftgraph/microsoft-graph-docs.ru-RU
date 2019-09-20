@@ -1,15 +1,16 @@
 ---
-front_matter_title: Basics
+'title:': Authentication and authorization basics for Microsoft Graph
 description: Чтобы вызвать Microsoft Graph, приложение должно получить маркер доступа из платформы удостоверений Майкрософт.
 author: matt-steele
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7e532867c9d92e2c2a7dd27e2e17a51fcbc1d2d4
-ms.sourcegitcommit: 118b3cea623d9abec666c9d295a25f18a43a8aee
+ms.custom: graphiamtop20
+ms.openlocfilehash: a1d11cab454ead5f15d405b7674d727c69e71c96
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017768"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37054007"
 ---
 # <a name="authentication-and-authorization-basics-for-microsoft-graph"></a>Основные сведения о проверке подлинности и авторизации для Microsoft Graph
 

@@ -3,12 +3,13 @@ title: Добавление пользовательских данных в р�
 description: 'Мы рассмотрим пример использования *открытых расширений*. '
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: 69b0918dba3159a552e2b00d4f54b21e67d017e4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.custom: graphiamtop20
+ms.openlocfilehash: c4039c1bb0e4972aa42ac9ee61c73095817b0368
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526142"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37053790"
 ---
 # <a name="add-custom-data-to-users-using-open-extensions"></a>Добавление пользовательских данных в ресурсы user с помощью открытых расширений
 Мы рассмотрим пример использования *открытых расширений*. 

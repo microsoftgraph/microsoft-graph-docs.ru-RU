@@ -4,12 +4,13 @@ description: 'свойство odata.nextLink в ответе, содержащ�
 author: piotrci
 localization_priority: Priority
 scenarios: getting-started
-ms.openlocfilehash: e2f02b603d09d249dff7dd894dd9c3c7a66600a2
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.custom: graphiamtop20
+ms.openlocfilehash: 16c165be9afe53a6540f1c5fe7faa41d88cb21b3
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792928"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37054105"
 ---
 # <a name="paging-microsoft-graph-data-in-your-app"></a>Разбиение данных Microsoft Graph по страницам в приложении 
 

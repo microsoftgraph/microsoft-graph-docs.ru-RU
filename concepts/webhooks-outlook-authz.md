@@ -3,12 +3,13 @@ title: Уменьшение числа пропущенных подписок �
 description: Outlook может приостановить доставку уведомлений об изменениях из-за событий безопасности, например сброса пароля пользователя. Для обеспечения непрерывной доставки уведомлений необходимо обрабатывать специальные события жизненного цикла (`subscriptionRemoved` и `missed`).
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 7f273046c084e83375c835349b43caebcefca473
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.custom: graphiamtop20
+ms.openlocfilehash: 7880216eedb6fa8757ca6e027bf2395dea516073
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778245"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37053934"
 ---
 # <a name="reduce-missing-subscriptions-and-notifications-for-outlook-resources-preview"></a>Уменьшение числа пропущенных подписок и уведомлений о ресурсах Outlook (предварительная версия) 
 

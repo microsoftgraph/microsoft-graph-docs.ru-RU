@@ -4,12 +4,13 @@ description: Приложение должно быть зарегистриро
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1014e3089b546f65188a26a00acdcc280b50709b
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.custom: graphiamtop20
+ms.openlocfilehash: f7f2bb2d67e4100c618d41e6a7634f86abb4dae7
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778707"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37054042"
 ---
 # <a name="register-an-application-with-the-microsoft-identity-platform"></a>Регистрация приложения с помощью платформы удостоверений Майкрософт
 

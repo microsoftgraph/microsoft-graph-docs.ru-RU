@@ -4,12 +4,13 @@ description: В этом разделе описано, как предоста�
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4219d57c3526d95a1abcb6c448c30d0f2ef3debc
-ms.sourcegitcommit: 121c0fad692fb3c5c01dc051481b5249e4491b48
+ms.custom: graphiamtop20
+ms.openlocfilehash: 60a937c6ee38e65581c6b3a853819dd10db84517
+ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "35620180"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "37054140"
 ---
 # <a name="call-microsoft-graph-from-a-cloud-solution-provider-application"></a>Вызов Microsoft Graph из приложения CSP
 
