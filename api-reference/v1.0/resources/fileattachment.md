@@ -5,16 +5,16 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: d71eb6e142097474ac6616456cf6e57ceb8cfb02
-ms.sourcegitcommit: 496269b62d42cb7a96752a77b0f2e0cb16918f0b
+ms.openlocfilehash: 4975e9b46a4b55429906fbcd9b7b23f8774a47e9
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36484354"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036202"
 ---
 # <a name="fileattachment-resource-type"></a>Тип ресурса fileAttachment
 
-Файл (например, текстовый файл или документ Word), вложенный в сведения о событии, сообщение или запись. Свойство **contentBytes** включает содержимое файла в кодировке Base 64.  
+Файл (например, текстовый файл или документ Word), вложенный в сведения о пользовательском [событии](../resources/event.md), [сообщение](../resources/message.md) или [запись](../resources/post.md). Свойство **contentBytes** включает содержимое файла в кодировке base64.  
 
 При создании вложенного файла включите в текст запроса следующее:
 
@@ -27,7 +27,7 @@ ms.locfileid: "36484354"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Чтение свойств и связей объекта fileAttachment.|
+|[Получение](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Чтение свойств, связей или необработанного содержимого объекта fileAttachment.|
 |[Удаление](../api/attachment-delete.md) | Нет |Удаление объекта fileAttachment. |
 
 ## <a name="properties"></a>Свойства

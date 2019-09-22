@@ -5,18 +5,18 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ec663765c572230ad07e469b760c14b9dfd7c2e5
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: fbaf9d07e031369c004ce795b060a303fc8d2575
+ms.sourcegitcommit: 997fbfe36b518e0a8c230ae2e62666bb5c829e7e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36728694"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37041966"
 ---
 # <a name="get-message"></a>Вывод сообщения
 
 Получение свойств и связей объекта [message](../resources/message.md).
 
-В настоящее время эта операция возвращает текст сообщения только в формате HTML.
+Вы можете использовать параметр `$value`, чтобы [получить MIME-содержимое сообщения](/graph/outlook-get-mime-message).
 
 Существует два сценария, когда приложение может получить сообщение из папки почты другого пользователя:
 
@@ -57,8 +57,11 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [message](../resources/message.md) в тексте отклика.
-## <a name="example"></a>Пример
-##### <a name="request-1"></a>Запрос 1
+
+
+## <a name="examples"></a>Примеры
+### <a name="example-1"></a>Пример 1
+#### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
@@ -88,8 +91,8 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhMGAAA=
 
 ---
 
-##### <a name="response-1"></a>Отклик 1
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+#### <a name="response"></a>Отклик
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -163,7 +166,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request-2"></a>Запрос 2
+### <a name="example-2"></a>Пример 2
+#### <a name="request"></a>Запрос
 В следующем примере используется параметр запроса `$select` для получения заголовков сообщений Интернета для сообщения. 
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
@@ -193,7 +197,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=in
 
 ---
 
-##### <a name="response-2"></a>Отклик 2
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Набор заголовков сообщений в объекте отклика усечен для краткости. При фактическом вызове будут возвращены все заголовки.
 <!-- {
   "blockType": "response",
@@ -229,13 +233,77 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-3"></a>Пример 3
+#### <a name="request"></a>Запрос
+
+В третьем примере показано, как использовать заголовок `Prefer: outlook.body-content-type="text"`, чтобы получить свойства **body** и **uniqueBody** указанного сообщения в текстовом формате.
+
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["AAMkAGI1AAAoZCfHAAA="],
+  "name": "get_message_in_text"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGI1AAAoZCfHAAA=/?$select=subject,body,bodyPreview,uniqueBody
+Prefer: outlook.body-content-type="text"
+```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-message-in-text-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-message-in-text-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-message-in-text-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-message-in-text-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика. Примечание. Отклик включает заголовок `Preference-Applied: outlook.body-content-type`, подтверждающий заголовок запроса `Prefer: outlook.body-content-type`.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.message"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Preference-Applied: outlook.body-content-type="text"
+
+{
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/messages(subject,body,bodyPreview,uniqueBody)/$entity",
+    "@odata.etag":"W/\"CQAAABYAAABmWdbhEgBXTophjCWt81m9AAAoZYj4\"",
+    "id":"AAMkAGI1AAAoZCfHAAA=",
+    "subject":"Welcome to our group!",
+    "bodyPreview":"Welcome to our group, Dana! Hope you will enjoy working with us !\r\n\r\nWould you like to choose a day for our orientation from the available times below:\r\n\r\n\r\nDate\r\n        Time\r\n\r\nApril 14, 2017\r\n        1-3pm\r\n\r\nApril 21, 2017\r\n        10-12noon\r\n\r\n\r\n\r\nTh",
+    "body":{
+        "contentType":"text",
+        "content":"Welcome to our group, Dana! Hope you will enjoy working with us [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] !\r\n\r\nWould you like to choose a day for our orientation from the available times below:\r\n\r\n\r\nDate\r\n        Time\r\n\r\nApril 14, 2017\r\n        1-3pm\r\n\r\nApril 21, 2017\r\n        10-12noon\r\n\r\n\r\n\r\nThanks!\r\n\r\n"
+    },
+    "uniqueBody":{
+        "contentType":"text",
+        "content":"Welcome to our group, Dana! Hope you will enjoy working with us [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] !\r\nWould you like to choose a day for our orientation from the available times below:\r\n\r\nDate\r\n        Time\r\n\r\nApril 14, 2017\r\n        1-3pm\r\n\r\nApril 21, 2017\r\n        10-12noon\r\n\r\n\r\nThanks!\r\n"
+    }
+}
+```
 
 ## <a name="see-also"></a>См. также
 
 - [Добавление пользовательских данных в ресурсы с помощью расширений](/graph/extensibility-overview)
-- [Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)](/graph/extensibility-open-users)
+- [Добавление пользовательских данных в ресурсы user с помощью открытых расширений](/graph/extensibility-open-users)
 <!--
-- [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
+- [Add custom data to groups using schema extensions](/graph/extensibility-schema-groups)
 -->
 
 

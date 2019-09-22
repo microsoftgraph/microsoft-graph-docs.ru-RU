@@ -5,12 +5,12 @@ localization_priority: Priority
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 315c33c141f2df4181c549ab837badc2817b1410
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 810f589c0814a9b843d7b71e17e55036c0266f9e
+ms.sourcegitcommit: 997fbfe36b518e0a8c230ae2e62666bb5c829e7e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36726300"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "37041886"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Использование Microsoft Graph Security API
 
@@ -46,7 +46,7 @@ Microsoft Graph Security API включает указанные ниже клю
 |[Palo Alto Networks](https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-web-interface-help/monitor/monitor-logs/log-types.html)| <p align="center">&#x2713;</p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
 > **Примечание.** К экосистеме безопасности Microsoft Graph постоянно подключаются новые поставщики. Чтобы запросить новых поставщиков или дополнительную поддержку у существующих поставщиков, [уведомите о проблеме в репозитории GitHub для Microsoft Graph Security](https://github.com/microsoftgraph/security-api-solutions/issues/new).
 
-\* Для службы Advanced Threat Protection в Защитнике Windows (WDATP) требуются дополнительные [роли пользователей](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) по сравнению с требованиями API безопасности Microsoft Graph. Поэтому только пользователи с обеими ролями (WDATP и API безопасности Microsoft Graph) смогут получить доступ к данным WDATP.  Это ограничение не распространяется на проверку подлинности только для приложений, поэтому рекомендуется использовать маркер проверки подлинности только для приложений.
+\* Advanced Threat Protection в Microsoft Defender требует дополнительных [ролей пользователя](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) кроме ролей, необходимых для Microsoft Graph Security API. Только пользователи, которым назначены роли как в Advanced Threat Protection в Microsoft Defender, так и в Microsoft Graph Security API, могут получить доступ к данным Advanced Threat Protection в Microsoft Defender. Поскольку это ограничение не распространяется на проверку подлинности только для приложений, рекомендуется использовать маркер проверки подлинности только для приложений.
 
 \*\* Оповещения расширенной защиты от угроз Azure доступны в рамках интеграции Microsoft Cloud App Security. Это означает, что вы будете получать оповещения расширенной защиты от угроз Azure только в том случае, если вы присоединились к [программе предварительной оценки комплексного решения SecOps](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Unified-SecOps-Investigation-for-Hybrid-Environments/ba-p/360850) и подключили расширенную защиту от угроз Azure к Microsoft Cloud App Security.
 
@@ -65,7 +65,7 @@ Microsoft Graph Security API включает указанные ниже клю
 
 ## <a name="security-actions-preview"></a>Действия по обеспечению безопасности (предварительная версия)
 
-Принимайте незамедлительные действия по защите от угроз с помощью объекта [securityAction](securityaction.md) Microsoft Graph Security. Если аналитик безопасности обнаруживает новый индикатор, например вредоносный файл, URL-адрес, домен или IP-адрес, можно сразу же включить защиту в решении по обеспечению безопасности от корпорации Майкрософт. Вызывайте действие для определенного поставщика услуг, просматривайте все выполненные действия и отменяйте действие при необходимости. Воспользуйтесь действиями по обеспечению безопасности с помощью [ATP в Защитнике Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection), чтобы заблокировать вредоносную активность в конечных точках Windows с использованием свойств, отображаемых в оповещениях или выявленных при изучении.
+Принимайте незамедлительные действия по защите от угроз с помощью объекта [securityAction](securityaction.md) Microsoft Graph Security. Если аналитик безопасности обнаруживает новый индикатор, например вредоносный файл, URL-адрес, домен или IP-адрес, можно сразу же включить защиту в решении по обеспечению безопасности от корпорации Майкрософт. Вызывайте действие для определенного поставщика услуг, просматривайте все выполненные действия и отменяйте действие при необходимости. Попробуйте выполнить действия по обеспечению безопасности с помощью [Advanced Threat Protection в Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection), чтобы заблокировать вредоносную активность в конечных точках Windows с использованием свойств, отображаемых в оповещениях или выявленных при изучении.
 
   > **Примечание.** В настоящее время действия по обеспечению безопасности поддерживают только разрешения для приложений.
 
