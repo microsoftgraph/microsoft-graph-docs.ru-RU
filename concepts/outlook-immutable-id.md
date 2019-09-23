@@ -1,21 +1,19 @@
 ---
 title: Получение неизменяемых идентификаторов для ресурсов Outlook
-description: 'Элементы Outlook (сообщения, события, контакты, задачи) ведут себя довольно интересно, и вы этого либо никогда не замечали, либо это вызывало серьезные затруднения: их идентификаторы изменяются. Это происходит нечасто (только при перемещении элемента), но может привести к серьезным проблемам для приложений, сохраняющих идентификаторы в автономном режиме для дальнейшего использования. Неизменяемые идентификаторы позволяют вашему приложению получить идентификатор, который не изменяется в течение всего времени существования элемента.'
+description: Неизменяемые идентификаторы позволяют вашему приложению получить идентификатор для элемента Outlook, который не изменяется в течение всего времени существования элемента.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: e0ddee215b7574e152fa5ffc574d218d5a2f811a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a2cdd301bfa9949d750ac3eb0813c958ccc7161d
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32554634"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036377"
 ---
 # <a name="get-immutable-identifiers-for-outlook-resources"></a>Получение неизменяемых идентификаторов для ресурсов Outlook
 
 Элементы Outlook (сообщения, события, контакты, задачи) ведут себя довольно интересно, и вы этого либо никогда не замечали, либо это вызывало серьезные затруднения: их идентификаторы изменяются. Это происходит нечасто (только при перемещении элемента), но может привести к серьезным проблемам для приложений, сохраняющих идентификаторы в автономном режиме для дальнейшего использования. Неизменяемые идентификаторы позволяют вашему приложению получить идентификатор, который не изменяется в течение всего времени существования элемента.
-
-> **Важно!** Неизменяемые идентификаторы доступны в Microsoft Graph только в бета-версии.
 
 ## <a name="how-it-works"></a>Принципы работы
 
@@ -38,18 +36,18 @@ Prefer: IdType="ImmutableId"
 
 Приведенные ниже элементы поддерживают неизменяемые идентификаторы.
 
-- [Тип ресурса message](/graph/api/resources/message?view=graph-rest-beta)
-- [Тип ресурса attachment](/graph/api/resources/attachment?view=graph-rest-beta)
-- [Тип ресурса event](/graph/api/resources/event?view=graph-rest-beta)
-- [Тип ресурса eventMessage](/graph/api/resources/eventmessage?view=graph-rest-beta)
-- [Тип ресурса contact](/graph/api/resources/contact?view=graph-rest-beta)
-- [Тип ресурса outlookTask](/graph/api/resources/outlooktask?view=graph-rest-beta)
+- [Тип ресурса message](/graph/api/resources/message)
+- [Тип ресурса attachment](/graph/api/resources/attachment)
+- [Тип ресурса event](/graph/api/resources/event)
+- [Тип ресурса eventMessage](/graph/api/resources/eventmessage)
+- [Тип ресурса contact](/graph/api/resources/contact)
+- [Тип ресурса outlookTask](/graph/api/resources/outlooktask)
 
 Типы контейнеров (mailFolder, calendar и т. д.) не поддерживают неизменяемый идентификатор, но их обычные идентификаторы являются постоянными.
 
 ## <a name="immutable-id-with-change-notifications"></a>Неизменяемый идентификатор с уведомлением об изменениях
 
-Можно запросить, чтобы Microsoft Graph отправлял неизменяемые идентификаторы в уведомлениях об изменениях путем включения заголовка `Prefer: IdType="ImmutableId"` при [создании подписки](/graph/api/subscription-post-subscriptions?view=graph-rest-beta). Существующие подписки, созданные без заголовка, продолжат использовать формат идентификатора по умолчанию. Чтобы переключить существующие подписки на использование неизменяемых идентификаторов, их нужно удалить и заново создать с использованием заголовка.
+Можно запросить, чтобы Microsoft Graph отправлял неизменяемые идентификаторы в уведомлениях об изменениях путем включения заголовка `Prefer: IdType="ImmutableId"` при [создании подписки](/graph/api/subscription-post-subscriptions). Существующие подписки, созданные без заголовка, продолжат использовать формат идентификатора по умолчанию. Чтобы переключить существующие подписки на использование неизменяемых идентификаторов, их нужно удалить и заново создать с использованием заголовка.
 
 ## <a name="immutable-id-with-delta-query"></a>Неизменяемый идентификатор с запросом изменений
 
@@ -57,9 +55,10 @@ Prefer: IdType="ImmutableId"
 
 ## <a name="updating-existing-data"></a>Обновление существующих данных
 
-Если уже имеется база данных, заполненная тысячами обычных идентификаторов, можно перенести эти идентификаторы в неизменяемый формат с помощью функции [translateExchangeIds](/graph/api/user-translateexchangeids?view=graph-rest-beta). Вы можете обеспечить массив для перевода в нужный формат с количеством идентификаторов до 1000.
+Если уже имеется база данных, заполненная тысячами обычных идентификаторов, можно перенести эти идентификаторы в неизменяемый формат с помощью функции [translateExchangeIds](/graph/api/user-translateexchangeids). Вы можете обеспечить массив для перевода в нужный формат с количеством идентификаторов до 1000.
 
-> **Примечание.** Можно также можете использовать `translateExchangeIds` для переноса приложений веб-служб Exchange в Microsoft Graph.
+> [!NOTE]
+> Можно также использовать `translateExchangeIds` для переноса приложений веб-служб Exchange в Microsoft Graph.
 
 ### <a name="example"></a>Пример
 
@@ -68,7 +67,7 @@ Prefer: IdType="ImmutableId"
 #### <a name="request"></a>Запрос
 
 ```http
-POST https://graph.microsoft.com/beta/me/translateExchangeIds
+POST https://graph.microsoft.com/v1.0/me/translateExchangeIds
 
 {
   "inputIds" :

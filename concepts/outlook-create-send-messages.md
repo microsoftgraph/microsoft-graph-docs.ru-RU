@@ -4,12 +4,12 @@ description: В Microsoft Graph электронные письма предст
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 06074950ae1ea81be9546066ebff05825d44b700
-ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
+ms.openlocfilehash: 050807fb13f91c506268aadde6757c2de1c4d30c
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33440089"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036083"
 ---
 # <a name="automate-creating-sending-and-processing-messages"></a>Автоматизация создания, отправки и обработки сообщений
 
@@ -25,7 +25,7 @@ ms.locfileid: "33440089"
 
 Чтобы программным способом отличать черновики от отправленных писем, проверяйте свойство **isDraft**.
 
-По умолчанию черновики сообщений сохраняются в папке `Drafts`, а отправленные сообщения — в папке `Sent Items`. Для удобства вы можете определить папки "Черновики" и "Отправленные", используя их [соответствующие хорошо известные имена папок](/graph/api/resources/mailfolder?view=graph-rest-1.0). 
+По умолчанию черновики сообщений сохраняются в папке `Drafts`, а отправленные сообщения — в папке `Sent Items`. Для удобства вы можете определить папки "Черновики" и "Отправленные", используя их [соответствующие хорошо известные имена папок](/graph/api/resources/mailfolder?view=graph-rest-1.0).
 
 ### <a name="setting-the-from-and-sender-properties"></a>Задание свойств from и sender
 
@@ -112,5 +112,5 @@ Prefer: outlook.allow-unsafe-html
 - [Получение содержимого MIME (предварительная версия)](outlook-get-mime-message.md)
 - [Получение общих сообщений](outlook-share-messages-folders.md)
 - [Отправка сообщений Outlook от другого пользователя](outlook-send-mail-from-other-user.md)
-- [Получение неизменяемых идентификаторов для ресурсов Outlook (предварительная версия)](outlook-immutable-id.md)
+- [Получение неизменяемых идентификаторов для ресурсов Outlook](outlook-immutable-id.md)
 - [Использование API почты](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) и [варианты использования](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) в Microsoft Graph 1.0.
