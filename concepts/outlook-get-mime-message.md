@@ -4,14 +4,14 @@ description: Multipurpose Internet Mail Extensions (MIME) — это отрас
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: a0b71e3e87a845c995ec2792bab12fc0fc446b59
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2eadf89007e1127ffbbf9e40506c37b47778da7c
+ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32655807"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "37036384"
 ---
-# <a name="get-mime-content-of-a-message-preview"></a>Получение содержимого MIME сообщения (предварительная версия)
+# <a name="get-mime-content-of-a-message"></a>Получение содержимого MIME сообщения
 
 MIME — это отраслевой стандарт электронной почты. Многие приложения электронной почты создают сообщения в формате MIME и сохраняют их в файлах с расширением EML. 
 
@@ -24,7 +24,6 @@ MIME — это отраслевой стандарт электронной п
 
 Затем вы можете сохранить содержимое текста сообщения в EML-файле и вкладывать файл в записи в бизнес-системах, например для CRM, ERP и отслеживания ошибок. 
 
-> **Важно!** Возможность получить текст сообщения MIME в настоящее время доступна только в бета-версии. Как и другие интерфейсы API предварительной версии, она подлежит изменению. Не используйте эту возможность в рабочих приложениях. Дополнительные сведения см. в статье [Управление версиями и поддержка](versioning-and-support.md).
 
 ## <a name="what-is-mime"></a>Что такое MIME?
 
@@ -45,7 +44,7 @@ MIME — это стандарт, используемый для электр�
 
 ## <a name="get-mime-content-of-an-outlook-message"></a>Получение содержимого MIME сообщения Outlook
 
-Вы можете получить представление сообщения в формате MIME, добавив сегмент `$value` при [получении сообщения](/graph/api/message-get?view=graph-rest-beta): 
+Вы можете получить представление сообщения в формате MIME, добавив сегмент `$value` при [получении сообщения](/graph/api/message-get?view=graph-rest-1.0): 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -155,10 +154,10 @@ YW5vdGhlciBtYWlsLg0K
 
 ## <a name="get-mime-content-of-an-outlook-message-attached-to-an-outlook-item-or-group-post"></a>Получение содержимого MIME сообщения Outlook, вложенного в элемент Outlook или запись в группе
 
-Вы также можете получить представление сообщения Outlook в формате MIME, если сообщение было вложено в [событие](/graph/api/resources/event?view=graph-rest-beta), [сообщение](/graph/api/resources/message?view=graph-rest-beta), [задачу](/graph/api/resources/outlooktask?view=graph-rest-beta) или [запись](/graph/api/resources/post?view=graph-rest-beta) группы Outlook, доступные приложению.
+Вы также можете получить представление сообщения Outlook в формате MIME, если сообщение было вложено в [событие](/graph/api/resources/event?view=graph-rest-1.0), [сообщение](/graph/api/resources/message?view=graph-rest-1.0), [задачу](/graph/api/resources/outlooktask?view=graph-rest-beta) или [запись](/graph/api/resources/post?view=graph-rest-1.0) группы Outlook, доступные приложению.
 
-Для этого укажите вложение сообщения и добавьте сегмент `$value` при [получении этого вложения](/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment
-). Ниже показано несколько распространенных способов получить доступ к вложению. Дополнительные сведения см. в статье [Получение вложения](/graph/api/attachment-get?view=graph-rest-beta#http-request).
+Для этого укажите вложение сообщения и добавьте сегмент `$value` при [получении этого вложения](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment
+). Ниже показано несколько распространенных способов получить доступ к вложению. Дополнительные сведения см. в статье [Получение вложения](/graph/api/attachment-get?view=graph-rest-1.0#http-request).
 
 Если сообщение вложено в событие в календаре по умолчанию для пользователя:
 <!-- { "blockType": "ignored" } -->
@@ -190,7 +189,7 @@ GET /groups/{id}/threads/{id}/posts/{id}/attachments/{id}/$value
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/me/messages/AAMkAGUAAA7XW-lAAA=/attachments/AAMkAGUAAA7XW-lAAABEgAQAFBZJBq4EN5FlCSvNV-M-FI=/$value
+GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGUAAA7XW-lAAA=/attachments/AAMkAGUAAA7XW-lAAABEgAQAFBZJBq4EN5FlCSvNV-M-FI=/$value
 ```
 
 Ниже приведен отклик. Содержимое MIME начинается с заголовка `MIME-Version`. 
@@ -279,6 +278,6 @@ e.</p>
 
 Дополнительные сведения:
 
-- [Получение содержимого MIME вложения](/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment) для события, сообщения, задачи Outlook или записи в группе
+- [Получение содержимого MIME вложения](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment) для события, сообщения, задачи Outlook или записи в группе
 - [Зачем выполнять интеграцию с почтой Outlook?](outlook-mail-concept-overview.md)
-- [Использование API почты](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) и [варианты использования](/graph/api/resources/mail-api-overview?view=graph-rest-beta#common-use-cases) в бета-версии Microsoft Graph
+- [Использование API почты](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) и [варианты использования](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) в Microsoft Graph 1.0.
