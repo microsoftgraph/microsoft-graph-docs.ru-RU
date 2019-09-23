@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 159798c8bbb7ace51ee8a4d0d00ab78cf54570c6
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 1d34841cdc499e2bd0324cba8244f0551362b640
+ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36724171"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37113872"
 ---
 # <a name="list-messages"></a>Список сообщений
 
@@ -71,6 +71,18 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
 Вы можете использовать параметр `$filter` запроса для свойства **ментионспревиев** , чтобы получить такие сообщения, которые упоминают пользователя, выполнившего вход в систему.
+
+### <a name="using-filter-and-orderby-in-the-same-query"></a>Использование фильтра и OrderBy в одном запросе
+При использовании `$filter` и `$orderby` в том же запросе для получения сообщений необходимо указать свойства следующими способами:
+
+1. Свойства, которые отображаются `$orderby` в, также должны `$filter`присутствовать в. 
+2. Свойства, отображаемые `$orderby` в, располагаются в том же `$filter`порядке, что и в.
+3. Свойства, присутствующие в `$orderby` , отображаются `$filter` до всех свойств, которые не имеют.
+
+В противном случае возникает следующая ошибка:
+
+- Код ошибки:`InefficientFilter`
+- Сообщение об ошибке:`The restriction or sort order is too complex for this operation.`
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
 author: ''
-ms.openlocfilehash: 5f38bcbb79600a009a11fcb300e21742069c9f65
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 9b67e60f25f6b180235d256da094d9ee35174be6
+ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36722337"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37113930"
 ---
 # <a name="enumerate-sites"></a>Перечисление сайтов
 
@@ -24,9 +24,9 @@ ms.locfileid: "36722337"
 |:-----------------------------|:------------------------|:--------------------
 |`siteCollection/root ne null` | `siteCollection,webUrl` | Перечисление всех семейств сайтов корневого уровня в Организации. Полезен для обнаружения домашнего сайта для каждого из географических регионов.
 
-Кроме того, вы можете использовать **[поисковый][]** запрос в семействе "" "" "" "" "" "" "" "" "" "" "
+Кроме того, вы можете использовать **[$searchный][]** запрос для поиска сайтов, отвечающих заданному ключевому слову.
 
-[выполнять]: site-search.md
+[$search]: site-search.md
 [сайтов]: ../resources/site.md
 
 ## <a name="permissions"></a>Разрешения
@@ -44,7 +44,7 @@ ms.locfileid: "36722337"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/sites?filter=siteCollection/root ne null
+GET https://graph.microsoft.com/beta/sites?$filter=siteCollection/root ne null
 ```
 
 ## <a name="example"></a>Пример
@@ -56,7 +56,7 @@ GET https://graph.microsoft.com/beta/sites?filter=siteCollection/root ne null
 <!-- { "blockType": "request", "name": "list-sites" } -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/sites?select=siteCollection,webUrl&filter=siteCollection/root%20ne%20null
+GET https://graph.microsoft.com/beta/sites?$select=siteCollection,webUrl&$filter=siteCollection/root%20ne%20null
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-sites-csharp-snippets.md)]

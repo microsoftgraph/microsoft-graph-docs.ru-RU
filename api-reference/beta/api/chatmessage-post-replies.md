@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 083f5aa2a7308b808cc19f5238e625e176dd83eb
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 1f261ad2463aa191e892f245d99916c5da8abab3
+ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418112"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37113858"
 ---
 # <a name="create-chatmessage-reply-in-a-channel"></a>Создание ответа chatMessage в канале
 
@@ -34,7 +34,6 @@ ms.locfileid: "36418112"
 
 ```http
 POST /chats/{id}/messages/{id}/replies
-POST /users/{id}/chats/{id}/messages/{id}/replies
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
