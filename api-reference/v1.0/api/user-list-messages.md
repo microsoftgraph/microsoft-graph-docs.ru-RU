@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e4e1930e3df3a7f72cb4d9b9701a08530f07043a
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 6f0b1edb4de49294780f8d4e00fe9f3f3f6470f3
+ms.sourcegitcommit: e87be8765d7f2bc90c6244d84c4719468bb3fd25
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36727462"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "37113942"
 ---
 # <a name="list-messages"></a>Список сообщений
 
@@ -56,6 +56,19 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+
+### <a name="using-filter-and-orderby-in-the-same-query"></a>Использование операторов filter и orderby в одном запросе
+При использовании операторов `$filter` и `$orderby` в одном запросе на получение сообщений необходимо указать свойства, соблюдая указанные ниже условия.
+
+1. Свойства, используемые в операторе `$orderby`, также должны использоваться в операторе `$filter`. 
+2. Свойства, используемые в операторе `$orderby`, представлены в том же порядке, что и для оператора `$filter`.
+3. Свойства, присутствующие в операторе `$orderby`, представлены в операторе `$filter` раньше всех остальных свойств.
+
+В противном случае возникнет следующая ошибка:
+
+- Код ошибки: `InefficientFilter`
+- Сообщение об ошибке: `The restriction or sort order is too complex for this operation.`
+
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
