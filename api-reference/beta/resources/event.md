@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 79c10718ab03cd23d03f9b6b9e9f3e2e2acfa31d
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: 7c2ae578a92993fd8fb253a19b8cdc13a35cb5b5
+ms.sourcegitcommit: 6c007d70d5e7284c4b9e2b5d909e9087bbdaad93
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036391"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "37149596"
 ---
 # <a name="event-resource-type"></a>Тип ресурса event
 
@@ -29,6 +29,7 @@ ms.locfileid: "37036391"
 > **Примечание.** Существует несколько незначительных различий в способе взаимодействия с календарями пользователей, календарями групп и их событиями:
 
 - В ресурсе [calendarGroup](calendargroup.md) можно упорядочить только календари пользователей.
+- Объекты [attachment](attachment.md) можно добавлять только в события календарей пользователей, но не в события календарей групп.
 - Outlook автоматически принимает все приглашения на собрания от имени группы. Приглашения на собрания можно [принять](../api/event-accept.md), [принять под вопросом](../api/event-tentativelyaccept.md) или [отклонить](../api/event-decline.md) только в календарях _пользователя_.
 - Outlook не поддерживает напоминания о событиях группы. [Напоминание](reminder.md) можно [отложить](../api/event-snoozereminder.md) или [отключить](../api/event-dismissreminder.md) только для календарей _пользователя_.
 
@@ -141,7 +142,7 @@ ms.locfileid: "37036391"
 >
 > * Для учетных записей Майкрософт: `https://outlook.live.com/owa/?itemid={event-id}&exvsurl=1&path=/calendar/item`
 >
-> Чтобы открыть событие в текущей версии Outlook в Интернете, преобразуйте URL-адрес в следующие форматы и используйте этот URL-адрес для открытия события: 
+> Чтобы открыть событие в текущей версии Outlook в Интернете, преобразуйте URL-адрес в один из следующих форматов и используйте этот URL-адрес для открытия события: 
 >
 > * Для рабочих или учебных учетных записей: `https://outlook.office365.com/calendar/item/{event-id}`
 >
