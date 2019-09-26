@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 04287dbf3e7ea75c8fc9503ede895821eb906f5f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e6da3c71bba4babfac20e7227ac92fb83bd66939
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36355418"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37179917"
 ---
 # <a name="get-networkipv4configurationmanagementcondition"></a>Получение networkIPv4ConfigurationManagementCondition
 
@@ -94,8 +94,6 @@ Content-Length: 756
   }
 }
 ```
-
-
 
 
 

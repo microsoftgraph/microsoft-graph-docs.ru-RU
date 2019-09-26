@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 00b0c1fdc55506ca0eae7681fc46f9744a07ca83
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 596669c5f2a0b23fad8c4385e62a5828d3097a6c
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36313596"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37181317"
 ---
 # <a name="delete-windowswifienterpriseeapconfiguration"></a>Удаление Виндовсвифиентерприсиапконфигуратион
 
@@ -65,8 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

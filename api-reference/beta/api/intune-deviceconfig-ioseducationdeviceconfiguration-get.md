@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6806d9bb6087654566bf4a7b4ffa2a92f2b6a4d5
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f423367d88b80ad714f5b137159779d28b1d81db
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36339325"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37167734"
 ---
 # <a name="get-ioseducationdeviceconfiguration"></a>Получение iosEducationDeviceConfiguration
 
@@ -107,8 +107,6 @@ Content-Length: 1289
   }
 }
 ```
-
-
 
 
 

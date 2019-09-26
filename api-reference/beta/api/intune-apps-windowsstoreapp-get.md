@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 867f623d86d10ca95d8f08d9c40fc303943b9afa
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 108412de84b207ee073948650157e42f92e1474f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36336266"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37171738"
 ---
 # <a name="get-windowsstoreapp"></a>Получение Виндовсстореапп
 
@@ -101,8 +101,6 @@ Content-Length: 1011
   }
 }
 ```
-
-
 
 
 

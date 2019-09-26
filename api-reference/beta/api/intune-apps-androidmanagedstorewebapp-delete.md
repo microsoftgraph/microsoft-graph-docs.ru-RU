@@ -1,33 +1,33 @@
 ---
-title: Перечисление объектов mobileAppCategory
-description: Список свойств и связей объектов mobileAppCategory.
+title: Удаление Андроидманажедсторевебапп
+description: Удаляет объект Андроидманажедсторевебапп.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8cce7afc08467352837c2f781a480e074c2d3b69
+ms.openlocfilehash: 20ffef2e0cd66f52bc1830a2291fd526009d46f2
 ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/26/2019
-ms.locfileid: "37177173"
+ms.locfileid: "37178512"
 ---
-# <a name="list-mobileappcategories"></a>Перечисление объектов mobileAppCategory
+# <a name="delete-androidmanagedstorewebapp"></a>Удаление Андроидманажедсторевебапп
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей объектов [mobileAppCategory](../resources/intune-apps-mobileappcategory.md).
+Удаляет объект [андроидманажедсторевебапп](../resources/intune-apps-androidmanagedstorewebapp.md).
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -35,8 +35,9 @@ ms.locfileid: "37177173"
 }
 -->
 ``` http
-GET /deviceAppManagement/mobileAppCategories
-GET /deviceAppManagement/mobileApps/{mobileAppId}/categories
+DELETE /deviceAppManagement/mobileApps/{mobileAppId}
+DELETE /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
+DELETE /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -48,34 +49,21 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/categories
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) в тексте отклика.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceAppManagement/mobileAppCategories
+DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 261
-
-{
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.mobileAppCategory",
-      "id": "d85d9cee-9cee-d85d-ee9c-5dd8ee9c5dd8",
-      "displayName": "Display Name value",
-      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
-    }
-  ]
-}
+HTTP/1.1 204 No Content
 ```
 
 

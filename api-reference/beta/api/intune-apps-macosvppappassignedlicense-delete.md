@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 96b018c49685bbffc37c166e53f8ea72d00f6053
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d4c86c474faef845b8aeeb2edf733d35fa8519d3
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36330120"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37177565"
 ---
 # <a name="delete-macosvppappassignedlicense"></a>Удаление Макосвппаппассигнедлиценсе
 
@@ -63,8 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

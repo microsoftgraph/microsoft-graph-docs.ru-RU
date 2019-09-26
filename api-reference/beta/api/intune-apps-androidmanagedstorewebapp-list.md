@@ -1,26 +1,26 @@
 ---
-title: Перечисление объектов auditEvent
-description: Список свойств и связей объектов auditEvent.
+title: Список Андроидманажедсторевебаппс
+description: Список свойств и связей объектов Андроидманажедсторевебапп.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8a29ab1e01171ab47f6fc537f62b2c0a8e0488d4
+ms.openlocfilehash: 4548ddd8a6d1da126ad860a416abe068986158b0
 ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/26/2019
-ms.locfileid: "37171416"
+ms.locfileid: "37178510"
 ---
-# <a name="list-auditevents"></a>Перечисление объектов auditEvent
+# <a name="list-androidmanagedstorewebapps"></a>Список Андроидманажедсторевебаппс
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей объектов [auditEvent](../resources/intune-auditing-auditevent.md).
+Список свойств и связей объектов [андроидманажедсторевебапп](../resources/intune-apps-androidmanagedstorewebapp.md) .
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -35,7 +35,7 @@ ms.locfileid: "37171416"
 }
 -->
 ``` http
-GET /deviceManagement/auditEvents
+GET /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -48,14 +48,14 @@ GET /deviceManagement/auditEvents
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
-При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [auditEvent](../resources/intune-auditing-auditevent.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [андроидманажедсторевебапп](../resources/intune-apps-androidmanagedstorewebapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/auditEvents
+GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ```
 
 ### <a name="response"></a>Отклик
@@ -63,51 +63,44 @@ GET https://graph.microsoft.com/beta/deviceManagement/auditEvents
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1632
+Content-Length: 1324
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.auditEvent",
-      "id": "59653ce8-3ce8-5965-e83c-6559e83c6559",
+      "@odata.type": "#microsoft.graph.androidManagedStoreWebApp",
+      "id": "e54aecbd-ecbd-e54a-bdec-4ae5bdec4ae5",
       "displayName": "Display Name value",
-      "componentName": "Component Name value",
-      "actor": {
-        "@odata.type": "microsoft.graph.auditActor",
+      "description": "Description value",
+      "publisher": "Publisher value",
+      "largeIcon": {
+        "@odata.type": "microsoft.graph.mimeContent",
         "type": "Type value",
-        "userPermissions": [
-          "User Permissions value"
-        ],
-        "applicationId": "Application Id value",
-        "applicationDisplayName": "Application Display Name value",
-        "userPrincipalName": "User Principal Name value",
-        "servicePrincipalName": "Service Principal Name value",
-        "ipAddress": "Ip Address value",
-        "userId": "User Id value"
+        "value": "dmFsdWU="
       },
-      "activity": "Activity value",
-      "activityDateTime": "2016-12-31T23:59:51.6363086-08:00",
-      "activityType": "Activity Type value",
-      "activityOperationType": "Activity Operation Type value",
-      "activityResult": "Activity Result value",
-      "correlationId": "52effe71-fe71-52ef-71fe-ef5271feef52",
-      "resources": [
-        {
-          "@odata.type": "microsoft.graph.auditResource",
-          "displayName": "Display Name value",
-          "modifiedProperties": [
-            {
-              "@odata.type": "microsoft.graph.auditProperty",
-              "displayName": "Display Name value",
-              "oldValue": "Old Value value",
-              "newValue": "New Value value"
-            }
-          ],
-          "type": "Type value",
-          "resourceId": "Resource Id value"
-        }
+      "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "isFeatured": true,
+      "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
+      "informationUrl": "https://example.com/informationUrl/",
+      "owner": "Owner value",
+      "developer": "Developer value",
+      "notes": "Notes value",
+      "uploadState": 11,
+      "publishingState": "processing",
+      "isAssigned": true,
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
       ],
-      "category": "Category value"
+      "dependentAppCount": 1,
+      "packageId": "Package Id value",
+      "appIdentifier": "App Identifier value",
+      "usedLicenseCount": 0,
+      "totalLicenseCount": 1,
+      "appStoreUrl": "https://example.com/appStoreUrl/",
+      "isPrivate": true,
+      "isSystemApp": true,
+      "supportsOemConfig": true
     }
   ]
 }

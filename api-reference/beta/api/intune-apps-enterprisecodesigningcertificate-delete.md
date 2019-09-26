@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d65049ba7080f5aeec997cc80a8ab1b39dbeb025
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9a10dbe6f56da9ae2ecfe60ca65e2a5525ea5195
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36330974"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37173754"
 ---
 # <a name="delete-enterprisecodesigningcertificate"></a>Удаление Ентерприсекодесигнингцертификате
 
@@ -63,8 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/enterpriseCodeSignin
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

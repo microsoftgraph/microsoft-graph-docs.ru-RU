@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e8a499b5a9d82b441510038b2703b1f560379684
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 000916275b771b10763108b0a1094ae810c09d7f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36311729"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180169"
 ---
 # <a name="get-userexperienceanalyticscategory"></a>Получение Усерекспериенцеаналитикскатегори
 
@@ -68,31 +68,31 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsCat
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 584
+Content-Length: 676
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.userExperienceAnalyticsCategory",
     "id": "cfd28056-8056-cfd2-5680-d2cf5680d2cf",
-    "displayName": "Display Name value",
     "overallScore": 12,
     "insights": [
       {
         "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
         "userExperienceAnalyticsMetricId": "User Experience Analytics Metric Id value",
         "insightId": "Insight Id value",
-        "value": [
+        "values": [
           {
-            "@odata.type": "microsoft.graph.insightValueDouble"
+            "@odata.type": "microsoft.graph.insightValueDouble",
+            "value": "<Unknown Primitive Type Edm.Double>"
           }
-        ]
+        ],
+        "severity": "informational"
       }
-    ]
+    ],
+    "state": "insufficientData"
   }
 }
 ```
-
-
 
 
 
