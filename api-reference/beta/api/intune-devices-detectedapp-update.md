@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3521af853907a4b1397b34cc0d7e975aa65c0bd0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1011918ffcdd388ee4d9aa5a25381048359508dd
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36310579"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180618"
 ---
-# <a name="update-detectedapp"></a><span data-ttu-id="d6521-103">Обновление объекта detectedApp</span><span class="sxs-lookup"><span data-stu-id="d6521-103">Update detectedApp</span></span>
+# <a name="update-detectedapp"></a><span data-ttu-id="bf367-103">Обновление объекта detectedApp</span><span class="sxs-lookup"><span data-stu-id="bf367-103">Update detectedApp</span></span>
 
-> <span data-ttu-id="d6521-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d6521-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="bf367-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bf367-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="d6521-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="d6521-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="bf367-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="bf367-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="d6521-106">Обновление свойств объекта [detectedApp](../resources/intune-devices-detectedapp.md).</span><span class="sxs-lookup"><span data-stu-id="d6521-106">Update the properties of a [detectedApp](../resources/intune-devices-detectedapp.md) object.</span></span>
+<span data-ttu-id="bf367-106">Обновление свойств объекта [detectedApp](../resources/intune-devices-detectedapp.md).</span><span class="sxs-lookup"><span data-stu-id="bf367-106">Update the properties of a [detectedApp](../resources/intune-devices-detectedapp.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="d6521-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="d6521-107">Prerequisites</span></span>
-<span data-ttu-id="d6521-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d6521-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="bf367-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="bf367-107">Prerequisites</span></span>
+<span data-ttu-id="bf367-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bf367-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d6521-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d6521-110">Permission type</span></span>|<span data-ttu-id="d6521-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="d6521-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="bf367-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="bf367-110">Permission type</span></span>|<span data-ttu-id="bf367-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="bf367-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="d6521-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d6521-112">Delegated (work or school account)</span></span>|<span data-ttu-id="d6521-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d6521-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="d6521-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d6521-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d6521-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d6521-115">Not supported.</span></span>|
-|<span data-ttu-id="d6521-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d6521-116">Application</span></span>|<span data-ttu-id="d6521-117">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d6521-117">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="bf367-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="bf367-112">Delegated (work or school account)</span></span>|<span data-ttu-id="bf367-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bf367-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="bf367-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="bf367-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="bf367-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bf367-115">Not supported.</span></span>|
+|<span data-ttu-id="bf367-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="bf367-116">Application</span></span>|<span data-ttu-id="bf367-117">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bf367-117">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="d6521-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d6521-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bf367-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="bf367-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -39,34 +39,34 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d6521-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d6521-119">Request headers</span></span>
-|<span data-ttu-id="d6521-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="d6521-120">Header</span></span>|<span data-ttu-id="d6521-121">Значение</span><span class="sxs-lookup"><span data-stu-id="d6521-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="bf367-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="bf367-119">Request headers</span></span>
+|<span data-ttu-id="bf367-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="bf367-120">Header</span></span>|<span data-ttu-id="bf367-121">Значение</span><span class="sxs-lookup"><span data-stu-id="bf367-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="d6521-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="d6521-122">Authorization</span></span>|<span data-ttu-id="d6521-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d6521-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="d6521-124">Accept</span><span class="sxs-lookup"><span data-stu-id="d6521-124">Accept</span></span>|<span data-ttu-id="d6521-125">application/json</span><span class="sxs-lookup"><span data-stu-id="d6521-125">application/json</span></span>|
+|<span data-ttu-id="bf367-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="bf367-122">Authorization</span></span>|<span data-ttu-id="bf367-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="bf367-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="bf367-124">Accept</span><span class="sxs-lookup"><span data-stu-id="bf367-124">Accept</span></span>|<span data-ttu-id="bf367-125">application/json</span><span class="sxs-lookup"><span data-stu-id="bf367-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="d6521-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="d6521-126">Request body</span></span>
-<span data-ttu-id="d6521-127">В теле запроса добавьте представление объекта [detectedApp](../resources/intune-devices-detectedapp.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d6521-127">In the request body, supply a JSON representation for the [detectedApp](../resources/intune-devices-detectedapp.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="bf367-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="bf367-126">Request body</span></span>
+<span data-ttu-id="bf367-127">В теле запроса добавьте представление объекта [detectedApp](../resources/intune-devices-detectedapp.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="bf367-127">In the request body, supply a JSON representation for the [detectedApp](../resources/intune-devices-detectedapp.md) object.</span></span>
 
-<span data-ttu-id="d6521-128">В приведенной ниже таблице указаны свойства, необходимые при создании объекта [detectedApp](../resources/intune-devices-detectedapp.md).</span><span class="sxs-lookup"><span data-stu-id="d6521-128">The following table shows the properties that are required when you create the [detectedApp](../resources/intune-devices-detectedapp.md).</span></span>
+<span data-ttu-id="bf367-128">В приведенной ниже таблице указаны свойства, необходимые при создании объекта [detectedApp](../resources/intune-devices-detectedapp.md).</span><span class="sxs-lookup"><span data-stu-id="bf367-128">The following table shows the properties that are required when you create the [detectedApp](../resources/intune-devices-detectedapp.md).</span></span>
 
-|<span data-ttu-id="d6521-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="d6521-129">Property</span></span>|<span data-ttu-id="d6521-130">Тип</span><span class="sxs-lookup"><span data-stu-id="d6521-130">Type</span></span>|<span data-ttu-id="d6521-131">Описание</span><span class="sxs-lookup"><span data-stu-id="d6521-131">Description</span></span>|
+|<span data-ttu-id="bf367-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="bf367-129">Property</span></span>|<span data-ttu-id="bf367-130">Тип</span><span class="sxs-lookup"><span data-stu-id="bf367-130">Type</span></span>|<span data-ttu-id="bf367-131">Описание</span><span class="sxs-lookup"><span data-stu-id="bf367-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d6521-132">id</span><span class="sxs-lookup"><span data-stu-id="d6521-132">id</span></span>|<span data-ttu-id="d6521-133">String</span><span class="sxs-lookup"><span data-stu-id="d6521-133">String</span></span>|<span data-ttu-id="d6521-134">Уникальный идентификатор для обнаруженного приложения.</span><span class="sxs-lookup"><span data-stu-id="d6521-134">The unique Identifier for the detected application.</span></span> <span data-ttu-id="d6521-135">Он создается Intune автоматически при создании приложения.</span><span class="sxs-lookup"><span data-stu-id="d6521-135">This is automatically generated by Intune at the time the application is created.</span></span> <span data-ttu-id="d6521-136">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="d6521-136">Read-only.</span></span>|
-|<span data-ttu-id="d6521-137">displayName</span><span class="sxs-lookup"><span data-stu-id="d6521-137">displayName</span></span>|<span data-ttu-id="d6521-138">Строка</span><span class="sxs-lookup"><span data-stu-id="d6521-138">String</span></span>|<span data-ttu-id="d6521-139">Имя обнаруженного приложения.</span><span class="sxs-lookup"><span data-stu-id="d6521-139">Name of the discovered application.</span></span> <span data-ttu-id="d6521-140">Только для чтения</span><span class="sxs-lookup"><span data-stu-id="d6521-140">Read-only</span></span>|
-|<span data-ttu-id="d6521-141">version</span><span class="sxs-lookup"><span data-stu-id="d6521-141">version</span></span>|<span data-ttu-id="d6521-142">String</span><span class="sxs-lookup"><span data-stu-id="d6521-142">String</span></span>|<span data-ttu-id="d6521-143">Версия обнаруженного приложения.</span><span class="sxs-lookup"><span data-stu-id="d6521-143">Version of the discovered application.</span></span> <span data-ttu-id="d6521-144">Только для чтения</span><span class="sxs-lookup"><span data-stu-id="d6521-144">Read-only</span></span>|
-|<span data-ttu-id="d6521-145">sizeInByte</span><span class="sxs-lookup"><span data-stu-id="d6521-145">sizeInByte</span></span>|<span data-ttu-id="d6521-146">Int64</span><span class="sxs-lookup"><span data-stu-id="d6521-146">Int64</span></span>|<span data-ttu-id="d6521-147">Размер обнаруженного приложения в байтах.</span><span class="sxs-lookup"><span data-stu-id="d6521-147">Discovered application size in bytes.</span></span> <span data-ttu-id="d6521-148">Только для чтения</span><span class="sxs-lookup"><span data-stu-id="d6521-148">Read-only</span></span>|
-|<span data-ttu-id="d6521-149">deviceCount</span><span class="sxs-lookup"><span data-stu-id="d6521-149">deviceCount</span></span>|<span data-ttu-id="d6521-150">Int32</span><span class="sxs-lookup"><span data-stu-id="d6521-150">Int32</span></span>|<span data-ttu-id="d6521-151">Количество устройств, на которых успешно установлено это приложение.</span><span class="sxs-lookup"><span data-stu-id="d6521-151">The number of devices that have installed this application</span></span>|
+|<span data-ttu-id="bf367-132">id</span><span class="sxs-lookup"><span data-stu-id="bf367-132">id</span></span>|<span data-ttu-id="bf367-133">String</span><span class="sxs-lookup"><span data-stu-id="bf367-133">String</span></span>|<span data-ttu-id="bf367-134">Уникальный идентификатор для обнаруженного приложения.</span><span class="sxs-lookup"><span data-stu-id="bf367-134">The unique Identifier for the detected application.</span></span> <span data-ttu-id="bf367-135">Он создается Intune автоматически при создании приложения.</span><span class="sxs-lookup"><span data-stu-id="bf367-135">This is automatically generated by Intune at the time the application is created.</span></span> <span data-ttu-id="bf367-136">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="bf367-136">Read-only.</span></span>|
+|<span data-ttu-id="bf367-137">displayName</span><span class="sxs-lookup"><span data-stu-id="bf367-137">displayName</span></span>|<span data-ttu-id="bf367-138">Строка</span><span class="sxs-lookup"><span data-stu-id="bf367-138">String</span></span>|<span data-ttu-id="bf367-139">Имя обнаруженного приложения.</span><span class="sxs-lookup"><span data-stu-id="bf367-139">Name of the discovered application.</span></span> <span data-ttu-id="bf367-140">Только для чтения</span><span class="sxs-lookup"><span data-stu-id="bf367-140">Read-only</span></span>|
+|<span data-ttu-id="bf367-141">version</span><span class="sxs-lookup"><span data-stu-id="bf367-141">version</span></span>|<span data-ttu-id="bf367-142">String</span><span class="sxs-lookup"><span data-stu-id="bf367-142">String</span></span>|<span data-ttu-id="bf367-143">Версия обнаруженного приложения.</span><span class="sxs-lookup"><span data-stu-id="bf367-143">Version of the discovered application.</span></span> <span data-ttu-id="bf367-144">Только для чтения</span><span class="sxs-lookup"><span data-stu-id="bf367-144">Read-only</span></span>|
+|<span data-ttu-id="bf367-145">sizeInByte</span><span class="sxs-lookup"><span data-stu-id="bf367-145">sizeInByte</span></span>|<span data-ttu-id="bf367-146">Int64</span><span class="sxs-lookup"><span data-stu-id="bf367-146">Int64</span></span>|<span data-ttu-id="bf367-147">Размер обнаруженного приложения в байтах.</span><span class="sxs-lookup"><span data-stu-id="bf367-147">Discovered application size in bytes.</span></span> <span data-ttu-id="bf367-148">Только для чтения</span><span class="sxs-lookup"><span data-stu-id="bf367-148">Read-only</span></span>|
+|<span data-ttu-id="bf367-149">deviceCount</span><span class="sxs-lookup"><span data-stu-id="bf367-149">deviceCount</span></span>|<span data-ttu-id="bf367-150">Int32</span><span class="sxs-lookup"><span data-stu-id="bf367-150">Int32</span></span>|<span data-ttu-id="bf367-151">Количество устройств, на которых успешно установлено это приложение.</span><span class="sxs-lookup"><span data-stu-id="bf367-151">The number of devices that have installed this application</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="d6521-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="d6521-152">Response</span></span>
-<span data-ttu-id="d6521-153">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [detectedApp](../resources/intune-devices-detectedapp.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="d6521-153">If successful, this method returns a `200 OK` response code and an updated [detectedApp](../resources/intune-devices-detectedapp.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="bf367-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="bf367-152">Response</span></span>
+<span data-ttu-id="bf367-153">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [detectedApp](../resources/intune-devices-detectedapp.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="bf367-153">If successful, this method returns a `200 OK` response code and an updated [detectedApp](../resources/intune-devices-detectedapp.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d6521-154">Пример</span><span class="sxs-lookup"><span data-stu-id="d6521-154">Example</span></span>
+## <a name="example"></a><span data-ttu-id="bf367-154">Пример</span><span class="sxs-lookup"><span data-stu-id="bf367-154">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="d6521-155">Запрос</span><span class="sxs-lookup"><span data-stu-id="d6521-155">Request</span></span>
-<span data-ttu-id="d6521-156">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d6521-156">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="bf367-155">Запрос</span><span class="sxs-lookup"><span data-stu-id="bf367-155">Request</span></span>
+<span data-ttu-id="bf367-156">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="bf367-156">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/detectedApps/{detectedAppId}
 Content-type: application/json
@@ -81,8 +81,8 @@ Content-length: 167
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="d6521-157">Отклик</span><span class="sxs-lookup"><span data-stu-id="d6521-157">Response</span></span>
-<span data-ttu-id="d6521-p106">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d6521-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="bf367-157">Отклик</span><span class="sxs-lookup"><span data-stu-id="bf367-157">Response</span></span>
+<span data-ttu-id="bf367-p106">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="bf367-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -97,8 +97,6 @@ Content-Length: 216
   "deviceCount": 11
 }
 ```
-
-
 
 
 
