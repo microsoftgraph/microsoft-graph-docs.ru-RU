@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6790ce3486c25c85ec45750197f2394b7a8a544f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 87b8d8abdb22428a09106aec206007fe645f2512
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36351415"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189517"
 ---
-# <a name="create-resourceoperation"></a><span data-ttu-id="7a690-103">Создание объекта resourceOperation</span><span class="sxs-lookup"><span data-stu-id="7a690-103">Create resourceOperation</span></span>
+# <a name="create-resourceoperation"></a><span data-ttu-id="42483-103">Создание объекта resourceOperation</span><span class="sxs-lookup"><span data-stu-id="42483-103">Create resourceOperation</span></span>
 
-> <span data-ttu-id="7a690-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7a690-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="42483-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="42483-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="7a690-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="7a690-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="42483-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="42483-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="7a690-106">Создание объекта [resourceOperation](../resources/intune-rbac-resourceoperation.md).</span><span class="sxs-lookup"><span data-stu-id="7a690-106">Create a new [resourceOperation](../resources/intune-rbac-resourceoperation.md) object.</span></span>
+<span data-ttu-id="42483-106">Создание объекта [resourceOperation](../resources/intune-rbac-resourceoperation.md).</span><span class="sxs-lookup"><span data-stu-id="42483-106">Create a new [resourceOperation](../resources/intune-rbac-resourceoperation.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="7a690-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="7a690-107">Prerequisites</span></span>
-<span data-ttu-id="7a690-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7a690-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="42483-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="42483-107">Prerequisites</span></span>
+<span data-ttu-id="42483-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="42483-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7a690-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7a690-110">Permission type</span></span>|<span data-ttu-id="7a690-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="7a690-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="42483-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="42483-110">Permission type</span></span>|<span data-ttu-id="42483-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="42483-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="7a690-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7a690-112">Delegated (work or school account)</span></span>|<span data-ttu-id="7a690-113">DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7a690-113">DeviceManagementRBAC.ReadWrite.All</span></span>|
-|<span data-ttu-id="7a690-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7a690-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7a690-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7a690-115">Not supported.</span></span>|
-|<span data-ttu-id="7a690-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7a690-116">Application</span></span>|<span data-ttu-id="7a690-117">DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7a690-117">DeviceManagementRBAC.ReadWrite.All</span></span>|
+|<span data-ttu-id="42483-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="42483-112">Delegated (work or school account)</span></span>|<span data-ttu-id="42483-113">DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="42483-113">DeviceManagementRBAC.ReadWrite.All</span></span>|
+|<span data-ttu-id="42483-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="42483-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="42483-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="42483-115">Not supported.</span></span>|
+|<span data-ttu-id="42483-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="42483-116">Application</span></span>|<span data-ttu-id="42483-117">DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="42483-117">DeviceManagementRBAC.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="7a690-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7a690-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="42483-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="42483-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,35 +38,35 @@ ms.locfileid: "36351415"
 POST /deviceManagement/resourceOperations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7a690-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="7a690-119">Request headers</span></span>
-|<span data-ttu-id="7a690-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="7a690-120">Header</span></span>|<span data-ttu-id="7a690-121">Значение</span><span class="sxs-lookup"><span data-stu-id="7a690-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="42483-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="42483-119">Request headers</span></span>
+|<span data-ttu-id="42483-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="42483-120">Header</span></span>|<span data-ttu-id="42483-121">Значение</span><span class="sxs-lookup"><span data-stu-id="42483-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="7a690-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="7a690-122">Authorization</span></span>|<span data-ttu-id="7a690-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7a690-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="7a690-124">Accept</span><span class="sxs-lookup"><span data-stu-id="7a690-124">Accept</span></span>|<span data-ttu-id="7a690-125">application/json</span><span class="sxs-lookup"><span data-stu-id="7a690-125">application/json</span></span>|
+|<span data-ttu-id="42483-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="42483-122">Authorization</span></span>|<span data-ttu-id="42483-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="42483-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="42483-124">Accept</span><span class="sxs-lookup"><span data-stu-id="42483-124">Accept</span></span>|<span data-ttu-id="42483-125">application/json</span><span class="sxs-lookup"><span data-stu-id="42483-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="7a690-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="7a690-126">Request body</span></span>
-<span data-ttu-id="7a690-127">В теле запроса добавьте представление объекта resourceOperation в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7a690-127">In the request body, supply a JSON representation for the resourceOperation object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="42483-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="42483-126">Request body</span></span>
+<span data-ttu-id="42483-127">В теле запроса добавьте представление объекта resourceOperation в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="42483-127">In the request body, supply a JSON representation for the resourceOperation object.</span></span>
 
-<span data-ttu-id="7a690-128">В приведенной ниже таблице указаны свойства, необходимые при создании объекта resourceOperation.</span><span class="sxs-lookup"><span data-stu-id="7a690-128">The following table shows the properties that are required when you create the resourceOperation.</span></span>
+<span data-ttu-id="42483-128">В приведенной ниже таблице указаны свойства, необходимые при создании объекта resourceOperation.</span><span class="sxs-lookup"><span data-stu-id="42483-128">The following table shows the properties that are required when you create the resourceOperation.</span></span>
 
-|<span data-ttu-id="7a690-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="7a690-129">Property</span></span>|<span data-ttu-id="7a690-130">Тип</span><span class="sxs-lookup"><span data-stu-id="7a690-130">Type</span></span>|<span data-ttu-id="7a690-131">Описание</span><span class="sxs-lookup"><span data-stu-id="7a690-131">Description</span></span>|
+|<span data-ttu-id="42483-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="42483-129">Property</span></span>|<span data-ttu-id="42483-130">Тип</span><span class="sxs-lookup"><span data-stu-id="42483-130">Type</span></span>|<span data-ttu-id="42483-131">Описание</span><span class="sxs-lookup"><span data-stu-id="42483-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="7a690-132">id</span><span class="sxs-lookup"><span data-stu-id="7a690-132">id</span></span>|<span data-ttu-id="7a690-133">Строка</span><span class="sxs-lookup"><span data-stu-id="7a690-133">String</span></span>|<span data-ttu-id="7a690-134">Ключ операции с ресурсом.</span><span class="sxs-lookup"><span data-stu-id="7a690-134">Key of the Resource Operation.</span></span> <span data-ttu-id="7a690-135">Доступен только для чтения и создается автоматически.</span><span class="sxs-lookup"><span data-stu-id="7a690-135">Read-only, automatically generated.</span></span>|
-|<span data-ttu-id="7a690-136">resource</span><span class="sxs-lookup"><span data-stu-id="7a690-136">resource</span></span>|<span data-ttu-id="7a690-137">String</span><span class="sxs-lookup"><span data-stu-id="7a690-137">String</span></span>|<span data-ttu-id="7a690-138">Категория ресурса, к которой относится данная операция.</span><span class="sxs-lookup"><span data-stu-id="7a690-138">Resource category to which this Operation belongs.</span></span>|
-|<span data-ttu-id="7a690-139">resourceName</span><span class="sxs-lookup"><span data-stu-id="7a690-139">resourceName</span></span>|<span data-ttu-id="7a690-140">String</span><span class="sxs-lookup"><span data-stu-id="7a690-140">String</span></span>|<span data-ttu-id="7a690-141">Имя ресурса, с которым выполняется эта операция.</span><span class="sxs-lookup"><span data-stu-id="7a690-141">Name of the Resource this operation is performed on.</span></span>|
-|<span data-ttu-id="7a690-142">actionName</span><span class="sxs-lookup"><span data-stu-id="7a690-142">actionName</span></span>|<span data-ttu-id="7a690-143">String</span><span class="sxs-lookup"><span data-stu-id="7a690-143">String</span></span>|<span data-ttu-id="7a690-144">Тип действия, которое выполнит эта операция.</span><span class="sxs-lookup"><span data-stu-id="7a690-144">Type of action this operation is going to perform.</span></span> <span data-ttu-id="7a690-145">Свойство actionName должно быть максимально краткое (максимум несколько слов).</span><span class="sxs-lookup"><span data-stu-id="7a690-145">The actionName should be concise and limited to as few words as possible.</span></span>|
-|<span data-ttu-id="7a690-146">description</span><span class="sxs-lookup"><span data-stu-id="7a690-146">description</span></span>|<span data-ttu-id="7a690-147">String</span><span class="sxs-lookup"><span data-stu-id="7a690-147">String</span></span>|<span data-ttu-id="7a690-148">Описание операции с ресурсом.</span><span class="sxs-lookup"><span data-stu-id="7a690-148">Description of the resource operation.</span></span> <span data-ttu-id="7a690-149">Используется в тексте, который отображается над операцией при наведении указателя мыши на портале Azure.</span><span class="sxs-lookup"><span data-stu-id="7a690-149">The description is used in mouse-over text for the operation when shown in the Azure Portal.</span></span>|
-|<span data-ttu-id="7a690-150">енабледфорскопевалидатион</span><span class="sxs-lookup"><span data-stu-id="7a690-150">enabledForScopeValidation</span></span>|<span data-ttu-id="7a690-151">Boolean</span><span class="sxs-lookup"><span data-stu-id="7a690-151">Boolean</span></span>|<span data-ttu-id="7a690-152">Определяет, является ли разрешение проверенным для областей, определенных для назначения ролей.</span><span class="sxs-lookup"><span data-stu-id="7a690-152">Determines whether the Permission is validated for Scopes defined per Role Assignment.</span></span>|
+|<span data-ttu-id="42483-132">id</span><span class="sxs-lookup"><span data-stu-id="42483-132">id</span></span>|<span data-ttu-id="42483-133">Строка</span><span class="sxs-lookup"><span data-stu-id="42483-133">String</span></span>|<span data-ttu-id="42483-134">Ключ операции с ресурсом.</span><span class="sxs-lookup"><span data-stu-id="42483-134">Key of the Resource Operation.</span></span> <span data-ttu-id="42483-135">Доступен только для чтения и создается автоматически.</span><span class="sxs-lookup"><span data-stu-id="42483-135">Read-only, automatically generated.</span></span>|
+|<span data-ttu-id="42483-136">resource</span><span class="sxs-lookup"><span data-stu-id="42483-136">resource</span></span>|<span data-ttu-id="42483-137">String.</span><span class="sxs-lookup"><span data-stu-id="42483-137">String</span></span>|<span data-ttu-id="42483-138">Категория ресурса, к которой относится данная операция.</span><span class="sxs-lookup"><span data-stu-id="42483-138">Resource category to which this Operation belongs.</span></span>|
+|<span data-ttu-id="42483-139">resourceName</span><span class="sxs-lookup"><span data-stu-id="42483-139">resourceName</span></span>|<span data-ttu-id="42483-140">String</span><span class="sxs-lookup"><span data-stu-id="42483-140">String</span></span>|<span data-ttu-id="42483-141">Имя ресурса, с которым выполняется эта операция.</span><span class="sxs-lookup"><span data-stu-id="42483-141">Name of the Resource this operation is performed on.</span></span>|
+|<span data-ttu-id="42483-142">actionName</span><span class="sxs-lookup"><span data-stu-id="42483-142">actionName</span></span>|<span data-ttu-id="42483-143">String</span><span class="sxs-lookup"><span data-stu-id="42483-143">String</span></span>|<span data-ttu-id="42483-144">Тип действия, которое выполнит эта операция.</span><span class="sxs-lookup"><span data-stu-id="42483-144">Type of action this operation is going to perform.</span></span> <span data-ttu-id="42483-145">Свойство actionName должно быть максимально краткое (максимум несколько слов).</span><span class="sxs-lookup"><span data-stu-id="42483-145">The actionName should be concise and limited to as few words as possible.</span></span>|
+|<span data-ttu-id="42483-146">description</span><span class="sxs-lookup"><span data-stu-id="42483-146">description</span></span>|<span data-ttu-id="42483-147">String</span><span class="sxs-lookup"><span data-stu-id="42483-147">String</span></span>|<span data-ttu-id="42483-148">Описание операции с ресурсом.</span><span class="sxs-lookup"><span data-stu-id="42483-148">Description of the resource operation.</span></span> <span data-ttu-id="42483-149">Используется в тексте, который отображается над операцией при наведении указателя мыши на портале Azure.</span><span class="sxs-lookup"><span data-stu-id="42483-149">The description is used in mouse-over text for the operation when shown in the Azure Portal.</span></span>|
+|<span data-ttu-id="42483-150">енабледфорскопевалидатион</span><span class="sxs-lookup"><span data-stu-id="42483-150">enabledForScopeValidation</span></span>|<span data-ttu-id="42483-151">Boolean.</span><span class="sxs-lookup"><span data-stu-id="42483-151">Boolean</span></span>|<span data-ttu-id="42483-152">Определяет, является ли разрешение проверенным для областей, определенных для назначения ролей.</span><span class="sxs-lookup"><span data-stu-id="42483-152">Determines whether the Permission is validated for Scopes defined per Role Assignment.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="7a690-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="7a690-153">Response</span></span>
-<span data-ttu-id="7a690-154">В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [resourceOperation](../resources/intune-rbac-resourceoperation.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="7a690-154">If successful, this method returns a `201 Created` response code and a [resourceOperation](../resources/intune-rbac-resourceoperation.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="42483-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="42483-153">Response</span></span>
+<span data-ttu-id="42483-154">В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [resourceOperation](../resources/intune-rbac-resourceoperation.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="42483-154">If successful, this method returns a `201 Created` response code and a [resourceOperation](../resources/intune-rbac-resourceoperation.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7a690-155">Пример</span><span class="sxs-lookup"><span data-stu-id="7a690-155">Example</span></span>
+## <a name="example"></a><span data-ttu-id="42483-155">Пример</span><span class="sxs-lookup"><span data-stu-id="42483-155">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="7a690-156">Запрос</span><span class="sxs-lookup"><span data-stu-id="7a690-156">Request</span></span>
-<span data-ttu-id="7a690-157">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="7a690-157">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="42483-156">Запрос</span><span class="sxs-lookup"><span data-stu-id="42483-156">Request</span></span>
+<span data-ttu-id="42483-157">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="42483-157">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/resourceOperations
 Content-type: application/json
@@ -82,8 +82,8 @@ Content-length: 249
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="7a690-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="7a690-158">Response</span></span>
-<span data-ttu-id="7a690-p105">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="7a690-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="42483-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="42483-158">Response</span></span>
+<span data-ttu-id="42483-p105">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="42483-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -99,8 +99,6 @@ Content-Length: 298
   "enabledForScopeValidation": true
 }
 ```
-
-
 
 
 
