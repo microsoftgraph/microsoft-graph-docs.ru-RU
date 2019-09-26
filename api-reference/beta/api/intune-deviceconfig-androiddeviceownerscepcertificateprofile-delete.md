@@ -1,33 +1,33 @@
 ---
-title: Перечисление объектов userInstallStateSummary
-description: Список свойств и связей объектов userInstallStateSummary.
+title: Удаление Андроиддевицеовнерсцепцертификатепрофиле
+description: Удаляет объект Андроиддевицеовнерсцепцертификатепрофиле.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 09eea32c00f40c9b00e4bbf35198fa5569e1bf15
+ms.openlocfilehash: 84d94b676e778a1c89df90534d22eed9d097e166
 ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/26/2019
-ms.locfileid: "37170961"
+ms.locfileid: "37171508"
 ---
-# <a name="list-userinstallstatesummaries"></a>Перечисление объектов userInstallStateSummary
+# <a name="delete-androiddeviceownerscepcertificateprofile"></a>Удаление Андроиддевицеовнерсцепцертификатепрофиле
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей объектов [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md).
+Удаляет объект [андроиддевицеовнерсцепцертификатепрофиле](../resources/intune-deviceconfig-androiddeviceownerscepcertificateprofile.md).
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -35,7 +35,9 @@ ms.locfileid: "37170961"
 }
 -->
 ``` http
-GET /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -47,36 +49,21 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md) в тексте отклика.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary
+DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 295
-
-{
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.userInstallStateSummary",
-      "id": "1e5b41ba-41ba-1e5b-ba41-5b1eba415b1e",
-      "userName": "User Name value",
-      "installedDeviceCount": 4,
-      "failedDeviceCount": 1,
-      "notInstalledDeviceCount": 7
-    }
-  ]
-}
+HTTP/1.1 204 No Content
 ```
 
 
