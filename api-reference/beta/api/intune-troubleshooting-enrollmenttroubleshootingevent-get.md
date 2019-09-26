@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a78f0a1e19351e958f020e7160e4445f3e495188
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d046c42ff16ae40aee06dd45f74883036a53757b
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36347327"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37195449"
 ---
 # <a name="get-enrollmenttroubleshootingevent"></a>Get enrollmentTroubleshootingEvent
 
@@ -25,9 +25,9 @@ ms.locfileid: "36347327"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|* * TODO: определение областей * *|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|* * TODO: определение областей поддержка apponly * *|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -107,8 +107,6 @@ Content-Length: 1318
   }
 }
 ```
-
-
 
 
 

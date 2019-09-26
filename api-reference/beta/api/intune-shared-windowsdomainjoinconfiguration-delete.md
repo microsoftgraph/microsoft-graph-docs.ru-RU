@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3ce3ad8721e9ce1474af49ca412c8dc3ce71037f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 53a9d06cc36ecba3499d25f336aa3dc2a8521ccd
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36347369"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37195715"
 ---
 # <a name="delete-windowsdomainjoinconfiguration"></a>Удаление Виндовсдомаинжоинконфигуратион
 
@@ -27,7 +27,8 @@ ms.locfileid: "36347369"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Настройка устройства** | DeviceManagementConfiguration.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений||
+| &nbsp; &nbsp; **Настройка устройства** | DeviceManagementConfiguration.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -64,6 +65,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

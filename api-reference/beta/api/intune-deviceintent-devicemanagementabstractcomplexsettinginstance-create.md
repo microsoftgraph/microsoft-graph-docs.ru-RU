@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0174f36589bf6059e4eeee7fd31b2b9a72bc3a8d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 722d20f0b9b62218f1a58cb19e29a5d68a5c2d35
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36343995"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37186255"
 ---
 # <a name="create-devicemanagementabstractcomplexsettinginstance"></a>Создание Девицеманажементабстракткомплекссеттингинстанце
 
@@ -55,9 +55,9 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Идентификатор экземпляра параметра, унаследованный от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|дефинитионид|String|Идентификатор определения параметра для этого экземпляра, унаследованного от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|валуежсон|String|Представление JSON значения, наследуемого от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|имплементатионид|String|Идентификатор определения для выбранной реализации этого сложного параметра|
+|дефинитионид|String.|Идентификатор определения параметра для этого экземпляра, унаследованного от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|валуежсон|String.|Представление JSON значения, наследуемого от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|имплементатионид|String.|Идентификатор определения для выбранной реализации этого сложного параметра|
 
 
 
@@ -96,8 +96,6 @@ Content-Length: 265
   "implementationId": "Implementation Id value"
 }
 ```
-
-
 
 
 

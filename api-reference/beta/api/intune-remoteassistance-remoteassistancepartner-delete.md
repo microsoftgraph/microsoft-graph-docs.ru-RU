@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5860be126515fa9acc5dddf5550d829ed3d8aaf4
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 36911379bed19fec01f19f34df0af55a9fc05719
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36347642"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37194798"
 ---
 # <a name="delete-remoteassistancepartner"></a>Удаление объекта remoteAssistancePartner
 
@@ -63,8 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/remoteAssistancePartner
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

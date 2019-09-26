@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f6a6e8e58167cd9471802be39f9e7d6c1744040e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 05f00a82ab42c5fb681b5c23bc7fbbee39031ebe
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36350995"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37194777"
 ---
 # <a name="get-deviceappmanagement"></a>Get deviceAppManagement
 
@@ -27,10 +27,12 @@ ms.locfileid: "36350995"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 | Делегированные (рабочая или учебная учетная запись) | |
-| &nbsp;&nbsp; **Приложения**, **книги**, входящая миграция или **Интеграция партнерских** **систем** | DeviceManagementApps. ReadWrite. ALL, DeviceManagementApps. Реадв. ALL |
+| &nbsp;&nbsp; **Приложения**, **книги**, **входящая**миграция, **Интеграция партнеров**или **набор политик** | DeviceManagementApps. ReadWrite. ALL, DeviceManagementApps. Реадв. ALL |
 | &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений| |
+| &nbsp;&nbsp; **Приложения**, **книги**, **входящая**миграция, **Интеграция партнеров**или **набор политик** | DeviceManagementApps. ReadWrite. ALL, DeviceManagementApps. Реадв. ALL |
+| &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -86,6 +88,7 @@ Content-Length: 133
   }
 }
 ```
+
 
 
 

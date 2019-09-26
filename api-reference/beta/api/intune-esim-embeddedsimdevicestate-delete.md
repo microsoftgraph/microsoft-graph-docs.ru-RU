@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 39761952d4b31689b79beedb82e3ad1cbb852763
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 42df44ba646ff712bbfa0a5d6c1b1ee8db95688e
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36355789"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37187543"
 ---
 # <a name="delete-embeddedsimdevicestate"></a>Удаление Ембеддедсимдевицестате
 
@@ -63,8 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/embeddedSIMActivationCo
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

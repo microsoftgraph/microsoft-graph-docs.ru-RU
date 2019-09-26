@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 10ef72969271281bccf3020538a3a929e71a25d1
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1c73f6690fbee7891210e8ab4df847639299307e
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36354193"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37193279"
 ---
 # <a name="get-managedapppolicy"></a>Get managedAppPolicy
 
@@ -85,8 +85,6 @@ Content-Length: 441
   }
 }
 ```
-
-
 
 
 

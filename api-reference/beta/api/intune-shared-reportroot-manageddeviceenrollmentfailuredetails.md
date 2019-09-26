@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 89d5344fce7c4bc0e1545b81ea71c7af632fb442
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5cd1eed26f4bc9b29b0c8a7187869f0fded61e35
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36350743"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37195827"
 ---
 # <a name="manageddeviceenrollmentfailuredetails-function"></a>Функция Манажеддевицеенроллментфаилуредетаилс
 
@@ -27,7 +27,8 @@ ms.locfileid: "36350743"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Устранение неполадок** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений||
+| &nbsp; &nbsp; **Устранение неполадок** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -80,6 +81,7 @@ Content-Length: 123
   }
 }
 ```
+
 
 
 

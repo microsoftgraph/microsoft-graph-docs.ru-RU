@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e8315527c5f3737b7c57c57d242436daca42c27
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b2a73ed7fc6dedc611235263fee07ec585d19790
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36351681"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189779"
 ---
 # <a name="update-deviceappmanagementtask"></a>Обновление Девицеаппманажементтаск
 
@@ -51,15 +51,15 @@ PATCH /deviceAppManagement/deviceAppManagementTasks/{deviceAppManagementTaskId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|String.|Ключ объекта.|
 |displayName|Строка|Имя.|
 |description|String|Описание.|
 |createdDateTime|DateTimeOffset|Дата создания.|
 |dueDateTime|DateTimeOffset|Дата выполнения.|
 |category|[девицеаппманажементтасккатегори](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|Категория. Возможные значения: `unknown`, `advancedThreatProtection`.|
 |priority|[девицеаппманажементтаскприорити](../resources/intune-partnerintegration-deviceappmanagementtaskpriority.md)|Приоритет. Возможные значения: `none`, `high`, `low`.|
-|модуль|String|Адрес электронной почты создателя.|
-|креаторнотес|String|Заметки автора.|
+|модуль|String.|Адрес электронной почты создателя.|
+|креаторнотес|String.|Заметки автора.|
 |assignedTo|String|Имя или электронная почта администратора, которому назначена эта задача.|
 |status|[девицеаппманажементтаскстатус](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|Состояние. Возможные значения: `unknown`, `pending`, `active`, `completed`, `rejected`.|
 
@@ -113,8 +113,6 @@ Content-Length: 508
   "status": "pending"
 }
 ```
-
-
 
 
 

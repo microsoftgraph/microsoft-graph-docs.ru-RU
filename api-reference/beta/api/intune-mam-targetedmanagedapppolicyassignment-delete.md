@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4325c1c8cc9113e3d6c4176c38d931840b0a5399
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a29b514e4022584974578f0282211f6d171e8939
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36353773"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37192956"
 ---
 # <a name="delete-targetedmanagedapppolicyassignment"></a>Удаление targetedManagedAppPolicyAssignment
 
@@ -67,8 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtect
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

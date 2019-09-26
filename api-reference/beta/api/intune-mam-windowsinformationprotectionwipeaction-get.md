@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: aee798f79cf70794ae8f7752be0403b724d8ac7c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5252ab0696abfc92df3c5d079ef25f3f4180b1e0
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36353374"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37191267"
 ---
 # <a name="get-windowsinformationprotectionwipeaction"></a>Получение Виндовсинформатионпротектионвипеактион
 
@@ -81,8 +81,6 @@ Content-Length: 496
   }
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dd4ebf62b1f43018db2e4d905188e4505e6c9d1d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 089e9546665ced37ff75e95353bbee18342dbc60
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36353535"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37191500"
 ---
 # <a name="create-windowsinformationprotectiondeviceregistration"></a>Создание Виндовсинформатионпротектиондевицерегистратион
 
@@ -56,7 +56,7 @@ POST /deviceAppManagement/windowsInformationProtectionDeviceRegistrations
 |deviceRegistrationId|Строка|Идентификатор устройства для записи регистрации этого устройства.|
 |deviceName|String|Имя устройства.|
 |deviceType|String|Тип устройства, например Windows для портативного компьютера Windows и Windows Phone.|
-|девицемакаддресс|String|Mac-адрес устройства.|
+|девицемакаддресс|String.|Mac-адрес устройства.|
 |ластчеккиндатетиме|DateTimeOffset|Время последнего возврата устройства.|
 
 
@@ -102,8 +102,6 @@ Content-Length: 415
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
-
-
 
 
 

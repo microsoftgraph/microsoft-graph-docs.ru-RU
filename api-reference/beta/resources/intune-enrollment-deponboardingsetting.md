@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cde55975dab7b216c904bb15e2d1a8cb3224496b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 21b72d000208e2913eae06f6d88b4bd141194e67
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328020"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196569"
 ---
 # <a name="deponboardingsetting-resource-type"></a>Тип ресурса depOnboardingSetting
 
@@ -28,11 +28,12 @@ DepOnboardingSetting представляет экземпляр службы Ap
 |[Создание depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-create.md)|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Создание нового объекта [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .|
 |[Удаление depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-delete.md)|Нет|Удаляет объект [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md).|
 |[Обновление depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-update.md)|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Обновление свойств объекта [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .|
-|[Функция getEncryptionPublicKey](../api/intune-enrollment-deponboardingsetting-getencryptionpublickey.md)|String|Получение открытого ключа, используемого для шифрования маркера программы регистрации устройств Apple|
+|[Функция getEncryptionPublicKey](../api/intune-enrollment-deponboardingsetting-getencryptionpublickey.md)|String.|Получение открытого ключа, используемого для шифрования маркера программы регистрации устройств Apple|
 |[Действие uploadDepToken](../api/intune-enrollment-deponboardingsetting-uploaddeptoken.md)|Нет|Отправка нового маркера программы регистрации устройств|
 |[Действие syncWithAppleDeviceEnrollmentProgram](../api/intune-enrollment-deponboardingsetting-syncwithappledeviceenrollmentprogram.md)|Нет|Синхронизация между программой регистрации устройств Apple и Intune|
-|[Действие shareForSchoolDataSyncService](../api/intune-enrollment-deponboardingsetting-shareforschooldatasyncservice.md)|Нет|Н/Д|
-|[Действие unshareForSchoolDataSyncService](../api/intune-enrollment-deponboardingsetting-unshareforschooldatasyncservice.md)|Нет|Н/Д|
+|[Действие shareForSchoolDataSyncService](../api/intune-enrollment-deponboardingsetting-shareforschooldatasyncservice.md)|Нет|Пока не задокументировано.|
+|[Действие unshareForSchoolDataSyncService](../api/intune-enrollment-deponboardingsetting-unshareforschooldatasyncservice.md)|Нет|Пока не задокументировано.|
+|[Функция Жетекспирингвпптокенкаунт](../api/intune-enrollment-deponboardingsetting-getexpiringvpptokencount.md)|Int32|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -43,12 +44,12 @@ DepOnboardingSetting представляет экземпляр службы Ap
 |lastModifiedDateTime|DateTimeOffset|При подключении службы.|
 |ластсукцессфулсинкдатетиме|DateTimeOffset|Когда служба последний синед с Intune|
 |ластсинктригжереддатетиме|DateTimeOffset|При последнем запросе синхронизации в Intune.|
-|Свойства sharetokenwithschooldatasyncservice|Boolean|Указывает, включен ли общий доступ к маркеру DEP для службы School Data Sync.|
+|Свойства sharetokenwithschooldatasyncservice|Boolean.|Указывает, включен ли общий доступ к маркеру DEP для службы School Data Sync.|
 |Lastsyncerrorcode к объекту|Int32|Код ошибки, полученный от Apple во время последней синхронизации DEP.|
 |токентипе|[depTokenType](../resources/intune-enrollment-deptokentype.md);|Получает или задает тип токена DEP. Возможные значения: `none`, `dep`, `appleSchoolManager`.|
-|токеннаме|String|Понятное имя для токена DEP|
+|токеннаме|String.|Понятное имя для токена DEP|
 |синцеддевицекаунт|Int32|Получает число синхронизированных устройств|
-|dataSharingConsentGranted|Boolean|Разрешение, предоставленное для предоставления общего доступа к данным с помощью службы Apple DEP|
+|dataSharingConsentGranted|Boolean.|Разрешение, предоставленное для предоставления общего доступа к данным с помощью службы Apple DEP|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
 
 ## <a name="relationships"></a>Отношения

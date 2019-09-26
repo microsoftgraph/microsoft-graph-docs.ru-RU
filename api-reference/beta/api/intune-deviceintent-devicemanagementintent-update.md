@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3ff66aa59b25333e6dd54605161803f8118e05cf
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6e9afaa54ca6cbef6ea693de30479496d863c451
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36313267"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37185961"
 ---
 # <a name="update-devicemanagementintent"></a>Обновление Девицеманажементинтент
 
@@ -56,7 +56,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}
 |description|String|Описание, заданное пользователем|
 |isAssigned|Boolean|Указывает, назначена ли пользователю задача|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения намерения|
-|templateId|String|Идентификатор шаблона, на основе которого была создана эта цель (при наличии)|
+|templateId|String.|Идентификатор шаблона, на основе которого была создана эта цель (при наличии)|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
 
 
@@ -105,8 +105,6 @@ Content-Length: 379
   ]
 }
 ```
-
-
 
 
 

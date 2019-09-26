@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 19a48afab55be6dbc26bb6c57ec9754b30e1c929
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: bea20c2b6d542d0c3a27e35784d6253051aa1130
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36351723"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189839"
 ---
 # <a name="delete-deviceappmanagementtask"></a>Удаление Девицеаппманажементтаск
 
@@ -63,8 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/deviceAppManagementT
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

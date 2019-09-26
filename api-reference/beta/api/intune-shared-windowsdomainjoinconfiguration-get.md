@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e4564ad51af079543a192762a781110a91117524
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 717800ee8399b83ec8d9c38fd7fade2a3ba6a924
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36350547"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37194329"
 ---
 # <a name="get-windowsdomainjoinconfiguration"></a>Получение Виндовсдомаинжоинконфигуратион
 
@@ -30,7 +30,9 @@ ms.locfileid: "36350547"
 | &nbsp; &nbsp; **Настройка устройства** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 | &nbsp;&nbsp; **Регистрация** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений||
+| &nbsp; &nbsp; **Настройка устройства** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+| &nbsp;&nbsp; **Регистрация** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 **Настройка устройства**
@@ -107,6 +109,7 @@ Content-Length: 560
   }
 }
 ```
+
 
 
 

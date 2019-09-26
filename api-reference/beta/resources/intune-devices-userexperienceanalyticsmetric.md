@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 307e8c9430c5eb8d0d7bd6bc51bc772dacb6392b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 37364d18fbdbd7cbd8b92aefca3a02675d17ba45
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371547"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196688"
 ---
 # <a name="userexperienceanalyticsmetric-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксметрик
 
@@ -33,9 +33,8 @@ ms.locfileid: "36371547"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор метрики аналитики взаимодействия с пользователем.|
-|displayName|Строка|Имя метрики аналитики взаимодействия с пользователем.|
 |значение|Двойное|Значение метрики аналитики взаимодействия с пользователем.|
-|устройств|String|Единица измерения показателя взаимодействия с пользователем.|
+|устройств|String.|Единица измерения показателя взаимодействия с пользователем.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -52,7 +51,6 @@ ms.locfileid: "36371547"
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetric",
   "id": "String (identifier)",
-  "displayName": "String",
   "value": "<Unknown Primitive Type Edm.Double>",
   "unit": "String"
 }

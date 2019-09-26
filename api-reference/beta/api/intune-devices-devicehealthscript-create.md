@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0084852f4c0cb236931ee532f12e54a08c1e2fc2
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 348792c6de464ddfd37f7c42b480423e969da7b5
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36311743"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188663"
 ---
 # <a name="create-devicehealthscript"></a>Создание Девицехеалсскрипт
 
@@ -51,21 +51,20 @@ POST /deviceManagement/deviceManagementScripts
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для сценария управления устройствами. Наследуется от [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|displayName|Строка|Имя скрипта управления устройствами. Наследуется от [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|description|String|Необязательное описание скрипта управления устройствами. Наследуется от [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Интервал для запуска скрипта. Если не определен, сценарий будет выполняться один раз наследуемый от [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|скриптконтент|Binary|Содержимое скрипта. Наследуется от [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Наследуется от [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения скрипта управления устройствами. Наследуется от [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|runAsAccount|[рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Наследуется от [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md). Возможные значения: `system`, `user`.|
-|Свойства enforcesignaturecheck|Boolean|Указывает, нужно ли проверять подпись скрипта. Наследуется от [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|fileName|String|Имя файла сценария. Наследуется от [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого экземпляра Повершеллскрипт. Наследуется от [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|runAs32Bit|Boolean|Значение, указывающее, должен ли скрипт PowerShell выполняться как 32 – бит, наследуемый от [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
+|id|Строка|Уникальный идентификатор для сценария управления устройствами. Наследуется от [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|displayName|Строка|Имя скрипта управления устройствами. Наследуется от [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|description|String|Необязательное описание скрипта управления устройствами. Наследуется от [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Интервал для запуска скрипта. Если не определен, сценарий будет выполняться один раз наследуемый от [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|скриптконтент|Binary|Содержимое скрипта. Наследуется от [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Это свойство доступно только для чтения. Наследуется от [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения скрипта управления устройствами. Это свойство доступно только для чтения. Наследуется от [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|runAsAccount|[рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Наследуется от [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md). Возможные значения: `system`, `user`.|
+|Свойства enforcesignaturecheck|Boolean.|Указывает, нужно ли проверять подпись скрипта. Наследуется от [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|fileName|String|Имя файла сценария. Наследуется от [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого экземпляра Повершеллскрипт. Наследуется от [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|runAs32Bit|Boolean.|Значение, указывающее, должен ли скрипт PowerShell выполняться как 32 – бит, наследуемый от [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
 |комплианцеруле|[девицехеалсскрипткомплианцеруле](../resources/intune-devices-devicehealthscriptcompliancerule.md)|Пока не задокументировано.|
 |ремедиатионскриптконтент|Binary|Пока не задокументировано.|
-|рунремедиатионскрипт|Boolean|Н/Д|
 
 
 
@@ -79,7 +78,7 @@ POST /deviceManagement/deviceManagementScripts
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts
 Content-type: application/json
-Content-length: 745
+Content-length: 712
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
@@ -102,8 +101,7 @@ Content-length: 745
     "operator": "equal",
     "detectionValue": "Detection Value value"
   },
-  "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50",
-  "runRemediationScript": true
+  "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50"
 }
 ```
 
@@ -112,7 +110,7 @@ Content-length: 745
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 917
+Content-Length: 884
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
@@ -138,12 +136,9 @@ Content-Length: 917
     "operator": "equal",
     "detectionValue": "Detection Value value"
   },
-  "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50",
-  "runRemediationScript": true
+  "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50"
 }
 ```
-
-
 
 
 

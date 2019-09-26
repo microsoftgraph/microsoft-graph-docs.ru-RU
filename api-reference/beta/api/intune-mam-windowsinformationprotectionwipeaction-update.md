@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5a75930ba8cfe90b102b062427c156757b363179
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5f45ff40d6396b04065b5a8ed0f8ed0a2d6699a3
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36353367"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37191268"
 ---
 # <a name="update-windowsinformationprotectionwipeaction"></a>Обновление Виндовсинформатионпротектионвипеактион
 
@@ -53,10 +53,10 @@ PATCH /deviceAppManagement/windowsInformationProtectionWipeActions/{windowsInfor
 |:---|:---|:---|
 |id|String|Ключ объекта.|
 |status|[actionState](../resources/intune-shared-actionstate.md)|Состояние действия очистки. Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|таржетедусерид|String|UserId, целевой для этого действия очистки.|
-|таржетеддевицерегистратионид|String|Девицерегистратионид, предназначенный для этого действия очистки.|
-|таржетеддевиценаме|String|Имя целевого устройства.|
-|таржетеддевицемакаддресс|String|Mac-адрес целевого устройства.|
+|таржетедусерид|String.|UserId, целевой для этого действия очистки.|
+|таржетеддевицерегистратионид|String.|Девицерегистратионид, предназначенный для этого действия очистки.|
+|таржетеддевиценаме|String.|Имя целевого устройства.|
+|таржетеддевицемакаддресс|String.|Mac-адрес целевого устройства.|
 |ластчеккиндатетиме|DateTimeOffset|Время последнего возврата устройства, которое было назначено для этого действия очистки.|
 
 
@@ -102,8 +102,6 @@ Content-Length: 461
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8ccde92a3d69cae27bc1a62926e733bc903c978e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6ad5fc4e12eeb28acbb6e4c0e0cbe085852feda3
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36376111"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196961"
 ---
 # <a name="devicehealthscript-resource-type"></a>Тип ресурса Девицехеалсскрипт
 
@@ -21,7 +21,7 @@ ms.locfileid: "36376111"
 Intune предоставит клиенту возможность запускать свои сценарии PowerShell на зарегистрированных устройствах, подключенных к системе Windows 10 Azure Active Directory. Сценарий можно выполнить один раз или периодически.
 
 
-Наследуется от [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)
+Наследуется от [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
@@ -35,30 +35,29 @@ Intune предоставит клиенту возможность запуск
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для сценария управления устройствами. Наследуется от [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|displayName|Строка|Имя скрипта управления устройствами. Наследуется от [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|description|String|Необязательное описание скрипта управления устройствами. Наследуется от [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Интервал для запуска скрипта. Если не определен, сценарий будет выполняться один раз наследуемый от [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|скриптконтент|Binary|Содержимое скрипта. Наследуется от [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Наследуется от [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения скрипта управления устройствами. Наследуется от [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|runAsAccount|[рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Наследуется от [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md). Возможные значения: `system`, `user`.|
-|Свойства enforcesignaturecheck|Boolean|Указывает, нужно ли проверять подпись скрипта. Наследуется от [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|fileName|String|Имя файла сценария. Наследуется от [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого экземпляра Повершеллскрипт. Наследуется от [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|runAs32Bit|Boolean|Значение, указывающее, должен ли скрипт PowerShell выполняться как 32 – бит, наследуемый от [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
+|id|Строка|Уникальный идентификатор для сценария управления устройствами. Наследуется от [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|displayName|Строка|Имя скрипта управления устройствами. Наследуется от [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|description|String|Необязательное описание скрипта управления устройствами. Наследуется от [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Интервал для запуска скрипта. Если не определен, сценарий будет выполняться один раз наследуемый от [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|скриптконтент|Binary|Содержимое скрипта. Наследуется от [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Это свойство доступно только для чтения. Наследуется от [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения скрипта управления устройствами. Это свойство доступно только для чтения. Наследуется от [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|runAsAccount|[рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Наследуется от [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md). Возможные значения: `system`, `user`.|
+|Свойства enforcesignaturecheck|Boolean.|Указывает, нужно ли проверять подпись скрипта. Наследуется от [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|fileName|String|Имя файла сценария. Наследуется от [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого экземпляра Повершеллскрипт. Наследуется от [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|runAs32Bit|Boolean.|Значение, указывающее, должен ли скрипт PowerShell выполняться как 32 – бит, наследуемый от [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
 |комплианцеруле|[девицехеалсскрипткомплианцеруле](../resources/intune-devices-devicehealthscriptcompliancerule.md)|Пока не задокументировано.|
-|ремедиатионскриптконтент|Binary|Пока не задокументировано.|
-|рунремедиатионскрипт|Boolean|Н/Д|
+|ремедиатионскриптконтент|Binary|Н/Д|
 
 ## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
-|groupAssignments|Коллекция [девицеманажементскриптграупассигнмент](../resources/intune-devices-devicemanagementscriptgroupassignment.md)|Список назначений групп для сценария управления устройствами. Наследуется от [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|assignments|Коллекция [девицеманажементскриптассигнмент](../resources/intune-devices-devicemanagementscriptassignment.md)|Список назначений групп для сценария управления устройствами. Наследуется от [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|Свойства навигации runsummary|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md);|Сводка по запуску для сценария управления устройствами. Наследуется от [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|deviceRunStates|Коллекция [девицеманажементскриптдевицестате](../resources/intune-devices-devicemanagementscriptdevicestate.md)|Список состояний запуска для этого сценария на всех устройствах. Наследуется от [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
-|userRunStates|Коллекция [девицеманажементскриптусерстате](../resources/intune-devices-devicemanagementscriptuserstate.md)|Список состояний запуска этого сценария для всех пользователей. Наследуется от [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|
+|groupAssignments|Коллекция [девицеманажементскриптграупассигнмент](../resources/intune-devices-devicemanagementscriptgroupassignment.md)|Список назначений групп для сценария управления устройствами. Наследуется от [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|assignments|Коллекция [девицеманажементскриптассигнмент](../resources/intune-devices-devicemanagementscriptassignment.md)|Список назначений групп для сценария управления устройствами. Наследуется от [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|Свойства навигации runsummary|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md);|Сводка по запуску для сценария управления устройствами. Наследуется от [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|deviceRunStates|Коллекция [девицеманажементскриптдевицестате](../resources/intune-devices-devicemanagementscriptdevicestate.md)|Список состояний запуска для этого сценария на всех устройствах. Наследуется от [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
+|userRunStates|Коллекция [девицеманажементскриптусерстате](../resources/intune-devices-devicemanagementscriptuserstate.md)|Список состояний запуска этого сценария для всех пользователей. Наследуется от [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -93,8 +92,7 @@ Intune предоставит клиенту возможность запуск
     "operator": "String",
     "detectionValue": "String"
   },
-  "remediationScriptContent": "binary",
-  "runRemediationScript": true
+  "remediationScriptContent": "binary"
 }
 ```
 

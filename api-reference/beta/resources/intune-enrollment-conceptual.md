@@ -4,12 +4,12 @@ description: Перечисляет API Microsoft Graph для конечных 
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 506f85ae59330757f4c6f12cf80795c6678b125e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5655bd1733c2383bac562f700be5abc1c57bf43b
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36366373"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196611"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Регистрация корпоративных устройств с помощью Intune
 
@@ -22,6 +22,10 @@ ms.locfileid: "36366373"
 Для управления корпоративными устройствами в Intune используются перечисленные ниже ресурсы Graph.
 
 - [Профиль Windows AutoPilot Deployment для Active Directory](intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md)
+- [Назначение профилей регистрации Apple](intune-enrollment-appleenrollmentprofileassignment.md)
+- [Тип регистрации типа владельца Apple](intune-enrollment-appleownertypeenrollmenttype.md)
+- [Профиль регистрации, инициированный пользователем Apple](intune-enrollment-appleuserinitiatedenrollmentprofile.md)
+- [Тип регистрации, инициированный пользователем Apple](intune-enrollment-appleuserinitiatedenrollmenttype.md)
 - [Профиль Windows AutoPilot Deployment для Azure AD](intune-enrollment-azureadwindowsautopilotdeploymentprofile.md)
 - [Базовые профиль регистрации DEP](intune-enrollment-depenrollmentbaseprofile.md)
 - [Профиль регистрации DEP](intune-enrollment-depenrollmentprofile.md)
@@ -31,7 +35,6 @@ ms.locfileid: "36366373"
 - [Тип маркера DEP](intune-enrollment-deptokentype.md)
 - [Источник обнаружения](intune-enrollment-discoverysource.md)
 - [Профиль регистрации](intune-enrollment-enrollmentprofile.md)
-- [Состояние регистрации](intune-enrollment-enrollmentstate.md)
 - [Импортированное удостоверение устройства Apple](intune-enrollment-importedappledeviceidentity.md)
 - [Результат импорта удостоверения устройства Apple](intune-enrollment-importedappledeviceidentityresult.md)
 - [Импортированное удостоверение устройства](intune-enrollment-importeddeviceidentity.md)
@@ -45,7 +48,6 @@ ms.locfileid: "36366373"
 - [Сертификат управления с отпечатком](intune-enrollment-managementcertificatewiththumbprint.md)
 - [Параметры запуска при первом включении компьютера](intune-enrollment-outofboxexperiencesettings.md)
 - [Платформа](intune-enrollment-platform.md)
-- [Профиль Windows AutoPilot Deployment](intune-enrollment-windowsautopilotdeploymentprofile.md)
 - [Назначение профиля Windows Autopilot Deployment](intune-enrollment-windowsautopilotdeploymentprofileassignment.md)
 - [Удостоверение устройства с Windows Autopilot](intune-enrollment-windowsautopilotdeviceidentity.md)
 - [Тип устройства с Windows Autopilot](intune-enrollment-windowsautopilotdevicetype.md)
@@ -56,3 +58,4 @@ ms.locfileid: "36366373"
 - [Тип использования устройства Windows](intune-enrollment-windowsdeviceusagetype.md)
 - [Параметры экрана состояния регистрации Windows](intune-enrollment-windowsenrollmentstatusscreensettings.md)
 - [Тип пользователя Windows](intune-enrollment-windowsusertype.md)
+

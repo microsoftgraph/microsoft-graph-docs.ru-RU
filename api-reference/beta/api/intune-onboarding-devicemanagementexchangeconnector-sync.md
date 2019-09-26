@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9fc06ac4791959ef4e603a4a65ddef2f62561a6d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f896f49da70a48ef5a628af4e8abf01c05da762f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36352765"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37190772"
 ---
 # <a name="sync-action"></a>Действие синхронизации
 
@@ -78,8 +78,6 @@ Content-length: 31
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

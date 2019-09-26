@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 76285db02be34bb0615dc96deeae634cbfe98320
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f19495b6e78e1582bbfdb6f2c3b6d5c00188f0cf
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36352758"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37190637"
 ---
 # <a name="update-devicemanagementexchangeconnector"></a>Обновление объекта deviceManagementExchangeConnector
 
@@ -54,12 +54,12 @@ PATCH /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 |id|String|Н/Д|
 |lastSyncDateTime|DateTimeOffset|Время последней синхронизации соединителя Exchange|
 |status|[девицеманажементексчанжеконнекторстатус](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Состояние соединителя Exchange. Возможные значения: `none`, `connectionPending`, `connected`, `disconnected`.|
-|primarySmtpAddress|String|Электронный адрес, используемый для настройки соединителя Exchange между службами.|
-|serverName|String|Имя сервера Exchange Server.|
-|connectorServerName|String|Имя сервера, на котором размещается соединитель Exchange.|
+|primarySmtpAddress|String.|Электронный адрес, используемый для настройки соединителя Exchange между службами.|
+|serverName|String.|Имя сервера Exchange Server.|
+|connectorServerName|String.|Имя сервера, на котором размещается соединитель Exchange.|
 |exchangeConnectorType|[девицеманажементексчанжеконнектортипе](../resources/intune-onboarding-devicemanagementexchangeconnectortype.md)|Тип настраиваемого соединителя Exchange. Возможные значения: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
 |version|Строка|Версия объекта ExchangeConnectorAgent|
-|exchangeAlias|String|Псевдоним, назначенный серверу Exchange Server|
+|exchangeAlias|String.|Псевдоним, назначенный серверу Exchange Server|
 |exchangeOrganization|String|Организация Exchange, соответствующая серверу Exchange Server|
 
 
@@ -111,8 +111,6 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
-
-
 
 
 

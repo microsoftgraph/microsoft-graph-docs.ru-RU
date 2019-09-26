@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ff3db2c2349c813bda3170f33645afc35f2230e7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5ac2843031706107ca2ee08c18271562d3dcc59c
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36351471"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189608"
 ---
 # <a name="list-deviceandappmanagementroledefinitions"></a>Перечисление объектов deviceAndAppManagementRoleDefinition
 
@@ -119,8 +119,6 @@ Content-Length: 1499
   ]
 }
 ```
-
-
 
 
 

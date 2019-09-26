@@ -4,12 +4,12 @@ description: Список API Microsoft Graph для конечных точек
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: a2402be0642da8d0f01c30e089fec5947d5260be
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 85843a95b82caa0de07840c005a322652fdefc5b
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335020"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37199015"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Настройка устройств в Microsoft Intune
 
@@ -38,6 +38,7 @@ ms.locfileid: "36335020"
 - [Общая конфигурация устройств для владельца устройства с Android](intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)
 - [Режим хранения владельца устройства Android](intune-deviceconfig-androiddeviceownerplaystoremode.md)
 - [Требуемый тип пароля для владельца устройства с Android](intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)
+- [Профиль сертификата SCEP владельца устройства Android](intune-deviceconfig-androiddeviceownerscepcertificateprofile.md)
 - [Тип установки системного обновления для владельца устройства с Android](intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)
 - [Доверенный корневой сертификат владельца устройства Android](intune-deviceconfig-androiddeviceownertrustedrootcertificate.md)
 - [Тип кнопки виртуальной домашней страницы владельца устройства Android](intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md)
@@ -112,6 +113,7 @@ ms.locfileid: "36335020"
 - [Политика BitLocker в отношении встроенных дисков](intune-deviceconfig-bitlockerfixeddrivepolicy.md)
 - [Тип сведений для восстановления с помощью BitLocker](intune-deviceconfig-bitlockerrecoveryinformationtype.md)
 - [Параметры восстановления BitLocker](intune-deviceconfig-bitlockerrecoveryoptions.md)
+- [Тип вращения пароля восстановления BitLocker](intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)
 - [Политика BitLocker в отношении съемных дисков](intune-deviceconfig-bitlockerremovabledrivepolicy.md)
 - [Политика BitLocker в отношении системных дисков](intune-deviceconfig-bitlockersystemdrivepolicy.md)
 - [Параметр синхронизации браузера](intune-deviceconfig-browsersyncsetting.md)
@@ -123,6 +125,7 @@ ms.locfileid: "36335020"
 - [Шкала срока действия сертификата](intune-deviceconfig-certificatevalidityperiodscale.md)
 - [Разрешение на изменение параметров UEFI](intune-deviceconfig-changeuefisettingspermission.md)
 - [Использование конфигурации](intune-deviceconfig-configurationusage.md)
+- [Расширение единого входа для учетных данных](intune-deviceconfig-credentialsinglesignonextension.md)
 - [Альтернативное имя настраиваемого субъекта](intune-deviceconfig-customsubjectalternativename.md)
 - [День недели](intune-deviceconfig-dayofweek.md)
 - [Политика соответствия устройств требованиям по умолчанию](intune-deviceconfig-defaultdevicecompliancepolicy.md)
@@ -156,7 +159,6 @@ ms.locfileid: "36335020"
 - [Тип действия, касающегося соответствия устройств требованиям](intune-deviceconfig-devicecomplianceactiontype.md)
 - [Обзор соответствия устройств требованиям](intune-deviceconfig-devicecompliancedeviceoverview.md)
 - [Состояние устройств, касающееся соответствия устройств требованиям](intune-deviceconfig-devicecompliancedevicestatus.md)
-- [Политика соответствия устройств требованиям](intune-deviceconfig-devicecompliancepolicy.md)
 - [Назначение политик соответствия устройства требованиям](intune-deviceconfig-devicecompliancepolicyassignment.md)
 - [Общие сведения о состоянии устройства с учетом политики соответствия устройств требованиям](intune-deviceconfig-devicecompliancepolicydevicestatesummary.md)
 - [Состояние соответствия устройства параметру политики](intune-deviceconfig-devicecompliancepolicysettingstate.md)
@@ -165,7 +167,6 @@ ms.locfileid: "36335020"
 - [Тип ресурса deviceComplianceSettingState](intune-deviceconfig-devicecompliancesettingstate.md)
 - [Обзор пользователей, касающийся соответствия устройств требованиям](intune-deviceconfig-devicecomplianceuseroverview.md)
 - [Состояние пользователей, касающийся соответствия устройств требованиям](intune-deviceconfig-devicecomplianceuserstatus.md)
-- [Настройка устройства](intune-deviceconfig-deviceconfiguration.md)
 - [Назначение конфигурации устройства](intune-deviceconfig-deviceconfigurationassignment.md)
 - [Сводная информация о конфликте конфигурации устройства](intune-deviceconfig-deviceconfigurationconflictsummary.md)
 - [Обзор конфигураций устройств](intune-deviceconfig-deviceconfigurationdeviceoverview.md)
@@ -182,9 +183,6 @@ ms.locfileid: "36335020"
 - [Правило применимости управления устройствами для ОС OS Edition](intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)
 - [Версия ОС правила применимости управления устройствами](intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)
 - [Тип правила применимости управления устройствами](intune-deviceconfig-devicemanagementapplicabilityruletype.md)
-- [Производный поставщик учетных данных для управления устройствами](intune-deviceconfig-devicemanagementderivedcredentialissuer.md)
-- [Тип уведомления о получении учетных данных для управления устройствами](intune-deviceconfig-devicemanagementderivedcredentialnotificationtype.md)
-- [Параметры производных учетных данных управления устройствами](intune-deviceconfig-devicemanagementderivedcredentialsettings.md)
 - [Параметры управления устройствами](intune-deviceconfig-devicemanagementsettings.md)
 - [Локальный пользователь или группа для прав пользователя для управления устройством](intune-deviceconfig-devicemanagementuserrightslocaluserorgroup.md)
 - [Параметры прав пользователя для управления устройства](intune-deviceconfig-devicemanagementuserrightssetting.md)
@@ -274,6 +272,7 @@ ms.locfileid: "36335020"
 - [Элемент начального экрана iOS](intune-deviceconfig-ioshomescreenitem.md)
 - [Страница начального экрана iOS](intune-deviceconfig-ioshomescreenpage.md)
 - [Профиль импортированного сертификата PFX для iOS](intune-deviceconfig-iosimportedpfxcertificateprofile.md)
+- [расширение единого входа для iOS Kerberos](intune-deviceconfig-ioskerberossinglesignonextension.md)
 - [Правило использование сети iOS](intune-deviceconfig-iosnetworkusagerule.md)
 - [Тип оповещений об уведомлениях iOS](intune-deviceconfig-iosnotificationalerttype.md)
 - [Параметры уведомлений iOS](intune-deviceconfig-iosnotificationsettings.md)
@@ -292,8 +291,14 @@ ms.locfileid: "36335020"
 - [Фильтр веб-контента iOS: доступ к отдельным сайтам](intune-deviceconfig-ioswebcontentfilterspecificwebsitesaccess.md)
 - [Конфигурация Wi-Fi для iOS](intune-deviceconfig-ioswificonfiguration.md)
 - [Конфигурация VPN EV2 Иосик](intune-deviceconfig-iosikev2vpnconfiguration.md)
+- [Расширение единого входа Kerberos](intune-deviceconfig-kerberossinglesignonextension.md)
+- [Ключевая логическая переменная значения](intune-deviceconfig-keybooleanvaluepair.md)
+- [Ключевое целое значение](intune-deviceconfig-keyintegervaluepair.md)
+- [Ключевое значение "ключевое значение"](intune-deviceconfig-keyrealvaluepair.md)
 - [Размер ключа](intune-deviceconfig-keysize.md)
 - [Параметр поставщика хранилища ключей](intune-deviceconfig-keystorageprovideroption.md)
+- [Ключевая строка значений ключа](intune-deviceconfig-keystringvaluepair.md)
+- [Комбинация типизированных типизированных значений](intune-deviceconfig-keytypedvaluepair.md)
 - [Использование ключей](intune-deviceconfig-keyusages.md)
 - [Значение ключа](intune-deviceconfig-keyvalue.md)
 - [Уровень проверки подлинности LAN Manager](intune-deviceconfig-lanmanagerauthenticationlevel.md)
@@ -316,6 +321,7 @@ ms.locfileid: "36335020"
 - [Источники приложений для macOS Gatekeeper](intune-deviceconfig-macosgatekeeperappsources.md)
 - [Общая конфигурация устройств с macOS](intune-deviceconfig-macosgeneraldeviceconfiguration.md)
 - [Профиль импортированного сертификата PFX для macOS](intune-deviceconfig-macosimportedpfxcertificateprofile.md)
+- [macOS Kerberos для единого входа](intune-deviceconfig-macoskerberossinglesignonextension.md)
 - [расширение ядра macOS](intune-deviceconfig-macoskernelextension.md)
 - [Элемент запуска macOS](intune-deviceconfig-macoslaunchitem.md)
 - [Профиль сертификата SCEP для macOS](intune-deviceconfig-macosscepcertificateprofile.md)
@@ -388,6 +394,7 @@ ms.locfileid: "36335020"
 - [Разрешенный тип учетных записей для общего компьютера](intune-deviceconfig-sharedpcallowedaccounttype.md)
 - [Конфигурация для общих компьютеров](intune-deviceconfig-sharedpcconfiguration.md)
 - [Параметры помощника по входу](intune-deviceconfig-signinassistantoptions.md)
+- [Расширение единого входа](intune-deviceconfig-singlesignonextension.md)
 - [Уровень безопасности сайта](intune-deviceconfig-sitesecuritylevel.md)
 - [Общие сведения о состоянии обновления программного обеспечения](intune-deviceconfig-softwareupdatestatussummary.md)
 - [Параметры управления состоянием](intune-deviceconfig-statemanagementsetting.md)
@@ -517,12 +524,11 @@ ms.locfileid: "36335020"
 - [Тип расписания установки с использованием Центра обновления Windows](intune-deviceconfig-windowsupdateinstallscheduletype.md)
 - [Параметр отображения уведомления Центра обновления Windows](intune-deviceconfig-windowsupdatenotificationdisplayoption.md)
 - [Запланированная установка с использованием Центра обновления Windows](intune-deviceconfig-windowsupdatescheduledinstall.md)
-- [Состояние центра обновления Windows](intune-deviceconfig-windowsupdatestate.md)
-- [Статус обновления Windows](intune-deviceconfig-windowsupdatestatus.md)
 - [Тип обновления Windows](intune-deviceconfig-windowsupdatetype.md)
 - [Настройки контроля учетных записей Windows](intune-deviceconfig-windowsuseraccountcontrolsettings.md)
 - [Конфигурация VPN для Windows](intune-deviceconfig-windowsvpnconfiguration.md)
 - [Тип VPN-подключения для Windows](intune-deviceconfig-windowsvpnconnectiontype.md)
 - [Конфигурация Wi-Fi для Windows](intune-deviceconfig-windowswificonfiguration.md)
 - [Конфигурация корпоративного типа EAP для Wi-Fi в Windows](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
+
 

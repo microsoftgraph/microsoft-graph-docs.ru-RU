@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8d71800e39f254b7dfeddcc4d7f56b1a8c63a178
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 454537bc4c753ab6d68c461670960ead116a760f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36351639"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189685"
 ---
 # <a name="get-userpfxcertificate"></a>Получение Усерпфксцертификате
 
@@ -25,9 +25,9 @@ ms.locfileid: "36351639"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|* * TODO: определение областей * *|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|* * TODO: определение областей поддержка apponly * *|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -87,8 +87,6 @@ Content-Length: 742
   }
 }
 ```
-
-
 
 
 

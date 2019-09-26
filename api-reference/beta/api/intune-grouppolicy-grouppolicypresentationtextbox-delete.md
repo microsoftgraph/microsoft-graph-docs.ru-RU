@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ea2426aaf38003b92cf7cee44c2b0199bb9c5f9
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: befe28b305676dce59d4154d46d22fe2d1f4ba60
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36354725"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37194000"
 ---
 # <a name="delete-grouppolicypresentationtextbox"></a>Удаление Граупполиципресентатионтекстбокс
 
@@ -64,8 +64,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfiguratio
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

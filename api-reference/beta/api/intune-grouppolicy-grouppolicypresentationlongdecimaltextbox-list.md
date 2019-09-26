@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e05a95e8eedcf508a5a6e579796d22f57d11eaf0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4a729fdfb552e2f88e29c37ae78e6eed5afbea68
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36357784"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37194161"
 ---
 # <a name="list-grouppolicypresentationlongdecimaltextboxes"></a>Список ГраупполиципресентатионлонгдеЦималтекстбоксес
 
@@ -82,8 +82,6 @@ Content-Length: 411
   ]
 }
 ```
-
-
 
 
 

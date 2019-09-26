@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e9a5285cec30a7d631c81346f0c9a85303dbb7bc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: cca4c35d5d7d93367fa87a0ad05a08e0493baad1
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36313162"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189083"
 ---
 # <a name="list-devicemanagementstringsettinginstances"></a>Список Девицеманажементстрингсеттингинстанцес
 
@@ -80,8 +80,6 @@ Content-Length: 286
   ]
 }
 ```
-
-
 
 
 

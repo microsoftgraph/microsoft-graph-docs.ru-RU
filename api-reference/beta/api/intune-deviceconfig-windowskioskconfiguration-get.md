@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 92a46df76121c45dd8608a9849513a34e625ae27
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 19efc657d744b4553ee86140094775bbe8d506fa
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36344387"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37186787"
 ---
 # <a name="get-windowskioskconfiguration"></a>Получение Виндовскиоскконфигуратион
 
@@ -158,8 +158,6 @@ Content-Length: 3186
   }
 }
 ```
-
-
 
 
 
