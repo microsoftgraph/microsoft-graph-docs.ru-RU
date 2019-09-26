@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2db5b0a04b48c25b02aa7d3fd3999afe05d5da11
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a170679d7bbbe3b108d11e61e5c945a91cf2d62f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36314576"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37182731"
 ---
 # <a name="delete-windows10enterprisemodernappmanagementconfiguration"></a>Удаление объекта windows10EnterpriseModernAppManagementConfiguration
 
@@ -65,8 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

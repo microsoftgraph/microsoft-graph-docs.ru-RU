@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 163f1364d47912434cfab677cc99968622e67df6
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5b5ed364de57d51fb72503752786525ea930d6fd
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36313862"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37181562"
 ---
 # <a name="delete-windowsphone81trustedrootcertificate"></a>Удаление windowsPhone81TrustedRootCertificate
 
@@ -63,8 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: af97473ae7c72d3d107d2346e08caa7f264bc285
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 4f66ced057c87fc061588cccc9515c477ad99b64
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420800"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37170779"
 ---
 # <a name="update-officeclientconfigurationassignment"></a>Обновление Оффицеклиентконфигуратионассигнмент
 
@@ -25,7 +25,7 @@ ms.locfileid: "36420800"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|**TODO: определение областей**|
+|Делегированные (рабочая или учебная учетная запись)|* * TODO: определение областей * *|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|* * TODO: определение областей * *|
 
@@ -90,8 +90,6 @@ Content-Length: 221
   }
 }
 ```
-
-
 
 
 

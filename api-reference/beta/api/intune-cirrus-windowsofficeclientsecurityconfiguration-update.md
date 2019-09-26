@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 68a923c278c887a221f2448bd20efee954c607ef
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d5ce3904dfc9a1a2dfa0a4d4d7a1bfb7a8388be2
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328188"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37170702"
 ---
 # <a name="update-windowsofficeclientsecurityconfiguration"></a>Обновление Виндовсоффицеклиентсекуритиконфигуратион
 
@@ -58,7 +58,7 @@ PATCH /officeConfiguration/clientConfigurations/{officeClientConfigurationId}
 |displayName|Строка|Предоставленное администратором имя политики конфигурации клиента Office. Наследуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |assignments|Коллекция [оффицеклиентконфигуратионассигнмент](../resources/intune-cirrus-officeclientconfigurationassignment.md)|Список назначений групп для политики.. Наследуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |priority|Int32|Значение Priority должно быть уникальным для каждой политики в клиенте и использоваться для разрешения конфликтов, низкие значения имеют высокий приоритет. Наследуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|lastModifiedDateTime|DateTime|Метка даты и времени последнего изменения политики. Наследуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|lastModifiedDateTime|DateTime.|Метка даты и времени последнего изменения политики. Наследуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |усерчеккинсуммари|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Сводка по возврату пользователя для политики. Наследуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |чеккинстатусес|Коллекция [оффицеклиентчеккинстатус](../resources/intune-cirrus-officeclientcheckinstatus.md)|Список состояния возврата клиента Office. Наследуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 
@@ -144,8 +144,6 @@ Content-Length: 1077
   ]
 }
 ```
-
-
 
 
 

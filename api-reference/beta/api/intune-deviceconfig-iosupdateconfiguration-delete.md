@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a3948b174b87e564f3cbd767a4f003a0ae48daeb
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 05be2ecbb5e936441b00fade77f30403b7d8f641
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36339017"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37179204"
 ---
 # <a name="delete-iosupdateconfiguration"></a>Удаление объекта iosUpdateConfiguration
 
@@ -65,8 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 76be2cde99b6ad1a06aba5ebe4de0670de3bfdb6
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2de48e904ef132d360bb5807455847b1d86f80cf
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36345528"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37183613"
 ---
 # <a name="update-manageddevicecertificatestate"></a>Обновление Манажеддевицецертификатестате
 
@@ -43,6 +43,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosImportedPFXCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSImportedPFXCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidImportedPFXCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerScepCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidWorkProfileScepCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidForWorkImportedPFXCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate/microsoft.graph.androidForWorkPkcsCertificateProfile/managedDeviceCertificateStates/{managedDeviceCertificateStateId}
@@ -76,20 +77,20 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |цертификатесубжектнамеформат|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|Формат имени субъекта. Возможные значения: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
 |цертификатесубжекталтернативенамеформат|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Формат альтернативного имени субъекта. Возможные значения: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
 |цертификатеревокестатус|[цертификатеревокатионстатус](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Отзыв состояния. Возможные значения: `none`, `pending`, `issued`, `failed`, `revoked`.|
-|цертификатепрофиледисплайнаме|String|Отображаемое имя профиля сертификата|
+|цертификатепрофиледисплайнаме|String.|Отображаемое имя профиля сертификата|
 |deviceDisplayName|String|Отображаемое имя устройства|
 |userDisplayName|String|Отображаемое имя пользователя|
 |цертификатикспиратиондатетиме|DateTimeOffset|Дата окончания срока действия сертификата|
 |цертификателастиссуанцестатечанжеддатетиме|DateTimeOffset|Последнее изменение состояния выдачи сертификата|
 |ластцертификатестатечанжедатетиме|DateTimeOffset|Последнее изменение состояния выдачи сертификата|
-|цертификатеиссуер|String|Издатель|
-|certificateThumbprint|String|Отпечаток|
-|цертификатесериалнумбер|String|Серийный номер|
+|цертификатеиссуер|String.|Издатель|
+|certificateThumbprint|String.|Отпечаток|
+|цертификатесериалнумбер|String.|Серийный номер|
 |цертификатекэйленгс|Int32|Длина ключа|
-|цертификатинханцедкэйусаже|String|Расширенное использование ключа|
+|цертификатинханцедкэйусаже|String.|Расширенное использование ключа|
 |цертификатевалидитипериод|Int32|Срок действия|
-|цертификатесубжектнамеформатстринг|String|Строка формата имени субъекта для пользовательских форматов имен субъектов|
-|цертификатесубжекталтернативенамеформатстринг|String|Строка формата альтернативного имени субъекта для пользовательских форматов|
+|цертификатесубжектнамеформатстринг|String.|Строка формата имени субъекта для пользовательских форматов имен субъектов|
+|цертификатесубжекталтернативенамеформатстринг|String.|Строка формата альтернативного имени субъекта для пользовательских форматов|
 |цертификатеиссуанцедатетиме|DateTimeOffset|Дата выпуска|
 |цертификатирроркоде|Int32|Код ошибки|
 
@@ -172,8 +173,6 @@ Content-Length: 1566
   "certificateErrorCode": 4
 }
 ```
-
-
 
 
 

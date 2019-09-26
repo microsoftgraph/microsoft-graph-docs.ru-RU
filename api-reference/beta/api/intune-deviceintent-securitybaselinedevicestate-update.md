@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9ccbdcacbcc2250b4b55ab3fc4e247dbb4a77512
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0e36f5ec306b0230e148ac4970dd0011b934d030
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36349077"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37179469"
 ---
 # <a name="update-securitybaselinedevicestate"></a>Обновление Секуритибаселинедевицестате
 
@@ -52,7 +52,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.s
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Уникальный идентификатор объекта|
-|манажеддевицеид|String|Идентификатор устройства Intune|
+|манажеддевицеид|String.|Идентификатор устройства Intune|
 |deviceDisplayName|String|Отображаемое имя устройства|
 |userPrincipalName|String|"User Principal Name" (Имя участника-пользователя);|
 |состояние|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Состояние соответствия нормативным требованиям безопасности. Возможные значения: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
@@ -99,8 +99,6 @@ Content-Length: 359
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
-
-
 
 
 

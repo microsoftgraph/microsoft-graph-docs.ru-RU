@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: eb42db39dcea2b0697d7f0bf1eea56547e49b5cc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6e69b69b5d118d0d4082bade796e249e401fdbf7
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36314996"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37183599"
 ---
 # <a name="create-manageddeviceencryptionstate"></a>Создание Манажеддевицеенкриптионстате
 
@@ -55,8 +55,8 @@ POST /deviceManagement/managedDeviceEncryptionStates
 |userPrincipalName|String|Имя пользователя|
 |deviceType|[deviceTypes](../resources/intune-deviceconfig-devicetypes.md)|Платформа устройства. Возможные значения: `desktop`, `windowsRT`, `winMO6`, `nokia` `windowsPhone` `mac` `winCE` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `android` `iSocConsumer`,,,,,,,,,,,,,,,,,,,,, `winEmbedded` `iPhone` `iPad` `iPod` , `blackberry`, `palm`, `unknown`.|
 |osVersion|String|Версия операционной системы устройства|
-|тпмспеЦификатионверсион|String|Версия TPM устройства|
-|deviceName|String|Имя устройства|
+|тпмспеЦификатионверсион|String.|Версия TPM устройства|
+|deviceName|String.|Имя устройства|
 |encryptionReadinessState|[encryptionReadinessState](../resources/intune-deviceconfig-encryptionreadinessstate.md)|Состояние готовности к шифрованию. Возможные значения: `notReady`, `ready`.|
 |encryptionState|[encryptionState](../resources/intune-deviceconfig-encryptionstate.md)|Состояние шифрования устройства. Возможные значения: `notEncrypted`, `encrypted`.|
 |енкриптионполицисеттингстате|[комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние параметра политики шифрования. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
@@ -129,8 +129,6 @@ Content-Length: 753
   ]
 }
 ```
-
-
 
 
 

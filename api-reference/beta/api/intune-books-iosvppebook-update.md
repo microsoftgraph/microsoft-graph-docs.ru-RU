@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 75923333d699e4cd8cd24a223231d3b720aea542
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 44d7762a26590ab58c25813481add9ee5c84e344
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328454"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37171304"
 ---
 # <a name="update-iosvppebook"></a>Обновление объекта iosVppEBook
 
@@ -54,18 +54,18 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 |id|Строка|Ключ объекта. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
 |displayName|Строка|Имя электронной книги. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
 |description|String|Описание. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
-|publisher|String|Издатель. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
+|publisher|String.|Издатель. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
 |publishedDateTime|DateTimeOffset|Дата и время публикации электронной книги. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Обложка книги. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания электронной книги. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения электронной книги. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md)|
-|informationUrl|String|URL-адрес страницы с дополнительными сведениями. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
-|privacyInformationUrl|String|URL-адрес заявления о конфиденциальности. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
+|informationUrl|String.|URL-адрес страницы с дополнительными сведениями. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
+|privacyInformationUrl|String.|URL-адрес заявления о конфиденциальности. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
 |vppTokenId|Guid|Идентификатор токена VPP.|
 |appleId|Строка|Идентификатор Apple ID, связанный с токеном VPP.|
-|vppOrganizationName|String|Название организации для токена VPP.|
+|vppOrganizationName|String.|Название организации для токена VPP.|
 |genres|Коллекция String|Жанры.|
-|language|String|Язык.|
+|language|String.|Язык.|
 |seller|String|Продавец.|
 |totalLicenseCount|Int32|Общее число лицензий.|
 |usedLicenseCount|Int32|Число используемых лицензий.|
@@ -152,8 +152,6 @@ Content-Length: 1026
   ]
 }
 ```
-
-
 
 
 

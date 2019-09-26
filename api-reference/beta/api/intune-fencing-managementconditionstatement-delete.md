@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 831819d2f8c16141501aad1d43767b96d8b85af0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 81d338b0d43665d9c97a8fc5b39cbe1c5770b635
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36355593"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37184362"
 ---
 # <a name="delete-managementconditionstatement"></a>Удаление Манажементкондитионстатемент
 
@@ -64,8 +64,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/managementConditionStat
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a385a75f9d26def7d2185bfdae17005384401d8d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: eda6286c9186d6881a4ae413ec21a4bfbb55854c
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36345738"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37168041"
 ---
 # <a name="get-editionupgradeconfiguration"></a>Get editionUpgradeConfiguration
 
@@ -112,8 +112,6 @@ Content-Length: 1469
   }
 }
 ```
-
-
 
 
 

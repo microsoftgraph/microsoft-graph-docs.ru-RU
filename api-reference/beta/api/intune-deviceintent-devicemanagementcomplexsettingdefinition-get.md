@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b08ca64825656412236d3e569b024a64109f63b1
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: dc8bf1f42c6559056ca8da04c1bb08e4543020af
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36313442"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37181093"
 ---
 # <a name="get-devicemanagementcomplexsettingdefinition"></a>Получение Девицеманажементкомплекссеттингдефинитион
 
@@ -105,8 +105,6 @@ Content-Length: 934
   }
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e603c5d5725f34852c73e987b1a5fa1a2fdc53f2
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 133a788d571dc17158855a61b48f88aa7740f5f5
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36329798"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37177411"
 ---
 # <a name="update-manageddevicemobileappconfigurationdevicestatus"></a>Обновление managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -53,8 +53,8 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
-|deviceDisplayName|String|Имя устройства в объекте DevicePolicyStatus.|
-|userName|String|Имя пользователя в отчете|
+|deviceDisplayName|String.|Имя устройства в объекте DevicePolicyStatus.|
+|userName|String.|Имя пользователя в отчете|
 |deviceModel|String|Модель устройства в отчете|
 |platform|Int32|Платформа для устройства, о котором сообщается|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время, когда истекает период отсрочки применения политик на устройстве.|
@@ -109,8 +109,6 @@ Content-Length: 512
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
-
 
 
 

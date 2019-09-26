@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f2ddd2ed76d25b48d95b967543eaf0f6987fc288
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 00e6eb42ed7792cfec86884a7e33fecd0fef155e
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36322865"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37178405"
 ---
 # <a name="delete-androidforworkappconfigurationschema"></a>Удаление объекта androidForWorkAppConfigurationSchema
 
@@ -63,8 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/androidForWorkAppConfig
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

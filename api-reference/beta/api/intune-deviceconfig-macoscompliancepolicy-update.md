@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e95cbf09aeda5bf2b90958560e3a6c87efda6482
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: aaef0c83c7cb09641d3a1b013ac4dd6f293bbb8e
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36315528"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37178853"
 ---
 # <a name="update-macoscompliancepolicy"></a>Update macOSCompliancePolicy
 
@@ -51,33 +51,33 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|id|Строка|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
+|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
+|createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
+|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
+|version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |passwordRequired|Логический|Определяет, нужно ли запрашивать ввод пароля.|
-|passwordBlockSimple|Boolean|Указывает, требуется ли блокировать простые пароли.|
+|passwordBlockSimple|Boolean.|Указывает, требуется ли блокировать простые пароли.|
 |passwordExpirationDays|Int32|Количество дней до окончания срока действия пароля. Допустимые значения: от 1 до 65 535.|
 |passwordMinimumLength|Int32|Минимальная длина пароля. Допустимые значения: от 4 до 14.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Период бездействия (в минутах), по истечении которого будет запрашиваться ввод пароля.|
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, которые требуется блокировать. Допустимые значения: от 1 до 24.|
 |passwordMinimumCharacterSetCount|Int32|Количество наборов символов, которые требуются для пароля.|
 |passwordRequiredType|[рекуиредпассвордтипе](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
-|osMinimumVersion|String|Минимальная версия MacOS.|
+|osMinimumVersion|String.|Минимальная версия MacOS.|
 |osMaximumVersion|String|Максимальная версия MacOS.|
-|осминимумбуилдверсион|String|Минимальная версия сборки MacOS.|
-|осмаксимумбуилдверсион|String|Максимальная версия сборки MacOS.|
+|осминимумбуилдверсион|String.|Минимальная версия сборки MacOS.|
+|осмаксимумбуилдверсион|String.|Максимальная версия сборки MacOS.|
 |systemIntegrityProtectionEnabled|Boolean|Указывает на то, что защита целостности системы для устройств должна быть включена.|
-|deviceThreatProtectionEnabled|Boolean|Указывает, что защита от угроз для устройств должна быть включена.|
+|deviceThreatProtectionEnabled|Boolean.|Указывает, что защита от угроз для устройств должна быть включена.|
 |deviceThreatProtectionRequiredSecurityLevel|[девицесреатпротектионлевел](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Указывает на то, что на уровне минимального риска, определенного в Mobile Threat Protection, нужно сообщать о несоответствии требованиям. Возможные значения: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |storageRequireEncryption|Boolean|Указывает, обязательно ли шифрование данных на устройствах с Mac OS.|
 |гатекипералловедаппсаурце|[макосгатекипераппсаурцес](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|Параметры системы и конфиденциальности, которые определяют, какие расположения скачивания приложения можно запускать с устройства macOS. Возможные значения: `notConfigured`, `macAppStore`, `macAppStoreAndIdentifiedDevelopers`, `anywhere`.|
-|firewallEnabled|Boolean|Указывает, следует ли включить брандмауэр.|
-|firewallBlockAllIncoming|Boolean|Соответствует параметру "блокировать все входящие подключения".|
-|firewallEnableStealthMode|Boolean|Соответствует параметру "включить скрытый режим".|
+|firewallEnabled|Boolean.|Указывает, следует ли включить брандмауэр.|
+|firewallBlockAllIncoming|Boolean.|Соответствует параметру "блокировать все входящие подключения".|
+|firewallEnableStealthMode|Boolean.|Соответствует параметру "включить скрытый режим".|
 
 
 
@@ -164,8 +164,6 @@ Content-Length: 1255
   "firewallEnableStealthMode": true
 }
 ```
-
-
 
 
 

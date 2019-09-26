@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0b517e2db80bf3e580a21d5117f7a279144e96c1
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 89f502499942f125f6557bbe7471cee503e730ad
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36324968"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37178237"
 ---
 # <a name="update-androidmanagedstoreaccountenterprisesettings"></a>Обновление ресурса androidmanagedstoreaccountenterprisesettings
 
@@ -60,9 +60,9 @@ PATCH /deviceManagement/androidManagedStoreAccountEnterpriseSettings
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения корпоративных параметров для Android|
 |enrollmentTarget|[андроидманажедстореаккаунтенроллменттаржет](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|Указывает, какие пользователи могут регистрировать устройства в управлении устройствами Android Enterprise. Возможные значения: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|Коллекция строк|Указывает, какие группы AAD могут регистрировать устройства для управления с помощью Android for Work, если для параметра enrollmentTarget задано значение Targeted.|
-|девицеовнерманажементенаблед|Boolean|Указывает, передается ли эта учетная запись управлению владельцами устройств Android с помощью Клауддпк.|
+|девицеовнерманажементенаблед|Boolean.|Указывает, передается ли эта учетная запись управлению владельцами устройств Android с помощью Клауддпк.|
 |компаникодес|Коллекция [андроиденроллменткомпаникоде](../resources/intune-androidforwork-androidenrollmentcompanycode.md)|Коды компаний для ресурса androidmanagedstoreaccountenterprisesettings|
-|андроиддевицеовнерфуллиманажеденроллментенаблед|Boolean|Коды компаний для ресурса androidmanagedstoreaccountenterprisesettings|
+|андроиддевицеовнерфуллиманажеденроллментенаблед|Boolean.|Коды компаний для ресурса androidmanagedstoreaccountenterprisesettings|
 
 
 
@@ -142,8 +142,6 @@ Content-Length: 1010
   "androidDeviceOwnerFullyManagedEnrollmentEnabled": true
 }
 ```
-
-
 
 
 

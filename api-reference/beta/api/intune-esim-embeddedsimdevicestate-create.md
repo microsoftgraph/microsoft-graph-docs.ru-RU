@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 71e91958cb5dd4538985671a615f42b72c468c3e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4a4da49b24e4641b9ccb06315c0450ed9679d52d
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36355810"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37184517"
 ---
 # <a name="create-embeddedsimdevicestate"></a>Создание Ембеддедсимдевицестате
 
@@ -55,11 +55,11 @@ POST /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCode
 |createdDateTime|DateTimeOffset|Время создания встроенного состояния SIM-устройства. Созданная сторона службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения состояния внедренного SIM-устройства. Обновленная сторона службы.|
 |lastSyncDateTime|DateTimeOffset|Время последнего возврата встроенного SIM-устройства. Обновленная сторона службы.|
-|универсалинтегратедЦиркуиткардидентифиер|String|Универсальный интегрированный идентификатор карты (УИКЦИД), определяющий оборудование, на котором будет развернут профиль.|
-|deviceName|String|Имя устройства, на которое была подготовлена подписка, например DESKTOP — Джо|
+|универсалинтегратедЦиркуиткардидентифиер|String.|Универсальный интегрированный идентификатор карты (УИКЦИД), определяющий оборудование, на котором будет развернут профиль.|
+|deviceName|String.|Имя устройства, на которое была подготовлена подписка, например DESKTOP — Джо|
 |userName|String|Имя пользователя, для которого была подготовлена подписка (например, joe@contoso.com).|
 |состояние|[ембеддедсимдевицестатевалуе](../resources/intune-esim-embeddedsimdevicestatevalue.md)|Состояние операции профиля, примененной к устройству. Возможные значения: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted`, `removedByUser`.|
-|статедетаилс|String|Строковое описание состояния подготовки.|
+|статедетаилс|String.|Строковое описание состояния подготовки.|
 
 
 
@@ -106,8 +106,6 @@ Content-Length: 529
   "stateDetails": "State Details value"
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d2ac4e9d56a4cc44953183d5af533471bbd22799
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d954a7c8832c451e09961844dd8d514ea68e086a
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36314324"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37182171"
 ---
 # <a name="delete-windows10teamgeneralconfiguration"></a>Удаление объекта windows10TeamGeneralConfiguration
 
@@ -65,8 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

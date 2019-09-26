@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d2179552beee95db3848a414b9ef3c9586e128fc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 81983a08649c19a26d0f1bfd17aff8f81b167e55
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36314953"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37183522"
 ---
 # <a name="delete-ndesconnector"></a>Удаление Ндесконнектор
 
@@ -63,8 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/ndesConnectors/{ndesCon
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

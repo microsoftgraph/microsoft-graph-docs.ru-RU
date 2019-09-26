@@ -5,12 +5,12 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 94f8d9c18588b4a78c9df9857ec0dd9e9491a23f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e2c3c1b4b398a8cb2101daf9b95d80e14a80d8b4
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36002645"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196226"
 ---
 # <a name="get-ioslobapp"></a>Get iosLobApp
 
@@ -19,13 +19,13 @@ ms.locfileid: "36002645"
 Чтение свойств и связей объекта [iosLobApp](../resources/intune-apps-ioslobapp.md).
 
 ## <a name="prerequisites"></a>Необходимые разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1478
+Content-Length: 1500
 
 {
   "value": {
@@ -102,7 +102,8 @@ Content-Length: 1478
       "v9_0": true,
       "v10_0": true,
       "v11_0": true,
-      "v12_0": true
+      "v12_0": true,
+      "v13_0": true
     },
     "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
     "versionNumber": "Version Number value",

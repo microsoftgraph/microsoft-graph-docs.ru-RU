@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 877636cc94bde744e46791c14b573b6bd7412662
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: cb9d7bc47e30181e6bd5a5b9e5c1d43a8fea9204
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420828"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37170814"
 ---
 # <a name="list-officeclientconfigurationassignments"></a>Список Оффицеклиентконфигуратионассигнментс
 
@@ -25,7 +25,7 @@ ms.locfileid: "36420828"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|**TODO: определение областей**|
+|Делегированные (рабочая или учебная учетная запись)|* * TODO: определение областей * *|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|* * TODO: определение областей * *|
 
@@ -77,8 +77,6 @@ Content-Length: 274
   ]
 }
 ```
-
-
 
 
 

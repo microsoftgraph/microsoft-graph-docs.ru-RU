@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d00469f62e3823ee08f8fdcc15cb832e4935d60e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b73f57e6a690bc0ebbf4309ccc6bd716875b5e0f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36348797"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180463"
 ---
 # <a name="list-devicemanagementscriptuserstates"></a>Список Девицеманажементскриптусерстатес
 
@@ -77,8 +77,6 @@ Content-Length: 282
   ]
 }
 ```
-
-
 
 
 

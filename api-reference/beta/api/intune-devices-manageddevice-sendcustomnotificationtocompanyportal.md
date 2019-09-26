@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 51b776f3ff2633d5b671377e7ef79b4e580fbaae
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 506372ee6f3713a84bba0ef8f12232b50f75838a
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36350498"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180311"
 ---
 # <a name="sendcustomnotificationtocompanyportal-action"></a>Действие sendCustomNotificationToCompanyPortal
 
@@ -83,8 +83,6 @@ Content-length: 105
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

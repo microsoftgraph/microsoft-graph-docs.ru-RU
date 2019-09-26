@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ca117b860a29b18103380c28289e67f20ddfbf93
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 14f0b3a8d4b53e721d3ab623d14e5e756bd05b06
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36325052"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37174076"
 ---
 # <a name="update-androidforworksettings"></a>Update androidForWorkSettings
 
@@ -55,12 +55,12 @@ PATCH /deviceManagement/androidForWorkSettings
 |bindStatus|[андроидфорворкбиндстатус](../resources/intune-androidforwork-androidforworkbindstatus.md)|Состояние связывания клиента с помощью API Google EMM. Возможные значения: `notBound`, `bound`, `boundAndValidated`, `unbinding`.|
 |lastAppSyncDateTime|DateTimeOffset|Время завершения последней синхронизации приложения|
 |lastAppSyncStatus|[андроидфорворксинкстатус](../resources/intune-androidforwork-androidforworksyncstatus.md)|Последний результат синхронизации приложений. Возможные значения: `success`, `credentialsNotValid`, `androidForWorkApiError`, `managementServiceError`, `unknownError`, `none`.|
-|ownerUserPrincipalName|String|UPN владельца, создавшего предприятие|
+|ownerUserPrincipalName|String.|UPN владельца, создавшего предприятие|
 |ownerOrganizationName|String|Имя организации, используемое при входящей миграции Android for Work|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения параметров Android for Work|
 |enrollmentTarget|[андроидфорворкенроллменттаржет](../resources/intune-androidforwork-androidforworkenrollmenttarget.md)|Указывает, какие пользователи могут регистрировать устройства в Android для управления рабочими устройствами. Возможные значения: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|Коллекция строк|Указывает, какие группы AAD могут регистрировать устройства для управления с помощью Android for Work, если для параметра enrollmentTarget задано значение Targeted.|
-|девицеовнерманажементенаблед|Boolean|Указывает, передается ли эта учетная запись управлению владельцами устройств Android с помощью Клауддпк.|
+|девицеовнерманажементенаблед|Boolean.|Указывает, передается ли эта учетная запись управлению владельцами устройств Android с помощью Клауддпк.|
 
 
 
@@ -114,8 +114,6 @@ Content-Length: 568
   "deviceOwnerManagementEnabled": true
 }
 ```
-
-
 
 
 

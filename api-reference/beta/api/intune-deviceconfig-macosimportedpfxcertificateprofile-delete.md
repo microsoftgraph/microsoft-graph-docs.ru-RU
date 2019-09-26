@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1be550957e65505b03e9778365e5cb237cdfc4f5
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0f65be766f52fa25edd21441689019f3f43eb14b
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36315353"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37184131"
 ---
 # <a name="delete-macosimportedpfxcertificateprofile"></a>Удаление Макосимпортедпфксцертификатепрофиле
 
@@ -65,8 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

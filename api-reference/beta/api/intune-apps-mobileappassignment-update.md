@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6a0f66617d0d158205a525d76f48428adb90e633
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d8adb3390ed881ce3241ed746747d0d90a891e63
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36329301"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37177195"
 ---
 # <a name="update-mobileappassignment"></a>Обновление объекта mobileAppAssignment
 
@@ -54,7 +54,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssign
 |id|String|Ключ объекта.|
 |intent|[installIntent](../resources/intune-shared-installintent.md)|Цель установки, определенная администратором. Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Целевое назначение группы, определенное администратором.|
-|settings|[mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)|Параметры целевого назначения, определенные администратором.|
+|settings|[mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)|Параметры целевого назначения, определенные администратором.|
 
 
 
@@ -101,8 +101,6 @@ Content-Length: 322
   }
 }
 ```
-
-
 
 
 

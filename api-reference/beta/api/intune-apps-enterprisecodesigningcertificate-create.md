@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cb6e5361bb735b46ec42c556c76f562ac92dc549
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 88c98f528fc1ea410170486fb4846b11a1527512
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36330988"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37178013"
 ---
 # <a name="create-enterprisecodesigningcertificate"></a>Создание Ентерприсекодесигнингцертификате
 
@@ -56,8 +56,8 @@ POST /deviceAppManagement/enterpriseCodeSigningCertificates
 |status|[цертификатестатус](../resources/intune-apps-certificatestatus.md)|Состояние сертификата подготовлено или не подготовлено. Возможные значения: `notProvisioned`, `provisioned`.|
 |subjectName|String|Имя субъекта для сертификата.|
 |subject|String|Значение субъекта для сертификата.|
-|иссуернаме|String|Имя поставщика сертификата.|
-|имени|String|Значение издателя для сертификата.|
+|иссуернаме|String.|Имя поставщика сертификата.|
+|имени|String.|Значение издателя для сертификата.|
 |expirationDateTime|DateTimeOffset|Дата окончания срока действия сертификата.|
 |уплоаддатетиме|DateTimeOffset|Дата и время отправки сертификата соконструирования.|
 
@@ -108,8 +108,6 @@ Content-Length: 439
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
 }
 ```
-
-
 
 
 

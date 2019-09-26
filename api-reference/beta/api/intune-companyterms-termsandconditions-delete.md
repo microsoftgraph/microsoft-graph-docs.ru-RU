@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fd868da71ea1d3be50b2fe7484993e7750bef6c4
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 30d7e452d0e54a02a281502f5d9c5be47a072996
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36322095"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37170618"
 ---
 # <a name="delete-termsandconditions"></a>Delete termsAndConditions
 
@@ -65,8 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/{ter
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

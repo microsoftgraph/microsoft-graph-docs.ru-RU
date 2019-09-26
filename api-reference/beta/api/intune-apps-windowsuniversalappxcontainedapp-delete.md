@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0e8ff2a4fdc99431250e5a0fcb49393688d7a8a0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 706d900b69b73e2964b23e5b71d5f19be057ced6
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36336167"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37171612"
 ---
 # <a name="delete-windowsuniversalappxcontainedapp"></a>Удаление Виндовсуниверсалаппксконтаинедапп
 
@@ -65,8 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

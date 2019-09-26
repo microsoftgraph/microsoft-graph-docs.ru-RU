@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4b1f23e95a8012a2804e943a30c95fe89261d963
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 76ed9d27936878501526d8dcbed24ac1abdca4a9
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36356461"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37184967"
 ---
 # <a name="create-importeddeviceidentity"></a>Создание Импортеддевицеидентити
 
@@ -52,13 +52,13 @@ POST /deviceManagement/importedDeviceIdentities
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Идентификатор импортированного удостоверения устройства|
-|импортеддевицеидентифиер|String|Импортированный идентификатор устройства|
+|импортеддевицеидентифиер|String.|Импортированный идентификатор устройства|
 |импортеддевицеидентититипе|[импортеддевицеидентититипе](../resources/intune-enrollment-importeddeviceidentitytype.md)|Тип импортированного удостоверения устройства. Возможные значения: `unknown`, `imei`, `serialNumber`.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения описания|
 |createdDateTime|DateTimeOffset|Дата и время создания устройства|
 |ластконтактеддатетиме|DateTimeOffset|Дата и время последнего обращения к устройству|
 |description|String|Описание устройства|
-|енроллментстате|[енроллментстате](../resources/intune-enrollment-enrollmentstate.md)|Состояние устройства в Intune. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|енроллментстате|[енроллментстате](../resources/intune-shared-enrollmentstate.md)|Состояние устройства в Intune. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |platform|[управляем](../resources/intune-enrollment-platform.md)|Платформа устройства. Возможные значения: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
 
@@ -106,8 +106,6 @@ Content-Length: 504
   "platform": "ios"
 }
 ```
-
-
 
 
 

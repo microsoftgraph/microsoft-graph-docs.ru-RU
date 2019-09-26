@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f65b907178439f4fccfe44da562174821269ec25
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9d927ab47841ec54291744ab2f516e093f5a61ef
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36339486"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37167797"
 ---
 # <a name="create-iosdevicefeaturesconfiguration"></a>Создание объекта iosDeviceFeaturesConfiguration
 
@@ -52,19 +52,19 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|девицеманажементаппликабилитируледевицемоде|[девицеманажементаппликабилитируледевицемоде](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|суппортсскопетагс|Boolean.|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|девицеманажементаппликабилитируледевицемоде|[девицеманажементаппликабилитируледевицемоде](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |аирпринтдестинатионс|Коллекция [аирпринтдестинатион](../resources/intune-deviceconfig-airprintdestination.md)|Массив принтеров Аирпринт, которые должны отображаться всегда. Эта коллекция может содержать не более 500 элементов. Наследуется от [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)|
-|assetTagTemplate|String|Сведения о теге ресурса для устройства, отображаемые в окне входа и на экране блокировки.|
+|assetTagTemplate|String.|Сведения о теге ресурса для устройства, отображаемые в окне входа и на экране блокировки.|
 |Contentfiltersettings к объекту|[iosWebContentFilterBase](../resources/intune-deviceconfig-ioswebcontentfilterbase.md);|Получает или задает параметры фильтра веб-содержимого iOS, режим с контролируемым режимом|
 |lockScreenFootnote|String|Сноска, отображаемая в окне входа и на экране блокировки. Доступна в iOS 9.3.1 и более поздних версий.|
 |homeScreenDockIcons|Коллекция [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|Список приложений и папок, которые должны отображаться на панели Dock на начальном экране. Эта коллекция может содержать не более 500 элементов.|
@@ -73,6 +73,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |синглесигнонсеттингс|[iosSingleSignOnSettings](../resources/intune-deviceconfig-iossinglesignonsettings.md)|Параметры входа в систему Kerberos, позволяющие приложениям на принимающих устройствах беспрепятственно выполнять проверку подлинности.|
 |валлпапердисплайлокатион|[иосваллпапердисплайлокатион](../resources/intune-deviceconfig-ioswallpaperdisplaylocation.md)|Описатель расположения для отображения фонового рисунка. Возможные значения: `notConfigured`, `lockScreen`, `homeScreen`, `lockAndHomeScreens`.|
 |валлпаперимаже|[mimeContent](../resources/intune-shared-mimecontent.md);|Изображение фонового рисунка должно иметь формат PNG или JPEG. Для этого требуется контролируемое устройство с iOS 8 или более поздней версии.|
+|синглесигнонекстенсион|[синглесигнонекстенсион](../resources/intune-deviceconfig-singlesignonextension.md)|Получает или задает профиль расширения единого входа.|
 
 
 
@@ -86,7 +87,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 4429
+Content-length: 5503
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -229,6 +230,35 @@ Content-length: 4429
     "@odata.type": "microsoft.graph.mimeContent",
     "type": "Type value",
     "value": "dmFsdWU="
+  },
+  "singleSignOnExtension": {
+    "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
+    "realm": "Realm value",
+    "domains": [
+      "Domains value"
+    ],
+    "blockAutomaticLogin": true,
+    "cacheName": "Cache Name value",
+    "credentialBundleIdAccessControlList": [
+      "Credential Bundle Id Access Control List value"
+    ],
+    "domainRealms": [
+      "Domain Realms value"
+    ],
+    "isDefaultRealm": true,
+    "passwordBlockModification": true,
+    "passwordExpirationDays": 6,
+    "passwordExpirationNotificationDays": 2,
+    "userPrincipalName": "User Principal Name value",
+    "passwordRequireActiveDirectoryComplexity": true,
+    "passwordPreviousPasswordBlockCount": 2,
+    "passwordMinimumLength": 5,
+    "passwordMinimumAgeDays": 6,
+    "passwordRequirementsDescription": "Password Requirements Description value",
+    "requireUserPresence": true,
+    "activeDirectorySiteCode": "Active Directory Site Code value",
+    "passwordEnableLocalSync": true,
+    "blockActiveDirectorySiteAutoDiscovery": true
   }
 }
 ```
@@ -238,7 +268,7 @@ Content-length: 4429
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 4601
+Content-Length: 5675
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -384,11 +414,38 @@ Content-Length: 4601
     "@odata.type": "microsoft.graph.mimeContent",
     "type": "Type value",
     "value": "dmFsdWU="
+  },
+  "singleSignOnExtension": {
+    "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
+    "realm": "Realm value",
+    "domains": [
+      "Domains value"
+    ],
+    "blockAutomaticLogin": true,
+    "cacheName": "Cache Name value",
+    "credentialBundleIdAccessControlList": [
+      "Credential Bundle Id Access Control List value"
+    ],
+    "domainRealms": [
+      "Domain Realms value"
+    ],
+    "isDefaultRealm": true,
+    "passwordBlockModification": true,
+    "passwordExpirationDays": 6,
+    "passwordExpirationNotificationDays": 2,
+    "userPrincipalName": "User Principal Name value",
+    "passwordRequireActiveDirectoryComplexity": true,
+    "passwordPreviousPasswordBlockCount": 2,
+    "passwordMinimumLength": 5,
+    "passwordMinimumAgeDays": 6,
+    "passwordRequirementsDescription": "Password Requirements Description value",
+    "requireUserPresence": true,
+    "activeDirectorySiteCode": "Active Directory Site Code value",
+    "passwordEnableLocalSync": true,
+    "blockActiveDirectorySiteAutoDiscovery": true
   }
 }
 ```
-
-
 
 
 

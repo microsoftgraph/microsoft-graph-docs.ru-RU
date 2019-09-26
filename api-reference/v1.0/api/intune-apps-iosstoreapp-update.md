@@ -5,12 +5,12 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ac2b2df9c25de8262797610e7af51437015ee1bc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ef476d7ad03eb73358b16b75d5e5f5617c7ea0ce
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36014230"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196177"
 ---
 # <a name="update-iosstoreapp"></a>Update iosStoreApp
 
@@ -19,13 +19,13 @@ ms.locfileid: "36014230"
 Обновление свойств объекта [iosStoreApp](../resources/intune-apps-iosstoreapp.md).
 
 ## <a name="prerequisites"></a>Необходимые разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -52,17 +52,17 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 |id|Строка|Ключ объекта. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |description|Строка|Описание приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|publisher|String.|Издатель приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Представляет большой значок, который отображается в сведениях о приложении, используется для отправки значка. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |isFeatured|Boolean|Значение, которое показывает, отмечено ли приложение как подобранное администратором. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|privacyInformationUrl|String|URL-адрес заявления о конфиденциальности. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|informationUrl|String|URL-адрес страницы с дополнительными сведениями. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|privacyInformationUrl|String.|URL-адрес заявления о конфиденциальности. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|informationUrl|String.|URL-адрес страницы с дополнительными сведениями. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |owner|String|Владелец приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|developer|String|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|developer|String.|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|notes|String.|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |bundleId|String|Имя удостоверения.|
 |appStoreUrl|String|URL-адрес в Apple App Store|
 |applicableDeviceType|[iosDeviceType](../resources/intune-apps-iosdevicetype.md)|Архитектура iOS, которая поддерживается этим приложением.|
@@ -80,7 +80,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1006
+Content-length: 1026
 
 {
   "@odata.type": "#microsoft.graph.iosStoreApp",
@@ -112,7 +112,8 @@ Content-length: 1006
     "v9_0": true,
     "v10_0": true,
     "v11_0": true,
-    "v12_0": true
+    "v12_0": true,
+    "v13_0": true
   }
 }
 ```
@@ -122,7 +123,7 @@ Content-length: 1006
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1178
+Content-Length: 1198
 
 {
   "@odata.type": "#microsoft.graph.iosStoreApp",
@@ -157,7 +158,8 @@ Content-Length: 1178
     "v9_0": true,
     "v10_0": true,
     "v11_0": true,
-    "v12_0": true
+    "v12_0": true,
+    "v13_0": true
   }
 }
 ```

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f07a228ce685ae2ec3fcb502131eac5a6d9271af
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 79938a72b84627cfa27c32e163034562d6737079
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36310292"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180456"
 ---
 # <a name="update-devicemanagementscriptrunsummary"></a>Обновление Девицеманажементскриптрунсуммари
 
@@ -51,7 +51,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSu
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Key объекта сводки запуска сценария управления устройствами.|
+|id|String|Key объекта сводки запуска сценария управления устройствами. Это свойство доступно только для чтения.|
 |сукцессдевицекаунт|Int32|Число устройств для успешной попытки.|
 |errorDeviceCount|Int32|Количество устройств с ошибками.|
 |compliantDeviceCount|Int32|Число соответствующих устройств.|
@@ -105,8 +105,6 @@ Content-Length: 319
   "errorUserCount": 14
 }
 ```
-
-
 
 
 

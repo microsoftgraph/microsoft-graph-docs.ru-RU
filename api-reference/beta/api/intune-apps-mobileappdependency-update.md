@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dcdffa788944739fd44cc455b97c5e59334659fc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 22f70f7f8c7721e447c0dd1f43f0fe638f7a4eff
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36329154"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37177047"
 ---
 # <a name="update-mobileappdependency"></a>Обновление Мобилеаппдепенденци
 
@@ -52,8 +52,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/relationships/{mobileAppRela
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Идентификатор сущности отношения. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
-|targetId|String|Идентификатор приложения целевого дочернего мобильного приложения. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
-|таржетдисплайнаме|String|Отображаемое имя целевого дочернего мобильного приложения. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
+|targetId|String.|Идентификатор приложения целевого дочернего мобильного приложения. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
+|таржетдисплайнаме|String.|Отображаемое имя целевого дочернего мобильного приложения. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
 |депенденцитипе|[mobileAppDependencyType](../resources/intune-apps-mobileappdependencytype.md)|Тип отношения зависимости между родительским и дочерним приложениями. Возможные значения: `detect`, `autoInstall`.|
 |депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения.|
 
@@ -96,8 +96,6 @@ Content-Length: 260
   "dependentAppCount": 1
 }
 ```
-
-
 
 
 

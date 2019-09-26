@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 21cb17ff4787eeb5a52d3cfdd509e5c2ad5a5c82
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6a7ce7fc5818f846fb183293cd86ef1ad3215c4f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328174"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37170569"
 ---
 # <a name="update-termsandconditions"></a>Update termsAndConditions
 
@@ -53,16 +53,17 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор политики использования.|
+|id|String.|Уникальный идентификатор политики использования.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |modifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |displayName|Строка|Имя политики использования, указанное администратором. |
 |description|Строка|Описание политики использования, указанное администратором.|
 |title|String|Название условий, указанное администратором. Показывается пользователю при запросе на принятие политики использования.|
-|bodyText|String|Основной текст условий, заданный администратором (как правило, сами условия). Показывается пользователю при запросе на принятие политики использования.|
+|bodyText|String.|Основной текст условий, заданный администратором (как правило, сами условия). Показывается пользователю при запросе на принятие политики использования.|
 |acceptanceStatement|String|Указанное администратором объяснение условий. Как правило, пользователю объясняется, с чем связано принятие условий, изложенных в соответствующей политике. Показывается пользователю при запросе на принятие политики использования.|
 |version|Int32|Целое число, указывающее текущую версию условий. Увеличивается, когда администратор вносит изменения в условия и хочет, чтобы пользователи повторно приняли измененную политику.|
+|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
 
 
 
@@ -76,7 +77,7 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/{termsAndConditionsId}
 Content-type: application/json
-Content-length: 273
+Content-length: 335
 
 {
   "@odata.type": "#microsoft.graph.termsAndConditions",
@@ -85,7 +86,10 @@ Content-length: 273
   "title": "Title value",
   "bodyText": "Body Text value",
   "acceptanceStatement": "Acceptance Statement value",
-  "version": 7
+  "version": 7,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -94,7 +98,7 @@ Content-length: 273
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 505
+Content-Length: 567
 
 {
   "@odata.type": "#microsoft.graph.termsAndConditions",
@@ -107,11 +111,12 @@ Content-Length: 505
   "title": "Title value",
   "bodyText": "Body Text value",
   "acceptanceStatement": "Acceptance Statement value",
-  "version": 7
+  "version": 7,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
-
-
 
 
 

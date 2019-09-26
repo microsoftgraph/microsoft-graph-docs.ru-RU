@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: de8f39ac8a418a8efe69117e7f6ca2883431afb9
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 53c5262b585019311daa3098b0f8dd657ffcd4da
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36340354"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37175294"
 ---
 # <a name="delete-defaultdevicecompliancepolicy"></a>Удаление Дефаултдевицекомплианцеполици
 
@@ -63,8 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicie
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

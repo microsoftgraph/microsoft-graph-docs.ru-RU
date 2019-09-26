@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d8813707c158e23868e94a531521210bd9438f16
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 32d8c0bdf950e05b912ed5616361a5deedb479e1
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36310054"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180295"
 ---
 # <a name="windowsdefenderupdatesignatures-action"></a>Действие windowsDefenderUpdateSignatures
 
@@ -66,8 +66,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDe
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

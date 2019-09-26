@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f38bcf3f71b2725564f622f3c25434bafcf0cfe1
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c2b9c9cd2abc2ef314da84e6909cde5916bead8f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36330610"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37177803"
 ---
 # <a name="delete-iosstoreapp"></a>Удаление объекта iosStoreApp
 
@@ -65,8 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

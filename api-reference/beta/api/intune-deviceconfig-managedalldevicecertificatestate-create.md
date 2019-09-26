@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 50877255e069c70749ae77b515d7f45a90398a33
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d11a20463b6421a3975fc516c219fc52b7813cc8
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36338590"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37183739"
 ---
 # <a name="create-managedalldevicecertificatestate"></a>Создание Манажедаллдевицецертификатестате
 
@@ -53,15 +53,15 @@ POST /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |цертификатеревокестатус|[цертификатеревокатионстатус](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Отзыв состояния. Возможные значения: `none`, `pending`, `issued`, `failed`, `revoked`.|
-|манажеддевицедисплайнаме|String|Отображаемое имя устройства|
+|манажеддевицедисплайнаме|String.|Отображаемое имя устройства|
 |userPrincipalName|String|Имя субъекта-пользователя|
 |цертификатикспиратиондатетиме|DateTimeOffset|Дата окончания срока действия сертификата|
-|цертификатеиссуернаме|String|Издатель|
-|certificateThumbprint|String|Отпечаток|
-|цертификатесериалнумбер|String|Серийный номер|
-|цертификатесубжектнаме|String|Имя субъекта сертификата|
+|цертификатеиссуернаме|String.|Издатель|
+|certificateThumbprint|String.|Отпечаток|
+|цертификатесериалнумбер|String.|Серийный номер|
+|цертификатесубжектнаме|String.|Имя субъекта сертификата|
 |цертификатекэйусажес|Int32|Использование ключа|
-|цертификатикстендедкэйусажес|String|Расширенное использование ключа|
+|цертификатикстендедкэйусажес|String.|Расширенное использование ключа|
 |цертификатеиссуанцедатетиме|DateTimeOffset|Дата выпуска|
 
 
@@ -117,8 +117,6 @@ Content-Length: 784
   "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
-
-
 
 
 

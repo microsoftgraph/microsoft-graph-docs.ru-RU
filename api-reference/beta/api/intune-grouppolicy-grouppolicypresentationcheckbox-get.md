@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a136dd16a5dbbf013d867b0b48f877a93ca89bbc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 193686773971127e4c6bd794716542db34452435
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36357938"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37184138"
 ---
 # <a name="get-grouppolicypresentationcheckbox"></a>Получение Граупполиципресентатиончеккбокс
 
@@ -79,8 +79,6 @@ Content-Length: 269
   }
 }
 ```
-
-
 
 
 
