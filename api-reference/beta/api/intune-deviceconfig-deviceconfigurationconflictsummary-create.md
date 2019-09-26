@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1ebde376c13d4dbcdb9a831a2216ceaf9805e4a8
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a027083cac6ef997c69c8bb1b3d4e8d85237fd7b
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36345990"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37168312"
 ---
-# <a name="create-deviceconfigurationconflictsummary"></a><span data-ttu-id="0921a-103">Создание Девицеконфигуратионконфликтсуммари</span><span class="sxs-lookup"><span data-stu-id="0921a-103">Create deviceConfigurationConflictSummary</span></span>
+# <a name="create-deviceconfigurationconflictsummary"></a><span data-ttu-id="c76f6-103">Создание Девицеконфигуратионконфликтсуммари</span><span class="sxs-lookup"><span data-stu-id="c76f6-103">Create deviceConfigurationConflictSummary</span></span>
 
-> <span data-ttu-id="0921a-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0921a-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="c76f6-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c76f6-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="0921a-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="0921a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c76f6-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="c76f6-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="0921a-106">Создание нового объекта [девицеконфигуратионконфликтсуммари](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) .</span><span class="sxs-lookup"><span data-stu-id="0921a-106">Create a new [deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) object.</span></span>
+<span data-ttu-id="c76f6-106">Создание нового объекта [девицеконфигуратионконфликтсуммари](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) .</span><span class="sxs-lookup"><span data-stu-id="c76f6-106">Create a new [deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="0921a-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="0921a-107">Prerequisites</span></span>
-<span data-ttu-id="0921a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0921a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="c76f6-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="c76f6-107">Prerequisites</span></span>
+<span data-ttu-id="c76f6-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c76f6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0921a-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0921a-110">Permission type</span></span>|<span data-ttu-id="0921a-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="0921a-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="c76f6-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c76f6-110">Permission type</span></span>|<span data-ttu-id="c76f6-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="c76f6-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="0921a-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0921a-112">Delegated (work or school account)</span></span>|<span data-ttu-id="0921a-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0921a-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="0921a-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0921a-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="0921a-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0921a-115">Not supported.</span></span>|
-|<span data-ttu-id="0921a-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="0921a-116">Application</span></span>|<span data-ttu-id="0921a-117">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0921a-117">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="c76f6-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c76f6-112">Delegated (work or school account)</span></span>|<span data-ttu-id="c76f6-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c76f6-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="c76f6-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c76f6-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c76f6-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c76f6-115">Not supported.</span></span>|
+|<span data-ttu-id="c76f6-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c76f6-116">Application</span></span>|<span data-ttu-id="c76f6-117">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c76f6-117">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="0921a-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0921a-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c76f6-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c76f6-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,33 +38,33 @@ ms.locfileid: "36345990"
 POST /deviceManagement/deviceConfigurationConflictSummary
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="0921a-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0921a-119">Request headers</span></span>
-|<span data-ttu-id="0921a-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="0921a-120">Header</span></span>|<span data-ttu-id="0921a-121">Значение</span><span class="sxs-lookup"><span data-stu-id="0921a-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c76f6-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c76f6-119">Request headers</span></span>
+|<span data-ttu-id="c76f6-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="c76f6-120">Header</span></span>|<span data-ttu-id="c76f6-121">Значение</span><span class="sxs-lookup"><span data-stu-id="c76f6-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="0921a-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="0921a-122">Authorization</span></span>|<span data-ttu-id="0921a-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="0921a-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="0921a-124">Accept</span><span class="sxs-lookup"><span data-stu-id="0921a-124">Accept</span></span>|<span data-ttu-id="0921a-125">application/json</span><span class="sxs-lookup"><span data-stu-id="0921a-125">application/json</span></span>|
+|<span data-ttu-id="c76f6-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c76f6-122">Authorization</span></span>|<span data-ttu-id="c76f6-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c76f6-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="c76f6-124">Accept</span><span class="sxs-lookup"><span data-stu-id="c76f6-124">Accept</span></span>|<span data-ttu-id="c76f6-125">application/json</span><span class="sxs-lookup"><span data-stu-id="c76f6-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="0921a-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="0921a-126">Request body</span></span>
-<span data-ttu-id="0921a-127">В тексте запроса добавьте представление объекта Девицеконфигуратионконфликтсуммари в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0921a-127">In the request body, supply a JSON representation for the deviceConfigurationConflictSummary object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c76f6-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="c76f6-126">Request body</span></span>
+<span data-ttu-id="c76f6-127">В тексте запроса добавьте представление объекта Девицеконфигуратионконфликтсуммари в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c76f6-127">In the request body, supply a JSON representation for the deviceConfigurationConflictSummary object.</span></span>
 
-<span data-ttu-id="0921a-128">В следующей таблице приведены свойства, необходимые при создании Девицеконфигуратионконфликтсуммари.</span><span class="sxs-lookup"><span data-stu-id="0921a-128">The following table shows the properties that are required when you create the deviceConfigurationConflictSummary.</span></span>
+<span data-ttu-id="c76f6-128">В следующей таблице приведены свойства, необходимые при создании Девицеконфигуратионконфликтсуммари.</span><span class="sxs-lookup"><span data-stu-id="c76f6-128">The following table shows the properties that are required when you create the deviceConfigurationConflictSummary.</span></span>
 
-|<span data-ttu-id="0921a-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="0921a-129">Property</span></span>|<span data-ttu-id="0921a-130">Тип</span><span class="sxs-lookup"><span data-stu-id="0921a-130">Type</span></span>|<span data-ttu-id="0921a-131">Описание</span><span class="sxs-lookup"><span data-stu-id="0921a-131">Description</span></span>|
+|<span data-ttu-id="c76f6-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="c76f6-129">Property</span></span>|<span data-ttu-id="c76f6-130">Тип</span><span class="sxs-lookup"><span data-stu-id="c76f6-130">Type</span></span>|<span data-ttu-id="c76f6-131">Описание</span><span class="sxs-lookup"><span data-stu-id="c76f6-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="0921a-132">конфликтингдевицеконфигуратионс</span><span class="sxs-lookup"><span data-stu-id="0921a-132">conflictingDeviceConfigurations</span></span>|<span data-ttu-id="0921a-133">Коллекция [settingSource](../resources/intune-deviceconfig-settingsource.md)</span><span class="sxs-lookup"><span data-stu-id="0921a-133">[settingSource](../resources/intune-deviceconfig-settingsource.md) collection</span></span>|<span data-ttu-id="0921a-134">Набор политик в конфликте с заданным параметром</span><span class="sxs-lookup"><span data-stu-id="0921a-134">The set of policies in conflict with the given setting</span></span>|
-|<span data-ttu-id="0921a-135">id</span><span class="sxs-lookup"><span data-stu-id="0921a-135">id</span></span>|<span data-ttu-id="0921a-136">String</span><span class="sxs-lookup"><span data-stu-id="0921a-136">String</span></span>|<span data-ttu-id="0921a-137">Идентификатор этого набора конфликтующих политик.</span><span class="sxs-lookup"><span data-stu-id="0921a-137">The id for this set of conflicting policies.</span></span> <span data-ttu-id="0921a-138">Этот идентификатор — идентификаторы всех политик в Конфликтингдевицеконфигуратионс в лексикографикал порядке, разделенных символами подчеркивания.</span><span class="sxs-lookup"><span data-stu-id="0921a-138">This id is the ids of all the policies in ConflictingDeviceConfigurations in lexicographical order separated by underscores.</span></span>|
-|<span data-ttu-id="0921a-139">контрибутингсеттингс</span><span class="sxs-lookup"><span data-stu-id="0921a-139">contributingSettings</span></span>|<span data-ttu-id="0921a-140">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="0921a-140">String collection</span></span>|<span data-ttu-id="0921a-141">Набор параметров в конфликте с заданными политиками</span><span class="sxs-lookup"><span data-stu-id="0921a-141">The set of settings in conflict with the given policies</span></span>|
-|<span data-ttu-id="0921a-142">девицечеккинсимпактед</span><span class="sxs-lookup"><span data-stu-id="0921a-142">deviceCheckinsImpacted</span></span>|<span data-ttu-id="0921a-143">Int32</span><span class="sxs-lookup"><span data-stu-id="0921a-143">Int32</span></span>|<span data-ttu-id="0921a-144">Число возвратов, затронутых конфликтующими политиками и параметрами</span><span class="sxs-lookup"><span data-stu-id="0921a-144">The count of checkins impacted by the conflicting policies and settings</span></span>|
+|<span data-ttu-id="c76f6-132">конфликтингдевицеконфигуратионс</span><span class="sxs-lookup"><span data-stu-id="c76f6-132">conflictingDeviceConfigurations</span></span>|<span data-ttu-id="c76f6-133">Коллекция [settingSource](../resources/intune-deviceconfig-settingsource.md)</span><span class="sxs-lookup"><span data-stu-id="c76f6-133">[settingSource](../resources/intune-deviceconfig-settingsource.md) collection</span></span>|<span data-ttu-id="c76f6-134">Набор политик в конфликте с заданным параметром</span><span class="sxs-lookup"><span data-stu-id="c76f6-134">The set of policies in conflict with the given setting</span></span>|
+|<span data-ttu-id="c76f6-135">id</span><span class="sxs-lookup"><span data-stu-id="c76f6-135">id</span></span>|<span data-ttu-id="c76f6-136">String</span><span class="sxs-lookup"><span data-stu-id="c76f6-136">String</span></span>|<span data-ttu-id="c76f6-137">Идентификатор этого набора конфликтующих политик.</span><span class="sxs-lookup"><span data-stu-id="c76f6-137">The id for this set of conflicting policies.</span></span> <span data-ttu-id="c76f6-138">Этот идентификатор — идентификаторы всех политик в Конфликтингдевицеконфигуратионс в лексикографикал порядке, разделенных символами подчеркивания.</span><span class="sxs-lookup"><span data-stu-id="c76f6-138">This id is the ids of all the policies in ConflictingDeviceConfigurations in lexicographical order separated by underscores.</span></span>|
+|<span data-ttu-id="c76f6-139">контрибутингсеттингс</span><span class="sxs-lookup"><span data-stu-id="c76f6-139">contributingSettings</span></span>|<span data-ttu-id="c76f6-140">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="c76f6-140">String collection</span></span>|<span data-ttu-id="c76f6-141">Набор параметров в конфликте с заданными политиками</span><span class="sxs-lookup"><span data-stu-id="c76f6-141">The set of settings in conflict with the given policies</span></span>|
+|<span data-ttu-id="c76f6-142">девицечеккинсимпактед</span><span class="sxs-lookup"><span data-stu-id="c76f6-142">deviceCheckinsImpacted</span></span>|<span data-ttu-id="c76f6-143">Int32</span><span class="sxs-lookup"><span data-stu-id="c76f6-143">Int32</span></span>|<span data-ttu-id="c76f6-144">Число возвратов, затронутых конфликтующими политиками и параметрами</span><span class="sxs-lookup"><span data-stu-id="c76f6-144">The count of checkins impacted by the conflicting policies and settings</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="0921a-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="0921a-145">Response</span></span>
-<span data-ttu-id="0921a-146">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеконфигуратионконфликтсуммари](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="0921a-146">If successful, this method returns a `201 Created` response code and a [deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c76f6-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="c76f6-145">Response</span></span>
+<span data-ttu-id="c76f6-146">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеконфигуратионконфликтсуммари](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="c76f6-146">If successful, this method returns a `201 Created` response code and a [deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0921a-147">Пример</span><span class="sxs-lookup"><span data-stu-id="0921a-147">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c76f6-147">Пример</span><span class="sxs-lookup"><span data-stu-id="c76f6-147">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="0921a-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="0921a-148">Request</span></span>
-<span data-ttu-id="0921a-149">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="0921a-149">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="c76f6-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="c76f6-148">Request</span></span>
+<span data-ttu-id="c76f6-149">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c76f6-149">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationConflictSummary
 Content-type: application/json
@@ -86,8 +86,8 @@ Content-length: 361
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="0921a-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="0921a-150">Response</span></span>
-<span data-ttu-id="0921a-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="0921a-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="c76f6-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="c76f6-150">Response</span></span>
+<span data-ttu-id="c76f6-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c76f6-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -109,8 +109,6 @@ Content-Length: 410
   "deviceCheckinsImpacted": 6
 }
 ```
-
-
 
 
 
