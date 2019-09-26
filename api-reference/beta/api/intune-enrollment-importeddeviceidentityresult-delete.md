@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d804055dbf8117ce279d82afd938d24564f25b1
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: bb1e8ce4304f07d0d48862c030bc55b7117f3cfe
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36356356"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37187907"
 ---
 # <a name="delete-importeddeviceidentityresult"></a>Удаление Импортеддевицеидентитиресулт
 
@@ -63,8 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/importedDeviceIdentitie
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

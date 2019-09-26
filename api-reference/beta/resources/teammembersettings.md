@@ -2,15 +2,15 @@
 title: Тип ресурса Теаммемберсеттингс
 description: Параметры для настройки того, могут ли участники выполнять определенные действия, например создавать каналы и добавлять ботов в команде.
 localization_priority: Normal
-author: nkramer
+author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c7c6690eb293581a60cba20d3f3ef63187339c35
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8967eb083ad2bd413277c42b688c2d0c48d8244b
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007699"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196261"
 ---
 # <a name="teammembersettings-resource-type"></a>Тип ресурса Теаммемберсеттингс
 
@@ -21,11 +21,12 @@ ms.locfileid: "36007699"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Алловкреатеупдатечаннелс|Boolean|Если задано значение true, участники могут добавлять и обновлять каналы.|
-|Алловделетечаннелс|Boolean|Если задано значение true, участники могут удалять каналы.|
-|Алловаддремовеаппс|Boolean|Если задано значение true, участники могут добавлять и удалять приложения.|
-|Алловкреатеупдатеремоветабс|Boolean|Если задано значение true, члены могут добавлять, обновлять и удалять вкладки. |
-|Алловкреатеупдатеремовеконнекторс|Boolean|Если задано значение true, участники могут добавлять, обновлять и удалять соединители.|
+|алловкреатеупдатечаннелс|Boolean.|Если задано значение true, участники могут добавлять и обновлять любые каналы.|
+|алловкреатеприватечаннелс|Boolean.|Если задано значение true, участники могут добавлять и обновлять частные каналы.|
+|алловделетечаннелс|Boolean.|Если задано значение true, участники могут удалять каналы.|
+|алловаддремовеаппс|Boolean.|Если задано значение true, участники могут добавлять и удалять приложения.|
+|алловкреатеупдатеремоветабс|Boolean.|Если задано значение true, члены могут добавлять, обновлять и удалять вкладки. |
+|алловкреатеупдатеремовеконнекторс|Boolean.|Если задано значение true, участники могут добавлять, обновлять и удалять соединители.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -39,6 +40,7 @@ ms.locfileid: "36007699"
 ```json
 {
   "allowCreateUpdateChannels": true,
+  "allowCreatePrivateChannels": true,
   "allowDeleteChannels": true,
   "allowAddRemoveApps": true,
   "allowCreateUpdateRemoveTabs": true,

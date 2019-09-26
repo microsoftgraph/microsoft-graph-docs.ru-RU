@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 739e6fb58a55eb0d7da5555048b5ee3475353e9a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 435719ff8acc264fe36f431ea62dbb082519bfd4
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36351359"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189552"
 ---
 # <a name="update-resourceoperation"></a>Обновление объекта resourceOperation
 
@@ -52,11 +52,11 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ операции с ресурсом. Доступен только для чтения и создается автоматически.|
-|resource|String|Категория ресурса, к которой относится данная операция.|
+|resource|String.|Категория ресурса, к которой относится данная операция.|
 |resourceName|String|Имя ресурса, с которым выполняется эта операция.|
 |actionName|String|Тип действия, которое выполнит эта операция. Свойство actionName должно быть максимально краткое (максимум несколько слов).|
 |description|String|Описание операции с ресурсом. Используется в тексте, который отображается над операцией при наведении указателя мыши на портале Azure.|
-|енабледфорскопевалидатион|Boolean|Определяет, является ли разрешение проверенным для областей, определенных для назначения ролей.|
+|енабледфорскопевалидатион|Boolean.|Определяет, является ли разрешение проверенным для областей, определенных для назначения ролей.|
 
 
 
@@ -99,8 +99,6 @@ Content-Length: 298
   "enabledForScopeValidation": true
 }
 ```
-
-
 
 
 

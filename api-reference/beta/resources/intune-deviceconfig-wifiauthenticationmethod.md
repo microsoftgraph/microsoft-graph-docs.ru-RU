@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a6433868bc259cd4758bd795c3e63a3185f00f67
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 62957eee9c806926f503c03dea4b2fda03006dbf
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337974"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37197598"
 ---
 # <a name="wifiauthenticationmethod-enum-type"></a>тип перечисления Вифиаусентикатионмесод
 
@@ -25,7 +25,7 @@ ms.locfileid: "36337974"
 |:---|:---|:---|
 |certificate|нуль|Используйте сертификат удостоверения для проверки подлинности.|
 |усернамеандпассворд|1,1|Используйте имя пользователя и пароль для проверки подлинности.|
-|дериведкредентиал|2|Используйте имя пользователя и пароль для проверки подлинности.|
+|дериведкредентиал|2|Используйте производные учетные данные для проверки подлинности.|
 
 
 
