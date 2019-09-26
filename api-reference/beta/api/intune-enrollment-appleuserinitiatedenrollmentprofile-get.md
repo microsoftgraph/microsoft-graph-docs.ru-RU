@@ -1,26 +1,26 @@
 ---
-title: Получение объекта localizedNotificationMessage
-description: Чтение свойств и связей объекта localizedNotificationMessage.
+title: Получение Апплеусеринитиатеденроллментпрофиле
+description: Чтение свойств и связей объекта Апплеусеринитиатеденроллментпрофиле.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 91bb7b4d6c93b8a35f5cd38f2a4a263f3a9990f2
+ms.openlocfilehash: 117bd23ab29381dff9daaab14b2e8486d9b37303
 ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/26/2019
-ms.locfileid: "37191171"
+ms.locfileid: "37192586"
 ---
-# <a name="get-localizednotificationmessage"></a>Получение объекта localizedNotificationMessage
+# <a name="get-appleuserinitiatedenrollmentprofile"></a>Получение Апплеусеринитиатеденроллментпрофиле
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md).
+Чтение свойств и связей объекта [апплеусеринитиатеденроллментпрофиле](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md) .
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -35,7 +35,7 @@ ms.locfileid: "37191171"
 }
 -->
 ``` http
-GET /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages/{localizedNotificationMessageId}
+GET /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiatedEnrollmentProfileId}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -51,14 +51,14 @@ GET /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateI
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [апплеусеринитиатеденроллментпрофиле](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages/{localizedNotificationMessageId}
+GET https://graph.microsoft.com/beta/deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiatedEnrollmentProfileId}
 ```
 
 ### <a name="response"></a>Отклик
@@ -66,17 +66,26 @@ GET https://graph.microsoft.com/beta/deviceManagement/notificationMessageTemplat
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 346
+Content-Length: 662
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.localizedNotificationMessage",
-    "id": "7a777708-7708-7a77-0877-777a0877777a",
-    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "locale": "Locale value",
-    "subject": "Subject value",
-    "messageTemplate": "Message Template value",
-    "isDefault": true
+    "@odata.type": "#microsoft.graph.appleUserInitiatedEnrollmentProfile",
+    "defaultEnrollmentType": "device",
+    "availableEnrollmentTypeOptions": [
+      {
+        "@odata.type": "microsoft.graph.appleOwnerTypeEnrollmentType",
+        "ownerType": "company",
+        "enrollmentType": "device"
+      }
+    ],
+    "id": "5a11d98e-d98e-5a11-8ed9-115a8ed9115a",
+    "displayName": "Display Name value",
+    "description": "Description value",
+    "priority": 8,
+    "platform": "androidForWork",
+    "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
   }
 }
 ```

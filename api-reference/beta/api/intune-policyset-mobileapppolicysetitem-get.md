@@ -1,33 +1,33 @@
 ---
-title: Получение объекта localizedNotificationMessage
-description: Чтение свойств и связей объекта localizedNotificationMessage.
+title: Получение Мобилеаппполицисетитем
+description: Чтение свойств и связей объекта Мобилеаппполицисетитем.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 91bb7b4d6c93b8a35f5cd38f2a4a263f3a9990f2
+ms.openlocfilehash: ee8b8aff194136c5e3d19f5d94d49f443d7ec935
 ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/26/2019
-ms.locfileid: "37191171"
+ms.locfileid: "37192662"
 ---
-# <a name="get-localizednotificationmessage"></a>Получение объекта localizedNotificationMessage
+# <a name="get-mobileapppolicysetitem"></a>Получение Мобилеаппполицисетитем
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md).
+Чтение свойств и связей объекта [мобилеаппполицисетитем](../resources/intune-policyset-mobileapppolicysetitem.md) .
 
-## <a name="prerequisites"></a>Предварительные условия
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -35,7 +35,7 @@ ms.locfileid: "37191171"
 }
 -->
 ``` http
-GET /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages/{localizedNotificationMessageId}
+GET /deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -51,14 +51,14 @@ GET /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateI
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [мобилеаппполицисетитем](../resources/intune-policyset-mobileapppolicysetitem.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages/{localizedNotificationMessageId}
+GET https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
 ```
 
 ### <a name="response"></a>Отклик
@@ -66,17 +66,26 @@ GET https://graph.microsoft.com/beta/deviceManagement/notificationMessageTemplat
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 346
+Content-Length: 641
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.localizedNotificationMessage",
-    "id": "7a777708-7708-7a77-0877-777a0877777a",
+    "@odata.type": "#microsoft.graph.mobileAppPolicySetItem",
+    "id": "b6ffe6cf-e6cf-b6ff-cfe6-ffb6cfe6ffb6",
+    "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-    "locale": "Locale value",
-    "subject": "Subject value",
-    "messageTemplate": "Message Template value",
-    "isDefault": true
+    "payloadId": "Payload Id value",
+    "itemType": "Item Type value",
+    "displayName": "Display Name value",
+    "status": "validating",
+    "errorCode": "unauthorized",
+    "guidedDeploymentTags": [
+      "Guided Deployment Tags value"
+    ],
+    "intent": "required",
+    "settings": {
+      "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
+    }
   }
 }
 ```
