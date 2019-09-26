@@ -1,0 +1,74 @@
+---
+title: Тип ресурса Виндовсупдатестате
+description: Пока не задокументировано.
+author: rolyon
+localization_priority: Normal
+ms.prod: Intune
+doc_type: resourcePageType
+ms.openlocfilehash: 5289305dff1490796278ad95c57f89eb8bffb461
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37201194"
+---
+# <a name="windowsupdatestate-resource-type"></a><span data-ttu-id="33052-103">Тип ресурса Виндовсупдатестате</span><span class="sxs-lookup"><span data-stu-id="33052-103">windowsUpdateState resource type</span></span>
+
+> <span data-ttu-id="33052-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="33052-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+
+> <span data-ttu-id="33052-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="33052-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+
+<span data-ttu-id="33052-106">Н/Д</span><span class="sxs-lookup"><span data-stu-id="33052-106">Not yet documented</span></span>
+
+## <a name="methods"></a><span data-ttu-id="33052-107">Методы</span><span class="sxs-lookup"><span data-stu-id="33052-107">Methods</span></span>
+|<span data-ttu-id="33052-108">Метод</span><span class="sxs-lookup"><span data-stu-id="33052-108">Method</span></span>|<span data-ttu-id="33052-109">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="33052-109">Return Type</span></span>|<span data-ttu-id="33052-110">Описание</span><span class="sxs-lookup"><span data-stu-id="33052-110">Description</span></span>|
+|:---|:---|:---|
+|[<span data-ttu-id="33052-111">Список Виндовсупдатестатес</span><span class="sxs-lookup"><span data-stu-id="33052-111">List windowsUpdateStates</span></span>](../api/intune-shared-windowsupdatestate-list.md)|<span data-ttu-id="33052-112">Коллекция [виндовсупдатестате](../resources/intune-shared-windowsupdatestate.md)</span><span class="sxs-lookup"><span data-stu-id="33052-112">[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) collection</span></span>|<span data-ttu-id="33052-113">Список свойств и связей объектов [виндовсупдатестате](../resources/intune-shared-windowsupdatestate.md) .</span><span class="sxs-lookup"><span data-stu-id="33052-113">List properties and relationships of the [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) objects.</span></span>|
+|[<span data-ttu-id="33052-114">Получение Виндовсупдатестате</span><span class="sxs-lookup"><span data-stu-id="33052-114">Get windowsUpdateState</span></span>](../api/intune-shared-windowsupdatestate-get.md)|[<span data-ttu-id="33052-115">windowsUpdateState</span><span class="sxs-lookup"><span data-stu-id="33052-115">windowsUpdateState</span></span>](../resources/intune-shared-windowsupdatestate.md)|<span data-ttu-id="33052-116">Чтение свойств и связей объекта [виндовсупдатестате](../resources/intune-shared-windowsupdatestate.md) .</span><span class="sxs-lookup"><span data-stu-id="33052-116">Read properties and relationships of the [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) object.</span></span>|
+|[<span data-ttu-id="33052-117">Создание Виндовсупдатестате</span><span class="sxs-lookup"><span data-stu-id="33052-117">Create windowsUpdateState</span></span>](../api/intune-shared-windowsupdatestate-create.md)|[<span data-ttu-id="33052-118">windowsUpdateState</span><span class="sxs-lookup"><span data-stu-id="33052-118">windowsUpdateState</span></span>](../resources/intune-shared-windowsupdatestate.md)|<span data-ttu-id="33052-119">Создание нового объекта [виндовсупдатестате](../resources/intune-shared-windowsupdatestate.md) .</span><span class="sxs-lookup"><span data-stu-id="33052-119">Create a new [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) object.</span></span>|
+|[<span data-ttu-id="33052-120">Удаление Виндовсупдатестате</span><span class="sxs-lookup"><span data-stu-id="33052-120">Delete windowsUpdateState</span></span>](../api/intune-shared-windowsupdatestate-delete.md)|<span data-ttu-id="33052-121">Нет</span><span class="sxs-lookup"><span data-stu-id="33052-121">None</span></span>|<span data-ttu-id="33052-122">Удаляет объект [виндовсупдатестате](../resources/intune-shared-windowsupdatestate.md).</span><span class="sxs-lookup"><span data-stu-id="33052-122">Deletes a [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md).</span></span>|
+|[<span data-ttu-id="33052-123">Обновление Виндовсупдатестате</span><span class="sxs-lookup"><span data-stu-id="33052-123">Update windowsUpdateState</span></span>](../api/intune-shared-windowsupdatestate-update.md)|[<span data-ttu-id="33052-124">windowsUpdateState</span><span class="sxs-lookup"><span data-stu-id="33052-124">windowsUpdateState</span></span>](../resources/intune-shared-windowsupdatestate.md)|<span data-ttu-id="33052-125">Обновление свойств объекта [виндовсупдатестате](../resources/intune-shared-windowsupdatestate.md) .</span><span class="sxs-lookup"><span data-stu-id="33052-125">Update the properties of a [windowsUpdateState](../resources/intune-shared-windowsupdatestate.md) object.</span></span>|
+
+## <a name="properties"></a><span data-ttu-id="33052-126">Свойства</span><span class="sxs-lookup"><span data-stu-id="33052-126">Properties</span></span>
+|<span data-ttu-id="33052-127">Свойство</span><span class="sxs-lookup"><span data-stu-id="33052-127">Property</span></span>|<span data-ttu-id="33052-128">Тип</span><span class="sxs-lookup"><span data-stu-id="33052-128">Type</span></span>|<span data-ttu-id="33052-129">Описание</span><span class="sxs-lookup"><span data-stu-id="33052-129">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="33052-130">id</span><span class="sxs-lookup"><span data-stu-id="33052-130">id</span></span>|<span data-ttu-id="33052-131">Строка</span><span class="sxs-lookup"><span data-stu-id="33052-131">String</span></span>|<span data-ttu-id="33052-132">Это идентификатор объекта.</span><span class="sxs-lookup"><span data-stu-id="33052-132">This is Id of the entity.</span></span>|
+|<span data-ttu-id="33052-133">deviceId</span><span class="sxs-lookup"><span data-stu-id="33052-133">deviceId</span></span>|<span data-ttu-id="33052-134">String.</span><span class="sxs-lookup"><span data-stu-id="33052-134">String</span></span>|<span data-ttu-id="33052-135">Идентификатор устройства.</span><span class="sxs-lookup"><span data-stu-id="33052-135">The id of the device.</span></span>|
+|<span data-ttu-id="33052-136">userId</span><span class="sxs-lookup"><span data-stu-id="33052-136">userId</span></span>|<span data-ttu-id="33052-137">String</span><span class="sxs-lookup"><span data-stu-id="33052-137">String</span></span>|<span data-ttu-id="33052-138">Идентификатор пользователя.</span><span class="sxs-lookup"><span data-stu-id="33052-138">The id of the user.</span></span>|
+|<span data-ttu-id="33052-139">deviceDisplayName</span><span class="sxs-lookup"><span data-stu-id="33052-139">deviceDisplayName</span></span>|<span data-ttu-id="33052-140">String</span><span class="sxs-lookup"><span data-stu-id="33052-140">String</span></span>|<span data-ttu-id="33052-141">Отображаемое имя устройства.</span><span class="sxs-lookup"><span data-stu-id="33052-141">Device display name.</span></span>|
+|<span data-ttu-id="33052-142">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="33052-142">userPrincipalName</span></span>|<span data-ttu-id="33052-143">Строка</span><span class="sxs-lookup"><span data-stu-id="33052-143">String</span></span>|<span data-ttu-id="33052-144">Имя участника пользователя.</span><span class="sxs-lookup"><span data-stu-id="33052-144">User principal name.</span></span>|
+|<span data-ttu-id="33052-145">status</span><span class="sxs-lookup"><span data-stu-id="33052-145">status</span></span>|[<span data-ttu-id="33052-146">windowsUpdateStatus</span><span class="sxs-lookup"><span data-stu-id="33052-146">windowsUpdateStatus</span></span>](../resources/intune-shared-windowsupdatestatus.md)|<span data-ttu-id="33052-147">Состояние Windows удпате.</span><span class="sxs-lookup"><span data-stu-id="33052-147">Windows udpate status.</span></span> <span data-ttu-id="33052-148">Возможные значения: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.</span><span class="sxs-lookup"><span data-stu-id="33052-148">Possible values are: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.</span></span>|
+|<span data-ttu-id="33052-149">куалитюпдатеверсион</span><span class="sxs-lookup"><span data-stu-id="33052-149">qualityUpdateVersion</span></span>|<span data-ttu-id="33052-150">String.</span><span class="sxs-lookup"><span data-stu-id="33052-150">String</span></span>|<span data-ttu-id="33052-151">Версия устройства для обновления качества.</span><span class="sxs-lookup"><span data-stu-id="33052-151">The Quality Update Version of the device.</span></span>|
+|<span data-ttu-id="33052-152">феатуреупдатеверсион</span><span class="sxs-lookup"><span data-stu-id="33052-152">featureUpdateVersion</span></span>|<span data-ttu-id="33052-153">String.</span><span class="sxs-lookup"><span data-stu-id="33052-153">String</span></span>|<span data-ttu-id="33052-154">Текущая версия обновления компонентов устройства.</span><span class="sxs-lookup"><span data-stu-id="33052-154">The current feature update version of the device.</span></span>|
+|<span data-ttu-id="33052-155">ластскандатетиме</span><span class="sxs-lookup"><span data-stu-id="33052-155">lastScanDateTime</span></span>|<span data-ttu-id="33052-156">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="33052-156">DateTimeOffset</span></span>|<span data-ttu-id="33052-157">Дата и время, когда агент обновления Windows успешно выполнил сканирование.</span><span class="sxs-lookup"><span data-stu-id="33052-157">The date time that the Windows Update Agent did a successful scan.</span></span>|
+|<span data-ttu-id="33052-158">lastSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="33052-158">lastSyncDateTime</span></span>|<span data-ttu-id="33052-159">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="33052-159">DateTimeOffset</span></span>|<span data-ttu-id="33052-160">Дата и время последней синхронизации устройства с Microsoft Intune.</span><span class="sxs-lookup"><span data-stu-id="33052-160">Last date time that the device sync with with Microsoft Intune.</span></span>|
+
+## <a name="relationships"></a><span data-ttu-id="33052-161">Отношения</span><span class="sxs-lookup"><span data-stu-id="33052-161">Relationships</span></span>
+<span data-ttu-id="33052-162">Нет</span><span class="sxs-lookup"><span data-stu-id="33052-162">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="33052-163">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="33052-163">JSON Representation</span></span>
+<span data-ttu-id="33052-164">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="33052-164">Here is a JSON representation of the resource.</span></span>
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.windowsUpdateState"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.windowsUpdateState",
+  "id": "String (identifier)",
+  "deviceId": "String",
+  "userId": "String",
+  "deviceDisplayName": "String",
+  "userPrincipalName": "String",
+  "status": "String",
+  "qualityUpdateVersion": "String",
+  "featureUpdateVersion": "String",
+  "lastScanDateTime": "String (timestamp)",
+  "lastSyncDateTime": "String (timestamp)"
+}
+```
+
+
+
