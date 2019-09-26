@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7c9042fef0de54465f1876486f9d2bd8a7e67e0a
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 6706d2073442234f6bb1916b63f9bb96a1f5b9ce
+ms.sourcegitcommit: 8ef30790a4d7aa94879df93773eae80b37abbfa4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421878"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37203965"
 ---
 # <a name="create-user"></a>Создание пользователя
 
@@ -28,9 +28,9 @@ ms.locfileid: "36421878"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.ReadWrite.All |
+|Для приложений | User.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -47,11 +47,11 @@ POST /users
 
 В теле запроса предоставьте описание объекта [user](../resources/user.md) в формате JSON.
 
-В приведенной ниже таблице показаны обязательные свойства при создании пользователя.
+В следующей таблице перечислены свойства, необходимые при создании пользователя. Если вы включаете свойство **удостоверения** для создаваемого пользователя, не все перечисленные свойства являются обязательными. Для [удостоверения локальной учетной записи B2C](../resources/objectidentity.md)необходимо указать только **passwordprofile необходима** . Для социальных удостоверений никакие свойства не требуются.
 
 | Параметр | Тип | Описание|
 |:---------------|:--------|:----------|
-|accountEnabled |Boolean |Если учетная запись обеспечена — true, в противном случае — false.|
+|accountEnabled |Boolean |Значение true, если учетная запись включена; в противном случае — false.|
 |displayName |строка |Имя, которое следует отобразить в адресной книге для пользователя.|
 |onPremisesImmutableId |string |Необходимо указывать только при создании учетной записи пользователя, если вы используете федеративный домен для свойства userPrincipalName (UPN) этого пользователя.|
 |mailNickname |string |Почтовый псевдоним для пользователя.|
@@ -60,15 +60,20 @@ POST /users
 
 Так как ресурс **User** поддерживает [расширения](/graph/extensibility-overview), вы можете использовать `POST` операцию и добавлять настраиваемые свойства с собственными данными в экземпляр пользователя при его создании.
 
+Федеративные пользователи, созданные с помощью этого API, будут вынуждены подписываться каждые 12 часов по умолчанию. Сведения о том, как это сделать, приведены в статье [исключения для времени существования маркеров](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
+
 >[!NOTE]
->Федеративные пользователи, созданные с помощью этого API, будут вынуждены подписываться каждые 12 часов по умолчанию. Дополнительные сведения об изменении этого способа приведены в статье [исключения для времени существования маркеров](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
+>Добавление [локальной учетной записи B2C](../resources/objectidentity.md) к существующему объекту **пользователя** запрещено, если объект **пользователя** еще не содержит удостоверение локальной учетной записи.
 
 ## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [user](../resources/user.md) в теле отклика.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+
+### <a name="example-1-create-a-user"></a>Пример 1: создание пользователя
+
+#### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
@@ -135,6 +140,80 @@ Content-type: application/json
     "preferredLanguage": null,
     "surname": null,
     "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com"
+}
+```
+
+### <a name="example-2-create-a-user-with-social-and-local-account-identities"></a>Пример 2: создание пользователя с удостоверениями социальных сетей и локальных учетных записей
+
+Создайте нового пользователя с удостоверением локальной учетной записи с именем для входа и с помощью социальных удостоверений. Этот пример обычно используется для сценариев миграции.
+
+#### <a name="request"></a>Запрос
+
+<!-- {  
+  "blockType": "request",   
+  "name": "create_user_from_users_identities"   
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/users
+Content-type: application/json
+
+{
+  "displayName": "John Smith",
+  "identities": [
+    {
+      "signInType": "signInName",
+      "issuer": "contoso.onmicrosoft.com",
+      "issuerAssignedId": "johnsmith"
+    },
+    {
+      "signInType": "federated",
+      "issuer": "facebook.com",
+      "issuerAssignedId": "5eecb0cd"
+    }
+  ],
+  "passwordProfile" : {
+    "forceChangePasswordNextSignIn": true,
+    "password": "password-value"
+  }
+}
+```
+
+#### <a name="response"></a>Ответ
+
+Ниже приведен пример отклика. 
+
+> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users/$entity",
+  "displayName": "John Smith",
+  "id": "4c7be08b-361f-41a8-b1ef-1712f7a3dfb2",
+  "identities": [
+    {
+      "signInType": "signInName",
+      "issuer": "contoso.onmicrosoft.com",
+      "issuerAssignedId": "johnsmith"
+    },
+    {
+      "signInType": "federated",
+      "issuer": "facebook.com",
+      "issuerAssignedId": "5eecb0cd"
+    }
+  ],
+  "passwordProfile" : {
+    "forceChangePasswordNextSignIn": true,
+    "password": null
+  }
 }
 ```
 

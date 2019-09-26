@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0e49e0cb5bd89fa962ebbee5475269362a70ed97
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 13550b7a76c7cd9cab1ba43ce5672fcfcf5afe14
+ms.sourcegitcommit: 8ef30790a4d7aa94879df93773eae80b37abbfa4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36724143"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37203963"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 
@@ -36,7 +36,7 @@ GET /users
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок        | Значение                      |
@@ -54,8 +54,9 @@ GET /users
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
+### <a name="example-1-list-all-users"></a>Пример 1. Список всех пользователей
 
+#### <a name="request"></a>Запрос
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -82,7 +83,9 @@ GET https://graph.microsoft.com/beta/users
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. 
+Ниже приведен пример отклика. 
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
@@ -111,6 +114,50 @@ Content-length: 608
       "surname": "surname-value",
       "userPrincipalName": "userPrincipalName-value",
       "id": "id-value"
+    }
+  ]
+}
+```
+
+### <a name="example-2-find-a-user-account-using-a-sign-in-name"></a>Пример 2. Поиск учетной записи пользователя с помощью имени для входа
+
+Найдите учетную запись пользователя в клиенте B2C, используя имя для входа (также называемое локальной учетной записью). Этот запрос может использоваться службой поддержки для поиска учетной записи пользователя в клиенте B2C (в данном примере клиентом B2C является contoso.onmicrosoft.com).
+
+>[!NOTE]
+>При фильтрации по свойству **identities** требуется указывать параметры **issuer** и **issuerAssignedId**.
+
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "get_signinname_users"
+}-->
+```http
+GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'contoso.onmicrosoft.com')
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика. 
+
+> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 108
+
+{
+  "value": [
+    {
+      "displayName": "John Smith",
+      "id": "4c7be08b-361f-41a8-b1ef-1712f7a3dfb2"
     }
   ]
 }
