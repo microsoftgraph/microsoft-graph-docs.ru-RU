@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 43502ab7807a3e821011faa440704a11f9e3c9d4
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6cef29133ee5c0427f36f915c80c57b5016d5271
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36350488"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180099"
 ---
 # <a name="update-userexperienceanalyticsmetric"></a>Обновление Усерекспериенцеаналитиксметрик
 
@@ -52,9 +52,8 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор метрики аналитики взаимодействия с пользователем.|
-|displayName|Строка|Имя метрики аналитики взаимодействия с пользователем.|
 |значение|Двойное|Значение метрики аналитики взаимодействия с пользователем.|
-|устройств|String|Единица измерения показателя взаимодействия с пользователем.|
+|устройств|String.|Единица измерения показателя взаимодействия с пользователем.|
 
 
 
@@ -68,11 +67,10 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/deviceBootPerformanceMetrics/metricValues/{userExperienceAnalyticsMetricId}
 Content-type: application/json
-Content-length: 187
+Content-length: 147
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetric",
-  "displayName": "Display Name value",
   "value": "<Unknown Primitive Type Edm.Double>",
   "unit": "Unit value"
 }
@@ -83,18 +81,15 @@ Content-length: 187
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 236
+Content-Length: 196
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetric",
   "id": "1371822e-822e-1371-2e82-71132e827113",
-  "displayName": "Display Name value",
   "value": "<Unknown Primitive Type Edm.Double>",
   "unit": "Unit value"
 }
 ```
-
-
 
 
 

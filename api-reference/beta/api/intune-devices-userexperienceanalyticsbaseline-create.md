@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1877d4f6cc964e311025a10988803723b1806510
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6d9cadb07ac467c8390252820fd5d785a94280d1
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36350496"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180211"
 ---
 # <a name="create-userexperienceanalyticsbaseline"></a>Создание Усерекспериенцеаналитиксбаселине
 
@@ -54,7 +54,8 @@ POST /deviceManagement/userExperienceAnalyticsBaselines
 |id|String|Уникальный идентификатор базового идентификатора аналитики взаимодействия с пользователем.|
 |displayName|Строка|Имя базового объекта аналитики взаимодействия с пользователем.|
 |овераллскоре|Int32|Общий показатель базового уровня для аналитики взаимодействия с пользователем.|
-|овераллрегрессионсрешолд|Int32|Общее пороговое значение базовой регрессии базового интерфейса аналитики взаимодействия с пользователем.|
+|isBuiltIn|Boolean|Указывает, является ли текущий базовый планом коммерческого медианы или настраиваемым базовым планом.|
+|createdDateTime|DateTimeOffset|Дата создания настраиваемого базового плана.|
 
 
 
@@ -68,13 +69,13 @@ POST /deviceManagement/userExperienceAnalyticsBaselines
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBaselines
 Content-type: application/json
-Content-length: 173
+Content-length: 158
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsBaseline",
   "displayName": "Display Name value",
   "overallScore": 12,
-  "overallRegressionThreshold": 10
+  "isBuiltIn": true
 }
 ```
 
@@ -83,18 +84,17 @@ Content-length: 173
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 222
+Content-Length: 266
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsBaseline",
   "id": "1cce2cab-2cab-1cce-ab2c-ce1cab2cce1c",
   "displayName": "Display Name value",
   "overallScore": 12,
-  "overallRegressionThreshold": 10
+  "isBuiltIn": true,
+  "createdDateTime": "2017-01-01T00:02:43.5775965-08:00"
 }
 ```
-
-
 
 
 

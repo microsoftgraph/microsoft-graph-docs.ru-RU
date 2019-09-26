@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f74dd18dc788012bfbe3128f4673a4b14cf2640c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 32f9aaabb5433b43d6e2450d6ceb35daaa331dc3
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36336462"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37172486"
 ---
 # <a name="delete-mobileappprovisioningconfiggroupassignment"></a>Удаление К mobileappprovisioningconfiggroupassignment.
 
@@ -63,8 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisionin
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

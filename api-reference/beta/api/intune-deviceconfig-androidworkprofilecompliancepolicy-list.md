@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bab8eed7e0485bb93703f9643412c5f46dfce2f8
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 99ce37b22e4064b11853749d59ade3e4c09243eb
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36340858"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37175983"
 ---
 # <a name="list-androidworkprofilecompliancepolicies"></a>Список АндроидворкпрофилекомплианцеполиЦиес
 
@@ -104,8 +104,6 @@ Content-Length: 1620
   ]
 }
 ```
-
-
 
 
 

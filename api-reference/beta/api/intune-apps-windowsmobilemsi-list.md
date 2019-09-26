@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1faa318b043b30b8588332bdb16f898407b0c18b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1138125a0bddb8020e991a1061ec6ded1f3191eb
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36322522"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37171934"
 ---
 # <a name="list-windowsmobilemsis"></a>Перечисление объектов windowsMobileMSI
 
@@ -106,8 +106,6 @@ Content-Length: 1407
   ]
 }
 ```
-
-
 
 
 

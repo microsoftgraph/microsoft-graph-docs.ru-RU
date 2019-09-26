@@ -1,24 +1,24 @@
 ---
-title: Обновление officeSuiteApp
-description: Обновление свойств объекта officeSuiteApp.
+title: Создание Андроидманажедсторевебапп
+description: Создание нового объекта Андроидманажедсторевебапп.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 54cf0f966c1e80666c425ccf9397bdd03f6602f7
+ms.openlocfilehash: 1029bc54bea5b35abda100a5a64d0d86fa806d19
 ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/26/2019
-ms.locfileid: "37172298"
+ms.locfileid: "37178514"
 ---
-# <a name="update-officesuiteapp"></a>Обновление officeSuiteApp
+# <a name="create-androidmanagedstorewebapp"></a>Создание Андроидманажедсторевебапп
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойств объекта [officeSuiteApp](../resources/intune-apps-officesuiteapp.md) .
+Создание нового объекта [андроидманажедсторевебапп](../resources/intune-apps-androidmanagedstorewebapp.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -35,9 +35,7 @@ ms.locfileid: "37172298"
 }
 -->
 ``` http
-PATCH /deviceAppManagement/mobileApps/{mobileAppId}
-PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
-PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
+POST /deviceAppManagement/mobileApps
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -47,9 +45,9 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта [officeSuiteApp](../resources/intune-apps-officesuiteapp.md) в формате JSON.
+В тексте запроса добавьте представление объекта Андроидманажедсторевебапп в формате JSON.
 
-В следующей таблице приведены свойства, необходимые при создании [officeSuiteApp](../resources/intune-apps-officesuiteapp.md).
+В следующей таблице приведены свойства, необходимые при создании Андроидманажедсторевебапп.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
@@ -65,41 +63,37 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |informationUrl|String.|URL-адрес страницы с дополнительными сведениями. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |owner|String|Владелец приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |developer|String.|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|notes|String.|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |uploadState|Int32|Состояние отправки. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|аутоакцептеула|Boolean.|Значение, которое будет автоматически принимать условия лицензионного соглашения на устройстве ендусер.|
-|productIds|Коллекция [оффицепродуктид](../resources/intune-apps-officeproductid.md)|Идентификаторы продуктов, представляющие SKU набора Office365. Возможные значения: `o365ProPlusRetail`, `o365BusinessRetail`, `visioProRetail`, `projectProRetail`.|
-|excludedApps|[excludedApps](../resources/intune-apps-excludedapps.md);|Свойство для представления приложений, исключаемых из выбранного идентификатора продукта Office365.|
-|Свойства usesharedcomputeractivation|Boolean.|Свойство для представления того, используется ли активация на общем компьютере не для приложений Office365.|
-|updateChannel|[оффицеупдатечаннел](../resources/intune-apps-officeupdatechannel.md)|Свойство для представления канала обновления Office365. Возможные значения: `none`, `current`, `deferred`, `firstReleaseCurrent`, `firstReleaseDeferred`.|
-|officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Свойство для представления версии набора приложений Office365. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
-|localesToInstall|Коллекция строк|Свойство для представления языковых стандартов, устанавливаемых при установке приложений из Office365. В нем используется стандартная спецификация RFC 6033. Словомhttps://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
-|инсталлпрогрессдисплайлевел|[оффицесуитеинсталлпрогрессдисплайлевел](../resources/intune-apps-officesuiteinstallprogressdisplaylevel.md)|Для указания уровня отображения пользовательского интерфейса установки хода установки на устройстве. Возможные значения: `none`, `full`.|
-|шаулдунинсталлолдерверсионсофоффице|Boolean.|Свойство, определяющее, следует ли удалить существующий MSI Office, если на устройстве развернут набор приложений Office365.|
-|Атрибута targetversion|String.|Свойство, представляющее определенную целевую версию для набора приложений Office365, который должен быть развернут на устройствах.|
-|упдатеверсион|String.|Свойство для представления версии обновления, в которой определенная Целевая версия доступна для набора приложений Office365.|
-|оффицеконфигуратионксмл|Binary|Свойство, представляющее XML-файл конфигурации, который можно указать для приложений Office профессиональный плюс. Имеет приоритет над всеми другими свойствами. Если этот параметр указан, для создания приложения будет использоваться XML-файл конфигурации.|
+|packageId|String.|Идентификатор пакета. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
+|appIdentifier|String|Имя удостоверения. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
+|usedLicenseCount|Int32|Количество используемых лицензий VPP. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
+|totalLicenseCount|Int32|Общее количество лицензий VPP. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
+|appStoreUrl|String|URL-адрес приложения для рабочего хранилища. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
+|Частный|Boolean.|Указывает, доступно ли приложение только для указанных пользователей предприятия. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
+|иссистемапп|Boolean.|Указывает, является ли приложение предустановленным системным приложением. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
+|суппортсоемконфиг|Boolean.|Поддерживает ли это приложение политику Оемконфиг. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [officeSuiteApp](../resources/intune-apps-officesuiteapp.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [андроидманажедсторевебапп](../resources/intune-apps-androidmanagedstorewebapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
+POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1599
+Content-length: 987
 
 {
-  "@odata.type": "#microsoft.graph.officeSuiteApp",
+  "@odata.type": "#microsoft.graph.androidManagedStoreWebApp",
   "displayName": "Display Name value",
   "description": "Description value",
   "publisher": "Publisher value",
@@ -121,51 +115,27 @@ Content-length: 1599
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
-  "autoAcceptEula": true,
-  "productIds": [
-    "o365BusinessRetail"
-  ],
-  "excludedApps": {
-    "@odata.type": "microsoft.graph.excludedApps",
-    "access": true,
-    "excel": true,
-    "groove": true,
-    "infoPath": true,
-    "lync": true,
-    "oneDrive": true,
-    "oneNote": true,
-    "outlook": true,
-    "powerPoint": true,
-    "publisher": true,
-    "sharePointDesigner": true,
-    "teams": true,
-    "visio": true,
-    "word": true
-  },
-  "useSharedComputerActivation": true,
-  "updateChannel": "current",
-  "officePlatformArchitecture": "x86",
-  "localesToInstall": [
-    "Locales To Install value"
-  ],
-  "installProgressDisplayLevel": "full",
-  "shouldUninstallOlderVersionsOfOffice": true,
-  "targetVersion": "Target Version value",
-  "updateVersion": "Update Version value",
-  "officeConfigurationXml": "b2ZmaWNlQ29uZmlndXJhdGlvblhtbA=="
+  "packageId": "Package Id value",
+  "appIdentifier": "App Identifier value",
+  "usedLicenseCount": 0,
+  "totalLicenseCount": 1,
+  "appStoreUrl": "https://example.com/appStoreUrl/",
+  "isPrivate": true,
+  "isSystemApp": true,
+  "supportsOemConfig": true
 }
 ```
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1771
+Content-Length: 1159
 
 {
-  "@odata.type": "#microsoft.graph.officeSuiteApp",
-  "id": "9b263b46-3b46-9b26-463b-269b463b269b",
+  "@odata.type": "#microsoft.graph.androidManagedStoreWebApp",
+  "id": "e54aecbd-ecbd-e54a-bdec-4ae5bdec4ae5",
   "displayName": "Display Name value",
   "description": "Description value",
   "publisher": "Publisher value",
@@ -189,38 +159,14 @@ Content-Length: 1771
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
-  "autoAcceptEula": true,
-  "productIds": [
-    "o365BusinessRetail"
-  ],
-  "excludedApps": {
-    "@odata.type": "microsoft.graph.excludedApps",
-    "access": true,
-    "excel": true,
-    "groove": true,
-    "infoPath": true,
-    "lync": true,
-    "oneDrive": true,
-    "oneNote": true,
-    "outlook": true,
-    "powerPoint": true,
-    "publisher": true,
-    "sharePointDesigner": true,
-    "teams": true,
-    "visio": true,
-    "word": true
-  },
-  "useSharedComputerActivation": true,
-  "updateChannel": "current",
-  "officePlatformArchitecture": "x86",
-  "localesToInstall": [
-    "Locales To Install value"
-  ],
-  "installProgressDisplayLevel": "full",
-  "shouldUninstallOlderVersionsOfOffice": true,
-  "targetVersion": "Target Version value",
-  "updateVersion": "Update Version value",
-  "officeConfigurationXml": "b2ZmaWNlQ29uZmlndXJhdGlvblhtbA=="
+  "packageId": "Package Id value",
+  "appIdentifier": "App Identifier value",
+  "usedLicenseCount": 0,
+  "totalLicenseCount": 1,
+  "appStoreUrl": "https://example.com/appStoreUrl/",
+  "isPrivate": true,
+  "isSystemApp": true,
+  "supportsOemConfig": true
 }
 ```
 

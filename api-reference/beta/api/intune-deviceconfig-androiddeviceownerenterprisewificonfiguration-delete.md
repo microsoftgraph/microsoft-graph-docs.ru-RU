@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 79c4904529d7bd68f4658fb99489f7f263818784
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f75c17e6f0b3456c3f0d8cd3dc2fbb11b7a6f1bd
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36317043"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37169974"
 ---
 # <a name="delete-androiddeviceownerenterprisewificonfiguration"></a>Удаление Андроиддевицеовнерентерприсевификонфигуратион
 
@@ -65,8 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

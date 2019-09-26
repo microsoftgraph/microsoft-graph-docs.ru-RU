@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: baf59e3e6e42f71cd44cdc3a2d5e388165247255
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 484bdb60823802961a2773ae855d511fdecc908c
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36311737"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180575"
 ---
 # <a name="list-devicehealthscripts"></a>Список Девицехеалсскриптс
 
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1050
+Content-Length: 1013
 
 {
   "value": [
@@ -91,14 +91,11 @@ Content-Length: 1050
         "operator": "equal",
         "detectionValue": "Detection Value value"
       },
-      "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50",
-      "runRemediationScript": true
+      "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50"
     }
   ]
 }
 ```
-
-
 
 
 

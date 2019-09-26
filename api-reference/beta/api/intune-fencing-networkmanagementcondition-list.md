@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: df785e5f00f747d68a486bbf936670c5f328935d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6f4661e68f40bc94cf1b8b2b7c6593fd20419509
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36355334"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37184271"
 ---
 # <a name="list-networkmanagementconditions"></a>Список Нетворкманажементкондитионс
 
@@ -84,8 +84,6 @@ Content-Length: 511
   ]
 }
 ```
-
-
 
 
 

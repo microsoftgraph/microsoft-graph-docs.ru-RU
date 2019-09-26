@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7b6f121cbbd662ca1bb4a192aa1d01acb2924540
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3102975f341f55914db4ce1fd57884ae7a745e48
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36310124"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180281"
 ---
 # <a name="retire-action"></a>Действие retire
 
@@ -66,8 +66,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDe
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

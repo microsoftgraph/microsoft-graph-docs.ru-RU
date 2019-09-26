@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2694cb39a2629c744ea0b500245fd8e0034544bb
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 18b6edf3895917a4670bbb84691d4ddc98d69039
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36339738"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37174671"
 ---
 # <a name="list-editionupgradeconfigurations"></a>Перечисление объектов editionUpgradeConfiguration
 
@@ -110,8 +110,6 @@ Content-Length: 1557
   ]
 }
 ```
-
-
 
 
 

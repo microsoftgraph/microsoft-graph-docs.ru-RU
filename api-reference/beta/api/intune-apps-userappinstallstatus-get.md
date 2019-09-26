@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: df6230154334a928fd610894df9714a56c35e01d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6192d15665ddb48d8afe3a6d28d98e642d3ac4c8
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328916"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37172228"
 ---
 # <a name="get-userappinstallstatus"></a>Получение Усераппинсталлстатус
 
@@ -80,8 +80,6 @@ Content-Length: 321
   }
 }
 ```
-
-
 
 
 
