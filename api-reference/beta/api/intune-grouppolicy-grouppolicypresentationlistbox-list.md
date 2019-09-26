@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c896822593c0f1a3bb97502e47f8248e33e7ff45
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 973d1ca8535f5891ab864f4a2393a86b85720ab8
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36354844"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37194266"
 ---
 # <a name="list-grouppolicypresentationlistboxes"></a>Список Граупполиципресентатионлистбоксес
 
@@ -78,8 +78,6 @@ Content-Length: 335
   ]
 }
 ```
-
-
 
 
 

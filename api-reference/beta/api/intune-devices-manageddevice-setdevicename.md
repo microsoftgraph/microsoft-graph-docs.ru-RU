@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 62ba1aba031022503c47ced58e92fe44209db804
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 036bb6581424245f409d12709f546eae17a8d6c7
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36310089"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188320"
 ---
 # <a name="setdevicename-action"></a>Действие setDeviceName
 
@@ -81,8 +81,6 @@ Content-length: 41
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

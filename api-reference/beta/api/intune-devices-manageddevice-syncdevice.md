@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bfae6e19167cdfad88e5a4bf598b92bda627f11b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ce6d609d62294fffcfe82df1b5bffe958870879d
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36310096"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188313"
 ---
 # <a name="syncdevice-action"></a>Действие syncDevice
 
@@ -66,8 +66,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDe
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

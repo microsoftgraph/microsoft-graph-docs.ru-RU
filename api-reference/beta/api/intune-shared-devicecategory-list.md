@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2eb04e944f7f9ddd3623a08f4c5e83f2c7ed5ee6
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ae7e210dff4e0aeb8d6c5806b1b63ec06eb55eb9
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36347593"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196072"
 ---
 # <a name="list-devicecategories"></a>Перечисление объектов deviceCategory
 
@@ -27,7 +27,8 @@ ms.locfileid: "36347593"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Входящая миграция** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений||
+| &nbsp; &nbsp; **Входящая миграция** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -83,6 +84,7 @@ Content-Length: 233
   ]
 }
 ```
+
 
 
 

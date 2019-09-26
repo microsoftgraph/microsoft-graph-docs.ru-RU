@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9e313a23277bd2a2e0019f6036e9826df130b27f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 36ca34ea7bd92e0a42394697cf82ca06aaac3e1c
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36344058"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37186297"
 ---
 # <a name="get-windowswifienterpriseeapconfiguration"></a>Получение Виндовсвифиентерприсиапконфигуратион
 
@@ -135,8 +135,6 @@ Content-Length: 2588
   }
 }
 ```
-
-
 
 
 

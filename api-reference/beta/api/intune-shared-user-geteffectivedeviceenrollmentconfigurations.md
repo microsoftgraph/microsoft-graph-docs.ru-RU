@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4773c1858eadbb63a7bf0b491793cd0afec94081
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: fa9415c43c17cea8959b9d4a8bf6fd49dab0841e
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36350666"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37195792"
 ---
 # <a name="geteffectivedeviceenrollmentconfigurations-function"></a>Функция Жетеффективедевицеенроллментконфигуратионс
 
@@ -29,8 +29,8 @@ ms.locfileid: "36350666"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Входящая миграция** | DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
-
+|Для приложений||
+| &nbsp; &nbsp; **Входящая миграция** | DeviceManagementServiceConfig.ReadWrite.All|
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- {
@@ -54,7 +54,7 @@ GET /users/{usersId}/getEffectiveDeviceEnrollmentConfigurations
 
 ## <a name="response"></a>Ответ
 
-В случае успеха эта функция возвращает код `200 OK` отклика и коллекцию [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) в тексте отклика.
+В случае успеха эта функция возвращает код `200 OK` отклика и коллекцию [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -90,6 +90,7 @@ Content-Length: 422
   ]
 }
 ```
+
 
 
 

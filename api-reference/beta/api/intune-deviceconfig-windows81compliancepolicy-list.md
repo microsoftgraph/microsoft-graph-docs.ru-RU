@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ec8f72bbaa6111fa5321fe7c15663fcbbda5881f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 85493b53003de30f75719ec4fa43b8bf1bbb2a6e
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36344863"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37187249"
 ---
 # <a name="list-windows81compliancepolicies"></a>Перечисление объектов windows81CompliancePolicy
 
@@ -93,8 +93,6 @@ Content-Length: 953
   ]
 }
 ```
-
-
 
 
 

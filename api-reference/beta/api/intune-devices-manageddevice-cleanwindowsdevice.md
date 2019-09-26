@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 049741b25e875923aeced68bc163f3e72f60d96f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: eaed033081ce971a017241e1676c555fe8a5c98d
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36310250"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188506"
 ---
 # <a name="cleanwindowsdevice-action"></a>Действие cleanWindowsDevice
 
@@ -81,8 +81,6 @@ Content-length: 28
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

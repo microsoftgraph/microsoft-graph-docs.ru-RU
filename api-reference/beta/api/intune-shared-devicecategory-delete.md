@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5fb5327cc212cf49f44d5761f39a43083859137c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 28bc560ca3d091b9c7b562d1414e0f1d510fff36
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36350939"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37194700"
 ---
 # <a name="delete-devicecategory"></a>Удаление deviceCategory
 
@@ -27,7 +27,8 @@ ms.locfileid: "36350939"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Входящая миграция** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений||
+| &nbsp; &nbsp; **Входящая миграция** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -67,6 +68,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCategories/{devic
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

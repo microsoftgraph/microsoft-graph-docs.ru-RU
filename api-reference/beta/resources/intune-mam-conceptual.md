@@ -4,12 +4,12 @@ description: Перечисляет API Microsoft Graph для конечных 
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 208caa1f421a8e9c9da9e9a8bcce048775e13678
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f6211e962cb5f2b1ab664001badea9f5e265e47a
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36332290"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196485"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -23,7 +23,6 @@ ms.locfileid: "36332290"
 
 Для управления политиками защиты приложений в Intune используются перечисленные ниже ресурсы Graph.
 
-- [Защита управляемых приложений для Android](intune-mam-androidmanagedappprotection.md)
 - [Регистрация управляемых приложений для Android](intune-mam-androidmanagedappregistration.md)
 - [Тип проверки приложений системы безопасности для управляемых приложений для Android](intune-mam-androidmanagedappsafetynetappsverificationtype.md)
 - [Тип аттестации устройства системы безопасности для управляемых приложений для Android](intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)
@@ -33,7 +32,6 @@ ms.locfileid: "36332290"
 - [Защита управляемых приложений по умолчанию](intune-mam-defaultmanagedappprotection.md)
 - [Профиль фирменной символики Intune](intune-wip-intunebrandingprofile.md)
 - [Назначение профиля фирменной символики Intune](intune-wip-intunebrandingprofileassignment.md)
-- [Защита управляемых приложений для iOS](intune-mam-iosmanagedappprotection.md)
 - [Регистрация управляемых приложений для iOS](intune-mam-iosmanagedappregistration.md)
 - [Идентификатор мобильных приложений для iOS](intune-mam-iosmobileappidentifier.md)
 - [JSON](intune-mam-json.md)
@@ -56,9 +54,7 @@ ms.locfileid: "36332290"
 - [Состояние управляемых приложений](intune-mam-managedappstatus.md)
 - [Необработанные данные о состоянии управляемых приложений](intune-mam-managedappstatusraw.md)
 - [Управляемое мобильное приложение](intune-mam-managedmobileapp.md)
-- [Политика Windows Information Protection для MDM](intune-mam-mdmwindowsinformationprotectionpolicy.md)
 - [Идентификатор мобильных приложений](intune-mam-mobileappidentifier.md)
-- [Целевая конфигурация управляемых приложений](intune-mam-targetedmanagedappconfiguration.md)
 - [Назначение целевой политики для управляемых приложений](intune-mam-targetedmanagedapppolicyassignment.md)
 - [Целевая защита управляемых приложений](intune-mam-targetedmanagedappprotection.md)
 - [Windows Information Protection](intune-mam-windowsinformationprotection.md)
@@ -77,4 +73,5 @@ ms.locfileid: "36332290"
 - [Коллекция ресурсов Windows Information Protection](intune-mam-windowsinformationprotectionresourcecollection.md)
 - [Приложение из магазина Windows Information Protection](intune-mam-windowsinformationprotectionstoreapp.md)
 - [Действие wipe для Windows Information Protection](intune-mam-windowsinformationprotectionwipeaction.md)
+
 

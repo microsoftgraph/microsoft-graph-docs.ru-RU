@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bda9472e9b56b0ed99cb9da2f0b6dd0f35ab47b8
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ec396c24d7233113b0e77202b05229b108a3681a
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36309760"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37187928"
 ---
 # <a name="delete-depenrollmentprofile"></a>Удаление depEnrollmentProfile
 
@@ -63,8 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 
