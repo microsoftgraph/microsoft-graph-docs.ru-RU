@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8312173563c4d59034d509aa5d5f7af7a6077ada
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ee4cebbf091a2625dc2709cbe13f92b430266da6
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36352870"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37190828"
 ---
 # <a name="delete-deviceenrollmentwindowshelloforbusinessconfiguration"></a>Удаление объекта deviceEnrollmentWindowsHelloForBusinessConfiguration
 
@@ -63,8 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigu
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

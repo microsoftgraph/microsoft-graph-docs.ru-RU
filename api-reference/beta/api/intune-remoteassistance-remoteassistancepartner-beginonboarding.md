@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9e36968f86ff4739fde1bfa4bbe3249e349168ca
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d3eb33aa52b4b413d203fe3c9036045e188f017a
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36347656"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37194812"
 ---
 # <a name="beginonboarding-action"></a>Действие beginOnboarding
 
@@ -63,8 +63,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/remoteAssistancePartners/
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

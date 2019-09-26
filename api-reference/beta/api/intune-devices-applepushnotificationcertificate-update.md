@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ecdbcf1bf5d33f8a7b6157d5b121e72b206fe4c9
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7f6634c979df85c2eb5e66680c86402a6bb3f504
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36310768"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188894"
 ---
 # <a name="update-applepushnotificationcertificate"></a>Обновление объекта applePushNotificationCertificate
 
@@ -52,12 +52,12 @@ PATCH /deviceManagement/applePushNotificationCertificate
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор сертификата|
-|appleIdentifier|String|Идентификатор Apple Id учетной записи, используемой для создания MDM Push Certificate.|
+|appleIdentifier|String.|Идентификатор Apple Id учетной записи, используемой для создания MDM Push Certificate.|
 |topicIdentifier|String|Идентификатор темы.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сертификата push-уведомлений Apple.|
 |expirationDateTime|DateTimeOffset|Дата и время окончания срока действия для сертификата push-уведомлений Apple.|
-|цертификатеуплоадстатус|String|Состояние отправки сертификата.|
-|цертификатеуплоадфаилуререасон|String|Причина сбоя отправки сертификата.|
+|цертификатеуплоадстатус|String.|Состояние отправки сертификата.|
+|цертификатеуплоадфаилуререасон|String.|Причина сбоя отправки сертификата.|
 |certificate|String|Пока не задокументировано.|
 
 
@@ -104,8 +104,6 @@ Content-Length: 529
   "certificate": "Certificate value"
 }
 ```
-
-
 
 
 

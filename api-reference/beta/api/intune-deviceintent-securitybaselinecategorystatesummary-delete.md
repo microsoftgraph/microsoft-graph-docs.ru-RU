@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bf206fa69f4f1d8251e3682c33dc9099a20bc541
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2dad577ea3c48858ccc775c6242c2956ee93e38a
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36343043"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188922"
 ---
 # <a name="delete-securitybaselinecategorystatesummary"></a>Удаление Секуритибаселинекатегористатесуммари
 
@@ -63,8 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManage
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a4eaab991ffe7478dbe4485d9859c0f2f53cfad4
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f075e72f11f70050fd6d460cfee4c43144ffbfdd
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36352387"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37190322"
 ---
 # <a name="update-sideloadingkey"></a>Обновление Сиделоадингкэй
 
@@ -51,12 +51,12 @@ PATCH /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор ключа загрузки на стороне.|
+|id|String.|Уникальный идентификатор ключа загрузки на стороне.|
 |value|String|Значение ключа загрузки на стороне, это значение 5x5, разделенное хифенс.|
 |displayName|Строка|Имя ключа загрузки на стороне, отображаемое для администраторов ИТ-специалистов.|
 |description|String|Описание ключа загрузки на стороне, которое отображается для администраторов ИТ-специалистов..|
 |тоталактиватион|Int32|Клавиша загрузки на боковой стороне общая активация отображается для администраторов ИТ-специалистов.|
-|lastUpdatedDateTime|String|Клавиша загрузки на боковой стороне Дата последнего обновления отображается для администраторов ИТ-специалистов.|
+|lastUpdatedDateTime|String.|Клавиша загрузки на боковой стороне Дата последнего обновления отображается для администраторов ИТ-специалистов.|
 
 
 
@@ -99,8 +99,6 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
-
-
 
 
 

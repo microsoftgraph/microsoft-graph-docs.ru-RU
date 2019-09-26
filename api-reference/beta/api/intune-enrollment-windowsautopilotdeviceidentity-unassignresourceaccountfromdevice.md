@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8b0d3f56540adce22deaf8a7e24907fe17789e1f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6476e9d94fdb87c8a18c765ca85aebe7aba89ced
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36356027"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37187676"
 ---
 # <a name="unassignresourceaccountfromdevice-action"></a>Действие unassignResourceAccountFromDevice
 
@@ -64,8 +64,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIde
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

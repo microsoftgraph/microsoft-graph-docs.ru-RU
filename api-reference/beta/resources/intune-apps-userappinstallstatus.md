@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7f2d6cd9480cd38653aa35ed8e70705f6fe6ace3
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f55ecd0eff7e0367e4bd312b35210fe4e9f3bb55
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335804"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37199106"
 ---
 # <a name="userappinstallstatus-resource-type"></a>Тип ресурса Усераппинсталлстатус
 
@@ -42,7 +42,7 @@ ms.locfileid: "36335804"
 ## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
 |:---|:---|:---|
-|программы|[mobileApp](../resources/intune-apps-mobileapp.md);|Ссылка навигации на мобильное приложение.|
+|программы|[mobileApp](../resources/intune-shared-mobileapp.md);|Ссылка навигации на мобильное приложение.|
 |deviceStatuses|Коллекция [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Состояние установки приложения на устройствах.|
 
 ## <a name="json-representation"></a>Представление JSON

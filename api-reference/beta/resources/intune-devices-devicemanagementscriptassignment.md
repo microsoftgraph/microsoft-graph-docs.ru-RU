@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 11e0efcb3dca1d51ed0a1253b9b7a0d0a077da3d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 22286eac6abc1ebad7ecc839eed9c872c70ff602
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36370076"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196989"
 ---
 # <a name="devicemanagementscriptassignment-resource-type"></a>Тип ресурса Девицеманажементскриптассигнмент
 
@@ -32,7 +32,7 @@ ms.locfileid: "36370076"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта назначения группы сценариев управления устройствами.|
+|id|String|Ключ объекта назначения группы сценариев управления устройствами. Это свойство доступно только для чтения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Идентификатор группы Azure Active Directory, на которую ориентирован сценарий.|
 
 ## <a name="relationships"></a>Отношения

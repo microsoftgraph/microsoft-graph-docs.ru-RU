@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9928855684833e7e571857831e2e2f93c5cfaf23
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 59679dc2002d031c96c2161656998b6af6ae7385
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36376113"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196912"
 ---
 # <a name="insightvalueint-resource-type"></a>Тип ресурса Инсигхтвалуеинт
 
@@ -26,6 +26,7 @@ ms.locfileid: "36376113"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
+|значение|Int32|Н/Д|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -39,7 +40,8 @@ ms.locfileid: "36376113"
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.insightValueInt"
+  "@odata.type": "#microsoft.graph.insightValueInt",
+  "value": 1024
 }
 ```
 

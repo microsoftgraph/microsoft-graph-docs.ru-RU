@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ff3be73059f913943236bfce8bcb4e729a39081d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 11c7bbe64b1495a9e6cb0b8ac144d1afb539789f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371546"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196674"
 ---
 # <a name="userexperienceanalyticsoverview-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксовервиев
 
@@ -34,6 +34,7 @@ ms.locfileid: "36371546"
 |девицебутперформанцеовераллскоре|Int32|Общая оценка производительности при загрузке устройства Analytics.|
 |бестпрактицесовераллскоре|Int32|Общая оценка рекомендаций по анализу пользовательских интерфейсов.|
 |insights|Коллекция [усерекспериенцеаналитиксинсигхт](../resources/intune-devices-userexperienceanalyticsinsight.md)|Аналитика взаимодействия с пользователем.|
+|состояние|[усерекспериенцеаналитикшеалсстате](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Текущее состояние работоспособности категории аналитики взаимодействия с пользователем. Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -58,13 +59,16 @@ ms.locfileid: "36371546"
       "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
       "userExperienceAnalyticsMetricId": "String",
       "insightId": "String",
-      "value": [
+      "values": [
         {
-          "@odata.type": "microsoft.graph.insightValueDouble"
+          "@odata.type": "microsoft.graph.insightValueDouble",
+          "value": "<Unknown Primitive Type Edm.Double>"
         }
-      ]
+      ],
+      "severity": "String"
     }
-  ]
+  ],
+  "state": "String"
 }
 ```
 

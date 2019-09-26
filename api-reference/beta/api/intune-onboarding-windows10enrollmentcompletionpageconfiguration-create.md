@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ca7cc0b95390437719d49f3860e310e7953f3e3
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f31a2cc061de5bd1fa8146cecad6eeb443933de9
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36352226"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37190094"
 ---
 # <a name="create-windows10enrollmentcompletionpageconfiguration"></a>Создание windows10EnrollmentCompletionPageConfiguration
 
@@ -51,21 +51,23 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для учетной записи, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|displayName|Строка|Отображаемое имя конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|description|String|Описание конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|priority|Int32|Priority используется, когда пользователь существует в нескольких группах, которым назначена Настройка регистрации. Пользователи подчиняются только конфигурации с наименьшим значением приоритета. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|createdDateTime|DateTimeOffset|Созданная Дата и время в формате UTC для настройки регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|version|Int32|Версия конфигурации регистрации устройств, унаследованная от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|шовинсталлатионпрогресс|Boolean|Отображение или скрытие хода установки для пользователя|
-|блоккдевицесетупретрибюсер|Boolean|Разрешить пользователю повторно выполнить установку при сбое установки|
-|алловдевицересетонинсталлфаилуре|Boolean|Разрешение или блокировка сброса устройства при сбое установки|
-|алловлогколлектиононинсталлфаилуре|Boolean|Разрешение или блокировка сбора журналов при сбое установки|
-|кустомеррормессаже|String|Задать настраиваемое сообщение об ошибке, которое будет отображаться после сбоя установки|
+|id|String|Уникальный идентификатор для учетной записи, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|displayName|Строка|Отображаемое имя конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|description|String|Описание конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|priority|Int32|Priority используется, когда пользователь существует в нескольких группах, которым назначена Настройка регистрации. Пользователи подчиняются только конфигурации с наименьшим значением приоритета. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|createdDateTime|DateTimeOffset|Созданная Дата и время в формате UTC для настройки регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|version|Int32|Версия конфигурации регистрации устройств, унаследованная от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|шовинсталлатионпрогресс|Boolean.|Отображение или скрытие хода установки для пользователя|
+|блоккдевицесетупретрибюсер|Boolean.|Разрешить пользователю повторно выполнить установку при сбое установки|
+|алловдевицересетонинсталлфаилуре|Boolean.|Разрешение или блокировка сброса устройства при сбое установки|
+|алловлогколлектиононинсталлфаилуре|Boolean.|Разрешение или блокировка сбора журналов при сбое установки|
+|кустомеррормессаже|String.|Задать настраиваемое сообщение об ошибке, которое будет отображаться после сбоя установки|
 |инсталлпрогресстимеаутинминутес|Int32|Задать время ожидания установки (в минутах)|
-|алловдевицеусеонинсталлфаилуре|Boolean|Разрешить пользователю продолжать использовать устройство при сбое установки|
+|алловдевицеусеонинсталлфаилуре|Boolean.|Разрешить пользователю продолжать использовать устройство при сбое установки|
 |селектедмобилеаппидс|Коллекция строк|Выбранные приложения для отслеживания состояния установки|
+|траккинсталлпрогрессфораутопилотонли|Boolean.|Показывать только ход выполнения установки для сценариев автоматической пилотной установки|
+|дисаблеусерстатустраккингафтерфирстусер|Boolean.|Показывать только сведения о ходе установки для первой процедуры регистрации пользователя|
 
 
 
@@ -79,7 +81,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations
 Content-type: application/json
-Content-length: 583
+Content-length: 684
 
 {
   "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
@@ -96,7 +98,9 @@ Content-length: 583
   "allowDeviceUseOnInstallFailure": true,
   "selectedMobileAppIds": [
     "Selected Mobile App Ids value"
-  ]
+  ],
+  "trackInstallProgressForAutopilotOnly": true,
+  "disableUserStatusTrackingAfterFirstUser": true
 }
 ```
 
@@ -105,7 +109,7 @@ Content-length: 583
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 755
+Content-Length: 856
 
 {
   "@odata.type": "#microsoft.graph.windows10EnrollmentCompletionPageConfiguration",
@@ -125,11 +129,11 @@ Content-Length: 755
   "allowDeviceUseOnInstallFailure": true,
   "selectedMobileAppIds": [
     "Selected Mobile App Ids value"
-  ]
+  ],
+  "trackInstallProgressForAutopilotOnly": true,
+  "disableUserStatusTrackingAfterFirstUser": true
 }
 ```
-
-
 
 
 

@@ -4,12 +4,12 @@ description: Перечисляет API Microsoft Graph для конечных 
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: 0d2252093f222f5908756f312c2e82d591c29920
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 56950c21527c4bf72dd57e71d27f0b1be2e47046
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372806"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196345"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Общие ресурсы в Microsoft Intune
 
@@ -24,34 +24,64 @@ ms.locfileid: "36372806"
 - [Состояние действия](intune-shared-actionstate.md)
 - [Объект назначения всех устройств](intune-shared-alldevicesassignmenttarget.md)
 - [Объект назначения всех лицензированных пользователей](intune-shared-alllicensedusersassignmenttarget.md)
+- [Защита управляемых приложений для Android](intune-shared-androidmanagedappprotection.md)
 - [Состояние соответствия](intune-shared-compliancestatus.md)
+- [Источник назначения для управления устройствами и приложениями](intune-shared-deviceandappmanagementassignmentsource.md)
 - [Объект назначения для управления устройствами и приложениями](intune-shared-deviceandappmanagementassignmenttarget.md)
 - [Управление приложениями для устройств](intune-shared-deviceappmanagement.md)
 - [Категория устройств](intune-shared-devicecategory.md)
+- [Политика соответствия устройств требованиям](intune-shared-devicecompliancepolicy.md)
+- [Настройка устройства](intune-shared-deviceconfiguration.md)
+- [Настройка регистрации устройств](intune-shared-deviceenrollmentconfiguration.md)
 - [Тип регистрации устройства](intune-shared-deviceenrollmenttype.md)
 - [Управление устройствами](intune-shared-devicemanagement.md)
+- [Производный поставщик учетных данных для управления устройствами](intune-shared-devicemanagementderivedcredentialissuer.md)
+- [Тип уведомления о получении учетных данных для управления устройствами](intune-shared-devicemanagementderivedcredentialnotificationtype.md)
+- [Параметры производных учетных данных управления устройствами](intune-shared-devicemanagementderivedcredentialsettings.md)
+- [Сценарий управления устройствами](intune-shared-devicemanagementscript.md)
 - [Тип платформы устройства](intune-shared-deviceplatformtype.md)
 - [Тип устройства](intune-shared-devicetype.md)
 - [Включение](intune-shared-enablement.md)
-- [Включение](intune-shared-enablement.md)
+- [Состояние регистрации](intune-shared-enrollmentstate.md)
 - [Объект назначения группы исключения](intune-shared-exclusiongroupassignmenttarget.md)
 - [Объект назначения группы](intune-shared-groupassignmenttarget.md)
 - [Намерение установки](intune-shared-installintent.md)
+- [Настройки назначения бизнес-приложения iOS](intune-shared-ioslobappassignmentsettings.md)
+- [Конфигурация подготовки бизнес-приложений iOS](intune-shared-ioslobappprovisioningconfiguration.md)
+- [Защита управляемых приложений для iOS](intune-shared-iosmanagedappprotection.md)
+- [Настройки назначения приложения из магазина iOS](intune-shared-iosstoreappassignmentsettings.md)
+- [Настройки назначения приложения iOS, приобретенного по программе VPP](intune-shared-iosvppappassignmentsettings.md)
 - [Диапазон IP-адресов](intune-shared-iprange.md)
 - [Диапазон IPv4-адресов](intune-shared-ipv4range.md)
 - [Диапазон IPv6-адресов](intune-shared-ipv6range.md)
 - [Пара "ключ-значение"](intune-shared-keyvaluepair.md)
+- [Настройки назначения приложения macOS, приобретенного по программе VPP](intune-shared-macosvppappassignmentsettings.md)
+- [Тип владельца управляемого устройства](intune-shared-manageddeviceownertype.md)
+- [Политика Windows Information Protection для MDM](intune-shared-mdmwindowsinformationprotectionpolicy.md)
+- [Настройки назначения приложения из Microsoft Store для бизнеса](intune-shared-microsoftstoreforbusinessappassignmentsettings.md)
 - [Содержимое MIME](intune-shared-mimecontent.md)
+- [Мобильное приложение](intune-shared-mobileapp.md)
+- [Настройки назначения мобильного приложения](intune-shared-mobileappassignmentsettings.md)
 - [Устранение неполадок с мобильным приложением: событие](intune-shared-mobileapptroubleshootingevent.md)
 - [Проксируемый домен](intune-shared-proxieddomain.md)
 - [Report](intune-shared-report.md)
 - [Корневая папка отчета](intune-shared-reportroot.md)
 - [Итоговое состояние приложения](intune-shared-resultantappstate.md)
 - [Цвет RGB](intune-shared-rgbcolor.md)
+- [Тип учетной записи, от имени которой запускается приложение](intune-shared-runasaccounttype.md)
 - [Состояние выполнения](intune-shared-runstate.md)
 - [Сохраненные параметры создания состояния пользовательского интерфейса](intune-shared-saveduistategenerationoptions.md)
+- [Целевая конфигурация управляемых приложений](intune-shared-targetedmanagedappconfiguration.md)
 - [URI](intune-shared-uri.md)
 - [пользователь](intune-shared-user.md);
 - [Тип учетной записи токена VPP](intune-shared-vpptokenaccounttype.md)
 - [Причина сбоя действия с токеном VPP](intune-shared-vpptokenactionfailurereason.md)
+- [Настройки назначения бизнес-приложения Win32](intune-shared-win32lobappassignmentsettings.md)
+- [Уведомление бизнес-приложения Win32](intune-shared-win32lobappnotification.md)
+- [Настройки назначения приложения Windows AppX](intune-shared-windowsappxappassignmentsettings.md)
+- [Профиль Windows AutoPilot Deployment](intune-shared-windowsautopilotdeploymentprofile.md)
 - [Конфигурация присоединения к домену Windows](intune-shared-windowsdomainjoinconfiguration.md)
+- [Настройки назначения универсального приложения Windows AppX](intune-shared-windowsuniversalappxappassignmentsettings.md)
+- [Состояние центра обновления Windows](intune-shared-windowsupdatestate.md)
+- [Статус обновления Windows](intune-shared-windowsupdatestatus.md)
+

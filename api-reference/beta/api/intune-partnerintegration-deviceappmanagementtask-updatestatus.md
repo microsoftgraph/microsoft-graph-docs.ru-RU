@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b504a3aa862db913c502276b01f264be86c81ce2
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e3bd6ccca0e6737c59773efd94bbacabc4d7bf01
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36351667"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189782"
 ---
 # <a name="updatestatus-action"></a>действие updateStatus
 
@@ -52,7 +52,7 @@ POST /deviceAppManagement/deviceAppManagementTasks/{deviceAppManagementTaskId}/u
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |status|[девицеаппманажементтаскстатус](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|Состояние|
-|ноте|String|Заметка|
+|ноте|String.|Заметка|
 
 
 
@@ -80,8 +80,6 @@ Content-length: 52
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

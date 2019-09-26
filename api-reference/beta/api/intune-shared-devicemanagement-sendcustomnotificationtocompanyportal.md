@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: efdadb8e5e87eecf0d70102d261a9f4d87a6468a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 48a71e0b867bb26671b19eac4fc725330c2c42fe
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36347559"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37194609"
 ---
 # <a name="sendcustomnotificationtocompanyportal-action"></a>Действие sendCustomNotificationToCompanyPortal
 
@@ -27,8 +27,8 @@ ms.locfileid: "36347559"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
-
+|Для приложений||
+| &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
   "blockType": "ignored"
@@ -83,6 +83,7 @@ Content-length: 164
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

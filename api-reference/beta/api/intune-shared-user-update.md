@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 547cc32e86d8bf332592d7573cf7971faf21aa6e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5ee6cbc8200ca3938dc39971491b174e0d074c90
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36350596"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37194367"
 ---
 # <a name="update-user"></a>Обновление пользователя
 
@@ -32,7 +32,11 @@ ms.locfileid: "36350596"
 | &nbsp; &nbsp; **Входящая миграция** | DeviceManagementServiceConfig.ReadWrite.All|
 | &nbsp; &nbsp; **Устранение неполадок** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений||
+| &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;&nbsp; **MAM** | DeviceManagementApps.ReadWrite.All|
+| &nbsp; &nbsp; **Входящая миграция** | DeviceManagementServiceConfig.ReadWrite.All|
+| &nbsp; &nbsp; **Устранение неполадок** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -95,6 +99,7 @@ Content-Length: 95
   "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
 }
 ```
+
 
 
 

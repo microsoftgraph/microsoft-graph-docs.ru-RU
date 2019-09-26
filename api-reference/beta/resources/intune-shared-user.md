@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 012bc306facb514cefed5d872d20a11b164b3374
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 50c43fd8c921b42d07ba7a4d64fbe2b6b897fc65
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010380"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196275"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -23,7 +23,7 @@ ms.locfileid: "36010380"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список](../api/intune-shared-user-list.md) объектов Users.|Коллекция объектов [user](../resources/intune-shared-user.md)|Список свойств и связей объектов [user](../resources/intune-shared-user.md).|
+|[Список объектов Users](../api/intune-shared-user-list.md) .|Коллекция объектов [user](../resources/intune-shared-user.md)|Список свойств и связей объектов [user](../resources/intune-shared-user.md).|
 |[Получение объекта User](../api/intune-shared-user-get.md) .|[user](../resources/intune-shared-user.md)|Чтение свойств и связей объекта [user](../resources/intune-shared-user.md).|
 |[Создание объекта User](../api/intune-shared-user-create.md) .|[user](../resources/intune-shared-user.md)|Создание объекта [user](../resources/intune-shared-user.md).|
 |[Удаление пользователя](../api/intune-shared-user-delete.md).|Нет|Удаляет объект [user](../resources/intune-shared-user.md).|
@@ -38,7 +38,7 @@ ms.locfileid: "36010380"
 |[Действие wipeManagedAppRegistrationsByDeviceTag](../api/intune-shared-user-wipemanagedappregistrationsbydevicetag.md)|Нет|Стирает данные о регистрации приложений с указанным тегом приложения.|
 |**Входящая миграция**|
 |[Функция Експортдевицеандаппманажементдата](../api/intune-shared-user-exportdeviceandappmanagementdata.md)|[deviceAndAppManagementData](../resources/intune-onboarding-deviceandappmanagementdata.md);|Пока не задокументировано.|
-|[Функция Жетеффективедевицеенроллментконфигуратионс](../api/intune-shared-user-geteffectivedeviceenrollmentconfigurations.md)|Коллекция объектов [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|Пока не задокументировано.|
+|[Функция Жетеффективедевицеенроллментконфигуратионс](../api/intune-shared-user-geteffectivedeviceenrollmentconfigurations.md)|Коллекция объектов [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|Пока не задокументировано.|
 |**Устранение неполадок**|
 |[Функция Жетманажеддевицесвисаппфаилурес](../api/intune-shared-user-getmanageddeviceswithappfailures.md)|Коллекция строк|Получает список устройств с неудачными приложениями.|
 
@@ -58,11 +58,11 @@ ms.locfileid: "36010380"
 |**Управление мобильными приложениями (MAM)**|
 |managedAppRegistrations|Коллекция [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|Любое количество объектов регистрации управляемых приложений, принадлежащих пользователю.|
 |**Входящая миграция**|
-|Объекты deviceEnrollmentConfiguration|Коллекция объектов [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|Получение целевых для пользователя конфигураций регистрации|
+|Объекты deviceEnrollmentConfiguration|Коллекция объектов [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|Получение целевых для пользователя конфигураций регистрации|
 |**Устранение неполадок**|
 |deviceManagementTroubleshootingEvents|Коллекция [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|Список событий устранения неполадок для этого пользователя.|
-|Мобилеаппинтентандстатес|Коллекция [мобилеаппинтентандстате](../resources/intune-troubleshooting-mobileappintentandstate.md)|Список событий устранения неполадок для этого пользователя.|
-|Мобилеапптраублешутинжевентс|Коллекция [мобилеапптраублешутинжевент](../resources/intune-shared-mobileapptroubleshootingevent.md)|Список событий устранения неполадок мобильного приложения для этого пользователя.|
+|мобилеаппинтентандстатес|Коллекция [мобилеаппинтентандстате](../resources/intune-troubleshooting-mobileappintentandstate.md)|Список событий устранения неполадок для этого пользователя.|
+|мобилеапптраублешутинжевентс|Коллекция [мобилеапптраублешутинжевент](../resources/intune-shared-mobileapptroubleshootingevent.md)|Список событий устранения неполадок мобильного приложения для этого пользователя.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

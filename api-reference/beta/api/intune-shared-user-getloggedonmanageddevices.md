@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e8d6b236b374ece03f99733da4d7ccc91f212cd0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 515643fc3d7c95b209ee4c26543327f1f6b5ef25
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36350673"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37194353"
 ---
 # <a name="getloggedonmanageddevices-function"></a>Функция Жетлогжедонманажеддевицес
 
@@ -29,7 +29,8 @@ ms.locfileid: "36350673"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений||
+| &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -231,6 +232,7 @@ Content-Length: 7485
   ]
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fe92ba56aefc87d8e439ec70191b0c96f9b8d273
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f6ccb72047b7f9939ad4d52b6fad82f754ada8b1
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36343239"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189223"
 ---
 # <a name="update-devicemanagementsettingdefinition"></a>Обновление Девицеманажементсеттингдефинитион
 
@@ -57,9 +57,9 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devic
 |id|String|Идентификатор определения параметра|
 |Типом|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|Тип данных значения. Возможные значения: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
 |displayName|Строка|Отображаемое имя параметра|
-|истоплевел|Boolean|Если параметр находится в верхнем уровне, его можно настроить без переноса в коллекцию или сложный параметр.|
+|истоплевел|Boolean.|Если параметр находится в верхнем уровне, его можно настроить без переноса в коллекцию или сложный параметр.|
 |description|String|Описание параметра|
-|документатионурл|String|URL-адрес для установки документации|
+|документатионурл|String.|URL-адрес для установки документации|
 |keywords|Коллекция строк|Ключевые слова, связанные с параметром|
 |провероч|Коллекция [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)|Коллекция ограничений для значения параметра|
 |зависящ|Коллекция [девицеманажементсеттингдепенденци](../resources/intune-deviceintent-devicemanagementsettingdependency.md)|Коллекция зависимостей для других параметров|
@@ -143,8 +143,6 @@ Content-Length: 777
   ]
 }
 ```
-
-
 
 
 

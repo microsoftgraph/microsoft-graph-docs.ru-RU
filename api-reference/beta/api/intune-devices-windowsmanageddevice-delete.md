@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 111392b46b2471f5bc47bfe513023a87f662d95c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 03c493669b0a2f2249b62e1715f7f625fe69d90b
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36348517"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188173"
 ---
 # <a name="delete-windowsmanageddevice"></a>Удаление Виндовсманажеддевице
 
@@ -66,8 +66,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managed
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

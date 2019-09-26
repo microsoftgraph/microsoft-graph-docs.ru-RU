@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f2e4b93373181462a4a2e73c4684ebe2599a6c75
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 57c741a6b1421fa96df1a0d0691fd3e2df6b1063
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36309676"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37185339"
 ---
 # <a name="create-deponboardingsetting"></a>Создание depOnboardingSetting
 
@@ -57,12 +57,12 @@ POST /deviceManagement/depOnboardingSettings
 |lastModifiedDateTime|DateTimeOffset|При подключении службы.|
 |ластсукцессфулсинкдатетиме|DateTimeOffset|Когда служба последний синед с Intune|
 |ластсинктригжереддатетиме|DateTimeOffset|При последнем запросе синхронизации в Intune.|
-|Свойства sharetokenwithschooldatasyncservice|Boolean|Указывает, включен ли общий доступ к маркеру DEP для службы School Data Sync.|
+|Свойства sharetokenwithschooldatasyncservice|Boolean.|Указывает, включен ли общий доступ к маркеру DEP для службы School Data Sync.|
 |Lastsyncerrorcode к объекту|Int32|Код ошибки, полученный от Apple во время последней синхронизации DEP.|
 |токентипе|[depTokenType](../resources/intune-enrollment-deptokentype.md);|Получает или задает тип токена DEP. Возможные значения: `none`, `dep`, `appleSchoolManager`.|
-|токеннаме|String|Понятное имя для токена DEP|
+|токеннаме|String.|Понятное имя для токена DEP|
 |синцеддевицекаунт|Int32|Получает число синхронизированных устройств|
-|dataSharingConsentGranted|Boolean|Разрешение, предоставленное для предоставления общего доступа к данным с помощью службы Apple DEP|
+|dataSharingConsentGranted|Boolean.|Разрешение, предоставленное для предоставления общего доступа к данным с помощью службы Apple DEP|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
 
 
@@ -123,8 +123,6 @@ Content-Length: 689
   ]
 }
 ```
-
-
 
 
 

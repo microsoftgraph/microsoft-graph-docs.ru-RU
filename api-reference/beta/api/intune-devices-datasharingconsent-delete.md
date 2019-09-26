@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b4e8824833b4c87eba12a2d9f625e8812a65ec6f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0ad49f3e699d86a3cd5c47e26b31bbee1848f42a
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36310684"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188817"
 ---
 # <a name="delete-datasharingconsent"></a>Удаление Даташарингконсент
 
@@ -63,8 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/dataSharingConsents/{da
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ec02ea90ea4ffbda99b854ba84ad34f4e8de0918
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 53e6d7902b8d491ec0c8b55f8102d076de258a3e
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36310334"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188593"
 ---
 # <a name="delete-devicemanagementscriptgroupassignment"></a>Удаление Девицеманажементскриптграупассигнмент
 
@@ -63,8 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

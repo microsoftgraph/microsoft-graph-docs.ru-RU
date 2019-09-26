@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e4512c6285ad83605f8e20746d72b8a882a66006
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c879aed639cb161d7704d619715e09e0496a2fa2
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36352401"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37190333"
 ---
 # <a name="get-sideloadingkey"></a>Получение Сиделоадингкэй
 
@@ -80,8 +80,6 @@ Content-Length: 328
   }
 }
 ```
-
-
 
 
 

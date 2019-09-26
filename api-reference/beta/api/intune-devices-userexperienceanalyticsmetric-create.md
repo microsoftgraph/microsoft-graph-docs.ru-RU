@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cb5e1af4c527f671a23c6e08dfd437ef9385d87c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: be303d476524af2711937dd73d8f93d244e05d24
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36311726"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188201"
 ---
 # <a name="create-userexperienceanalyticsmetric"></a>Создание Усерекспериенцеаналитиксметрик
 
@@ -52,9 +52,8 @@ POST /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytics
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор метрики аналитики взаимодействия с пользователем.|
-|displayName|Строка|Имя метрики аналитики взаимодействия с пользователем.|
 |значение|Двойное|Значение метрики аналитики взаимодействия с пользователем.|
-|устройств|String|Единица измерения показателя взаимодействия с пользователем.|
+|устройств|String.|Единица измерения показателя взаимодействия с пользователем.|
 
 
 
@@ -68,11 +67,10 @@ POST /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytics
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsBaselineId}/deviceBootPerformanceMetrics/metricValues
 Content-type: application/json
-Content-length: 187
+Content-length: 147
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetric",
-  "displayName": "Display Name value",
   "value": "<Unknown Primitive Type Edm.Double>",
   "unit": "Unit value"
 }
@@ -83,18 +81,15 @@ Content-length: 187
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 236
+Content-Length: 196
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetric",
   "id": "1371822e-822e-1371-2e82-71132e827113",
-  "displayName": "Display Name value",
   "value": "<Unknown Primitive Type Edm.Double>",
   "unit": "Unit value"
 }
 ```
-
-
 
 
 

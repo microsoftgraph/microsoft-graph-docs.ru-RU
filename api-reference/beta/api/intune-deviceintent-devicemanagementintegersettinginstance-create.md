@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 645afa20e3e3e4bd5a0afe4be445c713868eef59
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f2d771cb00fd63131d01ee96997b97f01d56bc35
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36343757"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37186045"
 ---
 # <a name="create-devicemanagementintegersettinginstance"></a>Создание Девицеманажементинтежерсеттингинстанце
 
@@ -55,8 +55,8 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Идентификатор экземпляра параметра, унаследованный от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|дефинитионид|String|Идентификатор определения параметра для этого экземпляра, унаследованного от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|валуежсон|String|Представление JSON значения, наследуемого от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|дефинитионид|String.|Идентификатор определения параметра для этого экземпляра, унаследованного от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|валуежсон|String.|Представление JSON значения, наследуемого от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
 |value|Int32|Целое значение|
 
 
@@ -96,8 +96,6 @@ Content-Length: 222
   "value": 5
 }
 ```
-
-
 
 
 

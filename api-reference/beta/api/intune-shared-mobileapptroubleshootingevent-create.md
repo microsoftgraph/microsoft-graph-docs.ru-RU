@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 241f31384d0e1c346659d5ac33b51acd4e2f3a6c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5708d3968b38351f26db5e1221c16fff442f93a0
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36350869"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196065"
 ---
 # <a name="create-mobileapptroubleshootingevent"></a>Создание Мобилеапптраублешутинжевент
 
@@ -29,7 +29,9 @@ ms.locfileid: "36350869"
 |&nbsp;&nbsp; **Управление устройствами**|DeviceManagementManagedDevices.ReadWrite.All|
 |&nbsp; &nbsp; **Устранение неполадок**|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений||
+|&nbsp;&nbsp; **Управление устройствами**|DeviceManagementManagedDevices.ReadWrite.All|
+|&nbsp; &nbsp; **Устранение неполадок**|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -57,10 +59,10 @@ POST /users/{usersId}/mobileAppTroubleshootingEvents
 |id|Строка|GUID объекта|
 |**Устранение неполадок**|
 |аддитионалинформатион|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Набор пар строкового ключа и строкового значения, предоставляющий дополнительные сведения о событии устранения неполадок.|
-|applicationId|String|Идентификатор приложения Intune.|
-|correlationId|String|Идентификатор, используемый для трассировки сбоя в службе. |
+|applicationId|String.|Идентификатор приложения Intune.|
+|correlationId|String.|Идентификатор, используемый для трассировки сбоя в службе. |
 |eventDateTime|DateTimeOffset|Время возникновения события. |
-|eventName|String|Имя события, соответствующее событию устранения неполадок. Необязательно.|
+|eventName|String.|Имя события, соответствующее событию устранения неполадок. Необязательно.|
 |лист|Коллекция [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|Элемент журнала устранения неполадок мобильных приложений Intune|
 |managedDeviceIdentifier|String|Идентификатор события, созданный или полученный службой Intune.|
 |траублешутинжеррордетаилс|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Объект, содержащий подробные сведения об ошибке и ее исправлении. |
@@ -95,6 +97,7 @@ Content-Length: 120
   "id": "77943c10-3c10-7794-103c-9477103c9477"
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 53e50ac24997b3e04447014f8a4e9200f1454b23
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6708a9d9c8568e6b5681df2f02a0eb32f1afe9e5
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36343085"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188950"
 ---
 # <a name="delete-devicemanagementtemplatesettingcategory"></a>Удаление Девицеманажементтемплатесеттингкатегори
 
@@ -63,8 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManage
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

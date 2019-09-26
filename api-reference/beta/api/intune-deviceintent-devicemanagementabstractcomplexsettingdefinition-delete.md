@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2cdfdb4d9e000864333b53f018859acb90c89f13
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5a6120a3e8db90454675fc2ba32dce3773e4b83f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36344037"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37186269"
 ---
 # <a name="delete-devicemanagementabstractcomplexsettingdefinition"></a>Удаление Девицеманажементабстракткомплекссеттингдефинитион
 
@@ -66,8 +66,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/settingDefinitions/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5c04f2caaa7b9ee6c093a58e4c8123250113b3a9
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2f9bd4947a65d98c465671e338e0d21a6218211f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36329649"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196716"
 ---
 # <a name="userexperienceanalyticscategory-resource-type"></a>Тип ресурса Усерекспериенцеаналитикскатегори
 
@@ -30,9 +30,9 @@ ms.locfileid: "36329649"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор категории аналитики взаимодействия с пользователем.|
-|displayName|Строка|Имя категории аналитики взаимодействия с пользователем.|
 |овераллскоре|Int32|Общий показатель категории аналитики взаимодействия с пользователем.|
 |insights|Коллекция [усерекспериенцеаналитиксинсигхт](../resources/intune-devices-userexperienceanalyticsinsight.md)|Аналитика для категории аналитики взаимодействия с пользователем.|
+|состояние|[усерекспериенцеаналитикшеалсстате](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Текущее состояние работоспособности категории аналитики взаимодействия с пользователем. Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 ## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
@@ -51,20 +51,22 @@ ms.locfileid: "36329649"
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsCategory",
   "id": "String (identifier)",
-  "displayName": "String",
   "overallScore": 1024,
   "insights": [
     {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",
       "userExperienceAnalyticsMetricId": "String",
       "insightId": "String",
-      "value": [
+      "values": [
         {
-          "@odata.type": "microsoft.graph.insightValueDouble"
+          "@odata.type": "microsoft.graph.insightValueDouble",
+          "value": "<Unknown Primitive Type Edm.Double>"
         }
-      ]
+      ],
+      "severity": "String"
     }
-  ]
+  ],
+  "state": "String"
 }
 ```
 

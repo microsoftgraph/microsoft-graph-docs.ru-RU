@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c0d07216dd1b38373826bc7f112a35c3a0ad0f8
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c431df2b79f0b3dfa0a75fd66cb4d6ec173ce7d5
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36347453"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37194455"
 ---
 # <a name="delete-mobileapptroubleshootingevent"></a>Удаление Мобилеапптраублешутинжевент
 
@@ -29,7 +29,9 @@ ms.locfileid: "36347453"
 |&nbsp;&nbsp; **Управление устройствами**|DeviceManagementManagedDevices.ReadWrite.All|
 |&nbsp; &nbsp; **Устранение неполадок**|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений||
+|&nbsp;&nbsp; **Управление устройствами**|DeviceManagementManagedDevices.ReadWrite.All|
+|&nbsp; &nbsp; **Устранение неполадок**|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -66,6 +68,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/mobileAppTroubleshootin
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 58702aa1e6f0e501040363fb5a88df5e733025aa
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2e8dc4f500a73969a6e08908fafeae0aba2c6057
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36355684"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37187487"
 ---
 # <a name="delete-circulargeofencemanagementcondition"></a>Удаление Циркуларжеофенцеманажементкондитион
 
@@ -64,8 +64,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/managementConditions/{m
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 
