@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 82c5979c73aaef53e00f3b42b26deed67321ac68
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 127e19e86028a2a3c7853f0ba8e762d49f0a9454
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36345549"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37183578"
 ---
 # <a name="delete-manageddeviceencryptionstate"></a>Удаление Манажеддевицеенкриптионстате
 
@@ -63,8 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/managedDeviceEncryption
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

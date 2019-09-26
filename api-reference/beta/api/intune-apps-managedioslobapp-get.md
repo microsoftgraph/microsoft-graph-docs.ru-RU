@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6120f4da3a3fa39fe3d1779b54f80953f2378c67
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1db6b48d440719e8e380b7f2ca6a7623c167dd0a
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36329616"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37172956"
 ---
 # <a name="get-managedioslobapp"></a>Get managedIOSLobApp
 
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1756
+Content-Length: 1778
 
 {
   "value": {
@@ -114,7 +114,8 @@ Content-Length: 1756
       "v9_0": true,
       "v10_0": true,
       "v11_0": true,
-      "v12_0": true
+      "v12_0": true,
+      "v13_0": true
     },
     "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
     "versionNumber": "Version Number value",
@@ -123,8 +124,6 @@ Content-Length: 1756
   }
 }
 ```
-
-
 
 
 

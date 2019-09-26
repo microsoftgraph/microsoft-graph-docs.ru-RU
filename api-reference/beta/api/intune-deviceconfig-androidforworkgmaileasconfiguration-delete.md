@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8f9eef34b77ff6aaeb4e1179a0accf9f74c76fef
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: bbc74d3f9ff303b5b1b4bacfe7d8912f855c78a9
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36341467"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37169442"
 ---
 # <a name="delete-androidforworkgmaileasconfiguration"></a>Удаление Андроидфорворкгмаилеасконфигуратион
 
@@ -65,8 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

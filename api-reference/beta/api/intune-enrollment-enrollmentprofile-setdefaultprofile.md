@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6ab4b1918d584e177c4faef26405edfd03853c26
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 82ae9ae70a00b009783e19b4371961063580aef1
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36309536"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37185177"
 ---
 # <a name="setdefaultprofile-action"></a>Действие setDefaultProfile
 
@@ -63,8 +63,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{de
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

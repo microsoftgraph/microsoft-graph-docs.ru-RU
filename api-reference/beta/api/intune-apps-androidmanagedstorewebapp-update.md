@@ -1,26 +1,26 @@
 ---
-title: Create iosVppApp
-description: Создание объекта iosVppApp.
+title: Обновление Андроидманажедсторевебапп
+description: Обновление свойств объекта Андроидманажедсторевебапп.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9f976229a4a7d13210ec1dd3391f2f919add19da
+ms.openlocfilehash: c74c8562c68ec6e2aa4ead8ec2a05af59a34264f
 ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/26/2019
-ms.locfileid: "37177764"
+ms.locfileid: "37178506"
 ---
-# <a name="create-iosvppapp"></a>Create iosVppApp
+# <a name="update-androidmanagedstorewebapp"></a>Обновление Андроидманажедсторевебапп
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание объекта [iosVppApp](../resources/intune-apps-iosvppapp.md).
+Обновление свойств объекта [андроидманажедсторевебапп](../resources/intune-apps-androidmanagedstorewebapp.md) .
 
-## <a name="prerequisites"></a>Необходимые разрешения
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -35,7 +35,9 @@ ms.locfileid: "37177764"
 }
 -->
 ``` http
-POST /deviceAppManagement/mobileApps
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
+PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -45,13 +47,13 @@ POST /deviceAppManagement/mobileApps
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта iosVppApp в формате JSON.
+В тексте запроса добавьте представление объекта [андроидманажедсторевебапп](../resources/intune-apps-androidmanagedstorewebapp.md) в формате JSON.
 
-В приведенной ниже таблице показаны, которые необходимо указывать при создании объекта iosVppApp.
+В следующей таблице приведены свойства, необходимые при создании [андроидманажедсторевебапп](../resources/intune-apps-androidmanagedstorewebapp.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String.|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|id|Строка|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |description|Строка|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |publisher|String.|Издатель приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
@@ -69,35 +71,31 @@ POST /deviceAppManagement/mobileApps
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|usedLicenseCount|Int32|Количество используемых лицензий VPP.|
-|totalLicenseCount|Int32|Общее количество лицензий VPP.|
-|releaseDateTime|DateTimeOffset|Дата и время выпуска приложения, на которое распространяется программа VPP.|
-|appStoreUrl|String.|URL-адрес магазина.|
-|licensingType|[vppLicensingType](../resources/intune-apps-vpplicensingtype.md)|Поддерживаемый тип лицензии.|
-|applicableDeviceType|[iosDeviceType](../resources/intune-apps-iosdevicetype.md)|Применимый тип устройства с iOS.|
-|vppTokenOrganizationName|String|Организация, связанная с токеном Apple Volume Purchase Program.|
-|vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|Тип программы оптовых покупок, с которой связан заданный токен Apple Volume Purchase Program. Возможные значения: `business`, `education`. Возможные значения: `business`, `education`.|
-|vppTokenAppleId|String|Идентификатор Apple ID, связанный с заданным токеном Apple Volume Purchase Program.|
-|bundleId|String.|Имя удостоверения.|
-|vppTokenId|String.|Идентификатор токена VPP, связанного с этим приложением.|
-|ревокелиценсеактионресултс|Коллекция [иосвппаппревокелиценсесактионресулт](../resources/intune-apps-iosvppapprevokelicensesactionresult.md)|Результаты отзыва действий лицензии в этом приложении.|
+|packageId|String.|Идентификатор пакета. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
+|appIdentifier|String|Имя удостоверения. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
+|usedLicenseCount|Int32|Количество используемых лицензий VPP. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
+|totalLicenseCount|Int32|Общее количество лицензий VPP. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
+|appStoreUrl|String|URL-адрес приложения для рабочего хранилища. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
+|Частный|Boolean.|Указывает, доступно ли приложение только для указанных пользователей предприятия. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
+|иссистемапп|Boolean.|Указывает, является ли приложение предустановленным системным приложением. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
+|суппортсоемконфиг|Boolean.|Поддерживает ли это приложение политику Оемконфиг. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
 
 
 
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает код ответа `201 Created` и объект [iosVppApp](../resources/intune-apps-iosvppapp.md) в тексте ответа.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [андроидманажедсторевебапп](../resources/intune-apps-androidmanagedstorewebapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
+PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1999
+Content-length: 987
 
 {
-  "@odata.type": "#microsoft.graph.iosVppApp",
+  "@odata.type": "#microsoft.graph.androidManagedStoreWebApp",
   "displayName": "Display Name value",
   "description": "Description value",
   "publisher": "Publisher value",
@@ -119,54 +117,27 @@ Content-length: 1999
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "packageId": "Package Id value",
+  "appIdentifier": "App Identifier value",
   "usedLicenseCount": 0,
   "totalLicenseCount": 1,
-  "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
   "appStoreUrl": "https://example.com/appStoreUrl/",
-  "licensingType": {
-    "@odata.type": "microsoft.graph.vppLicensingType",
-    "supportUserLicensing": true,
-    "supportDeviceLicensing": true,
-    "supportsUserLicensing": true,
-    "supportsDeviceLicensing": true
-  },
-  "applicableDeviceType": {
-    "@odata.type": "microsoft.graph.iosDeviceType",
-    "iPad": true,
-    "iPhoneAndIPod": true
-  },
-  "vppTokenOrganizationName": "Vpp Token Organization Name value",
-  "vppTokenAccountType": "education",
-  "vppTokenAppleId": "Vpp Token Apple Id value",
-  "bundleId": "Bundle Id value",
-  "vppTokenId": "Vpp Token Id value",
-  "revokeLicenseActionResults": [
-    {
-      "@odata.type": "microsoft.graph.iosVppAppRevokeLicensesActionResult",
-      "userId": "User Id value",
-      "managedDeviceId": "Managed Device Id value",
-      "totalLicensesCount": 2,
-      "failedLicensesCount": 3,
-      "actionFailureReason": "appleFailure",
-      "actionName": "Action Name value",
-      "actionState": "pending",
-      "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
-      "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
-    }
-  ]
+  "isPrivate": true,
+  "isSystemApp": true,
+  "supportsOemConfig": true
 }
 ```
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2171
+Content-Length: 1159
 
 {
-  "@odata.type": "#microsoft.graph.iosVppApp",
-  "id": "a0ac9b6f-9b6f-a0ac-6f9b-aca06f9baca0",
+  "@odata.type": "#microsoft.graph.androidManagedStoreWebApp",
+  "id": "e54aecbd-ecbd-e54a-bdec-4ae5bdec4ae5",
   "displayName": "Display Name value",
   "description": "Description value",
   "publisher": "Publisher value",
@@ -190,41 +161,14 @@ Content-Length: 2171
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "packageId": "Package Id value",
+  "appIdentifier": "App Identifier value",
   "usedLicenseCount": 0,
   "totalLicenseCount": 1,
-  "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
   "appStoreUrl": "https://example.com/appStoreUrl/",
-  "licensingType": {
-    "@odata.type": "microsoft.graph.vppLicensingType",
-    "supportUserLicensing": true,
-    "supportDeviceLicensing": true,
-    "supportsUserLicensing": true,
-    "supportsDeviceLicensing": true
-  },
-  "applicableDeviceType": {
-    "@odata.type": "microsoft.graph.iosDeviceType",
-    "iPad": true,
-    "iPhoneAndIPod": true
-  },
-  "vppTokenOrganizationName": "Vpp Token Organization Name value",
-  "vppTokenAccountType": "education",
-  "vppTokenAppleId": "Vpp Token Apple Id value",
-  "bundleId": "Bundle Id value",
-  "vppTokenId": "Vpp Token Id value",
-  "revokeLicenseActionResults": [
-    {
-      "@odata.type": "microsoft.graph.iosVppAppRevokeLicensesActionResult",
-      "userId": "User Id value",
-      "managedDeviceId": "Managed Device Id value",
-      "totalLicensesCount": 2,
-      "failedLicensesCount": 3,
-      "actionFailureReason": "appleFailure",
-      "actionName": "Action Name value",
-      "actionState": "pending",
-      "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
-      "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
-    }
-  ]
+  "isPrivate": true,
+  "isSystemApp": true,
+  "supportsOemConfig": true
 }
 ```
 

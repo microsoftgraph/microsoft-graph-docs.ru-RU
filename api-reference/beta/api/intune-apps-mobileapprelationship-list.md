@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 26edacdf301a43a422f50952ba1eba5c051cfdeb
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f3f535fee5e148d492c2c1401fed5a632a9bf5e3
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36329056"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37172424"
 ---
 # <a name="list-mobileapprelationships"></a>Список Мобилеаппрелатионшипс
 
@@ -76,8 +76,6 @@ Content-Length: 248
   ]
 }
 ```
-
-
 
 
 

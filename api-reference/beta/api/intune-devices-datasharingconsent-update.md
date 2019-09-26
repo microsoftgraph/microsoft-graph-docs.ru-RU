@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 073ab096a3bacdec1e01e44e891baa2802f5bd61
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 65fd1a065beb29494bc371674b56c4c6dcfa98bb
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36310635"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180659"
 ---
 # <a name="update-datasharingconsent"></a>Обновление Даташарингконсент
 
@@ -52,12 +52,12 @@ PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Идентификатор согласия общего доступа к данным|
-|сервицедисплайнаме|String|Отображаемое имя рабочего процесса службы|
-|термсурл|String|Термсурл для согласия общего доступа к данным|
-|granted|Boolean|Состояние предоставления согласия на общий доступ к данным|
+|сервицедисплайнаме|String.|Отображаемое имя рабочего процесса службы|
+|термсурл|String.|Термсурл для согласия общего доступа к данным|
+|granted|Boolean.|Состояние предоставления согласия на общий доступ к данным|
 |грантдатетиме|DateTimeOffset|Для этой учетной записи предоставлено согласие по времени|
-|грантедбюпн|String|Имя участника-пользователя, которому назначено согласие для этой учетной записи.|
-|грантедбюсерид|String|UserId пользователя, который предоставил согласие для этой учетной записи|
+|грантедбюпн|String.|Имя участника-пользователя, которому назначено согласие для этой учетной записи.|
+|грантедбюсерид|String.|UserId пользователя, который предоставил согласие для этой учетной записи|
 
 
 
@@ -102,8 +102,6 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
-
-
 
 
 

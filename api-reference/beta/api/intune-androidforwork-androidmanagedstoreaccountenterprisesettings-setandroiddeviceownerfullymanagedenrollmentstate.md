@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e8ee1ba3fe7b00afb714067deec75f8d20a631e4
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: df335780855ac1cdb447a86575982ddbb41424ee
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36322739"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37174020"
 ---
 # <a name="setandroiddeviceownerfullymanagedenrollmentstate-action"></a>Действие setAndroidDeviceOwnerFullyManagedEnrollmentState
 
@@ -78,8 +78,6 @@ Content-length: 23
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

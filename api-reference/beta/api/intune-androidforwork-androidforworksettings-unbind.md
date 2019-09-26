@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9f7e8c790a7a9e07171656d2e99f99354994db64
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 413bbe3a44730328019b65d447e5b7c55e2be7d4
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36322774"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37178279"
 ---
 # <a name="unbind-action"></a>Действие unbind
 
@@ -63,8 +63,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/androidForWorkSettings/un
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 
