@@ -1,0 +1,82 @@
+---
+title: Тип ресурса deviceCompliancePolicy
+description: 'Это базовый класс для политик обеспечения соответствия требованиям. Такие политики предназначаются для определенной платформы. Отдельные политики обеспечения соответствия требованиям наследуются от этого класса. '
+author: rolyon
+localization_priority: Normal
+ms.prod: Intune
+doc_type: resourcePageType
+ms.openlocfilehash: 85bd8b77d4a863256e705a7823ca7567891681d4
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37201237"
+---
+# <a name="devicecompliancepolicy-resource-type"></a><span data-ttu-id="dd56e-104">Тип ресурса deviceCompliancePolicy</span><span class="sxs-lookup"><span data-stu-id="dd56e-104">deviceCompliancePolicy resource type</span></span>
+
+> <span data-ttu-id="dd56e-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="dd56e-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+
+> <span data-ttu-id="dd56e-106">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="dd56e-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+
+<span data-ttu-id="dd56e-107">Это базовый класс для политик обеспечения соответствия требованиям.</span><span class="sxs-lookup"><span data-stu-id="dd56e-107">This is the base class for Compliance policy.</span></span> <span data-ttu-id="dd56e-108">Такие политики предназначаются для определенной платформы. Отдельные политики обеспечения соответствия требованиям наследуются от этого класса.</span><span class="sxs-lookup"><span data-stu-id="dd56e-108">Compliance policies are platform specific and individual per-platform compliance policies inherit from here.</span></span> 
+
+## <a name="methods"></a><span data-ttu-id="dd56e-109">Методы</span><span class="sxs-lookup"><span data-stu-id="dd56e-109">Methods</span></span>
+|<span data-ttu-id="dd56e-110">Метод</span><span class="sxs-lookup"><span data-stu-id="dd56e-110">Method</span></span>|<span data-ttu-id="dd56e-111">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="dd56e-111">Return Type</span></span>|<span data-ttu-id="dd56e-112">Описание</span><span class="sxs-lookup"><span data-stu-id="dd56e-112">Description</span></span>|
+|:---|:---|:---|
+|[<span data-ttu-id="dd56e-113">Перечисление deviceCompliancePolicies</span><span class="sxs-lookup"><span data-stu-id="dd56e-113">List deviceCompliancePolicies</span></span>](../api/intune-shared-devicecompliancepolicy-list.md)|<span data-ttu-id="dd56e-114">Коллекция [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)</span><span class="sxs-lookup"><span data-stu-id="dd56e-114">[deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md) collection</span></span>|<span data-ttu-id="dd56e-115">Список свойств и связей объектов [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).</span><span class="sxs-lookup"><span data-stu-id="dd56e-115">List properties and relationships of the [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md) objects.</span></span>|
+|[<span data-ttu-id="dd56e-116">Получение deviceCompliancePolicy</span><span class="sxs-lookup"><span data-stu-id="dd56e-116">Get deviceCompliancePolicy</span></span>](../api/intune-shared-devicecompliancepolicy-get.md)|[<span data-ttu-id="dd56e-117">deviceCompliancePolicy</span><span class="sxs-lookup"><span data-stu-id="dd56e-117">deviceCompliancePolicy</span></span>](../resources/intune-shared-devicecompliancepolicy.md)|<span data-ttu-id="dd56e-118">Считывание свойств и связей объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).</span><span class="sxs-lookup"><span data-stu-id="dd56e-118">Read properties and relationships of the [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md) object.</span></span>|
+|<span data-ttu-id="dd56e-119">**Настройка устройства**</span><span class="sxs-lookup"><span data-stu-id="dd56e-119">**Device configuration**</span></span>|
+|[<span data-ttu-id="dd56e-120">Действие assign</span><span class="sxs-lookup"><span data-stu-id="dd56e-120">assign action</span></span>](../api/intune-shared-devicecompliancepolicy-assign.md)|<span data-ttu-id="dd56e-121">Коллекция deviceCompliancePolicyAssignment</span><span class="sxs-lookup"><span data-stu-id="dd56e-121">deviceCompliancePolicyAssignment collection</span></span>|<span data-ttu-id="dd56e-122">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="dd56e-122">Not yet documented</span></span>|
+|[<span data-ttu-id="dd56e-123">Действие scheduleActionsForRules</span><span class="sxs-lookup"><span data-stu-id="dd56e-123">scheduleActionsForRules action</span></span>](../api/intune-shared-devicecompliancepolicy-scheduleactionsforrules.md)|<span data-ttu-id="dd56e-124">None</span><span class="sxs-lookup"><span data-stu-id="dd56e-124">None</span></span>|<span data-ttu-id="dd56e-125">Н/Д</span><span class="sxs-lookup"><span data-stu-id="dd56e-125">Not yet documented</span></span>|
+|[<span data-ttu-id="dd56e-126">Действие refreshDeviceComplianceReportSummarization</span><span class="sxs-lookup"><span data-stu-id="dd56e-126">refreshDeviceComplianceReportSummarization action</span></span>](../api/intune-shared-devicecompliancepolicy-refreshdevicecompliancereportsummarization.md)|<span data-ttu-id="dd56e-127">Нет</span><span class="sxs-lookup"><span data-stu-id="dd56e-127">None</span></span>|<span data-ttu-id="dd56e-128">Н/Д</span><span class="sxs-lookup"><span data-stu-id="dd56e-128">Not yet documented</span></span>|
+|<span data-ttu-id="dd56e-129">**Набор политик**</span><span class="sxs-lookup"><span data-stu-id="dd56e-129">**Policy Set**</span></span>|
+|[<span data-ttu-id="dd56e-130">действие Хаспайлоадлинкс</span><span class="sxs-lookup"><span data-stu-id="dd56e-130">hasPayloadLinks action</span></span>](../api/intune-shared-devicecompliancepolicy-haspayloadlinks.md)|<span data-ttu-id="dd56e-131">Коллекция [хаспайлоадлинкресултитем](../resources/intune-policyset-haspayloadlinkresultitem.md)</span><span class="sxs-lookup"><span data-stu-id="dd56e-131">[hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection</span></span>|<span data-ttu-id="dd56e-132">Н/Д</span><span class="sxs-lookup"><span data-stu-id="dd56e-132">Not yet documented</span></span>|
+
+## <a name="properties"></a><span data-ttu-id="dd56e-133">Свойства</span><span class="sxs-lookup"><span data-stu-id="dd56e-133">Properties</span></span>
+|<span data-ttu-id="dd56e-134">Свойство</span><span class="sxs-lookup"><span data-stu-id="dd56e-134">Property</span></span>|<span data-ttu-id="dd56e-135">Тип</span><span class="sxs-lookup"><span data-stu-id="dd56e-135">Type</span></span>|<span data-ttu-id="dd56e-136">Описание</span><span class="sxs-lookup"><span data-stu-id="dd56e-136">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="dd56e-137">id</span><span class="sxs-lookup"><span data-stu-id="dd56e-137">id</span></span>|<span data-ttu-id="dd56e-138">String</span><span class="sxs-lookup"><span data-stu-id="dd56e-138">String</span></span>|<span data-ttu-id="dd56e-139">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="dd56e-139">Key of the entity.</span></span>|
+|<span data-ttu-id="dd56e-140">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="dd56e-140">roleScopeTagIds</span></span>|<span data-ttu-id="dd56e-141">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="dd56e-141">String collection</span></span>|<span data-ttu-id="dd56e-142">Список тегов областей для этого экземпляра сущности.</span><span class="sxs-lookup"><span data-stu-id="dd56e-142">List of Scope Tags for this Entity instance.</span></span>|
+|<span data-ttu-id="dd56e-143">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="dd56e-143">createdDateTime</span></span>|<span data-ttu-id="dd56e-144">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="dd56e-144">DateTimeOffset</span></span>|<span data-ttu-id="dd56e-145">Дата и время создания объекта.</span><span class="sxs-lookup"><span data-stu-id="dd56e-145">DateTime the object was created.</span></span>|
+|<span data-ttu-id="dd56e-146">description</span><span class="sxs-lookup"><span data-stu-id="dd56e-146">description</span></span>|<span data-ttu-id="dd56e-147">String</span><span class="sxs-lookup"><span data-stu-id="dd56e-147">String</span></span>|<span data-ttu-id="dd56e-148">Указанное администратором описание конфигурации устройства.</span><span class="sxs-lookup"><span data-stu-id="dd56e-148">Admin provided description of the Device Configuration.</span></span>|
+|<span data-ttu-id="dd56e-149">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="dd56e-149">lastModifiedDateTime</span></span>|<span data-ttu-id="dd56e-150">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="dd56e-150">DateTimeOffset</span></span>|<span data-ttu-id="dd56e-151">Дата и время последнего изменения объекта.</span><span class="sxs-lookup"><span data-stu-id="dd56e-151">DateTime the object was last modified.</span></span>|
+|<span data-ttu-id="dd56e-152">displayName</span><span class="sxs-lookup"><span data-stu-id="dd56e-152">displayName</span></span>|<span data-ttu-id="dd56e-153">Строка</span><span class="sxs-lookup"><span data-stu-id="dd56e-153">String</span></span>|<span data-ttu-id="dd56e-154">Указанное администратором имя конфигурации устройства.</span><span class="sxs-lookup"><span data-stu-id="dd56e-154">Admin provided name of the device configuration.</span></span>|
+|<span data-ttu-id="dd56e-155">version</span><span class="sxs-lookup"><span data-stu-id="dd56e-155">version</span></span>|<span data-ttu-id="dd56e-156">Int32</span><span class="sxs-lookup"><span data-stu-id="dd56e-156">Int32</span></span>|<span data-ttu-id="dd56e-157">Версия конфигурации устройства.</span><span class="sxs-lookup"><span data-stu-id="dd56e-157">Version of the device configuration.</span></span>|
+
+## <a name="relationships"></a><span data-ttu-id="dd56e-158">Отношения</span><span class="sxs-lookup"><span data-stu-id="dd56e-158">Relationships</span></span>
+|<span data-ttu-id="dd56e-159">Отношение</span><span class="sxs-lookup"><span data-stu-id="dd56e-159">Relationship</span></span>|<span data-ttu-id="dd56e-160">Тип</span><span class="sxs-lookup"><span data-stu-id="dd56e-160">Type</span></span>|<span data-ttu-id="dd56e-161">Описание</span><span class="sxs-lookup"><span data-stu-id="dd56e-161">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="dd56e-162">**Настройка устройства**</span><span class="sxs-lookup"><span data-stu-id="dd56e-162">**Device configuration**</span></span>|
+|<span data-ttu-id="dd56e-163">scheduledActionsForRule</span><span class="sxs-lookup"><span data-stu-id="dd56e-163">scheduledActionsForRule</span></span>|<span data-ttu-id="dd56e-164">Коллекция [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md)</span><span class="sxs-lookup"><span data-stu-id="dd56e-164">[deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) collection</span></span>|<span data-ttu-id="dd56e-165">Список запланированных действий для этого правила.</span><span class="sxs-lookup"><span data-stu-id="dd56e-165">The list of scheduled action for this rule</span></span>|
+|<span data-ttu-id="dd56e-166">deviceStatuses</span><span class="sxs-lookup"><span data-stu-id="dd56e-166">deviceStatuses</span></span>|<span data-ttu-id="dd56e-167">Коллекция [deviceComplianceDeviceStatus](../resources/intune-deviceconfig-devicecompliancedevicestatus.md)</span><span class="sxs-lookup"><span data-stu-id="dd56e-167">[deviceComplianceDeviceStatus](../resources/intune-deviceconfig-devicecompliancedevicestatus.md) collection</span></span>|<span data-ttu-id="dd56e-168">Список DeviceComplianceDeviceStatus.</span><span class="sxs-lookup"><span data-stu-id="dd56e-168">List of DeviceComplianceDeviceStatus.</span></span>|
+|<span data-ttu-id="dd56e-169">userStatuses</span><span class="sxs-lookup"><span data-stu-id="dd56e-169">userStatuses</span></span>|<span data-ttu-id="dd56e-170">Коллекция [deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md)</span><span class="sxs-lookup"><span data-stu-id="dd56e-170">[deviceComplianceUserStatus](../resources/intune-deviceconfig-devicecomplianceuserstatus.md) collection</span></span>|<span data-ttu-id="dd56e-171">Список DeviceComplianceUserStatus.</span><span class="sxs-lookup"><span data-stu-id="dd56e-171">List of DeviceComplianceUserStatus.</span></span>|
+|<span data-ttu-id="dd56e-172">deviceStatusOverview</span><span class="sxs-lookup"><span data-stu-id="dd56e-172">deviceStatusOverview</span></span>|[<span data-ttu-id="dd56e-173">deviceComplianceDeviceOverview</span><span class="sxs-lookup"><span data-stu-id="dd56e-173">deviceComplianceDeviceOverview</span></span>](../resources/intune-deviceconfig-devicecompliancedeviceoverview.md)|<span data-ttu-id="dd56e-174">Обзор состояния соответствия требованиям устройств.</span><span class="sxs-lookup"><span data-stu-id="dd56e-174">Device compliance devices status overview</span></span>|
+|<span data-ttu-id="dd56e-175">userStatusOverview</span><span class="sxs-lookup"><span data-stu-id="dd56e-175">userStatusOverview</span></span>|[<span data-ttu-id="dd56e-176">deviceComplianceUserOverview</span><span class="sxs-lookup"><span data-stu-id="dd56e-176">deviceComplianceUserOverview</span></span>](../resources/intune-deviceconfig-devicecomplianceuseroverview.md)|<span data-ttu-id="dd56e-177">Обзор состояния соответствия требованиям устройств для пользователей.</span><span class="sxs-lookup"><span data-stu-id="dd56e-177">Device compliance users status overview</span></span>|
+|<span data-ttu-id="dd56e-178">deviceSettingStateSummaries</span><span class="sxs-lookup"><span data-stu-id="dd56e-178">deviceSettingStateSummaries</span></span>|<span data-ttu-id="dd56e-179">Коллекция [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)</span><span class="sxs-lookup"><span data-stu-id="dd56e-179">[settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) collection</span></span>|<span data-ttu-id="dd56e-180">Сводка по состоянию параметров обеспечения соответствия требованиям для устройств.</span><span class="sxs-lookup"><span data-stu-id="dd56e-180">Compliance Setting State Device Summary</span></span>|
+|<span data-ttu-id="dd56e-181">assignments</span><span class="sxs-lookup"><span data-stu-id="dd56e-181">assignments</span></span>|<span data-ttu-id="dd56e-182">Коллекция объектов deviceCompliancePolicyAssignment</span><span class="sxs-lookup"><span data-stu-id="dd56e-182">deviceCompliancePolicyAssignment collection</span></span>|<span data-ttu-id="dd56e-183">Коллекция назначений для этой политики обеспечения соответствия требованиям.</span><span class="sxs-lookup"><span data-stu-id="dd56e-183">The collection of assignments for this compliance policy.</span></span>|
+
+## <a name="json-representation"></a><span data-ttu-id="dd56e-184">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="dd56e-184">JSON Representation</span></span>
+<span data-ttu-id="dd56e-185">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="dd56e-185">Here is a JSON representation of the resource.</span></span>
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.deviceCompliancePolicy"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.deviceCompliancePolicy",
+  "roleScopeTagIds": [
+    "String"
+  ],
+  "id": "String (identifier)",
+  "createdDateTime": "String (timestamp)",
+  "description": "String",
+  "lastModifiedDateTime": "String (timestamp)",
+  "displayName": "String",
+  "version": 1024
+}
+```
+
+
+
