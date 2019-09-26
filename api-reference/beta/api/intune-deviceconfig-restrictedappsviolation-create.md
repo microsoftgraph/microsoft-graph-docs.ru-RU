@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f44b2ecda3829c42bed6fefe088bf7c580d3951c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 041ce9ab5c42f52d5d7900b814f8f64747d3044f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36314926"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37183459"
 ---
 # <a name="create-restrictedappsviolation"></a>Создание Рестриктедаппсвиолатион
 
@@ -54,10 +54,10 @@ POST /deviceManagement/deviceConfigurationRestrictedAppsViolations
 |id|Строка|Уникальный идентификатор объекта. Состоит из accountId, deviceId, Полициид и userId|
 |userId|String|Уникальный идентификатор пользователя, должен быть GUID|
 |userName|String|Имя пользователя|
-|манажеддевицеид|String|Уникальный идентификатор управляемого устройства, должен быть GUID|
-|deviceName|String|Имя устройства|
-|девицеконфигуратионид|String|Уникальный идентификатор профиля конфигурации устройства, должен быть GUID|
-|девицеконфигуратионнаме|String|Имя профиля конфигурации устройства|
+|манажеддевицеид|String.|Уникальный идентификатор управляемого устройства, должен быть GUID|
+|deviceName|String.|Имя устройства|
+|девицеконфигуратионид|String.|Уникальный идентификатор профиля конфигурации устройства, должен быть GUID|
+|девицеконфигуратионнаме|String.|Имя профиля конфигурации устройства|
 |platformType|[полициплатформтипе](../resources/intune-deviceconfig-policyplatformtype.md)|Тип платформы. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|Состояние ограниченных приложений. Возможные значения: `prohibitedApps`, `notApprovedApps`.|
 |restrictedApps|Коллекция [манажеддевицерепортедапп](../resources/intune-deviceconfig-manageddevicereportedapp.md)|Список нарушенных приложений с ограниченным доступом|
@@ -121,8 +121,6 @@ Content-Length: 613
   ]
 }
 ```
-
-
 
 
 

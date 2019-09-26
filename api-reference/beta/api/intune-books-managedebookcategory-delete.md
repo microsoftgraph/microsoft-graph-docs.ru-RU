@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a7ae3d4ebad8f79e6a25adb14ed09a4f5a947d05
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 96aab2e85a1805ccabc5a91b14c314822ce075f3
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335930"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37171024"
 ---
 # <a name="delete-managedebookcategory"></a>Удаление Манажедебуккатегори
 
@@ -64,8 +64,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/managedEBookCategori
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

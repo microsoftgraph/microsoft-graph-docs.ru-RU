@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b59303a81f1db0437fa6e9824c5d73d4b6afe1a7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e0f744728c871ba8a15942951e895364dcb2e5df
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36348923"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37179413"
 ---
 # <a name="create-applogcollectionrequest"></a>Создание appLogCollectionRequest
 
@@ -53,7 +53,7 @@ POST /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 |:---|:---|:---|
 |id|String|Уникальный идентификатор. Это идентификатор userId_DeviceId_AppId.|
 |status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Запись состояния отправки. Возможные значения: `pending`, `completed`, `failed`.|
-|Ошибк|String|Сообщение об ошибке, если оно возникло во время процесса отправки|
+|Ошибк|String.|Сообщение об ошибке, если оно возникло во время процесса отправки|
 |кустомлогфолдерс|Коллекция строк|Список папок журналов. |
 |completedDateTime|DateTimeOffset|Время, когда запрос на отправку журнала достигает состояния терминала|
 
@@ -100,8 +100,6 @@ Content-Length: 306
   "completedDateTime": "2016-12-31T23:58:52.3534526-08:00"
 }
 ```
-
-
 
 
 

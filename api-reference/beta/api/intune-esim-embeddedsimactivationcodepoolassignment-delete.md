@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 913269c59e0efca48296c301f62f9cfb81795798
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e0e0843c4e84b19cfee99f2fe0dc21efb178c842
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36355852"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37184550"
 ---
 # <a name="delete-embeddedsimactivationcodepoolassignment"></a>Удаление Ембеддедсимактиватионкодепулассигнмент
 
@@ -63,8 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/embeddedSIMActivationCo
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

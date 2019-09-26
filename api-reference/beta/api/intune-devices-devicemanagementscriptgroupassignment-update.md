@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b56741024048b3f9442288970275563f1bd9142b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 25edfdba027d045fe36f1971eccbade0f0a8cf20
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36348881"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180477"
 ---
 # <a name="update-devicemanagementscriptgroupassignment"></a>Обновление Девицеманажементскриптграупассигнмент
 
@@ -51,8 +51,8 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/group
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта назначения группы сценариев управления устройствами.|
-|таржетграупид|String|Идентификатор группы Azure Active Directory, на которую ориентирован сценарий.|
+|id|String|Ключ объекта назначения группы сценариев управления устройствами. Это свойство доступно только для чтения.|
+|таржетграупид|String.|Идентификатор группы Azure Active Directory, на которую ориентирован сценарий.|
 
 
 
@@ -87,8 +87,6 @@ Content-Length: 173
   "targetGroupId": "Target Group Id value"
 }
 ```
-
-
 
 
 

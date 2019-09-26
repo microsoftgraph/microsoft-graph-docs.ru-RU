@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ff15dcb67b4f95a1cdbc78ad1d32caced2d3dc91
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 24e82973ec8a107398f4332b0d982557a6f9162b
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36356468"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37185009"
 ---
 # <a name="list-importedappledeviceidentityresults"></a>Список Импортедаппледевицеидентитиресултс
 
@@ -85,8 +85,6 @@ Content-Length: 715
   ]
 }
 ```
-
-
 
 
 

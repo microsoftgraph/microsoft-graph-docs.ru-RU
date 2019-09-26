@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: eae60af59be7443b68800bdc033634f4968116cc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f3c828d177e889a751a922660011335a2637adbd
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36329497"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37172858"
 ---
 # <a name="list-managedmobilelobapps"></a>Перечисление объектов managedMobileLobApp
 
@@ -102,8 +102,6 @@ Content-Length: 1227
   ]
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5764de8a6a04e7c16d9b65bf864206931019675b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 69c2af5fbf4a422b26b79be9d629008f2159dff5
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36312931"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37170303"
 ---
 # <a name="update-advancedthreatprotectiononboardingdevicesettingstate"></a>Обновление Адванцедсреатпротектиононбоардингдевицесеттингстате
 
@@ -53,15 +53,15 @@ PATCH /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedT
 |:---|:---|:---|
 |id|Строка|Ключ объекта|
 |platformType|[deviceType](../resources/intune-shared-devicetype.md)|Тип платформы устройства. Возможные значения: `desktop`, `windowsRT`, `winMO6`, `nokia` `windowsPhone` `mac` `winCE` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `android` `iSocConsumer`,,,,,,,,,,,,,,,,,,,,, `winEmbedded` `iPhone` `iPad` `iPod` , `blackberry`, `palm`, `unknown`.|
-|setting|String|Имя класса параметров и свойства.|
-|settingName|String|Имя параметра в отчете|
-|deviceId|String|ИД устройства в отчете|
-|deviceName|String|Имя устройства в отчете|
+|setting|String.|Имя класса параметров и свойства.|
+|settingName|String.|Имя параметра в отчете|
+|deviceId|String.|ИД устройства в отчете|
+|deviceName|String.|Имя устройства в отчете|
 |userId|String|ИД пользователя в отчете|
 |userEmail|String|Электронный адрес пользователя в отчете|
-|userName|String|Имя пользователя в отчете|
+|userName|String.|Имя пользователя в отчете|
 |userPrincipalName|String|Имя участника-пользователя в отчете|
-|deviceModel|String|Модель устройства в отчете|
+|deviceModel|String.|Модель устройства в отчете|
 |state|[комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние соответствия для параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время, когда истекает период отсрочки применения политик на устройстве.|
 
@@ -120,8 +120,6 @@ Content-Length: 622
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
-
-
 
 
 

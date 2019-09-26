@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4d0a627591f8b130d07dba513e10877622deb442
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c39dd0c235967f62c23258b79beca5c924942283
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36329532"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37172879"
 ---
 # <a name="list-managediosstoreapps"></a>Перечисление объектов managedIOSStoreApp
 
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1591
+Content-Length: 1615
 
 {
   "value": [
@@ -108,14 +108,13 @@ Content-Length: 1591
         "v9_0": true,
         "v10_0": true,
         "v11_0": true,
-        "v12_0": true
+        "v12_0": true,
+        "v13_0": true
       }
     }
   ]
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: feb0558adb75233466d412081b1a0a0f19d99805
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 96de40997e62df7868d7c04bf6f3b88ecc596180
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36336742"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37172760"
 ---
 # <a name="delete-mobileappassignment"></a>Delete mobileAppAssignment
 
@@ -63,8 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

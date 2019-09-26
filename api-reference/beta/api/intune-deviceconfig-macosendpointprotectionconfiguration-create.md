@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ce78f253dc3c0d22af78d9b6347c2f57546cb6a6
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: bf7969d23d355fcb132f321511f55525b4c31fb6
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36338807"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37178685"
 ---
 # <a name="create-macosendpointprotectionconfiguration"></a>Создание Макосендпоинтпротектионконфигуратион
 
@@ -52,28 +52,28 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|девицеманажементаппликабилитируледевицемоде|[девицеманажементаппликабилитируледевицемоде](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|суппортсскопетагс|Boolean.|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|девицеманажементаппликабилитируледевицемоде|[девицеманажементаппликабилитируледевицемоде](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |гатекипералловедаппсаурце|[макосгатекипераппсаурцес](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|Параметры системы и конфиденциальности, которые определяют, какие расположения скачивания приложения можно запускать с устройства macOS. Возможные значения: `notConfigured`, `macAppStore`, `macAppStoreAndIdentifiedDevelopers`, `anywhere`.|
-|гатекиперблокковерриде|Boolean|Если задано значение true, переопределение пользователя для привратника будет отключено.|
-|firewallEnabled|Boolean|Указывает, следует ли включить брандмауэр.|
-|firewallBlockAllIncoming|Boolean|Соответствует параметру "блокировать все входящие подключения".|
-|firewallEnableStealthMode|Boolean|Соответствует параметру "включить скрытый режим".|
+|гатекиперблокковерриде|Boolean.|Если задано значение true, переопределение пользователя для привратника будет отключено.|
+|firewallEnabled|Boolean.|Указывает, следует ли включить брандмауэр.|
+|firewallBlockAllIncoming|Boolean.|Соответствует параметру "блокировать все входящие подключения".|
+|firewallEnableStealthMode|Boolean.|Соответствует параметру "включить скрытый режим".|
 |фиреваллаппликатионс|Коллекция [макосфиреваллаппликатион](../resources/intune-deviceconfig-macosfirewallapplication.md)|Список приложений с параметрами брандмауэра. Параметры брандмауэра для приложений, не включенных в этот список, определяются пользователем. Эта коллекция может содержать не более 500 элементов.|
-|филеваултенаблед|Boolean|Указывает, следует ли включить Филеваулт.|
+|филеваултенаблед|Boolean.|Указывает, следует ли включить Филеваулт.|
 |филеваултселектедрековерикэйтипес|[макосфилеваултрековерикэйтипес](../resources/intune-deviceconfig-macosfilevaultrecoverykeytypes.md)|Обязательно если включен Филеваулт, определяет типы ключа восстановления, которые необходимо использовать. . Возможные значения: `notConfigured`, `institutionalRecoveryKey`, `personalRecoveryKey`.|
 |филеваултинститутионалрековерикэйцертификате|Binary|Обязательно, если выбранные типы ключей восстановления включают Институтионалрековерикэй. Файл сертификата в кодировке DER, который использовался для установки ключа восстановления в учреждений.|
-|филеваултинститутионалрековерикэйцертификатефиленаме|String|Имя файла сертификата ключа восстановления для сотрудников, который будет отображаться в пользовательском интерфейсе. (*. der).|
-|филеваултперсоналрековерикэйхелпмессаже|String|Обязательно, если выбранные типы ключей восстановления включают Персоналрековерикэй. Короткое сообщение, в котором показано, как получить свой ключ восстановления личных настроек.|
+|филеваултинститутионалрековерикэйцертификатефиленаме|String.|Имя файла сертификата ключа восстановления для сотрудников, который будет отображаться в пользовательском интерфейсе. (*. der).|
+|филеваултперсоналрековерикэйхелпмессаже|String.|Обязательно, если выбранные типы ключей восстановления включают Персоналрековерикэй. Короткое сообщение, в котором показано, как получить свой ключ восстановления личных настроек.|
 |филеваулталловдеферралунтилсигнаут|Boolean|Необязательно. Если задано значение true, пользователь может отложить включение Филеваулт, пока не выйдете из системы.|
 |филеваултнумберофтимесусерканигноре|Int32|Необязательный. При использовании параметра "отложить" это максимальное число раз, когда пользователь может игнорировать приглашения на включение Филеваулт, чтобы пользователь мог выполнить вход. Если задано значение-1, всегда будет выдаваться запрос на включение Филеваулт, пока Филеваулт не будет включен, хотя разрешить пользователю обходить включение Филеваулт. Если задать для этого параметра значение 0, эта функция будет отключена.|
 |филеваултдисаблепромптатсигнаут|Boolean|Необязательно. При использовании параметра отсрочки, если задано значение true, пользователю не предлагается включить Филеваулт при входе.|
@@ -210,8 +210,6 @@ Content-Length: 2224
   "fileVaultPersonalRecoveryKeyRotationInMonths": 12
 }
 ```
-
-
 
 
 

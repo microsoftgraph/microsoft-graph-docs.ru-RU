@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fcf8822b5b2eccd20ad84fd8d4cdb3595e42bbd7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 80e1a5b9c028230d528c7e3f91c4674bd6f2191b
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36310992"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37175584"
 ---
 # <a name="delete-androidworkprofilewificonfiguration"></a>Удаление Андроидворкпрофилевификонфигуратион
 
@@ -65,8 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

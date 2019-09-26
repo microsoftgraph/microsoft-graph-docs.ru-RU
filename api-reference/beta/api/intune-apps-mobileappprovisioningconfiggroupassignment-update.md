@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 21b9737de279ec0d6444e2cd2b6b44cb9e6123da
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f4d65eee6043c984ab62b7ec2bda2e3f7ebac8e8
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36329070"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37172452"
 ---
 # <a name="update-mobileappprovisioningconfiggroupassignment"></a>Обновление К mobileappprovisioningconfiggroupassignment.
 
@@ -51,7 +51,7 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|таржетграупид|String|Идентификатор группы AAD, в которой нацелена конфигурация подготовки приложений.|
+|таржетграупид|String.|Идентификатор группы AAD, в которой нацелена конфигурация подготовки приложений.|
 |id|String|Ключ объекта.|
 
 
@@ -87,8 +87,6 @@ Content-Length: 178
   "id": "fad873e3-73e3-fad8-e373-d8fae373d8fa"
 }
 ```
-
-
 
 
 

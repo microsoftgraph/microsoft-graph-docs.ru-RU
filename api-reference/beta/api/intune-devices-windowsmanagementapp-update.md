@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0a05e9a5accc4ece5bd7da41b511648ecb508fac
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a3a25941691c5d024a42dfcfb2aea2245932361e
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36309865"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180001"
 ---
 # <a name="update-windowsmanagementapp"></a>Обновление windowsManagementApp
 
@@ -52,7 +52,7 @@ PATCH /deviceAppManagement/windowsManagementApp
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для приложения управления Windows|
-|availableVersion|String|Доступная версия приложения управления Windows.|
+|availableVersion|String.|Доступная версия приложения управления Windows.|
 
 
 
@@ -87,8 +87,6 @@ Content-Length: 161
   "availableVersion": "Available Version value"
 }
 ```
-
-
 
 
 

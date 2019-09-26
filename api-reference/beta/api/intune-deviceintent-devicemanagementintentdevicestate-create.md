@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 648247506fe80db7eb6b8ee062ed54f1c94b00cc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7880279ce871367196020419e3ef13b4293ff82f
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36343652"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180897"
 ---
 # <a name="create-devicemanagementintentdevicestate"></a>Создание Девицеманажементинтентдевицестате
 
@@ -53,11 +53,11 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/deviceStates
 |:---|:---|:---|
 |id|Строка|Идентификатор|
 |userPrincipalName|String|Имя участника-пользователя, сообщаемое на устройстве|
-|userName|String|Имя пользователя, сообщаемое на устройстве|
+|userName|String.|Имя пользователя, сообщаемое на устройстве|
 |deviceDisplayName|String|Имя устройства, о котором сообщается|
 |lastReportedDateTime|DateTimeOffset|Дата и время последнего изменения отчета о намерениях|
 |состояние|[комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние устройства для цели. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
-|deviceId|String|Идентификатор устройства, о котором сообщается|
+|deviceId|String.|Идентификатор устройства, о котором сообщается|
 
 
 
@@ -102,8 +102,6 @@ Content-Length: 391
   "deviceId": "Device Id value"
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3b110f540189a71c3ca9e290fc2648188c82cf73
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a1cf73d33678edec21924df4c99b96dd457b8431
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36348685"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37180288"
 ---
 # <a name="shutdown-action"></a>Действие shutDown
 
@@ -66,8 +66,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDe
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

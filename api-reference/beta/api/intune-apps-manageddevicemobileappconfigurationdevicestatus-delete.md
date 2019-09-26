@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 15bb5af32069a45cbb8b0ccd7db125f77f7cd8e4
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e60e8a617c01a88e4899fccdd201a070445d7510
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36329840"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37173054"
 ---
 # <a name="delete-manageddevicemobileappconfigurationdevicestatus"></a>Удаление managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -64,8 +64,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurati
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

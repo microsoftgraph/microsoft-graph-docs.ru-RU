@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a4c81bf19afd99aad78c707add69ec9bce6f05b1
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 79968e06207d60d0c2f3e750aa4a3c5d2fa44342
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36339934"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37174846"
 ---
 # <a name="delete-deviceconfigurationconflictsummary"></a>Удаление Девицеконфигуратионконфликтсуммари
 
@@ -63,8 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationConf
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

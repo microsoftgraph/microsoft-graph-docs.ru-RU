@@ -1,24 +1,24 @@
 ---
-title: Получение macOSEnterpriseWiFiConfiguration
-description: Чтение свойств и связей объекта macOSEnterpriseWiFiConfiguration.
+title: Получение Андроиддевицеовнерсцепцертификатепрофиле
+description: Чтение свойств и связей объекта Андроиддевицеовнерсцепцертификатепрофиле.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 21643356c4bd87595985080e04270e2625f665ea
+ms.openlocfilehash: 56f269fbfaebd1b47a2f5ce8b5970c1dd23d72f7
 ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/26/2019
-ms.locfileid: "37178608"
+ms.locfileid: "37171507"
 ---
-# <a name="get-macosenterprisewificonfiguration"></a>Получение macOSEnterpriseWiFiConfiguration
+# <a name="get-androiddeviceownerscepcertificateprofile"></a>Получение Андроиддевицеовнерсцепцертификатепрофиле
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [macOSEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-macosenterprisewificonfiguration.md) .
+Чтение свойств и связей объекта [андроиддевицеовнерсцепцертификатепрофиле](../resources/intune-deviceconfig-androiddeviceownerscepcertificateprofile.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -53,7 +53,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [macOSEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-macosenterprisewificonfiguration.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [андроиддевицеовнерсцепцертификатепрофиле](../resources/intune-deviceconfig-androiddeviceownerscepcertificateprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -68,12 +68,12 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2149
+Content-Length: 2293
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.macOSEnterpriseWiFiConfiguration",
-    "id": "7a6f9a2e-9a2e-7a6f-2e9a-6f7a2e9a6f7a",
+    "@odata.type": "#microsoft.graph.androidDeviceOwnerScepCertificateProfile",
+    "id": "7d8b9c9a-9c9a-7d8b-9a9c-8b7d9a9c8b7d",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
@@ -104,24 +104,34 @@ Content-Length: 2149
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
-    "networkName": "Network Name value",
-    "ssid": "Ssid value",
-    "connectAutomatically": true,
-    "connectWhenNetworkNameIsHidden": true,
-    "wiFiSecurityType": "wpaPersonal",
-    "proxySettings": "manual",
-    "proxyManualAddress": "Proxy Manual Address value",
-    "proxyManualPort": 15,
-    "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
-    "preSharedKey": "Pre Shared Key value",
-    "eapType": "leap",
-    "eapFastConfiguration": "useProtectedAccessCredential",
-    "trustedServerCertificateNames": [
-      "Trusted Server Certificate Names value"
+    "renewalThresholdPercentage": 10,
+    "subjectNameFormat": "commonNameIncludingEmail",
+    "certificateValidityPeriodValue": 14,
+    "certificateValidityPeriodScale": "months",
+    "extendedKeyUsages": [
+      {
+        "@odata.type": "microsoft.graph.extendedKeyUsage",
+        "name": "Name value",
+        "objectIdentifier": "Object Identifier value"
+      }
     ],
-    "authenticationMethod": "usernameAndPassword",
-    "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
-    "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
+    "subjectAlternativeNameType": "emailAddress",
+    "scepServerUrls": [
+      "Scep Server Urls value"
+    ],
+    "subjectNameFormatString": "Subject Name Format String value",
+    "keyUsage": "digitalSignature",
+    "keySize": "size2048",
+    "hashAlgorithm": "sha2",
+    "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
+    "certificateStore": "machine",
+    "customSubjectAlternativeNames": [
+      {
+        "@odata.type": "microsoft.graph.customSubjectAlternativeName",
+        "sanType": "emailAddress",
+        "name": "Name value"
+      }
+    ]
   }
 }
 ```

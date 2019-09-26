@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9025645d89f4fc7a3caa81c03de4b448e19fba29
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a2bcd6c7408d4bb08f8153fc0553d4314a61ccad
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36322473"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37176977"
 ---
 # <a name="delete-windowsphone81appx"></a>Удаление windowsPhone81AppX
 
@@ -65,8 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

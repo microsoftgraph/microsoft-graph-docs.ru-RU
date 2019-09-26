@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f45477bd4189d4f7aed038ae9e6b991a9c1fdbde
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: aac88651e22111079a8abfcd95629141da1bdcd7
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36330050"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37173166"
 ---
 # <a name="delete-managedandroidstoreapp"></a>Delete managedAndroidStoreApp
 
@@ -65,8 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

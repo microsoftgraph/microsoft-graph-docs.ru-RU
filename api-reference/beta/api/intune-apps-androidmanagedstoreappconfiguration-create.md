@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ec843c7a16707cd33ebf698c9f32c9ee986cc2f2
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 87b74c5ec2ed9adea256ce03e7698e25fbff230c
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36331891"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37173838"
 ---
 # <a name="create-androidmanagedstoreappconfiguration"></a>Создание Андроидманажедстореаппконфигуратион
 
@@ -60,9 +60,9 @@ POST /deviceAppManagement/mobileAppConfigurations
 |displayName|Строка|Администратор предоставил название конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |версия|Int32|Версия конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |packageId|String|Идентификатор пакета конфигурации корпоративных приложений Android.|
-|пайлоаджсон|String|Полезные данные JSON конфигурации корпоративных приложений Android.|
+|пайлоаджсон|String.|Полезные данные JSON конфигурации корпоративных приложений Android.|
 |пермиссионактионс|Коллекция [андроидпермиссионактион](../resources/intune-apps-androidpermissionaction.md)|Список разрешений приложений для Android и соответствующие действия с разрешениями.|
-|аппсуппортсоемконфиг|Boolean|Указывает, является ли Аппконфиг политикой Оемконфиг.|
+|аппсуппортсоемконфиг|Boolean.|Указывает, является ли Аппконфиг политикой Оемконфиг.|
 
 
 
@@ -135,8 +135,6 @@ Content-Length: 764
   "appSupportsOemConfig": true
 }
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b0886415deea767ea17a776e207aa49186f2d38c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 32b48510385c1c84e5e4c33e62a3937a53198c43
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36311034"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37175647"
 ---
 # <a name="delete-androidworkprofilevpnconfiguration"></a>Удаление Андроидворкпрофилевпнконфигуратион
 
@@ -65,8 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

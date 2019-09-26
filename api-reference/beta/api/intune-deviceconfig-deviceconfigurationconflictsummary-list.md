@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ba08cf4e330feb1b0f4ebbeafda712e71e1f887
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2e16b900f51dd99c90c082257517c22f3eb1f367
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36339920"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37174832"
 ---
 # <a name="list-deviceconfigurationconflictsummaries"></a>Список Девицеконфигуратионконфликтсуммариес
 
@@ -85,8 +85,6 @@ Content-Length: 495
   ]
 }
 ```
-
-
 
 
 

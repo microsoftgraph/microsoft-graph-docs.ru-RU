@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ddcdda7d48010e6f778d9e844f285099ba03aa07
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 602e3cae76d7337b5a967e831e47b1d5e86da076
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36338849"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37178767"
 ---
 # <a name="delete-macosdevicefeaturesconfiguration"></a>Удаление объекта macOSDeviceFeaturesConfiguration
 
@@ -65,8 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

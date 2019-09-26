@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a3a6323621ae1df5f59cd9525d1f9f73a69a4e7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b0ffc1ec83a4253a6c06a059f420630e25896df2
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337078"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37173572"
 ---
 # <a name="revokedevicelicense-action"></a>Действие revokeAllLicenses
 
@@ -53,8 +53,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|манажеддевицеид|String|DeviceId, для которого назначена лицензия на приложение|
-|нотифиманажеддевицес|Boolean|Логическое значение, указывающее, следует ли отправлять уведомление об отзыве на устройство|
+|манажеддевицеид|String.|DeviceId, для которого назначена лицензия на приложение|
+|нотифиманажеддевицес|Boolean.|Логическое значение, указывающее, следует ли отправлять уведомление об отзыве на устройство|
 
 
 
@@ -82,8 +82,6 @@ Content-length: 85
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 59580a3ee39c8f75087bd4d2b28a6e9d891ade9c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 72e799f8f2206def8e7afe220393a20a038aae9a
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36328440"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37171241"
 ---
 # <a name="delete-iosvppebookassignment"></a>Удаление объекта iosVppEBookAssignment
 
@@ -63,8 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{manag
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

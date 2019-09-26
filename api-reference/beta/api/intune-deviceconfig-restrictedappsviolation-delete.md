@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 65be6a441e3d643ae68884daa93f26340705b271
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 93b4db151e20ca2fdc8a413839d5498b1a72b791
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36345574"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37183445"
 ---
 # <a name="delete-restrictedappsviolation"></a>Удаление Рестриктедаппсвиолатион
 
@@ -63,8 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationRest
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 
