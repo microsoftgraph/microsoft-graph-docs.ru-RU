@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ce77b448d381547bfc77b6a27e1e9935f252be5e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0d3d53a19408b6a87f0aca2cc4187895d67d4e38
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371550"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196730"
 ---
 # <a name="userexperienceanalyticsbaseline-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксбаселине
 
@@ -35,7 +35,8 @@ ms.locfileid: "36371550"
 |id|String|Уникальный идентификатор базового идентификатора аналитики взаимодействия с пользователем.|
 |displayName|Строка|Имя базового объекта аналитики взаимодействия с пользователем.|
 |овераллскоре|Int32|Общий показатель базового уровня для аналитики взаимодействия с пользователем.|
-|овераллрегрессионсрешолд|Int32|Общее пороговое значение базовой регрессии базового интерфейса аналитики взаимодействия с пользователем.|
+|isBuiltIn|Boolean|Указывает, является ли текущий базовый планом коммерческого медианы или настраиваемым базовым планом.|
+|createdDateTime|DateTimeOffset|Дата создания настраиваемого базового плана.|
 
 ## <a name="relationships"></a>Отношения
 |Отношение|Тип|Описание|
@@ -57,7 +58,8 @@ ms.locfileid: "36371550"
   "id": "String (identifier)",
   "displayName": "String",
   "overallScore": 1024,
-  "overallRegressionThreshold": 1024
+  "isBuiltIn": true,
+  "createdDateTime": "String (timestamp)"
 }
 ```
 

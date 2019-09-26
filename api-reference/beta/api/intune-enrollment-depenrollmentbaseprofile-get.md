@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 261717ffc78c3dbe731a15961c4d4f8c0d120ff2
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 32486f9fd46d205b6caa3e2466afae0ff876a17e
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36348328"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37185541"
 ---
 # <a name="get-depenrollmentbaseprofile"></a>Получение Депенроллментбасепрофиле
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{dep
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1136
+Content-Length: 1175
 
 {
   "value": {
@@ -96,12 +96,11 @@ Content-Length: 1136
     "diagnosticsDisabled": true,
     "displayToneSetupDisabled": true,
     "privacyPaneDisabled": true,
+    "screenTimeScreenDisabled": true,
     "deviceNameTemplate": "Device Name Template value"
   }
 }
 ```
-
-
 
 
 

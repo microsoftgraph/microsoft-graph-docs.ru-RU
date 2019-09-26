@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 33dc3feb9088947d45e441f329e080b1ce5d53c5
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 994b312e2adef2491dd4208e4179fcb1e8bb1e18
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36354263"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37193312"
 ---
 # <a name="create-managedappoperation"></a>Создание объекта managedAppOperation
 
@@ -54,7 +54,7 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/ope
 |displayName|Строка|Имя операции.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения операции для приложения.|
 |state|String|Текущее состояние операции|
-|id|String|Ключ объекта.|
+|id|String.|Ключ объекта.|
 |version|String|Версия объекта.|
 
 
@@ -95,8 +95,6 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
-
-
 
 
 

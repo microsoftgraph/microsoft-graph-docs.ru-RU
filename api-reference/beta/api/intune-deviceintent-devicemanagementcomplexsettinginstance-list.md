@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6d176b09ee14868a9ba64a43273e3c867e15a8d9
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0cee27b6def047d05980f37c9632994133b8341e
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36343785"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37186059"
 ---
 # <a name="list-devicemanagementcomplexsettinginstances"></a>Список Девицеманажементкомплекссеттингинстанцес
 
@@ -79,8 +79,6 @@ Content-Length: 256
   ]
 }
 ```
-
-
 
 
 
