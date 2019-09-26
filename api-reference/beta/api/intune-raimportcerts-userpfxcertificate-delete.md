@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a235f0e03c73afab23c48703930081426130737f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5dd5eeb798b0119b67e5ac2817e5f7a840994fc9
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36351632"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37189692"
 ---
 # <a name="delete-userpfxcertificate"></a>Удаление Усерпфксцертификате
 
@@ -25,9 +25,9 @@ ms.locfileid: "36351632"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|* * TODO: определение областей * *|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|* * TODO: определение областей поддержка apponly * *|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -63,8 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/userPfxCertificates/{us
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

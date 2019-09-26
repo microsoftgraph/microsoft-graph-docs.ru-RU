@@ -4,13 +4,12 @@ description: Перечисление API Microsoft Graph для конечны�
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-doc_type: resourcePageType
-ms.openlocfilehash: cc082578bea7e6b1d477547538e01dbaa1ef2bdb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d03cd932386b4b36af2f43beefee5cf59d21395c
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35998235"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196499"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Регистрация устройств для управления в Intune
 
@@ -24,7 +23,6 @@ ms.locfileid: "35998235"
 
 - [Параметр соединителя сертификатов](intune-onboarding-certificateconnectorsetting.md)
 - [Данные об управлении устройствами и приложениями](intune-onboarding-deviceandappmanagementdata.md)
-- [Настройка регистрации устройств](intune-onboarding-deviceenrollmentconfiguration.md)
 - [Настройка ограничения регистрации устройств](intune-onboarding-deviceenrollmentlimitconfiguration.md)
 - [Ограничение платформы для регистрации устройств](intune-onboarding-deviceenrollmentplatformrestriction.md)
 - [Настройка ограничений для платформы регистрации устройств](intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md)

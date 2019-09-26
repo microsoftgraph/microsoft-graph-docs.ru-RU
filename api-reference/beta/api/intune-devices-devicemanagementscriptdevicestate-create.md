@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1f0b9c1c2ba51907bc486b5c31460b6b7f5c1dce
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4f613c6bb7d8a9fa25a9ef6007701433a1c2f799
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36310404"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37188565"
 ---
 # <a name="create-devicemanagementscriptdevicestate"></a>Создание Девицеманажементскриптдевицестате
 
@@ -52,16 +52,16 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта состояния устройства сценария управления устройствами.|
+|id|String|Ключ объекта состояния устройства сценария управления устройствами. Это свойство доступно только для чтения.|
 |рунстате|[рунстате](../resources/intune-shared-runstate.md)|Состояние последнего запуска скрипта управления устройствами. Возможные значения: `unknown`, `success`, `fail`, `error`, `pending`.|
-|ресултмессаже|String|Сведения о выходных данных выполнения.|
+|ресултмессаже|String.|Сведения о выходных данных выполнения.|
 |ластстатеупдатедатетиме|DateTimeOffset|Последнее время выполнения скрипта управления устройствами.|
 |errorCode|Int32|Код ошибки, соответствующий ошибочному выполнению сценария управления устройствами.|
 |errorDescription|String|Описание ошибки, соответствующее ошибочному выполнению сценария управления устройствами.|
 |lastSyncDateTime|DateTimeOffset|Последнее время, когда расширение управления Intune будет синхронизироваться с Intune.|
-|преремедиатиондетектионскриптаутпут|String|Выходные данные сценария обнаружения перед исправлением.|
-|ремедиатионскриптеррор|String|Вывод ошибок сценария исправления.|
-|постремедиатиондетектионскриптаутпут|String|Выходные данные сценария обнаружения после исправления.|
+|преремедиатиондетектионскриптаутпут|String.|Выходные данные сценария обнаружения перед исправлением.|
+|ремедиатионскриптеррор|String.|Вывод ошибок сценария исправления.|
+|постремедиатиондетектионскриптаутпут|String.|Выходные данные сценария обнаружения после исправления.|
 
 
 
@@ -112,8 +112,6 @@ Content-Length: 637
   "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value"
 }
 ```
-
-
 
 
 

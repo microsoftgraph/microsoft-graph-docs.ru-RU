@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0b53d279863ad3e17691b9e4d0397ba5f7d1b408
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f96ba12380e67ee97909b2c6ef1787ba9fcc7a3a
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372085"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37196332"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>тип перечисления Девицеенроллменттипе
 
@@ -33,6 +33,9 @@ ms.locfileid: "36372085"
 |виндовсаутоенроллмент|7 |Автоматическая регистрация в Windows 10. (Добавление рабочей учетной записи)|
 |виндовсбулказуредомаинжоин|8 |Массовый присоединение к Windows 10 Azure AD.|
 |виндовскоманажемент|9 |Управление с помощью Windows 10 инициировано с помощью автопилота или групповой политики.|
+|апплеусеренроллмент|-11:00|Устройство, управляемое регистрацией пользователей Apple|
+|апплеусеренроллментвиссервицеаккаунт|12|Устройство, управляемое регистрацией пользователей Apple, с учетной записью службы|
+|апплеусеренроллментвисазуреад|13|Устройство, управляемое регистрацией пользователей Apple с помощью Azure Active Directory|
 
 
 

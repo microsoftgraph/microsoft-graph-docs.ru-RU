@@ -4,12 +4,12 @@ description: Перечисляет API Microsoft Graph для конечных 
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 0af6b2070b7438aee2f4efcdb9661cf37a265cd9
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 48ba27d74160c3c9402efb7590c6ff0a7e809ce8
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36366205"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37199372"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -45,6 +45,7 @@ ms.locfileid: "36366205"
 - [Схема конфигурации управляемого приложения магазина для Android](intune-androidforwork-androidmanagedstoreappconfigurationschema.md)
 - [Элемент схемы конфигурации управляемого приложения магазина Android](intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)
 - [Тип данных для элемента схемы конфигурации управляемого приложения магазина Android](intune-androidforwork-androidmanagedstoreappconfigurationschemaitemdatatype.md)
+- [Веб-приложение с управляемым хранилищем Android](intune-apps-androidmanagedstorewebapp.md)
 - [Минимальная версия операционной системы Android](intune-apps-androidminimumoperatingsystem.md)
 - [Действие разрешения Android](intune-apps-androidpermissionaction.md)
 - [Тип действия разрешения Android](intune-apps-androidpermissionactiontype.md)
@@ -59,18 +60,14 @@ ms.locfileid: "36366205"
 - [Состояние установки](intune-books-installstate.md)
 - [Тип устройства iOS](intune-apps-iosdevicetype.md)
 - [Бизнес-приложение iOS](intune-apps-ioslobapp.md)
-- [Настройки назначения бизнес-приложения iOS](intune-apps-ioslobappassignmentsettings.md)
-- [Конфигурация подготовки бизнес-приложений iOS](intune-apps-ioslobappprovisioningconfiguration.md)
 - [Назначение конфигурации подготовки бизнес-приложений для iOS](intune-apps-ioslobappprovisioningconfigurationassignment.md)
 - [Минимальная версия операционной системы iOS](intune-apps-iosminimumoperatingsystem.md)
 - [Настройка мобильных приложений для iOS](intune-apps-iosmobileappconfiguration.md)
 - [Приложение из магазина iOS](intune-apps-iosstoreapp.md)
-- [Настройки назначения приложения из магазина iOS](intune-apps-iosstoreappassignmentsettings.md)
 - [Приложение iOS, приобретенное по программе VPP](intune-apps-iosvppapp.md)
 - [Лицензия на устройство, назначенная приложению iOS, которое приобретено по программе VPP](intune-apps-iosvppappassigneddevicelicense.md)
 - [Лицензия, назначенная приложению iOS, которое приобретено по программе VPP](intune-apps-iosvppappassignedlicense.md)
 - [Лицензия на пользователя, назначенная приложению iOS, которое приобретено по программе VPP](intune-apps-iosvppappassigneduserlicense.md)
-- [Настройки назначения приложения iOS, приобретенного по программе VPP](intune-apps-iosvppappassignmentsettings.md)
 - [Результат действия "Отзыв лицензии для приложения iOS, приобретенного по программе VPP"](intune-apps-iosvppapprevokelicensesactionresult.md)
 - [Электронная книга VPP для iOS](intune-books-iosvppebook.md)
 - [Назначение электронной книги VPP для iOS](intune-books-iosvppebookassignment.md)
@@ -80,7 +77,6 @@ ms.locfileid: "36366205"
 - [Набор приложений Office для macOS](intune-apps-macosofficesuiteapp.md)
 - [Приложение macOS, приобретенное по программе VPP](intune-apps-macosvppapp.md)
 - [Лицензия, назначенная приложению macOS, которое приобретено по программе VPP](intune-apps-macosvppappassignedlicense.md)
-- [Настройки назначения приложения macOS, приобретенного по программе VPP](intune-apps-macosvppappassignmentsettings.md)
 - [Результат действия "Отзыв лицензии для приложения macOS, приобретенного по программе VPP"](intune-apps-macosvppapprevokelicensesactionresult.md)
 - [Управляемое бизнес-приложение Android](intune-apps-managedandroidlobapp.md)
 - [Управляемое приложение из магазина Android](intune-apps-managedandroidstoreapp.md)
@@ -100,12 +96,9 @@ ms.locfileid: "36366205"
 - [Управляемое мобильное бизнес-приложение](intune-apps-managedmobilelobapp.md)
 - [Тип ключа конфигурации приложения MDM](intune-apps-mdmappconfigkeytype.md)
 - [Приложение Microsoft Store для бизнеса](intune-apps-microsoftstoreforbusinessapp.md)
-- [Настройки назначения приложения из Microsoft Store для бизнеса](intune-apps-microsoftstoreforbusinessappassignmentsettings.md)
 - [Отдельное приложение из Microsoft Store для бизнеса](intune-apps-microsoftstoreforbusinesscontainedapp.md)
 - [Тип лицензии Microsoft Store для бизнеса](intune-apps-microsoftstoreforbusinesslicensetype.md)
-- [Мобильное приложение](intune-apps-mobileapp.md)
 - [Назначение мобильного приложения](intune-apps-mobileappassignment.md)
-- [Настройки назначения мобильного приложения](intune-apps-mobileappassignmentsettings.md)
 - [Категория мобильных приложений](intune-apps-mobileappcategory.md)
 - [Содержимое мобильного приложения](intune-apps-mobileappcontent.md)
 - [Файл содержимого мобильного приложения](intune-apps-mobileappcontentfile.md)
@@ -138,7 +131,6 @@ ms.locfileid: "36366205"
 - [Тип лицензирования VPP](intune-apps-vpplicensingtype.md)
 - [Веб-приложение](intune-apps-webapp.md)
 - [Бизнес-приложение Win32](intune-apps-win32lobapp.md)
-- [Настройки назначения бизнес-приложения Win32](intune-apps-win32lobappassignmentsettings.md)
 - [Определение бизнес-приложения Win32](intune-apps-win32lobappdetection.md)
 - [Оператор определения бизнес-приложения Win32](intune-apps-win32lobappdetectionoperator.md)
 - [Определение файловой системы бизнес-приложения Win32](intune-apps-win32lobappfilesystemdetection.md)
@@ -147,7 +139,6 @@ ms.locfileid: "36366205"
 - [Интерфейс установки бизнес-приложения Win32](intune-apps-win32lobappinstallexperience.md)
 - [Информация msi бизнес-приложения Win32](intune-apps-win32lobappmsiinformation.md)
 - [Тип пакета msi бизнес-приложения Win32](intune-apps-win32lobappmsipackagetype.md)
-- [Уведомление бизнес-приложения Win32](intune-apps-win32lobappnotification.md)
 - [Определение скрипта power shell бизнес-приложения Win32](intune-apps-win32lobapppowershellscriptdetection.md)
 - [Тип обнаружения скрипта PowerShell для бизнес-приложения Win32](intune-apps-win32lobapppowershellscriptdetectiontype.md)
 - [Требование к скрипту PowerShell для бизнес-приложения Win32](intune-apps-win32lobapppowershellscriptrequirement.md)
@@ -159,7 +150,6 @@ ms.locfileid: "36366205"
 - [Код возврата бизнес-приложения Win32](intune-apps-win32lobappreturncode.md)
 - [Тип кода возврата бизнес-приложения Win32](intune-apps-win32lobappreturncodetype.md)
 - [Windows AppX](intune-apps-windowsappx.md)
-- [Настройки назначения приложения Windows AppX](intune-apps-windowsappxappassignmentsettings.md)
 - [Архитектура Windows](intune-apps-windowsarchitecture.md)
 - [Тип устройства Windows](intune-apps-windowsdevicetype.md)
 - [Минимальная версия операционной системы Windows](intune-apps-windowsminimumoperatingsystem.md)
@@ -173,6 +163,6 @@ ms.locfileid: "36366205"
 - [Windows Phone XAP](intune-apps-windowsphonexap.md)
 - [Приложение из магазина Windows](intune-apps-windowsstoreapp.md)
 - [Windows Universal AppX](intune-apps-windowsuniversalappx.md)
-- [Настройки назначения универсального приложения Windows AppX](intune-apps-windowsuniversalappxappassignmentsettings.md)
 - [Отдельное универсальное приложение Windows AppX](intune-apps-windowsuniversalappxcontainedapp.md)
+
 
