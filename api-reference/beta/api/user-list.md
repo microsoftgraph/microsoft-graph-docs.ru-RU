@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 13550b7a76c7cd9cab1ba43ce5672fcfcf5afe14
-ms.sourcegitcommit: 8ef30790a4d7aa94879df93773eae80b37abbfa4
+ms.openlocfilehash: 7f7a1c2462df5ad336622abc2066f820c4fa1958
+ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 09/26/2019
-ms.locfileid: "37203963"
+ms.locfileid: "37275756"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/users
 
 Ниже приведен пример отклика. 
 
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",

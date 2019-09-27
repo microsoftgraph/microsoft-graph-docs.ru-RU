@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1afcd48dcc1f85de696264e1c433d79052391ac1
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: c3bb42bd8acaecde27bb2df2e9d80eb4e2a70f3e
+ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36722050"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37275761"
 ---
 # <a name="get-a-user"></a>Получение пользователя
 
@@ -52,7 +52,10 @@ GET /users/{id | userPrincipalName}
 В случае успешной обработки запроса этот метод возвращает `202 Accepted`, но серверу требуется дополнительное время для выполнения соответствующих фоновых операций.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+
+### <a name="example-1-get-the-properties-of-the-signed-in-user"></a>Пример 1. Получение свойств вошедшего пользователя
+
+#### <a name="request"></a>Запрос
 
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
@@ -91,9 +94,6 @@ Content-type: application/json
 Content-length: 491
 
 {
-  "businessPhones": [
-       "businessPhones-value"
-   ],
    "displayName": "displayName-value",
    "givenName": "givenName-value",
    "jobTitle": "jobTitle-value",
@@ -104,6 +104,47 @@ Content-length: 491
    "surname": "surname-value",
    "userPrincipalName": "userPrincipalName-value",
    "id": "id-value"
+}
+```
+
+### <a name="example-2-get-the-properties-of-the-specified-user"></a>Пример 2. Получение свойств указанного пользователя
+
+#### <a name="request"></a>Запрос
+
+Ниже показан пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_other_user"
+}-->
+```http
+GET https://graph.microsoft.com/beta/users/{id}
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже показан пример отклика.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 491
+
+{
+      "displayName": "displayName-value",
+      "givenName": "givenName-value",
+      "jobTitle": "jobTitle-value",
+      "mail": "mail-value",
+      "mobilePhone": "mobilePhone-value",
+      "officeLocation": "officeLocation-value",
+      "preferredLanguage": "preferredLanguage-value",
+      "surname": "surname-value",
+      "userPrincipalName": "userPrincipalName-value",
+      "id": "id-value"
 }
 ```
 

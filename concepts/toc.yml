@@ -387,7 +387,7 @@ items:
             href: sdks/create-client.md
           - name: Выбор поставщика проверки подлинности
             href: sdks/choose-authentication-providers.md
-      - name: Использование набора средств (предварительная версия)
+      - name: Использование набора средств
         items:
           - name: Общие сведения о наборе средств
             href: toolkit/overview.md
@@ -405,6 +405,8 @@ items:
                 href: toolkit/components/tasks.md
               - name: Выбор людей
                 href: toolkit/components/people-picker.md
+              - name: Карточка контакта
+                href: toolkit/components/person-card.md
           - name: Поставщики
             items:
               - name: Использование поставщиков

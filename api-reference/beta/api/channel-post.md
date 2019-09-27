@@ -5,20 +5,18 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 66b456188037dff0dc802e96f94452baebcd87af
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: d8a93e130e839fcd8bb6c332331d0b8dd390c147
+ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633379"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37275687"
 ---
 # <a name="create-channel"></a>Создание канала
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Создание [канала](../resources/channel.md) в Microsoft Team, как указано в тексте запроса.
-
-> **Примечание**. Существует известная проблема с разрешениями для приложений и этим API. Дополнительные сведения см. в [списке известных проблем](/graph/known-issues#application-permissions).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -53,11 +51,13 @@ POST /teams/{id}/channels
 
 В случае успеха этот метод возвращает код отклика `201 Created` и объект [channel](../resources/channel.md) в тексте отклика.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
-### <a name="request"></a>Запрос
+### <a name="example-1-create-a-standard-channel"></a>Пример 1: создание стандартного канала
 
-Ниже приведен пример запроса.
+#### <a name="request"></a>Запрос
+
+В приведенном ниже примере показан запрос на создание стандартного канала.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -70,7 +70,8 @@ Content-type: application/json
 
 {
   "displayName": "Architecture Discussion",
-  "description": "This channel is where we debate all future architecture plans"
+  "description": "This channel is where we debate all future architecture plans",
+  "membershipType": "standard"
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -81,17 +82,17 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-channel-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-channel-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приводится пример отклика.
 
-> **Примечание.** Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
@@ -107,6 +108,64 @@ Content-length: 201
   "id": "id-value",
   "displayName": "Architecture Discussion",
   "description": "This channel is where we debate all future architecture plans"
+}
+```
+
+### <a name="example-2-create-private-channel-on-behalf-of-user"></a>Пример 2: создание закрытого канала от имени пользователя
+
+#### <a name="request"></a>Запрос
+
+В приведенном ниже примере показан запрос на создание закрытого канала и Добавление пользователя в качестве владельца группы.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_channel_from_user"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/teams/{group_id}/channels
+Content-type: application/json
+
+{
+  "@odata.type": "#Microsoft.Teams.Core.channel",
+  "membershipType": "private",
+  "displayName": "My First Private Channel",
+  "description": "This is my first private channels",
+  "members":
+     [
+        {
+           "@odata.type":"#microsoft.graph.aadUserConversationMember",
+           "user@odata.bind":"https://graph.microsoft.com/beta/users('{user_id}')",
+           "roles":["owner"]
+        }
+     ]
+}
+```
+
+#### <a name="response"></a>Ответ
+
+Ниже приводится пример отклика.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.channel"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 201
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('{group_id}')/channels/$entity",
+    "id": "{channel_id}",
+    "displayName": "My First Private Channel",
+    "description": "This is my first private channels",
+    "isFavoriteByDefault": null,
+    "email": "",
+    "webUrl": "https://teams.microsoft.com/l/channel/{channel_id}/My%20First%20Private%20Channel?groupId={group_id}&tenantId={tenant_id}",
+    "membershipType": "private"
 }
 ```
 
