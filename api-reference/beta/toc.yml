@@ -9656,6 +9656,12 @@
                   href: api/channel-post-messages.md
                 - name: Ответ на сообщение
                   href: api/channel-post-messagereply.md
+                - name: Добавление участника в канал
+                  href: api/conversationmember-add.md
+                - name: Удаление участника из канала
+                  href: api/conversationmember-delete.md
+                - name: Обновление роли участника в канале
+                  href: api/conversationmember-update.md
             - name: Чат
               href: resources/chat.md
               items:
@@ -9671,12 +9677,6 @@
                   href: api/conversationmember-list.md
                 - name: Получение одного участника в чате
                   href: api/conversationmember-get.md
-                - name: Добавление участника в чат
-                  href: api/conversationmember-add.md
-                - name: Удаление участника из чата
-                  href: api/conversationmember-delete.md
-                - name: Обновление роли члена в чате
-                  href: api/conversationmember-update.md
             - name: Сообщение чата
               href: resources/chatmessage.md
               items:
