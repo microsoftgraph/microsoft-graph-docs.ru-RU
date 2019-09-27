@@ -3,12 +3,12 @@ title: Поставщик Microsoft Teams
 description: Используйте поставщика Teams в рамках вкладки Microsoft Teams для упрощения проверки подлинности и доступа Microsoft Graph ко всем компонентам.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 348980225f04adfac4ded6f79a72654fbeec81e7
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: 57d53d19507e3ad6d53810538eff62a0e20740bd
+ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35243073"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37275698"
 ---
 # <a name="microsoft-teams-provider"></a>Поставщик Microsoft Teams
 
@@ -20,6 +20,7 @@ ms.locfileid: "35243073"
 
 Перед использованием поставщика Teams необходимо убедиться, что на странице есть ссылка на [пакет SDK Microsoft Teams](https://docs.microsoft.com/en-us/javascript/api/overview/msteams-client?view=msteams-client-js-latest#using-the-sdk) .
 
+### <a name="via-script-tag"></a>тег сценария Via
 В следующем примере используется поставщик в HTML (через CDN).
 
 ```html
@@ -33,6 +34,14 @@ ms.locfileid: "35243073"
 ></mgt-teams-provider>
 ```
 
+| Атрибут | Описание |
+| --- | --- | --- |
+| Client — ID   | Идентификатор строкового клиента (см. Настройка приложения Teams). Обязательно. |
+| auth-контекстное-URL  | Абсолютный или относительный путь к странице, которая будет обрабатывать проверку подлинности в всплывающем окне (см. раздел Создание всплывающей страницы). Обязательно. |
+| scopes  | Строки, разделенные запятыми, для областей, которые пользователь должен согласиться на вход в систему. Необязательно. |
+| зависит от | Строка выбора элемента другого компонента поставщика с более высоким приоритетом. Необязательно. |
+
+### <a name="via-npm"></a>с помощью NPM 
 В следующем примере используется поставщик в JS-модулях (через NPM).
 
 Обязательно установите набор средств и пакет SDK Microsoft Teams.
@@ -58,6 +67,16 @@ export interface TeamsConfig {
   scopes?: string[];
   msalOptions?: Configuration;
 }
+```
+
+Кроме того, может потребоваться задать ссылку на библиотеку Microsoft Teams. Вот пример:
+
+```ts
+import * as MicrosoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
+import {Providers, TeamsProvider} from '@microsoft/mgt'; 
+
+TeamsProvider.microsoftTeamsLib = MicrosoftTeams;
+Providers.globalProvider = new TeamsProvider(config);
 ```
 
 Полный пример приведен в [статье пример вкладки Microsoft Teams](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/teams-tab).
@@ -91,6 +110,16 @@ export interface TeamsConfig {
 <script>        
   mgt.TeamsProvider.handleAuth();
 </script>
+```
+
+или через модуль, указанный в всплывающем окне проверки подлинности:
+
+```ts
+import * as MicrosoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
+import {Providers, TeamsProvider} from '@microsoft/mgt'; 
+
+TeamsProvider.microsoftTeamsLib = MicrosoftTeams;
+TeamsProvider.handleAuth();
 ```
 
 ### <a name="configure-redirect-uris"></a>Настройка URI перенаправления

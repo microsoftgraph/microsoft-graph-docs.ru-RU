@@ -3,12 +3,12 @@ title: Поставщики набора средств Microsoft Graph
 description: Поставщики набора средств Microsoft Graph обеспечивают проверку подлинности и доступ к Microsoft Graph для всех компонентов.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 3e5d587e8c2690d2b71a2e70e41266519566f91e
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: 52b0510fdc79253cb2a448b7a454b1dcfaf01bb9
+ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778714"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37275726"
 ---
 # <a name="microsoft-graph-toolkit-providers"></a>Поставщики набора средств Microsoft Graph
 
@@ -26,9 +26,9 @@ Providers.globalProvider = new MsalProvider({
 
 В наборе средств реализованы следующие поставщики:
 
-- [Мсалпровидер](./providers/msal.md)
-- [Шарепоинтпровидер](./providers/sharepoint.md)
-- [Теамспровидер](./providers/teams.md)
+- [мсалпровидер](./providers/msal.md)
+- [шарепоинтпровидер](./providers/sharepoint.md)
+- [теамспровидер](./providers/teams.md)
 - Поставщик надстроек Office (ожидается в ближайшее время)
 
 ## <a name="get-started"></a>Начало работы
@@ -52,7 +52,33 @@ Providers.globalProvider = new MsalProvider({
 - Создание нового `SimpleProvider` путем передачи функции для получения маркера доступа
 - Расширение `IProvider` абстрактного класса
 
-Дополнительные сведения о каждом из них содержатся [](./providers/custom.md) в документации по настраиваемым поставщикам.
+Дополнительные сведения о каждом из них содержатся в документации по [настраиваемым поставщикам](./providers/custom.md) .
+
+## <a name="using-multiple-providers"></a>Использование нескольких поставщиков
+
+В некоторых сценариях приложение будет запускаться в другой среде и потребует другого поставщика. Например, приложение может работать в качестве веб-приложения и вкладки Microsoft Teams, и вам может потребоваться использовать Мсалпровидер и Теамспровидер. В этом сценарии все компоненты поставщика имеют `depends-on` атрибут для создания резервной цепочки, как показано в следующем примере.
+
+```html
+<mgt-teams-provider
+  client-id="[CLIENT-ID]"
+  auth-popup-url="auth.html" ></mgt-teams-provider>
+
+<mgt-msal-provider
+  client-id="[CLIENT-ID]"
+  depends-on="mgt-teams-provider" ></mgt-msal-provider>
+```
+
+В этом сценарии Мсалпровидер будет использоваться только в том случае, если Теамспровидер недоступен в текущей среде.
+
+Чтобы сделать то же самое в коде, можно использовать `isAvailable` свойство поставщика, как показано ниже.
+
+```ts
+if (TeamsProvider.isAvailable) {
+    Providers.globalProvider = new TeamsProvider(teamsConfig);
+} else {
+    Providers.globalProvider = new MsalProvider(msalConfig)
+}
+```
 
 ## <a name="making-your-own-calls-to-microsoft-graph"></a>Выполнение собственных вызовов в Microsoft Graph
 
