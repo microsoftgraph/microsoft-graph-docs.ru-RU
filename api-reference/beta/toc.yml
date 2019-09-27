@@ -304,8 +304,9 @@
                 - name: Назначение руководителя
                   href: api/user-post-manager.md
             - name: Параметры Outlook
-              href: resources/outlookuser.md
               items:
+                - name: Пользователь Outlook
+                  href: resources/outlookuser.md
                 - name: Получение настроек языков
                   href: api/outlookuser-supportedlanguages.md
                 - name: Получение настроек часовых поясов
@@ -318,6 +319,8 @@
                   href: api/outlookuser-list-mastercategories.md
                 - name: Создание категории
                   href: api/outlookuser-post-mastercategories.md
+                - name: Преобразование идентификаторов
+                  href: api/user-translateexchangeids.md
             - name: Задачи Outlook
               href: resources/outlooktask.md
               items:
@@ -7072,7 +7075,7 @@
                   items:
                     - name: Получение
                       href: api/intune-shared-deviceappmanagement-get.md
-                    - name: Обновление
+                    - name: Update
                       href: api/intune-shared-deviceappmanagement-update.md
                     - name: Действие syncMicrosoftStoreForBusinessApps
                       href: api/intune-shared-deviceappmanagement-syncmicrosoftstoreforbusinessapps.md
@@ -7284,7 +7287,7 @@
                 - name: 'Устранение неполадок с мобильным приложением: событие'
                   href: resources/intune-shared-mobileapptroubleshootingevent.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-shared-mobileapptroubleshootingevent-list.md
                     - name: Получение
                       href: api/intune-shared-mobileapptroubleshootingevent-get.md
@@ -8368,7 +8371,7 @@
                       href: api/onpremisesagentgroup-get.md
                     - name: Создание
                       href: api/onpremisesagentgroup-post.md
-                    - name: Обновление
+                    - name: Update
                       href: api/onpremisesagentgroup-update.md
                     - name: Удаление
                       href: api/onpremisesagentgroup-delete.md

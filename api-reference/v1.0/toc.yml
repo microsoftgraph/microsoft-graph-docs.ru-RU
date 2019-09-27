@@ -289,8 +289,9 @@
                 - name: Назначение руководителя
                   href: api/user-post-manager.md
             - name: Параметры Outlook
-              href: resources/outlookuser.md
               items:
+                - name: Пользователь Outlook
+                  href: resources/outlookuser.md
                 - name: Получение настроек языков
                   href: api/outlookuser-supportedlanguages.md
                 - name: Получение настроек часовых поясов
@@ -303,6 +304,8 @@
                   href: api/outlookuser-list-mastercategories.md
                 - name: Создание категории
                   href: api/outlookuser-post-mastercategories.md
+                - name: Преобразование идентификаторов
+                  href: api/user-translateexchangeids.md
             - name: Фотография
               href: resources/profilephoto.md
               items:
@@ -324,7 +327,7 @@
                   href: api/user-update-settings.md
         - name: Группы
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/groups-overview.md
             - name: Группа
               href: resources/group.md
@@ -1499,7 +1502,7 @@
                 - name: Запланированное действие для правила соответствия требованиям
                   href: resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-get.md
@@ -1512,7 +1515,7 @@
                 - name: Тип ресурса deviceComplianceSettingState
                   href: resources/intune-deviceconfig-devicecompliancesettingstate.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-deviceconfig-devicecompliancesettingstate-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-devicecompliancesettingstate-get.md
@@ -2581,7 +2584,7 @@
                       href: api/intune-mam-targetedmanagedappconfiguration-get.md
                     - name: Создание
                       href: api/intune-mam-targetedmanagedappconfiguration-create.md
-                    - name: Удаление
+                    - name: Удалить
                       href: api/intune-mam-targetedmanagedappconfiguration-delete.md
                     - name: Обновление
                       href: api/intune-mam-targetedmanagedappconfiguration-update.md
