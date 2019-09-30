@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: fefe022cb3c2aafb14819f909efa58bc29fa8a95
-ms.sourcegitcommit: 4ce5060cddfa92cc282321bd9cfbf0a39de51aae
+ms.openlocfilehash: 585427b006bf0f1d0f0bc5e241650ad872b428ef
+ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "36853807"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "37187322"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -18,12 +18,104 @@ ms.locfileid: "36853807"
 
 ## <a name="september-2019"></a>Сентябрь 2019 г.
 
+### <a name="devices-and-apps-microsoft-intune"></a>Устройства и приложения (Microsoft Intune)
+
+|Тип изменения|Версия|Описание|
+|:---|:---|:---|
+|Дополнение|Бета|Добавлены новые объекты:<br/>[androidDeviceOwnerScepCertificateProfile](/graph/api/resources/intune-deviceconfig-androiddeviceownerscepcertificateprofile)<br/>[androidManagedStoreWebApp](/graph/api/resources/intune-apps-androidmanagedstorewebapp)<br/>[appleEnrollmentProfileAssignment](/graph/api/resources/intune-enrollment-appleenrollmentprofileassignment)<br/>[appleUserInitiatedEnrollmentProfile](/graph/api/resources/intune-enrollment-appleuserinitiatedenrollmentprofile)<br/>[deviceCompliancePolicyPolicySetItem](/graph/api/resources/intune-policyset-devicecompliancepolicypolicysetitem)<br/>[deviceConfigurationPolicySetItem](/graph/api/resources/intune-policyset-deviceconfigurationpolicysetitem)<br/>[deviceManagementAutopilotEvent](/graph/api/resources/intune-troubleshooting-devicemanagementautopilotevent)<br/>[deviceManagementScriptPolicySetItem](/graph/api/resources/intune-policyset-devicemanagementscriptpolicysetitem)<br/>[enrollmentRestrictionsConfigurationPolicySetItem](/graph/api/resources/intune-policyset-enrollmentrestrictionsconfigurationpolicysetitem)<br/>[iosLobAppProvisioningConfigurationPolicySetItem](/graph/api/resources/intune-policyset-ioslobappprovisioningconfigurationpolicysetitem)<br/>[macManagedAppProtection](/graph/api/resources/intune-policyset-macmanagedappprotection)<br/>[managedAppProtectionPolicySetItem](/graph/api/resources/intune-policyset-managedappprotectionpolicysetitem)<br/>[managedDeviceMobileAppConfigurationPolicySetItem](/graph/api/resources/intune-policyset-manageddevicemobileappconfigurationpolicysetitem)<br/>[mdmWindowsInformationProtectionPolicyPolicySetItem](/graph/api/resources/intune-policyset-mdmwindowsinformationprotectionpolicypolicysetitem)<br/>[mobileAppPolicySetItem](/graph/api/resources/intune-policyset-mobileapppolicysetitem)<br/>[policySet](/graph/api/resources/intune-policyset-policyset)<br/>[policySetAssignment](/graph/api/resources/intune-policyset-policysetassignment)<br/>[policySetItem](/graph/api/resources/intune-policyset-policysetitem)<br/>[targetedManagedAppConfigurationPolicySetItem](/graph/api/resources/intune-policyset-targetedmanagedappconfigurationpolicysetitem)<br/>[windows10EnrollmentCompletionPageConfigurationPolicySetItem](/graph/api/resources/intune-policyset-windows10enrollmentcompletionpageconfigurationpolicysetitem)<br/>[windowsAutopilotDeploymentProfilePolicySetItem](/graph/api/resources/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem)<br/>[windowsFeatureUpdateProfile](/graph/api/resources/intune-softwareupdate-windowsfeatureupdateprofile)<br/>[windowsFeatureUpdateProfileAssignment](/graph/api/resources/intune-softwareupdate-windowsfeatureupdateprofileassignment)<br/>|
+|Дополнение|Бета|Добавлены новые сложные типы:<br/>[appleOwnerTypeEnrollmentType](/graph/api/resources/intune-enrollment-appleownertypeenrollmenttype)<br/>[configurationManagerAction](/graph/api/resources/intune-devices-configurationmanageraction)<br/>[credentialSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-credentialsinglesignonextension)<br/>[hasPayloadLinkResultItem](/graph/api/resources/intune-policyset-haspayloadlinkresultitem)<br/>[iosKerberosSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-ioskerberossinglesignonextension)<br/>[kerberosSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-kerberossinglesignonextension)<br/>[keyBooleanValuePair](/graph/api/resources/intune-deviceconfig-keybooleanvaluepair)<br/>[keyIntegerValuePair](/graph/api/resources/intune-deviceconfig-keyintegervaluepair)<br/>[keyRealValuePair](/graph/api/resources/intune-deviceconfig-keyrealvaluepair)<br/>[keyStringValuePair](/graph/api/resources/intune-deviceconfig-keystringvaluepair)<br/>[keyTypedValuePair](/graph/api/resources/intune-deviceconfig-keytypedvaluepair)<br/>[macOSKerberosSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-macoskerberossinglesignonextension)<br/>[singleSignOnExtension](/graph/api/resources/intune-deviceconfig-singlesignonextension)<br/>|
+|Дополнение|бета|Добавлены новые типы перечисления:<br/>[appleUserInitiatedEnrollmentType](/graph/api/resources/intune-enrollment-appleuserinitiatedenrollmenttype)<br/>[bitLockerRecoveryPasswordRotationType](/graph/api/resources/intune-deviceconfig-bitlockerrecoverypasswordrotationtype)<br/>[configurationManagerActionType](/graph/api/resources/intune-devices-configurationmanageractiontype)<br/>[deviceAndAppManagementAssignmentSource](/graph/api/resources/intune-shared-deviceandappmanagementassignmentsource)<br/>[errorCode](/graph/api/resources/intune-policyset-errorcode)<br/>[logLevel](/graph/api/resources/intune-troubleshooting-loglevel)<br/>[policySetStatus](/graph/api/resources/intune-policyset-policysetstatus)<br/>[userExperienceAnalyticsHealthState](/graph/api/resources/intune-devices-userexperienceanalyticshealthstate)<br/>[userExperienceAnalyticsInsightSeverity](/graph/api/resources/intune-devices-userexperienceanalyticsinsightseverity)<br/>[windowsAutopilotDeploymentState](/graph/api/resources/intune-troubleshooting-windowsautopilotdeploymentstate)<br/>[windowsAutopilotEnrollmentType](/graph/api/resources/intune-troubleshooting-windowsautopilotenrollmenttype)<br/>|
+|Дополнение|Бета-версия|Добавлено действие [update](/graph/api/intune-policyset-policyset-update.md) для объекта [policySet](/graph/api/resources/intune-policyset-policyset) |
+|Дополнение|Бета|Добавлено действие [hasPayloadLinks](/graph/api/intune-shared-mobileapp-haspayloadlinks.md) для коллекции [mobileApp](/graph/api/resources/intune-apps-mobileapp) |
+|Дополнение|Бета|Добавлено действие [hasPayloadLinks](/graph/api/intune-shared-targetedmanagedappconfiguration-haspayloadlinks.md) для коллекции [targetedManagedAppConfiguration](/graph/api/resources/intune-mam-targetedmanagedappconfiguration) |
+|Дополнение|Бета|Добавлено действие [hasPayloadLinks](/graph/api/intune-shared-ioslobappprovisioningconfiguration-haspayloadlinks.md) для коллекции [iosManagedAppProtection](/graph/api/resources/intune-mam-iosmanagedappprotection) |
+|Дополнение|Бета-версия|Добавлено действие [hasPayloadLinks](/graph/api/intune-shared-androidmanagedappprotection-haspayloadlinks.md) для коллекции [androidManagedAppProtection](/graph/api/resources/intune-mam-androidmanagedappprotection) |
+|Дополнение|Бета|Добавлено действие [hasPayloadLinks](/graph/api/intune-shared-macmanagedappprotection-haspayloadlinks.md) для коллекции [macManagedAppProtection](/graph/api/resources/intune-policyset-macmanagedappprotection) |
+|Дополнение|Бета|Добавлено действие [hasPayloadLinks](/graph/api/intune-shared-mdmwindowsinformationprotectionpolicy-haspayloadlinks.md) для коллекции [mdmWindowsInformationProtectionPolicy](/graph/api/resources/intune-mam-mdmwindowsinformationprotectionpolicy) |
+|Дополнение|Бета|Добавлено действие [hasPayloadLinks](/graph/api/intune-shared-ioslobappprovisioningconfiguration-haspayloadlinks.md) для коллекции [iosLobAppProvisioningConfiguration](/graph/api/resources/intune-apps-ioslobappprovisioningconfiguration) |
+|Дополнение|Бета|Добавлено действие [getPolicySets](/graph/api/intune-policyset-policyset-getpolicysets.md) для коллекции [policySet](/graph/api/resources/intune-policyset-policyset) |
+|Дополнение|Бета|Добавлено действие [hasPayloadLinks](/graph/api/intune-shared-devicemanagementscript-haspayloadlinks.md) для коллекции [deviceManagementScript](/graph/api/resources/intune-devices-devicemanagementscript) |
+|Дополнение|Бета-версия|Добавлено действие [hasPayloadLinks](/graph/api/intune-shared-deviceconfiguration-haspayloadlinks.md) для коллекции [deviceConfiguration](/graph/api/resources/intune-deviceconfig-deviceconfiguration) |
+|Дополнение|Бета|Добавлено действие [hasPayloadLinks](/graph/api/intune-shared-devicecompliancepolicy-haspayloadlinks.md) для коллекции [deviceCompliancePolicy](/graph/api/resources/intune-deviceconfig-devicecompliancepolicy) |
+|Дополнение|Бета|Добавлено действие [hasPayloadLinks](/graph/api/intune-shared-windowsautopilotdeploymentprofile-haspayloadlinks.md) для коллекции [windowsAutopilotDeploymentProfile](/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofile) |
+|Дополнение|Бета-версия|Добавлено действие [hasPayloadLinks](/graph/api/intune-shared-deviceenrollmentconfiguration-haspayloadlinks.md) для коллекции [deviceEnrollmentConfiguration](/graph/api/resources/intune-onboarding-deviceenrollmentconfiguration) |
+|Дополнение|Бета|Добавлено действие [triggerConfigurationManagerAction](/graph/api/intune-devices-manageddevice-triggerconfigurationmanageraction.md) для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice) |
+|Дополнение|Бета|Добавлено действие [setPriority](/graph/api/intune-enrollment-appleuserinitiatedenrollmentprofile-setpriority.md) для объекта [appleUserInitiatedEnrollmentProfile](/graph/api/resources/intune-enrollment-appleuserinitiatedenrollmentprofile) |
+|Дополнение|Бета|Добавлено действие [assign](/graph/api/intune-softwareupdate-windowsfeatureupdateprofile-assign.md) для объекта [windowsFeatureUpdateProfile](/graph/api/resources/intune-softwareupdate-windowsfeatureupdateprofile) |
+|Дополнение|Бета-версия|Добавлена функция [getExpiringVppTokenCount](o:getExpiringVppTokenCount:Collection(microsoft.graph.depOnboardingSetting)) для коллекции [depOnboardingSetting](/graph/api/resources/intune-enrollment-deponboardingsetting) |
+|Дополнение|Бета-версия|Добавлены свойства **deviceThreatProtectionEnabled**, **deviceThreatProtectionRequiredSecurityLevel**, **securityRequireSafetyNetAttestationBasicIntegrity** и **securityRequireSafetyNetAttestationCertifiedDevice** для объекта [androidDeviceOwnerCompliancePolicy](/graph/api/resources/intune-deviceconfig-androiddeviceownercompliancepolicy)|
+|Дополнение|Бета|Добавлено свойство **workProfileAllowWidgets** для объекта [androidForWorkGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration)|
+|Дополнение|Бета|Добавлены свойства **isPrivate** и **isSystemApp** для объекта [androidManagedStoreApp](/graph/api/resources/intune-apps-androidmanagedstoreapp)|
+|Дополнение|Бета|Добавлено свойство **workProfileAllowWidgets** для объекта [androidWorkProfileGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration)|
+|Дополнение|Бета|Добавлено свойство **screenTimeScreenDisabled** для объекта [depEnrollmentBaseProfile](/graph/api/resources/intune-enrollment-depenrollmentbaseprofile)|
+|Дополнение|Бета|Добавлены свойства **appearanceScreenDisabled**, **expressLanguageScreenDisabled**, **preferredLanguageScreenDisabled**, **deviceToDeviceMigrationDisabled** и **welcomeScreenDisabled** для объекта [depIOSEnrollmentProfile](/graph/api/resources/intune-enrollment-depiosenrollmentprofile)|
+|Удаление|Бета|Удалено свойство **screenTimeScreenDisabled** из объекта [depIOSEnrollmentProfile](/graph/api/resources/intune-enrollment-depiosenrollmentprofile)|
+|Дополнение|Бета|Добавлены свойства **source** и **sourceId** для объекта [deviceConfigurationAssignment](/graph/api/resources/intune-deviceconfig-deviceconfigurationassignment)|
+|Удаление|Бета|Удалено свойство **runRemediationScript** из объекта [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript)|
+|Дополнение|Бета|Добавлено свойство **singleSignOnExtension** для объекта [iosDeviceFeaturesConfiguration](/graph/api/resources/intune-deviceconfig-iosdevicefeaturesconfiguration)|
+|Дополнение|Бета|Добавлены свойства **kioskModeEnableVoiceControl** и **kioskModeAllowVoiceControlModification** для объекта [iosGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-iosgeneraldeviceconfiguration)|
+|Дополнение|Бета-версия|Добавлены свойства **associatedDomains** и **singleSignOnExtension** для объекта [macOSDeviceFeaturesConfiguration](/graph/api/resources/intune-deviceconfig-macosdevicefeaturesconfiguration)|
+|Дополнение|Бета|Добавлены свойства **source** и **sourceId** для объекта [targetedManagedAppPolicyAssignment](/graph/api/resources/intune-mam-targetedmanagedapppolicyassignment)|
+|Дополнение|Бета|Добавлено свойство **roleScopeTagIds** для объекта [termsAndConditions](/graph/api/resources/intune-companyterms-termsandconditions)|
+|Дополнение|Бета-версия|Добавлены свойства **isBuiltIn** и **createdDateTime** для объекта [userExperienceAnalyticsBaseline](/graph/api/resources/intune-devices-userexperienceanalyticsbaseline)|
+|Удаление|Бета|Удалены свойства **overallScore** и **overallRegressionThreshold** из объекта [userExperienceAnalyticsBaseline](/graph/api/resources/intune-devices-userexperienceanalyticsbaseline)|
+|Удаление|Бета|Удалены свойства **displayName** и **overallScore** из объекта [userExperienceAnalyticsCategory](/graph/api/resources/intune-devices-userexperienceanalyticscategory)|
+|Удаление|Бета|Удалено свойство **displayName** из объекта [userExperienceAnalyticsMetric](/graph/api/resources/intune-devices-userexperienceanalyticsmetric)|
+|Удаление|Бета|Удалены свойства **overallScore**, **deviceBootPerformanceOverallScore** и **bestPracticesOverallScore** из объекта [userExperienceAnalyticsOverview](/graph/api/resources/intune-devices-userexperienceanalyticsoverview)|
+|Дополнение|Бета|Добавлены свойства **attackSurfaceReductionRules** и **bitLockerRecoveryPasswordRotation** для объекта [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration)|
+|Дополнение|Бета-версия|Добавлены свойства **trackInstallProgressForAutopilotOnly** и **disableUserStatusTrackingAfterFirstUser** для объекта [windows10EnrollmentCompletionPageConfiguration](/graph/api/resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration)|
+|Дополнение|Бета|Добавлено свойство навигации **policySets** для объекта [deviceAppManagement](/graph/api/resources/intune-apps-deviceappmanagement)|
+|Дополнение|Бета|Добавлены свойства навигации **appleUserInitiatedEnrollmentProfiles**, **autopilotEvents** и **windowsFeatureUpdateProfiles** для объекта [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement)|
+|Дополнение|Бета|Добавлено свойство **value** для сложного типа [insightValueDouble](/graph/api/resources/intune-devices-insightvaluedouble)|
+|Дополнение|Бета|Добавлено свойство **value** для сложного типа [insightValueInt](/graph/api/resources/intune-devices-insightvalueint)|
+|Дополнение|Бета|Добавлено свойство **v13_0** для сложного типа [iosMinimumOperatingSystem](/graph/api/resources/intune-apps-iosminimumoperatingsystem)|
+|Дополнение|Бета-версия|Добавлены свойства **v10_14** и **v10_15** для сложного типа [macOSMinimumOperatingSystem](/graph/api/resources/intune-apps-macosminimumoperatingsystem)|
+|Дополнение|Бета|Добавлены свойства **values** и **severity** для сложного типа [userExperienceAnalyticsInsight](/graph/api/resources/intune-devices-userexperienceanalyticsinsight)|
+|Удаление|Бета|Удалено свойство **value** из сложного типа [userExperienceAnalyticsInsight](/graph/api/resources/intune-devices-userexperienceanalyticsinsight)|
+|Дополнение|Бета|Добавлены элементы **appleUserEnrollment**, **appleUserEnrollmentWithServiceAccount** и **appleUserEnrollmentWithAzureAD** для типа перечисления [deviceEnrollmentType](/graph/api/resources/intune-shared-deviceenrollmenttype)|
+|Дополнение|Бета|Добавлен элемент **securityTemplate** для типа перечисления [deviceManagementTemplateType](/graph/api/resources/intune-deviceintent-devicemanagementtemplatetype)|
+|Дополнение|Бета-версия|Добавлен элемент **rebootNow** для типа перечисления [managedDeviceRemoteAction](/graph/api/resources/intune-devices-manageddeviceremoteaction)|
+|Дополнение|Бета-версия|Добавлен элемент **rotateBitLockerKeys** для типа перечисления [remoteAction](/graph/api/resources/intune-devices-remoteaction)|
+| Дополнение | Бета-версия | Добавлена поддержка разрешений приложений для операций записи: DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementRBAC.ReadWrite.All, DeviceManagementServiceConfig.ReadWrite.All |
+| Дополнение | 1.0 | Добавлено свойство **v13_0** для сложного типа [iosMinimumOperatingSystem](/graph/api/resources/intune-apps-iosminimumoperatingsystem). |
+
+### <a name="calendar-mail-groups"></a>Календарь, почта, группы
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение        | 1.0          | Добавлена возможность [получения необработанного содержимого вложенного файла или элемента](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment) для события, сообщения или записи группы. |
+
+### <a name="identity-and-access-azure-ad"></a>Удостоверение и доступ (Azure AD)
+
+| **Тип изменения** | **Версия** | **Описание**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Дополнение | Бета-версия | Добавлено свойство **synchronizationJobSettings** для ресурса [synchronizationJob](/graph/api/resources/synchronization-synchronizationjob?view=graph-rest-beta).|
+| Дополнение | Бета-версия | Добавлены новые возможные значения для свойства **reason** в ресурсе [synchronizationQuarantine](/graph/api/resources/synchronization-quarantine?view=graph-rest-beta).|
+
+### <a name="mail-outlook"></a>Почта (Outlook)
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение        | 1.0          | Добавлена возможность [получения содержимого MIME сообщения](outlook-get-mime-message.md). |
+
+### <a name="users"></a>Пользователи
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение        | 1.0          | Добавлен метод [translateExchangeIds](/graph/api/user-translateexchangeids?view=graph-rest-1.0).|
+
 ### <a name="users--outlook-settings"></a>Пользователи | Параметры Outlook
 
 | **Тип изменения** | **Версия** | **Описание**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Дополнение        | бета        | Свойства **dateFormat** и **timeFormat** к ресурсу [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-beta). Свойства представляют собой предпочитаемые пользователем форматы даты и времени.|
 
+### <a name="teamwork-microsoft-teams"></a>Работа в команде (Microsoft Teams)
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Дополнение |Бета| Добавлено свойство **primaryChannel** для ресурса [team](/graph/api/resources/team?view=graph-rest-beta).|
+|Дополнение |Бета| Добавлено свойство **allowCreatePrivateChannels** для ресурса [teamMemberSettings](/graph/api/resources/teammembersettings?view=graph-rest-beta).|
 
 ## <a name="august-2019"></a>Август 2019 г.
 
@@ -232,7 +324,7 @@ ms.locfileid: "36853807"
 | Дополнение | Бета | Добавлен ресурс [userTeamwork](/graph/api/resources/userteamwork?view=graph-rest-beta). |
 | Дополнение | Бета | Добавлены новые методы для ресурса [user](/graph/api/resources/user?view=graph-rest-beta), позволяющие использовать следующие методы с личными приложениями для пользователей: <br>[Перечисление приложений, установленных для пользователя](/graph/api/user-list-teamsappinstallation?view=graph-rest-beta) <br>[Установка приложения для пользователя](/graph/api/user-add-teamsappinstallation?view=graph-rest-beta) <br>[Удаление приложения для пользователя](/graph/api/user-delete-teamsappinstallation?view=graph-rest-beta) <br>[Обновление приложения, установленного для пользователя](/graph/api/user-upgrade-teamsappinstallation?view=graph-rest-beta)|
 
-### <a name="calls-and-online-meetings"></a>Звонки и собрания по сети 
+### <a name="calls-and-online-meetings"></a>Звонки и собрания по сети
 
 | **Тип изменения** | **Версия** | **Описание**                  |
 |:----------------|:------------|:-----------------------------------------|
@@ -750,7 +842,7 @@ ms.locfileid: "36853807"
 | Дополнение | 1.0 | Добавлены новые свойства в объект [users](/graph/api/resources/user?view=graph-rest-1.0): **employeeId**, **faxNumber**, **onPremisesDistinguishedName**, **showInAddressList** и **otherMails**.|
 | Дополнение | 1.0 | Добавлено свойство **forceChangePasswordNextSignInWithMfa** в сложный тип [passwordProfile](/graph/api/resources/passwordprofile?view=graph-rest-v1.0).|
 | Дополнение | 1.0 | Добавлено свойство **licenseAssignmentStates** в объект [User](/graph/api/resources/user?view=graph-rest-1.0) для [лицензирования на основе групп](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
-| Дополнение | 1.0 | Добавлен ресурс **licenseAssignmentState** для [лицензирования на основе групп](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).| 
+| Дополнение | 1.0 | Добавлен ресурс **licenseAssignmentState** для [лицензирования на основе групп](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
 | Дополнение | 1.0 | Добавлены свойства **assignedLicenses**, **licenseProcessingState** и **hasMembersWithLicenseErrors** и связь **membersWithLicenseErrors** в объект [Group](/graph/api/resources/group?view=graph-rest-1.0) для [лицензирования на основе групп](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
 | Дополнение | Бета | Добавлено свойство **createdDateTime** для ресурса [user](/graph/api/resources/user?view=graph-rest-beta).|
 
@@ -1213,7 +1305,7 @@ ms.locfileid: "36853807"
 |Дополнение|бета|Добавлено свойство **hideEscapeLink** для сложного типа [outOfBoxExperienceSettings](/graph/api/resources/intune-enrollment-outofboxexperiencesettings?view=graph-rest-beta)|
 |Дополнение|бета|Добавлены элементы **zscalerPrivateAccess**, **f5Access2018**, **citrixSso** и **paloAltoGlobalProtectV2** для типа перечисления [appleVpnConnectionType](/graph/api/resources/intune-deviceconfig-applevpnconnectiontype?view=graph-rest-beta)|
 |Дополнение|бета|Добавлен элемент **userAbandonment** для типа перечисления [deviceEnrollmentFailureReason](/graph/api/resources/intune-troubleshooting-deviceenrollmentfailurereason?view=graph-rest-beta)|
-|Дополнение|бета|Добавлен элемент **blocked** для типа перечисления [enrollmentState](/graph/api/resources/intune-enrollment-enrollmentstate?view=graph-rest-beta)|
+|Дополнение|Бета|Добавлен элемент **blocked** для типа перечисления [enrollmentState](/graph/api/resources/intune-enrollment-enrollmentstate?view=graph-rest-beta)|
 |Дополнение|бета|Добавлен элемент **microsoft365ManagedMdm** для типа перечисления [managementAgentType](/graph/api/resources/intune-devices-managementagenttype?view=graph-rest-beta)|
 |Дополнение|бета|Добавлен элемент **domainNameService** для типа перечисления [subjectAlternativeNameType](/graph/api/resources/intune-deviceconfig-subjectalternativenametype?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлены элементы **wpa2Personal** и **wpa2Enterprise** для типа перечисления [wiFiSecurityType](/graph/api/resources/intune-deviceconfig-wifisecuritytype?view=graph-rest-beta)|
@@ -1330,7 +1422,7 @@ ms.locfileid: "36853807"
 |Удаление|Бета-версия|Удален POST /groups/{id}/channels/{id}/chatthreads, используйте POST /teams/{id}/channels/{id}/chatthreads. |
 |Удаление|бета|Удален GET /groups/{id}/channels, используйте GET /teams/{id}/channels. |
 |Удаление|Бета-версия|Удален POST /groups/{id}/team/channels, используйте POST /teams/{id}/channels. |
-|Удаление|Бета-версия|Удален GET /groups/{id}/team, используйте GET /teams/{id}. |
+|Удаление|бета|Удален GET /groups/{id}/team, используйте GET /teams/{id}. |
 |Удаление|Бета-версия|Удален PATCH /groups/{id}/team, используйте PATCH /teams/{id}. |
 |Дополнение|Бета-версия|Добавлен API для [перечисления всех групп в организации](teams-list-all-teams.md). |
 
