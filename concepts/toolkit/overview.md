@@ -3,12 +3,12 @@ title: Набор средств Microsoft Graph
 description: Набор инструментов Microsoft Graph представляет собой набор ресуабле, независимых от платформы веб-компонентов и вспомогательных средств для доступа к Microsoft Graph и работы с ним.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 2b8a7b3b93407410f31b17253f070065b6800b98
-ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
+ms.openlocfilehash: f777a6ecd0b7b936c5dad6859ac13b2f9f211ac6
+ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37275831"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37333298"
 ---
 # <a name="microsoft-graph-toolkit"></a>Набор средств Microsoft Graph
 
@@ -20,13 +20,13 @@ ms.locfileid: "37275831"
 
 Вы можете использовать компоненты, обратившись непосредственно к загрузчику (через унпкг) или установив пакет NPM.
 
-![Начало работы](/images/get-started.gif)
+![Анимированный GIF-файл, который показывает ссылку на загрузчик для использования компонентов набора инструментов](images/get-started.gif)
 
 Сведения о том, как приступить к работе с набором инструментов Microsoft Graph, можно найти в [видеоролике](https://www.youtube.com/watch?v=oZCGb2MMxa0)"Приступая к работе".
 
 ### <a name="use-via-mgt-loader"></a>Использование с помощью упр. загрузчиком
 
-Смотрите [Пример жсфиддле](https://jsfiddle.net/metulev/9phqxLd5/)фоловинг.
+Просмотрите следующий [Пример жсфиддле](https://jsfiddle.net/metulev/9phqxLd5/).
 
 ```html
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
@@ -75,7 +75,7 @@ npm install @microsoft/mgt
 <mgt-msal-provider client-id="[CLIENT-ID]"></mgt-msal-provider>
 ```
 
-или добавьте его в код:
+Или добавьте его в код:
 
 ```html
 <script type="module">
@@ -85,7 +85,7 @@ npm install @microsoft/mgt
 </script>
 ```
 
-## <a name="providers"></a>Доступа
+## <a name="providers"></a>Поставщики
 
 Компоненты лучше всего подходят для использования с [поставщиками](./providers.md). Поставщик предоставляет доступ к проверке подлинности и интерфейсам API, которые используются компонентами для вызова Microsoft Graph.
 

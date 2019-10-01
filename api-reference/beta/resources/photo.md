@@ -1,17 +1,17 @@
 ---
-author: JeremyKelley
+title: Тип ресурса Photo
 description: Ресурс photo предоставляет свойства фотографии и камеры, например метаданные EXIF, в ресурсе driveItem.
 ms.date: 09/10/2017
-title: Фотография
 localization_priority: Normal
-doc_type: resourcePageType
+author: JeremyKelley
 ms.prod: ''
-ms.openlocfilehash: 6713e66b5ca14cfa6605b9e67d4bec152a321f33
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+doc_type: resourcePageType
+ms.openlocfilehash: ed3d60fabfd367668b5c7a8230bba0f19f7d88f5
+ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009225"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37333243"
 ---
 # <a name="photo-resource-type"></a>Тип ресурса Photo
 
@@ -19,50 +19,56 @@ ms.locfileid: "36009225"
 
 Ресурс **photo** предоставляет свойства фотографии и камеры, например метаданные EXIF, в ресурсе [driveItem](driveitem.md).
 
+> [!NOTE]
+> В настоящее время в OneDrive для бизнеса и SharePoint доступен только **takenDateTime** .
+
+## <a name="properties"></a>Свойства
+
+| Свойство          | Тип          | Описание                                                                |
+|:------------------|:--------------|:---------------------------------------------------------------------------|
+|cameraMake         |Строка         | Изготовитель камеры. Только для чтения.                                            |
+|cameraModel        |String         | Модель камеры. Только для чтения.                                                   |
+|exposureDenominator|Двойное         | Знаменатель дробного значения выдержки камеры. Только для чтения. |
+|exposureNumerator  |Двойное         | Числитель дробного значения выдержки камеры. Только для чтения.   |
+|fNumber            |Двойное         | Значение диафрагмы камеры. Только для чтения.                               |
+|focalLength        |Double         | Фокусное расстояние камеры. Только для чтения.                               |
+|iso                |Int32          | Значение ISO камеры. Только для чтения.                                  |
+|orientation        |Int16          | Значение ориентации камеры. Возможность записи в OneDrive персональный.      |
+|takenDateTime      |DateTimeOffset | Дата и время, когда фотография заняла время в формате UTC. Только для чтения.              |
+
 ## <a name="json-representation"></a>Представление JSON
+
+Ниже указано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [  ],
-  "@odata.type": "microsoft.graph.photo"
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.photo",
+  "baseType": null
 }-->
+
 ```json
 {
-  "cameraMake": "string",
-  "cameraModel": "string",
+  "cameraMake": "String",
+  "cameraModel": "String",
   "exposureDenominator": 1000.0,
   "exposureNumerator": 1.0,
   "fNumber": 1.8,
   "focalLength": 22.5,
   "iso": 100,
+  "orientation": 3,
   "takenDateTime": "String (timestamp)"
 }
 ```
 
-## <a name="properties"></a>Свойства
-
-| Свойство                | Тип           | Описание
-|:------------------------|:---------------|:----------------------------------
-| **takenDateTime**       | DateTimeOffset | Представляет дату и время съемки. Только для чтения.
-| **cameraMake**          | Строка         | Изготовитель камеры. Только для чтения.
-| **cameraModel**         | String         | Модель камеры. Только для чтения.
-| **fNumber**             | Двойное         | Значение диафрагмы камеры. Только для чтения.
-| **exposureDenominator** | Двойное         | Знаменатель дробного значения выдержки камеры. Только для чтения.
-| **exposureNumerator**   | Двойное         | Числитель дробного значения выдержки камеры. Только для чтения.
-| **focalLength**         | Double         | Фокусное расстояние камеры. Только для чтения.
-| **iso**                 | Int64          | Значение ISO камеры. Только для чтения.
-
-## <a name="remarks"></a>Заметки
-OneDrive для бизнеса и SharePoint возвращают только свойство **takenDateTime**.
-
-Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).
-<!--
-{
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
   "type": "#page.annotation",
-  "description": "The photo facet provides details about the camera and settings on the camera for photos.",
-  "keywords": "camera make,camera model, exposure, f-stop, iso",
+  "description": "The photo resource provides details about the camera and settings on the camera for photos.",
+  "keywords": "camera make,camera model, exposure, f-stop, iso, orientation",
   "section": "documentation",
-  "tocPath": "Facets/Photo",
-  "suppressions": []
-}
--->
+  "tocPath": ""
+}-->

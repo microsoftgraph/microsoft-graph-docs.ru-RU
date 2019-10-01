@@ -6,12 +6,12 @@ title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 93c73fa61c871afce4ce4c7ed00e3c1ef554ca79
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cd3b7cd4271f631526a9ba098cd1f6a09f79fe6f
+ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972973"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37333306"
 ---
 # <a name="driveitem-resource-type"></a>Тип ресурса driveItem
 
@@ -60,6 +60,7 @@ ms.locfileid: "35972973"
   "image": { "@odata.type": "microsoft.graph.image" },
   "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
   "package": { "@odata.type": "microsoft.graph.package" },
+  "pendingOperations": { "@odata.type": "microsoft.graph.pendingOperations" },
   "photo": { "@odata.type": "microsoft.graph.photo" },
   "publication": {"@odata.type": "microsoft.graph.publicationFacet"},
   "remoteItem": { "@odata.type": "microsoft.graph.remoteItem" },
@@ -123,6 +124,7 @@ ms.locfileid: "35972973"
 | name                 | String             | Имя элемента (имя и расширение файла). Чтение и запись.
 | package              | [package][]        | В случае наличия указывает, что этот элемент — пакет, а не папка или файл. Пакеты обрабатываются как файлы в одном контексте, и как папки — в другом. Только для чтения.
 | parentReference      | [itemReference][]  | Сведения о родительском элементе, если элемент выступает в роли родительского элемента. Чтение и запись.
+| пендингоператионс    | [пендингоператионс][] | Если указано, показывает, что одна или несколько операций, которые могут повлиять на состояние driveItem, ожидают завершения. Только для чтения.
 | Фотография
                 | [photo][]          | Метаданные фотографии, если в роли элемента выступает фотография. Только для чтения.
 | publication          | [publicationFacet][] | Предоставляет сведения о состоянии элемента (опубликован или получен для изменения) в расположениях, поддерживающих такие действия. Это свойство не возвращается по умолчанию. Только для чтения. |
@@ -141,7 +143,7 @@ ms.locfileid: "35972973"
 
 ## <a name="relationships"></a>Отношения
 
-| Отношение       | Тип                        | Описание
+| Связь       | Тип                        | Описание
 |:-------------------|:----------------------------|:--------------------------
 | activities         | Коллекция [itemActivity][] | Список последних действий, выполненных с элементом.
 | analytics          | Ресурс [itemAnalytics][]  | Аналитические данные о действиях просмотра, выполненных для элемента.
@@ -185,6 +187,7 @@ URL-адрес будет доступен в течение короткого 
 | [Скачивание содержимого](../api/driveitem-get-content.md)      | `GET /drive/items/{item-id}/content`
 | [Скачивание файла в определенном формате][download-format]         | `GET /drive/items/{item-id}/content?format={format}`
 | [Удаление элемента](../api/driveitem-delete.md)                | `DELETE /drive/items/{item-id}`
+| [Восстановление элемента](../api/driveitem-restore.md)              | `POST /drive/items/{item-id}/restore`
 | [Перемещение элемента](../api/driveitem-move.md)                    | `PATCH /drive/items/{item-id}`
 | [Копирование элемента](../api/driveitem-copy.md)                    | `POST /drive/items/{item-id}/copy`
 | [Поиск элементов](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
@@ -226,6 +229,7 @@ URL-адрес будет доступен в течение короткого 
 [listItem]: listitem.md
 [package]: package.md
 [permission]: permission.md
+[пендингоператионс]: pendingoperations.md
 [photo]: photo.md
 [remoteItem]: remoteitem.md
 [root]: root.md

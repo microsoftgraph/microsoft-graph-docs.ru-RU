@@ -6,12 +6,12 @@ title: Возобновляемая отправка файлов
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 182a03c3ad95f4d2223c437ef667b2c27aaa7d71
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3d8cee638105339f5e84ac229c2c9c81a2eb65a3
+ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35957194"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37333208"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Отправка больших файлов с помощью сеанса отправки
 
@@ -64,6 +64,7 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 {
   "@microsoft.graph.conflictBehavior": "rename | fail | overwrite",
   "description": "description",
+  "fileSize": 1234,
   "name": "filename.txt"
 }
 ```
@@ -90,15 +91,8 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 
 | Параметр            | Тип                          | Описание
 |:---------------------|:------------------------------|:---------------------------------
-| item                 | Дривеитемуплоадаблепропертиес | Данные о отправляемом файле
-| Деферкоммит          | Boolean                       | Если задано значение true, для конечного создания файла в месте назначения потребуется явный запрос. Только в OneDrive для бизнеса.
-
-## <a name="item-properties"></a>Свойства элемента
-
-| Свойство             | Тип               | Описание
-|:---------------------|:-------------------|:---------------------------------
-| description          | String             | Предоставляет видимое пользователю описание элемента. Чтение и запись. Только в OneDrive персональный.
-| name                 | String             | Имя элемента (имя и расширение файла). Чтение и запись.
+| item                 | [дривеитемуплоадаблепропертиес](../resources/driveItemUploadableProperties.md) | Данные о отправляемом файле
+| деферкоммит          | Boolean                       | Если задано значение true, для конечного создания файла в месте назначения потребуется явный запрос. Только в OneDrive для бизнеса.
 
 ### <a name="request"></a>Запрос
 
@@ -124,6 +118,8 @@ Content-Type: application/json
 В случае успешного выполнения запроса ответ будет содержать сведения о том, куда отправлять остальные запросы (в виде ресурса [UploadSession](../resources/uploadsession.md)).
 
 Этот ресурс предоставляет сведения о том, куда следует отправлять диапазон байтов файла и когда истекает срок действия сеанса отправки.
+
+Если `fileSize` параметр указан и превышает доступную квоту, будет возвращен `507 Insufficent Storage` ответ и сеанс отправки не будет создан.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.uploadSession",
        "optionalProperties": [ "nextExpectedRanges" ]  } -->
@@ -216,7 +212,11 @@ Content-Type: application/json
 ## <a name="completing-a-file"></a>Завершение отправки файла
 
 Если `deferCommit` он имеет значение false или не задано, то отправка автоматически завершается, когда конечный диапазон байтов файла помещается в URL-адрес отправки.
-Если `deferCommit` имеет значение true, то после того, как конечный диапазон байтов файла помещается в URL-адрес отправки, необходимо явно выполнить запрос POST на URL-адрес отгрузки с содержимым нулевой длины.
+
+Если `deferCommit` имеет значение true, вы можете явно выполнить отправку следующими двумя способами:
+- После того как конечный диапазон байтов файла помещается в URL-адрес отправки, отправьте конечный запрос POST на URL-адрес отправки с нулевым содержимым (в настоящее время поддерживается только в OneDrive для бизнеса и SharePoint).
+- После того как конечный диапазон байтов файла помещается в URL-адрес отправки, отправьте конечный запрос PUT так же, как при отправке [сообщений об ошибках](#handle-upload-errors) (в настоящее время поддерживается только в OneDrive персональный).
+
 
 После завершения отправки сервер ответит на конечный запрос с помощью параметра `HTTP 201 Created` или. `HTTP 200 OK`
 Текст ответа также включает набор свойств по умолчанию для ресурса **driveItem**, представляющего полностью отправленный файл.
@@ -356,7 +356,7 @@ Content-Type: application/json
 <!-- { "blockType": "ignored", "name": "explicit-upload-commit", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
-PUT /me/drive/root:/{path_to_parent}
+PUT /me/drive/root:/{path_to_file}
 Content-Type: application/json
 If-Match: {etag or ctag}
 

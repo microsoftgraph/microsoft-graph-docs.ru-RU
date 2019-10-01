@@ -6,12 +6,12 @@ title: Получение файла или папки
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 7c85c3400bc4356258bd1f947525e54a042a35d1
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 0f7aee77c2a3a97bef8c67789d2a88d14ad0a62f
+ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36719376"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37333215"
 ---
 # <a name="get-a-driveitem-resource"></a>Получение ресурса DriveItem
 
@@ -52,6 +52,10 @@ GET /users/{userId}/drive/root:/{item-path}
 
 С помощью [`$expand`параметра строки запроса](/graph/query-parameters) вы можете включить дочерние элементы запрос на получение метаданных элемента при наличии **дочерней** связи.
 
+Вы также можете использовать параметр `includeDeletedItems=true` запроса, чтобы вернуть удаленные элементы.
+Этот параметр запроса является допустимым только при нацеливании на [driveItem](../resources/driveitem.md) по идентификатору, и в противном случае он будет игнорироваться.
+В настоящее время поддерживается только в OneDrive персональный.
+
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 
 | Имя          | Значение  | Описание                                                                                                                                              |
@@ -83,7 +87,7 @@ GET /me/drive/root
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-metadata-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-metadata-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

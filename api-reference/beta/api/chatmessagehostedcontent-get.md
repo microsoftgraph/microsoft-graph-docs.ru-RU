@@ -2,15 +2,15 @@
 title: Получение Чатмессажехостедконтент
 description: Получение свойств и связей объекта Чатмессажехостедконтент.
 localization_priority: Normal
-author: RamjotSingh
+author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 899a2c7e2f829f296cd55f420dddbb9079d53890
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: e15f8aa932e2534b80fbee0c7d00d759191bc42d
+ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36719803"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37333222"
 ---
 # <a name="get-chatmessagehostedcontent"></a>Получение Чатмессажехостедконтент
 
@@ -24,9 +24,9 @@ ms.locfileid: "36719803"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Чат. Read, Chat. ReadWrite |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+|Делегированные (рабочая или учебная учетная запись)|Для ресурса **User** или **Chat** :<br/>Чат. Read, Chat. ReadWrite<br/><br/>Для ресурса **Channel** :<br/>Group.Read.All, Group.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
+|Для приложений| Для ресурса **User** или **Chat** :<br/>Чат. Read. ALL, Chat. ReadWrite. ALL<br/><br/>Для ресурса **Channel** :<br/>Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -35,6 +35,7 @@ ms.locfileid: "36719803"
 ```http
 GET /chats/{id}/messages/{id}/hostedContents/{id}
 GET /users/{id}/chats/{id}/messages/{id}/hostedContents/{id}
+GET /teams/{id}/channels/{id}/messages/{id}/hostedContents/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -51,13 +52,15 @@ GET /users/{id}/chats/{id}/messages/{id}/hostedContents/{id}
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [чатмессажехостедконтент](../resources/chatmessagehostedcontent.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="request"></a>Запрос
+### <a name="example-1-get-hosted-content"></a>Пример 1: получение размещенного контента
+
+#### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
@@ -78,16 +81,15 @@ GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents/{id
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-chatmessagehostedcontent-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-chatmessagehostedcontent-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
+#### <a name="response"></a>Отклик
 
-### <a name="response"></a>Отклик
-
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > [!NOTE]
 > Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -105,6 +107,32 @@ Content-type: application/json
 {
   "id": "id-value"
 }
+```
+
+### <a name="example-2-get-hosted-content-bytes-for-an-image"></a>Пример 2: получение байтов размещенного содержимого для изображения
+
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "get_chatmessagehostedcontent"
+}-->
+```http
+GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents/{id}/$value
+```
+
+#### <a name="response"></a>Отклик
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessageHostedContent"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: image/jpeg
+Content-length: 201
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

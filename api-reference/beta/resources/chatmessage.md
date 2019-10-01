@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: a29afea30f0ea1d75f5c7ce1a0713976f10cc298
-ms.sourcegitcommit: cca4f96414aededa03bb45e07e19bb20b7327563
+ms.openlocfilehash: 0d11230402d95009e414c16962a2eb9b5dce1f58
+ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "36677123"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37333372"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
@@ -32,9 +32,8 @@ ms.locfileid: "36677123"
 |[Создание chatMessage в чате](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| Отправка сообщения чата в существующей беседе 1:1 или группе чата.|
 |[Перечисление chatMessages в чате](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | Перечисление сообщений чата в 1:1 или группе чата. |
 |[Получение chatMessage в чате](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Получение одного сообщения чата в чате. |
-|[Перечисление всех размещенных изображений](../api/chatmessagehostedimage-list-hostedimages.md) | Коллекция [хостедимаже](../resources/chatmessagehostedimage.md)| Получение всех размещенных изображений в сообщении чата.|
-|[Получение размещенного изображения](../api/chatmessagehostedimage-get.md) | [хостедимаже](../resources/chatmessagehostedimage.md) | Получение размещенного изображения из сообщения чата.|
-|[Получение байтов размещенного изображения](../api/chatmessagehostedimage-getbytes.md) | данные двоичных изображений | Получение двоичных данных изображения на размещенном изображении из сообщения чата.|
+|[Перечисление всех размещенных контента](../api/chatmessage-list-chatmessagehostedcontents.md) | Коллекция [чатмессажехостедконтент](../resources/chatmessagehostedcontent.md)| Получение всего размещенного содержимого в сообщении чата.|
+|[Получение размещенного контента](../api/chatmessagehostedcontent-get.md) | [чатмессажехостедконтент](../resources/chatmessagehostedcontent.md) | Получение размещенного контента из сообщения чата.|
 
 ## <a name="properties"></a>Свойства
 
