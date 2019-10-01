@@ -4,7 +4,7 @@
       href: /graph/overview
     - name: Получение маркеров аутентификации
       items:
-        - name: Общие сведения
+        - name: Обзор
           href: /graph/auth/index?context=graph/api/beta
         - name: Основы
           href: /graph/auth/auth-concepts?context=graph/api/beta
@@ -18,11 +18,11 @@
           href: /graph/permissions-reference?context=graph/api/beta
         - name: Управление доступом к приложению (CSP)
           href: /graph/auth-cloudsolutionprovider?context=graph/api/beta
-        - name: Ограничить доступ к почтовому ящику
+        - name: Ограничение доступа к почтовому ящику
           href: /graph/auth-limit-mailbox-access?context=graph/api/beta
     - name: Использование API
       items:
-        - name: Общие сведения
+        - name: Обзор
           href: /graph/use-the-api?context=graph/api/beta
         - name: Разбиение на страницы
           href: /graph/paging?context=graph/api/beta
@@ -35,16 +35,16 @@
         - name: Уведомления об изменениях
           displayname: 'Webhooks, Azure AD, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: /graph/webhooks?context=graph/api/beta
-            - name: Руководство
+            - name: Учебник
               href: /graph/tutorials/change-notifications
             - name: Отсутствие уведомлений в Outlook (предварительная версия)
               href: /graph/webhooks-outlook-authz?context=graph/api/beta
         - name: Отслеживание изменений
           displayname: 'Delta query, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD'
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: /graph/delta-query-overview?context=graph/api/beta
             - name: Получение изменений для событий (пример)
               href: /graph/delta-query-events?context=graph/api/beta
@@ -57,13 +57,13 @@
         - name: Добавление пользовательских данных
           displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users, Azure AD'
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: /graph/extensibility-overview?context=graph/api/beta
             - name: Использование открытых расширений (пример)
               href: /graph/extensibility-open-users?context=graph/api/beta
             - name: Использование расширений схемы (пример)
               href: /graph/extensibility-schema-groups?context=graph/api/beta
-        - name: Использование POST
+        - name: Использование Postman
           href: /graph/use-postman?context=graph/api/beta
     - name: Миграция
       expanded: false
@@ -71,7 +71,7 @@
         - name: Azure AD Graph
           displayname: 'Migration, Azure AD Graph'
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: /graph/migrate-azure-ad-graph-overview?context=graph/api/beta
             - name: Контрольный список для переноса приложений
               href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
@@ -111,37 +111,37 @@
           href: /graph/sdks/create-client?context=graph/api/beta
         - name: Выбор поставщика проверки подлинности
           href: /graph/sdks/choose-authentication-providers?context=graph/api/beta
-    - name: Использование набора инструментов (Предварительная версия)
+    - name: Использование набора средств (предварительная версия)
       items:
-        - name: Обзор набора средств
+        - name: Общие сведения о наборе средств
           href: /graph/toolkit/overview?context=graph/api/beta
         - name: Компоненты
           items:
-            - name: Регистрацион
+            - name: Вход
               href: /graph/toolkit/components/login?context=graph/api/beta
-            - name: Человек
+            - name: Пользователь
               href: /graph/toolkit/components/person?context=graph/api/beta
             - name: Люди
               href: /graph/toolkit/components/people?context=graph/api/beta
-            - name: Agenda
+            - name: Повестка
               href: /graph/toolkit/components/agenda?context=graph/api/beta
             - name: Задачи
               href: /graph/toolkit/components/tasks?context=graph/api/beta
-        - name: Доступа
+        - name: Поставщики
           items:
             - name: Использование поставщиков
               href: /graph//graph/toolkit/providers?context=graph/api/beta
-            - name: Поставщик Msal
+            - name: Поставщик MSAL
               href: /graph/toolkit/providers/msal?context=graph/api/beta
-            - name: поставщик SharePoint
+            - name: Поставщик SharePoint
               href: /graph/toolkit/providers/sharepoint?context=graph/api/beta
             - name: Поставщик Microsoft Teams
               href: /graph/toolkit/providers/teams?context=graph/api/beta
             - name: Настраиваемый поставщик
               href: /graph/toolkit/providers/custom?context=graph/api/beta
-        - name: Компоненты стилизации
+        - name: Компоненты стиля
           href: /graph/toolkit/style?context=graph/api/beta
-        - name: Компоненты шаблонов
+        - name: Компоненты создания шаблонов
           href: /graph/toolkit/templates?context=graph/api/beta
     - name: Ресурсы
       items:
@@ -156,11 +156,11 @@
     - name: Документация для бета-версий
       expanded: true
       items:
-        - name: Общие сведения
+        - name: Обзор
           href: overview.md
         - name: Пользователи
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/users.md
             - name: Пользователь
               href: resources/user.md
@@ -374,7 +374,7 @@
                   href: api/user-update-settings.md
         - name: Группы
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/groups-overview.md
             - name: Группа
               href: resources/group.md
@@ -795,7 +795,7 @@
         - name: Звонки и собрания по сети
           displayName: Microsoft Teams
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/calls-api-overview.md
             - name: Звонок
               href: resources/call.md
@@ -903,7 +903,7 @@
         - name: Резервирование для пользователей
           displayName: 'Bookings, Microsoft Bookings'
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/booking-api-overview.md
             - name: Организация в Microsoft Bookings
               href: resources/bookingbusiness.md
@@ -7636,7 +7636,7 @@
         - name: Файлы
           displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/onedrive.md
             - name: Диски
               href: resources/drive.md
@@ -7670,6 +7670,8 @@
                   href: api/driveitem-update.md
                 - name: Удаление элемента
                   href: api/driveitem-delete.md
+                - name: Восстановление элемента
+                  href: api/driveitem-restore.md
                 - name: Перемещение элемента
                   href: api/driveitem-move.md
                 - name: Копирование элемента
@@ -7724,7 +7726,7 @@
         - name: Финансовые показатели (предварительная версия)
           displayname: 'Dynamics, Dynamics 365 Business Central'
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/dynamics-graph-reference.md
             - name: Учетная запись
               href: resources/dynamics-account.md
@@ -7959,7 +7961,7 @@
         - name: Удостоверения и доступ
           displayName: 'Azure AD, Microsoft identity platform'
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/azure-ad-overview.md
             - name: Проверки доступа
               href: resources/accessreviews-root.md
@@ -9064,7 +9066,7 @@
                           href: api/applicationsignindetailedsummary-get.md
                 - name: Регистрация и использование
                   items:
-                    - name: Общие сведения
+                    - name: Обзор
                       href: resources/authenticationmethods-usage-insights-overview.md
                     - name: Счетчик регистрации пользователей учетных данных
                       href: resources/credentialuserregistrationcount.md
@@ -9088,7 +9090,7 @@
                           href: api/reportroot-getcredentialusagesummary.md
             - name: Отчеты об использовании Office 365
               items:
-                - name: Общие сведения
+                - name: Обзор
                   href: resources/report.md
                 - name: Использование устройств Microsoft Teams
                   href: resources/microsoft-teams-device-usage-reports.md
@@ -9351,7 +9353,7 @@
         - name: Сайты и списки
           displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/sharepoint.md
             - name: Сайты
               href: resources/site.md
@@ -9409,9 +9411,9 @@
                   href: api/sitepage-delete.md
                 - name: Публикация страницы
                   href: api/sitepage-publish.md
-        - name: Аналитика социальных сетей и рабочих места
+        - name: Социальная и рабочая аналитика
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/social-overview.md
             - name: Человек
               href: resources/person.md
@@ -9468,7 +9470,7 @@
         - name: Задачи и планы
           displayName: Planner
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/planner-overview.md
             - name: План
               href: resources/plannerplan.md
@@ -9683,12 +9685,10 @@
             - name: Сообщение чата
               href: resources/chatmessage.md
               items:
-                - name: Список размещенных изображений
-                  href: api/chatmessagehostedimage-list-hostedimages.md
-                - name: Получение размещенного изображения
-                  href: api/chatmessagehostedimage-get.md
-                - name: Получение байтов размещенного изображения
-                  href: api/chatmessagehostedimage-getbytes.md
+                - name: Список размещенного контента
+                  href: api/chatmessage-list-chatmessagehostedcontents.md
+                - name: Получение размещенного контента
+                  href: api/chatmessagehostedcontent-get.md
             - name: Каталог приложений
               href: resources/teamsapp.md
               items:
@@ -9939,7 +9939,7 @@
         - name: Книги и диаграммы
           displayName: Excel
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/excel.md
             - name: Книга
               href: resources/workbook.md
