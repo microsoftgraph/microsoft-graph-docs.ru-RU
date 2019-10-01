@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 585427b006bf0f1d0f0bc5e241650ad872b428ef
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: bfaa2aec347b0dd710d0bb52abfaa96d50424eab
+ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37187322"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37333285"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -85,10 +85,20 @@ ms.locfileid: "37187322"
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | 1.0          | Добавлена возможность [получения необработанного содержимого вложенного файла или элемента](/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment) для события, сообщения или записи группы. |
 
+### <a name="files-onedrive-for-business-and-onedrive-personal"></a>Файлы (OneDrive для бизнеса и OneDrive персональный)
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение | Бета-версия | Добавлены ресурсы [pendingOperations](/graph/api/resources/pendingOperations?view=graph-rest-beta) и [pendingContentUpdate](/graph/api/resources/pendingContentUpdate?view=graph-rest-beta). Ресурс **pendingOperations** применяется к ресурсу [driveItem](/graph/api/resources/driveItem?view=graph-rest-beta). |
+| Дополнение | Бета-версия | Добавлено действие [restore](/graph/api/driveitem-restore?view=graph-rest-beta) для ресурса [driveItem](/graph/api/resources/driveItem?view=graph-rest-beta). |
+| Дополнение | Бета-версия | Добавлено свойство **orientation** для ресурса [photo](/graph/api/resources/photo?view=graph-rest-beta). |
+| Дополнение | Бета-версия | Добавлено свойство **sha256Hash** для ресурса [hashes](/graph/api/resources/hashes?view=graph-rest-beta). |
+
 ### <a name="identity-and-access-azure-ad"></a>Удостоверение и доступ (Azure AD)
 
 | **Тип изменения** | **Версия** | **Описание**                  |
 |:----------------|:------------|:-----------------------------------------|
+| Дополнение | Бета-версия | Добавлен ресурс [objectIdentity](/graph/api/resources/objectIdentity?view=graph-rest-beta), представляющий удостоверение, использованное для входа в учетную запись пользователя. |
 | Дополнение | Бета-версия | Добавлено свойство **synchronizationJobSettings** для ресурса [synchronizationJob](/graph/api/resources/synchronization-synchronizationjob?view=graph-rest-beta).|
 | Дополнение | Бета-версия | Добавлены новые возможные значения для свойства **reason** в ресурсе [synchronizationQuarantine](/graph/api/resources/synchronization-quarantine?view=graph-rest-beta).|
 
@@ -102,6 +112,7 @@ ms.locfileid: "37187322"
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+| Дополнение | Бета-версия | Добавлено свойство **identities** для ресурса [user](/graph/api/resources/user?view=graph-rest-beta). Это свойство представляет набор удостоверений, которые пользователь может использовать для входа.|
 | Дополнение        | 1.0          | Добавлен метод [translateExchangeIds](/graph/api/user-translateexchangeids?view=graph-rest-1.0).|
 
 ### <a name="users--outlook-settings"></a>Пользователи | Параметры Outlook
@@ -485,7 +496,7 @@ ms.locfileid: "37187322"
 ### <a name="groups"></a>Группы
 | **Тип изменения** | **Версия** | **Описание** |
 | :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | бета | Добавлено свойство **assignedlabels** для объекта [group](https://docs.microsoft.com/ru-RU/graph/api/resources/group?view=graph-rest-beta). Это свойство представляет список пар меток конфиденциальности (идентификатор и имя метки), связанных с группой.
+| Дополнение | бета | Добавлено свойство **assignedlabels** для объекта [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta). Это свойство представляет список пар меток конфиденциальности (идентификатор и имя метки), связанных с группой.
 
 ### <a name="identity-and-access-azure-ad--identity-protection"></a>Удостоверение и доступ (Azure AD) | Защита удостоверений
 
@@ -603,7 +614,7 @@ ms.locfileid: "37187322"
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Дополнение        | бета          | Добавлена поддержка нового [разрешения Mail.ReadBasic (предварительная версия)](permissions-reference.md#mail-permissions) для интерфейсов [Список сообщений](/graph/api/user-list-messages?view=graph-rest-beta) и [Получение сообщений](/graph/api/message-get?view=graph-rest-beta).            |
+| Дополнение        | Бета-версия          | Добавлена поддержка нового [разрешения Mail.ReadBasic (предварительная версия)](permissions-reference.md#mail-permissions) для интерфейсов [Список сообщений](/graph/api/user-list-messages?view=graph-rest-beta) и [Получение сообщений](/graph/api/message-get?view=graph-rest-beta).            |
 | Дополнение        | Бета-версия          | Добавлена возможность [получения содержимого MIME сообщения](outlook-get-mime-message.md). |
 | Дополнение        | Бета          | Добавлена возможность [получения необработанного содержимого вложенного файла или элемента](/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment) для события, сообщения, задачи Outlook или записи группы. |
 
@@ -873,7 +884,7 @@ ms.locfileid: "37187322"
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | бета | Добавлено новое свойство `expirationDateTime` в [группы](https://docs.microsoft.com/ru-RU/graph/api/resources/group?view=graph-rest-beta) для [срока действия группы](https://docs.microsoft.com/ru-RU/azure/active-directory/users-groups-roles/groups-lifecycle).|
+| Дополнение | бета | Добавлено новое свойство `expirationDateTime` в [группы](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) для [срока действия группы](https://docs.microsoft.com/ru-RU/azure/active-directory/users-groups-roles/groups-lifecycle).|
 | Дополнение | Бета | Добавлен новый тип ресурса [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta).|
 | Дополнение | бета | Добавлено свойство `createdDateTime` для ресурса [organization](/graph/api/resources/organization?view=graph-rest-beta).|
 | Дополнение | 1.0 | Добавлен метод `memberOf` для получения сведений о непосредственном [участии](/graph/api/device-list-memberOf?view=graph-rest-1.0) для [устройств](/graph/api/resources/device?view=graph-rest-1.0). Этот метод был добавлен для получения списка участий, включая вложенные участия.|
@@ -2881,7 +2892,7 @@ ms.locfileid: "37187322"
 | Изменение      | Бета    | Удалены свойства **unseenConversationsCount** и **unseenMessagesCount** для объекта [group](/graph/api/resources/group?view=graph-rest-beta). |
 | Изменение      | Бета    | Добавлены свойства **settingXml** и **settings** для объекта [iosMobileAppConfiguration](/graph/api/resources/intune-apps-iosmobileappconfiguration?view=graph-rest-beta). |
 | Изменение      | Бета    | Добавлено свойство **subjectAlternativeNameFormatString** для объекта [iosPkcsCertificateProfile](/graph/api/resources/intune-deviceconfig-iospkcscertificateprofile?view=graph-rest-beta). |
-| Изменение      | Бета    | Добавлено свойство **subjectAlternativeNameFormatString** для объекта [iosScepCertificateProfile](/graph/api/resources/intune-deviceconfig-iosscepcertificateprofile?view=graph-rest-beta). |
+| Изменение      | Бета-версия    | Добавлено свойство **subjectAlternativeNameFormatString** для объекта [iosScepCertificateProfile](/graph/api/resources/intune-deviceconfig-iosscepcertificateprofile?view=graph-rest-beta). |
 | Изменение      | Бета    | Добавлено свойство **systemIntegrityProtectionEnabled** для объекта [macOSCompliancePolicy](/graph/api/resources/intune-deviceconfig-macoscompliancepolicy?view=graph-rest-beta). |
 | Изменение      | Бета    | Добавлено свойство **subjectAlternativeNameFormatString** для объекта [macOSScepCertificateProfile](/graph/api/resources/intune-deviceconfig-macosscepcertificateprofile?view=graph-rest-beta). |
 | Изменение      | Бета    | Для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) добавлены свойства **complianceGracePeriodExpirationDateTime**, **userPrincipalName** и **imei** |
