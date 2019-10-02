@@ -1,33 +1,33 @@
 ---
 title: Перечисление объектов androidManagedAppProtection
 description: Перечисление свойств и связей объектов androidManagedAppProtection.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c5e49fd142ba7b3e71078c7618d59a34ef547ff
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7aded0ca0ad0cedc33e844e79c9cffe945b48a98
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020761"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363978"
 ---
-# <a name="list-androidmanagedappprotections"></a><span data-ttu-id="152eb-103">Перечисление объектов androidManagedAppProtection</span><span class="sxs-lookup"><span data-stu-id="152eb-103">List androidManagedAppProtections</span></span>
+# <a name="list-androidmanagedappprotections"></a><span data-ttu-id="6ae5f-103">Перечисление объектов androidManagedAppProtection</span><span class="sxs-lookup"><span data-stu-id="6ae5f-103">List androidManagedAppProtections</span></span>
 
-> <span data-ttu-id="152eb-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="152eb-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="6ae5f-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="6ae5f-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="152eb-105">Перечисление свойств и связей объектов [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md).</span><span class="sxs-lookup"><span data-stu-id="152eb-105">List properties and relationships of the [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) objects.</span></span>
+<span data-ttu-id="6ae5f-105">Перечисление свойств и связей объектов [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md).</span><span class="sxs-lookup"><span data-stu-id="6ae5f-105">List properties and relationships of the [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="152eb-106">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="152eb-106">Prerequisites</span></span>
-<span data-ttu-id="152eb-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="152eb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="6ae5f-106">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="6ae5f-106">Prerequisites</span></span>
+<span data-ttu-id="6ae5f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6ae5f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="152eb-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="152eb-109">Permission type</span></span>|<span data-ttu-id="152eb-110">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="152eb-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="6ae5f-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="6ae5f-109">Permission type</span></span>|<span data-ttu-id="6ae5f-110">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="6ae5f-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="152eb-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="152eb-111">Delegated (work or school account)</span></span>|<span data-ttu-id="152eb-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="152eb-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="152eb-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="152eb-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="152eb-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="152eb-114">Not supported.</span></span>|
-|<span data-ttu-id="152eb-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="152eb-115">Application</span></span>|<span data-ttu-id="152eb-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="152eb-116">Not supported.</span></span>|
+|<span data-ttu-id="6ae5f-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="6ae5f-111">Delegated (work or school account)</span></span>|<span data-ttu-id="6ae5f-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="6ae5f-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="6ae5f-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="6ae5f-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6ae5f-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6ae5f-114">Not supported.</span></span>|
+|<span data-ttu-id="6ae5f-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="6ae5f-115">Application</span></span>|<span data-ttu-id="6ae5f-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6ae5f-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="152eb-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="152eb-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6ae5f-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="6ae5f-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -36,28 +36,28 @@ ms.locfileid: "36020761"
 GET /deviceAppManagement/androidManagedAppProtections
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="152eb-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="152eb-118">Request headers</span></span>
-|<span data-ttu-id="152eb-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="152eb-119">Header</span></span>|<span data-ttu-id="152eb-120">Значение</span><span class="sxs-lookup"><span data-stu-id="152eb-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6ae5f-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="6ae5f-118">Request headers</span></span>
+|<span data-ttu-id="6ae5f-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="6ae5f-119">Header</span></span>|<span data-ttu-id="6ae5f-120">Значение</span><span class="sxs-lookup"><span data-stu-id="6ae5f-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="152eb-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="152eb-121">Authorization</span></span>|<span data-ttu-id="152eb-122">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="152eb-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="152eb-123">Accept</span><span class="sxs-lookup"><span data-stu-id="152eb-123">Accept</span></span>|<span data-ttu-id="152eb-124">application/json</span><span class="sxs-lookup"><span data-stu-id="152eb-124">application/json</span></span>|
+|<span data-ttu-id="6ae5f-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="6ae5f-121">Authorization</span></span>|<span data-ttu-id="6ae5f-122">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="6ae5f-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="6ae5f-123">Accept</span><span class="sxs-lookup"><span data-stu-id="6ae5f-123">Accept</span></span>|<span data-ttu-id="6ae5f-124">application/json</span><span class="sxs-lookup"><span data-stu-id="6ae5f-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="152eb-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="152eb-125">Request body</span></span>
-<span data-ttu-id="152eb-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="152eb-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6ae5f-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="6ae5f-125">Request body</span></span>
+<span data-ttu-id="6ae5f-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="6ae5f-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="152eb-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="152eb-127">Response</span></span>
-<span data-ttu-id="152eb-128">При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="152eb-128">If successful, this method returns a `200 OK` response code and a collection of [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="6ae5f-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="6ae5f-127">Response</span></span>
+<span data-ttu-id="6ae5f-128">При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="6ae5f-128">If successful, this method returns a `200 OK` response code and a collection of [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="152eb-129">Пример</span><span class="sxs-lookup"><span data-stu-id="152eb-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6ae5f-129">Пример</span><span class="sxs-lookup"><span data-stu-id="6ae5f-129">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="152eb-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="152eb-130">Request</span></span>
-<span data-ttu-id="152eb-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="152eb-131">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="6ae5f-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="6ae5f-130">Request</span></span>
+<span data-ttu-id="6ae5f-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6ae5f-131">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/androidManagedAppProtections
 ```
 
-### <a name="response"></a><span data-ttu-id="152eb-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="152eb-132">Response</span></span>
-<span data-ttu-id="152eb-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="152eb-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="6ae5f-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="6ae5f-132">Response</span></span>
+<span data-ttu-id="6ae5f-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="6ae5f-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -112,6 +112,7 @@ Content-Length: 2065
   ]
 }
 ```
+
 
 
 
