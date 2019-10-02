@@ -1,28 +1,29 @@
 ---
 title: тип перечисления Саведуистатеженератионоптионс
 description: Пока не задокументировано.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 556dd303bb5ad8f8ad5b804fb684319cd1d32a06
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 34060eea4a548aed497be9b29465d2472fca78ab
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036843"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360141"
 ---
-# <a name="saveduistategenerationoptions-enum-type"></a><span data-ttu-id="1f2d5-103">тип перечисления Саведуистатеженератионоптионс</span><span class="sxs-lookup"><span data-stu-id="1f2d5-103">savedUIStateGenerationOptions enum type</span></span>
+# <a name="saveduistategenerationoptions-enum-type"></a><span data-ttu-id="7df1e-103">тип перечисления Саведуистатеженератионоптионс</span><span class="sxs-lookup"><span data-stu-id="7df1e-103">savedUIStateGenerationOptions enum type</span></span>
 
-> <span data-ttu-id="1f2d5-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="1f2d5-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="7df1e-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="7df1e-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="1f2d5-105">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="1f2d5-105">Not yet documented</span></span>
+<span data-ttu-id="7df1e-105">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="7df1e-105">Not yet documented</span></span>
 
-## <a name="members"></a><span data-ttu-id="1f2d5-106">Элементы</span><span class="sxs-lookup"><span data-stu-id="1f2d5-106">Members</span></span>
-|<span data-ttu-id="1f2d5-107">Элемент</span><span class="sxs-lookup"><span data-stu-id="1f2d5-107">Member</span></span>|<span data-ttu-id="1f2d5-108">Значение</span><span class="sxs-lookup"><span data-stu-id="1f2d5-108">Value</span></span>|<span data-ttu-id="1f2d5-109">Описание</span><span class="sxs-lookup"><span data-stu-id="1f2d5-109">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="7df1e-106">Элементы</span><span class="sxs-lookup"><span data-stu-id="7df1e-106">Members</span></span>
+|<span data-ttu-id="7df1e-107">Элемент</span><span class="sxs-lookup"><span data-stu-id="7df1e-107">Member</span></span>|<span data-ttu-id="7df1e-108">Значение</span><span class="sxs-lookup"><span data-stu-id="7df1e-108">Value</span></span>|<span data-ttu-id="7df1e-109">Описание</span><span class="sxs-lookup"><span data-stu-id="7df1e-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="1f2d5-110">none</span><span class="sxs-lookup"><span data-stu-id="1f2d5-110">none</span></span>|<span data-ttu-id="1f2d5-111">нуль</span><span class="sxs-lookup"><span data-stu-id="1f2d5-111">0</span></span>|<span data-ttu-id="1f2d5-112">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="1f2d5-112">Not yet documented</span></span>|
-|<span data-ttu-id="1f2d5-113">Омитсилверлигхтполициреференцес</span><span class="sxs-lookup"><span data-stu-id="1f2d5-113">omitSilverlightPolicyReferences</span></span>|<span data-ttu-id="1f2d5-114">1,1</span><span class="sxs-lookup"><span data-stu-id="1f2d5-114">1</span></span>|<span data-ttu-id="1f2d5-115">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="1f2d5-115">Not yet documented</span></span>|
+|<span data-ttu-id="7df1e-110">none</span><span class="sxs-lookup"><span data-stu-id="7df1e-110">none</span></span>|<span data-ttu-id="7df1e-111">нуль</span><span class="sxs-lookup"><span data-stu-id="7df1e-111">0</span></span>|<span data-ttu-id="7df1e-112">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="7df1e-112">Not yet documented</span></span>|
+|<span data-ttu-id="7df1e-113">омитсилверлигхтполициреференцес</span><span class="sxs-lookup"><span data-stu-id="7df1e-113">omitSilverlightPolicyReferences</span></span>|<span data-ttu-id="7df1e-114">1,1</span><span class="sxs-lookup"><span data-stu-id="7df1e-114">1</span></span>|<span data-ttu-id="7df1e-115">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="7df1e-115">Not yet documented</span></span>|
+
 
 
 

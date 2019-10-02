@@ -1,33 +1,33 @@
 ---
 title: Действие recoverPasscode
 description: Восстановление секретного кода
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2b90d5029b44148c197592ba8e3751bb1ec3431b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 94dd04af481941672d49e4d6c705320174a3e1ea
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020957"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364419"
 ---
-# <a name="recoverpasscode-action"></a><span data-ttu-id="edf90-103">Действие recoverPasscode</span><span class="sxs-lookup"><span data-stu-id="edf90-103">recoverPasscode action</span></span>
+# <a name="recoverpasscode-action"></a><span data-ttu-id="6c55b-103">Действие recoverPasscode</span><span class="sxs-lookup"><span data-stu-id="6c55b-103">recoverPasscode action</span></span>
 
-> <span data-ttu-id="edf90-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="edf90-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="6c55b-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="6c55b-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="edf90-105">Восстановление секретного кода</span><span class="sxs-lookup"><span data-stu-id="edf90-105">Recover passcode</span></span>
+<span data-ttu-id="6c55b-105">Восстановление секретного кода</span><span class="sxs-lookup"><span data-stu-id="6c55b-105">Recover passcode</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="edf90-106">Необходимые разрешения</span><span class="sxs-lookup"><span data-stu-id="edf90-106">Prerequisites</span></span>
-<span data-ttu-id="edf90-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="edf90-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="6c55b-106">Необходимые разрешения</span><span class="sxs-lookup"><span data-stu-id="6c55b-106">Prerequisites</span></span>
+<span data-ttu-id="6c55b-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6c55b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="edf90-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="edf90-109">Permission type</span></span>|<span data-ttu-id="edf90-110">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="edf90-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="6c55b-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="6c55b-109">Permission type</span></span>|<span data-ttu-id="6c55b-110">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="6c55b-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="edf90-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="edf90-111">Delegated (work or school account)</span></span>|<span data-ttu-id="edf90-112">DeviceManagementManagedDevices.PriviligedOperation.All</span><span class="sxs-lookup"><span data-stu-id="edf90-112">DeviceManagementManagedDevices.PriviligedOperation.All</span></span>|
-|<span data-ttu-id="edf90-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="edf90-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="edf90-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="edf90-114">Not supported.</span></span>|
-|<span data-ttu-id="edf90-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="edf90-115">Application</span></span>|<span data-ttu-id="edf90-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="edf90-116">Not supported.</span></span>|
+|<span data-ttu-id="6c55b-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="6c55b-111">Delegated (work or school account)</span></span>|<span data-ttu-id="6c55b-112">DeviceManagementManagedDevices.PriviligedOperation.All</span><span class="sxs-lookup"><span data-stu-id="6c55b-112">DeviceManagementManagedDevices.PriviligedOperation.All</span></span>|
+|<span data-ttu-id="6c55b-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="6c55b-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6c55b-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6c55b-114">Not supported.</span></span>|
+|<span data-ttu-id="6c55b-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="6c55b-115">Application</span></span>|<span data-ttu-id="6c55b-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6c55b-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="edf90-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="edf90-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6c55b-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="6c55b-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,31 +38,32 @@ POST /deviceManagement/managedDevices/{managedDeviceId}/recoverPasscode
 POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/recoverPasscode
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="edf90-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="edf90-118">Request headers</span></span>
-|<span data-ttu-id="edf90-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="edf90-119">Header</span></span>|<span data-ttu-id="edf90-120">Значение</span><span class="sxs-lookup"><span data-stu-id="edf90-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6c55b-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="6c55b-118">Request headers</span></span>
+|<span data-ttu-id="6c55b-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="6c55b-119">Header</span></span>|<span data-ttu-id="6c55b-120">Значение</span><span class="sxs-lookup"><span data-stu-id="6c55b-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="edf90-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="edf90-121">Authorization</span></span>|<span data-ttu-id="edf90-122">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="edf90-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="edf90-123">Accept</span><span class="sxs-lookup"><span data-stu-id="edf90-123">Accept</span></span>|<span data-ttu-id="edf90-124">application/json</span><span class="sxs-lookup"><span data-stu-id="edf90-124">application/json</span></span>|
+|<span data-ttu-id="6c55b-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="6c55b-121">Authorization</span></span>|<span data-ttu-id="6c55b-122">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="6c55b-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="6c55b-123">Accept</span><span class="sxs-lookup"><span data-stu-id="6c55b-123">Accept</span></span>|<span data-ttu-id="6c55b-124">application/json</span><span class="sxs-lookup"><span data-stu-id="6c55b-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="edf90-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="edf90-125">Request body</span></span>
-<span data-ttu-id="edf90-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="edf90-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6c55b-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="6c55b-125">Request body</span></span>
+<span data-ttu-id="6c55b-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="6c55b-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="edf90-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="edf90-127">Response</span></span>
-<span data-ttu-id="edf90-128">В случае успешного выполнения это действие возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="edf90-128">If successful, this action returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="6c55b-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="6c55b-127">Response</span></span>
+<span data-ttu-id="6c55b-128">В случае успешного выполнения это действие возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="6c55b-128">If successful, this action returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="edf90-129">Пример</span><span class="sxs-lookup"><span data-stu-id="edf90-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6c55b-129">Пример</span><span class="sxs-lookup"><span data-stu-id="6c55b-129">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="edf90-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="edf90-130">Request</span></span>
-<span data-ttu-id="edf90-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="edf90-131">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="6c55b-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="6c55b-130">Request</span></span>
+<span data-ttu-id="6c55b-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6c55b-131">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDeviceId}/recoverPasscode
 ```
 
-### <a name="response"></a><span data-ttu-id="edf90-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="edf90-132">Response</span></span>
-<span data-ttu-id="edf90-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="edf90-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="6c55b-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="6c55b-132">Response</span></span>
+<span data-ttu-id="6c55b-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="6c55b-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

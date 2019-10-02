@@ -1,33 +1,33 @@
 ---
 title: Get managedEBook
 description: Чтение свойств и связей объекта managedEBook.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4e5a9d40e0104c09b99ba0409852fc6e8d96ec33
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9744ac32dd4fd92438b25286a32a1e7dca9221b3
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018437"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354709"
 ---
-# <a name="get-managedebook"></a><span data-ttu-id="f631e-103">Get managedEBook</span><span class="sxs-lookup"><span data-stu-id="f631e-103">Get managedEBook</span></span>
+# <a name="get-managedebook"></a><span data-ttu-id="b5eee-103">Get managedEBook</span><span class="sxs-lookup"><span data-stu-id="b5eee-103">Get managedEBook</span></span>
 
-> <span data-ttu-id="f631e-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="f631e-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="b5eee-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="b5eee-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="f631e-105">Чтение свойств и связей объекта [managedEBook](../resources/intune-books-managedebook.md).</span><span class="sxs-lookup"><span data-stu-id="f631e-105">Read properties and relationships of the [managedEBook](../resources/intune-books-managedebook.md) object.</span></span>
+<span data-ttu-id="b5eee-105">Чтение свойств и связей объекта [managedEBook](../resources/intune-books-managedebook.md).</span><span class="sxs-lookup"><span data-stu-id="b5eee-105">Read properties and relationships of the [managedEBook](../resources/intune-books-managedebook.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="f631e-106">Необходимые разрешения</span><span class="sxs-lookup"><span data-stu-id="f631e-106">Prerequisites</span></span>
-<span data-ttu-id="f631e-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f631e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="b5eee-106">Необходимые разрешения</span><span class="sxs-lookup"><span data-stu-id="b5eee-106">Prerequisites</span></span>
+<span data-ttu-id="b5eee-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b5eee-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f631e-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f631e-109">Permission type</span></span>|<span data-ttu-id="f631e-110">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="f631e-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="b5eee-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b5eee-109">Permission type</span></span>|<span data-ttu-id="b5eee-110">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="b5eee-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="f631e-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f631e-111">Delegated (work or school account)</span></span>|<span data-ttu-id="f631e-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="f631e-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="f631e-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f631e-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f631e-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f631e-114">Not supported.</span></span>|
-|<span data-ttu-id="f631e-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f631e-115">Application</span></span>|<span data-ttu-id="f631e-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f631e-116">Not supported.</span></span>|
+|<span data-ttu-id="b5eee-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b5eee-111">Delegated (work or school account)</span></span>|<span data-ttu-id="b5eee-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="b5eee-112">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="b5eee-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b5eee-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b5eee-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b5eee-114">Not supported.</span></span>|
+|<span data-ttu-id="b5eee-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b5eee-115">Application</span></span>|<span data-ttu-id="b5eee-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b5eee-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="f631e-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f631e-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b5eee-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b5eee-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -36,31 +36,31 @@ ms.locfileid: "36018437"
 GET /deviceAppManagement/managedEBooks/{managedEBookId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="f631e-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="f631e-118">Optional query parameters</span></span>
-<span data-ttu-id="f631e-119">Этот метод поддерживает [параметры запросов OData](https://docs.microsoft.com/en-us/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="f631e-119">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="b5eee-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="b5eee-118">Optional query parameters</span></span>
+<span data-ttu-id="b5eee-119">Этот метод поддерживает [параметры запросов OData](https://docs.microsoft.com/en-us/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="b5eee-119">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="f631e-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f631e-120">Request headers</span></span>
-|<span data-ttu-id="f631e-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="f631e-121">Header</span></span>|<span data-ttu-id="f631e-122">Значение</span><span class="sxs-lookup"><span data-stu-id="f631e-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b5eee-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b5eee-120">Request headers</span></span>
+|<span data-ttu-id="b5eee-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="b5eee-121">Header</span></span>|<span data-ttu-id="b5eee-122">Значение</span><span class="sxs-lookup"><span data-stu-id="b5eee-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="f631e-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f631e-123">Authorization</span></span>|<span data-ttu-id="f631e-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f631e-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="f631e-125">Accept</span><span class="sxs-lookup"><span data-stu-id="f631e-125">Accept</span></span>|<span data-ttu-id="f631e-126">application/json</span><span class="sxs-lookup"><span data-stu-id="f631e-126">application/json</span></span>|
+|<span data-ttu-id="b5eee-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="b5eee-123">Authorization</span></span>|<span data-ttu-id="b5eee-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b5eee-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="b5eee-125">Accept</span><span class="sxs-lookup"><span data-stu-id="b5eee-125">Accept</span></span>|<span data-ttu-id="b5eee-126">application/json</span><span class="sxs-lookup"><span data-stu-id="b5eee-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="f631e-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="f631e-127">Request body</span></span>
-<span data-ttu-id="f631e-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="f631e-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b5eee-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b5eee-127">Request body</span></span>
+<span data-ttu-id="b5eee-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="b5eee-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f631e-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="f631e-129">Response</span></span>
-<span data-ttu-id="f631e-130">В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [managedEBook](../resources/intune-books-managedebook.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="f631e-130">If successful, this method returns a `200 OK` response code and [managedEBook](../resources/intune-books-managedebook.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="b5eee-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="b5eee-129">Response</span></span>
+<span data-ttu-id="b5eee-130">В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [managedEBook](../resources/intune-books-managedebook.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="b5eee-130">If successful, this method returns a `200 OK` response code and [managedEBook](../resources/intune-books-managedebook.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f631e-131">Пример</span><span class="sxs-lookup"><span data-stu-id="f631e-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b5eee-131">Пример</span><span class="sxs-lookup"><span data-stu-id="b5eee-131">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="f631e-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="f631e-132">Request</span></span>
-<span data-ttu-id="f631e-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f631e-133">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="b5eee-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="b5eee-132">Request</span></span>
+<span data-ttu-id="b5eee-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b5eee-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}
 ```
 
-### <a name="response"></a><span data-ttu-id="f631e-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="f631e-134">Response</span></span>
-<span data-ttu-id="f631e-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f631e-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="b5eee-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="b5eee-134">Response</span></span>
+<span data-ttu-id="b5eee-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="b5eee-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -86,6 +86,7 @@ Content-Length: 712
   }
 }
 ```
+
 
 
 

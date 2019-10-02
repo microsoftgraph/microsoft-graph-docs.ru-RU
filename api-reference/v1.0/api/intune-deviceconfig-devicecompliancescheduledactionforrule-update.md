@@ -1,33 +1,33 @@
 ---
 title: Обновление объекта deviceComplianceScheduledActionForRule
 description: Обновление свойств объекта deviceComplianceScheduledActionForRule.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c90c450d4f9efc8147414582bb3e48d2e47bd35
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b085d39b9befb4f98a9fc50c55cdb80d1ee36050
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36017716"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354135"
 ---
-# <a name="update-devicecompliancescheduledactionforrule"></a><span data-ttu-id="ce293-103">Обновление объекта deviceComplianceScheduledActionForRule</span><span class="sxs-lookup"><span data-stu-id="ce293-103">Update deviceComplianceScheduledActionForRule</span></span>
+# <a name="update-devicecompliancescheduledactionforrule"></a><span data-ttu-id="f8458-103">Обновление объекта deviceComplianceScheduledActionForRule</span><span class="sxs-lookup"><span data-stu-id="f8458-103">Update deviceComplianceScheduledActionForRule</span></span>
 
-> <span data-ttu-id="ce293-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="ce293-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="f8458-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="f8458-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="ce293-105">Обновление свойств объекта [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md).</span><span class="sxs-lookup"><span data-stu-id="ce293-105">Update the properties of a [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) object.</span></span>
+<span data-ttu-id="f8458-105">Обновление свойств объекта [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md).</span><span class="sxs-lookup"><span data-stu-id="f8458-105">Update the properties of a [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="ce293-106">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="ce293-106">Prerequisites</span></span>
-<span data-ttu-id="ce293-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ce293-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="f8458-106">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="f8458-106">Prerequisites</span></span>
+<span data-ttu-id="f8458-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f8458-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ce293-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ce293-109">Permission type</span></span>|<span data-ttu-id="ce293-110">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="ce293-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="f8458-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f8458-109">Permission type</span></span>|<span data-ttu-id="f8458-110">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="f8458-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="ce293-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ce293-111">Delegated (work or school account)</span></span>|<span data-ttu-id="ce293-112">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ce293-112">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="ce293-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ce293-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ce293-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ce293-114">Not supported.</span></span>|
-|<span data-ttu-id="ce293-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ce293-115">Application</span></span>|<span data-ttu-id="ce293-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ce293-116">Not supported.</span></span>|
+|<span data-ttu-id="f8458-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f8458-111">Delegated (work or school account)</span></span>|<span data-ttu-id="f8458-112">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f8458-112">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="f8458-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f8458-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f8458-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f8458-114">Not supported.</span></span>|
+|<span data-ttu-id="f8458-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f8458-115">Application</span></span>|<span data-ttu-id="f8458-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f8458-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="ce293-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ce293-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f8458-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f8458-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -36,31 +36,31 @@ ms.locfileid: "36017716"
 PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ce293-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ce293-118">Request headers</span></span>
-|<span data-ttu-id="ce293-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="ce293-119">Header</span></span>|<span data-ttu-id="ce293-120">Значение</span><span class="sxs-lookup"><span data-stu-id="ce293-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f8458-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f8458-118">Request headers</span></span>
+|<span data-ttu-id="f8458-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="f8458-119">Header</span></span>|<span data-ttu-id="f8458-120">Значение</span><span class="sxs-lookup"><span data-stu-id="f8458-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="ce293-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ce293-121">Authorization</span></span>|<span data-ttu-id="ce293-122">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ce293-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="ce293-123">Accept</span><span class="sxs-lookup"><span data-stu-id="ce293-123">Accept</span></span>|<span data-ttu-id="ce293-124">application/json</span><span class="sxs-lookup"><span data-stu-id="ce293-124">application/json</span></span>|
+|<span data-ttu-id="f8458-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f8458-121">Authorization</span></span>|<span data-ttu-id="f8458-122">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f8458-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="f8458-123">Accept</span><span class="sxs-lookup"><span data-stu-id="f8458-123">Accept</span></span>|<span data-ttu-id="f8458-124">application/json</span><span class="sxs-lookup"><span data-stu-id="f8458-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ce293-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="ce293-125">Request body</span></span>
-<span data-ttu-id="ce293-126">В тексте запроса добавьте представление объекта [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ce293-126">In the request body, supply a JSON representation for the [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f8458-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f8458-125">Request body</span></span>
+<span data-ttu-id="f8458-126">В тексте запроса добавьте представление объекта [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f8458-126">In the request body, supply a JSON representation for the [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) object.</span></span>
 
-<span data-ttu-id="ce293-127">В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md).</span><span class="sxs-lookup"><span data-stu-id="ce293-127">The following table shows the properties that are required when you create the [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md).</span></span>
+<span data-ttu-id="f8458-127">В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md).</span><span class="sxs-lookup"><span data-stu-id="f8458-127">The following table shows the properties that are required when you create the [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md).</span></span>
 
-|<span data-ttu-id="ce293-128">Свойство</span><span class="sxs-lookup"><span data-stu-id="ce293-128">Property</span></span>|<span data-ttu-id="ce293-129">Тип</span><span class="sxs-lookup"><span data-stu-id="ce293-129">Type</span></span>|<span data-ttu-id="ce293-130">Описание</span><span class="sxs-lookup"><span data-stu-id="ce293-130">Description</span></span>|
+|<span data-ttu-id="f8458-128">Свойство</span><span class="sxs-lookup"><span data-stu-id="f8458-128">Property</span></span>|<span data-ttu-id="f8458-129">Тип</span><span class="sxs-lookup"><span data-stu-id="f8458-129">Type</span></span>|<span data-ttu-id="f8458-130">Описание</span><span class="sxs-lookup"><span data-stu-id="f8458-130">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="ce293-131">id</span><span class="sxs-lookup"><span data-stu-id="ce293-131">id</span></span>|<span data-ttu-id="ce293-132">String</span><span class="sxs-lookup"><span data-stu-id="ce293-132">String</span></span>|<span data-ttu-id="ce293-133">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="ce293-133">Key of the entity.</span></span>|
-|<span data-ttu-id="ce293-134">ruleName</span><span class="sxs-lookup"><span data-stu-id="ce293-134">ruleName</span></span>|<span data-ttu-id="ce293-135">String</span><span class="sxs-lookup"><span data-stu-id="ce293-135">String</span></span>|<span data-ttu-id="ce293-136">Имя правила, к которому применяется это запланированное действие.</span><span class="sxs-lookup"><span data-stu-id="ce293-136">Name of the rule which this scheduled action applies to.</span></span>|
+|<span data-ttu-id="f8458-131">id</span><span class="sxs-lookup"><span data-stu-id="f8458-131">id</span></span>|<span data-ttu-id="f8458-132">String</span><span class="sxs-lookup"><span data-stu-id="f8458-132">String</span></span>|<span data-ttu-id="f8458-133">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="f8458-133">Key of the entity.</span></span>|
+|<span data-ttu-id="f8458-134">ruleName</span><span class="sxs-lookup"><span data-stu-id="f8458-134">ruleName</span></span>|<span data-ttu-id="f8458-135">String</span><span class="sxs-lookup"><span data-stu-id="f8458-135">String</span></span>|<span data-ttu-id="f8458-136">Имя правила, к которому применяется это запланированное действие.</span><span class="sxs-lookup"><span data-stu-id="f8458-136">Name of the rule which this scheduled action applies to.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="ce293-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="ce293-137">Response</span></span>
-<span data-ttu-id="ce293-138">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="ce293-138">If successful, this method returns a `200 OK` response code and an updated [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f8458-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="f8458-137">Response</span></span>
+<span data-ttu-id="f8458-138">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="f8458-138">If successful, this method returns a `200 OK` response code and an updated [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ce293-139">Пример</span><span class="sxs-lookup"><span data-stu-id="ce293-139">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f8458-139">Пример</span><span class="sxs-lookup"><span data-stu-id="f8458-139">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="ce293-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="ce293-140">Request</span></span>
-<span data-ttu-id="ce293-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ce293-141">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="f8458-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="f8458-140">Request</span></span>
+<span data-ttu-id="f8458-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f8458-141">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/scheduledActionsForRule/{deviceComplianceScheduledActionForRuleId}
 Content-type: application/json
@@ -72,8 +72,8 @@ Content-length: 114
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="ce293-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="ce293-142">Response</span></span>
-<span data-ttu-id="ce293-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ce293-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="f8458-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="f8458-142">Response</span></span>
+<span data-ttu-id="f8458-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f8458-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -85,6 +85,7 @@ Content-Length: 163
   "ruleName": "Rule Name value"
 }
 ```
+
 
 
 
