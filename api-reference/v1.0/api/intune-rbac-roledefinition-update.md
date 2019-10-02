@@ -1,16 +1,16 @@
 ---
 title: Обновление объекта roleDefinition
 description: Обновление свойств объекта roleDefinition.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7d02b13dda2a62bbffbda83211ffe9c4dcc6e87b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cd1932d207fba178c1964a0d5e4cdf1afcdfd8e8
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023666"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361695"
 ---
 # <a name="update-roledefinition"></a>Обновление объекта roleDefinition
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [roleDefinition](../resources/intune-rbac-roledefinition.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).
@@ -125,6 +125,7 @@ Content-Length: 629
   "isBuiltIn": true
 }
 ```
+
 
 
 

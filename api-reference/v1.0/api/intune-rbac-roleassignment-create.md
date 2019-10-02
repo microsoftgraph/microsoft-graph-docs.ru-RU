@@ -1,16 +1,16 @@
 ---
 title: Создание объекта roleAssignment
 description: Создание объекта roleAssignment.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8bd191f52886d06ff2d059507227efdc826a7961
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 837c69f2bf23c662c86769b308eae205767ca453
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023716"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361821"
 ---
 # <a name="create-roleassignment"></a>Создание объекта roleAssignment
 
@@ -42,7 +42,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта roleAssignment в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта roleAssignment.
@@ -95,6 +95,7 @@ Content-Length: 242
   ]
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов roleDefinition
 description: Список свойств и связей объектов roleDefinition.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f546f100551b93749adc7625bb37f6e297e89dc3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2bff3ebfe3b9fb6ce13f529869ae8d6d7362114c
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023701"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361716"
 ---
 # <a name="list-roledefinitions"></a>Перечисление объектов roleDefinition
 
@@ -42,7 +42,7 @@ GET /deviceManagement/roleDefinitions
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -91,6 +91,7 @@ Content-Length: 746
   ]
 }
 ```
+
 
 
 

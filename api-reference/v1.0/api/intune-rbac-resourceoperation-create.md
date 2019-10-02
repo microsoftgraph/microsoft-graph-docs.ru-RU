@@ -1,16 +1,16 @@
 ---
 title: Создание объекта resourceOperation
 description: Создание объекта resourceOperation.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: be287a5a7f87f38f39f55db7ec505b08b4c3624e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 527c45b2b6a15f4a3c5b7eda085569f272003640
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023792"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361884"
 ---
 # <a name="create-resourceoperation"></a>Создание объекта resourceOperation
 
@@ -42,7 +42,7 @@ POST /deviceManagement/resourceOperations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта resourceOperation в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта resourceOperation.
@@ -91,6 +91,7 @@ Content-Length: 227
   "description": "Description value"
 }
 ```
+
 
 
 
