@@ -1,16 +1,16 @@
 ---
 title: Удаление объекта windowsInformationProtectionAppLearningSummary
 description: Удаляет объект windowsInformationProtectionAppLearningSummary.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 937af9ba5cb2094a74260c534e38fd8c554d976b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a9fde72500764eca379f2d5c50834a73bdf36071
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025647"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360967"
 ---
 # <a name="delete-windowsinformationprotectionapplearningsummary"></a>Удаление объекта windowsInformationProtectionAppLearningSummary
 
@@ -42,7 +42,7 @@ DELETE /deviceManagement/windowsInformationProtectionAppLearningSummaries/{windo
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -61,6 +61,7 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/windowsInformationProte
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

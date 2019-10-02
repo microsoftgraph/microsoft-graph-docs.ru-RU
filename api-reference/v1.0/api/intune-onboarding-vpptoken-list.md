@@ -1,16 +1,16 @@
 ---
 title: Список VPP токенов
 description: Список свойств и связей объектов VPP токены.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1441d870806e40b5cacd5c31e24c51aee903353e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2bd0571ba6c89ae3ad6396ed11142842fff8aff6
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023953"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362073"
 ---
 # <a name="list-vpptokens"></a>Список VPP токенов
 
@@ -42,7 +42,7 @@ GET /deviceAppManagement/vppTokens
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -83,6 +83,7 @@ Content-Length: 659
   ]
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Действие commit
 description: Подтверждает файл заданного приложения.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 02f7c4841af3e335a5935c604e6cfdfdfac52309
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 35d9389818b8796f9c31257253f6be2c41da0b1a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36016050"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355031"
 ---
 # <a name="commit-action"></a>Действие commit
 
@@ -42,7 +42,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -85,6 +85,7 @@ Content-length: 399
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

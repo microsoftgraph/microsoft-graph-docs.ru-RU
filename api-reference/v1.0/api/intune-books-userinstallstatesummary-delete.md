@@ -1,16 +1,16 @@
 ---
 title: Удаление объекта userInstallStateSummary
 description: Удаляет объект userInstallStateSummary.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ab8c8f28eaa735b99bce3209b8047e98d4afbd7b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: da9d881d18ec8b735d71798135f5a67d0005bc66
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019949"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357827"
 ---
 # <a name="delete-userinstallstatesummary"></a>Удаление объекта userInstallStateSummary
 
@@ -42,7 +42,7 @@ DELETE /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{use
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -61,6 +61,7 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{manag
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

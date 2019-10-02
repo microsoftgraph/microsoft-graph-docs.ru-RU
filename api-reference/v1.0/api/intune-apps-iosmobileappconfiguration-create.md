@@ -1,16 +1,16 @@
 ---
 title: Создать iosMobileAppConfiguration
 description: Создание нового объекта iosMobileAppConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 454f92450f78ddceabdcf96cb5d77448403cf932
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 66b1e4756c37feea77b73e488e78173b6e4ded5d
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36002603"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358921"
 ---
 # <a name="create-iosmobileappconfiguration"></a>Создать iosMobileAppConfiguration
 
@@ -42,7 +42,7 @@ POST /deviceAppManagement/mobileAppConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта iosMobileAppConfiguration в формате JSON.
 
 В следующей таблице указаны свойства, необходимые при создании iosMobileAppConfiguration.
@@ -122,6 +122,7 @@ Content-Length: 706
   ]
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса windowsUpdateActiveHoursInstall
 description: Пока не задокументировано.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3635441f015d49ffb402f5314896e9e68b15e8e7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 29b885bcfd728f412d2e94ecdbdbdfc23ee9fb76
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030928"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357166"
 ---
 # <a name="windowsupdateactivehoursinstall-resource-type"></a>Тип ресурса windowsUpdateActiveHoursInstall
 
@@ -27,7 +27,7 @@ ms.locfileid: "36030928"
 |activeHoursStart|TimeOfDay|Время начала периода активности|
 |activeHoursEnd|TimeOfDay|Время окончания периода активности|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -44,6 +44,7 @@ ms.locfileid: "36030928"
   "activeHoursEnd": "String (time of day)"
 }
 ```
+
 
 
 

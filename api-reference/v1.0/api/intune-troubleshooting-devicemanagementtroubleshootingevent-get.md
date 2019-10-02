@@ -1,16 +1,16 @@
 ---
 title: Получение deviceManagementTroubleshootingEvent
 description: Чтение свойств и связей объекта deviceManagementTroubleshootingEvent.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a2de223a416964cb4562fae9ec3851ea8fe24c7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5e53af3190d9c1282dbd7eb90908495c3d807906
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025696"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361149"
 ---
 # <a name="get-devicemanagementtroubleshootingevent"></a>Получение deviceManagementTroubleshootingEvent
 
@@ -45,7 +45,7 @@ GET /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEven
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -75,6 +75,7 @@ Content-Length: 255
   }
 }
 ```
+
 
 
 

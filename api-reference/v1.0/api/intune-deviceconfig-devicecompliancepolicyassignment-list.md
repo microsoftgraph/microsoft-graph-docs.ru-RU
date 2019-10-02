@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов deviceCompliancePolicyAssignment
 description: Список свойств и связей объектов deviceCompliancePolicyAssignment.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1f7e4a3b9a3f497d3929062d3299e20f73361210
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e4c561d9d200f3a420a4cb6cc6faaa3971dbfa54
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36017821"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37369025"
 ---
 # <a name="list-devicecompliancepolicyassignments"></a>Перечисление объектов deviceCompliancePolicyAssignment
 
@@ -42,7 +42,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assign
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -75,6 +75,7 @@ Content-Length: 274
   ]
 }
 ```
+
 
 
 

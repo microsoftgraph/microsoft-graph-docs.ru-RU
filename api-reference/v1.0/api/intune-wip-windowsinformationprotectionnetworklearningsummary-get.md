@@ -1,16 +1,16 @@
 ---
 title: Получение windowsInformationProtectionNetworkLearningSummary
 description: Чтение свойств и связей объекта windowsInformationProtectionNetworkLearningSummary.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bc0767ed0e3adca9ee19eca5b7efdfe300b54546
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8420437cbd4eabed7dabdf50b6b0de3fbd4480be
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025605"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360883"
 ---
 # <a name="get-windowsinformationprotectionnetworklearningsummary"></a>Получение windowsInformationProtectionNetworkLearningSummary
 
@@ -45,7 +45,7 @@ GET /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{wind
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -75,6 +75,7 @@ Content-Length: 213
   }
 }
 ```
+
 
 
 

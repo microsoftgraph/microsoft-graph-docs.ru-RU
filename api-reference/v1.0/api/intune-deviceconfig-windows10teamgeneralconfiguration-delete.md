@@ -1,16 +1,16 @@
 ---
 title: Удаление объекта windows10TeamGeneralConfiguration
 description: Удаляет объект windows10TeamGeneralConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 948ed7d6a09b16e53b443b70f398c6bf932dce7d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a78c3805c24425651c65dba151d8d70d66a6b5aa
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020082"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37365224"
 ---
 # <a name="delete-windows10teamgeneralconfiguration"></a>Удаление объекта windows10TeamGeneralConfiguration
 
@@ -42,7 +42,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -61,6 +61,7 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса auditActor
 description: Класс, содержащий свойства субъекта аудита.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2b2aab468a6638b2e3bb525fd54c6554f5a5694a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4365daebf50de210482132354c14199c850e384a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032083"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355997"
 ---
 # <a name="auditactor-resource-type"></a>Тип ресурса auditActor
 
@@ -30,7 +30,7 @@ ms.locfileid: "36032083"
 |ipAddress|String|IP-адрес.|
 |userId|String|ИД пользователя.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -55,6 +55,7 @@ ms.locfileid: "36032083"
   "userId": "String"
 }
 ```
+
 
 
 

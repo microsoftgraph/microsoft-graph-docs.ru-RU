@@ -1,16 +1,16 @@
 ---
 title: Действие sync
 description: Пока не задокументировано.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cfb392b6849ac66ad163c5641ef0420b7e5dc52a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b7b3ced55f3a9ce94af3812538411aa0f283c18e
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974691"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362430"
 ---
 # <a name="sync-action"></a>Действие синхронизации
 
@@ -42,14 +42,14 @@ POST /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}/
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|syncType|[Девицеманажементексчанжеконнекторсинктипе](../resources/intune-onboarding-devicemanagementexchangeconnectorsynctype.md)|Тип выполняемой синхронизации (синхронизируется все или только изменения).|
+|syncType|[девицеманажементексчанжеконнекторсинктипе](../resources/intune-onboarding-devicemanagementexchangeconnectorsynctype.md)|Тип выполняемой синхронизации (синхронизируется все или только изменения).|
 
 
 
@@ -76,6 +76,7 @@ Content-length: 31
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

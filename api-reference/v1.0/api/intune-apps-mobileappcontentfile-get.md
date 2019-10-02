@@ -1,16 +1,16 @@
 ---
 title: Get mobileAppContentFile
 description: Чтение свойств и связей объекта mobileAppContentFile.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4aa18879fd09eda0d4e73b9e5a5d414381e87a8a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: df0d3fcb294fe331ad15750e20049ec88b2798c8
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36002008"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358223"
 ---
 # <a name="get-mobileappcontentfile"></a>Get mobileAppContentFile
 
@@ -45,7 +45,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCont
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -82,6 +82,7 @@ Content-Length: 491
   }
 }
 ```
+
 
 
 

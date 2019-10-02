@@ -2,15 +2,15 @@
 title: Регистрация устройств для управления в Intune
 description: " (BYOD) регистрация позволяет пользователям регистрировать личные телефоны, Планшетные ПК или ПК. Регистрация по программе \"Корпоративное устройство\" (COD) обеспечивает такие сценарии управления, как удаленная очистка, использование общих устройств или сходство пользователя для устройства."
 localization_priority: Normal
-author: tfitzmac
+author: davidmu1
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: e78fda940a62490d88921f6286d6421f14de5a96
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 54a2a8bb3901f1a6938401963e8efcbd9e02f194
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037571"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360589"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Регистрация устройств для управления в Intune
 
@@ -45,3 +45,4 @@ ms.locfileid: "36037571"
 - [Состояние токена VPP](intune-onboarding-vpptokenstate.md)
 - [Состояние синхронизации токена VPP](intune-onboarding-vpptokensyncstatus.md)
 - [Использование ПИН-кода в Windows Hello для бизнеса](intune-onboarding-windowshelloforbusinesspinusage.md)
+

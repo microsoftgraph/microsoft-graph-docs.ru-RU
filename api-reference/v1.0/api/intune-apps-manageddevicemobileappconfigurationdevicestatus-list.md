@@ -1,16 +1,16 @@
 ---
 title: Список Манажеддевицемобилеаппконфигуратиондевицестатусес
 description: Список свойств и связей объектов managedDeviceMobileAppConfigurationDeviceStatus.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d6223e89e4ee59d2975fc68f55542d108f06abd0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e5a1bb26bdf2a69c67259ddcc316f96b419fcb87
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36014013"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358580"
 ---
 # <a name="list-manageddevicemobileappconfigurationdevicestatuses"></a>Список Манажеддевицемобилеаппконфигуратиондевицестатусес
 
@@ -42,7 +42,7 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -79,6 +79,7 @@ Content-Length: 563
   ]
 }
 ```
+
 
 
 

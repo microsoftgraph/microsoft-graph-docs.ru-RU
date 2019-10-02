@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Импортедвиндовсаутопилотдевицеидентитюплоад
 description: Импорт устройств с автопилотом Windows с помощью функции отправки.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cc1042b353a40af676b80c673e8558a2f7a643a4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b409e4a3d91e28c4c6e751147824448ca9cdcb58
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027365"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356599"
 ---
 # <a name="importedwindowsautopilotdeviceidentityupload-resource-type"></a>Тип ресурса Импортедвиндовсаутопилотдевицеидентитюплоад
 
@@ -32,13 +32,13 @@ ms.locfileid: "36027365"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|GUID объекта|
-|Креатеддатетимеутк|DateTimeOffset|Дата и время создания объекта.|
+|креатеддатетимеутк|DateTimeOffset|Дата и время создания объекта.|
 |status|[importedWindowsAutopilotDeviceIdentityUploadStatus](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)|Состояние отправки. Возможные значения: `noUpload`, `pending`, `complete`, `error`.|
 
-## <a name="relationships"></a>Отношения
-|Отношение|Тип|Описание|
+## <a name="relationships"></a>Связи
+|Связь|Тип|Описание|
 |:---|:---|:---|
-|Девицеидентитиес|Коллекция [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)|Коллекция всех устройств автопилота в рамках этой отправки.|
+|девицеидентитиес|Коллекция [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)|Коллекция всех устройств автопилота в рамках этой отправки.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -56,6 +56,7 @@ ms.locfileid: "36027365"
   "status": "String"
 }
 ```
+
 
 
 

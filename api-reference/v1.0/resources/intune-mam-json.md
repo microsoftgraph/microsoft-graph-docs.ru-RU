@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Json
 description: Представляет данные, возвращаемые в формате JSON.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 94142dd1400a344ffa75d9ab49835c1a17e5365a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dfda067a47a4b4f4f4421b56ba0b4bd7bbe3876e
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36038110"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356445"
 ---
 # <a name="json-resource-type"></a>Тип ресурса Json
 
@@ -22,7 +22,7 @@ ms.locfileid: "36038110"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -48,5 +48,6 @@ ms.locfileid: "36038110"
 
 }
 -->
+
 
 

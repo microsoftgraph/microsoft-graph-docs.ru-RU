@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса deviceAndAppManagementAssignmentTarget
 description: Базовый тип для объектов назначения.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e6b82ecc36c4fe44cb1bc7faced691a0e8f90ee9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 008522c21c5c447d6ed1b17d045c0d9ee715cc6a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036997"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354002"
 ---
 # <a name="deviceandappmanagementassignmenttarget-resource-type"></a>Тип ресурса deviceAndAppManagementAssignmentTarget
 
@@ -22,7 +22,7 @@ ms.locfileid: "36036997"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -37,6 +37,7 @@ ms.locfileid: "36036997"
   "@odata.type": "#microsoft.graph.deviceAndAppManagementAssignmentTarget"
 }
 ```
+
 
 
 

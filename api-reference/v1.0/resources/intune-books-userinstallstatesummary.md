@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса userInstallStateSummary
 description: Содержит свойства сводки по состоянию установки для пользователя.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 04b551a408843e9951c2ba2626551464d8e356f6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 407dfca3235111ab58ee9327b1a7cee09f5a568b
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028786"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360435"
 ---
 # <a name="userinstallstatesummary-resource-type"></a>Тип ресурса userInstallStateSummary
 
@@ -36,8 +36,8 @@ ms.locfileid: "36028786"
 |failedDeviceCount|Int32|Количество устройств со сбоями.|
 |notInstalledDeviceCount|Int32|Количество не установленных устройств.|
 
-## <a name="relationships"></a>Отношения
-|Отношение|Тип|Описание|
+## <a name="relationships"></a>Связи
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |deviceStates|Коллекция [deviceInstallState](../resources/intune-books-deviceinstallstate.md)|Состояние установки электронной книги.|
 
@@ -59,6 +59,7 @@ ms.locfileid: "36028786"
   "notInstalledDeviceCount": 1024
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: тип перечисления Комплианцестатус
 description: Пока не задокументировано.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: bad81de95b05c91f63653fc9122bb3031da31fae
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 808b7718a94a6b8dd771f5eacc6c046963eceeca
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037046"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356088"
 ---
 # <a name="compliancestatus-enum-type"></a>тип перечисления Комплианцестатус
 
@@ -22,13 +22,14 @@ ms.locfileid: "36037046"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Пока не задокументировано.|
-|Нотаппликабле|1,1|Пока не задокументировано.|
+|нотаппликабле|1,1|Пока не задокументировано.|
 |совместимо|2|Пока не задокументировано.|
 |исправленных|4|Пока не задокументировано.|
 |Несоответствующих|SP4|Пока не задокументировано.|
 |error|17:00|Пока не задокументировано.|
 |противоречивы|6 |Пока не задокументировано.|
-|Нотассигнед|7 |Пока не задокументировано.|
+|нотассигнед|7 |Пока не задокументировано.|
+
 
 
 

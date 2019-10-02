@@ -1,16 +1,16 @@
 ---
 title: Update auditEvent
 description: Обновление свойств объекта auditEvent.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cc81661d6e117b59050c6f69095bb101a5de90d3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e2c0d3aa1e92bd8a255deb40ffd95e3e62289dbf
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013572"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358020"
 ---
 # <a name="update-auditevent"></a>Update auditEvent
 
@@ -42,7 +42,7 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [auditEvent](../resources/intune-auditing-auditevent.md) в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта [auditEvent](../resources/intune-auditing-auditevent.md).
@@ -169,6 +169,7 @@ Content-Length: 1439
   "category": "Category value"
 }
 ```
+
 
 
 

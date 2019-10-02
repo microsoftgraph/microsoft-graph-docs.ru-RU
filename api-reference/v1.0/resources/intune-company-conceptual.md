@@ -2,15 +2,15 @@
 title: Условия и условия компании в Microsoft Intune — API Microsoft Graph
 description: Перечисление конечных точек API Microsoft Graph для Intune (REST), которые поддерживают условия и условия компании.
 localization_priority: Normal
-author: tfitzmac
+author: davidmu1
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 31178d6acccdae972ead9941feb2a8f98b51a7ba
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f58a3b5bcdaa8c35bb0b9ea0f60261909705519e
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028772"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360421"
 ---
 # <a name="company-terms-and-conditions-in-microsoft-intune"></a>Корпоративные условия в Microsoft Intune
 
@@ -25,3 +25,4 @@ ms.locfileid: "36028772"
 - [Условия](intune-companyterms-termsandconditions.md)
 - [Состояние принятия условий](intune-companyterms-termsandconditionsacceptancestatus.md)
 - [Назначение условий](intune-companyterms-termsandconditionsassignment.md)
+

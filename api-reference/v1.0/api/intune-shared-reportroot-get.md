@@ -1,16 +1,16 @@
 ---
 title: Get reportRoot
 description: Чтение свойств и связей объекта reportRoot.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b767ae43a4b38a86665ad2f9d67c89acca33f81
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b2c49ad552d66fad5210817a4aeb4cf930a62dcc
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023414"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361380"
 ---
 # <a name="get-reportroot"></a>Get reportRoot
 
@@ -46,7 +46,7 @@ GET /reports
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -73,6 +73,7 @@ Content-Length: 124
   }
 }
 ```
+
 
 
 

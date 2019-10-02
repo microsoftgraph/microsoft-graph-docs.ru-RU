@@ -1,16 +1,16 @@
 ---
 title: Обновление объекта deviceInstallState
 description: Обновление свойств объекта deviceInstallState.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5da7df5df6966cabf5b2435057a09399c00f8152
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 86ea7e0963cd33efd284a66c34d10d27d80932a9
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36015868"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354807"
 ---
 # <a name="update-deviceinstallstate"></a>Обновление объекта deviceInstallState
 
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [deviceInstallState](../resources/intune-books-deviceinstallstate.md) в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [deviceInstallState](../resources/intune-books-deviceinstallstate.md).
@@ -107,6 +107,7 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
+
 
 
 

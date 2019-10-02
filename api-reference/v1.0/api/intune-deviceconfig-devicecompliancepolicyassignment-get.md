@@ -1,16 +1,16 @@
 ---
 title: Get deviceCompliancePolicyAssignment
 description: Чтение свойств и связей объекта deviceCompliancePolicyAssignment.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9c2eb9b649a24d09a78334a4f2052acb9e5cd657
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0360fe19a6c571b42207428af191efecc7df033f
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019361"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354184"
 ---
 # <a name="get-devicecompliancepolicyassignment"></a>Get deviceCompliancePolicyAssignment
 
@@ -45,7 +45,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assign
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -76,6 +76,7 @@ Content-Length: 250
   }
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов iosDeviceFeaturesConfiguration
 description: Список свойств и связей объектов iosDeviceFeaturesConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f941fca80c6ccf39f806bf1eb4b4407a8ef97966
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ca7c7e0a0c9b6317bd9e39681b5fe146b6838344
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018920"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37366372"
 ---
 # <a name="list-iosdevicefeaturesconfigurations"></a>Перечисление объектов iosDeviceFeaturesConfiguration
 
@@ -42,7 +42,7 @@ GET /deviceManagement/deviceConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -137,6 +137,7 @@ Content-Length: 2461
   ]
 }
 ```
+
 
 
 

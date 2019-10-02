@@ -1,16 +1,16 @@
 ---
 title: Получение объекта deviceEnrollmentWindowsHelloForBusinessConfiguration
 description: Чтение свойств и связей объекта deviceEnrollmentWindowsHelloForBusinessConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a5bf52a3552b250c9c5a2f8a230378a41b7026bf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 193bc257d663ff8b5c21ef347e148edb0b52f3d4
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36017933"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362535"
 ---
 # <a name="get-deviceenrollmentwindowshelloforbusinessconfiguration"></a>Получение объекта deviceEnrollmentWindowsHelloForBusinessConfiguration
 
@@ -45,7 +45,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -91,6 +91,7 @@ Content-Length: 860
   }
 }
 ```
+
 
 
 

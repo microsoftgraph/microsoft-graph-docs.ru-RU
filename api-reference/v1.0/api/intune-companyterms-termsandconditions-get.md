@@ -1,16 +1,16 @@
 ---
 title: Get termsAndConditions
 description: Чтение свойств и связей объекта termsAndConditions.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 276ce56106ec59ee645d18a06539550256fa6da4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c9f73d36c1dfacaf56e90db16c7335fe0865702d
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019865"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357804"
 ---
 # <a name="get-termsandconditions"></a>Get termsAndConditions
 
@@ -46,7 +46,7 @@ GET /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatus
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -82,6 +82,7 @@ Content-Length: 484
   }
 }
 ```
+
 
 
 

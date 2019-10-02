@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса configurationManagerClientEnabledFeatures
 description: Включенные клиентом функции диспетчера конфигураций
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 520b21445d4c5a61755ddc78c65b9999a7e45ff0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0c68fa195584c8d30cbe6a9b942a453b4f6a9218
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027498"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357040"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>Тип ресурса configurationManagerClientEnabledFeatures
 
@@ -28,7 +28,7 @@ ms.locfileid: "36027498"
 |compliancePolicy|Boolean|Управляется ли Intune политикой соответствия требованиям|
 |windowsUpdateForBusiness|Boolean|Управляет ли Intune Центром обновления Windows для бизнеса|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -49,6 +49,7 @@ ms.locfileid: "36027498"
   "windowsUpdateForBusiness": true
 }
 ```
+
 
 
 

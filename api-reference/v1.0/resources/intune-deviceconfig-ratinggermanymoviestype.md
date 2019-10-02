@@ -1,16 +1,16 @@
 ---
 title: тип перечисления Ратингжерманимовиестипе
 description: Метки оценок фильмов в Германии
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4b4115eaf728c3407416b2d0209757fb1feafd75
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 15cfd5b47ae217b168dc99cfbf305622060eb5b2
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031264"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356123"
 ---
 # <a name="ratinggermanymoviestype-enum-type"></a>тип перечисления Ратингжерманимовиестипе
 
@@ -21,13 +21,14 @@ ms.locfileid: "36031264"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Аллалловед|нуль|Значение по умолчанию, разрешить все содержимое фильмов|
-|Аллблоккед|1,1|Не разрешать никакие видеоролики|
+|аллалловед|нуль|Значение по умолчанию, разрешить все содержимое фильмов|
+|аллблоккед|1,1|Не разрешать никакие видеоролики|
 |обобщен|2|AB 0 Жахрен, без ограничений по возрасту|
 |agesAbove6|4|AB 6 Жахрен, от 6 лет и старше|
 |agesAbove12|SP4|AB 12 Жахрен, от 12 лет до 12 лет|
 |agesAbove16|17:00|AB 16 Жахрен, от 16 лет до 16 лет|
 |взрослые|6 |Только для Жахрен, только для взрослых|
+
 
 
 

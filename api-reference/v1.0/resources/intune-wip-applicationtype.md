@@ -1,16 +1,16 @@
 ---
 title: тип перечисления Аппликатионтипе
 description: Возможные типы приложений
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0bd699f50c23f0d348a23460f276f644d181674c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 749b80808de9516b6950b6df231c0da3f5c3c3fb
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036715"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356683"
 ---
 # <a name="applicationtype-enum-type"></a>тип перечисления Аппликатионтипе
 
@@ -23,6 +23,7 @@ ms.locfileid: "36036715"
 |:---|:---|:---|
 |Гринвич|1,1|Универсальное приложение Windows|
 |системной|2|Классическое приложение Windows|
+
 
 
 

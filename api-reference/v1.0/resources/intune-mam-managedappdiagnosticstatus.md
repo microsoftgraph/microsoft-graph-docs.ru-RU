@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса managedAppDiagnosticStatus
 description: Представляет состояние диагностики.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 79a89b7084ea006352ad0bc423d0833acfaae86e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 33a975318854ab8bfec35ca257ee0c59fc29c188
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36038047"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356368"
 ---
 # <a name="managedappdiagnosticstatus-resource-type"></a>Тип ресурса managedAppDiagnosticStatus
 
@@ -25,7 +25,7 @@ ms.locfileid: "36038047"
 |state|String|Состояние операции|
 |mitigationInstruction|String|Инструкции по исправлению неудачной проверки|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -43,6 +43,7 @@ ms.locfileid: "36038047"
   "mitigationInstruction": "String"
 }
 ```
+
 
 
 

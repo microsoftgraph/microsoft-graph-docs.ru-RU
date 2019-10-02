@@ -1,16 +1,16 @@
 ---
 title: Список объектов deviceManagementTroubleshootingEvent
 description: Список свойств и связей объектов deviceManagementTroubleshootingEvent.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9ba8093c839bba5bb79c823ef871bb455b2bd0cc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 797eb4512b38cf19403581d6aae7dc7f5969275c
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023288"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361086"
 ---
 # <a name="list-devicemanagementtroubleshootingevents"></a>Список объектов deviceManagementTroubleshootingEvent
 
@@ -42,7 +42,7 @@ GET /deviceManagement/troubleshootingEvents
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -74,6 +74,7 @@ Content-Length: 277
   ]
 }
 ```
+
 
 
 

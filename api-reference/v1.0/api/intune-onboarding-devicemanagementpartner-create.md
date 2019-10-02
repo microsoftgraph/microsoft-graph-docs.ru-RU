@@ -1,16 +1,16 @@
 ---
 title: Создание объекта deviceManagementPartner
 description: Создание объекта deviceManagementPartner.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bb9f5ab46787d0279046a6aad38bc8d701517a94
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e14c043bff85677a305d41b2b0b5807fe8c9dfcf
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35990584"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362402"
 ---
 # <a name="create-devicemanagementpartner"></a>Создание объекта deviceManagementPartner
 
@@ -42,7 +42,7 @@ POST /deviceManagement/deviceManagementPartners
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта deviceManagementPartner в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта deviceManagementPartner.
@@ -106,6 +106,7 @@ Content-Length: 551
   "whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime": "2016-12-31T23:58:42.2131231-08:00"
 }
 ```
+
 
 
 

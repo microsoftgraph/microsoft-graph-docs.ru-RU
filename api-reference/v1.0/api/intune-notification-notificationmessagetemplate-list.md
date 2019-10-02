@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов notificationMessageTemplate
 description: Список свойств и связей объектов notificationMessageTemplate.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b8d2794ff1029c00204faf5e81d51bf83a33f927
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: eeab36265d6da8ae4c44cf61be5ad2edabfac002
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974803"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362802"
 ---
 # <a name="list-notificationmessagetemplates"></a>Перечисление объектов notificationMessageTemplate
 
@@ -42,7 +42,7 @@ GET /deviceManagement/notificationMessageTemplates
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -76,6 +76,7 @@ Content-Length: 367
   ]
 }
 ```
+
 
 
 

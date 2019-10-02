@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса user
 description: Представляет объект пользователя Azure Active Directory.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d8fc3604329a5062a8fe1afb90c2ac64f52f0bed
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 15fca0cedc6fe1da81da25688bbc447c1f8f475f
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036836"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360106"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -21,7 +21,7 @@ ms.locfileid: "36036836"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список](../api/intune-shared-user-list.md) объектов Users.|Коллекция объектов [user](../resources/intune-shared-user.md)|Список свойств и связей объектов [user](../resources/intune-shared-user.md).|
+|[Список объектов Users](../api/intune-shared-user-list.md) .|Коллекция объектов [user](../resources/intune-shared-user.md)|Список свойств и связей объектов [user](../resources/intune-shared-user.md).|
 |[Получение объекта User](../api/intune-shared-user-get.md) .|Коллекция объектов [user](../resources/intune-shared-user.md)|Чтение свойств и связей объекта [user](../resources/intune-shared-user.md).|
 |[Создание объекта User](../api/intune-shared-user-create.md) .|Коллекция объектов [user](../resources/intune-shared-user.md)|Создание объекта [user](../resources/intune-shared-user.md).|
 |[Удаление пользователя](../api/intune-shared-user-delete.md).|Нет|Удаляет объект [user](../resources/intune-shared-user.md).|
@@ -41,8 +41,8 @@ ms.locfileid: "36036836"
 |deviceEnrollmentLimit|Int32|Максимальное количество устройств, которые разрешено зарегистрировать пользователю. Допустимые значения: 5 или 1000.|
 
 
-## <a name="relationships"></a>Отношения
-|Отношение|Тип|Описание|
+## <a name="relationships"></a>Связи
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |**Управление устройствами**|
 |managedDevices|Коллекция [managedDevice](../resources/intune-devices-manageddevice.md)|Управляемые устройства, связанные с пользователем.|
@@ -74,3 +74,4 @@ ms.locfileid: "36036836"
     "Warning: Resource microsoft.graph.user is defined in multiple files: /api-reference/v1.0/resources/intune_shared_user.md, /api-reference/v1.0/resources/user.md",
   ]
 }-->
+

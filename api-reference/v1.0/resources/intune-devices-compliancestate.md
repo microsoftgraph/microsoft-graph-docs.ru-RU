@@ -1,16 +1,16 @@
 ---
 title: тип перечисления Комплианцестате
 description: Состояние соответствия требованиям.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 20890001aee15a56d5338964b931047033cf4a72
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 01c0a3443eae87fb69b4b6482a2da2c2e067c5d1
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030886"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357061"
 ---
 # <a name="compliancestate-enum-type"></a>тип перечисления Комплианцестате
 
@@ -26,8 +26,9 @@ ms.locfileid: "36030886"
 |несоответствующих|2|Устройство не совместимо и заблокировано из корпоративных ресурсов.|
 |противоречивы|4|Конфликт с другими правилами.|
 |error|SP4|Ошибка|
-|Инграцепериод|254|Устройство не соответствует требованиям, но имеет доступ к корпоративным ресурсам|
-|Конфигманажер|255|Управление с помощью диспетчера конфигураций|
+|инграцепериод|254|Устройство не соответствует требованиям, но имеет доступ к корпоративным ресурсам|
+|конфигманажер|255|Управление с помощью диспетчера конфигураций|
+
 
 
 

@@ -2,15 +2,15 @@
 title: Управление затратами на телекоммуникации в Microsoft Intune
 description: Используя Saaswedo (службу управления затратами на телекоммуникации), которая интегрируется с Intune, вы можете ограничить использование данных и роуминг на корпоративных устройствах. Эта служба позволяет настроить и применить ограничения на использование, а также отправлять пользователям оповещения при превышении настроенного порогового значения. Кроме того, вы можете настроить эту службу на выполнение различных действий, таких как отключение роуминга при превышении порогового значения. Отчеты об использовании данных и сведения о мониторинге доступны в консоли Saaswedo. Прежде чем использовать службу управления затратами на телекоммуникации Saaswedo с Intune, необходимо настроить параметры в консоли Saaswedo и в Intune. Нужно включить соединение как для службы Saaswedo, так и для Intune. Если соединение активировано только со стороны службы Saaswedo, Intune примет соединение, но проигнорирует его.
 localization_priority: Normal
-author: tfitzmac
+author: davidmu1
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: b2d581c6c10a1782a1b75be37f7b040f3c9dbd3b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9cf9430c1cf090b701def7f1a484c4369926f274
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036815"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355745"
 ---
 # <a name="telecom-expense-management-in-microsoft-intune"></a>Управление затратами на телекоммуникации в Microsoft Intune
 
@@ -21,3 +21,4 @@ ms.locfileid: "36036815"
 Для управления затратами на телекоммуникации в Intune используются перечисленные ниже ресурсы Graph.  
 
 - [Партнер по управлению затратами на телекоммуникации](intune-tem-telecomexpensemanagementpartner.md)
+

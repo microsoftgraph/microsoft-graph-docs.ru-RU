@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса deviceCompliancePolicySettingState
 description: Состояние параметров политики соответствия требованиям для определенного устройства.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 05f79a5967ae97eb825d85732f207682d9add645
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e26beda0907c8a8e56c202088dfaad666b795ee7
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028464"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359623"
 ---
 # <a name="devicecompliancepolicysettingstate-resource-type"></a>Тип ресурса deviceCompliancePolicySettingState
 
@@ -24,7 +24,7 @@ ms.locfileid: "36028464"
 |setting|String|Параметр для отчета|
 |settingName|String|Локализованное или понятное имя параметра для отчета|
 |instanceDisplayName|String|Имя экземпляра параметра для отчета|
-|state|[Комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние соответствия для параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|state|[комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние соответствия для параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |errorCode|Int64|Код ошибки для параметра|
 |errorDescription|String|Описание ошибки|
 |userId|String|ИД пользователя|
@@ -34,7 +34,7 @@ ms.locfileid: "36028464"
 |sources|Коллекция [settingSource](../resources/intune-deviceconfig-settingsource.md)|Соответствующие политики|
 |currentValue|String|Текущее значение параметра на устройстве|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -67,6 +67,7 @@ ms.locfileid: "36028464"
   "currentValue": "String"
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Get enrollmentTroubleshootingEvent
 description: Чтение свойств и связей объекта enrollmentTroubleshootingEvent.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6686db8c7be23805849542b03ad93392451943d2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 65b6c0f81afbc74bb99093671f67b59c77726b0c
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025668"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361051"
 ---
 # <a name="get-enrollmenttroubleshootingevent"></a>Get enrollmentTroubleshootingEvent
 
@@ -45,7 +45,7 @@ GET /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEven
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -83,6 +83,7 @@ Content-Length: 601
   }
 }
 ```
+
 
 
 

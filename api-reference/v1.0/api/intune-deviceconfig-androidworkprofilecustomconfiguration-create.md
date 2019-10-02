@@ -1,16 +1,16 @@
 ---
 title: Создание Андроидворкпрофилекустомконфигуратион
 description: Создание нового объекта Андроидворкпрофилекустомконфигуратион.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c70226b876054c5a01edbae3c9d3fee000bfd422
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2f3fefdfb311a00bef04a6bb28753d58253393b7
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997836"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357565"
 ---
 # <a name="create-androidworkprofilecustomconfiguration"></a>Создание Андроидворкпрофилекустомконфигуратион
 
@@ -42,7 +42,7 @@ POST /deviceManagement/deviceConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Андроидворкпрофилекустомконфигуратион в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Андроидворкпрофилекустомконфигуратион.
@@ -114,6 +114,7 @@ Content-Length: 585
   ]
 }
 ```
+
 
 
 

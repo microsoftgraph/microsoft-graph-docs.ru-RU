@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса androidMinimumOperatingSystem
 description: Содержит свойства для минимальной версии операционной системы, необходимой для мобильного приложения Android.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 100a6923ab64a8a2d8629ccd6aace36db9263fdd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1ace7558f2c71a9dbff31fa97685ab9b42e8d547
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032370"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356319"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>Тип ресурса androidMinimumOperatingSystem
 
@@ -30,7 +30,7 @@ ms.locfileid: "36032370"
 |v5_0|Boolean|Версия 5.0 или выше.|
 |v5_1|Boolean|Версия 5.1 или выше.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -53,6 +53,7 @@ ms.locfileid: "36032370"
   "v5_1": true
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Действие assign
 description: Пока не задокументировано.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b308240fa6345143c9a0cd4d8a2bc6aa417d79ee
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bb02b185821305f176effb245cc6824683811a5c
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36002358"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355430"
 ---
 # <a name="assign-action"></a>Действие назначения
 
@@ -42,7 +42,7 @@ POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigu
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -84,6 +84,7 @@ Content-length: 293
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Создание объекта windowsPhone81GeneralConfiguration
 description: Создает объект windowsPhone81GeneralConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 29885620b5d7303fa10a8f335b45d28db220a364
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1de8e06cbc1060a1735c3640d5b440aae80bba0e
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997024"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364790"
 ---
 # <a name="create-windowsphone81generalconfiguration"></a>Создание объекта windowsPhone81GeneralConfiguration
 
@@ -42,7 +42,7 @@ POST /deviceManagement/deviceConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта windowsPhone81GeneralConfiguration в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта windowsPhone81GeneralConfiguration.
@@ -61,7 +61,7 @@ POST /deviceManagement/deviceConfigurations
 |cameraBlocked|Boolean|Указывает, следует ли заблокировать камеру.|
 |cellularBlockWifiTethering|Boolean|Указывает, следует ли заблокировать модем Wi-Fi. Ни на что не влияет, если Wi-Fi заблокирован.|
 |compliantAppsList|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список приложений, соответствующих требованиям (список разрешений или блокировок, определяется свойством CompliantAppListType). Эта коллекция может содержать не более 10 000 элементов.|
-|compliantAppListType|[Апплисттипе](../resources/intune-deviceconfig-applisttype.md)|Список, указанный с помощью свойства AppComplianceList. Возможные значения: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
+|compliantAppListType|[апплисттипе](../resources/intune-deviceconfig-applisttype.md)|Список, указанный с помощью свойства AppComplianceList. Возможные значения: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |diagnosticDataBlockSubmission|Логический|Указывает, следует ли заблокировать отправку диагностических данных.|
 |emailBlockAddingAccounts|Boolean|Указывает, следует ли заблокировать пользовательские учетные записи электронной почты.|
 |locationServicesBlocked|Boolean|Указывает, следует ли заблокировать службы определения местоположения.|
@@ -74,7 +74,7 @@ POST /deviceManagement/deviceConfigurations
 |passwordMinimumCharacterSetCount|Int32|Количество наборов символов, которые должен содержать пароль.|
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, которые следует заблокировать. Допустимые значения: от 0 до 24.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Количество неудачных попыток входа до восстановления заводских настроек.|
-|passwordRequiredType|[Рекуиредпассвордтипе](../resources/intune-deviceconfig-requiredpasswordtype.md)|Необходимый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordRequiredType|[рекуиредпассвордтипе](../resources/intune-deviceconfig-requiredpasswordtype.md)|Необходимый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordRequired|Boolean|Указывает, обязательно ли использовать пароль.|
 |screenCaptureBlocked|Boolean|Указывает, следует ли запретить делать снимки экрана.|
 |storageBlockRemovableStorage|Boolean|Указывает, следует ли запретить использовать съемные носители.|
@@ -198,6 +198,7 @@ Content-Length: 1633
   "windowsStoreBlocked": true
 }
 ```
+
 
 
 

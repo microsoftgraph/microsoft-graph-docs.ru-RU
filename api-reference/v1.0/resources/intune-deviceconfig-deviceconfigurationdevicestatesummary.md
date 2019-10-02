@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса deviceConfigurationDeviceStateSummary
 description: Пока не задокументировано.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c34a95ceb54cbdd37ca935793e4a9007b20cc6be
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bcc2f390402ddcf48b772c5905956a9e11195a56
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031657"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359553"
 ---
 # <a name="deviceconfigurationdevicestatesummary-resource-type"></a>Тип ресурса deviceConfigurationDeviceStateSummary
 
@@ -36,7 +36,7 @@ ms.locfileid: "36031657"
 |errorDeviceCount|Int32|Количество устройств с ошибками.|
 |conflictDeviceCount|Int32|Количество конфликтующих устройств|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -60,6 +60,7 @@ ms.locfileid: "36031657"
   "conflictDeviceCount": 1024
 }
 ```
+
 
 
 

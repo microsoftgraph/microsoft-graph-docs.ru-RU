@@ -1,16 +1,16 @@
 ---
 title: Обновление объекта windows10CustomConfiguration
 description: Обновление свойств объекта windows10CustomConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4eef86737b84e8f282316b020b7b6ff51ce0ecb5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e4067e25b8a97fbc57a5168c16ded515e9a6092e
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36016946"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37365567"
 ---
 # <a name="update-windows10customconfiguration"></a>Обновление объекта windows10CustomConfiguration
 
@@ -42,7 +42,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [windows10CustomConfiguration](../resources/intune-deviceconfig-windows10customconfiguration.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [windows10CustomConfiguration](../resources/intune-deviceconfig-windows10customconfiguration.md).
@@ -114,6 +114,7 @@ Content-Length: 576
   ]
 }
 ```
+
 
 
 

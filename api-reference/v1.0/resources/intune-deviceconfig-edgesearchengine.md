@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса edgeSearchEngine
 description: Позволяет ИТ-администраторам предварительно задавать поисковую систему по умолчанию для управляемых устройств.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3d733abca0dd390e83e51b25afd1ba7e86886b3f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a3e03bd601bbe6ad037ee59227ca2ed9ab5cb611
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028380"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359343"
 ---
 # <a name="edgesearchengine-resource-type"></a>Тип ресурса edgeSearchEngine
 
@@ -26,7 +26,7 @@ ms.locfileid: "36028380"
 |:---|:---|:---|
 |edgeSearchEngineType|[edgeSearchEngineType](../resources/intune-deviceconfig-edgesearchenginetype.md)|Позволяет ИТ-администраторам предварительно задавать поисковую систему по умолчанию для управляемых устройств. Возможные значения: `default`, `bing`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -42,6 +42,7 @@ ms.locfileid: "36028380"
   "edgeSearchEngineType": "String"
 }
 ```
+
 
 
 

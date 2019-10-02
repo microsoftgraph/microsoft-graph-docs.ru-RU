@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса iosHomeScreenFolderPage
 description: Папка, содержащая приложения с начального экрана
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 76a8237442e0e807e0a1383c8032cf4e6361516e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b80a4f41583617d32e514e29c791e000315593c5
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028212"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359105"
 ---
 # <a name="ioshomescreenfolderpage-resource-type"></a>Тип ресурса iosHomeScreenFolderPage
 
@@ -24,7 +24,7 @@ ms.locfileid: "36028212"
 |displayName|String|Имя страницы папки|
 |apps|Коллекция [iosHomeScreenApp](../resources/intune-deviceconfig-ioshomescreenapp.md)|Список приложений, которые отображаются на странице в папке. Эта коллекция может включать до 500 элементов.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -47,6 +47,7 @@ ms.locfileid: "36028212"
   ]
 }
 ```
+
 
 
 

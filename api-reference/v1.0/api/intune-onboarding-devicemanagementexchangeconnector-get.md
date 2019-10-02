@@ -1,16 +1,16 @@
 ---
 title: Get deviceManagementExchangeConnector
 description: Чтение свойств и связей объекта deviceManagementExchangeConnector.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7048cc9c3b14dec9f1053be2aa1a7c199635f498
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b74e3148f11f7dcf25197cfd222cc7cfcd1d19b3
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974711"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362479"
 ---
 # <a name="get-devicemanagementexchangeconnector"></a>Get deviceManagementExchangeConnector
 
@@ -45,7 +45,7 @@ GET /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -82,6 +82,7 @@ Content-Length: 580
   }
 }
 ```
+
 
 
 

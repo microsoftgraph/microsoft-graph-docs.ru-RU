@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса mobileAppCategory
 description: Содержит свойства для одной категории приложений Intune.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 82567e991e7528b6c77dfa3b9b0df4185784fdbb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: afadbc8ffb993ec6bcd62e7bcbde07c3f27711b2
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032195"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354093"
 ---
 # <a name="mobileappcategory-resource-type"></a>Тип ресурса mobileAppCategory
 
@@ -34,7 +34,7 @@ ms.locfileid: "36032195"
 |displayName|Строка|Имя категории приложений.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения mobileAppCategory.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -53,6 +53,7 @@ ms.locfileid: "36032195"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

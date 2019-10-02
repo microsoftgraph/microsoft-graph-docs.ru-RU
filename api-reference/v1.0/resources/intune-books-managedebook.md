@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса managedEBook
 description: Абстрактный класс, содержащий базовые свойства управляемой электронной книги.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 42d14dbd1c2afa6eb316bcb46cf3fe76bd0669e0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3288b86ec735b4480577bb36a604107a51bb4f7f
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028814"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360463"
 ---
 # <a name="managedebook-resource-type"></a>Тип ресурса managedEBook
 
@@ -39,8 +39,8 @@ ms.locfileid: "36028814"
 |informationUrl|String|URL-адрес с дополнительными сведениями.|
 |privacyInformationUrl|String|URL-адрес заявления о конфиденциальности.|
 
-## <a name="relationships"></a>Отношения
-|Отношение|Тип|Описание|
+## <a name="relationships"></a>Связи
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)|Список назначений для этой электронной книги.|
 |installSummary|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|Общие сведения по установке мобильного приложения.|
@@ -74,6 +74,7 @@ ms.locfileid: "36028814"
   "privacyInformationUrl": "String"
 }
 ```
+
 
 
 

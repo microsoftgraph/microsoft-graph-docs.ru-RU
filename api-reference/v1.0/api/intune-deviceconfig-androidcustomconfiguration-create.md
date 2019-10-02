@@ -1,16 +1,16 @@
 ---
 title: Создание объекта androidCustomConfiguration
 description: Создание объекта androidCustomConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d0c56b8d52dcb7ea7a50c5b74305d9104e044d06
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f43d1f80211825788b06f6d4b893371e2cc96730
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020362"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357635"
 ---
 # <a name="create-androidcustomconfiguration"></a>Создание объекта androidCustomConfiguration
 
@@ -42,7 +42,7 @@ POST /deviceManagement/deviceConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта androidCustomConfiguration в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта androidCustomConfiguration.
@@ -114,6 +114,7 @@ Content-Length: 574
   ]
 }
 ```
+
 
 
 

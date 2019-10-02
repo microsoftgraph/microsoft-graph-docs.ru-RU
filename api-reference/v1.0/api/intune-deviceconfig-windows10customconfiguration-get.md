@@ -1,16 +1,16 @@
 ---
 title: Get windows10CustomConfiguration
 description: Чтение свойств и связей объекта windows10CustomConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0e1cce21eabd2ca82ceb73a22aae136916312c7a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c306cc7216f8f4b7a61c52f5f3cc14c2c76f70da
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36016912"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37365588"
 ---
 # <a name="get-windows10customconfiguration"></a>Get windows10CustomConfiguration
 
@@ -45,7 +45,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -87,6 +87,7 @@ Content-Length: 627
   }
 }
 ```
+
 
 
 

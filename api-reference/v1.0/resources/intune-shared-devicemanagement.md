@@ -2,15 +2,15 @@
 title: Тип ресурса deviceManagement
 description: 'Ресурс deviceManagement представляет контейнер, содержимое которого зависит от рабочего процесса, в том числе:  '
 localization_priority: Normal
-author: tfitzmac
+author: davidmu1
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8f8ef8fcb3d38ca46ab95e63a92e5f108d8a7782
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a323cc2925b022823289a5fae87832257f50a102
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036948"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360078"
 ---
 # <a name="devicemanagement-resource-type"></a>Тип ресурса deviceManagement
 
@@ -46,21 +46,21 @@ ms.locfileid: "36036948"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор устройства.|
-|**Настройка устройства**|
+|**Конфигурация устройства**|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Параметры уровня учетной записи.|
 |**Управление устройствами**|
 |subscriptionState|String|Состояние подписки на управление мобильными устройствами для клиента. Возможные значения: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
 |**Входящая миграция**|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|Ресурс intuneBrand содержит данные, которые используются для настройки внешнего вида приложений "Корпоративный портал" и веб-портала пользователя.|
 
-## <a name="relationships"></a>Отношения
-|Отношение|Тип|Описание|
+## <a name="relationships"></a>Связи
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |**Аудит**|
 |auditEvents|Коллекция [auditEvent](../resources/intune-auditing-auditevent.md)|События аудита|
 |**Корпоративные положения и условия**|
 |termsAndConditions|Коллекция [termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|Условия, связанные с управлением устройствами в компании.|
-|**Настройка устройства**|
+|**Конфигурация устройства**|
 |deviceCompliancePolicies|Коллекция [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|Политики соответствия устройств требованиям.|
 |deviceCompliancePolicyDeviceStateSummary|[deviceCompliancePolicyDeviceStateSummary](../resources/intune-deviceconfig-devicecompliancepolicydevicestatesummary.md)|Общие сведения о состоянии соответствия устройств требованиям для этой учетной записи.|
 |deviceCompliancePolicySettingStateSummaries|Коллекция [deviceCompliancePolicySettingStateSummary](../resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md)|Общие сведения о состоянии параметров политики соответствия требованиям для этой учетной записи.|
@@ -118,6 +118,7 @@ ms.locfileid: "36036948"
   "settings": {"@odata.type": "microsoft.graph.deviceManagementSettings"}
 }
 ```
+
 
 
 

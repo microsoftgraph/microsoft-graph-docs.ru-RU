@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса deleteUserFromSharedAppleDeviceActionResult
 description: Результат удаления пользователя с общего устройства Apple
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5dffabe173e1e0bd69cd1fab2da767131c3d246d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 88ed9a813b678381b32f2b054933e9d3ad28683d
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027484"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357033"
 ---
 # <a name="deleteuserfromsharedappledeviceactionresult-resource-type"></a>Тип ресурса deleteUserFromSharedAppleDeviceActionResult
 
@@ -30,7 +30,7 @@ ms.locfileid: "36027484"
 |lastUpdatedDateTime|DateTimeOffset|Время последнего обновления действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |userPrincipalName|String|Имя участника-пользователя для удаляемого пользователя|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -50,6 +50,7 @@ ms.locfileid: "36027484"
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

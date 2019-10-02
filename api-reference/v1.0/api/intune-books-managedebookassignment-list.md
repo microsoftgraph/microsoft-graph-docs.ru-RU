@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов managedEBookAssignment
 description: Список свойств и связей объектов managedEBookAssignment.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0a3328879ef187da7ac2de6bf7910d3ec2e14fc5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 56a32a324f60b714396391a49ab4c928148f8a81
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018360"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354660"
 ---
 # <a name="list-managedebookassignments"></a>Перечисление объектов managedEBookAssignment
 
@@ -42,7 +42,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -76,6 +76,7 @@ Content-Length: 300
   ]
 }
 ```
+
 
 
 

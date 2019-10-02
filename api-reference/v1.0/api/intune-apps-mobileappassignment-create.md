@@ -1,16 +1,16 @@
 ---
 title: Создание объекта mobileAppAssignment
 description: Создание объекта mobileAppAssignment.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3329b768e3e2151893b5886ed50d80b212e345f5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0bddcba906fe40becc9e3c32a4a2e31dc7277bba
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36002071"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358349"
 ---
 # <a name="create-mobileappassignment"></a>Создание объекта mobileAppAssignment
 
@@ -42,7 +42,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта mobileAppAssignment в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта mobileAppAssignment.
@@ -99,6 +99,7 @@ Content-Length: 322
   }
 }
 ```
+
 
 
 

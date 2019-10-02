@@ -1,16 +1,16 @@
 ---
 title: Создание объекта enrollmentConfigurationAssignment
 description: Создание объекта enrollmentConfigurationAssignment.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1981e11af78340aafd1126b3acd14a9c65470582
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d9f8f2e7b699966fb7e34066b71237201cba7955
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36024170"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362339"
 ---
 # <a name="create-enrollmentconfigurationassignment"></a>Создание объекта enrollmentConfigurationAssignment
 
@@ -42,7 +42,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта enrollmentConfigurationAssignment в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта enrollmentConfigurationAssignment.
@@ -89,6 +89,7 @@ Content-Length: 222
   }
 }
 ```
+
 
 
 

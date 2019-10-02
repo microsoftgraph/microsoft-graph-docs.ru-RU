@@ -1,16 +1,16 @@
 ---
 title: Get windowsUpdateForBusinessConfiguration
 description: Чтение свойств и связей объекта windowsUpdateForBusinessConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 380053285524f46da78a2ce09b24248d95c93a73
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fe44f0b077a8f83d435932f014be059883c68180
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018682"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364664"
 ---
 # <a name="get-windowsupdateforbusinessconfiguration"></a>Get windowsUpdateForBusinessConfiguration
 
@@ -45,7 +45,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -95,6 +95,7 @@ Content-Length: 1149
   }
 }
 ```
+
 
 
 

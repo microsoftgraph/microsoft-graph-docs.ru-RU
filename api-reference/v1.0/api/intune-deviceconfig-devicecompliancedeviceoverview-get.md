@@ -1,16 +1,16 @@
 ---
 title: Get deviceComplianceDeviceOverview
 description: Чтение свойств и связей объекта deviceComplianceDeviceOverview.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7d0aa8e970c2cf6317981a8a5250a8f4c95f7ffc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7f72d9f584b0cbb1926f5e7da14b78b8a696df9c
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997752"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357516"
 ---
 # <a name="get-devicecompliancedeviceoverview"></a>Get deviceComplianceDeviceOverview
 
@@ -45,7 +45,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/device
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -80,6 +80,7 @@ Content-Length: 367
   }
 }
 ```
+
 
 
 

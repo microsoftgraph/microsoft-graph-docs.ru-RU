@@ -1,16 +1,16 @@
 ---
 title: Действие wipeManagedAppRegistrationsByDeviceTag
 description: Стирает данные о регистрации приложений с указанным тегом приложения.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bea86526d1c8770ac1800442d5e0f2e06318fb58
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a5bb3db444086792a1ccc2ade6daa8ca2328ec99
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025724"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361219"
 ---
 # <a name="wipemanagedappregistrationsbydevicetag-action"></a>Действие wipeManagedAppRegistrationsByDeviceTag
 
@@ -43,7 +43,7 @@ POST /users/{usersId}/wipeManagedAppRegistrationsByDeviceTag
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -77,6 +77,7 @@ Content-length: 39
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Get iosStoreApp
 description: Чтение свойств и связей объекта iosStoreApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 58e66fe86523b8e5751e8847343814d203f933e0
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 7dc1a9721b6592ddf06a5d08bd710f901ea8ad1f
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196191"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355577"
 ---
 # <a name="get-iosstoreapp"></a>Get iosStoreApp
 
@@ -45,7 +45,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -106,6 +106,7 @@ Content-Length: 1287
   }
 }
 ```
+
 
 
 

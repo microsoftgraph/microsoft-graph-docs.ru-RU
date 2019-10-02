@@ -1,16 +1,16 @@
 ---
 title: Delete windowsUniversalAppX
 description: Удаляет объект windowsUniversalAppX.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5235d20b1086bee93d1172dd8c6a865ebc1ab090
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 55a681aeb447e58dcd2116cf8dc44f3ac8529abc
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36015980"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358062"
 ---
 # <a name="delete-windowsuniversalappx"></a>Delete windowsUniversalAppX
 
@@ -42,7 +42,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -61,6 +61,7 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

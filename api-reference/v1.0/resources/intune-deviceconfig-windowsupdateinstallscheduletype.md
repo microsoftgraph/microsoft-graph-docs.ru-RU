@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса windowsUpdateInstallScheduleType
 description: Пока не задокументировано.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 01b265d3375fc12d2efb81c899264504adf37182
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3291df9e721e8f0742e3eedcca241ddbcffbf83c
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030963"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357124"
 ---
 # <a name="windowsupdateinstallscheduletype-resource-type"></a>Тип ресурса windowsUpdateInstallScheduleType
 
@@ -22,7 +22,7 @@ ms.locfileid: "36030963"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -37,6 +37,7 @@ ms.locfileid: "36030963"
   "@odata.type": "#microsoft.graph.windowsUpdateInstallScheduleType"
 }
 ```
+
 
 
 

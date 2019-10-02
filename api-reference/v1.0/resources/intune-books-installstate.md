@@ -1,16 +1,16 @@
 ---
 title: тип перечисления Инсталлстате
 description: Возможные значения для состояния установки.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 418b21b61e892c6ec4c8e6439264dce60542204d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d86bd706eb2fc7702eef101797e7f1da326d4d16
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032020"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355955"
 ---
 # <a name="installstate-enum-type"></a>тип перечисления Инсталлстате
 
@@ -21,12 +21,13 @@ ms.locfileid: "36032020"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нотаппликабле|нуль|Неприменимо.|
+|нотаппликабле|нуль|Неприменимо.|
 |устанавлива|1,1|Устанавлива.|
 |сбоев|2|Сбоев.|
-|Нотинсталлед|4|Не установлено.|
-|Унинсталлфаилед|SP4|Не удалось выполнить удаление.|
+|нотинсталлед|4|Не установлено.|
+|унинсталлфаилед|SP4|Не удалось выполнить удаление.|
 |unknown|17:00|Найден.|
+
 
 
 

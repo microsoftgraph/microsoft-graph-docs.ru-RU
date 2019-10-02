@@ -1,16 +1,16 @@
 ---
 title: Удаление объекта deviceComplianceScheduledActionForRule
 description: Удаляет объект deviceComplianceScheduledActionForRule.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d75099c6e79eb41d61a9c925ba26da38f11e4401
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8d9f36bde1e6776aaebc25e73129757c5f2ed7a3
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36017737"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354191"
 ---
 # <a name="delete-devicecompliancescheduledactionforrule"></a>Удаление объекта deviceComplianceScheduledActionForRule
 
@@ -42,7 +42,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sch
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -61,6 +61,7 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicie
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

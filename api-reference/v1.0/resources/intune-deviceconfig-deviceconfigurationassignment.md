@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса deviceConfigurationAssignment
 description: Объект назначения конфигурации устройств назначает группу AAD определенной конфигурации устройств.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fcd13ad7884e572f60f642c087a30bada7dad7f7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: da23212914f7ffa5a04b1d976140e2baf69df11c
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031677"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359532"
 ---
 # <a name="deviceconfigurationassignment-resource-type"></a>Тип ресурса deviceConfigurationAssignment
 
@@ -33,7 +33,7 @@ ms.locfileid: "36031677"
 |id|String|Ключ назначения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения для конфигурации устройств.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -53,6 +53,7 @@ ms.locfileid: "36031677"
   }
 }
 ```
+
 
 
 

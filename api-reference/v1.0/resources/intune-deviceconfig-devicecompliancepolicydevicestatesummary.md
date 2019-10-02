@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса deviceCompliancePolicyDeviceStateSummary
 description: Пока не задокументировано.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3f1234fba81943d984758cd96a6b9f54480e813b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d6b631f2c8a38a8555c8b7dc543556ee9a1bc45e
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031747"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359616"
 ---
 # <a name="devicecompliancepolicydevicestatesummary-resource-type"></a>Тип ресурса deviceCompliancePolicyDeviceStateSummary
 
@@ -38,7 +38,7 @@ ms.locfileid: "36031747"
 |errorDeviceCount|Int32|Количество устройств с ошибками.|
 |conflictDeviceCount|Int32|Количество конфликтующих устройств|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -64,6 +64,7 @@ ms.locfileid: "36031747"
   "conflictDeviceCount": 1024
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: тип перечисления prereleaseFeatures
 description: Возможные значения для предварительных версий функций.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 8baa589d9a9426ee8a4dc5506ba5c9594792c093
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fa02678bcbed5111b8c9b67163e569a2f4b6fc1f
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028002"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359861"
 ---
 # <a name="prereleasefeatures-enum-type"></a>тип перечисления prereleaseFeatures
 
@@ -22,9 +22,10 @@ ms.locfileid: "36028002"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|Сеттингсонли|1,1|Только функции предварительной версии.|
-|Сеттингсандекспериментатионс|2|Параметры и эксперименты, которые предварительно выпускают функции.|
+|сеттингсонли|1,1|Только функции предварительной версии.|
+|сеттингсандекспериментатионс|2|Параметры и эксперименты, которые предварительно выпускают функции.|
 |notAllowed|4|Функции предварительной версии не разрешены.|
+
 
 
 

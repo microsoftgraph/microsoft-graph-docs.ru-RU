@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов iosStoreApp
 description: Список свойств и связей объектов iosStoreApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b0a324030d072231ed398d98da6541691a16d4e9
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 1f481ad15e46b4a43e1a2133ccf241bd43fdb3c0
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196184"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358840"
 ---
 # <a name="list-iosstoreapps"></a>Перечисление объектов iosStoreApp
 
@@ -42,7 +42,7 @@ GET /deviceAppManagement/mobileApps
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -105,6 +105,7 @@ Content-Length: 1371
   ]
 }
 ```
+
 
 
 

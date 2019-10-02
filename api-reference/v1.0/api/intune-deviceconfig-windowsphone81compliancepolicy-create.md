@@ -1,16 +1,16 @@
 ---
 title: Create windowsPhone81CompliancePolicy
 description: Создание объекта windowsPhone81CompliancePolicy.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a41ff2bb58ad3e13b21a6034045ebb0c7a62d48e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a860df4e769cbec81ce9e521d943f207ad8d963b
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018850"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364902"
 ---
 # <a name="create-windowsphone81compliancepolicy"></a>Create windowsPhone81CompliancePolicy
 
@@ -42,7 +42,7 @@ POST /deviceManagement/deviceCompliancePolicies
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта windowsPhone81CompliancePolicy в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта windowsPhone81CompliancePolicy.
@@ -60,7 +60,7 @@ POST /deviceManagement/deviceCompliancePolicies
 |passwordMinimumLength|Int32|Минимальная длина паролей.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Период бездействия (в минутах), по истечении которого будет запрашиваться ввод пароля.|
 |passwordMinimumCharacterSetCount|Int32|Количество наборов символов, которые требуются для пароля.|
-|passwordRequiredType|[Рекуиредпассвордтипе](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordRequiredType|[рекуиредпассвордтипе](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, которые следует заблокировать. Допустимые значения: от 0 до 24.|
 |passwordRequired|Логический|Определяет, нужно ли запрашивать ввод пароля.|
 |osMinimumVersion|String|Минимальная версия Windows Phone.|
@@ -128,6 +128,7 @@ Content-Length: 779
   "storageRequireEncryption": true
 }
 ```
+
 
 
 

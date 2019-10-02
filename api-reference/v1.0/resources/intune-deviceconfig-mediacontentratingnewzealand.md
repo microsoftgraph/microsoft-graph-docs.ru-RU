@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса mediaContentRatingNewZealand
 description: Пока не задокументировано.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9d06658905a5a6e5aaab79bb159a87fe4cb5cf7a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b6b90142c50237706ac7e9c887d3a848224c1ec9
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031397"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356669"
 ---
 # <a name="mediacontentratingnewzealand-resource-type"></a>Тип ресурса mediaContentRatingNewZealand
 
@@ -21,10 +21,10 @@ ms.locfileid: "36031397"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|movieRating|[Ратингневзеаландмовиестипе](../resources/intune-deviceconfig-ratingnewzealandmoviestype.md)|Рейтинг фильмов, выбранный для Новой Зеландии. Возможные значения: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove13`, `agesAbove15`, `agesAbove16`, `agesAbove18`, `restricted`, `agesAbove16Restricted`.|
-|tvRating|[Ратингневзеаландтелевисионтипе](../resources/intune-deviceconfig-ratingnewzealandtelevisiontype.md)|Рейтинг для телевизора, выбранный для Новой Зеландии. Возможные значения: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `adults`.|
+|movieRating|[ратингневзеаландмовиестипе](../resources/intune-deviceconfig-ratingnewzealandmoviestype.md)|Рейтинг фильмов, выбранный для Новой Зеландии. Возможные значения: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove13`, `agesAbove15`, `agesAbove16`, `agesAbove18`, `restricted`, `agesAbove16Restricted`.|
+|tvRating|[ратингневзеаландтелевисионтипе](../resources/intune-deviceconfig-ratingnewzealandtelevisiontype.md)|Рейтинг для телевизора, выбранный для Новой Зеландии. Возможные значения: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `adults`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -41,6 +41,7 @@ ms.locfileid: "36031397"
   "tvRating": "String"
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Список iosMobileAppConfigurations
 description: Список свойств и связей объектов iosMobileAppConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ede0e51af8cb455181db0c24efd0e757d5d3599e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 62a1c109265f172eb470d12fe7a765027c4eaeae
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36002540"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355612"
 ---
 # <a name="list-iosmobileappconfigurations"></a>Список iosMobileAppConfigurations
 
@@ -42,7 +42,7 @@ GET /deviceAppManagement/mobileAppConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -89,6 +89,7 @@ Content-Length: 815
   ]
 }
 ```
+
 
 
 

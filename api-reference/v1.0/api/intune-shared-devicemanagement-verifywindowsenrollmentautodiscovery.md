@@ -1,16 +1,16 @@
 ---
 title: Функция verifyWindowsEnrollmentAutoDiscovery
 description: Пока не задокументировано.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 179c0b34f1ecd22c29ec178e0d7935677fdb0be9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8c2c81257dcc27791cd7db8883b60feeb3544c79
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025895"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361436"
 ---
 # <a name="verifywindowsenrollmentautodiscovery-function"></a>Функция verifyWindowsEnrollmentAutoDiscovery
 
@@ -43,7 +43,7 @@ GET /deviceManagement/verifyWindowsEnrollmentAutoDiscovery
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
@@ -72,6 +72,7 @@ Content-Length: 21
   "value": true
 }
 ```
+
 
 
 

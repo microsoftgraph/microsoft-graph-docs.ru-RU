@@ -1,16 +1,16 @@
 ---
 title: Get managedMobileLobApp
 description: Чтение свойств и связей объекта managedMobileLobApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ab784e6d977c94eeafcc784a47e4f849ab4a1ade
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fc6dd856d0688f54e077f8ecc65a6020f1298b3e
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36002149"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358412"
 ---
 # <a name="get-managedmobilelobapp"></a>Get managedMobileLobApp
 
@@ -45,7 +45,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -95,6 +95,7 @@ Content-Length: 1007
   }
 }
 ```
+
 
 
 

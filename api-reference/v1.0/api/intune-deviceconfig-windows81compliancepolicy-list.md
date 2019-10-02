@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов windows81CompliancePolicy
 description: Список свойств и связей объектов windows81CompliancePolicy.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1efc9d59942403b787cea16a0bcf56b7c71907d9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7cf26728155f659d03796c990d48999bd2fa9b3e
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020026"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37365140"
 ---
 # <a name="list-windows81compliancepolicies"></a>Перечисление объектов windows81CompliancePolicy
 
@@ -42,7 +42,7 @@ GET /deviceManagement/deviceCompliancePolicies
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -88,6 +88,7 @@ Content-Length: 879
   ]
 }
 ```
+
 
 
 

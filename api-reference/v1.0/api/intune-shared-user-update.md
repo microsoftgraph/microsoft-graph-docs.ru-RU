@@ -1,16 +1,16 @@
 ---
 title: Обновление пользователя
 description: Обновление свойств объекта пользователя.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 45307fcf1ff7f784a8fabcf3c6883b1a2faae258
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 944930fcb5eb046908fe157713a486845322e2cc
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025759"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361233"
 ---
 # <a name="update-user"></a>Обновление пользователя
 
@@ -46,7 +46,7 @@ PATCH /users/{usersId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [user](../resources/intune-shared-user.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [user](../resources/intune-shared-user.md).
@@ -86,6 +86,7 @@ Content-Length: 95
   "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
 }
 ```
+
 
 
 

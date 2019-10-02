@@ -1,16 +1,16 @@
 ---
 title: тип перечисления Девицесреатпротектионлевел
 description: Уровни защиты от угроз для устройства API защиты от угроз.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 20e779719b901d91595908b55635a03c280f4d08
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e64bc6465e190e4e5da3629b6d638dc82813a2bb
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031649"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359385"
 ---
 # <a name="devicethreatprotectionlevel-enum-type"></a>тип перечисления Девицесреатпротектионлевел
 
@@ -27,6 +27,7 @@ ms.locfileid: "36031649"
 |medium|4|Требования к уровню защиты от угроз устройств: Medium. Medium — это серьезность угрозы, которая создает умеренный риск для данных устройства или устройства.|
 |высокоуровневых|SP4|Требование к уровню защиты от угроз для устройства: высокое. High — это серьезность угрозы, которая создает серьезный риск для данных устройства или устройства.|
 |Принимать|10 |Требование к уровню защиты от угроз для устройства: не задано. Не задано указывает на то, что устройство не должно соответствовать уровню защиты от угроз.|
+
 
 
 

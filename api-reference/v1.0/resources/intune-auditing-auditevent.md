@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса auditEvent
 description: Класс, содержащий свойства события аудита.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 18d56205f0602016f4d2ecdd2587b06ae5c676fd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5dfadf90d2498fa13f2367ca7467bbce5f810e3f
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028856"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355990"
 ---
 # <a name="auditevent-resource-type"></a>Тип ресурса auditEvent
 
@@ -45,7 +45,7 @@ ms.locfileid: "36028856"
 |resources|Коллекция [auditResource](../resources/intune-auditing-auditresource.md)|Изменяемые ресурсы.|
 |category|String|Категория аудита.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -100,6 +100,7 @@ ms.locfileid: "36028856"
   "category": "String"
 }
 ```
+
 
 
 

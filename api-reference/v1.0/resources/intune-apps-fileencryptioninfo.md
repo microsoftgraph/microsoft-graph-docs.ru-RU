@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса fileEncryptionInfo
 description: Содержит свойства сведений о шифровании файлов для версии содержимого бизнес-приложения.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a6aa144db5b4bc06177af77b965a6268d199105a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e0dff917b9fc6dc8bc99cb388cdf0f461dc394c3
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029192"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356291"
 ---
 # <a name="fileencryptioninfo-resource-type"></a>Тип ресурса fileEncryptionInfo
 
@@ -29,7 +29,7 @@ ms.locfileid: "36029192"
 |fileDigest|Binary|Дайджест файла до шифрования.|
 |fileDigestAlgorithm|String|Алгоритм дайджеста файла.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -51,6 +51,7 @@ ms.locfileid: "36029192"
   "fileDigestAlgorithm": "String"
 }
 ```
+
 
 
 

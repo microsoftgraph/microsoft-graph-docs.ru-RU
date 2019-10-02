@@ -1,16 +1,16 @@
 ---
 title: Список организаций
 description: Список свойств и связей объектов organization.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 045dcb8635bcee2b71d40a8a1c3fe056f59eadfc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e9edd123dc9c71a6da742e4acaf76c2ad271187a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36024058"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362157"
 ---
 # <a name="list-organizations"></a>Список организаций
 
@@ -42,7 +42,7 @@ GET /organization
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -73,6 +73,7 @@ Content-Length: 196
   ]
 }
 ```
+
 
 
 

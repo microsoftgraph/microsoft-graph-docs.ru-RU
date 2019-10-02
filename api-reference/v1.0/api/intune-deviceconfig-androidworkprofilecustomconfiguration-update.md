@@ -1,16 +1,16 @@
 ---
 title: Обновление Андроидворкпрофилекустомконфигуратион
 description: Обновление свойств объекта Андроидворкпрофилекустомконфигуратион.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 668304adc0b3dcdfab076603767c1d46e4198d21
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d5a7e7183f2616278569cb595fa443227711da70
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019480"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357558"
 ---
 # <a name="update-androidworkprofilecustomconfiguration"></a>Обновление Андроидворкпрофилекустомконфигуратион
 
@@ -42,7 +42,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [андроидворкпрофилекустомконфигуратион](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [андроидворкпрофилекустомконфигуратион](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md).
@@ -114,6 +114,7 @@ Content-Length: 585
   ]
 }
 ```
+
 
 
 

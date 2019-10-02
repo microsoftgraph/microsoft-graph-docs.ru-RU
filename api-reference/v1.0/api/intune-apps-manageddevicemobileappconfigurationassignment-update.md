@@ -1,16 +1,16 @@
 ---
 title: Обновление объекта managedDeviceMobileAppConfigurationAssignment
 description: Обновление свойств объекта managedDeviceMobileAppConfigurationAssignment.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5dfbcdc131dd02f062252974a7ef4b3baff07b1f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 794570f4e820e1de54a85a9684da6bdcb630311b
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36014041"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358615"
 ---
 # <a name="update-manageddevicemobileappconfigurationassignment"></a>Обновление объекта managedDeviceMobileAppConfigurationAssignment
 
@@ -42,7 +42,7 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md) в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [managedDeviceMobileAppConfigurationAssignment](../resources/intune-apps-manageddevicemobileappconfigurationassignment.md).
@@ -89,6 +89,7 @@ Content-Length: 234
   }
 }
 ```
+
 
 
 

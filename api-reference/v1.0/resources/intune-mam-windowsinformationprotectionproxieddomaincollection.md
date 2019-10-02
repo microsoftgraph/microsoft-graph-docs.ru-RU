@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса windowsInformationProtectionProxiedDomainCollection
 description: Коллекция проксируемых доменов Windows Information Protection
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0de9ee342cdb0fb42460d9118c87ed7e2a747b55
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c25ca22acc8964c0578ad42e47088c108c7757c5
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037634"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360603"
 ---
 # <a name="windowsinformationprotectionproxieddomaincollection-resource-type"></a>Тип ресурса windowsInformationProtectionProxiedDomainCollection
 
@@ -24,7 +24,7 @@ ms.locfileid: "36037634"
 |displayName|String|Отображаемое имя|
 |proxiedDomains|Коллекция объектов [proxiedDomain](../resources/intune-mam-proxieddomain.md)|Коллекция проксируемых доменов|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -47,6 +47,7 @@ ms.locfileid: "36037634"
   ]
 }
 ```
+
 
 
 

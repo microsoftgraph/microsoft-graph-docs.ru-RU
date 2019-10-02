@@ -1,16 +1,16 @@
 ---
 title: Создание объекта windowsPhone81CustomConfiguration
 description: Создание объекта windowsPhone81CustomConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 815293d1fac3804a0fb8e02b8113984fcaf3f8d9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 06ae3609e9775396fef31b0cdfbf18c55a6bc728
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997122"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364881"
 ---
 # <a name="create-windowsphone81customconfiguration"></a>Создание объекта windowsPhone81CustomConfiguration
 
@@ -42,7 +42,7 @@ POST /deviceManagement/deviceConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта windowsPhone81CustomConfiguration в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта windowsPhone81CustomConfiguration.
@@ -114,6 +114,7 @@ Content-Length: 581
   ]
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Функция Манажеддевицеенроллментфаилуредетаилс
 description: Пока не задокументировано.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: da38aa1fb497bc5fb1225f2435ed2bd9c4e4b3c3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fd16afe8aafaefe84f385d13a9a56e823b689130
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025850"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361373"
 ---
 # <a name="manageddeviceenrollmentfailuredetails-function"></a>Функция Манажеддевицеенроллментфаилуредетаилс
 
@@ -43,7 +43,7 @@ GET /reports/managedDeviceEnrollmentFailureDetails
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
@@ -81,6 +81,7 @@ Content-Length: 123
   }
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: тип перечисления Андроидворкпрофилекросспрофиледаташарингтипе
 description: Тип совместного использования данных профилей рабочих профилей для Android.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: cf6fc49adffd13d5e0f6ea98b8e99c128c8f40a3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 843f222b18b2f17c05e5dbbe2093d55d1ab96787
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031902"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360260"
 ---
 # <a name="androidworkprofilecrossprofiledatasharingtype-enum-type"></a>тип перечисления Андроидворкпрофилекросспрофиледаташарингтипе
 
@@ -21,10 +21,11 @@ ms.locfileid: "36031902"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
-|Превентани|1,1|Запретите общий доступ.|
-|Алловперсоналтоворк|2|Разрешить для рабочего профиля запрос на общий доступ к данным из личного профиля.|
+|девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
+|превентани|1,1|Запретите общий доступ.|
+|алловперсоналтоворк|2|Разрешить для рабочего профиля запрос на общий доступ к данным из личного профиля.|
 |Ограничения|4|Нет ограничений на общий доступ.|
+
 
 
 

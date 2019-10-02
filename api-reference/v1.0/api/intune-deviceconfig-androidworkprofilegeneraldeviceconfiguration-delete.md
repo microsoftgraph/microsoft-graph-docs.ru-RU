@@ -1,16 +1,16 @@
 ---
 title: Удаление androidWorkProfileGeneralDeviceConfiguration
 description: Удаляет объект androidWorkProfileGeneralDeviceConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 774e199ec87d943effe9737a98a85b2d86472a2b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9b8f53da7d0a7ada6266575196d7a049f1992378
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019466"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357551"
 ---
 # <a name="delete-androidworkprofilegeneraldeviceconfiguration"></a>Удаление androidWorkProfileGeneralDeviceConfiguration
 
@@ -42,7 +42,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -61,6 +61,7 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

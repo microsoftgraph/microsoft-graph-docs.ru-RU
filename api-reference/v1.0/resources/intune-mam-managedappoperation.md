@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса managedAppOperation
 description: Представляет операцию, примененную к регистрации приложения.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6653836cf21f4552e64bc433934a10b717be3708
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 28e363442af437a5b4a313cd7ae9e2bfe43b86c4
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36038026"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356347"
 ---
 # <a name="managedappoperation-resource-type"></a>Тип ресурса managedAppOperation
 
@@ -36,7 +36,7 @@ ms.locfileid: "36038026"
 |id|String|Ключ объекта.|
 |version|String|Версия объекта.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -57,6 +57,7 @@ ms.locfileid: "36038026"
   "version": "String"
 }
 ```
+
 
 
 

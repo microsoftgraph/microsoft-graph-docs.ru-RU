@@ -1,16 +1,16 @@
 ---
 title: Удалить vppToken
 description: Удаляет vppToken.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d08bb46b3ab4ffa3012ad45405cb3e34ccc0b953
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 70826066ed489f2e294ef2b173266edacfe7941c
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023988"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362136"
 ---
 # <a name="delete-vpptoken"></a>Удалить vppToken
 
@@ -42,7 +42,7 @@ DELETE /deviceAppManagement/vppTokens/{vppTokenId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -61,6 +61,7 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/vppTokens/{vppTokenI
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

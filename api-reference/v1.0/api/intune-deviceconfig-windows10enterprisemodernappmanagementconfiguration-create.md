@@ -1,16 +1,16 @@
 ---
 title: Создание объекта windows10EnterpriseModernAppManagementConfiguration
 description: Создание объекта windows10EnterpriseModernAppManagementConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6fe3a0a3b7586fddc3a00eb505e4eb89b16e6455
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8bf760d24cdf966fda67f7280d918740ee25e9e2
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997318"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37365497"
 ---
 # <a name="create-windows10enterprisemodernappmanagementconfiguration"></a>Создание объекта windows10EnterpriseModernAppManagementConfiguration
 
@@ -42,7 +42,7 @@ POST /deviceManagement/deviceConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта windows10EnterpriseModernAppManagementConfiguration в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта windows10EnterpriseModernAppManagementConfiguration.
@@ -98,6 +98,7 @@ Content-Length: 394
   "uninstallBuiltInApps": true
 }
 ```
+
 
 
 

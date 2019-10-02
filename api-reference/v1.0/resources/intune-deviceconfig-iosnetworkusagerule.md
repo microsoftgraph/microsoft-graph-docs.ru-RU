@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса iosNetworkUsageRule
 description: Благодаря правилам использования сети предприятия могут определять, как управляемые приложения используют сети, например мобильные сети.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9b173a819015901c531bc1fa9632ec906f73d09c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: abe641a0a714c8e2d9e171ccb874905b3a6321b6
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031502"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359063"
 ---
 # <a name="iosnetworkusagerule-resource-type"></a>Тип ресурса iosNetworkUsageRule
 
@@ -25,7 +25,7 @@ ms.locfileid: "36031502"
 |cellularDataBlockWhenRoaming|Boolean|Если задано значение true, соответствующим управляемым приложениям запрещается использовать мобильные данные в роуминге.|
 |cellularDataBlocked|Boolean|Если задано значение true, соответствующим управляемым приложениям запрещается использовать мобильные данные в любое время.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -51,6 +51,7 @@ ms.locfileid: "36031502"
   "cellularDataBlocked": true
 }
 ```
+
 
 
 

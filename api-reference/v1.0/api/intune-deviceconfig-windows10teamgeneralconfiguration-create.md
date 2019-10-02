@@ -1,16 +1,16 @@
 ---
 title: Создание объекта windows10TeamGeneralConfiguration
 description: Создает объект windows10TeamGeneralConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b4083c1bc0c9673c1cf8d773e4ce836cc2243ea3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6aa6588a3696c37202965e2cae84513f0a49e9d6
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997192"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37365204"
 ---
 # <a name="create-windows10teamgeneralconfiguration"></a>Создание объекта windows10TeamGeneralConfiguration
 
@@ -42,7 +42,7 @@ POST /deviceManagement/deviceConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта windows10TeamGeneralConfiguration в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта windows10TeamGeneralConfiguration.
@@ -155,6 +155,7 @@ Content-Length: 1322
   "welcomeScreenMeetingInformation": "showOrganizerAndTimeOnly"
 }
 ```
+
 
 
 

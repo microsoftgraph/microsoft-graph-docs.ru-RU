@@ -1,16 +1,16 @@
 ---
 title: Настройка устройств в Microsoft Intune
 description: Используйте рабочую нагрузку для настройки устройств Microsoft Intune для управления параметрами и компонентами всех устройств, которыми вы управляете.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 367e2eaa44187684ff241b9b2bc40a81c7729d6d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3136a82dd8d93c44adf96261092873380d47e9e6
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028744"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360344"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Настройка устройств в Microsoft Intune
 
@@ -59,7 +59,7 @@ ms.locfileid: "36028744"
 - [Тип ресурса deviceComplianceSettingState](intune-deviceconfig-devicecompliancesettingstate.md)
 - [Обзор пользователей, касающийся соответствия устройств требованиям](intune-deviceconfig-devicecomplianceuseroverview.md)
 - [Состояние пользователей, касающийся соответствия устройств требованиям](intune-deviceconfig-devicecomplianceuserstatus.md)
-- [Настройка устройства](intune-deviceconfig-deviceconfiguration.md)
+- [Конфигурация устройства](intune-deviceconfig-deviceconfiguration.md)
 - [Назначение конфигурации устройства](intune-deviceconfig-deviceconfigurationassignment.md)
 - [Обзор конфигураций устройств](intune-deviceconfig-deviceconfigurationdeviceoverview.md)
 - [Ресурс DeviceConfigurationDeviceStateSummary](intune-deviceconfig-deviceconfigurationdevicestatesummary.md)
@@ -182,3 +182,4 @@ ms.locfileid: "36028744"
 - [Запланированная установка с использованием Центра обновления Windows](intune-deviceconfig-windowsupdatescheduledinstall.md)
 - [Тип обновления Windows](intune-deviceconfig-windowsupdatetype.md)
 - [Настройки контроля учетных записей Windows](intune-deviceconfig-windowsuseraccountcontrolsettings.md)
+

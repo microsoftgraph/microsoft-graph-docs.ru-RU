@@ -1,16 +1,16 @@
 ---
 title: тип перечисления Диагностикдатасубмиссионмоде
 description: Разрешить устройству отправку данных о диагностике и использовании, например Watson.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c36e2c5467c1a42a9cde44bedd6c8307e77e848d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 15abccb0bf2171e62c2b468ecf5c3078e052ea75
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028373"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359378"
 ---
 # <a name="diagnosticdatasubmissionmode-enum-type"></a>тип перечисления Диагностикдатасубмиссионмоде
 
@@ -26,6 +26,7 @@ ms.locfileid: "36028373"
 |Основное|2|Отправляет основные данные телеметрии.|
 |усовершенствован|4|Отправляет расширенные данные телеметрии, в том числе сведения об использовании и Insights.|
 |полный|SP4|Отправляет полные данные телеметрии, в том числе диагностические данные, например состояние системы.|
+
 
 
 

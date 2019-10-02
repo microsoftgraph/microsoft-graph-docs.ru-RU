@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов windows10EnterpriseModernAppManagementConfiguration
 description: Список свойств и связей объектов windows10EnterpriseModernAppManagementConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 69506350a2b26525f038ca882967f6e71a705a42
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 04e8c058646aec812889367fbaba76796a51e1b0
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020208"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37365427"
 ---
 # <a name="list-windows10enterprisemodernappmanagementconfigurations"></a>Перечисление объектов windows10EnterpriseModernAppManagementConfiguration
 
@@ -42,7 +42,7 @@ GET /deviceManagement/deviceConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -78,6 +78,7 @@ Content-Length: 459
   ]
 }
 ```
+
 
 
 

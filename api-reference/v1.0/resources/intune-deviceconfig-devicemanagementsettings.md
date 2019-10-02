@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса deviceManagementSettings
 description: Пока не задокументировано.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0d990271b611fdb088975e155637834dc9261580
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0ca00a63092a6881eea03de09eede06531a44dd4
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028422"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359413"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>Тип ресурса deviceManagementSettings
 
@@ -25,7 +25,7 @@ ms.locfileid: "36028422"
 |isScheduledActionEnabled|Boolean|Включена ли функция для запланированного действия для правила.|
 |secureByDefault|Boolean|Устройство считается несоответствующим требованиям, если для данного свойства установлено значение true, но не выбраны целевые политики соответствия требованиям.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -43,6 +43,7 @@ ms.locfileid: "36028422"
   "secureByDefault": true
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов windows10SecureAssessmentConfiguration
 description: Список свойств и связей объектов windows10SecureAssessmentConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1a79342ace6987ce44ebeb1f19b868d453ae1a12
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 76e2ce7d8cc8508305ef3696b67d59a0196b584c
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997185"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37365248"
 ---
 # <a name="list-windows10secureassessmentconfigurations"></a>Перечисление объектов windows10SecureAssessmentConfiguration
 
@@ -42,7 +42,7 @@ GET /deviceManagement/deviceConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -82,6 +82,7 @@ Content-Length: 612
   ]
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса omaSettingDateTime
 description: Определение даты и времени параметра OMA.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 71347ecd4a566409d1043c788df70601ffc70a2a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4405f8446ceb76dbdd5b4c9df1407ee14861a3b8
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028030"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360799"
 ---
 # <a name="omasettingdatetime-resource-type"></a>Тип ресурса omaSettingDateTime
 
@@ -29,7 +29,7 @@ ms.locfileid: "36028030"
 |omaUri|String|OMA. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |value|DateTimeOffset|Значение.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -48,6 +48,7 @@ ms.locfileid: "36028030"
   "value": "String (timestamp)"
 }
 ```
+
 
 
 

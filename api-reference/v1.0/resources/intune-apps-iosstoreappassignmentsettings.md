@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса iosStoreAppAssignmentSettings
 description: Содержит свойства, используемые при назначении мобильного приложения из магазина iOS группе.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b7a0b76ff2ac66ecffc7b55e0b4d28f234cbec43
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c427962565f7ecbe507e1eec8229e487885faf22
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029143"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360736"
 ---
 # <a name="iosstoreappassignmentsettings-resource-type"></a>Тип ресурса iosStoreAppAssignmentSettings
 
@@ -26,7 +26,7 @@ ms.locfileid: "36029143"
 |:---|:---|:---|
 |vpnConfigurationId|String|ИД конфигурации VPN, применяемой к этому приложению.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -42,6 +42,7 @@ ms.locfileid: "36029143"
   "vpnConfigurationId": "String"
 }
 ```
+
 
 
 

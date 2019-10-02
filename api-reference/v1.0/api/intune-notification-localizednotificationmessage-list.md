@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов localizedNotificationMessage
 description: Список свойств и связей объектов localizedNotificationMessage.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0cafe0e84266d03ce4d5d52bf2d9e40af67a3e02
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ba70997ad284a068673e4fa034230f29a0bc8851
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018129"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362879"
 ---
 # <a name="list-localizednotificationmessages"></a>Перечисление объектов localizedNotificationMessage
 
@@ -42,7 +42,7 @@ GET /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateI
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -77,6 +77,7 @@ Content-Length: 374
   ]
 }
 ```
+
 
 
 

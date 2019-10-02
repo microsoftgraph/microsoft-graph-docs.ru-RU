@@ -1,16 +1,16 @@
 ---
 title: Обновление объекта localizedNotificationMessage
 description: Обновление свойств объекта localizedNotificationMessage.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c7b031ec6ff7007e459715d01a932970a5ceaa8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7d5de9a9daf6f41ff24f92f9175bda62d7a81f6b
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974782"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362893"
 ---
 # <a name="update-localizednotificationmessage"></a>Обновление объекта localizedNotificationMessage
 
@@ -42,7 +42,7 @@ PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplat
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md).
@@ -96,6 +96,7 @@ Content-Length: 313
   "isDefault": true
 }
 ```
+
 
 
 

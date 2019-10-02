@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса iosVppEBook
 description: Класс, содержащий свойства электронной книги VPP для iOS.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6c482531f28007dc5cafa10d45a86d8c1896b1b9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 42d262e2fbe2e250c235967e474c9c9df01eeae0
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028821"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355948"
 ---
 # <a name="iosvppebook-resource-type"></a>Тип ресурса iosVppEBook
 
@@ -52,8 +52,8 @@ ms.locfileid: "36028821"
 |totalLicenseCount|Int32|Общее число лицензий.|
 |usedLicenseCount|Int32|Число используемых лицензий.|
 
-## <a name="relationships"></a>Отношения
-|Отношение|Тип|Описание|
+## <a name="relationships"></a>Связи
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)|Список назначений для этой электронной книги. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
 |installSummary|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|Сводка по установке мобильного приложения. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
@@ -97,6 +97,7 @@ ms.locfileid: "36028821"
   "usedLicenseCount": 1024
 }
 ```
+
 
 
 

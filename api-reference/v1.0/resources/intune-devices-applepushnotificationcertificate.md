@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса applePushNotificationCertificate
 description: Сертификат push-уведомлений Apple
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2c56f78a596d08037ca68a96bf9cc5aca5fbf148
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 511e70f2ccbb5c79f3b00e0027a62dd9542f0669
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027505"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357075"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>Тип ресурса applePushNotificationCertificate
 
@@ -35,7 +35,7 @@ ms.locfileid: "36027505"
 |expirationDateTime|DateTimeOffset|Дата и время окончания срока действия для сертификата push-уведомлений Apple.|
 |certificate|String|Н/Д|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -57,6 +57,7 @@ ms.locfileid: "36027505"
   "certificate": "String"
 }
 ```
+
 
 
 

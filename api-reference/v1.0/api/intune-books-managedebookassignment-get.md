@@ -1,16 +1,16 @@
 ---
 title: Get managedEBookAssignment
 description: Чтение свойств и связей объекта managedEBookAssignment.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a15eb5ed7474aab31cddca4a35c671e48ca30144
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 70178415307f5f14c1e72f9a70dbf5661f044359
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018374"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357866"
 ---
 # <a name="get-managedebookassignment"></a>Get managedEBookAssignment
 
@@ -45,7 +45,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEBoo
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -77,6 +77,7 @@ Content-Length: 274
   }
 }
 ```
+
 
 
 

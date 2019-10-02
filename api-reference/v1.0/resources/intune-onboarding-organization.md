@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса organization
 description: Ресурс organization представляет экземпляр глобальных параметров и ресурсов, которые действуют и готовятся в работе на уровне клиента.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: baf50eb876d33c3fdb08f5f4162ce2f0267fa499
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 258e3683b988aa914cd43f2748a07032d72c08e9
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037284"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360743"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
@@ -30,9 +30,9 @@ ms.locfileid: "36037284"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|GUID объекта.|
-|mobileDeviceManagementAuthority|[Мдмаусорити](../resources/intune-onboarding-mdmauthority.md)|Центр управления мобильными устройствами. Возможные значения: `unknown`, `intune`, `sccm`, `office365`.|
+|mobileDeviceManagementAuthority|[мдмаусорити](../resources/intune-onboarding-mdmauthority.md)|Центр управления мобильными устройствами. Возможные значения: `unknown`, `intune`, `sccm`, `office365`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -67,6 +67,7 @@ ms.locfileid: "36037284"
 
 }
 -->
+
 
 
 

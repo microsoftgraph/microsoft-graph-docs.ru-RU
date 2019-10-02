@@ -1,16 +1,16 @@
 ---
 title: тип перечисления Манажедаппфлагжедреасон
 description: Причина, по которой пользователю был применен флаг
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 2e8b2e4069981c9223746823f1780ff945b54a6d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 904109eaaea5f1182ade54a35ced59c1bbf64c36
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36038067"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356354"
 ---
 # <a name="managedappflaggedreason-enum-type"></a>тип перечисления Манажедаппфлагжедреасон
 
@@ -22,7 +22,8 @@ ms.locfileid: "36038067"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |none|нуль|Нет ошибок.|
-|Рутеддевице|1,1|Регистрация приложения выполняется на корневом/незаблокированном устройстве.|
+|рутеддевице|1,1|Регистрация приложения выполняется на корневом/незаблокированном устройстве.|
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Получение Андроидворкпрофилекустомконфигуратион
 description: Чтение свойств и связей объекта Андроидворкпрофилекустомконфигуратион.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0c2deffd52d9ab88b7576e6366b6592ba16a80ae
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8ad9f50c95976c2191c8fe89f7459d8ae7c57e13
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019508"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357593"
 ---
 # <a name="get-androidworkprofilecustomconfiguration"></a>Получение Андроидворкпрофилекустомконфигуратион
 
@@ -45,7 +45,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -87,6 +87,7 @@ Content-Length: 636
   }
 }
 ```
+
 
 
 

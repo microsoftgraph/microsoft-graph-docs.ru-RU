@@ -1,16 +1,16 @@
 ---
 title: Get mobileLobApp
 description: Чтение свойств и связей объекта mobileLobApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6e3d0bc7fff2725cfe8caca66c42f773e7f52d72
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9e777471e47dcc6a5e47121568f9afb02111e080
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001994"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358188"
 ---
 # <a name="get-mobilelobapp"></a>Get mobileLobApp
 
@@ -45,7 +45,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -93,6 +93,7 @@ Content-Length: 925
   }
 }
 ```
+
 
 
 

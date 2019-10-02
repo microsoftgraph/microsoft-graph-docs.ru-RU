@@ -1,16 +1,16 @@
 ---
 title: Создание объекта notificationMessageTemplate
 description: Создание объекта notificationMessageTemplate.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c67dab3422a165323aeed899889ee24e005898a9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 49ee38a00ea8cbc93e476f1f25be6790b94358a8
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018102"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362844"
 ---
 # <a name="create-notificationmessagetemplate"></a>Создание объекта notificationMessageTemplate
 
@@ -42,7 +42,7 @@ POST /deviceManagement/notificationMessageTemplates
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта notificationMessageTemplate в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта notificationMessageTemplate.
@@ -53,7 +53,7 @@ POST /deviceManagement/notificationMessageTemplates
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |displayName|Строка|Отображаемое имя для шаблона сообщения уведомления.|
 |defaultLocale|String|Языковой стандарт по умолчанию, который используется, если запрошенный языковой стандарт недоступен.|
-|brandingOptions|[Нотификатионтемплатебрандингоптионс](../resources/intune-notification-notificationtemplatebrandingoptions.md)|Параметры фирменной символики шаблона сообщения. Фирменная символика определяется в консоли администрирования Intune. Возможные значения: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.|
+|brandingOptions|[нотификатионтемплатебрандингоптионс](../resources/intune-notification-notificationtemplatebrandingoptions.md)|Параметры фирменной символики шаблона сообщения. Фирменная символика определяется в консоли администрирования Intune. Возможные значения: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.|
 
 
 
@@ -93,6 +93,7 @@ Content-Length: 310
   "brandingOptions": "includeCompanyLogo"
 }
 ```
+
 
 
 

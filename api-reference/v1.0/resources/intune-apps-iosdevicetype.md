@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса iosDeviceType
 description: Содержит свойства возможных типов устройств iOS, на которых может работать мобильное приложение.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 23d38faeafd9aac0d0e547596de51507b6932c20
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a62cb711b70352d98650ae03945316de9ed2b5d2
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029166"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356259"
 ---
 # <a name="iosdevicetype-resource-type"></a>Тип ресурса iosDeviceType
 
@@ -24,7 +24,7 @@ ms.locfileid: "36029166"
 |iPad|Boolean|Указывает, должно ли приложение работать на iPad.|
 |iPhoneAndIPod|Boolean|Указывает, должно ли приложение работать на iPhone и iPod.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -41,6 +41,7 @@ ms.locfileid: "36029166"
   "iPhoneAndIPod": true
 }
 ```
+
 
 
 

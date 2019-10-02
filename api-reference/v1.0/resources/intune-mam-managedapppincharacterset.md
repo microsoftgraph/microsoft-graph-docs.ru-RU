@@ -1,16 +1,16 @@
 ---
 title: тип перечисления Манажедапппинчарактерсет
 description: Набор знаков, который будет использоваться для ПИН-кода приложения пользователя
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a894dc1fd2c4e3620a782c9530f6612a0bb8303d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ba22f2649ae2b1419272ba26a277d5e6727a4457
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037977"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356340"
 ---
 # <a name="managedapppincharacterset-enum-type"></a>тип перечисления Манажедапппинчарактерсет
 
@@ -22,7 +22,8 @@ ms.locfileid: "36037977"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |числовых|нуль|Числовые символы|
-|Алфанумерикандсимбол|1,1|Буквенно-цифровые и символьные символы|
+|алфанумерикандсимбол|1,1|Буквенно-цифровые и символьные символы|
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса windowsDefenderScanActionResult
 description: Результат последнего сканирования, выполненного Защитником Windows
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0e9bcf4d45a184ea54a15bedc85efc6fc9bb4073
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1ce77c0e034cacf301dfdfa5df96070bd1944160
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027407"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356886"
 ---
 # <a name="windowsdefenderscanactionresult-resource-type"></a>Тип ресурса windowsDefenderScanActionResult
 
@@ -30,7 +30,7 @@ ms.locfileid: "36027407"
 |lastUpdatedDateTime|DateTimeOffset|Время последнего обновления действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
 |scanType|String|Тип сканирования (полное или краткое).|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -50,6 +50,7 @@ ms.locfileid: "36027407"
   "scanType": "String"
 }
 ```
+
 
 
 

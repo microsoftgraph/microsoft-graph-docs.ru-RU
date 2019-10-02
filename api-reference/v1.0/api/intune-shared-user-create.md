@@ -1,16 +1,16 @@
 ---
 title: Создание пользователя
 description: Создание объекта user.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9fcbaab44b3005388dd15460510d6b0f00b4720e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8cbdb53286d427223d80bf8b55cef63cbf0416a4
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025822"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361331"
 ---
 # <a name="create-user"></a>Создание пользователя
 
@@ -46,7 +46,7 @@ POST /users
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта user в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта user.
@@ -90,6 +90,7 @@ Content-Length: 95
   "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
 }
 ```
+
 
 
 

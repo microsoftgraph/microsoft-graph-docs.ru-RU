@@ -1,16 +1,16 @@
 ---
 title: Get deviceInstallState
 description: Чтение свойств и связей объекта deviceInstallState.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5612e13c536400a83d3f395a8c04627b18ae4434
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 22c1e5a7f00000f10aa832143eeca8f0b430c571
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001924"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354835"
 ---
 # <a name="get-deviceinstallstate"></a>Get deviceInstallState
 
@@ -46,7 +46,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userIn
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -82,6 +82,7 @@ Content-Length: 462
   }
 }
 ```
+
 
 
 

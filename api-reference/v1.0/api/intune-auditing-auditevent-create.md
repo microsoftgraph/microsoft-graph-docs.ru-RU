@@ -1,16 +1,16 @@
 ---
 title: Создание объекта auditEvent
 description: Создание объекта auditEvent.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4218d76a1bee2dcd25da7ffe1c5e06ddc4ae1029
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 34762caabd3cb4034f631c3449cfecc76371fbc7
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013656"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354891"
 ---
 # <a name="create-auditevent"></a>Создание объекта auditEvent
 
@@ -42,7 +42,7 @@ POST /deviceManagement/auditEvents
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта auditEvent в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта auditEvent.
@@ -169,6 +169,7 @@ Content-Length: 1439
   "category": "Category value"
 }
 ```
+
 
 
 

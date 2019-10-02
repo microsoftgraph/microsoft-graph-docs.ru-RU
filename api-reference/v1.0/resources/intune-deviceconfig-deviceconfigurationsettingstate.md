@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса deviceConfigurationSettingState
 description: Состояние параметра конфигурации определенного устройства.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c50ed17421b88f2cb6137458ff853bfa92796c2b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 47bbca9073765b5f7a09827b5b1eecb44ba81b6e
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031670"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359490"
 ---
 # <a name="deviceconfigurationsettingstate-resource-type"></a>Тип ресурса deviceConfigurationSettingState
 
@@ -24,7 +24,7 @@ ms.locfileid: "36031670"
 |setting|String|Параметр для отчета|
 |settingName|String|Локализованное или понятное имя параметра для отчета|
 |instanceDisplayName|String|Имя экземпляра параметра для отчета|
-|state|[Комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние соответствия для параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|state|[комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние соответствия для параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |errorCode|Int64|Код ошибки для параметра|
 |errorDescription|String|Описание ошибки|
 |userId|String|ИД пользователя|
@@ -34,7 +34,7 @@ ms.locfileid: "36031670"
 |sources|Коллекция [settingSource](../resources/intune-deviceconfig-settingsource.md)|Соответствующие политики|
 |currentValue|String|Текущее значение параметра на устройстве|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -67,6 +67,7 @@ ms.locfileid: "36031670"
   "currentValue": "String"
 }
 ```
+
 
 
 

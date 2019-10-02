@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов windows10EndpointProtectionConfiguration
 description: Перечисление свойств и связей объектов windows10EndpointProtectionConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1256b14dfdea91cac1ff7dec0f2867fe999acd30
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cb5414e2b03112a286e9ec54d33286ca726514ab
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020250"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37365476"
 ---
 # <a name="list-windows10endpointprotectionconfigurations"></a>Перечисление объектов windows10EndpointProtectionConfiguration
 
@@ -42,7 +42,7 @@ GET /deviceManagement/deviceConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -166,6 +166,7 @@ Content-Length: 4834
   ]
 }
 ```
+
 
 
 

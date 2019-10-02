@@ -1,16 +1,16 @@
 ---
 title: тип перечисления Полициплатформтипе
 description: Типы платформы суппуртед для политик.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 8205f6530047518082732fe1fe7c24ee7df7ae99
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 47c15a09c2a89670e9826a492914d6da951bd311
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031285"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359875"
 ---
 # <a name="policyplatformtype-enum-type"></a>тип перечисления Полициплатформтипе
 
@@ -27,8 +27,9 @@ ms.locfileid: "36031285"
 |windowsPhone81|SP4|WindowsPhone 8,1.|
 |windows81AndLater|17:00|Windows 8,1 и более поздние версии|
 |windows10AndLater|6 |Windows 10 и более поздних версий.|
-|Андроидворкпрофиле|7 |Андроидворкпрофиле.|
+|андроидворкпрофиле|7 |Андроидворкпрофиле.|
 |ко|100|Все платформы.|
+
 
 
 

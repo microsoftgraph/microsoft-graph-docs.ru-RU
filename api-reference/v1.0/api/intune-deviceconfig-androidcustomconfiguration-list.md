@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов androidCustomConfiguration
 description: Перечисление свойств и связей объектов androidCustomConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fd078353e590b39afb8c010b9795d383f22ffd6a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 18f76eafa682ab3d8e10fecf37fe98a689e7a614
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019662"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37357614"
 ---
 # <a name="list-androidcustomconfigurations"></a>Перечисление объектов androidCustomConfiguration
 
@@ -42,7 +42,7 @@ GET /deviceManagement/deviceConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -86,6 +86,7 @@ Content-Length: 671
   ]
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Удаление объекта enrollmentTroubleshootingEvent
 description: Удаляет объект enrollmentTroubleshootingEvent.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 307e2ed6856a229ca4100bf346d33aaf6e8d02be
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b6f95c213d83c5c56d24f38dbea7082c8f014886
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023260"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361044"
 ---
 # <a name="delete-enrollmenttroubleshootingevent"></a>Удаление объекта enrollmentTroubleshootingEvent
 
@@ -42,7 +42,7 @@ DELETE /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingE
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -61,6 +61,7 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/troubleshootingEvents/{
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

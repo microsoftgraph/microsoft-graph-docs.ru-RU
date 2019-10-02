@@ -1,16 +1,16 @@
 ---
 title: Обновление объекта windowsInformationProtectionAppLearningSummary
 description: Обновление свойств объекта windowsInformationProtectionAppLearningSummary.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 88d3c49f25c511325b2a598db850b532fc982921
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 20c86caed48499fc5df3a1c84254aec1ef5a4216
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023211"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360925"
 ---
 # <a name="update-windowsinformationprotectionapplearningsummary"></a>Обновление объекта windowsInformationProtectionAppLearningSummary
 
@@ -42,7 +42,7 @@ PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{window
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса укажите представление объекта [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md).
@@ -51,7 +51,7 @@ PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{window
 |:---|:---|:---|
 |id|String|Уникальный идентификатор объекта WindowsInformationProtectionAppLearningSummary.|
 |applicationName|String|Имя приложения|
-|applicationType|[Аппликатионтипе](../resources/intune-wip-applicationtype.md)|Тип приложения. Возможные значения: `universal`, `desktop`.|
+|applicationType|[аппликатионтипе](../resources/intune-wip-applicationtype.md)|Тип приложения. Возможные значения: `universal`, `desktop`.|
 |deviceCount|Int32|Количество устройств|
 
 
@@ -91,6 +91,7 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
+
 
 
 

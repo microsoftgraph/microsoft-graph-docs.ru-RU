@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов managedApp
 description: Список свойств и связей объектов managedApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5f30e9c9437601d98e2c9cc39233bd1e2b2c90ed
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 89b9e8263e632b8630330d1b73fec5a282243e3b
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36014070"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358671"
 ---
 # <a name="list-managedapps"></a>Перечисление объектов managedApp
 
@@ -42,7 +42,7 @@ GET /deviceAppManagement/mobileApps
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -91,6 +91,7 @@ Content-Length: 935
   ]
 }
 ```
+
 
 
 

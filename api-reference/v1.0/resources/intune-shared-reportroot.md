@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса reportRoot
 description: Ресурс, представляющий экземпляр отчетов журнала.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8a8fa8011ad4550ec80acd0b4d6d2159f10647de
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b9b2f70bb3286b47fb92985ec3055c0d3470fb23
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036864"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360162"
 ---
 # <a name="reportroot-resource-type"></a>Тип ресурса reportRoot
 
@@ -23,7 +23,7 @@ ms.locfileid: "36036864"
 |:---|:---|:---|
 |[Получение объекта reportRoot](../api/intune-shared-reportroot-get.md)|[reportRoot](../resources/intune-shared-reportroot.md)|Чтение свойств и связей объекта [reportRoot](../resources/intune-shared-reportroot.md).|
 |[Обновление объекта reportRoot](../api/intune-shared-reportroot-update.md)|[reportRoot](../resources/intune-shared-reportroot.md)|Обновление свойств объекта [reportRoot](../resources/intune-shared-reportroot.md).|
-|**Настройка устройства**|
+|**Конфигурация устройства**|
 |[Функция deviceConfigurationDeviceActivity](../api/intune-shared-reportroot-deviceconfigurationdeviceactivity.md)|[report](../resources/intune-shared-report.md)|Метаданные для отчета о действиях устройств с конфигурацией устройств|
 |[Функция deviceConfigurationUserActivity](../api/intune-shared-reportroot-deviceconfigurationuseractivity.md)|[report](../resources/intune-shared-report.md)|Метаданные для отчета о действиях пользователей с конфигурацией устройств|
 |**Устранение неполадок**|
@@ -36,7 +36,7 @@ ms.locfileid: "36036864"
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для этого объекта.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -69,3 +69,4 @@ Content-Type: application/json
 {
 }
 ```
+

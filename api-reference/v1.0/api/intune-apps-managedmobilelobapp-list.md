@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов managedMobileLobApp
 description: Список свойств и связей объектов managedMobileLobApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0b46fc8c0d158402edc167a53b063eadb11578f3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6666eb12919b7f37993a267e37130ab08b4b6e45
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013838"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355213"
 ---
 # <a name="list-managedmobilelobapps"></a>Перечисление объектов managedMobileLobApp
 
@@ -42,7 +42,7 @@ GET /deviceAppManagement/mobileApps
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -94,6 +94,7 @@ Content-Length: 1069
   ]
 }
 ```
+
 
 
 

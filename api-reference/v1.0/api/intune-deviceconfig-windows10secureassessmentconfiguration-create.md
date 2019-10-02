@@ -1,16 +1,16 @@
 ---
 title: Create windows10SecureAssessmentConfiguration
 description: Создание объекта windows10SecureAssessmentConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2fccfb366ef8464d290f08770cdfe725bd106cd8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2919ce12936e5d7387f857de4e5381196c9b5bb9
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020124"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37365266"
 ---
 # <a name="create-windows10secureassessmentconfiguration"></a>Create windows10SecureAssessmentConfiguration
 
@@ -42,7 +42,7 @@ POST /deviceManagement/deviceConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта windows10SecureAssessmentConfiguration в формате JSON.
 
 В приведенной ниже таблице указаны свойства, которые необходимо указать при создании объекта windows10SecureAssessmentConfiguration.
@@ -110,6 +110,7 @@ Content-Length: 531
   "allowTextSuggestion": true
 }
 ```
+
 
 
 

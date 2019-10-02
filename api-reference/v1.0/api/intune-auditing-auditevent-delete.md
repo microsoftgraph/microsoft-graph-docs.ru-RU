@@ -1,16 +1,16 @@
 ---
 title: Delete auditEvent
 description: Удаляет объект auditEvent.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ad4397c6eee6e220a464b2f5b28819bf41ebdb6e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4228e67c0b64a2cf192a95fdd7ef0ff947d4a0c8
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36001959"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354877"
 ---
 # <a name="delete-auditevent"></a>Delete auditEvent
 
@@ -42,7 +42,7 @@ DELETE /deviceManagement/auditEvents/{auditEventId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -61,6 +61,7 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/auditEvents/{auditEvent
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

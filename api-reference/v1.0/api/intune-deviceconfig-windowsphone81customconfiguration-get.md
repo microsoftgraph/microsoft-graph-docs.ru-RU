@@ -1,16 +1,16 @@
 ---
 title: Получение windowsPhone81CustomConfiguration
 description: Считывание свойств и связей объекта windowsPhone81CustomConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d236a1ee41b15c4b44c775f8a041c66aada394e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2e520d7492c07fb194381dd4a651819ec7e73440
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997045"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364825"
 ---
 # <a name="get-windowsphone81customconfiguration"></a>Получение windowsPhone81CustomConfiguration
 
@@ -45,7 +45,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -87,6 +87,7 @@ Content-Length: 632
   }
 }
 ```
+
 
 
 

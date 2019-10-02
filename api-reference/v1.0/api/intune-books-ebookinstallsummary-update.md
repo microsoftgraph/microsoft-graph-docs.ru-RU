@@ -1,16 +1,16 @@
 ---
 title: Update eBookInstallSummary
 description: Обновление свойств объекта eBookInstallSummary.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b8b57abc37de65d4040ae4f02bb825111ecefca4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3a432d9e341f83d85f487e4fe1f4ef32d806d2f7
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013565"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354814"
 ---
 # <a name="update-ebookinstallsummary"></a>Update eBookInstallSummary
 
@@ -42,7 +42,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/installSummary
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md) в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта [eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md).
@@ -100,6 +100,7 @@ Content-Length: 285
   "notInstalledUserCount": 5
 }
 ```
+
 
 
 

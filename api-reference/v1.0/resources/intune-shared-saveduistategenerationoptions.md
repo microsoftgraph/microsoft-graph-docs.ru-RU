@@ -1,16 +1,16 @@
 ---
 title: тип перечисления Саведуистатеженератионоптионс
 description: Пока не задокументировано.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 556dd303bb5ad8f8ad5b804fb684319cd1d32a06
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 34060eea4a548aed497be9b29465d2472fca78ab
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036843"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360141"
 ---
 # <a name="saveduistategenerationoptions-enum-type"></a>тип перечисления Саведуистатеженератионоптионс
 
@@ -22,7 +22,8 @@ ms.locfileid: "36036843"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |none|нуль|Пока не задокументировано.|
-|Омитсилверлигхтполициреференцес|1,1|Пока не задокументировано.|
+|омитсилверлигхтполициреференцес|1,1|Пока не задокументировано.|
+
 
 
 

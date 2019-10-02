@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса importedWindowsAutopilotDeviceIdentity
 description: Импортированные устройства с Windows AutoPilot
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 546c887a1520e94ac957376f5472d514b63fb12f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 48d7df1d125e5d5494c588ec92e0d2c73a4f317e
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030634"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356844"
 ---
 # <a name="importedwindowsautopilotdeviceidentity-resource-type"></a>Тип ресурса importedWindowsAutopilotDeviceIdentity
 
@@ -37,7 +37,7 @@ ms.locfileid: "36030634"
 |hardwareIdentifier|Двоичный|Аппаратный большой двоичный объект (BLOB) устройства Windows Autopilot.|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Текущее состояние импортированного устройства.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -65,6 +65,7 @@ ms.locfileid: "36030634"
   }
 }
 ```
+
 
 
 

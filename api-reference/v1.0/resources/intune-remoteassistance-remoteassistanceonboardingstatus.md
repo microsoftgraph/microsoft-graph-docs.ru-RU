@@ -1,16 +1,16 @@
 ---
 title: тип перечисления Ремотеассистанцеонбоардингстатус
 description: Пока не задокументировано.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 75150c1944043e3c3c9e1f08fb89a8b7ac4b2bc7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 592ad28d076fc28ebba36d5c1196e81cba1286dd
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037088"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37355892"
 ---
 # <a name="remoteassistanceonboardingstatus-enum-type"></a>тип перечисления Ремотеассистанцеонбоардингстатус
 
@@ -21,9 +21,10 @@ ms.locfileid: "36037088"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нотонбоардед|нуль|Пока не задокументировано.|
+|нотонбоардед|нуль|Пока не задокументировано.|
 |входящей миграции|1,1|Пока не задокументировано.|
 |подключены|2|Пока не задокументировано.|
+
 
 
 

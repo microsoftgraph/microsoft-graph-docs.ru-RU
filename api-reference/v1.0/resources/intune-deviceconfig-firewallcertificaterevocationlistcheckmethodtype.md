@@ -1,16 +1,16 @@
 ---
 title: тип перечисления Фиреваллцертификатеревокатионлистчеккмесодтипе
 description: Возможные значения для Фиреваллцертификатеревокатионлистчеккмесод
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7c5fa3baaeb3d24bc902d733a6c6462fbcf70f33
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 42f470d7f3d8ef29a69ba8f1cd4f76ddc0f77e96
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028303"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359273"
 ---
 # <a name="firewallcertificaterevocationlistcheckmethodtype-enum-type"></a>тип перечисления Фиреваллцертификатеревокатионлистчеккмесодтипе
 
@@ -21,10 +21,11 @@ ms.locfileid: "36028303"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Девицедефаулт|нуль|Значение не настроено Intune, не переопределять значение устройства по умолчанию, настроенное пользователем|
+|девицедефаулт|нуль|Значение не настроено Intune, не переопределять значение устройства по умолчанию, настроенное пользователем|
 |none|1,1|Не проверять список отзыва сертификатов|
 |произошл|2|Проверка списка отзыва сертификатов и предоставление сертификата только в том случае, если сертификат подтвержден подтверждением|
 |необходимость|4|Требовать успешную проверку списка отзыва сертификатов перед предоставлением сертификата|
+
 
 
 

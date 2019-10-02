@@ -1,16 +1,16 @@
 ---
 title: Get macOSOfficeSuiteApp
 description: Чтение свойств и связей объекта macOSOfficeSuiteApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4020f3df023e3ce6f159a61f08d4d4adacfba199
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3be5210346652854658e53ca3a2d108995cde5c9
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36014188"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358783"
 ---
 # <a name="get-macosofficesuiteapp"></a>Get macOSOfficeSuiteApp
 
@@ -45,7 +45,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -90,6 +90,7 @@ Content-Length: 813
   }
 }
 ```
+
 
 
 

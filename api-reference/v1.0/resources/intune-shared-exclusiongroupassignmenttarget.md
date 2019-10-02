@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса exclusionGroupAssignmentTarget
 description: Представляет группу, которую следует исключить из назначения.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 805f2f1dbcab8751d564fbde3f6747b6e77f6d09
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 52dcbfe4337fdc5993f6f2b9499244f87a10b953
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036927"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354023"
 ---
 # <a name="exclusiongroupassignmenttarget-resource-type"></a>Тип ресурса exclusionGroupAssignmentTarget
 
@@ -26,7 +26,7 @@ ms.locfileid: "36036927"
 |:---|:---|:---|
 |groupId|String|Идентификатор группы-объекта назначения. Наследуется от ресурса [groupAssignmentTarget](../resources/intune-shared-groupassignmenttarget.md)|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -42,6 +42,7 @@ ms.locfileid: "36036927"
   "groupId": "String"
 }
 ```
+
 
 
 

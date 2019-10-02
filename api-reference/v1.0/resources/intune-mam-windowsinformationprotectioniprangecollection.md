@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса windowsInformationProtectionIPRangeCollection
 description: Коллекция диапазонов IP-адресов Windows Information Protection
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9354704c5326e9f92814e06aee9ef12635c0faa5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1774a52b6dd5535443bb24dea5e786fc2c8cff34
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037690"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37360645"
 ---
 # <a name="windowsinformationprotectioniprangecollection-resource-type"></a>Тип ресурса windowsInformationProtectionIPRangeCollection
 
@@ -24,7 +24,7 @@ ms.locfileid: "36037690"
 |displayName|String|Отображаемое имя|
 |ranges|Коллекция объектов [ipRange](../resources/intune-mam-iprange.md)|Коллекция диапазонов адресов протокола Интернета|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -47,6 +47,7 @@ ms.locfileid: "36037690"
   ]
 }
 ```
+
 
 
 

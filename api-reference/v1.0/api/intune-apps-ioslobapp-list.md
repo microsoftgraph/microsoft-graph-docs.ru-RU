@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов iosLobApp
 description: Список свойств и связей объектов iosLobApp.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9e7f1becef843f018c5a1269fbffc02855e13ff5
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 33f0d6c1d4968dda3c8cb561cbbcf80a90cec823
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196212"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37358922"
 ---
 # <a name="list-ioslobapps"></a>Перечисление объектов iosLobApp
 
@@ -42,7 +42,7 @@ GET /deviceAppManagement/mobileApps
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -110,6 +110,7 @@ Content-Length: 1594
   ]
 }
 ```
+
 
 
 

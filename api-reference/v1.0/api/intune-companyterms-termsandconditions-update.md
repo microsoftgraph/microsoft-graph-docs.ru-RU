@@ -1,16 +1,16 @@
 ---
 title: Update termsAndConditions
 description: Обновление свойств объекта termsAndConditions.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b940a595139b2309f5be4678c156f82eeabbe63a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cf64229a71a40c0af761038a0ec7c58f8e104f8d
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36019837"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37354611"
 ---
 # <a name="update-termsandconditions"></a>Update termsAndConditions
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStat
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [termsAndConditions](../resources/intune-companyterms-termsandconditions.md).
@@ -105,6 +105,7 @@ Content-Length: 445
   "version": 7
 }
 ```
+
 
 
 

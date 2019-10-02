@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса omaSettingInteger
 description: Определение целого числа параметра OMA.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f80f8583907a25646643fdd5770d6bce5adcb4b3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 85eeeff4cc9ac897416e587aa5d26be79b59bb59
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028023"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359903"
 ---
 # <a name="omasettinginteger-resource-type"></a>Тип ресурса omaSettingInteger
 
@@ -29,7 +29,7 @@ ms.locfileid: "36028023"
 |omaUri|String|OMA. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |value|Int32|Значение.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -48,6 +48,7 @@ ms.locfileid: "36028023"
   "value": 1024
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса updateWindowsDeviceAccountActionParameter
 description: Пока не задокументировано.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 27007548c0d17351502e9ede3b8070afa52d6d80
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 33b4b9e62b1038eb3b9e97b01a3d7b38906b605c
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030662"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37356894"
 ---
 # <a name="updatewindowsdeviceaccountactionparameter-resource-type"></a>Тип ресурса updateWindowsDeviceAccountActionParameter
 
@@ -28,7 +28,7 @@ ms.locfileid: "36030662"
 |exchangeServer|String|Пока не задокументировано.|
 |sessionInitiationProtocalAddress|String|Пока не задокументировано.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -52,6 +52,7 @@ ms.locfileid: "36030662"
   "sessionInitiationProtocalAddress": "String"
 }
 ```
+
 
 
 

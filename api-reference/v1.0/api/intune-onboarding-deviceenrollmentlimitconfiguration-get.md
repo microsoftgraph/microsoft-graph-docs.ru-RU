@@ -1,16 +1,16 @@
 ---
 title: Получение deviceEnrollmentLimitConfiguration
 description: Чтение свойств и связей объекта deviceEnrollmentLimitConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 188e231f2bdc06cfb15ccae13804a197bd8269dd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8aa1f53338f025da4a2e4f82def73c19adf3adef
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018003"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37362669"
 ---
 # <a name="get-deviceenrollmentlimitconfiguration"></a>Получение deviceEnrollmentLimitConfiguration
 
@@ -45,7 +45,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -80,6 +80,7 @@ Content-Length: 414
   }
 }
 ```
+
 
 
 

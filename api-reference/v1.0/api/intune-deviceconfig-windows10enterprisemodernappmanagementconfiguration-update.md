@@ -1,16 +1,16 @@
 ---
 title: Обновление объекта windows10EnterpriseModernAppManagementConfiguration
 description: Обновление свойств объекта windows10EnterpriseModernAppManagementConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 16162da1d914eb967a256dbbd64e007ca8c3c99c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4c75df60caf240825b3f5685424c15d0dbe92960
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35997325"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37365420"
 ---
 # <a name="update-windows10enterprisemodernappmanagementconfiguration"></a>Обновление объекта windows10EnterpriseModernAppManagementConfiguration
 
@@ -42,7 +42,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [windows10EnterpriseModernAppManagementConfiguration](../resources/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [windows10EnterpriseModernAppManagementConfiguration](../resources/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration.md).
@@ -98,6 +98,7 @@ Content-Length: 394
   "uninstallBuiltInApps": true
 }
 ```
+
 
 
 

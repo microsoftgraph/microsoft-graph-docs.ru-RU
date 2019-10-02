@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса resourceAction
 description: Пока не задокументировано.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 88ea0c947a87135f874755f49d0847a3c2a08fae
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c30c9a272029fc681a383772b2467dc6fb67af88
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037158"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37359028"
 ---
 # <a name="resourceaction-resource-type"></a>Тип ресурса resourceAction
 
@@ -24,7 +24,7 @@ ms.locfileid: "36037158"
 |allowedResourceActions|Коллекция строк|Разрешенные действия|
 |notAllowedResourceActions|Коллекция строк|Запрещенные действия|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -45,6 +45,7 @@ ms.locfileid: "36037158"
   ]
 }
 ```
+
 
 
 

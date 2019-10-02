@@ -1,16 +1,16 @@
 ---
 title: Функция getManagedAppPolicies
 description: Получает ограничения для определенного пользователя.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e5d0854febf8fbb2098fb11c65401f22965a5d95
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4e2e4d150d8d05581cd587d7cb53a903dea4b78a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36023374"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37361261"
 ---
 # <a name="getmanagedapppolicies-function"></a>Функция getManagedAppPolicies
 
@@ -43,7 +43,7 @@ GET /users/{usersId}/getManagedAppPolicies
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -80,6 +80,7 @@ Content-Length: 401
   ]
 }
 ```
+
 
 
 
