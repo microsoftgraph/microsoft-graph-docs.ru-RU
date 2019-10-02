@@ -1,16 +1,16 @@
 ---
 title: Создание объекта androidManagedAppRegistration
 description: Создание объекта androidManagedAppRegistration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c7ee7677afe514c0e673d3795f6d8cc19ca65568
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ca9ca52ff52f8e4c7057845a96614109d9f8feb4
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996842"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363964"
 ---
 # <a name="create-androidmanagedappregistration"></a>Создание объекта androidManagedAppRegistration
 
@@ -42,7 +42,7 @@ POST /deviceAppManagement/managedAppRegistrations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта androidManagedAppRegistration в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта androidManagedAppRegistration.
@@ -127,6 +127,7 @@ Content-Length: 753
   "version": "Version value"
 }
 ```
+
 
 
 

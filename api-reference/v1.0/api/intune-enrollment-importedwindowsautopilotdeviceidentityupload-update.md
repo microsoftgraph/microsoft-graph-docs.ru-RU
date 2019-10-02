@@ -1,16 +1,16 @@
 ---
 title: Обновление Импортедвиндовсаутопилотдевицеидентитюплоад
 description: Обновление свойств объекта Импортедвиндовсаутопилотдевицеидентитюплоад.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b5bd613884d06fb3b5d10172c71873d4276238a3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2b63e6ce8da089d81dc019f902aaffc154f0becd
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020803"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364034"
 ---
 # <a name="update-importedwindowsautopilotdeviceidentityupload"></a>Обновление Импортедвиндовсаутопилотдевицеидентитюплоад
 
@@ -42,7 +42,7 @@ PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedW
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [импортедвиндовсаутопилотдевицеидентитюплоад](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [импортедвиндовсаутопилотдевицеидентитюплоад](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md).
@@ -50,7 +50,7 @@ PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedW
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|GUID объекта|
-|Креатеддатетимеутк|DateTimeOffset|Дата и время создания объекта.|
+|креатеддатетимеутк|DateTimeOffset|Дата и время создания объекта.|
 |status|[importedWindowsAutopilotDeviceIdentityUploadStatus](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)|Состояние отправки. Возможные значения: `noUpload`, `pending`, `complete`, `error`.|
 
 
@@ -88,6 +88,7 @@ Content-Length: 221
   "status": "pending"
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Get managedAppConfiguration
 description: Чтение свойств и связей объекта managedAppConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a11c15d578b9aebdc0b5f2fd0e7e1db40fdd2627
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c295b7c170ea1335d30ddbb62e96066c5f54eda4
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996800"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363726"
 ---
 # <a name="get-managedappconfiguration"></a>Get managedAppConfiguration
 
@@ -47,7 +47,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -87,6 +87,7 @@ Content-Length: 550
   }
 }
 ```
+
 
 
 

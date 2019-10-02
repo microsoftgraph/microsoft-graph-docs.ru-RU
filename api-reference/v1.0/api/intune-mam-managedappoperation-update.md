@@ -1,16 +1,16 @@
 ---
 title: Обновление объекта managedAppOperation
 description: Обновление свойств объекта managedAppOperation.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d5a1b3a701821144fb5f97819694a45521515a9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8be5619d16474fc8f606c41172bd107a1aa0c56a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996758"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363656"
 ---
 # <a name="update-managedappoperation"></a>Обновление объекта managedAppOperation
 
@@ -42,7 +42,7 @@ PATCH /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/op
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [managedAppOperation](../resources/intune-mam-managedappoperation.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [managedAppOperation](../resources/intune-mam-managedappoperation.md).
@@ -93,6 +93,7 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
+
 
 
 

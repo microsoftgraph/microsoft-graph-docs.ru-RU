@@ -1,16 +1,16 @@
 ---
 title: Delete defaultManagedAppProtection
 description: Удаляет объект defaultManagedAppProtection.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5f3fdfc525cfc5f5e21cf1d3368fbe7e8cf45064
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 86245231c8fa4b9015366cbf16d206909df72389
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020729"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363894"
 ---
 # <a name="delete-defaultmanagedappprotection"></a>Delete defaultManagedAppProtection
 
@@ -42,7 +42,7 @@ DELETE /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProte
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -61,6 +61,7 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/defaultManagedAppPro
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

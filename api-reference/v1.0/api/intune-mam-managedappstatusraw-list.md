@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов managedAppStatusRaw
 description: Список свойств и связей объектов managedAppStatusRaw.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 764b0f66b04abae641731753f8ddba9379b092b8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ef3f88e1e6798dca3e03640ce9eacf2929a19a3b
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996646"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363460"
 ---
 # <a name="list-managedappstatusraws"></a>Перечисление объектов managedAppStatusRaw
 
@@ -42,7 +42,7 @@ GET /deviceAppManagement/managedAppStatuses
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -77,6 +77,7 @@ Content-Length: 307
   ]
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов targetedManagedAppConfiguration
 description: Список свойств и связей объектов targetedManagedAppConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4e501983ef8ff489f36910198e842258231d39a7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 628ee2568a94c32ebcec03a50c900c117b2c17f8
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020537"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363243"
 ---
 # <a name="list-targetedmanagedappconfigurations"></a>Перечисление объектов targetedManagedAppConfiguration
 
@@ -42,7 +42,7 @@ GET /deviceAppManagement/targetedManagedAppConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -86,6 +86,7 @@ Content-Length: 657
   ]
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: Get windows10CompliancePolicy
 description: Чтение свойств и связей объекта windows10CompliancePolicy.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3cb099aebf0263c196f798c770d865bba87a43d1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 86cbb51ea82e554215f82978d6d922237f26539a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36017009"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37365646"
 ---
 # <a name="get-windows10compliancepolicy"></a>Get windows10CompliancePolicy
 
@@ -45,7 +45,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -97,6 +97,7 @@ Content-Length: 1197
   }
 }
 ```
+
 
 
 

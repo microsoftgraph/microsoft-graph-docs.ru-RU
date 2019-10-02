@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов androidManagedAppProtection
 description: Перечисление свойств и связей объектов androidManagedAppProtection.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c5e49fd142ba7b3e71078c7618d59a34ef547ff
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7aded0ca0ad0cedc33e844e79c9cffe945b48a98
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020761"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363978"
 ---
 # <a name="list-androidmanagedappprotections"></a>Перечисление объектов androidManagedAppProtection
 
@@ -42,7 +42,7 @@ GET /deviceAppManagement/androidManagedAppProtections
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -112,6 +112,7 @@ Content-Length: 2065
   ]
 }
 ```
+
 
 
 

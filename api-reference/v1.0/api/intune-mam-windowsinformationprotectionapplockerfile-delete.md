@@ -1,16 +1,16 @@
 ---
 title: Удаление объекта windowsInformationProtectionAppLockerFile
 description: Удаляет объект windowsInformationProtectionAppLockerFile.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3de2854b6fef0170be64a369e6a6bdc231fd43e9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 169e65d68a96dedb5abd41ab7d82f95625df9e34
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020565"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363054"
 ---
 # <a name="delete-windowsinformationprotectionapplockerfile"></a>Удаление объекта windowsInformationProtectionAppLockerFile
 
@@ -45,7 +45,7 @@ DELETE /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsI
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/windowsInformationPr
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

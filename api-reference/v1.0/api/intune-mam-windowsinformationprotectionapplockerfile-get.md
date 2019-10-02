@@ -1,16 +1,16 @@
 ---
 title: Получение объекта windowsInformationProtectionAppLockerFile
 description: Чтение свойств и связей объекта windowsInformationProtectionAppLockerFile.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f1cab2311337d2f569f4f837c0775c776186ce65
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: be7127033d04698883ecb964baccfd5fce6fa30a
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996548"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363026"
 ---
 # <a name="get-windowsinformationprotectionapplockerfile"></a>Получение объекта windowsInformationProtectionAppLockerFile
 
@@ -48,7 +48,7 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInfo
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -80,6 +80,7 @@ Content-Length: 291
   }
 }
 ```
+
 
 
 

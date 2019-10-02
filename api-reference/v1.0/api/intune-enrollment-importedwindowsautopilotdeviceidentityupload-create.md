@@ -1,16 +1,16 @@
 ---
 title: Создание Импортедвиндовсаутопилотдевицеидентитюплоад
 description: Создание нового объекта Импортедвиндовсаутопилотдевицеидентитюплоад.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6449402db0af2a79cbeddd22468adbf5592cb6ce
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 00866c4648377e66cc56887af2ac4398d31b733f
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020873"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364083"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentityupload"></a>Создание Импортедвиндовсаутопилотдевицеидентитюплоад
 
@@ -42,7 +42,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Импортедвиндовсаутопилотдевицеидентитюплоад в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Импортедвиндовсаутопилотдевицеидентитюплоад.
@@ -50,7 +50,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|GUID объекта|
-|Креатеддатетимеутк|DateTimeOffset|Дата и время создания объекта.|
+|креатеддатетимеутк|DateTimeOffset|Дата и время создания объекта.|
 |status|[importedWindowsAutopilotDeviceIdentityUploadStatus](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)|Состояние отправки. Возможные значения: `noUpload`, `pending`, `complete`, `error`.|
 
 
@@ -88,6 +88,7 @@ Content-Length: 221
   "status": "pending"
 }
 ```
+
 
 
 

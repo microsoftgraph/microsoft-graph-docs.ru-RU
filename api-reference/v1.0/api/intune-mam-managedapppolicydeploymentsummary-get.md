@@ -1,16 +1,16 @@
 ---
 title: Получение объекта managedAppPolicyDeploymentSummary
 description: Чтение свойств и связей объекта managedAppPolicyDeploymentSummary.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fa2c0210a2eb09a8e348736cefbc143d3c923632
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8f8259fe679a01bde637b4315b6d9dba12aec9d8
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996737"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363600"
 ---
 # <a name="get-managedapppolicydeploymentsummary"></a>Получение объекта managedAppPolicyDeploymentSummary
 
@@ -48,7 +48,7 @@ GET /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCon
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -90,6 +90,7 @@ Content-Length: 688
   }
 }
 ```
+
 
 
 

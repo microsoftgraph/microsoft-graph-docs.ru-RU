@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов managedAppOperation
 description: Список свойств и связей объектов managedAppOperation.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6ba781dfe7dbd9cda5cb7fb28f6d848ce658dba2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 63dcad25723a1d178620f323c7fd42969ed1158f
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018270"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363670"
 ---
 # <a name="list-managedappoperations"></a>Перечисление объектов managedAppOperation
 
@@ -42,7 +42,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/oper
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -76,6 +76,7 @@ Content-Length: 329
   ]
 }
 ```
+
 
 
 

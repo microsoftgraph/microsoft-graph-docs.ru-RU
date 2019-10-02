@@ -1,16 +1,16 @@
 ---
 title: Действие targetApps
 description: Пока не задокументировано.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f9157b9cae63d0484e8983d680586c664ec012b4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5b7c0c8f43766aea04f91cfc6e73e73a86113d1c
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018213"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363544"
 ---
 # <a name="targetapps-action"></a>Действие targetApps
 
@@ -44,7 +44,7 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -87,6 +87,7 @@ Content-length: 286
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

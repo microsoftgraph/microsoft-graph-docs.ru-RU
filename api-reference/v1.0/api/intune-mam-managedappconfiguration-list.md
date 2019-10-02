@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов managedAppConfiguration
 description: Список свойств и связей объектов managedAppConfiguration.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e47a07c28a1a8a135e04767e5e79046549694547
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: aa6be1c3bcde8e17a89dbd0fe28b9a330ba86002
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018297"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363733"
 ---
 # <a name="list-managedappconfigurations"></a>Перечисление объектов managedAppConfiguration
 
@@ -44,7 +44,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -86,6 +86,7 @@ Content-Length: 592
   ]
 }
 ```
+
 
 
 

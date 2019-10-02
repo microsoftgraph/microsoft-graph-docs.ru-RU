@@ -1,16 +1,16 @@
 ---
 title: Действие updateWindowsDeviceAccount
 description: Пока не задокументировано.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dd5626a0898ad90ef1cb7561094f8aecc703447f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3a4761a25fdb9e651e19d71c04c30bcebd2f5daa
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020908"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364258"
 ---
 # <a name="updatewindowsdeviceaccount-action"></a>Действие updateWindowsDeviceAccount
 
@@ -44,7 +44,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -89,6 +89,7 @@ Content-length: 532
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

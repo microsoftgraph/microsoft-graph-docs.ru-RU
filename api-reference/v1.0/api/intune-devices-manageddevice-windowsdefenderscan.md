@@ -1,16 +1,16 @@
 ---
 title: Действие windowsDefenderScan
 description: Пока не задокументировано.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d0839b8f92a2df97436ac589669f2870a87608f5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 69cf648d2c41592bb696b83558648bc995341b43
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36018584"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364244"
 ---
 # <a name="windowsdefenderscan-action"></a>Действие windowsDefenderScan
 
@@ -44,7 +44,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -78,6 +78,7 @@ Content-length: 25
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

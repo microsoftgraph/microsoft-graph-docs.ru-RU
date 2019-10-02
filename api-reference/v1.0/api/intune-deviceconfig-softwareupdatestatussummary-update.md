@@ -1,16 +1,16 @@
 ---
 title: Update softwareUpdateStatusSummary
 description: Обновление свойств объекта softwareUpdateStatusSummary.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 619208625337a48d11354b41629738a86c873f44
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f19fec8c7d3a00bc187455f0f39128bc5095475d
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36017030"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37365707"
 ---
 # <a name="update-softwareupdatestatussummary"></a>Update softwareUpdateStatusSummary
 
@@ -42,7 +42,7 @@ PATCH /deviceManagement/softwareUpdateStatusSummary
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md) в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта [softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md).
@@ -127,6 +127,7 @@ Content-Length: 567
   "notApplicableUserCount": 6
 }
 ```
+
 
 
 

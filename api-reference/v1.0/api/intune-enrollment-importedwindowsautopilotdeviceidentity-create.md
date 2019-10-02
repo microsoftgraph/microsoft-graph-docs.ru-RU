@@ -1,16 +1,16 @@
 ---
 title: Создать importedWindowsAutopilotDeviceIdentity
 description: Создать новый объект importedWindowsAutopilotDeviceIdentity.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e8bc487635c59ceff11ae157a9094714f439f9e8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 74a1c84c9a7d88f83e7cf3dcaf64b05b13eeb55d
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020849"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364174"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>Создать importedWindowsAutopilotDeviceIdentity
 
@@ -43,7 +43,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWi
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта importedWindowsAutopilotDeviceIdentity в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта importedWindowsAutopilotDeviceIdentity.
@@ -110,6 +110,7 @@ Content-Length: 590
   }
 }
 ```
+
 
 
 

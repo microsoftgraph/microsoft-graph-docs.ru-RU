@@ -1,16 +1,16 @@
 ---
 title: Список importedWindowsAutopilotDeviceIdentityUploads
 description: Список свойств и связей объектов Импортедвиндовсаутопилотдевицеидентитюплоад.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8e7ad709ae54ec05943d3da20ae8e263a61b791d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6e45f340cc1ce23e08a56418f583a64758ebcaf4
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36020851"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37364041"
 ---
 # <a name="list-importedwindowsautopilotdeviceidentityuploads"></a>Список importedWindowsAutopilotDeviceIdentityUploads
 
@@ -42,7 +42,7 @@ GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -74,6 +74,7 @@ Content-Length: 270
   ]
 }
 ```
+
 
 
 

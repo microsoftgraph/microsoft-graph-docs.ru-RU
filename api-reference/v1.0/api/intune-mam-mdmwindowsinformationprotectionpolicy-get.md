@@ -1,16 +1,16 @@
 ---
 title: Get mdmWindowsInformationProtectionPolicy
 description: Чтение свойств и связей объекта mdmWindowsInformationProtectionPolicy.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c3798d031705e27d0bcb37fa6a664799cd28b9ee
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fe1f5fd7a7afbe9b1764417f7df5076a72e878cd
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996597"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37363334"
 ---
 # <a name="get-mdmwindowsinformationprotectionpolicy"></a>Get mdmWindowsInformationProtectionPolicy
 
@@ -45,7 +45,7 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInfo
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -196,6 +196,7 @@ Content-Length: 4346
   }
 }
 ```
+
 
 
 
