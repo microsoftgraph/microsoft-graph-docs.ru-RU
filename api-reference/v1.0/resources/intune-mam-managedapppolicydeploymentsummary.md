@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса managedAppPolicyDeploymentSummary
 description: ManagedAppEntity — это базовый тип для всех остальных типов объектов в рабочем процессе управления приложениями.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0d60ba93a5c1a090e511a6cc4aa96444b2581d78
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0a04ea41ff3472c58255b1682914e6acad98ed57
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037956"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367814"
 ---
 # <a name="managedapppolicydeploymentsummary-resource-type"></a>Тип ресурса managedAppPolicyDeploymentSummary
 
@@ -34,7 +34,7 @@ ManagedAppEntity — это базовый тип для всех остальн
 |id|String|Ключ объекта.|
 |version|String|Версия объекта.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -65,6 +65,7 @@ ManagedAppEntity — это базовый тип для всех остальн
   "version": "String"
 }
 ```
+
 
 
 

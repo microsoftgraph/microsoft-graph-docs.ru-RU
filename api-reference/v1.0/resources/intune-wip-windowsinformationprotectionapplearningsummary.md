@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса windowsInformationProtectionAppLearningSummary
 description: Объект сводки по обучению Windows Information Protection для приложений.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: aadf33ecc48f1f384ec38bdb4c531343f6bd08bc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 571d214040e97216ece4b8b7f04cc93e0e22ad72
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036711"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367198"
 ---
 # <a name="windowsinformationprotectionapplearningsummary-resource-type"></a>Тип ресурса windowsInformationProtectionAppLearningSummary
 
@@ -32,10 +32,10 @@ ms.locfileid: "36036711"
 |:---|:---|:---|
 |id|String|Уникальный идентификатор объекта WindowsInformationProtectionAppLearningSummary.|
 |applicationName|String|Имя приложения|
-|applicationType|[Аппликатионтипе](../resources/intune-wip-applicationtype.md)|Тип приложения. Возможные значения: `universal`, `desktop`.|
+|applicationType|[аппликатионтипе](../resources/intune-wip-applicationtype.md)|Тип приложения. Возможные значения: `universal`, `desktop`.|
 |deviceCount|Int32|Количество устройств|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -55,6 +55,7 @@ ms.locfileid: "36036711"
   "deviceCount": 1024
 }
 ```
+
 
 
 

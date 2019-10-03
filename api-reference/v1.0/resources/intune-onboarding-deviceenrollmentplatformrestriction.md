@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса deviceEnrollmentPlatformRestriction
 description: Ограничения на регистрацию для определенных платформ
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 380e40f04c21bb4276c859597610fa3af769fd11
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: edf64c6aaa2a9745b28543bd3dc3a458b7d8869e
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037522"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367240"
 ---
 # <a name="deviceenrollmentplatformrestriction-resource-type"></a>Тип ресурса deviceEnrollmentPlatformRestriction
 
@@ -26,7 +26,7 @@ ms.locfileid: "36037522"
 |osMinimumVersion|String|Минимальная поддерживаемая версия ОС|
 |osMaximumVersion|String|Максимальная поддерживаемая версия ОС|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -45,6 +45,7 @@ ms.locfileid: "36037522"
   "osMaximumVersion": "String"
 }
 ```
+
 
 
 

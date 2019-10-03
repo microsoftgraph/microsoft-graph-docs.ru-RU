@@ -1,16 +1,16 @@
 ---
 title: тип перечисления Дефендерклаудблокклевелтипе
 description: Возможные значения уровня облачного блока
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 908ebaef963b4c7d8baaf8f1cb0ecfb316d33ad2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 658a484a29ebed8cb111ded81ef439a560c87ac0
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031880"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37366633"
 ---
 # <a name="defendercloudblockleveltype-enum-type"></a>тип перечисления Дефендерклаудблокклевелтипе
 
@@ -23,8 +23,9 @@ ms.locfileid: "36031880"
 |:---|:---|:---|
 |notConfigured|нуль|Значение по умолчанию, используемый по умолчанию уровень блокировки антивирусной программы "Защитник Windows" и обеспечивает строгое обнаружение без увеличения риска обнаружения законных файлов|
 |высокоуровневых|1,1|High — применение надежного уровня обнаружения.|
-|Хигхплус|2|Высокая + использование высокого уровня и применение мер защиты|
-|Зеротолеранце|4|Нулевое отклонение блокирует все неизвестные исполняемые файлы|
+|хигхплус|2|Высокая + использование высокого уровня и применение мер защиты|
+|зеротолеранце|4|Нулевое отклонение блокирует все неизвестные исполняемые файлы|
+
 
 
 

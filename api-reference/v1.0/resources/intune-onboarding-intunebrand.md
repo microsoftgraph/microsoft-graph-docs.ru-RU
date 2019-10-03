@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса intuneBrand
 description: Ресурс intuneBrand содержит данные, которые используются для настройки внешнего вида приложения "Корпоративный портал" и веб-портала пользователя.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1719a78e5348f1f158939f8cfc27453c350af067
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c5fa641fb7eea1e320f0ad9966c5a9782004cb41
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037333"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367884"
 ---
 # <a name="intunebrand-resource-type"></a>Тип ресурса intuneBrand
 
@@ -36,7 +36,7 @@ ms.locfileid: "36037333"
 |showNameNextToLogo|Boolean|Логическое значение, которое определяет, отображается ли возле изображения логотипа указанное администратором отображаемое имя.|
 |showDisplayNameNextToLogo|Boolean|Логическое значение, которое определяет, отображается ли возле изображения логотипа указанное администратором отображаемое имя.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -78,6 +78,7 @@ ms.locfileid: "36037333"
   "showDisplayNameNextToLogo": true
 }
 ```
+
 
 
 

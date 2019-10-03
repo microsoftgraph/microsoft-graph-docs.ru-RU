@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса locateDeviceActionResult
 description: Результат действия "Поиск устройства"
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 69d4eea303711cc5c2174ee05ae97225521ed89f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8ee99ade1a76a3126e08de5ca3986df574178cee
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030746"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368010"
 ---
 # <a name="locatedeviceactionresult-resource-type"></a>Тип ресурса locateDeviceActionResult
 
@@ -30,7 +30,7 @@ ms.locfileid: "36030746"
 |lastUpdatedDateTime|DateTimeOffset|Время последнего обновления действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|
 |deviceLocation|[deviceGeoLocation](../resources/intune-devices-devicegeolocation.md)|Местоположение устройства|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -60,6 +60,7 @@ ms.locfileid: "36030746"
   }
 }
 ```
+
 
 
 

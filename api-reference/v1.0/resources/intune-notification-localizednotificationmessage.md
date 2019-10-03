@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса localizedNotificationMessage
 description: Текстовое содержимое шаблона сообщения уведомления для указанного языкового стандарта.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a4b86f29cbfee74a9401d764bb1c01b2ade0192f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0205e9e9f91b2c2a1edd5f0d997ebc69286b5042
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037599"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367296"
 ---
 # <a name="localizednotificationmessage-resource-type"></a>Тип ресурса localizedNotificationMessage
 
@@ -37,7 +37,7 @@ ms.locfileid: "36037599"
 |messageTemplate|String|Содержимое шаблона сообщения.|
 |isDefault|Boolean|Флаг, указывающий, используется ли этот языковой стандарт в качестве базового языка. Можно устанавливать только этот флаг. Чтобы снять его, задайте значение true для аналогичного свойства другого локализованного сообщения уведомления.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -59,6 +59,7 @@ ms.locfileid: "36037599"
   "isDefault": true
 }
 ```
+
 
 
 

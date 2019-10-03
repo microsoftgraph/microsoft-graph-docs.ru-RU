@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса settingStateDeviceSummary
 description: Сводка по состоянию параметра конфигурации и политики соответствия требованиям для устройств
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ed7427e05e8d48f090f991b45e3a46cbc2985b01
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8063d01ade277f659dcbabed05fbaa443c57fdc0
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031117"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367730"
 ---
 # <a name="settingstatedevicesummary-resource-type"></a>Тип ресурса settingStateDeviceSummary
 
@@ -41,7 +41,7 @@ ms.locfileid: "36031117"
 |errorDeviceCount|Int32|Количество ошибок устройств для параметра.|
 |conflictDeviceCount|Int32|Количество конфликтов устройств для параметра|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -67,6 +67,7 @@ ms.locfileid: "36031117"
   "conflictDeviceCount": 1024
 }
 ```
+
 
 
 

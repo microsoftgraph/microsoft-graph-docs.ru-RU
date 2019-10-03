@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса windows10NetworkProxyServer
 description: Политика прокси-сервера сети.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b68f13ab80544d591b22fc77ab35110302dc48ea
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b126358a8ab8574d4dcbf7c1f22e412eda41d61f
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031012"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367058"
 ---
 # <a name="windows10networkproxyserver-resource-type"></a>Тип ресурса windows10NetworkProxyServer
 
@@ -25,7 +25,7 @@ ms.locfileid: "36031012"
 |exceptions|Коллекция String|Адреса, которые не должны использовать прокси-сервер. Система не использует прокси-сервер для адресов, начинающихся, как указано в этом узле.|
 |useForLocalAddresses|Boolean|Определяет необходимость использования прокси-сервера для локальных адресов (в интрасети).|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -45,6 +45,7 @@ ms.locfileid: "36031012"
   "useForLocalAddresses": true
 }
 ```
+
 
 
 

@@ -1,16 +1,16 @@
 ---
 title: тип перечисления Велкомескринмитингинформатион
 description: Возможные значения для сведений о собрании на экране приветствия.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c450c631995e2f1467236760f964b3151317f65d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ba55408490c821160a7d0a0e95f98ccba712c8f5
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36031054"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367128"
 ---
 # <a name="welcomescreenmeetinginformation-enum-type"></a>тип перечисления Велкомескринмитингинформатион
 
@@ -22,8 +22,9 @@ ms.locfileid: "36031054"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|Шоворганизерандтимеонли|1,1|Показывать только организатор и время.|
-|Шоворганизерандтимеандсубжект|2|Отображение организатора, времени и темы (тема скрыта для частных собраний).|
+|шоворганизерандтимеонли|1,1|Показывать только организатор и время.|
+|шоворганизерандтимеандсубжект|2|Отображение организатора, времени и темы (тема скрыта для частных собраний).|
+
 
 
 

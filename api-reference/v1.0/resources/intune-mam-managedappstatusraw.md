@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса managedAppStatusRaw
 description: Представляет нетипизированный отчет о состоянии, касающийся конфигурации и защиты приложений организации.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b21c15784409d9d7c373c954faecbc23426041b1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4d6b597f23cc10ba27b57cf5acbe5baf8bc9c328
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037879"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367016"
 ---
 # <a name="managedappstatusraw-resource-type"></a>Тип ресурса managedAppStatusRaw
 
@@ -35,7 +35,7 @@ ms.locfileid: "36037879"
 |version|String|Версия объекта. Наследуется от объекта [managedAppStatus](../resources/intune-mam-managedappstatus.md).|
 |content|[Json](../resources/intune-mam-json.md)|Содержимое отчета о состоянии.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -57,6 +57,7 @@ ms.locfileid: "36037879"
   }
 }
 ```
+
 
 
 

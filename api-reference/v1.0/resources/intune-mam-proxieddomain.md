@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса proxiedDomain
 description: Проксируемый домен
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0e7530bf3bc08deded241257a9c787698682cd9a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8d4b100fd312576fdb81f09e06b51d7e74bef4c0
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037830"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37366960"
 ---
 # <a name="proxieddomain-resource-type"></a>Тип ресурса proxiedDomain
 
@@ -24,7 +24,7 @@ ms.locfileid: "36037830"
 |ipAddressOrFQDN|Строка|IP-адрес или полное доменное имя|
 |proxy|Строка|IP-адрес или полное доменное имя прокси|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -41,6 +41,7 @@ ms.locfileid: "36037830"
   "proxy": "String"
 }
 ```
+
 
 
 

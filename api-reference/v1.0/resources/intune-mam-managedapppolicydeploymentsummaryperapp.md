@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса managedAppPolicyDeploymentSummaryPerApp
 description: Представляет сводку по развертыванию политик для приложений.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 84befe8b98b2e0e6883328c09bdee16e2720300d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 70c46530f979f7372b3592c310d4434246c5f0c1
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037942"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367800"
 ---
 # <a name="managedapppolicydeploymentsummaryperapp-resource-type"></a>Тип ресурса managedAppPolicyDeploymentSummaryPerApp
 
@@ -24,7 +24,7 @@ ms.locfileid: "36037942"
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|Развертывание приложения.|
 |configurationAppliedUserCount|Int32|Количество пользователей, к которым применяется политика.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -43,6 +43,7 @@ ms.locfileid: "36037942"
   "configurationAppliedUserCount": 1024
 }
 ```
+
 
 
 

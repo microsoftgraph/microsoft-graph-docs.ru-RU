@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса enrollmentConfigurationAssignment
 description: Пока не задокументировано.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0cb0cf596fa1535cf7088987869a478aa8d5a571
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: adbe0d4dfaff01b549ced052975bc81ea71e95c5
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037354"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367912"
 ---
 # <a name="enrollmentconfigurationassignment-resource-type"></a>Тип ресурса enrollmentConfigurationAssignment
 
@@ -33,7 +33,7 @@ ms.locfileid: "36037354"
 |id|String|Пока не задокументировано.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Пока не задокументировано.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -53,6 +53,7 @@ ms.locfileid: "36037354"
   }
 }
 ```
+
 
 
 

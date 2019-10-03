@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса appleDeviceFeaturesConfigurationBase
 description: Профиль конфигурации функций устройства Apple.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a7c5f5857ae372e62c2fa1210c180c19d04811b1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 33f59e6004e4227ab79ce41f4ae6ca03a43477b5
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36028660"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37366778"
 ---
 # <a name="appledevicefeaturesconfigurationbase-resource-type"></a>Тип ресурса appleDeviceFeaturesConfigurationBase
 
@@ -37,8 +37,8 @@ ms.locfileid: "36028660"
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 
-## <a name="relationships"></a>Отношения
-|Отношение|Тип|Описание|
+## <a name="relationships"></a>Связи
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|Список назначений для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceStatuses|Коллекция [deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md)|Состояние установки конфигурации для каждого устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
@@ -66,6 +66,7 @@ ms.locfileid: "36028660"
   "version": 1024
 }
 ```
+
 
 
 

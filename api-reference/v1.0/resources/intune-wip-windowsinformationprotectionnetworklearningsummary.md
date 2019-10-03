@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса windowsInformationProtectionNetworkLearningSummary
 description: Объект сводки по обучению Windows Information Protection для сетей
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 81454c6eecefd685af152c230faf41938debf142
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: af7b9b898b8e70ac5e267c703cc06dca5c9f2946
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036766"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367184"
 ---
 # <a name="windowsinformationprotectionnetworklearningsummary-resource-type"></a>Тип ресурса windowsInformationProtectionNetworkLearningSummary
 
@@ -34,7 +34,7 @@ ms.locfileid: "36036766"
 |url|String|URL-адрес веб-сайта|
 |deviceCount|Int32|Количество устройств|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -53,6 +53,7 @@ ms.locfileid: "36036766"
   "deviceCount": 1024
 }
 ```
+
 
 
 

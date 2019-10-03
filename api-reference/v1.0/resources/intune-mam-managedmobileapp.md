@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса managedMobileApp
 description: Идентификатор для развертывания приложения.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5f8987f137bf58198bd9c0ef2bcc05dd17821632
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 87c10ed983db756119153baf961731f6b79a9ee3
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037872"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367002"
 ---
 # <a name="managedmobileapp-resource-type"></a>Тип ресурса managedMobileApp
 
@@ -34,7 +34,7 @@ ms.locfileid: "36037872"
 |id|String|Ключ объекта.|
 |version|String|Версия объекта.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -55,6 +55,7 @@ ms.locfileid: "36037872"
   "version": "String"
 }
 ```
+
 
 
 

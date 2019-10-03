@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса windowsInformationProtectionDesktopApp
 description: Защита данных классических приложений для Windows
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9d9187858aa90480ba8720bc2111f3ba071492e6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d570420512e9da31fcd95efd2df2c2a3e1da83c9
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037704"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367310"
 ---
 # <a name="windowsinformationprotectiondesktopapp-resource-type"></a>Тип ресурса windowsInformationProtectionDesktopApp
 
@@ -33,7 +33,7 @@ ms.locfileid: "36037704"
 |binaryVersionLow|String|Нижняя двоичная версия.|
 |binaryVersionHigh|String|Верхняя двоичная версия.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -56,6 +56,7 @@ ms.locfileid: "36037704"
   "binaryVersionHigh": "String"
 }
 ```
+
 
 
 

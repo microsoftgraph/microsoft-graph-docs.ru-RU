@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса windows10EnterpriseModernAppManagementConfiguration
 description: Конфигурация управления современными приложениями для Windows 10 Корпоративная.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6e178a9e15932d477d3cbf0742c21e873c34d8ea
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ab093a5399a6b425f2924f3b9162431c51adca12
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027729"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367093"
 ---
 # <a name="windows10enterprisemodernappmanagementconfiguration-resource-type"></a>Тип ресурса windows10EnterpriseModernAppManagementConfiguration
 
@@ -41,8 +41,8 @@ ms.locfileid: "36027729"
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |uninstallBuiltInApps|Boolean|Указывает, следует ли удалить фиксированный список встроенных приложений Windows.|
 
-## <a name="relationships"></a>Отношения
-|Отношение|Тип|Описание|
+## <a name="relationships"></a>Связи
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|Список назначений для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceStatuses|Коллекция [deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md)|Состояние установки конфигурации для каждого устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
@@ -71,6 +71,7 @@ ms.locfileid: "36027729"
   "uninstallBuiltInApps": true
 }
 ```
+
 
 
 

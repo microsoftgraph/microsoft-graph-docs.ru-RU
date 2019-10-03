@@ -1,16 +1,16 @@
 ---
 title: тип перечисления Шаредпкаккаунтделетионполицитипе
 description: Возможные значения для удаления учетных записей на общем компьютере.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: da4f053301206143cf6ee617a6818ea57ddab3d1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0abed43fa5233e1e3a3f6a94ac020295e457f108
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027827"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367842"
 ---
 # <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>тип перечисления Шаредпкаккаунтделетионполицитипе
 
@@ -22,8 +22,9 @@ ms.locfileid: "36027827"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |операнд|нуль|Немедленное удаление.|
-|Дискспацесрешолд|1,1|Удалить с порогового места на диске.|
-|Дискспацесрешолдоринактивесрешолд|2|Удаление при пороговом значении или неактивном пороге места на диске.|
+|дискспацесрешолд|1,1|Удалить с порогового места на диске.|
+|дискспацесрешолдоринактивесрешолд|2|Удаление при пороговом значении или неактивном пороге места на диске.|
+
 
 
 

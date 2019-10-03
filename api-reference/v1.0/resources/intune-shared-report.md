@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9348abb1b63f4c83604213ce1f9ad0a521a85c05
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a05f05b132f87bd827d52b70d536e6b2bca76550
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036878"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37366946"
 ---
 # <a name="report-resource-type"></a>Тип ресурса report
 
@@ -24,7 +24,7 @@ ms.locfileid: "36036878"
 |:---|:---|:---|
 |содержимое|Поток|Н/Д|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Нет
 
@@ -41,3 +41,4 @@ ms.locfileid: "36036878"
   "content": "<Unknown Primitive Type Edm.Stream>"
 }
 ```
+

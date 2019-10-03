@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса managedAppRegistration
 description: ManagedAppEntity — это базовый тип для всех остальных типов объектов в рабочем процессе управления приложениями. Ресурс ManagedAppRegistration представляет собой сведения об управляемом приложении, используемом членом организации.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7a7b10a7d960c449aee4f911f4992955bde18724
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: be937879fa6e3d28d7e09538716f3562fc272f56
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037914"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367772"
 ---
 # <a name="managedappregistration-resource-type"></a>Тип ресурса managedAppRegistration
 
@@ -43,8 +43,8 @@ ManagedAppEntity — это базовый тип для всех осталь�
 |id|Строка|Ключ объекта.|
 |version|Строка|Версия объекта.|
 
-## <a name="relationships"></a>Отношения
-|Отношение|Тип|Описание|
+## <a name="relationships"></a>Связи
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |appliedPolicies|Коллекция [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|Нуль или более политик, примененных к зарегистрированному приложению, когда оно в последний раз синхронизировалось со службой управления.|
 |intendedPolicies|Коллекция объектов [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|Нуль или более политик, которые на текущий момент администратор использует для приложения.|
@@ -89,5 +89,6 @@ ManagedAppEntity — это базовый тип для всех осталь�
   ],
 }
 -->
+
 
 

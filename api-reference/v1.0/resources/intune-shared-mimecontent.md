@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса mimeContent
 description: Содержит свойства обычного содержимого MIME.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 24563bb89af91c05dd71aeb284934c0406819711
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ef174774c345debe18b9a3d66075af6e439a4583
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036892"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367156"
 ---
 # <a name="mimecontent-resource-type"></a>Тип ресурса mimeContent
 
@@ -24,7 +24,7 @@ ms.locfileid: "36036892"
 |type|String|Указывает MIME-тип содержимого.|
 |value|Binary|Массив байтов содержимого.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -41,6 +41,7 @@ ms.locfileid: "36036892"
   "value": "binary"
 }
 ```
+
 
 
 

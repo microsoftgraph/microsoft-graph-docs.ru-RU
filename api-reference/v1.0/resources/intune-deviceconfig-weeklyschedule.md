@@ -1,16 +1,16 @@
 ---
 title: тип перечисления Виклисчедуле
 description: Возможные значения для еженедельного расписания.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 863e0006030dcfad6c54228c936511fa720b5e5d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b24cc817fc36deed7a11330a5ed21254b18d81be
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027750"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367611"
 ---
 # <a name="weeklyschedule-enum-type"></a>тип перечисления Виклисчедуле
 
@@ -30,6 +30,7 @@ ms.locfileid: "36027750"
 |Пятница|6 |Пятница.|
 |пятницам|7 |Пятницам.|
 |субботу|8 |Субботу.|
+
 
 
 
