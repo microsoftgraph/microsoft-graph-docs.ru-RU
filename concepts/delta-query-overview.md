@@ -4,12 +4,12 @@ description: Запросы изменений позволяют приложе
 author: piotrci
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: a74645d8f5b579a28059124eabdf8ccfdb967c4e
-ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
+ms.openlocfilehash: 4ea9156f89ac1e979c0f6c83e3b6ae828333fbbd
+ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37054083"
+ms.lasthandoff: 10/01/2019
+ms.locfileid: "37333348"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Отслеживание изменений в данных Microsoft Graph с помощью разностного запроса
 
@@ -116,7 +116,50 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 
 > \*\* Шаблон использования ресурсов Planner незначительно отличается от шаблонов использования других поддерживаемых ресурсов.  Дополнительные сведения см. в [этой статье](/graph/api/planneruser-list-delta?view=graph-rest-beta).
 
-## <a name="prerequisites"></a>Необходимые разрешения
+### <a name="limitations"></a>Ограничения
+
+#### <a name="properties-stored-outside-of-the-main-data-store"></a>Свойства, хранящиеся вне основного хранилища данных
+
+Некоторые ресурсы содержат свойства, которые хранятся вне основного хранилища данных для ресурса (например, ресурс user в основном хранится в системе Azure AD, в то время как некоторые свойства, такие как **skills**, хранятся в SharePoint Online). В настоящее время эти свойства не поддерживаются как часть отслеживания изменений; изменение одного из этих свойств не приведет к отображению объекта в отклике на разностный запрос. В настоящее время только свойства, хранящиеся в главном хранилище данных, активируют изменения в разностном запросе.
+
+Чтобы проверить, можно ли использовать свойство в разностном запросе, попробуйте выполнить обычную операцию `GET` в коллекции ресурсов и выберите интересующее вас свойство. Например, вы можете попробовать использовать свойство **skills** в коллекции пользователей.
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/?$select=skills
+```
+
+Так как свойство **skills** хранится вне Azure AD, отклик будет следующим.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 501 Not Implemented
+Content-type: application/json
+
+{
+    "error": {
+        "code": "NotImplemented",
+        "message": "This operation target is not yet supported.",
+        "innerError": {
+            "request-id": "...",
+            "date": "2019-09-20T21:47:50"
+        }
+    }
+}
+```
+
+Это говорит о том, что свойство **skills** не поддерживается для разностного запроса в ресурсе **user**.
+
+#### <a name="navigation-properties"></a>Свойства навигации
+
+Свойства навигации не поддерживаются. Например, вы не можете отслеживать изменения в коллекции пользователей, включающие изменения их свойства **photo**; **photo** — это свойство навигации, которое хранится вне сущности пользователя, и внесенные в него изменения не приводят к включению объекта "пользователь" в отклик с различиями.
+
+## <a name="prerequisites"></a>Предварительные требования
 
 Выполнение разностных запросов для определенного ресурса требует тех же [разрешений](./permissions-reference.md), что и его чтение.
 
