@@ -1,16 +1,16 @@
 ---
 title: тип перечисления Мобилеапппублишингстате
 description: Указывает состояние публикации приложения.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 81361cabcd1ebade92e1c81b0c5a1677170473c4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6cfeb6c426f264b1f4b69d617b935b4374478c07
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032139"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368066"
 ---
 # <a name="mobileapppublishingstate-enum-type"></a>тип перечисления Мобилеапппублишингстате
 
@@ -21,9 +21,10 @@ ms.locfileid: "36032139"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нотпублишед|нуль|Приложение еще не опубликовано.|
+|нотпублишед|нуль|Приложение еще не опубликовано.|
 |двухпроцессорной|1,1|Приложение ожидает обработки на стороне службы.|
 |повторно|2|Приложение публикуется.|
+
 
 
 

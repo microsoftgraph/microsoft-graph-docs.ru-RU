@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса managedDeviceMobileAppConfigurationAssignment
 description: Содержит свойства, используемые для назначения конфигурации приложения MDM группе.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7d950e2bee2c9d6c958d4c23bba039c79d647323
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 40ead8fb0e026457dacc8ef0711cd7e60cae01de
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032266"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368248"
 ---
 # <a name="manageddevicemobileappconfigurationassignment-resource-type"></a>Тип ресурса managedDeviceMobileAppConfigurationAssignment
 
@@ -33,7 +33,7 @@ ms.locfileid: "36032266"
 |id|String|Уникальный идентификатор объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Объект, для которого назначается политика соблюдения условий.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -53,6 +53,7 @@ ms.locfileid: "36032266"
   }
 }
 ```
+
 
 
 

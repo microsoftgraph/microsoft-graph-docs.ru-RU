@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса deviceManagementTroubleshootingEvent
 description: Событие, представляющее общий сбой.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b6278ed7b7fe66655b1450bbae9e10cf7b8d78ed
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6ba271d224f56d92912a816184feb5db88df31eb
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036745"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368017"
 ---
 # <a name="devicemanagementtroubleshootingevent-resource-type"></a>Тип ресурса deviceManagementTroubleshootingEvent
 
@@ -34,7 +34,7 @@ ms.locfileid: "36036745"
 |eventDateTime|DateTimeOffset|Время возникновения события.|
 |correlationId|String|ИД, используемый для трассировки сбоя в службе.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -53,6 +53,7 @@ ms.locfileid: "36036745"
   "correlationId": "String"
 }
 ```
+
 
 
 

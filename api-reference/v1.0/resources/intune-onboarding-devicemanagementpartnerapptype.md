@@ -1,16 +1,16 @@
 ---
 title: тип перечисления Девицеманажементпартнерапптипе
 description: Тип партнерского приложения.
-author: tfitzmac
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 521d948d159e4174aac69e5034ef9e15113dcfd3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 64e992ec2b664fb9953f48d725f0bac5b879d2f0
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037452"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37367940"
 ---
 # <a name="devicemanagementpartnerapptype-enum-type"></a>тип перечисления Девицеманажементпартнерапптипе
 
@@ -22,8 +22,9 @@ ms.locfileid: "36037452"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Неизвестный тип партнерского приложения.|
-|Синглетенантапп|1,1|Партнерское приложение — это один клиент в AAD.|
-|Мултитенантапп|2|Партнерское приложение является несколькими клиентами в AAD.|
+|синглетенантапп|1,1|Партнерское приложение — это один клиент в AAD.|
+|мултитенантапп|2|Партнерское приложение является несколькими клиентами в AAD.|
+
 
 
 

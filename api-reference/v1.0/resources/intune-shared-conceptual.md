@@ -2,15 +2,15 @@
 title: Общие ресурсы в Microsoft Intune
 description: Эти конечные точки используются в нескольких интерфейсах API Microsoft Graph для рабочих процессов Intune.  Цель, цель и разрешения, необходимые для использования указанного ресурса, меняются в зависимости от конкретного рабочего процесса и контекста базового вызова.  Кроме того, некоторые методы, свойства и действия поддерживаются только для определенных рабочих процессов.
 localization_priority: Normal
-author: tfitzmac
+author: davidmu1
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 7f04077278a3765a27abd30f02bcc2361c7cd08e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2fdf99fe8116213c418eae62a7297112ed5871f0
+ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36037018"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "37368290"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Общие ресурсы в Microsoft Intune
 
@@ -37,3 +37,4 @@ ms.locfileid: "36037018"
 - [URI](intune-shared-uri.md)
 - [пользователь](intune-shared-user.md);
 - [Тип учетной записи токена VPP](intune-shared-vpptokenaccounttype.md)
+
