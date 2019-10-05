@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 296a5225ca924374a3c38242207f7f329b2e8401
-ms.sourcegitcommit: 3e7769ad097e9c34233fa5fea83afa23c34e14a9
+ms.openlocfilehash: 2989be09e15ecc7ab6a0bf976ac9c6069b55023e
+ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "36822811"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37402517"
 ---
 # <a name="get-user-mailbox-settings"></a>Получение параметров почтового ящика пользователя
 
@@ -20,9 +20,9 @@ ms.locfileid: "36822811"
 
 С помощью клиента Outlook пользователи могут устанавливать следующие параметры почтовых ящиков:
 
-- [автоматические ответы](../resources/automaticrepliessetting.md) (извещать пользователей автоматически после получения их электронной почты).
+- [автоматические ответы](../resources/automaticrepliessetting.md) (уведомлять пользователей автоматически после получения их электронной почты)
 - формат даты
-- [языковой стандарт](../resources/localeinfo.md) (язык и страна или регион)
+- [языковой стандарт](../resources/localeinfo.md) (язык и страна/регион)
 - формат времени
 - часовой пояс
 - [рабочие часы](../resources/workinghours.md)
@@ -50,7 +50,7 @@ GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-Чтобы получить определенные параметры, можно использовать только параметры автоматических ответов, языковой стандарт, часовой пояс или рабочие часы.
+Чтобы получить определенные параметры, можно использовать только параметры автоматических ответов, формат даты, языковой стандарт, формат времени, часовой пояс или рабочие часы:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
@@ -78,7 +78,7 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -115,14 +115,14 @@ GET https://graph.microsoft.com/beta/me/mailboxSettings
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-mailboxsettings-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mailboxsettings-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 #### <a name="response"></a>Отклик
-Ответ включает все параметры почтового ящика вошедшего пользователя. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ответ включает все параметры почтового ящика вошедшего пользователя. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -193,7 +193,7 @@ GET https://graph.microsoft.com/beta/me/mailboxSettings/automaticRepliesSetting
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-mailboxsettings-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-mailboxsettings-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
