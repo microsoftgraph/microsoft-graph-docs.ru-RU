@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: a127300a62f908ab73226610dfd695e330617cbd
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: dd13459c34623f61b49e796c5cc69e740af39b3e
+ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35724985"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37402545"
 ---
 ```csharp
 
@@ -26,7 +26,7 @@ var credentials = new List<SynchronizationSecretKeyStringValuePair>()
 };
 
 await graphClient.ServicePrincipals["{id}"].Synchronization.Jobs["{id}"]
-    .ValidateCredentials(applicationIdentifier,templateId,useSavedCredentials,credentials)
+    .ValidateCredentials(null,null,null,credentials)
     .Request()
     .PostAsync();
 
