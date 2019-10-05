@@ -5,12 +5,12 @@ localization_priority: Priority
 author: ''
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: 1262813dd9ad54e8845ed000625d602ef0ff0c94
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: aa5b9f8d28cc77878fe1da261621b63163595828
+ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030158"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "37402650"
 ---
 # <a name="microsoft-graph-rest-api-v10-reference"></a>Справочные материалы по REST API Microsoft Graph v1.0
 
@@ -31,7 +31,7 @@ ms.locfileid: "36030158"
 3. [Получение доступа к файлам Марии в OneDrive для бизнеса](./api/driveitem-list-children.md), поиск [удостоверения](./resources/identityset.md) последнего человека, который внес изменения в [файл](./resources/driveitem.md), и переход к профилю этого человека.
 4. [Получение доступа к календарю Марии](./api/calendar-get.md) в Exchange Online и [определение наиболее подходящего времени для встречи Марии с ее группой](./api/user-findmeetingtimes.md) в следующие две недели.
 5. [Подписка](./api/subscription-post-subscriptions.md) и [отслеживание изменений](./api/event-delta.md) в календаре Марии, уведомление Марии, если она проводит более 80% своего времени на собраниях.
-6. [Настройка автоматических ответов,](./api/user-update-mailboxsettings.md#example) когда Мария находится вне офиса.
+6. [Настройка автоматических ответов,](./api/user-update-mailboxsettings.md#example-1) когда Мария находится вне офиса.
 7. [Определение людей, которые наиболее важны для Марии,](./api/user-list-people.md) в зависимости от общения, совместной работы и корпоративных связей.
 8. Получение последней проекции продаж из [диаграммы](./resources/chart.md) в файле Excel в инструменте Марии OneDrive для бизнеса.
 9. [Поиск задач, назначенных Марии, в планировщике](./api/planneruser-list-tasks.md).
