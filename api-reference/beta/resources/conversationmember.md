@@ -2,40 +2,41 @@
 title: Тип ресурса conversationMember
 description: Представляет пользователя в беседе.
 localization_priority: Normal
-author: nkramer
+author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: ca5115922dfb40239b8ca290a39f3c5953d4e4ed
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9e20a1aa0ef42f41a3fc300f804bb5477b5fe1cb
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973978"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36633701"
 ---
 # <a name="conversationmember-resource-type"></a>Тип ресурса conversationMember
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет пользователя в [чате](chat.md).
+Представляет пользователя в [чате](chat.md) или [канале](channel.md).
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Список участников чата](../api/conversationmember-list.md) | Коллекция [conversationmember](conversationmember.md) | Получение списка всех пользователей в чате.|
-|[Получение участника чата](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | Получение одного пользователя в чате.|
+|[Список участников чата](../api/conversationmember-list.md) | Коллекция [conversationMember](conversationmember.md) | Получение списка всех пользователей в чате.|
+|[Получение участника чата](../api/conversationmember-get.md) | [conversationMember](conversationmember.md) | Получение одного пользователя в чате.|
+|[Список участников](../api/conversationmember-list.md) | Коллекция [conversationMember](conversationmember.md) | Получение списка всех пользователей в чате или канале.|
+|[Получение участника](../api/conversationmember-get.md) | [conversationMember](conversationmember.md) | Получение одного пользователя в чате или канале.|
+|[Добавление участника](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| Добавление участника в канал.|
+|[Обновление участника](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| Обновление участника в канале.|
+|[Удаление участника](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| Удаление участника из канала.|
 
 ## <a name="properties"></a>Свойства
 
-| Свойство     | Тип   |Описание|
+| Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
 |id|String| Только для чтения. Уникальный идентификатор пользователя.|
 |displayName| string | Отображаемое имя пользователя. |
 |roles| Коллекция строк | Роли этого пользователя. |
-
-## <a name="relationships"></a>Связи
-
-Нет
 
 ## <a name="json-representation"></a>Представление JSON
 

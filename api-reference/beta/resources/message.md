@@ -5,18 +5,20 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: f6b79b397ac84154c6c89d46d792dbd00f2fb2a4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f23d8ffcda224931950dc9c2d2cd2ade01322c36
+ms.sourcegitcommit: 00959f992b9b77c98ec1fe2f185cc7fd098ab24b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966743"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36426316"
 ---
 # <a name="message-resource-type"></a>Тип ресурса message
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Сообщение в папке почтового ящика.
+
+Максимальное число получателей, включенное в свойства **toRecipients**, **ccRecipients** и **bccRecipients** для одного сообщения электронной почты, отправляемого из почтового ящика Exchange Online, равно 500. Дополнительные сведения см. в разделе [Ограничения на отправку](https://docs.microsoft.com/ru-RU/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
 
 Этот ресурс поддерживает:
 
@@ -131,7 +133,7 @@ ms.locfileid: "35966743"
 
 ## <a name="relationships"></a>Отношения
 
-| Отношение | Тип |Описание|
+| Связь | Тип |Описание|
 |:---------------|:--------|:----------|
 |attachments|Коллекция [Attachment](attachment.md)|Вложения [fileAttachment](fileattachment.md) и [itemAttachment](itemattachment.md) для сообщения.|
 |extensions|Коллекция [Extension](extension.md)| Коллекция открытых расширений, определенных для сообщения. Допускается значение null.|
