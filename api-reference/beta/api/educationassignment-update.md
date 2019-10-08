@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0da35dc423380958d10fdb750a561c13bc711f00
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 591f9cbdc4d1d83af74dddca34102ad23e6d31a5
+ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416515"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37418246"
 ---
 # <a name="update-educationassignment"></a>Обновление educationassignment
 
@@ -47,10 +47,11 @@ PATCH /education/classes/{id}/assignments/{id}
 |алловстудентстоаддресаурцестосубмиссион|Boolean| Может ли студент добавить ресурсы в отправку. Указывает, поступили ли только элементы, отправленные в отправке, из списка ресурсов назначения. |
 |ассигндатетиме|DateTimeOffset| Дата, когда назначение должно быть опубликовано для учащихся. |
 |ассигнто|едукатионассигнментреЦипиент| Студенты, которые получают назначение.|
+|клоседатетиме|DateTimeOffset| Дата, когда назначение будет закрыто для отправки. Это необязательное поле, которое может иметь значение null, если назначение не Алловлатесубмиссионс или Клоседатетиме совпадает с Дуедатетиме, но если указано, оно должно быть больше или равно Дуедатетиме.|
 |displayName|String| Имя назначения. |
 |dueDateTime|DateTimeOffset| Дата выполнения. |
 |снижения|едукатионассигнментградетипе| Как будет выполняться оценка назначения.|
-|выполнен|итембоди| Инструкции, которые необходимо предоставить студентам вместе с назначением. |
+|выполнен|itemBody| Инструкции, которые необходимо предоставить студентам вместе с назначением. |
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [educationAssignment](../resources/educationassignment.md) в тексте отклика.
@@ -85,14 +86,14 @@ Content-length: 279
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationassignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationassignment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -113,6 +114,7 @@ Content-length: 279
     "contentType": "Text",
     "content": "Read chapters 1 through 3"
   },
+  "closeDateTime": "2014-02-11T00:00:00Z",
   "dueDateTime": "2014-02-01T00:00:00Z",
   "assignDateTime": "2014-01-01T00:00:00Z",
   "assignedDateTime": "2014-01-01T00:00:00Z"

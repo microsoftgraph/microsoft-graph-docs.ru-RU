@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 22db7dc1c85de37c991078ba4c7b718c2e2dbc52
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b5167ea397b69772dbbcffd042359fc30b9e681c
+ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955675"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37418239"
 ---
 # <a name="get-educationassignment"></a>Получение educationAssignment
 
@@ -41,7 +41,7 @@ GET /education/classes/{id}/assignments/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -85,6 +85,7 @@ Content-length: 279
       "id": "14012",
     }
   },
+  "closeDateTime": "2014-01-11T00:00:00Z",
   "createdDateTime": "2014-01-01T00:00:00Z",
   "displayName": "Mid term exam",
   "dueDateTime": "2014-01-11T00:00:00Z",
