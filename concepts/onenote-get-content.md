@@ -4,12 +4,12 @@ description: " Корпоративная записная книжка в Offic
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: bcc25ca130b9a28bf171d8ce2989538e56dfca17
-ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
+ms.openlocfilehash: 2db43dd8ec2d0cf58f2938b78054986823f433c4
+ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "35639216"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "37418217"
 ---
 # <a name="get-onenote-content-and-structure-with-microsoft-graph"></a>Получение содержимого и структуры OneNote с помощью Microsoft Graph
 
@@ -543,7 +543,7 @@ URI ресурса файла можно найти в [выходном HTML-к
 [GET] ../pages?skip=50&top=50&select=title,self&orderby=title
 ```
 
-> **Примечание.** Запросы GET для страниц, которые получают количество записей по умолчанию (то есть в них не указывается выражение **top**), возвращают в ответе ссылку **@odata.nextLink**, с помощью которой можно получить следующие 20 записей.
+> **Примечание.** Запросы GET для страниц, которые восстанавливают количество записей по умолчанию (то есть в них не указывается выражение **top**), возвращают в ответе ссылку **\@odata.nextLink**, с помощью которой можно получить следующие 20 записей.
  
 
 <a name="supported-odata-query-string-options"></a>

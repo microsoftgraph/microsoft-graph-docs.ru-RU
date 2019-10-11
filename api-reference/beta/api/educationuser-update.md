@@ -5,26 +5,28 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6b362533dbefb0e7ef9016babe7957ecbbb4990f
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 6be8a60248290ab1a96b499000b6b548925974e4
+ms.sourcegitcommit: e4b0211db9b20dfea8be964003661cd99fe064d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415829"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37439738"
 ---
 # <a name="update-educationuser-properties"></a>Обновление свойств educationUser
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Обновление свойств объекта **educationuser**.
+
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
-|:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
-|Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | EduRoster.ReadWrite.All |
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
+| :------------------------------------- | :------------------------------------------ |
+| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Для приложений                            | EduRoster.ReadWrite.All                     |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -32,36 +34,42 @@ ms.locfileid: "36415829"
 PATCH /education/me
 PATCH /education/users/{id}
 ```
+
 ## <a name="request-headers"></a>Заголовки запросов
-| Заголовок       | Значение |
-|:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
-| Content-Type  | application/json  |
+
+| Заголовок        | Значение                     |
+| :------------ | :------------------------ |
+| Авторизация | Bearer {токен}. Обязательный. |
+| Content-Type  | application/json. Обязательный.       |
 
 ## <a name="request-body"></a>Текст запроса
+
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|displayName| Строка| Отображаемое имя пользователя|
-|givenName| String | Имя |
-|middleName| String | Отчество пользователя|
-|surname| String | Фамилия пользователя|
-|mail| String| Электронный адрес|
-|mobilePhone| String | Номер мобильного телефона пользователя |
-|externalSource|string| Возможные значения: `sis`, `manual`, `enum_sentinel`.|
-|externalSource|string| Источник для создания пользователя.  Возможные значения: `sis`, `manual`, `enum_sentinel`.|
-|mailingAddress|[physicalAddress](../resources/physicaladdress.md)| Почтовый адрес пользователя.|
-|residenceAddress|[physicalAddress](../resources/physicaladdress.md)| Адрес проживания пользователя.|
-|primaryRole|string| Роль по умолчанию для пользователя.  Роль пользователя для отдельного курса может отличаться. Возможные значения: `student`, `teacher`, `enum_sentinel`.|
-|student|[educationStudent](../resources/educationstudent.md)| Если основная роль — student, этот блок будет содержать данные, касающиеся учащегося.|
-|teacher|[educationTeacher](../resources/educationteacher.md)| Если основная роль — преподаватель, этот блок будет содержать данные, характерные для преподавателя.|
-
+| Свойство         | Тип                                                 | Описание                                                                                                                                      |
+| :--------------- | :--------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------- |
+| displayName      | Строка                                               | Отображаемое имя пользователя                                                                                                                             |
+| givenName        | String                                               | Имя                                                                                                                                       |
+| middleName       | String                                               | Отчество пользователя                                                                                                                              |
+| surname          | String                                               | Фамилия пользователя                                                                                                                                  |
+| mail             | String                                               | Электронный адрес                                                                                                                                    |
+| mobilePhone      | String                                               | Номер мобильного телефона пользователя                                                                                                                            |
+| externalSource   | string                                               | Возможные значения: `sis`, `manual`, `enum_sentinel`.                                                                                           |
+| externalSource   | string                                               | Источник для создания пользователя.  Возможные значения: `sis`, `manual`, `enum_sentinel`.                                                        |
+| mailingAddress   | [physicalAddress](../resources/physicaladdress.md)   | Почтовый адрес пользователя.                                                                                                                            |
+| residenceAddress | [physicalAddress](../resources/physicaladdress.md)   | Адрес проживания пользователя.                                                                                                                        |
+| primaryRole      | string                                               | Роль по умолчанию для пользователя.  Роль пользователя для отдельного курса может отличаться. Возможные значения: `student`, `teacher`, `enum_sentinel`. |
+| student          | [educationStudent](../resources/educationstudent.md) | Если основная роль — student, этот блок будет содержать данные, касающиеся учащегося.                                                                   |
+| teacher          | [educationTeacher](../resources/educationteacher.md) | Если основная роль — преподаватель, этот блок будет содержать данные, характерные для преподавателя.                                                                   |
 
 ## <a name="response"></a>Отклик
+
 При успешном выполнении этот метод возвратит код отклика `200 OK` и обновленный объект [educationUser](../resources/educationuser.md) в теле отклика.
+
 ## <a name="example"></a>Пример
+
 ##### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
@@ -89,14 +97,16 @@ Content-length: 508
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ##### <a name="response"></a>Отклик
+
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

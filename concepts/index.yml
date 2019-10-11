@@ -60,18 +60,6 @@ sections:
             image:
               src: ./images/index/i_api.svg
             title: Бета-версия REST API Microsoft Graph
-  - title: Обновления в документах
-    items:
-      - type: list
-        style: cards
-        className: cardsH
-        items:
-          - title: Общедоступная версия
-            html: "<p><a style=\"color:rgb(0, 120, 212);\" href=\"/graph/data-connect-concept-overview\">Подключение к данным Microsoft\_Graph</a></p><p><a style=\"color:rgb(0, 120, 212);\" href=\"/graph/outlook-get-free-busy-schedule\">Получение сведений о доступности</a></p><p><a style=\"color:rgb(0, 120, 212);\" href=\"/graph/api/resources/azure-ad-auditlog-overview?view=graph-rest-beta&viewFallbackFrom=graph-rest-1.0\">Журналы аудита и входа</a></p><p><a style=\"color:rgb(0, 120, 212);\" href=\"/graph/api/resources/identityprovider?view=graph-rest-1.0\">Поставщики удостоверений</a></p><p><a style=\"color:rgb(0, 120, 212);\" href=\"/graph/auth\">Руководство по улучшенной проверке подлинности</a></p><p><a style=\"color:rgb(0, 120, 212);\" href=\"/graph/migrate-azure-ad-graph-overview\">Миграция приложений из Azure\_AD\_Graph в Microsoft\_Graph</a></p><p><a style=\"color:rgb(0, 120, 212);\" href=\"/graph/api/resources/securescore?view=graph-rest-1.0\">Оценка безопасности клиента</a></p><p><a style=\"color:rgb(0, 120, 212);\" href=\"/graph/sdks/sdks-overview?view=graph-rest-1.0\">Руководство по пакетам SDK</a></p><p>Фрагменты API (<a style=\"color:rgb(0, 120, 212);\" href=\"/graph/api/user-get?view=graph-rest-1.0&tabs=cs#sdk-sample-code\">пример</a>)</p>"
-          - title: Предварительная версия
-            html: "<p><a style=\"color:rgb(0, 120, 212);\" href=\"/graph/dynamics-business-central-concept-overview\">Dynamics\_365 Business Central</a></p><p><a style=\"color:rgb(0, 120, 212);\" href=\"/graph/api/driveitem-follow?view=graph-rest-beta\">Подписка на документы</a> и <a style=\"color:rgb(0, 120, 212);\" href=\"/graph/api/driveitem-unfollow?view=graph-rest-beta\">ее отмена</a></p><p><a style=\"color:rgb(0, 120, 212);\" href=\"/graph/api/driveitem-invite?view=graph-rest-beta#request-body\">Приглашение к совместному использованию</a> включает истечение срока его действия и пароль</p><p><a style=\"color:rgb(0, 120, 212);\" href=\"/graph/api/resources/accessreviews-root?view=graph-rest-beta\">Проверки доступа</a> поддерживают разрешения для приложений</p><p><a style=\"color:rgb(0, 120, 212);\" href=\"/graph/api/resources/applicationsigninsummary?view=graph-rest-beta\">Отчеты о входе в приложение</a></p><p><a style=\"color:rgb(0, 120, 212);\" href=\"/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta\">Настраиваемые вход и регистрация в Azure\_AD\_B2C</a></p><p><a style=\"color:rgb(0, 120, 212);\" href=\"/graph/api/resources/riskyuser?view=graph-rest-beta\">Рискованный пользователь</a> и <a style=\"color:rgb(0, 120, 212);\" href=\"/graph/api/resources/riskyuserhistoryitem?view=graph-rest-beta\">журнал</a></p><p><a style=\"color:rgb(0, 120, 212);\" href=\"/graph/outlook-get-mime-message\">Получение содержимого MIME сообщений</a>, <a style=\"color:rgb(0, 120, 212);\" href=\"/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment\">получение необработанного содержимого и содержимого MIME вложений</a></p><p><a style=\"color:rgb(0, 120, 212);\" href=\"/graph/webhooks-outlook-authz\">Уменьшение количества уведомлений об отсутствии изменений</a></p><p><a style=\"color:rgb(0, 120, 212);\" href=\"graph/api/resources/tiindicator?view=graph-rest-beta\">Индикаторы угроз</a>, <a style=\"color:rgb(0, 120, 212);\" href=\"/graph/api/resources/securityaction?view=graph-rest-beta\">действия по обеспечению безопасности</a></p><p><a style=\"color:rgb(0, 120, 212);\" href=\"/graph/api/resources/shift?view=graph-rest-beta\">Управление сменами</a>, <a style=\"color:rgb(0, 120, 212);\" href=\"/graph/api/resources/chat?view=graph-rest-beta\">чаты 1:1</a></p>"
-      - type: paragraph
-        text: Подробнее см. в <a href="/graph/changelog">журнале изменений</a>.
   - title: Поддерживаемые платформы
     items:
       - type: paragraph
@@ -80,14 +68,17 @@ sections:
         style: dataMatrix
         columns:
           - image:
+              src: ./images/index/logo_NETcore.svg
+            title: .NET
+          - image:
+              src: ./images/index/logo_NET.svg
+            title: .NET
+          - image:
               src: ./images/index/logo_android.svg
             title: Android
           - image:
               src: ./images/index/angular.svg
             title: Angular
-          - image:
-              src: ./images/index/logo_NET.svg
-            title: ASP.NET
           - image:
               src: ./images/index/logo_ios.svg
             title: iOS
@@ -118,9 +109,10 @@ sections:
         rows:
           - title: Быстрый запуск
             values:
+              - href: null
+              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-dotnet'
               - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-android'
               - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-angular'
-              - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-dotnet'
               - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-ios-swift'
               - href: null
               - href: null
@@ -132,9 +124,10 @@ sections:
               - href: 'https://developer.microsoft.com/graph/quick-start?platform=option-xamarin'
           - title: Руководство
             values:
+              - href: /graph/tutorials/aspnet
+              - href: /graph/tutorials/aspnet
               - href: /graph/tutorials/android
               - href: /graph/tutorials/angular
-              - href: /graph/tutorials/aspnet
               - href: null
               - href: null
               - href: null
@@ -146,9 +139,10 @@ sections:
               - href: /graph/tutorials/xamarin
           - title: Пакет SDK
             values:
+              - href: 'https://www.nuget.org/packages/Microsoft.Graph'
+              - href: 'https://www.nuget.org/packages/Microsoft.Graph'
               - href: 'https://github.com/microsoftgraph/msgraph-sdk-android'
               - href: 'https://github.com/microsoftgraph/msgraph-sdk-javascript'
-              - href: 'https://www.nuget.org/packages/Microsoft.Graph'
               - href: 'https://github.com/microsoftgraph/msgraph-sdk-objc'
               - href: 'https://github.com/microsoftgraph/msgraph-sdk-java'
               - href: 'https://github.com/microsoftgraph/msgraph-sdk-javascript'

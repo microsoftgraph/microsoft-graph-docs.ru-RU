@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: e5f297dc236899f0fbd362c7ef369897b7bc7786
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 55fd093150794ad23884ee130db7612046e7d068
+ms.sourcegitcommit: e4b0211db9b20dfea8be964003661cd99fe064d1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36719924"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "37439879"
 ---
 # <a name="chatmessages-delta"></a>chatMessages: delta
 
@@ -40,6 +40,9 @@ ms.locfileid: "36719924"
 |Делегированные (рабочая или учебная учетная запись)     |Group.Read.All, Group.ReadWrite.All          |
 |Делегированные (личная учетная запись Майкрософт) |Не поддерживается                                |
 |Приложение                            |Group.Read.All, Group.ReadWrite.All          |
+
+> [!NOTE]
+> Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -79,7 +82,7 @@ GET /teams/{id}/channels/{id}/messages/delta
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [chatMessage](https://docs.microsoft.com/ru-RU/graph/api/resources/chatmessage?view=graph-rest-beta) в тексте отклика. Отклик также содержит URL-адрес `nextLink` или `deltaLink`.
+В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) в тексте отклика. Отклик также содержит URL-адрес `nextLink` или `deltaLink`.
 
 ## <a name="examples"></a>Примеры
 
