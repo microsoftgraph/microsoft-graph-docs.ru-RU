@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 1f5c98976264eff5f6a0ca36090d6693998fb565
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 9cad8533a7adbf4f6efebe2a7aaef1587318fad9
+ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35732133"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37429206"
 ---
 ```csharp
 
@@ -26,7 +26,7 @@ var toRecipients = new List<Recipient>()
 };
 
 await graphClient.Me.Messages["{id}"]
-    .Forward(comment,toRecipients)
+    .Forward(toRecipients,null,comment)
     .Request()
     .PostAsync();
 

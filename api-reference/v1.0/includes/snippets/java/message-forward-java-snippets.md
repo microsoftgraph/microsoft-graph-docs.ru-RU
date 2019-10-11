@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 22a82d74b8c0db08407a932b49d9ab8af33eba29
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: dec1c282139b41c43f825b370dc5c129bf23d44b
+ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881328"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "37429207"
 ---
 ```java
 
@@ -23,7 +23,7 @@ toRecipients.emailAddress = emailAddress;
 toRecipientsList.add(toRecipients);
 
 graphClient.me().messages("{id}")
-    .forward(comment,toRecipientsList)
+    .forward(toRecipientsList,null,comment)
     .buildRequest()
     .post();
 
