@@ -750,7 +750,7 @@
                   href: api/event-delta.md
                 - name: Представление напоминаний
                   href: api/user-reminderview.md
-            - name: Категория
+            - name: Category
               href: resources/outlookcategory.md
               items:
                 - name: Перечисление категорий
@@ -792,11 +792,11 @@
                   href: api/place-list.md
                 - name: Получение
                   href: api/place-get.md
-        - name: Звонки и собрания по сети
-          displayName: Microsoft Teams
+        - name: Взаимодействие с облаком
+          displayName: Cloud communications
           items:
             - name: Общие сведения
-              href: resources/calls-api-overview.md
+              href: resources/communications-api-overview.md
             - name: Звонок
               href: resources/call.md
               items:
@@ -916,7 +916,7 @@
                   href: api/bookingbusiness-get.md
                 - name: Update
                   href: api/bookingbusiness-update.md
-                - name: Удаление
+                - name: Delete
                   href: api/bookingbusiness-delete.md
                 - name: Публикация
                   href: api/bookingbusiness-publish.md
@@ -957,7 +957,7 @@
                   href: api/bookingcustomer-get.md
                 - name: Update
                   href: api/bookingcustomer-update.md
-                - name: Удаление
+                - name: Delete
                   href: api/bookingcustomer-delete.md
             - name: bookingService
               href: resources/bookingservice.md
@@ -983,7 +983,7 @@
                   href: api/bookingstaffmember-get.md
                 - name: Update
                   href: api/bookingstaffmember-update.md
-                - name: Удаление
+                - name: Delete
                   href: api/bookingstaffmember-delete.md
         - name: Устройства и приложения
           href: resources/intune-graph-overview.md
@@ -8263,7 +8263,7 @@
                   href: api/directory-post-featurerolloutpolicies.md
                 - name: Обновление
                   href: api/featurerolloutpolicy-update.md
-                - name: Удаление
+                - name: Delete
                   href: api/featurerolloutpolicy-delete.md
                 - name: Создание appliesTo
                   href: api/featurerolloutpolicy-post-appliesto.md
@@ -8375,7 +8375,7 @@
                       href: api/onpremisesagentgroup-post.md
                     - name: Обновление
                       href: api/onpremisesagentgroup-update.md
-                    - name: Удаление
+                    - name: Delete
                       href: api/onpremisesagentgroup-delete.md
                 - name: Профиль локальной публикации
                   href: resources/onpremisespublishingprofile.md
@@ -8395,7 +8395,7 @@
                       href: api/publishedresource-post.md
                     - name: Update
                       href: api/publishedresource-update.md
-                    - name: Удаление
+                    - name: Delete
                       href: api/publishedresource-delete.md
                     - name: Назначить группе агентов
                       href: api/publishedresource-post-agentgroups.md
@@ -8702,7 +8702,7 @@
                   href: api/trustframeworkpolicy-get.md
                 - name: Обновление
                   href: api/trustframework-put-trustframeworkpolicy.md
-                - name: Удаление
+                - name: Delete
                   href: api/trustframeworkpolicy-delete.md
         - name: Почта
           displayName: 'Outlook, Outlook mail'
@@ -9593,9 +9593,9 @@
                   href: api/user-list-joinedteams.md
                 - name: Список всех команд
                   href: /graph/teams-list-all-teams?context=graph/api/beta
-                - name: Получение фотографии команды
+                - name: Как получить фотографию группы
                   href: api/team-get-photo.md
-                - name: Обновление фотографии группы
+                - name: Обновление фотографии команды
                   href: api/team-update-photo.md
             - name: Группа (команда)
               href: resources/group.md
