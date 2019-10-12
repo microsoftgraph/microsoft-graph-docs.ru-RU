@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: 34308ef188987e4c6c32ad5c97d0676e75567c30
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: 9ac012d6de0e6ef191b008c8e2569b0fa0654574
+ms.sourcegitcommit: 99cbeac2ca652632d2946c4740133c9b82c8e992
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333376"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "37477054"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Работа с Microsoft Teams при помощи API Microsoft Graph
 
@@ -29,7 +29,7 @@ Microsoft Teams — это рабочее пространство с чатам
 |[teamsApp](../resources/teamsapp.md)|[Список](../api/teamsapp-list.md), [публикация](../api/teamsapp-publish.md), [обновление](../api/teamsapp-update.md), [удаление](../api/teamsapp-delete.md)|
 |[teamsAppInstallation](../resources/teamsappinstallation.md)| [Список](../api/teamsappinstallation-list.md), [установка](../api/teamsappinstallation-add.md), [обновление](../api/teamsappinstallation-delete.md), [удаление](../api/teamsappinstallation-delete.md) |
 |[chatMessage](../resources/chatmessage.md) (предварительная версия)| [Список](../api/channel-list-messages.md), [отправка](../api/channel-post-messages.md), [чтение](/graph/api/channel-get-message?view=graph-rest-beta) |
-|[call](/graph/api/resources/call?view=graph-rest-beta) (предварительная версия) | [Ответ](/graph/api/call-answer?view=graph-rest-beta), [отклонение](/graph/api/call-reject?view=graph-rest-beta), [перенаправление](/graph/api/call-redirect?view=graph-rest-beta), [отключение звука](/graph/api/call-mute?view=graph-rest-beta), [включение звука](/graph/api/call-unmute?view=graph-rest-beta), [обновление метаданных](/graph/api/call-updatemetadata?view=graph-rest-beta), [изменение роли при демонстрации экрана](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [перечисление участников](/graph/api/call-list-participants?view=graph-rest-beta), [приглашение участников](/graph/api/participant-invite?view=graph-rest-beta), [отключение звука всех участников](/graph/api/participant-muteall?view=graph-rest-beta) |
+|[call](/graph/api/resources/communications-api-overview.md) (предварительная версия) | [Ответ](/graph/api/call-answer?view=graph-rest-beta), [отклонение](/graph/api/call-reject?view=graph-rest-beta), [перенаправление](/graph/api/call-redirect?view=graph-rest-beta), [отключение звука](/graph/api/call-mute?view=graph-rest-beta), [включение звука](/graph/api/call-unmute?view=graph-rest-beta), [обновление метаданных](/graph/api/call-updatemetadata?view=graph-rest-beta), [изменение роли при демонстрации экрана](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [перечисление участников](/graph/api/call-list-participants?view=graph-rest-beta), [приглашение участников](/graph/api/participant-invite?view=graph-rest-beta), [отключение звука всех участников](/graph/api/participant-muteall?view=graph-rest-beta) |
 |[schedule](/graph/api/resources/schedule?view=graph-rest-beta) (предварительная версия)| [Создание или замена](/graph/api/team-put-schedule?view=graph-rest-beta), [получение](/graph/api/schedule-get?view=graph-rest-beta), [предоставление общего доступа](/graph/api/schedule-share?view=graph-rest-beta) |
 |[schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta) (предварительная версия)| [Создание](/graph/api/schedule-post-schedulinggroups?view=graph-rest-beta), [список](/graph/api/schedule-list-schedulinggroups?view=graph-rest-beta), [получение](/graph/api/schedulinggroup-get?view=graph-rest-beta), [замена](/graph/api/schedulinggroup-put?view=graph-rest-beta), [удаление](/graph/api/schedulinggroup-delete?view=graph-rest-beta) |
 |[shift](/graph/api/resources/shift?view=graph-rest-beta) (предварительная версия)| [Создание](/graph/api/schedule-post-shifts?view=graph-rest-beta), [список](/graph/api/schedule-list-shifts?view=graph-rest-beta), [получение](/graph/api/shift-get?view=graph-rest-beta), [замена](/graph/api/shift-put?view=graph-rest-beta), [удаление](/graph/api/shift-delete?view=graph-rest-beta) |
@@ -51,7 +51,7 @@ Microsoft Teams — это рабочее пространство с чатам
 - Сохраняемый чат доступен только в Microsoft Teams. Эта функция иерархически представлена ресурсами [channel](../resources/channel.md) и [chatMessage](../resources/chatmessage.md).
 - Групповые беседы доступны только в группах Office 365. Эта функция иерархически представлена ресурсами [conversation](../resources/conversation.md), [conversationThread](../resources/conversationthread.md) и [post](../resources/post.md). 
 - Метод [Перечисление команд, к которым присоединился пользователь](../api/user-list-joinedteams.md) применяется только к Microsoft Teams.
-- [API звонков и собраний по сети](./calls-api-overview.md) применяются только к Microsoft Teams.
+- [API звонков и собраний по сети](./communications-api-overview.md) применяются только к Microsoft Teams.
 - См. также [известные проблемы](/graph/known-issues) для этих API.
 
 >Примечание. Если вы используете интерфейсы API для групп в приложении Microsoft Teams, а не в отдельном приложении (например, для вкладки или бота в Microsoft Teams), следуйте инструкциям из статьи Использование Microsoft Graph на страницах Microsoft Teams.
