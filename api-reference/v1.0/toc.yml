@@ -18,7 +18,7 @@
           href: /graph/permissions-reference?context=graph/api/1.0
         - name: Управление доступом к приложению (CSP)
           href: /graph/auth-cloudsolutionprovider?context=graph/api/1.0
-        - name: Ограничить доступ к почтовому ящику
+        - name: Ограничение доступа к почтовому ящику
           href: /graph/auth-limit-mailbox-access?context=graph/api/1.0
     - name: Использование API
       items:
@@ -35,9 +35,9 @@
         - name: Уведомления об изменениях
           displayname: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: /graph/webhooks?context=graph/api/1.0
-            - name: Руководство
+            - name: Учебник
               href: /graph/tutorials/change-notifications
             - name: Отсутствие уведомлений в Outlook (предварительная версия)
               href: /graph/webhooks-outlook-authz?context=graph/api/1.0
@@ -63,7 +63,7 @@
               href: /graph/extensibility-open-users?context=graph/api/1.0
             - name: Использование расширений схемы (пример)
               href: /graph/extensibility-schema-groups?context=graph/api/1.0
-        - name: Использование POST
+        - name: Использование Postman
           href: /graph/use-postman?context=graph/api/1.0
     - name: Миграция
       expanded: false
@@ -111,37 +111,37 @@
           href: /graph/sdks/create-client?context=graph/api/1.0
         - name: Выбор поставщика проверки подлинности
           href: /graph/sdks/choose-authentication-providers?context=graph/api/1.0
-    - name: Использование набора инструментов (Предварительная версия)
+    - name: Использование набора средств (предварительная версия)
       items:
-        - name: Обзор набора средств
+        - name: Общие сведения о наборе средств
           href: /graph/toolkit/overview?context=graph/api/1.0
         - name: Компоненты
           items:
-            - name: Регистрацион
+            - name: Вход
               href: /graph/toolkit/components/login?context=graph/api/1.0
-            - name: Человек
+            - name: Пользователь
               href: /graph/toolkit/components/person?context=graph/api/1.0
             - name: Люди
               href: /graph/toolkit/components/people?context=graph/api/1.0
-            - name: Agenda
+            - name: Повестка
               href: /graph/toolkit/components/agenda?context=graph/api/1.0
             - name: Задачи
               href: /graph/toolkit/components/tasks?context=graph/api/1.0
-        - name: Доступа
+        - name: Поставщики
           items:
             - name: Использование поставщиков
               href: /graph/toolkit/providers?context=graph/api/1.0
-            - name: Поставщик Msal
+            - name: Поставщик MSAL
               href: /graph/toolkit/providers/msal?context=graph/api/1.0
-            - name: поставщик SharePoint
+            - name: Поставщик SharePoint
               href: /graph/toolkit/providers/sharepoint?context=graph/api/1.0
             - name: Поставщик Microsoft Teams
               href: /graph/toolkit/providers/teams?context=graph/api/1.0
             - name: Настраиваемый поставщик
               href: /graph/toolkit/providers/custom?context=graph/api/1.0
-        - name: Компоненты стилизации
+        - name: Компоненты стиля
           href: /graph/toolkit/style?context=graph/api/1.0
-        - name: Компоненты шаблонов
+        - name: Компоненты создания шаблонов
           href: /graph/toolkit/templates?context=graph/api/1.0
     - name: Ресурсы
       items:
@@ -327,7 +327,7 @@
                   href: api/user-update-settings.md
         - name: Группы
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/groups-overview.md
             - name: Группа
               href: resources/group.md
@@ -1502,7 +1502,7 @@
                 - name: Запланированное действие для правила соответствия требованиям
                   href: resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-devicecompliancescheduledactionforrule-get.md
@@ -1515,7 +1515,7 @@
                 - name: Тип ресурса deviceComplianceSettingState
                   href: resources/intune-deviceconfig-devicecompliancesettingstate.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-deviceconfig-devicecompliancesettingstate-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-devicecompliancesettingstate-get.md
@@ -2584,7 +2584,7 @@
                       href: api/intune-mam-targetedmanagedappconfiguration-get.md
                     - name: Создание
                       href: api/intune-mam-targetedmanagedappconfiguration-create.md
-                    - name: Удалить
+                    - name: Удаление
                       href: api/intune-mam-targetedmanagedappconfiguration-delete.md
                     - name: Обновление
                       href: api/intune-mam-targetedmanagedappconfiguration-update.md
@@ -3031,7 +3031,7 @@
                       href: api/intune-tem-telecomexpensemanagementpartner-get.md
                     - name: Создание
                       href: api/intune-tem-telecomexpensemanagementpartner-create.md
-                    - name: Удаление
+                    - name: Удалить
                       href: api/intune-tem-telecomexpensemanagementpartner-delete.md
                     - name: Обновление
                       href: api/intune-tem-telecomexpensemanagementpartner-update.md
@@ -3198,6 +3198,17 @@
                       href: api/signin-list.md
                     - name: Получение события входа
                       href: api/signin-get.md
+            - name: Настройка проверки подлинности на основе сертификатов
+              href: resources/certificatebasedauthconfiguration.md
+              items:
+                - name: Список
+                  href: api/certificatebasedauthconfiguration-list.md
+                - name: Создание
+                  href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+                - name: Получение
+                  href: api/certificatebasedauthconfiguration-get.md
+                - name: Удаление
+                  href: api/certificatebasedauthconfiguration-delete.md
             - name: Контракты
               href: resources/contract.md
               items:
@@ -3887,7 +3898,7 @@
         - name: Безопасность
           displayname: 'Security API, Microsoft Intelligent Security Graph'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/security-api-overview.md
             - name: Оповещения
               href: resources/alert.md
