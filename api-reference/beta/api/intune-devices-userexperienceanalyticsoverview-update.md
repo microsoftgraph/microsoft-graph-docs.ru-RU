@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e90382c1a4e50aa7f880d836c592662c94ce587
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 584acec07d7c3446fa4fb648289ab17a44bd1b80
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37180085"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37526934"
 ---
 # <a name="update-userexperienceanalyticsoverview"></a>Обновление Усерекспериенцеаналитиксовервиев
 
@@ -27,7 +27,7 @@ ms.locfileid: "37180085"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ PATCH /deviceManagement/userExperienceAnalyticsOverview
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [усерекспериенцеаналитиксовервиев](../resources/intune-devices-userexperienceanalyticsoverview.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [усерекспериенцеаналитиксовервиев](../resources/intune-devices-userexperienceanalyticsoverview.md).
@@ -56,7 +56,9 @@ PATCH /deviceManagement/userExperienceAnalyticsOverview
 |девицебутперформанцеовераллскоре|Int32|Общая оценка производительности при загрузке устройства Analytics.|
 |бестпрактицесовераллскоре|Int32|Общая оценка рекомендаций по анализу пользовательских интерфейсов.|
 |insights|Коллекция [усерекспериенцеаналитиксинсигхт](../resources/intune-devices-userexperienceanalyticsinsight.md)|Аналитика взаимодействия с пользователем.|
-|состояние|[усерекспериенцеаналитикшеалсстате](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Текущее состояние работоспособности категории аналитики взаимодействия с пользователем. Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|state|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Текущее состояние работоспособности в обзоре аналитики взаимодействия с пользователем. Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|девицебутперформанцехеалсстате|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Текущее состояние работоспособности категории аналитики взаимодействия с пользователем "Бутперформанце". Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|бестпрактицешеалсстате|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|Текущее состояние работоспособности категории аналитики взаимодействия с пользователем "Бестпрактицес". Возможные значения: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 
 
@@ -70,7 +72,7 @@ PATCH /deviceManagement/userExperienceAnalyticsOverview
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsOverview
 Content-type: application/json
-Content-length: 650
+Content-length: 760
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -91,7 +93,9 @@ Content-length: 650
       "severity": "informational"
     }
   ],
-  "state": "insufficientData"
+  "state": "insufficientData",
+  "deviceBootPerformanceHealthState": "insufficientData",
+  "bestPracticesHealthState": "insufficientData"
 }
 ```
 
@@ -100,7 +104,7 @@ Content-length: 650
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 699
+Content-Length: 809
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -122,9 +126,13 @@ Content-Length: 699
       "severity": "informational"
     }
   ],
-  "state": "insufficientData"
+  "state": "insufficientData",
+  "deviceBootPerformanceHealthState": "insufficientData",
+  "bestPracticesHealthState": "insufficientData"
 }
 ```
+
+
 
 
 

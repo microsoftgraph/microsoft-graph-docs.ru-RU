@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 32fa68eac8c4003c6a8b95f0a6a725d5eaee9047
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 02f0f159886b652f75ef01d31c731fb1f4424d7e
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372239"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538786"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>Тип ресурса managedDeviceOverview
 
@@ -38,7 +38,7 @@ ms.locfileid: "36372239"
 |managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|Модели и производства меатадата для управляемых устройств в учетной записи|
 |lastModifiedDateTime|DateTimeOffset|Общие сведения о дате и времени последнего изменения устройства|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -63,7 +63,11 @@ ms.locfileid: "36372239"
     "macOSCount": 1024,
     "windowsMobileCount": 1024,
     "windowsCount": 1024,
-    "unknownCount": 1024
+    "unknownCount": 1024,
+    "androidDedicatedCount": 1024,
+    "androidDeviceAdminCount": 1024,
+    "androidFullyManagedCount": 1024,
+    "androidWorkProfileCount": 1024
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",

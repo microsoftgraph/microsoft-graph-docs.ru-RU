@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a5048e5c01e22d9c0922f9620916c3bc4251b07
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 84fcdda3990642f42c9dcaed0616aed4c9946b7f
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37188285"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37527732"
 ---
 # <a name="update-manageddeviceoverview"></a>Обновление объекта managedDeviceOverview
 
@@ -27,7 +27,7 @@ ms.locfileid: "37188285"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ PATCH /deviceManagement/managedDeviceOverview
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md).
@@ -72,7 +72,7 @@ PATCH /deviceManagement/managedDeviceOverview
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDeviceOverview
 Content-type: application/json
-Content-length: 943
+Content-length: 1082
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -86,7 +86,11 @@ Content-length: 943
     "macOSCount": 10,
     "windowsMobileCount": 2,
     "windowsCount": 12,
-    "unknownCount": 12
+    "unknownCount": 12,
+    "androidDedicatedCount": 5,
+    "androidDeviceAdminCount": 7,
+    "androidFullyManagedCount": 8,
+    "androidWorkProfileCount": 7
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -113,7 +117,7 @@ Content-length: 943
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1056
+Content-Length: 1195
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -128,7 +132,11 @@ Content-Length: 1056
     "macOSCount": 10,
     "windowsMobileCount": 2,
     "windowsCount": 12,
-    "unknownCount": 12
+    "unknownCount": 12,
+    "androidDedicatedCount": 5,
+    "androidDeviceAdminCount": 7,
+    "androidFullyManagedCount": 8,
+    "androidWorkProfileCount": 7
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -150,6 +158,8 @@ Content-Length: 1056
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
 
 
 

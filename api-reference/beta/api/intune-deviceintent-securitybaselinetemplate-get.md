@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 03d1d653dc66d58db26ef3ad897eb5af570b402d
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 9067667681cf7843afb0354832da21f9cb749562
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37188862"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37531989"
 ---
 # <a name="get-securitybaselinetemplate"></a>Получение Секуритибаселинетемплате
 
@@ -27,7 +27,7 @@ ms.locfileid: "37188862"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -48,7 +48,7 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{devic
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManagemen
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 420
+Content-Length: 459
 
 {
   "value": {
@@ -79,10 +79,13 @@ Content-Length: 420
     "isDeprecated": true,
     "intentCount": 11,
     "templateType": "specializedDevices",
+    "platformType": "androidForWork",
     "publishedDateTime": "2016-12-31T23:58:16.1180489-08:00"
   }
 }
 ```
+
+
 
 
 

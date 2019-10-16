@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3192c15628a2138a830f97c876b5d268892abaae
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 63b5e115d803937a0a68b6268cbb67d95feef4c1
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37179371"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37531653"
 ---
 # <a name="delete-devicehealthscript"></a>Удаление Девицехеалсскрипт
 
@@ -27,7 +27,7 @@ ms.locfileid: "37179371"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -35,7 +35,7 @@ ms.locfileid: "37179371"
 }
 -->
 ``` http
-DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
+DELETE /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -44,7 +44,7 @@ DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -55,7 +55,7 @@ DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 ```
 
 ### <a name="response"></a>Отклик
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

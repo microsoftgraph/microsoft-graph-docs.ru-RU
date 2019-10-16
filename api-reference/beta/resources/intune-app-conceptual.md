@@ -4,12 +4,12 @@ description: Перечисляет API Microsoft Graph для конечных 
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 48ba27d74160c3c9402efb7590c6ff0a7e809ce8
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 026ea6ad1db21579f3532f23fd2eca5759265e87
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37199372"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538590"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -73,6 +73,7 @@ ms.locfileid: "37199372"
 - [Назначение электронной книги VPP для iOS](intune-books-iosvppebookassignment.md)
 - [Бизнес-приложение macOS](intune-apps-macoslobapp.md)
 - [Дочернее бизнес-приложение для macOS](intune-apps-macoslobchildapp.md)
+- [приложение Microsoft Edge macOS](intune-apps-macosmicrosoftedgeapp.md)
 - [Минимальная версия операционной системы macOS](intune-apps-macosminimumoperatingsystem.md)
 - [Набор приложений Office для macOS](intune-apps-macosofficesuiteapp.md)
 - [Приложение macOS, приобретенное по программе VPP](intune-apps-macosvppapp.md)
@@ -95,6 +96,7 @@ ms.locfileid: "37199372"
 - [Управляемое приложение из магазина iOS](intune-apps-managediosstoreapp.md)
 - [Управляемое мобильное бизнес-приложение](intune-apps-managedmobilelobapp.md)
 - [Тип ключа конфигурации приложения MDM](intune-apps-mdmappconfigkeytype.md)
+- [Канал Microsoft Edge](intune-apps-microsoftedgechannel.md)
 - [Приложение Microsoft Store для бизнеса](intune-apps-microsoftstoreforbusinessapp.md)
 - [Отдельное приложение из Microsoft Store для бизнеса](intune-apps-microsoftstoreforbusinesscontainedapp.md)
 - [Тип лицензии Microsoft Store для бизнеса](intune-apps-microsoftstoreforbusinesslicensetype.md)
@@ -147,11 +149,13 @@ ms.locfileid: "37199372"
 - [Тип определения реестра бизнес-приложения Win32](intune-apps-win32lobappregistrydetectiontype.md)
 - [Требования к реестру бизнес-приложений Win32](intune-apps-win32lobappregistryrequirement.md)
 - [Требования к бизнес-приложениям Win32](intune-apps-win32lobapprequirement.md)
+- [Поведение при перезапуске бизнес-приложения Win32](intune-apps-win32lobapprestartbehavior.md)
 - [Код возврата бизнес-приложения Win32](intune-apps-win32lobappreturncode.md)
 - [Тип кода возврата бизнес-приложения Win32](intune-apps-win32lobappreturncodetype.md)
 - [Windows AppX](intune-apps-windowsappx.md)
 - [Архитектура Windows](intune-apps-windowsarchitecture.md)
 - [Тип устройства Windows](intune-apps-windowsdevicetype.md)
+- [Приложение Windows Edge](intune-apps-windowsmicrosoftedgeapp.md)
 - [Минимальная версия операционной системы Windows](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows Mobile MSI](intune-apps-windowsmobilemsi.md)
 - [Конфигурация клиента Windows Office](intune-cirrus-windowsofficeclientconfiguration.md)
@@ -164,5 +168,3 @@ ms.locfileid: "37199372"
 - [Приложение из магазина Windows](intune-apps-windowsstoreapp.md)
 - [Windows Universal AppX](intune-apps-windowsuniversalappx.md)
 - [Отдельное универсальное приложение Windows AppX](intune-apps-windowsuniversalappxcontainedapp.md)
-
-

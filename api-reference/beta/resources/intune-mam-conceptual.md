@@ -4,12 +4,12 @@ description: Перечисляет API Microsoft Graph для конечных 
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: f6211e962cb5f2b1ab664001badea9f5e265e47a
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: edef17e5b77ac407b97bb51e2988d0993840f11e
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196485"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37539010"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -40,6 +40,7 @@ ms.locfileid: "37196485"
 - [Тип шифрования данных управляемого приложения](intune-mam-managedappdataencryptiontype.md)
 - [Место хранения данных управляемого приложения](intune-mam-managedappdatastoragelocation.md)
 - [Уровень передачи данных управляемого приложения](intune-mam-managedappdatatransferlevel.md)
+- [Уровень угроз для управляемого приложения](intune-mam-managedappdevicethreatlevel.md)
 - [Состояние диагностики управляемых приложений](intune-mam-managedappdiagnosticstatus.md)
 - [Причина пометки управляемого приложения](intune-mam-managedappflaggedreason.md)
 - [Ограничение на уведомления управляемого приложения](intune-mam-managedappnotificationrestriction.md)

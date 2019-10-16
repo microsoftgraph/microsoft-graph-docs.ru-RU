@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6208b85e6e9bb092615401e0f8938ba2ce8ea338
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: beaecb03ba118795ac9da8125e3102c5cb4e79b8
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371049"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538597"
 ---
 # <a name="windowshealthmonitoringscope-enum-type"></a>тип перечисления Виндовшеалсмониторингскопе
 
@@ -26,6 +26,7 @@ ms.locfileid: "36371049"
 |undefined|нуль|Undefined|
 |healthMonitoring|1,1|Основные события для мониторинга работоспособности устройств Windows|
 |бутперформанце|2|События производительности загрузки|
+|усерекспериенцеаналитикс|4 |События аналитики взаимодействия с пользователем|
 
 
 

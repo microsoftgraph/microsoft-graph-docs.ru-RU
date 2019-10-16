@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4542f202c08b97d2107fb8085a89acee640ee490
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 4ee489c1cfae88b7a2832f517bafc78131d56b36
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37194686"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37537087"
 ---
 # <a name="update-devicecategory"></a>Обновление объекта deviceCategory
 
@@ -28,11 +28,11 @@ ms.locfileid: "37194686"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
-| &nbsp; &nbsp; **Входящая миграция** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **Адаптация** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 | &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
-| &nbsp; &nbsp; **Входящая миграция** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **Адаптация** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -63,7 +63,7 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса добавьте представление объекта [deviceCategory](../resources/intune-shared-devicecategory.md) в формате JSON.
 
@@ -72,7 +72,7 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор категории устройства. Только для чтения.|
-|**Входящая миграция**|
+|**Адаптация**|
 |description|String|Необязательное описание категории устройств.|
 |displayName|Строка|Отображаемое имя категории устройств.|
 
@@ -115,6 +115,8 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
+
+
 
 
 

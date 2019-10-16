@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 64484363ae850afdd3e614a57f0ec8ac1676af86
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: c0c9c86a5e3232dce7b789652d1e504d719f629c
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37169869"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37534815"
 ---
 # <a name="list-androiddeviceownergeneraldeviceconfigurations"></a>Список Андроиддевицеовнерженералдевицеконфигуратионс
 
@@ -27,7 +27,7 @@ ms.locfileid: "37169869"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -45,7 +45,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4772
+Content-Length: 4950
 
 {
   "value": [
@@ -116,6 +116,10 @@ Content-Length: 4772
         "Factory Reset Device Administrator Emails value"
       ],
       "factoryResetBlocked": true,
+      "globalProxy": {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerGlobalProxyAutoConfig",
+        "proxyAutoConfigURL": "Proxy Auto Config URL value"
+      },
       "kioskModeScreenSaverConfigurationEnabled": true,
       "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
       "kioskModeScreenSaverDisplayTimeInSeconds": 8,
@@ -184,6 +188,8 @@ Content-Length: 4772
   ]
 }
 ```
+
+
 
 
 

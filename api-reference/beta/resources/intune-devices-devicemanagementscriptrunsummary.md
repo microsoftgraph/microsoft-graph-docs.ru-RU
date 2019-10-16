@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 28337464b731c2d5bd833451574b591fd955a41b
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 1780dbfd6d53cf25fdd18b3c78f0c84c39b5455d
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196968"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538793"
 ---
 # <a name="devicemanagementscriptrunsummary-resource-type"></a>Тип ресурса Девицеманажементскриптрунсуммари
 
@@ -32,13 +32,10 @@ ms.locfileid: "37196968"
 |id|String|Key объекта сводки запуска сценария управления устройствами. Это свойство доступно только для чтения.|
 |сукцессдевицекаунт|Int32|Число устройств для успешной попытки.|
 |errorDeviceCount|Int32|Количество устройств с ошибками.|
-|compliantDeviceCount|Int32|Число соответствующих устройств.|
-|ноткомплиантдевицекаунт|Int32|Количество устройств, не соответствующих требованиям.|
-|пендингдевицекаунт|Int32|Количество ожидающих устройств.|
 |сукцессусеркаунт|Int32|Число пользователей Success.|
 |errorUserCount|Int32|Количество пользователей с ошибками.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -55,9 +52,6 @@ ms.locfileid: "37196968"
   "id": "String (identifier)",
   "successDeviceCount": 1024,
   "errorDeviceCount": 1024,
-  "compliantDeviceCount": 1024,
-  "notCompliantDeviceCount": 1024,
-  "pendingDeviceCount": 1024,
   "successUserCount": 1024,
   "errorUserCount": 1024
 }

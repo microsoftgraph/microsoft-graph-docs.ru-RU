@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 546871f9731e84ae6099fb683034c0551ed0b619
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: b1b1374ad542806e7ba9856a7fb132b8975a9e32
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37182787"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37533223"
 ---
 # <a name="get-windows10endpointprotectionconfiguration"></a>Get windows10EndpointProtectionConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "37182787"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -49,7 +49,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 30215
+Content-Length: 30139
 
 {
   "value": {
@@ -643,7 +643,6 @@ Content-Length: 30215
       "policyRulesFromGroupPolicyMerged": true,
       "policyRulesFromGroupPolicyNotMerged": true
     },
-    "attackSurfaceReductionRules": "Attack Surface Reduction Rules value",
     "defenderAdobeReaderLaunchChildProcess": "enable",
     "defenderAttackSurfaceReductionExcludedPaths": [
       "Defender Attack Surface Reduction Excluded Paths value"
@@ -756,6 +755,8 @@ Content-Length: 30215
   }
 }
 ```
+
+
 
 
 

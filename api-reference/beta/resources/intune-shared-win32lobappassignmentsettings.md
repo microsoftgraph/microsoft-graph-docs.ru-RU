@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 89d7f357f615e653e8e7b1d1fcc9bde9c4f758a8
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: e1f650919e3e7cd9fa55d7e05d3fc706b18f95db
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37201204"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538695"
 ---
 # <a name="win32lobappassignmentsettings-resource-type"></a>Тип ресурса win32LobAppAssignmentSettings
 
@@ -27,8 +27,10 @@ ms.locfileid: "37201204"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |уведомления|[win32LobAppNotification](../resources/intune-shared-win32lobappnotification.md)|Состояние уведомления для этого назначения приложения. Возможные значения: `showAll`, `showReboot`, `hideAll`.|
+|рестартсеттингс|[win32LobAppRestartSettings](../resources/intune-shared-win32lobapprestartsettings.md)|Параметры перезагрузки, которые необходимо применить к данному назначению приложения.|
+|инсталлтимесеттингс|[мобилеаппинсталлтимесеттингс](../resources/intune-shared-mobileappinstalltimesettings.md)|Параметры времени установки, применяемые к данному назначению приложения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -41,7 +43,19 @@ ms.locfileid: "37201204"
 ``` json
 {
   "@odata.type": "#microsoft.graph.win32LobAppAssignmentSettings",
-  "notifications": "String"
+  "notifications": "String",
+  "restartSettings": {
+    "@odata.type": "microsoft.graph.win32LobAppRestartSettings",
+    "gracePeriodInMinutes": 1024,
+    "countdownDisplayBeforeRestartInMinutes": 1024,
+    "restartNotificationSnoozeDurationInMinutes": 1024
+  },
+  "installTimeSettings": {
+    "@odata.type": "microsoft.graph.mobileAppInstallTimeSettings",
+    "useLocalTime": true,
+    "startDateTime": "String (timestamp)",
+    "deadlineDateTime": "String (timestamp)"
+  }
 }
 ```
 

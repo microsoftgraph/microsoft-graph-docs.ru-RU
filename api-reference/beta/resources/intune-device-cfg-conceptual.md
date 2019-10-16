@@ -4,12 +4,12 @@ description: Список API Microsoft Graph для конечных точек
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 85843a95b82caa0de07840c005a322652fdefc5b
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: adbd49f77950f06e6e09969bd7cae5841493865f
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37199015"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538625"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Настройка устройств в Microsoft Intune
 
@@ -36,6 +36,9 @@ ms.locfileid: "37199015"
 - [Тип политики разрешений приложения по умолчанию для владельца устройства с Android](intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)
 - [Конфигурация Wi/Fi для владельца устройств Android Enterprise](intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md)
 - [Общая конфигурация устройств для владельца устройства с Android](intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)
+- [Глобальный прокси-сервер владельца устройства Android](intune-deviceconfig-androiddeviceownerglobalproxy.md)
+- [Автонастройка глобального прокси-сервера владельца устройств Android](intune-deviceconfig-androiddeviceownerglobalproxyautoconfig.md)
+- [Глобальный прокси-сервер владельца устройства Android Direct](intune-deviceconfig-androiddeviceownerglobalproxydirect.md)
 - [Режим хранения владельца устройства Android](intune-deviceconfig-androiddeviceownerplaystoremode.md)
 - [Требуемый тип пароля для владельца устройства с Android](intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)
 - [Профиль сертификата SCEP владельца устройства Android](intune-deviceconfig-androiddeviceownerscepcertificateprofile.md)
@@ -324,6 +327,7 @@ ms.locfileid: "37199015"
 - [macOS Kerberos для единого входа](intune-deviceconfig-macoskerberossinglesignonextension.md)
 - [расширение ядра macOS](intune-deviceconfig-macoskernelextension.md)
 - [Элемент запуска macOS](intune-deviceconfig-macoslaunchitem.md)
+- [Профиль сертификата macOS PKCS](intune-deviceconfig-macospkcscertificateprofile.md)
 - [Профиль сертификата SCEP для macOS](intune-deviceconfig-macosscepcertificateprofile.md)
 - [Доверенный корневой сертификат для macOS](intune-deviceconfig-macostrustedrootcertificate.md)
 - [Конфигурация VPN для macOS](intune-deviceconfig-macosvpnconfiguration.md)
@@ -358,7 +362,6 @@ ms.locfileid: "37199015"
 - [Параметр OMA, строка](intune-deviceconfig-omasettingstring.md)
 - [Параметр OMA, строка, XML](intune-deviceconfig-omasettingstringxml.md)
 - [Диапазон версий операционной системы](intune-deviceconfig-operatingsystemversionrange.md)
-- [Тип платформы политики](intune-deviceconfig-policyplatformtype.md)
 - [Тип действия по питанию](intune-deviceconfig-poweractiontype.md)
 - [Предварительные версии функций](intune-deviceconfig-prereleasefeatures.md)
 - [Тип рейтинга приложений](intune-deviceconfig-ratingappstype.md)

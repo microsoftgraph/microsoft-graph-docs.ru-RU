@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4f613c6bb7d8a9fa25a9ef6007701433a1c2f799
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: dfd0b21906cd7692e32b93475efdb8b861ed44b3
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37188565"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37530617"
 ---
 # <a name="create-devicemanagementscriptdevicestate"></a>Создание Девицеманажементскриптдевицестате
 
@@ -27,7 +27,7 @@ ms.locfileid: "37188565"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -45,7 +45,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Девицеманажементскриптдевицестате в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицеманажементскриптдевицестате.
@@ -53,15 +53,11 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта состояния устройства сценария управления устройствами. Это свойство доступно только для чтения.|
-|рунстате|[рунстате](../resources/intune-shared-runstate.md)|Состояние последнего запуска скрипта управления устройствами. Возможные значения: `unknown`, `success`, `fail`, `error`, `pending`.|
-|ресултмессаже|String.|Сведения о выходных данных выполнения.|
+|рунстате|[рунстате](../resources/intune-shared-runstate.md)|Состояние последнего запуска скрипта управления устройствами. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|ресултмессаже|String|Сведения о выходных данных выполнения.|
 |ластстатеупдатедатетиме|DateTimeOffset|Последнее время выполнения скрипта управления устройствами.|
 |errorCode|Int32|Код ошибки, соответствующий ошибочному выполнению сценария управления устройствами.|
 |errorDescription|String|Описание ошибки, соответствующее ошибочному выполнению сценария управления устройствами.|
-|lastSyncDateTime|DateTimeOffset|Последнее время, когда расширение управления Intune будет синхронизироваться с Intune.|
-|преремедиатиондетектионскриптаутпут|String.|Выходные данные сценария обнаружения перед исправлением.|
-|ремедиатионскриптеррор|String.|Вывод ошибок сценария исправления.|
-|постремедиатиондетектионскриптаутпут|String.|Выходные данные сценария обнаружения после исправления.|
 
 
 
@@ -75,7 +71,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates
 Content-type: application/json
-Content-length: 588
+Content-length: 281
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptDeviceState",
@@ -83,11 +79,7 @@ Content-length: 588
   "resultMessage": "Result Message value",
   "lastStateUpdateDateTime": "2017-01-01T00:02:58.4418045-08:00",
   "errorCode": 9,
-  "errorDescription": "Error Description value",
-  "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
-  "preRemediationDetectionScriptOutput": "Pre Remediation Detection Script Output value",
-  "remediationScriptError": "Remediation Script Error value",
-  "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value"
+  "errorDescription": "Error Description value"
 }
 ```
 
@@ -96,7 +88,7 @@ Content-length: 588
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 637
+Content-Length: 330
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptDeviceState",
@@ -105,13 +97,11 @@ Content-Length: 637
   "resultMessage": "Result Message value",
   "lastStateUpdateDateTime": "2017-01-01T00:02:58.4418045-08:00",
   "errorCode": 9,
-  "errorDescription": "Error Description value",
-  "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
-  "preRemediationDetectionScriptOutput": "Pre Remediation Detection Script Output value",
-  "remediationScriptError": "Remediation Script Error value",
-  "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value"
+  "errorDescription": "Error Description value"
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b3be4aa4859848a7effaa56a83cc06351f96b7f0
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 3c868acb656fac79b36f12657e14c90d79cb9ab6
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37174391"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37533821"
 ---
 # <a name="list-iosgeneraldeviceconfigurations"></a>Перечисление объектов iosGeneralDeviceConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "37174391"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -45,7 +45,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11797
+Content-Length: 11878
 
 {
   "value": [
@@ -339,6 +339,9 @@ Content-Length: 11797
       "airPrintBlockCredentialsStorage": true,
       "airPrintForceTrustedTLS": true,
       "airPrintBlockiBeaconDiscovery": true,
+      "filesNetworkDriveAccessBlocked": true,
+      "filesUsbDriveAccessBlocked": true,
+      "wifiPowerOnForced": true,
       "blockSystemAppRemoval": true,
       "vpnBlockCreation": true,
       "appRemovalBlocked": true,
@@ -354,12 +357,13 @@ Content-Length: 11797
       "continuousPathKeyboardBlocked": true,
       "findMyDeviceInFindMyAppBlocked": true,
       "findMyFriendsInFindMyAppBlocked": true,
-      "wiFiBlockPowerModification": true,
       "iTunesBlocked": true
     }
   ]
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cffc9ed9c5e4c5590386f022e78f52f2efd56666
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: aa8b654bbab64cdc7c523074c20b8555df3e2c8a
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196954"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538800"
 ---
 # <a name="devicemanagementscriptdevicestate-resource-type"></a>Тип ресурса Девицеманажементскриптдевицестате
 
@@ -33,18 +33,14 @@ ms.locfileid: "37196954"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта состояния устройства сценария управления устройствами. Это свойство доступно только для чтения.|
-|рунстате|[рунстате](../resources/intune-shared-runstate.md)|Состояние последнего запуска скрипта управления устройствами. Возможные значения: `unknown`, `success`, `fail`, `error`, `pending`.|
-|ресултмессаже|String.|Сведения о выходных данных выполнения.|
+|рунстате|[рунстате](../resources/intune-shared-runstate.md)|Состояние последнего запуска скрипта управления устройствами. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|ресултмессаже|String|Сведения о выходных данных выполнения.|
 |ластстатеупдатедатетиме|DateTimeOffset|Последнее время выполнения скрипта управления устройствами.|
 |errorCode|Int32|Код ошибки, соответствующий ошибочному выполнению сценария управления устройствами.|
 |errorDescription|String|Описание ошибки, соответствующее ошибочному выполнению сценария управления устройствами.|
-|lastSyncDateTime|DateTimeOffset|Последнее время, когда расширение управления Intune будет синхронизироваться с Intune.|
-|преремедиатиондетектионскриптаутпут|String.|Выходные данные сценария обнаружения перед исправлением.|
-|ремедиатионскриптеррор|String.|Вывод ошибок сценария исправления.|
-|постремедиатиондетектионскриптаутпут|String.|Выходные данные сценария обнаружения после исправления.|
 
-## <a name="relationships"></a>Отношения
-|Отношение|Тип|Описание|
+## <a name="relationships"></a>Связи
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |managedDevice|[managedDevice](../resources/intune-devices-manageddevice.md);|Управляемые устройства, которые выполняют скрипт управления устройствами.|
 
@@ -64,11 +60,7 @@ ms.locfileid: "37196954"
   "resultMessage": "String",
   "lastStateUpdateDateTime": "String (timestamp)",
   "errorCode": 1024,
-  "errorDescription": "String",
-  "lastSyncDateTime": "String (timestamp)",
-  "preRemediationDetectionScriptOutput": "String",
-  "remediationScriptError": "String",
-  "postRemediationDetectionScriptOutput": "String"
+  "errorDescription": "String"
 }
 ```
 
