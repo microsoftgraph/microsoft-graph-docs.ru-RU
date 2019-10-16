@@ -1,0 +1,74 @@
+---
+title: Тип ресурса Девицеманажементкачедрепортконфигуратион
+description: Сущность, представляющая конфигурацию кэшированного отчета
+author: rolyon
+localization_priority: Normal
+ms.prod: Intune
+doc_type: resourcePageType
+ms.openlocfilehash: 8bd2b3ef44c5522011f15f2a1335b325a666f63c
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37539045"
+---
+# <a name="devicemanagementcachedreportconfiguration-resource-type"></a><span data-ttu-id="a350a-103">Тип ресурса Девицеманажементкачедрепортконфигуратион</span><span class="sxs-lookup"><span data-stu-id="a350a-103">deviceManagementCachedReportConfiguration resource type</span></span>
+
+> <span data-ttu-id="a350a-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a350a-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+
+> <span data-ttu-id="a350a-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="a350a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+
+<span data-ttu-id="a350a-106">Сущность, представляющая конфигурацию кэшированного отчета</span><span class="sxs-lookup"><span data-stu-id="a350a-106">Entity representing the configuration of a cached report</span></span>
+
+## <a name="methods"></a><span data-ttu-id="a350a-107">Методы</span><span class="sxs-lookup"><span data-stu-id="a350a-107">Methods</span></span>
+|<span data-ttu-id="a350a-108">Метод</span><span class="sxs-lookup"><span data-stu-id="a350a-108">Method</span></span>|<span data-ttu-id="a350a-109">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="a350a-109">Return Type</span></span>|<span data-ttu-id="a350a-110">Описание</span><span class="sxs-lookup"><span data-stu-id="a350a-110">Description</span></span>|
+|:---|:---|:---|
+|[<span data-ttu-id="a350a-111">Список Девицеманажементкачедрепортконфигуратионс</span><span class="sxs-lookup"><span data-stu-id="a350a-111">List deviceManagementCachedReportConfigurations</span></span>](../api/intune-reporting-devicemanagementcachedreportconfiguration-list.md)|<span data-ttu-id="a350a-112">Коллекция [девицеманажементкачедрепортконфигуратион](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="a350a-112">[deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) collection</span></span>|<span data-ttu-id="a350a-113">Список свойств и связей объектов [девицеманажементкачедрепортконфигуратион](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="a350a-113">List properties and relationships of the [deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) objects.</span></span>|
+|[<span data-ttu-id="a350a-114">Получение Девицеманажементкачедрепортконфигуратион</span><span class="sxs-lookup"><span data-stu-id="a350a-114">Get deviceManagementCachedReportConfiguration</span></span>](../api/intune-reporting-devicemanagementcachedreportconfiguration-get.md)|[<span data-ttu-id="a350a-115">девицеманажементкачедрепортконфигуратион</span><span class="sxs-lookup"><span data-stu-id="a350a-115">deviceManagementCachedReportConfiguration</span></span>](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)|<span data-ttu-id="a350a-116">Чтение свойств и связей объекта [девицеманажементкачедрепортконфигуратион](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="a350a-116">Read properties and relationships of the [deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) object.</span></span>|
+|[<span data-ttu-id="a350a-117">Создание Девицеманажементкачедрепортконфигуратион</span><span class="sxs-lookup"><span data-stu-id="a350a-117">Create deviceManagementCachedReportConfiguration</span></span>](../api/intune-reporting-devicemanagementcachedreportconfiguration-create.md)|[<span data-ttu-id="a350a-118">девицеманажементкачедрепортконфигуратион</span><span class="sxs-lookup"><span data-stu-id="a350a-118">deviceManagementCachedReportConfiguration</span></span>](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)|<span data-ttu-id="a350a-119">Создание нового объекта [девицеманажементкачедрепортконфигуратион](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="a350a-119">Create a new [deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) object.</span></span>|
+|[<span data-ttu-id="a350a-120">Удаление Девицеманажементкачедрепортконфигуратион</span><span class="sxs-lookup"><span data-stu-id="a350a-120">Delete deviceManagementCachedReportConfiguration</span></span>](../api/intune-reporting-devicemanagementcachedreportconfiguration-delete.md)|<span data-ttu-id="a350a-121">Нет</span><span class="sxs-lookup"><span data-stu-id="a350a-121">None</span></span>|<span data-ttu-id="a350a-122">Удаляет объект [девицеманажементкачедрепортконфигуратион](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="a350a-122">Deletes a [deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md).</span></span>|
+|[<span data-ttu-id="a350a-123">Обновление Девицеманажементкачедрепортконфигуратион</span><span class="sxs-lookup"><span data-stu-id="a350a-123">Update deviceManagementCachedReportConfiguration</span></span>](../api/intune-reporting-devicemanagementcachedreportconfiguration-update.md)|[<span data-ttu-id="a350a-124">девицеманажементкачедрепортконфигуратион</span><span class="sxs-lookup"><span data-stu-id="a350a-124">deviceManagementCachedReportConfiguration</span></span>](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)|<span data-ttu-id="a350a-125">Обновление свойств объекта [девицеманажементкачедрепортконфигуратион](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="a350a-125">Update the properties of a [deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) object.</span></span>|
+
+## <a name="properties"></a><span data-ttu-id="a350a-126">Свойства</span><span class="sxs-lookup"><span data-stu-id="a350a-126">Properties</span></span>
+|<span data-ttu-id="a350a-127">Свойство</span><span class="sxs-lookup"><span data-stu-id="a350a-127">Property</span></span>|<span data-ttu-id="a350a-128">Тип</span><span class="sxs-lookup"><span data-stu-id="a350a-128">Type</span></span>|<span data-ttu-id="a350a-129">Описание</span><span class="sxs-lookup"><span data-stu-id="a350a-129">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="a350a-130">id</span><span class="sxs-lookup"><span data-stu-id="a350a-130">id</span></span>|<span data-ttu-id="a350a-131">String</span><span class="sxs-lookup"><span data-stu-id="a350a-131">String</span></span>|<span data-ttu-id="a350a-132">Уникальный идентификатор для этой сущности</span><span class="sxs-lookup"><span data-stu-id="a350a-132">Unique identifier for this entity</span></span>|
+|<span data-ttu-id="a350a-133">репортнаме</span><span class="sxs-lookup"><span data-stu-id="a350a-133">reportName</span></span>|<span data-ttu-id="a350a-134">String</span><span class="sxs-lookup"><span data-stu-id="a350a-134">String</span></span>|<span data-ttu-id="a350a-135">Имя отчета</span><span class="sxs-lookup"><span data-stu-id="a350a-135">Name of the report</span></span>|
+|<span data-ttu-id="a350a-136">filter</span><span class="sxs-lookup"><span data-stu-id="a350a-136">filter</span></span>|<span data-ttu-id="a350a-137">String</span><span class="sxs-lookup"><span data-stu-id="a350a-137">String</span></span>|<span data-ttu-id="a350a-138">Фильтры, применяемые при создании отчета.</span><span class="sxs-lookup"><span data-stu-id="a350a-138">Filters applied on report creation.</span></span>|
+|<span data-ttu-id="a350a-139">select</span><span class="sxs-lookup"><span data-stu-id="a350a-139">select</span></span>|<span data-ttu-id="a350a-140">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="a350a-140">String collection</span></span>|<span data-ttu-id="a350a-141">Столбцы, выбранные из отчета</span><span class="sxs-lookup"><span data-stu-id="a350a-141">Columns selected from the report</span></span>|
+|<span data-ttu-id="a350a-142">orderBy</span><span class="sxs-lookup"><span data-stu-id="a350a-142">orderBy</span></span>|<span data-ttu-id="a350a-143">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="a350a-143">String collection</span></span>|<span data-ttu-id="a350a-144">Упорядочение столбцов в отчете</span><span class="sxs-lookup"><span data-stu-id="a350a-144">Ordering of columns in the report</span></span>|
+|<span data-ttu-id="a350a-145">status</span><span class="sxs-lookup"><span data-stu-id="a350a-145">status</span></span>|[<span data-ttu-id="a350a-146">девицеманажементрепортстатус</span><span class="sxs-lookup"><span data-stu-id="a350a-146">deviceManagementReportStatus</span></span>](../resources/intune-reporting-devicemanagementreportstatus.md)|<span data-ttu-id="a350a-147">Состояние кэшированного отчета.</span><span class="sxs-lookup"><span data-stu-id="a350a-147">Status of the cached report.</span></span> <span data-ttu-id="a350a-148">Возможные значения: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.</span><span class="sxs-lookup"><span data-stu-id="a350a-148">Possible values are: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.</span></span>|
+|<span data-ttu-id="a350a-149">ластрефрешдатетиме</span><span class="sxs-lookup"><span data-stu-id="a350a-149">lastRefreshDateTime</span></span>|<span data-ttu-id="a350a-150">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="a350a-150">DateTimeOffset</span></span>|<span data-ttu-id="a350a-151">Время последнего обновления кэшированного отчета</span><span class="sxs-lookup"><span data-stu-id="a350a-151">Time that the cached report was last refreshed</span></span>|
+|<span data-ttu-id="a350a-152">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="a350a-152">expirationDateTime</span></span>|<span data-ttu-id="a350a-153">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="a350a-153">DateTimeOffset</span></span>|<span data-ttu-id="a350a-154">Время истечения срока действия кэшированного отчета</span><span class="sxs-lookup"><span data-stu-id="a350a-154">Time that the cached report expires</span></span>|
+
+## <a name="relationships"></a><span data-ttu-id="a350a-155">Связи</span><span class="sxs-lookup"><span data-stu-id="a350a-155">Relationships</span></span>
+<span data-ttu-id="a350a-156">Нет</span><span class="sxs-lookup"><span data-stu-id="a350a-156">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="a350a-157">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a350a-157">JSON Representation</span></span>
+<span data-ttu-id="a350a-158">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a350a-158">Here is a JSON representation of the resource.</span></span>
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.deviceManagementCachedReportConfiguration"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.deviceManagementCachedReportConfiguration",
+  "id": "String (identifier)",
+  "reportName": "String",
+  "filter": "String",
+  "select": [
+    "String"
+  ],
+  "orderBy": [
+    "String"
+  ],
+  "status": "String",
+  "lastRefreshDateTime": "String (timestamp)",
+  "expirationDateTime": "String (timestamp)"
+}
+```
+
+
+

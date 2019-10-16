@@ -5,34 +5,34 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 515643fc3d7c95b209ee4c26543327f1f6b5ef25
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 1cb89ef6c9609848c71d4743b20132a99291640b
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37194353"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536898"
 ---
-# <a name="getloggedonmanageddevices-function"></a><span data-ttu-id="8b954-103">Функция Жетлогжедонманажеддевицес</span><span class="sxs-lookup"><span data-stu-id="8b954-103">getLoggedOnManagedDevices function</span></span>
+# <a name="getloggedonmanageddevices-function"></a><span data-ttu-id="91d43-103">Функция Жетлогжедонманажеддевицес</span><span class="sxs-lookup"><span data-stu-id="91d43-103">getLoggedOnManagedDevices function</span></span>
 
-> <span data-ttu-id="8b954-104">**Важно!** API в версии/Beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="8b954-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="8b954-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8b954-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="91d43-104">**Важно!** API в версии/Beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="91d43-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="91d43-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="91d43-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="8b954-106">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="8b954-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="91d43-106">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="91d43-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="8b954-107">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="8b954-107">Not yet documented</span></span>
+<span data-ttu-id="91d43-107">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="91d43-107">Not yet documented</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="8b954-108">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="8b954-108">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="91d43-108">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="91d43-108">Prerequisites</span></span>
 
-<span data-ttu-id="8b954-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8b954-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="91d43-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="91d43-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8b954-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8b954-111">Permission type</span></span>|<span data-ttu-id="8b954-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="8b954-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="91d43-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="91d43-111">Permission type</span></span>|<span data-ttu-id="91d43-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="91d43-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="8b954-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8b954-113">Delegated (work or school account)</span></span>||
-| <span data-ttu-id="8b954-114">&nbsp;&nbsp; **Управление устройствами**</span><span class="sxs-lookup"><span data-stu-id="8b954-114">&nbsp; &nbsp; **Device management**</span></span> | <span data-ttu-id="8b954-115">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span><span class="sxs-lookup"><span data-stu-id="8b954-115">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span></span>|
-|<span data-ttu-id="8b954-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8b954-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="8b954-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8b954-117">Not supported.</span></span>|
-|<span data-ttu-id="8b954-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="8b954-118">Application</span></span>||
-| <span data-ttu-id="8b954-119">&nbsp;&nbsp; **Управление устройствами**</span><span class="sxs-lookup"><span data-stu-id="8b954-119">&nbsp; &nbsp; **Device management**</span></span> | <span data-ttu-id="8b954-120">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span><span class="sxs-lookup"><span data-stu-id="8b954-120">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span></span>|
+|<span data-ttu-id="91d43-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="91d43-113">Delegated (work or school account)</span></span>||
+| <span data-ttu-id="91d43-114">&nbsp;&nbsp; **Управление устройствами**</span><span class="sxs-lookup"><span data-stu-id="91d43-114">&nbsp; &nbsp; **Device management**</span></span> | <span data-ttu-id="91d43-115">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span><span class="sxs-lookup"><span data-stu-id="91d43-115">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span></span>|
+|<span data-ttu-id="91d43-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="91d43-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="91d43-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="91d43-117">Not supported.</span></span>|
+|<span data-ttu-id="91d43-118">Приложение</span><span class="sxs-lookup"><span data-stu-id="91d43-118">Application</span></span>||
+| <span data-ttu-id="91d43-119">&nbsp;&nbsp; **Управление устройствами**</span><span class="sxs-lookup"><span data-stu-id="91d43-119">&nbsp; &nbsp; **Device management**</span></span> | <span data-ttu-id="91d43-120">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span><span class="sxs-lookup"><span data-stu-id="91d43-120">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="8b954-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8b954-121">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="91d43-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="91d43-121">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -41,34 +41,34 @@ ms.locfileid: "37194353"
 GET /users/{usersId}/getLoggedOnManagedDevices
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="8b954-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="8b954-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="91d43-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="91d43-122">Request headers</span></span>
 
-|<span data-ttu-id="8b954-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="8b954-123">Header</span></span>|<span data-ttu-id="8b954-124">Значение</span><span class="sxs-lookup"><span data-stu-id="8b954-124">Value</span></span>|
+|<span data-ttu-id="91d43-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="91d43-123">Header</span></span>|<span data-ttu-id="91d43-124">Значение</span><span class="sxs-lookup"><span data-stu-id="91d43-124">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="8b954-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="8b954-125">Authorization</span></span>|<span data-ttu-id="8b954-126">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8b954-126">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="8b954-127">Accept</span><span class="sxs-lookup"><span data-stu-id="8b954-127">Accept</span></span>|<span data-ttu-id="8b954-128">application/json</span><span class="sxs-lookup"><span data-stu-id="8b954-128">application/json</span></span>|
+|<span data-ttu-id="91d43-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="91d43-125">Authorization</span></span>|<span data-ttu-id="91d43-126">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="91d43-126">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="91d43-127">Accept</span><span class="sxs-lookup"><span data-stu-id="91d43-127">Accept</span></span>|<span data-ttu-id="91d43-128">application/json</span><span class="sxs-lookup"><span data-stu-id="91d43-128">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="8b954-129">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="8b954-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="91d43-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="91d43-129">Request body</span></span>
 
-<span data-ttu-id="8b954-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="8b954-130">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="91d43-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="91d43-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8b954-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="8b954-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="91d43-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="91d43-131">Response</span></span>
 
-<span data-ttu-id="8b954-132">В случае успеха эта функция возвращает код `200 OK` отклика и коллекцию [managedDevice](../resources/intune-devices-manageddevice.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="8b954-132">If successful, this function returns a `200 OK` response code and a [managedDevice](../resources/intune-devices-manageddevice.md) collection in the response body.</span></span>
+<span data-ttu-id="91d43-132">В случае успеха эта функция возвращает код `200 OK` отклика и коллекцию [managedDevice](../resources/intune-devices-manageddevice.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="91d43-132">If successful, this function returns a `200 OK` response code and a [managedDevice](../resources/intune-devices-manageddevice.md) collection in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8b954-133">Пример</span><span class="sxs-lookup"><span data-stu-id="8b954-133">Example</span></span>
+## <a name="example"></a><span data-ttu-id="91d43-133">Пример</span><span class="sxs-lookup"><span data-stu-id="91d43-133">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="8b954-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="8b954-134">Request</span></span>
+### <a name="request"></a><span data-ttu-id="91d43-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="91d43-134">Request</span></span>
 
-<span data-ttu-id="8b954-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="8b954-135">Here is an example of the request.</span></span>
+<span data-ttu-id="91d43-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="91d43-135">Here is an example of the request.</span></span>
 
 ``` http
 GET https://graph.microsoft.com/beta/users/{usersId}/getLoggedOnManagedDevices
 ```
 
-### <a name="response"></a><span data-ttu-id="8b954-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="8b954-136">Response</span></span>
+### <a name="response"></a><span data-ttu-id="91d43-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="91d43-136">Response</span></span>
 
-<span data-ttu-id="8b954-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="8b954-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="91d43-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="91d43-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 ``` http
 HTTP/1.1 200 OK
@@ -232,6 +232,8 @@ Content-Length: 7485
   ]
 }
 ```
+
+
 
 
 
