@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fb5d7c7cd07f29715639c61ca5c877e802cdbd0b
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: c2758d04b9283a3804417ea409bbc19769fb6d1b
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37201103"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536758"
 ---
 # <a name="update-devicemanagementautopilotevent"></a>Обновление Девицеманажементаутопилотевент
 
@@ -27,7 +27,7 @@ ms.locfileid: "37201103"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [девицеманажементаутопилотевент](../resources/intune-troubleshooting-devicemanagementautopilotevent.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицеманажементаутопилотевент](../resources/intune-troubleshooting-devicemanagementautopilotevent.md).
@@ -55,15 +55,15 @@ PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 |eventDateTime|DateTimeOffset|Время возникновения события.|
 |девицерегистереддатетиме|DateTimeOffset|Дата регистрации устройства.|
 |енроллментстартдатетиме|DateTimeOffset|Дата начала регистрации устройства.|
-|enrollmentType|[виндовсаутопилотенроллменттипе](../resources/intune-troubleshooting-windowsautopilotenrollmenttype.md)|Тип регистрации. Возможные значения: `unknown`, `azureADJoinedWithAutopilotProfile`, `offlineDomainJoined`, `azureADJoinedUsingDeviceAuthWithAutopilotProfile`, `azureADJoinedUsingDeviceAuthWithoutAutopilotProfile`, `azureADJoinedWithOfflineAutopilotProfile`, `azureADJoinedWithWhiteGlove`, `offlineDomainJoinedWithWhiteGlove`, `offlineDomainJoinedWithOfflineAutopilotProfile`.|
-|девицесериалнумбер|String.|Серийный номер устройства.|
+|enrollmentType|[windowsAutopilotEnrollmentType](../resources/intune-troubleshooting-windowsautopilotenrollmenttype.md)|Тип регистрации. Возможные значения: `unknown`, `azureADJoinedWithAutopilotProfile`, `offlineDomainJoined`, `azureADJoinedUsingDeviceAuthWithAutopilotProfile`, `azureADJoinedUsingDeviceAuthWithoutAutopilotProfile`, `azureADJoinedWithOfflineAutopilotProfile`, `azureADJoinedWithWhiteGlove`, `offlineDomainJoinedWithWhiteGlove`, `offlineDomainJoinedWithOfflineAutopilotProfile`.|
+|девицесериалнумбер|String|Серийный номер устройства.|
 |managedDeviceName|String|Управляемое имя устройства.|
 |userPrincipalName|String|Имя участника пользователя, используемое для регистрации устройства.|
-|виндовсаутопилотдеплойментпрофиледисплайнаме|String.|Имя профиля для автопилота.|
+|виндовсаутопилотдеплойментпрофиледисплайнаме|String|Имя профиля для автопилота.|
 |енроллментстате|[енроллментстате](../resources/intune-shared-enrollmentstate.md)|Не удалось зарегистрировать состояние регистрации, например "зарегистрировано". Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|windows10EnrollmentCompletionPageConfigurationDisplayName|String.|Имя профиля страницы состояния регистрации|
-|деплойментстате|[виндовсаутопилотдеплойментстате](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Состояние развертывания, например успешное выполнение, сбой, выполнение, Сукцессвистимеаут. Возможные значения: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`.|
-|osVersion|String.|Версия операционной системы устройства.|
+|windows10EnrollmentCompletionPageConfigurationDisplayName|String|Имя профиля страницы состояния регистрации|
+|деплойментстате|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Состояние развертывания, например успешное выполнение, сбой, выполнение, Сукцессвистимеаут. Возможные значения: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`.|
+|osVersion|String|Версия операционной системы устройства.|
 |деплойментдуратион|Duration (Длительность)|Длительность развертывания с автопилотной версией, включая регистрацию.|
 |деплойменттоталдуратион|Duration (Длительность)|Общее время развертывания с экрана регистрации на рабочем столе.|
 |девицепрепаратиондуратион|Duration (Длительность)|Время, затраченное на регистрацию устройств.|
@@ -73,7 +73,7 @@ PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 |деплойментенддатетиме|DateTimeOffset|Время окончания развертывания.|
 |таржетедаппкаунт|Int32|Количество целевых приложений.|
 |таржетедполицикаунт|Int32|Количество целевых политик.|
-|енроллментфаилуредетаилс|String.|Сведения о сбоях при регистрации.|
+|енроллментфаилуредетаилс|String|Сведения о сбоях при регистрации.|
 
 
 
@@ -150,6 +150,8 @@ Content-Length: 1372
   "enrollmentFailureDetails": "Enrollment Failure Details value"
 }
 ```
+
+
 
 
 

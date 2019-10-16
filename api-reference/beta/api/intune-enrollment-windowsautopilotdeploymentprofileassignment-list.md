@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1ab6d15b3c1b302c3a45e853a9ddb739309f7d7a
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 735571e93e1277b61b237c79b2b920e3073a94d1
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37184799"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37535844"
 ---
 # <a name="list-windowsautopilotdeploymentprofileassignments"></a>Список Виндовсаутопилотдеплойментпрофилеассигнментс
 
@@ -27,7 +27,7 @@ ms.locfileid: "37184799"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceId
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIden
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 285
+Content-Length: 354
 
 {
   "value": [
@@ -72,11 +72,15 @@ Content-Length: 285
       "id": "de7e1e1e-1e1e-de7e-1e1e-7ede1e1e7ede",
       "target": {
         "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-      }
+      },
+      "source": "policySets",
+      "sourceId": "Source Id value"
     }
   ]
 }
 ```
+
+
 
 
 

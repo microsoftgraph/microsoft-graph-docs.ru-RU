@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d10ff8ae4f6727c6741eecb3f37099a82f7abf63
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 9d7fb0a086b427e6cca82f83e77458b34a65fee8
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37194651"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538205"
 ---
 # <a name="enablelegacypcmanagement-action"></a>Действие enableLegacyPcManagement
 
@@ -25,10 +25,10 @@ ms.locfileid: "37194651"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
-| &nbsp; &nbsp; **Настройка устройства** | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp; &nbsp; **Конфигурация устройств** | DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
-| &nbsp; &nbsp; **Настройка устройства** | DeviceManagementConfiguration.ReadWrite.All|
+|Приложение||
+| &nbsp; &nbsp; **Конфигурация устройств** | DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -45,7 +45,7 @@ POST /deviceManagement/enableLegacyPcManagement
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -63,6 +63,8 @@ POST https://graph.microsoft.com/beta/deviceManagement/enableLegacyPcManagement
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

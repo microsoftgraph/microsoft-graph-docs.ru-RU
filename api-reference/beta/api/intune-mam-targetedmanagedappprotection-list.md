@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 21feef8699eb7b9ad4140701d89c09a199301b14
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: fccdc4973ea4c0590393d6dab05260b42931d287
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37191591"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37535662"
 ---
 # <a name="list-targetedmanagedappprotections"></a>Перечисление объектов targetedManagedAppProtection
 
@@ -27,7 +27,7 @@ ms.locfileid: "37191591"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/managedAppPolicies
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2302
+Content-Length: 2445
 
 {
   "value": [
@@ -115,12 +115,17 @@ Content-Length: 2302
       "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
       "allowedOutboundClipboardSharingExceptionLength": 14,
       "notificationRestriction": "blockOrganizationalData",
+      "previousPinBlockCount": 5,
+      "maximumAllowedDeviceThreatLevel": "secured",
+      "mobileThreatDefenseRemediationAction": "wipe",
       "isAssigned": true,
       "targetedAppManagementLevels": "unmanaged"
     }
   ]
 }
 ```
+
+
 
 
 

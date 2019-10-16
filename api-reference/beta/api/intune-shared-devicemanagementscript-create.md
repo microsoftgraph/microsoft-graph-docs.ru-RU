@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c0e304af885579aaf4ad42fb5c5391d7f12d2fb
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: a4b93130c66977d9ccf3f0ad2fcedfbfe9cae6c7
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37201048"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538163"
 ---
 # <a name="create-devicemanagementscript"></a>Создание deviceManagementScript
 
@@ -29,7 +29,7 @@ ms.locfileid: "37201048"
 | &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 | &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementManagedDevices.ReadWrite.All|
 
@@ -48,7 +48,7 @@ POST /deviceManagement/deviceManagementScripts
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта deviceManagementScript в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании deviceManagementScript.
@@ -63,10 +63,10 @@ POST /deviceManagement/deviceManagementScripts
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения скрипта управления устройствами. Это свойство доступно только для чтения.|
 |runAsAccount|[рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|Свойства enforcesignaturecheck|Boolean.|Указывает, нужно ли проверять подпись скрипта.|
+|Свойства enforcesignaturecheck|Логический|Указывает, нужно ли проверять подпись скрипта.|
 |fileName|String|Имя файла сценария.|
-|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого экземпляра Повершеллскрипт.|
-|runAs32Bit|Boolean.|Значение, указывающее, должен ли скрипт PowerShell выполняться как 32 бит|
+|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого экземпляра Повершеллскрипт.|
+|runAs32Bit|Логический|Значение, указывающее, должен ли скрипт PowerShell выполняться как 32 бит|
 
 
 
@@ -127,6 +127,8 @@ Content-Length: 615
   "runAs32Bit": true
 }
 ```
+
+
 
 
 

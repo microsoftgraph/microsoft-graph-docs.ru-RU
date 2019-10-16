@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7792bd9aef146b3b12b005510e2a955d072c802f
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: e6e8502f609b2f9b1d23580d0b7d5e38f20226cc
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37195834"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37537932"
 ---
 # <a name="manageddeviceenrollmentabandonmentsummary-function"></a>Функция Манажеддевицеенроллментабандонментсуммари
 
@@ -27,7 +27,7 @@ ms.locfileid: "37195834"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp;&nbsp; **Траублшутинг** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 | &nbsp;&nbsp; **Траублшутинг** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,7 +45,7 @@ GET /reports/managedDeviceEnrollmentAbandonmentSummary
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
@@ -82,6 +82,8 @@ Content-Length: 123
   }
 }
 ```
+
+
 
 
 

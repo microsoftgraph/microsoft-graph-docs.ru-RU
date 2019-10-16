@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ad7bf9d9066edb4e6494c39d72b8fa9f88788d81
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 491ba5621df06c42259724472fb095317fba3c41
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37179973"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37535830"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>Создание windowsAutopilotDeviceIdentity
 
@@ -27,7 +27,7 @@ ms.locfileid: "37179973"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -45,7 +45,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта windowsAutopilotDeviceIdentity в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании windowsAutopilotDeviceIdentity.
@@ -56,22 +56,22 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |деплойментпрофилеассигнментстатус|[виндовсаутопилотпрофилеассигнментстатус](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Состояние назначения профиля устройства автопилота Windows. Возможные значения: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
 |деплойментпрофилеассигнментдетаиледстатус|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Подробное состояние назначения профиля для устройства автопилота Windows. Возможные значения: `none`, `hardwareRequirementsNotMet`.|
 |деплойментпрофилеассигнеддатетиме|DateTimeOffset|Время настройки профиля для устройства автопилота Windows.|
-|orderIdentifier|String.|Идентификатор заказа устройства с автопилотом Windows — не является устаревшим|
-|грауптаг|String.|Тег Group для устройства автопилота Windows.|
-|пурчасеордеридентифиер|String.|Идентификатор заказа на покупку для устройства автопилота Windows.|
-|serialNumber|String.|Серийный номер устройства Windows Autopilot.|
+|orderIdentifier|String|Идентификатор заказа устройства с автопилотом Windows — не является устаревшим|
+|грауптаг|String|Тег Group для устройства автопилота Windows.|
+|пурчасеордеридентифиер|String|Идентификатор заказа на покупку для устройства автопилота Windows.|
+|serialNumber|String|Серийный номер устройства Windows Autopilot.|
 |productKey|Строка|Ключ продукта устройства Windows Autopilot.|
-|manufacturer|String.|OEM-производитель устройства автопилота Windows.|
-|model|String.|Имя модели для устройства автопилота Windows.|
+|manufacturer|String|OEM-производитель устройства автопилота Windows.|
+|model|String|Имя модели для устройства автопилота Windows.|
 |енроллментстате|[енроллментстате](../resources/intune-shared-enrollmentstate.md)|Состояние регистрации в Intune для устройства автопилота Windows. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |ластконтактеддатетиме|DateTimeOffset|Дата и время последнего обращения в Intune к устройству автопилота Windows.|
-|аддрессаблеусернаме|String.|Имя пользователя с адресом.|
+|аддрессаблеусернаме|String|Имя пользователя с адресом.|
 |userPrincipalName|String|Имя участника пользователя.|
 |resourceName|String|Имя ресурса.|
-|скунумбер|String.|Номер SKU|
-|системфамили|String.|Семейство системы|
-|Свойства azureactivedirectorydeviceid|String.|ИДЕНТИФИКАТОР устройства AAD|
-|манажеддевицеид|String.|Управляемый идентификатор устройства|
+|скунумбер|String|Номер SKU|
+|системфамили|String|Семейство системы|
+|Свойства azureactivedirectorydeviceid|String|ИДЕНТИФИКАТОР устройства AAD|
+|манажеддевицеид|String|Управляемый идентификатор устройства|
 
 
 
@@ -142,6 +142,8 @@ Content-Length: 1084
   "managedDeviceId": "Managed Device Id value"
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bde61142c5d8644ce12911249b17dd61b2c9c131
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 9688f0b4223fe0e1ec2e355c54f0efcbffdc2573
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37201209"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538723"
 ---
 # <a name="mobileapp-resource-type"></a>Тип ресурса mobileApp
 
@@ -30,7 +30,7 @@ ms.locfileid: "37201209"
 |[Функция getMobileAppCount](../api/intune-shared-mobileapp-getmobileappcount.md)|Int64|Пока не задокументировано.|
 |[Функция getTopMobileApps](../api/intune-shared-mobileapp-gettopmobileapps.md)|Коллекция [mobileApp](../resources/intune-shared-mobileapp.md)|Пока не задокументировано.|
 |[действие Упдатерелатионшипс](../api/intune-shared-mobileapp-updaterelationships.md)|Нет|Н/Д|
-|[Функция Жетрелатедаппстатес](../api/intune-shared-mobileapp-getrelatedappstates.md)|Коллекция Мобилеаппрелатионшипстате|Пока не задокументировано.|
+|[Функция Жетрелатедаппстатес](../api/intune-shared-mobileapp-getrelatedappstates.md)|Коллекция [мобилеаппрелатионшипстате](../resources/intune-apps-mobileapprelationshipstate.md)|Пока не задокументировано.|
 |**Набор политик**|
 |[действие Хаспайлоадлинкс](../api/intune-shared-mobileapp-haspayloadlinks.md)|Коллекция [хаспайлоадлинкресултитем](../resources/intune-policyset-haspayloadlinkresultitem.md)|Н/Д|
 
@@ -40,32 +40,32 @@ ms.locfileid: "37201209"
 |id|Строка|Ключ объекта.|
 |displayName|Строка|Администратор предоставил или импортировал название приложения.|
 |description|Строка|Описание приложения.|
-|publisher|String.|Издатель приложения.|
+|publisher|String|Издатель приложения.|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Большой значок, отображается в сведениях о приложении и используется для отправки значка.|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения приложения.|
 |isFeatured|Boolean|Значение, которое показывает, отмечено ли приложение как подобранное администратором.|
-|privacyInformationUrl|String.|URL-адрес заявления о конфиденциальности.|
-|informationUrl|String.|URL-адрес с дополнительными сведениями.|
+|privacyInformationUrl|String|URL-адрес заявления о конфиденциальности.|
+|informationUrl|String|URL-адрес с дополнительными сведениями.|
 |owner|String|Владелец приложения.|
-|developer|String.|Разработчик приложения.|
+|developer|String|Разработчик приложения.|
 |notes|String|Заметки для приложения.|
 |uploadState|Int32|Состояние отправки.|
-|publishingState|мобилеапппублишингстате|Состояние публикации для приложения. Приложение не может быть назначено, если оно не опубликовано. Возможные значения: `notPublished`, `processing`, `published`.|
+|publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение не может быть назначено, если оно не опубликовано. Возможные значения: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе.|
-|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения.|
+|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения.|
 |депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения.|
 
-## <a name="relationships"></a>Отношения
-|Отношение|Тип|Описание|
+## <a name="relationships"></a>Связи
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |**Приложения**|
-|categories|Коллекция mobileAppCategory|Список категорий для этого приложения.|
-|assignments|Коллекция mobileAppAssignment|Список назначений группы для этого мобильного приложения.|
-|installSummary|mobileAppInstallSummary|Общие сведения по установке мобильного приложения.|
-|deviceStatuses|Коллекция mobileAppInstallStatus|Список состояний установки для этого мобильного приложения.|
+|categories|Коллекция [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения.|
+|assignments|Коллекция [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md)|Список назначений группы для этого мобильного приложения.|
+|installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md);|Общие сведения по установке мобильного приложения.|
+|deviceStatuses|Коллекция [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Список состояний установки для этого мобильного приложения.|
 |userStatuses|Коллекция [усераппинсталлстатус](../resources/intune-apps-userappinstallstatus.md)|Список состояний установки для этого мобильного приложения.|
-|Таблица|Коллекция Мобилеаппрелатионшип|Список отношений для этого мобильного приложения.|
+|Таблица|Коллекция [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|Список отношений для этого мобильного приложения.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

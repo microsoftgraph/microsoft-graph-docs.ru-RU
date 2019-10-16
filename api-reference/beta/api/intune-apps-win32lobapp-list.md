@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1b7fee95a8bf7f15370f3b5a290e5cb4fcf0334f
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 76e89dcfc2c97d340de5bb1588addea7303c7682
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37172074"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37535116"
 ---
 # <a name="list-win32lobapps"></a>Список win32LobApps
 
@@ -27,7 +27,7 @@ ms.locfileid: "37172074"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ GET /deviceAppManagement/mobileApps
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3347
+Content-Length: 3390
 
 {
   "value": [
@@ -139,7 +139,8 @@ Content-Length: 3347
       ],
       "installExperience": {
         "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
-        "runAsAccount": "user"
+        "runAsAccount": "user",
+        "deviceRestartBehavior": "allow"
       },
       "returnCodes": [
         {
@@ -163,6 +164,8 @@ Content-Length: 3347
   ]
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e1ea2bee95be6e17adffb894b7cec3ac92e51c50
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 39ee98b3eba5cafed655cab168f6f419709597aa
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37194749"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37537122"
 ---
 # <a name="syncmicrosoftstoreforbusinessapps-action"></a>Действие syncMicrosoftStoreForBusinessApps
 
@@ -25,10 +25,10 @@ ms.locfileid: "37194749"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
-| &nbsp; &nbsp; **Входящая миграция** | |DeviceManagementApps.ReadWrite.All|
+| &nbsp; &nbsp; **Адаптация** | |DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
-| &nbsp; &nbsp; **Входящая миграция** | |DeviceManagementApps.ReadWrite.All|
+|Приложение||
+| &nbsp; &nbsp; **Адаптация** | |DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -45,7 +45,7 @@ POST /deviceAppManagement/syncMicrosoftStoreForBusinessApps
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -63,6 +63,8 @@ POST https://graph.microsoft.com/beta/deviceAppManagement/syncMicrosoftStoreForB
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

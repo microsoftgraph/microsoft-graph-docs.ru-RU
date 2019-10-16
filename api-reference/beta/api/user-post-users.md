@@ -5,19 +5,18 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4604fdf6bed68d378c7a3ab12f9fa126c1a37bcb
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 17a1f89c11386f48ac695bcc4b2b13ff5c68fb86
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37356812"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538440"
 ---
 # <a name="create-user"></a>Создание пользователя
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте нового [пользователя](../resources/user.md).
-В теле запроса указан пользователь, которого нужно создать. Вам нужно указать как минимум обязательные свойства для пользователя. При необходимости вы можете указать другие записываемые свойства.
+Создайте нового [пользователя](../resources/user.md). Текст запроса содержит пользователя, которого требуется создать. Как минимум, необходимо указать необходимые свойства для пользователя. При необходимости можно указать любые другие записываемые свойства.
 
 >[!NOTE]
 >Для создания внешних пользователей используйте [API приглашения](invitation-post.md).
@@ -164,7 +163,7 @@ Content-type: application/json
   "displayName": "John Smith",
   "identities": [
     {
-      "signInType": "signInName",
+      "signInType": "userName",
       "issuer": "contoso.onmicrosoft.com",
       "issuerAssignedId": "johnsmith"
     },

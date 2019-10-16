@@ -4,16 +4,16 @@ description: Описываются различия между ресурсам
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 23a27e80027e6c862c32648bb452770cf3e27b5c
-ms.sourcegitcommit: 23aa2941cfb8bd744d8d59e8bba9d2c5f57f8e29
+ms.openlocfilehash: 2f0db3f35286e800c32e36e0b6175a02a8119321
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "36667599"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538975"
 ---
 # <a name="resource-type-differences-between-azure-ad-graph-and-microsoft-graph"></a>Различия между типами ресурсов в Azure AD Graph и Microsoft Graph
 
-Эта статья входит в *Шаг 1: ознакомьтесь* с различиями в API [процесса переноса приложений](migrate-azure-ad-graph-planning-checklist.md).
+Эта статья входит в *Шаг 1: Ознакомьтесь с различиями* в API [процесса переноса приложений](migrate-azure-ad-graph-planning-checklist.md).
 
 При переносе приложений из Graph Azure AD в Microsoft Graph имейте в виду, что некоторые ресурсы имеют разные имена и типы.  Например, если приложение Azure AD Graph использует ресурс **тенантинфо** , вам потребуется обновить код, чтобы он ссылался на [организацию](/graph/api/resources/organization?view=graph-rest-1.0) .
 
@@ -25,32 +25,32 @@ ms.locfileid: "36667599"
 
 |Azure AD Graph <br>ресурс (v 1.6) |Microsoft Graph<br>resource|Comments|
 |---|---|---|
-| [Надстройк](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference)       | бета-версия _еще_ недоступна<br>Версия 1.0 _еще_ недоступна ||
-| [Application](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета-версия [приложения](/graph/api/resources/application?view=graph-rest-beta)<br>Версия 1.0 _еще_ недоступна ||
-| [аппроле](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [аппроле](/graph/api/resources/approle?view=graph-rest-beta)<br>Версия 1.0 _еще_ недоступна | |
-| [аппролеассигнмент](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета&nbsp;-&nbsp;-[аппролеассигнмент](/graph/api/resources/approleassignment?view=graph-rest-beta)<br>Версия 1.0 _еще_ недоступна | |
-| [цертификатеаусоритинформатион](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета&nbsp;-&nbsp;-[цертификатеаусорити](/graph/api/resources/certificateauthority?view=graph-rest-beta)<br>Версия 1.0&nbsp;-&nbsp;_еще_ недоступна | |
-| [Contact](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [orgContact](/graph/api/resources/orgContact?view=graph-rest-beta)<br>Версия 1.0 _еще_ недоступна | |
+| [Надстройк](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference)       | бета-версия _еще недоступна_<br>Версия 1.0 _еще недоступна_ ||
+| [Application](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета-версия [приложения](/graph/api/resources/application?view=graph-rest-beta)<br>Версия 1.0 _еще недоступна_ ||
+| [аппроле](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [аппроле](/graph/api/resources/approle?view=graph-rest-beta)<br>Версия 1.0 _еще недоступна_ | |
+| [аппролеассигнмент](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета&nbsp;-&nbsp;-[аппролеассигнмент](/graph/api/resources/approleassignment?view=graph-rest-beta)<br>Версия 1.0 _еще недоступна_ | |
+| [цертификатеаусоритинформатион](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета&nbsp;-&nbsp;-[цертификатеаусорити](/graph/api/resources/certificateauthority?view=graph-rest-beta)<br>Версия 1.0&nbsp;-&nbsp;[цертификатеаусорити](/graph/api/resources/certificateauthority?view=graph-rest-1.0) | |
+| [Contact](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [orgContact](/graph/api/resources/orgContact?view=graph-rest-beta)<br>Версия 1.0 _еще недоступна_ | |
 | [директорилинкчанже](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | _новый&nbsp;подход_ к бета-версии <br>v 1.0 — _новый&nbsp;подход_ | Запрос Delta поддерживает обнаружение изменений связи с механизмом, который не требует использования этого ресурса. Ознакомьтесь [с различиями между функциями Azure AD Graph и Microsoft Graph](migrate-azure-ad-graph-feature-differences.md). |
-| [кэйкредентиал](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference)| бета- [кэйкредентиал](/graph/api/resources/keyCredential?view=graph-rest-beta)<br>Версия 1.0 _еще_ недоступна | |
-| [Ключзначение](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [ключзначение](/graph/api/resources/keyValue?view=graph-rest-beta) <br> Версия 1.0 _еще_ недоступна ||
-| [OAuth2Permission](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [permissionScope](/graph/api/resources/permissionScope?view=graph-rest-beta) <br> Версия 1.0 _еще_ недоступна ||
-| [OAuth2PermissionGrant](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета&nbsp;-&nbsp;-[oAuth2PermissionGrant](/graph/api/resources/oAuth2PermissionGrant?view=graph-rest-beta) <br> Версия 1.0 _еще_ недоступна ||
-| [оптионалклаим](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета-Оптионалклаим <br> Версия 1.0 _еще_ недоступна | |
-| [оптионалклаимс](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета-Оптионалклаимс<br> Версия 1.0 _еще_ недоступна ||
-| [паренталконтролсеттингс](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [паренталконтролсеттингс](/graph/api/resources/parentalcontrolsettings?view=graph-rest-beta) <br> Версия 1.0 _еще_ недоступна ||
-| [пассвордкредентиал](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [пассвордкредентиал](/graph/api/resources/passwordCredential?view=graph-rest-beta) <br> Версия 1.0 _еще_ недоступна ||
+| [кэйкредентиал](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference)| бета- [кэйкредентиал](/graph/api/resources/keyCredential?view=graph-rest-beta)<br>Версия 1.0 _еще недоступна_ | |
+| [Ключзначение](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [ключзначение](/graph/api/resources/keyValue?view=graph-rest-beta) <br> Версия 1.0 _еще недоступна_ ||
+| [OAuth2Permission](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [permissionScope](/graph/api/resources/permissionScope?view=graph-rest-beta) <br> Версия 1.0 _еще недоступна_ ||
+| [OAuth2PermissionGrant](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета&nbsp;-&nbsp;-[oAuth2PermissionGrant](/graph/api/resources/oAuth2PermissionGrant?view=graph-rest-beta) <br> Версия 1.0 _еще недоступна_ ||
+| [оптионалклаим](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета-Оптионалклаим <br> Версия 1.0 _еще недоступна_ | |
+| [оптионалклаимс](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета-Оптионалклаимс<br> Версия 1.0 _еще недоступна_ ||
+| [паренталконтролсеттингс](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [паренталконтролсеттингс](/graph/api/resources/parentalcontrolsettings?view=graph-rest-beta) <br> Версия 1.0 _еще недоступна_ ||
+| [пассвордкредентиал](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [пассвордкредентиал](/graph/api/resources/passwordCredential?view=graph-rest-beta) <br> Версия 1.0 _еще недоступна_ ||
 | [PasswordProfile](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [passwordprofile необходима](/graph/api/resources/passwordProfile?view=graph-rest-beta) <br> Версия 1.0 — Passwordprofile необходима ||
-| [Политика](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [Политика](/graph/api/resources/parentalcontrolsettings?view=graph-rest-beta) _(подлежит изменению)_ <br> Версия 1.0 _еще_ недоступна | Каждая политика будет иметь уникальное имя типа и структуру.|
-| [провисионинжеррор](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета&nbsp;-&nbsp;-версия недоступна__ <br> Версия 1.0&nbsp;-&nbsp;__ недоступна | Этот ресурс устарел.  Однако новый ресурс, описывающий все ошибки подготовки AD Connect, можно найти в [onPremisesProvisioningError](/graph/api/resources/onPremisesProvisioningError?view=graph-rest-v1.0). |
-| [рекуиредресаурцеакцесс](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [рекуиредресаурцеакцесс](/graph/api/resources/requiredResourceAccess?view=graph-rest-beta) <br> Версия 1.0 _еще_ недоступна | |
-| [ресаурцеакцесс](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [ресаурцеакцесс](/graph/api/resources/resourceAccess?view=graph-rest-beta) <br> Версия 1.0 _еще_ недоступна | |
-| [сервицеендпоинт](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [Конечная точка](/graph/api/resources/endpoint?view=graph-rest-beta) <br> Версия 1.0 — конечная точка _пока_ недоступна | [Конечная точка](/graph/api/resources/endpoint?view=graph-rest-beta) доступна только в составе ресурса [Group](/graph/api/resources/group?view=graph-rest-beta) .|
-| [ServicePrincipal](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) <br> Версия 1.0 _еще_ недоступна | |
-| [сигниннаме](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета-версия _еще_ недоступна <br> Версия 1.0 _еще_ недоступна | Создание модели для идентификаторов, используемых для входа в учетную запись пользователя, которая называется **идентитйобжект**, но пока недоступна. Поддерживает сценарии B2C для Azure AD. |
+| [Политика](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [Политика](/graph/api/resources/parentalcontrolsettings?view=graph-rest-beta) _(подлежит изменению)_ <br> Версия 1.0 _еще недоступна_ | Каждая политика будет иметь уникальное имя типа и структуру.|
+| [провисионинжеррор](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета&nbsp;-&nbsp;-версия_недоступна_ <br> Версия 1.0&nbsp;-&nbsp;_недоступна_ | Этот ресурс устарел.  Однако новый ресурс, описывающий все ошибки подготовки AD Connect, можно найти в [onPremisesProvisioningError](/graph/api/resources/onPremisesProvisioningError?view=graph-rest-v1.0). |
+| [рекуиредресаурцеакцесс](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [рекуиредресаурцеакцесс](/graph/api/resources/requiredResourceAccess?view=graph-rest-beta) <br> Версия 1.0 _еще недоступна_ | |
+| [ресаурцеакцесс](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [ресаурцеакцесс](/graph/api/resources/resourceAccess?view=graph-rest-beta) <br> Версия 1.0 _еще недоступна_ | |
+| [сервицеендпоинт](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [Конечная точка](/graph/api/resources/endpoint?view=graph-rest-beta) <br> Версия 1.0 — конечная точка _пока недоступна_ | [Конечная точка](/graph/api/resources/endpoint?view=graph-rest-beta) доступна только в составе ресурса [Group](/graph/api/resources/group?view=graph-rest-beta) .|
+| [ServicePrincipal](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) <br> Версия 1.0 _еще недоступна_ | |
+| [сигниннаме](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета-версия _еще недоступна_ <br> Версия 1.0 _еще недоступна_ | Создание модели для идентификаторов, используемых для входа в учетную запись пользователя, которая называется **идентитйобжект**, но пока недоступна. Поддерживает сценарии B2C для Azure AD. |
 | [тенантдетаил](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [Организация](/graph/api/resources/organization?view=graph-rest-beta) <br> v 1.0 — [Организация](/graph/api/resources/organization?view=graph-rest-v1.0) | |
-| [трустедкасфорпассвордаус](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета&nbsp;-&nbsp;-[цертификатебаседаусконфигуратион](/graph/api/resources/certificatebasedcuthconfiguration?view=graph-rest-beta) <br> Версия 1.0 _еще_ недоступна | |
-| [UserIdentity](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета-версия _еще_ недоступна <br> Версия 1.0 _еще_ недоступна |  Создание модели для идентификаторов, используемых для входа в учетную запись пользователя, которая называется **идентитйобжект**, но пока недоступна. Поддерживает сценарии B2C для Azure AD. |
+| [трустедкасфорпассвордаус](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета&nbsp;-&nbsp;-[цертификатебаседаусконфигуратион](/graph/api/resources/certificatebasedcuthconfiguration?view=graph-rest-beta) <br> Версия 1.0 — [цертификатебаседаусконфигуратион](/graph/api/resources/certificatebasedcuthconfiguration?view=graph-rest-1.0) | |
+| [UserIdentity](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета-версия _еще недоступна_ <br> Версия 1.0 _еще недоступна_ |  Создание модели для идентификаторов, используемых для входа в учетную запись пользователя, которая называется **идентитйобжект**, но пока недоступна. Поддерживает сценарии B2C для Azure AD. |
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

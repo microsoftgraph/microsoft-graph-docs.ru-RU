@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 74e4ba67890698374b07e13f955aefb80ecf874e
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: b9a5b072c5aa71da4038b66597eae5d796b14d0d
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196324"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37539164"
 ---
 # <a name="deviceappmanagement-resource-type"></a>Тип ресурса deviceAppManagement
 
@@ -25,22 +25,22 @@ ms.locfileid: "37196324"
 |:---|:---|:---|
 |[Получение объекта deviceAppManagement](../api/intune-shared-deviceappmanagement-get.md)|Чтение свойств и связей объекта [deviceAppManagement](../resources/intune-shared-deviceappmanagement.md).|
 |[Обновление объекта deviceAppManagement](../api/intune-shared-deviceappmanagement-update.md)|Обновление свойств объекта [deviceAppManagement](../resources/intune-shared-deviceappmanagement.md).|
-|**Входящая миграция**|
+|**Адаптация**|
 |[Действие syncMicrosoftStoreForBusinessApps](../api/intune-shared-deviceappmanagement-syncmicrosoftstoreforbusinessapps.md)|Нет|Синхронизирует учетную запись Intune с Microsoft Store для бизнеса|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|**Входящая миграция**|
+|**Адаптация**|
 |isEnabledForMicrosoftStoreForBusiness|Boolean|Указывает, включена ли для учетной запись синхронизация приложений из Microsoft Store для бизнеса.|
 |microsoftStoreForBusinessLanguage|String|Сведения о языковом стандарте, используемом для синхронизации приложений из Microsoft Store для бизнеса. Региональные параметры, относящиеся к стране или региону. Названия этих региональных параметров соответствуют стандарту RFC 4646 (для Windows Vista и более поздних версий). Используется формат <languagecode2>-<страна/код_региона2>, где <languagecode2> — это двухбуквенный код в нижнем регистре, полученный из стандарта ISO 639-1, а <страна/код_регион2> — код из двух прописных букв по стандарту ISO 3166. Например, en-US для английского (США) — это определенный региональный стандарт.|
 |microsoftStoreForBusinessLastCompletedApplicationSyncTime|DateTimeOffset|Время последней завершенной синхронизации приложений из Microsoft Store для бизнеса.|
 |microsoftStoreForBusinessLastSuccessfulSyncDateTime|DateTimeOffset|Время последней успешной синхронизации приложений из Microsoft Store для бизнеса с учетной записью.|
 |микрософтсторефорбусинесспорталселектион|[microsoftStoreForBusinessPortalSelectionOptions](../resources/intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)|Сведения о портале конечного пользователя используются для синхронизации приложений из Microsoft Store для бизнеса и портала компании Intune. Выбрать можно три варианта: \["только корпоративный портал", "Корпоративный портал и частный магазин", "только частный магазин".\] Возможные значения: `none`, `companyPortal`, `privateStore`.|
 
-## <a name="relationships"></a>Отношения
-|Отношение|Тип|Описание|
+## <a name="relationships"></a>Связи
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |**Приложения**|
 |enterpriseCodeSigningCertificates|Коллекция [ентерприсекодесигнингцертификате](../resources/intune-apps-enterprisecodesigningcertificate.md)|Сертификат для подписи кода предприятия Windows.|
@@ -64,20 +64,21 @@ ms.locfileid: "37196324"
 |mdmWindowsInformationProtectionPolicies|Коллекция [mdmWindowsInformationProtectionPolicy](../resources/intune-shared-mdmwindowsinformationprotectionpolicy.md)|Windows Information Protection для приложений на устройствах, зарегистрированных с использованием MDM.|
 |targetedManagedAppConfigurations|Коллекция [targetedManagedAppConfiguration](../resources/intune-shared-targetedmanagedappconfiguration.md)|Целевые конфигурации управляемых приложений.|
 |windowsInformationProtectionPolicies|Коллекция [windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md)|Windows Information Protection для приложений на устройствах, не зарегистрированных с использованием MDM.|
-|**Входящая миграция**|
+|**Адаптация**|
 |sideLoadingKeys|Коллекция [сиделоадингкэй](../resources/intune-onboarding-sideloadingkey.md)|Ключи загрузки на стороне, необходимые для установки приложений для Windows 8 и 8,1.|
 |VPP токены|[vpp Токен](../resources/intune-onboarding-vpptoken.md) коллекция|Список Vpp маркеров для данной организации.|
 |**Набор политик**|
 |полицисетс|Коллекция набора [политик](../resources/intune-policyset-policyset.md)|Набор политик политик и приложений|
 |mobileApps|Коллекция [mobileApp](../resources/intune-shared-mobileapp.md)|Мобильные приложения.|
 |targetedManagedAppConfigurations|Коллекция [targetedManagedAppConfiguration](../resources/intune-shared-targetedmanagedappconfiguration.md)|Целевые конфигурации управляемых приложений.|
-|макманажедапппротектионс|Коллекция [макманажедапппротектион](../resources/intune-policyset-macmanagedappprotection.md)|Политики управляемых приложений Mac.|
 |androidManagedAppProtections|Коллекция [androidManagedAppProtection](../resources/intune-shared-androidmanagedappprotection.md)|Политики управляемых приложений для Android.|
 |iosManagedAppProtections|Коллекция [iosManagedAppProtection](../resources/intune-shared-iosmanagedappprotection.md)|Политики управляемых приложений для iOS.|
 |mdmWindowsInformationProtectionPolicies|Коллекция [mdmWindowsInformationProtectionPolicy](../resources/intune-shared-mdmwindowsinformationprotectionpolicy.md)|Windows Information Protection для приложений на устройствах, зарегистрированных с использованием MDM.|
 |iosLobAppProvisioningConfigurations|Коллекция [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md)|Конфигурации подготовки бизнес-приложений IOS.|
 |**Интеграция партнеров**|
 |девицеаппманажементтаскс|Коллекция [девицеаппманажементтаск](../resources/intune-partnerintegration-deviceappmanagementtask.md)|Задачи управления приложениями для устройств.|
+|**Unlock**|
+|вдаксупплементалполиЦиес|Коллекция [виндовсдефендераппликатионконтролсупплементалполици](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)|Коллекция дополнительных политик для управления приложением защитника Windows.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.  Обратите внимание, что это пример; Ответы на запросы к реальным запросам будут содержать свойства, подходящие для контекста.  

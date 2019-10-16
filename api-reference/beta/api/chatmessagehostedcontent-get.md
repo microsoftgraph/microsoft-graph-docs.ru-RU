@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e911091bb4e1b5cd3179f781dd0d2f326f121a3d
-ms.sourcegitcommit: e4b0211db9b20dfea8be964003661cd99fe064d1
+ms.openlocfilehash: bdeeb14eff0adf31fefe757cee646d61727f12dd
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37439865"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37535627"
 ---
 # <a name="get-chatmessagehostedcontent"></a>Получение Чатмессажехостедконтент
 
@@ -24,12 +24,12 @@ ms.locfileid: "37439865"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|Для ресурса **User** или **Chat** :<br/>Чат. Read, Chat. ReadWrite<br/><br/>Для ресурса **Channel** :<br/>Group.Read.All, Group.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|Для ресурса **user** или **chat**:<br/>Chat.Read, Chat.ReadWrite<br/><br/>Для ресурса **channel**:<br/>Group.Read.All, Group.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений| Для ресурса **User** или **Chat** :<br/>Чат. Read. ALL, Chat. ReadWrite. ALL<br/><br/>Для ресурса **Channel** :<br/>Group.Read.All, Group.ReadWrite.All |
+|Приложение| Для ресурса **user** или **chat**:<br/>Chat.Read.All, Chat.ReadWrite.All<br/><br/>Для ресурса **channel**:<br/>Group.Read.All, Group.ReadWrite.All |
 
 > [!NOTE]
-> Перед вызовом этого API с разрешениями для приложений необходимо запросить доступ. Дополнительные сведения см [в разделе protected API в Microsoft Teams](/graph/teams-protected-apis).
+> Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -122,7 +122,7 @@ Content-type: application/json
   "blockType": "request",
   "name": "get_chatmessagehostedcontent"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents/{id}/$value
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

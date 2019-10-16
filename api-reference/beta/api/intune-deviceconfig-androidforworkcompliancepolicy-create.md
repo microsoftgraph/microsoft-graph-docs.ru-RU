@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1c6b85ad1e616f1e58c9c8bd907461525811142e
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 62628388daddfa711ef14dddefe4225d4909a3c3
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37169624"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37534682"
 ---
 # <a name="create-androidforworkcompliancepolicy"></a>Создание androidForWorkCompliancePolicy
 
@@ -27,7 +27,7 @@ ms.locfileid: "37169624"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,14 +44,14 @@ POST /deviceManagement/deviceCompliancePolicies
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта androidForWorkCompliancePolicy в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании androidForWorkCompliancePolicy.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |id|Строка|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
@@ -65,20 +65,20 @@ POST /deviceManagement/deviceCompliancePolicies
 |passwordExpirationDays|Int32|Количество дней до окончания срока действия пароля. Допустимые значения: от 1 до 365.|
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, которые требуется блокировать. Допустимые значения: от 1 до 24.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Количество неудачных попыток входа, допустимых до сброса заводских настроек. Допустимые значения — от 1 до 16.|
-|securityPreventInstallAppsFromUnknownSources|Boolean.|Указывает, что для устройств требуется запретить установку приложений из неизвестных источников.|
-|securityDisableUsbDebugging|Boolean.|Запрещает USB-отладку на устройствах с Android.|
-|securityRequireVerifyApps|Boolean.|Указывает, что требуется включить функцию проверки приложений для Android.|
-|deviceThreatProtectionEnabled|Boolean.|Указывает, что защита от угроз для устройств должна быть включена.|
+|securityPreventInstallAppsFromUnknownSources|Логический|Указывает, что для устройств требуется запретить установку приложений из неизвестных источников.|
+|securityDisableUsbDebugging|Логический|Запрещает USB-отладку на устройствах с Android.|
+|securityRequireVerifyApps|Логический|Указывает, что требуется включить функцию проверки приложений для Android.|
+|deviceThreatProtectionEnabled|Логический|Указывает, что защита от угроз для устройств должна быть включена.|
 |deviceThreatProtectionRequiredSecurityLevel|[девицесреатпротектионлевел](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Указывает на то, что на уровне минимального риска, определенного в Mobile Threat Protection, нужно сообщать о несоответствии требованиям. Возможные значения: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
-|securityBlockJailbrokenDevices|Boolean.|Устройства нельзя взламывать и рутовать.|
-|osMinimumVersion|String.|Минимальная версия Android.|
-|osMaximumVersion|String.|Максимальная версия Android.|
+|securityBlockJailbrokenDevices|Логический|Устройства нельзя взламывать и рутовать.|
+|osMinimumVersion|String|Минимальная версия Android.|
+|osMaximumVersion|String|Максимальная версия Android.|
 |minAndroidSecurityPatchLevel|String|Минимальный уровень обновления для системы безопасности Android.|
-|storageRequireEncryption|Boolean.|Указывает, что шифрование на устройствах с Android должно быть обязательным.|
-|securityRequireSafetyNetAttestationBasicIntegrity|Boolean.|Указывает, что устройству требуется пройти базовую проверку целостности SafetyNet.|
-|securityRequireSafetyNetAttestationCertifiedDevice|Boolean.|Указывает, что устройству требуется пройти проверку сертификата SafetyNet.|
+|storageRequireEncryption|Логический|Указывает, что шифрование на устройствах с Android должно быть обязательным.|
+|securityRequireSafetyNetAttestationBasicIntegrity|Логический|Указывает, что устройству требуется пройти базовую проверку целостности SafetyNet.|
+|securityRequireSafetyNetAttestationCertifiedDevice|Логический|Указывает, что устройству требуется пройти проверку сертификата SafetyNet.|
 |securityRequireGooglePlayServices|Boolean|Указывает, что на устройстве требуется установить и включить Сервисы Google Play.|
-|securityRequireUpToDateSecurityProviders|Boolean.|Указывает, что на устройстве требуется использовать обновленных поставщиков безопасности. Указывает, что устройству требуется включить и обновлять Сервисы Google Play.|
+|securityRequireUpToDateSecurityProviders|Логический|Указывает, что на устройстве требуется использовать обновленных поставщиков безопасности. Указывает, что устройству требуется включить и обновлять Сервисы Google Play.|
 |securityRequireCompanyPortalAppIntegrity|Boolean|Указывает, обязательна ли проверка целостности среды выполнения в клиентском приложении "Корпоративный портал".|
 
 
@@ -170,6 +170,8 @@ Content-Length: 1455
   "securityRequireCompanyPortalAppIntegrity": true
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 749dd91fb22fe9465599e6ec32070f3adfb0f5e8
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: e80069c3c2b8a7068c16f2c919c9e1e367e5a161
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37174251"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37535571"
 ---
 # <a name="create-androiddeviceownerenrollmentprofile"></a>Создание Андроиддевицеовнеренроллментпрофиле
 
@@ -27,7 +27,7 @@ ms.locfileid: "37174251"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,26 +44,26 @@ POST /deviceManagement/androidDeviceOwnerEnrollmentProfiles
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Андроиддевицеовнеренроллментпрофиле в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Андроиддевицеовнеренроллментпрофиле.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|accountId|String.|GUID клиента, которому принадлежит профиль регистрации.|
+|accountId|String|GUID клиента, которому принадлежит профиль регистрации.|
 |id|Строка|Уникальный GUID профиля регистрации.|
 |displayName|Строка|Отображаемое имя для профиля регистрации.|
 |description|String|Описание профиля регистрации.|
 |createdDateTime|DateTimeOffset|Дата и время создания профиля регистрации.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения профиля регистрации.|
-|tokenValue|String.|Значение последнего созданного маркера для этого профиля регистрации.|
+|tokenValue|String|Значение последнего созданного маркера для этого профиля регистрации.|
 |токенкреатиондатетиме|DateTimeOffset|Дата и время создания последнего созданного маркера.|
 |tokenExpirationDateTime|DateTimeOffset|Дата и время, когда истекает срок действия последнего созданного маркера.|
 |enrolledDeviceCount|Int32|Общее количество устройств с Android, зарегистрированных через этот профиль регистрации.|
 |qrCodeContent|String|Строка, используемая для создания QR-кода маркера.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Строка, используемая для создания QR-кода маркера.|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности.|
 
 
 
@@ -130,7 +130,6 @@ Content-Length: 799
   ]
 }
 ```
-
 
 
 

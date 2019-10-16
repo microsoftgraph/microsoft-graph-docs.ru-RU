@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 43193d8bac87dff093435c5961b29fa28e723bb6
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 96014ec1d36d87752aa2a26f5542be633a85638d
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37190077"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37537638"
 ---
 # <a name="update-windows10enrollmentcompletionpageconfiguration"></a>Обновление windows10EnrollmentCompletionPageConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "37190077"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md).
@@ -58,16 +58,16 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 |createdDateTime|DateTimeOffset|Созданная Дата и время в формате UTC для настройки регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |version|Int32|Версия конфигурации регистрации устройств, унаследованная от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|шовинсталлатионпрогресс|Boolean.|Отображение или скрытие хода установки для пользователя|
-|блоккдевицесетупретрибюсер|Boolean.|Разрешить пользователю повторно выполнить установку при сбое установки|
-|алловдевицересетонинсталлфаилуре|Boolean.|Разрешение или блокировка сброса устройства при сбое установки|
-|алловлогколлектиононинсталлфаилуре|Boolean.|Разрешение или блокировка сбора журналов при сбое установки|
-|кустомеррормессаже|String.|Задать настраиваемое сообщение об ошибке, которое будет отображаться после сбоя установки|
+|шовинсталлатионпрогресс|Логический|Отображение или скрытие хода установки для пользователя|
+|блоккдевицесетупретрибюсер|Логический|Разрешить пользователю повторно выполнить установку при сбое установки|
+|алловдевицересетонинсталлфаилуре|Логический|Разрешение или блокировка сброса устройства при сбое установки|
+|алловлогколлектиононинсталлфаилуре|Логический|Разрешение или блокировка сбора журналов при сбое установки|
+|кустомеррормессаже|String|Задать настраиваемое сообщение об ошибке, которое будет отображаться после сбоя установки|
 |инсталлпрогресстимеаутинминутес|Int32|Задать время ожидания установки (в минутах)|
-|алловдевицеусеонинсталлфаилуре|Boolean.|Разрешить пользователю продолжать использовать устройство при сбое установки|
-|селектедмобилеаппидс|Коллекция строк|Выбранные приложения для отслеживания состояния установки|
-|траккинсталлпрогрессфораутопилотонли|Boolean.|Показывать только ход выполнения установки для сценариев автоматической пилотной установки|
-|дисаблеусерстатустраккингафтерфирстусер|Boolean.|Показывать только сведения о ходе установки для первой процедуры регистрации пользователя|
+|алловдевицеусеонинсталлфаилуре|Логический|Разрешить пользователю продолжать использовать устройство при сбое установки|
+|селектедмобилеаппидс|Коллекция String|Выбранные приложения для отслеживания состояния установки|
+|траккинсталлпрогрессфораутопилотонли|Логический|Показывать только ход выполнения установки для сценариев автоматической пилотной установки|
+|дисаблеусерстатустраккингафтерфирстусер|Логический|Показывать только сведения о ходе установки для первой процедуры регистрации пользователя|
 
 
 
@@ -134,6 +134,8 @@ Content-Length: 856
   "disableUserStatusTrackingAfterFirstUser": true
 }
 ```
+
+
 
 
 

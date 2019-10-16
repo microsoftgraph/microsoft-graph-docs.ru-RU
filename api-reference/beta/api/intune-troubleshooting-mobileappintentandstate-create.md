@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 143c3e9195be68e842e59ea600bfebe7515eb8aa
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: f831181fed06b195d3232bbb9e9ae41c5a046c12
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37195358"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37537701"
 ---
 # <a name="create-mobileappintentandstate"></a>Создание Мобилеаппинтентандстате
 
@@ -27,7 +27,7 @@ ms.locfileid: "37195358"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ POST /users/{usersId}/mobileAppIntentAndStates
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Мобилеаппинтентандстате в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Мобилеаппинтентандстате.
@@ -127,6 +127,8 @@ Content-Length: 880
   ]
 }
 ```
+
+
 
 
 

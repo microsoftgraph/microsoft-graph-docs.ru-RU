@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b5b1bb91c5d8eac8405dfa96a19121ed417abb2c
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: d7e49c1da6f3a976480df1c0f788b9bc3acfde39
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37201162"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37537995"
 ---
 # <a name="gettopmobileapps-function"></a>Функция getTopMobileApps
 
@@ -28,7 +28,7 @@ ms.locfileid: "37201162"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp;&nbsp; **Приложения** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 | &nbsp;&nbsp; **Приложения** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -46,7 +46,7 @@ GET /deviceAppManagement/mobileApps/getTopMobileApps
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
@@ -107,6 +107,8 @@ Content-Length: 1013
   ]
 }
 ```
+
+
 
 
 

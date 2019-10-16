@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 32486f9fd46d205b6caa3e2466afae0ff876a17e
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 1dad195bb11ee45f30b18b99b169bd7322802538
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37185541"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536085"
 ---
 # <a name="get-depenrollmentbaseprofile"></a>Получение Депенроллментбасепрофиле
 
@@ -27,7 +27,7 @@ ms.locfileid: "37185541"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -47,7 +47,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentP
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{dep
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1175
+Content-Length: 1209
 
 {
   "value": {
@@ -97,10 +97,13 @@ Content-Length: 1175
     "displayToneSetupDisabled": true,
     "privacyPaneDisabled": true,
     "screenTimeScreenDisabled": true,
-    "deviceNameTemplate": "Device Name Template value"
+    "deviceNameTemplate": "Device Name Template value",
+    "configurationWebUrl": true
   }
 }
 ```
+
+
 
 
 

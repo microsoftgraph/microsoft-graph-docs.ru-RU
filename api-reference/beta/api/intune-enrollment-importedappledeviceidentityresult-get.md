@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4dd7c13b4873dfb668743040332fc5d9890e1669
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 979084066ec76a9cdac3f94bff38317d414d1b2d
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37185016"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37535907"
 ---
 # <a name="get-importedappledeviceidentityresult"></a>Получение Импортедаппледевицеидентитиресулт
 
@@ -27,7 +27,7 @@ ms.locfileid: "37185016"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -47,7 +47,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedApp
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{dep
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 675
+Content-Length: 699
 
 {
   "value": {
@@ -77,6 +77,7 @@ Content-Length: 675
     "requestedEnrollmentProfileAssignmentDateTime": "2017-01-01T00:02:32.8167841-08:00",
     "isSupervised": true,
     "discoverySource": "adminImport",
+    "isDeleted": true,
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
     "description": "Description value",
@@ -86,6 +87,8 @@ Content-Length: 675
   }
 }
 ```
+
+
 
 
 

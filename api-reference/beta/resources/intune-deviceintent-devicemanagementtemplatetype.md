@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 496baf5c72d7bbe9a099b5c0e3b01f855a748348
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: d86e9c10c0049f0835a8d4a6a73a171a3fa3989c
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37197087"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538492"
 ---
 # <a name="devicemanagementtemplatetype-enum-type"></a>тип перечисления Девицеманажементтемплатетипе
 
@@ -25,10 +25,12 @@ ms.locfileid: "37197087"
 |:---|:---|:---|
 |секуритибаселине|нуль|Шаблон базового плана безопасности|
 |спеЦиализеддевицес|1,1|Шаблон специализированных устройств|
-|адванцедсреатпротектионсекуритибаселине|2|Переносится в базовый шаблон безопасности для защиты от угроз|
+|адванцедсреатпротектионсекуритибаселине|2|Основной шаблон безопасности Advanced Threat protection|
 |deviceConfiguration|4|Шаблон конфигурации устройства|
-|собственный|SP4|Настраиваемый шаблон, определенный администратором|
-|секурититемплате|17:00|Шаблоны с определенными параметрами безопасности|
+|собственный|4 |Настраиваемый шаблон, определенный администратором|
+|секурититемплате|5 |Шаблоны с определенными параметрами безопасности|
+|микрософтеджесекуритибаселине|6 |Базовый шаблон безопасности Microsoft Edge|
+|microsoftOffice365ProPlusSecurityBaseline|7 |Базовый шаблон безопасности Microsoft Office 365 профессиональный плюс|
 
 
 

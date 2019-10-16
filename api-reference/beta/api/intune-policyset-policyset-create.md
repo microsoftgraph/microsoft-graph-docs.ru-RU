@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9774bb5f81f7d114b5f1ff1031138f922460027e
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: e085eb0ae86d6a93895b4c88d17664abc84536ee
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37192653"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37537403"
 ---
 # <a name="create-policyset"></a>Создание политики
 
@@ -27,7 +27,7 @@ ms.locfileid: "37192653"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ POST /deviceAppManagement/policySets
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Policy в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании этого параметра.
@@ -56,10 +56,10 @@ POST /deviceAppManagement/policySets
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения набора политик.|
 |displayName|Строка|DisplayName набора политик.|
 |description|String|Описание набора политик.|
-|status|[полицисетстатус](../resources/intune-policyset-policysetstatus.md)|Состояние проверки или назначения набора политик. Возможные значения: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
-|errorCode|[Коде](../resources/intune-policyset-errorcode.md)|Код ошибки (при возникновении ошибки). Возможные значения: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|гуидеддеплойменттагс|Коллекция строк|Теги в руководстве по развертыванию|
-|roleScopeTags|Коллекция строк|RoleScopeTags набора политик|
+|status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Состояние проверки или назначения набора политик. Возможные значения: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
+|errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Код ошибки (при возникновении ошибки). Возможные значения: `noError`, `unauthorized`, `notFound`, `deleted`.|
+|гуидеддеплойменттагс|Коллекция String|Теги в руководстве по развертыванию|
+|roleScopeTags|Коллекция String|RoleScopeTags набора политик|
 
 
 
@@ -114,6 +114,8 @@ Content-Length: 489
   ]
 }
 ```
+
+
 
 
 

@@ -4,12 +4,12 @@ description: Список API Microsoft Graph для конечных точек
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 9191d6552f2e93850fce126a5ea90d1f7bba88c7
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 5d684352b1b910b7b340e7eb319178fc1666a5ef
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37198966"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538618"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
@@ -54,9 +54,9 @@ ms.locfileid: "37198966"
 - [Состояние защиты на основе виртуализации Device Guard](intune-devices-deviceguardvirtualizationbasedsecuritystate.md)
 - [Состояние подтверждения работоспособности устройства](intune-devices-devicehealthattestationstate.md)
 - [Сценарий работоспособности устройства](intune-devices-devicehealthscript.md)
-- [Правило соответствия требованиям к сценариям исправности устройств](intune-devices-devicehealthscriptcompliancerule.md)
-- [Оператор правила соответствия скриптам проверки работоспособности устройства](intune-devices-devicehealthscriptcomplianceruleoperator.md)
-- [Тип определения сценария работоспособности устройства](intune-devices-devicehealthscriptdetectiontype.md)
+- [Назначение сценария работоспособности устройства](intune-devices-devicehealthscriptassignment.md)
+- [Состояние устройства сценария работоспособности устройства](intune-devices-devicehealthscriptdevicestate.md)
+- [Сводка по запуску сценария работоспособности устройства](intune-devices-devicehealthscriptrunsummary.md)
 - [Определение абстрактного сложного параметра управления устройствами](intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md)
 - [Экземпляр абстрактного сложного параметра управления устройствами](intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)
 - [Событие автопилота управления устройствами](intune-troubleshooting-devicemanagementautopilotevent.md)
@@ -108,6 +108,7 @@ ms.locfileid: "37198966"
 - [Сводка по операционной системе устройства](intune-devices-deviceoperatingsystemsummary.md)
 - [Обзор защиты устройств](intune-devices-deviceprotectionoverview.md)
 - [Состояние регистрации устройства](intune-devices-deviceregistrationstate.md)
+- [Тип диска](intune-devices-disktype.md)
 - [Код активации внедрения SIM-карты](intune-esim-embeddedsimactivationcode.md)
 - [Пул кода активации внедрения SIM-карты](intune-esim-embeddedsimactivationcodepool.md)
 - [Назначение пула кода активации внедрения SIM-карты](intune-esim-embeddedsimactivationcodepoolassignment.md)
@@ -156,6 +157,7 @@ ms.locfileid: "37198966"
 - [Параметры фирменной символики для шаблона уведомления](intune-notification-notificationtemplatebrandingoptions.md)
 - [Счетчик версии ОС](intune-devices-osversioncount.md)
 - [Тип владельца](intune-devices-ownertype.md)
+- [Состояние исправления](intune-devices-remediationstate.md)
 - [Удаленное действие](intune-devices-remoteaction.md)
 - [Аудит удаленных действий](intune-devices-remoteactionaudit.md)
 - [Состояние подключения удаленного помощника](intune-remoteassistance-remoteassistanceonboardingstatus.md)
@@ -164,6 +166,7 @@ ms.locfileid: "37198966"
 - [Результат действия "Сброс секретного кода"](intune-devices-resetpasscodeactionresult.md)
 - [Результат действия "Отзыв VPP-лицензий Apple "](intune-devices-revokeapplevpplicensesactionresult.md)
 - [Расписание запуска](intune-devices-runschedule.md)
+- [Сведения о теге области](intune-auditing-scopetaginfo.md)
 - [Сводка по состоянию категории базовых показателей безопасности](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [Состояние соответствия требованиям базового плана безопасности](intune-deviceintent-securitybaselinecompliancestate.md)
 - [Состояние устройства базового плана безопасности](intune-deviceintent-securitybaselinedevicestate.md)
@@ -175,12 +178,16 @@ ms.locfileid: "37198966"
 - [Параметр действия "Обновление учетной записи устройства с Windows"](intune-devices-updatewindowsdeviceaccountactionparameter.md)
 - [Базовый шаблон аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsbaseline.md)
 - [Категория анализа взаимодействия с пользователем](intune-devices-userexperienceanalyticscategory.md)
+- [Производительность устройства аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsdeviceperformance.md)
+- [Журнал запуска устройства Analytics User Experience](intune-devices-userexperienceanalyticsdevicestartuphistory.md)
 - [Состояние работоспособности службы аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticshealthstate.md)
 - [Аналитика взаимодействия с пользователем](intune-devices-userexperienceanalyticsinsight.md)
 - [Серьезность аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsinsightseverity.md)
 - [Сведения об аналитическом значении аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsinsightvalue.md)
 - [Метрика аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsmetric.md)
 - [Обзор анализа пользовательского интерфейса](intune-devices-userexperienceanalyticsoverview.md)
+- [Сводка по регрессии аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsregressionsummary.md)
+- [Анализ взаимодействия с пользователем, собранный по](intune-devices-userexperienceanalyticssummarizedby.md)
 - [Выражение условия переменного управления](intune-fencing-variablemanagementconditionexpression.md)
 - [Состояние развертывания Windows для автопилота](intune-troubleshooting-windowsautopilotdeploymentstate.md)
 - [Тип регистрации для автоматического развертывания Windows](intune-troubleshooting-windowsautopilotenrollmenttype.md)

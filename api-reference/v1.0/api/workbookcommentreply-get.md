@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5f206c5dccfce10aa855a0fdff922182ecd8fba7
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+ms.openlocfilehash: 20ebf0318dd1d66744551ca93fb7cd1ed28a4c27
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36839012"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37539269"
 ---
 # <a name="get-workbookcommentreply"></a>Получение Воркбуккомментрепли
 
@@ -40,11 +40,11 @@ GET /workbook/comments/{id}/replies/{id}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [воркбуккомментрепли](../resources/workbookcommentreply.md) в тексте отклика.
 
@@ -60,7 +60,7 @@ GET /workbook/comments/{id}/replies/{id}
   "name": "get_workbookcommentreply"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/drive/root/workbook/comments/{id}/replies/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -71,7 +71,7 @@ GET https://graph.microsoft.com/v1.0/drive/root/workbook/comments/{id}/replies/{
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-workbookcommentreply-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-workbookcommentreply-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

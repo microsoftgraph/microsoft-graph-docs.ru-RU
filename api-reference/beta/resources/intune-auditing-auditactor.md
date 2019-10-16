@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 87cb4219df0d1b6026bee774576324eac7255377
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5fdb804dc293214fbcd7d937adb9ebdf959ea5fa
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335251"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538520"
 ---
 # <a name="auditactor-resource-type"></a>Тип ресурса auditActor
 
@@ -31,8 +31,9 @@ ms.locfileid: "36335251"
 |servicePrincipalName|String|Имя субъекта-службы (SPN).|
 |ipAddress|String|IP-адрес.|
 |userId|String|ИД пользователя.|
+|скопетагс|Коллекция [скопетагинфо](../resources/intune-auditing-scopetaginfo.md)|Список тегов области пользователя при выполнении аудита.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -54,7 +55,14 @@ ms.locfileid: "36335251"
   "userPrincipalName": "String",
   "servicePrincipalName": "String",
   "ipAddress": "String",
-  "userId": "String"
+  "userId": "String",
+  "scopeTags": [
+    {
+      "@odata.type": "microsoft.graph.scopeTagInfo",
+      "scopeTagName": "String",
+      "scopeTagId": "String"
+    }
+  ]
 }
 ```
 

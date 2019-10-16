@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fa9415c43c17cea8959b9d4a8bf6fd49dab0841e
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 13c1d156249caa41256a9a7990b5523e567f5507
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37195792"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536975"
 ---
 # <a name="geteffectivedeviceenrollmentconfigurations-function"></a>Функция Жетеффективедевицеенроллментконфигуратионс
 
@@ -27,10 +27,10 @@ ms.locfileid: "37195792"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
-| &nbsp; &nbsp; **Входящая миграция** | DeviceManagementServiceConfig.ReadWrite.All|
+| &nbsp; &nbsp; **Адаптация** | DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
-| &nbsp; &nbsp; **Входящая миграция** | DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение||
+| &nbsp; &nbsp; **Адаптация** | DeviceManagementServiceConfig.ReadWrite.All|
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- {
@@ -48,7 +48,7 @@ GET /users/{usersId}/getEffectiveDeviceEnrollmentConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -90,6 +90,8 @@ Content-Length: 422
   ]
 }
 ```
+
+
 
 
 

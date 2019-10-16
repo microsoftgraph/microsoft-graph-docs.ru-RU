@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 28bc560ca3d091b9c7b562d1414e0f1d510fff36
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 04274c860e56f0d9fe339d9226b1bcb652cd1448
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37194700"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37537101"
 ---
 # <a name="delete-devicecategory"></a>Удаление deviceCategory
 
@@ -25,10 +25,10 @@ ms.locfileid: "37194700"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
-| &nbsp; &nbsp; **Входящая миграция** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **Адаптация** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
-| &nbsp; &nbsp; **Входящая миграция** | DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение||
+| &nbsp; &nbsp; **Адаптация** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -45,7 +45,7 @@ DELETE /deviceManagement/deviceCategories/{deviceCategoryId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -68,6 +68,8 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCategories/{devic
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

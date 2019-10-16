@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 866a7702f182c0d6bdac28f8eb0c0a45b61632ae
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 378e0a6c01fbfaf15f902711f9dc4ab87647fc02
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37188005"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37526451"
 ---
 # <a name="update-windowsmanagementapphealthstate"></a>Обновление Виндовсманажементапфеалсстате
 
@@ -27,7 +27,7 @@ ms.locfileid: "37188005"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ PATCH /deviceAppManagement/windowsManagementApp/healthStates/{windowsManagementA
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [виндовсманажементапфеалсстате](../resources/intune-devices-windowsmanagementapphealthstate.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [виндовсманажементапфеалсстате](../resources/intune-devices-windowsmanagementapphealthstate.md).
@@ -53,10 +53,10 @@ PATCH /deviceAppManagement/windowsManagementApp/healthStates/{windowsManagementA
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для состояния работоспособности приложения управления Windows. Это свойство доступно только для чтения.|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Состояние работоспособности приложения управления Windows. Возможные значения: `unknown`, `healthy`, `unhealthy`.|
-|инсталледверсион|String.|Установленная версия приложения управления Windows.|
+|инсталледверсион|String|Установленная версия приложения управления Windows.|
 |ластчеккиндатетиме|DateTimeOffset|Время последнего возврата приложения управления Windows.|
 |deviceName|String|Имя устройства, на котором установлено приложение "Управление Windows".|
-|девицеосверсион|String.|Версия Windows 10 OS устройства, на котором установлено приложение "Управление Windows".|
+|девицеосверсион|String|Версия Windows 10 OS устройства, на котором установлено приложение "Управление Windows".|
 
 
 
@@ -99,6 +99,8 @@ Content-Length: 349
   "deviceOSVersion": "Device OSVersion value"
 }
 ```
+
+
 
 
 
