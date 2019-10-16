@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: e9a6c55dc65b11c130f63bd1e112911d49808d7d
-ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
+ms.openlocfilehash: 91fcc069fa3262a536f306c719683eb6df6f15f1
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37418316"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536625"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -59,7 +59,8 @@ ms.locfileid: "37418316"
 |[Удаление параметра](../api/directorysetting-delete.md) | Нет |Удаление объекта setting. |
 |[Перечисление конечных точек](../api/group-list-endpoints.md) |Коллекция [endpoint](endpoint.md)| Получение коллекции объектов endpoint. |
 |[Получение конечной точки](../api/endpoint-get.md) | [endpoint](endpoint.md) | Чтение свойств и связей объекта endpoint. |
-|[validateProperties](../api/group-validateproperties.md)|JSON| Проверка соответствия отображаемого имени или почтового псевдонима группы Office 365 политикам именования. | 
+|[validateProperties](../api/group-validateproperties.md)|JSON| Проверка соответствия отображаемого имени или почтового псевдонима группы Office 365 политикам именования. |
+|[assignLicense](../api/group-assignlicense.md) | [group](group.md) |Добавление или удаление подписок группы. Вы также можете включать и отключать отдельные планы, связанные с подпиской.|
 |**Календарь**| | |
 |[Создание события](../api/group-post-events.md) |[event](event.md)| Создание объекта event путем публикации в коллекции объектов event.|
 |[Получение события](../api/group-get-event.md) |[event](event.md)|Считывание свойств объекта event.|
@@ -134,6 +135,7 @@ ms.locfileid: "37418316"
 |proxyAddresses|Коллекция String| Адреса электронной почты для группы, ведущие в один почтовый ящик группы. Пример: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. Для выражений фильтра в случае многозначных свойств требуется оператор **any**. <br><br>Возвращается по умолчанию. Только для чтения. Значение null не допускается. Поддерживает параметр $filter. |
 |renewedDateTime|DateTimeOffset| Метка времени последнего обновления группы. Не может изменяться непосредственно. Обновляется только при выполнении [действия обновления](../api/grouplifecyclepolicy-renewgroup.md). Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. <br><br>Возвращается по умолчанию. Только для чтения.|
 |securityEnabled|Логический|Указывает, является ли эта группа группой безопасности. <br><br>Возвращается по умолчанию. Поддерживает параметр $filter.|
+|securityIdentifier|String|Идентификатор безопасности группы, используемый в сценариях Windows. <br><br>Возвращается по умолчанию.|
 |theme|String|Указывает цветовую тему группы Office 365. Возможные значения: `Teal`, `Purple`, `Green`, `Blue`, `Pink`, `Orange` или `Red`. <br><br>Возвращается по умолчанию. |
 |unseenConversationsCount|Int32|Количество бесед, в которых было опубликовано одно или несколько сообщений с момента последнего посещения группы вошедшим в систему пользователем. Это свойство совпадает с **unseenCount**. <br><br>Возвращается только с помощью оператора $select.|
 |unseenCount|Int32|Количество бесед с новыми сообщениями, полученными с момента последнего посещения группы вошедшим в систему пользователем. Это свойство совпадает с **unseenConversationsCount**.<br><br>Возвращается только с помощью оператора $select. |
@@ -250,6 +252,7 @@ ms.locfileid: "37418316"
   "proxyAddresses": ["string"],
   "renewedDateTime": "String (timestamp)",
   "securityEnabled": true,
+  "securityIdentifier": "string",
   "unseenConversationsCount": 1024,
   "unseenCount": 1024,
   "unseenMessagesCount": 1024,

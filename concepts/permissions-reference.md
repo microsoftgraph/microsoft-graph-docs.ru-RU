@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 scenarios: getting-started
 ms.custom: graphiamtop20
-ms.openlocfilehash: fdcab22f936862531a30de718a1574d95bd619a4
-ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
+ms.openlocfilehash: e3c69a4b18b1dc6562d0caf87de08aec1189252a
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37053909"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538912"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -716,9 +716,21 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 
 #### <a name="application-permissions"></a>Разрешения приложений
 
-Нет.
+|   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора | Поддержка учетной записи Майкрософт |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_DeviceManagementApps.Read.All_ | Считывание для приложений Microsoft Intune | Позволяет приложению считывать сведения о свойствах, назначении группам, состоянии приложений, конфигурации приложений и политиках защиты приложений, управление которыми выполняется с помощью Microsoft Intune. | Да | Нет |
+|_DeviceManagementApps.ReadWrite.All_ | Считывание и запись для приложений Microsoft Intune | Позволяет приложению читать и записывать свойства, сведения о назначении группам и состояния приложений, конфигурации и политики защиты приложений под управлением Microsoft Intune. | Да | Нет |
+|_DeviceManagementConfiguration.Read.All_ | Считывание сведений о конфигурации и политиках для устройств Microsoft Intune | Позволяет приложению считывать свойства конфигурации и политики соответствия требованиям для устройств, управление которыми выполняется с помощью Microsoft Intune, а также сведения об их назначении группам. | Да | Нет |
+|_DeviceManagementConfiguration.ReadWrite.All_ | Считывание и запись сведений о конфигурации и политиках для устройств Microsoft Intune  | Позволяет приложению считывать и записывать свойства конфигурации и политики соответствия требованиям для устройств, управление которыми выполняется с помощью Microsoft Intune, а также сведения об их назначении группам. | Да | Нет |
+|_DeviceManagementManagedDevices.PrivilegedOperations.All_ | Выполнение удаленных действий, влияющих на пользователей, на устройствах Microsoft Intune | Позволяет приложению выполнять удаленные критичные действия, например очистку устройства или сброс секретного кода на устройствах под управлением Microsoft Intune. | Да | Нет |
+|_DeviceManagementManagedDevices.Read.All_ | Считывание данных устройств Microsoft Intune | Позволяет приложению считывать свойства устройств, управление которыми выполняется с помощью Microsoft Intune. | Да | Нет |
+|_DeviceManagementManagedDevices.ReadWrite.All_ | Считывание и запись данных устройств Microsoft Intune | Позволяет приложению читать и записывать свойства устройств под управлением Microsoft Intune. Не позволяет выполнять критичные операции, например удаленную очистку и сброс пароля владельца устройства. | Да | Нет |
+|_DeviceManagementRBAC.Read.All_ | Считывание параметров RBAC для Microsoft Intune | Позволяет приложению считывать свойства, связанные с параметрами управления доступом на основе ролей (RBAC) в Microsoft Intune. | Да | Нет |
+|_DeviceManagementRBAC.ReadWrite.All_ | Считывание и запись параметров RBAC для Microsoft Intune | Позволяет приложению считывать и записывать свойства, связанные с параметрами управления доступом на основе ролей (RBAC) в Microsoft Intune. | Да | Нет |
+|_DeviceManagementServiceConfig.Read.All_ | Считывание конфигурации Microsoft Intune | Позволяет приложению считывать свойства службы Intune, в том числе сведения о регистрации устройств и конфигурации подключения к сторонним службам. | Да | Нет |
+|_DeviceManagementServiceConfig.ReadWrite.All_ | Считывание и запись конфигурации Microsoft Intune | Позволяет приложению считывать и записывать свойства службы Microsoft Intune, в том числе сведения о регистрации устройств и конфигурации подключения к сторонним службам. | Да | Нет |
 
-### <a name="remarks"></a>Заметки
+### <a name="remarks"></a>Примечания
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
@@ -727,6 +739,20 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 ### <a name="example-usage"></a>Примеры использования
 
 #### <a name="delegated"></a>Делегированные
+
+* _DeviceManagementServiceConfiguration.Read.All_. Проверка текущего состояния подписки на Intune (`GET /deviceManagement/subscriptionState`).
+* _DeviceManagementServiceConfiguration.ReadWrite.All_. Создание условий (`POST /deviceManagement/termsAndConditions`).
+* _DeviceManagementConfiguration.Read.All_. Поиск состояния конфигурации устройства (`GET /deviceManagement/deviceConfigurations/{id}/deviceStatuses`).
+* _DeviceManagementConfiguration.ReadWrite.All_. Назначение политики соответствия требованиям к устройствам для группы (`POST deviceCompliancePolicies/{id}/assign`).
+* _DeviceManagementApps.Read.All_. Поиск всех приложений Магазина Windows, опубликованных в Intune (`GET /deviceAppManagement/mobileApps?$filter=isOf('microsoft.graph.windowsStoreApp')`).
+* _DeviceManagementApps.ReadWrite.All_. Публикация нового приложения (`POST /deviceAppManagement/mobileApps`).
+* _DeviceManagementRBAC.Read.All_. Поиск назначения ролей по имени (`GET /deviceManagement/roleAssignments?$filter=displayName eq 'My Role Assignment'`).
+* _DeviceManagementRBAC.ReadWrite.All_. Создание пользовательской роли (`POST /deviceManagement/roleDefinitions`).
+* _DeviceManagementManagedDevices.Read.All_. Поиск управляемого устройства по имени (`GET /managedDevices/?$filter=deviceName eq 'My Device'`).
+* _DeviceManagementManagedDevices.ReadWrite.All_. Удаление управляемого устройства (`DELETE /managedDevices/{id}`).
+* _DeviceManagementManagedDevices.PrivilegedOperations.All_. Сброс секретного кода для управляемого устройства пользователя (`POST /managedDevices/{id}/resetPasscode`).
+
+#### <a name="application"></a>Для приложений
 
 * _DeviceManagementServiceConfiguration.Read.All_. Проверка текущего состояния подписки на Intune (`GET /deviceManagement/subscriptionState`).
 * _DeviceManagementServiceConfiguration.ReadWrite.All_. Создание условий (`POST /deviceManagement/termsAndConditions`).
@@ -1084,8 +1110,8 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 |   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Policy.Read.All_ | Чтение политик организации | Позволяет приложению читать все политики организации без необходимости входа пользователя. | Да |
-| _Policy.Read.FeatureRollout_ | Чтение и запись политик развертывания функций | Позволяет приложению считывать и записывать политики развертывания функций без необходимости входа пользователя. Содержит возможности назначения и удаления пользователей и групп для развертывания определенной функции. | Да |
-| _Policy.Read.TrustFramework_ | Чтение и запись политик инфраструктуры доверия в организации | Позволяет приложению считывать и записывать политики инфраструктуры доверия в организации без необходимости входа пользователя. | Да |
+| _Policy.ReadWrite.FeatureRollout_ | Чтение и запись политик развертывания функций | Позволяет приложению считывать и записывать политики развертывания функций без необходимости входа пользователя. Содержит возможности назначения и удаления пользователей и групп для развертывания определенной функции. | Да |
+| _Policy.ReadWrite.TrustFramework_ | Чтение и запись политик инфраструктуры доверия в организации | Позволяет приложению считывать и записывать политики инфраструктуры доверия в организации без необходимости входа пользователя. | Да |
 
 ### <a name="example-usage"></a>Примеры использования
 

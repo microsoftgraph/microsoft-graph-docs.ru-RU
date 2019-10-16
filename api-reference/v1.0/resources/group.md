@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 8b9b13f10ed63de8f453355113cdc42da69139a3
-ms.sourcegitcommit: 0f3e0bd7b57870a0f7b34cf52eaf4776ac82671e
+ms.openlocfilehash: cc5606b6a09f0acdafc1aa4a312b1a0127ad0884
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "36699123"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37539003"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -129,6 +129,7 @@ ms.locfileid: "36699123"
 |proxyAddresses|Коллекция String| Адреса электронной почты для группы, ведущие в один почтовый ящик группы. Пример: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. Для фильтрации выражений по многозначным свойствам требуется оператор **any**. <br><br>Возвращается по умолчанию. Только для чтения. Значение null не допускается. Поддерживает параметр $filter. |
 |renewedDateTime|DateTimeOffset| Метка времени последнего обновления группы. Не может изменяться непосредственно. Обновляется только при выполнении [действия обновления](../api/group-renew.md). Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. <br><br>Возвращается по умолчанию. Только для чтения.|
 |securityEnabled|Логический|Указывает, является ли эта группа группой безопасности. <br><br>Возвращается по умолчанию. Поддерживает параметр $filter.|
+|securityIdentifier|String|Идентификатор безопасности группы, используемый в сценариях Windows. <br><br>Возвращается по умолчанию.|
 |unseenCount|Int32|Количество бесед с новыми сообщениями, полученными с момента последнего посещения группы вошедшим в систему пользователем. <br><br>Возвращается только с помощью оператора $select. |
 |visibility|String| Определяет видимость группы Office 365. Возможные значения: `Private`, `Public` или `Hiddenmembership`. Пустые значения считаются общедоступными.  Дополнительные сведения см. в разделе [Параметры видимости группы](#group-visibility-options).<br>Видимость можно настроить только при создании группы. Ее нельзя изменить.<br>Видимость поддерживается только для единых групп. Она не поддерживается для групп безопасности. <br><br>Возвращается по умолчанию.|
 
@@ -145,7 +146,7 @@ ms.locfileid: "36699123"
 
 
 ## <a name="relationships"></a>Связи
-| Отношение | Тип   |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |acceptedSenders|Коллекция [directoryObject](directoryobject.md)|Список пользователей или групп, которым разрешено создавать записи или события календаря в этой группе. Если этот список не пуст, то добавлять записи разрешено только перечисленным в нем пользователям и группам.|
 |calendar|[calendar](calendar.md)|Календарь группы. Только для чтения.|
@@ -332,6 +333,7 @@ ms.locfileid: "36699123"
   "proxyAddresses": ["string"],
   "renewedDateTime": "String (timestamp)",
   "securityEnabled": true,
+  "securityIdentifier": "String",
   "unseenCount": 1024,
   "visibility": "string",
   "acceptedSenders": [ { "@odata.type": "microsoft.graph.directoryObject"} ],
