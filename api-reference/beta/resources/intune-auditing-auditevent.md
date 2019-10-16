@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5893d14fdd1f1e274a355526d51bda5519a16b93
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5827a46718b710a177e72fdb684c0c2033f1cf89
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335258"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538513"
 ---
 # <a name="auditevent-resource-type"></a>Тип ресурса auditEvent
 
@@ -47,7 +47,7 @@ ms.locfileid: "36335258"
 |resources|Коллекция [auditResource](../resources/intune-auditing-auditresource.md)|Изменяемые ресурсы.|
 |category|String|Категория аудита.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -75,7 +75,14 @@ ms.locfileid: "36335258"
     "userPrincipalName": "String",
     "servicePrincipalName": "String",
     "ipAddress": "String",
-    "userId": "String"
+    "userId": "String",
+    "scopeTags": [
+      {
+        "@odata.type": "microsoft.graph.scopeTagInfo",
+        "scopeTagName": "String",
+        "scopeTagId": "String"
+      }
+    ]
   },
   "activity": "String",
   "activityDateTime": "String (timestamp)",

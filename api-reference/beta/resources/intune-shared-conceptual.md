@@ -4,12 +4,12 @@ description: Перечисляет API Microsoft Graph для конечных 
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: 56950c21527c4bf72dd57e71d27f0b1be2e47046
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 1420f751866224905f1636205de173e3bd117451
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196345"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37539171"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Общие ресурсы в Microsoft Intune
 
@@ -31,7 +31,7 @@ ms.locfileid: "37196345"
 - [Управление приложениями для устройств](intune-shared-deviceappmanagement.md)
 - [Категория устройств](intune-shared-devicecategory.md)
 - [Политика соответствия устройств требованиям](intune-shared-devicecompliancepolicy.md)
-- [Настройка устройства](intune-shared-deviceconfiguration.md)
+- [Конфигурация устройств](intune-shared-deviceconfiguration.md)
 - [Настройка регистрации устройств](intune-shared-deviceenrollmentconfiguration.md)
 - [Тип регистрации устройства](intune-shared-deviceenrollmenttype.md)
 - [Управление устройствами](intune-shared-devicemanagement.md)
@@ -62,7 +62,9 @@ ms.locfileid: "37196345"
 - [Содержимое MIME](intune-shared-mimecontent.md)
 - [Мобильное приложение](intune-shared-mobileapp.md)
 - [Настройки назначения мобильного приложения](intune-shared-mobileappassignmentsettings.md)
+- [Параметры времени установки мобильного приложения](intune-shared-mobileappinstalltimesettings.md)
 - [Устранение неполадок с мобильным приложением: событие](intune-shared-mobileapptroubleshootingevent.md)
+- [Тип платформы политики](intune-shared-policyplatformtype.md)
 - [Проксируемый домен](intune-shared-proxieddomain.md)
 - [Report](intune-shared-report.md)
 - [Корневая папка отчета](intune-shared-reportroot.md)
@@ -78,6 +80,7 @@ ms.locfileid: "37196345"
 - [Причина сбоя действия с токеном VPP](intune-shared-vpptokenactionfailurereason.md)
 - [Настройки назначения бизнес-приложения Win32](intune-shared-win32lobappassignmentsettings.md)
 - [Уведомление бизнес-приложения Win32](intune-shared-win32lobappnotification.md)
+- [Параметры перезапуска приложения Win32 LOB](intune-shared-win32lobapprestartsettings.md)
 - [Настройки назначения приложения Windows AppX](intune-shared-windowsappxappassignmentsettings.md)
 - [Профиль Windows AutoPilot Deployment](intune-shared-windowsautopilotdeploymentprofile.md)
 - [Конфигурация присоединения к домену Windows](intune-shared-windowsdomainjoinconfiguration.md)
