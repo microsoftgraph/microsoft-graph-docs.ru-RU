@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e344554804044687c7e5b9aa90c6171055b64a16
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: af6c3715e106e446d76c1e7b250e79e713cef079
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37198196"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538891"
 ---
 # <a name="deviceconfigurationassignment-resource-type"></a>Тип ресурса deviceConfigurationAssignment
 
@@ -34,10 +34,10 @@ ms.locfileid: "37198196"
 |:---|:---|:---|
 |id|String|Ключ назначения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения для конфигурации устройств.|
-|source|[девицеандаппманажементассигнментсаурце](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Источник назначения для конфигурации устройства, Direct или в упаковке/политике. Возможные значения: `direct`, `policySets`.|
-|Идентификатор|String.|Идентификатор источника назначения.|
+|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Источник назначения для конфигурации устройства, Direct или в упаковке/политике. Это свойство доступно только для чтения. Возможные значения: `direct`, `policySets`.|
+|Идентификатор|String|Идентификатор источника назначения. Это свойство доступно только для чтения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

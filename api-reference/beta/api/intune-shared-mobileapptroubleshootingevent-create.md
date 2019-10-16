@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5708d3968b38351f26db5e1221c16fff442f93a0
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 33336696744e8878ec5324026c88671b4b71fe17
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196065"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37537967"
 ---
 # <a name="create-mobileapptroubleshootingevent"></a>Создание Мобилеапптраублешутинжевент
 
@@ -29,7 +29,7 @@ ms.locfileid: "37196065"
 |&nbsp;&nbsp; **Управление устройствами**|DeviceManagementManagedDevices.ReadWrite.All|
 |&nbsp; &nbsp; **Устранение неполадок**|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 |&nbsp;&nbsp; **Управление устройствами**|DeviceManagementManagedDevices.ReadWrite.All|
 |&nbsp; &nbsp; **Устранение неполадок**|DeviceManagementManagedDevices.ReadWrite.All|
 
@@ -49,7 +49,7 @@ POST /users/{usersId}/mobileAppTroubleshootingEvents
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Мобилеапптраублешутинжевент в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Мобилеапптраублешутинжевент.
@@ -59,10 +59,10 @@ POST /users/{usersId}/mobileAppTroubleshootingEvents
 |id|Строка|GUID объекта|
 |**Устранение неполадок**|
 |аддитионалинформатион|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Набор пар строкового ключа и строкового значения, предоставляющий дополнительные сведения о событии устранения неполадок.|
-|applicationId|String.|Идентификатор приложения Intune.|
-|correlationId|String.|Идентификатор, используемый для трассировки сбоя в службе. |
+|applicationId|String|Идентификатор приложения Intune.|
+|correlationId|String|Идентификатор, используемый для трассировки сбоя в службе. |
 |eventDateTime|DateTimeOffset|Время возникновения события. |
-|eventName|String.|Имя события, соответствующее событию устранения неполадок. Необязательно.|
+|eventName|String|Имя события, соответствующее событию устранения неполадок. Необязательный параметр.|
 |лист|Коллекция [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|Элемент журнала устранения неполадок мобильных приложений Intune|
 |managedDeviceIdentifier|String|Идентификатор события, созданный или полученный службой Intune.|
 |траублешутинжеррордетаилс|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Объект, содержащий подробные сведения об ошибке и ее исправлении. |
@@ -97,6 +97,8 @@ Content-Length: 120
   "id": "77943c10-3c10-7794-103c-9477103c9477"
 }
 ```
+
+
 
 
 

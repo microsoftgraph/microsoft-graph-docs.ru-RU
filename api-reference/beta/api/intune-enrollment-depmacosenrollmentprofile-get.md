@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a5814804f1ae1ca13173efdbf8ebd584275fe58
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: a668543475adf6e298cd8b654a530be532c7ccc9
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37185394"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536036"
 ---
 # <a name="get-depmacosenrollmentprofile"></a>Получение Депмакосенроллментпрофиле
 
@@ -27,7 +27,7 @@ ms.locfileid: "37185394"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -47,7 +47,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultMacO
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{dep
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1362
+Content-Length: 1396
 
 {
   "value": {
@@ -98,6 +98,7 @@ Content-Length: 1362
     "privacyPaneDisabled": true,
     "screenTimeScreenDisabled": true,
     "deviceNameTemplate": "Device Name Template value",
+    "configurationWebUrl": true,
     "registrationDisabled": true,
     "fileVaultDisabled": true,
     "iCloudDiagnosticsDisabled": true,
@@ -106,6 +107,8 @@ Content-Length: 1362
   }
 }
 ```
+
+
 
 
 

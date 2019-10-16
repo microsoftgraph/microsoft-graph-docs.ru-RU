@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 33ece964ef101a7ab12c942870e9db5209f8f8ec
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7be0c5f321c6ea5cac125f3a0785a057ad216716
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36333158"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538905"
 ---
 # <a name="devicecompliancepolicyassignment-resource-type"></a>Тип ресурса deviceCompliancePolicyAssignment
 
@@ -34,8 +34,10 @@ ms.locfileid: "36333158"
 |:---|:---|:---|
 |id|String|Ключ объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель для назначения политики соответствия.|
+|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Источник назначения для политики соответствия требованиям устройств, Direct или в упаковке/политике. Возможные значения: `direct`, `policySets`.|
+|Идентификатор|String|Идентификатор источника назначения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -52,7 +54,9 @@ ms.locfileid: "36333158"
   "id": "String (identifier)",
   "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-  }
+  },
+  "source": "String",
+  "sourceId": "String"
 }
 ```
 

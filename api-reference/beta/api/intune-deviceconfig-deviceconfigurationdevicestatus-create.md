@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 89baa70f744f6bd5321157cfbe227bdde506d51b
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 07f151371f5aa8bc7130c19ec98b6e7d3dfbb3df
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37174783"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37534115"
 ---
 # <a name="create-deviceconfigurationdevicestatus"></a>Создание объекта deviceConfigurationDeviceStatus
 
@@ -27,7 +27,7 @@ ms.locfileid: "37174783"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -40,7 +40,6 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertific
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate/deviceStatuses
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/identityCertificate/rootCertificate/deviceStatuses
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosScepCertificateProfile/rootCertificate/deviceStatuses
-POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSScepCertificateProfile/rootCertificate/deviceStatuses
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsPhone81VpnConfiguration/identityCertificate/deviceStatuses
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/identityCertificateForClientAuthentication/deviceStatuses
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/rootCertificatesForServerValidation/{windows81TrustedRootCertificateId}/deviceStatuses
@@ -52,7 +51,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта deviceConfigurationDeviceStatus в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта deviceConfigurationDeviceStatus.
@@ -60,8 +59,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
-|deviceDisplayName|String.|Имя устройства в объекте DevicePolicyStatus.|
-|userName|String.|Имя пользователя в отчете|
+|deviceDisplayName|String|Имя устройства в объекте DevicePolicyStatus.|
+|userName|String|Имя пользователя в отчете|
 |deviceModel|String|Модель устройства в отчете|
 |platform|Int32|Платформа для устройства, о котором сообщается|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время, когда истекает период отсрочки применения политик на устройстве.|
@@ -116,6 +115,8 @@ Content-Length: 496
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
 
 
 

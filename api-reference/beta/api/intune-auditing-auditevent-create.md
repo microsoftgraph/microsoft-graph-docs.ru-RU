@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e76837c935e6f3c88f4946684305844ab3c01589
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: b3ac337d274d8137796a6f2f14591ac08ca2a229
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37171556"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37534955"
 ---
 # <a name="create-auditevent"></a>Создание объекта auditEvent
 
@@ -27,7 +27,7 @@ ms.locfileid: "37171556"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ POST /deviceManagement/auditEvents
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта auditEvent в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта auditEvent.
@@ -53,12 +53,12 @@ POST /deviceManagement/auditEvents
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |displayName|Строка|Отображаемое имя события.|
-|componentName|String.|Имя компонента.|
+|componentName|String|Имя компонента.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Пользователь AAD и приложение, связанные с событием аудита.|
-|activity|String.|Понятное имя действия.|
+|activity|String|Понятное имя действия.|
 |activityDateTime|DateTimeOffset|Дата и время выполнения действия (в формате UTC).|
-|activityType|String.|Тип выполненного действия.|
-|activityOperationType|String.|Тип операции HTTP для действия.|
+|activityType|String|Тип выполненного действия.|
+|activityOperationType|String|Тип операции HTTP для действия.|
 |activityResult|String|Результат действия.|
 |correlationId|Guid|ИД клиентского запроса, используемый для согласования действий в системе.|
 |resources|Коллекция [auditResource](../resources/intune-auditing-auditresource.md)|Изменяемые ресурсы.|
@@ -76,7 +76,7 @@ POST /deviceManagement/auditEvents
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/auditEvents
 Content-type: application/json
-Content-length: 1390
+Content-length: 1585
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -93,7 +93,14 @@ Content-length: 1390
     "userPrincipalName": "User Principal Name value",
     "servicePrincipalName": "Service Principal Name value",
     "ipAddress": "Ip Address value",
-    "userId": "User Id value"
+    "userId": "User Id value",
+    "scopeTags": [
+      {
+        "@odata.type": "microsoft.graph.scopeTagInfo",
+        "scopeTagName": "Scope Tag Name value",
+        "scopeTagId": "Scope Tag Id value"
+      }
+    ]
   },
   "activity": "Activity value",
   "activityDateTime": "2016-12-31T23:59:51.6363086-08:00",
@@ -126,7 +133,7 @@ Content-length: 1390
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1439
+Content-Length: 1634
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -144,7 +151,14 @@ Content-Length: 1439
     "userPrincipalName": "User Principal Name value",
     "servicePrincipalName": "Service Principal Name value",
     "ipAddress": "Ip Address value",
-    "userId": "User Id value"
+    "userId": "User Id value",
+    "scopeTags": [
+      {
+        "@odata.type": "microsoft.graph.scopeTagInfo",
+        "scopeTagName": "Scope Tag Name value",
+        "scopeTagId": "Scope Tag Id value"
+      }
+    ]
   },
   "activity": "Activity value",
   "activityDateTime": "2016-12-31T23:59:51.6363086-08:00",
@@ -171,6 +185,8 @@ Content-Length: 1439
   "category": "Category value"
 }
 ```
+
+
 
 
 

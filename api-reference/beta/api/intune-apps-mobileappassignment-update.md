@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d8adb3390ed881ce3241ed746747d0d90a891e63
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 005a6dcb32bee964a85023479cae5a35b6390443
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37177195"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37535165"
 ---
 # <a name="update-mobileappassignment"></a>Обновление объекта mobileAppAssignment
 
@@ -27,7 +27,7 @@ ms.locfileid: "37177195"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssign
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md).
@@ -55,6 +55,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssign
 |intent|[installIntent](../resources/intune-shared-installintent.md)|Цель установки, определенная администратором. Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Целевое назначение группы, определенное администратором.|
 |settings|[mobileAppAssignmentSettings](../resources/intune-shared-mobileappassignmentsettings.md)|Параметры целевого назначения, определенные администратором.|
+|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Тип ресурса, который является источником для назначения. Возможные значения: `direct`, `policySets`.|
+|Идентификатор|String|Идентификатор источника назначения.|
 
 
 
@@ -68,7 +70,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssign
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignmentId}
 Content-type: application/json
-Content-length: 273
+Content-length: 334
 
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
@@ -78,7 +80,9 @@ Content-length: 273
   },
   "settings": {
     "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
-  }
+  },
+  "source": "policySets",
+  "sourceId": "Source Id value"
 }
 ```
 
@@ -87,7 +91,7 @@ Content-length: 273
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 322
+Content-Length: 383
 
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
@@ -98,9 +102,13 @@ Content-Length: 322
   },
   "settings": {
     "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
-  }
+  },
+  "source": "policySets",
+  "sourceId": "Source Id value"
 }
 ```
+
+
 
 
 

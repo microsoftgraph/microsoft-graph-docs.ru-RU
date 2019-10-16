@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5cb29c5212d44c9affa895dc9dbe15b56e74e146
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 99be634d08b511749468c184881351a9dc380294
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37201140"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37537827"
 ---
 # <a name="delete-windowsupdatestate"></a>Удаление Виндовсупдатестате
 
@@ -26,11 +26,11 @@ ms.locfileid: "37201140"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
-| &nbsp; &nbsp; **Настройка устройства** | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp; &nbsp; **Конфигурация устройств** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **Обновление программного обеспечения** | DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
-| &nbsp; &nbsp; **Настройка устройства** | DeviceManagementConfiguration.ReadWrite.All|
+|Приложение||
+| &nbsp; &nbsp; **Конфигурация устройств** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **Обновление программного обеспечения** | DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -48,7 +48,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -67,6 +67,8 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

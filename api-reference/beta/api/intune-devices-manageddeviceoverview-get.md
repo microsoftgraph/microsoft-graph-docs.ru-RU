@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b222bc0988f21d58c36091c822246e8b12f46e7e
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: d5804cd4f285ad98fd85df9f706bb2183c97c29e
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37188278"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37527865"
 ---
 # <a name="get-manageddeviceoverview"></a>Get managedDeviceOverview
 
@@ -27,7 +27,7 @@ ms.locfileid: "37188278"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -47,7 +47,7 @@ GET /deviceManagement/managedDeviceOverview
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDeviceOverview
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1139
+Content-Length: 1286
 
 {
   "value": {
@@ -82,7 +82,11 @@ Content-Length: 1139
       "macOSCount": 10,
       "windowsMobileCount": 2,
       "windowsCount": 12,
-      "unknownCount": 12
+      "unknownCount": 12,
+      "androidDedicatedCount": 5,
+      "androidDeviceAdminCount": 7,
+      "androidFullyManagedCount": 8,
+      "androidWorkProfileCount": 7
     },
     "deviceExchangeAccessStateSummary": {
       "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -105,6 +109,8 @@ Content-Length: 1139
   }
 }
 ```
+
+
 
 
 

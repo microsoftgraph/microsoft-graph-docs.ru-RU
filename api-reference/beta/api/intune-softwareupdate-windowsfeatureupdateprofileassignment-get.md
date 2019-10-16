@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f17f845ac907f270c03c2bdcf4cf6bb1189a12c5
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: c776a6a3988b3e920a49a2c46ab29a1d3b841312
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37201118"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536800"
 ---
 # <a name="get-windowsfeatureupdateprofileassignment"></a>Получение Виндовсфеатуреупдатепрофилеассигнмент
 
@@ -27,7 +27,7 @@ ms.locfileid: "37201118"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -47,7 +47,7 @@ GET /deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfileI
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -78,6 +78,8 @@ Content-Length: 255
   }
 }
 ```
+
+
 
 
 

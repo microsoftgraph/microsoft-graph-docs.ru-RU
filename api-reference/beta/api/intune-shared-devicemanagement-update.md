@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e8f8b3171eaabedfa085f7685b2f4f7aa1ad87a3
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 18ba331637a151531e6a4dcec9e794a01c927aef
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37194595"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538275"
 ---
 # <a name="update-devicemanagement"></a>Обновление объекта deviceManagement
 
@@ -32,7 +32,7 @@ ms.locfileid: "37194595"
 | &nbsp;&nbsp; **Android для работы** | DeviceManagementConfiguration.ReadWrite.All  |
 | &nbsp; &nbsp; **Аудит** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **Условия компании** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; **Настройка устройства** | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp; &nbsp; **Конфигурация устройств** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Цель устройства** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; **Электронная SIM-карта** | DeviceManagementConfiguration.ReadWrite.All |
@@ -40,7 +40,7 @@ ms.locfileid: "37194595"
 | &nbsp;&nbsp; **Ограждение** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Уведомление** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Одж** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; **Входящая миграция** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **Адаптация** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Управление доступом на основе ролей (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp; &nbsp; **Удаленный доступ** | DeviceManagementConfiguration.Read.All |
@@ -50,11 +50,11 @@ ms.locfileid: "37194595"
 | &nbsp;&nbsp; **Траублехутинг** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Windows Information Protection** | DeviceManagementApps.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.|
-| Для приложений ||
+| Приложение ||
 | &nbsp;&nbsp; **Android для работы** | DeviceManagementConfiguration.ReadWrite.All  |
 | &nbsp; &nbsp; **Аудит** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **Условия компании** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; **Настройка устройства** | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp; &nbsp; **Конфигурация устройств** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Цель устройства** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; **Электронная SIM-карта** | DeviceManagementConfiguration.ReadWrite.All |
@@ -62,7 +62,7 @@ ms.locfileid: "37194595"
 | &nbsp;&nbsp; **Ограждение** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Уведомление** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Одж** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; **Входящая миграция** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **Адаптация** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Управление доступом на основе ролей (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp; &nbsp; **Удаленный доступ** | DeviceManagementConfiguration.Read.All |
@@ -88,7 +88,7 @@ PATCH /deviceManagement
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса добавьте представление объекта [deviceManagement](../resources/intune-shared-devicemanagement.md) в формате JSON.
 
@@ -97,9 +97,9 @@ PATCH /deviceManagement
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор устройства.|
-|**Настройка устройства**|
-|интунеаккаунтид|GUID|Идентификатор учетной записи Intune для данного клиента|
-|легаципкмананжементенаблед|Boolean.|Свойство, позволяющее управлять устаревшим управлением устаревших ПК для этой учетной записи. Это свойство доступно только для чтения.|
+|**Конфигурация устройств**|
+|интунеаккаунтид|Идентификатор GUID|Идентификатор учетной записи Intune для данного клиента|
+|легаципкмананжементенаблед|Логический|Свойство, позволяющее управлять устаревшим управлением устаревших ПК для этой учетной записи. Это свойство доступно только для чтения.|
 |максимумдептокенс|Int32|Максимальное число маркеров DEP, разрешенных для каждого клиента.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Параметры уровня учетной записи.|
 |**Управление устройствами**|
@@ -110,7 +110,7 @@ PATCH /deviceManagement
 |subscriptionState|[девицеманажементсубскриптионстате](../resources/intune-devices-devicemanagementsubscriptionstate.md)|Состояние подписки на управление мобильными устройствами для клиента. Возможные значения: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
 |subscriptions|[девицеманажементсубскриптионс](../resources/intune-devices-devicemanagementsubscriptions.md)|Подписка клиента. Возможные значения: `none`, `intune`, `office365`, `intunePremium`, `intune_EDU`, `intune_SMB`.|
 |windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|Обзор вредоносных программ для устройств с Windows.|
-|**Входящая миграция**|
+|**Адаптация**|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|Ресурс intuneBrand содержит данные, которые используются для настройки внешнего вида приложения "Корпоративный портал" и веб-портала пользователя.|
 
 Поддержка свойств текста запроса зависит от рабочего процесса.
@@ -189,6 +189,8 @@ Content-Length: 855
   "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
 }
 ```
+
+
 
 
 

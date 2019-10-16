@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3087456bf81874593ae13f057bcaf9fcdcc32601
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 0533b65a2807c608ac0f5daa9ccabb44011a2f14
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37184688"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37528250"
 ---
 # <a name="triggerconfigurationmanageraction-action"></a>действие Тригжерконфигуратионманажерактион
 
@@ -27,7 +27,7 @@ ms.locfileid: "37184688"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.PriviligedOperation.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.PriviligedOperation.All|
+|Приложение|DeviceManagementManagedDevices.PriviligedOperation.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -36,6 +36,7 @@ ms.locfileid: "37184688"
 -->
 ``` http
 POST /deviceManagement/managedDevices/{managedDeviceId}/triggerConfigurationManagerAction
+POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunStates/{deviceHealthScriptDeviceStateId}/managedDevice/triggerConfigurationManagerAction
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/triggerConfigurationManagerAction
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices/{managedDeviceId}/triggerConfigurationManagerAction
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/triggerConfigurationManagerAction
@@ -47,14 +48,14 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|конфигуратионманажерактион|[конфигуратионманажерактион](../resources/intune-devices-configurationmanageraction.md)|Пока не задокументировано.|
+|configurationManagerAction|[configurationManagerAction](../resources/intune-devices-configurationmanageraction.md)|Пока не задокументировано.|
 
 
 
@@ -84,6 +85,8 @@ Content-length: 145
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 

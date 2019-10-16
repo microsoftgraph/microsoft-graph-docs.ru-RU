@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3964702646476f35f7f6e9b7928b69fca83dc5e8
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 489410ec904e012504683e960bc1f4c2b157206f
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371308"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37524477"
 ---
 # <a name="mobileapptroubleshootingapptargethistory-resource-type"></a>Тип ресурса Мобилеапптраублешутингапптаржесистори
 
@@ -28,10 +28,10 @@ ms.locfileid: "36371308"
 |:---|:---|:---|
 |оккурренцедатетиме|DateTimeOffset|Время возникновения элемента журнала. Наследуется от [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
 |секуритиграупид|String|Идентификатор группы безопасности AAD, к которой назначена эта группа.|
-|рунстате|[рунстате](../resources/intune-shared-runstate.md)|Состояние элемента. Возможные значения: `unknown`, `success`, `fail`, `error`, `pending`.|
+|рунстате|[рунстате](../resources/intune-shared-runstate.md)|Состояние элемента. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |errorCode|String|Код ошибки для сбоя, пустой при отсутствии ошибки.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

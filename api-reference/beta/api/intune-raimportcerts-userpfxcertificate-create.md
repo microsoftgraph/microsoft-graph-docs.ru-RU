@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 27246f8e95b2db50be9b0a4e26fa962cbbec0560
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 06cc1ad70417e771a6ab0a20b45be3c9c735bfad
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37189671"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37537312"
 ---
 # <a name="create-userpfxcertificate"></a>Создание Усерпфксцертификате
 
@@ -27,7 +27,7 @@ ms.locfileid: "37189671"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ POST /deviceManagement/userPfxCertificates
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Усерпфксцертификате в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Усерпфксцертификате.
@@ -52,16 +52,16 @@ POST /deviceManagement/userPfxCertificates
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Уникальный идентификатор для сертификата PFX.|
-|отпечаток|String.|Отпечаток SHA-1 сертификата PFX.|
+|отпечаток|String|Отпечаток SHA-1 сертификата PFX.|
 |intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Сертификат, предназначенный для целей из точки зрения развертывания. Возможные значения: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
 |userPrincipalName|String|Имя участника-пользователя сертификата PFX.|
 |startDateTime|DateTimeOffset|Дата и время начала действия сертификата.|
 |expirationDateTime|DateTimeOffset|Дата и время действия сертификата.|
-|providerName|String.|Поставщик криптографии, используемый для шифрования этого объекта BLOB.|
-|keyName|String.|Имя ключа (в пределах поставщика), используемого для шифрования большого двоичного объекта.|
+|providerName|String|Поставщик криптографии, используемый для шифрования этого объекта BLOB.|
+|keyName|String|Имя ключа (в пределах поставщика), используемого для шифрования большого двоичного объекта.|
 |паддингсчеме|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Схема заполнения, используемая поставщиком во время шифрования и расшифровки. Возможные значения: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
 |енкриптедпфксблоб|Binary|Зашифрованный BLOB-объект PFX.|
-|енкриптедпфкспассворд|String.|Зашифрованный пароль PFX.|
+|енкриптедпфкспассворд|String|Зашифрованный пароль PFX.|
 |createdDateTime|DateTimeOffset|Дата и время импорта этого PFX-сертификата.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сертификата PFX.|
 
@@ -118,6 +118,8 @@ Content-Length: 695
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0051d67f7f33d2e48bb5d423950e9a4470439a4d
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: bc7e0c51222b6fcae57a71fb8b3cae1ac1fc77b4
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37168567"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37534206"
 ---
 # <a name="create-devicecompliancepolicyassignment"></a>Создание объекта deviceCompliancePolicyAssignment
 
@@ -27,7 +27,7 @@ ms.locfileid: "37168567"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assig
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта deviceCompliancePolicyAssignment в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта deviceCompliancePolicyAssignment.
@@ -53,6 +53,8 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assig
 |:---|:---|:---|
 |id|String|Ключ объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель для назначения политики соответствия.|
+|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Источник назначения для политики соответствия требованиям устройств, Direct или в упаковке/политике. Возможные значения: `direct`, `policySets`.|
+|Идентификатор|String|Идентификатор источника назначения.|
 
 
 
@@ -66,13 +68,15 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assig
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/assignments
 Content-type: application/json
-Content-length: 172
+Content-length: 233
 
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicyAssignment",
   "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-  }
+  },
+  "source": "policySets",
+  "sourceId": "Source Id value"
 }
 ```
 
@@ -81,16 +85,20 @@ Content-length: 172
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 221
+Content-Length: 282
 
 {
   "@odata.type": "#microsoft.graph.deviceCompliancePolicyAssignment",
   "id": "92dc3fef-3fef-92dc-ef3f-dc92ef3fdc92",
   "target": {
     "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
-  }
+  },
+  "source": "policySets",
+  "sourceId": "Source Id value"
 }
 ```
+
+
 
 
 

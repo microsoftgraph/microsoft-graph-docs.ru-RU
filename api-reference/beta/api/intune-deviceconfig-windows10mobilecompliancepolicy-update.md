@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a33ffa340bea89e343bc05815ac6d0a5343cb549
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: e56b559b7a3999733ab6628d602a17b5171df7cc
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37182479"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37533153"
 ---
 # <a name="update-windows10mobilecompliancepolicy"></a>Update windows10MobileCompliancePolicy
 
@@ -27,7 +27,7 @@ ms.locfileid: "37182479"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,14 +44,14 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [windows10MobileCompliancePolicy](../resources/intune-deviceconfig-windows10mobilecompliancepolicy.md) в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта [windows10MobileCompliancePolicy](../resources/intune-deviceconfig-windows10mobilecompliancepolicy.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |id|Строка|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
@@ -67,14 +67,14 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |passwordExpirationDays|Int32|Количество дней до окончания срока действия пароля. Допустимые значения: от 1 до 255.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Период бездействия (в минутах), по истечении которого будет запрашиваться ввод пароля.|
 |passwordRequireToUnlockFromIdle|Boolean|Указывает на то, что для разблокировки неактивного устройства требуется указывать пароль.|
-|osMinimumVersion|String.|Минимальная версия Windows Phone.|
+|osMinimumVersion|String|Минимальная версия Windows Phone.|
 |osMaximumVersion|String|Максимальная версия Windows Phone.|
-|earlyLaunchAntiMalwareDriverEnabled|Boolean.|Указывает на то, что служба подтверждения работоспособности устройства Windows должна сообщать о работоспособности (драйвер раннего запуска антивредоносной программы включен).|
-|bitLockerEnabled|Boolean.|Указывает на то, что служба подтверждения работоспособности устройства Windows должна сообщать о работоспособности (средство BitLocker включено).|
-|secureBootEnabled|Boolean.|Указывает на то, что служба подтверждения работоспособности устройства Windows должна сообщать о работоспособности (безопасная загрузка включена).|
-|codeIntegrityEnabled|Boolean.|Указывает на то, что служба подтверждения работоспособности устройства Windows должна сообщать о работоспособности.|
-|storageRequireEncryption|Boolean.|Указывает, обязательно ли шифрование данных на устройствах с Windows.|
-|Свойства activefirewallrequired|Boolean.|Требуется активный брандмауэр на устройствах Windows.|
+|earlyLaunchAntiMalwareDriverEnabled|Логический|Указывает на то, что служба подтверждения работоспособности устройства Windows должна сообщать о работоспособности (драйвер раннего запуска антивредоносной программы включен).|
+|bitLockerEnabled|Логический|Указывает на то, что служба подтверждения работоспособности устройства Windows должна сообщать о работоспособности (средство BitLocker включено).|
+|secureBootEnabled|Логический|Указывает на то, что служба подтверждения работоспособности устройства Windows должна сообщать о работоспособности (безопасная загрузка включена).|
+|codeIntegrityEnabled|Логический|Указывает на то, что служба подтверждения работоспособности устройства Windows должна сообщать о работоспособности.|
+|storageRequireEncryption|Логический|Указывает, обязательно ли шифрование данных на устройствах с Windows.|
+|Свойства activefirewallrequired|Логический|Требуется активный брандмауэр на устройствах Windows.|
 |validOperatingSystemBuildRanges|Коллекция [оператингсистемверсионранже](../resources/intune-deviceconfig-operatingsystemversionrange.md)|Допустимые диапазоны сборки операционной системы на устройствах Windows. Эта коллекция может содержать не более 10 000 элементов.|
 
 
@@ -172,6 +172,8 @@ Content-Length: 1330
   ]
 }
 ```
+
+
 
 
 

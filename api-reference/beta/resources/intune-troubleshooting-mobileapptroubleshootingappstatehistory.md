@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 62c57d4ed01ab1f454a5356899f9645927680dfd
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 97f27f44cfc4af676384dfddfea2afbbbdbe21c6
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36313050"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37525212"
 ---
 # <a name="mobileapptroubleshootingappstatehistory-resource-type"></a>Тип ресурса Мобилеапптраублешутингаппстатехистори
 
@@ -28,10 +28,10 @@ ms.locfileid: "36313050"
 |:---|:---|:---|
 |оккурренцедатетиме|DateTimeOffset|Время возникновения элемента журнала. Наследуется от [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
 |actionType|[mobileAppActionType](../resources/intune-troubleshooting-mobileappactiontype.md);|Идентификатор группы безопасности AAD, к которой назначена эта группа. Возможные значения: `unknown`, `installCommandSent`, `installed`, `uninstalled`, `userRequestedInstall`.|
-|рунстате|[рунстате](../resources/intune-shared-runstate.md)|Состояние элемента. Возможные значения: `unknown`, `success`, `fail`, `error`, `pending`.|
+|рунстате|[рунстате](../resources/intune-shared-runstate.md)|Состояние элемента. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |errorCode|String|Код ошибки для сбоя, пустой при отсутствии ошибки.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

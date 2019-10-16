@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 264a5e5c1179cd12bc89cc6d9afb2aa3e6a2f531
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 4d50362f3dff11b29ad466cde40327d83d37d4cf
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37187270"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37533048"
 ---
 # <a name="create-windows81compliancepolicy"></a>Создание объекта windows81CompliancePolicy
 
@@ -27,7 +27,7 @@ ms.locfileid: "37187270"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,14 +44,14 @@ POST /deviceManagement/deviceCompliancePolicies
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта windows81CompliancePolicy в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта windows81CompliancePolicy.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |id|Строка|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
@@ -66,7 +66,7 @@ POST /deviceManagement/deviceCompliancePolicies
 |passwordMinimumCharacterSetCount|Int32|Количество наборов символов, которые требуются для пароля.|
 |passwordRequiredType|[рекуиредпассвордтипе](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, повторное использование которых следует запретить. Допустимые значения: от 0 до 24.|
-|osMinimumVersion|String.|Минимальная версия Windows 8.1.|
+|osMinimumVersion|String|Минимальная версия Windows 8.1.|
 |osMaximumVersion|String|Максимальная версия Windows 8.1.|
 |storageRequireEncryption|Boolean|Указывает, обязательно ли шифрование данных на устройстве с Windows 8.1.|
 
@@ -137,6 +137,8 @@ Content-Length: 836
   "storageRequireEncryption": true
 }
 ```
+
+
 
 
 

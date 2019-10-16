@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5bd4f8104c5cec345bae9cda10b62346fb42bca3
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: e1e84cf5389c891dbd5cb097e72c52e28bcbbf95
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37195596"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37536786"
 ---
 # <a name="delete-applevpptokentroubleshootingevent"></a>Удаление Апплевпптокентраублешутинжевент
 
@@ -27,7 +27,7 @@ ms.locfileid: "37195596"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ DELETE /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingE
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -63,6 +63,8 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents/{
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 
 
 
