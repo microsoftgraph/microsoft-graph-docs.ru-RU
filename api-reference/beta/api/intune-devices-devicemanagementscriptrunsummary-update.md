@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 79938a72b84627cfa27c32e163034562d6737079
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: e6cc0ca082152168bf44a5f0da5b4c5a307ed0ac
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37180456"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37530351"
 ---
 # <a name="update-devicemanagementscriptrunsummary"></a>Обновление Девицеманажементскриптрунсуммари
 
@@ -27,7 +27,7 @@ ms.locfileid: "37180456"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSu
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [девицеманажементскриптрунсуммари](../resources/intune-devices-devicemanagementscriptrunsummary.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицеманажементскриптрунсуммари](../resources/intune-devices-devicemanagementscriptrunsummary.md).
@@ -54,9 +54,6 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSu
 |id|String|Key объекта сводки запуска сценария управления устройствами. Это свойство доступно только для чтения.|
 |сукцессдевицекаунт|Int32|Число устройств для успешной попытки.|
 |errorDeviceCount|Int32|Количество устройств с ошибками.|
-|compliantDeviceCount|Int32|Число соответствующих устройств.|
-|ноткомплиантдевицекаунт|Int32|Количество устройств, не соответствующих требованиям.|
-|пендингдевицекаунт|Int32|Количество ожидающих устройств.|
 |сукцессусеркаунт|Int32|Число пользователей Success.|
 |errorUserCount|Int32|Количество пользователей с ошибками.|
 
@@ -72,15 +69,12 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSu
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSummary
 Content-type: application/json
-Content-length: 270
+Content-length: 179
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptRunSummary",
   "successDeviceCount": 2,
   "errorDeviceCount": 0,
-  "compliantDeviceCount": 4,
-  "notCompliantDeviceCount": 7,
-  "pendingDeviceCount": 2,
   "successUserCount": 0,
   "errorUserCount": 14
 }
@@ -91,20 +85,19 @@ Content-length: 270
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 319
+Content-Length: 228
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScriptRunSummary",
   "id": "514d5d38-5d38-514d-385d-4d51385d4d51",
   "successDeviceCount": 2,
   "errorDeviceCount": 0,
-  "compliantDeviceCount": 4,
-  "notCompliantDeviceCount": 7,
-  "pendingDeviceCount": 2,
   "successUserCount": 0,
   "errorUserCount": 14
 }
 ```
+
+
 
 
 

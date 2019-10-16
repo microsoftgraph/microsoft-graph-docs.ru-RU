@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 998df1092df19ad52a8cb40225b410a23ee21cc1
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 933ab0a4171e45e67e900eb995667f722ed03c17
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37188439"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37529910"
 ---
 # <a name="executeaction-action"></a>Действие executeAction
 
@@ -27,7 +27,7 @@ ms.locfileid: "37188439"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.PriviligedOperation.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.PriviligedOperation.All|
+|Приложение|DeviceManagementManagedDevices.PriviligedOperation.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -59,6 +59,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |девицеидс|Коллекция строк|Пока не задокументировано.|
 |нотификатионтитле|String|Пока не задокументировано.|
 |нотификатионбоди|String|Пока не задокументировано.|
+|deviceName|String|Пока не задокументировано.|
 
 
 
@@ -73,7 +74,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/executeAction
 
 Content-type: application/json
-Content-length: 236
+Content-length: 274
 
 {
   "actionName": "delete",
@@ -83,7 +84,8 @@ Content-length: 236
     "Device Ids value"
   ],
   "notificationTitle": "Notification Title value",
-  "notificationBody": "Notification Body value"
+  "notificationBody": "Notification Body value",
+  "deviceName": "Device Name value"
 }
 ```
 
@@ -112,6 +114,8 @@ Content-Length: 385
   }
 }
 ```
+
+
 
 
 

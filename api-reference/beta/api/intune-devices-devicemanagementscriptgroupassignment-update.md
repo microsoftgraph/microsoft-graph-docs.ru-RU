@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 25edfdba027d045fe36f1971eccbade0f0a8cf20
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 55a38a0ba03e5aef2ab1217b5c145cf9717a0352
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37180477"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37530407"
 ---
 # <a name="update-devicemanagementscriptgroupassignment"></a>Обновление Девицеманажементскриптграупассигнмент
 
@@ -27,7 +27,7 @@ ms.locfileid: "37180477"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +44,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/group
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [девицеманажементскриптграупассигнмент](../resources/intune-devices-devicemanagementscriptgroupassignment.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицеманажементскриптграупассигнмент](../resources/intune-devices-devicemanagementscriptgroupassignment.md).
@@ -52,7 +52,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/group
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта назначения группы сценариев управления устройствами. Это свойство доступно только для чтения.|
-|таржетграупид|String.|Идентификатор группы Azure Active Directory, на которую ориентирован сценарий.|
+|таржетграупид|String|Идентификатор группы Azure Active Directory, на которую ориентирован сценарий.|
 
 
 
@@ -87,6 +87,8 @@ Content-Length: 173
   "targetGroupId": "Target Group Id value"
 }
 ```
+
+
 
 
 

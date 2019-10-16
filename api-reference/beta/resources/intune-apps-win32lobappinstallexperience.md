@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8cb0efbec4044bb63b9c8069e12bf934662ca587
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: aaf3c6dd99b36e33a8af3a8eb4687e1942779937
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335671"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538555"
 ---
 # <a name="win32lobappinstallexperience-resource-type"></a>Тип ресурса win32LobAppInstallExperience
 
@@ -24,8 +24,9 @@ ms.locfileid: "36335671"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |runAsAccount|[рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения, в котором работает приложение. Возможные значения: `system`, `user`.|
+|девицерестартбехавиор|[win32LobAppRestartBehavior](../resources/intune-apps-win32lobapprestartbehavior.md)|Поведение устройства перезапускается. Возможные значения: `basedOnReturnCode`, `allow`, `suppress`, `force`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -38,7 +39,8 @@ ms.locfileid: "36335671"
 ``` json
 {
   "@odata.type": "#microsoft.graph.win32LobAppInstallExperience",
-  "runAsAccount": "String"
+  "runAsAccount": "String",
+  "deviceRestartBehavior": "String"
 }
 ```
 

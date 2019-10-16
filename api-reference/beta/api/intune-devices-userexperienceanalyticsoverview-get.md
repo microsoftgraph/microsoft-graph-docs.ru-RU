@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c3baa5529a3d313cb4561b89011e88988ddb0fc8
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 10b35fc8913b2591d9bc526708e16b213835058b
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37188257"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37526941"
 ---
 # <a name="get-userexperienceanalyticsoverview"></a>Получение Усерекспериенцеаналитиксовервиев
 
@@ -27,7 +27,7 @@ ms.locfileid: "37188257"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -47,7 +47,7 @@ GET /deviceManagement/userExperienceAnalyticsOverview
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsOve
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 758
+Content-Length: 872
 
 {
   "value": {
@@ -89,10 +89,14 @@ Content-Length: 758
         "severity": "informational"
       }
     ],
-    "state": "insufficientData"
+    "state": "insufficientData",
+    "deviceBootPerformanceHealthState": "insufficientData",
+    "bestPracticesHealthState": "insufficientData"
   }
 }
 ```
+
+
 
 
 
