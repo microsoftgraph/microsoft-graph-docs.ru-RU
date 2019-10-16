@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 1c94ada8111a7e74c9031cc524d2776bcf2ef96f
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+ms.openlocfilehash: ebf022b5de86f9783e75a18b1cab8d61367dd1f4
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402627"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37538439"
 ---
 ```javascript
 
@@ -19,7 +19,7 @@ const user = {
   displayName: "John Smith",
   identities: [
     {
-      signInType: "signInName",
+      signInType: "userName",
       issuer: "contoso.onmicrosoft.com",
       issuerAssignedId: "johnsmith"
     },
