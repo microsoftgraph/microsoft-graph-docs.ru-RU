@@ -5,57 +5,57 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 3446b637835facfbe9a03e31dbdb8e9421b2faed
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d7cc20b01b35f678b20e18e21dcb099a89982ab9
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030508"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37553910"
 ---
 # <a name="educationschool-resource-type"></a>Тип ресурса educationSchool
 
 Ресурс представляет учебное заведение и используется для управления классами, преподавателями и учащимися данного учебного заведения.  
 
-
 ## <a name="methods"></a>Методы
 
-| Метод           | Возвращаемый тип    |Описание|
-|:---------------|:--------|:----------|
-|[Получение](../api/educationschool-get.md) | [educationSchool](educationschool.md) |Считывание свойств и отношений объекта **educationSchool**.|
-|[Добавление класса](../api/educationschool-post-classes.md) |[educationClass](educationclass.md)| Добавление нового объекта **educationClass** в учебное заведение через публикацию в свойстве навигации classes.|
-|[Перечисление классов](../api/educationschool-list-classes.md) |Коллекция [educationClass](educationclass.md)| Получение коллекции объектов **educationClass**.|
-|[Удаление класса](../api/educationschool-delete-classes.md) |[educationClass](educationclass.md)| Удаление **educationClass** из учебного заведения через свойство навигации classes.|
-|[Добавление пользователя](../api/educationschool-post-users.md) |[educationUser](educationuser.md)| Добавление нового объекта **educationClass** в учебное заведение через публикацию в свойстве навигации **users**.|
-|[Перечисление пользователей](../api/educationschool-list-users.md) |Коллекция [educationUser](educationuser.md)| Получение коллекции объектов **educationUser**.|
-|[Удаление пользователя](../api/educationschool-delete-users.md) |[educationUser](educationuser.md)| Удаление **educationUser** из учебного заведения через свойство навигации **users**.|
-|[Обновление](../api/educationschool-update.md) | [educationSchool](educationschool.md) |Обновление объекта **educationSchool**. |
-|[Удаление](../api/educationschool-delete.md) | Нет |Удаление объекта **educationSchool**. |
+| Метод                                                   | Возвращаемый тип                                    | Описание                                                                                 |
+| :------------------------------------------------------- | :--------------------------------------------- | :------------------------------------------------------------------------------------------ |
+| [Получение](../api/educationschool-get.md)                     | [educationSchool](educationschool.md)          | Считывание свойств и отношений объекта **educationSchool**.                         |
+| [Добавление класса](../api/educationschool-post-classes.md)      | [educationClass](educationclass.md)            | Добавление нового объекта **educationClass** в учебное заведение через публикацию в свойстве навигации classes.  |
+| [Перечисление классов](../api/educationschool-list-classes.md)   | Коллекция [educationClass](educationclass.md) | Получение коллекции объектов **educationClass**.                                               |
+| [Удаление класса](../api/educationschool-delete-classes.md) | [educationClass](educationclass.md)            | Удаление **educationClass** из учебного заведения через свойство навигации classes.       |
+| [Добавление пользователя](../api/educationschool-post-users.md)         | [educationUser](educationuser.md)              | Добавление нового объекта **educationClass** в учебное заведение через публикацию в свойстве навигации **users**. |
+| [Перечисление пользователей](../api/educationschool-list-users.md)       | Коллекция [educationUser](educationuser.md)   | Получение коллекции объектов **educationUser**.                                                |
+| [Удаление пользователя](../api/educationschool-delete-users.md)    | [educationUser](educationuser.md)              | Удаление **educationUser** из учебного заведения через свойство навигации **users**.      |
+| [Обновление](../api/educationschool-update.md)               | [educationSchool](educationschool.md)          | Обновление объекта **educationSchool**.                                                       |
+| [Удаление](../api/educationschool-delete.md)               | Нет                                           | Удаление объекта **educationSchool**.                                                       |
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|id|String|GUID этого учебного заведения.|
-|displayName| Строка| Отображаемое имя учебного заведения.| 
-|description| Строка | Описание учебного заведения.| 
-|status| string| Только для чтения. Допустимые значения: `inactive`, `active`, `expired`, `deleteable`.|
-|externalSource| Едукатионекстерналсаурце| Только для чтения.  Допустимые значения: `sis`, `manual`, `unknownFutureValue`.|
-|principalEmail| String| Адрес электронной почты директора.|
-|principalName| String | Имя директора.|
-|externalPrincipalId| String | Идентификатор директора в системе синхронизации. |
-|highestGrade|String| Самый старший класс. |
-|lowestGrade|String| Самый младший класс. |
-|schoolNumber|String| Номер школы.|
-|externalId|String| Идентификатор учебного заведения в системе синхронизации. |
-|phone|String| Номер телефона учебного заведения. |
-|fax|String| Номер факса учебного заведения. |
-|address|[physicalAddress](physicaladdress.md)| Адрес учебного заведения.|
-|createdBy|[identitySet](identityset.md)|Объект, который создал учебное заведение.|
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
-|:---------------|:--------|:----------|
-|classes|Коллекция [educationClass](educationclass.md)| Классы, которые обучаются в учебном заведении. Допускается значение null.|
-|users|Коллекция [educationUser](educationuser.md)| Пользователи в учебном заведении. Допускается значение null.|
+| Свойство            | Тип                                  | Описание                                                                        |
+| :------------------ | :------------------------------------ | :--------------------------------------------------------------------------------- |
+| id                  | String                                | GUID этого учебного заведения.                                                               |
+| displayName         | Строка                                | Отображаемое имя учебного заведения.                                                        |
+| description         | Строка                                | Описание учебного заведения.                                                         |
+| status              | string                                | Только для чтения. Допустимые значения: `inactive`, `active`, `expired`, `deleteable`. |
+| externalSource      | едукатионекстерналсаурце               | Только для чтения.  Допустимые значения: `sis`, `manual`, `unknownFutureValue`.        |
+| principalEmail      | String                                | Адрес электронной почты директора.                                                    |
+| principalName       | String                                | Имя директора.                                                             |
+| externalPrincipalId | String                                | Идентификатор директора в системе синхронизации.                                                 |
+| highestGrade        | String                                | Самый старший класс.                                                              |
+| lowestGrade         | String                                | Самый младший класс.                                                               |
+| schoolNumber        | String                                | Номер школы.                                                                     |
+| externalId          | String                                | Идентификатор учебного заведения в системе синхронизации.                                                    |
+| phone               | String                                | Номер телефона учебного заведения.                                                            |
+| address             | [physicalAddress](physicaladdress.md) | Адрес учебного заведения.                                                             |
+| createdBy           | [identitySet](identityset.md)         | Объект, который создал учебное заведение.                                                     |
+
+## <a name="relationships"></a>Связи
+
+| Связь | Тип                                           | Описание                             |
+| :----------- | :--------------------------------------------- | :-------------------------------------- |
+| classes      | Коллекция [educationClass](educationclass.md) | Классы, которые обучаются в учебном заведении. Допускается значение null. |
+| users        | Коллекция [educationUser](educationuser.md)   | Пользователи в учебном заведении. Допускается значение null.          |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -84,7 +84,6 @@ ms.locfileid: "36030508"
   "address": {"@odata.type": "microsoft.graph.physicalAddress"},
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "externalId": "String",
-  "fax": "String",
   "phone": "String",
 }
 ```

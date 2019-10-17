@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 1b5e0807ae73110a921c70beef6a98589db41269
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e63fa37dacea7fee6d4378a2a6040a5cf71f3790
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972553"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37553938"
 ---
 # <a name="educationschool-resource-type"></a>Тип ресурса educationSchool
 
@@ -48,7 +48,6 @@ ms.locfileid: "35972553"
 | externalId          | String                                | Идентификатор учебного заведения в системе синхронизации.                    |
 | externalPrincipalId | String                                | Идентификатор директора в системе синхронизации.                 |
 | externalSource      | string                                | Только для чтения. Возможные значения: `sis` или `manual`. |
-| fax                 | String                                | Номер факса учебного заведения.                              |
 | highestGrade        | String                                | Самый старший класс.                              |
 | lowestGrade         | String                                | Самый младший класс.                               |
 | phone               | String                                | Номер телефона учебного заведения.                            |
@@ -56,9 +55,9 @@ ms.locfileid: "35972553"
 | principalName       | String                                | Имя директора.                             |
 | schoolNumber        | String                                | Номер школы.                                     |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
-| Отношение | Тип                                           | Описание                             |
+| Связь | Тип                                           | Описание                             |
 | :----------- | :--------------------------------------------- | :-------------------------------------- |
 | classes      | Коллекция [educationClass](educationclass.md) | Классы, которые обучаются в учебном заведении. Допускается значение null. |
 | users        | Коллекция [educationUser](educationuser.md)   | Пользователи в учебном заведении. Допускается значение null.          |
@@ -86,7 +85,6 @@ ms.locfileid: "35972553"
   "externalId": "String",
   "externalPrincipalId": "String",
   "externalSource": "string",
-  "fax": "String",
   "highestGrade": "String",
   "id": "String (identifier)",
   "lowestGrade": "String",

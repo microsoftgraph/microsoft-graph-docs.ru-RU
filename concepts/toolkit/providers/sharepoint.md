@@ -1,16 +1,16 @@
 ---
-title: поставщик SharePoint
+title: Поставщик SharePoint
 description: Используйте поставщика SharePoint в веб-частях SharePoint, чтобы включить в себя доступ к компонентам Microsoft Graph.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 684214e1490238564065c2ed53588b9700d17dc3
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: e2088c41ce8f0cc3e55d269fc5f55c3c95633fbd
+ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35243076"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "37553903"
 ---
-# <a name="sharepoint-provider"></a>поставщик SharePoint
+# <a name="sharepoint-provider"></a>Поставщик SharePoint
 
 Используйте поставщика SharePoint в веб-частях SharePoint, чтобы включить в себя доступ к компонентам Microsoft Graph.
 
@@ -23,7 +23,7 @@ ms.locfileid: "35243076"
 ```ts
 
 // import the providers at the top of the page
-import {Providers, SharePointProvider} from '@microsoft/mgt';
+import {Providers, SharePointProvider} from '@microsoft/mgt/dist/commonjs';
 
 // add the onInit() method if not already there in your web part class
 protected async onInit() {
