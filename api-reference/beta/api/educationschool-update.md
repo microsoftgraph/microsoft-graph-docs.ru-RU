@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0e5ad20740f30515b29fb5d54b18032a08789b79
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 52c5dc51edaebb0c5265af29990b548a490b1886
+ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416095"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37581201"
 ---
 # <a name="update-educationschool-properties"></a>Обновление свойств educationSchool
 
@@ -19,51 +19,58 @@ ms.locfileid: "36416095"
 Обновление свойств объекта school.
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
-|:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
-|Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | EduRoster.ReadWrite.All |
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
+| :------------------------------------- | :------------------------------------------ |
+| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Для приложений                            | EduRoster.ReadWrite.All                     |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /education/schools/{id}
 ```
+
 ## <a name="request-headers"></a>Заголовки запросов
-| Заголовок       | Значение |
-|:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
-| Content-Type  | application/json  |
+
+| Заголовок        | Значение                     |
+| :------------ | :------------------------ |
+| Авторизация | Bearer {токен}. Обязательный. |
+| Content-Type  | application/json          |
 
 ## <a name="request-body"></a>Текст запроса
+
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-| Свойство     | Тип   |Описание|
-|:---------------|:--------|:----------|
-|displayName| Строка| Отображаемое имя школы| 
-|description| String | Описание школы| 
-|principalEmail| String| Адрес электронной почты директора|
-|principalName| String | Имя директора|
-|externalPrincipalId| String | Идентификатор директора в системе синхронизации. |
-|highestGrade|String| Самый старший класс. |
-|lowestGrade|String| Самый младший класс. |
-|schoolNumber|String| Номер школы.|
-|externalId|String| Идентификатор учебного заведения в системе синхронизации. |
-|phone|String| Номер телефона учебного заведения. |
-|fax|String| Номер факса учебного заведения. |
-|address|[physicalAddress](../resources/physicaladdress.md)| Адрес учебного заведения.|
-|createdBy|[identitySet](../resources/identityset.md)|Объект, который создал учебное заведение.|
+| Свойство            | Тип                                               | Описание                        |
+| :------------------ | :------------------------------------------------- | :--------------------------------- |
+| displayName         | Строка                                             | Отображаемое имя школы         |
+| description         | String                                             | Описание школы          |
+| principalEmail      | String                                             | Адрес электронной почты директора     |
+| principalName       | String                                             | Имя директора              |
+| externalPrincipalId | String                                             | Идентификатор директора в системе синхронизации. |
+| highestGrade        | String                                             | Самый старший класс.              |
+| lowestGrade         | String                                             | Самый младший класс.               |
+| schoolNumber        | String                                             | Номер школы.                     |
+| externalId          | String                                             | Идентификатор учебного заведения в системе синхронизации.    |
+| phone               | String                                             | Номер телефона учебного заведения.            |
+| address             | [physicalAddress](../resources/physicaladdress.md) | Адрес учебного заведения.             |
+| createdBy           | [identitySet](../resources/identityset.md)         | Объект, который создал учебное заведение.     |
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвратит код отклика `200 OK` и обновленный объект [educationSchool](../resources/educationschool.md) в теле отклика.
+
 ## <a name="example"></a>Пример
+
 ##### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_educationschool"
@@ -81,19 +88,18 @@ Content-length: 292
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationschool-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationschool-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationschool-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+
+Ниже приведен пример отклика.
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -127,7 +133,6 @@ Content-length: 292
     "street": "12345 Main St."
   },
   "externalId": "10002",
-  "fax": "+1 (253) 555-0101",
   "phone": "+1 (253) 555-0102"
 }
 ```
