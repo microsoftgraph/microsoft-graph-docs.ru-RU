@@ -34,7 +34,7 @@ ms.locfileid: "34063412"
 1. Логика приложения. Этот шаг фиксирует событие, запускающее публикацию уведомления для пользователя. Эта логика зависит от приложения и может относиться к обновлению события или данных других элементов в Microsoft Graph, например новому событию календаря, назначению задачи или другому действию, о котором ваша служба приложений хочет уведомить пользователя.
 2. Сервер приложений публикует уведомление для целевого пользователя с помощью API уведомлений Microsoft Graph. Дополнительные сведения см. в статье [Серверная интеграция](notifications-integrating-app-server.md).
 3. После получения веб-запроса, содержащего новое уведомление, служба уведомлений Microsoft Graph безопасно сохраняет контент уведомления в облаке для этого приложения и этого пользователя.
-4. Для каждого экземпляра клиента приложения, подписывающегося на получение уведомлений для этого пользователя, служба уведомлений Microsoft Graph отправляет сигнал для уведомления клиента приложения посредством собственной службы push-уведомлений, предоставляемой операционной системой. В этом случае мы имеем дело с приложением UWP для Windows, использующим для отправки сигнала [необработанные push-уведомления WNS](https://docs.microsoft.com/ru-RU/windows/uwp/design/shell/tiles-and-notifications/raw-notification-overview). 
+4. Для каждого экземпляра клиента приложения, подписывающегося на получение уведомлений для этого пользователя, служба уведомлений Microsoft Graph отправляет сигнал для уведомления клиента приложения посредством собственной службы push-уведомлений, предоставляемой операционной системой. В этом случае мы имеем дело с приложением UWP для Windows, использующим для отправки сигнала [необработанные push-уведомления WNS](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/raw-notification-overview). 
 5. После того, как приложение получит сигнал с помощью входящего push-уведомления, оно обращается к SDK за получением изменений в хранилище уведомлений пользователя. 
 6. SDK создает безопасное и соответствующее требованиям соединение с хранилищем уведомлений пользователя в Microsoft Graph.
 7. SDK получает изменения данных: в этом случае — новый контент уведомления. 
@@ -57,7 +57,7 @@ ms.locfileid: "34063412"
 2. Приложение вызывает SDK клиента, чтобы обновить или удалить уведомление. В настоящее время представлено два свойства, связанных с изменением состояния: **userActionState** и **readState**, но ваше приложение может определять эти состояния и необходимость их обновления. Например, если пользователь закрывает всплывающее уведомление, вы можете обновить свойство **userActionState**, присвоив ему значение Dismissed. Когда пользователь щелкает всплывающее уведомление и запускает приложение для использования соответствующего контента приложения, вы можете обновить свойство **userActionState**, присвоив ему значение Activated, и обновить свойство **readState**, присвоив ему значение Read. 
 3. После вызова соответствующего API для обновления или удаления уведомления пакет SDK вызовет хранилище уведомлений пользователя в облаке, чтобы развернуть это изменение для других экземпляров клиента приложения с этим вошедшим пользователем. 
 4. После получения от клиента запроса на обновление или удаление служба уведомлений Microsoft Graph обновит хранилище уведомлений и определит другие экземпляры клиентов приложения, подписанные на это изменение.
-5. Для каждой подписки экземпляра клиента приложения служба уведомлений Microsoft Graph отправляет сигнал для уведомления клиента приложения посредством собственной службы push-уведомлений, предоставляемой операционной системой. В этом случае мы имеем дело с приложением UWP для Windows, использующим для отправки сигнала [необработанные push-уведомления WNS](https://docs.microsoft.com/ru-RU/windows/uwp/design/shell/tiles-and-notifications/raw-notification-overview). 
+5. Для каждой подписки экземпляра клиента приложения служба уведомлений Microsoft Graph отправляет сигнал для уведомления клиента приложения посредством собственной службы push-уведомлений, предоставляемой операционной системой. В этом случае мы имеем дело с приложением UWP для Windows, использующим для отправки сигнала [необработанные push-уведомления WNS](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/raw-notification-overview). 
 6. После того, как приложение получит сигнал с помощью входящего push-уведомления, оно обращается к SDK за получением изменений в хранилище уведомлений пользователя. 
 7. SDK создает безопасное и соответствующее требованиям соединение с хранилищем уведомлений пользователя в Microsoft Graph.
 8. SDK получает изменения данных: в этом случае изменениями являются обновления состояния уведомления или удаления уведомления. 
@@ -88,8 +88,8 @@ ms.locfileid: "34063412"
 
 Дополнительные сведения о добавлении и использовании пакетов NuGet в приложении UWP см. в следующих статьях:
 
-* [Использование пакетов с сайта nuget.org](https://docs.microsoft.com/ru-RU/azure/devops/artifacts/nuget/upstream-sources?view=vsts&tabs=new-nav)
-* [Краткое руководство. Установка и использование пакета в Visual Studio](https://docs.microsoft.com/ru-RU/nuget/quickstart/install-and-use-a-package-in-visual-studio)
+* [Использование пакетов с сайта nuget.org](https://docs.microsoft.com/en-us/azure/devops/artifacts/nuget/upstream-sources?view=vsts&tabs=new-nav)
+* [Краткое руководство. Установка и использование пакета в Visual Studio](https://docs.microsoft.com/en-us/nuget/quickstart/install-and-use-a-package-in-visual-studio)
 
 
 ## <a name="initializing-the-connected-device-platforms"></a>Инициализация платформы подключенных устройств
@@ -111,7 +111,7 @@ platform.Start();
 
 Все веб-вызовы, выполняемые SDK, включая получение контента нового входящего уведомления, обновление состояний уведомлений и т. д., считываются из данных пользователя или записываются в них, поэтому всегда требуется действующий маркер доступа. При использовании SDK требуется обработка следующих событий, вызываемых, когда маркер доступа запрашивается или становится недействительным. Это необходимо, чтобы правильно обрабатывать маркер доступа пользователя после инициализации платформы. 
 
-#### <a name="accountmanageraccesstokenrequestedasync"></a>AccountManager_AccessTokenRequestedAsync
+#### <a name="accountmanager_accesstokenrequestedasync"></a>AccountManager_AccessTokenRequestedAsync
 
 Полную реализацию см. в [примере приложения Windows](https://github.com/Microsoft/project-rome/blob/master/Windows/samples/GraphNotificationsSample/ConnectedDevicesManager.cs). 
 
@@ -135,7 +135,7 @@ private async void AccountManager_AccessTokenRequestedAsync(ConnectedDevicesAcco
 }
 ```
 
-#### <a name="accountmanageraccesstokeninvalidated"></a>AccountManager_AccessTokenInvalidated
+#### <a name="accountmanager_accesstokeninvalidated"></a>AccountManager_AccessTokenInvalidated
 
 Полную реализацию см. в [примере приложения Windows](https://github.com/Microsoft/project-rome/blob/master/Windows/samples/GraphNotificationsSample/ConnectedDevicesManager.cs). 
 
@@ -152,7 +152,7 @@ private void AccountManager_AccessTokenInvalidated(ConnectedDevicesAccountManage
 
 Поэтому требуется действующий канал WNS, обеспечивающий передачу необработанных push-уведомлений. Следующий обратный вызов события обрабатывает истечение срока действия push-канала WNS. 
 
-#### <a name="notificationregistrationmanagernotificationregistrationstatechanged"></a>NotificationRegistrationManager_NotificationRegistrationStateChanged
+#### <a name="notificationregistrationmanager_notificationregistrationstatechanged"></a>NotificationRegistrationManager_NotificationRegistrationStateChanged
 
 Полную реализацию см. в [примере приложения Windows](https://github.com/Microsoft/project-rome/blob/master/Windows/samples/GraphNotificationsSample/ConnectedDevicesManager.cs). 
 
@@ -277,6 +277,6 @@ await channel.DeleteUserNotificationAsync(notification.Id);
 
 ## <a name="see-also"></a>См. также
 
-- [Справочник по API](https://docs.microsoft.com/ru-RU/windows/project-rome/notifications/api-reference-for-windows/) содержит информацию о всех API-интерфейсах, связанных с функциями уведомлений в SDK. 
+- [Справочник по API](https://docs.microsoft.com/en-us/windows/project-rome/notifications/api-reference-for-windows/) содержит информацию о всех API-интерфейсах, связанных с функциями уведомлений в SDK. 
 - [Пример клиентского кода](https://github.com/Microsoft/project-rome/tree/master/Windows/samples/GraphNotificationsSample) для приложений UWP Windows.
 - [Пример серверного кода приложения](notifications-integrating-app-server.md) для публикации уведомлений. 

@@ -90,7 +90,7 @@ target 'iOSSample' do
 
 Клиентский SDK создан на основе инфраструктуры, называемой платформой подключенных устройств. Перед использованием каких-либо функций необходимо инициализировать платформу в вашем приложении. Действия по инициализации должны находиться в методе **AppDelegate**, поскольку они должны быть выполнены до использования сценариев уведомлений.
 
-Необходимо создать и инициализировать платформу путем создания экземпляра класса [**MCDConnectedDevicesPlatform**](https://docs.microsoft.com/ru-RU/windows/project-rome/objectivec-api/connecteddevices/mcdconnecteddevicesplatform). Перед этим подключите обработчики событий, как показано здесь, поскольку после запуска платформы могут начать возникать события.  
+Необходимо создать и инициализировать платформу путем создания экземпляра класса [**MCDConnectedDevicesPlatform**](https://docs.microsoft.com/en-us/windows/project-rome/objectivec-api/connecteddevices/mcdconnecteddevicesplatform). Перед этим подключите обработчики событий, как показано здесь, поскольку после запуска платформы могут начать возникать события.  
 
 ```ObjectiveC
 MCDConnectedDevicesPlatform* platform = [MCDConnectedDevicesPlatform new];
@@ -251,6 +251,6 @@ if (notification != nil) {
 
 ## <a name="see-also"></a>См. также
 
-- [Справочник по API](https://docs.microsoft.com/ru-RU/windows/project-rome/notifications/api-reference-for-ios/) содержит информацию о всех API-интерфейсах, связанных с функциями уведомлений в SDK. 
+- [Справочник по API](https://docs.microsoft.com/en-us/windows/project-rome/notifications/api-reference-for-ios/) содержит информацию о всех API-интерфейсах, связанных с функциями уведомлений в SDK. 
 - [Пример клиентского кода](https://github.com/Microsoft/project-rome/tree/master/iOS/samples/GraphNotifications) для приложений Android.
 - [Пример серверного кода приложения](notifications-integrating-app-server.md) для публикации уведомлений. 

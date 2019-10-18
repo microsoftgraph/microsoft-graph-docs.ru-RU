@@ -116,7 +116,7 @@ import com.microsoft.connecteddevices.userdata.usernotifications;
 
 Клиентский SDK создан на основе инфраструктуры, называемой платформой подключенных устройств. Перед использованием каких-либо функций необходимо инициализировать платформу в вашем приложении. Действия по инициализации должны находиться в методе **OnCreate** класса main, так как они должны быть выполнены до использования сценариев уведомлений.
 
-Необходимо создать и инициализировать платформу путем создания экземпляра класса [**ConnectedDevicesPlatform**](https://docs.microsoft.com/ru-RU/java/api/com.microsoft.connecteddevices.connecteddevicesplatform?view=rome-android-latest). Перед этим подключите обработчики событий, так как после запуска платформы могут начать возникать события. 
+Необходимо создать и инициализировать платформу путем создания экземпляра класса [**ConnectedDevicesPlatform**](https://docs.microsoft.com/en-us/java/api/com.microsoft.connecteddevices.connecteddevicesplatform?view=rome-android-latest). Перед этим подключите обработчики событий, так как после запуска платформы могут начать возникать события. 
 
 ```java
 ConnectedDevicesPlatform platform = new ConnectedDevicesPlatform(context);
