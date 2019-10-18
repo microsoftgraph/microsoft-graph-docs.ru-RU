@@ -5,65 +5,72 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0e5ad20740f30515b29fb5d54b18032a08789b79
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 52c5dc51edaebb0c5265af29990b548a490b1886
+ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416095"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37581201"
 ---
-# <a name="update-educationschool-properties"></a><span data-ttu-id="f2bd0-103">Обновление свойств educationSchool</span><span class="sxs-lookup"><span data-stu-id="f2bd0-103">Update educationschool properties</span></span>
+# <a name="update-educationschool-properties"></a><span data-ttu-id="12546-103">Обновление свойств educationSchool</span><span class="sxs-lookup"><span data-stu-id="12546-103">Update educationschool properties</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f2bd0-104">Обновление свойств объекта school.</span><span class="sxs-lookup"><span data-stu-id="f2bd0-104">Update the properties of a school object.</span></span>
+<span data-ttu-id="12546-104">Обновление свойств объекта school.</span><span class="sxs-lookup"><span data-stu-id="12546-104">Update the properties of a school object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f2bd0-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f2bd0-105">Permissions</span></span>
-<span data-ttu-id="f2bd0-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f2bd0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="12546-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="12546-105">Permissions</span></span>
 
-|<span data-ttu-id="f2bd0-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f2bd0-108">Permission type</span></span>      | <span data-ttu-id="f2bd0-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f2bd0-109">Permissions (from least to most privileged)</span></span>              |
-|:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f2bd0-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f2bd0-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="f2bd0-111">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f2bd0-111">Not supported.</span></span>  |
-|<span data-ttu-id="f2bd0-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f2bd0-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="f2bd0-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f2bd0-113">Not supported.</span></span>  |
-|<span data-ttu-id="f2bd0-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f2bd0-114">Application</span></span> | <span data-ttu-id="f2bd0-115">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f2bd0-115">EduRoster.ReadWrite.All</span></span> |
+<span data-ttu-id="12546-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="12546-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="f2bd0-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f2bd0-116">HTTP request</span></span>
+| <span data-ttu-id="12546-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="12546-108">Permission type</span></span>                        | <span data-ttu-id="12546-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="12546-109">Permissions (from least to most privileged)</span></span> |
+| :------------------------------------- | :------------------------------------------ |
+| <span data-ttu-id="12546-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="12546-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="12546-111">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="12546-111">Not supported.</span></span>                              |
+| <span data-ttu-id="12546-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="12546-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="12546-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="12546-113">Not supported.</span></span>                              |
+| <span data-ttu-id="12546-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="12546-114">Application</span></span>                            | <span data-ttu-id="12546-115">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="12546-115">EduRoster.ReadWrite.All</span></span>                     |
+
+## <a name="http-request"></a><span data-ttu-id="12546-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="12546-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /education/schools/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="f2bd0-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f2bd0-117">Request headers</span></span>
-| <span data-ttu-id="f2bd0-118">Заголовок</span><span class="sxs-lookup"><span data-stu-id="f2bd0-118">Header</span></span>       | <span data-ttu-id="f2bd0-119">Значение</span><span class="sxs-lookup"><span data-stu-id="f2bd0-119">Value</span></span> |
-|:---------------|:--------|
-| <span data-ttu-id="f2bd0-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f2bd0-120">Authorization</span></span>  | <span data-ttu-id="f2bd0-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f2bd0-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="f2bd0-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f2bd0-123">Content-Type</span></span>  | <span data-ttu-id="f2bd0-124">application/json</span><span class="sxs-lookup"><span data-stu-id="f2bd0-124">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="f2bd0-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f2bd0-125">Request body</span></span>
-<span data-ttu-id="f2bd0-126">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="f2bd0-126">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="f2bd0-127">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="f2bd0-127">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="f2bd0-128">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="f2bd0-128">For best performance, don't include existing values that haven't changed.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="12546-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="12546-117">Request headers</span></span>
 
-| <span data-ttu-id="f2bd0-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="f2bd0-129">Property</span></span>     | <span data-ttu-id="f2bd0-130">Тип</span><span class="sxs-lookup"><span data-stu-id="f2bd0-130">Type</span></span>   |<span data-ttu-id="f2bd0-131">Описание</span><span class="sxs-lookup"><span data-stu-id="f2bd0-131">Description</span></span>|
-|:---------------|:--------|:----------|
-|<span data-ttu-id="f2bd0-132">displayName</span><span class="sxs-lookup"><span data-stu-id="f2bd0-132">displayName</span></span>| <span data-ttu-id="f2bd0-133">Строка</span><span class="sxs-lookup"><span data-stu-id="f2bd0-133">String</span></span>| <span data-ttu-id="f2bd0-134">Отображаемое имя школы</span><span class="sxs-lookup"><span data-stu-id="f2bd0-134">Display name of the school</span></span>| 
-|<span data-ttu-id="f2bd0-135">description</span><span class="sxs-lookup"><span data-stu-id="f2bd0-135">description</span></span>| <span data-ttu-id="f2bd0-136">String</span><span class="sxs-lookup"><span data-stu-id="f2bd0-136">String</span></span> | <span data-ttu-id="f2bd0-137">Описание школы</span><span class="sxs-lookup"><span data-stu-id="f2bd0-137">Description of the school</span></span>| 
-|<span data-ttu-id="f2bd0-138">principalEmail</span><span class="sxs-lookup"><span data-stu-id="f2bd0-138">principalEmail</span></span>| <span data-ttu-id="f2bd0-139">String</span><span class="sxs-lookup"><span data-stu-id="f2bd0-139">String</span></span>| <span data-ttu-id="f2bd0-140">Адрес электронной почты директора</span><span class="sxs-lookup"><span data-stu-id="f2bd0-140">Email address of the principal</span></span>|
-|<span data-ttu-id="f2bd0-141">principalName</span><span class="sxs-lookup"><span data-stu-id="f2bd0-141">principalName</span></span>| <span data-ttu-id="f2bd0-142">String</span><span class="sxs-lookup"><span data-stu-id="f2bd0-142">String</span></span> | <span data-ttu-id="f2bd0-143">Имя директора</span><span class="sxs-lookup"><span data-stu-id="f2bd0-143">Name of the principal</span></span>|
-|<span data-ttu-id="f2bd0-144">externalPrincipalId</span><span class="sxs-lookup"><span data-stu-id="f2bd0-144">externalPrincipalId</span></span>| <span data-ttu-id="f2bd0-145">String</span><span class="sxs-lookup"><span data-stu-id="f2bd0-145">String</span></span> | <span data-ttu-id="f2bd0-146">Идентификатор директора в системе синхронизации.</span><span class="sxs-lookup"><span data-stu-id="f2bd0-146">Id of principal in syncing system.</span></span> |
-|<span data-ttu-id="f2bd0-147">highestGrade</span><span class="sxs-lookup"><span data-stu-id="f2bd0-147">highestGrade</span></span>|<span data-ttu-id="f2bd0-148">String</span><span class="sxs-lookup"><span data-stu-id="f2bd0-148">String</span></span>| <span data-ttu-id="f2bd0-149">Самый старший класс.</span><span class="sxs-lookup"><span data-stu-id="f2bd0-149">Highest grade taught.</span></span> |
-|<span data-ttu-id="f2bd0-150">lowestGrade</span><span class="sxs-lookup"><span data-stu-id="f2bd0-150">lowestGrade</span></span>|<span data-ttu-id="f2bd0-151">String</span><span class="sxs-lookup"><span data-stu-id="f2bd0-151">String</span></span>| <span data-ttu-id="f2bd0-152">Самый младший класс.</span><span class="sxs-lookup"><span data-stu-id="f2bd0-152">Lowest grade taught.</span></span> |
-|<span data-ttu-id="f2bd0-153">schoolNumber</span><span class="sxs-lookup"><span data-stu-id="f2bd0-153">schoolNumber</span></span>|<span data-ttu-id="f2bd0-154">String</span><span class="sxs-lookup"><span data-stu-id="f2bd0-154">String</span></span>| <span data-ttu-id="f2bd0-155">Номер школы.</span><span class="sxs-lookup"><span data-stu-id="f2bd0-155">School Number.</span></span>|
-|<span data-ttu-id="f2bd0-156">externalId</span><span class="sxs-lookup"><span data-stu-id="f2bd0-156">externalId</span></span>|<span data-ttu-id="f2bd0-157">String</span><span class="sxs-lookup"><span data-stu-id="f2bd0-157">String</span></span>| <span data-ttu-id="f2bd0-158">Идентификатор учебного заведения в системе синхронизации.</span><span class="sxs-lookup"><span data-stu-id="f2bd0-158">Id of school in syncing system.</span></span> |
-|<span data-ttu-id="f2bd0-159">phone</span><span class="sxs-lookup"><span data-stu-id="f2bd0-159">phone</span></span>|<span data-ttu-id="f2bd0-160">String</span><span class="sxs-lookup"><span data-stu-id="f2bd0-160">String</span></span>| <span data-ttu-id="f2bd0-161">Номер телефона учебного заведения.</span><span class="sxs-lookup"><span data-stu-id="f2bd0-161">Phone number of school.</span></span> |
-|<span data-ttu-id="f2bd0-162">fax</span><span class="sxs-lookup"><span data-stu-id="f2bd0-162">fax</span></span>|<span data-ttu-id="f2bd0-163">String</span><span class="sxs-lookup"><span data-stu-id="f2bd0-163">String</span></span>| <span data-ttu-id="f2bd0-164">Номер факса учебного заведения.</span><span class="sxs-lookup"><span data-stu-id="f2bd0-164">Fax number of school.</span></span> |
-|<span data-ttu-id="f2bd0-165">address</span><span class="sxs-lookup"><span data-stu-id="f2bd0-165">address</span></span>|[<span data-ttu-id="f2bd0-166">physicalAddress</span><span class="sxs-lookup"><span data-stu-id="f2bd0-166">physicalAddress</span></span>](../resources/physicaladdress.md)| <span data-ttu-id="f2bd0-167">Адрес учебного заведения.</span><span class="sxs-lookup"><span data-stu-id="f2bd0-167">Address of the School.</span></span>|
-|<span data-ttu-id="f2bd0-168">createdBy</span><span class="sxs-lookup"><span data-stu-id="f2bd0-168">createdBy</span></span>|[<span data-ttu-id="f2bd0-169">identitySet</span><span class="sxs-lookup"><span data-stu-id="f2bd0-169">identitySet</span></span>](../resources/identityset.md)|<span data-ttu-id="f2bd0-170">Объект, который создал учебное заведение.</span><span class="sxs-lookup"><span data-stu-id="f2bd0-170">Entity who created the school.</span></span>|
+| <span data-ttu-id="12546-118">Заголовок</span><span class="sxs-lookup"><span data-stu-id="12546-118">Header</span></span>        | <span data-ttu-id="12546-119">Значение</span><span class="sxs-lookup"><span data-stu-id="12546-119">Value</span></span>                     |
+| :------------ | :------------------------ |
+| <span data-ttu-id="12546-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="12546-120">Authorization</span></span> | <span data-ttu-id="12546-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="12546-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="12546-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="12546-123">Content-Type</span></span>  | <span data-ttu-id="12546-124">application/json</span><span class="sxs-lookup"><span data-stu-id="12546-124">application/json</span></span>          |
 
-## <a name="response"></a><span data-ttu-id="f2bd0-171">Отклик</span><span class="sxs-lookup"><span data-stu-id="f2bd0-171">Response</span></span>
-<span data-ttu-id="f2bd0-172">При успешном выполнении этот метод возвратит код отклика `200 OK` и обновленный объект [educationSchool](../resources/educationschool.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="f2bd0-172">If successful, this method returns a `200 OK` response code and an updated [educationSchool](../resources/educationschool.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="f2bd0-173">Пример</span><span class="sxs-lookup"><span data-stu-id="f2bd0-173">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f2bd0-174">Запрос</span><span class="sxs-lookup"><span data-stu-id="f2bd0-174">Request</span></span>
-<span data-ttu-id="f2bd0-175">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f2bd0-175">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="12546-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="12546-125">Request body</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="f2bd0-176">HTTP</span><span class="sxs-lookup"><span data-stu-id="f2bd0-176">HTTP</span></span>](#tab/http)
+<span data-ttu-id="12546-126">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="12546-126">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="12546-127">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="12546-127">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="12546-128">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="12546-128">For best performance, don't include existing values that haven't changed.</span></span>
+
+| <span data-ttu-id="12546-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="12546-129">Property</span></span>            | <span data-ttu-id="12546-130">Тип</span><span class="sxs-lookup"><span data-stu-id="12546-130">Type</span></span>                                               | <span data-ttu-id="12546-131">Описание</span><span class="sxs-lookup"><span data-stu-id="12546-131">Description</span></span>                        |
+| :------------------ | :------------------------------------------------- | :--------------------------------- |
+| <span data-ttu-id="12546-132">displayName</span><span class="sxs-lookup"><span data-stu-id="12546-132">displayName</span></span>         | <span data-ttu-id="12546-133">Строка</span><span class="sxs-lookup"><span data-stu-id="12546-133">String</span></span>                                             | <span data-ttu-id="12546-134">Отображаемое имя школы</span><span class="sxs-lookup"><span data-stu-id="12546-134">Display name of the school</span></span>         |
+| <span data-ttu-id="12546-135">description</span><span class="sxs-lookup"><span data-stu-id="12546-135">description</span></span>         | <span data-ttu-id="12546-136">String</span><span class="sxs-lookup"><span data-stu-id="12546-136">String</span></span>                                             | <span data-ttu-id="12546-137">Описание школы</span><span class="sxs-lookup"><span data-stu-id="12546-137">Description of the school</span></span>          |
+| <span data-ttu-id="12546-138">principalEmail</span><span class="sxs-lookup"><span data-stu-id="12546-138">principalEmail</span></span>      | <span data-ttu-id="12546-139">String</span><span class="sxs-lookup"><span data-stu-id="12546-139">String</span></span>                                             | <span data-ttu-id="12546-140">Адрес электронной почты директора</span><span class="sxs-lookup"><span data-stu-id="12546-140">Email address of the principal</span></span>     |
+| <span data-ttu-id="12546-141">principalName</span><span class="sxs-lookup"><span data-stu-id="12546-141">principalName</span></span>       | <span data-ttu-id="12546-142">String</span><span class="sxs-lookup"><span data-stu-id="12546-142">String</span></span>                                             | <span data-ttu-id="12546-143">Имя директора</span><span class="sxs-lookup"><span data-stu-id="12546-143">Name of the principal</span></span>              |
+| <span data-ttu-id="12546-144">externalPrincipalId</span><span class="sxs-lookup"><span data-stu-id="12546-144">externalPrincipalId</span></span> | <span data-ttu-id="12546-145">String</span><span class="sxs-lookup"><span data-stu-id="12546-145">String</span></span>                                             | <span data-ttu-id="12546-146">Идентификатор директора в системе синхронизации.</span><span class="sxs-lookup"><span data-stu-id="12546-146">Id of principal in syncing system.</span></span> |
+| <span data-ttu-id="12546-147">highestGrade</span><span class="sxs-lookup"><span data-stu-id="12546-147">highestGrade</span></span>        | <span data-ttu-id="12546-148">String</span><span class="sxs-lookup"><span data-stu-id="12546-148">String</span></span>                                             | <span data-ttu-id="12546-149">Самый старший класс.</span><span class="sxs-lookup"><span data-stu-id="12546-149">Highest grade taught.</span></span>              |
+| <span data-ttu-id="12546-150">lowestGrade</span><span class="sxs-lookup"><span data-stu-id="12546-150">lowestGrade</span></span>         | <span data-ttu-id="12546-151">String</span><span class="sxs-lookup"><span data-stu-id="12546-151">String</span></span>                                             | <span data-ttu-id="12546-152">Самый младший класс.</span><span class="sxs-lookup"><span data-stu-id="12546-152">Lowest grade taught.</span></span>               |
+| <span data-ttu-id="12546-153">schoolNumber</span><span class="sxs-lookup"><span data-stu-id="12546-153">schoolNumber</span></span>        | <span data-ttu-id="12546-154">String</span><span class="sxs-lookup"><span data-stu-id="12546-154">String</span></span>                                             | <span data-ttu-id="12546-155">Номер школы.</span><span class="sxs-lookup"><span data-stu-id="12546-155">School Number.</span></span>                     |
+| <span data-ttu-id="12546-156">externalId</span><span class="sxs-lookup"><span data-stu-id="12546-156">externalId</span></span>          | <span data-ttu-id="12546-157">String</span><span class="sxs-lookup"><span data-stu-id="12546-157">String</span></span>                                             | <span data-ttu-id="12546-158">Идентификатор учебного заведения в системе синхронизации.</span><span class="sxs-lookup"><span data-stu-id="12546-158">Id of school in syncing system.</span></span>    |
+| <span data-ttu-id="12546-159">phone</span><span class="sxs-lookup"><span data-stu-id="12546-159">phone</span></span>               | <span data-ttu-id="12546-160">String</span><span class="sxs-lookup"><span data-stu-id="12546-160">String</span></span>                                             | <span data-ttu-id="12546-161">Номер телефона учебного заведения.</span><span class="sxs-lookup"><span data-stu-id="12546-161">Phone number of school.</span></span>            |
+| <span data-ttu-id="12546-162">address</span><span class="sxs-lookup"><span data-stu-id="12546-162">address</span></span>             | [<span data-ttu-id="12546-163">physicalAddress</span><span class="sxs-lookup"><span data-stu-id="12546-163">physicalAddress</span></span>](../resources/physicaladdress.md) | <span data-ttu-id="12546-164">Адрес учебного заведения.</span><span class="sxs-lookup"><span data-stu-id="12546-164">Address of the School.</span></span>             |
+| <span data-ttu-id="12546-165">createdBy</span><span class="sxs-lookup"><span data-stu-id="12546-165">createdBy</span></span>           | [<span data-ttu-id="12546-166">identitySet</span><span class="sxs-lookup"><span data-stu-id="12546-166">identitySet</span></span>](../resources/identityset.md)         | <span data-ttu-id="12546-167">Объект, который создал учебное заведение.</span><span class="sxs-lookup"><span data-stu-id="12546-167">Entity who created the school.</span></span>     |
+
+## <a name="response"></a><span data-ttu-id="12546-168">Отклик</span><span class="sxs-lookup"><span data-stu-id="12546-168">Response</span></span>
+<span data-ttu-id="12546-169">При успешном выполнении этот метод возвратит код отклика `200 OK` и обновленный объект [educationSchool](../resources/educationschool.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="12546-169">If successful, this method returns a `200 OK` response code and an updated [educationSchool](../resources/educationschool.md) object in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="12546-170">Пример</span><span class="sxs-lookup"><span data-stu-id="12546-170">Example</span></span>
+
+##### <a name="request"></a><span data-ttu-id="12546-171">Запрос</span><span class="sxs-lookup"><span data-stu-id="12546-171">Request</span></span>
+
+<span data-ttu-id="12546-172">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="12546-172">The following is an example of the request.</span></span>
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="12546-173">HTTP</span><span class="sxs-lookup"><span data-stu-id="12546-173">HTTP</span></span>](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_educationschool"
@@ -78,24 +85,23 @@ Content-length: 292
   "description": "Magnate school for the arts. Los Angeles School District"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="f2bd0-177">C#</span><span class="sxs-lookup"><span data-stu-id="f2bd0-177">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="12546-174">C#</span><span class="sxs-lookup"><span data-stu-id="12546-174">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationschool-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f2bd0-178">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f2bd0-178">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="12546-175">JavaScript</span><span class="sxs-lookup"><span data-stu-id="12546-175">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationschool-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f2bd0-179">Цель — C</span><span class="sxs-lookup"><span data-stu-id="f2bd0-179">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="12546-176">Objective-C</span><span class="sxs-lookup"><span data-stu-id="12546-176">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationschool-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="f2bd0-180">Отклик</span><span class="sxs-lookup"><span data-stu-id="f2bd0-180">Response</span></span>
-<span data-ttu-id="f2bd0-181">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="f2bd0-181">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="12546-177">Отклик</span><span class="sxs-lookup"><span data-stu-id="12546-177">Response</span></span>
 
-><span data-ttu-id="f2bd0-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f2bd0-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="12546-178">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="12546-178">The following is an example of the response.</span></span>
+
+><span data-ttu-id="12546-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="12546-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -127,7 +133,6 @@ Content-length: 292
     "street": "12345 Main St."
   },
   "externalId": "10002",
-  "fax": "+1 (253) 555-0101",
   "phone": "+1 (253) 555-0102"
 }
 ```
