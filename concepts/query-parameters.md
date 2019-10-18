@@ -261,7 +261,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 - [Руководство по синтаксису языка запросов по ключевым словам (KQL)](https://docs.microsoft.com/ru-RU/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-- [Свойства сообщений и операторы поиска для обнаружения электронных данных на месте в Exchange 2016](https://technet.microsoft.com/ru-RU//library/dn774955(v=exchg.160).aspx).
+- [Свойства сообщений и операторы поиска для обнаружения электронных данных на месте в Exchange 2016](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx).
 
 ### <a name="using-search-on-person-collections"></a>Использование параметра $search в коллекциях person
 

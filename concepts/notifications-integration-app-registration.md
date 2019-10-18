@@ -22,7 +22,7 @@ ms.locfileid: "35778637"
 
 
 > [!NOTE]
-> Если у вас еще нет учетной записи Майкрософт и вы хотите ее получить, перейдите на страницу  [учетной записи Майкрософт](https://account.microsoft.com/account). Если вы создаете приложение, требующее использования Azure AD версии 1.0 в качестве платформы проверки подлинности и удостоверений для рабочей или учебной учетной записи, см. статью  [Библиотеки проверки подлинности Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries). Если вы хотите ознакомиться с новой единой платформой удостоверений Майкрософт (версия 2.0) или использовать ее, см. [сравнение конечной точки платформы удостоверений Майкрософт и конечной точки Azure AD версии 1.0](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/azure-ad-endpoint-comparison).
+> Если у вас еще нет учетной записи Майкрософт и вы хотите ее получить, перейдите на страницу  [учетной записи Майкрософт](https://account.microsoft.com/account). Если вы создаете приложение, требующее использования Azure AD версии 1.0 в качестве платформы проверки подлинности и удостоверений для рабочей или учебной учетной записи, см. статью  [Библиотеки проверки подлинности Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries). Если вы хотите ознакомиться с новой единой платформой удостоверений Майкрософт (версия 2.0) или использовать ее, см. [сравнение конечной точки платформы удостоверений Майкрософт и конечной точки Azure AD версии 1.0](https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison).
 
 При регистрации приложения сохраните идентификатор приложения или идентификатор клиента под рукой. Вам потребуется этот идентификатор позднее при регистрации приложения для использования на разных устройствах в [Центре партнеров Майкрософт](https://partner.microsoft.com/).
 
@@ -59,6 +59,6 @@ ms.locfileid: "35778637"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Узнайте больше о [разрешениях и согласии](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/v2-permissions-and-consent) или просмотрите [справочник по разрешениям](https://docs.microsoft.com/ru-RU/graph/permissions-reference) Microsoft Graph.
+Узнайте больше о [разрешениях и согласии](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent) или просмотрите [справочник по разрешениям](https://docs.microsoft.com/en-us/graph/permissions-reference) Microsoft Graph.
 
 Теперь, после регистрации своего приложения, перейдите в [Центр партнеров](https://partner.microsoft.com/), чтобы настроить приложение для использования на разных устройствах и выбрать соответствующие целевые платформы приложения для получения уведомлений, отправляемых через Microsoft Graph. Дополнительные сведения см. в статье [Внедрение использования разных устройств](notifications-integration-cross-device-experiences-onboarding.md). 
