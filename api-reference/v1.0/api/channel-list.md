@@ -12,50 +12,50 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 09/04/2019
 ms.locfileid: "36726468"
 ---
-# <a name="list-channels"></a><span data-ttu-id="24430-103">Перечисление каналов</span><span class="sxs-lookup"><span data-stu-id="24430-103">List channels</span></span>
+# <a name="list-channels"></a><span data-ttu-id="cd70f-103">Перечисление каналов</span><span class="sxs-lookup"><span data-stu-id="cd70f-103">List channels</span></span>
 
 
 
-<span data-ttu-id="24430-104">Получение списка [каналов](../resources/channel.md) в команде.</span><span class="sxs-lookup"><span data-stu-id="24430-104">Retrieve the list of [channels](../resources/channel.md) in this team.</span></span>
+<span data-ttu-id="cd70f-104">Получение списка [каналов](../resources/channel.md) в команде.</span><span class="sxs-lookup"><span data-stu-id="cd70f-104">Retrieve the list of [channels](../resources/channel.md) in this team.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="24430-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="24430-105">Permissions</span></span>
-<span data-ttu-id="24430-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="24430-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="cd70f-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="cd70f-105">Permissions</span></span>
+<span data-ttu-id="cd70f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cd70f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="24430-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="24430-108">Permission type</span></span>      | <span data-ttu-id="24430-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="24430-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="cd70f-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="cd70f-108">Permission type</span></span>      | <span data-ttu-id="cd70f-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="cd70f-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="24430-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="24430-110">Delegated (work or school account)</span></span> | <span data-ttu-id="24430-111">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="24430-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="24430-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="24430-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="24430-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="24430-113">Not supported.</span></span>    |
-|<span data-ttu-id="24430-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="24430-114">Application</span></span> | <span data-ttu-id="24430-115">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="24430-115">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="cd70f-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="cd70f-110">Delegated (work or school account)</span></span> | <span data-ttu-id="cd70f-111">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cd70f-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="cd70f-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="cd70f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cd70f-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cd70f-113">Not supported.</span></span>    |
+|<span data-ttu-id="cd70f-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="cd70f-114">Application</span></span> | <span data-ttu-id="cd70f-115">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cd70f-115">Group.Read.All, Group.ReadWrite.All</span></span>    |
 
-> <span data-ttu-id="24430-116">**Примечание**. Этот API поддерживает разрешения администратора.</span><span class="sxs-lookup"><span data-stu-id="24430-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="24430-117">Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.</span><span class="sxs-lookup"><span data-stu-id="24430-117">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
+> <span data-ttu-id="cd70f-116">**Примечание**. Этот API поддерживает разрешения администратора.</span><span class="sxs-lookup"><span data-stu-id="cd70f-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="cd70f-117">Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.</span><span class="sxs-lookup"><span data-stu-id="cd70f-117">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="24430-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="24430-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cd70f-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="cd70f-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}/channels
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="24430-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="24430-119">Optional query parameters</span></span>
-<span data-ttu-id="24430-120">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) $filter, $select и $expand для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="24430-120">This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="cd70f-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="cd70f-119">Optional query parameters</span></span>
+<span data-ttu-id="cd70f-120">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) $filter, $select и $expand для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="cd70f-120">This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="24430-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="24430-121">Request headers</span></span>
-| <span data-ttu-id="24430-122">Заголовок</span><span class="sxs-lookup"><span data-stu-id="24430-122">Header</span></span>       | <span data-ttu-id="24430-123">Значение</span><span class="sxs-lookup"><span data-stu-id="24430-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="cd70f-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="cd70f-121">Request headers</span></span>
+| <span data-ttu-id="cd70f-122">Заголовок</span><span class="sxs-lookup"><span data-stu-id="cd70f-122">Header</span></span>       | <span data-ttu-id="cd70f-123">Значение</span><span class="sxs-lookup"><span data-stu-id="cd70f-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="24430-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="24430-124">Authorization</span></span>  | <span data-ttu-id="24430-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="24430-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="cd70f-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="cd70f-124">Authorization</span></span>  | <span data-ttu-id="cd70f-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="cd70f-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="24430-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="24430-127">Request body</span></span>
-<span data-ttu-id="24430-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="24430-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cd70f-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="cd70f-127">Request body</span></span>
+<span data-ttu-id="cd70f-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="cd70f-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="24430-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="24430-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="cd70f-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="cd70f-129">Response</span></span>
 
-<span data-ttu-id="24430-130">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Channel](../resources/channel.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="24430-130">If successful, this method returns a `200 OK` response code and collection of [Channel](../resources/channel.md) objects in the response body.</span></span>
+<span data-ttu-id="cd70f-130">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Channel](../resources/channel.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="cd70f-130">If successful, this method returns a `200 OK` response code and collection of [Channel](../resources/channel.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="24430-131">Пример</span><span class="sxs-lookup"><span data-stu-id="24430-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="24430-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="24430-132">Request</span></span>
-<span data-ttu-id="24430-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="24430-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="cd70f-131">Пример</span><span class="sxs-lookup"><span data-stu-id="cd70f-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="cd70f-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="cd70f-132">Request</span></span>
+<span data-ttu-id="cd70f-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="cd70f-133">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="24430-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="24430-134">--Http</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="cd70f-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="cd70f-134">--Http</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_channels"
@@ -63,26 +63,26 @@ GET /teams/{id}/channels
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/teams/{id}/channels
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="24430-135">C#</span><span class="sxs-lookup"><span data-stu-id="24430-135">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="cd70f-135">C#</span><span class="sxs-lookup"><span data-stu-id="cd70f-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-channels-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="24430-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="24430-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="cd70f-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cd70f-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-channels-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="24430-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="24430-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="cd70f-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cd70f-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-channels-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="24430-138">Java</span><span class="sxs-lookup"><span data-stu-id="24430-138">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="cd70f-138">Java</span><span class="sxs-lookup"><span data-stu-id="cd70f-138">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-channels-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="24430-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="24430-139">Response</span></span>
-<span data-ttu-id="24430-p104">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="24430-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="cd70f-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="cd70f-139">Response</span></span>
+<span data-ttu-id="cd70f-p104">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="cd70f-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

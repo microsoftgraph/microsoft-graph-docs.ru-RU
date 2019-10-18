@@ -12,27 +12,27 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 07/26/2019
 ms.locfileid: "35908595"
 ---
-# <a name="teamwork-resource-type"></a><span data-ttu-id="f8319-103">Тип ресурса teamwork</span><span class="sxs-lookup"><span data-stu-id="f8319-103">teamwork resource type</span></span>
+# <a name="teamwork-resource-type"></a><span data-ttu-id="6d9f3-103">Тип ресурса teamwork</span><span class="sxs-lookup"><span data-stu-id="6d9f3-103">teamwork resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f8319-104">Контейнер для набора функциональных возможностей Microsoft Teams, доступных для организации.</span><span class="sxs-lookup"><span data-stu-id="f8319-104">A container for the range of Microsoft Teams functionalities that are available for the organization.</span></span>
+<span data-ttu-id="6d9f3-104">Контейнер для набора функциональных возможностей Microsoft Teams, доступных для организации.</span><span class="sxs-lookup"><span data-stu-id="6d9f3-104">A container for the range of Microsoft Teams functionalities that are available for the organization.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="f8319-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="f8319-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="6d9f3-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="6d9f3-105">Properties</span></span>
 
-| <span data-ttu-id="f8319-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="f8319-106">Property</span></span> | <span data-ttu-id="f8319-107">Тип</span><span class="sxs-lookup"><span data-stu-id="f8319-107">Type</span></span> | <span data-ttu-id="f8319-108">Описание</span><span class="sxs-lookup"><span data-stu-id="f8319-108">Description</span></span> |
+| <span data-ttu-id="6d9f3-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="6d9f3-106">Property</span></span> | <span data-ttu-id="6d9f3-107">Тип</span><span class="sxs-lookup"><span data-stu-id="6d9f3-107">Type</span></span> | <span data-ttu-id="6d9f3-108">Описание</span><span class="sxs-lookup"><span data-stu-id="6d9f3-108">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f8319-109">id</span><span class="sxs-lookup"><span data-stu-id="f8319-109">id</span></span>|<span data-ttu-id="f8319-110">string</span><span class="sxs-lookup"><span data-stu-id="f8319-110">string</span></span>| <span data-ttu-id="f8319-111">Уникальный идентификатор.</span><span class="sxs-lookup"><span data-stu-id="f8319-111">A globally unique identifier (GUID).</span></span> |
+|<span data-ttu-id="6d9f3-109">id</span><span class="sxs-lookup"><span data-stu-id="6d9f3-109">id</span></span>|<span data-ttu-id="6d9f3-110">string</span><span class="sxs-lookup"><span data-stu-id="6d9f3-110">string</span></span>| <span data-ttu-id="6d9f3-111">Уникальный идентификатор.</span><span class="sxs-lookup"><span data-stu-id="6d9f3-111">A globally unique identifier (GUID).</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="f8319-112">Связи</span><span class="sxs-lookup"><span data-stu-id="f8319-112">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="6d9f3-112">Связи</span><span class="sxs-lookup"><span data-stu-id="6d9f3-112">Relationships</span></span>
 
-| <span data-ttu-id="f8319-113">Отношение</span><span class="sxs-lookup"><span data-stu-id="f8319-113">Relationship</span></span> | <span data-ttu-id="f8319-114">Тип</span><span class="sxs-lookup"><span data-stu-id="f8319-114">Type</span></span> | <span data-ttu-id="f8319-115">Описание</span><span class="sxs-lookup"><span data-stu-id="f8319-115">Description</span></span> |
+| <span data-ttu-id="6d9f3-113">Отношение</span><span class="sxs-lookup"><span data-stu-id="6d9f3-113">Relationship</span></span> | <span data-ttu-id="6d9f3-114">Тип</span><span class="sxs-lookup"><span data-stu-id="6d9f3-114">Type</span></span> | <span data-ttu-id="6d9f3-115">Описание</span><span class="sxs-lookup"><span data-stu-id="6d9f3-115">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f8319-116">installedApps</span><span class="sxs-lookup"><span data-stu-id="f8319-116">installedApps</span></span>|<span data-ttu-id="f8319-117">[teamsAppInstallation](teamsappinstallation.md) collection</span><span class="sxs-lookup"><span data-stu-id="f8319-117">[teamsAppInstallation](teamsappinstallation.md) collection</span></span>|<span data-ttu-id="f8319-118">Приложения, установленные в личной области пользователя.</span><span class="sxs-lookup"><span data-stu-id="f8319-118">The apps installed in the personal scope of this user.</span></span>|
+|<span data-ttu-id="6d9f3-116">installedApps</span><span class="sxs-lookup"><span data-stu-id="6d9f3-116">installedApps</span></span>|<span data-ttu-id="6d9f3-117">[teamsAppInstallation](teamsappinstallation.md) collection</span><span class="sxs-lookup"><span data-stu-id="6d9f3-117">[teamsAppInstallation](teamsappinstallation.md) collection</span></span>|<span data-ttu-id="6d9f3-118">Приложения, установленные в личной области пользователя.</span><span class="sxs-lookup"><span data-stu-id="6d9f3-118">The apps installed in the personal scope of this user.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="f8319-119">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="f8319-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6d9f3-119">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="6d9f3-119">JSON representation</span></span>
 
-<span data-ttu-id="f8319-120">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f8319-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="6d9f3-120">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="6d9f3-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -60,6 +60,6 @@ ms.locfileid: "35908595"
 }
 -->
 
-## <a name="see-also"></a><span data-ttu-id="f8319-121">См. также</span><span class="sxs-lookup"><span data-stu-id="f8319-121">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="6d9f3-121">См. также</span><span class="sxs-lookup"><span data-stu-id="6d9f3-121">See Also</span></span>
 
-- [<span data-ttu-id="f8319-122">Ресурс userTeamwork</span><span class="sxs-lookup"><span data-stu-id="f8319-122">userTeamwork resource</span></span>](userteamwork.md)
+- [<span data-ttu-id="6d9f3-122">Ресурс userTeamwork</span><span class="sxs-lookup"><span data-stu-id="6d9f3-122">userTeamwork resource</span></span>](userteamwork.md)

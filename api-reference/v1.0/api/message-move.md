@@ -12,21 +12,21 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 08/15/2019
 ms.locfileid: "36426421"
 ---
-# <a name="message-move"></a><span data-ttu-id="0437f-104">message: move</span><span class="sxs-lookup"><span data-stu-id="0437f-104">message: move</span></span>
+# <a name="message-move"></a><span data-ttu-id="8e593-104">message: move</span><span class="sxs-lookup"><span data-stu-id="8e593-104">message: move</span></span>
 
-<span data-ttu-id="0437f-105">Перемещение сообщения в другую папку в почтовом ящике указанного пользователя.</span><span class="sxs-lookup"><span data-stu-id="0437f-105">Move a message to another folder within the specified user's mailbox.</span></span> <span data-ttu-id="0437f-106">При этом в целевой папке создается новая копия сообщения и удаляется исходное сообщение.</span><span class="sxs-lookup"><span data-stu-id="0437f-106">This creates a new copy of the message in the destination folder and removes the original message.</span></span>
+<span data-ttu-id="8e593-105">Перемещение сообщения в другую папку в почтовом ящике указанного пользователя.</span><span class="sxs-lookup"><span data-stu-id="8e593-105">Move a message to another folder within the specified user's mailbox.</span></span> <span data-ttu-id="8e593-106">При этом в целевой папке создается новая копия сообщения и удаляется исходное сообщение.</span><span class="sxs-lookup"><span data-stu-id="8e593-106">This creates a new copy of the message in the destination folder and removes the original message.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="0437f-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="0437f-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="8e593-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="8e593-107">Permissions</span></span>
 
-<span data-ttu-id="0437f-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0437f-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8e593-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8e593-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="0437f-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0437f-110">Permission type</span></span> | <span data-ttu-id="0437f-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="0437f-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="8e593-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8e593-110">Permission type</span></span> | <span data-ttu-id="8e593-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="8e593-111">Permissions (from least to most privileged)</span></span> |
 |:----------------|:--------------------------------------------|
-|<span data-ttu-id="0437f-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0437f-112">Delegated (work or school account)</span></span> | <span data-ttu-id="0437f-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0437f-113">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="0437f-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0437f-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0437f-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0437f-115">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="0437f-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="0437f-116">Application</span></span> | <span data-ttu-id="0437f-117">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0437f-117">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="8e593-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8e593-112">Delegated (work or school account)</span></span> | <span data-ttu-id="8e593-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8e593-113">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="8e593-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8e593-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8e593-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8e593-115">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="8e593-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="8e593-116">Application</span></span> | <span data-ttu-id="8e593-117">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8e593-117">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0437f-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0437f-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8e593-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8e593-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -37,34 +37,34 @@ POST /me/mailFolders/{id}/messages/{id}/move
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="0437f-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0437f-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="8e593-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="8e593-119">Request headers</span></span>
 
-| <span data-ttu-id="0437f-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="0437f-120">Header</span></span> | <span data-ttu-id="0437f-121">Значение</span><span class="sxs-lookup"><span data-stu-id="0437f-121">Value</span></span> |
+| <span data-ttu-id="8e593-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="8e593-120">Header</span></span> | <span data-ttu-id="8e593-121">Значение</span><span class="sxs-lookup"><span data-stu-id="8e593-121">Value</span></span> |
 |:-------|:------|
-| <span data-ttu-id="0437f-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="0437f-122">Authorization</span></span> | <span data-ttu-id="0437f-123">`Bearer {token}`.</span><span class="sxs-lookup"><span data-stu-id="0437f-123">`Bearer {token}`.</span></span> <span data-ttu-id="0437f-124">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="0437f-124">Required.</span></span> |
-| <span data-ttu-id="0437f-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="0437f-125">Content-Type</span></span> | <span data-ttu-id="0437f-126">`application/json`.</span><span class="sxs-lookup"><span data-stu-id="0437f-126">`application/json`.</span></span> <span data-ttu-id="0437f-127">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="0437f-127">Required.</span></span> |
+| <span data-ttu-id="8e593-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="8e593-122">Authorization</span></span> | <span data-ttu-id="8e593-123">`Bearer {token}`.</span><span class="sxs-lookup"><span data-stu-id="8e593-123">`Bearer {token}`.</span></span> <span data-ttu-id="8e593-124">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="8e593-124">Required.</span></span> |
+| <span data-ttu-id="8e593-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="8e593-125">Content-Type</span></span> | <span data-ttu-id="8e593-126">`application/json`.</span><span class="sxs-lookup"><span data-stu-id="8e593-126">`application/json`.</span></span> <span data-ttu-id="8e593-127">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="8e593-127">Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="0437f-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="0437f-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="8e593-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="8e593-128">Request body</span></span>
 
-<span data-ttu-id="0437f-129">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="0437f-129">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="8e593-129">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="8e593-129">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="0437f-130">Параметр</span><span class="sxs-lookup"><span data-stu-id="0437f-130">Parameter</span></span>   | <span data-ttu-id="0437f-131">Тип</span><span class="sxs-lookup"><span data-stu-id="0437f-131">Type</span></span> |<span data-ttu-id="0437f-132">Описание</span><span class="sxs-lookup"><span data-stu-id="0437f-132">Description</span></span>|
+| <span data-ttu-id="8e593-130">Параметр</span><span class="sxs-lookup"><span data-stu-id="8e593-130">Parameter</span></span>   | <span data-ttu-id="8e593-131">Тип</span><span class="sxs-lookup"><span data-stu-id="8e593-131">Type</span></span> |<span data-ttu-id="8e593-132">Описание</span><span class="sxs-lookup"><span data-stu-id="8e593-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="0437f-133">destinationId</span><span class="sxs-lookup"><span data-stu-id="0437f-133">destinationId</span></span>|<span data-ttu-id="0437f-134">String</span><span class="sxs-lookup"><span data-stu-id="0437f-134">String</span></span>|<span data-ttu-id="0437f-135">Идентификатор целевой папки либо имя известной папки.</span><span class="sxs-lookup"><span data-stu-id="0437f-135">The destination folder ID, or a well-known folder name.</span></span> <span data-ttu-id="0437f-136">Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).</span><span class="sxs-lookup"><span data-stu-id="0437f-136">For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).</span></span>|
+|<span data-ttu-id="8e593-133">destinationId</span><span class="sxs-lookup"><span data-stu-id="8e593-133">destinationId</span></span>|<span data-ttu-id="8e593-134">String</span><span class="sxs-lookup"><span data-stu-id="8e593-134">String</span></span>|<span data-ttu-id="8e593-135">Идентификатор целевой папки либо имя известной папки.</span><span class="sxs-lookup"><span data-stu-id="8e593-135">The destination folder ID, or a well-known folder name.</span></span> <span data-ttu-id="8e593-136">Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).</span><span class="sxs-lookup"><span data-stu-id="8e593-136">For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).</span></span>|
 
-## <a name="response"></a><span data-ttu-id="0437f-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="0437f-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8e593-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="8e593-137">Response</span></span>
 
-<span data-ttu-id="0437f-138">В случае успеха этот метод возвращает код отклика `201 Created` и ресурс [message](../resources/message.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="0437f-138">If successful, this method returns `201 Created` response code and a [message](../resources/message.md) resource in the response body.</span></span>
+<span data-ttu-id="8e593-138">В случае успеха этот метод возвращает код отклика `201 Created` и ресурс [message](../resources/message.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="8e593-138">If successful, this method returns `201 Created` response code and a [message](../resources/message.md) resource in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0437f-139">Пример</span><span class="sxs-lookup"><span data-stu-id="0437f-139">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8e593-139">Пример</span><span class="sxs-lookup"><span data-stu-id="8e593-139">Example</span></span>
 
-<span data-ttu-id="0437f-140">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="0437f-140">Here is an example of how to call this API.</span></span>
+<span data-ttu-id="8e593-140">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="8e593-140">Here is an example of how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="0437f-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="0437f-141">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="8e593-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="8e593-141">Request</span></span>
 
-<span data-ttu-id="0437f-142">Приведенный ниже запрос перемещает указанное сообщение в папку "Удаленные", указанную по ее известному имени `deleteditems`.</span><span class="sxs-lookup"><span data-stu-id="0437f-142">The following request moves the specified message to the Deleted Items folder, identified by its well-known folder name `deleteditems`.</span></span>
+<span data-ttu-id="8e593-142">Приведенный ниже запрос перемещает указанное сообщение в папку "Удаленные", указанную по ее известному имени `deleteditems`.</span><span class="sxs-lookup"><span data-stu-id="8e593-142">The following request moves the specified message to the Deleted Items folder, identified by its well-known folder name `deleteditems`.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="0437f-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="0437f-143">--Http</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="8e593-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="8e593-143">--Http</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADhAAATs28OAAA="],
@@ -79,30 +79,30 @@ Content-type: application/json
   "destinationId": "deleteditems"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="0437f-144">C#</span><span class="sxs-lookup"><span data-stu-id="0437f-144">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="8e593-144">C#</span><span class="sxs-lookup"><span data-stu-id="8e593-144">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-move-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="0437f-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0437f-145">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8e593-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8e593-145">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-move-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="0437f-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0437f-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="8e593-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8e593-146">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/message-move-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="0437f-147">Java</span><span class="sxs-lookup"><span data-stu-id="0437f-147">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="8e593-147">Java</span><span class="sxs-lookup"><span data-stu-id="8e593-147">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/message-move-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="0437f-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="0437f-148">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="8e593-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="8e593-148">Response</span></span>
 
-<span data-ttu-id="0437f-149">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="0437f-149">Here is an example of the response.</span></span>
+<span data-ttu-id="8e593-149">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="8e593-149">Here is an example of the response.</span></span>
 
-> <span data-ttu-id="0437f-150">**Примечание.**  Представленный здесь объект ответа может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="0437f-150">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="0437f-151">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="0437f-151">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="8e593-150">**Примечание.**  Представленный здесь объект ответа может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="8e593-150">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="8e593-151">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="8e593-151">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
