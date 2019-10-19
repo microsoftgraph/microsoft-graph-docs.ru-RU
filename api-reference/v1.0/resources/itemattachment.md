@@ -5,16 +5,16 @@ localization_priority: Priority
 ms.prod: outlook
 author: angelgolfer-ms
 doc_type: resourcePageType
-ms.openlocfilehash: 7df14ea5d6611cb3771aeb23250c1e65fb6e60a4
-ms.sourcegitcommit: 496269b62d42cb7a96752a77b0f2e0cb16918f0b
+ms.openlocfilehash: 554a1cd2e0f6059cf9213f1f19d756349ef000fc
+ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36484361"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37036363"
 ---
 # <a name="itemattachment-resource-type"></a>Тип ресурса itemAttachment
 
-Контакт, событие или сообщение, вложенное в другое событие, сообщение или запись.  
+Контакт, событие или сообщение, вложенное в [событие](../resources/event.md), [сообщение](../resources/message.md) или [запись](../resources/post.md) пользователя.  
 
 Производный от типа [attachment](attachment.md).
 
@@ -22,8 +22,8 @@ ms.locfileid: "36484361"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Чтение свойств и связей объекта itemAttachment.|
-|[Удаление](../api/attachment-delete.md) | Нет |Удаление объекта itemAttachment. |
+|[Получение](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Чтение свойств, связей или необработанного содержимого объекта itemAttachment.|
+|[удаление](../api/attachment-delete.md); | Нет |Удаление объекта itemAttachment. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -36,7 +36,7 @@ ms.locfileid: "36484361"
 |size|Int32|Размер вложения в байтах.|
 
 ## <a name="relationships"></a>Связи
-| Отношение | Тип   |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |item|[OutlookItem](outlookitem.md)|Вложенное сообщение или событие. Свойство навигации.|
 
