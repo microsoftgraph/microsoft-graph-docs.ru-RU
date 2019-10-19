@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 07d361280e02243ee45c6bc03d76ae2e827007c8
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 9bcf04ad1e02e79f12835cc4bbd60d1350b81e37
+ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35738348"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "36638437"
 ---
 ```javascript
 
@@ -24,6 +24,6 @@ const subscription = {
 };
 
 let res = await client.api('/subscriptions')
-    .post({subscription : subscription});
+    .post(subscription);
 
 ```
