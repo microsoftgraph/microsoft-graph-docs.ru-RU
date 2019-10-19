@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 8be03135f0d85f9a40360cc832b1fe3acb72042f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9b9485845ab97daf9c55f58f4b4f09e84ed5302a
+ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036311"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "37036398"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>Использование REST API почты Outlook
 
@@ -47,11 +47,16 @@ GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 | Предоставление другому пользователю права отправлять сообщения от имени владельца почтового ящика | [message](../resources/message.md) | Задание свойств **from** и **sender** в ресурсе [message](../resources/message.md) |
 | Показ более важных сообщений | [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) | [Сортировка почты](../resources/manage-focused-inbox.md) |
 | Запрос сообщений и их получение в папке поиска  | [mailSearchFolder](../resources/mailsearchfolder.md) | [Методы ресурса mailSearchFolder](../resources/mailsearchfolder.md#methods) |
+| Получение содержимого MIME сообщения или его вложения | [message](../resources/message.md) | [Получение содержимого MIME](/graph/outlook-get-mime-message) |
 | Добавление, получение или удаление вложений сообщения | [attachment](../resources/attachment.md), <br> [fileAttachment](../resources/fileattachment.md), <br> [itemAttachment](../resources/itemattachment.md), <br> [referenceAttachment](../resources/referenceattachment.md), <br> [message](../resources/message.md) | [Методы ресурса attachment](../resources/attachment.md#methods) |
+| Получение настроек языка и часовых поясов для пользователя | [localeInfo](localeinfo.md), <br> [timeZoneInformation](timezoneinformation.md) | [supportedLanguages](../api/outlookuser-supportedlanguages.md), <br> [supportedTimeZones](../api/outlookuser-supportedtimezones.md) |
 | Получение или обновление автоматического ответа, языкового стандарта, часового пояса или рабочего времени пользователя | [mailboxSettings](../resources/mailboxsettings.md), <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md), <br> [localeInfo](../resources/localeinfo.md), <br> [workingHours](../resources/workinghours.md) | [Получение настроек почтового ящика пользователя](../api/user-get-mailboxsettings.md), <br> [Обновление параметров почтового ящика пользователя](../api/user-update-mailboxsettings.md) |
 | Получение подсказок об особом состоянии других пользователей, например об отсутствии на месте | [user](../resources/user.md), <br> [mailTips](../resources/mailtips.md) | [Получение подсказок](../api/user-getmailtips.md) |
 | **Управление почтой и папками** | | |
 | Упорядочивание сообщений в иерархии папок почты | [mailFolder](../resources/mailfolder.md)  | [Методы ресурса mailFolder](../resources/mailfolder.md#methods) |
+| Классификация сообщений | [outlookCategory](../resources/outlookcategory.md) | [Методы ресурса outlookCategory](../resources/outlookcategory.md#methods) |
+| Автоматизация действий, например пересылка определенных входящих сообщений, с помощью правил папки "Входящие" | [messageRule](../resources/messagerule.md) | [Методы ресурса messageRule](../resources/messagerule.md#methods) |
+| Получение заголовков сообщений Интернета для сообщения | [message](../resources/message.md) | [Получение свойства **internetMessageHeaders** сообщения](../api/message-get.md#example-2). |
 | Поиск и фильтрация сообщений | [message](../resources/message.md) | [Параметры запроса](/graph/query-parameters)  |
 | Получение уведомлений об изменениях сообщений в папке | [subscription](../resources/subscription.md) | [Работа с веб-перехватчиками в Microsoft Graph](../resources/webhooks.md) |
 | Синхронизация сообщений или иерархии папок почты | [message](../resources/message.md) | [Получение добавочных изменений сообщений в папке](/graph/delta-query-messages) |

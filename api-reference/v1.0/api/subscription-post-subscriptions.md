@@ -5,12 +5,12 @@ localization_priority: Priority
 author: piotrci
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: d0658456a52d9eacac29baaf68903ca944f23fa1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 98ee86313bbfbbd2bd6e813bc87e2035f09c5460
+ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36024611"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "36341790"
 ---
 # <a name="create-subscription"></a>Создание подписки
 

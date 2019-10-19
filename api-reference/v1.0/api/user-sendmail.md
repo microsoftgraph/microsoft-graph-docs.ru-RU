@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e2b61b06a98a1eae4ed1f14adf1125ce0704c7d4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8c5404520e31bef86c07f223bff27bc23324a179
+ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36026581"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "36361711"
 ---
 # <a name="send-mail"></a>Отправка почты
 

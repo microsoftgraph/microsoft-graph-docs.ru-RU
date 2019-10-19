@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 69bb246199ab38d3a17fc5ce30dce6f011f87b0a
-ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
+ms.openlocfilehash: ab94922ed34b01be43a7776f017341a2b47f474d
+ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37418344"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "37598235"
 ---
 # <a name="get-team-photo"></a>Как получить фотографию группы
 
@@ -33,9 +33,9 @@ ms.locfileid: "37418344"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
+|Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group.ReadWrite.All |
+|Для приложений | Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
