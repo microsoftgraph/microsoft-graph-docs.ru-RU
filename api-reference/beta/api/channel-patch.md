@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: b9b8abd495a9ce66458973360a93e47f0bddfdf9
-ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
+ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
+ms.lasthandoff: 10/21/2019
 ms.locfileid: "37275677"
 ---
 # <a name="patch-channel"></a>Канал исправлений
@@ -73,7 +73,7 @@ PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

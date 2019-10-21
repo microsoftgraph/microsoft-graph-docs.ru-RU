@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
 ms.openlocfilehash: 7d0172909e13e8a0315f72b13bed353f2033507e
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
+ms.lasthandoff: 10/21/2019
 ms.locfileid: "36419614"
 ---
 # <a name="delete-group"></a>Удаление группы
@@ -47,7 +47,7 @@ DELETE /groups/{id}
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
@@ -73,7 +73,7 @@ DELETE https://graph.microsoft.com/beta/groups/{id}
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -6,10 +6,10 @@ author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
 ms.openlocfilehash: b04dd3337f07930e8abd893bb34ea52937199146
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
+ms.lasthandoff: 10/21/2019
 ms.locfileid: "36413540"
 ---
 # <a name="create-plannerbucket"></a>Создание объекта plannerBucket
@@ -75,7 +75,7 @@ Content-length: 92
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-plannerbucket-from-planner-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-plannerbucket-from-planner-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -83,7 +83,7 @@ Content-length: 92
 
 Включите в текст запроса описание объекта [plannerBucket](../resources/plannerbucket.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
