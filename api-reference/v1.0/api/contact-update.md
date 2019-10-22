@@ -6,10 +6,10 @@ localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
 ms.openlocfilehash: 2dfdcc3b47583b6f37b8b3b760a6bb435f39214b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
+ms.lasthandoff: 10/21/2019
 ms.locfileid: "36361746"
 ---
 # <a name="update-contact"></a>Обновление контакта
@@ -133,7 +133,7 @@ Content-length: 1977
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

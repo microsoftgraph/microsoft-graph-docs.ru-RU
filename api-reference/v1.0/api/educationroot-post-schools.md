@@ -5,49 +5,57 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ba52968710bfea72c2d12a0666157685fe02a29f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9f144c13bfb3973af96b10d78e69bb1c21ce09a7
+ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36370352"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37553973"
 ---
 # <a name="create-educationschool"></a>Создание educationSchool
 
 Создание учебного заведения.
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
-|:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
-|Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | EduRoster.ReadWrite.All | 
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
+| :------------------------------------- | :------------------------------------------ |
+| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Для приложений                            | EduRoster.ReadWrite.All                     |
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/schools
 ```
+
 ## <a name="request-headers"></a>Заголовки запросов
-| Заголовок       | Значение |
-|:---------------|:--------|
-| Авторизация  | Bearer {токен}. Обязательный.  |
-| Content-Type  | application/json  |
+
+| Заголовок        | Значение                     |
+| :------------ | :------------------------ |
+| Авторизация | Bearer {токен}. Обязательный. |
+| Content-Type  | application/json          |
 
 ## <a name="request-body"></a>Тело запроса
+
 В теле запроса предоставьте описание объекта [educationSchool](../resources/educationschool.md) в формате JSON.
 
-
 ## <a name="response"></a>Отклик
+
 При успешном выполнении этот метод возвратит код отклика `201 Created` и объект [educationSchool](../resources/educationschool.md) в теле отклика.
 
 ## <a name="example"></a>Пример
+
 ##### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "create_educationschool_from_educationroot"
@@ -76,31 +84,35 @@ Content-length: 292
     "street": "12345 Main St."
   },
   "externalId": "10002",
-  "fax": "+1 (253) 555-0101",
   "phone": "+1 (253) 555-0102",
 }
 ```
+
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-educationschool-from-educationroot-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-educationschool-from-educationroot-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/create-educationschool-from-educationroot-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javatabjava"></a>[Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/create-educationschool-from-educationroot-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+
+Ниже приведен пример отклика.
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -140,7 +152,6 @@ Content-length: 292
     }
   },
   "externalId": "10002",
-  "fax": "+1 (253) 555-0101",
   "phone": "+1 (253) 555-0102",
 }
 ```

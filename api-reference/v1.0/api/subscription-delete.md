@@ -5,12 +5,12 @@ localization_priority: Normal
 author: piotrci
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 328bd1fed3e58855887f8a04eaf9e2176c93ef9c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e8cfa6ced74f6080f8b1cd63a222d7928cba17e3
+ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36021440"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "36341874"
 ---
 # <a name="delete-subscription"></a>Удаление подписки
 
@@ -84,11 +84,11 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-subscription-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[Javascript](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-subscription-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-subscription-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -99,7 +99,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 ---
 
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 <!-- {
