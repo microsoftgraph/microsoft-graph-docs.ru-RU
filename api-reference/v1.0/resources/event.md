@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 83bacdd688705596302d7ec5c0708924a3583d20
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: ad5c50d1210d32304ec20f75afe2928e577f3c17
+ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036195"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37204007"
 ---
 # <a name="event-resource-type"></a>Тип ресурса event
 
@@ -27,6 +27,7 @@ ms.locfileid: "37036195"
 > **Примечание.** Существует несколько незначительных различий в способе взаимодействия с календарями пользователей, календарями групп и их событиями:
 
 - В ресурсе [calendarGroup](calendargroup.md) можно упорядочить только календари пользователей.
+- Объекты [attachment](attachment.md) можно добавлять только в события календарей пользователей, но не в события календарей групп.
 - Outlook автоматически принимает все приглашения на собрания от имени группы. Приглашения на собрания можно [принять](../api/event-accept.md), [принять под вопросом](../api/event-tentativelyaccept.md) или [отклонить](../api/event-decline.md) только в календарях _пользователя_.
 - Outlook не поддерживает напоминания о событиях группы. [Напоминание](reminder.md) можно [отложить](../api/event-snoozereminder.md) или [отключить](../api/event-dismissreminder.md) только для календарей _пользователя_.
 
@@ -111,7 +112,7 @@ ms.locfileid: "37036195"
 
 
 ## <a name="relationships"></a>Связи
-| Отношение | Тип   |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |attachments|Коллекция [attachment](attachment.md) |Коллекция вложений [fileAttachment](fileattachment.md) и [itemAttachment](itemattachment.md) для события. Свойство навигации. Только для чтения. Допускается значение null.|
 |календарь|[calendar](calendar.md)|Календарь, который содержит событие. Свойство навигации. Только для чтения.|

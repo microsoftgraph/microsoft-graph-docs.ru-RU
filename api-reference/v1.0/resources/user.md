@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d0a4f11a1dd9db580ba5c3a5f9a2981cd21fd157
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f2c70da69f96a9fdbd13ca8a829ab717d4ffd13e
+ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033518"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "37036335"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -63,6 +63,7 @@ ms.locfileid: "36033518"
 |[getMemberObjects](../api/user-getmemberobjects.md)|Коллекция строк| Возвращает все группы и роли каталога, участником которых является пользователь. Это транзитивная проверка. |
 |[reminderView](../api/user-reminderview.md)|Коллекция [Reminder](reminder.md)|Возвращает список напоминаний календаря за указанный период времени.|
 |[revokeSignInSessions](../api/user-revokesigninsessions.md)| Нет |Отменяет все маркеры обновления и маркеры сеанса пользователя, выпущенные для приложений, сбрасывая значение свойства **signInSessionsValidFromDateTime** и указывая для него текущую дату и время. Это вынуждает пользователей повторно выполнить вход в эти приложения.|
+|[translateExchangeIds](../api/user-translateexchangeids.md) |Коллекция [convertIdResult](convertidresult.md)| Перевод идентификаторов ресурсов, связанных с Outlook, между форматами.|
 |**Открытые расширения**| | |
 |[Создание открытого расширения](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Создание открытого расширения и добавление настраиваемых свойств в новый или существующий ресурс.|
 |[Получение открытого расширения](../api/opentypeextension-get.md) |Коллекция объектов [openTypeExtension](opentypeextension.md)| Получение открытого расширения, определяемого именем расширения.|
@@ -179,7 +180,7 @@ ms.locfileid: "36033518"
 
 ## <a name="relationships"></a>Связи
 
-| Отношение | Тип   |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |activities|Коллекция [userActivity](projectrome-activity.md)|Действия пользователя на разных устройствах. Только для чтения. Допускается значение null.|
 |calendar|[calendar](calendar.md)|Основной календарь пользователя. Только для чтения.|
