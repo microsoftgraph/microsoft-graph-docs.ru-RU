@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: bf54a6a949340d3d2aef9df64e3b75ce5d666d04
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: cc082819183841f23038d57ec59d540126e8df10
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421913"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37622491"
 ---
 # <a name="create-event"></a>Создание события
 
@@ -18,7 +18,9 @@ ms.locfileid: "36421913"
 
 Создайте [событие](../resources/event.md) в календаре пользователя по умолчанию или указанном календаре.
 
-Вы можете указать часовой пояс для каждого из начальных и конечных моментов события в составе их значений, так как свойства **Start** и **End** имеют тип [dateTimeTimeZone](../resources/datetimetimezone.md) . Сначала [найдите поддерживаемые](outlookuser-supportedtimezones.md) Часовые пояса, чтобы установить только те Часовые пояса, которые были настроены для сервера почтовых ящиков пользователя. 
+По умолчанию для свойства **алловневтимепропосалс** задано значение true при создании события, что означает, что приглашение может предложить другое значение даты и времени для события. Для получения дополнительных сведений о том, как предлагать время, а также как получать и принимать новое предложение времени, ознакомьтесь с [разрешите новые времена собраний](/graph/outlook-calendar-meeting-proposals) .
+
+В рамках этих значений вы можете задать часовой пояс для каждого времени начала или окончания события, так как свойства **start** и **end** относятся к типу [dateTimeTimeZone](../resources/datetimetimezone.md). Сначала [найдите поддерживаемые часовые пояса](outlookuser-supportedtimezones.md), чтобы устанавливать только часовые пояса, настроенные для сервера почтового ящика пользователя. 
 
 При отправке события сервер отправляет приглашения всем участникам.
 
@@ -90,13 +92,12 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 POST https://graph.microsoft.com/beta/me/events
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-type: application/json
-Content-length: 600
 
 {
   "subject": "Let's go for lunch",
   "body": {
     "contentType": "HTML",
-    "content": "Does late morning work for you?"
+    "content": "Does noon work for you?"
   },
   "start": {
       "dateTime": "2017-04-15T12:00:00",
@@ -117,7 +118,8 @@ Content-length: 600
       },
       "type": "required"
     }
-  ]
+  ],
+  "allowNewTimeProposals": true
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -128,16 +130,16 @@ Content-length: 600
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-user-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-В теле запроса представьте объект [event](../resources/event.md) в формате JSON.
+Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
 ##### <a name="response-1"></a>Отклик 1
 Ниже приведен пример ответа, где показано, что свойства **start** и **end** соответствуют часовому поясу, указанному в заголовке `Prefer: outlook.timezone`.
-Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user",
@@ -166,7 +168,7 @@ Content-length: 2197
     "isReminderOn":true,
     "hasAttachments":false,
     "subject":"Let's go brunch",
-    "bodyPreview":"Does late morning work for you?",
+    "bodyPreview":"Does noon work for you?",
     "importance":"normal",
     "sensitivity":"normal",
     "isAllDay":false,
@@ -178,6 +180,7 @@ Content-length: 2197
     "type":"singleInstance",
     "webLink":"https://outlook.office365.com/owa/?itemid=AAMkAGI1AAAt9AHjAAA%3D&exvsurl=1&path=/calendar/item",
     "onlineMeetingUrl":null,
+    "allowNewTimeProposals": true,
     "responseStatus":{
         "response":"organizer",
         "time":"0001-01-01T00:00:00Z"
@@ -302,8 +305,8 @@ Content-length: 1390
     {
       "displayName": "Home Office"
     }
-  ]
-
+  ],
+  "allowNewTimeProposals": true
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -314,14 +317,14 @@ Content-length: 1390
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-user-multiple-locations-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-user-multiple-locations-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response-2"></a>Ответ 2
+##### <a name="response-2"></a>Отклик 2
 В приведенном ниже примере ответа показано созданное событие, в котором указаны сведения о 3 местах проведения собрания. Так как используется заголовок запроса `Prefer: outlook.timezone="Pacific Standard Time"`, свойства **start** и **end** выражены в формате PST.
 Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
@@ -364,6 +367,7 @@ Content-length: 2985
   "type":"singleInstance",
   "webLink":"https://outlook.office365.com/owa/?itemid=AAMkADAGAADDdm4NAAA%3D&exvsurl=1&path=/calendar/item",
   "onlineMeetingUrl":null,
+  "allowNewTimeProposals": true,
   "responseStatus":{
     "response":"organizer",
     "time":"0001-01-01T00:00:00Z"
@@ -511,7 +515,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-event-recurring-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-recurring-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -559,6 +563,7 @@ Content-type: application/json
     "type":"seriesMaster",
     "webLink":"https://outlook.office365.com/owa/?itemid=AAMkADQwMD&exvsurl=1&path=/calendar/item",
     "onlineMeetingUrl":null,
+    "allowNewTimeProposals": true,
     "responseStatus":{
         "response":"organizer",
         "time":"0001-01-01T00:00:00Z"

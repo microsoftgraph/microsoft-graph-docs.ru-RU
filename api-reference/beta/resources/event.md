@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 65a66e39d0548fa994821eb4ae279d9fbc1b2aac
-ms.sourcegitcommit: 8ef30790a4d7aa94879df93773eae80b37abbfa4
+ms.openlocfilehash: 3e8da555b062576c70a849280f83f713c2a627a0
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37203979"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37621380"
 ---
 # <a name="event-resource-type"></a>Тип ресурса event
 
@@ -53,6 +53,7 @@ ms.locfileid: "37203979"
 
 ```json
 {
+  "allowNewTimeProposals": "Boolean",
   "attendees": [{"@odata.type": "microsoft.graph.attendee"}],
   "body": {"@odata.type": "microsoft.graph.itemBody"},
   "bodyPreview": "string",
@@ -100,6 +101,7 @@ ms.locfileid: "37203979"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
+|allowNewTimeProposals| Boolean | Значение `True`, если организатор собрания разрешает приглашенным предлагать новое время при ответе, в противном случае — `false`. Необязательный параметр. Значение по умолчанию: `true`. |
 |attendees|Коллекция [Attendee](attendee.md)|Коллекция участников события.|
 |body|[ItemBody](itembody.md)|Текст сообщения, связанного с событием. В формате HTML или текстовом формате.|
 |bodyPreview|String|Предварительный просмотр сообщения, связанного с событием. В текстовом формате.|
@@ -124,7 +126,7 @@ ms.locfileid: "37203979"
 |originalStartTimeZone|String|Часовой пояс начала события, указанный при его создании. Значение `tzone://Microsoft/Custom` указывает, что в классическом приложении Outlook задан традиционный пользовательский часовой пояс.|
 |recurrence|[PatternedRecurrence](patternedrecurrence.md)|Расписание повторения события.|
 |reminderMinutesBeforeStart|Int32|Позволяет указать, за сколько минут до начала события появляется напоминание.|
-|responseRequested|Boolean|Задайте значение true, если отправитель желает получить сообщение о согласии участвовать в событии или отклонении соответствующего приглашения.|
+|responseRequested|Логический|По умолчанию используется значение true, означающее, что организатор запрашивает у приглашенного отправку ответа для события.|
 |responseStatus|[ResponseStatus](responsestatus.md)|Указывает тип отклика, отправленного в ответ на сообщение о событии.|
 |sensitivity|String| Возможные значения: `normal`, `personal`, `private`, `confidential`.|
 |seriesMasterId|String|Идентификатор для элемента образца повторяющегося ряда, если это событие входит в повторяющийся ряд.|

@@ -1,21 +1,22 @@
 ---
 title: Назначение руководителя
-description: С помощью этого API можно назначить руководителя пользователю.
+description: Назначение руководителя пользователя.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b3a137ce36dd1a4a0da76d698e5f35689bca6590
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: 36b24ef7b6e9fb7a35be3c87723b650581ec982c
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450664"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37621450"
 ---
-# <a name="assign-a-manager"></a>Назначение руководителя
+# <a name="assign-manager"></a>Назначение руководителя
 
-С помощью этого API можно назначить руководителя пользователю.
-> Примечание. Назначать подчиненных невозможно. Вместо этого используйте данный API.
+Назначение руководителя пользователя.
+> [!NOTE]
+> Нельзя назначать прямые отчеты; Вместо этого используйте этот API.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -32,12 +33,13 @@ ms.locfileid: "36450664"
 PUT /users/{id}/manager/$ref
 ```
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Заголовок       | Значение |
+|:---------------|:----------|
+| Авторизация  | Bearer {токен}. Обязательный. |
+| Content-Type   | application/json. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
-Предоставьте в тексте запроса описание добавляемого объекта [directoryObject](../resources/directoryobject.md) или [user](../resources/user.md) в формате JSON.
+## <a name="request-body"></a>Текст запроса
+В тексте запроса добавьте представление объекта [directoryObject](../resources/directoryobject.md), [пользователя](../resources/user.md)или [контакта Организации](../resources/orgcontact.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
 
@@ -69,7 +71,7 @@ Content-length: xxx
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-manager-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-manager-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -79,9 +81,9 @@ Content-length: xxx
 
 ---
 
-Предоставьте в тексте запроса описание добавляемого объекта [user](../resources/user.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика.
+>**Note**: объект Response, показанный здесь, может быть укорочен для удобочитаемости. 
 <!-- {
   "blockType": "response",
   "truncated": true,

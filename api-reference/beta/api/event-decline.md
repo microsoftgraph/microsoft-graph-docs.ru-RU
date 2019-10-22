@@ -5,18 +5,21 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9d2276cf38826f80289cc6b2da1112fa5a320f08
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 3e1e484bd3debc422890014aeb0df48806550e64
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415770"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37621436"
 ---
 # <a name="event-decline"></a>event: decline
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Отклонить приглашение для указанного [события](../resources/event.md) в [календаре](../resources/calendar.md)пользователя.
+
+Если событие разрешает предложения для нового времени, при отправке события приглашение можно предложить альтернативным способом, включив параметр **пропоседневтиме** . Дополнительные сведения о том, как предлагать время, а также как получать и принимать новое предложение по времени, приведены в разделе [предложение нового времени проведения собрания](/graph/outlook-calendar-meeting-proposals).
+
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -65,10 +68,16 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 |:---------------|:--------|:----------|
 |comment|String|Текст, включенный в ответ. Необязательный.|
 |sendResponse|Логическое|Значение `true` указывает, что организатору должен быть отправлен ответ. В противном случае используется значение `false`. Необязательный. Значение по умолчанию: `true`.|
+|пропоседневтиме|[timeSlot](../resources/timeslot.md)|Альтернативная дата/время, предлагаемые приглашению на собрание для начала и завершения. Действует только для событий, которые допускают новые предложения времени. Для установки этого параметра необходимо **** задать для `true`параметра сендреспонсе значение. Необязательный параметр.|
 
 ## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `202 Accepted`. Метод не возвращает данные в теле отклика.
+
+Это действие возвращает HTTP-400, если выполняется одно или оба следующих действия:
+
+- Параметр **пропоседневтиме** включен, но свойство **алловневтимепропосалс** **события** имеет `false`значение. 
+- Параметр **пропоседневтиме** включен, но для `false`параметра **сендреспонсе** задано значение.
 
 ## <a name="example"></a>Пример
 
@@ -88,11 +97,20 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ```http
 POST https://graph.microsoft.com/beta/me/events/{id}/decline
 Content-type: application/json
-Content-length: 56
 
 {
-  "comment": "comment-value",
-  "sendResponse": true
+  "comment": "I won't be able to make this week. How about next week?",
+  "sendResponse": true,
+  "proposedNewTime": {
+      "start": { 
+          "dateTime": "2019-12-02T18:00:00", 
+          "timeZone": "Pacific Standard Time" 
+      }, 
+      "end": { 
+          "dateTime": "2019-12-02T19:00:00", 
+          "timeZone": "Pacific Standard Time" 
+      }     
+  }
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -103,7 +121,7 @@ Content-length: 56
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-decline-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/event-decline-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

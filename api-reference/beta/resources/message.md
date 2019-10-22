@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: f23d8ffcda224931950dc9c2d2cd2ade01322c36
-ms.sourcegitcommit: 00959f992b9b77c98ec1fe2f185cc7fd098ab24b
+ms.openlocfilehash: c4cfb5297e4bae7689017f1e60738be5077604bc
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36426316"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37622453"
 ---
 # <a name="message-resource-type"></a>Тип ресурса message
 
@@ -55,7 +55,7 @@ ms.locfileid: "36426316"
   "ccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "changeKey": "string",
   "conversationId": "string",
-  "conversationIndex": "string (binary)",
+  "conversationIndex": "String (binary)",
   "createdDateTime": "String (timestamp)",
   "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "from": {"@odata.type": "microsoft.graph.recipient"},
@@ -103,7 +103,7 @@ ms.locfileid: "36426316"
 |ccRecipients|Коллекция [recipient](recipient.md)|Получатели копии сообщения.|
 |changeKey|String|Версия сообщения.|
 |conversationId|String|Идентификатор беседы, к которой принадлежит электронное сообщение.|
-|conversationIndex|Binary|Индекс беседы, к которой принадлежит электронное сообщение.|
+|conversationIndex|Edm.Binary|Индекс беседы, к которой принадлежит электронное сообщение.|
 |createdDateTime|DateTimeOffset|Дата и время создания сообщения.|
 |flag|[followupFlag](followupflag.md)|Значение флага, которое указывает статус, дату начала, дату выполнения или дату завершения сообщения.|
 |from|[recipient](recipient.md)|Владелец почтового ящика и отправитель сообщения. Значение должно соответствовать фактически используемому почтовому ящику. Дополнительные сведения о [задании свойств from и sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) сообщения.|

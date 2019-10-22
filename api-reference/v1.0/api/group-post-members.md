@@ -5,17 +5,17 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 86a50debcddc05eeee41279bd20d3dfd5b12081b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: caa00e74298eb7d744412ffdc85298d804ef615d
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337148"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37621359"
 ---
 # <a name="add-member"></a>Добавление участника
 Добавляйте участника в группу Office 365 или группу безопасности через свойство навигации **members**.
 
-Вы можете добавлять пользователей или другие группы. 
+Вы можете добавлять пользователей, контакты организации или другие группы. 
 
 > [!IMPORTANT]
 > В группы Office 365 можно добавлять только пользователей.
@@ -36,12 +36,13 @@ POST /groups/{id}/members/$ref
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Заголовок       | Значение |
+|:---------------|:----------|
+| Авторизация  | Bearer {токен}. Обязательный. |
+| Content-Type   | appication/json. Обязательный элемент. |
 
-## <a name="request-body"></a>Текст запроса
-Предоставьте в тексте запроса описание добавляемого объекта [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) или [group](../resources/group.md) в формате JSON.
+## <a name="request-body"></a>Тело запроса
+Предоставьте в тексте запроса описание добавляемого объекта [directoryObject](../resources/directoryobject.md), [user](../resources/user.md), [group](../resources/group.md) или [organizational contact](../resources/orgcontact.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
@@ -82,11 +83,9 @@ Content-length: 30
 
 ---
 
-Укажите в тексте запроса свойство `id` добавляемого объекта [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) или [group](../resources/group.md), представленное в формате JSON.
-
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
->**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

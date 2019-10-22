@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f2c70da69f96a9fdbd13ca8a829ab717d4ffd13e
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: 232f20f4266cc2d23580f0f7db9fdf48a9d02f41
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "37036335"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37622180"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -48,8 +48,9 @@ ms.locfileid: "37036335"
 |[Список объектов contactFolder](../api/user-list-contactfolders.md) |Коллекция [contactFolder](contactfolder.md)| Получение коллекции папок контактов в папке контактов по умолчанию для вошедшего пользователя.|
 |[Создание объекта contactFolder](../api/user-post-contactfolders.md) |[contactFolder](contactfolder.md)| Создание объекта ContactFolder путем добавления в коллекцию папок контактов.|
 |[Список directReports](../api/user-list-directreports.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей и контактов, являющихся подчиненными данного пользователя, из свойства навигации directReports.|
-|[Получение руководителя](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | Получение пользователя или контакта, являющегося руководителем пользователя, из свойства навигации manager.|
-|[Список memberOf](../api/user-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Получение групп и ролей каталога, непосредственным участником которых является пользователь, из свойства навигации memberOf.|
+|[Получение руководителя](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | Получение пользователя или контакта организации, являющегося руководителем пользователя, из свойства навигации manager.|
+|[Назначение руководителя](../api/user-post-manager.md) |[directoryObject](directoryobject.md) | Назначение пользователя или контакта организации в качестве руководителя пользователя.|
+|[Перечисление memberOf](../api/user-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Получение групп и ролей каталога, непосредственным участником которых является пользователь, из свойства навигации memberOf.|
 |[Перечисление транзитивных свойств memberOf](../api/user-list-transitivememberof.md) |Коллекция [directoryObject](directoryobject.md)| Перечисление групп и ролей каталога, участником которых является пользователь. Эта операция является транзитивной и включает группы, в которых пользователь является вложенным элементом. |
 |[Список ownedDevices](../api/user-list-owneddevices.md) |Коллекция [directoryObject](directoryobject.md)| Получение устройств, принадлежащих пользователю, из свойства навигации ownedDevices.|
 |[Список ownedObjects](../api/user-list-ownedobjects.md) |Коллекция [directoryObject](directoryobject.md)| Получение объектов каталога, принадлежащих пользователю, из свойства навигации ownedObjects.|
@@ -97,6 +98,7 @@ ms.locfileid: "37036335"
 |interests|Коллекция строк|Список интересов пользователя.|
 |isResourceAccount|Boolean| Значение **true**, если пользователь является учетной записью ресурса; в противном случае **false**. Пустое значение должно считаться соответствующим значению **false**.|
 |jobTitle|String|Должность пользователя. Поддерживает параметр $filter.|
+|lastPasswordChangeDateTime| DateTimeOffset | Время последнего изменения своего пароля пользователем Azure AD. Сведения о времени и дате представлены в формате ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z"|
 |legalAgeGroupClassification|String| Используется корпоративными приложениями для определения юридической возрастной группы пользователя. Это свойство предназначено только для чтения. Вычисляется на основе свойств `ageGroup` и `consentProvidedForMinor`. Допустимые значения: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` и `adult`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](#legal-age-group-property-definitions).|
 |licenseAssignmentStates|Коллекция [licenseAssignmentState](licenseassignmentstate.md)|Состояние назначений лицензий для пользователя. Только для чтения.|
 |mail|String|SMTP-адрес пользователя, например "gregory@contoso.onmicrosoft.com". Только для чтения. Поддерживает параметр $filter.|
@@ -397,6 +399,7 @@ ms.locfileid: "37036335"
   "jobTitle": "string",
   "legalAgeGroupClassification": "string",
   "licenseAssignmentStates": [{"@odata.type": "microsoft.graph.licenseAssignmentState"}],
+  "lastPasswordChangeDateTime": "String (timestamp)",
   "mail": "string",
   "mailboxSettings": {"@odata.type": "microsoft.graph.mailboxSettings"},
   "mailNickname": "string",

@@ -5,16 +5,16 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 81a7936f713e769b8025dfde0b2f3d42f7234d44
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 1ff81baf734d39e225031dc836fbd33d330efced
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36727476"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37622196"
 ---
 # <a name="list-manager"></a>Получение руководителя
 
-Получение руководителя пользователя. Возвращает пользователя или контакт, назначенный в качестве руководителя пользователя.
+Получение руководителя пользователя. Возвращает пользователя или контакт организации, назначенный в качестве руководителя пользователя.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -31,12 +31,11 @@ GET /me/manager
 GET /users/{id | userPrincipalName}/manager
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение|
 |:-----------|:------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
-| Content-Type   | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -76,6 +75,7 @@ GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
+>**Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 <!-- {
   "blockType": "response",
   "truncated": false,

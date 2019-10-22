@@ -3,14 +3,14 @@ title: Тип ресурса attendee
 description: Участник события. Это может быть человек или ресурс (например конференц-зал или оборудование), настроенный в качестве ресурса на сервере Exchange Server клиента.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 435a9b3badf20ddb79affd4e40e5ca8b66ff34c8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: outlook
+author: angelgolfer-ms
+ms.openlocfilehash: 4e906a2f7f9d95cd3c3623d1f84c41aedded6cc4
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974294"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37621589"
 ---
 # <a name="attendee-resource-type"></a>Тип ресурса attendee
 
@@ -23,9 +23,10 @@ ms.locfileid: "35974294"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
+|emailAddress|[emailAddress](emailaddress.md)|Включает имя и SMTP-адрес участника.|
+|пропоседневтиме|[timeSlot](timeslot.md)|Альтернативная дата/время, предлагаемая участником для начала и конца приглашения на собрание. Если участник не предложил другое время, это свойство не включается в ответ на событие GET.|
 |status|[ResponseStatus](responsestatus.md)|Ответ участника (нет, принято, отклонено и т. д.) на событие, а также дата и время отправки ответа.|
 |type|String|Тип участника: `required`, `optional`, `resource`.|
-|emailAddress|[emailAddress](emailaddress.md)|Включает имя и SMTP-адрес участника.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -34,16 +35,17 @@ ms.locfileid: "35974294"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "proposedNewTime"
   ],
   "@odata.type": "microsoft.graph.attendee"
 }-->
 
 ```json
 {
+  "emailAddress": {"@odata.type": "microsoft.graph.emailAddress"},
+  "proposedNewTime": {"@odata.type": "microsoft.graph.timeSlot"},
   "status": {"@odata.type": "microsoft.graph.responseStatus"},
-  "type": "String",
-  "emailAddress": {"@odata.type": "microsoft.graph.emailAddress"}
+  "type": "String"
 }
 
 ```

@@ -5,18 +5,20 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ad868357f546fd156d4c9e8c66263236ba3c10d5
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: b9bdcd71033c1e1c21f7ba3768e357bbe5c70084
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419897"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37621429"
 ---
 # <a name="event-tentativelyaccept"></a>event: tentativelyAccept
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Предварительно принять указанное [событие](../resources/event.md) в календаре пользователя [](../resources/calendar.md).
+Предварительно принять указанное [событие](../resources/event.md) в [календаре](../resources/calendar.md)пользователя.
+
+Если событие позволяет создавать предложения для нового времени, при отклике на запрос о событии приглашение можно предложить альтернативное время, включив параметр **пропоседневтиме** . Дополнительные сведения о том, как предлагать время, а также как получать и принимать новое предложение по времени, приведены в разделе [предложение нового времени проведения собрания](/graph/outlook-calendar-meeting-proposals).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -58,15 +60,21 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 |:---------------|:--------|:----------|
 |comment|String|Текст, включенный в ответ. Необязательный.|
 |sendResponse|Логическое|Значение `true` указывает, что организатору должен быть отправлен ответ. В противном случае используется значение `false`. Необязательный. Значение по умолчанию: `true`.|
+|пропоседневтиме|[timeSlot](../resources/timeslot.md)|Альтернативная дата/время, предлагаемые приглашению на собрание для начала и завершения. Действует только для событий, которые допускают новые предложения времени. Для установки этого параметра необходимо **** задать для `true`параметра сендреспонсе значение. Необязательный параметр.|
 
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`. В тексте отклика не возвращается никаких данных.
 
+Это действие возвращает HTTP-400, если выполняется одно или оба следующих действия:
+
+- Параметр **пропоседневтиме** включен, но свойство **алловневтимепропосалс** **события** имеет `false`значение. 
+- Параметр **пропоседневтиме** включен, но для `false`параметра **сендреспонсе** задано значение.
+
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+### <a name="request"></a>Запрос
+В следующем примере вошедшего в систему пользователя отвечает за заданное событие, задает для пареметер **сендреспонсе** значение true и включает альтернативное время в параметр **пропоседневтиме** .
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -76,11 +84,20 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ```http
 POST https://graph.microsoft.com/beta/me/events/{id}/tentativelyAccept
 Content-type: application/json
-Content-length: 56
 
 {
-  "comment": "comment-value",
-  "sendResponse": true
+  "comment": "I may not be able to make this week. How about next week?",
+  "sendResponse": true,
+  "proposedNewTime": {
+      "start": { 
+          "dateTime": "2019-12-02T18:00:00", 
+          "timeZone": "Pacific Standard Time" 
+      }, 
+      "end": { 
+          "dateTime": "2019-12-02T19:00:00", 
+          "timeZone": "Pacific Standard Time" 
+      }     
+  }
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -91,22 +108,21 @@ Content-length: 56
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-tentativelyaccept-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/event-tentativelyaccept-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-##### <a name="response"></a>Отклик
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
+  "name": "event_tentativelyaccept",
   "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5b3607e98cf6d83593374280b672772c7c703b09
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: c353c8962e86606c45563c4fb066e1496b0426b0
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36721749"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37621408"
 ---
 # <a name="get-eventmessage"></a>Получение объекта eventMessage
 
@@ -60,11 +60,13 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [eventMessage](../resources/eventmessage.md) в тексте отклика.
-## <a name="example"></a>Пример
-##### <a name="request-1"></a>Запрос 1
+## <a name="examples"></a>Примеры
+
+### <a name="example-1"></a>Пример 1
+#### <a name="request"></a>Запрос
 Первый пример показывает, как получить свойства сообщения о событии с учетом идентификатора этого сообщения.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
@@ -83,14 +85,14 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_lAAA=
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-eventmessage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-eventmessage-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response-1"></a>Отклик 1
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+#### <a name="response"></a>Отклик
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "name": "get_eventmessage",
@@ -195,8 +197,8 @@ Content-type: application/json
 }
 ```
 
-
-##### <a name="request-2"></a>Запрос 2
+### <a name="example-2"></a>Пример 2
+#### <a name="request"></a>Запрос
 Второй пример показывает, как получить событие, связанное с сообщением о событии. Этот пример кода по идентификатору сообщения о событии получает это сообщение, выполняет приведение этого сообщения для доступа к его свойству навигации **event** и применяет параметр $expand для получения свойств события.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
@@ -215,15 +217,15 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkADYAAAImV_jAAA=/?$expand=mi
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-event-based-on-eventmessage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-event-based-on-eventmessage-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response-2"></a>Отклик 2
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика. В отклике возвращаются свойства связанного события.
-Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "name": "get_event_based_on_eventmessage",

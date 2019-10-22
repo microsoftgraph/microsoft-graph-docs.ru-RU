@@ -1,20 +1,20 @@
 ---
 title: Список транзитивных членов группы
-description: Получение списка членов группы. У группы могут быть пользователи, устройства и другие группы в качестве участников. Эта операция является транзитивным и также возвращает плоский список всех вложенных элементов.
+description: Получение списка членов группы. У группы могут быть пользователи, устройства, организационные контакты и другие группы в качестве участников. Эта операция является транзитивным и возвращает плоский список всех вложенных элементов.
 author: anchanda
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: bc9ac962a4e6d882fd903d55eb4e78b7afead1a8
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 23c051caceff6be68e3b550c06f50c397a5c5d97
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36726727"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37621647"
 ---
 # <a name="list-group-transitive-members"></a>Список транзитивных членов группы
 
-Получение списка членов группы. У группы могут быть пользователи, устройства и другие группы в качестве участников. Эта операция является транзитивным и также возвращает плоский список всех вложенных элементов.
+Получение списка членов группы. У группы могут быть пользователи, устройства, организационные контакты и другие группы в качестве участников. Эта операция является транзитивным и возвращает плоский список всех вложенных элементов.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -38,13 +38,13 @@ GET /groups/{id}/transitiveMembers
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Заголовок       | Значение |
+|:-----------|:----------|
+| Авторизация  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/transitiveMembers
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-group-transitivemembers-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-group-transitivemembers-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -88,10 +88,10 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/transitiveMembers
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
->**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Note**: объект Response, показанный здесь, может быть укорочен для удобочитаемости. 
 <!-- {
   "blockType": "response",
   "truncated": true,
