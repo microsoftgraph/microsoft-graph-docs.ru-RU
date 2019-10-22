@@ -5,29 +5,32 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9d2276cf38826f80289cc6b2da1112fa5a320f08
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 3e1e484bd3debc422890014aeb0df48806550e64
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415770"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37621436"
 ---
-# <a name="event-decline"></a><span data-ttu-id="f61c6-103">event: decline</span><span class="sxs-lookup"><span data-stu-id="f61c6-103">event: decline</span></span>
+# <a name="event-decline"></a><span data-ttu-id="c515c-103">event: decline</span><span class="sxs-lookup"><span data-stu-id="c515c-103">event: decline</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f61c6-104">Отклонить приглашение для указанного [события](../resources/event.md) в [календаре](../resources/calendar.md)пользователя.</span><span class="sxs-lookup"><span data-stu-id="f61c6-104">Decline invitation to the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).</span></span>
+<span data-ttu-id="c515c-104">Отклонить приглашение для указанного [события](../resources/event.md) в [календаре](../resources/calendar.md)пользователя.</span><span class="sxs-lookup"><span data-stu-id="c515c-104">Decline invitation to the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f61c6-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f61c6-105">Permissions</span></span>
-<span data-ttu-id="f61c6-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f61c6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c515c-105">Если событие разрешает предложения для нового времени, при отправке события приглашение можно предложить альтернативным способом, включив параметр **пропоседневтиме** .</span><span class="sxs-lookup"><span data-stu-id="c515c-105">If the event allows proposals for new times, on declining the event, an invitee can choose to suggest an alternative time by including the **proposedNewTime** parameter.</span></span> <span data-ttu-id="c515c-106">Дополнительные сведения о том, как предлагать время, а также как получать и принимать новое предложение по времени, приведены в разделе [предложение нового времени проведения собрания](/graph/outlook-calendar-meeting-proposals).</span><span class="sxs-lookup"><span data-stu-id="c515c-106">For more information on how to propose a time, and how to receive and accept a new time proposal, see [Propose new meeting times](/graph/outlook-calendar-meeting-proposals).</span></span>
 
-|<span data-ttu-id="f61c6-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f61c6-108">Permission type</span></span>      | <span data-ttu-id="f61c6-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f61c6-109">Permissions (from least to most privileged)</span></span>              |
+
+## <a name="permissions"></a><span data-ttu-id="c515c-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c515c-107">Permissions</span></span>
+<span data-ttu-id="c515c-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c515c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="c515c-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c515c-110">Permission type</span></span>      | <span data-ttu-id="c515c-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c515c-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f61c6-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f61c6-110">Delegated (work or school account)</span></span> | <span data-ttu-id="f61c6-111">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f61c6-111">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="f61c6-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f61c6-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f61c6-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f61c6-113">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="f61c6-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f61c6-114">Application</span></span> | <span data-ttu-id="f61c6-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f61c6-115">Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="c515c-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c515c-112">Delegated (work or school account)</span></span> | <span data-ttu-id="c515c-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c515c-113">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="c515c-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c515c-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c515c-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c515c-115">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="c515c-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c515c-116">Application</span></span> | <span data-ttu-id="c515c-117">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c515c-117">Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f61c6-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f61c6-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c515c-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c515c-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -50,36 +53,42 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 
 <br/>
 
-## <a name="request-headers"></a><span data-ttu-id="f61c6-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f61c6-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="c515c-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c515c-119">Request headers</span></span>
 
-| <span data-ttu-id="f61c6-118">Имя</span><span class="sxs-lookup"><span data-stu-id="f61c6-118">Name</span></span>       | <span data-ttu-id="f61c6-119">Тип</span><span class="sxs-lookup"><span data-stu-id="f61c6-119">Type</span></span> | <span data-ttu-id="f61c6-120">Описание</span><span class="sxs-lookup"><span data-stu-id="f61c6-120">Description</span></span>|
+| <span data-ttu-id="c515c-120">Имя</span><span class="sxs-lookup"><span data-stu-id="c515c-120">Name</span></span>       | <span data-ttu-id="c515c-121">Тип</span><span class="sxs-lookup"><span data-stu-id="c515c-121">Type</span></span> | <span data-ttu-id="c515c-122">Описание</span><span class="sxs-lookup"><span data-stu-id="c515c-122">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="f61c6-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="f61c6-121">Authorization</span></span>  | <span data-ttu-id="f61c6-122">string</span><span class="sxs-lookup"><span data-stu-id="f61c6-122">string</span></span>  | <span data-ttu-id="f61c6-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f61c6-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="f61c6-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f61c6-125">Content-Type</span></span> | <span data-ttu-id="f61c6-126">string</span><span class="sxs-lookup"><span data-stu-id="f61c6-126">string</span></span>  | <span data-ttu-id="f61c6-p103">Характер данных в теле объекта. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f61c6-p103">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="c515c-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="c515c-123">Authorization</span></span>  | <span data-ttu-id="c515c-124">string</span><span class="sxs-lookup"><span data-stu-id="c515c-124">string</span></span>  | <span data-ttu-id="c515c-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c515c-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c515c-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c515c-127">Content-Type</span></span> | <span data-ttu-id="c515c-128">string</span><span class="sxs-lookup"><span data-stu-id="c515c-128">string</span></span>  | <span data-ttu-id="c515c-p104">Характер данных в теле объекта. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c515c-p104">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f61c6-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f61c6-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="c515c-131">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="c515c-131">Request body</span></span>
 
-<span data-ttu-id="f61c6-130">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="f61c6-130">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="c515c-132">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="c515c-132">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="f61c6-131">Параметр</span><span class="sxs-lookup"><span data-stu-id="f61c6-131">Parameter</span></span>    | <span data-ttu-id="f61c6-132">Тип</span><span class="sxs-lookup"><span data-stu-id="f61c6-132">Type</span></span>   |<span data-ttu-id="f61c6-133">Описание</span><span class="sxs-lookup"><span data-stu-id="f61c6-133">Description</span></span>|
+| <span data-ttu-id="c515c-133">Параметр</span><span class="sxs-lookup"><span data-stu-id="c515c-133">Parameter</span></span>    | <span data-ttu-id="c515c-134">Тип</span><span class="sxs-lookup"><span data-stu-id="c515c-134">Type</span></span>   |<span data-ttu-id="c515c-135">Описание</span><span class="sxs-lookup"><span data-stu-id="c515c-135">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f61c6-134">comment</span><span class="sxs-lookup"><span data-stu-id="f61c6-134">comment</span></span>|<span data-ttu-id="f61c6-135">String</span><span class="sxs-lookup"><span data-stu-id="f61c6-135">String</span></span>|<span data-ttu-id="f61c6-p104">Текст, включенный в ответ. Необязательный.</span><span class="sxs-lookup"><span data-stu-id="f61c6-p104">Text included in the response. Optional.</span></span>|
-|<span data-ttu-id="f61c6-138">sendResponse</span><span class="sxs-lookup"><span data-stu-id="f61c6-138">sendResponse</span></span>|<span data-ttu-id="f61c6-139">Логическое</span><span class="sxs-lookup"><span data-stu-id="f61c6-139">Boolean</span></span>|<span data-ttu-id="f61c6-p105">Значение `true` указывает, что организатору должен быть отправлен ответ. В противном случае используется значение `false`. Необязательный. Значение по умолчанию: `true`.</span><span class="sxs-lookup"><span data-stu-id="f61c6-p105">`true` if a response is to be sent to the organizer; otherwise, `false`. Optional. Default is `true`.</span></span>|
+|<span data-ttu-id="c515c-136">comment</span><span class="sxs-lookup"><span data-stu-id="c515c-136">comment</span></span>|<span data-ttu-id="c515c-137">String</span><span class="sxs-lookup"><span data-stu-id="c515c-137">String</span></span>|<span data-ttu-id="c515c-p105">Текст, включенный в ответ. Необязательный.</span><span class="sxs-lookup"><span data-stu-id="c515c-p105">Text included in the response. Optional.</span></span>|
+|<span data-ttu-id="c515c-140">sendResponse</span><span class="sxs-lookup"><span data-stu-id="c515c-140">sendResponse</span></span>|<span data-ttu-id="c515c-141">Логическое</span><span class="sxs-lookup"><span data-stu-id="c515c-141">Boolean</span></span>|<span data-ttu-id="c515c-p106">Значение `true` указывает, что организатору должен быть отправлен ответ. В противном случае используется значение `false`. Необязательный. Значение по умолчанию: `true`.</span><span class="sxs-lookup"><span data-stu-id="c515c-p106">`true` if a response is to be sent to the organizer; otherwise, `false`. Optional. Default is `true`.</span></span>|
+|<span data-ttu-id="c515c-145">пропоседневтиме</span><span class="sxs-lookup"><span data-stu-id="c515c-145">proposedNewTime</span></span>|[<span data-ttu-id="c515c-146">timeSlot</span><span class="sxs-lookup"><span data-stu-id="c515c-146">timeSlot</span></span>](../resources/timeslot.md)|<span data-ttu-id="c515c-147">Альтернативная дата/время, предлагаемые приглашению на собрание для начала и завершения.</span><span class="sxs-lookup"><span data-stu-id="c515c-147">An alternate date/time proposed by an invitee for a meeting request to start and end.</span></span> <span data-ttu-id="c515c-148">Действует только для событий, которые допускают новые предложения времени.</span><span class="sxs-lookup"><span data-stu-id="c515c-148">Valid only for events that allow new time proposals.</span></span> <span data-ttu-id="c515c-149">Для установки этого параметра необходимо \*\*\*\* задать для `true`параметра сендреспонсе значение.</span><span class="sxs-lookup"><span data-stu-id="c515c-149">Setting this parameter requires setting **sendResponse** to `true`.</span></span> <span data-ttu-id="c515c-150">Необязательный параметр.</span><span class="sxs-lookup"><span data-stu-id="c515c-150">Optional.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="f61c6-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="f61c6-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c515c-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="c515c-151">Response</span></span>
 
-<span data-ttu-id="f61c6-p106">При успешном выполнении этот метод возвращает код отклика `202 Accepted`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="f61c6-p106">If successful, this method returns a `202 Accepted` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="c515c-p108">При успешном выполнении этот метод возвращает код отклика `202 Accepted`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="c515c-p108">If successful, this method returns a `202 Accepted` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f61c6-146">Пример</span><span class="sxs-lookup"><span data-stu-id="f61c6-146">Example</span></span>
+<span data-ttu-id="c515c-154">Это действие возвращает HTTP-400, если выполняется одно или оба следующих действия:</span><span class="sxs-lookup"><span data-stu-id="c515c-154">This action returns HTTP 400 if one or both of the following occur:</span></span>
 
-<span data-ttu-id="f61c6-147">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="f61c6-147">Here is an example of how to call this API.</span></span>
+- <span data-ttu-id="c515c-155">Параметр **пропоседневтиме** включен, но свойство **алловневтимепропосалс** **события** имеет `false`значение.</span><span class="sxs-lookup"><span data-stu-id="c515c-155">The **proposedNewTime** parameter is included but the **allowNewTimeProposals** property of the **event** is `false`.</span></span> 
+- <span data-ttu-id="c515c-156">Параметр **пропоседневтиме** включен, но для `false`параметра **сендреспонсе** задано значение.</span><span class="sxs-lookup"><span data-stu-id="c515c-156">The **proposedNewTime** parameter is included but the **sendResponse** parameter is set to `false`.</span></span>
 
-### <a name="request"></a><span data-ttu-id="f61c6-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="f61c6-148">Request</span></span>
+## <a name="example"></a><span data-ttu-id="c515c-157">Пример</span><span class="sxs-lookup"><span data-stu-id="c515c-157">Example</span></span>
 
-<span data-ttu-id="f61c6-149">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f61c6-149">Here is an example of the request.</span></span>
+<span data-ttu-id="c515c-158">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="c515c-158">Here is an example of how to call this API.</span></span>
+
+### <a name="request"></a><span data-ttu-id="c515c-159">Запрос</span><span class="sxs-lookup"><span data-stu-id="c515c-159">Request</span></span>
+
+<span data-ttu-id="c515c-160">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c515c-160">Here is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="f61c6-150">HTTP</span><span class="sxs-lookup"><span data-stu-id="f61c6-150">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="c515c-161">HTTP</span><span class="sxs-lookup"><span data-stu-id="c515c-161">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "event_decline"
@@ -88,31 +97,40 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ```http
 POST https://graph.microsoft.com/beta/me/events/{id}/decline
 Content-type: application/json
-Content-length: 56
 
 {
-  "comment": "comment-value",
-  "sendResponse": true
+  "comment": "I won't be able to make this week. How about next week?",
+  "sendResponse": true,
+  "proposedNewTime": {
+      "start": { 
+          "dateTime": "2019-12-02T18:00:00", 
+          "timeZone": "Pacific Standard Time" 
+      }, 
+      "end": { 
+          "dateTime": "2019-12-02T19:00:00", 
+          "timeZone": "Pacific Standard Time" 
+      }     
+  }
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="f61c6-151">C#</span><span class="sxs-lookup"><span data-stu-id="f61c6-151">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="c515c-162">C#</span><span class="sxs-lookup"><span data-stu-id="c515c-162">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/event-decline-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f61c6-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f61c6-152">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="c515c-163">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c515c-163">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/event-decline-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f61c6-153">Цель — C</span><span class="sxs-lookup"><span data-stu-id="f61c6-153">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="c515c-164">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c515c-164">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/event-decline-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="f61c6-154">Отклик</span><span class="sxs-lookup"><span data-stu-id="f61c6-154">Response</span></span>
+### <a name="response"></a><span data-ttu-id="c515c-165">Отклик</span><span class="sxs-lookup"><span data-stu-id="c515c-165">Response</span></span>
 
-<span data-ttu-id="f61c6-155">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="f61c6-155">Here is an example of the response.</span></span>
+<span data-ttu-id="c515c-166">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="c515c-166">Here is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
