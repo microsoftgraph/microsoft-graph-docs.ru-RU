@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: angelgolfer-ms
-ms.openlocfilehash: a6810ff870124a793bee40ec9df66ae7cb5eabc8
+ms.openlocfilehash: 0ab32470a7ecf5e00d10ccada984096d16537f1b
 ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/22/2019
-ms.locfileid: "37621661"
+ms.locfileid: "37632682"
 ---
 # <a name="attachment-resource-type"></a>Тип ресурса attachment
 
@@ -26,7 +26,7 @@ ms.locfileid: "37621661"
 * элемент (контакт, событие или сообщение, представленные ресурсом [itemAttachment](../resources/itemattachment.md));
 * ссылка на файл (ресурс [referenceAttachment](../resources/referenceattachment.md)).
 
->**Примечание**. так как в настоящее время общий размер каждого запроса REST составляет 4 МБ, в общем случае это ограничивает размер вложения файла или элемента, который можно добавить в раздел 4 МБ. 
+>**Note**: ограничен размер вложения файла или элемента, который можно добавить в пределах 4 МБ. 
 >
 > Однако при присоединении к сообщению файла, который находится в диапазоне от 3 МБ и 150MB, вы можете [создать сеанс отправки](../api/attachment-createuploadsession.md) и итеративно отправлять диапазоны файлов, чтобы присоединить их. В этом примере показано, как [прикрепить большие файлы к сообщениям Outlook](/graph/outlook-large-attachments) .
 
@@ -38,7 +38,7 @@ ms.locfileid: "37621661"
 |:---------------|:--------|:----------|
 |[Получение вложения](../api/attachment-get.md) | [attachment](attachment.md) |Чтение свойств, связей или необработанного содержимого вложения, вложенного в пользовательское событие, сообщение, задачу Outlook или POST.|
 |[Добавление вложения в пользовательское событие](../api/event-post-attachments.md) | [attachment](attachment.md) |Добавление файла, элемента или вложения-ссылки в качестве события в пользовательском календаре.|
-|[Добавление вложения в сообщение](../api/message-post-attachments.md) | [attachment](attachment.md) |Добавление в сообщение файла, элемента или ссылки в качестве вложения. При присоединении файла Размер файла должен быть меньше 4 МБ.|
+|[Добавление вложения в сообщение](../api/message-post-attachments.md) | [attachment](attachment.md) |Добавление в сообщение файла, элемента или ссылки в качестве вложения. Эта операция ограничит размер вложения, которое можно добавить в течение 4 МБ.|
 |[Создание сеанса для присоединения большого файла](../api/attachment-createuploadsession.md)| [uploadSession](uploadsession.md) | Создайте сеанс отправки, который позволяет приложению итеративно отправлять диапазоны файлов, чтобы прикрепить файл к указанному **сообщению**. Размер файла должен быть в пределах 3 МБ и 150MB.|
 |[Добавление вложения к задаче Outlook](../api/outlooktask-post-attachments.md) | [attachment](attachment.md) |Добавление файла, элемента или ссылки на вложение к задаче Outlook.|
 |[Добавление вложения в запись](../api/post-post-attachments.md) | [attachment](attachment.md) |Добавление в запись файла, элемента или ссылки в качестве вложения.|
