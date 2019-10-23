@@ -1,5 +1,7 @@
 name: Документация по Graph
-metadata: {}
+metadata:
+  experimental: true
+  experiment_id: b8938daf-1bcb-4f
 items:
   - name: Документация по Microsoft Graph
     href: index.yml
@@ -82,6 +84,8 @@ items:
             href: findmeetingtimes-example.md
           - name: Получение сведений о доступности
             href: outlook-get-free-busy-schedule.md
+          - name: Предложение нового времени собрания (предварительная версия)
+            href: outlook-calendar-meeting-proposals.md
           - name: Планирование повторяющихся событий
             href: outlook-schedule-recurring-events.md
           - name: Получение общих событий
@@ -150,6 +154,8 @@ items:
             href: outlook-share-messages-folders.md
           - name: Отправка почты от имени другого пользователя
             href: outlook-send-mail-from-other-user.md
+          - name: Вложение больших файлов (предварительная версия)
+            href: outlook-large-attachments.md
           - name: Упорядочение сообщений
             href: outlook-organize-messages.md
           - name: Неизменяемый идентификатор
