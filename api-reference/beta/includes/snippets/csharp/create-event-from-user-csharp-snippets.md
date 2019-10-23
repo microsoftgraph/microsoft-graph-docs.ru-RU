@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 379ed9551fed7231c4cb2d06eb632b87a45bed37
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 1647f7839bcf48c5ec9e870d79fed4db91186b28
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35723986"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37636993"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var @event = new Event
     Body = new ItemBody
     {
         ContentType = BodyType.Html,
-        Content = "Does late morning work for you?"
+        Content = "Does noon work for you?"
     },
     Start = new DateTimeTimeZone
     {
@@ -44,7 +44,8 @@ var @event = new Event
             },
             Type = AttendeeType.Required
         }
-    }
+    },
+    AllowNewTimeProposals = true
 };
 
 await graphClient.Me.Events

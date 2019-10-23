@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ef8e2d442f2a084f16f4b39300d6d195bf6ed3c3
-ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
+ms.openlocfilehash: b7ccbd7884353762e6d5e2c5fb0b0c8048967493
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37427943"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37634064"
 ---
 # <a name="add-attachment"></a>Добавление вложения
 
@@ -26,7 +26,7 @@ ms.locfileid: "37427943"
 
 Вы можете добавить вложение к существующему сообщению, добавив его в коллекцию вложений, или к сообщению, [создаваемому и отправляемому на ходу](../api/user-sendmail.md).
 
-Так как в настоящее время максимальный общий размер каждого запроса REST составляет 4 МБ, размер добавляемого вложения не может превышать 4 МБ.
+Эта операция ограничит размер вложения, которое можно добавить в течение 4 МБ.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -48,7 +48,7 @@ POST /users/{id | userPrincipalName}/messages/{id}/attachments
 POST /me/mailFolders/{id}/messages/{id}/attachments
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments
 ```
-Вложения [сообщения](../resources/message.md) в дочерней папке объекта [mailFolder](../resources/mailfolder.md) в почтовом ящике пользователя.  В приведенном ниже примере показан один уровень вложенности, но сообщение может находиться в папке, вложенной в дочернюю, и т. д.
+Вложения [сообщения](../resources/message.md) в дочерней папке объекта [mailFolder](../resources/mailfolder.md) в почтовом ящике пользователя.  В приведенном ниже примере показан один уровень вложенности, но сообщение может находиться в папке, вложенной в дочернюю, и т. д. 
 ```http
 POST /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
@@ -174,7 +174,7 @@ Content-length: 200
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "name": "create_item_attachment_from_message_v1",

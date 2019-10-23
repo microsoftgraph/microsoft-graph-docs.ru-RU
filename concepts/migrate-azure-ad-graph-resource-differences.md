@@ -4,12 +4,12 @@ description: Описываются различия между ресурсам
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2f0db3f35286e800c32e36e0b6175a02a8119321
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 49a0321601c79ac5d5c0eb64b84a7f197bcb4e03
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538975"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37622549"
 ---
 # <a name="resource-type-differences-between-azure-ad-graph-and-microsoft-graph"></a>Различия между типами ресурсов в Azure AD Graph и Microsoft Graph
 
@@ -23,14 +23,14 @@ ms.locfileid: "37538975"
 
 > **Note**: имена типов ресурсов в Azure AD Graph в стиле Pascal, в то время как в Microsoft Graph они имеют стиль Camel.
 
-|Azure AD Graph <br>ресурс (v 1.6) |Microsoft Graph<br>resource|Comments|
+|Azure AD Graph <br>ресурс (v 1.6) |Microsoft Graph<br>resource|Комментарии|
 |---|---|---|
 | [Надстройк](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference)       | бета-версия _еще недоступна_<br>Версия 1.0 _еще недоступна_ ||
-| [Application](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета-версия [приложения](/graph/api/resources/application?view=graph-rest-beta)<br>Версия 1.0 _еще недоступна_ ||
+| [Приложение](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета-версия [приложения](/graph/api/resources/application?view=graph-rest-beta)<br>Версия 1.0 _еще недоступна_ ||
 | [аппроле](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [аппроле](/graph/api/resources/approle?view=graph-rest-beta)<br>Версия 1.0 _еще недоступна_ | |
 | [аппролеассигнмент](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета&nbsp;-&nbsp;-[аппролеассигнмент](/graph/api/resources/approleassignment?view=graph-rest-beta)<br>Версия 1.0 _еще недоступна_ | |
-| [цертификатеаусоритинформатион](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета&nbsp;-&nbsp;-[цертификатеаусорити](/graph/api/resources/certificateauthority?view=graph-rest-beta)<br>Версия 1.0&nbsp;-&nbsp;[цертификатеаусорити](/graph/api/resources/certificateauthority?view=graph-rest-1.0) | |
-| [Contact](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [orgContact](/graph/api/resources/orgContact?view=graph-rest-beta)<br>Версия 1.0 _еще недоступна_ | |
+| [цертификатеаусоритинформатион](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета&nbsp;-&nbsp;-[цертификатеаусорити](/graph/api/resources/certificateauthority?view=graph-rest-beta)<br>Версия 1.0&nbsp;-&nbsp;[цертификатеаусорити](/graph/api/resources/certificateauthority?view=graph-rest-v1.0) | |
+| [контакт](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference); | бета- [orgContact](/graph/api/resources/orgContact?view=graph-rest-beta)<br>Версия 1.0 — [orgContact](/graph/api/resources/orgContact?view=graph-rest-v1.0) | |
 | [директорилинкчанже](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | _новый&nbsp;подход_ к бета-версии <br>v 1.0 — _новый&nbsp;подход_ | Запрос Delta поддерживает обнаружение изменений связи с механизмом, который не требует использования этого ресурса. Ознакомьтесь [с различиями между функциями Azure AD Graph и Microsoft Graph](migrate-azure-ad-graph-feature-differences.md). |
 | [кэйкредентиал](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference)| бета- [кэйкредентиал](/graph/api/resources/keyCredential?view=graph-rest-beta)<br>Версия 1.0 _еще недоступна_ | |
 | [Ключзначение](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [ключзначение](/graph/api/resources/keyValue?view=graph-rest-beta) <br> Версия 1.0 _еще недоступна_ ||
@@ -49,7 +49,7 @@ ms.locfileid: "37538975"
 | [ServicePrincipal](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) <br> Версия 1.0 _еще недоступна_ | |
 | [сигниннаме](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета-версия _еще недоступна_ <br> Версия 1.0 _еще недоступна_ | Создание модели для идентификаторов, используемых для входа в учетную запись пользователя, которая называется **идентитйобжект**, но пока недоступна. Поддерживает сценарии B2C для Azure AD. |
 | [тенантдетаил](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [Организация](/graph/api/resources/organization?view=graph-rest-beta) <br> v 1.0 — [Организация](/graph/api/resources/organization?view=graph-rest-v1.0) | |
-| [трустедкасфорпассвордаус](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета&nbsp;-&nbsp;-[цертификатебаседаусконфигуратион](/graph/api/resources/certificatebasedcuthconfiguration?view=graph-rest-beta) <br> Версия 1.0 — [цертификатебаседаусконфигуратион](/graph/api/resources/certificatebasedcuthconfiguration?view=graph-rest-1.0) | |
+| [трустедкасфорпассвордаус](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета&nbsp;-&nbsp;-[цертификатебаседаусконфигуратион](/graph/api/resources/certificatebasedcuthconfiguration?view=graph-rest-beta) <br> Версия 1.0&nbsp;-&nbsp;[цертификатебаседаусконфигуратион](/graph/api/resources/certificatebasedcuthconfiguration?view=graph-rest-v1.0) | |
 | [UserIdentity](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета-версия _еще недоступна_ <br> Версия 1.0 _еще недоступна_ |  Создание модели для идентификаторов, используемых для входа в учетную запись пользователя, которая называется **идентитйобжект**, но пока недоступна. Поддерживает сценарии B2C для Azure AD. |
 
 ## <a name="next-steps"></a>Дальнейшие действия

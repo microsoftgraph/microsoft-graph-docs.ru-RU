@@ -5,16 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: eceb79cf733c453e9d44d7b7f1a7acdd562a2ed5
-ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
+ms.openlocfilehash: a09be08a90d819e7d430f9fb03c69b831a288b36
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37427888"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37632595"
 ---
 # <a name="add-attachment"></a>Добавление вложения
 
-С помощью этого API можно добавить [вложение](../resources/attachment.md) к событию. Так как в настоящее время максимальный общий размер каждого запроса REST составляет 4 МБ, размер добавляемого вложения не может превышать 4 МБ.
+С помощью этого API можно добавить [вложение](../resources/attachment.md) к событию. Эта операция ограничит размер вложения, которое можно добавить в течение 4 МБ.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
