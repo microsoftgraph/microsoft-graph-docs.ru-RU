@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph. Сведения о последних обновлениях см. в журнале изменений Microsoft Graph.
 author: ''
 localization_priority: Priority
-ms.openlocfilehash: 4895dd81a14369d5756d59ee95451f5942e246dc
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: e981530f3efa38f49655427085267a9fc0206835
+ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792760"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37638808"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -361,6 +361,12 @@ GET /users/{id | userPrincipalName}/contacts/{id}
     ```PowerShell
     New-AzureADServicePrincipal -AppId 00000003-0000-0000-c000-000000000000
     ```
+
+## <a name="identity-and-access"></a>Удостоверение и доступ
+
+### <a name="conditional-access-policies-and-named-locations"></a>Политики условного доступа и именованные расположения
+
+Операции записи для API политик условного доступа и именованных расположений требуют двух разрешений: Policy.ReadWrite.ConditionalAccess и Directory.AccessAsUser.All. Обычно должно быть достаточно разрешения с минимальным уровнем привилегий Policy.ReadWrite.ConditionalAccess. В настоящее время маркер требуется получать с помощью обоих этих разрешений.
 
 ## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis"></a>Функции, доступные только в REST API Office 365 или API Graph Azure AD
 

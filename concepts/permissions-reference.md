@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 scenarios: getting-started
 ms.custom: graphiamtop20
-ms.openlocfilehash: 1e06adeb3737b3ec715b74c09b80b86c683ff30d
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: 7d51ef3bf303609fdc7a209937dc1e844afe427a
+ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "37598263"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37638829"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -1106,6 +1106,7 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 |   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора | Поддержка учетной записи Майкрософт |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Policy.Read.All_ | Чтение политик организации | Позволяет приложению читать политики организации от имени вошедшего пользователя. | Да | Нет |
+| _Policy.ReadWrite.ConditionalAccess_ | Чтение и запись политик условного доступа в организации | Позволяет приложению считывать и записывать политики условного доступа в организации от имени вошедшего пользователя. | Да | Нет |
 | _Policy.ReadWrite.FeatureRollout_ | Чтение и запись политик развертывания функций в организации | Позволяет приложению считывать и записывать политики развертывания функций в организации от имени вошедшего пользователя. Содержит возможности назначения и удаления пользователей и групп для развертывания определенной функции. | Да | Нет |
 | _Policy.ReadWrite.TrustFramework_ | Чтение и запись политик инфраструктуры доверия в организации | Позволяет приложению считывать и записывать политики инфраструктуры доверия в организации от имени вошедшего пользователя. | Да | Нет |
 
@@ -1124,6 +1125,7 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 * _Policy.Read.All_. Чтение политик организации (`GET /policies`)
 * _Policy.Read.All_. Чтение политик инфраструктуры доверия в организации (`GET /beta/trustFramework/policies`)
 * _Policy.Read.All_. Чтение политик развертывания функций в организации (`GET /beta/directory/featureRolloutPolicies`)
+* _Policy.ReadWrite.ConditionalAccess_. Чтение и запись политик условного доступа в организации (`POST /beta/conditionalAccess/policies`)
 * _Policy.ReadWrite.FeatureRollout_. Чтение и запись политик развертывания функций в организации (`POST /beta/directory/featureRolloutPolicies`)
 * _Policy.ReadWrite.TrustFramework_. Чтение и запись политик инфраструктуры доверия в организации (`POST /beta/trustFramework/policies`)
 
