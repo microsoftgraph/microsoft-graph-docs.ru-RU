@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: ea123de2fea1efdc4647238f6a953e21d49901db
-ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
+ms.openlocfilehash: a851421ce76295bb2954621af9302b9eb420a8c0
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37418216"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37622187"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -26,7 +26,7 @@ ms.locfileid: "37418216"
 ## <a name="october-2019-new-and-generally-available"></a>Октябрь 2019 г.: новые и общедоступные возможности
 
 ### <a name="mail"></a>Почта
-Использование нового параметра **message** для обновления любых записываемых свойств [message](/graph/api/resources/message?view=graph-rest-1.0) при [ответе](/graph/api/message-reply?view=graph-rest-1.0) на сообщение, например [для добавления получателя в ответ](/graph/api/message-reply#example ?view=graph-rest-1.0).
+Использование нового параметра **message** для обновления любых записываемых свойств [message](/graph/api/resources/message?view=graph-rest-1.0) при [ответе](/graph/api/message-reply?view=graph-rest-1.0) на сообщение, например [для добавления получателя в ответ](/graph/api/message-reply#example?view=graph-rest-1.0).
 
 ### <a name="users"></a>Пользователи
 [Получение](/graph/api/user-get-mailboxsettings?view=graph-rest-1.0) или [настройка](/graph/api/user-update-mailboxsettings?view=graph-rest-1.0) параметров предпочитаемого пользователем формата даты и времени [для почтового ящика пользователя](/graph/api/resources/mailboxsettings?view=graph-rest-1.0). 
@@ -36,8 +36,16 @@ ms.locfileid: "37418216"
 > [!IMPORTANT]
 > Функции в состоянии _предварительной версии_, в том числе API и инструменты, могут меняться без предварительного уведомления, а некоторые из них, возможно, никогда не будут повышены до общедоступной версии. Не используйте их в приложениях для рабочей среды.
 
+### <a name="calendar"></a>Календарь
+
+Организаторы собраний могут [разрешить приглашенным предлагать другое время собраний](outlook-calendar-meeting-proposals.md). При получении ответа на приглашение, содержащего предложение другого времени, организатор может принять предложение и [обновить](/graph/api/event-update?view=graph-rest-beta) время собрания.
+
 ### <a name="groups"></a>Группы
 Управление видимостью [групп](/graph/api/resources/group?view=graph-rest-beta) в определенных частях пользовательского интерфейса Outlook или в клиенте Outlook с помощью свойств **hideFromAddressLists** и **hideFromOutlookClients**.
+
+### <a name="mail"></a>Почта
+
+[Вложение больших файлов размером до 150 МБ](outlook-large-attachments.md) в экземпляр [сообщения](/graph/api/resources/message?view=graph-rest-beta) путем создания [сеанса отправки](/graph/api/resources/uploadsession?view=graph-rest-beta) и итерационной отправки диапазонов файла, пока не отправятся все байты файла. 
 
 ## <a name="september-2019-new-and-generally-available"></a>Сентябрь 2019 г.: новые и общедоступные возможности
 

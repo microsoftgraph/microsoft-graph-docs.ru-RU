@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 15041ab0efccf741aae7ea7b0eed4905ebc74423
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: 3544152a727bc37ad610bb532ea1d1dfff1b6cc5
+ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37621401"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37637647"
 ---
 ### <a name="attachmenttype-values"></a>значения attachmentType
 
@@ -899,3 +899,63 @@ Enum для типов значений реестра, определенных
 |user|
 |unknownFutureValue|
 
+### <a name="conditionalaccesspolicystate"></a>кондитионалакцессполицистате
+
+|Элемент|
+|:---|
+|enabled|
+|активирован|
+
+### <a name="conditionalaccessclientapp"></a>кондитионалакцессклиентапп
+
+| Элемент       |
+|:--------------|
+|Обозреватель|
+|современная версия|
+|еассуппортед|
+|еасунсуппортед|
+|остальные|
+
+### <a name="conditionalaccessgrantcontrol"></a>кондитионалакцессгрантконтрол
+
+| Элемент       |
+|:--------------|
+|блок|
+|MFA|
+|комплиантдевице|
+|домаинжоинеддевице|
+|аппроведаппликатион|
+|комплиантаппликатион|
+
+### <a name="cloudappsecuritysessioncontroltype"></a>клаудаппсекуритисессионконтролтипе
+
+| Элемент       |
+|:--------------|
+|мкасконфигуред|
+|мониторонли|
+|блоккдовнлоадс|
+
+### <a name="signinfrequencytype"></a>сигнинфрекуенцитипе
+
+| Элемент       |
+|:--------------|
+|срок|
+|час|
+
+### <a name="persistentbrowsersessionmode"></a>персистентбровсерсессионмоде
+
+| Элемент       |
+|:--------------|
+|Постоянное|
+|ключа|
+
+### <a name="conditionalaccessdeviceplatform"></a>кондитионалакцессдевицеплатформ
+
+| Элемент       |
+|:--------------|
+|ОС|
+|iOS|
+|под|
+|windowsPhone|
+|macOS|
+|ко|

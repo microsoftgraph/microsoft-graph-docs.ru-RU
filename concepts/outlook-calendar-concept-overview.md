@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 scenarios: getting-started
-ms.openlocfilehash: bbcf0f7ab8061309b7864913b15dad427a86e889
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: b245261e8e0840932cbfc5a8d37a70196dce27f1
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36793002"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37621387"
 ---
 # <a name="outlook-calendar-api-overview"></a>Общие сведения об API календарей Outlook
 
@@ -105,6 +105,7 @@ Outlook и API Календаря предоставляют множество 
   - [Поиск времени для проведения собрания в календаре Outlook](findmeetingtimes-example.md)
   - [Получение расписания доступности пользователей и ресурсов](outlook-get-free-busy-schedule.md)
   - [Планирование повторных встреч в качестве повторяющихся мероприятий в Outlook](outlook-schedule-recurring-events.md)
+  - [Предложение времени собраний в календаре Outlook](outlook-calendar-meeting-proposals.md)
   - [Получение общих событий](outlook-get-shared-events-calendars.md)
   - [Получение неизменяемых идентификаторов для ресурсов Outlook](outlook-immutable-id.md)
 - Ознакомьтесь со справочными материалами по [API Календаря](/graph/api/resources/calendar?view=graph-rest-1.0) в Outlook.

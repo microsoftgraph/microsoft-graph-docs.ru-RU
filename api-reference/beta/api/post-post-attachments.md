@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 425b3f8c3fa744c33defc7790ede0871ff60fef2
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: a8d45943ffc17c5cc949024029bd520d23895df5
+ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "36633540"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "37637387"
 ---
 # <a name="add-attachment"></a>Добавление вложения
 
@@ -18,7 +18,7 @@ ms.locfileid: "36633540"
 
 Добавление [вложения](../resources/attachment.md) при создании записи группы. 
 
-Так как в настоящее время максимальный общий размер каждого запроса REST составляет 4 МБ, размер добавляемого вложения не может превышать 4 МБ.
+Эта операция ограничит размер вложения, которое можно добавить в течение 4 МБ.
 
 Допустимые типы вложений:
 
@@ -50,7 +50,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/reply
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите объект JSON, включающий параметр **POST** .
 
 | Параметр    | Тип   |Описание|

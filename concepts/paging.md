@@ -5,12 +5,12 @@ author: piotrci
 localization_priority: Priority
 scenarios: getting-started
 ms.custom: graphiamtop20
-ms.openlocfilehash: 16c165be9afe53a6540f1c5fe7faa41d88cb21b3
-ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
+ms.openlocfilehash: 5ac971cbb06bcf7309e1bdf51afecd3b172ca2b8
+ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37054105"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "37622418"
 ---
 # <a name="paging-microsoft-graph-data-in-your-app"></a>Разбиение данных Microsoft Graph по страницам в приложении 
 
@@ -22,21 +22,21 @@ ms.locfileid: "37054105"
 https://graph.microsoft.com/v1.0/users?$top=5
 ```
 
-Если результат содержит более пяти пользователей, Microsoft Graph возвращает свойство `@odata:nextLink` (как показанный ниже пример) вместе с первой страницей пользователей.
+Если результат содержит более пяти пользователей, Microsoft Graph возвращает свойство `@odata.nextLink` (как показанный ниже пример) вместе с первой страницей пользователей.
 
 ```json
 "@odata.nextLink": "https://graph.microsoft.com/v1.0/users?$top=5&$skiptoken=X%274453707 ... 6633B900000000000000000000%27"
 ```
 
-Следующую страницу результатов можно получить, отправив значение URL-адреса свойства `@odata:nextLink` в Microsoft Graph. 
+Следующую страницу результатов можно получить, отправив значение URL-адреса свойства `@odata.nextLink` в Microsoft Graph. 
 
 ```html
 https://graph.microsoft.com/v1.0/users?$top=5&$skiptoken=X%274453707 ... 6633B900000000000000000000%27
 ```
 
-В каждом ответе Microsoft Graph будет возвращать ссылку на следующую страницу данных в свойстве `@odata:nextLink`, пока не будут прочитаны все страницы результатов.
+В каждом ответе Microsoft Graph будет возвращать ссылку на следующую страницу данных в свойстве `@odata.nextLink`, пока не будут прочитаны все страницы результатов.
 
->**Важно!** При запросе следующей страницы результатов в свойство `@odata:nextLink` следует включить полный URL-адрес. В зависимости от API, к которому выполняется запрос, значение URL-адреса `@odata:nextLink` будет содержать один из двух параметров запроса: `$skiptoken` или `$skip`. URL-адрес также содержит все остальные параметры, имеющиеся в исходном запросе. Не пытайтесь извлечь значение `$skiptoken` или `$skip` и использовать его в другом запросе. 
+>**Важно!** При запросе следующей страницы результатов в свойство `@odata.nextLink` следует включить полный URL-адрес. В зависимости от API, к которому выполняется запрос, значение URL-адреса `@odata.nextLink` будет содержать один из двух параметров запроса: `$skiptoken` или `$skip`. URL-адрес также содержит все остальные параметры, имеющиеся в исходном запросе. Не пытайтесь извлечь значение `$skiptoken` или `$skip` и использовать его в другом запросе. 
 
 Для различных API Microsoft Graph характерны свои особенности разбиения по страницам. При работе со страницами данных необходимо учитывать следующее:
 
