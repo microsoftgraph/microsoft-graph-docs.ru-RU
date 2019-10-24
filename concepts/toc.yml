@@ -393,6 +393,8 @@ items:
             href: sdks/create-client.md
           - name: Выбор поставщика проверки подлинности
             href: sdks/choose-authentication-providers.md
+          - name: Создание запросов
+            href: sdks/create-requests.md
       - name: Использование набора средств
         items:
           - name: Общие сведения о наборе средств

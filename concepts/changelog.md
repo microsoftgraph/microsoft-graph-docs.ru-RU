@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 168e11eeb67bf5c53514c032a16e16e84cddca5b
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: 837e0822629d577fb18c0ea259843236576da4b0
+ms.sourcegitcommit: d189830649794365464e37539e02239f883011da
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37638822"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "37653485"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -149,6 +149,12 @@ ms.locfileid: "37638822"
 | **Тип изменения** | **Версия** | **Описание**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Дополнение        | 1.0        | Свойства **dateFormat** и **timeFormat** к ресурсу [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-1.0). Свойства представляют собой предпочитаемые пользователем форматы даты и времени.|
+
+### <a name="identity-and-access-azure-ad"></a>Удостоверение и доступ (Azure AD)
+
+| **Тип изменения** | **Версия** | **Описание**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Дополнение | Бета | Добавлен [API namedLocation](/graph/api/resources/namedLocation?view=graph-rest-beta), представляющий именованные расположения в функции условного доступа Azure AD. |
 
 ## <a name="september-2019"></a>Сентябрь 2019 г.
 
