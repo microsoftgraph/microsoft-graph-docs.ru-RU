@@ -5,20 +5,20 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d33fea58845fb9c9034d4fef100e3393bcdd4188
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ae29f712aab1cd767b0c5e65d74eca7a487af4d8
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955133"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37726212"
 ---
 # <a name="get-educationsubmission"></a>Получение educationSubmission
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение определенной отправки. Объект отправки представляет работу учащегося для назначения. Ресурсы, связанные с отправкой, представляют эту работу. Только студент, которому назначена отправка, может просматривать и изменять отправку. Преподаватель имеет полный доступ ко всем отправку. 
+Получение определенной отправки. Объект отправки представляет работу учащегося для назначения. Ресурсы, связанные с отправкой, представляют эту работу. Только студент, которому назначена отправка, может просматривать и изменять отправку. Преподаватель имеет полный доступ ко всем отправку.
 
-Оценка и обратная связь с преподавателем также являются частью этого объекта. Только преподаватели могут добавлять или изменять оценки и отзывы. Студенты не увидят оценку или обратную связь, пока не будет выпущено назначение. Основные разрешения не включают оценку и обратную связь, но включают все остальные.
+Оценка и обратная связь преподавателя входят в состав [едукатионауткоме](../resources/educationoutcome.md) , связанных с этим объектом. Только преподаватели могут добавлять или изменять оценки и отзывы. Студенты не увидят оценку или обратную связь, пока не будет выпущено назначение.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -42,7 +42,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [educationSubmission](../resources/educationsubmission.md) в тексте отклика.
@@ -72,29 +72,6 @@ Content-type: application/json
 Content-length: 712
 
 {
-    "feedback": {
-      text: {
-        "content": "Good work!",
-        "contentType": "Text"
-      },
-      feedbackDateTime: "2014-01-01T00:00:00Z",
-      feedbackBy: {
-        "user": {
-          "displayName": "Susana Rocha",
-          "id": "14012"
-        }
-      },
-      "@odata.type": "microsoft.graph.educationFeedback"
-      },
-      "grade": {
-         "gradedBy": {
-          "user": {
-            "displayName": "Susana Rocha",
-            "id": "14012"
-          },
-        },
-        "gradedDateTime": "2014-01-01T00:00:00Z"
-      },
       "id": "33223",
       "recipient": {
         "userId": "13015"

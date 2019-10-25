@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: d44203c1d0a2a910182822cfc35565a30e1cd4ae
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 7eaaa230617deea00a7c60589505809066e80c62
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36724108"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37726287"
 ---
 # <a name="get-settings-for-user-analytics"></a>Получение параметров для пользователя Analytics
 
@@ -33,7 +33,7 @@ ms.locfileid: "36724108"
 <!-- { "blockType": "ignored" }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/analytics/settings
+GET /me/analytics/settings
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -44,13 +44,13 @@ GET https://graph.microsoft.com/beta/me/analytics/settings
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [Settings](../resources/settings.md) в тексте отклика.
 
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/beta/me/analytics/settings
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-settings-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-settings-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

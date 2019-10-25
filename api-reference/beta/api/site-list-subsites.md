@@ -6,12 +6,12 @@ title: Создание списка дочерних сайтов для сай
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: fa8520b3775c99418ed6c9e2bf0bdd64cbdc17bb
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 47bde7b24508665035130a7f7e5c2fed94a4ee6f
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36724556"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37726280"
 ---
 # <a name="enumerate-subsites"></a>Перечисление дочерних сайтов
 
@@ -33,6 +33,9 @@ ms.locfileid: "36724556"
 
 ## <a name="http-request"></a>HTTP-запрос
 
+```http
+GET /sites/{site-id}/sites
+```
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-subsites", "scopes": "service.sharepoint sites.read.all" } -->
@@ -48,7 +51,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/sites
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-subsites-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-subsites-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

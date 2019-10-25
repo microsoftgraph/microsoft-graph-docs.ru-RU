@@ -5,18 +5,18 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ddf437c60ae4ca56a800bd82b081b149a686eabe
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5ac32d42367d68e405263c66a9bdd980bb652ae5
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955082"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37726195"
 ---
 # <a name="educationsubmission-release"></a>educationSubmission: Release
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Это действие делает оценку и обратную связь, связанную с этой отправкой, доступной студенту. Это приведет к изменению состояния отправки с "Отправлено" на "выпущено" и указывает на то, что выполняется ступенчатое выполнение. Это действие может выполнить только преподаватель.
+Это действие делает [едукатионауткоме](../resources/educationoutcome.md) , включая любые оценки или отзывы, связанные с этой отправкой, доступными для учащегося. Это приведет к изменению состояния отправки с "Отправлено" на "выпущено" и указывает на то, что выполняется ступенчатое выполнение. Это действие может выполнить только преподаватель.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -38,7 +38,7 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/release
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 116b73b53689c01e346568b6b5d67e56fb31b283
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: 541173547ba8222ca5b64cb3396e972be5b017fc
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37621619"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37719465"
 ---
 # <a name="attachment-createuploadsession"></a>вложение: createUploadSession
 
@@ -18,7 +18,7 @@ ms.locfileid: "37621619"
 
 Создайте сеанс отправки, который позволяет приложению итеративно отправлять диапазоны файлов, чтобы прикрепить файл к указанному [сообщению](../resources/message.md).
 
-Используйте этот способ, чтобы вкладывать в **сообщение**файлы размером от 3 МБ до 150MB. Чтобы прикрепить файлы размером в 4 МБ, просто [выполните команду POST в свойстве навигации вложений](message-post-attachments.md). 
+Используйте этот способ, чтобы прикрепить к **сообщению**файлы размером от 3 мб до 150 МБ. Чтобы вложить файлы размером в 4 МБ, просто [выполните команду POST в свойстве навигации вложений](message-post-attachments.md). 
 
 В качестве части ответа это действие возвращает URL-адрес отправки, который можно использовать в последующих последовательных `PUT` запросах. Заголовки запросов для каждой `PUT` операции позволяют указать точный диапазон байтов для отправки. Это позволяет возобновить передачу в случае, если сетевое подключение будет разорвано во время отправки. 
 
@@ -31,6 +31,8 @@ ms.locfileid: "37621619"
 
 В этом примере показано, как [прикрепить большие файлы к сообщениям Outlook](/graph/outlook-large-attachments) .
 
+> [!TIP]
+> Exchange Online позволяет администраторам настраивать ограничения на размер сообщений для почтовых ящиков Office 365, включая вложения в сообщения. По умолчанию это максимальный размер сообщения 35 МБ. Узнайте [, как настроить максимальный размер сообщения](https://www.microsoft.com/en-us/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb) для поддержки вложений, превышающих ограничение по умолчанию для клиента. 
 
 ## <a name="permissions"></a>Разрешения
 
@@ -54,10 +56,10 @@ POST /me/messages/{id}/attachments/createUploadSession
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -85,6 +87,8 @@ POST /me/messages/{id}/attachments/createUploadSession
 ### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "attachment_createuploadsession",
@@ -103,6 +107,20 @@ Content-type: application/json
   }
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/attachment-createuploadsession-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/attachment-createuploadsession-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/attachment-createuploadsession-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

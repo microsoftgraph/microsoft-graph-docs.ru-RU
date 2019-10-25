@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 236c5dc88a50ad537f2142cc3a8e8dc5084c2c5b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d0aa4e8119ba1d06d11e703545300411cf70d561
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955655"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37724579"
 ---
 # <a name="list-submissions"></a>Отправка списка
 
@@ -40,7 +40,7 @@ GET /education/classes/{id}/assignments/{id}/submissions
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [educationSubmission](../resources/educationsubmission.md) в тексте отклика.
@@ -55,7 +55,7 @@ GET /education/classes/{id}/assignments/{id}/submissions
 GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -73,30 +73,6 @@ Content-length: 873
 {
   "value": [
     {
-      "feedback": {
-        "text": {
-          "content": "Good work!",
-          "contentType": "Text"
-        },
-        "feedbackDateTime": "2014-01-01T00:00:00Z",
-        "feedbackBy": {
-          "user": {
-            "displayName": "Susana Rocha",
-            "id": "14012"
-          },
-          "@odata.type": "microsoft.graph.identitySet"
-        },
-        "@odata.type": "microsoft.graph.educationFeedback"
-        },
-      "grade": {
-         "gradedBy": {
-          "user": {
-            "displayName": "Susana Rocha",
-            "id": "14012"
-          },
-        },
-        "gradedDateTime": "2014-01-01T00:00:00Z"
-      },
       "id": "33223",
       "recipient": {
         "userId": "13015",
