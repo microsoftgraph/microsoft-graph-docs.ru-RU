@@ -7710,8 +7710,6 @@
                   href: api/educationsubmission-list-outcomes.md
                 - name: Получение отправленного ресурса
                   href: api/educationsubmittedsubmissionresource-get.md
-                - name: Оценка работы
-                  href: api/educationsubmission-update.md
                 - name: Возврат работы
                   href: api/educationsubmission-return.md
             - name: Способ
@@ -8264,15 +8262,6 @@
                       href: api/conditionalaccesspolicy-update.md
                     - name: Delete
                       href: api/conditionalaccesspolicy-delete.md
-            - name: Контракты
-              href: resources/contract.md
-              items:
-                - name: Получение контрактов
-                  href: api/contract-get.md
-                - name: Список контрактов
-                  href: api/contract-list.md
-            - name: Условный доступ
-              items:
                 - name: Именованные расположения
                   items:
                     - name: Именованное расположение
@@ -8313,6 +8302,13 @@
                           href: api/ipnamedlocation-update.md
                         - name: Delete
                           href: api/ipnamedlocation-delete.md
+            - name: Контракты
+              href: resources/contract.md
+              items:
+                - name: Получение контрактов
+                  href: api/contract-get.md
+                - name: Список контрактов
+                  href: api/contract-list.md
             - name: Операции с политикой данных
               href: resources/datapolicyoperation.md
               items:
