@@ -4,7 +4,7 @@
       href: /graph/overview
     - name: Получение маркеров аутентификации
       items:
-        - name: Обзор
+        - name: Общие сведения
           href: /graph/auth/index?context=graph/api/beta
         - name: Основы
           href: /graph/auth/auth-concepts?context=graph/api/beta
@@ -22,7 +22,7 @@
           href: /graph/auth-limit-mailbox-access?context=graph/api/beta
     - name: Использование API
       items:
-        - name: Обзор
+        - name: Общие сведения
           href: /graph/use-the-api?context=graph/api/beta
         - name: Разбиение на страницы
           href: /graph/paging?context=graph/api/beta
@@ -44,7 +44,7 @@
         - name: Отслеживание изменений
           displayname: 'Delta query, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: /graph/delta-query-overview?context=graph/api/beta
             - name: Получение изменений для событий (пример)
               href: /graph/delta-query-events?context=graph/api/beta
@@ -57,7 +57,7 @@
         - name: Добавление пользовательских данных
           displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users, Azure AD'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: /graph/extensibility-overview?context=graph/api/beta
             - name: Использование открытых расширений (пример)
               href: /graph/extensibility-open-users?context=graph/api/beta
@@ -71,7 +71,7 @@
         - name: Azure AD Graph
           displayname: 'Migration, Azure AD Graph'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: /graph/migrate-azure-ad-graph-overview?context=graph/api/beta
             - name: Контрольный список для переноса приложений
               href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
@@ -158,11 +158,11 @@
     - name: Документация для бета-версий
       expanded: true
       items:
-        - name: Обзор
+        - name: Общие сведения
           href: overview.md
         - name: Пользователи
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/users.md
             - name: Пользователь
               href: resources/user.md
@@ -801,7 +801,7 @@
         - name: Взаимодействие с облаком
           displayName: Cloud communications
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/communications-api-overview.md
             - name: Звонок
               href: resources/call.md
@@ -909,7 +909,7 @@
         - name: Резервирование для пользователей
           displayName: 'Bookings, Microsoft Bookings'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/booking-api-overview.md
             - name: Организация в Microsoft Bookings
               href: resources/bookingbusiness.md
@@ -7758,7 +7758,7 @@
         - name: Файлы
           displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/onedrive.md
             - name: Диски
               href: resources/drive.md
@@ -7848,7 +7848,7 @@
         - name: Финансовые показатели (предварительная версия)
           displayname: 'Dynamics, Dynamics 365 Business Central'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/dynamics-graph-reference.md
             - name: Учетная запись
               href: resources/dynamics-account.md
@@ -8083,7 +8083,7 @@
         - name: Удостоверения и доступ
           displayName: 'Azure AD, Microsoft identity platform'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/azure-ad-overview.md
             - name: Проверки доступа
               href: resources/accessreviews-root.md
@@ -8882,6 +8882,40 @@
                   href: api/trustframework-put-trustframeworkpolicy.md
                 - name: Delete
                   href: api/trustframeworkpolicy-delete.md
+            - name: Набор ключей инфраструктуры доверия
+              href: resources/trustframeworkkeyset.md
+              items:
+                - name: Список
+                  href: api/trustframework-list-keysets.md
+                - name: Создание
+                  href: api/trustframework-post-keysets.md
+                - name: Получение
+                  href: api/trustframeworkkeyset-get.md
+                - name: Обновление
+                  href: api/trustframeworkkeyset-update.md
+                - name: Delete
+                  href: api/trustframeworkkeyset-delete.md
+                - name: Создание ключа
+                  href: api/trustframeworkkeyset-generatekey.md
+                - name: Получение активного ключа
+                  href: api/trustframeworkkeyset-getactivekey.md
+                - name: Отправка сертификата
+                  href: api/trustframeworkkeyset-uploadcertificate.md
+                - name: Отправка закрытого ключа
+                  href: api/trustframeworkkeyset-uploadpkcs12.md
+                - name: Отправка секрета
+                  href: api/trustframeworkkeyset-uploadsecret.md
+            - name: Потоки пользователей
+              href: resources/identityuserflow.md
+              items:
+                - name: Список
+                  href: api/identityuserflow-list.md
+                - name: Создание
+                  href: api/identityuserflow-post-userflows.md
+                - name: Получение
+                  href: api/identityuserflow-get.md
+                - name: Удаление
+                  href: api/identityuserflow-delete.md
         - name: Почта
           displayName: 'Outlook, Outlook mail'
           items:
@@ -9248,7 +9282,7 @@
                           href: api/applicationsignindetailedsummary-get.md
                 - name: Регистрация и использование
                   items:
-                    - name: Обзор
+                    - name: Общие сведения
                       href: resources/authenticationmethods-usage-insights-overview.md
                     - name: Счетчик регистрации пользователей учетных данных
                       href: resources/credentialuserregistrationcount.md
@@ -9272,7 +9306,7 @@
                           href: api/reportroot-getcredentialusagesummary.md
             - name: Отчеты об использовании Office 365
               items:
-                - name: Обзор
+                - name: Общие сведения
                   href: resources/report.md
                 - name: Использование устройств Microsoft Teams
                   href: resources/microsoft-teams-device-usage-reports.md
@@ -9473,7 +9507,7 @@
         - name: Безопасность
           displayname: 'Security API, Microsoft Graph Security API'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/security-api-overview.md
             - name: Действия
               href: resources/securityaction.md
@@ -9535,7 +9569,7 @@
         - name: Сайты и списки
           displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/sharepoint.md
             - name: Сайты
               href: resources/site.md
@@ -9652,7 +9686,7 @@
         - name: Задачи и планы
           displayName: Planner
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/planner-overview.md
             - name: План
               href: resources/plannerplan.md
@@ -10125,7 +10159,7 @@
         - name: Книги и диаграммы
           displayName: Excel
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/excel.md
             - name: Книга
               href: resources/workbook.md
