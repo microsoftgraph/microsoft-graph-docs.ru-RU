@@ -5,12 +5,12 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 39cd3f11644eca36720fccbf60ba81fd5384af6d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 697218f1ff488b935b401406fbd30ddd9f5ebf65
+ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35987868"
+ms.lasthandoff: 10/26/2019
+ms.locfileid: "37734390"
 ---
 # <a name="get-trustframeworkpolicy"></a>Получение Трустфрамеворкполици
 
@@ -24,9 +24,9 @@ ms.locfileid: "35987868"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|Policy. Read. Трустфрамеворк, Policy. Read. ALL|
+|Делегированные (рабочая или учебная учетная запись)| Policy.Read.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|Policy.Read.All|
 
 Рабочая или учебная учетная запись должна быть глобальным администратором клиента.
 
@@ -47,7 +47,7 @@ GET /trustFramework/policies/{id}/$value
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

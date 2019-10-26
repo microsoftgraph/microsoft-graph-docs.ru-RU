@@ -3,14 +3,14 @@ title: Обновление identityProvider
 description: Обновление свойств в существующей identityProvider.
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: c0b13dd9eece28a2910f1034a9a484d932a9c6a8
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+author: valnav
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 1cbbac43b7c47ee7aa160bf1e66a94e1afdb0c60
+ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420499"
+ms.lasthandoff: 10/26/2019
+ms.locfileid: "37734432"
 ---
 # <a name="update-identityprovider"></a>Обновление identityProvider
 
@@ -26,7 +26,7 @@ ms.locfileid: "36420499"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений| IdentityProvider.ReadWrite.All|
 
 Рабочая или учебная учетная запись должна быть глобальным администратором клиента.
 
@@ -87,7 +87,7 @@ Content-length: 41
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-identityprovider-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-identityprovider-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -3,14 +3,14 @@ title: Удаление identityProvider
 description: Удаление существующего объекта identityProvider.
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: cceaea97f613c33ea2a104a7cf0b4d09077949e6
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+author: valnav
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 07fde1e891c3ffb49d21114ade5a252fd686a611
+ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420561"
+ms.lasthandoff: 10/26/2019
+ms.locfileid: "37734446"
 ---
 # <a name="delete-identityprovider"></a>Удаление identityProvider
 
@@ -26,7 +26,7 @@ ms.locfileid: "36420561"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|IdentityProvider.ReadWrite.All|
 
 Рабочая или учебная учетная запись должна быть глобальным администратором клиента.
 
@@ -74,7 +74,7 @@ DELETE https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-identityprovider-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-identityprovider-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

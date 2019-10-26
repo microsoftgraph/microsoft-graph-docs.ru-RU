@@ -3,14 +3,14 @@ title: Перечисление объектов identityProvider
 description: Получение всех объектов identityProvider в каталоге.
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: 1d9757264b69ffa552d1baa379e373db84bf97a8
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+author: valnav
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: a25ee627e8acb364e2a2b29e273f5111812c6247
+ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36720461"
+ms.lasthandoff: 10/26/2019
+ms.locfileid: "37734453"
 ---
 # <a name="list-identityproviders"></a>Перечисление объектов identityProvider
 
@@ -26,7 +26,7 @@ ms.locfileid: "36720461"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
 Рабочая или учебная учетная запись должна быть глобальным администратором клиента.
 
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/identityProviders
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-identityproviders-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-identityproviders-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

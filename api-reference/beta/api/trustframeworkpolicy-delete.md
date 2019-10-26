@@ -5,12 +5,12 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e71048b1ffc461228670521fd971e6df293cd5e4
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 77363aa262314b8d6a6d7ff3470327569159e1e7
+ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409200"
+ms.lasthandoff: 10/26/2019
+ms.locfileid: "37734425"
 ---
 # <a name="delete-trustframeworkpolicy"></a>Удаление Трустфрамеворкполици
 
@@ -26,7 +26,7 @@ ms.locfileid: "36409200"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Policy.ReadWrite.TrustFramework|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|Policy.ReadWrite.TrustFramework|
 
 Рабочая или учебная учетная запись должна быть глобальным администратором клиента.
 
@@ -43,7 +43,7 @@ DELETE /trustFramework/policies/{id}
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -74,7 +74,7 @@ DELETE https://graph.microsoft.com/beta/trustFramework/policies/B2C_1A_SocialAnd
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-trustframeworkpolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-trustframeworkpolicy-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

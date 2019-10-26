@@ -3,14 +3,14 @@ title: Получение identityProvider
 description: Получение свойств существующего identityProvider.
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: 9d1d7c30b1fb70afe07a21f1c3835f6fcb714bbe
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+author: valnav
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 676c5c879b3aa09e18ce1f4f6f374f11d4db1352
+ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36721525"
+ms.lasthandoff: 10/26/2019
+ms.locfileid: "37734439"
 ---
 # <a name="get-identityprovider"></a>Получение identityProvider
 
@@ -26,7 +26,7 @@ ms.locfileid: "36721525"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
 Рабочая или учебная учетная запись должна быть глобальным администратором клиента.
 
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-identityprovider-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-identityprovider-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

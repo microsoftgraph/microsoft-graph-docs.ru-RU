@@ -5,12 +5,12 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ac3e1546e72e91988ef5339ad201fab7f3f2224d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 39dd9cbc14ae0dc6040618619595dd4cceb0dadc
+ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35990570"
+ms.lasthandoff: 10/26/2019
+ms.locfileid: "37734467"
 ---
 # <a name="create-trustframeworkpolicy"></a>Создание Трустфрамеворкполици
 
@@ -26,7 +26,7 @@ ms.locfileid: "35990570"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Policy.ReadWrite.TrustFramework|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|Policy.ReadWrite.TrustFramework|
 
 Рабочая или учебная учетная запись должна быть глобальным администратором клиента.
 
@@ -42,9 +42,9 @@ POST /trustFramework/policies
 |Имя|Описание|
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
-|Content-Type|Application/XML. Обязательно.|
+|Content-Type|Application/XML. Обязательный элемент.|
 
-## <a name="request-body"></a>Основной текст запросов
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте XML-представление объекта [трустфрамеворкполици](../resources/trustframeworkpolicy.md) . Необходимый тип контента — `application/xml`.
 

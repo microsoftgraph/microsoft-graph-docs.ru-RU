@@ -5,12 +5,12 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f5aa7f489faecb053ddad2734c1318c3cba7ed71
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5ade1f27b65b5149a0847fb39ab7efd16042e018
+ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35977449"
+ms.lasthandoff: 10/26/2019
+ms.locfileid: "37734481"
 ---
 # <a name="update-or-create-trustframeworkpolicy"></a>Обновление или создание Трустфрамеворкполици
 
@@ -24,9 +24,9 @@ ms.locfileid: "35977449"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|Policy. ReadWrite. Трустфрамеворк, Policy. ReadWrite. ALL|
+|Делегированные (рабочая или учебная учетная запись)|Policy.ReadWrite.TrustFramework|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложений|Policy.ReadWrite.TrustFramework|
 
 Рабочая или учебная учетная запись должна быть глобальным администратором клиента.
 
@@ -43,9 +43,9 @@ PUT /trustFramework/policies/{id}/$value
 |Имя|Описание|
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
-|Content-Type|Application/XML. Обязательно.|
+|Content-Type|Application/XML. Обязательный элемент.|
 
-## <a name="request-body"></a>Основной текст запросов
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте XML-представление объекта [трустфрамеворкполици](../resources/trustframeworkpolicy.md) . 
 
