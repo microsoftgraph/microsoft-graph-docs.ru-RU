@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 scenarios: getting-started
 ms.custom: graphiamtop20
-ms.openlocfilehash: 7d51ef3bf303609fdc7a209937dc1e844afe427a
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: 549578ccec5d58c8da9e956e05733e81113be5aa
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37638829"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37726463"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -461,6 +461,15 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 Более сложные сценарии с использованием нескольких разрешений представлены в разделе [Сценарии с использованием разрешений](#permission-scenarios).
 
 ---
+
+## <a name="domain-permissions"></a>Разрешения домена
+
+#### <a name="application-permissions"></a>Разрешения приложений
+
+|   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Domain.ReadWrite.All_ | Чтение и запись доменов | Позволяет приложению читать и записывать домены без необходимости входа пользователя. | Да |
+
 
 ## <a name="education-permissions"></a>Разрешения для образования
 

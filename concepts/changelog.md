@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 837e0822629d577fb18c0ea259843236576da4b0
-ms.sourcegitcommit: d189830649794365464e37539e02239f883011da
+ms.openlocfilehash: 57dff2056c2ebaafc7d5b5ac752f9261e7169010
+ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37653485"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "37726490"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -101,6 +101,12 @@ ms.locfileid: "37653485"
 |Дополнение|Бета|Добавлены элементы **scriptError** и **notApplicable** для типа перечисления [runState](/graph/api/resources/intune-shared-runstate?view=graph-rest-beta)|
 |Удаление|Бета|Удален элемент **error** из типа перечисления [runState](/graph/api/resources/intune-shared-runstate?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлен элемент **userExperienceAnalytics** для типа перечисления [windowsHealthMonitoringScope](/graph/api/resources/intune-deviceconfig-windowshealthmonitoringscope?view=graph-rest-beta)|
+
+### <a name="education"></a>Образование
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Удаление | Бета | Удалены [объявленные ранее](https://developer.microsoft.com/ru-RU/onenote/blogs/breaking-change-education-api-updates-in-microsoft-graph-beta) устаревшие свойства **grade** и **feedback** из [educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta). Доступ к свойствам оценкам и отзывам теперь предоставляется через [educationOutcome](/graph/api/educationsubmission-list-outcome?view=graph-rest-beta)|
 
 ### <a name="groups"></a>Группы
 
@@ -613,7 +619,7 @@ ms.locfileid: "37653485"
 |Дополнение|бета|Добавлено свойство навигации **categoryDeviceStateSummaries** для объекта [securityBaselineTemplate](/graph/api/resources/intune-deviceintent-securitybaselinetemplate?view=graph-rest-beta)|
 |Дополнение|бета|Добавлен элемент **wpaEnterprise** для типа перечисления [androidDeviceOwnerWiFiSecurityType](/graph/api/resources/intune-deviceconfig-androiddeviceownerwifisecuritytype?view=graph-rest-beta)|
 |Дополнение|бета|Добавлен элемент **unknown** для типа перечисления [devicePlatformType](/graph/api/resources/intune-shared-deviceplatformtype?view=graph-rest-beta)|
-|Дополнение|бета|Добавлен элемент **derivedCredential** для типа перечисления [easAuthenticationMethod](/graph/api/resources/intune-deviceconfig-easauthenticationmethod?view=graph-rest-beta)|
+|Дополнение|Бета|Добавлен элемент **derivedCredential** для типа перечисления [easAuthenticationMethod](/graph/api/resources/intune-deviceconfig-easauthenticationmethod?view=graph-rest-beta)|
 |Дополнение|бета|Добавлен элемент **wipe** для типа перечисления [managedDeviceRemoteAction](/graph/api/resources/intune-devices-manageddeviceremoteaction?view=graph-rest-beta)|
 |Изменение|бета|Изменен тип следующих свойств типа перечисления [managedDeviceRemoteAction](/graph/api/resources/intune-devices-manageddeviceremoteaction?view=graph-rest-beta):<br/>**fullScan** с 2 на 3<br/>**quickScan** с 3 на 4<br/>**signatureUpdate** с 4 на 5<br/>|
 |Дополнение|бета|Добавлен элемент **derivedCredential** для типа перечисления [vpnAuthenticationMethod](/graph/api/resources/intune-deviceconfig-vpnauthenticationmethod?view=graph-rest-beta)|
@@ -2280,7 +2286,7 @@ ms.locfileid: "37653485"
 
 |Тип изменения|Версия|Описание|
 |:---|:---|:---|
-|Дополнение|бета|Добавлены новые объекты:<br/>[androidForWorkEnrollmentProfile](/graph/api/resources/intune-androidforwork-androidforworkenrollmentprofile?view=graph-rest-beta);<br/>[deviceAndAppManagementRoleAssignment](/graph/api/resources/intune-rbac-deviceandappmanagementroleassignment?view=graph-rest-beta);<br/>[deviceAndAppManagementRoleDefinition](/graph/api/resources/intune-rbac-deviceandappmanagementroledefinition?view=graph-rest-beta);<br/>[macOSLobApp](/graph/api/resources/intune-apps-macoslobapp?view=graph-rest-beta).<br/>|
+|Дополнение|Бета-версия|Добавлены новые объекты:<br/>[androidForWorkEnrollmentProfile](/graph/api/resources/intune-androidforwork-androidforworkenrollmentprofile?view=graph-rest-beta);<br/>[deviceAndAppManagementRoleAssignment](/graph/api/resources/intune-rbac-deviceandappmanagementroleassignment?view=graph-rest-beta);<br/>[deviceAndAppManagementRoleDefinition](/graph/api/resources/intune-rbac-deviceandappmanagementroledefinition?view=graph-rest-beta);<br/>[macOSLobApp](/graph/api/resources/intune-apps-macoslobapp?view=graph-rest-beta).<br/>|
 |Дополнение|бета|Добавлены новые сложные типы:<br/>[resourceAction](/graph/api/resources/intune-rbac-resourceaction?view=graph-rest-beta);<br/>[updateWindowsDeviceAccountActionParameter](/graph/api/resources/intune-devices-updatewindowsdeviceaccountactionparameter?view=graph-rest-beta);<br/>[vppTokenActionResult](/graph/api/resources/intune-onboarding-vpptokenactionresult?view=graph-rest-beta);<br/>[windowsDeviceAADAccount](/graph/api/resources/intune-devices-windowsdeviceaadaccount?view=graph-rest-beta);<br/>[windowsDeviceAccount](/graph/api/resources/intune-devices-windowsdeviceaccount?view=graph-rest-beta);<br/>[windowsDeviceADAccount](/graph/api/resources/intune-devices-windowsdeviceadaccount?view=graph-rest-beta).<br/>|
 |Дополнение|Бета-версия|Добавлено действие [revokeTokens](/graph/api/intune-androidforwork-androidforworkenrollmentprofile-revoketokens?view=graph-rest-beta) для объекта [androidForWorkEnrollmentProfile](/graph/api/resources/intune-androidforwork-androidforworkenrollmentprofile?view=graph-rest-beta). |
 |Дополнение|Бета-версия|Добавлено действие [createToken](/graph/api/intune-androidforwork-androidforworkenrollmentprofile-createtoken?view=graph-rest-beta) для объекта [androidForWorkEnrollmentProfile](/graph/api/resources/intune-androidforwork-androidforworkenrollmentprofile?view=graph-rest-beta). |
