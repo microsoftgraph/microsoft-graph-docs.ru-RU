@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a3fa733a2c5a4c8ea66db83505016af99d7e7cfd
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: ef2b53a9b907146c91bb66e269c6f604c2b26d57
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419862"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37938690"
 ---
 # <a name="update-event"></a>Обновление события
 
@@ -18,7 +18,7 @@ ms.locfileid: "36419862"
 
 Обновление свойств объекта [event](../resources/event.md).
 
-При обновлении часового пояса времени начала или окончания события сначала [найдите поддерживаемые Часовые пояса](outlookuser-supportedtimezones.md) , чтобы убедиться, что настроены только Часовые пояса, настроенные для сервера почтовых ящиков пользователя. 
+При обновлении часового пояса начала или завершения события сначала [найдите поддерживаемые часовые пояса](outlookuser-supportedtimezones.md), чтобы устанавливать только часовые пояса, настроенные для сервера почтового ящика пользователя. 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -54,7 +54,7 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство       | Тип    | Описание |
@@ -65,15 +65,17 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 | end|DateTimeTimeZone|Дата, время и часовой пояс завершения события. |
 | importance|String|Важность события. Возможные значения: `low`, `normal`, `high`.|
 | isAllDay|Boolean|Задайте значение true, если событие длится весь день.|
+|исонлинемитинг|Boolean| `True`, если это событие содержит сведения о собрании по сети, `false` в противном случае. Значение по умолчанию — false. Необязательный элемент.|
 | isReminderOn|Boolean|Задайте значение true, если установлено напоминание пользователю о событии.|
 | location|Расположение|Место проведения события.|
 |locations|Коллекция [Location](../resources/location.md)|Места проведения события или участия в нем. Свойства **location** и **locations** всегда совпадают друг с другом. Если вы обновите свойство **location**, предыдущие места в коллекции **locations** будут удалены и заменены новым значением **location**. |
+|онлинемитингпровидер|онлинемитингпровидертипе| Представляет поставщика службы собраний по сети. Возможные значения: `teamsForBusiness`, `skypeForBusiness`и. `skypeForConsumer` Необязательный элемент. |
 | recurrence|PatternedRecurrence|Расписание повторения события.|
 | reminderMinutesBeforeStart|Int32|Позволяет указать, за сколько минут до начала события появляется напоминание.|
 | responseRequested|Boolean|Задайте значение true, если отправитель желает получить сообщение о согласии участвовать в событии или отклонении соответствующего приглашения.|
 | sensitivity|String| Возможные значения: `normal`, `personal`, `private`, `confidential`.|
 | showAs|String|Отображаемое состояние. Возможные `free` значения:, `tentative`, `busy`, `oof`, `workingElsewhere`,. `unknown`|
-| начать|DateTimeTimeZone|Дата и время начала, время и часовой пояс события. |
+| начать|DateTimeTimeZone|Дата, время и часовой пояс начала события. |
 | subject|String|Текст в строке темы сообщения о событии.|
 
 Так как ресурс **event** поддерживает [расширения](/graph/extensibility-overview), с помощью операции `PATCH` можно добавлять, обновлять или удалять собственные данные, касающиеся определенных приложений, в настраиваемых свойствах расширения в существующем экземпляре **event**.
@@ -112,6 +114,8 @@ Content-length: 285
   "recurrence": null,
   "uid": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
+  "isOnlineMeeting": true,
+  "onlineMeetingProvider": "teamsForBusiness",
   "isReminderOn": true
 }
 ```
@@ -126,7 +130,7 @@ Content-length: 285
 ---
 
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
@@ -148,7 +152,14 @@ Content-length: 285
   "recurrence": null,
   "uid": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
-  "isReminderOn": true
+  "isOnlineMeeting": true,
+  "onlineMeetingProvider": "teamsForBusiness",
+  "isReminderOn": true,
+  "onlineMeeting": {
+        "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzIyNzhlMGEtM2YyZC00ZmY0LTlhNzUtZmZjNWFmZGNlNzE2%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22bc55b173-cff6-457d-b7a1-64bda7d7581a%22%7d",
+        "conferenceId": "177513992",
+        "tollNumber": "+91 22 6241 6885"
+    }
 }
 ```
 

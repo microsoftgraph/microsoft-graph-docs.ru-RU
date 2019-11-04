@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: def57ef9dab0f4c1666ebd9b411d9e05c7a75858
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 13756f6a5c84b999b7322341b65030767535807c
+ms.sourcegitcommit: 1a3ca53422fc9a8254e78af7c058e876fc9f9ef8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37936813"
+ms.lasthandoff: 11/03/2019
+ms.locfileid: "37942652"
 ---
 # <a name="delete-calendarpermission"></a>Удаление Календарпермиссион
 
@@ -27,11 +27,21 @@ ms.locfileid: "37936813"
 |Для приложений | Calendars.ReadWrite |
 ## <a name="http-request"></a>HTTP-запрос
 
+Удаление указанных разрешений для основного календаря пользователя:
 <!-- { "blockType": "ignored" } -->
-
 ```http
 DELETE /users/{id}/calendar/calendarPermissions/{id}
+```
+
+Удаление указанных разрешений для календаря группы:
+<!-- { "blockType": "ignored" } -->
+```http
 DELETE /groups/{id}/calendar/calendarPermissions/{id}
+```
+
+Удаление указанных разрешений для календаря пользователя, содержащего идентифицированное событие:
+<!-- { "blockType": "ignored" } -->
+```http
 DELETE /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 ```
 
@@ -39,9 +49,9 @@ DELETE /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

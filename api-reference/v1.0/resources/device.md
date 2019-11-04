@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 438448bf13a5244ec1776223537444d0aed2f0f0
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 350cb39b83df678623f20db802d57fd65b43f2fa
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538807"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37939826"
 ---
 # <a name="device-resource-type"></a>Тип ресурса device
 
@@ -39,7 +39,7 @@ ms.locfileid: "37538807"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean| Если учетная запись обеспечена — значение **true**, в противном случае — **false**. Обязательный параметр.|
+|accountEnabled|Логический| Если учетная запись обеспечена — значение **true**, в противном случае — **false**. Обязательный параметр.|
 |alternativeSecurityIds|Коллекция alternativeSecurityId| Только для внутреннего использования. Значение NULL не допускается. |
 |approximateLastSignInDateTime|DateTimeOffset| Тип timestamp представляет сведения о дате и времени с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
 |комплианцеекспиратиондатетиме|DateTimeOffset| Временная метка, в которой устройство больше не считается совместимым. Тип timestamp представляет сведения о дате и времени с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
@@ -50,15 +50,17 @@ ms.locfileid: "37538807"
 |id|String|Уникальный идентификатор устройства. Наследуется из [directoryObject](directoryobject.md). Ключ, значение null не допускается. Только для чтения.|
 |isCompliant|Логический|Используется значение **true**, если устройство соответствует требованиям политик управления мобильными устройствами (MDM). В противном случае используется значение **false**. Только для чтения. С помощью Intune можно обновлять любой тип ОС устройства или [утвержденное приложение MDM](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для устройств Windows OS.|
 |isManaged|Boolean|Используется значение **true**, если устройство контролируется с помощью приложения для управления мобильными устройствами (MDM), например Intune. В противном случае используется значение **false**. С помощью Intune можно обновлять любой тип ОС устройства или [утвержденное приложение MDM](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для устройств Windows OS. |
+|manufacturer|String| Производитель устройства. Только для чтения. |
 |мдмаппид|String|Идентификатор приложения, используемый для регистрации устройства в MDM. <br><br>Только для чтения. Поддерживает параметр $filter.|
+|model|String| Модель устройства. Только для чтения. |
 |onPremisesLastSyncDateTime|DateTimeOffset|Время последней синхронизации объекта с локальным каталогом. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
 |onPremisesSyncEnabled|Boolean|Используется значение **true**, если этот объект синхронизируется из локального каталога. Используется значение **false**, если этот объект ранее синхронизировался из локального каталога, но синхронизация больше не выполняется. Используется значение **null**, если этот объект никогда не синхронизировался из локального каталога (значение по умолчанию). Только для чтения. |
 |operatingSystem|String| Тип операционной системы на устройстве. Обязательный параметр. |
 |operatingSystemVersion|Строка|Версия операционной системы на устройстве. Обязательный параметр. |
 |physicalIds|Коллекция String| Только для внутреннего использования. Значение NULL не допускается. |
 |профилетипе|String|Тип профиля устройства. Возможные значения:<br />**Регистереддевице** (по умолчанию)<br />**секуревм**<br />**Printer**<br />**Shared**<br />**Интернета**|
-|системлабелс|Коллекция String| Список меток, примененных к устройству системой. |
-|trustType|String| Тип доверия для присоединенного устройства. Только для чтения. Возможные значения: <br />**Workplace**. *Принесенные личные устройства*.<br />**AzureAd**. Устройства, присоединенные только через облако.<br />**ServerAd**. Устройства, присоединенные к Azure Active Directory через локальный домен. Дополнительные сведения см. в статье [Общие сведения об управлении устройствами в Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction). |
+|системлабелс|Коллекция строк| Список меток, примененных к устройству системой. |
+|trustType|String| Тип доверия для присоединенного устройства. Только для чтения. Возможные значения: <br />**Workplace**. *Принесенные личные устройства*.<br />**AzureAd**. Устройства, присоединенные только через облако.<br />**ServerAd**. Устройства, присоединенные к Azure Active Directory через локальный домен. Дополнительные сведения см. в статье [Общие сведения об управлении устройствами в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction). |
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
@@ -99,7 +101,9 @@ ms.locfileid: "37538807"
   "id": "string (identifier)",
   "isCompliant": true,
   "isManaged": true,
+  "manufacturer": "string",
   "mdmAppId": "string",
+  "model": "string",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesSyncEnabled": true,
   "operatingSystem": "string",

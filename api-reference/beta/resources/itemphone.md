@@ -5,18 +5,18 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: a40a0a096fa6f0616a8ff44e41e25791873fa82f
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 2ba1fce4492bfacb3a44f21a0fc55ddd8d37b068
+ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939322"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37950439"
 ---
 # <a name="itemphone-resource-type"></a>Тип ресурса Итемфоне
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет подробные сведения о телефонных номерах, связанных с пользователем в различных службах.
+Представляет подробные сведения о номерах телефонов, связанных с пользователем в различных службах.
 
 ## <a name="methods"></a>Методы
 
@@ -31,7 +31,7 @@ ms.locfileid: "37939322"
 | Свойство     | Тип        | Описание                                                                                                                     |
 |:-------------|:------------|:--------------------------------------------------------------------------------------------------------------------------------|
 |displayName   |Строка       | Содержит понятное имя для номера телефона.                                                                                  |
-|число        |Строка       | Содержит номер телефона.                                                                                                       |
+|число        |String       | Содержит номер телефона.                                                                                                       |
 |type          |string       | Возможные значения: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
 ## <a name="relationships"></a>Связи

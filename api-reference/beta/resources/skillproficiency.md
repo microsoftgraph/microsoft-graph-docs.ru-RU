@@ -5,18 +5,18 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 9490947aea170f2b6e94ecd8f02f59d396746e3a
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 0bb63903b5a3eb0eeed8683463b9927537180f53
+ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938711"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37950425"
 ---
 # <a name="skillproficiency-resource-type"></a>Тип ресурса СкиллпрофиЦиенци
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет подробные сведения о навыках, связанных с самим пользователем в различных службах.
+Представляет подробные сведения о навыках, связанных с пользователем в различных службах.
 
 Наследуется от [итемфацет](itemfacet.md).
 
@@ -24,24 +24,24 @@ ms.locfileid: "37938711"
  
 | Метод                                                 | Возвращаемый тип                             | Описание                                                   |
 |:-------------------------------------------------------|:----------------------------------------|:--------------------------------------------------------------|
-| [Получение СкиллпрофиЦиенци](../api/skillproficiency-get.md) | [скиллпрофиЦиенци](skillproficiency.md) | Чтение свойств и связей объекта СкиллпрофиЦиенци. |
-| [Update](../api/skillproficiency-update.md)            | [скиллпрофиЦиенци](skillproficiency.md) | Обновление объекта СкиллпрофиЦиенци.                               |
-| [Delete](../api/skillproficiency-delete.md)            | Нет.                                    | Удаление объекта СкиллпрофиЦиенци.                               |
+| [Получение СкиллпрофиЦиенци](../api/skillproficiency-get.md) | [скиллпрофиЦиенци](skillproficiency.md) | Чтение свойств и связей объекта **скиллпрофиЦиенци** . |
+| [Обновление СкиллпрофиЦиенци](../api/skillproficiency-update.md)            | [скиллпрофиЦиенци](skillproficiency.md) | Обновление объекта **скиллпрофиЦиенци** .                               |
+| [Удаление СкиллпрофиЦиенци](../api/skillproficiency-delete.md)            | Нет.                                    | Удаление объекта **скиллпрофиЦиенци** .                               |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип             | Описание                                                                                                                        |
 |:-------------|:-----------------|:-----------------------------------------------------------------------------------------------------------------------------------|
-|categories    |Коллекция String | Содержит категории, связанные с навыком (например: личное, профессиональный, для увлечений)                                       |
+|categories    |Коллекция String | Содержит категории, связанные с навыком пользователя (например, персональный, профессиональный, увлеченный).                                       |
 |displayName   |Строка            | Содержит понятное имя для навыка.                                                                                            |      
 |навыки   |string            | Возможные значения: `elementary`, `limitedWorking`, `generalProfessional`, `advancedProfessional`, `expert`, `unknownFutureValue`.|
 |webUrl        |String            | Содержит ссылку на источник информации о навыке.                                                                          |
 
 ## <a name="relationships"></a>Связи
 
-Нет
+Отсутствуют.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 3594430181d374f70e618ac58e01a2dea004667c
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 35cc14df42c39fdd1bc1a06a6cf2da709f5fbf12
+ms.sourcegitcommit: 1a3ca53422fc9a8254e78af7c058e876fc9f9ef8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938171"
+ms.lasthandoff: 11/03/2019
+ms.locfileid: "37942666"
 ---
 # <a name="create-event"></a>Создание события
 
@@ -79,8 +79,11 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 
 В случае успеха этот метод возвращает код ответа `201 Created` и объект [event](../resources/event.md) в тексте ответа.
 
-## <a name="example"></a>Пример
-##### <a name="request-1"></a>Запрос 1
+## <a name="examples"></a>Примеры
+
+### <a name="example-1-create-an-event"></a>Пример 1: создание события
+
+#### <a name="request"></a>Запрос
 Ниже приведен пример запроса. Использует заголовок запроса `Prefer: outlook.timezone`, чтобы указать часовой пояс для параметров времени **start** и **end** в отклике.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
@@ -137,7 +140,7 @@ Content-type: application/json
 ---
 
 Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
-##### <a name="response-1"></a>Отклик 1
+#### <a name="response"></a>Ответ
 Ниже приведен пример ответа, где показано, что свойства **start** и **end** соответствуют часовому поясу, указанному в заголовке `Prefer: outlook.timezone`.
 Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
@@ -180,7 +183,7 @@ Content-length: 2197
     "type":"singleInstance",
     "webLink":"https://outlook.office365.com/owa/?itemid=AAMkAGI1AAAt9AHjAAA%3D&exvsurl=1&path=/calendar/item",
     "onlineMeetingUrl":null,
-    "isOnlineMeeting":true,
+    "isOnlineMeeting": false,
     "onlineMeetingProvider":"unknown",
     "onlineMeeting":null,
     "allowNewTimeProposals": true,
@@ -237,7 +240,9 @@ Content-length: 2197
 ```
 
 
-##### <a name="request-2"></a>Запрос 2
+### <a name="example-2-create-an-event-that-occurs-in-multiple-locations"></a>Пример 2: создание события, которое происходит в нескольких расположениях
+
+#### <a name="request"></a>Запрос
 В следующем примере задаются 3 расположения, где организатор и участники могут посетить мероприятие.
 
 Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
@@ -327,7 +332,7 @@ Content-length: 1390
 ---
 
 
-##### <a name="response-2"></a>Отклик 2
+#### <a name="response"></a>Отклик
 В приведенном ниже примере ответа показано созданное событие, в котором указаны сведения о 3 местах проведения собрания. Так как используется заголовок запроса `Prefer: outlook.timezone="Pacific Standard Time"`, свойства **start** и **end** выражены в формате PST.
 Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
@@ -461,7 +466,9 @@ Content-length: 2985
 ```
 
 
-##### <a name="request-3"></a>Запрос 3
+### <a name="example-3-create-a-recurring-event"></a>Пример 3: создание повторяющегося события
+
+#### <a name="request"></a>Запрос
 В третьем примере показано, как создать повторяющееся событие. Событие происходит с 12:00 до 14:00 каждый понедельник с 4 сентября 2017 г. до конца года.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
@@ -528,8 +535,8 @@ Content-type: application/json
 ---
 
 Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
-##### <a name="response-3"></a>Ответ 3
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+#### <a name="response"></a>Ответ
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "name": "create_event_recurring",
@@ -645,6 +652,169 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-4-create-and-enable-an-event-as-an-online-meeting"></a>Пример 4: создание и включение события в качестве собрания по сети
+
+#### <a name="request"></a>Запрос
+Ниже приведен пример запроса, который создает событие и включает его как собрание по сети. Использует заголовок запроса `Prefer: outlook.timezone`, чтобы указать часовой пояс для параметров времени **start** и **end** в отклике.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_event_from_user_with_online_meeting"
+}-->
+```http
+POST https://graph.microsoft.com/beta/me/events
+Prefer: outlook.timezone="Pacific Standard Time"
+Content-type: application/json
+
+{
+  "subject": "Let's go for lunch",
+  "body": {
+    "contentType": "HTML",
+    "content": "Does noon work for you?"
+  },
+  "start": {
+      "dateTime": "2017-04-15T12:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "end": {
+      "dateTime": "2017-04-15T14:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "location":{
+      "displayName":"Harry's Bar"
+  },
+  "attendees": [
+    {
+      "emailAddress": {
+        "address":"samanthab@contoso.onmicrosoft.com",
+        "name": "Samantha Booth"
+      },
+      "type": "required"
+    }
+  ],
+  "allowNewTimeProposals": true,
+  "isOnlineMeeting": true,
+  "onlineMeetingProvider": "teamsForBusiness"
+}
+```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-event-from-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-event-from-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-user-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
+#### <a name="response"></a>Ответ
+Ниже приведен пример ответа, где показано, что свойства **start** и **end** соответствуют часовому поясу, указанному в заголовке `Prefer: outlook.timezone`.
+Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+<!-- {
+  "blockType": "response",
+  "name": "create_event_from_user_with_online_meeting",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.event"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 2197
+
+{
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events/$entity",
+    "@odata.etag":"W/\"ZlnW4RIAV06KYYwlrfNZvQAALfZeRQ==\"",
+    "id":"AAMkAGI1AAAt8AHjAAA=",
+    "createdDateTime":"2017-04-15T03:00:50.7579581Z",
+    "lastModifiedDateTime":"2017-04-15T03:00:51.245372Z",
+    "changeKey":"ZlnW4RIAV06KYYwlrfNZvQAALfZeRQ==",
+    "categories":[
+
+    ],
+    "originalStartTimeZone":"Pacific Standard Time",
+    "originalEndTimeZone":"Pacific Standard Time",
+    "uid":"040000008200E00074C5B7101A82E00800000000DA2B357D94B5D201000000000000000010000000EC4597557F0CB34EA4CC2887EA7B17C3",
+    "reminderMinutesBeforeStart":15,
+    "isReminderOn":true,
+    "hasAttachments":false,
+    "subject":"Let's go brunch",
+    "bodyPreview":"Does noon work for you?",
+    "importance":"normal",
+    "sensitivity":"normal",
+    "isAllDay":false,
+    "isCancelled":false,
+    "isOrganizer":true,
+    "responseRequested":true,
+    "seriesMasterId":null,
+    "showAs":"busy",
+    "type":"singleInstance",
+    "webLink":"https://outlook.office365.com/owa/?itemid=AAMkAGI1AAAt9AHjAAA%3D&exvsurl=1&path=/calendar/item",
+    "onlineMeetingUrl":null,
+    "isOnlineMeeting": true,
+    "onlineMeetingProvider": "teamsForBusiness",
+    "allowNewTimeProposals": true,
+    "responseStatus":{
+        "response":"organizer",
+        "time":"0001-01-01T00:00:00Z"
+    },
+    "body":{
+        "contentType":"html",
+        "content":"<html><head></head><body>Does late morning work for you?</body></html>"
+    },
+    "start":{
+        "dateTime":"2017-04-15T11:00:00.0000000",
+        "timeZone":"Pacific Standard Time"
+    },
+    "end":{
+        "dateTime":"2017-04-15T12:00:00.0000000",
+        "timeZone":"Pacific Standard Time"
+    },
+    "location": {
+        "displayName": "Harry's Bar",
+        "locationType": "default",
+        "uniqueId": "Harry's Bar",
+        "uniqueIdType": "private"
+    },
+    "locations": [
+        {
+            "displayName": "Harry's Bar",
+            "locationType": "default",
+            "uniqueIdType": "unknown"
+        }
+    ],
+    "recurrence":null,
+    "attendees":[
+        {
+            "type":"required",
+            "status":{
+                "response":"none",
+                "time":"0001-01-01T00:00:00Z"
+            },
+            "emailAddress":{
+                "name":"Samantha Booth",
+                "address":"samanthab@contoso.onmicrosoft.com"
+            }
+        }
+    ],
+    "organizer":{
+        "emailAddress":{
+            "name":"Dana Swope",
+            "address":"danas@contoso.onmicrosoft.com"
+        }
+    },
+    "onlineMeeting": {
+        "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzIyNzhlMGEtM2YyZC00ZmY0LTlhNzUtZmZjNWFmZGNlNzE2%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22bc55b173-cff6-457d-b7a1-64bda7d7581a%22%7d",
+        "conferenceId": "177513992",
+        "tollNumber": "+1 425 555 0123"
+    }
+}
+```
 
 
 

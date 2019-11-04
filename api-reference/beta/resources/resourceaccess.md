@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Ресаурцеакцесс
-description: Указывает область разрешений OAuth 2,0 или роль приложения, требуемую приложением. Свойство **ресаурцеакцесс** типа рекуиредресаурцеакцесс является коллекцией **ресаурцеакцесс**.
+description: Указывает область разрешений OAuth 2,0 или роль приложения, требуемую приложением.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 4c2a909fb2beafeb22f303ef42703b3d57c30854
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: microsoft-identity-platform
+author: davidmu1
+ms.openlocfilehash: d0d04ba99c0132a0f305bb0fdcaa5e32071d7554
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965417"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37939266"
 ---
 # <a name="resourceaccess-resource-type"></a>Тип ресурса Ресаурцеакцесс
 
@@ -41,8 +41,8 @@ ms.locfileid: "35965417"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|GUID|Уникальный идентификатор для одного из экземпляров [oAuth2Permission](oauth2permission.md) или [аппроле](approle.md) , предоставляемых приложением ресурсов.|
-|type|String|Указывает, ссылается ли свойство **ID** на объект [oAuth2Permission](oauth2permission.md) или [аппроле](approle.md). Возможные значения: "Scope" или "role".|
+|id|GUID|Уникальный идентификатор для одного из экземпляров [oauth2PermissionScopes](permissionscope.md) или [аппроле](approle.md) , предоставляемых приложением ресурсов.|
+|type|String|Указывает, ссылается ли свойство **ID** на объект [oauth2PermissionScopes](permissionscope.md) или [аппроле](approle.md). Возможные значения: "Scope" или "role".|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

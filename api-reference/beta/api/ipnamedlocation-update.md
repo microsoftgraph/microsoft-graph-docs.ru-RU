@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e9b1dfbe84124c6f6049260732bf254e98682870
-ms.sourcegitcommit: d189830649794365464e37539e02239f883011da
+ms.openlocfilehash: 2658baafbe4fadf164004f99f56b9288545c2b8c
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37653722"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37938465"
 ---
 # <a name="update-ipnamedlocation"></a>Обновление Ипнамедлокатион
 
@@ -52,7 +52,7 @@ PATCH /conditionalAccess/namedLocations/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|String|Удобное для человека имя расположения.|
+|displayName|Строка|Удобное для человека имя расположения.|
 |ипранжес|Коллекция объектов [ipRange](../resources/iprange.md)|Список диапазонов IP-адресов в формате IPv4 CIDR (1.2.3.4/32) или любом допустимом формате IPv6 из IETF RFC5962.|
 |Доверять|Логический|Значение, `true` если это расположение явно доверенное.|
 
@@ -65,6 +65,8 @@ PATCH /conditionalAccess/namedLocations/{id}
 ### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_ipnamedlocation"
@@ -87,6 +89,12 @@ Content-type: application/json
     ]
 }
 ```
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-ipnamedlocation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

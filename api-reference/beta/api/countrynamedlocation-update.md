@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d68138088ed39d8c4fe4dfbcec7abcb77aa11dd3
-ms.sourcegitcommit: d189830649794365464e37539e02239f883011da
+ms.openlocfilehash: dd3dabf7e372ad7e1c8ea1914bb42c25577edf64
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37653743"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37937118"
 ---
 # <a name="update-countrynamedlocation"></a>Обновление Каунтринамедлокатион
 
@@ -53,7 +53,7 @@ PATCH /conditionalAccess/namedLocations/{id}
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |каунтриесандрегионс|Коллекция строк|Список стран и/или регионов в формате из двух букв, заданных в стандарте ISO 3166-2.|
-|displayName|String|Удобное для человека имя расположения.|
+|displayName|Строка|Удобное для человека имя расположения.|
 |инклудеункновнкаунтриесандрегионс|Логический|Значение, `true` если IP-адреса, которые не сопоставляются со страной или регионом, должны быть включены в именованное расположение.|
 
 ## <a name="response"></a>Отклик
@@ -65,6 +65,8 @@ PATCH /conditionalAccess/namedLocations/{id}
 ### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_countrynamedlocation"
@@ -84,6 +86,16 @@ Content-type: application/json
     "includeUnknownCountriesAndRegions": false
 }
 ```
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-countrynamedlocation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-countrynamedlocation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

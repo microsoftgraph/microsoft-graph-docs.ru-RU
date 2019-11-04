@@ -1,14 +1,14 @@
 ---
 title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph. Сведения о последних обновлениях см. в журнале изменений Microsoft Graph.
-author: ''
+author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: e981530f3efa38f49655427085267a9fc0206835
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: f11f45086994fa855714950b079b5151ce348662
+ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37638808"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37950411"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -161,6 +161,8 @@ GET /me/calendars/{id}/events
 ### <a name="onlinemeetingurl-property-support-for-microsoft-teams"></a>Поддержка свойства onlineMeetingUrl для Microsoft Teams
 
 В настоящее время свойство **onlineMeetingUrl** ресурса [event](/graph/api/resources/event?view=graph-rest-1.0) для собрания Skype означает URL-адрес для собрания по сети. Однако для ресурса event собрания в Microsoft Teams задано значение NULL.
+
+В бета-версии предлагается обходное решение, позволяющее использовать свойство **onlineMeetingProvider** ресурса [event](/graph/api/resources/event?view=graph-rest-beta) с целью убедиться, что поставщиком является Microsoft Teams. С помощью свойства **onlineMeeting** ресурса **event** вы можете получить доступ к объекту **joinUrl**.
 
 ## <a name="calls-and-online-meetings"></a>Звонки и собрания по сети
 

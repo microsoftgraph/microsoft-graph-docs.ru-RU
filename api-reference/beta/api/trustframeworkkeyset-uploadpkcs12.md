@@ -5,12 +5,12 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e0ca40056c2b7e5607afdb9ffb1ea2cb314c2bc8
-ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
+ms.openlocfilehash: 9cb1ff03d392032ae99117991b0c8ff356621476
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37734668"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37938207"
 ---
 # <a name="trustframeworkkeyset-uploadpkcs12"></a>Трустфрамеворккэйсет: uploadPkcs12
 
@@ -49,7 +49,7 @@ POST /trustFramework/keySets/{id}/uploadPkcs12
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|key|String|Это поле для отправки PFX-содержимого. Значение должно представлять собой версию фактического содержимого сертификата в кодировке Base 64.|
+|key|Строка|Это поле для отправки PFX-содержимого. Значение должно представлять собой версию фактического содержимого сертификата в кодировке Base 64.|
 |password|Строка|Это поле для отправки пароля в PFX-контент.|
 
 ## <a name="response"></a>Отклик
@@ -61,6 +61,8 @@ POST /trustFramework/keySets/{id}/uploadPkcs12
 ### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "trustframeworkkeyset_uploadpkcs12"
@@ -75,6 +77,20 @@ Content-type: application/json
   "password": "password-value"
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/trustframeworkkeyset-uploadpkcs12-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/trustframeworkkeyset-uploadpkcs12-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/trustframeworkkeyset-uploadpkcs12-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 5cea04931d537c8b0bd29c49327a56afe8a7d5d5
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: 975effa01ce60799a647bc051a0518d87afcda9e
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35841299"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37939588"
 ---
 # <a name="place-resource-type"></a>размещение типа ресурса
 
@@ -32,6 +32,7 @@ ms.locfileid: "35841299"
 |Поддерживает [Извлечение отдельных помещений или списка помещений](../api/place-get.md) в клиенте | Не поддерживает извлечение отдельного помещения или списка помещений в клиенте
 |Определяет конкретные объекты [комнаты](room.md) и [RoomList принимают одиночные](roomlist.md) , которые задают набор свойств с более широкими возможностями, в дополнение к ОТОБРАЖАЕМОМУ имени и SMTP-адресу. | Каждая комната и список помещений имеют более легкий тип [EmailAddress](emailaddress.md) , который указывает только отображаемое имя и SMTP-адрес.|
 |Поддерживает только организационные сценарии с делегированными (рабочими или учебными учетными записями) или разрешениями приложений. | Подобная поддержка только для организационных сценариев с делегированными разрешениями или приложениями|
+|Поддерживает [обновление отдельных помещений или списка помещений](../api/place-update.md) в клиенте | Не поддерживает обновление отдельных помещений или списка помещений в клиенте
 
 ## <a name="methods"></a>Методы
 
@@ -39,6 +40,7 @@ ms.locfileid: "35841299"
 |:------------------------------------|:-----------------------------|:--------|
 | [Список мест](../api/place-list.md) | Коллекция запрошенного, производного типа [места](place.md) | Получение коллекции указанного типа объектов **Place** , определенных в клиенте. |
 | [Получение](../api/place-get.md)    | Запрошенный, производный тип [места](place.md)            | Получение свойств и связей указанного объекта **Place** . |
+| [Обновление места](../api/place-update.md)    | Запрошенный, производный тип [места](place.md)            | Обновление свойств и связей указанного объекта **Place** . |
 
 ## <a name="properties"></a>Свойства
 
@@ -50,7 +52,7 @@ ms.locfileid: "35841299"
 | id             | String                                            | Уникальный идентификатор для места. Только для чтения. |
 | phone          | String                                            | Номер телефона для места. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 
@@ -78,8 +80,8 @@ ms.locfileid: "35841299"
 ```
 
 ## <a name="see-also"></a>См. также
-- Чтобы создать список помещений для администраторов, используйте командлет Exchange PowerShell [New – DistributionGroup](https://docs.microsoft.com/en-us/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps).
-- Чтобы добавить конференцию в список помещений, используйте командлет [Add – DistributionGroupMember](https://docs.microsoft.com/en-us/powershell/module/exchange/users-and-groups/add-distributiongroupmember?view=exchange-ps)для Exchange PowerShell.
+- Чтобы создать список помещений для администраторов, используйте командлет Exchange PowerShell [New – DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps).
+- Чтобы добавить конференцию в список помещений, используйте командлет [Add – DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/add-distributiongroupmember?view=exchange-ps)для Exchange PowerShell.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
