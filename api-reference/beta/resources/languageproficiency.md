@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 4e2ea70eca4e830ef334e5bf61be724cb05f1cfc
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 3a022d9c255bbfee03ef7f1fec891bc0fa757480
+ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939294"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "37950460"
 ---
 # <a name="languageproficiency-resource-type"></a>Тип ресурса ЛангуажепрофиЦиенци
 
@@ -32,15 +32,15 @@ ms.locfileid: "37939294"
 
 | Свойство     | Тип        | Описание                                                                                                                                                 |
 |:-------------|:------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|displayName   |Строка       | Содержит имя языка в длинном формате.                                                                                                   |
+|displayName   |String       | Содержит имя языка в длинном формате.                                                                                                   |
 |навыки   |string       | Возможные значения: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.|
-|tag           |Строка       | Содержит четырехзначный BCP47 Name для языка (EN-US, No-NetBIOS, en-AU).                                                                                  |
+|tag           |String       | Содержит четырехзначный BCP47 Name для языка (EN-US, No-NetBIOS, en-AU).                                                                                  |
 
 ## <a name="relationships"></a>Связи
 
-Нет
+Отсутствуют.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON. 
 
