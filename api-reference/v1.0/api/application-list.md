@@ -1,0 +1,152 @@
+---
+title: Список приложений
+description: Получение списка приложений в организации.
+author: davidmu1
+localization_priority: Priority
+ms.prod: microsoft-identity-platform
+doc_type: apiPageType
+ms.openlocfilehash: 801f568d7f4ee6ad905fec1648683acdc8133d3d
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37939707"
+---
+# <a name="list-applications"></a><span data-ttu-id="534f4-103">Список приложений</span><span class="sxs-lookup"><span data-stu-id="534f4-103">List applications</span></span>
+
+<span data-ttu-id="534f4-104">Получение списка [приложений](../resources/application.md) в организации.</span><span class="sxs-lookup"><span data-stu-id="534f4-104">Retrieve the list of applications in this organization.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="534f4-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="534f4-105">Permissions</span></span>
+<span data-ttu-id="534f4-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="534f4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+
+|<span data-ttu-id="534f4-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="534f4-108">Permission type</span></span>      | <span data-ttu-id="534f4-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="534f4-109">Permissions (from least to most privileged)</span></span>              |
+|:--------------------|:---------------------------------------------------------|
+|<span data-ttu-id="534f4-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="534f4-110">Delegated (work or school account)</span></span> | <span data-ttu-id="534f4-111">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="534f4-111">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="534f4-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="534f4-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="534f4-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="534f4-113">Not supported.</span></span>    |
+|<span data-ttu-id="534f4-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="534f4-114">Application</span></span> | <span data-ttu-id="534f4-115">Application.ReadWrite.All, Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="534f4-115">Application.ReadWrite.All, Directory.Read.All</span></span> |
+
+## <a name="http-request"></a><span data-ttu-id="534f4-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="534f4-116">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+GET /applications
+```
+## <a name="optional-query-parameters"></a><span data-ttu-id="534f4-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="534f4-117">Optional query parameters</span></span>
+<span data-ttu-id="534f4-118">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="534f4-118">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="534f4-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="534f4-119">Request headers</span></span>
+| <span data-ttu-id="534f4-120">Имя</span><span class="sxs-lookup"><span data-stu-id="534f4-120">Name</span></span>       | <span data-ttu-id="534f4-121">Тип</span><span class="sxs-lookup"><span data-stu-id="534f4-121">Type</span></span> | <span data-ttu-id="534f4-122">Описание</span><span class="sxs-lookup"><span data-stu-id="534f4-122">Description</span></span>|
+|:-----------|:------|:----------|
+| <span data-ttu-id="534f4-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="534f4-123">Authorization</span></span>  | <span data-ttu-id="534f4-124">string</span><span class="sxs-lookup"><span data-stu-id="534f4-124">string</span></span>  | <span data-ttu-id="534f4-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="534f4-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="534f4-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="534f4-127">Content-type</span></span>   | <span data-ttu-id="534f4-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="534f4-p103">application/json. Required.</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="534f4-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="534f4-130">Request body</span></span>
+<span data-ttu-id="534f4-131">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="534f4-131">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="534f4-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="534f4-132">Response</span></span>
+
+<span data-ttu-id="534f4-133">При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [application](../resources/application.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="534f4-133">If successful, this method returns a `200 OK` response code and a collection of [application](../resources/application.md) objects in the response body.</span></span>
+## <a name="examples"></a><span data-ttu-id="534f4-134">Примеры</span><span class="sxs-lookup"><span data-stu-id="534f4-134">Examples</span></span>
+### <a name="request"></a><span data-ttu-id="534f4-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="534f4-135">Request</span></span>
+<span data-ttu-id="534f4-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="534f4-136">Here is an example of the request.</span></span>
+
+<!-- {
+  "blockType": "request",
+  "name": "list_application"
+}-->
+
+```http
+GET https://graph.microsoft.com/v1.0/applications
+```
+
+### <a name="response"></a><span data-ttu-id="534f4-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="534f4-137">Response</span></span>
+<span data-ttu-id="534f4-138">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="534f4-138">Here is an example of the response.</span></span> 
+
+> <span data-ttu-id="534f4-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="534f4-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.application",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 1229
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications",
+    "value": [
+        {
+            "id": "00af5dfb-85da-4b41-a677-0c6b86dd34f8",
+            "deletedDateTime": null,
+            "isFallbackPublicClient": false,
+            "appId": "65415bb1-9267-4313-bbf5-ae259732ee12",
+            "applicationTemplateId": null,
+            "identifierUris": [
+                "http://contoso/a7770d29-4321-41a6-b863-ca11d6639448"
+            ],
+            "createdDateTime": "2019-09-15T05:23:08Z",
+            "displayName": "My app",
+            "isDeviceOnlyAuthSupported": null,
+            "groupMembershipClaims": null,
+            "optionalClaims": null,
+            "orgRestrictions": [],
+            "publisherDomain": "contoso.onmicrosoft.com",
+            "signInAudience": "AzureADMyOrg",
+            "tags": [],
+            "tokenEncryptionKeyId": null,
+            "api": {
+                "requestedAccessTokenVersion": null,
+                "acceptMappedClaims": null,
+                "knownClientApplications": [],
+                "oauth2PermissionScopes": [],
+                "preAuthorizedApplications": []
+            },
+            "appRoles": [],
+            "publicClient": {
+                "redirectUris": []
+            },
+            "info": {
+                "termsOfServiceUrl": null,
+                "supportUrl": null,
+                "privacyStatementUrl": null,
+                "marketingUrl": null,
+                "logoUrl": null
+            },
+            "keyCredentials": [],
+            "parentalControlSettings": {
+                "countriesBlockedForMinors": [],
+                "legalAgeGroupRule": "Allow"
+            },
+            "passwordCredentials": [],
+            "requiredResourceAccess": [],
+            "web": {
+                "redirectUris": [
+                    "https://127.0.0.1:444/applications/default.aspx"
+                ],
+                "homePageUrl": "http://www.contoso.com/landingPage",
+                "logoutUrl": null,
+                "implicitGrantSettings": {
+                    "enableIdTokenIssuance": true,
+                    "enableAccessTokenIssuance": false
+                }
+            }
+        }
+    ]
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "List applications",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->

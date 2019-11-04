@@ -1,0 +1,66 @@
+---
+title: Тип ресурса Аппроле
+description: Представляет роль приложения, которая может быть запрошена клиентским приложением для вызова другого приложения.
+localization_priority: Normal
+doc_type: resourcePageType
+ms.prod: microsoft-identity-platform
+author: davidmu1
+ms.openlocfilehash: f98cb4d1c32256dccf5e2748116cdd7fc1869f68
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37937394"
+---
+# <a name="approle-resource-type"></a><span data-ttu-id="4b2d4-103">Тип ресурса Аппроле</span><span class="sxs-lookup"><span data-stu-id="4b2d4-103">appRole resource type</span></span>
+
+<span data-ttu-id="4b2d4-104">Представляет роль приложения, которая может быть запрошена клиентским приложением, вызывающей другое приложение, или которая может использоваться для назначения приложения пользователям или группам в указанной роли приложения.</span><span class="sxs-lookup"><span data-stu-id="4b2d4-104">Represents an application role that may be requested by a client application calling another application or that may be used to assign an application to users or groups in a specified application role.</span></span> <span data-ttu-id="4b2d4-105">Свойство **appRoles**</span><span class="sxs-lookup"><span data-stu-id="4b2d4-105">The **appRoles** property</span></span> <!-- of the [servicePrincipal](serviceprincipal.md) entity and --> <span data-ttu-id="4b2d4-106">объекта [Application](application.md) — коллекция **аппроле**.</span><span class="sxs-lookup"><span data-stu-id="4b2d4-106">of the [application](application.md) entity is a collection of **appRole**.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="4b2d4-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="4b2d4-107">Properties</span></span>
+| <span data-ttu-id="4b2d4-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="4b2d4-108">Property</span></span>     | <span data-ttu-id="4b2d4-109">Тип</span><span class="sxs-lookup"><span data-stu-id="4b2d4-109">Type</span></span>   |<span data-ttu-id="4b2d4-110">Описание</span><span class="sxs-lookup"><span data-stu-id="4b2d4-110">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="4b2d4-111">алловедмембертипес</span><span class="sxs-lookup"><span data-stu-id="4b2d4-111">allowedMemberTypes</span></span>|<span data-ttu-id="4b2d4-112">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="4b2d4-112">String collection</span></span>|<span data-ttu-id="4b2d4-113">Указывает, можно ли назначить это определение роли приложения пользователям и группам, задав для параметра значение "пользователь" или другие приложения (которые обращаются к этому приложению в сценариях службы демона), задав значение "Application" или как то, и другое.</span><span class="sxs-lookup"><span data-stu-id="4b2d4-113">Specifies whether this app role definition can be assigned to users and groups by setting to "User", or to other applications (that are accessing this application in daemon service scenarios) by setting to "Application", or to both.</span></span>|
+|<span data-ttu-id="4b2d4-114">description</span><span class="sxs-lookup"><span data-stu-id="4b2d4-114">description</span></span>|<span data-ttu-id="4b2d4-115">String</span><span class="sxs-lookup"><span data-stu-id="4b2d4-115">String</span></span>|<span data-ttu-id="4b2d4-116">Текст справки по разрешениям, который отображается при назначении и согласии приложения администрирования.</span><span class="sxs-lookup"><span data-stu-id="4b2d4-116">Permission help text that appears in the admin app assignment and consent experiences.</span></span>|
+|<span data-ttu-id="4b2d4-117">displayName</span><span class="sxs-lookup"><span data-stu-id="4b2d4-117">displayName</span></span>|<span data-ttu-id="4b2d4-118">Строка</span><span class="sxs-lookup"><span data-stu-id="4b2d4-118">String</span></span>|<span data-ttu-id="4b2d4-119">Отображаемое имя разрешения, которое отображается в качестве согласия администратора и взаимодействия с назначением приложений.</span><span class="sxs-lookup"><span data-stu-id="4b2d4-119">Display name for the permission that appears in the admin consent and app assignment experiences.</span></span>|
+|<span data-ttu-id="4b2d4-120">id</span><span class="sxs-lookup"><span data-stu-id="4b2d4-120">id</span></span>|<span data-ttu-id="4b2d4-121">GUID</span><span class="sxs-lookup"><span data-stu-id="4b2d4-121">Guid</span></span>|<span data-ttu-id="4b2d4-122">Уникальный идентификатор роли в семействе **appRoles** .</span><span class="sxs-lookup"><span data-stu-id="4b2d4-122">Unique role identifier inside the **appRoles** collection.</span></span> <span data-ttu-id="4b2d4-123">При создании новой роли приложения необходимо указать новый идентификатор GUID.</span><span class="sxs-lookup"><span data-stu-id="4b2d4-123">When creating a new app role, a new Guid identifier must be provided.</span></span> |
+|<span data-ttu-id="4b2d4-124">isEnabled</span><span class="sxs-lookup"><span data-stu-id="4b2d4-124">isEnabled</span></span>|<span data-ttu-id="4b2d4-125">Boolean</span><span class="sxs-lookup"><span data-stu-id="4b2d4-125">Boolean</span></span>|<span data-ttu-id="4b2d4-126">При создании или обновлении роли приложения должно быть задано **значение true** (значение по умолчанию).</span><span class="sxs-lookup"><span data-stu-id="4b2d4-126">When creating or updating an app role, this must be set to **true** (which is the default).</span></span> <span data-ttu-id="4b2d4-127">Чтобы удалить роль, необходимо сначала задать значение **false**.</span><span class="sxs-lookup"><span data-stu-id="4b2d4-127">To delete a role, this must first be set to **false**.</span></span>  <span data-ttu-id="4b2d4-128">В этот момент эта роль может быть удалена в последующих вызовах.</span><span class="sxs-lookup"><span data-stu-id="4b2d4-128">At that point, in a subsequent call, this role may be removed.</span></span>|
+|<span data-ttu-id="4b2d4-129">основания</span><span class="sxs-lookup"><span data-stu-id="4b2d4-129">origin</span></span>|<span data-ttu-id="4b2d4-130">String</span><span class="sxs-lookup"><span data-stu-id="4b2d4-130">String</span></span>| <span data-ttu-id="4b2d4-131">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="4b2d4-131">Read-only.</span></span> <span data-ttu-id="4b2d4-132">Указывает, определена ли роль приложения для объекта Application.</span><span class="sxs-lookup"><span data-stu-id="4b2d4-132">Specifies if the app role is defined on the Application object</span></span> <!-- or on the ServicePrincipal object --><span data-ttu-id="4b2d4-133">.</span><span class="sxs-lookup"><span data-stu-id="4b2d4-133"></span></span> <span data-ttu-id="4b2d4-134">_Не_ следует включать в запросы POST или patch.</span><span class="sxs-lookup"><span data-stu-id="4b2d4-134">Must _not_ be included in any POST or PATCH requests.</span></span> |
+|<span data-ttu-id="4b2d4-135">value</span><span class="sxs-lookup"><span data-stu-id="4b2d4-135">value</span></span>|<span data-ttu-id="4b2d4-136">String</span><span class="sxs-lookup"><span data-stu-id="4b2d4-136">String</span></span>|<span data-ttu-id="4b2d4-137">Указывает значение, которое будет включено в `roles` заявку для проверки подлинности и маркеров доступа.</span><span class="sxs-lookup"><span data-stu-id="4b2d4-137">Specifies the value which will be included in the `roles` claim in authentication and access tokens.</span></span> <span data-ttu-id="4b2d4-138">Длина не должна превышать 120 символов.</span><span class="sxs-lookup"><span data-stu-id="4b2d4-138">Must not exceed 120 characters in length.</span></span> <span data-ttu-id="4b2d4-139">Допустимые `:` `!` `#` `$` символы `%` `&` `'` `(` `)` `*` `+` `,` `-` `.` `/` `:` `;` <code>&lt;</code> `=` <code>&gt;</code> `?` `A-Z` также символы в диапазонах `a-z`и. `0-9` `^` `@` `[` `]` `+` `_` <code>&#96;</code> `{` <code>&#124;</code> `}` `~`</span><span class="sxs-lookup"><span data-stu-id="4b2d4-139">Allowed characters are `:` `!` `#` `$` `%` `&` `'` `(` `)` `*` `+` `,` `-` `.` `/` `:` `;` <code>&lt;</code> `=` <code>&gt;</code> `?` `@` `[` `]` `^` `+` `_` <code>&#96;</code> `{` <code>&#124;</code> `}` `~`, as well as characters in the ranges `0-9`, `A-Z` and `a-z`.</span></span> <span data-ttu-id="4b2d4-140">Любой другой символ, в том числе символ пробела, не допускается.</span><span class="sxs-lookup"><span data-stu-id="4b2d4-140">Any other character, including the space character, are not allowed.</span></span>  |
+
+## <a name="json-representation"></a><span data-ttu-id="4b2d4-141">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="4b2d4-141">JSON representation</span></span>
+
+<span data-ttu-id="4b2d4-142">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="4b2d4-142">Here is a JSON representation of the resource</span></span>
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.appRole"
+}-->
+
+```json
+{
+  "allowedMemberTypes": ["string"],
+  "description": "string",
+  "displayName": "string",
+  "id": "guid",
+  "isEnabled": true,
+  "origin": "string",
+  "value": "string"
+}
+
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "appRole resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}
+-->

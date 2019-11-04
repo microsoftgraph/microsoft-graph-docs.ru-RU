@@ -3,30 +3,31 @@ title: Тип ресурса addIn
 description: Ниже представлено описание ресурса в формате JSON.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 46daa8c4f1218b3de485643a47f7acbe881c661c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: microsoft-identity-platform
+author: davidmu1
+ms.openlocfilehash: 26a224989af3ab87036fbd6bd0964ea811016dcb
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974551"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37939097"
 ---
-# <a name="addin-resource-type"></a><span data-ttu-id="f8488-103">Тип ресурса addIn</span><span class="sxs-lookup"><span data-stu-id="f8488-103">addIn resource type</span></span>
+# <a name="addin-resource-type"></a><span data-ttu-id="e9ec6-103">Тип ресурса addIn</span><span class="sxs-lookup"><span data-stu-id="e9ec6-103">addIn resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+<span data-ttu-id="e9ec6-104">Определяет пользовательское поведение, которое может использоваться службой использования для вызова приложения в определенных контекстах.</span><span class="sxs-lookup"><span data-stu-id="e9ec6-104">Defines custom behavior that a consuming service can use to call an app in specific contexts.</span></span> <span data-ttu-id="e9ec6-105">Например, приложения, которые могут визуализировать файловые потоки, [могут настраивать](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online) надстройки для работы с обработчиками файлов.</span><span class="sxs-lookup"><span data-stu-id="e9ec6-105">For example, applications that can render file streams [might configure add-ins](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online) for File Handler functionality.</span></span> <span data-ttu-id="e9ec6-106">Это позволит таким службам, как Office 365, вызвать приложение в контексте документа, над которым работает пользователь.</span><span class="sxs-lookup"><span data-stu-id="e9ec6-106">This will let services like Office 365 call the application in the context of a document the user is working on.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="f8488-104">Свойства</span><span class="sxs-lookup"><span data-stu-id="f8488-104">Properties</span></span>
-| <span data-ttu-id="f8488-105">Свойство</span><span class="sxs-lookup"><span data-stu-id="f8488-105">Property</span></span>     | <span data-ttu-id="f8488-106">Тип</span><span class="sxs-lookup"><span data-stu-id="f8488-106">Type</span></span>   |<span data-ttu-id="f8488-107">Описание</span><span class="sxs-lookup"><span data-stu-id="f8488-107">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="e9ec6-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="e9ec6-107">Properties</span></span>
+| <span data-ttu-id="e9ec6-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="e9ec6-108">Property</span></span>     | <span data-ttu-id="e9ec6-109">Тип</span><span class="sxs-lookup"><span data-stu-id="e9ec6-109">Type</span></span>   |<span data-ttu-id="e9ec6-110">Описание</span><span class="sxs-lookup"><span data-stu-id="e9ec6-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f8488-108">id</span><span class="sxs-lookup"><span data-stu-id="f8488-108">id</span></span>|<span data-ttu-id="f8488-109">кодом</span><span class="sxs-lookup"><span data-stu-id="f8488-109">guid</span></span>||
-|<span data-ttu-id="f8488-110">properties</span><span class="sxs-lookup"><span data-stu-id="f8488-110">properties</span></span>|<span data-ttu-id="f8488-111">Коллекция [keyValue](keyvalue.md)</span><span class="sxs-lookup"><span data-stu-id="f8488-111">[keyValue](keyvalue.md) collection</span></span>||
-|<span data-ttu-id="f8488-112">type</span><span class="sxs-lookup"><span data-stu-id="f8488-112">type</span></span>|<span data-ttu-id="f8488-113">string</span><span class="sxs-lookup"><span data-stu-id="f8488-113">string</span></span>||
+|<span data-ttu-id="e9ec6-111">id</span><span class="sxs-lookup"><span data-stu-id="e9ec6-111">id</span></span>|<span data-ttu-id="e9ec6-112">кодом</span><span class="sxs-lookup"><span data-stu-id="e9ec6-112">guid</span></span>||
+|<span data-ttu-id="e9ec6-113">properties</span><span class="sxs-lookup"><span data-stu-id="e9ec6-113">properties</span></span>|<span data-ttu-id="e9ec6-114">Коллекция [keyValue](keyvalue.md)</span><span class="sxs-lookup"><span data-stu-id="e9ec6-114">[keyValue](keyvalue.md) collection</span></span>||
+|<span data-ttu-id="e9ec6-115">type</span><span class="sxs-lookup"><span data-stu-id="e9ec6-115">type</span></span>|<span data-ttu-id="e9ec6-116">string</span><span class="sxs-lookup"><span data-stu-id="e9ec6-116">string</span></span>||
 
-## <a name="json-representation"></a><span data-ttu-id="f8488-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="f8488-114">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e9ec6-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="e9ec6-117">JSON representation</span></span>
 
-<span data-ttu-id="f8488-115">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f8488-115">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="e9ec6-118">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e9ec6-118">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
