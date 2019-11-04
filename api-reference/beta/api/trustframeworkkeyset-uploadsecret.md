@@ -5,12 +5,12 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0d5a093541f1cd3cc322a4a161a425f6bf673f6f
-ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
+ms.openlocfilehash: 13742cee46164eaf2e21c4eefa2e8655fa4a567e
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37734667"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37937493"
 ---
 # <a name="trustframeworkkeyset-uploadsecret"></a>Трустфрамеворккэйсет: Уплоадсекрет
 
@@ -49,8 +49,8 @@ POST /trustFramework/keySets/{id}/uploadSecret
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|Используйте|String|Аналогично свойству **use** объекта **трустфрамеворккэй**.|
-|звонить|String|Аналогично свойству **k** объекта **трустфрамеворккэй**. Это поле, используемое для отправки секрета.|
+|Используйте|Строка|Аналогично свойству **use** объекта **трустфрамеворккэй**.|
+|звонить|Строка|Аналогично свойству **k** объекта **трустфрамеворккэй**. Это поле, используемое для отправки секрета.|
 |nbf|Int64|Аналогично свойству **NBF** объекта **трустфрамеворккэй**.|
 |exp|Int64|Аналогично свойству **exp** объекта **трустфрамеворккэй**.|
 
@@ -63,6 +63,8 @@ POST /trustFramework/keySets/{id}/uploadSecret
 ### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "trustframeworkkeyset_uploadsecret"
@@ -79,6 +81,20 @@ Content-type: application/json
   "exp": 1508973711
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/trustframeworkkeyset-uploadsecret-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/trustframeworkkeyset-uploadsecret-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/trustframeworkkeyset-uploadsecret-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

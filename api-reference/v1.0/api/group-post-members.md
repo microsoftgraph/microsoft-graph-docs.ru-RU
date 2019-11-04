@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: caa00e74298eb7d744412ffdc85298d804ef615d
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: 76213aa84377de6c4d469a61d8287a58d7f76a20
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37621359"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37934860"
 ---
 # <a name="add-member"></a>Добавление участника
 Добавляйте участника в группу Office 365 или группу безопасности через свойство навигации **members**.
@@ -39,9 +39,9 @@ POST /groups/{id}/members/$ref
 | Заголовок       | Значение |
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Content-Type   | appication/json. Обязательный элемент. |
+| Content-Type   | application/json. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Основной текст запроса
 Предоставьте в тексте запроса описание добавляемого объекта [directoryObject](../resources/directoryobject.md), [user](../resources/user.md), [group](../resources/group.md) или [organizational contact](../resources/orgcontact.md) в формате JSON.
 
 ## <a name="response"></a>Отклик

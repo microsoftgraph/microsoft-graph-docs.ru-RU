@@ -3,54 +3,39 @@ title: Тип ресурса Пассвордкредентиал
 description: Содержит учетные данные пароля, связанные с приложением или субъектом службы. Свойство **пассвордкредентиалс** объекта servicePrincipal и сущности приложения является коллекцией **пассвордкредентиал**.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 72b07c92456ba8c1b1681b8d00b1dc5d512bc355
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.prod: microsoft-identity-platform
+author: davidmu1
+ms.openlocfilehash: 5cdb9543bed0cecf50428dc3461d4909977325dd
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009204"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37934255"
 ---
 # <a name="passwordcredential-resource-type"></a>Тип ресурса Пассвордкредентиал
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Содержит учетные данные пароля, связанные с приложением или субъектом службы. Свойство **пассвордкредентиалс** объекта [servicePrincipal](serviceprincipal.md) и сущности [приложения](application.md) является коллекцией **пассвордкредентиал**.
+Представляет учетные данные пароля, связанные с приложением или субъектом службы. Свойство **пассвордкредентиалс** [приложения](application.md) и [servicePrincipal](serviceprincipal.md) ентититес — это коллекция объектов **пассвордкредентиал** .
+
+> Note: использование PATCH для обновления Пассвордкредентиалс не поддерживается. Используйте методы Аддпассворд и Ремовепассворд для обновления пароля приложения или servicePrincipal.
+>
+> - Application — [аддпассворд](../api/application-addpassword.md)
+> - Application — [ремовепассворд](../api/application-removepassword.md)
+> - servicePrincipal — [аддпассворд](../api/serviceprincipal-addpassword.md)
+> - servicePrincipal — [ремовепассворд](../api/serviceprincipal-removepassword.md)
 
 
-## <a name="json-representation"></a>Представление JSON
-
-Ниже показано представление JSON ресурса.
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.passwordCredential"
-}-->
-
-```json
-{
-  "customKeyIdentifier": "binary",
-  "endDateTime": "String (timestamp)",
-  "keyId": "guid",
-  "startDateTime": "String (timestamp)",
-  "secretText": "string",
-  "hint": "string"
-}
-
-```
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Кустомкэйидентифиер|Binary|            |
-|endDateTime|DateTimeOffset|Дата и время истечения срока действия пароля. Тип timestamp представляет сведения о дате и времени с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|Него значение KeyID|GUID|            |
-|startDateTime|DateTimeOffset|Дата и время, когда пароль становится действительным. Тип timestamp представляет сведения о дате и времени с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|Секреттекст|String| Пароли должны иметь длину 16-64 символов |
-|сказок|String|  |
+| кустомкэйидентифиер | Binary | Не следует использовать. |
+| displayName | Строка | Понятное имя для пароля. Необязательный элемент. |
+| endDateTime | DateTimeOffset | Дата и время истечения срока действия пароля, представленного в формате ISO 8601, и всегда в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Необязательный элемент. |
+| сказок | Строка | Содержит первые три символа пароля. Только для чтения. |
+| Него значение KeyID | GUID | Уникальный идентификатор пароля. |
+| секреттекст | Строка | Только для чтения; Содержит надежные пароли, созданные Azure AD длиной 16-64 символов. Созданное значение пароля возвращается только во время начального запроса POST в [аддпассворд](../api/application-addpassword.md). В будущем невозможно получить этот пароль. |
+| startDateTime | DateTimeOffset | Дата и время, когда пароль становится действительным. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Необязательный элемент. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -64,3 +49,39 @@ ms.locfileid: "36009204"
   "suppressions": []
 }
 -->
+
+
+## <a name="json-representation"></a>Представление JSON
+
+Ниже указано представление ресурса в формате JSON.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.passwordCredential",
+  "baseType": null
+}-->
+
+```json
+{
+  "customKeyIdentifier": "Binary",
+  "displayName": "String",
+  "endDateTime": "String (timestamp)",
+  "hint": "String",
+  "keyId": "Guid",
+  "secretText": "String",
+  "startDateTime": "String (timestamp)"
+}
+```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "passwordCredential resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса signIn
 doc_type: resourcePageType
-description: Описание ресурса signIn для API Microsoft Graph (REST), который помогает проводить аудит входа пользователей и входа в приложения (бета-версия).
+description: Предоставляет сведения о входе пользователей или входе в приложения в вашем каталоге.
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0a0f3977c14ce8e0e53cdbd296ea28c4b79f5762
-ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
+ms.openlocfilehash: 84bfc5f2a2417cce1ec687d16cbfc041f4c4d248
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "36396746"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37939861"
 ---
 # <a name="signin-resource-type"></a>Тип ресурса signIn
 
@@ -28,36 +28,41 @@ ms.locfileid: "36396746"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|appDisplayName|String|Обозначает имя приложения, отображаемое на портале Azure.|
-|appId|String|Обозначает уникальный идентификатор GUID, представляющий идентификатор приложения в Azure Active Directory.|
-|clientAppUsed|String|Представляет устаревший клиент, использовавшийся для действия входа. Например: браузер, Exchange Active Sync, современные клиенты, IMAP, MAPI, SMTP, POP.|
-|апплиедкондитионалакцессполиЦиес|Коллекция [conditionalAccessPolicy](conditionalaccesspolicy.md)|Предоставляет список политик условного доступа, запускаемых соответствующим действием входа.|
-|conditionalAccessStatus|string| Предоставляет состояние запущенной политики условного доступа. Возможные значения: `success`, `failure`, `notApplied`, `unknownFutureValue`.|
-|originalRequestId|String|Идентификатор первого запроса в последовательности проверки подлинности.|
-|isInteractive|Boolean|Указывает, является ли вход интерактивным.|
-|tokenIssuerName|String|Имя поставщика удостоверений (например, sts.microsoft.com)|
-|tokenIssuerType|String|Представляет тип identityProvider. Возможные значения: `AzureAD`, `ADFederationServices`, `UnknownFutureValue`.|
-|correlationId|String|Обозначает идентификатор, отправленный из клиента при инициации входа. Используется для устранения неполадок с соответствующим действием входа при вызове службы поддержки.|
-|createdDateTime|DateTimeOffset|Предоставляет дату и время инициации входа. Тип Timestamp всегда представлен в формате времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|deviceDetail|[deviceDetail](devicedetail.md)|Предоставляет сведения об устройстве, с которого выполнен вход. Содержит такие сведения, как deviceId, ОС, браузер. |
-|id|String|Указывает уникальный идентификатор, представляющий действие входа.|
-|ipAddress|String|Предоставляет IP-адрес клиента, из которого выполнен вход.|
-|location|[signInLocation](signinlocation.md)|Представляет город, область и 2-буквенный код страны, откуда выполнен вход.|
-|processingTimeInMilliseconds|Int|Предоставляет время обработки запроса (в миллисекундах) в службе маркеров безопасности AD|
-|riskDetail|`riskDetail`|Предоставляет "причину" определенного состояния пользователя с риском, входа или события риска. Возможные значения: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. Значение `none` означает, что действия для пользователя или входа пока не выполнялись. **Примечание.** Сведения для этого свойства доступны только для пользователей Azure AD Premium P2. Для всех остальных пользователей возвращается значение `hidden`.|
-|riskLevelAggregated|`riskLevel`|Предоставляет агрегированный уровень риска. Допустимые значения: `none`, `low`, `medium`, `high`, `hidden` и `unknownFutureValue`. Значение `hidden` означает, что пользователь или вход не разрешены в службе защиты идентификации Azure AD. **Примечание.** Сведения для этого свойства доступны только для пользователей Azure AD Premium P2. Для всех остальных пользователей возвращается значение `hidden`.|
-|riskLevelDuringSignIn|`riskLevel`|Предоставляет уровень риска при входе. Допустимые значения: `none`, `low`, `medium`, `high`, `hidden` и `unknownFutureValue`. Значение `hidden` означает, что пользователь или вход не разрешены в службе защиты идентификации Azure AD. **Примечание.** Сведения для этого свойства доступны только для пользователей Azure AD Premium P2. Для всех остальных пользователей возвращается значение `hidden`.|
-|riskEventTypes|Коллекция `riskEventType`|Предоставляет список типов событий риска, связанных с входом. Допустимые значения: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic` и `unknownFutureValue`.|
-|riskState|`riskState`|Представляет "состояние риска" пользователя с риском, входа или события риска. Возможные значения: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
-|mfaDetail|[mfaDetail](mfadetail.md)|Предоставляет сведения, связанные с многофакторной проверкой подлинности (MFA), например "Требуется MFA", "Состояние MFA", для соответствующего входа.|
-|networkLocationDetails|Коллекция [networkLocationDetail](networklocationdetail.md)|Предоставляет сведения о сетевом расположении.|
-|status|[signInStatus](signinstatus.md)|Представляет состояние входа. Возможные значения: `Success` и `Failure`.|
-|userDisplayName|String|Указывает отображаемое имя пользователя.|
-|userId|String|Указывает userId пользователя.|
-|userPrincipalName|String|Указывает UPN пользователя.|
-|resourceDisplayName|String|Указывает имя ресурса, в который вошел пользователь.|
-|resourceId|String|Указывает идентификатор ресурса, в который вошел пользователь.|
-|authenticationMethodsUsed|String|Указывает список примененных методов проверки подлинности|
+|алтернатесигниннаме|String|Альтернативное удостоверение входа при входе в систему с помощью номера телефона.|
+|appDisplayName|String|Имя приложения отображается на портале Azure.|
+|appId|String|Идентификатор приложения в Azure Active Directory.|
+|апплиедкондитионалакцессполиЦиес|Коллекция [conditionalAccessPolicy](conditionalaccesspolicy.md)|Список политик условного доступа, которые вызываются соответствующими действиями при входе.|
+|аусентикатиондетаилс|Коллекция [аусентикатиондетаил](authenticationdetail.md)|Результат попытки проверки подлинности и дополнительные сведения о методе проверки подлинности.|
+|authenticationMethodsUsed|Коллекция строк|Используемые методы проверки подлинности. Возможные значения: `SMS`, `Authenticator App`, `App Verification code`, `Password`, `FIDO`, `PTA`, или `PHS`.|
+|аусентикатионпроцессингдетаилс|Коллекция [keyValue](keyvalue.md)|Дополнительные сведения об обработке проверки подлинности, такие как имя агента в случае ПТА/ФС или Server/ферма, в случае федеративной проверки подлинности.|
+|clientAppUsed|Строка|Устаревший клиент, используемый для входных действий. Например, браузер, Exchange Active Sync, современные клиенты, IMAP, MAPI, SMTP или POP.|
+|conditionalAccessStatus|string| Состояние политики условного доступа, инициированной. Возможные значения: `success`, `failure`, `notApplied`, или `unknownFutureValue`.|
+|correlationId|String|Идентификатор, который отправляется клиентом при запуске входа. Используется для устранения неполадок с соответствующими действиями при входе в службу поддержки.|
+|createdDateTime|DateTimeOffset|Дата и время инициирования входа. Тип Timestamp всегда представлен в формате времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|deviceDetail|[deviceDetail](devicedetail.md)|Сведения об устройстве, с которого произошел вход. Включает такие сведения, как deviceId, OS и Browser. |
+|id|String|Идентификатор, представляющий действие по входу.|
+|ipAddress|String|IP-адрес клиента, с которого произошел вход.|
+|isInteractive|Boolean|Указывает, является ли вход в систему интерактивным или нет.|
+|location|[signInLocation](signinlocation.md)|Код города, штата и 2 буквенного кода страны, из которого произошла вход.|
+|networkLocationDetails|Коллекция [networkLocationDetail](networklocationdetail.md)|Сведения о сетевом расположении, такие как IP-адрес, расположение входа, тип используемой сети и ее имена. Возможные значения: `Named Netowrk`, `Extranet`, `Intranet`, или `Trusted Network`.|
+|originalRequestId|Строка|Идентификатор запроса первого запроса в последовательности проверки подлинности.|
+|processingTimeInMilliseconds|Int|Время обработки запроса в миллисекундах в службе маркеров безопасности (в миллисекундах).|
+|resourceDisplayName|Строка|Имя ресурса, в который пользователь выполнил вход.|
+|resourceId|String|Идентификатор ресурса, в который пользователь выполнил вход.|
+|riskDetail|`riskDetail`|Причина определенного состояния опасного пользователя, входа в систему или события риска. Возможные значения: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset` `adminConfirmedSigninSafe`,, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser` `adminConfirmedSigninCompromised`, или `unknownFutureValue`. Значение `none` означает, что действия для пользователя или входа пока не выполнялись. **Примечание.** Сведения для этого свойства доступны только для пользователей Azure AD Premium P2. Возвращаются `hidden`все остальные клиенты.|
+|riskEventTypes|Коллекция `riskEventType`|Список типов событий риска, связанных с входом. Возможные значения: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures` `malwareInfectedIPAddress`,, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence` `generic`, или `unknownFutureValue`.|
+|riskLevelAggregated|`riskLevel`|Сводный уровень риска. Возможные значения: `none`, `low`, `medium`, `high`, `hidden`, или `unknownFutureValue`. Значение `hidden` означает, что пользователь или вход не разрешены в службе защиты идентификации Azure AD. **Примечание.** Сведения для этого свойства доступны только для пользователей Azure AD Premium P2. Возвращаются `hidden`все остальные клиенты.|
+|riskLevelDuringSignIn|`riskLevel`|Уровень риска во время входа. Возможные значения: `none`, `low`, `medium`, `high`, `hidden`, или `unknownFutureValue`. Значение `hidden` означает, что пользователь или вход не разрешены в службе защиты идентификации Azure AD. **Примечание.** Сведения для этого свойства доступны только для пользователей Azure AD Premium P2. Возвращаются `hidden`все остальные клиенты.|
+|riskState|`riskState`|Состояние риска рискованного пользователя, входа в систему или события риска. Возможные значения: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, или `unknownFutureValue`.|
+|сервицепринЦипалид|String|Идентификатор приложения, используемый для входа в систему. Это поле заполняется при входе с использованием приложения.|
+|servicePrincipalName|Строка|Имя приложения, используемое для входа в систему. Это поле заполняется при входе с использованием приложения.|
+|status|[signInStatus](signinstatus.md)|Состояние входа. Возможные значения: `Success` или `Failure`.|
+|tokenIssuerName|Строка|Имя поставщика удостоверений. Например, `sts.microsoft.com`.|
+|tokenIssuerType|String|Тип поставщика удостоверений. Возможные значения: `AzureAD`, `ADFederationServices`, или `UnknownFutureValue`.|
+|userAgent|Строка|Сведения о агенте пользователя, связанные с входом.|
+|userDisplayName|Строка|Отображаемое имя пользователя.|
+|userId|String|Идентификатор пользователя.|
+|userPrincipalName|Строка|Имя участника-пользователя.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -77,38 +82,43 @@ ms.locfileid: "36396746"
 
 ```json
 {
-  "id": "String (identifier)",
-  "createdDateTime": "String (timestamp)",
-  "userDisplayName": "String",
-  "userPrincipalName": "String",
-  "userId": "String",
+  "alternateSignInName": "String",
   "appDisplayName": "String",
   "appId": "String",
-  "ipAddress": "String",
-  "clientAppUsed": "String",
-  "mfaDetail": {"@odata.type": "microsoft.graph.mfaDetail"},
-  "correlationId": "String",
-  "conditionalAccessStatus": "string",
   "appliedConditionalAccessPolicies": [{"@odata.type": "microsoft.graph.appliedConditionalAccessPolicy"}],
-  "originalRequestId": "String",
-  "isInteractive": "String",
-  "tokenIssuerName": "String",
-  "tokenIssuerType": "String",
+  "authenticationDetails": [{"@odata.type": "microsoft.graph.authenticationDetail"}],
+  "authenticationMethodsUsed": ["String"],
+  "authenticationProcessingDetails": [{"@odata.type": "microsoft.graph.keyValue"}],
+  "clientAppUsed": "String",
+  "conditionalAccessStatus": "string",
+  "correlationId": "String",
+  "createdDateTime": "String (timestamp)",
   "deviceDetail": {"@odata.type": "microsoft.graph.deviceDetail"},
+  "id": "String (identifier)",
+  "ipAddress": "String",
+  "isInteractive": true,
   "location": {"@odata.type": "microsoft.graph.signInLocation"},
+  "mfaDetail": {"@odata.type": "microsoft.graph.mfaDetail"},
+  "networkLocationDetails": [{"@odata.type": "microsoft.graph.networkLocationDetail"}],
+  "originalRequestId": "String",
+  "processingTimeInMilliseconds": 1024,
+  "resourceDisplayName": "String",
+  "resourceId": "String",
   "riskDetail": "string",
+  "riskEventTypes": ["string"],
   "riskLevelAggregated": "string",
   "riskLevelDuringSignIn": "string",
   "riskState": "string",
-  "riskEventTypes": ["String"],
-  "resourceDisplayName": "string",
-  "resourceId": "string",
-  "authenticationMethodsUsed": "string",
+  "servicePrincipalId": "String",
+  "servicePrincipalName": "String",
   "status": {"@odata.type": "microsoft.graph.signInStatus"},
-  "processingTimeInMilliseconds": 12356,
-  "networkLocationDetails": [{"@odata.type": "microsoft.graph.networkLocationDetail"}]
+  "tokenIssuerName": "String",
+  "tokenIssuerType": "string",
+  "userAgent": "String",
+  "userDisplayName": "String",
+  "userId": "String",
+  "userPrincipalName": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

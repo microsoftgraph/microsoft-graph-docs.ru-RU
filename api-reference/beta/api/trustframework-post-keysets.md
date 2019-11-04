@@ -5,12 +5,12 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9b6cd03a38e4e115befacb13909d1ba0040b3aff
-ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
+ms.openlocfilehash: fc55eb8f469a0abd4576ffc152d997fe293ad3ed
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37734693"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37938319"
 ---
 # <a name="create-trustframeworkkeyset"></a>Создание Трустфрамеворккэйсет
 
@@ -54,11 +54,13 @@ POST /trustFramework/keySets
 ## <a name="examples"></a>Примеры
 
 ### <a name="example-1-create-an-empty-keyset"></a>Пример 1: создание пустого набора ключей
-Этот шаблон используется для создания набора ключей енпти и последующего создания ключа, отправки в него секрета вручную, а также для большинства сценариев достаточно загрузить сертификат или ключ PKCS12. 
+Это одна из наиболее эффективных операций. Сначала необходимо создать пустой набор ключей. Затем в новом наборе ключей можно создать ключ, отправить секрет вручную и отправить сертификат или ключ PKCS12. 
 
 #### <a name="request"></a>Запрос
 
 Ниже показан пример запроса.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_trustframeworkkeyset_from_trustframework1"
@@ -72,6 +74,20 @@ Content-type: application/json
   "id": "keyset1"  
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-trustframeworkkeyset-from-trustframework-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-trustframeworkkeyset-from-trustframework-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-trustframeworkkeyset-from-trustframework-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 

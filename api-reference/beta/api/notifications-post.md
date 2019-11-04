@@ -1,28 +1,35 @@
 ---
 title: Создание и отправление уведомления
-description: 'Создание и отправка уведомления, предназначенного для пользователя с помощью Microsoft Graph. Уведомление хранится в хранилище каналов уведомлений Microsoft Graph и отправляется всем клиентам приложений во всех конечных точках устройств, в которых пользователь вошел в систему.  '
+description: Создание и отправка уведомления, предназначенного для пользователя с помощью Microsoft Graph.
 localization_priority: Normal
-ms.prod: project-rome
+ms.prod: notifications
 doc_type: apiPageType
-author: ''
-ms.openlocfilehash: a5ed743e93a5cafcb7ee919acbbcee5f2734a5de
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+author: merzink
+ms.openlocfilehash: 6062153c1eaff68a19cd5b27ac10efa9bacafb93
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35992649"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37937926"
 ---
 # <a name="create-and-send-a-notification"></a>Создание и отправление уведомления
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Создание и отправка уведомления, предназначенного для пользователя с помощью Microsoft Graph. Уведомление хранится в хранилище каналов уведомлений Microsoft Graph и отправляется всем клиентам приложений во всех конечных точках устройств, в которых пользователь вошел в систему.  
-## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+## <a name="permissions"></a>Permissions
+Служба приложения не требует дополнительных разрешений для отправки уведомлений целевому пользователю.  
+
+> [!IMPORTANT]
+> Если вы решите отправлять уведомления от имени пользователя через делегированные разрешения, то для вызова этого API требуется одно из следующих разрешений. Мы не рекомендуем использовать этот параметр для создания уведомлений. Если вы хотите узнать больше, в том числе как выбирать разрешения, ознакомьтесь с разделом [разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Notifications.ReadWrite.CreatedByApp    |
 |Делегированные (личная учетная запись Майкрософт) | Notifications.ReadWrite.CreatedByApp    |
+|Для приложений | Не поддерживается.|
+
+
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -34,14 +41,18 @@ POST /me/notifications/
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя | Тип | Описание|
 |:----|:-----|:-----------|
-|Authorization | string |Заголовок Authorization используется для передачи учетных данных вызывающей стороны. Bearer {Token}. Обязательно. |
-## <a name="request-body"></a>Основной текст запросов
+|Authorization | string |Заголовок Authorization используется для передачи учетных данных вызывающей стороны. Bearer {Token}. Обязательный элемент. |
+|X – УНС — ID | string |Усернотификатионсубскриптионид, возвращенный службой уведомлений Microsoft Graph после создания подписки, и используется для назначения определенного пользователя. Обязательный параметр. |
+|Content-Type | апплиатион/JSON. Обязательный элемент.|
+
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [уведомления](../resources/projectrome-notification.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика, указывающий, что уведомление было успешно создано и сохранено. 
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика, указывающий, что уведомление было успешно создано и сохранено. В дальнейшем уведомление будет развертывание которого выполняется на все указанные конечные точки с действующей подпиской. 
+
 ## <a name="example"></a>Пример
-#### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 ```http
@@ -51,7 +62,7 @@ Content-type: application/json
 {
     "targetHostName": "graphnotifications.sample.windows.com",
     "appNotificationId": "testDirectToastNotification",
-    "expirationDateTime": "2018-08-29T23:51:33.000Z",
+    "expirationDateTime": "2019-10-30T23:59:00.000Z",
     "payload": {
         "visualContent": {
             "title": "Hello World!",
@@ -60,32 +71,35 @@ Content-type: application/json
     },
     "targetPolicy": {
         "platformTypes": [
-        "windows",
-        "android"
+    "windows",
+    "ios",
+    "android"
         ]
     },
     "priority": "High",
     "groupName": "TestGroup",
-    "displayTimeToLive": "23"
+    "displayTimeToLive": "60"
 }
 ```
 
-#### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+### <a name="response"></a>Отклик
+Ниже приведен пример соответствующего ответа.
 
 ```http
 HTTP/1.1 201
-Content-Type: application/json
-location: https://graph.microsoft.com/beta/me/notifications/518c4fb1-c565-4d67-95c4-bcc3eb8eda1b
+client-request-id: 71e62feb-8d72-4912-8b2c-4cee9d89e781
+content-length: 356
+content-type: application/json
+location: https://graph.microsoft.com/beta/me/activities/119081f2-f19d-4fa8-817c-7e01092c0f7d
+request-id: 71e62feb-8d72-4912-8b2c-4cee9d89e781
 
 {
-    "@odata.context": "https://graph.microsoft.com/test872018/$metadata#users('graphNotificationsUser%40contoso.com')/notifications/$entity",
-    "appNotificationId": "testDirectToastNotification",
-    "displayTimeToLive": 23,
-    "expirationDateTime": "2018-08-24T12:31:53.858Z",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('graphnotify%40contoso.com')/notifications/$entity",
+    "displayTimeToLive": 59,
+    "expirationDateTime": "2019-10-28T22:05:36.25Z",
     "groupName": "TestGroup",
-    "id": "cd5c5e6a-99ce-470a-9982-c47635e73620",
-    "priority": "1",
+    "id": "119081f2-f19d-4fa8-817c-7e01092c0f7d",
+    "priority": "High",
     "payload": {
         "visualContent": {
             "title": "Hello World!",
@@ -94,5 +108,3 @@ location: https://graph.microsoft.com/beta/me/notifications/518c4fb1-c565-4d67-9
     }
 }
 ```
-
-

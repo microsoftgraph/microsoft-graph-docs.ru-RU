@@ -5,18 +5,18 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: fd1f2c6689176422fa35a500224c6f2a5f277851
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 71070d07e17c1662523e0930b4bff4d2944b0649
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36634053"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37937184"
 ---
 # <a name="add-conversationmember"></a>Добавление Конверсатионмембер
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавление [конверсатионмембер](../resources/conversationmember.md) к каналу [](../resources/channel.md).
+Добавление [конверсатионмембер](../resources/conversationmember.md) к [каналу](../resources/channel.md).
 
 > [!NOTE]
 >Эта операция поддерживается только для каналов с [чаннелмембершиптипе](../resources/enums.md#channelmembershiptype-values) `private`. Вызовы с любыми другими [чаннелмембершиптипе](../resources/enums.md#channelmembershiptype-values) будут возвращать ответ о неправильном запросе 400.
@@ -34,7 +34,7 @@ ms.locfileid: "36634053"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored"} -->
 ```http
-POST /teams/{id}/channels/{id}/members/{id}
+POST /teams/{id}/channels/{id}/members
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -49,12 +49,12 @@ POST /teams/{id}/channels/{id}/members/{id}
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|roles|string collection|Роли для этого пользователя.|
+|roles|Коллекция строк|Роли этого пользователя.|
 |user|[user](../resources/user.md)|Пользователь, добавляемый в канал.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [конверсатионмембер](../resources/conversationmember.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `201 Created` и объект [conversationMember](../resources/conversationmember.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -86,7 +86,7 @@ content-length: 26
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-conversation-member-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-conversation-member-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
