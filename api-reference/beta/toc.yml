@@ -309,20 +309,28 @@
                   href: api/user-post-manager.md
             - name: Параметры Outlook
               items:
-                - name: Пользователь Outlook
-                  href: resources/outlookuser.md
-                - name: Получение настроек языков
-                  href: api/outlookuser-supportedlanguages.md
-                - name: Получение настроек часовых поясов
-                  href: api/outlookuser-supportedtimezones.md
-                - name: Получение параметров почтового ящика
-                  href: api/user-get-mailboxsettings.md
-                - name: Обновление параметров почтового ящика
-                  href: api/user-update-mailboxsettings.md
-                - name: Перечисление категорий
-                  href: api/outlookuser-list-mastercategories.md
-                - name: Создание категории
-                  href: api/outlookuser-post-mastercategories.md
+                - name: Параметры почтового ящика
+                  expanded: true
+                  items:
+                    - name: Параметры почтового ящика
+                      href: resources/mailboxsettings.md
+                    - name: Получение параметров почтового ящика
+                      href: api/user-get-mailboxsettings.md
+                    - name: Обновление параметров почтового ящика
+                      href: api/user-update-mailboxsettings.md
+                - name: Службы пользователей Outlook
+                  expanded: true
+                  items:
+                    - name: Пользователь Outlook
+                      href: resources/outlookuser.md
+                    - name: Получение настроек языков
+                      href: api/outlookuser-supportedlanguages.md
+                    - name: Получение настроек часовых поясов
+                      href: api/outlookuser-supportedtimezones.md
+                    - name: Перечисление категорий
+                      href: api/outlookuser-list-mastercategories.md
+                    - name: Создание категории
+                      href: api/outlookuser-post-mastercategories.md
                 - name: Преобразование идентификаторов
                   href: api/user-translateexchangeids.md
             - name: Задачи Outlook
@@ -2491,7 +2499,7 @@
                 - name: Состояние расширенной защиты от угроз регистрируемого устройства
                   href: resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate-get.md
@@ -2585,7 +2593,7 @@
                 - name: Общая конфигурация устройств для владельца устройства с Android
                   href: resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-get.md
@@ -3650,7 +3658,7 @@
                   items:
                     - name: Получение
                       href: api/intune-grouppolicy-grouppolicydefinition-get.md
-                    - name: Обновление
+                    - name: Update
                       href: api/intune-grouppolicy-grouppolicydefinition-update.md
                 - name: Тип класса определение политики группы
                   href: resources/intune-grouppolicy-grouppolicydefinitionclasstype.md
@@ -3855,7 +3863,7 @@
                 - name: Длинное десятичное значение представления групповой политики
                   href: resources/intune-grouppolicy-grouppolicypresentationvaluelongdecimal.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-grouppolicy-grouppolicypresentationvaluelongdecimal-list.md
                     - name: Получение
                       href: api/intune-grouppolicy-grouppolicypresentationvaluelongdecimal-get.md
@@ -3868,7 +3876,7 @@
                 - name: Многозначное тестовое значение представления групповой политики
                   href: resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-grouppolicy-grouppolicypresentationvaluemultitext-list.md
                     - name: Получение
                       href: api/intune-grouppolicy-grouppolicypresentationvaluemultitext-get.md
@@ -4028,7 +4036,7 @@
                 - name: Общая конфигурация устройства с iOS
                   href: resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-deviceconfig-iosgeneraldeviceconfiguration-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-iosgeneraldeviceconfiguration-get.md
@@ -4085,7 +4093,7 @@
                 - name: Профиль сертификатов SCEP для iOS
                   href: resources/intune-deviceconfig-iosscepcertificateprofile.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-deviceconfig-iosscepcertificateprofile-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-iosscepcertificateprofile-get.md
@@ -5346,7 +5354,7 @@
                 - name: Конфигурация Wi-Fi для Windows
                   href: resources/intune-deviceconfig-windowswificonfiguration.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-deviceconfig-windowswificonfiguration-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-windowswificonfiguration-get.md
@@ -5359,7 +5367,7 @@
                 - name: Конфигурация корпоративного типа EAP для Wi-Fi в Windows
                   href: resources/intune-deviceconfig-windowswifienterpriseeapconfiguration.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-windowswifienterpriseeapconfiguration-get.md
@@ -8136,7 +8144,7 @@
                 - name: Программа
                   href: resources/program.md
                   items:
-                    - name: Создание
+                    - name: Создать
                       href: api/program-create.md
                     - name: Удаление
                       href: api/program-delete.md
@@ -9019,7 +9027,7 @@
             - name: Потоки пользователей
               href: resources/identityuserflow.md
               items:
-                - name: Список
+                - name: Перечисление
                   href: api/identityuserflow-list.md
                 - name: Создание
                   href: api/identityuserflow-post-userflows.md
@@ -9210,7 +9218,7 @@
                   href: api/onenote-post-notebooks.md
                 - name: Вывод списка разделов
                   href: api/onenote-list-sections.md
-                - name: Список групп разделов
+                - name: Вывод списка групп разделов
                   href: api/onenote-list-sectiongroups.md
                 - name: Вывод списка страниц
                   href: api/onenote-list-pages.md
@@ -9915,6 +9923,110 @@
                   href: api/profile-post-websites.md
                 - name: Список веб-сайтов
                   href: api/profile-list-websites.md
+                - name: Сведения об учетной записи
+                  href: resources/useraccountinformation.md
+                  items:
+                    - name: Получение
+                      href: api/useraccountinformation-get.md
+                - name: Годовщина
+                  href: resources/personanniversary.md
+                  items:
+                    - name: Получение
+                      href: api/personanniversary-get.md
+                    - name: Обновление
+                      href: api/personanniversary-update.md
+                    - name: Delete
+                      href: api/personanniversary-delete.md
+                - name: Образовательные действия
+                  href: resources/educationalactivity.md
+                  items:
+                    - name: Получение
+                      href: api/educationalactivity-get.md
+                    - name: Обновление
+                      href: api/educationalactivity-update.md
+                    - name: Delete
+                      href: api/educationalactivity-delete.md
+                - name: Адрес электронной почты
+                  href: resources/itememail.md
+                  items:
+                    - name: Получение
+                      href: api/itememail-get.md
+                    - name: Обновление
+                      href: api/itememail-update.md
+                    - name: Delete
+                      href: api/itememail-delete.md
+                - name: Увлечения
+                  href: resources/personinterest.md
+                  items:
+                    - name: Получение
+                      href: api/personinterest-get.md
+                    - name: Обновление
+                      href: api/personinterest-update.md
+                    - name: Delete
+                      href: api/personinterest-delete.md
+                - name: Языки
+                  href: resources/languageproficiency.md
+                  items:
+                    - name: Получение
+                      href: api/languageproficiency-get.md
+                    - name: Обновление
+                      href: api/languageproficiency-update.md
+                    - name: Delete
+                      href: api/languageproficiency-delete.md
+                - name: Мобильных
+                  href: resources/itemphone.md
+                  items:
+                    - name: Получение
+                      href: api/itemphone-get.md
+                    - name: Обновление
+                      href: api/itemphone-update.md
+                    - name: Delete
+                      href: api/itemphone-delete.md
+                - name: Positions
+                  href: resources/workposition.md
+                  items:
+                    - name: Получение
+                      href: api/workposition-get.md
+                    - name: Обновление
+                      href: api/workposition-update.md
+                    - name: Delete
+                      href: api/workposition-delete.md
+                - name: Projects
+                  href: resources/projectparticipation.md
+                  items:
+                    - name: Получение
+                      href: api/projectparticipation-get.md
+                    - name: Обновление
+                      href: api/projectparticipation-update.md
+                    - name: Delete
+                      href: api/projectparticipation-delete.md
+                - name: Skill
+                  href: resources/skillproficiency.md
+                  items:
+                    - name: Получение
+                      href: api/skillproficiency-get.md
+                    - name: Обновление
+                      href: api/skillproficiency-update.md
+                    - name: Delete
+                      href: api/skillproficiency-delete.md
+                - name: Учетные записи веб-сайта
+                  href: resources/webaccount.md
+                  items:
+                    - name: Получение
+                      href: api/webaccount-get.md
+                    - name: Обновление
+                      href: api/webaccount-update.md
+                    - name: Delete
+                      href: api/webaccount-delete.md
+                - name: Веб-сайты
+                  href: resources/personwebsite.md
+                  items:
+                    - name: Получение
+                      href: api/personwebsite-get.md
+                    - name: Обновление
+                      href: api/personwebsite-update.md
+                    - name: Delete
+                      href: api/personwebsite-delete.md
         - name: Задачи и планы
           displayName: Planner
           items:
@@ -10331,9 +10443,9 @@
             - name: Группа задач Outlook
               href: resources/outlooktaskgroup.md
               items:
-                - name: Перечисление
+                - name: Список
                   href: api/outlookuser-list-taskgroups.md
-                - name: Создание
+                - name: Create
                   href: api/outlookuser-post-taskgroups.md
                 - name: Получение
                   href: api/outlooktaskgroup-get.md

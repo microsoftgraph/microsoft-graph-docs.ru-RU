@@ -138,9 +138,12 @@ items:
       - name: Финансовые показатели (предварительная версия)
         href: dynamics-business-central-concept-overview.md
         displayname: 'Dynamics, Dynamics 365 Business Central'
-      - name: Удостоверения и доступ
+      - name: Удостоверение и доступ
         href: azuread-identity-access-management-concept-overview.md
-        displayName: 'Azure AD, Microsoft identity platform'
+        displaName: 'Azure AD, Microsoft identity platform'
+        items:
+          - name: Защита информации
+            href: information-protection-overview.md
       - name: Почта
         displayName: 'Outlook, Outlook mail'
         items:
@@ -225,6 +228,26 @@ items:
             href: outlook-immutable-id.md
       - name: Отчеты
         href: reportroot-concept-overview.md
+      - name: Поиск (предварительный просмотр)
+        items:
+          - name: Обзор
+            href: search-concept-overview.md
+          - name: Запрос
+            items:
+              - name: Поиск сообщений
+                href: search-concept-messages.md
+              - name: Поиск событий
+                href: search-concept-events.md
+              - name: Поиск файлов
+                href: search-concept-files.md
+              - name: Соединители поиска
+                href: search-concept-custom-types.md
+          - name: Индекс
+            items:
+              - name: Управление подключениями
+                href: search-index-manage-connections.md
+              - name: Управление элементами
+                href: search-index-manage-items.md
       - name: Безопасность
         items:
           - name: Обзор
@@ -240,7 +263,7 @@ items:
       - name: Сайты и списки
         href: sharepoint-concept-overview.md
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
-      - name: Социальная и рабочая аналитика
+      - name: Люди и рабочая аналитика
         items:
           - name: Обзор
             href: social-intel-concept-overview.md
