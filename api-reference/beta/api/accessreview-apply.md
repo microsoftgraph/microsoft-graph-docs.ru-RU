@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 58aa6af3fe651b77ad37c58efb8fbf7137594c60
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: b58e803a9d3d6140786a7fdf03039f9f6b5d13c3
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409009"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37968876"
 ---
 # <a name="apply-accessreview"></a>Применение Акцессревиев
 
@@ -33,7 +33,7 @@ ms.locfileid: "36409009"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | Акцессревиев. ReadWrite. Membership, Акцессревиев. ReadWrite. ALL |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Акцессревиев. ReadWrite. Membership |
+|Для приложений                            | AccessReview.ReadWrite.Membership |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ POST /accessReviews/{reviewId}/applyDecisions
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 
@@ -54,7 +54,7 @@ POST /accessReviews/{reviewId}/applyDecisions
 
 ## <a name="see-also"></a>См. также
 
-- [Как выполнить проверку доступа](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-complete-access-review)
+- [Как выполнить проверку доступа](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-complete-access-review)
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -75,7 +75,7 @@ POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F0
 [!INCLUDE [sample-code](../includes/snippets/javascript/apply-accessreview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/apply-accessreview-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

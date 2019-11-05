@@ -5,22 +5,22 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e99b1c20ce4666c945016190b7952b67b5c47fdb
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+ms.openlocfilehash: f8c8e56601d5e2feef4c14e4000a7eb1529565df
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36838779"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37968995"
 ---
 # <a name="create-call"></a>Создание звонка
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание [звонка](../resources/call.md) позволяет интерфейсу Bot создать новый исходящий вызов или присоединиться к существующему собранию. Вам потребуется [зарегистрировать запрашивающий абонент](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) и просмотреть список необходимых разрешений, как описано ниже.
+Создание [звонка](../resources/call.md) позволяет интерфейсу Bot создать новый исходящий вызов или присоединиться к существующему собранию. Вам потребуется [зарегистрировать запрашивающий абонент](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) и просмотреть список необходимых разрешений, как описано ниже.
 
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                             |
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
@@ -41,7 +41,7 @@ POST /app/calls
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [Call](../resources/call.md) в формате JSON.
 
 > **Примечание:** Свойства, отмеченные как `Server generated` , игнорируются при обработке. `POST` `app/calls`
@@ -100,7 +100,7 @@ Authorization: Bearer <Token>
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-call-from-application-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-call-from-application-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -365,7 +365,7 @@ Authorization: Bearer <Token>
   }
 }
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 
 ```http
 HTTP/1.1 201 Created

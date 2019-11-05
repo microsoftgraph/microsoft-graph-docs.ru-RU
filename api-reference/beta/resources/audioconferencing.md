@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса АудиоконференЦинг
-description: Представляет сведения о доступе к телефонии для Онлинемитинг.
+description: Представляет сведения о доступе к телефонной линии для собрания по сети.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 94dc02920e7270fbfdacb10ee9a8edee8315fc67
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c392eb82be9e0f8c30353f18b393589b51649a3e
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974285"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969216"
 ---
 # <a name="audioconferencing-resource-type"></a>Тип ресурса АудиоконференЦинг
 
@@ -22,11 +22,10 @@ ms.locfileid: "35974285"
 
 | Свойство            | Тип    | Описание                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
-| Диалинурл           | String  | URL-адрес веб-страницы, которая содержит сведения о телефонном доступе. |
-| Леадерпасскоде      | String  | Пароль заполнения, необходимый для подключения к поставщику конференции с аудио-и видеоконференциями.      |
-| ПартиЦипантпасскоде | String  | Пароль участника, необходимый для подключения к поставщику конференции с аудио-и видеоконференциями. |
-| Толлфринумбер      | String  | Бесплатный номер для подключения к поставщику конференции с аудио.              |
-| Толлнумбер          | String  | Платный номер для подключения к поставщику конференции с аудио-и видеоконференциями.                   |
+| диалинурл           | String  | URL-адрес веб-страницы, которая содержит сведения о телефонном доступе. |
+| конференцеид        | String  | Идентификатор конференции онлайн-собрания.      |
+| толлфринумбер      | String  | Бесплатный номер, который подключается к поставщику конференции с аудио.              |
+| толлнумбер          | String  | Платный номер, который подключается к поставщику конференции с аудио-и видеоконференциями.                   |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -42,8 +41,7 @@ ms.locfileid: "35974285"
 ```json
 {
   "dialinUrl": "String",
-  "leaderPasscode": "String",
-  "participantPasscode": "String",
+  "ConferenceId": "String",
   "tollFreeNumber": "String",
   "tollNumber": "String"
 }

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 541173547ba8222ca5b64cb3396e972be5b017fc
-ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
+ms.openlocfilehash: 116efc7583b0344cc1845f698210f760e3843d9b
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "37719465"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37968925"
 ---
 # <a name="attachment-createuploadsession"></a>вложение: createUploadSession
 
@@ -32,7 +32,7 @@ ms.locfileid: "37719465"
 В этом примере показано, как [прикрепить большие файлы к сообщениям Outlook](/graph/outlook-large-attachments) .
 
 > [!TIP]
-> Exchange Online позволяет администраторам настраивать ограничения на размер сообщений для почтовых ящиков Office 365, включая вложения в сообщения. По умолчанию это максимальный размер сообщения 35 МБ. Узнайте [, как настроить максимальный размер сообщения](https://www.microsoft.com/en-us/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb) для поддержки вложений, превышающих ограничение по умолчанию для клиента. 
+> Exchange Online позволяет администраторам настраивать ограничения на размер сообщений для почтовых ящиков Office 365, включая вложения в сообщения. По умолчанию это максимальный размер сообщения 35 МБ. Узнайте [, как настроить максимальный размер сообщения](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb) для поддержки вложений, превышающих ограничение по умолчанию для клиента. 
 
 ## <a name="permissions"></a>Разрешения
 
@@ -75,7 +75,7 @@ POST /me/messages/{id}/attachments/createUploadSession
 >
 >Свойство **адрес uploadurl** , возвращаемое как часть объекта Response **uploadSession** , является непрозрачным URL- `PUT` адресом для последующих запросов на отправку диапазонов байтов файла. Он содержит соответствующий маркер проверки подлинности `PUT` для последующих запросов, срок действия которых истечет через **expirationDateTime**. Не настраивайте этот URL-адрес.
 >
->Свойство **nextExpectedRanges** указывает местоположение байта следующего файла, из которого необходимо выполнить загрузку, например `"NextExpectedRanges":["2097152"]`. Необходимо отправлять байты в файле по порядку.
+>Свойство **nextExpectedRanges** указывает местоположение байта следующего файла, из которого необходимо выполнить загрузку, например `"NextExpectedRanges":["2097152"]`. Байты файла необходимо отправлять по порядку.
 
 <!-- The **nextExpectedRanges** property specifies one or more ranges of bytes that the server is still missing for the file. These ranges are zero-indexed and of the format `{start}-{end}`, unless if the server misses the remainder of the bytes from the start of that range, in which case the format is simply `{start}`.  -->
 

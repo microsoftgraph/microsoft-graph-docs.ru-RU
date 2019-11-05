@@ -3,53 +3,61 @@ title: Тип ресурса Онлинемитинг
 description: Сбор сведений о собрании, в том числе URL-адреса присоединения, списка участников и описания.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: microsoft-cloud communications
 doc_type: resourcePageType
-ms.openlocfilehash: 611731673d932d6c5135c0115d735e4d642b1bfe
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 5cc62c4caa564aa071ffc6b206d5494814b0cb53
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792795"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969803"
 ---
 # <a name="onlinemeeting-resource-type"></a>Тип ресурса Онлинемитинг
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Сбор сведений о собрании, в том числе URL-адреса присоединения, списка участников и описания.
+Содержит сведения о собрании, включая URL-адрес присоединения, список участников и описание.
 
 ## <a name="methods"></a>Методы
 
 | Метод         | Возвращаемый тип | Описание |
 |:---------------|:--------|:----------|
-| [Получение Онлинемитинг](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Чтение свойств и связей объекта Онлинемитинг. |
+| [Создание Онлинемитинг](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Создайте собрание по сети. |
+| [Получение Онлинемитинг](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Чтение свойств и связей объекта **онлинемитинг** . |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                  | Тип                                                   | Описание                                                                                                                |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| accessLevel               | String.                                                 | Уровень доступа, который управляет допуском собрания по сети. Возможные значения: `everyone`, `invited`, `locked`, `sameEnterprise`, `unknown`. |
-| аудиоконференЦинг         | [аудиоконференЦинг](audioconferencing.md)              | Представляет сведения о доступе к телефонии для Онлинемитинг. |
-| канцеледдатетиме          | DateTime.                                               | Время, когда собрание было отменено. |
-| chatInfo                  | [chatInfo](chatinfo.md)                                | Чат, связанный с этим собранием. |
-| креатиондатетиме          | DateTime.                                               | Время создания собрания. Только для чтения.
-| endDateTime               | DateTime.                                               | Время окончания собрания. |
-| ентрекситаннаунцемент     | Boolean.                                                | Состояние объявления о присутствии для собрания по сети. Если объявления о присутствии включены, собрание по сети будет объявлять об именах участников, которые присоединяются к собранию с помощью звука. |
-| expirationDateTime        | DateTime.                                               | Дата и время, по истечении которого собрание по сети может быть удалено в формате UTC. День и время должны находиться в пределах одного года до и десяти лет после текущей даты и времени на сервере. |
-| id                        | Строка                                                 | Идентификатор, связанный с собранием по сети. Используется в запросе GET HTTP в качестве идентификатора. Только для чтения. Создается сервером. |
-| isCancelled               | Boolean                                                | Указывает, было ли собрание отменено. |
-| жоинурл                   | String.                                                 | URL-адрес, используемый при присоединении собрания по сети из Интернета. |
-| митингтипе               | String.                                                 | Возможные `meetNow`значения:, `scheduled`, `recurring`, `broadcast` (Примечание: [CREATE онлинемитинг](../api/application-post-onlinemeetings.md) поддерживает `meetNow`только). |
+| аутоадмиттедусерс         | String                                                 | Параметр, указывающий тип участников, которые будут автоматически разрешены в собрании по сети. Только для чтения. `everyone`Возможные значения: `everyoneInSameAndFederatedCompany`,, `everyoneInCompany`,, `invitedUsersInCompany``organizer`|
+| аудиоконференЦинг         | [аудиоконференЦинг](audioconferencing.md)              | Сведения о телефонном доступе (телефонное подключение) для собрания по сети. Только для чтения. |
+| канцеледдатетиме          | DateTime                                               | Время в формате UTC, когда собрание было отменено. Только для чтения. |
+| chatInfo                  | [chatInfo](chatinfo.md)                                | Сведения о чате, связанные с этим собранием по сети. |
+| креатиондатетиме          | DateTime                                               | Время создания собрания в формате UTC. Только для чтения. |
+| startDateTime             | DateTime                                               | Время начала собрания в формате UTC. |
+| endDateTime               | DateTime                                               | Время окончания собрания в формате UTC. |
+| id                        | Строка                                                 | ИДЕНТИФИКАТОР по умолчанию, связанный с собранием по сети. Только для чтения. |
+| Отменено                | Логический                                                | Указывает, было ли собрание отменено. Только для чтения. |
+| жоинурл                   | String                                                 | URL-адрес присоединения к собранию по сети. Только для чтения.|
+| Передача               | Логический                                                | Флаг, определяющий, является ли собрание широковещательным. |
 | participants              | [митингпартиЦипантс](meetingparticipants.md)          | Участники, связанные с собранием по сети.  Сюда входят Организатор и участники. |
-| startDateTime             | DateTime.                                               | Время начала собрания. |
 | subject                   | String                                                 | Тема собрания по сети. |
-| capabilities              | Коллекция строк                                      | Список возможностей собрания. Возможные значения: `questionAndAnswer`. |
-| видеотелеконференцеид     | String.                                                 | Идентификатор видеоконференций для видеоконференций. |
+| capabilities              | Коллекция String                                      | Список возможностей собрания. Возможные значения: `questionAndAnswer`. |
+| видеотелеконференцеид     | String                                                 | Идентификатор телеконференций видеио. Только для чтения. |
 
-## <a name="relationships"></a>Отношения
-Нет
+### <a name="autoadmittedusers-values"></a>значения Аутоадмиттедусерс
+| Значение | Описание  |
+| :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
+| organizer | Только организатор собрания додается непосредственно.  Все остальные ожидают, пока организатор не выйдет в "зале ожидания".  |
+| инвитедусерсинкомпани | Организатор собрания и пользователи в той же компании, приглашенные организатором, напрямую присоединяются к собранию.  Все остальные ожидают, пока не станет допущен.  |
+| еверйонеинкомпани | Все пользователи в той же организации, что и организатор, напрямую присоединяются к собранию. Федеративные анонимные пользователи ожидают, пока не допустить ожидания.  |
+| еверйонеинсамеандфедератедкомпани |  Все пользователи в той же организации, что и организатор и Федеративные компании, присоединяются к собранию напрямую.  Анонимные пользователи ждут ожидания в зале ожидания.  |
+| просматривающи | Разрешен любой пользователь. Все пользователи (включая анонимных пользователей) могут присоединяться к собранию напрямую, не дожидаясь ожидания в "зале ожидания".  |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="relationships"></a>Связи
+Отсутствуют.
+
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -62,18 +70,16 @@ ms.locfileid: "36792795"
 }-->
 ```json
 {
-  "accessLevel": "everyone | invited | locked | sameEnterprise",
+  "autoAdmittedUsers": "everyone | everyoneInSameAndFederatedCompany | everyoneInCompany | invitedUsersInCompany | organizer",
   "audioConferencing": {"@odata.type": "#microsoft.graph.audioConferencing"},
   "canceledDateTime": "String (timestamp)",
   "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
   "creationDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
-  "entryExitAnnouncement": true,
-  "expirationDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "isCancelled": false,
+  "isCanceled": false,
   "joinUrl": "String",
-  "meetingType": "meetNow | scheduled | recurring | broadcast",
+  "isBroadcast": false,
   "participants": {"@odata.type": "#microsoft.graph.meetingParticipants"},
   "startDateTime": "String (timestamp)",
   "subject": "String",
@@ -81,3 +87,13 @@ ms.locfileid: "36792795"
   "videoTeleconferenceId": "String"
 }
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "onlineMeeting resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
