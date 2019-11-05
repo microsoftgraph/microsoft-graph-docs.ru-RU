@@ -3,13 +3,13 @@ title: Основные службы и компоненты в Microsoft Graph
 description: 'Microsoft Graph позволяет интегрировать приложение с лучшими службами Office 365, Windows 10 и Enterprise Mobility + Security в Microsoft 365, используя REST API и клиентские библиотеки. Кроме того, в нем имеются функции аналитики системы безопасности и социальных сетей, с помощью которых можно повысить эффективность работы пользователей, стимулировать творчество и совместную работу в группах, а также защищать бизнес-ресурсы и данные пользователей. '
 author: angelgolfer-ms
 localization_priority: Priority
-scenarios: getting-started
-ms.openlocfilehash: d1e91d2c644c787f50535722a2d634535b4401fa
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.custom: scenarios:getting-started
+ms.openlocfilehash: 4e6932c8d35a204efcbb865f1de169408afd7975
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939854"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969251"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Основные службы и компоненты в Microsoft Graph
 
