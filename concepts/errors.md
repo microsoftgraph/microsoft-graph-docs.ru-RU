@@ -2,12 +2,12 @@
 title: Сообщения об ошибках и типы ресурсов Microsoft Graph
 description: "  "
 localization_priority: Priority
-ms.openlocfilehash: 6e38985732c95cf928e78aad62d569134c19d8ca
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: eb7ce8d2d0a7836842469406768ce8a6eb81e94c
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526128"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969796"
 ---
 # <a name="microsoft-graph-error-responses-and-resource-types"></a>Сообщения об ошибках и типы ресурсов Microsoft Graph
 
@@ -29,7 +29,7 @@ ms.locfileid: "32526128"
 |:------------|:--------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
 | 400         | Неправильный запрос (Bad Request)                     | Не удается обработать запрос, так как он имеет неправильный формат или содержит ошибку.                                                                       |
 | 401         | Не авторизован (Unauthorized)                    | Требуемые сведения о проверке подлинности отсутствуют или недопустимы для ресурса.                                                   |
-| 403         | Запрещено                       | Доступ к запрошенному ресурсу запрещен. Возможно, у пользователя недостаточно разрешений. <br /><br /> **Важно!** Если к ресурсу применены политики условного доступа, то, возможно, будет возвращена ошибка HTTP 403; Forbidden error=insufficent_claims. Дополнительные сведения о Microsoft Graph и условном доступе см. в статье [Руководство для разработчиков по условному доступу в Azure Active Directory](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/active-directory-conditional-access-developer)  |
+| 403         | Запрещено                       | Доступ к запрошенному ресурсу запрещен. Возможно, у пользователя недостаточно разрешений. <br /><br /> **Важно!** Если к ресурсу применены политики условного доступа, то, возможно, будет возвращена ошибка HTTP 403; Forbidden error=insufficent_claims. Дополнительные сведения о Microsoft Graph и условном доступе см. в статье [Руководство для разработчиков по условному доступу в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer)  |
 | 404         | Не найдено (Not Found)                       | Запрашиваемый ресурс не существует.                                                                                                  |
 | 405         | Недопустимый метод (Method Not Allowed)              | Метод HTTP в запросе недопустим для ресурса.                                                                         |
 | 406         | Неприемлемо (Not Acceptable)                  | Эта служба не поддерживает формат, запрошенный в заголовке Accept.                                                                |

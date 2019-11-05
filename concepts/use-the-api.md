@@ -3,14 +3,13 @@ title: Использование API Microsoft Graph
 description: Microsoft Graph — это соответствующий ограничениям REST веб-API, обеспечивающий доступ к ресурсам службы Microsoft Cloud. После регистрации приложения и получения маркеров аутентификации для пользователя или службы можно отправлять запросы к API Microsoft Graph.
 author: jackson-woods
 localization_priority: Priority
-scenarios: getting-started
-ms.custom: graphiamtop20
-ms.openlocfilehash: 394252d491bf065554cedead4f39035744d0ade1
-ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
+ms.custom: graphiamtop20, scenarios:getting-started
+ms.openlocfilehash: 0e4bba173c234201c3f3002e8917eaa74176a583
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37053917"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37968550"
 ---
 # <a name="use-the-microsoft-graph-api"></a>Использование API Microsoft Graph
 

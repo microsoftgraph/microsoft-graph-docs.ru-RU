@@ -4,16 +4,16 @@ description: Чтобы ограничить область разрешений
 author: svpsiva
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f9121ffad617d6901688718a8982b926959d8626
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+ms.openlocfilehash: 9ccc33acff5c95cde3f4ba210684b177cc69334c
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35932579"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969491"
 ---
 # <a name="scoping-application-permissions-to-specific-exchange-online-mailboxes"></a>Ограничение области разрешений для приложений с указанием определенных почтовых ящиков Exchange Online 
 
-Некоторые приложения вызывают Microsoft Graph от своего имени, а не от имени пользователя. Обычно это фоновые службы и управляющие программы, которые работают на сервере без выполнившего вход пользователя. В таких приложениях используется [поток предоставления учетных данных клиента OAuth 2.0](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow), обеспечивающий проверку подлинности, и заданы настройки разрешений для приложений, которые позволяют таким приложениям получать доступ ко всем почтовым ящикам организации на сервере Exchange Online. Например с помощью разрешения для приложения Mail.Read приложения могут считывать почту во всех почтовых ящиках без выполнившего вход пользователя. 
+Некоторые приложения вызывают Microsoft Graph от своего имени, а не от имени пользователя. Обычно это фоновые службы и управляющие программы, которые работают на сервере без выполнившего вход пользователя. В таких приложениях используется [поток предоставления учетных данных клиента OAuth 2.0](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow), обеспечивающий проверку подлинности, и заданы настройки разрешений для приложений, которые позволяют таким приложениям получать доступ ко всем почтовым ящикам организации на сервере Exchange Online. Например с помощью разрешения для приложения Mail.Read приложения могут считывать почту во всех почтовых ящиках без выполнившего вход пользователя. 
 
 Администраторам, которые хотят ограничить доступ приложения к определенному набору почтовых ящиков, можно воспользоваться командлетом PowerShell **New-ApplicationAccessPolicy**, чтобы настроить управление доступом. В этой статье описаны основные действия, которые необходимо выполнить для настройки политики доступа приложения.
 
@@ -22,7 +22,7 @@ ms.locfileid: "35932579"
 ## <a name="configure-applicationaccesspolicy"></a>Настройка ApplicationAccessPolicy
 
 Чтобы настроить политику доступа приложения и ограничить область разрешений для приложения, выполните указанные ниже действия.
-1.  Подключитесь к Exchange Online PowerShell. Подробнее см. статью [Подключение к Exchange Online PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+1.  Подключитесь к Exchange Online PowerShell. Подробнее см. статью [Подключение к Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 
 2.  Определите идентификатор клиента приложения и группу безопасности с поддержкой электронной почты, чтобы ограничить доступ приложения.
 

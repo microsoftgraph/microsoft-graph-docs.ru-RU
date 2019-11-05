@@ -3,12 +3,12 @@ title: Руководства по Microsoft Graph
 description: Руководства по Microsoft Graph — это пошаговые обучающие упражнения по основным понятиям Microsoft Graph, включающие сведения о том, как создать базовое приложение, которое использует проверку подлинности Azure Active Directory и получает доступ к данным через Microsoft Graph.
 author: jasonjoh
 localization_priority: Priority
-ms.openlocfilehash: ee4fcaf224852d588bdb3f2d00d326a92d3f770d
-ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
+ms.openlocfilehash: ab51d3466ba7bec1db5edac1330e468f7992bd89
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37275817"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37968536"
 ---
 # <a name="microsoft-graph-tutorials"></a>Руководства по Microsoft Graph
 
@@ -42,8 +42,8 @@ ms.locfileid: "37275817"
 В следующих учебных курсах рассматриваются определенные сценарии использования Microsoft Graph.
 
 
-- [Оптимизация использования данных при применении Microsoft Graph с параметрами запросов](https://docs.microsoft.com/ru-RU/learn/modules/optimize-data-usage/)
-- [Оптимизация сетевого трафика с помощью Microsoft Graph](https://docs.microsoft.com/ru-RU/learn/modules/optimize-data-usage/2-microsoft-graph-query-parameters)
+- [Оптимизация использования данных при применении Microsoft Graph с параметрами запросов](https://docs.microsoft.com/learn/modules/optimize-data-usage/)
+- [Оптимизация сетевого трафика с помощью Microsoft Graph](https://docs.microsoft.com/learn/modules/optimize-data-usage/2-microsoft-graph-query-parameters)
 - [Уведомления об изменениях и запрос изменений](/graph/tutorials/change-notifications)
 
 ## <a name="see-also"></a>Дополнительные ресурсы

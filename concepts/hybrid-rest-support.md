@@ -2,12 +2,12 @@
 title: Использование интерфейсов REST API для доступа к гибридным развертываниям Exchange (предварительная версия)
 description: Служба Microsoft Graph предоставляет доступ к почтовым ящикам пользователей в облаке в Exchange Online в составе Office 365.
 localization_priority: Priority
-ms.openlocfilehash: 5dab9fea5a9d9c9177befc90ccb64b3bb03b6b33
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0ea8f09bfbee5f8f7575d4e5442d8169d38597a8
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32526176"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969754"
 ---
 # <a name="use-rest-apis-to-access-mailboxes-in-exchange-hybrid-deployments-preview"></a>Использование интерфейсов REST API для доступа к гибридным развертываниям Exchange (предварительная версия)
 
@@ -44,6 +44,6 @@ Microsoft Graph обеспечивает открытость (поддержк�
 
 Дополнительные сведения для ИТ-администраторов см. в указанных ниже источниках.
 
-- [Гибридные развертывания Exchange Server](https://technet.microsoft.com/en-us/library/jj200581(v=exchg.150).aspx)
+- [Гибридные развертывания Exchange Server](https://technet.microsoft.com/library/jj200581(v=exchg.150).aspx)
 - [Выпуск накопительного пакета обновления за сентябрь 2016 г.](https://blogs.technet.microsoft.com/exchange/2016/09/20/released-september-2016-quarterly-exchange-updates/) 
 - [Требования к локальной архитектуре для REST API](https://blogs.technet.microsoft.com/exchange/2016/09/26/on-premises-architectural-requirements-for-the-rest-api/)

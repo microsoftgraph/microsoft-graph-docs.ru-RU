@@ -2,12 +2,12 @@
 title: 'Политики поддержки и внесения критических изменений в Microsoft Graph, а также доступные версии '
 description: В этой статье описаны политики поддержки и внесения критических изменений в Microsoft Graph, а также доступные версии API Microsoft Graph.
 localization_priority: Priority
-ms.openlocfilehash: 8ac36dd12feb10eb545cea80cd8d59023b6d9783
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: e2a3cd66c3d03ce5c2569449d99830865cb1810b
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778700"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37968484"
 ---
 # <a name="versioning-support-and-breaking-change-policies-for-microsoft-graph"></a>Политики поддержки и внесения критических изменений в Microsoft Graph, а также доступные версии
 
@@ -15,7 +15,7 @@ ms.locfileid: "35778700"
 
 ## <a name="support-policy-and-deprecation-information"></a>Политика поддержки и объявление о прекращении поддержки
 
-Microsoft Graph придерживается политики [Microsoft Lifecycle](https://support.microsoft.com/en-us/lifecycle).
+Microsoft Graph придерживается политики [Microsoft Lifecycle](https://support.microsoft.com/lifecycle).
 
 Новые версии REST API Microsoft Graph и пакетов SDK Microsoft Graph будут заменять собой более ранние версии. Корпорация Майкрософт будет объявлять о прекращении поддержки версии по крайней мере за 24 месяца до прекращения использования API или SDK.
 
@@ -45,7 +45,7 @@ Microsoft Graph придерживается политики [Microsoft Lifecyc
 - изменения порядка свойств;
 - изменения длины или формата непрозрачных строк, таких как идентификаторы ресурсов.
 
->**Примечание.** Корпорация Майкрософт будет обновлять список обратно совместимых изменений. Если вы создаете собственные прокси-серверы клиента (например, клиенты WCF), ваши клиентские приложения должны быть готовы принимать свойства и производные типы, ранее не определенные в службе API Microsoft Graph. API Microsoft Graph соответствует принципам, описанным в разделе [Управление версиями](https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning) [Правил в отношении REST API Microsoft](https://github.com/microsoft/api-guidelines/).
+>**Примечание.** Корпорация Майкрософт будет обновлять список обратно совместимых изменений. Если вы создаете собственные прокси-серверы клиента (например, клиенты WCF), ваши клиентские приложения должны быть готовы принимать свойства и производные типы, ранее не определенные в службе API Microsoft Graph. API Microsoft Graph соответствует принципам, описанным в разделе [Управление версиями](https://github.com/microsoft/api-guidelines/blob/master/Guidelines.md#12-versioning) [Правил в отношении REST API Microsoft](https://github.com/microsoft/api-guidelines/).
 
 ## <a name="versions"></a>Версии
 

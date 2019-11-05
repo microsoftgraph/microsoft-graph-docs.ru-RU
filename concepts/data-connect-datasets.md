@@ -4,12 +4,12 @@ description: Описаны поддерживаемые наборы данны
 author: tlenig
 localization_priority: Priority
 ms.prod: data-connect
-ms.openlocfilehash: fee7daae0af6ee4a1dc3d887e09acd725a37ceb8
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 05f60915fc3094bd2c095747c237a10590f90b03
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33629847"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969202"
 ---
 # <a name="datasets-regions-and-sinks-that-microsoft-graph-data-connect-supports"></a>Наборы данных, регионы и приемники, поддерживаемые подключением к данным Microsoft Graph
 
@@ -23,21 +23,21 @@ ms.locfileid: "33629847"
 
 |Имя набора данных|Описание|
 |-------------|-----------|
-|BasicDataSet_v0.Contact_v0|Содержит контактные данные из адресной книги каждого пользователя. Схема для этих объектов напоминает [схему личных контактов Microsoft Graph](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/contact).| 
-|BasicDataSet_v0.Event_v0|Содержит события из календаря каждого пользователя. Схема для этих объектов напоминает [схему событий календаря Microsoft Graph](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/event).| 
-|BasicDataSet_v0.Message_v0|Содержит сообщение из почтового ящика каждого пользователя. Схема для этих объектов напоминает [схему сообщений Microsoft Graph](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/message).| 
-|BasicDataSet_v0.SentItem_v0|Содержит сообщения, отправленные из почтового ящика каждого пользователя. Схема для этих объектов напоминает [схему сообщений Microsoft Graph](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/message).| 
+|BasicDataSet_v0.Contact_v0|Содержит контактные данные из адресной книги каждого пользователя. Схема для этих объектов напоминает [схему личных контактов Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/contact).| 
+|BasicDataSet_v0.Event_v0|Содержит события из календаря каждого пользователя. Схема для этих объектов напоминает [схему событий календаря Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/event).| 
+|BasicDataSet_v0.Message_v0|Содержит сообщение из почтового ящика каждого пользователя. Схема для этих объектов напоминает [схему сообщений Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/message).| 
+|BasicDataSet_v0.SentItem_v0|Содержит сообщения, отправленные из почтового ящика каждого пользователя. Схема для этих объектов напоминает [схему сообщений Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/message).| 
 |BasicDataSet_v0.User_v0|Содержит сведения о пользователе (DisplayName, UserPrincipalName и т. д.).| 
-|BasicDataSet_v0.MailboxSettings_v0|Содержит параметры почтового ящика каждого пользователя. Схема для этих объектов соответствует [схеме параметров почтового ящика Microsoft Graph](https://docs.microsoft.com/en-us/graph/api/resources/mailboxsettings?view=graph-rest-1.0).| 
-|BasicDataSet_v0.MailFolder_v0|Содержит папки почты из почтового ящика каждого пользователя. Схема для этих объектов соответствует [схеме папок почты Microsoft Graph](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/mailfolder).|
-|BasicDataSet_v0.Manager_v0|Содержит сведения о пользователе для руководителя каждого пользователя. Схема для этих объектов соответствует [схеме пользователей Microsoft Graph](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/user).|
-|BasicDataSet_v0.DirectReport_v0|Содержит сведения о сотрудниках, находящихся в непосредственном подчинении каждого пользователя. Схема для этих объектов соответствует [схеме пользователей Microsoft Graph](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/user).|
-|BasicDataSet_v0.CalendarView_v0|Содержит события. Схема для этих объектов соответствует [схеме пользователей Microsoft Graph](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/events).|
-|BasicDataSet_v0.User_v1|Эта таблица содержит сведения о пользователе. Схема для этих объектов соответствует [схеме пользователей Microsoft Graph](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/user).|
-|BasicDataSet_v0.Contact_v1|Содержит контактные данные из адресной книги каждого пользователя. Схема для этих объектов соответствует [схеме личных контактов Microsoft Graph](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/contact).|
-|BasicDataSet_v0.Event_v1|Содержит события из календаря каждого пользователя. Схема для этих объектов соответствует [схеме событий календаря Microsoft Graph](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/event).|
-|BasicDataSet_v0.Message_v1|Содержит сообщение из почтового ящика каждого пользователя. Схема для этих объектов соответствует [схеме сообщений Microsoft Graph](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/message).|
-|BasicDataSet_v0.SentItem_v1|Содержит сообщение, отправленное из почтового ящика каждого пользователя. Схема для этих объектов соответствует [схеме сообщений Microsoft Graph](https://developer.microsoft.com/ru-RU/graph/docs/api-reference/v1.0/resources/message).|
+|BasicDataSet_v0.MailboxSettings_v0|Содержит параметры почтового ящика каждого пользователя. Схема для этих объектов соответствует [схеме параметров почтового ящика Microsoft Graph](https://docs.microsoft.com/graph/api/resources/mailboxsettings?view=graph-rest-1.0).| 
+|BasicDataSet_v0.MailFolder_v0|Содержит папки почты из почтового ящика каждого пользователя. Схема для этих объектов соответствует [схеме папок почты Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/mailfolder).|
+|BasicDataSet_v0.Manager_v0|Содержит сведения о пользователе для руководителя каждого пользователя. Схема для этих объектов соответствует [схеме пользователей Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/user).|
+|BasicDataSet_v0.DirectReport_v0|Содержит сведения о сотрудниках, находящихся в непосредственном подчинении каждого пользователя. Схема для этих объектов соответствует [схеме пользователей Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/user).|
+|BasicDataSet_v0.CalendarView_v0|Содержит события. Схема для этих объектов соответствует [схеме пользователей Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/events).|
+|BasicDataSet_v0.User_v1|Эта таблица содержит сведения о пользователе. Схема для этих объектов соответствует [схеме пользователей Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/user).|
+|BasicDataSet_v0.Contact_v1|Содержит контактные данные из адресной книги каждого пользователя. Схема для этих объектов соответствует [схеме личных контактов Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/contact).|
+|BasicDataSet_v0.Event_v1|Содержит события из календаря каждого пользователя. Схема для этих объектов соответствует [схеме событий календаря Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/event).|
+|BasicDataSet_v0.Message_v1|Содержит сообщение из почтового ящика каждого пользователя. Схема для этих объектов соответствует [схеме сообщений Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/message).|
+|BasicDataSet_v0.SentItem_v1|Содержит сообщение, отправленное из почтового ящика каждого пользователя. Схема для этих объектов соответствует [схеме сообщений Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/message).|
 
 ## <a name="regions"></a>Регионы
 
@@ -66,4 +66,4 @@ ms.locfileid: "33629847"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Дополнительные сведения о создании конвейеров подключения к данным в рамках фабрики данных Azure см. в [документации по соединителю Office 365 фабрики данных Azure](https://docs.microsoft.com/ru-RU/azure/data-factory/connector-office-365).  
+Дополнительные сведения о создании конвейеров подключения к данным в рамках фабрики данных Azure см. в [документации по соединителю Office 365 фабрики данных Azure](https://docs.microsoft.com/azure/data-factory/connector-office-365).  

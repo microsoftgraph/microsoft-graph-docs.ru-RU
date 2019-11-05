@@ -4,13 +4,13 @@ description: API в Microsoft Graph дополняет ресурсы Office 365
 author: mmast-msft
 localization_priority: Priority
 ms.prod: education
-scenarios: getting-started
-ms.openlocfilehash: c5d00f5940c547a1f95381144f4a2af56f3ab125
-ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
+ms.custom: scenarios:getting-started
+ms.openlocfilehash: 90e8e2342b66a7768cecbc22c6e3a1591bc06a59
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "37726410"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969838"
 ---
 # <a name="education-api-overview"></a>Обзор API для образования
 
@@ -36,7 +36,7 @@ API в Microsoft Graph дополняет ресурсы Office 365 сведен
 
 С помощью API заданий вы можете создать веб-приложение, управляющее заданиями для классов, а затем интегрировать приложение в Microsoft Teams на специальной вкладке.  
 
-Microsoft Teams в Office 365 — это цифровой центр, объединяющий беседы, содержимое и приложения для аудиторий. Microsoft Teams имеет [много точек расширяемости](https://docs.microsoft.com/ru-RU/microsoftteams/platform/concepts/apps/apps-overview), в том числе для создания вкладок, соединителей и ботов. Эти точки расширяемости могут вызывать API для образования в Microsoft Graph для работы с заданиями и сданными работами. Вы можете создать более целостную среду, включив точку расширения с любым другим API Microsoft Graph, а также API заданий и сданных работ.
+Microsoft Teams в Office 365 — это цифровой центр, объединяющий беседы, содержимое и приложения для аудиторий. Microsoft Teams имеет [много точек расширяемости](https://docs.microsoft.com/microsoftteams/platform/concepts/apps/apps-overview), в том числе для создания вкладок, соединителей и ботов. Эти точки расширяемости могут вызывать API для образования в Microsoft Graph для работы с заданиями и сданными работами. Вы можете создать более целостную среду, включив точку расширения с любым другим API Microsoft Graph, а также API заданий и сданных работ.
 
 Приложения со специальными вкладками Microsoft Teams открываются в контексте класса (команды), где имеет смысл управлять полным потоком заданий — от создания и распространения до оценивания и отзывов. Это лишь один из примеров того, как Microsoft Teams экономит время и упрощает повседневные задачи логистики, позволяя преподавателям полностью посвятить себя учащимся.
 

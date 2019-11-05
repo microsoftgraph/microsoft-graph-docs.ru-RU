@@ -4,12 +4,12 @@ description: В тексте страницы OneNote может содержа�
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 9630741091be52de8791f560a13b225ccce2e218
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 70c68699df88f53cfc70bbbc5a97ed41acd97b60
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32560936"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969342"
 ---
 # <a name="create-absolute-positioned-elements-in-onenote-pages"></a>Создание элементов с абсолютным положением на страницах OneNote
 
@@ -85,12 +85,12 @@ API отрисовывает элемент div с неабсолютным по
     <body data-absolute-enabled="true">
         <div style="position:absolute;width:280px;top:120px;left:68px">
             <p>Some text</p>
-            <img style="width:120px" src="https://officeimg.vo.msecnd.net/en-us/files/018/949/ZA103278226.png" />
+            <img style="width:120px" src="https://officeimg.vo.msecnd.net/files/018/949/ZA103278226.png" />
             <div>
                 <p>More text inside a regular, nested div</p>
             </div>
         </div>
-        <img style="position:absolute;width:360px;top:350px;left:300px" src="https://officeimg.vo.msecnd.net/en-us/files/018/949/ZA103278226.png" />
+        <img style="position:absolute;width:360px;top:350px;left:300px" src="https://officeimg.vo.msecnd.net/files/018/949/ZA103278226.png" />
     </body>
 </html>
 ```
@@ -115,8 +115,8 @@ API OneNote оценивает входной HTML-код и сохраняет 
 
 | Атрибут | Поддерживаемый элемент | Описание |  
 |:------|:------|:------|  
-| top | div, img, object | Координата верхней границы элемента по оси Y; только в пикселях. По умолчанию используется значение 120 пикселей.<br/><br/>Пример: `top:140px` |  
-| left |  div, img, object  | Координата левой границы элемента по оси X; только в пикселях. По умолчанию используется значение 48 пикселей.<br/><br/>Пример: `left:95px` |  
+| top | div, img, object | Координата верхней границы элемента по оси Y; только в пикселях. По умолчанию используется значение 120 пикселей.<br/><br/>Пример: `top:140px`. |  
+| left |  div, img, object  | Координата левой границы элемента по оси X; только в пикселях. По умолчанию используется значение 48 пикселей.<br/><br/>Пример: `left:95px`. |  
 | width |  div, img  | Ширина элемента; только в пикселях.<br/><br/>Пример: `width:480px` |  
 | height | img | Высота элемента; только в пикселях. Для элементов div высота рассчитывается в среде выполнения, и система игнорирует любое заданное значение высоты.<br/><br/>Пример: `height:665px` |  
  

@@ -4,13 +4,13 @@ description: OneNote — это цифровая записная книжка,
 author: Jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-scenarios: getting-started
-ms.openlocfilehash: 69aa0d83d9625559c7731391f6ad504bd86403f0
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.custom: scenarios:getting-started
+ms.openlocfilehash: f20ee192d2afabb6e5fe4e491bcfbc0413db44d3
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792613"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969789"
 ---
 # <a name="onenote-api-overview"></a>Обзор API OneNote
 
@@ -80,14 +80,14 @@ OneNote можно использовать как холст, где польз
 ## <a name="see-also"></a>См. также
 Узнайте о других функциях OneNote, которые предоставляются только на конечной точке REST для службы OneNote.
 
-- [Разработка для OneNote](https://docs.microsoft.com/ru-RU/previous-versions/office/office-365-api/how-to/onenote-landing)
-- [Работа с записными книжками для занятий](https://docs.microsoft.com/ru-RU/previous-versions/office/office-365-api/how-to/onenote-classnotebook)
-- [Работа с асинхронными записными книжками для занятий](https://docs.microsoft.com/ru-RU/previous-versions/office/office-365-api/how-to/onenote-classnotebook-asynchronous)
-- [Работа со служебными записными книжками](https://docs.microsoft.com/ru-RU/previous-versions/office/office-365-api/how-to/onenote-staffnotebook)
-- [Копирование записных книжек, разделов и страниц](https://docs.microsoft.com/ru-RU/previous-versions/office/office-365-api/how-to/onenote-copy)
-- [Управление разрешениями на объекты OneNote](https://docs.microsoft.com/ru-RU/previous-versions/office/office-365-api/how-to/onenote-manage-perms)
-- [Использование диалогового окна сохранения OneNote на веб-страницах](https://docs.microsoft.com/ru-RU/previous-versions/office/office-365-api/how-to/onenote-save-dialog)
-- [Подписка на веб-перехватчики](https://docs.microsoft.com/ru-RU/previous-versions/office/office-365-api/how-to/onenote-sync)
+- [Разработка для OneNote](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-landing)
+- [Работа с записными книжками для занятий](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-classnotebook)
+- [Работа с асинхронными записными книжками для занятий](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-classnotebook-asynchronous)
+- [Работа со служебными записными книжками](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-staffnotebook)
+- [Копирование записных книжек, разделов и страниц](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-copy)
+- [Управление разрешениями на объекты OneNote](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-manage-perms)
+- [Использование диалогового окна сохранения OneNote на веб-страницах](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-save-dialog)
+- [Подписка на веб-перехватчики](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-sync)
 
 ## <a name="api-reference"></a>Справочные материалы по API
 Ищете справочные материалы по API для этой службы?

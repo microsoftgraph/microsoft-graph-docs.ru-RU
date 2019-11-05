@@ -1,12 +1,12 @@
 ---
 title: Национальные облачные развертывания
 description: В дополнение к нашей глобальной сети центров обработки данных облачные службы Майкрософт доступны в трех отдельных национальных облачных службах. Эти национальные облачные версии являются физическими и логически изолированными от сети экземплярами корпоративных облачных служб Майкрософт, которые ограничены в пределах географических границ конкретных стран и обслуживаются местным персоналом.
-ms.openlocfilehash: 406966a0bc6d1f5729ab96d4bd358ea21e3d9e6e
-ms.sourcegitcommit: 567d0420243765b4088bc8029306a517f92926fd
+ms.openlocfilehash: 4da5570719cf64ba8fc329039e4ba4fcef7348b5
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36437645"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969845"
 ---
 # <a name="national-cloud-deployments"></a>Национальные облачные развертывания
 
@@ -22,7 +22,7 @@ ms.locfileid: "36437645"
 
 В этой статье приводятся сведения о различных облачных развертываниях Microsoft Graph и возможностях, доступных разработчикам в различных средах.
 
->**Примечание:** [Microsoft Graph Data Connect](https://docs.microsoft.com/en-us/graph/data-connect-concept-overview?view=graph-rest-1.0) не поддерживает никакие из национальных облачных развертываний. 
+>**Note:** [Microsoft Graph Data Connect](https://docs.microsoft.com/graph/data-connect-concept-overview?view=graph-rest-1.0) не поддерживает никакие из национальных облачных развертываний. 
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/R_3E0IVypRM]
 
@@ -37,7 +37,7 @@ ms.locfileid: "36437645"
 |Azure AD для Китая под управлением 21Vianet |https://portal.azure.cn|`https://login.chinacloudapi.cn`|
 |Azure AD (глобальная служба)|https://portal.azure.com |`https://login.microsoftonline.com`|
 
-Дополнительные сведения о маркерах доступа Azure AD и Microsoft Graph приведены в статье Общие сведения о [проверке](./auth/auth-concepts.md)подлинности. Сведения о сценариях проверки подлинности Azure AD см. [](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios)
+Дополнительные сведения о маркерах доступа Azure AD и Microsoft Graph приведены в статье Общие сведения о [проверке подлинности](./auth/auth-concepts.md). Сведения о сценариях проверки [подлинности](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios)Azure AD см.
 
 
 ## <a name="microsoft-graph-and-graph-explorer-service-root-endpoints"></a>Корневые конечные точки службы Microsoft Graph и проводника Graph
@@ -73,7 +73,7 @@ ms.locfileid: "36437645"
 | Планировщик|✔ |✔ |✔ |
 | Отчеты  |➖| ✔ |➖|
 | Уведомления об изменениях (веб-перехватчики)  | ➖|✔* |✔* |
-| Запрос на получение различий | ➖ | ➖| ➖ |
+| Разностный запрос | ➖ | ➖| ➖ |
 | Расширения схемы каталога |➖|➖|➖|
 | Расширения открытого типа|➖|➖|➖|
   

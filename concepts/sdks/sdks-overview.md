@@ -3,13 +3,13 @@ title: Общие сведения о пакетах SDK Microsoft Graph
 description: Описывает доступные пакеты SDK, Поддерживаемые платформы и значения, которые они предоставляют разработчикам.
 localization_priority: Normal
 author: MichaelMainer
-scenarios: getting-started
-ms.openlocfilehash: 86641c78a4f1c7b6f14a1e1fd07f52e4ca9d87ef
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.custom: scenarios:getting-started
+ms.openlocfilehash: 93b2606aeb3cea9053c04d4caa87d6cf50e833e4
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792893"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969474"
 ---
 # <a name="microsoft-graph-sdks-overview"></a>Общие сведения о пакетах SDK Microsoft Graph
 
@@ -39,7 +39,7 @@ ms.locfileid: "36792893"
 
 ## <a name="office-365-developer-subscription"></a>Подписка на Office 365 для разработчиков
 
-При создании приложений с помощью Microsoft Graph рекомендуется получить бесплатную подписку на Office 365 для разработчиков, зарегистрировавшись в программе для [разработчиков office 365](http://aka.ms/OfficeDevProgram).
+При создании приложений с помощью Microsoft Graph рекомендуется получить бесплатную подписку на Office 365 для разработчиков, зарегистрировавшись в программе для [разработчиков office 365](https://aka.ms/OfficeDevProgram).
 
 ## <a name="see-also"></a>См. также
 

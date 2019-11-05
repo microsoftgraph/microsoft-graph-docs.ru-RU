@@ -4,12 +4,12 @@ description: 'В этой статье мы рассмотрим подробн�
 author: dkershaw10
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 28ef904429f90d0e1c1182887946c967739566bc
-ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
+ms.openlocfilehash: 57d23792583046afe3e00d2b2f549ccdf821c0a7
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37053783"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969761"
 ---
 # <a name="add-custom-data-to-groups-using-schema-extensions"></a>Добавление пользовательских данных в группы с помощью расширений схемы 
 
@@ -241,7 +241,7 @@ Content-length: 326
 
 - [Добавление пользовательских данных в ресурсы с помощью расширений](extensibility-overview.md)
 - [Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)](extensibility-open-users.md)
-- [Домены Office 365](https://technet.microsoft.com/ru-RU/library/office-365-domains.aspx)
+- [Домены Office 365](https://technet.microsoft.com/library/office-365-domains.aspx)
 - [Добавление и проверка домена для НОВОГО плана Office 365](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
 - [Тип ресурса schemaExtension](/graph/api/resources/schemaextension?view=graph-rest-1.0)
 - [Перечисление schemaExtensions](/graph/api/schemaextension-list?view=graph-rest-1.0)

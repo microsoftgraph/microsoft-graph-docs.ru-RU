@@ -4,13 +4,13 @@ description: 'Azure Active Directory (Azure AD) помогает централ
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-scenarios: getting-started
-ms.openlocfilehash: 9ed9857ccba80c416386a9cff0d36d8e9ca0ce8f
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.custom: scenarios:getting-started
+ms.openlocfilehash: 5b6ec62128b969c2015c01eba1020009031f7ee9
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792984"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969335"
 ---
 # <a name="azure-ad-identity-and-access-management-api-overview"></a>Обзор API Azure AD для управления идентификацией и доступом
 
@@ -44,7 +44,7 @@ Azure Active Directory (Azure AD) помогает централизовать
 
 ### <a name="manage-devices"></a>Управление устройствами
 
-Вы можете [управлять устройствами](https://docs.microsoft.com/ru-RU/azure/active-directory/device-management-introduction), зарегистрированными в организации. Устройства (ноутбуки, настольные компьютеры, планшеты и мобильные телефоны) зарегистрированы на пользователей. Устройства обычно создаются в облаке с помощью службы регистрации устройств или Microsoft Intune. Они используются в политиках условного доступа для многофакторной аутентификации.
+Вы можете [управлять устройствами](https://docs.microsoft.com/azure/active-directory/device-management-introduction), зарегистрированными в организации. Устройства (ноутбуки, настольные компьютеры, планшеты и мобильные телефоны) зарегистрированы на пользователей. Устройства обычно создаются в облаке с помощью службы регистрации устройств или Microsoft Intune. Они используются в политиках условного доступа для многофакторной аутентификации.
 
 ### <a name="partner-tenant-management"></a>Управление клиентами партнеров
 
@@ -87,6 +87,6 @@ Azure AD использует адаптивные алгоритмы машин
 
 - Узнайте, как [использовать REST API Azure AD](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0).
 - Используйте Azure AD для [аутентификации](/graph/auth) в Microsoft Graph.
-- Интегрируйте [вход в Azure AD](https://azure.microsoft.com/ru-RU/develop/identity/signin/) в свое приложение или в свой веб-сайт.
+- Интегрируйте [вход в Azure AD](https://azure.microsoft.com/develop/identity/signin/) в свое приложение или в свой веб-сайт.
 - Сведения о новых возможностях API Azure AD см. в [журнале изменений](changelog.md).
 - Изучите [примеры](https://developer.microsoft.com/graph/graph/examples), чтобы получить более четкое представление об использовании Microsoft Graph.

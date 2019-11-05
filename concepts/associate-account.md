@@ -2,12 +2,12 @@
 title: Связывание учетной записи Office 365 с Azure AD для создания приложений и управления ими
 description: 'Для проверки подлинности приложений с помощью Microsoft Azure Active Directory необходимо зарегистрировать их в Azure AD. Именно здесь хранятся сведения об учетной записи пользователя Office 365 и приложениях. Чтобы управлять Azure Active Directory на портале Azure, необходима подписка на Microsoft Azure. Управлять пользователями, ролями и приложениями можно с помощью портала в Microsoft Azure. '
 localization_priority: Normal
-ms.openlocfilehash: af77e9bbe87ba3a7c92c91967c8df87a16224d99
-ms.sourcegitcommit: 94aaf594c881c02f353c6a417460cdf783a0bfe0
+ms.openlocfilehash: cf369f1f289c435cbd488d4c51e558d75a5e080e
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33951215"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969782"
 ---
 # <a name="associate-your-office-365-account-with-azure-ad-to-create-and-manage-apps"></a>Связывание учетной записи Office 365 с Azure AD для создания приложений и управления ими
 
@@ -23,8 +23,8 @@ ms.locfileid: "33951215"
 
 Если у вас нет учетной записи Office 365 для бизнеса, вы можете:
 
-- выбрать один из [планов Office 365 для бизнеса](https://products.office.com/en-us/business/compare-office-365-for-business-plans), перечисленных выше, или
-- [принять участие в программе Office 365 для разработчиков и получить бесплатную подписку на Office 365 сроком на 1 год](https://aka.ms/devprogramsignup).
+- Регистрация в [плане Office 365 для бизнеса](https://products.office.com/business/compare-office-365-for-business-plans) 
+- [Присоединяйтесь к программе для разработчиков office 365](https://aka.ms/devprogramsignup) и получите бесплатную подписку на Office 365 с помощью одного года.
 
 **Подписка на Microsoft Azure**.
 
@@ -93,5 +93,5 @@ ms.locfileid: "33951215"
     Теперь в подписке на Azure должны появиться все элементы. Вы увидите каталог с именем вашего клиента Office 365.
 
 ## <a name="see-also"></a>См. также
-- [Основные сведения о регистрации приложения в Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad)
-- [Интеграция приложений с Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-integrating-applications/)
+- [Основные сведения о регистрации приложения в Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad)
+- [Интеграция приложений с Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-integrating-applications/)

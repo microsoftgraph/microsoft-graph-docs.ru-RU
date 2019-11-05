@@ -4,13 +4,13 @@ description: Календарь Outlook входит в состав центр�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-scenarios: getting-started
-ms.openlocfilehash: b245261e8e0840932cbfc5a8d37a70196dce27f1
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.custom: scenarios:getting-started
+ms.openlocfilehash: e5e8ff0c1b3eb15fd2a8cd68de11c9995cf693b9
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37621387"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969817"
 ---
 # <a name="outlook-calendar-api-overview"></a>Общие сведения об API календарей Outlook
 

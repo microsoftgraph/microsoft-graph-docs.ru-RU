@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет одну конечну�
 author: dkershaw10
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 68b58d0ebe8fbcdb81cf23dd5173b64da4ac4ead
-ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
+ms.openlocfilehash: 856f427e864eb4fa6a16c1ea758288523ae23c52
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37054098"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969768"
 ---
 # <a name="add-custom-data-to-resources-using-extensions"></a>Добавление пользовательских данных в ресурсы с помощью расширений
 
@@ -153,6 +153,6 @@ Azure AD поддерживает схожий тип расширения, из
 
 ## <a name="see-also"></a>См. также
 
-- [Домены Office 365](https://technet.microsoft.com/ru-RU/library/office-365-domains.aspx)
+- [Домены Office 365](https://technet.microsoft.com/library/office-365-domains.aspx)
 
 - [Добавление и подтверждение домена для клиента Office 365](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)

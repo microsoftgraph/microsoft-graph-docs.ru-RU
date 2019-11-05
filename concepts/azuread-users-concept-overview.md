@@ -4,13 +4,13 @@ description: Пользователи — это представления р�
 author: dkershaw10
 localization_priority: Priority
 ms.prod: users
-scenarios: getting-started
-ms.openlocfilehash: 430f89f27f285084f3a10b15bb86bae1c0df2cdd
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.custom: scenarios:getting-started
+ms.openlocfilehash: 39c4f278fe356ac70e8dfd4b816ee603f27b1dee
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792963"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969328"
 ---
 # <a name="overview-of-users-in-microsoft-graph"></a>Обзор пользователей в Microsoft Graph
 

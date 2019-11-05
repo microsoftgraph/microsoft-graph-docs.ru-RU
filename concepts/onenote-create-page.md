@@ -4,12 +4,12 @@ description: " Корпоративная записная книжка в Offic
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: ce2da5df9dddc54f2257ee9dd110c4f6460bd03d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: af4aefed112177a119be20c408ad6feac978ecae
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32558393"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969887"
 ---
 # <a name="create-onenote-pages"></a>Создание страниц OneNote
 
@@ -197,7 +197,7 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 
-Дополнительные примеры создания страниц, содержащих изображения и другие файлы, см. в статье [Добавление изображений и файлов](onenote-images-files.md), наших [руководствах](https://docs.microsoft.com/ru-RU/previous-versions/office/office-365-api/how-to/onenote-tutorial) и [примерах](https://github.com/onenotedev). Кроме того, узнайте, как [создавать элементы с абсолютным положением](onenote-abs-pos.md), [использовать теги примечаний](onenote-note-tags.md), а также [извлекать данные](onenote-extract-data.md) из визитных карточек, рецептов из Интернета и описаний товаров.
+Дополнительные примеры создания страниц, содержащих изображения и другие файлы, см. в статье [Добавление изображений и файлов](onenote-images-files.md), наших [руководствах](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-tutorial) и [примерах](https://github.com/onenotedev). Кроме того, узнайте, как [создавать элементы с абсолютным положением](onenote-abs-pos.md), [использовать теги примечаний](onenote-note-tags.md), а также [извлекать данные](onenote-extract-data.md) из визитных карточек, рецептов из Интернета и описаний товаров.
 
 Microsoft Graph требует строгого соответствия некоторым форматам, таким как символы новой строки CRLF в тексте составного сообщения. Чтобы снизить риск получения полезных данных в неправильном формате, для создания составных сообщений следует использовать библиотеку. 
 
