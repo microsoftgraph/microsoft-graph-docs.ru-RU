@@ -5,19 +5,19 @@ localization_priority: Normal
 ms.prod: notifications
 doc_type: apiPageType
 author: merzink
-ms.openlocfilehash: c30df0bf19aeab48fab7655fd134dbc1cfe13195
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 8eb35ea0ade2e7d471674d8d064ba0ac38b361cc
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938164"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37996270"
 ---
 # <a name="create-and-send-a-notification"></a>Создание и отправление уведомления
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Создание и отправка уведомления, предназначенного для пользователя с помощью Microsoft Graph. Уведомление хранится в хранилище каналов уведомлений Microsoft Graph и отправляется всем клиентам приложений во всех конечных точках устройств, в которых пользователь вошел в систему.  
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Разрешения
 Служба приложения не требует дополнительных разрешений для отправки уведомлений целевому пользователю.  
 
 > [!IMPORTANT]
@@ -47,13 +47,15 @@ POST /me/notifications/
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [уведомления](../resources/projectrome-notification.md) в формате JSON.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика, указывающий, что уведомление было успешно создано и сохранено. В дальнейшем уведомление будет развертывание которого выполняется на все указанные конечные точки с действующей подпиской. 
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_notification_from_user"
@@ -86,6 +88,12 @@ Content-type: application/json
   }
 }
 ```
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-notification-from-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика.

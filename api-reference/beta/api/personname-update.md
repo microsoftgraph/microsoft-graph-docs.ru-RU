@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 97a4497b88e7cb065ea5ad73229dc4acc8c45556
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: f288d73956b79c0ab5c47524239069f2c239791c
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37937863"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37997224"
 ---
 # <a name="update-personname"></a>Обновление PersonName
 
@@ -50,18 +50,18 @@ PATCH /me/profile/names/{id}
 | Свойство     | Тип                                            | Описание                                                                             | 
 |:-------------|:------------------------------------------------|:----------------------------------------------------------------------------------------|
 |displayName   |Строка                                           | Предоставляет упорядоченную визуализацию имени и фамилии.                              |
-|первыми         |Строка                                           | Имя пользователя.                                                                 |
+|первыми         |String                                           | Имя пользователя.                                                                 |
 |initials      |String                                           | Инициалы пользователя.                                                                   |
-|лангуажетаг   |Строка                                           | Содержит имя языка (EN-US, No-NetBIOS, en-AU), следуя формату IETF BCP47.   |
-|Фамили          |Строка                                           | Фамилия пользователя.                                                                  |
-|маиден        |Строка                                           | Имя пользователя, марриаже фамилию.                                                          |
-|назван        |Строка                                           | Отчество пользователя.                                                                     |
-|прозвищ      |Строка                                           | Псевдоним пользователя.                                                                        |
+|лангуажетаг   |String                                           | Содержит имя языка (EN-US, No-NetBIOS, en-AU), следуя формату IETF BCP47.   |
+|Фамили          |String                                           | Фамилия пользователя.                                                                  |
+|маиден        |String                                           | Имя пользователя, марриаже фамилию.                                                          |
+|назван        |String                                           | Отчество пользователя.                                                                     |
+|прозвищ      |String                                           | Псевдоним пользователя.                                                                        |
 |произношение |[йомиперсоннаме](../resources/yomipersonname.md) | Содержит сведения о произношении имени пользователя.                                 |
-|суффикс        |Строка                                           | Обозначения, используемые после имени пользователя. (например, "доктор".)                                       |
+|суффикс        |String                                           | Обозначения, используемые после имени пользователя. (например, "доктор".)                                       |
 |title         |String                                           | Хонорификс используется для префикса имени пользователя. (например, "доктор", "Sir", "Мадам", Mrs.)                      |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [PersonName](../resources/personname.md) в тексте отклика.
 
@@ -70,6 +70,8 @@ PATCH /me/profile/names/{id}
 ### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_personname"
@@ -88,6 +90,20 @@ Content-type: application/json
   "maiden": "maiden-value"
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-personname-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-personname-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-personname-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

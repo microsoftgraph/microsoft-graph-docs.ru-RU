@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a96dcefdd98aba1b18c70dfbd0db7609beca74f5
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 06a9f2e3627df40e19db793dc34f1962f0d9ee47
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969160"
+ms.locfileid: "37998228"
 ---
 # <a name="get-online-meeting"></a>Получение собраний по сети
 
@@ -63,7 +63,7 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
   "blockType": "request",
   "name": "get-onlineMeeting"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'123456789'
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

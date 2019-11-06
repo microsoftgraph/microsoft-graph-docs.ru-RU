@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d1cd959c4ee083ff6ec26914c5f99ccd3d8c3c8f
-ms.sourcegitcommit: 1a3ca53422fc9a8254e78af7c058e876fc9f9ef8
+ms.openlocfilehash: 7aee071949fb5d7ded115f131e732b6d3626e6fd
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2019
-ms.locfileid: "37942643"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37994851"
 ---
 # <a name="update-calendarpermission"></a>Обновление Календарпермиссион
 
@@ -49,7 +49,7 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -60,8 +60,8 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 |алловедролес|Коллекция строк| Список разрешенных для общего доступа уровней разрешений для календаря. Возможные значения: `none`, `freeBusyRead`, `limitedRead`, `read`, `write`, `delegateWithoutPrivateEventAccess`, `delegateWithPrivateEventAccess`, `custom`.|
 |emailAddress|[emailAddress](../resources/email.md)| Представляет общую папку, у которой есть доступ к календарю. Для общего доступа к общему ресурсу "Моя организация" свойство **Address** имеет значение null. |
 |id|String| Уникальный идентификатор пользователя (общего доступа), с которым открыт общий доступ к календарю. Только для чтения.|
-|исинсидеорганизатион|Логический| Значение true, если пользователь в контексте (Share) находится в той же организации, что и владелец календаря.|
-|"несъемный"|Логический| `True`, если пользователь может быть удален из списка общих папок для указанного календаря, `false` в противном случае. Пользователь "Моя организация" определяет разрешения, которые пользователи в организации имеют в указанном календаре. Вы не можете удалить "Моя организация" как общий доступ к календарю.|
+|исинсидеорганизатион|Boolean| Значение true, если пользователь в контексте (Share) находится в той же организации, что и владелец календаря.|
+|"несъемный"|Boolean| `True`, если пользователь может быть удален из списка общих папок для указанного календаря, `false` в противном случае. Пользователь "Моя организация" определяет разрешения, которые пользователи в организации имеют в указанном календаре. Вы не можете удалить "Моя организация" как общий доступ к календарю.|
 |role|календарролетипе| Текущий уровень разрешений общего календаря. Возможные значения: `none`, `freeBusyRead`, `limitedRead`, `read`, `write`, `delegateWithoutPrivateEventAccess`, `delegateWithPrivateEventAccess`, `custom`.|
 
 ## <a name="response"></a>Ответ
@@ -73,6 +73,8 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 ### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_calendarpermission"
@@ -99,6 +101,20 @@ Content-type: application/json
   "id": "RGVmYXVsdA=="
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-calendarpermission-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-calendarpermission-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-calendarpermission-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 
