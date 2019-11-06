@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 76213aa84377de6c4d469a61d8287a58d7f76a20
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: c43bded94b1c5fd683c2ca5ca72515a12ce2ec9b
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37934860"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37999411"
 ---
 # <a name="add-member"></a>Добавление участника
 Добавляйте участника в группу Office 365 или группу безопасности через свойство навигации **members**.
@@ -18,7 +18,7 @@ ms.locfileid: "37934860"
 Вы можете добавлять пользователей, контакты организации или другие группы. 
 
 > [!IMPORTANT]
-> В группы Office 365 можно добавлять только пользователей.
+> Вы можете добавлять пользователей только в группы безопасности и группы Office 365, управляемые через облако.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

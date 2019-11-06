@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph. Сведения о последних обновлениях см. в журнале изменений Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: f11f45086994fa855714950b079b5151ce348662
-ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
+ms.openlocfilehash: ed24a66fd267d3aab344166b81247b7ab334eedd
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37950411"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006517"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -164,11 +164,10 @@ GET /me/calendars/{id}/events
 
 В бета-версии предлагается обходное решение, позволяющее использовать свойство **onlineMeetingProvider** ресурса [event](/graph/api/resources/event?view=graph-rest-beta) с целью убедиться, что поставщиком является Microsoft Teams. С помощью свойства **onlineMeeting** ресурса **event** вы можете получить доступ к объекту **joinUrl**.
 
-## <a name="calls-and-online-meetings"></a>Звонки и собрания по сети
+## <a name="cloud-communications-preview"></a>Коммуникации из облака (предварительная версия)
 
-> **Примечание.** В настоящее время звонки и собрания по сети находятся в предварительной версии и доступны только в конечной точке бета-версии Microsoft Graph.
-
-- Путь навигации `/applications/{id}` не поддерживается. Навигация к приложению (даже собственному) через глобальный узел приложений не разрешена. Используйте только навигацию `/app`.
+> **Примечание.** В настоящее время коммуникации из облака находятся в предварительной версии и доступны только в конечной точке бета-версии Microsoft Graph.
+Клиент Microsoft Teams не отображает меню **Просмотреть сведения о собрании** для собраний канала, созданных с помощью API коммуникаций из облака.
 
 ## <a name="contacts"></a>Контакты
 
