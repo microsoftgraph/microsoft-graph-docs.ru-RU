@@ -3,67 +3,76 @@ title: 'вызов: ответ'
 description: Ответ на входящий вызов.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8cbdd87e037bb22972394423203f0f9218edf7b2
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 5c9b506b8fc10bcec48e503e394b813e79f8ad82
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792431"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006370"
 ---
-# <a name="call-answer"></a><span data-ttu-id="3ec10-103">вызов: ответ</span><span class="sxs-lookup"><span data-stu-id="3ec10-103">call: answer</span></span>
+# <a name="call-answer"></a><span data-ttu-id="1da82-103">вызов: ответ</span><span class="sxs-lookup"><span data-stu-id="1da82-103">call: answer</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3ec10-104">Ответ на входящий вызов.</span><span class="sxs-lookup"><span data-stu-id="3ec10-104">Answer an incoming call.</span></span>
+<span data-ttu-id="1da82-104">Разрешить интерфейсу Bot ответить на входящий [вызов](../resources/call.md).</span><span class="sxs-lookup"><span data-stu-id="1da82-104">Enable a bot to answer an incoming [call](../resources/call.md).</span></span> <span data-ttu-id="1da82-105">Запрос входящего вызова может быть приглашенным из участника группы или однорангового вызова.</span><span class="sxs-lookup"><span data-stu-id="1da82-105">The incoming call request can be an invite from a participant in a group call or a peer-to-peer call.</span></span> <span data-ttu-id="1da82-106">При получении приглашения на вызов группы в уведомлении будут содержаться параметры [чатинфо](../resources/chatinfo.md) и [митингинфо](../resources/meetinginfo.md) .</span><span class="sxs-lookup"><span data-stu-id="1da82-106">If an invite to a group call is received, the notification will contain the [chatInfo](../resources/chatinfo.md) and [meetingInfo](../resources/meetinginfo.md) parameters.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3ec10-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3ec10-105">Permissions</span></span>
-<span data-ttu-id="3ec10-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3ec10-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1da82-107">Ожидается, что Bot отвечает или [отклоняет](./call-reject.md) вызов до истечения времени ожидания вызова. Текущее значение времени ожидания — 15 секунд.</span><span class="sxs-lookup"><span data-stu-id="1da82-107">The bot is expected to answer or [reject](./call-reject.md) the call before the call times out. The current timeout value is 15 seconds.</span></span>
 
-| <span data-ttu-id="3ec10-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3ec10-108">Permission type</span></span> | <span data-ttu-id="3ec10-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="3ec10-109">Permissions (from least to most privileged)</span></span>                 |
+> <span data-ttu-id="1da82-108">**Примечание:** С помощью протокола VoIP можно получить доступ только с помощью протокола VoIP.</span><span class="sxs-lookup"><span data-stu-id="1da82-108">**Note:** The bot can only be reached by VoIP.</span></span> <span data-ttu-id="1da82-109">Звонки по PSTN не поддерживаются.</span><span class="sxs-lookup"><span data-stu-id="1da82-109">PSTN calling isn't supported.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="1da82-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1da82-110">Permissions</span></span>
+<span data-ttu-id="1da82-111">Для ответа на одноранговый звонок не требуется никаких разрешений.</span><span class="sxs-lookup"><span data-stu-id="1da82-111">You do not need any permissions to answer a peer-to-peer call.</span></span> <span data-ttu-id="1da82-112">Для присоединения к группе необходимо одно из следующих разрешений.</span><span class="sxs-lookup"><span data-stu-id="1da82-112">You need one of the following permissions to join a group call.</span></span> <span data-ttu-id="1da82-113">Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1da82-113">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+| <span data-ttu-id="1da82-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1da82-114">Permission type</span></span> | <span data-ttu-id="1da82-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1da82-115">Permissions (from least to most privileged)</span></span>                 |
 | :-------------- | :-----------------------------------------------------------|
-| <span data-ttu-id="3ec10-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3ec10-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="3ec10-111">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="3ec10-111">Not Supported</span></span>                        |
-| <span data-ttu-id="3ec10-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3ec10-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3ec10-113">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="3ec10-113">Not Supported</span></span>                        |
-| <span data-ttu-id="3ec10-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="3ec10-114">Application</span></span>     | <span data-ttu-id="3ec10-115">Нет</span><span class="sxs-lookup"><span data-stu-id="3ec10-115">None</span></span>                                                        |
+| <span data-ttu-id="1da82-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1da82-116">Delegated (work or school account)</span></span>     | <span data-ttu-id="1da82-117">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="1da82-117">Not Supported</span></span>                        |
+| <span data-ttu-id="1da82-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1da82-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1da82-119">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="1da82-119">Not Supported</span></span>                        |
+| <span data-ttu-id="1da82-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1da82-120">Application</span></span>     | <span data-ttu-id="1da82-121">Calls. Жоинграупкаллс. ALL или Calls. Жоинграупкаллсасгуест. ALL</span><span class="sxs-lookup"><span data-stu-id="1da82-121">Calls.JoinGroupCalls.All or Calls.JoinGroupCallsasGuest.All</span></span>                                                         |
 
-## <a name="http-request"></a><span data-ttu-id="3ec10-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3ec10-116">HTTP request</span></span>
-<!-- { "blockType": "ignored" } -->
+> <span data-ttu-id="1da82-122">**Примечание:** Для вызова, использующего носитель с размещением приложений, вам также потребуется разрешение Calls. Акцессмедиа. ALL.</span><span class="sxs-lookup"><span data-stu-id="1da82-122">**Note:** For a call that uses application-hosted media, you also need the Calls.AccessMedia.All permission.</span></span>                                                   |
+
+## <a name="http-request"></a><span data-ttu-id="1da82-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1da82-123">HTTP request</span></span>
+<!-- {"blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/answer
+POST /communications/calls/{id}/answer
 ```
+> <span data-ttu-id="1da82-124">**Примечание:** `/app` Путь является устаревшим.</span><span class="sxs-lookup"><span data-stu-id="1da82-124">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="1da82-125">Перемотка вперед, используйте `/communications` путь.</span><span class="sxs-lookup"><span data-stu-id="1da82-125">Going forward, use the `/communications` path.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="3ec10-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="3ec10-117">Request headers</span></span>
-| <span data-ttu-id="3ec10-118">Имя</span><span class="sxs-lookup"><span data-stu-id="3ec10-118">Name</span></span>          | <span data-ttu-id="3ec10-119">Описание</span><span class="sxs-lookup"><span data-stu-id="3ec10-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="1da82-126">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1da82-126">Request headers</span></span>
+| <span data-ttu-id="1da82-127">Имя</span><span class="sxs-lookup"><span data-stu-id="1da82-127">Name</span></span>          | <span data-ttu-id="1da82-128">Описание</span><span class="sxs-lookup"><span data-stu-id="1da82-128">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="3ec10-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="3ec10-120">Authorization</span></span> | <span data-ttu-id="3ec10-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3ec10-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1da82-129">Авторизация</span><span class="sxs-lookup"><span data-stu-id="1da82-129">Authorization</span></span> | <span data-ttu-id="1da82-p105">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1da82-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="1da82-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="1da82-132">Content-type</span></span>  | <span data-ttu-id="1da82-p106">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1da82-p106">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="3ec10-123">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="3ec10-123">Request body</span></span>
-<span data-ttu-id="3ec10-124">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="3ec10-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1da82-135">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="1da82-135">Request body</span></span>
+<span data-ttu-id="1da82-136">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="1da82-136">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="3ec10-125">Параметр</span><span class="sxs-lookup"><span data-stu-id="3ec10-125">Parameter</span></span>        | <span data-ttu-id="3ec10-126">Тип</span><span class="sxs-lookup"><span data-stu-id="3ec10-126">Type</span></span>                                     |<span data-ttu-id="3ec10-127">Описание</span><span class="sxs-lookup"><span data-stu-id="3ec10-127">Description</span></span>                                                                                                                                    |
+| <span data-ttu-id="1da82-137">Параметр</span><span class="sxs-lookup"><span data-stu-id="1da82-137">Parameter</span></span>        | <span data-ttu-id="1da82-138">Тип</span><span class="sxs-lookup"><span data-stu-id="1da82-138">Type</span></span>                                     |<span data-ttu-id="1da82-139">Описание</span><span class="sxs-lookup"><span data-stu-id="1da82-139">Description</span></span>                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|<span data-ttu-id="3ec10-128">callbackUri</span><span class="sxs-lookup"><span data-stu-id="3ec10-128">callbackUri</span></span>       |<span data-ttu-id="3ec10-129">String</span><span class="sxs-lookup"><span data-stu-id="3ec10-129">String</span></span>                                    |<span data-ttu-id="3ec10-130">Идентификатор обратного вызова или подписки, для которой будут предоставляться обратные вызовы.</span><span class="sxs-lookup"><span data-stu-id="3ec10-130">The callback or subscription ID on which callbacks will be delivered.</span></span> <span data-ttu-id="3ec10-131">Потребоваться</span><span class="sxs-lookup"><span data-stu-id="3ec10-131">(Required)</span></span>                                                               |
-|<span data-ttu-id="3ec10-132">акцептедмодалитиес</span><span class="sxs-lookup"><span data-stu-id="3ec10-132">acceptedModalities</span></span>|<span data-ttu-id="3ec10-133">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="3ec10-133">String collection</span></span>                         |<span data-ttu-id="3ec10-134">Список принимаемых модальности.</span><span class="sxs-lookup"><span data-stu-id="3ec10-134">The list of accept modalities.</span></span> <span data-ttu-id="3ec10-135">Возможные `unknown`значения:, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`,. `data`</span><span class="sxs-lookup"><span data-stu-id="3ec10-135">Possible value are: `unknown`, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`, `data`.</span></span> <span data-ttu-id="3ec10-136">Потребоваться</span><span class="sxs-lookup"><span data-stu-id="3ec10-136">(Required)</span></span> |
-|<span data-ttu-id="3ec10-137">mediaConfig</span><span class="sxs-lookup"><span data-stu-id="3ec10-137">mediaConfig</span></span>       |[<span data-ttu-id="3ec10-138">mediaConfig</span><span class="sxs-lookup"><span data-stu-id="3ec10-138">mediaConfig</span></span>](../resources/mediaconfig.md)|<span data-ttu-id="3ec10-139">Настройка мультимедиа.</span><span class="sxs-lookup"><span data-stu-id="3ec10-139">The media configuration.</span></span> <span data-ttu-id="3ec10-140">Потребоваться</span><span class="sxs-lookup"><span data-stu-id="3ec10-140">(Required)</span></span>                                                                                                            |
+|<span data-ttu-id="1da82-140">callbackUri</span><span class="sxs-lookup"><span data-stu-id="1da82-140">callbackUri</span></span>       |<span data-ttu-id="1da82-141">String</span><span class="sxs-lookup"><span data-stu-id="1da82-141">String</span></span>                                    |<span data-ttu-id="1da82-142">Это позволяет Боты предоставить определенный URI обратного вызова для текущего вызова, чтобы получать уведомления позже.</span><span class="sxs-lookup"><span data-stu-id="1da82-142">This allows bots to provide a specific callback URI for the current call to receive later notifications.</span></span> <span data-ttu-id="1da82-143">Если это свойство не задано, вместо него будет использоваться глобальный URI обратного вызова Bot.</span><span class="sxs-lookup"><span data-stu-id="1da82-143">If this property has not been set, the bot's global callback URI will be used instead.</span></span> <span data-ttu-id="1da82-144">Это должно быть `https`.</span><span class="sxs-lookup"><span data-stu-id="1da82-144">This must be `https`.</span></span>    |
+|<span data-ttu-id="1da82-145">акцептедмодалитиес</span><span class="sxs-lookup"><span data-stu-id="1da82-145">acceptedModalities</span></span>|<span data-ttu-id="1da82-146">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="1da82-146">String collection</span></span>                         |<span data-ttu-id="1da82-147">Список принимаемых модальности.</span><span class="sxs-lookup"><span data-stu-id="1da82-147">The list of accept modalities.</span></span> <span data-ttu-id="1da82-148">Возможные значения: `audio`, `video`,. `videoBasedScreenSharing`</span><span class="sxs-lookup"><span data-stu-id="1da82-148">Possible value are: `audio`, `video`, `videoBasedScreenSharing`.</span></span> <span data-ttu-id="1da82-149">Необходимо для ответа на вызов.</span><span class="sxs-lookup"><span data-stu-id="1da82-149">Required for answering a call.</span></span> |
+|<span data-ttu-id="1da82-150">mediaConfig</span><span class="sxs-lookup"><span data-stu-id="1da82-150">mediaConfig</span></span>       | <span data-ttu-id="1da82-151">[appHostedMediaConfig](../resources/apphostedmediaconfig.md) или [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)</span><span class="sxs-lookup"><span data-stu-id="1da82-151">[appHostedMediaConfig](../resources/apphostedmediaconfig.md) or [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md)</span></span> |<span data-ttu-id="1da82-152">Настройка мультимедиа.</span><span class="sxs-lookup"><span data-stu-id="1da82-152">The media configuration.</span></span> <span data-ttu-id="1da82-153">Потребоваться</span><span class="sxs-lookup"><span data-stu-id="1da82-153">(Required)</span></span>                                                                                                            |
 
-## <a name="response"></a><span data-ttu-id="3ec10-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="3ec10-141">Response</span></span>
-<span data-ttu-id="3ec10-142">Этот метод возвращает `202 Accepted` код отклика.</span><span class="sxs-lookup"><span data-stu-id="3ec10-142">This method returns `202 Accepted` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="1da82-154">Ответ</span><span class="sxs-lookup"><span data-stu-id="1da82-154">Response</span></span>
+<span data-ttu-id="1da82-155">Этот метод возвращает `202 Accepted` код отклика.</span><span class="sxs-lookup"><span data-stu-id="1da82-155">This method returns `202 Accepted` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="3ec10-143">Примеры</span><span class="sxs-lookup"><span data-stu-id="3ec10-143">Examples</span></span>
-<span data-ttu-id="3ec10-144">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="3ec10-144">The following example shows how to call this API.</span></span>
+## <a name="examples"></a><span data-ttu-id="1da82-156">Примеры</span><span class="sxs-lookup"><span data-stu-id="1da82-156">Examples</span></span>
+<span data-ttu-id="1da82-157">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="1da82-157">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="3ec10-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="3ec10-145">Request</span></span>
-<span data-ttu-id="3ec10-146">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="3ec10-146">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="1da82-158">Запрос</span><span class="sxs-lookup"><span data-stu-id="1da82-158">Request</span></span>
+<span data-ttu-id="1da82-159">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1da82-159">The following example shows the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="3ec10-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="3ec10-147">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="1da82-160">HTTP</span><span class="sxs-lookup"><span data-stu-id="1da82-160">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-answer"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/answer
+POST https://graph.microsoft.com/beta/communications/calls/{id}/answer
 Content-Type: application/json
 Content-Length: 211
 
@@ -71,30 +80,32 @@ Content-Length: 211
   "callbackUri": "callbackUri-value",
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.appHostedMediaConfig",
-    "blob": "<media config blob>"
+    "blob": "<Media Session Configuration Blob>"
   },
   "acceptedModalities": [
     "audio"
   ]
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="3ec10-148">C#</span><span class="sxs-lookup"><span data-stu-id="3ec10-148">C#</span></span>](#tab/csharp)
+<span data-ttu-id="1da82-161">Этот большой двоичный объект является сериализованной конфигурацией для сеансов мультимедиа, которая создается из пакета SDK для Media.</span><span class="sxs-lookup"><span data-stu-id="1da82-161">This blob is the serialized configuration for media sessions which is generated from the media SDK.</span></span>
+
+# <a name="ctabcsharp"></a>[<span data-ttu-id="1da82-162">C#</span><span class="sxs-lookup"><span data-stu-id="1da82-162">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-answer-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3ec10-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3ec10-149">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="1da82-163">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1da82-163">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-answer-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="3ec10-150">Цель — C</span><span class="sxs-lookup"><span data-stu-id="3ec10-150">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="1da82-164">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1da82-164">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-answer-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="3ec10-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="3ec10-151">Response</span></span>
-<span data-ttu-id="3ec10-152">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="3ec10-152">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="1da82-165">Отклик</span><span class="sxs-lookup"><span data-stu-id="1da82-165">Response</span></span>
+<span data-ttu-id="1da82-166">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="1da82-166">Here is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -105,13 +116,12 @@ Content-Length: 211
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="answer-voip-call-with-service-hosted-media"></a><span data-ttu-id="3ec10-153">Отвечать на звонки по VOIP с размещенными на службах носителями</span><span class="sxs-lookup"><span data-stu-id="3ec10-153">Answer VOIP call with service hosted media</span></span>
+### <a name="example-1-answer-a-peer-to-peer-voip-call-with-service-hosted-media"></a><span data-ttu-id="1da82-167">Пример 1: ответ одноранговый звонок VoIP с размещенными в службе носителями</span><span class="sxs-lookup"><span data-stu-id="1da82-167">Example 1: Answer a Peer-to-Peer VoIP call with service hosted media</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="3ec10-154">Уведомление — входящий</span><span class="sxs-lookup"><span data-stu-id="3ec10-154">Notification - incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="1da82-168">Уведомление — входящий</span><span class="sxs-lookup"><span data-stu-id="1da82-168">Notification - incoming</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -121,13 +131,15 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "created",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\"",
         "state": "incoming",
         "direction": "incoming",
@@ -175,19 +187,16 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="3ec10-155">Запрос</span><span class="sxs-lookup"><span data-stu-id="3ec10-155">Request</span></span>
-
-```http
-POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-```
+##### <a name="request"></a><span data-ttu-id="1da82-169">Запросить</span><span class="sxs-lookup"><span data-stu-id="1da82-169">Request</span></span>
 
 <!-- {
-  "blockType": "ignored",
-  "name": "call-answer"
+  "blockType": "request",
+  "name": "call-answer-service-hosted-media"
 }-->
-```json
+```http
+POST /communications/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
+Content-Type: application/json
+
 {
   "callbackUri": "https://bot.contoso.com/api/calls",
   "acceptedModalities": [ "audio" ],
@@ -207,17 +216,20 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="3ec10-156">Отклик</span><span class="sxs-lookup"><span data-stu-id="3ec10-156">Response</span></span>
-
+##### <a name="response"></a><span data-ttu-id="1da82-170">Ответ</span><span class="sxs-lookup"><span data-stu-id="1da82-170">Response</span></span>
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.None"
+} -->
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---establishing"></a><span data-ttu-id="3ec10-157">Установка уведомления</span><span class="sxs-lookup"><span data-stu-id="3ec10-157">Notification - establishing</span></span>
+##### <a name="notification---establishing"></a><span data-ttu-id="1da82-171">Установка уведомления</span><span class="sxs-lookup"><span data-stu-id="1da82-171">Notification - establishing</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -227,13 +239,15 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\"",
         "state": "establishing"
       }
@@ -242,11 +256,10 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a><span data-ttu-id="3ec10-158">Установленное уведомление</span><span class="sxs-lookup"><span data-stu-id="3ec10-158">Notification - established</span></span>
+##### <a name="notification---established"></a><span data-ttu-id="1da82-172">Установленное уведомление</span><span class="sxs-lookup"><span data-stu-id="1da82-172">Notification - established</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -256,13 +269,15 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\"",
         "state": "established"
       }
@@ -271,13 +286,12 @@ Content-Type: application/json
 }
 ```
 
-### <a name="answer-voip-call-with-application-hosted-media"></a><span data-ttu-id="3ec10-159">Ответ на звонок VOIP с размещенными на сервере приложениями</span><span class="sxs-lookup"><span data-stu-id="3ec10-159">Answer VOIP call with application hosted media</span></span>
+### <a name="example-2-answer-voip-call-with-application-hosted-media"></a><span data-ttu-id="1da82-173">Пример 2: ответ на звонок VOIP с размещенными в приложении носителями</span><span class="sxs-lookup"><span data-stu-id="1da82-173">Example 2: Answer VOIP call with application hosted media</span></span>
 
-##### <a name="notification---incoming"></a><span data-ttu-id="3ec10-160">Уведомление — входящий</span><span class="sxs-lookup"><span data-stu-id="3ec10-160">Notification - incoming</span></span>
+##### <a name="notification---incoming"></a><span data-ttu-id="1da82-174">Уведомление — входящий</span><span class="sxs-lookup"><span data-stu-id="1da82-174">Notification - incoming</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -287,13 +301,15 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "created",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\"",
         "state": "incoming",
         "direction": "incoming",
@@ -328,40 +344,41 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="3ec10-161">Запрос</span><span class="sxs-lookup"><span data-stu-id="3ec10-161">Request</span></span>
-
-```http
-POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-```
+##### <a name="request"></a><span data-ttu-id="1da82-175">Запросить</span><span class="sxs-lookup"><span data-stu-id="1da82-175">Request</span></span>
 
 <!-- {
-  "blockType": "ignored",
-  "name": "call-answer"
+  "blockType": "request",
+  "name": "call-answer-app-hosted-media"
 }-->
-```json
+```http
+POST /communications/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
+Content-Type: application/json
+
 {
   "callbackUri": "https://bot.contoso.com/api/calls",
   "acceptedModalities": [ "audio" ],
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.appHostedMediaConfig",
-    "blob": "<media config blob>"
+    "blob": "<Media Session Configuration Blob>"
   }
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="3ec10-162">Отклик</span><span class="sxs-lookup"><span data-stu-id="3ec10-162">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="1da82-176">Ответ</span><span class="sxs-lookup"><span data-stu-id="1da82-176">Response</span></span>
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.None"
+} -->
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---establishing"></a><span data-ttu-id="3ec10-163">Установка уведомления</span><span class="sxs-lookup"><span data-stu-id="3ec10-163">Notification - establishing</span></span>
+##### <a name="notification---establishing"></a><span data-ttu-id="1da82-177">Установка уведомления</span><span class="sxs-lookup"><span data-stu-id="1da82-177">Notification - establishing</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -371,13 +388,15 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\"",
         "state": "establishing"
       }
@@ -386,11 +405,10 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a><span data-ttu-id="3ec10-164">Установленное уведомление</span><span class="sxs-lookup"><span data-stu-id="3ec10-164">Notification - established</span></span>
+##### <a name="notification---established"></a><span data-ttu-id="1da82-178">Установленное уведомление</span><span class="sxs-lookup"><span data-stu-id="1da82-178">Notification - established</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -400,13 +418,15 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896",
         "@odata.etag": "W/\"5445\"",
         "state": "established"
       }

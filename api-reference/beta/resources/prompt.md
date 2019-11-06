@@ -3,28 +3,28 @@ title: Тип ресурса Prompt
 description: Базовый тип действия приглашения.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 297a5017cbc7cb607ce3ef014d7da296b73ecb10
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: baaa98894c021fce21ed64fcecf7e5c24b335867
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965574"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006573"
 ---
-# <a name="prompt-resource-type"></a><span data-ttu-id="ccae8-103">Тип ресурса Prompt</span><span class="sxs-lookup"><span data-stu-id="ccae8-103">prompt resource type</span></span>
+# <a name="prompt-resource-type"></a><span data-ttu-id="7e916-103">Тип ресурса Prompt</span><span class="sxs-lookup"><span data-stu-id="7e916-103">prompt resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ccae8-104">Базовый тип действия приглашения.</span><span class="sxs-lookup"><span data-stu-id="ccae8-104">Prompt action base type.</span></span>
+<span data-ttu-id="7e916-104">Базовый тип действия приглашения.</span><span class="sxs-lookup"><span data-stu-id="7e916-104">Prompt action base type.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="ccae8-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="ccae8-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="7e916-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="7e916-105">Properties</span></span>
 
-<span data-ttu-id="ccae8-106">Нет</span><span class="sxs-lookup"><span data-stu-id="ccae8-106">None</span></span>
+<span data-ttu-id="7e916-106">Нет</span><span class="sxs-lookup"><span data-stu-id="7e916-106">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="ccae8-107">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="ccae8-107">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7e916-107">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="7e916-107">JSON representation</span></span>
 
-<span data-ttu-id="ccae8-108">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ccae8-108">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="7e916-108">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7e916-108">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

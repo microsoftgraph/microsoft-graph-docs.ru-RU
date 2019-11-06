@@ -3,30 +3,34 @@ title: Тип ресурса Митингинфо
 description: Сведения о собрании, указанные для создания или присоединения к собранию.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: da3e89e0aa28868debd4b6ea98291fa88b42bb0b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ef9c2b86c9eb745ae6282a5d3cbce8a76dc31139
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966878"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006643"
 ---
-# <a name="meetinginfo-resource-type"></a><span data-ttu-id="5b4b9-103">Тип ресурса Митингинфо</span><span class="sxs-lookup"><span data-stu-id="5b4b9-103">meetingInfo resource type</span></span>
+# <a name="meetinginfo-resource-type"></a><span data-ttu-id="88d4c-103">Тип ресурса Митингинфо</span><span class="sxs-lookup"><span data-stu-id="88d4c-103">meetingInfo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5b4b9-104">Сведения о собрании, указанные для создания или присоединения к собранию.</span><span class="sxs-lookup"><span data-stu-id="5b4b9-104">Meeting information specified to create or join a meeting.</span></span>
+<span data-ttu-id="88d4c-104">Это абстрактный класс, который содержит сведения о собрании.</span><span class="sxs-lookup"><span data-stu-id="88d4c-104">This is an abstract class that contains meeting specific information.</span></span>
+ 
+<span data-ttu-id="88d4c-105">Чтобы присоединиться к существующему собранию, необходимо либо указать [организермитингинфо](organizermeetinginfo.md) в сочетании с [чатинфо](./chatinfo.md), либо только с [токенмитингинфо](tokenmeetinginfo.md).</span><span class="sxs-lookup"><span data-stu-id="88d4c-105">To join an existing meeting, you must either specify the [organizerMeetingInfo](organizermeetinginfo.md) in combination with the [chatInfo](./chatinfo.md), or just the the [tokenMeetingInfo](tokenmeetinginfo.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="5b4b9-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="5b4b9-105">Properties</span></span>
 
-| <span data-ttu-id="5b4b9-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="5b4b9-106">Property</span></span>       | <span data-ttu-id="5b4b9-107">Тип</span><span class="sxs-lookup"><span data-stu-id="5b4b9-107">Type</span></span>    | <span data-ttu-id="5b4b9-108">Описание</span><span class="sxs-lookup"><span data-stu-id="5b4b9-108">Description</span></span>|
-|:---------------|:--------|:----------|
-| <span data-ttu-id="5b4b9-109">Алловконверсатионвисаусост</span><span class="sxs-lookup"><span data-stu-id="5b4b9-109">allowConversationWithoutHost</span></span> | <span data-ttu-id="5b4b9-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="5b4b9-110">Boolean</span></span> |  |
+## <a name="derived-types"></a><span data-ttu-id="88d4c-106">Производные типы</span><span class="sxs-lookup"><span data-stu-id="88d4c-106">Derived types</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="5b4b9-111">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="5b4b9-111">JSON representation</span></span>
+| <span data-ttu-id="88d4c-107">Тип</span><span class="sxs-lookup"><span data-stu-id="88d4c-107">Type</span></span>                                                 | <span data-ttu-id="88d4c-108">Описание</span><span class="sxs-lookup"><span data-stu-id="88d4c-108">Description</span></span>                                                         |
+|:-----------------------------------------------------|:--------------------------------------------------------------------|
+| [<span data-ttu-id="88d4c-109">организермитингинфо</span><span class="sxs-lookup"><span data-stu-id="88d4c-109">organizerMeetingInfo</span></span>](./organizermeetinginfo.md)    | <span data-ttu-id="88d4c-110">Сведения об организаторе собрания</span><span class="sxs-lookup"><span data-stu-id="88d4c-110">Details about the organizer of the meeting</span></span>                          |
+| [<span data-ttu-id="88d4c-111">токенмитингинфо</span><span class="sxs-lookup"><span data-stu-id="88d4c-111">tokenMeetingInfo</span></span>](tokenmeetinginfo.md)              | <span data-ttu-id="88d4c-112">Зашифрованный маркер, содержащий сведения о собрании</span><span class="sxs-lookup"><span data-stu-id="88d4c-112">An encrypted token that contains the information about the meeting</span></span>  |
 
-<span data-ttu-id="5b4b9-112">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5b4b9-112">The following is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="88d4c-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="88d4c-113">JSON representation</span></span>
+
+<span data-ttu-id="88d4c-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="88d4c-114">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -37,7 +41,6 @@ ms.locfileid: "35966878"
 }-->
 ```json
 {
-  "allowConversationWithoutHost": true
 }
 ```
 

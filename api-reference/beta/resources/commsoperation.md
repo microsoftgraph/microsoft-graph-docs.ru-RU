@@ -3,41 +3,42 @@ title: Тип ресурса Коммсоператион
 description: Состояние определенных длительных операций.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: a10b652179a8a3d369c07d34cb2681c4986b3abf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 07be6f3b5cf9e3d5e7a1a1300a94da9b5204a68a
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012900"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006700"
 ---
-# <a name="commsoperation-resource-type"></a><span data-ttu-id="a5db1-103">Тип ресурса Коммсоператион</span><span class="sxs-lookup"><span data-stu-id="a5db1-103">commsOperation resource type</span></span>
+# <a name="commsoperation-resource-type"></a><span data-ttu-id="cd339-103">Тип ресурса Коммсоператион</span><span class="sxs-lookup"><span data-stu-id="cd339-103">commsOperation resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a5db1-104">Состояние определенных длительных операций.</span><span class="sxs-lookup"><span data-stu-id="a5db1-104">The status of certain long-running operations.</span></span>
+<span data-ttu-id="cd339-104">Представляет состояние определенных длительных операций.</span><span class="sxs-lookup"><span data-stu-id="cd339-104">Represents the status of certain long-running operations.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="a5db1-105">Методы</span><span class="sxs-lookup"><span data-stu-id="a5db1-105">Methods</span></span>
-<span data-ttu-id="a5db1-106">Нет</span><span class="sxs-lookup"><span data-stu-id="a5db1-106">None</span></span>
+<span data-ttu-id="cd339-105">Этот ресурс может быть возвращен в качестве ответа на действие или в качестве содержимого [коммснотификатион](commsNotification.md).</span><span class="sxs-lookup"><span data-stu-id="cd339-105">This resource can be returned as the response to an action, or as the content of a [commsNotification](commsNotification.md).</span></span>  
 
-## <a name="properties"></a><span data-ttu-id="a5db1-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="a5db1-107">Properties</span></span>
+<span data-ttu-id="cd339-106">При возвращении в качестве ответа на действие состояние указывает, будут ли отображаться последующие уведомления.</span><span class="sxs-lookup"><span data-stu-id="cd339-106">When it is returned as a response to an action, the status indicates whether there will be subsequent notifications.</span></span> <span data-ttu-id="cd339-107">Если, например, операция со статусом `completed` или `failed` возвращена, дальнейшая операция с каналом уведомлений не будет выполняться.</span><span class="sxs-lookup"><span data-stu-id="cd339-107">If, for example, an operation with status of `completed` or `failed` is returned,  there will not be any subsequent operation via the notification channel.</span></span> 
 
-| <span data-ttu-id="a5db1-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="a5db1-108">Property</span></span>           | <span data-ttu-id="a5db1-109">Тип</span><span class="sxs-lookup"><span data-stu-id="a5db1-109">Type</span></span>                        | <span data-ttu-id="a5db1-110">Описание</span><span class="sxs-lookup"><span data-stu-id="a5db1-110">Description</span></span>                                                                     |
+<span data-ttu-id="cd339-108">Если `null` операция или операция со статусом `notStarted` или `running` возвращены, последующие обновления будут поступать через канал уведомлений.</span><span class="sxs-lookup"><span data-stu-id="cd339-108">If a `null` operation, or an operation with a status of `notStarted` or `running` is returned, subsequent updates will come via the notification channel.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="cd339-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="cd339-109">Properties</span></span>
+
+| <span data-ttu-id="cd339-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="cd339-110">Property</span></span>           | <span data-ttu-id="cd339-111">Тип</span><span class="sxs-lookup"><span data-stu-id="cd339-111">Type</span></span>                        | <span data-ttu-id="cd339-112">Описание</span><span class="sxs-lookup"><span data-stu-id="cd339-112">Description</span></span>                                                                     |
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
-| <span data-ttu-id="a5db1-111">Контекст</span><span class="sxs-lookup"><span data-stu-id="a5db1-111">clientContext</span></span>      | <span data-ttu-id="a5db1-112">String</span><span class="sxs-lookup"><span data-stu-id="a5db1-112">String</span></span>                      | <span data-ttu-id="a5db1-113">Контекст клиента.</span><span class="sxs-lookup"><span data-stu-id="a5db1-113">The client context.</span></span>                                                             |
-| <span data-ttu-id="a5db1-114">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="a5db1-114">createdDateTime</span></span>    | <span data-ttu-id="a5db1-115">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="a5db1-115">DateTimeOffset</span></span>              | <span data-ttu-id="a5db1-116">Время начала операции.</span><span class="sxs-lookup"><span data-stu-id="a5db1-116">The start time of the operation.</span></span>                                                |
-| <span data-ttu-id="a5db1-117">id</span><span class="sxs-lookup"><span data-stu-id="a5db1-117">id</span></span>                 | <span data-ttu-id="a5db1-118">Строка</span><span class="sxs-lookup"><span data-stu-id="a5db1-118">String</span></span>                      | <span data-ttu-id="a5db1-119">Идентификатор операции. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="a5db1-119">The operation id. Read-only.</span></span> <span data-ttu-id="a5db1-120">Создается сервером.</span><span class="sxs-lookup"><span data-stu-id="a5db1-120">Server generated.</span></span>                                  |
-| <span data-ttu-id="a5db1-121">Ластактиондатетиме</span><span class="sxs-lookup"><span data-stu-id="a5db1-121">lastActionDateTime</span></span> | <span data-ttu-id="a5db1-122">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="a5db1-122">DateTimeOffset</span></span>              | <span data-ttu-id="a5db1-123">Время последнего действия операции.</span><span class="sxs-lookup"><span data-stu-id="a5db1-123">The time of the last action of the operation.</span></span>                                   |
-| <span data-ttu-id="a5db1-124">resultInfo</span><span class="sxs-lookup"><span data-stu-id="a5db1-124">resultInfo</span></span>         | [<span data-ttu-id="a5db1-125">resultInfo</span><span class="sxs-lookup"><span data-stu-id="a5db1-125">resultInfo</span></span>](resultinfo.md) | <span data-ttu-id="a5db1-126">Сведения о результате.</span><span class="sxs-lookup"><span data-stu-id="a5db1-126">The result information.</span></span> <span data-ttu-id="a5db1-127">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="a5db1-127">Read-only.</span></span> <span data-ttu-id="a5db1-128">Создается сервером.</span><span class="sxs-lookup"><span data-stu-id="a5db1-128">Server generated.</span></span>                            |
-| <span data-ttu-id="a5db1-129">status</span><span class="sxs-lookup"><span data-stu-id="a5db1-129">status</span></span>             | <span data-ttu-id="a5db1-130">String</span><span class="sxs-lookup"><span data-stu-id="a5db1-130">String</span></span>                      | <span data-ttu-id="a5db1-131">Возможные значения: `notStarted`, `running`, `completed`, `failed`.</span><span class="sxs-lookup"><span data-stu-id="a5db1-131">Possible values are: `notStarted`, `running`, `completed`, `failed`.</span></span> <span data-ttu-id="a5db1-132">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="a5db1-132">Read-only.</span></span> |
+| <span data-ttu-id="cd339-113">Контекст</span><span class="sxs-lookup"><span data-stu-id="cd339-113">clientContext</span></span>      | <span data-ttu-id="cd339-114">String</span><span class="sxs-lookup"><span data-stu-id="cd339-114">String</span></span>                      | <span data-ttu-id="cd339-115">Уникальная строка контекста клиента.</span><span class="sxs-lookup"><span data-stu-id="cd339-115">Unique Client Context string.</span></span> <span data-ttu-id="cd339-116">Максимальный лимит — 256 символов.</span><span class="sxs-lookup"><span data-stu-id="cd339-116">Max limit is 256 chars.</span></span>                           |
+| <span data-ttu-id="cd339-117">id</span><span class="sxs-lookup"><span data-stu-id="cd339-117">id</span></span>                 | <span data-ttu-id="cd339-118">Строка</span><span class="sxs-lookup"><span data-stu-id="cd339-118">String</span></span>                      | <span data-ttu-id="cd339-119">ИДЕНТИФИКАТОР операции.</span><span class="sxs-lookup"><span data-stu-id="cd339-119">The operation ID.</span></span> <span data-ttu-id="cd339-120">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="cd339-120">Read-only.</span></span>                                                    |
+| <span data-ttu-id="cd339-121">resultInfo</span><span class="sxs-lookup"><span data-stu-id="cd339-121">resultInfo</span></span>         | [<span data-ttu-id="cd339-122">resultInfo</span><span class="sxs-lookup"><span data-stu-id="cd339-122">resultInfo</span></span>](resultinfo.md) | <span data-ttu-id="cd339-123">Сведения о результате.</span><span class="sxs-lookup"><span data-stu-id="cd339-123">The result information.</span></span> <span data-ttu-id="cd339-124">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="cd339-124">Read-only.</span></span>                                              |
+| <span data-ttu-id="cd339-125">status</span><span class="sxs-lookup"><span data-stu-id="cd339-125">status</span></span>             | <span data-ttu-id="cd339-126">String</span><span class="sxs-lookup"><span data-stu-id="cd339-126">String</span></span>                      | <span data-ttu-id="cd339-127">Возможные значения: `notStarted`, `running`, `completed`, `failed`.</span><span class="sxs-lookup"><span data-stu-id="cd339-127">Possible values are: `notStarted`, `running`, `completed`, `failed`.</span></span> <span data-ttu-id="cd339-128">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="cd339-128">Read-only.</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="a5db1-133">Отношения</span><span class="sxs-lookup"><span data-stu-id="a5db1-133">Relationships</span></span>
-<span data-ttu-id="a5db1-134">Нет</span><span class="sxs-lookup"><span data-stu-id="a5db1-134">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="cd339-129">Отношения</span><span class="sxs-lookup"><span data-stu-id="cd339-129">Relationships</span></span>
+<span data-ttu-id="cd339-130">Нет</span><span class="sxs-lookup"><span data-stu-id="cd339-130">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="a5db1-135">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a5db1-135">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="cd339-131">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="cd339-131">JSON representation</span></span>
 
-<span data-ttu-id="a5db1-136">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a5db1-136">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="cd339-132">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="cd339-132">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -49,31 +50,9 @@ ms.locfileid: "36012900"
 ```json
 {
   "clientContext": "String",
-  "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "lastActionDateTime": "String (timestamp)",
   "resultInfo": { "@odata.type": "microsoft.graph.resultInfo" },
   "status": "notStarted | running | completed | failed"
-}
-```
-
-## <a name="example"></a><span data-ttu-id="a5db1-137">Пример</span><span class="sxs-lookup"><span data-stu-id="a5db1-137">Example</span></span>
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsOperation"
-}-->
-```json
-{
-  "clientContext": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "createdDateTime": "2018-09-06T15:58:41Z",
-  "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "lastActionDateTime": "2018-09-06T15:58:41Z",
-  "resultInfo": {
-    "@odata.type": "microsoft.graph.resultInfo",
-    "code": "200"
-  },
-  "status": "completed"
 }
 ```
 

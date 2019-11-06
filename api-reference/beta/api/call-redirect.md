@@ -3,273 +3,406 @@ title: 'вызов: redirect'
 description: Перенаправление входящего вызова.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7ea4e128f6cbbdd8184afdcb7113271fa32510df
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: db432612507c9ebafd595350575557f52450fe4f
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792271"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38005939"
 ---
-# <a name="call-redirect"></a><span data-ttu-id="a3e00-103">вызов: redirect</span><span class="sxs-lookup"><span data-stu-id="a3e00-103">call: redirect</span></span>
+# <a name="call-redirect"></a><span data-ttu-id="ccfa0-103">вызов: redirect</span><span class="sxs-lookup"><span data-stu-id="ccfa0-103">call: redirect</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a3e00-104">Перенаправление входящего вызова.</span><span class="sxs-lookup"><span data-stu-id="a3e00-104">Redirect an incoming call.</span></span>
+<span data-ttu-id="ccfa0-104">Перенаправление входящего звонка, который еще не [отвечал](./call-answer.md) или не был [отклонен](./call-reject.md) .</span><span class="sxs-lookup"><span data-stu-id="ccfa0-104">Redirect an incoming call that hasn't been [answered](./call-answer.md) or [rejected](./call-reject.md) yet.</span></span> <span data-ttu-id="ccfa0-105">Термины "перенаправление" и "переадресация" используются взаимозаменяемыми.</span><span class="sxs-lookup"><span data-stu-id="ccfa0-105">The terms "redirecting" and "forwarding" a call are used interchangeably.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a3e00-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a3e00-105">Permissions</span></span>
-<span data-ttu-id="a3e00-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a3e00-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ccfa0-106">Ожидается, что Bot перенаправляет вызов до истечения времени ожидания вызова. Текущее значение времени ожидания — 15 секунд.</span><span class="sxs-lookup"><span data-stu-id="ccfa0-106">The bot is expected to redirect the call before the call times out. The current timeout value is 15 seconds.</span></span>
 
-| <span data-ttu-id="a3e00-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a3e00-108">Permission type</span></span> | <span data-ttu-id="a3e00-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a3e00-109">Permissions (from least to most privileged)</span></span>         |
+## <a name="permissions"></a><span data-ttu-id="ccfa0-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ccfa0-107">Permissions</span></span>
+
+<span data-ttu-id="ccfa0-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ccfa0-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+| <span data-ttu-id="ccfa0-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ccfa0-110">Permission type</span></span> | <span data-ttu-id="ccfa0-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ccfa0-111">Permissions (from least to most privileged)</span></span>         |
 | :-------------- | :-------------------------------------------------- |
-| <span data-ttu-id="a3e00-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a3e00-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="a3e00-111">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="a3e00-111">Not Supported</span></span>                |
-| <span data-ttu-id="a3e00-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a3e00-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a3e00-113">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="a3e00-113">Not Supported</span></span>                |
-| <span data-ttu-id="a3e00-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a3e00-114">Application</span></span>     | <span data-ttu-id="a3e00-115">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="a3e00-115">Calls.Initiate.All</span></span>                                  |
+| <span data-ttu-id="ccfa0-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ccfa0-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="ccfa0-113">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="ccfa0-113">Not Supported</span></span>                |
+| <span data-ttu-id="ccfa0-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ccfa0-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ccfa0-115">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="ccfa0-115">Not Supported</span></span>                |
+| <span data-ttu-id="ccfa0-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ccfa0-116">Application</span></span>     | <span data-ttu-id="ccfa0-117">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="ccfa0-117">Calls.Initiate.All</span></span>                                  |
 
-## <a name="http-request"></a><span data-ttu-id="a3e00-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a3e00-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ccfa0-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ccfa0-118">HTTP request</span></span>
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 POST /app/calls/{id}/redirect
-POST /applications/{id}/calls/{id}/redirect
+POST /communications/calls/{id}/redirect
+```
+> <span data-ttu-id="ccfa0-119">**Примечание:** `/app` Путь является устаревшим.</span><span class="sxs-lookup"><span data-stu-id="ccfa0-119">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="ccfa0-120">Перемотка вперед, используйте `/communications` путь.</span><span class="sxs-lookup"><span data-stu-id="ccfa0-120">Going forward, use the `/communications` path.</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="ccfa0-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ccfa0-121">Request headers</span></span>
+
+| <span data-ttu-id="ccfa0-122">Имя</span><span class="sxs-lookup"><span data-stu-id="ccfa0-122">Name</span></span>          | <span data-ttu-id="ccfa0-123">Описание</span><span class="sxs-lookup"><span data-stu-id="ccfa0-123">Description</span></span>               |
+|:--------------|:--------------------------|
+| <span data-ttu-id="ccfa0-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ccfa0-124">Authorization</span></span> | <span data-ttu-id="ccfa0-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ccfa0-p104">Bearer {token}. Required.</span></span> |
+
+## <a name="request-body"></a><span data-ttu-id="ccfa0-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ccfa0-127">Request body</span></span>
+
+<span data-ttu-id="ccfa0-128">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="ccfa0-128">In the request body, provide a JSON object with the following parameters.</span></span>
+
+| <span data-ttu-id="ccfa0-129">Параметр</span><span class="sxs-lookup"><span data-stu-id="ccfa0-129">Parameter</span></span>      | <span data-ttu-id="ccfa0-130">Тип</span><span class="sxs-lookup"><span data-stu-id="ccfa0-130">Type</span></span>    |<span data-ttu-id="ccfa0-131">Описание</span><span class="sxs-lookup"><span data-stu-id="ccfa0-131">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="ccfa0-132">targets</span><span class="sxs-lookup"><span data-stu-id="ccfa0-132">targets</span></span>|<span data-ttu-id="ccfa0-133">Коллекция [инвитатионпартиЦипантинфо](../resources/invitationparticipantinfo.md)</span><span class="sxs-lookup"><span data-stu-id="ccfa0-133">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection</span></span>|<span data-ttu-id="ccfa0-134">Целевые участники операции перенаправления.</span><span class="sxs-lookup"><span data-stu-id="ccfa0-134">The target participants of the redirect operation.</span></span> <span data-ttu-id="ccfa0-135">Если указано несколько целевых объектов, вызывается выполнение.</span><span class="sxs-lookup"><span data-stu-id="ccfa0-135">If more than one target is specified, it's a simulring call.</span></span> <span data-ttu-id="ccfa0-136">Это означает, что все целевые объекты будут находиться в одном и том же периоде, и будет подключен только первый целевой объект.</span><span class="sxs-lookup"><span data-stu-id="ccfa0-136">This means that all of the targets will be rang at the same time and only the first target that picks up will be connected.</span></span> <span data-ttu-id="ccfa0-137">Поддерживается до 25 целевых объектов для выполнение.</span><span class="sxs-lookup"><span data-stu-id="ccfa0-137">We support up to 25 targets for simulring.</span></span>
+|<span data-ttu-id="ccfa0-138">таржетдиспоситион</span><span class="sxs-lookup"><span data-stu-id="ccfa0-138">targetDisposition</span></span>|<span data-ttu-id="ccfa0-139">String</span><span class="sxs-lookup"><span data-stu-id="ccfa0-139">String</span></span>|<span data-ttu-id="ccfa0-140">Устаревшие Возможные значения: `default` , `simultaneousRing` ,. `forward`</span><span class="sxs-lookup"><span data-stu-id="ccfa0-140">(Deprecated) The possible values are: `default` , `simultaneousRing` , `forward`.</span></span> <span data-ttu-id="ccfa0-141">Этот параметр является нерекомендуемым, мы автоматически вычислим, является ли это вызов переадресацией или вызовом выполнение из указанного количества целевых объектов.</span><span class="sxs-lookup"><span data-stu-id="ccfa0-141">This parameter is deprecated, we will automatically identify whether it's a forward call or simulring call from the number of targets provided.</span></span>|
+|<span data-ttu-id="ccfa0-142">timeout</span><span class="sxs-lookup"><span data-stu-id="ccfa0-142">timeout</span></span>|<span data-ttu-id="ccfa0-143">Int32</span><span class="sxs-lookup"><span data-stu-id="ccfa0-143">Int32</span></span>|<span data-ttu-id="ccfa0-144">Время ожидания (в секундах) для операции перенаправления.</span><span class="sxs-lookup"><span data-stu-id="ccfa0-144">The timeout (in seconds) for the redirect operation.</span></span> <span data-ttu-id="ccfa0-145">Диапазон значений времени ожидания составляет от 15 до 90 секунд включительно.</span><span class="sxs-lookup"><span data-stu-id="ccfa0-145">The range of the timeout value is between 15 and 90 seconds inclusive.</span></span> <span data-ttu-id="ccfa0-146">Значение времени ожидания по умолчанию составляет 55 секунд для одной цели и 60 секунд для нескольких целевых объектов (подлежит изменению).</span><span class="sxs-lookup"><span data-stu-id="ccfa0-146">The default timeout value is 55 seconds for one target and 60 seconds for multiple targets (subject to change).</span></span> |
+|<span data-ttu-id="ccfa0-147">масккалли</span><span class="sxs-lookup"><span data-stu-id="ccfa0-147">maskCallee</span></span>|<span data-ttu-id="ccfa0-148">Boolean</span><span class="sxs-lookup"><span data-stu-id="ccfa0-148">Boolean</span></span>|<span data-ttu-id="ccfa0-149">Указывает, следует ли скрыть вызываемого абонента от вызывающего абонента.</span><span class="sxs-lookup"><span data-stu-id="ccfa0-149">Indicates whether the callee is to be hidden from the caller.</span></span> <span data-ttu-id="ccfa0-150">Если этот параметр имеет значение true, идентификатором вызываемого абонента является "bot".</span><span class="sxs-lookup"><span data-stu-id="ccfa0-150">If true, then the callee identity is the bot identity.</span></span> <span data-ttu-id="ccfa0-151">Значение по умолчанию: false.</span><span class="sxs-lookup"><span data-stu-id="ccfa0-151">Default: false.</span></span>|
+|<span data-ttu-id="ccfa0-152">масккаллер</span><span class="sxs-lookup"><span data-stu-id="ccfa0-152">maskCaller</span></span>|<span data-ttu-id="ccfa0-153">Boolean</span><span class="sxs-lookup"><span data-stu-id="ccfa0-153">Boolean</span></span>|<span data-ttu-id="ccfa0-154">Указывает, следует ли скрыть абонента от вызываемого абонента.</span><span class="sxs-lookup"><span data-stu-id="ccfa0-154">Indicates whether the caller is to be hidden from the callee.</span></span> <span data-ttu-id="ccfa0-155">Если задано значение true, идентификатором звонящего является идентификатор Bot.</span><span class="sxs-lookup"><span data-stu-id="ccfa0-155">If true, then the caller identity is the bot identity.</span></span> <span data-ttu-id="ccfa0-156">Значение по умолчанию: false.</span><span class="sxs-lookup"><span data-stu-id="ccfa0-156">Default: false.</span></span>|
+|<span data-ttu-id="ccfa0-157">callbackUri</span><span class="sxs-lookup"><span data-stu-id="ccfa0-157">callbackUri</span></span>|<span data-ttu-id="ccfa0-158">String</span><span class="sxs-lookup"><span data-stu-id="ccfa0-158">String</span></span>|<span data-ttu-id="ccfa0-159">Это позволяет Боты предоставить определенный URI обратного вызова для текущего вызова, чтобы получать уведомления позже.</span><span class="sxs-lookup"><span data-stu-id="ccfa0-159">This allows bots to provide a specific callback URI for the current call to receive later notifications.</span></span> <span data-ttu-id="ccfa0-160">Если это свойство не задано, вместо него будет использоваться глобальный URI обратного вызова Bot.</span><span class="sxs-lookup"><span data-stu-id="ccfa0-160">If this property has not been set, the bot's global callback URI will be used instead.</span></span> <span data-ttu-id="ccfa0-161">Это должно быть `https`.</span><span class="sxs-lookup"><span data-stu-id="ccfa0-161">This must be `https`.</span></span>|
+
+## <a name="response"></a><span data-ttu-id="ccfa0-162">Отклик</span><span class="sxs-lookup"><span data-stu-id="ccfa0-162">Response</span></span>
+<span data-ttu-id="ccfa0-163">В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`.</span><span class="sxs-lookup"><span data-stu-id="ccfa0-163">If successful, this method returns a `202 Accepted` response code.</span></span>
+
+## <a name="examples"></a><span data-ttu-id="ccfa0-164">Примеры</span><span class="sxs-lookup"><span data-stu-id="ccfa0-164">Examples</span></span>
+<span data-ttu-id="ccfa0-165">В этих примерах рассматривается рабочий процесс уведомления о входящем вызове и способ перенаправления этого вызова.</span><span class="sxs-lookup"><span data-stu-id="ccfa0-165">These examples will cover a workflow of an incoming call notification and how that call will be redirected.</span></span>
+
+> <span data-ttu-id="ccfa0-166">**Примечание:** Показанные здесь объекты отклика могут быть сокращены для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="ccfa0-166">**Note:** The response objects shown here might be shortened for readability.</span></span> <span data-ttu-id="ccfa0-167">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ccfa0-167">All the properties will be returned from an actual call.</span></span>
+
+### <a name="example-1-forward-a-call-to-a-target"></a><span data-ttu-id="ccfa0-168">Пример 1: Переадресация вызова на целевой объект</span><span class="sxs-lookup"><span data-stu-id="ccfa0-168">Example 1: Forward a Call to a Target</span></span>
+
+##### <a name="notification---incoming"></a><span data-ttu-id="ccfa0-169">Уведомление — входящий</span><span class="sxs-lookup"><span data-stu-id="ccfa0-169">Notification - incoming</span></span>
+<!-- {
+  "blockType": "example", 
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "created",
+      "resourceUrl": "/communications/calls/491f0b00-ffff-4bc9-a43e-b226498ec22a",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "incoming",
+        "direction": "incoming",
+        "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039",
+        "source": {
+          "@odata.type": "#microsoft.graph.participantInfo",
+          "identity": {
+            "@odata.type": "#microsoft.graph.identitySet",
+            "user": {
+              "@odata.type": "#microsoft.graph.identity",
+              "id": "8d1e6ab6-26c5-4e22-a1bc-06ea7343958e",
+              "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f"
+            }
+          },
+          "region": "amer",
+        },
+        "targets": [
+          {
+            "@odata.type": "#microsoft.graph.participantInfo",
+            "identity": {
+              "@odata.type": "#microsoft.graph.identitySet",
+              "application": {
+                "@odata.type": "#microsoft.graph.identity",
+                "displayName": "test bot",
+                "id": "24701998-1a73-4d42-8085-bf46ed0ae039"
+              }
+            }
+          }
+        ],
+        "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f",
+        "myParticipantId": "c339cede-4bd6-4f20-ab9f-3a13e65f6d00",
+        "id": "491f0b00-ffff-4bc9-a43e-b226498ec22a"
+      }
+    }
+  ]
+}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a3e00-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a3e00-117">Request headers</span></span>
-| <span data-ttu-id="a3e00-118">Имя</span><span class="sxs-lookup"><span data-stu-id="a3e00-118">Name</span></span>          | <span data-ttu-id="a3e00-119">Описание</span><span class="sxs-lookup"><span data-stu-id="a3e00-119">Description</span></span>               |
-|:--------------|:--------------------------|
-| <span data-ttu-id="a3e00-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="a3e00-120">Authorization</span></span> | <span data-ttu-id="a3e00-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a3e00-p102">Bearer {token}. Required.</span></span> |
+##### <a name="request"></a><span data-ttu-id="ccfa0-170">Запрос</span><span class="sxs-lookup"><span data-stu-id="ccfa0-170">Request</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="a3e00-123">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="a3e00-123">Request body</span></span>
-<span data-ttu-id="a3e00-124">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="a3e00-124">In the request body, provide a JSON object with the following parameters.</span></span>
-
-| <span data-ttu-id="a3e00-125">Параметр</span><span class="sxs-lookup"><span data-stu-id="a3e00-125">Parameter</span></span>      | <span data-ttu-id="a3e00-126">Тип</span><span class="sxs-lookup"><span data-stu-id="a3e00-126">Type</span></span>    |<span data-ttu-id="a3e00-127">Описание</span><span class="sxs-lookup"><span data-stu-id="a3e00-127">Description</span></span>|
-|:---------------|:--------|:----------|
-|<span data-ttu-id="a3e00-128">targets</span><span class="sxs-lookup"><span data-stu-id="a3e00-128">targets</span></span>|<span data-ttu-id="a3e00-129">Коллекция [инвитатионпартиЦипантинфо](../resources/invitationparticipantinfo.md)</span><span class="sxs-lookup"><span data-stu-id="a3e00-129">[invitationParticipantInfo](../resources/invitationparticipantinfo.md) collection</span></span>|<span data-ttu-id="a3e00-130">Целевые участники операции перенаправления.</span><span class="sxs-lookup"><span data-stu-id="a3e00-130">The target participants of the redirect operation.</span></span>|
-|<span data-ttu-id="a3e00-131">таржетдиспоситион</span><span class="sxs-lookup"><span data-stu-id="a3e00-131">targetDisposition</span></span>|<span data-ttu-id="a3e00-132">String.</span><span class="sxs-lookup"><span data-stu-id="a3e00-132">String</span></span>|<span data-ttu-id="a3e00-133">Возможные значения:`default`</span><span class="sxs-lookup"><span data-stu-id="a3e00-133">The possible value is: `default`</span></span>|
-|<span data-ttu-id="a3e00-134">timeout</span><span class="sxs-lookup"><span data-stu-id="a3e00-134">timeout</span></span>|<span data-ttu-id="a3e00-135">Int32</span><span class="sxs-lookup"><span data-stu-id="a3e00-135">Int32</span></span>|<span data-ttu-id="a3e00-136">Время ожидания в секундах для операции перенаправления.</span><span class="sxs-lookup"><span data-stu-id="a3e00-136">The timeout in seconds for the redirect operation.</span></span>|
-|<span data-ttu-id="a3e00-137">масккалли</span><span class="sxs-lookup"><span data-stu-id="a3e00-137">maskCallee</span></span>|<span data-ttu-id="a3e00-138">Boolean.</span><span class="sxs-lookup"><span data-stu-id="a3e00-138">Boolean</span></span>|<span data-ttu-id="a3e00-139">Указывает, следует ли маскировать вызываемого вызываемого абонента.</span><span class="sxs-lookup"><span data-stu-id="a3e00-139">Indicates whether to mask the callee.</span></span>|
-|<span data-ttu-id="a3e00-140">масккаллер</span><span class="sxs-lookup"><span data-stu-id="a3e00-140">maskCaller</span></span>|<span data-ttu-id="a3e00-141">Boolean.</span><span class="sxs-lookup"><span data-stu-id="a3e00-141">Boolean</span></span>|<span data-ttu-id="a3e00-142">Указывает, следует ли маскировать вызывающий абонент.</span><span class="sxs-lookup"><span data-stu-id="a3e00-142">Indicates whether to mask the caller.</span></span>|
-|<span data-ttu-id="a3e00-143">callbackUri</span><span class="sxs-lookup"><span data-stu-id="a3e00-143">callbackUri</span></span>|<span data-ttu-id="a3e00-144">String</span><span class="sxs-lookup"><span data-stu-id="a3e00-144">String</span></span>|<span data-ttu-id="a3e00-145">Позволяет Боты предоставить определенный URI обратного вызова, в котором будет отправлен результат действия перенаправления.</span><span class="sxs-lookup"><span data-stu-id="a3e00-145">Allows bots to provide a specific callback URI where the result of the Redirect action will be posted.</span></span> <span data-ttu-id="a3e00-146">Это позволяет отправить результат в тот же конкретный экземпляр ленты, который инициировал действие перенаправления.</span><span class="sxs-lookup"><span data-stu-id="a3e00-146">This allows sending the result to the same specific bot instance that triggered the Redirect action.</span></span> <span data-ttu-id="a3e00-147">Если он не указан, будет использоваться глобальный URI обратного вызова Bot.</span><span class="sxs-lookup"><span data-stu-id="a3e00-147">If none is provided, the bot's global callback URI will be used.</span></span>|
-
-## <a name="response"></a><span data-ttu-id="a3e00-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="a3e00-148">Response</span></span>
-<span data-ttu-id="a3e00-149">Возвращает `202 Accepted` код отклика</span><span class="sxs-lookup"><span data-stu-id="a3e00-149">Returns `202 Accepted` response code</span></span>
-
-## <a name="examples"></a><span data-ttu-id="a3e00-150">Примеры</span><span class="sxs-lookup"><span data-stu-id="a3e00-150">Examples</span></span>
-
-### <a name="redirect-a-call"></a><span data-ttu-id="a3e00-151">Перенаправление вызова</span><span class="sxs-lookup"><span data-stu-id="a3e00-151">Redirect a call</span></span>
-
-##### <a name="request"></a><span data-ttu-id="a3e00-152">Запрос</span><span class="sxs-lookup"><span data-stu-id="a3e00-152">Request</span></span>
-<span data-ttu-id="a3e00-153">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a3e00-153">The following example shows the request.</span></span>
-
-
-# <a name="httptabhttp"></a>[<span data-ttu-id="a3e00-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="a3e00-154">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="ccfa0-171">HTTP</span><span class="sxs-lookup"><span data-stu-id="ccfa0-171">HTTP</span></span>](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "request", 
   "name": "call-redirect"
-}-->
-```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/redirect
+} -->
+``` http
+POST https://graph.microsoft.com/beta/communications/calls/491f0b00-ffff-4bc9-a43e-b226498ec22a/redirect
 Content-Type: application/json
-Content-Length: 515
 
 {
   "targets": [
     {
-      "endpointType": "default",
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
       "identity": {
-        "user": {
-          "id": "550fae72-d251-43ec-868c-373732c2704f",
-          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-          "displayName": "Heidi Steen"
+        "@odata.type": "#microsoft.graph.identitySet",
+        "application": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "test bot 2",
+          "id": "22bfd41f-550e-477d-8789-f6f7bd2a5e8b"
         }
-      },
-      "languageId": "en-US",
-      "region": "westus"
+      }
     }
   ],
-  "targetDisposition": "default",
-  "timeout": 99,
-  "maskCallee": false,
-  "maskCaller": false
+  "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="a3e00-155">C#</span><span class="sxs-lookup"><span data-stu-id="a3e00-155">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="ccfa0-172">C#</span><span class="sxs-lookup"><span data-stu-id="ccfa0-172">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-redirect-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="a3e00-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a3e00-156">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ccfa0-173">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ccfa0-173">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-redirect-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="a3e00-157">Цель — C</span><span class="sxs-lookup"><span data-stu-id="a3e00-157">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ccfa0-174">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ccfa0-174">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-redirect-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
-##### <a name="response"></a><span data-ttu-id="a3e00-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="a3e00-158">Response</span></span>
-
-> <span data-ttu-id="a3e00-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="a3e00-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="ccfa0-175">Отклик</span><span class="sxs-lookup"><span data-stu-id="ccfa0-175">Response</span></span>
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
+  "blockType": "response", 
   "@odata.type": "microsoft.graph.None"
 } -->
 ```http
 HTTP/1.1 202 Accepted
 ```
+##### <a name="notification---terminated"></a><span data-ttu-id="ccfa0-176">Уведомление — прервано</span><span class="sxs-lookup"><span data-stu-id="ccfa0-176">Notification - terminated</span></span>
 
-### <a name="forward-a-call"></a><span data-ttu-id="a3e00-161">Переадресация звонка</span><span class="sxs-lookup"><span data-stu-id="a3e00-161">Forward a call</span></span>
-
-##### <a name="notification---incoming"></a><span data-ttu-id="a3e00-162">Уведомление — входящий</span><span class="sxs-lookup"><span data-stu-id="a3e00-162">Notification - incoming</span></span>
-
-```http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
+<!-- {
+  "blockType": "example", 
+  "name": "call-redirect"
+} -->
+``` http
+POST https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039
 Content-Type: application/json
 ```
 
 <!-- {
-  "blockType": "example",
+  "blockType": "example", 
   "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-```json
+} -->
+``` json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
-      "changeType": "created",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "deleted",
+      "resourceUrl": "/communications/calls/491f0b00-ffff-4bc9-a43e-b226498ec22a",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
-        "state": "incoming",
+        "state": "terminated",
         "direction": "incoming",
+        "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039",
         "source": {
+          "@odata.type": "#microsoft.graph.participantInfo",
           "identity": {
+            "@odata.type": "#microsoft.graph.identitySet",
             "user": {
-              "displayName": "Test User",
-              "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
+              "@odata.type": "#microsoft.graph.identity",
+              "id": "8d1e6ab6-26c5-4e22-a1bc-06ea7343958e",
+              "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f"
             }
           },
-          "region": "westus",
-          "languageId": "en-US"
+          "region": "amer",
         },
         "targets": [
           {
+            "@odata.type": "#microsoft.graph.participantInfo",
             "identity": {
+              "@odata.type": "#microsoft.graph.identitySet",
               "application": {
-                "displayName": "Test BOT",
-                "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
+                "@odata.type": "#microsoft.graph.identity",
+                "displayName": "test bot",
+                "id": "24701998-1a73-4d42-8085-bf46ed0ae039"
               }
-            },
-            "region": "westus",
-            "languageId": "en-US"
+            }
           }
         ],
-        "requestedModalities": [ "audio", "video" ]
+        "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f",
+        "myParticipantId": "c339cede-4bd6-4f20-ab9f-3a13e65f6d00",
+        "id": "491f0b00-ffff-4bc9-a43e-b226498ec22a"
       }
     }
   ]
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="a3e00-163">Запрос</span><span class="sxs-lookup"><span data-stu-id="a3e00-163">Request</span></span>
+### <a name="example-2-forward-a-call-to-multiple-targets-with-simultaneous-ring"></a><span data-ttu-id="ccfa0-177">Пример 2: Переадресация вызова на несколько целевых объектов с одновременным кольцом</span><span class="sxs-lookup"><span data-stu-id="ccfa0-177">Example 2: Forward a call to multiple targets with simultaneous ring</span></span>
 
-```http
-POST https://graph.microsoft.com/beta/app/calls/57DAB8B1894C409AB240BD8BEAE78896/redirect
-Authorization: Bearer <TOKEN>
+##### <a name="notification---incoming"></a><span data-ttu-id="ccfa0-178">Уведомление — входящий</span><span class="sxs-lookup"><span data-stu-id="ccfa0-178">Notification - incoming</span></span>
+
+<!-- {
+  "blockType": "example", 
+  "name": "call-redirect"
+} -->
+``` http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example", 
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "created",
+      "resourceUrl": "/communications/calls/481f0b00-ffff-4ca1-8c67-a5f1e31e8e82",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "incoming",
+        "direction": "incoming",
+        "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039",
+        "source": {
+          "@odata.type": "#microsoft.graph.participantInfo",
+          "identity": {
+            "@odata.type": "#microsoft.graph.identitySet",
+            "user": {
+              "@odata.type": "#microsoft.graph.identity",
+              "id": "ec040873-8235-45fd-a403-c7259a5a548e",
+              "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f"
+            }
+          },
+          "region": "amer"
+        },
+        "targets": [
+          {
+            "@odata.type": "#microsoft.graph.participantInfo",
+            "identity": {
+              "@odata.type": "#microsoft.graph.identitySet",
+              "application": {
+                "@odata.type": "#microsoft.graph.identity",
+                "displayName": "test bot",
+                "id": "24701998-1a73-4d42-8085-bf46ed0ae039"
+              }
+            }
+          }
+        ],
+        "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f",
+        "myParticipantId": "f540f1b6-994b-4866-be95-8aad34c4f4dc",
+        "id": "481f0b00-ffff-4ca1-8c67-a5f1e31e8e82"
+      }
+    }
+  ]
+}
+```
+
+##### <a name="request"></a><span data-ttu-id="ccfa0-179">Запросить</span><span class="sxs-lookup"><span data-stu-id="ccfa0-179">Request</span></span>
+
+<!-- {
+  "blockType": "request", 
+  "name": "call-redirect-simuring"
+} -->
+
+``` http
+POST https://graph.microsoft.com/beta/communications/calls/481f0b00-ffff-4ca1-8c67-a5f1e31e8e82/redirect
 Content-Type: application/json
 
 {
   "targets": [
     {
-      "endpointType": "default",
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
       "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
         "user": {
-          "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572699"
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "test user",
+          "id": "98da8a1a-1b87-452c-a713-65d3f10b1253"
         }
-      },
-      "languageId": "en-US",
-      "region": "westus"
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "test user 2",
+          "id": "bf5aae9a-d11d-47a8-93b1-782504c9c3f3"
+        }
+      }
     }
   ],
-  "targetDisposition": "default",
-  "timeout": 60,
-  "maskCallee": false,
-  "maskCaller": false
+  "routingPolicies": [
+    "disableForwarding"
+  ],
+  "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="a3e00-164">Отклик</span><span class="sxs-lookup"><span data-stu-id="a3e00-164">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="ccfa0-180">Ответ</span><span class="sxs-lookup"><span data-stu-id="ccfa0-180">Response</span></span>
 
-```http
+<!-- {
+  "blockType": "response", 
+  "@odata.type": "microsoft.graph.None"
+} -->
+
+``` http
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---redirecting"></a><span data-ttu-id="a3e00-165">Перенаправление уведомлений</span><span class="sxs-lookup"><span data-stu-id="a3e00-165">Notification - redirecting</span></span>
-
-```http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-```
+##### <a name="notification---terminated"></a><span data-ttu-id="ccfa0-181">Уведомление — прервано</span><span class="sxs-lookup"><span data-stu-id="ccfa0-181">Notification - terminated</span></span>
 
 <!-- {
-  "blockType": "example",
+  "blockType": "example", 
   "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-```json
-{
-  "value": [
-    {
-      "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
-        "state": "redirecting"
-      }
-    }
-  ]
-}
-```
+} -->
 
-##### <a name="notification---terminated"></a><span data-ttu-id="a3e00-166">Уведомление — прервано</span><span class="sxs-lookup"><span data-stu-id="a3e00-166">Notification - terminated</span></span>
-
-```http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
+``` http
+POST https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039
 Content-Type: application/json
-```
 
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "deleted",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceUrl": "/communications/calls/491f0b00-ffff-4bc9-a43e-b226498ec22a",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
         "state": "terminated",
-        "answeredBy": {
+        "direction": "incoming",
+        "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039",
+        "source": {
+          "@odata.type": "#microsoft.graph.participantInfo",
           "identity": {
+            "@odata.type": "#microsoft.graph.identitySet",
             "user": {
-              "displayName": "Test User 2",
-              "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572699"
+              "@odata.type": "#microsoft.graph.identity",
+              "id": "ec040873-8235-45fd-a403-c7259a5a548e",
+              "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f"
+            }
+          },
+          "region": "amer"
+        },
+        "targets": [
+          {
+            "@odata.type": "#microsoft.graph.participantInfo",
+            "identity": {
+              "@odata.type": "#microsoft.graph.identitySet",
+              "application": {
+                "@odata.type": "#microsoft.graph.identity",
+                "displayName": "test bot",
+                "id": "24701998-1a73-4d42-8085-bf46ed0ae039"
+              }
             }
           }
-        },
-        "terminationReason": "AppRedirected"
+        ],
+        "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f",
+        "myParticipantId": "f540f1b6-994b-4866-be95-8aad34c4f4dc",
+        "id": "481f0b00-ffff-4ca1-8c67-a5f1e31e8e82"
       }
     }
   ]
