@@ -3,14 +3,14 @@ title: Обновление группы маршрутизации звука
 description: Изменение источников и приемников Аудиораутингграуп.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ef5c5a3ff1a8b152f776f5d0adf5bf6a498d8593
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 993695ead1dc881a721ffc360cfb1e9abd75556d
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792447"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006377"
 ---
 # <a name="update-audio-routing-group"></a>Обновление группы маршрутизации звука
 
@@ -31,7 +31,9 @@ ms.locfileid: "36792447"
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /app/calls/{id}/audioRoutingGroups/{id}
+PATCH /communications/calls/{id}/audioRoutingGroups/{id}
 ```
+> **Примечание:** `/app` Путь является устаревшим. Перемотка вперед, используйте `/communications` путь.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
@@ -43,11 +45,11 @@ PATCH /app/calls/{id}/audioRoutingGroups/{id}
 
 | Свойство       | Тип    |Описание|
 |:---------------|:--------|:----------|
-| приемники | Коллекция строк | Целевые участники в Аудиораутингграуп. |
+| приемники | Коллекция String | Целевые участники в Аудиораутингграуп. |
 | раутингмоде | String | Возможные значения: `oneToOne`, `multicast`. |
-| sources | Коллекция строк | Участник источника в Аудиораутингграуп. |
+| sources | Коллекция String | Участник источника в Аудиораутингграуп. |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [аудиораутингграуп](../resources/audioroutinggroup.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -62,9 +64,8 @@ PATCH /app/calls/{id}/audioRoutingGroups/{id}
   "name": "update-audioRoutingGroup"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}
+PATCH https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroups/{id}
 Content-Type: application/json
-Content-Length: 233
 
 {
   "id": "oneToOne",
@@ -86,7 +87,7 @@ Content-Length: 233
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-audioroutinggroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-audioroutinggroup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -104,7 +105,6 @@ Content-Length: 233
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 233
 
 {
   "id": "oneToOne",

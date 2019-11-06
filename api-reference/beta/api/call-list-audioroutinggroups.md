@@ -3,14 +3,14 @@ title: Список групп маршрутизации аудио
 description: Получение списка объектов **аудиораутингграуп** .
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 257b9674fda36ea2025dc190e1e30ec477566561
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: edb9b6caba0cca8e4788cafa6ce6ec1fd6f345ae
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792340"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006335"
 ---
 # <a name="list-audio-routing-groups"></a>Список групп маршрутизации аудио
 
@@ -31,7 +31,9 @@ ms.locfileid: "36792340"
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/calls/{id}/audioRoutingGroups
+GET /communications/calls/{id}/audioRoutingGroups
 ```
+> **Примечание:** `/app` Путь является устаревшим. Перемотка вперед, используйте `/communications` путь.
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
@@ -41,10 +43,10 @@ GET /app/calls/{id}/audioRoutingGroups
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [аудиораутингграуп](../resources/audioroutinggroup.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -59,7 +61,7 @@ GET /app/calls/{id}/audioRoutingGroups
   "name": "get-audioRoutingGroups"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
+GET https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroups
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-audioroutinggroups-csharp-snippets.md)]
@@ -69,7 +71,7 @@ GET https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-audioroutinggroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-audioroutinggroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

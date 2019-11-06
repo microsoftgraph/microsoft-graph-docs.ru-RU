@@ -3,14 +3,14 @@ title: 'Call: Упдатеметадата'
 description: Обновление метаданных апплиатион, связанных с вызовом.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e777dccdb1eb1925c1c8961c00efe79396f293fd
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 0fa65e1764e5e696687ce55ba052b4d7932f3245
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792278"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38005950"
 ---
 # <a name="call-updatemetadata"></a>Call: Упдатеметадата
 
@@ -38,15 +38,15 @@ POST /app/calls/{id}/updateMetadata
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|метаданных|String.|Большой двоичный объект данных, предоставляемый участником в списке.|
-|Контекст|String.|Контекст клиента.|
+|метаданных|String|Большой двоичный объект данных, предоставляемый участником в списке.|
+|Контекст|String|Контекст клиента.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 Возвращает `202 Accepted` код отклика и заголовок Location с URI для [коммсоператион](../resources/commsoperation.md) , созданного для этого запроса.
 
 ## <a name="example"></a>Пример
@@ -79,7 +79,7 @@ Content-Length: 79
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-updatemetadata-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-updatemetadata-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

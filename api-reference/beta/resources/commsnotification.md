@@ -3,14 +3,14 @@ title: Тип ресурса Коммснотификатион
 description: Базовый тип уведомления о связи, который публикуется серверами Communications Server для уведомления об изменениях.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 98b261ab9a640ea23dfb942e8c2bae17b7d92989
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9901c1390d1813413cdd95949debea95d54c286b
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012945"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006707"
 ---
 # <a name="commsnotification-resource-type"></a>Тип ресурса Коммснотификатион
 
@@ -22,9 +22,9 @@ ms.locfileid: "36012945"
 | Свойство       | Тип    | Описание                                                |
 |:---------------|:--------|:-----------------------------------------------------------|
 | changeType     | String  | Возможные значения: `created`, `updated`, `deleted`.      |
-| resource       | String  | URI ресурса, который был изменен.                      |
+| Resourceurl экземпляром       | String  | URI ресурса, который был изменен.                      |
 
-> **Примечание:** `resourceData` доступна в виде дополнительных данных. Это сущность или коллекция (сущность) в зависимости от количества изменений, упакованных в уведомление.
+> **Примечание:** `resourceData` доступно в виде дополнительных данных. Это сущность или коллекция (сущность) в зависимости от количества изменений, упакованных в уведомление.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -40,56 +40,11 @@ ms.locfileid: "36012945"
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotification",
   "changeType": "created | updated | deleted",
-  "resource": "String"
+  "resourceUrl": "String"
 }
-```
 
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications",
-  "truncated": true
-}-->
-```json
-{
-  "value": [
-    {
-      "changeType": "created",
-      "resource": "/app/calls/1D6DE2D4-CD51-4309-8DAA-70768651088E",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.call",
-        "id": "1D6DE2D4-CD51-4309-8DAA-70768651088E",
-        "state": "incoming"
-      }
-    }
-  ]
-}
-```
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications",
-  "truncated": true
-}-->
-```json
-{
-  "value": [
-    {
-      "changeType": "created",
-      "resource": "/app/calls/1D6DE2D4-CD51-4309-8DAA-70768651088E/participants",
-      "resourceData": [
-        {
-          "@odata.type": "#microsoft.graph.participant",
-          "id": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
-        },
-        {
-          "@odata.type": "#microsoft.graph.participant",
-          "id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79"
-        }
-      ]
-    }
-  ]
-}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

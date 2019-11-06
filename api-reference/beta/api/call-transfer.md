@@ -1,22 +1,26 @@
 ---
 title: 'Call: Transfer'
-description: Передача активного вызова.
+description: Передача активного однорангового звонка.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 96f5e7cdcd9996eb409743186a03239949f4e727
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 14c2e1abae0dcc7729bfd7aa89a7a668555e60e8
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792292"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38005901"
 ---
 # <a name="call-transfer"></a>Call: Transfer
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Передача активного вызова.
+Передача активного однорангового звонка.
+
+> **Примечание:** Поддерживается только в том случае, если целевой объект для передачи и передачи представляет пользователей Microsoft Teams, относящихся к одному и тому же клиенту. Передача на номер PSTN не поддерживается. Чтобы узнать больше о переводу, переводу и целевом объекте для передачи, ознакомьтесь со статьей [RFC 5589](https://tools.ietf.org/html/rfc5589#section-2).
+
+Консультативногоная передача означает, что получатель может уведомить человека, которому он хочет передать вызов (передается), перед переносом. Это в противоположность передаче вызова напрямую.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -31,29 +35,31 @@ ms.locfileid: "36792292"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/transfer
+POST /communications/calls/{id}/transfer
 ```
+> **Примечание:** `/app` Путь является устаревшим. Перемотка вперед, используйте `/communications` путь.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
+| Content-Type  | application/json. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |трансфертаржет|[инвитатионпартиЦипантинфо](../resources/invitationparticipantinfo.md)|Участник, который является целевым объектом передачи.|
-|Контекст|String.|Контекст клиента.|
+|Контекст|String|Уникальная строка контекста клиента. Максимальный лимит — 256 символов.|
 
-## <a name="response"></a>Отклик
-Возвращает `202 Accepted` код отклика.
+## <a name="response"></a>Ответ
+В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`.
 
 ## <a name="examples"></a>Примеры
+В этих примерах показан входящий вызов для различных типов уведомлений о передаче.
 
-### <a name="transfer-call-directly-with-no-user-involvement"></a>Прямой перенос вызовов без участия пользователя
-
-В приведенном ниже примере показано, как вызывать этот API.
+### <a name="example-1-call-transfer"></a>Пример 1: Передача звонка
 
 ##### <a name="request"></a>Запрос
 Ниже показан пример запроса.
@@ -65,7 +71,7 @@ POST /app/calls/{id}/transfer
   "name": "call-transfer"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/transfer
+POST https://graph.microsoft.com/beta/communications/calls/{id}/transfer
 Content-Type: application/json
 Content-Length: 430
 
@@ -83,7 +89,7 @@ Content-Length: 430
     "region": "region-value",
     "replacesCallId": "replacesCallId-value"
   },
-  "clientContext": "clientContext-value"
+  "clientContext": "9e90d1c1-f61e-43e7-9f75-d420159aae08"
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -94,7 +100,7 @@ Content-Length: 430
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-transfer-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-transfer-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -118,7 +124,6 @@ HTTP/1.1 202 Accepted
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -128,20 +133,15 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
       "resourceData": {
-        "@odata.type": "#microsoft.graph.commsOperation",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
-        "@odata.etag": "W/\"54451\"",
-        "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-        "resultInfo": {
-          "code": "200",
-          "subCode": "transferring"
-        },
-        "status": "running"
+        "@odata.type": "#microsoft.graph.call",
+        "state": "transferring"
       }
     }
   ]
@@ -150,9 +150,10 @@ Content-Type: application/json
 
 ##### <a name="notification---transfer-accepted"></a>Уведомление — передача принята
 
+> **Примечание:** Передача принята может быть выполнена после или до неактивного звука состояния носителя.
+
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -162,85 +163,124 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
-      "changeType": "deleted",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
-      "resourceData": {
-        "@odata.type": "#microsoft.graph.commsOperation",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
-        "@odata.etag": "W/\"54451\"",
-        "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-        "resultInfo": {
-          "code": "200",
-          "subCode": "transferAccepted"
-        },
-        "status": "completed"
-      }
-    }
-  ]
-}
-```
-
-##### <a name="notification---terminated"></a>Уведомление — прервано
-
-```http
-POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-```
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsNotifications"
-}-->
-```json
-{
-  "value": [
-    {
-      "changeType": "deleted",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
-        "state": "terminated",
-        "terminationReason": "AppTransferred"
+        "state": "transferAccepted"
       }
     }
   ]
 }
 ```
 
-### <a name="consultative-transfer"></a>Передача Консультативного
-
-##### <a name="request"></a>Запрос
+##### <a name="notification---transfer-completed"></a>Уведомление о передаче завершено
 
 ```http
-POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/transfer
-Authorization: Bearer <TOKEN>
+POST https://bot.contoso.com/api/calls
 Content-Type: application/json
 ```
+
 <!-- {
-  "blockType": "ignored",
-  "@odata.type": "call-transfer"
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
 }-->
 ```json
 {
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "deleted",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "terminated",
+        "resultInfo": {
+          "@odata.type": "#microsoft.graph.resultInfo",
+          "code": 0,
+          "subcode": 7015,
+          "message": "GracefulTransferCompleted"
+        }
+      }
+    }
+  ]
+}
+```
+
+##### <a name="notification---transfer-failed"></a>Уведомление о сбое передачи
+
+> **Примечание:** При сбое передачи вызова в качестве состояния вызова будет использоваться `established`.
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "established",
+        "resultInfo": {
+          "@odata.type": "#microsoft.graph.resultInfo",
+          "code": 500,
+          "subCode": 7000,
+          "message": "<message>"
+        },
+        "replacesContext": "<replacesContext>"
+      }
+    }
+  ]
+}
+```
+
+### <a name="example-2-consultative-transfer"></a>Пример 2: Консультативного Transfer
+
+##### <a name="request"></a>Запрос
+Ниже показан пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "@odata.type": "call-transfer"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b/transfer
+Content-Type: application/json
+
+{
   "transferTarget": {
+    "@odata.type": "#microsoft.graph.invitationParticipantInfo",
     "endpointType": "default",
     "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
       "user": {
+        "@odata.type": "#microsoft.graph.identity",
         "id": "550fae72-d251-43ec-868c-373732c2704f",
         "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
         "displayName": "Heidi Steen"
       }
     },
-    "languageId": "en-US",
-    "region": "westus",
+    "languageId": "en-us",
+    "region": "amer",
     "replacesCallId": "e5d39592-99bd-4db8-bca8-30fb894ec51d"
-  }
+  },
+  "clientContext": "9e90d1c1-f61e-43e7-9f75-d420159aae08"
 }
 ```
 
@@ -248,6 +288,11 @@ Content-Type: application/json
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.None"
+}-->
 ```http
 HTTP/1.1 202 Accepted
 ```
@@ -256,7 +301,6 @@ HTTP/1.1 202 Accepted
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -266,20 +310,15 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
       "resourceData": {
-        "@odata.type": "#microsoft.graph.commsOperation",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
-        "@odata.etag": "W/\"54451\"",
-        "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-        "resultInfo": {
-          "code": "200",
-          "subCode": "transferring"
-        },
-        "status": "running"
+        "@odata.type": "#microsoft.graph.call",
+        "state": "transferring"
       }
     }
   ]
@@ -288,9 +327,10 @@ Content-Type: application/json
 
 ##### <a name="notification---transfer-accepted"></a>Уведомление — передача принята
 
+> **Примечание:** Передача принята может быть выполнена после или до неактивного звука состояния носителя.
+
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -300,31 +340,25 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
-      "changeType": "deleted",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
       "resourceData": {
-        "@odata.type": "#microsoft.graph.commsOperation",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
-        "@odata.etag": "W/\"54451\"",
-        "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-        "resultInfo": {
-          "code": "200",
-          "subCode": "transferAccepted"
-        },
-        "status": "completed"
+        "@odata.type": "#microsoft.graph.call",
+        "state": "transferAccepted"
       }
     }
   ]
 }
 ```
 
-##### <a name="notification---terminated"></a>Уведомление — прервано
+##### <a name="notification---transfer-completed"></a>Уведомление о передаче завершено
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -334,16 +368,53 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "deleted",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896",
-        "@odata.etag": "W/\"5445\"",
         "state": "terminated",
         "terminationReason": "AppTransferred"
+      }
+    }
+  ]
+}
+```
+
+##### <a name="notification---transfer-failed"></a>Уведомление о сбое передачи
+
+> **Примечание:** При сбое передачи вызова в качестве состояния вызова будет использоваться `established`.
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "established",
+        "resultInfo": {
+          "@odata.type": "#microsoft.graph.resultInfo",
+          "code": 500,
+          "subCode": 7700,
+          "message": "<message>"
+        },
+        "replacesContext": "<replacesContext>"
       }
     }
   ]

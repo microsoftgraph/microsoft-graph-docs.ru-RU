@@ -3,20 +3,20 @@ title: Создание собрания по сети
 description: Создание собрания по сети от имени пользователя, указанного в тексте запроса.
 author: VinodRavichandran
 localization_priority: Priority
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e6f75891a4ca773f9bcb22bc3a659d9a3a411e3b
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: a63540ee5cb43bf7adf785783780cc97c7cbe658
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791122"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37968988"
 ---
 # <a name="create-online-meeting"></a>Создание собрания по сети
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание собрания по сети от имени пользователя, указанного в тексте запроса.
+Создание собрания по сети от имени пользователя с помощью ИД объекта (oid) в маркере пользователя.
 
 > **Примечание.** Собрание не отображается в календаре пользователя.
 
@@ -25,7 +25,7 @@ ms.locfileid: "36791122"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
+| Делегированные (рабочая или учебная учетная запись)     | OnlineMeetings.ReadWrite                    |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
 | Для приложений                            | OnlineMeetings.ReadWrite.All                |
 
@@ -33,14 +33,18 @@ ms.locfileid: "36791122"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/onlineMeetings
+POST /communications/onlineMeetings
+POST /me/onlineMeetings
 ```
+> **Примечание.** Путь `/app` является устаревшим. В дальнейшем используйте путь `/communications`.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
+| Content-Type  | application/json. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 В тексте запроса должно быть представление объекта [onlineMeeting](../resources/onlinemeeting.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
@@ -48,22 +52,26 @@ POST /app/onlineMeetings
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
-Ниже показан пример запроса.
+### <a name="example-1-create-an-online-meeting-with-application-token"></a>Пример 1. Создание собрания по сети с помощью маркера приложения
 
+#### <a name="request"></a>Запрос
+
+>**Примечание.** Создание собрания по сети с помощью маркера приложения является устаревшим способом. В дальнейшем используйте путь /me с маркером пользователя, чтобы создавать собрания по сети.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create-onlinemeeting-from-application"
+  "name": "create-onlinemeeting-app-token"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/onlineMeetings
+POST https://graph.microsoft.com/beta/communications/onlineMeetings
 Content-Type: application/json
-Content-Length: 1553
 
 {
-  "meetingType": "meetNow",
+  "isBroadcast": "false",
+  "startDateTime":"2019-09-09T14:33:30.8546353-07:00",
+  "endDateTime":"2019-09-09T15:03:30.8566356-07:00",
+  "subject":"Application Token Meeting",
   "participants": {
     "organizer": {
       "identity": {
@@ -72,8 +80,7 @@ Content-Length: 1553
         }
       }
     }
-  },
-  "subject": "subject-value"
+  }
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -93,7 +100,7 @@ Content-Length: 1553
 
 В тексте запроса должно быть представление объекта [onlineMeeting](../resources/onlinemeeting.md) в формате JSON.
 
-##### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -105,31 +112,28 @@ Content-Length: 1553
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1574
 
 {
-  "accessLevel": "everyone",
+  "autoAdmittedUsers": "everyone",
   "audioConferencing": {
     "tollNumber": "+12525634478",
     "tollFreeNumber": "+18666390588",
-    "participantPasscode": "2425999",
-    "leaderPasscode": null,
+    "ConferenceId": "2425999",
     "dialinUrl": "https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=2425999"
   },
-  "canceledDateTime": "2018-03-19T09:46:02Z",
+  "canceledDateTime": null,
   "chatInfo": {
     "threadId": "19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
     "messageId": "0",
     "replyChainMessageId": "0"
   },
-  "creationDateTime": "2018-03-19T09:46:02Z",
-  "endDateTime": "2018-03-19T09:46:02Z",
-  "entryExitAnnouncement": true,
-  "expirationDateTime": "2018-03-19T09:46:02Z",
-  "id": "013448345",
-  "isCancelled": false,
+  "creationDateTime": "2019-07-11T02:17:17.6491364Z",
+  "startDateTime": "2019-07-11T02:17:17.6491364Z",
+  "endDateTime": "2019-07-11T02:47:17.651138Z",
+  "id": "550fae72-d251-43ec-868c-373732c2704f_19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
+  "isCanceled": false,
   "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
-  "meetingType": "meetNow",
+  "isBroadcast": false,
   "participants": {
     "organizer": {
       "identity": {
@@ -142,8 +146,150 @@ Content-Length: 1574
       "upn": "upn-value"
     }
   },
-  "startDateTime": "2018-03-19T09:46:02Z",
-  "subject": "Quarterly sales numbers"
+  "subject": "Application Token Meeting"
+}
+```
+
+### <a name="example-2-create-an-online-meeting-with-user-token"></a>Пример 2. Создание собрания по сети с помощью маркера пользователя
+
+#### <a name="request"></a>Запрос
+<!-- {
+  "blockType": "request",
+  "name": "create-onlinemeeting-user-token"
+}-->
+```http
+POST https://graph.microsoft.com/beta/me/onlineMeetings
+Content-Type: application/json
+
+{
+  "startDateTime":"2019-07-12T14:30:34.2444915-07:00",
+  "endDateTime":"2019-07-12T15:00:34.2464912-07:00",
+  "subject":"User Token Meeting"
+}
+```
+
+#### <a name="response"></a>Отклик
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onlineMeeting"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f4053f86-17cc-42e7-85f4-f0389ac980d6')/onlineMeetings/$entity",
+  "accessLevel": "everyone",
+  "audioConferencing": {
+    "tollNumber": "+12525634478",
+    "tollFreeNumber": "+18666390588",
+    "ConferenceId": "2425999",
+    "dialinUrl": "https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=2425999"
+  },
+  "canceledDateTime": null,
+  "chatInfo": {
+    "threadId": "19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
+    "messageId": "0",
+    "replyChainMessageId": "0"
+  },
+  "creationDateTime": "2019-07-11T02:17:17.6491364Z",
+  "startDateTime": "2019-07-11T02:17:17.6491364Z",
+  "endDateTime": "2019-07-11T02:47:17.651138Z",
+  "entryExitAnnouncement": true,
+  "expirationDateTime": "2019-09-14T18:37:29.1973954Z",
+  "id": "550fae72-d251-43ec-868c-373732c2704f_19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
+  "isCanceled": false,
+  "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
+  "isBroadcast": false,
+  "participants": {
+    "organizer": {
+      "identity": {
+        "user": {
+          "id": "550fae72-d251-43ec-868c-373732c2704f",
+          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+          "displayName": "Heidi Steen"
+        }
+      },
+      "upn": "upn-value"
+    }
+  },
+  "subject": "User Token Meeting"
+}
+```
+
+### <a name="example-3-create-an-online-meeting-in-a-microsoft-teams-channel-with-a-user-token"></a>Пример 3. Создание собрания по сети в канале Microsoft Teams с помощью маркера пользователя
+
+#### <a name="request"></a>Запрос
+>**Примечание.** Идентификатор объекта переданного маркера пользователя должен быть элементом канала, представленного с помощью threadid в полезных данных.
+
+```http
+POST https://graph.microsoft.com/beta/me/onlineMeetings
+Content-Type: application/json
+
+{
+  "startDateTime":"2019-07-12T14:30:34.2444915-07:00",
+  "endDateTime":"2019-07-12T15:00:34.2464912-07:00",
+  "subject":"User meeting in Microsoft Teams channel.",
+  "chatInfo": {
+    "threadId":"19%3A3b52398f3c524556894b776357c1dd79%40thread.skype"
+  }
+}
+```
+#### <a name="response"></a>Отклик
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "example",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onlineMeeting"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('f4053f86-17cc-42e7-85f4-f0389ac980d6')/onlineMeetings/$entity",
+  "accessLevel": "everyone",
+  "audioConferencing": {
+    "tollNumber": "+12525634478",
+    "tollFreeNumber": "+18666390588",
+    "ConferenceId": "2425999",
+    "dialinUrl": "https://dialin.teams.microsoft.com/22f12fa0-499f-435b-bc69-b8de580ba330?id=2425999"
+  },
+  "canceledDateTime": null,
+  "chatInfo": {
+    "threadId": "19%3A3b52398f3c524556894b776357c1dd79%40thread.skype",
+    "messageId": "1563302249053",
+    "replyChainMessageId": null
+  },
+  "creationDateTime": "2019-07-11T02:17:17.6491364Z",
+  "startDateTime": "2019-07-11T02:17:17.6491364Z",
+  "endDateTime": "2019-07-11T02:47:17.651138Z",
+  "entryExitAnnouncement": true,
+  "expirationDateTime": "2018-03-19T09:46:02Z",
+  "id": "550fae72-d251-43ec-868c-373732c2704f_19%3A3b52398f3c524556894b776357c1dd79%40thread.skype",
+  "isCanceled": false,
+  "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
+  "isBroadcast": false,
+  "participants": {
+    "organizer": {
+      "identity": {
+        "user": {
+          "id": "550fae72-d251-43ec-868c-373732c2704f",
+          "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+          "displayName": "Heidi Steen"
+        }
+      },
+      "upn": "upn-value"
+    }
+  },
+  "subject": "User meeting in Microsoft Teams channel."
 }
 ```
 

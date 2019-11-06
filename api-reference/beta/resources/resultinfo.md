@@ -3,14 +3,14 @@ title: Тип ресурса Ресултинфо
 description: Тип Ресултинфо.
 author: VinodRavichandran
 localization_priority: Normal
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: 1e5f6a523a8aca4454cd3355e2a0287fef9fc90d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: acc01a17420390343c3eb1f866761d54d5c81c79
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965371"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006552"
 ---
 # <a name="resultinfo-resource-type"></a>Тип ресурса Ресултинфо
 
@@ -22,9 +22,9 @@ ms.locfileid: "35965371"
 
 | Свойство | Тип   | Описание          |
 | :------- | :----- | :------------------  |
-| code     | String | Код результата.     |
+| code     | Int32 | Код результата.     |
 | message  | String | Сообщение.         |
-| subCode  | String | Дочерний код результата. |
+| Subcode  | Int32 | Дочерний код результата. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -39,51 +39,9 @@ ms.locfileid: "35965371"
 }-->
 ```json
 {
-  "code": "String",
+  "code": 0,
   "message": "String",
-  "subCode": "String"
-}
-```
-
-## <a name="example-error-result"></a>Пример результата ошибки
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.resultInfo"
-}-->
-```json
-{
-  "code": "100",
-  "message": "Internal Server Error.",
-  "subCode": "20"
-}
-```
-
-## <a name="example-generic-success-result"></a>Пример общего результата успеха
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.resultInfo"
-}-->
-```json
-{
-  "code": "200",
-  "message": "",
-  "subCode": "0"
-}
-```
-
-## <a name="example-record-success-result"></a>Пример результатов записи
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.resultInfo"
-}-->
-```json
-{
-  "code": "200",
-  "message": "",
-  "subCode": "completedSilenceDetected"
+  "subcode": 0
 }
 ```
 

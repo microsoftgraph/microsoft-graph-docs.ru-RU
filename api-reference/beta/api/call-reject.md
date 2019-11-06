@@ -1,26 +1,28 @@
 ---
 title: 'вызов: отклонено'
-description: Отклонение входящего вызова.
+description: Разрешить интерфейсу Bot отклонить входящий звонок.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e3befe394aa9451cbb51bd39ba41fb158b67b464
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+ms.openlocfilehash: a083459a162117addba494f74e50842435a74516
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36838848"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38005917"
 ---
 # <a name="call-reject"></a>вызов: отклонено
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Позволяет роботу отклонить входящий [вызов](../resources/call.md). Запрос входящего вызова может представлять собой приглашение на собрание или одноранговый вызов. Время ожидания входящего вызова истекает через 15 секунд. Если в течение этого времени отклики не отправляются, вызов автоматически отклоняется.
+Разрешить интерфейсу Bot отклонить входящий звонок. Запрос входящего вызова может быть приглашенным из участника группы или однорангового вызова. При получении приглашения на вызов группы в уведомлении будут содержаться параметры **чатинфо** и **митингинфо** .
 
-После регистрации Bot с действительным URL-адресом обратного вызова на портале Azure входящий вызов доставляется [](../resources/commsnotification.md) в качестве `changeType` коммснотификатион со `created`значением. Ожидается, что для `Answer` начала и `Reject` до истечения времени ожидания вызывается Bot.
+Ожидается, что Bot отвечает или отклоняет вызов до истечения времени ожидания вызова. Текущее значение времени ожидания — 15 секунд.
 
-> **Примечание:** Этот API используется только для отклонения входящих вызовов. Для прерывания существующих вызовов вместо этого следует использовать [Вызов delete](../api/call-delete.md) .
+Этот API не завершает существующие вызовы, на которые уже получены ответы. Чтобы завершить вызов, используйте [Вызов delete](../api/call-delete.md) .
+
+> **Примечание:** С помощью VoIP можно получить доступ только через VoIP. Звонки с помощью PSTN в Bot пока не поддерживаются.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -35,29 +37,32 @@ ms.locfileid: "36838848"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/reject
+POST /communications/calls/{id}/reject
 ```
+> **Примечание:** `/app` Путь является устаревшим. Перемотка вперед, используйте `/communications` путь.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
+| Content-Type  | application/json. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|причиной|String.|Причина отклонения. Возможные значения: `None` `Busy` и`Forbidden` |
-|callbackUri|String|Позволяет Боты предоставить определенный URI обратного вызова, в котором будет опубликован результат действия "отклонить". Это позволяет отправить результат в тот же конкретный экземпляр ленты, который инициировал действие отклонения. Если он не указан, будет использоваться глобальный URI обратного вызова Bot.|
+|reason|String|Причина отклонения. Возможные значения: `None` `Busy` и`Forbidden` |
+|callbackUri|String|Это позволяет Боты предоставить определенный URI обратного вызова для текущего вызова, чтобы получать уведомления позже. Если это свойство не задано, вместо него будет использоваться глобальный URI обратного вызова Bot. Это должно быть `https`.|
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`. В тексте отклика не возвращается никаких данных.
+При успешном выполнении этот метод возвращает код отклика `202 Accepted`. Метод не возвращает данные в теле отклика.
 
 ## <a name="examples"></a>Примеры
-В приведенных ниже примерах показано, как вызывать этот API.
+В следующих примерах показано, как вызывать этот API.
 
+### <a name="example-1-reject-an-incoming-call-with-busy-reason"></a>Пример 1: отклонение входящего вызова с причиной "занято"
 #### <a name="request"></a>Запрос
-Ниже показан пример запроса.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -65,7 +70,7 @@ POST /app/calls/{id}/reject
   "name": "call-reject"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/reject
+POST https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/reject
 Content-Type: application/json
 Content-Length: 24
 
@@ -81,7 +86,7 @@ Content-Length: 24
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-reject-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)] 
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-reject-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)] 
 
@@ -89,7 +94,6 @@ Content-Length: 24
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
 
 <!-- {
   "blockType": "response",
@@ -100,13 +104,12 @@ Content-Length: 24
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="reject-an-incoming-call-with-none-reason"></a>Отклонение входящего звонка с причиной "нет"
+### <a name="example-2-reject-an-incoming-call-with-none-reason"></a>Пример 2: отклонение входящего вызова с причиной "нет"
 
 ##### <a name="notification---incoming"></a>Уведомление — входящий
 
 ```http
 POST https://bot.contoso.com/api/call
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -121,10 +124,10 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "created",
-      "resource": "/app/calls/57dab8b1-894c-409a-b240-bd8beae78896",
+      "resourceUrl": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57dab8b1-894c-409a-b240-bd8beae78896",
+        "@odata.id": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896",
         "state": "incoming",
         "direction": "incoming",
         "source": {
@@ -156,17 +159,14 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a>Запрос
-Ниже показан пример запроса.
-
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+##### <a name="request"></a>Запросить
 
 <!-- {
-  "blockType": "ignored",
-  "name": "call-reject"
+  "blockType": "request",
+  "name": "call-reject-none-reason"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/reject
+POST https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/reject
 Content-Type: application/json
 Content-Length: 24
 
@@ -174,22 +174,13 @@ Content-Length: 24
   "reason": "none"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/call-reject-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/call-reject-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/call-reject-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-##### <a name="response"></a>Отклик
-
+##### <a name="response"></a>Ответ
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.None"
+} -->
 ```http
 HTTP/1.1 202 Accepted
 ```
@@ -198,7 +189,6 @@ HTTP/1.1 202 Accepted
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -213,10 +203,10 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "deleted",
-      "resource": "/app/calls/57dab8b1-894c-409a-b240-bd8beae78896",
+      "resourceUrl": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
-        "@odata.id": "/app/calls/57dab8b1-894c-409a-b240-bd8beae78896"
+        "@odata.id": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896"
       }
     }
   ]

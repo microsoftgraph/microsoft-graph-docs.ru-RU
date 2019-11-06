@@ -3,14 +3,14 @@ title: Получение вызова
 description: Получение свойств и связей объекта Call.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e89928ec956f741927643353b86a7213ac62243d
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+ms.openlocfilehash: b157f6b5233b7f83ed5530239478dd1858273d6f
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36838698"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006342"
 ---
 # <a name="get-call"></a>Получение вызова
 
@@ -25,13 +25,15 @@ ms.locfileid: "36838698"
 | :-------------- | :----------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                         |
-| Приложение                            | Отсутствуют.                                  |
+| Для приложений                            | Нет.                                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /app/calls/{id}
+GET /communications/calls/{id}
 ```
+> **Примечание:** `/app` Путь является устаревшим. Перемотка вперед, используйте `/communications` путь.
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
@@ -41,17 +43,17 @@ GET /app/calls/{id}
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [Call](../resources/call.md) в тексте отклика.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
+
+### <a name="example-1-getting-a-peer-to-peer-call"></a>Пример 1: как получить одноранговый Звонок
 
 ##### <a name="request"></a>Запрос
-Приведенный ниже пример вызова показывает запрос на получение однорангового вызова.
-
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -60,7 +62,7 @@ GET /app/calls/{id}
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/app/calls/{id}
+GET https://graph.microsoft.com/beta/communications/calls/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-call-csharp-snippets.md)]
@@ -70,7 +72,7 @@ GET https://graph.microsoft.com/beta/app/calls/{id}
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-call-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-call-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -157,29 +159,28 @@ Content-Type: application/json
   "toneInfo": null
 }
 ```
+### <a name="example-2-getting-a-group-call"></a>Пример 2: вызов групповой связи
 
+##### <a name="request"></a>Запросить
 <!-- {
-  "blockType": "example",
+  "blockType": "request",
   "name": "get-call"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/app/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
-Authorization: Bearer <Token>
+GET https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
 ```
 
 ##### <a name="response"></a>Отклик
 
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-```
-
 <!-- {
-  "blockType": "example",
+  "blockType": "response",
   "truncated": "true",
   "@odata.type": "microsoft.graph.call"
 }-->
-```json
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.call",
   "state": "established",

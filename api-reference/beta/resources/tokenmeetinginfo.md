@@ -3,27 +3,28 @@ title: Тип ресурса Токенмитингинфо
 description: Тип Токенмитингинфо.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0df9a7a66420f20ff62677f54e617d64e9db0273
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d5bb992d61ad34723266523d813fcd8e4e0f8e79
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007545"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006531"
 ---
 # <a name="tokenmeetinginfo-resource-type"></a>Тип ресурса Токенмитингинфо
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Тип Токенмитингинфо.
+Это сведения о маркере, с помощью которого вы можете присоединиться к существующему собранию. Это значение получается в составе уведомления о входящем вызове. 
+
+В случае отключения вызова эта информация поможет повторно присоединиться к этому вызову.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                     | Тип    | Описание                                                                    |
 | :--------------------------- | :------ | :----------------------------------------------------------------------------- |
-| Алловконверсатионвисаусост | Boolean | Указывает, может ли беседа продолжиться после закрытия узла беседы. |
-| токен                        | Строка  | Токен для присоединения и активации собрания.                                        |
+| token                        | Строка  | Маркер, используемый для присоединения к вызову.                                                 |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -34,26 +35,11 @@ ms.locfileid: "36007545"
   "optionalProperties": [
 
   ],
-   "baseType": "microsoft.graph.meetingInfo",
   "@odata.type": "microsoft.graph.tokenMeetingInfo"
 }-->
 ```json
 {
-  "allowConversationWithoutHost": true,
-  "token": "String"
-}
-```
-
-## <a name="example"></a>Пример
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.tokenMeetingInfo"
-}-->
-```json
-{
-  "allowConversationWithoutHost": true,
-  "token": "ABCD123"
+    "token": "String"
 }
 ```
 

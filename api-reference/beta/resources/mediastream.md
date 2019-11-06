@@ -3,14 +3,14 @@ title: Тип ресурса Медиастреам
 description: Тип Медиастреам.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c39c4eb0754f327361fec04852293ef084b0c412
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 63fad1d064c4ab967bba6df8bed6dbcdd20a3d69
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966829"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006657"
 ---
 # <a name="mediastream-resource-type"></a>Тип ресурса Медиастреам
 
@@ -25,7 +25,7 @@ ms.locfileid: "35966829"
 | direction   | String  | Направление. `inactive`Возможные значения: `sendOnly`,, `receiveOnly`,. `sendReceive`                  |
 | label       | String  | Метка потока мультимедиа.                                                                                       |
 | mediaType   | String  | Тип мультимедиа. Возможные `unknown`значения:, `audio` `video`,, `videoBasedScreenSharing`,. `data`        |
-| Сервермутед | Boolean | Если сервер отключен на носителе.                                                                          |
+| сервермутед | Boolean | Если сервер отключен на носителе.                                                                          |
 | Идентификатор    | String  | Идентификатор источника.                                                                                                |
 
 ## <a name="json-representation"></a>Представление JSON
@@ -35,7 +35,8 @@ ms.locfileid: "35966829"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "serverMuted"
+    "serverMuted",
+    "label"
   ],
   "@odata.type": "microsoft.graph.mediaStream"
 }-->

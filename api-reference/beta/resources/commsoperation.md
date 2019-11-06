@@ -3,33 +3,34 @@ title: Тип ресурса Коммсоператион
 description: Состояние определенных длительных операций.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: a10b652179a8a3d369c07d34cb2681c4986b3abf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 07be6f3b5cf9e3d5e7a1a1300a94da9b5204a68a
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012900"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006700"
 ---
 # <a name="commsoperation-resource-type"></a>Тип ресурса Коммсоператион
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Состояние определенных длительных операций.
+Представляет состояние определенных длительных операций.
 
-## <a name="methods"></a>Методы
-Нет
+Этот ресурс может быть возвращен в качестве ответа на действие или в качестве содержимого [коммснотификатион](commsNotification.md).  
+
+При возвращении в качестве ответа на действие состояние указывает, будут ли отображаться последующие уведомления. Если, например, операция со статусом `completed` или `failed` возвращена, дальнейшая операция с каналом уведомлений не будет выполняться. 
+
+Если `null` операция или операция со статусом `notStarted` или `running` возвращены, последующие обновления будут поступать через канал уведомлений.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство           | Тип                        | Описание                                                                     |
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
-| Контекст      | String                      | Контекст клиента.                                                             |
-| createdDateTime    | DateTimeOffset              | Время начала операции.                                                |
-| id                 | Строка                      | Идентификатор операции. Только для чтения. Создается сервером.                                  |
-| Ластактиондатетиме | DateTimeOffset              | Время последнего действия операции.                                   |
-| resultInfo         | [resultInfo](resultinfo.md) | Сведения о результате. Только для чтения. Создается сервером.                            |
+| Контекст      | String                      | Уникальная строка контекста клиента. Максимальный лимит — 256 символов.                           |
+| id                 | Строка                      | ИДЕНТИФИКАТОР операции. Только для чтения.                                                    |
+| resultInfo         | [resultInfo](resultinfo.md) | Сведения о результате. Только для чтения.                                              |
 | status             | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения. |
 
 ## <a name="relationships"></a>Отношения
@@ -49,31 +50,9 @@ ms.locfileid: "36012900"
 ```json
 {
   "clientContext": "String",
-  "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "lastActionDateTime": "String (timestamp)",
   "resultInfo": { "@odata.type": "microsoft.graph.resultInfo" },
   "status": "notStarted | running | completed | failed"
-}
-```
-
-## <a name="example"></a>Пример
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsOperation"
-}-->
-```json
-{
-  "clientContext": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "createdDateTime": "2018-09-06T15:58:41Z",
-  "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "lastActionDateTime": "2018-09-06T15:58:41Z",
-  "resultInfo": {
-    "@odata.type": "microsoft.graph.resultInfo",
-    "code": "200"
-  },
-  "status": "completed"
 }
 ```
 

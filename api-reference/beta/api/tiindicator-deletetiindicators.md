@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: fce36c917975ab59d2f99187029066b4d65f4720
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 9af88f45503c7b2564e60aa7e69ce6ab15e01e6c
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36722169"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006496"
 ---
 # <a name="tiindicator-deletetiindicators"></a>Тииндикатор: Делететииндикаторс
 
@@ -48,11 +48,11 @@ POST /security/tiIndicators/deleteTiIndicators
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|значение|Коллекция строк| Коллекция Тииндикатор `id`s, которую необходимо удалить. |
+|значение|Коллекция String| Коллекция Тииндикатор `id`s, которую необходимо удалить. |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод `200, OK` возвращает код отклика и объект коллекции [ресултинфо](../resources/resultinfo.md) в тексте отклика. При возникновении ошибки этот метод возвращает код `206 Partial Content` отклика.  Дополнительные [](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) сведения см. в разделе Errors.
+В случае успешного выполнения этот метод `200, OK` возвращает код отклика и объект коллекции [ресултинфо](../resources/resultinfo.md) в тексте отклика. При возникновении ошибки этот метод возвращает код `206 Partial Content` отклика.  Дополнительные сведения см. в разделе [Errors](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) .
 
 ## <a name="examples"></a>Примеры
 
@@ -87,7 +87,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/tiindicator-deletetiindicators-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/tiindicator-deletetiindicators-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -115,7 +115,7 @@ Content-type: application/json
 {
   "value": [
     {
-      "code": "code-value",
+      "code": 0,
       "message": "message-value",
       "subCode": "subCode-value"
     }

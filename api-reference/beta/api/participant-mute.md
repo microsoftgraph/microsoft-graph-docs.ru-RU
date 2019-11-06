@@ -3,14 +3,14 @@ title: 'участник: выкл.'
 description: Отключение выключения определенного участника в вызове.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 1ae365e8dc033931a5c3cd97e4fd631959d1fe68
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: cbf65ee703e22895e25ae18b2a94c4a1740527f2
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792543"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006503"
 ---
 # <a name="participant-mute"></a>участник: выкл.
 
@@ -18,8 +18,13 @@ ms.locfileid: "36792543"
 
 Отключение выключения определенного участника в вызове.
 
+Это Выключенный сервер, что означает, что сервер будет отбрасывать все звуковые пакеты для этого участника, даже если участник продолжает потоковую передачу звука.
+
+Дополнительные сведения об обработке операций можно найти в разделе [коммсоператион](../resources/commsOperation.md).
+
+> **Примечание:** Эта поддержка поддерживается только для звонков групп.
+
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 | :-------------- | :------------------------------------------ |
@@ -31,24 +36,29 @@ ms.locfileid: "36792543"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/participants/{id}/mute
+POST /communications/calls/{id}/participants/{id}/mute
 ```
+> **Примечание:** `/app` Путь является устаревшим. Перемотка вперед, используйте `/communications` путь.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
+| Content-Type  | application/json. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|Контекст|String.|Контекст клиента.|
+|Контекст|String|Уникальная строка контекста клиента. Максимальный лимит — 256 символов.|
 
-## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [коммсоператион](../resources/commsoperation.md) в тексте отклика.
+## <a name="response"></a>Ответ
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [коммсоператион](../resources/commsoperation.md) в тексте отклика.
 
-## <a name="example"></a>Пример
+>**Примечание:** Вхем этот API возвращает успешный ответ, все участники получат обновление списка.
+
+## <a name="example---mute-specific-participant"></a>Пример: Специальный участник
 В приведенном ниже примере показано, как вызывать этот API.
 
 ##### <a name="request"></a>Запрос
@@ -60,12 +70,11 @@ POST /app/calls/{id}/participants/{id}/mute
   "name": "participant-mute"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/participants/{id}/mute
+POST https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/participants/2765eb15-01f8-47c6-b12b-c32111a4a86f/mute
 Content-Type: application/json
-Content-Length: 46
 
 {
-  "clientContext": "clientContext-value"
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -76,69 +85,32 @@ Content-Length: 46
 [!INCLUDE [sample-code](../includes/snippets/javascript/participant-mute-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/participant-mute-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-
 ##### <a name="response"></a>Отклик
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства. 
+
 
 <!-- {
   "blockType": "response",
-  "@odata.type": "microsoft.graph.commsOperation",
-  "truncated": true
-} -->
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 259
-
-{
-  "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
-  "status": "completed",
-  "createdDateTime": "2018-09-06T15:58:41Z",
-  "lastActionDateTime": "2018-09-06T15:58:41Z",
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
-}
-```
-
-## <a name="example---mute-specific-participant"></a>Пример: Специальный участник
-
-##### <a name="request"></a>Запрос
-
-```http
-POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants/0698446E77E24E4D85F80597083CB830/mute
-Authorization: Bearer <TOKEN>
-Content-Type: application/json
-
-{
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
-}
-```
-
-##### <a name="response"></a>Отклик
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 259
-```
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.commsOperation",
+  "@odata.type": "microsoft.graph.muteParticipantOperation",
   "truncated": true
 }-->
-```json
+```http
+HTTP/1.1 200 OK
+Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
+Content-Type: application/json
+
 {
+  "@odata.type": "#microsoft.graph.muteParticipantOperation",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#muteParticipantOperation",
   "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
   "status": "completed",
-  "createdDateTime": "2018-09-06T15:58:41Z",
-  "lastActionDateTime": "2018-09-06T15:58:41Z",
   "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
 }
 ```
@@ -147,7 +119,6 @@ Content-Length: 259
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -157,19 +128,21 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants",
+      "resourceUrl": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/participants",
       "resourceData": [
         {
           "@odata.type": "#microsoft.graph.participant",
-          "id": "0698446E77E24E4D85F80597083CB830",
+          "id": "2765eb15-01f8-47c6-b12b-c32111a4a86f",
           "info": {
             "identity": {
               "user": {
-                "displayName": "Test User",
-                "id": "8A34A46B-3D17-4ADC-8DCE-DC4E7D572698"
+                "displayName": "Bob",
+                "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96"
               }
             },
             "region": "westus",
@@ -180,35 +153,10 @@ Content-Type: application/json
               "mediaType": "audio",
               "label": "main-audio",
               "sourceId": "1",
-              "direction": "sendReceive",
-              "serverMuted": false
+              "direction": "sendReceive"
             }
           ],
-          "isMuted": true,
-          "isInLobby": false
-        },
-        {
-          "@odata.type": "#microsoft.graph.participant",
-          "id": "123456W77E24E4D85F80597083CB830",
-          "info": {
-            "identity": {
-              "application": {
-                "displayName": "Test Bot",
-                "id": "1234A46B-3D17-4ADC-8DCE-DC4E7D556789"
-              }
-            },
-            "region": "westus",
-            "languageId": "en-US"
-          },
-          "mediaStreams": [
-            {
-              "mediaType": "audio",
-              "label": "main-audio",
-              "sourceId": "2",
-              "direction": "sendReceive",
-              "serverMuted": false
-            }
-          ],
+          "isMuted": true, // will be set to true on mute
           "isInLobby": false
         }
       ]

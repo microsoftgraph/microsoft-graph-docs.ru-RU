@@ -3,14 +3,14 @@ title: Создание группы маршрутизации звука
 description: Создание нового **аудиораутингграуп**.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 853f41cc8a9865c877754f212bbe660c44cc5e47
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 7b34bc058c116a9be78f491f8dc2e826ea09f0c6
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792298"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38005980"
 ---
 # <a name="create-audio-routing-group"></a>Создание группы маршрутизации звука
 
@@ -31,17 +31,19 @@ ms.locfileid: "36792298"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/audioRoutingGroups
+POST /communications/calls/{id}/audioRoutingGroups
 ```
+> **Примечание:** `/app` Путь является устаревшим. Перемотка вперед, используйте `/communications` путь.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [аудиораутингграуп](../resources/audioroutinggroup.md) в формате JSON.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [аудиораутингграуп](../resources/audioroutinggroup.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
@@ -58,7 +60,7 @@ POST /app/calls/{id}/audioRoutingGroups
   "name": "create-audioRoutingGroup-from-call"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
+POST https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroups
 Content-Type: application/json
 Content-Length: 233
 
@@ -81,7 +83,7 @@ Content-Length: 233
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-audioroutinggroup-from-call-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-audioroutinggroup-from-call-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -121,7 +123,7 @@ Content-Length: 233
 Ниже показан пример запроса.
 
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
+POST https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroups
 Content-Type: application/json
 Content-Length: 233
 ```

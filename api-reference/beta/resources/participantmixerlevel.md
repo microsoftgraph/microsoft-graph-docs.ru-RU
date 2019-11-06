@@ -3,14 +3,14 @@ title: Тип ресурса ПартиЦипантмиксерлевел
 description: Настройка уровней микшера для данного участника аудио
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 27ddc297f779d1a40350bd4cc24015a2c60dd9ee
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cc305274d619a3686d4d391516947f1d06b92745
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966238"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006587"
 ---
 # <a name="participantmixerlevel-resource-type"></a>Тип ресурса ПартиЦипантмиксерлевел
 
@@ -22,10 +22,10 @@ ms.locfileid: "35966238"
 
 | Свойство               | Тип                                                      | Описание                                                                                         |
 | :--------------------- | :-------------------------------------------------------- | :---------------------------------------------------------------------------------------------------|
-| дуккинг                | [Аудиодуккингконфигуратион](audioduckingconfiguration.md) | Конфигурация дуккинг (фасинг in и out) других источников для этого партипант настраиваемого набора.       |
-| Ексклусивемоде          | boolean                                                   | Следует ли удалять источники без явного исходного уровня из набора.                       |
-| абонент            | String                                                    | Участник, для которого настраивается микшер.                                             |
-| Саурцелевелс           | Коллекция [аудиосаурцелевел](audiosourcelevel.md)        | Настройка уровня для других источников.                                                              |
+| дуккинг                | [аудиодуккингконфигуратион](audioduckingconfiguration.md) | Конфигурация дуккинг (фасинг in и out) других источников для этого партипант настраиваемого набора.       |
+| ексклусивемоде          | boolean                                                   | Следует ли удалять источники без явного исходного уровня из набора.                       |
+| participant            | String                                                    | Участник, для которого настраивается микшер.                                             |
+| саурцелевелс           | Коллекция [аудиосаурцелевел](audiosourcelevel.md)        | Настройка уровня для других источников.                                                              |
 
 ## <a name="json-representation"></a>Представление JSON
 

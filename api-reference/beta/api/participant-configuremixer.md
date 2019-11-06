@@ -3,14 +3,14 @@ title: 'участник: Конфигуремиксер'
 description: Настройка смешанного звука для разных участников многочастной беседы.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3db4e78be860539ea91f7203584c7b2ad42c6cfd
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: c59c56c7c862a62247cadf8472a042e3ea8d9af2
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792592"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006482"
 ---
 # <a name="participant-configuremixer"></a>участник: Конфигуремиксер
 
@@ -31,22 +31,24 @@ ms.locfileid: "36792592"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/participants/configureMixer
+POST /communications/calls/{id}/participants/configureMixer
 ```
+> **Примечание:** `/app` Путь является устаревшим. Перемотка вперед, используйте `/communications` путь.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |партиЦипантмиксерлевелс|Коллекция [партиЦипантмиксерлевел](../resources/participantmixerlevel.md)| Настройка уровней микшера для данного участника аудио.|
-|Контекст|String.|Контекст клиента.|
+|Контекст|String|Контекст клиента.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 Возвращает `202 Accepted` код отклика и заголовок Location с URI для [коммсоператион](../resources/commsoperation.md) , созданного для этого запроса.
 
 ## <a name="example"></a>Пример
@@ -62,7 +64,7 @@ POST /app/calls/{id}/participants/configureMixer
   "name": "participant-configureMixer"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/participants/configureMixer
+POST https://graph.microsoft.com/beta/communications/calls/{id}/participants/configureMixer
 Content-Type: application/json
 Content-Length: 501
 
@@ -97,7 +99,7 @@ Content-Length: 501
 [!INCLUDE [sample-code](../includes/snippets/javascript/participant-configuremixer-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/participant-configuremixer-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -114,15 +116,22 @@ Content-Length: 501
   "@odata.type": "microsoft.graph.commsOperation"
 } -->
 ```http
-HTTP/1.1 202 Accepted
-Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
+HTTP/1.1 200 OK
+Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
+Content-Type: application/json
+Content-Length: 259
+
+{
+  "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
+  "status": "running",
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
+}
 ```
 
 ##### <a name="notification---operation-completed"></a>Уведомление о завершении операции
 
 ```http
 POST https://bot.contoso.com/api/calls
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -132,13 +141,15 @@ Content-Type: application/json
 }-->
 ```json
 {
+  "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
+      "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "deleted",
-      "resource": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
       "resourceData": {
         "@odata.type": "#microsoft.graph.commsOperation",
-        "@odata.id": "/app/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
         "@odata.etag": "W/\"1\"",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
         "status": "completed"

@@ -3,14 +3,14 @@ title: Тип ресурса Сервицехостедмедиаконфиг
 description: Тип Сервицехостедмедиаконфиг.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f56928a7294fba1cb31f5061a2c7b8f7bb70f02a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: edefba3e415a50322022e4549fbecbd37da6d1da
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965203"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006545"
 ---
 # <a name="servicehostedmediaconfig-resource-type"></a>Тип ресурса Сервицехостедмедиаконфиг
 
@@ -22,8 +22,8 @@ ms.locfileid: "35965203"
 
 | Свойство                    | Тип                                                        | Описание                                       |
 | :-------------------------- | :---------------------------------------------------------- | :-------------------------------------------------|
-| Префетчмедиа               | Коллекция [медиаинфо](mediainfo.md)                        | Список носителей для предварительной загрузки.                   |
-| Ремовефромдефаултаудиограуп | Boolean                                                     | Удаление самостоятельного участника из группы "звук" по умолчанию. |
+| префетчмедиа               | Коллекция [медиаинфо](mediainfo.md)                        | Список носителей для предварительной загрузки.                   |
+| ремовефромдефаултаудиограуп | Boolean                                                     | Удаление самостоятельного участника из группы "звук" по умолчанию. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -41,28 +41,6 @@ ms.locfileid: "35965203"
 {
   "preFetchMedia": [ { "@odata.type": "microsoft.graph.mediaInfo" } ],
   "removeFromDefaultAudioGroup": true
-}
-```
-
-## <a name="example"></a>Пример
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.serviceHostedMediaConfig"
-}-->
-```json
-{
-  "preFetchMedia": [
-    {
-      "uri": "https://cdn.contoso.com/beep.wav",
-      "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088E"
-    },
-    {
-      "uri": "https://cdn.contoso.com/cool.wav",
-      "resourceId": "1D6DE2D4-CD51-4309-8DAA-70768651088F"
-    }
-  ],
-  "removeFromDefaultAudioGroup": false
 }
 ```
 

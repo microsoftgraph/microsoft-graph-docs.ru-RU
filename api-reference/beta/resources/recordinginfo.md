@@ -3,14 +3,14 @@ title: Тип ресурса Рекордингинфо
 description: Сведения о записи для участника.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ebb9e7d6a5c62b12073d6fa26e76147eb0cbb137
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2da0dd44ca1dc7ffd8d6ee13b1289e75c87f7cd6
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965483"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006566"
 ---
 # <a name="recordinginfo-resource-type"></a>Тип ресурса Рекордингинфо
 

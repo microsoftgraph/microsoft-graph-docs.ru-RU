@@ -3,14 +3,14 @@ title: Тип ресурса ИнвитепартиЦипантсоперати�
 description: Представляет состояние длительной операции с приглашением для участников, активируемым при вызове API участника-приглашения.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: a974bd22ddd9e1ac8c6ab90cdedb9dda9f1a1bb5
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 5802f5a8a63c971007cb6cda11f16823e6140298
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36793037"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006685"
 ---
 # <a name="inviteparticipantsoperation-resource-type"></a>Тип ресурса ИнвитепартиЦипантсоператион
 
@@ -22,16 +22,11 @@ ms.locfileid: "36793037"
 
 | Свойство                       | Тип                        | Описание                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Контекст                  | String.                      | Контекст клиента.                                                                                                                               |
-| createdDateTime                | DateTimeOffset              | Время создания записи.                                                                                                          |
-| id                             | Строка                      | Идентификатор операции сервера. Только для чтения. Создается сервером.                                                                                             |
-| ластактиондатетиме             | DateTimeOffset              | Время последнего действия операции.                                                                                                     |
+| Контекст                  | String                      | Контекст клиента.                                                                                                                               |
+| id                             | Строка                      | Идентификатор операции сервера. Только для чтения.                                                                                              |
 | participants | Коллекция [инвитатионпартиЦипантинфо](invitationParticipantInfo.md) | Участники, которые необходимо пригласить. |
-| resultInfo                     | [resultInfo](resultinfo.md) | Сведения о результате.  Только для чтения. Создается сервером.                                                                                             |
-| status                         | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения. Создается сервером.                                                 |
-
-## <a name="relationships"></a>Отношения
-Нет
+| resultInfo                     | [resultInfo](resultinfo.md) | Сведения о результате.  Только для чтения.                                                                                             |
+| status                         | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения.                                                  |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -47,9 +42,7 @@ ms.locfileid: "36793037"
 ```json
 {
   "clientContext": "String",
-  "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "lastActionDateTime": "String (timestamp)",
   "participants": [{"@odata.type": "#microsoft.graph.invitationParticipantInfo"}],
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "status": "notStarted | running | completed | failed"

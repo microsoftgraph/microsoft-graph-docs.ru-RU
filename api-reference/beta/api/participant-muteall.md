@@ -1,22 +1,22 @@
 ---
 title: 'участник: Мутеалл'
-description: Отключение звука всех участников вызова.
+description: Отключение звука всех участников звонка.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 1cf7a3220e391b14cedabbb1c0536b959ad03117
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 00ace588a763a9e6d1df64830820be1ad6308567
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792550"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006468"
 ---
 # <a name="participant-muteall"></a>участник: Мутеалл
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отключение звука всех участников вызова.
+Отключение звука всех участников звонка.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -31,22 +31,24 @@ ms.locfileid: "36792550"
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/participants/muteAll
+POST /communications/calls/{id}/participants/muteAll
 ```
+> **Примечание:** `/app` Путь является устаревшим. Перемотка вперед, используйте `/communications` путь.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|participants|Коллекция строк|Участники, которые должны быть отключены.|
-|Контекст|String.|Контекст клиента.|
+|participants|Коллекция String|Участники, которые должны быть отключены.|
+|Контекст|String|Контекст клиента.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [коммсоператион](../resources/commsoperation.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -61,7 +63,7 @@ POST /app/calls/{id}/participants/muteAll
   "name": "participant-muteAll"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls/{id}/participants/muteAll
+POST https://graph.microsoft.com/beta/communications/calls/{id}/participants/muteAll
 Content-Type: application/json
 Content-Length: 81
 
@@ -80,7 +82,7 @@ Content-Length: 81
 [!INCLUDE [sample-code](../includes/snippets/javascript/participant-muteall-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/participant-muteall-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -98,14 +100,13 @@ Content-Length: 81
 } -->
 ```http
 HTTP/1.1 200 OK
+Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
 Content-Type: application/json
 Content-Length: 259
 
 {
   "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
   "status": "completed",
-  "createdDateTime": "2018-09-06T15:58:41Z",
-  "lastActionDateTime": "2018-09-06T15:58:41Z",
   "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
 }
 ```

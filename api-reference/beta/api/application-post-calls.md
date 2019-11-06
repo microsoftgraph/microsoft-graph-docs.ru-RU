@@ -3,14 +3,14 @@ title: Создание звонка
 description: Создание нового звонка.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f8c8e56601d5e2feef4c14e4000a7eb1529565df
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: fbc2fb015d7e57a05e1dc51429343ce38fc2b3e9
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968995"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006447"
 ---
 # <a name="create-call"></a>Создание звонка
 
@@ -18,8 +18,10 @@ ms.locfileid: "37968995"
 
 Создание [звонка](../resources/call.md) позволяет интерфейсу Bot создать новый исходящий вызов или присоединиться к существующему собранию. Вам потребуется [зарегистрировать запрашивающий абонент](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) и просмотреть список необходимых разрешений, как описано ниже.
 
+> **Примечание:** В настоящее время поддерживаются только звонки по протоколу VoIP. 
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                             |
@@ -28,45 +30,47 @@ ms.locfileid: "37968995"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                                                                           |
 | Для приложений                            | Calls. Жоинграупкаллсасгуест. ALL, Calls. Жоинграупкаллс. ALL, Calls. initiate. ALL, Calls. Инитиатеграупкаллс. ALL |
 
-> **Примечание:** Кроме того, для вызова с размещенными в приложении носителями требуется разрешение Calls. Акцессмедиа. ALL.
+> **Примечание:** Для вызова с использованием мультимедиа, размещаемого в приложении, вам потребуется разрешение Calls. Акцессмедиа. ALL с одним из разрешений, перечисленных в предыдущей таблице.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls
+POST /communications/calls
 ```
+> **Примечание:** `/app` Путь является устаревшим. Перемотка вперед, используйте `/communications` путь.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
+| Content-Type  | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [Call](../resources/call.md) в формате JSON.
 
-> **Примечание:** Свойства, отмеченные как `Server generated` , игнорируются при обработке. `POST` `app/calls`
-
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [Call](../resources/call.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="create-peer-to-peer-voip-call-with-service-hosted-media"></a>Создание однорангового вызова VOIP с размещенными в службе носителями
+### <a name="example-1-create-peer-to-peer-voip-call-with-service-hosted-media"></a>Пример 1: создание однорангового звонка VoIP с размещенными в службе носителями
 
 > **Примечание:** Для этого вызова требуется разрешение Calls. initiate. ALL.
 
 ##### <a name="request"></a>Запрос
-В приведенном ниже примере показан запрос, который выполняет одноранговый вызов между Bot и указанным пользователем. В этом примере носитель размещается службой. Значения маркера авторизации, URL-адреса обратного вызова, идентификатора приложения, имени приложения, идентификатора пользователя, имени пользователя и идентификатора клиента должны быть заменены фактическими значениями, чтобы пример работал.
+В следующем примере показан запрос, который выполняет одноранговый звонок между Bot и указанным пользователем. В этом примере носитель размещается службой. Значения маркера авторизации, URL-адреса обратного вызова, идентификатора приложения, имени приложения, идентификатора пользователя, имени пользователя и идентификатора клиента должны быть заменены фактическими значениями, чтобы пример работал.
+
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create-call-from-application"
+  "name": "create-call-service-hosted-media",
+  "@odata.type": "microsoft.graph.call"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/app/calls
+POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
-Authorization: Bearer <Token>
 
 {
   "@odata.type": "#microsoft.graph.call",
@@ -109,7 +113,7 @@ Authorization: Bearer <Token>
 
 ##### <a name="response"></a>Отклик
 
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 
 <!-- {
   "blockType": "response",
@@ -118,9 +122,8 @@ Authorization: Bearer <Token>
 } -->
 ```http
 HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/beta/app/calls/2e1a0b00-2db4-4022-9570-243709c565ab
+Location: https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab
 Content-Type: application/json
-
 
 {
   "@odata.type": "#microsoft.graph.call",
@@ -135,7 +138,7 @@ Content-Type: application/json
       "application": {
         "@odata.type": "#microsoft.graph.identity",
         "displayName": "Calling Bot",
-        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6",
+        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
       }
     },
     "region": null,
@@ -195,7 +198,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/callback
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -210,7 +212,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/2e1a0b00-2db4-4022-9570-243709c565ab",
+      "resourceUrl": "/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab",
       "callbackUri": "https://bot.contoso.com/callback",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
@@ -225,7 +227,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/callback
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -240,7 +241,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/2e1a0b00-b3c5-4b0f-99b3-c133bc1e6116",
+      "resourceUrl": "/communications/calls/2e1a0b00-b3c5-4b0f-99b3-c133bc1e6116",
       "callbackUri": "https://bot.contoso.com/callback",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
@@ -254,27 +255,38 @@ Content-Type: application/json
 }
 ```
 
-### <a name="create-peer-to-peer-voip-call-with-application-hosted-media"></a>Создание однорангового вызова VOIP с размещенными в приложении носителями
+### <a name="example-2-create-peer-to-peer-voip-call-with-application-hosted-media"></a>Пример 2: создание однорангового звонка VoIP с размещенными в приложении носителями
 
-> Note: требуются вызовы. initiate. ALL и Calls. Акцессмедиа. ALL.
+> **Note**: в этом примере необходимы вызовы. initiate. ALL и Calls. Акцессмедиа. ALL.
 
 ##### <a name="request"></a>Запрос
-В приведенном ниже примере показан запрос, который выполняет одноранговый вызов между Bot и указанным пользователем. В этом примере мультимедиа размещается локально приложением. Значения маркера авторизации, URL-адреса обратного вызова, идентификатора приложения, имени приложения, идентификатора пользователя, имени пользователя и идентификатора клиента должны быть заменены фактическими значениями, чтобы пример работал.
-
-```http
-POST https://graph.microsoft.com/beta/app/calls
-Content-Type: application/json
-Authorization: Bearer <Token>
-```
+В следующем примере показан запрос, который выполняет одноранговый звонок между Bot и указанным пользователем. В этом примере мультимедиа размещается локально приложением. Значения маркера авторизации, URL-адреса обратного вызова, идентификатора приложения, имени приложения, идентификатора пользователя, имени пользователя и идентификатора клиента должны быть заменены фактическими значениями, чтобы пример работал.
 
 <!-- {
-  "blockType": "example",
+  "blockType": "request",
+  "name": "create-call-app-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
-```json
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.call",
   "callbackUri": "https://bot.contoso.com/callback",
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
+      }
+    },
+    "region": null,
+    "languageId": null
+  },
   "targets": [
     {
       "@odata.type": "#microsoft.graph.participantInfo",
@@ -293,7 +305,7 @@ Authorization: Bearer <Token>
   ],
  "mediaConfig": {
     "@odata.type": "#microsoft.graph.appHostedMediaConfig",
-    "blob": "<Media Session Configuration>",
+    "blob": "<Media Session Configuration>"
   }
 }
 ```
@@ -306,7 +318,212 @@ Authorization: Bearer <Token>
 
 >**Примечание:** Для одноранговых вызовов ожидаемые уведомления относятся только к изменениям состояния вызовов.
 
-### <a name="join-scheduled-meeting-with-service-hosted-media"></a>Присоединение запланированного собрания с размещенными на службах носителями
+##### <a name="response"></a>Отклик
+
+> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.call"
+} -->
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "state": "establishing",
+  "direction": "outgoing",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "callRoutes": [],
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
+      }
+    },
+    "region": null,
+    "languageId": null
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.participantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "John",
+          "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
+        }
+      }
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "activeModalities": [],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
+    "blob": "<Media Session Configuration>",
+  },
+  "routingPolicies": [],
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+  "myParticipantId": "499ff390-7a72-40e8-83a0-8fac6295ae7e",
+  "id": "2e1a0b00-2db4-4022-9570-243709c565ab",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#app/calls/$entity",
+  "subject": null,
+  "terminationReason": null,
+  "ringingTimeoutInSeconds": null,
+  "mediaState": null,
+  "resultInfo": null,
+  "answeredBy": null,
+  "chatInfo": null,
+  "meetingInfo": null,
+  "meetingCapability": null,
+  "toneInfo": null
+}
+```
+
+### <a name="example-3-create-a-group-call-with-service-hosted-media"></a>Пример 3: Создание группового звонка с размещенными у службы носителями
+
+Поддерживает до 5 пользователей VoIP. В этом примере показано, как создать групповой вызов с двумя пользователями VoIP.
+> **Примечание:** В этом примере для `Calls.InitiateGroupCalls.All` вызова требуется разрешение. Созданный групповой вызов не поддерживает чат или запись.
+
+##### <a name="request"></a>Запрос
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+```
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.call"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.call",
+  "direction": "outgoing",
+  "subject": "Create a group call with service hosted media",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "TestBot",
+        "id": "dd3885da-f9ab-486b-bfae-85de3d445555"
+      }
+    }
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.participantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "user1",
+          "id": "98da8a1a-1b87-452c-a713-65d3f10b5555"
+        }
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.participantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "user2",
+          "id": "bf5aae9a-d11d-47a8-93b1-782504c95555"
+        }
+      }
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "removeFromDefaultAudioGroup": false
+  },
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a"
+}
+```
+
+### <a name="example-4-create-a-group-call-with-application-hosted-media"></a>Пример 4: создание групповой связи с размещенными в приложении носителями
+
+Поддерживает до 5 пользователей VoIP. В этом примере показано, как создать групповой вызов с двумя пользователями VoIP.
+> **Примечание:** В этом примере для `Calls.InitiateGroupCalls.All` вызова требуется разрешение. Созданный групповой вызов не поддерживает чат или запись.
+
+##### <a name="request"></a>Запрос
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+```
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.call"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.call",
+  "direction": "outgoing",
+  "subject": "Create a group call with service hosted media",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "application": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "TestBot",
+        "id": "dd3885da-f9ab-486b-bfae-85de3d445555"
+      }
+    }
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.participantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "user1",
+          "id": "98da8a1a-1b87-452c-a713-65d3f10b5555"
+        }
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.participantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "user": {
+          "@odata.type": "#microsoft.graph.identity",
+          "displayName": "user2",
+          "id": "bf5aae9a-d11d-47a8-93b1-782504c95555"
+        }
+      }
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
+    "blob": "<Media Session Configuration>",
+    "removeFromDefaultAudioGroup": false
+  },
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a"
+}
+```
+
+### <a name="example-5-join-scheduled-meeting-with-service-hosted-media"></a>Пример 5: присоединение к запланированному собранию с размещенными на службах носителями
 Чтобы присоединиться к запланированному собранию, необходимо получить идентификатор потока, идентификатор сообщения, идентификатор организатора и идентификатор клиента, на котором запланировано собрание.
 Эту информацию можно получить из [API получения Интернет-собраний](../api/onlinemeeting-get.md).
 
@@ -315,17 +532,15 @@ Authorization: Bearer <Token>
 
 ##### <a name="request"></a>Запрос
 
-```http
-POST https://graph.microsoft.com/beta/app/calls
-Content-Type: application/json
-Authorization: Bearer <Token>
-```
-
 <!-- {
-  "blockType": "example",
+  "blockType": "request",
+  "name": "join-meeting-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
-```json
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.call",
   "callbackUri": "https://bot.contoso.com/callback",
@@ -367,18 +582,16 @@ Authorization: Bearer <Token>
 ```
 ##### <a name="response"></a>Ответ
 
-```http
-HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/beta/app/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
-Content-Type: application/json
-```
-
 <!-- {
-  "blockType": "example",
+  "blockType": "response",
   "truncated": "true",
   "@odata.type": "microsoft.graph.call"
 }-->
-```json
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.call",
   "state": "establishing",
@@ -392,7 +605,7 @@ Content-Type: application/json
       "application": {
         "@odata.type": "#microsoft.graph.identity",
         "displayName": "Calling Bot",
-        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6",
+        "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
       }
     },
     "region": null,
@@ -455,7 +668,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/callback
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -470,7 +682,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92",
+      "resourceUrl": "/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92",
         "callbackUri": "https://bot.contoso.com/callback",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
@@ -504,7 +716,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/callback
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -519,7 +730,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92",
+      "resourceUrl": "/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92",
       "callbackUri": "https://bot.contoso.com/callback",
       "resourceData": {
         "@odata.type": "#microsoft.graph.call",
@@ -552,7 +763,6 @@ Content-Type: application/json
 
 ```http
 POST https://bot.contoso.com/callback
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -568,7 +778,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92/participants",
+      "resourceUrl": "/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92/participants",
       "callbackUri": "https://bot.contoso.com/callback",
       "resourceData": [
         {
@@ -646,19 +856,18 @@ Content-Type: application/json
 
 >**Примечание:** При объединении сценариев собраний, отличных от уведомлений о состоянии вызовов, мы получаем уведомления списков.
 
-### <a name="join-scheduled-meeting-with-app-hosted-media"></a>Присоединение к запланированному собранию с размещенными носителями приложений
+### <a name="example-6-join-scheduled-meeting-with-app-hosted-media"></a>Пример 6: присоединение к запланированному собранию с размещенными носителями приложений
 Чтобы присоединиться к собранию с размещенными в приложении носителями, обновите конфигурацию мультимедиа с помощью [апфостедмедиаконфиг](../resources/apphostedmediaconfig.md) , как показано ниже, в приведенном выше примере.
 
-```http
-POST https://graph.microsoft.com/beta/app/calls
-Content-Type: application/json
-Authorization: Bearer <Token>
-```
 <!-- {
   "blockType": "example",
+  "name": "join-meeting-app-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
-```json
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.call",
   "direction": "outgoing",
@@ -693,7 +902,7 @@ Authorization: Bearer <Token>
 ```
 
 
-### <a name="join-channel-meeting-with-service-hosted-media"></a>Присоединение к собранию канала с размещенными в службах носителями
+### <a name="example-7-join-channel-meeting-with-service-hosted-media"></a>Пример 7: присоединение к собранию канала с размещенными в службах носителями
 Для собрания в канале требуются определенные сведения, такие как идентификатор потока, идентификатор MessageId и сведения об организаторе, которые можно получить с помощью [API получения Интернет-собраний](../api/onlinemeeting-get.md).
 
 Значения маркера авторизации, URL-адреса обратного вызова, идентификатора приложения, имени приложения, идентификатора пользователя, имени пользователя и идентификатора клиента должны быть заменены вместе со сведениями, полученными от [получения API собраний по сети](../api/onlinemeeting-get.md) с фактическими значениями, чтобы сделать пример работать.
@@ -702,17 +911,15 @@ Authorization: Bearer <Token>
 
 ##### <a name="request"></a>Запрос
 
-```http
-POST https://graph.microsoft.com/beta/app/calls
-Content-Type: application/json
-Authorization: Bearer <Token>
-```
-
 <!-- {
   "blockType": "example",
+  "name": "join-channel-meeting-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
-```json
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.call",
   "callbackUri": "https://bot.contoso.com/callback",
@@ -753,7 +960,7 @@ Authorization: Bearer <Token>
 }
 ```
 
-### <a name="join-channel-meeting-as-a-guest-with-service-hosted-media"></a>Присоединение к собранию канала в качестве гостя с размещенными в службах носителями
+### <a name="example-8-join-channel-meeting-as-a-guest-with-service-hosted-media"></a>Пример 8: присоединение к собранию канала в качестве гостя с размещенными в службе носителями
 Для присоединения к собранию по каналу в качестве гостя необходимо создать гостевой [идентификацию](../resources/identityset.md) и добавить ее в качестве источника звонка в приглашении на собрание.
 Отображаемое имя — это имя, которое должно отображаться на собрании для удостоверения гостей. Идентификатором может быть уникальный идентификатор, идентифицирующий гостевую идентификацию.
 
@@ -761,17 +968,15 @@ Authorization: Bearer <Token>
 
 ##### <a name="request"></a>Запрос
 
-```http
-POST https://graph.microsoft.com/beta/app/calls
-Content-Type: application/json
-Authorization: Bearer <Token>
-```
-
 <!-- {
   "blockType": "example",
+  "name": "join-channel-meeting-as-guest-service-hosted-media",
   "@odata.type": "microsoft.graph.call"
 }-->
-```json
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.call",
   "callbackUri": "https://bot.contoso.com/callback",
@@ -828,7 +1033,6 @@ Authorization: Bearer <Token>
 
 ```http
 POST https://bot.contoso.com/callback
-Authorization: Bearer <TOKEN>
 Content-Type: application/json
 ```
 
@@ -844,7 +1048,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.commsNotification",
       "changeType": "updated",
-      "resource": "/app/calls/2f1a1100-726f-4705-a071-30fb8f6b568f/participants",
+      "resourceUrl": "/communications/calls/2f1a1100-726f-4705-a071-30fb8f6b568f/participants",
       "callbackUri": "https://bot.contoso.com/callback",
       "resourceData": [
         {
@@ -879,6 +1083,7 @@ Content-Type: application/json
 }
 ```
 > **Примечание:** Приложение не будет получать список участников собрания, пока его допустить в "зале ожидания"
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

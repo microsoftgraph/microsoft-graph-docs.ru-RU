@@ -3,14 +3,13 @@ title: 'Справочник по разрешениям Microsoft Graph '
 description: Microsoft Graph предоставляет детализированные разрешения, управляющие доступом приложений к ресурсам, таким как пользователи, группы и почта. Вы как разработчик указываете, какие разрешения для Microsoft Graph должно запрашивать ваше приложение.
 author: jackson-woods
 localization_priority: Priority
-scenarios: getting-started
-ms.custom: graphiamtop20
-ms.openlocfilehash: 80c070f1146161b82a24f1086f63d5a121c923d7
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.custom: graphiamtop20, scenarios:getting-started
+ms.openlocfilehash: b7a2ac1f38c26ad2d6208d6b382625132018731f
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939840"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969230"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -173,12 +172,16 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 #### <a name="delegated-permissions"></a>Делегированные разрешения
 
-Нет.
+|   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Application.Read.All_ | Чтение приложений | Позволяет приложению читать приложения и субъекты-службы от имени вошедшего пользователя. | Да |
+| _Application.ReadWrite.All_ | Чтение и запись всех приложений |  Позволяет приложению создавать, читать, обновлять и удалять приложения и субъекты-службы от имени вошедшего пользователя. | Да |
 
 #### <a name="application-permissions"></a>Разрешения приложений
 
 |   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _Application.Read.All_ | Чтение приложений | Позволяет приложению читать приложения и субъекты-службы без необходимости входа пользователя. | Да |
 | _Application.ReadWrite.All_ | Чтение и запись всех приложений | Позволяет вызывающему приложению создавать приложения и субъект-службы, а также управлять ими (т. е. читать, обновлять, обновлять секретные ключи приложения и удалять) без необходимости входа пользователя.  Управлять разрешениями на согласие, а также назначениями приложений для пользователей или групп не разрешается. | Да |
 | _Application.ReadWrite.OwnedBy_ | Управление приложениями, которыми это приложение владеет или которые были им созданы | Позволяет вызывающему приложению создавать другие приложения и субъект-службы, а также полностью управлять ими (читать, обновлять, обновлять секретные ключи приложения и удалять) без необходимости входа пользователя.  Приложение может обновлять только программы, которыми владеет. Управлять разрешениями на согласие, а также назначениями приложений для пользователей или групп не разрешается. | Да |
 
@@ -189,13 +192,14 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 ### <a name="example-usage"></a>Примеры использования
 
-#### <a name="delegated"></a>Делегированные
+#### <a name="delegated"></a>Делегированные разрешения
 
-Нет.
+* _Application.Read.All_. Составление списка всех приложений (`GET /beta/applications`)
+* _Application.ReadWrite.All_. Обновление субъекта-службы (`PATCH /beta/servicePrincipals/{id}`)
 
-#### <a name="application"></a>Приложение
+#### <a name="application"></a>Для приложения
 
-* _Application.ReadWrite.All_. Составление списка всех приложений (`GET /beta/applications`)
+* _Application.Read.All_. Составление списка всех приложений (`GET /beta/applications`)
 * _Application.ReadWrite.All_. Удаление субъект-службы (`DELETE /beta/servicePrincipals/{id}`)
 * _Application.ReadWrite.OwnedBy_. Создание приложения (`POST /beta/applications`)
 * _Application.ReadWrite.OwnedBy_. Составление списка всех приложений, принадлежащих вызывающему приложению (`GET /beta/servicePrincipals/{id}/ownedObjects`)

@@ -3,14 +3,14 @@ title: Тип ресурса Плайпромптоператион
 description: Операция Плайпромпт для получения результата действия Плайпромпт.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b79fa774c112433b09d75eb04f16823f2dad9b6c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 84b54fbce830f5b505decee7e2d25618700728b3
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008980"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006580"
 ---
 # <a name="playpromptoperation-resource-type"></a>Тип ресурса Плайпромптоператион
 
@@ -22,15 +22,13 @@ ms.locfileid: "36008980"
 
 | Свойство            | Тип                        | Описание|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
-| Контекст       | String                      | Контекст клиента.                                                                |
-| Комплетионреасон    | String                      | Возможные значения: `unknown`, `completedSuccessfully`, `mediaOperationCanceled`. |
-| createdDateTime     | DateTimeOffset              | Время начала операции.                                                   |
+| Контекст       | String                      | Уникальная строка контекста клиента. Максимальный лимит — 256 символов.                              |
+| комплетионреасон    | String                      | Возможные значения: `unknown`, `completedSuccessfully`, `mediaOperationCanceled`. |
 | id                  | Строка                      | Только для чтения.                                                                         |
-| Ластактиондатетиме  | DateTimeOffset              | Время последнего действия операции.                                      |
-| resultInfo          | [resultInfo](resultinfo.md) | Сведения о результате. Только для чтения. Создается сервером.                               |
+| resultInfo          | [resultInfo](resultinfo.md) | Сведения о результате. Только для чтения.                                |
 | status              | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`.               |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -48,9 +46,7 @@ ms.locfileid: "36008980"
 {
   "clientContext": "String",
   "completionReason": "unknown | completedSuccessfully | mediaOperationCanceled",
-  "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "lastActionDateTime": "String (timestamp)",
   "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
   "status": "notStarted | running | completed | failed"
 }

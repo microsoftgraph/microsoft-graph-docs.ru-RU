@@ -3,14 +3,14 @@ title: Удаление группы маршрутизации звука
 description: Удаление указанной группы маршрутизации звука.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2e1bea10e2aa19f1503ca96fa34ceac6c033d891
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 4155f02b6c4f6eda7366734bd3f13dd2313d907d
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792473"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006412"
 ---
 # <a name="delete-audio-routing-group"></a>Удаление группы маршрутизации звука
 
@@ -31,17 +31,19 @@ ms.locfileid: "36792473"
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /app/calls/{id}/audioRoutingGroups/{id}
+DELETE /communications/calls/{id}/audioRoutingGroups/{id}
 ```
+> **Примечание:** `/app` Путь является устаревшим. Перемотка вперед, используйте `/communications` путь.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
@@ -56,7 +58,7 @@ DELETE /app/calls/{id}/audioRoutingGroups/{id}
   "name": "delete-audioRoutingGroup"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}
+DELETE https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroups/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-audioroutinggroup-csharp-snippets.md)]
@@ -66,7 +68,7 @@ DELETE https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-audioroutinggroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-audioroutinggroup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

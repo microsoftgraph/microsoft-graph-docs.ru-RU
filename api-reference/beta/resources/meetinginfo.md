@@ -3,26 +3,30 @@ title: Тип ресурса Митингинфо
 description: Сведения о собрании, указанные для создания или присоединения к собранию.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: da3e89e0aa28868debd4b6ea98291fa88b42bb0b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ef9c2b86c9eb745ae6282a5d3cbce8a76dc31139
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966878"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006643"
 ---
 # <a name="meetinginfo-resource-type"></a>Тип ресурса Митингинфо
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Сведения о собрании, указанные для создания или присоединения к собранию.
+Это абстрактный класс, который содержит сведения о собрании.
+ 
+Чтобы присоединиться к существующему собранию, необходимо либо указать [организермитингинфо](organizermeetinginfo.md) в сочетании с [чатинфо](./chatinfo.md), либо только с [токенмитингинфо](tokenmeetinginfo.md).
 
-## <a name="properties"></a>Свойства
 
-| Свойство       | Тип    | Описание|
-|:---------------|:--------|:----------|
-| Алловконверсатионвисаусост | Boolean |  |
+## <a name="derived-types"></a>Производные типы
+
+| Тип                                                 | Описание                                                         |
+|:-----------------------------------------------------|:--------------------------------------------------------------------|
+| [организермитингинфо](./organizermeetinginfo.md)    | Сведения об организаторе собрания                          |
+| [токенмитингинфо](tokenmeetinginfo.md)              | Зашифрованный маркер, содержащий сведения о собрании  |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -37,7 +41,6 @@ ms.locfileid: "35966878"
 }-->
 ```json
 {
-  "allowConversationWithoutHost": true
 }
 ```
 

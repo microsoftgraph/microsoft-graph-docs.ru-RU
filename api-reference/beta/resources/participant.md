@@ -3,14 +3,14 @@ title: Тип ресурса участника
 description: Тип участника.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: a903eb34191401100d9b19aa17eba6fb9f5c6617
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e2fae206fb76ffe3c00b91d992c874e200eeae98
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009218"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006601"
 ---
 # <a name="participant-resource-type"></a>Тип ресурса участника
 
@@ -22,10 +22,10 @@ ms.locfileid: "36009218"
 
 | Метод                                                          | Возвращаемый тип                              | Описание                                       |
 |:----------------------------------------------------------------|:-----------------------------------------|:--------------------------------------------------|
-| [Получение участника](../api/participant-get.md)                    | [абонент](participant.md)            | Чтение свойств объекта **участника** .    |
-| [Конфигуремиксер](../api/participant-configuremixer.md)          | [commsOperation](commsoperation.md)      | Настройка микшера звука участника.            |
+| [Получение участника](../api/participant-get.md)                    | [participant](participant.md)            | Чтение свойств объекта **участника** .    |
+| [конфигуремиксер](../api/participant-configuremixer.md)          | [commsOperation](commsoperation.md)      | Настройка микшера звука участника.            |
 | [Приглашение](../api/participant-invite.md)                          | [commsOperation](commsoperation.md)      | Приглашение участника на звонок.                 |
-| [Отключение звука для участника](../api/participant-mute.md)                  | [commsOperation](commsoperation.md)      | Отключение выключения участника в вызове.                     |
+| [Отключение звука участника](../api/participant-mute.md)                  | [commsOperation](commsoperation.md)      | Отключение выключения участника в вызове.                     |
 | [Отключение выключения всех участников](../api/participant-muteall.md)          | [commsOperation](commsoperation.md)      | Отключение выключения всех участников собрания.         |
 
 ## <a name="properties"></a>Свойства
@@ -34,13 +34,13 @@ ms.locfileid: "36009218"
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
 | id                   | String                                   | Идентификатор участника.                                          |
 | info                 | [participantInfo](participantinfo.md)    | Участник участника.                          |
-| Исинлобби            | boolean                                  | true, если участник находится в зале ожидания                          |
+| исинлобби            | boolean                                  | true, если участник находится в зале ожидания                          |
 | Автозвук              | boolean                                  | true, если участник отключен (клиент или сервер выключен)    |
-| Медиастреамс         | Коллекция [медиастреам](mediastream.md) | Список потоков мультимедиа.                                   |
+| медиастреамс         | Коллекция [медиастреам](mediastream.md) | Список потоков мультимедиа.                                   |
 | метаданных             | String                                   | Большой двоичный объект данных, предоставляемый участником в списке     |
-| Рекордингинфо        | [Рекордингинфо](recordinginfo.md)        | Сведения о том, имеет ли участник возможность записи. |
+| рекордингинфо        | [рекордингинфо](recordinginfo.md)        | Сведения о том, имеет ли участник возможность записи. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -63,44 +63,6 @@ ms.locfileid: "36009218"
   "mediaStreams": [ { "@odata.type": "#microsoft.graph.mediaStream" } ],
   "metadata": "String",
   "recordingInfo": { "@odata.type": "#microsoft.graph.recordingInfo" }
-}
-```
-
-## <a name="example"></a>Пример
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.participant"
-}-->
-```json
-{
-  "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
-  "info": {
-    "identity": {
-      "user": {
-        "id": "550fae72-d251-43ec-868c-373732c2704f",
-        "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-        "displayName": "Heidi Steen"
-      }
-    },
-    "languageId": "en-US",
-    "region": "westus"
-  },
-  "isInLobby": false,
-  "isMuted": false,
-  "mediaStreams": [
-    {
-      "sourceId": "1",
-      "direction": "sendReceive",
-      "label": "main-audio",
-      "mediaType": "audio",
-      "serverMuted": false
-    }
-  ],
-  "metadata": "metadata-value",
-  "recordingInfo": {
-    "status": "recordingCapable"
-  }
 }
 ```
 

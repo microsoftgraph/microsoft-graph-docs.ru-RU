@@ -5,24 +5,25 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: 9d7b1013d572f98f10634ac6470367fd44ffbb66
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 4aebabc02ec673534d789542af33d74d6ede4eea
+ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938858"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37998632"
 ---
 # <a name="passwordcredential-resource-type"></a>Тип ресурса Пассвордкредентиал
 
 Представляет учетные данные пароля, связанные с приложением или субъектом службы. Свойство **пассвордкредентиалс** [приложения](application.md) <!--and [servicePrincipal](serviceprincipal.md) entitites--> сущность — это коллекция объектов **пассвордкредентиал** .
 
-> Note: использование PATCH для обновления Пассвордкредентиалс не поддерживается. Использование методов Аддпассворд и Ремовепассворд для обновления пароля приложения <!--or a servicePrincipal-->.
+> [!IMPORTANT]
+> Использование POST или PATCH для установки **пассвордкредентиал** не поддерживается. Использование методов Аддпассворд и Ремовепассворд для обновления пароля приложения<!--or a servicePrincipal-->:
 >
-> - Application — [аддпассворд](../api/application-addpassword.md)
-> - Application — [ремовепассворд](../api/application-removepassword.md)
+> - [Приложение: Аддпассворд](../api/application-addpassword.md)
+> - [Приложение: Ремовепассворд](../api/application-removepassword.md)
 <!--
-> - servicePrincipal - [addPassword](../api/serviceprincipal-addpassword.md)
-> - servicePrincipal - [removePassword](../api/serviceprincipal-removepassword.md)
+> - [servicePrincipal: addPassword](../api/serviceprincipal-addpassword.md)
+> - [servicePrincipal: removePassword](../api/serviceprincipal-removepassword.md)
 -->
 
 ## <a name="properties"></a>Свойства

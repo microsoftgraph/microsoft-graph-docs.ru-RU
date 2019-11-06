@@ -3,14 +3,14 @@ title: Сценарии IVR в вызовах
 description: Ниже приведены сценарии интерактивного речевого ответа (IVR), которые вызываются API-интерфейсам в службе Microsoft Graph.
 author: VinodRavichandran
 localization_priority: Normal
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 doc_type: conceptualPageType
-ms.openlocfilehash: 25f9339f33a6a679a8c8829214526fc29bc88b04
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 094b0677e243696a1dfe81a3916a863c09e73b92
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013042"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006735"
 ---
 # <a name="ivr-scenarios-in-calls"></a>Сценарии IVR в вызовах
 

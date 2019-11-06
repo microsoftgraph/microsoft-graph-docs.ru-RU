@@ -2,27 +2,27 @@
 title: Тип ресурса Каллмедиастате
 description: Представляет состояние мультимедиа для вызова.
 author: VinodRavichandran
-ms.prod: microsoft-teams
+ms.prod: cloud-communications
 localization_priority: Normal
 doc_type: resourcePageType
-ms.openlocfilehash: 6b092598c50663ec9e7803a13332798d05fe095b
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 29402e813f6816ebea02ad2bb86c403408c2ff81
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36793035"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006749"
 ---
-# <a name="audioconferencing-resource-type"></a>Тип ресурса АудиоконференЦинг
+# <a name="callmediastate-resource-type"></a>Тип ресурса Каллмедиастате
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет состояние [звонка для вызова](call.md).
+Представляет состояние мультимедиа для [вызова](call.md).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство            | Тип    | Описание                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
-| audio           | String.  | Состояние звукового носителя. Возможные значения: `active`, `inactive`. |
+| audio           | String  | Состояние звукового носителя. Возможные значения: `active`, `inactive`. |
 
 ## <a name="json-representation"></a>Представление JSON
 
