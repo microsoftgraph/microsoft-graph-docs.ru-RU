@@ -3218,7 +3218,7 @@
                   href: api/application-removepassword.md
                 - name: Создание расширения
                   href: api/application-post-extensionproperty.md
-                - name: Расширения списка
+                - name: Список расширений
                   href: api/application-list-extensionproperty.md
                 - name: Удаление расширения
                   href: api/application-delete-extensionproperty.md
@@ -3586,7 +3586,7 @@
                       href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                     - name: Получение многозначного свойства
                       href: api/multivaluelegacyextendedproperty-get.md
-        - name: Примечания
+        - name: Заметки
           displayName: OneNote
           items:
             - name: Обзор
@@ -3958,7 +3958,7 @@
         - name: Безопасность
           displayname: 'Security API, Microsoft Intelligent Security Graph'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/security-api-overview.md
             - name: Оповещения
               href: resources/alert.md
@@ -4027,9 +4027,9 @@
                   href: api/listitem-list-versions.md
                 - name: Получение аналитических данных об элементе
                   href: api/itemanalytics-get.md
-        - name: Аналитика людей и рабочих места
+        - name: Люди и рабочая аналитика
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/social-overview.md
             - name: Человек
               href: resources/person.md
@@ -4295,6 +4295,13 @@
                   href: api/workbook-list-worksheets.md
                 - name: Перечисление имен
                   href: api/workbook-list-names.md
+            - name: Приложение для рабочих книг
+              href: resources/workbookapplication.md
+              items:
+                - name: Получение
+                  href: api/workbookapplication-get.md
+                - name: Вычисление
+                  href: api/workbookapplication-calculate.md
             - name: Комментарии к книге
               href: resources/workbookcomment.md
               items:

@@ -1,39 +1,39 @@
 ---
 title: Тип ресурса "книга"
-description: Workbook — это объект верхнего уровня, содержащий связанные объекты книг, например листы, таблицы, диапазоны и т. д.
+description: Содержит связанные объекты книг, такие как листы, таблицы, диапазоны и т. д.
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 7653aecb9f10523ce838ec2832a6080f462291f9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 45b5cce5b6c79ef041d80a467f6663e7cdc670bb
+ms.sourcegitcommit: 2f3e7325b5bc1f0cdc12a8acdf34d31cea3b8bdb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007349"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "38023207"
 ---
 # <a name="workbook-resource-type"></a>Тип ресурса "книга"
 
-Workbook — это объект верхнего уровня, содержащий связанные объекты книг, например листы, таблицы, диапазоны и т. д.
-
-## <a name="properties"></a>Свойства
-Нет
+Содержит связанные объекты книг, такие как листы, таблицы, диапазоны и т. д.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Create Session](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |Создание сеанса книги для запуска сохраняемого или несохраняемого сеанса.|
-|[Close Session](../api/workbook-closesession.md) | Нет |Закрытие существующего сеанса.|
-|[Refresh Session](../api/workbook-refreshsession.md) | Нет |Обновление существующего сеанса.|
+|[Создание сеанса](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |Создание сеанса книги для запуска сохраняемого или несохраняемого сеанса.|
+|[Закрыть сеанс](../api/workbook-closesession.md) | Нет |Закрытие существующего сеанса.|
+|[Сеанс обновления](../api/workbook-refreshsession.md) | Нет |Обновление существующего сеанса.|
 
+## <a name="properties"></a>Свойства
+Нет
 
-## <a name="relationships"></a>Связи
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Отношения
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |names|Коллекция [воркбукнамедитем](workbooknameditem.md) |Представляет коллекцию именованных элементов в книге (именованные диапазоны и константы). Только для чтения.|
 |tables|Коллекция [воркбуктабле](workbooktable.md) |Представляет коллекцию таблиц, сопоставленных с книгой. Только для чтения.|
 |worksheets|Коллекция [воркбукворкшит](workbookworksheet.md) |Представляет коллекцию листов, сопоставленных с книгой. Только для чтения.|
+|воркббукаппликатион|[воркбукаппликатион](workbookapplication.md) |Представляет Воркбукаппликатион Excel, который управляет книгой.|
 
 ## <a name="functions"></a>Функции
 
@@ -136,7 +136,7 @@ content-type: application/json;odata.metadata
 }
 ```
 ## <a name="json-representation"></a>Представление JSON
-Ниже представлено описание ресурса в формате JSON.
+
 <!--{
   "blockType": "resource",
   "keyProperty": "id",

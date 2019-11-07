@@ -2,19 +2,17 @@
 title: 'Воркбукаппликатион: Calculate'
 description: Пересчитывает данные во всех открытых в текущий момент книгах Excel.
 localization_priority: Normal
-author: lumine2008
+author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d05767d03e10e0fb7785442fef6696b273f52424
+ms.openlocfilehash: 20adace4998c1538dafc4d99d6a888c5d7f3ad4f
 ms.sourcegitcommit: 2f3e7325b5bc1f0cdc12a8acdf34d31cea3b8bdb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/07/2019
-ms.locfileid: "38023186"
+ms.locfileid: "38023222"
 ---
 # <a name="workbookapplication-calculate"></a>Воркбукаппликатион: Calculate
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Пересчитывает данные во всех открытых в текущий момент книгах Excel.
 
@@ -23,7 +21,7 @@ ms.locfileid: "38023186"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Files.ReadWrite     |
+|Делегированные (рабочая или учебная учетная запись) | Files.ReadWrite    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -51,17 +49,16 @@ POST /workbook/application/calculate
 При успешном выполнении этот метод возвращает код отклика `200 OK`. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
-
+Ниже приведен пример вызова этого API.
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "workbookApplication_calculate"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/application/calculate
+POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/application/calculate
 Content-type: application/json
 Content-length: 48
 
@@ -69,24 +66,10 @@ Content-length: 48
   "calculationType": "calculationType-value"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/workbookapplication-calculate-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/workbookapplication-calculate-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/workbookapplication-calculate-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 ### <a name="response"></a>Отклик
-Ниже приводится пример отклика.
-
+Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",
   "truncated": true,

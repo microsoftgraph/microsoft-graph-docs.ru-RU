@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Воркбукаппликатион
-description: Представляет Воркбукаппликатион Excel, который управляет книгой.
+description: Представляет приложение Excel, которое управляет книгой.
 localization_priority: Normal
-author: lumine2008
+author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 04b2d4ab31651fe34affe42ef4811c3802762581
+ms.openlocfilehash: a4f7d2cd6887598ac0a60522dc5bee1101dff9c9
 ms.sourcegitcommit: 2f3e7325b5bc1f0cdc12a8acdf34d31cea3b8bdb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/07/2019
-ms.locfileid: "38023200"
+ms.locfileid: "38023250"
 ---
 # <a name="workbookapplication-resource-type"></a>Тип ресурса Воркбукаппликатион
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет приложение Excel, которое управляет книгой.
 
@@ -36,7 +34,6 @@ ms.locfileid: "38023200"
 
 
 ## <a name="json-representation"></a>Представление в формате JSON
-
 
 <!-- {
   "blockType": "resource",

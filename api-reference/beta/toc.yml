@@ -773,7 +773,7 @@
                   href: api/event-delta.md
                 - name: Представление напоминаний
                   href: api/user-reminderview.md
-            - name: Category
+            - name: Категория
               href: resources/outlookcategory.md
               items:
                 - name: Перечисление категорий
@@ -2357,7 +2357,7 @@
                 - name: Результат импорта удостоверения устройства Apple
                   href: resources/intune-enrollment-importedappledeviceidentityresult.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-enrollment-importedappledeviceidentityresult-list.md
                     - name: Получение
                       href: api/intune-enrollment-importedappledeviceidentityresult-get.md
@@ -2370,7 +2370,7 @@
                 - name: Импортированное удостоверение устройства
                   href: resources/intune-enrollment-importeddeviceidentity.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-enrollment-importeddeviceidentity-list.md
                     - name: Получение
                       href: api/intune-enrollment-importeddeviceidentity-get.md
@@ -2994,7 +2994,7 @@
                 - name: База профилей сертификатов для рабочих профилей Android
                   href: resources/intune-deviceconfig-androidworkprofilecertificateprofilebase.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-deviceconfig-androidworkprofilecertificateprofilebase-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-androidworkprofilecertificateprofilebase-get.md
@@ -3016,7 +3016,7 @@
                 - name: Пользовательская конфигурация рабочего профиля Android
                   href: resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-deviceconfig-androidworkprofilecustomconfiguration-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-androidworkprofilecustomconfiguration-get.md
@@ -5993,7 +5993,7 @@
                 - name: Назначение пула кода активации внедрения SIM-карты
                   href: resources/intune-esim-embeddedsimactivationcodepoolassignment.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-esim-embeddedsimactivationcodepoolassignment-list.md
                     - name: Получение
                       href: api/intune-esim-embeddedsimactivationcodepoolassignment-get.md
@@ -6006,7 +6006,7 @@
                 - name: Состояние устройства встроенной SIM-карты
                   href: resources/intune-esim-embeddedsimdevicestate.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-esim-embeddedsimdevicestate-list.md
                     - name: Получение
                       href: api/intune-esim-embeddedsimdevicestate-get.md
@@ -6165,7 +6165,7 @@
                 - name: Заявление условия управления
                   href: resources/intune-fencing-managementconditionstatement.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-fencing-managementconditionstatement-list.md
                     - name: Получение
                       href: api/intune-fencing-managementconditionstatement-get.md
@@ -6215,7 +6215,7 @@
                 - name: Условие управления конфигурацией сети IPv4
                   href: resources/intune-fencing-networkipv4configurationmanagementcondition.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-fencing-networkipv4configurationmanagementcondition-list.md
                     - name: Получение
                       href: api/intune-fencing-networkipv4configurationmanagementcondition-get.md
@@ -8233,7 +8233,7 @@
                   href: api/application-removepassword.md
                 - name: Создание расширения
                   href: api/application-post-extensionproperty.md
-                - name: Расширения списка
+                - name: Список расширений
                   href: api/application-list-extensionproperty.md
                 - name: Удаление расширения
                   href: api/application-delete-extensionproperty.md
@@ -9204,7 +9204,7 @@
                       href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                     - name: Получение многозначного свойства
                       href: api/multivaluelegacyextendedproperty-get.md
-        - name: Примечания
+        - name: Заметки
           displayName: OneNote
           items:
             - name: Обзор
@@ -9239,7 +9239,7 @@
                   href: api/notebook-getrecentnotebooks.md
                 - name: Получение записной книжки с сайта по URL-адресу
                   href: api/notebook-getnotebookfromweburl.md
-                - name: Список разделов
+                - name: Вывод списка разделов
                   href: api/notebook-list-sections.md
                 - name: Создание раздела
                   href: api/notebook-post-sections.md
@@ -9624,10 +9624,10 @@
                       href: api/reportroot-getyammergroupsactivitygroupcounts.md
                     - name: Получение количества действий
                       href: api/reportroot-getyammergroupsactivitycounts.md
-        - name: Поиск (Предварительная версия)
+        - name: Поиск (предварительный просмотр)
           displayname: Microsoft Search API
           items:
-            - name: Query
+            - name: Запрос
               items:
                 - name: Общие сведения
                   href: resources/search-api-overview.md
@@ -9688,7 +9688,7 @@
         - name: Безопасность
           displayname: 'Security API, Microsoft Graph Security API'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/security-api-overview.md
             - name: Действия
               href: resources/securityaction.md
@@ -9808,9 +9808,9 @@
                   href: api/sitepage-delete.md
                 - name: Публикация страницы
                   href: api/sitepage-publish.md
-        - name: Аналитика людей и рабочих места
+        - name: Люди и рабочая аналитика
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/social-overview.md
             - name: Человек
               href: resources/person.md
@@ -10520,6 +10520,13 @@
                   href: api/workbook-list-worksheets.md
                 - name: Перечисление имен
                   href: api/workbook-list-names.md
+            - name: Приложение для рабочих книг
+              href: resources/workbookapplication.md
+              items:
+                - name: Получение
+                  href: api/workbookapplication-get.md
+                - name: Вычисление
+                  href: api/workbookapplication-calculate.md
             - name: Комментарии к книге
               href: resources/workbookcomment.md
               items:
