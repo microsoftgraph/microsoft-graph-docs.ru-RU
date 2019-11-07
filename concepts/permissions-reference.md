@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: b7a2ac1f38c26ad2d6208d6b382625132018731f
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 8ecaa74a375638f1dd732ea16b1df24a5c396f2c
+ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969230"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "38006791"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -291,7 +291,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 |_Calls.JoinGroupCallasGuest.All_|Присоединение к групповым звонкам и собраниям в качестве гостя (предварительная версия)|Позволяет приложению анонимно присоединяться к групповым звонкам и запланированным собраниям в организации без необходимости входа пользователя. Приложение присоединится к собраниям в клиенте в качестве гостя.|Да|
 |_Calls.AccessMedia.All_\*|Доступ к потокам мультимедиа в ходе звонка в качестве приложения (предварительная версия)|Позволяет приложению получить прямой доступ к потокам мультимедиа в ходе звонка без необходимости входа пользователя.|Да|
 
-> \***Важно!** Вы не можете использовать API Microsoft.Graph.Calls.Media для записи. В противном случае сохраняется мультимедийное содержимое звонков или собраний, к которым получает доступ ваш бот.
+> \***Важно!** Вы не можете использовать API Microsoft.Graph.Calls.Media для записи или сохранения другими способами мультимедийного содержимого звонков или собраний, к которым получает доступ ваш бот.
 
 <br/>
 
@@ -299,11 +299,11 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 #### <a name="application"></a>Приложение
 
-* _Calls.Initiate.All_. Совершение однорангового звонка из приложения пользователю в организации (`POST /beta/app/calls`).
-* _Calls.InitiateGroupCall.All_. Совершение группового звонка из приложения группе пользователей в организации (`POST /beta/app/calls`).
-* _Calls.JoinGroupCall.All_. Присоединение к групповому звонку или собранию по сети из приложения (`POST /beta/app/calls`).
-* _Calls.JoinGroupCallasGuest.All_. Присоединение к групповому звонку или собранию по сети из приложения, но у приложения есть только гостевые разрешения в собрании (`POST /beta/app/calls`).
-* _Calls.AccessMedia.All_. Создание звонка или присоединение к нему с получением приложением прямого доступа к потокам мультимедиа участников звонка (`POST /beta/app/calls`).
+* _Calls.Initiate.All_. Совершение однорангового звонка из приложения пользователю в организации (`POST /beta/communications/calls`).
+* _Calls.InitiateGroupCall.All_. Совершение группового звонка из приложения группе пользователей в организации (`POST /beta/communications/calls`).
+* _Calls.JoinGroupCall.All_. Присоединение к групповому звонку или собранию по сети из приложения (`POST /beta/communications/calls`).
+* _Calls.JoinGroupCallasGuest.All_. Присоединение к групповому звонку или собранию по сети из приложения, но у приложения есть только гостевые разрешения в собрании (`POST /beta/communications/calls`).
+* _Calls.AccessMedia.All_. Создание звонка или присоединение к нему с получением приложением прямого доступа к потокам мультимедиа участников звонка (`POST /beta/communications/calls`).
 
 > **Примечание.** Примеры запросов см. в статье [Создание звонка](/graph/api/application-post-calls?view=graph-rest-beta).
 
@@ -951,7 +951,10 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 
 #### <a name="delegated-permissions"></a>Делегированные разрешения
 
-Нет.
+|   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора | Поддержка учетной записи Майкрософт |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_OnlineMeetings.Read_|Чтение собрания по сети.|Позволяет приложению читать сведения о собрании по сети от имени пользователя, выполнившего вход.|Нет|Нет|
+|_OnlineMeetings.ReadWrite_|Чтение и создание собраний по сети.|Позволяет приложению создавать и читать собрания по сети от имени пользователя, выполнившего вход. |Нет|Нет|
 
 <br/>
 
@@ -959,19 +962,23 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 
 |Разрешение    |Отображаемая строка   |Описание |Необходимость в согласии администратора |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
-|_OnlineMeetings.Read.All_|Чтение сведений собрания по сети из приложения (предварительная версия)|Позволяет приложению считывать сведения собрания по сети в организации без необходимости входа пользователя.|Да|
-|_OnlineMeetings.ReadWrite.All_|Чтение и создание собраний по сети из приложения (предварительная версия) от имени пользователя|Позволяет приложению создавать собрания по сети в организации от имени пользователя без необходимости входа пользователя.|Да|
+|_OnlineMeetings.Read.All_|Чтение сведений собрания по сети из приложения (предварительная версия)|Позволяет приложению читать связанные с VTC сведения о собрании по сети в организации без необходимости входа для пользователя.|Да|
+|_OnlineMeetings.ReadWrite.All_|Чтение и создание собраний по сети из приложения (не рекомендуется) от имени пользователя|Позволяет приложению создавать собрания по сети в организации от имени пользователя без необходимости входа пользователя.|Да|
 
 <br/>
 
 ### <a name="example-usage"></a>Примеры использования
 
+#### <a name="delegated"></a>Делегированные разрешения
+
+* _OnlineMeetings.Read_. Извлечение свойств и связей [собрания по сети](/graph/api/onlinemeeting-get?view=graph-rest-beta) (`GET /beta/communications/onlinemeetings/{default id}`).
+* _OnlineMeetings.ReadWrite_. Создание [собрания по сети](/graph/api/application-post-onlinemeetings?view=graph-rest-beta) (`POST /beta/communications/onlinemeetings`).
+
 #### <a name="application"></a>Приложение
 
-* _OnlineMeetings.Read.All_. Извлечение свойств и связей [собрания по сети](/graph/api/onlinemeeting-get?view=graph-rest-beta) (`GET /beta/app/onlinemeetings/{id}`).
-* _OnlineMeetings.ReadWrite.All_. Создание [собрания по сети](/graph/api/application-post-onlinemeetings?view=graph-rest-beta) (`POST /beta/app/onlinemeetings`).
+* _OnlineMeetings.Read.All_. Извлечение свойств и связей [собрания по сети](/graph/api/onlinemeeting-get?view=graph-rest-beta) (`GET /beta/communications/onlinemeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'`).
 
-> **Примечание**. При создании [собрания по сети](/graph/api/application-post-onlinemeetings?view=graph-rest-beta) создается собрание от имени пользователя, указанного в тексте запроса, но оно не отображается в календаре этого пользователя.
+> **Примечание**. При создании [собрания по сети](/graph/api/application-post-onlinemeetings?view=graph-rest-beta) создается собрание от имени пользователя, но оно не отображается в календаре этого пользователя.
 
 Более сложные сценарии с использованием нескольких разрешений представлены в разделе [Сценарии с использованием разрешений](#permission-scenarios).
 
