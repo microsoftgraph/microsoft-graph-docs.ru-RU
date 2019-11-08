@@ -1,18 +1,18 @@
 ---
 title: Использование API Microsoft Graph для интеграции функций социальной и рабочей аналитики в приложении
-description: Microsoft Graph обеспечивает доступ к полезным социальным и рабочим данным для пользователей, а также поддерживает социальные жесты в социальном контексте пользователя.
+description: Microsoft Graph обеспечивает доступ к полезным социальным и рабочим данным, а также поддерживает социальные жесты в социальном контексте пользователя.
 localization_priority: Priority
 author: simonhult
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: 74beb2a66f103342f6dbc5e5977200751a309c08
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: f87f3032f58475eed95507b4e436735e5c484fc4
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450671"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37939364"
 ---
-# <a name="use-the-microsoft-graph-api-to-integrate-social-and-workplace-intelligence-in-an-app"></a>Использование API Microsoft Graph для интеграции функций социальной и рабочей аналитики в приложении
+# <a name="use-the-microsoft-graph-api-to-integrate-people-and-workplace-intelligence-in-an-app"></a>Использование API Microsoft Graph для интеграции функций социальной и рабочей аналитики в приложении
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -62,3 +62,9 @@ Include the next sentence when supporting events.
   - [Получение сведений о каждом упоминании в сообщении](../api/message-get.md#request-2)
 
 - [Удаление упоминания](../api/message-delete.md#request-2) в сообщении
+
+## <a name="help-users-contextualize-others-in-their-organization"></a>Помощь пользователям в получении контекстных сведений о других сотрудниках организации
+
+Люди, которые хотят получить контекстные сведения о других сотрудниках организации, обычно просматривают профиль или карточку соответствующего пользователя. 
+
+Ресурс [profile](../resources/profile.md) является богатым источником информации о пользователях в клиенте, который предоставляет удобный механизм хранения и получения информации о людях. 

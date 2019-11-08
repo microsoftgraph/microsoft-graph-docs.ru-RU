@@ -1,25 +1,32 @@
 ---
 title: Использование REST API уведомлений в Microsoft Graph
-description: Для отправки push-уведомлений пользователю можно использовать API уведомлений в Microsoft Graph. Просто укажите учетную запись пользователя для отправки уведомления, и платформа доставит уведомление во все конечные точки устройства. Запросы API уведомлений выполняются от имени пользователя посредством делегированных разрешений и [разрешения на уведомления]( /graph/permissions_reference), которые можно использовать с учетными записями Майкрософт, рабочими или учебными учетными записями.
+description: Для отправки push-уведомлений пользователю можно использовать API уведомлений в Microsoft Graph. .
 localization_priority: Priority
-ms.prod: project-rome
+ms.prod: notifications
 doc_type: conceptualPageType
-author: ''
-ms.openlocfilehash: 2faaa7272ce1a093fc855d432c1992b9de150965
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+author: merzink
+ms.openlocfilehash: e48259463377e14a84c3010e229ccd31c29ec6ec
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009589"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37938900"
 ---
 # <a name="use-the-notifications-rest-api-in-microsoft-graph"></a>Использование REST API уведомлений в Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Для отправки push-уведомлений пользователю можно использовать API уведомлений в Microsoft Graph. Просто укажите учетную запись пользователя для отправки уведомления, и платформа доставит уведомление во все конечные точки устройства. Запросы API уведомлений выполняются от имени пользователя посредством [делегированных разрешений](/graph/permissions-reference#delegated-permissions-application-permissions-and-effective-permissions) и [разрешения на уведомления]( /graph/permissions_reference), которые можно использовать с учетными записями Майкрософт, рабочими или учебными учетными записями.
-Этот тип уведомления, ориентированного на пользователя, представлен ресурсом [notification](../resources/projectrome-notification.md) и хранится в Microsoft Graph. Доступ к нему и управление можно обеспечить путем публикации приложения с помощью [клиентских API SDK](https://github.com/Microsoft/project-rome). 
+Для отправки push-уведомлений пользователю можно использовать API уведомлений в Microsoft Graph. Просто отправьте уведомление целевому пользователю, и платформа доставит его во все конечные точки устройств, зарегистрированные для этого пользователя. На высоком уровне процесс выглядит так:
+
+1. Пользователь входит в приложение, которое создает подписку в службе уведомлений Microsoft Graph. Приложению, отправившему вызов, будет возвращен конкретный идентификатор подписки на уведомления пользователя, или UNSID.
+2. Приложение отправляет этот UNSID в службу приложений.
+3. Когда служба приложений будет готова отправить уведомление, она [проходит проверку подлинности на платформе удостоверений Майкрософт](https://docs.microsoft.com/azure/active-directory/develop/v1-oauth2-client-creds-grant-flow) и отправляет уведомление через службу уведомлений Microsoft Graph, предоставляя маркер проверки подлинности, UNSID целевого пользователя и полезные данные уведомления.
+4. Служба уведомлений Microsoft Graph рассылает уведомления всем конечным точкам пользователя с активной подпиской.  
+
+Уведомления такого типа, ориентированные на пользователя, представлены ресурсом [notification](../resources/projectrome-notification.md) и хранятся в службе уведомлений Microsoft Graph. Доступ к нему и управление осуществляется клиентским приложением с помощью [клиентских API SDK](https://aka.ms/GNSDK). Если вы впервые работаете со службой уведомлений Microsoft Graph, ознакомьтесь с дополнительными сведениями в разделе [обзора уведомлений](https://docs.microsoft.com/graph/notifications-concept-overview).    
+
 
 ## <a name="next-steps"></a>Дальнейшие действия
 - См. статью [Ресурс notification](../resources/projectrome-notification.md) и создавайте уведомления для взаимодействия с пользователями. 
 - Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
-- Начните работу с использованием интеграции с клиентом, следуя инструкциям, указанным в [обзоре интеграции](/graph/notifications-integration-e2e-overview).
+- Приступите к интеграции клиента, следуя инструкциями из [обзора интеграции](/graph/notifications-integration-e2e-overview).
