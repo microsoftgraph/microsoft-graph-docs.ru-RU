@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5827a46718b710a177e72fdb684c0c2033f1cf89
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 74dba69e146a82cc4b4da8fd7f67c041c5953650
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538513"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38088170"
 ---
 # <a name="auditevent-resource-type"></a>Тип ресурса auditEvent
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Класс, содержащий свойства события аудита.
 
@@ -76,11 +76,11 @@ ms.locfileid: "37538513"
     "servicePrincipalName": "String",
     "ipAddress": "String",
     "userId": "String",
-    "scopeTags": [
+    "userRoleScopeTags": [
       {
-        "@odata.type": "microsoft.graph.scopeTagInfo",
-        "scopeTagName": "String",
-        "scopeTagId": "String"
+        "@odata.type": "microsoft.graph.roleScopeTagInfo",
+        "displayName": "String",
+        "roleScopeTagId": "String"
       }
     ]
   },

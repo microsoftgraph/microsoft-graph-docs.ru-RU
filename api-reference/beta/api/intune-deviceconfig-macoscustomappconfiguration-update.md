@@ -1,24 +1,24 @@
 ---
-title: Создание windowsPhone81ImportedPFXCertificateProfile
-description: Создание нового объекта windowsPhone81ImportedPFXCertificateProfile.
+title: Обновление Макоскустомаппконфигуратион
+description: Обновление свойств объекта Макоскустомаппконфигуратион.
 author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 06a39a627c8477f482d4eb50c4fe6af57457d72e
+ms.openlocfilehash: 97f42012f093c0dfa33fc67cb12bea8e2dabba18
 ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087904"
+ms.locfileid: "38084281"
 ---
-# <a name="create-windowsphone81importedpfxcertificateprofile"></a>Создание windowsPhone81ImportedPFXCertificateProfile
+# <a name="update-macoscustomappconfiguration"></a>Обновление Макоскустомаппконфигуратион
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [windowsPhone81ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windowsphone81importedpfxcertificateprofile.md) .
+Обновление свойств объекта [макоскустомаппконфигуратион](../resources/intune-deviceconfig-macoscustomappconfiguration.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -35,8 +35,9 @@ ms.locfileid: "38087904"
 }
 -->
 ``` http
-POST /deviceManagement/deviceConfigurations
-POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -46,13 +47,13 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта windowsPhone81ImportedPFXCertificateProfile в формате JSON.
+В тексте запроса добавьте представление объекта [макоскустомаппконфигуратион](../resources/intune-deviceconfig-macoscustomappconfiguration.md) в формате JSON.
 
-В следующей таблице приведены свойства, необходимые при создании windowsPhone81ImportedPFXCertificateProfile.
+В следующей таблице приведены свойства, необходимые при создании [макоскустомаппконфигуратион](../resources/intune-deviceconfig-macoscustomappconfiguration.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |суппортсскопетагс|Логический|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -63,30 +64,26 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|Свойства renewalthresholdpercentage|Int32|Пороговое значение возобновления сертификата. Допустимые значения — от 1 до 99, наследуемые от [windowscertificateprofilebase)](../resources/intune-deviceconfig-windowscertificateprofilebase.md)|
-|keyStorageProvider|[кэйсторажепровидероптион](../resources/intune-deviceconfig-keystorageprovideroption.md)|Поставщик хранилища ключей (KSP), наследуемый от [windowscertificateprofilebase)](../resources/intune-deviceconfig-windowscertificateprofilebase.md). Возможные значения: `useTpmKspOtherwiseUseSoftwareKsp`, `useTpmKspOtherwiseFail`, `usePassportForWorkKspOtherwiseFail`, `useSoftwareKsp`.|
-|subjectNameFormat|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|Формат имени субъекта сертификата наследуется от [windowscertificateprofilebase)](../resources/intune-deviceconfig-windowscertificateprofilebase.md). Возможные значения: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
-|subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Тип альтернативного имени субъекта сертификата наследуется от [windowscertificateprofilebase)](../resources/intune-deviceconfig-windowscertificateprofilebase.md). Возможные значения: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
-|certificateValidityPeriodValue|Int32|Значение срока действия сертификата, наследуемого от [windowscertificateprofilebase)](../resources/intune-deviceconfig-windowscertificateprofilebase.md)|
-|certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Масштаб срока действия сертификата, наследуемого от [windowscertificateprofilebase)](../resources/intune-deviceconfig-windowscertificateprofilebase.md). Возможные значения: `days`, `months`, `years`.|
-|intendedPurpose|[intendedPurpose](../resources/intune-deviceconfig-intendedpurpose.md)|Предполагаемое назначение профиля сертификата, который может быть неназначенным, Смиминкриптион, Смимесигнинг и т. д. Возможные значения: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`,. `wifi`|
+|bundleId|String|Идентификатор пакета для нацеленности.|
+|fileName|String|Имя файла конфигурации (*. plist | *.xml).|
+|конфигуратионксмл|Binary|XML-файл конфигурации. (массив байтов в кодировке UTF8).|
 
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [windowsPhone81ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windowsphone81importedpfxcertificateprofile.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [макоскустомаппконфигуратион](../resources/intune-deviceconfig-macoscustomappconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
+PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1364
+Content-length: 1149
 
 {
-  "@odata.type": "#microsoft.graph.windowsPhone81ImportedPFXCertificateProfile",
+  "@odata.type": "#microsoft.graph.macOSCustomAppConfiguration",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -115,26 +112,22 @@ Content-length: 1364
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "renewalThresholdPercentage": 10,
-  "keyStorageProvider": "useTpmKspOtherwiseFail",
-  "subjectNameFormat": "commonNameIncludingEmail",
-  "subjectAlternativeNameType": "emailAddress",
-  "certificateValidityPeriodValue": 14,
-  "certificateValidityPeriodScale": "months",
-  "intendedPurpose": "smimeEncryption"
+  "bundleId": "Bundle Id value",
+  "fileName": "File Name value",
+  "configurationXml": "Y29uZmlndXJhdGlvblhtbA=="
 }
 ```
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1536
+Content-Length: 1321
 
 {
-  "@odata.type": "#microsoft.graph.windowsPhone81ImportedPFXCertificateProfile",
-  "id": "08c7f847-f847-08c7-47f8-c70847f8c708",
+  "@odata.type": "#microsoft.graph.macOSCustomAppConfiguration",
+  "id": "1b8a4e02-4e02-1b8a-024e-8a1b024e8a1b",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
@@ -165,13 +158,9 @@ Content-Length: 1536
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "renewalThresholdPercentage": 10,
-  "keyStorageProvider": "useTpmKspOtherwiseFail",
-  "subjectNameFormat": "commonNameIncludingEmail",
-  "subjectAlternativeNameType": "emailAddress",
-  "certificateValidityPeriodValue": 14,
-  "certificateValidityPeriodScale": "months",
-  "intendedPurpose": "smimeEncryption"
+  "bundleId": "Bundle Id value",
+  "fileName": "File Name value",
+  "configurationXml": "Y29uZmlndXJhdGlvblhtbA=="
 }
 ```
 

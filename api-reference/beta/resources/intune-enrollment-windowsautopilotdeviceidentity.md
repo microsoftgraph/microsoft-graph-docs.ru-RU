@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b51f58e3d656f5a72238e03a3f2cdc5c3c9a0e55
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 1e55ea60aacd7fef448e7fe9e51d50ddebb84af3
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196513"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38088296"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>Тип ресурса windowsAutopilotDeviceIdentity
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Ресурс windowsAutopilotDeviceIdentity представляет устройство автопилота Windows.
 
@@ -30,6 +30,7 @@ ms.locfileid: "37196513"
 |[Обновление windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-update.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Обновление свойств объекта [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) .|
 |[Действие assignUserToDevice](../api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md)|Нет|Назначение пользователям автопилотных устройств.|
 |[Действие unassignUserFromDevice](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice.md)|Нет|Отменяет назначение пользователя для автопилотного устройства.|
+|[действие Упдатедевицепропертиес](../api/intune-enrollment-windowsautopilotdeviceidentity-updatedeviceproperties.md)|Нет|Обновляет свойства устройств с автопилотом.|
 |[Действие assignResourceAccountToDevice](../api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice.md)|Нет|Назначение учетной записи ресурса автопилотным устройствам.|
 |[Действие unassignResourceAccountFromDevice](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md)|Нет|Отменяет назначение учетной записи ресурса для автопилотного устройства.|
 
@@ -40,25 +41,26 @@ ms.locfileid: "37196513"
 |деплойментпрофилеассигнментстатус|[виндовсаутопилотпрофилеассигнментстатус](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Состояние назначения профиля устройства автопилота Windows. Возможные значения: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
 |деплойментпрофилеассигнментдетаиледстатус|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Подробное состояние назначения профиля для устройства автопилота Windows. Возможные значения: `none`, `hardwareRequirementsNotMet`.|
 |деплойментпрофилеассигнеддатетиме|DateTimeOffset|Время настройки профиля для устройства автопилота Windows.|
-|orderIdentifier|String.|Идентификатор заказа устройства с автопилотом Windows — не является устаревшим|
-|грауптаг|String.|Тег Group для устройства автопилота Windows.|
-|пурчасеордеридентифиер|String.|Идентификатор заказа на покупку для устройства автопилота Windows.|
-|serialNumber|String.|Серийный номер устройства Windows Autopilot.|
+|orderIdentifier|String|Идентификатор заказа устройства с автопилотом Windows — не является устаревшим|
+|грауптаг|String|Тег Group для устройства автопилота Windows.|
+|пурчасеордеридентифиер|String|Идентификатор заказа на покупку для устройства автопилота Windows.|
+|serialNumber|String|Серийный номер устройства Windows Autopilot.|
 |productKey|Строка|Ключ продукта устройства Windows Autopilot.|
-|manufacturer|String.|OEM-производитель устройства автопилота Windows.|
-|model|String.|Имя модели для устройства автопилота Windows.|
+|manufacturer|String|OEM-производитель устройства автопилота Windows.|
+|model|String|Имя модели для устройства автопилота Windows.|
 |енроллментстате|[енроллментстате](../resources/intune-shared-enrollmentstate.md)|Состояние регистрации в Intune для устройства автопилота Windows. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |ластконтактеддатетиме|DateTimeOffset|Дата и время последнего обращения в Intune к устройству автопилота Windows.|
-|аддрессаблеусернаме|String.|Имя пользователя с адресом.|
+|аддрессаблеусернаме|String|Имя пользователя с адресом.|
 |userPrincipalName|String|Имя участника пользователя.|
 |resourceName|String|Имя ресурса.|
-|скунумбер|String.|Номер SKU|
-|системфамили|String.|Семейство системы|
-|Свойства azureactivedirectorydeviceid|String.|ИДЕНТИФИКАТОР устройства AAD|
-|манажеддевицеид|String.|Управляемый идентификатор устройства|
+|скунумбер|String|Номер SKU|
+|системфамили|String|Семейство системы|
+|Свойства azureactivedirectorydeviceid|String|ИДЕНТИФИКАТОР устройства AAD|
+|манажеддевицеид|String|Управляемый идентификатор устройства|
+|displayName|String|"Display Name" (Отображаемое имя);|
 
-## <a name="relationships"></a>Отношения
-|Отношение|Тип|Описание|
+## <a name="relationships"></a>Связи
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |деплойментпрофиле|[windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|Профиль развертывания, назначенный устройству автопилота Windows в настоящее время.|
 |интендеддеплойментпрофиле|[windowsAutopilotDeploymentProfile](../resources/intune-shared-windowsautopilotdeploymentprofile.md)|Профиль развертывания предназначен для назначения устройству автопилота Windows.|
@@ -93,7 +95,8 @@ ms.locfileid: "37196513"
   "skuNumber": "String",
   "systemFamily": "String",
   "azureActiveDirectoryDeviceId": "String",
-  "managedDeviceId": "String"
+  "managedDeviceId": "String",
+  "displayName": "String"
 }
 ```
 
