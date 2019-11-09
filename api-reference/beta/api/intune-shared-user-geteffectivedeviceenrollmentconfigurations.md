@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 13c1d156249caa41256a9a7990b5523e567f5507
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 9c1b16c3389af03da73134eaa7b78cafe7ffcd29
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37536975"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38085572"
 ---
 # <a name="geteffectivedeviceenrollmentconfigurations-function"></a>Функция Жетеффективедевицеенроллментконфигуратионс
 
 > **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Пока не задокументировано.
 
@@ -29,7 +29,7 @@ ms.locfileid: "37536975"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложений||
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementServiceConfig.ReadWrite.All|
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,7 +41,7 @@ ms.locfileid: "37536975"
 GET /users/{usersId}/getEffectiveDeviceEnrollmentConfigurations
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 
 |Заголовок|Значение|
 |:---|:---|
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/users/{usersId}/getEffectiveDeviceEnrollmen
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 ``` http
 HTTP/1.1 200 OK
@@ -90,6 +90,9 @@ Content-Length: 422
   ]
 }
 ```
+
+
+
 
 
 

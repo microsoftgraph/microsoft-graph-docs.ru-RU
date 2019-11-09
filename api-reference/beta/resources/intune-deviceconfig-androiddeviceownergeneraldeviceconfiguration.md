@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 92da318170cb8040f1c0267243c41ca6ec20e65f
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: c5fb14edc8acbdfd3999bbc2eab74301f068721b
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538604"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078331"
 ---
 # <a name="androiddeviceownergeneraldeviceconfiguration-resource-type"></a>Тип ресурса androidDeviceOwnerGeneralDeviceConfiguration
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 В этом разделе описаны объявляемые методы, свойства и связи, предоставляемые ресурсом androidDeviceOwnerGeneralDeviceConfiguration.
 
@@ -59,7 +59,8 @@ ms.locfileid: "37538604"
 |датетимеконфигуратионблоккед|Логический|Указывает, следует ли запретить пользователю вручную изменять дату или время на устройстве.|
 |факториресетдевицеадминистраторемаилс|Коллекция String|Список сообщений учетных записей Google, которые потребуются для проверки подлинности после завершения фабричного сброса устройства перед его настройкой.|
 |factoryResetBlocked|Boolean|Указывает, отключен ли параметр Reset фабрики в параметрах.|
-|глобалпрокси|[андроиддевицеовнерглобалпрокси](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)|Прокси-сервер настраивается напрямую с узлом, портом и исключенными узлами.|
+|глобалпрокси|[androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)|Прокси-сервер настраивается напрямую с узлом, портом и исключенными узлами.|
+|гуглеаккаунтсблоккед|Логический|Указывает, будут ли блокироваться учетные записи Google.|
 |киоскмодескринсаверконфигуратионенаблед|Логический|Указывает, следует ли включить режим экранной заставки или не в режиме киоска.|
 |киоскмодескринсаверимажеурл|String|URL-адрес изображения, которое будет экранной заставкой устройства в режиме киоска.|
 |киоскмодескринсавердисплайтимеинсекондс|Int32|Время (в секундах), в течение которого устройство будет отображать экранную заставку в режиме киоска. Допустимые значения — от 0 до 9999999|
@@ -185,6 +186,7 @@ ms.locfileid: "37538604"
     "@odata.type": "microsoft.graph.androidDeviceOwnerGlobalProxyAutoConfig",
     "proxyAutoConfigURL": "String"
   },
+  "googleAccountsBlocked": true,
   "kioskModeScreenSaverConfigurationEnabled": true,
   "kioskModeScreenSaverImageUrl": "String",
   "kioskModeScreenSaverDisplayTimeInSeconds": 1024,

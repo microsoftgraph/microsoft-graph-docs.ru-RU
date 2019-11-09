@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 30553750e6cdca7bd7b74ba81051998437a80a96
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 7abe97794ab87b468896ab536ba9506857b6545e
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37534948"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38085157"
 ---
 # <a name="get-auditevent"></a>Get auditEvent
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Чтение свойств и связей объекта [auditEvent](../resources/intune-auditing-auditevent.md).
 
@@ -27,7 +27,7 @@ ms.locfileid: "37534948"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -39,7 +39,7 @@ GET /deviceManagement/auditEvents/{auditEventId}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://docs.microsoft.com/en-us/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
@@ -62,11 +62,11 @@ GET https://graph.microsoft.com/beta/deviceManagement/auditEvents/{auditEventId}
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1747
+Content-Length: 1765
 
 {
   "value": {
@@ -86,11 +86,11 @@ Content-Length: 1747
       "servicePrincipalName": "Service Principal Name value",
       "ipAddress": "Ip Address value",
       "userId": "User Id value",
-      "scopeTags": [
+      "userRoleScopeTags": [
         {
-          "@odata.type": "microsoft.graph.scopeTagInfo",
-          "scopeTagName": "Scope Tag Name value",
-          "scopeTagId": "Scope Tag Id value"
+          "@odata.type": "microsoft.graph.roleScopeTagInfo",
+          "displayName": "Display Name value",
+          "roleScopeTagId": "Role Scope Tag Id value"
         }
       ]
     },

@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e6e8502f609b2f9b1d23580d0b7d5e38f20226cc
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 9558ff4de784c8903e206254d29aa41aee4b85d2
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37537932"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38085691"
 ---
 # <a name="manageddeviceenrollmentabandonmentsummary-function"></a>Функция Манажеддевицеенроллментабандонментсуммари
 
 > **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Метаданные для сводного отчета об отмене регистрации
 ## <a name="prerequisites"></a>Необходимые компоненты
@@ -27,7 +27,7 @@ ms.locfileid: "37537932"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp;&nbsp; **Траублшутинг** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение||
+|Для приложений||
 | &nbsp;&nbsp; **Траублшутинг** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -39,7 +39,7 @@ ms.locfileid: "37537932"
 GET /reports/managedDeviceEnrollmentAbandonmentSummary
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentAbandonmentS
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -82,6 +82,9 @@ Content-Length: 123
   }
 }
 ```
+
+
+
 
 
 

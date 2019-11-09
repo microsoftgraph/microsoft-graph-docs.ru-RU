@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f983713542274e177bcaf99142f2ccf70f4e1ace
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 7dd7ca0f993272e5993e7fad401d5e12d2d40948
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37195288"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38087953"
 ---
 # <a name="list-intunebrandingprofiles"></a>Список Интунебрандингпрофилес
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Список свойств и связей объектов [интунебрандингпрофиле](../resources/intune-wip-intunebrandingprofile.md) .
 
@@ -38,13 +38,13 @@ ms.locfileid: "37195288"
 GET /deviceManagement/intuneBrandingProfiles
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -59,11 +59,11 @@ GET https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1703
+Content-Length: 2029
 
 {
   "value": [
@@ -76,13 +76,6 @@ Content-Length: 1703
       "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
       "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
       "displayName": "Display Name value",
-      "contactITName": "Contact ITName value",
-      "contactITPhoneNumber": "Contact ITPhone Number value",
-      "contactITEmailAddress": "Contact ITEmail Address value",
-      "contactITNotes": "Contact ITNotes value",
-      "privacyUrl": "https://example.com/privacyUrl/",
-      "onlineSupportSiteUrl": "https://example.com/onlineSupportSiteUrl/",
-      "onlineSupportSiteName": "Online Support Site Name value",
       "themeColor": {
         "@odata.type": "microsoft.graph.rgbColor",
         "r": 1,
@@ -106,13 +99,32 @@ Content-Length: 1703
         "type": "Type value",
         "value": "dmFsdWU="
       },
+      "contactITName": "Contact ITName value",
+      "contactITPhoneNumber": "Contact ITPhone Number value",
+      "contactITEmailAddress": "Contact ITEmail Address value",
+      "contactITNotes": "Contact ITNotes value",
+      "onlineSupportSiteUrl": "https://example.com/onlineSupportSiteUrl/",
+      "onlineSupportSiteName": "Online Support Site Name value",
+      "privacyUrl": "https://example.com/privacyUrl/",
       "customPrivacyMessage": "Custom Privacy Message value",
       "isRemoveDeviceDisabled": true,
-      "isFactoryResetDisabled": true
+      "isFactoryResetDisabled": true,
+      "companyPortalBlockedActions": [
+        {
+          "@odata.type": "microsoft.graph.companyPortalBlockedAction",
+          "platform": "androidForWork",
+          "ownerType": "company",
+          "action": "remove"
+        }
+      ],
+      "showAzureADEnterpriseApps": true,
+      "showOfficeWebApps": true
     }
   ]
 }
 ```
+
+
 
 
 

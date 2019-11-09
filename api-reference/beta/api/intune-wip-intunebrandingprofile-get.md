@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b3f0e967a9ce5bbbcd68a756bc4d16d7f91e2fa8
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: dbfe8484bf7dc877fc6e0745c26768a3dd8963bf
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37195281"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38087960"
 ---
 # <a name="get-intunebrandingprofile"></a>Получение Интунебрандингпрофиле
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Чтение свойств и связей объекта [интунебрандингпрофиле](../resources/intune-wip-intunebrandingprofile.md) .
 
@@ -39,7 +39,7 @@ GET /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://docs.microsoft.com/en-us/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
@@ -47,7 +47,7 @@ GET /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -62,11 +62,11 @@ GET https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles/{in
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1607
+Content-Length: 1913
 
 {
   "value": {
@@ -78,13 +78,6 @@ Content-Length: 1607
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "displayName": "Display Name value",
-    "contactITName": "Contact ITName value",
-    "contactITPhoneNumber": "Contact ITPhone Number value",
-    "contactITEmailAddress": "Contact ITEmail Address value",
-    "contactITNotes": "Contact ITNotes value",
-    "privacyUrl": "https://example.com/privacyUrl/",
-    "onlineSupportSiteUrl": "https://example.com/onlineSupportSiteUrl/",
-    "onlineSupportSiteName": "Online Support Site Name value",
     "themeColor": {
       "@odata.type": "microsoft.graph.rgbColor",
       "r": 1,
@@ -108,12 +101,31 @@ Content-Length: 1607
       "type": "Type value",
       "value": "dmFsdWU="
     },
+    "contactITName": "Contact ITName value",
+    "contactITPhoneNumber": "Contact ITPhone Number value",
+    "contactITEmailAddress": "Contact ITEmail Address value",
+    "contactITNotes": "Contact ITNotes value",
+    "onlineSupportSiteUrl": "https://example.com/onlineSupportSiteUrl/",
+    "onlineSupportSiteName": "Online Support Site Name value",
+    "privacyUrl": "https://example.com/privacyUrl/",
     "customPrivacyMessage": "Custom Privacy Message value",
     "isRemoveDeviceDisabled": true,
-    "isFactoryResetDisabled": true
+    "isFactoryResetDisabled": true,
+    "companyPortalBlockedActions": [
+      {
+        "@odata.type": "microsoft.graph.companyPortalBlockedAction",
+        "platform": "androidForWork",
+        "ownerType": "company",
+        "action": "remove"
+      }
+    ],
+    "showAzureADEnterpriseApps": true,
+    "showOfficeWebApps": true
   }
 }
 ```
+
+
 
 
 

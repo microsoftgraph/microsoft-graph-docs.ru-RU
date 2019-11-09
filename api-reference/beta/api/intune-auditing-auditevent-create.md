@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b3ac337d274d8137796a6f2f14591ac08ca2a229
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: a4f6381ffb352c7d5188ed181640b5dc80459d89
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37534955"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38085164"
 ---
 # <a name="create-auditevent"></a>Создание объекта auditEvent
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание объекта [auditEvent](../resources/intune-auditing-auditevent.md).
 
@@ -27,7 +27,7 @@ ms.locfileid: "37534955"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -38,7 +38,7 @@ ms.locfileid: "37534955"
 POST /deviceManagement/auditEvents
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -76,7 +76,7 @@ POST /deviceManagement/auditEvents
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/auditEvents
 Content-type: application/json
-Content-length: 1585
+Content-length: 1603
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -94,11 +94,11 @@ Content-length: 1585
     "servicePrincipalName": "Service Principal Name value",
     "ipAddress": "Ip Address value",
     "userId": "User Id value",
-    "scopeTags": [
+    "userRoleScopeTags": [
       {
-        "@odata.type": "microsoft.graph.scopeTagInfo",
-        "scopeTagName": "Scope Tag Name value",
-        "scopeTagId": "Scope Tag Id value"
+        "@odata.type": "microsoft.graph.roleScopeTagInfo",
+        "displayName": "Display Name value",
+        "roleScopeTagId": "Role Scope Tag Id value"
       }
     ]
   },
@@ -129,11 +129,11 @@ Content-length: 1585
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1634
+Content-Length: 1652
 
 {
   "@odata.type": "#microsoft.graph.auditEvent",
@@ -152,11 +152,11 @@ Content-Length: 1634
     "servicePrincipalName": "Service Principal Name value",
     "ipAddress": "Ip Address value",
     "userId": "User Id value",
-    "scopeTags": [
+    "userRoleScopeTags": [
       {
-        "@odata.type": "microsoft.graph.scopeTagInfo",
-        "scopeTagName": "Scope Tag Name value",
-        "scopeTagId": "Scope Tag Id value"
+        "@odata.type": "microsoft.graph.roleScopeTagInfo",
+        "displayName": "Display Name value",
+        "roleScopeTagId": "Role Scope Tag Id value"
       }
     ]
   },

@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c185818865de6f1961933416a76f327498e52e9f
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 2c792c01919208488de4339ca201e4a89f69aacb
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37534941"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38085150"
 ---
 # <a name="list-auditevents"></a>Перечисление объектов auditEvent
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Список свойств и связей объектов [auditEvent](../resources/intune-auditing-auditevent.md).
 
@@ -27,7 +27,7 @@ ms.locfileid: "37534941"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -38,7 +38,7 @@ ms.locfileid: "37534941"
 GET /deviceManagement/auditEvents
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -59,11 +59,11 @@ GET https://graph.microsoft.com/beta/deviceManagement/auditEvents
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1855
+Content-Length: 1873
 
 {
   "value": [
@@ -84,11 +84,11 @@ Content-Length: 1855
         "servicePrincipalName": "Service Principal Name value",
         "ipAddress": "Ip Address value",
         "userId": "User Id value",
-        "scopeTags": [
+        "userRoleScopeTags": [
           {
-            "@odata.type": "microsoft.graph.scopeTagInfo",
-            "scopeTagName": "Scope Tag Name value",
-            "scopeTagId": "Scope Tag Id value"
+            "@odata.type": "microsoft.graph.roleScopeTagInfo",
+            "displayName": "Display Name value",
+            "roleScopeTagId": "Role Scope Tag Id value"
           }
         ]
       },

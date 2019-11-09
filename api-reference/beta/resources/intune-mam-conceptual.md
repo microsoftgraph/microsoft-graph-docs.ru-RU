@@ -4,18 +4,18 @@ description: Перечисляет API Microsoft Graph для конечных 
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: edef17e5b77ac407b97bb51e2988d0993840f11e
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 7fff482595831282abca3f88a0d9c72fff258c07
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539010"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38088240"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Политики защиты приложений в Microsoft Intune помогают защитить корпоративные данные и предотвратить потерю данных.
 
@@ -54,6 +54,7 @@ ms.locfileid: "37539010"
 - [Действие исправления для управляемого приложения](intune-mam-managedappremediationaction.md)
 - [Состояние управляемых приложений](intune-mam-managedappstatus.md)
 - [Необработанные данные о состоянии управляемых приложений](intune-mam-managedappstatusraw.md)
+- [Тип управляемого браузера](intune-mam-managedbrowsertype.md)
 - [Управляемое мобильное приложение](intune-mam-managedmobileapp.md)
 - [Идентификатор мобильных приложений](intune-mam-mobileappidentifier.md)
 - [Назначение целевой политики для управляемых приложений](intune-mam-targetedmanagedapppolicyassignment.md)
