@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e7cff26042555067056683dac65ad98d2e9d51df
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: b94ac2c27b48c867380cd402002e217aad430a68
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37195316"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38087967"
 ---
 # <a name="create-intunebrandingprofile"></a>Создание Интунебрандингпрофиле
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание нового объекта [интунебрандингпрофиле](../resources/intune-wip-intunebrandingprofile.md) .
 
@@ -38,13 +38,13 @@ ms.locfileid: "37195316"
 POST /deviceManagement/intuneBrandingProfiles
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Интунебрандингпрофиле в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Интунебрандингпрофиле.
@@ -52,28 +52,31 @@ POST /deviceManagement/intuneBrandingProfiles
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ профиля|
-|имя_профиля|String.|Имя профиля|
-|профиледескриптион|String.|Описание профиля|
-|исдефаултпрофиле|Boolean.|Логическое значение, указывающее, используется ли профиль по умолчанию или нет|
+|имя_профиля|String|Имя профиля|
+|профиледескриптион|String|Описание профиля|
+|исдефаултпрофиле|Логический|Логическое значение, указывающее, используется ли профиль по умолчанию или нет|
 |createdDateTime|DateTimeOffset|Время создания Брандингпрофиле|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения Брандингпрофиле|
 |displayName|Строка|Название компании или организации, которое отображается для конечных пользователей|
-|contactITName|String.|Имя пользователя или организации, ответственных за ИТ-поддержку|
-|contactITPhoneNumber|String.|Номер телефона пользователя или организации, ответственного за ИТ-поддержку|
-|contactITEmailAddress|String.|Адрес электронной почты пользователя или организации, ответственных за ИТ-поддержку|
-|contactITNotes|String.|Текстовые комментарии о лице или организации, ответственных за ИТ-поддержку|
-|privacyUrl|String.|URL-адрес политики конфиденциальности компании или Организации|
-|onlineSupportSiteUrl|String.|URL-адрес сайта ИТ-службы технической поддержки компании или Организации|
-|onlineSupportSiteName|String|Отображаемое имя сайта ИТ-службы технической поддержки компании или Организации|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Основной цвет темы, используемый в приложениях портала компании и на веб-портале|
-|showLogo|Boolean.|Логическое значение, указывающее, отображаются ли изображения логотипа, предоставленные администратором.|
+|showLogo|Логический|Логическое значение, указывающее, отображаются ли изображения логотипа, предоставленные администратором.|
 |showDisplayNameNextToLogo|Boolean|Логическое значение, указывающее, будет ли отображаться отображаемое имя, предоставленное администратором, рядом с изображением логотипа.|
 |семеколорлого|[mimeContent](../resources/intune-shared-mimecontent.md);|Изображение логотипа, отображаемое в приложениях корпоративного портала, у которых есть фоновый цвет темы позади логотипа|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Изображение логотипа, отображаемое в приложениях корпоративного портала, у которых есть светлый фон позади логотипа|
 |ландингпажекустомизедимаже|[mimeContent](../resources/intune-shared-mimecontent.md);|Настраиваемое изображение, отображаемое на начальной странице "приложения корпоративного портала"|
-|кустомпривацимессаже|String.|Текстовые комментарии относительно того, что у администратора есть доступ к устройству.|
-|исремоведевицедисаблед|Boolean.|Логическое значение, указывающее, отключил ли админсистратор действие "Remove Device" на корпоративных устройствах.|
-|исфакториресетдисаблед|Boolean.|Логическое значение, указывающее, отключил ли админсистратор действие "Фабричная сброс" на корпоративных устройствах.|
+|contactITName|String|Имя пользователя или организации, ответственных за ИТ-поддержку|
+|contactITPhoneNumber|String|Номер телефона пользователя или организации, ответственного за ИТ-поддержку|
+|contactITEmailAddress|String|Адрес электронной почты пользователя или организации, ответственных за ИТ-поддержку|
+|contactITNotes|String|Текстовые комментарии о лице или организации, ответственных за ИТ-поддержку|
+|onlineSupportSiteUrl|String|URL-адрес сайта ИТ-службы технической поддержки компании или Организации|
+|onlineSupportSiteName|String|Отображаемое имя сайта ИТ-службы технической поддержки компании или Организации|
+|privacyUrl|String|URL-адрес политики конфиденциальности компании или Организации|
+|кустомпривацимессаже|String|Текстовые комментарии относительно того, что у администратора есть доступ к устройству.|
+|исремоведевицедисаблед|Логический|Логическое значение, указывающее, отключил ли админсистратор действие "Remove Device" на корпоративных устройствах.|
+|исфакториресетдисаблед|Логический|Логическое значение, указывающее, отключил ли админсистратор действие "Фабричная сброс" на корпоративных устройствах.|
+|компанипорталблоккедактионс|Коллекция [компанипорталблоккедактион](../resources/intune-shared-companyportalblockedaction.md)|Коллекция заблокированных действий на портале компании в соответствии с типом владения платформой и устройствами.|
+|шовазуреадентерприсеаппс|Логический|Логическое значение, которое указывает, будут ли отображаться корпоративные приложения AzureAD на портале компании.|
+|шовоффицевебаппс|Логический|Логическое значение, указывающее, будут ли отображаться приложения Office на портале компании.|
 
 
 
@@ -87,7 +90,7 @@ POST /deviceManagement/intuneBrandingProfiles
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles
 Content-type: application/json
-Content-length: 1334
+Content-length: 1620
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -95,13 +98,6 @@ Content-length: 1334
   "profileDescription": "Profile Description value",
   "isDefaultProfile": true,
   "displayName": "Display Name value",
-  "contactITName": "Contact ITName value",
-  "contactITPhoneNumber": "Contact ITPhone Number value",
-  "contactITEmailAddress": "Contact ITEmail Address value",
-  "contactITNotes": "Contact ITNotes value",
-  "privacyUrl": "https://example.com/privacyUrl/",
-  "onlineSupportSiteUrl": "https://example.com/onlineSupportSiteUrl/",
-  "onlineSupportSiteName": "Online Support Site Name value",
   "themeColor": {
     "@odata.type": "microsoft.graph.rgbColor",
     "r": 1,
@@ -125,18 +121,35 @@ Content-length: 1334
     "type": "Type value",
     "value": "dmFsdWU="
   },
+  "contactITName": "Contact ITName value",
+  "contactITPhoneNumber": "Contact ITPhone Number value",
+  "contactITEmailAddress": "Contact ITEmail Address value",
+  "contactITNotes": "Contact ITNotes value",
+  "onlineSupportSiteUrl": "https://example.com/onlineSupportSiteUrl/",
+  "onlineSupportSiteName": "Online Support Site Name value",
+  "privacyUrl": "https://example.com/privacyUrl/",
   "customPrivacyMessage": "Custom Privacy Message value",
   "isRemoveDeviceDisabled": true,
-  "isFactoryResetDisabled": true
+  "isFactoryResetDisabled": true,
+  "companyPortalBlockedActions": [
+    {
+      "@odata.type": "microsoft.graph.companyPortalBlockedAction",
+      "platform": "androidForWork",
+      "ownerType": "company",
+      "action": "remove"
+    }
+  ],
+  "showAzureADEnterpriseApps": true,
+  "showOfficeWebApps": true
 }
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1506
+Content-Length: 1792
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -147,13 +160,6 @@ Content-Length: 1506
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
-  "contactITName": "Contact ITName value",
-  "contactITPhoneNumber": "Contact ITPhone Number value",
-  "contactITEmailAddress": "Contact ITEmail Address value",
-  "contactITNotes": "Contact ITNotes value",
-  "privacyUrl": "https://example.com/privacyUrl/",
-  "onlineSupportSiteUrl": "https://example.com/onlineSupportSiteUrl/",
-  "onlineSupportSiteName": "Online Support Site Name value",
   "themeColor": {
     "@odata.type": "microsoft.graph.rgbColor",
     "r": 1,
@@ -177,11 +183,30 @@ Content-Length: 1506
     "type": "Type value",
     "value": "dmFsdWU="
   },
+  "contactITName": "Contact ITName value",
+  "contactITPhoneNumber": "Contact ITPhone Number value",
+  "contactITEmailAddress": "Contact ITEmail Address value",
+  "contactITNotes": "Contact ITNotes value",
+  "onlineSupportSiteUrl": "https://example.com/onlineSupportSiteUrl/",
+  "onlineSupportSiteName": "Online Support Site Name value",
+  "privacyUrl": "https://example.com/privacyUrl/",
   "customPrivacyMessage": "Custom Privacy Message value",
   "isRemoveDeviceDisabled": true,
-  "isFactoryResetDisabled": true
+  "isFactoryResetDisabled": true,
+  "companyPortalBlockedActions": [
+    {
+      "@odata.type": "microsoft.graph.companyPortalBlockedAction",
+      "platform": "androidForWork",
+      "ownerType": "company",
+      "action": "remove"
+    }
+  ],
+  "showAzureADEnterpriseApps": true,
+  "showOfficeWebApps": true
 }
 ```
+
+
 
 
 

@@ -4,18 +4,18 @@ description: Список API Microsoft Graph для конечных точек
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 5d684352b1b910b7b340e7eb319178fc1666a5ef
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 7912a4e70e1ea7daeeb000b4812e2d61e7e7e55e
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538618"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38088163"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 - [Согласие администратора](intune-devices-adminconsent.md)
 - [Состояние разрешения администратора](intune-devices-adminconsentstate.md)
@@ -156,7 +156,6 @@ ms.locfileid: "37538618"
 - [Шаблон сообщения уведомления](intune-notification-notificationmessagetemplate.md)
 - [Параметры фирменной символики для шаблона уведомления](intune-notification-notificationtemplatebrandingoptions.md)
 - [Счетчик версии ОС](intune-devices-osversioncount.md)
-- [Тип владельца](intune-devices-ownertype.md)
 - [Состояние исправления](intune-devices-remediationstate.md)
 - [Удаленное действие](intune-devices-remoteaction.md)
 - [Аудит удаленных действий](intune-devices-remoteactionaudit.md)
@@ -165,8 +164,9 @@ ms.locfileid: "37538618"
 - [Результат действия "Удаленная блокировка"](intune-devices-remotelockactionresult.md)
 - [Результат действия "Сброс секретного кода"](intune-devices-resetpasscodeactionresult.md)
 - [Результат действия "Отзыв VPP-лицензий Apple "](intune-devices-revokeapplevpplicensesactionresult.md)
+- [Сведения о теге области применения роли](intune-auditing-rolescopetaginfo.md)
+- [Результат действия устройства при вращении ключей BitLocker](intune-devices-rotatebitlockerkeysdeviceactionresult.md)
 - [Расписание запуска](intune-devices-runschedule.md)
-- [Сведения о теге области](intune-auditing-scopetaginfo.md)
 - [Сводка по состоянию категории базовых показателей безопасности](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [Состояние соответствия требованиям базового плана безопасности](intune-deviceintent-securitybaselinecompliancestate.md)
 - [Состояние устройства базового плана безопасности](intune-deviceintent-securitybaselinedevicestate.md)

@@ -4,18 +4,18 @@ description: Перечисляет API Microsoft Graph для конечных 
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: 1420f751866224905f1636205de173e3bd117451
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 007b118334c57397c2ec5b66e9d7acfc9cb42775
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539171"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38088275"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Общие ресурсы в Microsoft Intune
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Эти конечные точки используются в нескольких интерфейсах API Microsoft Graph для рабочих процессов Intune.  Цель, цель и разрешения, необходимые для использования указанного ресурса, меняются в зависимости от конкретного рабочего процесса и контекста базового вызова.  Кроме того, некоторые методы, свойства и действия поддерживаются только для определенных рабочих процессов.
 
@@ -25,13 +25,15 @@ ms.locfileid: "37539171"
 - [Объект назначения всех устройств](intune-shared-alldevicesassignmenttarget.md)
 - [Объект назначения всех лицензированных пользователей](intune-shared-alllicensedusersassignmenttarget.md)
 - [Защита управляемых приложений для Android](intune-shared-androidmanagedappprotection.md)
+- [Действие портала компании](intune-shared-companyportalaction.md)
+- [Действие блокирования портала компании](intune-shared-companyportalblockedaction.md)
 - [Состояние соответствия](intune-shared-compliancestatus.md)
 - [Источник назначения для управления устройствами и приложениями](intune-shared-deviceandappmanagementassignmentsource.md)
 - [Объект назначения для управления устройствами и приложениями](intune-shared-deviceandappmanagementassignmenttarget.md)
 - [Управление приложениями для устройств](intune-shared-deviceappmanagement.md)
 - [Категория устройств](intune-shared-devicecategory.md)
 - [Политика соответствия устройств требованиям](intune-shared-devicecompliancepolicy.md)
-- [Конфигурация устройств](intune-shared-deviceconfiguration.md)
+- [Конфигурация устройства](intune-shared-deviceconfiguration.md)
 - [Настройка регистрации устройств](intune-shared-deviceenrollmentconfiguration.md)
 - [Тип регистрации устройства](intune-shared-deviceenrollmenttype.md)
 - [Управление устройствами](intune-shared-devicemanagement.md)
@@ -64,6 +66,7 @@ ms.locfileid: "37539171"
 - [Настройки назначения мобильного приложения](intune-shared-mobileappassignmentsettings.md)
 - [Параметры времени установки мобильного приложения](intune-shared-mobileappinstalltimesettings.md)
 - [Устранение неполадок с мобильным приложением: событие](intune-shared-mobileapptroubleshootingevent.md)
+- [Тип владельца](intune-shared-ownertype.md)
 - [Тип платформы политики](intune-shared-policyplatformtype.md)
 - [Проксируемый домен](intune-shared-proxieddomain.md)
 - [Report](intune-shared-report.md)
@@ -75,7 +78,7 @@ ms.locfileid: "37539171"
 - [Сохраненные параметры создания состояния пользовательского интерфейса](intune-shared-saveduistategenerationoptions.md)
 - [Целевая конфигурация управляемых приложений](intune-shared-targetedmanagedappconfiguration.md)
 - [URI](intune-shared-uri.md)
-- [пользователь](intune-shared-user.md);
+- [user](intune-shared-user.md)
 - [Тип учетной записи токена VPP](intune-shared-vpptokenaccounttype.md)
 - [Причина сбоя действия с токеном VPP](intune-shared-vpptokenactionfailurereason.md)
 - [Настройки назначения бизнес-приложения Win32](intune-shared-win32lobappassignmentsettings.md)

@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5fdb804dc293214fbcd7d937adb9ebdf959ea5fa
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: c2aba128e4c781dab30f226e25f5240e1f95db17
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538520"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078338"
 ---
 # <a name="auditactor-resource-type"></a>Тип ресурса auditActor
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Класс, содержащий свойства субъекта аудита.
 
@@ -31,7 +31,7 @@ ms.locfileid: "37538520"
 |servicePrincipalName|String|Имя субъекта-службы (SPN).|
 |ipAddress|String|IP-адрес.|
 |userId|String|ИД пользователя.|
-|скопетагс|Коллекция [скопетагинфо](../resources/intune-auditing-scopetaginfo.md)|Список тегов области пользователя при выполнении аудита.|
+|усерролескопетагс|Коллекция [ролескопетагинфо](../resources/intune-auditing-rolescopetaginfo.md)|Список тегов области пользователя при выполнении аудита.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -56,11 +56,11 @@ ms.locfileid: "37538520"
   "servicePrincipalName": "String",
   "ipAddress": "String",
   "userId": "String",
-  "scopeTags": [
+  "userRoleScopeTags": [
     {
-      "@odata.type": "microsoft.graph.scopeTagInfo",
-      "scopeTagName": "String",
-      "scopeTagId": "String"
+      "@odata.type": "microsoft.graph.roleScopeTagInfo",
+      "displayName": "String",
+      "roleScopeTagId": "String"
     }
   ]
 }

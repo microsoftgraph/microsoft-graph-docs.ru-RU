@@ -4,18 +4,18 @@ description: Список API Microsoft Graph для конечных точек
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: adbd49f77950f06e6e09969bd7cae5841493865f
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 78b67a189da837f975f3b1aa8df0cc9527e0e781
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538625"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38078359"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Настройка устройств в Microsoft Intune
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Используйте рабочую нагрузку для настройки устройств Microsoft Intune для управления параметрами и компонентами всех устройств, которыми вы управляете.
 
@@ -198,6 +198,7 @@ ms.locfileid: "37538625"
 - [Тип EAP](intune-deviceconfig-eaptype.md)
 - [Метод проверки подлинности EAS](intune-deviceconfig-easauthenticationmethod.md)
 - [Базовая конфигурация профилей электронной почты EAS](intune-deviceconfig-easemailprofileconfigurationbase.md)
+- [Службы EAS](intune-deviceconfig-easservices.md)
 - [Политика для файлов Сookie в Edge](intune-deviceconfig-edgecookiepolicy.md)
 - [Конфигурации кнопки "Домой" в Edge](intune-deviceconfig-edgehomebuttonconfiguration.md)
 - [Скрытая кнопка "Домой" в Edge](intune-deviceconfig-edgehomebuttonhidden.md)
@@ -314,6 +315,7 @@ ms.locfileid: "37538625"
 - [Локальные параметры безопасности: режим отображения запроса для повышения прав стандартного пользователя](intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md)
 - [База профилей сертификатов для macOS](intune-deviceconfig-macoscertificateprofilebase.md)
 - [Политика соответствия macOS](intune-deviceconfig-macoscompliancepolicy.md)
+- [Конфигурация настраиваемого приложения macOS](intune-deviceconfig-macoscustomappconfiguration.md)
 - [Специальная конфигурация macOS](intune-deviceconfig-macoscustomconfiguration.md)
 - [Конфигурация функций для устройств с macOS](intune-deviceconfig-macosdevicefeaturesconfiguration.md)
 - [Конфигурация защиты конечных точек macOS](intune-deviceconfig-macosendpointprotectionconfiguration.md)
@@ -332,6 +334,7 @@ ms.locfileid: "37538625"
 - [Доверенный корневой сертификат для macOS](intune-deviceconfig-macostrustedrootcertificate.md)
 - [Конфигурация VPN для macOS](intune-deviceconfig-macosvpnconfiguration.md)
 - [Конфигурация Wi-Fi для macOS](intune-deviceconfig-macoswificonfiguration.md)
+- [Конфигурация проводной сети macOS](intune-deviceconfig-macoswirednetworkconfiguration.md)
 - [Состояние всех управляемых сертификатов устройств](intune-deviceconfig-managedalldevicecertificatestate.md)
 - [Состояние сертификата управляемого устройства](intune-deviceconfig-manageddevicecertificatestate.md)
 - [Состояние шифрования управляемого устройства](intune-deviceconfig-manageddeviceencryptionstate.md)
@@ -533,5 +536,4 @@ ms.locfileid: "37538625"
 - [Тип VPN-подключения для Windows](intune-deviceconfig-windowsvpnconnectiontype.md)
 - [Конфигурация Wi-Fi для Windows](intune-deviceconfig-windowswificonfiguration.md)
 - [Конфигурация корпоративного типа EAP для Wi-Fi в Windows](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
-
-
+- [Интерфейс проводной сети](intune-deviceconfig-wirednetworkinterface.md)

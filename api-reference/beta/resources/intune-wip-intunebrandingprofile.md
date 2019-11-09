@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6063b07ed9361b00315a7c8a2b170cea72f7dff3
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: fa9b0afc1ccb014cc56945e8e3ab450765f5dc63
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371910"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38088030"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>Тип ресурса Интунебрандингпрофиле
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Эта сущность содержит данные, которые используются при настройке внешнего вида уровня клиента для приложений корпоративного портала и веб-портала конечных пользователей.
 
@@ -36,29 +36,32 @@ ms.locfileid: "36371910"
 |id|String|Ключ профиля|
 |имя_профиля|String|Имя профиля|
 |профиледескриптион|String|Описание профиля|
-|исдефаултпрофиле|Boolean|Логическое значение, указывающее, используется ли профиль по умолчанию или нет|
+|исдефаултпрофиле|Логический|Логическое значение, указывающее, используется ли профиль по умолчанию или нет|
 |createdDateTime|DateTimeOffset|Время создания Брандингпрофиле|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения Брандингпрофиле|
 |displayName|Строка|Название компании или организации, которое отображается для конечных пользователей|
-|contactITName|String|Имя пользователя или организации, ответственных за ИТ-поддержку|
-|contactITPhoneNumber|String|Номер телефона пользователя или организации, ответственного за ИТ-поддержку|
-|contactITEmailAddress|String|Адрес электронной почты пользователя или организации, ответственных за ИТ-поддержку|
-|contactITNotes|String|Текстовые комментарии о лице или организации, ответственных за ИТ-поддержку|
-|privacyUrl|String|URL-адрес политики конфиденциальности компании или Организации|
-|onlineSupportSiteUrl|String|URL-адрес сайта ИТ-службы технической поддержки компании или Организации|
-|onlineSupportSiteName|String|Отображаемое имя сайта ИТ-службы технической поддержки компании или Организации|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Основной цвет темы, используемый в приложениях портала компании и на веб-портале|
-|showLogo|Boolean|Логическое значение, указывающее, отображаются ли изображения логотипа, предоставленные администратором.|
+|showLogo|Логический|Логическое значение, указывающее, отображаются ли изображения логотипа, предоставленные администратором.|
 |showDisplayNameNextToLogo|Boolean|Логическое значение, указывающее, будет ли отображаться отображаемое имя, предоставленное администратором, рядом с изображением логотипа.|
 |семеколорлого|[mimeContent](../resources/intune-shared-mimecontent.md);|Изображение логотипа, отображаемое в приложениях корпоративного портала, у которых есть фоновый цвет темы позади логотипа|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Изображение логотипа, отображаемое в приложениях корпоративного портала, у которых есть светлый фон позади логотипа|
 |ландингпажекустомизедимаже|[mimeContent](../resources/intune-shared-mimecontent.md);|Настраиваемое изображение, отображаемое на начальной странице "приложения корпоративного портала"|
+|contactITName|String|Имя пользователя или организации, ответственных за ИТ-поддержку|
+|contactITPhoneNumber|String|Номер телефона пользователя или организации, ответственного за ИТ-поддержку|
+|contactITEmailAddress|String|Адрес электронной почты пользователя или организации, ответственных за ИТ-поддержку|
+|contactITNotes|String|Текстовые комментарии о лице или организации, ответственных за ИТ-поддержку|
+|onlineSupportSiteUrl|String|URL-адрес сайта ИТ-службы технической поддержки компании или Организации|
+|onlineSupportSiteName|String|Отображаемое имя сайта ИТ-службы технической поддержки компании или Организации|
+|privacyUrl|String|URL-адрес политики конфиденциальности компании или Организации|
 |кустомпривацимессаже|String|Текстовые комментарии относительно того, что у администратора есть доступ к устройству.|
-|исремоведевицедисаблед|Boolean|Логическое значение, указывающее, отключил ли админсистратор действие "Remove Device" на корпоративных устройствах.|
-|исфакториресетдисаблед|Boolean|Логическое значение, указывающее, отключил ли админсистратор действие "Фабричная сброс" на корпоративных устройствах.|
+|исремоведевицедисаблед|Логический|Логическое значение, указывающее, отключил ли админсистратор действие "Remove Device" на корпоративных устройствах.|
+|исфакториресетдисаблед|Логический|Логическое значение, указывающее, отключил ли админсистратор действие "Фабричная сброс" на корпоративных устройствах.|
+|компанипорталблоккедактионс|Коллекция [компанипорталблоккедактион](../resources/intune-shared-companyportalblockedaction.md)|Коллекция заблокированных действий на портале компании в соответствии с типом владения платформой и устройствами.|
+|шовазуреадентерприсеаппс|Логический|Логическое значение, которое указывает, будут ли отображаться корпоративные приложения AzureAD на портале компании.|
+|шовоффицевебаппс|Логический|Логическое значение, указывающее, будут ли отображаться приложения Office на портале компании.|
 
-## <a name="relationships"></a>Отношения
-|Отношение|Тип|Описание|
+## <a name="relationships"></a>Связи
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [интунебрандингпрофилеассигнмент](../resources/intune-wip-intunebrandingprofileassignment.md)|Список назначений групп для профиля фирменной символики|
 
@@ -80,13 +83,6 @@ ms.locfileid: "36371910"
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
   "displayName": "String",
-  "contactITName": "String",
-  "contactITPhoneNumber": "String",
-  "contactITEmailAddress": "String",
-  "contactITNotes": "String",
-  "privacyUrl": "String",
-  "onlineSupportSiteUrl": "String",
-  "onlineSupportSiteName": "String",
   "themeColor": {
     "@odata.type": "microsoft.graph.rgbColor",
     "r": 1024,
@@ -110,9 +106,26 @@ ms.locfileid: "36371910"
     "type": "String",
     "value": "binary"
   },
+  "contactITName": "String",
+  "contactITPhoneNumber": "String",
+  "contactITEmailAddress": "String",
+  "contactITNotes": "String",
+  "onlineSupportSiteUrl": "String",
+  "onlineSupportSiteName": "String",
+  "privacyUrl": "String",
   "customPrivacyMessage": "String",
   "isRemoveDeviceDisabled": true,
-  "isFactoryResetDisabled": true
+  "isFactoryResetDisabled": true,
+  "companyPortalBlockedActions": [
+    {
+      "@odata.type": "microsoft.graph.companyPortalBlockedAction",
+      "platform": "String",
+      "ownerType": "String",
+      "action": "String"
+    }
+  ],
+  "showAzureADEnterpriseApps": true,
+  "showOfficeWebApps": true
 }
 ```
 
