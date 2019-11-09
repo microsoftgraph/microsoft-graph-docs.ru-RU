@@ -5,33 +5,33 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9de8bfd59eae885b254e7dfab87ec70489203998
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 97900a939db68edcec48981d00db68b93d817e20
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538219"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38086139"
 ---
-# <a name="haspayloadlinks-action"></a><span data-ttu-id="9a7b9-103">действие Хаспайлоадлинкс</span><span class="sxs-lookup"><span data-stu-id="9a7b9-103">hasPayloadLinks action</span></span>
+# <a name="haspayloadlinks-action"></a><span data-ttu-id="20b00-103">действие Хаспайлоадлинкс</span><span class="sxs-lookup"><span data-stu-id="20b00-103">hasPayloadLinks action</span></span>
 
-> <span data-ttu-id="9a7b9-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9a7b9-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="20b00-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="20b00-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="9a7b9-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="9a7b9-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="20b00-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="20b00-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="9a7b9-106">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="9a7b9-106">Not yet documented</span></span>
+<span data-ttu-id="20b00-106">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="20b00-106">Not yet documented</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="9a7b9-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="9a7b9-107">Prerequisites</span></span>
-<span data-ttu-id="9a7b9-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9a7b9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="20b00-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="20b00-107">Prerequisites</span></span>
+<span data-ttu-id="20b00-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="20b00-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9a7b9-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9a7b9-110">Permission type</span></span>|<span data-ttu-id="9a7b9-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="9a7b9-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="20b00-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="20b00-110">Permission type</span></span>|<span data-ttu-id="20b00-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="20b00-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="9a7b9-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9a7b9-112">Delegated (work or school account)</span></span>||
-| <span data-ttu-id="9a7b9-113">&nbsp;&nbsp; **Набор политик**</span><span class="sxs-lookup"><span data-stu-id="9a7b9-113">&nbsp; &nbsp; **Policy Set**</span></span> | <span data-ttu-id="9a7b9-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="9a7b9-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="9a7b9-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9a7b9-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9a7b9-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9a7b9-116">Not supported.</span></span>|
-|<span data-ttu-id="9a7b9-117">Приложение</span><span class="sxs-lookup"><span data-stu-id="9a7b9-117">Application</span></span>||
-| <span data-ttu-id="9a7b9-118">&nbsp;&nbsp; **Набор политик**</span><span class="sxs-lookup"><span data-stu-id="9a7b9-118">&nbsp; &nbsp; **Policy Set**</span></span> | <span data-ttu-id="9a7b9-119">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="9a7b9-119">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="20b00-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="20b00-112">Delegated (work or school account)</span></span>||
+| <span data-ttu-id="20b00-113">&nbsp;&nbsp; **Набор политик**</span><span class="sxs-lookup"><span data-stu-id="20b00-113">&nbsp; &nbsp; **Policy Set**</span></span> | <span data-ttu-id="20b00-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="20b00-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="20b00-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="20b00-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="20b00-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="20b00-116">Not supported.</span></span>|
+|<span data-ttu-id="20b00-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="20b00-117">Application</span></span>||
+| <span data-ttu-id="20b00-118">&nbsp;&nbsp; **Набор политик**</span><span class="sxs-lookup"><span data-stu-id="20b00-118">&nbsp; &nbsp; **Policy Set**</span></span> | <span data-ttu-id="20b00-119">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="20b00-119">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="9a7b9-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9a7b9-120">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="20b00-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="20b00-120">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,30 +40,30 @@ ms.locfileid: "37538219"
 POST /deviceManagement/deviceConfigurations/hasPayloadLinks
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="9a7b9-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9a7b9-121">Request headers</span></span>
-|<span data-ttu-id="9a7b9-122">Заголовок</span><span class="sxs-lookup"><span data-stu-id="9a7b9-122">Header</span></span>|<span data-ttu-id="9a7b9-123">Значение</span><span class="sxs-lookup"><span data-stu-id="9a7b9-123">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="20b00-121">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="20b00-121">Request headers</span></span>
+|<span data-ttu-id="20b00-122">Заголовок</span><span class="sxs-lookup"><span data-stu-id="20b00-122">Header</span></span>|<span data-ttu-id="20b00-123">Значение</span><span class="sxs-lookup"><span data-stu-id="20b00-123">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="9a7b9-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="9a7b9-124">Authorization</span></span>|<span data-ttu-id="9a7b9-125">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9a7b9-125">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="9a7b9-126">Accept</span><span class="sxs-lookup"><span data-stu-id="9a7b9-126">Accept</span></span>|<span data-ttu-id="9a7b9-127">application/json</span><span class="sxs-lookup"><span data-stu-id="9a7b9-127">application/json</span></span>|
+|<span data-ttu-id="20b00-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="20b00-124">Authorization</span></span>|<span data-ttu-id="20b00-125">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="20b00-125">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="20b00-126">Accept</span><span class="sxs-lookup"><span data-stu-id="20b00-126">Accept</span></span>|<span data-ttu-id="20b00-127">application/json</span><span class="sxs-lookup"><span data-stu-id="20b00-127">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9a7b9-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="9a7b9-128">Request body</span></span>
-<span data-ttu-id="9a7b9-129">В тело запроса добавьте параметры в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="9a7b9-129">In the request body, supply JSON representation of the parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="20b00-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="20b00-128">Request body</span></span>
+<span data-ttu-id="20b00-129">В тело запроса добавьте параметры в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="20b00-129">In the request body, supply JSON representation of the parameters.</span></span>
 
-<span data-ttu-id="9a7b9-130">В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.</span><span class="sxs-lookup"><span data-stu-id="9a7b9-130">The following table shows the parameters that can be used with this action.</span></span>
+<span data-ttu-id="20b00-130">В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.</span><span class="sxs-lookup"><span data-stu-id="20b00-130">The following table shows the parameters that can be used with this action.</span></span>
 
-|<span data-ttu-id="9a7b9-131">Свойство</span><span class="sxs-lookup"><span data-stu-id="9a7b9-131">Property</span></span>|<span data-ttu-id="9a7b9-132">Тип</span><span class="sxs-lookup"><span data-stu-id="9a7b9-132">Type</span></span>|<span data-ttu-id="9a7b9-133">Описание</span><span class="sxs-lookup"><span data-stu-id="9a7b9-133">Description</span></span>|
+|<span data-ttu-id="20b00-131">Свойство</span><span class="sxs-lookup"><span data-stu-id="20b00-131">Property</span></span>|<span data-ttu-id="20b00-132">Тип</span><span class="sxs-lookup"><span data-stu-id="20b00-132">Type</span></span>|<span data-ttu-id="20b00-133">Описание</span><span class="sxs-lookup"><span data-stu-id="20b00-133">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9a7b9-134">пайлоадидс</span><span class="sxs-lookup"><span data-stu-id="9a7b9-134">payloadIds</span></span>|<span data-ttu-id="9a7b9-135">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="9a7b9-135">String collection</span></span>|<span data-ttu-id="9a7b9-136">Н/Д</span><span class="sxs-lookup"><span data-stu-id="9a7b9-136">Not yet documented</span></span>|
+|<span data-ttu-id="20b00-134">пайлоадидс</span><span class="sxs-lookup"><span data-stu-id="20b00-134">payloadIds</span></span>|<span data-ttu-id="20b00-135">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="20b00-135">String collection</span></span>|<span data-ttu-id="20b00-136">Н/Д</span><span class="sxs-lookup"><span data-stu-id="20b00-136">Not yet documented</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="9a7b9-137">Ответ</span><span class="sxs-lookup"><span data-stu-id="9a7b9-137">Response</span></span>
-<span data-ttu-id="9a7b9-138">При успешном выполнении это действие возвращает `200 OK` код отклика и коллекцию [хаспайлоадлинкресултитем](../resources/intune-policyset-haspayloadlinkresultitem.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="9a7b9-138">If successful, this action returns a `200 OK` response code and a [hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="20b00-137">Ответ</span><span class="sxs-lookup"><span data-stu-id="20b00-137">Response</span></span>
+<span data-ttu-id="20b00-138">При успешном выполнении это действие возвращает `200 OK` код отклика и коллекцию [хаспайлоадлинкресултитем](../resources/intune-policyset-haspayloadlinkresultitem.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="20b00-138">If successful, this action returns a `200 OK` response code and a [hasPayloadLinkResultItem](../resources/intune-policyset-haspayloadlinkresultitem.md) collection in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9a7b9-139">Пример</span><span class="sxs-lookup"><span data-stu-id="9a7b9-139">Example</span></span>
+## <a name="example"></a><span data-ttu-id="20b00-139">Пример</span><span class="sxs-lookup"><span data-stu-id="20b00-139">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="9a7b9-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="9a7b9-140">Request</span></span>
-<span data-ttu-id="9a7b9-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9a7b9-141">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="20b00-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="20b00-140">Request</span></span>
+<span data-ttu-id="20b00-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="20b00-141">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/hasPayloadLinks
 
@@ -77,8 +77,8 @@ Content-length: 53
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="9a7b9-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="9a7b9-142">Response</span></span>
-<span data-ttu-id="9a7b9-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="9a7b9-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="20b00-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="20b00-142">Response</span></span>
+<span data-ttu-id="20b00-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="20b00-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -98,6 +98,9 @@ Content-Length: 249
   ]
 }
 ```
+
+
+
 
 
 
