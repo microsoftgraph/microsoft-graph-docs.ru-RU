@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2d5ccb6a7c1ea97aa93c88df887156668dcd48a1
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 34ce34c3078b270844dbc3fd287db165d57e9467
+ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37537284"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "38086356"
 ---
-# <a name="create-devicemanagementexportjob"></a><span data-ttu-id="1a129-103">Создание Девицеманажементекспортжоб</span><span class="sxs-lookup"><span data-stu-id="1a129-103">Create deviceManagementExportJob</span></span>
+# <a name="create-devicemanagementexportjob"></a><span data-ttu-id="774da-103">Создание Девицеманажементекспортжоб</span><span class="sxs-lookup"><span data-stu-id="774da-103">Create deviceManagementExportJob</span></span>
 
-> <span data-ttu-id="1a129-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1a129-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="774da-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="774da-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="1a129-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="1a129-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="774da-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="774da-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="1a129-106">Создание нового объекта [девицеманажементекспортжоб](../resources/intune-reporting-devicemanagementexportjob.md) .</span><span class="sxs-lookup"><span data-stu-id="1a129-106">Create a new [deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) object.</span></span>
+<span data-ttu-id="774da-106">Создание нового объекта [девицеманажементекспортжоб](../resources/intune-reporting-devicemanagementexportjob.md) .</span><span class="sxs-lookup"><span data-stu-id="774da-106">Create a new [deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="1a129-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="1a129-107">Prerequisites</span></span>
-<span data-ttu-id="1a129-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1a129-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="774da-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="774da-107">Prerequisites</span></span>
+<span data-ttu-id="774da-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="774da-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1a129-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1a129-110">Permission type</span></span>|<span data-ttu-id="1a129-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="1a129-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="774da-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="774da-110">Permission type</span></span>|<span data-ttu-id="774da-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="774da-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="1a129-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1a129-112">Delegated (work or school account)</span></span>|<span data-ttu-id="1a129-113">DeviceManagementConfiguration. ReadWrite. ALL, DeviceManagementApps. ReadWrite. ALL, DeviceManagementManagedDevices. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="1a129-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="1a129-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1a129-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1a129-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1a129-115">Not supported.</span></span>|
-|<span data-ttu-id="1a129-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="1a129-116">Application</span></span>|<span data-ttu-id="1a129-117">DeviceManagementConfiguration. ReadWrite. ALL, DeviceManagementApps. ReadWrite. ALL, DeviceManagementManagedDevices. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="1a129-117">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="774da-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="774da-112">Delegated (work or school account)</span></span>|<span data-ttu-id="774da-113">DeviceManagementConfiguration. ReadWrite. ALL, DeviceManagementApps. ReadWrite. ALL, DeviceManagementManagedDevices. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="774da-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="774da-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="774da-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="774da-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="774da-115">Not supported.</span></span>|
+|<span data-ttu-id="774da-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="774da-116">Application</span></span>|<span data-ttu-id="774da-117">DeviceManagementConfiguration. ReadWrite. ALL, DeviceManagementApps. ReadWrite. ALL, DeviceManagementManagedDevices. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="774da-117">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="1a129-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1a129-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="774da-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="774da-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,44 +38,43 @@ ms.locfileid: "37537284"
 POST /deviceManagement/reports/exportJobs
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1a129-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1a129-119">Request headers</span></span>
-|<span data-ttu-id="1a129-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="1a129-120">Header</span></span>|<span data-ttu-id="1a129-121">Значение</span><span class="sxs-lookup"><span data-stu-id="1a129-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="774da-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="774da-119">Request headers</span></span>
+|<span data-ttu-id="774da-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="774da-120">Header</span></span>|<span data-ttu-id="774da-121">Значение</span><span class="sxs-lookup"><span data-stu-id="774da-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="1a129-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="1a129-122">Authorization</span></span>|<span data-ttu-id="1a129-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1a129-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="1a129-124">Accept</span><span class="sxs-lookup"><span data-stu-id="1a129-124">Accept</span></span>|<span data-ttu-id="1a129-125">application/json</span><span class="sxs-lookup"><span data-stu-id="1a129-125">application/json</span></span>|
+|<span data-ttu-id="774da-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="774da-122">Authorization</span></span>|<span data-ttu-id="774da-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="774da-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="774da-124">Accept</span><span class="sxs-lookup"><span data-stu-id="774da-124">Accept</span></span>|<span data-ttu-id="774da-125">application/json</span><span class="sxs-lookup"><span data-stu-id="774da-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1a129-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="1a129-126">Request body</span></span>
-<span data-ttu-id="1a129-127">В тексте запроса добавьте представление объекта Девицеманажементекспортжоб в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="1a129-127">In the request body, supply a JSON representation for the deviceManagementExportJob object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="774da-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="774da-126">Request body</span></span>
+<span data-ttu-id="774da-127">В тексте запроса добавьте представление объекта Девицеманажементекспортжоб в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="774da-127">In the request body, supply a JSON representation for the deviceManagementExportJob object.</span></span>
 
-<span data-ttu-id="1a129-128">В следующей таблице приведены свойства, необходимые при создании Девицеманажементекспортжоб.</span><span class="sxs-lookup"><span data-stu-id="1a129-128">The following table shows the properties that are required when you create the deviceManagementExportJob.</span></span>
+<span data-ttu-id="774da-128">В следующей таблице приведены свойства, необходимые при создании Девицеманажементекспортжоб.</span><span class="sxs-lookup"><span data-stu-id="774da-128">The following table shows the properties that are required when you create the deviceManagementExportJob.</span></span>
 
-|<span data-ttu-id="1a129-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="1a129-129">Property</span></span>|<span data-ttu-id="1a129-130">Тип</span><span class="sxs-lookup"><span data-stu-id="1a129-130">Type</span></span>|<span data-ttu-id="1a129-131">Описание</span><span class="sxs-lookup"><span data-stu-id="1a129-131">Description</span></span>|
+|<span data-ttu-id="774da-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="774da-129">Property</span></span>|<span data-ttu-id="774da-130">Тип</span><span class="sxs-lookup"><span data-stu-id="774da-130">Type</span></span>|<span data-ttu-id="774da-131">Описание</span><span class="sxs-lookup"><span data-stu-id="774da-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="1a129-132">id</span><span class="sxs-lookup"><span data-stu-id="1a129-132">id</span></span>|<span data-ttu-id="1a129-133">String</span><span class="sxs-lookup"><span data-stu-id="1a129-133">String</span></span>|<span data-ttu-id="1a129-134">Уникальный идентификатор для этой сущности</span><span class="sxs-lookup"><span data-stu-id="1a129-134">Unique identifier for this entity</span></span>|
-|<span data-ttu-id="1a129-135">репортнаме</span><span class="sxs-lookup"><span data-stu-id="1a129-135">reportName</span></span>|<span data-ttu-id="1a129-136">String</span><span class="sxs-lookup"><span data-stu-id="1a129-136">String</span></span>|<span data-ttu-id="1a129-137">Имя отчета</span><span class="sxs-lookup"><span data-stu-id="1a129-137">Name of the report</span></span>|
-|<span data-ttu-id="1a129-138">filter</span><span class="sxs-lookup"><span data-stu-id="1a129-138">filter</span></span>|<span data-ttu-id="1a129-139">String</span><span class="sxs-lookup"><span data-stu-id="1a129-139">String</span></span>|<span data-ttu-id="1a129-140">Фильтры, примененные к отчету</span><span class="sxs-lookup"><span data-stu-id="1a129-140">Filters applied on the report</span></span>|
-|<span data-ttu-id="1a129-141">select</span><span class="sxs-lookup"><span data-stu-id="1a129-141">select</span></span>|<span data-ttu-id="1a129-142">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="1a129-142">String collection</span></span>|<span data-ttu-id="1a129-143">Столбцы, выбранные из отчета</span><span class="sxs-lookup"><span data-stu-id="1a129-143">Columns selected from the report</span></span>|
-|<span data-ttu-id="1a129-144">orderBy</span><span class="sxs-lookup"><span data-stu-id="1a129-144">orderBy</span></span>|<span data-ttu-id="1a129-145">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="1a129-145">String collection</span></span>|<span data-ttu-id="1a129-146">Упорядочение столбцов в отчете</span><span class="sxs-lookup"><span data-stu-id="1a129-146">Ordering of columns in the report</span></span>|
-|<span data-ttu-id="1a129-147">format</span><span class="sxs-lookup"><span data-stu-id="1a129-147">format</span></span>|[<span data-ttu-id="1a129-148">девицеманажементрепортфилеформат</span><span class="sxs-lookup"><span data-stu-id="1a129-148">deviceManagementReportFileFormat</span></span>](../resources/intune-reporting-devicemanagementreportfileformat.md)|<span data-ttu-id="1a129-149">Формат экспортированного отчета.</span><span class="sxs-lookup"><span data-stu-id="1a129-149">Format of the exported report.</span></span> <span data-ttu-id="1a129-150">Возможные значения: `csv`, `pdf`.</span><span class="sxs-lookup"><span data-stu-id="1a129-150">Possible values are: `csv`, `pdf`.</span></span>|
-|<span data-ttu-id="1a129-151">снапшотид</span><span class="sxs-lookup"><span data-stu-id="1a129-151">snapshotId</span></span>|<span data-ttu-id="1a129-152">String</span><span class="sxs-lookup"><span data-stu-id="1a129-152">String</span></span>|<span data-ttu-id="1a129-153">Моментальный снимок является идентифицируемым подмножеством набора данных, представленным Репортнаме.</span><span class="sxs-lookup"><span data-stu-id="1a129-153">A snapshot is an identifiable subset of the dataset represented by the ReportName.</span></span> <span data-ttu-id="1a129-154">Здесь можно использовать идентификатор sessionId или Качедрепортконфигуратион.</span><span class="sxs-lookup"><span data-stu-id="1a129-154">A sessionId or CachedReportConfiguration id can be used here.</span></span> <span data-ttu-id="1a129-155">Если указан идентификатор sessionId, фильтрация, выбор и OrderBy применяются к данным, представленным в sessionId.</span><span class="sxs-lookup"><span data-stu-id="1a129-155">If a sessionId is specified, Filter, Select, and OrderBy are applied to the data represented by the sessionId.</span></span> <span data-ttu-id="1a129-156">Filter, SELECT и OrderBy не могут указываться вместе с идентификатором Качедрепортконфигуратион.</span><span class="sxs-lookup"><span data-stu-id="1a129-156">Filter, Select, and OrderBy cannot be specified together with a CachedReportConfiguration id.</span></span>|
-|<span data-ttu-id="1a129-157">status</span><span class="sxs-lookup"><span data-stu-id="1a129-157">status</span></span>|[<span data-ttu-id="1a129-158">девицеманажементрепортстатус</span><span class="sxs-lookup"><span data-stu-id="1a129-158">deviceManagementReportStatus</span></span>](../resources/intune-reporting-devicemanagementreportstatus.md)|<span data-ttu-id="1a129-159">Состояние задания экспорта.</span><span class="sxs-lookup"><span data-stu-id="1a129-159">Status of the export job.</span></span> <span data-ttu-id="1a129-160">Возможные значения: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.</span><span class="sxs-lookup"><span data-stu-id="1a129-160">Possible values are: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.</span></span>|
-|<span data-ttu-id="1a129-161">url</span><span class="sxs-lookup"><span data-stu-id="1a129-161">url</span></span>|<span data-ttu-id="1a129-162">String</span><span class="sxs-lookup"><span data-stu-id="1a129-162">String</span></span>|<span data-ttu-id="1a129-163">Временное расположение экспортируемого отчета</span><span class="sxs-lookup"><span data-stu-id="1a129-163">Temporary location of the exported report</span></span>|
-|<span data-ttu-id="1a129-164">рекуестдатетиме</span><span class="sxs-lookup"><span data-stu-id="1a129-164">requestDateTime</span></span>|<span data-ttu-id="1a129-165">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="1a129-165">DateTimeOffset</span></span>|<span data-ttu-id="1a129-166">Время запроса экспорта отчета</span><span class="sxs-lookup"><span data-stu-id="1a129-166">Time that the exported report was requested</span></span>|
-|<span data-ttu-id="1a129-167">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="1a129-167">expirationDateTime</span></span>|<span data-ttu-id="1a129-168">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="1a129-168">DateTimeOffset</span></span>|<span data-ttu-id="1a129-169">Время истечения срока действия экспортированного отчета</span><span class="sxs-lookup"><span data-stu-id="1a129-169">Time that the exported report expires</span></span>|
+|<span data-ttu-id="774da-132">id</span><span class="sxs-lookup"><span data-stu-id="774da-132">id</span></span>|<span data-ttu-id="774da-133">String</span><span class="sxs-lookup"><span data-stu-id="774da-133">String</span></span>|<span data-ttu-id="774da-134">Уникальный идентификатор для этой сущности</span><span class="sxs-lookup"><span data-stu-id="774da-134">Unique identifier for this entity</span></span>|
+|<span data-ttu-id="774da-135">репортнаме</span><span class="sxs-lookup"><span data-stu-id="774da-135">reportName</span></span>|<span data-ttu-id="774da-136">String</span><span class="sxs-lookup"><span data-stu-id="774da-136">String</span></span>|<span data-ttu-id="774da-137">Имя отчета</span><span class="sxs-lookup"><span data-stu-id="774da-137">Name of the report</span></span>|
+|<span data-ttu-id="774da-138">filter</span><span class="sxs-lookup"><span data-stu-id="774da-138">filter</span></span>|<span data-ttu-id="774da-139">String</span><span class="sxs-lookup"><span data-stu-id="774da-139">String</span></span>|<span data-ttu-id="774da-140">Фильтры, примененные к отчету</span><span class="sxs-lookup"><span data-stu-id="774da-140">Filters applied on the report</span></span>|
+|<span data-ttu-id="774da-141">select</span><span class="sxs-lookup"><span data-stu-id="774da-141">select</span></span>|<span data-ttu-id="774da-142">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="774da-142">String collection</span></span>|<span data-ttu-id="774da-143">Столбцы, выбранные из отчета</span><span class="sxs-lookup"><span data-stu-id="774da-143">Columns selected from the report</span></span>|
+|<span data-ttu-id="774da-144">format</span><span class="sxs-lookup"><span data-stu-id="774da-144">format</span></span>|[<span data-ttu-id="774da-145">deviceManagementReportFileFormat</span><span class="sxs-lookup"><span data-stu-id="774da-145">deviceManagementReportFileFormat</span></span>](../resources/intune-reporting-devicemanagementreportfileformat.md)|<span data-ttu-id="774da-146">Формат экспортированного отчета.</span><span class="sxs-lookup"><span data-stu-id="774da-146">Format of the exported report.</span></span> <span data-ttu-id="774da-147">Возможные значения: `csv`, `pdf`.</span><span class="sxs-lookup"><span data-stu-id="774da-147">Possible values are: `csv`, `pdf`.</span></span>|
+|<span data-ttu-id="774da-148">снапшотид</span><span class="sxs-lookup"><span data-stu-id="774da-148">snapshotId</span></span>|<span data-ttu-id="774da-149">String</span><span class="sxs-lookup"><span data-stu-id="774da-149">String</span></span>|<span data-ttu-id="774da-150">Моментальный снимок является идентифицируемым подмножеством набора данных, представленным Репортнаме.</span><span class="sxs-lookup"><span data-stu-id="774da-150">A snapshot is an identifiable subset of the dataset represented by the ReportName.</span></span> <span data-ttu-id="774da-151">Здесь можно использовать идентификатор sessionId или Качедрепортконфигуратион.</span><span class="sxs-lookup"><span data-stu-id="774da-151">A sessionId or CachedReportConfiguration id can be used here.</span></span> <span data-ttu-id="774da-152">Если указан идентификатор sessionId, фильтрация, выбор и OrderBy применяются к данным, представленным в sessionId.</span><span class="sxs-lookup"><span data-stu-id="774da-152">If a sessionId is specified, Filter, Select, and OrderBy are applied to the data represented by the sessionId.</span></span> <span data-ttu-id="774da-153">Filter, SELECT и OrderBy не могут указываться вместе с идентификатором Качедрепортконфигуратион.</span><span class="sxs-lookup"><span data-stu-id="774da-153">Filter, Select, and OrderBy cannot be specified together with a CachedReportConfiguration id.</span></span>|
+|<span data-ttu-id="774da-154">status</span><span class="sxs-lookup"><span data-stu-id="774da-154">status</span></span>|[<span data-ttu-id="774da-155">deviceManagementReportStatus</span><span class="sxs-lookup"><span data-stu-id="774da-155">deviceManagementReportStatus</span></span>](../resources/intune-reporting-devicemanagementreportstatus.md)|<span data-ttu-id="774da-156">Состояние задания экспорта.</span><span class="sxs-lookup"><span data-stu-id="774da-156">Status of the export job.</span></span> <span data-ttu-id="774da-157">Возможные значения: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.</span><span class="sxs-lookup"><span data-stu-id="774da-157">Possible values are: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.</span></span>|
+|<span data-ttu-id="774da-158">url</span><span class="sxs-lookup"><span data-stu-id="774da-158">url</span></span>|<span data-ttu-id="774da-159">String</span><span class="sxs-lookup"><span data-stu-id="774da-159">String</span></span>|<span data-ttu-id="774da-160">Временное расположение экспортируемого отчета</span><span class="sxs-lookup"><span data-stu-id="774da-160">Temporary location of the exported report</span></span>|
+|<span data-ttu-id="774da-161">рекуестдатетиме</span><span class="sxs-lookup"><span data-stu-id="774da-161">requestDateTime</span></span>|<span data-ttu-id="774da-162">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="774da-162">DateTimeOffset</span></span>|<span data-ttu-id="774da-163">Время запроса экспорта отчета</span><span class="sxs-lookup"><span data-stu-id="774da-163">Time that the exported report was requested</span></span>|
+|<span data-ttu-id="774da-164">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="774da-164">expirationDateTime</span></span>|<span data-ttu-id="774da-165">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="774da-165">DateTimeOffset</span></span>|<span data-ttu-id="774da-166">Время истечения срока действия экспортированного отчета</span><span class="sxs-lookup"><span data-stu-id="774da-166">Time that the exported report expires</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="1a129-170">Отклик</span><span class="sxs-lookup"><span data-stu-id="1a129-170">Response</span></span>
-<span data-ttu-id="1a129-171">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементекспортжоб](../resources/intune-reporting-devicemanagementexportjob.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="1a129-171">If successful, this method returns a `201 Created` response code and a [deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="774da-167">Отклик</span><span class="sxs-lookup"><span data-stu-id="774da-167">Response</span></span>
+<span data-ttu-id="774da-168">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементекспортжоб](../resources/intune-reporting-devicemanagementexportjob.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="774da-168">If successful, this method returns a `201 Created` response code and a [deviceManagementExportJob](../resources/intune-reporting-devicemanagementexportjob.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1a129-172">Пример</span><span class="sxs-lookup"><span data-stu-id="1a129-172">Example</span></span>
+## <a name="example"></a><span data-ttu-id="774da-169">Пример</span><span class="sxs-lookup"><span data-stu-id="774da-169">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="1a129-173">Запрос</span><span class="sxs-lookup"><span data-stu-id="1a129-173">Request</span></span>
-<span data-ttu-id="1a129-174">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1a129-174">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="774da-170">Запрос</span><span class="sxs-lookup"><span data-stu-id="774da-170">Request</span></span>
+<span data-ttu-id="774da-171">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="774da-171">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/reports/exportJobs
 Content-type: application/json
-Content-length: 448
+Content-length: 404
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementExportJob",
@@ -83,9 +82,6 @@ Content-length: 448
   "filter": "Filter value",
   "select": [
     "Select value"
-  ],
-  "orderBy": [
-    "Order By value"
   ],
   "format": "pdf",
   "snapshotId": "Snapshot Id value",
@@ -96,12 +92,12 @@ Content-length: 448
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="1a129-175">Отклик</span><span class="sxs-lookup"><span data-stu-id="1a129-175">Response</span></span>
-<span data-ttu-id="1a129-p105">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1a129-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="774da-172">Отклик</span><span class="sxs-lookup"><span data-stu-id="774da-172">Response</span></span>
+<span data-ttu-id="774da-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="774da-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 497
+Content-Length: 453
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementExportJob",
@@ -110,9 +106,6 @@ Content-Length: 497
   "filter": "Filter value",
   "select": [
     "Select value"
-  ],
-  "orderBy": [
-    "Order By value"
   ],
   "format": "pdf",
   "snapshotId": "Snapshot Id value",
