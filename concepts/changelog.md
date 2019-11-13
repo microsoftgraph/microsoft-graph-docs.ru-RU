@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 990b70dda3d6e5f786fc5ce0ec05fbdeb37bd82b
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 4bc10422734c73cf32453a5cbf7b6a9be8692aa9
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088016"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38303141"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -17,6 +17,13 @@ ms.locfileid: "38088016"
 Дополнительные сведения об известных проблемах с API Microsoft Graph см. в статье [Известные проблемы](known-issues.md).
 
 ## <a name="november-2019"></a>Ноябрь 2019 г.
+
+### <a name="calendar--place"></a>Календарь | Место
+
+| **Тип изменения** | **Версия** | **Описание**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Дополнение        | Бета  | Добавлена возможность [обновления помещения или списка помещений](/graph/api/resources/place-get?view=graph-rest-beta).|
+
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Устройства и приложения (Microsoft Intune)
 
@@ -54,11 +61,6 @@ ms.locfileid: "38088016"
 |Изменение|Бета|Изменены следующие свойства сложного типа [credentialSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-credentialsinglesignonextension?view=graph-rest-beta):<br/>**teamIdentifier** больше не обязательно указывать<br/>|
 |Дополнение|Бета|Добавлены свойства **companyPortalBlockedActions**, **showAzureADEnterpriseApps** и **showOfficeWebApps** для сложного типа [intuneBrand](/graph/api/resources/intune-onboarding-intunebrand?view=graph-rest-beta)|
 
-### <a name="calendar--place"></a>Календарь | Место
-
-| **Тип изменения** | **Версия** | **Описание**                  |
-|:----------------|:------------|:-----------------------------------------|
-| Дополнение        | Бета  | Добавлена возможность [обновления помещения или списка помещений](/graph/api/resources/place-get?view=graph-rest-beta).|
 
 ### <a name="education"></a>Образование
 
@@ -1989,7 +1991,7 @@ ms.locfileid: "38088016"
 |Тип изменения|Версия|Описание|
 |:---|:---|:---|
 |Изменение|Бета-версия|Добавлено свойство reportableIdentifier объекта [educationsynchronizationerror](/graph/api/resources/educationsynchronizationerror?view=graph-rest-beta).|
-|Изменение|Бета|Обновлены варианты ответа для API [uploadUrl](/graph/api/educationsynchronizationprofile-uploadurl?view=graph-rest-beta).|
+|Изменение|бета|Обновлены варианты ответа для API [uploadUrl](/graph/api/educationsynchronizationprofile-uploadurl?view=graph-rest-beta).|
 |Изменение|Бета-версия|Обновлен текст описания типа ресурса [educationSynchronizationError](/graph/api/resources/educationsynchronizationerror?view=graph-rest-beta).|
 |Изменение|Бета-версия|Обновлен текст описания для API [получения ошибок синхронизации](/graph/api/educationsynchronizationerrors-get?view=graph-rest-beta).|
 

@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e96d55115338073b7a60ce3e47de004de64d0cf6
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: af4b6254f7ede23086fd3f5537d41bb5e0dcc30e
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539283"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37936582"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -148,12 +148,14 @@ ms.locfileid: "37539283"
 |showInAddressList|Логический|Значение `true`, если глобальный список адресов Outlook должен содержать этого пользователя. В противном случае используется значение `false`. Если не задано, будет считаться, что присвоено значение `true`. Для пользователей, приглашенных через диспетчер приглашений, этому свойству присваивается значение `false`.|
 |signInSessionsValidFromDateTime|DateTimeOffset| Все маркеры обновления или маркеры сеансов (файлы cookie сеанса), выпущенные до этого момента, являются недопустимыми. В приложениях возникает ошибка при использовании недопустимых маркеров обновления или маркеров сеансов для получения маркера делегированного доступа (для доступа к API, например Microsoft Graph).  В этом случае приложению потребуется получить новый маркер обновления, сделав запрос к конечной точке авторизации. Только для чтения. Сброс можно выполнить с помощью [revokeSignInSessions](../api/user-revokesigninsessions.md).|
 |skills|Коллекция строк|Список навыков пользователя.|
+|signInActivity|[signInActivity](signinactivity.md)|Получение последней даты входа в систему и идентификатора запроса на вход для указанного пользователя.<br><br>Поддерживается свойство $filter, но без других фильтруемых свойств. <br>Возвращается только с помощью оператора $select.<br>Только для чтения. |
 |state|String|Область, республика, край или округ в адресе пользователя. Поддерживает параметр $filter.|
 |streetAddress|String|Почтовый адрес места работы пользователя.|
 |surname|String|Фамилия пользователя. Поддерживает параметр $filter.|
 |usageLocation|String|Двухбуквенный код страны (по стандарту ISO 3166). Необходим для пользователей, которым будут назначены лицензии, в связи с законодательным требованием проверять доступность служб в разных странах.  Примеры: "RU", "JP" и "GB". Значение null не допускается. Поддерживает параметр $filter.|
 |userPrincipalName|String|Имя участника-пользователя. Это имя для входа через Интернет по стандарту RFC 822. В соответствии с соглашением оно должно указывать на имя пользователя для электронной почты. Общий формат: псевдоним@домен. При этом домен должен входить в коллекцию проверенных доменов клиента. Это свойство обязательно указывать при создании пользователя. Доступ к проверенным доменам клиента можно получить с помощью свойства **verifiedDomains** объекта [organization](organization.md). Поддерживает параметры $filter и $orderby.
 |userType|String|Строковое значение, с помощью которого можно классифицировать типы пользователей в каталоге, например "Участник" и "Гость". Поддерживает параметр $filter.          |
+
 
 ### <a name="legal-age-group-property-definitions"></a>Определения свойств юридических возрастных групп
 
@@ -365,7 +367,8 @@ ms.locfileid: "37539283"
   "outlook": {"@odata.type": "microsoft.graph.outlookUser"},
   "ownedDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "photo": {"@odata.type": "microsoft.graph.profilePhoto"},
-  "registeredDevices": [{"@odata.type": "microsoft.graph.directoryObject"}]
+  "registeredDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  "signInActivity": {"@odata.type": "microsoft.graph.signInActivity"}
 }
 ```
 

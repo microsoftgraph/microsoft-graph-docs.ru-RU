@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 4acdf548c7a4b289457712c4310abef4c82e96df
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: 413d31542aba96b6f456689091e085bffce501de
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35881678"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302687"
 ---
 ```java
 
@@ -15,7 +15,7 @@ DriveItem driveItem = new DriveItem();
 driveItem.name = "New Folder";
 Folder folder = new Folder();
 driveItem.folder = folder;
-driveItem.@microsoft.graph.conflictBehavior = "rename";
+driveItem.additionalDataManager().put("@microsoft.graph.conflictBehavior", new JsonPrimitive("rename"));
 
 graphClient.me().drive().root().children()
     .buildRequest()

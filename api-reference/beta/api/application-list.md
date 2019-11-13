@@ -1,22 +1,22 @@
 ---
 title: Список приложений
-description: Получение списка приложений в этой организации.
+description: Получение списка приложений в организации.
 author: davidmu1
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1642eac11159ac016669ecb9b9c058c7eb4ca1de
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 0b74d19cad91fe7a555b58c7d876d09f31862aa6
+ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36719033"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "37936463"
 ---
 # <a name="list-applications"></a>Список приложений
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка приложений в этой организации.
+Получение списка [приложений](../resources/application.md) в организации.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -34,12 +34,13 @@ ms.locfileid: "36719033"
 GET /applications
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
+| Content-Type   | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -47,8 +48,8 @@ GET /applications
 ## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [application](../resources/application.md) в тексте отклика.
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+## <a name="examples"></a>Примеры
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
@@ -73,8 +74,10 @@ GET https://graph.microsoft.com/beta/applications
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+### <a name="response"></a>Отклик
+Ниже приведен пример отклика. 
+
+> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -87,35 +90,65 @@ Content-type: application/json
 Content-length: 1229
 
 {
-  "value": [
-    {
-      "api": {
-        "acceptedAccessTokenVersion": 1,
-        "publishedPermissionScopes": [
-          {
-            "adminConsentDescription": "adminConsentDescription-value",
-            "adminConsentDisplayName": "adminConsentDisplayName-value",
-            "id": "id-value",
-            "isEnabled": true,
-            "type": "type-value",
-            "userConsentDescription": "userConsentDescription-value",
-            "userConsentDisplayName": "userConsentDisplayName-value",
-            "value": "value-value"
-          }
-        ]
-      },
-      "allowPublicClient": true,
-      "applicationAliases": [
-        "applicationAliases-value"
-      ],
-      "createdDateTime": "datetime-value",
-      "installedClients": {
-        "redirectUrls": [
-          "redirectUrls-value"
-        ]
-      }
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications",
+    "value": [
+        {
+            "id": "00af5dfb-85da-4b41-a677-0c6b86dd34f8",
+            "deletedDateTime": null,
+            "isFallbackPublicClient": false,
+            "appId": "65415bb1-9267-4313-bbf5-ae259732ee12",
+            "applicationTemplateId": null,
+            "identifierUris": [
+                "http://contoso/a7770d29-4321-41a6-b863-ca11d6639448"
+            ],
+            "createdDateTime": "2019-09-15T05:23:08Z",
+            "displayName": "My app",
+            "isDeviceOnlyAuthSupported": null,
+            "groupMembershipClaims": null,
+            "optionalClaims": null,
+            "orgRestrictions": [],
+            "publisherDomain": "contoso.onmicrosoft.com",
+            "signInAudience": "AzureADMyOrg",
+            "tags": [],
+            "tokenEncryptionKeyId": null,
+            "api": {
+                "requestedAccessTokenVersion": null,
+                "acceptMappedClaims": null,
+                "knownClientApplications": [],
+                "oauth2PermissionScopes": [],
+                "preAuthorizedApplications": []
+            },
+            "appRoles": [],
+            "publicClient": {
+                "redirectUris": []
+            },
+            "info": {
+                "termsOfServiceUrl": null,
+                "supportUrl": null,
+                "privacyStatementUrl": null,
+                "marketingUrl": null,
+                "logoUrl": null
+            },
+            "keyCredentials": [],
+            "parentalControlSettings": {
+                "countriesBlockedForMinors": [],
+                "legalAgeGroupRule": "Allow"
+            },
+            "passwordCredentials": [],
+            "requiredResourceAccess": [],
+            "web": {
+                "redirectUris": [
+                    "https://127.0.0.1:444/applications/default.aspx"
+                ],
+                "homePageUrl": "http://www.contoso.com/landingPage",
+                "logoutUrl": null,
+                "implicitGrantSettings": {
+                    "enableIdTokenIssuance": true,
+                    "enableAccessTokenIssuance": false
+                }
+            }
+        }
+    ]
 }
 ```
 
