@@ -4,22 +4,24 @@ description: API Microsoft Search позволяет приложениям ис
 author: knightsu
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: f78ad8af81a7d2b72ab61914cc441db279913dc1
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 985da47e5a7b96cead416e8e5cda32dae0357adb
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939546"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38303134"
 ---
 # <a name="search-messages"></a>Поиск сообщений
 
-API Microsoft Search позволяет приложениям искать информацию в сообщениях электронной почты, получать сообщения, Ранжированные по релевантности, и отображать выделенный интерфейс для поиска. Поиск применяется к тексту и вложениям сообщений в собственном почтовом ящике пользователя. 
+API Microsoft Search позволяет приложениям искать информацию в сообщениях электронной почты, получать сообщения, Ранжированные по релевантности, и отображать выделенный интерфейс для поиска. Поиск применяется к тексту и вложениям сообщений в собственном почтовом ящике пользователя.
 
 Поисковый запрос может включать в себя [фильтры](https://support.office.com/article/learn-to-narrow-your-search-criteria-for-better-searches-in-outlook-d824d1e9-a255-4c8a-8553-276fb895a8da) , вводимые пользователями в текстовое поле **поиска** в Outlook.
 
 Результаты поиска сообщений сортируются по **receivedDateTime** в порядке убывания.
 
-В настоящее время поиск сообщений применяется только к собственным личным учетным записям пользователей, но не к рабочим или учебным учетным записям, а не к делегированным почтовым ящикам. Ниже приводятся более [Известные ограничения](#known-limitations) .
+Поиск сообщений применяется к рабочим или учебным учетным записям. Пользователи могут выполнять поиск в собственном почтовом ящике, но не в делегированных почтовых ящиках. Ниже приводятся более [Известные ограничения](#known-limitations) .
+
+При поиске сообщений также выполняется поиск вложений. [Типы файлов, поддерживаемые для вложений](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) , одинаковы для SharePoint Online.
 
 ## <a name="examples"></a>Примеры
 
