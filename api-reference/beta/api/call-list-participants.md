@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2c0050ea875ae9e0a8adc1037deb927071e76875
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: ff5c75db50f9321465d61edb156ad26ffc714c03
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006459"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302411"
 ---
 # <a name="list-participants"></a>Список участников
 
@@ -34,7 +34,7 @@ ms.locfileid: "38006459"
 GET /app/calls/{id}/participants
 GET /communications/calls/{id}/participants
 ```
-> **Примечание:** `/app` Путь является устаревшим. Перемотка вперед, используйте `/communications` путь.
+> **Примечание.** Путь `/app` является устаревшим. В дальнейшем используйте путь `/communications`.
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
@@ -64,7 +64,7 @@ GET /communications/calls/{id}/participants
   "name": "get-participants"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/calls/7531d31f-d10d-44de-802f-c569dbca451c/participants
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)

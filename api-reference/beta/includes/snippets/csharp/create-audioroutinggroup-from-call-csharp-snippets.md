@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 3521b5ff1645ee6140a65ee3407873f409b5daea
-ms.sourcegitcommit: 56c0b609dfb1bc5d900956f407d107cdab7086e8
+ms.openlocfilehash: dd7e66968d6165ad44a7e107d924db74d253ee0c
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "35934034"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302876"
 ---
 ```csharp
 
@@ -25,7 +25,7 @@ var audioRoutingGroup = new AudioRoutingGroup
     }
 };
 
-await graphClient.App.Calls["{id}"].AudioRoutingGroups
+await graphClient.Communications.Calls["{id}"].AudioRoutingGroups
     .Request()
     .AddAsync(audioRoutingGroup);
 

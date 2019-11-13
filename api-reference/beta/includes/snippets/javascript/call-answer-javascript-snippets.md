@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 2079cd1d22cef1632c0d008ca858229c4ae43f22
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: db34c3e42c51a4d39e68b2835a75113846bd233f
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35709054"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302377"
 ---
 ```javascript
 
@@ -19,14 +19,14 @@ const answer = {
   callbackUri: "callbackUri-value",
   mediaConfig: {
     @odata.type: "#microsoft.graph.appHostedMediaConfig",
-    blob: "<media config blob>"
+    blob: "<Media Session Configuration Blob>"
   },
   acceptedModalities: [
     "audio"
   ]
 };
 
-let res = await client.api('/app/calls/{id}/answer')
+let res = await client.api('/communications/calls/{id}/answer')
     .version('beta')
     .post(answer);
 

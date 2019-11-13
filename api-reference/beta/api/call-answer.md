@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 5c9b506b8fc10bcec48e503e394b813e79f8ad82
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: d1892a7f6f0331cad2b0ef74adfba857dd21b2b2
+ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006370"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "38302383"
 ---
 # <a name="call-answer"></a>вызов: ответ
 
@@ -39,7 +39,7 @@ ms.locfileid: "38006370"
 POST /app/calls/{id}/answer
 POST /communications/calls/{id}/answer
 ```
-> **Примечание:** `/app` Путь является устаревшим. Перемотка вперед, используйте `/communications` путь.
+> **Примечание.** Путь `/app` является устаревшим. В дальнейшем используйте путь `/communications`.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
@@ -56,7 +56,7 @@ POST /communications/calls/{id}/answer
 |акцептедмодалитиес|Коллекция String                         |Список принимаемых модальности. Возможные значения: `audio`, `video`,. `videoBasedScreenSharing` Необходимо для ответа на вызов. |
 |mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) или [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |Настройка мультимедиа. Потребоваться                                                                                                            |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Этот метод возвращает `202 Accepted` код отклика.
 
 ## <a name="examples"></a>Примеры
@@ -190,7 +190,7 @@ Content-Type: application/json
 ##### <a name="request"></a>Запросить
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "call-answer-service-hosted-media"
 }-->
 ```http
@@ -344,8 +344,10 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a>Запросить
+##### <a name="request"></a>Запрос
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-answer-app-hosted-media"
@@ -363,8 +365,22 @@ Content-Type: application/json
   }
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/call-answer-app-hosted-media-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a>Ответ
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-answer-app-hosted-media-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/call-answer-app-hosted-media-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+##### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",
