@@ -8983,6 +8983,14 @@
                   href: api/serviceprincipal-removepassword.md
                 - name: Проверка объектов Member
                   href: api/serviceprincipal-checkmemberobjects.md
+                - name: Создание учетных данных единого входа для пароля
+                  href: api/serviceprincipal-createpasswordsinglesignoncredentials.md
+                - name: Получение учетных данных единого входа для пароля
+                  href: api/serviceprincipal-getpasswordsinglesignoncredentials.md
+                - name: Обновление учетных данных единого входа для пароля
+                  href: api/serviceprincipal-updatepasswordsinglesignoncredentials.md
+                - name: Удаление учетных данных единого входа для пароля
+                  href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
             - name: Подписанная единица SKU
               href: resources/subscribedsku.md
               items:
@@ -9668,7 +9676,7 @@
                 - name: Действия в Yammer
                   href: resources/yammer-activity-reports.md
                   items:
-                    - name: Получение сведений о пользователях
+                    - name: Получение сведений о пользователе
                       href: api/reportroot-getyammeractivityuserdetail.md
                     - name: Получение количества действий
                       href: api/reportroot-getyammeractivitycounts.md
@@ -10299,7 +10307,7 @@
                   href: api/conversationmember-delete.md
                 - name: Обновление роли участника в канале
                   href: api/conversationmember-update.md
-            - name: Чат
+            - name: С помощью чата
               href: resources/chat.md
               items:
                 - name: Список чатов
