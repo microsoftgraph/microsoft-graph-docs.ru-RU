@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1e0295e9874be0150ee33a30bdf06d0719866d61
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 5169d2b2c54fc8055effcf1984c6279168a84072
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994465"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38657874"
 ---
 # <a name="add-member"></a>Добавление участника
 
@@ -21,16 +21,16 @@ ms.locfileid: "37994465"
 Вы можете добавлять пользователей или другие группы. 
 
 > [!Important]
-> Вы можете добавлять пользователей только в группы безопасности и Office 365, управляемые через облако.
+> Вы можете добавлять пользователей только в группы безопасности и группы Office 365, управляемые через облако.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Граупмембер. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Group.ReadWrite.All, Directory.ReadWrite.All |
+|Приложение | Граупмембер. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

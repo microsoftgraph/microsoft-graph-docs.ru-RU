@@ -1,50 +1,35 @@
 ---
-title: Использование API защиты удостоверений Azure AD (Предварительная версия)
-description: С помощью Microsoft Graph можно запросить ресурс Идентитирискевент для каждого типа события риска, обнаруженного службой Azure AD Identity Protection. Эти события доступны для пользователей с помощью Azure AD Premium P2. Подмножество событий доступно для пользователей с помощью Azure AD Premium P1.
+title: Использование API-интерфейсов для защиты удостоверений Azure AD (Предварительная версия)
+description: С помощью Microsoft Graph вы можете запросить API защиты удостоверений для получения сведений о риске, обнаруженном службой Azure AD Identity Protection.
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: d43f3a54e8ec8aebd0c8018cea9986c0c161a073
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9ba2dc0a19944f373032619390f9cebaf32dc0e3
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005823"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38658879"
 ---
 # <a name="use-the-azure-ad-identity-protection-api-preview"></a>Использование API защиты удостоверений Azure AD (Предварительная версия)
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-С помощью Microsoft Graph можно запросить ресурс [идентитирискевент](identityriskevent.md) для каждого типа события риска, обнаруженного службой [Azure AD Identity Protection](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection). Эти события доступны для пользователей с помощью Azure AD Premium P2. Подмножество событий доступно для пользователей с помощью Azure AD Premium P1.
+Защита удостоверений — это средство, которое позволяет организациям находить, анализировать и устранять риски на основе удостоверений в своей среде. С помощью следующих API Microsoft Graph можно запрашивать риски, обнаруженные в целях защиты идентификации. 
 
-* [входы с анонимными IP-адресами](anonymousipriskevent.md)
-* [входы с зараженных вредоносными программами устройств](malwareriskevent.md)
-* [невозможность перемещаться к необычным расположениям](impossibletravelriskevent.md)
-* [Пользователи с потерянными учетными данными](leakedcredentialsriskevent.md)
-* [входы из подозрительных IP-адресов](suspiciousipriskevent.md)
-* [входы из незнакомых расположений](unfamiliarlocationriskevent.md)
+* [рискдетектион](riskdetection.md) — запросить Microsoft Graph, чтобы получить список обнаруженных рисков и связанных с входом рисков, а также связанные сведения об обнаружении. Обнаружение рисков в службе идентификации Azure AD включает все определенные подозрительные действия, связанные с учетными записями пользователей в каталоге.
 
-Чтобы получить эти события и связанные сведения, используйте следующие операции:
+* [riskyUsers](riskyuser.md) — запрос Microsoft Graph для получения сведений о пользователях, которые были признаны опасными для защиты удостоверений. Риск для пользователей представляет вероятность, с которой заданный идентификатор или учетная запись скомпрометирована. Эти риски рассчитываются в автономном режиме с помощью внутренних и внешних источников системы анализа угроз Майкрософт, в том числе исследователей, специалистов по обеспечению безопасности, ИТ-специалистов, Teams корпорации Майкрософт и других надежных источников.
 
-| Метод           | Возвращаемый тип    |Описание|
-|:---------------|:--------|:----------|
-|[Список объектов identityRiskEvent](../api/identityriskevent-get.md) |[Идентитирискевент](identityriskevent.md)| Получение коллекции Идентитирискевент. |
-|[Получение объекта identityRiskEvent](../api/identityriskevent-get.md) |[Идентитирискевент](identityriskevent.md)| Получение объекта Идентитирискевент. |
-|[Список объектов anonymousIpRiskEvent](../api/anonymousipriskevent-get.md) |[Анонимаусиприскевент](anonymousipriskevent.md)| Получение коллекции Анонимаусиприскевент. |
-|[Получение объекта anonymousIpRiskEvent](../api/anonymousipriskevent-get.md) |[Анонимаусиприскевент](anonymousipriskevent.md)| Получение объекта Анонимаусиприскевент. |
-|[Список объектов impossibleTravelRiskEvent](../api/impossibletravelriskevent-get.md) |[Импоссиблетравелрискевент](impossibletravelriskevent.md)| Получение коллекции Импоссиблетравелрискевент. |
-|[Получение объекта impossibleTravelRiskEvent](../api/impossibletravelriskevent-get.md) |[Импоссиблетравелрискевент](impossibletravelriskevent.md)| Получение объекта Импоссиблетравелрискевент. |
-|[Список объектов leakedCredentialsRiskEvent](../api/leakedcredentialsriskevent-get.md) |[Леакедкредентиалсрискевент](leakedcredentialsriskevent.md)| Получение коллекции Леакедкредентиалсрискевент. |
-|[Получение объекта leakedCredentialsRiskEvent](../api/leakedcredentialsriskevent-get.md) |[Леакедкредентиалсрискевент](leakedcredentialsriskevent.md)| Получение объекта Леакедкредентиалсрискевент. |
-|[Список объектов malwareRiskEvent](../api/malwareriskevent-get.md) |[Малварерискевент](malwareriskevent.md)| Получение коллекции Малварерискевент. |
-|[Получение объекта malwareRiskEvent](../api/malwareriskevent-get.md) |[Малварерискевент](malwareriskevent.md)| Получение объекта Малварерискевент. |
-|[Список объектов suspiciousIpRiskEvent](../api/suspiciousipriskevent-get.md) |[СуспиЦиаусиприскевент](suspiciousipriskevent.md)| Получение коллекции СуспиЦиаусиприскевент. |
-|[Получение объекта suspiciousIpRiskEvent](../api/suspiciousipriskevent-get.md) |[СуспиЦиаусиприскевент](suspiciousipriskevent.md)| Получение объекта СуспиЦиаусиприскевент. |
-|[Список объектов unfamiliarLocationRiskEvent](../api/unfamiliarlocationriskevent-get.md) |[Унфамилиарлокатионрискевент](unfamiliarlocationriskevent.md)| Получение коллекции Унфамилиарлокатионрискевент. |
-|[Получение объекта unfamiliarLocationRiskEvent](../api/unfamiliarlocationriskevent-get.md) |[Унфамилиарлокатионрискевент](unfamiliarlocationriskevent.md)| Получение объекта Унфамилиарлокатионрискевент. |
+* [Signing](signin.md) — запрос Microsoft Graph для получения сведений о входах Azure AD с определенными свойствами, связанными с состоянием риска, подробным описанием и уровнем. Риск входа представляет вероятность того, что владелец удостоверения не уполномочен на данный запрос проверки подлинности. Эти риски можно рассчитать в режиме реального времени или в автономном режиме с помощью внутренних и внешних источников интеллектуального анализа данных Майкрософт, в том числе исследователей, специалистов по обеспечению безопасности, ИТ-специалистов, Teams корпорации Майкрософт и других надежных источников.
 
-# <a name="see-also"></a>См. также
+* [идентитирискевентс](identityriskevent.md) — запросить Microsoft Graph, чтобы получить список обнаруженных и связанных сведений о рисках. Этот API является устаревшим; Вместо этого рекомендуется использовать **рискдетектионс** .
 
-* [Сведения о защите удостоверений Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection)
-* [Начало работы с защитой удостоверений Azure Active Directory и Microsoft Graph](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection-graph-getting-started)
+>[!NOTE]
+>API **идентитирискевентс** устарел и не возвращает данные на 10 января 2020. Дополнительные сведения см. [в разделе устаревшее API идентитирискевентс](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
+
+## <a name="see-also"></a>См. также
+
+* [Сведения о защите удостоверений Azure Active Directory](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
+* [Начало работы с защитой удостоверений Azure Active Directory и Microsoft Graph](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-graph-api)
