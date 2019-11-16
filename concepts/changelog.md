@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 4bc10422734c73cf32453a5cbf7b6a9be8692aa9
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: 7da78622ae08b2e2b356eb72fdc2494e14155c42
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38303141"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38656601"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -23,7 +23,6 @@ ms.locfileid: "38303141"
 | **Тип изменения** | **Версия** | **Описание**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Дополнение        | Бета  | Добавлена возможность [обновления помещения или списка помещений](/graph/api/resources/place-get?view=graph-rest-beta).|
-
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Устройства и приложения (Microsoft Intune)
 
@@ -61,7 +60,6 @@ ms.locfileid: "38303141"
 |Изменение|Бета|Изменены следующие свойства сложного типа [credentialSingleSignOnExtension](/graph/api/resources/intune-deviceconfig-credentialsinglesignonextension?view=graph-rest-beta):<br/>**teamIdentifier** больше не обязательно указывать<br/>|
 |Дополнение|Бета|Добавлены свойства **companyPortalBlockedActions**, **showAzureADEnterpriseApps** и **showOfficeWebApps** для сложного типа [intuneBrand](/graph/api/resources/intune-onboarding-intunebrand?view=graph-rest-beta)|
 
-
 ### <a name="education"></a>Образование
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
@@ -75,6 +73,9 @@ ms.locfileid: "38303141"
 | Дополнение | 1.0 | Добавлен новый тип объекта: [application](/graph/resources/application?view=graph-rest-v1.0).|
 | Дополнение | 1.0 | Добавлены новые делегированные разрешения: [Application.Read.All](/graph/permissions-reference#application-resource-permissions), [Application.ReadWrite.All](/graph/permissions-reference#application-resource-permissions).|
 | Дополнение | 1.0 | Добавлено новое разрешение приложений [Application.Read.All](/graph/permissions-reference#application-resource-permissions).|
+| Дополнение | 1.0 | Добавлены новые разрешения приложений и делегированные разрешения  [GroupMember.Read.All](https://docs.microsoft.com/graph/permissions-reference#group-permissions)  и  [GroupMember.ReadWrite.All](https://docs.microsoft.com/graph/permissions-reference#group-permissions)  для получения и обновления ресурса  [API группы](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-1.0) .
+| Дополнение | 1.0 | Добавлено новое разрешение приложений [Group.Create](https://docs.microsoft.com/graph/permissions-reference#group-permissions) для создания ресурса [API группы](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-1.0) .
+| Дополнение | Бета-версия и версия 1.0 | Добавлено свойство **creationType** для ресурса [user](/graph/resources/user?view=graph-rest-v1.0).|
 
 ### <a name="people-and-workplace-intelligence"></a>Люди и рабочая аналитика
 
@@ -393,6 +394,7 @@ ms.locfileid: "38303141"
 | Дополнение | Бета-версия | Добавлен ресурс [objectIdentity](/graph/api/resources/objectIdentity?view=graph-rest-beta), представляющий удостоверение, использованное для входа в учетную запись пользователя. |
 | Дополнение | Бета-версия | Добавлено свойство **synchronizationJobSettings** для ресурса [synchronizationJob](/graph/api/resources/synchronization-synchronizationjob?view=graph-rest-beta).|
 | Дополнение | Бета-версия | Добавлены новые возможные значения для свойства **reason** в ресурсе [synchronizationQuarantine](/graph/api/resources/synchronization-quarantine?view=graph-rest-beta).|
+| Дополнение | Бета-версия | Добавлена возможность управления паролем единого входа для [объекта servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta). |
 
 ### <a name="mail-outlook"></a>Почта (Outlook)
 
@@ -1022,7 +1024,7 @@ ms.locfileid: "38303141"
 |Изменение | Бета | Изменен тип данных для следующих параметров [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-beta): <br>**attendees**: с **attendeeBase** на [attendeeDataModel](/graph/api/resources/attendeedatamodel?view=graph-rest-beta) <br>**locationConstraint**: с **locationConstraint** на [locationConstraints](/graph/api/resources/locationconstraints?view=graph-rest-beta) <br> **timeConstraint**: с **timeConstraint** на [findMeetingTimesTimeConstraints](/graph/api/resources/findmeetingtimestimeconstraints?view=graph-rest-beta)|
 |Изменение | Бета | Изменен возвращаемый тип **findMeetingTimes** с **meetingTimeSuggestionsResult** чтобы [findMeetingTimesResponse](/graph/api/resources/findmeetingtimesresponse?view=graph-rest-beta) |
 |Изменение | Бета | Изменены полезные данные ответа **findMeetingTimes**, чтобы исключить **тип** каждого присутствующего, который указывает, является ли участник обязательным, необязательным или представляет ресурс |
-|Изменение | Бета | Изменен базовый тип [locationConstraintItem](/graph/api/resources/locationconstraintitem?view=graph-rest-beta) с [location](/graph/api/resources/location?view=graph-rest-beta) на [locationDataModel](/graph/api/resources/locationdatamodel?view=graph-rest-beta) |
+|Изменение | бета | Изменен базовый тип [locationConstraintItem](/graph/api/resources/locationconstraintitem?view=graph-rest-beta) с [location](/graph/api/resources/location?view=graph-rest-beta) на [locationDataModel](/graph/api/resources/locationdatamodel?view=graph-rest-beta) |
 |Изменение | Бета | Изменены типы данных следующих параметров [meetingTimeSuggestion](/graph/api/resources/meetingtimesuggestion?view=graph-rest-beta): <br> **attendeeAvailability**: с коллекции **attendeeAvailability** на коллекцию [attendeeAvailabilityDataModel](/graph/api/resources/attendeeavailabilitydatamodel?view=graph-rest-beta) <br> **locations**: с коллекции [location](/graph/api/resources/location?view=graph-rest-beta) на коллекцию [locationDataModel](/graph/api/resources/locationdatamodel?view=graph-rest-beta) <br> **meetingTimeSlot**: с[timeSlot](/graph/api/resources/timeslot?view=graph-rest-beta) на [meetingTimeSlotDataModel](/graph/api/resources/meetingtimeslotdatamodel?view=graph-rest-beta) <br> **organizerAvailability**: с **freeBusyStatus** на **availabilityStatus** |
 |Дополнение | Бета | Новые сложные типы: <br> [attendeeAvailabilityDataModel](/graph/api/resources/attendeeavailabilitydatamodel?view=graph-rest-beta) <br> [attendeeDataModel](/graph/api/resources/attendeedatamodel?view=graph-rest-beta) <br> [findMeetingTimesResponse](/graph/api/resources/findmeetingtimesresponse?view=graph-rest-beta) <br> [findMeetingTimesTimeConstraints](/graph/api/resources/findmeetingtimestimeconstraints?view=graph-rest-beta) <br> [locationConstraints](/graph/api/resources/locationconstraints?view=graph-rest-beta) <br> [locationDataModel](/graph/api/resources/locationdatamodel?view=graph-rest-beta) <br> [meetingTimeSlotDataModel](/graph/api/resources/meetingtimeslotdatamodel?view=graph-rest-beta) <br> [postalAddress](/graph/api/resources/postaladdress?view=graph-rest-beta) <br> [searchWindowTimeSlot](/graph/api/resources/searchwindowtimeslot?view=graph-rest-beta)|
 |Дополнение | Бета | Новые перечисления: <br> **addressType** <br> **availabilityStatus** |

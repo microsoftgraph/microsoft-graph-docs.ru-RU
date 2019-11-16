@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 7d7d48b807c484bcdc237bf78124fec10ce0a54f
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: f1fe26cf74a99e0b94bdb8adf9c0ae36d24621c2
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38303148"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38656496"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -33,6 +33,9 @@ ms.locfileid: "38303148"
 
 ### <a name="devices-and-apps"></a>Устройства и приложения
 Обновления Intune за [ноябрь](changelog.md#november-2019)
+
+### <a name="notifications"></a>Уведомления
+Можно использовать новые компактные [веб-SDK](https://aka.ms/GNSDK) уведомлений вместо [SDK Project Rome](https://github.com/Microsoft/project-rome), чтобы воспользоваться улучшенной моделью проверки подлинности и поддержкой веб-приложений с push-уведомлениями. 
 
 ### <a name="people-and-workplace-intelligence"></a>Люди и рабочая аналитика
 
@@ -109,7 +112,7 @@ ms.locfileid: "38303148"
 - [Создание и отправка уведомлений](/graph/api/user-post-notifications?view=graph-rest-beta) всем клиентам приложения во всех конечных точках устройств, где пользователи могли войти в систему, без необходимости управлять разрешениями, делегированными пользователями.
 - [Целевые конечные точки политики](/graph/api/resources/targetpolicyendpoints?view=graph-rest-beta) в [уведомлениях](/graph/api/resources/notification?view=graph-rest-beta) пользователей позволяют целенаправленно управлять уведомлениями на платформах Windows, iOS, Android или WebPush.
 - Можно указать [политику отката](/graph/api/resources/fallbackpolicy?view=graph-rest-beta) для уведомлений для конечных точек iOS, чтобы отправлять высокоприоритетные необработанные уведомления, доставка которых на устройства другими способами может быть невозможной из-за ограничений, действующих для конкретной платформы, например, из-за использования режима экономии заряда аккумулятора.
-- Можно использовать новые компактные SDK уведомлений для Windows, iOS, Android и JavaScript вместо [SDK Project Rome](https://github.com/Microsoft/project-rome), чтобы воспользоваться улучшенной моделью проверки подлинности и поддержкой веб-приложений с push-уведомлениями.
+
  
 ### <a name="powershell-sdk"></a>Пакет SDK для PowerShell 
 Разработчики и ИТ-специалисты могут обратить внимание на выпуск [пакета SDK Microsoft Graph для Powershell](https://github.com/microsoftgraph/msgraph-sdk-powershell). Этот пакет будет формировать модули, содержащие командлеты для создания запросов API REST Microsoft.

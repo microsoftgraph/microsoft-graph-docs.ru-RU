@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет одну конечну�
 author: dkershaw10
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 856f427e864eb4fa6a16c1ea758288523ae23c52
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: e725b3951d40100a442f89bc2a4f5444c1ed2db0
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969768"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38656545"
 ---
 # <a name="add-custom-data-to-resources-using-extensions"></a>Добавление пользовательских данных в ресурсы с помощью расширений
 
@@ -116,7 +116,7 @@ Microsoft Graph предоставляет одну конечную точку 
 
 ### <a name="azure-ad-directory-schema-extensions"></a>Расширения схемы каталога Azure AD
 
-Azure AD поддерживает схожий тип расширения, известный как [расширения схемы каталога](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), для нескольких ресурсов [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0). Хотя для создания определений расширений схемы каталога и управления ими необходимо использовать [API Graph Azure AD](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog), вы можете использовать API Microsoft Graph для добавления, получения, обновления и удаления _данных_ в свойствах этих расширений.
+Azure AD поддерживает схожий тип расширения, известный как [расширения схемы каталога](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), для нескольких ресурсов [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0). Вы можете использовать API Microsoft Graph для управления [определениями свойств расширений](/graph/api/resources/extensionproperty?view=graph-rest-1.0) и для добавления, получения, обновления и удаления _данных_ в свойствах этих расширений.
 
 ## <a name="permissions"></a>Разрешения
 
