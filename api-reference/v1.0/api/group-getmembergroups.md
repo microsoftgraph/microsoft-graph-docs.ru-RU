@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b37ac8f14284de25c95862800a692ca52e29e216
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c1f02ad496761c785b384dd949f79212f3fc9f21
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337365"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38658844"
 ---
 # <a name="group-getmembergroups"></a>group: getMemberGroups
 
@@ -24,9 +24,9 @@ ms.locfileid: "36337365"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (рабочая или учебная учетная запись)     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                              |
-| Для приложений                            | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                             |
+| Для приложения                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                             |
 
 
 ## <a name="http-request"></a>HTTP-запрос

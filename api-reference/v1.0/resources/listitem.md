@@ -2,20 +2,20 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 title: Ресурс listItem
-description: Этот ресурс представляет элемент объекта list в SharePoint.
+description: Представляет элемент объекта list в SharePoint.
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 883e7257b55826abf5cf60197c7854161f568fa5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 49de3376064728b3bdf3f1657dd76bc197447410
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036472"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38657483"
 ---
 # <a name="listitem-resource"></a>Ресурс listItem
 
-Этот ресурс представляет элемент объекта **[list][]** в SharePoint.
+Представляет элемент объекта **[list][]** в SharePoint.
 Значения столбцов в списке доступны через словарь `fieldValueSet`.
 
 ## <a name="methods"></a>Методы
@@ -25,7 +25,7 @@ ms.locfileid: "36036472"
 
 | Метод                    | Возвращаемый тип | Описание
 |:-------------------------------|:-------------------|:------
-| [Получение][]                   | lisItem| Получение элемента списка.
+| [получение][];                   | listItem| Получение элемента списка.
 | [Получение значений столбцов][Получение]       | listItem | Получение значений столбцов из ресурса listItem.
 | [Получение аналитики][]              | [itemAnalytics][]| Получение аналитических данных для ресурса. 
 | [Получение действий по интервалу][] | [itemActivityStat][]| Получение коллекции объектов itemActivityStat в пределах указанного интервала времени.

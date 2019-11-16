@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 90c524ecb447b6020e350ae7c8879c939d2421cd
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 39bfad874a41d1c59bf7464afe7c398f84bd103c
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337561"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38658851"
 ---
 # <a name="group-checkmembergroups"></a>group: checkMemberGroups
 
@@ -24,9 +24,9 @@ ms.locfileid: "36337561"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (рабочая или учебная учетная запись)     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                              |
-| Приложение                            | Group.Read.All, Directory.Read.All. Directory.ReadWrite.All                               |
+| Приложение                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All. Directory.ReadWrite.All                               |
 
 
 
