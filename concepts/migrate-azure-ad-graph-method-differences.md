@@ -4,22 +4,22 @@ description: Описываются различия методов между A
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 52d7a83924424020a509a4add6f6e7d3dbf08ef4
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 00649e4f55a8bfcfd5354d2a75793447e3686109
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37934755"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38656531"
 ---
 # <a name="method-differences-between-azure-ad-and-microsoft-graph"></a>Различия в методах между Azure AD и Microsoft Graph
 
 Эта статья входит в *Шаг 1: Ознакомьтесь с различиями* в API [процесса переноса приложений](migrate-azure-ad-graph-planning-checklist.md).
 
-Кроме того, изменилось несколько методов Azure AD Graph.  Если метод не отображается в этом списке, он уже доступен в [версии 1.0](/graph/api/overview?view=graph-rest-1.0) для Microsoft Graph, в котором используется то же имя, что и в Azure AD Graph.
+Кроме того, изменилось несколько методов Azure AD Graph.  Если метод **не** отображается в этом списке, он уже доступен в [версии 1.0](/graph/api/overview?view=graph-rest-1.0) для Microsoft Graph, в котором используется то же имя, что и в Azure AD Graph.
 
-|Azure AD Graph <br>метод (v 1.6) |Microsoft Graph<br>(ресурс/метод)|Комментарии|
+|Azure AD Graph <br>метод (v 1.6) |Microsoft Graph<br>(ресурс/метод)|Comments|
 |---|---|---|
-| жетаваилабликстенсионпропертиес | бета-версия _не запланирована_ <br> v 1.0 — _не запланировано_ | В настоящее время не запланировано; можно повторно посетить на основе запроса. |
+| жетаваилабликстенсионпропертиес | бета-версия _недоступна_ <br> Версия 1.0 — _недоступна_ |  |
 | жетобжектсбйобжектид | бета&nbsp;-&nbsp;-версия каталога/жетбидс <br> v 1.0-Directory/Жетбидс | |
 | invalidateAllRefreshTokens | бета-Ревокесигнинсессионс <br> Версия 1.0 — Ревокесигнинсессионс | |
 | исмембероф | бета-версия _не запланирована_ <br> v 1.0 — _не запланировано_ | Вместо этого используйте Чеккмемберграупс. |

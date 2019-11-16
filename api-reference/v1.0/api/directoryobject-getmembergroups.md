@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 17e23b13f432144a0c70d90b43bfb717581747a1
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1656a986ac882684fd5928470f4dc00819191bf5
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371847"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38658732"
 ---
 # <a name="get-member-groups"></a>Вывод групп элементов
 
@@ -21,14 +21,14 @@ ms.locfileid: "36371847"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User. ReadBasic. ALL и Group. Read. ALL, User. Read. ALL и Group. Read. ALL, Directory. Read. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | User. ReadBasic. ALL и Граупмембер. Read. ALL, User. Read. ALL и Граупмембер. Read. ALL, User. ReadBasic. ALL и Group. Read. ALL, User. Read. ALL и Group. Read. ALL, Directory. Read. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | User.Read.All и Group.Read.All, Directory.Read.All |
+|Приложение | User. Read. ALL и Граупмембер. Read. ALL, User. Read. ALL и Group. Read. ALL, Directory. Read. ALL |
 
 Используйте приведенные ниже рекомендации по сценариям, чтобы определить, какие типы разрешений следует использовать:
-- Используйте User. Read и Group. Read. ALL для получения сведений о членстве в группах для вошедшего пользователя.
-- Используйте User. ReadBasic. ALL и Group. Read. ALL или User. Read. ALL и Group. Read. ALL, чтобы получать сведения о членстве в группах для любого пользователя.
-- Использование разрешения Group. Read. ALL для получения сведений о членстве в группах для группы.
+- Используйте User. Read и Граупмембер. Read. ALL или User. Read. ALL или User. Read и Group. Read. ALL для получения сведений о членстве в группах для вошедшего пользователя.
+- Используйте User. ReadBasic. ALL и Граупмембер. Read. ALL, User. Read. ALL и Граупмембер. Read. ALL, User. ReadBasic. ALL и Group. Read. ALL или User. Read. ALL и Group. Read. ALL, чтобы получить сведения о членстве в группах для любого пользователя.
+- Используйте Граупмембер. Read. ALL или Group. Read. ALL для получения сведений о членстве в группах для группы.
 - Используйте разрешение Directory. Read. ALL для получения сведений о членстве в группах для объекта каталога.
 
 
@@ -46,7 +46,7 @@ POST /directoryObjects/{id}/getMemberGroups
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type   | string  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -83,7 +83,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-getmembergroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-getmembergroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
