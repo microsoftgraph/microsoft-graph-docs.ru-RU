@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0e94f0442f1c2f7f1a1118f07a4e7a86407eee94
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 5a26004cf20a5f8c5c032eeade8f657fdf8bd93c
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939118"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703942"
 ---
 # <a name="acl-resource-type"></a>Тип ресурса ACL
 
@@ -18,12 +18,14 @@ ms.locfileid: "37939118"
 
 Запись управления доступом для элемента, индексируемого [Екстерналконнектион](externalconnection.md)поиска Microsoft Search.
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## <a name="properties"></a>Свойства
 
 | Свойство       | Тип   | Описание                                        |
 |:---------------|:-------|:---------------------------------------------------|
-| акцесстипе     | Строка | Доступ, назначенный удостоверению. Возможные значения: `grant`, `deny`. |
-| идентитисаурце | Строка | Необходимо указать значение `Azure Active Directory`.           |
+| акцесстипе     | String | Доступ, назначенный удостоверению. Возможные значения: `grant`, `deny`. |
+| идентитисаурце | String | Необходимо указать значение `Azure Active Directory`.           |
 | type           | String | Тип удостоверения. Возможные значения: `user`, `group`, `everyone`, `everyoneExceptGuests`. |
 | value          | String | Идентификатор Azure Active Directory. Если `type` задано `group`значение `value` `user` или, для пользователя или группы задан идентификатор объекта. Если `type` задано `everyoneExceptGuests`значение `value` `everyone` или, в качестве идентификатора клиента для клиента Azure Active Directory. |
 

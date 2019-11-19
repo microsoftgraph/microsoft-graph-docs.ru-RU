@@ -4,16 +4,18 @@ description: API Microsoft Search позволяет приложениям ис
 author: knightsu
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 985da47e5a7b96cead416e8e5cda32dae0357adb
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: d5dc6357bc6250b3964722114bd242e66871869a
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38303134"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703935"
 ---
 # <a name="search-messages"></a>Поиск сообщений
 
 API Microsoft Search позволяет приложениям искать информацию в сообщениях электронной почты, получать сообщения, Ранжированные по релевантности, и отображать выделенный интерфейс для поиска. Поиск применяется к тексту и вложениям сообщений в собственном почтовом ящике пользователя.
+
+[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 Поисковый запрос может включать в себя [фильтры](https://support.office.com/article/learn-to-narrow-your-search-criteria-for-better-searches-in-outlook-d824d1e9-a255-4c8a-8553-276fb895a8da) , вводимые пользователями в текстовое поле **поиска** в Outlook.
 
@@ -32,116 +34,125 @@ API Microsoft Search позволяет приложениям искать ин
 #### <a name="request"></a>Запрос
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
-Content-Type: application/json
+POST https://graph.microsoft.com/beta/search/query
+Content-Type: application/json
 ```
 
 ```json
 {
-  "requests": [{
-      "entityTypes": ["microsoft.graph.message"],
-      "query": {
-        "query_string": {
-          "query": "contoso"
-        }
-      },
-      "from": 0,
-      "size": 25
-    }
-  ]
+  "requests": [
+    {
+      "entityTypes": [
+        "microsoft.graph.message"
+      ],
+      "query": {
+        "query_string": {
+          "query": "contoso"
+        }
+      },
+      "from": 0,
+      "size": 25
+    }
+  ]
 }
 ```
 
-#### <a name="response"></a>Отклик 
+#### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа, содержащего одно сообщение, которое соответствует заданному критерию поиска. 
+Ниже приведен пример ответа, содержащего одно сообщение, которое соответствует заданному критерию поиска.
 
 ```json
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
-    "value": [
-        {
-            "searchTerms": [
-                "contoso"
-            ],
-            "hitsContainers": [
-                {
-                    "total": 1,
-                    "moreResultsAvailable": false,
-                    "hits": [
-                        {
-                            "_id": "ptWLQ4o6HYpQg8xmAAATzOzRAAA=",
-                            "_score": 1,
-                            "_sortField": "DateTime",
-                            "_summary": "Here is a summary of your messages from last week",
-                            "_source": {
-                                "@odata.type": "#microsoft.graph.message",
-                                "createdDateTime": "2019-10-07T10:00:08Z",
-                                "lastModifiedDateTime": "2019-10-07T10:00:11Z",
-                                "receivedDateTime": "2019-10-07T10:00:09Z",
-                                "sentDateTime": "2019-10-07T09:59:52Z",
-                                "hasAttachments": false,
-                                "subject": "Weekly digest: Office 365 changes",
-                                "bodyPreview": "Here is a summary of your messages from last week -   New Feature: Live captions in English-US a",
-                                "importance": "normal",
-                                "replyTo": [
-                                    {
-                                        "emailAddress": {
-                                            "name": "Goncalo Torres"
-                                        }
-                                    }
-                                ],
-                                "sender": {
-                                    "emailAddress": {
-                                        "name": "Office365 Message Center",
-                                        "address": "gtorres@contoso.com"
-                                    }
-                                },
-                                "from": {
-                                    "emailAddress": {
-                                        "name": "Office365 Message Center",
-                                        "address": "gtorres@contoso.com",
-                                    }
-                                }
-                            }
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "value": [
+    {
+      "searchTerms": [
+        "contoso"
+      ],
+      "hitsContainers": [
+        {
+          "total": 1,
+          "moreResultsAvailable": false,
+          "hits": [
+            {
+              "_id": "ptWLQ4o6HYpQg8xmAAATzOzRAAA=",
+              "_score": 1,
+              "_sortField": "DateTime",
+              "_summary": "Here is a summary of your messages from last week",
+              "_source": {
+                "@odata.type": "#microsoft.graph.message",
+                "createdDateTime": "2019-10-07T10:00:08Z",
+                "lastModifiedDateTime": "2019-10-07T10:00:11Z",
+                "receivedDateTime": "2019-10-07T10:00:09Z",
+                "sentDateTime": "2019-10-07T09:59:52Z",
+                "hasAttachments": false,
+                "subject": "Weekly digest: Office 365 changes",
+                "bodyPreview": "Here is a summary of your messages from last week -   New Feature: Live captions in English-US a",
+                "importance": "normal",
+                "replyTo": [
+                  {
+                    "emailAddress": {
+                      "name": "Goncalo Torres"
+                    }
+                  }
+                ],
+                "sender": {
+                  "emailAddress": {
+                    "name": "Office365 Message Center",
+                    "address": "gtorres@contoso.com"
+                  }
+                },
+                "from": {
+                  "emailAddress": {
+                    "name": "Office365 Message Center",
+                    "address": "gtorres@contoso.com"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
 ```
 
 ### <a name="example-2-search-top-results-messages"></a>Пример 2. сообщения о главных результатах поиска
-В следующем примере используется тот же поисковый запрос, что и в [примере 1](#example-1), а результаты сортируются по релевантности. 
 
+В следующем примере используется тот же поисковый запрос, что и в [примере 1](#example-1), а результаты сортируются по релевантности.
+
+<!-- markdownlint-disable MD024 -->
 #### <a name="request"></a>Запрос
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
-Content-Type: application/json
+POST https://graph.microsoft.com/beta/search/query
+Content-Type: application/json
 ```
 
 ```json
 {
-    "requests": [{
-        "entityTypes": ["microsoft.graph.message"],
-        "query": {
-            "query_string": {
-                "query": "contoso"
-            }
-        },
-        "from": 0,
-        "size": 15,
-        "enableTopResults": true
-    }]
+  "requests": [
+    {
+      "entityTypes": [
+        "microsoft.graph.message"
+      ],
+      "query": {
+        "query_string": {
+          "query": "contoso"
+        }
+      },
+      "from": 0,
+      "size": 15,
+      "enableTopResults": true
+    }
+  ]
 }
 ```
 
 ## <a name="known-limitations"></a>Известные ограничения
 
-- Доступ к почтовому ящику пользователя можно получить только. Поиск делегированного почтового ящика не поддерживается 
+- Доступ к почтовому ящику пользователя можно получить только. Поиск делегированного почтового ящика не поддерживается
 
 - Для сообщений свойство **Total** объекта [сеарчхитсконтаинер](/graph/api/resources/searchhitscontainer?view=graph-rest-beta) содержит количество результатов на странице, а не общее число результатов поиска.
 

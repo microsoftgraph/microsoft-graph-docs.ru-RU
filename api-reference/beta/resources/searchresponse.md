@@ -5,18 +5,20 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 7e68eae7c31486646c4b3d135881fd04fa8c7222
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 6b433e5aba652a9f68d017975e0651edac4e2ffb
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938760"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703997"
 ---
 # <a name="searchresponse-resource-type"></a>Тип ресурса Сеарчреспонсе
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Сеарчреспонсе содержит результаты из поискового запроса.
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="properties"></a>Свойства
 

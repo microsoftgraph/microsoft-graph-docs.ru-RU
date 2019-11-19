@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 7bc36dc49a944de4a12decbf3b0b77a3c203eb21
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 0bb960156a6c8f3a407dbd0691cdbed32e03693d
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938718"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703914"
 ---
 # <a name="searchhitscontainer-resource-type"></a>Тип ресурса Сеарчхитсконтаинер
 
@@ -18,12 +18,14 @@ ms.locfileid: "37938718"
 
 Представляет список результатов поиска.
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |успешных|Коллекция [сеарчхит](searchhit.md)|Енкасулате результаты поиска.|
-|морересултсаваилабле|Логический|Предоставляет сведения, если доступны дополнительные результаты. В этом случае можно увеличить смещение "от" и "до".|
+|морересултсаваилабле|Логическое|Предоставляет сведения, если доступны дополнительные результаты. В этом случае можно увеличить смещение "от" и "до".|
 |total|Int32|Общее число результатов. Обратите внимание, что это не количество результатов на странице, а общее количество результатов, удовлетворяющих запросу.|
 
 ## <a name="json-representation"></a>Представление JSON

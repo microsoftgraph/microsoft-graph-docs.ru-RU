@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 8bd5d47f444d7054aecbf7b0a63e57643837a340
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 77c17345a6a9408a8208f73f03dd98033f2b6a36
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938788"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704138"
 ---
 # <a name="schema-resource-type"></a>Тип ресурса схемы
 
@@ -18,18 +18,20 @@ ms.locfileid: "37938788"
 
 Описывает тип контента и способ индексирования каждого свойства элементов в [подключении](externalconnection.md)Microsoft Search.
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## <a name="methods"></a>Методы
 
 | Метод                                                    | Возвращаемый тип                   | Описание |
 |:----------------------------------------------------------|:------------------------------|:--|
 | [Создание схемы](../api/externalconnection-post-schema.md) | Нет *или* [схема](schema.md) | Регистрация схемы подключения. |
-| [Получение схемы](../api/schema-get.md)                        | [схемы](schema.md)           | Чтение свойств объекта Schema. |
+| [Получение схемы](../api/schema-get.md)                        | [schema](schema.md)           | Чтение свойств объекта Schema. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип                               | Описание                |
 |:-----------|:-----------------------------------|:---------------------------|
-| baseType   | Строка                             | Возможные значения: `microsoft.graph.externalItem` и `microsoft.graph.externalFile`. Обязательный элемент. |
+| baseType   | String                             | Возможные значения: `microsoft.graph.externalItem` и `microsoft.graph.externalFile`. Обязательно. |
 | properties | Коллекция [свойств](property.md) | Свойства, заданные для элементов в подключении. Минимальное число свойств — 1, максимальное — 64. Является обязательным `baseType` , если задано значение `microsoft.graph.externalItem`. Игнорируется `baseType` , если задано значение `microsoft.graph.externalFile`. |
 
 ## <a name="relationships"></a>Связи

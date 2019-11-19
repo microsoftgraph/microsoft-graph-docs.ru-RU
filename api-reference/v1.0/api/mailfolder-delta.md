@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a8b9fdb03a8f162857c22ff00187d9db717c76d1
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 0dd6392a8bee5ec4e38984d1a2cbd90126205eeb
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36728778"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702512"
 ---
 # <a name="mailfolder-delta"></a>mailFolder: delta
 
@@ -24,9 +24,9 @@ ms.locfileid: "36728778"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Mail.Read, Mail.ReadWrite    |
-|Делегированные (личная учетная запись Майкрософт) | Mail.Read, Mail.ReadWrite    |
-|Для приложений | Mail.Read, Mail.ReadWrite |
+|Делегированные (рабочая или учебная учетная запись) | Mail. ReadBasic, mail. Read, mail. ReadWrite    |
+|Делегированные (личная учетная запись Майкрософт) | Mail. ReadBasic, mail. Read, mail. ReadWrite    |
+|Для приложения | Mail. ReadBasic. ALL, mail. Read, mail. ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -51,8 +51,8 @@ GET /users/{id}/mailFolders/delta
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type  | строка  | application/json. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Content-Type  | string  | application/json. Обязательный. |
 | Prefer | string  | odata.maxpagesize={x}. Необязательный параметр. |
 
 ## <a name="response"></a>Отклик
@@ -128,7 +128,7 @@ Content-length: 254
 
 ### <a name="see-also"></a>См. также
 
-- [Отслеживание изменений данных Microsoft Graph с помощью разностного запроса](/graph/delta-query-overview)
+- [Отслеживание изменений данных Microsoft Graph с помощью запроса изменений](/graph/delta-query-overview)
 - [Получение добавочных изменений сообщений в папке](/graph/delta-query-messages)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

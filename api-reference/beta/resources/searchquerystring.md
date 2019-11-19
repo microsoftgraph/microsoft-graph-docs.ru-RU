@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 93142dcc672c5fee18a5f98d0988352e6c02cbd0
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 59809860bd2d0954ee8323f9c8e4fe982fb4faa7
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37936072"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703828"
 ---
 # <a name="searchquerystring-resource-type"></a>Тип ресурса Сеарчкуеристринг
 
@@ -18,11 +18,13 @@ ms.locfileid: "37936072"
 
 Условия поиска для запроса.
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|Запрос|Строка|Содержит фактические условия поиска запроса.|
+|Запрос|String|Содержит фактические условия поиска запроса.|
 
 ## <a name="json-representation"></a>Представление JSON
 

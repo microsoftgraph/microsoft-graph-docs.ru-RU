@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 22efb3e00689daad5c914d770a7cd0d41b3e35b7
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 7f19b9a14e1f6f4016e53a4a0ff1f62ae27e1cfd
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939133"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703758"
 ---
 # <a name="searchrequest-resource-type"></a>Тип ресурса Сеарчрекуест
 
@@ -18,13 +18,15 @@ ms.locfileid: "37939133"
 
 Запрос поиска, отправляемый конечной точке запроса. Он содержит тип сущностей, ожидаемых в ответе, базовые источники, параметры разбиения по страницам, запрос полей и фактический поисковый запрос.
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |stored_fields|Коллекция строк |Содержит поля, возвращаемые для объекта еарч _so урцес. Обратите внимание, что этот параметр применяется`externalItem` , только если в отклике указан тип EntityType =.|
-|контентсаурцес|Коллекция строк|Содержит подключение, которое необходимо задать. <br>В соответствии со следующим `/external/connections/connectionid` форматом `connectionid` : где Коннектионид был определен в администрировании соединителей <br> Note contentSource применяется только в том случае,`externalItem`если EntityType =. |
-|енаблетопресултс|Логический|Это запускает гибридную сортировку для сообщений: первые 3 сообщения наиболее актуальны<br> Это относится только к типу entityType =`message`.|
+|contentSources|Коллекция строк|Содержит подключение, которое необходимо задать. <br>В соответствии со следующим `/external/connections/connectionid` форматом `connectionid` : где Коннектионид был определен в администрировании соединителей <br> Note contentSource применяется только в том случае,`externalItem`если EntityType =. |
+|enableTopResults|Логическое|Это запускает гибридную сортировку для сообщений: первые 3 сообщения наиболее актуальны<br> Это относится только к типу entityType =`message`.|
 |entityTypes|Коллекция `entityType`| Возможные значения: `event`, `message`, `driveItem`, `externalFile`, `externalItem`.|
 |from|Int32|Задает смещение результатов поиска. Смещение 0 возвращает самый первый результат.|
 |Запрос|[searchQuery](searchquery.md)|Содержит термины запроса.|

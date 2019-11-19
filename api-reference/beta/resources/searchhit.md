@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 2ce5671933589f6066698df3e082390207474b49
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 787ecfeaefc7e5b140dc6338195af7d58e1a8ccd
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939868"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703921"
 ---
 # <a name="searchhit-resource-type"></a>Тип ресурса Сеарчхит
 
@@ -18,14 +18,16 @@ ms.locfileid: "37939868"
 
 Представляет один результат в списке результатов поиска.
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|_id|Строка|Внутренний идентификатор элемента.|
+|_id|String|Внутренний идентификатор элемента.|
 |_score|Int32|Оценка или порядок результатов.|
-|_sortField|Строка|Используемый порядок сортировки. Это может быть значение DateTime или релевантность.|
-|_summary|Строка|Сводка результатов (если доступна сводка).|
+|_sortField|String|Используемый порядок сортировки. Это может быть значение DateTime или релевантность.|
+|_summary|String|Сводка результатов (если доступна сводка).|
 |_source|[entity](entity.md)|Базовое представление результата поиска на диаграмме.|
 
 ## <a name="json-representation"></a>Представление JSON

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f42124a5b69027d16b2c8adc54d001fd8cf81c0e
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: 337d31a49dbbe170100ca7532b111a230a753076
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36460759"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702533"
 ---
 # <a name="accessreview-resource-type"></a>Тип ресурса Акцессревиев
 
@@ -47,7 +47,7 @@ ms.locfileid: "36460759"
 | `endDateTime`             |`DateTimeOffset`                                                | Дата и время окончания запланированного рассмотрения. Это должен быть по крайней мере один день позже даты начала.  Требуется при создании. |
 | `status`                  |`String`                                                        | В этом поле, доступном только для чтения, указывается состояние Акцессревиев. Типичные состояния: `Initializing`, `NotStarted` `Starting``InProgress` `Completing`,,,, `Completed`, `AutoReviewing`и `AutoReviewed`. |
 | `description`             |`String`                                                        | Описание, предоставленное создателем проверки доступа, которое будет отображаться для рецензентов. |
-| `businessFlowTemplateId`  |`String`                                                        | Идентификатор шаблона рабочего процесса. Требуется при создании. |
+| `businessFlowTemplateId`  |`String`                                                        | Идентификатор шаблона рабочего процесса. Требуется при создании.  Это значение чувствительно к регистру. |
 | `reviewerType`            |`String`                                                        | Тип отношения проверяющего к целевому объекту, один из `self` `delegated` или. `entityOwners` Требуется при создании. | 
 | `createdBy`               |[userIdentity](useridentity.md)                                 | Пользователь, создавший эту проверку. |
 | `reviewedEntity`          |[identity](identity.md)                                      | Объект, для которого проверки доступа просматривают назначения прав доступа. Это может быть группа для проверки членства пользователей в группе или приложения для проверки назначений пользователей в приложении. Требуется при создании. | 
@@ -55,12 +55,12 @@ ms.locfileid: "36460759"
 
 
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 
 
 
-| Отношение | Тип   |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 | `reviewers`               |Коллекция [userIdentity](useridentity.md)                     | Коллекция проверяющих для проверки доступа, если тип `delegate`проверки доступа ревиевертипе имеет значение. |
 | `decisions`               |Коллекция [акцессревиевдеЦисион](accessreviewdecision.md) | Коллекция решений для этой проверки доступа. |

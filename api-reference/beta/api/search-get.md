@@ -5,18 +5,20 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: d7b84fdad96530f88f09c7da7b00a6013b19017e
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 90db18f6dddeff1f3bf57b0f2c756928564d54f6
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938388"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703716"
 ---
 # <a name="search"></a>Поиск
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ресурс поиска — это объект верхнего уровня, представляющий конечную точку поиска. Он не работает как другой ресурс в Graph, но служит в качестве привязки к действиям поиска (запрос). В графике нет представления ресурсов.
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="permissions"></a>Разрешения
 

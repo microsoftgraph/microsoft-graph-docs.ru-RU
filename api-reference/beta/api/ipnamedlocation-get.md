@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 77b276877c416aaf4cfc21b9a152ac84f5ac59a0
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 7ab0c1f0d63c4622a10b6d0d499e7c11a75c7e99
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938488"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703737"
 ---
 # <a name="get-ipnamedlocation"></a>Получение Ипнамедлокатион
 
@@ -26,7 +26,7 @@ ms.locfileid: "37938488"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Для приложения                            | Policy.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

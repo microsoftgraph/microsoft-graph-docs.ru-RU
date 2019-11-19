@@ -5,18 +5,20 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 080a966ae9435c189a34155d108e1c48235ffb07
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: c7808d014ee2ab19fda9eceb6064375cf5904d52
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938893"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704152"
 ---
 # <a name="configuration-resource-type"></a>Тип ресурса конфигурации
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Задает дополнительные идентификаторы приложений, которым разрешено управлять Екстерналконнектион и индексировать содержимое в [екстерналконнектион](../resources/externalconnection.md).
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="properties"></a>Свойства
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 5a5b85f17b87343766a4edb00c6d620c185ecaf5
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 6b3dfb2ec4caf8ae2b8ec9a279a6d001ad3aaae7
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939658"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703779"
 ---
 # <a name="innererrordetail-resource-type"></a>Тип ресурса Иннереррордетаил
 
@@ -18,12 +18,14 @@ ms.locfileid: "37939658"
 
 Внутренняя ошибка, которая находится в объекте [еррордетаил](errordetail.md)
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип   | Описание                                  |
 |:---------|:-------|:---------------------------------------------|
 | message  | String | Сообщение об ошибке, читаемое человеком. Только для чтения. |
-| source   | Строка | Источник ошибки. Только для чтения.          |
+| source   | String | Источник ошибки. Только для чтения.          |
 
 ## <a name="json-representation"></a>Представление JSON
 
