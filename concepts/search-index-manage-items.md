@@ -5,16 +5,18 @@ localization_priority: Priority
 author: snlraju-msft
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: 522566fb59771dc9a4efab305a271dc89a4843af
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: c5017943f966792e0246d3764a1c3e373718c63c
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939525"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704338"
 ---
 # <a name="create-update-and-delete-items-added-by-your-application-in-the-microsoft-search-service-index"></a>Создание, обновление и удаление элементов, добавленных приложением в индекс службы "Поиск (Майкрософт)"
 
 Элементы, добавленные приложением в службу "Поиск (Майкрософт)", представлены ресурсами [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) и [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta) в Microsoft Graph.
+
+[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 Ресурс **externalItem** представляет настраиваемый тип. Его следует использовать, если элементы, добавленные в индекс, основаны на пользовательской схеме, не представленной ресурсом **externalFile**. Например, это могут быть запросы в службу технической поддержки или описания продуктов.
 

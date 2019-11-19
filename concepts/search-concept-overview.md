@@ -5,16 +5,18 @@ localization_priority: Priority
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: b8840f382442319d49e3db72503e02ddbdadfd57
-ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
+ms.openlocfilehash: 9f80df09f982d91a4034c6b2af8e03ea8643cc03
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37950418"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704388"
 ---
 # <a name="overview-for-extending-the-microsoft-search-experience-for-apps-on-microsoft-graph-preview"></a>Обзор расширенных возможностей Поиска (Майкрософт) для приложений в Microsoft Graph (предварительная версия)
 
 Поиск (Майкрософт) — это корпоративная поисковая система, обеспечивающая повышение производительности и релевантные результаты поиска для организации. Она использует наработки и возможности организации и отображает актуальный релевантный контент для пользователей. Поиск (Майкрософт) доступен в различных программах, включая Office, SharePoint, Delve, Windows и Bing.
+
+[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 <!-- markdownlint-disable MD026 -->
 ## <a name="why-use-the-microsoft-search-api"></a>Зачем использовать API Поиска (Майкрософт)?

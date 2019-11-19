@@ -5,12 +5,12 @@ localization_priority: Priority
 author: snlraju-msft
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: cac6d8e9d399e13554e9a9ef44fe8d869c0ad70d
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: e6afa7be0f1bf7dbda0561f8bd0e89ce8b0a3e4d
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938950"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703786"
 ---
 # <a name="use-the-microsoft-search-api-to-index-data"></a>Индексирование данных с помощью API Поиска (Майкрософт)
 
@@ -19,6 +19,8 @@ ms.locfileid: "37938950"
 Microsoft Graph позволяет приложению добавлять настраиваемые элементы или внешние файлы в результаты поиска в службе [Поиск (Майкрософт)](/microsoftsearch/overview-microsoft-search).
 
 Запросы на индексирование данных выполняются от имени приложения без вошедшего пользователя, указываемого [маркером доступа с разрешением приложения](/graph/auth-v2-service).
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="common-use-cases"></a>Распространенные варианты использования
 

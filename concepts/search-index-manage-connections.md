@@ -5,16 +5,18 @@ localization_priority: Priority
 author: snlraju-msft
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: b1f599a4610ce4cb939c7733949eac4c0ddba371
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 9f2d09cbd82a21874cf870c3214100115b225a1f
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939532"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704381"
 ---
 # <a name="create-update-and-delete-connections-to-the-microsoft-search-service"></a>Создание, обновление и удаление подключений к службе "Поиск (Майкрософт)"
 
 Подключения внешних служб к службе "Поиск (Майкрософт)" представляются ресурсом [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta) в Microsoft Graph.
+
+[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 Подключение позволяет приложению [определить схему](/graph/api/externalconnection-post-schema?view=graph-rest-beta) для индексируемых элементов, а также предоставляет службе конечную точку для [добавления, обновления и удаления элементов индекса](search-index-manage-items.md). Создание подключения — первый шаг приложения к добавлению элементов в индекс поиска.
 

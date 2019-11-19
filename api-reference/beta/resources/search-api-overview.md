@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 871ad982eea98f45823376e993422a371b87612c
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: afbb9ba469dad7751422902ea4a9876b6ca6b904
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938781"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38704131"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Использование API Поиска (Майкрософт) для запросов данных
 
@@ -20,12 +20,13 @@ ms.locfileid: "37938781"
 
 Поисковые запросы выполняются в контексте вошедшего пользователя, указанного [маркером доступа с делегированными разрешениями](/graph/auth-v2-user).
 
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+
 ## <a name="common-use-cases"></a>Основные варианты использования
 
 API предоставляет метод [query](../api/search-query.md) для поиска данных в службе "Поиск (Майкрософт)". В этом разделе перечислены распространенные варианты использования с применением свойств, заданных в тексте запроса **query**.
 
 Поисковые запросы выполняются от имени пользователя. Результаты поиска усекаются для применения правил контроля доступа к элементам.  Например, в контексте файлов разрешения для них оцениваются в составе поискового запроса. С помощью поиска пользователи не смогут получить доступ к тем элементам, которые недоступны им через API перечисления.
-
 
 | Варианты использования | Свойства, определяемые в тексте запроса query |
 |:------------------|:---------|
@@ -42,11 +43,11 @@ API предоставляет метод [query](../api/search-query.md) для
 Область действия поискового запроса определяется с помощью свойства **entityTypes** полезных данных запроса **query**.
 Ниже перечислены поддерживаемые типы объектов.
 
- - [event](event.md)
- - [message](message.md)
- - [driveItem](driveitem.md)
- - [externalFile](externalfile.md)
- - [externalItem](externalitem.md)
+- [event](event.md)
+- [message](message.md)
+- [driveItem](driveitem.md)
+- [externalFile](externalfile.md)
+- [externalItem](externalitem.md)
 
 ### <a name="page-search-results"></a>Результаты поиска на странице
 
@@ -74,7 +75,6 @@ API предоставляет метод [query](../api/search-query.md) для
     | 2    | 25 | 50 |
     | 3    | 75 | 75 |
     | 4    | 150 | 100 |
-
 
 ### <a name="get-the-most-relevant-emails"></a>Получение наиболее релевантных электронных писем
 
