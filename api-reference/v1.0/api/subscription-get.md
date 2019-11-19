@@ -5,12 +5,12 @@ localization_priority: Priority
 author: piotrci
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 92e8b4e377bd8bf87018abaf02a3ebe74dd47937
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: fdd850b5965e20b4de2602368c3ece3fe47b65b5
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36729212"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703807"
 ---
 # <a name="get-subscription"></a>Получение подписки
 
@@ -28,7 +28,7 @@ ms.locfileid: "36729212"
 |[event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[group](../resources/group.md) | Group.Read.All | Не поддерживается | Group.Read.All |
 |[group conversation](../resources/conversation.md) | Group.Read.All | Не поддерживается | Не поддерживается |
-|[message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+|[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Не поддерживается | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 

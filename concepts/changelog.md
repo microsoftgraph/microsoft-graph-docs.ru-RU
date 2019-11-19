@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 7da78622ae08b2e2b356eb72fdc2494e14155c42
+ms.openlocfilehash: f6a5eebba2e68cfa0b9deb248ec6abb5bc185358
 ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38656601"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702477"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -64,18 +64,31 @@ ms.locfileid: "38656601"
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | Бета | Добавлено свойство [classSettings](/api-reference/beta/resources/teamclasssettings.md) для ресурса [team](/api-reference/beta/resources/team.md), чтобы разрешить вызывающим получать параметры, относящиеся к ресурсу team типа Class.|
+| Дополнение | Бета | Добавлено свойство [classSettings](/graph/api/resources/teamclasssettings?view=graph-rest-beta) для ресурса [team](/graph/api/resources/team?view=graph-rest-beta), чтобы разрешить вызывающим получать параметры, относящиеся к ресурсу team типа Class.|
 
 ### <a name="identity-and-access-azure-ad"></a>Удостоверение и доступ (Azure AD)
 
 | **Тип изменения** | **Версия** | **Описание**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Дополнение | 1.0 | Добавлен новый тип объекта: [application](/graph/resources/application?view=graph-rest-v1.0).|
+| Дополнение | 1.0 | Добавлен новый тип объекта: [application](/graph/api/resources/application?view=graph-rest-1.0).|
 | Дополнение | 1.0 | Добавлены новые делегированные разрешения: [Application.Read.All](/graph/permissions-reference#application-resource-permissions), [Application.ReadWrite.All](/graph/permissions-reference#application-resource-permissions).|
 | Дополнение | 1.0 | Добавлено новое разрешение приложений [Application.Read.All](/graph/permissions-reference#application-resource-permissions).|
-| Дополнение | 1.0 | Добавлены новые разрешения приложений и делегированные разрешения  [GroupMember.Read.All](https://docs.microsoft.com/graph/permissions-reference#group-permissions)  и  [GroupMember.ReadWrite.All](https://docs.microsoft.com/graph/permissions-reference#group-permissions)  для получения и обновления ресурса  [API группы](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-1.0) .
-| Дополнение | 1.0 | Добавлено новое разрешение приложений [Group.Create](https://docs.microsoft.com/graph/permissions-reference#group-permissions) для создания ресурса [API группы](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-1.0) .
-| Дополнение | Бета-версия и версия 1.0 | Добавлено свойство **creationType** для ресурса [user](/graph/resources/user?view=graph-rest-v1.0).|
+| Дополнение | 1.0 | Добавлены новые разрешения приложений и делегированные разрешения  [GroupMember.Read.All](permissions-reference.md#group-permissions)  и  [GroupMember.ReadWrite.All](permissions-reference.md#group-permissions)  для получения и обновления ресурса  [group](/graph/api/resources/group?view=graph-rest-1.0) .
+| Дополнение | 1.0 | Добавлено новое разрешение приложений [Group.Create](permissions-reference.md#group-permissions) для создания ресурса **group** .
+| Дополнение | Бета-версия и версия 1.0 | Добавлено свойство **creationType** для ресурса [user](/graph/api/resources/user?view=graph-rest-1.0).|
+
+### <a name="mail-outlook"></a>Почта (Outlook)
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение | Бета | Добавлена поддержка делегированного разрешения [Mail.ReadBasic](/graph/permissions-reference#mail-permissions) и разрешения приложений [Mail.ReadBasic.All](/graph/permissions-reference#mail-permissions) для [создания](/graph/api/subscription-post-subscriptions?view=graph-rest-beta), [получения](/graph/api/subscription-get?view=graph-rest-beta), [обновления](/graph/api/subscription-update?view=graph-rest-beta) и [удаления](/graph/api/subscription-delete?view=graph-rest-beta) подписок на уведомления об изменении сообщения. |
+| Дополнение | 1.0 | Добавлена поддержка делегированного разрешения Mail.ReadBasic и разрешения приложений Mail.ReadBasic.All для следующего:<br />- [Перечисление сообщений](/graph/api/user-list-messages?view=graph-rest-1.0)<br />- [Получение сообщения](/graph/api/message-get?view=graph-rest-1.0) <br />- [Перечисление папок почты](/graph/api/user-list-mailfolders?view=graph-rest-1.0)<br />- [Получение папки почты](/graph/api/mailfolder-get?view=graph-rest-1.0)<br />- [Перечисление дочерних папок](/graph/api/mailfolder-list-childfolders?view=graph-rest-1.0)<br />- [Перечисление сообщений в папке](/graph/api/mailfolder-list-childfolders?view=graph-rest-1.0)<br />- [Получение дельты сообщения](/graph/api/message-delta?view=graph-rest-1.0)<br />- [Получение дельты папки почты](/graph/api/mailfolder-delta?view=graph-rest-1.0) <br />- [Создание](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0), [получение](/graph/api/subscription-get?view=graph-rest-1.0), [обновление](/graph/api/subscription-update?view=graph-rest-1.0) и [удаление](/graph/api/subscription-delete?view=graph-rest-1.0) подписок на уведомления об изменениях сообщения|
+
+### <a name="identity-and-access-azure-ad--conditional-access"></a>Удостоверение и доступ (Azure AD) | Условный доступ
+
+| **Тип изменения** | **Версия** | **Описание**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Дополнение | Бета | Добавлено разрешение уровня приложения Policy.Read.All для операций чтения в политиках условного доступа и именованных расположениях.|
 
 ### <a name="people-and-workplace-intelligence"></a>Люди и рабочая аналитика
 
@@ -212,9 +225,9 @@ ms.locfileid: "38656601"
 | Дополнение | Бета-версия и версия 1.0 | Добавлены свойства **manufacturer** и **model** для объекта [device](/graph/api/resources/device?view=graph-rest-1.0). |
 | Дополнение | 1.0 | Добавлен новый ресурс [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0). Эти контакты управляются организацией и отличаются от [личных контактов](outlook-contacts-concept-overview.md)|
 | Дополнение | 1.0 | Добавлен новый ресурс [physicalOfficeAddress](/graph/api/resources/physicalOfficeAddress?view=graph-rest-1.0). |
-| Дополнение | Версия 1.0 | Добавлен новый объект [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-v1.0). |
-| Дополнение | 1.0 | Добавлен новый сложный тип [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-v1.0). |
-| Дополнение | 1.0 | Добавлено новое отношение для ресурса **certificateBasedAuthConfiguration** в ресурсе [organization](/graph/api/resources/organization?view=graph-rest-v1.0). Это обеспечивает [проверку подлинности на основе сертификата в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).|
+| Дополнение | Версия 1.0 | Добавлен новый объект [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-1.0). |
+| Дополнение | 1.0 | Добавлен новый сложный тип [certificateAuthority](/graph/api/resources/certificateauthority?view=graph-rest-1.0). |
+| Дополнение | 1.0 | Добавлено новое отношение для ресурса **certificateBasedAuthConfiguration** в ресурсе [organization](/graph/api/resources/organization?view=graph-rest-1.0). Это обеспечивает [проверку подлинности на основе сертификата в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).|
 
 ### <a name="identity-and-access-azure-ad--conditional-access"></a>Удостоверение и доступ (Azure AD) | Условный доступ
 
@@ -259,8 +272,6 @@ ms.locfileid: "38656601"
 | Дополнение        | Бета-версия          | [Добавление файловых вложений размером до 150 МБ](outlook-large-attachments.md) для экземпляра [сообщения](/graph/api/resources/message?view=graph-rest-beta). |
 | Дополнение        | бета          | Сложный тип [attachmentItem](/graph/api/resources/attachmentitem?view=graph-rest-beta), действие [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-beta) для объекта [attachment](/graph/api/resources/attachment?view=graph-rest-beta) и перечисление **attachmentType**. |
 | Изменение         | бета          | Применение существующего объекта [uploadSession](/graph/api/resources/uploadsession?view=graph-rest-beta), использовавшегося объектом [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta), расширено также для объекта **attachment**. |
-| Дополнение        | 1.0          | Добавлен параметр **message** в метод для [быстрого ответа на сообщение](/graph/api/message-reply?view=graph-rest-1.0). |
-
 
 ### <a name="notifications"></a>Уведомления
 
@@ -280,7 +291,7 @@ ms.locfileid: "38656601"
 ### <a name="users"></a>Пользователи
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Дополнение | 1.0 | Добавлено новое свойство **lastPasswordChangeDateTime** для ресурса [user](/graph/api/resources/user?view=graph-rest-v1.0). |
+| Дополнение | 1.0 | Добавлено новое свойство **lastPasswordChangeDateTime** для ресурса [user](/graph/api/resources/user?view=graph-rest-1.0). |
 | Дополнение | Бета | Добавлен [API user: reprocessLicenseAssignment](/graph/api-reference/beta/api/user-reprocesslicense?view=graph-rest-beta), с помощью которого можно переработать все групповые назначения лицензий для [пользователя](/graph/api/resources/user?view=graph-rest-beta). |
 
 ### <a name="users--outlook-settings"></a>Пользователи | Параметры Outlook
@@ -896,7 +907,7 @@ ms.locfileid: "38656601"
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | 1.0 |  Представлены новые **API журналов аудита для Azure AD**, предоставляющие журналы действий для задач управления каталогом с помощью объекта [directoryAudit](/graph/api/resources/directoryAudit?view=graph-rest-v1.0) и действий входа с помощью объекта [signIns](/graph/api/resources/signIns?view=graph-rest-v1.0).|
+| Дополнение | 1.0 |  Представлены новые **API журналов аудита для Azure AD**, предоставляющие журналы действий для задач управления каталогом с помощью объекта [directoryAudit](/graph/api/resources/directoryAudit?view=graph-rest-1.0) и действий входа с помощью объекта [signIns](/graph/api/resources/signIns?view=graph-rest-1.0).|
 | Дополнение | бета | Добавлены новые разрешения приложений для API **проверки доступа**: AccessReview.Read.All, ProgramControl.Read.All и ProgramControl.ReadWrite.All. Дополнительные сведения см. в статье [Справочник по API проверки доступа](/graph/api/resources/accessreviews-root?view=graph-rest-beta). |
 | Дополнение | Бета | Добавлено свойство **signInSessionsValidFromDateTime** для ресурса [user](/graph/api/resources/user?view=graph-rest-beta). Это переименование свойств **refreshTokensValidFromDateTime**, но оба они будут поддерживаться, чтобы обеспечить простую миграцию для клиентов. В течение следующих нескольких месяцев старое свойство **refreshTokensValidFromDateTime** будет удалено.|
 | Дополнение | Бета | Добавлено действие **revokeSignInSessions** для ресурса [user](/graph/api/resources/user?view=graph-rest-beta). Это переименование действия **invalidateAllRefreshTokens**, но оба служебных действия будут поддерживаться, чтобы обеспечить простую миграцию для клиентов. В течение следующих нескольких месяцев старое служебное действие **invalidateAllRefreshTokens** будет удалено. |
@@ -989,7 +1000,7 @@ ms.locfileid: "38656601"
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Дополнение        | бета          | Добавлены API финансовых показателей для Dynamics 365 Business Central. Дополнительные сведения см. в статье [Справочник по API финансовых показателей](/graph/api/resources/dynamics-graph-reference?view=graph-rest-v1.0).|
+| Дополнение        | бета          | Добавлены API финансовых показателей для Dynamics 365 Business Central. Дополнительные сведения см. в статье [Справочник по API финансовых показателей](/graph/api/resources/dynamics-graph-reference?view=graph-rest-1.0).|
 
 ### <a name="identity-and-access-directory-apis"></a>Удостоверение и доступ (API каталогов)
 
@@ -1057,7 +1068,7 @@ ms.locfileid: "38656601"
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Дополнение |бета|Представлено новое свойство relatedContacts для ресурса [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta).|
-|Дополнение |1.0|Представлено новое свойство relatedContacts для ресурса [educationUser](/graph/api/resources/educationUser?view=graph-rest-v1.0).|
+|Дополнение |1.0|Представлено новое свойство relatedContacts для ресурса [educationUser](/graph/api/resources/educationUser?view=graph-rest-1.0).|
 
 ### <a name="files-onedrive-for-business"></a>Файлы (OneDrive для бизнеса)
 
@@ -1095,7 +1106,7 @@ ms.locfileid: "38656601"
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Дополнение |Бета-версия и версия 1.0| Добавлено свойство **internalId** для ресурса [team](/graph/api/resources/team?view=graph-rest-v1.0).|
+|Дополнение |Бета-версия и версия 1.0| Добавлено свойство **internalId** для ресурса [team](/graph/api/resources/team?view=graph-rest-1.0).|
 |Дополнение |Бета-версия и версия 1.0| Добавлена поддержка для настройки Word, Excel, PowerPoint, PDF и [вкладок](teams-configuring-builtin-tabs.md) библиотек документов. |
 |Дополнение |бета| Представлен API [отправки сообщения в канал](/graph/api/channel-post-chatmessage?view=graph-rest-beta). |
 |Дополнение |бета| Представлен API [ответа на сообщение в канале](/graph/api/channel-post-messagereply?view=graph-rest-beta). |
@@ -1134,7 +1145,7 @@ ms.locfileid: "38656601"
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Дополнение |1.0|С целью поддержки конфигурирования поставщика удостоверений в клиенте Azure AD B2C представлен новый тип ресурса [identityProvider](/graph/api/resources/identityprovider?view=graph-rest-v1.0) и операции [create](/graph/api/identityprovider-post-identityproviders?view=graph-rest-v1.0), [list](/graph/api/identityprovider-list?view=graph-rest-v1.0), [get](/graph/api/identityprovider-get?view=graph-rest-v1.0), [update](/graph/api/identityprovider-update?view=graph-rest-v1.0) и [delete](/graph/api/identityprovider-delete?view=graph-rest-v1.0).|
+|Дополнение |1.0|С целью поддержки конфигурирования поставщика удостоверений в клиенте Azure AD B2C представлен новый тип ресурса [identityProvider](/graph/api/resources/identityprovider?view=graph-rest-1.0) и операции [create](/graph/api/identityprovider-post-identityproviders?view=graph-rest-1.0), [list](/graph/api/identityprovider-list?view=graph-rest-1.0), [get](/graph/api/identityprovider-get?view=graph-rest-1.0), [update](/graph/api/identityprovider-update?view=graph-rest-1.0) и [delete](/graph/api/identityprovider-delete?view=graph-rest-1.0).|
 
 ### <a name="identity-and-access-directory-apis"></a>Удостоверение и доступ (API каталогов)
 
@@ -1143,7 +1154,7 @@ ms.locfileid: "38656601"
 | Дополнение | 1.0 | Добавлен новый метод transitiveMembers для объекта [groups](/graph/api/group-list-transitivemembers?view=graph-rest-1.0). Этот метод возвращает плоский список элементов, включая вложенные элементы.|
 | Дополнение | 1.0 | Добавлен новый метод transitiveMemberOf для объектов [users](/graph/api/user-list-transitivemembersof?view=graph-rest-1.0), [groups](/graph/api/group-list-transitivemembersof?view=graph-rest-beta) и [devices](/graph/api/device-list-transitivemembersof?view=graph-rest-1.0).|
 | Дополнение | 1.0 | Добавлены новые свойства в объект [users](/graph/api/resources/user?view=graph-rest-1.0): **employeeId**, **faxNumber**, **onPremisesDistinguishedName**, **showInAddressList** и **otherMails**.|
-| Дополнение | 1.0 | Добавлено свойство **forceChangePasswordNextSignInWithMfa** в сложный тип [passwordProfile](/graph/api/resources/passwordprofile?view=graph-rest-v1.0).|
+| Дополнение | 1.0 | Добавлено свойство **forceChangePasswordNextSignInWithMfa** в сложный тип [passwordProfile](/graph/api/resources/passwordprofile?view=graph-rest-1.0).|
 | Дополнение | 1.0 | Добавлено свойство **licenseAssignmentStates** в объект [User](/graph/api/resources/user?view=graph-rest-1.0) для [лицензирования на основе групп](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
 | Дополнение | 1.0 | Добавлен ресурс **licenseAssignmentState** для [лицензирования на основе групп](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
 | Дополнение | 1.0 | Добавлены свойства **assignedLicenses**, **licenseProcessingState** и **hasMembersWithLicenseErrors** и связь **membersWithLicenseErrors** в объект [Group](/graph/api/resources/group?view=graph-rest-1.0) для [лицензирования на основе групп](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
@@ -1978,7 +1989,7 @@ ms.locfileid: "38656601"
 |Дополнение|Бета|Добавлено свойство навигации **assignments** для объекта [windowsAutopilotDeploymentProfile](/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofile?view=graph-rest-beta).|
 |Дополнение|Бета|Добавлено свойство навигации **networkAccessConfigurations** для объекта [windowsDomainJoinConfiguration](/graph/api/resources/intune-deviceconfig-windowsdomainjoinconfiguration?view=graph-rest-beta).|
 |Удаление|бета|Удалено свойство **permissions** из сложного типа [auditActor](/graph/api/resources/intune-auditing-auditactor?view=graph-rest-beta).|
-|Изменение|бета|Изменен тип следующих свойств сложного типа [bitLockerRecoveryOptions](/graph/api/resources/intune-deviceconfig-bitlockerrecoveryoptions?view=graph-rest-beta):<br/>**recoveryInformationToStore** с [bitLockerRecoveryinformationType](/graph/api/resources/intune-deviceconfig-bitlockerrecoveryinformationtype?view=graph-rest-beta) на [bitLockerRecoveryInformationType](/graph/api/resources/intune-deviceconfig-bitlockerrecoveryinformationtype?view=graph-rest-beta).<br/>|
+|Изменение|Бета|Изменен тип следующих свойств сложного типа [bitLockerRecoveryOptions](/graph/api/resources/intune-deviceconfig-bitlockerrecoveryoptions?view=graph-rest-beta):<br/>**recoveryInformationToStore** с [bitLockerRecoveryinformationType](/graph/api/resources/intune-deviceconfig-bitlockerrecoveryinformationtype?view=graph-rest-beta) на [bitLockerRecoveryInformationType](/graph/api/resources/intune-deviceconfig-bitlockerrecoveryinformationtype?view=graph-rest-beta).<br/>|
 |Дополнение|Бета|Добавлено свойство **deviceInactivityBeforeRetirementInDay** для сложного типа [deviceManagementSettings](/graph/api/resources/intune-deviceconfig-devicemanagementsettings?view=graph-rest-beta).|
 |Дополнение|Бета|Добавлено свойство **landingPageCustomizedImage** для сложного типа [intuneBrand](/graph/api/resources/intune-onboarding-intunebrand?view=graph-rest-beta).|
 |Удаление|Бета|Удалено свойство **ipAddressOrFqdn** из сложного типа [vpnServer](/graph/api/resources/intune-deviceconfig-vpnserver?view=graph-rest-beta).|
@@ -2300,7 +2311,7 @@ ms.locfileid: "38656601"
 |Дополнение|Версия 1.0|Добавлено действие [logoutSharedAppleDeviceActiveUser](/graph/api/intune-devices-manageddevice-logoutsharedappledeviceactiveuser?view=graph-rest-1.0) для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлено действие [deleteUserFromSharedAppleDevice](/graph/api/intune-devices-manageddevice-deleteuserfromsharedappledevice?view=graph-rest-1.0) для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлено действие [syncDevice](/graph/api/intune-devices-manageddevice-syncdevice?view=graph-rest-1.0) для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0). |
-|Дополнение|Версия 1.0|Добавлено действие [windowsDefenderScan](/graph/api/intune-devices-manageddevice-windowsdefenderscan?view=graph-rest-1.0) для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0). |
+|Дополнение|1.0|Добавлено действие [windowsDefenderScan](/graph/api/intune-devices-manageddevice-windowsdefenderscan?view=graph-rest-1.0) для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлено действие [windowsDefenderUpdateSignatures](/graph/api/intune-devices-manageddevice-windowsdefenderupdatesignatures?view=graph-rest-1.0) для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлено действие [updateWindowsDeviceAccount](/graph/api/intune-devices-manageddevice-updatewindowsdeviceaccount?view=graph-rest-1.0) для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлено действие [removeAllDevicesFromManagement](/graph/api/intune-devices-user-removealldevicesfrommanagement?view=graph-rest-1.0) для объекта [user](/graph/api/resources/intune-shared-user?view=graph-rest-1.0). |

@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3dfb0f3d7f6d30bb04b635330a3ceca68b6df9f0
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: d15d1a148f56cb07b7526b6735385e4530abce41
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538835"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703814"
 ---
 # <a name="get-message"></a>Вывод сообщения
 
@@ -31,9 +31,9 @@ ms.locfileid: "37538835"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Mail.Read    |
-|Делегированные (личная учетная запись Майкрософт) | Mail.Read    |
-|Для приложений | Mail.Read |
+|Делегированные (рабочая или учебная учетная запись) | Mail.ReadBasic, Mail.Read    |
+|Делегированные (личная учетная запись Майкрософт) | Mail.ReadBasic, Mail.Read    |
+|Для приложения | Mail.ReadBasic.All, Mail.Read |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

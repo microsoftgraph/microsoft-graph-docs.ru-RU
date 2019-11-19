@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b57766a9b8aa756e2d198f0f2358827006c1b455
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: d53cbd1e7a840de56f057996987779d32c5b0cc2
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36728701"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38702442"
 ---
 # <a name="list-messages"></a>Список сообщений
 
@@ -20,9 +20,9 @@ ms.locfileid: "36728701"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Mail.Read, Mail.ReadWrite    |
-|Делегированные (личная учетная запись Майкрософт) | Mail.Read, Mail.ReadWrite    |
-|Для приложений | Mail.Read, Mail.ReadWrite |
+|Делегированные (рабочая или учебная учетная запись) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
+|Делегированные (личная учетная запись Майкрософт) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
+|Приложение | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

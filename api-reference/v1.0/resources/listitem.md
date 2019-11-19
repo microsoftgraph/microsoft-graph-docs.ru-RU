@@ -6,12 +6,12 @@ description: Представляет элемент объекта list в Shar
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 49de3376064728b3bdf3f1657dd76bc197447410
+ms.openlocfilehash: e9a9010e8700d7e6ebd6a2e3d030fba7cab79f83
 ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38657483"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "38703765"
 ---
 # <a name="listitem-resource"></a>Ресурс listItem
 
