@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: f6a5eebba2e68cfa0b9deb248ec6abb5bc185358
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 8a6c46f1ce391dfc055dd18960df7d85c6d19b0a
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702477"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748512"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -23,6 +23,13 @@ ms.locfileid: "38702477"
 | **Тип изменения** | **Версия** | **Описание**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Дополнение        | Бета  | Добавлена возможность [обновления помещения или списка помещений](/graph/api/resources/place-get?view=graph-rest-beta).|
+
+### <a name="cloud-communications-calls-and-online-meetings"></a>Облачные коммуникации (звонки и собрания по сети)
+
+| **Тип изменения** | **Версия** | **Описание**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Изменение        | Бета-версия        | Изменен возвращаемый тип для методов [mute](/graph/api/call-mute?view=graph-rest-beta) и [mute participant](/graph/api/participant-mute?view=graph-rest-beta) с [commsOperation](/graph/api/resources/commsoperation?view=graph-rest-beta) на [muteParticipantOperation](/graph/api/resources/muteparticipantoperation?view=graph-rest-beta). | 
+| Изменение        | Бета-версия        | Изменен возвращаемый тип для метода [unmute](/graph/api/call-unmute?view=graph-rest-beta) с [commsOperation](/graph/api/resources/commsoperation?view=graph-rest-beta) на [unmuteParticipantOperation](/graph/api/resources/unmuteparticipantoperation?view=graph-rest-beta). | 
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Устройства и приложения (Microsoft Intune)
 
@@ -1613,7 +1620,7 @@ ms.locfileid: "38702477"
 |Дополнение|бета|Добавлены свойства **qualityUpdatesPauseStartDateTime**, **featureUpdatesPauseStartDateTime**, **featureUpdatesRollbackWindowInDays**, **qualityUpdatesWillBeRolledBack**, **featureUpdatesWillBeRolledBack**, **qualityUpdatesRollbackStartDateTime** и **featureUpdatesRollbackStartDateTime** для объекта [windowsUpdateForBusinessConfiguration](/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-beta)|
 |Дополнение|бета|Добавлено свойство **trustedServerCertificateNames** для объекта [windowsWifiEnterpriseEAPConfiguration](/graph/api/resources/intune-deviceconfig-windowswifienterpriseeapconfiguration?view=graph-rest-beta)|
 |Дополнение|бета|Добавлены свойства навигации **defaultIosEnrollmentProfile**, **defaultMacOsEnrollmentProfile**, **enrollmentProfiles** и **importedAppleDeviceIdentities** для объекта [depOnboardingSetting](/graph/api/resources/intune-enrollment-deponboardingsetting?view=graph-rest-beta)|
-|Дополнение|бета|Добавлено свойство навигации **roleScopeTags** для объекта [deviceAndAppManagementRoleAssignment](/graph/api/resources/intune-rbac-deviceandappmanagementroleassignment?view=graph-rest-beta).|
+|Дополнение|Бета|Добавлено свойство навигации **roleScopeTags** для объекта [deviceAndAppManagementRoleAssignment](/graph/api/resources/intune-rbac-deviceandappmanagementroleassignment?view=graph-rest-beta).|
 |Дополнение|бета|Добавлены свойства навигации **advancedThreatProtectionOnboardingStateSummary**, **roleScopeTags** и **importedWindowsAutopilotDeviceIdentityUploads** для объекта [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta)|
 |Дополнение|бета|Добавлено свойство **supportedDeviceTypes** для сложного типа [mobileAppIntentAndStateDetail](/graph/api/resources/intune-troubleshooting-mobileappintentandstatedetail?view=graph-rest-beta)|
 |Дополнение|бета|Добавлено свойство **hideEscapeLink** для сложного типа [outOfBoxExperienceSettings](/graph/api/resources/intune-enrollment-outofboxexperiencesettings?view=graph-rest-beta)|
@@ -3081,7 +3088,7 @@ ms.locfileid: "38702477"
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Дополнение        | Бета        | Добавлена поддержка [восстановления и окончательного удаления пользователей](/graph/api/resources/directory?view=graph-rest-beta). |
+| Дополнение        | Бета-версия        | Добавлена поддержка [восстановления и окончательного удаления пользователей](/graph/api/resources/directory?view=graph-rest-beta). |
 
 ### <a name="added-onpremisesprovisioningerror"></a>Добавлен объект OnPremisesProvisioningError
 
