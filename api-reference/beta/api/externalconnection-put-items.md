@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 13c794fc7d03fa607bc61d57d731bdf2d3d04f71
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 10adfc916f2c4f30f19944188b1b375080c6e5bf
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994575"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747245"
 ---
 # <a name="create-externalitem"></a>Создание Екстерналитем
 
@@ -19,6 +19,8 @@ ms.locfileid: "37994575"
 Создание нового [екстерналитем](../resources/externalitem.md) или [екстерналфиле](../resources/externalfile.md).
 
 Этот API можно использовать для создания настраиваемого элемента или файла. Укажите тип, который вы создаете, включив `@odata.type` свойство в текст JSON. В содержащем [екстерналконнектион](../resources/externalconnection.md) должна быть зарегистрирована [схема](../resources/schema.md) соответствующего типа.
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="permissions"></a>Разрешения
 
@@ -147,7 +149,7 @@ Content-type: application/json
 #### <a name="response"></a>Отклик
 <!-- markdownlint-enable MD024 -->
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

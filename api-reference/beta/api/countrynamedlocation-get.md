@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cda2dfe66858157be397ecf75e68c7a3b5743bb0
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: bd6ec395532124daa94dc60f895f22a6c2951a4b
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37937143"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747762"
 ---
 # <a name="get-countrynamedlocation"></a>Получение Каунтринамедлокатион
 
@@ -26,7 +26,7 @@ ms.locfileid: "37937143"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Для приложений                            | Policy.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

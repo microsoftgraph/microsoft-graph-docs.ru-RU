@@ -5,23 +5,23 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b126358a8ab8574d4dcbf7c1f22e412eda41d61f
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 88cf36813a6ed7102807917caf0bca3e46744f5f
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37367058"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38748464"
 ---
 # <a name="windows10networkproxyserver-resource-type"></a>Тип ресурса windows10NetworkProxyServer
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Политика прокси-сервера сети.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|address|String|Адрес прокси-сервера. Укажите адрес в формате <server>\[":"<port>\]|
+|address|String|Адрес прокси-сервера. Укажите адрес в поле "сервер \<\>\[формата:\<порт".\>\]|
 |exceptions|Коллекция String|Адреса, которые не должны использовать прокси-сервер. Система не использует прокси-сервер для адресов, начинающихся, как указано в этом узле.|
 |useForLocalAddresses|Boolean|Определяет необходимость использования прокси-сервера для локальных адресов (в интрасети).|
 

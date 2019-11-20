@@ -5,18 +5,24 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d1c9093f6c86f11588b0758a80fdbe8682d6d216
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 246eb11fbcffb8c86c7d50cd186eec9473d6028e
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38005978"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747590"
 ---
 # <a name="call-mute"></a>вызов: выкл.
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Позволяет приложению отключить себя.
+
+Это Выключенный сервер, что означает, что сервер будет отбрасывать все звуковые пакеты для этого участника, даже если участник продолжает потоковую передачу звука.
+
+Более подробную информацию о том, как обрабатывать операции отключения звука, можно узнать в статье [мутепартиЦипантоператион](../resources/muteparticipantoperation.md)
+
+> **Примечание:** Этот метод поддерживается только для вызовов групп.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -33,22 +39,25 @@ ms.locfileid: "38005978"
 POST /app/calls/{id}/mute
 POST /communications/calls/{id}/mute
 ```
-> **Примечание:** `/app` Путь является устаревшим. Перемотка вперед, используйте `/communications` путь.
+> **Примечание.** Путь `/app` является устаревшим. В дальнейшем используйте путь `/communications`.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
+| Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|Контекст|String|Контекст клиента.|
+|Контекст|Строка|Контекст клиента.|
 
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [коммсоператион](../resources/commsoperation.md) в тексте отклика.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [мутепартиЦипантоператион](../resources/muteParticipantoperation.md) в тексте отклика.
+
+> **Примечание:** После того как эта операция возвращает успешный ответ, все участники получат обновление списка
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -93,7 +102,7 @@ Content-Type: application/json
 <!-- { 
   "blockType": "response", 
   "truncated": true, 
-  "@odata.type": "microsoft.graph.commsOperation" 
+  "@odata.type": "microsoft.graph.muteParticipantOperation" 
 } --> 
 ```http
 HTTP/1.1 200 OK
@@ -104,13 +113,13 @@ Content-Length: 259
 
 <!-- {
   "blockType": "example",
-  "@odata.type": "microsoft.graph.commsOperation",
+  "@odata.type": "microsoft.graph.muteParticipantOperation",
   "truncated": true
 }-->
 ```json
 {
-  "@odata.type": "#microsoft.graph.commsOperation",
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#commsOperation",
+  "@odata.type": "#microsoft.graph.muteParticipantOperation",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#muteParticipantOperation",
   "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
   "status": "completed",
   "clientContext": "clientContext-value"

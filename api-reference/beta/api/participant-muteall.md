@@ -5,18 +5,21 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 00ace588a763a9e6d1df64830820be1ad6308567
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: a4f5157e4441269258ed578a26a6ea700b8e4e0a
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006468"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747968"
 ---
 # <a name="participant-muteall"></a>участник: Мутеалл
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Отключение звука всех участников звонка.
+
+> **Примечание:** Этот API является устаревшим и будет удален 15 марта 2020. Чтобы отключиться от одного участника, ознакомьтесь со статьей [участник: выкл](participant-mute.md).
+
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -33,23 +36,24 @@ ms.locfileid: "38006468"
 POST /app/calls/{id}/participants/muteAll
 POST /communications/calls/{id}/participants/muteAll
 ```
-> **Примечание:** `/app` Путь является устаревшим. Перемотка вперед, используйте `/communications` путь.
+> **Примечание.** Путь `/app` является устаревшим. В дальнейшем используйте путь `/communications`.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
+| Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|participants|Коллекция String|Участники, которые должны быть отключены.|
-|Контекст|String|Контекст клиента.|
+|participants|Коллекция строк|Участники, которые должны быть отключены.|
+|Контекст|Строка|Контекст клиента.|
 
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [коммсоператион](../resources/commsoperation.md) в тексте отклика.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [коммсоператион](../resources/commsoperation.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.

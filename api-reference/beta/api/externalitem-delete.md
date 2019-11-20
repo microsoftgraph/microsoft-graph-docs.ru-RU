@@ -5,18 +5,20 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: c722ec6e2196d71f24d5558d611bdd5be141b7ce
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 6e3f76c3c12d49b73f71fbf2bc7b93f6479103e9
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994480"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747185"
 ---
 # <a name="delete-externalitem"></a>Удаление Екстерналитем
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Удаление [екстерналитем](../resources/externalitem.md) или [екстерналфиле](../resources/externalfile.md).
+
+[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="permissions"></a>Разрешения
 

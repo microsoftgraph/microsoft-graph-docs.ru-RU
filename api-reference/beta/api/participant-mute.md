@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: cbf65ee703e22895e25ae18b2a94c4a1740527f2
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: af906dad7ad24ad9c82411be3b7a896fcafa216c
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006503"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747982"
 ---
 # <a name="participant-mute"></a>участник: выкл.
 
@@ -20,9 +20,9 @@ ms.locfileid: "38006503"
 
 Это Выключенный сервер, что означает, что сервер будет отбрасывать все звуковые пакеты для этого участника, даже если участник продолжает потоковую передачу звука.
 
-Дополнительные сведения об обработке операций можно найти в разделе [коммсоператион](../resources/commsOperation.md).
+Дополнительные сведения о том, как обрабатывать операции отключения звука, можно найти в разделе [мутепартиЦипантоператион](../resources/muteParticipantoperation.md).
 
-> **Примечание:** Эта поддержка поддерживается только для звонков групп.
+> **Примечание:** Этот метод поддерживается только для вызовов групп.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -38,7 +38,7 @@ ms.locfileid: "38006503"
 POST /app/calls/{id}/participants/{id}/mute
 POST /communications/calls/{id}/participants/{id}/mute
 ```
-> **Примечание:** `/app` Путь является устаревшим. Перемотка вперед, используйте `/communications` путь.
+> **Примечание.** Путь `/app` является устаревшим. В дальнейшем используйте путь `/communications`.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
@@ -51,10 +51,10 @@ POST /communications/calls/{id}/participants/{id}/mute
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|Контекст|String|Уникальная строка контекста клиента. Максимальный лимит — 256 символов.|
+|Контекст|Строка|Уникальная строка контекста клиента. Максимальный лимит — 256 символов.|
 
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [коммсоператион](../resources/commsoperation.md) в тексте отклика.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [мутепартиЦипантоператион](../resources/muteParticipantoperation.md) в тексте отклика.
 
 >**Примечание:** Вхем этот API возвращает успешный ответ, все участники получат обновление списка.
 

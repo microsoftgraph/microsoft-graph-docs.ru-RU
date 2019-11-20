@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7db831333982126b0edd24a5664388a89e8bc74d
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: de47162a9a2c3b4baf31f8b3b11f50100730d3b9
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38005932"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747583"
 ---
 # <a name="call-unmute"></a>вызов: включение звука
 
@@ -20,9 +20,9 @@ ms.locfileid: "38005932"
 
 Это нерекомендуемый сервер, что означает, что сервер еще раз начнет отправлять звуковые пакеты для этого участника другим участникам.
 
-Дополнительные сведения об обработке операций можно найти в разделе [коммсоператион](../resources/commsOperation.md).
+Дополнительные сведения о том, как обрабатывать звуковые операции, приведены в статье [унмутепартиЦипантоператион](../resources/unmuteParticipantoperation.md).
 
-> **Примечание:** Эта поддержка поддерживается только для звонков групп.
+> **Примечание:** Этот метод поддерживается только для вызовов групп.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -38,7 +38,7 @@ ms.locfileid: "38005932"
 POST /app/calls/{id}/unmute
 POST /communications/calls/{id}/unmute
 ```
-> **Примечание:** `/app` Путь является устаревшим. Перемотка вперед, используйте `/communications` путь.
+> **Примечание.** Путь `/app` является устаревшим. В дальнейшем используйте путь `/communications`.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
@@ -51,10 +51,10 @@ POST /communications/calls/{id}/unmute
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|Контекст|String|Контекст клиента.|
+|Контекст|Строка|Контекст клиента.|
 
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [коммсоператион](../resources/commsoperation.md) в тексте отклика.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [унмутепартиЦипантоператион](../resources/unmuteParticipantoperation.md) в тексте отклика.
 
 >**Примечание:** Когда этот API возвращает успешный ответ, все участники получат обновление списка.
 
@@ -98,7 +98,7 @@ Content-Length: 46
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.commsOperation"
+  "@odata.type": "microsoft.graph.unmuteParticipantOperation"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -109,13 +109,13 @@ Content-Length: 259
 
 <!-- {
   "blockType": "example",
-  "@odata.type": "microsoft.graph.commsOperation",
+  "@odata.type": "microsoft.graph.unmuteParticipantOperation",
   "truncated": true
 }-->
 ```json
 {
-  "@odata.type": "#microsoft.graph.commsOperation",
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#commsOperation",
+  "@odata.type": "#microsoft.graph.unmuteParticipantOperation",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#unmuteParticipantOperation",
   "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
   "status": "completed",
   "clientContext": "clientContext-value"
