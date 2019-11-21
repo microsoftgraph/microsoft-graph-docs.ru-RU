@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: e5e8ff0c1b3eb15fd2a8cd68de11c9995cf693b9
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 18f322178c8ec7f29acd4af3d7296cffded834c9
+ms.sourcegitcommit: c25828c596b7e0939fa164a3d7754722943152c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969817"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756779"
 ---
 # <a name="outlook-calendar-api-overview"></a>Общие сведения об API календарей Outlook
 
@@ -73,6 +73,7 @@ Outlook и API Календаря предоставляют множество 
 - Например, в Outlook клиенты могут организовать собрание и добавить в него участников, присоединяющихся к собранию в переговорной в Москве, кафе в Париже и в домашнем офисе в Китае. Программным путем свойство **locations** мероприятия, представляющее собой коллекцию объектов [location](/graph/api/resources/location?view=graph-rest-1.0), может отражать этот уровень сведений в свойствах **displayName** и **locationType** для каждого объекта **location**. См. [пример](/graph/api/event-get?view=graph-rest-1.0#request-2).
 - В Outlook имеются гибкие возможности, с помощью которых пользователи могут упорядочивать мероприятия и указывать часовые пояса для времени начала и окончания мероприятия. Для поддержки таких возможностей по умолчанию API Календаря возвращает время **начала** и **окончания** **мероприятия** в формате UTC и указывает часовые пояса, выбранные при создании мероприятия, в свойствах **originalStartTimeZone** и **originalEndTimeZone**.
 - Кроме того, вы можете указать заголовок `Prefer: outlook.timezone="{time zone name}"`, чтобы операция GET для мероприятия возвратила время **начала** и **окончания** в указанном вами часовом поясе. Вы можете использовать любые названия часовых поясов, поддерживаемые в Windows, а также названия из [этого списка](/graph/api/resources/datetimetimezone?view=graph-rest-1.0). См. [пример](/graph/api/event-get?view=graph-rest-1.0#request-1) использования заголовка `Prefer`.
+- Доступно только в предварительной версии (бета-версия): организации, поддерживающие поставщиков собраний по сети, могут настроить календари Outlook так, чтобы использовать этих поставщиков.  Вы можете легко [организовывать и посещать мероприятия в этих календарях как собрания по сети](outlook-calendar-online-meetings.md).
 
 ## <a name="build-apps-with-location-awareness-and-provide-intelligent-context-preview"></a>Создание приложений с учетом сведений о расположениях и предоставлением интеллектуального контекста (предварительная версия)
 
@@ -104,8 +105,9 @@ Outlook и API Календаря предоставляют множество 
 - Узнайте, как выполнять указанные ниже действия.
   - [Поиск времени для проведения собрания в календаре Outlook](findmeetingtimes-example.md)
   - [Получение расписания доступности пользователей и ресурсов](outlook-get-free-busy-schedule.md)
+  - [Предложение времени собраний в календаре Outlook (предварительная версия)](outlook-calendar-meeting-proposals.md)
+  - [Организация и посещение собраний по сети с помощью Outlook (предварительная версия)](outlook-calendar-online-meetings.md)
   - [Планирование повторных встреч в качестве повторяющихся мероприятий в Outlook](outlook-schedule-recurring-events.md)
-  - [Предложение времени собраний в календаре Outlook](outlook-calendar-meeting-proposals.md)
   - [Получение общих событий](outlook-get-shared-events-calendars.md)
   - [Получение неизменяемых идентификаторов для ресурсов Outlook](outlook-immutable-id.md)
 - Ознакомьтесь со справочными материалами по [API Календаря](/graph/api/resources/calendar?view=graph-rest-1.0) в Outlook.

@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 8a6c46f1ce391dfc055dd18960df7d85c6d19b0a
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: f9901df5724cc701bcaab0138ab15fc20cf9c563
+ms.sourcegitcommit: c25828c596b7e0939fa164a3d7754722943152c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748512"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38756879"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -83,6 +83,15 @@ ms.locfileid: "38748512"
 | Дополнение | 1.0 | Добавлены новые разрешения приложений и делегированные разрешения  [GroupMember.Read.All](permissions-reference.md#group-permissions)  и  [GroupMember.ReadWrite.All](permissions-reference.md#group-permissions)  для получения и обновления ресурса  [group](/graph/api/resources/group?view=graph-rest-1.0) .
 | Дополнение | 1.0 | Добавлено новое разрешение приложений [Group.Create](permissions-reference.md#group-permissions) для создания ресурса **group** .
 | Дополнение | Бета-версия и версия 1.0 | Добавлено свойство **creationType** для ресурса [user](/graph/api/resources/user?view=graph-rest-1.0).|
+| Дополнение | 1.0 | Добавлена операция [checkMemberObjects](/graph/api/device-checkmemberobjects?view=graph-rest-1.0) для ресурса [device](/graph/api/resources/device?view=graph-rest-1.0). |
+| Дополнение | 1.0 | Добавлена операция [checkMemberObjects](/graph/api/group-checkmemberobjects?view=graph-rest-1.0) для ресурса [group](/graph/api/resources/group?view=graph-rest-1.0). |
+| Дополнение | 1.0 | Добавлена операция [checkMemberObjects](/graph/api/user-checkmemberobjects?view=graph-rest-1.0) для ресурса [user](/graph/api/resources/user?view=graph-rest-1.0). |
+
+### <a name="identity-and-access-information-protection"></a>Удостоверения и доступ (защита информации)
+
+| **Тип изменения** | **Версия** | **Описание**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Дополнение        | Бета        | Добавлено новое делегированное разрешение [ThreatAssessment.ReadWrite.All](permissions-reference.md#threat-assessment-permissions) и разрешение приложений [ThreatAssessment.Read.All](permissions-reference.md#threat-assessment-permissions) для чтения и записи запросов на оценку угроз |
 
 ### <a name="mail-outlook"></a>Почта (Outlook)
 
@@ -392,7 +401,7 @@ ms.locfileid: "38748512"
 | Удаление        | Бета        | Удалены свойства **createdDateTime** и **lastActionDateTime** из ресурса [commsOperation](/graph/.api/resource/commsOperation?view=graph-rest-beta).|
 | Удаление        | Бета        | Удалено свойство **meetingType** из ресурса [onlineMeeting](/graph/api/resources/onlineMeeting?view=graph-rest-beta). |
 | Дополнение        | Бета        | Добавлено свойство **isBroadcast** для ресурса [onlineMeeting](/graph/api/resources/onlineMeeting?view=graph-rest-beta). |
-| Изменение        | Бета        | Свойство **resource** в ресурсе [commsNotification](/graph/api/resources/commsNotification?view=graph-rest-beta) переименовано на **resourceUrl**. |
+| Изменение        | Бета-версия        | Свойство **resource** в ресурсе [commsNotification](/graph/api/resources/commsNotification?view=graph-rest-beta) переименовано на **resourceUrl**. |
 | Изменение          | Бета        | В ресурсе [resultInfo](/graph/api/resources/resultInfo?view=graph-rest-beta) изменен тип свойств **code** и **subCode** со строчного на Int32. |
 | Изменение        | Бета        | Свойство **subcode** в ресурсе [resultInfo](/graph/api/resources/resultInfo?view=graph-rest-beta) переименовано на **subCode**. | 
 
