@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 3feca862395b693c63f3bad60ade95d7f71645e8
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 65723f2a951d4630f939e1981c60793941099faf
+ms.sourcegitcommit: c25828c596b7e0939fa164a3d7754722943152c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939420"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757133"
 ---
 # <a name="event-resource-type"></a>Тип ресурса event
 
@@ -117,15 +117,15 @@ ms.locfileid: "37939420"
 |importance|String|Важность события. Возможные значения: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Задайте значение true, если событие длится весь день.|
 |isCancelled|Boolean|Задайте значение true, если событие отменено.|
-|isOnlineMeeting|Boolean| `True`, если это событие содержит информацию о собраниях по сети; в противном случае — `false`. Значение по умолчанию: false. Необязательный.|
+|isOnlineMeeting|Логический| `True`, если событие содержит информацию о собрании по сети (т. е. **onlineMeeting** указывает на ресурс [onlineMeetingInfo](onlinemeetinginfo.md)), в противном случае — `false`. Значение по умолчанию — `false` (**onlineMeeting** — `null`). Необязательный. <br> После настройки **isOnlineMeeting** на `true` Microsoft Graph инициализирует **onlineMeeting**. Outlook будет игнорировать любые последующие изменения **isOnlineMeeting**, и собрание останется доступным по сети. |
 |isOrganizer|Boolean|Задайте значение true, если отправитель сообщения также является его организатором.|
 |isReminderOn|Boolean|Задайте значение true, если установлено напоминание пользователю о событии.|
 |lastModifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |location|[Location](location.md)|Место проведения события.|
 |locations|Коллекция [Location](location.md)|Места проведения события или участия в нем. Свойства **location** и **locations** всегда совпадают друг с другом. Если вы обновите свойство **location**, предыдущие места в коллекции **locations** будут удалены и заменены новым значением **location**. |
-|onlineMeeting|[OnlineMeetingInfo](onlinemeetinginfo.md)| Сведения, необходимые участнику, чтобы присоединиться к собранию по сети. Только для чтения.|
-|onlineMeetingProvider|onlineMeetingProviderType| Представляет поставщика службы собраний по сети. Возможные значения: `teamsForBusiness`, `skypeForBusiness` и `skypeForConsumer`. Необязательный. |
-|onlineMeetingUrl|String|URL-адрес для собрания по сети. Свойство установлено только в том случае, если организатор определяет событие как собрание по сети, например в Skype. Только для чтения.|
+|onlineMeeting|[OnlineMeetingInfo](onlinemeetinginfo.md)| Сведения, необходимые участнику, чтобы присоединиться к собранию по сети. Значение по умолчанию — null. Только для чтения. <br>После настройки свойств **isOnlineMeeting** и **onlineMeetingProvider** для включения собрания по сети Microsoft Graph инициализирует **onlineMeeting**. После настройки собрание останется доступным по сети и вы не сможете изменить свойства **isOnlineMeeting**, **onlineMeetingProvider** и **onlneMeeting**. |
+|onlineMeetingProvider|onlineMeetingProviderType| Представляет поставщика службы собраний по сети. По умолчанию **onlineMeetingProvider** — `unknown`. Возможные значения: `unknown`, `teamsForBusiness`, `skypeForBusiness` и `skypeForConsumer`. Необязательный. <br> После настройки **onlineMeetingProvider** Microsoft Graph инициализирует **onlineMeeting**. После этого вы не сможете изменить **onlineMeetingProvider** и собрание останется доступным по сети. |
+|onlineMeetingUrl|String|URL-адрес для собрания по сети. Свойство будет задано только в том случае, если организатор определяет в Outlook, что событие является собранием по сети, например в Skype. Только для чтения.<br>Чтобы получить доступ к URL-адресу и присоединиться к собранию по сети, воспользуйтесь **joinUrl**, который предоставляется через свойство **event**, **onlineMeeting**. В дальнейшем использовать свойство **onlineMeetingUrl** не рекомендуется. |
 |organizer|[Recipient](recipient.md)|Организатор события.|
 |originalEndTimeZone|String|Часовой пояс завершения, указанный при создании события. Значение `tzone://Microsoft/Custom` указывает, что традиционный часовой пояс был задан в классическом приложении Outlook.|
 |originalStart|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
