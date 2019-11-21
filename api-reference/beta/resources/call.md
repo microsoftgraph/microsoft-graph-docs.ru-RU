@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 9b5c920bfb332445688ab327d424b6f9abb8e4e8
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 65e17466121dedef36c72a0091974e2a2329494c
+ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006756"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "38747999"
 ---
 # <a name="call-resource-type"></a>Тип ресурса call
 
@@ -24,32 +24,32 @@ ms.locfileid: "38006756"
 
 ## <a name="methods"></a>Методы
 
-| Метод                                                            | Возвращаемый тип                                       | Описание                                  |
-|:------------------------------------------------------------------|:--------------------------------------------------|:---------------------------------------------|
-| [Получение вызова](../api/call-get.md)                                    | [call](call.md)                                   | Чтение свойств объекта **call**.      |
-| [Удаление](../api/call-delete.md)                                   |                                                   | Удаление или разрыв активного **вызова**.        |
-| **Обработка вызовов**                                                 |                                                   |                                              |
-| [Ответ](../api/call-answer.md)                                   |                                                   | Ответ на входящий вызов.                     |
-| [Отклонение](../api/call-reject.md)                                   |                                                   | Отклонение входящего вызова.                     |
-| [Перенаправление](../api/call-redirect.md)                               |                                                   | Перенаправление входящего вызова.                   |
-| [Перевод](../api/call-transfer.md)                               |                                                   | Переключение звонка                              |
-| **Групповые звонки**                                                   |                                                   |                                              |
-| [Перечисление участников](../api/call-list-participants.md)             | Коллекция [participant](participant.md)          | Получение коллекции объектов.         |
-| [Приглашение участников](../api/participant-invite.md)               | [commsOperation](commsoperation.md)               | Приглашение участников в активный вызов.      |
-| [Отключение звука всех участников](../api/participant-muteall.md)            | [commsOperation](commsoperation.md)               | Отключение звука всех участников звонка.           |
-| [Отключение звука участника](../api/participant-mute.md)                    | [commsOperation](commsoperation.md)               | Отключение звука участника в групповом вызове.        |
-| [Настройка звукового микшера](../api/participant-configuremixer.md)     | [commsOperation](commsoperation.md)               | Настройка звука в многопользовательской беседе.  |
-| [Создание объекта audioRoutingGroup](../api/call-post-audioroutinggroups.md)| [audioRoutingGroup](audioroutinggroup.md)         | Создание нового объекта audioRoutingGroup путем публикации в коллекции audioRoutingGroups. |
-| [Перечисление AudioRoutingGroups](../api/call-list-audioroutinggroups.md) | Коллекция [audioRoutingGroup](audioroutinggroup.md)|Получение коллекции объектов audioRoutingGroup.  |
-| **Интерактивный голосовой ответ**                                    |                                                   |                                              |
-| [PlayPrompt](../api/call-playprompt.md)                           | [playPromptOperation](playpromptoperation.md)     | Воспроизведение запроса в вызове.                     |
-| [Запись](../api/call-record.md)                                   | [recordOperation](recordoperation.md)             | Запись короткого аудиоклипа из вызова.     |
-| [CancelMediaProcessing](../api/call-cancelmediaprocessing.md)     | [commsOperation](commsoperation.md)               | Отмена обработки мультимедиа.                     |
-| [SubscribeToTone](../api/call-subscribetotone.md)                 | [commsOperation](commsoperation.md)               | Подписка на тоны DTMF.                     |
-| **Самостоятельные операции участников**                                   |                                                   |                                              |
-| [Отключение звука](../api/call-mute.md)                                       | [commsOperation](commsoperation.md)               | Отключение своего звука в вызове.                       |
-| [Включение звука](../api/call-unmute.md)                                   | [commsOperation](commsoperation.md)               | Включение своего звука в звонке.                     |
-| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md) |                                                   | Начало и прекращение демонстрации экрана в звонке.   |
+| Метод                                                             | Возвращаемый тип                                                 | Описание                                                                     |
+|:-------------------------------------------------------------------|:------------------------------------------------------------|:--------------------------------------------------------------------------------|
+| [получение](../api/call-get.md);                                     | [call](call.md)                                             | Чтение свойств объекта **call**.                                         |
+| [Удаление](../api/call-delete.md)                                    | Нет                                                            | Удаление или разрыв активного **вызова**.                                           |
+| **Обработка вызовов**                                                  |                                                        |                                                                                 |
+| [Ответ](../api/call-answer.md)                                    | Нет                                                            | Ответ на входящий вызов.                                                        |
+| [Reject](../api/call-reject.md)                                    | Нет                                                            | Отклонение входящего вызова.                                                        |
+| [Redirect](../api/call-redirect.md)                                | Нет                                                            | Перенаправление входящего вызова.                                                      |
+| [Перевод](../api/call-transfer.md)                                | Нет                                                            | Переключение звонка                                                                 |
+| **Групповые звонки**                                                    |                                                             |                                                                                 |
+| [Перечисление участников](../api/call-list-participants.md)              | Коллекция [participant](participant.md)                    | Получение коллекции объектов.                                            |
+| [Приглашение участников](../api/participant-invite.md)                | [commsOperation](commsoperation.md)                         | Приглашение участников в активный вызов.                                         |
+| [Отключение звука всех участников](../api/participant-muteall.md)             | [commsOperation](commsoperation.md)                         | Отключение звука всех участников звонка.                                              |
+| [Отключение звука участника](../api/participant-mute.md)                     | [muteParticipantOperation](muteparticipantoperation.md)     | Отключение звука участника в групповом вызове.                                           |
+| [Настройка звукового микшера](../api/participant-configuremixer.md)      | [commsOperation](commsoperation.md)                         | Настройка звука в многопользовательской беседе.                                     |
+| [Создание объекта audioRoutingGroup](../api/call-post-audioroutinggroups.md) | [audioRoutingGroup](audioroutinggroup.md)                   | Создание нового объекта audioRoutingGroup путем публикации в коллекции audioRoutingGroups. |
+| [Перечисление AudioRoutingGroups](../api/call-list-audioroutinggroups.md)  | Коллекция [audioRoutingGroup](audioroutinggroup.md)        | Получение коллекции объектов audioRoutingGroup.                                      |
+| **Интерактивный голосовой ответ**                                     |                                                             |                                                                                 |
+| [PlayPrompt](../api/call-playprompt.md)                            | [playPromptOperation](playpromptoperation.md)               | Воспроизведение запроса в вызове.                                                        |
+| [Запись](../api/call-record.md)                                    | [recordOperation](recordoperation.md)                       | Запись короткого аудиоклипа из вызова.                                        |
+| [CancelMediaProcessing](../api/call-cancelmediaprocessing.md)      | [commsOperation](commsoperation.md)                         | Отмена обработки мультимедиа.                                                        |
+| [SubscribeToTone](../api/call-subscribetotone.md)                  | [commsOperation](commsoperation.md)                         | Подписка на тоны DTMF.                                                        |
+| **Самостоятельные операции участников**                                    |                                                             |                                                                                 |
+| [Отключение звука](../api/call-mute.md)                                        | [muteParticipantOperation](muteparticipantoperation.md)     | Отключение своего звука в вызове.                                                          |
+| [Включение звука](../api/call-unmute.md)                                    | [unmuteParticipantOperation](unmuteparticipantoperation.md) | Включение своего звука в звонке.                                                        |
+| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md)  | Нет                                                            | Начало и прекращение демонстрации экрана в звонке.                                      |
 
 ## <a name="properties"></a>Свойства
 
