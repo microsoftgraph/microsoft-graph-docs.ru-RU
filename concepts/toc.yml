@@ -86,6 +86,8 @@ items:
             href: outlook-get-free-busy-schedule.md
           - name: Предложение нового времени собрания (предварительная версия)
             href: outlook-calendar-meeting-proposals.md
+          - name: Организация и посещение собраний по сети (предварительная версия)
+            href: outlook-calendar-online-meetings.md
           - name: Планирование повторяющихся событий
             href: outlook-schedule-recurring-events.md
           - name: Получение общих событий
