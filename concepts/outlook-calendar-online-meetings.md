@@ -1,28 +1,33 @@
 ---
-title: "Use Outlook to organize and attend meetings online"
-description: "In Outlook, a meeting organizer can allow invitees to propose alternative meeting times."
-author: "angelgolfer-ms"
+title: Организация и посещение собраний по сети с помощью Outlook
+description: В Outlook организатор собрания может разрешить приглашенным предлагать другое время собрания.
+author: angelgolfer-ms
 localization_priority: Priority
-ms.prod: "outlook"
+ms.prod: outlook
+ms.openlocfilehash: cfe3cdd7d328194d21141c532d26659e8a8508b1
+ms.sourcegitcommit: c25828c596b7e0939fa164a3d7754722943152c2
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "38757349"
 ---
+# <a name="use-outlook-to-organize-or-attend-meetings-online-preview"></a><span data-ttu-id="a8665-103">Организация и посещение собраний по сети с помощью Outlook (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="a8665-103">Use Outlook to organize or attend meetings online (preview)</span></span>
 
-# Use Outlook to organize or attend meetings online (preview)
+<span data-ttu-id="a8665-104">В организации, которая поддерживает поставщиков собраний по сети, администраторы могут настроить календари Outlook для поддержки собраний, использующих этих поставщиков, при этом один из них является поставщиком по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="a8665-104">In an organization that supports online meeting providers, administrators can set up Outlook calendars to support meetings that use these providers, with one of these providers being the default provider.</span></span> <span data-ttu-id="a8665-105">Вы можете [создать](#create-and-enable-a-meeting-online) или [обновить](#update-a-meeting-to-enable-it-online) [событие](/graph/api/resources/event?view=graph-rest-beta) в Outlook и разрешить участникам присоединиться к собранию по сети, используя поддерживаемого поставщика.</span><span class="sxs-lookup"><span data-stu-id="a8665-105">You can [create](#create-and-enable-a-meeting-online) or [update](#update-a-meeting-to-enable-it-online) an [event](/graph/api/resources/event?view=graph-rest-beta) in Outlook and allow attendees to join the meeting online using a supported provider.</span></span> <span data-ttu-id="a8665-106">Вы можете легко [получить сведения о собрании по сети](#get-information-to-join-meeting-online) в связи с **событием**, в том числе URL-адрес для присоединения к собранию.</span><span class="sxs-lookup"><span data-stu-id="a8665-106">You can conveniently [get the online meeting information](#get-information-to-join-meeting-online) of the **event**, including the URL to join the meeting.</span></span> 
 
-In an organization that supports online meeting providers, administrators can set up Outlook calendars to support meetings that use these providers, with one of these providers being the default provider. You can [create](#create-and-enable-a-meeting-online) or [update](#update-a-meeting-to-enable-it-online) an [event](/graph/api/resources/event?view=graph-rest-beta) in Outlook and allow attendees to join the meeting online using a supported provider. You can conveniently [get the online meeting information](#get-information-to-join-meeting-online) of the **event**, including the URL to join the meeting. 
+## <a name="calendars-and-online-meeting-providers"></a><span data-ttu-id="a8665-107">Календари и поставщики собраний по сети</span><span class="sxs-lookup"><span data-stu-id="a8665-107">Calendars and online meeting providers</span></span>
 
-## Calendars and online meeting providers
+<span data-ttu-id="a8665-108">В организации, поддерживающей любого из указанных ниже поставщиков собраний по сети, можно настроить календари Outlook и разрешить организацию собраний по сети.</span><span class="sxs-lookup"><span data-stu-id="a8665-108">An organization that supports any of the following online meeting providers can set up Outlook calendars and enable organizing meetings online:</span></span>
 
-An organization that supports any of the following online meeting providers can set up Outlook calendars and enable organizing meetings online:
+- <span data-ttu-id="a8665-109">Microsoft Teams в составе пакета Office 365 бизнес или Office 365 корпоративный</span><span class="sxs-lookup"><span data-stu-id="a8665-109">Microsoft Teams, acquired as part of an Office 365 business or enterprise suite</span></span>
+- <span data-ttu-id="a8665-110">Skype</span><span class="sxs-lookup"><span data-stu-id="a8665-110">Skype</span></span>
+- <span data-ttu-id="a8665-111">Skype для бизнеса</span><span class="sxs-lookup"><span data-stu-id="a8665-111">Skype for Business</span></span>
 
-- Microsoft Teams, acquired as part of an Office 365 business or enterprise suite
-- Skype
-- Skype for Business
+<span data-ttu-id="a8665-112">Найдите свойства **allowedOnlineMeetingProviders** и **defaultOnlineMeetingProvider**, чтобы проверить, поддерживает ли [календарь](/graph/api/resources/calendar?view=graph-rest-beta) Outlook поставщика собраний по сети.</span><span class="sxs-lookup"><span data-stu-id="a8665-112">Look for the **allowedOnlineMeetingProviders** and **defaultOnlineMeetingProvider** properties to verify if an Outlook [calendar](/graph/api/resources/calendar?view=graph-rest-beta) supports any online meeting providers.</span></span> <span data-ttu-id="a8665-113">В приведенном ниже примере календарь по умолчанию выполнившего вход пользователя поддерживает двух поставщиков, Microsoft Teams и Skype для бизнеса, и использует Microsoft Teams в качестве поставщика собраний по сети по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="a8665-113">The following example shows the signed-in user's default calendar supports two providers, Microsoft Teams and Skype for Business, and uses Microsoft Teams as the default online meeting provider.</span></span> 
 
-Look for the **allowedOnlineMeetingProviders** and **defaultOnlineMeetingProvider** properties to verify if an Outlook [calendar](/graph/api/resources/calendar?view=graph-rest-beta) supports any online meeting providers. The following example shows the signed-in user's default calendar supports two providers, Microsoft Teams and Skype for Business, and uses Microsoft Teams as the default online meeting provider. 
+### <a name="example-find-whether-a-calendar-supports-any-online-meeting-provider"></a><span data-ttu-id="a8665-114">Пример. Узнайте, поддерживает ли календарь поставщика собраний по сети.</span><span class="sxs-lookup"><span data-stu-id="a8665-114">Example: Find whether a calendar supports any online meeting provider</span></span>
 
-### Example: Find whether a calendar supports any online meeting provider
-
-#### Request
+#### <a name="request"></a><span data-ttu-id="a8665-115">Запрос</span><span class="sxs-lookup"><span data-stu-id="a8665-115">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_calendar_support_for_online_meeting_providers"
@@ -32,7 +37,7 @@ Look for the **allowedOnlineMeetingProviders** and **defaultOnlineMeetingProvide
 GET https://graph.microsoft.com/beta/me/calendar
 ```
 
-#### Response
+#### <a name="response"></a><span data-ttu-id="a8665-116">Отклик</span><span class="sxs-lookup"><span data-stu-id="a8665-116">Response</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_calendar_support_for_online_meeting_providers",
@@ -70,16 +75,16 @@ Content-type: application/json
 }
 ```
 
-## Create and enable a meeting online
+## <a name="create-and-enable-a-meeting-online"></a><span data-ttu-id="a8665-117">Создание и включение собрания по сети</span><span class="sxs-lookup"><span data-stu-id="a8665-117">Create and enable a meeting online</span></span>
 
-You can create a meeting and allow attendees to join the meeting online, by setting **isOnlineMeeting** to `true`, and **onlineMeetingProvider** to one of the providers supported by the parent calendar. The following example creates a meeting in the signed-in user's default calendar, and enables attendees to join the meeting via Microsoft Teams. The response includes an **event** with online meeting information specified in the **onlineMeeting** property.
+<span data-ttu-id="a8665-118">Вы можете создать собрание и разрешить участникам присоединиться к собранию по сети, задав значение `true` для **isOnlineMeeting** и изменив значение **onlineMeetingProvider** на одного из поставщиков, поддерживаемых родительским календарем.</span><span class="sxs-lookup"><span data-stu-id="a8665-118">You can create a meeting and allow attendees to join the meeting online, by setting **isOnlineMeeting** to `true`, and **onlineMeetingProvider** to one of the providers supported by the parent calendar.</span></span> <span data-ttu-id="a8665-119">В приведенном ниже примере показано, как создать собрание в календаре по умолчанию выполнившего вход пользователя и разрешить участникам присоединиться к собранию с помощью Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="a8665-119">The following example creates a meeting in the signed-in user's default calendar, and enables attendees to join the meeting via Microsoft Teams.</span></span> <span data-ttu-id="a8665-120">Отклик включает **событие** со сведениями о собрании по сети, указанными в свойстве **onlineMeeting**.</span><span class="sxs-lookup"><span data-stu-id="a8665-120">The response includes an **event** with online meeting information specified in the **onlineMeeting** property.</span></span>
 
 > [!NOTE]
-> Once you enable a meeting online, Microsoft Graph sets the meeting information in **onlineMeeting**. Subsequently, you cannot change the **onlineMeetingProvider** property, nor set **isOnlineMeeting** to `false` to disable the meeting online.
+> <span data-ttu-id="a8665-121">После включения собрания по сети Microsoft Graph задаст сведения о собрании в **onlineMeeting**.</span><span class="sxs-lookup"><span data-stu-id="a8665-121">Once you enable a meeting online, Microsoft Graph sets the meeting information in **onlineMeeting**.</span></span> <span data-ttu-id="a8665-122">В дальнейшем вы не сможете изменить свойство **onlineMeetingProvider** или задать значение `false` для **isOnlineMeeting**, чтобы отключить собрание по сети. </span><span class="sxs-lookup"><span data-stu-id="a8665-122">Subsequently, you cannot change the **onlineMeetingProvider** property, nor set **isOnlineMeeting** to `false` to disable the meeting online.</span></span>
 
-### Example: Create and make meeting available as an online meeting
+### <a name="example-create-and-make-meeting-available-as-an-online-meeting"></a><span data-ttu-id="a8665-123">Пример. Создайте собрание и сделайте его доступным по сети</span><span class="sxs-lookup"><span data-stu-id="a8665-123">Example: Create and make meeting available as an online meeting</span></span>
 
-#### Request
+#### <a name="request"></a><span data-ttu-id="a8665-124">Запрос</span><span class="sxs-lookup"><span data-stu-id="a8665-124">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_meeting_enable_online"
@@ -122,7 +127,7 @@ Content-type: application/json
 }
 ```
 
-#### Response
+#### <a name="response"></a><span data-ttu-id="a8665-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="a8665-125">Response</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_meeting_enable_online",
@@ -221,16 +226,16 @@ Content-type: application/json
 }
 ```
 
-## Get information to join meeting online
+## <a name="get-information-to-join-meeting-online"></a><span data-ttu-id="a8665-126">Сведения о присоединении к собранию по сети</span><span class="sxs-lookup"><span data-stu-id="a8665-126">Get information to join meeting online</span></span>
 
-Attendees and organizers can use the **isOnlineMeeting** property to verify if an [event](/graph/api/resources/event?view=graph-rest-beta) is enabled for online participation. They can use the **onlineMeetingProvider** property to determine the meeting provider, and the **onlineMeeting** property for connection information including **joinUrl**. 
+<span data-ttu-id="a8665-127">Участники и организаторы могут использовать свойство **isOnlineMeeting**, чтобы проверить, включено ли [событие](/graph/api/resources/event?view=graph-rest-beta) для онлайн-участия.</span><span class="sxs-lookup"><span data-stu-id="a8665-127">Attendees and organizers can use the **isOnlineMeeting** property to verify if an [event](/graph/api/resources/event?view=graph-rest-beta) is enabled for online participation.</span></span> <span data-ttu-id="a8665-128">Они могут использовать свойство **onlineMeetingProvider** для определения поставщика собрания, а **onlineMeeting** — для получения сведений о подключении, в том числе **joinUrl**.</span><span class="sxs-lookup"><span data-stu-id="a8665-128">They can use the **onlineMeetingProvider** property to determine the meeting provider, and the **onlineMeeting** property for connection information including **joinUrl**.</span></span> 
 
 > [!IMPORTANT]
-> Access the URL to join a meeting using **joinUrl**, available via the **onlineMeeting** property of the **event**. Do not use the **onlineMeetingUrl** property of the **event** because **onlineMeetingUrl** will soon be deprecated.
+> <span data-ttu-id="a8665-129">Чтобы получить доступ к URL-адресу и присоединиться к собранию, используйте **joinUrl**, который предоставляется через свойство **события** **onlineMeeting**.</span><span class="sxs-lookup"><span data-stu-id="a8665-129">Access the URL to join a meeting using **joinUrl**, available via the **onlineMeeting** property of the **event**.</span></span> <span data-ttu-id="a8665-130">В дальнейшем не рекомендуется использовать свойство **события** **onlineMeetingUrl** (свойство **onlineMeetingUrl** устарело).</span><span class="sxs-lookup"><span data-stu-id="a8665-130">Do not use the **onlineMeetingUrl** property of the **event** because **onlineMeetingUrl** will soon be deprecated.</span></span>
 
-### Example: Get online meeting information
+### <a name="example-get-online-meeting-information"></a><span data-ttu-id="a8665-131">Пример. Получите сведения о собрании по сети</span><span class="sxs-lookup"><span data-stu-id="a8665-131">Example: Get online meeting information</span></span>
 
-#### Request
+#### <a name="request"></a><span data-ttu-id="a8665-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="a8665-132">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_event_online_meeting_info"
@@ -240,7 +245,7 @@ Attendees and organizers can use the **isOnlineMeeting** property to verify if a
 GET https://graph.microsoft.com/beta/me/events/AAMkADAGu0AABIGYDZAAA=?$select=isOnlineMeeting,onlineMeetingProvider,onlineMeeting
 ```
 
-#### Response
+#### <a name="response"></a><span data-ttu-id="a8665-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="a8665-133">Response</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_event_online_meeting_info",
@@ -266,15 +271,15 @@ Content-type: application/json
 ```
 
 
-## Update a meeting to enable it online
-You can change an existing **event** to make it available as an online meeting, by setting **isOnlineMeeting** to `true`, and **onlineMeetingProvider** to one of the online meeting providers supported by the parent calendar. The response includes the updated **event** with the corresponding online meeting information specified in the **onlineMeeting** property.
+## <a name="update-a-meeting-to-enable-it-online"></a><span data-ttu-id="a8665-134">Обновление собрания для включения по сети</span><span class="sxs-lookup"><span data-stu-id="a8665-134">Update a meeting to enable it online</span></span>
+<span data-ttu-id="a8665-135">Вы можете изменить существующее **событие**, чтобы сделать его доступным в качестве собрания по сети, задав значение `true` для **isOnlineMeeting** и изменив значение **onlineMeetingProvider** на одного из поставщиков собраний по сети, поддерживаемых родительским календарем.</span><span class="sxs-lookup"><span data-stu-id="a8665-135">You can change an existing **event** to make it available as an online meeting, by setting **isOnlineMeeting** to `true`, and **onlineMeetingProvider** to one of the online meeting providers supported by the parent calendar.</span></span> <span data-ttu-id="a8665-136">Отклик включает обновленное **событие** с соответствующими сведениями о собрании по сети, указанными в свойстве **onlineMeeting**.</span><span class="sxs-lookup"><span data-stu-id="a8665-136">The response includes the updated **event** with the corresponding online meeting information specified in the **onlineMeeting** property.</span></span>
 
 > [!NOTE]
-> Once you enable a meeting online, Microsoft Graph sets the meeting information in **onlineMeeting**. Subsequently, you cannot change the **onlineMeetingProvider** property, nor set **isOnlineMeeting** to `false` to disable the meeting online.
+> <span data-ttu-id="a8665-137">После включения собрания по сети Microsoft Graph задаст сведения о собрании в **onlineMeeting**.</span><span class="sxs-lookup"><span data-stu-id="a8665-137">Once you enable a meeting online, Microsoft Graph sets the meeting information in **onlineMeeting**.</span></span> <span data-ttu-id="a8665-138">В дальнейшем вы не сможете изменить свойство **onlineMeetingProvider** или задать значение `false` для **isOnlineMeeting**, чтобы отключить собрание по сети. </span><span class="sxs-lookup"><span data-stu-id="a8665-138">Subsequently, you cannot change the **onlineMeetingProvider** property, nor set **isOnlineMeeting** to `false` to disable the meeting online.</span></span>
 
-### Example: Update a meeting to make it available as an online meeting
+### <a name="example-update-a-meeting-to-make-it-available-as-an-online-meeting"></a><span data-ttu-id="a8665-139">Пример. Обновите собрание, чтобы сделать его доступным по сети.</span><span class="sxs-lookup"><span data-stu-id="a8665-139">Example: Update a meeting to make it available as an online meeting</span></span>
 
-#### Request
+#### <a name="request"></a><span data-ttu-id="a8665-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="a8665-140">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_meeting_online"
@@ -289,7 +294,7 @@ PATCH https://graph.microsoft.com/beta/me/events/AAMkADAGu0AABIGYDaAAA=
 }
 ```
 
-#### Response
+#### <a name="response"></a><span data-ttu-id="a8665-141">Ответ</span><span class="sxs-lookup"><span data-stu-id="a8665-141">Response</span></span>
 <!-- {
   "blockType": "response",
   "name": "update_meeting_online",
@@ -421,9 +426,9 @@ Content-type: application/json
 
 
 
-## See also
-- For information on Microsoft Teams interoperability with Office 365, see [coexistence and upgrade settings](https://docs.microsoft.com/microsoftteams/setting-your-coexistence-and-upgrade-settings).
-- [Finding possible meeting times on the Outlook calendar](findmeetingtimes-example.md)
-- [Getting the free/busy schedule for users and resources](outlook-get-free-busy-schedule.md)
-- [Propose meeting times in an Outlook calendar (preview)](outlook-calendar-meeting-proposals.md)
-- [Scheduling repeating appointments as recurring events in Outlook](outlook-schedule-recurring-events.md)
+## <a name="see-also"></a><span data-ttu-id="a8665-142">См. также</span><span class="sxs-lookup"><span data-stu-id="a8665-142">See also</span></span>
+- <span data-ttu-id="a8665-143">Сведения о взаимодействии Microsoft Teams с Office 365 см. в статье [Параметры сосуществования и обновления](https://docs.microsoft.com/microsoftteams/setting-your-coexistence-and-upgrade-settings).</span><span class="sxs-lookup"><span data-stu-id="a8665-143">For information on Microsoft Teams interoperability with Office 365, see [coexistence and upgrade settings](https://docs.microsoft.com/microsoftteams/setting-your-coexistence-and-upgrade-settings).</span></span>
+- [<span data-ttu-id="a8665-144">Поиск времени для проведения собрания в календаре Outlook</span><span class="sxs-lookup"><span data-stu-id="a8665-144">Finding possible meeting times on the Outlook calendar</span></span>](findmeetingtimes-example.md)
+- [<span data-ttu-id="a8665-145">Получение расписания доступности пользователей и ресурсов</span><span class="sxs-lookup"><span data-stu-id="a8665-145">Getting the free/busy schedule for users and resources</span></span>](outlook-get-free-busy-schedule.md)
+- [<span data-ttu-id="a8665-146">Предложение времени собраний в календаре Outlook (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="a8665-146">Propose meeting times in an Outlook calendar</span></span>](outlook-calendar-meeting-proposals.md)
+- [<span data-ttu-id="a8665-147">Планирование повторных встреч в качестве повторяющихся мероприятий в Outlook</span><span class="sxs-lookup"><span data-stu-id="a8665-147">Scheduling repeating appointments as recurring events in Outlook</span></span>](outlook-schedule-recurring-events.md)
