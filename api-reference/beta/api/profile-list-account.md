@@ -1,22 +1,22 @@
 ---
-title: Учетная запись списка
+title: Список учетных записей
 description: Получение списка объектов усераккаунтинформатион.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 800814e1b8d342e4d0d118101dccf65007250514
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 13d1a5c35f177771886598629e3f6f27ff91931e
+ms.sourcegitcommit: f359d8d3946af55dc76a02bb7bf522a4d50a2707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37998032"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39250651"
 ---
-# <a name="list-account"></a>Учетная запись списка
+# <a name="list-accounts"></a>Список учетных записей
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получает свойства, связанные с учетной записью пользователя, из [профиля](../resources/profile.md).
+Получает свойства, связанные с учетными записями пользователя из [профиля](../resources/profile.md).
 
 ## <a name="permissions"></a>Разрешения
 

@@ -1,17 +1,17 @@
 ---
 author: JeremyKelley
-description: Получение метаданных для DriveItem в объекте Drive по пути в файловой системе или идентификатору.
+description: Получение метаданных ресурса DriveItem в объекте Drive по пути в файловой системе или идентификатору.
 ms.date: 09/10/2017
 title: Получение файла или папки
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 0f7aee77c2a3a97bef8c67789d2a88d14ad0a62f
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: 1a7e4af2e31e3f3ec6f279b5e9f6646bc4c6ed60
+ms.sourcegitcommit: f359d8d3946af55dc76a02bb7bf522a4d50a2707
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333215"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39250644"
 ---
 # <a name="get-a-driveitem-resource"></a>Получение ресурса DriveItem
 
@@ -25,9 +25,11 @@ ms.locfileid: "37333215"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
+|Делегированные (рабочая или учебная учетная запись) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All </br>Group.Read.All, Group.ReadWrite.All </br>Sites.Read.All, Sites.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
-|Для приложений | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+|Для приложений | Files.Read.All, Files.ReadWrite.All </br>Group.Read.All, Group.ReadWrite.All </br>Sites.Read.All, Sites.ReadWrite.All |
+
+> Note: для `/teams` конечной точки требуется использование разрешений Group. Read. ALL или Group. ReadWrite. ALL.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -38,6 +40,7 @@ GET /drives/{drive-id}/items/{item-id}
 GET /drives/{drive-id}/root:/{item-path}
 GET /groups/{group-id}/drive/items/{item-id}
 GET /groups/{group-id}/drive/root:/{item-path}
+GET /teams/{teamId}/channels/{channelId}/files
 GET /me/drive/items/{item-id}
 GET /me/drive/root:/{item-path}
 GET /sites/{siteId}/drive/items/{itemId}
@@ -72,7 +75,6 @@ GET /users/{userId}/drive/root:/{item-path}
 
 Ниже приведен пример запроса к корневой папке OneDrive пользователя.
 
-
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-item-metadata" }-->
 
@@ -92,7 +94,6 @@ GET /me/drive/root
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ## <a name="response"></a>Отклик
 
@@ -132,7 +133,7 @@ Content-type: application/json
 
 ## <a name="remarks"></a>Примечания
 
-Дополнительные сведения о возвращении ошибок см. в статье об [ответах с ошибками][error-response].
+Дополнительные сведения о возвращении ошибок см. в статье [Ответы с ошибками][error-response].
 
 [error-response]: /graph/errors
 [odata-parameters]: /graph/query-parameters
