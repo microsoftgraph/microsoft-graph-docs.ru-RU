@@ -13,6 +13,7 @@ items:
       - name: Службы в Microsoft Graph
         href: overview-major-services.md
       - name: Новые возможности
+        expanded: true
         items:
           - name: Обзор новых возможностей
             href: whats-new-overview.md
