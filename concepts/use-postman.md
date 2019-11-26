@@ -1,14 +1,14 @@
 ---
 title: Использование Postman с API Microsoft Graph
 description: Используйте коллекцию Microsoft Graph Postman, чтобы начать работу с API Microsoft Graph в считанные минуты.
-author: ''
+author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 2140dec07328b75f7b1729cd3e7cf7c86e65f738
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fc47befc479b2236a7bda83515cfa0b61c2601b1
+ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36038187"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "37969880"
 ---
 # <a name="use-postman-with-the-microsoft-graph-api"></a>Использование Postman с API Microsoft Graph
 
@@ -16,7 +16,7 @@ ms.locfileid: "36038187"
 
 ![Изображение Postman](https://github.com/microsoftgraph/microsoftgraph-postman-collections/blob/master/images/postman.png?raw=true)
 
-В этой статье рассказывается о том, как быстро приступить к работе с Postman и Microsoft Graph. Кроме того, вы можете просматривать API Microsoft Graph непосредственно в веб-браузере с помощью [песочницы Graph](https://developer.microsoft.com/ru-RU/graph/graph-explorer).
+В этой статье рассказывается о том, как быстро приступить к работе с Postman и Microsoft Graph. Кроме того, вы можете просматривать API Microsoft Graph непосредственно в веб-браузере с помощью [песочницы Graph](https://developer.microsoft.com/graph/graph-explorer).
 
 ## <a name="accessing-the-collection"></a>Доступ к коллекции
 Доступ к коллекции в Postman можно получить двумя способами: путем ее использования или путем добавления в нее. Вначале вам потребуется запустить [Postman](https://www.getpostman.com/) на компьютере.
@@ -72,9 +72,9 @@ ms.locfileid: "36038187"
 2. Выберите **Среда Microsoft Graph**.
 3. Щелкните значок с изображением **глаза** справа и затем выберите **Изменить**.
 4. Введите свое приложение Microsoft Identity в **текущих** (не **начальных**) переменных: **ClientID**, **ClientSecret** и ** TenantID**. 
- Дополнительные сведения о том, как создать приложение и получить согласие администратора только для приложений, см. в записи блога [Использование Postman для осуществления вызовов Microsoft Graph](https://developer.microsoft.com/en-us/graph/blogs/30daysmsgraph-day-13-postman-to-make-microsoft-graph-calls/).
+ Дополнительные сведения о том, как создать приложение и получить согласие администратора только для приложений, см. в записи блога [Использование Postman для осуществления вызовов Microsoft Graph](https://developer.microsoft.com/ru-RU/graph/blogs/30daysmsgraph-day-13-postman-to-make-microsoft-graph-calls/).
 
-5. Нажмите кнопку **Обновить**. Закройте диалоговое окно **Управление средами **. В коллекции **MicrosoftGraph v1.0 | Приложение** с левой стороны выберите **Получить маркер доступа только для приложений**. Затем в правой части нажмите кнопку **Отправить**.
+5. Нажмите кнопку **Обновить**. Закройте диалоговое окно **Управление средами**. В коллекции **MicrosoftGraph v1.0 | Приложение** с левой стороны выберите **Получить маркер доступа только для приложений**. Затем в правой части нажмите кнопку **Отправить**.
 6. Разверните папку **Приложение | Пользователи** и выберите **Получить пользователей**. Затем нажмите кнопку **Отправить**.
 
 Теперь вы можете работать с коллекциями Microsoft Graph v 1.0.

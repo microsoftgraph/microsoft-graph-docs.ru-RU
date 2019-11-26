@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: f9901df5724cc701bcaab0138ab15fc20cf9c563
-ms.sourcegitcommit: c25828c596b7e0939fa164a3d7754722943152c2
+ms.openlocfilehash: c1d38f86e5644decfbae3b5e90b456e55f897cb6
+ms.sourcegitcommit: f359d8d3946af55dc76a02bb7bf522a4d50a2707
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756879"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "39250710"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -122,6 +122,12 @@ ms.locfileid: "38756879"
 | Дополнение        | Бета        | Добавлено действие [query](/graph/api/search-query?view=graph-rest-beta). |
 | Дополнение        | Бета        | Добавлены сложные типы [searchRequest](/graph/api/resource/searchrequest?view=graph-rest-beta), [searchQuery](/graph/api/resource/searchquery?view=graph-rest-beta), [searchQueryString](/graph/api/resource/searchquerystring?view=graph-rest-beta),[searchResponse](/graph/api/resource/searchresponse?view=graph-rest-beta), [searchHitsContainer](/graph/api/resource/searchhitscontainer?view=graph-rest-beta) и [searchHit](/graph/api/resource/searchhit?view=graph-rest-beta). |
 | Дополнение        | Бета        | Добавлены объекты [externalConnection](/graph/api/resource/externalconnection?view=graph-rest-beta), [schema](/graph/api/resource/schema?view=graph-rest-beta), [externalItem](/graph/api/resource/externalitem?view=graph-rest-beta) и [externalFile](/graph/api/resource/externalfile?view=graph-rest-beta), а также методы, доступные в этих объектах. |
+
+### <a name="teamwork-microsoft-teams"></a>Работа в команде (Microsoft Teams)
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение        | Бета          | Добавлен дополнительный маршрут для получения [driveItem] с помощью идентификатора команды и канала, [get driveItem](/graph/api/driveitem-get?view=graph-rest-beta). |
 
 ## <a name="october-2019"></a>Октябрь 2019 г.
 
@@ -1241,7 +1247,7 @@ ms.locfileid: "38756879"
 |Дополнение |бета| Добавлено свойство [видимость](/graph/api/resources/teamvisibilitytype?view=graph-rest-beta) для [группы](/graph/api/resources/team?view=graph-rest-beta).|
 |Дополнение |бета| Добавлено свойство [шаблон](/graph/api/resources/teamstemplate?view=graph-rest-beta) для [группы](/graph/api/resources/team?view=graph-rest-beta).|
 |Дополнение |бета| Добавлено семейство владельцы для [группы](/graph/api/resources/team?view=graph-rest-beta).|
-|Дополнение |бета| Представлен новый элемент перечисления unknownFutureValue для объекта teamVisibilityType.|
+|Дополнение |Бета| Представлен новый элемент перечисления unknownFutureValue для объекта teamVisibilityType.|
 |Дополнение |бета| Представлен новый элемент перечисления unknownFutureValue для объекта giphyRatingType.|
 |Дополнение |бета| Представлен новый элемент перечисления unknownFutureValue для объекта teamsAsyncOperationType.|
 |Дополнение |бета| Представлен новый элемент перечисления unknownFutureValue для объекта teamsAsyncOperationStatus.|
@@ -2316,7 +2322,7 @@ ms.locfileid: "38756879"
 |Дополнение|Версия 1.0|Добавлено действие [wipe](/graph/api/intune-devices-manageddevice-wipe?view=graph-rest-1.0) для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлено действие [resetPasscode](/graph/api/intune-devices-manageddevice-resetpasscode?view=graph-rest-1.0) для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлено действие [remoteLock](/graph/api/intune-devices-manageddevice-remotelock?view=graph-rest-1.0) для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0). |
-|Дополнение|Версия 1.0|Добавлено действие [requestRemoteAssistance](/graph/api/intune-devices-manageddevice-requestremoteassistance?view=graph-rest-1.0) для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0). |
+|Дополнение|1.0|Добавлено действие [requestRemoteAssistance](/graph/api/intune-devices-manageddevice-requestremoteassistance?view=graph-rest-1.0) для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлено действие [disableLostMode](/graph/api/intune-devices-manageddevice-disablelostmode?view=graph-rest-1.0) для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлено действие [locateDevice](/graph/api/intune-devices-manageddevice-locatedevice?view=graph-rest-1.0) для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлено действие [bypassActivationLock](/graph/api/intune-devices-manageddevice-bypassactivationlock?view=graph-rest-1.0) для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0). |
