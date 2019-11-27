@@ -5,16 +5,19 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a09be08a90d819e7d430f9fb03c69b831a288b36
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: 726cafd3d1b7c2f467d490b8ed17e577f0668cd6
+ms.sourcegitcommit: fc9edd17aebed91768e31416e1c1ee0b64d5ce06
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37632595"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39621644"
 ---
 # <a name="add-attachment"></a>Добавление вложения
 
-С помощью этого API можно добавить [вложение](../resources/attachment.md) к событию. Эта операция ограничит размер вложения, которое можно добавить в течение 4 МБ.
+Используйте этот API, чтобы добавить [вложение](../resources/attachment.md) к существующему [событию](../resources/event.md). Эта операция ограничит размер вложения, которое можно добавить в течение 4 МБ.
+
+Если организатор добавляет вложение в событие собрания, организатор может впоследствии [Обновить](event-update.md) событие, чтобы отправить вложение и обновить событие для каждого участника.
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -115,7 +118,7 @@ Content-length: 151
 
 Предоставьте в тексте запроса описание объекта [attachment](../resources/attachment.md) в формате JSON.
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
@@ -181,7 +184,7 @@ Content-length: 600
 ```
 
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",

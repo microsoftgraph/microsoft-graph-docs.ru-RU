@@ -4,12 +4,12 @@ description: Перед отправкой упреждающего сообще
 author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a1cdd206d7cc6db97340ec41727ce9ea64c86510
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+ms.openlocfilehash: e8222931709ab504106c86209ec186140b4a2087
+ms.sourcegitcommit: fc9edd17aebed91768e31416e1c1ee0b64d5ce06
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36839201"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "39621651"
 ---
 # <a name="proactive-messaging-using-a-bot-in-microsoft-teams"></a>Упреждающий обмен сообщениями с помощью Bot в Microsoft Teams
 
@@ -75,7 +75,7 @@ POST /users/{user-id}/teamwork/installedApps
 Если вы потеряли его `chatThreadId`, вы сможете снова найти его, вызвав:
 
 ```http
-GET /users/{user-id}/chats?$filter=installedApps/any(a:a/teamsApp/id eq '{teamsAppid}'
+GET /users/{user-id}/chats?$filter=installedApps/any(a:a/teamsApp/id eq '{teamsAppid}')
 ```
 
 Свойство **ID** результата — идентификатор chatThread.
