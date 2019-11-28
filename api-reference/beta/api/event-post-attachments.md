@@ -5,18 +5,20 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 81eeab8beb45f292483033a9120b8a8a3c424bc7
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: e382b778819c7c1c68d445ee9691a0206bbd76e5
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37637373"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636824"
 ---
 # <a name="add-attachment"></a>Добавление вложения
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-С помощью этого API можно добавить [вложение](../resources/attachment.md) к событию. Эта операция ограничит размер вложения, которое можно добавить в течение 4 МБ.
+Используйте этот API, чтобы добавить [вложение](../resources/attachment.md) к существующему [событию](../resources/event.md). Эта операция ограничит размер вложения, которое можно добавить в течение 4 МБ.
+
+Если организатор добавляет вложение в событие собрания, организатор может впоследствии [Обновить](event-update.md) событие, чтобы отправить вложение и обновить событие для каждого участника.
 
 ## <a name="permissions"></a>Разрешения
 

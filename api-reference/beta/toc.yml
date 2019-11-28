@@ -4,7 +4,7 @@
       href: /graph/overview
     - name: Получение маркеров аутентификации
       items:
-        - name: Общие сведения
+        - name: Обзор
           href: /graph/auth/index?context=graph/api/beta
         - name: Основы
           href: /graph/auth/auth-concepts?context=graph/api/beta
@@ -880,6 +880,8 @@
                   href: api/call-mute.md
                 - name: Обновление метаданных
                   href: api/call-updatemetadata.md
+                - name: Обновление состояния записи
+                  href: api/call-updaterecordingstatus.md
                 - name: Группа маршрутизации звука
                   href: resources/audioroutinggroup.md
                   items:
@@ -1266,7 +1268,7 @@
                 - name: Сертификат подписи корпоративного кода
                   href: resources/intune-apps-enterprisecodesigningcertificate.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-apps-enterprisecodesigningcertificate-list.md
                     - name: Получение
                       href: api/intune-apps-enterprisecodesigningcertificate-get.md
@@ -1287,7 +1289,7 @@
                 - name: Бизнес-приложение iOS
                   href: resources/intune-apps-ioslobapp.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-apps-ioslobapp-list.md
                     - name: Получение
                       href: api/intune-apps-ioslobapp-get.md
@@ -1708,7 +1710,7 @@
                 - name: Категория мобильных приложений
                   href: resources/intune-apps-mobileappcategory.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-apps-mobileappcategory-list.md
                     - name: Получение
                       href: api/intune-apps-mobileappcategory-get.md
@@ -1721,7 +1723,7 @@
                 - name: Содержимое мобильных приложений
                   href: resources/intune-apps-mobileappcontent.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-apps-mobileappcontent-list.md
                     - name: Получение
                       href: api/intune-apps-mobileappcontent-get.md
@@ -3416,7 +3418,7 @@
                   items:
                     - name: Получение
                       href: api/intune-deviceconfig-devicecomplianceuseroverview-get.md
-                    - name: Update
+                    - name: Обновление
                       href: api/intune-deviceconfig-devicecomplianceuseroverview-update.md
                 - name: 'Состояние пользователей, касающийся соответствия устройств требованиям'
                   href: resources/intune-deviceconfig-devicecomplianceuserstatus.md
@@ -4916,7 +4918,7 @@
                 - name: Настройка сетевых ограничений Windows 10
                   href: resources/intune-deviceconfig-windows10networkboundaryconfiguration.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-deviceconfig-windows10networkboundaryconfiguration-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-windows10networkboundaryconfiguration-get.md
@@ -4931,7 +4933,7 @@
                 - name: Профиль сертификата импорта PFX Windows 10
                   href: resources/intune-deviceconfig-windows10pfximportcertificateprofile.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-deviceconfig-windows10pfximportcertificateprofile-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-windows10pfximportcertificateprofile-get.md
@@ -6640,7 +6642,7 @@
                       href: api/intune-mam-defaultmanagedappprotection-get.md
                     - name: Создание
                       href: api/intune-mam-defaultmanagedappprotection-create.md
-                    - name: Удаление
+                    - name: Удалить
                       href: api/intune-mam-defaultmanagedappprotection-delete.md
                     - name: Обновление
                       href: api/intune-mam-defaultmanagedappprotection-update.md
@@ -6858,7 +6860,7 @@
                       href: api/intune-mam-windowsinformationprotectiondeviceregistration-get.md
                     - name: Создание
                       href: api/intune-mam-windowsinformationprotectiondeviceregistration-create.md
-                    - name: Удалить
+                    - name: Удаление
                       href: api/intune-mam-windowsinformationprotectiondeviceregistration-delete.md
                     - name: Обновление
                       href: api/intune-mam-windowsinformationprotectiondeviceregistration-update.md
@@ -7072,7 +7074,7 @@
                   items:
                     - name: Получение
                       href: api/intune-onboarding-onpremisesconditionalaccesssettings-get.md
-                    - name: Обновление
+                    - name: Update
                       href: api/intune-onboarding-onpremisesconditionalaccesssettings-update.md
                 - name: Организация
                   href: resources/intune-onboarding-organization.md
@@ -7289,7 +7291,7 @@
                   items:
                     - name: Получение
                       href: api/intune-shared-deviceappmanagement-get.md
-                    - name: Обновление
+                    - name: Update
                       href: api/intune-shared-deviceappmanagement-update.md
                     - name: Действие syncMicrosoftStoreForBusinessApps
                       href: api/intune-shared-deviceappmanagement-syncmicrosoftstoreforbusinessapps.md
@@ -7339,7 +7341,7 @@
                 - name: Конфигурация регистрации устройств
                   href: resources/intune-shared-deviceenrollmentconfiguration.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-shared-deviceenrollmentconfiguration-list.md
                     - name: Получение
                       href: api/intune-shared-deviceenrollmentconfiguration-get.md
@@ -7499,7 +7501,7 @@
                 - name: 'Устранение неполадок с мобильным приложением: событие'
                   href: resources/intune-shared-mobileapptroubleshootingevent.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-shared-mobileapptroubleshootingevent-list.md
                     - name: Получение
                       href: api/intune-shared-mobileapptroubleshootingevent-get.md
@@ -9287,7 +9289,7 @@
                       href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                     - name: Получение многозначного свойства
                       href: api/multivaluelegacyextendedproperty-get.md
-        - name: Примечания
+        - name: Заметки
           displayName: OneNote
           items:
             - name: Обзор
@@ -9900,7 +9902,7 @@
               items:
                 - name: Список людей
                   href: api/user-list-people.md
-            - name: Профиль (Предварительная версия)
+            - name: Профиль (предварительная версия)
               href: resources/profile.md
               items:
                 - name: Получение профиля пользователя

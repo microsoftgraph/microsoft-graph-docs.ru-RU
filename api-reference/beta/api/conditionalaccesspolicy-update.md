@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c290faff53b98e28dc9876b9fd76abac8a813196
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: b55e492f7fae576c9026588205eae2bafa99c178
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37936723"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636766"
 ---
 # <a name="update-conditionalaccesspolicy"></a>Обновление Кондитионалакцессполици
 
@@ -24,12 +24,9 @@ ms.locfileid: "37936723"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)                    |
 |:--------------------------------------|:---------------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Policy. ReadWrite. Кондитионалакцесс и Directory. AccessAsUser. ALL |
+|Делегированные (рабочая или учебная учетная запись)     | Policy. ReadWrite. Кондитионалакцесс и Application. Read. ALL |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
-
->[!NOTE]
->Этот API требует нескольких разрешений. Подробнее: [Известные проблемы](/graph/known-issues#conditional-access-policies-and-named-locations).
 
 ## <a name="http-request"></a>HTTP-запрос
 

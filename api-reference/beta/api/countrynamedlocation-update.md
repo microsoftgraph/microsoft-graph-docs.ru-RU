@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dd3dabf7e372ad7e1c8ea1914bb42c25577edf64
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 81224b2c0e31ad4ade9caeca661624e1b0fe4383
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37937118"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636745"
 ---
 # <a name="update-countrynamedlocation"></a>Обновление Каунтринамедлокатион
 
@@ -24,12 +24,9 @@ ms.locfileid: "37937118"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy. ReadWrite. Кондитионалакцесс и Directory. AccessAsUser. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.ConditionalAccess |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
-
->[!NOTE]
->Этот API требует нескольких разрешений. Подробнее: [Известные проблемы](/graph/known-issues#conditional-access-policies-and-named-locations).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,8 +49,8 @@ PATCH /conditionalAccess/namedLocations/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|каунтриесандрегионс|Коллекция строк|Список стран и/или регионов в формате из двух букв, заданных в стандарте ISO 3166-2.|
-|displayName|Строка|Удобное для человека имя расположения.|
+|каунтриесандрегионс|Коллекция String|Список стран и/или регионов в формате из двух букв, заданных в стандарте ISO 3166-2.|
+|displayName|String|Удобное для человека имя расположения.|
 |инклудеункновнкаунтриесандрегионс|Логический|Значение, `true` если IP-адреса, которые не сопоставляются со страной или регионом, должны быть включены в именованное расположение.|
 
 ## <a name="response"></a>Отклик

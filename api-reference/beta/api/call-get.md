@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: dcf71d38535d0e033305e9ed945abf17cee1282a
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: f02f1a984f27148aeac088efb4d56409480ba969
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302267"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636717"
 ---
 # <a name="get-call"></a>Получение вызова
 
@@ -25,7 +25,7 @@ ms.locfileid: "38302267"
 | :-------------- | :----------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                         |
-| Для приложений                            | Нет.                                  |
+| Приложение                            | Нет.                                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -113,7 +113,7 @@ Content-Type: application/json
   },
   "targets": [
     {
-      "@odata.type": "#microsoft.graph.participantInfo",
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
       "identity": {
         "@odata.type": "#microsoft.graph.identitySet",
         "user": {

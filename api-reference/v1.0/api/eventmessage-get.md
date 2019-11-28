@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 64b9b3bd26c8e740995e9bf4dc762d2518694774
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: d95d648318b2c8d1997d6d948ebff3ffc66fcd61
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36720923"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636787"
 ---
 # <a name="get-eventmessage"></a>Получение объекта eventMessage
 
@@ -43,7 +43,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_lAAA=
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-eventmessage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-eventmessage-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -112,6 +112,7 @@ Content-type: application/json
     "importance":"normal",
     "parentFolderId":"AQMkADYAAAIBDAAAAA==",
     "conversationId":"AAQkADYCipTiRjXQORU=",
+    "conversationIndex":"AdN/Xdgnql4N9FlrT0KKlOJGNdA5FQ==",
     "isDeliveryReceiptRequested":null,
     "isReadReceiptRequested":false,
     "isRead":false,
@@ -175,7 +176,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_jAAA=?$expand=mic
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-event-based-on-eventmessage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-event-based-on-eventmessage-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -186,7 +187,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_jAAA=?$expand=mic
 ---
 
 ##### <a name="response-2"></a>Отклик 2
-Ниже приведен пример отклика. В отклике возвращаются свойства связанного события. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. В отклике возвращаются свойства связанного события. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "name": "get_event_based_on_eventmessage",
@@ -215,8 +216,9 @@ Content-type: application/json
    "subject":"Kick off planning",
    "bodyPreview":"Let's collect opinions from our teams and organize action items.",
    "importance":"normal",
-    "parentFolderId":"AQMkADYAS4AAAIBDAAAAA==",
-    "conversationId":"AAQkADYRuffB3wDlPn-ReFZarI60=",
+   "parentFolderId":"AQMkADYAS4AAAIBDAAAAA==",
+   "conversationId":"AAQkADYRuffB3wDlPn-ReFZarI60=",
+   "conversationIndex":"AdN/XVP4JG598HfAOU+f9F4VlqsjrQ==",
    "isDeliveryReceiptRequested":null,
    "isReadReceiptRequested":false,
    "isRead":false,

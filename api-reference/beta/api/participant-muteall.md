@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a4f5157e4441269258ed578a26a6ea700b8e4e0a
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: b1e4555c77a843cfccd420ef0c17a09dba20a383
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747968"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636829"
 ---
 # <a name="participant-muteall"></a>участник: Мутеалл
 
@@ -28,7 +28,7 @@ ms.locfileid: "38747968"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложений                            | Нет                                        |
+| Приложение                            | Нет                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,8 +49,8 @@ POST /communications/calls/{id}/participants/muteAll
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|participants|Коллекция строк|Участники, которые должны быть отключены.|
-|Контекст|Строка|Контекст клиента.|
+|participants|Коллекция String|Участники, которые должны быть отключены.|
+|Контекст|String|Контекст клиента.|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [коммсоператион](../resources/commsoperation.md) в тексте отклика.
@@ -99,19 +99,20 @@ Content-Length: 81
 
 <!-- {
   "blockType": "response",
+  "name": "participant-muteAll",
   "truncated": true,
   "@odata.type": "microsoft.graph.commsOperation"
 } -->
 ```http
 HTTP/1.1 200 OK
-Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
-Content-Type: application/json
-Content-Length: 259
+Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 
 {
-  "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
-  "status": "completed",
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
+  "@odata.type": "#microsoft.graph.commsOperation",
+  "clientContext": "clientContext-value",
+  "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5",
+  "resultInfo": null,
+  "status": "completed"
 }
 ```
 

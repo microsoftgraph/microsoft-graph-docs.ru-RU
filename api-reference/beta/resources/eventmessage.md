@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 71bdd5fe708bcc49f27f02e84c645cdeff29638c
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: a1896c6da2842631d932e5e30cf09808161dfc35
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37622451"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39637061"
 ---
 # <a name="eventmessage-resource-type"></a>Тип ресурса eventMessage
 
@@ -104,7 +104,7 @@ ms.locfileid: "37622451"
 |ccRecipients|Коллекция [recipient](recipient.md)|Получатели копии сообщения.|
 |changeKey|Строка|Версия сообщения.|
 |conversationId|String|Идентификатор беседы, к которой принадлежит электронное сообщение.|
-|conversationIndex|Edm.Binary|Индекс беседы, к которой относится электронная почта.|
+|conversationIndex|Edm.Binary|Указывает положение сообщения в беседе.|
 |createdDateTime|DateTimeOffset|Дата и время создания сообщения.|
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|Время окончания запрошенного собрания.|
 |flag|[followUpFlag](followupflag.md)|Значение флага, которое указывает статус, дату начала, дату выполнения или дату завершения сообщения.|
@@ -116,12 +116,12 @@ ms.locfileid: "37622451"
 |internetMessageHeaders | Коллекция [internetMessageHeader](internetmessageheader.md) | Коллекция заголовков сообщений, установленных по [RFC 5322](https://www.ietf.org/rfc/rfc5322.txt), которые содержат информацию о маршруте прохождения сообщения. Только для чтения.|
 |internetMessageId |String |Идентификатор сообщения в формате, установленном документом [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). |
 |isAllDay |Boolean|Указывает, продолжается ли событие за весь день. Для настройки этого свойства необходимо также настроить свойства **startDateTime** и **endDateTime** события.|
-|Isdelegated для|Boolean|Значение true, если приглашение на собрание доступно представителю, в противном случае — значение false. Значение по умолчанию — false.|
-|isDeliveryReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
+|Isdelegated для|Логический|Значение true, если приглашение на собрание доступно представителю, в противном случае — значение false. Значение по умолчанию: false.|
+|isDeliveryReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |isDraft|Логическое|Указывает, является ли сообщение черновиком. Сообщение считается черновиком, если оно еще не отправлено.|
-|isOutOfDate|Boolean|Указывает, было ли это приглашение на собрание отменено в последний запрос.|
+|isOutOfDate|Логический|Указывает, было ли это приглашение на собрание отменено в последний запрос.|
 |isRead|Boolean|Указывает, прочитано ли сообщение.|
-|isReadReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
+|isReadReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сообщения.|
 |location|[location](location.md)|Расположение запрошенного собрания.|
 |meetingMessageType|String| Тип сообщения о событии: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTentativelyAccepted`, `meetingDeclined`.|
@@ -157,7 +157,7 @@ ms.locfileid: "37622451"
 |:---------------|:--------|:----------|
 |[Получение объекта eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Считывание свойств и отношений объекта eventMessage.|
 |[Обновление](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Обновление объекта eventMessage.|
-|[Удаление](../api/eventmessage-delete.md) | Нет. |Удаление объекта eventMessage.|
+|[удаление](../api/eventmessage-delete.md); | Нет. |Удаление объекта eventMessage.|
 |[copy](../api/message-copy.md)|[message](message.md)|Копирование сообщения в папку.|
 |[createForward](../api/message-createforward.md)|[message](message.md)|Создание черновика пересылаемого сообщения. После этого вы сможете [обновить](../api/message-update.md) или [отправить](../api/message-send.md) черновик.|
 |[createReply](../api/message-createreply.md)|[message](message.md)|Создание черновика ответного сообщения. После этого вы сможете [обновить](../api/message-update.md) или [отправить](../api/message-send.md) черновик.|

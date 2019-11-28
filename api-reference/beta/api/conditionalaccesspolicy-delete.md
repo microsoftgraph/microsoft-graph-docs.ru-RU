@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3b5a24f3e6fa7bc548c7d0d57f9a972701b00e69
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: bc4d00975fc92e9e561ebfaa1b403f351b0baf9d
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37936779"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636773"
 ---
 # <a name="delete-conditionalaccesspolicy"></a>Удаление Кондитионалакцессполици
 
@@ -24,12 +24,9 @@ ms.locfileid: "37936779"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)                    |
 |:--------------------------------------|:---------------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Policy. ReadWrite. Кондитионалакцесс и Directory. AccessAsUser. ALL |
+|Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.ConditionalAccess |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
-
->[!NOTE]
->Этот API требует нескольких разрешений. Подробнее: [Известные проблемы](/graph/known-issues#conditional-access-policies-and-named-locations).
 
 ## <a name="http-request"></a>HTTP-запрос
 

@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 344aa48fd3b816e5d72141a5388fd1abdce50406
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: ff9de522e96ea6cec614d8673d8f85987ac88908
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747597"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636724"
 ---
 # <a name="call-answer"></a>вызов: ответ
 
@@ -29,7 +29,7 @@ ms.locfileid: "38747597"
 | :-------------- | :-----------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                        |
-| Для приложений     | Calls. Жоинграупкаллс. ALL или Calls. Жоинграупкаллсасгуест. ALL |
+| Приложение     | Calls. Жоинграупкаллс. ALL или Calls. Жоинграупкаллсасгуест. ALL |
 
 > **Примечание:** Для вызова, использующего носитель с размещением приложений, вам также потребуется разрешение Calls. Акцессмедиа. ALL. Необходимо иметь по крайней мере одно из следующих разрешений, чтобы обеспечить `source` расшифровку уведомления о входящем вызове: Calls. Акцессмедиа. ALL, Calls. initiate. ALL, Calls. Инитиатеграупкалл. ALL, Calls. Жоинграупкалл. ALL, Calls. Жоинграупкалласгуест. ALL. `source` Сведения о вызывающем абоненте в уведомлении о входящем звонке. Без по крайней мере одного из этих разрешений `source` оно останется зашифрованным.
 
@@ -53,7 +53,7 @@ POST /communications/calls/{id}/answer
 | Параметр        | Тип                                     |Описание                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 |callbackUri       |String                                    |Позволяет Боты предоставить определенный URI обратного вызова для текущего вызова, чтобы получать уведомления в дальнейшем. Если это свойство не задано, вместо него будет использоваться глобальный URI обратного вызова Bot. Это должно быть `https`.    |
-|акцептедмодалитиес|Коллекция строк                         |Список принимаемых модальности. Возможные значения: `audio`, `video`,. `videoBasedScreenSharing` Необходимо для ответа на вызов. |
+|акцептедмодалитиес|Коллекция String                         |Список принимаемых модальности. Возможные значения: `audio`, `video`,. `videoBasedScreenSharing` Необходимо для ответа на вызов. |
 |mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) или [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |Настройка мультимедиа. Потребоваться                                                                                                            |
 
 ## <a name="response"></a>Отклик
@@ -326,7 +326,7 @@ Content-Type: application/json
         },
         "targets": [
           {
-            "@odata.type": "#microsoft.graph.participantInfo",
+            "@odata.type": "#microsoft.graph.invitationParticipantInfo",
             "identity": {
               "application": {
                 "displayName": "Test BOT",

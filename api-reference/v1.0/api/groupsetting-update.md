@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 961a1f5c82903de18c54f8c179d544c51b18ed94
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6aa2f8b393f1de1e81174097a9da520a096a33cb
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371651"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636801"
 ---
 # <a name="update-a-group-setting"></a>Обновление параметра группы
 
@@ -25,7 +25,7 @@ ms.locfileid: "36371651"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.ReadWrite.All |
+|Приложение | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -36,10 +36,10 @@ ms.locfileid: "36371651"
 PATCH /groupSettings/{id}
 PATCH /groups/{id}/settings/{id}
 ```
-## <a name="optional-request-headers"></a>Необязательные заголовки запросов
+## <a name="request-headers"></a>Заголовки запросов
 | Имя | Описание |
 |:-----------|:-----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
+| Авторизация  | {Token}. Обязательно. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -133,7 +133,7 @@ Content-length: 173
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-groupsetting-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-groupsetting-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

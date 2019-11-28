@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2658baafbe4fadf164004f99f56b9288545c2b8c
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: de1811094d6be3148610078d25e0afafecc3fb04
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938465"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636850"
 ---
 # <a name="update-ipnamedlocation"></a>Обновление Ипнамедлокатион
 
@@ -24,12 +24,9 @@ ms.locfileid: "37938465"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy. ReadWrite. Кондитионалакцесс и Directory. AccessAsUser. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.ConditionalAccess |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
-
->[!NOTE]
->Этот API требует нескольких разрешений. Подробнее: [Известные проблемы](/graph/known-issues#conditional-access-policies-and-named-locations).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,7 +49,7 @@ PATCH /conditionalAccess/namedLocations/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|Строка|Удобное для человека имя расположения.|
+|displayName|String|Удобное для человека имя расположения.|
 |ипранжес|Коллекция объектов [ipRange](../resources/iprange.md)|Список диапазонов IP-адресов в формате IPv4 CIDR (1.2.3.4/32) или любом допустимом формате IPv6 из IETF RFC5962.|
 |Доверять|Логический|Значение, `true` если это расположение явно доверенное.|
 

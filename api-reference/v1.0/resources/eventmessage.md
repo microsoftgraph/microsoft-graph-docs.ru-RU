@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: ac344e868d4341ae9a15bf60bd5e2a3e6076d0a1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e1723cdf1997586cf1342c79112174e8754ec45f
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032552"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636914"
 ---
 # <a name="eventmessage-resource-type"></a>Тип ресурса eventMessage
 
@@ -20,7 +20,7 @@ ms.locfileid: "36032552"
 
 Когда организатор или приложение отправляет приглашение на собрание, оно попадает во входящие участника в виде экземпляра **eventMessage** со свойством **meetingMessageType** **meetingRequest**. Кроме того, Outlook автоматически создает в календаре участника экземпляр **event** со свойством **showAs** **tentative**. 
 
-Чтобы получить свойства связанного события в почтовом ящике участника, приложение может использовать свойство навигации объекта **eventMessage** **event**, как показано в [этом примере](../api/eventmessage-get.md#request-2). Приложение также может отвечать на событие от имени участника программным способом, путем [принятия](../api/event-accept.md), принятия [под вопросом](../api/event-tentativelyaccept.md)или отклонения события. [](../api/event-decline.md)
+Чтобы получить свойства связанного события в почтовом ящике участника, приложение может использовать свойство навигации объекта **eventMessage** **event**, как показано в [этом примере](../api/eventmessage-get.md#request-2). Приложение также может отвечать на событие от имени участника программным способом, путем [принятия](../api/event-accept.md), принятия [под вопросом](../api/event-tentativelyaccept.md)или [отклонения](../api/event-decline.md) события.
 
 Кроме приглашения на собрание, экземпляр **eventMessage** можно найти в папке "Входящие" участника, в результате чего Организатор событий отменяет собрание или в папке "Входящие" организатора в результате участника, отвечающего на приглашение на собрание. Приложение может предпринимать с сообщениями о событиях те же действия, что и с обычными сообщения (с небольшими отличиями).
 
@@ -30,7 +30,7 @@ ms.locfileid: "36032552"
 |:---------------|:--------|:----------|
 |[Получение объекта eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Считывание свойств и отношений объекта eventMessage.|
 |[Обновление](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Обновление объекта eventMessage. |
-|[Удаление](../api/message-delete.md) | Нет. |Удаление объекта eventMessage. |
+|[удаление](../api/message-delete.md); | Нет. |Удаление объекта eventMessage. |
 |[copy](../api/message-copy.md)|[message](message.md)|Копирование сообщения в папку.|
 |[createForward](../api/message-createforward.md)|[message](message.md)|Создание черновика пересылаемого сообщения. После этого вы сможете [обновить](../api/message-update.md) или [отправить](../api/message-send.md) черновик.|
 |[createReply](../api/message-createreply.md)|[message](message.md)|Создание черновика ответного сообщения. После этого вы сможете [обновить](../api/message-update.md) или [отправить](../api/message-send.md) черновик.|
@@ -62,6 +62,7 @@ ms.locfileid: "36032552"
 |ccRecipients|Коллекция [recipient](recipient.md)|Получатели копии сообщения.|
 |changeKey|Строка|Версия сообщения.|
 |conversationId|String|Идентификатор беседы, к которой принадлежит электронное сообщение.|
+|conversationIndex|Edm.Binary|Указывает положение сообщения в беседе.|
 |createdDateTime|DateTimeOffset|Дата и время создания сообщения.|
 |flag|[followupFlag](followupflag.md)|Значение флага, которое указывает статус, дату начала, дату выполнения или дату завершения сообщения.|
 |from|[recipient](recipient.md)|Владелец почтового ящика и отправитель сообщения.|
@@ -88,7 +89,7 @@ ms.locfileid: "36032552"
 |webLink|String|URL-адрес для открытия сообщения в Outlook Web App.<br><br>Чтобы изменить способ отображения сообщения, можно добавить аргумент ispopout в конце URL-адреса. Если аргумент ispopout отсутствует или для него задано значение 1, то сообщение откроется во всплывающем окне. Если для аргумента ispopout задано значение 0, то в браузере сообщение будет отображаться в области просмотра Outlook Web App.<br><br>Сообщение откроется в браузере, если вы вошли в свой почтовый ящик с помощью Outlook Web App. Если вход с помощью браузера еще не выполнен, вам будет предложено войти.<br><br>Доступ к этому URL-адресу можно получить из объекта iFrame.|
 
 ## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |attachments|Коллекция [attachment](attachment.md) | Только для чтения. Допускается значение null.|
 |event|[event](event.md)| Событие, связанное с сообщением о событии. Для участников или ресурсов помещений предполагается, что помощник по ведению календаря настроен для автоматического обновления события в календаре, если поступают сообщения с приглашением на собрание. Свойство навигации.  Только для чтения.|
@@ -134,6 +135,7 @@ ms.locfileid: "36032552"
   "ccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "changeKey": "string",
   "conversationId": "string",
+  "conversationIndex": "String (binary)",
   "createdDateTime": "DateTimeOffset",
   "event": { "@odata.type": "microsoft.graph.event" },
   "flag": {"@odata.type": "microsoft.graph.followupFlag"},

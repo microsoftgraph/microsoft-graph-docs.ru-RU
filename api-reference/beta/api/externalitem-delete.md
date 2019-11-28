@@ -3,14 +3,14 @@ title: Удаление Екстерналитем
 description: Удаление Екстерналитем или Екстерналфиле.
 localization_priority: Normal
 author: snlraju-msft
-ms.prod: ''
+ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 6e3f76c3c12d49b73f71fbf2bc7b93f6479103e9
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: 34a34c3913ccf4da490a79b2449e06ff45fc8512
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747185"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636815"
 ---
 # <a name="delete-externalitem"></a>Удаление Екстерналитем
 
@@ -28,7 +28,7 @@ ms.locfileid: "38747185"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | ExternalItem.ReadWrite.All |
+| Приложение                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

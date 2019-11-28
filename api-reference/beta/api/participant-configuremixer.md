@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c59c56c7c862a62247cadf8472a042e3ea8d9af2
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: f1a7650ea3195cdb28af6d49a71983129e0e322a
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006482"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636836"
 ---
 # <a name="participant-configuremixer"></a>участник: Конфигуремиксер
 
@@ -25,7 +25,7 @@ ms.locfileid: "38006482"
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Для приложений     | Calls. Жоинграупкаллс. ALL, Calls. Инитиатеграупкаллс. ALL |
+| Приложение     | Calls. Жоинграупкаллс. ALL, Calls. Инитиатеграупкаллс. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -33,7 +33,7 @@ ms.locfileid: "38006482"
 POST /app/calls/{id}/participants/configureMixer
 POST /communications/calls/{id}/participants/configureMixer
 ```
-> **Примечание:** `/app` Путь является устаревшим. Перемотка вперед, используйте `/communications` путь.
+> **Примечание.** Путь `/app` является устаревшим. В дальнейшем используйте путь `/communications`.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
@@ -48,7 +48,7 @@ POST /communications/calls/{id}/participants/configureMixer
 |партиЦипантмиксерлевелс|Коллекция [партиЦипантмиксерлевел](../resources/participantmixerlevel.md)| Настройка уровней микшера для данного участника аудио.|
 |Контекст|String|Контекст клиента.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Возвращает `202 Accepted` код отклика и заголовок Location с URI для [коммсоператион](../resources/commsoperation.md) , созданного для этого запроса.
 
 ## <a name="example"></a>Пример
@@ -112,19 +112,20 @@ Content-Length: 501
 
 <!-- {
   "blockType": "response",
+  "name": "participant-configureMixer",
   "truncated": true,
   "@odata.type": "microsoft.graph.commsOperation"
 } -->
 ```http
 HTTP/1.1 200 OK
-Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/17e3b46c-f61d-4f4d-9635-c626ef18e6ad
-Content-Type: application/json
-Content-Length: 259
+Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 
 {
-  "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
-  "status": "running",
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
+  "@odata.type": "#microsoft.graph.commsOperation",
+  "clientContext": "clientContext-value",
+  "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5",
+  "resultInfo": null,
+  "status": "running"
 }
 ```
 
@@ -144,12 +145,12 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.commsNotifications",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.commsNotification",
+      "@odata.type": "#microsoft.graph.commsOperation",
       "changeType": "deleted",
-      "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+      "resourceUrl": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5",
       "resourceData": {
         "@odata.type": "#microsoft.graph.commsOperation",
-        "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
+        "@odata.id": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5",
         "@odata.etag": "W/\"1\"",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
         "status": "completed"
