@@ -5,64 +5,64 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9443b636bae32a28d6d281d980e8ff6f38153610
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: 0db65ba76d0953ca365559450e621414ded574a7
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302165"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636710"
 ---
-# <a name="create-call"></a><span data-ttu-id="be762-103">Создание звонка</span><span class="sxs-lookup"><span data-stu-id="be762-103">Create call</span></span>
+# <a name="create-call"></a><span data-ttu-id="e3869-103">Создание звонка</span><span class="sxs-lookup"><span data-stu-id="e3869-103">Create call</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="be762-104">Создание [звонка](../resources/call.md) позволяет интерфейсу Bot создать новый исходящий вызов или присоединиться к существующему собранию.</span><span class="sxs-lookup"><span data-stu-id="be762-104">Create [call](../resources/call.md) enables your bot to create a new outgoing call or join an existing meeting.</span></span> <span data-ttu-id="be762-105">Вам потребуется [зарегистрировать запрашивающий абонент](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) и просмотреть список необходимых разрешений, как описано ниже.</span><span class="sxs-lookup"><span data-stu-id="be762-105">You will need to [register the calling bot](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) and go through the list of permissions needed as mentioned below.</span></span>
+<span data-ttu-id="e3869-104">Создание [звонка](../resources/call.md) позволяет интерфейсу Bot создать новый исходящий вызов или присоединиться к существующему собранию.</span><span class="sxs-lookup"><span data-stu-id="e3869-104">Create [call](../resources/call.md) enables your bot to create a new outgoing call or join an existing meeting.</span></span> <span data-ttu-id="e3869-105">Вам потребуется [зарегистрировать запрашивающий абонент](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) и просмотреть список необходимых разрешений, как описано ниже.</span><span class="sxs-lookup"><span data-stu-id="e3869-105">You will need to [register the calling bot](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) and go through the list of permissions needed as mentioned below.</span></span>
 
-> <span data-ttu-id="be762-106">**Примечание:** В настоящее время поддерживаются только звонки по протоколу VoIP.</span><span class="sxs-lookup"><span data-stu-id="be762-106">**Note:** Currently, only VoIP calls are supported.</span></span> 
+> <span data-ttu-id="e3869-106">**Примечание:** В настоящее время поддерживаются только звонки по протоколу VoIP.</span><span class="sxs-lookup"><span data-stu-id="e3869-106">**Note:** Currently, only VoIP calls are supported.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="be762-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="be762-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e3869-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e3869-107">Permissions</span></span>
 
-<span data-ttu-id="be762-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions).</span><span class="sxs-lookup"><span data-stu-id="be762-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions).</span></span>
+<span data-ttu-id="e3869-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions).</span><span class="sxs-lookup"><span data-stu-id="e3869-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions).</span></span>
 
-| <span data-ttu-id="be762-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="be762-110">Permission type</span></span>                        | <span data-ttu-id="be762-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="be762-111">Permissions (from least to most privileged)</span></span>                                             |
+| <span data-ttu-id="e3869-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e3869-110">Permission type</span></span>                        | <span data-ttu-id="e3869-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e3869-111">Permissions (from least to most privileged)</span></span>                                             |
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
-| <span data-ttu-id="be762-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="be762-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="be762-113">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="be762-113">Not Supported</span></span>                                                                           |
-| <span data-ttu-id="be762-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="be762-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="be762-115">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="be762-115">Not Supported</span></span>                                                                           |
-| <span data-ttu-id="be762-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="be762-116">Application</span></span>                            | <span data-ttu-id="be762-117">Calls. Жоинграупкаллсасгуест. ALL, Calls. Жоинграупкаллс. ALL, Calls. initiate. ALL, Calls. Инитиатеграупкаллс. ALL</span><span class="sxs-lookup"><span data-stu-id="be762-117">Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All</span></span> |
+| <span data-ttu-id="e3869-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e3869-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="e3869-113">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="e3869-113">Not Supported</span></span>                                                                           |
+| <span data-ttu-id="e3869-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e3869-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e3869-115">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="e3869-115">Not Supported</span></span>                                                                           |
+| <span data-ttu-id="e3869-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="e3869-116">Application</span></span>                            | <span data-ttu-id="e3869-117">Calls. Жоинграупкаллсасгуест. ALL, Calls. Жоинграупкаллс. ALL, Calls. initiate. ALL, Calls. Инитиатеграупкаллс. ALL</span><span class="sxs-lookup"><span data-stu-id="e3869-117">Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All</span></span> |
 
-> <span data-ttu-id="be762-118">**Примечание:** Для вызова с использованием мультимедиа, размещаемого в приложении, вам потребуется разрешение Calls. Акцессмедиа. ALL с одним из разрешений, перечисленных в предыдущей таблице.</span><span class="sxs-lookup"><span data-stu-id="be762-118">**Note:** For a call with app-hosted media, you need the Calls.AccessMedia.All permission with one of the permissions listed in the previous table.</span></span>
+> <span data-ttu-id="e3869-118">**Примечание:** Для вызова с использованием мультимедиа, размещаемого в приложении, вам потребуется разрешение Calls. Акцессмедиа. ALL с одним из разрешений, перечисленных в предыдущей таблице.</span><span class="sxs-lookup"><span data-stu-id="e3869-118">**Note:** For a call with app-hosted media, you need the Calls.AccessMedia.All permission with one of the permissions listed in the previous table.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="be762-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="be762-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e3869-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e3869-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls
 POST /communications/calls
 ```
-> <span data-ttu-id="be762-120">**Примечание.** Путь `/app` является устаревшим.</span><span class="sxs-lookup"><span data-stu-id="be762-120">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="be762-121">В дальнейшем используйте путь `/communications`.</span><span class="sxs-lookup"><span data-stu-id="be762-121">Going forward, use the `/communications` path.</span></span>
+> <span data-ttu-id="e3869-120">**Примечание.** Путь `/app` является устаревшим.</span><span class="sxs-lookup"><span data-stu-id="e3869-120">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="e3869-121">В дальнейшем используйте путь `/communications`.</span><span class="sxs-lookup"><span data-stu-id="e3869-121">Going forward, use the `/communications` path.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="be762-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="be762-122">Request headers</span></span>
-| <span data-ttu-id="be762-123">Имя</span><span class="sxs-lookup"><span data-stu-id="be762-123">Name</span></span>          | <span data-ttu-id="be762-124">Описание</span><span class="sxs-lookup"><span data-stu-id="be762-124">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="e3869-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e3869-122">Request headers</span></span>
+| <span data-ttu-id="e3869-123">Имя</span><span class="sxs-lookup"><span data-stu-id="e3869-123">Name</span></span>          | <span data-ttu-id="e3869-124">Описание</span><span class="sxs-lookup"><span data-stu-id="e3869-124">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="be762-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="be762-125">Authorization</span></span> | <span data-ttu-id="be762-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="be762-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="be762-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="be762-128">Content-type</span></span>  | <span data-ttu-id="be762-p105">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="be762-p105">application/json. Required.</span></span>|
+| <span data-ttu-id="e3869-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e3869-125">Authorization</span></span> | <span data-ttu-id="e3869-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e3869-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e3869-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e3869-128">Content-type</span></span>  | <span data-ttu-id="e3869-p105">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e3869-p105">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="be762-131">Основной текст запроса</span><span class="sxs-lookup"><span data-stu-id="be762-131">Request body</span></span>
-<span data-ttu-id="be762-132">В тексте запроса добавьте представление объекта [Call](../resources/call.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="be762-132">In the request body, supply a JSON representation of a [call](../resources/call.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e3869-131">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="e3869-131">Request body</span></span>
+<span data-ttu-id="e3869-132">В тексте запроса добавьте представление объекта [Call](../resources/call.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e3869-132">In the request body, supply a JSON representation of a [call](../resources/call.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="be762-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="be762-133">Response</span></span>
-<span data-ttu-id="be762-134">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [Call](../resources/call.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="be762-134">If successful, this method returns a `201 Created` response code and a [call](../resources/call.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="e3869-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="e3869-133">Response</span></span>
+<span data-ttu-id="e3869-134">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [Call](../resources/call.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="e3869-134">If successful, this method returns a `201 Created` response code and a [call](../resources/call.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="be762-135">Примеры</span><span class="sxs-lookup"><span data-stu-id="be762-135">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="e3869-135">Примеры</span><span class="sxs-lookup"><span data-stu-id="e3869-135">Examples</span></span>
 
-### <a name="example-1-create-peer-to-peer-voip-call-with-service-hosted-media"></a><span data-ttu-id="be762-136">Пример 1: создание однорангового звонка VoIP с размещенными в службе носителями</span><span class="sxs-lookup"><span data-stu-id="be762-136">Example 1: Create peer-to-peer VoIP call with service hosted media</span></span>
+### <a name="example-1-create-peer-to-peer-voip-call-with-service-hosted-media"></a><span data-ttu-id="e3869-136">Пример 1: создание однорангового звонка VoIP с размещенными в службе носителями</span><span class="sxs-lookup"><span data-stu-id="e3869-136">Example 1: Create peer-to-peer VoIP call with service hosted media</span></span>
 
-> <span data-ttu-id="be762-137">**Примечание:** Для этого вызова требуется разрешение Calls. initiate. ALL.</span><span class="sxs-lookup"><span data-stu-id="be762-137">**Note:** This call needs the Calls.Initiate.All permission.</span></span>
+> <span data-ttu-id="e3869-137">**Примечание:** Для этого вызова требуется разрешение Calls. initiate. ALL.</span><span class="sxs-lookup"><span data-stu-id="e3869-137">**Note:** This call needs the Calls.Initiate.All permission.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="be762-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="be762-138">Request</span></span>
-<span data-ttu-id="be762-139">В следующем примере показан запрос, который выполняет одноранговый звонок между Bot и указанным пользователем.</span><span class="sxs-lookup"><span data-stu-id="be762-139">The following example shows the request which makes a peer-to-peer call between the bot and the specified user.</span></span> <span data-ttu-id="be762-140">В этом примере носитель размещается службой.</span><span class="sxs-lookup"><span data-stu-id="be762-140">In this example, the media is hosted by the service.</span></span> <span data-ttu-id="be762-141">Значения маркера авторизации, URL-адреса обратного вызова, идентификатора приложения, имени приложения, идентификатора пользователя, имени пользователя и идентификатора клиента должны быть заменены фактическими значениями, чтобы пример работал.</span><span class="sxs-lookup"><span data-stu-id="be762-141">The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced with actual values to make the example work.</span></span>
+##### <a name="request"></a><span data-ttu-id="e3869-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="e3869-138">Request</span></span>
+<span data-ttu-id="e3869-139">В следующем примере показан запрос, который выполняет одноранговый звонок между Bot и указанным пользователем.</span><span class="sxs-lookup"><span data-stu-id="e3869-139">The following example shows the request which makes a peer-to-peer call between the bot and the specified user.</span></span> <span data-ttu-id="e3869-140">В этом примере носитель размещается службой.</span><span class="sxs-lookup"><span data-stu-id="e3869-140">In this example, the media is hosted by the service.</span></span> <span data-ttu-id="e3869-141">Значения маркера авторизации, URL-адреса обратного вызова, идентификатора приложения, имени приложения, идентификатора пользователя, имени пользователя и идентификатора клиента должны быть заменены фактическими значениями, чтобы пример работал.</span><span class="sxs-lookup"><span data-stu-id="e3869-141">The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced with actual values to make the example work.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="be762-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="be762-142">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="e3869-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="e3869-142">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-call-service-hosted-media",
@@ -77,7 +77,7 @@ Content-Type: application/json
   "callbackUri": "https://bot.contoso.com/callback",
   "targets": [
     {
-      "@odata.type": "#microsoft.graph.participantInfo",
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
       "identity": {
         "@odata.type": "#microsoft.graph.identitySet",
         "user": {
@@ -96,24 +96,24 @@ Content-Type: application/json
   }
 }
 ```
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="be762-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="be762-143">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e3869-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e3869-143">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-call-service-hosted-media-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="ctabcsharp"></a>[<span data-ttu-id="be762-144">C#</span><span class="sxs-lookup"><span data-stu-id="be762-144">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="e3869-144">C#</span><span class="sxs-lookup"><span data-stu-id="e3869-144">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-call-service-hosted-media-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="be762-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="be762-145">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e3869-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e3869-145">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-call-service-hosted-media-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="be762-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="be762-146">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="e3869-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="e3869-146">Response</span></span>
 
-> <span data-ttu-id="be762-147">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="be762-147">**Note:** The response object shown here might be shortened for readability.</span></span> 
+> <span data-ttu-id="e3869-147">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="e3869-147">**Note:** The response object shown here might be shortened for readability.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -141,12 +141,14 @@ Content-Type: application/json
         "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
       }
     },
+    "countryCode": null,
+    "endpointType": null,
     "region": null,
     "languageId": null
   },
   "targets": [
     {
-      "@odata.type": "#microsoft.graph.participantInfo",
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
       "identity": {
         "@odata.type": "#microsoft.graph.identitySet",
         "user": {
@@ -155,7 +157,9 @@ Content-Type: application/json
           "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
         }
       },
+      "endpointType": null,
       "region": null,
+      "replacesCallId": null,
       "languageId": null
     }
   ],
@@ -194,7 +198,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---establishing"></a><span data-ttu-id="be762-148">Установка уведомления</span><span class="sxs-lookup"><span data-stu-id="be762-148">Notification - establishing</span></span>
+##### <a name="notification---establishing"></a><span data-ttu-id="e3869-148">Установка уведомления</span><span class="sxs-lookup"><span data-stu-id="e3869-148">Notification - establishing</span></span>
 
 ```http
 POST https://bot.contoso.com/callback
@@ -223,7 +227,7 @@ Content-Type: application/json
   ]
 }
 ```
-##### <a name="notification---established"></a><span data-ttu-id="be762-149">Установленное уведомление</span><span class="sxs-lookup"><span data-stu-id="be762-149">Notification - established</span></span>
+##### <a name="notification---established"></a><span data-ttu-id="e3869-149">Установленное уведомление</span><span class="sxs-lookup"><span data-stu-id="e3869-149">Notification - established</span></span>
 
 ```http
 POST https://bot.contoso.com/callback
@@ -255,15 +259,15 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-create-peer-to-peer-voip-call-with-application-hosted-media"></a><span data-ttu-id="be762-150">Пример 2: создание однорангового звонка VoIP с размещенными в приложении носителями</span><span class="sxs-lookup"><span data-stu-id="be762-150">Example 2: Create peer-to-peer VoIP call with application hosted media</span></span>
+### <a name="example-2-create-peer-to-peer-voip-call-with-application-hosted-media"></a><span data-ttu-id="e3869-150">Пример 2: создание однорангового звонка VoIP с размещенными в приложении носителями</span><span class="sxs-lookup"><span data-stu-id="e3869-150">Example 2: Create peer-to-peer VoIP call with application hosted media</span></span>
 
-> <span data-ttu-id="be762-151">**Note**: в этом примере необходимы вызовы. initiate. ALL и Calls. Акцессмедиа. ALL.</span><span class="sxs-lookup"><span data-stu-id="be762-151">**Note**: This example needs Calls.Initiate.All and Calls.AccessMedia.All permissions.</span></span>
+> <span data-ttu-id="e3869-151">**Note**: в этом примере необходимы вызовы. initiate. ALL и Calls. Акцессмедиа. ALL.</span><span class="sxs-lookup"><span data-stu-id="e3869-151">**Note**: This example needs Calls.Initiate.All and Calls.AccessMedia.All permissions.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="be762-152">Запрос</span><span class="sxs-lookup"><span data-stu-id="be762-152">Request</span></span>
-<span data-ttu-id="be762-153">В следующем примере показан запрос, который выполняет одноранговый звонок между Bot и указанным пользователем.</span><span class="sxs-lookup"><span data-stu-id="be762-153">The following example shows the request which makes a peer-to-peer call between the bot and the specified user.</span></span> <span data-ttu-id="be762-154">В этом примере мультимедиа размещается локально приложением.</span><span class="sxs-lookup"><span data-stu-id="be762-154">In this example the media is hosted locally by the application.</span></span> <span data-ttu-id="be762-155">Значения маркера авторизации, URL-адреса обратного вызова, идентификатора приложения, имени приложения, идентификатора пользователя, имени пользователя и идентификатора клиента должны быть заменены фактическими значениями, чтобы пример работал.</span><span class="sxs-lookup"><span data-stu-id="be762-155">The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced with actual values to make the example work.</span></span>
+##### <a name="request"></a><span data-ttu-id="e3869-152">Запрос</span><span class="sxs-lookup"><span data-stu-id="e3869-152">Request</span></span>
+<span data-ttu-id="e3869-153">В следующем примере показан запрос, который выполняет одноранговый звонок между Bot и указанным пользователем.</span><span class="sxs-lookup"><span data-stu-id="e3869-153">The following example shows the request which makes a peer-to-peer call between the bot and the specified user.</span></span> <span data-ttu-id="e3869-154">В этом примере мультимедиа размещается локально приложением.</span><span class="sxs-lookup"><span data-stu-id="e3869-154">In this example the media is hosted locally by the application.</span></span> <span data-ttu-id="e3869-155">Значения маркера авторизации, URL-адреса обратного вызова, идентификатора приложения, имени приложения, идентификатора пользователя, имени пользователя и идентификатора клиента должны быть заменены фактическими значениями, чтобы пример работал.</span><span class="sxs-lookup"><span data-stu-id="e3869-155">The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced with actual values to make the example work.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="be762-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="be762-156">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="e3869-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="e3869-156">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-call-app-hosted-media",
@@ -291,7 +295,7 @@ Content-Type: application/json
   },
   "targets": [
     {
-      "@odata.type": "#microsoft.graph.participantInfo",
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
       "identity": {
         "@odata.type": "#microsoft.graph.identitySet",
         "user": {
@@ -311,32 +315,32 @@ Content-Type: application/json
   }
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="be762-157">C#</span><span class="sxs-lookup"><span data-stu-id="be762-157">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="e3869-157">C#</span><span class="sxs-lookup"><span data-stu-id="e3869-157">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-call-app-hosted-media-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="be762-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="be762-158">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="e3869-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e3869-158">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-call-app-hosted-media-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="be762-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="be762-159">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="e3869-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e3869-159">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-call-app-hosted-media-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="be762-160">`<Media Session Configuration>`— Это конфигурация сериализованного сеанса мультимедиа, содержащая сведения о сеансе в стеке мультимедиа.</span><span class="sxs-lookup"><span data-stu-id="be762-160">`<Media Session Configuration>` is the serialized media session configuration which contains the session information of the media stack.</span></span> <span data-ttu-id="be762-161">Сведения о звуках, видео, VBSS ссессион должны передаваться здесь.</span><span class="sxs-lookup"><span data-stu-id="be762-161">Specific information about audio, video, VBSS ssession information should be passed here.</span></span>
+<span data-ttu-id="e3869-160">`<Media Session Configuration>`— Это конфигурация сериализованного сеанса мультимедиа, содержащая сведения о сеансе в стеке мультимедиа.</span><span class="sxs-lookup"><span data-stu-id="e3869-160">`<Media Session Configuration>` is the serialized media session configuration which contains the session information of the media stack.</span></span> <span data-ttu-id="e3869-161">Сведения о звуках, видео, VBSS ссессион должны передаваться здесь.</span><span class="sxs-lookup"><span data-stu-id="e3869-161">Specific information about audio, video, VBSS ssession information should be passed here.</span></span>
 
-<span data-ttu-id="be762-162">Ниже показан пример большого двоичного объекта для сеанса аудио мультимедиа</span><span class="sxs-lookup"><span data-stu-id="be762-162">Sample audio media session blob is shown below</span></span>
+<span data-ttu-id="e3869-162">Ниже показан пример большого двоичного объекта для сеанса аудио мультимедиа</span><span class="sxs-lookup"><span data-stu-id="e3869-162">Sample audio media session blob is shown below</span></span>
 ```json
 {\"mpUri\":\"net.tcp://bot.contoso.com:18732/MediaProcessor\",\"audioRenderContexts\":[\"14778cc4-f54c-43c7-989f-9092e34ef784\"],\"videoRenderContexts\":[],\"audioSourceContexts\":[\"a5dcfc9b-5a54-48ef-86f5-1fdd8508741a\"],\"videoSourceContexts\":[],\"dataRenderContexts\":null,\"dataSourceContexts\":null,\"supportedAudioFormat\":\"Pcm16K\",\"videoSinkEncodingFormats\":[],\"mpMediaSessionId\":\"2379cf46-acf3-4fef-a914-be9627075320\",\"regionAffinity\":null,\"skypeMediaBotsVersion\":\"1.11.1.0086\",\"mediaStackVersion\":\"2018.53.1.1\",\"mpVersion\":\"7.2.0.3881\",\"callId\":\"1b69b141-7f1a-4033-9c34-202737190a20\"}
 ```
 
-><span data-ttu-id="be762-163">**Примечание:** Для одноранговых вызовов ожидаемые уведомления относятся только к изменениям состояния вызовов.</span><span class="sxs-lookup"><span data-stu-id="be762-163">**Note:** For peer-to-peer calls, the expected notifications are for call state changes only.</span></span>
+><span data-ttu-id="e3869-163">**Примечание:** Для одноранговых вызовов ожидаемые уведомления относятся только к изменениям состояния вызовов.</span><span class="sxs-lookup"><span data-stu-id="e3869-163">**Note:** For peer-to-peer calls, the expected notifications are for call state changes only.</span></span>
 
-##### <a name="response"></a><span data-ttu-id="be762-164">Отклик</span><span class="sxs-lookup"><span data-stu-id="be762-164">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="e3869-164">Отклик</span><span class="sxs-lookup"><span data-stu-id="e3869-164">Response</span></span>
 
-> <span data-ttu-id="be762-p109">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="be762-p109">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="e3869-p109">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="e3869-p109">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -406,12 +410,12 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-create-a-group-call-with-service-hosted-media"></a><span data-ttu-id="be762-167">Пример 3: Создание группового звонка с размещенными у службы носителями</span><span class="sxs-lookup"><span data-stu-id="be762-167">Example 3: Create a group call with service hosted media</span></span>
+### <a name="example-3-create-a-group-call-with-service-hosted-media"></a><span data-ttu-id="e3869-167">Пример 3: Создание группового звонка с размещенными у службы носителями</span><span class="sxs-lookup"><span data-stu-id="e3869-167">Example 3: Create a group call with service hosted media</span></span>
 
-<span data-ttu-id="be762-168">Поддерживает до 5 пользователей VoIP.</span><span class="sxs-lookup"><span data-stu-id="be762-168">This supports up to 5 VoIP users.</span></span> <span data-ttu-id="be762-169">В этом примере показано, как создать групповой вызов с двумя пользователями VoIP.</span><span class="sxs-lookup"><span data-stu-id="be762-169">The example shows how to create a group call with two VoIP users.</span></span>
-> <span data-ttu-id="be762-170">**Примечание:** В этом примере для `Calls.InitiateGroupCalls.All` вызова требуется разрешение.</span><span class="sxs-lookup"><span data-stu-id="be762-170">**Note:** This example call needs the `Calls.InitiateGroupCalls.All` permission.</span></span> <span data-ttu-id="be762-171">Созданный групповой вызов не поддерживает чат или запись.</span><span class="sxs-lookup"><span data-stu-id="be762-171">The group call created doesn't support chat or recording.</span></span>
+<span data-ttu-id="e3869-168">Поддерживает до 5 пользователей VoIP.</span><span class="sxs-lookup"><span data-stu-id="e3869-168">This supports up to 5 VoIP users.</span></span> <span data-ttu-id="e3869-169">В этом примере показано, как создать групповой вызов с двумя пользователями VoIP.</span><span class="sxs-lookup"><span data-stu-id="e3869-169">The example shows how to create a group call with two VoIP users.</span></span>
+> <span data-ttu-id="e3869-170">**Примечание:** В этом примере для `Calls.InitiateGroupCalls.All` вызова требуется разрешение.</span><span class="sxs-lookup"><span data-stu-id="e3869-170">**Note:** This example call needs the `Calls.InitiateGroupCalls.All` permission.</span></span> <span data-ttu-id="e3869-171">Созданный групповой вызов не поддерживает чат или запись.</span><span class="sxs-lookup"><span data-stu-id="e3869-171">The group call created doesn't support chat or recording.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="be762-172">Запрос</span><span class="sxs-lookup"><span data-stu-id="be762-172">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="e3869-172">Запрос</span><span class="sxs-lookup"><span data-stu-id="e3869-172">Request</span></span>
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
@@ -472,12 +476,12 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-4-create-a-group-call-with-application-hosted-media"></a><span data-ttu-id="be762-173">Пример 4: создание групповой связи с размещенными в приложении носителями</span><span class="sxs-lookup"><span data-stu-id="be762-173">Example 4: Create a group call with application hosted media</span></span>
+### <a name="example-4-create-a-group-call-with-application-hosted-media"></a><span data-ttu-id="e3869-173">Пример 4: создание групповой связи с размещенными в приложении носителями</span><span class="sxs-lookup"><span data-stu-id="e3869-173">Example 4: Create a group call with application hosted media</span></span>
 
-<span data-ttu-id="be762-174">Поддерживает до 5 пользователей VoIP.</span><span class="sxs-lookup"><span data-stu-id="be762-174">This supports up to 5 VoIP users.</span></span> <span data-ttu-id="be762-175">В этом примере показано, как создать групповой вызов с двумя пользователями VoIP.</span><span class="sxs-lookup"><span data-stu-id="be762-175">The example shows how to create a group call with two VoIP users.</span></span>
-> <span data-ttu-id="be762-176">**Примечание:** В этом примере для `Calls.InitiateGroupCalls.All` вызова требуется разрешение.</span><span class="sxs-lookup"><span data-stu-id="be762-176">**Note:** This example call needs the `Calls.InitiateGroupCalls.All` permission.</span></span> <span data-ttu-id="be762-177">Созданный групповой вызов не поддерживает чат или запись.</span><span class="sxs-lookup"><span data-stu-id="be762-177">The group call created doesn't support chat or recording.</span></span>
+<span data-ttu-id="e3869-174">Поддерживает до 5 пользователей VoIP.</span><span class="sxs-lookup"><span data-stu-id="e3869-174">This supports up to 5 VoIP users.</span></span> <span data-ttu-id="e3869-175">В этом примере показано, как создать групповой вызов с двумя пользователями VoIP.</span><span class="sxs-lookup"><span data-stu-id="e3869-175">The example shows how to create a group call with two VoIP users.</span></span>
+> <span data-ttu-id="e3869-176">**Примечание:** В этом примере для `Calls.InitiateGroupCalls.All` вызова требуется разрешение.</span><span class="sxs-lookup"><span data-stu-id="e3869-176">**Note:** This example call needs the `Calls.InitiateGroupCalls.All` permission.</span></span> <span data-ttu-id="e3869-177">Созданный групповой вызов не поддерживает чат или запись.</span><span class="sxs-lookup"><span data-stu-id="e3869-177">The group call created doesn't support chat or recording.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="be762-178">Запрос</span><span class="sxs-lookup"><span data-stu-id="be762-178">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="e3869-178">Запрос</span><span class="sxs-lookup"><span data-stu-id="e3869-178">Request</span></span>
 ```http
 POST https://graph.microsoft.com/beta/communications/calls
 Content-Type: application/json
@@ -539,14 +543,14 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-5-join-scheduled-meeting-with-service-hosted-media"></a><span data-ttu-id="be762-179">Пример 5: присоединение к запланированному собранию с размещенными на службах носителями</span><span class="sxs-lookup"><span data-stu-id="be762-179">Example 5: Join scheduled meeting with service hosted media</span></span>
-<span data-ttu-id="be762-180">Чтобы присоединиться к запланированному собранию, необходимо получить идентификатор потока, идентификатор сообщения, идентификатор организатора и идентификатор клиента, на котором запланировано собрание.</span><span class="sxs-lookup"><span data-stu-id="be762-180">To join the scheduled meeting we will need to get the thread id, message id, organizer id and the tenant id in which the meeting is scheduled.</span></span>
-<span data-ttu-id="be762-181">Эту информацию можно получить из [API получения Интернет-собраний](../api/onlinemeeting-get.md).</span><span class="sxs-lookup"><span data-stu-id="be762-181">This information can be obtained from [Get Online Meetings API](../api/onlinemeeting-get.md).</span></span>
+### <a name="example-5-join-scheduled-meeting-with-service-hosted-media"></a><span data-ttu-id="e3869-179">Пример 5: присоединение к запланированному собранию с размещенными на службах носителями</span><span class="sxs-lookup"><span data-stu-id="e3869-179">Example 5: Join scheduled meeting with service hosted media</span></span>
+<span data-ttu-id="e3869-180">Чтобы присоединиться к запланированному собранию, необходимо получить идентификатор потока, идентификатор сообщения, идентификатор организатора и идентификатор клиента, на котором запланировано собрание.</span><span class="sxs-lookup"><span data-stu-id="e3869-180">To join the scheduled meeting we will need to get the thread id, message id, organizer id and the tenant id in which the meeting is scheduled.</span></span>
+<span data-ttu-id="e3869-181">Эту информацию можно получить из [API получения Интернет-собраний](../api/onlinemeeting-get.md).</span><span class="sxs-lookup"><span data-stu-id="e3869-181">This information can be obtained from [Get Online Meetings API](../api/onlinemeeting-get.md).</span></span>
 
-<span data-ttu-id="be762-182">Значения маркера авторизации, URL-адреса обратного вызова, идентификатора приложения, имени приложения, идентификатора пользователя, имени пользователя и идентификатора клиента должны быть заменены вместе со сведениями, полученными от [получения API собраний по сети](../api/onlinemeeting-get.md) с фактическими значениями, чтобы сделать пример работать.</span><span class="sxs-lookup"><span data-stu-id="be762-182">The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced along with the details obtained from  [Get Online Meetings API](../api/onlinemeeting-get.md) with actual values to make the example work.</span></span>
-> <span data-ttu-id="be762-183">**Примечание:** В `Calls.JoinGroupCalls.All` этом примере требуется разрешение.</span><span class="sxs-lookup"><span data-stu-id="be762-183">**Note:** This example needs the `Calls.JoinGroupCalls.All` permission.</span></span>
+<span data-ttu-id="e3869-182">Значения маркера авторизации, URL-адреса обратного вызова, идентификатора приложения, имени приложения, идентификатора пользователя, имени пользователя и идентификатора клиента должны быть заменены вместе со сведениями, полученными от [получения API собраний по сети](../api/onlinemeeting-get.md) с фактическими значениями, чтобы сделать пример работать.</span><span class="sxs-lookup"><span data-stu-id="e3869-182">The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced along with the details obtained from  [Get Online Meetings API](../api/onlinemeeting-get.md) with actual values to make the example work.</span></span>
+> <span data-ttu-id="e3869-183">**Примечание:** В `Calls.JoinGroupCalls.All` этом примере требуется разрешение.</span><span class="sxs-lookup"><span data-stu-id="e3869-183">**Note:** This example needs the `Calls.JoinGroupCalls.All` permission.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="be762-184">Запрос</span><span class="sxs-lookup"><span data-stu-id="be762-184">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="e3869-184">Запрос</span><span class="sxs-lookup"><span data-stu-id="e3869-184">Request</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -596,7 +600,7 @@ Content-Type: application/json
   }
 }
 ```
-##### <a name="response"></a><span data-ttu-id="be762-185">Ответ</span><span class="sxs-lookup"><span data-stu-id="be762-185">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="e3869-185">Ответ</span><span class="sxs-lookup"><span data-stu-id="e3869-185">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -680,7 +684,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---establishing"></a><span data-ttu-id="be762-186">Установка уведомления</span><span class="sxs-lookup"><span data-stu-id="be762-186">Notification - establishing</span></span>
+##### <a name="notification---establishing"></a><span data-ttu-id="e3869-186">Установка уведомления</span><span class="sxs-lookup"><span data-stu-id="e3869-186">Notification - establishing</span></span>
 
 ```http
 POST https://bot.contoso.com/callback
@@ -728,7 +732,7 @@ Content-Type: application/json
 }
 
 ```
-##### <a name="notification---established"></a><span data-ttu-id="be762-187">Установленное уведомление</span><span class="sxs-lookup"><span data-stu-id="be762-187">Notification - established</span></span>
+##### <a name="notification---established"></a><span data-ttu-id="e3869-187">Установленное уведомление</span><span class="sxs-lookup"><span data-stu-id="e3869-187">Notification - established</span></span>
 
 ```http
 POST https://bot.contoso.com/callback
@@ -775,7 +779,7 @@ Content-Type: application/json
   ]
 }
 ```
-##### <a name="notification---roster"></a><span data-ttu-id="be762-188">Уведомление — список</span><span class="sxs-lookup"><span data-stu-id="be762-188">Notification - roster</span></span>
+##### <a name="notification---roster"></a><span data-ttu-id="e3869-188">Уведомление — список</span><span class="sxs-lookup"><span data-stu-id="e3869-188">Notification - roster</span></span>
 
 ```http
 POST https://bot.contoso.com/callback
@@ -870,10 +874,10 @@ Content-Type: application/json
 }
 ```
 
-><span data-ttu-id="be762-189">**Примечание:** При объединении сценариев собраний, отличных от уведомлений о состоянии вызовов, мы получаем уведомления списков.</span><span class="sxs-lookup"><span data-stu-id="be762-189">**Note:** For join meeting scenarios apart from call state notifications, we receive roster notifications.</span></span>
+><span data-ttu-id="e3869-189">**Примечание:** При объединении сценариев собраний, отличных от уведомлений о состоянии вызовов, мы получаем уведомления списков.</span><span class="sxs-lookup"><span data-stu-id="e3869-189">**Note:** For join meeting scenarios apart from call state notifications, we receive roster notifications.</span></span>
 
-### <a name="example-6-join-scheduled-meeting-with-app-hosted-media"></a><span data-ttu-id="be762-190">Пример 6: присоединение к запланированному собранию с размещенными носителями приложений</span><span class="sxs-lookup"><span data-stu-id="be762-190">Example 6: Join scheduled meeting with app hosted media</span></span>
-<span data-ttu-id="be762-191">Чтобы присоединиться к собранию с размещенными в приложении носителями, обновите конфигурацию мультимедиа с помощью [апфостедмедиаконфиг](../resources/apphostedmediaconfig.md) , как показано ниже, в приведенном выше примере.</span><span class="sxs-lookup"><span data-stu-id="be762-191">To join the meeting with application hosted media update the media config with the [AppHostedMediaConfig](../resources/apphostedmediaconfig.md) as shown below, In the sample provided above.</span></span>
+### <a name="example-6-join-scheduled-meeting-with-app-hosted-media"></a><span data-ttu-id="e3869-190">Пример 6: присоединение к запланированному собранию с размещенными носителями приложений</span><span class="sxs-lookup"><span data-stu-id="e3869-190">Example 6: Join scheduled meeting with app hosted media</span></span>
+<span data-ttu-id="e3869-191">Чтобы присоединиться к собранию с размещенными в приложении носителями, обновите конфигурацию мультимедиа с помощью [апфостедмедиаконфиг](../resources/apphostedmediaconfig.md) , как показано ниже, в приведенном выше примере.</span><span class="sxs-lookup"><span data-stu-id="e3869-191">To join the meeting with application hosted media update the media config with the [AppHostedMediaConfig](../resources/apphostedmediaconfig.md) as shown below, In the sample provided above.</span></span>
 
 <!-- {
   "blockType": "example",
@@ -918,14 +922,14 @@ Content-Type: application/json
 ```
 
 
-### <a name="example-7-join-channel-meeting-with-service-hosted-media"></a><span data-ttu-id="be762-192">Пример 7: присоединение к собранию канала с размещенными в службах носителями</span><span class="sxs-lookup"><span data-stu-id="be762-192">Example 7: Join channel meeting with service hosted media</span></span>
-<span data-ttu-id="be762-193">Для собрания в канале требуются определенные сведения, такие как идентификатор потока, идентификатор MessageId и сведения об организаторе, которые можно получить с помощью [API получения Интернет-собраний](../api/onlinemeeting-get.md).</span><span class="sxs-lookup"><span data-stu-id="be762-193">Meeting inside a channel requires specific details like thread id, messageid, and organizer details that can be obtained using the [Get Online Meetings API](../api/onlinemeeting-get.md).</span></span>
+### <a name="example-7-join-channel-meeting-with-service-hosted-media"></a><span data-ttu-id="e3869-192">Пример 7: присоединение к собранию канала с размещенными в службах носителями</span><span class="sxs-lookup"><span data-stu-id="e3869-192">Example 7: Join channel meeting with service hosted media</span></span>
+<span data-ttu-id="e3869-193">Для собрания в канале требуются определенные сведения, такие как идентификатор потока, идентификатор MessageId и сведения об организаторе, которые можно получить с помощью [API получения Интернет-собраний](../api/onlinemeeting-get.md).</span><span class="sxs-lookup"><span data-stu-id="e3869-193">Meeting inside a channel requires specific details like thread id, messageid, and organizer details that can be obtained using the [Get Online Meetings API](../api/onlinemeeting-get.md).</span></span>
 
-<span data-ttu-id="be762-194">Значения маркера авторизации, URL-адреса обратного вызова, идентификатора приложения, имени приложения, идентификатора пользователя, имени пользователя и идентификатора клиента должны быть заменены вместе со сведениями, полученными от [получения API собраний по сети](../api/onlinemeeting-get.md) с фактическими значениями, чтобы сделать пример работать.</span><span class="sxs-lookup"><span data-stu-id="be762-194">The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced along with the details obtained from  [Get Online Meetings API](../api/onlinemeeting-get.md) with actual values to make the example work.</span></span>
+<span data-ttu-id="e3869-194">Значения маркера авторизации, URL-адреса обратного вызова, идентификатора приложения, имени приложения, идентификатора пользователя, имени пользователя и идентификатора клиента должны быть заменены вместе со сведениями, полученными от [получения API собраний по сети](../api/onlinemeeting-get.md) с фактическими значениями, чтобы сделать пример работать.</span><span class="sxs-lookup"><span data-stu-id="e3869-194">The values of authorization token, callback url, application id, application name, user id, user name and tenant id must be replaced along with the details obtained from  [Get Online Meetings API](../api/onlinemeeting-get.md) with actual values to make the example work.</span></span>
 
-> <span data-ttu-id="be762-195">**Примечание:** В `Calls.JoinGroupCalls.All` этом примере требуется разрешение.</span><span class="sxs-lookup"><span data-stu-id="be762-195">**Note:** This example needs the `Calls.JoinGroupCalls.All` permission.</span></span>
+> <span data-ttu-id="e3869-195">**Примечание:** В `Calls.JoinGroupCalls.All` этом примере требуется разрешение.</span><span class="sxs-lookup"><span data-stu-id="e3869-195">**Note:** This example needs the `Calls.JoinGroupCalls.All` permission.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="be762-196">Запрос</span><span class="sxs-lookup"><span data-stu-id="be762-196">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="e3869-196">Запрос</span><span class="sxs-lookup"><span data-stu-id="e3869-196">Request</span></span>
 
 <!-- {
   "blockType": "example",
@@ -976,13 +980,13 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-8-join-channel-meeting-as-a-guest-with-service-hosted-media"></a><span data-ttu-id="be762-197">Пример 8: присоединение к собранию канала в качестве гостя с размещенными в службе носителями</span><span class="sxs-lookup"><span data-stu-id="be762-197">Example 8: Join channel meeting as a guest with service hosted media</span></span>
-<span data-ttu-id="be762-198">Для присоединения к собранию по каналу в качестве гостя необходимо создать гостевой [идентификацию](../resources/identityset.md) и добавить ее в качестве источника звонка в приглашении на собрание.</span><span class="sxs-lookup"><span data-stu-id="be762-198">For joining a channel meeting as a guest you will need to create a guest [identity](../resources/identityset.md) and add it as the call source in the join meeting request.</span></span>
-<span data-ttu-id="be762-199">Отображаемое имя — это имя, которое должно отображаться на собрании для удостоверения гостей.</span><span class="sxs-lookup"><span data-stu-id="be762-199">The display name is the name you want to be displayed in the meeting for your guest identity.</span></span> <span data-ttu-id="be762-200">Идентификатором может быть уникальный идентификатор, идентифицирующий гостевую идентификацию.</span><span class="sxs-lookup"><span data-stu-id="be762-200">The id may be a unique id identifying the guest identity.</span></span>
+### <a name="example-8-join-channel-meeting-as-a-guest-with-service-hosted-media"></a><span data-ttu-id="e3869-197">Пример 8: присоединение к собранию канала в качестве гостя с размещенными в службе носителями</span><span class="sxs-lookup"><span data-stu-id="e3869-197">Example 8: Join channel meeting as a guest with service hosted media</span></span>
+<span data-ttu-id="e3869-198">Для присоединения к собранию по каналу в качестве гостя необходимо создать гостевой [идентификацию](../resources/identityset.md) и добавить ее в качестве источника звонка в приглашении на собрание.</span><span class="sxs-lookup"><span data-stu-id="e3869-198">For joining a channel meeting as a guest you will need to create a guest [identity](../resources/identityset.md) and add it as the call source in the join meeting request.</span></span>
+<span data-ttu-id="e3869-199">Отображаемое имя — это имя, которое должно отображаться на собрании для удостоверения гостей.</span><span class="sxs-lookup"><span data-stu-id="e3869-199">The display name is the name you want to be displayed in the meeting for your guest identity.</span></span> <span data-ttu-id="e3869-200">Идентификатором может быть уникальный идентификатор, идентифицирующий гостевую идентификацию.</span><span class="sxs-lookup"><span data-stu-id="e3869-200">The id may be a unique id identifying the guest identity.</span></span>
 
-> <span data-ttu-id="be762-201">**Примечание:** В `Calls.JoinGroupCallsAsGuest.All` этом примере требуется разрешение.</span><span class="sxs-lookup"><span data-stu-id="be762-201">**Note:** This example needs the `Calls.JoinGroupCallsAsGuest.All` permission.</span></span>
+> <span data-ttu-id="e3869-201">**Примечание:** В `Calls.JoinGroupCallsAsGuest.All` этом примере требуется разрешение.</span><span class="sxs-lookup"><span data-stu-id="e3869-201">**Note:** This example needs the `Calls.JoinGroupCallsAsGuest.All` permission.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="be762-202">Запрос</span><span class="sxs-lookup"><span data-stu-id="be762-202">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="e3869-202">Запрос</span><span class="sxs-lookup"><span data-stu-id="e3869-202">Request</span></span>
 
 <!-- {
   "blockType": "example",
@@ -1043,9 +1047,9 @@ Content-Type: application/json
   }
 }
 ```
-> <span data-ttu-id="be762-203">**Примечание:** Присоединение к гостевой учету зависит от параметров клиента для собрания.</span><span class="sxs-lookup"><span data-stu-id="be762-203">**Note:** The guest join depends on the tenant settings for meeting.</span></span> <span data-ttu-id="be762-204">Приложение может быть помещено в "зале ожидания" в ожидании, которое может быть допущено пользователем.</span><span class="sxs-lookup"><span data-stu-id="be762-204">The application might be put in lobby waiting to be admitted by a user.</span></span> <span data-ttu-id="be762-205">Определяется `isInLobby` свойством.</span><span class="sxs-lookup"><span data-stu-id="be762-205">This is defined by the `isInLobby` property</span></span>
+> <span data-ttu-id="e3869-203">**Примечание:** Присоединение к гостевой учету зависит от параметров клиента для собрания.</span><span class="sxs-lookup"><span data-stu-id="e3869-203">**Note:** The guest join depends on the tenant settings for meeting.</span></span> <span data-ttu-id="e3869-204">Приложение может быть помещено в "зале ожидания" в ожидании, которое может быть допущено пользователем.</span><span class="sxs-lookup"><span data-stu-id="e3869-204">The application might be put in lobby waiting to be admitted by a user.</span></span> <span data-ttu-id="e3869-205">Определяется `isInLobby` свойством.</span><span class="sxs-lookup"><span data-stu-id="e3869-205">This is defined by the `isInLobby` property</span></span>
 
-##### <a name="notification---roster"></a><span data-ttu-id="be762-206">Уведомление — список</span><span class="sxs-lookup"><span data-stu-id="be762-206">Notification - roster</span></span>
+##### <a name="notification---roster"></a><span data-ttu-id="e3869-206">Уведомление — список</span><span class="sxs-lookup"><span data-stu-id="e3869-206">Notification - roster</span></span>
 
 ```http
 POST https://bot.contoso.com/callback
@@ -1098,7 +1102,7 @@ Content-Type: application/json
   ]
 }
 ```
-> <span data-ttu-id="be762-207">**Примечание:** Приложение не будет получать список участников собрания, пока его допустить в "зале ожидания"</span><span class="sxs-lookup"><span data-stu-id="be762-207">**Note:** The application will not receive the roster for participants in the meeting until its admitted from lobby</span></span>
+> <span data-ttu-id="e3869-207">**Примечание:** Приложение не будет получать список участников собрания, пока его допустить в "зале ожидания"</span><span class="sxs-lookup"><span data-stu-id="e3869-207">**Note:** The application will not receive the roster for participants in the meeting until its admitted from lobby</span></span>
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
