@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 65e17466121dedef36c72a0091974e2a2329494c
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: 01e3441e64c6b9f37bacbe00bf2c639439a03fb1
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747999"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39636675"
 ---
 # <a name="call-resource-type"></a>Тип ресурса call
 
@@ -49,7 +49,9 @@ ms.locfileid: "38747999"
 | **Самостоятельные операции участников**                                    |                                                             |                                                                                 |
 | [Отключение звука](../api/call-mute.md)                                        | [muteParticipantOperation](muteparticipantoperation.md)     | Отключение своего звука в вызове.                                                          |
 | [Включение звука](../api/call-unmute.md)                                    | [unmuteParticipantOperation](unmuteparticipantoperation.md) | Включение своего звука в звонке.                                                        |
-| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md)  | Нет                                                            | Начало и прекращение демонстрации экрана в звонке.                                      |
+| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md)  | Нет                                                        | Начало и прекращение демонстрации экрана в звонке.                                      |
+| **Запись операций**                                           |                                                             |                                              |
+| [UpdateRecordingStatus](../api/call-updaterecordingstatus.md)      | [updateRecordingStatusOperation](updateRecordingStatusOperation.md)               | Обновление состояния записи.                      |
 
 ## <a name="properties"></a>Свойства
 
@@ -62,6 +64,7 @@ ms.locfileid: "38747999"
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | Сведения о чате. Обязательные сведения для сценариев собраний.                                                                                                                                |
 | direction           | String                                                                                                 | Направление вызова. Возможные значения: `incoming` или `outgoing`. Только для чтения.                                                                                            |
 | id                  | String                                                                                                 | Идентификатор вызова. Только для чтения.                                                                                                                                                                        |
+| incomingContext     | [incomingContext](incomingcontext.md)                                                                  | Контекст, связанный с входящим звонком. Только для чтения. Создается сервером.                                                                                                                                |
 | mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) или [serviceHostedMediaConfig](servicehostedmediaconfig.md) | Настройка мультимедиа. Обязательные сведения для создания одноранговых вызовов или присоединения к собраниям.                                                                        |
 | mediaState          | [callMediaState](callmediastate.md)                                                                    | Только для чтения. Состояние мультимедиа компонентов вызова. |
 | meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | Содержит возможности собрания. Только для чтения.                                                                                                       |
@@ -74,7 +77,7 @@ ms.locfileid: "38747999"
 | source              | [participantInfo](participantinfo.md)                                                                  | Создатель вызова.                                                                                                                                                                         |
 | state               | String                                                                                                 | Состояние вызова. Возможные значения: `incoming`, `establishing`, `ringing`, `established`, `hold`, `transferring`, `transferAccepted`, `redirecting`, `terminating`, `terminated`. Только для чтения.                          |
 | subject             | String                                                                                                 | Тема беседы.                                                                                                                                                                    |
-| targets             | Коллекция [participantInfo](participantinfo.md)                                                       | Целевые объекты вызова. Обязательные сведения для создания одноранговых вызовов.                                                                                                            |
+| targets             | Коллекция [invitationParticipantInfo](participantinfo.md)                                             | Целевые объекты вызова. Обязательные сведения для создания одноранговых вызовов.                                                                                                            |
 | tenantId            | String                                                                                                 | Только для чтения. `tenantId` в Azure Active Directory.                                                                                                                        |
 | terminationReason   | String                                                                                                 | Только для чтения.                                                                                                                                                                       |
 | toneInfo            | [toneInfo](toneinfo.md)                                                                                | Только для чтения.                                                                                                                                                                        |
@@ -100,6 +103,7 @@ ms.locfileid: "38747999"
     "chatInfo",
     "direction",
     "id",
+    "incomingContext",
     "mediaState",
     "meetingCapability",
     "meetingInfo",
@@ -128,6 +132,7 @@ ms.locfileid: "38747999"
   "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
   "direction": "incoming | outgoing",
   "id": "String (identifier)",
+  "incomingContext": {"@odata.type": "#microsoft.graph.incomingContext"},
   "mediaConfig": {"@odata.type": "#microsoft.graph.mediaConfig"},
   "mediaState": {"@odata.type": "#microsoft.graph.callMediaState"},
   "meetingCapability": {"@odata.type": "#microsoft.graph.meetingCapability"},
@@ -141,7 +146,7 @@ ms.locfileid: "38747999"
   "source": {"@odata.type": "#microsoft.graph.participantInfo"},
   "state": "incoming | establishing | ringing | established | hold | transferring | transferAccepted | redirecting | terminating | terminated",
   "subject": "String",
-  "targets": [{"@odata.type": "#microsoft.graph.participantInfo"}],
+  "targets": [{"@odata.type": "#microsoft.graph.invitationParticipantInfo"}],
   "tenantId": "String",
   "terminationReason": "String",
   "toneInfo": {"@odata.type": "#microsoft.graph.toneInfo"}
