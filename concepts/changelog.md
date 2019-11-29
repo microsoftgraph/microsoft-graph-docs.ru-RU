@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: c1d38f86e5644decfbae3b5e90b456e55f897cb6
-ms.sourcegitcommit: f359d8d3946af55dc76a02bb7bf522a4d50a2707
+ms.openlocfilehash: 6e699e9f6b486dc35072c8f5c1953f38499a07c2
+ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39250710"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "39637110"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -30,6 +30,20 @@ ms.locfileid: "39250710"
 |:----------------|:------------|:-----------------------------------------|
 | Изменение        | Бета-версия        | Изменен возвращаемый тип для методов [mute](/graph/api/call-mute?view=graph-rest-beta) и [mute participant](/graph/api/participant-mute?view=graph-rest-beta) с [commsOperation](/graph/api/resources/commsoperation?view=graph-rest-beta) на [muteParticipantOperation](/graph/api/resources/muteparticipantoperation?view=graph-rest-beta). | 
 | Изменение        | Бета-версия        | Изменен возвращаемый тип для метода [unmute](/graph/api/call-unmute?view=graph-rest-beta) с [commsOperation](/graph/api/resources/commsoperation?view=graph-rest-beta) на [unmuteParticipantOperation](/graph/api/resources/unmuteparticipantoperation?view=graph-rest-beta). | 
+
+### <a name="cloud-communications--recording"></a>Коммуникации в облаке | Запись
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Дополнение|Бета|Добавлено новое действие [updateRecordingStatus](/graph/api/call-updaterecordingstatus?view=graph-rest-beta) объекту [call](/graph/api/resources/call?view=graph-rest-beta).
+|Дополнение|Бета|Добавлен новый сложный тип [incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-beta).
+|Дополнение|Бета|Добавлено новое свойство `incomingContext` объекту [call](/graph/api/resources/call?view=graph-rest-beta).
+|Дополнение|Бета|Добавлено новое свойство `endpointType` сложному типу [participantInfo](/graph/api/resources/participantinfo?view=graph-rest-beta).
+|Дополнение|Бета|Добавлено новое свойство `endpointType` сложному типу [invitationParticipantInfo](/graph/api/resources/invitationparticipantinfo?view=graph-rest-beta).
+|Дополнение|Бета|Добавлено новое свойство `recordingStatus` сложному типу [recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-beta).
+|Удаление|Бета|Удалено свойство `status` из сложного типа [recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-beta).
+|Удаление|Бета|Удалено наследование [participantInfo](/graph/api/resources/participantinfo?view=graph-rest-beta) из сложного типа [invitationParticipantInfo](/graph/api/resources/invitationparticipantinfo?view=graph-rest-beta).
+
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Устройства и приложения (Microsoft Intune)
 
@@ -87,7 +101,15 @@ ms.locfileid: "39250710"
 | Дополнение | 1.0 | Добавлена операция [checkMemberObjects](/graph/api/group-checkmemberobjects?view=graph-rest-1.0) для ресурса [group](/graph/api/resources/group?view=graph-rest-1.0). |
 | Дополнение | 1.0 | Добавлена операция [checkMemberObjects](/graph/api/user-checkmemberobjects?view=graph-rest-1.0) для ресурса [user](/graph/api/resources/user?view=graph-rest-1.0). |
 
-### <a name="identity-and-access-information-protection"></a>Удостоверения и доступ (защита информации)
+### <a name="identity-and-access-azure-ad--conditional-access"></a>Удостоверение и доступ (Azure AD) | Условный доступ
+
+| **Тип изменения** | **Версия** | **Описание**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Дополнение | Бета | Добавлено разрешение уровня приложения Policy.Read.All для операций чтения в политиках условного доступа и именованных расположениях.|
+| Дополнение | Бета | Добавлена поддержка состояния "только отчет": `enabledForReportingButNotEnforced`.|
+| Изменение | Бета | Обновлены разрешения, необходимые для выполнения операций записи для политик условного доступа и именованных расположений.|
+
+### <a name="identity-and-access-azure-ad--information-protection"></a>Удостоверения и доступ (Azure AD) | Защита информации
 
 | **Тип изменения** | **Версия** | **Описание**              |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -97,14 +119,10 @@ ms.locfileid: "39250710"
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+| Дополнение | 1.0 | Добавлено свойство **conversationIndex** объекту [message](/graph/resources/message?view=graph-rest-v1.0) и его производному типу [eventMessage](/graph/resources/eventmessage?view=graph-rest-v1.0).|
 | Дополнение | Бета | Добавлена поддержка делегированного разрешения [Mail.ReadBasic](/graph/permissions-reference#mail-permissions) и разрешения приложений [Mail.ReadBasic.All](/graph/permissions-reference#mail-permissions) для [создания](/graph/api/subscription-post-subscriptions?view=graph-rest-beta), [получения](/graph/api/subscription-get?view=graph-rest-beta), [обновления](/graph/api/subscription-update?view=graph-rest-beta) и [удаления](/graph/api/subscription-delete?view=graph-rest-beta) подписок на уведомления об изменении сообщения. |
 | Дополнение | 1.0 | Добавлена поддержка делегированного разрешения Mail.ReadBasic и разрешения приложений Mail.ReadBasic.All для следующего:<br />- [Перечисление сообщений](/graph/api/user-list-messages?view=graph-rest-1.0)<br />- [Получение сообщения](/graph/api/message-get?view=graph-rest-1.0) <br />- [Перечисление папок почты](/graph/api/user-list-mailfolders?view=graph-rest-1.0)<br />- [Получение папки почты](/graph/api/mailfolder-get?view=graph-rest-1.0)<br />- [Перечисление дочерних папок](/graph/api/mailfolder-list-childfolders?view=graph-rest-1.0)<br />- [Перечисление сообщений в папке](/graph/api/mailfolder-list-childfolders?view=graph-rest-1.0)<br />- [Получение дельты сообщения](/graph/api/message-delta?view=graph-rest-1.0)<br />- [Получение дельты папки почты](/graph/api/mailfolder-delta?view=graph-rest-1.0) <br />- [Создание](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0), [получение](/graph/api/subscription-get?view=graph-rest-1.0), [обновление](/graph/api/subscription-update?view=graph-rest-1.0) и [удаление](/graph/api/subscription-delete?view=graph-rest-1.0) подписок на уведомления об изменениях сообщения|
 
-### <a name="identity-and-access-azure-ad--conditional-access"></a>Удостоверение и доступ (Azure AD) | Условный доступ
-
-| **Тип изменения** | **Версия** | **Описание**                  |
-|:----------------|:------------|:-----------------------------------------|
-| Дополнение | Бета | Добавлено разрешение уровня приложения Policy.Read.All для операций чтения в политиках условного доступа и именованных расположениях.|
 
 ### <a name="people-and-workplace-intelligence"></a>Люди и рабочая аналитика
 
@@ -1231,7 +1249,7 @@ ms.locfileid: "39250710"
 | **Тип изменения** | **Версия** | **Описание**              |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | бета        | Представлен новый сложный тип [complianceInformation](/graph/api/complianceInformation/team?view=graph-rest-beta).|
-| Дополнение        | бета        | Представлен новый сложный тип [certificationControl](/graph/api/certificationControl/team?view=graph-rest-beta).|
+| Дополнение        | Бета        | Представлен новый сложный тип [certificationControl](/graph/api/certificationControl/team?view=graph-rest-beta).|
 
 ### <a name="teamwork-microsoft-teams"></a>Работа в команде (Microsoft Teams)
 
@@ -1615,7 +1633,7 @@ ms.locfileid: "39250710"
 |Дополнение|бета|Добавлено свойство **restrictedApps** для объекта [iosCompliancePolicy](/graph/api/resources/intune-deviceconfig-ioscompliancepolicy?view=graph-rest-beta)|
 |Дополнение|бета|Добавлены свойства **certificateStore** и **customSubjectAlternativeNames** для объекта [iosScepCertificateProfile](/graph/api/resources/intune-deviceconfig-iosscepcertificateprofile?view=graph-rest-beta)|
 |Дополнение|бета|Добавлено свойство **enforcedSoftwareUpdateDelayInDays** для объекта [iosUpdateConfiguration](/graph/api/resources/intune-deviceconfig-iosupdateconfiguration?view=graph-rest-beta)|
-|Дополнение|бета|Добавлены свойства **providerType**, **userDomain**, **strictEnforcement**, **cloudName** и **excludeList** для объекта [iosVpnConfiguration](/graph/api/resources/intune-deviceconfig-iosvpnconfiguration?view=graph-rest-beta)|
+|Дополнение|Бета|Добавлены свойства **providerType**, **userDomain**, **strictEnforcement**, **cloudName** и **excludeList** для объекта [iosVpnConfiguration](/graph/api/resources/intune-deviceconfig-iosvpnconfiguration?view=graph-rest-beta)|
 |Дополнение|бета|Добавлены свойства **safariBlockAutofill**, **cameraBlocked**, **iTunesBlockMusicService**, **spotlightBlockInternetResults**, **keyboardBlockDictation**, **definitionLookupBlocked**, **appleWatchBlockAutoUnlock**, **iTunesBlockFileSharing**, **iCloudBlockDocumentSync**, **iCloudBlockMail**, **iCloudBlockAddressBook**, **iCloudBlockCalendar**, **iCloudBlockReminders**, **iCloudBlockBookmarks**, **iCloudBlockNotes**, **airDropBlocked**, **passwordBlockModification** и **passwordBlockFingerprintUnlock** для объекта [macOSGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-macosgeneraldeviceconfiguration?view=graph-rest-beta)|
 |Дополнение|бета|Добавлены свойства **roleScopeTagIds**, **windowsActiveMalwareCount**, **windowsRemediatedMalwareCount**, **notes** и **configurationManagerClientHealthState** для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta)|
 |Дополнение|бета|Добавлено свойство **installStateDetail** для объекта [mobileAppInstallStatus](/graph/api/resources/intune-apps-mobileappinstallstatus?view=graph-rest-beta)|
