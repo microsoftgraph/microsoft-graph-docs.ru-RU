@@ -4,7 +4,7 @@
       href: /graph/overview
     - name: Получение маркеров аутентификации
       items:
-        - name: Общие сведения
+        - name: Обзор
           href: /graph/auth/index?context=graph/api/1.0
         - name: Основы
           href: /graph/auth/auth-concepts?context=graph/api/1.0
@@ -22,7 +22,7 @@
           href: /graph/auth-limit-mailbox-access?context=graph/api/1.0
     - name: Использование API
       items:
-        - name: Общие сведения
+        - name: Обзор
           href: /graph/use-the-api?context=graph/api/1.0
         - name: Разбиение на страницы
           href: /graph/paging?context=graph/api/1.0
@@ -44,7 +44,7 @@
         - name: Отслеживание изменений
           displayname: 'Delta query, Outlook calendar, Groups, Outlook mail, Users'
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: /graph/delta-query-overview?context=graph/api/1.0
             - name: Получение изменений для событий (пример)
               href: /graph/delta-query-events?context=graph/api/1.0
@@ -57,7 +57,7 @@
         - name: Добавление пользовательских данных
           displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: /graph/extensibility-overview?context=graph/api/1.0
             - name: Использование открытых расширений (пример)
               href: /graph/extensibility-open-users?context=graph/api/1.0
@@ -71,7 +71,7 @@
         - name: Azure AD Graph
           displayname: 'Migration, Azure AD Graph'
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: /graph/migrate-azure-ad-graph-overview?context=graph/api/1.0
             - name: Контрольный список для переноса приложений
               href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
@@ -158,21 +158,21 @@
     - name: Справочник по версии 1.0
       expanded: true
       items:
-        - name: Общие сведения
+        - name: Обзор
           href: overview.md
         - name: Пользователи
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/users.md
             - name: Пользователь
               href: resources/user.md
               items:
                 - name: Список пользователей
                   href: api/user-list.md
-                - name: Получение пользователя
-                  href: api/user-get.md
                 - name: Создание пользователя
                   href: api/user-post-users.md
+                - name: Получение пользователя
+                  href: api/user-get.md
                 - name: Обновление пользователя
                   href: api/user-update.md
                 - name: Удаление пользователя
@@ -183,62 +183,66 @@
               href: resources/calendar.md
               displayName: 'Outlook, Outlook calendar'
               items:
-                - name: Список событий
-                  href: api/user-list-events.md
-                - name: Создание события
-                  href: api/user-post-events.md
-                - name: Вывод списка календарей
-                  href: api/user-list-calendars.md
                 - name: Создание календаря
                   href: api/user-post-calendars.md
-                - name: 'Вывод списка, включающего группы календарей'
-                  href: api/user-list-calendargroups.md
                 - name: Создание группы календарей
                   href: api/user-post-calendargroups.md
-                - name: Представление списка для календаря
-                  href: api/user-list-calendarview.md
-                - name: Представление напоминаний
-                  href: api/user-reminderview.md
-                - name: Получение сведений о доступности
-                  href: api/calendar-getschedule.md
+                - name: Создание события
+                  href: api/user-post-events.md
                 - name: Поиск времени для собрания
                   href: api/user-findmeetingtimes.md
+                - name: Получение сведений о доступности
+                  href: api/calendar-getschedule.md
+                - name: Список календарей
+                  href: api/user-list-calendars.md
+                - name: Список групп календарей
+                  href: api/user-list-calendargroups.md
+                - name: Представление списка для календаря
+                  href: api/user-list-calendarview.md
+                - name: Вывод списка событий
+                  href: api/user-list-events.md
+                - name: Представление напоминаний
+                  href: api/user-reminderview.md
             - name: Контакты
               href: resources/contact.md
               items:
-                - name: Список контактов
-                  href: api/user-list-contacts.md
                 - name: Создание контакта
                   href: api/user-post-contacts.md
-                - name: 'Вывод списка, включающего папки контактов'
-                  href: api/user-list-contactfolders.md
-                - name: Создание папки контакта
+                - name: Создание папки контактов
                   href: api/user-post-contactfolders.md
+                - name: Список контактов
+                  href: api/user-list-contacts.md
+                - name: Список папок контактов
+                  href: api/user-list-contactfolders.md
             - name: Объекты каталога
               href: resources/directoryobject.md
               items:
-                - name: Проверка объектов Member
-                  href: api/user-checkmemberobjects.md
-                - name: Список корпоративных устройств
-                  href: api/user-list-owneddevices.md
-                - name: Вывод списка зарегистрированных устройств
-                  href: api/user-list-registereddevices.md
-                - name: Вывод списка корпоративных объектов
-                  href: api/user-list-ownedobjects.md
-                - name: Вывод списка созданных объектов
-                  href: api/user-list-createdobjects.md
                 - name: Назначение лицензии
                   href: api/user-assignlicense.md
+                - name: Проверка членства в группах
+                  href: api/user-checkmembergroups.md
+                - name: Проверка объектов Member
+                  href: api/user-checkmemberobjects.md
+                - name: Экспорт личных данных
+                  href: api/user-exportpersonaldata.md
                 - name: Вывод объектов членов
                   href: api/user-getmemberobjects.md
                 - name: Вывод групп членов
                   href: api/user-getmembergroups.md
-                - name: Проверка членства в группах
-                  href: api/user-checkmembergroups.md
                 - name: Получение объектов по идентификатору
                   href: api/directoryobject-getbyids.md
-                - name: Экспорт личных данных
-                  href: api/user-exportpersonaldata.md
+                - name: Список созданных объектов
+                  href: api/user-list-createdobjects.md
+                - name: Список сведений о лицензии
+                  href: api/user-list-licensedetails.md
+                - name: Список корпоративных устройств
+                  href: api/user-list-owneddevices.md
+                - name: Список корпоративных объектов
+                  href: api/user-list-ownedobjects.md
+                - name: Вывод списка зарегистрированных устройств
+                  href: api/user-list-registereddevices.md
+                - name: Отзыв сеанса входа
+                  href: api/user-revokesigninsessions.md
             - name: Диск
               href: resources/drive.md
               items:
@@ -249,6 +253,8 @@
             - name: Группы
               href: resources/group.md
               items:
+                - name: 'Список групп, к которым присоединился пользователь'
+                  href: api/user-list-joinedteams.md
                 - name: Список свойств member of
                   href: api/user-list-memberof.md
                 - name: Список транзитивных участников
@@ -256,33 +262,33 @@
             - name: Почта
               href: resources/message.md
               items:
-                - name: Список сообщений
-                  href: api/user-list-messages.md
-                - name: Создание сообщения
-                  href: api/user-post-messages.md
-                - name: Список переопределений
-                  href: api/inferenceclassification-list-overrides.md
-                - name: Создание переопределения
-                  href: api/inferenceclassification-post-overrides.md
-                - name: Список папок почты
-                  href: api/user-list-mailfolders.md
                 - name: Создание папки почты
                   href: api/user-post-mailfolders.md
-                - name: Отправка почты
-                  href: api/user-sendmail.md
+                - name: Создание сообщения
+                  href: api/user-post-messages.md
+                - name: Создание правила сообщения
+                  href: api/mailfolder-post-messagerules.md
+                - name: Создание переопределения
+                  href: api/inferenceclassification-post-overrides.md
+                - name: Получение советов по использованию электронной почты
+                  href: api/user-getmailtips.md
+                - name: Список папок почты
+                  href: api/user-list-mailfolders.md
+                - name: Список сообщений
+                  href: api/user-list-messages.md
+                - name: Переопределение списка
+                  href: api/inferenceclassification-list-overrides.md
                 - name: Перечисление правил
                   href: api/mailfolder-list-messagerules.md
-                - name: Создание правила
-                  href: api/mailfolder-post-messagerules.md
-                - name: Получение подсказок
-                  href: api/user-getmailtips.md
+                - name: Отправка почты
+                  href: api/user-sendmail.md
             - name: Заметки
               href: resources/onenote.md
               items:
-                - name: Список записных книжек
-                  href: api/onenote-list-notebooks.md
                 - name: Создание записной книжки
                   href: api/onenote-post-notebooks.md
+                - name: Список записных книжек
+                  href: api/onenote-list-notebooks.md
             - name: Организационная иерархия
               href: resources/organization.md
               items:
@@ -308,14 +314,14 @@
                   items:
                     - name: Пользователь Outlook
                       href: resources/outlookuser.md
+                    - name: Создание категории
+                      href: api/outlookuser-post-mastercategories.md
                     - name: Получение настроек языков
                       href: api/outlookuser-supportedlanguages.md
                     - name: Получение настроек часовых поясов
                       href: api/outlookuser-supportedtimezones.md
                     - name: Перечисление категорий
                       href: api/outlookuser-list-mastercategories.md
-                    - name: Создание категории
-                      href: api/outlookuser-post-mastercategories.md
                 - name: Преобразование идентификаторов
                   href: api/user-translateexchangeids.md
             - name: Фотография
@@ -339,7 +345,7 @@
                   href: api/user-update-settings.md
         - name: Группы
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/groups-overview.md
             - name: Группа
               href: resources/group.md
@@ -757,7 +763,7 @@
         - name: Устройства и приложения
           displayName: Intune
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/intune-graph-overview.md
             - name: Управление приложениями
               href: resources/intune-app-conceptual.md
@@ -1065,7 +1071,7 @@
                 - name: Управляемые мобильные бизнес-приложения
                   href: resources/intune-apps-managedmobilelobapp.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-apps-managedmobilelobapp-list.md
                     - name: Получение
                       href: api/intune-apps-managedmobilelobapp-get.md
@@ -1074,7 +1080,7 @@
                 - name: Приложение Microsoft Store для бизнеса
                   href: resources/intune-apps-microsoftstoreforbusinessapp.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-apps-microsoftstoreforbusinessapp-list.md
                     - name: Получение
                       href: api/intune-apps-microsoftstoreforbusinessapp-get.md
@@ -1496,7 +1502,7 @@
                   items:
                     - name: Получение
                       href: api/intune-deviceconfig-devicecompliancepolicydevicestatesummary-get.md
-                    - name: Update
+                    - name: Обновление
                       href: api/intune-deviceconfig-devicecompliancepolicydevicestatesummary-update.md
                 - name: Состояние соответствия устройства параметру политики
                   href: resources/intune-deviceconfig-devicecompliancepolicysettingstate.md
@@ -2581,7 +2587,7 @@
                       href: api/intune-mam-mdmwindowsinformationprotectionpolicy-get.md
                     - name: Создание
                       href: api/intune-mam-mdmwindowsinformationprotectionpolicy-create.md
-                    - name: Удаление
+                    - name: Удалить
                       href: api/intune-mam-mdmwindowsinformationprotectionpolicy-delete.md
                     - name: Обновление
                       href: api/intune-mam-mdmwindowsinformationprotectionpolicy-update.md
@@ -2937,7 +2943,7 @@
                 - name: Определение ролей
                   href: resources/intune-rbac-roledefinition.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-rbac-roledefinition-list.md
                     - name: Получение
                       href: api/intune-rbac-roledefinition-get.md
@@ -3016,7 +3022,7 @@
                 - name: Пользователь
                   href: resources/intune-shared-user.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-shared-user-list.md
                     - name: Получение
                       href: api/intune-shared-user-get.md
@@ -3119,7 +3125,7 @@
         - name: Файлы
           displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/onedrive.md
             - name: Диски
               href: resources/drive.md
@@ -3193,7 +3199,7 @@
         - name: Удостоверения и доступ
           displayName: 'Azure AD, Microsoft identity platform'
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/azure-ad-overview.md
             - name: Приложение
               href: resources/application.md
@@ -3763,7 +3769,7 @@
                       href: api/multivaluelegacyextendedproperty-get.md
         - name: Отчеты
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/report.md
             - name: Использование устройств Microsoft Teams
               href: resources/microsoft-teams-device-usage-reports.md
@@ -3964,7 +3970,7 @@
         - name: Безопасность
           displayname: 'Security API, Microsoft Intelligent Security Graph'
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/security-api-overview.md
             - name: Оповещения
               href: resources/alert.md
@@ -3996,7 +4002,7 @@
         - name: Сайты и списки
           displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/sharepoint.md
             - name: Сайты
               href: resources/site.md
@@ -4045,7 +4051,7 @@
         - name: Задачи и планы
           displayName: Planner
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/planner-overview.md
             - name: План
               href: resources/plannerplan.md
@@ -4126,7 +4132,7 @@
         - name: Командная работа
           displayName: Microsoft Teams
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/teams-api-overview.md
             - name: Команда
               href: resources/team.md
