@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ee3f42f36ccee18baf4bcbaaf6790c12a717961e
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: c4ca85a37f2bd1f40daed09dd6ba2b4616e2b81f
+ms.sourcegitcommit: 6265ddb4e3d22bb556615589594e40df018fb0f1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38658865"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "39672833"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -28,60 +28,113 @@ ms.locfileid: "38658865"
 
 | Метод | Возвращаемый тип | Описание |
 |:-------|:------------|:------------|
-|[Перечисление пользователей](../api/user-list.md) |Коллекция объектов [user](user.md)| Получение списка, включающего объекты user.|
-|[Создание пользователя](../api/user-post-users.md) |[user](user.md)| Создание объекта user.|
-|[Получение пользователя](../api/user-get.md) | [user](user.md) |Чтение свойств и связей объекта пользователя.|
-|[Обновление пользователя](../api/user-update.md) | [user](user.md) |Обновление объекта пользователя. |
-|[Удаление пользователя](../api/user-delete.md) | Нет |Удаление объекта пользователя. |
-|[Список сообщений](../api/user-list-messages.md) |Коллекция [message](message.md)| Получение всех сообщений в почтовом ящике вошедшего пользователя.|
-|[Создание сообщения](../api/user-post-messages.md) |[message](message.md)| Создание сообщения путем добавления в коллекцию сообщений.|
-|[Список объектов mailFolder](../api/user-list-mailfolders.md) |Коллекция [mailFolder](mailfolder.md)| Получение коллекции папок почты в корневой папке вошедшего пользователя. |
-|[Создание объекта mailFolder](../api/user-post-mailfolders.md) |[mailFolder](mailfolder.md)| Создание объекта mailFolder путем добавления в коллекцию папок почты.|
-|[sendMail](../api/user-sendmail.md)|Нет|Отправка сообщения, указанного в теле запроса.|
-|[Получение списка событий](../api/user-list-events.md) |Коллекция [event](event.md)| Получение списка объектов event в почтовом ящике пользователя. В этом списке указаны единичные собрания и главные собрания в соответствующих сериях.|
-|[Создание события](../api/user-post-events.md) |[event](event.md)| Создание объекта event путем публикации в коллекции объектов event.|
-|[Список календарей](../api/user-list-calendars.md) |Коллекция [Calendar](calendar.md)| Получение коллекции объектов Calendar.|
-|[Создание календаря](../api/user-post-calendars.md) |[Calendar](calendar.md)| Создание объекта Calendar путем добавления в коллекцию календарей.|
-|[Список объектов calendarGroup](../api/user-list-calendargroups.md) |Коллекция [CalendarGroup](calendargroup.md)| Получение коллекции объектов CalendarGroup.|
-|[Создание объекта calendarGroup](../api/user-post-calendargroups.md) |[CalendarGroup](calendargroup.md)| Создание объекта CalendarGroup путем записи в коллекцию групп календарей.|
-|[Список calendarView](../api/user-list-calendarview.md) |Коллекция [event](event.md)| Получение коллекции объектов event.|
-|[Список контактов](../api/user-list-contacts.md) |Коллекция [contact](contact.md)| Получение коллекции контактов из папки контактов по умолчанию для выполнившего вход пользователя.|
-|[Создание контакта](../api/user-post-contacts.md) |[contact](contact.md)| Создание контакта путем добавления в коллекцию контактов.|
-|[Список объектов contactFolder](../api/user-list-contactfolders.md) |Коллекция [contactFolder](contactfolder.md)| Получение коллекции папок контактов в папке контактов по умолчанию для вошедшего пользователя.|
-|[Создание объекта contactFolder](../api/user-post-contactfolders.md) |[contactFolder](contactfolder.md)| Создание объекта contactFolder путем добавления в коллекцию папок контактов.|
-|[Список directReports](../api/user-list-directreports.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей и контактов, являющихся подчиненными данного пользователя, из свойства навигации directReports.|
-|[Получение руководителя](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | Получение пользователя или контакта, являющегося руководителем пользователя, из свойства навигации manager.|
-|[Список memberOf](../api/user-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Получение групп, ролей каталога и административных единиц, непосредственным участником которых является пользователь, из свойства навигации memberOf.|
-|[Перечисление транзитивных свойств memberOf](../api/user-list-transitivememberof.md) |Коллекция [directoryObject](directoryobject.md)| Перечисление групп, ролей каталога и административных единиц, в которых состоит пользователь. Эта операция является транзитивной и включает группы, в которых пользователь является вложенным элементом. |
-|[Перечисление объектов joinedTeams](../api/user-list-joinedteams.md) |Коллекция [team](team.md)| Получение команд Microsoft Teams, непосредственным участником которых является пользователь, из свойства навигации joinedTeams.|
-|[Список ownedDevices](../api/user-list-owneddevices.md) |Коллекция [directoryObject](directoryobject.md)| Получение устройств, принадлежащих пользователю, из свойства навигации ownedDevices.|
-|[Список ownedObjects](../api/user-list-ownedobjects.md) |Коллекция [directoryObject](directoryobject.md)| Получение объектов каталога, принадлежащих пользователю, из свойства навигации ownedObjects.|
-|[Перечисление plannerTasks](../api/planneruser-list-tasks.md) |Коллекция [plannerTask](plannertask.md)| Получает объекты plannerTask, назначенные пользователю.|
-|[Перечисление registeredDevices](../api/user-list-registereddevices.md) |Коллекция [directoryObject](directoryobject.md)| Получение устройств, зарегистрированных для пользователя, из свойства навигации registeredDevices.|
-|[Перечисление участий с ролью в заданной области](../api/user-list-scopedrolememberof.md) |Коллекция [scopedRoleMembership](scopedrolemembership.md)| Получение участий пользователя в административных единицах с ролью в заданной области.|
-|[Перечисление createdObjects](../api/user-list-createdobjects.md) |Коллекция [directoryObject](directoryobject.md)| Получение объектов каталога, созданных пользователем, из свойства навигации createdObjects.|
-|[Перечисление agreementAcceptances](../api/user-list-agreementacceptances.md) | Коллекция [agreementAcceptance](agreementacceptance.md) | Получение списка состояний принятия пользователем условий использования.|
-|[assignLicense](../api/user-assignlicense.md)|[user](user.md)|Добавление или удаление подписок пользователя. Вы также можете включать и отключать отдельные планы, связанные с подпиской.|
-|[reprocessLicense](../api/user-reprocesslicenseassignment.md) |[user](user.md)| Переработка назначенных подписок для пользователя.|
-|[Перечисление licenseDetails](../api/user-list-licensedetails.md) |Коллекция объектов [licenseDetails](licensedetails.md)| Получение коллекции объектов licenseDetails.|
-|[checkMemberGroups](../api/user-checkmembergroups.md)|Коллекция строк|Проверка членства в списке групп. Это транзитивная проверка.|
-|[checkMemberObjects](../api/user-checkmemberobjects.md)|Коллекция String|Проверка участия в списке группы, роли каталога или объектах административных единиц. Это транзитивная проверка.|
-|[delta](../api/user-delta.md)|Коллекция пользователей| Получение добавочных изменений для пользователей. |
-|[findMeetingTimes](../api/user-findmeetingtimes.md)|[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md)|Получение времени и местоположения для собрания с учетом доступности участника, а также ограничений по местоположению или времени.|
-|[findRoomLists](../api/user-findroomlists.md)|Коллекция [emailaddress.md](emailaddress.md) | Получение списка помещений, определенных в клиенте.|
-|[findRooms](../api/user-findrooms.md)|Коллекция [emailaddress.md](emailaddress.md) | Получение всех помещений для собраний в клиенте пользователя или определенном списке помещений. |
-|[getMailTips](../api/user-getmailtips.md)|Коллекия [mailTips](mailtips.md)|Возвращение подсказок о доступности одного или нескольких получателей для вошедшего пользователя. |
-|[getMemberGroups](../api/user-getmembergroups.md)|Коллекция строк|Возвращает все группы, в которых состоит пользователь. Это транзитивная проверка.|
-|[getMemberObjects](../api/user-getmemberobjects.md)|Коллекция строк| Возвращение всех групп, ролей каталога и административных единиц, в которых состоит пользователь. Это транзитивная проверка. |
-|[invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md)| Нет |Аннулирует все маркеры обновления и маркеры сеанса пользователя, выпущенные для приложений, сбрасывая значения свойства **refreshTokensValidFromDateTime** и указывая для него текущую дату и время. Это вынуждает пользователей повторно выполнить вход в эти приложения. Этот метод заменяется методом **revokeSignInSessions**.|
-|[reminderView](../api/user-reminderview.md)|Коллекция [Reminder](reminder.md)|Возвращает список напоминаний календаря за указанный период времени.|
-|[revokeSignInSessions](../api/user-revokesigninsessions.md)| Нет |Отменяет все маркеры обновления и маркеры сеанса пользователя, выпущенные для приложений, сбрасывая значение свойства **signInSessionsValidFromDateTime** и указывая для него текущую дату и время. Это вынуждает пользователей повторно выполнить вход в эти приложения. Этот метод заменяет метод **invalidateAllRefreshTokens**.|
-|[translateExchangeIds](../api/user-translateexchangeids.md) |Коллекция [convertIdResult](convertidresult.md)| Перевод идентификаторов ресурсов, связанных с Outlook, между форматами.|
+| [Перечисление пользователей](../api/user-list.md) | Коллекция объектов [user](user.md) | Получение списка, включающего объекты user. |
+| [Создание пользователя](../api/user-post-users.md) | [user](user.md) | Создание объекта user. |
+| [Получение пользователя](../api/user-get.md) | [user](user.md) | Чтение свойств и связей объекта пользователя. |
+| [Обновление пользователя](../api/user-update.md) | [user](user.md) | Обновление объекта пользователя. |
+| [Удаление пользователя](../api/user-delete.md) | Нет | Удаление объекта пользователя. |
+| [Получение дельты](../api/user-delta.md) | Коллекция пользователей | Получение добавочных изменений для пользователей. |
+| **Календарь** ||| 
+| [Создание календаря](../api/user-post-calendars.md) | [Calendar](calendar.md) | Создание объекта Calendar путем добавления в коллекцию календарей.|
+| [Создание объекта calendarGroup](../api/user-post-calendargroups.md) | [CalendarGroup](calendargroup.md) | Создание объекта CalendarGroup путем записи в коллекцию групп календарей. |
+| [Создание события](../api/user-post-events.md) | [event](event.md) | Создание объекта event путем публикации в коллекции объектов event. |
+| [findMeetingTimes](../api/user-findmeetingtimes.md) | [meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md) | Получение времени и местоположения для собрания с учетом доступности участника, а также ограничений по местоположению или времени. |
+| [findRooms](../api/user-findrooms.md) | Коллекция [emailaddress.md](emailaddress.md) | Получение всех помещений для собраний в клиенте пользователя или определенном списке помещений. |
+| [findRoomLists](../api/user-findroomlists.md) | Коллекция [emailaddress.md](emailaddress.md) | Получение списка помещений, определенных в клиенте.|
+| [getSchedule](../api/calendar-getschedule.md) | [scheduleInformation](scheduleinformation.md) | Получение сведений о доступности коллекции пользователей, списков рассылки или ресурсов (комнат или оборудования) для определенного периода времени. |
+| [Список календарей](../api/user-list-calendars.md) | Коллекция [Calendar](calendar.md) | Получение коллекции объектов Calendar. |
+| [Список объектов calendarGroup](../api/user-list-calendargroups.md) | Коллекция [CalendarGroup](calendargroup.md) | Получение коллекции объектов CalendarGroup. |
+| [Список calendarView](../api/user-list-calendarview.md) | Коллекция [event](event.md) | Получение коллекции объектов event. |
+| [Получение списка событий](../api/user-list-events.md) | Коллекция [event](event.md) | Получение списка объектов event в почтовом ящике пользователя. В этом списке указаны единичные собрания и главные собрания в соответствующих сериях. |
+| [reminderView](../api/user-reminderview.md) | Коллекция [Reminder](reminder.md) | Возвращает список напоминаний календаря за указанный период времени. |
+| **Контакты** |||
+| [Создание контакта](../api/user-post-contacts.md) | [contact](contact.md) | Создание контакта путем добавления в коллекцию контактов. |
+| [Создание объекта contactFolder](../api/user-post-contactfolders.md) | [contactFolder](contactfolder.md) | Создание объекта contactFolder путем добавления в коллекцию папок контактов. |
+| [Список контактов](../api/user-list-contacts.md) | Коллекция [contact](contact.md) | Получение коллекции контактов из папки контактов по умолчанию для выполнившего вход пользователя. |
+| [Список объектов contactFolder](../api/user-list-contactfolders.md) | Коллекция [contactFolder](contactfolder.md) | Получение коллекции папок контактов в папке контактов по умолчанию для вошедшего пользователя. |
+| **Объекты каталога** |||
+| [assignLicense](../api/user-assignlicense.md) | [user](user.md) | Добавление или удаление подписок пользователя. Вы также можете включать и отключать отдельные планы, связанные с подпиской. |
+| [checkMemberGroups](../api/user-checkmembergroups.md) | Коллекция строк|Проверка членства в списке групп. Это транзитивная проверка. |
+| [checkMemberObjects](../api/user-checkmemberobjects.md) | Коллекция String | Проверка участия в списке группы, роли каталога или объектах административных единиц. Это транзитивная проверка. |
+| [exportPersonalData](../api/user-exportpersonaldata.md) | Нет | Отправка запроса операции политики данных, направленного администратором компании для экспорта данных пользователя организации. |
+| [getByIds](../api/directoryobject-getbyids.md) | Коллекция String | Возвращает объекты каталогов, указанные в списке идентификаторов. |
+| [getMemberGroups](../api/user-getmembergroups.md) | Коллекция строк | Возвращает все группы, в которых состоит пользователь. Это транзитивная проверка. |
+| [getMemberObjects](../api/user-getmemberobjects.md) | Коллекция строк | Возвращение всех групп, ролей каталога и административных единиц, в которых состоит пользователь. Это транзитивная проверка. |
+| [Перечисление createdObjects](../api/user-list-createdobjects.md) | Коллекция [directoryObject](directoryobject.md) | Получение объектов каталога, созданных пользователем, из свойства навигации createdObjects. |
+| [Перечисление licenseDetails](../api/user-list-licensedetails.md) | Коллекция объектов [licenseDetails](licensedetails.md) | Получение коллекции объектов licenseDetails. |
+| [Список ownedDevices](../api/user-list-owneddevices.md) | Коллекция [directoryObject](directoryobject.md) | Получение устройств, принадлежащих пользователю, из свойства навигации ownedDevices. |
+| [Список ownedObjects](../api/user-list-ownedobjects.md) | Коллекция [directoryObject](directoryobject.md) | Получение объектов каталога, принадлежащих пользователю, из свойства навигации ownedObjects. |
+| [Список registeredDevices](../api/user-list-registereddevices.md) | Коллекция [directoryObject](directoryobject.md) | Получение устройств, зарегистрированных для пользователя, из свойства навигации registeredDevices. |
+| [Перечисление участий с ролью в заданной области](../api/user-list-scopedrolememberof.md) | Коллекция [scopedRoleMembership](scopedrolemembership.md) | Получение участий пользователя в административных единицах с ролью в заданной области. |
+| [reprocessLicense](../api/user-reprocesslicenseassignment.md) | [user](user.md) | Переработка назначенных подписок для пользователя. |
+| [revokeSignInSessions](../api/user-revokesigninsessions.md) | Нет | Отменяет все маркеры обновления и маркеры сеанса пользователя, выпущенные для приложений, сбрасывая значение свойства **signInSessionsValidFromDateTime** и указывая для него текущую дату и время. Это вынуждает пользователей повторно выполнить вход в эти приложения. Этот метод заменяет метод **invalidateAllRefreshTokens**. |
+| **Drive** |||
+| [Получение объекта drive](../api/drive-get.md) | [drive](drive.md) | Получение свойств и связей ресурса Drive. |
+| [Список дочерних элементов](../api/driveitem-list-children.md) | [DriveItems](driveitem.md) | Возвращает коллекцию DriveItems в дочерних элементах ресурса DriveItem. |
+| **Группы** |||
+| [Перечисление объектов joinedTeams](../api/user-list-joinedteams.md) | Коллекция [team](team.md) | Получение команд Microsoft Teams, непосредственным участником которых является пользователь, из свойства навигации joinedTeams. |
+| [Список memberOf](../api/user-list-memberof.md) | Коллекция [directoryObject](directoryobject.md) | Получение групп, ролей каталога и административных единиц, непосредственным участником которых является пользователь, из свойства навигации memberOf. |
+| [Перечисление транзитивных свойств memberOf](../api/user-list-transitivememberof.md) |Коллекция [directoryObject](directoryobject.md)| Перечисление групп, ролей каталога и административных единиц, в которых состоит пользователь. Эта операция является транзитивной и включает группы, в которых пользователь является вложенным элементом. |
+| **Аналитика** |||
+| [Список "Общие"](../api/insights-list-shared.md) | Коллекция объектов [sharedInsight](insights-shared.md) | Расчетные данные, возвращающие список файлов, которыми вы поделились с пользователем. |
+| [Список "Популярные"](../api/insights-list-trending.md) | Коллекция объектов [trending](insights-trending.md) | Расчетные данные, возвращающие список элементов, популярных в окружении пользователя. |
+| [Список "Использованные"](../api/insights-list-used.md) | Коллекция объектов [usedInsight](insights-used.md) | Расчетные данные, возвращающие список файлов, которые вы используете вместе с пользователем. |
+| **Почта** |||
+| [Создание объекта inferenceClassificationOverride](../api/inferenceclassification-post-overrides.md) | Создание переопределения сортировки почты для отправителя, определенного SMTP-адресом. |
+| [Создание объекта mailFolder](../api/user-post-mailfolders.md) | [mailFolder](mailfolder.md) | Создание объекта mailFolder путем добавления в коллекцию папок почты. |
+| [Создание сообщения](../api/user-post-messages.md) | [message](message.md) | Создание сообщения путем добавления в коллекцию сообщений. |
+| [Создание объекта messageRule](../api/mailfolder-post-messagerules.md) | [messageRule](messagerule.md) | Создает объект messageRule, определяя набор условий и действий. |
+| [getMailTips](../api/user-getmailtips.md) | Коллекия [mailTips](mailtips.md) | Возвращение подсказок о доступности одного или нескольких получателей для вошедшего пользователя. |
+| [Список объектов mailFolder](../api/user-list-mailfolders.md) | Коллекция [mailFolder](mailfolder.md) | Получение коллекции папок почты в корневой папке вошедшего пользователя. |
+| [Список сообщений](../api/user-list-messages.md) | Коллекция [message](message.md)| Получение всех сообщений в почтовом ящике вошедшего пользователя. |
+| [Список переопределений](../api/inferenceclassification-list-overrides.md) | Коллекция объектов [inferenceClassificationOverride](inferenceclassificationoverride.md) | Получение переопределений сортировки почты, настроенных пользователем для классификации сообщений от определенных отправителей. |
+| [Список правил](../api/mailfolder-list-messagerules.md) | Коллекция [messageRule](messagerule.md) | Получение всех объектов messageRule, определенных для папки пользователя "Входящие". |
+| [Отправка почты](../api/user-sendmail.md) | Нет | Отправка сообщения, указанного в теле запроса. |
+| **Примечания** |||
+| [Создание записной книжки](../api/onenote-post-notebooks.md) | [notebook](notebook.md) | Создание записной книжки OneNote. |
+| [Список записных книжек](../api/onenote-list-notebooks.md) | Коллекция объектов [notebook](notebook.md) | Получение списка объектов notebook. |
 |**Открытые расширения**| | |
-|[Создание открытого расширения](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Создание открытого расширения и добавление настраиваемых свойств в новый или существующий ресурс.|
-|[Получение открытого расширения](../api/opentypeextension-get.md) |Коллекция объектов [openTypeExtension](opentypeextension.md)| Получение открытого расширения, определяемого именем расширения.|
-|**Расширения схемы**| | |
-|[Добавление значений расширений для схемы](/graph/extensibility-schema-groups) || Создание определения расширения схемы и его дальнейшее использование для добавления в ресурс введенных пользовательских данных.|
+| [Создание открытого расширения](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) | Создание открытого расширения и добавление настраиваемых свойств в новый или существующий ресурс. |
+| [Получение открытого расширения](../api/opentypeextension-get.md) | Коллекция объектов [openTypeExtension](opentypeextension.md) | Получение открытого расширения, определяемого именем расширения. |
+| **Организационная иерархия** |||
+| [Назначение руководителя](../api/user-post-manager.md) | Нет | Назначение руководителя пользователя. |
+| [Получение имени руководителя](../api/user-list-manager.md) | [directoryObject](directoryobject.md) | Получение пользователя или контакта, являющегося руководителем пользователя, из свойства навигации manager. |
+| [Список directReports](../api/user-list-directreports.md) | Коллекция [directoryObject](directoryobject.md) | Получение пользователей и контактов, являющихся подчиненными данного пользователя, из свойства навигации directReports. |
+| **Параметры Outlook** |||
+| [Создание категории Outlook](../api/outlookuser-post-mastercategories.md) | [outlookCategory](outlookcategory.md) | Создание объекта outlookCategory в основном списке категорий пользователя. |
+| [Получение supportedLanguages](../api/outlookuser-supportedlanguages.md) | Коллекция объектов [localeInfo](localeinfo.md) | Получение списка поддерживаемых языковых стандартов и языков, которые настроены на сервере почтовых ящиков пользователя. |
+| [Получение supportedTimeZones](../api/outlookuser-supportedtimezones.md) | [timeZoneInformation](timezoneinformation.md collection) | Получение списка поддерживаемых часовых поясов, которые настроены на сервере почтовых ящиков пользователя. |
+| [Получение параметров почтового ящика пользователя](../api/user-get-mailboxsettings.md) | [mailboxSettings](mailboxsettings.md) | Получение объекта mailboxSettings пользователя. |
+| [Список категорий Outlook](../api/outlookuser-list-mastercategories.md) | Коллекция [outlookCategory](outlookcategory.md) | Получение всех категорий, определенных для пользователя. |
+| [Преобразование идентификаторов Exchange](../api/user-translateexchangeids.md) | Коллекция [convertIdResult](convertidresult.md) | Перевод идентификаторов ресурсов, связанных с Outlook, между форматами. |
+| [Обновление параметров почтового ящика пользователя](../api/user-update-mailboxsettings.md) | [mailboxSettings](mailboxsettings.md) | Включение, настройка или отключение одного или нескольких объектов mailboxSettings пользователя. |
+| **Задачи Outlook** |||
+| [Создание объекта outlookTask](../api/outlookuser-post-tasks.md) | [outlookTask](outlooktask.md) | Создание задачи Outlook в группе задач по умолчанию ("Мои задачи") и папке задач по умолчанию ("Задачи") в почтовом ящике пользователя. |
+| [Список задач](../api/outlookuser-list-tasks.md) | Коллекция объектов [outlookTask](outlooktask.md) | Получение всех задач Outlook в почтовом ящике пользователя. |
+| **Люди** |||
+| [Получение списка людей](../api/user-list-people.md) | [person](person.md) | Получение списка объектов person, упорядоченных по их релевантности для пользователя, которая определяется его моделями общения и совместной работы, а также бизнес-отношениями. |
+| **Фотография** |||
+| [Получение фотографии](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) | Получение указанного объекта profilePhoto или его метаданных (свойств profilePhoto). |
+| [Обновление объекта profilephoto](../api/profilephoto-update.md) | Нет | Обновление фотографии любого пользователя в клиенте, в том числе пользователя, выполнившего вход, либо указанной группы или контакта. |
+| **Планировщик** |||
+| [Получение объекта plannerUser](../api/planneruser-get.md) | [plannerUser](planneruser.md) | Получение свойств и связей объекта plannerUser. |
+| [Список объектов favoritePlans](../api/planneruser-list-favoriteplans.md) | Коллекция объектов [plannerPlan](plannerplan.md) | Получение списка объектов plannerPlan, отмеченных пользователем как избранные. |
+| [Список объектов recentPlans](../api/planneruser-list-recentplans.md) | Коллекция объектов [plannerPlan](plannerplan.md) | Получение списка объектов plannerPlan, недавно просмотренных пользователем. |
+| [Перечисление задач](../api/planneruser-list-tasks.md) | Коллекция [plannerTask](plannertask.md) | Получает объекты plannerTask, назначенные пользователю. |
+| [Обновление plannerUser](../api/planneruser-update.md) | Нет | Обновление свойств объекта plannerUser. |
+| **Профиль** |||
+| [Получение профиля](../api/profile-get.md) | [profile](profile.md) | Получение свойств и связей объекта profile для указанного пользователя. |
+| [Удаление профиля](../api/profile-delete.md) | Нет | Удаление объекта profile из учетной записи пользователя. |
+| **Расширения схемы** | | |
+| [Добавление значений расширений для схемы](/graph/extensibility-schema-groups) | Нет | Создание определения расширения схемы и его дальнейшее использование для добавления в ресурс введенных пользовательских данных.|
+| **Командная работа** |||
+| [Установка приложения для пользователя](../api/user-add-teamsappinstallation.md) | Нет | Установка приложения в личной области указанного пользователя. |
+| [Список приложений, установленных для пользователя](../api/user-list-teamsappinstallation.md) | [teamsAppInstallation](teamsappinstallation.md) | Получение списка приложений, установленных в личной области указанного пользователя. |
+| [Обновление приложения](../api/user-upgrade-teamsappinstallation.md) | Нет | Обновление установленного приложения в личной области указанного пользователя до последней версии.
+| [Удаление приложения для пользователя](../api/user-delete-teamsappinstallation.md) | Нет | Удаление приложения из личной области указанного пользователя. |
+| **Параметры пользователя** |||
+| [Получение параметров](../api/user-get-settings.md) | [settings](user-settings.md) | Чтение объекта settings пользователя и организации. |
+| [Обновление параметров](../api/user-update-settings.md) | [settings](user-settings.md) | Обновление свойств объекта settings. |
 
 ## <a name="properties"></a>Свойства
 
