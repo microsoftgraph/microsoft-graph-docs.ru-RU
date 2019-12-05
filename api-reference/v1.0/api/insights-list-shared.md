@@ -5,16 +5,14 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 010c2809d4679c2cfdc8090f7c3291ddc8981bfd
+ms.openlocfilehash: 8aa3267de5373e0f75f73851c4d995cbb29cd8bf
 ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/05/2019
-ms.locfileid: "39843831"
+ms.locfileid: "39844427"
 ---
 # <a name="list-shared"></a>Список "Общие"
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Вычисляемое представление, включающее список документов, к которым пользователь предоставил доступ.
 
@@ -47,13 +45,13 @@ GET https://graph.microsoft.com/v1.0/me/insights/shared/{id}/resource
 
 С помощью параметра `$filter` запроса можно фильтровать общие элементы. Например, на основе **типа**:
 
-`https://graph.microsoft.com/beta/me/insights/shared?$filter=ResourceVisualization/Type eq 'PowerPoint'`
+`https://graph.microsoft.com/v1.0/me/insights/shared?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
 Просмотрите доступные типы и типы контейнеров, которые можно фильтровать в [ресурсе resourcevisualization](../resources/insights-resourcevisualization.md).
 
 Вы также можете получить файлы, к которым предоставлен доступ конкретному пользователю. Например, указав `lastshared/sharedby/address` свойство:
 
-`https://graph.microsoft.com/beta/me/insights/shared?$filter=lastshared/sharedby/address eq 'kellygraham@contoso.com'`
+`https://graph.microsoft.com/v1.0/me/insights/shared?$filter=lastshared/sharedby/address eq 'kellygraham@contoso.com'`
 
 Просмотр сложного типа [шарингдетаил](../resources/insights-sharingdetail.md) .
 
@@ -76,7 +74,7 @@ GET https://graph.microsoft.com/v1.0/me/insights/shared/{id}/resource
 
 Ниже приведен пример запроса.
 ```http
-GET https://graph.microsoft.com/beta/me/insights/shared
+GET https://graph.microsoft.com/v1.0/me/insights/shared
 ```
 
 ##### <a name="response"></a>Отклик

@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0d11230402d95009e414c16962a2eb9b5dce1f58
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: 895425cd7c5b83661fb55be53cd17cefb0a73103
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333372"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39844241"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
@@ -22,16 +22,22 @@ ms.locfileid: "37333372"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
+|**Сообщения канала**| | |
 |[Список chatMessage Channel](../api/channel-list-messages.md) | Коллекция [chatMessage](chatmessage.md) | Список всех корневых сообщений чата в канале.|
 |[Получение chatMessages в разностном канале](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Получение добавочных сообщений чата в канале. |
+|[Создание подписки для сообщений о новых каналах](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Прослушивать новые и измененные сообщения каналов и реакции на них. |
 |[Получение chatMessage Channel](../api/channel-get-message.md) | [chatMessage](chatmessage.md) | Получение одного из каналов сообщения с одним корневым сеансом.|
+|**Ответы на сообщения канала**| | |
 |[Перечисление ответов на chatMessage](../api/channel-list-messagereplies.md) | Коллекция [chatMessage](chatmessage.md)| Список всех ответов на сообщение чата в канале.|
 |[Получение ответа на chatMessage](../api/channel-get-messagereply.md) | [chatMessage](chatmessage.md)| Получение одного ответа на сообщение чата в канале.|
-|[Создание chatMessage в канале](../api/channel-post-messages.md) | [chatMessage](chatmessage.md)| Создайте новое сообщение разговора верхнего уровня в канале.|
+|[Создание объекта chatMessage в канале](../api/channel-post-messages.md) | [chatMessage](chatmessage.md)| Создайте новое сообщение разговора верхнего уровня в канале.|
 |[Ответ на chatMessage в канале](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| Ответ на существующее сообщение чата в канале.|
+|**1:1 и сообщения группового чата**| | |
 |[Создание chatMessage в чате](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| Отправка сообщения чата в существующей беседе 1:1 или группе чата.|
 |[Перечисление chatMessages в чате](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | Перечисление сообщений чата в 1:1 или группе чата. |
+|[Создание подписки для новых сообщений чата](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Прослушивание новых и измененных сообщений чата и реакции на них. |
 |[Получение chatMessage в чате](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Получение одного сообщения чата в чате. |
+|**Размещенный контент**| | |
 |[Перечисление всех размещенных контента](../api/chatmessage-list-chatmessagehostedcontents.md) | Коллекция [чатмессажехостедконтент](../resources/chatmessagehostedcontent.md)| Получение всего размещенного содержимого в сообщении чата.|
 |[Получение размещенного контента](../api/chatmessagehostedcontent-get.md) | [чатмессажехостедконтент](../resources/chatmessagehostedcontent.md) | Получение размещенного контента из сообщения чата.|
 

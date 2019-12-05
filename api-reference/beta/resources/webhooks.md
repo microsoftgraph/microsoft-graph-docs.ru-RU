@@ -5,12 +5,12 @@ localization_priority: Normal
 author: piotrci
 doc_type: conceptualPageType
 ms.prod: ''
-ms.openlocfilehash: 8f37e7cfbfe206cfb932661335c78dc370180bac
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c951e83348134ee2a5b85e5091377d55a5fd1027
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964144"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39844248"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Получение уведомлений об изменениях с помощью API Microsoft Graph 
 
@@ -28,6 +28,7 @@ REST API Microsoft Graph использует механизм веб-перех
 - Групповой [чат][] Office 365 
 - Контент внутри иерархии _любой папки_ [driveItem][] на персональном хранилище OneDrive пользователя
 - Контент внутри иерархии _корневой папки_ [driveItem][] на персональном хранилище OneDrive для бизнеса
+- [chatMessage][]
 - [Оповещение][] безопасности
 
 ## <a name="permissions"></a>Разрешения
@@ -38,7 +39,7 @@ REST API Microsoft Graph использует механизм веб-перех
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
 | Делегированное — рабочая или учебная учетная запись     | [alert][], [contact][], [conversation][], [driveItem][], [event][], [group][], [message][], [user][]|
 | Делегированное — личная учетная запись Майкрософт | [contact][], [driveItem][], [event][], [message][]                                        |
-| Для приложений                            | [alert][], [contact][], [driveItem][], [event][], [group][], [message][], [user][]|
+| Для приложений                            | [Alert][], [Contact][], [driveItem][], [event][], [Group][], [Message][], [User][], [chatMessage][]|
 
 ## <a name="see-also"></a>См. также
 
@@ -49,6 +50,7 @@ REST API Microsoft Graph использует механизм веб-перех
 - [Обновление подписки](../api/subscription-update.md)
 - [Удаление подписки](../api/subscription-delete.md)
 
+[chatMessage]: ./chatmessage.md
 [contact]: ./contact.md
 [conversation]: ./conversation.md
 [driveItem]: ./driveitem.md

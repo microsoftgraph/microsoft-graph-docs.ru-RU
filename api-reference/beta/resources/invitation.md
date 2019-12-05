@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса приглашения
+title: Тип ресурса invitation
 description: Представляет приглашение, используемое для добавления внешних пользователей в организацию.
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a6a009640b47ce02b1719d6e5535813d365dc9e6
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: 3eeeadf3ed27087051c7bf6945920466d60b9469
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450643"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39844995"
 ---
-# <a name="invitation-resource-type"></a>Тип ресурса приглашения
+# <a name="invitation-resource-type"></a>Тип ресурса invitation
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "36450643"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |invitedUserDisplayName|String|Отображаемое имя приглашаемого пользователя.|
-|invitedUserEmailAddress|String|Адрес электронной почты приглашаемого пользователя. Указывать обязательно.|
+|invitedUserEmailAddress|String|Адрес электронной почты приглашаемого пользователя. Обязательно. Следующие специальные символы не разрешены в адресе электронной почты:<br><ul><li>Тильда (~)</li><li>Восклицательный знак`!`()</li><li>Знак (`@`)</li><li>Знак номера (`#`)</li><li>Знак доллара`$`()</li><li>Процент (`%`)</li><li>С циркумфлексом`^`()</li><li>амперсанд (`&`);</li><li>Звездочка`*`()</li><li>Круглые скобки`( )`()</li><li>Дефис (`-`)</li><li>Знак "плюс`+`" ()</li><li>Знак равенства (`=`);</li><li>Квадратные`[ ]`скобки ()</li><li>Скобки (`{ }`)</li><li>Обратная`\`косая черта ()</li><li>Косая черта (`/`)</li><li>Pipe (`|`)</li><li>Точка с`;`запятой ()</li><li>Двоеточие`:`()</li><li>Кавычки (`"`)</li><li>Угловые скобки (`< >`)</li><li>Вопросительный знак`?`()</li><li>Запятая (`,`)</li></ul><br>Тем не менее применяются следующие исключения:<br><ul><li>Точка (`.`) или дефис (`-`) может находиться в любом месте имени пользователя, за исключением начала или конца имени.</li><li>Знак подчеркивания (`_`) разрешается в любом месте имени пользователя. Это относится к началу или концу имени.</li></ul>|
 |invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|Дополнительные настройки сообщения, которое отправляется приглашаемому пользователю, в том числе настройка текста, языка и списка получателей копии сообщения.|
 |sendInvitationMessage|Boolean|Указывает, следует ли отправлять письмо приглашаемому пользователю. Значение по умолчанию: false.|
 |inviteRedirectUrl|String|URL-адрес, на который пользователь перенаправляется после активации приглашения. Указывать обязательно.|
@@ -48,7 +48,7 @@ ms.locfileid: "36450643"
 |status|String|Состояние приглашения. Возможные значения: PendingAcceptance, Completed, InProgress и Error|
 
 ## <a name="relationships"></a>Связи
-| Отношение | Тип   |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |invitedUser|[user](user.md)|Пользователь, создаваемый при создании приглашения. Только для чтения.|
 

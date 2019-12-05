@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: Outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5e89dc031802ea420079bbbbbf5dd46f4fe181fc
-ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
+ms.openlocfilehash: 3e2e517d0a20384c8aaaa24e9f385cf5560c411e
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949512"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39844192"
 ---
 # <a name="update-place"></a>Обновление места
 
@@ -26,25 +26,26 @@ ms.locfileid: "37949512"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Поместите. ReadWrite. ALL. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Не поддерживается |
+| Для приложений                            | Не поддерживается |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /places/{id}
+PATCH /places/{id | emailAddress}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Имя       | Значение|
+|:-----------|:------|
+| Авторизация  | Bearer {токен}. Обязательный. |
+| Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
+В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. За один раз можно обновить только один экземпляр ресурса "помещение" (**комната** или **RoomList принимают одиночные**). В тексте `@odata.type` запроса укажите тип размещения и включите свойства этого типа для обновления. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
 | Свойство               | Тип                                              | Описание |
 |:-----------------------|:--------------------------------------------------|:--|
@@ -77,6 +78,8 @@ PATCH /places/{id}
 Ниже приведен пример запроса.
 
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_room"
@@ -95,10 +98,24 @@ Content-length: 285
   "isWheelchairAccessible": false
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-room-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-room-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-room-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > [!NOTE]
 > Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -127,8 +144,8 @@ Content-type: application/json
       "countryOrRegion": "USA"
     },
     "geoCoordinates": {
-      "latitude": 47.640568390488626,
-      "longitude": -122.1293731033803
+      "latitude": 47.0,
+      "longitude": -122.0
     },
     "phone": "555-555-0100",
     "nickname": "Conf Room",
@@ -156,6 +173,8 @@ Content-type: application/json
 Ниже приведен пример запроса.
 
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_roomlist"
@@ -167,13 +186,41 @@ Content-type: application/json
 {
   "@odata.type": "microsoft.graph.roomlist",
   "displayName": "Building 1",
-  "phone":"555-555-0100"
+  "phone":"555-555-0100",
+  "address": {
+    "street": "4567 Main Street",
+    "city": "Buffalo",
+    "state": "NY",
+    "postalCode": "98052",
+    "countryOrRegion": "USA"
+  },
+  "geoCoordinates": {
+    "altitude": null,
+    "latitude": 47.0,
+    "longitude": -122.0,
+    "accuracy": null,
+    "altitudeAccuracy": null
+ }
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-roomlist-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-roomlist-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-roomlist-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > [!NOTE]
 > Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -200,7 +247,13 @@ Content-type: application/json
     "postalCode": "98052",
     "countryOrRegion": "USA"
   },
-  "geocoordinates": null,
+  "geoCoordinates": {
+    "altitude": null,
+    "latitude": 47.0,
+    "longitude": -122.0,
+    "accuracy": null,
+    "altitudeAccuracy": null
+ },
   "phone": "555-555-0100",
   "emailAddress": "bldg1@contoso.com"
 }

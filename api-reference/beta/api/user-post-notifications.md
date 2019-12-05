@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: notifications
 doc_type: apiPageType
 author: merzink
-ms.openlocfilehash: 8eb35ea0ade2e7d471674d8d064ba0ac38b361cc
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 911e18d4a866d1e1af53582e9b6d32aaf3f33764
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37996270"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39843982"
 ---
 # <a name="create-and-send-a-notification"></a>Создание и отправление уведомления
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -21,13 +21,14 @@ ms.locfileid: "37996270"
 Служба приложения не требует дополнительных разрешений для отправки уведомлений целевому пользователю.  
 
 > [!IMPORTANT]
-> Если вы решите отправлять уведомления от имени пользователя через делегированные разрешения, то для вызова этого API требуется одно из следующих разрешений. Мы не рекомендуем использовать этот параметр для отправки уведомлений, но если вы хотите узнать больше, в том числе как выбирать разрешения, ознакомьтесь с разделом [разрешения](/graph/permissions-reference).
+> Если вы решите отправлять уведомления от имени пользователя через делегированные разрешения, то для вызова этого API требуется одно из следующих разрешений. Мы не рекомендуем использовать этот параметр для создания уведомлений. Если вы хотите узнать больше, в том числе как выбирать разрешения, ознакомьтесь с разделом [разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Notifications.ReadWrite.CreatedByApp    |
 |Делегированные (личная учетная запись Майкрософт) | Notifications.ReadWrite.CreatedByApp    |
-| Для приложений                           | Не поддерживается. |
+|Для приложений | Не поддерживается.|
+
 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -38,92 +39,89 @@ ms.locfileid: "37996270"
 POST /me/notifications/
 ```
 ## <a name="request-headers"></a>Заголовки запросов
-|Имя | Тип | Описание|
-|:----|:-----|:-----------|
-|Authorization | string |Заголовок Authorization используется для передачи учетных данных вызывающей стороны. Bearer {Token}. Обязательный элемент. |
-|X – УНС — ID | string |Усернотификатионсубскриптионид, возвращенный службой уведомлений Microsoft Graph после создания подписки на стороне клиента, и используется для назначения определенного пользователя. Обязательный параметр. |
-|Content-Type| application/json. Обязательный.|
+|Имя | Описание|
+|:----|:-----------|
+|Authorization | Заголовок Authorization используется для передачи учетных данных вызывающей стороны. Bearer {Token}. Обязательно. |
+|X – УНС — ID | Усернотификатионсубскриптионид, возвращенный службой уведомлений Microsoft Graph после создания подписки, и используется для назначения определенного пользователя. Обязательный параметр. |
+|Content-Type | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [уведомления](../resources/projectrome-notification.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика, указывающий, что уведомление было успешно создано и сохранено. В дальнейшем уведомление будет развертывание которого выполняется на все указанные конечные точки с действующей подпиской. 
+
+В следующей таблице перечислены возможные коды ошибок и ответов, которые могут быть возвращены.
+
+|Код ошибки             | дескритион                             |
+|:-----------------------------------|:----------------------------------------------------------|
+|HttpStatusCode. Бадрекуест           | Body является массивом (несколько уведомлений не поддерживаются).|
+|HttpStatusCode. Бадрекуест           | Текст не отвечает контракту для API.               |
+|HttpStatusCode. запрещено            | Абонент находится в списке заблокированных.                          |
+|HttpStatusCode. Месодноталловед     | Используемый метод HTTP не поддерживается.                     |
+|HttpStatusCode. Бадрекуест           | В запросе присутствуют Неподдерживаемые заголовки. Два заголовка не поддерживаются:<br/><br/>If — Modified — с<br/>Если — Range |                    
+|HttpStatusCode. Унсуппортедмедиатипе | Заголовок Content-Encoding присутствует и имеет значения алгоритма сжатия, отличные от `Deflate` or `Gzip`.  |
+|HttpStatusCode. Бадрекуест           | Недопустимые полезные данные.                                           |
+|HttpStatusCode. запрещено            | Абонент не имеет прав на действия от имени пользователя или отправлять уведомление пользователю.                         |
+|HttpStatusCode. несанкционированный         |  Текст запроса содержит недопустимые типы данных о действиях.        |
+|HttpStatusCode. ОК                   |  Действие успешно создано.                            |
+|HttpStatusCode. Нотакцептабле        |  Запрос был отрегулирован или сервер занят.    |
+
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "create_notification_from_user"
-}-->
-
 ```http
-POST https://graph.microsoft.com/beta/me/notifications
+POST https://graph.microsoft.com/beta/me/notifications/
 Content-type: application/json
 
 {
-  "notification": {
-    "targetHostName": "targetHostName-value",
-    "appNotificationId": "appNotificationID-value",
-    "expirationDateTime": "datetime-value",
-    "targetPolicy": {
-      "platformTypes": [
-        "platformTypes-value"
-        ]
-      }, 
+    "targetHostName": "graphnotifications.sample.windows.com",
+    "appNotificationId": "testDirectToastNotification",
+    "expirationDateTime": "2019-10-30T23:59:00.000Z",
     "payload": {
-      "rawContent": "rawContent-value",
-      "visualContent": {
-        "title": "title-value",
-        "body": "body-value"
-      }
+        "visualContent": {
+            "title": "Hello World!",
+            "body": "Notifications are Great!"
+        }
     },
-    "displayTimeToLive": 99,
-    "priority": "priority-value",
-    "groupName": "groupName-value"
-  }
+    "targetPolicy": {
+        "platformTypes": [
+    "windows",
+    "ios",
+    "android"
+        ]
+    },
+    "priority": "High",
+    "groupName": "TestGroup",
+    "displayTimeToLive": "60"
 }
 ```
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-notification-from-user-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
-
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.notification"
-} -->
+Ниже приведен пример соответствующего ответа.
 
 ```http
-HTTP/1.1 201 Created
-Content-type: application/json
+HTTP/1.1 201
+client-request-id: 71e62feb-8d72-4912-8b2c-4cee9d89e781
+content-length: 356
+content-type: application/json
+location: https://graph.microsoft.com/beta/me/activities/119081f2-f19d-4fa8-817c-7e01092c0f7d
+request-id: 71e62feb-8d72-4912-8b2c-4cee9d89e781
 
 {
-  "notification": {
-    "targetHostName": "targetHostName-value",
-    "expirationDateTime": "datetime-value",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('graphnotify%40contoso.com')/notifications/$entity",
+    "displayTimeToLive": 59,
+    "expirationDateTime": "2019-10-28T22:05:36.25Z",
+    "groupName": "TestGroup",
+    "id": "119081f2-f19d-4fa8-817c-7e01092c0f7d",
+    "priority": "High",
     "payload": {
-      "rawContent": "rawContent-value",
-      "visualContent": {
-        "title": "title-value",
-        "body": "body-value"
-      }
-    },
-    "displayTimeToLive": 99,
-    "priority": "priority-value",
-    "groupName": "groupName-value"
-  }
+        "visualContent": {
+            "title": "Hello World!",
+            "body": "Notifications are Great!"
+        }
+    }
 }
 ```

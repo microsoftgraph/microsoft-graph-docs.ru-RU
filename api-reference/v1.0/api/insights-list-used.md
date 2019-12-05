@@ -5,16 +5,14 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 3bd97a9c727a88cd4677de359880c79ed8a85e39
+ms.openlocfilehash: 8a9a1114b5e247807b952d15901b5def124a245a
 ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/05/2019
-ms.locfileid: "39843870"
+ms.locfileid: "39844428"
 ---
 # <a name="list-used"></a>Список "Использованные"
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Вычисляемое представление, содержащее список документов, измененных пользователем.
 
@@ -48,17 +46,16 @@ GET /me/insights/used/{id}/resource
 GET /users/{id | userPrincipalName}/insights/used/{id}/resource
 ```
 
-
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
 С помощью параметра `$filter` запроса можно отфильтровать используемые элементы. Например, на основе **типа**:
 
-`https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/Type eq 'PowerPoint'`
+`https://graph.microsoft.com/v1.0/me/insights/used?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
 Или на основе **контаинертипе**:
 
-`https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
+`https://graph.microsoft.com/v1.0/me/insights/used?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
 Просмотрите доступные типы и типы контейнеров, которые можно фильтровать в [ресурсе resourcevisualization](../resources/insights-resourcevisualization.md).
 
@@ -81,7 +78,7 @@ GET /users/{id | userPrincipalName}/insights/used/{id}/resource
 
 Ниже приведен пример запроса.
 ```http
-GET https://graph.microsoft.com/beta/me/insights/used
+GET https://graph.microsoft.com/v1.0/me/insights/used
 ```
 
 ##### <a name="response"></a>Отклик
@@ -115,4 +112,5 @@ GET https://graph.microsoft.com/beta/me/insights/used
     ]
 }
 ```
+
 

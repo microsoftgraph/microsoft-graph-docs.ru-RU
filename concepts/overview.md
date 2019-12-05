@@ -4,12 +4,12 @@ description: Microsoft Graph открывает доступ к данным и 
 author: angelgolfer-ms
 localization_priority: Priority
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: b5325af0619d1f1ad7d212b69d82d63b32978a0f
-ms.sourcegitcommit: f359d8d3946af55dc76a02bb7bf522a4d50a2707
+ms.openlocfilehash: 8857d73de24cd5b6d5ee939b2ac7bd5acd1a81db
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "39263263"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39844234"
 ---
 # <a name="overview-of-microsoft-graph"></a>Обзор Microsoft Graph
 
@@ -65,7 +65,7 @@ Microsoft Graph позволяет обрабатывать уникальны�
 С помощью связей вы можете перейти к другим ресурсам:
 
 - Связаться с его руководителем через [связь с руководителем](/graph/api/user-list-manager?view=graph-rest-1.0).
-- Получить полезные сведения, в том числе о популярных файлах, [которые отслеживает](/graph/api/resources/insights-trending?view=graph-rest-beta) пользователь.
+- Получить полезные сведения, в том числе о популярных файлах, [которые отслеживает](/graph/api/resources/insights-trending?view=graph-rest-1.0) пользователь.
 - [Узнать, какие люди больше всего связаны](/graph/api/user-list-people?view=graph-rest-beta) с пользователем.
 - Расширить сценарий с помощью связи [memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0), чтобы узнать, в какие группы входит пользователь
 - [Найти других участников в каждой группе](/graph/api/group-list-members?view=graph-rest-1.0).
@@ -94,7 +94,7 @@ Microsoft Graph продолжает открывать возможности 
 |   GET пользователи в моей организации  | [`https://graph.microsoft.com/v1.0/users`](https://developer.microsoft.com/graph/graph-explorer/?request=users&version=v1.0) |
 |   GET группы в моей организации | [`https://graph.microsoft.com/v1.0/groups`](https://developer.microsoft.com/graph/graph-explorer/?request=groups&version=v1.0) |
 |   GET пользователи, связанные со мной | [`https://graph.microsoft.com/v1.0/me/people`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fpeople&version=beta)  |
-|   GET элементы, популярные в моей компании | [`https://graph.microsoft.com/beta/me/insights/trending`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Finsights%2Ftrending&version=beta) |
+|   GET элементы, популярные в моей компании | [`https://graph.microsoft.com/beta/me/insights/trending`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Finsights%2Ftrending&version=v1.0) |
 |   GET мои заметки | [`https://graph.microsoft.com/v1.0/me/onenote/notebooks`](https://developer.microsoft.com/graph/graph-explorer/?request=me%2Fonenote%2Fnotebooks&version=beta) |
 
 ## <a name="bring-data-from-an-external-content-source-to-microsoft-graph-preview"></a>Перенос данных из внешнего источника контента в Microsoft Graph (предварительная версия)

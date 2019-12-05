@@ -6,12 +6,12 @@ title: Возобновляемая отправка файлов
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 3d8cee638105339f5e84ac229c2c9c81a2eb65a3
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: 3f99c75d0a1f0366cdccb2e590bb16856d9b3caf
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333208"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39843954"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Отправка больших файлов с помощью сеанса отправки
 
@@ -62,7 +62,7 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
 ```json
 {
-  "@microsoft.graph.conflictBehavior": "rename | fail | overwrite",
+  "@microsoft.graph.conflictBehavior": "fail (default) | replace | rename",
   "description": "description",
   "fileSize": 1234,
   "name": "filename.txt"
@@ -92,7 +92,7 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 | Параметр            | Тип                          | Описание
 |:---------------------|:------------------------------|:---------------------------------
 | item                 | [дривеитемуплоадаблепропертиес](../resources/driveItemUploadableProperties.md) | Данные о отправляемом файле
-| деферкоммит          | Boolean                       | Если задано значение true, для конечного создания файла в месте назначения потребуется явный запрос. Только в OneDrive для бизнеса.
+| деферкоммит          | Логический                       | Если задано значение true, для конечного создания файла в месте назначения потребуется явный запрос. Только в OneDrive для бизнеса.
 
 ### <a name="request"></a>Запрос
 
@@ -165,7 +165,7 @@ Content-Range: bytes 0-25/128
 **Важно!** Приложение должно указывать в заголовках **Content-Range** всех запросов один и тот же общий размер файла.
 Если объявить для диапазона байтов другой размер файла, запрос не будет выполнен.
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 После выполнения запроса сервер отправит в ответ код `202 Accepted`, если требуется отправить дополнительные диапазоны байтов.
 
@@ -403,7 +403,7 @@ Content-Type: application/json
 
 ## <a name="error-responses"></a>Ответы с ошибками
 
-Дополнительные сведения о том как возвращаются ошибки, см. в статье [Ошибки][error-response].
+Дополнительные сведения о возвращении ошибок см. в статье [Ответы с ошибками][error-response].
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md

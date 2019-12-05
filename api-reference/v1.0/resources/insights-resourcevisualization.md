@@ -5,16 +5,14 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: b49ce2c0fb0c1d2ab167ffbb033bf11b0171a20f
+ms.openlocfilehash: 39810868e779f9de62535e4b463f477f12739e85
 ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844493"
+ms.locfileid: "39845023"
 ---
 # <a name="resourcevisualization-resource-type"></a>Тип ресурса ресурсе resourcevisualization
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Сложный тип, содержащий свойства [оффицеграфинсигхтс](officegraphinsights.md).
 
@@ -81,7 +79,7 @@ ms.locfileid: "39844493"
 -   Folder
 -   Other
 
-Пример запроса:`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
+Пример запроса:`https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
 ## <a name="containertype-property-values"></a>значения свойств Контаинертипе
 Поддерживаемые типы могут различаться в зависимости от контейнеров, из которых [оффицеграфинсигхтс](officegraphinsights.md) возвращает файлы. Например, только представление [шарединсигхт](insights-shared.md) возвращает файлы из "Dropbox", "Box" и "гдриве".
@@ -93,4 +91,4 @@ ms.locfileid: "39844493"
 -   Box
 -   гдриве
 
-Пример запроса:`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
+Пример запроса:`https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
