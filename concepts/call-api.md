@@ -3,13 +3,13 @@ title: Вызов API Microsoft Graph
 description: 'Для доступа к ресурсу Microsoft Graph и работы с ним необходимо вызвать и указать URL-адреса ресурса, используя одну из указанных ниже операций.   '
 localization_priority: Normal
 author: VinodRavichandran
-ms.prod: microsoft-teams
-ms.openlocfilehash: b2b1af0aa2d2e31bbaa4fd70ef87a2dddef5284f
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
-ms.translationtype: HT
+ms.prod: cloud-communications
+ms.openlocfilehash: 55b13e01028e726a0c58a7530869e940dffb2179
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778630"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "38006784"
 ---
 # <a name="calling-the-microsoft-graph-api"></a>Вызов API Microsoft Graph
 

@@ -3,12 +3,12 @@ title: 'Создание приложений для нескольких уст
 description: 'С помощью Project Rome вы можете создавать решения, которые одинаково легко использовать на различных устройствах и платформах, избавляя пользователей от лишних сложностей и повышая взаимодействие с приложением. Чтобы приложения могли обмениваться данными между устройствами и платформами с помощью API Project Rome, необходимо настроить приложение для нескольких устройств, включающее сведения о приложениях для определенных платформ. '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: f54f38c5d047d2b5d790e5bea48fdb27f54b4004
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
-ms.translationtype: HT
+ms.openlocfilehash: 93f171278eb892cb31712738c0e2249eb7d2f353
+ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570357"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "37969852"
 ---
 # <a name="build-cross-device-apps-powered-by-project-rome"></a>Создание приложений для нескольких устройств на платформе Project Rome 
 
@@ -37,10 +37,10 @@ ms.locfileid: "32570357"
 Если связать с приложением учетные данные push-уведомлений для каждой из платформ, на которых оно доступно, то приложение пользователя сможет отправлять команды между устройствами. Таким образом, вы можете создавать решения, работающие на нескольких экранах или переносящие рабочий процесс с одного устройства на другое в реальном времени. 
 
 ## <a name="select-the-right-hosting-method-for-your-cross-device-app-configuration"></a>Выбор подходящего способа для размещения конфигурации приложения для нескольких устройств
-Вы можете разместить конфигурацию приложения для нескольких устройств либо в качестве JSON-файла на домене, либо в виде профиля, который можно настраивать в [Центре разработки для Windows](https://developer.microsoft.com/ru-RU/windows). Выберите вариант размещения, соответствующий возможностям Project Rome, которые должны быть доступны в ваших приложениях. 
+Вы можете разместить конфигурацию приложения для нескольких устройств либо в качестве JSON-файла на домене, либо в виде профиля, который можно настраивать в [Центре разработки для Windows](https://developer.microsoft.com/windows). Выберите вариант размещения, соответствующий возможностям Project Rome, которые должны быть доступны в ваших приложениях. 
 
 ### <a name="windows-dev-center-profile-recommended"></a>Профиль Центра разработки для Windows (рекомендуется) 
-Вы можете получить доступ ко всем возможностям Project Rome, используя приложение для нескольких устройств, которым можно управлять в [Центре разработки для Windows](https://developer.microsoft.com/ru-RU/windows). Центр разработки для Windows также предоставляет *лучший* способ управления изменениями конфигурации приложений для нескольких устройств. Вы можете надежнее сохранять обновления имеющегося профиля, пока не будете готовы опубликовать изменения в рабочей среде. При публикации изменений имеющегося приложения для нескольких устройств в Центре разработки новый профиль вступает в силу спустя примерно **один час**.  
+Вы можете получить доступ ко всем возможностям Project Rome, используя приложение для нескольких устройств, которым можно управлять в [Центре разработки для Windows](https://developer.microsoft.com/windows). Центр разработки для Windows также предоставляет *лучший* способ управления изменениями конфигурации приложений для нескольких устройств. Вы можете надежнее сохранять обновления имеющегося профиля, пока не будете готовы опубликовать изменения в рабочей среде. При публикации изменений имеющегося приложения для нескольких устройств в Центре разработки новый профиль вступает в силу спустя примерно **один час**.  
 
 ### <a name="externally-hosted-json-file-limited"></a>Внешний JSON-файл (ограниченная функциональность) 
 Вы можете использовать указанные ниже возможности Project Rome на всех поддерживаемых платформах, используя приложение для нескольких устройств, управляемое как внешний JSON-файл.  
@@ -70,14 +70,14 @@ ms.locfileid: "32570357"
 
 Чтобы найти идентификаторы:
 
-* **windows_universal** — укажите AUMID для каждого приложения UWP. Дополнительные сведения см. в статьях [Определение идентификатора модели пользователя для установленного приложения (Industry 8.1)](https://docs.microsoft.com/ru-RU/previous-versions/windows/embedded/dn449300(v=winembedded.82)) и [Application](https://docs.microsoft.com/ru-RU/uwp/schemas/appxpackage/appxmanifestschema/element-application).
-* **windows_win32** — укажите AUMID для каждого приложения. Чтобы получить эти сведения для приложений Win32, необходимо использовать скрипт. Дополнительные сведения см. в статье [Определение идентификатора модели пользователя установленного приложения (Industry 8.1)](https://docs.microsoft.com/ru-RU/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
+* **windows_universal** — укажите AUMID для каждого приложения UWP. Дополнительные сведения см. в статьях [Определение идентификатора модели пользователя для установленного приложения (Industry 8.1)](https://docs.microsoft.com/previous-versions/windows/embedded/dn449300(v=winembedded.82)) и [Application](https://docs.microsoft.com/uwp/schemas/appxpackage/appxmanifestschema/element-application).
+* **windows_win32** — укажите AUMID для каждого приложения. Чтобы получить эти сведения для приложений Win32, необходимо использовать скрипт. Дополнительные сведения см. в статье [Определение идентификатора модели пользователя установленного приложения (Industry 8.1)](https://docs.microsoft.com/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
 * **android** — дополнительные сведения см. в разделе [Изменение имени пакета](https://developer.android.com/studio/build/application-id.html#change_the_package_name). 
 * **ios** — дополнительные сведения см. в статьях [Bundle](https://developer.apple.com/documentation/foundation/bundle) и [Обязательные, локализуемые и редактируемые свойства](https://help.apple.com/itunes-connect/developer/#/devfc3066644).
 * **msa** — войдите на [портал регистрации приложений](https://apps.dev.microsoft.com). Вы можете просмотреть идентификатор приложения или клиента для любого приложения. Поддерживаются как идентификаторы Live SDK (шестнадцатеричные значения), так и конвергированные идентификаторы приложений (GUID).   
 
 ### <a name="step-3-configure-support-for-microsoft-account-or-azure-ad"></a>Шаг 3. Настройте поддержку учетных записей Майкрософт или Azure AD
-Чтобы включить поддержку работы на нескольких устройствах, пользователи приложения должны входить с помощью  [учетной записи Майкрософт](https://account.microsoft.com/account)  или  [Azure Active Directory](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/active-directory-developers-guide)  (Azure AD). Вы укажете идентификаторы приложений и клиентов для поддержки аутентификации в конфигурации приложения для нескольких устройств, чтобы включить поддержку кроссплатформенной работы. Можно указать до 10 экземпляров.
+Чтобы включить поддержку работы на нескольких устройствах, пользователи приложения должны входить с помощью  [учетной записи Майкрософт](https://account.microsoft.com/account)  или  [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide)  (Azure AD). Вы укажете идентификаторы приложений и клиентов для поддержки аутентификации в конфигурации приложения для нескольких устройств, чтобы включить поддержку кроссплатформенной работы. Можно указать до 10 экземпляров.
 
 Вы можете определить идентификаторы имеющихся приложений и клиентов или подготовить новые, войдя на [портал регистрации приложений](https://apps.dev.microsoft.com) с помощью учетной записи разработчика. После входа на портал вы сможете просмотреть идентификатор приложения или клиента для любого приложения. Поддерживаются как идентификаторы Live SDK (шестнадцатеричные значения), так и конвергированные идентификаторы приложений (GUID).   
 
@@ -95,7 +95,8 @@ ms.locfileid: "32570357"
 
 Чтобы найти идентификаторы:
 
-* **Windows Notification Service** — см. раздел [Регистрация приложения и получение учетных данных для облачной службы](https://docs.microsoft.com/ru-RU/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service) и посетите [портал регистрации приложений](https://apps.dev.microsoft.com).
+* 
+  **Windows Notification Service** — см. раздел [Регистрация приложения и получение учетных данных для облачной службы](https://docs.microsoft.com/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service) и посетите [портал регистрации приложений](https://apps.dev.microsoft.com).
 * **Служба push-уведомлений Apple** — см. [обзор APNs](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html).
 * **Google Cloud Messaging** — см. статью [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/).
 
@@ -142,8 +143,8 @@ ms.locfileid: "32570357"
 
 Чтобы найти идентификаторы:
 
-* **windows_universal** — укажите AUMID для каждого приложения UWP. Дополнительные сведения см. в статьях [Определение идентификатора модели пользователя для установленного приложения (Industry 8.1)](https://docs.microsoft.com/ru-RU/previous-versions/windows/embedded/dn449300(v=winembedded.82)) и [Application](https://docs.microsoft.com/ru-RU/uwp/schemas/appxpackage/appxmanifestschema/element-application).
-* **windows_win32** — укажите AUMID для каждого приложения. Чтобы получить эти сведения для приложений Win32, необходимо использовать скрипт. Дополнительные сведения см. в статье [Определение идентификатора модели пользователя установленного приложения (Industry 8.1)](https://docs.microsoft.com/ru-RU/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
+* **windows_universal** — укажите AUMID для каждого приложения UWP. Дополнительные сведения см. в статьях [Определение идентификатора модели пользователя для установленного приложения (Industry 8.1)](https://docs.microsoft.com/previous-versions/windows/embedded/dn449300(v=winembedded.82)) и [Application](https://docs.microsoft.com/uwp/schemas/appxpackage/appxmanifestschema/element-application).
+* **windows_win32** — укажите AUMID для каждого приложения. Чтобы получить эти сведения для приложений Win32, необходимо использовать скрипт. Дополнительные сведения см. в статье [Определение идентификатора модели пользователя установленного приложения (Industry 8.1)](https://docs.microsoft.com/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
 * **android** — дополнительные сведения см. в разделе [Изменение имени пакета](https://developer.android.com/studio/build/application-id.html#change_the_package_name). 
 * **ios** — дополнительные сведения см. в статьях [Bundle](https://developer.apple.com/documentation/foundation/bundle) и [Обязательные, локализуемые и редактируемые свойства](https://help.apple.com/itunes-connect/developer/#/devfc3066644).
 * **msa** — войдите на [портал регистрации приложений](https://apps.dev.microsoft.com). Вы можете просмотреть идентификатор приложения или клиента для любого приложения. Поддерживаются как идентификаторы Live SDK (шестнадцатеричные значения), так и конвергированные идентификаторы приложений (GUID).   
@@ -187,7 +188,7 @@ ms.locfileid: "32570357"
 Если ваше приложение использует API веб-каналов активности в Microsoft Graph, то значение узла необходимо передавать в свойстве **activitySourceHost**. Дополнительные сведения см. в статье [Тип ресурса activity](/graph/api/resources/projectrome-activity?view=graph-rest-1.0).
 
 ### <a name="universal-windows-apps"></a>Универсальные приложения для Windows
-Если у вас есть приложение для Windows, то перед публикацией данных необходимо настроить значение узла в манифесте приложения. Дополнительные сведения см. в статье [uap5:UserActivity](https://docs.microsoft.com/ru-RU/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-useractivity). 
+Если у вас есть приложение для Windows, то перед публикацией данных необходимо настроить значение узла в манифесте приложения. Дополнительные сведения см. в статье [uap5:UserActivity](https://docs.microsoft.com/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-useractivity). 
 
 <!-- Removing until we add the details.
 ### iOS & Android apps
