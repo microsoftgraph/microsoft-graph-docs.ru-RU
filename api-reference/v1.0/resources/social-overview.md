@@ -1,20 +1,24 @@
 ---
-title: Обзор пользователей
-description: В Microsoft Graph предоставляется доступ к полезным сведениям о людях.
+title: Интегрирование аналитики о людях в приложение с помощью Microsoft Graph API
+description: Microsoft Graph позволяет получить доступ к полезным сведениям о людях и документах, с которыми они взаимодействуют.
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: 6440012563b2cbebe7482ca11d00d6bfa7f13d5d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 43d2c00e9651c6bbf73e82102a36eb25efd94215
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034050"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39845037"
 ---
-# <a name="people-overview"></a>Обзор пользователей
+# <a name="use-the-microsoft-graph-api-to-integrate-people-intelligence-in-an-app"></a>Интегрирование аналитики о людях в приложение с помощью Microsoft Graph API
 
-В Microsoft Graph предоставляется доступ к полезным сведениям о людях.
+Microsoft Graph позволяет получить доступ к полезным сведениям о людях и документах, с которыми они взаимодействуют.
+
+## <a name="aggregate-and-extract-specific-information-about-people"></a>Сбор и извлечение определенных сведений о пользователях
+
+Функция: люди
 
 Можно использовать ресурс [person](../resources/person.md) и API службы "Люди" для сбора сведений о пользователе, полученных из его почты, контактов и социальных сетей. Результаты упорядочиваются по релевантности на основании множества шаблонов общения и совместной работы, а также его бизнес-связями. Вы можете просматривать, сортировать, отбирать, фильтровать или искать сведения о пользователях, основываясь на заданных условиях.
 
@@ -23,3 +27,14 @@ ms.locfileid: "36034050"
 Чтобы использовать API, ознакомьтесь со следующими материалами:
 
 - [Получение списка людей](../api/user-list-people.md)
+
+
+## <a name="help-users-get-the-most-relevant-documents-for-their-work"></a>Помощь пользователям в получении наиболее важных документов для работы
+
+Функция: аналитика на основе документов
+
+Используйте API аналитики для определения наиболее важных документов для пользователя:
+
+- Список [популярных документов](../api/insights-list-trending.md) пользователя
+- Список документов, [используемых](../api/insights-list-used.md) пользователем
+- Список документов, [к которым пользователю предоставлен доступ или к которым пользователь предоставил доступ](../api/insights-list-shared.md)

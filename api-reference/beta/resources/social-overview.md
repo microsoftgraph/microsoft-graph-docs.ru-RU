@@ -1,22 +1,22 @@
 ---
 title: Использование API Microsoft Graph для интеграции функций социальной и рабочей аналитики в приложении
-description: Microsoft Graph обеспечивает доступ к полезным социальным и рабочим данным, а также поддерживает социальные жесты в социальном контексте пользователя.
+description: Microsoft Graph обеспечивает доступ к полезным данным о пользователях, их профиле, документах, с которыми они взаимодействуют, их рабочих привычках, а также поддерживает социальные жесты в социальном контексте пользователя.
 localization_priority: Priority
 author: simonhult
 ms.prod: insights
 doc_type: conceptualPageType
-ms.openlocfilehash: 06d27d69aae008bb1bfe772a02a5951a33a4f0bd
-ms.sourcegitcommit: f359d8d3946af55dc76a02bb7bf522a4d50a2707
+ms.openlocfilehash: 9085db75d70932fe3364b5739a33fc480f30032a
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "39250738"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39844262"
 ---
 # <a name="use-the-microsoft-graph-api-to-integrate-people-and-workplace-intelligence-in-an-app"></a>Использование API Microsoft Graph для интеграции функций социальной и рабочей аналитики в приложении
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Graph обеспечивает доступ к социальным и рабочим данным для пользователей, а также поддерживает жесты в социальном контексте пользователя.
+Microsoft Graph обеспечивает доступ к полезным данным о пользователях, их профиле, документах, с которыми они взаимодействуют, их рабочих привычках, а также поддерживает социальные жесты в социальном контексте пользователя.
 
 ## <a name="aggregate-and-extract-specific-information-about-people"></a>Сбор и извлечение определенных сведений о пользователях
 

@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8ab0a296f89b882030f476a739b8991568c79e28
-ms.sourcegitcommit: 6265ddb4e3d22bb556615589594e40df018fb0f1
+ms.openlocfilehash: fbf7a01c8de5015cd83a97cd63c0e98bdbc30af0
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39672875"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39843943"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -106,8 +106,8 @@ ms.locfileid: "39672875"
 |**Расширения схемы**| | |
 | [Добавление значений расширений для схемы](/graph/extensibility-schema-groups) | Нет | Создание определения расширения схемы и его дальнейшее использование для добавления в ресурс введенных пользовательских данных. |
 | **Параметры пользователя** |||
-| [Получение параметров](../api/user-get-settings.md) | [settings](user-settings.md) | Чтение объекта settings пользователя и организации. |
-| [Обновление параметров](../api/user-update-settings.md) | [settings](user-settings.md) | Обновление свойств объекта settings. |
+| [Получение параметров](../api/usersettings-get.md) | [userSettings](usersettings.md) | Чтение объекта settings пользователя и организации. |
+| [Обновление параметров](../api/usersettings-update.md) | [userSettings](usersettings.md) | Обновление свойств объекта settings. |
 
 ## <a name="properties"></a>Свойства
 
@@ -236,6 +236,7 @@ ms.locfileid: "39672875"
 |Мероприятия|Коллекция [event](event.md)|События пользователя. По умолчанию отображаются события в стандартном календаре. Только для чтения. Допускается значение null.|
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для пользователя. Только для чтения. Допускается значение null.|
 |inferenceClassification | [inferenceClassification](inferenceclassification.md) | Классификация релевантности для сообщений пользователя, основанная на явных обозначениях, переопределяющих заданные релевантность или важность. |
+|insights|[officeGraphInsights](officegraphinsights.md) | Только для чтения. Допускается значение null.|
 |licenseDetails|Коллекция объектов [licenseDetails](licensedetails.md)|Коллекция сведений о лицензии этого пользователя. Только для чтения.|
 |mailFolders|Коллекция [mailFolder](mailfolder.md)| Почтовые папки пользователя. Только для чтения. Допускается значение null.|
 |manager|[directoryObject](directoryobject.md)|Пользователь или контакт, являющийся руководителем пользователя. Только для чтения. (Методы HTTP: GET, PUT, DELETE.)|

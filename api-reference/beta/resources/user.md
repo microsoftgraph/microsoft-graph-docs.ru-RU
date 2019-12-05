@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c4ca85a37f2bd1f40daed09dd6ba2b4616e2b81f
-ms.sourcegitcommit: 6265ddb4e3d22bb556615589594e40df018fb0f1
+ms.openlocfilehash: 9252825eb0e970f5c8d7da0d9eb4275574dd564a
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39672833"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39843961"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -133,8 +133,8 @@ ms.locfileid: "39672833"
 | [Обновление приложения](../api/user-upgrade-teamsappinstallation.md) | Нет | Обновление установленного приложения в личной области указанного пользователя до последней версии.
 | [Удаление приложения для пользователя](../api/user-delete-teamsappinstallation.md) | Нет | Удаление приложения из личной области указанного пользователя. |
 | **Параметры пользователя** |||
-| [Получение параметров](../api/user-get-settings.md) | [settings](user-settings.md) | Чтение объекта settings пользователя и организации. |
-| [Обновление параметров](../api/user-update-settings.md) | [settings](user-settings.md) | Обновление свойств объекта settings. |
+| [Получение параметров](../api/usersettings-get.md) | [userSettings](usersettings.md) | Чтение объекта settings пользователя и организации. |
+| [Обновление параметров](../api/usersettings-update.md) | [userSettings](usersettings.md) | Обновление свойств объекта settings. |
 
 ## <a name="properties"></a>Свойства
 
@@ -287,7 +287,7 @@ ms.locfileid: "39672833"
 |photos|Коллекция [photo](photo.md)| Только для чтения. Допускается значение null.|
 |planner|[plannerUser](planneruser.md)| Выборочные службы Планировщика, доступные пользователю. Только для чтения. Допускается значение null. |
 |scopedRoleMemberOf|Коллекция [scopedRoleMembership](scopedrolemembership.md)| Участие пользователя в административных единицах с ролью в заданной области. Только для чтения. Допускается значение null.|
-|параметры|[userSettings](user-settings.md) | Только для чтения. Допускается значение null.|
+|параметры|[userSettings](usersettings.md) | Только для чтения. Допускается значение null.|
 |registeredDevices|Коллекция [directoryObject](directoryobject.md)|Устройства, зарегистрированные для пользователя. Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON

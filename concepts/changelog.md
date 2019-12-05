@@ -3,18 +3,32 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 6e699e9f6b486dc35072c8f5c1953f38499a07c2
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: 55117b9db8a12e9ce3b4b41aab49212368b2c805
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39637110"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39844276"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
 Этот журнал содержит сведения об изменениях API Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 
 Дополнительные сведения об известных проблемах с API Microsoft Graph см. в статье [Известные проблемы](known-issues.md).
+
+## <a name="december-2019"></a>Декабрь 2019 г.
+
+### <a name="change-notifications-webhooks"></a>Уведомления об изменениях (веб-перехватчики)
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение | Бета | Добавлена поддержка подписки на уведомления, включающие данные ресурсов. В настоящее время поддерживаются ресурсы [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) в каналах и чатах Microsoft Teams. Чтобы воспользоваться этой функцией, подписывающиеся приложения должны внедрить дополнительный код авторизации и расшифровки. Дополнительные сведения см. в статье [Настройка уведомлений об изменениях сообщений чатов, включая свойства сообщений (предварительная версия)](webhooks-with-resource-data.md).|
+
+### <a name="teamwork-microsoft-teams"></a>Работа в команде (Microsoft Teams)
+ 
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение | Бета | Добавлены [уведомления ](/graph/api/subscription-post-subscriptions) о новых и измененных сообщениях канала, а также новых и измененных сообщениях чата.
 
 ## <a name="november-2019"></a>Ноябрь 2019 г.
 
@@ -1148,7 +1162,7 @@ ms.locfileid: "39637110"
 | :-------------- | :------------ | :--------------------------------------- |
 |Дополнение |Бета-версия и версия 1.0| Добавлено свойство **internalId** для ресурса [team](/graph/api/resources/team?view=graph-rest-1.0).|
 |Дополнение |Бета-версия и версия 1.0| Добавлена поддержка для настройки Word, Excel, PowerPoint, PDF и [вкладок](teams-configuring-builtin-tabs.md) библиотек документов. |
-|Дополнение |бета| Представлен API [отправки сообщения в канал](/graph/api/channel-post-chatmessage?view=graph-rest-beta). |
+|Дополнение |бета| Представлен API [отправки сообщения в канал](/graph/api/channel-post-messages?view=graph-rest-beta). |
 |Дополнение |бета| Представлен API [ответа на сообщение в канале](/graph/api/channel-post-messagereply?view=graph-rest-beta). |
 |Удаление |бета| Удален API POST /teams/{id}/channels/{id}/chatThreads. Вместо этого можно использовать [Создание сообщения в канале](/graph/api/channel-post-chatmessage?view=graph-rest-beta). |
 |Дополнение |бета | Добавлена поддержка разрешений приложений для ресурса [installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-beta).|
