@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: e71f63872100dff532df7309585f0a6be2ed352c
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 7a71eecadd1d39c37c7778a283bf7a25686da23c
+ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969370"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "39844479"
 ---
 # <a name="overview-of-people-and-workplace-intelligence-in-microsoft-graph"></a>Обзор социальной и рабочей аналитики в Microsoft Graph
 
@@ -60,13 +60,13 @@ GET /me/people/?$search="topic:beetle"
 Нестрогий поиск по индексу данных темы возвращает экземпляры, означающие насекомое, знаменитый автомобиль "Фольксваген Жук", группу Beatles и другие определения.
 
 
-## <a name="why-integrate-with-document-based-insights-preview"></a>Преимущества интеграции аналитики на основе документов (предварительная версия)
+## <a name="why-integrate-with-document-based-insights"></a>Преимущества интеграции аналитики на основе документов
 
 ### <a name="use-intelligence-to-improve-collaboration"></a>Используйте аналитику для улучшения совместной работы
 
 Во время повседневной деятельности пользователи часто работают с огромными объемами информации, хранящейся во многих документах, и взаимодействуют с другими пользователями различными способами. Важно, чтобы они всегда могли найти нужную информацию в нужный момент.
 
-Используйте API аналитики, который включает API [популярных](/graph/api/resources/insights-trending?view=graph-rest-beta), [общих](/graph/api/resources/insights-shared?view=graph-rest-beta) и [использованных](/graph/api/resources/insights-used?view=graph-rest-beta) файлов, чтобы показывать файлы Office 365 на основе текущего контекста и потребностей пользователей, повышая их продуктивность и улучшая совместную работу в организации.
+Используйте API аналитики, который включает API [популярных](/graph/api/resources/insights-trending?view=graph-rest-1.0), [общих](/graph/api/resources/insights-shared?view=graph-rest-1.0) и [использованных](/graph/api/resources/insights-used?view=graph-rest-1.0) файлов, чтобы показывать файлы Office 365 на основе текущего контекста и потребностей пользователей, повышая их продуктивность и улучшая совместную работу в организации.
 
 Результаты API аналитики легко отобразить в приложении. Каждый результат поступает вместе с набором общих свойств визуализации, например URL-адресом изображения или текстом для предварительного просмотра.
 
@@ -74,7 +74,7 @@ GET /me/people/?$search="topic:beetle"
 
 В Office 365 Delve использует аналитические сведения _trending_, чтобы пользователям было проще находить документы, интересующие их в данный момент. См. рисунок 1.
 
-Вы можете использовать сущность [trending](/graph/api/resources/insights-trending?view=graph-rest-beta) в API аналитики программным способом, чтобы обеспечить аналогичное взаимодействие с пользователями приложения. Используйте сущность **trending**, чтобы подключаться к популярным документам, важным для пользователя. API [перечисления популярных документов](/graph/api/insights-list-trending?view=graph-rest-beta) возвращает отсортированные по релевантности файлы, хранящиеся на сайтах групп в OneDrive или SharePoint. Первыми идут наиболее важные. 
+Вы можете использовать сущность [trending](/graph/api/resources/insights-trending?view=graph-rest-1.0) в API аналитики программным способом, чтобы обеспечить аналогичное взаимодействие с пользователями приложения. Используйте сущность **trending**, чтобы подключаться к популярным документам, важным для пользователя. API [перечисления популярных документов](/graph/api/insights-list-trending?view=graph-rest-1.0) возвращает отсортированные по релевантности файлы, хранящиеся на сайтах групп в OneDrive или SharePoint. Первыми идут наиболее важные. 
 
 **Рисунок 1. Delve в Office 365 возвращает популярные документы**
 
@@ -84,7 +84,7 @@ GET /me/people/?$search="topic:beetle"
 
 Новые карточки людей Office 365 подключаются к аналитическим сведениям _used_ и _shared_ для установления связей между людьми и единицами знания. На карточке человека отображаются релевантные для него документы. Карточки людей отображаются во всех программах набора, например в Outlook в Интернете. См. рисунок 2.
 
-API аналитики предоставляет аналогичную функциональность с сущностями [used](/graph/api/resources/insights-used?view=graph-rest-beta) и [shared](/graph/api/resources/insights-shared?view=graph-rest-beta). Они возвращают объекты, которые пользователь недавно просматривал или применял в работе или которыми с ним недавно поделились коллеги в Office 365.
+API аналитики предоставляет аналогичную функциональность с сущностями [used](/graph/api/resources/insights-used?view=graph-rest-1.0) и [shared](/graph/api/resources/insights-shared?view=graph-rest-1.0). Они возвращают объекты, которые пользователь недавно просматривал или применял в работе или которыми с ним недавно поделились коллеги в Office 365.
 
 **Рисунок 2. Outlook в Интернете отображает карточку пользователя**
 
@@ -105,13 +105,13 @@ API [профилей](/graph/api/resources/profile?view=graph-rest-beta) — э
 Ищете справочные материалы по API для этих служб?
 
 - [API людей](/graph/api/resources/social-overview?view=graph-rest-1.0)
-- [Люди и рабочая аналитика (предварительная версия)](/graph/api/resources/social-overview?view=graph-rest-beta)
+- [Люди и рабочая аналитика](/graph/api/resources/social-overview?view=graph-rest-1.0)
 - [API профилей (предварительная версия)](/graph/api/resources/profile?view=graph-rest-beta).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-* Опробуйте API людей, сведений и аналитики с собственными файлами в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer). Выполните вход и выберите **Показать другие примеры** в столбце слева. Включите в меню параметры **Люди**, **Аналитика (бета-версия)** и **Аналитика**.
+* Опробуйте API людей, сведений и аналитики с собственными файлами в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer). Выполните вход и выберите **Показать другие примеры** в столбце слева. Включите в меню параметры **Люди**, **Подробности** и **Аналитика**.
 * Узнайте больше об [API людей](people-example.md) и сущности [person](/graph/api/resources/person?view=graph-rest-1.0).
-* Перед использованием API аналитики ознакомьтесь с разделом [Использование API аналитики](/graph/api/resources/insights?view=graph-rest-beta).
+* Перед использованием API аналитики ознакомьтесь со статьей [Аналитика Office Graph](/graph/api/resources/officegraphinsights?view=graph-rest-1.0).
 * Узнайте больше об [API аналитики](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-balance-work-and-life).
 * Узнайте больше об [API профилей](/graph/api/resources/profile?view=graph-rest-beta).
