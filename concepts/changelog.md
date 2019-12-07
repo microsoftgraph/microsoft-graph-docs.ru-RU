@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 55117b9db8a12e9ce3b4b41aab49212368b2c805
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: f02447a2db457c9e681d1b169eb641d3f5debb01
+ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844276"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "39895516"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -23,6 +23,12 @@ ms.locfileid: "39844276"
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | Бета | Добавлена поддержка подписки на уведомления, включающие данные ресурсов. В настоящее время поддерживаются ресурсы [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) в каналах и чатах Microsoft Teams. Чтобы воспользоваться этой функцией, подписывающиеся приложения должны внедрить дополнительный код авторизации и расшифровки. Дополнительные сведения см. в статье [Настройка уведомлений об изменениях сообщений чатов, включая свойства сообщений (предварительная версия)](webhooks-with-resource-data.md).|
+
+### <a name="people-intelligence--insights"></a>Аналитика людей | Аналитика
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение | 1.0 | API аналитики доступен в версии 1.0. Он включает ресурсы [officeGraphInsights](/graph/api/resources/officegraphinsights?view=graph-rest-1.0), [trending](/graph/api/resources/insights-trending?view=graph-rest-1.0), [usedInsight](/graph/api/resources/insights-used?view=graph-rest-1.0) и [sharedInsight](/graph/api/resources/insights-shared?view=graph-rest-1.0), а также связанные типы и методы. Дополнительные сведения см. в статье [Преимущества интеграции аналитики на основе документов](social-intel-concept-overview.md#why-integrate-with-document-based-insights). |
 
 ### <a name="teamwork-microsoft-teams"></a>Работа в команде (Microsoft Teams)
  
@@ -133,7 +139,7 @@ ms.locfileid: "39844276"
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | 1.0 | Добавлено свойство **conversationIndex** объекту [message](/graph/resources/message?view=graph-rest-v1.0) и его производному типу [eventMessage](/graph/resources/eventmessage?view=graph-rest-v1.0).|
+| Дополнение | 1.0 | Добавлено свойство **conversationIndex** объекту [message](/graph/api/resources/message?view=graph-rest-1.0) и его производному типу [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-v1.0).|
 | Дополнение | Бета | Добавлена поддержка делегированного разрешения [Mail.ReadBasic](/graph/permissions-reference#mail-permissions) и разрешения приложений [Mail.ReadBasic.All](/graph/permissions-reference#mail-permissions) для [создания](/graph/api/subscription-post-subscriptions?view=graph-rest-beta), [получения](/graph/api/subscription-get?view=graph-rest-beta), [обновления](/graph/api/subscription-update?view=graph-rest-beta) и [удаления](/graph/api/subscription-delete?view=graph-rest-beta) подписок на уведомления об изменении сообщения. |
 | Дополнение | 1.0 | Добавлена поддержка делегированного разрешения Mail.ReadBasic и разрешения приложений Mail.ReadBasic.All для следующего:<br />- [Перечисление сообщений](/graph/api/user-list-messages?view=graph-rest-1.0)<br />- [Получение сообщения](/graph/api/message-get?view=graph-rest-1.0) <br />- [Перечисление папок почты](/graph/api/user-list-mailfolders?view=graph-rest-1.0)<br />- [Получение папки почты](/graph/api/mailfolder-get?view=graph-rest-1.0)<br />- [Перечисление дочерних папок](/graph/api/mailfolder-list-childfolders?view=graph-rest-1.0)<br />- [Перечисление сообщений в папке](/graph/api/mailfolder-list-childfolders?view=graph-rest-1.0)<br />- [Получение дельты сообщения](/graph/api/message-delta?view=graph-rest-1.0)<br />- [Получение дельты папки почты](/graph/api/mailfolder-delta?view=graph-rest-1.0) <br />- [Создание](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0), [получение](/graph/api/subscription-get?view=graph-rest-1.0), [обновление](/graph/api/subscription-update?view=graph-rest-1.0) и [удаление](/graph/api/subscription-delete?view=graph-rest-1.0) подписок на уведомления об изменениях сообщения|
 
@@ -159,7 +165,9 @@ ms.locfileid: "39844276"
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Дополнение        | Бета          | Добавлен дополнительный маршрут для получения [driveItem] с помощью идентификатора команды и канала, [get driveItem](/graph/api/driveitem-get?view=graph-rest-beta). |
+| Дополнение | Бета-версия | Добавлены ресурсы [openshift](/graph/api/beta/resources/openshift?view=graph-rest-beta), [openshiftChangeRequest](/graph/api/beta/resources/openshiftChangeRequest?view=graph-rest-beta), [swapShiftChangeRequest](/graph/api/beta/resources/swapShiftChangeRequest?view=graph-rest-beta) и [timeoffrequest](/graph/api/beta/resources/timeoffrequest?view=graph-rest-beta) и соответствующие методы.|
+| Дополнение | Бета-версия | Добавлены свойства **timeClockEnabled**, **openShiftsEnabled**, **swapShiftsRequestsEnabled**, **offerShiftRequestsEnabled**,  **timeOffRequestsEnabled** для ресурса [schedule](/graph/api/beta/resources/schedule?view=graph-rest-beta).|
+| Дополнение        | Бета-версия          | Добавлен дополнительный маршрут для получения [driveItem] с помощью идентификатора команды и канала, [get driveItem](/graph/api/driveitem-get?view=graph-rest-beta). |
 
 ## <a name="october-2019"></a>Октябрь 2019 г.
 
