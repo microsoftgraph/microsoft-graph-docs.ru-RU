@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d5a28a4191bd68aa306e71cb31ddffe256952480
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 9288ed6db5111b99f4cf0f7488d81626678f90dc
+ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421220"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "39895301"
 ---
 # <a name="replace-timeoff"></a>Замена Тимеофф
 
@@ -26,7 +26,7 @@ ms.locfileid: "36421220"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
+|Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -47,7 +47,7 @@ PUT /teams/{teamId}/schedule/timesOff/{timeOffId}
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [тимеофф](../resources/timeoff.md) в формате JSON.
 
@@ -95,7 +95,7 @@ Prefer: return=representation
 [!INCLUDE [sample-code](../includes/snippets/javascript/timeoff-put-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/timeoff-put-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

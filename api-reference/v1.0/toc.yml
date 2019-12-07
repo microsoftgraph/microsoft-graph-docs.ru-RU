@@ -270,9 +270,10 @@
                       href: api/insights-list-trending.md
                     - name: Список "Использованные"
                       href: api/insights-list-used.md
-                - name: Параметры пользователя для обнаружения контента
-                  href: resources/usersettings.md
+                - name: Параметры обнаружения контента
                   items:
+                    - name: Настройки пользователя
+                      href: resources/usersettings.md
                     - name: Получение параметров
                       href: api/usersettings-get.md
                     - name: Обновление параметров
@@ -300,7 +301,7 @@
                   href: api/mailfolder-list-messagerules.md
                 - name: Отправка почты
                   href: api/user-sendmail.md
-            - name: Заметки
+            - name: Примечания
               href: resources/onenote.md
               items:
                 - name: Создание записной книжки
@@ -1513,7 +1514,7 @@
                   items:
                     - name: Получение
                       href: api/intune-deviceconfig-devicecompliancepolicydevicestatesummary-get.md
-                    - name: Обновление
+                    - name: Update
                       href: api/intune-deviceconfig-devicecompliancepolicydevicestatesummary-update.md
                 - name: Состояние соответствия устройства параметру политики
                   href: resources/intune-deviceconfig-devicecompliancepolicysettingstate.md
@@ -3451,7 +3452,7 @@
         - name: Почта
           displayName: 'Outlook, Outlook mail'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/mail-api-overview.md
             - name: Сообщение
               href: resources/message.md
@@ -3609,7 +3610,7 @@
                       href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                     - name: Получение многозначного свойства
                       href: api/multivaluelegacyextendedproperty-get.md
-        - name: Заметки
+        - name: Примечания
           displayName: OneNote
           items:
             - name: Обзор
@@ -3865,7 +3866,7 @@
             - name: Действия в OneDrive
               href: resources/onedrive-activity-reports.md
               items:
-                - name: Получение сведений о пользователях
+                - name: Получение сведений о пользователе
                   href: api/reportroot-getonedriveactivityuserdetail.md
                 - name: Получение количества пользователей
                   href: api/reportroot-getonedriveactivityusercounts.md

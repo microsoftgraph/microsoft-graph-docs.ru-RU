@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bd5b047e184d636f8938e9c820082ae62bda3d99
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: f12fd0bbca9e321d6332ce9994ae1566c1f30ca2
+ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409359"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "39895297"
 ---
 # <a name="create-or-replace-schedule"></a>Создание или замена расписания
 
@@ -53,7 +53,7 @@ PUT /teams/{teamId}/schedule
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [расписания](../resources/schedule.md) в формате JSON.
 
@@ -89,7 +89,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/team-put-schedule-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/team-put-schedule-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -117,7 +117,12 @@ Content-length: 401
   "enabled": true,
   "timeZone": "America/Chicago",
   "provisionStatus": "Completed",
-  "provisionStatusCode": null
+  "provisionStatusCode": null,
+  "timeClockEnabled": true,
+  "openShiftsEnabled": true,
+  "swapShiftsRequestsEnabled": true,
+  "offerShiftRequestsEnabled": true,
+  "timeOffRequestsEnabled": true
 }
 ```
 

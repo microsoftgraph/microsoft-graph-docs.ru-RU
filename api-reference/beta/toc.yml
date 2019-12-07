@@ -278,9 +278,10 @@
                       href: api/insights-list-trending.md
                     - name: Список "Использованные"
                       href: api/insights-list-used.md
-                - name: Параметры пользователя для обнаружения контента
-                  href: resources/usersettings.md
+                - name: Параметры обнаружения контента
                   items:
+                    - name: Настройки пользователя
+                      href: resources/usersettings.md
                     - name: Получение параметров
                       href: api/usersettings-get.md
                     - name: Обновление параметров
@@ -308,7 +309,7 @@
                   href: api/mailfolder-list-messagerules.md
                 - name: Отправка почты
                   href: api/user-sendmail.md
-            - name: Заметки
+            - name: Примечания
               href: resources/onenote.md
               items:
                 - name: Создание записной книжки
@@ -642,7 +643,7 @@
             - name: Событие
               href: resources/event.md
               items:
-                - name: Список событий
+                - name: Перечисление событий
                   href: api/user-list-events.md
                 - name: Создание события
                   href: api/user-post-events.md
@@ -790,7 +791,7 @@
                   href: api/event-delta.md
                 - name: Представление напоминаний
                   href: api/user-reminderview.md
-            - name: Category
+            - name: Категория
               href: resources/outlookcategory.md
               items:
                 - name: Перечисление категорий
@@ -2787,7 +2788,7 @@
                 - name: Общая конфигурация устройств для Android for Work
                   href: resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-androidforworkgeneraldeviceconfiguration-get.md
@@ -2800,7 +2801,7 @@
                 - name: Настройка EAS для Gmail для Android for Work
                   href: resources/intune-deviceconfig-androidforworkgmaileasconfiguration.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-deviceconfig-androidforworkgmaileasconfiguration-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-androidforworkgmaileasconfiguration-get.md
@@ -3420,7 +3421,7 @@
                 - name: Тип ресурса deviceComplianceSettingState
                   href: resources/intune-deviceconfig-devicecompliancesettingstate.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-deviceconfig-devicecompliancesettingstate-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-devicecompliancesettingstate-get.md
@@ -3440,7 +3441,7 @@
                 - name: 'Состояние пользователей, касающийся соответствия устройств требованиям'
                   href: resources/intune-deviceconfig-devicecomplianceuserstatus.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-deviceconfig-devicecomplianceuserstatus-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-devicecomplianceuserstatus-get.md
@@ -4266,7 +4267,7 @@
                 - name: База профилей сертификатов для macOS
                   href: resources/intune-deviceconfig-macoscertificateprofilebase.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-deviceconfig-macoscertificateprofilebase-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-macoscertificateprofilebase-get.md
@@ -4299,7 +4300,7 @@
                 - name: Специальная конфигурация macOS
                   href: resources/intune-deviceconfig-macoscustomconfiguration.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-deviceconfig-macoscustomconfiguration-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-macoscustomconfiguration-get.md
@@ -5769,7 +5770,7 @@
                 - name: Намерение управления устройствами
                   href: resources/intune-deviceintent-devicemanagementintent.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-deviceintent-devicemanagementintent-list.md
                     - name: Получение
                       href: api/intune-deviceintent-devicemanagementintent-get.md
@@ -5788,7 +5789,7 @@
                 - name: Назначение намерения управления устройствами
                   href: resources/intune-deviceintent-devicemanagementintentassignment.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-deviceintent-devicemanagementintentassignment-list.md
                     - name: Получение
                       href: api/intune-deviceintent-devicemanagementintentassignment-get.md
@@ -5990,7 +5991,7 @@
                 - name: Шаблон управления устройствами
                   href: resources/intune-deviceintent-devicemanagementtemplate.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-deviceintent-devicemanagementtemplate-list.md
                     - name: Получение
                       href: api/intune-deviceintent-devicemanagementtemplate-get.md
@@ -6092,7 +6093,7 @@
                 - name: Событие "Устранение проблем с регистрацией"
                   href: resources/intune-troubleshooting-enrollmenttroubleshootingevent.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-troubleshooting-enrollmenttroubleshootingevent-list.md
                     - name: Получение
                       href: api/intune-troubleshooting-enrollmenttroubleshootingevent-get.md
@@ -6860,7 +6861,7 @@
                       href: api/intune-mam-windowsinformationprotectionapplockerfile-get.md
                     - name: Создание
                       href: api/intune-mam-windowsinformationprotectionapplockerfile-create.md
-                    - name: Удалить
+                    - name: Удаление
                       href: api/intune-mam-windowsinformationprotectionapplockerfile-delete.md
                     - name: Обновление
                       href: api/intune-mam-windowsinformationprotectionapplockerfile-update.md
@@ -7055,7 +7056,7 @@
                 - name: Назначение конфигураций регистрации
                   href: resources/intune-onboarding-enrollmentconfigurationassignment.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-onboarding-enrollmentconfigurationassignment-list.md
                     - name: Получение
                       href: api/intune-onboarding-enrollmentconfigurationassignment-get.md
@@ -7074,7 +7075,7 @@
                 - name: Соединитель Mobile Threat Defense
                   href: resources/intune-onboarding-mobilethreatdefenseconnector.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-onboarding-mobilethreatdefenseconnector-list.md
                     - name: Получение
                       href: api/intune-onboarding-mobilethreatdefenseconnector-get.md
@@ -9306,7 +9307,7 @@
                       href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                     - name: Получение многозначного свойства
                       href: api/multivaluelegacyextendedproperty-get.md
-        - name: Заметки
+        - name: Примечания
           displayName: OneNote
           items:
             - name: Обзор
@@ -9729,7 +9730,7 @@
         - name: Поиск (предварительный просмотр)
           displayname: Microsoft Search API
           items:
-            - name: Query
+            - name: Запрос
               items:
                 - name: Общие сведения
                   href: resources/search-api-overview.md

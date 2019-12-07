@@ -6,12 +6,12 @@ title: Возобновляемая отправка файлов
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 3f99c75d0a1f0366cdccb2e590bb16856d9b3caf
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 33bd220fcacaa513495a277108d68f19f901d053
+ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39843954"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "39895359"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Отправка больших файлов с помощью сеанса отправки
 
@@ -184,7 +184,7 @@ Content-Type: application/json
 С помощью значения **nextExpectedRanges** приложение может определить, где должен начинаться следующий диапазон байтов.
 Вы можете увидеть несколько диапазонов, указывающих части файла, еще не полученные сервером. Это удобно, когда требуется возобновить прерванную передачу, а клиенту неизвестно состояние службы.
 
-Размер диапазонов байтов всегда следует определять в соответствии с приведенными ниже рекомендациями. Не рассчитывайте на то, что свойство **nextExpectedRanges** вернет диапазоны надлежащего размера для отправляемого диапазона байтов.
+Размер диапазонов байтов всегда следует определять в соответствии с приведенными ниже рекомендациями. Не рассчитывайте, что свойство **nextExpectedRanges** вернет диапазоны надлежащего размера для отправляемого диапазона байтов.
 Свойство **nextExpectedRanges** указывает диапазоны файла, которые не были получены, а не схему отправки файла приложением.
 
 <!-- { "blockType": "ignored", "@odata.type": "microsoft.graph.uploadSession", "truncated": true } -->
