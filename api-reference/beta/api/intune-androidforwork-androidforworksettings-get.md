@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4413eaafc7a1290ca41b1d10c0c607abf5b39dbb
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: dab4457a0a5aeefc7d4b0b0f55feb1ac805f704a
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38081179"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39923156"
 ---
 # <a name="get-androidforworksettings"></a>Get androidForWorkSettings
 
@@ -47,7 +47,7 @@ GET /deviceManagement/androidForWorkSettings
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -86,7 +86,6 @@ Content-Length: 613
   }
 }
 ```
-
 
 
 

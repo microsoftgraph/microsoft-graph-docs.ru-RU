@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a9393994c2c1090b24c25fdd80b9b8a3da6aa09
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: ad9fdf54eba8b38896e21875fbe33299ae712440
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38085361"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39927330"
 ---
 # <a name="get-androidmanagedstoreappconfigurationschema"></a>Получение Андроидманажедстореаппконфигуратионсчема
 
@@ -47,7 +47,7 @@ GET /deviceManagement/androidManagedStoreAppConfigurationSchemas/{androidManaged
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -124,7 +124,6 @@ Content-Length: 1755
   }
 }
 ```
-
 
 
 

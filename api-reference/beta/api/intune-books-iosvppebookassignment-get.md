@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 751796f2b89f2aa791537f15f7039324f2329842
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: c01dadaeeee9657339e093923c527bc5e9cb12db
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38085115"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39931503"
 ---
 # <a name="get-iosvppebookassignment"></a>Get iosVppEBookAssignment
 
@@ -47,7 +47,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/assignments/{managedEBoo
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -79,7 +79,6 @@ Content-Length: 273
   }
 }
 ```
-
 
 
 
