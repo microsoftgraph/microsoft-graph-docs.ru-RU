@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6aa3afcb79e0f4df2cf1df6a6c4d97e61a6d8386
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 113f61ab92fc173bf2bd3911fdedb19349d474e7
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38085516"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39939425"
 ---
 # <a name="wipemanagedappregistrationbydevicetag-action"></a>Действие wipeManagedAppRegistrationByDeviceTag
 
@@ -48,7 +48,7 @@ POST /users/{usersId}/wipeManagedAppRegistrationByDeviceTag
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тело запроса добавьте параметры в формате JSON.
 
@@ -86,7 +86,6 @@ Content-length: 39
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: eaf0e637577f673082aa3c762b8bf49d7415cf79
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: e401e2b4ae6e476a507ec4ec20d13248a909cd4d
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38086202"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39940126"
 ---
 # <a name="get-devicecompliancepolicy"></a>Get deviceCompliancePolicy
 
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -87,7 +87,6 @@ Content-Length: 433
   }
 }
 ```
-
 
 
 

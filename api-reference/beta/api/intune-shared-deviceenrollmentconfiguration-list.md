@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8bb0ab6d9a1ab6b2d8fd49319a3940e1c65f94f2
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 3323599ba9731a109b3dd6841fbc90179b5cf48a
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38086097"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39940021"
 ---
 # <a name="list-deviceenrollmentconfigurations"></a>Перечисление объектов deviceEnrollmentConfiguration
 
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -84,7 +84,6 @@ Content-Length: 422
   ]
 }
 ```
-
 
 
 

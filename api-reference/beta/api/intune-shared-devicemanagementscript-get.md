@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4e9407b5bd11d7fa2c119512c48294555d442bb5
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 6cb673aa19737483d6151267f579493a96561372
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38085971"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39939895"
 ---
 # <a name="get-devicemanagementscript"></a>Получение deviceManagementScript
 
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -94,7 +94,6 @@ Content-Length: 668
   }
 }
 ```
-
 
 
 

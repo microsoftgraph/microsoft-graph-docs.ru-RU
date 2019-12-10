@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4dd737d593df4893710c30bc819d5b41986a89ac
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 7db408bfb92faa0efd12e5c7f0fcf8764dcc10a5
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38086125"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39940049"
 ---
 # <a name="windowsprivacyaccesscontrols-action"></a>Действие windowsPrivacyAccessControls
 
@@ -48,7 +48,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -91,7 +91,6 @@ Content-length: 379
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

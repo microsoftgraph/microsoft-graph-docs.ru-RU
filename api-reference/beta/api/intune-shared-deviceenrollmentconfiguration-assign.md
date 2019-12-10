@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a31967e7c7bf2b91cd90c8e5c3c8a11bf201ab69
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 046b50b5fe572ee3203606a387c14da9f96faa61
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38086118"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39940042"
 ---
 # <a name="assign-action"></a>Действие назначения
 
@@ -46,7 +46,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -88,7 +88,6 @@ Content-length: 304
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

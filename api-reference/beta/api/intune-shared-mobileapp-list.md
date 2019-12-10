@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b8e58adf460d57908848b85f8c9fa0d36acd46b
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 4d36d0f8a431ccf65467f6a11b30990065cabb5f
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38085768"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39939685"
 ---
 # <a name="list-mobileapps"></a>Перечисление объектов mobileApp
 
@@ -48,7 +48,7 @@ GET /deviceAppManagement/mobileApps
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -101,7 +101,6 @@ Content-Length: 1013
   ]
 }
 ```
-
 
 
 

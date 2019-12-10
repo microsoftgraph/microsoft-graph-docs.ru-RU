@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bc565f8c51aae2448153d85d3cf6bcc4b130a217
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: acf5503709868a829b9bfb474b206dc26fde22d3
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38085537"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39939446"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 
@@ -55,7 +55,7 @@ GET /users
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -91,7 +91,6 @@ Content-Length: 136
   ]
 }
 ```
-
 
 
 

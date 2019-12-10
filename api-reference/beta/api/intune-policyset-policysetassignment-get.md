@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 884f912799f02fd47798571dcb72510a7da5d99f
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 710d3f04c9046262f8adfc4f106ea1d7ac8d67f9
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38086461"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39940926"
 ---
 # <a name="get-policysetassignment"></a>Получение Полицисетассигнмент
 
@@ -47,7 +47,7 @@ GET /deviceAppManagement/policySets/{policySetId}/assignments/{policySetAssignme
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -79,7 +79,6 @@ Content-Length: 303
   }
 }
 ```
-
 
 
 

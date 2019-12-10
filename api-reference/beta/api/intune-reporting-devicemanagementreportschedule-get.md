@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7a4ffa578b3e60ce7d9afcaa4370826b25f2ecd2
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 72ec2a37c5d87c6c6feeebc31e7db1026e9ac009
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38086314"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39940252"
 ---
 # <a name="get-devicemanagementreportschedule"></a>Получение Девицеманажементрепортсчедуле
 
@@ -47,7 +47,7 @@ GET /deviceManagement/reports/reportSchedules/{deviceManagementReportScheduleId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -93,7 +93,6 @@ Content-Length: 647
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b6b51402ebd4a07b80e871104eb7ab177d140e98
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 9de9502835e7590eca78153c094b268559458f94
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38085586"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39939496"
 ---
 # <a name="exportdeviceandappmanagementdata-function"></a>Функция Експортдевицеандаппманажементдата
 
@@ -49,7 +49,7 @@ GET /users/{usersId}/exportDeviceAndAppManagementData
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
@@ -88,7 +88,6 @@ Content-Length: 143
   }
 }
 ```
-
 
 
 
