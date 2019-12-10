@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ceda370eafffa0937323585ca85bd94359ac027a
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 68d5b1f3c48229677889f47c8adfff73e5821e7b
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37535746"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39943244"
 ---
 # <a name="update-grouppolicysettingmapping"></a>Обновление Граупполицисеттингмаппинг
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойств объекта [граупполицисеттингмаппинг](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) .
 
@@ -27,7 +27,7 @@ ms.locfileid: "37535746"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -38,41 +38,42 @@ ms.locfileid: "37535746"
 PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId}/groupPolicySettingMappings/{groupPolicySettingMappingId}
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [граупполицисеттингмаппинг](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [граупполицисеттингмаппинг](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Пока не задокументировано.|
-|parentId|String|Родительский идентификатор параметра групповой политики.|
-|чилдидлист|Коллекция String|Список дочерних идентификаторов параметра групповой политики.|
+|id|Строка|Пока не задокументировано.|
+|parentId|Строка|Родительский идентификатор параметра групповой политики.|
+|чилдидлист|Коллекция строк|Список дочерних идентификаторов параметра групповой политики.|
 |settingName|String|Имя этого параметра групповой политики.|
-|settingValue|String|Значение этого параметра групповой политики.|
-|сеттингвалуетипе|String|Тип значения этого параметра групповой политики.|
-|сеттингдисплайнаме|String|Отображаемое имя этого параметра групповой политики.|
-|сеттингдисплайвалуе|String|Отображаемое значение этого параметра групповой политики.|
-|сеттингдисплайвалуетипе|String|Отображаемый тип значения этого параметра групповой политики.|
-|сеттингвалуедисплайунитс|String|Отображаемые единицы значения параметра групповой политики|
-|сеттингкатегори|String|Категория, в которой находится параметр групповой политики.|
-|мдмкспнаме|String|Имя CSP, которое сопоставляется параметру групповой политики.|
-|мдмсеттингури|String|Универсальный код ресурса (URI) MDM CSP, которому соответствует этот параметр групповой политики.|
+|settingValue|Строка|Значение этого параметра групповой политики.|
+|сеттингвалуетипе|Строка|Тип значения этого параметра групповой политики.|
+|сеттингдисплайнаме|Строка|Отображаемое имя этого параметра групповой политики.|
+|сеттингдисплайвалуе|Строка|Отображаемое значение этого параметра групповой политики.|
+|сеттингдисплайвалуетипе|Строка|Отображаемый тип значения этого параметра групповой политики.|
+|сеттингвалуедисплайунитс|Строка|Отображаемые единицы значения параметра групповой политики|
+|сеттингкатегори|Строка|Категория, в которой находится параметр групповой политики.|
+|мдмкспнаме|Строка|Имя CSP, которое сопоставляется параметру групповой политики.|
+|мдмсеттингури|Строка|Универсальный код ресурса (URI) MDM CSP, которому соответствует этот параметр групповой политики.|
 |мдмминимумосверсион|Int32|Минимальная версия ОС, поддерживаемая параметром MDM.|
-|сеттингтипе|[граупполицисеттингтипе](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|Тип параметра (Security или ADMX) групповой политики. Возможные значения: `unknown`, `policy`, `account`.|
-|исмдмсуппортед|Логический|Указывает, поддерживается ли Intune или нет|
-|сеттингскопе|[граупполицисеттингскопе](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|Область применения параметра. Возможные значения: `unknown`, `device`, `user`.|
-|интунесеттингурилист|Коллекция String|Список URI параметров Intune, которые сопоставлены параметру групповой политики|
+|сеттингтипе|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|Тип параметра (Security или ADMX) групповой политики. Возможные значения: `unknown`, `policy`, `account`, `securityOptions`, `userRightsAssignment`, `auditSetting`, `windowsFirewallSettings`.|
+|исмдмсуппортед|Boolean|Указывает, поддерживается ли Intune или нет|
+|мдмсуппортедстате|[мдмсуппортедстате](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|Указывает, поддерживается ли параметр в MDM. Возможные значения: `unknown`, `supported`, `unsupported`, `deprecated`.|
+|сеттингскопе|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|Область применения параметра. Возможные значения: `unknown`, `device`, `user`.|
+|интунесеттингурилист|Коллекция строк|Список URI параметров Intune, которые сопоставлены параметру групповой политики|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [граупполицисеттингмаппинг](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -82,7 +83,7 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId}/groupPolicySettingMappings/{groupPolicySettingMappingId}
 Content-type: application/json
-Content-length: 850
+Content-length: 887
 
 {
   "@odata.type": "#microsoft.graph.groupPolicySettingMapping",
@@ -103,6 +104,7 @@ Content-length: 850
   "mdmMinimumOSVersion": 3,
   "settingType": "policy",
   "isMdmSupported": true,
+  "mdmSupportedState": "supported",
   "settingScope": "device",
   "intuneSettingUriList": [
     "Intune Setting Uri List value"
@@ -111,11 +113,11 @@ Content-length: 850
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 899
+Content-Length: 936
 
 {
   "@odata.type": "#microsoft.graph.groupPolicySettingMapping",
@@ -137,13 +139,13 @@ Content-Length: 899
   "mdmMinimumOSVersion": 3,
   "settingType": "policy",
   "isMdmSupported": true,
+  "mdmSupportedState": "supported",
   "settingScope": "device",
   "intuneSettingUriList": [
     "Intune Setting Uri List value"
   ]
 }
 ```
-
 
 
 

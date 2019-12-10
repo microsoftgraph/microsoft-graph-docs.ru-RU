@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 41c6a348531364b73232baec75b3fff7329de3f1
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 56f7f98ff0004ed08664b1635cc77436c69d1c7b
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37187606"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39943588"
 ---
 # <a name="create-embeddedsimactivationcodepoolassignment"></a>Создание Ембеддедсимактиватионкодепулассигнмент
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание нового объекта [ембеддедсимактиватионкодепулассигнмент](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) .
 
@@ -38,7 +38,7 @@ ms.locfileid: "37187606"
 POST /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodePoolId}/assignments
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -51,12 +51,12 @@ POST /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCode
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для назначения внедренного пула кода активации SIM-карты. Созданное системой значение, назначаемое при создании.|
+|id|Строка|Уникальный идентификатор для назначения внедренного пула кода активации SIM-карты. Созданное системой значение, назначаемое при создании.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Тип групп, на которые ссылается встроенный пул кода активации SIM-карты.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [ембеддедсимактиватионкодепулассигнмент](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -77,7 +77,7 @@ Content-length: 179
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -91,6 +91,7 @@ Content-Length: 228
   }
 }
 ```
+
 
 
 

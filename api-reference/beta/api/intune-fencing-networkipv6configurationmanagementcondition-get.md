@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 667ed8c83e59a7a9917a231eb5ee463df8a51edc
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 16ee421dfc3dc5553bb70c791cb542a0ee5664b2
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087133"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39943349"
 ---
 # <a name="get-networkipv6configurationmanagementcondition"></a>Получение networkIPv6ConfigurationManagementCondition
 
@@ -48,7 +48,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -93,7 +93,6 @@ Content-Length: 708
   }
 }
 ```
-
 
 
 

@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 88c98f528fc1ea410170486fb4846b11a1527512
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: fe7dac809911c7902f35805d9ca5bff4f7025973
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37178013"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39926161"
 ---
 # <a name="create-enterprisecodesigningcertificate"></a>Создание Ентерприсекодесигнингцертификате
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание нового объекта [ентерприсекодесигнингцертификате](../resources/intune-apps-enterprisecodesigningcertificate.md) .
 
@@ -38,7 +38,7 @@ ms.locfileid: "37178013"
 POST /deviceAppManagement/enterpriseCodeSigningCertificates
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -56,14 +56,14 @@ POST /deviceAppManagement/enterpriseCodeSigningCertificates
 |status|[цертификатестатус](../resources/intune-apps-certificatestatus.md)|Состояние сертификата подготовлено или не подготовлено. Возможные значения: `notProvisioned`, `provisioned`.|
 |subjectName|String|Имя субъекта для сертификата.|
 |subject|String|Значение субъекта для сертификата.|
-|иссуернаме|String.|Имя поставщика сертификата.|
-|имени|String.|Значение издателя для сертификата.|
+|иссуернаме|Строка|Имя поставщика сертификата.|
+|имени|Строка|Значение издателя для сертификата.|
 |expirationDateTime|DateTimeOffset|Дата окончания срока действия сертификата.|
 |уплоаддатетиме|DateTimeOffset|Дата и время отправки сертификата соконструирования.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [ентерприсекодесигнингцертификате](../resources/intune-apps-enterprisecodesigningcertificate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -89,7 +89,7 @@ Content-length: 390
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -108,6 +108,7 @@ Content-Length: 439
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
 }
 ```
+
 
 
 

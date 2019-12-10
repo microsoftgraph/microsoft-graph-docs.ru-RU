@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a4f6381ffb352c7d5188ed181640b5dc80459d89
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 6682ecc7b7c656ac0e065cb395b1a3b1d02f6ae7
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38085164"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39932308"
 ---
 # <a name="create-auditevent"></a>Создание объекта auditEvent
 
@@ -44,7 +44,7 @@ POST /deviceManagement/auditEvents
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта auditEvent в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта auditEvent.
@@ -53,12 +53,12 @@ POST /deviceManagement/auditEvents
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |displayName|Строка|Отображаемое имя события.|
-|componentName|String|Имя компонента.|
+|componentName|Строка|Имя компонента.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Пользователь AAD и приложение, связанные с событием аудита.|
-|activity|String|Понятное имя действия.|
+|activity|Строка|Понятное имя действия.|
 |activityDateTime|DateTimeOffset|Дата и время выполнения действия (в формате UTC).|
-|activityType|String|Тип выполненного действия.|
-|activityOperationType|String|Тип операции HTTP для действия.|
+|activityType|Строка|Тип выполненного действия.|
+|activityOperationType|Строка|Тип операции HTTP для действия.|
 |activityResult|String|Результат действия.|
 |correlationId|Guid|ИД клиентского запроса, используемый для согласования действий в системе.|
 |resources|Коллекция [auditResource](../resources/intune-auditing-auditresource.md)|Изменяемые ресурсы.|
@@ -185,7 +185,6 @@ Content-Length: 1652
   "category": "Category value"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 851347da9079e7183ea1127638bea24657b1d65d
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: fc793611f59c52e90cc646034007dc1c350a319d
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38086874"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39942453"
 ---
 # <a name="get-iosmanagedappregistration"></a>Get iosManagedAppRegistration
 
@@ -47,7 +47,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -96,7 +96,6 @@ Content-Length: 1000
   }
 }
 ```
-
 
 
 

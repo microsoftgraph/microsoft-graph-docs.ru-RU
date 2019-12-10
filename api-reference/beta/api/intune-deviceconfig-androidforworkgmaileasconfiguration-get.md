@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d88a9e6b59a593152c5a8f5a0e0f3e6163d500da
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 113b7e8270b40f288812ca3ca4e21e3fe5d9e9a9
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38084883"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39928310"
 ---
 # <a name="get-androidforworkgmaileasconfiguration"></a>Получение Андроидфорворкгмаилеасконфигуратион
 
@@ -49,7 +49,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -113,7 +113,6 @@ Content-Length: 1531
   }
 }
 ```
-
 
 
 

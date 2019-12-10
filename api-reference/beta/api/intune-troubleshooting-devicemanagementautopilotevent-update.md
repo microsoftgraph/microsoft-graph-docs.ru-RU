@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c2758d04b9283a3804417ea409bbc19769fb6d1b
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 451214ad50bbf5b43bea9b0398fefc82efc51fc2
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37536758"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39939017"
 ---
 # <a name="update-devicemanagementautopilotevent"></a>Обновление Девицеманажементаутопилотевент
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойств объекта [девицеманажементаутопилотевент](../resources/intune-troubleshooting-devicemanagementautopilotevent.md) .
 
@@ -27,7 +27,7 @@ ms.locfileid: "37536758"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -38,13 +38,13 @@ ms.locfileid: "37536758"
 PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [девицеманажементаутопилотевент](../resources/intune-troubleshooting-devicemanagementautopilotevent.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицеманажементаутопилотевент](../resources/intune-troubleshooting-devicemanagementautopilotevent.md).
@@ -56,28 +56,28 @@ PATCH /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 |девицерегистереддатетиме|DateTimeOffset|Дата регистрации устройства.|
 |енроллментстартдатетиме|DateTimeOffset|Дата начала регистрации устройства.|
 |enrollmentType|[windowsAutopilotEnrollmentType](../resources/intune-troubleshooting-windowsautopilotenrollmenttype.md)|Тип регистрации. Возможные значения: `unknown`, `azureADJoinedWithAutopilotProfile`, `offlineDomainJoined`, `azureADJoinedUsingDeviceAuthWithAutopilotProfile`, `azureADJoinedUsingDeviceAuthWithoutAutopilotProfile`, `azureADJoinedWithOfflineAutopilotProfile`, `azureADJoinedWithWhiteGlove`, `offlineDomainJoinedWithWhiteGlove`, `offlineDomainJoinedWithOfflineAutopilotProfile`.|
-|девицесериалнумбер|String|Серийный номер устройства.|
+|девицесериалнумбер|Строка|Серийный номер устройства.|
 |managedDeviceName|String|Управляемое имя устройства.|
 |userPrincipalName|String|Имя участника пользователя, используемое для регистрации устройства.|
-|виндовсаутопилотдеплойментпрофиледисплайнаме|String|Имя профиля для автопилота.|
+|виндовсаутопилотдеплойментпрофиледисплайнаме|Строка|Имя профиля для автопилота.|
 |енроллментстате|[енроллментстате](../resources/intune-shared-enrollmentstate.md)|Не удалось зарегистрировать состояние регистрации, например "зарегистрировано". Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|windows10EnrollmentCompletionPageConfigurationDisplayName|String|Имя профиля страницы состояния регистрации|
+|windows10EnrollmentCompletionPageConfigurationDisplayName|Строка|Имя профиля страницы состояния регистрации|
 |деплойментстате|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Состояние развертывания, например успешное выполнение, сбой, выполнение, Сукцессвистимеаут. Возможные значения: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`.|
-|osVersion|String|Версия операционной системы устройства.|
-|деплойментдуратион|Duration (Длительность)|Длительность развертывания с автопилотной версией, включая регистрацию.|
-|деплойменттоталдуратион|Duration (Длительность)|Общее время развертывания с экрана регистрации на рабочем столе.|
-|девицепрепаратиондуратион|Duration (Длительность)|Время, затраченное на регистрацию устройств.|
-|девицесетупдуратион|Duration (Длительность)|Время, затраченное на устройство ESP.|
-|аккаунтсетупдуратион|Duration (Длительность)|Время, затраченное на ESP пользователем.|
+|osVersion|Строка|Версия операционной системы устройства.|
+|деплойментдуратион|Длительность|Длительность развертывания с автопилотной версией, включая регистрацию.|
+|деплойменттоталдуратион|Длительность|Общее время развертывания с экрана регистрации на рабочем столе.|
+|девицепрепаратиондуратион|Длительность|Время, затраченное на регистрацию устройств.|
+|девицесетупдуратион|Длительность|Время, затраченное на устройство ESP.|
+|аккаунтсетупдуратион|Длительность|Время, затраченное на ESP пользователем.|
 |деплойментстартдатетиме|DateTimeOffset|Время начала развертывания.|
 |деплойментенддатетиме|DateTimeOffset|Время окончания развертывания.|
 |таржетедаппкаунт|Int32|Количество целевых приложений.|
 |таржетедполицикаунт|Int32|Количество целевых политик.|
-|енроллментфаилуредетаилс|String|Сведения о сбоях при регистрации.|
+|енроллментфаилуредетаилс|Строка|Сведения о сбоях при регистрации.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементаутопилотевент](../resources/intune-troubleshooting-devicemanagementautopilotevent.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -117,7 +117,7 @@ Content-length: 1323
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -150,7 +150,6 @@ Content-Length: 1372
   "enrollmentFailureDetails": "Enrollment Failure Details value"
 }
 ```
-
 
 
 

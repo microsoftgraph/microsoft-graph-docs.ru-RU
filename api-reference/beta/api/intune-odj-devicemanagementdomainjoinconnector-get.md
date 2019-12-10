@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8e8197a4b1e329631cce74de9c8a414280160123
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 1b376e3205b77c287a2b7af2d7f1bd78aa271edb
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38086720"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39941941"
 ---
 # <a name="get-devicemanagementdomainjoinconnector"></a>Получение Девицеманажементдомаинжоинконнектор
 
@@ -47,7 +47,7 @@ GET /deviceManagement/domainJoinConnectors/{deviceManagementDomainJoinConnectorI
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -79,7 +79,6 @@ Content-Length: 315
   }
 }
 ```
-
 
 
 

@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2f46b385320d2cc51cfcd3b85f896dc78f8d641d
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 0e545680a0f1268fc1012f03c20e6b65582dafb1
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37190378"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39941605"
 ---
 # <a name="update-onpremisesconditionalaccesssettings"></a>Обновление объекта onPremisesConditionalAccessSettings
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновляет свойства объекта [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md).
 
@@ -39,7 +39,7 @@ PATCH /deviceManagement/conditionalAccessSettings
 PATCH /deviceManagement/exchangeOnPremisesPolicy/conditionalAccessSettings
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -52,8 +52,8 @@ PATCH /deviceManagement/exchangeOnPremisesPolicy/conditionalAccessSettings
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Н/Д|
-|enabled|Boolean.|Указывает, включен ли в этой организации условный доступ к локальной среде|
+|id|Строка|Н/Д|
+|enabled|Boolean|Указывает, включен ли в этой организации условный доступ к локальной среде|
 |includedGroups|Коллекция объектов Guid|Группы пользователей, для которых включается условный доступ к локальной среде. У всех пользователей в этих группах должны быть управляемые мобильные устройства, соответствующие требованиям для доступа к почте.|
 |excludedGroups|Коллекция объектов Guid|Группы пользователей, на которые не распространяется условный доступ к локальной среде. На всех пользователей из этих группах не будет распространяться политика условного доступа.|
 |overrideDefaultRule|Boolean|Указывает, следует ли переопределять правило доступа по умолчанию при разрешении устройства, чтобы обеспечить предоставление доступа.|
@@ -86,7 +86,7 @@ Content-length: 275
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -105,6 +105,7 @@ Content-Length: 324
   "overrideDefaultRule": true
 }
 ```
+
 
 
 

@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 510693ba73f48f68f5936cce1fd2f97d9e40d426
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: bf60d265d5be6398c744f6f2d6984e5b1e1a7c86
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37536604"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39941808"
 ---
 # <a name="create-deviceenrollmentwindowshelloforbusinessconfiguration"></a>Создание deviceEnrollmentWindowsHelloForBusinessConfiguration
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание объекта [deviceEnrollmentWindowsHelloForBusinessConfiguration](../resources/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration.md).
 
@@ -27,7 +27,7 @@ ms.locfileid: "37536604"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -38,13 +38,13 @@ ms.locfileid: "37536604"
 POST /deviceManagement/deviceEnrollmentConfigurations
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта deviceEnrollmentWindowsHelloForBusinessConfiguration в формате JSON.
 
 В приведенной ниже таблице показаны свойства, которые необходимо указывать при создании объекта deviceEnrollmentWindowsHelloForBusinessConfiguration.
@@ -64,8 +64,8 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 |pinLowercaseCharactersUsage|[виндовшеллофорбусинесспинусаже](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Управляет возможностью использования строчных букв в ПИН-коде Windows Hello для бизнеса.  Allows разрешает использование строчных букв (s), в то время как это необходимо. Если задано значение "не разрешено", буквы нижнего регистра не будут разрешены. Возможные значения: `allowed`, `required`, `disallowed`.|
 |pinSpecialCharactersUsage|[виндовшеллофорбусинесспинусаже](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Управляет возможностью использования специальных символов в ПИН-коде Windows Hello для бизнеса.  Allows разрешает использование специальных символов, в то время как они необходимы для их отображения. Если задано значение "не разрешено", Специальные символы не будут разрешены. Возможные значения: `allowed`, `required`, `disallowed`.|
 |state|[Включение](../resources/intune-shared-enablement.md)|Определяет, разрешено ли настраивать устройство для Windows Hello для бизнеса. Если задано значение Disabled, пользователь не сможет подготовить Windows Hello для бизнеса, за исключением того, что в Azure Active Directory присоединяются мобильные телефоны, если это необходимо. Если задано значение не задано, Intune не будет переопределять значения по умолчанию для клиента. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
-|securityDeviceRequired|Логический|Определяет, требуется ли доверенный ПЛАТФОРМЕНный модуль для подготовки Windows Hello для бизнеса. TPM предоставляет дополнительные преимущества безопасности, которые хранятся на нем, не могут использоваться на других устройствах. Если задано значение false, все устройства могут подготавливать Windows Hello для бизнеса, даже если нет пригодного к использованию доверенного платформенного модуля.|
-|unlockWithBiometricsEnabled|Логический|Управляет использованием биометрических жестов, таких как лицо и отпечаток, в качестве альтернативы ПИН-коду Windows Hello для бизнеса.  Если задано значение false, биометрические жесты не разрешены. Пользователи по-прежнему должны настроить ПИН-код в качестве резервной копии в случае сбоев.|
+|securityDeviceRequired|Boolean|Определяет, требуется ли доверенный ПЛАТФОРМЕНный модуль для подготовки Windows Hello для бизнеса. TPM предоставляет дополнительные преимущества безопасности, которые хранятся на нем, не могут использоваться на других устройствах. Если задано значение false, все устройства могут подготавливать Windows Hello для бизнеса, даже если нет пригодного к использованию доверенного платформенного модуля.|
+|unlockWithBiometricsEnabled|Boolean|Управляет использованием биометрических жестов, таких как лицо и отпечаток, в качестве альтернативы ПИН-коду Windows Hello для бизнеса.  Если задано значение false, биометрические жесты не разрешены. Пользователи по-прежнему должны настроить ПИН-код в качестве резервной копии в случае сбоев.|
 |remotePassportEnabled|Boolean|Управляет использованием удаленного Windows Hello для бизнеса. Удаленная функция Windows Hello для бизнеса обеспечивает возможность использования портативного, зарегистрированного устройства в качестве вспомогательного для проверки подлинности на настольных компьютерах. Рабочий стол должен быть присоединен к Azure AD, а на вспомогательном устройстве должен быть ПИН-код Windows Hello для бизнеса.|
 |pinPreviousBlockCount|Int32|Управляет возможностью запретить пользователям использовать прошлые контакты. Он должен иметь значение от 0 до 50 включительно, а текущий ПИН-код пользователя включен в этот счетчик. Если задано значение 0, предыдущие ПИН-коды не сохраняются. История ПИН-кодов не сохраняется при сбросе ПИН-кода.|
 |pinExpirationInDays|Int32|Определяет период времени (в днях), в течение которого можно использовать ПИН-код, прежде чем система потребует от пользователя изменить его. Должно быть задано значение от 0 до 730 включительно. Если задано значение 0, срок действия ПИН-кода пользователя никогда не истекает|
@@ -109,7 +109,7 @@ Content-length: 667
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -139,7 +139,6 @@ Content-Length: 839
   "securityKeyForSignIn": "enabled"
 }
 ```
-
 
 
 

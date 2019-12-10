@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 342498f91ddb628c7b47523e83837fe777757b73
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 95a8a716099c635f4776d694fcca67a4966d1a5e
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38086727"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39941983"
 ---
 # <a name="get-notificationmessagetemplate"></a>Get notificationMessageTemplate
 
@@ -47,7 +47,7 @@ GET /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateI
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -82,7 +82,6 @@ Content-Length: 409
   }
 }
 ```
-
 
 
 

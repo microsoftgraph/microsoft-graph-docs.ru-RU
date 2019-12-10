@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 99676e09009375f01409b7c201a32ad89f08d9a3
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 627ebd66f0e89cb994209abdc6551e809995706c
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38086566"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39941465"
 ---
 # <a name="get-windows10enrollmentcompletionpageconfiguration"></a>Получение windows10EnrollmentCompletionPageConfiguration
 
@@ -47,7 +47,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -93,7 +93,6 @@ Content-Length: 915
   }
 }
 ```
-
 
 
 

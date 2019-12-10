@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dde66013b195b41c9c9b688706c5cdaa3741ae1e
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 33f27713d958fb99abb49acbe5539aab0c40d87c
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37178006"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39926168"
 ---
 # <a name="list-androidstoreapps"></a>Перечисление объектов androidStoreApp
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Список свойств и связей объектов [androidStoreApp](../resources/intune-apps-androidstoreapp.md).
 
@@ -38,7 +38,7 @@ ms.locfileid: "37178006"
 GET /deviceAppManagement/mobileApps
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -59,7 +59,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -117,6 +117,7 @@ Content-Length: 1615
   ]
 }
 ```
+
 
 
 

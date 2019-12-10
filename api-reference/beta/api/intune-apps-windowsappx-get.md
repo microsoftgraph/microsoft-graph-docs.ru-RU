@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a924cc1dbf8d816e9eba88d3dd472527abcfaad
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 32fee78fe636d6d8348fa08b0c534eb3387c73f7
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078387"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39933806"
 ---
 # <a name="get-windowsappx"></a>Получение windowsAppX
 
@@ -49,7 +49,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -121,7 +121,6 @@ Content-Length: 1696
   }
 }
 ```
-
 
 
 

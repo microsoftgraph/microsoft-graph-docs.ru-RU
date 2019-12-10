@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c3381889b957a08873011159a8b5db4d7de1fdc2
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 5be2de9edda91ac37f1d57aef54b636cced116e8
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087932"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39938245"
 ---
 # <a name="get-intunebrandingprofileassignment"></a>Получение Интунебрандингпрофилеассигнмент
 
@@ -47,7 +47,7 @@ GET /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assignmen
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -78,7 +78,6 @@ Content-Length: 249
   }
 }
 ```
-
 
 
 

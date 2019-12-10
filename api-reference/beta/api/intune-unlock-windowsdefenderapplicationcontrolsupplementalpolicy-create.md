@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d925d21f1fbe7b1ed1bc1b1d460dc8fb766c5337
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 4a140edbea884bd048a068bbf873719e63f46c08
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37537680"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39938896"
 ---
 # <a name="create-windowsdefenderapplicationcontrolsupplementalpolicy"></a>Создание Виндовсдефендераппликатионконтролсупплементалполици
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание нового объекта [виндовсдефендераппликатионконтролсупплементалполици](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) .
 
@@ -27,7 +27,7 @@ ms.locfileid: "37537680"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -38,32 +38,32 @@ ms.locfileid: "37537680"
 POST /deviceAppManagement/wdacSupplementalPolicies
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Виндовсдефендераппликатионконтролсупплементалполици в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Виндовсдефендераппликатионконтролсупплементалполици.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ для дополнительной политики Виндовсдефендераппликатионконтрол.|
+|id|Строка|Ключ для дополнительной политики Виндовсдефендераппликатионконтрол.|
 |displayName|Строка|Отображаемое имя дополнительной политики Виндовсдефендераппликатионконтрол.|
 |description|String|Описание дополнительной политики Виндовсдефендераппликатионконтрол.|
 |содержимое|Binary|Содержимое дополнительной политики Виндовсдефендераппликатионконтрол в формате массива байтов.|
-|контентфиленаме|String|Имя файла дополнительной политики Виндовсдефендераппликатионконтрол.|
+|контентфиленаме|Строка|Имя файла дополнительной политики Виндовсдефендераппликатионконтрол.|
 |version|String|Версия дополнительной политики Виндовсдефендераппликатионконтрол.|
 |креатиондатетиме|DateTimeOffset|Дата и время отправки дополнительной политики Виндовсдефендераппликатионконтрол.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения дополнительной политики Виндовсдефендераппликатионконтрол.|
-|roleScopeTagIds|Коллекция String|Список тегов областей для данной дополнительной политики Виндовсдефендераппликатионконтрол.|
+|roleScopeTagIds|Коллекция строк|Список тегов областей для данной дополнительной политики Виндовсдефендераппликатионконтрол.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [виндовсдефендераппликатионконтролсупплементалполици](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -90,7 +90,7 @@ Content-length: 404
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -111,7 +111,6 @@ Content-Length: 517
   ]
 }
 ```
-
 
 
 

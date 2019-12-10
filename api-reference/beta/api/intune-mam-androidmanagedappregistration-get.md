@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cc16dc017a59caab1170145da883438d48910140
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 6dffbfdbf4d889987f182fdffa82e38d92e418df
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38086909"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39942502"
 ---
 # <a name="get-androidmanagedappregistration"></a>Get androidManagedAppRegistration
 
@@ -47,7 +47,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -97,7 +97,6 @@ Content-Length: 1054
   }
 }
 ```
-
 
 
 

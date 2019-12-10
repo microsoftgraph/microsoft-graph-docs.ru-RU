@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d46ffcef2336a1a43e72ef07587c02a84b588bd5
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 20f95b0173802eca9823a03fdd8df5a6b069a5ed
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37537652"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39941479"
 ---
 # <a name="create-windows10enrollmentcompletionpageconfiguration"></a>Создание windows10EnrollmentCompletionPageConfiguration
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание нового объекта [windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) .
 
@@ -27,7 +27,7 @@ ms.locfileid: "37537652"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -38,13 +38,13 @@ ms.locfileid: "37537652"
 POST /deviceManagement/deviceEnrollmentConfigurations
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта windows10EnrollmentCompletionPageConfiguration в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании windows10EnrollmentCompletionPageConfiguration.
@@ -58,20 +58,20 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 |createdDateTime|DateTimeOffset|Созданная Дата и время в формате UTC для настройки регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |version|Int32|Версия конфигурации регистрации устройств, унаследованная от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|шовинсталлатионпрогресс|Логический|Отображение или скрытие хода установки для пользователя|
-|блоккдевицесетупретрибюсер|Логический|Разрешить пользователю повторно выполнить установку при сбое установки|
-|алловдевицересетонинсталлфаилуре|Логический|Разрешение или блокировка сброса устройства при сбое установки|
-|алловлогколлектиононинсталлфаилуре|Логический|Разрешение или блокировка сбора журналов при сбое установки|
-|кустомеррормессаже|String|Задать настраиваемое сообщение об ошибке, которое будет отображаться после сбоя установки|
+|шовинсталлатионпрогресс|Boolean|Отображение или скрытие хода установки для пользователя|
+|блоккдевицесетупретрибюсер|Boolean|Разрешить пользователю повторно выполнить установку при сбое установки|
+|алловдевицересетонинсталлфаилуре|Boolean|Разрешение или блокировка сброса устройства при сбое установки|
+|алловлогколлектиононинсталлфаилуре|Boolean|Разрешение или блокировка сбора журналов при сбое установки|
+|кустомеррормессаже|Строка|Задать настраиваемое сообщение об ошибке, которое будет отображаться после сбоя установки|
 |инсталлпрогресстимеаутинминутес|Int32|Задать время ожидания установки (в минутах)|
-|алловдевицеусеонинсталлфаилуре|Логический|Разрешить пользователю продолжать использовать устройство при сбое установки|
-|селектедмобилеаппидс|Коллекция String|Выбранные приложения для отслеживания состояния установки|
-|траккинсталлпрогрессфораутопилотонли|Логический|Показывать только ход выполнения установки для сценариев автоматической пилотной установки|
-|дисаблеусерстатустраккингафтерфирстусер|Логический|Показывать только сведения о ходе установки для первой процедуры регистрации пользователя|
+|алловдевицеусеонинсталлфаилуре|Boolean|Разрешить пользователю продолжать использовать устройство при сбое установки|
+|селектедмобилеаппидс|Коллекция строк|Выбранные приложения для отслеживания состояния установки|
+|траккинсталлпрогрессфораутопилотонли|Boolean|Показывать только ход выполнения установки для сценариев автоматической пилотной установки|
+|дисаблеусерстатустраккингафтерфирстусер|Boolean|Показывать только сведения о ходе установки для первой процедуры регистрации пользователя|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -105,7 +105,7 @@ Content-length: 684
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -134,7 +134,6 @@ Content-Length: 856
   "disableUserStatusTrackingAfterFirstUser": true
 }
 ```
-
 
 
 

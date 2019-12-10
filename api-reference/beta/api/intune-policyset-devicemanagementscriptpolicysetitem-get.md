@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 36ce7ac3208d97572b1b7159a4105a5c4e64a932
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 339b5dad109fbda34c71782489ea8ce24939b4b7
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38086517"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39941213"
 ---
 # <a name="get-devicemanagementscriptpolicysetitem"></a>Получение Девицеманажементскриптполицисетитем
 
@@ -47,7 +47,7 @@ GET /deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -85,7 +85,6 @@ Content-Length: 532
   }
 }
 ```
-
 
 
 

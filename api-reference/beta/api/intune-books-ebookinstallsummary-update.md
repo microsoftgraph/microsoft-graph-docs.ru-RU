@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c35c9dbdfeb7a519600ed1996015dad5fe1f1915
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 92db80124ea2977d905f0a12769125dc4efdc65c
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37171325"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39931783"
 ---
 # <a name="update-ebookinstallsummary"></a>Update eBookInstallSummary
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойств объекта [eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md).
 
@@ -38,7 +38,7 @@ ms.locfileid: "37171325"
 PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/installSummary
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -51,7 +51,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/installSummary
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |installedDeviceCount|Int32|Количество устройств, на которых была успешно установлена эта книга.|
 |failedDeviceCount|Int32|Количество устройств, на которых не удалось установить эту книгу.|
 |notInstalledDeviceCount|Int32|Количество устройств, на которых не установлена эта книга.|
@@ -85,7 +85,7 @@ Content-length: 236
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -102,6 +102,7 @@ Content-Length: 285
   "notInstalledUserCount": 5
 }
 ```
+
 
 
 

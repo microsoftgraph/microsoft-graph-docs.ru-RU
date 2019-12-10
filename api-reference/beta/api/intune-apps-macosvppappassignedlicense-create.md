@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2f4620465b30cca525faf0fb3e58b4205befad23
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: c0fbbcc801378bbdaabf49f920e7a749fe159245
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37173278"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39937818"
 ---
 # <a name="create-macosvppappassignedlicense"></a>Создание Макосвппаппассигнедлиценсе
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание нового объекта [макосвппаппассигнедлиценсе](../resources/intune-apps-macosvppappassignedlicense.md) .
 
@@ -38,7 +38,7 @@ ms.locfileid: "37173278"
 POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.macOsVppApp/assignedLicenses
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -52,14 +52,14 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.macOsVppApp/a
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
-|усеремаиладдресс|String.|Адрес электронной почты пользователя.|
+|усеремаиладдресс|Строка|Адрес электронной почты пользователя.|
 |userId|String|Идентификатор пользователя.|
 |userName|String|Имя пользователя.|
 |userPrincipalName|Строка|Имя участника-пользователя.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [макосвппаппассигнедлиценсе](../resources/intune-apps-macosvppappassignedlicense.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -81,7 +81,7 @@ Content-length: 236
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -96,6 +96,7 @@ Content-Length: 285
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 41fd3c9b98700d4462cfec51c0204fa2c64207ce
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 8f0f329726ac016315268bbb009a24cba4c0c57f
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38086888"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39942467"
 ---
 # <a name="list-defaultmanagedappprotections"></a>Перечисление объектов defaultManagedAppProtection
 
@@ -44,7 +44,7 @@ GET /deviceAppManagement/defaultManagedAppProtections
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtec
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4818
+Content-Length: 5106
 
 {
   "value": [
@@ -117,6 +117,10 @@ Content-Length: 4818
       "managedBrowser": "microsoftEdge",
       "maximumAllowedDeviceThreatLevel": "secured",
       "mobileThreatDefenseRemediationAction": "wipe",
+      "blockDataIngestionIntoOrganizationDocuments": true,
+      "allowedDataIngestionLocations": [
+        "sharePoint"
+      ],
       "appDataEncryptionType": "afterDeviceRestart",
       "screenCaptureBlocked": true,
       "encryptAppData": true,
@@ -166,12 +170,15 @@ Content-Length: 4818
       "customBrowserDisplayName": "Custom Browser Display Name value",
       "minimumRequiredCompanyPortalVersion": "Minimum Required Company Portal Version value",
       "minimumWarningCompanyPortalVersion": "Minimum Warning Company Portal Version value",
-      "minimumWipeCompanyPortalVersion": "Minimum Wipe Company Portal Version value"
+      "minimumWipeCompanyPortalVersion": "Minimum Wipe Company Portal Version value",
+      "allowedAndroidDeviceModels": [
+        "Allowed Android Device Models value"
+      ],
+      "appActionIfAndroidDeviceModelNotAllowed": "wipe"
     }
   ]
 }
 ```
-
 
 
 

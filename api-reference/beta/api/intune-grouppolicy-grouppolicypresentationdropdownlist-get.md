@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e814df09b040aaef452b91b4d78f5b7e8e4bce03
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 6a6f62480dbf17a940bf5744db0a77dcf20995b5
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087007"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39942957"
 ---
 # <a name="get-grouppolicypresentationdropdownlist"></a>Получение Граупполиципресентатиондропдовнлист
 
@@ -48,7 +48,7 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -91,7 +91,6 @@ Content-Length: 655
   }
 }
 ```
-
 
 
 

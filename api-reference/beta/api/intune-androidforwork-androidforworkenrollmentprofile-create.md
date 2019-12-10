@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 725c64b95c1107e9db7d63d8c5f7d286c40ea220
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 16c47a75824055cf1377f32d6ed474ab8102418d
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37178377"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39927778"
 ---
 # <a name="create-androidforworkenrollmentprofile"></a>Create androidForWorkEnrollmentProfile
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание объекта [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md).
 
@@ -38,7 +38,7 @@ ms.locfileid: "37178377"
 POST /deviceManagement/androidForWorkEnrollmentProfiles
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -51,13 +51,13 @@ POST /deviceManagement/androidForWorkEnrollmentProfiles
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|accountId|String.|GUID клиента, которому принадлежит профиль регистрации.|
+|accountId|Строка|GUID клиента, которому принадлежит профиль регистрации.|
 |id|Строка|Уникальный GUID профиля регистрации.|
 |displayName|Строка|Отображаемое имя для профиля регистрации.|
 |description|String|Описание профиля регистрации.|
 |createdDateTime|DateTimeOffset|Дата и время создания профиля регистрации.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения профиля регистрации.|
-|tokenValue|String.|Значение последнего созданного маркера для этого профиля регистрации.|
+|tokenValue|Строка|Значение последнего созданного маркера для этого профиля регистрации.|
 |tokenExpirationDateTime|DateTimeOffset|Дата и время, когда истекает срок действия последнего созданного маркера.|
 |enrolledDeviceCount|Int32|Общее количество устройств с Android, зарегистрированных через этот профиль регистрации.|
 |qrCodeContent|String|Строка, используемая для создания QR-кода маркера.|
@@ -95,7 +95,7 @@ Content-length: 496
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -120,6 +120,7 @@ Content-Length: 668
   }
 }
 ```
+
 
 
 

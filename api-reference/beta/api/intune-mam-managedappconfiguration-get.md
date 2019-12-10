@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8a4fff43bd87be156b1e611f325b99a8111d163b
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: b1c11b1ab8439480fed1cb72369d1eb9cd523358
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38086860"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39942439"
 ---
 # <a name="get-managedappconfiguration"></a>Get managedAppConfiguration
 
@@ -49,7 +49,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -92,7 +92,6 @@ Content-Length: 618
   }
 }
 ```
-
 
 
 

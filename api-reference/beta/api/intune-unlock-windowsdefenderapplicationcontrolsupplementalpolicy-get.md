@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fd37a46c0417ae857045fd47a60013419c86c3e4
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 2767666632b45357c4f690d4ad545a6e41bcc8ce
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087995"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39938889"
 ---
 # <a name="get-windowsdefenderapplicationcontrolsupplementalpolicy"></a>Получение Виндовсдефендераппликатионконтролсупплементалполици
 
@@ -48,7 +48,7 @@ GET /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationCon
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -86,7 +86,6 @@ Content-Length: 560
   }
 }
 ```
-
 
 
 

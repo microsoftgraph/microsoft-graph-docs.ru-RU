@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 84781842ddc1f7656de078b26ca089af60b1d8f5
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 266962caf66649c53422c04ddd12d6d95c7b2065
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087189"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39943609"
 ---
 # <a name="get-embeddedsimactivationcodepool"></a>Получение Ембеддедсимактиватионкодепул
 
@@ -47,7 +47,7 @@ GET /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodeP
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -87,7 +87,6 @@ Content-Length: 675
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3e47e05bbdc39688738811077e73ad2a331ca2aa
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 4c6a6634b477437a1336fbfc45dfbb04751b6343
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078380"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39933666"
 ---
 # <a name="get-windowsmicrosoftedgeapp"></a>Получение Виндовсмикрософтеджеапп
 
@@ -49,7 +49,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -101,7 +101,6 @@ Content-Length: 987
   }
 }
 ```
-
 
 
 

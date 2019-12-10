@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d42dfb0a3ba92a715c3581fbca64e396f1a766c2
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 6a8723d4d48f2f5080365b5197c93f77d31ab107
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38085206"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39933197"
 ---
 # <a name="get-windowsphone81appxbundle"></a>Получение windowsPhone81AppXBundle
 
@@ -49,7 +49,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -145,7 +145,6 @@ Content-Length: 2642
   }
 }
 ```
-
 
 
 

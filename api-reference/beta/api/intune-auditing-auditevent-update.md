@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1dc5508ac19e81017eb46a5e8e812d304802f736
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 65be6c79e05b19ad7dcd5fc3fabc4117e2cddec2
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38085143"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39932042"
 ---
 # <a name="update-auditevent"></a>Update auditEvent
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [auditEvent](../resources/intune-auditing-auditevent.md) в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта [auditEvent](../resources/intune-auditing-auditevent.md).
@@ -53,12 +53,12 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |displayName|Строка|Отображаемое имя события.|
-|componentName|String|Имя компонента.|
+|componentName|Строка|Имя компонента.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Пользователь AAD и приложение, связанные с событием аудита.|
-|activity|String|Понятное имя действия.|
+|activity|Строка|Понятное имя действия.|
 |activityDateTime|DateTimeOffset|Дата и время выполнения действия (в формате UTC).|
-|activityType|String|Тип выполненного действия.|
-|activityOperationType|String|Тип операции HTTP для действия.|
+|activityType|Строка|Тип выполненного действия.|
+|activityOperationType|Строка|Тип операции HTTP для действия.|
 |activityResult|String|Результат действия.|
 |correlationId|Guid|ИД клиентского запроса, используемый для согласования действий в системе.|
 |resources|Коллекция [auditResource](../resources/intune-auditing-auditresource.md)|Изменяемые ресурсы.|
@@ -185,7 +185,6 @@ Content-Length: 1652
   "category": "Category value"
 }
 ```
-
 
 
 

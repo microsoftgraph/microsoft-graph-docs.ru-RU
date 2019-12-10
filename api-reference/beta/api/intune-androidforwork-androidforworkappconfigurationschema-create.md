@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0994d3a50908ccdd3dc4e41a7c99cbd4ba772192
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 8f55171010c2314919b8c296fbcb9b7cf46754f5
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37174244"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39928086"
 ---
 # <a name="create-androidforworkappconfigurationschema"></a>Создание объекта androidForWorkAppConfigurationSchema
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание объекта [androidForWorkAppConfigurationSchema](../resources/intune-androidforwork-androidforworkappconfigurationschema.md).
 
@@ -38,7 +38,7 @@ ms.locfileid: "37174244"
 POST /deviceManagement/androidForWorkAppConfigurationSchemas
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -51,7 +51,7 @@ POST /deviceManagement/androidForWorkAppConfigurationSchemas
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта, которому соответствует имя пакета Android для схемы приложений.|
+|id|Строка|Ключ объекта, которому соответствует имя пакета Android для схемы приложений.|
 |exampleJson|Binary|Массив байтов в кодировке UTF8, содержащий образец соответствующей схеме строки JSON, который иллюстрирует настройку приложения.|
 |schemaItems|Коллекция [androidForWorkAppConfigurationSchemaItem](../resources/intune-androidforwork-androidforworkappconfigurationschemaitem.md)|Коллекция элементов, каждый из которых представляет именованный параметр конфигурации в схеме.|
 
@@ -98,7 +98,7 @@ Content-length: 795
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -132,6 +132,7 @@ Content-Length: 844
   ]
 }
 ```
+
 
 
 

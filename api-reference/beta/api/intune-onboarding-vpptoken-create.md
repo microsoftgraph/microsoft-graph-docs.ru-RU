@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: db1f7ca4cb3ec685bb6a01b633be0937e25b76c3
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 2a6b1a2a081aa31a7692b385ecc482d84b456646
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37190231"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39941535"
 ---
 # <a name="create-vpptoken"></a>Создать VPP токен
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создайте новый объект [vppToken](../resources/intune-onboarding-vpptoken.md).
 
@@ -38,7 +38,7 @@ ms.locfileid: "37190231"
 POST /deviceAppManagement/vppTokens
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -54,20 +54,20 @@ POST /deviceAppManagement/vppTokens
 |id|String|Создается автоматически при создании appleVolumePurchaseProgramToken. Это ключ объекта.|
 |organizationName|String|Организация, связанная с токеном Apple Volume Purchase Program.|
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|Тип программы оптовых покупок, с которой связан заданный токен Apple Volume Purchase Program. Возможные значения: `business`, `education`. Возможные значения: `business`, `education`.|
-|appleId|String.|Идентификатор Apple ID, связанный с заданным токеном Apple Volume Purchase Program.|
+|appleId|Строка|Идентификатор Apple ID, связанный с заданным токеном Apple Volume Purchase Program.|
 |expirationDateTime|DateTimeOffset|Дата и время завершения срока действия токена Apple Volume Purchase Program.|
 |lastSyncDateTime|DateTimeOffset|Последнее выполнение синхронизации приложения при помощи службы Apple Volume Purchase Program с использованием токена Apple Volume Purchase Program.|
-|токен|String.|Строка токена Apple Volume Purchase Program; загрузка выполнена из Apple Volume Purchase Program.|
+|токен|Строка|Строка токена Apple Volume Purchase Program; загрузка выполнена из Apple Volume Purchase Program.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения, связанного с токеном Apple Volume Purchase Program.|
 |состояние|[впптокенстате](../resources/intune-onboarding-vpptokenstate.md)|Текущее состояние токена Apple Volume Purchase Program. Возможные значения: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`. Возможные значения: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`.|
 |токенактионресултс|Коллекция [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|Коллекция состояний действий, выполняемых с помощью маркера Apple Volume Purchase Program.|
 |lastSyncStatus|[впптокенсинкстатус](../resources/intune-onboarding-vpptokensyncstatus.md)|Текущее состояние последней синхронизации приложения, инициированной с помощью токена Apple Volume Purchase Program. Возможные значения: `none`, `inProgress`, `completed`, `failed`. Возможные значения: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Логическое|Автоматически обновятся все приложения, не только для токена VPP.|
 |countryOrRegion|Строка|Автоматически обновятся все приложения, не только для токена VPP.|
-|dataSharingConsentGranted|Boolean.|Разрешение, предоставленное для предоставления общего доступа к данным с помощью программы Apple Volume Purchase Program.|
+|dataSharingConsentGranted|Boolean|Разрешение, предоставленное для предоставления общего доступа к данным с помощью программы Apple Volume Purchase Program.|
 |displayName|Строка|Понятное имя маркера, указанного администратором.|
-|локатионнаме|String.|Расположение маркера возвращено от Apple VPP.|
-|клаимтокенманажементфромекстерналмдм|Boolean.|Согласие администратора, чтобы разрешить управление маркерами из внешних MDM.|
+|локатионнаме|Строка|Расположение маркера возвращено от Apple VPP.|
+|клаимтокенманажементфромекстерналмдм|Boolean|Согласие администратора, чтобы разрешить управление маркерами из внешних MDM.|
 |roleScopeTagIds|Коллекция строк|Идентификаторы тегов области ролей, назначенных этой сущности.|
 
 
@@ -116,7 +116,7 @@ Content-length: 1002
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -154,6 +154,7 @@ Content-Length: 1115
   ]
 }
 ```
+
 
 
 

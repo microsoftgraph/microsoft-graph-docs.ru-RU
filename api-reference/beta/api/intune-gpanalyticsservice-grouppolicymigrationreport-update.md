@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ee3c1c7355df5e49e281658f51d9d42d922c11c9
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 092d65482bbcbebb810ed004fae80cd42afff103
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37535781"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39943279"
 ---
 # <a name="update-grouppolicymigrationreport"></a>Обновление Граупполицимигратионрепорт
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойств объекта [граупполицимигратионрепорт](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) .
 
@@ -27,7 +27,7 @@ ms.locfileid: "37535781"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -38,13 +38,13 @@ ms.locfileid: "37535781"
 PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId}
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [граупполицимигратионрепорт](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [граупполицимигратионрепорт](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md).
@@ -54,20 +54,20 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 |id|String|Пока не задокументировано.|
 |граупполициобжектид|GUID|GUID объекта групповой политики из XML-содержимого объекта групповой политики|
 |displayName|Строка|Имя объекта групповой политики из XML-содержимого объекта групповой политики|
-|аудистингуишеднаме|String|Различающееся имя подразделения.|
+|аудистингуишеднаме|Строка|Различающееся имя подразделения.|
 |createdDateTime|DateTimeOffset|Дата и время создания Граупполицимигратионрепорт.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения Граупполицимигратионрепорт.|
 |граупполицикреатеддатетиме|DateTimeOffset|Дата и время создания Граупполицимигратионрепорт.|
 |граупполициластмодифиеддатетиме|DateTimeOffset|Дата и время последнего изменения Граупполицимигратионрепорт.|
-|мигратионреадинесс|[граупполицимигратионреадинесс](../resources/intune-gpanalyticsservice-grouppolicymigrationreadiness.md)|Область действия Intune для связанного файлового объекта групповой политики. Возможные значения: `none`, `partial`, `complete`, `error`, `notApplicable`.|
-|таржетединактиведиректори|Логический|Свойство Targeted в Active Directory из XML-контента объекта групповой политики|
+|мигратионреадинесс|[groupPolicyMigrationReadiness](../resources/intune-gpanalyticsservice-grouppolicymigrationreadiness.md)|Область действия Intune для связанного файлового объекта групповой политики. Возможные значения: `none`, `partial`, `complete`, `error`, `notApplicable`.|
+|таржетединактиведиректори|Boolean|Свойство Targeted в Active Directory из XML-контента объекта групповой политики|
 |тоталсеттингскаунт|Int32|Общее количество параметров групповой политики из файла GPO.|
 |суппортедсеттингскаунт|Int32|Количество параметров групповой политики, поддерживаемых Intune.|
 |суппортедсеттингсперцент|Int32|Процент параметров групповой политики, поддерживаемых Intune.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [граупполицимигратионрепорт](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -95,7 +95,7 @@ Content-length: 544
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -118,7 +118,6 @@ Content-Length: 716
   "supportedSettingsPercent": 8
 }
 ```
-
 
 
 

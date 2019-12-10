@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 295b0b60b7910ef1dbb10fd5733de8f89369808e
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 3528cc2da190464ddfd60a013440ae9cd21c9d6b
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37536660"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39938735"
 ---
 # <a name="create-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus"></a>Создание Виндовсдефендераппликатионконтролсупплементалполицидеплойментстатус
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание нового объекта [виндовсдефендераппликатионконтролсупплементалполицидеплойментстатус](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus.md) .
 
@@ -27,7 +27,7 @@ ms.locfileid: "37536660"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -38,13 +38,13 @@ ms.locfileid: "37536660"
 POST /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationControlSupplementalPolicyId}/deviceStatuses
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Виндовсдефендераппликатионконтролсупплементалполицидеплойментстатус в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Виндовсдефендераппликатионконтролсупплементалполицидеплойментстатус.
@@ -53,18 +53,18 @@ POST /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationCo
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |deviceName|String|Имя устройства.|
-|deviceId|String|ИДЕНТИФИКАТОР устройства.|
+|deviceId|Строка|ИДЕНТИФИКАТОР устройства.|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации.|
-|osVersion|String|Версия ОС Windows.|
-|osDescription|String|Описание версии ОС Windows.|
-|деплойментстатус|[виндовсдефендераппликатионконтролсупплементалполицистатусес](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicystatuses.md)|Состояние развертывания политики. Возможные значения: `unknown`, `success`, `tokenError`, `notAuthorizedByToken`, `policyNotFound`.|
+|osVersion|Строка|Версия ОС Windows.|
+|osDescription|Строка|Описание версии ОС Windows.|
+|деплойментстатус|[windowsDefenderApplicationControlSupplementalPolicyStatuses](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicystatuses.md)|Состояние развертывания политики. Возможные значения: `unknown`, `success`, `tokenError`, `notAuthorizedByToken`, `policyNotFound`.|
 |userName|String|Имя пользователя этого устройства.|
 |userPrincipalName|String|Имя участника пользователя.|
-|полициверсион|String|Доступная для человека версия дополнительной политики Виндовсдефендераппликатионконтрол.|
+|полициверсион|Строка|Доступная для человека версия дополнительной политики Виндовсдефендераппликатионконтрол.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [виндовсдефендераппликатионконтролсупплементалполицидеплойментстатус](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -91,7 +91,7 @@ Content-length: 486
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -111,7 +111,6 @@ Content-Length: 535
   "policyVersion": "Policy Version value"
 }
 ```
-
 
 
 

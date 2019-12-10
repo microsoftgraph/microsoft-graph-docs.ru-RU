@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 52c5b9af710461524658c4ce5ac7a3b33099c68f
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: fbe8cf278607269e1e70d11c305604a414f02cc2
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37191381"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39942067"
 ---
 # <a name="create-windowsinformationprotectionwipeaction"></a>Создание Виндовсинформатионпротектионвипеактион
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание нового объекта [виндовсинформатионпротектионвипеактион](../resources/intune-mam-windowsinformationprotectionwipeaction.md) .
 
@@ -38,7 +38,7 @@ ms.locfileid: "37191381"
 POST /deviceAppManagement/windowsInformationProtectionWipeActions
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -51,17 +51,17 @@ POST /deviceAppManagement/windowsInformationProtectionWipeActions
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |status|[actionState](../resources/intune-shared-actionstate.md)|Состояние действия очистки. Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|таржетедусерид|String.|UserId, целевой для этого действия очистки.|
-|таржетеддевицерегистратионид|String.|Девицерегистратионид, предназначенный для этого действия очистки.|
-|таржетеддевиценаме|String.|Имя целевого устройства.|
-|таржетеддевицемакаддресс|String.|Mac-адрес целевого устройства.|
+|таржетедусерид|Строка|UserId, целевой для этого действия очистки.|
+|таржетеддевицерегистратионид|Строка|Девицерегистратионид, предназначенный для этого действия очистки.|
+|таржетеддевиценаме|Строка|Имя целевого устройства.|
+|таржетеддевицемакаддресс|Строка|Mac-адрес целевого устройства.|
 |ластчеккиндатетиме|DateTimeOffset|Время последнего возврата устройства, которое было назначено для этого действия очистки.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [виндовсинформатионпротектионвипеактион](../resources/intune-mam-windowsinformationprotectionwipeaction.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -85,7 +85,7 @@ Content-length: 412
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -102,6 +102,7 @@ Content-Length: 461
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
+
 
 
 

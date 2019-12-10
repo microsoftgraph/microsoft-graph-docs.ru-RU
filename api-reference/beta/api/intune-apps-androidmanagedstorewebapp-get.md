@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4579c4e765432ce084f0c79b5f4b650bae24798d
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 1263f2b0f6166fd51ac717a84769be0b5d14cdc1
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38085432"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39926448"
 ---
 # <a name="get-androidmanagedstorewebapp"></a>Получение Андроидманажедсторевебапп
 
@@ -49,7 +49,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -108,7 +108,6 @@ Content-Length: 1244
   }
 }
 ```
-
 
 
 

@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ee067956db1e078f05ce6bf3342dae648cad5bff
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 0559c055e47079ff0054c48dc049a920d98f6de1
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37189846"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39941339"
 ---
 # <a name="create-deviceappmanagementtask"></a>Создание Девицеаппманажементтаск
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание нового объекта [девицеаппманажементтаск](../resources/intune-partnerintegration-deviceappmanagementtask.md) .
 
@@ -38,7 +38,7 @@ ms.locfileid: "37189846"
 POST /deviceAppManagement/deviceAppManagementTasks
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -51,17 +51,17 @@ POST /deviceAppManagement/deviceAppManagementTasks
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String.|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |displayName|Строка|Имя.|
 |description|String|Описание.|
 |createdDateTime|DateTimeOffset|Дата создания.|
 |dueDateTime|DateTimeOffset|Дата выполнения.|
-|category|[девицеаппманажементтасккатегори](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|Категория. Возможные значения: `unknown`, `advancedThreatProtection`.|
-|priority|[девицеаппманажементтаскприорити](../resources/intune-partnerintegration-deviceappmanagementtaskpriority.md)|Приоритет. Возможные значения: `none`, `high`, `low`.|
-|модуль|String.|Адрес электронной почты создателя.|
-|креаторнотес|String.|Заметки автора.|
+|category|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|Категория. Возможные значения: `unknown`, `advancedThreatProtection`.|
+|priority|[deviceAppManagementTaskPriority](../resources/intune-partnerintegration-deviceappmanagementtaskpriority.md)|Приоритет. Возможные значения: `none`, `high`, `low`.|
+|модуль|Строка|Адрес электронной почты создателя.|
+|креаторнотес|Строка|Заметки автора.|
 |assignedTo|String|Имя или электронная почта администратора, которому назначена эта задача.|
-|status|[девицеаппманажементтаскстатус](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|Состояние. Возможные значения: `unknown`, `pending`, `active`, `completed`, `rejected`.|
+|status|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|Состояние. Возможные значения: `unknown`, `pending`, `active`, `completed`, `rejected`.|
 
 
 
@@ -92,7 +92,7 @@ Content-length: 400
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -113,6 +113,7 @@ Content-Length: 508
   "status": "pending"
 }
 ```
+
 
 
 

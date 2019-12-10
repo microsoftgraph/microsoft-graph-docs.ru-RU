@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 65d07aa7de3882ec428fb959785faba3bf93d6c6
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 205c0a147b0f84bf1910f586c9c424c3f88c42d8
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37184701"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39943637"
 ---
 # <a name="update-windowsautopilotsettings"></a>Обновление windowsAutopilotSettings
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойств объекта [windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md) .
 
@@ -38,7 +38,7 @@ ms.locfileid: "37184701"
 PATCH /deviceManagement/windowsAutopilotSettings
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -51,7 +51,7 @@ PATCH /deviceManagement/windowsAutopilotSettings
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|GUID объекта|
+|id|Строка|GUID объекта|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации данных в службе DDS.|
 |ластмануалсинктригжердатетиме|DateTimeOffset|Дата и время последней синхронизации данных в службе DDS.|
 |syncStatus|[виндовсаутопилотсинкстатус](../resources/intune-enrollment-windowsautopilotsyncstatus.md)|Указывает состояние синхронизации со службой синхронизации данных устройств (DDS). Возможные значения: `unknown`, `inProgress`, `completed`, `failed`.|
@@ -79,7 +79,7 @@ Content-length: 230
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -93,6 +93,7 @@ Content-Length: 279
   "syncStatus": "inProgress"
 }
 ```
+
 
 
 

@@ -5,18 +5,18 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 15a86ff2da9b019eb63196ca7fae3d9a0e272b5c
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 695ef53c26d2eabf119c88084f9698a8db3bd3b2
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37170877"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39930774"
 ---
 # <a name="updatepriorities-action"></a>Действие updatePriorities
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление приоритетов политики.
 
@@ -38,7 +38,7 @@ ms.locfileid: "37170877"
 POST /officeConfiguration/clientConfigurations/microsoft.management.services.api.updatePriorities
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -80,10 +80,11 @@ Content-length: 143
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 ```
+
 
 
 

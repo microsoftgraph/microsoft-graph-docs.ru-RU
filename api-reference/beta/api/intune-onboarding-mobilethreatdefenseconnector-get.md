@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f99864dea38a8e00e46810392c6a98b298479143
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 0239a5938bfc7e23fd498f182bc4b028bfb2ee84
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38086601"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39941633"
 ---
 # <a name="get-mobilethreatdefenseconnector"></a>Получение объекта mobileThreatDefenseConnector
 
@@ -47,7 +47,7 @@ GET /deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnecto
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -90,7 +90,6 @@ Content-Length: 828
   }
 }
 ```
-
 
 
 

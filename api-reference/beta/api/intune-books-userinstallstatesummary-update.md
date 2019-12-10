@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f633e4bf5f1abbc990e49d70f18f211425ca4f54
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 2425dcf85ec210a4934a61e52ac3e02979c45157
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37170940"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39930802"
 ---
 # <a name="update-userinstallstatesummary"></a>Обновление объекта userInstallStateSummary
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойств объекта [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md).
 
@@ -38,7 +38,7 @@ ms.locfileid: "37170940"
 PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userInstallStateSummaryId}
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -51,7 +51,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |userName|String|Имя пользователя.|
 |installedDeviceCount|Int32|Количество установленных устройств.|
 |failedDeviceCount|Int32|Количество устройств со сбоями.|
@@ -81,7 +81,7 @@ Content-length: 189
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -96,6 +96,7 @@ Content-Length: 238
   "notInstalledDeviceCount": 7
 }
 ```
+
 
 
 

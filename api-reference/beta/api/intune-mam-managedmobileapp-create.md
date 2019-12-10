@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9cbb3874028561cd706ae2f37eb536deb330b81b
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 07259080e3d72f32b0cbc2e2659bf1646317f7ad
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37193075"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39942284"
 ---
 # <a name="create-managedmobileapp"></a>Создание объекта managedMobileApp
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание объекта [managedMobileApp](../resources/intune-mam-managedmobileapp.md).
 
@@ -41,7 +41,7 @@ POST /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtect
 POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppConfigurationId}/apps
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -55,7 +55,7 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|Идентификатор приложения с типом его операционной системы.|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |version|String|Версия объекта.|
 
 
@@ -82,7 +82,7 @@ Content-length: 181
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -97,6 +97,7 @@ Content-Length: 230
   "version": "Version value"
 }
 ```
+
 
 
 

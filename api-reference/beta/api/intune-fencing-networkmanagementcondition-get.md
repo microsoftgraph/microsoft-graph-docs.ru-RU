@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9bd922d86022528c191ef3eeb15692ce4372c4bd
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 4927215de03a5d068b85160771f24e1bac721428
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087126"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39943328"
 ---
 # <a name="get-networkmanagementcondition"></a>Получение Нетворкманажементкондитион
 
@@ -48,7 +48,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -85,7 +85,6 @@ Content-Length: 475
   }
 }
 ```
-
 
 
 

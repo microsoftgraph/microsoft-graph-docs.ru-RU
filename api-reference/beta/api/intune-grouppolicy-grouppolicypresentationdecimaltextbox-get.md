@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3051fdbe440d9f98032ca561ed85aa47bb90f541
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 8c91830d374ed509bdb62ebcc4373c2ce42cba5a
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087014"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39942999"
 ---
 # <a name="get-grouppolicypresentationdecimaltextbox"></a>Получение ГраупполиципресентатиондеЦималтекстбокс
 
@@ -48,7 +48,7 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -84,7 +84,6 @@ Content-Length: 373
   }
 }
 ```
-
 
 
 

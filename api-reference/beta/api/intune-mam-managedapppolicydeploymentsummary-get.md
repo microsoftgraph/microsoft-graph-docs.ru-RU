@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9451725cbe6fc703608b6f41d7adcffa0e57a14d
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 36c2aaa822b25935555a751f71d999fae09bee91
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38086839"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39942393"
 ---
 # <a name="get-managedapppolicydeploymentsummary"></a>Получение объекта managedAppPolicyDeploymentSummary
 
@@ -50,7 +50,7 @@ GET /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCon
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -92,7 +92,6 @@ Content-Length: 688
   }
 }
 ```
-
 
 
 

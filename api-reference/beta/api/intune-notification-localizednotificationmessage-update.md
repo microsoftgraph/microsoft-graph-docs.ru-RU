@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3ce594b97678990a8f8b082929235dd9e1406537
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 230473ddaa8ebba8473ae175df0681c14d14d1e8
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37191209"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39942004"
 ---
 # <a name="update-localizednotificationmessage"></a>Обновление объекта localizedNotificationMessage
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойств объекта [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md).
 
@@ -38,7 +38,7 @@ ms.locfileid: "37191209"
 PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages/{localizedNotificationMessageId}
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -53,7 +53,7 @@ PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplat
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|locale|String.|Языковой стандарт, для которого предназначено сообщение.|
+|locale|Строка|Языковой стандарт, для которого предназначено сообщение.|
 |subject|String|Тема шаблона сообщения.|
 |messageTemplate|String|Содержимое шаблона сообщения.|
 |isDefault|Boolean|Флаг, указывающий, используется ли этот языковой стандарт в качестве базового языка. Можно устанавливать только этот флаг. Чтобы снять его, задайте этому свойству значение true для другого локализованного сообщения уведомления.|
@@ -82,7 +82,7 @@ Content-length: 200
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -98,6 +98,7 @@ Content-Length: 313
   "isDefault": true
 }
 ```
+
 
 
 

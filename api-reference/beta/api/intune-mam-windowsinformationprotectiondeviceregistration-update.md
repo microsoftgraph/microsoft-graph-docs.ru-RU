@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 382cd6016b71c29ea9187d534800a4d7575b92b2
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 49a06d3e90a778b404196f152b705d171749621a
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37191444"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39942116"
 ---
 # <a name="update-windowsinformationprotectiondeviceregistration"></a>Обновление Виндовсинформатионпротектиондевицерегистратион
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойств объекта [виндовсинформатионпротектиондевицерегистратион](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) .
 
@@ -38,7 +38,7 @@ ms.locfileid: "37191444"
 PATCH /deviceAppManagement/windowsInformationProtectionDeviceRegistrations/{windowsInformationProtectionDeviceRegistrationId}
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -56,12 +56,12 @@ PATCH /deviceAppManagement/windowsInformationProtectionDeviceRegistrations/{wind
 |deviceRegistrationId|Строка|Идентификатор устройства для записи регистрации этого устройства.|
 |deviceName|String|Имя устройства.|
 |deviceType|String|Тип устройства, например Windows для портативного компьютера Windows и Windows Phone.|
-|девицемакаддресс|String.|Mac-адрес устройства.|
+|девицемакаддресс|Строка|Mac-адрес устройства.|
 |ластчеккиндатетиме|DateTimeOffset|Время последнего возврата устройства.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [виндовсинформатионпротектиондевицерегистратион](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -85,7 +85,7 @@ Content-length: 366
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -102,6 +102,7 @@ Content-Length: 415
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
+
 
 
 

@@ -5,18 +5,18 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4f66ced057c87fc061588cccc9515c477ad99b64
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 4a9befac2a3f15fe3bec3b36a5846872a31ef3f5
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37170779"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39930438"
 ---
 # <a name="update-officeclientconfigurationassignment"></a>Обновление Оффицеклиентконфигуратионассигнмент
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойств объекта [оффицеклиентконфигуратионассигнмент](../resources/intune-cirrus-officeclientconfigurationassignment.md) .
 
@@ -38,7 +38,7 @@ ms.locfileid: "37170779"
 PATCH /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assignments/{officeClientConfigurationAssignmentId}
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -51,7 +51,7 @@ PATCH /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/as
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Пока не задокументировано.|
+|id|Строка|Пока не задокументировано.|
 |target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|Пока нет описания|
 
 
@@ -76,7 +76,7 @@ Content-length: 98
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -90,6 +90,7 @@ Content-Length: 221
   }
 }
 ```
+
 
 
 

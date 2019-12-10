@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a9831913e308ac04553bb6ecd9cc342aecbcd92a
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: b6363af3c96923a1d2a91815e0c257ff496fcda4
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37171388"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39932028"
 ---
 # <a name="create-deviceinstallstate"></a>Создание объекта deviceInstallState
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание объекта [deviceInstallState](../resources/intune-books-deviceinstallstate.md).
 
@@ -39,7 +39,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/deviceStates
 POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userInstallStateSummaryId}/deviceStates
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -52,14 +52,14 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userI
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|deviceName|String.|Имя устройства.|
-|deviceId|String.|Идентификатор устройства.|
+|id|Строка|Ключ объекта.|
+|deviceName|Строка|Имя устройства.|
+|deviceId|Строка|Идентификатор устройства.|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации.|
 |installState|[installState](../resources/intune-books-installstate.md)|Состояние установки электронной книги. Возможные значения: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
-|errorCode|String.|Код ошибки для сбоев при установке.|
-|osVersion|String.|Версия ОС.|
-|osDescription|String.|Описание ОС.|
+|errorCode|Строка|Код ошибки для сбоев при установке.|
+|osVersion|Строка|Версия ОС.|
+|osDescription|Строка|Описание ОС.|
 |userName|String|Имя пользователя устройства.|
 
 
@@ -90,7 +90,7 @@ Content-length: 374
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -109,6 +109,7 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
+
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3662efdfe7d675cd7d256c9fb7c1fcbbd49c4cf8
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: f9f65b8cefc35cea3f44f783b4a4e634c419d7c2
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38086797"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39942270"
 ---
 # <a name="get-managedmobileapp"></a>Получение объекта managedMobileApp
 
@@ -50,7 +50,7 @@ GET /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCon
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -82,7 +82,6 @@ Content-Length: 261
   }
 }
 ```
-
 
 
 

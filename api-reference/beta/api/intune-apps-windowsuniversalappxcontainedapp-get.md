@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ec7ebc1e015b5c81a5822fd0e7408f96096aa19
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 3e4d2832833573634d243aa5a3188204bedb7eaa
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38085171"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39932364"
 ---
 # <a name="get-windowsuniversalappxcontainedapp"></a>Получение Виндовсуниверсалаппксконтаинедапп
 
@@ -49,7 +49,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnivers
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -78,7 +78,6 @@ Content-Length: 196
   }
 }
 ```
-
 
 
 
