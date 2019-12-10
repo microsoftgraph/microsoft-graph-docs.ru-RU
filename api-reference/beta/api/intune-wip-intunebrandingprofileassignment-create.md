@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dd4799d5066b57a60b3a59a2398fb79bbb8c3881
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: b7d2ef145627d981f3cd2728eb18549b4ed64c6f
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37195246"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39938469"
 ---
-# <a name="create-intunebrandingprofileassignment"></a><span data-ttu-id="ec794-103">Создание Интунебрандингпрофилеассигнмент</span><span class="sxs-lookup"><span data-stu-id="ec794-103">Create intuneBrandingProfileAssignment</span></span>
+# <a name="create-intunebrandingprofileassignment"></a><span data-ttu-id="63a62-103">Создание Интунебрандингпрофилеассигнмент</span><span class="sxs-lookup"><span data-stu-id="63a62-103">Create intuneBrandingProfileAssignment</span></span>
 
-> <span data-ttu-id="ec794-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ec794-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="63a62-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="63a62-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="ec794-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="ec794-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="63a62-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="63a62-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="ec794-106">Создание нового объекта [интунебрандингпрофилеассигнмент](../resources/intune-wip-intunebrandingprofileassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="ec794-106">Create a new [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) object.</span></span>
+<span data-ttu-id="63a62-106">Создание нового объекта [интунебрандингпрофилеассигнмент](../resources/intune-wip-intunebrandingprofileassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="63a62-106">Create a new [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="ec794-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="ec794-107">Prerequisites</span></span>
-<span data-ttu-id="ec794-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ec794-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="63a62-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="63a62-107">Prerequisites</span></span>
+<span data-ttu-id="63a62-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="63a62-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ec794-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ec794-110">Permission type</span></span>|<span data-ttu-id="ec794-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="ec794-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="63a62-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="63a62-110">Permission type</span></span>|<span data-ttu-id="63a62-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="63a62-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="ec794-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ec794-112">Delegated (work or school account)</span></span>|<span data-ttu-id="ec794-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ec794-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="ec794-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ec794-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ec794-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ec794-115">Not supported.</span></span>|
-|<span data-ttu-id="ec794-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ec794-116">Application</span></span>|<span data-ttu-id="ec794-117">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ec794-117">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="63a62-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="63a62-112">Delegated (work or school account)</span></span>|<span data-ttu-id="63a62-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="63a62-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="63a62-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="63a62-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="63a62-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="63a62-115">Not supported.</span></span>|
+|<span data-ttu-id="63a62-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="63a62-116">Application</span></span>|<span data-ttu-id="63a62-117">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="63a62-117">DeviceManagementApps.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="ec794-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ec794-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="63a62-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="63a62-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,31 +38,31 @@ ms.locfileid: "37195246"
 POST /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assignments
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ec794-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ec794-119">Request headers</span></span>
-|<span data-ttu-id="ec794-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="ec794-120">Header</span></span>|<span data-ttu-id="ec794-121">Значение</span><span class="sxs-lookup"><span data-stu-id="ec794-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="63a62-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="63a62-119">Request headers</span></span>
+|<span data-ttu-id="63a62-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="63a62-120">Header</span></span>|<span data-ttu-id="63a62-121">Значение</span><span class="sxs-lookup"><span data-stu-id="63a62-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="ec794-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ec794-122">Authorization</span></span>|<span data-ttu-id="ec794-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ec794-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="ec794-124">Accept</span><span class="sxs-lookup"><span data-stu-id="ec794-124">Accept</span></span>|<span data-ttu-id="ec794-125">application/json</span><span class="sxs-lookup"><span data-stu-id="ec794-125">application/json</span></span>|
+|<span data-ttu-id="63a62-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="63a62-122">Authorization</span></span>|<span data-ttu-id="63a62-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="63a62-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="63a62-124">Accept</span><span class="sxs-lookup"><span data-stu-id="63a62-124">Accept</span></span>|<span data-ttu-id="63a62-125">application/json</span><span class="sxs-lookup"><span data-stu-id="63a62-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ec794-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="ec794-126">Request body</span></span>
-<span data-ttu-id="ec794-127">В тексте запроса добавьте представление объекта Интунебрандингпрофилеассигнмент в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ec794-127">In the request body, supply a JSON representation for the intuneBrandingProfileAssignment object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="63a62-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="63a62-126">Request body</span></span>
+<span data-ttu-id="63a62-127">В тексте запроса добавьте представление объекта Интунебрандингпрофилеассигнмент в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="63a62-127">In the request body, supply a JSON representation for the intuneBrandingProfileAssignment object.</span></span>
 
-<span data-ttu-id="ec794-128">В следующей таблице приведены свойства, необходимые при создании Интунебрандингпрофилеассигнмент.</span><span class="sxs-lookup"><span data-stu-id="ec794-128">The following table shows the properties that are required when you create the intuneBrandingProfileAssignment.</span></span>
+<span data-ttu-id="63a62-128">В следующей таблице приведены свойства, необходимые при создании Интунебрандингпрофилеассигнмент.</span><span class="sxs-lookup"><span data-stu-id="63a62-128">The following table shows the properties that are required when you create the intuneBrandingProfileAssignment.</span></span>
 
-|<span data-ttu-id="ec794-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="ec794-129">Property</span></span>|<span data-ttu-id="ec794-130">Тип</span><span class="sxs-lookup"><span data-stu-id="ec794-130">Type</span></span>|<span data-ttu-id="ec794-131">Описание</span><span class="sxs-lookup"><span data-stu-id="ec794-131">Description</span></span>|
+|<span data-ttu-id="63a62-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="63a62-129">Property</span></span>|<span data-ttu-id="63a62-130">Тип</span><span class="sxs-lookup"><span data-stu-id="63a62-130">Type</span></span>|<span data-ttu-id="63a62-131">Описание</span><span class="sxs-lookup"><span data-stu-id="63a62-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="ec794-132">id</span><span class="sxs-lookup"><span data-stu-id="ec794-132">id</span></span>|<span data-ttu-id="ec794-133">String</span><span class="sxs-lookup"><span data-stu-id="ec794-133">String</span></span>|<span data-ttu-id="ec794-134">Уникальный идентификатор объекта.</span><span class="sxs-lookup"><span data-stu-id="ec794-134">Unique identifier of the entity.</span></span>|
-|<span data-ttu-id="ec794-135">target</span><span class="sxs-lookup"><span data-stu-id="ec794-135">target</span></span>|[<span data-ttu-id="ec794-136">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="ec794-136">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="ec794-137">Цель назначения, которой назначен профиль фирменной символики.</span><span class="sxs-lookup"><span data-stu-id="ec794-137">Assignment target that the branding profile is assigned to.</span></span>|
+|<span data-ttu-id="63a62-132">id</span><span class="sxs-lookup"><span data-stu-id="63a62-132">id</span></span>|<span data-ttu-id="63a62-133">Строка</span><span class="sxs-lookup"><span data-stu-id="63a62-133">String</span></span>|<span data-ttu-id="63a62-134">Уникальный идентификатор объекта.</span><span class="sxs-lookup"><span data-stu-id="63a62-134">Unique identifier of the entity.</span></span>|
+|<span data-ttu-id="63a62-135">target</span><span class="sxs-lookup"><span data-stu-id="63a62-135">target</span></span>|[<span data-ttu-id="63a62-136">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="63a62-136">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="63a62-137">Цель назначения, которой назначен профиль фирменной символики.</span><span class="sxs-lookup"><span data-stu-id="63a62-137">Assignment target that the branding profile is assigned to.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="ec794-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="ec794-138">Response</span></span>
-<span data-ttu-id="ec794-139">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [интунебрандингпрофилеассигнмент](../resources/intune-wip-intunebrandingprofileassignment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="ec794-139">If successful, this method returns a `201 Created` response code and a [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="63a62-138">Ответ</span><span class="sxs-lookup"><span data-stu-id="63a62-138">Response</span></span>
+<span data-ttu-id="63a62-139">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [интунебрандингпрофилеассигнмент](../resources/intune-wip-intunebrandingprofileassignment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="63a62-139">If successful, this method returns a `201 Created` response code and a [intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ec794-140">Пример</span><span class="sxs-lookup"><span data-stu-id="ec794-140">Example</span></span>
+## <a name="example"></a><span data-ttu-id="63a62-140">Пример</span><span class="sxs-lookup"><span data-stu-id="63a62-140">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="ec794-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="ec794-141">Request</span></span>
-<span data-ttu-id="ec794-142">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ec794-142">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="63a62-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="63a62-141">Request</span></span>
+<span data-ttu-id="63a62-142">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="63a62-142">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assignments
 Content-type: application/json
@@ -76,8 +76,8 @@ Content-length: 171
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="ec794-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="ec794-143">Response</span></span>
-<span data-ttu-id="ec794-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ec794-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="63a62-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="63a62-143">Response</span></span>
+<span data-ttu-id="63a62-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="63a62-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -91,6 +91,7 @@ Content-Length: 220
   }
 }
 ```
+
 
 
 
