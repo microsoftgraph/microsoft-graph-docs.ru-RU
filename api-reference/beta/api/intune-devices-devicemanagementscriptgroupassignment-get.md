@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2c2edc45405a3a7146da68a7126ec74c35c44592
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 7908bbaad1f4007aafb5cc8aae86f87df6f4914b
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087526"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39944948"
 ---
 # <a name="get-devicemanagementscriptgroupassignment"></a>Получение Девицеманажементскриптграупассигнмент
 
@@ -35,6 +35,7 @@ ms.locfileid: "38087526"
 }
 -->
 ``` http
+GET /deviceManagement/deviceShellScripts/{deviceShellScriptId}/groupAssignments/{deviceManagementScriptGroupAssignmentId}
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupAssignments/{deviceManagementScriptGroupAssignmentId}
 ```
 
@@ -47,7 +48,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupAs
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -58,7 +59,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupAs
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupAssignments/{deviceManagementScriptGroupAssignmentId}
+GET https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{deviceShellScriptId}/groupAssignments/{deviceManagementScriptGroupAssignmentId}
 ```
 
 ### <a name="response"></a>Отклик
@@ -76,7 +77,6 @@ Content-Length: 198
   }
 }
 ```
-
 
 
 

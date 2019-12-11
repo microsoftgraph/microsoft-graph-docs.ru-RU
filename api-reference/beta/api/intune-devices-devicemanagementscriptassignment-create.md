@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b49e7bf01da35dd9d8280b87d1062ed0213b2e04
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: ce87e66064d5aaf5e3f27fb1292c71352767ac62
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087554"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39945032"
 ---
 # <a name="create-devicemanagementscriptassignment"></a>Создание Девицеманажементскриптассигнмент
 
@@ -35,6 +35,7 @@ ms.locfileid: "38087554"
 }
 -->
 ``` http
+POST /deviceManagement/deviceShellScripts/{deviceShellScriptId}/assignments
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assignments
 ```
 
@@ -44,19 +45,19 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assign
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Девицеманажементскриптассигнмент в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицеманажементскриптассигнмент.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта назначения группы сценариев управления устройствами. Это свойство доступно только для чтения.|
+|id|Строка|Ключ объекта назначения группы сценариев управления устройствами. Это свойство доступно только для чтения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Идентификатор группы Azure Active Directory, на которую ориентирован сценарий.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементскриптассигнмент](../resources/intune-devices-devicemanagementscriptassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -64,7 +65,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assign
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assignments
+POST https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{deviceShellScriptId}/assignments
 Content-type: application/json
 Content-length: 172
 
@@ -91,7 +92,6 @@ Content-Length: 221
   }
 }
 ```
-
 
 
 

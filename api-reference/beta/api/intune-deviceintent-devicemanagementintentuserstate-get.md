@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3fc73b4263911d8b63263d5f3944afc9dfa1ac07
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 3f9e510a842d591869771fb59e19c4878b0c2d8e
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087722"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39945657"
 ---
 # <a name="get-devicemanagementintentuserstate"></a>Получение Девицеманажементинтентусерстате
 
@@ -47,7 +47,7 @@ GET /deviceManagement/intents/{deviceManagementIntentId}/userStates/{deviceManag
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -80,7 +80,6 @@ Content-Length: 357
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 754ae33fb5b4837d0e23628fe738de68583c26da
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: aadfb3ea8d961f8da8f8e7bcc34f6c8d84b20321
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087652"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39945356"
 ---
 # <a name="get-securitybaselinestatesummary"></a>Получение Секуритибаселинестатесуммари
 
@@ -47,7 +47,7 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.sec
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -81,7 +81,6 @@ Content-Length: 297
   }
 }
 ```
-
 
 
 

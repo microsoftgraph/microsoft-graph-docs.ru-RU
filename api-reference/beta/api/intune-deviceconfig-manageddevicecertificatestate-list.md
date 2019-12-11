@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9ea70082446cd5ff4d302266dfd54926c9c3e93c
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: cc664ea56d64a19f070cdbde3544d327fa4ceeac
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38083188"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39947941"
 ---
 # <a name="list-manageddevicecertificatestates"></a>Список Manageddevicecertificatestates к объекту
 
@@ -63,7 +63,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -117,7 +117,6 @@ Content-Length: 1703
   ]
 }
 ```
-
 
 
 

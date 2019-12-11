@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ddbd6d13692d720fa5888cc7fb2e28d190de5dd4
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 319f0b76ea65980cec6d07f809d9c3b08be96889
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087785"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39946065"
 ---
 # <a name="get-devicemanagementcomplexsettingdefinition"></a>Получение Девицеманажементкомплекссеттингдефинитион
 
@@ -50,7 +50,7 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/categories/{deviceM
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -105,7 +105,6 @@ Content-Length: 934
   }
 }
 ```
-
 
 
 

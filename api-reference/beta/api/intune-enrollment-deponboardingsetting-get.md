@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 25d42a20e084e4ca6d4684663defcf9d056a2a88
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: c86b20f297b454f124db7e0c14d562f2fb6944d9
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087287"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39943917"
 ---
 # <a name="get-deponboardingsetting"></a>Получение depOnboardingSetting
 
@@ -47,7 +47,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -89,7 +89,6 @@ Content-Length: 740
   }
 }
 ```
-
 
 
 

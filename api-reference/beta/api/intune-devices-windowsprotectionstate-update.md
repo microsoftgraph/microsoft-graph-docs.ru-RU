@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 74824bbc5c066d0e3df398786e5163642b64707a
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 4c64d51e88bc4e4bcff7baf5214f61e094b7ff53
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37187990"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39944204"
 ---
 # <a name="update-windowsprotectionstate"></a>Обновление windowsProtectionState
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойств объекта [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) .
 
@@ -39,7 +39,7 @@ PATCH /deviceManagement/windowsMalwareInformation/{windowsMalwareInformationId}/
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/windowsProtectionState
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -52,28 +52,28 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для объекта состояния защиты устройства. Это идентификатор устройства для устройства.|
-|малварепротектионенаблед|Boolean.|Защита от вредоносных программ включена или нет|
+|id|Строка|Уникальный идентификатор для объекта состояния защиты устройства. Это идентификатор устройства для устройства.|
+|малварепротектионенаблед|Boolean|Защита от вредоносных программ включена или нет|
 |девицестате|[виндовсдевицехеалсстате](../resources/intune-devices-windowsdevicehealthstate.md)|Состояние компьютера (например, очистка или ожидание полного сканирования или Ожидание перезагрузки и т. д.). Возможные значения: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
-|реалтимепротектионенаблед|Boolean.|Защита в режиме реального времени включена или нет?|
-|нетворкинспектионсистеменаблед|Boolean.|Система проверки сети включена или нет?|
-|куиккскановердуе|Boolean.|Быстрая проверка просрочена или нет?|
-|фуллскановердуе|Boolean.|Полная проверка просрочена или нет?|
-|сигнатуреупдатеовердуе|Boolean.|Подпись устарела или нет?|
-|ребутрекуиред|Boolean.|Требуется перезагрузка или нет?|
-|фуллсканрекуиред|Boolean.|Необходима полная проверка или нет?|
-|енгиневерсион|String.|Текущая версия модуля Endpoint Protection|
-|сигнатуреверсион|String.|Текущая версия определений вредоносных программ|
-|антималвареверсион|String.|Текущая версия защиты от вредоносных программ|
+|реалтимепротектионенаблед|Boolean|Защита в режиме реального времени включена или нет?|
+|нетворкинспектионсистеменаблед|Boolean|Система проверки сети включена или нет?|
+|куиккскановердуе|Boolean|Быстрая проверка просрочена или нет?|
+|фуллскановердуе|Boolean|Полная проверка просрочена или нет?|
+|сигнатуреупдатеовердуе|Boolean|Подпись устарела или нет?|
+|ребутрекуиред|Boolean|Требуется перезагрузка или нет?|
+|фуллсканрекуиред|Boolean|Необходима полная проверка или нет?|
+|енгиневерсион|Строка|Текущая версия модуля Endpoint Protection|
+|сигнатуреверсион|Строка|Текущая версия определений вредоносных программ|
+|антималвареверсион|Строка|Текущая версия защиты от вредоносных программ|
 |ласткуиккскандатетиме|DateTimeOffset|Дата и время последнего быстрого сканирования|
 |ластфуллскандатетиме|DateTimeOffset|Дата и время последнего быстрого сканирования|
-|ласткуиккскансигнатуреверсион|String.|Последняя версия подписи быстрого сканирования|
-|ластфуллскансигнатуреверсион|String.|Версия последней полной проверки подписи|
+|ласткуиккскансигнатуреверсион|Строка|Последняя версия подписи быстрого сканирования|
+|ластфуллскансигнатуреверсион|Строка|Версия последней полной проверки подписи|
 |lastReportedDateTime|DateTimeOffset|Последнее состояние работоспособности устройства в отчете о времени|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -108,7 +108,7 @@ Content-length: 865
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -136,6 +136,7 @@ Content-Length: 914
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
+
 
 
 

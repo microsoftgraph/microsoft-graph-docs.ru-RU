@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9fdcf87ad8608f62eacfc6889c24c515f1a2d617
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: dfc8bd930f29f669a41163c8e32763972f33f5a6
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37185478"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39944008"
 ---
 # <a name="update-depenrollmentprofile"></a>Обновление depEnrollmentProfile
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойств объекта [depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md) .
 
@@ -38,7 +38,7 @@ ms.locfileid: "37185478"
 PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles/{enrollmentProfileId}
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -54,38 +54,38 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmen
 |id|String|GUID объекта, наследуемого от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
 |displayName|Строка|Имя профиля, унаследованного от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
 |description|String|Описание профиля, унаследованного от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
-|рекуиресусераусентикатион|Boolean.|Указывает, требуется ли для профиля проверка подлинности пользователей, унаследованных от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
-|конфигуратионендпоинтурл|String.|URL-адрес конечной точки конфигурации, используемый для регистрации, унаследованный от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
-|enableAuthenticationViaCompanyPortal|Boolean.|Указывает на проверку подлинности с помощью помощника по настройке Apple, а не корпоративного портала. Наследуется от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
-|рекуирекомпанипорталонсетупассистантенролледдевицес|Boolean.|Указывает, что корпоративный портал необходим на зарегистрированных устройствах помощника по настройке, наследуемых от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
+|рекуиресусераусентикатион|Boolean|Указывает, требуется ли для профиля проверка подлинности пользователей, унаследованных от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
+|конфигуратионендпоинтурл|Строка|URL-адрес конечной точки конфигурации, используемый для регистрации, унаследованный от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
+|enableAuthenticationViaCompanyPortal|Boolean|Указывает на проверку подлинности с помощью помощника по настройке Apple, а не корпоративного портала. Наследуется от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
+|рекуирекомпанипорталонсетупассистантенролледдевицес|Boolean|Указывает, что корпоративный портал необходим на зарегистрированных устройствах помощника по настройке, наследуемых от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Boolean|Указывает, является ли этот профиль профилем по умолчанию|
-|супервиседмодинаблед|Boolean.|Защищенный режим, true для включения, false в противном случае. Дополнительную https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune информацию можно узнать в статье.|
-|суппортдепартмент|String.|Сведения о отделе поддержки|
-|пасскодедисаблед|Boolean.|Указывает, отключена ли область настройки секретного кода|
-|Обязательный|Boolean.|Указывает, является ли профиль обязательной|
-|локатиондисаблед|Boolean.|Указывает, отключена ли область настройки службы расположения|
-|суппортфоненумбер|String.|Номер телефона службы поддержки|
+|супервиседмодинаблед|Boolean|Защищенный режим, true для включения, false в противном случае. Дополнительную https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune информацию можно узнать в статье.|
+|суппортдепартмент|Строка|Сведения о отделе поддержки|
+|пасскодедисаблед|Boolean|Указывает, отключена ли область настройки секретного кода|
+|Обязательный|Boolean|Указывает, является ли профиль обязательной|
+|локатиондисаблед|Boolean|Указывает, отключена ли область настройки службы расположения|
+|суппортфоненумбер|Строка|Номер телефона службы поддержки|
 |iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md).|Указывает режим связывания iTunes. Возможные значения: `disallow`, `allow`, `requiresCertificate`.|
-|профилеремовалдисаблед|Boolean.|Указывает, отключен ли параметр удаления профиля|
+|профилеремовалдисаблед|Boolean|Указывает, отключен ли параметр удаления профиля|
 |манажементцертификатес|Коллекция [манажементцертификатевиссумбпринт](../resources/intune-enrollment-managementcertificatewiththumbprint.md)|Сертификаты управления для конфигуратора Apple|
-|рестореблоккед|Boolean.|Указывает, заблокирована ли область настроек восстановления|
-|ресторефромандроиддисаблед|Boolean.|Указывает, отключено ли восстановление из Android|
-|апплеиддисаблед|Boolean.|Указывает, отключена ли область настройки Apple ID|
-|термсандкондитионсдисаблед|Boolean.|Указывает, отключена ли область установки "условия и условия"|
-|таучиддисаблед|Boolean.|Указывает, отключена ли панель настройки сенсорного экрана|
-|апплепайдисаблед|Boolean.|Указывает, отключена ли область настройки оплаты Apple|
-|зумдисаблед|Boolean.|Указывает, отключена ли область настройки масштабирования|
-|сиридисаблед|Boolean.|Указывает, отключена ли область настройки Siri|
-|диагностиксдисаблед|Boolean.|Указывает, отключена ли область настройки диагностики|
-|макосрегистратиондисаблед|Boolean.|Указывает, отключена ли регистрация Mac OS|
-|макосфилеваултдисаблед|Boolean.|Указывает, отключено ли хранилище файлов Mac OS|
-|аваитдевицеконфигуредконфирматион|Boolean.|Указывает, должно ли устройство ждать настройки подтверждения.|
+|рестореблоккед|Boolean|Указывает, заблокирована ли область настроек восстановления|
+|ресторефромандроиддисаблед|Boolean|Указывает, отключено ли восстановление из Android|
+|апплеиддисаблед|Boolean|Указывает, отключена ли область настройки Apple ID|
+|термсандкондитионсдисаблед|Boolean|Указывает, отключена ли область установки "условия и условия"|
+|таучиддисаблед|Boolean|Указывает, отключена ли панель настройки сенсорного экрана|
+|апплепайдисаблед|Boolean|Указывает, отключена ли область настройки оплаты Apple|
+|зумдисаблед|Boolean|Указывает, отключена ли область настройки масштабирования|
+|сиридисаблед|Boolean|Указывает, отключена ли область настройки Siri|
+|диагностиксдисаблед|Boolean|Указывает, отключена ли область настройки диагностики|
+|макосрегистратиондисаблед|Boolean|Указывает, отключена ли регистрация Mac OS|
+|макосфилеваултдисаблед|Boolean|Указывает, отключено ли хранилище файлов Mac OS|
+|аваитдевицеконфигуредконфирматион|Boolean|Указывает, должно ли устройство ждать настройки подтверждения.|
 |Свойства sharedipadmaximumusercount|Int32|Указывает максимальное количество пользователей, которые могут использовать общий iPad. Относится только к общему режиму iPad.|
-|Enablesharedipad к|Boolean.|Указывает, следует ли зарегистрировать устройство в режиме, позволяющем использовать сценарии с несколькими пользователями. Применяется только в общих iPad.|
+|Enablesharedipad к|Boolean|Указывает, следует ли зарегистрировать устройство в режиме, позволяющем использовать сценарии с несколькими пользователями. Применяется только в общих iPad.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -139,7 +139,7 @@ Content-length: 1354
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -186,6 +186,7 @@ Content-Length: 1403
   "enableSharedIPad": true
 }
 ```
+
 
 
 

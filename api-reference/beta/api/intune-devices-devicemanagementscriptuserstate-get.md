@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1882f6a836ef50c04306cec79fc4a41d0afcd6ff
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 31a98790e094ee7eb311ab92f0f7accd185796a6
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087512"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39944899"
 ---
 # <a name="get-devicemanagementscriptuserstate"></a>Получение Девицеманажементскриптусерстате
 
@@ -35,6 +35,7 @@ ms.locfileid: "38087512"
 }
 -->
 ``` http
+GET /deviceManagement/deviceShellScripts/{deviceShellScriptId}/userRunStates/{deviceManagementScriptUserStateId}
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRunStates/{deviceManagementScriptUserStateId}
 ```
 
@@ -47,7 +48,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRun
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -58,7 +59,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRun
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRunStates/{deviceManagementScriptUserStateId}
+GET https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{deviceShellScriptId}/userRunStates/{deviceManagementScriptUserStateId}
 ```
 
 ### <a name="response"></a>Отклик
@@ -78,7 +79,6 @@ Content-Length: 258
   }
 }
 ```
-
 
 
 

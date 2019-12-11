@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d11a20463b6421a3975fc516c219fc52b7813cc8
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: a8ad91d9e7d6a5e02d25e72528c62e71a145c37f
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37183739"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39947997"
 ---
 # <a name="create-managedalldevicecertificatestate"></a>Создание Манажедаллдевицецертификатестате
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание нового объекта [манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) .
 
@@ -38,7 +38,7 @@ ms.locfileid: "37183739"
 POST /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -53,20 +53,20 @@ POST /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |цертификатеревокестатус|[цертификатеревокатионстатус](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Отзыв состояния. Возможные значения: `none`, `pending`, `issued`, `failed`, `revoked`.|
-|манажеддевицедисплайнаме|String.|Отображаемое имя устройства|
+|манажеддевицедисплайнаме|Строка|Отображаемое имя устройства|
 |userPrincipalName|String|Имя субъекта-пользователя|
 |цертификатикспиратиондатетиме|DateTimeOffset|Дата окончания срока действия сертификата|
-|цертификатеиссуернаме|String.|Издатель|
-|certificateThumbprint|String.|Отпечаток|
-|цертификатесериалнумбер|String.|Серийный номер|
-|цертификатесубжектнаме|String.|Имя субъекта сертификата|
+|цертификатеиссуернаме|Строка|Издатель|
+|certificateThumbprint|Строка|Отпечаток|
+|цертификатесериалнумбер|Строка|Серийный номер|
+|цертификатесубжектнаме|Строка|Имя субъекта сертификата|
 |цертификатекэйусажес|Int32|Использование ключа|
-|цертификатикстендедкэйусажес|String.|Расширенное использование ключа|
+|цертификатикстендедкэйусажес|Строка|Расширенное использование ключа|
 |цертификатеиссуанцедатетиме|DateTimeOffset|Дата выпуска|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -95,7 +95,7 @@ Content-length: 735
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -117,6 +117,7 @@ Content-Length: 784
   "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
+
 
 
 

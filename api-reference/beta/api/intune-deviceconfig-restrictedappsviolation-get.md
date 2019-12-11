@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 93ef091f90a813888c7be68ec8f408e7bf167fea
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 87c0ff4faf0bb12de5ee905f508f8b8107f9c8fd
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38083069"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39947843"
 ---
 # <a name="get-restrictedappsviolation"></a>Получение Рестриктедаппсвиолатион
 
@@ -47,7 +47,7 @@ GET /deviceManagement/deviceConfigurationRestrictedAppsViolations/{restrictedApp
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -89,7 +89,6 @@ Content-Length: 664
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 67bd51ca2744dfd2fcb545fa098eaf10b4573848
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 3102c607b131fd08d9a47db04f417e5dfb504c83
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087456"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39944458"
 ---
 # <a name="get-userexperienceanalyticsdevicestartuphistory"></a>Получение Усерекспериенцеаналитиксдевицестартуфистори
 
@@ -47,7 +47,7 @@ GET /deviceManagement/userExperienceAnalyticsDeviceStartupHistory/{userExperienc
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 499
+Content-Length: 594
 
 {
   "value": {
@@ -81,11 +81,12 @@ Content-Length: 499
     "groupPolicyLoginTimeInMs": 8,
     "coreLoginTimeInMs": 1,
     "totalLoginTimeInMs": 2,
-    "isFirstLogin": true
+    "isFirstLogin": true,
+    "isFeatureUpdate": true,
+    "operatingSystemVersion": "Operating System Version value"
   }
 }
 ```
-
 
 
 

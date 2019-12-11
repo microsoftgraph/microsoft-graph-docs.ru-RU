@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5836b06ed73b418ad7ce499e02b4024c5e009b11
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: dd31f176fd67f2af7971d8af12d11894c012af93
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087561"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39945048"
 ---
 # <a name="get-devicehealthscriptrunsummary"></a>Получение Девицехеалсскриптрунсуммари
 
@@ -47,7 +47,7 @@ GET /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/runSummary
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{devic
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 538
+Content-Length: 586
 
 {
   "value": {
@@ -80,11 +80,11 @@ Content-Length: 538
     "remediationSkippedDeviceCount": 13,
     "issueReoccurredDeviceCount": 10,
     "remediationScriptErrorDeviceCount": 1,
-    "lastScriptRunDateTime": "2017-01-01T00:01:17.4310553-08:00"
+    "lastScriptRunDateTime": "2017-01-01T00:01:17.4310553-08:00",
+    "issueRemediatedCumulativeDeviceCount": 4
   }
 }
 ```
-
 
 
 

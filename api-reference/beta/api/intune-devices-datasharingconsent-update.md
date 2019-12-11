@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 65fd1a065beb29494bc371674b56c4c6dcfa98bb
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 6f0fafa578b115b1b3f9bce8feabae7181f522cd
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37180659"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39945209"
 ---
 # <a name="update-datasharingconsent"></a>Обновление Даташарингконсент
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойств объекта [даташарингконсент](../resources/intune-devices-datasharingconsent.md) .
 
@@ -38,7 +38,7 @@ ms.locfileid: "37180659"
 PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -51,17 +51,17 @@ PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор согласия общего доступа к данным|
-|сервицедисплайнаме|String.|Отображаемое имя рабочего процесса службы|
-|термсурл|String.|Термсурл для согласия общего доступа к данным|
-|granted|Boolean.|Состояние предоставления согласия на общий доступ к данным|
+|id|Строка|Идентификатор согласия общего доступа к данным|
+|сервицедисплайнаме|Строка|Отображаемое имя рабочего процесса службы|
+|термсурл|Строка|Термсурл для согласия общего доступа к данным|
+|granted|Boolean|Состояние предоставления согласия на общий доступ к данным|
 |грантдатетиме|DateTimeOffset|Для этой учетной записи предоставлено согласие по времени|
-|грантедбюпн|String.|Имя участника-пользователя, которому назначено согласие для этой учетной записи.|
-|грантедбюсерид|String.|UserId пользователя, который предоставил согласие для этой учетной записи|
+|грантедбюпн|Строка|Имя участника-пользователя, которому назначено согласие для этой учетной записи.|
+|грантедбюсерид|Строка|UserId пользователя, который предоставил согласие для этой учетной записи|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [даташарингконсент](../resources/intune-devices-datasharingconsent.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -85,7 +85,7 @@ Content-length: 333
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -102,6 +102,7 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
+
 
 
 

@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c075cf95945c635486fb3be0a13a2d97294e1bf9
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 4ac0fa1308c19b3ff394d8f33398a3430175b4b4
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37533216"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39947500"
 ---
 # <a name="list-windows10endpointprotectionconfigurations"></a>Перечисление объектов windows10EndpointProtectionConfiguration
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Перечисление свойств и связей объектов [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md).
 
@@ -27,7 +27,7 @@ ms.locfileid: "37533216"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -39,13 +39,13 @@ GET /deviceManagement/deviceConfigurations
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -60,11 +60,11 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 31513
+Content-Length: 33552
 
 {
   "value": [
@@ -748,12 +748,55 @@ Content-Length: 31513
         "requireEncryptionForWriteAccess": true,
         "blockCrossOrganizationWriteAccess": true
       },
-      "bitLockerRecoveryPasswordRotation": "disabled"
+      "bitLockerRecoveryPasswordRotation": "disabled",
+      "defenderDisableScanArchiveFiles": true,
+      "defenderDisableBehaviorMonitoring": true,
+      "defenderDisableCloudProtection": true,
+      "defenderEnableScanIncomingMail": true,
+      "defenderEnableScanMappedNetworkDrivesDuringFullScan": true,
+      "defenderDisableScanRemovableDrivesDuringFullScan": true,
+      "defenderDisableScanDownloads": true,
+      "defenderDisableIntrusionPreventionSystem": true,
+      "defenderDisableOnAccessProtection": true,
+      "defenderDisableRealTimeMonitoring": true,
+      "defenderDisableScanNetworkFiles": true,
+      "defenderDisableScanScriptsLoadedInInternetExplorer": true,
+      "defenderBlockEndUserAccess": true,
+      "defenderScanMaxCpuPercentage": 12,
+      "defenderCheckForSignaturesBeforeRunningScan": true,
+      "defenderCloudBlockLevel": "high",
+      "defenderCloudExtendedTimeoutInSeconds": 5,
+      "defenderDaysBeforeDeletingQuarantinedMalware": 12,
+      "defenderDisableCatchupFullScan": true,
+      "defenderDisableCatchupQuickScan": true,
+      "defenderEnableLowCpuPriority": true,
+      "defenderFileExtensionsToExclude": [
+        "Defender File Extensions To Exclude value"
+      ],
+      "defenderFilesAndFoldersToExclude": [
+        "Defender Files And Folders To Exclude value"
+      ],
+      "defenderProcessesToExclude": [
+        "Defender Processes To Exclude value"
+      ],
+      "defenderPotentiallyUnwantedAppAction": "enable",
+      "defenderScanDirection": "monitorIncomingFilesOnly",
+      "defenderScanType": "disabled",
+      "defenderScheduledQuickScanTime": "11:58:49.3840000",
+      "defenderScheduledScanDay": "everyday",
+      "defenderScheduledScanTime": "11:59:10.9990000",
+      "defenderSubmitSamplesConsentType": "alwaysPrompt",
+      "defenderDetectedMalwareActions": {
+        "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
+        "lowSeverity": "clean",
+        "moderateSeverity": "clean",
+        "highSeverity": "clean",
+        "severeSeverity": "clean"
+      }
     }
   ]
 }
 ```
-
 
 
 

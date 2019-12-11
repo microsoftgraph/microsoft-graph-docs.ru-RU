@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 456608c6b5f9de7eaa60245d564dddcb69db6e4e
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 5ef301413d4e233b2898dbf8cc6666ad39be5a92
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087477"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39944549"
 ---
 # <a name="get-userexperienceanalyticsbaseline"></a>Получение Усерекспериенцеаналитиксбаселине
 
@@ -47,7 +47,7 @@ GET /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsB
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -79,7 +79,6 @@ Content-Length: 297
   }
 }
 ```
-
 
 
 

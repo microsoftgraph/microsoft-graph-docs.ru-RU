@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a5846ae86e5bf553ce3699652b8cab29f42a6f43
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 5634a4e1f123239b087c48322fc8147c0e53ff89
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087610"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39945146"
 ---
 # <a name="get-devicehealthscript"></a>Получение Девицехеалсскрипт
 
@@ -47,7 +47,7 @@ GET /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -89,7 +89,6 @@ Content-Length: 706
   }
 }
 ```
-
 
 
 

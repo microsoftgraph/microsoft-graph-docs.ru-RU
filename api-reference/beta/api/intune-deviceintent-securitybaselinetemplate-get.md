@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 576173ec98b95b92dcbb9191265551d31f30ab36
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: f0c1528a3f3f209c048744a0ec9902b522461edd
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087645"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39945328"
 ---
 # <a name="get-securitybaselinetemplate"></a>Получение Секуритибаселинетемплате
 
@@ -48,7 +48,7 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{devic
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -84,7 +84,6 @@ Content-Length: 459
   }
 }
 ```
-
 
 
 

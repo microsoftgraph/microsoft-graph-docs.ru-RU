@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b7c4f9ce2acbfb1e4dac5a8ac1346c4f986e0709
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 746e39bd7dce56972bfd5dbab2e39485174d67f8
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087294"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39943952"
 ---
 # <a name="get-depmacosenrollmentprofile"></a>Получение Депмакосенроллментпрофиле
 
@@ -47,7 +47,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultMacO
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -107,7 +107,6 @@ Content-Length: 1396
   }
 }
 ```
-
 
 
 

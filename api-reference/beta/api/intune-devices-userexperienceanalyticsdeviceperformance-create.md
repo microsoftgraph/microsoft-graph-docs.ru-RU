@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e97af8ea81529e1ec45a697c7bacc1a9de6d53d9
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: fe36600ebdc69edc037169c27cab25babf10bceb
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37529272"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39944514"
 ---
 # <a name="create-userexperienceanalyticsdeviceperformance"></a>Создание Усерекспериенцеаналитиксдевицеперформанце
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание нового объекта [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) .
 
@@ -27,7 +27,7 @@ ms.locfileid: "37529272"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -38,24 +38,24 @@ ms.locfileid: "37529272"
 POST /deviceManagement/userExperienceAnalyticsDevicePerformance
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Усерекспериенцеаналитиксдевицеперформанце в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Усерекспериенцеаналитиксдевицеперформанце.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор устройства для загрузки устройства аналитики взаимодействия с пользователем.|
-|deviceName|String|Имя устройства службы аналитики взаимодействия с пользователем.|
-|model|String|Модель устройства аналитики взаимодействия с пользователем.|
-|manufacturer|String|Производитель устройства аналитики взаимодействия с пользователем.|
-|дисктипе|[дисктипе](../resources/intune-devices-disktype.md)|Тип диска устройства анализа взаимодействия с пользователем. Возможные значения: `unkown`, `hdd`, `ssd`.|
+|id|Строка|Уникальный идентификатор устройства для загрузки устройства аналитики взаимодействия с пользователем.|
+|deviceName|Строка|Имя устройства службы аналитики взаимодействия с пользователем.|
+|model|Строка|Модель устройства аналитики взаимодействия с пользователем.|
+|manufacturer|Строка|Производитель устройства аналитики взаимодействия с пользователем.|
+|diskType|[diskType](../resources/intune-devices-disktype.md)|Тип диска устройства анализа взаимодействия с пользователем. Возможные значения: `unkown`, `hdd`, `ssd`.|
 |operatingSystemVersion|String|Версия операционной системы устройства аналитики взаимодействия с пользователем.|
 |бутскоре|Int32|Оценка загрузки устройства Analytics User Experience.|
 |коребуттимеинмс|Int32|Время загрузки ядра устройства аналитики для пользователя (в миллисекундах).|
@@ -68,7 +68,7 @@ POST /deviceManagement/userExperienceAnalyticsDevicePerformance
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -99,7 +99,7 @@ Content-length: 494
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -123,7 +123,6 @@ Content-Length: 543
   "deviceCount": 11
 }
 ```
-
 
 
 
