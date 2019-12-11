@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 60dfd10426016465e215a757f34d8ad2da92be16
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 89a7790def3b6f15a53950c347c3dcd7c854a7b7
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38084554"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39949492"
 ---
 # <a name="create-deviceconfigurationassignment"></a>Создание объекта deviceConfigurationAssignment
 
@@ -53,17 +53,17 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта deviceConfigurationAssignment в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта deviceConfigurationAssignment.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ назначения.|
+|id|Строка|Ключ назначения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения для конфигурации устройств.|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Источник назначения для конфигурации устройства, Direct или в упаковке/политике. Это свойство доступно только для чтения. Возможные значения: `direct`, `policySets`.|
-|Идентификатор|String|Идентификатор источника назначения. Это свойство доступно только для чтения.|
+|Идентификатор|Строка|Идентификатор источника назначения. Это свойство доступно только для чтения.|
 
 
 
@@ -106,7 +106,6 @@ Content-Length: 279
   "sourceId": "Source Id value"
 }
 ```
-
 
 
 

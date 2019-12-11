@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 22d42ed63c4d91613bdbf3f1f977bbd8a9a34dfa
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 7a7688b9532f02d1183280adc4c800c1869b1284
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38084365"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39948916"
 ---
 # <a name="get-iosenterprisewificonfiguration"></a>Получение iosEnterpriseWiFiConfiguration
 
@@ -49,7 +49,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -127,7 +127,6 @@ Content-Length: 2269
   }
 }
 ```
-
 
 
 

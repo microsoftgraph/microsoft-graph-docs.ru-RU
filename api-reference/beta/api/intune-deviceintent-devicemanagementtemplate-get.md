@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c9c4a64cf034356401f3f7db08f87b03b989e584
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 84d14d6f9ced61308030063df7b64593babcfb41
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087680"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39945482"
 ---
 # <a name="get-devicemanagementtemplate"></a>Получение Девицеманажементтемплате
 
@@ -48,7 +48,7 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{devic
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -84,7 +84,6 @@ Content-Length: 459
   }
 }
 ```
-
 
 
 

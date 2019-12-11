@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3537b27f8a147d1a89b8e46638fad508ed7d6fce
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: f1163b6123020c001c51e90dca9770f33a2acc75
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38083888"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39949373"
 ---
 # <a name="list-deviceconfigurationdevicestatuses"></a>Перечисление объектов deviceConfigurationDeviceStatus
 
@@ -53,7 +53,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -91,7 +91,6 @@ Content-Length: 569
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c42b3c3659c2e309dfe5d0b141d46f81461c307c
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: cb5046dcba09e10a7d6334d2af1a01760b8b9c10
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38084442"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39949295"
 ---
 # <a name="create-deviceconfigurationuserstatus"></a>Создание объекта deviceConfigurationUserStatus
 
@@ -53,7 +53,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта deviceConfigurationUserStatus в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта deviceConfigurationUserStatus.
@@ -108,7 +108,6 @@ Content-Length: 339
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

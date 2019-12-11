@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3260130b6d4eec10018205149a975b5c67e8f906
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 64bb72b41217dc659e42597105f5cd184079b0c5
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37533625"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39948361"
 ---
 # <a name="update-macosendpointprotectionconfiguration"></a>Обновление Макосендпоинтпротектионконфигуратион
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойств объекта [макосендпоинтпротектионконфигуратион](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md) .
 
@@ -27,7 +27,7 @@ ms.locfileid: "37533625"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -40,13 +40,13 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssign
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [макосендпоинтпротектионконфигуратион](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [макосендпоинтпротектионконфигуратион](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md).
@@ -55,8 +55,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|суппортсскопетагс|Логический|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -65,24 +65,24 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |гатекипералловедаппсаурце|[макосгатекипераппсаурцес](../resources/intune-deviceconfig-macosgatekeeperappsources.md)|Параметры системы и конфиденциальности, которые определяют, какие расположения скачивания приложения можно запускать с устройства macOS. Возможные значения: `notConfigured`, `macAppStore`, `macAppStoreAndIdentifiedDevelopers`, `anywhere`.|
-|гатекиперблокковерриде|Логический|Если задано значение true, переопределение пользователя для привратника будет отключено.|
-|firewallEnabled|Логический|Указывает, следует ли включить брандмауэр.|
-|firewallBlockAllIncoming|Логический|Соответствует параметру "блокировать все входящие подключения".|
-|firewallEnableStealthMode|Логический|Соответствует параметру "включить скрытый режим".|
+|гатекиперблокковерриде|Boolean|Если задано значение true, переопределение пользователя для привратника будет отключено.|
+|firewallEnabled|Boolean|Указывает, следует ли включить брандмауэр.|
+|firewallBlockAllIncoming|Boolean|Соответствует параметру "блокировать все входящие подключения".|
+|firewallEnableStealthMode|Boolean|Соответствует параметру "включить скрытый режим".|
 |фиреваллаппликатионс|Коллекция [макосфиреваллаппликатион](../resources/intune-deviceconfig-macosfirewallapplication.md)|Список приложений с параметрами брандмауэра. Параметры брандмауэра для приложений, не включенных в этот список, определяются пользователем. Эта коллекция может содержать не более 500 элементов.|
-|филеваултенаблед|Логический|Указывает, следует ли включить Филеваулт.|
+|филеваултенаблед|Boolean|Указывает, следует ли включить Филеваулт.|
 |филеваултселектедрековерикэйтипес|[macOSFileVaultRecoveryKeyTypes](../resources/intune-deviceconfig-macosfilevaultrecoverykeytypes.md)|Обязательно если включен Филеваулт, определяет типы ключа восстановления, которые необходимо использовать. . Возможные значения: `notConfigured`, `institutionalRecoveryKey`, `personalRecoveryKey`.|
 |филеваултинститутионалрековерикэйцертификате|Binary|Обязательно, если выбранные типы ключей восстановления включают Институтионалрековерикэй. Файл сертификата в кодировке DER, который использовался для установки ключа восстановления в учреждений.|
-|филеваултинститутионалрековерикэйцертификатефиленаме|String|Имя файла сертификата ключа восстановления для сотрудников, который будет отображаться в пользовательском интерфейсе. (*. der).|
-|филеваултперсоналрековерикэйхелпмессаже|String|Обязательно, если выбранные типы ключей восстановления включают Персоналрековерикэй. Короткое сообщение, в котором показано, как получить свой ключ восстановления личных настроек.|
-|филеваулталловдеферралунтилсигнаут|Boolean|Необязательный параметр. Если задано значение true, пользователь может отложить включение Филеваулт, пока не выйдете из системы.|
+|филеваултинститутионалрековерикэйцертификатефиленаме|Строка|Имя файла сертификата ключа восстановления для сотрудников, который будет отображаться в пользовательском интерфейсе. (*. der).|
+|филеваултперсоналрековерикэйхелпмессаже|Строка|Обязательно, если выбранные типы ключей восстановления включают Персоналрековерикэй. Короткое сообщение, в котором показано, как получить свой ключ восстановления личных настроек.|
+|филеваулталловдеферралунтилсигнаут|Boolean|Необязательный атрибут. Если задано значение true, пользователь может отложить включение Филеваулт, пока не выйдете из системы.|
 |филеваултнумберофтимесусерканигноре|Int32|Необязательный. При использовании параметра "отложить" это максимальное число раз, когда пользователь может игнорировать приглашения на включение Филеваулт, чтобы пользователь мог выполнить вход. Если задано значение-1, всегда будет выдаваться запрос на включение Филеваулт, пока Филеваулт не будет включен, хотя разрешить пользователю обходить включение Филеваулт. Если задать для этого параметра значение 0, эта функция будет отключена.|
-|филеваултдисаблепромптатсигнаут|Boolean|Необязательный параметр. При использовании параметра отсрочки, если задано значение true, пользователю не предлагается включить Филеваулт при входе.|
+|филеваултдисаблепромптатсигнаут|Boolean|Необязательный атрибут. При использовании параметра отсрочки, если задано значение true, пользователю не предлагается включить Филеваулт при входе.|
 |филеваултперсоналрековерикэйротатионинмонсс|Int32|Необязательный. Если выбранные типы ключей восстановления включают Персоналрековерикэй, частота вращения этого ключа в месяцах.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [макосендпоинтпротектионконфигуратион](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -149,7 +149,7 @@ Content-length: 2052
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -211,7 +211,6 @@ Content-Length: 2224
   "fileVaultPersonalRecoveryKeyRotationInMonths": 12
 }
 ```
-
 
 
 

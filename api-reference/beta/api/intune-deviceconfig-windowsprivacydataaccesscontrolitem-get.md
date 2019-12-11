@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6ccdd70d7c55469c96087c90d77c9e5f79390915
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: b0409a35e016dff8e7e66a97ebc08ba034d6ee47
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087855"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39946408"
 ---
 # <a name="get-windowsprivacydataaccesscontrolitem"></a>Получение Виндовспривацидатаакцессконтролитем
 
@@ -47,7 +47,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -79,7 +79,6 @@ Content-Length: 330
   }
 }
 ```
-
 
 
 

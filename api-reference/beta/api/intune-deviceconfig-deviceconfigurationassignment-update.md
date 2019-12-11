@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6bec36599ba4ee6300b63ec9e3ddd9d0d23d8ee6
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 1c9b2c4a4a36b1d061a3b6bd47124b9455919888
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38084526"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39949464"
 ---
 # <a name="update-deviceconfigurationassignment"></a>Обновление объекта deviceConfigurationAssignment
 
@@ -53,17 +53,17 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ назначения.|
+|id|Строка|Ключ назначения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения для конфигурации устройств.|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Источник назначения для конфигурации устройства, Direct или в упаковке/политике. Это свойство доступно только для чтения. Возможные значения: `direct`, `policySets`.|
-|Идентификатор|String|Идентификатор источника назначения. Это свойство доступно только для чтения.|
+|Идентификатор|Строка|Идентификатор источника назначения. Это свойство доступно только для чтения.|
 
 
 
@@ -106,7 +106,6 @@ Content-Length: 279
   "sourceId": "Source Id value"
 }
 ```
-
 
 
 

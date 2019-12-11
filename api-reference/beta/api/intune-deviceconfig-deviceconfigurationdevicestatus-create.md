@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 804ef23fde701587a7600700e3cb6e368c67f5e5
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 225834ff8d6c752cf916b82b508fe1d2442f3a4f
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38084491"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39949394"
 ---
 # <a name="create-deviceconfigurationdevicestatus"></a>Создание объекта deviceConfigurationDeviceStatus
 
@@ -53,7 +53,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта deviceConfigurationDeviceStatus в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта deviceConfigurationDeviceStatus.
@@ -61,8 +61,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
-|deviceDisplayName|String|Имя устройства в объекте DevicePolicyStatus.|
-|userName|String|Имя пользователя в отчете|
+|deviceDisplayName|Строка|Имя устройства в объекте DevicePolicyStatus.|
+|userName|Строка|Имя пользователя в отчете|
 |deviceModel|String|Модель устройства в отчете|
 |platform|Int32|Платформа для устройства, о котором сообщается|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время, когда истекает период отсрочки применения политик на устройстве.|
@@ -117,7 +117,6 @@ Content-Length: 496
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9fbe54ec465731d1ef5061da3d05675215dc038e
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: ee2f56a80f6a26f04addad69e6c71ee887e7f948
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38084260"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39948270"
 ---
 # <a name="get-macosgeneraldeviceconfiguration"></a>Get macOSGeneralDeviceConfiguration
 
@@ -49,7 +49,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -165,7 +165,6 @@ Content-Length: 3517
   }
 }
 ```
-
 
 
 

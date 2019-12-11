@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f45f3cfd2e9922397bf74062b4a167b1e90ae10e
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: d48c0c06a766b899d8b0d767defe50d30ef22bbe
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38083699"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39948235"
 ---
 # <a name="get-macosimportedpfxcertificateprofile"></a>Получение Макосимпортедпфксцертификатепрофиле
 
@@ -49,7 +49,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -113,7 +113,6 @@ Content-Length: 1564
   }
 }
 ```
-
 
 
 

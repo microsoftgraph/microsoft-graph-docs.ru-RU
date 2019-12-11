@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c27926b6e1e6d11520adcd239de2dca11bb03fb
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 484b7155feed87a36e717177555c2512acf285ff
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37179147"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39948650"
 ---
 # <a name="create-iosupdatedevicestatus"></a>Создание объекта iosUpdateDeviceStatus
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание объекта [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md).
 
@@ -38,7 +38,7 @@ ms.locfileid: "37179147"
 POST /deviceManagement/iosUpdateStatuses
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -53,11 +53,11 @@ POST /deviceManagement/iosUpdateStatuses
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |installStatus|[иосупдатесинсталлстатус](../resources/intune-deviceconfig-iosupdatesinstallstatus.md)|Состояние установки отчета о политике. Возможные значения: `success`, `available`, `idle`, `unknown`, `downloading`, `downloadFailed`, `downloadRequiresComputer`, `downloadInsufficientSpace`, `downloadInsufficientPower`, `downloadInsufficientNetwork`, `installing`, `installInsufficientSpace`, `installInsufficientPower`, `installPhoneCallInProgress`, `installFailed`, `notSupportedOperation`,. `sharedDeviceUserLoggedInError`|
-|osVersion|String.|Версия устройства в отчете.|
+|osVersion|Строка|Версия устройства в отчете.|
 |deviceId|String|ИД устройства в отчете.|
 |userId|String|ИД пользователя в отчете.|
-|deviceDisplayName|String.|Имя устройства в объекте DevicePolicyStatus.|
-|userName|String.|Имя пользователя в отчете|
+|deviceDisplayName|Строка|Имя устройства в объекте DevicePolicyStatus.|
+|userName|Строка|Имя пользователя в отчете|
 |deviceModel|String|Модель устройства в отчете|
 |platform|Int32|Платформа для устройства, о котором сообщается|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время, когда истекает период отсрочки применения политик на устройстве.|
@@ -97,7 +97,7 @@ Content-length: 570
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -120,6 +120,7 @@ Content-Length: 619
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

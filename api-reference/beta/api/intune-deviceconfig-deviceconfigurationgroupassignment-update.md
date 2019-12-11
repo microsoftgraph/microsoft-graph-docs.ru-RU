@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c7831582d7b716bd2725c3ed5d0294a2f3348325
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 62e531acf0ac8a9d6e662313ff94ffacb7c10057
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38083867"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39949330"
 ---
 # <a name="update-deviceconfigurationgroupassignment"></a>Обновление deviceConfigurationGroupAssignment
 
@@ -53,20 +53,20 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|таржетграупид|String|Идентификатор группы AAD, на которую направляться конфигурация устройства.|
-|excludeGroup|Логический|Указывает, следует ли исключить эту группу. Значения по умолчанию, включаемые в группу|
+|id|Строка|Ключ объекта.|
+|таржетграупид|Строка|Идентификатор группы AAD, на которую направляться конфигурация устройства.|
+|excludeGroup|Boolean|Указывает, следует ли исключить эту группу. Значения по умолчанию, включаемые в группу|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -99,7 +99,6 @@ Content-Length: 195
   "excludeGroup": true
 }
 ```
-
 
 
 

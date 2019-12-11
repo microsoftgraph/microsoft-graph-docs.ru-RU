@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0555a403b3b3007ef0b0f90b1149089ae2494f15
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 8b270af753d1ba9e67d0a75a02bd379705d48837
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38087673"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39945440"
 ---
 # <a name="get-devicemanagementtemplatesettingcategory"></a>Получение Девицеманажементтемплатесеттингкатегори
 
@@ -47,7 +47,7 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/categories/{deviceM
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -76,7 +76,6 @@ Content-Length: 195
   }
 }
 ```
-
 
 
 
