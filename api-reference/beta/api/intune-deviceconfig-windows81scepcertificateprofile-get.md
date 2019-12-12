@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2511e39bcd2c0a72f012ac3d58c8386c32e20655
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: f6c29e76629f48d7c6e1f7610d9ab4c1551f3f6d
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38084063"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39947038"
 ---
 # <a name="get-windows81scepcertificateprofile"></a>Получение windows81SCEPCertificateProfile
 
@@ -49,7 +49,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -136,7 +136,6 @@ Content-Length: 2337
   }
 }
 ```
-
 
 
 

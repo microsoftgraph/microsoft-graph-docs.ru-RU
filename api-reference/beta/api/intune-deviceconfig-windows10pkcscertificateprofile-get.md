@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6990b27057b91e1b0beb1253faeab96b0c646763
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 37b414a7d8e302a650b2e30204f97504d504e4e1
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38084085"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39947262"
 ---
 # <a name="get-windows10pkcscertificateprofile"></a>Получение windows10PkcsCertificateProfile
 
@@ -49,7 +49,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2073
+Content-Length: 2381
 
 {
   "value": {
@@ -120,11 +120,19 @@ Content-Length: 2073
         "name": "Name value",
         "objectIdentifier": "Object Identifier value"
       }
+    ],
+    "subjectNameFormatString": "Subject Name Format String value",
+    "certificateStore": "machine",
+    "customSubjectAlternativeNames": [
+      {
+        "@odata.type": "microsoft.graph.customSubjectAlternativeName",
+        "sanType": "emailAddress",
+        "name": "Name value"
+      }
     ]
   }
 }
 ```
-
 
 
 
