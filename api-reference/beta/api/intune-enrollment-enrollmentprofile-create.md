@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4f480baa00913c42884d35d908f2fdbe5a76c37d
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 0fc799df25f8cef6345d1e46dcfcadfa324c1997
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37185212"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955394"
 ---
 # <a name="create-enrollmentprofile"></a>Создание объекта enrollmentprofile
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание нового объекта [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md) .
 
@@ -38,7 +38,7 @@ ms.locfileid: "37185212"
 POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -54,14 +54,14 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 |id|Строка|GUID объекта|
 |displayName|Строка|Имя профиля|
 |description|String|Описание профиля|
-|рекуиресусераусентикатион|Boolean.|Указывает, требуется ли для профиля проверка подлинности пользователя|
-|конфигуратионендпоинтурл|String.|URL-адрес конечной точки конфигурации, используемый для регистрации|
-|enableAuthenticationViaCompanyPortal|Boolean.|Указывает на проверку подлинности с помощью помощника по настройке Apple, а не корпоративного портала.|
-|рекуирекомпанипорталонсетупассистантенролледдевицес|Boolean.|Указывает, что корпоративный портал необходим на зарегистрированных устройствах помощника по настройке|
+|рекуиресусераусентикатион|Boolean|Указывает, требуется ли для профиля проверка подлинности пользователя|
+|конфигуратионендпоинтурл|Строка|URL-адрес конечной точки конфигурации, используемый для регистрации|
+|enableAuthenticationViaCompanyPortal|Boolean|Указывает на проверку подлинности с помощью помощника по настройке Apple, а не корпоративного портала.|
+|рекуирекомпанипорталонсетупассистантенролледдевицес|Boolean|Указывает, что корпоративный портал необходим на зарегистрированных устройствах помощника по настройке|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -85,7 +85,7 @@ Content-length: 370
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -102,6 +102,7 @@ Content-Length: 419
   "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
+
 
 
 

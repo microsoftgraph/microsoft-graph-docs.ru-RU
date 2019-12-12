@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 354ed1d1426d5456aa5fcaea56a7d9cf29d5652a
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 610f4e5fe3994398c1bc1d98a6ed8ee0c006a62c
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38085031"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39954253"
 ---
 # <a name="get-androidcompliancepolicy"></a>Get androidCompliancePolicy
 
@@ -47,7 +47,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1863
+Content-Length: 1989
 
 {
   "value": {
@@ -92,7 +92,9 @@ Content-Length: 1863
     "securityRequireVerifyApps": true,
     "deviceThreatProtectionEnabled": true,
     "deviceThreatProtectionRequiredSecurityLevel": "secured",
+    "advancedThreatProtectionRequiredSecurityLevel": "secured",
     "securityBlockJailbrokenDevices": true,
+    "securityBlockDeviceAdministratorManagedDevices": true,
     "osMinimumVersion": "Os Minimum Version value",
     "osMaximumVersion": "Os Maximum Version value",
     "minAndroidSecurityPatchLevel": "Min Android Security Patch Level value",
@@ -115,7 +117,6 @@ Content-Length: 1863
   }
 }
 ```
-
 
 
 

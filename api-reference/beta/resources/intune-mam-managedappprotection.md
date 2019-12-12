@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 513c15a47240f50ff045b2568128d3c038ebcb2c
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 2f60377aa8c324abf18e816196d9671b72950280
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088058"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955450"
 ---
 # <a name="managedappprotection-resource-type"></a>Тип ресурса managedAppProtection
 
@@ -37,46 +37,48 @@ ms.locfileid: "38088058"
 |description|String|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|id|String|Ключ объекта. Унаследовано от [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|id|Строка|Ключ объекта. Унаследовано от [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
 |version|String|Версия объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |periodOfflineBeforeAccessCheck|Длительность|Время до проверки доступа, когда устройство не подключено к Интернету.|
 |periodOnlineBeforeAccessCheck|Длительность|Время до проверки доступа, когда устройство подключено к Интернету.|
 |allowedInboundDataTransferSources|[манажедаппдататрансферлевел](../resources/intune-mam-managedappdatatransferlevel.md)|Источники, из которых разрешена передача данных. Возможные значения: `allApps`, `managedApps`, `none`.|
 |allowedOutboundDataTransferDestinations|[манажедаппдататрансферлевел](../resources/intune-mam-managedappdatatransferlevel.md)|Места, в которые разрешена передача данных. Возможные значения: `allApps`, `managedApps`, `none`.|
-|organizationalCredentialsRequired|Логический|Указывает, необходимы ли для использования приложения учетные данные организации.|
+|organizationalCredentialsRequired|Boolean|Указывает, необходимы ли для использования приложения учетные данные организации.|
 |allowedOutboundClipboardSharingLevel|[манажедаппклипбоардшаринглевел](../resources/intune-mam-managedappclipboardsharinglevel.md)|Разрешенный уровень совместного использования буфера обмена для приложений на управляемом устройстве. Возможные значения: `allApps`, `managedAppsWithPasteIn`, `managedApps`, `blocked`.|
-|dataBackupBlocked|Логический|Указывает, заблокировано ли резервное копирование данных управляемого приложения.|
-|deviceComplianceRequired|Логический|Указывает, должно ли устройство соответствовать требованиям.|
-|managedBrowserToOpenLinksRequired|Логический|Указывает, следует ли открывать интернет-ссылки в управляемом браузере.|
-|saveAsBlocked|Логический|Указывает, могут ли пользователи сохранять копии защищенных файлов, используя пункт меню "Сохранить как".|
+|dataBackupBlocked|Boolean|Указывает, заблокировано ли резервное копирование данных управляемого приложения.|
+|deviceComplianceRequired|Boolean|Указывает, должно ли устройство соответствовать требованиям.|
+|managedBrowserToOpenLinksRequired|Boolean|Указывает, следует ли открывать интернет-ссылки в управляемом браузере.|
+|saveAsBlocked|Boolean|Указывает, могут ли пользователи сохранять копии защищенных файлов, используя пункт меню "Сохранить как".|
 |periodOfflineBeforeWipeIsEnforced|Длительность|Время до удаления всех управляемых данных после отключения приложения от Интернета.|
-|pinRequired|Логический|Указывает, требуется ли ПИН-код на уровне приложения.|
+|pinRequired|Boolean|Указывает, требуется ли ПИН-код на уровне приложения.|
 |maximumPinRetries|Int32|Максимальное количество неудачных попыток ввода ПИН-кода перед блокированием или очисткой управляемого приложения.|
-|simplePinBlocked|Логический|Указывает, заблокирован ли простой ПИН-код.|
+|simplePinBlocked|Boolean|Указывает, заблокирован ли простой ПИН-код.|
 |minimumPinLength|Int32|Минимальная длина ПИН-кода на уровне приложения, если для параметра PinRequired установлено значение True.|
 |pinCharacterSet|[манажедапппинчарактерсет](../resources/intune-mam-managedapppincharacterset.md)|Разрешенный набор символов ПИН-кода на уровне приложения, если для параметра PinRequired установлено значение True. Возможные значения: `numeric`, `alphanumericAndSymbol`.|
 |periodBeforePinReset|Duration|Время до сброса универсального ПИН-кода, если для параметра PinRequired установлено значение True.|
 |allowedDataStorageLocations|Коллекция [манажедаппдатасторажелокатион](../resources/intune-mam-managedappdatastoragelocation.md)|Разрешенные места хранения управляемых данных.|
-|contactSyncBlocked|Логический|Указывает, можно ли синхронизировать контакты с устройством пользователя.|
+|contactSyncBlocked|Boolean|Указывает, можно ли синхронизировать контакты с устройством пользователя.|
 |printBlocked|Boolean|Указывает, разрешена ли печать из управляемых приложений.|
-|fingerprintBlocked|Логический|Указывает, можно ли использовать сканер отпечатков пальцев вместо ПИН-кода, если для параметра PinRequired установлено значение True.|
+|fingerprintBlocked|Boolean|Указывает, можно ли использовать сканер отпечатков пальцев вместо ПИН-кода, если для параметра PinRequired установлено значение True.|
 |disableAppPinIfDevicePinIsSet|Boolean|Указывает, обязательно ли использовать ПИН-код приложения, если установлен ПИН-код устройства.|
-|minimumRequiredOsVersion|String|В более старых версиях управляемое приложение не сможет получить доступ к данным компании.|
-|minimumWarningOsVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение о невозможности получить доступ к данным компании.|
-|minimumRequiredAppVersion|String|В более старых версиях управляемое приложение не сможет получить доступ к данным компании.|
+|minimumRequiredOsVersion|Строка|В более старых версиях управляемое приложение не сможет получить доступ к данным компании.|
+|minimumWarningOsVersion|Строка|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение о невозможности получить доступ к данным компании.|
+|minimumRequiredAppVersion|Строка|В более старых версиях управляемое приложение не сможет получить доступ к данным компании.|
 |minimumWarningAppVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение.|
-|минимумвипеосверсион|String|Версии, меньшие или равные указанной версии, будут очищать управляемое приложение и связанные данные компании.|
-|минимумвипеаппверсион|String|Версии, меньшие или равные указанной версии, будут очищать управляемое приложение и связанные данные компании.|
+|минимумвипеосверсион|Строка|Версии, меньшие или равные указанной версии, будут очищать управляемое приложение и связанные данные компании.|
+|минимумвипеаппверсион|Строка|Версии, меньшие или равные указанной версии, будут очищать управляемое приложение и связанные данные компании.|
 |аппактионифдевицекомплианцерекуиред|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемого приложения (блокировка или очистка), когда устройство находится в корневом режиме или с защитой от удаления, если для Девицекомплианцерекуиред задано значение true. Возможные значения: `block`, `wipe`, `warn`.|
 |аппактионифмаксимумпинретриесексцеедед|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемого приложения (блокировка или очистка) на основе максимального количества неудачных попыток ввода ПИН-кода. Возможные значения: `block`, `wipe`, `warn`.|
 |пинрекуирединстеадофбиометриктимеаут|Длительность|Время ожидания ПИН-кода приложения (в минутах), а не в биометрических кодах|
 |алловедаутбаундклипбоардшаринжексцептионленгс|Int32|Укажите количество символов, которое может быть вырезано или скопировано из данных Организации и учетных записей в любое приложение. Этот параметр переопределяет ограничение Алловедаутбаундклипбоардшаринглевел. Значение по умолчанию "0" означает, что исключение не разрешено.|
 |нотификатионрестриктион|[managedAppNotificationRestriction](../resources/intune-mam-managedappnotificationrestriction.md)|Указание ограничения уведомления приложения. Возможные значения: `allow`, `blockOrganizationalData`, `block`.|
 |превиауспинблокккаунт|Int32|Требует уникальности ПИН-кода на основе числа, указанного в этом свойстве.|
-|манажедбровсер|[манажедбровсертипе](../resources/intune-mam-managedbrowsertype.md)|Указывает, в каких управляемых браузерах следует открывать Интернет-ссылки. Возможные значения: `notConfigured`, `microsoftEdge`.|
+|манажедбровсер|[managedBrowserType](../resources/intune-mam-managedbrowsertype.md)|Указывает, в каких управляемых браузерах следует открывать Интернет-ссылки. Возможные значения: `notConfigured`, `microsoftEdge`.|
 |максимумалловеддевицесреатлевел|[managedAppDeviceThreatLevel](../resources/intune-mam-managedappdevicethreatlevel.md)|Максимально допустимый уровень угроз для устройства, как указано приложением МТД. Возможные значения: `notConfigured`, `secured`, `low`, `medium`, `high`.|
 |мобилесреатдефенсеремедиатионактион|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет, какое действие необходимо предпринять, если не достигнут порог угроз для защиты от угроз для мобильных устройств. Предупреждение не является поддерживаемым значением для этого свойства. Возможные значения: `block`, `wipe`, `warn`.|
+|блоккдатаинжестионинтурганизатиондокументс|Boolean|Указывает, может ли пользователь перенести данные в организационные документы.|
+|алловеддатаинжестионлокатионс|Коллекция [манажедаппдатаинжестионлокатион](../resources/intune-mam-managedappdataingestionlocation.md)|Разрешенные места хранения управляемых данных.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -139,7 +141,11 @@ ms.locfileid: "38088058"
   "previousPinBlockCount": 1024,
   "managedBrowser": "String",
   "maximumAllowedDeviceThreatLevel": "String",
-  "mobileThreatDefenseRemediationAction": "String"
+  "mobileThreatDefenseRemediationAction": "String",
+  "blockDataIngestionIntoOrganizationDocuments": true,
+  "allowedDataIngestionLocations": [
+    "String"
+  ]
 }
 ```
 

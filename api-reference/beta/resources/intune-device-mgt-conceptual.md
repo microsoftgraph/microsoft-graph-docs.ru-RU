@@ -4,12 +4,12 @@ description: Список API Microsoft Graph для конечных точек
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 7912a4e70e1ea7daeeb000b4812e2d61e7e7e55e
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: de5f688e0613d1336c277f85cb3bce6c482c2fbc
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088163"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955577"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
@@ -132,7 +132,6 @@ ms.locfileid: "38088163"
 - [Обзор управляемых устройств](intune-devices-manageddeviceoverview.md)
 - [Указанное состояние работоспособности партнера по управляемым устройствам](intune-devices-manageddevicepartnerreportedhealthstate.md)
 - [Удаленное действие с управляемым устройством](intune-devices-manageddeviceremoteaction.md)
-- [Тип агента управления](intune-devices-managementagenttype.md)
 - [Условие управления](intune-fencing-managementcondition.md)
 - [Выражение условия управления](intune-fencing-managementconditionexpression.md)
 - [Модель выражения условия управления](intune-fencing-managementconditionexpressionmodel.md)

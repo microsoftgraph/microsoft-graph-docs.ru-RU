@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: df12c42c88c50992e564f3b90648c04af4c7b519
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 574b998dbb3c5ebaa9ad64a706aa42ef84a27e91
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38086384"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955212"
 ---
 # <a name="get-roledefinition"></a>Получение roleDefinition
 
@@ -48,7 +48,7 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAs
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -121,7 +121,6 @@ Content-Length: 1369
   }
 }
 ```
-
 
 
 

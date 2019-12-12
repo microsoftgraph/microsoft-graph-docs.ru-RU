@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ead999e87fea6af266046f764f9a81cc0014490a
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 24c339594a0f6928ccb1889264f6b3c453002178
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38084743"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39954687"
 ---
 # <a name="get-androidworkprofilecertificateprofilebase"></a>Получение Андроидворкпрофилецертификатепрофилебасе
 
@@ -50,7 +50,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -120,7 +120,6 @@ Content-Length: 1734
   }
 }
 ```
-
 
 
 

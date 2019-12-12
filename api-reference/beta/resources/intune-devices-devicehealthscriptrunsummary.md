@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c3e96083cdbc1c59b9e77d18bbf1b2e1a081ff37
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 8f17e7725802879f639ce6803f9f6c12dca21e5f
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539080"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955485"
 ---
 # <a name="devicehealthscriptrunsummary-resource-type"></a>Тип ресурса Девицехеалсскриптрунсуммари
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Содержит свойства сводки по запуску сценария управления устройствами.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Получение Девицехеалсскриптрунсуммари](../api/intune-devices-devicehealthscriptrunsummary-get.md)|[девицехеалсскриптрунсуммари](../resources/intune-devices-devicehealthscriptrunsummary.md)|Чтение свойств и связей объекта [девицехеалсскриптрунсуммари](../resources/intune-devices-devicehealthscriptrunsummary.md) .|
-|[Обновление Девицехеалсскриптрунсуммари](../api/intune-devices-devicehealthscriptrunsummary-update.md)|[девицехеалсскриптрунсуммари](../resources/intune-devices-devicehealthscriptrunsummary.md)|Обновление свойств объекта [девицехеалсскриптрунсуммари](../resources/intune-devices-devicehealthscriptrunsummary.md) .|
+|[Получение Девицехеалсскриптрунсуммари](../api/intune-devices-devicehealthscriptrunsummary-get.md)|[deviceHealthScriptRunSummary](../resources/intune-devices-devicehealthscriptrunsummary.md)|Чтение свойств и связей объекта [девицехеалсскриптрунсуммари](../resources/intune-devices-devicehealthscriptrunsummary.md) .|
+|[Обновление Девицехеалсскриптрунсуммари](../api/intune-devices-devicehealthscriptrunsummary-update.md)|[deviceHealthScriptRunSummary](../resources/intune-devices-devicehealthscriptrunsummary.md)|Обновление свойств объекта [девицехеалсскриптрунсуммари](../resources/intune-devices-devicehealthscriptrunsummary.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключевой объект сводки запуска сценария работоспособности устройства. Это свойство доступно только для чтения.|
+|id|Строка|Ключевой объект сводки запуска сценария работоспособности устройства. Это свойство доступно только для чтения.|
 |ноиссуедетектеддевицекаунт|Int32|Количество устройств, для которых сценарий обнаружения не обнаружил проблему, и устройство находится в работоспособном состоянии.|
 |иссуедетектеддевицекаунт|Int32|Количество устройств, для которых обнаружена ошибка сценария обнаружения|
 |детектионскриптеррордевицекаунт|Int32|Количество устройств, на которых возникла ошибка при выполнении сценария обнаружения и который не был выполнен|
@@ -39,6 +39,7 @@ ms.locfileid: "37539080"
 |иссуереоккурреддевицекаунт|Int32|Количество устройств, для которых сценарий исправления успешно выполнен, но не удалось разрешить обнаруженную проблему|
 |ремедиатионскриптеррордевицекаунт|Int32|Количество устройств, для которых при выполнении сценария исправления возникла ошибка и оно не было завершено|
 |ластскриптрундатетиме|DateTimeOffset|Время последнего запуска сценария на всех устройствах|
+|иссуеремедиатедкумулативедевицекаунт|Int32|Количество устройств, которые были исправлены за последние 30 дней|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -63,7 +64,8 @@ ms.locfileid: "37539080"
   "remediationSkippedDeviceCount": 1024,
   "issueReoccurredDeviceCount": 1024,
   "remediationScriptErrorDeviceCount": 1024,
-  "lastScriptRunDateTime": "String (timestamp)"
+  "lastScriptRunDateTime": "String (timestamp)",
+  "issueRemediatedCumulativeDeviceCount": 1024
 }
 ```
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 816e777ce8d7c722b97fd7425c915fad11a2e3dd
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 0f46fe24b15cfbbfd65e0daaedde6ebf8a0aaba5
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38086832"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39954428"
 ---
 # <a name="get-managedappprotection"></a>Get managedAppProtection
 
@@ -49,7 +49,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/managedAppPolicies/{man
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2289
+Content-Length: 2415
 
 {
   "value": {
@@ -120,11 +120,14 @@ Content-Length: 2289
     "previousPinBlockCount": 5,
     "managedBrowser": "microsoftEdge",
     "maximumAllowedDeviceThreatLevel": "secured",
-    "mobileThreatDefenseRemediationAction": "wipe"
+    "mobileThreatDefenseRemediationAction": "wipe",
+    "blockDataIngestionIntoOrganizationDocuments": true,
+    "allowedDataIngestionLocations": [
+      "sharePoint"
+    ]
   }
 }
 ```
-
 
 
 

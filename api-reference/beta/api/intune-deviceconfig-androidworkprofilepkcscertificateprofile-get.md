@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7101b773b29eab5f2d4fe587cb0a47ba91adb394
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: aa7ac9c08fdd4311abb63e3e3db22640535266c1
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38084680"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39949996"
 ---
 # <a name="get-androidworkprofilepkcscertificateprofile"></a>Получение Андроидворкпрофилепкксцертификатепрофиле
 
@@ -49,7 +49,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2029
+Content-Length: 2337
 
 {
   "value": {
@@ -119,11 +119,19 @@ Content-Length: 2029
     "certificationAuthority": "Certification Authority value",
     "certificationAuthorityName": "Certification Authority Name value",
     "certificateTemplateName": "Certificate Template Name value",
-    "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
+    "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
+    "subjectNameFormatString": "Subject Name Format String value",
+    "certificateStore": "machine",
+    "customSubjectAlternativeNames": [
+      {
+        "@odata.type": "microsoft.graph.customSubjectAlternativeName",
+        "sanType": "emailAddress",
+        "name": "Name value"
+      }
+    ]
   }
 }
 ```
-
 
 
 

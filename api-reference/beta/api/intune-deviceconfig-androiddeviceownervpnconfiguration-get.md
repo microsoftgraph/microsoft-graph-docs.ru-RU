@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 970eb0468559fe002f5644d7b7709514f69d60f2
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 659bb18823999a445d1f8dbd695f1921f19d39eb
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38084954"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39954141"
 ---
 # <a name="get-androiddeviceownervpnconfiguration"></a>Получение Андроиддевицеовнервпнконфигуратион
 
@@ -49,7 +49,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -120,7 +120,6 @@ Content-Length: 1698
   }
 }
 ```
-
 
 
 

@@ -5,18 +5,18 @@ localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f800c9a2eed631c5cfef07d042c2393366468007
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: d64e30320bf16209850758844b944864ee13d273
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538758"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955338"
 ---
 # <a name="devicemanagement-resource-type"></a>Тип ресурса deviceManagement
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Ресурс deviceManagement представляет контейнер, содержимое которого зависит от рабочего процесса, в том числе:  
 
@@ -47,7 +47,7 @@ ms.locfileid: "37538758"
 |:---|:---|:---|
 |[Получение объекта deviceManagement](../api/intune-shared-devicemanagement-get.md)|Чтение свойств и связей объекта [deviceManagement](../resources/intune-shared-devicemanagement.md).|
 |[Обновление объекта deviceManagement](../api/intune-shared-devicemanagement-update.md)|Обновление свойств объекта [deviceManagement](../resources/intune-shared-devicemanagement.md).|
-|**Конфигурация устройств**|
+|**Конфигурация устройства**|
 |[Действие enableLegacyPcManagement](../api/intune-shared-devicemanagement-enablelegacypcmanagement.md)|Нет|Пока не задокументировано.|
 |**Управление устройствами**|
 |[Действие sendCustomNotificationToCompanyPortal](../api/intune-shared-devicemanagement-sendcustomnotificationtocompanyportal.md)|Нет|Пока не задокументировано.|
@@ -62,10 +62,10 @@ ms.locfileid: "37538758"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор, связанный с устройством.|
-|**Конфигурация устройств**|
+|id|Строка|Уникальный идентификатор, связанный с устройством.|
+|**Конфигурация устройства**|
 |интунеаккаунтид|GUID|Идентификатор учетной записи Intune для данного клиента|
-|легаципкмананжементенаблед|Логический|Свойство, позволяющее управлять устаревшим управлением устаревших ПК для этой учетной записи. Это свойство доступно только для чтения.|
+|легаципкмананжементенаблед|Boolean|Свойство, позволяющее управлять устаревшим управлением устаревших ПК для этой учетной записи. Это свойство доступно только для чтения.|
 |максимумдептокенс|Int32|Максимальное число маркеров DEP, разрешенных для каждого клиента.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Параметры уровня учетной записи.|
 |**Управление устройствами**|
@@ -101,7 +101,7 @@ ms.locfileid: "37538758"
 |enrollmentProfiles|Коллекция [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|Профили регистрации.|
 |importedAppleDeviceIdentities|Коллекция [импортедаппледевицеидентити](../resources/intune-enrollment-importedappledeviceidentity.md)|Импортированные удостоверения устройств Apple.|
 |импортеддевицеидентитиес|Коллекция [импортеддевицеидентити](../resources/intune-enrollment-importeddeviceidentity.md)|Импортированные удостоверения устройств.|
-|**Конфигурация устройств**|
+|**Конфигурация устройства**|
 |advancedThreatProtectionOnboardingStateSummary|[advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md)|Сводное состояние состояния входящей миграции ATP для этой учетной записи.|
 |Свойства carttoclassassociations|Коллекция [карттоклассассоЦиатион](../resources/intune-deviceconfig-carttoclassassociation.md)|Корзина для сопоставления классов.|
 |deviceCompliancePolicies|Коллекция [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|Политики соответствия устройств требованиям.|
@@ -125,6 +125,7 @@ ms.locfileid: "37538758"
 |даташарингконсентс|Коллекция [даташарингконсент](../resources/intune-devices-datasharingconsent.md)|Совместное использование данных.|
 |detectedApps|Коллекция [detectedApp](../resources/intune-devices-detectedapp.md)|Список обнаруженных приложений, связанных с устройством.|
 |deviceManagementScripts|Коллекция [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md)|Список сценариев управления устройствами, связанных с клиентом.|
+|девицешеллскриптс|Коллекция [девицешеллскрипт](../resources/intune-devices-deviceshellscript.md)|Список сценариев оболочки устройств, связанных с клиентом.|
 |девицехеалсскриптс|Коллекция [девицехеалсскрипт](../resources/intune-devices-devicehealthscript.md)|Список сценариев работоспособности устройств, связанных с клиентом.|
 |managedDeviceOverview|[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md)|Обзор устройств|
 |managedDevices|Коллекция [managedDevice](../resources/intune-devices-manageddevice.md)|Список управляемых устройств.|
@@ -134,9 +135,9 @@ ms.locfileid: "37538758"
 |userExperienceAnalyticsOverview|[userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md)|Обзор анализа пользовательского интерфейса|
 |усерекспериенцеаналитиксбаселинес|Коллекция [усерекспериенцеаналитиксбаселине](../resources/intune-devices-userexperienceanalyticsbaseline.md)|Шаблоны аналитики взаимодействия с пользователем|
 |усерекспериенцеаналитикскатегориес|Коллекция [усерекспериенцеаналитикскатегори](../resources/intune-devices-userexperienceanalyticscategory.md)|Категории аналитики взаимодействия с пользователем|
-|усерекспериенцеаналитиксдевицеперформанце|Коллекция [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|Производительность устройства аналитики взаимодействия с пользователем|
-|усерекспериенцеаналитиксрегрессионсуммари|[усерекспериенцеаналитиксрегрессионсуммари](../resources/intune-devices-userexperienceanalyticsregressionsummary.md)|Сводка по регрессии аналитики взаимодействия с пользователем|
-|усерекспериенцеаналитиксдевицестартуфистори|Коллекция [усерекспериенцеаналитиксдевицестартуфистори](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)|Журнал запуска устройства Analytics User Experience|
+|userExperienceAnalyticsDevicePerformance|Коллекция [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|Производительность устройства аналитики взаимодействия с пользователем|
+|userExperienceAnalyticsRegressionSummary|[userExperienceAnalyticsRegressionSummary](../resources/intune-devices-userexperienceanalyticsregressionsummary.md)|Сводка по регрессии аналитики взаимодействия с пользователем|
+|userExperienceAnalyticsDeviceStartupHistory|Коллекция [усерекспериенцеаналитиксдевицестартуфистори](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)|Журнал запуска устройства Analytics User Experience|
 |**Регистрации**|
 |depOnboardingSettings|Коллекция [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Эти коллекции нескольких маркеров DEP для каждого клиента.|
 |импортеддевицеидентитиес|Коллекция [импортеддевицеидентити](../resources/intune-enrollment-importeddeviceidentity.md)|Импортированные удостоверения устройств.|
@@ -180,7 +181,7 @@ ms.locfileid: "37538758"
 |roleDefinitions|Коллекция [roleDefinition](../resources/intune-rbac-roledefinition.md)|Определения ролей.|
 |roleScopeTags|Коллекция [ролескопетаг](../resources/intune-rbac-rolescopetag.md)|Теги области применения роли.|
 |**Создание отчетов**|
-|определяется|[девицеманажементрепортс](../resources/intune-reporting-devicemanagementreports.md)|Одноэлементные отчеты|
+|определяется|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|Одноэлементные отчеты|
 |**Обновление программного обеспечения**|
 |виндовсфеатуреупдатепрофилес|Коллекция [виндовсфеатуреупдатепрофиле](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)|Коллекция профилей обновления компонентов Windows|
 |**Управление расходами по телекоммуникационной связи (TEM)**|

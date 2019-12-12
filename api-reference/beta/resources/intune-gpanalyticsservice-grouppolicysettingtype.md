@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6cfc68216c80ab62fe7ab93630ba4d66fb72dced
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: b5e2a02beb5c53bc3379119262a4ebce62e0fab3
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539178"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955668"
 ---
 # <a name="grouppolicysettingtype-enum-type"></a>тип перечисления Граупполицисеттингтипе
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Тип параметра групповой политики.
 
@@ -24,8 +24,12 @@ ms.locfileid: "37539178"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Граупполицисеттингтипе Unknown|
-|policy|1,1|Параметр политики|
-|финансового|2|Настройка учетной записи|
+|policy|1,1|Тип параметра политики|
+|финансового|2|Тип параметра учетной записи|
+|секуритйоптионс|4|Тип параметра Секуритйоптионс|
+|усерригхтсассигнмент|4 |Тип параметра Усерригхтсассигнмент|
+|аудитсеттинг|5 |Тип параметра Аудитсеттинг|
+|виндовсфиреваллсеттингс|6 |Тип параметра Виндовсфиреваллсеттингс|
 
 
 

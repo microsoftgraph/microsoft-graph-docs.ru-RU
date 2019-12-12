@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 17b8225f867c254c8dab3469fafae0f50799a5ed
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 240ca89d363f60eff21cc1d299b5b96c5523cbbc
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37536219"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955079"
 ---
 # <a name="create-devicemanagementcachedreportconfiguration"></a>Создание Девицеманажементкачедрепортконфигуратион
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание нового объекта [девицеманажементкачедрепортконфигуратион](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) .
 
@@ -27,7 +27,7 @@ ms.locfileid: "37536219"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration. ReadWrite. ALL, DeviceManagementApps. ReadWrite. ALL, DeviceManagementManagedDevices. ReadWrite. ALL|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration. ReadWrite. ALL, DeviceManagementApps. ReadWrite. ALL, DeviceManagementManagedDevices. ReadWrite. ALL|
+|Для приложений|DeviceManagementConfiguration. ReadWrite. ALL, DeviceManagementApps. ReadWrite. ALL, DeviceManagementManagedDevices. ReadWrite. ALL|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -38,31 +38,31 @@ ms.locfileid: "37536219"
 POST /deviceManagement/reports/cachedReportConfigurations
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Девицеманажементкачедрепортконфигуратион в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицеманажементкачедрепортконфигуратион.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для этой сущности|
-|репортнаме|String|Имя отчета|
-|filter|String|Фильтры, применяемые при создании отчета.|
-|select|Коллекция String|Столбцы, выбранные из отчета|
-|orderBy|Коллекция String|Упорядочение столбцов в отчете|
-|status|[девицеманажементрепортстатус](../resources/intune-reporting-devicemanagementreportstatus.md)|Состояние кэшированного отчета. Возможные значения: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
+|id|Строка|Уникальный идентификатор для этой сущности|
+|репортнаме|Строка|Имя отчета|
+|filter|Строка|Фильтры, применяемые при создании отчета.|
+|select|Коллекция строк|Столбцы, выбранные из отчета|
+|orderBy|Коллекция строк|Упорядочение столбцов в отчете|
+|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Состояние кэшированного отчета. Возможные значения: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |ластрефрешдатетиме|DateTimeOffset|Время последнего обновления кэшированного отчета|
 |expirationDateTime|DateTimeOffset|Время истечения срока действия кэшированного отчета|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементкачедрепортконфигуратион](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -91,7 +91,7 @@ Content-length: 385
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -113,7 +113,6 @@ Content-Length: 434
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
 }
 ```
-
 
 
 

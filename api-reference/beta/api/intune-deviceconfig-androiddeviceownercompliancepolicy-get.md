@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d5f3b7fc60afa828eaec1e3ae341eea312c50b41
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 3e1d516bc382d29a1602077807543f7f30f433f4
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38085017"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39953917"
 ---
 # <a name="get-androiddeviceownercompliancepolicy"></a>Получение Андроиддевицеовнеркомплианцеполици
 
@@ -47,7 +47,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1411
+Content-Length: 1476
 
 {
   "value": {
@@ -82,6 +82,7 @@ Content-Length: 1411
     "version": 7,
     "deviceThreatProtectionEnabled": true,
     "deviceThreatProtectionRequiredSecurityLevel": "secured",
+    "advancedThreatProtectionRequiredSecurityLevel": "secured",
     "securityRequireSafetyNetAttestationBasicIntegrity": true,
     "securityRequireSafetyNetAttestationCertifiedDevice": true,
     "osMinimumVersion": "Os Minimum Version value",
@@ -103,7 +104,6 @@ Content-Length: 1411
   }
 }
 ```
-
 
 
 
