@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a781e5d9e6d45b9819efa5124d5ed7ecdf8815db
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 16153d954741e182fa73bf4d1b5239fb6cdfbe81
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38084961"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39953518"
 ---
 # <a name="get-androiddeviceownertrustedrootcertificate"></a>Получение Андроиддевицеовнертрустедрутцертификате
 
@@ -49,7 +49,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -109,7 +109,6 @@ Content-Length: 1410
   }
 }
 ```
-
 
 
 

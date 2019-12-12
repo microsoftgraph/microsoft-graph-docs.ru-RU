@@ -4,12 +4,12 @@ description: Список API Microsoft Graph для конечных точек
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 78b67a189da837f975f3b1aa8df0cc9527e0e781
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: c8031b38eb9e86641b4dd62388b067847edace97
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078359"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955731"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Настройка устройств в Microsoft Intune
 
@@ -116,7 +116,6 @@ ms.locfileid: "38078359"
 - [Политика BitLocker в отношении встроенных дисков](intune-deviceconfig-bitlockerfixeddrivepolicy.md)
 - [Тип сведений для восстановления с помощью BitLocker](intune-deviceconfig-bitlockerrecoveryinformationtype.md)
 - [Параметры восстановления BitLocker](intune-deviceconfig-bitlockerrecoveryoptions.md)
-- [Тип вращения пароля восстановления BitLocker](intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)
 - [Политика BitLocker в отношении съемных дисков](intune-deviceconfig-bitlockerremovabledrivepolicy.md)
 - [Политика BitLocker в отношении системных дисков](intune-deviceconfig-bitlockersystemdrivepolicy.md)
 - [Параметр синхронизации браузера](intune-deviceconfig-browsersyncsetting.md)
@@ -296,13 +295,8 @@ ms.locfileid: "38078359"
 - [Конфигурация Wi-Fi для iOS](intune-deviceconfig-ioswificonfiguration.md)
 - [Конфигурация VPN EV2 Иосик](intune-deviceconfig-iosikev2vpnconfiguration.md)
 - [Расширение единого входа Kerberos](intune-deviceconfig-kerberossinglesignonextension.md)
-- [Ключевая логическая переменная значения](intune-deviceconfig-keybooleanvaluepair.md)
-- [Ключевое целое значение](intune-deviceconfig-keyintegervaluepair.md)
-- [Ключевое значение "ключевое значение"](intune-deviceconfig-keyrealvaluepair.md)
 - [Размер ключа](intune-deviceconfig-keysize.md)
 - [Параметр поставщика хранилища ключей](intune-deviceconfig-keystorageprovideroption.md)
-- [Ключевая строка значений ключа](intune-deviceconfig-keystringvaluepair.md)
-- [Комбинация типизированных типизированных значений](intune-deviceconfig-keytypedvaluepair.md)
 - [Использование ключей](intune-deviceconfig-keyusages.md)
 - [Значение ключа](intune-deviceconfig-keyvalue.md)
 - [Уровень проверки подлинности LAN Manager](intune-deviceconfig-lanmanagerauthenticationlevel.md)
