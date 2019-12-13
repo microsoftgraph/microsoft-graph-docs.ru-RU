@@ -3,12 +3,12 @@ title: Поставщики набора средств Microsoft Graph
 description: Поставщики набора средств Microsoft Graph обеспечивают проверку подлинности и доступ к Microsoft Graph для всех компонентов.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 52b0510fdc79253cb2a448b7a454b1dcfaf01bb9
-ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
+ms.openlocfilehash: 221258b49d9a5217829633c7882b9dd4f9d2a221
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37275726"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955787"
 ---
 # <a name="microsoft-graph-toolkit-providers"></a>Поставщики набора средств Microsoft Graph
 
@@ -29,13 +29,14 @@ Providers.globalProvider = new MsalProvider({
 - [мсалпровидер](./providers/msal.md)
 - [шарепоинтпровидер](./providers/sharepoint.md)
 - [теамспровидер](./providers/teams.md)
-- Поставщик надстроек Office (ожидается в ближайшее время)
-
-## <a name="get-started"></a>Начало работы
+- [проксипровидер](./providers/proxy.md)
+- [симплепровидер](./providers/custom.md)
 
 Вы можете создать поставщика в любое время. Рекомендуется создать поставщика перед использованием любого из компонентов. В этом разделе описывается, как инициализировать поставщика.
 
-`Providers` Глобальная переменная предоставляет следующие свойства и функции
+## <a name="providers-namespace"></a>Пространство имен поставщиков
+
+`Providers` Пространство имен предоставляет следующие свойства и функции:
 
 - `globalProvider : IProvider`
 
@@ -49,10 +50,10 @@ Providers.globalProvider = new MsalProvider({
 
 В наборе инструментов предусмотрено два способа создания новых поставщиков:
 
-- Создание нового `SimpleProvider` путем передачи функции для получения маркера доступа
-- Расширение `IProvider` абстрактного класса
+- Создайте новый `SimpleProvider` , передав функцию для получения маркера доступа.
+- Расширьте `IProvider` абстрактный класс.
 
-Дополнительные сведения о каждом из них содержатся в документации по [настраиваемым поставщикам](./providers/custom.md) .
+Дополнительные сведения о каждом из них можно найти в разделе [Настраиваемые поставщики](./providers/custom.md).
 
 ## <a name="using-multiple-providers"></a>Использование нескольких поставщиков
 
@@ -82,7 +83,7 @@ if (TeamsProvider.isAvailable) {
 
 ## <a name="making-your-own-calls-to-microsoft-graph"></a>Выполнение собственных вызовов в Microsoft Graph
 
-Все компоненты могут получать доступ к Microsoft Graph без какой-либо настройки, если вы инициализируем поставщик (как описано в предыдущем разделе). Чтобы получить ссылку на тот же пакет SDK Microsoft Graph, используемый компонентами, сначала получите ссылку на глобальный Ипровидер, а затем используйте `Graph` объект, как показано ниже.
+Все компоненты могут получать доступ к Microsoft Graph без какой-либо настройки, если вы инициализируем поставщик (как описано в предыдущем разделе). Чтобы получить ссылку на тот же пакет SDK Microsoft Graph, используемый компонентами, сначала получите ссылку на глобальный Ипровидер, а затем используйте `Graph` объект, как показано ниже:
 
 ```js
 import { Providers } from '@microsoft/mgt';

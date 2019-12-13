@@ -3,12 +3,12 @@ title: Компонент Person в наборе инструментов Micros
 description: Компонент Person используется для отображения человека или контакта, используя фотографию, имя и/или адрес электронной почты.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: b4664cf545c858dbb2d49ad5191ab7cf5118092e
-ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
+ms.openlocfilehash: ab9dc1bef81585bb71cdb29de015d8adb6030110
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37275705"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955857"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Компонент Person в наборе инструментов Microsoft Graph
 
@@ -51,10 +51,10 @@ ms.locfileid: "37275705"
 
 Для настройки компонента можно использовать несколько свойств.
 
-| Свойство    | Атрибут    | Описание                                                   |
-| ----------- | ------------ | ------------------------------------------------------------- |
-| шовнаме  | Show (имя)  | Установите флаг для отображения отображаемого имени пользователя — значение `false`по умолчанию —. |
-| шовемаил | Show — email | Установите флаг для отображения электронной почты пользователя — значение `false`по умолчанию —.        |
+| Атрибут    | Свойство   | Описание                                                   |
+| -----------  | ---------- | ------------------------------------------------------------- |
+| Show (имя)    | шовнаме   | Установите флаг для отображения отображаемого имени пользователя — значение `false`по умолчанию —. |
+| Show — email   | шовемаил  | Установите флаг для отображения электронной почты пользователя — значение `false`по умолчанию —.        |
 
 ## <a name="css-custom-properties"></a>Настраиваемые свойства CSS
 
@@ -112,9 +112,9 @@ mgt-person {
 <mgt-person person-query="me" person-card="hover"></mgt-person>
 ```
 
-| Свойство     | Атрибут     | Описание                                                                     |
+| Атрибут    |  Свойство     | Описание                                                                     |
 | ------------ | ------------- | ------------------------------------------------------------------------------- |
-| персонкард | Person — карточка | Перечисление для определения действия пользователя, необходимого для активации `hover` всплывающей `click`панели. Значение по умолчанию:`none` |
+| Person — карточка | персонкард | Перечисление для определения действия пользователя, необходимого для активации `hover` всплывающей `click`панели. Значение по умолчанию:`none` |
 
 
 Для получения дополнительных сведений о шаблонах, стилях и атрибутах обратитесь к [компоненту карточки сотрудника](./person-card.md).
@@ -123,13 +123,13 @@ mgt-person {
 
 Этот элемент управления использует указанные ниже API и разрешения Microsoft Graph.
 
-| Ресурс                                                                                                    | Разрешение     |
+| Resource                                                                                                    | Разрешение     |
 | ----------------------------------------------------------------------------------------------------------- | -------------------- |
-| [/ме](https://docs.microsoft.com/en-us/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
-| [/ме/фото/$value](https://docs.microsoft.com/en-us/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |
-| [/ме/Пеопле/? $search =](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0)     | People.Read        |
-| [/ме/контактс/*](https://docs.microsoft.com/en-us/graph/api/user-list-contacts?view=graph-rest-1.0&tabs=cs) | Contacts.Read      |
-| [/усерс/{ИД}/фото/$value](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0) | User.ReadBasic.All |
+| [/ме](https://docs.microsoft.com/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
+| [/ме/фото/$value](https://docs.microsoft.com/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |
+| [/ме/Пеопле/? $search =](https://docs.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0)     | People.Read        |
+| [/ме/контактс/*](https://docs.microsoft.com/graph/api/user-list-contacts?view=graph-rest-1.0&tabs=cs) | Contacts.Read      |
+| [/усерс/{ИД}/фото/$value](https://docs.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0) | User.ReadBasic.All |
 
 > **Примечание:** чтобы получить доступ `*/photo/$value` к ресурсам для личных учетных записей Майкрософт, используйте конечную точку бета-версии Microsoft Graph.
 

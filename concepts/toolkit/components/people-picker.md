@@ -3,12 +3,12 @@ title: Компонент "Выбор людей"
 description: Вы можете использовать веб-компонент "центр управления", чтобы выполнить поиск указанного числа людей и отобразить список результатов с помощью Microsoft Graph.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: d77c6578d79edb60fbba08200dc033f032b39282
-ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
+ms.openlocfilehash: 22ad36715dd0405d44214901a0adf90bb717b167
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37275851"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955890"
 ---
 # <a name="people-picker-component"></a>Компонент "Выбор людей"
 
@@ -30,17 +30,42 @@ ms.locfileid: "37275851"
 
 По умолчанию `mgt-people-picker` компонент получает события от `/me/people` конечной точки. Используйте следующие атрибуты, чтобы изменить это поведение.
 
-| Свойство | Атрибут | Описание                                                                                                                                                                            |
+| Атрибут | Свойство | Описание                                                                                                                                                                            |
 | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| шовмакс  | Show — Max  | Числовое значение, указывающее максимальное число людей для отображения. значение по умолчанию — 6.                                                                                             |
+| Show — Max | шовмакс   | Числовое значение, указывающее максимальное число людей для отображения. значение по умолчанию — 6.                                                                                             |
 | people   | people    | Массив пользователей, который получает или задает список людей, отображаемых компонентом. Используйте это свойство для доступа к пользователям, загруженным компонентом. Присвойте этому параметру значение загрузка собственных пользователей. |
 | group    | group     | Строковое значение, принадлежащее определенной группе Microsoft Graph для дальнейшей фильтрации результатов поиска.                                                                            |
+|  Выбранные пользователи  | селектедпеопле     | Массив типа `person`, представляющий людей, выбранных в компоненте. Задайте для этого параметра значение выбранные пользователи по умолчанию.|
 
-Ниже приведен пример.
+Ниже приведен `show-max` пример.
 
 ```html
 <mgt-people-picker show-max="4"> </mgt-people-picker>
 ```
+
+## <a name="selected-people"></a>Выбранные люди
+
+В разделе выбранные люди компонента отображается каждый пользователь, выбранный разработчиком или пользователем. 
+
+![Центр управления "Выбор людей"](./images/selected-people.png)
+
+Вы можете заполнить выбранные данные о людях, выполнив одно из следующих действий:
+
+- Непосредственное `selectedPeople` задание свойства, как показано в следующем примере.  
+
+    ```javascript
+    // personObject = User or Person from Microsoft Graph
+    document.querySelector('mgt-people-picker').selectedPeople.push(personObject);
+    ```
+
+- С помощью `selectUsersById()` метода, который принимает массив [идентификаторов пользователей](https://docs.microsoft.com/graph/api/resources/users?view=graph-rest-1.0) Microsoft Graph, чтобы найти сведения о пользователе для выбора.
+
+     >**Примечание:** Если для пользователя не найдено ни одного `id`пользователя, данные не будут отображены `id`.
+
+    ```javascript
+    // id = Mirosoft graph User "id"
+    document.querySelector('mgt-people-picker').selectUsersById(["id","id"])
+    ```
 
 ## <a name="css-custom-properties"></a>Настраиваемые свойства CSS
 
@@ -53,14 +78,35 @@ mgt-people-picker {
 }
 ```
 
+## <a name="templates"></a>Шаблоны
+
+ `mgt-people-picker`поддерживает несколько [шаблонов](../templates.md) , которые можно использовать для замены определенных частей компонента. Чтобы указать шаблон, включите `<template>` элемент в компонент и задайте для него `data-type` одно из следующих значений.
+
+| Тип данных | Контекст данных | Описание |
+| --- | --- | --- |
+| загрузки | NULL: нет данных | Шаблон, используемый для отображения состояния средства выбора при запросе к Graph. |
+| error | NULL: нет данных| Шаблон, используемый, если поиск пользователей не возвращает пользователей. |
+| выбранное лицо |Person: объект сведений о лице| Шаблон для отображения выбранных пользователей. |
+| person | Person: объект сведений о лице| Шаблон для отображения людей в раскрывающемся меню. |
+
+В приведенных ниже примерах показано, `error` как использовать шаблон.
+
+```html
+<mgt-people-picker>
+  <template data-type="error">
+    <p>Sorry, no people were found</p>
+  </template>
+</mgt-people-picker>
+```
+
 ## <a name="microsoft-graph-permissions"></a>Разрешения Microsoft Graph
 
 Этот компонент использует указанные ниже API и разрешения Microsoft Graph.
 
 | API                                                                                                              | Разрешение  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
-| [/ме/пеопле](https://docs.microsoft.com/en-us/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read |
-| [/граупс/\${groupId}/мемберс](https://docs.microsoft.com/en-us/graph/api/group-list-members?view=graph-rest-1.0) | People.Read |
+| [/ме/пеопле](https://docs.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read |
+| [/граупс/\${groupId}/мемберс](https://docs.microsoft.com/graph/api/group-list-members?view=graph-rest-1.0) | People.Read |
 
 ## <a name="authentication"></a>Проверка подлинности
 

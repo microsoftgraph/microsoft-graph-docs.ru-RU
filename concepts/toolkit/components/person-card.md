@@ -3,12 +3,12 @@ title: Компонент Person Card в наборе инструментов M
 description: Компонент Person-Card является компонентом для отображения дополнительных сведений, относящихся к пользователю.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: f4d8c975fe91d91658f512cea708ee104d4fd906
-ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
+ms.openlocfilehash: 7f4f20773b152db037d3b57481aa5e8638866f52
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37275859"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955871"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Компонент Person Card в наборе инструментов Microsoft Graph
 
@@ -26,11 +26,11 @@ ms.locfileid: "37275859"
 
 Компонент использует Microsoft Graph для предоставления дополнительных сведений о пользователе. Чтобы определить пользователя, необходимо использовать свойство **Person — запрос** `mgt-person`.
 
-| Атрибут         | type                     | Описание                                                                           |
+| Атрибут         | Тип                     | Описание                                                                           |
 | ---------------- | -------------------------------- | ------------------------------------------------------------------------------------- |
 | Person — сведения | MicrosoftGraph. User <br> MicrosoftGraph. Person <br> MicrosoftGraph. Contact | Объект Person, определенный Microsoft Graph, содержащий сведения, связанные с пользователем. |
 | Person — изображение   | PNG/JPG/SVG                    | Изображение, связанное с лицом, которое отображается в карточке.                                   |
-
+| inherit — Details   | Нет.                  | Позволяет пользователю просматривать родительское дерево по родительскому `mgt-person` дереву, чтобы компонент `person-details` использовал `person-image` то же и данные.                      |
 
 
 ## <a name="templates"></a>Шаблоны
@@ -39,16 +39,15 @@ ms.locfileid: "37275859"
 
 | Тип данных | Контекст данных | Описание |
 | --- | --- | --- |
-| умолчани | Person: объект сведений о лице <br> Персонимаже: URL-адрес изображения | Шаблон по умолчанию заменяет весь компонент своим собственным. |
-| Дополнительные сведения | Person: объект сведений о лице <br> Персонимаже: URL-адрес изображения | Шаблон, используемый для добавления в карточку дополнительного контента. |
+| умолчани | `person`: Объект сведений о лице <br> `personImage`: URL-адрес изображения | Шаблон по умолчанию заменяет весь компонент своим собственным. |
+| Дополнительные сведения | `person`: Объект сведений о лице <br> `personImage`: URL-адрес изображения | Шаблон, используемый для добавления в карточку дополнительного контента. |
 
 Например, вы можете использовать шаблон для настройки компонента, присоединенного к `mgt-person` компоненту, и шаблона, чтобы добавить дополнительные сведения в карточку. 
 
 ```html
     <mgt-person person-query="me" show-name show-email person-card="hover">
       <template data-type="person-card">
-        <mgt-person-card person-details="{{person}}" 
-            person-image="{{personImage}}">
+        <mgt-person-card inherit-details>
           <template data-type="additional-details">
             <h3>Stuffed Animal Friends:</h3>
             <ul>

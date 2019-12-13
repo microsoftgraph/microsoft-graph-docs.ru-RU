@@ -3,12 +3,12 @@ title: Шаблоны в наборе инструментов Microsoft Graph
 description: Используйте настраиваемые шаблоны для изменения содержимого компонента.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: b9ef4b9422d84886fa4df76618b6cdf14def2378
-ms.sourcegitcommit: d9e94c109c0934cc93f340aafa1dccaa1a5da9c7
+ms.openlocfilehash: 59dbda5b18e1c8cb0c858c073a25f4a76b121fe6
+ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37275712"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "39955752"
 ---
 # <a name="templates-in-the-microsoft-graph-toolkit"></a>Шаблоны в наборе инструментов Microsoft Graph
 
@@ -67,6 +67,29 @@ ms.locfileid: "37275712"
 ```
 
 > **Примечание:** Вы также можете развернуть такие объекты, `{{event}}` как, и они будут отображаться как строки JSON. Это может быть удобно при разработке шаблонов.
+
+## <a name="data-context-helper-properties"></a>Вспомогательные свойства контекста данных
+
+Следующие свойства также можно использовать с объектом контекста данных в шаблонах.
+
+| Свойство |  Описание |
+| --- | --- | --- |
+| $index | Числовой индекс элемента, отображаемого в `data-for`цикле. |
+| $parent | Если шаблон отображается в другом шаблоне, это свойство позволяет получить доступ к родительскому контексту данных. |
+
+В приведенном ниже примере показано, как `$index` использовать свойство в цикле обработки данных.
+
+```html
+<mgt-person>
+  <mgt-person-card>
+    <template data-type="additional-details">
+      <span data-for="language in languages">
+        {{ language.displayName }}<span data-if="$index < languages.length - 1">, </span>
+      </span>
+    </template>
+  </mgt-person-card>
+</mgt-person>
+```
 
 ## <a name="conditional-rendering"></a>Условная визуализация
 

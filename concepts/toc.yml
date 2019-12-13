@@ -439,10 +439,12 @@ items:
                 href: toolkit/components/agenda.md
               - name: Задачи
                 href: toolkit/components/tasks.md
-              - name: Выбор людей
+              - name: Средство выбора людей
                 href: toolkit/components/people-picker.md
-              - name: Карточка контакта
+              - name: Карточка физического лица
                 href: toolkit/components/person-card.md
+              - name: Получение
+                href: toolkit/components/get.md
           - name: Поставщики
             items:
               - name: Использование поставщиков
@@ -453,6 +455,8 @@ items:
                 href: toolkit/providers/sharepoint.md
               - name: Поставщик Microsoft Teams
                 href: toolkit/providers/teams.md
+              - name: Поставщик прокси
+                href: toolkit/providers/proxy.md
               - name: Настраиваемый поставщик
                 href: toolkit/providers/custom.md
           - name: Компоненты стиля
