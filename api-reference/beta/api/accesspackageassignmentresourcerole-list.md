@@ -1,16 +1,16 @@
 ---
 title: Список Акцесспаккажеассигнментресаурцеролес
-description: Получение списка объектов Акцесспаккажеассигнментресаурцерроле.
+description: Получение списка объектов Акцесспаккажеассигнментресаурцероле.
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 07fc724591b99bb18d1a1540e7e3ec3da4f767ac
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 63ece8b5abcf6014e6ccbc293a773ea3dab8f462
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994313"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868011"
 ---
 # <a name="list-accesspackageassignmentresourceroles"></a>Список Акцесспаккажеассигнментресаурцеролес
 
@@ -44,9 +44,9 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentResourceRol
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Носитель \{токен\}. Обязательный элемент. |
+| Authorization | Носитель \{токен\}. Обязательно. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

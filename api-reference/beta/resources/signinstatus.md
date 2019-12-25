@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: d336e226b2855687da0aae889afd9d92141c895c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0f86c7026fc487e48388bd3d20e973e7a0cf7e41
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008308"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866611"
 ---
 # <a name="signinstatus-resource-type"></a>Тип ресурса Сигнинстатус
 Предоставляет состояние входа (успешный или неудачный) входа
@@ -21,8 +21,8 @@ ms.locfileid: "36008308"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |additionalDetails|String|Предоставляет дополнительные сведения об активности входа|
-|errorCode|Int32|Предоставляет код ошибки 5 6digit, который создается при сбое входа. Ознакомьтесь со [списком кодов и сообщений об ошибках](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).|
-|failureReason|String|Содержит сообщение об ошибке или причину сбоя для соответствующего действия при входе. Ознакомьтесь со [списком кодов и сообщений об ошибках](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).|
+|errorCode|Int32|Предоставляет код ошибки 5 6digit, который создается при сбое входа. Ознакомьтесь со [списком кодов и сообщений об ошибках](/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).|
+|failureReason|String|Содержит сообщение об ошибке или причину сбоя для соответствующего действия при входе. Ознакомьтесь со [списком кодов и сообщений об ошибках](/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).|
 
 ## <a name="json-representation"></a>Представление JSON
 

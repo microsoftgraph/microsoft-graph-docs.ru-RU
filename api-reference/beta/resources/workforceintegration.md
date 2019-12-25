@@ -5,18 +5,18 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: fa604c7d087d3231dd6ed1c6903a87f80298904b
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: 631f2cc52b9327d77edd6fc5ad48292cf044570f
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895842"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866492"
 ---
 # <a name="workforceintegration-resource-type"></a>Тип ресурса Воркфорцеинтегратион
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Экземпляр интеграции воркфорцефорце с сменами.
+Экземпляр интеграции сотрудников с сменами.
 
 ## <a name="methods"></a>Методы
 
@@ -24,7 +24,7 @@ ms.locfileid: "39895842"
 |:-------------|:------------|:------------|
 | [получение](../api/workforceintegration-get.md); | [воркфорцеинтегратион](workforceintegration.md) | Чтение свойств и связей объекта **воркфорцеинтегратион** . |
 | [обновление](../api/workforceintegration-update.md). | [воркфорцеинтегратион](workforceintegration.md) | Обновление объекта **воркфорцеинтегратион** . |
-| [удаление](../api/workforceintegration-delete.md); | Нет | Удаление объекта **воркфорцеинтегратион** . |
+| [удаление](../api/workforceintegration-delete.md); | Нет. | Удаление объекта **воркфорцеинтегратион** . |
 
 ## <a name="properties"></a>Свойства
 
@@ -37,7 +37,7 @@ ms.locfileid: "39895842"
 |имеется|string| Возможные значения: `none`, `shift`, `swapRequest`, `openshift`,, `openShiftRequest``userShiftPreferences`|
 |url|String| URL-адрес интеграции сотрудников для обратных вызовов из службы смены.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

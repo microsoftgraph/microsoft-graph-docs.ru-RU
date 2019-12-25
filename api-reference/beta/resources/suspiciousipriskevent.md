@@ -5,25 +5,28 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: a774c94d8e4ade2067e3aa784c42bee5db6ee3b0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 24d7e80d3f6b73658f63a0aaaf8f355f8db54971
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008049"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866569"
 ---
 # <a name="suspiciousipriskevent-resource-type"></a>Тип ресурса СуспиЦиаусиприскевент
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Событие риска, обнаруженное при попытке входа учетной записи с подозрительным IP-адресом с помощью средства [защиты удостоверений Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/) . Полную информацию о событиях риска можно найти в [документации по защите удостоверений Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/).
+>[!NOTE]
+>API **идентитирискевентс** устарел и не возвращает данные на 10 января 2020. Дополнительные сведения см. [в разделе устаревшее API идентитирискевентс](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
+
+Событие риска, обнаруженное при попытке входа учетной записи с подозрительным IP-адресом с помощью средства [защиты удостоверений Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/) . Полную информацию о событиях риска можно найти в [документации по защите удостоверений Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection-risk-events-types/).
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта suspiciousIpRiskEvent](../api/suspiciousipriskevent-get.md) | [СуспиЦиаусиприскевент](suspiciousipriskevent.md) |Чтение свойств и связей объекта СуспиЦиаусиприскевент.|
+|[Получение объекта suspiciousIpRiskEvent](../api/suspiciousipriskevent-get.md) | [суспиЦиаусиприскевент](suspiciousipriskevent.md) |Чтение свойств и связей объекта СуспиЦиаусиприскевент.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -33,18 +36,18 @@ ms.locfileid: "36008049"
 |id|string| Только для чтения|
 |ipAddress|string| IP-адрес входа|
 |location|string| Расположение, подключенное к IP-адресу входа|
-|Рискевентдатетиме|dateTimeOffset| Дата и время возникновения события риска|
-|Рискевентстатус|string| Возможные значения: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
+|рискевентдатетиме|dateTimeOffset| Дата и время возникновения события риска|
+|рискевентстатус|string| Возможные значения: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
 |riskLevel|string| Возможные значения: `low`, `medium`, `high`.|
-|Рискевенттипе|string| Тип риска|
+|рискевенттипе|string| Тип риска|
 |userDisplayName|string| Имя пользователя под угрозой|
-|userId|string| Идентификатор пользователя, который подвергается риску|
+|userId|строка| Идентификатор пользователя, который подвергается риску|
 |userPrincipalName|string| Имя участника пользователя, который подвергается риску|
 
 ## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Импактедусер|[user](user.md)| Только для чтения. Допускается значение null.|
+|импактедусер|[user](user.md)| Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 

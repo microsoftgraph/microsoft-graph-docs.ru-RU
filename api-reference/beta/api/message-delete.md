@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 285c84c9848f097bad97864da052fc245f5700dc
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 70854305f87546f716b56fdc53122b11c7b56dec
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415101"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40867815"
 ---
 # <a name="delete-message"></a>Удаление сообщения
 
@@ -18,9 +18,9 @@ ms.locfileid: "36415101"
 
 Удаление сообщения из почтового ящика указанного пользователя или удаление связи сообщения.
 
-Например, вы можете удалить из сообщения указанного [](../resources/mention.md) пользователя.
+Например, вы можете [удалить из сообщения](../resources/mention.md) указанного пользователя.
 
->**Note (Примечание** ) Удаление элементов из папки "удаления элементов с возможностью восстановления" может быть недоступно (представлено известным [именем](../resources/mailfolder.md) `recoverableitemsdeletions`папки). Дополнительные сведения см. в статье [Хранение удаленных](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) элементов и [Очистка удаленных элементов](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) .
+>**Note (Примечание** ) Удаление элементов из папки "удаления элементов с возможностью восстановления" может быть недоступно (представлено [известным именем](../resources/mailfolder.md) `recoverableitemsdeletions`папки). Дополнительные сведения см. в статье [Хранение удаленных](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) элементов и [Очистка удаленных элементов](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -83,14 +83,14 @@ DELETE https://graph.microsoft.com/beta/me/messages/{id}
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-message-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ##### <a name="response-1"></a>Отклик 1
-Ниже приведен пример отклика. 
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -100,7 +100,7 @@ HTTP/1.1 204 No Content
 ```
 
 ##### <a name="request-2"></a>Запрос 2
-В следующем примере показано, как **** удалить определенное упоминание из указанного сообщения.
+В следующем примере показано, как удалить определенное **упоминание** из указанного сообщения.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -118,14 +118,14 @@ DELETE https://graph.microsoft.com/beta/me/messages/{id}/mentions/{id}
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-mention-in-message-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-mention-in-message-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ##### <a name="response-2"></a>Отклик 2
-Ниже приведен пример отклика. 
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true

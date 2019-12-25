@@ -1,28 +1,28 @@
 ---
 title: Тип ресурса Медиапромпт
-description: Тип Медиапромпт.
+description: Содержит сведения о звуковом файле, который необходимо воспроизвести, и другие дополнительные параметры.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 1def44fbf2208f40ff432e943e9d6768718258c9
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: ba04bda06fa4adfe158046e5e0b251e770e5ee38
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006664"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866709"
 ---
 # <a name="mediaprompt-resource-type"></a>Тип ресурса Медиапромпт
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Тип Медиапромпт.
+Содержит сведения о звуковом файле, который необходимо воспроизвести, и другие дополнительные параметры.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство    | Тип                      | Описание                                                                     |
 | :---------- | :------------------------ | :------------------------------------------------------------------------------ |
-| медиаинфо   | [медиаинфо](mediainfo.md) | Сведения о мультимедиа                                                           |
+| медиаинфо   | [медиаинфо](mediainfo.md) | Сведения о мультимедиа.                                                          |
 
 ## <a name="json-representation"></a>Представление JSON
 

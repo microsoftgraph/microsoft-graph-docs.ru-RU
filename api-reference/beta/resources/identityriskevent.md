@@ -5,35 +5,38 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 7ea0a11931021e828660cc7b03991b8ea96ef1f1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 47b8b7590be2d4b235bb04fe079b58cf65cb4ae7
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005802"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866793"
 ---
 # <a name="identityriskevent-resource-type"></a>Тип ресурса Идентитирискевент
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Событие риска, обнаруженное [защитой удостоверений Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/). Это базовый тип для каждого конкретного типа событий риска:
+>[!NOTE]
+>API **идентитирискевентс** устарел и не возвращает данные на 10 января 2020. Дополнительные сведения см. [в разделе устаревшее API идентитирискевентс](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
+
+Событие риска, обнаруженное [защитой удостоверений Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/). Это базовый тип для каждого конкретного типа событий риска:
 
 | Тип события         | Описание|
 |:---------------|:-----------|
-|[Анонимаусиприскевент](anonymousipriskevent.md) | Входы из анонимных IP-адресов. |
-|[Малварерискевент](malwareriskevent.md) | Входы с зараженных вредоносными программами устройств. |
-|[Импоссиблетравелрискевент](impossibletravelriskevent.md) | Невозможность перемещаться к необычным расположениям. |
-|[Леакедкредентиалсрискевент](leakedcredentialsriskevent.md) | Пользователи с потерянными учетными данными. |
-|[СуспиЦиаусиприскевент](suspiciousipriskevent.md) | Входы из подозрительных IP-адресов. |
-|[Унфамилиарлокатионрискевент](unfamiliarlocationriskevent.md) | Входы из незнакомых расположений. |
+|[анонимаусиприскевент](anonymousipriskevent.md) | Входы из анонимных IP-адресов. |
+|[малварерискевент](malwareriskevent.md) | Входы с зараженных вредоносными программами устройств. |
+|[импоссиблетравелрискевент](impossibletravelriskevent.md) | Невозможность перемещаться к необычным расположениям. |
+|[леакедкредентиалсрискевент](leakedcredentialsriskevent.md) | Пользователи с потерянными учетными данными. |
+|[суспиЦиаусиприскевент](suspiciousipriskevent.md) | Входы из подозрительных IP-адресов. |
+|[унфамилиарлокатионрискевент](unfamiliarlocationriskevent.md) | Входы из незнакомых расположений. |
 
-Полную информацию о событиях риска можно найти в [документации по защите удостоверений Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-risk-events).
+Полную информацию о событиях риска можно найти в [документации по защите удостоверений Azure AD](/azure/active-directory/active-directory-reporting-risk-events).
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта identityRiskEvent](../api/identityriskevent-get.md) | [Идентитирискевент](identityriskevent.md) |Чтение свойств и связей объекта Идентитирискевент.|
+|[Получение объекта identityRiskEvent](../api/identityriskevent-get.md) | [идентитирискевент](identityriskevent.md) |Чтение свойств и связей объекта Идентитирискевент.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -41,22 +44,22 @@ ms.locfileid: "36005802"
 |closedDateTime|dateTimeOffset| Дата и время закрытия события риска|
 |createdDateTime|dateTimeOffset| Дата и время создания события риска. Он всегда больше или равен значению DateTime самого события риска. Это правильное свойство, используемое в качестве фильтра при запросе событий риска.|
 |id|string| Только для чтения|
-|Рискевентдатетиме|dateTimeOffset| Дата и время возникновения события риска|
-|Рискевентстатус|string| Возможные значения: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
+|рискевентдатетиме|dateTimeOffset| Дата и время возникновения события риска|
+|рискевентстатус|string| Возможные значения: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
 |riskLevel|string| Возможные значения: `low`, `medium`, `high`.|
-|Рискевенттипе|string| Тип риска|
+|рискевенттипе|string| Тип риска|
 |userDisplayName|string| Имя пользователя под угрозой|
-|userId|string| Идентификатор пользователя, который подвергается риску|
+|userId|строка| Идентификатор пользователя, который подвергается риску|
 |userPrincipalName|string| Имя участника пользователя, который подвергается риску|
 
 ## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Импактедусер|[user](user.md)| Только для чтения. Допускается значение null.|
+|импактедусер|[user](user.md)| Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже представлено описание ресурса в формате JSON. 
+Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",

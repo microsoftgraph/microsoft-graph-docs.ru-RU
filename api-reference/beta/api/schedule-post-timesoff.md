@@ -5,18 +5,18 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fb8f4254f5cf110e5cc7f98b121886937274fc2d
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: f9a075bbcb7365c6e7d915cac6f2c902ad7d674a
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410690"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40867913"
 ---
 # <a name="create-timeoff"></a>Создание Тимеофф
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый экземпляр [тимеофф](../resources/timeoff.md) в расписании [](../resources/schedule.md).
+Создайте новый экземпляр [тимеофф](../resources/timeoff.md) в [расписании](../resources/schedule.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,9 @@ ms.locfileid: "36410690"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Не поддерживается. |
+|Приложение | Schedule. ReadWrite. ALL * |
+
+>\***Важно!** Разрешения на доступ к приложениям в настоящее время доступны только для частного просмотра и недоступны для использования в общедоступном режиме.
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
 
@@ -43,9 +45,9 @@ POST /teams/{teamId}/schedule/timesOff
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Обязательный.  |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [тимеофф](../resources/timeoff.md) в тексте отклика.
 
@@ -88,7 +90,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/timeoff-post-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/timeoff-post-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

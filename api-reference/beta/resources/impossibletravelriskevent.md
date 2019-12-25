@@ -5,52 +5,55 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 2b66755924022b4fa30637cc8e97c4f944ad2d79
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: be2b5db09a20264525e783e05771f6d1da2783e2
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005774"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866786"
 ---
 # <a name="impossibletravelriskevent-resource-type"></a>Тип ресурса Импоссиблетравелрискевент
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Событие риска, обнаруженное службой [удостоверений Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/) , в котором два входа учетной записи происходят из расположений, нетипичных для пользователя, и вы не сможете перемещаться между расположениями в промежутке между входами. Complete сведения о событиях риска можно найти в [документации по защите удостоверений Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/).
+>[!NOTE]
+>API **идентитирискевентс** устарел и не возвращает данные на 10 января 2020. Дополнительные сведения см. [в разделе устаревшее API идентитирискевентс](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
+
+Событие риска, обнаруженное службой [удостоверений Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/) , в котором два входа учетной записи происходят из расположений нетипично для пользователя, и вы не сможете перемещаться между расположениями в период между входами. полные сведения о событиях риска можно найти в [документации по защите удостоверений Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection-risk-events-types/).
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта impossibleTravelRiskEvent](../api/impossibletravelriskevent-get.md) | [Импоссиблетравелрискевент](impossibletravelriskevent.md) |Чтение свойств и связей объекта Импоссиблетравелрискевент.|
+|[Получение объекта impossibleTravelRiskEvent](../api/impossibletravelriskevent-get.md) | [импоссиблетравелрискевент](impossibletravelriskevent.md) |Чтение свойств и связей объекта Импоссиблетравелрискевент.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| Дата и время закрытия события риска|
 |createdDateTime|dateTimeOffset| Дата и время создания события риска. Он всегда больше или равен значению DateTime самого события риска. Это правильное свойство, используемое в качестве фильтра при запросе событий риска.|
-|Девицеинформатион|string| Сведения об устройстве|
+|девицеинформатион|string| Сведения об устройстве|
 |id|string| Только для чтения|
 |ipAddress|string| IP-адрес второго входа|
-|Исатипикаллокатион|boolean| Если одно из расположений для пользователя является нетипичным|
+|исатипикаллокатион|boolean| Если одно из расположений для пользователя является нетипичным|
 |location|string| Расположение, подключенное к IP-адресу второго входа|
-|Превиаусипаддресс|string| IP-адрес первого входа|
-|Превиауслокатион|string| Расположение, подключенное к IP-адресу первого входа|
-|Превиауссигниндатетиме|dateTimeOffset| Дата и время первого входа|
-|Рискевентдатетиме|dateTimeOffset| Дата и время второго входа|
-|Рискевентстатус|string| Возможные значения: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
+|превиаусипаддресс|string| IP-адрес первого входа|
+|превиауслокатион|string| Расположение, подключенное к IP-адресу первого входа|
+|превиауссигниндатетиме|dateTimeOffset| Дата и время первого входа|
+|рискевентдатетиме|dateTimeOffset| Дата и время второго входа|
+|рискевентстатус|string| Возможные значения: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
 |riskLevel|string| Возможные значения: `low`, `medium`, `high`.|
-|Рискевенттипе|string| Тип риска|
+|рискевенттипе|string| Тип риска|
 |userAgent|string| Строка агента пользователя браузера|
 |userDisplayName|string| Имя пользователя под угрозой|
-|userId|string| Идентификатор пользователя, который подвергается риску|
+|userId|строка| Идентификатор пользователя, который подвергается риску|
 |userPrincipalName|string| Имя участника пользователя, который подвергается риску|
 
 ## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Импактедусер|[user](user.md)| Только для чтения. Допускается значение null.|
+|импактедусер|[user](user.md)| Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 

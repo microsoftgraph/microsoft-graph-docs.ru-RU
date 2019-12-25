@@ -5,30 +5,31 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c50b183819d7f56c6d5317a6e30840b674be750a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b528ce517bc5cd3df627c01ffc247f5aeef19015
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35990787"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40864938"
 ---
 # <a name="publish-apps-to-your-organizations-app-catalog"></a>Публикация приложений в каталоге приложений Организации
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Опубликуйте [приложение](../resources/teamsapp.md) в каталоге приложений Microsoft Teams. В частности, этот API публикует приложение в каталоге организации (Каталог приложений клиента); созданный ресурс будет иметь `distributionMethod`  =  `organization`.
+Опубликуйте [приложение](../resources/teamsapp.md) в каталоге приложений Microsoft Teams.
+В частности, этот API публикует приложение в каталоге организации (Каталог приложений клиента); созданный ресурс будет иметь `distributionMethod`  =  `organization`.
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
 
->**Примечание:** Только глобальные администраторы могут вызывать этот API. 
+>**Примечание:** Только глобальные администраторы могут вызывать этот API.
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)|
 |:----------------------------------     |:-------------|
 | Делегированные (рабочая или учебная учетная запись)     | AppCatalog.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается|
-| Для приложений                            | Не поддерживается|
+| Приложение                            | Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -45,9 +46,11 @@ POST /appCatalogs/teamsApps
 
 ## <a name="request-body"></a>Тело запроса
 
-Полезные данные манифеста ZIP Teams. Для ZIP-файла приложения Teams [в разделе Create a App Package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). Вы не можете создать приложение для Организации с таким же ИДЕНТИФИКАТОРом манифеста, что и у другого приложения в этой Организации.
+Полезные данные манифеста ZIP Teams.
+Для ZIP-файла приложения Teams [в разделе Create a App Package](/microsoftteams/platform/concepts/apps/apps-package).
+Вы не можете создать приложение для Организации с таким же ИДЕНТИФИКАТОРом манифеста, что и у другого приложения в этой Организации.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [теамскаталогапп](../resources/teamsapp.md) .
 
@@ -63,7 +66,7 @@ Content-length: 244
 [Zip file containing a Teams app package]
 ```
 
-Сведения о том, как создать ZIP-файл приложения Microsoft Teams, можно найти в разделе [Создание пакета приложения](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). 
+Сведения о том, как создать ZIP-файл приложения Microsoft Teams, можно найти в разделе [Создание пакета приложения](/microsoftteams/platform/concepts/apps/apps-package).
 
 ### <a name="response"></a>Отклик
 

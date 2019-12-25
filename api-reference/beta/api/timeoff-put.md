@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9288ed6db5111b99f4cf0f7488d81626678f90dc
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: eabdfe2eb57cf5b2a4dd3917df756a8e144f3a71
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895301"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40863673"
 ---
 # <a name="replace-timeoff"></a>Замена Тимеофф
 
@@ -28,7 +28,9 @@ ms.locfileid: "39895301"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Не поддерживается. |
+|Приложение | Schedule. ReadWrite. ALL *  |
+
+>\***Важно!** Разрешения на доступ к приложениям в настоящее время доступны только для частного просмотра и недоступны для использования в общедоступном режиме.
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
 
@@ -45,13 +47,13 @@ PUT /teams/{teamId}/schedule/timesOff/{timeOffId}
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [тимеофф](../resources/timeoff.md) в формате JSON.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [тимеофф](../resources/timeoff.md) в тексте отклика.
 

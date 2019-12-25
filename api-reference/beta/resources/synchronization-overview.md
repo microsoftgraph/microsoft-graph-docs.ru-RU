@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: conceptualPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 818f5060db1fe4f6c05f0473e438095877ead119
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7e2e64f72c52a6f571b8b97cde643441d8837eda
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007867"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866548"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Общие сведения об API синхронизации Azure AD
 
@@ -20,12 +20,12 @@ ms.locfileid: "36007867"
 
 - Создание, запуск и остановка заданий синхронизации
 - Внесение изменений в схему синхронизации для заданий
-- Проверка текущего состояния синхронизации 
+- Проверка текущего состояния синхронизации
 
 Дополнительные сведения о синхронизации в Azure AD приведены в следующих статьях:
 
-* [Автоматизация подготовки пользователей и их отмена в приложениях SaaS с помощью Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-app-provisioning)
-* [Управление предоставлением учетных записей пользователей для корпоративных приложений на портале Azure](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-enterprise-apps-manage-provisioning)
+* [Автоматизация подготовки пользователей и их отмена в приложениях SaaS с помощью Azure Active Directory](/azure/active-directory/active-directory-saas-app-provisioning)
+* [Управление предоставлением учетных записей пользователей для корпоративных приложений на портале Azure](/azure/active-directory/active-directory-enterprise-apps-manage-provisioning)
 
 Вы также можете попробовать API в [проводнике Graph](https://developer.microsoft.com/graph/graph-explorer) в образце клиента или в собственном клиенте.
 
@@ -57,15 +57,15 @@ ms.locfileid: "36007867"
 
 Работа с API синхронизации в основном включает доступ к ресурсам [синчронизатионжоб](synchronization-synchronizationjob.md) и [синчронизатионсчема](synchronization-synchronizationschema.md) . Чтобы найти ресурс [синчронизатионжоб](synchronization-synchronizationjob.md) , необходимо знать идентификатор объекта участника службы, к которому относится задание синхронизации. В приведенных ниже примерах показано, как работать с ресурсами **синчронизатионжоб** и **синчронизатионсчема** .
 
-### <a name="authorization"></a>Авторизация
+### <a name="authorization"></a>Authorization
 
-API синхронизации Azure AD использует OAuth 2,0 для проверки подлинности. Перед выполнением запросов к API необходимо получить маркер доступа. Дополнительные сведения [можно найти в статье получение маркеров доступа для вызова Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview). Для доступа к ресурсам синхронизации приложению требуются разрешения Directory. ReadWrite. ALL. Для получения дополнительных сведений ознакомьтесь с разрешениями для [каталогов](/graph/permissions-reference#directory-permissions).
+API синхронизации Azure AD использует OAuth 2,0 для проверки подлинности. Перед выполнением запросов к API необходимо получить маркер доступа. Дополнительные сведения [можно найти в статье получение маркеров доступа для вызова Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview). Для доступа к ресурсам синхронизации приложению требуются разрешения Directory. ReadWrite. ALL. Для получения дополнительных сведений ознакомьтесь с [разрешениями для каталогов](/graph/permissions-reference#directory-permissions).
 
 ### <a name="find-the-service-principal-object-by-display-name"></a>Поиск объекта субъекта службы по отображаемому имени
 
 В приведенном ниже примере показано, как найти объект участника службы по отображаемому имени.
 
-**Запрос** 
+**Запрос**
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -97,7 +97,7 @@ HTTP/1.1 200 OK
 
 В приведенном ниже примере показано, как найти объект субъекта службы по ИДЕНТИФИКАТОРу приложения.
 
-**Request** 
+**Запрос**
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=AppId eq '219561ee-1480-4c67-9aa6-63d861fae3ef'

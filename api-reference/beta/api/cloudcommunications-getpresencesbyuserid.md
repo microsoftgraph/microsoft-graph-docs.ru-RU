@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 5303c39584822a68afa559eb99c9fa579121e515
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 93a782a0d46125a1f4a4a751c45d254e293c05cb
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844150"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868112"
 ---
 # <a name="cloudcommunications-getpresencesbyuserid"></a>Клаудкоммуникатионс: Жетпресенцесбюсерид
 
@@ -18,14 +18,14 @@ ms.locfileid: "39844150"
 
 Получение сведений о [присутствии](../resources/presence.md) для нескольких пользователей.
 
-## <a name="permissions"></a>Разрешения
+## <a name="permissions"></a>Permissions
 Для вызова этих API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий)                  |
 | :-------------- | :----------------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | Присутствие. Read. ALL                         |
+| Делегированные (рабочая или учебная учетная запись)     | Presence.Read.All                         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                         |
-| Application                            | Не поддерживается.                                  |
+| Приложение                            | Не поддерживается.                                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ POST /communications/getPresencesByUserId
 |:---------------|:--------|:----------|
 |ids|Коллекция String|Идентификаторы объектов пользователя.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [присутствия](../resources/presence.md) в тексте отклика.
 
@@ -58,6 +58,8 @@ POST /communications/getPresencesByUserId
 ### <a name="request"></a>Запрос
 Ниже показан пример запроса.
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-presence-multiple-users"
@@ -71,6 +73,20 @@ Content-Type: application/json
     "ids": ["fa8bf3dc-eca7-46b7-bad1-db199b62afc3", "66825e03-7ef5-42da-9069-724602c31f6b"]
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-presence-multiple-users-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-presence-multiple-users-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-presence-multiple-users-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### <a name="response"></a>Отклик
 Ниже приводится пример отклика.
 

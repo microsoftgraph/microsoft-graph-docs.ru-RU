@@ -3,14 +3,14 @@ title: Получение Коннектионоператион
 description: Получение свойств объекта Коннектионоператион.
 localization_priority: Normal
 author: snlraju-msft
-ms.prod: ''
+ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b09a9ac40cd79a8f543fcb910385d09a3d598dcb
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: 99bd074aed8c24a6d1990c753c8ea5ffe537097f
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747525"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868067"
 ---
 # <a name="get-connectionoperation"></a>Получение Коннектионоператион
 
@@ -28,7 +28,7 @@ ms.locfileid: "38747525"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | ExternalItem.ReadWrite.All |
+| Приложение                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ GET /external/connections/{connection-id}/operations/{operation-id}
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

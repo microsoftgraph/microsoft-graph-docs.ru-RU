@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 64b2c1880edafe1241367ac91889440a513964d9
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: e7cae71f220a2a519908e3af890029a2da555577
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006615"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866688"
 ---
 # <a name="onlinemeeting-resource-type"></a>Тип ресурса Онлинемитинг
 
@@ -29,21 +29,18 @@ ms.locfileid: "38006615"
 
 | Свойство                  | Тип                                                   | Описание                                                                                                                |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| аутоадмиттедусерс         | String                                                 | Параметр, указывающий тип участников, которые будут автоматически разрешены в собрании по сети. Только для чтения. `everyone`Возможные значения: `everyoneInSameAndFederatedCompany`,, `everyoneInCompany`,, `invitedUsersInCompany``organizer`|
+| аутоадмиттедусерс         | String                                                 | Параметр, указывающий тип участников, которые будут автоматически разрешены в собрании по сети. Возможные значения: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Только для чтения.|
 | аудиоконференЦинг         | [аудиоконференЦинг](audioconferencing.md)              | Сведения о телефонном доступе (телефонное подключение) для собрания по сети. Только для чтения. |
-| канцеледдатетиме          | DateTime                                               | Время в формате UTC, когда собрание было отменено. Только для чтения. |
 | chatInfo                  | [chatInfo](chatinfo.md)                                | Сведения о чате, связанные с этим собранием по сети. |
 | креатиондатетиме          | DateTime                                               | Время создания собрания в формате UTC. Только для чтения. |
 | startDateTime             | DateTime                                               | Время начала собрания в формате UTC. |
 | endDateTime               | DateTime                                               | Время окончания собрания в формате UTC. |
 | id                        | Строка                                                 | ИДЕНТИФИКАТОР по умолчанию, связанный с собранием по сети. Только для чтения. |
-| Отменено                | Boolean                                                | Указывает, было ли собрание отменено. Только для чтения. |
-| жоинурл                   | String                                                 | URL-адрес присоединения к собранию по сети. Только для чтения.|
-| Передача               | Boolean                                                | Указывает, является ли собрание широковещательным. |
+| жоинвебурл                   | String                                                 | URL-адрес присоединения к собранию по сети. Только для чтения.|
 | participants              | [митингпартиЦипантс](meetingparticipants.md)          | Участники, связанные с собранием по сети.  Сюда входят Организатор и участники. |
 | subject                   | String                                                 | Тема собрания по сети. |
-| capabilities              | Коллекция String                                      | Список возможностей собрания. Возможные значения: `questionAndAnswer`. |
-| видеотелеконференцеид     | String                                                 | Идентификатор телеконференций видеио. Только для чтения. |
+| capabilities              | Коллекция строк                                      | Список возможностей собрания. Возможные значения: `questionAndAnswer`. |
+| видеотелеконференцеид     | String                                                 | Идентификатор видеоконференций для видеоконференций. Только для чтения. |
 
 ### <a name="autoadmittedusers-values"></a>значения Аутоадмиттедусерс
 | Значение | Описание  |
@@ -68,14 +65,11 @@ ms.locfileid: "38006615"
 {
   "autoAdmittedUsers": "everyone | everyoneInSameAndFederatedCompany | everyoneInCompany | invitedUsersInCompany | organizer",
   "audioConferencing": {"@odata.type": "#microsoft.graph.audioConferencing"},
-  "canceledDateTime": "String (timestamp)",
   "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
   "creationDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
   "id": "String (identifier)",
-  "isCanceled": false,
-  "joinUrl": "String",
-  "isBroadcast": false,
+  "joinWebUrl": "String",
   "participants": {"@odata.type": "#microsoft.graph.meetingParticipants"},
   "startDateTime": "String (timestamp)",
   "subject": "String",

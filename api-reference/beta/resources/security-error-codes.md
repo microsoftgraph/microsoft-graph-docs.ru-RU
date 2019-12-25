@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: e4ea8bbfa3d808037ed2db56765719516b03f877
-ms.sourcegitcommit: fc9edd17aebed91768e31416e1c1ee0b64d5ce06
+ms.openlocfilehash: fce8d8c4795b6594b4e098d7c40feda06256294c
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39621616"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866618"
 ---
 # <a name="microsoft-graph-security-api-error-responses"></a>Ответы на ошибки API безопасности Microsoft Graph
 
@@ -25,7 +25,7 @@ API безопасности Microsoft Graph — это Федеративная
 {Vendor}/{Provider}/{StatusCode}/{LatencyInMs}
 ```
 
-Этот заголовок предупреждения отправляется обратно только клиентам, когда один из поставщиков данных возвращает код ошибки, отличный от 2xx или 404. Например:
+Этот заголовок предупреждения отправляется обратно только клиентам, когда один из поставщиков данных возвращает код ошибки, отличный от 2xx или 404. Пример:
 
 - HttpStatusCode. запрещено (403) может быть возвращено, если доступ к ресурсу не предоставляется.
 - Если время ожидания поставщика истекло, в заголовке предупреждения возвращается HttpStatusCode. Гатевайтимеаут (504).
@@ -53,14 +53,14 @@ Warning : 199 - "{Vendor2}/{Provider 2}/504/10000",    (usual timeout limit is s
 
 ## <a name="threat-indicator-bulk-action-errors"></a>Ошибки массовых действий индикатора угроз
 
-Групповые действия (создание, обновление, удаление) могут создавать два различных возможных кода ошибки: 
+Групповые действия (создание, обновление, удаление) могут создавать два различных возможных кода ошибки:
 
 - Код ошибки 400 указывает на то, что во время сериализации получено сообщение об ошибке.
-- Код ошибки 206 указывает на то, что одно или несколько массовых действий завершились неудачно, если они были объединены со своим поставщиком. Ответ будет содержать сведения об успешном выполнении и ошибках отдельных поставщиков для каждого индикатора логики операций с угрозами. В отличие от [оповещений](https://docs.microsoft.com/graph/api/resources/security-api-overview?view=graph-rest-1.0#alerts), все возможные сведения об ошибках будут содержаться в теле ответа для массовых действий [тииндикатор](https://docs.microsoft.com/graph/api/resources/security-api-overview?view=graph-rest-beta#threat-indicators-preview) .
+- Код ошибки 206 указывает на то, что одно или несколько массовых действий завершились неудачно, если они были объединены со своим поставщиком. Ответ будет содержать сведения об успешном выполнении и ошибках отдельных поставщиков для каждого индикатора логики операций с угрозами. В отличие от [оповещений](/graph/api/resources/security-api-overview?view=graph-rest-1.0#alerts), все возможные сведения об ошибках будут содержаться в теле ответа для массовых действий [тииндикатор](/graph/api/resources/security-api-overview?view=graph-rest-beta#threat-indicators-preview) .
 
 ## <a name="constraints"></a>Провероч
 
-Параметр `$top` запроса OData имеет лимит в 1000 оповещений. Рекомендуется включать только `$top` `$skip` в первый запрос GET. Можно использовать `@odata.nextLink` для разбивки на страницы. При необходимости вы можете использовать `$skip`не более 500 оповещений. Например, `/security/alerts?$top=10&$skip=500` вернет код отклика `200 OK`, но `/security/alerts?$top=10&$skip=501` вернет код отклика `400 Bad Request`. Дополнительные сведения см. в статье [Ответы с ошибками Microsoft Graph Security API](../resources/security-error-codes.md).
+Параметр `$top` запроса OData имеет лимит в 1000 оповещений. В первый запрос GET рекомендуется включить только параметр `$top`, но не параметр `$skip`. Для разбивки на страницы можно использовать параметр `@odata.nextLink`. Если требуется применить параметр `$skip`, он имеет ограничение в 500 оповещений. Например, `/security/alerts?$top=10&$skip=500` вернет код отклика `200 OK`, но `/security/alerts?$top=10&$skip=501` вернет код отклика `400 Bad Request`. Дополнительные сведения см. в статье [Ответы с ошибками Microsoft Graph Security API](../resources/security-error-codes.md).
 
 Чтобы устранить это ограничения, используйте параметр запроса `$filter` OData с `eventDateTime` объектом Alert из API безопасности Microsoft Graph, используя `?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}` и заменив значение DateTime на Последнее (1500th) оповещение. Кроме того, можно задать диапазон для объекта `eventDateTime`; Пример: `alerts?$filter=eventDateTime **gt** 2018-11-**11**T00:00:00.000Z&eventDateTime **lt** 2018-11-**12**T00:00:00.000Z`.
 

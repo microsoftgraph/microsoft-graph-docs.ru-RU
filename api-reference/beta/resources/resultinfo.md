@@ -1,22 +1,27 @@
 ---
 title: Тип ресурса Ресултинфо
-description: Тип Ресултинфо.
+description: Содержит сведения о результатах, относящиеся к успехам и сбоям.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: acc01a17420390343c3eb1f866761d54d5c81c79
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 5cb59cb63ff7c50ba14b972991d54806eabc4f54
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006552"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866632"
 ---
 # <a name="resultinfo-resource-type"></a>Тип ресурса Ресултинфо
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Тип Ресултинфо.
+Содержит сведения о результатах, относящиеся к успехам и сбоям. 
+
+Код указывает, является ли результат универсальным успехом или ошибкой. 
+
+Вспомогательные коды предоставляют дополнительные сведения, связанные с типом успешного или неудачного завершения (например, успешная передача вызова).
+
 
 ## <a name="properties"></a>Свойства
 

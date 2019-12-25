@@ -1,24 +1,24 @@
 ---
 title: 'Синчронизатионсчема: Парсикспрессион'
-description: '(.. Объект/Resources/synchronization_attributemappingsource.md). '
+description: '(.. Объект/ресаурцес/synchronization_attributemappingsource. md). '
 localization_priority: Normal
 doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 97463376adb97d60834609499ce9c95be374f191
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 6717e0219ec76d32db0e613447137f9675df1cb4
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36409676"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40865015"
 ---
 # <a name="synchronizationschema-parseexpression"></a>Синчронизатионсчема: Парсикспрессион
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Проанализируйте заданное строковое выражение в объект [Аттрибутемаппингсаурце | (.. Объект/Resources/synchronization_attributemappingsource.md). 
+Проанализируйте заданное строковое выражение в объект [Аттрибутемаппингсаурце | (.. Объект/ресаурцес/synchronization_attributemappingsource. md).
 
-Более подробную информацию о выражениях можно узнать [в статье Создание выражений для сопоставлений атрибутов в Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).
+Более подробную информацию о выражениях можно узнать [в статье Создание выражений для сопоставлений атрибутов в Azure Active Directory](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,7 +27,7 @@ ms.locfileid: "36409676"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |Не поддерживается.|
-|Для приложений                            |Не поддерживается.| 
+|Для приложений                            |Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpressi
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |выражение               |String               |Выражение для синтаксического анализа.|
-|тестинпутобжект          |[експрессионинпутобжект](../resources/synchronization-expressioninputobject.md)|Тестовый объект данных, с которым вычисляется выражение. Необязательно.|
+|тестинпутобжект          |[експрессионинпутобжект](../resources/synchronization-expressioninputobject.md)|Тестовый объект данных, с которым вычисляется выражение. Необязательный атрибут.|
 |таржетаттрибутедефинитион|[аттрибутедефинитион](../resources/synchronization-attributedefinition.md) |Определение атрибута, который будет сопоставлен с этим выражением. Необязательный параметр.|
 
 ## <a name="response"></a>Отклик
@@ -125,7 +125,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationschema-parseexpression-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/synchronizationschema-parseexpression-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -133,7 +133,7 @@ Content-type: application/json
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример отклика.
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
