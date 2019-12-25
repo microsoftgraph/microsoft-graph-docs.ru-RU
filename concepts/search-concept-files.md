@@ -1,36 +1,36 @@
 ---
-title: Поиск файлов (включая externalFile)
-description: API запросов позволяет выполнять поиск по файлам (DriveItem или внешним файлам).
+title: Использование API службы поиска Microsoft в Microsoft Graph для поиска файлов
+description: Вы можете использовать API службы поиска Microsoft для поиска файлов, хранящихся в SharePoint или OneDrive.
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 95a8b99b9970ec239935ee2c35afeec581a1b35f
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 0b8db24a8b9ccd63ac3d3be800b209a64eb3aa9d
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703949"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866919"
 ---
-# <a name="search-files-including-externalfile"></a><span data-ttu-id="5de8a-103">Поиск файлов (включая externalFile)</span><span class="sxs-lookup"><span data-stu-id="5de8a-103">Search files (including externalFile)</span></span>
+# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-files"></a><span data-ttu-id="c3a07-103">Использование API службы поиска Microsoft в Microsoft Graph для поиска файлов</span><span class="sxs-lookup"><span data-stu-id="c3a07-103">Use the Microsoft Search API in Microsoft Graph to search files</span></span>
 
-<span data-ttu-id="5de8a-104">API службы поиска Microsoft позволяет искать файлы, хранящиеся в SharePoint или OneDrive.</span><span class="sxs-lookup"><span data-stu-id="5de8a-104">The Microsoft Search API lets you search files stored in SharePoint or OneDrive.</span></span> <span data-ttu-id="5de8a-105">Он использует модель релевантности, которая использует сигналы из Microsoft Graph о связи и действиях пользователей.</span><span class="sxs-lookup"><span data-stu-id="5de8a-105">It uses a relevance model which makes use of signals from Microsoft Graph about users' relations and activities.</span></span> <span data-ttu-id="5de8a-106">Это позволяет вернуть и повысить контент, который пользователи волнует, в процессе поиска файлов, который соответствует вкладке **файлы** , в которой отображаются результаты поиска в SharePoint.</span><span class="sxs-lookup"><span data-stu-id="5de8a-106">This allows returning and promoting content that users care about, in a file search experience that is consistent with the **Files** tab that lists search results in SharePoint.</span></span>
+<span data-ttu-id="c3a07-104">Вы можете использовать API службы поиска Microsoft для поиска файлов, хранящихся в SharePoint или OneDrive.</span><span class="sxs-lookup"><span data-stu-id="c3a07-104">You can use the Microsoft Search API to search files stored in SharePoint or OneDrive.</span></span> <span data-ttu-id="c3a07-105">API поиска Microsoft использует модель релевантности, которая использует сигналы из Microsoft Graph о связях и действиях пользователей.</span><span class="sxs-lookup"><span data-stu-id="c3a07-105">The Microsoft Search API uses a relevance model that makes use of signals from Microsoft Graph about users' relationships and activities.</span></span> <span data-ttu-id="c3a07-106">Это позволяет вернуть и повысить уровень содержимого, которое пользователи волнует, в интерфейсе поиска файлов, который соответствует вкладке **файлы** , в которой отображаются результаты поиска в SharePoint.</span><span class="sxs-lookup"><span data-stu-id="c3a07-106">This enables you to return and promote the content that users care about, in a file search experience that is consistent with the **Files** tab that lists search results in SharePoint.</span></span> 
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
-<span data-ttu-id="5de8a-107">Кроме того, API может подавать внешние файлы, предоставляемые через ресурс [екстерналфиле](/graph/api/resources/externalfile?view=graph-rest-beta) .</span><span class="sxs-lookup"><span data-stu-id="5de8a-107">In addition, the API can surface external files exposed via the [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta) resource.</span></span>
+<span data-ttu-id="c3a07-107">API также может подавать внешние файлы, предоставляемые через ресурс [екстерналфиле](/graph/api/resources/externalfile?view=graph-rest-beta) .</span><span class="sxs-lookup"><span data-stu-id="c3a07-107">The API can also surface external files exposed via the [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta) resource.</span></span>
 
-## <a name="search-sharepoint-or-onedrive-files"></a><span data-ttu-id="5de8a-108">Поиск файлов SharePoint или OneDrive</span><span class="sxs-lookup"><span data-stu-id="5de8a-108">Search SharePoint or OneDrive files</span></span>
+## <a name="search-sharepoint-or-onedrive-files"></a><span data-ttu-id="c3a07-108">Поиск файлов SharePoint или OneDrive</span><span class="sxs-lookup"><span data-stu-id="c3a07-108">Search SharePoint or OneDrive files</span></span>
 
-<span data-ttu-id="5de8a-109">KQL можно использовать в терминах поиска запросов для SharePoint и OneDrive.</span><span class="sxs-lookup"><span data-stu-id="5de8a-109">You can use KQL in search terms of queries for SharePoint and OneDrive.</span></span> <span data-ttu-id="5de8a-110">Пример:</span><span class="sxs-lookup"><span data-stu-id="5de8a-110">For example:</span></span>
+<span data-ttu-id="c3a07-109">KQL можно использовать в терминах поиска запросов для SharePoint и OneDrive.</span><span class="sxs-lookup"><span data-stu-id="c3a07-109">You can use KQL in search terms of queries for SharePoint and OneDrive.</span></span> <span data-ttu-id="c3a07-110">Пример:</span><span class="sxs-lookup"><span data-stu-id="c3a07-110">For example:</span></span>
 
-- <span data-ttu-id="5de8a-111">`"query" : "contoso filetype:docx OR filetype:doc"`области запрашивает документы Word</span><span class="sxs-lookup"><span data-stu-id="5de8a-111">`"query" : "contoso filetype:docx OR filetype:doc"` scopes queries to Word documents</span></span>
-- <span data-ttu-id="5de8a-112">`"query": "test path:\\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""`ограничивает область запроса определенной папкой на сайте.</span><span class="sxs-lookup"><span data-stu-id="5de8a-112">`"query": "test path:\\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` scopes the query to a particular folder within a site.</span></span>
+- <span data-ttu-id="c3a07-111">`"query": "contoso filetype:docx OR filetype:doc"`ограничивает область запроса документами Word.</span><span class="sxs-lookup"><span data-stu-id="c3a07-111">`"query": "contoso filetype:docx OR filetype:doc"` scopes the query to Word documents.</span></span>
+- <span data-ttu-id="c3a07-112">`"query": "test path:\\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""`ограничивает область запроса определенной папкой на сайте.</span><span class="sxs-lookup"><span data-stu-id="c3a07-112">`"query": "test path:\\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` scopes the query to a particular folder within a site.</span></span>
 
-<span data-ttu-id="5de8a-113">Чтобы быть допустимым, ограничение свойств должно указывать допустимое имя управляемого свойства, поддерживающего запросы, в условии.</span><span class="sxs-lookup"><span data-stu-id="5de8a-113">In order to be valid, properties restriction should specify a valid Queryable managed property name in the condition.</span></span>
+<span data-ttu-id="c3a07-113">Для того чтобы оно было допустимым, ограничение свойств должно указывать допустимое имя управляемого свойства, запрашиваемое в условии.</span><span class="sxs-lookup"><span data-stu-id="c3a07-113">In order to be valid, properties restriction should specify a valid, queryable managed property name in the condition.</span></span>
 
-### <a name="example"></a><span data-ttu-id="5de8a-114">Пример</span><span class="sxs-lookup"><span data-stu-id="5de8a-114">Example</span></span>
+### <a name="example"></a><span data-ttu-id="c3a07-114">Пример</span><span class="sxs-lookup"><span data-stu-id="c3a07-114">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="5de8a-115">Запрос</span><span class="sxs-lookup"><span data-stu-id="5de8a-115">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="c3a07-115">Запрос</span><span class="sxs-lookup"><span data-stu-id="c3a07-115">Request</span></span>
 
 ```HTTP
 POST /search/query
@@ -56,9 +56,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="5de8a-116">Отклик</span><span class="sxs-lookup"><span data-stu-id="5de8a-116">Response</span></span>
-
-<span data-ttu-id="5de8a-117">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="5de8a-117">Here is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="c3a07-116">Ответ</span><span class="sxs-lookup"><span data-stu-id="c3a07-116">Response</span></span>
 
 <!---TODO nmoreau team Include one example of externalItem response.-->
 ```json
@@ -104,16 +102,16 @@ Content-Type: application/json
 }
 ```
 
-## <a name="search-external-files-well-known-types"></a><span data-ttu-id="5de8a-118">Поиск внешних файлов (известных типов)</span><span class="sxs-lookup"><span data-stu-id="5de8a-118">Search external files (well-known types)</span></span>
+## <a name="search-external-files-well-known-types"></a><span data-ttu-id="c3a07-117">Поиск внешних файлов (известных типов)</span><span class="sxs-lookup"><span data-stu-id="c3a07-117">Search external files (well-known types)</span></span>
 
-<span data-ttu-id="5de8a-119">[Соединитель файлов общего доступа](/MicrosoftSearch/file-share-connector) — это соединитель "из поля", доступный в Microsoft Search.</span><span class="sxs-lookup"><span data-stu-id="5de8a-119">[File share connector](/MicrosoftSearch/file-share-connector) is an "out of the box" connector available in Microsoft Search.</span></span> <span data-ttu-id="5de8a-120">Он позволяет индексировать файлы, доступные в общей папке.</span><span class="sxs-lookup"><span data-stu-id="5de8a-120">It enables you to index files available on a file share.</span></span> <span data-ttu-id="5de8a-121">Вы можете использовать API запросов для запроса всех внешних файлов.</span><span class="sxs-lookup"><span data-stu-id="5de8a-121">You can use the query API to query all external files.</span></span>
+<span data-ttu-id="c3a07-118">По умолчанию в Microsoft Search есть доступ [к файловому ресурсному соединителю](/MicrosoftSearch/file-share-connector) .</span><span class="sxs-lookup"><span data-stu-id="c3a07-118">The [file share connector](/MicrosoftSearch/file-share-connector) is available in Microsoft Search by default.</span></span> <span data-ttu-id="c3a07-119">Его можно использовать для индексации файлов, доступных в общей папке.</span><span class="sxs-lookup"><span data-stu-id="c3a07-119">You can use it to index files available on a file share.</span></span> <span data-ttu-id="c3a07-120">Вы можете использовать API запросов для запроса всех внешних файлов.</span><span class="sxs-lookup"><span data-stu-id="c3a07-120">You can use the query API to query all external files.</span></span>
 
 <!-- markdownlint-disable MD024 -->
-### <a name="example"></a><span data-ttu-id="5de8a-122">Пример</span><span class="sxs-lookup"><span data-stu-id="5de8a-122">Example</span></span>
+### <a name="example"></a><span data-ttu-id="c3a07-121">Пример</span><span class="sxs-lookup"><span data-stu-id="c3a07-121">Example</span></span>
 
-<span data-ttu-id="5de8a-123">Следующий пример возвращает все настроенные соединители Екстерналфиле для клиента и сортирует результаты по релевантности.</span><span class="sxs-lookup"><span data-stu-id="5de8a-123">The following example returns all configured externalFile connector for the tenant, and sorts the results by relevance.</span></span>
+<span data-ttu-id="c3a07-122">В следующем примере возвращаются все настроенные внешние файлы для клиента, а результаты сортируются по релевантности.</span><span class="sxs-lookup"><span data-stu-id="c3a07-122">The following example returns all configured external files for the tenant, and sorts the results by relevance.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="5de8a-124">Запрос</span><span class="sxs-lookup"><span data-stu-id="5de8a-124">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="c3a07-123">Запрос</span><span class="sxs-lookup"><span data-stu-id="c3a07-123">Request</span></span>
 
 ```HTTP
 POST /search/query
@@ -139,7 +137,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="5de8a-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="5de8a-125">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="c3a07-124">Ответ</span><span class="sxs-lookup"><span data-stu-id="c3a07-124">Response</span></span>
 
 ```json
 {
@@ -181,17 +179,17 @@ Content-Type: application/json
 }
 ```
 
-## <a name="search-all-files-including-externalfile-instances"></a><span data-ttu-id="5de8a-126">Поиск во всех файлах (в том числе экземплярах Екстерналфиле)</span><span class="sxs-lookup"><span data-stu-id="5de8a-126">Search all files (including externalFile instances)</span></span>
+## <a name="search-all-files-including-externalfile-instances"></a><span data-ttu-id="c3a07-125">Поиск во всех файлах (в том числе экземплярах Екстерналфиле)</span><span class="sxs-lookup"><span data-stu-id="c3a07-125">Search all files (including externalFile instances)</span></span>
 
-<span data-ttu-id="5de8a-127">Можно выполнять поиск во всех файлах клиента, включая [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) и все внешние файлы, указывая в запросе поиска два типа сущности.</span><span class="sxs-lookup"><span data-stu-id="5de8a-127">You can search all the files in a tenant, including [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) and all external files, by specifying two entity types in the search request.</span></span>
+<span data-ttu-id="c3a07-126">Можно выполнять поиск по всем файлам в клиенте, включая файлы, хранящиеся в [элементов driveitem](/graph/api/resources/driveitem?view=graph-rest-beta) и внешние файлы, указывая два типа сущностей в запросе поиска.</span><span class="sxs-lookup"><span data-stu-id="c3a07-126">You can search all the files in a tenant, including files stored in [driveItems](/graph/api/resources/driveitem?view=graph-rest-beta) and external files, by specifying two entity types in the search request.</span></span>
 
-<span data-ttu-id="5de8a-128">Ответ предоставляет сочетание экземпляров **driveItem** и екстерналитем в `_sources` поле каждого объекта [сеарчхит](/graph/api/resources/searchhit?view=graph-rest-beta) .</span><span class="sxs-lookup"><span data-stu-id="5de8a-128">The response provide a mix of **driveItem** and externalItem instances in the `_sources` field of each [searchHit](/graph/api/resources/searchhit?view=graph-rest-beta) object.</span></span>
+<span data-ttu-id="c3a07-127">Ответ содержит экземпляры **driveItem** и **екстерналитем** в `_sources` поле каждого объекта [сеарчхит](/graph/api/resources/searchhit?view=graph-rest-beta) .</span><span class="sxs-lookup"><span data-stu-id="c3a07-127">The response includes **driveItem** and **externalItem** instances in the `_sources` field of each [searchHit](/graph/api/resources/searchhit?view=graph-rest-beta) object.</span></span>
 
-### <a name="example"></a><span data-ttu-id="5de8a-129">Пример</span><span class="sxs-lookup"><span data-stu-id="5de8a-129">Example</span></span>
+### <a name="example"></a><span data-ttu-id="c3a07-128">Пример</span><span class="sxs-lookup"><span data-stu-id="c3a07-128">Example</span></span>
 
-<span data-ttu-id="5de8a-130">В следующем примере возвращаются все настроенные соединители **екстерналфиле** и объекты **driveItem** клиента, которые удовлетворяют условиям поиска.</span><span class="sxs-lookup"><span data-stu-id="5de8a-130">The following example returns all configured **externalFile** connector and **driveItem** objects of the tenant's that satisfy the search terms.</span></span> <span data-ttu-id="5de8a-131">Результаты сортируются по релевантности.</span><span class="sxs-lookup"><span data-stu-id="5de8a-131">It sorts the results by relevance.</span></span>
+<span data-ttu-id="c3a07-129">В следующем примере возвращаются все настроенные объекты **екстерналфиле** и **driveItem** в клиенте, которые удовлетворяют условиям поиска.</span><span class="sxs-lookup"><span data-stu-id="c3a07-129">The following example returns all configured **externalFile** and **driveItem** objects in the tenant that satisfy the search terms.</span></span> <span data-ttu-id="c3a07-130">Результаты сортируются по релевантности.</span><span class="sxs-lookup"><span data-stu-id="c3a07-130">It sorts the results by relevance.</span></span>
 
-### <a name="request"></a><span data-ttu-id="5de8a-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="5de8a-132">Request</span></span>
+### <a name="request"></a><span data-ttu-id="c3a07-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="c3a07-131">Request</span></span>
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
@@ -218,12 +216,11 @@ Content-Type: application/json
 }
 ```
 
-## <a name="known-limitations"></a><span data-ttu-id="5de8a-133">Известные ограничения</span><span class="sxs-lookup"><span data-stu-id="5de8a-133">Known limitations</span></span>
+## <a name="known-limitations"></a><span data-ttu-id="c3a07-132">Известные ограничения</span><span class="sxs-lookup"><span data-stu-id="c3a07-132">Known limitations</span></span>
 
-<span data-ttu-id="5de8a-134">Невозможно выполнить запрос к определенному Коннектионид.</span><span class="sxs-lookup"><span data-stu-id="5de8a-134">You cannot scope a query to a particular connectionId.</span></span>
+<span data-ttu-id="c3a07-133">Вы не можете ограничить запрос определенным ИДЕНТИФИКАТОРом подключения.</span><span class="sxs-lookup"><span data-stu-id="c3a07-133">You cannot scope a query to a particular connection ID.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="5de8a-135">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="5de8a-135">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="c3a07-134">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="c3a07-134">Next steps</span></span>
 
-<span data-ttu-id="5de8a-136">Дополнительные сведения:</span><span class="sxs-lookup"><span data-stu-id="5de8a-136">Find out more about:</span></span>
+- [<span data-ttu-id="c3a07-135">Использование API Поиска (Майкрософт) для запроса данных</span><span class="sxs-lookup"><span data-stu-id="c3a07-135">Use the Microsoft Search API to query data</span></span>](/graph/api/resources/search-api-overview?view=graph-rest-beta)
 
-- [<span data-ttu-id="5de8a-137">Использование API поиска</span><span class="sxs-lookup"><span data-stu-id="5de8a-137">Use the search API</span></span>](/graph/api/resources/search-api-overview?view=graph-rest-beta)

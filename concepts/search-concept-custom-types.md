@@ -1,33 +1,33 @@
 ---
-title: Настраиваемые типы поиска
-description: API запросов позволяет выполнять поиск по пользовательским типам, которые применялись с помощью API индексирования.
+title: Использование API службы поиска Microsoft в Microsoft Graph для поиска пользовательских типов
+description: С помощью API Microsoft Search можно импортировать внешние данные через ресурс [екстерналитем](/graph/api/resources/externalitem?view=graph-rest-beta) и запускать поисковые запросы для этого внешнего контента.
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 53203d300fd3cf42fd5e6993fe8ba016de06669a
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 9d00ddbbedd775a6efb59971da10fbc9ee8854a6
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703983"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866912"
 ---
-# <a name="search-custom-types-externalitem"></a><span data-ttu-id="94f1d-103">Поиск объектов настраиваемого типа (externalItem)</span><span class="sxs-lookup"><span data-stu-id="94f1d-103">Search custom types (externalItem)</span></span>
+# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-custom-types"></a><span data-ttu-id="fb9ff-103">Использование API службы поиска Microsoft в Microsoft Graph для поиска пользовательских типов</span><span class="sxs-lookup"><span data-stu-id="fb9ff-103">Use the Microsoft Search API in Microsoft Graph to search custom types</span></span>
 
-<span data-ttu-id="94f1d-104">API Microsoft Search позволяет импортировать внешние данные через ресурс [екстерналитем](/graph/api/resources/externalitem?view=graph-rest-beta) и запускать поисковые запросы для этого внешнего контента.</span><span class="sxs-lookup"><span data-stu-id="94f1d-104">The Microsoft Search API lets you import external data via the [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) resource, and run search queries on this external content.</span></span>
+<span data-ttu-id="fb9ff-104">С помощью API Microsoft Search можно импортировать внешние данные через ресурс [екстерналитем](/graph/api/resources/externalitem?view=graph-rest-beta) и запускать поисковые запросы для этого внешнего контента.</span><span class="sxs-lookup"><span data-stu-id="fb9ff-104">You can use the Microsoft Search API to import external data via the [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) resource, and run search queries on this external content.</span></span>
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
-<span data-ttu-id="94f1d-105">Чтобы выполнить поиск пользовательских типов, укажите следующие данные в тексте запроса метода [запроса](/graph/api/search-query?view=graph-rest-beta) :</span><span class="sxs-lookup"><span data-stu-id="94f1d-105">To search for custom types, specify the following in the [query](/graph/api/search-query?view=graph-rest-beta) method request body:</span></span>
+<span data-ttu-id="fb9ff-105">Чтобы выполнить поиск пользовательских типов, укажите следующие данные в тексте запроса метода [запроса](/graph/api/search-query?view=graph-rest-beta) :</span><span class="sxs-lookup"><span data-stu-id="fb9ff-105">To search for custom types, specify the following in the [query](/graph/api/search-query?view=graph-rest-beta) method request body:</span></span>
 
-- <span data-ttu-id="94f1d-106">Свойство **контентсаурцес** для включения идентификатора подключения, назначаемого во время установки соединителя.</span><span class="sxs-lookup"><span data-stu-id="94f1d-106">The **contentSources** property to include the connection ID which is assigned during the connector setup</span></span>
+- <span data-ttu-id="fb9ff-106">Свойство **контентсаурцес** для включения идентификатора подключения, назначаемого во время установки соединителя</span><span class="sxs-lookup"><span data-stu-id="fb9ff-106">The **contentSources** property to include the connection ID that is assigned during the connector setup</span></span>
 
-- <span data-ttu-id="94f1d-107">Свойство **EntityType** в качестве`externalItem`</span><span class="sxs-lookup"><span data-stu-id="94f1d-107">The **entityType** property as `externalItem`</span></span>
+- <span data-ttu-id="fb9ff-107">Свойство **EntityTypes** в качестве`externalItem`</span><span class="sxs-lookup"><span data-stu-id="fb9ff-107">The **entityTypes** property as `externalItem`</span></span>
 
-- <span data-ttu-id="94f1d-108">Свойство **stored_fields** , включающее поля внешнего элемента, которые требуется получить</span><span class="sxs-lookup"><span data-stu-id="94f1d-108">The **stored_fields** property to include the fields in the external item you want to retrieve</span></span>
+- <span data-ttu-id="fb9ff-108">Свойство **stored_fields** , включающее поля внешнего элемента, которые требуется получить</span><span class="sxs-lookup"><span data-stu-id="fb9ff-108">The **stored_fields** property to include the fields in the external item you want to retrieve</span></span>
 
-## <a name="example"></a><span data-ttu-id="94f1d-109">Пример</span><span class="sxs-lookup"><span data-stu-id="94f1d-109">Example</span></span>
+## <a name="example"></a><span data-ttu-id="fb9ff-109">Пример</span><span class="sxs-lookup"><span data-stu-id="fb9ff-109">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="94f1d-110">Запрос</span><span class="sxs-lookup"><span data-stu-id="94f1d-110">Request</span></span>
+### <a name="request"></a><span data-ttu-id="fb9ff-110">Запрос</span><span class="sxs-lookup"><span data-stu-id="fb9ff-110">Request</span></span>
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
@@ -61,9 +61,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="94f1d-111">Отклик</span><span class="sxs-lookup"><span data-stu-id="94f1d-111">Response</span></span>
-
-<span data-ttu-id="94f1d-112">Отклик</span><span class="sxs-lookup"><span data-stu-id="94f1d-112">Response</span></span>
+### <a name="response"></a><span data-ttu-id="fb9ff-111">Ответ</span><span class="sxs-lookup"><span data-stu-id="fb9ff-111">Response</span></span>
 
 ```json
 {
@@ -113,14 +111,12 @@ Content-Type: application/json
 }
 ```
 
-## <a name="known-limitations"></a><span data-ttu-id="94f1d-113">Известные ограничения</span><span class="sxs-lookup"><span data-stu-id="94f1d-113">Known limitations</span></span>
+## <a name="known-limitations"></a><span data-ttu-id="fb9ff-112">Известные ограничения</span><span class="sxs-lookup"><span data-stu-id="fb9ff-112">Known limitations</span></span>
 
-- <span data-ttu-id="94f1d-114">Пользовательские типы не поддерживают поиск в нескольких источниках (указывается в **контентсаурцес**).</span><span class="sxs-lookup"><span data-stu-id="94f1d-114">Custom types don’t support searching across multiple sources (specified in **contentSources**).</span></span> <span data-ttu-id="94f1d-115">Одновременно можно выполнять поиск только по одному подключению.</span><span class="sxs-lookup"><span data-stu-id="94f1d-115">You can search only one connection at a time.</span></span>
+- <span data-ttu-id="fb9ff-113">Пользовательские типы не поддерживают поиск в нескольких источниках (указывается в **контентсаурцес**).</span><span class="sxs-lookup"><span data-stu-id="fb9ff-113">Custom types don’t support searching across multiple sources (specified in **contentSources**).</span></span> <span data-ttu-id="fb9ff-114">Одновременно можно выполнять поиск только по одному подключению.</span><span class="sxs-lookup"><span data-stu-id="fb9ff-114">You can search only one connection at a time.</span></span>
 
-- <span data-ttu-id="94f1d-116">Необходимо указать свойство **stored_fields** , иначе результаты поиска не возвращаются.</span><span class="sxs-lookup"><span data-stu-id="94f1d-116">You must specify the **stored_fields** property, otherwise search results are not returned.</span></span>
+- <span data-ttu-id="fb9ff-115">Необходимо указать свойство **stored_fields** ; в противном случае результаты поиска не возвращаются.</span><span class="sxs-lookup"><span data-stu-id="fb9ff-115">You must specify the **stored_fields** property; otherwise, search results are not returned.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="94f1d-117">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="94f1d-117">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="fb9ff-116">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="fb9ff-116">Next steps</span></span>
 
-<span data-ttu-id="94f1d-118">Дополнительные сведения:</span><span class="sxs-lookup"><span data-stu-id="94f1d-118">Find out more about:</span></span>
-
-- [<span data-ttu-id="94f1d-119">Использование API поиска</span><span class="sxs-lookup"><span data-stu-id="94f1d-119">Use the search API</span></span>](/graph/api/resources/search-api-overview?view=graph-rest-beta)
+- [<span data-ttu-id="fb9ff-117">Использование API Поиска (Майкрософт) для запроса данных</span><span class="sxs-lookup"><span data-stu-id="fb9ff-117">Use the Microsoft Search API to query data</span></span>](/graph/api/resources/search-api-overview?view=graph-rest-beta)
