@@ -5,12 +5,12 @@ author: anchanda
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 23c051caceff6be68e3b550c06f50c397a5c5d97
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: cf4087675804b3bd873699634c527db9038ffe8e
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37621647"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869887"
 ---
 # <a name="list-group-transitive-members"></a>Список транзитивных членов группы
 
@@ -24,9 +24,11 @@ ms.locfileid: "37621647"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory. Read. ALL, Directory. AccessAsUser. ALL, User. ReadBasic. ALL, User. Read. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory. Read. ALL, User. Read. ALL |
+|Приложение | Directory. Read. ALL, User. Read. ALL |
 
 >**Примечание:** Чтобы получить список членов скрытой группы членства, требуется разрешение Member. Read. Hidden.
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,7 +52,7 @@ GET /groups/{id}/transitiveMembers
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 
@@ -88,10 +90,10 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/transitiveMembers
 ---
 
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
->**Note**: объект Response, показанный здесь, может быть укорочен для удобочитаемости. 
+>**Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 <!-- {
   "blockType": "response",
   "truncated": true,

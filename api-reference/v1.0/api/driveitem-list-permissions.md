@@ -5,26 +5,26 @@ ms.date: 09/10/2017
 title: Список пользователей, имеющих доступ к файлу
 localization_priority: Normal
 ms.prod: sharepoint
-description: Создание списка действующих разрешений на общий доступ в элементе DriveItem.
+description: Перечислите эффективные разрешения общего доступа в driveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 9700dbd4429ee20b4e2d5921e60d0f506bbfdc8d
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: e1348a36e71a8ecc694f2a61f5056b12efd02399
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36721104"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40864784"
 ---
-# <a name="list-sharing-permissions-on-a-driveitem"></a>Создание списка разрешений на общий доступ в элементе DriveItem
+# <a name="list-sharing-permissions-on-a-driveitem"></a>Список разрешений на совместное использование в driveItem
 
-Создание списка действующих разрешений на общий доступ в элементе [DriveItem](../resources/driveitem.md).
+Перечислите эффективные разрешения общего доступа в [driveItem](../resources/driveitem.md).
 
-## <a name="access-to-sharing-permissions"></a>Доступ к разрешениями на общий доступ
+## <a name="access-to-sharing-permissions"></a>Доступ к разрешениями совместного доступа
 
-Коллекция разрешений включает потенциально конфиденциальные сведения и может быть доступна не для всех вызывающих объектов.
+Коллекция разрешений включает потенциально конфиденциальные данные и может быть доступна не для каждого отправителя вызовов.
 
-* Для владельца элемента возвращаются все разрешения на общий доступ. К владельцам элемента также относятся его совладельцы.
-* Вызывающему объекту, который не является владельцем, возвращаются только применяемые к нему разрешения.
-* Свойства разрешений на общий доступ, содержащие секреты (например, `shareId` и `webUrl`), возвращаются только для вызывающих объектов, которые могут создать разрешение на общий доступ.
+* Для владельца элемента возвращаются все разрешения совместного доступа. Это относится и к совладельцам.
+* Если вызов отправляет не владелец, возвращаются только те разрешения, которые относятся к отправителю вызова.
+* Свойства разрешений совместного доступа, содержащие секреты (например, `shareId` и `webUrl`), возвращаются только для тех пользователей, которые могут создать такое разрешение.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -57,25 +57,24 @@ GET /users/{userId}/drive/items/{itemId}/permissions
 
 | Имя          | Тип   | Описание                                                                                                                                     |
 |:--------------|:-------|:------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-none-match | string | Если указан этот заголовок запроса, а предоставленный тег etag совпадает с текущим тегом etag элемента, будет возвращен отклик `HTTP 304 Not Modified`. |
+| if-none-match | string | Если указан заголовок запроса, а предоставленный тег etag совпадает с текущим тегом etag элемента, то возвращается ответ `HTTP 304 Not Modified`. |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию ресурсов [Permission](../resources/permission.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает код ответа `200 OK` и коллекцию ресурсов [Permission](../resources/permission.md) в тексте ответа.
 
-Действующие разрешения на общий доступ для элемента DriveItem могут быть получены двумя путями:
+Действующие разрешения совместного доступа для элемента DriveItem можно получить из двух источников:
 
-* разрешения на общий доступ, примененные непосредственно к самому элементу DriveItem;
-* разрешения на общий доступ, унаследованные от предков элемента DriveItem.
+* разрешения совместного доступа, примененные непосредственно к самому элементу DriveItem;
+* разрешения совместного доступа, унаследованные от предков элемента DriveItem.
 
 Абоненты могут распознать унаследованное разрешение, проверив свойство **inheritedFrom**. Это свойство — ресурс [**itemReference**](../resources/itemreference.md), отсылающий к предшествующему элементу, от которого унаследовано разрешение.
 
-Уровни разрешений SharePoint, заданные для элемента, возвращаются с префиксом SP. Примеры: SP.View Only, SP.Limited Access, SP.View Web Analytics Data. См. [полный список ролей SharePoint](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1).
+Уровни разрешений SharePoint, заданные для элемента, возвращаются с префиксом SP. Примеры: SP.View Only, SP.Limited Access, SP.View Web Analytics Data. См. [полный список ролей SharePoint](https://technet.microsoft.com/library/cc721640.aspx#section1).
 
 ## <a name="example"></a>Пример
 
 В этом примере показано, как получить набор разрешений для элемента в объекте drive пользователя, выполнившего вход в систему.
-
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read", "tags": "service.graph" } -->
@@ -91,7 +90,7 @@ GET /me/drive/items/{item-id}/permissions
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-permissions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-permissions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -102,9 +101,9 @@ GET /me/drive/items/{item-id}/permissions
 ---
 
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
-Этот пример отклика включает три разрешения. Первое разрешение представляет собой ссылку для общего доступа с разрешениями на изменение, второе — явное разрешение для пользователя с именем John, которое унаследовано от родительской папки, а третье разрешение — это ссылка для общего доступа с правами на чтение и запись, созданная приложением.
+Этот пример ответа включает три разрешения. Первое разрешение представляет собой ссылку совместного доступа с разрешениями на изменение, второе — явное разрешение для пользователя с именем John, которое унаследовано от родительской папки, а третье разрешение — это ссылка совместного доступа с правами на чтение и запись, созданная приложением.
 
 <!-- {"blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true} -->
 
@@ -152,11 +151,11 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>Замечания
+## <a name="remarks"></a>Примечания
 
 Связи между **разрешениями** ресурса DriveItem невозможно развернуть как часть запроса на [получение DriveItem](driveitem-get.md) или коллекции DriveItems. Необходимо открыть доступ непосредственно к свойству разрешений.
 
-## <a name="error-responses"></a>Отклики с ошибками
+## <a name="error-responses"></a>Ответы с ошибками
 
 Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
 

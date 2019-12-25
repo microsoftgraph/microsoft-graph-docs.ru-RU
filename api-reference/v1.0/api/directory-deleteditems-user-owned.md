@@ -1,22 +1,22 @@
 ---
-title: Разрешения
+title: Список удаленных элементов, принадлежащих пользователю
 description: 'Получает список недавно удаленных элементов, принадлежащих указанному пользователю.  '
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0a863964f553bedeb4e47c81afefc3aa4f7d39b9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 168667566f880ecc2b2aafea63d95179e8c5c6a4
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36016939"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869951"
 ---
-# <a name="list-deleted-items-owned-by-a-user"></a>**Список удаленных элементов, принадлежащих пользователю**
+# <a name="list-deleted-items-owned-by-a-user"></a>Список удаленных элементов, принадлежащих пользователю
 
 Получает список недавно удаленных элементов, принадлежащих указанному пользователю.  
 
-В настоящее время функции списка удаленных элементов поддерживаются только для ресурсов [группы](../resources/group.md) , принадлежащих пользователю.
+В настоящее время функции списка удаленных элементов поддерживаются только для ресурсов [приложения](../resources/application.md) и [группы](../resources/group.md) , принадлежащих пользователю.
 
 Это действие службы, которое означает, что она не поддерживает разбивку на страницы.  API возвращает до 1 000 удаленных объектов, принадлежащих пользователю, отсортированных по ИДЕНТИФИКАТОРу.
 
@@ -28,7 +28,7 @@ ms.locfileid: "36016939"
 | --- | --- |
 | Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) |  Не поддерживается. |
-| Для приложений | Group.Read.All, Group.ReadWrite.All  |
+| Приложение | Group.Read.All, Group.ReadWrite.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -59,7 +59,7 @@ POST /directory/deletedItems/getUserOwnedObjects
 |type|String|Тип собственных объектов, которые требуется вернуть; `Group` в настоящее время является единственным поддерживаемым значением.|
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 Успешные запросы `200 OK` возвращают коды ответа; объект Response содержит свойства [Directory (удаленные элементы)](../resources/directory.md) .
 

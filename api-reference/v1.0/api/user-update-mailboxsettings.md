@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d26efae5860b918563a265bde12dbfafe68b21fe
-ms.sourcegitcommit: 1585d55d3e7030b5fd1f7cfd5de8f9fb8202cd56
+ms.openlocfilehash: 392ed9a0b2042eadcac035a93f2e667dbb1a9747
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "37427981"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40863971"
 ---
 # <a name="update-user-mailbox-settings"></a>Обновление параметров почтового ящика пользователя
 
@@ -23,11 +23,11 @@ ms.locfileid: "37427981"
 - часовой пояс;
 - [рабочее время](../resources/workinghours.md).
 
-При обновлении предпочтительного формата даты или времени для пользователя укажите его соответственно в [кратком формате даты](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) или [коротком формате времени](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) . 
+При обновлении предпочтительного формата даты или времени для пользователя укажите его соответственно в [кратком формате даты](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) или [коротком формате времени](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) .
 
 При обновлении предпочтительного часового пояса для пользователя укажите его в формате [часового пояса Windows или Internet Assigned Numbers Authority (IANA)](https://www.iana.org/time-zones) (также известного как часовой пояс Олсона). Кроме того, можно настроить часовой пояс, как показано в [примере 2](#example-2) ниже.
 
-> [!TIP] 
+> [!TIP]
 > Вы не можете создавать или удалять параметры почтового ящика.
 
 ## <a name="permissions"></a>Разрешения
@@ -58,9 +58,9 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Параметры конфигурации для автоматического уведомления отправителя о входящем письме с помощью сообщения от пользователя, вошедшего в систему. Вы можете настроить такие уведомления только для диапазона дат в будущем.|
-|dateFormat|строка|Формат даты для почтового ящика пользователя.|
+|dateFormat|string|Формат даты для почтового ящика пользователя.|
 |language|[localeInfo](../resources/localeinfo.md)|Сведения о языковом стандарте пользователя, в том числе о предпочитаемом языке и стране или регионе.|
-|тимеформат|строка|Формат времени для почтового ящика пользователя.|
+|тимеформат|string|Формат времени для почтового ящика пользователя.|
 |timeZone|string|Часовой пояс, используемый по умолчанию, для почтового ящика пользователя.|
 |workingHours|[workingHours](../resources/workinghours.md)|Часы, дни недели и часовой пояс работы пользователя.|
 
@@ -82,7 +82,7 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 
 ## <a name="examples"></a>Примеры
 ### <a name="example-1"></a>Пример 1
-#### <a name="request"></a>Запрос 
+#### <a name="request"></a>Запрос
 В первом примере показано, как включить автоматические ответы для диапазона дат, настроив для свойства **automaticRepliesSetting** следующие свойства: **status**, **scheduledStartDateTime** и **scheduledEndDateTime**.
 
 
@@ -130,7 +130,7 @@ Content-Type: application/json
 
 
 #### <a name="response"></a>Отклик
-Ответ включает обновленные параметры автоматических ответов. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ответ включает обновленные параметры автоматических ответов. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "name": "update_mailboxsettings_1",
@@ -206,8 +206,8 @@ Content-Type: application/json
   }
 } 
 ```
-#### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+#### <a name="response"></a>Ответ
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "ignored",
   "name": "update_mailboxsettings_2",

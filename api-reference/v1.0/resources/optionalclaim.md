@@ -5,18 +5,18 @@ localization_priority: Normal
 author: sureshja
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: d580809ab5046720730578713e90588c6f6ec49a
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 355a9e558f76a8dd38ea227950bb9c3938aa21c4
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939020"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869817"
 ---
 # <a name="optionalclaim-resource-type"></a>Тип ресурса Оптионалклаим
 
-Содержит необязательное утверждение, связанное с [приложением](application.md) <!-- or a service principal -->. Свойства `idToken`, `accessToken`и `saml2Token` , в ресурсе [оптионалклаимс](optionalclaims.md) , представляют собой коллекцию **оптионалклаим**. Если это поддерживается определенным утверждением, вы также можете изменить поведение Оптионалклаим с помощью `additionalProperties` свойства. 
+Содержит необязательное утверждение, связанное с [приложением](application.md) <!-- or a service principal -->. Свойства `idToken`, `accessToken`и `saml2Token` , в ресурсе [оптионалклаимс](optionalclaims.md) , представляют собой коллекцию **оптионалклаим**. Если это поддерживается определенным утверждением, вы также можете изменить поведение Оптионалклаим с помощью `additionalProperties` свойства.
 
-Дополнительные сведения см. [в статье предоставление дополнительных утверждений для приложения Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-optional-claims) .
+Дополнительные сведения см. в статье [Предоставление необязательных утверждений для приложения Azure AD](/azure/active-directory/develop/active-directory-optional-claims).
 
 ## <a name="properties"></a>Свойства
 

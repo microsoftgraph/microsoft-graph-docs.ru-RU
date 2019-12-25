@@ -1,26 +1,26 @@
 ---
 title: 'Группа: Валидатепропертиес'
-description: Убедитесь, что отображаемое имя или псевдоним почты группы Office 365 соответствует политикам именования.
+description: Проверка соответствия отображаемого имени или почтового псевдонима группы Office 365 политикам именования.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e2699e50012f92d8a776fcce20c5cd3d87be83d6
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 53705781c8e9465b06199ba3c7714d29a416ee47
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36373310"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40864721"
 ---
 # <a name="group-validateproperties"></a>Группа: Валидатепропертиес
 
-Убедитесь, что отображаемое имя или псевдоним почты группы Office 365 соответствует политикам именования.  Клиенты могут использовать этот API, чтобы определить, является ли отображаемое имя или псевдоним почты допустимым, прежде чем пытаться [Обновить](group-update.md) группу Office 365. Чтобы проверить свойства перед созданием группы, используйте функцию [directoryobject: валидатепропертиес](directoryobject-validateproperties.md) .
+Проверка соответствия отображаемого имени или почтового псевдонима группы Office 365 политикам именования.  Клиенты могут использовать этот API, чтобы определить, является ли отображаемое имя или псевдоним почты допустимым, прежде чем пытаться [Обновить](group-update.md) группу Office 365. Чтобы проверить свойства перед созданием группы, используйте функцию [directoryobject: валидатепропертиес](directoryobject-validateproperties.md) .
 
-Для отображаемого имени и свойств псевдонима почты выполняются следующие проверки политик: 
+Для отображаемого имени и свойств псевдонима почты выполняются следующие проверки политик:
 1. Проверка политики именования префиксов и суффиксов
 2. Проверка политики нестандартных запрещенных слов
 
-Этот API возвращает только первую обнаруженную ошибку проверки. Если свойства не прошли несколько проверок, возвращается только первый сбой проверки. Тем не менее, вы можете проверить псевдоним почты и отображаемое имя и получить коллекцию ошибок проверки, если проверяется только политика именования префиксов и суффиксов. Чтобы узнать больше о настройке политик именования, ознакомьтесь со статьей [Настройка политики именования](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/groups-naming-policy#configure-naming-policy-in-powershell).
+Этот API возвращает только первую обнаруженную ошибку проверки. Если свойства не прошли несколько проверок, возвращается только первый сбой проверки. Тем не менее, вы можете проверить псевдоним почты и отображаемое имя и получить коллекцию ошибок проверки, если проверяется только политика именования префиксов и суффиксов. Чтобы узнать больше о настройке политик именования, ознакомьтесь со статьей [Настройка политики именования](/azure/active-directory/users-groups-roles/groups-naming-policy#configure-naming-policy-in-powershell).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,7 +30,7 @@ ms.locfileid: "36373310"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group.Read.All, Group.ReadWrite.All |
+|Приложение | Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -55,7 +55,7 @@ POST /groups/{id}/validateProperties
 |mailNickname|String| Псевдоним почты для группы, которую требуется проверить. Свойство не обязательно должно быть обязательным. Однако необходимо указать по крайней мере одно свойство (**DisplayName** или **mailNickname**). |
 |онбехалфофусерид|GUID| Идентификатор пользователя, который олицетворяет при вызове API. Результаты проверки предназначены для атрибутов и ролей **онбехалфофусерид** . |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении и отсутствии ошибок проверки метод возвращает `204 No Content` код отклика. В тексте отклика не возвращается никаких данных.
 
 Если запрос является недопустимым, метод возвращает `400 Bad Request` код отклика. В тексте отклика возвращается сообщение об ошибке со сведениями о недопустимом запросе.
@@ -93,7 +93,7 @@ Content-length: 132
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-validateproperties-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-validateproperties-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -116,7 +116,7 @@ HTTP/1.1 204 No Content
 ### <a name="example-2-request-with-validation-errors"></a>Пример 2: запрос с ошибками проверки
 Это пример запроса с ошибками проверки.
 
-#### <a name="request"></a>Запрос
+#### <a name="request"></a>Запросить
 ``` http
 POST https://graph.microsoft.com/v1.0/groups/{id}/validateProperties
 Content-type: application/json
@@ -128,7 +128,7 @@ Content-length: 128
 }
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 ```http
 HTTP/1.1 422
 Content-type: application/json
