@@ -3,44 +3,44 @@ title: Тип ресурса схемы
 description: Описывает тип контента и способ индексирования каждого свойства элементов в подключении Microsoft Search.
 localization_priority: Normal
 author: snlraju-msft
-ms.prod: ''
+ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 77c17345a6a9408a8208f73f03dd98033f2b6a36
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 2a13d797ff3b695250f7dd5cfef3bc077afe505b
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38704138"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870119"
 ---
-# <a name="schema-resource-type"></a><span data-ttu-id="37c5e-103">Тип ресурса схемы</span><span class="sxs-lookup"><span data-stu-id="37c5e-103">schema resource type</span></span>
+# <a name="schema-resource-type"></a><span data-ttu-id="9b803-103">Тип ресурса схемы</span><span class="sxs-lookup"><span data-stu-id="9b803-103">schema resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="37c5e-104">Описывает тип контента и способ индексирования каждого свойства элементов в [подключении](externalconnection.md)Microsoft Search.</span><span class="sxs-lookup"><span data-stu-id="37c5e-104">Describes the type of content and how to index each property in items in a Microsoft Search [connection](externalconnection.md).</span></span>
+<span data-ttu-id="9b803-104">Описывает тип контента и способ индексирования каждого свойства элементов в [подключении](externalconnection.md)Microsoft Search.</span><span class="sxs-lookup"><span data-stu-id="9b803-104">Describes the type of content and how to index each property in items in a Microsoft Search [connection](externalconnection.md).</span></span>
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="methods"></a><span data-ttu-id="37c5e-105">Методы</span><span class="sxs-lookup"><span data-stu-id="37c5e-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="9b803-105">Методы</span><span class="sxs-lookup"><span data-stu-id="9b803-105">Methods</span></span>
 
-| <span data-ttu-id="37c5e-106">Метод</span><span class="sxs-lookup"><span data-stu-id="37c5e-106">Method</span></span>                                                    | <span data-ttu-id="37c5e-107">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="37c5e-107">Return Type</span></span>                   | <span data-ttu-id="37c5e-108">Описание</span><span class="sxs-lookup"><span data-stu-id="37c5e-108">Description</span></span> |
+| <span data-ttu-id="9b803-106">Метод</span><span class="sxs-lookup"><span data-stu-id="9b803-106">Method</span></span>                                                    | <span data-ttu-id="9b803-107">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="9b803-107">Return Type</span></span>                   | <span data-ttu-id="9b803-108">Описание</span><span class="sxs-lookup"><span data-stu-id="9b803-108">Description</span></span> |
 |:----------------------------------------------------------|:------------------------------|:--|
-| [<span data-ttu-id="37c5e-109">Создание схемы</span><span class="sxs-lookup"><span data-stu-id="37c5e-109">Create schema</span></span>](../api/externalconnection-post-schema.md) | <span data-ttu-id="37c5e-110">Нет *или* [схема](schema.md)</span><span class="sxs-lookup"><span data-stu-id="37c5e-110">None *or* [schema](schema.md)</span></span> | <span data-ttu-id="37c5e-111">Регистрация схемы подключения.</span><span class="sxs-lookup"><span data-stu-id="37c5e-111">Register connection schema.</span></span> |
-| [<span data-ttu-id="37c5e-112">Получение схемы</span><span class="sxs-lookup"><span data-stu-id="37c5e-112">Get schema</span></span>](../api/schema-get.md)                        | [<span data-ttu-id="37c5e-113">schema</span><span class="sxs-lookup"><span data-stu-id="37c5e-113">schema</span></span>](schema.md)           | <span data-ttu-id="37c5e-114">Чтение свойств объекта Schema.</span><span class="sxs-lookup"><span data-stu-id="37c5e-114">Read properties of a schema object.</span></span> |
+| [<span data-ttu-id="9b803-109">Создание схемы</span><span class="sxs-lookup"><span data-stu-id="9b803-109">Create schema</span></span>](../api/externalconnection-post-schema.md) | <span data-ttu-id="9b803-110">Нет *или* [схема](schema.md)</span><span class="sxs-lookup"><span data-stu-id="9b803-110">None *or* [schema](schema.md)</span></span> | <span data-ttu-id="9b803-111">Регистрация схемы подключения.</span><span class="sxs-lookup"><span data-stu-id="9b803-111">Register connection schema.</span></span> |
+| [<span data-ttu-id="9b803-112">Получение схемы</span><span class="sxs-lookup"><span data-stu-id="9b803-112">Get schema</span></span>](../api/schema-get.md)                        | [<span data-ttu-id="9b803-113">schema</span><span class="sxs-lookup"><span data-stu-id="9b803-113">schema</span></span>](schema.md)           | <span data-ttu-id="9b803-114">Чтение свойств объекта Schema.</span><span class="sxs-lookup"><span data-stu-id="9b803-114">Read properties of a schema object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="37c5e-115">Свойства</span><span class="sxs-lookup"><span data-stu-id="37c5e-115">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="9b803-115">Свойства</span><span class="sxs-lookup"><span data-stu-id="9b803-115">Properties</span></span>
 
-| <span data-ttu-id="37c5e-116">Свойство</span><span class="sxs-lookup"><span data-stu-id="37c5e-116">Property</span></span>   | <span data-ttu-id="37c5e-117">Тип</span><span class="sxs-lookup"><span data-stu-id="37c5e-117">Type</span></span>                               | <span data-ttu-id="37c5e-118">Описание</span><span class="sxs-lookup"><span data-stu-id="37c5e-118">Description</span></span>                |
+| <span data-ttu-id="9b803-116">Свойство</span><span class="sxs-lookup"><span data-stu-id="9b803-116">Property</span></span>   | <span data-ttu-id="9b803-117">Тип</span><span class="sxs-lookup"><span data-stu-id="9b803-117">Type</span></span>                               | <span data-ttu-id="9b803-118">Описание</span><span class="sxs-lookup"><span data-stu-id="9b803-118">Description</span></span>                |
 |:-----------|:-----------------------------------|:---------------------------|
-| <span data-ttu-id="37c5e-119">baseType</span><span class="sxs-lookup"><span data-stu-id="37c5e-119">baseType</span></span>   | <span data-ttu-id="37c5e-120">String</span><span class="sxs-lookup"><span data-stu-id="37c5e-120">String</span></span>                             | <span data-ttu-id="37c5e-121">Возможные значения: `microsoft.graph.externalItem` и `microsoft.graph.externalFile`.</span><span class="sxs-lookup"><span data-stu-id="37c5e-121">Possible values are `microsoft.graph.externalItem` and `microsoft.graph.externalFile`.</span></span> <span data-ttu-id="37c5e-122">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="37c5e-122">Required.</span></span> |
-| <span data-ttu-id="37c5e-123">properties</span><span class="sxs-lookup"><span data-stu-id="37c5e-123">properties</span></span> | <span data-ttu-id="37c5e-124">Коллекция [свойств](property.md)</span><span class="sxs-lookup"><span data-stu-id="37c5e-124">[property](property.md) collection</span></span> | <span data-ttu-id="37c5e-125">Свойства, заданные для элементов в подключении.</span><span class="sxs-lookup"><span data-stu-id="37c5e-125">The properties defined for the items in the connection.</span></span> <span data-ttu-id="37c5e-126">Минимальное число свойств — 1, максимальное — 64.</span><span class="sxs-lookup"><span data-stu-id="37c5e-126">The minimum number of properties is one, the maximum is 64.</span></span> <span data-ttu-id="37c5e-127">Является обязательным `baseType` , если задано значение `microsoft.graph.externalItem`.</span><span class="sxs-lookup"><span data-stu-id="37c5e-127">Required when `baseType` is set to `microsoft.graph.externalItem`.</span></span> <span data-ttu-id="37c5e-128">Игнорируется `baseType` , если задано значение `microsoft.graph.externalFile`.</span><span class="sxs-lookup"><span data-stu-id="37c5e-128">Ignored when `baseType` is set to `microsoft.graph.externalFile`.</span></span> |
+| <span data-ttu-id="9b803-119">baseType</span><span class="sxs-lookup"><span data-stu-id="9b803-119">baseType</span></span>   | <span data-ttu-id="9b803-120">String</span><span class="sxs-lookup"><span data-stu-id="9b803-120">String</span></span>                             | <span data-ttu-id="9b803-121">Возможные значения: `microsoft.graph.externalItem` и `microsoft.graph.externalFile`.</span><span class="sxs-lookup"><span data-stu-id="9b803-121">Possible values are `microsoft.graph.externalItem` and `microsoft.graph.externalFile`.</span></span> <span data-ttu-id="9b803-122">Обязательный атрибут.</span><span class="sxs-lookup"><span data-stu-id="9b803-122">Required.</span></span> |
+| <span data-ttu-id="9b803-123">properties</span><span class="sxs-lookup"><span data-stu-id="9b803-123">properties</span></span> | <span data-ttu-id="9b803-124">Коллекция [свойств](property.md)</span><span class="sxs-lookup"><span data-stu-id="9b803-124">[property](property.md) collection</span></span> | <span data-ttu-id="9b803-125">Свойства, заданные для элементов в подключении.</span><span class="sxs-lookup"><span data-stu-id="9b803-125">The properties defined for the items in the connection.</span></span> <span data-ttu-id="9b803-126">Минимальное число свойств — 1, максимальное — 64.</span><span class="sxs-lookup"><span data-stu-id="9b803-126">The minimum number of properties is one, the maximum is 64.</span></span> <span data-ttu-id="9b803-127">Является обязательным `baseType` , если задано значение `microsoft.graph.externalItem`.</span><span class="sxs-lookup"><span data-stu-id="9b803-127">Required when `baseType` is set to `microsoft.graph.externalItem`.</span></span> <span data-ttu-id="9b803-128">Игнорируется `baseType` , если задано значение `microsoft.graph.externalFile`.</span><span class="sxs-lookup"><span data-stu-id="9b803-128">Ignored when `baseType` is set to `microsoft.graph.externalFile`.</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="37c5e-129">Связи</span><span class="sxs-lookup"><span data-stu-id="37c5e-129">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="9b803-129">Отношения</span><span class="sxs-lookup"><span data-stu-id="9b803-129">Relationships</span></span>
 
-<span data-ttu-id="37c5e-130">Нет</span><span class="sxs-lookup"><span data-stu-id="37c5e-130">None</span></span>
+<span data-ttu-id="9b803-130">Нет</span><span class="sxs-lookup"><span data-stu-id="9b803-130">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="37c5e-131">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="37c5e-131">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="9b803-131">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="9b803-131">JSON representation</span></span>
 
-<span data-ttu-id="37c5e-132">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="37c5e-132">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="9b803-132">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="9b803-132">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
