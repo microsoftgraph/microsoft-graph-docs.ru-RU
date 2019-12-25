@@ -5,12 +5,12 @@ author: VinodRavichandran
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: 99f79861ae4641f29784ebad44c14408a69821d9
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: dbad2e21d5e3dbdae37ab30b02d2a96970722040
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39843947"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870353"
 ---
 # <a name="working-with-the-communications-api-in-microsoft-graph"></a>Работа с API коммуникаций в Microsoft Graph
 
@@ -23,7 +23,7 @@ API коммуникаций можно использовать для созд
 
 ## <a name="authorization"></a>Авторизация
 
-Для доступа к API коммуникаций требуется одно из указанных ниже [разрешений](https://docs.microsoft.com/graph/permissions-reference#calls-permissions). Эти разрешения должны предоставляться администратором
+Для доступа к API коммуникаций требуется одно из указанных ниже [разрешений](/graph/permissions-reference#calls-permissions). Эти разрешения должны предоставляться администратором
 
 | Сценарий                 | Разрешения                                  |
 |:------------------------------------|:---------------------------------------------|
@@ -37,19 +37,19 @@ API коммуникаций можно использовать для созд
 
 | Варианты использования                         | Ресурсы REST                                 | См. также  |
 |:------------------------------------|:---------------------------------------------|:----------|
-| Создание приватных и групповых звонков, а также присоединение к ним   | [Звонок](https://docs.microsoft.com/graph/api/resources/call?view=graph-rest-beta)| [Методы звонков](https://docs.microsoft.com/graph/api/resources/call?view=graph-rest-beta#methods)| 
-|Звонки с интерактивным речевым взаимодействием   |     | [Методы для интерактивного речевого взаимодействия](https://docs.microsoft.com/graph/api/resources/calls-api-ivr-overview?view=graph-rest-beta)
-| Элементы управления звонком (участник) | [Участник](https://docs.microsoft.com/graph/api/resources/participant?view=graph-rest-beta)   ||
-|Собрания|[onlineMeeting](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-beta)| [Методы для собраний](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-beta#methods)|
+| Создание приватных и групповых звонков, а также присоединение к ним   | [Звонок](/graph/api/resources/call?view=graph-rest-beta)| [Методы звонков](/graph/api/resources/call?view=graph-rest-beta#methods)|
+|Звонки с интерактивным речевым взаимодействием   |     | [Методы для интерактивного речевого взаимодействия](/graph/api/resources/calls-api-ivr-overview?view=graph-rest-beta)
+| Элементы управления звонком (участник) | [Участник](/graph/api/resources/participant?view=graph-rest-beta)   ||
+|Собрания|[onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta)| [Методы для собраний](/graph/api/resources/onlinemeeting?view=graph-rest-beta#methods)|
 |Присутствие | [presence](/graph/api/resources/presence) | [Методы для присутствия](/graph/api/resources/presence#methods) |
 
 ## <a name="common-properties"></a>Общие свойства
 
 | Ресурс                | Свойства                             |
 |:------------------------------------|:---------------------------------------------|
-| call                               | [свойства объекта call](https://docs.microsoft.com/graph/api/resources/call?view=graph-rest-beta#properties)  |
-| participant                         | [свойства объекта participant](https://docs.microsoft.com/graph/api/resources/participant?view=graph-rest-beta#properties) |
-| onlineMeeting                            | [свойства объекта onlineMeeting](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-beta#properties)                     |
+| call                               | [свойства объекта call](/graph/api/resources/call?view=graph-rest-beta#properties)  |
+| participant                         | [свойства объекта participant](/graph/api/resources/participant?view=graph-rest-beta#properties) |
+| onlineMeeting                            | [свойства объекта onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta#properties)                     |
 | presence | [свойства объекта presence](/graph/api/resources/presence#properties) |
 
 ## <a name="see-also"></a>См. также

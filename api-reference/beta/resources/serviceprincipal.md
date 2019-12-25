@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: f3e51512c668b35fc9317cda9783d092d683fb00
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 030f989badb50e6f05203a3681e132d1f3f79deb
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38658872"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870106"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
@@ -74,8 +74,8 @@ ms.locfileid: "38658872"
 ## <a name="relationships"></a>Связи
 | Связь | Тип |Описание|
 |:---------------|:--------|:----------|
-|appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|Субъекты (пользователи, группы и субъекты-службы), которые назначены для субъекта-службы. Только для чтения.|
-|appRoleAssignments|Коллекция [appRoleAssignment](approleassignment.md)|Приложения, которым назначен субъект-служба. Только для чтения. Допускается значение null.|
+|appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|Субъекты (пользователи, группы и субъекты-службы), которые назначены для субъекта-службы.|
+|appRoleAssignments|Коллекция [appRoleAssignment](approleassignment.md)|Приложения, которым назначен субъект-служба.|
 |createdObjects|Коллекция [directoryObject](directoryobject.md)|Объекты каталога, созданные субъектом-службой. Только для чтения. Допускается значение null.|
 |memberOf|Коллекция [directoryObject](directoryobject.md)|Роли, в которых участвует субъект-служба. Методы HTTP: GET. Только для чтения. Допускается значение null.|
 |oauth2PermissionGrants|Коллекция [oAuth2PermissionGrant](oauth2permissiongrant.md)|Олицетворения пользователя, связанные с субъектом-службой. Только для чтения. Допускается значение null.|

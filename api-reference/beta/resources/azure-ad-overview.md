@@ -5,31 +5,31 @@ localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 83c9f8b9c1d95139ed2b170dd3df4964add15b1b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5102a9e445c7aeadefdf37df41dc7325f2a8ed5e
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013166"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870381"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Работа с ресурсами Azure Active Directory в Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Graph предоставляет доступ к ресурсам [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) для управления ролями администратора (каталога), приглашения внешних пользователей в организацию, и, если вы являетесь [поставщиком облачных решений](https://partner.microsoft.com/cloud-solution-provider), управления данными клиентов.  Microsoft Graph также предоставляет методы, которые могут использоваться приложениями, например для поиска информации о транзитивных группах и ролях пользователей. 
+Microsoft Graph предоставляет доступ к ресурсам [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) для управления ролями администратора (каталога), приглашения внешних пользователей в организацию, и, если вы являетесь [поставщиком облачных решений](https://partner.microsoft.com/cloud-solution-provider), управления данными клиентов.  Microsoft Graph также предоставляет методы, которые могут использоваться приложениями, например для поиска информации о транзитивных группах и ролях пользователей.
 
 > **Примечание**. Некоторые ресурсы Azure AD описаны в других разделах справочника по API. Дополнительную информацию см. в статьях [Пользователи](users.md) и [Группы](group.md).
 
 
 ## <a name="authorization"></a>Авторизация
- 
-Для вызова API Microsoft Graph для ресурсов Azure AD приложению необходимы соответствующие разрешения. Для многих API, предоставляемых для ресурсов Azure AD, требуется одно из [разрешений _Directory_](/graph/permissions-reference#directory-permissions). Разрешения Directory дают широкие права и всегда предоставляются администратором. 
+
+Для вызова API Microsoft Graph для ресурсов Azure AD приложению необходимы соответствующие разрешения. Для многих API, предоставляемых для ресурсов Azure AD, требуется одно из [разрешений _Directory_](/graph/permissions-reference#directory-permissions). Разрешения Directory дают широкие права и всегда предоставляются администратором.
 
 Чтобы приложение могло вызывать API AD Azure от имени пользователя (делегированные разрешения), этому пользователю должна быть назначена соответствующая [роль администратора](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
 
-Дополнительные сведения о разрешениях, в том числе делегированных и для приложений, см. в [справочнике по разрешениям](/graph/permissions-reference). 
+Дополнительные сведения о разрешениях, в том числе делегированных и для приложений, см. в [справочнике по разрешениям](/graph/permissions-reference).
 
-## <a name="common-use-cases"></a>Основные варианты использования 
+## <a name="common-use-cases"></a>Основные варианты использования
 
 В следующей таблице перечислены основные варианты использования ресурсов Azure AD.
 
@@ -44,7 +44,7 @@ Microsoft Graph предоставляет доступ к ресурсам [Azu
 | Применение политики Azure AD к приложениям, субъектам-службам, группам или всей организации. В настоящее время поддерживаются политики для времени существования маркера и обнаружения домашней области.  | [policy](../resources/policy.md) | Н/Д |
 | **Защита привилегированного доступа к Azure AD** | | |
 | Отслеживание и управление ограниченным по времени привилегированным доступом к каталогу и ресурсам Azure для администраторов и ИТ-специалистов с помощью службы Privileged Identity Management (PIM). | [Privileged Identity Management API](../resources/privilegedidentitymanagement-root.md) | [Что такое Azure AD Privileged Identity Management?](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)|
-| Отслеживание событий с риском для идентификации, например входа пользователей с устройств, зараженных вредоносными программами, или из незнакомых расположений. | [API службы защиты идентификации](../resources/identityprotection-root.md) | [Защита идентификации Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection)<br/><br/>[События с риском Azure Active Directory](https://docs.microsoft.com/ru-RU/azure/active-directory/active-directory-reporting-risk-events) |
+| Отслеживание событий с риском для идентификации, например входа пользователей с устройств, зараженных вредоносными программами, или из незнакомых расположений. | [API службы защиты идентификации](../resources/identityprotection-root.md) | [Защита идентификации Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection)<br/><br/>[События с риском Azure Active Directory](/azure/active-directory/active-directory-reporting-risk-events) |
 | **Управление устройствами** | | |
 | Управляйте устройствами, зарегистрированными в организации. Устройства (ноутбуки, настольные компьютеры, планшеты и мобильные телефоны) регистрируются на пользователей. Устройства обычно создаются в облаке с помощью службы регистрации устройств или Microsoft Intune. Они используются политиками условного доступа для многофакторной аутентификации. | [device](../resources/device.md) | [Знакомство с регистрацией устройств в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-overview)<br/><br/>[Что такое InTune?](https://docs.microsoft.com/intune-classic/understand-explore/introduction-to-microsoft-intune)<br/><br/>[Регистрация устройств для управления в Intune](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) |
 | **Управление приложениями** | | |
@@ -60,9 +60,9 @@ Microsoft Graph предоставляет доступ к ресурсам [Azu
 | Получайте информацию о службах, на которые подписана компания. | [subscribedSku](../resources/subscribedsku.md) | Недоступно |
 | Приглашайте внешних пользователей в организацию. | [invitation](../resources/invitation.md) | [Что такое служба совместной работы Azure AD B2B?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)|
 | **Проверки доступа** | | |
-| Проверка правильности участия в группах и прав доступа к приложению с помощью проверок доступа | [API проверки доступа](../resources/accessreviews-root.md) |[Проверки доступа Azure AD](https://docs.microsoft.com/ru-RU/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
+| Проверка правильности участия в группах и прав доступа к приложению с помощью проверок доступа | [API проверки доступа](../resources/accessreviews-root.md) |[Проверки доступа Azure AD](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
 ## <a name="next-steps"></a>Дальнейшие действия
-Ресурсы и API каталога открывают новые способы взаимодействия с пользователями и контроля их работы с помощью Microsoft Graph. Чтобы узнать больше: 
+Ресурсы и API каталога открывают новые способы взаимодействия с пользователями и контроля их работы с помощью Microsoft Graph. Чтобы узнать больше:
 
 - Изучите подробнее методы и свойства ресурсов, наиболее полезных для вашего сценария.
 - Опробуйте API в [песочнице Explorer](https://developer.microsoft.com/graph/graph-explorer).

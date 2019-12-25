@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 5b4fd73fa14c459cf49f4b52a064ad52e400550d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b5aec9f4cd1868948d750a8320da9d054ab29558
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35978646"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869306"
 ---
 # <a name="get-photo"></a>Получение фотографии
 
@@ -38,9 +38,9 @@ ms.locfileid: "35978646"
 |Делегированные (личная учетная запись Майкрософт)  <br /> **Примечание**. Операция получения метаданных не поддерживается. | Для ресурса **user**:<br/>User.Read, User.ReadWrite<br /><br />Для ресурса **contact**:<br />Contacts.Read, Contacts.ReadWrite |
 |Для приложения                        | Для ресурса **user**:<br/>User.Read.All, User.ReadWrite.All<br /><br />Для ресурса **group**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Для ресурса **contact**:<br />Contacts.Read, Contacts.ReadWrite |
 
-> **Примечание.** В настоящее время существует [известная проблема](https://docs.microsoft.com/ru-RU/graph/known-issues#groups) с доступом к фотографиям группы с помощью разрешений для приложений.
+> **Примечание.** В настоящее время существует [известная проблема](/graph/known-issues#groups) с доступом к фотографиям группы с помощью разрешений для приложений.
 
-## <a name="http-request"></a>HTTP-запрос 
+## <a name="http-request"></a>HTTP-запрос
 
 ### <a name="get-the-photo"></a>Получение фотографии
 <!-- { "blockType": "ignored" } -->
@@ -139,7 +139,7 @@ GET https://graph.microsoft.com/beta/me/photo
 ```
 
 ##### <a name="response"></a>Отклик
-В данных указанного ниже отклика содержатся метаданные фотографии. 
+В данных указанного ниже отклика содержатся метаданные фотографии.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -161,7 +161,7 @@ Content-type: application/json
 }
 ```
 
-Ниже показаны данные отклика в случае, если фотография пользователя еще не выложена. 
+Ниже показаны данные отклика в случае, если фотография пользователя еще не выложена.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
