@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: c374adf6369790c92cfc8261367bfa233276c82a
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 4214d2d250f45d8f57a6ac3235575aa5327eb1e2
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969167"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866905"
 ---
 # <a name="microsoft-teams-api-overview"></a>Обзор API Microsoft Teams
 
@@ -92,5 +92,5 @@ API Microsoft Teams могут расширять возможности при�
 - Узнайте больше о методах, свойствах и связях ресурсов [team](/graph/api/resources/team?view=graph-rest-1.0), [channel](/graph/api/resources/channel?view=graph-rest-1.0) и [group](/graph/api/resources/group?view=graph-rest-1.0).
 - Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
 - Узнайте больше о [модели программирования Microsoft Teams](https://docs.microsoft.com/microsoftteams/platform/concepts/concepts-overview).
-- Изучите [API звонков и собраний по сети](/graph/api/resources/calls-api-overview?view=graph-rest-beta).
+- Изучите [API облачных коммуникаций](/graph/api/resources/communications-api-overview?view=graph-rest-beta).
 - Быстро приступите к работе с помощью примеров кода: [Авиакомпания Contoso](https://github.com/microsoftgraph/contoso-airlines-teams-sample), [мини-примеры C#](https://github.com/microsoftgraph/csharp-teams-sample-graph)

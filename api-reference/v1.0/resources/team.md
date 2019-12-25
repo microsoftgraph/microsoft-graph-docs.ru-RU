@@ -5,18 +5,19 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: f5694c2708a02e3e6d4d766e9af403dcaefac335
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9cefea7168e48fa4d22e8a2dd1f7770143e49e90
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033910"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40863766"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
 
 
-Команда в Microsoft Teams — это коллекция объектов [channel](channel.md). Канал представляет тему и логически обособляет обсуждение в команде.
+Команда в Microsoft Teams — это коллекция объектов [channel](channel.md).
+Канал представляет тему и логически обособляет обсуждение в команде.
 
 Каждая команда связана с [группой](../resources/group.md).
 У группы такой же идентификатор, как у команды. Например, /groups/{id}/team совпадает с /teams/{id}.
@@ -45,15 +46,16 @@ ms.locfileid: "36033910"
 |:---------------|:--------|:----------|
 |funSettings|[teamFunSettings](teamfunsettings.md) |Параметры для настройки использования Giphy, мемов и наклеек в команде.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Параметры для настройки того, могут ли гости создавать, изменять или удалять каналы в команде.|
-|internalId | string | Уникальный идентификатор для команды, используемый в нескольких местах, например в журнале аудита или [API действий управления Office 365](https://docs.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-reference). |
+|internalId | string | Уникальный идентификатор для команды, используемый в нескольких местах, например в журнале аудита или [API действий управления Office 365](/office/office-365-management-api/office-365-management-activity-api-reference). |
 |isArchived|Boolean|Находится ли команда в режиме только для чтения. |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Параметры для настройки того, могут ли участники выполнять определенные действия, например создавать каналы и добавлять ботов в команде.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Параметры для настройки обмена сообщениями и упоминаний в команде.|
 |webUrl|string (только для чтения) | Гиперссылка, ведущая к команде в клиенте Microsoft Teams. Это URL-адрес, получаемый при щелчке правой кнопкой мыши по команде в клиенте Microsoft Teams и выборе пункта **Получить ссылку на команду**. Этот URL-адрес должен обрабатываться как непрозрачный BLOB-объект и не должен анализироваться. |
+|classSettings|[teamClassSettings](teamclasssettings.md) |Настройка параметров класса. Доступна только в том случае, если команда представляет класс.|
 
 ## <a name="relationships"></a>Связи
 
-| Отношение | Тип   | Описание |
+| Связь | Тип   | Описание |
 |:---------------|:--------|:----------|
 |channels|Коллекция [channel](channel.md)|Коллекция каналов и сообщений, связанных с командой.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|Приложения, установленные в команде.|
@@ -62,6 +64,8 @@ ms.locfileid: "36033910"
 
 Ниже указано представление ресурса в формате JSON.
 
+>**Примечание.** Если команда относится к типу class, к ней применяется свойство **classSettings**.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.team",
@@ -69,14 +73,15 @@ ms.locfileid: "36033910"
 }-->
 
 ```json
-{  
+{
   "guestSettings": {"@odata.type": "microsoft.graph.teamGuestSettings"},
   "memberSettings": {"@odata.type": "microsoft.graph.teamMemberSettings"},
   "messagingSettings": {"@odata.type": "microsoft.graph.teamMessagingSettings"},
   "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
   "internalId": "string",
   "isArchived": false,
-  "webUrl": "string (URL)"
+  "webUrl": "string (URL)",
+  "classSettings": {"@odata.type": "microsoft.graph.teamClassSettings"}
 }
 
 ```

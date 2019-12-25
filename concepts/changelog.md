@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 64b1f80a323df5290dc9d24e8f3ec4fbfcebdef0
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 253863ce5e513d4cda090e79a87d082e0f7907b7
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39923597"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868053"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -17,6 +17,26 @@ ms.locfileid: "39923597"
 Дополнительные сведения об известных проблемах с API Microsoft Graph см. в статье [Известные проблемы](known-issues.md).
 
 ## <a name="december-2019"></a>Декабрь 2019 г.
+
+### <a name="change-notifications-webhooks"></a>Уведомления об изменениях (веб-перехватчики)
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение | Бета | Добавлена поддержка подписки на уведомления, включающие данные ресурсов. В настоящее время поддерживаются ресурсы [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) в каналах и чатах Microsoft Teams. Чтобы воспользоваться этой функцией, подписывающиеся приложения должны внедрить дополнительный код авторизации и расшифровки. Дополнительные сведения см. в статье [Настройка уведомлений об изменениях сообщений чатов, включая свойства сообщений (предварительная версия)](webhooks-with-resource-data.md).|
+
+### <a name="cloud-communications"></a>Коммуникации из облака
+
+Введен ресурс presence в бета-версии и добавлены API коммуникаций из облака в версии 1.0.
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+|:---|:---|:---|
+|Дополнение|Бета|Добавлен ресурс [presence](/graph/api/resources/presence?view=graph-rest-beta) и связанные методы, а также введены разрешения Presence.Read и Presence.Read.All.|
+|Дополнение|1.0|Добавлены следующие API: [создания звонка](/graph/api/application-post-calls?view=graph-rest-1.0), [ответа на звонок](/graph/api/call-answer?view=graph-rest-1.0), [отклонения звонка](/graph/api/call-reject?view=graph-rest-1.0), [получения звонка](/graph/api/call-get?view=graph-rest-1.0), [удаления звонка](/graph/api/call-delete?view=graph-rest-1.0), [отключения звука звонка](/graph/api/call-mute?view=graph-rest-1.0), [включения звука звонка](/graph/api/call-unmute?view=graph-rest-1.0), [изменения роли демонстрации экрана во время звонка](/graph/api/call-changescreensharingrole?view=graph-rest-1.0), [переключения звонка](/graph/api/call-transfer?view=graph-rest-1.0), [перенаправления звонка](/graph/api/call-redirect?view=graph-rest-1.0), [воспроизведения сигнала](/graph/api/call-playprompt?view=graph-rest-1.0), [записи ответа](/graph/api/call-recordresponse?view=graph-rest-1.0), [подписки на TNE](/graph/api/call-subscribetotone?view=graph-rest-1.0), [списка участников](/graph/api/call-list-participants?view=graph-rest-1.0), [приглашения участников](/graph/api/participant-invite?view=graph-rest-1.0), [получения участников](/graph/api/participant-get?view=graph-rest-1.0), [отключения звука участников](/graph/api/participant-mute?view=graph-rest-1.0), [создания онлайн-собрания](/graph/api/application-post-onlinemeeting?view=graph-rest-1.0), [получения онлайн-собрания](/graph/api/onlinemeeting-get?view=graph-rest-1.0) и [проверки активности звонка](/graph/api/call-keepalive?view=graph-rest-1.0).|
+|Дополнение|1.0|Добавлены следующие ресурсы: [call](/graph/api/resouces/call?view=graph-rest-1.0), [participant](/graph/api/resouces/participant?view=graph-rest-1.0) и [onlinemeetings](/graph/api/resouces/onlinemeetings?view=graph-rest-1.0).|
+| Изменить        | Бета        | API записи IVR переименован в [recordResponse](/graph/api/call-record?view=graph-rest-beta). | 
+| Изменить        | Бета        | Удалены свойства **isCanceled**, **canceledDateTime** и **entryExitAnnouncement** объекта [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta). Свойство **joinUrl** переименовано в **joinWebUrl**. | 
+| Дополнение        | Бета-версия и версия 1.0       | Добавлена операция [delete onlineMeeting](/graph/api/onlinemeeting-delete.md).|
+
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Устройства и приложения (Microsoft Intune)
 
@@ -51,11 +71,23 @@ ms.locfileid: "39923597"
 |Дополнение|Бета|Добавлены члены **securityOptions**, **userRightsAssignment**, **auditSetting** и **windowsFirewallSettings** для типа перечисления [groupPolicySettingType](/graph/api/resources/intune-gpanalyticsservice-grouppolicysettingtype?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлен член **contentDownloaded** для типа перечисления [resultantAppStateDetail](/graph/api/resources/intune-apps-resultantappstatedetail?view=graph-rest-beta)|
 
-### <a name="change-notifications-webhooks"></a>Уведомления об изменениях (веб-перехватчики)
+### <a name="education"></a>Образование
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | Бета | Добавлена поддержка подписки на уведомления, включающие данные ресурсов. В настоящее время поддерживаются ресурсы [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) в каналах и чатах Microsoft Teams. Чтобы воспользоваться этой функцией, подписывающиеся приложения должны внедрить дополнительный код авторизации и расшифровки. Дополнительные сведения см. в статье [Настройка уведомлений об изменениях сообщений чатов, включая свойства сообщений (предварительная версия)](webhooks-with-resource-data.md).|
+| Дополнение | 1.0 | Добавлено свойство [classSettings](/graph/api/resources/teamclasssettings?view=graph-rest-1.0) для ресурса [team](/graph/api/resources/team?view=graph-rest-1.0), чтобы разрешить вызывающим получать параметры, относящиеся к ресурсу team типа Class.|
+
+### <a name="identity-and-access-azure-ad"></a>Удостоверение и доступ (Azure AD)
+| **Тип изменения** | **Версия**   | **Описание**                          |
+|:---|:---|:---|
+|Изменение | Бета |Обновлено поведение отношений **appRoleAssignments** и **appRoleAssignedTo** в [servicePrincipal](/graph/api/resoureces/serviceprincipal.md) для возвращения ролей, как описано. **appRoleAssignments** возвращает роли приложений, предоставленные субъекту-службе, **appRoleAssignedTo** возвращает роли приложений, предоставленные субъектам, в субъект-службу.|
+|Дополнение|Бета-версия, версия 1.0|Добавлена поддержка возвращения ограниченного объема сведений, если у вашего приложения нет доступа к определенным типам ресурсов в коллекции отклика. Дополнительные сведения см. в статье [Ограниченные сведения, возвращаемые для недоступных объектов member](permissions-reference.md#limited-information-returned-for-inaccessible-member-objects).|
+
+### <a name="identity-and-access-azure-ad--information-protection"></a>Удостоверения и доступ (Azure AD) | Защита информации
+
+| **Тип изменения** | **Версия** | **Описание**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Дополнение        | Бета        | Добавлены API [создания](/graph/api/informationprotection-post-threatassessmentrequests?view=graph-rest-beta), [получения](/graph/api/threatassessmentrequest-get?view=graph-rest-beta) и [списка](/graph/api/informationprotection-list-threatassessmentrequests?view=graph-rest-beta) для управления ресурсами [threatAssessmentRequest](/graph/api/resources/threatAssessmentRequest?view=graph-rest-beta).|
 
 ### <a name="microsoft-graph-toolkit"></a>Набор средств Microsoft Graph
 
@@ -84,11 +116,25 @@ ms.locfileid: "39923597"
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | 1.0 | API аналитики доступен в версии 1.0. Он включает ресурсы [officeGraphInsights](/graph/api/resources/officegraphinsights?view=graph-rest-1.0), [trending](/graph/api/resources/insights-trending?view=graph-rest-1.0), [usedInsight](/graph/api/resources/insights-used?view=graph-rest-1.0) и [sharedInsight](/graph/api/resources/insights-shared?view=graph-rest-1.0), а также связанные типы и методы. Дополнительные сведения см. в статье [Преимущества интеграции аналитики на основе документов](social-intel-concept-overview.md#why-integrate-with-document-based-insights). |
 
+### <a name="reports--office-365-usage-reports"></a>Отчеты | Отчеты об использовании Office 365
+
+| **Тип изменения** | **Версия** | **Описание**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Изменение          | Бета-версия и версия 1.0  | Чтобы разрешить приложениям считывать отчеты об использовании служб Office 365 от имени пользователя с помощью делегированных разрешений, администратор клиента должен назначить пользователю роль ограниченного администратора Azure AD. Дополнительные сведения см. в статье [Авторизация для API с целью чтения отчетов об использовании Office 365](reportroot-authorization.md).|
+
 ### <a name="teamwork-microsoft-teams"></a>Работа в команде (Microsoft Teams)
  
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | Бета | Добавлены [уведомления ](/graph/api/subscription-post-subscriptions?view=graph-rest-beta) о новых и измененных сообщениях канала, а также новых и измененных сообщениях чата.
+| Изменить | Бета | Обновлены разрешения приложений, необходимые для выполнения операций чтения и записи ресурсов shifts, в том числе [schedule](/graph/api/resources/schedule?view=graph-rest-beta), [schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta), [shift](/graph/api/resources/shift?view=graph-rest-beta), [timeOff](/graph/api/resources/timeoff?view=graph-rest-beta), [timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta), [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta), [swapShiftChangeRequest](/graph/api/resources/swapshiftchangerequest?view=graph-rest-beta) и [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-beta). **Примечание.** Разрешения приложений в настоящее время доступны в закрытой предварительной версии и не являются общедоступными.|
+
+
+### <a name="identity-and-access-azure-ad"></a>Удостоверение и доступ (Azure AD)
+
+| **Тип изменения** | **Версия** | **Описание**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Дополнение | Бета | Добавлен новый тип объекта [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta). |
 
 ## <a name="november-2019"></a>Ноябрь 2019 г.
 
@@ -102,8 +148,9 @@ ms.locfileid: "39923597"
 
 | **Тип изменения** | **Версия** | **Описание**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Изменение        | Бета-версия        | Изменен возвращаемый тип для методов [mute](/graph/api/call-mute?view=graph-rest-beta) и [mute participant](/graph/api/participant-mute?view=graph-rest-beta) с [commsOperation](/graph/api/resources/commsoperation?view=graph-rest-beta) на [muteParticipantOperation](/graph/api/resources/muteparticipantoperation?view=graph-rest-beta). | 
-| Изменение        | Бета-версия        | Изменен возвращаемый тип для метода [unmute](/graph/api/call-unmute?view=graph-rest-beta) с [commsOperation](/graph/api/resources/commsoperation?view=graph-rest-beta) на [unmuteParticipantOperation](/graph/api/resources/unmuteparticipantoperation?view=graph-rest-beta). | 
+| Изменение        | Бета-версия        | Изменен возвращаемый тип для методов [mute](/graph/api/call-mute?view=graph-rest-beta) и [mute participant](/graph/api/participant-mute?view=graph-rest-beta) с [commsOperation](/graph/api/resources/commsoperation?view=graph-rest-beta) на [muteParticipantOperation](/graph/api/resources/muteparticipantoperation?view=graph-rest-beta). |
+| Изменение        | Бета-версия        | Изменен возвращаемый тип для метода [unmute](/graph/api/call-unmute?view=graph-rest-beta) с [commsOperation](/graph/api/resources/commsoperation?view=graph-rest-beta) на [unmuteParticipantOperation](/graph/api/resources/unmuteparticipantoperation?view=graph-rest-beta). |
+| Дополнение        | Бета        | Добавлено действие [keepAlive](/api-reference/beta/api/call-keepalive.md) для объекта [call](/api-reference/beta/resources/call.md). |
 
 ### <a name="cloud-communications--recording"></a>Коммуникации в облаке | Запись
 
@@ -212,15 +259,15 @@ ms.locfileid: "39923597"
 |:----------------|:------------|:---------------------------------------------|
 | Дополнение        | Бета        | Добавлен [API Поиска (Майкрософт)](search-concept-overview.md), предоставляющий возможности [отправки запросов](/graph/api/search-query?view=graph-rest-beta) и [индексирования](/graph/api/resource/indexing-api-overview?view=graph-rest-beta). |
 | Дополнение        | Бета        | Добавлено действие [query](/graph/api/search-query?view=graph-rest-beta). |
-| Дополнение        | Бета        | Добавлены сложные типы [searchRequest](/graph/api/resource/searchrequest?view=graph-rest-beta), [searchQuery](/graph/api/resource/searchquery?view=graph-rest-beta), [searchQueryString](/graph/api/resource/searchquerystring?view=graph-rest-beta),[searchResponse](/graph/api/resource/searchresponse?view=graph-rest-beta), [searchHitsContainer](/graph/api/resource/searchhitscontainer?view=graph-rest-beta) и [searchHit](/graph/api/resource/searchhit?view=graph-rest-beta). |
-| Дополнение        | Бета        | Добавлены объекты [externalConnection](/graph/api/resource/externalconnection?view=graph-rest-beta), [schema](/graph/api/resource/schema?view=graph-rest-beta), [externalItem](/graph/api/resource/externalitem?view=graph-rest-beta) и [externalFile](/graph/api/resource/externalfile?view=graph-rest-beta), а также методы, доступные в этих объектах. |
+| Дополнение        | Бета        | Добавлены сложные типы [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta), [searchQuery](/graph/api/resources/searchquery?view=graph-rest-beta), [searchQueryString](/graph/api/resources/searchquerystring?view=graph-rest-beta),[searchResponse](/graph/api/resources/searchresponse?view=graph-rest-beta), [searchHitsContainer](/graph/api/resources/searchhitscontainer?view=graph-rest-beta) и [searchHit](/graph/api/resources/searchhit?view=graph-rest-beta). |
+| Дополнение        | Бета        | Добавлены объекты [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta), [schema](/graph/api/resources/schema?view=graph-rest-beta), [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) и [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta), а также методы, доступные в этих объектах. |
 
 ### <a name="teamwork-microsoft-teams"></a>Работа в команде (Microsoft Teams)
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | Бета-версия | Добавлены ресурсы [openshift](/graph/api/beta/resources/openshift?view=graph-rest-beta), [openshiftChangeRequest](/graph/api/beta/resources/openshiftChangeRequest?view=graph-rest-beta), [swapShiftChangeRequest](/graph/api/beta/resources/swapShiftChangeRequest?view=graph-rest-beta) и [timeoffrequest](/graph/api/beta/resources/timeoffrequest?view=graph-rest-beta) и соответствующие методы.|
-| Дополнение | Бета-версия | Добавлены свойства **timeClockEnabled**, **openShiftsEnabled**, **swapShiftsRequestsEnabled**, **offerShiftRequestsEnabled**,  **timeOffRequestsEnabled** для ресурса [schedule](/graph/api/beta/resources/schedule?view=graph-rest-beta).|
+| Дополнение | Бета-версия | Добавлены ресурсы [openshift](/graph/api/resources/openshift?view=graph-rest-beta), [openshiftChangeRequest](/graph/api/resources/openshiftChangeRequest?view=graph-rest-beta), [swapShiftChangeRequest](/graph/api/resources/swapShiftChangeRequest?view=graph-rest-beta) и [timeoffrequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta) и соответствующие методы.|
+| Дополнение | Бета-версия | Добавлены свойства **timeClockEnabled**, **openShiftsEnabled**, **swapShiftsRequestsEnabled**, **offerShiftRequestsEnabled**,  **timeOffRequestsEnabled** для ресурса [schedule](/graph/api/resources/schedule?view=graph-rest-beta).|
 | Дополнение        | Бета-версия          | Добавлен дополнительный маршрут для получения [driveItem] с помощью идентификатора команды и канала, [get driveItem](/graph/api/driveitem-get?view=graph-rest-beta). |
 
 ## <a name="october-2019"></a>Октябрь 2019 г.
@@ -357,22 +404,22 @@ ms.locfileid: "39923597"
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Изменение          | Бета          | Имя объекта **detectedSensitiveContent** изменено на [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta).  | 
-| Удаление        | Бета          | Удалены свойства **displayName**, **uniqueCount** и **matches** объекта [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta).  | 
-| Изменение          | бета          | Свойство **id** объекта [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta) заменено на **sensitiveTypeId**.   | 
-| Изменение          | бета          | Свойство **confidence** объекта [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta) заменено на **confidenceLevel**.   | 
-| Дополнение        | Бета          | Добавлено свойство **count** для объекта [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta).  | 
-| Удаление        | Бета          | Удалено свойство **actionSource** объекта [labelingOptions](/graph/api/resources/labelingoptions?view=graph-rest-beta). | 
-| Удаление        | Бета          | Удален объект **auditInfo**. | 
-| Изменение          | бета          | Свойство **protectByDoNotForwardAction** заменено на [protectDoNotForwardAction](/graph/api/resources/protectdonotforwardaction?view=graph-rest-beta). | 
-| Дополнение        | бета          | Добавлено свойство **alignment** для объекта [addContentHeaderAction](/graph/api/resources/addcontentheaderaction?view=graph-rest-beta). | 
+| Изменение          | Бета          | Имя объекта **detectedSensitiveContent** изменено на [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta).  |
+| Удаление        | Бета          | Удалены свойства **displayName**, **uniqueCount** и **matches** объекта [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta).  |
+| Изменение          | бета          | Свойство **id** объекта [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta) заменено на **sensitiveTypeId**.   |
+| Изменение          | бета          | Свойство **confidence** объекта [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta) заменено на **confidenceLevel**.   |
+| Дополнение        | Бета          | Добавлено свойство **count** для объекта [classificationResult](/graph/api/resources/classificationresult?view=graph-rest-beta).  |
+| Удаление        | Бета          | Удалено свойство **actionSource** объекта [labelingOptions](/graph/api/resources/labelingoptions?view=graph-rest-beta). |
+| Удаление        | Бета          | Удален объект **auditInfo**. |
+| Изменение          | бета          | Свойство **protectByDoNotForwardAction** заменено на [protectDoNotForwardAction](/graph/api/resources/protectdonotforwardaction?view=graph-rest-beta). |
+| Дополнение        | бета          | Добавлено свойство **alignment** для объекта [addContentHeaderAction](/graph/api/resources/addcontentheaderaction?view=graph-rest-beta). |
 | Изменение          | Бета          | Свойство **labelId** объекта [recommendLabelAction](/graph/api/resources/recommendedlabelaction?view=graph-rest-beta) заменено на **label**. |
 | Изменение          | бета          | Свойство **classificationIds** объекта [recommendLabelAction](/graph/api/resources/recommendedlabelaction?view=graph-rest-beta) заменено на **responsibleSensitivityTypeIds**. |
 | Дополнение        | Бета          | Добавлено свойство **actionSource** объекта [recommendLabelAction](/graph/api/resources/recommendedlabelaction?view=graph-rest-beta). |
 | Изменение          | Бета          | Свойство **labelId** объекта [applyLabelAction](/graph/api/resources/applylabelaction?view=graph-rest-beta) заменено на **label**. |
 | Изменение          | Бета          | Свойство **classificationIds** объекта [applyLabelAction](/graph/api/resources/applylabelaction?view=graph-rest-beta) заменено на **responsibleSensitivityTypeIds**. |
 | Дополнение        | бета          | Добавлено свойство **actionSource** объекта [applyLabelAction](/graph/api/resources/applylabelaction?view=graph-rest-beta). |
-| Изменение          | Бета          | Значение перечисления [contentFormat](/graph/api/resources/enums?view=graph-rest-beta) изменено с **file** на **default**. | 
+| Изменение          | Бета          | Значение перечисления [contentFormat](/graph/api/resources/enums?view=graph-rest-beta) изменено с **file** на **default**. |
 | Удаление        | бета          | Удалено значение **mandatory** из перечисления [actionSource](/graph/api/resources/enums?view=graph-rest-beta)). |
 | Изменение          | Бета          | Значение перечисления [actionSource](/graph/api/resources/enums?view=graph-rest-beta) изменено с **policyDefault** на **default**. |
 | Удаление        | бета          | Удален объект **auditMetadataKey**. |
@@ -503,7 +550,7 @@ ms.locfileid: "39923597"
 | Дополнение        | Бета        | Добавлено свойство **isBroadcast** для ресурса [onlineMeeting](/graph/api/resources/onlineMeeting?view=graph-rest-beta). |
 | Изменение        | Бета-версия        | Свойство **resource** в ресурсе [commsNotification](/graph/api/resources/commsNotification?view=graph-rest-beta) переименовано на **resourceUrl**. |
 | Изменение          | Бета        | В ресурсе [resultInfo](/graph/api/resources/resultInfo?view=graph-rest-beta) изменен тип свойств **code** и **subCode** со строчного на Int32. |
-| Изменение        | Бета        | Свойство **subcode** в ресурсе [resultInfo](/graph/api/resources/resultInfo?view=graph-rest-beta) переименовано на **subCode**. | 
+| Изменение        | Бета        | Свойство **subcode** в ресурсе [resultInfo](/graph/api/resources/resultInfo?view=graph-rest-beta) переименовано на **subCode**. |
 
 ### <a name="files-onedrive-for-business-and-onedrive-personal"></a>Файлы (OneDrive для бизнеса и OneDrive персональный)
 
@@ -1619,7 +1666,8 @@ ms.locfileid: "39923597"
 
 ### <a name="mail-outlook"></a>Почта (Outlook)
 
-| **Тип изменения** | **Версия**   | **Описание**                          |
+| **Тип изменения** | 
+  **Version**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | 1.0 и бета | Свойство **InternetMessageHeaders** объекта [message](/graph/api/resources/message?view=graph-rest-1.0) теперь доступно для записи при создании сообщения. |
 
@@ -2391,7 +2439,7 @@ ms.locfileid: "39923597"
 |Дополнение|Бета-версия|Добавлены свойства `favoritePlanReferences` и `recentPlanReferences` для объекта [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta). |
 |Дополнение|Бета-версия|Добавлены свойства навигации `favoritePlans` и `recentPlans` для объекта [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta). |
 |Дополнение|Бета-версия|Добавлено свойство `contexts` для объекта [plannerPlan](/graph/api/resources/plannerplan?view=graph-rest-beta). |
-|Дополнение|Бета-версия|Добавлено свойство `contextDetails` для объекта [plannerPlanDetails](/graph/api/resources/plannerplandetails?view=graph-rest-beta). |
+|Дополнение|Бета|Добавлено свойство `contextDetails` для объекта [plannerPlanDetails](/graph/api/resources/plannerplandetails?view=graph-rest-beta). |
 |Дополнение|Бета|Добавлен [разностный запрос](/graph/api/planneruser-list-delta?view=graph-rest-beta) планировщика. |
 
 
@@ -3925,7 +3973,8 @@ ms.locfileid: "39923597"
 
 ### <a name="mail-outlook"></a>Почта (Outlook)
 
-| **Тип изменения** | **Версия** | **Описание**                          |
+| **Тип изменения** | 
+  **Version** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | Добавлены типы _inferenceClassification_ и _extensions_ к объекту **message**. |
 

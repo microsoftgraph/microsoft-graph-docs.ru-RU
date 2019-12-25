@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4ef5da57a90a4e6c8727f18c146759a309d97161
-ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
+ms.openlocfilehash: 699c2b634bf477bf9f797aab4eb290013a57d801
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "36396788"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40865624"
 ---
 # <a name="calendar-getschedule"></a>calendar: getSchedule
 
@@ -44,7 +44,7 @@ POST /users/{id|userPrincipalName}/calendar/getSchedule
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|availabilityViewInterval|Int32|Представляет длительность периода времени в свойстве **availabilityView** отклика. Значение по умолчанию: 30 минут. Минимальное значение: 6. Максимальное значение: 1440. Необязательное свойство.|
+|availabilityViewInterval|Int32|Представляет длительность периода времени в свойстве **availabilityView** отклика. Значение по умолчанию: 30 минут. Минимальное значение: 5. Максимальное значение: 1440. Необязательный.|
 |endTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата, время и часовой пояс завершения периода.|
 |schedules|Коллекция String|Коллекция SMTP-адресов пользователей, списков рассылки или ресурсов для получения сведений о доступности.|
 |startTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата, время и часовой пояс начала периода.|

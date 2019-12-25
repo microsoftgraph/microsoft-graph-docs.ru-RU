@@ -3,12 +3,12 @@ title: Использование Postman с API Microsoft Graph
 description: Используйте коллекцию Microsoft Graph Postman, чтобы начать работу с API Microsoft Graph в считанные минуты.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: fc47befc479b2236a7bda83515cfa0b61c2601b1
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: e548fed509bcf26ce7c733354a5ab3c52ab551c1
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969880"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868487"
 ---
 # <a name="use-postman-with-the-microsoft-graph-api"></a>Использование Postman с API Microsoft Graph
 
@@ -33,7 +33,7 @@ ms.locfileid: "37969880"
 3. Скопируйте и вставьте следующий URL-адрес, затем выберите **Импорт**.
  
     ```
-    https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph%20v1.0.postman_environment.json
+    https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_environment.json
     ```
 
 В правой верхней части окна должна отобразиться **среда Microsoft Graph** в виде значка с изображением глаза. Теперь необходимо [настроить среду](#using-the-collection).
@@ -53,18 +53,18 @@ ms.locfileid: "37969880"
 4. Вставьте два указанных ниже URL-адреса и выберите **Импорт** после каждого из них.
 
     ```
-      https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph%20v1.0.postman_collection.json
+      https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_collection.json
       
     ```
     ```
-      https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph%20v1.0.postman_environment.json
+      https://raw.githubusercontent.com/microsoftgraph/microsoftgraph-postman-collections/master/Microsoft%20Graph.postman_environment.json
 
     ```
 
-Теперь в области **Коллекции** должна отобразиться коллекция **Microsoft Graph v1.0**.
+Теперь в области **Коллекции** должна отобразиться коллекция **Microsoft Graph**.
 
 ## <a name="using-the-collection"></a>Использование коллекции
-После создания коллекции **Microsoft Graph v1.0** и **среды Microsoftr Graph** в Postman выполните указанные ниже действия.
+После создания коллекции **Microsoft Graph** и **среды Microsoftr Graph** в Postman выполните указанные ниже действия.
 
 ### <a name="set-up-application-api-calls"></a>Настройка вызовов API приложений
 
@@ -74,10 +74,10 @@ ms.locfileid: "37969880"
 4. Введите свое приложение Microsoft Identity в **текущих** (не **начальных**) переменных: **ClientID**, **ClientSecret** и ** TenantID**. 
  Дополнительные сведения о том, как создать приложение и получить согласие администратора только для приложений, см. в записи блога [Использование Postman для осуществления вызовов Microsoft Graph](https://developer.microsoft.com/ru-RU/graph/blogs/30daysmsgraph-day-13-postman-to-make-microsoft-graph-calls/).
 
-5. Нажмите кнопку **Обновить**. Закройте диалоговое окно **Управление средами**. В коллекции **MicrosoftGraph v1.0 | Приложение** с левой стороны выберите **Получить маркер доступа только для приложений**. Затем в правой части нажмите кнопку **Отправить**.
+5. Нажмите кнопку **Обновить**. Закройте диалоговое окно **Управление средами**. В коллекции **MicrosoftGraph | Приложение** с левой стороны выберите **Получить маркер доступа только для приложений**. Затем в правой части нажмите кнопку **Отправить**.
 6. Разверните папку **Приложение | Пользователи** и выберите **Получить пользователей**. Затем нажмите кнопку **Отправить**.
 
-Теперь вы можете работать с коллекциями Microsoft Graph v 1.0.
+Теперь вы можете работать с коллекциями Microsoft Graph.
 
 >**Примечание.** Если вы хотите использовать другие API в коллекции, вам будет необходимо подтвердить разрешения, необходимые для вашего приложения.
 

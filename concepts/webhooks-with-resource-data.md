@@ -4,12 +4,12 @@ description: Microsoft Graph использует механизм веб-пер
 author: piotrci
 ms.prod: non-product-specific
 localization_priority: Priority
-ms.openlocfilehash: c8f4132958fe3fded70735e2b04bf79a1a07a4e3
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 2284e416ca50769098e4682c251326840229d60f
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844988"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866863"
 ---
 # <a name="set-up-change-notifications-that-include-resource-data-preview"></a>Настройка уведомлений об изменениях, включающих данные ресурсов (предварительная версия)
 
@@ -34,9 +34,7 @@ Microsoft Graph позволяет приложениям подписывать
 
 В настоящее время ресурс [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) (предварительная версия) в Microsoft Teams поддерживает уведомления об изменениях, включающие данные ресурсов. В частности, вы можете настроить подписку, относящуюся к одному из следующих элементов:
 
-- Новые или измененные сообщения во всех каналах Teams всей организации (клиент): `/teams/allMessages`
 - Новые или измененные сообщения в определенном канале Teams: `/teams/{id}/channels/{id}/messages`
-- Новые или измененные сообщения во всех чатах всей организации (клиент): `/chats/allMessages`
 - Новые или измененные сообщения в определенном чате Teams: `/chats/{id}/messages`
 
 Ресурс **chatMessage** поддерживает включение в уведомление всех свойств измененного экземпляра. Он не поддерживает возвращение только выбранных свойств экземпляра. 
@@ -72,7 +70,7 @@ Content-Type: application/json
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
   "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
-  "resource": "/teams/allMessages",
+  "resource": "/teams/{id}/channels/{id}/messages",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
@@ -90,7 +88,7 @@ Content-Type: application/json
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
   "lifecycleNotificationUrl": "https://webhook.azurewebsites.net/api/lifecycleNotifications",
-  "resource": "/teams/allMessages",
+  "resource": "/teams/{id}/channels/{id}/messages",
   "includeResourceData": true,
   "encryptionCertificateId": "{custom ID}",
   "encryptionCertificateThumbprint": "{thumbprint from the certificate}",

@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 author: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: b276193418573cd93baa8459564d22dde73e8bf1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 963d117bbba945a3acd4bb2ac78928c6eade2506
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034274"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40863794"
 ---
 # <a name="working-with-sharepoint-sites-in-microsoft-graph"></a>Работа с сайтами SharePoint в Microsoft Graph
 
@@ -116,7 +116,13 @@ URL-адрес, содержащий только имя узла и идент�
 GET https://graph.microsoft.com/v1.0/sites/{hostname},{spsite-id}
 ```
 
-[site]: site.md
+URL-адрес, содержащий только идентификатор siteCollection (`SPSite`), будет указывать на корневой сайт (`SPWeb`) в указанном семействе веб-сайтов.
+
+```http
+GET https://graph.microsoft.com/v1.0/sites/{spsite-id}
+```
+
+[сайта]: site.md
 [list]: list.md
 [drive]: drive.md
 [siteCollection]: sitecollection.md

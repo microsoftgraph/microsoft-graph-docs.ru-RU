@@ -1,20 +1,20 @@
 ---
-title: Обзор API Поиска (предварительная версия)
-description: Узнайте, как использовать API Поиска (Майкрософт) для индексирования контента и добавления в приложения функций поиска в Office и индексированном контенте.
+title: Обзор API Поиска (Майкрософт) в Microsoft Graph (предварительная версия)
+description: Используйте API Поиска (Майкрософт) для индексирования контента и добавления в приложения функций поиска в Office и индексированном контенте.
 localization_priority: Priority
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: 4196a2b01576e11f2b9db28a4ea1f89d76f467c5
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 6f7515682f7600a4c0d58e49213eacf17add44e0
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955913"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866898"
 ---
-# <a name="overview-for-extending-the-microsoft-search-experience-for-apps-on-microsoft-graph-preview"></a>Обзор расширенных возможностей Поиска (Майкрософт) для приложений в Microsoft Graph (предварительная версия)
+# <a name="overview-of-the-microsoft-search-api-in-microsoft-graph-preview"></a>Обзор API Поиска (Майкрософт) в Microsoft Graph (предварительная версия)
 
-Поиск (Майкрософт) — это корпоративная поисковая система, обеспечивающая повышение производительности и релевантные результаты поиска для организации. Она использует наработки и возможности организации и отображает актуальный релевантный контент для пользователей. Поиск (Майкрософт) доступен в различных программах, включая Office, SharePoint, Delve, Windows и Bing. API Поиска (Майкрософт) позволяет приложениям расширять аналогичный интерфейс поиска для пользователей приложений. 
+Поиск (Майкрософт) — это корпоративная поисковая система, обеспечивающая повышение производительности и релевантные результаты поиска для организации. Она использует наработки и возможности организации и отображает актуальный релевантный контент для пользователей. Поиск (Майкрософт) доступен в различных программах, включая Office, SharePoint, Delve, Windows и Bing. Вы можете использовать API Поиска (Майкрософт) в Microsoft Graph, чтобы Поиск (Майкрософт) распространялся и на ваши приложения.  
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
@@ -23,7 +23,7 @@ ms.locfileid: "39955913"
 
 ### <a name="one-unified-search-endpoint-for-microsoft-cloud-data"></a>Единая конечная точка поиска для данных Microsoft Cloud
 
-API Поиска (Майкрософт) предоставляет единую конечную точку поиска, позволяющую разработчикам [запрашивать](/graph/api/search-query?view=graph-rest-beta) в Microsoft Cloud данные (сообщения и события в почтовых ящиках Outlook, а также файлы в OneDrive и SharePoint), индексированные в Поиске (Майкрософт).
+API Поиска (Майкрософт) предоставляет единую конечную точку поиска, которую можно использовать для [запроса](/graph/api/search-query?view=graph-rest-beta) в Microsoft Cloud данных (сообщений и событий в почтовых ящиках Outlook, а также файлов в OneDrive и SharePoint), индексированных в Поиске (Майкрософт).
 
 ### <a name="include-custom-external-data-in-search-experience"></a>Включение настраиваемых внешних данных в интерфейс поиска
 
@@ -31,16 +31,16 @@ API Поиска (Майкрософт) предоставляет единую 
 
 ### <a name="consistent-up-to-date-search-experience"></a>Единый актуальный интерфейс поиска
 
-Используя API Поиска (Майкрософт), клиенты получают персонализированные релевантные результаты благодаря Microsoft Graph. Кроме того, поиск в ваших приложениях возвращает результаты, согласованные с поиском в приложениях Office.
+При использовании API Поиска (Майкрософт) пользователи получают персонализированные релевантные результаты благодаря Microsoft Graph. Поиск в ваших приложениях вернет результаты, согласованные с поиском в приложениях Office.
 
-## <a name="what-data-can-i-add-or-access-by-using-these-apis"></a>Какие данные можно добавить и к каким получить доступ с помощью этих API?
+## <a name="what-data-can-i-add-or-access-by-using-the-microsoft-search-api"></a>Какие данные можно добавить и к каким получить доступ с помощью API Поиска (Майкрософт)?
 
-Поиск (Майкрософт) поддерживает поиск следующего контента в Microsoft Cloud:
+API Поиска (Майкрософт) поддерживает поиск следующего контента в Microsoft Cloud:
 
 - Объекты [message](/graph/api/resources/message?view=graph-rest-beta) и [event](/graph/api/resources/event?view=graph-rest-beta) в Outlook
 - Файловые объекты [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) в SharePoint и OneDrive
 
-Кроме того, вы можете индексировать и искать внешний контент:
+Кроме того, вы можете индексировать и искать внешний контент, используя:
 
 - Объекты [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta) настраиваемого типа
 - Объекты [externalFile](/graph/api/resources/externalfile?view=graph-rest-beta) известного типа
@@ -67,6 +67,4 @@ API Поиска (Майкрософт) предоставляет единую 
 
 ## <a name="see-also"></a>См. также
 
-Взаимодействие с сообществом:
-
-- [Обсуждения на сайте StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-search)
+- Участвуйте в работе сообщества на [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-search).

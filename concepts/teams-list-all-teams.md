@@ -4,12 +4,12 @@ description: 'Чтобы перечислить все команды '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 847af7e9b2ff9f725ca2ebd2d7a1e82916e33c27
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5161abd3e21a394ebe5872efc9a75c103d75041d
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32580990"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868522"
 ---
 # <a name="list-all-teams-in-microsoft-teams-for-an-organization"></a>Перечисление всех команд в Microsoft Teams для организации
 
@@ -58,7 +58,7 @@ Content-length: xxx
 GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 ```
 
-> **Примечание**. Аргумент $filter для /groups доступен только при использовании конечной точки бета-версии. Свойство resourceProvisioningOptions доступно в версии 1.0 и бета-версии.
+> **Примечание.** Фильтрация групп по свойству resourceProvisioningOptions доступна только в конечной точке бета-версии. Свойство resourceProvisioningOptions доступно в версии 1.0 и бета-версии.
 
 > **Примечание**. Некоторые неиспользуемые старые команды не указываются в списке. Дополнительные сведения см. в статье [Известные проблемы](known-issues.md#missing-teams-in-list-all-teams).
 

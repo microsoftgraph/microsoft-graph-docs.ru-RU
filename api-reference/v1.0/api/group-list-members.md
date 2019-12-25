@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a3a2dd63e5f91ce9df26d6b649d3d005bf73f545
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: a4465a50db0611577bb78bc27b22432971599a64
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37622563"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869894"
 ---
 # <a name="list-members"></a>Список участников
 Получение списка непосредственных участников группы. Участниками групп могут быть пользователи, контакты организации и другие группы. Эта операция не является транзитивной.
@@ -23,6 +23,8 @@ ms.locfileid: "37622563"
 |Делегированные (рабочая или учебная учетная запись) | User.ReadBasic.All, User.Read.All, Group.Read.All, Directory.Read.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложения | User.Read.All, Group.Read.All, Directory.Read.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

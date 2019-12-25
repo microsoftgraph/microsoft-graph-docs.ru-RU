@@ -5,18 +5,20 @@ localization_priority: Priority
 doc_type: apiPageType
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: bf4c0fa8333d05ad77397cb4d0bd8ad45e92539a
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: a843044238a954d0c03136860c4f5289497797b1
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37936799"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868123"
 ---
 # <a name="chatmessages-delta"></a>chatMessages: delta
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение списка [сообщений](../resources/chatmessage.md) (без ответов) в [канале](../resources/channel.md) [команды](../resources/team.md). С помощью разностного запроса можно получить новые или обновленные сообщения в канале.
+
+> **Примечание.** Разностный запрос возвращает сообщения только за последние восемь месяцев. Чтобы получить более ранние сообщения, можно воспользоваться методом [GET /teams/{id}/channels/{id}/messages](channel-list-messages.md).
 
 Запрос изменений поддерживает как полную синхронизацию с получением всех сообщений в определенном канале, так и добавочную синхронизацию с получением тех сообщений, которые были добавлены или изменены в канале с момента последней синхронизации. Как правило, сначала выполняется полная синхронизация, а затем в представление календаря периодически добавляются изменения.
 

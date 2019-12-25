@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 01f6bb81ec7e46911fb1a5e3dbdd55f69f92b6c8
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 8ef4fb2e1f785ba814ec0a3c82f8f8f668d81ced
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38658718"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40864756"
 ---
 # <a name="list-memberof"></a>Список memberOf
 Получение групп, непосредственным членом которых является данная группа. 
@@ -25,6 +25,8 @@ ms.locfileid: "38658718"
 |Делегированные (рабочая или учебная учетная запись) | GroupMember.Read.All, Group.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложения | GroupMember.Read.All, Group.Read.All, Directory.Read.All |
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

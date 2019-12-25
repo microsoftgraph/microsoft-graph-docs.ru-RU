@@ -5,12 +5,12 @@ localization_priority: Priority
 author: ''
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: ae531d0e5bd8aa759f0c72a1fc3ac420467127e1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 471c5bbdb69f1bb67e05c271aaf7f67a977cb89d
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36022301"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40865470"
 ---
 # <a name="get-photo"></a>Получение фотографии
 
@@ -34,9 +34,9 @@ ms.locfileid: "36022301"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
 |Разрешения приложений                        | Для ресурса **user**:<br/>User.Read.All, User.ReadWrite.All<br /><br />Для ресурса **group**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Для ресурса **contact**:<br />Contacts.Read, Contacts.ReadWrite |
 
-> **Примечание.** В настоящее время существует [известная проблема](https://docs.microsoft.com/ru-RU/graph/known-issues#groups) с доступом к фотографиям группы с помощью разрешений для приложений.
+> **Примечание.** В настоящее время существует [известная проблема](/graph/known-issues#groups) с доступом к фотографиям группы с помощью разрешений для приложений.
 
-## <a name="http-request"></a>HTTP-запрос 
+## <a name="http-request"></a>HTTP-запрос
 
 ### <a name="get-the-photo"></a>Получение фотографии
 <!-- { "blockType": "ignored" } -->
@@ -103,7 +103,7 @@ GET /groups/{id}/photos/{size}
 GET https://graph.microsoft.com/v1.0/me/photo/$value
 ```
 
-##### <a name="response"></a>Отклик 
+##### <a name="response"></a>Отклик
 Содержит двоичные данные запрошенной фотографии. Код HTTP-отклика: 200.
 
 ### <a name="example-2-get-the-48x48-photo-for-the-signed-in-use"></a>Пример 2. Получение фотографии 48 x 48 для вошедшего пользователя
@@ -130,7 +130,7 @@ GET https://graph.microsoft.com/v1.0/me/photo
 
 ##### <a name="response"></a>Отклик
 
-В данных указанного ниже отклика содержатся метаданные фотографии. 
+В данных указанного ниже отклика содержатся метаданные фотографии.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
