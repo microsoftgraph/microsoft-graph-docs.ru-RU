@@ -1,16 +1,16 @@
 ---
 title: 'Тимеоффрекуест: утверждение'
-description: Утверждение тимеоффрекуест ".
+description: Утверждение объекта тимеоффрекуест. "
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 631461eba5bab8f15bc392d59e9800f1b65be5a3
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: 5df1ebc343bc22b359e889c31743f3c321c86f9d
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895805"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40863683"
 ---
 # <a name="timeoffrequest-approve"></a>Тимеоффрекуест: утверждение
 
@@ -26,7 +26,9 @@ ms.locfileid: "39895805"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+|Приложение | Schedule. ReadWrite. ALL *  |
+
+>\***Важно!** Разрешения на доступ к приложениям в настоящее время доступны только для частного просмотра и недоступны для использования в общедоступном режиме.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +42,8 @@ POST /teams/{id}/schedule/timeOffRequests/approve
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Авторизация | Bearer {токен}. Обязательный. |
+| Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -52,7 +55,7 @@ POST /teams/{id}/schedule/timeOffRequests/approve
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `200, OK`. В тексте отклика не возвращается никаких данных.
+При успешном выполнении этот метод возвращает код отклика `200, OK`. Метод не возвращает данные в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -61,6 +64,8 @@ POST /teams/{id}/schedule/timeOffRequests/approve
 ### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "timeoffrequest_approve"
@@ -74,8 +79,18 @@ Content-type: application/json
   "message": "message-value"
 }
 ```
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/timeoffrequest-approve-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a>Отклик
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/timeoffrequest-approve-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a>Ответ
 
 Ниже приведен пример ответа.
 <!-- {

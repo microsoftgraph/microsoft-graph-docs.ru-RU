@@ -5,18 +5,25 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d4f10d297e59f9665d493060362a27e1c4b11a5a
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 4ee4ec63c9c2efb60850ee7915e62dc0e284f8ba
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938914"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870964"
 ---
 # <a name="accesspackageresourcerolescope-resource-type"></a>Тип ресурса Акцесспаккажересаурцеролескопе
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [управлении службой управления правами Azure AD](entitlementmanagement-root.md)областью применения роли ресурса Package является ссылка на область в ресурсе и роль в этом ресурсе.
+В [управлении службой управления правами Azure AD](entitlementmanagement-root.md)областью применения роли ресурса Package является ссылка на область в ресурсе и роль в этом ресурсе для этой области.  Пакет Access будет иметь доступ к областям роли ресурса пакета для ресурсов в каталоге, которые относятся к этому пакету Access.  Когда тема получает назначение пакета Access, тема будет подготовлена к работе с ролью в этой области каждой области применения роли ресурса пакета Access.
+
+## <a name="methods"></a>Методы
+
+| Метод       | Возвращаемый тип | Описание |
+|:-------------|:------------|:------------|
+| [Список Акцесспаккажересаурцеролескопес](../api/accesspackage-list-accesspackageresourcerolescopes.md) | Коллекция [акцесспаккажересаурцеролескопе](accesspackageresourcerolescope.md) | Получение списка объектов **акцесспаккажересаурцеролескопе** для пакета Access. |
+| [Создание Акцесспаккажересаурцеролескопе](../api/accesspackage-post-accesspackageresourcerolescopes.md) | | Создайте новый объект **акцесспаккажересаурцеролескопе** для пакета Access. |
 
 ## <a name="properties"></a>Свойства
 
@@ -28,7 +35,7 @@ ms.locfileid: "37938914"
 |модифиедби|String|Только для чтения.|
 |modifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
@@ -55,7 +62,21 @@ ms.locfileid: "37938914"
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "modifiedBy": "String",
-  "modifiedDateTime": "String (timestamp)"
+  "modifiedDateTime": "String (timestamp)",
+  "accessPackageResourceRole": {
+    "id": "String (identifier)",
+     "displayName": "String",
+     "originSystem": "String",
+     "originId": "String"
+  },
+  "accessPackageResourceScope": {
+     "id": "String (identifier)",
+     "displayName": "String",
+     "description": "String",
+     "originId": "String (identifier)",
+     "originSystem": "String"
+  }
+
 }
 ```
 

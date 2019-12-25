@@ -1,22 +1,22 @@
 ---
 title: Тип ресурса Чатинфо
-description: Сведения о сообщении в Microsoft Teams.
+description: Содержит сведения, связанные с собраниями Microsoft Teams.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 1cf5dc67aa4a3db8b495f8942f64e05ba0bbc6a4
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 5801ad39c3e977740825f14da18568a488e77695
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006721"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870360"
 ---
 # <a name="chatinfo-resource-type"></a>Тип ресурса Чатинфо
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Сведения о сообщении в Microsoft Teams.
+Содержит сведения, связанные с собраниями Microsoft Teams.
 
 ## <a name="properties"></a>Свойства
 

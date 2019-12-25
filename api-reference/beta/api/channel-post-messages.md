@@ -1,18 +1,18 @@
 ---
-title: Создание chatMessage в канале
+title: Создание объекта chatMessage в канале
 description: Создание нового chatMessage в указанном канале.
 localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 26d35bae2eb5dd85989660e243355ea3099bf54d
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: a764a7190432b838bdd982b4275fe6dca897ba56
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36418714"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868186"
 ---
-# <a name="create-chatmessage-in-a-channel"></a>Создание chatMessage в канале
+# <a name="create-chatmessage-in-a-channel"></a>Создание объекта chatMessage в канале
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,7 +50,7 @@ POST /teams/{id}/channels/{id}/messages
 
 > Note: отправка сообщений с вложениями и изображениями не поддерживается.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [chatMessage](../resources/chatmessage.md) в тексте отклика.
 
@@ -85,7 +85,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-channel-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -94,7 +94,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > [!NOTE]
 > Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -177,9 +177,9 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -243,6 +243,9 @@ Content-length: 160
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
+> Note: идентификатор вложения должен быть уникальным и может быть новым случайно созданным идентификатором GUID. Однако идентификатор вложения должен быть одинаковым в элементах _Body_ и _вложениях_ .
+
 <!-- {
   "blockType": "request",
   "name": "create_chatmessage_from_channel"
@@ -270,9 +273,9 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -328,7 +331,7 @@ Content-length: 160
 
 ## <a name="see-also"></a>См. также
 
-- [Справочник по карточкам](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/cards/cards-reference)
+- [Справочник по карточкам](/microsoftteams/platform/concepts/cards/cards-reference)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

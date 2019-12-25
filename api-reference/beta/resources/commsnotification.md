@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 9901c1390d1813413cdd95949debea95d54c286b
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 1752bbe46ee7795bd71df2089dadf6a975ccae26
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006707"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870927"
 ---
 # <a name="commsnotification-resource-type"></a>Тип ресурса Коммснотификатион
 
@@ -24,7 +24,7 @@ ms.locfileid: "38006707"
 | changeType     | String  | Возможные значения: `created`, `updated`, `deleted`.      |
 | Resourceurl экземпляром       | String  | URI ресурса, который был изменен.                      |
 
-> **Примечание:** `resourceData` доступно в виде дополнительных данных. Это сущность или коллекция (сущность) в зависимости от количества изменений, упакованных в уведомление.
+> **Примечание:** `resourceData` доступно в виде дополнительных данных. Это либо сущность, либо коллекция сущностей в зависимости от количества изменений, упакованных в уведомление.
 
 ## <a name="json-representation"></a>Представление JSON
 

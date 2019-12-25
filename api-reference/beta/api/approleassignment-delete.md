@@ -3,14 +3,14 @@ title: Удаление объекта AppRoleAssignment
 description: Удаление Аппролеассигнмент.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 6f21e29e55bea348cf2ef38cd5e2280de5195533
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.prod: microsoft-identity-platform
+author: psignoret
+ms.openlocfilehash: 2c42171863f336e25e298d0b807839d83376d83d
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408155"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868334"
 ---
 # <a name="delete-approleassignment"></a>Удаление объекта AppRoleAssignment
 
@@ -30,8 +30,9 @@ ms.locfileid: "36408155"
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/{id | userPrincipalName}/appRoleAssignments/{id}
-DELETE /servicePrincipals/{id}/appRoleAssignedTo
 DELETE /groups/{id}/appRoleAssignments/{id}
+DELETE /servicePrincipals/{id}/appRoleAssignments/{id}
+DELETE /servicePrincipals/{id}/appRoleAssignedTo/{id}
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -42,7 +43,7 @@ DELETE /groups/{id}/appRoleAssignments/{id}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
@@ -56,7 +57,7 @@ DELETE /groups/{id}/appRoleAssignments/{id}
   "name": "delete_approleassignment"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/appRoleAssignments/{id}
+DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignedTo/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-approleassignment-csharp-snippets.md)]
@@ -66,7 +67,7 @@ DELETE https://graph.microsoft.com/beta/appRoleAssignments/{id}
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-approleassignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-approleassignment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: 71ff9c4eb4e22b20e9c4d9b9ebb7b78ccb6f18f0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f5980cb2db52a5c418d69b8c786a5b6f51123e3b
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008525"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870112"
 ---
 # <a name="use-the-microsoft-graph-api-for-security-threat-detection-and-protection-preview"></a>Использование API Microsoft Graph для обнаружения и защиты угроз безопасности (Предварительная версия)
 
@@ -20,7 +20,7 @@ ms.locfileid: "36008525"
 
 Интеллектуальный граф безопасности объединяет логику безопасности в центрах безопасности Майкрософт, центрах безопасности и партнерах из всего мира, образуя экосистему интегрированных решений безопасности. С помощью машинного обучения, мониторинга поведений и масштаба облака интеллектуальный граф безопасности позволяет быстрее и эффективно защищать, обнаруживать и отвечать на угрозы. [API безопасности](security-api-overview.md) подключается к [интеллектуальному графу безопасности](https://www.microsoft.com/en-us/security/intelligence-security-api)и предоставляет решения, которые являются действиями и целостностью.
 
-[API рисков для защиты удостоверений](identityprotection-root.md) предоставляет легкий доступ для пользователей Azure AD Premium P1 и P2 для отправки запросов на [обнаружение рисков, выполняемых защитой удостоверений](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection-graph-getting-started) , и использовать эти события в системах SIEM и приложениях безопасности.
+[API рисков для защиты удостоверений](identityprotection-root.md) предоставляет легкий доступ для пользователей Azure AD Premium P1 и P2 для отправки запросов на [обнаружение рисков, выполняемых защитой удостоверений](/azure/active-directory/active-directory-identityprotection-graph-getting-started) , и использовать эти события в системах SIEM и приложениях безопасности.
 
 ## <a name="see-also"></a>См. также
 

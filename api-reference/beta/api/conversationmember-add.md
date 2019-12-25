@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 71070d07e17c1662523e0930b4bff4d2944b0649
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 7ac5cdef288ed45c1fb45c2d64d026241018528f
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37937184"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868749"
 ---
 # <a name="add-conversationmember"></a>Добавление Конверсатионмембер
 
@@ -73,7 +73,7 @@ content-type: application/json
 content-length: 26
 
 {
-  "@odata.type": "microsoft.graph.aadConversationMember",
+  "@odata.type": "#microsoft.graph.aadUserConversationMember",
   "roles": [],
   "user@odata.bind": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
 }
@@ -93,7 +93,7 @@ content-length: 26
 ---
 
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
 

@@ -5,18 +5,18 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 31c25211efbca8ae0f52a9348ad0531ea818397f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d698aa85f38061ce22d63f37ea3deca3635ba219
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974539"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870955"
 ---
 # <a name="agreement-resource-type"></a>Тип ресурса договора
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет настраиваемое соглашение об использовании клиента, которое создается и управляется с помощью Azure Active Directory (Azure AD). Вы можете использовать следующие методы для создания и управления [условиями использования функции Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-tou) в соответствии со сценарием.
+Представляет настраиваемое соглашение об использовании клиента, которое создается и управляется с помощью Azure Active Directory (Azure AD). Вы можете использовать следующие методы для создания и управления [условиями использования функции Azure Active Directory](/azure/active-directory/active-directory-tou) в соответствии со сценарием.
 
 ## <a name="methods"></a>Методы
 
@@ -26,7 +26,7 @@ ms.locfileid: "35974539"
 | [Список соглашений](../api/agreement-list.md) | Коллекция [договоров](agreement.md) | Получение коллекции объектов Agreement. |
 | [Получение соглашения](../api/agreement-get.md) | [Корпоратив](agreement.md) | Чтение свойств и связей объекта Agreement. |
 | [Обновление соглашения](../api/agreement-update.md) | [Корпоратив](agreement.md) | Обновление объекта договора. |
-| [Удаление соглашения](../api/agreement-delete.md) | Нет | Удаление объекта соглашения. |
+| [Удаление соглашения](../api/agreement-delete.md) | Нет. | Удаление объекта соглашения. |
 <!--
 | [Create agreementFile](../api/agreement-post-files.md) | [agreementFile](agreementfile.md) | Create a new agreementFile by posting to the files collection. |
 | [List files](../api/agreement-list-files.md) | [agreementFile](agreementfile.md) collection | Get an agreementFile object collection. |
@@ -37,10 +37,10 @@ ms.locfileid: "35974539"
 |:-------------|:------------|:------------|
 |displayName|Строка|Отображаемое имя соглашения.|
 |id|String| Только для чтения.|
-|Исвиевингбефореакцептанцерекуиред|Boolean|Указывает, должно ли пользователь развернуть и просмотреть Соглашение перед принятием.|
+|исвиевингбефореакцептанцерекуиред|Логический|Указывает, должно ли пользователь развернуть и просмотреть Соглашение перед принятием.|
 
 ## <a name="relationships"></a>Отношения
-| Отношение | Тип        | Описание |
+| Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
 |files|Коллекция [агриментфиле](agreementfile.md)|Только для чтения. Документы PDF, связанные с этим соглашением.|
 

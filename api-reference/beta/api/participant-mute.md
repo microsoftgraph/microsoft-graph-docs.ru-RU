@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: af906dad7ad24ad9c82411be3b7a896fcafa216c
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: 1c720ce79b4c31b2895e6d953ab0e36cbb2450be
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747982"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869327"
 ---
 # <a name="participant-mute"></a>участник: выкл.
 
@@ -24,13 +24,13 @@ ms.locfileid: "38747982"
 
 > **Примечание:** Этот метод поддерживается только для вызовов групп.
 
-## <a name="permissions"></a>Разрешения
+## <a name="permissions"></a>Permissions
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Для приложений     | Нет                                        |
+| Приложение     | Нет.                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -51,12 +51,12 @@ POST /communications/calls/{id}/participants/{id}/mute
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|Контекст|Строка|Уникальная строка контекста клиента. Максимальный лимит — 256 символов.|
+|Контекст|String|Уникальная строка контекста клиента. Максимальный лимит — 256 символов.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [мутепартиЦипантоператион](../resources/muteParticipantoperation.md) в тексте отклика.
 
->**Примечание:** Вхем этот API возвращает успешный ответ, все участники получат обновление списка.
+>**Примечание:** Когда этот API возвращает успешный ответ, все участники получат обновление списка.
 
 ## <a name="example---mute-specific-participant"></a>Пример: Специальный участник
 В приведенном ниже примере показано, как вызывать этот API.

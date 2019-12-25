@@ -3,14 +3,14 @@ title: Создание Екстерналитем
 description: Создание нового Екстерналитем.
 localization_priority: Normal
 author: snlraju-msft
-ms.prod: ''
+ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 10adfc916f2c4f30f19944188b1b375080c6e5bf
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: 298a5bc01b3891831e1a8fd6774d721dc977b940
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747245"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869794"
 ---
 # <a name="create-externalitem"></a>Создание Екстерналитем
 
@@ -30,7 +30,7 @@ ms.locfileid: "38747245"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | ExternalItem.ReadWrite.All |
+| Приложение                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

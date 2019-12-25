@@ -5,33 +5,34 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: ecd49dc603fa4ae7c4afdd0120267a47d8f06c43
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: d19879c2768a7f3647fb18631e278afdc0989b36
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36460761"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870430"
 ---
 # <a name="azure-ad-access-reviews"></a>Проверки доступа Azure AD
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Вы можете использовать [обзоры Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) , чтобы настроить однократные или повторяющиеся проверки доступа для подтверждения прав доступа пользователя.
+Вы можете использовать [обзоры Azure AD](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) , чтобы настроить однократные или повторяющиеся проверки доступа для подтверждения прав доступа пользователя.
 
 Типичные сценарии клиентов для проверки членства в группах и доступа к приложениям:
-   
+
 - Пользователи могут просматривать и сертифицировать гостевой доступ, используя обзоры доступа к приложениям и группам. Проверяющие могут использовать аналитику, которая позволяет эффективно определять, должен ли гостям доступ.
-      
+
 - Пользователи могут просматривать и сертифицировать доступ сотрудников к приложениям и членству в группах с помощью рецензирования Access.
-   
+
 - Пользователи могут собирать элементы управления проверкой доступа в программы, которые соответствуют требованиям организации для отслеживания проверок на соответствие требованиям и приложениям, учитывающим риск.
 
 Кроме того, у пользователей есть возможность просматривать и сертифицировать назначения ролей для пользователей, которым назначены роли Azure AD, такие как глобальный администратор или роли подписки Azure.  Эта возможность включена в [Azure AD с правами привилегированного управления идентификацией](privilegedidentitymanagement-root.md).
 
-Обратите внимание, что функция рецензирования доступа, включая API, включена в Azure AD Premium P2.  Клиент, на котором создается проверка доступа, должен иметь допустимую приобретенную или пробную подписку на Azure AD Premium P2 или EMS. Прежде чем приступать к созданию обзора, программы или элемента управления программы, администратор должен заранее подготовиться к работе, чтобы подготовить ресурсы [програмконтролтипе](programcontroltype.md) и [бусинессфловтемплате](businessflowtemplate.md) . Организация может выполнять проверку доступа Azure AD или, в случае рецензирования роли Azure AD или ролей подписки Azure, системы PIM Azure AD.
+Обратите внимание, что функция рецензирования доступа, включая API, включена в Azure AD Premium P2.  Клиент, на котором создается проверка доступа, должен иметь допустимую приобретенную или пробную подписку на Azure AD Premium P2 или EMS.
+Прежде чем приступать к созданию обзора, программы или элемента управления программы, администратор должен заранее подготовиться к работе, чтобы подготовить ресурсы [програмконтролтипе](programcontroltype.md) и [бусинессфловтемплате](businessflowtemplate.md) . Организация может выполнять проверку доступа Azure AD или, в случае рецензирования роли Azure AD или ролей подписки Azure, системы PIM Azure AD.
 
 
-## <a name="methods"></a>Методы 
+## <a name="methods"></a>Methods
 
 В следующей таблице перечислены методы, которые можно использовать для взаимодействия с ресурсами, связанными с проверкой доступа.
 
@@ -79,9 +80,9 @@ ms.locfileid: "36460761"
 
 ## <a name="see-also"></a>См. также
 
-- [Как администратор может управлять доступом пользователей с помощью проверок доступа Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
-- [Как администратор может управлять гостевым доступом с помощью проверок Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)
-- [Как администратор может управлять программами и элементами управления для рецензирования Access Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-manage-programs-controls)
+- [Как администратор может управлять доступом пользователей с помощью проверок доступа Azure AD](/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
+- [Как администратор может управлять гостевым доступом с помощью проверок Azure AD](/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)
+- [Как администратор может управлять программами и элементами управления для рецензирования Access Azure AD](/azure/active-directory/active-directory-azure-ad-controls-manage-programs-controls)
 
 
 <!--

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 672a782b97b3a96c9a7065f3bf5c7b5b9030f282
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e685bc281344f05a43e3c44b7df6bb6884185c63
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965455"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870133"
 ---
 # <a name="registrykeystate-resource-type"></a>Тип ресурса Регистрикэйстате
 
@@ -20,16 +20,16 @@ ms.locfileid: "35965455"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|семейства|registryHive|[Куст реестра Windows](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives) : <ul><li>ХКЭЙ_КУРРЕНТ_КОНФИГ</li> <li>HKEY_CURRENT_USER</li> <li>ХКЭЙ_ЛОКАЛ_МАЧИНЕ\САМ</li> <li>Хкэй_локал_мачине\секурити</li> <li>Хкэй_локал_мачине\софтваре</li> <li>Хкэй_локал_мачине\систем</li> <li>HKEY_USERS\\. Умолчани.</li></ul> Возможные значения: `unknown`, `currentConfig`, `currentUser`, `localMachineSam`, `localMachineSecurity`, `localMachineSoftware`, `localMachineSystem`, `usersDefault`.|
+|семейства|registryHive|[Куст реестра Windows](/windows/desktop/sysinfo/registry-hives) : <ul><li>HKEY_CURRENT_CONFIG</li> <li>HKEY_CURRENT_USER</li> <li>HKEY_LOCAL_MACHINE \САМ</li> <li>HKEY_LOCAL_MACHINE \Секурити</li> <li>HKEY_LOCAL_MACHINE \Софтваре</li> <li>HKEY_LOCAL_MACHINE \Систем</li> <li>HKEY_USERS\\. Умолчани.</li></ul> Возможные значения: `unknown`, `currentConfig`, `currentUser`, `localMachineSam`, `localMachineSecurity`, `localMachineSoftware`, `localMachineSystem`, `usersDefault`.|
 |ключа|String|Текущий (то есть измененный) раздел реестра (исключая КУСТ).|
-|Олдкэй|String|Предыдущий (то есть перед изменением) раздел реестра (исключает КУСТ).|
-|Олдвалуедата|String|Previous (то есть перед изменением) значение раздела реестра (Content).|
-|Олдвалуенаме|String|Previous (то есть перед изменением) имя значения раздела реестра.|
+|олдкэй|String|Предыдущий (то есть перед изменением) раздел реестра (исключает КУСТ).|
+|олдвалуедата|String|Previous (то есть перед изменением) значение раздела реестра (Content).|
+|олдвалуенаме|String|Previous (то есть перед изменением) имя значения раздела реестра.|
 |восстановление|registryOperation|Операция, в которой изменилось имя и/или значение раздела реестра. Возможные значения: `unknown`, `create`, `modify`, `delete`.|
 |processId|Int32|Идентификатор процесса (PID), который изменил раздел реестра (сведения о процессе будут отображаться в коллекции предупреждений "процессы").|
-|Валуедата|String|Текущие (то есть измененные) данные значения раздела реестра (содержимое).|
+|валуедата|String|Текущие (то есть измененные) данные значения раздела реестра (содержимое).|
 |valueName|String|Current (то есть изменено) имя значения раздела реестра|
-|Типом|registryValueType|[Тип значения раздела реестра](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types) <ul><li>REG_BINARY</li> <li>REG_DWORD</li> <li>РЕГ_ДВОРД_ЛИТТЛЕ_ЕНДИАН</li> <li>РЕГ_ДВОРД_БИГ_ЕНДИАН</li><li>REG_EXPAND_SZ</li> <li>РЕГ_ЛИНК</li> <li>REG_MULTI_SZ</li> <li>РЕГ_НОНЕ</li> <li>РЕГ_КВОРД</li> <li>РЕГ_КВОРД_ЛИТТЛЕ_ЕНДИАН</li> <li>REG_SZ</li></ul> Возможные значения: `unknown`, `binary`, `dword`, `dwordLittleEndian`, `dwordBigEndian`, `expandSz`, `link`, `multiSz`, `none`, `qword`, `qwordlittleEndian`, `sz`.|
+|Типом|registryValueType|[Тип значения раздела реестра](/windows/desktop/sysinfo/registry-value-types) <ul><li>REG_BINARY</li> <li>REG_DWORD</li> <li>REG_DWORD_LITTLE_ENDIAN</li> <li>REG_DWORD_BIG_ENDIAN</li><li>REG_EXPAND_SZ</li> <li>REG_LINK</li> <li>REG_MULTI_SZ</li> <li>REG_NONE</li> <li>REG_QWORD</li> <li>REG_QWORD_LITTLE_ENDIAN</li> <li>REG_SZ</li></ul> Возможные значения: `unknown`, `binary`, `dword`, `dwordLittleEndian`, `dwordBigEndian`, `expandSz`, `link`, `multiSz`, `none`, `qword`, `qwordlittleEndian`, `sz`.|
 
 ## <a name="json-representation"></a>Представление JSON
 

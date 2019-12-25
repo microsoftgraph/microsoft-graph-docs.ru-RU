@@ -1,22 +1,22 @@
 ---
 title: Тип ресурса ИнвитатионпартиЦипантинфо
-description: '**ИнвитатионпартиЦипант** используется для представления набора удостоверений, связанных с приглашением на беседу, и предоставляет дополнительные параметры приглашения.'
+description: Представляет объект, приглашенный на вызов группы.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 762e5dc75c03cda78581b90b54c3fea27a7f12f2
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: bddce0358bfa0ec46d8231958817002cb4ca8c20
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39636671"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870224"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>Тип ресурса ИнвитатионпартиЦипантинфо
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Этот ресурс используется для представления набора удостоверений, связанных с приглашением на беседу, и предоставляет дополнительные параметры приглашения.
+Представляет объект, приглашенный на вызов группы. 
 
 ## <a name="properties"></a>Свойства
 

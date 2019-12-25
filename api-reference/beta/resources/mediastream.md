@@ -1,22 +1,22 @@
 ---
 title: Тип ресурса Медиастреам
-description: Тип Медиастреам.
+description: Содержит сведения о канале мультимедиа.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 63fad1d064c4ab967bba6df8bed6dbcdd20a3d69
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: de5c90453d9adb657c2df5ee761d847056664037
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006657"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870182"
 ---
 # <a name="mediastream-resource-type"></a>Тип ресурса Медиастреам
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Тип Медиастреам.
+Содержит сведения о канале мультимедиа.
 
 ## <a name="properties"></a>Свойства
 
@@ -25,7 +25,7 @@ ms.locfileid: "38006657"
 | direction   | String  | Направление. `inactive`Возможные значения: `sendOnly`,, `receiveOnly`,. `sendReceive`                  |
 | label       | String  | Метка потока мультимедиа.                                                                                       |
 | mediaType   | String  | Тип мультимедиа. Возможные `unknown`значения:, `audio` `video`,, `videoBasedScreenSharing`,. `data`        |
-| сервермутед | Boolean | Если сервер отключен на носителе.                                                                          |
+| сервермутед | Логический | Указывает, отключен ли сервер к мультимедиа.                                                                          |
 | Идентификатор    | String  | Идентификатор источника.                                                                                                |
 
 ## <a name="json-representation"></a>Представление JSON
@@ -47,22 +47,6 @@ ms.locfileid: "38006657"
   "mediaType": "unknown | audio | video | videoBasedScreenSharing | data",
   "serverMuted": true,
   "sourceId": "String"
-}
-```
-
-## <a name="example"></a>Пример
-
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.mediaStream"
-}-->
-```json
-{
-  "direction": "sendReceive",
-  "label": "main-audio",
-  "mediaType": "audio",
-  "serverMuted": false,
-  "sourceId": "1024"
 }
 ```
 

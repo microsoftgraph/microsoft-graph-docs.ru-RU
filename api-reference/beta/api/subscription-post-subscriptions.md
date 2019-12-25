@@ -5,12 +5,12 @@ localization_priority: Normal
 author: piotrci
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 4a5ffc3ec86c0ce40e4b5fca25b7f0ddcf5dca9f
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 487be3c7a50dcd5b09ece599f69b74248965eacf
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844178"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870840"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -37,6 +37,8 @@ ms.locfileid: "39844178"
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Не поддерживается | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
+
+> **Примечание:** В январе 2020 подписки chatMessage потребуют [шифрования](/graph/webhooks-with-resource-data), и создание подписки завершится с ошибками, если [енкриптионцертификате](../resources/subscription.md) не задано.
 
 > **Примечание:** Дополнительные ограничения применяются для подписок на OneDrive и элементов Outlook. Ограничения применяются к созданию и управлению (получению, обновлению и удалению) подписок.
 
@@ -86,7 +88,7 @@ POST https://graph.microsoft.com/beta/subscriptions
 Content-type: application/json
 
 {
-   "changeType": "created,updated",
+   "changeType": "updated",
    "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
    "resource": "me/mailFolders('Inbox')/messages",
    "expirationDateTime":"2016-11-20T18:23:45.9356913Z",
@@ -123,7 +125,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже показан пример ответа. 
+Ниже приводится пример отклика. 
 
 >**Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
@@ -142,7 +144,7 @@ Content-length: 252
   "id": "7f105c7d-2dc5-4530-97cd-4e7ae6534c07",
   "resource": "me/mailFolders('Inbox')/messages",
   "applicationId": "24d3b144-21ae-4080-943f-7067b395b913",
-  "changeType": "created,updated",
+  "changeType": "updated",
   "clientState": "secretClientValue",
   "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
   "expirationDateTime": "2016-11-20T18:23:45.9356913Z",

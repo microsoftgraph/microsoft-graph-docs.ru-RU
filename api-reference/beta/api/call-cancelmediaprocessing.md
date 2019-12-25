@@ -1,22 +1,22 @@
 ---
 title: 'Call: Канцелмедиапроцессинг'
-description: Отменяет обработку мультимедиа для всех выполняемых операций Плайпромпт или записи.
+description: Отменяет обработку мультимедиа для всех выполняющихся операций Плайпромпт или Рекордреспонсе.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 1463489c82d1595e1bdcaa9629e5f306b95aa19f
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: cf5b6da2bf657fb999a5c9e4df06e1a8841b7942
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006363"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868284"
 ---
 # <a name="call-cancelmediaprocessing"></a>Call: Канцелмедиапроцессинг
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отменяет обработку мультимедиа для всех выполняемых операций Плайпромпт или записи.
+Отменяет обработку всех выполняемых [приглашений на проигрывание](./call-playprompt.md) или [запись отклика](./call-record.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -25,7 +25,7 @@ ms.locfileid: "38006363"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | Нет.                                       |
+| Приложение                            | Нет.                                       |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -33,23 +33,23 @@ ms.locfileid: "38006363"
 POST /app/calls/{id}/cancelMediaProcessing
 POST /communications/calls/{id}/cancelMediaProcessing
 ```
-> **Примечание:** `/app` Путь является устаревшим. Перемотка вперед, используйте `/communications` путь.
+> **Примечание.** Путь `/app` является устаревшим. В дальнейшем используйте путь `/communications`.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
+| Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр      | Тип    | Описание                                                    |
 |:---------------|:--------|:---------------------------------------------------------------|
-| ко            | Boolean | Флаг, указывающий, следует ли остановить все операции или текущие. |
 | Контекст  | String  | Контекст клиента.                                            |
 
 ## <a name="response"></a>Ответ
-Возвращает `202 Accepted` код отклика и заголовок Location с URI для [коммсоператион](../resources/commsoperation.md) , созданного для этого запроса.
+В случае успешного выполнения этот метод возвращает `200 OK` код HTTP-ответа и заголовок Location с URI для [коммсоператион](../resources/commsoperation.md) , созданного для этого запроса.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -69,7 +69,6 @@ Content-Type: application/json
 Content-Length: 62
 
 {
-  "all": true,
   "clientContext": "clientContext-value"
 }
 ```
@@ -104,13 +103,14 @@ Content-Type: application/json
 Content-Length: 259
 
 {
-  "id": "17e3b46c-f61d-4f4d-9635-c626ef18e6ad",
-  "status": "running",
-  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c"
+  "@odata.type": "#microsoft.graph.cancelMediaProcessingOperation",
+  "status": "completed",
+  "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
+  "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5"
 }
 ```
 
-##### <a name="notification---operation-completed"></a>Уведомление о завершении операции
+##### <a name="notification---operation-canceled-for-recordresponse"></a>Уведомление — операция отменена для Рекордреспонсе
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -130,11 +130,21 @@ Content-Type: application/json
       "changeType": "deleted",
       "resourceUrl": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
       "resourceData": {
-        "@odata.type": "#microsoft.graph.commsOperation",
+        "@odata.type": "#microsoft.graph.recordOperation",
         "@odata.id": "/communications/calls/57DAB8B1894C409AB240BD8BEAE78896/operations/0FE0623FD62842EDB4BD8AC290072CC5",
         "@odata.etag": "W/\"54451\"",
+        "id": "0fe0623f-d628-42ed-b4bd-8ac290072cc5",
         "clientContext": "d45324c1-fcb5-430a-902c-f20af696537c",
-        "status": "completed"
+        "status": "failed",
+        "resultInfo": {
+          "@odata.type": "#microsoft.graph.resultInfo",
+          "code": 400,
+          "subcode": 8508,
+          "message": "Action falied, the operation was cancelled."
+        },
+        "recordingLocation": "",
+        "recordingAccessToken": "",
+        "completionReason": "operationCanceled"
       }
     }
   ]

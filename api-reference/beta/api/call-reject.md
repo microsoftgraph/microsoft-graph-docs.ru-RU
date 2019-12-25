@@ -5,12 +5,12 @@ author: VinodRavichandran
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e2d14cff71b161b780726c2937b1c008323a9cc5
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: ad223a862330f9d137761685b68e119ad10abb56
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302230"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868252"
 ---
 # <a name="call-reject"></a>вызов: отклонено
 
@@ -22,8 +22,6 @@ ms.locfileid: "38302230"
 
 Этот API не завершает существующие вызовы, на которые уже получены ответы. Чтобы завершить вызов, используйте [Вызов delete](../api/call-delete.md) .
 
-> **Примечание:** С помощью VoIP можно получить доступ только через VoIP. Звонки с помощью PSTN в Bot пока не поддерживаются.
-
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -31,7 +29,7 @@ ms.locfileid: "38302230"
 | :-------------- | :--------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                       |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
-| Для приложений     | Нет                                                       |
+| Приложение     | Нет.                                                       |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

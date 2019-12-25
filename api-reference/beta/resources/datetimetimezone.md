@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 28f9956c065e59a0db1ffbd0b82175546d3e5139
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6c1bae369b71744e69753b9e7b38e5b193db00a7
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973123"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870339"
 ---
 # <a name="datetimetimezone-resource-type"></a>Тип ресурса dateTimeTimeZone
 
@@ -22,13 +22,13 @@ ms.locfileid: "35973123"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |dateTime|String|Один момент времени в объединенном представлении даты и времени (`{date}T{time}`). Пример: "2019 – 04 – 16T09:00:00".|
-|timeZone|String|Представляет часовой пояс, например "Тихоокеанское время (зима)". Ниже приведены возможные значения.|
+|timeZone|String|Представляет часовой пояс, например тихоокеанское время в США. Ниже приведены возможные значения.|
 
-В общем случае для **** свойства TimeZone _можно_ задать любой часовой пояс, который [в настоящее время поддерживается в Windows](https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones), а также дополнительные часовые [пояса, поддерживаемые API календаря](#additional-time-zones). 
+Обычно свойство **timeZone** _можно_ задать для каждого из [часовых поясов, поддерживаемых в настоящее время в Windows](/windows-hardware/manufacture/desktop/default-time-zones), а также для дополнительных [часовых поясов, поддерживаемых API календаря](#additional-time-zones).
 
-При использовании **dateTimeTimeZone** вместе с методом (например, при [создании](../api/user-post-events.md) или [обновлении](../api/event-update.md) события) Обратите внимание на поддерживаемые Часовые пояса, которые могут быть меньше подмножества.
+При использовании ресурса **dateTimeTimeZone** в сочетании с методом (например, при [создании](../api/user-post-events.md) или [обновлении](../api/event-update.md) события) запишите фактически поддерживаемые часовые пояса, которых может быть совсем немного.
 
-### <a name="additional-time-zones"></a>Дополнительные Часовые пояса
+### <a name="additional-time-zones"></a>Дополнительные часовые пояса
 
 Etc/GMT+12
 

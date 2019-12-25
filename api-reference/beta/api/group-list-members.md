@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e2191102e62cacadddcbbbb270b6afe16af93ff9
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 4d74380ab35e90002af2919b67b63b4a50fb7dcd
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37356270"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869631"
 ---
 # <a name="list-group-members"></a>Список членов группы
 
@@ -29,6 +29,8 @@ ms.locfileid: "37356270"
 |Для приложений | Group.Read.All, Directory.Read.All |
 
 > Note: чтобы получить список членов скрытой группы членства, требуется разрешение Member. Read. Hidden.
+
+[!INCLUDE [limited-info](../../includes/limited-info.md)]
  
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -44,10 +46,10 @@ GET /groups/{id}/members
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -77,7 +79,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/members
 ---
 
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 Ниже приведен пример отклика.
 >**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {

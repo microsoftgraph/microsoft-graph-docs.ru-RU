@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d95037bdf1e377f8981f99a06670957d838a2c92
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 3c8fde3b6ead60cada5e663b2150ba463187b22b
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938935"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870420"
 ---
 # <a name="accesspackagecatalog-resource-type"></a>Тип ресурса Акцесспаккажекаталог
 
@@ -27,21 +27,22 @@ ms.locfileid: "37938935"
 | [Создание Акцесспаккажекаталог](../api/accesspackagecatalog-post.md) | [акцесспаккажекаталог](accesspackagecatalog.md) | Создание нового объекта Акцесспаккажекаталог. |
 | [Получение Акцесспаккажекаталог](../api/accesspackagecatalog-get.md) | [акцесспаккажекаталог](accesspackagecatalog.md) | Чтение свойств и связей объекта Акцесспаккажекаталог. |
 | [Удаление Акцесспаккажекаталог](../api/accesspackagecatalog-delete.md) | | Удаление Акцесспаккажекаталог. |
-| [Список ресурсов Акцесспаккажекаталог](../api/accesspackagecatalog-list-accesspackageresources.md) | Коллекция [акцесспаккажересаурце](accesspackageresource.md) | Получение списка объектов Акцесспаккажересаурце. |
+| [Список ресурсов Акцесспаккажекаталог](../api/accesspackagecatalog-list-accesspackageresources.md) | Коллекция [акцесспаккажересаурце](accesspackageresource.md) | Получение списка объектов Акцесспаккажересаурце в каталоге. |
+| [Список ролей ресурсов Акцесспаккажекаталог](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | Коллекция [акцесспаккажересаурцероле](accesspackageresourcerole.md) | Получение списка объектов Акцесспаккажересаурцероле для ресурсов в каталоге. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|каталогстатус|Строка|Имеет значение `Published` , если пакеты доступа доступны для управления.|
-|каталогтипе|Строка|Один из `UserManaged` или `ServiceDefault`. |
-|createdBy|Строка|Имя участника-пользователя, создавшего этот ресурс. Только для чтения.|
+|каталогстатус|String|Имеет значение `Published` , если пакеты доступа доступны для управления.|
+|каталогтипе|String|Один из `UserManaged` или `ServiceDefault`. |
+|createdBy|String|Имя участника-пользователя, создавшего этот ресурс. Только для чтения.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
 |description|String|Описание каталога пакетов Access.|
 |displayName|Строка|Отображаемое имя каталога пакетов Access.|
 |id|String| Только для чтения.|
 |исекстерналливисибле|Логический|Указывает, могут ли пользователи за пресети клиента запрашивать пакеты доступа в этом каталоге.|
-|модифиедби|Строка|Имя участника-пользователя, который последним изменил этот ресурс. Только для чтения.|
+|модифиедби|String|Имя участника-пользователя, который последним изменил этот ресурс. Только для чтения.|
 |modifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
 
 

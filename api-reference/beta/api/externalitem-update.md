@@ -3,14 +3,14 @@ title: Обновление екстерналитем
 description: Обновление свойств объекта екстерналитем.
 localization_priority: Normal
 author: snlraju-msft
-ms.prod: ''
+ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 05eef675ccb6b79e3919fae9a50e90b2d9a31326
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: 18830968484e9103ab751261293226105fcef112
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747226"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869733"
 ---
 # <a name="update-externalitem"></a>Обновление екстерналитем
 
@@ -28,7 +28,7 @@ ms.locfileid: "38747226"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | ExternalItem.ReadWrite.All |
+| Приложение                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -71,7 +71,7 @@ PATCH /external/connections/{connection-id}/items/{item-id}
 |:---------|:--------------------------------------|:--------------------------|
 | списки      | Коллекция [списков управления доступом](../resources/acl.md) | Массив элементов управления доступом. Каждая запись указывает доступ, который предоставляется пользователю или группе. |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [екстерналитем](../resources/externalitem.md) или [екстерналфиле](../resources/externalfile.md) в теле отклика.
 

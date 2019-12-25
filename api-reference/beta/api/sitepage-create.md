@@ -6,12 +6,12 @@ title: Создание новой страницы на сайте SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: bb54af97b1a2527893c5090e52e5bb7aa8381c94
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5ddedd4932e0c2061bcfe3bfac6a52879a3f2b73
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35977869"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40870891"
 ---
 # <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>Создание страницы в списке страниц сайта
 
@@ -45,10 +45,12 @@ POST /sites/{site-id}/pages
 
 В приведенном ниже примере показано, как создать новую страницу.
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
 
 ```json
-POST /sites/{site-id}/page
+POST /sites/{site-id}/pages
 Content-Type: application/json
 
 {
@@ -99,6 +101,12 @@ Content-Type: application/json
     ]
 }
 ```
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-page-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ## <a name="response"></a>Отклик
 

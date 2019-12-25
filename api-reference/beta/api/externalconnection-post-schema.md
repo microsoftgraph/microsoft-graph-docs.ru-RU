@@ -3,14 +3,14 @@ title: Создание схемы
 description: Создайте схему для подключения поиска Microsoft Search.
 localization_priority: Normal
 author: snlraju-msft
-ms.prod: ''
+ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 201f2c474dd0ecdd38b14cbb6af3cb009b51fa82
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: 560fc240439ed204e349bb09a44f398925007182
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747249"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869747"
 ---
 # <a name="create-schema"></a>Создание схемы
 
@@ -18,7 +18,7 @@ ms.locfileid: "38747249"
 
 Создайте схему для [подключения](../resources/externalconnection.md)поиска Microsoft Search.
 
-Поддерживаются два типа схем: настраиваемые элементы и файлы.
+Поддерживаются два типа схемы: настраиваемые элементы и файлы.
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -30,7 +30,7 @@ ms.locfileid: "38747249"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | ExternalItem.ReadWrite.All |
+| Приложение                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,9 +46,9 @@ POST /external/connections/{id}/schema
 |:----------------------|:-----------------------------------------------------|
 | Авторизация         | Bearer {токен}. Обязательный.                            |
 | Content-Type          | application/json. Обязательный.                          |
-| Предпочитать: ответ — Async | Используйте этот параметр, чтобы запрос выполнялся асинхронно. Необязательный параметр. |
+| Предпочитать: ответ — Async | Используйте этот параметр, чтобы запрос выполнялся асинхронно. Необязательное свойство. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса добавьте представление объекта [схемы](../resources/schema.md) в формате JSON.
 
@@ -56,14 +56,14 @@ POST /external/connections/{id}/schema
 
 При регистрации схемы файла для `schema` `baseType` `microsoft.graph.externalFile`свойства объекта должно быть задано значение.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 Если `Prefer: respond-async` заголовок включен в запрос, в случае успешного выполнения этот метод возвращает код `202 Accepted` ОТКЛИКА и URL-адрес в `Location` заголовке ответа, который можно использовать для [получения состояния операции](../api/connectionoperation-get.md).
 
 Без `Prefer: respond-async` заголовка, включенного в запрос (при успешном выполнении) Этот метод `201 Created` возвращает код отклика и новый объект [Schema](../resources/schema.md) в тексте отклика.
 
 > [!NOTE]
-> Создание схемы — длительный процесс, который может допустить превышение времени ожидания шлюза. Рекомендуется использовать `Prefer: respond-async` параметр, чтобы избежать ошибок времени ожидания.
+> Создание схемы — длительный процесс, который может допустить превышение времени ожидания шлюза. Рекомендуется использовать `Prefer: respond-async` заголовок, чтобы избежать ошибок времени ожидания.
 
 ## <a name="examples"></a>Примеры
 

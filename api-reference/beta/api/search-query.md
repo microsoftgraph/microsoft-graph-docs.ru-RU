@@ -1,16 +1,16 @@
 ---
 title: 'Поиск: запрос'
-description: УКАЖИТЕ ОПИСАНИЕ
+description: Выполняет запрос, указанный в теле запроса. Результаты поиска предоставляются в ответе.
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b5da13640d2c62eb8258ca1a154ddcb8c2e1b353
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: ff5d67dc749ce60797ec6c6387d79795718409c5
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703709"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868851"
 ---
 # <a name="search-query"></a>Поиск: запрос
 
@@ -40,7 +40,8 @@ POST /search/query
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {токен}. Обязательный. |
+| Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -50,7 +51,7 @@ POST /search/query
 |:-------------|:------------|:------------|
 |обращения|Коллекция [сеарчрекуест](../resources/searchrequest.md)|Запрос поиска, отправляемый в конечную точку запроса, отформатированное в большом двоичном объекте JSON. Он содержит тип сущностей, ожидаемых в ответе, базовые источники, параметры разбиения по страницам, запрашиваемые поля и фактический поисковый запрос.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод `HTTP 200 OK` возвращает код отклика и объект коллекции [сеарчреспонсе](../resources/searchresponse.md) в тексте отклика.
 

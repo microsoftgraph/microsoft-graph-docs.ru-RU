@@ -3,14 +3,14 @@ title: Обновление Екстерналконнектион
 description: Обновление свойств объекта Екстерналконнектион.
 localization_priority: Normal
 author: snlraju-msft
-ms.prod: ''
+ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 33dd46c03056026337713b35197be5a65ed17485
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: 3ae9e9171cf153b84d8678cec25965779d8c1398
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38747242"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40869740"
 ---
 # <a name="update-connection"></a>Обновление подключения
 
@@ -28,7 +28,7 @@ ms.locfileid: "38747242"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | ExternalItem.ReadWrite.All |
+| Приложение                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
