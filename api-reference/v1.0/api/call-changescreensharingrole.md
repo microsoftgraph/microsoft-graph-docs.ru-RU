@@ -1,0 +1,165 @@
+---
+title: 'Call: Чанжескриншарингроле'
+description: Разрешить приложениям предоставлять доступ к содержимому экрана участникам группового вызова.
+author: VinodRavichandran
+localization_priority: Normal
+ms.prod: cloud-communications
+doc_type: apiPageType
+ms.openlocfilehash: 51fb5066100d4c8072d4df2dbcc62db03e3a1021
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40871447"
+---
+# <a name="call-changescreensharingrole"></a><span data-ttu-id="d5c5a-103">Call: Чанжескриншарингроле</span><span class="sxs-lookup"><span data-stu-id="d5c5a-103">call: changeScreenSharingRole</span></span>
+
+<span data-ttu-id="d5c5a-104">Разрешить приложениям предоставлять доступ к содержимому экрана участникам группового вызова.</span><span class="sxs-lookup"><span data-stu-id="d5c5a-104">Allow applications to share screen content with the participants of a group call.</span></span>
+
+> <span data-ttu-id="d5c5a-105">**Примечание:** Это поддерживается только для звонков групп, использующих мультимедиа, размещаемых в приложении.</span><span class="sxs-lookup"><span data-stu-id="d5c5a-105">**Note:** This is only supported for group calls that use App-Hosted Media.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="d5c5a-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d5c5a-106">Permissions</span></span>
+<span data-ttu-id="d5c5a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d5c5a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+| <span data-ttu-id="d5c5a-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d5c5a-109">Permission type</span></span>                        | <span data-ttu-id="d5c5a-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d5c5a-110">Permissions (from least to most privileged)</span></span> |
+|:---------------------------------------|:--------------------------------------------|
+| <span data-ttu-id="d5c5a-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d5c5a-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="d5c5a-112">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="d5c5a-112">Not Supported</span></span>                               |
+| <span data-ttu-id="d5c5a-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d5c5a-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d5c5a-114">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="d5c5a-114">Not Supported</span></span>                               |
+| <span data-ttu-id="d5c5a-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="d5c5a-115">Application</span></span>                            | <span data-ttu-id="d5c5a-116">Calls.AccessMedia.All</span><span class="sxs-lookup"><span data-stu-id="d5c5a-116">Calls.AccessMedia.All</span></span>                       |
+
+## <a name="http-request"></a><span data-ttu-id="d5c5a-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d5c5a-117">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+```http
+POST /communications/calls/{id}/changeScreenSharingRole
+```
+
+## <a name="request-headers"></a><span data-ttu-id="d5c5a-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d5c5a-118">Request headers</span></span>
+| <span data-ttu-id="d5c5a-119">Имя</span><span class="sxs-lookup"><span data-stu-id="d5c5a-119">Name</span></span>          | <span data-ttu-id="d5c5a-120">Описание</span><span class="sxs-lookup"><span data-stu-id="d5c5a-120">Description</span></span>               |
+|:--------------|:--------------------------|
+| <span data-ttu-id="d5c5a-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="d5c5a-121">Authorization</span></span> | <span data-ttu-id="d5c5a-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d5c5a-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d5c5a-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="d5c5a-124">Content-type</span></span>  | <span data-ttu-id="d5c5a-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d5c5a-p103">application/json. Required.</span></span>|
+
+## <a name="request-body"></a><span data-ttu-id="d5c5a-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="d5c5a-127">Request body</span></span>
+<span data-ttu-id="d5c5a-128">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="d5c5a-128">In the request body, provide a JSON object with the following parameters.</span></span>
+
+| <span data-ttu-id="d5c5a-129">Параметр</span><span class="sxs-lookup"><span data-stu-id="d5c5a-129">Parameter</span></span>      | <span data-ttu-id="d5c5a-130">Тип</span><span class="sxs-lookup"><span data-stu-id="d5c5a-130">Type</span></span>    |<span data-ttu-id="d5c5a-131">Описание</span><span class="sxs-lookup"><span data-stu-id="d5c5a-131">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="d5c5a-132">role</span><span class="sxs-lookup"><span data-stu-id="d5c5a-132">role</span></span>|<span data-ttu-id="d5c5a-133">String</span><span class="sxs-lookup"><span data-stu-id="d5c5a-133">String</span></span>|<span data-ttu-id="d5c5a-134">Возможные значения: "средство просмотра", "общий доступ"</span><span class="sxs-lookup"><span data-stu-id="d5c5a-134">Possible values are: 'viewer', 'sharer'</span></span>|
+
+## <a name="response"></a><span data-ttu-id="d5c5a-135">Ответ</span><span class="sxs-lookup"><span data-stu-id="d5c5a-135">Response</span></span>
+<span data-ttu-id="d5c5a-136">В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика, а все участники получат обновление списка.</span><span class="sxs-lookup"><span data-stu-id="d5c5a-136">If successful, this method returns a `202 Accepted` response code, and all participants will receive a roster update.</span></span>
+
+## <a name="example"></a><span data-ttu-id="d5c5a-137">Пример</span><span class="sxs-lookup"><span data-stu-id="d5c5a-137">Example</span></span>
+
+##### <a name="request"></a><span data-ttu-id="d5c5a-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="d5c5a-138">Request</span></span>
+<span data-ttu-id="d5c5a-139">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d5c5a-139">The following example shows the request.</span></span>
+
+
+# <a name="httptabhttp"></a>[<span data-ttu-id="d5c5a-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="d5c5a-140">HTTP</span></span>](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "call-changeScreenSharingRole"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/communications/calls/{id}/changeScreenSharingRole
+Content-Type: application/json
+Content-Length: 24
+
+{
+  "role": "viewer"
+}
+```
+# <a name="ctabcsharp"></a>[<span data-ttu-id="d5c5a-141">C#</span><span class="sxs-lookup"><span data-stu-id="d5c5a-141">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/call-changescreensharingrole-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="d5c5a-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d5c5a-142">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/call-changescreensharingrole-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="d5c5a-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d5c5a-143">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/call-changescreensharingrole-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javatabjava"></a>[<span data-ttu-id="d5c5a-144">Java</span><span class="sxs-lookup"><span data-stu-id="d5c5a-144">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/call-changescreensharingrole-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+##### <a name="response"></a><span data-ttu-id="d5c5a-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="d5c5a-145">Response</span></span>
+<span data-ttu-id="d5c5a-146">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="d5c5a-146">Here is an example of the response.</span></span> 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.None"
+} -->
+```http
+HTTP/1.1 202 Accepted
+```
+##### <a name="notification---roster-updated-with-participant-sending-screen-sharing-video"></a><span data-ttu-id="d5c5a-147">Уведомление о подсписке, обновленный при отправке участником демонстрации экрана общего видео</span><span class="sxs-lookup"><span data-stu-id="d5c5a-147">Notification - roster updated with participant sending screen sharing video</span></span>
+<span data-ttu-id="d5c5a-148">Обратите `direction: sendOnly` внимание на свойство в потоке мультимедиа.</span><span class="sxs-lookup"><span data-stu-id="d5c5a-148">Note the `direction: sendOnly` property on the media stream.</span></span>
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896/participants",
+      "resourceData": [
+        {
+          "@odata.type": "#microsoft.graph.participant",
+          "id": "2765eb15-01f8-47c6-b12b-c32111a4a86f",
+          "info": {
+            "identity": {
+              "user": {
+                "displayName": "Bob",
+                "id": "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96"
+              }
+            },
+            "region": "westus",
+            "languageId": "en-US"
+          },
+          "mediaStreams": [
+            {
+              "mediaType": "videoBasedScreenSharing",
+              "label": "applicationsharing-video",
+              "sourceId": "1",
+              "direction": "sendOnly"
+            }
+          ],
+          "isMuted": false,
+          "isInLobby": false
+        }
+      ]
+    }
+  ]
+}
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "call: changeScreenSharingRole",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->

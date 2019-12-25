@@ -5,30 +5,32 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 370e4de77398f4894410494cb16ad06efe1bc524
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: c7e7211218a3ed5f4a9e266a6358f47318c88e05
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36729723"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40864466"
 ---
-# <a name="reportroot-getoffice365activationcounts"></a><span data-ttu-id="4ca28-103">reportRoot: getOffice365ActivationCounts</span><span class="sxs-lookup"><span data-stu-id="4ca28-103">reportRoot: getOffice365ActivationCounts</span></span>
+# <a name="reportroot-getoffice365activationcounts"></a><span data-ttu-id="df01f-103">reportRoot: getOffice365ActivationCounts</span><span class="sxs-lookup"><span data-stu-id="df01f-103">reportRoot: getOffice365ActivationCounts</span></span>
 
-<span data-ttu-id="4ca28-104">Получите количество активаций Office 365 на компьютерах и мобильных устройствах.</span><span class="sxs-lookup"><span data-stu-id="4ca28-104">Get the count of Office 365 activations on desktops and devices.</span></span>
+<span data-ttu-id="df01f-104">Получите количество активаций Office 365 на компьютерах и мобильных устройствах.</span><span class="sxs-lookup"><span data-stu-id="df01f-104">Get the count of Office 365 activations on desktops and devices.</span></span>
 
-> <span data-ttu-id="4ca28-105">**Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в статье [Отчеты в Office 365: активации Microsoft Office](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).</span><span class="sxs-lookup"><span data-stu-id="4ca28-105">**Note:** For details about different report views and names, see [Office 365 Reports - Microsoft Office activations](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).</span></span>
+> <span data-ttu-id="df01f-105">**Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в статье [Отчеты в Office 365: активации Microsoft Office](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).</span><span class="sxs-lookup"><span data-stu-id="df01f-105">**Note:** For details about different report views and names, see [Office 365 Reports - Microsoft Office activations](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4ca28-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="4ca28-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="df01f-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="df01f-106">Permissions</span></span>
 
-<span data-ttu-id="4ca28-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4ca28-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="df01f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="df01f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="4ca28-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4ca28-109">Permission type</span></span>                        | <span data-ttu-id="4ca28-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4ca28-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="df01f-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="df01f-109">Permission type</span></span>                        | <span data-ttu-id="df01f-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="df01f-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="4ca28-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4ca28-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="4ca28-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="4ca28-112">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="4ca28-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4ca28-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4ca28-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4ca28-114">Not supported.</span></span>                           |
-| <span data-ttu-id="4ca28-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4ca28-115">Application</span></span>                            | <span data-ttu-id="4ca28-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="4ca28-116">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="df01f-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="df01f-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="df01f-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="df01f-112">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="df01f-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="df01f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="df01f-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="df01f-114">Not supported.</span></span>                           |
+| <span data-ttu-id="df01f-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="df01f-115">Application</span></span>                            | <span data-ttu-id="df01f-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="df01f-116">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="4ca28-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4ca28-117">HTTP request</span></span>
+<span data-ttu-id="df01f-117">**Примечание**. для делегированных разрешений, чтобы разрешить приложениям читать отчеты об использовании служб от имени пользователя, администратору клиента необходимо назначить пользователю соответствующую роль ограниченного администратора Azure AD.</span><span class="sxs-lookup"><span data-stu-id="df01f-117">**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role.</span></span> <span data-ttu-id="df01f-118">Более подробную информацию [можно узнать в статье авторизация для API для чтения отчетов об использовании Office 365](/graph/reportroot-authorization).</span><span class="sxs-lookup"><span data-stu-id="df01f-118">For more details, see [Authorization for APIs to read Office 365 usage reports](/graph/reportroot-authorization).</span></span>
+
+## <a name="http-request"></a><span data-ttu-id="df01f-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="df01f-119">HTTP request</span></span>
 
 
 <!-- { "blockType": "ignored" } --> 
@@ -37,37 +39,37 @@ ms.locfileid: "36729723"
 GET /reports/getOffice365ActivationCounts
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4ca28-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="4ca28-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="df01f-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="df01f-120">Request headers</span></span>
 
-| <span data-ttu-id="4ca28-119">Имя</span><span class="sxs-lookup"><span data-stu-id="4ca28-119">Name</span></span>          | <span data-ttu-id="4ca28-120">Описание</span><span class="sxs-lookup"><span data-stu-id="4ca28-120">Description</span></span>                              |
+| <span data-ttu-id="df01f-121">Имя</span><span class="sxs-lookup"><span data-stu-id="df01f-121">Name</span></span>          | <span data-ttu-id="df01f-122">Описание</span><span class="sxs-lookup"><span data-stu-id="df01f-122">Description</span></span>                              |
 | :------------ | :--------------------------------------- |
-| <span data-ttu-id="4ca28-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="4ca28-121">Authorization</span></span> | <span data-ttu-id="4ca28-p102">Bearer {token}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4ca28-p102">Bearer {token}. Required.</span></span>                |
-| <span data-ttu-id="4ca28-124">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="4ca28-124">If-None-Match</span></span> | <span data-ttu-id="4ca28-125">Если этот заголовок запроса включен, а указанный eTag совпадает с текущим тегом файла, то будет возвращен код отклика `304 Not Modified`.</span><span class="sxs-lookup"><span data-stu-id="4ca28-125">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="4ca28-126">Необязательный параметр.</span><span class="sxs-lookup"><span data-stu-id="4ca28-126">Optional.</span></span> |
+| <span data-ttu-id="df01f-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="df01f-123">Authorization</span></span> | <span data-ttu-id="df01f-p103">Bearer {token}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="df01f-p103">Bearer {token}. Required.</span></span>                |
+| <span data-ttu-id="df01f-126">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="df01f-126">If-None-Match</span></span> | <span data-ttu-id="df01f-127">Если этот заголовок запроса включен, а указанный eTag совпадает с текущим тегом файла, то будет возвращен код отклика `304 Not Modified`.</span><span class="sxs-lookup"><span data-stu-id="df01f-127">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="df01f-128">Необязательный параметр.</span><span class="sxs-lookup"><span data-stu-id="df01f-128">Optional.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="4ca28-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="4ca28-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="df01f-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="df01f-129">Response</span></span>
 
-<span data-ttu-id="4ca28-128">В случае успешного выполнения этот метод возвращает отклик `302 Found`, который перенаправляет на URL-адрес, для которого выполнена предварительная аутентификация, для скачивания отчета.</span><span class="sxs-lookup"><span data-stu-id="4ca28-128">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="4ca28-129">Этот URL-адрес можно найти в заголовке `Location` отклика.</span><span class="sxs-lookup"><span data-stu-id="4ca28-129">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="df01f-130">В случае успешного выполнения этот метод возвращает отклик `302 Found`, который перенаправляет на URL-адрес, для которого выполнена предварительная аутентификация, для скачивания отчета.</span><span class="sxs-lookup"><span data-stu-id="df01f-130">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="df01f-131">Этот URL-адрес можно найти в заголовке `Location` отклика.</span><span class="sxs-lookup"><span data-stu-id="df01f-131">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="4ca28-130">URL-адреса для скачивания, для которых выполнена предварительная аутентификация, действительны в течение нескольких минут и не требуют заголовка `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="4ca28-130">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="df01f-132">URL-адреса для скачивания, для которых выполнена предварительная аутентификация, действительны в течение нескольких минут и не требуют заголовка `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="df01f-132">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="4ca28-131">CSV-файл содержит столбцы со следующими заголовками:</span><span class="sxs-lookup"><span data-stu-id="4ca28-131">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="df01f-133">CSV-файл содержит столбцы со следующими заголовками:</span><span class="sxs-lookup"><span data-stu-id="df01f-133">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="4ca28-132">"Report Refresh Date" (Дата обновления отчета);</span><span class="sxs-lookup"><span data-stu-id="4ca28-132">Report Refresh Date</span></span>
-- <span data-ttu-id="4ca28-133">Product Type (Тип продукта)</span><span class="sxs-lookup"><span data-stu-id="4ca28-133">Product Type</span></span>
-- <span data-ttu-id="4ca28-134">Windows</span><span class="sxs-lookup"><span data-stu-id="4ca28-134">Windows</span></span>
-- <span data-ttu-id="4ca28-135">Mac</span><span class="sxs-lookup"><span data-stu-id="4ca28-135">Mac</span></span>
-- <span data-ttu-id="4ca28-136">Android</span><span class="sxs-lookup"><span data-stu-id="4ca28-136">Android</span></span>
-- <span data-ttu-id="4ca28-137">iOS</span><span class="sxs-lookup"><span data-stu-id="4ca28-137">iOS</span></span>
-- <span data-ttu-id="4ca28-138">Windows 10 Mobile</span><span class="sxs-lookup"><span data-stu-id="4ca28-138">Windows 10 Mobile</span></span>
+- <span data-ttu-id="df01f-134">"Report Refresh Date" (Дата обновления отчета);</span><span class="sxs-lookup"><span data-stu-id="df01f-134">Report Refresh Date</span></span>
+- <span data-ttu-id="df01f-135">Product Type (Тип продукта)</span><span class="sxs-lookup"><span data-stu-id="df01f-135">Product Type</span></span>
+- <span data-ttu-id="df01f-136">Windows</span><span class="sxs-lookup"><span data-stu-id="df01f-136">Windows</span></span>
+- <span data-ttu-id="df01f-137">Mac</span><span class="sxs-lookup"><span data-stu-id="df01f-137">Mac</span></span>
+- <span data-ttu-id="df01f-138">Android</span><span class="sxs-lookup"><span data-stu-id="df01f-138">Android</span></span>
+- <span data-ttu-id="df01f-139">iOS</span><span class="sxs-lookup"><span data-stu-id="df01f-139">iOS</span></span>
+- <span data-ttu-id="df01f-140">Windows 10 Mobile</span><span class="sxs-lookup"><span data-stu-id="df01f-140">Windows 10 Mobile</span></span>
 
-## <a name="example"></a><span data-ttu-id="4ca28-139">Пример</span><span class="sxs-lookup"><span data-stu-id="4ca28-139">Example</span></span>
+## <a name="example"></a><span data-ttu-id="df01f-141">Пример</span><span class="sxs-lookup"><span data-stu-id="df01f-141">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="4ca28-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="4ca28-140">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="df01f-142">Запрос</span><span class="sxs-lookup"><span data-stu-id="df01f-142">Request</span></span>
 
-<span data-ttu-id="4ca28-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4ca28-141">The following is an example of the request.</span></span>
+<span data-ttu-id="df01f-143">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="df01f-143">The following is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="4ca28-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="4ca28-142">HTTP</span></span>](#tab/http)
+# <a name="httptabhttp"></a>[<span data-ttu-id="df01f-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="df01f-144">HTTP</span></span>](#tab/http)
 <!--{
   "blockType": "request",
   "isComposable": true,
@@ -77,28 +79,28 @@ GET /reports/getOffice365ActivationCounts
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getOffice365ActivationCounts
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="4ca28-143">C#</span><span class="sxs-lookup"><span data-stu-id="4ca28-143">C#</span></span>](#tab/csharp)
+# <a name="ctabcsharp"></a>[<span data-ttu-id="df01f-145">C#</span><span class="sxs-lookup"><span data-stu-id="df01f-145">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getoffice365activationcounts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="4ca28-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4ca28-144">JavaScript</span></span>](#tab/javascript)
+# <a name="javascripttabjavascript"></a>[<span data-ttu-id="df01f-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="df01f-146">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getoffice365activationcounts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="4ca28-145">Цель — C</span><span class="sxs-lookup"><span data-stu-id="4ca28-145">Objective-C</span></span>](#tab/objc)
+# <a name="objective-ctabobjc"></a>[<span data-ttu-id="df01f-147">Objective-C</span><span class="sxs-lookup"><span data-stu-id="df01f-147">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getoffice365activationcounts-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="4ca28-146">Java</span><span class="sxs-lookup"><span data-stu-id="4ca28-146">Java</span></span>](#tab/java)
+# <a name="javatabjava"></a>[<span data-ttu-id="df01f-148">Java</span><span class="sxs-lookup"><span data-stu-id="df01f-148">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/reportroot-getoffice365activationcounts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="4ca28-147">Ответ</span><span class="sxs-lookup"><span data-stu-id="4ca28-147">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="df01f-149">Ответ</span><span class="sxs-lookup"><span data-stu-id="df01f-149">Response</span></span>
 
-<span data-ttu-id="4ca28-148">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="4ca28-148">The following is an example of the response.</span></span>
+<span data-ttu-id="df01f-150">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="df01f-150">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -112,7 +114,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="4ca28-149">У скачанного после перенаправления 302 CSV-файла будет приведенная ниже схема.</span><span class="sxs-lookup"><span data-stu-id="4ca28-149">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="df01f-151">У скачанного после перенаправления 302 CSV-файла будет приведенная ниже схема.</span><span class="sxs-lookup"><span data-stu-id="df01f-151">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
