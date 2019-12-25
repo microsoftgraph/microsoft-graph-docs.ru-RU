@@ -3,12 +3,12 @@ title: Установка пакета SDK Microsoft Graph
 description: Содержит инструкции по установке пакетов SDK для C#, Java, JavaScript, задания на языке, PHP и Ruby Microsoft Graph.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: a46f005e2ff646f420d19741eca3c8c21a95291a
-ms.sourcegitcommit: b8d01acfc1cb7610a0e1f5c18065da415bae0777
+ms.openlocfilehash: 9fdb05c6d6fbe3e35f1ed80ddb8223bc3b3f290b
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33630183"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868578"
 ---
 # <a name="install-the-microsoft-graph-sdks"></a>Установка пакетов SDK Microsoft Graph
 
@@ -23,7 +23,7 @@ Microsoft Graph .NET SDK включен в следующие пакеты NuGet
 * [Microsoft. Graph. Core](https://github.com/microsoftgraph/msgraph-sdk-dotnet) — основная библиотека для совершения вызовов в Microsoft Graph.
 * [Microsoft. Graph. auth](https://github.com/microsoftgraph/msgraph-sdk-dotnet-auth) — предоставляет оболочку проверки подлинности на основе сценария для библиотеки проверки подлинности Microsoft (MSAL) для использования с пакетом SDK Microsoft Graph. Microsoft. Graph. auth имеет зависимость от Microsoft. Graph. Core.
 
-Для установки пакетов Microsoft. Graph в проект можно использовать [Пользовательский интерфейс диспетчера пакетов в Visual Studio или консоли диспетчера пакетов](https://docs.microsoft.com/en-us/nuget/quickstart/install-and-use-a-package-in-visual-studio) . Следующие команды консоли диспетчера пакетов будут устанавливать библиотеки Microsoft. Graph, Microsoft. Graph. Core и Microsoft. Graph. auth. Microsoft. Graph. Core устанавливается как зависимость от Microsoft. Graph.
+Для установки пакетов Microsoft. Graph в проект можно использовать [Пользовательский интерфейс диспетчера пакетов в Visual Studio или консоли диспетчера пакетов](/nuget/quickstart/install-and-use-a-package-in-visual-studio) . Следующие команды консоли диспетчера пакетов будут устанавливать библиотеки Microsoft. Graph, Microsoft. Graph. Core и Microsoft. Graph. auth. Microsoft. Graph. Core устанавливается как зависимость от Microsoft. Graph.
 
 ```
 Install-Package Microsoft.Graph
@@ -32,7 +32,7 @@ Install-Package Microsoft.Graph.Auth -IncludePrerelease
 
 ## <a name="install-the-microsoft-graph-java-sdk"></a>Установка пакета SDK Java Microsoft Graph
 
-ПАКЕТ SDK Microsoft Graph Java включен в следующие пакеты:
+Пакет SDK Microsoft Graph Java включен в следующие пакеты:
 
 * [Microsoft-Graph](https://github.com/microsoftgraph/msgraph-sdk-java) — содержит модели и построители запросов для доступа к `v1.0` КОНЕЧНОЙ точке с помощью API Fluent.
 * [Microsoft — Graph — Core](https://github.com/microsoftgraph/msgraph-sdk-java-core) — основная библиотека для совершения вызовов в Microsoft Graph.
@@ -67,7 +67,7 @@ dependency {
 
 ## <a name="install-the-microsoft-graph-javascript-sdk"></a>Установка пакета SDK JavaScript для Microsoft Graph
 
-ПАКЕТ SDK для JavaScript для Microsoft Graph включен в следующие пакеты:
+Пакет SDK для JavaScript для Microsoft Graph включен в следующие пакеты:
 
 * @microsoft/Микрософт-граф-клиент ([NPM](https://www.npmjs.com/package/@microsoft/microsoft-graph-client)) — основная библиотека для совершения вызовов в Microsoft Graph.
 * @microsoft/Микрософт-граф-типес ([NPM](https://www.npmjs.com/package/@microsoft/microsoft-graph-types)) — типы typescript для сущностей Microsoft Graph.
@@ -81,7 +81,7 @@ npm install @microsoft/microsoft-graph-types --save-dev
 
 ## <a name="install-the-microsoft-graph-objective-c-sdk"></a>Установка пакета SDK Microsoft Graph для цели
 
-ПАКЕТ SDK целевого приложения Microsoft Graph поддерживает платформы iOS и macOS и может быть установлен в проекте с помощью CocoaPods или Карсаже.
+Пакет SDK целевого приложения Microsoft Graph поддерживает платформы iOS и macOS и может быть установлен в проекте с помощью CocoaPods или Карсаже.
 
 ### <a name="install-the-microsoft-graph-objective-c-sdk-using-cocoapods"></a>Установка пакета SDK Microsoft Graph с помощью Cocoapods
 
@@ -105,7 +105,7 @@ github "microsoftgraph/msgraph-sdk-objc-auth" "tags/<latest_release_tag>"
 
 2. Выполните `carthage update`команду. Это приведет к извлечению зависимостей в папку Карсаже/Checkout и последующее построение библиотеки Мсграфклиентсдк.
 
-3. С помощью Xcode на вкладке **Общие** параметры конечного приложения, в разделе **связанные платформы и библиотеки** , перетащите **мсграфклиентсдк. Framework** и **мсграфмсалауспровидер. Framework** из карсаже/ Создать папку на диске.
+3. С помощью Xcode на вкладке **Общие** параметры конечного приложения, в разделе **связанные платформы и библиотеки** , перетащите **мсграфклиентсдк. Framework** и **Мсграфмсалауспровидер. Framework** из папки карсаже/Build на диске.
 
 4. На вкладке Параметры **этапа построения** конечного приложения щелкните **+** значок и выберите **создать этап скрипта запуска**. Создайте скрипт запуска, в котором вы указали командную консоль (ex:/бин/ш), и добавьте в сценарий следующее содержимое:
 

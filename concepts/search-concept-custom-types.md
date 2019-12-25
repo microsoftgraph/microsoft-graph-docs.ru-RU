@@ -1,27 +1,27 @@
 ---
-title: Настраиваемые типы поиска
-description: API запросов позволяет выполнять поиск по пользовательским типам, которые применялись с помощью API индексирования.
+title: Использование API службы поиска Microsoft в Microsoft Graph для поиска пользовательских типов
+description: С помощью API Microsoft Search можно импортировать внешние данные через ресурс [екстерналитем](/graph/api/resources/externalitem?view=graph-rest-beta) и запускать поисковые запросы для этого внешнего контента.
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 53203d300fd3cf42fd5e6993fe8ba016de06669a
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 9d00ddbbedd775a6efb59971da10fbc9ee8854a6
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703983"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866912"
 ---
-# <a name="search-custom-types-externalitem"></a>Поиск объектов настраиваемого типа (externalItem)
+# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-custom-types"></a>Использование API службы поиска Microsoft в Microsoft Graph для поиска пользовательских типов
 
-API Microsoft Search позволяет импортировать внешние данные через ресурс [екстерналитем](/graph/api/resources/externalitem?view=graph-rest-beta) и запускать поисковые запросы для этого внешнего контента.
+С помощью API Microsoft Search можно импортировать внешние данные через ресурс [екстерналитем](/graph/api/resources/externalitem?view=graph-rest-beta) и запускать поисковые запросы для этого внешнего контента.
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 Чтобы выполнить поиск пользовательских типов, укажите следующие данные в тексте запроса метода [запроса](/graph/api/search-query?view=graph-rest-beta) :
 
-- Свойство **контентсаурцес** для включения идентификатора подключения, назначаемого во время установки соединителя.
+- Свойство **контентсаурцес** для включения идентификатора подключения, назначаемого во время установки соединителя
 
-- Свойство **EntityType** в качестве`externalItem`
+- Свойство **EntityTypes** в качестве`externalItem`
 
 - Свойство **stored_fields** , включающее поля внешнего элемента, которые требуется получить
 
@@ -61,9 +61,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a>Отклик
-
-Отклик
+### <a name="response"></a>Ответ
 
 ```json
 {
@@ -117,10 +115,8 @@ Content-Type: application/json
 
 - Пользовательские типы не поддерживают поиск в нескольких источниках (указывается в **контентсаурцес**). Одновременно можно выполнять поиск только по одному подключению.
 
-- Необходимо указать свойство **stored_fields** , иначе результаты поиска не возвращаются.
+- Необходимо указать свойство **stored_fields** ; в противном случае результаты поиска не возвращаются.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Дополнительные сведения:
-
-- [Использование API поиска](/graph/api/resources/search-api-overview?view=graph-rest-beta)
+- [Использование API Поиска (Майкрософт) для запроса данных](/graph/api/resources/search-api-overview?view=graph-rest-beta)

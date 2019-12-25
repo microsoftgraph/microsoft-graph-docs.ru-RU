@@ -3,16 +3,16 @@ title: Компонент Person в наборе инструментов Micros
 description: Компонент Person используется для отображения человека или контакта, используя фотографию, имя и/или адрес электронной почты.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: ab9dc1bef81585bb71cdb29de015d8adb6030110
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 8a0498203296f3880741a4bc2cc53ffd69aff518
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955857"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866877"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Компонент Person в наборе инструментов Microsoft Graph
 
-Компонент Person используется для отображения человека или контакта, используя фотографию, имя и/или адрес электронной почты. 
+Компонент Person используется для отображения человека или контакта, используя фотографию, имя и/или адрес электронной почты.
 
 Кроме того, для отображения всплывающей карточки с дополнительными сведениями о пользователе в компоненте Person используется [карточка упр](./person-card.md) ./Person. Дополнительные сведения можно найти в разделе [карточка пользователя](#person-card) .
 
@@ -29,7 +29,7 @@ ms.locfileid: "39955857"
 
 Для задания сведений о лице можно использовать три свойства. Используйте только одно из следующих свойств для каждого экземпляра:
 
-* Задайте `user-id` атрибут или `userId` свойство, чтобы получить пользователя из Microsoft Graph с помощью идентификатора.  
+* Задайте `user-id` атрибут или `userId` свойство, чтобы получить пользователя из Microsoft Graph с помощью идентификатора.
 
 * Задайте `person-query` атрибут или `personQuery` свойство для поиска определенного пользователя в Microsoft Graph. Он выбирает первого пользователя, который будет доступен, и извлекает сведения о лице. Электронная почта обеспечивает наилучшее обращение к нужному человеку, но имя также работает.
 
@@ -103,7 +103,7 @@ mgt-person {
 </mgt-person>
 ```
 
-## <a name="person-card"></a>Карточка лица
+## <a name="person-card"></a>Карточка физического лица
 
 `mgt-person` Компонент может отображать элемент `mgt-person-card` при наведении или щелчке мышью.
 
@@ -123,13 +123,13 @@ mgt-person {
 
 Этот элемент управления использует указанные ниже API и разрешения Microsoft Graph.
 
-| Resource                                                                                                    | Разрешение     |
+| Ресурс                                                                                                    | Разрешение     |
 | ----------------------------------------------------------------------------------------------------------- | -------------------- |
-| [/ме](https://docs.microsoft.com/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
-| [/ме/фото/$value](https://docs.microsoft.com/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |
-| [/ме/Пеопле/? $search =](https://docs.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0)     | People.Read        |
-| [/ме/контактс/*](https://docs.microsoft.com/graph/api/user-list-contacts?view=graph-rest-1.0&tabs=cs) | Contacts.Read      |
-| [/усерс/{ИД}/фото/$value](https://docs.microsoft.com/graph/api/user-list-people?view=graph-rest-1.0) | User.ReadBasic.All |
+| [/ме](/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
+| [/ме/фото/$value](/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |
+| [/ме/Пеопле/? $search =](/graph/api/user-list-people?view=graph-rest-1.0)     | People.Read        |
+| [/ме/контактс/\*](/graph/api/user-list-contacts?view=graph-rest-1.0&tabs=cs) | Contacts.Read      |
+| [/усерс/{ИД}/фото/$value](/graph/api/user-list-people?view=graph-rest-1.0) | User.ReadBasic.All |
 
 > **Примечание:** чтобы получить доступ `*/photo/$value` к ресурсам для личных учетных записей Майкрософт, используйте конечную точку бета-версии Microsoft Graph.
 

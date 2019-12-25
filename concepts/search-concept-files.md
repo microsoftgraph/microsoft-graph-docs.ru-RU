@@ -1,32 +1,32 @@
 ---
-title: Поиск файлов (включая externalFile)
-description: API запросов позволяет выполнять поиск по файлам (DriveItem или внешним файлам).
+title: Использование API службы поиска Microsoft в Microsoft Graph для поиска файлов
+description: Вы можете использовать API службы поиска Microsoft для поиска файлов, хранящихся в SharePoint или OneDrive.
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 95a8b99b9970ec239935ee2c35afeec581a1b35f
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 0b8db24a8b9ccd63ac3d3be800b209a64eb3aa9d
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703949"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866919"
 ---
-# <a name="search-files-including-externalfile"></a>Поиск файлов (включая externalFile)
+# <a name="use-the-microsoft-search-api-in-microsoft-graph-to-search-files"></a>Использование API службы поиска Microsoft в Microsoft Graph для поиска файлов
 
-API службы поиска Microsoft позволяет искать файлы, хранящиеся в SharePoint или OneDrive. Он использует модель релевантности, которая использует сигналы из Microsoft Graph о связи и действиях пользователей. Это позволяет вернуть и повысить контент, который пользователи волнует, в процессе поиска файлов, который соответствует вкладке **файлы** , в которой отображаются результаты поиска в SharePoint.
+Вы можете использовать API службы поиска Microsoft для поиска файлов, хранящихся в SharePoint или OneDrive. API поиска Microsoft использует модель релевантности, которая использует сигналы из Microsoft Graph о связях и действиях пользователей. Это позволяет вернуть и повысить уровень содержимого, которое пользователи волнует, в интерфейсе поиска файлов, который соответствует вкладке **файлы** , в которой отображаются результаты поиска в SharePoint. 
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
-Кроме того, API может подавать внешние файлы, предоставляемые через ресурс [екстерналфиле](/graph/api/resources/externalfile?view=graph-rest-beta) .
+API также может подавать внешние файлы, предоставляемые через ресурс [екстерналфиле](/graph/api/resources/externalfile?view=graph-rest-beta) .
 
 ## <a name="search-sharepoint-or-onedrive-files"></a>Поиск файлов SharePoint или OneDrive
 
 KQL можно использовать в терминах поиска запросов для SharePoint и OneDrive. Пример:
 
-- `"query" : "contoso filetype:docx OR filetype:doc"`области запрашивает документы Word
+- `"query": "contoso filetype:docx OR filetype:doc"`ограничивает область запроса документами Word.
 - `"query": "test path:\\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""`ограничивает область запроса определенной папкой на сайте.
 
-Чтобы быть допустимым, ограничение свойств должно указывать допустимое имя управляемого свойства, поддерживающего запросы, в условии.
+Для того чтобы оно было допустимым, ограничение свойств должно указывать допустимое имя управляемого свойства, запрашиваемое в условии.
 
 ### <a name="example"></a>Пример
 
@@ -56,9 +56,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response"></a>Отклик
-
-Ниже приведен пример отклика.
+#### <a name="response"></a>Ответ
 
 <!---TODO nmoreau team Include one example of externalItem response.-->
 ```json
@@ -106,12 +104,12 @@ Content-Type: application/json
 
 ## <a name="search-external-files-well-known-types"></a>Поиск внешних файлов (известных типов)
 
-[Соединитель файлов общего доступа](/MicrosoftSearch/file-share-connector) — это соединитель "из поля", доступный в Microsoft Search. Он позволяет индексировать файлы, доступные в общей папке. Вы можете использовать API запросов для запроса всех внешних файлов.
+По умолчанию в Microsoft Search есть доступ [к файловому ресурсному соединителю](/MicrosoftSearch/file-share-connector) . Его можно использовать для индексации файлов, доступных в общей папке. Вы можете использовать API запросов для запроса всех внешних файлов.
 
 <!-- markdownlint-disable MD024 -->
 ### <a name="example"></a>Пример
 
-Следующий пример возвращает все настроенные соединители Екстерналфиле для клиента и сортирует результаты по релевантности.
+В следующем примере возвращаются все настроенные внешние файлы для клиента, а результаты сортируются по релевантности.
 
 #### <a name="request"></a>Запрос
 
@@ -139,7 +137,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 ```json
 {
@@ -183,13 +181,13 @@ Content-Type: application/json
 
 ## <a name="search-all-files-including-externalfile-instances"></a>Поиск во всех файлах (в том числе экземплярах Екстерналфиле)
 
-Можно выполнять поиск во всех файлах клиента, включая [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta) и все внешние файлы, указывая в запросе поиска два типа сущности.
+Можно выполнять поиск по всем файлам в клиенте, включая файлы, хранящиеся в [элементов driveitem](/graph/api/resources/driveitem?view=graph-rest-beta) и внешние файлы, указывая два типа сущностей в запросе поиска.
 
-Ответ предоставляет сочетание экземпляров **driveItem** и екстерналитем в `_sources` поле каждого объекта [сеарчхит](/graph/api/resources/searchhit?view=graph-rest-beta) .
+Ответ содержит экземпляры **driveItem** и **екстерналитем** в `_sources` поле каждого объекта [сеарчхит](/graph/api/resources/searchhit?view=graph-rest-beta) .
 
 ### <a name="example"></a>Пример
 
-В следующем примере возвращаются все настроенные соединители **екстерналфиле** и объекты **driveItem** клиента, которые удовлетворяют условиям поиска. Результаты сортируются по релевантности.
+В следующем примере возвращаются все настроенные объекты **екстерналфиле** и **driveItem** в клиенте, которые удовлетворяют условиям поиска. Результаты сортируются по релевантности.
 
 ### <a name="request"></a>Запрос
 
@@ -220,10 +218,9 @@ Content-Type: application/json
 
 ## <a name="known-limitations"></a>Известные ограничения
 
-Невозможно выполнить запрос к определенному Коннектионид.
+Вы не можете ограничить запрос определенным ИДЕНТИФИКАТОРом подключения.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-Дополнительные сведения:
+- [Использование API Поиска (Майкрософт) для запроса данных](/graph/api/resources/search-api-overview?view=graph-rest-beta)
 
-- [Использование API поиска](/graph/api/resources/search-api-overview?view=graph-rest-beta)

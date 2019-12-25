@@ -3,12 +3,12 @@ title: Поставщик MSAL
 description: Поставщик MSAL использует MSAL. js для входа пользователей и получения маркеров для использования с Microsoft Graph.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: aa3eecb6bd9f2adae7ff689f30ab69539e1d27f1
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 95dfae9954ff098ae9e777c3c330c5f334b8b0aa
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955780"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40868494"
 ---
 # <a name="msal-provider"></a>Поставщик MSAL
 
@@ -68,6 +68,6 @@ interface MsalConfig {
 
 ## <a name="creating-an-appclient-id"></a>Создание идентификатора приложения или клиента
 
-Сведения о том, как зарегистрировать приложение и получить идентификатор клиента, можно найти в статье [Регистрация краткого руководства](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)по использованию приложения.
+Сведения о том, как зарегистрировать приложение и получить идентификатор клиента, можно найти в разделе [Регистрация краткого руководства по работе с приложением](/azure/active-directory/develop/quickstart-register-app).
 
 >**Примечание:** MSAL поддерживает только неявный поток для OAuth. Не забудьте включить неявный поток в приложении на портале Azure (по умолчанию он не включен). В разделе **Проверка подлинности**найдите раздел **неявный предоставление** и установите флажки для **маркеров доступа** и **маркеров ID**.

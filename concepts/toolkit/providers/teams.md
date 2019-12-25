@@ -3,12 +3,12 @@ title: Поставщик Microsoft Teams
 description: Используйте поставщика Teams в рамках вкладки Microsoft Teams для упрощения проверки подлинности и доступа Microsoft Graph ко всем компонентам.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 335673ba2faa04916c2f8548999077a68202bbf0
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 08fe1e2e33ddc31ee88ed32dc4d57fdefac0c8fc
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955759"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "40866870"
 ---
 # <a name="microsoft-teams-provider"></a>Поставщик Microsoft Teams
 
@@ -18,7 +18,7 @@ ms.locfileid: "39955759"
 
 ## <a name="get-started"></a>Начало работы
 
-Перед использованием поставщика Teams необходимо убедиться, что на странице есть ссылка на [пакет SDK Microsoft Teams](https://docs.microsoft.com/javascript/api/overview/msteams-client?view=msteams-client-js-latest#using-the-sdk) .
+Перед использованием поставщика Teams необходимо убедиться, что на странице есть ссылка на [пакет SDK Microsoft Teams](/javascript/api/overview/msteams-client?view=msteams-client-js-latest#using-the-sdk) .
 
 ### <a name="via-script-tag"></a>тег сценария Via
 В следующем примере используется поставщик в HTML (через CDN).
@@ -41,7 +41,7 @@ ms.locfileid: "39955759"
 | scopes  | Строки, разделенные запятыми, для областей, которые пользователь должен согласиться на вход в систему. Необязательный атрибут. |
 | зависит от | Строка выбора элемента другого компонента поставщика с более высоким приоритетом. Необязательный атрибут. |
 
-### <a name="via-npm"></a>с помощью NPM 
+### <a name="via-npm"></a>с помощью NPM
 В следующем примере используется поставщик в JS-модулях (через NPM).
 
 Обязательно установите набор средств и пакет SDK Microsoft Teams.
@@ -54,7 +54,7 @@ npm install @microsoft/mgt @microsoft/teams-js
 
 ```ts
 import '@microsoft/teams-js';
-import {Providers, TeamsProvider} from '@microsoft/mgt'; 
+import {Providers, TeamsProvider} from '@microsoft/mgt';
 Providers.globalProvider = new TeamsProvider(config);
 ```
 
@@ -73,7 +73,7 @@ export interface TeamsConfig {
 
 ```ts
 import * as MicrosoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
-import {Providers, TeamsProvider} from '@microsoft/mgt'; 
+import {Providers, TeamsProvider} from '@microsoft/mgt';
 
 TeamsProvider.microsoftTeamsLib = MicrosoftTeams;
 Providers.globalProvider = new TeamsProvider(config);
@@ -83,13 +83,13 @@ Providers.globalProvider = new TeamsProvider(config);
 
 ## <a name="configure-your-teams-app"></a>Настройка приложения Teams
 
-Если вы только начинаете работать с приложениями Teams, ознакомьтесь с разделом [Добавление вкладок в приложения Microsoft Teams](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview). Кроме того, с помощью [app Studio](https://docs.microsoft.com/microsoftteams/platform/get-started/get-started-app-studio) можно быстро разработать манифест приложения.
+Если вы только начинаете работать с приложениями Teams, ознакомьтесь с разделом [Добавление вкладок в приложения Microsoft Teams](/microsoftteams/platform/concepts/tabs/tabs-overview). Кроме того, с помощью [app Studio](/microsoftteams/platform/get-started/get-started-app-studio) можно быстро разработать манифест приложения.
 
 После установки приложения на вкладке и готовности к использованию компонентов необходимо убедиться, что у вашего приложения есть необходимые разрешения для доступа к Microsoft Graph. Чтобы настроить приложение с необходимыми разрешениями:
 
-1. [Получение имени домена](https://docs.microsoft.com/azure/active-directory/identity-protection/graph-get-started#retrieve-your-domain-name)
-2. [Создание регистрации нового приложения](https://docs.microsoft.com/azure/active-directory/identity-protection/graph-get-started#create-a-new-app-registration)
-3. [Предоставление разрешения на доступ к приложению](https://docs.microsoft.com/azure/active-directory/identity-protection/graph-get-started#grant-your-application-permission-to-use-the-api)
+1. [Получение имени домена](/azure/active-directory/identity-protection/graph-get-started#retrieve-your-domain-name)
+2. [Создание регистрации нового приложения](/azure/active-directory/identity-protection/graph-get-started#create-a-new-app-registration)
+3. [Предоставление разрешения на доступ к приложению](/azure/active-directory/identity-protection/graph-get-started#grant-your-application-permission-to-use-the-api)
 
 Важно добавить правое разрешение на **странице Добавление доступа к API**. Для добавления и утверждения разрешений необходимо быть администратором в зависимости от того, какой компонент вам необходим.
 
@@ -107,7 +107,7 @@ Providers.globalProvider = new TeamsProvider(config);
 <script src="https://unpkg.com/@microsoft/teams-js/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js">
 
-<script>        
+<script>
   mgt.TeamsProvider.handleAuth();
 </script>
 ```
@@ -116,7 +116,7 @@ Providers.globalProvider = new TeamsProvider(config);
 
 ```ts
 import * as MicrosoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
-import {Providers, TeamsProvider} from '@microsoft/mgt'; 
+import {Providers, TeamsProvider} from '@microsoft/mgt';
 
 TeamsProvider.microsoftTeamsLib = MicrosoftTeams;
 TeamsProvider.handleAuth();
