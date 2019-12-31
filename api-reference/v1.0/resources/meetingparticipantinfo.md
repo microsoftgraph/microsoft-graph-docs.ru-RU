@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса МитингпартиЦипантинфо
 description: Сведения о участниках собрания.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6f3b8bc4b373f28f8f35fe891f7498a0560c38b9
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 2e61b4032e3d8c0976659cb34de2b043fac2ef8e
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866265"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913074"
 ---
 # <a name="meetingparticipantinfo-resource-type"></a>Тип ресурса МитингпартиЦипантинфо
 

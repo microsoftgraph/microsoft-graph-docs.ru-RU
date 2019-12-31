@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса call
 description: Ресурс **call** создается при наличии входящего вызова приложения или при создании приложением нового исходящего вызова с помощью запроса `POST` в `app/calls`.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c2745f0a4c30dde99eac465cb2043de2d493cb02
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: f97360875af2241df3d78108d9c7447bfa6b6975
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871409"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913473"
 ---
 # <a name="call-resource-type"></a>Тип ресурса call
 

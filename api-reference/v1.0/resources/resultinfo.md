@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Ресултинфо
 description: Содержит сведения о результатах успешного выполнения и сбоя.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 39027ecf949860d9ffa757a95839ae7fd8184a27
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 230783192e936d3fb3c2799e6cb98d39492589a3
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866254"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913410"
 ---
 # <a name="resultinfo-resource-type"></a>Тип ресурса Ресултинфо
 

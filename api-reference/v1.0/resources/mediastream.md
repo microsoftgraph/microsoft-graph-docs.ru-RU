@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Медиастреам
 description: Тип Медиастреам.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 906eccc7004aaac26dc29948e51e42cfd5e86631
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: ed564f4789a88092e34b8f8b4b0db8db63b48f2f
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866266"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913655"
 ---
 # <a name="mediastream-resource-type"></a>Тип ресурса Медиастреам
 
@@ -23,7 +23,7 @@ ms.locfileid: "40866266"
 | direction   | String  | Направление. `inactive`Возможные значения: `sendOnly`,, `receiveOnly`,. `sendReceive`                  |
 | label       | String  | Метка потока мультимедиа.                                                                                       |
 | mediaType   | String  | Тип мультимедиа. Возможные `unknown`значения:, `audio` `video`,, `videoBasedScreenSharing`,. `data`        |
-| сервермутед | Логический | Если сервер отключен на носителе.                                                                          |
+| сервермутед | Boolean | Если сервер отключен на носителе.                                                                          |
 | Идентификатор    | String  | Идентификатор источника.                                                                                                |
 
 ## <a name="json-representation"></a>Представление JSON

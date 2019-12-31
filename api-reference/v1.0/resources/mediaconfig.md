@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Медиаконфиг
 description: Абстрактный базовый класс, который содержит конфигурацию мультимедиа, используемую для подключения к вызову.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5dd1fc048522f0b93c7d92cb9d43e341bcbe8a80
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: ad914bfcf3a0657a96b994241ad875aa3261e227
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871395"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913550"
 ---
 # <a name="mediaconfig-resource-type"></a>Тип ресурса Медиаконфиг
 

@@ -1,28 +1,28 @@
 ---
 title: Список участников
 description: Получение списка объектов участников в вызове.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 26ff72167cf783eb96ab4c7ec258172581134172
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 94f7ebd36cbbabd6ab9bc41e32124c72da8d16c8
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871435"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913599"
 ---
 # <a name="list-participants"></a>Список участников
 
 Получение списка объектов участников в вызове.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Разрешения
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Приложение     | Нет.                                        |
+| Для приложений     | Нет                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ GET /communications/calls/{id}/participants
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

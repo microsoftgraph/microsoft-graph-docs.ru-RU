@@ -1,16 +1,16 @@
 ---
 title: 'участник: выкл.'
 description: Отключение выключения определенного участника в вызове.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d1b146462034cf8b8b2e90cd031698ff39f356ca
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 2c65bf06524b883ca4632a6127e50a13e4355054
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866287"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913424"
 ---
 # <a name="participant-mute"></a>участник: выкл.
 
@@ -22,13 +22,13 @@ ms.locfileid: "40866287"
 
 > **Примечание:** Этот метод поддерживается только для вызовов групп.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Разрешения
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Приложение     | Нет.                                        |
+| Для приложений     | Нет                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ POST /communications/calls/{id}/participants/{id}/mute
 |:---------------|:--------|:----------|
 |Контекст|String|Уникальная строка контекста клиента. Максимальный лимит — 256 символов.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [мутепартиЦипантоператион](../resources/muteParticipantoperation.md) в тексте отклика.
 
 >**Примечание:** Когда этот API возвращает успешный ответ, все участники получат обновление списка.

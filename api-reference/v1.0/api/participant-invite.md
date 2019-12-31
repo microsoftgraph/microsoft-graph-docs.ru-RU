@@ -1,16 +1,16 @@
 ---
 title: 'участник: пригласить'
 description: Приглашение участников в активный вызов.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 72889e4e6071e8b9a6386ebe892e8d65c30bbf3f
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 421bc523c8d2a1cc9dd48477277ad609d0f9573f
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866300"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913431"
 ---
 # <a name="participant-invite"></a>участник: пригласить
 
@@ -27,7 +27,7 @@ ms.locfileid: "40866300"
 | :-------------- | :--------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                       |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
-| Приложение     | Calls. Инитиатеграупкаллс. ALL                               |
+| Для приложений     | Calls. Инитиатеграупкаллс. ALL                               |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ POST /communications/calls/{id}/participants/invite
 |participants|Коллекция [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Приглашенных участников.|
 |Контекст|String|Уникальная строка контекста клиента. Максимальный лимит — 256 символов.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Если сукксессфул, этот метод возвращает код `200 OK` отклика и заголовок Location с URI для [инвитепартиЦипантсоператион](../resources/inviteparticipantsoperation.md) , созданного для этого запроса. 
 
 Текст отклика содержит созданный [инвитепартиЦипантсоператион](../resources/inviteparticipantsoperation.md).

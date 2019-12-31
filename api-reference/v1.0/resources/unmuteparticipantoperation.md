@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса УнмутепартиЦипантоператион
 description: Описывает формат ответа для функции "без звука".
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 3091caf53c4840db5c12ef856908b172a767624f
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 1066861ab084f42c6652fab63a0199161bf9cd5e
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866244"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912960"
 ---
 # <a name="unmuteparticipantoperation-resource-type"></a>Тип ресурса УнмутепартиЦипантоператион
 

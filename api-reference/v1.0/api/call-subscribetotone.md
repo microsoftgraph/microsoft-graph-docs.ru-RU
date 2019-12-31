@@ -1,16 +1,16 @@
 ---
 title: 'Call: Субскрибетотоне'
 description: Подпишитесь на DTMF (многочастотный многочастотный сигнал). Это позволяет получать уведомления, когда пользователь нажимает клавиши в "Диалпад".
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 67f77d3413b53d2f26bb60be934a188239bd8234
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 6a79f3f5395261bf3ceb5ab9d9dd55666b394bce
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871418"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913697"
 ---
 # <a name="call-subscribetotone"></a>Call: Субскрибетотоне
 
@@ -27,7 +27,7 @@ ms.locfileid: "40871418"
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Приложение     | Calls.AccessMedia.All                       |
+| Для приложений     | Calls.AccessMedia.All                       |
 
 >**Примечание:** Все указанные данные тона могут быть не сохранены. Убедитесь, что вы соответствуете законам и нормативам, касающимся защиты данных и конфиденциальности коммуникаций. Дополнительные сведения можно узнать из [условий использования](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) и обратившись за юридической помощью.
 
@@ -42,7 +42,7 @@ POST /communications/calls/{id}/subscribeToTone
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр      | Тип    | Описание |

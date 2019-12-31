@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Рекордоператион
 description: Этот тип ресурса содержит сведения, связанные с записью звука.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: b4f0a62204a6ee1db7e75caf9044288f705a5529
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 03cdf594b04c75cd14b31dfbaef5894e8aacd19d
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866256"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913669"
 ---
 # <a name="recordoperation-resource-type"></a>Тип ресурса Рекордоператион
 

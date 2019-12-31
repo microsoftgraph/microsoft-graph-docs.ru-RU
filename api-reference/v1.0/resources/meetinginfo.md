@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Митингинфо
 description: Сведения о собрании, указанные для создания или присоединения к собранию.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: e777de1b9f6710156106ce8dab5704613b98e1e5
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 8ef003db89ea676b4415a90c27913add49aad6e1
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871393"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913179"
 ---
 # <a name="meetinginfo-resource-type"></a>Тип ресурса Митингинфо
 
