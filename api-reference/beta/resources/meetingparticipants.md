@@ -1,35 +1,35 @@
 ---
 title: Тип ресурса МитингпартиЦипантс
 description: Участники собрания.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 171d24629c8a219f788ad17cdf97874bbf299a62
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 66bb521ae9a2222b5ea60709ac3687da930161d6
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006629"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913557"
 ---
-# <a name="meetingparticipants-resource-type"></a><span data-ttu-id="64486-103">Тип ресурса МитингпартиЦипантс</span><span class="sxs-lookup"><span data-stu-id="64486-103">meetingParticipants resource type</span></span>
+# <a name="meetingparticipants-resource-type"></a><span data-ttu-id="9b5bd-103">Тип ресурса МитингпартиЦипантс</span><span class="sxs-lookup"><span data-stu-id="9b5bd-103">meetingParticipants resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="64486-104">Участники собрания.</span><span class="sxs-lookup"><span data-stu-id="64486-104">Participants in a meeting.</span></span>
+<span data-ttu-id="9b5bd-104">Участники собрания.</span><span class="sxs-lookup"><span data-stu-id="9b5bd-104">Participants in a meeting.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="64486-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="64486-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="9b5bd-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="9b5bd-105">Properties</span></span>
 
-| <span data-ttu-id="64486-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="64486-106">Property</span></span>       | <span data-ttu-id="64486-107">Тип</span><span class="sxs-lookup"><span data-stu-id="64486-107">Type</span></span>    | <span data-ttu-id="64486-108">Описание</span><span class="sxs-lookup"><span data-stu-id="64486-108">Description</span></span>|
+| <span data-ttu-id="9b5bd-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="9b5bd-106">Property</span></span>       | <span data-ttu-id="9b5bd-107">Тип</span><span class="sxs-lookup"><span data-stu-id="9b5bd-107">Type</span></span>    | <span data-ttu-id="9b5bd-108">Описание</span><span class="sxs-lookup"><span data-stu-id="9b5bd-108">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="64486-109">attendees</span><span class="sxs-lookup"><span data-stu-id="64486-109">attendees</span></span> | <span data-ttu-id="64486-110">Коллекция [митингпартиЦипантинфо](meetingparticipantinfo.md)</span><span class="sxs-lookup"><span data-stu-id="64486-110">[meetingParticipantInfo](meetingparticipantinfo.md) collection</span></span> |  |
-| <span data-ttu-id="64486-111">organizer</span><span class="sxs-lookup"><span data-stu-id="64486-111">organizer</span></span> | [<span data-ttu-id="64486-112">митингпартиЦипантинфо</span><span class="sxs-lookup"><span data-stu-id="64486-112">meetingParticipantInfo</span></span>](meetingparticipantinfo.md) |  |
-| <span data-ttu-id="64486-113">производители</span><span class="sxs-lookup"><span data-stu-id="64486-113">producers</span></span> | <span data-ttu-id="64486-114">Коллекция [митингпартиЦипантинфо](meetingparticipantinfo.md)</span><span class="sxs-lookup"><span data-stu-id="64486-114">[meetingParticipantInfo](meetingparticipantinfo.md) collection</span></span> | <span data-ttu-id="64486-115">Только для широковещательного собрания.</span><span class="sxs-lookup"><span data-stu-id="64486-115">For broadcast meeting only.</span></span> |
-| <span data-ttu-id="64486-116">участники</span><span class="sxs-lookup"><span data-stu-id="64486-116">contributors</span></span> | <span data-ttu-id="64486-117">Коллекция [митингпартиЦипантинфо](meetingparticipantinfo.md)</span><span class="sxs-lookup"><span data-stu-id="64486-117">[meetingParticipantInfo](meetingparticipantinfo.md) collection</span></span> | <span data-ttu-id="64486-118">Только для широковещательного собрания.</span><span class="sxs-lookup"><span data-stu-id="64486-118">For broadcast meeting only.</span></span> |
+| <span data-ttu-id="9b5bd-109">attendees</span><span class="sxs-lookup"><span data-stu-id="9b5bd-109">attendees</span></span> | <span data-ttu-id="9b5bd-110">Коллекция [митингпартиЦипантинфо](meetingparticipantinfo.md)</span><span class="sxs-lookup"><span data-stu-id="9b5bd-110">[meetingParticipantInfo](meetingparticipantinfo.md) collection</span></span> |  |
+| <span data-ttu-id="9b5bd-111">organizer</span><span class="sxs-lookup"><span data-stu-id="9b5bd-111">organizer</span></span> | [<span data-ttu-id="9b5bd-112">митингпартиЦипантинфо</span><span class="sxs-lookup"><span data-stu-id="9b5bd-112">meetingParticipantInfo</span></span>](meetingparticipantinfo.md) |  |
+| <span data-ttu-id="9b5bd-113">производители</span><span class="sxs-lookup"><span data-stu-id="9b5bd-113">producers</span></span> | <span data-ttu-id="9b5bd-114">Коллекция [митингпартиЦипантинфо](meetingparticipantinfo.md)</span><span class="sxs-lookup"><span data-stu-id="9b5bd-114">[meetingParticipantInfo](meetingparticipantinfo.md) collection</span></span> | <span data-ttu-id="9b5bd-115">Только для широковещательного собрания.</span><span class="sxs-lookup"><span data-stu-id="9b5bd-115">For broadcast meeting only.</span></span> |
+| <span data-ttu-id="9b5bd-116">участники</span><span class="sxs-lookup"><span data-stu-id="9b5bd-116">contributors</span></span> | <span data-ttu-id="9b5bd-117">Коллекция [митингпартиЦипантинфо](meetingparticipantinfo.md)</span><span class="sxs-lookup"><span data-stu-id="9b5bd-117">[meetingParticipantInfo](meetingparticipantinfo.md) collection</span></span> | <span data-ttu-id="9b5bd-118">Только для широковещательного собрания.</span><span class="sxs-lookup"><span data-stu-id="9b5bd-118">For broadcast meeting only.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="64486-119">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="64486-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="9b5bd-119">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="9b5bd-119">JSON representation</span></span>
 
-<span data-ttu-id="64486-120">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="64486-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="9b5bd-120">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="9b5bd-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
