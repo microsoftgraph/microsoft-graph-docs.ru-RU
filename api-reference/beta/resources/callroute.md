@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Каллрауте
 description: Тип Каллрауте.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 698cf2d6c2ae8b157aee4db45219eeb0b85c73c5
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: bdc4c54f9f5676496ae64e97b1ce14e3918e7cc9
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006742"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913319"
 ---
 # <a name="callroute-resource-type"></a>Тип ресурса Каллрауте
 

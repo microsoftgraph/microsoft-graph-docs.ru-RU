@@ -1,16 +1,16 @@
 ---
 title: 'Клаудкоммуникатионс: Жетпресенцесбюсерид'
 description: Получение сведений о присутствии для нескольких пользователей.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 93a782a0d46125a1f4a4a751c45d254e293c05cb
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 256fdbbe86eb667fa06ca411aad050bf5e8013dc
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868112"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912729"
 ---
 # <a name="cloudcommunications-getpresencesbyuserid"></a>Клаудкоммуникатионс: Жетпресенцесбюсерид
 
@@ -18,14 +18,14 @@ ms.locfileid: "40868112"
 
 Получение сведений о [присутствии](../resources/presence.md) для нескольких пользователей.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Разрешения
 Для вызова этих API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий)                  |
 | :-------------- | :----------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Presence.Read.All                         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                         |
-| Приложение                            | Не поддерживается.                                  |
+| Для приложений                            | Не поддерживается.                                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ POST /communications/getPresencesByUserId
 |:---------------|:--------|:----------|
 |ids|Коллекция String|Идентификаторы объектов пользователя.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [присутствия](../resources/presence.md) в тексте отклика.
 

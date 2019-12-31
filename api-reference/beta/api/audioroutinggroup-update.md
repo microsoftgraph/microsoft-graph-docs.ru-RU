@@ -1,16 +1,16 @@
 ---
 title: Обновление группы маршрутизации звука
 description: Изменение источников и приемников Аудиораутингграуп.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 993695ead1dc881a721ffc360cfb1e9abd75556d
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 77fa0c78f295cd8d0380a386ad19f88388417989
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006377"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40911876"
 ---
 # <a name="update-audio-routing-group"></a>Обновление группы маршрутизации звука
 
@@ -33,7 +33,7 @@ ms.locfileid: "38006377"
 PATCH /app/calls/{id}/audioRoutingGroups/{id}
 PATCH /communications/calls/{id}/audioRoutingGroups/{id}
 ```
-> **Примечание:** `/app` Путь является устаревшим. Перемотка вперед, используйте `/communications` путь.
+> **Примечание.** Путь `/app` является устаревшим. В дальнейшем используйте путь `/communications`.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
@@ -49,7 +49,7 @@ PATCH /communications/calls/{id}/audioRoutingGroups/{id}
 | раутингмоде | String | Возможные значения: `oneToOne`, `multicast`. |
 | sources | Коллекция String | Участник источника в Аудиораутингграуп. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [аудиораутингграуп](../resources/audioroutinggroup.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

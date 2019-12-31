@@ -1,16 +1,16 @@
 ---
 title: Получение сведений о присутствии
 description: Получение сведений о присутствии пользователя.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: fa059a7399762444d73a13305b5bec722830a1c0
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: cdb211e85f3e995801bb7583a8aa043cb2d6a133
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40867718"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913088"
 ---
 # <a name="get-presence"></a>Получение сведений о присутствии
 
@@ -18,14 +18,14 @@ ms.locfileid: "40867718"
 
 Получение сведений о [присутствии](../resources/presence.md) пользователя.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Разрешения
 Для вызова этих API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий)                  |
 | :-------------- | :----------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Presence.Read, Presence.Read.All                         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                         |
-| Приложение                            | Не поддерживается.                                  |
+| Для приложений                            | Не поддерживается.                                  |
 
 ## <a name="http-requests"></a>HTTP-запросы
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ GET /users/{id}/presence
 | Авторизация | Bearer {токен}. Обязательный. |
 
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

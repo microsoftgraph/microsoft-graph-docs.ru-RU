@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Коммснотификатион
 description: Базовый тип уведомления о связи, который публикуется серверами Communications Server для уведомления об изменениях.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 1752bbe46ee7795bd71df2089dadf6a975ccae26
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 05a800d4732ae54dd6c8b1ce76074b64625b9c16
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870927"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913361"
 ---
 # <a name="commsnotification-resource-type"></a>Тип ресурса Коммснотификатион
 

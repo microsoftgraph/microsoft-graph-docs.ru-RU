@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса ПартиЦипантинфо
 description: Содержит дополнительные свойства удостоверения участника
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: eea85cd861524ca947359918fd130c0dd221e146
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: b3d8671c33a0040fde8671a2d97b67dae0e94b28
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39637068"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913585"
 ---
 # <a name="participantinfo-resource-type"></a>Тип ресурса ПартиЦипантинфо
 

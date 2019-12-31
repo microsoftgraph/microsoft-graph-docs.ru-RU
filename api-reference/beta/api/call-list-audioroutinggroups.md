@@ -1,16 +1,16 @@
 ---
 title: Список групп маршрутизации аудио
 description: Получение списка объектов **аудиораутингграуп** .
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: edb9b6caba0cca8e4788cafa6ce6ec1fd6f345ae
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 04b46d8476768b2a39b86e9803d778dafee3e0f3
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006335"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912764"
 ---
 # <a name="list-audio-routing-groups"></a>Список групп маршрутизации аудио
 
@@ -33,7 +33,7 @@ ms.locfileid: "38006335"
 GET /app/calls/{id}/audioRoutingGroups
 GET /communications/calls/{id}/audioRoutingGroups
 ```
-> **Примечание:** `/app` Путь является устаревшим. Перемотка вперед, используйте `/communications` путь.
+> **Примечание.** Путь `/app` является устаревшим. В дальнейшем используйте путь `/communications`.
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.

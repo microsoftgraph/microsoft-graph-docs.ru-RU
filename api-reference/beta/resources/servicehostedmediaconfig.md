@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Сервицехостедмедиаконфиг
 description: Удаленно размещенный носитель.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 405f6b40260908d7492a3b02c8535588c8475ca8
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 6a6cc16dec5c1ff5318a4d1b6d46799a4ab071aa
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870091"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913648"
 ---
 # <a name="servicehostedmediaconfig-resource-type"></a>Тип ресурса Сервицехостедмедиаконфиг
 
@@ -23,7 +23,7 @@ ms.locfileid: "40870091"
 | Свойство                    | Тип                                                        | Описание                                       |
 | :-------------------------- | :---------------------------------------------------------- | :-------------------------------------------------|
 | префетчмедиа               | Коллекция [медиаинфо](mediainfo.md)                        | Список носителей для предварительной загрузки.                   |
-| ремовефромдефаултаудиограуп | Логический                                                     | Удаление самостоятельного участника из группы "звук" по умолчанию. |
+| ремовефромдефаултаудиограуп | Boolean                                                     | Удаление самостоятельного участника из группы "звук" по умолчанию. |
 
 ## <a name="json-representation"></a>Представление JSON
 

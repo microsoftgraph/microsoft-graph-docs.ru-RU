@@ -1,16 +1,16 @@
 ---
 title: 'участник: пригласить'
 description: Приглашение участников в активный вызов.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9c95bf23ca3e96f7ba8950e816117866456b64d2
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: d6bd74f8bf1a7b8eb410f84a6a05040ae65166f3
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38303032"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913116"
 ---
 # <a name="participant-invite"></a>участник: пригласить
 
@@ -50,7 +50,7 @@ POST /communications/calls/{id}/participants/invite
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|participants|Коллекция [инвитатионпартиЦипантинфо](../resources/invitationparticipantinfo.md)| Приглашенных участников.|
+|participants|Коллекция [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Приглашенных участников.|
 |Контекст|String|Уникальная строка контекста клиента. Максимальный лимит — 256 символов.|
 
 ## <a name="response"></a>Отклик

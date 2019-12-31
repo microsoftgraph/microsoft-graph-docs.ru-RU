@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Prompt
 description: Базовый тип действия приглашения.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: baaa98894c021fce21ed64fcecf7e5c24b335867
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: f43babf47f767ad24c6466d9a454ed026f027564
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006573"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913662"
 ---
 # <a name="prompt-resource-type"></a>Тип ресурса Prompt
 

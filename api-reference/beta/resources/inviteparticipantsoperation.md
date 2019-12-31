@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса ИнвитепартиЦипантсоператион
 description: Представляет состояние длительной операции с приглашением для участников, активируемым при вызове API участника-приглашения.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5802f5a8a63c971007cb6cda11f16823e6140298
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 1f0d53b9e0921b7d53df1499964ddfe84eaf7df7
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006685"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913452"
 ---
 # <a name="inviteparticipantsoperation-resource-type"></a>Тип ресурса ИнвитепартиЦипантсоператион
 
@@ -24,7 +24,7 @@ ms.locfileid: "38006685"
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | Контекст                  | String                      | Контекст клиента.                                                                                                                               |
 | id                             | Строка                      | Идентификатор операции сервера. Только для чтения.                                                                                              |
-| participants | Коллекция [инвитатионпартиЦипантинфо](invitationParticipantInfo.md) | Участники, которые необходимо пригласить. |
+| participants | Коллекция [invitationParticipantInfo](invitationParticipantInfo.md) | Участники, которые необходимо пригласить. |
 | resultInfo                     | [resultInfo](resultinfo.md) | Сведения о результате.  Только для чтения.                                                                                             |
 | status                         | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения.                                                  |
 

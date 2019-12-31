@@ -1,16 +1,16 @@
 ---
 title: 'Call: Плайпромпт'
 description: Проигрывать запрос в вызове.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 2c62afeac5870d288c546aa3761b60a270d85219
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 6b3d7c8ee072ac347ec25b2ac0edebdb80a2a92d
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868270"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912834"
 ---
 # <a name="call-playprompt"></a>Call: Плайпромпт
 
@@ -30,7 +30,7 @@ ms.locfileid: "40868270"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                               |
-| Приложение                            | Нет.                                        |
+| Для приложений                            | Нет.                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,16 +46,16 @@ POST /communications/calls/{id}/playPrompt
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |выдан|Коллекция [медиапромпт](../resources/mediaprompt.md)| Приглашения для воспроизведения. Максимальный поддерживаемый размер коллекции Медиапромпт составляет 20.|
-|CNAME|Логический| Значение цикла. Значение true указывает, что цикл должен быть бесконечным. Значение по умолчанию  false. |
+|CNAME|Boolean| Значение цикла. Значение true указывает, что цикл должен быть бесконечным. Значение по умолчанию  false. |
 |Контекст|String|Уникальная строка контекста клиента. Может содержать до 256 символов.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [плайпромптоператион](../resources/playpromptoperation.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

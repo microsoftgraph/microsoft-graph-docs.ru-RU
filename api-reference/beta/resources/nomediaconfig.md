@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Номедиаконфиг
 description: Конфигурация мультимедиа, указывающая на отсутствие носителя.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 97d2ac01b434e211eb8836f04343ef65b9f0ea1b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e916c0498a3a8fffd09dd4b86d7b7ec3ab4b9a08
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966666"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913676"
 ---
 # <a name="nomediaconfig-resource-type"></a>Тип ресурса Номедиаконфиг
 
@@ -22,7 +22,7 @@ ms.locfileid: "35966666"
 
 | Свойство       | Тип    | Описание|
 |:---------------|:--------|:----------|
-| Ремовефромдефаултаудиограуп | Boolean |  |
+| ремовефромдефаултаудиограуп | Boolean |  |
 
 ## <a name="json-representation"></a>Представление JSON
 

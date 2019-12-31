@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Аудиораутингграуп
 description: В группе маршрутизации звука хранится частный звуковой маршрут между участниками в составе многоадресной беседы. Источник — сам участник, а приемники являются подмножеством других участников многочастой беседы.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 827f67239be572bbc2b20b8900ea33b9b0294412
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: cb96e83f6c80a3b3c50b37612731272ca329e3cc
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006763"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913753"
 ---
 # <a name="audioroutinggroup-resource-type"></a>Тип ресурса Аудиораутингграуп
 
@@ -25,8 +25,8 @@ ms.locfileid: "38006763"
 | Метод                                                  | Возвращаемый тип                               | Описание                                  |
 |:--------------------------------------------------------|:------------------------------------------|:---------------------------------------------|
 | [Получение Аудиораутингграуп](../api/audioroutinggroup-get.md)| [audioRoutingGroup](audioroutinggroup.md) | Чтение свойств и связей объекта Аудиораутингграуп.|
-| [Update](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | Обновление списка получателей.                       |
-| [Delete](../api/audioroutinggroup-delete.md)            | Нет                                      | Удаление группы маршрутизации звука.              |
+| [обновление](../api/audioroutinggroup-update.md).            | [audioRoutingGroup](audioroutinggroup.md) | Обновление списка получателей.                       |
+| [удаление](../api/audioroutinggroup-delete.md);            | Нет                                      | Удаление группы маршрутизации звука.              |
 
 ## <a name="properties"></a>Свойства
 
@@ -43,7 +43,7 @@ ms.locfileid: "38006763"
 
 > **Примечание:** Если вы создаете множество групп маршрутизации звука (например, Bot для каждого участника), пересылается только звук главных 4 главных динамиков. Это означает, что даже если пользователь настроил группу маршрутизации аудио, если динамики не хватает громкости в основном микшере, то он/она не может быть слышна с помощью Bot, даже если для этого динамика и для этого динамика достаточно частной группы звука.
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

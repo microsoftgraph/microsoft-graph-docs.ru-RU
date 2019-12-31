@@ -1,16 +1,16 @@
 ---
 title: Получение Онлинемитинг
 description: Получение свойств и связей объекта собрания по **сети** .
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 42906632b4a8161966a04473fe7492049484d620
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 649c6d658206f684efde8d5bc82b26e7d0ef6216
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40869404"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913095"
 ---
 # <a name="get-onlinemeeting"></a>Получение Онлинемитинг
 
@@ -28,7 +28,7 @@ ms.locfileid: "40869404"
 |:---------------------------------------|:------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                                        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                        |
-| Приложение                            | OnlineMeetings.Read.All                               |
+| Для приложений                            | OnlineMeetings.Read.All                               |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -46,10 +46,10 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [onlineMeeting](../resources/onlinemeeting.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Апфостедмедиаконфиг
 description: Стек мультимедиа, размещенный в приложении.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6bafd755ef2c806b703bf9ec5ac872f826de1e1c
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: d1fb8ff772343d11f74834da48ef368b2e2aa93f
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006777"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913774"
 ---
 # <a name="apphostedmediaconfig-resource-type"></a>Тип ресурса Апфостедмедиаконфиг
 

@@ -1,16 +1,16 @@
 ---
 title: Создание группы маршрутизации звука
 description: Создание нового **аудиораутингграуп**.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7b34bc058c116a9be78f491f8dc2e826ea09f0c6
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 7a5c6f43183ffdb4f01df689bd3fe20cdf3688cd
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38005980"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912827"
 ---
 # <a name="create-audio-routing-group"></a>Создание группы маршрутизации звука
 
@@ -33,7 +33,7 @@ ms.locfileid: "38005980"
 POST /app/calls/{id}/audioRoutingGroups
 POST /communications/calls/{id}/audioRoutingGroups
 ```
-> **Примечание:** `/app` Путь является устаревшим. Перемотка вперед, используйте `/communications` путь.
+> **Примечание.** Путь `/app` является устаревшим. В дальнейшем используйте путь `/communications`.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
@@ -43,7 +43,7 @@ POST /communications/calls/{id}/audioRoutingGroups
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [аудиораутингграуп](../resources/audioroutinggroup.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [аудиораутингграуп](../resources/audioroutinggroup.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры

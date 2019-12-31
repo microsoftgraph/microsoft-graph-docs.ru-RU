@@ -1,16 +1,16 @@
 ---
 title: 'Call: Чанжескриншарингроле'
 description: Разрешить приложениям предоставлять доступ к содержимому экрана участникам группового вызова.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d670e2b1be4450b33e57ca0834aecd1f6427603d
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 333a9a2ebb6fa5b3c43ccee47f0256ef5ba6dee3
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006356"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912771"
 ---
 # <a name="call-changescreensharingrole"></a>Call: Чанжескриншарингроле
 
@@ -35,7 +35,7 @@ ms.locfileid: "38006356"
 POST /app/calls/{id}/changeScreenSharingRole
 POST /communications/calls/{id}/changeScreenSharingRole
 ```
-> **Примечание:** `/app` Путь является устаревшим. Перемотка вперед, используйте `/communications` путь.
+> **Примечание.** Путь `/app` является устаревшим. В дальнейшем используйте путь `/communications`.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
@@ -50,7 +50,7 @@ POST /communications/calls/{id}/changeScreenSharingRole
 |:---------------|:--------|:----------|
 |role|String|Возможные значения: "средство просмотра", "общий доступ"|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика, а все участники получат обновление списка.
 
 ## <a name="example"></a>Пример

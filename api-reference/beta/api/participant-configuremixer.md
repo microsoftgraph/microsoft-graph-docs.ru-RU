@@ -1,16 +1,16 @@
 ---
 title: 'участник: Конфигуремиксер'
 description: Настройка смешанного звука для разных участников многочастной беседы.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f1a7650ea3195cdb28af6d49a71983129e0e322a
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: d1aa61efeafe26dde904787bf723c8352594c424
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39636836"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913130"
 ---
 # <a name="participant-configuremixer"></a>участник: Конфигуремиксер
 
@@ -25,7 +25,7 @@ ms.locfileid: "39636836"
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Приложение     | Calls. Жоинграупкаллс. ALL, Calls. Инитиатеграупкаллс. ALL |
+| Для приложений     | Calls. Жоинграупкаллс. ALL, Calls. Инитиатеграупкаллс. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

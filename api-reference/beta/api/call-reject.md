@@ -1,16 +1,16 @@
 ---
 title: 'вызов: отклонено'
 description: Разрешить интерфейсу Bot отклонить входящий звонок.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ad223a862330f9d137761685b68e119ad10abb56
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: e76dfb6a3d04be14347616bf5f52f7dc77659be2
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868252"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912813"
 ---
 # <a name="call-reject"></a>вызов: отклонено
 
@@ -29,7 +29,7 @@ ms.locfileid: "40868252"
 | :-------------- | :--------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                       |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
-| Приложение     | Нет.                                                       |
+| Для приложений     | Нет                                                       |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

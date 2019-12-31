@@ -1,16 +1,16 @@
 ---
 title: Удаление звонка
 description: Удаление или разрыв активного вызова.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3daec6791d183ee2443d6af694b6dd6c39470155
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 227a4cbb3b0056e06fa5abc96fcf6604352fb1de
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006349"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912908"
 ---
 # <a name="delete-call"></a>Удаление звонка
 
@@ -32,7 +32,7 @@ ms.locfileid: "38006349"
 DELETE /app/calls/{id}
 DELETE /communications/calls/{id}
 ```
-> **Примечание:** `/app` Путь является устаревшим. Перемотка вперед, используйте `/communications` путь.
+> **Примечание.** Путь `/app` является устаревшим. В дальнейшем используйте путь `/communications`.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |

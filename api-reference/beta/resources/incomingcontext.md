@@ -1,22 +1,22 @@
 ---
 title: Тип ресурса Инкомингконтекст
-description: Контекст, связанный с входящим вызовом.
-author: VinodRavichandran
+description: Контекст, связанный с входящим звонком.
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0afe972be631a2048b2a1970b1fda41e8cb72920
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: 4ade91c621dabdb7867ff5a4586276265d73ca81
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39636899"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913529"
 ---
 # <a name="incomingcontext-resource-type"></a>Тип ресурса Инкомингконтекст
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Контекст, связанный с входящим вызовом.
+Контекст, связанный с входящим звонком.
 
 ## <a name="properties"></a>Свойства
 
