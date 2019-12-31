@@ -1,31 +1,31 @@
 ---
 title: Тип ресурса МитингпартиЦипантинфо
 description: Сведения о участниках собрания.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6f3b8bc4b373f28f8f35fe891f7498a0560c38b9
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 2e61b4032e3d8c0976659cb34de2b043fac2ef8e
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866265"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913074"
 ---
-# <a name="meetingparticipantinfo-resource-type"></a><span data-ttu-id="510df-103">Тип ресурса МитингпартиЦипантинфо</span><span class="sxs-lookup"><span data-stu-id="510df-103">meetingParticipantInfo resource type</span></span>
+# <a name="meetingparticipantinfo-resource-type"></a><span data-ttu-id="de39b-103">Тип ресурса МитингпартиЦипантинфо</span><span class="sxs-lookup"><span data-stu-id="de39b-103">meetingParticipantInfo resource type</span></span>
 
-<span data-ttu-id="510df-104">Сведения о участниках собрания.</span><span class="sxs-lookup"><span data-stu-id="510df-104">Information about a participant in a meeting.</span></span>
+<span data-ttu-id="de39b-104">Сведения о участниках собрания.</span><span class="sxs-lookup"><span data-stu-id="de39b-104">Information about a participant in a meeting.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="510df-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="510df-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="de39b-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="de39b-105">Properties</span></span>
 
-| <span data-ttu-id="510df-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="510df-106">Property</span></span>       | <span data-ttu-id="510df-107">Тип</span><span class="sxs-lookup"><span data-stu-id="510df-107">Type</span></span>                          | <span data-ttu-id="510df-108">Описание</span><span class="sxs-lookup"><span data-stu-id="510df-108">Description</span></span>                              |
+| <span data-ttu-id="de39b-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="de39b-106">Property</span></span>       | <span data-ttu-id="de39b-107">Тип</span><span class="sxs-lookup"><span data-stu-id="de39b-107">Type</span></span>                          | <span data-ttu-id="de39b-108">Описание</span><span class="sxs-lookup"><span data-stu-id="de39b-108">Description</span></span>                              |
 |:---------------|:------------------------------|:-----------------------------------------|
-| <span data-ttu-id="510df-109">хищения</span><span class="sxs-lookup"><span data-stu-id="510df-109">identity</span></span>       | [<span data-ttu-id="510df-110">identitySet</span><span class="sxs-lookup"><span data-stu-id="510df-110">identitySet</span></span>](identityset.md) | <span data-ttu-id="510df-111">Сведения об удостоверении участника.</span><span class="sxs-lookup"><span data-stu-id="510df-111">Identity information of the participant.</span></span> |
-| <span data-ttu-id="510df-112">Основное</span><span class="sxs-lookup"><span data-stu-id="510df-112">upn</span></span>            | <span data-ttu-id="510df-113">String</span><span class="sxs-lookup"><span data-stu-id="510df-113">String</span></span>                        | <span data-ttu-id="510df-114">Имя участника пользователя.</span><span class="sxs-lookup"><span data-stu-id="510df-114">User principal name of the participant.</span></span>  |
+| <span data-ttu-id="de39b-109">хищения</span><span class="sxs-lookup"><span data-stu-id="de39b-109">identity</span></span>       | [<span data-ttu-id="de39b-110">identitySet</span><span class="sxs-lookup"><span data-stu-id="de39b-110">identitySet</span></span>](identityset.md) | <span data-ttu-id="de39b-111">Сведения об удостоверении участника.</span><span class="sxs-lookup"><span data-stu-id="de39b-111">Identity information of the participant.</span></span> |
+| <span data-ttu-id="de39b-112">Основное</span><span class="sxs-lookup"><span data-stu-id="de39b-112">upn</span></span>            | <span data-ttu-id="de39b-113">String</span><span class="sxs-lookup"><span data-stu-id="de39b-113">String</span></span>                        | <span data-ttu-id="de39b-114">Имя участника пользователя.</span><span class="sxs-lookup"><span data-stu-id="de39b-114">User principal name of the participant.</span></span>  |
 
-## <a name="json-representation"></a><span data-ttu-id="510df-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="510df-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="de39b-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="de39b-115">JSON representation</span></span>
 
-<span data-ttu-id="510df-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="510df-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="de39b-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="de39b-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,31 +1,31 @@
 ---
 title: Тип ресурса МитингпартиЦипантс
 description: Участники собрания.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: ce312f3dab1151c18389e6b88a848bb2b700472c
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 3bcce64ab900dae7c7f13d7da0c3d34d164fd35d
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871390"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913522"
 ---
-# <a name="meetingparticipants-resource-type"></a><span data-ttu-id="c01b5-103">Тип ресурса МитингпартиЦипантс</span><span class="sxs-lookup"><span data-stu-id="c01b5-103">meetingParticipants resource type</span></span>
+# <a name="meetingparticipants-resource-type"></a><span data-ttu-id="f2f09-103">Тип ресурса МитингпартиЦипантс</span><span class="sxs-lookup"><span data-stu-id="f2f09-103">meetingParticipants resource type</span></span>
 
-<span data-ttu-id="c01b5-104">Участники собрания.</span><span class="sxs-lookup"><span data-stu-id="c01b5-104">Participants in a meeting.</span></span>
+<span data-ttu-id="f2f09-104">Участники собрания.</span><span class="sxs-lookup"><span data-stu-id="f2f09-104">Participants in a meeting.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="c01b5-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="c01b5-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="f2f09-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="f2f09-105">Properties</span></span>
 
-| <span data-ttu-id="c01b5-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="c01b5-106">Property</span></span>       | <span data-ttu-id="c01b5-107">Тип</span><span class="sxs-lookup"><span data-stu-id="c01b5-107">Type</span></span>    | <span data-ttu-id="c01b5-108">Описание</span><span class="sxs-lookup"><span data-stu-id="c01b5-108">Description</span></span>|
+| <span data-ttu-id="f2f09-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="f2f09-106">Property</span></span>       | <span data-ttu-id="f2f09-107">Тип</span><span class="sxs-lookup"><span data-stu-id="f2f09-107">Type</span></span>    | <span data-ttu-id="f2f09-108">Описание</span><span class="sxs-lookup"><span data-stu-id="f2f09-108">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="c01b5-109">attendees</span><span class="sxs-lookup"><span data-stu-id="c01b5-109">attendees</span></span> | <span data-ttu-id="c01b5-110">Коллекция [митингпартиЦипантинфо](meetingparticipantinfo.md)</span><span class="sxs-lookup"><span data-stu-id="c01b5-110">[meetingParticipantInfo](meetingparticipantinfo.md) collection</span></span> |  |
-| <span data-ttu-id="c01b5-111">organizer</span><span class="sxs-lookup"><span data-stu-id="c01b5-111">organizer</span></span> | [<span data-ttu-id="c01b5-112">митингпартиЦипантинфо</span><span class="sxs-lookup"><span data-stu-id="c01b5-112">meetingParticipantInfo</span></span>](meetingparticipantinfo.md) |  |
+| <span data-ttu-id="f2f09-109">attendees</span><span class="sxs-lookup"><span data-stu-id="f2f09-109">attendees</span></span> | <span data-ttu-id="f2f09-110">Коллекция [митингпартиЦипантинфо](meetingparticipantinfo.md)</span><span class="sxs-lookup"><span data-stu-id="f2f09-110">[meetingParticipantInfo](meetingparticipantinfo.md) collection</span></span> |  |
+| <span data-ttu-id="f2f09-111">organizer</span><span class="sxs-lookup"><span data-stu-id="f2f09-111">organizer</span></span> | [<span data-ttu-id="f2f09-112">митингпартиЦипантинфо</span><span class="sxs-lookup"><span data-stu-id="f2f09-112">meetingParticipantInfo</span></span>](meetingparticipantinfo.md) |  |
 
-## <a name="json-representation"></a><span data-ttu-id="c01b5-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="c01b5-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f2f09-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="f2f09-113">JSON representation</span></span>
 
-<span data-ttu-id="c01b5-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c01b5-114">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="f2f09-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f2f09-114">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,31 +1,31 @@
 ---
 title: Тип ресурса Сервицехостедмедиаконфиг
 description: Тип Сервицехостедмедиаконфиг.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 590eef4c572695188e609133f5bc852fd90c51f7
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 35d5754071aa388e300042b9977fd759a38a6b74
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866253"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40912953"
 ---
-# <a name="servicehostedmediaconfig-resource-type"></a><span data-ttu-id="f4452-103">Тип ресурса Сервицехостедмедиаконфиг</span><span class="sxs-lookup"><span data-stu-id="f4452-103">serviceHostedMediaConfig resource type</span></span>
+# <a name="servicehostedmediaconfig-resource-type"></a><span data-ttu-id="5f757-103">Тип ресурса Сервицехостедмедиаконфиг</span><span class="sxs-lookup"><span data-stu-id="5f757-103">serviceHostedMediaConfig resource type</span></span>
 
-<span data-ttu-id="f4452-104">Удаленно размещенный носитель.</span><span class="sxs-lookup"><span data-stu-id="f4452-104">The media that's hosted remotely.</span></span> <span data-ttu-id="f4452-105">Это наследуется от [медиаконфиг](mediaconfig.md).</span><span class="sxs-lookup"><span data-stu-id="f4452-105">This is inherited from [mediaConfig](mediaconfig.md).</span></span>
+<span data-ttu-id="5f757-104">Удаленно размещенный носитель.</span><span class="sxs-lookup"><span data-stu-id="5f757-104">The media that's hosted remotely.</span></span> <span data-ttu-id="5f757-105">Это наследуется от [медиаконфиг](mediaconfig.md).</span><span class="sxs-lookup"><span data-stu-id="5f757-105">This is inherited from [mediaConfig](mediaconfig.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="f4452-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="f4452-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="5f757-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="5f757-106">Properties</span></span>
 
-| <span data-ttu-id="f4452-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="f4452-107">Property</span></span>                    | <span data-ttu-id="f4452-108">Тип</span><span class="sxs-lookup"><span data-stu-id="f4452-108">Type</span></span>                                                        | <span data-ttu-id="f4452-109">Описание</span><span class="sxs-lookup"><span data-stu-id="f4452-109">Description</span></span>                                       |
+| <span data-ttu-id="5f757-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="5f757-107">Property</span></span>                    | <span data-ttu-id="5f757-108">Тип</span><span class="sxs-lookup"><span data-stu-id="5f757-108">Type</span></span>                                                        | <span data-ttu-id="5f757-109">Описание</span><span class="sxs-lookup"><span data-stu-id="5f757-109">Description</span></span>                                       |
 | :-------------------------- | :---------------------------------------------------------- | :-------------------------------------------------|
-| <span data-ttu-id="f4452-110">префетчмедиа</span><span class="sxs-lookup"><span data-stu-id="f4452-110">preFetchMedia</span></span>               | <span data-ttu-id="f4452-111">Коллекция [медиаинфо](mediainfo.md)</span><span class="sxs-lookup"><span data-stu-id="f4452-111">[mediaInfo](mediainfo.md) collection</span></span>                        | <span data-ttu-id="f4452-112">Список носителей для предварительной загрузки.</span><span class="sxs-lookup"><span data-stu-id="f4452-112">The list of media to pre-fetch.</span></span>                   |
+| <span data-ttu-id="5f757-110">префетчмедиа</span><span class="sxs-lookup"><span data-stu-id="5f757-110">preFetchMedia</span></span>               | <span data-ttu-id="5f757-111">Коллекция [медиаинфо](mediainfo.md)</span><span class="sxs-lookup"><span data-stu-id="5f757-111">[mediaInfo](mediainfo.md) collection</span></span>                        | <span data-ttu-id="5f757-112">Список носителей для предварительной загрузки.</span><span class="sxs-lookup"><span data-stu-id="5f757-112">The list of media to pre-fetch.</span></span>                   |
 
 
-## <a name="json-representation"></a><span data-ttu-id="f4452-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="f4452-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5f757-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="5f757-113">JSON representation</span></span>
 
-<span data-ttu-id="f4452-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f4452-114">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="5f757-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5f757-114">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

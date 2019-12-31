@@ -1,22 +1,22 @@
 ---
 title: Тип ресурса Медиаконфиг
 description: Абстрактный базовый класс, который содержит конфигурацию мультимедиа, используемую для подключения к вызову.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5dd1fc048522f0b93c7d92cb9d43e341bcbe8a80
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: ad914bfcf3a0657a96b994241ad875aa3261e227
+ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871395"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "40913550"
 ---
-# <a name="mediaconfig-resource-type"></a><span data-ttu-id="e242d-103">Тип ресурса Медиаконфиг</span><span class="sxs-lookup"><span data-stu-id="e242d-103">mediaConfig resource type</span></span>
+# <a name="mediaconfig-resource-type"></a><span data-ttu-id="40d34-103">Тип ресурса Медиаконфиг</span><span class="sxs-lookup"><span data-stu-id="40d34-103">mediaConfig resource type</span></span>
 
-<span data-ttu-id="e242d-104">Абстрактный базовый класс, который содержит конфигурацию мультимедиа, используемую для подключения к вызову.</span><span class="sxs-lookup"><span data-stu-id="e242d-104">An abstract base class that contains the media configuration used to connect to a call.</span></span>
+<span data-ttu-id="40d34-104">Абстрактный базовый класс, который содержит конфигурацию мультимедиа, используемую для подключения к вызову.</span><span class="sxs-lookup"><span data-stu-id="40d34-104">An abstract base class that contains the media configuration used to connect to a call.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="e242d-105">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="e242d-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="40d34-105">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="40d34-105">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
