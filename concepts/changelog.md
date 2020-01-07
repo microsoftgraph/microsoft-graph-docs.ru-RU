@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 253863ce5e513d4cda090e79a87d082e0f7907b7
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 9fccee5ed68b8df21a58506d7a3745a439256673
+ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868053"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40951974"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -126,7 +126,9 @@ ms.locfileid: "40868053"
  
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | Бета | Добавлены [уведомления ](/graph/api/subscription-post-subscriptions?view=graph-rest-beta) о новых и измененных сообщениях канала, а также новых и измененных сообщениях чата.
+| Дополнение | Бета | Добавлены [уведомления ](/graph/api/subscription-post- subscriptions?view=graph-rest-beta) о новых и измененных сообщениях канала, а также новых и измененных сообщениях чата. |
+| Дополнение | бета | Добавлен ресурс [shiftpreferences](/graph/api/resources/shiftpreferences?view=graph-rest-beta) и соответствующие методы.|
+| Дополнение | Бета | Добавлено новое отношение `shiftPreferences` для объекта [userSettings](/graph/api/resources/usersettings?view=graph-rest-beta). |
 | Изменить | Бета | Обновлены разрешения приложений, необходимые для выполнения операций чтения и записи ресурсов shifts, в том числе [schedule](/graph/api/resources/schedule?view=graph-rest-beta), [schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta), [shift](/graph/api/resources/shift?view=graph-rest-beta), [timeOff](/graph/api/resources/timeoff?view=graph-rest-beta), [timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta), [timeOffRequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta), [swapShiftChangeRequest](/graph/api/resources/swapshiftchangerequest?view=graph-rest-beta) и [openShiftChangeRequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-beta). **Примечание.** Разрешения приложений в настоящее время доступны в закрытой предварительной версии и не являются общедоступными.|
 
 
@@ -1666,8 +1668,7 @@ ms.locfileid: "40868053"
 
 ### <a name="mail-outlook"></a>Почта (Outlook)
 
-| **Тип изменения** | 
-  **Version**   | **Описание**                          |
+| **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | 1.0 и бета | Свойство **InternetMessageHeaders** объекта [message](/graph/api/resources/message?view=graph-rest-1.0) теперь доступно для записи при создании сообщения. |
 
@@ -2437,7 +2438,7 @@ ms.locfileid: "40868053"
 |:---|:---|:---|
 |Дополнение|бета|Добавлены новые сложные типы:<br/>[plannerPlanContext](/graph/api/resources/plannerplancontext?view=graph-rest-beta);<br/>[plannerPlanContextDetails](/graph/api/resources/plannerplancontextdetails?view=graph-rest-beta);<br/>[plannerPlanContextCollection](/graph/api/resources/plannerplancontextcollection?view=graph-rest-beta);<br/>[plannerPlanContextDetailsCollection](/graph/api/resources/plannerplancontextdetailscollection?view=graph-rest-beta);<br/>[plannerFavoritePlanReference](/graph/api/resources/plannerfavoriteplanreference?view=graph-rest-beta);<br/>[plannerRecentPlanReference](/graph/api/resources/plannerrecentplanreference?view=graph-rest-beta);<br/>[plannerFavoritePlanReferenceCollection](/graph/api/resources/plannerfavoriteplanreferencecollection?view=graph-rest-beta);<br/>[plannerRecentPlanReferenceCollection](/graph/api/resources/plannerrecentplanreferencecollection?view=graph-rest-beta).|
 |Дополнение|Бета-версия|Добавлены свойства `favoritePlanReferences` и `recentPlanReferences` для объекта [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta). |
-|Дополнение|Бета-версия|Добавлены свойства навигации `favoritePlans` и `recentPlans` для объекта [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta). |
+|Дополнение|Бета|Добавлены свойства навигации `favoritePlans` и `recentPlans` для объекта [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta). |
 |Дополнение|Бета-версия|Добавлено свойство `contexts` для объекта [plannerPlan](/graph/api/resources/plannerplan?view=graph-rest-beta). |
 |Дополнение|Бета|Добавлено свойство `contextDetails` для объекта [plannerPlanDetails](/graph/api/resources/plannerplandetails?view=graph-rest-beta). |
 |Дополнение|Бета|Добавлен [разностный запрос](/graph/api/planneruser-list-delta?view=graph-rest-beta) планировщика. |
@@ -2529,7 +2530,7 @@ ms.locfileid: "40868053"
 |Изменение|Бета-версия|Добавлены свойства **securityRequireVerifyApps**, **securityRequireSafetyNetAttestationBasicIntegrity**, **securityRequireSafetyNetAttestationCertifiedDevice**, **securityRequireGooglePlayServices**, **securityRequireUpToDateSecurityProviders** и **securityRequireCompanyPortalAppIntegrity** для объекта [androidForWorkCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidforworkcompliancepolicy?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлены свойства **displayName**, **lastModifiedDateTime**, **enrolledDeviceCount**, **qrCodeContent** и **qrCodeImage** для объекта [androidForWorkEnrollmentProfile](/graph/api/resources/intune-androidforwork-androidforworkenrollmentprofile?view=graph-rest-beta).|
 |Изменение|Бета-версия|Удалено свойство **isTokenActive** для объекта [androidForWorkEnrollmentProfile](/graph/api/resources/intune-androidforwork-androidforworkenrollmentprofile?view=graph-rest-beta).|
-|Изменение|Бета-версия|Добавлены свойства **innerAuthenticationProtocolForEapTtls**, **innerAuthenticationProtocolForPeap** и **outerIdentityPrivacyTemporaryValue** для объекта [androidForWorkEnterpriseWiFiConfiguration](/graph/api/resources/intune-deviceconfig-androidforworkenterprisewificonfiguration?view=graph-rest-beta).|
+|Изменить|Бета-версия|Добавлены свойства **innerAuthenticationProtocolForEapTtls**, **innerAuthenticationProtocolForPeap** и **outerIdentityPrivacyTemporaryValue** для объекта [androidForWorkEnterpriseWiFiConfiguration](/graph/api/resources/intune-deviceconfig-androidforworkenterprisewificonfiguration?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлены свойства **workProfileBlockCrossProfileCopyPaste** и **securityRequireVerifyApps** для объекта [androidForWorkGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлено свойство **securityRequireVerifyApps** для объекта [androidGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidgeneraldeviceconfiguration?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлены свойства **packageId** и **identityVersion** для объекта [androidLobApp](/graph/api/resources/intune-apps-androidlobapp?view=graph-rest-beta).|
@@ -3973,8 +3974,7 @@ ms.locfileid: "40868053"
 
 ### <a name="mail-outlook"></a>Почта (Outlook)
 
-| **Тип изменения** | 
-  **Version** | **Описание**                          |
+| **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | Добавлены типы _inferenceClassification_ и _extensions_ к объекту **message**. |
 
