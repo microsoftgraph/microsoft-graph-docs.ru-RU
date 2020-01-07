@@ -1,22 +1,22 @@
 ---
-title: Удаление Опеншифт
-description: Удаление объекта Опеншифт.
+title: 'Оффершифтрекуест: отклонить'
+description: Отклонить запрос на смену предложения.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fcd91c57079641097abfbf9674ca204c3909714e
+ms.openlocfilehash: 960532d3d278bc01ae89bc74a8624030c96c6d96
 ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
-ms.locfileid: "40951925"
+ms.locfileid: "40952176"
 ---
-# <a name="delete-openshift"></a>Удаление Опеншифт
+# <a name="offershiftrequest-decline"></a>Оффершифтрекуест: отклонить
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [опеншифт](../resources/openshift.md) .
+Отклонить объект [оффершифтрекуест](../resources/offershiftrequest.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,14 +26,16 @@ ms.locfileid: "40951925"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Приложение                            | Schedule. ReadWrite. ALL * |
+
+>\***Важно!** Разрешения на доступ к приложениям в настоящее время доступны только для частного просмотра и недоступны для использования в общедоступном режиме.
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /teams/{id}/schedule/openShifts/{openShiftId}
+POST /teams/schedule/offerShiftRequests/decline
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -41,63 +43,57 @@ DELETE /teams/{id}/schedule/openShifts/{openShiftId}
 | Имя          | Описание   |
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
+| Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
-Не указывайте текст запроса для этого метода.
+В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
+
+| Параметр    | Тип        | Описание |
+|:-------------|:------------|:------------|
+|message|String|Настраиваемое сообщение, отправленное при отклонении.|
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
+При успешном выполнении этот метод возвращает код отклика `200 OK`. Метод не возвращает данные в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса.
-
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+Ниже показан пример запроса.
 <!-- {
   "blockType": "request",
-  "name": "delete_openshift"
+  "name": "offershiftrequest_decline"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts/{openShiftId}
+POST https://graph.microsoft.com/beta/teams/schedule/offerShiftRequests/decline
+Content-type: application/json
+
+{
+  "message": "Sorry, you can't offer this shift."
+}
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-openshift-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-openshift-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-openshift-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
-
+Ниже приводится пример отклика.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.None"
 } -->
 
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete openShift",
+  "description": "offerShiftRequest: decline",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

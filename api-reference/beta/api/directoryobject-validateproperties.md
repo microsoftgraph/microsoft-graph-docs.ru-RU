@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5b701021143cbe8fe8193fbdaa21ad8b815de1b5
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 3bb9ad8108d4adc9a2dcd2f11866ea90a75acfb4
+ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36417342"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40951642"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject: Валидатепропертиес
 
@@ -23,9 +23,14 @@ ms.locfileid: "36417342"
 
 Этот API возвращается при первом обнаружении ошибки. Если одно или несколько свойств не прошли несколько проверок, возвращается только свойство с первой ошибкой проверки. Тем не менее, вы можете проверить псевдоним почты и отображаемое имя и получить коллекцию ошибок проверки, если проверяется только политика именования префиксов и суффиксов.
 
-## <a name="prerequisites"></a>Необходимые условия
+## <a name="permissions"></a>Разрешения
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Для выполнения этого API требуются следующие **разрешения** : *Group. Read. ALL*
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +45,7 @@ POST /directoryObjects/validateProperties
 | Авторизация  | Bearer {code}    |
 | Content-Type   | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -89,7 +94,7 @@ Content-length: 164
 [!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-validateproperties-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-validateproperties-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -107,7 +112,7 @@ HTTP/1.1 204 No Content
 
 Это пример запроса с ошибками проверки.
 
-### <a name="request"></a>Запрос
+### <a name="request"></a>Запросить
 ```http
 POST https://graph.microsoft.com/beta/directoryObjects/validateProperties
 Content-type: application/json

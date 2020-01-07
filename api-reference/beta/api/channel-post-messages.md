@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a764a7190432b838bdd982b4275fe6dca897ba56
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 65ee5bcd763a065873fe795a1638c33b4610ded2
+ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868186"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40951677"
 ---
 # <a name="create-chatmessage-in-a-channel"></a>Создание объекта chatMessage в канале
 
@@ -48,9 +48,8 @@ POST /teams/{id}/channels/{id}/messages
 
 В тексте запроса добавьте представление объекта [Message](../resources/chatmessage.md) в формате JSON. Только свойство Body является обязательным, другие свойства являются необязательными.
 
-> Note: отправка сообщений с вложениями и изображениями не поддерживается.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [chatMessage](../resources/chatmessage.md) в тексте отклика.
 
@@ -177,7 +176,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 <!-- {
@@ -273,7 +272,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 <!-- {

@@ -1,22 +1,22 @@
 ---
-title: Получение Свапшифтсчанжерекуест
-description: Получение свойств и связей объекта Свапшифтсчанжерекуест.
+title: Создание Оффершифтрекуест
+description: Создайте экземпляр объекта Оффершифтрекуест.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5203f7902a5c25683e173c4647b7cb776655e05c
+ms.openlocfilehash: 3c7eeb1fbe68e41465b5a55150e72c694dad059d
 ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
-ms.locfileid: "40951754"
+ms.locfileid: "40952127"
 ---
-# <a name="get-swapshiftschangerequest"></a>Получение Свапшифтсчанжерекуест
+# <a name="create-offershiftrequest"></a>Создание Оффершифтрекуест
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [свапшифтсчанжерекуест](../resources/swapshiftschangerequest.md) .
+Создайте экземпляр объекта [оффершифтрекуест](../resources/offershiftrequest.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "40951754"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | Schedule. Read. All *, Schedule. ReadWrite. ALL* |
+| Приложение                            | Schedule. ReadWrite. ALL *  |
 
 >\***Важно!** Разрешения на доступ к приложениям в настоящее время доступны только для частного просмотра и недоступны для использования в общедоступном режиме.
 
@@ -35,7 +35,7 @@ ms.locfileid: "40951754"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{id}/schedule/swapShiftsChangeRequests
+POST /teams/{teamId}/offerShiftRequests
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -49,12 +49,11 @@ GET /teams/{id}/schedule/swapShiftsChangeRequests
 | Авторизация | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
+Укажите новый объект [оффершифтрекуест](../resources/offershiftrequest.md) в тексте запроса для этого метода.
 
-Не указывайте текст запроса для этого метода.
+## <a name="response"></a>Отклик
 
-## <a name="response"></a>Ответ
-
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [свапшифтсчанжерекуест](../resources/swapshiftschangerequest.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [оффершифтрекуест](../resources/offershiftrequest.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -63,11 +62,19 @@ GET /teams/{id}/schedule/swapShiftsChangeRequests
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
-  "name": "get_swapshiftschangerequest"
+  "name": "get_offershiftrequest"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/schedule/swapShiftsChangeRequests/{swapShiftsChangeRequestId}
+POST https://graph.microsoft.com/beta/teams/788b75d2-a911-48c0-a5e2-dc98480457e3/schedule/offershiftrequests
+Authorization: Bearer {token}
+Content-type: application/json
+
+{
+  "senderShiftId": "SHFT_f7e484ed-fdd6-421c-92d9-0bc9e62e2c29",
+  "senderMessage": "Having a family emergency, could you take this shift for me?",
+  "recipientUserId": "fe278b61-21ac-4872-8b41-1962bbb98e3c"
+}
 ```
 
 ### <a name="response"></a>Отклик
@@ -79,7 +86,7 @@ GET https://graph.microsoft.com/beta/teams/{id}/schedule/swapShiftsChangeRequest
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.swapShiftsChangeRequest"
+  "@odata.type": "microsoft.graph.offerShiftRequest"
 } -->
 
 ```http
@@ -87,20 +94,31 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": "0b87dd20-d5ed-4764-9c3e-cfc8516def09",
-    "senderShiftId": "5ad10161-6524-4c7c-9beb-4e8677ba2f6d",
-    "recipientShiftId": "e73408ca-3ea5-4bbf-96a8-2e06c95f7a2c",
-    "assignedTo": "manager",
-    "state": "approved",
-    "senderUserId": "3fe0bc21-1398-4fd9-9713-52511b434c1e",
-    "senderDateTime": "2019-05-01T10:00:00Z",
-    "senderMessage": "I can't make my shift, any chance we can swap?",
-    "recipientUserId": "567c8ea5-9e32-422a-a663-8270201699cd",
-    "recipientActionDateTime": "2019-05-01T11:00:00Z",
-    "recipientActionMessage": "Sure!",
-    "managerUserId": "fdcc8d43-7f83-438a-9ab1-098e8f2a95ff",
-    "managerActionDateTime": "2019-05-01T12:00:00Z",
-    "managerActionMessage": "Approved!"
+  "@odata.etag": "\"4000ee23-0000-0700-0000-5d1415f60000\"",
+  "id": "SREQ_0b87dd20-d5ed-4764-9c3e-cfc8516def09",
+  "createdDateTime": "2019-09-27T01:01:04.566Z",
+  "lastModifiedDateTime": "2019-09-28T01:03:48.874Z",
+  "assignedTo": "recipient",
+  "state": "pending",
+  "senderDateTime": "2019-09-27T01:01:04.566",
+  "senderMessage": "Having a family emergency, could you take this shift for me?",
+  "senderUserId": "a4704dd0-3f4c-4f2c-9bb5-8cc575703f30",
+  "managerActionDateTime": null,
+  "managerActionMessage": null,
+  "managerUserId": null,
+  "recipientActionDateTime": null,
+  "recipientActionMessage": null,
+  "senderShiftId": "SHFT_f7e484ed-fdd6-421c-92d9-0bc9e62e2c29",
+  "recipientUserId": "fe278b61-21ac-4872-8b41-1962bbb98e3c",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "conversation": null,
+    "user": {
+      "id": "fe278b61-21ac-4872-8b41-1962bbb98e3c",
+      "displayName": "Employee 1"
+    }
+  }
 }
 ```
 
@@ -108,7 +126,7 @@ Content-type: application/json
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get swapShiftsChangeRequest",
+  "description": "Get offerShiftRequest",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

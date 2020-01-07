@@ -1,48 +1,65 @@
 ---
 title: Тип ресурса Чанжетраккедентити
-description: ''
+description: Представляет сущность для отслеживания изменений, внесенных в любой поддерживаемый ресурс смен
 localization_priority: Normal
+author: akumar39
+ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 3815b22c7bd76a894df0e98415e0c30bb77decd1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a167f6409ba972b66f23a3608047b4e72c036846
+ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974059"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40951981"
 ---
 # <a name="changetrackedentity-resource-type"></a>Тип ресурса Чанжетраккедентити
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Представляет сущность для отслеживания изменений, внесенных в любое поддерживаемое [Расписание](schedule.md) и связанный ресурс.
+
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Описание|
-|:---|:---|:---|
-|createdDateTime| DateTimeOffset| |
-|lastModifiedDateTime| DateTimeOffset| |
-|lastModifiedBy| [identitySet](identityset.md) | |
+
+| Свойство     | Тип        | Описание |
+|:-------------|:------------|:------------|
+|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|id|String| Только для чтения.|
+|lastModifiedBy|[identitySet](identityset.md)|Идентификатор пользователя, который последним изменил объект.|
+|lastModifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 
 ## <a name="relationships"></a>Отношения
-Нет
-## <a name="json-representation"></a>Представление JSON
-Ниже представлено описание ресурса в формате JSON.
-<!--{
+
+Отсутствуют.
+
+## <a name="json-representation"></a>Представление в формате JSON
+
+Ниже указано представление ресурса в формате JSON.
+
+<!-- {
   "blockType": "resource",
   "optionalProperties": [
+
   ],
   "@odata.type": "microsoft.graph.changeTrackedEntity",
-  "baseType":"microsoft.graph.entity",
-  "abstract":true
+  "baseType": "microsoft.graph.entity",
+  "keyProperty": "id"
 }-->
 
-``` json
+```json
 {
-    "createdDateTime":"String (timestamp)",
-    "lastModifiedDateTime" :"String (timestamp)",
-    "lastModifiedBy":{"@odata.type":"microsoft.graph.identitySet"}
+  "createdDateTime": "String (timestamp)",
+  "id": "String (identifier)",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "lastModifiedDateTime": "String (timestamp)"
 }
 ```
 
-
-
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "changeTrackedEntity resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->

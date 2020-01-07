@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1e0030ac26cde8aa1ea3d1d0b4574243926be620
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: e4bf6715f5c762ffc1b04d29d655cc170d3313cc
+ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36408869"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40951636"
 ---
 # <a name="create-accessreview"></a>Создание Акцессревиев
 
@@ -23,13 +23,14 @@ ms.locfileid: "36408869"
 После выполнения этого запроса вызывающий абонент должен [создать програмконтрол](programcontrol-create.md), чтобы связать проверку доступа с программой.  
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | Акцессревиев. ReadWrite. Membership, Акцессревиев. ReadWrite. ALL |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Акцессревиев. ReadWrite. Membership |
+|Приложение                            | AccessReview.ReadWrite.Membership |
 
 Вызывающая сторона также должна иметь разрешение Програмконтрол. ReadWrite. ALL, чтобы после создания проверки доступа вызывающий абонент может создать [програмконтрол](../resources/programcontrol.md).
 Кроме того, пользователь, вошедшего в систему, должен быть членом роли каталога, который позволяет им создавать проверку доступа.  Более подробную информацию можно узнать в статье требования к ролям и разрешениям для [рецензирования Access](../resources/accessreviews-root.md).
@@ -40,11 +41,12 @@ ms.locfileid: "36408869"
 POST /accessReviews
 ```
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя         | Тип        | Описание |
-|:-------------|:------------|:------------|
-| Authorization | string | Носитель \{токен\}. Обязательный. |
+| Имя         | Описание |
+|:-------------|:------------|
+| Authorization | Носитель \{токен\}. Обязательный. |
+| Content-Type | application/json. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Основной текст запроса
 В тексте запроса добавьте представление объекта [акцессревиев](../resources/accessreview.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Акцессревиев.
@@ -74,11 +76,9 @@ POST /accessReviews
 
 Это пример создания одноразовой (не повторяющейся) проверки доступа, явно указав двух пользователей в качестве проверяющих.
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 В тексте запроса добавьте представление объекта [акцессревиев](../resources/accessreview.md) в формате JSON.
 
-
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessReview_from_accessReviews"
@@ -127,22 +127,8 @@ Content-type: application/json
     }
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreview-from-accessreviews-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreview-from-accessreviews-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-accessreview-from-accessreviews-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

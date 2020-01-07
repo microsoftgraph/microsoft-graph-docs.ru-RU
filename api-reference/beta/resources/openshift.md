@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: fa87acd2065a3a56f15016bb7708e73cebe63a31
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: f3ce94c12328e9c05f899c5d2176339bbed93432
+ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870161"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40951939"
 ---
 # <a name="openshift-resource-type"></a>Тип ресурса Опеншифт
 
@@ -22,9 +22,11 @@ ms.locfileid: "40870161"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
+| [Создание](../api/openshift-post.md) | [опеншифт](openshift.md) | Создайте экземпляр объекта **опеншифт** . |
+| [List](../api/openshift-list.md) | Коллекция [опеншифт](openshift.md) | Перечисление свойств и связей объектов **опеншифт** в команде.|
 | [получение](../api/openshift-get.md); | [опеншифт](openshift.md) | Чтение свойств и связей объекта **опеншифт** . |
 | [обновление](../api/openshift-update.md). | [опеншифт](openshift.md) | Обновление объекта **опеншифт** . |
-| [удаление](../api/openshift-delete.md); | Нет. | Удаление объекта **опеншифт** . |
+| [Удаление](../api/openshift-delete.md) | Нет | Удаление объекта **опеншифт** . |
 
 ## <a name="properties"></a>Свойства
 

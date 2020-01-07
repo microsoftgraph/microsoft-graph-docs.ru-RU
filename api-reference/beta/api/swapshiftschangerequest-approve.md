@@ -1,22 +1,22 @@
 ---
-title: Удаление Опеншифт
-description: Удаление объекта Опеншифт.
+title: 'Свапшифтсчанжерекуест: утверждение'
+description: Утверждение запроса на смену замены.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fcd91c57079641097abfbf9674ca204c3909714e
+ms.openlocfilehash: f952444e374d7db808dc708bf75dd9e6617d2e19
 ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/07/2020
-ms.locfileid: "40951925"
+ms.locfileid: "40952204"
 ---
-# <a name="delete-openshift"></a>Удаление Опеншифт
+# <a name="swapshiftschangerequest-approve"></a>Свапшифтсчанжерекуест: утверждение
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [опеншифт](../resources/openshift.md) .
+Утверждение объекта [свапшифтсчанжерекуест](../resources/swapshiftschangerequest.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -33,7 +33,7 @@ ms.locfileid: "40951925"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /teams/{id}/schedule/openShifts/{openShiftId}
+POST /teams/{id}/schedule/swapShiftsChangeRequests/approve
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -41,63 +41,59 @@ DELETE /teams/{id}/schedule/openShifts/{openShiftId}
 | Имя          | Описание   |
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
+| Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
-Не указывайте текст запроса для этого метода.
+В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
+
+| Параметр    | Тип        | Описание |
+|:-------------|:------------|:------------|
+|message|String|Настраиваемое сообщение утверждения.|
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
+При успешном выполнении этот метод возвращает код отклика `200 OK`. Метод не возвращает данные в теле отклика.
 
 ## <a name="examples"></a>Примеры
+
+В приведенном ниже примере показано, как вызывать этот API.
 
 ### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
-
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_openshift"
+  "name": "openshiftchangerequest_approve"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/teams/{id}/schedule/openShifts/{openShiftId}
+POST https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests/approve
+Content-type: application/json
+
+{
+  "message": "message-value"
+}
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-openshift-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-openshift-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-openshift-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
-
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.None"
 } -->
 
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Delete openShift",
+  "description": "openShiftChangeRequest: approve",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 47999be754ded7d63a9b590b734dc143192ae96f
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: 5d054f424e22948fefe5b10f323aa252176df0f2
+ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895822"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40951775"
 ---
 # <a name="get-openshiftchangerequest"></a>Получение Опеншифтчанжерекуест
 
@@ -33,7 +33,7 @@ ms.locfileid: "39895822"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{id}/schedule/openShiftsChangeRequests
+GET /teams/{id}/schedule/openShiftsChangeRequests/{openShiftsChangeRequestId}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -65,7 +65,7 @@ GET /teams/{id}/schedule/openShiftsChangeRequests
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests
+GET https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests/SREQ_0b87dd20-d5ed-4764-9c3e-cfc8516def09
 ```
 
 ### <a name="response"></a>Отклик
@@ -85,7 +85,27 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "openShiftId": "openShiftId-value"
+  "id": "SREQ_0b87dd20-d5ed-4764-9c3e-cfc8516def09",
+  "openShiftId": "577b75d2-a927-48c0-a5d1-dc984894e7b8",
+  "assignedTo": "manager",
+  "state": "pending",
+  "senderUserId": "3fe0bc21-1398-4fd9-9713-52511b434c1e",
+  "senderDateTime": "2019-05-01T10:00:00Z",
+  "senderMessage": "Can I take this shift?",
+  "managerUserId": null,
+  "managerActionDateTime": null,
+  "managerActionMessage": null,
+  "createdDateTime": "2019-03-14T04:32:51.451Z",
+  "lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
+  "lastModifiedBy": {
+    "application": null,
+    "device": null,
+    "conversation": null,
+    "user": {
+      "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
+      "displayName": "John Doe"
+    }
+  }
 }
 ```
 

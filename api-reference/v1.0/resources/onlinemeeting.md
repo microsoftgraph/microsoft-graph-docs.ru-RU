@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Онлинемитинг
 description: Содержит сведения о собрании, включая URL-адрес присоединения, список участников и описание.
-author: VinodRavichandran
+author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 105c9f3ffa594dd457b40124070aef0dbb96689a
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 7b82170b606334c6db8fa07c3f9b2f95f16c0082
+ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871389"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40951967"
 ---
 # <a name="onlinemeeting-resource-type"></a>Тип ресурса Онлинемитинг
 
@@ -20,9 +20,9 @@ ms.locfileid: "40871389"
 
 | Метод         | Возвращаемый тип | Описание |
 |:---------------|:--------|:----------|
-| [Создание Онлинемитинг](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Создайте собрание по сети. |
+| [Создание объекта onlineMeeting](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Создайте собрание по сети. |
 | [Получение Онлинемитинг](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Чтение свойств и связей объекта **онлинемитинг** . |
-| [Удаление Онлинемитинг](../api/onlinemeeting-delete.md) | Нет. | Удаление собрания по сети |
+| [Удаление Онлинемитинг](../api/onlinemeeting-delete.md) | Нет | Удаление собрания по сети |
 
 ## <a name="properties"></a>Свойства
 
@@ -37,7 +37,7 @@ ms.locfileid: "40871389"
 | жоинвебурл                | String                                                 | URL-адрес присоединения к собранию по сети. Только для чтения.|
 | participants              | [митингпартиЦипантс](meetingparticipants.md)          | Участники, связанные с собранием по сети.  Сюда входят Организатор и участники. |
 | subject                   | String                                                 | Тема собрания по сети. |
-| видеотелеконференцеид     | String                                                 | Идентификатор телеконференций видеио. Только для чтения. |
+| видеотелеконференцеид     | String                                                 | Идентификатор видеоконференций для видеоконференций. Только для чтения. |
 
 
 ## <a name="json-representation"></a>Представление JSON

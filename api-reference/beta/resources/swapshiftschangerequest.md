@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 80149a37dfb4d8d900066d11c315d125ff7fd670
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: a172737f40572b29358ecdc6fba804db2a8b80e5
+ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895845"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "40951960"
 ---
 # <a name="swapshiftschangerequest-resource-type"></a>Тип ресурса Свапшифтсчанжерекуест
 
@@ -22,9 +22,10 @@ ms.locfileid: "39895845"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
+| [List](../api/swapshiftschangerequest-list.md) | Коллекция [свапшифтсчанжерекуест](swapshiftschangerequest.md) | Перечисление свойств и связей объектов **свапшифтсчанжерекуест** в команде. |
+| [создание](../api/swapshiftschangerequest-post.md); | [свапшифтсчанжерекуест](swapshiftschangerequest.md) | Создайте экземпляр объекта свапшифтсчанжерекуест. |
 | [получение](../api/swapshiftschangerequest-get.md); | [свапшифтсчанжерекуест](swapshiftschangerequest.md) | Чтение свойств и связей объекта **свапшифтсчанжерекуест** . |
-| [обновление](../api/swapshiftschangerequest-update.md). | [свапшифтсчанжерекуест](swapshiftschangerequest.md) | Обновление объекта **свапшифтсчанжерекуест** . |
-| [удаление](../api/swapshiftschangerequest-delete.md); | Нет | Удаление объекта **свапшифтсчанжерекуест** . |
+|[Утвердить](../api/swapshiftschangerequest-approve.md)|Нет|Утверждение свапшифтсчанжерекуест. |
 
 ## <a name="properties"></a>Свойства
 
@@ -32,7 +33,7 @@ ms.locfileid: "39895845"
 |:-------------|:------------|:------------|
 |реЦипиентшифтид|String|Идентификатор получателя запроса на замену. Это пользователь, с которым запрос перенаправляется.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 
