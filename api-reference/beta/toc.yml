@@ -207,7 +207,7 @@
                   href: api/user-list-events.md
                 - name: Представление напоминаний
                   href: api/user-reminderview.md
-            - name: Контакты
+            - name: Contacts
               href: resources/contact.md
               items:
                 - name: Создание контакта
@@ -835,10 +835,10 @@
                   href: api/place-get.md
                 - name: Обновление места
                   href: api/place-update.md
-        - name: Взаимодействие с облаком
+        - name: Коммуникации из облака
           displayName: Cloud communications
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/communications-api-overview.md
             - name: Звонок
               href: resources/call.md
@@ -10552,9 +10552,26 @@
                       href: api/schedulinggroup-put.md
                     - name: Удаление
                       href: api/schedulinggroup-delete.md
+                - name: Смена
+                  href: resources/offershiftrequest.md
+                  items:
+                    - name: Создание
+                      href: api/offershiftrequest-post.md
+                    - name: Получение
+                      href: api/offershiftrequest-get.md
+                    - name: Список
+                      href: api/offershiftrequest-list.md
+                    - name: Утвердить
+                      href: api/offershiftrequest-approve.md
+                    - name: Отклоня
+                      href: api/offershiftrequest-decline.md
                 - name: Открыть смену
                   href: resources/openshift.md
                   items:
+                    - name: Список
+                      href: api/openshift-list.md
+                    - name: Создание
+                      href: api/openshift-post.md
                     - name: Получение
                       href: api/openshift-get.md
                     - name: Обновление
@@ -10564,25 +10581,32 @@
                 - name: Открыть запрос на изменение сочетания клавиш
                   href: resources/openshiftchangerequest.md
                   items:
+                    - name: Список
+                      href: api/openshiftchangerequest-list.md
+                    - name: Создание
+                      href: api/openshiftchangerequest-post.md
                     - name: Получение
                       href: api/openshiftchangerequest-get.md
-                    - name: Обновление
-                      href: api/openshiftchangerequest-update.md
-                    - name: Delete
-                      href: api/openshiftchangerequest-delete.md
                     - name: Утвердить
                       href: api/openshiftchangerequest-approve.md
                     - name: Отклоня
                       href: api/openshiftchangerequest-decline.md
+                - name: Настройки сдвига
+                  href: resources/shiftpreferences.md
+                  items:
+                    - name: Получение
+                      href: api/shiftpreferences-get.md
+                    - name: Обновление
+                      href: api/shiftpreferences-put.md
                 - name: Переключить запрос на изменение смены
                   href: resources/swapshiftschangerequest.md
                   items:
+                    - name: Список
+                      href: api/swapshiftschangerequest-list.md
+                    - name: Создание
+                      href: api/swapshiftschangerequest-post.md
                     - name: Получение
                       href: api/swapshiftschangerequest-get.md
-                    - name: Обновление
-                      href: api/swapshiftschangerequest-update.md
-                    - name: Delete
-                      href: api/swapshiftschangerequest-delete.md
                 - name: Отгул
                   href: resources/timeoff.md
                   items:
@@ -10757,7 +10781,7 @@
         - name: Книги и диаграммы
           displayName: Excel
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/excel.md
             - name: Книга
               href: resources/workbook.md
