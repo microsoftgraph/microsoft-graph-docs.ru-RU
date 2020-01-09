@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: angelgolfer-ms
-ms.openlocfilehash: 0ab32470a7ecf5e00d10ccada984096d16537f1b
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: 0c0f257a9bdcf6c149b4f6374e2011cebb437603
+ms.sourcegitcommit: 66c8fcafee151278f8089cd26d0c5766d33d04a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37632682"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "40994966"
 ---
 # <a name="attachment-resource-type"></a>Тип ресурса attachment
 
@@ -19,6 +19,8 @@ ms.locfileid: "37632682"
 Вы можете добавить связанное содержимое для [события](../resources/event.md)пользователя, [сообщения](../resources/message.md), [задачи Outlook](../resources/outlooktask.md)или [записи](../resources/post.md) группы в виде вложения. 
 
 События в календарях группы не поддерживают вложения.
+
+Задачи Outlook не поддерживают справочные вложения.
 
 **attachment** — базовый ресурс для следующих производных типов вложений:
 
@@ -40,8 +42,8 @@ ms.locfileid: "37632682"
 |[Добавление вложения в пользовательское событие](../api/event-post-attachments.md) | [attachment](attachment.md) |Добавление файла, элемента или вложения-ссылки в качестве события в пользовательском календаре.|
 |[Добавление вложения в сообщение](../api/message-post-attachments.md) | [attachment](attachment.md) |Добавление в сообщение файла, элемента или ссылки в качестве вложения. Эта операция ограничит размер вложения, которое можно добавить в течение 4 МБ.|
 |[Создание сеанса для присоединения большого файла](../api/attachment-createuploadsession.md)| [uploadSession](uploadsession.md) | Создайте сеанс отправки, который позволяет приложению итеративно отправлять диапазоны файлов, чтобы прикрепить файл к указанному **сообщению**. Размер файла должен быть в пределах 3 МБ и 150MB.|
-|[Добавление вложения к задаче Outlook](../api/outlooktask-post-attachments.md) | [attachment](attachment.md) |Добавление файла, элемента или ссылки на вложение к задаче Outlook.|
-|[Добавление вложения в запись](../api/post-post-attachments.md) | [attachment](attachment.md) |Добавление в запись файла, элемента или ссылки в качестве вложения.|
+|[Добавление вложения к задаче Outlook](../api/outlooktask-post-attachments.md) | [attachment](attachment.md) |Добавление вложенного файла или элемента к задаче Outlook.|
+|[Добавление вложения в запись](../api/post-post-attachments.md) | [attachment](attachment.md) |Добавление файла, элемента или ссылки на вложение в группу POST.|
 |[Список вложений пользовательского события](../api/event-list-attachments.md) | Коллекция [attachment](attachment.md)  | Получение списка вложений для события в пользовательском календаре. |
 |[Список вложений для сообщения](../api/message-list-attachments.md) | Коллекция [attachment](attachment.md)  | Получение списка вложений для сообщения. |
 |[Список вложений задачи Outlook](../api/outlooktask-list-attachments.md) | Коллекция [attachment](attachment.md)  | Получение списка вложений для задачи Outlook. |
