@@ -3,12 +3,12 @@ title: Компонент "Выбор людей"
 description: Вы можете использовать веб-компонент "центр управления", чтобы выполнить поиск указанного числа людей и отобразить список результатов с помощью Microsoft Graph.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 715ef4552a3d87ecb59a1925d1a3e52c7d8ed4ea
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 65ff9382de97ddcd7a0b4bd8a315f8350a80ec35
+ms.sourcegitcommit: 2a601cffdb8df375b2ee32a1f35b8f71e0ffd04f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866884"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023126"
 ---
 # <a name="people-picker-component"></a>Компонент "Выбор людей"
 
@@ -82,7 +82,7 @@ mgt-people-picker {
 
  `mgt-people-picker`поддерживает несколько [шаблонов](../templates.md) , которые можно использовать для замены определенных частей компонента. Чтобы указать шаблон, включите `<template>` элемент в компонент и задайте для него `data-type` одно из следующих значений.
 
-| Тип данных | Контекст данных | Описание |
+| Тип данных | Контекст данных | Description |
 | --- | --- | --- |
 | загрузки | NULL: нет данных | Шаблон, используемый для отображения состояния средства выбора при запросе к Graph. |
 | error | NULL: нет данных| Шаблон, используемый, если поиск пользователей не возвращает пользователей. |
@@ -105,8 +105,9 @@ mgt-people-picker {
 
 | API                                                                                                              | Разрешение  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
-| [/ме/пеопле](/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read |
-| [/граупс/\${groupId}/мемберс](/graph/api/group-list-members?view=graph-rest-1.0) | People.Read |
+| [/ме/пеопле](/graph/api/user-list-people?view=graph-rest-1.0)                    | People.Read        |
+| [/граупс/\${groupId}/мемберс](/graph/api/group-list-members?view=graph-rest-1.0) | People.Read        |
+| [/Users/$ {УсерпринЦипленаме}](/graph/api/user-list-people?view=graph-rest-1.0)  | User. Readbasic. ALL |
 
 ## <a name="authentication"></a>Проверка подлинности
 

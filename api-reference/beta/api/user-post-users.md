@@ -5,18 +5,20 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5b4a34190fd2ec6d61cdfb03e004e7673d60cddb
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 0719415786a00b07485761c72985abcc47106dd0
+ms.sourcegitcommit: 2a601cffdb8df375b2ee32a1f35b8f71e0ffd04f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703744"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023105"
 ---
 # <a name="create-user"></a>Создание пользователя
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Создание [пользователя](../resources/user.md). В теле запроса указан пользователь, которого нужно создать. Вам нужно указать как минимум обязательные свойства для пользователя. При необходимости вы можете указать другие записываемые свойства.
+
+Эта операция по умолчанию возвращает только подмножество свойств для каждого пользователя. Эти свойства по умолчанию указаны в разделе [Свойства](../resources/user.md#properties). Чтобы получить свойства, которые не возвращаются по умолчанию, выполните [операцию GET](user-get.md) и укажите их в параметре запроса OData `$select`.
 
 >[!NOTE]
 >Чтобы создать внешних пользователей, используйте [API приглашений](invitation-post.md).
