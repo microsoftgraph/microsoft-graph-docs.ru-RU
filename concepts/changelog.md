@@ -3,18 +3,26 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 9fccee5ed68b8df21a58506d7a3745a439256673
-ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
+ms.openlocfilehash: 8d1f8eeb909e307dca7e8208177741818764cf92
+ms.sourcegitcommit: 2a601cffdb8df375b2ee32a1f35b8f71e0ffd04f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40951974"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "41023133"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
 Этот журнал содержит сведения об изменениях API Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 
 Дополнительные сведения об известных проблемах с API Microsoft Graph см. в статье [Известные проблемы](known-issues.md).
+
+## <a name="january-2020"></a>Январь 2020 г.
+
+### <a name="security"></a>Безопасность 
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Изменение | Бета-версия и версия 1.0 | Метод [Обновить оповещение](/graph/api/alert-update?view=graph-rest-1.0&tabs=http) теперь обновляет поле **comments** только со следующими значениями: <br/> `Closed in IPC`, `Closed in MCAS`.|
 
 ## <a name="december-2019"></a>Декабрь 2019 г.
 
@@ -1045,7 +1053,7 @@ ms.locfileid: "40951974"
 |Дополнение|Бета|Добавлены новые сложные типы:<br/>[deviceManagementConstraint](/graph/api/resources/intune-deviceintent-devicemanagementconstraint?view=graph-rest-beta)<br/>[deviceManagementEnumConstraint](/graph/api/resources/intune-deviceintent-devicemanagementenumconstraint?view=graph-rest-beta)<br/>[deviceManagementEnumValue](/graph/api/resources/intune-deviceintent-devicemanagementenumvalue?view=graph-rest-beta)<br/>[deviceManagementSettingBooleanConstraint](/graph/api/resources/intune-deviceintent-devicemanagementsettingbooleanconstraint?view=graph-rest-beta)<br/>[deviceManagementSettingDependency](/graph/api/resources/intune-deviceintent-devicemanagementsettingdependency?view=graph-rest-beta)<br/>[deviceManagementSettingIntegerConstraint](/graph/api/resources/intune-deviceintent-devicemanagementsettingintegerconstraint?view=graph-rest-beta)<br/>[deviceManagementSettingRegexConstraint](/graph/api/resources/intune-deviceintent-devicemanagementsettingregexconstraint?view=graph-rest-beta)<br/>[deviceManagementSettingStringLengthConstraint](/graph/api/resources/intune-deviceintent-devicemanagementsettingstringlengthconstraint?view=graph-rest-beta)<br/>[deviceManagementSettingXmlConstraint](/graph/api/resources/intune-deviceintent-devicemanagementsettingxmlconstraint?view=graph-rest-beta)<br/>|
 |Дополнение|бета|Добавлены новые типы перечисления:<br/>[deviceManangementIntentValueType](/graph/api/resources/intune-deviceintent-devicemanangementintentvaluetype?view=graph-rest-beta)<br/>[securityBaselineComplianceState](/graph/api/resources/intune-deviceintent-securitybaselinecompliancestate?view=graph-rest-beta)<br/>|
 |Дополнение|Бета|Добавлено действие [createInstance](/graph/api/intune-deviceintent-devicemanagementtemplate-createinstance?view=graph-rest-beta) для объекта [deviceManagementTemplate](/graph/api/resources/intune-deviceintent-devicemanagementtemplate?view=graph-rest-beta) |
-|Дополнение|Бета|Добавлено действие [updateSettings](/graph/api/intune-deviceintent-devicemanagementintent-updatesettings?view=graph-rest-beta) для объекта [deviceManagementIntent](/graph/api/resources/intune-deviceintent-devicemanagementintent?view=graph-rest-beta) |
+|Дополнение|бета|Добавлено действие [updateSettings](/graph/api/intune-deviceintent-devicemanagementintent-updatesettings?view=graph-rest-beta) для объекта [deviceManagementIntent](/graph/api/resources/intune-deviceintent-devicemanagementintent?view=graph-rest-beta) |
 |Дополнение|Бета|Добавлено действие [assign](/graph/api/intune-deviceintent-devicemanagementintent-assign?view=graph-rest-beta) для объекта [deviceManagementIntent](/graph/api/resources/intune-deviceintent-devicemanagementintent?view=graph-rest-beta) |
 |Дополнение|Бета|Добавлены свойства навигации **intents**, **settingDefinitions**, **templates** и **categories** для объекта [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлено свойство навигации **securityBaselineStates** для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta)|
@@ -1250,7 +1258,7 @@ ms.locfileid: "40951974"
 | Дополнение | Бета-версия и версия 1.0 | Добавлено свойство **createdDateTime** для [organization](/graph/api/resources/organization?view=graph-rest-1.0) |
 | Изменение | Бета-версия и версия 1.0 | Обновлено свойство **companyName** ресурса [user](/graph/api/resources/user?view=graph-rest-1.0) для обеспечения возможности записи. |
 | Изменение | бета | Тип ресурса [TargetResource](/graph/api/resources/targetresource?view=graph-rest-beta) теперь включает свойства, ранее доступные производным типам, которые больше не поддерживаются. |
-| Удаление | бета | Следующие производные типы больше не поддерживаются и были удалены: **targetResourceDevice**, **targetResourceDirectory**, **targetResourceGroup**, **targetResourcePolicy**, **targetResourceRole**, **targetResourceServicePrincipal**, **targetResourceUser**, и **targetResourceOther**. |
+| Удаление | Бета | Следующие производные типы больше не поддерживаются и были удалены: **targetResourceDevice**, **targetResourceDirectory**, **targetResourceGroup**, **targetResourcePolicy**, **targetResourceRole**, **targetResourceServicePrincipal**, **targetResourceUser**, и **targetResourceOther**. |
 | Дополнение |бета | Добавлены свойства **passwordNotificationWindowInDays** и **passwordValidityPeriodInDays** для ресурса [domain](/graph/api/resources/domain?view=graph-rest-beta).|
 
 ### <a name="notes-onenote"></a>Заметки (OneNote)
@@ -1456,7 +1464,7 @@ ms.locfileid: "40951974"
 |Дополнение |бета| Представлен новый тип ресурса [teamsApp](/graph/api/resources/teamsapp?view=graph-rest-beta).|
 |Дополнение |бета| Представлен новый тип ресурса [teamsAppDefinition](/graph/api/resources/teamsappdefinition?view=graph-rest-beta).|
 |Дополнение |бета| Представлен новый элемент перечисления hiddenMembership для объекта teamVisibilityType.|
-|Дополнение |Бета| Представлен новый элемент перечисления createTeam для объекта teamsAsyncOperationType.|
+|Дополнение |бета| Представлен новый элемент перечисления createTeam для объекта teamsAsyncOperationType.|
 |Дополнение |бета| Представлен новый элемент перечисления teamsAppDistributionMethod.|
 |Дополнение |бета| Представлено новое действие обновления приложения в [/teams/{id}/installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-beta). |
 
@@ -2527,7 +2535,7 @@ ms.locfileid: "40951974"
 |Изменение|Бета-версия|Добавлены свойства **securityRequireVerifyApps**, **securityRequireSafetyNetAttestationBasicIntegrity**, **securityRequireSafetyNetAttestationCertifiedDevice**, **securityRequireGooglePlayServices**, **securityRequireUpToDateSecurityProviders** и **securityRequireCompanyPortalAppIntegrity** для объекта [androidCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidcompliancepolicy?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлено свойство **packageId** для объекта [androidForWorkApp](/graph/api/resources/intune-apps-androidforworkapp?view=graph-rest-beta).|
 |Изменение|Бета-версия|Изменен тип следующих свойств объекта [androidForWorkAppConfigurationSchema](/graph/api/resources/intune-androidforwork-androidforworkappconfigurationschema?view=graph-rest-beta):<br/>вместо **exampleJson** [androidForWorkAppConfigurationExample](/graph/api/resources/intune-androidforwork-androidforworkappconfigurationexample?view=graph-rest-beta) теперь используется Binary.<br/>|
-|Изменение|Бета-версия|Добавлены свойства **securityRequireVerifyApps**, **securityRequireSafetyNetAttestationBasicIntegrity**, **securityRequireSafetyNetAttestationCertifiedDevice**, **securityRequireGooglePlayServices**, **securityRequireUpToDateSecurityProviders** и **securityRequireCompanyPortalAppIntegrity** для объекта [androidForWorkCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidforworkcompliancepolicy?view=graph-rest-beta).|
+|Изменить|Бета-версия|Добавлены свойства **securityRequireVerifyApps**, **securityRequireSafetyNetAttestationBasicIntegrity**, **securityRequireSafetyNetAttestationCertifiedDevice**, **securityRequireGooglePlayServices**, **securityRequireUpToDateSecurityProviders** и **securityRequireCompanyPortalAppIntegrity** для объекта [androidForWorkCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidforworkcompliancepolicy?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлены свойства **displayName**, **lastModifiedDateTime**, **enrolledDeviceCount**, **qrCodeContent** и **qrCodeImage** для объекта [androidForWorkEnrollmentProfile](/graph/api/resources/intune-androidforwork-androidforworkenrollmentprofile?view=graph-rest-beta).|
 |Изменение|Бета-версия|Удалено свойство **isTokenActive** для объекта [androidForWorkEnrollmentProfile](/graph/api/resources/intune-androidforwork-androidforworkenrollmentprofile?view=graph-rest-beta).|
 |Изменить|Бета-версия|Добавлены свойства **innerAuthenticationProtocolForEapTtls**, **innerAuthenticationProtocolForPeap** и **outerIdentityPrivacyTemporaryValue** для объекта [androidForWorkEnterpriseWiFiConfiguration](/graph/api/resources/intune-deviceconfig-androidforworkenterprisewificonfiguration?view=graph-rest-beta).|
