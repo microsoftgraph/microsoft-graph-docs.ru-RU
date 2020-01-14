@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: c2efaa8b1c58d02d615af1f1dd63ddf9402954f0
+ms.openlocfilehash: a7c00fd37a8b9f1b373d5476c5da24152b995b50
 ms.sourcegitcommit: 5f643d3b3f71a9711963c8953da2188539fc9b0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/14/2020
-ms.locfileid: "41119530"
+ms.locfileid: "41119729"
 ---
 ```javascript
 
@@ -15,11 +15,14 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/accessReviews')
+const attachment = {
+    @odata.type: "#microsoft.graph.fileAttachment",
+    name: "menu.txt",
+    contentBytes: "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+};
+
+let res = await client.api('/me/outlook/tasks/AAMkADAAAANXbdnAAA=/attachments')
     .version('beta')
-    .filter('businessFlowTemplateId+eq+'6e4f3d20-c5c3-407f-9695-8460952bcc68',')
-    .skip(0)
-    .top(100)
-    .get();
+    .post(attachment);
 
 ```
