@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 9fa728234b1743ab9cbed9703738cc3cd78c38a0
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+ms.openlocfilehash: bea1876752e7e38ab36d39bab63ab03052e1e26e
+ms.sourcegitcommit: 5f643d3b3f71a9711963c8953da2188539fc9b0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36838972"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41119677"
 ---
 # <a name="get-workbookcomment"></a>Получение Воркбуккоммент
 
@@ -44,7 +44,7 @@ GET workbook/comments/{id}
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [воркбуккоммент](../resources/workbookcomment.md) в тексте отклика.
 
@@ -61,7 +61,7 @@ GET workbook/comments/{id}
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/drive/root/workbook/comments/{id}
+GET https://graph.microsoft.com/beta/drive/items/{id}/workbook/comments/{id}
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-workbookcomment-csharp-snippets.md)]
@@ -71,7 +71,7 @@ GET https://graph.microsoft.com/beta/drive/root/workbook/comments/{id}
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-workbookcomment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-workbookcomment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

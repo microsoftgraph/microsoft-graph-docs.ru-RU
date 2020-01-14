@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 337d31a49dbbe170100ca7532b111a230a753076
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: aa78e466326ac523afabccd1d2dd39c805b06772
+ms.sourcegitcommit: 5f643d3b3f71a9711963c8953da2188539fc9b0c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38702533"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "41119807"
 ---
 # <a name="accessreview-resource-type"></a>Тип ресурса Акцессревиев
 
@@ -138,7 +138,7 @@ ms.locfileid: "38702533"
 | Свойство                     | Тип                                                                                                          | Описание |
 | :--------------------------- | :------------------------------------------------------------------------------------------------------------ | :---------- |
 | `recurrenceType`|`String`    | Интервал повторения, который должен быть `onetime`одним из, `weekly`, `monthly`, `quarterly`или. `annual`                                                                   |
-| `recurrenceEndType`|`String` | Завершение повторения. Если это так `Never`, то отсутствует явный конец ряда повторений. Если это так `endBy`, повторение оканчивается на определенную дату. Если это так `occurrences`, ряд завершается после `recurrentCount` завершения экземпляров проверки. |
+| `recurrenceEndType`|`String` | Завершение повторения. Если это так `never`, то отсутствует явный конец ряда повторений. Если это так `endBy`, повторение оканчивается на определенную дату. Если это так `occurrences`, ряд завершается после `recurrenceCount` завершения экземпляров проверки. |
 | `durationInDays`|`Int32`     | Продолжительность повторения в днях.                                                                              |
 | `recurrenceCount`|`Int32`    | Количество повторений, если значение `recurrenceEndType` равно `occurrences`, или 0 в противном случае.                                                        |
 
