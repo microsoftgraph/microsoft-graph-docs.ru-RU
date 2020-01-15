@@ -236,7 +236,13 @@ items:
                 href: notifications-integrating-with-android.md
               - name: Интеграция приложений IOS
                 href: notifications-integrating-with-ios.md
-      - name: Личные контакты
+      - name: Люди и рабочая аналитика
+        items:
+          - name: Обзор
+            href: social-intel-concept-overview.md
+          - name: Получение информации о релевантных людях
+            href: people-example.md
+      - name: Личные контакты.
         displayName: 'Outlook, Outlook contacts, Outlook contact, People'
         items:
           - name: Обзор
@@ -286,12 +292,6 @@ items:
       - name: Сайты и списки
         href: sharepoint-concept-overview.md
         displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
-      - name: Люди и рабочая аналитика
-        items:
-          - name: Обзор
-            href: social-intel-concept-overview.md
-          - name: Получение информации о релевантных людях
-            href: people-example.md
       - name: Задачи и планы
         href: planner-concept-overview.md
         displayName: Planner
