@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 37e3bd6f4772e9df110af005f8a5e469a06a9fba
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 23b15d39d7f4ce7b0f0fe56bbf6c293c3f7854e3
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939434"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216696"
 ---
 # <a name="calendar-resource-type"></a>Тип ресурса calendar
 
@@ -54,7 +54,7 @@ ms.locfileid: "37939434"
 |color|String|Задает цветовую тему, отличающую этот календарь от других календарей в пользовательском интерфейсе. Значения свойств: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
 |defaultOnlineMeetingProvider|onlineMeetingProviderType|Стандартный поставщик для собраний по сети, отправленных из этого календаря. Возможные значения: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|
 |hexColor|String|Цвет календаря, представленный кодом из трех шестнадцатеричных значений в диапазоне от 00 до FF, которые обозначают красный, зеленый и синий компоненты цвета в цветовом пространстве RGB. Если пользователь не задал цвет календаря явным образом, это свойство будет пустым. |
-|id|Строка|Уникальный идентификатор группы. Только для чтения.|
+|id|String|Уникальный идентификатор календаря. Только для чтения.|
 |isDefaultCalendar|Логический|Значение True, если это стандартный календарь, где новые события создаются по умолчанию. В противном случае используется значение False.|
 |isRemovable|Логический| Указывает, можно ли удалить этот календарь из почтового ящика пользователя.|
 |IsShared |Boolean |Значение true, если пользователь поделился календарем с другими пользователями. В противном случае используется значение false. Только пользователь, создавший календарь, может им поделиться, поэтому свойства **isShared** и **isSharedWithMe** не могут иметь значения true для одного пользователя. |

@@ -4,12 +4,12 @@ description: В зависимости от размера файла можно
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 62d5496ba3e7a1ccb28af45922a254a6d10c6519
-ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
+ms.openlocfilehash: 4b6aaa2e10ac1fc718d306921dab60b771c8b9e4
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "37726517"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216856"
 ---
 # <a name="attach-large-files-to-outlook-messages-as-attachments-preview"></a>Прикрепление крупных файлов к сообщениям Outlook в виде вложений (предварительная версия)
 
@@ -26,7 +26,7 @@ ms.locfileid: "37726517"
 
 После успешной операции возвращается `HTTP 201 Created` и новый экземпляр объекта [uploadSession](/graph/api/resources/uploadsession?view=graph-rest-beta), содержащий непрозрачный URL-адрес, который можно использовать в последующих операциях `PUT` для отправки частей этого файла. Этот экземпляр **uploadSession** предоставляет временное место хранения, где байты файла сохраняются до отправки всего файла. 
 
-Непрозрачный URL-адрес, возвращенный свойством **uploadUrl** объекта **uploadSession**, проходит предварительную проверку подлинности и содержит соответствующий маркер авторизации для последующих запросов `PUT` в домене `https://outlook.office.com`. Этот маркер истекает в срок **expirationDateTime**. Не следует изменять этот URL-адрес для операций `PUT`.
+Обязательно запросите разрешение `Mail.ReadWrite` на создание экземпляра **uploadSession**. Непрозрачный URL-адрес, возвращенный свойством **uploadUrl** нового объекта **uploadSession**, проходит предварительную проверку подлинности и содержит соответствующий маркер авторизации для последующих запросов `PUT` в домене `https://outlook.office.com`. Этот маркер истекает в срок **expirationDateTime**. Не следует изменять этот URL-адрес для операций `PUT`.
 
 Объект **uploadSession** в отклике также включает свойство **nextExpectedRanges**, указывающее, что начальное место отправки должно быть байтом 0.
 

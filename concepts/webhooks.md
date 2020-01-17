@@ -1,16 +1,16 @@
 ---
 title: Настройка уведомлений об изменениях в пользовательских данных
 description: API Microsoft Graph использует механизм веб-перехватчиков для доставки уведомлений клиентам. Клиент — это веб-служба, которая настраивает свой URL-адрес для получения уведомлений. С помощью уведомлений клиентские приложения обновляют свое состояние в случае изменений.
-author: piotrci
+author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: e4bd9809524b5891f1883f62b8ef5c6fbaa5d01f
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: a9bee67379203b7dbe2c6a3b4dff1caba95e422d
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39845030"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216835"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Настройка уведомлений об изменениях в пользовательских данных
 
@@ -53,7 +53,7 @@ API Microsoft Graph использует механизм веб-перехва�
 
 либо на корневую папку диска SharePoint/OneDrive для бизнеса: `/drive/root`
 
-либо на новое оповещение [API безопасности](security-concept-overview.md): `/security/alerts?$filter=status eq ‘New’`, `/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
+либо на новое оповещение [API безопасности](security-concept-overview.md): `/security/alerts?$filter=status eq 'newAlert'`, `/security/alerts?$filter=vendorInformation/provider eq 'ASC'`
 
 ### <a name="azure-ad-resource-limitations"></a>Ограничения ресурсов Azure AD
 

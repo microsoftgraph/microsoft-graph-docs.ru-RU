@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ab57e15b88cef2ba1749c19a1b00d3521136f274
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: cc45adb31d22502878cc7c8cad2c9d85eed3f91e
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865568"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216884"
 ---
 # <a name="get-message"></a>Вывод сообщения
 
@@ -111,6 +111,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhMGAAA=
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
+  "name": "get_message",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -217,6 +218,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADhAAAW-VPeAAA=/?$select=in
 Ниже приведен пример отклика. Примечание. Набор заголовков сообщений в объекте отклика усечен для краткости. При фактическом вызове будут возвращены все заголовки.
 <!-- {
   "blockType": "response",
+  "name": "get_message_headers",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -289,6 +291,7 @@ Prefer: outlook.body-content-type="text"
 Ниже приведен пример отклика. Примечание. Отклик включает заголовок `Preference-Applied: outlook.body-content-type`, подтверждающий заголовок запроса `Prefer: outlook.body-content-type`.
 <!-- {
   "blockType": "response",
+  "name": "get_message_in_text",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -319,19 +322,26 @@ Preference-Applied: outlook.body-content-type="text"
 В четвертом примере показано, как получить MIME-содержимое сообщения в почтовом ящике пользователя, выполнившего вход.
 
 <!-- {
-  "blockType": "ignored"
-}-->
+  "blockType": "request",
+  "name": "get_message_in_mime",
+  "sampleKeys": ["4aade2547798441eab5188a7a2436bc1"]
+} -->
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages/4aade2547798441eab5188a7a2436bc1/$value
 ```
 
 #### <a name="response"></a>Отклик
 Ниже приведен отклик. Содержимое MIME начинается с заголовка `MIME-Version`. 
+
 <!-- {
-  "blockType": "ignored"
+  "blockType": "response",
+  "name": "get_message_in_mime",
+  "truncated": true,
+  "@odata.type": "string"
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-type: text/plain
 
 Received: from contoso.com (10.194.241.197) by 
 contoso.com (10.194.241.197) with Microsoft 
@@ -367,9 +377,7 @@ X-MS-Exchange-Organization-Network-Message-Id:
 X-MS-Exchange-Organization-SCL: -1 
 X-MS-TNEF-Correlator: 
 X-MS-Exchange-Organization-RecordReviewCfmType: 0 
-x-ms-publictraffictype: Emai
 
-```http
 MIME-Version: 1.0 
 Content-Type: multipart/mixed; 
                 boundary="_004_4aade2547798441eab5188a7a2436bc1contoso_" 

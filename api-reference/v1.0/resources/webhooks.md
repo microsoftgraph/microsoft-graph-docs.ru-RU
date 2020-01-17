@@ -2,15 +2,15 @@
 title: 'Получение уведомлений об изменениях с помощью API Microsoft Graph '
 description: REST API Microsoft Graph использует механизм веб-перехватчиков для доставки уведомлений об изменениях клиентам. Клиент — это веб-служба, которая настраивает свой URL-адрес для получения уведомлений. С помощью уведомлений клиентские приложения обновляют свое состояние при изменениях. Дополнительные сведения, включая сведения о подписке и обработке входящих уведомлений, см. в статье "Настройка уведомлений об изменениях в пользовательских данных".
 localization_priority: Priority
-author: piotrci
+author: baywet
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: 1722f888cc7e29e958a84720f8e714f2379db7da
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d951c7c188a9202b550092b0c51624cc4d0284ce
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033406"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216877"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Получение уведомлений об изменениях с помощью API Microsoft Graph 
 
