@@ -2,15 +2,15 @@
 title: Перечисление подписок
 description: " в приведенных ниже сценариях представлены подробные сведения."
 localization_priority: Normal
-author: piotrci
+author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 97fed1e7271ab39bad64f1bb56ac1696e351b4cf
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: d69d19cd51eb1bbb2ae7cd2ff25eef331e399a10
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36722295"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216724"
 ---
 # <a name="list-subscriptions"></a>Перечисление подписок
 
@@ -24,9 +24,9 @@ ms.locfileid: "36722295"
 
 | Тип разрешения  | Разрешения (в порядке повышения привилегий)  |
 |:---------------- |:-------------------------------------------- |
-| [Делегированный](/graph/auth-v2-user) (Рабочая или учебная учетная запись) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md) или подписки. Read. All (см. ниже). |
-| [Делегированный](/graph/auth-v2-user) (личная учетная запись Майкрософт) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md) или подписки. Read. All (см. ниже). |
-| [Application](/graph/auth-v2-service) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md). |
+| [Делегированная](/graph/auth-v2-user) (Рабочая или учебная учетная запись) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md) или подписки. Read. All (см. ниже). |
+| [Делегированная](/graph/auth-v2-user) учетная запись (личная учетная запись Майкрософт) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md) или подписки. Read. All (см. ниже). |
+| [Приложение](/graph/auth-v2-service) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md). |
 
 Результаты отклика основаны на контексте приложения, отправившего вызов. Ниже представлена сводка общих сценариев.
 
@@ -67,7 +67,7 @@ GET /subscriptions
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -97,14 +97,14 @@ GET https://graph.microsoft.com/beta/subscriptions
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-subscriptions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-subscriptions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. Note: ответ, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 

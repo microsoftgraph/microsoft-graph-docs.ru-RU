@@ -2,15 +2,15 @@
 title: Получение подписки
 description: Получение свойств и связей подписки.
 localization_priority: Normal
-author: piotrci
+author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: db5e61329d5b8ce874e7748423e621740c5f8354
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 3afcdd042840f5955ad2a74055afc4e589f6a0bb
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703695"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216765"
 ---
 # <a name="get-subscription"></a>Получение подписки
 
@@ -30,7 +30,7 @@ ms.locfileid: "38703695"
 |[event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[group](../resources/group.md) | Group.Read.All | Не поддерживается | Group.Read.All |
 |[group conversation](../resources/conversation.md) | Group.Read.All | Не поддерживается | Не поддерживается |
-|[message](../resources/message.md) | Mail. ReadBasic, mail. Read | Mail. ReadBasic, mail. Read | Mail. ReadBasic, mail. Read |
+|[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Не поддерживается | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 

@@ -2,15 +2,15 @@
 title: Тип ресурса subscription
 description: Подписка позволяет клиентскому приложению получать уведомления об изменениях данных в Microsoft Graph. На данный момент подписки включены для указанных ниже ресурсов.
 localization_priority: Normal
-author: piotrci
+author: baywet
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 70af093b6ed782ba7bf447c339e5187439849970
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 39ca29e8f2cbe9ad2c861fc83856fe83c2164675
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844269"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216849"
 ---
 # <a name="subscription-resource-type"></a>Тип ресурса subscription
 

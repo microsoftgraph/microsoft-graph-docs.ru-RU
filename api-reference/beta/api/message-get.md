@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 20a68ed4448c8762217ba0d37d368af63d58c8e9
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 9d0676f1d9558e92fe5d033c44a48bcfad140b0f
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40869467"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216772"
 ---
 # <a name="get-message"></a>Вывод сообщения
 
@@ -41,7 +41,7 @@ ms.locfileid: "40869467"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Получение указанного сообщения:
+Для получения указанного сообщения:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}
@@ -50,7 +50,7 @@ GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
-Получение содержимого MIME указанного сообщения:
+Для получения MIME-содержимого указанного сообщения:
 <!-- { "blockType": "ignored" } --> 
 ```http 
 GET /me/messages/{id}/$value 
@@ -71,7 +71,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
-Используйте `$value` параметр для получения содержимого MIME сообщения.
+Используйте параметр `$value`, чтобы получить MIME-содержимое сообщения.
 
 Используйте параметр `$expand` запроса в свойстве навигации **упоминания** , чтобы получить сообщение с подробными сведениями о каждом [упоминании](../resources/mention.md) в развернутом сообщении.
 
@@ -83,14 +83,14 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Prefer: outlook.body-content-type | string | Формат возвращаемых свойств **body** и **uniqueBody**. Возможные значения: "text" или "html". Заголовок `Preference-Applied` возвращается как подтверждение, если заголовок `Prefer` указан. Если заголовок не указан, свойства **body** и **uniqueBody** возвращаются в формате HTML. Необязательный параметр. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [message](../resources/message.md) в тексте отклика.
 
-Указание `$value` параметра возвращает содержимое сообщения в формате MIME, а не в ресурсе **Message** .
+При указании параметра `$value` возвращается содержимое сообщения в формате MIME, а не ресурс **message**.
 
 ## <a name="examples"></a>Примеры
 ### <a name="example-1"></a>Пример 1
@@ -125,6 +125,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 Note: объект Response, показанный здесь, усекается для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
+  "name": "get_message",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -178,10 +179,11 @@ GET https://graph.microsoft.com/beta/me/messages/AQMkADJmMTUAAAgVZAAAA/?$expand=
 
 ---
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
+  "name": "get_mentions_in_message",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -313,6 +315,7 @@ Prefer: outlook.body-content-type="text"
 Ниже приведен пример отклика. Примечание. Отклик включает заголовок `Preference-Applied: outlook.body-content-type`, подтверждающий заголовок запроса `Prefer: outlook.body-content-type`.
 <!-- {
   "blockType": "response",
+  "name": "get_message_in_text",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -337,7 +340,7 @@ Preference-Applied: outlook.body-content-type="text"
     }
 }
 ```
-### <a name="example-4"></a>Пример 4
+### <a name="example-4"></a>Пример 4
 #### <a name="request"></a>Запрос
 
 В четвертом примере показано, как получить заголовки сообщений Интернета для определенного сообщения.  
@@ -374,6 +377,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGVmMDEz/?$select=internetM
 
 <!-- {
   "blockType": "response",
+  "name": "get_message_internet_headers",
   "truncated": true,
   "@odata.type": "microsoft.graph.message"
 } -->
@@ -417,8 +421,10 @@ Content-type: application/json
 В пятом примере показано получение содержимого MIME сообщения в почтовом ящике вошедшего пользователя.
 
 <!-- {
-  "blockType": "ignored"
-}-->
+  "blockType": "request",
+  "name": "get_message_in_mime",
+  "sampleKeys": ["4aade2547798441eab5188a7a2436bc1"]
+} -->
 ```http
 GET https://graph.microsoft.com/beta/me/messages/4aade2547798441eab5188a7a2436bc1/$value
 ```
@@ -426,10 +432,14 @@ GET https://graph.microsoft.com/beta/me/messages/4aade2547798441eab5188a7a2436bc
 #### <a name="response"></a>Отклик
 Ниже приведен отклик. Содержимое MIME начинается с заголовка `MIME-Version`. 
 <!-- {
-  "blockType": "ignored"
+  "blockType": "response",
+  "name": "get_message_in_mime",
+  "truncated": true,
+  "@odata.type": "string"
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-type: text/plain
 
 Received: from contoso.com (10.194.241.197) by 
 contoso.com (10.194.241.197) with Microsoft 
@@ -465,9 +475,7 @@ X-MS-Exchange-Organization-Network-Message-Id:
 X-MS-Exchange-Organization-SCL: -1 
 X-MS-TNEF-Correlator: 
 X-MS-Exchange-Organization-RecordReviewCfmType: 0 
-x-ms-publictraffictype: Emai
 
-```http
 MIME-Version: 1.0 
 Content-Type: multipart/mixed; 
                 boundary="_004_4aade2547798441eab5188a7a2436bc1contoso_" 

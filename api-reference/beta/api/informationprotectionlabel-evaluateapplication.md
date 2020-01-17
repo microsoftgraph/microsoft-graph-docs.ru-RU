@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 92de4d75e93be416b255dfc43400b304938a9759
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 76f57449f7e45a3616ccc45be1b329fe7ecbb928
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994452"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216689"
 ---
 # <a name="informationprotectionlabel-evaluateapplication"></a>Информатионпротектионлабел: Евалуатеаппликатион
 
@@ -44,7 +44,7 @@ ms.locfileid: "37994452"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Информатионпротектионполици. Read            |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | Информатионпротектионполици. Read. ALL        |
+| Для приложения                            | Информатионпротектионполици. Read. ALL        |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -57,21 +57,22 @@ POST /users/{id}/informationProtection/policy/labels/evaluateApplication
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| Имя          | Описание                 |
-| :------------ | :-------------------------- |
-| Авторизация | Bearer {токен}. Обязательный.   |
-| Content-Type  | application/json. Обязательный. |
+| Имя          | Описание                                                                                                                                                           |
+| :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Авторизация | Bearer {токен}. Обязательный.                                                                                                                                             |
+| Content-Type  | application/json. Обязательный.                                                                                                                                           |
+| User — Agent    | Описывает имя вызывающего приложения. Подробные сведения отображаются в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательное свойство. |
 
 ## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
-| Параметр       | Тип                                               | Описание                                                                                                                                                                                                   |
-| :-------------- | :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Параметр       | Тип                                               | Описание                                                                                                                      |
+| :-------------- | :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
 | контентинфо     | [контентинфо](../resources/contentinfo.md)         | Предоставляет подробные сведения о формате содержимого, состоянии контента и существующих [метаданных](../resources/keyvaluepair.md) в виде пар "ключ-значение". |
-| лабелингоптионс | [лабелингоптионс](../resources/labelingoptions.md) | Предоставляет сведения о желаемом состоянии контента.                                                                                                                                                      |
+| лабелингоптионс | [лабелингоптионс](../resources/labelingoptions.md) | Предоставляет сведения о желаемом состоянии контента.                                                                         |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект коллекции [информатионпротектионактион](../resources/informationprotectionaction.md) в тексте отклика.
 
@@ -92,6 +93,7 @@ POST /users/{id}/informationProtection/policy/labels/evaluateApplication
 ```http
 POST https://graph.microsoft.com/beta/informationprotection/policy/labels/evaluateApplication
 Content-type: application/json
+User-agent: ContosoLOBApp/1.0
 
 {
   "contentInfo": {

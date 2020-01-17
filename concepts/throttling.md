@@ -1,15 +1,15 @@
 ---
 title: Руководство по регулированию Microsoft Graph
 description: Регулирование позволяет ограничить количество одновременных вызовов службы, чтобы предотвратить перегрузку ресурсов. Служба Microsoft Graph предназначена для обработки большого количества запросов. Регулирование помогает поддерживать оптимальную производительность и надежность службы Microsoft Graph, если выполняется слишком много запросов.
-author: piotrci
+author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 7ad21327a4589e3f3bac6fd912a2bd37c563b1cf
-ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
+ms.openlocfilehash: 3e02b245010ddcd7243d3859fd1192ab8c6a0bf4
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37054070"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216751"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Руководство по регулированию Microsoft Graph
 

@@ -2,15 +2,15 @@
 title: Обновление подписки
 description: Возобновление подписки путем увеличения срока действия.
 localization_priority: Normal
-author: piotrci
+author: baywet
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 45348dfd910224f215ee9c2e41fd2f2ee700a946
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: ca6b1a813f7a4046e09ce0329f40897384473ebd
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703990"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216231"
 ---
 # <a name="update-subscription"></a>Обновление подписки
 
@@ -30,7 +30,7 @@ ms.locfileid: "38703990"
 |[event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[group](../resources/group.md) | Group.Read.All | Не поддерживается | Group.Read.All |
 |[group conversation](../resources/conversation.md) | Group.Read.All | Не поддерживается | Не поддерживается |
-|[message](../resources/message.md) | Mail. ReadBasic, mail. Read | Mail. ReadBasic, mail. Read | Mail. ReadBasic, mail. Read |
+|[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Не поддерживается | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 

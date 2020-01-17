@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 06031fd4887b417fe12858ca5d3f1622f58a4f96
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 9f1012e7516ee635d9b44d1ae8a1277480aff6c8
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37995633"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216675"
 ---
 # <a name="informationprotectionlabel-evaluateclassificationresults"></a>Информатионпротектионлабел: Евалуатеклассификатионресултс
 
@@ -44,7 +44,7 @@ ms.locfileid: "37995633"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Информатионпротектионполици. Read            |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | Информатионпротектионполици. Read. ALL        |
+| Для приложения                            | Информатионпротектионполици. Read. ALL        |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -56,10 +56,11 @@ POST /informationprotection/policy/labels/{id}/evaluateClassificationResults
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| Имя          | Описание                 |
-| :------------ | :-------------------------- |
-| Авторизация | Bearer {токен}. Обязательный.   |
-| Content-Type  | application/json. Обязательный. |
+| Имя          | Описание                                                                                                                                                           |
+| :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Авторизация | Bearer {токен}. Обязательный.                                                                                                                                             |
+| Content-Type  | application/json. Обязательный.                                                                                                                                           |
+| User — Agent    | Описывает имя и версию вызывающего приложения. Подробные сведения отображаются в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательное свойство. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -67,10 +68,10 @@ POST /informationprotection/policy/labels/{id}/evaluateClassificationResults
 
 | Параметр             | Тип                                                                    | Описание                                                                                                                                                                                                                                                                           |
 | :-------------------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| контентинфо           | [контентинфо](../resources/contentInfo.md)                              | Предоставляет подробные сведения о формате содержимого, состоянии контента и существующих [метаданных](../resources/keyvaluepair.md) в виде пар "ключ-значение".                                                                         |
+| контентинфо           | [контентинфо](../resources/contentInfo.md)                              | Предоставляет подробные сведения о формате содержимого, состоянии контента и существующих [метаданных](../resources/keyvaluepair.md) в виде пар "ключ-значение".                                                                                                                                                   |
 | классификатионресултс | Коллекция [классификатионресулт](../resources/classificationresult.md) | Содержит набор результатов классификации, возвращаемых конечной точкой классификации данных. Сведения о классификаитон используются для определения соответствующей метки на основе конфигурации метки политики защиты информации Майкрософт в центре безопасности и соответствия требованиям Office 365. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект коллекции [информатионпротектионактион](../resources/informationprotectionaction.md) в тексте отклика.
 
@@ -91,6 +92,7 @@ POST /informationprotection/policy/labels/{id}/evaluateClassificationResults
 ```http
 POST https://graph.microsoft.com/beta/informationprotection/policy/labels/evaluateClassificationResults
 Content-type: application/json
+User-agent: ContosoLOBApp/1.0
 
 {
   "contentInfo": {

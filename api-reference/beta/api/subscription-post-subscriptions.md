@@ -2,15 +2,15 @@
 title: Создание подписки
 description: Подписывает приложение прослушивателя на получение уведомлений при изменении данных в ресурсе Microsoft Graph.
 localization_priority: Normal
-author: piotrci
+author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 487be3c7a50dcd5b09ece599f69b74248965eacf
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 67e8aad098084bb3c33f412c44b1600c8c7f59d5
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870840"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216758"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -38,7 +38,7 @@ ms.locfileid: "40870840"
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Не поддерживается | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-> **Примечание:** В январе 2020 подписки chatMessage потребуют [шифрования](/graph/webhooks-with-resource-data), и создание подписки завершится с ошибками, если [енкриптионцертификате](../resources/subscription.md) не задано.
+> **Note:** для подписок на chatMessage требуется [Шифрование](/graph/webhooks-with-resource-data). Если [енкриптионцертификате](../resources/subscription.md) не указан, создание подписки завершится с ошибками.
 
 > **Примечание:** Дополнительные ограничения применяются для подписок на OneDrive и элементов Outlook. Ограничения применяются к созданию и управлению (получению, обновлению и удалению) подписок.
 
@@ -125,7 +125,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приводится пример отклика. 
+Ниже показан пример отклика. 
 
 >**Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {

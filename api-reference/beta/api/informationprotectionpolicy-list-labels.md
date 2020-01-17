@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ceadfa6a1db960e7ca9f394df51233f792ec98f9
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: c3e83fd6d7fa19da70010136c3bec85ce17b694a
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994396"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216259"
 ---
 # <a name="informationprotectionlabel-listlabels"></a>Информатионпротектионлабел: Листлабелс
 
@@ -26,7 +26,7 @@ ms.locfileid: "37994396"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Информатионпротектионполици. Read            |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | Информатионпротектионполици. Read. ALL        |
+| Для приложения                            | Информатионпротектионполици. Read. ALL        |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,9 +43,10 @@ GET /informationprotection/policy/labels
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| Имя          | Описание                 |
-| :------------ | :-------------------------- |
-| Авторизация | Bearer {токен}. Обязательный.   |
+| Имя          | Описание                                                                                                                                                                       |
+| :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Авторизация | Bearer {токен}. Обязательный.                                                                                                                                                         |
+| User — Agent    | Описывает имя и версию вызывающего приложения. Подробные сведения отображаются в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательное свойство. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -101,6 +102,7 @@ GET https://graph.microsoft.com/beta/me/informationprotection/policy/labels
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+User-agent: ContosoLOBApp/1.0
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('1e36d926-d716-4197-ba86-a6e18eb910b9')/informationProtection/policy/labels",

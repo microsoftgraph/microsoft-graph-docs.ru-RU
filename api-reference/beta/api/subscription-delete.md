@@ -2,15 +2,15 @@
 title: Удаление подписки
 description: Удаление подписки.
 localization_priority: Normal
-author: piotrci
+author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 381c816685129a7cfe7dda88050a96a9a78dca8b
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 55f162d149f63f22339ff00b4d4d5dcdab0ba0a5
+ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703702"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41216710"
 ---
 # <a name="delete-subscription"></a>Удаление подписки
 
@@ -30,7 +30,7 @@ ms.locfileid: "38703702"
 |[event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[group](../resources/group.md) | Group.Read.All | Не поддерживается | Group.Read.All |
 |[group conversation](../resources/conversation.md) | Group.Read.All | Не поддерживается | Не поддерживается |
-|[message](../resources/message.md) | Mail. ReadBasic, mail. Read | Mail. ReadBasic, mail. Read | Mail. ReadBasic, mail. Read |
+|[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Не поддерживается | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
