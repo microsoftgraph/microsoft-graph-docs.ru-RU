@@ -4,12 +4,12 @@ description: Описывается перенос приложений API Azur
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bc48be3712b0d3b03e9799559aac4d6ae812b5d0
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 884802fafcccf4408b84da96f6c4f94818e31b16
+ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36422179"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41234042"
 ---
 # <a name="migrate-net-client-library-use-to-microsoft-graph"></a>Миграция использования клиентской библиотеки .NET в Microsoft Graph
 
@@ -80,8 +80,8 @@ ms.locfileid: "36422179"
     signedInUser = (User)await client.Me.Request().GetAsync();
     ```
 
-    [!NOTE]
-    В клиентской библиотеке Azure AD Graph поддерживался синтаксис запросов на основе LINQ. Однако клиентская библиотека Microsoft Graph не поддерживает эту функции.  Следовательно, вам потребуется преобразовать нужные запросы в другое выражение для RESTFUL.  
+    >[!NOTE]
+    >В клиентской библиотеке Azure AD Graph поддерживался синтаксис запросов на основе LINQ. Однако клиентская библиотека Microsoft Graph не поддерживает эту функции.  Следовательно, вам потребуется преобразовать нужные запросы в другое выражение для RESTFUL.  
 
     Для этого измените следующее:
 

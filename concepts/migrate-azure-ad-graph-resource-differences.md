@@ -4,12 +4,12 @@ description: Описываются различия между ресурсам
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fb46ea7d4a1a5b66925b18beb131e912a7e89767
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: fafdf2f5a32b1d0331249f0ea18ae2ff79591e0d
+ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38656517"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41234049"
 ---
 # <a name="resource-type-differences-between-azure-ad-graph-and-microsoft-graph"></a>Различия между типами ресурсов в Azure AD Graph и Microsoft Graph
 
@@ -23,16 +23,16 @@ ms.locfileid: "38656517"
 
 > **Note**: имена типов ресурсов в Azure AD Graph в стиле Pascal, в то время как в Microsoft Graph они имеют стиль Camel.
 
-|Azure AD Graph <br>ресурс (v 1.6) |Microsoft Graph<br>resource|Comments|
+|Azure AD Graph <br>ресурс (v 1.6) |Microsoft Graph<br>resource|Примечания|
 |---|---|---|
 | [аппролеассигнмент](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета&nbsp;-&nbsp;-[аппролеассигнмент](/graph/api/resources/approleassignment?view=graph-rest-beta)<br>Версия 1.0 _еще недоступна_ | |
 | [цертификатеаусоритинформатион](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета&nbsp;-&nbsp;-[цертификатеаусорити](/graph/api/resources/certificateauthority?view=graph-rest-beta)<br>Версия 1.0&nbsp;-&nbsp;[цертификатеаусорити](/graph/api/resources/certificateauthority?view=graph-rest-v1.0) | |
-| [Contact](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [orgContact](/graph/api/resources/orgContact?view=graph-rest-beta)<br>Версия 1.0 — [orgContact](/graph/api/resources/orgContact?view=graph-rest-v1.0) | |
+| [контакт](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference); | бета- [orgContact](/graph/api/resources/orgContact?view=graph-rest-beta)<br>Версия 1.0 — [orgContact](/graph/api/resources/orgContact?view=graph-rest-v1.0) | |
 | [директорилинкчанже](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | _новый&nbsp;подход_ к бета-версии <br>v 1.0 — _новый&nbsp;подход_ | Запрос Delta поддерживает обнаружение изменений связи с механизмом, который не требует использования этого ресурса. Ознакомьтесь [с различиями между функциями Azure AD Graph и Microsoft Graph](migrate-azure-ad-graph-feature-differences.md). |
 | [OAuth2Permission](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [permissionScope](/graph/api/resources/permissionScope?view=graph-rest-beta) <br> Версия 1.0 — [permissionScope](/graph/api/resources/permissionScope?view=graph-rest-1.0) ||
 | [OAuth2PermissionGrant](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета&nbsp;-&nbsp;-[oAuth2PermissionGrant](/graph/api/resources/oAuth2PermissionGrant?view=graph-rest-beta) <br> Версия 1.0 _еще недоступна_ ||
 | [PasswordProfile](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [passwordprofile необходима](/graph/api/resources/passwordProfile?view=graph-rest-beta) <br> Версия 1.0 — Passwordprofile необходима ||
-| [Политика](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [Политика](/graph/api/resources/parentalcontrolsettings?view=graph-rest-beta) _(подлежит изменению)_ <br> Версия 1.0 _еще недоступна_ | Каждая политика будет иметь уникальное имя типа и структуру.|
+| [Политика](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | &nbsp;-&nbsp;[политики](/graph/api/resources/policy-overview?view=graph-rest-beta) бета-версий <br> Версия 1.0 _еще недоступна_ | Каждый тип политики имеет уникальное имя типа и структуру в сегменте пути URL-адреса **политик** в Microsoft Graph. В Azure AD Graph это был один тип политики. |
 | [провисионинжеррор](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета&nbsp;-&nbsp;-версия_недоступна_ <br> Версия 1.0&nbsp;-&nbsp;_недоступна_ | Этот ресурс устарел.  Однако новый ресурс, описывающий все ошибки подготовки AD Connect, можно найти в [onPremisesProvisioningError](/graph/api/resources/onPremisesProvisioningError?view=graph-rest-v1.0). |
 | [сервицеендпоинт](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [Конечная точка](/graph/api/resources/endpoint?view=graph-rest-beta) <br> Версия 1.0 — конечная точка _пока недоступна_ | [Конечная точка](/graph/api/resources/endpoint?view=graph-rest-beta) доступна только в составе ресурса [Group](/graph/api/resources/group?view=graph-rest-beta) .|
 | [ServicePrincipal](https://docs.microsoft.com/previous-versions/azure/ad/graph/api/entity-and-complex-type-reference) | бета- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) <br> Версия 1.0 _еще недоступна_ | |
