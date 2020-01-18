@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0b74d19cad91fe7a555b58c7d876d09f31862aa6
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 45bd17b5f855db16d8e3716d7df8cae5b35c41eb
+ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37936463"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41233958"
 ---
 # <a name="list-applications"></a>Список приложений
 
@@ -40,7 +40,6 @@ GET /applications
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
-| Content-Type   | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

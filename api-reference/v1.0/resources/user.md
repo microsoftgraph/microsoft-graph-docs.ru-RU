@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fbf7a01c8de5015cd83a97cd63c0e98bdbc30af0
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: b8295c91f3c291389ca85fe18719c7249d11a03c
+ms.sourcegitcommit: bd0daf5c133ab29af9337a5edd3b8509fd2313d5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39843943"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41232009"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -125,6 +125,7 @@ ms.locfileid: "39843943"
 |consentProvidedForMinor|String|Устанавливает, получено ли согласие для несовершеннолетних. Допустимые значения: `null`, `granted`, `denied` и `notRequired`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](#legal-age-group-property-definitions).|
 |country|String|Страна или регион, в котором находится пользователь, например "США" или "Соединенное Королевство". Поддерживает параметр $filter.|
 |createdDateTime | DateTimeOffset |Дата создания объекта пользователя. |
+|creationType|Строка|Указывает, была ли учетная запись пользователя создана как обычная учебная или рабочая учетная запись (`null`), внешняя учетная запись (`Invitation`), локальная учетная запись для клиента Azure Active Directory B2C (`LocalAccount`) или с помощью самостоятельной регистрации с использованием проверки электронной почты (`EmailVerified`). Только для чтения.|
 |department|String|Название отдела, в котором работает пользователь. Поддерживает параметр $filter.|
 |displayName|String|Отображаемое имя пользователя в адресной книге. Обычно это сочетание имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении. Поддерживает параметры $filter и $orderby.|
 |employeeId|String|Идентификатор сотрудника, назначенный пользователю организацией. Поддерживает параметр $filter.|
@@ -132,6 +133,7 @@ ms.locfileid: "39843943"
 |givenName|String|Простое имя пользователя. Поддерживает параметр $filter.|
 |hireDate|DateTimeOffset|Дата найма пользователя. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |id|String|Уникальный идентификатор пользователя. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения.|
+|identities|Коллекция [objectIdentity](objectIdentity.md)| Представляет удостоверения, которые можно использовать для входа в учетную запись пользователя. Цифровое удостоверение может предоставляться корпорацией Майкрософт (также известно как локальная учетная запись), организациями или поставщиками удостоверений социальных сетей, такими как Facebook, Google и Майкрософт, и привязывается к учетной записи пользователя. Может содержать несколько элементов с одинаковым значением **signInType**. <br>Поддерживает параметр $filter.|
 |imAddresses|Коллекция строк|Адреса SIP/VoIP для пользователя. Только для чтения.|
 |interests|Коллекция строк|Список интересов пользователя.|
 |isResourceAccount|Boolean| Значение **true**, если пользователь является учетной записью ресурса; в противном случае **false**. Пустое значение должно считаться соответствующим значению **false**.|
@@ -425,6 +427,8 @@ ms.locfileid: "39843943"
   "companyName": "string",
   "consentProvidedForMinor": "string",
   "country": "string",
+  "createdDateTime": "String (timestamp)",
+  "creationType": "string",
   "department": "string",
   "displayName": "string",
   "employeeId": "string",
@@ -432,6 +436,7 @@ ms.locfileid: "39843943"
   "givenName": "string",
   "hireDate": "String (timestamp)",
   "id": "string (identifier)",
+  "identities": [{"@odata.type": "microsoft.graph.objectIdentity"}],
   "imAddresses": ["string"],
   "interests": ["string"],
   "isResourceAccount": false,
