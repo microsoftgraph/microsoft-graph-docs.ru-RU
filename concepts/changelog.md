@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 98e11c3f2ca2746d4ade30ccb7b8661638b75f69
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: b7d5cda65e29227bf69a5ddf4232d0bc7fba335a
+ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216814"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41234021"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -18,11 +18,26 @@ ms.locfileid: "41216814"
 
 ## <a name="january-2020"></a>Январь 2020 г.
 
+### <a name="identity-and-access-azure-ad"></a>Удостоверение и доступ (Azure AD)
+| **Тип изменения** | **Версия**   | **Описание**                          |
+|:---|:---|:---|
+|Изменение | Бета |Обновлена коллекция существующих политик с использованием сегмента URL-адреса [политик](/graph/api/resources/policy-overview?view=graph-rest-beta). Ресурсы типизированных политик теперь группируются в сегменте политик, как описано в [этой записи блога](https://developer.microsoft.com/identity/blogs/breaking-changes-policy-api-microsoft-graph-beta/). Это обновление добавляет четыре ресурса типизированных политик: <br> <li>[activityBasedTimeoutPolicies](/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-beta)</li> <li>[claimsMappingPolicies](/graph/api/resources/claimsMappingPolicy?view=graph-rest-beta) </li> <li>[homeRealmDiscoveryPolicies](/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-beta) и </li> <li>[tokenLifetimePolicies](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta)</li> |
+| Дополнение | Бета | Добавленный тип ресурса [activityBasedTimeoutPolicy](/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-beta) управляет автоматическим выходом для веб-сессий после периода бездействия для приложений, поддерживающих функции времени ожидания на основе действий.|
+| Дополнение | Бета |Тип ресурса [claimsMappingPolicy](/graph/api/resources/claimsMappingPolicy?view=graph-rest-beta) управляет сопоставлением утверждений для протоколов WS-Fed, SAML, OAuth 2.0 и OpenID Connect при использовании маркеров, выпущенных для конкретного приложения.|
+| Дополнение | бета | Тип ресурса [homeRealmDiscoveryPolicy](/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-beta) управляет действием проверки подлинности Azure Active Directory для федеративных пользователей, в частности, для автоматического ускорения и ограничений проверки подлинности в федеративных доменах. |
+| Дополнение | Бета | Тип ресурса [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta) управляет длительностью жизненного цикла маркеров доступа, используемых для доступа к защищенным ресурсам.|
+
 ### <a name="security"></a>Безопасность 
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Изменение | Бета-версия и версия 1.0 | Метод [Обновить оповещение](/graph/api/alert-update?view=graph-rest-1.0&tabs=http) теперь обновляет поле **comments** только со следующими значениями: <br/> `Closed in IPC`, `Closed in MCAS`.|
+
+### <a name="users"></a>Пользователи
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение | 1.0 | Добавлено свойство **identities** для ресурса [user](/graph/api/resources/user?view=graph-rest-1.0). Это свойство представляет набор удостоверений (например, местные учетные записи и учетные записи социальных сетей), которые пользователь может использовать для входа.|
 
 ## <a name="december-2019"></a>Декабрь 2019 г.
 
@@ -89,10 +104,9 @@ ms.locfileid: "41216814"
 ### <a name="identity-and-access-azure-ad"></a>Удостоверение и доступ (Azure AD)
 | **Тип изменения** | **Версия**   | **Описание**                          |
 |:---|:---|:---|
-|Изменение | Бета |Обновлено поведение отношений **appRoleAssignments** и **appRoleAssignedTo** в [servicePrincipal](/graph/api/resoureces/serviceprincipal?view=graph-rest-beta) для возвращения ролей, как описано. **appRoleAssignments** возвращает роли приложений, предоставленные субъекту-службе, **appRoleAssignedTo** возвращает роли приложений, предоставленные субъектам, в субъект-службу.|
+|Изменение | Бета |Обновлено поведение отношений **appRoleAssignments** и **appRoleAssignedTo** в [servicePrincipal](/graph/api/resources/serviceprincipal.md) для возвращения ролей, как описано. **appRoleAssignments** возвращает роли приложений, предоставленные субъекту-службе, **appRoleAssignedTo** возвращает роли приложений, предоставленные субъектам, в субъект-службу.|
 | Дополнение | Бета | Добавлен новый тип объекта [accessPackageResourceRequest](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta). |
 |Дополнение|Бета-версия, версия 1.0|Добавлена поддержка возвращения ограниченного объема сведений, если у вашего приложения нет доступа к определенным типам ресурсов в коллекции отклика. Дополнительные сведения см. в статье [Ограниченные сведения, возвращаемые для недоступных объектов member](permissions-reference.md#limited-information-returned-for-inaccessible-member-objects).|
-
 
 ### <a name="identity-and-access-azure-ad--information-protection"></a>Удостоверения и доступ (Azure AD) | Защита информации
 
@@ -2021,7 +2035,7 @@ ms.locfileid: "41216814"
 |Дополнение|Бета|Добавлены новые объекты:<br/>[androidWorkProfileCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidworkprofilecompliancepolicy?view=graph-rest-beta);<br/>[easEmailProfileConfigurationBase](/graph/api/resources/intune-deviceconfig-easemailprofileconfigurationbase?view=graph-rest-beta);<br/>[mobileAppIntentAndState](/graph/api/resources/intune-troubleshooting-mobileappintentandstate?view=graph-rest-beta);<br/>[mobileAppTroubleshootingEvent](/graph/api/resources/intune-troubleshooting-mobileapptroubleshootingevent?view=graph-rest-beta);<br/>[unsupportedDeviceConfiguration](/graph/api/resources/intune-deviceconfig-unsupporteddeviceconfiguration?view=graph-rest-beta);<br/>[windowsKioskConfiguration](/graph/api/resources/intune-deviceconfig-windowskioskconfiguration?view=graph-rest-beta).<br/>|
 |Дополнение|Бета|Добавлены новые сложные типы:<br/>[managedDeviceCleanupSettings](/graph/api/resources/intune-devices-manageddevicecleanupsettings?view=graph-rest-beta);<br/>[mobileAppIntentAndStateDetail](/graph/api/resources/intune-troubleshooting-mobileappintentandstatedetail?view=graph-rest-beta);<br/>[mobileAppTroubleshootingAppPolicyCreationHistory](/graph/api/resources/intune-troubleshooting-mobileapptroubleshootingapppolicycreationhistory?view=graph-rest-beta);<br/>[mobileAppTroubleshootingAppStateHistory](/graph/api/resources/intune-troubleshooting-mobileapptroubleshootingappstatehistory?view=graph-rest-beta);<br/>[mobileAppTroubleshootingAppTargetHistory](/graph/api/resources/intune-troubleshooting-mobileapptroubleshootingapptargethistory?view=graph-rest-beta);<br/>[mobileAppTroubleshootingAppUpdateHistory](/graph/api/resources/intune-troubleshooting-mobileapptroubleshootingappupdatehistory?view=graph-rest-beta);<br/>[mobileAppTroubleshootingDeviceCheckinHistory](/graph/api/resources/intune-troubleshooting-mobileapptroubleshootingdevicecheckinhistory?view=graph-rest-beta);<br/>[mobileAppTroubleshootingHistoryItem](/graph/api/resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem?view=graph-rest-beta);<br/>[unsupportedDeviceConfigurationDetail](/graph/api/resources/intune-deviceconfig-unsupporteddeviceconfigurationdetail?view=graph-rest-beta);<br/>**windowsAutoPilotEnrollmentSettings**;<br/>[windowsKioskActiveDirectoryGroup](/graph/api/resources/intune-deviceconfig-windowskioskactivedirectorygroup?view=graph-rest-beta);<br/>[windowsKioskAppBase](/graph/api/resources/intune-deviceconfig-windowskioskappbase?view=graph-rest-beta);<br/>[windowsKioskAppConfiguration](/graph/api/resources/intune-deviceconfig-windowskioskappconfiguration?view=graph-rest-beta);<br/>[windowsKioskAutologon](/graph/api/resources/intune-deviceconfig-windowskioskautologon?view=graph-rest-beta);<br/>[windowsKioskAzureADGroup](/graph/api/resources/intune-deviceconfig-windowskioskazureadgroup?view=graph-rest-beta);<br/>[windowsKioskAzureADUser](/graph/api/resources/intune-deviceconfig-windowskioskazureaduser?view=graph-rest-beta);<br/>[windowsKioskDesktopApp](/graph/api/resources/intune-deviceconfig-windowskioskdesktopapp?view=graph-rest-beta);<br/>[windowsKioskLocalGroup](/graph/api/resources/intune-deviceconfig-windowskiosklocalgroup?view=graph-rest-beta);<br/>[windowsKioskLocalUser](/graph/api/resources/intune-deviceconfig-windowskiosklocaluser?view=graph-rest-beta);<br/>[windowsKioskMultipleApps](/graph/api/resources/intune-deviceconfig-windowskioskmultipleapps?view=graph-rest-beta);<br/>[windowsKioskProfile](/graph/api/resources/intune-deviceconfig-windowskioskprofile?view=graph-rest-beta);<br/>[windowsKioskSingleUWPApp](/graph/api/resources/intune-deviceconfig-windowskiosksingleuwpapp?view=graph-rest-beta);<br/>[windowsKioskUser](/graph/api/resources/intune-deviceconfig-windowskioskuser?view=graph-rest-beta);<br/>[windowsKioskUWPApp](/graph/api/resources/intune-deviceconfig-windowskioskuwpapp?view=graph-rest-beta);<br/>[windowsKioskVisitor](/graph/api/resources/intune-deviceconfig-windowskioskvisitor?view=graph-rest-beta).<br/>|
 |Дополнение|бета|Добавлены новые типы перечисления:<br/>[defenderScheduleScanDay](/graph/api/resources/intune-deviceconfig-defenderschedulescanday?view=graph-rest-beta);<br/>[defenderSubmitSamplesConsentType](/graph/api/resources/intune-deviceconfig-defendersubmitsamplesconsenttype?view=graph-rest-beta);<br/>[domainNameSource](/graph/api/resources/intune-deviceconfig-domainnamesource?view=graph-rest-beta);<br/>[localSecurityOptionsSmartCardRemovalBehaviorType](/graph/api/resources/intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype?view=graph-rest-beta);<br/>[mobileAppActionType](/graph/api/resources/intune-troubleshooting-mobileappactiontype?view=graph-rest-beta);<br/>[mobileAppIntent](/graph/api/resources/intune-troubleshooting-mobileappintent?view=graph-rest-beta);<br/>[roleAssignmentScopeType](/graph/api/resources/intune-rbac-roleassignmentscopetype?view=graph-rest-beta);<br/>[usernameSource](/graph/api/resources/intune-deviceconfig-usernamesource?view=graph-rest-beta);<br/>[windowsDeviceUsageType](/graph/api/resources/intune-enrollment-windowsdeviceusagetype?view=graph-rest-beta).<br/>|
-|Дополнение|Бета-версия|Добавлено действие [setDeviceName](/graph/api/intune-devices-manageddevice-setdevicename?view=graph-rest-beta)<br/>для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta). |
+|Дополнение|Бета|Добавлено действие [setDeviceName](/graph/api/intune-devices-manageddevice-setdevicename?view=graph-rest-beta)<br/>для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta). |
 |Удаление|Бета|Удалены следующие объекты:<br/>**depEnrollmentProfile**;<br/>**enrollmentProfile**;<br/>**importedAppleDeviceIdentity**<br/>**importedAppleDeviceIdentityResult**.<br/>|
 |Удаление|Бета-версия|Удалены следующие сложные типы:<br/>**managementCertificateWithThumbprint**.<br/>|
 |Удаление|бета|Удалены следующие типы перечисления:<br/>**depTokenType**;<br/>**discoverySource**;<br/>**iTunesPairingMode**.<br/>|
@@ -2426,7 +2440,7 @@ ms.locfileid: "41216814"
 |Изменение|Бета|Добавлены свойства **localSecurityOptionsBlockMicrosoftAccounts**, **localSecurityOptionsEnableAdministratorAccount**, **defenderPreventCredentialStealingType**, **defenderProcessCreationType**, **defenderUntrustedUSBProcessType**, **defenderUntrustedExecutableType**, ** defenderPasswordProtectedEmailContentExecutionType**, **defenderAdvancedRansomewareProtectionType** и **applicationGuardAllowFileSaveOnHost** в объект [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta).|
 |Изменение|Бета|Добавлены свойства **edgeFavoritesListLocation** и **edgeBlockEditFavorites** в объект [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta).|
 |Изменение|Бета|Добавлены свойства **printerNames**, **defaultPrinterName** и **blockAddingNewPrinter** в объект [windows10SecureAssessmentConfiguration](/graph/api/resources/intune-deviceconfig-windows10secureassessmentconfiguration?view=graph-rest-beta).|
-|Изменение|Бета|Добавлено свойство навигации **importedWindowsAutopilotDeviceIdentities** в объект [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta).|
+|Изменить|Бета|Добавлено свойство навигации **importedWindowsAutopilotDeviceIdentities** в объект [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta).|
 |Изменение|Бета|Добавлено свойство **shareAPNSData** для сложного типа [adminConsent](/graph/api/resources/intune-devices-adminconsent?view=graph-rest-beta).|
 |Изменение|Бета|Удалено свойство **collectFullIOSAppInventory** из сложного типа [adminConsent](/graph/api/resources/intune-devices-adminconsent?view=graph-rest-beta).|
 |Изменение|Бета|Удалено свойство **deviceUsageType** из сложного типа [outOfBoxExperienceSettings](/graph/api/resources/intune-enrollment-outofboxexperiencesettings?view=graph-rest-beta).|
@@ -3098,7 +3112,7 @@ ms.locfileid: "41216814"
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Дополнение        | Бета-версия        | Добавлено свойство **employeeId** для [user](/graph/api/resources/user?view=graph-rest-beta). |
+| Дополнение        | Бета        | Добавлено свойство **employeeId** для [user](/graph/api/resources/user?view=graph-rest-beta). |
 
 ## <a name="july-2017"></a>Июль 2017 г.
 

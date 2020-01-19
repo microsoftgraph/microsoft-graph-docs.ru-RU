@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 54c4ce8f21a2e62311d3931915f682f8f2366bfc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: aebd847d9bb922867b7293d6f06f0ae65f23c8cb
+ms.sourcegitcommit: bd0daf5c133ab29af9337a5edd3b8509fd2313d5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372561"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41232030"
 ---
 # <a name="create-user"></a>Создание пользователя
 
@@ -46,7 +46,7 @@ POST /users
 
 В теле запроса предоставьте описание объекта [user](../resources/user.md) в формате JSON.
 
-В приведенной ниже таблице показаны обязательные свойства при создании пользователя.
+В приведенной ниже таблице перечислены обязательные свойства при создании пользователя. Если вы включаете свойство **identities** для создаваемого пользователя, не все перечисленные свойства являются обязательными. Для [удостоверения локальной учетной записи B2C](../resources/objectidentity.md) обязательным является только **passwordProfile**, а свойству **passwordPolicy** должно быть присвоено значение `DisablePasswordExpiration`. Для удостоверения социальных сетей ни одно свойство не является обязательным.
 
 | Параметр | Тип | Описание|
 |:---------------|:--------|:----------|
@@ -68,7 +68,9 @@ POST /users
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
+### <a name="example-1-create-a-user"></a>Пример 1. Создание пользователя
+
+#### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
@@ -114,7 +116,7 @@ Content-type: application/json
 
 В теле запроса предоставьте описание объекта [user](../resources/user.md) в формате JSON.
 
-##### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
@@ -143,6 +145,95 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-2-create-a-user-with-social-and-local-account-identities"></a>Пример 2. Создание пользователя с удостоверениями учетной записи социальных сетей и локальной учетной записи
+
+Создайте нового пользователя с удостоверением локальной учетной записи с именем для входа, адресом электронной почты для входа и удостоверением социальной сети. Этот пример обычно применяется для сценариев миграции в клиентах B2C.  
+
+>[!NOTE] 
+>Для удостоверений локальных учетных записей срок действия паролей должен быть отключен. Также должна быть отключена принудительная смена пароля при следующем входе.
+
+#### <a name="request"></a>Запрос
+
+<!-- {  
+  "blockType": "request",   
+  "name": "create_user_from_users_identities"   
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/users
+Content-type: application/json
+
+{
+  "displayName": "John Smith",
+  "identities": [
+    {
+      "signInType": "userName",
+      "issuer": "contoso.onmicrosoft.com",
+      "issuerAssignedId": "johnsmith"
+    },
+    {
+      "signInType": "emailAddress",
+      "issuer": "contoso.onmicrosoft.com",
+      "issuerAssignedId": "jsmith@yahoo.com"
+    },
+    {
+      "signInType": "federated",
+      "issuer": "facebook.com",
+      "issuerAssignedId": "5eecb0cd"
+    }
+  ],
+  "passwordProfile" : {
+    "password": "password-value"
+  },
+  "passwordPolicies": "DisablePasswordExpiration"
+}
+```
+
+---
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика. 
+
+> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+  "displayName": "John Smith",
+  "id": "4c7be08b-361f-41a8-b1ef-1712f7a3dfb2",
+  "identities": [
+    {
+      "signInType": "userName",
+      "issuer": "contoso.onmicrosoft.com",
+      "issuerAssignedId": "johnsmith"
+    },
+    {
+      "signInType": "emailAddress",
+      "issuer": "contoso.onmicrosoft.com",
+      "issuerAssignedId": "jsmith@yahoo.com"
+    },
+    {
+      "signInType": "federated",
+      "issuer": "facebook.com",
+      "issuerAssignedId": "5eecb0cd"
+    }
+  ],
+  "passwordPolicies": "DisablePasswordExpiration"
+}
+```
+## <a name="see-also"></a>См. также
+
+- [Добавление пользовательских данных в ресурсы с помощью расширений](/graph/extensibility-overview)
+- [Добавление пользовательских данных в ресурсы user с помощью открытых расширений](/graph/extensibility-open-users)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

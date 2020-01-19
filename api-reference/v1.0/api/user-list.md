@@ -5,16 +5,16 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6f413e41b7b2a35bfd16fa16841fa68c10330660
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: f9648b505700b05b05a64f977cb94bbd7d92f6e0
+ms.sourcegitcommit: bd0daf5c133ab29af9337a5edd3b8509fd2313d5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36727420"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "41232037"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 
-Получение списка объектов user.
+Получение списка объектов [user](../resources/user.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,7 +47,6 @@ GET /users
 | Заголовок        | Значение                      |
 |:--------------|:---------------------------|
 | Авторизация | Bearer {токен} (обязательный)  |
-| Content-Type  | application/json           |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -181,6 +180,53 @@ Content-length: 159
       "displayName": "displayName-value",
       "givenName": "givenName-value",
       "postalCode": "postalCode-value"
+    }
+  ]
+}
+```
+
+### <a name="example-3-find-a-user-account-using-a-sign-in-name"></a>Пример 3. Поиск учетной записи пользователя с помощью имени для входа
+
+Найдите учетную запись пользователя в клиенте B2C, используя имя для входа (также называемое локальной учетной записью). Этот запрос может использоваться службой поддержки для поиска учетной записи пользователя в клиенте B2C (в данном примере клиентом B2C является contoso.onmicrosoft.com).
+
+>[!NOTE]
+>При фильтрации по свойству **identities** требуется указывать параметры **issuer** и **issuerAssignedId**.
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_signinname_users"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'contoso.onmicrosoft.com')
+```
+
+---
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика. 
+> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 108
+
+{
+  "value": [
+    {
+      "displayName": "John Smith",
+      "id": "4c7be08b-361f-41a8-b1ef-1712f7a3dfb2"
     }
   ]
 }

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 2a2394d7e24ed1d7ab69f6dcf1f094f5d1661e14
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 979f680c36342e33e8e93e416c2357662978f4c6
+ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870396"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "41234035"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 
@@ -41,7 +41,9 @@ ms.locfileid: "40870396"
 | [Создание расширения](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Создание свойства расширения для объекта application. |
 | [Список расширений](../api/application-list-extensionproperty.md) | Коллекция [extensionProperty](extensionProperty.md) | Список свойств расширения для объекта application. |
 | [Удаление расширения](../api/application-delete-extensionproperty.md) | Нет | Удаление свойства расширения объекта application. |
-|[Перечисление назначенных политик](../api/policy-list-assigned.md)| Коллекция [policy](policy.md)| Получение всех политик, назначенных объекту.|
+|[Назначение типа ресурса tokenLifetimePolicy](../api/application-post-tokenlifetimepolicies.md)| Коллекция [tokenLifetimePolicy](tokenlifetimepolicy.md)| Назначение типа ресурса tokenLifetimePolicy объекту.|
+|[Перечисление типов ресурсов tokenLifetimePolicy](../api/application-list-tokenlifetimepolicies.md)| Коллекция [tokenLifetimePolicy](tokenlifetimepolicy.md)| Получение всех типов ресурсов tokenLifetimePolicies, назначенных объекту.|
+|[Удаление типа ресурса tokenLifetimePolicy](../api/application-delete-tokenlifetimepolicies.md)| Коллекция [tokenLifetimePolicy](tokenlifetimepolicy.md)| Удаление типа ресурса tokenLifetimePolicy из объекта.|
 |[Перечисление владельцев](../api/application-list-owners.md) |Коллекция [directoryObject](directoryobject.md)| Получение коллекции объектов owner.|
 |[Добавление владельца](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Добавление владельца путем помещения в коллекцию владельцев.|
 |[Удаление владельца](../api/application-delete-owners.md) |Нет| Удаление владельца приложения.|
@@ -89,7 +91,7 @@ ms.locfileid: "40870396"
 |extensionProperties|Коллекция [extensionProperty](extensionproperty.md)| Только для чтения. Допускается значение null.|
 |onlineMeetings  |Коллекция [onlineMeeting](onlinemeeting.md)|Только для чтения. Допускается значение null.|
 |owners|Коллекция [directoryObject](directoryobject.md)|Объекты каталогов, владеющие приложением. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект. Требуется версия 2013-11-08 или более поздняя. Только для чтения. Допускается значение null.|
-|policy|Коллекция [policy](policy.md)|Политики, назначенные приложению.|
+|tokenLifetimePolicies|Коллекция [tokenLifetimePolicy](tokenLifetimePolicy.md)|Типы ресурсов tokenLifetimePolicy, назначенные приложению.|
 
 ## <a name="json-representation"></a>Представление JSON
 
