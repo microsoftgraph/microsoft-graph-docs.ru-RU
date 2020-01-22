@@ -4,12 +4,12 @@ description: В Microsoft Graph предусмотрены необязател�
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: fc0bd9d650309159f60b5ad3dfaf618d58de3fc1
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: f5cee8933c13ea9f92ae14ae664e9c1492267ea1
+ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216891"
+ms.lasthandoff: 01/21/2020
+ms.locfileid: "41251901"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Настройка ответов с помощью параметров запроса
 
@@ -47,6 +47,15 @@ API Microsoft Graph может поддерживать один или неск
 | Имя                     | Описание | Пример
 |:-------------------------|:------------|:---------|
 | [$skipToken](#skiptoken-parameter) | Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц. (Вместо этого параметра некоторые API используют `$skip`.) | `/users?$skiptoken=X%274453707402000100000017...`|
+
+## <a name="other-odata-url-capabilities"></a>Другие возможности URL-адресов OData
+
+Следующие возможности OData 4.0 являются сегментами URL-адресов, а не параметрами запросов.
+
+| Имя                     | Описание | Пример 
+|:-------------------------|:------------|:---------|
+| [$ref](/graph/api/group-post-members?view=graph-rest-1.0&tabs=http) | Обновляет принадлежность объектов к коллекции. | `POST /groups/{id}/members/$ref` |
+| [$value](/graph/api/profilephoto-get) | Возвращает или обновляет двоичное значение элемента. | `GET /me/photo/$value` |
 
 ## <a name="encoding-query-parameters"></a>Кодирование параметров запроса
 
