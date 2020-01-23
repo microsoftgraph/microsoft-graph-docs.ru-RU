@@ -1,18 +1,18 @@
 ---
-title: Назначение Токенлифетимеполици
+title: Назначение типа ресурса tokenLifetimePolicy
 description: Назначьте Токенлифетимеполици для приложения или участника службы.
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5c68600b713d220468853bf56eaa6a136b647f8a
-ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
+ms.openlocfilehash: fca668417d52914194ef087a32b28478101a32d7
+ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41234456"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41475623"
 ---
-# <a name="assign-tokenlifetimepolicy"></a>Назначение Токенлифетимеполици
+# <a name="assign-tokenlifetimepolicy"></a>Назначение типа ресурса tokenLifetimePolicy
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,7 +44,7 @@ POST /servicePrincipals/{id}/tokenLifetimePolicies/$ref
 | Авторизация | Bearer {token} |
 | Content-Type | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса укажите идентификатор объекта [токенлифетимеполици](../resources/tokenlifetimepolicy.md) (с помощью `@odata.id` свойства), который должен быть назначен для приложения или участника-службы.
 
@@ -57,6 +57,8 @@ POST /servicePrincipals/{id}/tokenLifetimePolicies/$ref
 ### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_tokenlifetimepolicy_from_application"
@@ -70,6 +72,12 @@ Content-Type: application/json
   "@odata.id":"https://graph.microsoft.com/beta/policies/tokenLifetimePolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9"
 }
 ```
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-tokenlifetimepolicy-from-application-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

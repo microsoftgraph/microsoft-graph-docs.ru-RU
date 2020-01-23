@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d59d9fc29dd7c48e4b65d9551a38b378d2860c89
-ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
+ms.openlocfilehash: 6ffca9e41cdf51437ff421e472c5efa7c6faf671
+ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41234470"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41476351"
 ---
 # <a name="update-claimsmappingpolicy"></a>Обновление клаимсмаппингполици
 
@@ -49,10 +49,10 @@ PATCH /policies/claimsMappingPolicies/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|RDLC|Коллекция строк| Коллекция String, содержащая строку JSON, определяющую правила и параметры для этой политики.  Обязательный атрибут.|
+|RDLC|Коллекция String| Коллекция String, содержащая строку JSON, определяющую правила и параметры для этой политики.  Обязательный атрибут.|
 |description|String| Описание для этой политики.|
 |displayName|Строка| Отображаемое имя для этой политики. Обязательный элемент.|
-|исорганизатиондефаулт|Логический|Если задано значение true, активируется эта политика. Для одного и того же типа политики может быть задано несколько политик, но только одна из них может быть активирована в качестве организации по умолчанию. Необязательное значение по умолчанию — false.|
+|исорганизатиондефаулт|Boolean|Если задано значение true, активируется эта политика. Для одного и того же типа политики может быть задано несколько политик, но только одна из них может быть активирована в качестве организации по умолчанию. Необязательное значение по умолчанию — false.|
 
 ## <a name="response"></a>Отклик
 
@@ -63,6 +63,8 @@ PATCH /policies/claimsMappingPolicies/{id}
 ### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_claimsmappingpolicy"
@@ -81,6 +83,12 @@ Content-type: application/json
   "type": "type-value"
 }
 ```
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-claimsmappingpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

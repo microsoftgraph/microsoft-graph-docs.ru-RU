@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0910319269117a2feea4e26f7d9efbe3472bae1a
-ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
+ms.openlocfilehash: d633dba50899498d67d284c419afbe9a97f19bf3
+ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41234453"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41475448"
 ---
 # <a name="update-activitybasedtimeoutpolicy"></a>Обновление активитибаседтимеаутполици
 
@@ -49,10 +49,10 @@ PATCH /policies/activityBasedTimeoutPolicies/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|RDLC|Коллекция строк| Коллекция String, содержащая строку JSON, определяющую правила и параметры для этой политики.  Обязательный атрибут.|
+|RDLC|Коллекция String| Коллекция String, содержащая строку JSON, определяющую правила и параметры для этой политики.  Обязательный атрибут.|
 |description|String| Описание для этой политики.|
 |displayName|Строка| Отображаемое имя для этой политики. Обязательный элемент.|
-|исорганизатиондефаулт|Логический|Если задано значение true, активируется эта политика. Для одного и того же типа политики может быть задано несколько политик, но только одна из них может быть активирована в качестве организации по умолчанию. Необязательное значение по умолчанию — false.|
+|исорганизатиондефаулт|Boolean|Если задано значение true, активируется эта политика. Для одного и того же типа политики может быть задано несколько политик, но только одна из них может быть активирована в качестве организации по умолчанию. Необязательное значение по умолчанию — false.|
 
 ## <a name="response"></a>Отклик
 
@@ -63,6 +63,8 @@ PATCH /policies/activityBasedTimeoutPolicies/{id}
 ### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_activitybasedtimeoutpolicy"
@@ -81,6 +83,12 @@ Content-type: application/json
   "type": "type-value"
 }
 ```
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-activitybasedtimeoutpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 
