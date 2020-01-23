@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: c83fd55e400da437ead3aa2f685cc0d30c5e1224
-ms.sourcegitcommit: d8a58221ed1f2b7b7073fd621da4737e11ba53c5
+ms.openlocfilehash: df1fad31fec4616a3173c6e688e3eaa37fad331c
+ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36838932"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41495380"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var workbookCommentReply = new WorkbookCommentReply
     ContentType = "plain"
 };
 
-await graphClient.Drive.Root.Workbook.Comments["{id}"].Replies
+await graphClient.Drive.Items["{id}"].Workbook.Comments["{id}"].Replies
     .Request()
     .AddAsync(workbookCommentReply);
 
