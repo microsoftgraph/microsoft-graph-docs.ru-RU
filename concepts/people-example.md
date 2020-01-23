@@ -2,15 +2,15 @@
 title: Использование API People в Microsoft Graph для получения сведений о наиболее релевантных для вас людях
 description: 'Приложения Microsoft Graph могут использовать API People для получения сведений о наиболее релевантных для пользователя людях. '
 ms.date: 4/9/2019
-author: simonhult
+author: anthona
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: 55d91f72b561b5e476322b4aee051979005c577a
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 402c3810d3f772f8bf6fa89b265bce13575217cb
+ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36793012"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "41477111"
 ---
 # <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>Использование API People в Microsoft Graph для получения сведений о наиболее релевантных для вас людях
 
@@ -412,7 +412,7 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/me/people/?$top=1000&$Select=displayName
 ```
 
-Ниже приводится пример отклика.
+Ниже показан пример отклика.
 
 ```http
 HTTP/1.1 200 OK
@@ -475,7 +475,12 @@ Content-type: application/json
   ]
 }
 ```
+### <a name="types-of-results-included"></a>Типы включаемых результатов
+По умолчанию Microsoft Graph предоставляет результаты только для почтовых ящиков, не включающие результаты для каталогов и организации. Чтобы получить результаты для каталога, укажите заголовок HTTP, как показано ниже.
 
+```
+"X-PeopleQuery-QuerySources: Mailbox,Directory”
+```
 ### <a name="select-the-fields-to-return"></a>Выбор возвращаемых полей
 
 Вы можете ограничить объем данных, возвращаемых с сервера, выбрав одно или несколько полей с помощью параметра *$select*. Поле `@odata.id` возвращается всегда.
