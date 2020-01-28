@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: fbb3ba929289da43aaa2dc22bc8dce799c1b63f8
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 584e7016e74d7aeef8093af8e62e216a8f2870aa
+ms.sourcegitcommit: 0f39f39a1c0300ef013ebd12e4df2b5ba4dabbf8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37998625"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41559056"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
@@ -36,12 +36,6 @@ ms.locfileid: "37998625"
 |[Перечисление всех команд](/graph/teams-list-all-teams) | Коллекция [group](group.md) | Перечисление всех групп, содержащих команды. |
 |[Получение фотографии команды](../api/team-get-photo.md) | Двоичные данные | Вы можете получить фотографию (изображение) для команды. |
 |[Обновление фотографии команды](../api/team-update-photo.md) | Отсутствует | Вы можете обновить фотографию (изображение) для команды. |
-|[Публикация приложений в организации](../resources/teamsapp.md)| [teamsApp](../resources/teamsapp.md) | Создание приложений Teams, видимых только для вашей организации. |
-|[Добавление приложения в команду](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsappinstallation.md) | Добавляет (устанавливает) приложение в команду.|
-|[Добавление вкладки в канал](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | Добавляет (устанавливает) вкладку в канал команды.|
-|[Перечисление сообщений в каналах](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | [Получение сообщений в канале](../api/channel-list-messages.md) |
-|[Создание объекта chatMessage в канале](../api/channel-post-messages.md)  | [chatMessage](../resources/chatmessage.md) | Отправка сообщения в канал. |
-|[Создание ответа на chatMessage в канале](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | Ответ на сообщение в канале. |
 
 ## <a name="properties"></a>Свойства
 

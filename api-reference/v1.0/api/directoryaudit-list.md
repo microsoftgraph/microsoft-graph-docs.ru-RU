@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7733cd1a29640331ecd4ab766bc3563fa29600b7
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 91f4c33f7f44fc3d0254fc799c2c5b9e756b7386
+ms.sourcegitcommit: 0f39f39a1c0300ef013ebd12e4df2b5ba4dabbf8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40869964"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558790"
 ---
 # <a name="list-directoryaudits"></a>Перечисление directoryAudits
 
@@ -38,7 +38,7 @@ GET /auditLogs/directoryaudits
 
 Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Сведения об использовании этих параметров см. в статье [Параметры запросов OData](/graph/query_parameters).
 
-| Имя                                                       | Описание                                                                   | Пример                                                                     |
+| Параметр                                                       | Описание                                                                   | Пример                                                                     |
 | :--------------------------------------------------------- | :---------------------------------------------------------------------------- | :-------------------------------------------------------------------------- |
 | [\$Фишинг](/graph/query_parameters#filter-parameter)       | Фильтрует результаты (строки).                                                       | `/auditLogs/directoryAudits?&$filter=createdDateTime le 2018-01-24`         |
 | [\$Вверх](/graph/query_parameters#top-parameter)             | Задает размер страницы результатов.                                                | `/auditLogs/directoryAudits?$top=1`                                         |
@@ -46,7 +46,7 @@ GET /auditLogs/directoryaudits
 
 ### <a name="attributes-supported-by-filter-parameter"></a>Атрибуты, \$поддерживаемые параметром Filter
 
-| Имя атрибута                                               | Поддерживаемые операторы |
+| Атрибут                                                    | Поддерживаемые операторы |
 | :----------------------------------------------------------- | :------------------ |
 | activityDisplayName                                          | eq, startswith      |
 | activityDateTime                                             | eq, ge, le          |

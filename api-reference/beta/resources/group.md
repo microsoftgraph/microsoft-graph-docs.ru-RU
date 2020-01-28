@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 926f0a26a8d534bef199ddff72a07af4e455002d
-ms.sourcegitcommit: 6265ddb4e3d22bb556615589594e40df018fb0f1
+ms.openlocfilehash: 1f9be33d5a4932951ca2a12a2a0bbad01a9f5b2c
+ms.sourcegitcommit: 0f39f39a1c0300ef013ebd12e4df2b5ba4dabbf8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39672847"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41559028"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -37,6 +37,7 @@ ms.locfileid: "39672847"
 |[Получение группы](../api/group-get.md) | [group](group.md) |Чтение свойств и связей объекта group.|
 |[Обновление группы](../api/group-update.md) | Нет |Обновление свойств объекта group. |
 |[Удаление группы](../api/group-delete.md) | Нет |Удаление объекта group. |
+|[Список групп](../api/group-list.md) |[group](group.md)|Чтение свойств и связей всех объектов group.|
 |[delta](../api/group-delta.md)|Коллекция group| Получение добавочных изменений для групп. |
 |[Перечисление groupLifecyclePolicies](../api/group-list-grouplifecyclepolicies.md) |Коллекция [groupLifecyclePolicy](grouplifecyclepolicy.md)| Перечисление политик жизненного цикла для групп. |
 |[Перечисление владельцев](../api/group-list-owners.md) |Коллекция [directoryObject](directoryobject.md)| Получение владельцев группы из свойства навигации **owners**.|

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 811dd2d8739cb77c9b12db9226428e0c5901232d
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 99a40b7b8f4446385632c3274924c733a20da24e
+ms.sourcegitcommit: 0f39f39a1c0300ef013ebd12e4df2b5ba4dabbf8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36718249"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558776"
 ---
 # <a name="list-directoryaudits"></a>Перечисление directoryAudits
 
@@ -41,7 +41,7 @@ GET /auditLogs/directoryAudits
 
 Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Сведения о том, как использовать эти параметры, можно найти в разделе [Параметры запроса OData](/graph/query_parameters).
 
-|Имя     |Описание                            |Пример|
+|Параметр     |Описание                            |Пример|
 |:--------------------|----------------|------------------------------------------------------------------------|
 |[$filter](/graph/query-parameters#filter-parameter)|Фильтрует результаты (строки). |`/auditLogs/directoryAudits?$filter=createdDateTime le 2018-01-24`<br>`/auditLogs/directoryAudits?$filter=targetResources/any(x: startswith(x/displayName, 'def'))` |
 |[$top](/graph/query-parameters#top-parameter)|Задает размер страницы результатов.|`/auditLogs/directoryAudits?$top=1`|
@@ -49,7 +49,7 @@ GET /auditLogs/directoryAudits
 
 ### <a name="attributes-supported-by-filter-parameter"></a>Атрибуты, поддерживаемые параметром $filter
 
-|Имя атрибута |Поддерживаемые операторы|
+|Атрибут        |Поддерживаемые операторы|
 |:----------------|:------|
 |activityDisplayName| eq, startswith|
 |activityDateTime| eq, ge, le|
@@ -99,14 +99,14 @@ GET https://graph.microsoft.com/beta/auditLogs/directoryAudits
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-directoryaudits-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-directoryaudits-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. 
 

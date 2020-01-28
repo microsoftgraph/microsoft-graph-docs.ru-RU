@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 4639426918198622897e91fc945d107be0a26855
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 0678c741172d34d6558aa56724378d18811432ee
+ms.sourcegitcommit: 0f39f39a1c0300ef013ebd12e4df2b5ba4dabbf8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36730178"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "41558783"
 ---
 # <a name="get-open-extension"></a>Получение открытого расширения
 
@@ -112,11 +112,11 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 
 Убедитесь, что вы применяете [кодировку URL](https://www.w3schools.com/tags/ref_urlencode.asp) для символов пробелов в строке `$filter`.
 
-|Имя|Значение|Описание|
+|Параметр|Описание|Пример|
 |:---------------|:--------|:-------|
-|$filter|string|Возвращает расширение, свойство **id** которого совпадает со значением параметра `extensionId`.|
-|$filter с **любым** оператором|string|Возвращает экземпляры коллекции ресурсов, содержащие расширение, свойство **id** которого совпадает со значением параметра `extensionId`.|
-|$expand|string|Дополняет экземпляр ресурса расширением. |
+|$filter|Возвращает расширение, свойство **id** которого совпадает со значением параметра `extensionId`.|[Запрос 3](#request-3)|
+|$filter с **любым** оператором|Возвращает экземпляры коллекции ресурсов, содержащие расширение, свойство **id** которого совпадает со значением параметра `extensionId`.|[Запрос 5](#request-5)|
+|$expand|Дополняет экземпляр ресурса расширением. |[Запрос 3](#request-3) и [запрос 5](#request-5)|
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Значение |
