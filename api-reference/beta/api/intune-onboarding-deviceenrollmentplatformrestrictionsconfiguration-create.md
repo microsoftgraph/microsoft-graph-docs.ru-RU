@@ -5,31 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 56779b08cbacec10b4dc53bc2a2b634c528c897a
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 79d1591dd810327b96f1c244e874136f5e79e444
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39941843"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41634986"
 ---
-# <a name="create-deviceenrollmentplatformrestrictionsconfiguration"></a><span data-ttu-id="5ff58-103">Создание объекта deviceEnrollmentPlatformRestrictionsConfiguration</span><span class="sxs-lookup"><span data-stu-id="5ff58-103">Create deviceEnrollmentPlatformRestrictionsConfiguration</span></span>
+# <a name="create-deviceenrollmentplatformrestrictionsconfiguration"></a><span data-ttu-id="9e618-103">Создание объекта deviceEnrollmentPlatformRestrictionsConfiguration</span><span class="sxs-lookup"><span data-stu-id="9e618-103">Create deviceEnrollmentPlatformRestrictionsConfiguration</span></span>
 
-> <span data-ttu-id="5ff58-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5ff58-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="9e618-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9e618-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="5ff58-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="5ff58-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="9e618-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="9e618-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="5ff58-106">Создание объекта [deviceEnrollmentPlatformRestrictionsConfiguration](../resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="5ff58-106">Create a new [deviceEnrollmentPlatformRestrictionsConfiguration](../resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md) object.</span></span>
+<span data-ttu-id="9e618-106">Создание объекта [deviceEnrollmentPlatformRestrictionsConfiguration](../resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md).</span><span class="sxs-lookup"><span data-stu-id="9e618-106">Create a new [deviceEnrollmentPlatformRestrictionsConfiguration](../resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="5ff58-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="5ff58-107">Prerequisites</span></span>
-<span data-ttu-id="5ff58-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5ff58-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="9e618-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="9e618-107">Prerequisites</span></span>
+<span data-ttu-id="9e618-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9e618-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5ff58-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5ff58-110">Permission type</span></span>|<span data-ttu-id="5ff58-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="5ff58-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="9e618-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9e618-110">Permission type</span></span>|<span data-ttu-id="9e618-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="9e618-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="5ff58-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5ff58-112">Delegated (work or school account)</span></span>|<span data-ttu-id="5ff58-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5ff58-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="5ff58-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5ff58-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="5ff58-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5ff58-115">Not supported.</span></span>|
-|<span data-ttu-id="5ff58-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="5ff58-116">Application</span></span>|<span data-ttu-id="5ff58-117">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5ff58-117">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="9e618-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9e618-112">Delegated (work or school account)</span></span>|<span data-ttu-id="9e618-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9e618-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="9e618-114">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9e618-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9e618-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9e618-115">Not supported.</span></span>|
+|<span data-ttu-id="9e618-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9e618-116">Application</span></span>|<span data-ttu-id="9e618-117">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9e618-117">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="5ff58-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5ff58-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9e618-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9e618-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,47 +38,47 @@ ms.locfileid: "39941843"
 POST /deviceManagement/deviceEnrollmentConfigurations
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="5ff58-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="5ff58-119">Request headers</span></span>
-|<span data-ttu-id="5ff58-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="5ff58-120">Header</span></span>|<span data-ttu-id="5ff58-121">Значение</span><span class="sxs-lookup"><span data-stu-id="5ff58-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9e618-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="9e618-119">Request headers</span></span>
+|<span data-ttu-id="9e618-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="9e618-120">Header</span></span>|<span data-ttu-id="9e618-121">Значение</span><span class="sxs-lookup"><span data-stu-id="9e618-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="5ff58-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="5ff58-122">Authorization</span></span>|<span data-ttu-id="5ff58-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5ff58-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="5ff58-124">Accept</span><span class="sxs-lookup"><span data-stu-id="5ff58-124">Accept</span></span>|<span data-ttu-id="5ff58-125">application/json</span><span class="sxs-lookup"><span data-stu-id="5ff58-125">application/json</span></span>|
+|<span data-ttu-id="9e618-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="9e618-122">Authorization</span></span>|<span data-ttu-id="9e618-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9e618-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="9e618-124">Accept</span><span class="sxs-lookup"><span data-stu-id="9e618-124">Accept</span></span>|<span data-ttu-id="9e618-125">application/json</span><span class="sxs-lookup"><span data-stu-id="9e618-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="5ff58-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="5ff58-126">Request body</span></span>
-<span data-ttu-id="5ff58-127">В теле запроса добавьте представление объекта deviceEnrollmentPlatformRestrictionsConfiguration в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5ff58-127">In the request body, supply a JSON representation for the deviceEnrollmentPlatformRestrictionsConfiguration object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9e618-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="9e618-126">Request body</span></span>
+<span data-ttu-id="9e618-127">В теле запроса добавьте представление объекта deviceEnrollmentPlatformRestrictionsConfiguration в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="9e618-127">In the request body, supply a JSON representation for the deviceEnrollmentPlatformRestrictionsConfiguration object.</span></span>
 
-<span data-ttu-id="5ff58-128">В приведенной ниже таблице указаны свойства, необходимые при создании объекта deviceEnrollmentPlatformRestrictionsConfiguration.</span><span class="sxs-lookup"><span data-stu-id="5ff58-128">The following table shows the properties that are required when you create the deviceEnrollmentPlatformRestrictionsConfiguration.</span></span>
+<span data-ttu-id="9e618-128">В приведенной ниже таблице указаны свойства, необходимые при создании объекта deviceEnrollmentPlatformRestrictionsConfiguration.</span><span class="sxs-lookup"><span data-stu-id="9e618-128">The following table shows the properties that are required when you create the deviceEnrollmentPlatformRestrictionsConfiguration.</span></span>
 
-|<span data-ttu-id="5ff58-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="5ff58-129">Property</span></span>|<span data-ttu-id="5ff58-130">Тип</span><span class="sxs-lookup"><span data-stu-id="5ff58-130">Type</span></span>|<span data-ttu-id="5ff58-131">Описание</span><span class="sxs-lookup"><span data-stu-id="5ff58-131">Description</span></span>|
+|<span data-ttu-id="9e618-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="9e618-129">Property</span></span>|<span data-ttu-id="9e618-130">Тип</span><span class="sxs-lookup"><span data-stu-id="9e618-130">Type</span></span>|<span data-ttu-id="9e618-131">Описание</span><span class="sxs-lookup"><span data-stu-id="9e618-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="5ff58-132">id</span><span class="sxs-lookup"><span data-stu-id="5ff58-132">id</span></span>|<span data-ttu-id="5ff58-133">String</span><span class="sxs-lookup"><span data-stu-id="5ff58-133">String</span></span>|<span data-ttu-id="5ff58-134">Уникальный идентификатор для учетной записи, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="5ff58-134">Unique Identifier for the account Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)</span></span>|
-|<span data-ttu-id="5ff58-135">displayName</span><span class="sxs-lookup"><span data-stu-id="5ff58-135">displayName</span></span>|<span data-ttu-id="5ff58-136">Строка</span><span class="sxs-lookup"><span data-stu-id="5ff58-136">String</span></span>|<span data-ttu-id="5ff58-137">Отображаемое имя конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="5ff58-137">The display name of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)</span></span>|
-|<span data-ttu-id="5ff58-138">description</span><span class="sxs-lookup"><span data-stu-id="5ff58-138">description</span></span>|<span data-ttu-id="5ff58-139">String</span><span class="sxs-lookup"><span data-stu-id="5ff58-139">String</span></span>|<span data-ttu-id="5ff58-140">Описание конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="5ff58-140">The description of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)</span></span>|
-|<span data-ttu-id="5ff58-141">priority</span><span class="sxs-lookup"><span data-stu-id="5ff58-141">priority</span></span>|<span data-ttu-id="5ff58-142">Int32</span><span class="sxs-lookup"><span data-stu-id="5ff58-142">Int32</span></span>|<span data-ttu-id="5ff58-143">Priority используется, когда пользователь существует в нескольких группах, которым назначена Настройка регистрации.</span><span class="sxs-lookup"><span data-stu-id="5ff58-143">Priority is used when a user exists in multiple groups that are assigned enrollment configuration.</span></span> <span data-ttu-id="5ff58-144">Пользователи подчиняются только конфигурации с наименьшим значением приоритета.</span><span class="sxs-lookup"><span data-stu-id="5ff58-144">Users are subject only to the configuration with the lowest priority value.</span></span> <span data-ttu-id="5ff58-145">Наследуется от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="5ff58-145">Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)</span></span>|
-|<span data-ttu-id="5ff58-146">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="5ff58-146">createdDateTime</span></span>|<span data-ttu-id="5ff58-147">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5ff58-147">DateTimeOffset</span></span>|<span data-ttu-id="5ff58-148">Созданная Дата и время в формате UTC для настройки регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="5ff58-148">Created date time in UTC of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)</span></span>|
-|<span data-ttu-id="5ff58-149">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="5ff58-149">lastModifiedDateTime</span></span>|<span data-ttu-id="5ff58-150">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5ff58-150">DateTimeOffset</span></span>|<span data-ttu-id="5ff58-151">Дата и время последнего изменения конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="5ff58-151">Last modified date time in UTC of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)</span></span>|
-|<span data-ttu-id="5ff58-152">version</span><span class="sxs-lookup"><span data-stu-id="5ff58-152">version</span></span>|<span data-ttu-id="5ff58-153">Int32</span><span class="sxs-lookup"><span data-stu-id="5ff58-153">Int32</span></span>|<span data-ttu-id="5ff58-154">Версия конфигурации регистрации устройств, унаследованная от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="5ff58-154">The version of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)</span></span>|
-|<span data-ttu-id="5ff58-155">iosRestriction</span><span class="sxs-lookup"><span data-stu-id="5ff58-155">iosRestriction</span></span>|[<span data-ttu-id="5ff58-156">deviceEnrollmentPlatformRestriction</span><span class="sxs-lookup"><span data-stu-id="5ff58-156">deviceEnrollmentPlatformRestriction</span></span>](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|<span data-ttu-id="5ff58-157">Ограничения iOS на основе платформы, версии операционной системы платформы и владельца устройств</span><span class="sxs-lookup"><span data-stu-id="5ff58-157">Ios restrictions based on platform, platform operating system version, and device ownership</span></span>|
-|<span data-ttu-id="5ff58-158">windowsRestriction</span><span class="sxs-lookup"><span data-stu-id="5ff58-158">windowsRestriction</span></span>|[<span data-ttu-id="5ff58-159">deviceEnrollmentPlatformRestriction</span><span class="sxs-lookup"><span data-stu-id="5ff58-159">deviceEnrollmentPlatformRestriction</span></span>](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|<span data-ttu-id="5ff58-160">Ограничения Windows на основе платформы, версии операционной системы платформы и владельца устройств</span><span class="sxs-lookup"><span data-stu-id="5ff58-160">Windows restrictions based on platform, platform operating system version, and device ownership</span></span>|
-|<span data-ttu-id="5ff58-161">windowsMobileRestriction</span><span class="sxs-lookup"><span data-stu-id="5ff58-161">windowsMobileRestriction</span></span>|[<span data-ttu-id="5ff58-162">deviceEnrollmentPlatformRestriction</span><span class="sxs-lookup"><span data-stu-id="5ff58-162">deviceEnrollmentPlatformRestriction</span></span>](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|<span data-ttu-id="5ff58-163">Ограничения для Windows Mobile на основе платформы, версии операционной системы платформы и владельца устройств</span><span class="sxs-lookup"><span data-stu-id="5ff58-163">Windows mobile restrictions based on platform, platform operating system version, and device ownership</span></span>|
-|<span data-ttu-id="5ff58-164">androidRestriction</span><span class="sxs-lookup"><span data-stu-id="5ff58-164">androidRestriction</span></span>|[<span data-ttu-id="5ff58-165">deviceEnrollmentPlatformRestriction</span><span class="sxs-lookup"><span data-stu-id="5ff58-165">deviceEnrollmentPlatformRestriction</span></span>](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|<span data-ttu-id="5ff58-166">Ограничения для Android на основе платформы, версии операционной системы платформы и владельца устройств</span><span class="sxs-lookup"><span data-stu-id="5ff58-166">Android restrictions based on platform, platform operating system version, and device ownership</span></span>|
-|<span data-ttu-id="5ff58-167">андроидфорворкрестриктион</span><span class="sxs-lookup"><span data-stu-id="5ff58-167">androidForWorkRestriction</span></span>|[<span data-ttu-id="5ff58-168">deviceEnrollmentPlatformRestriction</span><span class="sxs-lookup"><span data-stu-id="5ff58-168">deviceEnrollmentPlatformRestriction</span></span>](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|<span data-ttu-id="5ff58-169">Ограничения для Android для работы на основе платформы, версии операционной системы платформы и владельца устройств</span><span class="sxs-lookup"><span data-stu-id="5ff58-169">Android for work restrictions based on platform, platform operating system version, and device ownership</span></span>|
-|<span data-ttu-id="5ff58-170">макрестриктион</span><span class="sxs-lookup"><span data-stu-id="5ff58-170">macRestriction</span></span>|[<span data-ttu-id="5ff58-171">deviceEnrollmentPlatformRestriction</span><span class="sxs-lookup"><span data-stu-id="5ff58-171">deviceEnrollmentPlatformRestriction</span></span>](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|<span data-ttu-id="5ff58-172">Ограничения для MAC-адресов на основе платформы, версии операционной системы платформы и владельца устройств</span><span class="sxs-lookup"><span data-stu-id="5ff58-172">Mac restrictions based on platform, platform operating system version, and device ownership</span></span>|
-|<span data-ttu-id="5ff58-173">macOSRestriction</span><span class="sxs-lookup"><span data-stu-id="5ff58-173">macOSRestriction</span></span>|[<span data-ttu-id="5ff58-174">deviceEnrollmentPlatformRestriction</span><span class="sxs-lookup"><span data-stu-id="5ff58-174">deviceEnrollmentPlatformRestriction</span></span>](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|<span data-ttu-id="5ff58-175">Ограничения для MAC-адресов на основе платформы, версии операционной системы платформы и владельца устройств</span><span class="sxs-lookup"><span data-stu-id="5ff58-175">Mac restrictions based on platform, platform operating system version, and device ownership</span></span>|
+|<span data-ttu-id="9e618-132">id</span><span class="sxs-lookup"><span data-stu-id="9e618-132">id</span></span>|<span data-ttu-id="9e618-133">String</span><span class="sxs-lookup"><span data-stu-id="9e618-133">String</span></span>|<span data-ttu-id="9e618-134">Уникальный идентификатор для учетной записи, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="9e618-134">Unique Identifier for the account Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)</span></span>|
+|<span data-ttu-id="9e618-135">displayName</span><span class="sxs-lookup"><span data-stu-id="9e618-135">displayName</span></span>|<span data-ttu-id="9e618-136">Строка</span><span class="sxs-lookup"><span data-stu-id="9e618-136">String</span></span>|<span data-ttu-id="9e618-137">Отображаемое имя конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="9e618-137">The display name of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)</span></span>|
+|<span data-ttu-id="9e618-138">description</span><span class="sxs-lookup"><span data-stu-id="9e618-138">description</span></span>|<span data-ttu-id="9e618-139">String</span><span class="sxs-lookup"><span data-stu-id="9e618-139">String</span></span>|<span data-ttu-id="9e618-140">Описание конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="9e618-140">The description of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)</span></span>|
+|<span data-ttu-id="9e618-141">priority</span><span class="sxs-lookup"><span data-stu-id="9e618-141">priority</span></span>|<span data-ttu-id="9e618-142">Int32</span><span class="sxs-lookup"><span data-stu-id="9e618-142">Int32</span></span>|<span data-ttu-id="9e618-143">Priority используется, когда пользователь существует в нескольких группах, которым назначена Настройка регистрации.</span><span class="sxs-lookup"><span data-stu-id="9e618-143">Priority is used when a user exists in multiple groups that are assigned enrollment configuration.</span></span> <span data-ttu-id="9e618-144">Пользователи подчиняются только конфигурации с наименьшим значением приоритета.</span><span class="sxs-lookup"><span data-stu-id="9e618-144">Users are subject only to the configuration with the lowest priority value.</span></span> <span data-ttu-id="9e618-145">Наследуется от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="9e618-145">Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)</span></span>|
+|<span data-ttu-id="9e618-146">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="9e618-146">createdDateTime</span></span>|<span data-ttu-id="9e618-147">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9e618-147">DateTimeOffset</span></span>|<span data-ttu-id="9e618-148">Созданная Дата и время в формате UTC для настройки регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="9e618-148">Created date time in UTC of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)</span></span>|
+|<span data-ttu-id="9e618-149">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="9e618-149">lastModifiedDateTime</span></span>|<span data-ttu-id="9e618-150">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9e618-150">DateTimeOffset</span></span>|<span data-ttu-id="9e618-151">Дата и время последнего изменения конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="9e618-151">Last modified date time in UTC of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)</span></span>|
+|<span data-ttu-id="9e618-152">version</span><span class="sxs-lookup"><span data-stu-id="9e618-152">version</span></span>|<span data-ttu-id="9e618-153">Int32</span><span class="sxs-lookup"><span data-stu-id="9e618-153">Int32</span></span>|<span data-ttu-id="9e618-154">Версия конфигурации регистрации устройств, унаследованная от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="9e618-154">The version of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)</span></span>|
+|<span data-ttu-id="9e618-155">iosRestriction</span><span class="sxs-lookup"><span data-stu-id="9e618-155">iosRestriction</span></span>|[<span data-ttu-id="9e618-156">deviceEnrollmentPlatformRestriction</span><span class="sxs-lookup"><span data-stu-id="9e618-156">deviceEnrollmentPlatformRestriction</span></span>](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|<span data-ttu-id="9e618-157">Ограничения iOS на основе платформы, версии операционной системы платформы и владельца устройств</span><span class="sxs-lookup"><span data-stu-id="9e618-157">Ios restrictions based on platform, platform operating system version, and device ownership</span></span>|
+|<span data-ttu-id="9e618-158">windowsRestriction</span><span class="sxs-lookup"><span data-stu-id="9e618-158">windowsRestriction</span></span>|[<span data-ttu-id="9e618-159">deviceEnrollmentPlatformRestriction</span><span class="sxs-lookup"><span data-stu-id="9e618-159">deviceEnrollmentPlatformRestriction</span></span>](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|<span data-ttu-id="9e618-160">Ограничения Windows на основе платформы, версии операционной системы платформы и владельца устройств</span><span class="sxs-lookup"><span data-stu-id="9e618-160">Windows restrictions based on platform, platform operating system version, and device ownership</span></span>|
+|<span data-ttu-id="9e618-161">windowsMobileRestriction</span><span class="sxs-lookup"><span data-stu-id="9e618-161">windowsMobileRestriction</span></span>|[<span data-ttu-id="9e618-162">deviceEnrollmentPlatformRestriction</span><span class="sxs-lookup"><span data-stu-id="9e618-162">deviceEnrollmentPlatformRestriction</span></span>](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|<span data-ttu-id="9e618-163">Ограничения для Windows Mobile на основе платформы, версии операционной системы платформы и владельца устройств</span><span class="sxs-lookup"><span data-stu-id="9e618-163">Windows mobile restrictions based on platform, platform operating system version, and device ownership</span></span>|
+|<span data-ttu-id="9e618-164">androidRestriction</span><span class="sxs-lookup"><span data-stu-id="9e618-164">androidRestriction</span></span>|[<span data-ttu-id="9e618-165">deviceEnrollmentPlatformRestriction</span><span class="sxs-lookup"><span data-stu-id="9e618-165">deviceEnrollmentPlatformRestriction</span></span>](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|<span data-ttu-id="9e618-166">Ограничения для Android на основе платформы, версии операционной системы платформы и владельца устройств</span><span class="sxs-lookup"><span data-stu-id="9e618-166">Android restrictions based on platform, platform operating system version, and device ownership</span></span>|
+|<span data-ttu-id="9e618-167">андроидфорворкрестриктион</span><span class="sxs-lookup"><span data-stu-id="9e618-167">androidForWorkRestriction</span></span>|[<span data-ttu-id="9e618-168">deviceEnrollmentPlatformRestriction</span><span class="sxs-lookup"><span data-stu-id="9e618-168">deviceEnrollmentPlatformRestriction</span></span>](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|<span data-ttu-id="9e618-169">Ограничения для Android для работы на основе платформы, версии операционной системы платформы и владельца устройств</span><span class="sxs-lookup"><span data-stu-id="9e618-169">Android for work restrictions based on platform, platform operating system version, and device ownership</span></span>|
+|<span data-ttu-id="9e618-170">макрестриктион</span><span class="sxs-lookup"><span data-stu-id="9e618-170">macRestriction</span></span>|[<span data-ttu-id="9e618-171">deviceEnrollmentPlatformRestriction</span><span class="sxs-lookup"><span data-stu-id="9e618-171">deviceEnrollmentPlatformRestriction</span></span>](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|<span data-ttu-id="9e618-172">Ограничения для MAC-адресов на основе платформы, версии операционной системы платформы и владельца устройств</span><span class="sxs-lookup"><span data-stu-id="9e618-172">Mac restrictions based on platform, platform operating system version, and device ownership</span></span>|
+|<span data-ttu-id="9e618-173">macOSRestriction</span><span class="sxs-lookup"><span data-stu-id="9e618-173">macOSRestriction</span></span>|[<span data-ttu-id="9e618-174">deviceEnrollmentPlatformRestriction</span><span class="sxs-lookup"><span data-stu-id="9e618-174">deviceEnrollmentPlatformRestriction</span></span>](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|<span data-ttu-id="9e618-175">Ограничения для MAC-адресов на основе платформы, версии операционной системы платформы и владельца устройств</span><span class="sxs-lookup"><span data-stu-id="9e618-175">Mac restrictions based on platform, platform operating system version, and device ownership</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="5ff58-176">Отклик</span><span class="sxs-lookup"><span data-stu-id="5ff58-176">Response</span></span>
-<span data-ttu-id="5ff58-177">В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [deviceEnrollmentPlatformRestrictionsConfiguration](../resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="5ff58-177">If successful, this method returns a `201 Created` response code and a [deviceEnrollmentPlatformRestrictionsConfiguration](../resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="9e618-176">Отклик</span><span class="sxs-lookup"><span data-stu-id="9e618-176">Response</span></span>
+<span data-ttu-id="9e618-177">В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [deviceEnrollmentPlatformRestrictionsConfiguration](../resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="9e618-177">If successful, this method returns a `201 Created` response code and a [deviceEnrollmentPlatformRestrictionsConfiguration](../resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5ff58-178">Пример</span><span class="sxs-lookup"><span data-stu-id="5ff58-178">Example</span></span>
+## <a name="example"></a><span data-ttu-id="9e618-178">Пример</span><span class="sxs-lookup"><span data-stu-id="9e618-178">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="5ff58-179">Запрос</span><span class="sxs-lookup"><span data-stu-id="5ff58-179">Request</span></span>
-<span data-ttu-id="5ff58-180">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="5ff58-180">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="9e618-179">Запрос</span><span class="sxs-lookup"><span data-stu-id="9e618-179">Request</span></span>
+<span data-ttu-id="9e618-180">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9e618-180">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations
 Content-type: application/json
-Content-length: 2231
+Content-length: 2763
 
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration",
@@ -91,59 +91,80 @@ Content-length: 2231
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "windowsRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "windowsMobileRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "androidRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "androidForWorkRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "macRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "macOSRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   }
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="5ff58-181">Отклик</span><span class="sxs-lookup"><span data-stu-id="5ff58-181">Response</span></span>
-<span data-ttu-id="5ff58-p103">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="5ff58-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="9e618-181">Отклик</span><span class="sxs-lookup"><span data-stu-id="9e618-181">Response</span></span>
+<span data-ttu-id="9e618-p103">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="9e618-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2403
+Content-Length: 2935
 
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration",
@@ -159,49 +180,70 @@ Content-Length: 2403
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "windowsRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "windowsMobileRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "androidRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "androidForWorkRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "macRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   },
   "macOSRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "Os Minimum Version value",
-    "osMaximumVersion": "Os Maximum Version value"
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ]
   }
 }
 ```

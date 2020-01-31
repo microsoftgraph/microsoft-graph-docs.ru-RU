@@ -4,50 +4,51 @@ description: Разностный запрос позволяет запраши
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 383c7a1bc0a2e129d859b17101f80ee1638d22fa
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: c51c1e79e96068805ca37630d28cae0854f414dd
+ms.sourcegitcommit: ce9ebbd40ac4896df5ce42173dc6ffb7ef3f76c7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216793"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41578838"
 ---
-# <a name="get-incremental-changes-to-messages-in-a-folder"></a><span data-ttu-id="492a0-103">Получение добавочных изменений для сообщений в папке</span><span class="sxs-lookup"><span data-stu-id="492a0-103">Get incremental changes to messages in a folder</span></span>
+# <a name="get-incremental-changes-to-messages-in-a-folder"></a><span data-ttu-id="1c8ee-103">Получение добавочных изменений для сообщений в папке</span><span class="sxs-lookup"><span data-stu-id="1c8ee-103">Get incremental changes to messages in a folder</span></span>
 
-<span data-ttu-id="492a0-p101">Запрос изменений позволяет запрашивать добавления, удаления или обновления сообщений в папке с помощью серии вызовов функции [delta](/graph/api/message-delta?view=graph-rest-1.0). Разностные данные позволяют поддерживать и синхронизировать локальное хранилище сообщений пользователя. При этом вам не требуется каждый раз получать весь набор сообщений пользователя с сервера.</span><span class="sxs-lookup"><span data-stu-id="492a0-p101">Delta query lets you query for additions, deletions, or updates to messages in a folder, by way of a series of [delta](/graph/api/message-delta?view=graph-rest-1.0) function calls. Delta data enables you to maintain and synchronize a local store of a user's messages, without having to fetch the entire set of the user's messages from the server every time.</span></span>
+<span data-ttu-id="1c8ee-p101">Запрос изменений позволяет запрашивать добавления, удаления или обновления сообщений в папке с помощью серии вызовов функции [delta](/graph/api/message-delta?view=graph-rest-1.0). Разностные данные позволяют поддерживать и синхронизировать локальное хранилище сообщений пользователя. При этом вам не требуется каждый раз получать весь набор сообщений пользователя с сервера.</span><span class="sxs-lookup"><span data-stu-id="1c8ee-p101">Delta query lets you query for additions, deletions, or updates to messages in a folder, by way of a series of [delta](/graph/api/message-delta?view=graph-rest-1.0) function calls. Delta data enables you to maintain and synchronize a local store of a user's messages, without having to fetch the entire set of the user's messages from the server every time.</span></span>
 
-<span data-ttu-id="492a0-p102">Запрос изменений поддерживает как полную синхронизацию с получением всех сообщений в папке (например, в папке "Входящие" пользователя), так и добавочную синхронизацию с получением всех сообщений в этой папке, которые изменились с момента последней синхронизации. Как правило, сначала выполняется полная синхронизация сообщений в папке, а затем в папку периодически добавляются изменения.</span><span class="sxs-lookup"><span data-stu-id="492a0-p102">Delta query supports both full synchronization that retrieves all of the messages in a folder (for example, the user's Inbox), and incremental synchronization that retrieves all of the messages that have changed in that folder since the last synchronization. Typically, you would do an initial full synchronization of all the messages in a folder, and subsequently, get incremental changes to that folder periodically.</span></span>
+<span data-ttu-id="1c8ee-p102">Запрос изменений поддерживает как полную синхронизацию с получением всех сообщений в папке (например, в папке "Входящие" пользователя), так и добавочную синхронизацию с получением всех сообщений в этой папке, которые изменились с момента последней синхронизации. Как правило, сначала выполняется полная синхронизация сообщений в папке, а затем в папку периодически добавляются изменения.</span><span class="sxs-lookup"><span data-stu-id="1c8ee-p102">Delta query supports both full synchronization that retrieves all of the messages in a folder (for example, the user's Inbox), and incremental synchronization that retrieves all of the messages that have changed in that folder since the last synchronization. Typically, you would do an initial full synchronization of all the messages in a folder, and subsequently, get incremental changes to that folder periodically.</span></span>
 
-## <a name="track-message-changes-in-a-folder"></a><span data-ttu-id="492a0-108">Отслеживание изменений сообщений в папке</span><span class="sxs-lookup"><span data-stu-id="492a0-108">Track message changes in a folder</span></span>
+## <a name="track-message-changes-in-a-folder"></a><span data-ttu-id="1c8ee-108">Отслеживание изменений сообщений в папке</span><span class="sxs-lookup"><span data-stu-id="1c8ee-108">Track message changes in a folder</span></span>
 
-<span data-ttu-id="492a0-p103">Запрос изменений выполняется отдельно для каждой папки. Чтобы отслеживать изменения сообщений в иерархии папок, необходимо наблюдать за каждой папкой отдельно.</span><span class="sxs-lookup"><span data-stu-id="492a0-p103">Delta query is a per-folder operation. To track the changes of the messages in a folder hierarchy, you need to track each folder individually.</span></span>
+<span data-ttu-id="1c8ee-p103">Запрос изменений выполняется отдельно для каждой папки. Чтобы отслеживать изменения сообщений в иерархии папок, необходимо наблюдать за каждой папкой отдельно.</span><span class="sxs-lookup"><span data-stu-id="1c8ee-p103">Delta query is a per-folder operation. To track the changes of the messages in a folder hierarchy, you need to track each folder individually.</span></span>
 
-<span data-ttu-id="492a0-p104">Как правило, цикл отслеживания изменений сообщений в папке почты состоит из одного или нескольких запросов GET с функцией **delta**. Исходный запрос GET во многом аналогичен [получению сообщений](/graph/api/user-list-messages?view=graph-rest-1.0), но он также содержит функцию **delta**:</span><span class="sxs-lookup"><span data-stu-id="492a0-p104">Tracking message changes in a mail folder typically is a round of one or more GET requests with the **delta** function. The initial GET request is very much like the way you [get messages](/graph/api/user-list-messages?view=graph-rest-1.0), except that you include the **delta** function:</span></span>
+<span data-ttu-id="1c8ee-p104">Как правило, цикл отслеживания изменений сообщений в папке почты состоит из одного или нескольких запросов GET с функцией **delta**. Исходный запрос GET во многом аналогичен [получению сообщений](/graph/api/user-list-messages?view=graph-rest-1.0), но он также содержит функцию **delta**:</span><span class="sxs-lookup"><span data-stu-id="1c8ee-p104">Tracking message changes in a mail folder typically is a round of one or more GET requests with the **delta** function. The initial GET request is very much like the way you [get messages](/graph/api/user-list-messages?view=graph-rest-1.0), except that you include the **delta** function:</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
 ```
 
-<span data-ttu-id="492a0-113">Запрос GET с функцией **delta** возвращает одно из следующих значений:</span><span class="sxs-lookup"><span data-stu-id="492a0-113">A GET request with the **delta** function returns either:</span></span>
+<span data-ttu-id="1c8ee-113">Запрос GET с функцией **delta** возвращает одно из следующих значений:</span><span class="sxs-lookup"><span data-stu-id="1c8ee-113">A GET request with the **delta** function returns either:</span></span>
 
-- <span data-ttu-id="492a0-114">ссылку `nextLink` (содержащую URL-адрес с вызовом функции **delta** и маркером _skipToken_);</span><span class="sxs-lookup"><span data-stu-id="492a0-114">A `nextLink` (that contains a URL with a **delta** function call and a _skipToken_), or</span></span>
-- <span data-ttu-id="492a0-115">ссылку `deltaLink` (содержащую URL-адрес с вызовом функции **delta** и маркером _deltaToken_).</span><span class="sxs-lookup"><span data-stu-id="492a0-115">A `deltaLink` (that contains a URL with a **delta** function call and _deltaToken_).</span></span>
+- <span data-ttu-id="1c8ee-114">ссылку `nextLink` (содержащую URL-адрес с вызовом функции **delta** и маркером _skipToken_);</span><span class="sxs-lookup"><span data-stu-id="1c8ee-114">A `nextLink` (that contains a URL with a **delta** function call and a _skipToken_), or</span></span>
+- <span data-ttu-id="1c8ee-115">ссылку `deltaLink` (содержащую URL-адрес с вызовом функции **delta** и маркером _deltaToken_).</span><span class="sxs-lookup"><span data-stu-id="1c8ee-115">A `deltaLink` (that contains a URL with a **delta** function call and _deltaToken_).</span></span>
 
-<span data-ttu-id="492a0-p105">Это маркеры являются [маркерами состояния](delta-query-overview.md#state-tokens), полностью непрозрачными для клиента. Чтобы продолжить цикл отслеживания изменений, просто скопируйте и примените URL-адрес, полученный из последнего запроса GET, при следующем вызове функции **delta** для этой папки. Ссылка `deltaLink` в ответе означает, что текущий цикл отслеживания изменений завершен. Вы можете сохранить и использовать URL-адрес `deltaLink` в начале следующего цикла.</span><span class="sxs-lookup"><span data-stu-id="492a0-p105">These tokens are [state tokens](delta-query-overview.md#state-tokens) that are completely opaque to the client. To proceed with a round of change tracking, simply copy and apply the URL returned from the last GET request to the next **delta** function call for the same folder. A `deltaLink` returned in a response signifies that the current round of change tracking is complete. You can save and use the `deltaLink` URL when you begin the next round.</span></span>
+<span data-ttu-id="1c8ee-p105">Это маркеры являются [маркерами состояния](delta-query-overview.md#state-tokens), полностью непрозрачными для клиента. Чтобы продолжить цикл отслеживания изменений, просто скопируйте и примените URL-адрес, полученный из последнего запроса GET, при следующем вызове функции **delta** для этой папки. Ссылка `deltaLink` в ответе означает, что текущий цикл отслеживания изменений завершен. Вы можете сохранить и использовать URL-адрес `deltaLink` в начале следующего цикла.</span><span class="sxs-lookup"><span data-stu-id="1c8ee-p105">These tokens are [state tokens](delta-query-overview.md#state-tokens) that are completely opaque to the client. To proceed with a round of change tracking, simply copy and apply the URL returned from the last GET request to the next **delta** function call for the same folder. A `deltaLink` returned in a response signifies that the current round of change tracking is complete. You can save and use the `deltaLink` URL when you begin the next round.</span></span>
 
-<span data-ttu-id="492a0-120">В приведенном ниже [примере](#example-to-synchronize-messages-in-a-folder) показано, как использовать URL-адреса `nextLink` и `deltaLink`.</span><span class="sxs-lookup"><span data-stu-id="492a0-120">See the [example](#example-to-synchronize-messages-in-a-folder) below to learn how to use the `nextLink` and `deltaLink` URLs.</span></span>
+<span data-ttu-id="1c8ee-120">В приведенном ниже [примере](#example-to-synchronize-messages-in-a-folder) показано, как использовать URL-адреса `nextLink` и `deltaLink`.</span><span class="sxs-lookup"><span data-stu-id="1c8ee-120">See the [example](#example-to-synchronize-messages-in-a-folder) below to learn how to use the `nextLink` and `deltaLink` URLs.</span></span>
 
-### <a name="use-query-parameters-in-a-delta-query-for-messages"></a><span data-ttu-id="492a0-121">Использование параметров запроса изменений для сообщений</span><span class="sxs-lookup"><span data-stu-id="492a0-121">Use query parameters in a delta query for messages</span></span>
+### <a name="use-query-parameters-in-a-delta-query-for-messages"></a><span data-ttu-id="1c8ee-121">Использование параметров запроса изменений для сообщений</span><span class="sxs-lookup"><span data-stu-id="1c8ee-121">Use query parameters in a delta query for messages</span></span>
 
-- <span data-ttu-id="492a0-p106">Вы можете использовать параметр запроса `$select` так же, как в любом другом запросе GET, чтобы задать только те свойства, которые необходимы для эффективной работы. Свойство `id` возвращается всегда.</span><span class="sxs-lookup"><span data-stu-id="492a0-p106">You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The `id` property is always returned.</span></span>
-- <span data-ttu-id="492a0-124">Запросы изменений поддерживают параметры `$select`, `$top` и `$expand` для сообщений.</span><span class="sxs-lookup"><span data-stu-id="492a0-124">Delta query support `$select`, `$top`, and `$expand` for messages.</span></span>
-- <span data-ttu-id="492a0-125">Имеется ограниченная поддержка параметров `$filter` и `$orderby`:</span><span class="sxs-lookup"><span data-stu-id="492a0-125">There is limited support for `$filter` and `$orderby`:</span></span>
-  - <span data-ttu-id="492a0-126">Для параметра `$filter` поддерживаются только выражения `$filter=receivedDateTime+ge+{value}` и `$filter=receivedDateTime+gt+{value}`.</span><span class="sxs-lookup"><span data-stu-id="492a0-126">The only supported `$filter` expressions are `$filter=receivedDateTime+ge+{value}` or `$filter=receivedDateTime+gt+{value}`.</span></span>
-  - <span data-ttu-id="492a0-p107">Для параметра `$orderby` поддерживается только выражение `$orderby=receivedDateTime+desc`. Если выражение `$orderby` не указано, результаты будут возвращаться в непредсказуемом порядке.</span><span class="sxs-lookup"><span data-stu-id="492a0-p107">The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you do not include an `$orderby` expression, the return order is not guaranteed.</span></span>
-- <span data-ttu-id="492a0-129">Параметр `$search` не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="492a0-129">There is no support for `$search`.</span></span>
+- <span data-ttu-id="1c8ee-p106">Вы можете использовать параметр запроса `$select` так же, как в любом другом запросе GET, чтобы задать только те свойства, которые необходимы для эффективной работы. Свойство `id` возвращается всегда.</span><span class="sxs-lookup"><span data-stu-id="1c8ee-p106">You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The `id` property is always returned.</span></span>
+- <span data-ttu-id="1c8ee-124">Запросы изменений поддерживают параметры `$select`, `$top` и `$expand` для сообщений.</span><span class="sxs-lookup"><span data-stu-id="1c8ee-124">Delta query support `$select`, `$top`, and `$expand` for messages.</span></span>
+- <span data-ttu-id="1c8ee-125">Имеется ограниченная поддержка параметров `$filter` и `$orderby`:</span><span class="sxs-lookup"><span data-stu-id="1c8ee-125">There is limited support for `$filter` and `$orderby`:</span></span>
+  - <span data-ttu-id="1c8ee-126">Для параметра `$filter` поддерживаются только выражения `$filter=receivedDateTime+ge+{value}` и `$filter=receivedDateTime+gt+{value}`.</span><span class="sxs-lookup"><span data-stu-id="1c8ee-126">The only supported `$filter` expressions are `$filter=receivedDateTime+ge+{value}` or `$filter=receivedDateTime+gt+{value}`.</span></span>
+  - <span data-ttu-id="1c8ee-127">При применении `$filter` в разностном запросе возвращается только до 5 000 сообщений.</span><span class="sxs-lookup"><span data-stu-id="1c8ee-127">Applying `$filter` in a delta query returns only up to 5,000 messages.</span></span>
+  - <span data-ttu-id="1c8ee-p107">Для параметра `$orderby` поддерживается только выражение `$orderby=receivedDateTime+desc`. Если выражение `$orderby` не указано, результаты будут возвращаться в непредсказуемом порядке.</span><span class="sxs-lookup"><span data-stu-id="1c8ee-p107">The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you do not include an `$orderby` expression, the return order is not guaranteed.</span></span>
+- <span data-ttu-id="1c8ee-130">Параметр `$search` не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1c8ee-130">There is no support for `$search`.</span></span>
 
-### <a name="optional-request-header"></a><span data-ttu-id="492a0-130">Необязательный заголовок запроса</span><span class="sxs-lookup"><span data-stu-id="492a0-130">Optional request header</span></span>
+### <a name="optional-request-header"></a><span data-ttu-id="1c8ee-131">Необязательный заголовок запроса</span><span class="sxs-lookup"><span data-stu-id="1c8ee-131">Optional request header</span></span>
 
-<span data-ttu-id="492a0-131">Каждый разностный запрос GET возвращает в отклике коллекцию из одного или нескольких сообщений.</span><span class="sxs-lookup"><span data-stu-id="492a0-131">Each delta query GET request returns a collection of one or more messages in the response.</span></span> <span data-ttu-id="492a0-132">При необходимости вы можете указать заголовок запроса `Prefer: odata.maxpagesize={x}`, чтобы задать максимальное количество сообщений в отклике.</span><span class="sxs-lookup"><span data-stu-id="492a0-132">You can optionally specify the request header, `Prefer: odata.maxpagesize={x}`, to set the maximum number of messages in a response.</span></span>
+<span data-ttu-id="1c8ee-132">Каждый разностный запрос GET возвращает в отклике коллекцию из одного или нескольких сообщений.</span><span class="sxs-lookup"><span data-stu-id="1c8ee-132">Each delta query GET request returns a collection of one or more messages in the response.</span></span> <span data-ttu-id="1c8ee-133">При необходимости вы можете указать заголовок запроса `Prefer: odata.maxpagesize={x}`, чтобы задать максимальное количество сообщений в отклике.</span><span class="sxs-lookup"><span data-stu-id="1c8ee-133">You can optionally specify the request header, `Prefer: odata.maxpagesize={x}`, to set the maximum number of messages in a response.</span></span>
 
 <!--
 ### Iterative process
@@ -79,26 +80,26 @@ since the completion of the very first round.
 
 -->
 
-## <a name="example-to-synchronize-messages-in-a-folder"></a><span data-ttu-id="492a0-133">Пример синхронизации сообщений в папке</span><span class="sxs-lookup"><span data-stu-id="492a0-133">Example to synchronize messages in a folder</span></span>
+## <a name="example-to-synchronize-messages-in-a-folder"></a><span data-ttu-id="1c8ee-134">Пример синхронизации сообщений в папке</span><span class="sxs-lookup"><span data-stu-id="1c8ee-134">Example to synchronize messages in a folder</span></span>
 
-<span data-ttu-id="492a0-134">В приведенном ниже примере показаны 2 цикла синхронизации определенной папки, которая изначально содержала 5 сообщений.</span><span class="sxs-lookup"><span data-stu-id="492a0-134">The following example shows 2 rounds of synchronization of a specific folder which initially contains 5 messages.</span></span>
+<span data-ttu-id="1c8ee-135">В приведенном ниже примере показаны 2 цикла синхронизации определенной папки, которая изначально содержала 5 сообщений.</span><span class="sxs-lookup"><span data-stu-id="1c8ee-135">The following example shows 2 rounds of synchronization of a specific folder which initially contains 5 messages.</span></span>
 
-<span data-ttu-id="492a0-135">В первом цикле выполняется серия из 3 запросов на синхронизацию всех 5 сообщений в папке:</span><span class="sxs-lookup"><span data-stu-id="492a0-135">The first round involves a series of 3 requests to synchronize all 5 messages in the folder:</span></span>
+<span data-ttu-id="1c8ee-136">В первом цикле выполняется серия из 3 запросов на синхронизацию всех 5 сообщений в папке:</span><span class="sxs-lookup"><span data-stu-id="1c8ee-136">The first round involves a series of 3 requests to synchronize all 5 messages in the folder:</span></span>
 
-- <span data-ttu-id="492a0-136">[Пример исходного запроса](#sample-initial-request) и [ответ](#sample-initial-response)</span><span class="sxs-lookup"><span data-stu-id="492a0-136">[Sample initial request](#sample-initial-request) and [response](#sample-initial-response)</span></span>
-- <span data-ttu-id="492a0-137">[Пример второго запроса](#sample-second-request) и [ответ](#sample-second-response)</span><span class="sxs-lookup"><span data-stu-id="492a0-137">[Sample second request](#sample-second-request) and [response](#sample-second-response)</span></span>
-- <span data-ttu-id="492a0-138">[Пример третьего запроса](#sample-third-request) и [последний ответ](#sample-third-and-final-response)</span><span class="sxs-lookup"><span data-stu-id="492a0-138">[Sample third request](#sample-third-request) and [final response](#sample-third-and-final-response)</span></span>
+- <span data-ttu-id="1c8ee-137">[Пример исходного запроса](#sample-initial-request) и [ответ](#sample-initial-response)</span><span class="sxs-lookup"><span data-stu-id="1c8ee-137">[Sample initial request](#sample-initial-request) and [response](#sample-initial-response)</span></span>
+- <span data-ttu-id="1c8ee-138">[Пример второго запроса](#sample-second-request) и [ответ](#sample-second-response)</span><span class="sxs-lookup"><span data-stu-id="1c8ee-138">[Sample second request](#sample-second-request) and [response](#sample-second-response)</span></span>
+- <span data-ttu-id="1c8ee-139">[Пример третьего запроса](#sample-third-request) и [последний ответ](#sample-third-and-final-response)</span><span class="sxs-lookup"><span data-stu-id="1c8ee-139">[Sample third request](#sample-third-request) and [final response](#sample-third-and-final-response)</span></span>
 
-<span data-ttu-id="492a0-139">После первого цикла одно из сообщений удаляется, а еще одно помечается как прочитанное.</span><span class="sxs-lookup"><span data-stu-id="492a0-139">After the first round, one of the messages is deleted, and another is marked as read.</span></span> <span data-ttu-id="492a0-140">Во [втором цикле](#synchronize-messages-in-the-same-folder-in-the-next-round) синхронизации возвращаются только удаленные и обновленные сообщения. При этом не возвращаются сообщения, оставшиеся без изменений.</span><span class="sxs-lookup"><span data-stu-id="492a0-140">The [second round](#synchronize-messages-in-the-same-folder-in-the-next-round) of synchronization returns only the delta (the deletion and update), without returning the other messages that have remained the same.</span></span>
+<span data-ttu-id="1c8ee-140">После первого цикла одно из сообщений удаляется, а еще одно помечается как прочитанное.</span><span class="sxs-lookup"><span data-stu-id="1c8ee-140">After the first round, one of the messages is deleted, and another is marked as read.</span></span> <span data-ttu-id="1c8ee-141">Во [втором цикле](#synchronize-messages-in-the-same-folder-in-the-next-round) синхронизации возвращаются только удаленные и обновленные сообщения. При этом не возвращаются сообщения, оставшиеся без изменений.</span><span class="sxs-lookup"><span data-stu-id="1c8ee-141">The [second round](#synchronize-messages-in-the-same-folder-in-the-next-round) of synchronization returns only the delta (the deletion and update), without returning the other messages that have remained the same.</span></span>
 
-### <a name="sample-initial-request"></a><span data-ttu-id="492a0-141">Пример исходного запроса</span><span class="sxs-lookup"><span data-stu-id="492a0-141">Sample initial request</span></span>
+### <a name="sample-initial-request"></a><span data-ttu-id="1c8ee-142">Пример исходного запроса</span><span class="sxs-lookup"><span data-stu-id="1c8ee-142">Sample initial request</span></span>
 
-<span data-ttu-id="492a0-p110">В этом примере указанная папка синхронизируется впервые, поэтому исходный запрос на синхронизацию не содержит маркер состояния. В этом цикле будут возвращены все сообщения из этой папки.</span><span class="sxs-lookup"><span data-stu-id="492a0-p110">In this example, the specified folder is being synchronized for the first time, so the initial sync request does not include any state token. This round will return all the messages in that folder.</span></span>
+<span data-ttu-id="1c8ee-p110">В этом примере указанная папка синхронизируется впервые, поэтому исходный запрос на синхронизацию не содержит маркер состояния. В этом цикле будут возвращены все сообщения из этой папки.</span><span class="sxs-lookup"><span data-stu-id="1c8ee-p110">In this example, the specified folder is being synchronized for the first time, so the initial sync request does not include any state token. This round will return all the messages in that folder.</span></span>
 
-<span data-ttu-id="492a0-144">Первый запрос задает следующие параметры:</span><span class="sxs-lookup"><span data-stu-id="492a0-144">The first request specifies the following:</span></span>
+<span data-ttu-id="1c8ee-145">Первый запрос задает следующие параметры:</span><span class="sxs-lookup"><span data-stu-id="1c8ee-145">The first request specifies the following:</span></span>
 
-- <span data-ttu-id="492a0-145">параметр `$select` для возврата свойств `subject`, `sender` и `isRead` для каждого сообщения в ответе;</span><span class="sxs-lookup"><span data-stu-id="492a0-145">A `$select` parameter to return the `subject`, `sender`, and `isRead` properties for each message in the response.</span></span>
-- <span data-ttu-id="492a0-146">[необязательный заголовок запроса](#optional-request-header) _odata.maxpagesize_, возвращающий 2 сообщения одновременно.</span><span class="sxs-lookup"><span data-stu-id="492a0-146">The [optional request header](#optional-request-header), _odata.maxpagesize_, returning 2 messages at a time.</span></span>
+- <span data-ttu-id="1c8ee-146">параметр `$select` для возврата свойств `subject`, `sender` и `isRead` для каждого сообщения в ответе;</span><span class="sxs-lookup"><span data-stu-id="1c8ee-146">A `$select` parameter to return the `subject`, `sender`, and `isRead` properties for each message in the response.</span></span>
+- <span data-ttu-id="1c8ee-147">[необязательный заголовок запроса](#optional-request-header) _odata.maxpagesize_, возвращающий 2 сообщения одновременно.</span><span class="sxs-lookup"><span data-stu-id="1c8ee-147">The [optional request header](#optional-request-header), _odata.maxpagesize_, returning 2 messages at a time.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -111,9 +112,9 @@ GET https://graph.microsoft.com/v1.0/me/mailfolders/AQMkADNkNAAAgEMAAAA/messages
 Prefer: odata.maxpagesize=2
 ```
 
-### <a name="sample-initial-response"></a><span data-ttu-id="492a0-147">Пример исходного ответа</span><span class="sxs-lookup"><span data-stu-id="492a0-147">Sample initial response</span></span>
+### <a name="sample-initial-response"></a><span data-ttu-id="1c8ee-148">Пример исходного ответа</span><span class="sxs-lookup"><span data-stu-id="1c8ee-148">Sample initial response</span></span>
 
-<span data-ttu-id="492a0-p111">Ответ включает два сообщения и заголовок ответа `@odata.nextLink`. URL-адрес `nextLink` указывает, что в папке еще остались сообщения.</span><span class="sxs-lookup"><span data-stu-id="492a0-p111">The response includes two messages and an `@odata.nextLink` response header. The `nextLink` URL indicates there are more messages in the folder to get.</span></span>
+<span data-ttu-id="1c8ee-p111">Ответ включает два сообщения и заголовок ответа `@odata.nextLink`. URL-адрес `nextLink` указывает, что в папке еще остались сообщения.</span><span class="sxs-lookup"><span data-stu-id="1c8ee-p111">The response includes two messages and an `@odata.nextLink` response header. The `nextLink` URL indicates there are more messages in the folder to get.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -157,9 +158,9 @@ Prefer: odata.maxpagesize=2
 }
 ```
 
-### <a name="sample-second-request"></a><span data-ttu-id="492a0-150">Пример второго запроса</span><span class="sxs-lookup"><span data-stu-id="492a0-150">Sample second request</span></span>
+### <a name="sample-second-request"></a><span data-ttu-id="1c8ee-151">Пример второго запроса</span><span class="sxs-lookup"><span data-stu-id="1c8ee-151">Sample second request</span></span>
 
-<span data-ttu-id="492a0-p112">Второй запрос указывает URL-адрес `nextLink`, полученный из предыдущего ответа. Обратите внимание, что в нем больше не требуется указывать тот же параметр `$select`, что и в исходном запросе, так как маркер `skipToken` в URL-адресе `nextLink` включает его в закодированном виде.</span><span class="sxs-lookup"><span data-stu-id="492a0-p112">The second request specifies the `nextLink` URL returned from the previous response. Notice that it no longer has to specify the same `$select` parameter as in the initial request, as the `skipToken` in the `nextLink` URL encodes and includes it.</span></span>
+<span data-ttu-id="1c8ee-p112">Второй запрос указывает URL-адрес `nextLink`, полученный из предыдущего ответа. Обратите внимание, что в нем больше не требуется указывать тот же параметр `$select`, что и в исходном запросе, так как маркер `skipToken` в URL-адресе `nextLink` включает его в закодированном виде.</span><span class="sxs-lookup"><span data-stu-id="1c8ee-p112">The second request specifies the `nextLink` URL returned from the previous response. Notice that it no longer has to specify the same `$select` parameter as in the initial request, as the `skipToken` in the `nextLink` URL encodes and includes it.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -172,9 +173,9 @@ GET https://graph.microsoft.com/v1.0/me/mailfolders/AQMkADNkNAAAgEMAAAA/messages
 Prefer: odata.maxpagesize=2
 ```
 
-### <a name="sample-second-response"></a><span data-ttu-id="492a0-153">Пример второго ответа</span><span class="sxs-lookup"><span data-stu-id="492a0-153">Sample second response</span></span>
+### <a name="sample-second-response"></a><span data-ttu-id="1c8ee-154">Пример второго ответа</span><span class="sxs-lookup"><span data-stu-id="1c8ee-154">Sample second response</span></span>
 
-<span data-ttu-id="492a0-154">Второй ответ содержит следующие 2 сообщения в папке и еще одну ссылку `nextLink`, указывающую, что в папке еще остались сообщения.</span><span class="sxs-lookup"><span data-stu-id="492a0-154">The second response returns the next 2 messages in the folder and another `nextLink`, indicating there are more messages to get from the folder.</span></span>
+<span data-ttu-id="1c8ee-155">Второй ответ содержит следующие 2 сообщения в папке и еще одну ссылку `nextLink`, указывающую, что в папке еще остались сообщения.</span><span class="sxs-lookup"><span data-stu-id="1c8ee-155">The second response returns the next 2 messages in the folder and another `nextLink`, indicating there are more messages to get from the folder.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -218,9 +219,9 @@ Prefer: odata.maxpagesize=2
 }
 ```
 
-### <a name="sample-third-request"></a><span data-ttu-id="492a0-155">Пример третьего запроса</span><span class="sxs-lookup"><span data-stu-id="492a0-155">Sample third request</span></span>
+### <a name="sample-third-request"></a><span data-ttu-id="1c8ee-156">Пример третьего запроса</span><span class="sxs-lookup"><span data-stu-id="1c8ee-156">Sample third request</span></span>
 
-<span data-ttu-id="492a0-156">Третий запрос продолжает использовать URL-адрес `nextLink`, полученный из последнего запроса на синхронизацию.</span><span class="sxs-lookup"><span data-stu-id="492a0-156">The third request continues to use the latest `nextLink` URL returned from the last sync request.</span></span>
+<span data-ttu-id="1c8ee-157">Третий запрос продолжает использовать URL-адрес `nextLink`, полученный из последнего запроса на синхронизацию.</span><span class="sxs-lookup"><span data-stu-id="1c8ee-157">The third request continues to use the latest `nextLink` URL returned from the last sync request.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -232,9 +233,9 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/AQMkADNkNAAAgEMAAAA/messages
 Prefer: odata.maxpagesize=2
 ```
 
-### <a name="sample-third-and-final-response"></a><span data-ttu-id="492a0-157">Пример третьего и последнего ответа</span><span class="sxs-lookup"><span data-stu-id="492a0-157">Sample third and final response</span></span>
+### <a name="sample-third-and-final-response"></a><span data-ttu-id="1c8ee-158">Пример третьего и последнего ответа</span><span class="sxs-lookup"><span data-stu-id="1c8ee-158">Sample third and final response</span></span>
 
-<span data-ttu-id="492a0-p113">Третий ответ содержит последнее оставшееся сообщение из папки и URL-адрес `deltaLink`, указывающий, что синхронизация для этой папки пока что завершена. Сохраните URL-адрес `deltaLink` и используйте его в [следующем цикле синхронизации этой папки](#synchronize-messages-in-the-same-folder-in-the-next-round).</span><span class="sxs-lookup"><span data-stu-id="492a0-p113">The third response returns the only remaining message in the folder, and a `deltaLink` URL which indicates synchronization is complete for the time being for this folder. Save and use the `deltaLink` URL to [synchronize the same folder in the next round](#synchronize-messages-in-the-same-folder-in-the-next-round).</span></span>
+<span data-ttu-id="1c8ee-p113">Третий ответ содержит последнее оставшееся сообщение из папки и URL-адрес `deltaLink`, указывающий, что синхронизация для этой папки пока что завершена. Сохраните URL-адрес `deltaLink` и используйте его в [следующем цикле синхронизации этой папки](#synchronize-messages-in-the-same-folder-in-the-next-round).</span><span class="sxs-lookup"><span data-stu-id="1c8ee-p113">The third response returns the only remaining message in the folder, and a `deltaLink` URL which indicates synchronization is complete for the time being for this folder. Save and use the `deltaLink` URL to [synchronize the same folder in the next round](#synchronize-messages-in-the-same-folder-in-the-next-round).</span></span>
 
 <!-- {
   "blockType": "response",
@@ -265,9 +266,9 @@ Prefer: odata.maxpagesize=2
 }
 ```
 
-### <a name="synchronize-messages-in-the-same-folder-in-the-next-round"></a><span data-ttu-id="492a0-160">Синхронизация сообщений из одной папки в следующем цикле</span><span class="sxs-lookup"><span data-stu-id="492a0-160">Synchronize messages in the same folder in the next round</span></span>
+### <a name="synchronize-messages-in-the-same-folder-in-the-next-round"></a><span data-ttu-id="1c8ee-161">Синхронизация сообщений из одной папки в следующем цикле</span><span class="sxs-lookup"><span data-stu-id="1c8ee-161">Synchronize messages in the same folder in the next round</span></span>
 
-<span data-ttu-id="492a0-p114">С помощью ссылки `deltaLink` из последнего цикла [прошлого запроса](#sample-third-request) вы сможете получить только те сообщения, которые изменились (путем добавления, удаления или обновления) в этой папке с момента последней синхронизации. При условии, что вы не хотите менять максимальный размер страницы ответа, первый запрос следующего цикла будет выглядеть следующим образом:</span><span class="sxs-lookup"><span data-stu-id="492a0-p114">Using the `deltaLink` from the [last request](#sample-third-request) in the last round, you will be able to get only those messages that have changed (by being added, deleted, or updated) in that folder since then. Your first request in the next round will look like the following, assuming you prefer to keep the same maximum page size in the response:</span></span>
+<span data-ttu-id="1c8ee-p114">С помощью ссылки `deltaLink` из последнего цикла [прошлого запроса](#sample-third-request) вы сможете получить только те сообщения, которые изменились (путем добавления, удаления или обновления) в этой папке с момента последней синхронизации. При условии, что вы не хотите менять максимальный размер страницы ответа, первый запрос следующего цикла будет выглядеть следующим образом:</span><span class="sxs-lookup"><span data-stu-id="1c8ee-p114">Using the `deltaLink` from the [last request](#sample-third-request) in the last round, you will be able to get only those messages that have changed (by being added, deleted, or updated) in that folder since then. Your first request in the next round will look like the following, assuming you prefer to keep the same maximum page size in the response:</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -280,7 +281,7 @@ GET https://graph.microsoft.com/v1.0/me/mailfolders/AQMkADNkNAAAgEMAAAA/messages
 Prefer: odata.maxpagesize=2
 ```
 
-<span data-ttu-id="492a0-163">Ответ содержит ссылку `deltaLink`.</span><span class="sxs-lookup"><span data-stu-id="492a0-163">The response contains a `deltaLink`.</span></span> <span data-ttu-id="492a0-164">Это означает, что теперь синхронизированы все изменения в удаленной почтовой папке.</span><span class="sxs-lookup"><span data-stu-id="492a0-164">This indicates that all changes in the remote mail folder are now synchronized.</span></span> <span data-ttu-id="492a0-165">Одно сообщение было удалено, а еще одно — изменено.</span><span class="sxs-lookup"><span data-stu-id="492a0-165">One message was deleted and the other message was changed.</span></span>
+<span data-ttu-id="1c8ee-164">Ответ содержит ссылку `deltaLink`.</span><span class="sxs-lookup"><span data-stu-id="1c8ee-164">The response contains a `deltaLink`.</span></span> <span data-ttu-id="1c8ee-165">Это означает, что теперь синхронизированы все изменения в удаленной почтовой папке.</span><span class="sxs-lookup"><span data-stu-id="1c8ee-165">This indicates that all changes in the remote mail folder are now synchronized.</span></span> <span data-ttu-id="1c8ee-166">Одно сообщение было удалено, а еще одно — изменено.</span><span class="sxs-lookup"><span data-stu-id="1c8ee-166">One message was deleted and the other message was changed.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -318,9 +319,9 @@ Prefer: odata.maxpagesize=2
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="492a0-166">См. также</span><span class="sxs-lookup"><span data-stu-id="492a0-166">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1c8ee-167">См. также</span><span class="sxs-lookup"><span data-stu-id="1c8ee-167">See also</span></span>
 
-- [<span data-ttu-id="492a0-167">Запрос изменений Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="492a0-167">Microsoft Graph delta query</span></span>](delta-query-overview.md)
-- [<span data-ttu-id="492a0-168">Получение добавочных изменений для событий в представлении календаря</span><span class="sxs-lookup"><span data-stu-id="492a0-168">Get incremental changes to events in a calendar view</span></span>](delta-query-events.md)
-- [<span data-ttu-id="492a0-169">Получение добавочных изменений для групп</span><span class="sxs-lookup"><span data-stu-id="492a0-169">Get incremental changes to groups</span></span>](delta-query-groups.md)
-- [<span data-ttu-id="492a0-170">Получение добавочных изменений пользователей</span><span class="sxs-lookup"><span data-stu-id="492a0-170">Get incremental changes to users</span></span>](delta-query-users.md)
+- [<span data-ttu-id="1c8ee-168">Запрос изменений Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="1c8ee-168">Microsoft Graph delta query</span></span>](delta-query-overview.md)
+- [<span data-ttu-id="1c8ee-169">Получение добавочных изменений для событий в представлении календаря</span><span class="sxs-lookup"><span data-stu-id="1c8ee-169">Get incremental changes to events in a calendar view</span></span>](delta-query-events.md)
+- [<span data-ttu-id="1c8ee-170">Получение добавочных изменений для групп</span><span class="sxs-lookup"><span data-stu-id="1c8ee-170">Get incremental changes to groups</span></span>](delta-query-groups.md)
+- [<span data-ttu-id="1c8ee-171">Получение добавочных изменений пользователей</span><span class="sxs-lookup"><span data-stu-id="1c8ee-171">Get incremental changes to users</span></span>](delta-query-users.md)
