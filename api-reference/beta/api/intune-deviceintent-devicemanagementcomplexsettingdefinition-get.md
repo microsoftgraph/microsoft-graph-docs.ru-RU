@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 319f0b76ea65980cec6d07f809d9c3b08be96889
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 941203e50996016c89cc5f35ac851708f92eb937
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39946065"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41636422"
 ---
 # <a name="get-devicemanagementcomplexsettingdefinition"></a>Получение Девицеманажементкомплекссеттингдефинитион
 
@@ -26,7 +26,7 @@ ms.locfileid: "39946065"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -50,7 +50,7 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/categories/{deviceM
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/settingDefinitions/{device
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 934
+Content-Length: 1148
 
 {
   "value": {
@@ -79,13 +79,17 @@ Content-Length: 934
     "displayName": "Display Name value",
     "isTopLevel": true,
     "description": "Description value",
+    "placeholderText": "Placeholder Text value",
     "documentationUrl": "https://example.com/documentationUrl/",
     "keywords": [
       "Keywords value"
     ],
     "constraints": [
       {
-        "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+        "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint",
+        "supportedTypes": [
+          "Supported Types value"
+        ]
       }
     ],
     "dependencies": [
@@ -94,7 +98,10 @@ Content-Length: 934
         "definitionId": "Definition Id value",
         "constraints": [
           {
-            "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+            "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint",
+            "supportedTypes": [
+              "Supported Types value"
+            ]
           }
         ]
       }

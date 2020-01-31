@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 42ce8ae4de5569314782a22c1910d03c4eda3b4e
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: e5e80b31154b6e4d3b8546f49dec276392f1fc4f
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196506"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41636751"
 ---
 # <a name="deviceenrollmentplatformrestrictionsconfiguration-resource-type"></a>Тип ресурса deviceEnrollmentPlatformRestrictionsConfiguration
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Настройка регистрации устройств, которая ограничит типы устройств, которые может регистрировать пользователь
 
@@ -50,8 +50,8 @@ ms.locfileid: "37196506"
 |макрестриктион|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Ограничения для MAC-адресов на основе платформы, версии операционной системы платформы и владельца устройств|
 |macOSRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Ограничения для MAC-адресов на основе платформы, версии операционной системы платформы и владельца устройств|
 
-## <a name="relationships"></a>Отношения
-|Отношение|Тип|Описание|
+## <a name="relationships"></a>Связи
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md)|Список назначений групп для профиля конфигурации устройства, унаследованного от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 
@@ -78,49 +78,70 @@ ms.locfileid: "37196506"
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "String",
-    "osMaximumVersion": "String"
+    "osMaximumVersion": "String",
+    "blockedManufacturers": [
+      "String"
+    ]
   },
   "windowsRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "String",
-    "osMaximumVersion": "String"
+    "osMaximumVersion": "String",
+    "blockedManufacturers": [
+      "String"
+    ]
   },
   "windowsMobileRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "String",
-    "osMaximumVersion": "String"
+    "osMaximumVersion": "String",
+    "blockedManufacturers": [
+      "String"
+    ]
   },
   "androidRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "String",
-    "osMaximumVersion": "String"
+    "osMaximumVersion": "String",
+    "blockedManufacturers": [
+      "String"
+    ]
   },
   "androidForWorkRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "String",
-    "osMaximumVersion": "String"
+    "osMaximumVersion": "String",
+    "blockedManufacturers": [
+      "String"
+    ]
   },
   "macRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "String",
-    "osMaximumVersion": "String"
+    "osMaximumVersion": "String",
+    "blockedManufacturers": [
+      "String"
+    ]
   },
   "macOSRestriction": {
     "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
     "platformBlocked": true,
     "personalDeviceEnrollmentBlocked": true,
     "osMinimumVersion": "String",
-    "osMaximumVersion": "String"
+    "osMaximumVersion": "String",
+    "blockedManufacturers": [
+      "String"
+    ]
   }
 }
 ```

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3846fdffe1bc9e5f2e451e1271c25f1246fa3fa6
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 9a08137c9aca2f94ef0d5dcb96efd65e2f91c07e
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955549"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41636674"
 ---
 # <a name="iosdevicefeaturesconfiguration-resource-type"></a>Тип ресурса iosDeviceFeaturesConfiguration
 
@@ -37,7 +37,7 @@ ms.locfileid: "39955549"
 |:---|:---|:---|
 |id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -56,7 +56,8 @@ ms.locfileid: "39955549"
 |синглесигнонсеттингс|[iosSingleSignOnSettings](../resources/intune-deviceconfig-iossinglesignonsettings.md)|Параметры входа в систему Kerberos, позволяющие приложениям на принимающих устройствах беспрепятственно выполнять проверку подлинности.|
 |валлпапердисплайлокатион|[иосваллпапердисплайлокатион](../resources/intune-deviceconfig-ioswallpaperdisplaylocation.md)|Описатель расположения для отображения фонового рисунка. Возможные значения: `notConfigured`, `lockScreen`, `homeScreen`, `lockAndHomeScreens`.|
 |валлпаперимаже|[mimeContent](../resources/intune-shared-mimecontent.md);|Изображение фонового рисунка должно иметь формат PNG или JPEG. Для этого требуется контролируемое устройство с iOS 8 или более поздней версии.|
-|singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|Получает или задает профиль расширения единого входа.|
+|singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|Получает или задает профиль расширения единого входа. Устарело: вместо этого используйте Иоссинглесигнонекстенсион.|
+|иоссинглесигнонекстенсион|[иоссинглесигнонекстенсион](../resources/intune-deviceconfig-iossinglesignonextension.md)|Получает или задает профиль расширения единого входа.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -226,6 +227,36 @@ ms.locfileid: "39955549"
     "value": "binary"
   },
   "singleSignOnExtension": {
+    "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
+    "realm": "String",
+    "domains": [
+      "String"
+    ],
+    "blockAutomaticLogin": true,
+    "cacheName": "String",
+    "credentialBundleIdAccessControlList": [
+      "String"
+    ],
+    "domainRealms": [
+      "String"
+    ],
+    "isDefaultRealm": true,
+    "passwordBlockModification": true,
+    "passwordExpirationDays": 1024,
+    "passwordExpirationNotificationDays": 1024,
+    "userPrincipalName": "String",
+    "passwordRequireActiveDirectoryComplexity": true,
+    "passwordPreviousPasswordBlockCount": 1024,
+    "passwordMinimumLength": 1024,
+    "passwordMinimumAgeDays": 1024,
+    "passwordRequirementsDescription": "String",
+    "requireUserPresence": true,
+    "activeDirectorySiteCode": "String",
+    "passwordEnableLocalSync": true,
+    "blockActiveDirectorySiteAutoDiscovery": true,
+    "passwordChangeUrl": "String"
+  },
+  "iosSingleSignOnExtension": {
     "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
     "realm": "String",
     "domains": [

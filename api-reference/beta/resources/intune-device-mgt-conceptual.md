@@ -4,12 +4,12 @@ description: Список API Microsoft Graph для конечных точек
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: de5f688e0613d1336c277f85cb3bce6c482c2fbc
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 00cb96f6af16ba78391d2311ab02e220a209b410
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955577"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41636548"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
@@ -34,6 +34,7 @@ ms.locfileid: "39955577"
 - [Результат группового действия в отношении управляемых устройств](intune-devices-bulkmanageddeviceactionresult.md)
 - [Тип корпуса](intune-devices-chassistype.md)
 - [Условие управления циклического геофенсинга](intune-fencing-circulargeofencemanagementcondition.md)
+- [Тип подходящего управления для совместного управления](intune-devices-comanagementeligibletype.md)
 - [Состояние соответствия требованиям](intune-devices-compliancestate.md)
 - [Действие диспетчера конфигураций](intune-devices-configurationmanageraction.md)
 - [Тип действия диспетчера конфигураций](intune-devices-configurationmanageractiontype.md)
@@ -78,6 +79,7 @@ ms.locfileid: "39955577"
 - [Состояние устройства намерения управления устройствами](intune-deviceintent-devicemanagementintentdevicestate.md)
 - [Сводка состояния устройства намерения управления устройствами](intune-deviceintent-devicemanagementintentdevicestatesummary.md)
 - [Категория параметра намерения управления устройствами](intune-deviceintent-devicemanagementintentsettingcategory.md)
+- [Цель управления устройствами задание секретного ограничения](intune-deviceintent-devicemanagementintentsettingsecretconstraint.md)
 - [Состояния пользователя намерения управления устройствами](intune-deviceintent-devicemanagementintentuserstate.md)
 - [Сводка состояния пользователя намерения управления устройствами](intune-deviceintent-devicemanagementintentuserstatesummary.md)
 - [Назначение сценария управления устройствами](intune-devices-devicemanagementscriptassignment.md)
@@ -85,14 +87,20 @@ ms.locfileid: "39955577"
 - [Тип ресурса deviceManagementScriptGroupAssignment](intune-devices-devicemanagementscriptgroupassignment.md)
 - [Тип ресурса deviceManagementScriptRunSummary](intune-devices-devicemanagementscriptrunsummary.md)
 - [Тип ресурса deviceManagementScriptUserState](intune-devices-devicemanagementscriptuserstate.md)
+- [Ограничение приложения для параметра управления устройствами](intune-deviceintent-devicemanagementsettingappconstraint.md)
 - [Логическое ограничение параметра управления устройствами](intune-deviceintent-devicemanagementsettingbooleanconstraint.md)
 - [Категория параметра управления устройствами](intune-deviceintent-devicemanagementsettingcategory.md)
+- [Ограничение коллекции параметров управления устройствами](intune-deviceintent-devicemanagementsettingcollectionconstraint.md)
 - [Сравнение параметров управления устройствами](intune-deviceintent-devicemanagementsettingcomparison.md)
 - [Определение параметра управления устройствами](intune-deviceintent-devicemanagementsettingdefinition.md)
 - [Зависимость параметра управления устройствами](intune-deviceintent-devicemanagementsettingdependency.md)
+- [Ограничение типа регистрации для параметров управления устройствами](intune-deviceintent-devicemanagementsettingenrollmenttypeconstraint.md)
+- [Ограничение файла для параметра управления устройствами](intune-deviceintent-devicemanagementsettingfileconstraint.md)
 - [Экземпляр параметра управления устройствами](intune-deviceintent-devicemanagementsettinginstance.md)
 - [Цельное ограничение параметра управления устройствами](intune-deviceintent-devicemanagementsettingintegerconstraint.md)
+- [Ограничение профиля для установки управления устройствами](intune-deviceintent-devicemanagementsettingprofileconstraint.md)
 - [Регулярное выражение ограничения параметра управления устройствами](intune-deviceintent-devicemanagementsettingregexconstraint.md)
+- [Обязательное ограничение для параметра управления устройствами](intune-deviceintent-devicemanagementsettingrequiredconstraint.md)
 - [Длина строки ограничения параметра управления устройствами](intune-deviceintent-devicemanagementsettingstringlengthconstraint.md)
 - [XML-ограничение параметра управления устройствами](intune-deviceintent-devicemanagementsettingxmlconstraint.md)
 - [Экземпляр параметра строки управления устройствами](intune-deviceintent-devicemanagementstringsettinginstance.md)
@@ -108,6 +116,7 @@ ms.locfileid: "39955577"
 - [Сводка по операционной системе устройства](intune-devices-deviceoperatingsystemsummary.md)
 - [Обзор защиты устройств](intune-devices-deviceprotectionoverview.md)
 - [Состояние регистрации устройства](intune-devices-deviceregistrationstate.md)
+- [Сценарий оболочки устройства](intune-devices-deviceshellscript.md)
 - [Тип диска](intune-devices-disktype.md)
 - [Код активации внедрения SIM-карты](intune-esim-embeddedsimactivationcode.md)
 - [Пул кода активации внедрения SIM-карты](intune-esim-embeddedsimactivationcodepool.md)
@@ -127,6 +136,7 @@ ms.locfileid: "39955577"
 - [Вошедший пользователь](intune-devices-loggedonuser.md)
 - [Состояние режима пропажи](intune-devices-lostmodestate.md)
 - [Управляемое устройство](intune-devices-manageddevice.md)
+- [Управляемая архитектура устройства](intune-devices-manageddevicearchitecture.md)
 - [Настройки очистки управляемых устройств](intune-devices-manageddevicecleanupsettings.md)
 - [Модели и производители управляемых устройств](intune-devices-manageddevicemodelsandmanufacturers.md)
 - [Обзор управляемых устройств](intune-devices-manageddeviceoverview.md)

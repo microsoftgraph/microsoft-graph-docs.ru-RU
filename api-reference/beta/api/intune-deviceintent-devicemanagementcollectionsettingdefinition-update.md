@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dfe0d569bd0a3c557067f9b92fd3308c0d3daf77
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: c3417eaa470b181e0ba1b77f87c3048232e0ae4c
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39946121"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41636436"
 ---
 # <a name="update-devicemanagementcollectionsettingdefinition"></a>Обновление Девицеманажементколлектионсеттингдефинитион
 
@@ -26,7 +26,7 @@ ms.locfileid: "39946121"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -47,7 +47,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devic
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [девицеманажементколлектионсеттингдефинитион](../resources/intune-deviceintent-devicemanagementcollectionsettingdefinition.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицеманажементколлектионсеттингдефинитион](../resources/intune-deviceintent-devicemanagementcollectionsettingdefinition.md).
@@ -59,15 +59,16 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devic
 |displayName|Строка|Отображаемое имя параметра, унаследованное от [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
 |истоплевел|Boolean|Если параметр находится в верхнем уровне, его можно настроить без переноса в коллекцию или сложный параметр, наследуемый от [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
 |description|String|Описание параметра, унаследованное от [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
+|плацехолдертекст|Строка|Замещающий текст в качестве примера допустимых входных данных, наследуемых от [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
 |документатионурл|Строка|URL-адрес для установки документации, унаследованной от [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
-|keywords|Коллекция строк|Ключевые слова, связанные с параметром, унаследованным от [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
+|keywords|Коллекция String|Ключевые слова, связанные с параметром, унаследованным от [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
 |провероч|Коллекция [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)|Коллекция ограничений для значения параметра, наследуемого из [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
 |зависящ|Коллекция [девицеманажементсеттингдепенденци](../resources/intune-deviceintent-devicemanagementsettingdependency.md)|Коллекция зависимостей от других параметров, наследуемых от [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
 |елементдефинитионид|Строка|Идентификатор определения параметра, описывающий, как выглядит каждый элемент коллекции|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементколлектионсеттингдефинитион](../resources/intune-deviceintent-devicemanagementcollectionsettingdefinition.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -77,7 +78,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devic
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/settingDefinitions/{deviceManagementSettingDefinitionId}
 Content-type: application/json
-Content-length: 795
+Content-length: 995
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementCollectionSettingDefinition",
@@ -85,13 +86,17 @@ Content-length: 795
   "displayName": "Display Name value",
   "isTopLevel": true,
   "description": "Description value",
+  "placeholderText": "Placeholder Text value",
   "documentationUrl": "https://example.com/documentationUrl/",
   "keywords": [
     "Keywords value"
   ],
   "constraints": [
     {
-      "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+      "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint",
+      "supportedTypes": [
+        "Supported Types value"
+      ]
     }
   ],
   "dependencies": [
@@ -100,7 +105,10 @@ Content-length: 795
       "definitionId": "Definition Id value",
       "constraints": [
         {
-          "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+          "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint",
+          "supportedTypes": [
+            "Supported Types value"
+          ]
         }
       ]
     }
@@ -114,7 +122,7 @@ Content-length: 795
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 844
+Content-Length: 1044
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementCollectionSettingDefinition",
@@ -123,13 +131,17 @@ Content-Length: 844
   "displayName": "Display Name value",
   "isTopLevel": true,
   "description": "Description value",
+  "placeholderText": "Placeholder Text value",
   "documentationUrl": "https://example.com/documentationUrl/",
   "keywords": [
     "Keywords value"
   ],
   "constraints": [
     {
-      "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+      "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint",
+      "supportedTypes": [
+        "Supported Types value"
+      ]
     }
   ],
   "dependencies": [
@@ -138,7 +150,10 @@ Content-Length: 844
       "definitionId": "Definition Id value",
       "constraints": [
         {
-          "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+          "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint",
+          "supportedTypes": [
+            "Supported Types value"
+          ]
         }
       ]
     }

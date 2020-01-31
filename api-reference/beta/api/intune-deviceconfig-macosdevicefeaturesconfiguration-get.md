@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b7787d625ba701902a835cb3d1eadc24d45fdd0e
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 2dbdf38e2f73f8854236d43ba811f2cacccfcc70
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39948410"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41635841"
 ---
 # <a name="get-macosdevicefeaturesconfiguration"></a>Получение объекта macOSDeviceFeaturesConfiguration
 
@@ -26,7 +26,7 @@ ms.locfileid: "39948410"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -49,7 +49,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2703
+Content-Length: 2815
 
 {
   "value": {
@@ -146,6 +146,9 @@ Content-Length: 2703
     ],
     "singleSignOnExtension": {
       "@odata.type": "microsoft.graph.singleSignOnExtension"
+    },
+    "macOSSingleSignOnExtension": {
+      "@odata.type": "microsoft.graph.macOSSingleSignOnExtension"
     }
   }
 }

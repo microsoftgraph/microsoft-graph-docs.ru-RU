@@ -4,12 +4,12 @@ description: Разностный запрос позволяет запраши
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 383c7a1bc0a2e129d859b17101f80ee1638d22fa
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: c51c1e79e96068805ca37630d28cae0854f414dd
+ms.sourcegitcommit: ce9ebbd40ac4896df5ce42173dc6ffb7ef3f76c7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216793"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41578838"
 ---
 # <a name="get-incremental-changes-to-messages-in-a-folder"></a>Получение добавочных изменений для сообщений в папке
 
@@ -42,6 +42,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
 - Запросы изменений поддерживают параметры `$select`, `$top` и `$expand` для сообщений.
 - Имеется ограниченная поддержка параметров `$filter` и `$orderby`:
   - Для параметра `$filter` поддерживаются только выражения `$filter=receivedDateTime+ge+{value}` и `$filter=receivedDateTime+gt+{value}`.
+  - При применении `$filter` в разностном запросе возвращается только до 5 000 сообщений.
   - Для параметра `$orderby` поддерживается только выражение `$orderby=receivedDateTime+desc`. Если выражение `$orderby` не указано, результаты будут возвращаться в непредсказуемом порядке.
 - Параметр `$search` не поддерживается.
 

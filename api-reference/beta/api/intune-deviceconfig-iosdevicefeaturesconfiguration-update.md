@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7f1efaa1912b6c95398ca9fcff31e47730a5b034
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 2ec6e7b11d3b3672efc2b49dcb3fe8a5ecc325d4
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39949042"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41635953"
 ---
 # <a name="update-iosdevicefeaturesconfiguration"></a>Update iosDeviceFeaturesConfiguration
 
@@ -26,7 +26,7 @@ ms.locfileid: "39949042"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -46,7 +46,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [iosDeviceFeaturesConfiguration](../resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, которые необходимо указать при создании объекта [iosDeviceFeaturesConfiguration](../resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md).
@@ -55,7 +55,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |:---|:---|:---|
 |id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -74,7 +74,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |синглесигнонсеттингс|[iosSingleSignOnSettings](../resources/intune-deviceconfig-iossinglesignonsettings.md)|Параметры входа в систему Kerberos, позволяющие приложениям на принимающих устройствах беспрепятственно выполнять проверку подлинности.|
 |валлпапердисплайлокатион|[иосваллпапердисплайлокатион](../resources/intune-deviceconfig-ioswallpaperdisplaylocation.md)|Описатель расположения для отображения фонового рисунка. Возможные значения: `notConfigured`, `lockScreen`, `homeScreen`, `lockAndHomeScreens`.|
 |валлпаперимаже|[mimeContent](../resources/intune-shared-mimecontent.md);|Изображение фонового рисунка должно иметь формат PNG или JPEG. Для этого требуется контролируемое устройство с iOS 8 или более поздней версии.|
-|singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|Получает или задает профиль расширения единого входа.|
+|singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|Получает или задает профиль расширения единого входа. Устарело: вместо этого используйте Иоссинглесигнонекстенсион.|
+|иоссинглесигнонекстенсион|[иоссинглесигнонекстенсион](../resources/intune-deviceconfig-iossinglesignonextension.md)|Получает или задает профиль расширения единого входа.|
 
 
 
@@ -88,7 +89,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 5571
+Content-length: 6716
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -261,6 +262,36 @@ Content-length: 5571
     "passwordEnableLocalSync": true,
     "blockActiveDirectorySiteAutoDiscovery": true,
     "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+  },
+  "iosSingleSignOnExtension": {
+    "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
+    "realm": "Realm value",
+    "domains": [
+      "Domains value"
+    ],
+    "blockAutomaticLogin": true,
+    "cacheName": "Cache Name value",
+    "credentialBundleIdAccessControlList": [
+      "Credential Bundle Id Access Control List value"
+    ],
+    "domainRealms": [
+      "Domain Realms value"
+    ],
+    "isDefaultRealm": true,
+    "passwordBlockModification": true,
+    "passwordExpirationDays": 6,
+    "passwordExpirationNotificationDays": 2,
+    "userPrincipalName": "User Principal Name value",
+    "passwordRequireActiveDirectoryComplexity": true,
+    "passwordPreviousPasswordBlockCount": 2,
+    "passwordMinimumLength": 5,
+    "passwordMinimumAgeDays": 6,
+    "passwordRequirementsDescription": "Password Requirements Description value",
+    "requireUserPresence": true,
+    "activeDirectorySiteCode": "Active Directory Site Code value",
+    "passwordEnableLocalSync": true,
+    "blockActiveDirectorySiteAutoDiscovery": true,
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
   }
 }
 ```
@@ -270,7 +301,7 @@ Content-length: 5571
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5743
+Content-Length: 6888
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -418,6 +449,36 @@ Content-Length: 5743
     "value": "dmFsdWU="
   },
   "singleSignOnExtension": {
+    "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
+    "realm": "Realm value",
+    "domains": [
+      "Domains value"
+    ],
+    "blockAutomaticLogin": true,
+    "cacheName": "Cache Name value",
+    "credentialBundleIdAccessControlList": [
+      "Credential Bundle Id Access Control List value"
+    ],
+    "domainRealms": [
+      "Domain Realms value"
+    ],
+    "isDefaultRealm": true,
+    "passwordBlockModification": true,
+    "passwordExpirationDays": 6,
+    "passwordExpirationNotificationDays": 2,
+    "userPrincipalName": "User Principal Name value",
+    "passwordRequireActiveDirectoryComplexity": true,
+    "passwordPreviousPasswordBlockCount": 2,
+    "passwordMinimumLength": 5,
+    "passwordMinimumAgeDays": 6,
+    "passwordRequirementsDescription": "Password Requirements Description value",
+    "requireUserPresence": true,
+    "activeDirectorySiteCode": "Active Directory Site Code value",
+    "passwordEnableLocalSync": true,
+    "blockActiveDirectorySiteAutoDiscovery": true,
+    "passwordChangeUrl": "https://example.com/passwordChangeUrl/"
+  },
+  "iosSingleSignOnExtension": {
     "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
     "realm": "Realm value",
     "domains": [

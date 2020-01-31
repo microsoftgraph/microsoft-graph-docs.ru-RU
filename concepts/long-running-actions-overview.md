@@ -3,19 +3,19 @@ title: Работа с действиями, выполняющимися дли
 description: В этой статье описаны принципы работы с действиями, выполняющимися длительное время.
 localization_priority: Normal
 author: daspek
-ms.openlocfilehash: 08584750feba670b0041f50696b75b3f7e6910b5
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 470ef7ea7fd3597bec7c22b5d97cff38a5ef5a75
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36730318"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41635091"
 ---
 # <a name="working-with-long-running-actions-beta"></a>Работа с действиями, выполняющимися длительное время (бета-версия)
 
 
 Для выполнения некоторых запросов API требуется неопределенное время.
 Вместо того чтобы ожидать завершения действия перед возвращением ответа, Microsoft Graph может использовать шаблон действий, выполняющихся длительное время.
-При использовании этого шаблона вашему приложению предоставляется время для выполнения опроса об изменениях состояния для действия, выполняющегося длительное время, и запросу не нужно ожидать завершения действия.
+Этот шаблон предоставляет приложению возможность опрашивать обновления состояния при длительном действии, не требуя каких – либо запросов, ожидающих выполнения действия.
 
 В стандартном шаблоне выполняются следующие действия:
 
@@ -53,7 +53,7 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/lro-copy-item-example-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/lro-copy-item-example-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -150,7 +150,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{item-id}
 [!INCLUDE [sample-code](../includes/snippets/javascript/lro-copy-item-example-complete-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/lro-copy-item-example-complete-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

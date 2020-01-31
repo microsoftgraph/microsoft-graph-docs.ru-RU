@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d25cadaa2088f0ff7593e2e2fdea396b56851fbd
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: b3ca88ca530771d78db933f1b2e9e89ac1d747f0
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39948881"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41635939"
 ---
 # <a name="get-iosgeneraldeviceconfiguration"></a>Get iosGeneralDeviceConfiguration
 
@@ -26,7 +26,7 @@ ms.locfileid: "39948881"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -49,7 +49,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11247
+Content-Length: 11287
 
 {
   "value": {
@@ -359,7 +359,8 @@ Content-Length: 11247
     "continuousPathKeyboardBlocked": true,
     "findMyDeviceInFindMyAppBlocked": true,
     "findMyFriendsInFindMyAppBlocked": true,
-    "iTunesBlocked": true
+    "iTunesBlocked": true,
+    "kioskModeAppType": "appStoreApp"
   }
 }
 ```

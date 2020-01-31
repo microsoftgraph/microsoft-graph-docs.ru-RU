@@ -4,12 +4,12 @@ description: Список API Microsoft Graph для конечных точек
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: c8031b38eb9e86641b4dd62388b067847edace97
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 39b62ea997c62537a419bd8090d330184af7f47c
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955731"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41636590"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Настройка устройств в Microsoft Intune
 
@@ -39,6 +39,7 @@ ms.locfileid: "39955731"
 - [Глобальный прокси-сервер владельца устройства Android](intune-deviceconfig-androiddeviceownerglobalproxy.md)
 - [Автонастройка глобального прокси-сервера владельца устройств Android](intune-deviceconfig-androiddeviceownerglobalproxyautoconfig.md)
 - [Глобальный прокси-сервер владельца устройства Android Direct](intune-deviceconfig-androiddeviceownerglobalproxydirect.md)
+- [Профиль сертификата PFX, импортированный владельцем устройства Android](intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile.md)
 - [Режим хранения владельца устройства Android](intune-deviceconfig-androiddeviceownerplaystoremode.md)
 - [Требуемый тип пароля для владельца устройства с Android](intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)
 - [Профиль сертификата SCEP владельца устройства Android](intune-deviceconfig-androiddeviceownerscepcertificateprofile.md)
@@ -105,6 +106,7 @@ ms.locfileid: "39955731"
 - [Тип управления для приложения AppLocker](intune-deviceconfig-applockerapplicationcontroltype.md)
 - [База конфигураций функций для устройств Apple](intune-deviceconfig-appledevicefeaturesconfigurationbase.md)
 - [Формат имени субъекта Apple](intune-deviceconfig-applesubjectnameformat.md)
+- [Конфигурация "VPN VPN" всегда включена](intune-deviceconfig-applevpnalwaysonconfiguration.md)
 - [Конфигурация VPN для Apple](intune-deviceconfig-applevpnconfiguration.md)
 - [Тип VPN-подключения для Apple](intune-deviceconfig-applevpnconnectiontype.md)
 - [Тип общего доступа к буферу обмена в блоке Application Guard](intune-deviceconfig-applicationguardblockclipboardsharingtype.md)
@@ -138,6 +140,7 @@ ms.locfileid: "39955731"
 - [Действие Защитника при обнаружении потенциально нежелательного приложения](intune-deviceconfig-defenderpotentiallyunwantedappaction.md)
 - [Запрос Защитника на отправку образца](intune-deviceconfig-defenderpromptforsamplesubmission.md)
 - [Тип защиты для Защитника](intune-deviceconfig-defenderprotectiontype.md)
+- [Направление проверки защитника в реальном времени](intune-deviceconfig-defenderrealtimescandirection.md)
 - [Тип сканирования для Защитника](intune-deviceconfig-defenderscantype.md)
 - [Тип отображения контактного лица из ИТ-отдела центра безопасности в Защитнике](intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)
 - [Тип уведомлений центра безопасности из приложения для Защитника](intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)
@@ -260,6 +263,7 @@ ms.locfileid: "39955731"
 - [Профиль сертификатов для iOS](intune-deviceconfig-ioscertificateprofile.md)
 - [Базовый профиль сертификатов для iOS](intune-deviceconfig-ioscertificateprofilebase.md)
 - [Политика соответствия для iOS](intune-deviceconfig-ioscompliancepolicy.md)
+- [расширение единого входа для учетных данных iOS](intune-deviceconfig-ioscredentialsinglesignonextension.md)
 - [Настраиваемая конфигурация для iOS](intune-deviceconfig-ioscustomconfiguration.md)
 - [Конфигурация проверки подлинности производных учетных данных iOS](intune-deviceconfig-iosderivedcredentialauthenticationconfiguration.md)
 - [Конфигурация функций для устройств iOS](intune-deviceconfig-iosdevicefeaturesconfiguration.md)
@@ -276,11 +280,14 @@ ms.locfileid: "39955731"
 - [Страница начального экрана iOS](intune-deviceconfig-ioshomescreenpage.md)
 - [Профиль импортированного сертификата PFX для iOS](intune-deviceconfig-iosimportedpfxcertificateprofile.md)
 - [расширение единого входа для iOS Kerberos](intune-deviceconfig-ioskerberossinglesignonextension.md)
+- [Тип приложения режима киоска iOS](intune-deviceconfig-ioskioskmodeapptype.md)
 - [Правило использование сети iOS](intune-deviceconfig-iosnetworkusagerule.md)
 - [Тип оповещений об уведомлениях iOS](intune-deviceconfig-iosnotificationalerttype.md)
 - [Параметры уведомлений iOS](intune-deviceconfig-iosnotificationsettings.md)
 - [Профиль сертификатов PKCS для iOS](intune-deviceconfig-iospkcscertificateprofile.md)
+- [расширение единого входа для перенаправления iOS](intune-deviceconfig-iosredirectsinglesignonextension.md)
 - [Профиль сертификатов SCEP для iOS](intune-deviceconfig-iosscepcertificateprofile.md)
+- [расширение единого входа для iOS](intune-deviceconfig-iossinglesignonextension.md)
 - [Параметры единого входа iOS](intune-deviceconfig-iossinglesignonsettings.md)
 - [Доверенный корневой сертификат для iOS](intune-deviceconfig-iostrustedrootcertificate.md)
 - [Конфигурация обновления iOS](intune-deviceconfig-iosupdateconfiguration.md)
@@ -309,6 +316,7 @@ ms.locfileid: "39955731"
 - [Локальные параметры безопасности: режим отображения запроса для повышения прав стандартного пользователя](intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md)
 - [База профилей сертификатов для macOS](intune-deviceconfig-macoscertificateprofilebase.md)
 - [Политика соответствия macOS](intune-deviceconfig-macoscompliancepolicy.md)
+- [расширение единого входа для учетных данных macOS](intune-deviceconfig-macoscredentialsinglesignonextension.md)
 - [Конфигурация настраиваемого приложения macOS](intune-deviceconfig-macoscustomappconfiguration.md)
 - [Специальная конфигурация macOS](intune-deviceconfig-macoscustomconfiguration.md)
 - [Конфигурация функций для устройств с macOS](intune-deviceconfig-macosdevicefeaturesconfiguration.md)
@@ -324,7 +332,9 @@ ms.locfileid: "39955731"
 - [расширение ядра macOS](intune-deviceconfig-macoskernelextension.md)
 - [Элемент запуска macOS](intune-deviceconfig-macoslaunchitem.md)
 - [Профиль сертификата macOS PKCS](intune-deviceconfig-macospkcscertificateprofile.md)
+- [macOS переадресации расширения единого входа](intune-deviceconfig-macosredirectsinglesignonextension.md)
 - [Профиль сертификата SCEP для macOS](intune-deviceconfig-macosscepcertificateprofile.md)
+- [расширение единого входа macOS](intune-deviceconfig-macossinglesignonextension.md)
 - [Доверенный корневой сертификат для macOS](intune-deviceconfig-macostrustedrootcertificate.md)
 - [Конфигурация VPN для macOS](intune-deviceconfig-macosvpnconfiguration.md)
 - [Конфигурация Wi-Fi для macOS](intune-deviceconfig-macoswificonfiguration.md)
@@ -332,6 +342,8 @@ ms.locfileid: "39955731"
 - [Состояние всех управляемых сертификатов устройств](intune-deviceconfig-managedalldevicecertificatestate.md)
 - [Состояние сертификата управляемого устройства](intune-deviceconfig-manageddevicecertificatestate.md)
 - [Состояние шифрования управляемого устройства](intune-deviceconfig-manageddeviceencryptionstate.md)
+- [Состояние параметров конфигурации мобильных приложений для управляемых устройств](intune-deviceconfig-manageddevicemobileappconfigurationsettingstate.md)
+- [Состояние конфигурации мобильного приложения для управляемого устройства](intune-deviceconfig-managedDeviceMobileAppConfigurationState.md)
 - [Сообщение из отчета для управляемого устройства](intune-deviceconfig-manageddevicereportedapp.md)
 - [Рейтинг мультимедийного содержимого для Австралии](intune-deviceconfig-mediacontentratingaustralia.md)
 - [Оценка мультимедийного содержимого для Канады](intune-deviceconfig-mediacontentratingcanada.md)
@@ -380,10 +392,13 @@ ms.locfileid: "39955731"
 - [Тип рейтинга телевизионных передач для Соединенного Королевства](intune-deviceconfig-ratingunitedkingdomtelevisiontype.md)
 - [Тип рейтинга фильмов для Соединенных Штатов Америки](intune-deviceconfig-ratingunitedstatesmoviestype.md)
 - [Тип рейтинга телевизионных передач для Соединенных Штатов Америки](intune-deviceconfig-ratingunitedstatestelevisiontype.md)
+- [Перенаправление расширения единого входа](intune-deviceconfig-redirectsinglesignonextension.md)
 - [Требуемый тип пароля](intune-deviceconfig-requiredpasswordtype.md)
 - [Состояние ограниченных приложений](intune-deviceconfig-restrictedappsstate.md)
 - [Нарушение правил для ограниченных приложений](intune-deviceconfig-restrictedappsviolation.md)
+- [Снятие с учета запланированного управляемого устройства](intune-deviceconfig-retirescheduledmanageddevice.md)
 - [Тип фильтра для безопасного поиска](intune-deviceconfig-safesearchfiltertype.md)
+- [Состояние распрекращения расписания](intune-deviceconfig-scheduledretirestate.md)
 - [Тип учетной записи для безопасной оценки](intune-deviceconfig-secureassessmentaccounttype.md)
 - [Безопасная загрузка с типом d m](intune-deviceconfig-securebootwithdmatype.md)
 - [Тип запуска службы](intune-deviceconfig-servicestarttype.md)
@@ -397,6 +412,7 @@ ms.locfileid: "39955731"
 - [Расширение единого входа](intune-deviceconfig-singlesignonextension.md)
 - [Уровень безопасности сайта](intune-deviceconfig-sitesecuritylevel.md)
 - [Общие сведения о состоянии обновления программного обеспечения](intune-deviceconfig-softwareupdatestatussummary.md)
+- [Указанные сетевые подключаемые модули для переопределения](intune-deviceconfig-specifiedcaptivenetworkplugins.md)
 - [Параметры управления состоянием](intune-deviceconfig-statemanagementsetting.md)
 - [Тип альтернативного имени субъекта](intune-deviceconfig-subjectalternativenametype.md)
 - [Формат имени субъекта](intune-deviceconfig-subjectnameformat.md)
@@ -425,9 +441,11 @@ ms.locfileid: "39955731"
 - [Маршрут VPN](intune-deviceconfig-vpnroute.md)
 - [VPN-сервер](intune-deviceconfig-vpnserver.md)
 - [Тип сертификата VPN-сервера](intune-deviceconfig-vpnservercertificatetype.md)
+- [Действие исключения службы VPN](intune-deviceconfig-vpnserviceexceptionaction.md)
 - [Правило трафика VPN](intune-deviceconfig-vpntrafficrule.md)
 - [Тип приложения для правила трафика VPN](intune-deviceconfig-vpntrafficruleapptype.md)
 - [Тип политики маршрутизации для правила трафика VPN](intune-deviceconfig-vpntrafficruleroutingpolicytype.md)
+- [Тип конфигурации VPN-туннеля](intune-deviceconfig-vpntunnelconfigurationtype.md)
 - [Параметры файлов cookie для веб-браузера](intune-deviceconfig-webbrowsercookiesettings.md)
 - [Расписание на неделю](intune-deviceconfig-weeklyschedule.md)
 - [Сведения о собрании на экране приветствия](intune-deviceconfig-welcomescreenmeetinginformation.md)

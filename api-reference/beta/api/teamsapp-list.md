@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cfb7cc45d41d779d63ef4c13ff28996ed035abe3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4a27a7b63248ddb94e4ea819300f325e04a02c9f
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35977545"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41636520"
 ---
 # <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a>Список опубликованных приложений из каталога приложений Microsoft Teams
 
@@ -21,13 +21,11 @@ ms.locfileid: "35977545"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions_reference).
-
-> **Примечание:** Только глобальные администраторы могут вызывать этот API.
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions_reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | AppCatalog.ReadWrite.All            |
+| Делегированное (рабочая или учебная учетная запись)     | AppCatalog.ReadWrite.All            |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
 | Для приложений                            | Не поддерживается                       |
 
@@ -49,7 +47,7 @@ GET /appCatalogs/teamsApps
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Нет.
 

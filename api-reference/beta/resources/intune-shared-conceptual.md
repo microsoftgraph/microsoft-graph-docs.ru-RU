@@ -4,12 +4,12 @@ description: Перечисляет API Microsoft Graph для конечных 
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: 007b118334c57397c2ec5b66e9d7acfc9cb42775
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: e1b613dc9140e597dc9eb0c74448f227cf940ba5
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088275"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41636828"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Общие ресурсы в Microsoft Intune
 
@@ -25,6 +25,7 @@ ms.locfileid: "38088275"
 - [Объект назначения всех устройств](intune-shared-alldevicesassignmenttarget.md)
 - [Объект назначения всех лицензированных пользователей](intune-shared-alllicensedusersassignmenttarget.md)
 - [Защита управляемых приложений для Android](intune-shared-androidmanagedappprotection.md)
+- [Тип вращения пароля восстановления BitLocker](intune-shared-bitlockerrecoverypasswordrotationtype.md)
 - [Действие портала компании](intune-shared-companyportalaction.md)
 - [Действие блокирования портала компании](intune-shared-companyportalblockedaction.md)
 - [Состояние соответствия](intune-shared-compliancestatus.md)
@@ -56,9 +57,15 @@ ms.locfileid: "38088275"
 - [Диапазон IP-адресов](intune-shared-iprange.md)
 - [Диапазон IPv4-адресов](intune-shared-ipv4range.md)
 - [Диапазон IPv6-адресов](intune-shared-ipv6range.md)
+- [Ключевая логическая переменная значения](intune-shared-keybooleanvaluepair.md)
+- [Ключевое целое значение](intune-shared-keyintegervaluepair.md)
+- [Ключевое значение "ключевое значение"](intune-shared-keyrealvaluepair.md)
+- [Ключевая строка значений ключа](intune-shared-keystringvaluepair.md)
+- [Комбинация типизированных типизированных значений](intune-shared-keytypedvaluepair.md)
 - [Пара "ключ-значение"](intune-shared-keyvaluepair.md)
 - [Настройки назначения приложения macOS, приобретенного по программе VPP](intune-shared-macosvppappassignmentsettings.md)
 - [Тип владельца управляемого устройства](intune-shared-manageddeviceownertype.md)
+- [Тип агента управления](intune-shared-managementagenttype.md)
 - [Политика Windows Information Protection для MDM](intune-shared-mdmwindowsinformationprotectionpolicy.md)
 - [Настройки назначения приложения из Microsoft Store для бизнеса](intune-shared-microsoftstoreforbusinessappassignmentsettings.md)
 - [Содержимое MIME](intune-shared-mimecontent.md)
@@ -78,7 +85,7 @@ ms.locfileid: "38088275"
 - [Сохраненные параметры создания состояния пользовательского интерфейса](intune-shared-saveduistategenerationoptions.md)
 - [Целевая конфигурация управляемых приложений](intune-shared-targetedmanagedappconfiguration.md)
 - [URI](intune-shared-uri.md)
-- [user](intune-shared-user.md)
+- [User](intune-shared-user.md)
 - [Тип учетной записи токена VPP](intune-shared-vpptokenaccounttype.md)
 - [Причина сбоя действия с токеном VPP](intune-shared-vpptokenactionfailurereason.md)
 - [Настройки назначения бизнес-приложения Win32](intune-shared-win32lobappassignmentsettings.md)

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ddb2f83641ed80c187abfa1ab2a8a40fa9d8ac6a
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 4eec23b3c57aba6ebca97f8c90722a3b2d519e66
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39948895"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41635946"
 ---
 # <a name="create-iosgeneraldeviceconfiguration"></a>Create iosGeneralDeviceConfiguration
 
@@ -26,7 +26,7 @@ ms.locfileid: "39948895"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,7 +45,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта iosGeneralDeviceConfiguration в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта iosGeneralDeviceConfiguration.
@@ -54,7 +54,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -196,7 +196,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |safariBlockPopups|Boolean|Указывает, следует ли блокировать всплывающие окна в Safari.|
 |safariBlocked|Boolean|Указывает, следует ли запретить использовать Safari. Для iOS 13 и более поздних версий требуется контролируемое устройство.|
 |safariCookieSettings|[webBrowserCookieSettings](../resources/intune-deviceconfig-webbrowsercookiesettings.md)|Настройки файлов cookie для Safari. Возможные значения: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited`, `allowAlways`.|
-|safariManagedDomains|Коллекция строк|URL-адреса, соответствующие приведенным здесь шаблонам, будут считаться управляемыми.|
+|safariManagedDomains|Коллекция String|URL-адреса, соответствующие приведенным здесь шаблонам, будут считаться управляемыми.|
 |safariPasswordAutoFillDomains|Коллекция String|Пользователи могут сохранять пароли в Safari только с URL-адресов, соответствующих приведенным здесь шаблонам. Применяется к устройствам в защищенном режиме (iOS 9.3 и более поздних версий).|
 |safariRequireFraudWarning|Boolean|Указывает, обязательно ли предупреждение о мошенничестве в Safari.|
 |screenCaptureBlocked|Boolean|Указывает, следует ли запретить пользователю делать снимки экрана.|
@@ -238,6 +238,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |финдмидевицеинфиндмяппблоккед|Boolean|Указывает, следует ли заблокировать Поиск устройства, когда устройство защищено (iOS 13 или более поздней версии).|
 |финдмифриендсинфиндмяппблоккед|Boolean|Указывает, следует ли заблокировать "найти друзей", когда устройство защищено (iOS 13 или более поздней версии).|
 |итунесблоккед|Boolean|Указывает, следует ли заблокировать приложение iTunes. Для iOS 13 и более поздних версий требуется контролируемое устройство.|
+|киоскмодеапптипе|[иоскиоскмодеапптипе](../resources/intune-deviceconfig-ioskioskmodeapptype.md)|Тип приложения, которое будет запускаться в режиме киоска. Возможные значения: `notConfigured`, `appStoreApp`, `managedApp`, `builtInApp`.|
 
 
 
@@ -251,7 +252,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 10480
+Content-length: 10518
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -538,7 +539,8 @@ Content-length: 10480
   "continuousPathKeyboardBlocked": true,
   "findMyDeviceInFindMyAppBlocked": true,
   "findMyFriendsInFindMyAppBlocked": true,
-  "iTunesBlocked": true
+  "iTunesBlocked": true,
+  "kioskModeAppType": "appStoreApp"
 }
 ```
 
@@ -547,7 +549,7 @@ Content-length: 10480
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 10652
+Content-Length: 10690
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -837,7 +839,8 @@ Content-Length: 10652
   "continuousPathKeyboardBlocked": true,
   "findMyDeviceInFindMyAppBlocked": true,
   "findMyFriendsInFindMyAppBlocked": true,
-  "iTunesBlocked": true
+  "iTunesBlocked": true,
+  "kioskModeAppType": "appStoreApp"
 }
 ```
 

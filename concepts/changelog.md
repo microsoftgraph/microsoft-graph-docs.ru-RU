@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: b7d5cda65e29227bf69a5ddf4232d0bc7fba335a
-ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
+ms.openlocfilehash: 19424cf19a1135620bdaa31dfdbc5c0bebc322ae
+ms.sourcegitcommit: ce9ebbd40ac4896df5ce42173dc6ffb7ef3f76c7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41234021"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41578852"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -18,16 +18,7 @@ ms.locfileid: "41234021"
 
 ## <a name="january-2020"></a>Январь 2020 г.
 
-### <a name="identity-and-access-azure-ad"></a>Удостоверение и доступ (Azure AD)
-| **Тип изменения** | **Версия**   | **Описание**                          |
-|:---|:---|:---|
-|Изменение | Бета |Обновлена коллекция существующих политик с использованием сегмента URL-адреса [политик](/graph/api/resources/policy-overview?view=graph-rest-beta). Ресурсы типизированных политик теперь группируются в сегменте политик, как описано в [этой записи блога](https://developer.microsoft.com/identity/blogs/breaking-changes-policy-api-microsoft-graph-beta/). Это обновление добавляет четыре ресурса типизированных политик: <br> <li>[activityBasedTimeoutPolicies](/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-beta)</li> <li>[claimsMappingPolicies](/graph/api/resources/claimsMappingPolicy?view=graph-rest-beta) </li> <li>[homeRealmDiscoveryPolicies](/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-beta) и </li> <li>[tokenLifetimePolicies](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta)</li> |
-| Дополнение | Бета | Добавленный тип ресурса [activityBasedTimeoutPolicy](/graph/api/resources/activityBasedTimeoutPolicy?view=graph-rest-beta) управляет автоматическим выходом для веб-сессий после периода бездействия для приложений, поддерживающих функции времени ожидания на основе действий.|
-| Дополнение | Бета |Тип ресурса [claimsMappingPolicy](/graph/api/resources/claimsMappingPolicy?view=graph-rest-beta) управляет сопоставлением утверждений для протоколов WS-Fed, SAML, OAuth 2.0 и OpenID Connect при использовании маркеров, выпущенных для конкретного приложения.|
-| Дополнение | бета | Тип ресурса [homeRealmDiscoveryPolicy](/graph/api/resources/homeRealmDiscoveryPolicy?view=graph-rest-beta) управляет действием проверки подлинности Azure Active Directory для федеративных пользователей, в частности, для автоматического ускорения и ограничений проверки подлинности в федеративных доменах. |
-| Дополнение | Бета | Тип ресурса [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta) управляет длительностью жизненного цикла маркеров доступа, используемых для доступа к защищенным ресурсам.|
-
-### <a name="security"></a>Безопасность 
+### <a name="security"></a>Безопасность
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -47,7 +38,6 @@ ms.locfileid: "41234021"
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | Бета | Добавлена поддержка подписки на уведомления, включающие данные ресурсов. В настоящее время поддерживаются ресурсы [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) в каналах и чатах Microsoft Teams. Чтобы воспользоваться этой функцией, подписывающиеся приложения должны внедрить дополнительный код авторизации и расшифровки. Дополнительные сведения см. в статье [Настройка уведомлений об изменениях сообщений чатов, включая свойства сообщений (предварительная версия)](webhooks-with-resource-data.md).|
 
-
 ### <a name="cloud-communications"></a>Коммуникации из облака
 
 Введен ресурс presence в бета-версии и добавлены API коммуникаций из облака в версии 1.0.
@@ -60,7 +50,6 @@ ms.locfileid: "41234021"
 | Изменить        | Бета        | API записи IVR переименован в [recordResponse](/graph/api/call-record?view=graph-rest-beta). | 
 | Изменить        | Бета        | Удалены свойства **isCanceled**, **canceledDateTime** и **entryExitAnnouncement** объекта [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta). Свойство **joinUrl** переименовано в **joinWebUrl**. | 
 | Дополнение        | Бета-версия и версия 1.0       | Добавлена операция [delete onlineMeeting](/graph/api/onlinemeeting-delete.md).|
-
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Устройства и приложения (Microsoft Intune)
 
@@ -102,6 +91,7 @@ ms.locfileid: "41234021"
 | Дополнение | 1.0 | Добавлено свойство [classSettings](/graph/api/resources/teamclasssettings?view=graph-rest-1.0) для ресурса [team](/graph/api/resources/team?view=graph-rest-1.0), чтобы разрешить вызывающим получать параметры, относящиеся к ресурсу team типа Class.|
 
 ### <a name="identity-and-access-azure-ad"></a>Удостоверение и доступ (Azure AD)
+
 | **Тип изменения** | **Версия**   | **Описание**                          |
 |:---|:---|:---|
 |Изменение | Бета |Обновлено поведение отношений **appRoleAssignments** и **appRoleAssignedTo** в [servicePrincipal](/graph/api/resources/serviceprincipal.md) для возвращения ролей, как описано. **appRoleAssignments** возвращает роли приложений, предоставленные субъекту-службе, **appRoleAssignedTo** возвращает роли приложений, предоставленные субъектам, в субъект-службу.|
@@ -2701,7 +2691,7 @@ ms.locfileid: "41234021"
 |Изменение|Бета-версия|Добавлено свойство **remoteAssistanceSessionErrorString** для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлены свойства **appStoreUrl**, **applicableDeviceType** и **minimumSupportedOperatingSystem** для объекта [managedIOSStoreApp](/graph/api/resources/intune-apps-managediosstoreapp?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлены свойства **notApplicableDeviceCount**, **pendingInstallDeviceCount**, **notApplicableUserCount** и **pendingInstallUserCount** для объекта [mobileAppInstallSummary](/graph/api/resources/intune-apps-mobileappinstallsummary?view=graph-rest-beta).|
-|Изменение|Бета-версия|Удалены свойства **targetedSecurityGroupIds** и **targetedSecurityGroupsCount** объекта [targetedManagedAppConfiguration](/graph/api/resources/intune-mam-targetedmanagedappconfiguration?view=graph-rest-beta).|
+|Изменение|Бета|Удалены свойства **targetedSecurityGroupIds** и **targetedSecurityGroupsCount** объекта [targetedManagedAppConfiguration](/graph/api/resources/intune-mam-targetedmanagedappconfiguration?view=graph-rest-beta).|
 |Изменение|Бета-версия|Удалены свойства **targetedSecurityGroupsCount** и **targetedSecurityGroupIds** объекта [targetedManagedAppProtection](/graph/api/resources/intune-mam-targetedmanagedappprotection?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлено свойство **validOperatingSystemBuildRanges** для объекта [windows10CompliancePolicy](/graph/api/resources/intune-deviceconfig-windows10compliancepolicy?view=graph-rest-beta).|
 |Изменить|Бета-версия|Добавлены свойства **activeFirewallRequired**, **uacRequired** и **validOperatingSystemBuildRanges** для объекта [ windows10MobileCompliancePolicy](/graph/api/resources/intune-deviceconfig-windows10mobilecompliancepolicy?view=graph-rest-beta).|
@@ -3542,7 +3532,7 @@ ms.locfileid: "41234021"
 | Изменение          | Бета-версия        | Добавлены свойства **osMinimumVersion** и **osMaximumVersion** к сложному типу [deviceEnrollmentPlatformRestrictions](/graph/api/resources/intune-onboarding-deviceenrollmentplatformrestrictions?view=graph-rest-beta). |
 | Изменение          | Бета-версия        | Добавлены свойства **isSharedDevice** и **sharedDeviceCachedUsers** к сложному типу [hardwareInformation](/graph/api/resources/intune-deviceconfig-hardwareinformation?view=graph-rest-beta). |
 | Изменение          | Бета-версия        | Изменены следующие свойства сложного типа [omaSettingBase64](/graph/api/resources/intune-deviceconfig-omasettingbase64?view=graph-rest-beta):<br/>**fileName** больше не обязательно указывать.<br/> |
-| Изменение          | бета        | Изменены следующие свойства сложного типа [omaSettingStringXml](/graph/api/resources/intune-deviceconfig-omasettingstringxml?view=graph-rest-beta):<br/>**fileName** больше не обязательно указывать.<br/> |
+| Изменение          | Бета        | Изменены следующие свойства сложного типа [omaSettingStringXml](/graph/api/resources/intune-deviceconfig-omasettingstringxml?view=graph-rest-beta):<br/>**fileName** больше не обязательно указывать.<br/> |
 
 ## <a name="march-2017"></a>Март 2017 г.
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e85ded158f112d7e067264529cecea9c4b634caa
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 847190c77e408fb08204ca4cd3f5101efaf360e7
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39948657"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41635869"
 ---
 # <a name="update-iosupdateconfiguration"></a>Обновление объекта iosUpdateConfiguration
 
@@ -26,7 +26,7 @@ ms.locfileid: "39948657"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -46,7 +46,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [iosUpdateConfiguration](../resources/intune-deviceconfig-iosupdateconfiguration.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [iosUpdateConfiguration](../resources/intune-deviceconfig-iosupdateconfiguration.md).
@@ -55,7 +55,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -67,6 +67,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |isEnabled|Boolean|Включен параметр в пользовательском интерфейсе|
 |activeHoursStart|TimeOfDay|Начало периода активности (период активности — временной промежуток, в течение которого не должны устанавливаться обновления).|
 |activeHoursEnd|TimeOfDay|Завершение периода активности (период активности — временной промежуток, в течение которого не должны устанавливаться обновления).|
+|десиредосверсион|Строка|Если параметр не задан, устройства обновляются до последней версии ОС.|
 |scheduledInstallDays|Коллекция [DayOfWeek](../resources/intune-deviceconfig-dayofweek.md)|Дни недели, для которых настраивается период активности. Эта коллекция может содержать не более 7 элементов. Возможные значения: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
 |utcTimeOffsetInMinutes|Int32|Сдвиг по времени от UTC (в минутах).|
 |енфорцедсофтвареупдатеделайиндайс|Int32|Дней до отображения обновлений программного обеспечения для устройств с iOS в диапазоне от 0 до 90 включительно|
@@ -83,7 +84,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1255
+Content-length: 1306
 
 {
   "@odata.type": "#microsoft.graph.iosUpdateConfiguration",
@@ -118,6 +119,7 @@ Content-length: 1255
   "isEnabled": true,
   "activeHoursStart": "12:00:05.5020000",
   "activeHoursEnd": "11:59:00.8990000",
+  "desiredOsVersion": "Desired Os Version value",
   "scheduledInstallDays": [
     "monday"
   ],
@@ -131,7 +133,7 @@ Content-length: 1255
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1427
+Content-Length: 1478
 
 {
   "@odata.type": "#microsoft.graph.iosUpdateConfiguration",
@@ -169,6 +171,7 @@ Content-Length: 1427
   "isEnabled": true,
   "activeHoursStart": "12:00:05.5020000",
   "activeHoursEnd": "11:59:00.8990000",
+  "desiredOsVersion": "Desired Os Version value",
   "scheduledInstallDays": [
     "monday"
   ],

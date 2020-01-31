@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6ab490af85c5ebc2db28441b5ac83bfc5e520726
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 2217c21a111d1668d225183ec2db4163cc4dc8cd
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39946079"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41636429"
 ---
 # <a name="create-devicemanagementcomplexsettingdefinition"></a>Создание Девицеманажементкомплекссеттингдефинитион
 
@@ -26,7 +26,7 @@ ms.locfileid: "39946079"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -47,7 +47,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Девицеманажементкомплекссеттингдефинитион в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицеманажементкомплекссеттингдефинитион.
@@ -59,15 +59,16 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 |displayName|Строка|Отображаемое имя параметра, унаследованное от [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
 |истоплевел|Boolean|Если параметр находится в верхнем уровне, его можно настроить без переноса в коллекцию или сложный параметр, наследуемый от [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
 |description|String|Описание параметра, унаследованное от [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
+|плацехолдертекст|Строка|Замещающий текст в качестве примера допустимых входных данных, наследуемых от [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
 |документатионурл|Строка|URL-адрес для установки документации, унаследованной от [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
-|keywords|Коллекция строк|Ключевые слова, связанные с параметром, унаследованным от [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
+|keywords|Коллекция String|Ключевые слова, связанные с параметром, унаследованным от [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
 |провероч|Коллекция [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)|Коллекция ограничений для значения параметра, наследуемого из [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
 |зависящ|Коллекция [девицеманажементсеттингдепенденци](../resources/intune-deviceintent-devicemanagementsettingdependency.md)|Коллекция зависимостей от других параметров, наследуемых от [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
-|пропертидефинитионидс|Коллекция строк|Определения каждого свойства сложного параметра|
+|пропертидефинитионидс|Коллекция String|Определения каждого свойства сложного параметра|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементкомплекссеттингдефинитион](../resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -77,7 +78,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/settingDefinitions
 Content-type: application/json
-Content-length: 808
+Content-length: 1008
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementComplexSettingDefinition",
@@ -85,13 +86,17 @@ Content-length: 808
   "displayName": "Display Name value",
   "isTopLevel": true,
   "description": "Description value",
+  "placeholderText": "Placeholder Text value",
   "documentationUrl": "https://example.com/documentationUrl/",
   "keywords": [
     "Keywords value"
   ],
   "constraints": [
     {
-      "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+      "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint",
+      "supportedTypes": [
+        "Supported Types value"
+      ]
     }
   ],
   "dependencies": [
@@ -100,7 +105,10 @@ Content-length: 808
       "definitionId": "Definition Id value",
       "constraints": [
         {
-          "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+          "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint",
+          "supportedTypes": [
+            "Supported Types value"
+          ]
         }
       ]
     }
@@ -116,7 +124,7 @@ Content-length: 808
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 857
+Content-Length: 1057
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementComplexSettingDefinition",
@@ -125,13 +133,17 @@ Content-Length: 857
   "displayName": "Display Name value",
   "isTopLevel": true,
   "description": "Description value",
+  "placeholderText": "Placeholder Text value",
   "documentationUrl": "https://example.com/documentationUrl/",
   "keywords": [
     "Keywords value"
   ],
   "constraints": [
     {
-      "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+      "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint",
+      "supportedTypes": [
+        "Supported Types value"
+      ]
     }
   ],
   "dependencies": [
@@ -140,7 +152,10 @@ Content-Length: 857
       "definitionId": "Definition Id value",
       "constraints": [
         {
-          "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+          "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint",
+          "supportedTypes": [
+            "Supported Types value"
+          ]
         }
       ]
     }

@@ -4,12 +4,12 @@ description: Запросы изменений позволяют приложе
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: f2615ce72d17d72949af65c27dba7f9bbf37e5ed
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: df5365746a37eb5d1cb26b564cb390f500407c5f
+ms.sourcegitcommit: ce9ebbd40ac4896df5ce42173dc6ffb7ef3f76c7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216786"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "41578831"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Отслеживание изменений в данных Microsoft Graph с помощью разностного запроса
 
@@ -47,15 +47,18 @@ ms.locfileid: "41216786"
 
 Если клиент использует параметр запроса, он должен быть указан в исходном запросе. Microsoft Graph автоматически кодирует указанный параметр в ссылке `nextLink` или `deltaLink`, указанной в ответе. Вызывающему приложению достаточно один раз указать параметры запроса. Microsoft Graph автоматически добавляет указанные параметры для всех последующих запросов.
 
-Обратите внимание на следующие аспекты, связанные с необязательными параметрами запросов.
+Обратите внимание на общую ограниченную поддержку следующих необязательных параметров запроса:
 
-- `$orderby` не поддерживается в разностных запросах.
-     - Не считайте, что разностный запрос возвращает определенную последовательность ответов. Предполагайте, что один и тот же элемент может встречаться в любом месте последовательности `nextLink`, и учитывайте это в логике объединения.
-- `$top` не поддерживается в разностных запросах, а число объектов на каждой странице может зависеть от типа ресурса и типа изменений, внесенных в ресурс.
+- `$orderby` 
+    
+    Не считайте, что разностный запрос возвращает определенную последовательность ответов. Предполагайте, что один и тот же элемент может встречаться в любом месте последовательности `nextLink`, и учитывайте это в логике объединения.
+- `$top` 
+    
+    Число объектов на каждой странице зависит от типа ресурса и типа изменений, внесенных в ресурс.
 
-Для пользователей и групп применяются следующие ограничения на использование некоторых параметров запросов.
+См. сведения о [поддержке параметров разностного запроса](delta-query-messages.md#use-query-parameters-in-a-delta-query-for-messages) для ресурса [message](/graph/api/resources/message?view=graph-rest-1.0).
 
-Для пользователей и групп действуют ограничения на применение некоторых параметров запросов:
+Для ресурсов [user](/graph/api/resources/user?view=graph-rest-1.0) и [group](/graph/api/resources/group?view=graph-rest-1.0) действуют ограничения на применение некоторых параметров запроса:
 
 - Если используется параметр запроса `$select`, это означает, что клиент предпочитает отслеживать изменения только для тех свойств или связей, которые указаны в операторе `$select`. При изменении свойства, которое не было выбрано, соответствующий ресурс не появится в отклике с различиями при последующем запросе.
 - `$select` также поддерживает навигационные свойства `manager` и `members` для пользователей и групп соответственно. Выбор этих свойств позволяет отслеживать изменения руководства и участия в группах для пользователя.
@@ -95,22 +98,23 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 | **Коллекция ресурсов**                                        | **API**                                                                                                                                                                                |
 | :------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Приложения (предварительная версия)                                         | Функция [delta](/graph/api/application-delta?view=graph-rest-beta) ресурса [application](/graph/api/resources/application?view=graph-rest-beta) (предварительная версия)                     |
-| Классы (предварительная версия)                                              | Функция [delta](/graph/api/educationclass-delta?view=graph-rest-beta) ресурса [Class](/graph/api/resources/educationclass?view=graph-rest-beta) (предварительная версия)                     |
-| Объекты каталога (предварительная версия)                                    | Функция [delta](/graph/api/directoryobject-delta?view=graph-rest-beta) ресурса [directoryObjects](/graph/api/resources/directoryobject?view=graph-rest-beta) (предварительная версия)        |
+| Сообщения чата в канале (предварительная версия)                            | Функция [delta](/graph/api/chatmessage-delta?view=graph-rest-beta) [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) |
+| Классы (предварительная версия)                                              | Функция [delta](/graph/api/educationclass-delta?view=graph-rest-beta) ресурса [educationClass](/graph/api/resources/educationclass?view=graph-rest-beta) (предварительная версия)                     |
+| Объекты каталога (предварительная версия)                                    | Функция [delta](/graph/api/directoryobject-delta?view=graph-rest-beta) ресурса [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) (предварительная версия)        |
 | Перечисление ролей каталога                                                | Функция [delta](/graph/api/directoryrole-delta?view=graph-rest-1.0) ресурса [directoryObjects](/graph/api/resources/directoryrole?view=graph-rest-1.0)                           |
 | Элементы на диске\*                                                  | Функция [delta](/graph/api/driveitem-delta?view=graph-rest-1.0) ресурса [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0)                                       |
-| Пользователи образовательных учреждений (предварительная версия)                                      | Функция [delta](/graph/api/educationuser-delta?view=graph-rest-beta) ресурса [Education user](/graph/api/resources/educationuser?view=graph-rest-beta) (предварительная версия)             |
+| Пользователи образовательных учреждений (предварительная версия)                                      | Функция [delta](/graph/api/educationuser-delta?view=graph-rest-beta) ресурса [educationUser](/graph/api/resources/educationuser?view=graph-rest-beta) (предварительная версия)             |
 | События в представлении (диапазоне дат) основного календаря | Функция [delta](/graph/api/event-delta?view=graph-rest-1.0) ресурса [event](/graph/api/resources/event?view=graph-rest-1.0)                                                   |
 | Группы                                                         | Функция [delta](/graph/api/group-delta?view=graph-rest-1.0) ресурса [group](/graph/api/resources/group?view=graph-rest-1.0)                                                   |
 | Папки почты                                                   | Функция [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) ресурса [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0)                                    |
 | Сообщения в папке                                           | Функция [delta](/graph/api/message-delta?view=graph-rest-1.0) ресурса [message](/graph/api/resources/message?view=graph-rest-1.0)                                             |
 | Папки личных контактов                                       | Функция [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) ресурса [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0)                           |
-| Личные контакты в папке                                  | Функция [delta](/graph/api/contact-delta?view=graph-rest-1.0) ресурса [contact](/graph/api/resources/contact?view=graph-rest-1.0)                                             |
-| Учебные заведения (предварительная версия)                                              | Функция [delta](/graph/api/educationschool-delta?view=graph-rest-beta) ресурса [School](/graph/api/resources/educationschool?view=graph-rest-beta) (предварительная версия)                  |
+| Личные контакты в папке                                  | Функция [delta](/graph/api/contact-delta?view=graph-rest-1.0) ресурса [contact](/graph/api/resources/contact?view=graph-rest-1.0)    
+| Элементы Planner\*\* (предварительная версия)                                    | Функция [delta](/graph/api/planneruser-list-delta?view=graph-rest-beta) всего сегмента ресурса [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) (предварительный просмотр)|                                         |
+| Учебные заведения (предварительная версия)                                              | Функция [delta](/graph/api/educationschool-delta?view=graph-rest-beta) ресурса [educationSchool](/graph/api/resources/educationschool?view=graph-rest-beta) (предварительная версия)                  |
 | Субъекты-службы (предварительная версия)                                   | Функция [delta](/graph/api/serviceprincipal-delta?view=graph-rest-beta) ресурса [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) (предварительная версия)      |
 | Users                                                          | Функция [delta](/graph/api/user-delta?view=graph-rest-1.0) ресурса [user](/graph/api/resources/user?view=graph-rest-1.0) |
-| Элементы Planner\*\* (предварительная версия)                                    | Функция [delta](/graph/api/planneruser-list-delta?view=graph-rest-beta) всего сегмента ресурса [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) (предварительный просмотр)|
-| chatMessages в канале (предварительная версия)                            | Функция [delta](/graph/api/chatmessage-delta?view=graph-rest-beta) [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) |
+
 
 > \* Небольшие различия в использовании ресурсов OneDrive и других поддерживаемых ресурсов касаются синтаксиса. Разностный запрос для ресурсов drive будет обновлен в соответствии с запросами для других типов ресурсов.  Дополнительные сведения о текущем синтаксисе см. в статье [Отслеживание изменений для drive](/graph/api/driveitem-delta?view=graph-rest-1.0).
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ac0d101bb3f3435798911e509e7961394beafc7a
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 1ab1bf20404ae716f16d981aa6304c8df5701db4
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39954568"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41635455"
 ---
 # <a name="list-androidworkprofileenterprisewificonfigurations"></a>Список Андроидворкпрофилинтерприсевификонфигуратионс
 
@@ -26,7 +26,7 @@ ms.locfileid: "39954568"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,7 +45,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1922
+Content-Length: 2052
 
 {
   "value": [
@@ -110,7 +110,9 @@ Content-Length: 1922
       "authenticationMethod": "usernameAndPassword",
       "innerAuthenticationProtocolForEapTtls": "challengeHandshakeAuthenticationProtocol",
       "innerAuthenticationProtocolForPeap": "microsoftChapVersionTwo",
-      "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
+      "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value",
+      "proxySettings": "manual",
+      "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/"
     }
   ]
 }

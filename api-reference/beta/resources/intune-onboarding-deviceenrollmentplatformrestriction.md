@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d1485c429594967fd3c76fc27cb89e85c84cda92
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 26f29427dfe863ed1b89eaef5025655dc07430fd
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36374360"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41636597"
 ---
 # <a name="deviceenrollmentplatformrestriction-resource-type"></a>Тип ресурса deviceEnrollmentPlatformRestriction
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Ограничения на регистрацию для определенных платформ
 
@@ -25,10 +25,11 @@ ms.locfileid: "36374360"
 |:---|:---|:---|
 |platformBlocked|Boolean|Указывает, блокируется ли регистрация платформы|
 |personalDeviceEnrollmentBlocked|Boolean|Указывает, блокируется ли регистрация личных устройств|
-|osMinimumVersion|String|Минимальная поддерживаемая версия ОС|
+|osMinimumVersion|Строка|Минимальная поддерживаемая версия ОС|
 |osMaximumVersion|String|Максимальная поддерживаемая версия ОС|
+|блоккедмануфактурерс|Коллекция String|Коллекция заблокированных производителей.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -44,7 +45,10 @@ ms.locfileid: "36374360"
   "platformBlocked": true,
   "personalDeviceEnrollmentBlocked": true,
   "osMinimumVersion": "String",
-  "osMaximumVersion": "String"
+  "osMaximumVersion": "String",
+  "blockedManufacturers": [
+    "String"
+  ]
 }
 ```
 

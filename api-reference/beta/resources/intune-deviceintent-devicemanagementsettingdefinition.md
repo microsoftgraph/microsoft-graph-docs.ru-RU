@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 94f51c9ec56131e089afc44819f4d892145e7d8c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2f5774a220edd9113425801364bdca7df4982cfe
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36364707"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41636800"
 ---
 # <a name="devicemanagementsettingdefinition-resource-type"></a>Тип ресурса Девицеманажементсеттингдефинитион
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Сущность, представляющая определение определения для заданной настройки
 
@@ -37,12 +37,13 @@ ms.locfileid: "36364707"
 |displayName|Строка|Отображаемое имя параметра|
 |истоплевел|Boolean|Если параметр находится в верхнем уровне, его можно настроить без переноса в коллекцию или сложный параметр.|
 |description|String|Описание параметра|
-|документатионурл|String|URL-адрес для установки документации|
-|keywords|Коллекция строк|Ключевые слова, связанные с параметром|
+|плацехолдертекст|Строка|Замещающий текст в качестве примера допустимых входных данных|
+|документатионурл|Строка|URL-адрес для установки документации|
+|keywords|Коллекция String|Ключевые слова, связанные с параметром|
 |провероч|Коллекция [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)|Коллекция ограничений для значения параметра|
 |зависящ|Коллекция [девицеманажементсеттингдепенденци](../resources/intune-deviceintent-devicemanagementsettingdependency.md)|Коллекция зависимостей для других параметров|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -61,13 +62,17 @@ ms.locfileid: "36364707"
   "displayName": "String",
   "isTopLevel": true,
   "description": "String",
+  "placeholderText": "String",
   "documentationUrl": "String",
   "keywords": [
     "String"
   ],
   "constraints": [
     {
-      "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+      "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint",
+      "supportedTypes": [
+        "String"
+      ]
     }
   ],
   "dependencies": [
@@ -76,7 +81,10 @@ ms.locfileid: "36364707"
       "definitionId": "String",
       "constraints": [
         {
-          "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+          "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint",
+          "supportedTypes": [
+            "String"
+          ]
         }
       ]
     }

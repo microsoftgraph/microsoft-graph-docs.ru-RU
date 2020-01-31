@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 148a21251ff073212bcd8698ebe4d7333ef25c62
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 069b6ea01444df3490a6a1888815634153cfc653
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39948839"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41635904"
 ---
 # <a name="list-iosikev2vpnconfigurations"></a>Список iosikEv2VpnConfigurations
 
@@ -26,7 +26,7 @@ ms.locfileid: "39948839"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,7 +45,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4949
+Content-Length: 5777
 
 {
   "value": [
@@ -196,7 +196,26 @@ Content-Length: 4949
       "tlsMaximumVersion": "Tls Maximum Version value",
       "tlsMinimumVersion": "Tls Minimum Version value",
       "allowDefaultSecurityAssociationParameters": true,
-      "allowDefaultChildSecurityAssociationParameters": true
+      "allowDefaultChildSecurityAssociationParameters": true,
+      "alwaysOnConfiguration": {
+        "@odata.type": "microsoft.graph.appleVpnAlwaysOnConfiguration",
+        "tunnelConfiguration": "cellular",
+        "userToggleEnabled": true,
+        "voicemailExceptionAction": "allowTrafficOutside",
+        "airPrintExceptionAction": "allowTrafficOutside",
+        "cellularExceptionAction": "allowTrafficOutside",
+        "allowAllCaptiveNetworkPlugins": true,
+        "allowedCaptiveNetworkPlugins": {
+          "@odata.type": "microsoft.graph.specifiedCaptiveNetworkPlugins",
+          "allowedBundleIdentifiers": [
+            "Allowed Bundle Identifiers value"
+          ]
+        },
+        "allowCaptiveWebSheet": true,
+        "natKeepAliveIntervalInSeconds": 13,
+        "natKeepAliveOffloadEnable": true
+      },
+      "enableAlwaysOnConfiguration": true
     }
   ]
 }

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 065c8b1976a4b51e4ce1b764ad13923a284077e6
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 391e911eb32639b9f814e8ad00aa9948e9f9e0e3
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955682"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41634958"
 ---
 # <a name="deviceshellscript-resource-type"></a>Тип ресурса Девицешеллскрипт
 
@@ -24,10 +24,11 @@ Intune предоставит клиенту возможность выполн
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Девицешеллскриптс](../api/intune-devices-deviceshellscript-list.md)|Коллекция [девицешеллскрипт](../resources/intune-devices-deviceshellscript.md)|Список свойств и связей объектов [девицешеллскрипт](../resources/intune-devices-deviceshellscript.md) .|
-|[Получение Девицешеллскрипт](../api/intune-devices-deviceshellscript-get.md)|[девицешеллскрипт](../resources/intune-devices-deviceshellscript.md)|Чтение свойств и связей объекта [девицешеллскрипт](../resources/intune-devices-deviceshellscript.md) .|
-|[Создание Девицешеллскрипт](../api/intune-devices-deviceshellscript-create.md)|[девицешеллскрипт](../resources/intune-devices-deviceshellscript.md)|Создание нового объекта [девицешеллскрипт](../resources/intune-devices-deviceshellscript.md) .|
+|[Получение Девицешеллскрипт](../api/intune-devices-deviceshellscript-get.md)|[deviceShellScript](../resources/intune-devices-deviceshellscript.md)|Чтение свойств и связей объекта [девицешеллскрипт](../resources/intune-devices-deviceshellscript.md) .|
+|[Создание Девицешеллскрипт](../api/intune-devices-deviceshellscript-create.md)|[deviceShellScript](../resources/intune-devices-deviceshellscript.md)|Создание нового объекта [девицешеллскрипт](../resources/intune-devices-deviceshellscript.md) .|
 |[Удаление Девицешеллскрипт](../api/intune-devices-deviceshellscript-delete.md)|Нет|Удаляет объект [девицешеллскрипт](../resources/intune-devices-deviceshellscript.md).|
-|[Обновление Девицешеллскрипт](../api/intune-devices-deviceshellscript-update.md)|[девицешеллскрипт](../resources/intune-devices-deviceshellscript.md)|Обновление свойств объекта [девицешеллскрипт](../resources/intune-devices-deviceshellscript.md) .|
+|[Обновление Девицешеллскрипт](../api/intune-devices-deviceshellscript-update.md)|[deviceShellScript](../resources/intune-devices-deviceshellscript.md)|Обновление свойств объекта [девицешеллскрипт](../resources/intune-devices-deviceshellscript.md) .|
+|[Действие assign](../api/intune-devices-deviceshellscript-assign.md)|Нет|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -40,7 +41,7 @@ Intune предоставит клиенту возможность выполн
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения скрипта управления устройствами. Это свойство доступно только для чтения.|
 |runAsAccount|[рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
 |fileName|String|Имя файла сценария.|
-|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого экземпляра Повершеллскрипт.|
+|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого экземпляра Повершеллскрипт.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ae78f7fa00608570577ab1bf98b5429a1e1e778d
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: c580d914da7111cfe0f29f08bc02fd2a5d940fc8
+ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39948426"
+ms.lasthandoff: 01/31/2020
+ms.locfileid: "41635848"
 ---
 # <a name="create-macosdevicefeaturesconfiguration"></a>Создание объекта macOSDeviceFeaturesConfiguration
 
@@ -26,7 +26,7 @@ ms.locfileid: "39948426"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,7 +45,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта macOSDeviceFeaturesConfiguration в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта macOSDeviceFeaturesConfiguration.
@@ -54,7 +54,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -83,7 +83,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |логаутдисабледвхилелогжедин|Boolean|Будет ли отключен элемент меню журнала в окне входа, когда пользователь вошел в систему.|
 |скринлоккдисаблеиммедиате|Boolean|Следует ли отключить функции немедленной блокировки экрана.|
 |ассоЦиатеддомаинс|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Получает или задает список, который сопоставляет приложения с их связанными доменами. Ключ должен соответствовать ИДЕНТИФИКАТОРу приложения, а значение должно быть строкой в виде "Service: domain", где Domain — это полное доменное имя узла (например,:ексампле.. com). Эта коллекция может содержать не более 500 элементов.|
-|singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|Получает или задает профиль расширения единого входа.|
+|singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|Получает или задает профиль расширения единого входа. Устарело: вместо этого используйте Макоссинглесигнонекстенсион.|
+|макоссинглесигнонекстенсион|[макоссинглесигнонекстенсион](../resources/intune-deviceconfig-macossinglesignonextension.md)|Получает или задает профиль расширения единого входа.|
 
 
 
@@ -97,7 +98,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 2362
+Content-length: 2468
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -171,6 +172,9 @@ Content-length: 2362
   ],
   "singleSignOnExtension": {
     "@odata.type": "microsoft.graph.singleSignOnExtension"
+  },
+  "macOSSingleSignOnExtension": {
+    "@odata.type": "microsoft.graph.macOSSingleSignOnExtension"
   }
 }
 ```
@@ -180,7 +184,7 @@ Content-length: 2362
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2534
+Content-Length: 2640
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -257,6 +261,9 @@ Content-Length: 2534
   ],
   "singleSignOnExtension": {
     "@odata.type": "microsoft.graph.singleSignOnExtension"
+  },
+  "macOSSingleSignOnExtension": {
+    "@odata.type": "microsoft.graph.macOSSingleSignOnExtension"
   }
 }
 ```
