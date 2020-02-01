@@ -5,16 +5,16 @@ localization_priority: Normal
 author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7aee071949fb5d7ded115f131e732b6d3626e6fd
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 98deef23a65fd4bfa9fc2ae6f112d97e38cf9bf5
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37994851"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41651969"
 ---
 # <a name="update-calendarpermission"></a>Обновление Календарпермиссион
 
-Обновление свойств объекта Календарпермиссион.
+Обновление разрешений, назначенных существующему общему ресурсу или представителю, с помощью соответствующего объекта [календарпермиссион](../resources/calendarpermission.md) для календаря.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,7 +27,7 @@ ms.locfileid: "37994851"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Обновление указанных разрешений для основного календаря пользователя:
+Обновление указанных разрешений для календаря пользователя:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/{id}/calendar/calendarPermissions/{id}
@@ -49,7 +49,7 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -57,14 +57,9 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|алловедролес|Коллекция строк| Список разрешенных для общего доступа уровней разрешений для календаря. Возможные значения: `none`, `freeBusyRead`, `limitedRead`, `read`, `write`, `delegateWithoutPrivateEventAccess`, `delegateWithPrivateEventAccess`, `custom`.|
-|emailAddress|[emailAddress](../resources/email.md)| Представляет общую папку, у которой есть доступ к календарю. Для общего доступа к общему ресурсу "Моя организация" свойство **Address** имеет значение null. |
-|id|String| Уникальный идентификатор пользователя (общего доступа), с которым открыт общий доступ к календарю. Только для чтения.|
-|исинсидеорганизатион|Boolean| Значение true, если пользователь в контексте (Share) находится в той же организации, что и владелец календаря.|
-|"несъемный"|Boolean| `True`, если пользователь может быть удален из списка общих папок для указанного календаря, `false` в противном случае. Пользователь "Моя организация" определяет разрешения, которые пользователи в организации имеют в указанном календаре. Вы не можете удалить "Моя организация" как общий доступ к календарю.|
-|role|календарролетипе| Текущий уровень разрешений общего календаря. Возможные значения: `none`, `freeBusyRead`, `limitedRead`, `read`, `write`, `delegateWithoutPrivateEventAccess`, `delegateWithPrivateEventAccess`, `custom`.|
+|role|[календарролетипе](../resources/calendarpermission.md#calendarroletype-values)| Уровень разрешений, на который изменяется общий доступ к календарю или представитель. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [календарпермиссион](../resources/calendarpermission.md) в тексте отклика.
 
@@ -72,33 +67,21 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 ### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса.
+В следующем примере изменяется уровень разрешений для объекта Share, Александра, на `write`.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["RGVmYXVsdA=="],
   "name": "update_calendarpermission"
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions/{id}
+PATCH https://graph.microsoft.com/beta/users/{id}/calendar/calendarPermissions/RGVmYXVsdA==
 Content-type: application/json
 
 {
-  "emailAddress": {
-    "name": "My Organization",
-  },
-  "isRemovable": true,
-  "isInsideOrganization": true,
-  "role": "write",
-  "allowedRoles": [
-    "none",
-    "freeBusyRead",
-    "limitedRead",
-    "read",
-    "write"
-  ],
-  "id": "RGVmYXVsdA=="
+  "role": "write"
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -124,6 +107,7 @@ Content-type: application/json
 
 <!-- {
   "blockType": "response",
+  "name": "update_calendarpermission",
   "truncated": true,
   "@odata.type": "microsoft.graph.calendarPermission"
 } -->
@@ -133,20 +117,20 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "emailAddress": {
-    "name": "My Organization",
-  },
-  "isRemovable": true,
-  "isInsideOrganization": true,
-  "role": "write",
-  "allowedRoles": [
-    "none",
-    "freeBusyRead",
-    "limitedRead",
-    "read",
-    "write"
-  ],
-  "id": "RGVmYXVsdA=="
+    "id": "L289RXhlbGVW",
+    "isRemovable": true,
+    "isInsideOrganization": true,
+    "role": "write",
+    "allowedRoles": [
+        "freeBusyRead",
+        "limitedRead",
+        "read",
+        "write"
+    ],
+    "emailAddress": {
+        "name": "Adele Vance",
+        "address": "AdeleV@contoso.OnMicrosoft.com"
+    }
 }
 ```
 

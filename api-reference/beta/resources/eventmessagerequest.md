@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: f7cf6d2a0c040053d03e74de1991b7db675ff977
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: be7304f603cac5de8256f540b5df31f897c4f1ad
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939413"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41652209"
 ---
 # <a name="eventmessagerequest-resource-type"></a>Тип ресурса eventMessageRequest
 
@@ -99,21 +99,21 @@ ms.locfileid: "37939413"
 |categories|Коллекция String|Категории, сопоставленные с сообщением.|
 |ccRecipients|Коллекция [recipient](recipient.md)|Получатели копии сообщения.|
 |changeKey|Строка|Версия сообщения.|
-|conversationId|Строка|Идентификатор беседы, к которой принадлежит электронное сообщение.|
+|conversationId|String|Идентификатор беседы, к которой принадлежит электронное сообщение.|
 |conversationIndex|Edm.Binary|Индекс беседы, к которой относится электронная почта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сообщения.|
 |endDateTime|[DateTimeTimeZone](datetimetimezone.md)|Время окончания запрошенного собрания.|
-|from|[recipient](recipient.md)|Владелец почтового ящика и отправитель сообщения.|
+|from|[recipient](recipient.md)|Владелец почтового ящика, из которого отправляется сообщение. В большинстве случаев это значение совпадает со свойством **sender** , за исключением сценариев общего доступа или делегирования. Значение должно соответствовать фактически используемому почтовому ящику. Дополнительные сведения о [задании свойств from и sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) сообщения.|
 |hasAttachments|Boolean|Указывает на наличие вложений в сообщении.|
 |id|Строка|Только для чтения.|
 |importance|String| Важность сообщения: `Low`, `Normal`, `High`.|
 |inferenceClassification|Строка| Возможные значения: `Focused`, `Other`.|
-|Isdelegated для|Логический|Значение true, если ответ на приглашение на собрание доступен представителю, в противном случае — значение false. Значение по умолчанию — false.|
-|isDeliveryReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
+|Isdelegated для|Boolean|Значение true, если ответ на приглашение на собрание доступен представителю, в противном случае — значение false. Значение по умолчанию: false.|
+|isDeliveryReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |isDraft|Логическое|Указывает, является ли сообщение черновиком. Сообщение считается черновиком, если оно еще не отправлено.|
-|isOutOfDate|Логический|Указывает, было ли это приглашение на собрание отменено в последний запрос.|
-|isRead|Логический|Указывает, прочитано ли сообщение.|
-|isReadReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
+|isOutOfDate|Boolean|Указывает, было ли это приглашение на собрание отменено в последний запрос.|
+|isRead|Boolean|Указывает, прочитано ли сообщение.|
+|isReadReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сообщения.|
 |location|[Location](location.md)|Расположение запрошенного собрания.|
 |meetingMessageType|String| Тип сообщения о событии: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTentativelyAccepted`, `meetingDeclined`.|
@@ -125,8 +125,8 @@ ms.locfileid: "37939413"
 |receivedDateTime|DateTimeOffset|Дата и время получения сообщения.|
 |recurrence|[PatternedRecurrence](patternedrecurrence.md)|Шаблон повторения запрошенного собрания.|
 |replyTo|Коллекция [recipient](recipient.md)|Электронные адреса, которые необходимо использовать при ответе.|
-|responseRequested|Логический|Задайте значение true, если отправитель хочет отправить ответ на запрошенное собрание.|
-|sender|[recipient](recipient.md)|Учетная запись, которая фактически используется для создания сообщения.|
+|responseRequested|Boolean|Задайте значение true, если отправитель хочет отправить ответ на запрошенное собрание.|
+|sender|[recipient](recipient.md)|Учетная запись, которая фактически используется для создания сообщения. В большинстве случаев это значение совпадает со значением свойства **from**. Для этого свойства можно задать другое значение при отправке сообщения из [общего почтового ящика](/exchange/collaboration/shared-mailboxes/shared-mailboxes), [общего календаря или представителем](/graph/outlook-share-delegate-calendar.md). В любом случае значение должно соответствовать фактически используемому почтовому ящику. Дополнительные сведения о [задании свойств from и sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) сообщения.|
 |sentDateTime|DateTimeOffset|Дата и время отправки сообщения.|
 |startDateTime|[DateTimeTimeZone](datetimetimezone.md)|Время начала запрошенного собрания.|
 |subject|Строка|Тема сообщения.|
@@ -152,15 +152,15 @@ ms.locfileid: "37939413"
 |:---------------|:--------|:----------|
 |[Получение объекта eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Считывание свойств и отношений объекта eventMessage.|
 |[Обновление](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Обновление объекта eventMessage.|
-|[Delete](../api/eventmessage-delete.md) | Нет. |Удаление объекта eventMessage.|
+|[удаление](../api/eventmessage-delete.md); | Нет. |Удаление объекта eventMessage.|
 |[copy](../api/message-copy.md)|[message](message.md)|Копирование сообщения в папку.|
 |[createForward](../api/message-createforward.md)|[message](message.md)|Создание черновика пересылаемого сообщения. После этого вы сможете [обновить](../api/message-update.md) или [отправить](../api/message-send.md) черновик.|
 |[createReply](../api/message-createreply.md)|[message](message.md)|Создание черновика ответного сообщения. После этого вы сможете [обновить](../api/message-update.md) или [отправить](../api/message-send.md) черновик.|
 |[createReplyAll](../api/message-createreplyall.md)|[message](message.md)|Создание черновика сообщения для ответа всем пользователям. После этого вы сможете [обновить](../api/message-update.md) или [отправить](../api/message-send.md) черновик.|
-|[forward](../api/message-forward.md)|Нет.|Пересылка сообщения. После этого сообщение сохраняется в папке "Отправленные".|
+|[forward](../api/message-forward.md)|Нет|Пересылка сообщения. После этого сообщение сохраняется в папке "Отправленные".|
 |[move](../api/message-move.md)|[message](message.md)|Перемещение сообщения в папку. При этом в целевой папке создается новая копия сообщения.|
-|[reply](../api/message-reply.md)|Нет.|Ответ отправителю сообщения. После этого сообщение сохраняется в папке "Отправленные".|
-|[replyAll](../api/message-replyall.md)|Нет.|Ответ всем получателям сообщения. После этого сообщение сохраняется в папке "Отправленные".|
+|[reply](../api/message-reply.md)|Нет|Ответ отправителю сообщения. После этого сообщение сохраняется в папке "Отправленные".|
+|[replyAll](../api/message-replyall.md)|Нет|Ответ всем получателям сообщения. После этого сообщение сохраняется в папке "Отправленные".|
 |[send](../api/message-send.md)|Нет|Отправка ранее созданного черновика сообщения. После этого сообщение сохраняется в папке "Отправленные".|
 |[unsubscribe](../api/message-unsubscribe.md)|Нет|Отправка сообщения, используя данные и адрес, указанные в это первой команде mailto заголовка List-Unsubscribe.|
 |**Вложения**| | |

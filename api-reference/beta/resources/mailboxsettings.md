@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 0df39f5fb94f648e8d5c5a8b0ff9a10c7a9a7efa
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 6d966ecb599d98c92bf1e70eca1f61fb665e359d
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939287"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41652046"
 ---
 # <a name="mailboxsettings-resource-type"></a>Тип ресурса mailboxSettings
 
@@ -27,7 +27,7 @@ ms.locfileid: "37939287"
 |archiveFolder|string|Идентификатор архивной папки пользователя.|
 |automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|Параметры конфигурации для автоматического уведомления отправителя о входящем письме с помощью сообщения от пользователя, вошедшего в систему.|
 |dateFormat|string|Формат даты для почтового ящика пользователя.|
-|делегатемитингмессажеделиверйоптионс|делегатемитингмессажеделиверйоптионс| Если у пользователя есть представитель календаря, этот параметр указывает, будут ли представитель, владелец почтового ящика или и то, и другое, получать сообщения о собраниях и ответы на приглашения. Возможные значения: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`.|
+|делегатемитингмессажеделиверйоптионс|делегатемитингмессажеделиверйоптионс| Если у пользователя есть представитель календаря, этот параметр указывает, будут ли представитель, владелец почтового ящика или и то, и другое, получать сообщения о собраниях и ответы на приглашения. Возможные значения: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`. Значение по умолчанию: `sendToDelegateOnly`.|
 |language|[localeInfo](localeinfo.md)|Сведения о языковом стандарте пользователя, в том числе о предпочитаемом языке и стране или регионе.|
 |тимеформат|string|Формат времени для почтового ящика пользователя.|
 |timeZone|string|Часовой пояс, используемый по умолчанию, для почтового ящика пользователя.|

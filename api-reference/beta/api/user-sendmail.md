@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fe255a3f4e314d6624948a28c504236a589e81a3
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 34c2b0e9c06bbafdf9a384d24ea9472af2b7d1e8
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36421829"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41652181"
 ---
 # <a name="send-mail"></a>Отправка почты
 
@@ -45,7 +45,7 @@ POST /users/{id | userPrincipalName}/sendMail
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -56,7 +56,7 @@ POST /users/{id | userPrincipalName}/sendMail
 Если вы хотите использовать **упоминание** , чтобы вызвонить другому пользователю в новом сообщении:
 
 - Включите в текст запроса обязательное свойство **toRecipients** , свойства **упоминаютх** и все доступные для записи свойства сообщения.
-- Для каждого упоминания в свойстве **упоминания** необходимо указать указанное свойство. ****
+- Для каждого упоминания в свойстве **упоминания** необходимо указать **указанное свойство.**
 
 ## <a name="response"></a>Отклик
 
@@ -110,7 +110,7 @@ Content-length: 512
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-sendmail-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-sendmail-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -171,7 +171,7 @@ Content-length: 344
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-sendmail-with-mentions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-sendmail-with-mentions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -235,7 +235,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-sendmail-with-headers-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-sendmail-with-headers-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -248,6 +248,57 @@ Content-type: application/json
   "blockType": "response",
   "truncated": true
 } -->
+```http
+HTTP/1.1 202 Accepted
+```
+
+##### <a name="request-4"></a>Запрос 4
+
+В следующем примере создается сообщение с вложением файла и отправляется сообщение.
+
+<!-- {
+  "blockType": "request",
+  "name": "user_sendmail_with_attachment"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/me/sendMail
+Content-type: application/json
+
+{
+  "message": {
+    "subject": "Meet for lunch?",
+    "body": {
+      "contentType": "Text",
+      "content": "The new cafeteria is open."
+    },
+    "toRecipients": [
+      {
+        "emailAddress": {
+          "address": "meganb@contoso.onmicrosoft.com"
+        }
+      }
+    ],
+    "attachments": [
+      {
+        "@odata.type": "#microsoft.graph.fileAttachment",
+        "name": "attachment.txt",
+        "contentType": "text/plain",
+        "contentBytes": "SGVsbG8gV29ybGQh"
+      }
+    ]
+  }
+}
+```
+
+##### <a name="response-4"></a>Отклик 4
+
+Ниже приведен пример отклика.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
 ```http
 HTTP/1.1 202 Accepted
 ```

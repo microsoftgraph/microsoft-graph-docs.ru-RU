@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 272df1dbcf64531a3fcce88778465511022ec6e3
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 3eb5cee33c29af782bd3ae9719efe2d75a7bb68c
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36720251"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41651976"
 ---
 # <a name="list-bookings-calendarview"></a>Представление календаря "Список резервирований"
 
@@ -23,30 +23,38 @@ ms.locfileid: "36720251"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  Резервирования. Read. ALL, Букингсаппоинтмент. ReadWrite. ALL, Books. ReadWrite. ALL, Books. Manage. ALL   |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
+|Делегированное (рабочая или учебная учетная запись) |  Резервирования. Read. ALL, Букингсаппоинтмент. ReadWrite. ALL, Books. ReadWrite. ALL, Books. Manage. ALL   |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.   |
 |Для приложений | Не поддерживается.  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
-
 ```
-## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Описание|
-|:---------------|:----------|
-| Авторизация  | Bearer {code}|
 
-## <a name="request-body"></a>Текст запроса
-В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
+## <a name="query-parameters"></a>Параметры запроса
+
+В URL-адресе запроса укажите перечисленные ниже обязательные параметры запроса и их значения.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |начать|DateTimeOffset|Дата и время начала периода времени, представленного в формате ISO 8601, в формате UTC или смещение относительно времени в формате UTC. Например, полночь UTC 1 января 2018 будет выглядеть следующим образом: ' 2018 г.-01-01T00:00:00Z ', и одно и то же время в PST-файле будет выглядеть следующим образом: ' 2017-12-31T16:00:00-08:00 '.|
 |end|DateTimeOffset|Дата и время окончания периода времени, представленного в формате ISO 8601, в формате UTC или смещение относительно времени в формате UTC. Например, 3am UTC на 1 января 2018, будет выглядеть следующим образом: ' 2018 г.-01-01T03:00:00Z ', и одно и то же время в PST-файле будет выглядеть следующим образом: ' 2017-12-31T19:00:00-08:00 '.|
 
-## <a name="response"></a>Отклик
+Значения `start` и `end` интерпретируются с использованием смещения часового пояса, указанного в соответствующих значениях, и не влияют на значение `Prefer: outlook.timezone` заголовка, если оно присутствует.
+
+Этот метод также поддерживает некоторые [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
+
+## <a name="request-headers"></a>Заголовки запросов
+| Имя       | Описание|
+|:---------------|:----------|
+| Авторизация  | Bearer {code}|
+
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
+
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод `200, OK` возвращает код отклика и объект коллекции [букингаппоинтмент](../resources/bookingappointment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -70,7 +78,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365
 [!INCLUDE [sample-code](../includes/snippets/javascript/bookingbusiness-getcalendarview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/bookingbusiness-getcalendarview-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

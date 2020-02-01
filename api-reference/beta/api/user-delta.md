@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dd79c6f23b87ebcaa9f766f4beab901d6b97d4d8
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 605b4fa7a890d1f2a74b44fe00eb3e978a2ee5dd
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36724318"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41652039"
 ---
 # <a name="user-delta"></a>user: delta
 
@@ -26,7 +26,7 @@ ms.locfileid: "36724318"
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Делегированные (личная учетная запись Майкрософт) | User.Read, User.ReadWrite    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.  |
 |Для приложений | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -90,7 +90,7 @@ GET /users/delta
 - Если свойство ранее никогда не настраивалось, оно не включается в отклик.
 
 
-> **Примечание.** При таком поведении просмотр отклика не дает возможность определить, изменилось ли свойство. Кроме того, разностные ответы имеют большой размер, так как они содержат все значения свойств, как показано в [примере 2](#example-2-selecting-three-properties).
+> **Примечание.** При таком поведении просмотр отклика не дает возможность определить, изменилось ли свойство. Кроме того, разностные отклики отличаются большими размерами, так как они содержат все значения свойств, как показано в [примере 2](#example-2-selecting-three-properties).
 
 ### <a name="alternative-return-only-the-changed-properties"></a>Альтернатива: возвращение только измененных свойств
 
@@ -99,11 +99,11 @@ GET /users/delta
 - Если свойство изменилось, в отклике содержится новое значение. Сюда включаются свойства с заданным значением NULL.
 - Если свойство не изменилось, оно не включается в отклик. (Отличается от поведения по умолчанию.)
 
-> **Примечание.** Заголовок можно добавить в запрос `deltaLink` в любой момент разностного цикла. Заголовок влияет только на набор свойств, включенный в отклик, и не влияет на способ выполнения разностного запроса. См. [Пример 3](#example-3-alternative-minimal-response-behavior).
+> **Примечание.** Заголовок можно добавить в запрос `deltaLink` в любой момент разностного цикла. Заголовок влияет только на набор свойств, включенный в отклик, и не влияет на способ выполнения разностного запроса. См. [пример 3](#example-3-alternative-minimal-response-behavior).
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-default-properties"></a>Пример 1: свойства по умолчанию
+### <a name="example-1-default-properties"></a>Пример 1. Свойства по умолчанию
 
 #### <a name="request"></a>Запрос
 
@@ -126,7 +126,7 @@ GET https://graph.microsoft.com/beta/users/delta
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-delta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -173,11 +173,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-selecting-three-properties"></a>Пример 2: выбор трех свойств
+### <a name="example-2-selecting-three-properties"></a>Пример 2. Выбор трех свойств
 
 #### <a name="request"></a>Запрос
 
-В следующем примере показано, как исходный запрос выбирает три свойства для отслеживания изменений с поведением ответа по умолчанию.
+В следующем примере показан исходный запрос с выбором трех свойств для отслеживания изменений с поведением отклика по умолчанию.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -196,7 +196,7 @@ GET https://graph.microsoft.com/beta/users/delta?$select=displayName,jobTitle,mo
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-delta-select-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-delta-select-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -205,7 +205,7 @@ GET https://graph.microsoft.com/beta/users/delta?$select=displayName,jobTitle,mo
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика при использовании параметра `deltaLink`, полученного в начале запроса. Обратите внимание, что в ответ включены все три свойства, и они не известны, какие из них были `deltaLink` изменены с момента получения.
+Ниже приведен пример отклика при использовании параметра `deltaLink`, полученного в начале запроса. Обратите внимание, что все три свойства включаются в отклик, и неизвестно, какие из них изменились с момента получения `deltaLink`.
 
 <!-- {
   "blockType": "response",
@@ -231,11 +231,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-alternative-minimal-response-behavior"></a>Пример 3: альтернативное поведение при минимальном отклике
+### <a name="example-3-alternative-minimal-response-behavior"></a>Пример 3. Альтернативное поведение минимального отклика
 
 #### <a name="request"></a>Запрос
 
-В следующем примере показан исходный запрос, в котором выбираются три свойства для отслеживания изменений с минимальным поведением минимального отклика.
+В следующем примере показан исходный запрос с выбором трех свойств для отслеживания изменений с альтернативным поведением отклика с минимальными результатами.
 
 # <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
@@ -255,7 +255,7 @@ Prefer: return=minimal
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-delta-minimal-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-delta-minimal-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
