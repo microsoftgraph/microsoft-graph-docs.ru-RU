@@ -4,12 +4,12 @@ description: Outlook может приостановить доставку ув
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 481dbee58a5ee761816e05c88d44e115da736035
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: ad690749db14bdb8994e1bfe85b0b312029657a2
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216842"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41651780"
 ---
 # <a name="reduce-missing-subscriptions-and-notifications-for-outlook-resources-preview"></a>Уменьшение числа пропущенных подписок и уведомлений о ресурсах Outlook (предварительная версия) 
 
@@ -37,6 +37,8 @@ Outlook также отправляет другое уведомление жи
 При создании подписки вы можете указать отдельную конечную точку уведомлений с помощью свойства **lifecycleNotificationUrl**. Если указана конечная точка, все текущие и будущие типы уведомлений жизненного цикла будут доставляться в нее. В противном случае уведомления `subscriptionRemoved` и `missed` будут доставляться в существующую конечную точку **notificationUrl** для всех существующих подписок.
 
 > **Примечание.** Свойство **lifecycleNotificationUrl** можно настроить или считать только с помощью интерфейсов API Microsoft Graph. Однако подписки, созданные с помощью бета-версий API, хранятся в той же рабочей среде, что и подписки, созданные с помощью версии 1.0, поэтому можно реализовать новый поток Outlook в дополнение к вашим подпискам, создаваемым с помощью версии API 1.0.
+
+> Подписки, созданные с помощью версии API 1.0, будут получать уведомления жизненного цикла. 
 
 ### <a name="subscription-request-example"></a>Пример запроса на подписку
 
