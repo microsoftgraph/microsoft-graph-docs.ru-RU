@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6e3815af104187a4267585586f7c7443dd8131f8
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3a4e24e41e4e8f8001d2350f0c0bf8959c5afabc
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36374904"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41652195"
 ---
 # <a name="create-mailsearchfolder"></a>Создание Маилсеарчфолдер
 
@@ -41,7 +41,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 | Заголовок | Значение |
 |:-------|:------|
-| Авторизация | `Bearer {token}`. Обязательно. |
+| Авторизация | `Bearer {token}`. Обязательный элемент. |
 | Content-Type | `application/json`. Обязательно. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -50,11 +50,11 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
-| @odata.type | String | Тип создаваемой папки. Задано значение "Microsoft. Graph. Маилсеарчфолдер". |
-| displayName | String | Отображаемое имя новой папки.|
+| @odata.type | Строка | Тип создаваемой папки. Задано значение "Microsoft. Graph. Маилсеарчфолдер". |
+| displayName | Строка | Отображаемое имя новой папки.|
 | инклуденестедфолдерс | Boolean | Указывает, как должна проходить иерархия папок почтовых ящиков в поиске. `true`означает, что необходимо выполнить глубокий поиск, чтобы включить дочерние папки в иерархию каждой папки, явно указанной в **саурцефолдеридс**. `false`означает неглубокий Поиск только тех папок, которые явно указаны в **саурцефолдеридс**. |
-| саурцефолдеридс | Коллекция строк | Папки почтовых ящиков, которые должны быть mined. |
-| филтеркуери | String | Запрос OData для фильтрации сообщений. |
+| саурцефолдеридс | Коллекция String | Папки почтовых ящиков, которые должны быть mined. |
+| филтеркуери | Строка | Запрос OData для фильтрации сообщений. |
 
 ## <a name="response"></a>Отклик
 
@@ -94,7 +94,7 @@ Content-length: 159
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-mailsearchfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-mailsearchfolder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -129,7 +129,6 @@ Content-type: application/json
     "childFolderCount": 0,
     "unreadItemCount": 0,
     "totalItemCount": 0,
-    "wellKnownName": null,
     "isSupported": true,
     "includeNestedFolders": true,
     "sourceFolderIds": [
@@ -150,7 +149,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-  
+
   ]
 }
 -->

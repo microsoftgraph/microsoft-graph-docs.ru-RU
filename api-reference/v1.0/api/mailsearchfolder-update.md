@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 600f1ba5c384b6b895eb992e55cb17e45e659e77
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 8a572b19e076bf2436a0083cf46a54457d3a34b6
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36374905"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41652188"
 ---
 # <a name="update-mailsearchfolder"></a>Обновление Маилсеарчфолдер
 
@@ -43,10 +43,10 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| displayName | String | Отображаемое имя [mailFolder](../resources/mailfolder.md).|
+| displayName | Строка | Отображаемое имя [mailFolder](../resources/mailfolder.md).|
 | инклуденестедфолдерс | Boolean | Способ обхода иерархии папок почтовых ящиков. `true`означает, что следует выполнить глубокий поиск, а `false` это означает, что вместо этого следует выполнить неглубокий Поиск. |
-| саурцефолдеридс | Коллекция строк | Папки почтовых ящиков, которые должны быть mined. |
-| филтеркуери | String | Запрос OData для фильтрации сообщений. |
+| саурцефолдеридс | Коллекция String | Папки почтовых ящиков, которые должны быть mined. |
+| филтеркуери | Строка | Запрос OData для фильтрации сообщений. |
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [mailFolder](../resources/mailfolder.md) в тексте отклика.
@@ -78,7 +78,7 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-mailsearchfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-mailsearchfolder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -109,7 +109,6 @@ Content-type: application/json
   "childFolderCount": 0,
   "unreadItemCount": 0,
   "totalItemCount": 0,
-  "wellKnownName": null,
   "isSupported": true,
   "includeNestedFolders": true,
   "sourceFolderIds": [
@@ -129,7 +128,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    
+
   ]
 }
 -->
