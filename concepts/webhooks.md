@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: a9bee67379203b7dbe2c6a3b4dff1caba95e422d
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: 54775b566c26f0b6bc99fd1a8482fe5b12c5d1fa
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216835"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41651766"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Настройка уведомлений об изменениях в пользовательских данных
 
@@ -197,6 +197,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 | changeType | строка | Тип события, вызвавшего уведомление. Примеры: `created` при получении сообщения или `updated`, когда сообщение помечается как прочитанное. |
 | resource | строка | Универсальный код ресурса (URI) ресурса относительно `https://graph.microsoft.com`. |
 | resourceData | объект | Содержимое этого свойства зависит от типа связанного с ним ресурса. |
+| tenantId | string | Идентификатор клиента, на основе которого получено уведомление. |
 
 Например, для ресурсов Outlook `resourceData` содержит такие поля:
 
@@ -222,6 +223,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
       "clientState":"secretClientValue",
       "changeType":"created",
       "resource":"users/{user_guid}@<tenant_guid>/messages/{long_id_string}",
+      "tenantId": "84bd8158-6d4d-4958-8b9f-9d6445542f95",
       "resourceData":
       {
         "@odata.type":"#Microsoft.Graph.Message",
@@ -267,6 +269,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 - [Получение подписки](/graph/api/subscription-get?view=graph-rest-1.0)
 - [Создание подписки](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
 - [Учебник по уведомлениям об изменениях](/graph/tutorials/change-notifications)
+- [Уведомления в жизненном цикле (Предварительная версия)](/graph/concepts/webhooks-outlook-authz.md)
 
 [contact]: /graph/api/resources/contact?view=graph-rest-1.0
 [conversation]: /graph/api/resources/conversation?view=graph-rest-1.0
