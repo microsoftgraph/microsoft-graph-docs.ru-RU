@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 65723f2a951d4630f939e1981c60793941099faf
-ms.sourcegitcommit: c25828c596b7e0939fa164a3d7754722943152c2
+ms.openlocfilehash: a89ae11fe89421763241313989aab8d6a839e03d
+ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38757133"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "41652223"
 ---
 # <a name="event-resource-type"></a>Тип ресурса event
 
@@ -118,7 +118,7 @@ ms.locfileid: "38757133"
 |isAllDay|Boolean|Задайте значение true, если событие длится весь день.|
 |isCancelled|Boolean|Задайте значение true, если событие отменено.|
 |isOnlineMeeting|Логический| `True`, если событие содержит информацию о собрании по сети (т. е. **onlineMeeting** указывает на ресурс [onlineMeetingInfo](onlinemeetinginfo.md)), в противном случае — `false`. Значение по умолчанию — `false` (**onlineMeeting** — `null`). Необязательный. <br> После настройки **isOnlineMeeting** на `true` Microsoft Graph инициализирует **onlineMeeting**. Outlook будет игнорировать любые последующие изменения **isOnlineMeeting**, и собрание останется доступным по сети. |
-|isOrganizer|Boolean|Задайте значение true, если отправитель сообщения также является его организатором.|
+|isOrganizer|Boolean|Присвоено значение true, если владелец календаря (указанный свойством **owner** объекта [calendar](calendar.md)) является организатором события (определятся свойством **organizer** объекта **event**). Это также применимо, если делегат организовал событие от имени владельца.|
 |isReminderOn|Boolean|Задайте значение true, если установлено напоминание пользователю о событии.|
 |lastModifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |location|[Location](location.md)|Место проведения события.|
