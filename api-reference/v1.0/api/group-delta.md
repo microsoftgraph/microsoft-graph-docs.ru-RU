@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 68e2d68715f488433d2185656ea325f80b50575d
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 1205e975599a2c185ed2a54adf1f219b8bfd053d
+ms.sourcegitcommit: 360d176a29047a2686f1bff076f15c6ce9d12ef5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36720909"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41711719"
 ---
 # <a name="group-delta"></a>group: delta
 Получите только что созданные, обновленные или удаленные группы, в том числе изменения членства в группах, без необходимости выполнять полный доступ ко всей коллекции групп. Сведения об [использовании запроса изменений](/graph/delta-query-overview) см.
@@ -21,9 +21,9 @@ ms.locfileid: "36720909"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group. Read. ALL, Directory. Read. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL  |
+|Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group. Read. ALL, Directory. Read. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Для приложений | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,14 +46,14 @@ GET /groups/delta
 | Параметр запроса | Тип  |Описание|
 |:---------------|:--------|:----------|
 | $deltatoken | string | Этот [токен состояния](/graph/delta-query-overview) возвращается в URL-адресе `deltaLink` предыдущего вызова функции **delta** для той же коллекции групп и указывает на завершение этого цикла отслеживания изменений. Сохраните URL-адрес `deltaLink` с этим токеном и примените его в первом запросе следующего цикла отслеживания изменений для этой коллекции.|
-| $skiptoken | string | Этот [токен состояния](/graph/delta-query-overview) возвращается в URL-адресе `nextLink` предыдущего вызова функции **delta** и указывает, что из коллекции групп получены не все изменения. |
+| $skiptoken | строка | Этот [токен состояния](/graph/delta-query-overview) возвращается в URL-адресе `nextLink` предыдущего вызова функции **delta** и указывает, что из коллекции групп получены не все изменения. |
 
 ### <a name="odata-query-parameters"></a>Параметры запросов OData
 
 Этот метод поддерживает необязательные параметры запроса OData для настройки ответа.
 
 - Вы можете использовать параметр запроса `$select` так же, как в любом другом запросе GET, чтобы задать только те свойства, которые необходимы для эффективной работы. Свойство *id* возвращается всегда.
-- Вы можете использовать `$expand=members` для получения изменений в членстве.
+- Вы можете использовать `$select=members` для получения изменений в членстве. Вы также можете отслеживать другие изменения, такие как владение, и многое другое, выбрав любое [отношение группы](../resources/group.md#relationships) типа **directoryObject Collection**.
 - Имеется ограниченная поддержка параметра `$filter`:
   - Единственное поддерживаемое выражение `$filter` предназначено для отслеживания изменений в определенном объекте: `$filter=id+eq+{value}`. Допускается фильтрация нескольких объектов. Например, `https://graph.microsoft.com/v1.0/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`. Максимальное количество фильтруемых объектов: 50.
 
@@ -124,7 +124,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-delta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -141,7 +141,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta
 
 >**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 >
-> Обратите внимание на присутствие свойства *Members @ Delta* , которое включает идентификаторы объектов Member в группе.
+> Обратите внимание на присутствие свойства *Members@delta* , включающего идентификаторы объектов Member в группе.
 
 <!-- {
   "blockType": "response",
@@ -202,7 +202,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,descriptio
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-delta-with-select-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-delta-with-select-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -263,7 +263,7 @@ Prefer: return=minimal
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-delta-minimal-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-delta-minimal-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

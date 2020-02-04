@@ -4,12 +4,12 @@ description: API облачных коммуникаций в Microsoft Graph д
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 9c4bd2e4ca327e9d5a482ac5dddd3f6bd41a4652
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: f2b85634d27d566fc57a57a1e9b6db0366bb9481
+ms.sourcegitcommit: 360d176a29047a2686f1bff076f15c6ce9d12ef5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871672"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "41711712"
 ---
 # <a name="cloud-communications-api-overview"></a>Общие сведения об API облачных коммуникаций
 API облачных коммуникаций в Microsoft Graph добавляют новое измерение, в соответствии с которыми ваши приложения и службы взаимодействуют с пользователями с помощью различных компонентов, связанных с взаимодействием, таких как звонки и собрания по сети. Развивайте свой бизнес, отменяя способы реагирования на потребности клиентов и взаимодействие сотрудников друг с другом.
@@ -93,7 +93,7 @@ API облачных коммуникаций можно использоват�
 Ищете справочные материалы по API для этой службы?
 
 - [API облачных коммуникаций в Microsoft Graph (версия 1.0)](/graph/api/resources/communications-api-overview?view=graph-rest-1.0)
-- [API облачных коммуникаций в Microsoft Graph (бета-версия)](/graph/api/resources/calls-api-overview?view=graph-rest-beta)
+- [API облачных коммуникаций в Microsoft Graph (бета-версия)](/graph/api/resources/communications-api-overview?view=graph-rest-beta)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
