@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 67e8aad098084bb3c33f412c44b1600c8c7f59d5
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: fff6dd2d707ba75db352837e77089f97e58cb325
+ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216758"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774389"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -73,7 +73,7 @@ POST /subscriptions
 ### <a name="request"></a>Запрос
 
 Предоставьте в тексте запроса описание объекта [subscription](../resources/subscription.md) в формате JSON.
-Поле `clientState` является необязательным.
+Поля `clientState` и `latestSupportedTlsVersion` являются необязательными.
 
 Этот запрос создает подписку на уведомления о новых сообщениях, получаемых пользователем, который вошел в систему.
 
@@ -92,7 +92,8 @@ Content-type: application/json
    "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
    "resource": "me/mailFolders('Inbox')/messages",
    "expirationDateTime":"2016-11-20T18:23:45.9356913Z",
-   "clientState": "secretClientValue"
+   "clientState": "secretClientValue",
+   "latestSupportedTlsVersion": "v1_2"
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -125,7 +126,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже показан пример отклика. 
+Ниже приводится пример отклика. 
 
 >**Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
@@ -148,7 +149,8 @@ Content-length: 252
   "clientState": "secretClientValue",
   "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
   "expirationDateTime": "2016-11-20T18:23:45.9356913Z",
-  "creatorId": "8ee44408-0679-472c-bc2a-692812af3437"
+  "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
+  "latestSupportedTlsVersion": "v1_2"
 }
 ```
 

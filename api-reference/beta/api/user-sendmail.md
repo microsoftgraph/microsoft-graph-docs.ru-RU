@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 34c2b0e9c06bbafdf9a384d24ea9472af2b7d1e8
-ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
+ms.openlocfilehash: 1258b7808b15348b38fceaf084626a6d89629cc3
+ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41652181"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774460"
 ---
 # <a name="send-mail"></a>Отправка почты
 
@@ -118,7 +118,7 @@ Content-length: 512
 
 
 ##### <a name="response-1"></a>Отклик 1
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -179,7 +179,7 @@ Content-length: 344
 
 
 ##### <a name="response-2"></a>Отклик 2
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -242,7 +242,7 @@ Content-type: application/json
 ---
 
 
-##### <a name="response-3"></a>Ответ 3
+##### <a name="response-3"></a>Отклик 3
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
@@ -256,6 +256,8 @@ HTTP/1.1 202 Accepted
 
 В следующем примере создается сообщение с вложением файла и отправляется сообщение.
 
+
+# <a name="httptabhttp"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_attachment"
@@ -290,6 +292,20 @@ Content-type: application/json
   }
 }
 ```
+# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-sendmail-with-attachment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-sendmail-with-attachment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-sendmail-with-attachment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response-4"></a>Отклик 4
 

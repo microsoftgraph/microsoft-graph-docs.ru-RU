@@ -5,14 +5,14 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 8bb95fbae074cda735168450c31e2fecf7ea28fa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bbf53796a30578209bbce2f4a674c7da6cf82b35
+ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35943451"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774333"
 ---
-# <a name="list-members"></a>Список элементов
+# <a name="list-members"></a>Список участников
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,9 +37,9 @@ GET /connectorGroups/{id}/members
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Носителя. Обязательный|
+| Authorization  | Носителя. Обязательный|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -50,13 +50,13 @@ GET /connectorGroups/{id}/members
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
-  "name": "get_members"
+  "name": "get_connectorgroup_members"
 }-->
 ```http
 GET https://graph.microsoft.com/{ver}/connectorGroups/{id}/members
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

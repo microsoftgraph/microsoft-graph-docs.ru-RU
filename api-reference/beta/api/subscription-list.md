@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: d69d19cd51eb1bbb2ae7cd2ff25eef331e399a10
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: 2f179eaa7f6af016376ca5ca7907a36783cb30ce
+ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216724"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774606"
 ---
 # <a name="list-subscriptions"></a>Перечисление подписок
 
@@ -26,7 +26,7 @@ ms.locfileid: "41216724"
 |:---------------- |:-------------------------------------------- |
 | [Делегированная](/graph/auth-v2-user) (Рабочая или учебная учетная запись) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md) или подписки. Read. All (см. ниже). |
 | [Делегированная](/graph/auth-v2-user) учетная запись (личная учетная запись Майкрософт) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md) или подписки. Read. All (см. ниже). |
-| [Приложение](/graph/auth-v2-service) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md). |
+| [Application](/graph/auth-v2-service) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md). |
 
 Результаты отклика основаны на контексте приложения, отправившего вызов. Ниже представлена сводка общих сценариев.
 
@@ -131,7 +131,8 @@ Content-length: 586
       "clientState": null,
       "notificationUrl": "https://webhookappexample.azurewebsites.net/api/notifications",
       "expirationDateTime": "2018-03-12T05:00:00Z",
-      "creatorId": "8ee44408-0679-472c-bc2a-692812af3437"
+      "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
+      "latestSupportedTlsVersion": "v1_2"
     }
   ]
 }
