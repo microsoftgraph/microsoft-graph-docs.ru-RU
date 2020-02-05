@@ -5,12 +5,12 @@ localization_priority: Priority
 author: baywet
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 801a6d99d467207a1cd6791219eb1bf6fa3290d6
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: 2293643f4bcfa16359d046733389d6295dc823a9
+ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216239"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774340"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -84,7 +84,8 @@ Content-type: application/json
    "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
    "resource": "me/mailFolders('Inbox')/messages",
    "expirationDateTime":"2016-11-20T18:23:45.9356913Z",
-   "clientState": "secretClientValue"
+   "clientState": "secretClientValue",
+   "latestSupportedTlsVersion": "v1_2"
 }
 ```
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
@@ -107,7 +108,7 @@ Content-type: application/json
 
 
 Предоставьте в тексте запроса описание объекта [subscription](../resources/subscription.md) в формате JSON.
-Поле `clientState` является необязательным.
+Поля `clientState` и `latestSupportedTlsVersion` необязательны.
 
 ##### <a name="resources-examples"></a>Примеры ресурсов
 
@@ -147,7 +148,8 @@ Content-length: 252
   "clientState": "secretClientValue",
   "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
   "expirationDateTime": "2016-11-20T18:23:45.9356913Z",
-  "creatorId": "8ee44408-0679-472c-bc2a-692812af3437"
+  "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
+  "latestSupportedTlsVersion": "v1_2"
 }
 ```
 

@@ -3,18 +3,25 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: d9eb819dadee80182c59a8ae1477a1b771b6c82f
-ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
+ms.openlocfilehash: f36915f0932f71d4f35215294f3ac4645d4f59d8
+ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41652018"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "41774760"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
 Этот журнал содержит сведения об изменениях API Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 
 Дополнительные сведения об известных проблемах с API Microsoft Graph см. в статье [Известные проблемы](known-issues.md).
+
+## <a name="february-2020"></a>Февраль 2020 г.
+
+### <a name="identity-and-access-azure-ad"></a>Удостоверение и доступ (Azure AD)
+| **Тип изменения** | **Версия**   | **Описание**                          |
+|:---|:---|:---|
+| Дополнение | Бета-версия и версия 1.0 | Добавлено свойство **latestSupportedTlsVersion** для объекта [subscription](/graph/api/resources/subscription?view=graph-rest-1.0). Указывает последнюю версию TLS, поддерживаемую конечной точкой уведомлений. Позволяет подписчикам использовать устаревшую версию TLS в течение ограниченного периода. Подробности см. в статье [Подписки Microsoft Graph — прекращение поддержки TLS 1.0 и 1.1](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/). |
 
 ## <a name="january-2020"></a>Январь 2020 г.
 
@@ -432,7 +439,7 @@ ms.locfileid: "41652018"
 | Дополнение | бета | Добавлен новый тип объекта: [Identityuserflow](/graph/api/resources/identityuserflow?view=graph-rest-beta) |
 | Дополнение | бета | Добавлены новые ресурсы для [управления правами](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta). |
 | Дополнение | бета | Добавлен метод [removePassword](/graph/api/application-removepassword?view=graph-rest-beta) для ресурса [application](/graph/resources/application?view=graph-rest-beta). |
-| Дополнение | бета | Добавлено свойство **addIns** для объекта [application](/graph/resources/application?view=graph-rest-beta). |
+| Дополнение | Бета-версия | Добавлено свойство **addIns** для объекта [application](/graph/resources/application?view=graph-rest-beta). |
 | Дополнение | бета | Добавлены методы [addPassword](/graph/api/serviceprincipal-addpassword?view=graph-rest-beta) и [removePassword](/graph/api/serviceprincipal-removepassword?view=graph-rest-beta) для ресурса [serviceprincipal](/graph/resources/serviceprincipal?view=graph-rest-beta). |
 | Дополнение | Бета-версия и версия 1.0 | Добавлены свойства **onPremisesDomainName**, **onPremisesNetBiosName** и **onPremisesSamAccountName** для объекта [group](/graph/api/resources/group?view=graph-rest-1.0). |
 | Дополнение | Бета-версия и версия 1.0 | Добавлено свойство **securityIdentifier** для ресурса [group](/graph/api/resources/group?view=graph-rest-1.0). |
@@ -2844,7 +2851,7 @@ ms.locfileid: "41652018"
 
 ### <a name="mail-outlook"></a>Почта (Outlook)
 
-| Тип изменения | Версия | Description                              |
+| Тип изменения | Версия | Описание                              |
 | :---------- | :------ | :--------------------------------------- |
 | Изменение          | 1.0 и бета-версия | Это улучшение поведения связано с получением общей почтовой папки или содержимого сообщений в ней, если кто-то предоставил вошедшему пользователю доступ к почтовой папке или делегировал ему почтовый ящик пользователя. В таких случаях приложение может указать ИД пользователя или имя участника-пользователя, чтобы [получить эту общую почтовую папку](/graph/api/mailfolder-get?view=graph-rest-1.0) или [получить сообщения из этого общего календаря](/graph/api/user-list-messages?view=graph-rest-1.0), при условии что вошедший пользователь предоставил приложению делегированные разрешения. |
 
