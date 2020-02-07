@@ -5,18 +5,18 @@ localization_priority: Normal
 doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6717e0219ec76d32db0e613447137f9675df1cb4
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 08f33169af606fdaa5824b8a98f770094897814a
+ms.sourcegitcommit: 3d22631d6a8c235f7b9ec0575f60c3fb557a1368
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865015"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41839964"
 ---
 # <a name="synchronizationschema-parseexpression"></a>Синчронизатионсчема: Парсикспрессион
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Проанализируйте заданное строковое выражение в объект [Аттрибутемаппингсаурце | (.. Объект/ресаурцес/synchronization_attributemappingsource. md).
+Синтаксический анализ заданное строковое выражение в объект [аттрибутемаппингсаурце](../resources/synchronization-attributemappingsource.md) .
 
 Более подробную информацию о выражениях можно узнать [в статье Создание выражений для сопоставлений атрибутов в Azure Active Directory](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).
 
@@ -25,8 +25,8 @@ ms.locfileid: "40865015"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
-|Делегированные (личная учетная запись Майкрософт) |Не поддерживается.|
+|Делегированное (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
+|Делегированное (личная учетная запись Майкрософт) |Не поддерживается.|
 |Для приложений                            |Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -46,8 +46,8 @@ POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpressi
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|выражение               |String               |Выражение для синтаксического анализа.|
-|тестинпутобжект          |[експрессионинпутобжект](../resources/synchronization-expressioninputobject.md)|Тестовый объект данных, с которым вычисляется выражение. Необязательный атрибут.|
+|выражение               |Строка               |Выражение для синтаксического анализа.|
+|тестинпутобжект          |[експрессионинпутобжект](../resources/synchronization-expressioninputobject.md)|Тестовый объект данных, с которым вычисляется выражение. Необязательно.|
 |таржетаттрибутедефинитион|[аттрибутедефинитион](../resources/synchronization-attributedefinition.md) |Определение атрибута, который будет сопоставлен с этим выражением. Необязательный параметр.|
 
 ## <a name="response"></a>Отклик

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 2f179eaa7f6af016376ca5ca7907a36783cb30ce
-ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
+ms.openlocfilehash: 4dd666da0fdcfd747cd4c80fd0aaa430cbacb776
+ms.sourcegitcommit: 3d22631d6a8c235f7b9ec0575f60c3fb557a1368
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774606"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41839999"
 ---
 # <a name="list-subscriptions"></a>Перечисление подписок
 
@@ -151,5 +151,7 @@ Content-length: 586
   ]
 }
 -->
+
+> **Note:** значение `clientState` свойства не возвращается в целях обеспечения безопасности.  
 
 Когда запрос возвращает несколько страниц данных, отклик включает свойство `@odata.nextLink`, помогающее управлять результатами.  Дополнительные сведения см. в статье [Разбиение данных Microsoft Graph по страницам в приложении](/graph/paging).
