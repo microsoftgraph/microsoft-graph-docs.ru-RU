@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: bfd4a174fa10f99167b3f9ef37bb36db6a56cb96
-ms.sourcegitcommit: 6265ddb4e3d22bb556615589594e40df018fb0f1
+ms.openlocfilehash: 4c505ca57406b5ff6554f015c74ae702044e7e01
+ms.sourcegitcommit: cea768f767cf27a938b72bb26892d70e3dedaf2e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "39672861"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41865741"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -58,7 +58,8 @@ ms.locfileid: "39672861"
 |[Обновление параметра](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | Обновление объекта параметра. |
 |[Удаление параметра](../api/groupsetting-delete.md) | Нет | Удаление объекта параметра. |
 |[validateProperties](../api/group-validateproperties.md)|JSON| Проверка соответствия отображаемого имени или почтового псевдонима группы Office 365 политикам именования. |
-|**Calendar**| | |
+|[assignLicense](../api/group-assignlicense.md)|[group](group.md)| Добавление или удаление подписок группы. Вы также можете включать и отключать отдельные планы, связанные с подпиской. |
+|**Календарь**| | |
 |[Создание события](../api/group-post-events.md) |[event](event.md)| Создание объекта event путем публикации в коллекции объектов event.|
 |[Получение события](../api/group-get-event.md) |[event](event.md)|Считывание свойств объекта event.|
 |[Перечисление событий](../api/group-list-events.md) |Коллекция [event](event.md)| Получение коллекции объектов event.|

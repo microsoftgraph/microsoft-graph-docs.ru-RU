@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b8295c91f3c291389ca85fe18719c7249d11a03c
-ms.sourcegitcommit: bd0daf5c133ab29af9337a5edd3b8509fd2313d5
+ms.openlocfilehash: 7ccdc9b10d4fb0015829cf289aeae3d210b9c4c9
+ms.sourcegitcommit: cea768f767cf27a938b72bb26892d70e3dedaf2e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41232009"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41865811"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -61,6 +61,7 @@ ms.locfileid: "41232009"
 | [Список ownedDevices](../api/user-list-owneddevices.md) | Коллекция [directoryObject](directoryobject.md) | Получение устройств, принадлежащих пользователю, из свойства навигации ownedDevices. |
 | [Список ownedObjects](../api/user-list-ownedobjects.md) | Коллекция [directoryObject](directoryobject.md) | Получение объектов каталога, принадлежащих пользователю, из свойства навигации ownedObjects. |
 | [Список registeredDevices](../api/user-list-registereddevices.md) | Коллекция [directoryObject](directoryobject.md) | Получение устройств, зарегистрированных для пользователя, из свойства навигации registeredDevices. |
+| [reprocessLicense](../api/user-reprocesslicenseassignment.md) | [user](user.md) | Переработка назначенных подписок для пользователя. |
 | [revokeSignInSessions](../api/user-revokesigninsessions.md) | Нет | Отменяет все маркеры обновления и маркеры сеанса пользователя, выпущенные для приложений, сбрасывая значение свойства **signInSessionsValidFromDateTime** и указывая для него текущую дату и время. Это вынуждает пользователей повторно выполнить вход в эти приложения. |
 **Drive** |||
 | [Получение объекта drive](../api/drive-get.md) | [drive](drive.md) | Получение свойств и связей ресурса Drive. |

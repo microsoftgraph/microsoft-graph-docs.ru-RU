@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 230d90a115743db0285fcfd60eb0a18ddcb89380
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 4a17b3bba7edbf9fa843e96cb477d76394d6c17c
+ms.sourcegitcommit: cea768f767cf27a938b72bb26892d70e3dedaf2e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36722421"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41865748"
 ---
 # <a name="list-serviceprincipals"></a>Перечисление servicePrincipals
 
@@ -27,7 +27,7 @@ ms.locfileid: "36722421"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application.ReadWrite.All, Directory.Read.All |
+|Для приложений | Application. Read. ALL, Application. ReadWrite. ALL, Directory. Read. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,11 +44,11 @@ GET /servicePrincipals
 |:----------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [servicePrincipal](../resources/serviceprincipal.md) в тексте отклика.
 
@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-serviceprincipals-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-serviceprincipals-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
