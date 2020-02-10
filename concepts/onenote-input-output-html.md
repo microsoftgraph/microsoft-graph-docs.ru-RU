@@ -4,12 +4,12 @@ description: 'HTML-код, определяющий содержимое и ст
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: fcb4a8127b633ba309212a7160c9e5548836466c
-ms.sourcegitcommit: 6720736406f21e40914b27ba28387adedf97fa56
+ms.openlocfilehash: 2ba3ce1432a2213a4ecdcfce1ab9a9c98c88c818
+ms.sourcegitcommit: cea768f767cf27a938b72bb26892d70e3dedaf2e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "35639222"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41865734"
 ---
 # <a name="input-and-output-html-in-onenote-pages"></a>Входной и выходной HTML-код на страницах OneNote
 
@@ -455,7 +455,12 @@ upper-alpha | &nbsp; |
 |Входной атрибут|Описание|
 |:------|:------|
 | data-id | Ссылка на элемент.<br/><br/>Используется для [обновления содержимого страницы](onenote-update-page.md). |
-| style | Свойства CSS [style](#styles) для элемента, а также:<br/> - **border**. Допустимые значения — 0px и 1px.<br/> - **width**. Поддерживается в элементах **table** и **td** как количество пикселей или процент от ширины страницы.<br/><br/>Пример: `width="100px"` или `width="60%"` |
+| style | Свойства CSS [style](#styles) для элемента, а также:<br/> - **width**. Поддерживается в элементах **table** и **td** как количество пикселей или процент от ширины страницы.<br/><br/>Пример: `width="100px"` или `width="60%"` |
+| граница | Складывает границы с таблицей указанной ширины |
+| ширина | Ширина таблицы |
+| bgcolor | Цвет фона таблицы |
+
+**Примечание:** Использование свойства **граница** в стиле атрибута таблицы не поддерживается в ввода html. 
  
 
 #### <a name="output-attributes"></a>Выходные атрибуты
@@ -472,7 +477,7 @@ upper-alpha | &nbsp; |
 #### <a name="input-html-with-optional-settings-at-different-levels"></a>Входной HTML-код с необязательными параметрами на разных уровнях.
 
 ```html
-<table style="border:0px;width:500px;background-color:green">
+<table border="1"; Width="500"; bgcolor = "green">
     <tr> 
         <td>Cell 1</td> 
         <td>Cell 2</td> 

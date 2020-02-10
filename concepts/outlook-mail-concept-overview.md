@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 2a9c54486098d615d43734fc09d315e797671df7
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 70538917e54ff24be9513bb0d1e912d1918c1a59
+ms.sourcegitcommit: 3d22631d6a8c235f7b9ec0575f60c3fb557a1368
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969258"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41839943"
 ---
 # <a name="outlook-mail-api-overview"></a>Обзор API почты Outlook
 
@@ -56,6 +56,10 @@ Outlook — это центр обмена сообщениями в Office 36
 Зачастую необходимо хранить данные приложений во внешних хранилищах данных, что влечет за собой издержки на управление данными и доступ к ним. Microsoft Graph позволяет просто включать данные приложения в виде заголовков сообщений Интернета при [создании](/graph/api/user-post-messages?view=graph-rest-1.0#request-2) или [отправке](/graph/api/user-sendmail?view=graph-rest-1.0#request-2) нового сообщения либо при ответе на сообщение.
 
 Если нужно добавить и впоследствии обновлять пользовательские данные, можно [хранить данные в отдельных экземплярах ресурсов](extensibility-overview.md#open-extensions). При необходимости в качестве альтернативы можно расширить схему, добавить настраиваемые свойства и хранить введенные данные в ресурсах Microsoft Graph. Вы можете сделать такие [расширения схемы](extensibility-overview.md#schema-extensions) доступными для поиска и предоставления общего доступа.
+
+## <a name="where-is-the-data"></a>Расположение данных
+
+[!INCLUDE [outlook-mailbox-type-support](../includes/outlook-mailbox-type-support.md)]
 
 ## <a name="api-reference"></a>Справочные материалы по API
 Ищете справочные материалы по API для этой службы?

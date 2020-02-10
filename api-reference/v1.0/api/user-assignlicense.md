@@ -5,14 +5,14 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b253c76b1bbf534456d40c7b0b65e6164eed9ede
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e1110d7d68dcc700c57a993b7c09defc0ec7f709
+ms.sourcegitcommit: cea768f767cf27a938b72bb26892d70e3dedaf2e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36373674"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41865818"
 ---
-# <a name="assignlicense"></a>assignLicense
+# <a name="user-assignlicense"></a>user: assignLicense
 Добавление или удаление подписок пользователя. Вы также можете включать и отключать отдельные планы, связанные с подпиской.
 
 ## <a name="permissions"></a>Разрешения

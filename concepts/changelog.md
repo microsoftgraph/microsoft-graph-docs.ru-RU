@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: f36915f0932f71d4f35215294f3ac4645d4f59d8
-ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
+ms.openlocfilehash: 33b7c7cf7d298de82cef0c46b2a8d56ad61576e7
+ms.sourcegitcommit: cea768f767cf27a938b72bb26892d70e3dedaf2e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774760"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "41865804"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -18,10 +18,24 @@ ms.locfileid: "41774760"
 
 ## <a name="february-2020"></a>Февраль 2020 г.
 
+### <a name="groups"></a>Группы
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение | 1.0 | Добавлен [API group: assignLicense](../api-reference/v1.0/api/group-assignlicense.md), с помощью которого можно назначить лицензию [группе](../api-reference/v1.0/resources/group.md). |
+
 ### <a name="identity-and-access-azure-ad"></a>Удостоверение и доступ (Azure AD)
+
 | **Тип изменения** | **Версия**   | **Описание**                          |
 |:---|:---|:---|
 | Дополнение | Бета-версия и версия 1.0 | Добавлено свойство **latestSupportedTlsVersion** для объекта [subscription](/graph/api/resources/subscription?view=graph-rest-1.0). Указывает последнюю версию TLS, поддерживаемую конечной точкой уведомлений. Позволяет подписчикам использовать устаревшую версию TLS в течение ограниченного периода. Подробности см. в статье [Подписки Microsoft Graph — прекращение поддержки TLS 1.0 и 1.1](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/). |
+
+### <a name="users"></a>Пользователи
+
+| **Тип изменения** | **Версия** | **Описание**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Дополнение | 1.0 | Добавлен [API user: reprocessLicenseAssignment](../api-reference/v1.0/api/user-reprocesslicenseassignment.md), с помощью которого можно переработать все групповые назначения лицензий для [пользователя](../api-reference/v1.0/resources/user.md). |
+| Добавление | 1.0 | Добавлено свойство **identities** для ресурса [user](/graph/api/resources/user?view=graph-rest-1.0). Это свойство представляет набор удостоверений (например, местные учетные записи и учетные записи социальных сетей), которые пользователь может использовать для входа.|
 
 ## <a name="january-2020"></a>Январь 2020 г.
 
@@ -433,7 +447,7 @@ ms.locfileid: "41774760"
 |:----------------|:------------|:-----------------------------------------|
 | Дополнение | бета | Добавлены новые объекты: <br/>[authenticationDetail](/graph/api/authenticationDetail?view=graph-rest-beta)<br/>[keyValue](/graph/api/keyValue?view=graph-rest-beta)<br/>[networkLocationDetail](/graph/api/networkLocationDetail?view=graph-rest-beta)|
 | Дополнение | бета | Добавлены свойства **alternateSignInName**, **ServicePrincipalId**, **ServicePrincipalName** и **authenticationProcessingDetails** ресурса [signIn](/graph/api/resources/signin?view=graph-rest-beta). |
-| Удаление | бета | Ссылка на [mfaDetail](/graph/api/resources/mfadetail?view=graph-rest-beta) перемещена из [signIn](/graph/api/resources/signin?view=graph-rest-beta) в [authenticationDetail](/graph/api/authenticationDetail?view=graph-rest-beta). |
+| Удаление | Бета-версия | Ссылка на [mfaDetail](/graph/api/resources/mfadetail?view=graph-rest-beta) перемещена из [signIn](/graph/api/resources/signin?view=graph-rest-beta) в [authenticationDetail](/graph/api/authenticationDetail?view=graph-rest-beta). |
 | Дополнение | бета | Добавлено свойство **signInActivity** для ресурса [user](/graph/api/resources/user?view=graph-rest-beta). |
 | Дополнение | Бета-версия | Добавлен новый тип объекта: [Trustframeworkkeyset](/graph/api/resources/trustframeworkkeyset?view=graph-rest-beta) |
 | Дополнение | бета | Добавлен новый тип объекта: [Identityuserflow](/graph/api/resources/identityuserflow?view=graph-rest-beta) |
@@ -1658,7 +1672,7 @@ ms.locfileid: "41774760"
 |Дополнение|бета|Добавлено действие **overrideComplianceState** для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) |
 |Дополнение|бета|Добавлено действие **getTargetedUsersAndDevices** для коллекции [deviceConfiguration](/graph/api/resources/intune-deviceconfig-deviceconfiguration?view=graph-rest-beta) |
 |Дополнение|бета|Добавлена функция [autopilotDeviceStream](/graph/api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-autopilotdevicestream?view=graph-rest-beta) для объекта [importedWindowsAutopilotDeviceIdentityUpload](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload?view=graph-rest-beta) |
-|Дополнение|бета|Добавлено свойство **restrictedApps** для объекта [androidCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidcompliancepolicy?view=graph-rest-beta).|
+|Дополнение|Бета|Добавлено свойство **restrictedApps** для объекта [androidCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidcompliancepolicy?view=graph-rest-beta).|
 |Дополнение|бета|Добавлено свойство **tokenCreationDateTime** для объекта [androidDeviceOwnerEnrollmentProfile](/graph/api/resources/intune-androidforwork-androiddeviceownerenrollmentprofile?view=graph-rest-beta)|
 |Удаление|бета|Удалено свойство **restrictedApps** из объекта [androidForWorkCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidforworkcompliancepolicy?view=graph-rest-beta)|
 |Удаление|бета|Удалено свойство **restrictedApps** из объекта [androidWorkProfileCompliancePolicy](/graph/api/resources/intune-deviceconfig-androidworkprofilecompliancepolicy?view=graph-rest-beta)|
@@ -2047,7 +2061,7 @@ ms.locfileid: "41774760"
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Дополнение         | Бета          | Добавлены API [архивирования](/graph/api/team-archive?view=graph-rest-beta) и [разархивирования](/graph/api/team-unarchive?view=graph-rest-beta) команды.|
-|Дополнение         | Бета          | Добавлена операция [клонирования](/graph/api/team-clone?view=graph-rest-beta) команды. |
+|Дополнение         | Бета-версия          | Добавлена операция [клонирования](/graph/api/team-clone?view=graph-rest-beta) команды. |
 |Дополнение         | Бета          | Добавлены интерфейсы API для добавления [приложений](/graph/api/resources/teamsapp?view=graph-rest-beta) в группы и удаления из них. |
 |Изменение|Бета|Обновлен путь к сущности [команды](/graph/api/resources/team?view=graph-rest-beta).|
 |Изменение|бета|Обновлен путь к объекту [channel](/graph/api/resources/channel?view=graph-rest-beta).|

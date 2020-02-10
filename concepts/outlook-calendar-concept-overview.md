@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 18f322178c8ec7f29acd4af3d7296cffded834c9
-ms.sourcegitcommit: c25828c596b7e0939fa164a3d7754722943152c2
+ms.openlocfilehash: 4db79703595e9a8e4f21fa6eefd0ab098123138b
+ms.sourcegitcommit: 3d22631d6a8c235f7b9ec0575f60c3fb557a1368
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756779"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "41840006"
 ---
 # <a name="outlook-calendar-api-overview"></a>Общие сведения об API календарей Outlook
 
@@ -91,6 +91,10 @@ Outlook и API Календаря предоставляют множество 
 С помощью [API людей](people-example.md) в Microsoft Graph вы можете подключаться к [данным людей](/graph/api/resources/person?view=graph-rest-1.0), основанным на шаблонах общения и работы, а также на бизнес-связях. Вы можете реализовать различные элементы управления, например средство выбора людей, и предлагать людей, релевантных для пользователя, при организации собраний от имени пользователя.
 
 Уменьшите издержки на хранение данных приложений и управление ими во внешних хранилищах данных. С помощью Microsoft Graph вы можете хранить пользовательские данные приложений в качестве [открытых расширений](extensibility-overview.md#open-extensions) в отдельных экземплярах ресурсов. Если требуется вводить данные или необходима возможность делиться введенной схемой, вы можете сохранить пользовательские данные приложений в [расширениях схемы](extensibility-overview.md#schema-extensions).
+
+## <a name="where-is-the-data"></a>Расположение данных
+
+[!INCLUDE [outlook-mailbox-type-support](../includes/outlook-mailbox-type-support.md)]
 
 ## <a name="api-reference"></a>Справочные материалы по API
 
