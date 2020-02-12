@@ -2,16 +2,16 @@
 author: rahmit
 description: Этот ресурс представляет страницу в списке SitePages.
 ms.date: 03/15/2018
-title: Ситепаже
+title: ситепаже
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 240ab50f31d500fad960768bb6c45cb9c6ff6511
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d92a78ff73854d465ba8363b7bddff66be6bffc4
+ms.sourcegitcommit: 1a84f80798692fc0381b1acecfe023b3ce6ab02c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965049"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "41953618"
 ---
 # <a name="sitepage-resource"></a>ресурс Ситепаже
 
@@ -101,7 +101,7 @@ ms.locfileid: "35965049"
 
 | Имя свойства          | Тип                   | Описание
 |:-----------------------|:-----------------------|:---------------------------
-| publishingState        | [publicationFacet][]   | Состояние публикации и версия MM.mm страницы.
+| publishingState        | [publicationFacet][].   | Состояние публикации и версия MM.mm страницы.
 
 Ниже перечислены свойства, которые наследуются от ресурса **[baseItem][]**.
 
@@ -113,7 +113,7 @@ ms.locfileid: "35965049"
 | eTag                 | string            | ETag для элемента. Только для чтения.
 | lastModifiedBy       | [identitySet][]   | Удостоверение пользователя, который последним изменил данный элемент. Только для чтения.
 | lastModifiedDateTime | DateTimeOffset    | Дата и время последнего изменения элемента. Только для чтения.
-| parentReference      | [itemReference][] | Дата и время последнего изменения элемента. Только для чтения.
+| parentReference      | [itemReference][] | Сведения о родительском элементе, если элемент выступает в роли родительского элемента. Только для чтения.
 | webUrl               | строка (url-адрес)      | URL-адрес для отображения элемента в браузере. Только для чтения.
 
 ## <a name="relationships"></a>Связи
@@ -128,7 +128,7 @@ ms.locfileid: "35965049"
 [list]: list.md
 [listInfo]: listinfo.md
 [listItem]: listitem.md
-[publicationFacet]: publicationfacet.md
+[publicationFacet]: publicationfacet.md.
 [сайта]: site.md
 [Частей]: webpart.md
 
