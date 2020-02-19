@@ -1,17 +1,17 @@
 ---
 author: JeremyKelley
-description: Ресурс list представляет список в ресурсе site.
+description: Ресурс list представляет список на сайте.
 ms.date: 09/11/2017
 title: List
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: b79172049278758c77ac620f00c391d52633792b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4df869eeba7b66dad0bddef48b7d5686d8899702
+ms.sourcegitcommit: f51ba08d604d93f5f6af9ee8979cbf76baa285ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009995"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42108464"
 ---
 # <a name="list-resource"></a>Ресурс List
 
@@ -31,6 +31,7 @@ ms.locfileid: "36009995"
 | Стандартная задача               | Метод HTTP
 |:--------------------------|:------------------------------
 | [Получение списка][]              | GET /lists/{list-id}
+| [Создание списка][]           | POST/листс
 | [Перечисление элементов списка][]  | GET /lists/{list-id}/items
 | [Обновление элемента списка][]      | PATCH /lists/{list-id}/items/{item-id}
 | [Удаление элемента списка][]      | DELETE /lists/{list-id}/items/{item-id}
@@ -38,6 +39,7 @@ ms.locfileid: "36009995"
 | [Получение последних действий][] | GET /lists/{list-id}/activities
 
 [Получение списка]: ../api/list-get.md
+[Создание списка]: ../api/list-create.md
 [Перечисление элементов списка]: ../api/listitem-list.md
 [Обновление элемента списка]: ../api/listitem-update.md
 [Удаление элемента списка]: ../api/listitem-delete.md
@@ -113,7 +115,7 @@ ms.locfileid: "36009995"
 | Имя связи | Тип                        | Описание
 |:------------------|:----------------------------|:------------------------------
 | **activities**    | Коллекция [itemActivity][] | Последние действия, выполненные в списке.
-| **drive**         | [drive][]                   | Доступна только для библиотек документов. Разрешает доступ к списку как к ресурсу [drive][] с ресурсами [driveItem][driveItem].
+| **drive**         | [drive][]                   | Доступна только для библиотек документов. Разрешает доступ к списку как к ресурсу [drive][] с объектами [driveItem][driveItem].
 | **items**         | Коллекция ([listItem][])    | Все элементы, содержащиеся в списке.
 
 [baseItem]: baseitem.md
