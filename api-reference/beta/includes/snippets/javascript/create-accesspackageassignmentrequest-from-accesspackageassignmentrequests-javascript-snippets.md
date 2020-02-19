@@ -1,11 +1,16 @@
 ---
-description: "Automatically generated file. DO NOT MODIFY"
+description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
+ms.openlocfilehash: eb23e8b834f9b1a3f452438f5180e6844baf5743
+ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "37992804"
 ---
-
 ```javascript
 
 const options = {
-	authProvider,
+    authProvider,
 };
 
 const client = Client.init(options);
@@ -20,7 +25,7 @@ const accessPackageAssignmentRequest = {
 };
 
 let res = await client.api('/identityGovernance/entitlementManagement/accessPackageAssignmentRequests')
-	.version('beta')
-	.post(accessPackageAssignmentRequest);
+    .version('beta')
+    .post(accessPackageAssignmentRequest);
 
 ```
