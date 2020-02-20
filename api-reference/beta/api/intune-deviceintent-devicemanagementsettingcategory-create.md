@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9359c8d9336920618c2094711dca1862fae5c422
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 26b33ef95c628674d66d27f3b610670d2cc37507
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39945629"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162318"
 ---
 # <a name="create-devicemanagementsettingcategory"></a>Создание Девицеманажементсеттингкатегори
 
@@ -41,10 +41,10 @@ POST /deviceManagement/categories
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Девицеманажементсеттингкатегори в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицеманажементсеттингкатегори.
@@ -53,10 +53,11 @@ POST /deviceManagement/categories
 |:---|:---|:---|
 |id|String|Идентификатор категории|
 |displayName|Строка|Имя категории|
+|хасрекуиредсеттинг|Boolean|Категория содержит параметры, необходимые для верхнего уровня|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -66,11 +67,12 @@ POST /deviceManagement/categories
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/categories
 Content-type: application/json
-Content-length: 113
+Content-length: 144
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementSettingCategory",
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "hasRequiredSetting": true
 }
 ```
 
@@ -79,12 +81,13 @@ Content-length: 113
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 162
+Content-Length: 193
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementSettingCategory",
   "id": "4f56472c-472c-4f56-2c47-564f2c47564f",
-  "displayName": "Display Name value"
+  "displayName": "Display Name value",
+  "hasRequiredSetting": true
 }
 ```
 

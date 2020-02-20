@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c30d958cb56c102df455a18b511969e37391efb
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 8fe89f7499f58fabe6896a1d9e6afc49d431a214
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39929947"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42159453"
 ---
 # <a name="create-termsandconditionsacceptancestatus"></a>Создание объекта termsAndConditionsAcceptanceStatus
 
@@ -41,10 +41,10 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatu
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта termsAndConditionsAcceptanceStatus в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта termsAndConditionsAcceptanceStatus.
@@ -55,6 +55,7 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatu
 |userDisplayName|String|Отображает имя пользователя, чье принятие представлено объектом.|
 |acceptedVersion|Int32|Номер последней версии условий, принятых пользователем.|
 |acceptedDateTime|DateTimeOffset|Дата и время последнего принятия условий пользователем.|
+|userPrincipalName|String|UserPrincipalName пользователя, который принял термин.|
 
 
 
@@ -68,13 +69,14 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatu
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses
 Content-type: application/json
-Content-length: 211
+Content-length: 264
 
 {
   "@odata.type": "#microsoft.graph.termsAndConditionsAcceptanceStatus",
   "userDisplayName": "User Display Name value",
   "acceptedVersion": 15,
-  "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00"
+  "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00",
+  "userPrincipalName": "User Principal Name value"
 }
 ```
 
@@ -83,14 +85,15 @@ Content-length: 211
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 260
+Content-Length: 313
 
 {
   "@odata.type": "#microsoft.graph.termsAndConditionsAcceptanceStatus",
   "id": "a045ce1a-ce1a-a045-1ace-45a01ace45a0",
   "userDisplayName": "User Display Name value",
   "acceptedVersion": 15,
-  "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00"
+  "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00",
+  "userPrincipalName": "User Principal Name value"
 }
 ```
 

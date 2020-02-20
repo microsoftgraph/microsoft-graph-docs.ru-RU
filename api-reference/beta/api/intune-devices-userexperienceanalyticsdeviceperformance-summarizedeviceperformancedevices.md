@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4ec7d75d22b1d3eae4561c093ebfed006c728885
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: bf3bfd84f2f0d206553d955c74adfe05f7add6a5
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39944486"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162052"
 ---
 # <a name="summarizedeviceperformancedevices-function"></a>Функция Суммаризедевицеперформанцедевицес
 
@@ -41,10 +41,10 @@ GET /deviceManagement/userExperienceAnalyticsDevicePerformance/summarizeDevicePe
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 636
+Content-Length: 675
 
 {
   "value": [
@@ -89,7 +89,8 @@ Content-Length: 636
       "loginScore": 10,
       "coreLoginTimeInMs": 1,
       "groupPolicyLoginTimeInMs": 8,
-      "deviceCount": 11
+      "deviceCount": 11,
+      "responsiveDesktopTimeInMs": 9
     }
   ]
 }

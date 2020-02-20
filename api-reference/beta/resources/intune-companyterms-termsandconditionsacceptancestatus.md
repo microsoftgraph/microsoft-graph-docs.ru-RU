@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9d478222376883c77e05f31fac286eb6418ce569
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 321bb950edb934cb8a9a24f0da68b05ac41fcf8e
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335062"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42163523"
 ---
 # <a name="termsandconditionsacceptancestatus-resource-type"></a>Тип ресурса termsAndConditionsAcceptanceStatus
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Объект termsAndConditionsAcceptanceStatus представляет состояние принятия определенной политики условий для заданного пользователя. Чтобы получить доступ к корпоративному порталу, пользователям нужно принять последнюю версию условий.
 
@@ -36,9 +36,10 @@ ms.locfileid: "36335062"
 |userDisplayName|String|Отображает имя пользователя, чье принятие представлено объектом.|
 |acceptedVersion|Int32|Номер последней версии условий, принятых пользователем.|
 |acceptedDateTime|DateTimeOffset|Дата и время последнего принятия условий пользователем.|
+|userPrincipalName|String|UserPrincipalName пользователя, который принял термин.|
 
 ## <a name="relationships"></a>Отношения
-|Отношение|Тип|Описание|
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |termsAndConditions|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|Ссылка для перехода к назначенным условиям.|
 
@@ -56,7 +57,8 @@ ms.locfileid: "36335062"
   "id": "String (identifier)",
   "userDisplayName": "String",
   "acceptedVersion": 1024,
-  "acceptedDateTime": "String (timestamp)"
+  "acceptedDateTime": "String (timestamp)",
+  "userPrincipalName": "String"
 }
 ```
 

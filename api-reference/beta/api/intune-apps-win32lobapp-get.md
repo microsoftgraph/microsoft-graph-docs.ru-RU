@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5a1b8f098c8894d3c3fb2523131782e4cbc98e69
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: b0f98dda0aaff6ae9facfaf16db1e0d5861e9ba2
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39933988"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42160328"
 ---
 # <a name="get-win32lobapp"></a>Получение win32LobApp
 
@@ -46,10 +46,10 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3192
+Content-Length: 3242
 
 {
   "value": {
@@ -163,7 +163,8 @@ Content-Length: 3192
       "productName": "Product Name value",
       "publisher": "Publisher value"
     },
-    "setupFilePath": "Setup File Path value"
+    "setupFilePath": "Setup File Path value",
+    "installLanguage": "Install Language value"
   }
 }
 ```

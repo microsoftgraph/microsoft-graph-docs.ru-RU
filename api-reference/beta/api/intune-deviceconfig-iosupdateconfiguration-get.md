@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4af4965472453934c7f6f3d6d0325e733389b1c8
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 20398a5d74126a8678545184a76c256907ba1b7c
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41635883"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162381"
 ---
 # <a name="get-iosupdateconfiguration"></a>Get iosUpdateConfiguration
 
@@ -26,7 +26,7 @@ ms.locfileid: "41635883"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -46,7 +46,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1579
+Content-Length: 1889
 
 {
   "value": {
@@ -112,7 +112,17 @@ Content-Length: 1579
       "monday"
     ],
     "utcTimeOffsetInMinutes": 6,
-    "enforcedSoftwareUpdateDelayInDays": 1
+    "enforcedSoftwareUpdateDelayInDays": 1,
+    "updateScheduleType": "alwaysUpdate",
+    "customUpdateTimeWindows": [
+      {
+        "@odata.type": "microsoft.graph.customUpdateTimeWindow",
+        "startDay": "monday",
+        "endDay": "monday",
+        "startTime": "12:03:30.2730000",
+        "endTime": "12:03:02.3740000"
+      }
+    ]
   }
 }
 ```

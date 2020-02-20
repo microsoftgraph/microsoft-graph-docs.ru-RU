@@ -4,12 +4,12 @@ description: Список API Microsoft Graph для конечных точек
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 00cb96f6af16ba78391d2311ab02e220a209b410
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 23e0eaae9becb1d15f26607a9bda67a27d6c2386
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636548"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42163677"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
@@ -124,6 +124,7 @@ ms.locfileid: "41636548"
 - [Состояние устройства встроенной SIM-карты](intune-esim-embeddedsimdevicestate.md)
 - [Значение состояния устройства встроенной SIM-карты](intune-esim-embeddedsimdevicestatevalue.md)
 - [Событие устранения проблем с регистрацией](intune-troubleshooting-enrollmenttroubleshootingevent.md)
+- [Глобальное состояние сценария работоспособности устройства](intune-devices-globaldevicehealthscriptstate.md)
 - [Сведения об оборудовании](intune-devices-hardwareinformation.md)
 - [Состояние работоспособности](intune-devices-healthstate.md)
 - [Почасовое расписание](intune-devices-hourlyschedule.md)
@@ -132,7 +133,6 @@ ms.locfileid: "41636548"
 - [Локализованное сообщение уведомления](intune-notification-localizednotificationmessage.md)
 - [Результат действия "Поиск устройства"](intune-devices-locatedeviceactionresult.md)
 - [Условие управления расположением](intune-fencing-locationmanagementcondition.md)
-- [Уровень ведения журнала](intune-troubleshooting-loglevel.md)
 - [Вошедший пользователь](intune-devices-loggedonuser.md)
 - [Состояние режима пропажи](intune-devices-lostmodestate.md)
 - [Управляемое устройство](intune-devices-manageddevice.md)
@@ -142,6 +142,7 @@ ms.locfileid: "41636548"
 - [Обзор управляемых устройств](intune-devices-manageddeviceoverview.md)
 - [Указанное состояние работоспособности партнера по управляемым устройствам](intune-devices-manageddevicepartnerreportedhealthstate.md)
 - [Удаленное действие с управляемым устройством](intune-devices-manageddeviceremoteaction.md)
+- [Сводное состояние приложения в управляемом устройстве](intune-troubleshooting-manageddevicesummarizedappstate.md)
 - [Условие управления](intune-fencing-managementcondition.md)
 - [Выражение условия управления](intune-fencing-managementconditionexpression.md)
 - [Модель выражения условия управления](intune-fencing-managementconditionexpressionmodel.md)
@@ -182,6 +183,7 @@ ms.locfileid: "41636548"
 - [Сводка состояния базового плана безопасности](intune-deviceintent-securitybaselinestatesummary.md)
 - [Шаблон базового плана безопасности](intune-deviceintent-securitybaselinetemplate.md)
 - [Пользователь общего устройства Apple](intune-devices-sharedappledeviceuser.md)
+- [Tuple_2 выполнения type_ i collection_1 операции](intune-esim-tuple_2ofexecutiontype_icollection_1ofoperation.md)
 - [Выражение условия унарного управления](intune-fencing-unarymanagementconditionexpression.md)
 - [Тип оператора выражения условия унарного управления](intune-fencing-unarymanagementconditionexpressionoperatortype.md)
 - [Параметр действия "Обновление учетной записи устройства с Windows"](intune-devices-updatewindowsdeviceaccountactionparameter.md)
@@ -189,6 +191,8 @@ ms.locfileid: "41636548"
 - [Категория анализа взаимодействия с пользователем](intune-devices-userexperienceanalyticscategory.md)
 - [Производительность устройства аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsdeviceperformance.md)
 - [Журнал запуска устройства Analytics User Experience](intune-devices-userexperienceanalyticsdevicestartuphistory.md)
+- [Процесс запуска устройства службы аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsdevicestartupprocess.md)
+- [Производительность процесса запуска устройства Analytics User Experience](intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md)
 - [Состояние работоспособности службы аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticshealthstate.md)
 - [Аналитика взаимодействия с пользователем](intune-devices-userexperienceanalyticsinsight.md)
 - [Серьезность аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsinsightseverity.md)
@@ -196,6 +200,7 @@ ms.locfileid: "41636548"
 - [Метрика аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsmetric.md)
 - [Обзор анализа пользовательского интерфейса](intune-devices-userexperienceanalyticsoverview.md)
 - [Сводка по регрессии аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsregressionsummary.md)
+- [Журнал оценки запуска аналитики взаимодействия с пользователем](intune-devices-userexperienceanalyticsstartupscorehistory.md)
 - [Анализ взаимодействия с пользователем, собранный по](intune-devices-userexperienceanalyticssummarizedby.md)
 - [Выражение условия переменного управления](intune-fencing-variablemanagementconditionexpression.md)
 - [Состояние развертывания Windows для автопилота](intune-troubleshooting-windowsautopilotdeploymentstate.md)

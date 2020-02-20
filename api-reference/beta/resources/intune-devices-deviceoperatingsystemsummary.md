@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ccb18fa2f8ec1545530dca13a7ed9d59be5a7504
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 59d49f6862f8ab8df1baad1db5458131067514b4
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539101"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162493"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>Тип ресурса deviceOperatingSystemSummary
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Общие сведения об операционной системе устройства.
 
@@ -33,8 +33,9 @@ ms.locfileid: "37539101"
 |андроиддевицеадминкаунт|Int32|Число устройств с Android для администрирования устройств.|
 |андроидфуллиманажедкаунт|Int32|Количество полностью управляемых устройств с Android.|
 |андроидворкпрофилекаунт|Int32|Количество устройств с Android в рабочем профиле.|
+|конфигмгрдевицекаунт|Int32|Количество управляемых устройств ConfigMgr.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -56,7 +57,8 @@ ms.locfileid: "37539101"
   "androidDedicatedCount": 1024,
   "androidDeviceAdminCount": 1024,
   "androidFullyManagedCount": 1024,
-  "androidWorkProfileCount": 1024
+  "androidWorkProfileCount": 1024,
+  "configMgrDeviceCount": 1024
 }
 ```
 

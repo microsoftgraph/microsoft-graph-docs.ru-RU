@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 838b032670295d3fb722e33c5476ba63fb0a4628
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 63c7b679a2886a675e0cb8a2acbf3fa783769671
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39945608"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162304"
 ---
 # <a name="list-devicemanagementsettingcategories"></a>Список Девицеманажементсеттингкатегориес
 
@@ -41,10 +41,10 @@ GET /deviceManagement/categories
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -63,14 +63,15 @@ GET https://graph.microsoft.com/beta/deviceManagement/categories
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 207
+Content-Length: 242
 
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.deviceManagementSettingCategory",
       "id": "4f56472c-472c-4f56-2c47-564f2c47564f",
-      "displayName": "Display Name value"
+      "displayName": "Display Name value",
+      "hasRequiredSetting": true
     }
   ]
 }

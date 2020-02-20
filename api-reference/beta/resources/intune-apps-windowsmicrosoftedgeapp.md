@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 447d25d95ca97673b0d735547fa2823022089190
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: f4881a97b8b071b6f8181dfc5cfc8cac77b7e4cc
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538527"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42163803"
 ---
 # <a name="windowsmicrosoftedgeapp-resource-type"></a>Тип ресурса Виндовсмикрософтеджеапп
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Содержит свойства и наследуемые свойства для приложения Microsoft EDGE в Windows.
 
@@ -27,10 +27,10 @@ ms.locfileid: "37538527"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Виндовсмикрософтеджеаппс](../api/intune-apps-windowsmicrosoftedgeapp-list.md)|Коллекция [виндовсмикрософтеджеапп](../resources/intune-apps-windowsmicrosoftedgeapp.md)|Список свойств и связей объектов [виндовсмикрософтеджеапп](../resources/intune-apps-windowsmicrosoftedgeapp.md) .|
-|[Получение Виндовсмикрософтеджеапп](../api/intune-apps-windowsmicrosoftedgeapp-get.md)|[виндовсмикрософтеджеапп](../resources/intune-apps-windowsmicrosoftedgeapp.md)|Чтение свойств и связей объекта [виндовсмикрософтеджеапп](../resources/intune-apps-windowsmicrosoftedgeapp.md) .|
-|[Создание Виндовсмикрософтеджеапп](../api/intune-apps-windowsmicrosoftedgeapp-create.md)|[виндовсмикрософтеджеапп](../resources/intune-apps-windowsmicrosoftedgeapp.md)|Создание нового объекта [виндовсмикрософтеджеапп](../resources/intune-apps-windowsmicrosoftedgeapp.md) .|
+|[Получение Виндовсмикрософтеджеапп](../api/intune-apps-windowsmicrosoftedgeapp-get.md)|[windowsMicrosoftEdgeApp](../resources/intune-apps-windowsmicrosoftedgeapp.md)|Чтение свойств и связей объекта [виндовсмикрософтеджеапп](../resources/intune-apps-windowsmicrosoftedgeapp.md) .|
+|[Создание Виндовсмикрософтеджеапп](../api/intune-apps-windowsmicrosoftedgeapp-create.md)|[windowsMicrosoftEdgeApp](../resources/intune-apps-windowsmicrosoftedgeapp.md)|Создание нового объекта [виндовсмикрософтеджеапп](../resources/intune-apps-windowsmicrosoftedgeapp.md) .|
 |[Удаление Виндовсмикрософтеджеапп](../api/intune-apps-windowsmicrosoftedgeapp-delete.md)|Нет|Удаляет объект [виндовсмикрософтеджеапп](../resources/intune-apps-windowsmicrosoftedgeapp.md).|
-|[Обновление Виндовсмикрософтеджеапп](../api/intune-apps-windowsmicrosoftedgeapp-update.md)|[виндовсмикрософтеджеапп](../resources/intune-apps-windowsmicrosoftedgeapp.md)|Обновление свойств объекта [виндовсмикрософтеджеапп](../resources/intune-apps-windowsmicrosoftedgeapp.md) .|
+|[Обновление Виндовсмикрософтеджеапп](../api/intune-apps-windowsmicrosoftedgeapp-update.md)|[windowsMicrosoftEdgeApp](../resources/intune-apps-windowsmicrosoftedgeapp.md)|Обновление свойств объекта [виндовсмикрософтеджеапп](../resources/intune-apps-windowsmicrosoftedgeapp.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -51,11 +51,12 @@ ms.locfileid: "37538527"
 |uploadState|Int32|Состояние отправки. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md)|
 |publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|оптоволокон|[микрософтеджечаннел](../resources/intune-apps-microsoftedgechannel.md)|Канал, который необходимо установить на целевые устройства. Возможные значения: `dev`, `beta`, `stable`.|
+|оптоволокон|[microsoftEdgeChannel](../resources/intune-apps-microsoftedgechannel.md)|Канал, который необходимо установить на целевые устройства. Возможные значения: `dev`, `beta`, `stable`.|
+|дисплайлангуажелокале|String|Языковой стандарт, используемый при отображении текста для пользователя в пограничной приложении.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |categories|Коллекция [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
@@ -100,7 +101,8 @@ ms.locfileid: "37538527"
     "String"
   ],
   "dependentAppCount": 1024,
-  "channel": "String"
+  "channel": "String",
+  "displayLanguageLocale": "String"
 }
 ```
 

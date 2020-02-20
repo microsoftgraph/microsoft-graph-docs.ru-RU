@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ae6e8b7c7fe90656d69e66e62d6fe09e366b5f7a
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 1aab6b8bacba8175138beffeb6b5afc9108fd64b
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39945125"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162192"
 ---
 # <a name="update-devicehealthscript"></a>Обновление Девицехеалсскрипт
 
@@ -25,9 +25,9 @@ ms.locfileid: "39945125"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -41,18 +41,18 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [девицехеалсскрипт](../resources/intune-devices-devicehealthscript.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицехеалсскрипт](../resources/intune-devices-devicehealthscript.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор сценария работоспособности устройства|
-|publisher|Строка|Имя издателя сценария работоспособности устройства|
+|id|String|Уникальный идентификатор сценария работоспособности устройства|
+|publisher|String|Имя издателя сценария работоспособности устройства|
 |version|String|Версия сценария работоспособности устройства|
 |displayName|Строка|Имя сценария работоспособности устройства|
 |description|String|Описание сценария работоспособности устройства|
@@ -64,10 +64,12 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 |Свойства enforcesignaturecheck|Boolean|Указывает, нужно ли проверять подпись скрипта|
 |runAs32Bit|Boolean|Указывает, следует ли выполнять скрипты PowerShell как 32-разрядные|
 |roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для сценария работоспособности устройства|
+|исглобалскрипт|Boolean|Определяет, является ли этот сценарий фирменным (Майкрософт). Специальные сценарии доступны только для чтения|
+|хигхеставаилаблеверсион|String|Самая высокая доступная версия для собственного сценария Майкрософт|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицехеалсскрипт](../resources/intune-devices-devicehealthscript.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -77,7 +79,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 Content-type: application/json
-Content-length: 483
+Content-length: 575
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
@@ -92,7 +94,9 @@ Content-length: 483
   "runAs32Bit": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "isGlobalScript": true,
+  "highestAvailableVersion": "Highest Available Version value"
 }
 ```
 
@@ -101,7 +105,7 @@ Content-length: 483
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 655
+Content-Length: 747
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
@@ -119,7 +123,9 @@ Content-Length: 655
   "runAs32Bit": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "isGlobalScript": true,
+  "highestAvailableVersion": "Highest Available Version value"
 }
 ```
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bf156461bdb4c988e4c6750831c7493a00678bdf
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: dfec7c1433dcad1748a039281f214d8da7b315f9
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955478"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162472"
 ---
 # <a name="userexperienceanalyticsdevicestartuphistory-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксдевицестартуфистори
 
@@ -32,8 +32,8 @@ ms.locfileid: "39955478"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор журнала запуска устройства Analytics User Experience.|
-|deviceId|Строка|Идентификатор устройства службы аналитики взаимодействия с пользователем.|
+|id|String|Уникальный идентификатор журнала запуска устройства Analytics User Experience.|
+|deviceId|String|Идентификатор устройства службы аналитики взаимодействия с пользователем.|
 |startTime|DateTimeOffset|Время начала загрузки устройства Analytics User Experience.|
 |коребуттимеинмс|Int32|Время загрузки ядра устройства аналитики для пользователя (в миллисекундах).|
 |граупполицибуттимеинмс|Int32|Время загрузки групповой политики устройства Analytics для пользователя (в миллисекундах).|
@@ -41,12 +41,13 @@ ms.locfileid: "39955478"
 |тоталбуттимеинмс|Int32|Общее время загрузки устройства Analytics User Experience (в миллисекундах).|
 |граупполицилогинтимеинмс|Int32|Время входа в групповую политику устройства Analytics User Experience (в миллисекундах).|
 |корелогинтимеинмс|Int32|Время входа в ядро устройства аналитики взаимодействия с пользователем (в миллисекундах).|
+|респонсиведесктоптимеинмс|Int32|Время, в течение которого выполняется анализ пользовательского интерфейса на рабочем столе в миллисекундах.|
 |тоталлогинтимеинмс|Int32|Общее время входа в систему для устройства аналитики взаимодействия с пользователем (в миллисекундах).|
 |исфирстлогин|Boolean|Первое имя входа устройства Analytics User Experience.|
 |исфеатуреупдате|Boolean|Загрузочная запись устройства аналитики взаимодействия с пользователем — это обновление компонентов.|
 |operatingSystemVersion|String|Версия операционной системы для записи загрузки устройства службы аналитики взаимодействия с пользователем.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -69,6 +70,7 @@ ms.locfileid: "39955478"
   "totalBootTimeInMs": 1024,
   "groupPolicyLoginTimeInMs": 1024,
   "coreLoginTimeInMs": 1024,
+  "responsiveDesktopTimeInMs": 1024,
   "totalLoginTimeInMs": 1024,
   "isFirstLogin": true,
   "isFeatureUpdate": true,

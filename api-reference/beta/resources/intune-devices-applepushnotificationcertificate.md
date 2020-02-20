@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 90e7ede759d9df4197aa193495d8aea26996766e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 63e4b858404242d84597a7f650bae6c0870f5b76
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36319281"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162507"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>Тип ресурса applePushNotificationCertificate
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Сертификат push-уведомлений Apple
 
@@ -37,6 +37,7 @@ ms.locfileid: "36319281"
 |expirationDateTime|DateTimeOffset|Дата и время окончания срока действия для сертификата push-уведомлений Apple.|
 |цертификатеуплоадстатус|String|Состояние отправки сертификата.|
 |цертификатеуплоадфаилуререасон|String|Причина сбоя отправки сертификата.|
+|цертификатесериалнумбер|String|Серийный номер сертификата. Это свойство доступно только для чтения.|
 |certificate|String|Н/Д|
 
 ## <a name="relationships"></a>Отношения
@@ -60,6 +61,7 @@ ms.locfileid: "36319281"
   "expirationDateTime": "String (timestamp)",
   "certificateUploadStatus": "String",
   "certificateUploadFailureReason": "String",
+  "certificateSerialNumber": "String",
   "certificate": "String"
 }
 ```

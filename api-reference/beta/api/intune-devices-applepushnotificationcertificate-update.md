@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8690f583bff395f54f31b56e3480e29e1815e462
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 9730ba7ff6d2b876533fda89232749064354d5f6
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39945293"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162255"
 ---
 # <a name="update-applepushnotificationcertificate"></a>Обновление объекта applePushNotificationCertificate
 
@@ -41,23 +41,24 @@ PATCH /deviceManagement/applePushNotificationCertificate
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор сертификата|
-|appleIdentifier|Строка|Идентификатор Apple Id учетной записи, используемой для создания MDM Push Certificate.|
+|id|String|Уникальный идентификатор сертификата|
+|appleIdentifier|String|Идентификатор Apple Id учетной записи, используемой для создания MDM Push Certificate.|
 |topicIdentifier|String|Идентификатор темы.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сертификата push-уведомлений Apple.|
 |expirationDateTime|DateTimeOffset|Дата и время окончания срока действия для сертификата push-уведомлений Apple.|
-|цертификатеуплоадстатус|Строка|Состояние отправки сертификата.|
-|цертификатеуплоадфаилуререасон|Строка|Причина сбоя отправки сертификата.|
+|цертификатеуплоадстатус|String|Состояние отправки сертификата.|
+|цертификатеуплоадфаилуререасон|String|Причина сбоя отправки сертификата.|
+|цертификатесериалнумбер|String|Серийный номер сертификата. Это свойство доступно только для чтения.|
 |certificate|String|Пока не задокументировано.|
 
 
@@ -72,7 +73,7 @@ PATCH /deviceManagement/applePushNotificationCertificate
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/applePushNotificationCertificate
 Content-type: application/json
-Content-length: 416
+Content-length: 481
 
 {
   "@odata.type": "#microsoft.graph.applePushNotificationCertificate",
@@ -81,6 +82,7 @@ Content-length: 416
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "certificateUploadStatus": "Certificate Upload Status value",
   "certificateUploadFailureReason": "Certificate Upload Failure Reason value",
+  "certificateSerialNumber": "Certificate Serial Number value",
   "certificate": "Certificate value"
 }
 ```
@@ -90,7 +92,7 @@ Content-length: 416
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 529
+Content-Length: 594
 
 {
   "@odata.type": "#microsoft.graph.applePushNotificationCertificate",
@@ -101,6 +103,7 @@ Content-Length: 529
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "certificateUploadStatus": "Certificate Upload Status value",
   "certificateUploadFailureReason": "Certificate Upload Failure Reason value",
+  "certificateSerialNumber": "Certificate Serial Number value",
   "certificate": "Certificate value"
 }
 ```

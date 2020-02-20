@@ -4,12 +4,12 @@ description: Перечисляет API Microsoft Graph для конечных 
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: e1b613dc9140e597dc9eb0c74448f227cf940ba5
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 9a5a6ee1a9111f85d041821e8e5917c0b007698d
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636828"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42160342"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Общие ресурсы в Microsoft Intune
 
@@ -25,7 +25,6 @@ ms.locfileid: "41636828"
 - [Объект назначения всех устройств](intune-shared-alldevicesassignmenttarget.md)
 - [Объект назначения всех лицензированных пользователей](intune-shared-alllicensedusersassignmenttarget.md)
 - [Защита управляемых приложений для Android](intune-shared-androidmanagedappprotection.md)
-- [Тип вращения пароля восстановления BitLocker](intune-shared-bitlockerrecoverypasswordrotationtype.md)
 - [Действие портала компании](intune-shared-companyportalaction.md)
 - [Действие блокирования портала компании](intune-shared-companyportalblockedaction.md)
 - [Состояние соответствия](intune-shared-compliancestatus.md)
@@ -38,13 +37,12 @@ ms.locfileid: "41636828"
 - [Настройка регистрации устройств](intune-shared-deviceenrollmentconfiguration.md)
 - [Тип регистрации устройства](intune-shared-deviceenrollmenttype.md)
 - [Управление устройствами](intune-shared-devicemanagement.md)
-- [Производный поставщик учетных данных для управления устройствами](intune-shared-devicemanagementderivedcredentialissuer.md)
-- [Тип уведомления о получении учетных данных для управления устройствами](intune-shared-devicemanagementderivedcredentialnotificationtype.md)
 - [Параметры производных учетных данных управления устройствами](intune-shared-devicemanagementderivedcredentialsettings.md)
 - [Сценарий управления устройствами](intune-shared-devicemanagementscript.md)
 - [Тип платформы устройства](intune-shared-deviceplatformtype.md)
 - [Тип устройства](intune-shared-devicetype.md)
 - [Включение](intune-shared-enablement.md)
+- [Параметры доступности регистрации](intune-shared-enrollmentavailabilityoptions.md)
 - [Состояние регистрации](intune-shared-enrollmentstate.md)
 - [Объект назначения группы исключения](intune-shared-exclusiongroupassignmenttarget.md)
 - [Объект назначения группы](intune-shared-groupassignmenttarget.md)
@@ -57,11 +55,6 @@ ms.locfileid: "41636828"
 - [Диапазон IP-адресов](intune-shared-iprange.md)
 - [Диапазон IPv4-адресов](intune-shared-ipv4range.md)
 - [Диапазон IPv6-адресов](intune-shared-ipv6range.md)
-- [Ключевая логическая переменная значения](intune-shared-keybooleanvaluepair.md)
-- [Ключевое целое значение](intune-shared-keyintegervaluepair.md)
-- [Ключевое значение "ключевое значение"](intune-shared-keyrealvaluepair.md)
-- [Ключевая строка значений ключа](intune-shared-keystringvaluepair.md)
-- [Комбинация типизированных типизированных значений](intune-shared-keytypedvaluepair.md)
 - [Пара "ключ-значение"](intune-shared-keyvaluepair.md)
 - [Настройки назначения приложения macOS, приобретенного по программе VPP](intune-shared-macosvppappassignmentsettings.md)
 - [Тип владельца управляемого устройства](intune-shared-manageddeviceownertype.md)
@@ -96,5 +89,4 @@ ms.locfileid: "41636828"
 - [Конфигурация присоединения к домену Windows](intune-shared-windowsdomainjoinconfiguration.md)
 - [Настройки назначения универсального приложения Windows AppX](intune-shared-windowsuniversalappxappassignmentsettings.md)
 - [Состояние центра обновления Windows](intune-shared-windowsupdatestate.md)
-- [Статус обновления Windows](intune-shared-windowsupdatestatus.md)
 

@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2d57798baa5e2b8bdf99e911b5baf42d34213f82
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 3cc165fed3f08d961b34bccd436e87d6b82dc8cc
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37529069"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162479"
 ---
 # <a name="userexperienceanalyticsdeviceperformance-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксдевицеперформанце
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Объект производительности устройства аналитики взаимодействия с пользователем содержит сведения о быстродействии при загрузке устройства.
 
@@ -24,10 +24,10 @@ ms.locfileid: "37529069"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Усерекспериенцеаналитиксдевицеперформанцес](../api/intune-devices-userexperienceanalyticsdeviceperformance-list.md)|Коллекция [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|Список свойств и связей объектов [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) .|
-|[Получение Усерекспериенцеаналитиксдевицеперформанце](../api/intune-devices-userexperienceanalyticsdeviceperformance-get.md)|[усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|Чтение свойств и связей объекта [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) .|
-|[Создание Усерекспериенцеаналитиксдевицеперформанце](../api/intune-devices-userexperienceanalyticsdeviceperformance-create.md)|[усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|Создание нового объекта [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) .|
+|[Получение Усерекспериенцеаналитиксдевицеперформанце](../api/intune-devices-userexperienceanalyticsdeviceperformance-get.md)|[userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|Чтение свойств и связей объекта [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) .|
+|[Создание Усерекспериенцеаналитиксдевицеперформанце](../api/intune-devices-userexperienceanalyticsdeviceperformance-create.md)|[userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|Создание нового объекта [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) .|
 |[Удаление Усерекспериенцеаналитиксдевицеперформанце](../api/intune-devices-userexperienceanalyticsdeviceperformance-delete.md)|Нет|Удаляет объект [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md).|
-|[Обновление Усерекспериенцеаналитиксдевицеперформанце](../api/intune-devices-userexperienceanalyticsdeviceperformance-update.md)|[усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|Обновление свойств объекта [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) .|
+|[Обновление Усерекспериенцеаналитиксдевицеперформанце](../api/intune-devices-userexperienceanalyticsdeviceperformance-update.md)|[userExperienceAnalyticsDevicePerformance](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|Обновление свойств объекта [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) .|
 |[Функция Суммаризедевицеперформанцедевицес](../api/intune-devices-userexperienceanalyticsdeviceperformance-summarizedeviceperformancedevices.md)|Коллекция [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|Н/Д|
 
 ## <a name="properties"></a>Свойства
@@ -37,7 +37,7 @@ ms.locfileid: "37529069"
 |deviceName|String|Имя устройства службы аналитики взаимодействия с пользователем.|
 |model|String|Модель устройства аналитики взаимодействия с пользователем.|
 |manufacturer|String|Производитель устройства аналитики взаимодействия с пользователем.|
-|дисктипе|[дисктипе](../resources/intune-devices-disktype.md)|Тип диска устройства анализа взаимодействия с пользователем. Возможные значения: `unkown`, `hdd`, `ssd`.|
+|diskType|[diskType](../resources/intune-devices-disktype.md)|Тип диска устройства анализа взаимодействия с пользователем. Возможные значения: `unkown`, `hdd`, `ssd`.|
 |operatingSystemVersion|String|Версия операционной системы устройства аналитики взаимодействия с пользователем.|
 |бутскоре|Int32|Оценка загрузки устройства Analytics User Experience.|
 |коребуттимеинмс|Int32|Время загрузки ядра устройства аналитики для пользователя (в миллисекундах).|
@@ -47,8 +47,9 @@ ms.locfileid: "37529069"
 |корелогинтимеинмс|Int32|Время входа в ядро устройства аналитики взаимодействия с пользователем (в миллисекундах).|
 |граупполицилогинтимеинмс|Int32|Время входа в групповую политику устройства Analytics User Experience (в миллисекундах).|
 |deviceCount|Int64|Число устройств для аналитики взаимодействия с пользователем.|
+|респонсиведесктоптимеинмс|Int32|Время, в течение которого выполняется анализ пользовательского интерфейса на рабочем столе в миллисекундах.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -75,7 +76,8 @@ ms.locfileid: "37529069"
   "loginScore": 1024,
   "coreLoginTimeInMs": 1024,
   "groupPolicyLoginTimeInMs": 1024,
-  "deviceCount": 1024
+  "deviceCount": 1024,
+  "responsiveDesktopTimeInMs": 1024
 }
 ```
 

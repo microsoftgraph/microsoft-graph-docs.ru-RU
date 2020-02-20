@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 07905b1aaae394c8b366949bc657cb15679ae7fb
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: dec1a8c5848e2646674390ff38ff645e88ec2b6a
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39944472"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162038"
 ---
 # <a name="create-userexperienceanalyticsdevicestartuphistory"></a>Создание Усерекспериенцеаналитиксдевицестартуфистори
 
@@ -41,18 +41,18 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Усерекспериенцеаналитиксдевицестартуфистори в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Усерекспериенцеаналитиксдевицестартуфистори.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор журнала запуска устройства Analytics User Experience.|
-|deviceId|Строка|Идентификатор устройства службы аналитики взаимодействия с пользователем.|
+|id|String|Уникальный идентификатор журнала запуска устройства Analytics User Experience.|
+|deviceId|String|Идентификатор устройства службы аналитики взаимодействия с пользователем.|
 |startTime|DateTimeOffset|Время начала загрузки устройства Analytics User Experience.|
 |коребуттимеинмс|Int32|Время загрузки ядра устройства аналитики для пользователя (в миллисекундах).|
 |граупполицибуттимеинмс|Int32|Время загрузки групповой политики устройства Analytics для пользователя (в миллисекундах).|
@@ -60,6 +60,7 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 |тоталбуттимеинмс|Int32|Общее время загрузки устройства Analytics User Experience (в миллисекундах).|
 |граупполицилогинтимеинмс|Int32|Время входа в групповую политику устройства Analytics User Experience (в миллисекундах).|
 |корелогинтимеинмс|Int32|Время входа в ядро устройства аналитики взаимодействия с пользователем (в миллисекундах).|
+|респонсиведесктоптимеинмс|Int32|Время, в течение которого выполняется анализ пользовательского интерфейса на рабочем столе в миллисекундах.|
 |тоталлогинтимеинмс|Int32|Общее время входа в систему для устройства аналитики взаимодействия с пользователем (в миллисекундах).|
 |исфирстлогин|Boolean|Первое имя входа устройства Analytics User Experience.|
 |исфеатуреупдате|Boolean|Загрузочная запись устройства аналитики взаимодействия с пользователем — это обновление компонентов.|
@@ -67,7 +68,7 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [усерекспериенцеаналитиксдевицестартуфистори](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -77,7 +78,7 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDeviceStartupHistory
 Content-type: application/json
-Content-length: 498
+Content-length: 533
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupHistory",
@@ -89,6 +90,7 @@ Content-length: 498
   "totalBootTimeInMs": 1,
   "groupPolicyLoginTimeInMs": 8,
   "coreLoginTimeInMs": 1,
+  "responsiveDesktopTimeInMs": 9,
   "totalLoginTimeInMs": 2,
   "isFirstLogin": true,
   "isFeatureUpdate": true,
@@ -101,7 +103,7 @@ Content-length: 498
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 547
+Content-Length: 582
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDeviceStartupHistory",
@@ -114,6 +116,7 @@ Content-Length: 547
   "totalBootTimeInMs": 1,
   "groupPolicyLoginTimeInMs": 8,
   "coreLoginTimeInMs": 1,
+  "responsiveDesktopTimeInMs": 9,
   "totalLoginTimeInMs": 2,
   "isFirstLogin": true,
   "isFeatureUpdate": true,

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: conceptualPageType
 ms.prod: ''
-ms.openlocfilehash: 2a93e0e25a426fec3d7ab1e10a51953c286da0ab
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: a2389044671be071cf1d43dcd788519ee49d6363
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216245"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42159026"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Получение уведомлений об изменениях с помощью API Microsoft Graph 
 
@@ -20,16 +20,20 @@ REST API Microsoft Graph использует механизм веб-перех
 
 С помощью API Microsoft Graph приложение может подписаться на изменения для следующих ресурсов:
 
-- [Сообщение][] Outlook
-- [Событие][] Outlook
-- Личный [контакт][] Outlook
-- [user][]
-- [group][]
-- Групповой [чат][] Office 365 
-- Контент внутри иерархии _любой папки_ [driveItem][] на персональном хранилище OneDrive пользователя
-- Контент внутри иерархии _корневой папки_ [driveItem][] на персональном хранилище OneDrive для бизнеса
-- [chatMessage][]
-- [Оповещение][] безопасности
+| **Resource** | **Поддерживаемые пути к ресурсам** | **Данные ресурсов можно включать в уведомления**                  |
+|:----------------|:------------|:-----------------------------------------|
+| [Сообщение][] Outlook | `/users/{id}/messages`<br>`/users/{id}/mailFolders('inbox')/messages` | Нет |
+| [Событие][] Outlook | `/users/{id}/events` | Нет |
+| Личный [контакт][] Outlook | `/users/{id}/contacts` | Нет |
+| [user][] | `/users`(изменения для всех пользователей)<br>`/users/{id}`(изменения определенного пользователя) | Нет |
+| [group][] | `/groups`(изменения всех групп)<br>`/groups/{id}`(изменения в определенной группе) | Нет |
+| Групповой [чат][] Office 365  | `groups/{id}/conversations` | Нет |
+| Контент внутри иерархии _любой папки_ [driveItem][] на персональном хранилище OneDrive пользователя | `/me/drive/root` | Нет |
+| Контент внутри иерархии _корневой папки_ [driveItem][] на персональном хранилище OneDrive для бизнеса | `/drives/{id}/root`<br> `/me/drive/root` | Нет |
+| [Оповещение][] безопасности | `/security/alerts/{id}`(изменения в определенном оповещении) <br> `/security/alerts/?$filter`(изменения в фильтруемых оповещениях)| Нет |
+| [Chatmessage](/graph/api/resources/subscription?view=graph-rest-beta) Teams | `/teams/allMessages`(сообщения во всех каналах в Teams)<br>`/teams/{id}/channels/{id}/messages`(сообщения в определенном канале);<br>`/chats/allMessages`(сообщения во всех беседах)<br>`/chats/{id}/messages`(сообщения в определенном сеансе чата) | Да |
+
+> **Note**: любой путь к ресурсу, `/users/{id}` который начинается с `/me` , может также принять ссылку на пользователя, выполнившего вход в систему.
 
 ## <a name="permissions"></a>Разрешения
 

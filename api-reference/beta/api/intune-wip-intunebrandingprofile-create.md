@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2e2a293d4e111e8f6fd578a250ef095c4bd6509e
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 309583e48610d414866871c69cc2141f1f02c535
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39938504"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42161532"
 ---
 # <a name="create-intunebrandingprofile"></a>Создание Интунебрандингпрофиле
 
@@ -41,10 +41,10 @@ POST /deviceManagement/intuneBrandingProfiles
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Интунебрандингпрофиле в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Интунебрандингпрофиле.
@@ -52,8 +52,8 @@ POST /deviceManagement/intuneBrandingProfiles
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ профиля|
-|имя_профиля|Строка|Имя профиля|
-|профиледескриптион|Строка|Описание профиля|
+|имя_профиля|String|Имя профиля|
+|профиледескриптион|String|Описание профиля|
 |исдефаултпрофиле|Boolean|Логическое значение, указывающее, используется ли профиль по умолчанию или нет|
 |createdDateTime|DateTimeOffset|Время создания Брандингпрофиле|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения Брандингпрофиле|
@@ -64,23 +64,26 @@ POST /deviceManagement/intuneBrandingProfiles
 |семеколорлого|[mimeContent](../resources/intune-shared-mimecontent.md);|Изображение логотипа, отображаемое в приложениях корпоративного портала, у которых есть фоновый цвет темы позади логотипа|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Изображение логотипа, отображаемое в приложениях корпоративного портала, у которых есть светлый фон позади логотипа|
 |ландингпажекустомизедимаже|[mimeContent](../resources/intune-shared-mimecontent.md);|Настраиваемое изображение, отображаемое на начальной странице "приложения корпоративного портала"|
-|contactITName|Строка|Имя пользователя или организации, ответственных за ИТ-поддержку|
-|contactITPhoneNumber|Строка|Номер телефона пользователя или организации, ответственного за ИТ-поддержку|
-|contactITEmailAddress|Строка|Адрес электронной почты пользователя или организации, ответственных за ИТ-поддержку|
-|contactITNotes|Строка|Текстовые комментарии о лице или организации, ответственных за ИТ-поддержку|
-|onlineSupportSiteUrl|Строка|URL-адрес сайта ИТ-службы технической поддержки компании или Организации|
+|contactITName|String|Имя пользователя или организации, ответственных за ИТ-поддержку|
+|contactITPhoneNumber|String|Номер телефона пользователя или организации, ответственного за ИТ-поддержку|
+|contactITEmailAddress|String|Адрес электронной почты пользователя или организации, ответственных за ИТ-поддержку|
+|contactITNotes|String|Текстовые комментарии о лице или организации, ответственных за ИТ-поддержку|
+|onlineSupportSiteUrl|String|URL-адрес сайта ИТ-службы технической поддержки компании или Организации|
 |onlineSupportSiteName|String|Отображаемое имя сайта ИТ-службы технической поддержки компании или Организации|
-|privacyUrl|Строка|URL-адрес политики конфиденциальности компании или Организации|
-|кустомпривацимессаже|Строка|Текстовые комментарии относительно того, что у администратора есть доступ к устройству.|
+|privacyUrl|String|URL-адрес политики конфиденциальности компании или Организации|
+|кустомпривацимессаже|String|Текстовые комментарии относительно того, что у администратора есть доступ к устройству.|
 |исремоведевицедисаблед|Boolean|Логическое значение, указывающее, отключил ли админсистратор действие "Remove Device" на корпоративных устройствах.|
 |исфакториресетдисаблед|Boolean|Логическое значение, указывающее, отключил ли админсистратор действие "Фабричная сброс" на корпоративных устройствах.|
 |компанипорталблоккедактионс|Коллекция [компанипорталблоккедактион](../resources/intune-shared-companyportalblockedaction.md)|Коллекция заблокированных действий на портале компании в соответствии с типом владения платформой и устройствами.|
 |шовазуреадентерприсеаппс|Boolean|Логическое значение, которое указывает, будут ли отображаться корпоративные приложения AzureAD на портале компании.|
 |шовоффицевебаппс|Boolean|Логическое значение, указывающее, будут ли отображаться приложения Office на портале компании.|
+|сенддевицеовнершипчанжепушнотификатион|Boolean|Логическое значение, указывающее, отправляются ли пользователям push-уведомления, если их тип собственности изменяется от персонального к корпоративному.|
+|енроллментаваилабилити|[енроллментаваилабилитйоптионс](../resources/intune-shared-enrollmentavailabilityoptions.md)|Настраиваемый процесс регистрации устройства, отображаемый для конечного пользователя. Возможные значения: `availableWithPrompts`, `availableWithoutPrompts`, `unavailable`.|
+|roleScopeTagIds|Коллекция строк|Список тегов области, назначенных профилю фирменной символики|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [интунебрандингпрофиле](../resources/intune-wip-intunebrandingprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -90,7 +93,7 @@ POST /deviceManagement/intuneBrandingProfiles
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles
 Content-type: application/json
-Content-length: 1620
+Content-length: 1792
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -140,7 +143,12 @@ Content-length: 1620
     }
   ],
   "showAzureADEnterpriseApps": true,
-  "showOfficeWebApps": true
+  "showOfficeWebApps": true,
+  "sendDeviceOwnershipChangePushNotification": true,
+  "enrollmentAvailability": "availableWithoutPrompts",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -149,7 +157,7 @@ Content-length: 1620
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1792
+Content-Length: 1964
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -202,7 +210,12 @@ Content-Length: 1792
     }
   ],
   "showAzureADEnterpriseApps": true,
-  "showOfficeWebApps": true
+  "showOfficeWebApps": true,
+  "sendDeviceOwnershipChangePushNotification": true,
+  "enrollmentAvailability": "availableWithoutPrompts",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c0e0d1f9cae4c31586fdff7a3749da886dde16a
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 7b9e87dfbcd5f136ec221fbd6cb771f1c805352a
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39947486"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162353"
 ---
 # <a name="update-windows10endpointprotectionconfiguration"></a>Обновление объекта windows10EndpointProtectionConfiguration
 
@@ -43,10 +43,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md).
@@ -103,9 +103,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |локалсекуритйоптионсблоккмикрософтаккаунтс|Boolean|Запретить пользователям добавлять новые учетные записи Майкрософт на этот компьютер.|
 |локалсекуритйоптионсблоккремотелогонвисбланкпассворд|Boolean|Включите локальные учетные записи, не защищенные паролем, для входа в систему из расположений, отличных от физического устройства. Включено по умолчанию|
 |локалсекуритйоптионсдисаблеадминистратораккаунт|Boolean|Определяет, включена или отключена учетная запись локального администратора.|
-|локалсекуритйоптионсадминистратораккаунтнаме|Строка|Определите имя другой учетной записи, которая будет связана с идентификатором безопасности (SID) учетной записи "Administrator".|
+|локалсекуритйоптионсадминистратораккаунтнаме|String|Определите имя другой учетной записи, которая будет связана с идентификатором безопасности (SID) учетной записи "Administrator".|
 |локалсекуритйоптионсдисаблегуестаккаунт|Boolean|Определяет, включена или отключена Гостевая учетная запись.|
-|локалсекуритйоптионсгуестаккаунтнаме|Строка|Определите имя другой учетной записи, которая будет связана с идентификатором безопасности (SID) для учетной записи "гость".|
+|локалсекуритйоптионсгуестаккаунтнаме|String|Определите имя другой учетной записи, которая будет связана с идентификатором безопасности (SID) для учетной записи "гость".|
 |локалсекуритйоптионсалловундокквисаусавингтологон|Boolean|Запретите отстыковку портативного компьютера без необходимости входа в систему.|
 |локалсекуритйоптионсблоккусерсинсталлингпринтердриверс|Boolean|Ограничьте установку драйверов принтеров в рамках подключения к общему принтеру только для администраторов.|
 |локалсекуритйоптионсблоккремотеоптикалдривеакцесс|Boolean|Включение этого параметра позволяет интерактивно вошедший в систему пользователь получать доступ к устройству чтения компакт-дисков.|
@@ -115,11 +115,11 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |локалсекуритйоптионсдонотрекуиректрлалтдел|Boolean|Требовать нажатия клавиш CTRL + ALT + DEL, прежде чем пользователь сможет войти в систему.|
 |локалсекуритйоптионшиделастсигнединусер|Boolean|Не отображать имя последнего пользователя, выполнившего вход на это устройство.|
 |локалсекуритйоптионшидеусернамеатсигнин|Boolean|Не отображать имя пользователя, выполняющего вход на это устройство, после ввода учетных данных и отображения рабочего стола на устройстве.|
-|локалсекуритйоптионслогонмессажетитле|Строка|Задайте заголовок сообщения для пользователей, пытающихся войти в систему.|
-|локалсекуритйоптионслогонмессажетекст|Строка|Задайте текст сообщения для пользователей, пытающихся войти в систему.|
+|локалсекуритйоптионслогонмессажетитле|String|Задайте заголовок сообщения для пользователей, пытающихся войти в систему.|
+|локалсекуритйоптионслогонмессажетекст|String|Задайте текст сообщения для пользователей, пытающихся войти в систему.|
 |localSecurityOptionsAllowPKU2UAuthenticationRequests|Boolean|Блокировать запросы проверки подлинности PKU2U на этом устройстве для использования сетевых удостоверений.|
 |локалсекуритйоптионсалловремотекаллстосекуритяккаунтсманажерхелпербул|Boolean|Помощник по пользовательскому интерфейсу Boolean для объекта Локалсекуритйоптионсалловремотекаллстосекуритяккаунтсманажер|
-|локалсекуритйоптионсалловремотекаллстосекуритяккаунтсманажер|Строка|Измените строку языка определения дескрипторов безопасности по умолчанию, чтобы разрешить или запретить пользователям и группам совершать удаленные вызовы в SAM.|
+|локалсекуритйоптионсалловремотекаллстосекуритяккаунтсманажер|String|Измените строку языка определения дескрипторов безопасности по умолчанию, чтобы разрешить или запретить пользователям и группам совершать удаленные вызовы в SAM.|
 |локалсекуритйоптионсминимумсессионсекуритифорнтлмсспбаседклиентс|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|Этот параметр безопасности позволяет клиенту требовать согласование 128-разрядного шифрования и/или сеанса защиты сеанса NTLMv2. Возможные значения: `none`, `requireNtmlV2SessionSecurity`, `require128BitEncryption`, `ntlmV2And128BitEncryption`.|
 |локалсекуритйоптионсминимумсессионсекуритифорнтлмсспбаседсерверс|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|Этот параметр безопасности позволяет серверу требовать согласование 128-разрядного шифрования и/или сеанса защиты сеанса NTLMv2. Возможные значения: `none`, `requireNtmlV2SessionSecurity`, `require128BitEncryption`, `ntlmV2And128BitEncryption`.|
 |lanManagerAuthenticationLevel|[lanManagerAuthenticationLevel](../resources/intune-deviceconfig-lanmanagerauthenticationlevel.md)|Этот параметр безопасности определяет, какой протокол проверки подлинности "запрос/ответ" используется для входа в сеть. Возможные значения: `lmAndNltm`, `lmNtlmAndNtlmV2`, `lmAndNtlmOnly`, `lmAndNtlmV2`, `lmNtlmV2AndNotLm`, `lmNtlmV2AndNotLmOrNtm`.|
@@ -161,10 +161,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |дефендерсекуритицентердисаблесекуребутуи|Boolean|Используется для отключения отображения области безопасной загрузки в разделе Безопасность устройства.|
 |дефендерсекуритицентердисаблетраублешутингуи|Boolean|Используется для отключения отображения устранения неполадок процесса безопасности в разделе Безопасность устройства.|
 |дефендерсекуритицентердисаблевулнераблетпмфирмвареупдатеуи|Boolean|Используется для отключения отображения обновления микропрограммы доверенного платформенного модуля при обнаружении уязвимого программного обеспечения.|
-|дефендерсекуритицентерорганизатиондисплайнаме|Строка|Имя компании, которое отображается для пользователей.|
-|дефендерсекуритицентерхелпемаил|Строка|Адрес электронной почты, который отображается для пользователей.|
-|дефендерсекуритицентерхелпфоне|Строка|Номер телефона или идентификатор Skype, который отображается для пользователей.|
-|дефендерсекуритицентерхелпурл|Строка|URL-адрес портала справки это отображается для пользователей.|
+|дефендерсекуритицентерорганизатиондисплайнаме|String|Имя компании, которое отображается для пользователей.|
+|дефендерсекуритицентерхелпемаил|String|Адрес электронной почты, который отображается для пользователей.|
+|дефендерсекуритицентерхелпфоне|String|Номер телефона или идентификатор Skype, который отображается для пользователей.|
+|дефендерсекуритицентерхелпурл|String|URL-адрес портала справки это отображается для пользователей.|
 |дефендерсекуритицентернотификатионсфромапп|[дефендерсекуритицентернотификатионсфромапптипе](../resources/intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)|Уведомления, отображаемые в отображаемых областях приложения. Возможные значения: `notConfigured`, `blockNoncriticalNotifications`, `blockAllNotifications`.|
 |дефендерсекуритицентеритконтактдисплай|[дефендерсекуритицентеритконтактдисплайтипе](../resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)|Настройка места отображения контактной информации для конечных пользователей. Возможные значения: `notConfigured`, `displayInAppAndInNotifications`, `displayOnlyInApp`, `displayOnlyInNotifications`.|
 |виндовсдефендертамперпротектион|[windowsDefenderTamperProtectionOptions](../resources/intune-deviceconfig-windowsdefendertamperprotectionoptions.md)|Настройка параметров Тамперпротектион для защитника Windows. Возможные значения: `notConfigured`, `enable`, `disable`.|
@@ -241,7 +241,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |bitLockerSystemDrivePolicy|[bitLockerSystemDrivePolicy](../resources/intune-deviceconfig-bitlockersystemdrivepolicy.md)|Политика системного диска BitLocker.|
 |bitLockerFixedDrivePolicy|[bitLockerFixedDrivePolicy](../resources/intune-deviceconfig-bitlockerfixeddrivepolicy.md);|Политика фиксированного диска BitLocker.|
 |bitLockerRemovableDrivePolicy|[bitLockerRemovableDrivePolicy](../resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md)|Политика BitLocker в отношении съемных дисков.|
-|битлоккеррековерипассвордротатион|[bitLockerRecoveryPasswordRotationType](../resources/intune-shared-bitlockerrecoverypasswordrotationtype.md)|Этот параметр инициирует поворот пароля восстановления на основе клиента после восстановления диска ОС (с помощью BOOTMGR или WinRE). Возможные значения: `notConfigured`, `disabled`, `enabledForAzureAd`, `enabledForAzureAdAndHybrid`.|
+|битлоккеррековерипассвордротатион|[bitLockerRecoveryPasswordRotationType](../resources/intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)|Этот параметр инициирует поворот пароля восстановления на основе клиента после восстановления диска ОС (с помощью BOOTMGR или WinRE). Возможные значения: `notConfigured`, `disabled`, `enabledForAzureAd`, `enabledForAzureAdAndHybrid`.|
 |дефендердисаблесканарчивефилес|Boolean|Разрешает или запрещает сканирование архивов.|
 |дефендердисаблебехавиормониторинг|Boolean|Разрешает или запрещает функции мониторинга режима защитника Windows.|
 |дефендердисаблеклаудпротектион|Boolean|Чтобы лучше защитить компьютер, защитник Windows будет отправлять в корпорацию Майкрософт сведения обо всех обнаруженных неполадках. Корпорация Майкрософт проанализирует эти сведения, Узнайте больше об ошибках, которые могут повлиять на ваших клиентов и других пользователей, и предложит улучшенные решения.|
@@ -267,7 +267,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |defenderFilesAndFoldersToExclude|Коллекция строк|Файлы и папки, которые необходимо исключить из проверки и защиты в режиме реального времени.|
 |defenderProcessesToExclude|Коллекция String|Процессы, которые необходимо исключить из проверки и защиты в режиме реального времени.|
 |дефендерпотентиаллюнвантедаппактион|[дефендерпротектионтипе](../resources/intune-deviceconfig-defenderprotectiontype.md)|Добавлено в Windows 10 версии 1607. Задает уровень обнаружения для потенциально нежелательных приложений (Пуас). Защитник Windows предупреждает вас о том, что загружается потенциально нежелательное программное обеспечение, или пытается установить себя на компьютер. Возможные значения: `userDefined`, `enable`, `auditMode`.|
-|дефендерскандиректион|[дефендерреалтимескандиректион](../resources/intune-deviceconfig-defenderrealtimescandirection.md)|Определяет, какие наборы файлов следует отслеживать. Возможные значения: `monitorAllFiles`, `monitorIncomingFilesOnly`, `monitorOutgoingFilesOnly`.|
+|дефендерскандиректион|[defenderRealtimeScanDirection](../resources/intune-deviceconfig-defenderrealtimescandirection.md)|Определяет, какие наборы файлов следует отслеживать. Возможные значения: `monitorAllFiles`, `monitorIncomingFilesOnly`, `monitorOutgoingFilesOnly`.|
 |defenderScanType|[defenderScanType](../resources/intune-deviceconfig-defenderscantype.md)|Позволяет выбрать, следует ли выполнять быструю или полную проверку. Возможные значения: `userDefined`, `disabled`, `quick`, `full`.|
 |defenderScheduledQuickScanTime|TimeOfDay|Выбирает время суток, которое должно выполняться при запуске быстрого сканирования защитника Windows. Например, значение 0 = 12:00AM, значение 60 = 1:00AM, значение 120 = 2:00 и т. д., вплоть до значения 1380 = 11:00PM. Значение по умолчанию — 120|
 |дефендерсчедуледскандай|[виклисчедуле](../resources/intune-deviceconfig-weeklyschedule.md)|Выбирает день запуска проверки защитником Windows. Возможные значения: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `noScheduledScan`.|

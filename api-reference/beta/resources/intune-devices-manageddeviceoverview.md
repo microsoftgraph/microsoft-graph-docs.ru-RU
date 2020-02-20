@@ -5,18 +5,18 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 02f0f159886b652f75ef01d31c731fb1f4424d7e
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 7f51b328adc39b7e9767c9ededd940e4f34b962c
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538786"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162486"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>Тип ресурса managedDeviceOverview
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Сводные данные для управляемых устройств
 
@@ -38,7 +38,7 @@ ms.locfileid: "37538786"
 |managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|Модели и производства меатадата для управляемых устройств в учетной записи|
 |lastModifiedDateTime|DateTimeOffset|Общие сведения о дате и времени последнего изменения устройства|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -67,7 +67,8 @@ ms.locfileid: "37538786"
     "androidDedicatedCount": 1024,
     "androidDeviceAdminCount": 1024,
     "androidFullyManagedCount": 1024,
-    "androidWorkProfileCount": 1024
+    "androidWorkProfileCount": 1024,
+    "configMgrDeviceCount": 1024
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",

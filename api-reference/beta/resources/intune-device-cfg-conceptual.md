@@ -4,12 +4,12 @@ description: Список API Microsoft Graph для конечных точек
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 39b62ea997c62537a419bd8090d330184af7f47c
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 2ee75dfc57e68f8074500996fca4f5306884d841
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636590"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42163684"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Настройка устройств в Microsoft Intune
 
@@ -51,6 +51,7 @@ ms.locfileid: "41636590"
 - [Тип безопасности сети Wi-Fi для владельца устройства с Android](intune-deviceconfig-androiddeviceownerwifisecuritytype.md)
 - [Тип EAP для Android](intune-deviceconfig-androideaptype.md)
 - [Настройка профилей электронной почты EAS для Android](intune-deviceconfig-androideasemailprofileconfiguration.md)
+- [Тип пакета VPN для Android Enterprise Always on](intune-deviceconfig-androidenterprisealwaysonvpnpackagetype.md)
 - [Конфигурация корпоративной сети Wi-Fi для Android](intune-deviceconfig-androidenterprisewificonfiguration.md)
 - [База профилей сертификатов Android for Work](intune-deviceconfig-androidforworkcertificateprofilebase.md)
 - [Политика соответствия требованиям Android for Work](intune-deviceconfig-androidforworkcompliancepolicy.md)
@@ -118,6 +119,7 @@ ms.locfileid: "41636590"
 - [Политика BitLocker в отношении встроенных дисков](intune-deviceconfig-bitlockerfixeddrivepolicy.md)
 - [Тип сведений для восстановления с помощью BitLocker](intune-deviceconfig-bitlockerrecoveryinformationtype.md)
 - [Параметры восстановления BitLocker](intune-deviceconfig-bitlockerrecoveryoptions.md)
+- [Тип вращения пароля восстановления BitLocker](intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)
 - [Политика BitLocker в отношении съемных дисков](intune-deviceconfig-bitlockerremovabledrivepolicy.md)
 - [Политика BitLocker в отношении системных дисков](intune-deviceconfig-bitlockersystemdrivepolicy.md)
 - [Параметр синхронизации браузера](intune-deviceconfig-browsersyncsetting.md)
@@ -131,6 +133,7 @@ ms.locfileid: "41636590"
 - [Использование конфигурации](intune-deviceconfig-configurationusage.md)
 - [Расширение единого входа для учетных данных](intune-deviceconfig-credentialsinglesignonextension.md)
 - [Альтернативное имя настраиваемого субъекта](intune-deviceconfig-customsubjectalternativename.md)
+- [Настраиваемое окно времени обновления](intune-deviceconfig-customupdatetimewindow.md)
 - [День недели](intune-deviceconfig-dayofweek.md)
 - [Политика соответствия устройств требованиям по умолчанию](intune-deviceconfig-defaultdevicecompliancepolicy.md)
 - [Тип направления атак для Защитника](intune-deviceconfig-defenderattacksurfacetype.md)
@@ -254,6 +257,8 @@ ms.locfileid: "41636590"
 - [Многозначное тестовое значение представления групповой политики](intune-grouppolicy-grouppolicypresentationvaluemultitext.md)
 - [Текст значения представления групповой политики](intune-grouppolicy-grouppolicypresentationvaluetext.md)
 - [Тип групповой политики](intune-grouppolicy-grouppolicytype.md)
+- [Определение загруженной групповой политики](intune-grouppolicy-grouppolicyuploadeddefinition.md)
+- [Групповая политика, отправленная в презентацию](intune-grouppolicy-grouppolicyuploadedpresentation.md)
 - [Хэш-алгоритмы](intune-deviceconfig-hashalgorithms.md)
 - [Параметр доступа к рукописному вводу](intune-deviceconfig-inkaccesssetting.md)
 - [Первоначальная цель](intune-deviceconfig-intendedpurpose.md)
@@ -289,6 +294,7 @@ ms.locfileid: "41636590"
 - [Профиль сертификатов SCEP для iOS](intune-deviceconfig-iosscepcertificateprofile.md)
 - [расширение единого входа для iOS](intune-deviceconfig-iossinglesignonextension.md)
 - [Параметры единого входа iOS](intune-deviceconfig-iossinglesignonsettings.md)
+- [Тип расписания обновления программного обеспечения iOS](intune-deviceconfig-iossoftwareupdatescheduletype.md)
 - [Доверенный корневой сертификат для iOS](intune-deviceconfig-iostrustedrootcertificate.md)
 - [Конфигурация обновления iOS](intune-deviceconfig-iosupdateconfiguration.md)
 - [Тип ресурса iosUpdateDeviceStatus](intune-deviceconfig-iosupdatedevicestatus.md)
@@ -302,8 +308,13 @@ ms.locfileid: "41636590"
 - [Конфигурация Wi-Fi для iOS](intune-deviceconfig-ioswificonfiguration.md)
 - [Конфигурация VPN EV2 Иосик](intune-deviceconfig-iosikev2vpnconfiguration.md)
 - [Расширение единого входа Kerberos](intune-deviceconfig-kerberossinglesignonextension.md)
+- [Ключевая логическая переменная значения](intune-deviceconfig-keybooleanvaluepair.md)
+- [Ключевое целое значение](intune-deviceconfig-keyintegervaluepair.md)
+- [Ключевое значение "ключевое значение"](intune-deviceconfig-keyrealvaluepair.md)
 - [Размер ключа](intune-deviceconfig-keysize.md)
 - [Параметр поставщика хранилища ключей](intune-deviceconfig-keystorageprovideroption.md)
+- [Ключевая строка значений ключа](intune-deviceconfig-keystringvaluepair.md)
+- [Комбинация типизированных типизированных значений](intune-deviceconfig-keytypedvaluepair.md)
 - [Использование ключей](intune-deviceconfig-keyusages.md)
 - [Значение ключа](intune-deviceconfig-keyvalue.md)
 - [Уровень проверки подлинности LAN Manager](intune-deviceconfig-lanmanagerauthenticationlevel.md)
@@ -343,7 +354,6 @@ ms.locfileid: "41636590"
 - [Состояние сертификата управляемого устройства](intune-deviceconfig-manageddevicecertificatestate.md)
 - [Состояние шифрования управляемого устройства](intune-deviceconfig-manageddeviceencryptionstate.md)
 - [Состояние параметров конфигурации мобильных приложений для управляемых устройств](intune-deviceconfig-manageddevicemobileappconfigurationsettingstate.md)
-- [Состояние конфигурации мобильного приложения для управляемого устройства](intune-deviceconfig-managedDeviceMobileAppConfigurationState.md)
 - [Сообщение из отчета для управляемого устройства](intune-deviceconfig-manageddevicereportedapp.md)
 - [Рейтинг мультимедийного содержимого для Австралии](intune-deviceconfig-mediacontentratingaustralia.md)
 - [Оценка мультимедийного содержимого для Канады](intune-deviceconfig-mediacontentratingcanada.md)
@@ -370,7 +380,10 @@ ms.locfileid: "41636590"
 - [Параметр OMA, целое число](intune-deviceconfig-omasettinginteger.md)
 - [Параметр OMA, строка](intune-deviceconfig-omasettingstring.md)
 - [Параметр OMA, строка, XML](intune-deviceconfig-omasettingstringxml.md)
+- [Локальная зашифрованная полезная нагрузка](intune-raimportcerts-onpremencryptedpayload.md)
 - [Диапазон версий операционной системы](intune-deviceconfig-operatingsystemversionrange.md)
+- [Запрос на получение шифрования PFX](intune-raimportcerts-pfxrecryptionrequest.md)
+- [Сертификат пользователя PFX](intune-raimportcerts-pfxusercertificate.md)
 - [Тип действия по питанию](intune-deviceconfig-poweractiontype.md)
 - [Предварительные версии функций](intune-deviceconfig-prereleasefeatures.md)
 - [Тип рейтинга приложений](intune-deviceconfig-ratingappstype.md)
@@ -542,6 +555,7 @@ ms.locfileid: "41636590"
 - [Тип расписания установки с использованием Центра обновления Windows](intune-deviceconfig-windowsupdateinstallscheduletype.md)
 - [Параметр отображения уведомления Центра обновления Windows](intune-deviceconfig-windowsupdatenotificationdisplayoption.md)
 - [Запланированная установка с использованием Центра обновления Windows](intune-deviceconfig-windowsupdatescheduledinstall.md)
+- [Статус обновления Windows](intune-deviceconfig-windowsupdatestatus.md)
 - [Тип обновления Windows](intune-deviceconfig-windowsupdatetype.md)
 - [Настройки контроля учетных записей Windows](intune-deviceconfig-windowsuseraccountcontrolsettings.md)
 - [Конфигурация VPN для Windows](intune-deviceconfig-windowsvpnconfiguration.md)

@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c6a6634b477437a1336fbfc45dfbb04751b6343
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: a580db6993abfedd5bc42ecf77579e2d365afcb3
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39933666"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42160307"
 ---
 # <a name="get-windowsmicrosoftedgeapp"></a>Получение Виндовсмикрософтеджеапп
 
@@ -46,10 +46,10 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 987
+Content-Length: 1050
 
 {
   "value": {
@@ -97,7 +97,8 @@ Content-Length: 987
       "Role Scope Tag Ids value"
     ],
     "dependentAppCount": 1,
-    "channel": "beta"
+    "channel": "beta",
+    "displayLanguageLocale": "Display Language Locale value"
   }
 }
 ```

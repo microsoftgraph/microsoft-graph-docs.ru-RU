@@ -5,30 +5,30 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9f9a882cd1fdc788782a7c68df1ad38c6cc8d37e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6b04dcd01d21ace78368411524067f83db3bc93a
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36308136"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42163551"
 ---
 # <a name="userpfxpaddingscheme-enum-type"></a>тип перечисления Усерпфкспаддингсчеме
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Поддерживаемые значения для схемы заполнения, используемой поставщиком шифрования.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Пока не задокументировано.|
-|pkcs1|1,1|Пока не задокументировано.|
-|oaepSha1|2|Пока не задокументировано.|
-|oaepSha256|4|Пока не задокументировано.|
-|oaepSha384|SP4|Пока не задокументировано.|
-|oaepSha512|17:00|Пока не задокументировано.|
+|нет|нуль|Неизвестная схема заполнения.|
+|pkcs1|1,1|Pkcs1 больше не поддерживается|
+|oaepSha1|2|OaepSha1 больше не поддерживается|
+|oaepSha256|4|Используйте заполнение OAEP SHA – 256.|
+|oaepSha384|SP4|Используйте заполнение OAEP SHA – 384.|
+|oaepSha512|17:00|Используйте заполнение OAEP SHA – 512.|
 
 
 

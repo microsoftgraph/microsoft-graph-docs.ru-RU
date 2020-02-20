@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: debb09cb12191f025a70a2dde5d4b476b6cd4592
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 2622a418d39e01f1d5e965de28fc5a8ef8922391
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39944605"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162080"
 ---
 # <a name="update-manageddeviceoverview"></a>Обновление объекта managedDeviceOverview
 
@@ -41,17 +41,17 @@ PATCH /deviceManagement/managedDeviceOverview
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор сводки.|
+|id|String|Уникальный идентификатор сводки.|
 |enrolledDeviceCount|Int32|Общее количество зарегистрированных устройств. Не включает устройства ПК, которыми управляет агент Intune для ПК.|
 |mdmEnrolledCount|Int32|Количество устройств, зарегистрированных в MDM.|
 |dualEnrolledDeviceCount|Int32|Количество устройств, зарегистрированных как в MDM, так и в EAS.|
@@ -72,7 +72,7 @@ PATCH /deviceManagement/managedDeviceOverview
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDeviceOverview
 Content-type: application/json
-Content-length: 1082
+Content-length: 1114
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -90,7 +90,8 @@ Content-length: 1082
     "androidDedicatedCount": 5,
     "androidDeviceAdminCount": 7,
     "androidFullyManagedCount": 8,
-    "androidWorkProfileCount": 7
+    "androidWorkProfileCount": 7,
+    "configMgrDeviceCount": 4
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -117,7 +118,7 @@ Content-length: 1082
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1195
+Content-Length: 1227
 
 {
   "@odata.type": "#microsoft.graph.managedDeviceOverview",
@@ -136,7 +137,8 @@ Content-Length: 1195
     "androidDedicatedCount": 5,
     "androidDeviceAdminCount": 7,
     "androidFullyManagedCount": 8,
-    "androidWorkProfileCount": 7
+    "androidWorkProfileCount": 7,
+    "configMgrDeviceCount": 4
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",

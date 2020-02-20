@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ffe81199b5f267d0991791b83cb934534cdadb4e
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: d413321fedbdb3d7380156f99386235c3d74e27c
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39954358"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42160286"
 ---
 # <a name="list-termsandconditionsacceptancestatuses"></a>Перечисление объектов termsAndConditionsAcceptanceStatus
 
@@ -41,10 +41,10 @@ GET /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatus
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/{termsA
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 313
+Content-Length: 370
 
 {
   "value": [
@@ -72,7 +72,8 @@ Content-Length: 313
       "id": "a045ce1a-ce1a-a045-1ace-45a01ace45a0",
       "userDisplayName": "User Display Name value",
       "acceptedVersion": 15,
-      "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00"
+      "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00",
+      "userPrincipalName": "User Principal Name value"
     }
   ]
 }

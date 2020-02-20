@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f125ce0beeb76bd8d3a6ef098b8a70e280c6b1a9
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 57a4954c08a98931420cd9aa70d906de959f847b
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39944479"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162045"
 ---
 # <a name="update-userexperienceanalyticsdeviceperformance"></a>Обновление Усерекспериенцеаналитиксдевицеперформанце
 
@@ -41,20 +41,20 @@ PATCH /deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperience
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор устройства для загрузки устройства аналитики взаимодействия с пользователем.|
-|deviceName|Строка|Имя устройства службы аналитики взаимодействия с пользователем.|
-|model|Строка|Модель устройства аналитики взаимодействия с пользователем.|
-|manufacturer|Строка|Производитель устройства аналитики взаимодействия с пользователем.|
+|id|String|Уникальный идентификатор устройства для загрузки устройства аналитики взаимодействия с пользователем.|
+|deviceName|String|Имя устройства службы аналитики взаимодействия с пользователем.|
+|model|String|Модель устройства аналитики взаимодействия с пользователем.|
+|manufacturer|String|Производитель устройства аналитики взаимодействия с пользователем.|
 |diskType|[diskType](../resources/intune-devices-disktype.md)|Тип диска устройства анализа взаимодействия с пользователем. Возможные значения: `unkown`, `hdd`, `ssd`.|
 |operatingSystemVersion|String|Версия операционной системы устройства аналитики взаимодействия с пользователем.|
 |бутскоре|Int32|Оценка загрузки устройства Analytics User Experience.|
@@ -65,10 +65,11 @@ PATCH /deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperience
 |корелогинтимеинмс|Int32|Время входа в ядро устройства аналитики взаимодействия с пользователем (в миллисекундах).|
 |граупполицилогинтимеинмс|Int32|Время входа в групповую политику устройства Analytics User Experience (в миллисекундах).|
 |deviceCount|Int64|Число устройств для аналитики взаимодействия с пользователем.|
+|респонсиведесктоптимеинмс|Int32|Время, в течение которого выполняется анализ пользовательского интерфейса на рабочем столе в миллисекундах.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -78,7 +79,7 @@ PATCH /deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperience
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperienceAnalyticsDevicePerformanceId}
 Content-type: application/json
-Content-length: 494
+Content-length: 529
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
@@ -94,7 +95,8 @@ Content-length: 494
   "loginScore": 10,
   "coreLoginTimeInMs": 1,
   "groupPolicyLoginTimeInMs": 8,
-  "deviceCount": 11
+  "deviceCount": 11,
+  "responsiveDesktopTimeInMs": 9
 }
 ```
 
@@ -103,7 +105,7 @@ Content-length: 494
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 543
+Content-Length: 578
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsDevicePerformance",
@@ -120,7 +122,8 @@ Content-Length: 543
   "loginScore": 10,
   "coreLoginTimeInMs": 1,
   "groupPolicyLoginTimeInMs": 8,
-  "deviceCount": 11
+  "deviceCount": 11,
+  "responsiveDesktopTimeInMs": 9
 }
 ```
 

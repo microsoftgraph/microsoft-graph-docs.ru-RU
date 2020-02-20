@@ -1,0 +1,48 @@
+---
+title: Тип ресурса tuple_2OfExecutionType_ICollection_1OfOperation
+description: Пока не задокументировано.
+author: rolyon
+localization_priority: Normal
+ms.prod: Intune
+doc_type: resourcePageType
+ms.openlocfilehash: 69231060a9107282eca98293dbb0220a5645b42c
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162402"
+---
+# <a name="tuple_2ofexecutiontype_icollection_1ofoperation-resource-type"></a>Тип ресурса tuple_2OfExecutionType_ICollection_1OfOperation
+
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+
+Пока не задокументировано
+
+## <a name="properties"></a>Свойства
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|Item2|* * Коллекция неизвестного типа `microsoft.management.services.genericWorkloadActivity.models.operation` * *|Н/Д|
+
+## <a name="relationships"></a>Отношения
+Нет
+
+## <a name="json-representation"></a>Представление JSON
+Ниже представлено описание ресурса в формате JSON.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.tuple_2OfExecutionType_ICollection_1OfOperation"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.tuple_2OfExecutionType_ICollection_1OfOperation",
+  "item2": [
+    "<Unknown None>"
+  ]
+}
+```
+
+
+

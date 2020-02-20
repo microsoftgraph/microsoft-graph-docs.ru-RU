@@ -5,12 +5,12 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2b0658f3715de5611067e29958205a34d554b2a7
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: d228cd67506c4c4ae968c255ee26d259542d4091
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39938490"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42161525"
 ---
 # <a name="get-intunebrandingprofile"></a>Получение Интунебрандингпрофиле
 
@@ -44,10 +44,10 @@ GET /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles/{in
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1913
+Content-Length: 2095
 
 {
   "value": {
@@ -120,7 +120,12 @@ Content-Length: 1913
       }
     ],
     "showAzureADEnterpriseApps": true,
-    "showOfficeWebApps": true
+    "showOfficeWebApps": true,
+    "sendDeviceOwnershipChangePushNotification": true,
+    "enrollmentAvailability": "availableWithoutPrompts",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ]
   }
 }
 ```

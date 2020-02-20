@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: db4722b3bb4e648d276c2e4e9b642d68a1caa5a9
-ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
+ms.openlocfilehash: 4518e8055137e6b8d23fd4e3cbdb178f77457a9a
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "37723774"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42160034"
 ---
 # <a name="list-activitystatistics"></a>Список Активитистатистикс
 
@@ -33,8 +33,8 @@ ms.locfileid: "37723774"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/analytics/activitystatistics 
-GET /users/{id|userPrincipalName}/analytics/activitystatistics/{id}
+GET /me/analytics/activitystatistics
+GET /users/{id|userPrincipalName}/analytics/activitystatistics
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -61,7 +61,7 @@ GET /users/{id|userPrincipalName}/analytics/activitystatistics/{id}
 
 Ниже приведен пример запроса статистики всех связанных действий для вошедшего пользователя.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_activitystatistics"
@@ -71,15 +71,15 @@ GET /users/{id|userPrincipalName}/analytics/activitystatistics/{id}
 GET https://graph.microsoft.com/beta/me/analytics/activitystatistics
 
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-activitystatistics-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-activitystatistics-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-activitystatistics-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

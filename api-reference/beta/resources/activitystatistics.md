@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 5cee94c1ff36bf30d977b7eb97d77f11d4d2ff5e
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: 18d675b38dd3155b5a06c67fc3164fd315d7c0b2
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450809"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162500"
 ---
 # <a name="activitystatistics-resource-type"></a>Тип ресурса Активитистатистикс
 
@@ -21,26 +21,25 @@ ms.locfileid: "36450809"
 Следующие типы статистики являются производными от **активитистатистикс**:
 
 * [Call](callactivitystatistics.md)
-* [Чат](chatactivitystatistics.md)
-* [Email](emailactivitystatistics.md)
+* [Отображаются](chatactivitystatistics.md)
+* [Электронная почта](emailactivitystatistics.md)
 * [Фокус](focusactivitystatistics.md)
 * [Назначить](meetingactivitystatistics.md)
 
-### <a name="activity-id-property"></a>Свойство идентификатора действия
+<!--  removing per Mathew 2/6/2020   ### Activity id property
 
-В HTTP-запросе для получения определенного типа статистики действий в диапазоне дат можно выразить эту информацию как идентификатор коллекции пользователей Активитистатистикс в следующем формате, где `{startdate}` и `{enddate}` в календаре ISO 8601. формат даты и `{activity}` может иметь следующий вид: "Call", "Chat", "Email", "Focus" или "Meeting".
+In an HTTP request, to get a specific type of activity statistics within a date range, you can express this information as an ID to the user's collection of activityStatistics in the following format, where `{startdate}` and `{enddate}` are expressed in ISO 8601 calendar date format and `{activity}` can be "call", "chat", "email", "focus", or "meeting":
 
 ```
 {activity}_{startdate}_{enddate}
 ```
 
-Например, идентификатор "email_2019 – 08 -10 _2019 – 08 – 12" представляет Емаилактивитистатистикс для указанного пользователя между 10 августа 2019 и 12 августа 2019.
-
+For example, the ID "email_2019-08-10_2019-08-12" represents the emailActivityStatistics for the specified user between August 10, 2019 and August 12, 2019.
+-->
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Получение Активитистатистикс](../api/activitystatistics-get.md) | [активитистатистикс](activitystatistics.md) | Получение свойств для статистики указанного действия пользователя за указанный диапазон времени. |
 | [Список Активитистатистикс](../api/activitystatistics-list.md) | [активитистатистикс](activitystatistics.md) | Получение свойств для коллекции статистики действий пользователя за последнюю полную неделю.|
 
 ## <a name="properties"></a>Свойства
@@ -48,7 +47,7 @@ ms.locfileid: "36450809"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |activity|аналитиксактивититипе| Тип действия, для которого возвращается статистика. Возможные значения: `call`, `chat`, `email`, `focus`и. `meeting`|
-|duration|Duration (Длительность)|Общее количество часов, потраченных на действие. Значение представляется в формате ISO 8601 для длительности.|
+|duration|Длительность|Общее количество часов, потраченных на действие. Значение представляется в формате ISO 8601 для длительности.|
 |endDate|Date|Дата завершения действия, выраженная в формате ISO 8601 для календарных дат. Например, значение свойства может иметь значение "2019-07-03", которое соответствует формату ГГГГ – MM – DD.|
 |id|String| Идентификатор для операции, который представляется `{activity}_{startdate}_{enddate}`только для чтения.|
 |startDate|Дата|Дата начала действия, выраженная в формате ISO 8601 для календарных дат. Например, значение свойства может иметь значение "2019-07-04", которое соответствует формату ГГГГ – MM – DD.|

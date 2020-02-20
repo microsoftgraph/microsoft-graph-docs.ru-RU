@@ -5,29 +5,29 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 845a3b43acecf4e6ca76f4d00682ec982416b8df
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 2f4113bd82c6afa6570ccdb2be77dd65584f01a5
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36369313"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42163558"
 ---
 # <a name="userpfxintendedpurpose-enum-type"></a>тип перечисления Усерпфксинтендедпурпосе
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Поддерживаемые значения для назначения сертификата пользователя PFX.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|неназначенных|нуль|Пока не задокументировано.|
-|смиминкриптион|1,1|Пока не задокументировано.|
-|смимесигнинг|2|Пока не задокументировано.|
-|виртуального|SP4|Пока не задокументировано.|
-|подключений|8 |Пока не задокументировано.|
+|неназначенных|нуль|Не назначены роли и использования.|
+|смиминкриптион|1,1|Является допустимым для шифрования S/MIME.|
+|смимесигнинг|2|Является допустимым для подписывания S/MIME.|
+|виртуального|SP4|Допустимо для использования в VPN.|
+|подключений|8 |Допустимо для использования в Wi-Fi.|
 
 
 

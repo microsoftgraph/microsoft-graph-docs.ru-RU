@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d64e30320bf16209850758844b944864ee13d273
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: d498bf40347a43bf15f339952f05e37c711f7921
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955338"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42159474"
 ---
 # <a name="devicemanagement-resource-type"></a>Тип ресурса deviceManagement
 
@@ -62,7 +62,7 @@ ms.locfileid: "39955338"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор, связанный с устройством.|
+|id|String|Уникальный идентификатор, связанный с устройством.|
 |**Конфигурация устройства**|
 |интунеаккаунтид|GUID|Идентификатор учетной записи Intune для данного клиента|
 |легаципкмананжементенаблед|Boolean|Свойство, позволяющее управлять устаревшим управлением устаревших ПК для этой учетной записи. Это свойство доступно только для чтения.|
@@ -83,7 +83,7 @@ ms.locfileid: "39955338"
 |**одж**|
 |домаинжоинконнекторс|Коллекция [девицеманажементдомаинжоинконнектор](../resources/intune-odj-devicemanagementdomainjoinconnector.md)|Список объектов Connector.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Обзор&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
 |:---|:---|:---|
 |**Android для работы**|
@@ -132,12 +132,15 @@ ms.locfileid: "39955338"
 |ремотеактионаудитс|Коллекция [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)|Список аудитов удаленных действий устройств с клиентом.|
 |windowsMalwareInformation|Коллекция [windowsMalwareInformation](../resources/intune-devices-windowsmalwareinformation.md)|Список уязвимых вредоносных программ в клиенте.|
 |мобилеапптраублешутинжевентс|Коллекция [мобилеапптраублешутинжевент](../resources/intune-shared-mobileapptroubleshootingevent.md)|Свойство Collection объекта Мобилеапптраублешутинжевент.|
-|userExperienceAnalyticsOverview|[userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md)|Обзор анализа пользовательского интерфейса|
-|усерекспериенцеаналитиксбаселинес|Коллекция [усерекспериенцеаналитиксбаселине](../resources/intune-devices-userexperienceanalyticsbaseline.md)|Шаблоны аналитики взаимодействия с пользователем|
-|усерекспериенцеаналитикскатегориес|Коллекция [усерекспериенцеаналитикскатегори](../resources/intune-devices-userexperienceanalyticscategory.md)|Категории аналитики взаимодействия с пользователем|
-|userExperienceAnalyticsDevicePerformance|Коллекция [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|Производительность устройства аналитики взаимодействия с пользователем|
-|userExperienceAnalyticsRegressionSummary|[userExperienceAnalyticsRegressionSummary](../resources/intune-devices-userexperienceanalyticsregressionsummary.md)|Сводка по регрессии аналитики взаимодействия с пользователем|
-|userExperienceAnalyticsDeviceStartupHistory|Коллекция [усерекспериенцеаналитиксдевицестартуфистори](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)|Журнал запуска устройства Analytics User Experience|
+|userExperienceAnalyticsOverview|userExperienceAnalyticsOverview|Обзор анализа пользовательского интерфейса|
+|усерекспериенцеаналитиксбаселинес|Коллекция Усерекспериенцеаналитиксбаселине|Шаблоны аналитики взаимодействия с пользователем|
+|усерекспериенцеаналитикскатегориес|Коллекция Усерекспериенцеаналитикскатегори|Категории аналитики взаимодействия с пользователем|
+|userExperienceAnalyticsDevicePerformance|Коллекция Усерекспериенцеаналитиксдевицеперформанце|Производительность устройства аналитики взаимодействия с пользователем|
+|userExperienceAnalyticsRegressionSummary|userExperienceAnalyticsRegressionSummary|Сводка по регрессии аналитики взаимодействия с пользователем|
+|userExperienceAnalyticsDeviceStartupHistory|Коллекция Усерекспериенцеаналитиксдевицестартуфистори|Журнал запуска устройства Analytics User Experience|
+|усерекспериенцеаналитиксдевицестартуппроцессес|Коллекция Усерекспериенцеаналитиксдевицестартуппроцесс|Процессы запуска устройства Analytics User Experience|
+|усерекспериенцеаналитиксдевицестартуппроцессперформанце|Коллекция Усерекспериенцеаналитиксдевицестартуппроцессперформанце|Производительность процесса запуска устройства Analytics User Experience|
+|усерекспериенцеаналитиксстартупскорехистори|Коллекция Усерекспериенцеаналитиксстартупскорехистори|Журнал оценки запуска устройства Analytics User Experience|
 |**Регистрации**|
 |depOnboardingSettings|Коллекция [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Эти коллекции нескольких маркеров DEP для каждого клиента.|
 |импортеддевицеидентитиес|Коллекция [импортеддевицеидентити](../resources/intune-enrollment-importeddeviceidentity.md)|Импортированные удостоверения устройств.|
