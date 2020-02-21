@@ -5,30 +5,30 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: bd60df67994ead3a16ba234107e1b6ce3b2408ee
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: d2cda5dd77124d96139cde568d6d88ac4d167dde
+ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36724325"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219729"
 ---
-# <a name="tiindicator-submittiindicators"></a><span data-ttu-id="ed64a-103">Тииндикатор: Субмиттииндикаторс</span><span class="sxs-lookup"><span data-stu-id="ed64a-103">tiIndicator: submitTiIndicators</span></span>
+# <a name="tiindicator-submittiindicators"></a><span data-ttu-id="9cb7d-103">Тииндикатор: Субмиттииндикаторс</span><span class="sxs-lookup"><span data-stu-id="9cb7d-103">tiIndicator: submitTiIndicators</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ed64a-104">Отправьте несколько индикаторов системы анализа угроз (TI) в одном запросе, а не нескольких запросах.</span><span class="sxs-lookup"><span data-stu-id="ed64a-104">Upload multiple threat intelligence (TI) indicators in one request instead of multiple requests.</span></span>
+<span data-ttu-id="9cb7d-104">Отправьте несколько индикаторов системы анализа угроз (TI) в одном запросе, а не нескольких запросах.</span><span class="sxs-lookup"><span data-stu-id="9cb7d-104">Upload multiple threat intelligence (TI) indicators in one request instead of multiple requests.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ed64a-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ed64a-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="9cb7d-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="9cb7d-105">Permissions</span></span>
 
-<span data-ttu-id="ed64a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ed64a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9cb7d-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9cb7d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="ed64a-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ed64a-108">Permission type</span></span> | <span data-ttu-id="ed64a-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ed64a-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="9cb7d-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9cb7d-108">Permission type</span></span> | <span data-ttu-id="9cb7d-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="9cb7d-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="ed64a-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ed64a-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="ed64a-111">ThreatIndicators.ReadWrite.OwnedBy</span><span class="sxs-lookup"><span data-stu-id="ed64a-111">ThreatIndicators.ReadWrite.OwnedBy</span></span> |
-| <span data-ttu-id="ed64a-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ed64a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ed64a-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ed64a-113">Not supported.</span></span> |
-| <span data-ttu-id="ed64a-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ed64a-114">Application</span></span>                            | <span data-ttu-id="ed64a-115">ThreatIndicators.ReadWrite.OwnedBy</span><span class="sxs-lookup"><span data-stu-id="ed64a-115">ThreatIndicators.ReadWrite.OwnedBy</span></span> |
+| <span data-ttu-id="9cb7d-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9cb7d-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="9cb7d-111">ThreatIndicators.ReadWrite.OwnedBy</span><span class="sxs-lookup"><span data-stu-id="9cb7d-111">ThreatIndicators.ReadWrite.OwnedBy</span></span> |
+| <span data-ttu-id="9cb7d-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9cb7d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9cb7d-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9cb7d-113">Not supported.</span></span> |
+| <span data-ttu-id="9cb7d-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9cb7d-114">Application</span></span>                            | <span data-ttu-id="9cb7d-115">ThreatIndicators.ReadWrite.OwnedBy</span><span class="sxs-lookup"><span data-stu-id="9cb7d-115">ThreatIndicators.ReadWrite.OwnedBy</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ed64a-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ed64a-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9cb7d-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9cb7d-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,33 +36,35 @@ ms.locfileid: "36724325"
 POST /security/tiIndicators/submitTiIndicators
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ed64a-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ed64a-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="9cb7d-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9cb7d-117">Request headers</span></span>
 
-| <span data-ttu-id="ed64a-118">Имя</span><span class="sxs-lookup"><span data-stu-id="ed64a-118">Name</span></span>          | <span data-ttu-id="ed64a-119">Описание</span><span class="sxs-lookup"><span data-stu-id="ed64a-119">Description</span></span>   |
+| <span data-ttu-id="9cb7d-118">Имя</span><span class="sxs-lookup"><span data-stu-id="9cb7d-118">Name</span></span>          | <span data-ttu-id="9cb7d-119">Описание</span><span class="sxs-lookup"><span data-stu-id="9cb7d-119">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="ed64a-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ed64a-120">Authorization</span></span> | <span data-ttu-id="ed64a-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="ed64a-121">Bearer {code}</span></span> |
+| <span data-ttu-id="9cb7d-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="9cb7d-120">Authorization</span></span> | <span data-ttu-id="9cb7d-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="9cb7d-121">Bearer {code}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ed64a-122">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ed64a-122">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="9cb7d-122">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="9cb7d-122">Request body</span></span>
 
-<span data-ttu-id="ed64a-123">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="ed64a-123">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="9cb7d-123">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="9cb7d-123">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="ed64a-124">Параметр</span><span class="sxs-lookup"><span data-stu-id="ed64a-124">Parameter</span></span>    | <span data-ttu-id="ed64a-125">Тип</span><span class="sxs-lookup"><span data-stu-id="ed64a-125">Type</span></span>        | <span data-ttu-id="ed64a-126">Описание</span><span class="sxs-lookup"><span data-stu-id="ed64a-126">Description</span></span> |
+| <span data-ttu-id="9cb7d-124">Параметр</span><span class="sxs-lookup"><span data-stu-id="9cb7d-124">Parameter</span></span>    | <span data-ttu-id="9cb7d-125">Тип</span><span class="sxs-lookup"><span data-stu-id="9cb7d-125">Type</span></span>        | <span data-ttu-id="9cb7d-126">Описание</span><span class="sxs-lookup"><span data-stu-id="9cb7d-126">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="ed64a-127">значение</span><span class="sxs-lookup"><span data-stu-id="ed64a-127">value</span></span>|<span data-ttu-id="ed64a-128">Коллекция Тииндикатор</span><span class="sxs-lookup"><span data-stu-id="ed64a-128">tiIndicator collection</span></span>| <span data-ttu-id="ed64a-129">Коллекция объектов **тииндикаторс** , которую необходимо создать.</span><span class="sxs-lookup"><span data-stu-id="ed64a-129">JSON collection of **tiIndicators** to be created.</span></span> |
+|<span data-ttu-id="9cb7d-127">значение</span><span class="sxs-lookup"><span data-stu-id="9cb7d-127">value</span></span>|<span data-ttu-id="9cb7d-128">Коллекция Тииндикатор</span><span class="sxs-lookup"><span data-stu-id="9cb7d-128">tiIndicator collection</span></span>| <span data-ttu-id="9cb7d-129">Коллекция объектов **тииндикаторс** , которую необходимо создать.</span><span class="sxs-lookup"><span data-stu-id="9cb7d-129">JSON collection of **tiIndicators** to be created.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="ed64a-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="ed64a-130">Response</span></span>
+<span data-ttu-id="9cb7d-130">Для каждого Тииндикатор добавьте представление объекта [тииндикатор](../resources/tiindicator.md) в [формате](../resources/tiindicator.md#indicator-observables---file)JSON, содержащий хотя бы один наблюдаемый [адрес электронной почты](../resources/tiindicator.md#indicator-observables---email), файл или [сеть](../resources/tiindicator.md#indicator-observables---network) , а также следующие обязательные поля `action`: `description`, `expirationDateTime`, `targetProduct`, `threatType`, `tlpLevel`,.</span><span class="sxs-lookup"><span data-stu-id="9cb7d-130">For each tiIndicator, supply a JSON representation of a [tiIndicator](../resources/tiindicator.md) object containing at least one [email](../resources/tiindicator.md#indicator-observables---email), [file](../resources/tiindicator.md#indicator-observables---file), or [network](../resources/tiindicator.md#indicator-observables---network) observable, and the following required fields: `action`, `description`, `expirationDateTime`, `targetProduct`, `threatType`, `tlpLevel`.</span></span>
 
-<span data-ttu-id="ed64a-131">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [тииндикатор](../resources/tiindicator.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="ed64a-131">If successful, this method returns a `200 OK` response code and a collection of [tiIndicator](../resources/tiindicator.md) objects in the response body.</span></span>  <span data-ttu-id="ed64a-132">При возникновении ошибки этот метод возвращает код `206 Partial Content` отклика.</span><span class="sxs-lookup"><span data-stu-id="ed64a-132">If there is an error, this method returns a `206 Partial Content` response code.</span></span>  <span data-ttu-id="ed64a-133">Дополнительные [](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) сведения см. в разделе Errors.</span><span class="sxs-lookup"><span data-stu-id="ed64a-133">See [Errors](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) for more information.</span></span>
+## <a name="response"></a><span data-ttu-id="9cb7d-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="9cb7d-131">Response</span></span>
 
-## <a name="examples"></a><span data-ttu-id="ed64a-134">Примеры</span><span class="sxs-lookup"><span data-stu-id="ed64a-134">Examples</span></span>
+<span data-ttu-id="9cb7d-132">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [тииндикатор](../resources/tiindicator.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="9cb7d-132">If successful, this method returns a `200 OK` response code and a collection of [tiIndicator](../resources/tiindicator.md) objects in the response body.</span></span>  <span data-ttu-id="9cb7d-133">При возникновении ошибки этот метод возвращает код `206 Partial Content` отклика.</span><span class="sxs-lookup"><span data-stu-id="9cb7d-133">If there is an error, this method returns a `206 Partial Content` response code.</span></span>  <span data-ttu-id="9cb7d-134">Дополнительные сведения см. в разделе [Errors](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) .</span><span class="sxs-lookup"><span data-stu-id="9cb7d-134">See [Errors](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) for more information.</span></span>
 
-<span data-ttu-id="ed64a-135">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="ed64a-135">The following example shows how to call this API.</span></span>
+## <a name="examples"></a><span data-ttu-id="9cb7d-135">Примеры</span><span class="sxs-lookup"><span data-stu-id="9cb7d-135">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="ed64a-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="ed64a-136">Request</span></span>
+<span data-ttu-id="9cb7d-136">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="9cb7d-136">The following example shows how to call this API.</span></span>
 
-<span data-ttu-id="ed64a-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ed64a-137">The following is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="9cb7d-137">Запрос</span><span class="sxs-lookup"><span data-stu-id="9cb7d-137">Request</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="ed64a-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="ed64a-138">HTTP</span></span>](#tab/http)
+<span data-ttu-id="9cb7d-138">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9cb7d-138">The following is an example of the request.</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="9cb7d-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="9cb7d-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tiindicator_submittiindicators",
@@ -110,27 +112,27 @@ Content-Type: application/json
   ]
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="ed64a-139">C#</span><span class="sxs-lookup"><span data-stu-id="ed64a-139">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="9cb7d-140">C#</span><span class="sxs-lookup"><span data-stu-id="9cb7d-140">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/tiindicator-submittiindicators-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="ed64a-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ed64a-140">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="9cb7d-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9cb7d-141">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/tiindicator-submittiindicators-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="ed64a-141">Цель — C</span><span class="sxs-lookup"><span data-stu-id="ed64a-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="9cb7d-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9cb7d-142">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/tiindicator-submittiindicators-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="ed64a-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="ed64a-142">Response</span></span>
+### <a name="response"></a><span data-ttu-id="9cb7d-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="9cb7d-143">Response</span></span>
 
-<span data-ttu-id="ed64a-143">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="ed64a-143">The following is an example of the response.</span></span>
+<span data-ttu-id="9cb7d-144">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="9cb7d-144">The following is an example of the response.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="ed64a-144">Объект Response, показанный здесь, может быть укорочен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="ed64a-144">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="ed64a-145">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ed64a-145">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="9cb7d-145">Объект Response, показанный здесь, может быть укорочен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="9cb7d-145">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="9cb7d-146">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="9cb7d-146">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
