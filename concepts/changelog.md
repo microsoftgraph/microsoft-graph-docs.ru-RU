@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 33b7c7cf7d298de82cef0c46b2a8d56ad61576e7
-ms.sourcegitcommit: cea768f767cf27a938b72bb26892d70e3dedaf2e
+ms.openlocfilehash: 0bdf257a202e976b24aa15d01c63499218eb5af6
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41865804"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42163698"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -18,11 +18,45 @@ ms.locfileid: "41865804"
 
 ## <a name="february-2020"></a>Февраль 2020 г.
 
+### <a name="devices-and-apps-microsoft-intune"></a>Устройства и приложения (Microsoft Intune)
+
+| **Тип изменения** | **Версия** | **Описание** |
+|:---|:---|:---|
+|Дополнение|Бета|Добавлены новые объекты:<br/>[macOSMdatpApp](/graph/api/resources/intune-apps-macosmdatpapp)<br/>[unsupportedGroupPolicyExtension](/graph/api/resources/intune-gpanalyticsservice-unsupportedgrouppolicyextension)<br/>[userExperienceAnalyticsDeviceStartupProcess](/graph/api/resources/intune-devices-userexperienceanalyticsdevicestartupprocess)<br/>[userExperienceAnalyticsDeviceStartupProcessPerformance](/graph/api/resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance)<br/>[userExperienceAnalyticsStartupScoreHistory](/graph/api/resources/intune-devices-userexperienceanalyticsstartupscorehistory)<br/>|
+|Добавление|Бета|Добавлены новые сложные типы:<br/>[customUpdateTimeWindow](/graph/api/resources/intune-deviceconfig-customupdatetimewindow)<br/>[iosAvailableUpdateVersion](/graph/api/resources/intune-softwareupdate-iosavailableupdateversion)<br/>[managedDeviceSummarizedAppState](/graph/api/resources/intune-troubleshooting-manageddevicesummarizedappstate)<br/>|
+|Добавление|бета|Добавлены новые типы перечисления:<br/>[enrollmentAvailabilityOptions](/graph/api/resources/intune-shared-enrollmentavailabilityoptions)<br/>[globalDeviceHealthScriptState](/graph/api/resources/intune-devices-globaldevicehealthscriptstate)<br/>[iosSoftwareUpdateScheduleType](/graph/api/resources/intune-deviceconfig-iossoftwareupdatescheduletype)<br/>|
+|Добавление|Бета|Добавлено действие [updateGlobalScript](/graph/api/intune-devices-devicehealthscript-updateglobalscript) на [устройстве HealthScript](/graph/api/resources/intune-devices-devicehealthscript) |
+|Добавление|Бета|Добавлено действие [getGlobalScriptHighestAvailableVersion](/graph/api/intune-devices-devicehealthscript-getglobalscripthighestavailableversion) на [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript) |
+|Добавление|Бета|Добавлено действие [enableGlobalScripts](/graph/api/intune-devices-devicehealthscript-enableglobalscripts) для [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript) |
+|Добавление|Бета|Добавлена функция [getManagedDevicesWithFailedOrPendingApps](/graph/api/intune-troubleshooting-user-getmanageddeviceswithfailedorpendingapps) для [пользователя](/graph/api/resources/intune-shared-user) |
+|Добавление|бета|Добавлена функция [areGlobalScriptsAvailable](/graph/api/intune-devices-devicehealthscript-areglobalscriptsavailable) в коллекции [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript) |
+|Удаление|бета|Удалены следующие типы перечисления:<br/>**logLevel**<br/>|
+|Добавление|бета|Добавлено свойство **certificateSerialNumber** в сущность [applePushNotificationCertificate](/graph/api/resources/intune-devices-applepushnotificationcertificate)|
+|Добавление|Бета|Добавлены свойства **isGlobalScript** и **highestAvailableVersion** в [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript)|
+|Добавление|Бета|Добавлено свойство **hasRequiredSetting** в сущность [deviceManagementSettingCategory](/graph/api/resources/intune-deviceintent-devicemanagementsettingcategory)|
+|Добавление|бета|Добавлены свойства **sendDeviceOwnershipChangePushNotification**, **enrollmentAvailability** и **roleScopeTagIds** в [intuneBrandingProfile](/graph/api/resources/intune-wip-intunebrandingprofile)|
+|Добавление|Бета|Добавлены свойства **updateScheduleType** и **customUpdateTimeWindows** в [iosUpdateConfiguration](/graph/api/resources/intune-deviceconfig-iosupdateconfiguration)|
+|Добавление|Бета|Добавлено свойство **appActionIfUnableToAuthenticateUser** в сущность [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection)|
+|Добавление|Бета|Добавлено свойство **userPrincipalName** в сущность [termsAndConditionsAcceptanceStatus](/graph/api/resources/intune-companyterms-termsandconditionsacceptancestatus)|
+|Добавление|Бета|Добавлено свойство **responsiveDesktopTimeInMs** в сущность [userExperienceAnalyticsDevicePerformance](/graph/api/resources/intune-devices-userexperienceanalyticsdeviceperformance)|
+|Добавление|Бета|Добавлено свойство **responsiveDesktopTimeInMs** в сущность [userExperienceAnalyticsDeviceStartupHistory](/graph/api/resources/intune-devices-userexperienceanalyticsdevicestartuphistory)|
+|Добавление|Бета|Добавлено свойство **installLanguage** в сущность [win32LobApp](/graph/api/resources/intune-apps-win32lobapp)|
+|Добавление|Бета|Добавлено свойство **displayLanguageLocale** в сущность [windowsMicrosoftEdgeApp](/graph/api/resources/intune-apps-windowsmicrosoftedgeapp)|
+|Добавление|Бета|Добавлены свойства навигации **userExperienceAnalyticsDeviceStartupProcesses**, **userExperienceAnalyticsDeviceStartupProcessPerformance** and **userExperienceAnalyticsStartupScoreHistory** в сущность [deviceManagement](/graph/api/resources/intune-shared-devicemanagement)|
+|Добавление|Бета|Добавлено свойство навигации **unsupportedGroupPolicyExtensions** в сущность [groupPolicyMigrationReport](/graph/api/resources/intune-gpanalyticsservice-grouppolicymigrationreport)|
+|Добавление|Бета|Добавлено свойство **configMgrDeviceCount** к сложному типу [deviceOperatingSystemSummary](/graph/api/resources/intune-devices-deviceoperatingsystemsummary).|
+|Добавление|Бета|Добавлены свойства **roleScopeTagIds**, **sendDeviceOwnershipChangePushNotification**и **enrollmentAvailability**для сложного типа [intuneBrand](/graph/api/resources/intune-onboarding-intunebrand)|
+|Добавление|бета|Добавлено свойство [troubleshootingErrorDetails](/graph/api/resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem) к сложному типу **mobileAppTroubleshootingHistoryItem**|
+|Добавление|Бета|Добавлен член **xTec** в тип перечисления [deviceManagementDerivedCredentialIssuer](/graph/api/resources/intune-rapolicy-devicemanagementderivedcredentialissuer)|
+|Добавление|Бета|Добавлен элемент **windows10x** в тип перечисления [deviceType](/graph/api/resources/intune-deviceconfig-devicetype)|
+|Добавление|Бета|Добавлен элемент **windowsManagementCloudApi** в тип перечисления [managementAgentType](/graph/api/resources/intune-deviceconfig-managementagenttype)|
+
+
 ### <a name="groups"></a>Группы
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | 1.0 | Добавлен [API group: assignLicense](../api-reference/v1.0/api/group-assignlicense.md), с помощью которого можно назначить лицензию [группе](../api-reference/v1.0/resources/group.md). |
+| Дополнение | 1.0 | Добавлен [API group: assignLicense](/graph/api/group-assignlicense.md?view=graph-rest-1.0), с помощью которого можно назначить лицензию [группе](/graph/api/resources/group?view=graph-rest-1.0). |
 
 ### <a name="identity-and-access-azure-ad"></a>Удостоверение и доступ (Azure AD)
 
@@ -34,7 +68,7 @@ ms.locfileid: "41865804"
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Дополнение | 1.0 | Добавлен [API user: reprocessLicenseAssignment](../api-reference/v1.0/api/user-reprocesslicenseassignment.md), с помощью которого можно переработать все групповые назначения лицензий для [пользователя](../api-reference/v1.0/resources/user.md). |
+| Дополнение | 1.0 | Добавлен [API user: reprocessLicenseAssignment](/graph/api/user-reprocesslicenseassignment.md), с помощью которого можно переработать все групповые назначения лицензий для [пользователя](/graph/api/resources/user.md?view=graph-rest-1.0). |
 | Добавление | 1.0 | Добавлено свойство **identities** для ресурса [user](/graph/api/resources/user?view=graph-rest-1.0). Это свойство представляет набор удостоверений (например, местные учетные записи и учетные записи социальных сетей), которые пользователь может использовать для входа.|
 
 ## <a name="january-2020"></a>Январь 2020 г.
@@ -405,7 +439,7 @@ ms.locfileid: "41865804"
 |Дополнение|Бета|Добавлено свойство **isDeleted** для объекта [importedAppleDeviceIdentity](/graph/api/resources/intune-enrollment-importedappledeviceidentity?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлены свойства **filesNetworkDriveAccessBlocked**, **filesUsbDriveAccessBlocked** и **wifiPowerOnForced** для объекта [iosGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-iosgeneraldeviceconfiguration?view=graph-rest-beta)|
 |Удаление|Бета|Удалено свойство **wiFiBlockPowerModification** из объекта [iosGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-iosgeneraldeviceconfiguration?view=graph-rest-beta).|
-|Дополнение|Бета|Добавлены свойства **previousPinBlockCount**, **maximumAllowedDeviceThreatLevel** и **mobileThreatDefenseRemediationAction** для объекта [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection?view=graph-rest-beta)|
+|Добавление|Бета|Добавлены свойства **previousPinBlockCount**, **maximumAllowedDeviceThreatLevel** и **mobileThreatDefenseRemediationAction** для объекта [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection?view=graph-rest-beta)|
 |Дополнение|бета|Добавлены свойства **source** и **sourceId** для объекта [mobileAppAssignment](/graph/api/resources/intune-apps-mobileappassignment?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлены свойства **androidMobileApplicationManagementEnabled** и **iosMobileApplicationManagementEnabled** для объекта [mobileThreatDefenseConnector](/graph/api/resources/intune-onboarding-mobilethreatdefenseconnector?view=graph-rest-beta)|
 |Изменение|бета|Изменены следующие свойства объекта [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta):<br/>**energySaverOnBatteryThresholdPercentage** преобразовано из обязательного в необязательное<br/>**energySaverPluggedInThresholdPercentage** преобразовано из обязательного в необязательное<br/>|
@@ -1645,7 +1679,7 @@ ms.locfileid: "41865804"
 | :-------------- | :---------- | :--------------------------------------- |
 | Изменение          | бета        | Ресурс [application](/graph/api/resources/application?view=graph-rest-beta) обновлен для добавления коллекции звонков. |
 | Изменение          | бета        | Ресурс [operation](/graph/api/resources/operation?view=graph-rest-beta) обновлен для поддержки API продолжительных звонков и собраний по сети. |
-| Дополнение        | Бета-версия        | Добавлен ресурс [call](/graph/api/resources/call?view=graph-rest-beta) для управления голосовыми и видеозвонками (изначально в Microsoft Teams), включая API для [создания](/graph/api/application-post-calls?view=graph-rest-beta), [получения](/graph/api/call-get?view=graph-rest-beta) и [удаления (завершения) звонков](/graph/api/call-delete?view=graph-rest-beta), [ответа на звонок](/graph/api/call-answer?view=graph-rest-beta), а также [отклонения](/graph/api/call-reject?view=graph-rest-beta), [перенаправления](/graph/api/call-redirect?view=graph-rest-beta) и [передачи звонка](/graph/api/call-transfer?view=graph-rest-beta). Мы также расширили API для поддержки [сценариев IVR](/graph/api/resources/calls-api-ivr-overview?view=graph-rest-beta): [воспроизведение запроса](/graph/api/call-playprompt?view=graph-rest-beta), [запись звонка](/graph/api/call-record?view=graph-rest-beta), [отмена обработки мультимедиа](/graph/api/call-cancelmediaprocessing?view=graph-rest-beta) и [подписка на тональные уведомления](/graph/api/call-subscribetotone?view=graph-rest-beta). |
+| Добавление        | Бета-версия        | Добавлен ресурс [call](/graph/api/resources/call?view=graph-rest-beta) для управления голосовыми и видеозвонками (изначально в Microsoft Teams), включая API для [создания](/graph/api/application-post-calls?view=graph-rest-beta), [получения](/graph/api/call-get?view=graph-rest-beta) и [удаления (завершения) звонков](/graph/api/call-delete?view=graph-rest-beta), [ответа на звонок](/graph/api/call-answer?view=graph-rest-beta), а также [отклонения](/graph/api/call-reject?view=graph-rest-beta), [перенаправления](/graph/api/call-redirect?view=graph-rest-beta) и [передачи звонка](/graph/api/call-transfer?view=graph-rest-beta). Мы также расширили API для поддержки [сценариев IVR](/graph/api/resources/calls-api-ivr-overview?view=graph-rest-beta): [воспроизведение запроса](/graph/api/call-playprompt?view=graph-rest-beta), [запись звонка](/graph/api/call-record?view=graph-rest-beta), [отмена обработки мультимедиа](/graph/api/call-cancelmediaprocessing?view=graph-rest-beta) и [подписка на тональные уведомления](/graph/api/call-subscribetotone?view=graph-rest-beta). |
 | Дополнение        | бета        | Добавлен ресурс [participant](/graph/api/resources/call?view=graph-rest-beta) и API для управления участниками в голосовых и видеозвонках и собраниях, в том числе [получение объекта participant](/graph/api/participant-get?view=graph-rest-beta), [настройка звукового микшера для участника](/graph/api/participant-configuremixer?view=graph-rest-beta), отключение звука [одного](/graph/api/participant-mute?view=graph-rest-beta) или [всех](/graph/api/participant-muteall?view=graph-rest-beta) участников, [получение списка участников](/graph/api/call-list-participants?view=graph-rest-beta) в звонке или собрании и [приглашение участников](/graph/api/participant-invite?view=graph-rest-beta) в звонок или собрание. |
 | Дополнение        | бета        | Добавлены API для приложений по управлению и участию в звонках и собраниях, включая возможность [делиться контентом](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [самостоятельно отключать и включать звук](/graph/api/call-unmute?view=graph-rest-beta) и [обновлять метаданные, связанные со звонком](/graph/api/call-updatemetadata?view=graph-rest-beta). |
 | Дополнение        | бета        | Добавлен ресурс [audio routing group](/graph/api/resources/audioroutinggroup?view=graph-rest-beta) и API для управления частными звуковыми маршрутами между участниками многосторонней беседы, включая [создание групп маршрутизации звука](/graph/api/call-post-audioroutinggroups?view=graph-rest-beta), [получение их списка](/graph/api/audioroutinggroup-get?view=graph-rest-beta), а также их [обновление](/graph/api/audioroutinggroup-update?view=graph-rest-beta) и [удаление](/graph/api/audioroutinggroup-delete?view=graph-rest-beta). |
@@ -1823,7 +1857,7 @@ ms.locfileid: "41865804"
 |Дополнение|бета|Добавлено свойство **optInToDeviceIdSharing** для объекта [appleVpnConfiguration](/graph/api/resources/intune-deviceconfig-applevpnconfiguration?view=graph-rest-beta)|
 |Дополнение|бета|Добавлены свойства **tokenType**, **tokenName**, **syncedDeviceCount**, **defaultProfileDisplayName** и ** dataSharingConsentGranted** для объекта [depOnboardingSetting](/graph/api/resources/intune-enrollment-deponboardingsetting?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлено свойство **roleScopeTagIds** для объекта [deviceCompliancePolicy](/graph/api/resources/intune-deviceconfig-devicecompliancepolicy?view=graph-rest-beta)|
-|Дополнение|бета|Добавлены свойства **roleScopeTagIds** и **supportsScopeTags** для объекта [deviceConfiguration](/graph/api/resources/intune-deviceconfig-deviceconfiguration?view=graph-rest-beta)|
+|Добавление|бета|Добавлены свойства **roleScopeTagIds** и **supportsScopeTags** для объекта [deviceConfiguration](/graph/api/resources/intune-deviceconfig-deviceconfiguration?view=graph-rest-beta)|
 |Дополнение|бета|Добавлено свойство **windowsMalwareOverview** для объекта [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta)|
 |Изменение|бета|Изменены следующие свойства объекта [iosCertificateProfileBase](/graph/api/resources/intune-deviceconfig-ioscertificateprofilebase?view=graph-rest-beta):<br/>свойство **subjectAlternativeNameType** преобразовано из обязательного в необязательное<br/>|
 |Дополнение|бета|Добавлено свойство **restrictedApps** для объекта [iosCompliancePolicy](/graph/api/resources/intune-deviceconfig-ioscompliancepolicy?view=graph-rest-beta)|
@@ -1856,7 +1890,7 @@ ms.locfileid: "41865804"
 |Дополнение|бета|Добавлены элементы **zscalerPrivateAccess**, **f5Access2018**, **citrixSso** и **paloAltoGlobalProtectV2** для типа перечисления [appleVpnConnectionType](/graph/api/resources/intune-deviceconfig-applevpnconnectiontype?view=graph-rest-beta)|
 |Дополнение|бета|Добавлен элемент **userAbandonment** для типа перечисления [deviceEnrollmentFailureReason](/graph/api/resources/intune-troubleshooting-deviceenrollmentfailurereason?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлен элемент **blocked** для типа перечисления [enrollmentState](/graph/api/resources/intune-enrollment-enrollmentstate?view=graph-rest-beta)|
-|Дополнение|бета|Добавлен элемент **microsoft365ManagedMdm** для типа перечисления [managementAgentType](/graph/api/resources/intune-devices-managementagenttype?view=graph-rest-beta)|
+|Дополнение|бета|Добавлен элемент **microsoft365ManagedMdm** для типа перечисления [managementAgentType](/graph/api/resources/intune-shared-managementagenttype?view=graph-rest-beta)|
 |Дополнение|бета|Добавлен элемент **domainNameService** для типа перечисления [subjectAlternativeNameType](/graph/api/resources/intune-deviceconfig-subjectalternativenametype?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлены элементы **wpa2Personal** и **wpa2Enterprise** для типа перечисления [wiFiSecurityType](/graph/api/resources/intune-deviceconfig-wifisecuritytype?view=graph-rest-beta)|
 |Дополнение|бета|Добавлены элементы **enterpriseUnwantedSoftware**, **ransom** и **hipsRule** для типа перечисления [windowsMalwareCategory](/graph/api/resources/intune-devices-windowsmalwarecategory?view=graph-rest-beta)|
@@ -2389,7 +2423,7 @@ ms.locfileid: "41865804"
 |Удаление|Бета|Удалено свойство навигации **groupAssignments** из объекта [managedDeviceMobileAppConfiguration](/graph/api/resources/intune-apps-manageddevicemobileappconfiguration?view=graph-rest-beta).|
 |Дополнение|Бета|Добавлено свойство навигации **categories** в объект [managedEBook](/graph/api/resources/intune-books-managedebook?view=graph-rest-beta).|
 |Дополнение|Бета|Добавлено свойство навигации **containedApps** в объект [microsoftStoreForBusinessApp](/graph/api/resources/intune-apps-microsoftstoreforbusinessapp?view=graph-rest-beta).|
-|Дополнение|Бета|Добавлено свойство навигации **containedApps** в объект [mobileAppContent](/graph/api/resources/intune-apps-mobileappcontent?view=graph-rest-beta).|
+|Добавление|Бета|Добавлено свойство навигации **containedApps** в объект [mobileAppContent](/graph/api/resources/intune-apps-mobileappcontent?view=graph-rest-beta).|
 |Дополнение|Бета|Добавлено свойство навигации **committedContainedApps** для объекта [windowsUniversalAppX](/graph/api/resources/intune-apps-windowsuniversalappx?view=graph-rest-beta).|
 
 ### <a name="files-onedrive-for-business"></a>Файлы (OneDrive для бизнеса)
@@ -2819,7 +2853,7 @@ ms.locfileid: "41865804"
 |Изменение|Бета-версия|Добавлены свойства **minimumRequiredPatchVersion** и **minimumWarningPatchVersion** для объекта [androidManagedAppProtection](/graph/api/resources/intune-mam-androidmanagedappprotection?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлены свойства **minimumRequiredPatchVersion** и **minimumWarningPatchVersion** для объекта [defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлено свойство **target** для объекта [deviceCompliancePolicyAssignment](/graph/api/resources/intune-deviceconfig-devicecompliancepolicyassignment?view=graph-rest-beta).|
-|Изменение|Бета-версия|Добавлено свойство **singleSignOnSettings** для объекта [iosDeviceFeaturesConfiguration](/graph/api/resources/intune-deviceconfig-iosdevicefeaturesconfiguration?view=graph-rest-beta).|
+|Изменить|Бета-версия|Добавлено свойство **singleSignOnSettings** для объекта [iosDeviceFeaturesConfiguration](/graph/api/resources/intune-deviceconfig-iosdevicefeaturesconfiguration?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлены свойства **versionNumber** и **buildNumber** для объекта [iosLobApp](/graph/api/resources/intune-apps-ioslobapp?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлено свойство **bundleId** для объекта [iosVppApp](/graph/api/resources/intune-apps-iosvppapp?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлено свойство **preSharedKey** для объекта [iosWiFiConfiguration](/graph/api/resources/intune-deviceconfig-ioswificonfiguration?view=graph-rest-beta).|
@@ -3277,7 +3311,7 @@ ms.locfileid: "41865804"
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Изменение          | Бета-версия        | Обновление API приложений. Это первый набор изменений, включающий изменение структуры и переименование свойств объекта [application](/graph/api/resources/application?view=graph-rest-beta).<br/>**Новые объекты:** [api](/graph/api/resources/api?view=graph-rest-beta]), [informationalUrl](/graph/api/resources/informationalurl?view=graph-rest-beta), [installedClient](/graph/api/resources/installedclient?view=graph-rest-beta), [permissionScope](/graph/api/resources/permissionscope?view=graph-rest-beta), [preauthorizedApplication](/graph/api/resources/preauthorizedapplication?view=graph-rest-beta), [web](/graph/api/resources/web?view=graph-rest-beta).<br/>**Удаленные свойства:** addIns, appRoles, availableToOtherOrganizations, knownClientApplications, oauth2AllowUrlPathMatching, recordConsentConditions.<br/>**Переименованные свойства:** с appId на id, с identifierUris на applicationAliases, с availableToOtherTenants на orgRestrictions, с mainLogo на logo, с oauth2Permissions на publishedPermissionsScopes, с publicClient на allowPublicClient, с replyUrls на redirectUrls.<br/>**Новые свойства:** tags. |
+| Изменение          | бета        | Обновление API приложений. Это первый набор изменений, включающий изменение структуры и переименование свойств объекта [application](/graph/api/resources/application?view=graph-rest-beta).<br/>**Новые объекты:** [api](/graph/api/resources/api?view=graph-rest-beta]), [informationalUrl](/graph/api/resources/informationalurl?view=graph-rest-beta), [installedClient](/graph/api/resources/installedclient?view=graph-rest-beta), [permissionScope](/graph/api/resources/permissionscope?view=graph-rest-beta), [preauthorizedApplication](/graph/api/resources/preauthorizedapplication?view=graph-rest-beta), [web](/graph/api/resources/web?view=graph-rest-beta).<br/>**Удаленные свойства:** addIns, appRoles, availableToOtherOrganizations, knownClientApplications, oauth2AllowUrlPathMatching, recordConsentConditions.<br/>**Переименованные свойства:** с appId на id, с identifierUris на applicationAliases, с availableToOtherTenants на orgRestrictions, с mainLogo на logo, с oauth2Permissions на publishedPermissionsScopes, с publicClient на allowPublicClient, с replyUrls на redirectUrls.<br/>**Новые свойства:** tags. |
 
 ### <a name="tasks-and-plans-planner"></a>Задачи и планы (Планировщик)
 | **Тип изменения** | **Версия** | **Описание**                          |
@@ -3662,7 +3696,7 @@ ms.locfileid: "41865804"
 | Изменение      | Бета-версия    | Изменен тип следующих свойств объекта [windowsPhone81AppX](/graph/api/resources/intune-apps-windowsphone81appx?view=graph-rest-beta):<br/>**applicableArchitectures** теперь относится не к [windowsArchitecture](/graph/api/resources/windowsarchitecture?view=graph-rest-beta), а к String.<br/> |
 | Изменение      | Бета-версия    | Добавлены свойства **identityName**, **identityPublisherHash** и **identityResourceIdentifier** к объекту [windowsUniversalAppX](/graph/api/resources/intune-apps-windowsuniversalappx?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Изменен тип следующих свойств объекта [windowsUniversalAppX](/graph/api/resources/intune-apps-windowsuniversalappx?view=graph-rest-beta):<br/>**applicableArchitectures** теперь относится не к [windowsArchitecture](/graph/api/resources/windowsarchitecture?view=graph-rest-beta), а к String;<br/>**applicableDeviceTypes** теперь относится не к [windowsDeviceType](/graph/api/resources/windowsdevicetype?view=graph-rest-beta), а к String.<br/> |
-| Изменение      | Бета-версия    | Добавлено свойство **restartMode** к объекту [windowsUpdateForBusinessConfiguration](/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-beta). |
+| Изменить      | Бета-версия    | Добавлено свойство **restartMode** к объекту [windowsUpdateForBusinessConfiguration](/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Добавлено свойство навигации **managedDeviceCertificateStates** к объекту [androidForWorkScepCertificateProfile](/graph/api/resources/intune-deviceconfig-androidforworkscepcertificateprofile?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Добавлено свойство навигации **managedDeviceCertificateStates** к объекту [androidScepCertificateProfile](/graph/api/resources/intune-deviceconfig-androidscepcertificateprofile?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Добавлены свойства навигации **enterpriseCodeSigningCertificates**, **symantecCodeSigningCertificate**, **sideLoadingKeys**, **managedAppPolicies**, **iosManagedAppProtections**, **androidManagedAppProtections**, **defaultManagedAppProtections**, **targetedManagedAppConfigurations**, **mdmWindowsInformationProtectionPolicies**, **windowsInformationProtectionPolicies**, **managedAppRegistrations** и **managedAppStatuses** к объекту [deviceAppManagement](/graph/api/resources/intune-apps-deviceappmanagement?view=graph-rest-beta). |
@@ -3848,7 +3882,7 @@ ms.locfileid: "41865804"
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Дополнение        | Бета        | Теперь API Azure AD Application Proxy доступны в конечной точке Microsoft Graph бета-версии. Эти API позволяют безопасно публиковать локальные приложения для пользователей, находящихся за пределами корпоративной сети, используя Azure AD в качестве общей системы управления доступом. Опубликованные API позволяют создавать приложения, которые могут получать и обновлять различные аспекты прокси приложения, например параметры _connectors_, _connectorGroups_ и _onPremisesPublishing_ приложения. |
+| Добавление        | Бета        | Теперь API Azure AD Application Proxy доступны в конечной точке Microsoft Graph бета-версии. Эти API позволяют безопасно публиковать локальные приложения для пользователей, находящихся за пределами корпоративной сети, используя Azure AD в качестве общей системы управления доступом. Опубликованные API позволяют создавать приложения, которые могут получать и обновлять различные аспекты прокси приложения, например параметры _connectors_, _connectorGroups_ и _onPremisesPublishing_ приложения. |
 
 ### <a name="files-onedrive-for-business"></a>Файлы (OneDrive для бизнеса)
 

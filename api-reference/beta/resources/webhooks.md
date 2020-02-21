@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: conceptualPageType
 ms.prod: ''
-ms.openlocfilehash: a2389044671be071cf1d43dcd788519ee49d6363
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: e14227ad1e64aaea6bf2cfb15f9ba76d0ffeb12b
+ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42159026"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219652"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Получение уведомлений об изменениях с помощью API Microsoft Graph 
 
@@ -22,16 +22,16 @@ REST API Microsoft Graph использует механизм веб-перех
 
 | **Resource** | **Поддерживаемые пути к ресурсам** | **Данные ресурсов можно включать в уведомления**                  |
 |:----------------|:------------|:-----------------------------------------|
-| [Сообщение][] Outlook | `/users/{id}/messages`<br>`/users/{id}/mailFolders('inbox')/messages` | Нет |
-| [Событие][] Outlook | `/users/{id}/events` | Нет |
-| Личный [контакт][] Outlook | `/users/{id}/contacts` | Нет |
-| [user][] | `/users`(изменения для всех пользователей)<br>`/users/{id}`(изменения определенного пользователя) | Нет |
-| [group][] | `/groups`(изменения всех групп)<br>`/groups/{id}`(изменения в определенной группе) | Нет |
-| Групповой [чат][] Office 365  | `groups/{id}/conversations` | Нет |
-| Контент внутри иерархии _любой папки_ [driveItem][] на персональном хранилище OneDrive пользователя | `/me/drive/root` | Нет |
-| Контент внутри иерархии _корневой папки_ [driveItem][] на персональном хранилище OneDrive для бизнеса | `/drives/{id}/root`<br> `/me/drive/root` | Нет |
-| [Оповещение][] безопасности | `/security/alerts/{id}`(изменения в определенном оповещении) <br> `/security/alerts/?$filter`(изменения в фильтруемых оповещениях)| Нет |
-| [Chatmessage](/graph/api/resources/subscription?view=graph-rest-beta) Teams | `/teams/allMessages`(сообщения во всех каналах в Teams)<br>`/teams/{id}/channels/{id}/messages`(сообщения в определенном канале);<br>`/chats/allMessages`(сообщения во всех беседах)<br>`/chats/{id}/messages`(сообщения в определенном сеансе чата) | Да |
+| [Сообщение][] Outlook | Изменения всех сообщений в почтовом ящике пользователя: <br>`/users/{id}/messages`<br>Изменения в сообщениях в папке "Входящие" пользователя:<br>`/users/{id}/mailFolders('inbox')/messages` | Нет |
+| [Событие][] Outlook | Изменения всех событий в почтовом ящике пользователя:<br>`/users/{id}/events` | Нет |
+| Личный [контакт][] Outlook | Изменения во всех личных контактах в почтовом ящике пользователя:<br>`/users/{id}/contacts` | Нет |
+| [user][] | Изменения для всех пользователей:<br>`/users` <br>Изменения определенного пользователя:<br>`/users/{id}`| Нет |
+| [group][] | Изменения во всех группах:<br>`/groups` <br>Изменения в определенной группе:<br>`/groups/{id}` | Нет |
+| Групповой [чат][] Office 365  | Изменения в беседах группы:<br>`groups/{id}/conversations` | Нет |
+| [driveItem][] в OneDrive (персональный) | Изменения контента в иерархии _любой папки_:<br>`/users/{id}/drive/root` | Нет |
+| [driveItem][] в OneDrive для бизнеса | Изменения контента в иерархии _корневой папки_:<br>`/drives/{id}/root`<br> `/users/{id}/drive/root` | Нет |
+| [Оповещение][] безопасности | Изменения, внесенные в конкретное оповещение:<br>`/security/alerts/{id}` <br>Изменения отфильтрованных оповещений:<br> `/security/alerts/?$filter`| Нет |
+| [Chatmessage](/graph/api/resources/subscription?view=graph-rest-beta) Teams | Изменения в сообщениях чата во всех каналах в teams:<br>`/teams/allMessages` <br>Изменения в сообщениях чата в определенном канале:<br>`/teams/{id}/channels/{id}/messages`<br>Изменения в сообщениях чата во всех беседах:<br>`/chats/allMessages` <br>Изменения в сообщениях чата в определенном сеансе разговора:<br>`/chats/{id}/messages` | Да |
 
 > **Note**: любой путь к ресурсу, `/users/{id}` который начинается с `/me` , может также принять ссылку на пользователя, выполнившего вход в систему.
 

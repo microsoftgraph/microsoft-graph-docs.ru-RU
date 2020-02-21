@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Ресурс list представляет список на сайте.
 doc_type: resourcePageType
-ms.openlocfilehash: 51821bb20188c004af3f2aca868c3cfd953ce19c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: db6fceb1f7806b5356a4e75f1e4fb6a247bd5b00
+ms.sourcegitcommit: f51ba08d604d93f5f6af9ee8979cbf76baa285ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036409"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42108485"
 ---
 # <a name="list-resource"></a>Ресурс List
 
@@ -30,12 +30,14 @@ ms.locfileid: "36036409"
 | Стандартная задача               | Метод HTTP
 |:--------------------------|:------------------------------
 | [Получение списка][]              | GET /lists/{list-id}
+| [Создание списка][]           | POST /lists
 | [Перечисление элементов списка][]  | GET /lists/{list-id}/items
 | [Обновление элемента списка][]      | PATCH /lists/{list-id}/items/{item-id}
 | [Удаление элемента списка][]      | DELETE /lists/{list-id}/items/{item-id}
 | [Создание элемента в списке][]      | POST /lists/{list-id}
 
 [Получение списка]: ../api/list-get.md
+[Создание списка]: ../api/list-create.md
 [Перечисление элементов списка]: ../api/listitem-list.md
 [Обновление элемента списка]: ../api/listitem-update.md
 [Удаление элемента списка]: ../api/listitem-delete.md

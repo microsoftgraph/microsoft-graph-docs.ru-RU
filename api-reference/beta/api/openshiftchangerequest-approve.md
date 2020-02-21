@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e3190a92312fe0482bb327f266ebd46d70cbd850
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 1301a975dcf858ff1d6f65beb1665d3ca5933de6
+ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42159579"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219687"
 ---
 # <a name="openshiftchangerequest-approve"></a>Опеншифтчанжерекуест: утверждение
 
@@ -33,7 +33,7 @@ ms.locfileid: "42159579"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{teamId}/schedule/openShiftsChangeRequests/{openShiftRequestId}/approve
+POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/approve
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -68,7 +68,7 @@ POST /teams/{teamId}/schedule/openShiftsChangeRequests/{openShiftRequestId}/appr
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{teamId}/schedule/openShiftsChangeRequests/{openShiftRequestId}/approve
+POST https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/approve
 Content-type: application/json
 
 {

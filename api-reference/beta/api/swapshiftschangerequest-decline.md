@@ -1,22 +1,22 @@
 ---
-title: 'Опеншифтчанжерекуест: отклонить'
-description: Отклонить запрос опеншифт.
+title: 'Свапшифтсчанжерекуест: отклонить'
+description: Отклонить запрос на замену.
 localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3b59bd65a79c7a8185749639ef725504c80424ee
+ms.openlocfilehash: 35d7d9d83dc32d7598815ed8d98e7f6f828d8b1f
 ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219659"
+ms.locfileid: "42219795"
 ---
-# <a name="openshiftchangerequest-decline"></a>Опеншифтчанжерекуест: отклонить
+# <a name="swapshiftschangerequest-decline"></a>Свапшифтсчанжерекуест: отклонить
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отклонить объект [опеншифтчанжерекуест](../resources/openshiftchangerequest.md) .
+Отклонить объект [свапшифтсчанжерекуест](../resources/swapshiftschangerequest.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -33,7 +33,7 @@ ms.locfileid: "42219659"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/decline
+POST /teams/{id}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId}/decline
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -41,6 +41,7 @@ POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/de
 | Имя          | Описание   |
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
+| Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -63,11 +64,11 @@ POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/de
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
-  "name": "openshiftchangerequest_decline"
+  "name": "swapshiftchangerequest_decline"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/decline
+POST https://graph.microsoft.com/beta/teams/{id}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId}/decline
 Content-type: application/json
 
 {
@@ -85,14 +86,14 @@ Content-type: application/json
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 204 NO CONTENT
 ```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "openShiftChangeRequest: decline",
+  "description": "swapShiftChangeRequest: decline",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
