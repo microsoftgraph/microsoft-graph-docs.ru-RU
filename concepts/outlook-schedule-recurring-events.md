@@ -4,12 +4,12 @@ description: Повторяющиеся события — важная сост
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 9cdd7e7170dc48c2739514674786893efeae1b4e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8730ca8ad7694782afafcabbc7d02f138f8fbb22
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570350"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162528"
 ---
 # <a name="schedule-repeating-appointments-as-recurring-events-in-outlook"></a>Планирование повторных встреч как повторяющихся событий в Outlook
 
@@ -358,4 +358,8 @@ ms.locfileid: "32570350"
 
 ## <a name="next-steps"></a>Дальнейшие действия
     
-Узнайте больше об [интеграции с календарем Outlook](outlook-calendar-concept-overview.md).
+- Узнайте больше об [интеграции с Календарем Outlook](outlook-calendar-concept-overview.md).
+- Другие примеры повторяющихся событий см. в справочнике по API календаря:
+  - [Создание события, повторяющегося раз в неделю](/graph/api/user-post-events?view=graph-rest-1.0#request-3)
+  - [Создание ежедневно повторяющегося события](/graph/api/user-post-events?view=graph-rest-1.0#request-4)
+

@@ -4,12 +4,12 @@ description: Запрос позволяет запрашивать добавл
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: ef3a310dc4ccaf4ea1d858dfe913d626855b24d8
-ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
+ms.openlocfilehash: c41185f7c8679dc2df06ae6a47a55c2f904012be
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41652032"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42163691"
 ---
 # <a name="get-incremental-changes-for-users"></a>Получение добавочных изменений для пользователей
 
@@ -158,7 +158,7 @@ GET https://graph.microsoft.com/v1.0/users/delta?$deltatoken=oEcOySpF_hWYmTIUZBO
 
 ## <a name="deltalink-response"></a>Ответ deltaLink
 
-Если изменений не произошло, возвращается тот же маркер `deltaToken` без результатов.
+Если изменений не произошло, возвращается другой маркер `deltatoken` без результатов.
 
 ```http
 HTTP/1.1 200 OK
@@ -171,7 +171,7 @@ Content-type: application/json
 }
 ```
 
-Если же обнаружены изменения, возвращается маркер `deltaToken`, включающий коллекцию измененных пользователей.
+Если же обнаружены изменения, возвращается другой маркер `deltatoken`, включающий коллекцию измененных пользователей.
 
 ```http
 HTTP/1.1 200 OK

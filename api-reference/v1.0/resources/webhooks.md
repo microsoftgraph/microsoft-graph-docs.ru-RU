@@ -5,12 +5,12 @@ localization_priority: Priority
 author: baywet
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: d951c7c188a9202b550092b0c51624cc4d0284ce
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: aadd1cb451a5da1c8d546ce140bd8129ca9c2bf8
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216877"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42162514"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Получение уведомлений об изменениях с помощью API Microsoft Graph 
 
@@ -18,17 +18,22 @@ REST API Microsoft Graph использует механизм веб-перех
 
 С помощью API Microsoft Graph приложение может подписаться на изменения для следующих ресурсов:
 
-- [Сообщение][] Outlook
-- [Событие][] Outlook
-- Личный [контакт][] Outlook
-- [user][]
-- [group][]
-- Групповой [чат][] Office 365 
-- Контент внутри иерархии _любой папки_ [driveItem][] на персональном хранилище OneDrive пользователя
-- Контент внутри иерархии _корневой папки_ [driveItem][] на персональном хранилище OneDrive для бизнеса
-- [Оповещение][] безопасности
+| **Ресурс** | **Поддерживаемые пути ресурсов** | **Можно ли данные ресурсов включать в уведомления**                  |
+|:----------------|:------------|:-----------------------------------------|
+| [Сообщение][] Outlook | `/users/{id}/messages`<br>`/users/{id}/mailFolders('inbox')/messages` | Нет |
+| [Событие][] Outlook | `/users/{id}/events` | Нет |
+| Личный [контакт][] Outlook | `/users/{id}/contacts` | Нет |
+| [user][] | `/users` (изменения всех пользователей)<br>`/users/{id}` (изменения определенного пользователя) | Нет |
+| [group][] | `/groups` (изменения всех групп)<br>`/groups/{id}` (изменения определенной группы) | Нет |
+| Групповой [чат][] Office 365  | `groups/{id}/conversations` | Нет |
+| Контент внутри иерархии _любой папки_ [driveItem][] в персональном хранилище OneDrive пользователя | `/me/drive/root` | Нет |
+| Контент внутри иерархии _корневой папки_ [driveItem][] в персональном хранилище OneDrive для бизнеса | `/drives/{id}/root`<br> `/me/drive/root` | Нет |
+| [Оповещение][] безопасности | `/security/alerts/{id}` (изменения определенного оповещения) <br> `/security/alerts/?$filter` (изменения отфильтрованных оповещений) | Нет |
+| [chatMessage](/graph/api/resources/subscription?view=graph-rest-beta) Teams | `/teams/allMessages` (сообщения во всех каналах всех команд)<br>`/teams/{id}/channels/{id}/messages` (сообщения в определенном канале)<br>`/chats/allMessages` (сообщения во всех чатах)<br>`/chats/{id}/messages` (сообщения в определенном чате) | Да |
 
-## <a name="permissions"></a>Разрешения
+> **Примечание**. Любой путь ресурса, начинающийся с `/users/{id}`, может принимать `/me` для указания вошедшего пользователя.
+
+## <a name="permissions"></a>Permissions
 
 В общем случае для операций с подписками необходимо разрешение на чтение ресурса. Например, чтобы получать уведомления для сообщений, приложению необходимо разрешение `Mail.Read`. В статье, посвященной [созданию подписок](../api/subscription-post-subscriptions.md), перечислены разрешения, необходимые для каждого типа ресурса. В таблице ниже перечислены типы разрешений, которые ваше приложение может запрашивать, чтобы использовать веб-перехватчики для определенных типов ресурсов.
 
