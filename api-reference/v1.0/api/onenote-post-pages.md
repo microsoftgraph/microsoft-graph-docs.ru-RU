@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 9db168bda1c79232bb18b76464732e10e75331e9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 58ec80676455c4804723771e5e71fbab30a9a2c1
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35976371"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42163418"
 ---
 # <a name="create-page"></a>Создание страницы
 
@@ -18,7 +18,10 @@ ms.locfileid: "35976371"
 
 Чтобы создать страницу в другом разделе записной книжки, используемой по умолчанию, `sectionName` можно использовать параметр запроса.  Пример: `../onenote/pages?sectionName=My%20section`
 
-Эта `POST /onenote/pages` операция используется только для создания страниц в записной книжке текущего пользователя по умолчанию. Если вы нацелены на другие записные книжки, вы можете [создавать страницы в указанном разделе](../api/section-post-pages.md).           
+Эта `POST /onenote/pages` операция используется только для создания страниц в записной книжке текущего пользователя по умолчанию. Если вы нацелены на другие записные книжки, вы можете [создавать страницы в указанном разделе](../api/section-post-pages.md).  
+
+> **Примечание:** Существует предельное число страниц, которые можно добавить в раздел с помощью этого API. Дополнительные сведения см. в статье [Создание страниц OneNote](/graph/onenote-create-page) для всех ограничений с помощью этого API.
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
