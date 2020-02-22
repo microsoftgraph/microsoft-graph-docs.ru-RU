@@ -4,12 +4,12 @@ description: " Корпоративная записная книжка в Offic
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: 2db43dd8ec2d0cf58f2938b78054986823f433c4
-ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
+ms.openlocfilehash: 57b4531770a78f030d093d4c486760d64d9764ea
+ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37418217"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42163060"
 ---
 # <a name="get-onenote-content-and-structure-with-microsoft-graph"></a>Получение содержимого и структуры OneNote с помощью Microsoft Graph
 
@@ -556,7 +556,7 @@ URI ресурса файла можно найти в [выходном HTML-к
  
 | Параметр запроса | Пример и описание |  
 |------|------|  
-| count | <p>`count=true`</p><p>Количество записей в коллекции. Значение возвращается в свойстве **@odata.count** отклика.</p> |  
+| count | <p>`count=true`</p><p>Количество объектов в коллекции. Значение возвращается в свойстве **\@odata.count** ответа.</p> |  
 | expand | <p>`expand=sections,sectionGroups`</p><p>Свойства навигации, которые следует вернуть в тексте ответа. Для выражений **expand** поддерживаются следующие свойства:<br /> страницы: **parentNotebook**, **parentSection**;<br /> разделы: **parentNotebook**, **parentSectionGroup**;<br /> группы разделов: **sections**, **sectionGroups**, **parentNotebook**, **parentSectionGroup**;<br /> записные книжки: **sections**, **sectionGroups**.</p><p>По умолчанию запросы GET для страниц разворачивают **parentSection** и выделяют свойства раздела **id**, **name** и **self**. По умолчанию запросы GET для разделов и групп разделов разворачивают как **parentNotebook**, так и **parentSectionGroup**, а также выделяют родительские свойства **id**, **name** и **self**.</p><p>Может использоваться для одного объекта или коллекции.<br />Свойства следует разделять запятыми.<br />В именах свойств учитывается регистр.</p> |   
 | filter | <p>`filter=isDefault eq true`</p><p>Логическое выражение, указывающее, следует ли включать запись в набор результатов. Поддерживаются следующие функции и операторы OData:<br /> — операторы сравнения: **eq**, **ne**, **gt**, **ge**, **lt**, **le**;<br /> — логические операторы: **and**, **or**, **not**;<br /> — строковые функции: **contains**, **endswith**, **startswith**, **length**, **indexof**, **substring**, **tolower**, **toupper**, **trim**, **concat**.</p><p>В случае имен [свойств](#onenote-entity-properties) и сравнения строк OData учитывается регистр. Рекомендуем использовать функцию OData **tolower** для сравнения строк.<br /><br />**Пример**: `filter=tolower(name) eq 'spring'`.</p> |  
 | orderby | <p>`orderby=title,createdTime desc`</p><p>
@@ -661,7 +661,7 @@ not | `not contains(tolower(title),'school')` |
 |------|------|  
 | Код успешного завершения | Код состояния HTTP 200 |  
 | Текст ответа | Представление объекта или набора объектов в формате JSON, HTML-код страницы или двоичные данные файлового ресурса.  |  
-| Ошибки | Если запрос завершается с ошибкой, API возвращает [ошибки](onenote-error-codes.md) в объекте **@api.diagnostics** в тексте ответа. |  
+| Ошибки | Если запрос завершается сбоем, API возвращает [ошибки](onenote-error-codes.md) в объекте **\@api.diagnostics** в тексте ответа. |  
 | Заголовок X-CorrelationId | GUID, уникальный идентификатор запроса. Это значение можно использовать вместе со значением заголовка Date при устранении неполадок совместно со службой поддержки Майкрософт. |  
 
 
