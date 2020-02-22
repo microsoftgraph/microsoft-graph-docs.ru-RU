@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 0bdf257a202e976b24aa15d01c63499218eb5af6
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 5a8f89b2c31480b8cd0b11374c7dc7d74cd3653c
+ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42163698"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219603"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -56,7 +56,7 @@ ms.locfileid: "42163698"
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | 1.0 | Добавлен [API group: assignLicense](/graph/api/group-assignlicense.md?view=graph-rest-1.0), с помощью которого можно назначить лицензию [группе](/graph/api/resources/group?view=graph-rest-1.0). |
+| Дополнение | 1.0 | Добавлен [API group: assignLicense](/graph/api/group-assignlicense?view=graph-rest-1.0), с помощью которого можно назначить лицензию [группе](/graph/api/resources/group?view=graph-rest-1.0). |
 
 ### <a name="identity-and-access-azure-ad"></a>Удостоверение и доступ (Azure AD)
 
@@ -64,11 +64,17 @@ ms.locfileid: "42163698"
 |:---|:---|:---|
 | Дополнение | Бета-версия и версия 1.0 | Добавлено свойство **latestSupportedTlsVersion** для объекта [subscription](/graph/api/resources/subscription?view=graph-rest-1.0). Указывает последнюю версию TLS, поддерживаемую конечной точкой уведомлений. Позволяет подписчикам использовать устаревшую версию TLS в течение ограниченного периода. Подробности см. в статье [Подписки Microsoft Graph — прекращение поддержки TLS 1.0 и 1.1](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/). |
 
+### <a name="teamwork-microsoft-teams"></a>Работа в команде (Microsoft Teams)
+
+| **Тип изменения** | **Версия** | **Описание**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Дополнение | Бета-версия | Добавлен метод [swapShiftsChangeRequest: decline](/graph/api/swapshiftschangerequest-decline?view=graph-rest-beta) для ресурса **swapShiftsChangeRequest**. |
+
 ### <a name="users"></a>Пользователи
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Дополнение | 1.0 | Добавлен [API user: reprocessLicenseAssignment](/graph/api/user-reprocesslicenseassignment.md), с помощью которого можно переработать все групповые назначения лицензий для [пользователя](/graph/api/resources/user.md?view=graph-rest-1.0). |
+| Дополнение | 1.0 | Добавлен [API user: reprocessLicenseAssignment](/graph/api/user-reprocesslicenseassignment), с помощью которого можно переработать все групповые назначения лицензий для [пользователя](/graph/api/resources/user?view=graph-rest-1.0). |
 | Добавление | 1.0 | Добавлено свойство **identities** для ресурса [user](/graph/api/resources/user?view=graph-rest-1.0). Это свойство представляет набор удостоверений (например, местные учетные записи и учетные записи социальных сетей), которые пользователь может использовать для входа.|
 
 ## <a name="january-2020"></a>Январь 2020 г.
@@ -625,7 +631,7 @@ ms.locfileid: "42163698"
 |Дополнение|Бета|Добавлены свойства **attackSurfaceReductionRules** и **bitLockerRecoveryPasswordRotation** для объекта [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration)|
 |Дополнение|Бета-версия|Добавлены свойства **trackInstallProgressForAutopilotOnly** и **disableUserStatusTrackingAfterFirstUser** для объекта [windows10EnrollmentCompletionPageConfiguration](/graph/api/resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration)|
 |Дополнение|Бета|Добавлено свойство навигации **policySets** для объекта [deviceAppManagement](/graph/api/resources/intune-apps-deviceappmanagement)|
-|Дополнение|Бета|Добавлены свойства навигации **appleUserInitiatedEnrollmentProfiles**, **autopilotEvents** и **windowsFeatureUpdateProfiles** для объекта [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement)|
+|Добавление|Бета|Добавлены свойства навигации **appleUserInitiatedEnrollmentProfiles**, **autopilotEvents** и **windowsFeatureUpdateProfiles** для объекта [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement)|
 |Дополнение|Бета|Добавлено свойство **value** для сложного типа [insightValueDouble](/graph/api/resources/intune-devices-insightvaluedouble)|
 |Дополнение|Бета|Добавлено свойство **value** для сложного типа [insightValueInt](/graph/api/resources/intune-devices-insightvalueint)|
 |Дополнение|Бета|Добавлено свойство **v13_0** для сложного типа [iosMinimumOperatingSystem](/graph/api/resources/intune-apps-iosminimumoperatingsystem)|
@@ -3874,7 +3880,7 @@ ms.locfileid: "42163698"
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | Бета-версия        | Добавлено свойство invitedUserType к типу объекта приглашений, определяющее тип приглашаемого пользователя (**Guest** или **Member**). |
-| Удаление        | Бета        | Мы удалим свойство invitedToGroups для типа объекта invitation 11 ноября 2016 г. Это значит, что вы больше не сможете добавить приглашаемого пользователя в группу с помощью этого API. Это можно будет сделать с помощью [API добавления членов](/graph/api/group-post-members?view=graph-rest-1.0). |
+| Удаление        | Бета-версия        | Мы удалим свойство invitedToGroups для типа объекта invitation 11 ноября 2016 г. Это значит, что вы больше не сможете добавить приглашаемого пользователя в группу с помощью этого API. Это можно будет сделать с помощью [API добавления членов](/graph/api/group-post-members?view=graph-rest-1.0). |
 
 ## <a name="september-2016"></a>Сентябрь 2016 г.
 
@@ -3882,7 +3888,7 @@ ms.locfileid: "42163698"
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Добавление        | Бета        | Теперь API Azure AD Application Proxy доступны в конечной точке Microsoft Graph бета-версии. Эти API позволяют безопасно публиковать локальные приложения для пользователей, находящихся за пределами корпоративной сети, используя Azure AD в качестве общей системы управления доступом. Опубликованные API позволяют создавать приложения, которые могут получать и обновлять различные аспекты прокси приложения, например параметры _connectors_, _connectorGroups_ и _onPremisesPublishing_ приложения. |
+| Дополнение        | Бета        | Теперь API Azure AD Application Proxy доступны в конечной точке Microsoft Graph бета-версии. Эти API позволяют безопасно публиковать локальные приложения для пользователей, находящихся за пределами корпоративной сети, используя Azure AD в качестве общей системы управления доступом. Опубликованные API позволяют создавать приложения, которые могут получать и обновлять различные аспекты прокси приложения, например параметры _connectors_, _connectorGroups_ и _onPremisesPublishing_ приложения. |
 
 ### <a name="files-onedrive-for-business"></a>Файлы (OneDrive для бизнеса)
 

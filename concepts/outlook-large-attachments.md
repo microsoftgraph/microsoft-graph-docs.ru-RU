@@ -4,19 +4,21 @@ description: В зависимости от размера файла можно
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 74cc6ad4af5d649ca480c7b708b0716062e8d36a
-ms.sourcegitcommit: 1a84f80798692fc0381b1acecfe023b3ce6ab02c
+ms.openlocfilehash: f6087de7146dd7b395bbe122097a41bd221c1da5
+ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41953608"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "42229754"
 ---
 # <a name="attach-large-files-to-outlook-messages-as-attachments-preview"></a>Прикрепление крупных файлов к сообщениям Outlook в виде вложений (предварительная версия)
 
 В зависимости от размера файла можно выбрать один из двух способов вложения файлов в [сообщения](/graph/api/resources/message?view=graph-rest-beta).
 
-- Если размер файла меньше 4 МЬ, можно выполнить одну операцию [POST для свойства навигации вложений сообщения](/graph/api/message-post-attachments?view=graph-rest-beta). Успешный отклик `POST` включает ИД файла, прикрепленного к сообщению.
-- Если размер файла составляет от 3 до 150 МБ, создайте сеанс отправки и итеративно используйте `PUT` для отправки диапазонов байтов, пока не будет отправлен весь файл. Заголовок в итоговом успешном отклике `PUT` включает URL-адрес с ИД вложения.
+- Если размер файла меньше 3 МБ, можно выполнить одну операцию [POST для свойства навигации вложений сообщения](/graph/api/message-post-attachments?view=graph-rest-beta). Успешный отклик `POST` включает ИД файла, прикрепленного к сообщению.
+- Если размер файла составляет от 3 до 150 МБ, создайте сеанс отправки и итеративно используйте `PUT` для отправки диапазонов байтов, пока не будет отправлен весь файл. Заголовок в итоговом успешном отклике `PUT` включает URL-адрес с ИД вложения. 
+
+Чтобы вложить в сообщение несколько файлов, выберите способ для каждого файла на основе их размеров и вложите их по отдельности.
 
 В этой статье используется пример для иллюстрации второго подхода. В этом примере создается и используется сеанс отправки, чтобы добавить большой файл (размером свыше 3 МБ) к определенному сообщению в качестве вложения. После успешной отправки всего файла возвращается URL-адрес с ИД вложения, с которыми можно выполнять другие операции, например получать метаданные о вложенном файле.
 
@@ -32,7 +34,7 @@ ms.locfileid: "41953608"
 
 ### <a name="example-request-create-an-upload-session"></a>Пример запроса: создание сеанса отправки
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "walkthrough_create_uploadsession",
@@ -50,15 +52,15 @@ Content-type: application/json
   }
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/walkthrough-create-uploadsession-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/walkthrough-create-uploadsession-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/walkthrough-create-uploadsession-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -255,5 +257,9 @@ DELETE https://outlook.office.com/api/beta/Users('a8e8e219-4931-95c1-b73d-62626f
 ```http
 HTTP/1.1 204 No content
 ```
+## <a name="errors"></a>Ошибки
 
+### <a name="errorattachmentsizeshouldnotbelessthanminimumsize"></a>ErrorAttachmentSizeShouldNotBeLessThanMinimumSize
+
+Эта ошибка возвращается при попытке [создать сеанс отправки](/graph/api/attachment-createuploadsession?view=graph-rest-beta), чтобы вложить файл размером менее 3 МБ. Если размер файла меньше 3 МБ, следует выполнить одну операцию [POST для свойства навигации вложений сообщения](/graph/api/message-post-attachments?view=graph-rest-beta). Успешный отклик `POST` включает ИД файла, прикрепленного к сообщению.
 
