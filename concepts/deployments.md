@@ -1,12 +1,12 @@
 ---
 title: Национальные облачные развертывания
 description: В дополнение к нашей глобальной сети центров обработки данных облачные службы Майкрософт доступны в трех отдельных национальных облачных службах. Эти национальные облачные версии являются физическими и логически изолированными от сети экземплярами корпоративных облачных служб Майкрософт, которые ограничены в пределах географических границ конкретных стран и обслуживаются местным персоналом.
-ms.openlocfilehash: 4da5570719cf64ba8fc329039e4ba4fcef7348b5
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: ba7ecccddadb65bcd2e1a3050be404256bf587e2
+ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969845"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42219771"
 ---
 # <a name="national-cloud-deployments"></a>Национальные облачные развертывания
 
@@ -65,15 +65,15 @@ ms.locfileid: "37969845"
 | Пользователи | ✔ | ✔ | ✔ |
 | Группы | ✔ | ✔ | ✔ |
 | Excel | ✔| ✔* | ✔ |
-| OneDrive | ✔ | ✔* | ✔ |
+| OneDrive; | ✔ | ✔* | ✔ |
 | Почта Outlook | ✔ | ✔ | ✔ |
 | Календарь Outlook | ✔ | ✔ | ✔ |
 | личные контакты; | ✔ | ✔ | ✔ |
-| SharePoint| ✔ | ✔ | ✔ |
+| SharePoint;| ✔ | ✔ | ✔ |
 | Планировщик|✔ |✔ |✔ |
 | Отчеты  |➖| ✔ |➖|
 | Уведомления об изменениях (веб-перехватчики)  | ➖|✔* |✔* |
-| Разностный запрос | ➖ | ➖| ➖ |
+| Разностный запрос | ➖ | ✔ | ➖ |
 | Расширения схемы каталога |➖|➖|➖|
 | Расширения открытого типа|➖|➖|➖|
   
@@ -96,4 +96,4 @@ ms.locfileid: "37969845"
 - [Office 365 Germany](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-germany)
 - [Правительственные учреждения Azure](https://azure.microsoft.com/global-infrastructure/government/)
 - [Azure Китая 21Vianet](https://docs.microsoft.com/azure/china/)
-- [Azure Германия](https://docs.microsoft.com/azure/germany/)
+- [Azure для Германии](https://docs.microsoft.com/azure/germany/)
