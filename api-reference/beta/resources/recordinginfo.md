@@ -5,29 +5,30 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: e924ea98bb0f9ac8e0b610a4672cbed83d83d0bc
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 644ba7fbd762acde7f5229d15267de5352f03ca8
+ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913445"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42268317"
 ---
-# <a name="recordinginfo-resource-type"></a><span data-ttu-id="68f91-103">Тип ресурса Рекордингинфо</span><span class="sxs-lookup"><span data-stu-id="68f91-103">recordingInfo resource type</span></span>
+# <a name="recordinginfo-resource-type"></a><span data-ttu-id="d3deb-103">Тип ресурса Рекордингинфо</span><span class="sxs-lookup"><span data-stu-id="d3deb-103">recordingInfo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="68f91-104">Сведения о записи для участника.</span><span class="sxs-lookup"><span data-stu-id="68f91-104">Recording information for a participant.</span></span>
+<span data-ttu-id="d3deb-104">Сведения о записи для участника.</span><span class="sxs-lookup"><span data-stu-id="d3deb-104">Recording information for a participant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="68f91-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="68f91-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="d3deb-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="d3deb-105">Properties</span></span>
 
-| <span data-ttu-id="68f91-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="68f91-106">Property</span></span>        | <span data-ttu-id="68f91-107">Тип</span><span class="sxs-lookup"><span data-stu-id="68f91-107">Type</span></span>    | <span data-ttu-id="68f91-108">Описание</span><span class="sxs-lookup"><span data-stu-id="68f91-108">Description</span></span>|
+| <span data-ttu-id="d3deb-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="d3deb-106">Property</span></span>        | <span data-ttu-id="d3deb-107">Тип</span><span class="sxs-lookup"><span data-stu-id="d3deb-107">Type</span></span>    | <span data-ttu-id="d3deb-108">Описание</span><span class="sxs-lookup"><span data-stu-id="d3deb-108">Description</span></span>|
 |:----------------|:--------|:----------|
-| <span data-ttu-id="68f91-109">initiatedBy</span><span class="sxs-lookup"><span data-stu-id="68f91-109">initiatedBy</span></span>     | [<span data-ttu-id="68f91-110">participantInfo</span><span class="sxs-lookup"><span data-stu-id="68f91-110">participantInfo</span></span>](participantinfo.md) | <span data-ttu-id="68f91-111">Участник, который инициировал запись.</span><span class="sxs-lookup"><span data-stu-id="68f91-111">The participant who initiated the recording.</span></span> |
-| <span data-ttu-id="68f91-112">рекордингстатус</span><span class="sxs-lookup"><span data-stu-id="68f91-112">recordingStatus</span></span> | <span data-ttu-id="68f91-113">String</span><span class="sxs-lookup"><span data-stu-id="68f91-113">String</span></span> | <span data-ttu-id="68f91-114">`unknown`Возможные значения: `notRecording`,, `recording`, или. `failed`</span><span class="sxs-lookup"><span data-stu-id="68f91-114">Possible values are: `unknown`, `notRecording`, `recording`, or `failed`.</span></span> |
+| <span data-ttu-id="d3deb-109">initiatedBy</span><span class="sxs-lookup"><span data-stu-id="d3deb-109">initiatedBy</span></span>     | [<span data-ttu-id="d3deb-110">participantInfo</span><span class="sxs-lookup"><span data-stu-id="d3deb-110">participantInfo</span></span>](participantinfo.md) | <span data-ttu-id="d3deb-111">Участник, который инициировал запись.</span><span class="sxs-lookup"><span data-stu-id="d3deb-111">The participant who initiated the recording.</span></span> |
+| <span data-ttu-id="d3deb-112">рекордингстатус</span><span class="sxs-lookup"><span data-stu-id="d3deb-112">recordingStatus</span></span> | <span data-ttu-id="d3deb-113">Строка</span><span class="sxs-lookup"><span data-stu-id="d3deb-113">String</span></span> | <span data-ttu-id="d3deb-114">`unknown`Возможные значения: `notRecording`,, `recording`, или. `failed`</span><span class="sxs-lookup"><span data-stu-id="d3deb-114">Possible values are: `unknown`, `notRecording`, `recording`, or `failed`.</span></span> |
+| <span data-ttu-id="d3deb-115">initiator</span><span class="sxs-lookup"><span data-stu-id="d3deb-115">initiator</span></span> | [<span data-ttu-id="d3deb-116">identitySet</span><span class="sxs-lookup"><span data-stu-id="d3deb-116">identitySet</span></span>](identitySet.md) | <span data-ttu-id="d3deb-117">Идентификаторы инициатора записи.</span><span class="sxs-lookup"><span data-stu-id="d3deb-117">The identities of recording initiator.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="68f91-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="68f91-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d3deb-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d3deb-118">JSON representation</span></span>
 
-<span data-ttu-id="68f91-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="68f91-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="d3deb-119">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d3deb-119">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -39,7 +40,8 @@ ms.locfileid: "40913445"
 ```json
 {
   "initiatedBy": {"@odata.type": "#microsoft.graph.participantInfo"},
-  "recordingStatus": "unknown | notRecording | recording | failed"
+  "recordingStatus": "unknown | notRecording | recording | failed",
+  "initiator": {"@odata.type": "#microsoft.graph.initiator"}
 }
 ```
 
