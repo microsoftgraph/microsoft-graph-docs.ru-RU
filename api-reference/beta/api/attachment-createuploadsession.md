@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 116efc7583b0344cc1845f698210f760e3843d9b
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 11984b8f0976c3410cd05f2d4a7252939f3e6786
+ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37968925"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42268362"
 ---
 # <a name="attachment-createuploadsession"></a>вложение: createUploadSession
 
@@ -18,7 +18,7 @@ ms.locfileid: "37968925"
 
 Создайте сеанс отправки, который позволяет приложению итеративно отправлять диапазоны файлов, чтобы прикрепить файл к указанному [сообщению](../resources/message.md).
 
-Используйте этот способ, чтобы прикрепить к **сообщению**файлы размером от 3 мб до 150 МБ. Чтобы вложить файлы размером в 4 МБ, просто [выполните команду POST в свойстве навигации вложений](message-post-attachments.md). 
+Используйте этот способ, чтобы прикрепить файл к **сообщению** , если размер файла находится в пределах от 3 мб до 150 МБ. Чтобы присоединить файл размером менее 3 МБ, [выполните команду POST в свойстве навигации вложений](message-post-attachments.md). 
 
 В качестве части ответа это действие возвращает URL-адрес отправки, который можно использовать в последующих последовательных `PUT` запросах. Заголовки запросов для каждой `PUT` операции позволяют указать точный диапазон байтов для отправки. Это позволяет возобновить передачу в случае, если сетевое подключение будет разорвано во время отправки. 
 
@@ -69,7 +69,7 @@ POST /me/messages/{id}/attachments/createUploadSession
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `201, Created` возвращает код отклика и новый объект [uploadSession](../resources/uploadsession.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [uploadSession](../resources/uploadsession.md) в тексте отклика.
 
 >**Примечание.** 
 >
@@ -82,13 +82,11 @@ POST /me/messages/{id}/attachments/createUploadSession
 
 ## <a name="examples"></a>Примеры
 
-Ниже приведен пример вызова этого API.
+В приведенном ниже примере показано, как создать сеанс отправки, который можно использовать в последующих операциях отправки файлов.
 
 ### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса.
-
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "attachment_createuploadsession",
@@ -107,15 +105,15 @@ Content-type: application/json
   }
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/attachment-createuploadsession-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/attachment-createuploadsession-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/attachment-createuploadsession-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -123,8 +121,6 @@ Content-type: application/json
 
 
 ### <a name="response"></a>Отклик
-
-Ниже приведен пример отклика.
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 

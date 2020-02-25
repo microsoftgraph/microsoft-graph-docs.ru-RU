@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: e924ea98bb0f9ac8e0b610a4672cbed83d83d0bc
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 644ba7fbd762acde7f5229d15267de5352f03ca8
+ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913445"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42268317"
 ---
 # <a name="recordinginfo-resource-type"></a>Тип ресурса Рекордингинфо
 
@@ -23,7 +23,8 @@ ms.locfileid: "40913445"
 | Свойство        | Тип    | Описание|
 |:----------------|:--------|:----------|
 | initiatedBy     | [participantInfo](participantinfo.md) | Участник, который инициировал запись. |
-| рекордингстатус | String | `unknown`Возможные значения: `notRecording`,, `recording`, или. `failed` |
+| рекордингстатус | Строка | `unknown`Возможные значения: `notRecording`,, `recording`, или. `failed` |
+| initiator | [identitySet](identitySet.md) | Идентификаторы инициатора записи. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -39,7 +40,8 @@ ms.locfileid: "40913445"
 ```json
 {
   "initiatedBy": {"@odata.type": "#microsoft.graph.participantInfo"},
-  "recordingStatus": "unknown | notRecording | recording | failed"
+  "recordingStatus": "unknown | notRecording | recording | failed",
+  "initiator": {"@odata.type": "#microsoft.graph.initiator"}
 }
 ```
 

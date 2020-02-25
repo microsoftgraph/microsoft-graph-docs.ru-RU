@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ef2b53a9b907146c91bb66e269c6f604c2b26d57
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 847bb4f25cfdadecc3983ac7365eff8146200094
+ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938690"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42268386"
 ---
 # <a name="update-event"></a>Обновление события
 
@@ -64,12 +64,12 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 | categories|String|Категории, связанные с событием.|
 | end|DateTimeTimeZone|Дата, время и часовой пояс завершения события. |
 | importance|String|Важность события. Возможные значения: `low`, `normal`, `high`.|
-| isAllDay|Boolean|Задайте значение true, если событие длится весь день.|
-|исонлинемитинг|Boolean| `True`, если это событие содержит сведения о собрании по сети, `false` в противном случае. Значение по умолчанию — false. Необязательный элемент.|
-| isReminderOn|Boolean|Задайте значение true, если установлено напоминание пользователю о событии.|
+| isAllDay|Boolean|Задайте значение true, если событие длится весь день. Если задано значение true, независимо от того, является ли событие одним или несколькими днями, время начала и окончания должно быть равно полночи и находиться в одном часовом поясе.|
+|isOnlineMeeting|Boolean| `True`, если это событие содержит информацию о собраниях по сети; в противном случае — `false`. Значение по умолчанию: false. Необязательно.|
+| isReminderOn|Логический|Задайте значение true, если установлено напоминание пользователю о событии.|
 | location|Расположение|Место проведения события.|
 |locations|Коллекция [Location](../resources/location.md)|Места проведения события или участия в нем. Свойства **location** и **locations** всегда совпадают друг с другом. Если вы обновите свойство **location**, предыдущие места в коллекции **locations** будут удалены и заменены новым значением **location**. |
-|онлинемитингпровидер|онлинемитингпровидертипе| Представляет поставщика службы собраний по сети. Возможные значения: `teamsForBusiness`, `skypeForBusiness`и. `skypeForConsumer` Необязательный элемент. |
+|onlineMeetingProvider|onlineMeetingProviderType| Представляет поставщика службы собраний по сети. Возможные значения: `teamsForBusiness`, `skypeForBusiness` и `skypeForConsumer`. Необязательный. |
 | recurrence|PatternedRecurrence|Расписание повторения события.|
 | reminderMinutesBeforeStart|Int32|Позволяет указать, за сколько минут до начала события появляется напоминание.|
 | responseRequested|Boolean|Задайте значение true, если отправитель желает получить сообщение о согласии участвовать в событии или отклонении соответствующего приглашения.|
@@ -94,7 +94,7 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 
 Ниже приведен пример запроса.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_event"
@@ -119,11 +119,11 @@ Content-length: 285
   "isReminderOn": true
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-event-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-event-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

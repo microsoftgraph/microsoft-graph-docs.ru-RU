@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 6e1822c1f528d58a825abcecb5aecfdc05213fee
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 27919e11c29d5003ba3be4a0fe25f531b5206c5d
+ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42161504"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42268409"
 ---
 # <a name="create-event"></a>Создание события
 
@@ -81,10 +81,10 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-create-an-event"></a>Пример 1: создание события
+### <a name="example-1-create-an-event-in-the-specified-time-zone-and-assign-the-event-an-optional-transactionid-value"></a>Пример 1: создание события в указанном часовом поясе и назначение события необязательному значению Трансактионид
 
 #### <a name="request"></a>Запрос
-Ниже приведен пример запроса. Использует заголовок запроса `Prefer: outlook.timezone`, чтобы указать часовой пояс для параметров времени **start** и **end** в отклике.
+Ниже приведен пример запроса. Для указания часового пояса начала и окончания в ответе используется заголовок запроса "предпочитать": Outlook. TimeZone. Он также задает свойство Трансактионид для уменьшения количества повторных попыток на сервере.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -122,7 +122,8 @@ Content-type: application/json
       "type": "required"
     }
   ],
-  "allowNewTimeProposals": true
+  "allowNewTimeProposals": true,
+  "transactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -179,6 +180,7 @@ Content-length: 2197
     "isOrganizer":true,
     "responseRequested":true,
     "seriesMasterId":null,
+    "transactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7",
     "showAs":"busy",
     "type":"singleInstance",
     "webLink":"https://outlook.office365.com/owa/?itemid=AAMkAGI1AAAt9AHjAAA%3D&exvsurl=1&path=/calendar/item",
