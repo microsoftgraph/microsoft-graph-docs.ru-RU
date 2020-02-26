@@ -4,12 +4,12 @@ description: Запросы изменений позволяют приложе
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 5644505562bdd50be22ff421e3082f7a0dd5ebcd
-ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
+ms.openlocfilehash: 3ec98035d3d5e0de6a7ddd316446f3bd226930cf
+ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41651990"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42268427"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Отслеживание изменений в данных Microsoft Graph с помощью разностного запроса
 
@@ -62,6 +62,8 @@ ms.locfileid: "41651990"
 
 Для ресурсов [user](/graph/api/resources/user?view=graph-rest-1.0) и [group](/graph/api/resources/group?view=graph-rest-1.0) действуют ограничения на применение некоторых параметров запроса:
 
+- Параметр `$top` не поддерживается.
+- Параметр `$orderby` не поддерживается.
 - Если используется параметр запроса `$select`, это означает, что клиент предпочитает отслеживать изменения только для тех свойств или связей, которые указаны в операторе `$select`. При изменении свойства, которое не было выбрано, соответствующий ресурс не появится в отклике с различиями при последующем запросе.
 - `$select` также поддерживает навигационные свойства `manager` и `members` для пользователей и групп соответственно. Выбор этих свойств позволяет отслеживать изменения руководства и участия в группах для пользователя.
 
