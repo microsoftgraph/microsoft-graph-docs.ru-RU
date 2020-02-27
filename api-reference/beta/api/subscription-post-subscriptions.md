@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: fff6dd2d707ba75db352837e77089f97e58cb325
-ms.sourcegitcommit: 7b286637aa332cfd534a41526950b4f6272e0fd7
+ms.openlocfilehash: e5276d8cf4e0a096e1ce98c9247d0c46e9f515c9
+ms.sourcegitcommit: 568909e47fb075264584e440fd0cad978abfab11
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41774389"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42287991"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -27,7 +27,9 @@ ms.locfileid: "41774389"
 | Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Для приложений |
 |:-----|:-----|:-----|:-----|
 |[chatMessage](../resources/chatmessage.md) (/теамс/{ИД}/чаннелс/{ИД}/мессажес) | Не поддерживается | Не поддерживается | ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/теамс/аллмессажес--все сообщения каналов в организации) | Не поддерживается | Не поддерживается | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/ЧАТС/{ИД}/мессажес) | Не поддерживается | Не поддерживается | Chat.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/ЧАТС/аллмессажес--все сообщения чата в организации) | Не поддерживается | Не поддерживается | Chat.Read.All  |
 |[contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 |[driveItem](../resources/driveitem.md) (личное хранилище OneDrive пользователя) | Не поддерживается | Files.ReadWrite | Не поддерживается |
 |[driveItem](../resources/driveitem.md) (OneDrive для бизнеса) | Files.ReadWrite.All | Не поддерживается | Files.ReadWrite.All |
@@ -38,13 +40,23 @@ ms.locfileid: "41774389"
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Не поддерживается | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-> **Note:** для подписок на chatMessage требуется [Шифрование](/graph/webhooks-with-resource-data). Если [енкриптионцертификате](../resources/subscription.md) не указан, создание подписки завершится с ошибками.
+### <a name="chatmessage-microsoft-teams"></a>chatMessage (Microsoft Teams)
 
-> **Примечание:** Дополнительные ограничения применяются для подписок на OneDrive и элементов Outlook. Ограничения применяются к созданию и управлению (получению, обновлению и удалению) подписок.
+для подписок на **chatMessage** требуется [Шифрование](/graph/webhooks-with-resource-data). Если [енкриптионцертификате](../resources/subscription.md) не указан, создание подписки завершится с ошибками. Перед созданием подписки на **chatMessage** необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis). 
 
-- В личном хранилище OneDrive можно подписаться на корневую папку или любую вложенную папку в этом хранилище. В OneDrive для бизнеса можно подписаться только на корневую папку. Уведомления отправляются для требуемых типов изменений папки, на которую оформлена подписка, или любого файла, папки и других экземпляров **driveItem** в ее иерархии. Нельзя подписаться на экземпляры **drive** или **driveItem**, не являющиеся папками, например на отдельные файлы.
+> **Примечание:** `/teams/allMessages` и `/chats/allMessages` в настоящее время находятся в режиме предварительной версии. Во время предварительной версии вы можете использовать этот API без сборов в соответствии с [условиями использования API Майкрософт](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use?context=graph/context). Однако пользователям приложений, использующих API, может потребоваться подписка на конкретные решения Microsoft 365. После общедоступной доступности Корпорация Майкрософт может потребовать от вас или ваших клиентов взимать дополнительные сборы на основе объема данных, доступ к которым осуществляется через API.
 
-- В Outlook делегированные разрешения поддерживают подписку на элементы в папках только в почтовом ящике пользователя, вошедшего в систему. Это означает, например, что нельзя использовать делегированное разрешение Calendars.Read, чтобы подписаться на события в почтовом ящике другого пользователя.
+### <a name="driveitem-onedrive"></a>driveItem (OneDrive)
+
+Дополнительные ограничения применяются к подпискам на элементы OneDrive. Ограничения применяются к созданию и управлению (получению, обновлению и удалению) подписок.
+
+В личном хранилище OneDrive можно подписаться на корневую папку или любую вложенную папку в этом хранилище. В OneDrive для бизнеса можно подписаться только на корневую папку. Уведомления отправляются для требуемых типов изменений папки, на которую оформлена подписка, или любого файла, папки и других экземпляров **driveItem** в ее иерархии. Нельзя подписаться на экземпляры **drive** или **driveItem**, не являющиеся папками, например на отдельные файлы.
+
+### <a name="contact-event-and-message-outlook"></a>Contact, Event и Message (Outlook)
+
+Дополнительные ограничения применяются для подписок на элементы Outlook. Ограничения применяются к созданию и управлению (получению, обновлению и удалению) подписок.
+
+- Делегированное разрешение поддерживает подписку на элементы в папках только в почтовом ящике пользователя, выполнившего вход. Это означает, например, что нельзя использовать делегированное разрешение Calendars.Read, чтобы подписаться на события в почтовом ящике другого пользователя.
 - Чтобы подписаться на уведомления об изменениях контактов Outlook, событий или сообщений в _общих или делегированных_ папках:
 
   - Используйте соответствующее разрешение приложения для подписки на изменения элементов в папке или почтовом ящике _любого_ пользователя в клиенте.
@@ -73,11 +85,11 @@ POST /subscriptions
 ### <a name="request"></a>Запрос
 
 Предоставьте в тексте запроса описание объекта [subscription](../resources/subscription.md) в формате JSON.
-Поля `clientState` и `latestSupportedTlsVersion` являются необязательными.
+Поля `clientState` и `latestSupportedTlsVersion` необязательны.
 
 Этот запрос создает подписку на уведомления о новых сообщениях, получаемых пользователем, который вошел в систему.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_subscription_from_subscriptions"
@@ -96,15 +108,15 @@ Content-type: application/json
    "latestSupportedTlsVersion": "v1_2"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-subscription-from-subscriptions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-subscription-from-subscriptions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-subscription-from-subscriptions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -126,7 +138,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приводится пример отклика. 
+Ниже показан пример ответа. 
 
 >**Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
