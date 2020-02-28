@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 4c505ca57406b5ff6554f015c74ae702044e7e01
-ms.sourcegitcommit: cea768f767cf27a938b72bb26892d70e3dedaf2e
+ms.openlocfilehash: 8e22afa9608f3dfbc970b7a3f35b72075fffb29e
+ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41865741"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42331327"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -118,6 +118,8 @@ ms.locfileid: "41865741"
 |displayName|String|Отображаемое имя для группы. Это свойство необходимо при создании группы и не может быть удалено во время обновления. <br><br>Возвращается по умолчанию. Поддерживает параметры $filter и $orderby. |
 |groupTypes|Коллекция String| Задает тип группы и участие в ней.  <br><br>Если коллекция содержит объект `Unified`, эта группа является группой Office 365. В противном случае она является группой безопасности.  <br><br>Если коллекция включает объект `DynamicMembership`, в этой группе используется динамическое участие. В противном случае участие является статическим.  <br><br>Возвращается по умолчанию. Поддерживает параметр $filter.|
 |hasMembersWithLicenseErrors|Логический|Указывает, есть ли в этой группе участники с ошибками лицензий после группового назначения лицензий. <br><br>Это свойство никогда не возвращается при использовании операции GET. Его можно использовать в качестве аргумента $filter для получения групп, включающих участников с ошибками лицензии (т. е. фильтру для этого свойства присвоено значчение true). См. [пример](../api/group-list.md).|
+|hideFromAddressLists |Логический |Значение true указывает, что группа не отображается в определенных частях пользовательского интерфейса Outlook: в **адресной книге**, в списках адресов для выбора получателей сообщений и в диалоговом окне **Обзор групп** для поиска групп. В противном случае используется значение false. Значение по умолчанию: **false**. <br><br>Возвращается только с помощью оператора $select.|
+|hideFromOutlookClients |Логический |Значение true указывает, что группа не отображается в клиентах Outlook, например Outlook для Windows и Outlook в Интернете. В противном случае используется значение false. Значение по умолчанию: **false**. <br><br>Возвращается только с помощью оператора $select.|
 |id|String|Уникальный идентификатор группы. <br><br>Возвращается по умолчанию. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения.|
 |isSubscribedByMail|Логический|Указывает, подписан ли вошедший пользователь на получение бесед по электронной почте. Значение по умолчанию: **true**. <br><br>Возвращается только с помощью оператора $select. |
 |licenseProcessingState|String|Указывает состояние назначения лицензии группы для всех участников группы. Значение по умолчанию: **false**. Только для чтения. Возможные значения: `QueuedForProcessing`, `ProcessingInProgress` и `ProcessingComplete`.<br><br>Возвращается только с помощью оператора $select. Только для чтения.|
@@ -322,6 +324,8 @@ ms.locfileid: "41865741"
   "displayName": "string",
   "groupTypes": ["string"],
   "hasMembersWithLicenseErrors": "Boolean",
+  "hideFromAddressLists": false,
+  "hideFromOutlookClients": false,
   "id": "string (identifier)",
   "isSubscribedByMail": true,
   "licenseProcessingState": "string",
