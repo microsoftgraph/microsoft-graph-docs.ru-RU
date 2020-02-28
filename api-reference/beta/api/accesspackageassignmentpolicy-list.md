@@ -5,30 +5,30 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d2e823980dc9966a5f3e85eef82d00c606e5c180
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 1a56b7b9c86c7717421719569815009a27fcde37
+ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37936058"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42331201"
 ---
-# <a name="list-accesspackageassignmentpolicies"></a><span data-ttu-id="be2e7-103">Список АкцесспаккажеассигнментполиЦиес</span><span class="sxs-lookup"><span data-stu-id="be2e7-103">List accessPackageAssignmentPolicies</span></span>
+# <a name="list-accesspackageassignmentpolicies"></a><span data-ttu-id="0bade-103">Список АкцесспаккажеассигнментполиЦиес</span><span class="sxs-lookup"><span data-stu-id="0bade-103">List accessPackageAssignmentPolicies</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="be2e7-104">Получение списка объектов [акцесспаккажеассигнментполици](../resources/accesspackageassignmentpolicy.md) в [службе управления обслуживанием Azure AD](../resources/entitlementmanagement-root.md).</span><span class="sxs-lookup"><span data-stu-id="be2e7-104">In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), retrieve a list of [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) objects.</span></span>   <span data-ttu-id="be2e7-105">Полученный список включает все политики назначения, которые абонент имеет доступ для чтения, во всех каталогах и пакетах доступа.</span><span class="sxs-lookup"><span data-stu-id="be2e7-105">The resulting list includes all the assignment policies which the caller has access to read, across all catalogs and access packages.</span></span>
+<span data-ttu-id="0bade-104">Получение списка объектов [акцесспаккажеассигнментполици](../resources/accesspackageassignmentpolicy.md) в [службе управления обслуживанием Azure AD](../resources/entitlementmanagement-root.md).</span><span class="sxs-lookup"><span data-stu-id="0bade-104">In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), retrieve a list of [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) objects.</span></span>   <span data-ttu-id="0bade-105">Полученный список включает все политики назначения, которые абонент имеет доступ для чтения, во всех каталогах и пакетах доступа.</span><span class="sxs-lookup"><span data-stu-id="0bade-105">The resulting list includes all the assignment policies which the caller has access to read, across all catalogs and access packages.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="be2e7-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="be2e7-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="0bade-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="0bade-106">Permissions</span></span>
 
-<span data-ttu-id="be2e7-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="be2e7-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0bade-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0bade-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="be2e7-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="be2e7-109">Permission type</span></span>                        | <span data-ttu-id="be2e7-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="be2e7-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="0bade-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0bade-109">Permission type</span></span>                        | <span data-ttu-id="0bade-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="0bade-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="be2e7-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="be2e7-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="be2e7-112">Ентитлементманажемент. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="be2e7-112">EntitlementManagement.ReadWrite.All</span></span> |
-| <span data-ttu-id="be2e7-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="be2e7-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="be2e7-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="be2e7-114">Not supported.</span></span> |
-| <span data-ttu-id="be2e7-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="be2e7-115">Application</span></span>                            | <span data-ttu-id="be2e7-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="be2e7-116">Not supported.</span></span> |
+| <span data-ttu-id="0bade-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0bade-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="0bade-112">EntitlementManagement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0bade-112">EntitlementManagement.ReadWrite.All</span></span> |
+| <span data-ttu-id="0bade-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0bade-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0bade-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0bade-114">Not supported.</span></span> |
+| <span data-ttu-id="0bade-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="0bade-115">Application</span></span>                            | <span data-ttu-id="0bade-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0bade-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="be2e7-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="be2e7-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0bade-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0bade-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,43 +36,59 @@ ms.locfileid: "37936058"
 GET /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="be2e7-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="be2e7-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="0bade-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="0bade-118">Optional query parameters</span></span>
 
-<span data-ttu-id="be2e7-119">Этот метод поддерживает некоторые параметры запроса OData для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="be2e7-119">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="be2e7-120">Например, чтобы получить политику назначения пакетов Access с указанным отображаемым именем, включите `$filter=displayName eq 'Employee sales support'` в запрос.</span><span class="sxs-lookup"><span data-stu-id="be2e7-120">For example, to retrieve a access package assignment policy with a specifed display name, include `$filter=displayName eq 'Employee sales support'` in the query.</span></span> <span data-ttu-id="be2e7-121">Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="be2e7-121">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="0bade-119">Этот метод поддерживает некоторые параметры запроса OData для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="0bade-119">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="0bade-120">Например, чтобы получить политику назначения пакетов Access с указанным отображаемым именем, включите `$filter=displayName eq 'Employee sales support'` в запрос.</span><span class="sxs-lookup"><span data-stu-id="0bade-120">For example, to retrieve a access package assignment policy with a specifed display name, include `$filter=displayName eq 'Employee sales support'` in the query.</span></span> <span data-ttu-id="0bade-121">Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="0bade-121">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="be2e7-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="be2e7-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="0bade-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0bade-122">Request headers</span></span>
 
-| <span data-ttu-id="be2e7-123">Имя</span><span class="sxs-lookup"><span data-stu-id="be2e7-123">Name</span></span>      |<span data-ttu-id="be2e7-124">Описание</span><span class="sxs-lookup"><span data-stu-id="be2e7-124">Description</span></span>|
+| <span data-ttu-id="0bade-123">Имя</span><span class="sxs-lookup"><span data-stu-id="0bade-123">Name</span></span>      |<span data-ttu-id="0bade-124">Описание</span><span class="sxs-lookup"><span data-stu-id="0bade-124">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="be2e7-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="be2e7-125">Authorization</span></span> | <span data-ttu-id="be2e7-126">Носитель \{токен\}.</span><span class="sxs-lookup"><span data-stu-id="be2e7-126">Bearer \{token\}.</span></span> <span data-ttu-id="be2e7-127">Обязательный элемент.</span><span class="sxs-lookup"><span data-stu-id="be2e7-127">Required.</span></span> |
+| <span data-ttu-id="0bade-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="0bade-125">Authorization</span></span> | <span data-ttu-id="0bade-126">Носитель \{токен\}.</span><span class="sxs-lookup"><span data-stu-id="0bade-126">Bearer \{token\}.</span></span> <span data-ttu-id="0bade-127">Обязательный элемент.</span><span class="sxs-lookup"><span data-stu-id="0bade-127">Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="be2e7-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="be2e7-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="0bade-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="0bade-128">Request body</span></span>
 
-<span data-ttu-id="be2e7-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="be2e7-129">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="0bade-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="0bade-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="be2e7-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="be2e7-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0bade-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="0bade-130">Response</span></span>
 
-<span data-ttu-id="be2e7-131">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [акцесспаккажеассигнментполици](../resources/accesspackageassignmentpolicy.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="be2e7-131">If successful, this method returns a `200 OK` response code and a collection of [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) objects in the response body.</span></span>
+<span data-ttu-id="0bade-131">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [акцесспаккажеассигнментполици](../resources/accesspackageassignmentpolicy.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="0bade-131">If successful, this method returns a `200 OK` response code and a collection of [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="be2e7-132">Примеры</span><span class="sxs-lookup"><span data-stu-id="be2e7-132">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="0bade-132">Примеры</span><span class="sxs-lookup"><span data-stu-id="0bade-132">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="be2e7-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="be2e7-133">Request</span></span>
+### <a name="request"></a><span data-ttu-id="0bade-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="0bade-133">Request</span></span>
 
-<span data-ttu-id="be2e7-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="be2e7-134">The following is an example of the request.</span></span>
+<span data-ttu-id="0bade-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="0bade-134">The following is an example of the request.</span></span>
+
+# <a name="http"></a>[<span data-ttu-id="0bade-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="0bade-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_accesspackageassignmentpolicies"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 ```
+# <a name="c"></a>[<span data-ttu-id="0bade-136">C#</span><span class="sxs-lookup"><span data-stu-id="0bade-136">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-accesspackageassignmentpolicies-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="be2e7-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="be2e7-135">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="0bade-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0bade-137">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-accesspackageassignmentpolicies-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="be2e7-136">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="be2e7-136">The following is an example of the response.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="0bade-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0bade-138">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-accesspackageassignmentpolicies-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-> <span data-ttu-id="be2e7-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="be2e7-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+---
+
+
+### <a name="response"></a><span data-ttu-id="0bade-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="0bade-139">Response</span></span>
+
+<span data-ttu-id="0bade-140">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="0bade-140">The following is an example of the response.</span></span>
+
+> <span data-ttu-id="0bade-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="0bade-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -92,9 +108,10 @@ Content-type: application/json
       "accessPackageId": "1b153a13-76da-4d07-9afa-c6c2b1f2e824",
       "displayName": "All Users",
       "description": "All users can request for access to the directory.",
-      "isEnabled": false,
+      "isDenyPolicy": false,
       "canExtend": false,
-      "durationInDays": 365
+      "durationInDays": 365,
+      "accessReviewSettings": null
     }
   ]
 }
