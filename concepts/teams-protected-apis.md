@@ -4,12 +4,12 @@ description: API Microsoft Teams в Microsoft Graph, получающие дос
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: d5d44f1e02977385e9e8db3aeda529240c9a6e65
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 18dd6dbab9ba1fe97467cd54bc3bfd8ae8aaadd5
+ms.sourcegitcommit: 568909e47fb075264584e440fd0cad978abfab11
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868515"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42287984"
 ---
 # <a name="protected-apis-in-microsoft-teams"></a>Защищенные API в Microsoft Teams
 
@@ -19,10 +19,13 @@ API Microsoft Teams в Microsoft Graph, получающие доступ к к�
 * [Перечисление сообщений в каналах](/graph/api/channel-list-messages?view=graph-rest-beta) с использованием [разрешений приложения](auth/auth-concepts.md#microsoft-graph-permissions)
 * [Получение изменений для объектов chatMessages в канале](/graph/api/chatmessage-delta?view=graph-rest-beta) с использованием [разрешений приложения](auth/auth-concepts.md#microsoft-graph-permissions)
 * [Получение сообщений в каналах](/graph/api/channel-get-message?view=graph-rest-beta) с использованием [разрешений приложения](auth/auth-concepts.md#microsoft-graph-permissions)
+* [Создание подписки на новые сообщения в каналах](/graph/api/subscription-post-subscriptions?view=graph-rest-beta) с использованием [разрешений приложения](auth/auth-concepts.md#microsoft-graph-permissions)
 * [Перечисление ответов на сообщение](/graph/api/channel-list-messagereplies?view=graph-rest-beta) с использованием [разрешений приложения](auth/auth-concepts.md#microsoft-graph-permissions)
 * [Получение ответа на сообщение](/graph/api/channel-get-messagereply?view=graph-rest-beta) с использованием [разрешений приложения](auth/auth-concepts.md#microsoft-graph-permissions)
+* (Перечисление чатов с использованием [разрешений приложения](auth/auth-concepts.md#microsoft-graph-permissions) не существует, с доступом или без доступа через защищенные API)
 * [Перечисление сообщений в чате](/graph/api/chatmessage-list?view=graph-rest-beta) с использованием [разрешений приложения](auth/auth-concepts.md#microsoft-graph-permissions)
 * [Получение сообщения в чате](/graph/api/chatmessage-get?view=graph-rest-beta) с использованием [разрешений приложения](auth/auth-concepts.md#microsoft-graph-permissions)
+* [Создание подписки на новые сообщения в чатах](/graph/api/subscription-post-subscriptions?view=graph-rest-beta) с использованием [разрешений приложения](auth/auth-concepts.md#microsoft-graph-permissions)
 * [Перечисление всего размещенного содержимого](/graph/api/chatmessage-list-chatmessagehostedcontents?view=graph-rest-beta) с использованием [разрешений приложения](auth/auth-concepts.md#microsoft-graph-permissions)
 * [Получение размещенного содержимого](/graph/api/chatmessagehostedcontent-get?view=graph-rest-beta) с использованием [разрешений приложения](auth/auth-concepts.md#microsoft-graph-permissions)
 * [Перечисление участников чата](/graph/api/conversationmember-list?view=graph-rest-beta) с использованием [разрешений приложения](auth/auth-concepts.md#microsoft-graph-permissions)
