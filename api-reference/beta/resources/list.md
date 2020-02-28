@@ -6,12 +6,12 @@ title: List
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 4df869eeba7b66dad0bddef48b7d5686d8899702
-ms.sourcegitcommit: f51ba08d604d93f5f6af9ee8979cbf76baa285ce
+ms.openlocfilehash: 634ac31e5fa5de3700c238b4a931e5b43455e801
+ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42108464"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42331243"
 ---
 # <a name="list-resource"></a>Ресурс List
 
@@ -31,12 +31,13 @@ ms.locfileid: "42108464"
 | Стандартная задача               | Метод HTTP
 |:--------------------------|:------------------------------
 | [Получение списка][]              | GET /lists/{list-id}
-| [Создание списка][]           | POST/листс
+| [Создание списка][]           | POST /lists
 | [Перечисление элементов списка][]  | GET /lists/{list-id}/items
 | [Обновление элемента списка][]      | PATCH /lists/{list-id}/items/{item-id}
 | [Удаление элемента списка][]      | DELETE /lists/{list-id}/items/{item-id}
 | [Создание элемента в списке][]      | POST /lists/{list-id}
 | [Получение последних действий][] | GET /lists/{list-id}/activities
+| [Получение канала WebSocket][] | ПОЛУЧЕНИЕ/Листс/{лист-ИД}/субскриптионс/соккетио
 
 [Получение списка]: ../api/list-get.md
 [Создание списка]: ../api/list-create.md
@@ -45,6 +46,7 @@ ms.locfileid: "42108464"
 [Удаление элемента списка]: ../api/listitem-delete.md
 [Создание элемента в списке]: ../api/listitem-create.md
 [Получение последних действий]: ../api/activities-list.md
+[Получение канала WebSocket]: ../api/driveitem-subscriptions-socketio.md
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
@@ -69,6 +71,7 @@ ms.locfileid: "42108464"
     "template": "documentLibrary | genericList | survey | links | announcements | contacts ..."
   },
   "system": false,
+  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
 
   /* inherited from baseItem */
   "id": "string",
@@ -117,6 +120,7 @@ ms.locfileid: "42108464"
 | **activities**    | Коллекция [itemActivity][] | Последние действия, выполненные в списке.
 | **drive**         | [drive][]                   | Доступна только для библиотек документов. Разрешает доступ к списку как к ресурсу [drive][] с объектами [driveItem][driveItem].
 | **items**         | Коллекция ([listItem][])    | Все элементы, содержащиеся в списке.
+| subscriptions      | Коллекция [subscription][] | Набор подписок в списке.
 
 [baseItem]: baseitem.md
 [contentType]: contenttype.md
@@ -129,6 +133,7 @@ ms.locfileid: "42108464"
 [listItem]: listitem.md
 [site]: site.md
 [systemFacet]: systemfacet.md
+[subscription]: subscription.md
 
 <!--
 {

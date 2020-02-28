@@ -4,7 +4,7 @@
       href: /graph/overview
     - name: Получение маркеров аутентификации
       items:
-        - name: Обзор
+        - name: Общие сведения
           href: /graph/auth/index?context=graph/api/beta
         - name: Основы
           href: /graph/auth/auth-concepts?context=graph/api/beta
@@ -22,7 +22,7 @@
           href: /graph/auth-limit-mailbox-access?context=graph/api/beta
     - name: Использование API
       items:
-        - name: Обзор
+        - name: Общие сведения
           href: /graph/use-the-api?context=graph/api/beta
         - name: Разбиение на страницы
           href: /graph/paging?context=graph/api/beta
@@ -46,7 +46,7 @@
         - name: Отслеживание изменений
           displayname: 'Delta query, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: /graph/delta-query-overview?context=graph/api/beta
             - name: Получение изменений для событий (пример)
               href: /graph/delta-query-events?context=graph/api/beta
@@ -59,7 +59,7 @@
         - name: Добавление пользовательских данных
           displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users, Azure AD'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: /graph/extensibility-overview?context=graph/api/beta
             - name: Использование открытых расширений (пример)
               href: /graph/extensibility-open-users?context=graph/api/beta
@@ -73,7 +73,7 @@
         - name: Azure AD Graph
           displayname: 'Migration, Azure AD Graph'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: /graph/migrate-azure-ad-graph-overview?context=graph/api/beta
             - name: Контрольный список для переноса приложений
               href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/beta
@@ -160,11 +160,11 @@
     - name: Документация для бета-версий
       expanded: true
       items:
-        - name: Обзор
+        - name: Общие сведения
           href: overview.md
         - name: Пользователи
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/users.md
             - name: Пользователь
               href: resources/user.md
@@ -311,7 +311,7 @@
                   href: api/mailfolder-list-messagerules.md
                 - name: Отправка почты
                   href: api/user-sendmail.md
-            - name: Notes
+            - name: Примечания
               href: resources/onenote.md
               items:
                 - name: Создание записной книжки
@@ -406,7 +406,7 @@
                   href: api/user-delete-teamsappinstallation.md
         - name: Группы
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/groups-overview.md
             - name: Группа
               href: resources/group.md
@@ -961,7 +961,7 @@
         - name: Резервирование для пользователей
           displayName: 'Bookings, Microsoft Bookings'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/booking-api-overview.md
             - name: Организация в Microsoft Bookings
               href: resources/bookingbusiness.md
@@ -4496,7 +4496,7 @@
                 - name: Профиль сертификата SCEP для macOS
                   href: resources/intune-deviceconfig-macosscepcertificateprofile.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-deviceconfig-macosscepcertificateprofile-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-macosscepcertificateprofile-get.md
@@ -4511,7 +4511,7 @@
                 - name: Доверенный корневой сертификат для macOS
                   href: resources/intune-deviceconfig-macostrustedrootcertificate.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-deviceconfig-macostrustedrootcertificate-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-macostrustedrootcertificate-get.md
@@ -6852,7 +6852,7 @@
                 - name: Регистрация управляемых приложений для Android
                   href: resources/intune-mam-androidmanagedappregistration.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-mam-androidmanagedappregistration-list.md
                     - name: Получение
                       href: api/intune-mam-androidmanagedappregistration-get.md
@@ -8089,7 +8089,7 @@
         - name: Файлы
           displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/onedrive.md
             - name: Диски
               href: resources/drive.md
@@ -8179,7 +8179,7 @@
         - name: Финансовые показатели (предварительная версия)
           displayname: 'Dynamics, Dynamics 365 Business Central'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/dynamics-graph-reference.md
             - name: Учетная запись
               href: resources/dynamics-account.md
@@ -8414,7 +8414,7 @@
         - name: Удостоверения и доступ
           displayName: 'Azure AD, Microsoft identity platform'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/azure-ad-overview.md
             - name: Проверки доступа
               href: resources/accessreviews-root.md
@@ -8959,7 +8959,7 @@
                       href: api/informationprotectionlabel-extractlabel.md
                 - name: Оценка угроз
                   items:
-                    - name: Обзор
+                    - name: Общие сведения
                       href: resources/threatassessment-api-overview.md
                     - name: Запрос оценки угроз
                       href: resources/threatassessmentrequest.md
@@ -9014,7 +9014,7 @@
                       href: api/onpremisesagentgroup-get.md
                     - name: Создание
                       href: api/onpremisesagentgroup-post.md
-                    - name: Update
+                    - name: Обновление
                       href: api/onpremisesagentgroup-update.md
                     - name: Удаление
                       href: api/onpremisesagentgroup-delete.md
@@ -9034,7 +9034,7 @@
                       href: api/publishedresource-get.md
                     - name: Создание
                       href: api/publishedresource-post.md
-                    - name: Update
+                    - name: Обновление
                       href: api/publishedresource-update.md
                     - name: Удаление
                       href: api/publishedresource-delete.md
@@ -9083,24 +9083,66 @@
                     - name: Вывод объектов членства
                       href: api/orgcontact-getmemberobjects.md
             - name: Политика
-              href: resources/policy.md
+              href: resources/policy-overview.md
               items:
-                - name: Список политик
-                  href: api/policy-list.md
-                - name: Создание политики
-                  href: api/policy-post.md
-                - name: Получение политики
-                  href: api/policy-get.md
-                - name: Обновление политики
-                  href: api/policy-update.md
-                - name: Удаление политики
-                  href: api/policy-delete.md
-                - name: Назначение политики
-                  href: api/policy-assign.md
-                - name: Список назначенных политик
-                  href: api/policy-list-assigned.md
-                - name: Список субъектов-служб и приложений
-                  href: api/policy-list-appliesto.md
+                - name: Политика времени ожидания на основе действий
+                  href: resources/activitybasedtimeoutpolicy.md
+                  items:
+                    - name: Создание
+                      href: api/activitybasedtimeoutpolicy-post-activitybasedtimeoutpolicies.md
+                    - name: Перечисление
+                      href: api/activitybasedtimeoutpolicy-list.md
+                    - name: Получение
+                      href: api/activitybasedtimeoutpolicy-get.md
+                    - name: Обновление
+                      href: api/activitybasedtimeoutpolicy-update.md
+                    - name: Удаление
+                      href: api/activitybasedtimeoutpolicy-delete.md
+                - name: Политика сопоставления утверждений
+                  href: resources/claimsmappingpolicy.md
+                  items:
+                    - name: Создание
+                      href: api/claimsmappingpolicy-post-claimsmappingpolicies.md
+                    - name: Перечисление
+                      href: api/claimsmappingpolicy-list.md
+                    - name: Получение
+                      href: api/claimsmappingpolicy-get.md
+                    - name: Обновление
+                      href: api/claimsmappingpolicy-update.md
+                    - name: Удаление
+                      href: api/claimsmappingpolicy-delete.md
+                    - name: Список субъектов-служб и приложений
+                      href: api/claimsmappingpolicy-list-appliesto.md
+                - name: Политика обнаружения домашней области
+                  href: resources/homerealmdiscoverypolicy.md
+                  items:
+                    - name: Создание
+                      href: api/homerealmdiscoverypolicy-post-homerealmdiscoverypolicies.md
+                    - name: Перечисление
+                      href: api/homerealmdiscoverypolicy-list.md
+                    - name: Получение
+                      href: api/homerealmdiscoverypolicy-get.md
+                    - name: Обновление
+                      href: api/homerealmdiscoverypolicy-update.md
+                    - name: Удаление
+                      href: api/homerealmdiscoverypolicy-delete.md
+                    - name: Список субъектов-служб и приложений
+                      href: api/homerealmdiscoverypolicy-list-appliesto.md
+                - name: Политика времени существования маркера
+                  href: resources/tokenlifetimepolicy.md
+                  items:
+                    - name: Создание
+                      href: api/tokenlifetimepolicy-post-tokenlifetimepolicies.md
+                    - name: Перечисление
+                      href: api/tokenlifetimepolicy-list.md
+                    - name: Получение
+                      href: api/tokenlifetimepolicy-get.md
+                    - name: Обновление
+                      href: api/tokenlifetimepolicy-update.md
+                    - name: Удаление
+                      href: api/tokenlifetimepolicy-delete.md
+                    - name: Список субъектов-служб и приложений
+                      href: api/tokenlifetimepolicy-list-appliesto.md
             - name: Управление привилегированными пользователями (PIM)
               items:
                 - name: Управление привилегированными пользователями
@@ -9186,7 +9228,7 @@
                     - name: Определения ролей
                       href: resources/governanceroledefinition.md
                       items:
-                        - name: Перечисление
+                        - name: Список
                           href: api/governanceroledefinition-list.md
                         - name: Получение
                           href: api/governanceroledefinition-get.md
@@ -9347,7 +9389,7 @@
             - name: Политика инфраструктуры доверия
               href: resources/trustframeworkpolicy.md
               items:
-                - name: Перечисление
+                - name: Список
                   href: api/trustframework-list-trustframeworkpolicies.md
                 - name: Создание
                   href: api/trustframework-post-trustframeworkpolicy.md
@@ -9360,7 +9402,7 @@
             - name: Набор ключей инфраструктуры доверия
               href: resources/trustframeworkkeyset.md
               items:
-                - name: Перечисление
+                - name: Список
                   href: api/trustframework-list-keysets.md
                 - name: Создание
                   href: api/trustframework-post-keysets.md
@@ -9383,7 +9425,7 @@
             - name: Потоки пользователей
               href: resources/identityuserflow.md
               items:
-                - name: Перечисление
+                - name: Список
                   href: api/identityuserflow-list.md
                 - name: Создание
                   href: api/identityuserflow-post-userflows.md
@@ -9655,7 +9697,7 @@
                   href: api/resource-get.md
         - name: Уведомления
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/notifications-api-overview.md
             - name: Уведомление
               href: resources/projectrome-notification.md
@@ -9982,7 +10024,7 @@
                           href: api/applicationsignindetailedsummary-get.md
                 - name: Регистрация и использование
                   items:
-                    - name: Обзор
+                    - name: Общие сведения
                       href: resources/authenticationmethods-usage-insights-overview.md
                     - name: Счетчик регистрации пользователей учетных данных
                       href: resources/credentialuserregistrationcount.md
@@ -10006,7 +10048,7 @@
                           href: api/reportroot-getcredentialusagesummary.md
             - name: Отчеты об использовании Office 365
               items:
-                - name: Обзор
+                - name: Общие сведения
                   href: resources/report.md
                 - name: Использование устройств Microsoft Teams
                   href: resources/microsoft-teams-device-usage-reports.md
@@ -10091,7 +10133,7 @@
                 - name: Действия в OneDrive
                   href: resources/onedrive-activity-reports.md
                   items:
-                    - name: Получение сведений о пользователе
+                    - name: Получение сведений о пользователях
                       href: api/reportroot-getonedriveactivityuserdetail.md
                     - name: Получение количества пользователей
                       href: api/reportroot-getonedriveactivityusercounts.md
@@ -10209,13 +10251,13 @@
           items:
             - name: Запрос
               items:
-                - name: Обзор
+                - name: Общие сведения
                   href: resources/search-api-overview.md
                 - name: Данные запроса
                   href: api/search-query.md
             - name: Индекс
               items:
-                - name: Обзор
+                - name: Общие сведения
                   href: resources/indexing-api-overview.md
                 - name: Внешнее подключение
                   items:
@@ -10330,7 +10372,7 @@
         - name: Сайты и списки
           displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/sharepoint.md
             - name: Сайты
               href: resources/site.md
@@ -10391,7 +10433,7 @@
         - name: Задачи и планы
           displayName: Planner
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/planner-overview.md
             - name: План
               href: resources/plannerplan.md
@@ -10955,7 +10997,7 @@
         - name: Книги и диаграммы
           displayName: Excel
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/excel.md
             - name: Книга
               href: resources/workbook.md

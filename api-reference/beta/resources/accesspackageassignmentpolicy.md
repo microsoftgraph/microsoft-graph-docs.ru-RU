@@ -5,18 +5,18 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: acb7c7b355d2a03d78cad1127882f272135fc4a2
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 08fcefafe9a354a57415a7d05bee1ec57ffdc138
+ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939210"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42331306"
 ---
 # <a name="accesspackageassignmentpolicy-resource-type"></a>Тип ресурса Акцесспаккажеассигнментполици
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В разделе [Управление обслуживанием в Azure AD](entitlementmanagement-root.md)политика назначения пакетов Access определяет политику, с помощью которой субъекты могут запрашивать или назначать пакет доступа с помощью назначения пакета Access. Пакет Access может иметь не более одного или нескольких политик. При получении запроса от субъекта субъект сравнивается с каждой политикой, чтобы найти политику (если она задана) для этой темы. Затем политика определяет, требуется ли утверждение запроса и время назначения пакета доступа.
+В разделе [Управление обслуживанием в Azure AD](entitlementmanagement-root.md)политика назначения пакетов Access определяет политику, с помощью которой субъекты могут запрашивать или назначать пакет доступа с помощью назначения пакета Access. Пакет Access может иметь не более одного или нескольких политик. При получении запроса от субъекта субъект сравнивается с каждой политикой, чтобы найти политику (если она есть) с Рекуесторсеттингс, включающей в себя эту тему. После этого политика определяет, требуется ли для запроса утверждение, продолжительность назначения пакета Access, а также должно ли назначение регулярно проверяться.
 
 Чтобы назначить пользователя пакету доступа, [Создайте акцесспаккажеассигнментрекуест](../api/accesspackageassignmentrequest-post.md) , который ссылается на политику назначения пакетов доступа и пакетов доступа.
 
@@ -34,7 +34,8 @@ ms.locfileid: "37939210"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|акцесспаккажеид|Строка|Идентификатор пакета Access.|
+|акцесспаккажеид|String|Идентификатор пакета Access.|
+|акцессревиевсеттингс|[ассигнментревиевсеттингс](assignmentreviewsettings.md)|Кто должен проверить и как часто назначений для пакета доступа из этой политики. Это свойство имеет значение null, если проверка не требуются.|
 |canExtend|Логический|Указывает, может ли пользователь продлить продолжительность назначения пакета доступа после утверждения.|
 |createdBy|String|Только для чтения.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
@@ -43,9 +44,12 @@ ms.locfileid: "37939210"
 |дуратиониндайс|Int32|Количество дней, в течение которых назначения из этой политики последний раз до истечения срока действия.|
 |expirationDateTime|DateTimeOffset|Срок действия для назначений, созданных в этой политике. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |id|String| Только для чтения.|
-|isEnabled|Boolean|Может ли эта политика использоваться для новых запросов.|
+|исдениполици|Логический|Если этот параметр имеет значение true, доступ не будет разрешен. Только для чтения.|
 |модифиедби|String|Только для чтения.|
 |modifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|рекуестаппровалсеттингс|[аппровалсеттингс](approvalsettings.md)|Кто должен утверждать запросы на пакет Access в этой политике.|
+|рекуесторсеттингс|[рекуесторсеттингс](requestorsettings.md)|Кто может запрашивать этот пакет Access из этой политики.|
+
 
 ## <a name="relationships"></a>Связи
 
@@ -73,9 +77,22 @@ ms.locfileid: "37939210"
     "accessPackageId": "1b153a13-76da-4d07-9afa-c6c2b1f2e824",
     "displayName": "All Users",
     "description": "All users can request for access to the directory.",
-    "isEnabled": false,
+    "isDenyPolicy": false,
     "canExtend": false,
-    "durationInDays": 365
+    "durationInDays": 365,
+    "requestorSettings" : {
+      "scopeType": "AllExistingDirectorySubjects",
+      "acceptRequests": true,
+      "allowedRequestors": []
+    },
+    "requestApprovalSettings" : {
+      "isApprovalRequired": false,
+      "isApprovalRequiredForExtension": false,
+      "isRequestorJustificationRequired": false,
+      "approvalMode": "NoApproval",
+      "approvalStages": []
+    },
+    "accessReviewSettings" : null
 }
 ```
 

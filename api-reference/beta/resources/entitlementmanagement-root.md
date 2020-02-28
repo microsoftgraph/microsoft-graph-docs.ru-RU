@@ -4,13 +4,13 @@ description: Управление доступом к ресурсам, в то�
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
-doc_type: resourcePageType
-ms.openlocfilehash: 6eada39751a6ed107fb1b74d61100aa1a3469c83
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+doc_type: conceptualPageType
+ms.openlocfilehash: 7e255a68d46e810d22e26d167dbe3ef5a6714496
+ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870290"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42331320"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>Работа с API управления обслуживанием Azure AD
 

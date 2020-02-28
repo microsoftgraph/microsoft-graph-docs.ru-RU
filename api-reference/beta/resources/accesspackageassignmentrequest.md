@@ -5,18 +5,18 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0fd9f5ea9cd15abac7eea693b2af5c595b145ac7
-ms.sourcegitcommit: f51ba08d604d93f5f6af9ee8979cbf76baa285ce
+ms.openlocfilehash: c2440dfc7e798ea5b0a197f60b62acce4199b4ca
+ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42108443"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42331271"
 ---
 # <a name="accesspackageassignmentrequest-resource-type"></a>Тип ресурса Акцесспаккажеассигнментрекуест
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [управлении обслуживанием в Azure AD](entitlementmanagement-root.md)запрос на назначение пакета Access создается пользователем, желающим получить назначение пакета Access. Если запрос выполнен успешно, при наличии необходимых утверждений пользователь получает назначение пакета Access и является темой этого назначенного пакета доступа.
+В [управлении обслуживанием в Azure AD](entitlementmanagement-root.md)запрос на назначение пакета Access создается пользователем, желающим получить назначение пакета Access. Если запрос выполнен успешно, при наличии необходимых утверждений пользователь получает назначение пакета Access и является темой этого назначенного пакета доступа.  Кроме того, Azure AD автоматически создает запросы на отправку для отслеживания удаления.
 
 
 ## <a name="methods"></a>Методы
@@ -34,14 +34,14 @@ ms.locfileid: "42108443"
 |комплетеддате|DateTimeOffset|Дата завершения обработки (успешное или неудачное) запроса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
 |id|String| Только для чтения.|
-|исвалидатиононли|Boolean|Имеет значение true, если запрос не обрабатывается для назначения.|
+|исвалидатиононли|Логический|Имеет значение true, если запрос не обрабатывается для назначения.|
 |текста|String|Выставляемое по запросу обоснование.|
-|рекуестстате|String|Один из `Denied`, `Delivered` `PartiallyDelivered` или `Submitted`. Только для чтения.|
+|рекуестстате|String|Один из `Denied`, `Delivered` `PartiallyDelivered`, `Submitted` или `Scheduled`. Только для чтения.|
 |рекуестстатус|String|Дополнительные сведения о состоянии обработки запроса. Только для чтения.|
-|requestType|String|Один из `UserAdd`, `UserRemove` `AdminAdd` или `AdminRemove`. Только для чтения.|
+|requestType|String|Один из `UserAdd`, `UserRemove` `AdminAdd`, `AdminRemove` или `SystemRemove`. Только для чтения.|
 |акцесспаккажеассигнмент|[акцесспаккажеассигнмент](accesspackageassignment.md)| Требуется создать назначение пакета Access.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|

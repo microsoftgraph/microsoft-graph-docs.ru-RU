@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: conceptualPageType
 ms.prod: ''
-ms.openlocfilehash: e14227ad1e64aaea6bf2cfb15f9ba76d0ffeb12b
-ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
+ms.openlocfilehash: 739f5821df7eded3757a437fb2909595c4df7692
+ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219652"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42331334"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Получение уведомлений об изменениях с помощью API Microsoft Graph 
 
@@ -20,30 +20,31 @@ REST API Microsoft Graph использует механизм веб-перех
 
 С помощью API Microsoft Graph приложение может подписаться на изменения для следующих ресурсов:
 
-| **Resource** | **Поддерживаемые пути к ресурсам** | **Данные ресурсов можно включать в уведомления**                  |
+| **Ресурс** | **Поддерживаемые пути ресурсов** | **Можно ли данные ресурсов включать в уведомления**                  |
 |:----------------|:------------|:-----------------------------------------|
-| [Сообщение][] Outlook | Изменения всех сообщений в почтовом ящике пользователя: <br>`/users/{id}/messages`<br>Изменения в сообщениях в папке "Входящие" пользователя:<br>`/users/{id}/mailFolders('inbox')/messages` | Нет |
+| [Сообщение][] Outlook | Изменения во всех сообщениях в почтовом ящике пользователя: <br>`/users/{id}/messages`<br>Изменения в сообщениях в папке «Входящие» пользователя:<br>`/users/{id}/mailFolders('inbox')/messages` | Нет |
 | [Событие][] Outlook | Изменения всех событий в почтовом ящике пользователя:<br>`/users/{id}/events` | Нет |
-| Личный [контакт][] Outlook | Изменения во всех личных контактах в почтовом ящике пользователя:<br>`/users/{id}/contacts` | Нет |
-| [user][] | Изменения для всех пользователей:<br>`/users` <br>Изменения определенного пользователя:<br>`/users/{id}`| Нет |
-| [group][] | Изменения во всех группах:<br>`/groups` <br>Изменения в определенной группе:<br>`/groups/{id}` | Нет |
-| Групповой [чат][] Office 365  | Изменения в беседах группы:<br>`groups/{id}/conversations` | Нет |
-| [driveItem][] в OneDrive (персональный) | Изменения контента в иерархии _любой папки_:<br>`/users/{id}/drive/root` | Нет |
-| [driveItem][] в OneDrive для бизнеса | Изменения контента в иерархии _корневой папки_:<br>`/drives/{id}/root`<br> `/users/{id}/drive/root` | Нет |
-| [Оповещение][] безопасности | Изменения, внесенные в конкретное оповещение:<br>`/security/alerts/{id}` <br>Изменения отфильтрованных оповещений:<br> `/security/alerts/?$filter`| Нет |
-| [Chatmessage](/graph/api/resources/subscription?view=graph-rest-beta) Teams | Изменения в сообщениях чата во всех каналах в teams:<br>`/teams/allMessages` <br>Изменения в сообщениях чата в определенном канале:<br>`/teams/{id}/channels/{id}/messages`<br>Изменения в сообщениях чата во всех беседах:<br>`/chats/allMessages` <br>Изменения в сообщениях чата в определенном сеансе разговора:<br>`/chats/{id}/messages` | Да |
+| Личный [контакт][] Outlook | Изменения всех личных контактов в почтовом ящике пользователя:<br>`/users/{id}/contacts` | Нет |
+| [user][] | Изменения для всех пользователей:<br>`/users` <br>Изменения для конкретного пользователя:<br>`/users/{id}`| Нет |
+| [group][] | Изменения во всех группах:<br>`/groups` <br>Изменения в конкретной группе:<br>`/groups/{id}` | Нет |
+| Групповой [чат][] Office 365  | Изменения в разговорах группы:<br>`groups/{id}/conversations` | Нет |
+| [driveItem][]на OneDrive (личный) | Изменения содержимого в иерархии _любой папки_:<br>`/users/{id}/drive/root` | Нет |
+| [driveItem][]на OneDrive для бизнеса | Изменения содержимого в иерархии _корневой папки_:<br>`/drives/{id}/root`<br> `/users/{id}/drive/root` | Нет |
+| [список][] под [сайтом][] SharePoint | `/sites/{id}/lists/{id}` | Нет |
+| [Оповещение][] безопасности | Изменения в конкретном предупреждении:<br>`/security/alerts/{id}` <br>Изменения в отфильтрованных оповещениях:<br> `/security/alerts/?$filter`| Нет |
+| [chatMessage](/graph/api/resources/subscription?view=graph-rest-beta) Teams | Изменения в сообщениях чата во всех каналах во всех командах:<br>`/teams/allMessages` <br>Изменения в сообщениях чата на определенном канале:<br>`/teams/{id}/channels/{id}/messages`<br>Изменения в сообщениях чата во всех чатах:<br>`/chats/allMessages` <br>Изменения в сообщениях чата в конкретном чате:<br>`/chats/{id}/messages` | Да |
 
-> **Note**: любой путь к ресурсу, `/users/{id}` который начинается с `/me` , может также принять ссылку на пользователя, выполнившего вход в систему.
+> **Примечание**. Любой путь ресурса, начинающийся с `/users/{id}`, может принимать `/me` для указания вошедшего пользователя.
 
-## <a name="permissions"></a>Разрешения
+## <a name="permissions"></a>Permissions
 
 В общем случае для операций с подписками необходимо разрешение на чтение ресурса. Например, чтобы получать уведомления для сообщений, приложению необходимо разрешение `Mail.Read`. В статье, посвященной [созданию подписок](../api/subscription-post-subscriptions.md), перечислены разрешения, необходимые для каждого типа ресурса. В таблице ниже перечислены типы разрешений, которые ваше приложение может запрашивать, чтобы использовать веб-перехватчики для определенных типов ресурсов.
 
 | Тип разрешения                        | Поддерживаемые типы ресурсов                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Делегированное — рабочая или учебная учетная запись     | [alert][], [contact][], [conversation][], [driveItem][], [event][], [group][], [message][], [user][]|
-| Делегированное — личная учетная запись Майкрософт | [contact][], [driveItem][], [event][], [message][]                                        |
-| Для приложений                            | [Alert][], [Contact][], [driveItem][], [event][], [Group][], [Message][], [User][], [chatMessage][]|
+| Делегированное — рабочая или учебная учетная запись     | [оповещение][], [контакт][], [беседа][], [driveItem][], [список][], [событие][], [Группа][], [сообщение][], [пользователь][]|
+| Делегированное — личная учетная запись Майкрософт | [Contact][], [driveItem][], [List][], [event][], [Message][]                                        |
+| Приложение                            | [Alert][], [Contact][], [driveItem][], [List][], [event][], [Group][], [Message][], [User][], [chatMessage][]|
 
 ## <a name="see-also"></a>См. также
 
@@ -58,6 +59,8 @@ REST API Microsoft Graph использует механизм веб-перех
 [contact]: ./contact.md
 [conversation]: ./conversation.md
 [driveItem]: ./driveitem.md
+[list]: ./list.md
+[site]: ./site.md
 [event]: ./event.md
 [group]: ./group.md
 [message]: ./message.md

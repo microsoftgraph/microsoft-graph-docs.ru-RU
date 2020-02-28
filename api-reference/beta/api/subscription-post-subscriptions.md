@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: e5276d8cf4e0a096e1ce98c9247d0c46e9f515c9
-ms.sourcegitcommit: 568909e47fb075264584e440fd0cad978abfab11
+ms.openlocfilehash: 550cec423d03c2fc1bf4e589675dcfeb126c39d8
+ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42287991"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42331278"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -36,6 +36,7 @@ ms.locfileid: "42287991"
 |[event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[group](../resources/group.md) | Group.Read.All | Не поддерживается | Group.Read.All |
 |[group conversation](../resources/conversation.md) | Group.Read.All | Не поддерживается | Не поддерживается |
+|[list](../resources/list.md) | Sites.ReadWrite.All | Не поддерживается | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Не поддерживается | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
@@ -134,6 +135,7 @@ Content-type: application/json
 |Groups|groups|
 |Conversations|groups('*{id}*')/conversations|
 |Drives|me/drive/root|
+|Перечисление|Site/{site-ID}/Lists/{List-ID}|
 |Security alert|security/alerts?$filter=status eq ‘New’|
 
 ### <a name="response"></a>Отклик
