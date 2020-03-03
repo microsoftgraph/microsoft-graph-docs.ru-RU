@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9e57ff1e59c7caf5b29e582b7381492a7eee5b4c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c88ac94d35b93a76ec2ea4f096b69facb7f26435
+ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964833"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42394507"
 ---
 # <a name="subscribedsku-resource-type"></a>Тип ресурса subscribedSku
 
@@ -23,21 +23,21 @@ ms.locfileid: "35964833"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта subscribedSku](../api/subscribedsku-get.md) | [subscribedSku](subscribedsku.md) |Получение конкретной коммерческой подписки, приобретенной Организацией.|
-|[Список subscribedsku](../api/subscribedsku-list.md) | Коллекция объектов [subscribedSku](subscribedsku.md) |Получение списка коммерческих подписок, приобретенных Организацией.|
+|[Список subscribedsku](../api/subscribedsku-list.md) | Коллекция объектов [subscribedSku](subscribedsku.md) |Получение списка коммерческих подписок, приобретенных организацией.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |Тег|String| Например, User или Company. |
-|Капабилитистатус|String| Пример: "Enabled". |
+|капабилитистатус|String| Возможные значения: `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`. |
 |consumedUnits|Int32| Количество лицензий, которые были назначены. |
 |id|String| Уникальный идентификатор объекта sku, подписка на который выполнена. Key, не допускающая значение null. |
-|Препаидунитс|[licenseUnitsDetail](licenseunitsdetail.md)| Сведения о количестве и состоянии предварительно оплаченных лицензий. |
-|Сервицепланс|Коллекция [servicePlanInfo](serviceplaninfo.md)| Сведения о планах обслуживания, доступных в отношении SKU. Не допускает значение null |
+|препаидунитс|[licenseUnitsDetail](licenseunitsdetail.md)| Сведения о количестве и состоянии предварительно оплаченных лицензий. |
+|сервицепланс|Коллекция [servicePlanInfo](serviceplaninfo.md)| Сведения о планах обслуживания, доступных в отношении SKU. Не допускает значение null |
 |skuId|Guid| Уникальный идентификатор (GUID) для SKU службы. |
-|Скупартнумбер|String| Артикул SKU, например: AAD_PREMIUM или RMSBASIC. |
+|скупартнумбер|String| Артикул SKU, например: AAD_PREMIUM или RMSBASIC. Чтобы получить список коммерческих подписок, приобретенных в Организации, ознакомьтесь со статьей [List субскрибедскус](../api/subscribedsku-list.md). |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 11f57518433267a85e78ab06f70ffaa5c1e5fa34
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: fb2dd66e9e18e4951005bcda2b249235e99cd829
+ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331187"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42394448"
 ---
 # <a name="subscription-resource-type"></a>Тип ресурса subscription
 
@@ -19,6 +19,7 @@ ms.locfileid: "42331187"
 Подписка позволяет клиентскому приложению получать уведомления об изменениях данных в Microsoft Graph. На данный момент подписки включены для указанных ниже ресурсов.
 
 - [Оповещение][] Microsoft Graph Security API
+- [Каллрекорд][] , созданный после вызова или собрания в Microsoft Teams
 - [ChatMessage][] , отправленный через Teams или каналы в Microsoft Teams
 - [Беседа][] в группе Office 365
 - Контент в иерархии корневой папки [driveItem][] в OneDrive для бизнеса либо корневой или вложенной папке [driveItem][] в личном хранилище OneDrive пользователя.
@@ -61,6 +62,7 @@ ms.locfileid: "42331187"
 | Ресурс            | Максимальный срок действия  |
 |:--------------------|:-------------------------|
 | **Оповещение** безопасности     | 43200 минут (до 30 дней)  |
+| **Каллрекорд** Teams    | 4230 минут (до 3 дней)  |
 | **ChatMessage** Teams    | 60 минут (1 час)  |
 | Групповая **беседа** | 4230 минут (до 3 дней)    |
 | OneDrive для **driveItem**    | 4230 минут (до 3 дней)    |
@@ -116,6 +118,7 @@ ms.locfileid: "42331187"
 [user]: ./user.md
 [alert]: ./alert.md
 [chatMessage]: ./chatmessage.md
+[каллрекорд]: ./callrecords-callrecord.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

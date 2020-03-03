@@ -5,12 +5,12 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 550cec423d03c2fc1bf4e589675dcfeb126c39d8
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: 6bb11e36b2a5f11f94cea7294e77e6d23aa8dd54
+ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331278"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42394479"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -26,6 +26,7 @@ ms.locfileid: "42331278"
 
 | Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Для приложений |
 |:-----|:-----|:-----|:-----|
+|[каллрекорд](../resources/callrecords-callrecord.md) (/коммуникатионс/каллрекордс) | Не поддерживается | Не поддерживается | Каллрекордс. Read. ALL  |
 |[chatMessage](../resources/chatmessage.md) (/теамс/{ИД}/чаннелс/{ИД}/мессажес) | Не поддерживается | Не поддерживается | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/теамс/аллмессажес--все сообщения каналов в организации) | Не поддерживается | Не поддерживается | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/ЧАТС/{ИД}/мессажес) | Не поддерживается | Не поддерживается | Chat.Read.All  |
@@ -135,8 +136,9 @@ Content-type: application/json
 |Groups|groups|
 |Conversations|groups('*{id}*')/conversations|
 |Drives|me/drive/root|
-|Перечисление|Site/{site-ID}/Lists/{List-ID}|
+|Список|Site/{site-ID}/Lists/{List-ID}|
 |Security alert|security/alerts?$filter=status eq ‘New’|
+|Записи звонков|связь/Каллрекордс|
 
 ### <a name="response"></a>Отклик
 
