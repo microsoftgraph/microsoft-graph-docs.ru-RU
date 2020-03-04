@@ -4,12 +4,12 @@ description: Запрос позволяет запрашивать добавл
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: c41185f7c8679dc2df06ae6a47a55c2f904012be
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 473e4b949d9b3cb62827dbf05922d6dbf9a62766
+ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42163691"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42394591"
 ---
 # <a name="get-incremental-changes-for-users"></a>Получение добавочных изменений для пользователей
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/users/delta?$skiptoken=oEBwdSP6uehIAxQOWq_3
 
 ## <a name="nextlink-response"></a>Ответ nextLink
 
-Ответ содержит ссылку `nextLink` и еще один маркер `skipToken`, означающий, что доступны дополнительные пользователи. Вы продолжаете совершать запросы с использованием URL-адреса nextLink, пока в ответе не будет возвращен URL-адрес deltaLink.
+Ответ содержит ссылку `nextLink` с новым значением `skipToken`, означающим, что доступны дополнительные группы. Вы должны продолжать выполнение запросов с использованием URL-адреса `nextLink`, пока в окончательном ответе не будет возвращен URL-адрес `deltaLink`, даже если значением является пустой массив (это может происходить при некоторых обстоятельствах).
 
 ```http
 HTTP/1.1 200 OK

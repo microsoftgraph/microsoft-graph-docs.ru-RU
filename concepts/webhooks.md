@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 54775b566c26f0b6bc99fd1a8482fe5b12c5d1fa
-ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
+ms.openlocfilehash: ea8e56a657e32a5de1057f8199d27d256ab44168
+ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41651766"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42394626"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Настройка уведомлений об изменениях в пользовательских данных
 
@@ -41,6 +41,7 @@ API Microsoft Graph использует механизм веб-перехва�
 - Контент внутри иерархии _любой папки_ [driveItem][] на персональном хранилище OneDrive пользователя
 - Контент внутри иерархии _корневой папки_ [driveItem][] на персональном хранилище OneDrive для бизнеса
 - [Оповещение][] безопасности
+- Teams [callRecord][] (предварительная версия)
 
 Например, вы можете создать подписку на определенную папку Outlook, например, папку Входящие: `me/mailFolders('inbox')/messages`
 
@@ -279,3 +280,4 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 [message]: /graph/api/resources/message?view=graph-rest-1.0
 [user]: /graph/api/resources/user?view=graph-rest-1.0
 [alert]: /graph/api/resources/alert?view=graph-rest-1.0
+[callRecord]: /graph/api/resources/callrecords-callrecord?view=graph-rest-beta

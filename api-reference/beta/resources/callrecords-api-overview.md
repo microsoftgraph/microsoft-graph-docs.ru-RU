@@ -1,0 +1,45 @@
+---
+title: Работа с API записей звонков в Microsoft Graph
+description: API записей звонков Microsoft Graph позволяет извлекать данные об использовании и диагностике для звонков и собраний по сети в вашей организации.
+author: stephenjust
+doc_type: conceptualPageType
+ms.prod: cloud-communications
+localization_priority: Priority
+ms.openlocfilehash: 23fc6babd1b5fb8372e6471a6b1d0d22d36001f1
+ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.translationtype: HT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42394886"
+---
+# <a name="working-with-the-call-records-api-in-microsoft-graph"></a>Работа с API записей звонков в Microsoft Graph
+
+Пространство имен: microsoft.graph.callRecords
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Записи звонков содержат сведения об использовании и диагностике, касающиеся звонков и собраний по сети в вашей организации при применении Microsoft Teams или Skype для бизнеса. Вы можете использовать API записей звонков, чтобы подписаться на записи звонков и искать их по идентификаторам.
+
+## <a name="key-resource-types"></a>Ключевые типы ресурсов
+
+| Ресурс | Методы |
+| :-- | :-- |
+| [callRecord](callrecords-callrecord.md) | [Получение callRecord](../api/callrecords-callrecord-get.md) |
+| [session](callrecords-session.md) | [Получение callRecord](../api/callrecords-callrecord-get.md) |
+| [segment](callrecords-segment.md) | [Получение callRecord](../api/callrecords-callrecord-get.md) |
+
+## <a name="call-record-structure"></a>Структура записи звонка
+
+Объект [callRecord](callrecords-callrecord.md) представляет один одноранговый звонок или групповой звонок между несколькими участниками, иногда называемый собранием по сети.
+
+Одноранговый звонок содержит один объект [session](callrecords-session.md)между двумя участниками звонка. Групповые звонки содержат один или несколько объектов **session**. В групповом звонке каждый объект **session** находится между участником и конечной точкой службы.
+
+Каждый объект **session** содержит один или несколько объектов [segment](callrecords-segment.md). Объект **segment** представляет ссылку на носитель между двумя [конечными точками](callrecords-endpoint.md). В большинстве звонков для каждого объекта **session** будет существовать только один объект **segment**, но иногда может иметься одна или несколько промежуточных **конечных точек**.
+
+![Изображение структуры данных, представляющей полную запись звонка](/graph/images/callrecords-structure.png)
+
+На схеме выше числа обозначают допустимое количество дочерних элементов каждого типа. Например, связь 1..N между **callRecord** и **session** означает, что один экземпляр **callRecord** может содержать один или несколько экземпляров **session**. Таким же образом, связь 1..N между **segment** и **media** означает, что один экземпляр **segment** может содержать один или несколько потоков [media](callrecords-media.md).
+
+## <a name="see-also"></a>См. также
+
+- [Подписки веб-перехватчиков](/graph/api/resources/webhooks?view=graph-rest-beta)

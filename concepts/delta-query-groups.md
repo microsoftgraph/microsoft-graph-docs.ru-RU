@@ -4,12 +4,12 @@ description: Разностный запрос позволяет запраши
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: adff47b66af366dc98bd6471a272c369cb4a7a7b
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: 32c4a6b88cecd858751c5732416577def407ab30
+ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216800"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42394602"
 ---
 # <a name="get-incremental-changes-for-groups"></a>Получение добавочных изменений для групп
 
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=pqwSUjGYvb3jQpbwVAw
 
 ## <a name="nextlink-response"></a>Ответ nextLink
 
-Отклик содержит ссылку `nextLink` с новым значением `skipToken`, означающим, что доступны дополнительные группы. Выполнение запросов с использованием URL-адреса `nextLink` должно продолжаться, пока в отклике не будет возвращен URL-адрес `deltaLink`.
+Ответ содержит ссылку `nextLink` с новым значением `skipToken`, означающим, что доступны дополнительные группы. Вы должны продолжать выполнение запросов с использованием URL-адреса `nextLink`, пока в окончательном ответе не будет возвращен URL-адрес `deltaLink`, даже если значением является пустой массив (это может происходить при некоторых обстоятельствах).
 
 ```http
 HTTP/1.1 200 OK
