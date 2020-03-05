@@ -1,24 +1,26 @@
 ---
 title: Тип ресурса электронной почты
-description: Ниже этот ресурс представлен в формате JSON.
+description: Ниже показано представление JSON ресурса.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 76a849d3ac1e80a1dd70be250740449dd2412d94
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3e49ea89de278b4914156ba422ad2fec7bc69b47
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972245"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42499605"
 ---
-# <a name="email-resource-type"></a><span data-ttu-id="89f12-103">Тип ресурса электронной почты</span><span class="sxs-lookup"><span data-stu-id="89f12-103">email resource type</span></span>
+# <a name="email-resource-type"></a><span data-ttu-id="4a9b2-103">Тип ресурса электронной почты</span><span class="sxs-lookup"><span data-stu-id="4a9b2-103">email resource type</span></span>
+
+<span data-ttu-id="4a9b2-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="4a9b2-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="json-representation"></a><span data-ttu-id="89f12-104">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="89f12-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4a9b2-105">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="4a9b2-105">JSON representation</span></span>
 
-<span data-ttu-id="89f12-105">Ниже показано представление JSON ресурса.</span><span class="sxs-lookup"><span data-stu-id="89f12-105">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="4a9b2-106">Ниже показано представление JSON ресурса.</span><span class="sxs-lookup"><span data-stu-id="4a9b2-106">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -34,10 +36,10 @@ ms.locfileid: "35972245"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="89f12-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="89f12-106">Properties</span></span>
-| <span data-ttu-id="89f12-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="89f12-107">Property</span></span>     | <span data-ttu-id="89f12-108">Тип</span><span class="sxs-lookup"><span data-stu-id="89f12-108">Type</span></span>   |<span data-ttu-id="89f12-109">Описание</span><span class="sxs-lookup"><span data-stu-id="89f12-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="4a9b2-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="4a9b2-107">Properties</span></span>
+| <span data-ttu-id="4a9b2-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="4a9b2-108">Property</span></span>     | <span data-ttu-id="4a9b2-109">Тип</span><span class="sxs-lookup"><span data-stu-id="4a9b2-109">Type</span></span>   |<span data-ttu-id="4a9b2-110">Описание</span><span class="sxs-lookup"><span data-stu-id="4a9b2-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="89f12-110">address</span><span class="sxs-lookup"><span data-stu-id="89f12-110">address</span></span>|<span data-ttu-id="89f12-111">String</span><span class="sxs-lookup"><span data-stu-id="89f12-111">String</span></span>||
+|<span data-ttu-id="4a9b2-111">address</span><span class="sxs-lookup"><span data-stu-id="4a9b2-111">address</span></span>|<span data-ttu-id="4a9b2-112">String</span><span class="sxs-lookup"><span data-stu-id="4a9b2-112">String</span></span>||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

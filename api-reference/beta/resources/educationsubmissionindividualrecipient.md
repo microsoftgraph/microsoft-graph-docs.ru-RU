@@ -5,28 +5,30 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 2eecdc7e7ddd30ecad9a520b42cd11df9565fa71
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2954e511cee6929a66bb593c4f449f7410852c7f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972511"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42500725"
 ---
-# <a name="educationsubmissionindividualrecipient-resource-type"></a><span data-ttu-id="01a34-103">Тип ресурса ЕдукатионсубмиссиониндивидуалреЦипиент</span><span class="sxs-lookup"><span data-stu-id="01a34-103">educationSubmissionIndividualRecipient resource type</span></span>
+# <a name="educationsubmissionindividualrecipient-resource-type"></a><span data-ttu-id="867fa-103">Тип ресурса ЕдукатионсубмиссиониндивидуалреЦипиент</span><span class="sxs-lookup"><span data-stu-id="867fa-103">educationSubmissionIndividualRecipient resource type</span></span>
+
+<span data-ttu-id="867fa-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="867fa-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="01a34-104">Подкласс [едукатионсубмиссионреЦипиент](educationsubmissionrecipient.md) , который указывает, что отправка назначена отдельному пользователю в классе.</span><span class="sxs-lookup"><span data-stu-id="01a34-104">A subclass of [educationSubmissionRecipient](educationsubmissionrecipient.md) that indicates that a submission is assigned to an individual in the class.</span></span>  
+<span data-ttu-id="867fa-105">Подкласс [едукатионсубмиссионреЦипиент](educationsubmissionrecipient.md) , который указывает, что отправка назначена отдельному пользователю в классе.</span><span class="sxs-lookup"><span data-stu-id="867fa-105">A subclass of [educationSubmissionRecipient](educationsubmissionrecipient.md) that indicates that a submission is assigned to an individual in the class.</span></span>  
 
 
-## <a name="properties"></a><span data-ttu-id="01a34-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="01a34-105">Properties</span></span>
-| <span data-ttu-id="01a34-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="01a34-106">Property</span></span>     | <span data-ttu-id="01a34-107">Тип</span><span class="sxs-lookup"><span data-stu-id="01a34-107">Type</span></span>   |<span data-ttu-id="01a34-108">Описание</span><span class="sxs-lookup"><span data-stu-id="01a34-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="867fa-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="867fa-106">Properties</span></span>
+| <span data-ttu-id="867fa-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="867fa-107">Property</span></span>     | <span data-ttu-id="867fa-108">Тип</span><span class="sxs-lookup"><span data-stu-id="867fa-108">Type</span></span>   |<span data-ttu-id="867fa-109">Описание</span><span class="sxs-lookup"><span data-stu-id="867fa-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="01a34-109">userId</span><span class="sxs-lookup"><span data-stu-id="01a34-109">userId</span></span>|<span data-ttu-id="01a34-110">String</span><span class="sxs-lookup"><span data-stu-id="01a34-110">String</span></span>|<span data-ttu-id="01a34-111">Идентификатор пользователя, которому назначена отправка.</span><span class="sxs-lookup"><span data-stu-id="01a34-111">User ID of the user to whom the submission is assigned.</span></span>|
+|<span data-ttu-id="867fa-110">userId</span><span class="sxs-lookup"><span data-stu-id="867fa-110">userId</span></span>|<span data-ttu-id="867fa-111">String</span><span class="sxs-lookup"><span data-stu-id="867fa-111">String</span></span>|<span data-ttu-id="867fa-112">Идентификатор пользователя, которому назначена отправка.</span><span class="sxs-lookup"><span data-stu-id="867fa-112">User ID of the user to whom the submission is assigned.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="01a34-112">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="01a34-112">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="867fa-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="867fa-113">JSON representation</span></span>
 
-<span data-ttu-id="01a34-113">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="01a34-113">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="867fa-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="867fa-114">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

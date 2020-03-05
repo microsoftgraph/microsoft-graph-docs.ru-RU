@@ -5,44 +5,46 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 864635014b3e215dabd11896922ca9e73a5e8cb9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: af64f8686b1779030c0ace93b4805845c6ed3c81
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974173"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507998"
 ---
-# <a name="bookingcustomer-resource-type"></a><span data-ttu-id="fd595-104">Тип ресурса Букингкустомер</span><span class="sxs-lookup"><span data-stu-id="fd595-104">bookingCustomer resource type</span></span>
+# <a name="bookingcustomer-resource-type"></a><span data-ttu-id="26720-104">Тип ресурса Букингкустомер</span><span class="sxs-lookup"><span data-stu-id="26720-104">bookingCustomer resource type</span></span>
+
+<span data-ttu-id="26720-105">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="26720-105">Namespace: microsoft.graph</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-<span data-ttu-id="fd595-105">Представляет клиента объекта [букингбусинесс](bookingbusiness.md).</span><span class="sxs-lookup"><span data-stu-id="fd595-105">Represents a customer of a [bookingBusiness](bookingbusiness.md).</span></span>
+<span data-ttu-id="26720-106">Представляет клиента объекта [букингбусинесс](bookingbusiness.md).</span><span class="sxs-lookup"><span data-stu-id="26720-106">Represents a customer of a [bookingBusiness](bookingbusiness.md).</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="fd595-106">Методы</span><span class="sxs-lookup"><span data-stu-id="fd595-106">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="26720-107">Методы</span><span class="sxs-lookup"><span data-stu-id="26720-107">Methods</span></span>
 
-| <span data-ttu-id="fd595-107">Метод</span><span class="sxs-lookup"><span data-stu-id="fd595-107">Method</span></span>           | <span data-ttu-id="fd595-108">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="fd595-108">Return Type</span></span>    |<span data-ttu-id="fd595-109">Описание</span><span class="sxs-lookup"><span data-stu-id="fd595-109">Description</span></span>|
+| <span data-ttu-id="26720-108">Метод</span><span class="sxs-lookup"><span data-stu-id="26720-108">Method</span></span>           | <span data-ttu-id="26720-109">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="26720-109">Return Type</span></span>    |<span data-ttu-id="26720-110">Описание</span><span class="sxs-lookup"><span data-stu-id="26720-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="fd595-110">Перечисление клиентов</span><span class="sxs-lookup"><span data-stu-id="fd595-110">List customers</span></span>](../api/bookingbusiness-list-customers.md) | <span data-ttu-id="fd595-111">Коллекция [букингкустомер](bookingcustomer.md)</span><span class="sxs-lookup"><span data-stu-id="fd595-111">[bookingCustomer](bookingcustomer.md) collection</span></span> | <span data-ttu-id="fd595-112">Получение списка объектов **букингкустомер** .</span><span class="sxs-lookup"><span data-stu-id="fd595-112">Get a list of **bookingCustomer** objects.</span></span> |
-|[<span data-ttu-id="fd595-113">Создание Букингкустомер</span><span class="sxs-lookup"><span data-stu-id="fd595-113">Create bookingCustomer</span></span>](../api/bookingbusiness-post-customers.md) | [<span data-ttu-id="fd595-114">Букингкустомер</span><span class="sxs-lookup"><span data-stu-id="fd595-114">bookingCustomer</span></span>](bookingcustomer.md) | <span data-ttu-id="fd595-115">Создание нового объекта **букингкустомер** .</span><span class="sxs-lookup"><span data-stu-id="fd595-115">Create a new **bookingCustomer** object.</span></span> |
-|[<span data-ttu-id="fd595-116">Получение Букингкустомер</span><span class="sxs-lookup"><span data-stu-id="fd595-116">Get bookingCustomer</span></span>](../api/bookingcustomer-get.md) | [<span data-ttu-id="fd595-117">Букингкустомер</span><span class="sxs-lookup"><span data-stu-id="fd595-117">bookingCustomer</span></span>](bookingcustomer.md) |<span data-ttu-id="fd595-118">Чтение свойств и связей объекта **букингкустомер** .</span><span class="sxs-lookup"><span data-stu-id="fd595-118">Read the properties and relationships of a **bookingCustomer** object.</span></span>|
-|<span data-ttu-id="fd595-119">[обновление](../api/bookingcustomer-update.md);</span><span class="sxs-lookup"><span data-stu-id="fd595-119">[Update](../api/bookingcustomer-update.md)</span></span> | [<span data-ttu-id="fd595-120">Букингкустомер</span><span class="sxs-lookup"><span data-stu-id="fd595-120">bookingCustomer</span></span>](bookingcustomer.md) |<span data-ttu-id="fd595-121">Обновление объекта **букингкустомер** .</span><span class="sxs-lookup"><span data-stu-id="fd595-121">Update a **bookingCustomer** object.</span></span> |
-|[<span data-ttu-id="fd595-122">Удаление</span><span class="sxs-lookup"><span data-stu-id="fd595-122">Delete</span></span>](../api/bookingcustomer-delete.md) | <span data-ttu-id="fd595-123">Нет</span><span class="sxs-lookup"><span data-stu-id="fd595-123">None</span></span> |<span data-ttu-id="fd595-124">Удаление объекта **букингкустомер** .</span><span class="sxs-lookup"><span data-stu-id="fd595-124">Delete a **bookingCustomer** object.</span></span> |
+|[<span data-ttu-id="26720-111">Перечисление клиентов</span><span class="sxs-lookup"><span data-stu-id="26720-111">List customers</span></span>](../api/bookingbusiness-list-customers.md) | <span data-ttu-id="26720-112">Коллекция [букингкустомер](bookingcustomer.md)</span><span class="sxs-lookup"><span data-stu-id="26720-112">[bookingCustomer](bookingcustomer.md) collection</span></span> | <span data-ttu-id="26720-113">Получение списка объектов **букингкустомер** .</span><span class="sxs-lookup"><span data-stu-id="26720-113">Get a list of **bookingCustomer** objects.</span></span> |
+|[<span data-ttu-id="26720-114">Создание Букингкустомер</span><span class="sxs-lookup"><span data-stu-id="26720-114">Create bookingCustomer</span></span>](../api/bookingbusiness-post-customers.md) | [<span data-ttu-id="26720-115">букингкустомер</span><span class="sxs-lookup"><span data-stu-id="26720-115">bookingCustomer</span></span>](bookingcustomer.md) | <span data-ttu-id="26720-116">Создание нового объекта **букингкустомер** .</span><span class="sxs-lookup"><span data-stu-id="26720-116">Create a new **bookingCustomer** object.</span></span> |
+|[<span data-ttu-id="26720-117">Получение Букингкустомер</span><span class="sxs-lookup"><span data-stu-id="26720-117">Get bookingCustomer</span></span>](../api/bookingcustomer-get.md) | [<span data-ttu-id="26720-118">букингкустомер</span><span class="sxs-lookup"><span data-stu-id="26720-118">bookingCustomer</span></span>](bookingcustomer.md) |<span data-ttu-id="26720-119">Чтение свойств и связей объекта **букингкустомер** .</span><span class="sxs-lookup"><span data-stu-id="26720-119">Read the properties and relationships of a **bookingCustomer** object.</span></span>|
+|<span data-ttu-id="26720-120">[обновление](../api/bookingcustomer-update.md).</span><span class="sxs-lookup"><span data-stu-id="26720-120">[Update](../api/bookingcustomer-update.md)</span></span> | [<span data-ttu-id="26720-121">букингкустомер</span><span class="sxs-lookup"><span data-stu-id="26720-121">bookingCustomer</span></span>](bookingcustomer.md) |<span data-ttu-id="26720-122">Обновление объекта **букингкустомер** .</span><span class="sxs-lookup"><span data-stu-id="26720-122">Update a **bookingCustomer** object.</span></span> |
+|<span data-ttu-id="26720-123">[удаление](../api/bookingcustomer-delete.md);</span><span class="sxs-lookup"><span data-stu-id="26720-123">[Delete](../api/bookingcustomer-delete.md)</span></span> | <span data-ttu-id="26720-124">Нет</span><span class="sxs-lookup"><span data-stu-id="26720-124">None</span></span> |<span data-ttu-id="26720-125">Удаление объекта **букингкустомер** .</span><span class="sxs-lookup"><span data-stu-id="26720-125">Delete a **bookingCustomer** object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="fd595-125">Свойства</span><span class="sxs-lookup"><span data-stu-id="fd595-125">Properties</span></span>
-| <span data-ttu-id="fd595-126">Свойство</span><span class="sxs-lookup"><span data-stu-id="fd595-126">Property</span></span>     | <span data-ttu-id="fd595-127">Тип</span><span class="sxs-lookup"><span data-stu-id="fd595-127">Type</span></span>   |<span data-ttu-id="fd595-128">Описание</span><span class="sxs-lookup"><span data-stu-id="fd595-128">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="26720-126">Свойства</span><span class="sxs-lookup"><span data-stu-id="26720-126">Properties</span></span>
+| <span data-ttu-id="26720-127">Свойство</span><span class="sxs-lookup"><span data-stu-id="26720-127">Property</span></span>     | <span data-ttu-id="26720-128">Тип</span><span class="sxs-lookup"><span data-stu-id="26720-128">Type</span></span>   |<span data-ttu-id="26720-129">Описание</span><span class="sxs-lookup"><span data-stu-id="26720-129">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="fd595-129">displayName</span><span class="sxs-lookup"><span data-stu-id="fd595-129">displayName</span></span>|<span data-ttu-id="fd595-130">Строка</span><span class="sxs-lookup"><span data-stu-id="fd595-130">String</span></span>|<span data-ttu-id="fd595-131">Имя клиента.</span><span class="sxs-lookup"><span data-stu-id="fd595-131">The name of the customer.</span></span>|
-|<span data-ttu-id="fd595-132">emailAddress</span><span class="sxs-lookup"><span data-stu-id="fd595-132">emailAddress</span></span>|<span data-ttu-id="fd595-133">String</span><span class="sxs-lookup"><span data-stu-id="fd595-133">String</span></span>|<span data-ttu-id="fd595-134">SMTP-адрес клиента.</span><span class="sxs-lookup"><span data-stu-id="fd595-134">The SMTP address of the customer.</span></span>|
-|<span data-ttu-id="fd595-135">id</span><span class="sxs-lookup"><span data-stu-id="fd595-135">id</span></span>|<span data-ttu-id="fd595-136">String</span><span class="sxs-lookup"><span data-stu-id="fd595-136">String</span></span>| <span data-ttu-id="fd595-137">Идентификатор клиента.</span><span class="sxs-lookup"><span data-stu-id="fd595-137">The ID of the customer.</span></span> <span data-ttu-id="fd595-138">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="fd595-138">Read-only.</span></span>|
+|<span data-ttu-id="26720-130">displayName</span><span class="sxs-lookup"><span data-stu-id="26720-130">displayName</span></span>|<span data-ttu-id="26720-131">Строка</span><span class="sxs-lookup"><span data-stu-id="26720-131">String</span></span>|<span data-ttu-id="26720-132">Имя клиента.</span><span class="sxs-lookup"><span data-stu-id="26720-132">The name of the customer.</span></span>|
+|<span data-ttu-id="26720-133">emailAddress</span><span class="sxs-lookup"><span data-stu-id="26720-133">emailAddress</span></span>|<span data-ttu-id="26720-134">String</span><span class="sxs-lookup"><span data-stu-id="26720-134">String</span></span>|<span data-ttu-id="26720-135">SMTP-адрес клиента.</span><span class="sxs-lookup"><span data-stu-id="26720-135">The SMTP address of the customer.</span></span>|
+|<span data-ttu-id="26720-136">id</span><span class="sxs-lookup"><span data-stu-id="26720-136">id</span></span>|<span data-ttu-id="26720-137">String</span><span class="sxs-lookup"><span data-stu-id="26720-137">String</span></span>| <span data-ttu-id="26720-138">Идентификатор клиента.</span><span class="sxs-lookup"><span data-stu-id="26720-138">The ID of the customer.</span></span> <span data-ttu-id="26720-139">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="26720-139">Read-only.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="fd595-139">Отношения</span><span class="sxs-lookup"><span data-stu-id="fd595-139">Relationships</span></span>
-<span data-ttu-id="fd595-140">Нет</span><span class="sxs-lookup"><span data-stu-id="fd595-140">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="26720-140">Отношения</span><span class="sxs-lookup"><span data-stu-id="26720-140">Relationships</span></span>
+<span data-ttu-id="26720-141">Нет</span><span class="sxs-lookup"><span data-stu-id="26720-141">None</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="fd595-141">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="fd595-141">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="26720-142">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="26720-142">JSON representation</span></span>
 
-<span data-ttu-id="fd595-142">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="fd595-142">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="26720-143">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="26720-143">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -5,35 +5,37 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ebeb84ccf0e010ad792133f16f7819ca1d8b8ed0
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: b91afb44cc43c3c6ac4970afc36914abcb08c4c9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37638500"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507550"
 ---
-# <a name="conditionalaccessgrantcontrols-resource-type"></a><span data-ttu-id="de4b6-103">Тип ресурса Кондитионалакцессгрантконтролс</span><span class="sxs-lookup"><span data-stu-id="de4b6-103">conditionalAccessGrantControls resource type</span></span>
+# <a name="conditionalaccessgrantcontrols-resource-type"></a><span data-ttu-id="6d85d-103">Тип ресурса Кондитионалакцессгрантконтролс</span><span class="sxs-lookup"><span data-stu-id="6d85d-103">conditionalAccessGrantControls resource type</span></span>
+
+<span data-ttu-id="6d85d-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="6d85d-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="de4b6-104">Представляет элементы управления предоставлением, которые должны быть выполнены для передачи политики.</span><span class="sxs-lookup"><span data-stu-id="de4b6-104">Represents grant controls that must be fulfilled to pass the policy.</span></span>
+<span data-ttu-id="6d85d-105">Представляет элементы управления предоставлением, которые должны быть выполнены для передачи политики.</span><span class="sxs-lookup"><span data-stu-id="6d85d-105">Represents grant controls that must be fulfilled to pass the policy.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="de4b6-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="de4b6-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="6d85d-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="6d85d-106">Properties</span></span>
 
-| <span data-ttu-id="de4b6-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="de4b6-106">Property</span></span> | <span data-ttu-id="de4b6-107">Тип</span><span class="sxs-lookup"><span data-stu-id="de4b6-107">Type</span></span> | <span data-ttu-id="de4b6-108">Описание</span><span class="sxs-lookup"><span data-stu-id="de4b6-108">Description</span></span> |
+| <span data-ttu-id="6d85d-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="6d85d-107">Property</span></span> | <span data-ttu-id="6d85d-108">Тип</span><span class="sxs-lookup"><span data-stu-id="6d85d-108">Type</span></span> | <span data-ttu-id="6d85d-109">Описание</span><span class="sxs-lookup"><span data-stu-id="6d85d-109">Description</span></span> |
 |:-------- |:---- |:----------- |
-| <span data-ttu-id="de4b6-109">operator</span><span class="sxs-lookup"><span data-stu-id="de4b6-109">operator</span></span> | <span data-ttu-id="de4b6-110">String</span><span class="sxs-lookup"><span data-stu-id="de4b6-110">String</span></span> | <span data-ttu-id="de4b6-111">Определяет связь элементов управления предоставлением.</span><span class="sxs-lookup"><span data-stu-id="de4b6-111">Defines the relationship of the grant controls.</span></span> <span data-ttu-id="de4b6-112">Возможные значения: `AND`, `OR`.</span><span class="sxs-lookup"><span data-stu-id="de4b6-112">Possible values: `AND`, `OR`.</span></span> |
-| <span data-ttu-id="de4b6-113">буилтинконтролс</span><span class="sxs-lookup"><span data-stu-id="de4b6-113">builtInControls</span></span> | <span data-ttu-id="de4b6-114">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="de4b6-114">String collection</span></span> | <span data-ttu-id="de4b6-115">Список значений встроенных элементов управления, необходимых для политики.</span><span class="sxs-lookup"><span data-stu-id="de4b6-115">List of values of built-in controls required by the policy.</span></span> <span data-ttu-id="de4b6-116">Возможные значения: `Block`, `Mfa`, `CompliantDevice`, `DomainJoinedDevice`, `ApprovedApplication`,`CompliantApplication`</span><span class="sxs-lookup"><span data-stu-id="de4b6-116">Possible values: `Block`, `Mfa`, `CompliantDevice`, `DomainJoinedDevice`, `ApprovedApplication`, `CompliantApplication`</span></span> |
-| <span data-ttu-id="de4b6-117">кустомаусентикатионфакторс</span><span class="sxs-lookup"><span data-stu-id="de4b6-117">customAuthenticationFactors</span></span> | <span data-ttu-id="de4b6-118">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="de4b6-118">String collection</span></span> | <span data-ttu-id="de4b6-119">Список идентификаторов настраиваемых элементов управления, необходимых для политики.</span><span class="sxs-lookup"><span data-stu-id="de4b6-119">List of custom controls IDs required by the policy.</span></span> <span data-ttu-id="de4b6-120">Дополнительные сведения о настраиваемых элементах управления:https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview</span><span class="sxs-lookup"><span data-stu-id="de4b6-120">Learn more about custom controls here: https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview</span></span> |
-| <span data-ttu-id="de4b6-121">термсофусе</span><span class="sxs-lookup"><span data-stu-id="de4b6-121">termsOfUse</span></span> | <span data-ttu-id="de4b6-122">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="de4b6-122">String collection</span></span> | <span data-ttu-id="de4b6-123">Список [условий использования](agreement.md) идентификаторов, необходимых для политики.</span><span class="sxs-lookup"><span data-stu-id="de4b6-123">List of [terms of use](agreement.md) IDs required by the policy.</span></span> |
+| <span data-ttu-id="6d85d-110">operator</span><span class="sxs-lookup"><span data-stu-id="6d85d-110">operator</span></span> | <span data-ttu-id="6d85d-111">String</span><span class="sxs-lookup"><span data-stu-id="6d85d-111">String</span></span> | <span data-ttu-id="6d85d-112">Определяет связь элементов управления предоставлением.</span><span class="sxs-lookup"><span data-stu-id="6d85d-112">Defines the relationship of the grant controls.</span></span> <span data-ttu-id="6d85d-113">Возможные значения: `AND`, `OR`.</span><span class="sxs-lookup"><span data-stu-id="6d85d-113">Possible values: `AND`, `OR`.</span></span> |
+| <span data-ttu-id="6d85d-114">буилтинконтролс</span><span class="sxs-lookup"><span data-stu-id="6d85d-114">builtInControls</span></span> | <span data-ttu-id="6d85d-115">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="6d85d-115">String collection</span></span> | <span data-ttu-id="6d85d-116">Список значений встроенных элементов управления, необходимых для политики.</span><span class="sxs-lookup"><span data-stu-id="6d85d-116">List of values of built-in controls required by the policy.</span></span> <span data-ttu-id="6d85d-117">Возможные значения: `Block`, `Mfa`, `CompliantDevice`, `DomainJoinedDevice`, `ApprovedApplication`,`CompliantApplication`</span><span class="sxs-lookup"><span data-stu-id="6d85d-117">Possible values: `Block`, `Mfa`, `CompliantDevice`, `DomainJoinedDevice`, `ApprovedApplication`, `CompliantApplication`</span></span> |
+| <span data-ttu-id="6d85d-118">кустомаусентикатионфакторс</span><span class="sxs-lookup"><span data-stu-id="6d85d-118">customAuthenticationFactors</span></span> | <span data-ttu-id="6d85d-119">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="6d85d-119">String collection</span></span> | <span data-ttu-id="6d85d-120">Список идентификаторов настраиваемых элементов управления, необходимых для политики.</span><span class="sxs-lookup"><span data-stu-id="6d85d-120">List of custom controls IDs required by the policy.</span></span> <span data-ttu-id="6d85d-121">Дополнительные сведения о настраиваемых элементах управления:https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview</span><span class="sxs-lookup"><span data-stu-id="6d85d-121">Learn more about custom controls here: https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview</span></span> |
+| <span data-ttu-id="6d85d-122">термсофусе</span><span class="sxs-lookup"><span data-stu-id="6d85d-122">termsOfUse</span></span> | <span data-ttu-id="6d85d-123">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="6d85d-123">String collection</span></span> | <span data-ttu-id="6d85d-124">Список [условий использования](agreement.md) идентификаторов, необходимых для политики.</span><span class="sxs-lookup"><span data-stu-id="6d85d-124">List of [terms of use](agreement.md) IDs required by the policy.</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="de4b6-124">Связи</span><span class="sxs-lookup"><span data-stu-id="de4b6-124">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="6d85d-125">Связи</span><span class="sxs-lookup"><span data-stu-id="6d85d-125">Relationships</span></span>
 
-<span data-ttu-id="de4b6-125">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="de4b6-125">None.</span></span>
+<span data-ttu-id="6d85d-126">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="6d85d-126">None.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="de4b6-126">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="de4b6-126">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6d85d-127">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="6d85d-127">JSON representation</span></span>
 
-<span data-ttu-id="de4b6-127">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="de4b6-127">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="6d85d-128">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="6d85d-128">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

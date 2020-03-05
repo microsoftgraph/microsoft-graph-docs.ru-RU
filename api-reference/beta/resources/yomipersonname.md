@@ -5,32 +5,34 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 8117dd71947fea41508ccbe7d50d49a4f78b335d
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 0a598c4b5e999b03aeb7201c6eae3a230d3160a7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939770"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518975"
 ---
-# <a name="yomipersonname-resource-type"></a><span data-ttu-id="35032-103">Тип ресурса Йомиперсоннаме</span><span class="sxs-lookup"><span data-stu-id="35032-103">yomiPersonName resource type</span></span>
+# <a name="yomipersonname-resource-type"></a><span data-ttu-id="e70bc-103">Тип ресурса Йомиперсоннаме</span><span class="sxs-lookup"><span data-stu-id="e70bc-103">yomiPersonName resource type</span></span>
+
+<span data-ttu-id="e70bc-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="e70bc-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="35032-104">Предоставляет пользователю способ хранения сведений о том, как произношение имени для несобственных динамиков языка, в котором представлен ресурс [PersonName](personname.md) .</span><span class="sxs-lookup"><span data-stu-id="35032-104">Provides a mechanism for a user to store information about how to pronounce a name for non-native speakers of the language that the [personName](personname.md) resource is represented in.</span></span>
+<span data-ttu-id="e70bc-105">Предоставляет пользователю способ хранения сведений о том, как произношение имени для несобственных динамиков языка, в котором представлен ресурс [PersonName](personname.md) .</span><span class="sxs-lookup"><span data-stu-id="e70bc-105">Provides a mechanism for a user to store information about how to pronounce a name for non-native speakers of the language that the [personName](personname.md) resource is represented in.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="35032-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="35032-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="e70bc-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="e70bc-106">Properties</span></span>
 
-| <span data-ttu-id="35032-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="35032-106">Property</span></span>     | <span data-ttu-id="35032-107">Тип</span><span class="sxs-lookup"><span data-stu-id="35032-107">Type</span></span>        | <span data-ttu-id="35032-108">Описание</span><span class="sxs-lookup"><span data-stu-id="35032-108">Description</span></span>                                             |
+| <span data-ttu-id="e70bc-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="e70bc-107">Property</span></span>     | <span data-ttu-id="e70bc-108">Тип</span><span class="sxs-lookup"><span data-stu-id="e70bc-108">Type</span></span>        | <span data-ttu-id="e70bc-109">Описание</span><span class="sxs-lookup"><span data-stu-id="e70bc-109">Description</span></span>                                             |
 |:-------------|:------------|:--------------------------------------------------------|
-|<span data-ttu-id="35032-109">displayName</span><span class="sxs-lookup"><span data-stu-id="35032-109">displayName</span></span>   |<span data-ttu-id="35032-110">Строка</span><span class="sxs-lookup"><span data-stu-id="35032-110">String</span></span>       | <span data-ttu-id="35032-111">Составные руководства по произношению имени и фамилии.</span><span class="sxs-lookup"><span data-stu-id="35032-111">Composite of first and last name pronunciation guides.</span></span>  |
-|<span data-ttu-id="35032-112">первыми</span><span class="sxs-lookup"><span data-stu-id="35032-112">first</span></span>         |<span data-ttu-id="35032-113">Строка</span><span class="sxs-lookup"><span data-stu-id="35032-113">String</span></span>       | <span data-ttu-id="35032-114">Произношение руководства для первого имени пользователя.</span><span class="sxs-lookup"><span data-stu-id="35032-114">Pronunciation guide for the first name of the user.</span></span>     |
-|<span data-ttu-id="35032-115">Фамили</span><span class="sxs-lookup"><span data-stu-id="35032-115">last</span></span>          |<span data-ttu-id="35032-116">Строка</span><span class="sxs-lookup"><span data-stu-id="35032-116">String</span></span>       | <span data-ttu-id="35032-117">Произношение руководства для последнего имени пользователя.</span><span class="sxs-lookup"><span data-stu-id="35032-117">Pronunciation guide for the last name of the user.</span></span>      |
-|<span data-ttu-id="35032-118">маиден</span><span class="sxs-lookup"><span data-stu-id="35032-118">maiden</span></span>        |<span data-ttu-id="35032-119">Строка</span><span class="sxs-lookup"><span data-stu-id="35032-119">String</span></span>       | <span data-ttu-id="35032-120">Произношение руководства для маиден имени пользователя.</span><span class="sxs-lookup"><span data-stu-id="35032-120">Pronunciation guide for the maiden name of the user.</span></span>    |
-|<span data-ttu-id="35032-121">назван</span><span class="sxs-lookup"><span data-stu-id="35032-121">middle</span></span>        |<span data-ttu-id="35032-122">Строка</span><span class="sxs-lookup"><span data-stu-id="35032-122">String</span></span>       | <span data-ttu-id="35032-123">Произношение руководства по среднему имени пользователя.</span><span class="sxs-lookup"><span data-stu-id="35032-123">Pronunciation guide for the middle name of the user.</span></span>    |
+|<span data-ttu-id="e70bc-110">displayName</span><span class="sxs-lookup"><span data-stu-id="e70bc-110">displayName</span></span>   |<span data-ttu-id="e70bc-111">String</span><span class="sxs-lookup"><span data-stu-id="e70bc-111">String</span></span>       | <span data-ttu-id="e70bc-112">Составные руководства по произношению имени и фамилии.</span><span class="sxs-lookup"><span data-stu-id="e70bc-112">Composite of first and last name pronunciation guides.</span></span>  |
+|<span data-ttu-id="e70bc-113">первыми</span><span class="sxs-lookup"><span data-stu-id="e70bc-113">first</span></span>         |<span data-ttu-id="e70bc-114">String</span><span class="sxs-lookup"><span data-stu-id="e70bc-114">String</span></span>       | <span data-ttu-id="e70bc-115">Произношение руководства для первого имени пользователя.</span><span class="sxs-lookup"><span data-stu-id="e70bc-115">Pronunciation guide for the first name of the user.</span></span>     |
+|<span data-ttu-id="e70bc-116">Фамили</span><span class="sxs-lookup"><span data-stu-id="e70bc-116">last</span></span>          |<span data-ttu-id="e70bc-117">String</span><span class="sxs-lookup"><span data-stu-id="e70bc-117">String</span></span>       | <span data-ttu-id="e70bc-118">Произношение руководства для последнего имени пользователя.</span><span class="sxs-lookup"><span data-stu-id="e70bc-118">Pronunciation guide for the last name of the user.</span></span>      |
+|<span data-ttu-id="e70bc-119">маиден</span><span class="sxs-lookup"><span data-stu-id="e70bc-119">maiden</span></span>        |<span data-ttu-id="e70bc-120">String</span><span class="sxs-lookup"><span data-stu-id="e70bc-120">String</span></span>       | <span data-ttu-id="e70bc-121">Произношение руководства для маиден имени пользователя.</span><span class="sxs-lookup"><span data-stu-id="e70bc-121">Pronunciation guide for the maiden name of the user.</span></span>    |
+|<span data-ttu-id="e70bc-122">назван</span><span class="sxs-lookup"><span data-stu-id="e70bc-122">middle</span></span>        |<span data-ttu-id="e70bc-123">String</span><span class="sxs-lookup"><span data-stu-id="e70bc-123">String</span></span>       | <span data-ttu-id="e70bc-124">Произношение руководства по среднему имени пользователя.</span><span class="sxs-lookup"><span data-stu-id="e70bc-124">Pronunciation guide for the middle name of the user.</span></span>    |
 
-## <a name="json-representation"></a><span data-ttu-id="35032-124">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="35032-124">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e70bc-125">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="e70bc-125">JSON representation</span></span>
 
-<span data-ttu-id="35032-125">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="35032-125">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="e70bc-126">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e70bc-126">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

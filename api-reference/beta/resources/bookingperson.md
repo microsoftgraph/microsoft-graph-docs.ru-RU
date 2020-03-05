@@ -5,33 +5,35 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 3c8db7aca957878247193207e00e969d8ddfc98e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e99b2fb844d8316a5e9d227961be1298c4c41d9b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974168"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507974"
 ---
-# <a name="bookingperson-resource-type"></a><span data-ttu-id="0cde3-104">Тип ресурса Букингперсон</span><span class="sxs-lookup"><span data-stu-id="0cde3-104">bookingPerson resource type</span></span>
+# <a name="bookingperson-resource-type"></a><span data-ttu-id="9d96a-104">Тип ресурса Букингперсон</span><span class="sxs-lookup"><span data-stu-id="9d96a-104">bookingPerson resource type</span></span>
+
+<span data-ttu-id="9d96a-105">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="9d96a-105">Namespace: microsoft.graph</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-<span data-ttu-id="0cde3-105">Это базовый тип для человека в Microsoft Books бизнеса, который может быть [букингкустомер](bookingcustomer.md) или [букингстаффмембер](bookingstaffmember.md).</span><span class="sxs-lookup"><span data-stu-id="0cde3-105">This is a base type for a person in a Microsoft Bookings business, which can be a [bookingCustomer](bookingcustomer.md) or [bookingStaffMember](bookingstaffmember.md).</span></span>
+<span data-ttu-id="9d96a-106">Это базовый тип для человека в Microsoft Books бизнеса, который может быть [букингкустомер](bookingcustomer.md) или [букингстаффмембер](bookingstaffmember.md).</span><span class="sxs-lookup"><span data-stu-id="9d96a-106">This is a base type for a person in a Microsoft Bookings business, which can be a [bookingCustomer](bookingcustomer.md) or [bookingStaffMember](bookingstaffmember.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="0cde3-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="0cde3-106">Properties</span></span>
-| <span data-ttu-id="0cde3-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="0cde3-107">Property</span></span>     | <span data-ttu-id="0cde3-108">Тип</span><span class="sxs-lookup"><span data-stu-id="0cde3-108">Type</span></span>   |<span data-ttu-id="0cde3-109">Описание</span><span class="sxs-lookup"><span data-stu-id="0cde3-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="9d96a-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="9d96a-107">Properties</span></span>
+| <span data-ttu-id="9d96a-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="9d96a-108">Property</span></span>     | <span data-ttu-id="9d96a-109">Тип</span><span class="sxs-lookup"><span data-stu-id="9d96a-109">Type</span></span>   |<span data-ttu-id="9d96a-110">Описание</span><span class="sxs-lookup"><span data-stu-id="9d96a-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="0cde3-110">displayName</span><span class="sxs-lookup"><span data-stu-id="0cde3-110">displayName</span></span>|<span data-ttu-id="0cde3-111">Строка</span><span class="sxs-lookup"><span data-stu-id="0cde3-111">String</span></span>|<span data-ttu-id="0cde3-112">Имя производной сущности, которая взаимодействует с клиентами.</span><span class="sxs-lookup"><span data-stu-id="0cde3-112">A name for the derived entity, which interfaces with customers.</span></span>|
-|<span data-ttu-id="0cde3-113">emailAddress</span><span class="sxs-lookup"><span data-stu-id="0cde3-113">emailAddress</span></span>|<span data-ttu-id="0cde3-114">String</span><span class="sxs-lookup"><span data-stu-id="0cde3-114">String</span></span>|<span data-ttu-id="0cde3-115">Адрес электронной почты пользователя.</span><span class="sxs-lookup"><span data-stu-id="0cde3-115">The email address of the person.</span></span>|
-|<span data-ttu-id="0cde3-116">id</span><span class="sxs-lookup"><span data-stu-id="0cde3-116">id</span></span>|<span data-ttu-id="0cde3-117">String</span><span class="sxs-lookup"><span data-stu-id="0cde3-117">String</span></span>| <span data-ttu-id="0cde3-118">Идентификатор производной сущности.</span><span class="sxs-lookup"><span data-stu-id="0cde3-118">The ID for the derived entity.</span></span> <span data-ttu-id="0cde3-119">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="0cde3-119">Read-only.</span></span>|
+|<span data-ttu-id="9d96a-111">displayName</span><span class="sxs-lookup"><span data-stu-id="9d96a-111">displayName</span></span>|<span data-ttu-id="9d96a-112">Строка</span><span class="sxs-lookup"><span data-stu-id="9d96a-112">String</span></span>|<span data-ttu-id="9d96a-113">Имя производной сущности, которая взаимодействует с клиентами.</span><span class="sxs-lookup"><span data-stu-id="9d96a-113">A name for the derived entity, which interfaces with customers.</span></span>|
+|<span data-ttu-id="9d96a-114">emailAddress</span><span class="sxs-lookup"><span data-stu-id="9d96a-114">emailAddress</span></span>|<span data-ttu-id="9d96a-115">String</span><span class="sxs-lookup"><span data-stu-id="9d96a-115">String</span></span>|<span data-ttu-id="9d96a-116">Адрес электронной почты пользователя.</span><span class="sxs-lookup"><span data-stu-id="9d96a-116">The email address of the person.</span></span>|
+|<span data-ttu-id="9d96a-117">id</span><span class="sxs-lookup"><span data-stu-id="9d96a-117">id</span></span>|<span data-ttu-id="9d96a-118">String</span><span class="sxs-lookup"><span data-stu-id="9d96a-118">String</span></span>| <span data-ttu-id="9d96a-119">Идентификатор производной сущности.</span><span class="sxs-lookup"><span data-stu-id="9d96a-119">The ID for the derived entity.</span></span> <span data-ttu-id="9d96a-120">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="9d96a-120">Read-only.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="0cde3-120">Отношения</span><span class="sxs-lookup"><span data-stu-id="0cde3-120">Relationships</span></span>
-<span data-ttu-id="0cde3-121">Нет</span><span class="sxs-lookup"><span data-stu-id="0cde3-121">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="9d96a-121">Отношения</span><span class="sxs-lookup"><span data-stu-id="9d96a-121">Relationships</span></span>
+<span data-ttu-id="9d96a-122">Нет</span><span class="sxs-lookup"><span data-stu-id="9d96a-122">None</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="0cde3-122">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="0cde3-122">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="9d96a-123">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="9d96a-123">JSON representation</span></span>
 
-<span data-ttu-id="0cde3-123">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0cde3-123">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="9d96a-124">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="9d96a-124">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -5,28 +5,29 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 63cb9ed2fbbf9487af1e4d523a04defb7c78cb9e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 08cb797f56d26b4b421fb25210f7dad2715c70d0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974320"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508305"
 ---
-# <a name="appidentity-resource-type"></a><span data-ttu-id="a8c7c-105">Тип ресурса Аппидентити</span><span class="sxs-lookup"><span data-stu-id="a8c7c-105">appIdentity resource type</span></span>
-<span data-ttu-id="a8c7c-106">Указывает идентификатор приложения, который выполнил действие или изменился.</span><span class="sxs-lookup"><span data-stu-id="a8c7c-106">Indicates the identity of the application that performed the action or was changed.</span></span> <span data-ttu-id="a8c7c-107">Включает идентификатор приложения, имя, идентификатор и имя участника службы.</span><span class="sxs-lookup"><span data-stu-id="a8c7c-107">Includes Application Id, Name, Service Principal ID and Name.</span></span> <span data-ttu-id="a8c7c-108">Этот ресурс вызывается API [директоряудит](../api/directoryaudit-get.md)</span><span class="sxs-lookup"><span data-stu-id="a8c7c-108">This resource is called by the [directoryAudit](../api/directoryaudit-get.md) API</span></span>
+# <a name="appidentity-resource-type"></a><span data-ttu-id="c5841-105">Тип ресурса Аппидентити</span><span class="sxs-lookup"><span data-stu-id="c5841-105">appIdentity resource type</span></span>
+
+<span data-ttu-id="c5841-106">Пространство имен: Microsoft. Graph указывает идентификатор приложения, который выполнил действие или изменился.</span><span class="sxs-lookup"><span data-stu-id="c5841-106">Namespace: microsoft.graph Indicates the identity of the application that performed the action or was changed.</span></span> <span data-ttu-id="c5841-107">Включает идентификатор приложения, имя, идентификатор и имя участника службы.</span><span class="sxs-lookup"><span data-stu-id="c5841-107">Includes Application Id, Name, Service Principal ID and Name.</span></span> <span data-ttu-id="c5841-108">Этот ресурс вызывается API [директоряудит](../api/directoryaudit-get.md)</span><span class="sxs-lookup"><span data-stu-id="c5841-108">This resource is called by the [directoryAudit](../api/directoryaudit-get.md) API</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="a8c7c-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="a8c7c-109">Properties</span></span>
-| <span data-ttu-id="a8c7c-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="a8c7c-110">Property</span></span>     | <span data-ttu-id="a8c7c-111">Тип</span><span class="sxs-lookup"><span data-stu-id="a8c7c-111">Type</span></span>   |<span data-ttu-id="a8c7c-112">Описание</span><span class="sxs-lookup"><span data-stu-id="a8c7c-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="c5841-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="c5841-109">Properties</span></span>
+| <span data-ttu-id="c5841-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="c5841-110">Property</span></span>     | <span data-ttu-id="c5841-111">Тип</span><span class="sxs-lookup"><span data-stu-id="c5841-111">Type</span></span>   |<span data-ttu-id="c5841-112">Описание</span><span class="sxs-lookup"><span data-stu-id="c5841-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a8c7c-113">appId</span><span class="sxs-lookup"><span data-stu-id="a8c7c-113">appId</span></span>|<span data-ttu-id="a8c7c-114">String</span><span class="sxs-lookup"><span data-stu-id="a8c7c-114">String</span></span>|<span data-ttu-id="a8c7c-115">Обозначает уникальный идентификатор GUID, представляющий идентификатор приложения в Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="a8c7c-115">Refers to the Unique GUID representing Application Id in the Azure Active Directory.</span></span>|
-|<span data-ttu-id="a8c7c-116">displayName</span><span class="sxs-lookup"><span data-stu-id="a8c7c-116">displayName</span></span>|<span data-ttu-id="a8c7c-117">Строка</span><span class="sxs-lookup"><span data-stu-id="a8c7c-117">String</span></span>|<span data-ttu-id="a8c7c-118">Указывает на имя приложения, отображаемое на портале Azure.</span><span class="sxs-lookup"><span data-stu-id="a8c7c-118">Refers to the Application Name displayed in the Azure Portal.</span></span>|
-|<span data-ttu-id="a8c7c-119">СервицепринЦипалид</span><span class="sxs-lookup"><span data-stu-id="a8c7c-119">servicePrincipalId</span></span>|<span data-ttu-id="a8c7c-120">String</span><span class="sxs-lookup"><span data-stu-id="a8c7c-120">String</span></span>|<span data-ttu-id="a8c7c-121">Указывает уникальный идентификатор GUID, указывающий идентификатор участника службы в Azure Active Directory для соответствующего приложения.</span><span class="sxs-lookup"><span data-stu-id="a8c7c-121">Refers to the Unique GUID indicating Service Principal Id in Azure Active Directory for the corresponding App.</span></span>|
-|<span data-ttu-id="a8c7c-122">servicePrincipalName</span><span class="sxs-lookup"><span data-stu-id="a8c7c-122">servicePrincipalName</span></span>|<span data-ttu-id="a8c7c-123">String</span><span class="sxs-lookup"><span data-stu-id="a8c7c-123">String</span></span>|<span data-ttu-id="a8c7c-124">— Имя участника-службы — это имя приложения в клиенте.</span><span class="sxs-lookup"><span data-stu-id="a8c7c-124">Refers to the Service Principal Name is the Application name in the tenant.</span></span> |
+|<span data-ttu-id="c5841-113">appId</span><span class="sxs-lookup"><span data-stu-id="c5841-113">appId</span></span>|<span data-ttu-id="c5841-114">String</span><span class="sxs-lookup"><span data-stu-id="c5841-114">String</span></span>|<span data-ttu-id="c5841-115">Обозначает уникальный идентификатор GUID, представляющий идентификатор приложения в Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="c5841-115">Refers to the Unique GUID representing Application Id in the Azure Active Directory.</span></span>|
+|<span data-ttu-id="c5841-116">displayName</span><span class="sxs-lookup"><span data-stu-id="c5841-116">displayName</span></span>|<span data-ttu-id="c5841-117">Строка</span><span class="sxs-lookup"><span data-stu-id="c5841-117">String</span></span>|<span data-ttu-id="c5841-118">Указывает на имя приложения, отображаемое на портале Azure.</span><span class="sxs-lookup"><span data-stu-id="c5841-118">Refers to the Application Name displayed in the Azure Portal.</span></span>|
+|<span data-ttu-id="c5841-119">сервицепринЦипалид</span><span class="sxs-lookup"><span data-stu-id="c5841-119">servicePrincipalId</span></span>|<span data-ttu-id="c5841-120">String</span><span class="sxs-lookup"><span data-stu-id="c5841-120">String</span></span>|<span data-ttu-id="c5841-121">Указывает уникальный идентификатор GUID, указывающий идентификатор участника службы в Azure Active Directory для соответствующего приложения.</span><span class="sxs-lookup"><span data-stu-id="c5841-121">Refers to the Unique GUID indicating Service Principal Id in Azure Active Directory for the corresponding App.</span></span>|
+|<span data-ttu-id="c5841-122">servicePrincipalName</span><span class="sxs-lookup"><span data-stu-id="c5841-122">servicePrincipalName</span></span>|<span data-ttu-id="c5841-123">String</span><span class="sxs-lookup"><span data-stu-id="c5841-123">String</span></span>|<span data-ttu-id="c5841-124">— Имя участника-службы — это имя приложения в клиенте.</span><span class="sxs-lookup"><span data-stu-id="c5841-124">Refers to the Service Principal Name is the Application name in the tenant.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="a8c7c-125">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a8c7c-125">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c5841-125">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="c5841-125">JSON representation</span></span>
 
-<span data-ttu-id="a8c7c-126">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a8c7c-126">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="c5841-126">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c5841-126">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

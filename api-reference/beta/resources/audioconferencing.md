@@ -5,31 +5,33 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d7d37012fd61d338b5acf7e36e5df47ef52669ac
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: ab74b8819cc8dec7d63d5072cee1f1a147accd16
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913767"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508124"
 ---
-# <a name="audioconferencing-resource-type"></a><span data-ttu-id="6453e-103">Тип ресурса АудиоконференЦинг</span><span class="sxs-lookup"><span data-stu-id="6453e-103">audioConferencing resource type</span></span>
+# <a name="audioconferencing-resource-type"></a><span data-ttu-id="ca515-103">Тип ресурса АудиоконференЦинг</span><span class="sxs-lookup"><span data-stu-id="ca515-103">audioConferencing resource type</span></span>
+
+<span data-ttu-id="ca515-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="ca515-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6453e-104">Представляет сведения о доступе к телефонии для [онлинемитинг](onlinemeeting.md).</span><span class="sxs-lookup"><span data-stu-id="6453e-104">Represents phone access information for an [onlineMeeting](onlinemeeting.md).</span></span>
+<span data-ttu-id="ca515-105">Представляет сведения о доступе к телефонии для [онлинемитинг](onlinemeeting.md).</span><span class="sxs-lookup"><span data-stu-id="ca515-105">Represents phone access information for an [onlineMeeting](onlinemeeting.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="6453e-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="6453e-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="ca515-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="ca515-106">Properties</span></span>
 
-| <span data-ttu-id="6453e-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="6453e-106">Property</span></span>            | <span data-ttu-id="6453e-107">Тип</span><span class="sxs-lookup"><span data-stu-id="6453e-107">Type</span></span>    | <span data-ttu-id="6453e-108">Описание</span><span class="sxs-lookup"><span data-stu-id="6453e-108">Description</span></span>                                                                    |
+| <span data-ttu-id="ca515-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="ca515-107">Property</span></span>            | <span data-ttu-id="ca515-108">Тип</span><span class="sxs-lookup"><span data-stu-id="ca515-108">Type</span></span>    | <span data-ttu-id="ca515-109">Описание</span><span class="sxs-lookup"><span data-stu-id="ca515-109">Description</span></span>                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
-| <span data-ttu-id="6453e-109">диалинурл</span><span class="sxs-lookup"><span data-stu-id="6453e-109">dialinUrl</span></span>           | <span data-ttu-id="6453e-110">String</span><span class="sxs-lookup"><span data-stu-id="6453e-110">String</span></span>  | <span data-ttu-id="6453e-111">URL-адрес веб-страницы, которая содержит сведения о телефонном доступе.</span><span class="sxs-lookup"><span data-stu-id="6453e-111">A URL to the externally-accessible web page that contains dial-in information.</span></span> |
-| <span data-ttu-id="6453e-112">конференцеид</span><span class="sxs-lookup"><span data-stu-id="6453e-112">ConferenceId</span></span>        | <span data-ttu-id="6453e-113">String</span><span class="sxs-lookup"><span data-stu-id="6453e-113">String</span></span>  | <span data-ttu-id="6453e-114">Идентификатор конференции онлайн-собрания.</span><span class="sxs-lookup"><span data-stu-id="6453e-114">The conference id of the online meeting.</span></span>      |
-| <span data-ttu-id="6453e-115">толлфринумбер</span><span class="sxs-lookup"><span data-stu-id="6453e-115">tollFreeNumber</span></span>      | <span data-ttu-id="6453e-116">String</span><span class="sxs-lookup"><span data-stu-id="6453e-116">String</span></span>  | <span data-ttu-id="6453e-117">Бесплатный номер, который подключается к поставщику конференции с аудио.</span><span class="sxs-lookup"><span data-stu-id="6453e-117">The toll-free number that connects to the Audio Conference Provider.</span></span>              |
-| <span data-ttu-id="6453e-118">толлнумбер</span><span class="sxs-lookup"><span data-stu-id="6453e-118">tollNumber</span></span>          | <span data-ttu-id="6453e-119">String</span><span class="sxs-lookup"><span data-stu-id="6453e-119">String</span></span>  | <span data-ttu-id="6453e-120">Платный номер, который подключается к поставщику конференции с аудио-и видеоконференциями.</span><span class="sxs-lookup"><span data-stu-id="6453e-120">The toll number that connects to the Audio Conference Provider.</span></span>                   |
+| <span data-ttu-id="ca515-110">диалинурл</span><span class="sxs-lookup"><span data-stu-id="ca515-110">dialinUrl</span></span>           | <span data-ttu-id="ca515-111">String</span><span class="sxs-lookup"><span data-stu-id="ca515-111">String</span></span>  | <span data-ttu-id="ca515-112">URL-адрес веб-страницы, которая содержит сведения о телефонном доступе.</span><span class="sxs-lookup"><span data-stu-id="ca515-112">A URL to the externally-accessible web page that contains dial-in information.</span></span> |
+| <span data-ttu-id="ca515-113">конференцеид</span><span class="sxs-lookup"><span data-stu-id="ca515-113">ConferenceId</span></span>        | <span data-ttu-id="ca515-114">String</span><span class="sxs-lookup"><span data-stu-id="ca515-114">String</span></span>  | <span data-ttu-id="ca515-115">Идентификатор конференции онлайн-собрания.</span><span class="sxs-lookup"><span data-stu-id="ca515-115">The conference id of the online meeting.</span></span>      |
+| <span data-ttu-id="ca515-116">толлфринумбер</span><span class="sxs-lookup"><span data-stu-id="ca515-116">tollFreeNumber</span></span>      | <span data-ttu-id="ca515-117">String</span><span class="sxs-lookup"><span data-stu-id="ca515-117">String</span></span>  | <span data-ttu-id="ca515-118">Бесплатный номер, который подключается к поставщику конференции с аудио.</span><span class="sxs-lookup"><span data-stu-id="ca515-118">The toll-free number that connects to the Audio Conference Provider.</span></span>              |
+| <span data-ttu-id="ca515-119">толлнумбер</span><span class="sxs-lookup"><span data-stu-id="ca515-119">tollNumber</span></span>          | <span data-ttu-id="ca515-120">String</span><span class="sxs-lookup"><span data-stu-id="ca515-120">String</span></span>  | <span data-ttu-id="ca515-121">Платный номер, который подключается к поставщику конференции с аудио-и видеоконференциями.</span><span class="sxs-lookup"><span data-stu-id="ca515-121">The toll number that connects to the Audio Conference Provider.</span></span>                   |
 
-## <a name="json-representation"></a><span data-ttu-id="6453e-121">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="6453e-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ca515-122">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="ca515-122">JSON representation</span></span>
 
-<span data-ttu-id="6453e-122">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="6453e-122">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="ca515-123">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ca515-123">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

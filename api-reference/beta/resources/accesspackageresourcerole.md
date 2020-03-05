@@ -5,44 +5,46 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 21cda352cb887a377248a3fbbf16a761773128ba
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: b5ab0cc6e2179adb62316cbcdc06b7dd52abc439
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870428"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508515"
 ---
-# <a name="accesspackageresourcerole-resource-type"></a><span data-ttu-id="1010e-103">Тип ресурса Акцесспаккажересаурцероле</span><span class="sxs-lookup"><span data-stu-id="1010e-103">accessPackageResourceRole resource type</span></span>
+# <a name="accesspackageresourcerole-resource-type"></a><span data-ttu-id="04ce1-103">Тип ресурса Акцесспаккажересаурцероле</span><span class="sxs-lookup"><span data-stu-id="04ce1-103">accessPackageResourceRole resource type</span></span>
+
+<span data-ttu-id="04ce1-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="04ce1-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1010e-104">В [управлении службой управления правами Azure AD](entitlementmanagement-root.md)роль ресурса пакета Access — это ссылка на роль, определенную в ресурсе, которую можно использовать в пакете Access.</span><span class="sxs-lookup"><span data-stu-id="1010e-104">In [Azure AD entitlement management](entitlementmanagement-root.md), an access package resource role is a reference to a role defined in a resource, that can be used in an access package.</span></span>
+<span data-ttu-id="04ce1-105">В [управлении службой управления правами Azure AD](entitlementmanagement-root.md)роль ресурса пакета Access — это ссылка на роль, определенную в ресурсе, которую можно использовать в пакете Access.</span><span class="sxs-lookup"><span data-stu-id="04ce1-105">In [Azure AD entitlement management](entitlementmanagement-root.md), an access package resource role is a reference to a role defined in a resource, that can be used in an access package.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="1010e-105">Методы</span><span class="sxs-lookup"><span data-stu-id="1010e-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="04ce1-106">Методы</span><span class="sxs-lookup"><span data-stu-id="04ce1-106">Methods</span></span>
 
-| <span data-ttu-id="1010e-106">Метод</span><span class="sxs-lookup"><span data-stu-id="1010e-106">Method</span></span>       | <span data-ttu-id="1010e-107">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="1010e-107">Return Type</span></span> | <span data-ttu-id="1010e-108">Описание</span><span class="sxs-lookup"><span data-stu-id="1010e-108">Description</span></span> |
+| <span data-ttu-id="04ce1-107">Метод</span><span class="sxs-lookup"><span data-stu-id="04ce1-107">Method</span></span>       | <span data-ttu-id="04ce1-108">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="04ce1-108">Return Type</span></span> | <span data-ttu-id="04ce1-109">Описание</span><span class="sxs-lookup"><span data-stu-id="04ce1-109">Description</span></span> |
 |:-------------|:------------|:------------|
-| [<span data-ttu-id="1010e-109">Список ролей ресурсов Акцесспаккажекаталог</span><span class="sxs-lookup"><span data-stu-id="1010e-109">List accessPackageCatalog resource roles</span></span>](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | <span data-ttu-id="1010e-110">Коллекция [акцесспаккажересаурцероле](accesspackageresourcerole.md)</span><span class="sxs-lookup"><span data-stu-id="1010e-110">[accessPackageResourceRole](accesspackageresourcerole.md) collection</span></span> | <span data-ttu-id="1010e-111">Получение списка объектов Акцесспаккажересаурцероле для каталога.</span><span class="sxs-lookup"><span data-stu-id="1010e-111">Retrieve a list of accessPackageResourceRole objects for a catalog.</span></span> |
+| [<span data-ttu-id="04ce1-110">Список ролей ресурсов Акцесспаккажекаталог</span><span class="sxs-lookup"><span data-stu-id="04ce1-110">List accessPackageCatalog resource roles</span></span>](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | <span data-ttu-id="04ce1-111">Коллекция [акцесспаккажересаурцероле](accesspackageresourcerole.md)</span><span class="sxs-lookup"><span data-stu-id="04ce1-111">[accessPackageResourceRole](accesspackageresourcerole.md) collection</span></span> | <span data-ttu-id="04ce1-112">Получение списка объектов Акцесспаккажересаурцероле для каталога.</span><span class="sxs-lookup"><span data-stu-id="04ce1-112">Retrieve a list of accessPackageResourceRole objects for a catalog.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="1010e-112">Свойства</span><span class="sxs-lookup"><span data-stu-id="1010e-112">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="04ce1-113">Свойства</span><span class="sxs-lookup"><span data-stu-id="04ce1-113">Properties</span></span>
 
-| <span data-ttu-id="1010e-113">Свойство</span><span class="sxs-lookup"><span data-stu-id="1010e-113">Property</span></span>     | <span data-ttu-id="1010e-114">Тип</span><span class="sxs-lookup"><span data-stu-id="1010e-114">Type</span></span>        | <span data-ttu-id="1010e-115">Описание</span><span class="sxs-lookup"><span data-stu-id="1010e-115">Description</span></span> |
+| <span data-ttu-id="04ce1-114">Свойство</span><span class="sxs-lookup"><span data-stu-id="04ce1-114">Property</span></span>     | <span data-ttu-id="04ce1-115">Тип</span><span class="sxs-lookup"><span data-stu-id="04ce1-115">Type</span></span>        | <span data-ttu-id="04ce1-116">Описание</span><span class="sxs-lookup"><span data-stu-id="04ce1-116">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="1010e-116">description</span><span class="sxs-lookup"><span data-stu-id="1010e-116">description</span></span>|<span data-ttu-id="1010e-117">String</span><span class="sxs-lookup"><span data-stu-id="1010e-117">String</span></span>|<span data-ttu-id="1010e-118">Описание роли ресурса.</span><span class="sxs-lookup"><span data-stu-id="1010e-118">A description for the resource role.</span></span>|
-|<span data-ttu-id="1010e-119">displayName</span><span class="sxs-lookup"><span data-stu-id="1010e-119">displayName</span></span>|<span data-ttu-id="1010e-120">Строка</span><span class="sxs-lookup"><span data-stu-id="1010e-120">String</span></span>|<span data-ttu-id="1010e-121">Отображаемое имя роли ресурса, например роль, определяемую приложением.</span><span class="sxs-lookup"><span data-stu-id="1010e-121">The display name of the resource role such as the role defined by the application.</span></span>|
-|<span data-ttu-id="1010e-122">id</span><span class="sxs-lookup"><span data-stu-id="1010e-122">id</span></span>|<span data-ttu-id="1010e-123">String</span><span class="sxs-lookup"><span data-stu-id="1010e-123">String</span></span>| <span data-ttu-id="1010e-124">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="1010e-124">Read-only.</span></span>|
-|<span data-ttu-id="1010e-125">оригинид</span><span class="sxs-lookup"><span data-stu-id="1010e-125">originId</span></span>|<span data-ttu-id="1010e-126">String</span><span class="sxs-lookup"><span data-stu-id="1010e-126">String</span></span>|<span data-ttu-id="1010e-127">Уникальный идентификатор роли ресурса в исходной системе.</span><span class="sxs-lookup"><span data-stu-id="1010e-127">The unique identifier of the resource role in the origin system.</span></span> |
-|<span data-ttu-id="1010e-128">оригинсистем</span><span class="sxs-lookup"><span data-stu-id="1010e-128">originSystem</span></span>|<span data-ttu-id="1010e-129">String</span><span class="sxs-lookup"><span data-stu-id="1010e-129">String</span></span>|<span data-ttu-id="1010e-130">Тип ресурса в исходной системе.</span><span class="sxs-lookup"><span data-stu-id="1010e-130">The type of the resource in the origin system.</span></span>|
+|<span data-ttu-id="04ce1-117">description</span><span class="sxs-lookup"><span data-stu-id="04ce1-117">description</span></span>|<span data-ttu-id="04ce1-118">String</span><span class="sxs-lookup"><span data-stu-id="04ce1-118">String</span></span>|<span data-ttu-id="04ce1-119">Описание роли ресурса.</span><span class="sxs-lookup"><span data-stu-id="04ce1-119">A description for the resource role.</span></span>|
+|<span data-ttu-id="04ce1-120">displayName</span><span class="sxs-lookup"><span data-stu-id="04ce1-120">displayName</span></span>|<span data-ttu-id="04ce1-121">Строка</span><span class="sxs-lookup"><span data-stu-id="04ce1-121">String</span></span>|<span data-ttu-id="04ce1-122">Отображаемое имя роли ресурса, например роль, определяемую приложением.</span><span class="sxs-lookup"><span data-stu-id="04ce1-122">The display name of the resource role such as the role defined by the application.</span></span>|
+|<span data-ttu-id="04ce1-123">id</span><span class="sxs-lookup"><span data-stu-id="04ce1-123">id</span></span>|<span data-ttu-id="04ce1-124">String</span><span class="sxs-lookup"><span data-stu-id="04ce1-124">String</span></span>| <span data-ttu-id="04ce1-125">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="04ce1-125">Read-only.</span></span>|
+|<span data-ttu-id="04ce1-126">оригинид</span><span class="sxs-lookup"><span data-stu-id="04ce1-126">originId</span></span>|<span data-ttu-id="04ce1-127">String</span><span class="sxs-lookup"><span data-stu-id="04ce1-127">String</span></span>|<span data-ttu-id="04ce1-128">Уникальный идентификатор роли ресурса в исходной системе.</span><span class="sxs-lookup"><span data-stu-id="04ce1-128">The unique identifier of the resource role in the origin system.</span></span> |
+|<span data-ttu-id="04ce1-129">оригинсистем</span><span class="sxs-lookup"><span data-stu-id="04ce1-129">originSystem</span></span>|<span data-ttu-id="04ce1-130">String</span><span class="sxs-lookup"><span data-stu-id="04ce1-130">String</span></span>|<span data-ttu-id="04ce1-131">Тип ресурса в исходной системе.</span><span class="sxs-lookup"><span data-stu-id="04ce1-131">The type of the resource in the origin system.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="1010e-131">Отношения</span><span class="sxs-lookup"><span data-stu-id="1010e-131">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="04ce1-132">Связи</span><span class="sxs-lookup"><span data-stu-id="04ce1-132">Relationships</span></span>
 
-| <span data-ttu-id="1010e-132">Связь</span><span class="sxs-lookup"><span data-stu-id="1010e-132">Relationship</span></span> | <span data-ttu-id="1010e-133">Тип</span><span class="sxs-lookup"><span data-stu-id="1010e-133">Type</span></span>        | <span data-ttu-id="1010e-134">Описание</span><span class="sxs-lookup"><span data-stu-id="1010e-134">Description</span></span> |
+| <span data-ttu-id="04ce1-133">Связь</span><span class="sxs-lookup"><span data-stu-id="04ce1-133">Relationship</span></span> | <span data-ttu-id="04ce1-134">Тип</span><span class="sxs-lookup"><span data-stu-id="04ce1-134">Type</span></span>        | <span data-ttu-id="04ce1-135">Описание</span><span class="sxs-lookup"><span data-stu-id="04ce1-135">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="1010e-135">акцесспаккажересаурце</span><span class="sxs-lookup"><span data-stu-id="1010e-135">accessPackageResource</span></span>|[<span data-ttu-id="1010e-136">акцесспаккажересаурце</span><span class="sxs-lookup"><span data-stu-id="1010e-136">accessPackageResource</span></span>](accesspackageresource.md)| <span data-ttu-id="1010e-p101">Только для чтения. Допускается значение null.</span><span class="sxs-lookup"><span data-stu-id="1010e-p101">Read-only. Nullable.</span></span>|
+|<span data-ttu-id="04ce1-136">акцесспаккажересаурце</span><span class="sxs-lookup"><span data-stu-id="04ce1-136">accessPackageResource</span></span>|[<span data-ttu-id="04ce1-137">акцесспаккажересаурце</span><span class="sxs-lookup"><span data-stu-id="04ce1-137">accessPackageResource</span></span>](accesspackageresource.md)| <span data-ttu-id="04ce1-p101">Только для чтения. Допускается значение null.</span><span class="sxs-lookup"><span data-stu-id="04ce1-p101">Read-only. Nullable.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="1010e-139">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="1010e-139">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="04ce1-140">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="04ce1-140">JSON representation</span></span>
 
-<span data-ttu-id="1010e-140">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="1010e-140">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="04ce1-141">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="04ce1-141">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

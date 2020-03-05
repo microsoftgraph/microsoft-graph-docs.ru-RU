@@ -5,28 +5,30 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 5dbd6212d1b568871d5a61750da822353f0a816f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cde3ca5af63f71e577614ebbfda232c8f1a755ff
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974271"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508061"
 ---
-# <a name="autoreviewsettings-resource-type"></a><span data-ttu-id="6d57c-102">Тип ресурса Ауторевиевсеттингс</span><span class="sxs-lookup"><span data-stu-id="6d57c-102">autoReviewSettings resource type</span></span>
+# <a name="autoreviewsettings-resource-type"></a><span data-ttu-id="af61f-102">Тип ресурса Ауторевиевсеттингс</span><span class="sxs-lookup"><span data-stu-id="af61f-102">autoReviewSettings resource type</span></span>
+
+<span data-ttu-id="af61f-103">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="af61f-103">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-## <a name="properties"></a><span data-ttu-id="6d57c-103">Свойства</span><span class="sxs-lookup"><span data-stu-id="6d57c-103">Properties</span></span>
-|<span data-ttu-id="6d57c-104">Свойство</span><span class="sxs-lookup"><span data-stu-id="6d57c-104">Property</span></span>|<span data-ttu-id="6d57c-105">Тип</span><span class="sxs-lookup"><span data-stu-id="6d57c-105">Type</span></span>|<span data-ttu-id="6d57c-106">Описание</span><span class="sxs-lookup"><span data-stu-id="6d57c-106">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="af61f-104">Свойства</span><span class="sxs-lookup"><span data-stu-id="af61f-104">Properties</span></span>
+|<span data-ttu-id="af61f-105">Свойство</span><span class="sxs-lookup"><span data-stu-id="af61f-105">Property</span></span>|<span data-ttu-id="af61f-106">Тип</span><span class="sxs-lookup"><span data-stu-id="af61f-106">Type</span></span>|<span data-ttu-id="af61f-107">Описание</span><span class="sxs-lookup"><span data-stu-id="af61f-107">Description</span></span>|
 |:---|:---|:---|
-| <span data-ttu-id="6d57c-107">Нотревиеведресулт</span><span class="sxs-lookup"><span data-stu-id="6d57c-107">notReviewedResult</span></span> | <span data-ttu-id="6d57c-108">String</span><span class="sxs-lookup"><span data-stu-id="6d57c-108">String</span></span> |  |
+| <span data-ttu-id="af61f-108">нотревиеведресулт</span><span class="sxs-lookup"><span data-stu-id="af61f-108">notReviewedResult</span></span> | <span data-ttu-id="af61f-109">String</span><span class="sxs-lookup"><span data-stu-id="af61f-109">String</span></span> |  |
 
-## <a name="relationships"></a><span data-ttu-id="6d57c-109">Отношения</span><span class="sxs-lookup"><span data-stu-id="6d57c-109">Relationships</span></span>
-<span data-ttu-id="6d57c-110">Нет</span><span class="sxs-lookup"><span data-stu-id="6d57c-110">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="af61f-110">Связи</span><span class="sxs-lookup"><span data-stu-id="af61f-110">Relationships</span></span>
+<span data-ttu-id="af61f-111">Нет</span><span class="sxs-lookup"><span data-stu-id="af61f-111">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="6d57c-111">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="6d57c-111">JSON Representation</span></span>
-<span data-ttu-id="6d57c-112">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="6d57c-112">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="af61f-112">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="af61f-112">JSON Representation</span></span>
+<span data-ttu-id="af61f-113">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="af61f-113">Here is a JSON representation of the resource.</span></span>
 <!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.autoReviewSettings"

@@ -5,39 +5,41 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 39939d9d61d992e5fd77fd21360ab05e8f83dbd4
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: a34e09b233a60858e23155f87808e40d080867f7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333365"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507707"
 ---
-# <a name="chatmessagehostedcontent-resource-type"></a><span data-ttu-id="ec337-103">Тип ресурса Чатмессажехостедконтент</span><span class="sxs-lookup"><span data-stu-id="ec337-103">chatMessageHostedContent resource type</span></span>
+# <a name="chatmessagehostedcontent-resource-type"></a><span data-ttu-id="dd978-103">Тип ресурса Чатмессажехостедконтент</span><span class="sxs-lookup"><span data-stu-id="dd978-103">chatMessageHostedContent resource type</span></span>
+
+<span data-ttu-id="dd978-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="dd978-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ec337-104">Представляет контент, размещенный в сообщении чата, например изображения или фрагменты кода.</span><span class="sxs-lookup"><span data-stu-id="ec337-104">Represents content hosted in a chat message, such as images or code snippets.</span></span>
+<span data-ttu-id="dd978-105">Представляет контент, размещенный в сообщении чата, например изображения или фрагменты кода.</span><span class="sxs-lookup"><span data-stu-id="dd978-105">Represents content hosted in a chat message, such as images or code snippets.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="ec337-105">Методы</span><span class="sxs-lookup"><span data-stu-id="ec337-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="dd978-106">Методы</span><span class="sxs-lookup"><span data-stu-id="dd978-106">Methods</span></span>
 
-| <span data-ttu-id="ec337-106">Метод</span><span class="sxs-lookup"><span data-stu-id="ec337-106">Method</span></span>       | <span data-ttu-id="ec337-107">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="ec337-107">Return Type</span></span> | <span data-ttu-id="ec337-108">Описание</span><span class="sxs-lookup"><span data-stu-id="ec337-108">Description</span></span> |
+| <span data-ttu-id="dd978-107">Метод</span><span class="sxs-lookup"><span data-stu-id="dd978-107">Method</span></span>       | <span data-ttu-id="dd978-108">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="dd978-108">Return Type</span></span> | <span data-ttu-id="dd978-109">Описание</span><span class="sxs-lookup"><span data-stu-id="dd978-109">Description</span></span> |
 |:-------------|:------------|:------------|
-| [<span data-ttu-id="ec337-109">Список Чатмессажехостедконтент</span><span class="sxs-lookup"><span data-stu-id="ec337-109">List chatMessageHostedContent</span></span>](../api/chatmessage-list-chatmessagehostedcontents.md) | [<span data-ttu-id="ec337-110">чатмессажехостедконтент</span><span class="sxs-lookup"><span data-stu-id="ec337-110">chatMessageHostedContent</span></span>](chatmessagehostedcontent.md) | <span data-ttu-id="ec337-111">Получение списка **чатмессажехостедконтент** для сообщения.</span><span class="sxs-lookup"><span data-stu-id="ec337-111">Retrieve the list of **chatMessageHostedContent** for a message.</span></span> |
-| [<span data-ttu-id="ec337-112">Получение Чатмессажехостедконтент</span><span class="sxs-lookup"><span data-stu-id="ec337-112">Get chatMessageHostedContent</span></span>](../api/chatmessagehostedcontent-get.md) | [<span data-ttu-id="ec337-113">чатмессажехостедконтент</span><span class="sxs-lookup"><span data-stu-id="ec337-113">chatMessageHostedContent</span></span>](chatmessagehostedcontent.md) | <span data-ttu-id="ec337-114">Чтение свойств и связей объекта **чатмессажехостедконтент** .</span><span class="sxs-lookup"><span data-stu-id="ec337-114">Read the properties and relationships of a **chatMessageHostedContent** object.</span></span> |
+| [<span data-ttu-id="dd978-110">Список Чатмессажехостедконтент</span><span class="sxs-lookup"><span data-stu-id="dd978-110">List chatMessageHostedContent</span></span>](../api/chatmessage-list-chatmessagehostedcontents.md) | [<span data-ttu-id="dd978-111">чатмессажехостедконтент</span><span class="sxs-lookup"><span data-stu-id="dd978-111">chatMessageHostedContent</span></span>](chatmessagehostedcontent.md) | <span data-ttu-id="dd978-112">Получение списка **чатмессажехостедконтент** для сообщения.</span><span class="sxs-lookup"><span data-stu-id="dd978-112">Retrieve the list of **chatMessageHostedContent** for a message.</span></span> |
+| [<span data-ttu-id="dd978-113">Получение Чатмессажехостедконтент</span><span class="sxs-lookup"><span data-stu-id="dd978-113">Get chatMessageHostedContent</span></span>](../api/chatmessagehostedcontent-get.md) | [<span data-ttu-id="dd978-114">чатмессажехостедконтент</span><span class="sxs-lookup"><span data-stu-id="dd978-114">chatMessageHostedContent</span></span>](chatmessagehostedcontent.md) | <span data-ttu-id="dd978-115">Чтение свойств и связей объекта **чатмессажехостедконтент** .</span><span class="sxs-lookup"><span data-stu-id="dd978-115">Read the properties and relationships of a **chatMessageHostedContent** object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="ec337-115">Свойства</span><span class="sxs-lookup"><span data-stu-id="ec337-115">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="dd978-116">Свойства</span><span class="sxs-lookup"><span data-stu-id="dd978-116">Properties</span></span>
 
-| <span data-ttu-id="ec337-116">Свойство</span><span class="sxs-lookup"><span data-stu-id="ec337-116">Property</span></span>     | <span data-ttu-id="ec337-117">Тип</span><span class="sxs-lookup"><span data-stu-id="ec337-117">Type</span></span>        | <span data-ttu-id="ec337-118">Описание</span><span class="sxs-lookup"><span data-stu-id="ec337-118">Description</span></span> |
+| <span data-ttu-id="dd978-117">Свойство</span><span class="sxs-lookup"><span data-stu-id="dd978-117">Property</span></span>     | <span data-ttu-id="dd978-118">Тип</span><span class="sxs-lookup"><span data-stu-id="dd978-118">Type</span></span>        | <span data-ttu-id="dd978-119">Описание</span><span class="sxs-lookup"><span data-stu-id="dd978-119">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="ec337-119">id</span><span class="sxs-lookup"><span data-stu-id="ec337-119">id</span></span>|<span data-ttu-id="ec337-120">String</span><span class="sxs-lookup"><span data-stu-id="ec337-120">String</span></span>| <span data-ttu-id="ec337-121">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="ec337-121">Read-only.</span></span>|
+|<span data-ttu-id="dd978-120">id</span><span class="sxs-lookup"><span data-stu-id="dd978-120">id</span></span>|<span data-ttu-id="dd978-121">String</span><span class="sxs-lookup"><span data-stu-id="dd978-121">String</span></span>| <span data-ttu-id="dd978-122">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="dd978-122">Read-only.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="ec337-122">Отношения</span><span class="sxs-lookup"><span data-stu-id="ec337-122">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="dd978-123">Отношения</span><span class="sxs-lookup"><span data-stu-id="dd978-123">Relationships</span></span>
 
-<span data-ttu-id="ec337-123">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="ec337-123">None.</span></span>
+<span data-ttu-id="dd978-124">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="dd978-124">None.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="ec337-124">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="ec337-124">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="dd978-125">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="dd978-125">JSON representation</span></span>
 
-<span data-ttu-id="ec337-125">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ec337-125">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="dd978-126">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="dd978-126">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

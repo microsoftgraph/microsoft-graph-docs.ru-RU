@@ -5,32 +5,34 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: bf51b05614a89318fb7ba1afee9c4154ea1f6f27
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9743d1f9a4db1018f1b704b45b8236aeda6d5cd9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973113"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42505814"
 ---
-# <a name="domaindnsunavailablerecord-resource-type"></a><span data-ttu-id="ca8f4-106">Тип ресурса domainDnsUnavailableRecord</span><span class="sxs-lookup"><span data-stu-id="ca8f4-106">domainDnsUnavailableRecord resource type</span></span>
+# <a name="domaindnsunavailablerecord-resource-type"></a><span data-ttu-id="de5f1-106">Тип ресурса domainDnsUnavailableRecord</span><span class="sxs-lookup"><span data-stu-id="de5f1-106">domainDnsUnavailableRecord resource type</span></span>
+
+<span data-ttu-id="de5f1-107">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="de5f1-107">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ca8f4-107">Когда вы запрашиваете свойство навигации **serviceConfigurationRecords** для объекта [domain](domain.md) , вы можете получить один или несколько [домаинднскнамерекорд](domaindnscnamerecord.md), [домаинднсмксрекорд](domaindnsmxrecord.md), [домаинднссрврекорд](domaindnssrvrecord.md)и/или [ Сущности Домаинднсткстрекорд](domaindnstxtrecord.md) .</span><span class="sxs-lookup"><span data-stu-id="ca8f4-107">When you query for the navigation property **serviceConfigurationRecords** for a [Domain](domain.md) entity, you may get back one or more [DomainDnsCnameRecord](domaindnscnamerecord.md), [DomainDnsMxRecord](domaindnsmxrecord.md), [DomainDnsSrvRecord](domaindnssrvrecord.md), and/or [DomainDnsTxtRecord](domaindnstxtrecord.md) entities.</span></span> <span data-ttu-id="ca8f4-108">Эти сущности указывают, какие записи DNS необходимо добавить в файл зоны домена, прежде чем домен можно будет использовать в Microsoft Online Services.</span><span class="sxs-lookup"><span data-stu-id="ca8f4-108">These entities indicate what DNS records you must add to the zone file of the domain, before the domain can be used by Microsoft Online Services.</span></span> <span data-ttu-id="ca8f4-109">Если невозможно создать такие сущности, возвращается сущность DomainDnsUnavailableRecord.</span><span class="sxs-lookup"><span data-stu-id="ca8f4-109">When it is not possible to generate such entities, a DomainDnsUnavailableRecord Entity is returned instead.</span></span> <span data-ttu-id="ca8f4-110">Наследуется от объекта [DomainDnsRecord](domaindnsrecord.md) .</span><span class="sxs-lookup"><span data-stu-id="ca8f4-110">Inherited from [DomainDnsRecord](domaindnsrecord.md) entity.</span></span>
+<span data-ttu-id="de5f1-108">Когда вы запрашиваете свойство навигации **serviceConfigurationRecords** для объекта [domain](domain.md) , вы можете получить одну или несколько сущностей [домаинднскнамерекорд](domaindnscnamerecord.md), [домаинднсмксрекорд](domaindnsmxrecord.md), [домаинднссрврекорд](domaindnssrvrecord.md)и/или [домаинднсткстрекорд](domaindnstxtrecord.md) .</span><span class="sxs-lookup"><span data-stu-id="de5f1-108">When you query for the navigation property **serviceConfigurationRecords** for a [Domain](domain.md) entity, you may get back one or more [DomainDnsCnameRecord](domaindnscnamerecord.md), [DomainDnsMxRecord](domaindnsmxrecord.md), [DomainDnsSrvRecord](domaindnssrvrecord.md), and/or [DomainDnsTxtRecord](domaindnstxtrecord.md) entities.</span></span> <span data-ttu-id="de5f1-109">Эти сущности указывают, какие записи DNS необходимо добавить в файл зоны домена, прежде чем домен можно будет использовать в Microsoft Online Services.</span><span class="sxs-lookup"><span data-stu-id="de5f1-109">These entities indicate what DNS records you must add to the zone file of the domain, before the domain can be used by Microsoft Online Services.</span></span> <span data-ttu-id="de5f1-110">Если невозможно создать такие сущности, возвращается сущность DomainDnsUnavailableRecord.</span><span class="sxs-lookup"><span data-stu-id="de5f1-110">When it is not possible to generate such entities, a DomainDnsUnavailableRecord Entity is returned instead.</span></span> <span data-ttu-id="de5f1-111">Наследуется от объекта [DomainDnsRecord](domaindnsrecord.md) .</span><span class="sxs-lookup"><span data-stu-id="de5f1-111">Inherited from [DomainDnsRecord](domaindnsrecord.md) entity.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="ca8f4-111">Методы</span><span class="sxs-lookup"><span data-stu-id="ca8f4-111">Methods</span></span>
-<span data-ttu-id="ca8f4-112">Прямые запросы к этому ресурсу не поддерживаются.</span><span class="sxs-lookup"><span data-stu-id="ca8f4-112">Direct queries to this resource are not supported.</span></span> <span data-ttu-id="ca8f4-113">Сведения о том, как запросить записи службы домена, можно найти в разделе [domain](domain.md) .</span><span class="sxs-lookup"><span data-stu-id="ca8f4-113">Please see the [domain](domain.md) topic for information on how to query for domain service records.</span></span>
+## <a name="methods"></a><span data-ttu-id="de5f1-112">Методы</span><span class="sxs-lookup"><span data-stu-id="de5f1-112">Methods</span></span>
+<span data-ttu-id="de5f1-113">Прямые запросы к этому ресурсу не поддерживаются.</span><span class="sxs-lookup"><span data-stu-id="de5f1-113">Direct queries to this resource are not supported.</span></span> <span data-ttu-id="de5f1-114">Сведения о том, как запросить записи службы домена, можно найти в разделе [domain](domain.md) .</span><span class="sxs-lookup"><span data-stu-id="de5f1-114">Please see the [domain](domain.md) topic for information on how to query for domain service records.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="ca8f4-114">Свойства</span><span class="sxs-lookup"><span data-stu-id="ca8f4-114">Properties</span></span>
-| <span data-ttu-id="ca8f4-115">Свойство</span><span class="sxs-lookup"><span data-stu-id="ca8f4-115">Property</span></span>     | <span data-ttu-id="ca8f4-116">Тип</span><span class="sxs-lookup"><span data-stu-id="ca8f4-116">Type</span></span>   |<span data-ttu-id="ca8f4-117">Описание</span><span class="sxs-lookup"><span data-stu-id="ca8f4-117">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="de5f1-115">Свойства</span><span class="sxs-lookup"><span data-stu-id="de5f1-115">Properties</span></span>
+| <span data-ttu-id="de5f1-116">Свойство</span><span class="sxs-lookup"><span data-stu-id="de5f1-116">Property</span></span>     | <span data-ttu-id="de5f1-117">Тип</span><span class="sxs-lookup"><span data-stu-id="de5f1-117">Type</span></span>   |<span data-ttu-id="de5f1-118">Описание</span><span class="sxs-lookup"><span data-stu-id="de5f1-118">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ca8f4-118">description</span><span class="sxs-lookup"><span data-stu-id="ca8f4-118">description</span></span>|<span data-ttu-id="ca8f4-119">String</span><span class="sxs-lookup"><span data-stu-id="ca8f4-119">String</span></span>|<span data-ttu-id="ca8f4-120">Предоставляет причину, по которой возвращается объект **DomainDnsUnavailableRecord** .</span><span class="sxs-lookup"><span data-stu-id="ca8f4-120">Provides the reason why the **DomainDnsUnavailableRecord** entity is returned.</span></span> |
+|<span data-ttu-id="de5f1-119">description</span><span class="sxs-lookup"><span data-stu-id="de5f1-119">description</span></span>|<span data-ttu-id="de5f1-120">String</span><span class="sxs-lookup"><span data-stu-id="de5f1-120">String</span></span>|<span data-ttu-id="de5f1-121">Предоставляет причину, по которой возвращается объект **DomainDnsUnavailableRecord** .</span><span class="sxs-lookup"><span data-stu-id="de5f1-121">Provides the reason why the **DomainDnsUnavailableRecord** entity is returned.</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="ca8f4-121">Отношения</span><span class="sxs-lookup"><span data-stu-id="ca8f4-121">Relationships</span></span>
-<span data-ttu-id="ca8f4-122">Нет</span><span class="sxs-lookup"><span data-stu-id="ca8f4-122">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="de5f1-122">Связи</span><span class="sxs-lookup"><span data-stu-id="de5f1-122">Relationships</span></span>
+<span data-ttu-id="de5f1-123">Нет</span><span class="sxs-lookup"><span data-stu-id="de5f1-123">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="ca8f4-123">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="ca8f4-123">JSON representation</span></span>
-<span data-ttu-id="ca8f4-124">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ca8f4-124">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="de5f1-124">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="de5f1-124">JSON representation</span></span>
+<span data-ttu-id="de5f1-125">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="de5f1-125">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

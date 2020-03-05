@@ -6,21 +6,23 @@ title: BaseItemVersion
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: d5265004eac969fa827e5456183180a4c6434f96
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 47865e388616763b60ce3cd45195bf9919c7acf2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974238"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508040"
 ---
-# <a name="baseitemversion-resource-type"></a><span data-ttu-id="e022d-103">Тип ресурса baseItemVersion</span><span class="sxs-lookup"><span data-stu-id="e022d-103">BaseItemVersion resource type</span></span>
+# <a name="baseitemversion-resource-type"></a><span data-ttu-id="ab999-103">Тип ресурса baseItemVersion</span><span class="sxs-lookup"><span data-stu-id="ab999-103">BaseItemVersion resource type</span></span>
+
+<span data-ttu-id="ab999-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="ab999-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e022d-104">Ресурс **baseItemVersion** представляет предыдущую версию элемента или записи.</span><span class="sxs-lookup"><span data-stu-id="e022d-104">The **baseItemVersion** resource represents a previous version of an item or entity.</span></span>
+<span data-ttu-id="ab999-105">Ресурс **baseItemVersion** представляет предыдущую версию элемента или записи.</span><span class="sxs-lookup"><span data-stu-id="ab999-105">The **baseItemVersion** resource represents a previous version of an item or entity.</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="e022d-105">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="e022d-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ab999-106">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="ab999-106">JSON representation</span></span>
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.baseItemVersion", "@type.aka": "oneDrive.baseItemVersion" } -->
 
@@ -34,14 +36,14 @@ ms.locfileid: "35974238"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="e022d-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="e022d-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="ab999-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="ab999-107">Properties</span></span>
 
-|      <span data-ttu-id="e022d-107">Имя свойства</span><span class="sxs-lookup"><span data-stu-id="e022d-107">Property name</span></span>       |                         <span data-ttu-id="e022d-108">Тип</span><span class="sxs-lookup"><span data-stu-id="e022d-108">Type</span></span>                         |                               <span data-ttu-id="e022d-109">Описание</span><span class="sxs-lookup"><span data-stu-id="e022d-109">Description</span></span>                               |
+|      <span data-ttu-id="ab999-108">Имя свойства</span><span class="sxs-lookup"><span data-stu-id="ab999-108">Property name</span></span>       |                         <span data-ttu-id="ab999-109">Тип</span><span class="sxs-lookup"><span data-stu-id="ab999-109">Type</span></span>                         |                               <span data-ttu-id="ab999-110">Описание</span><span class="sxs-lookup"><span data-stu-id="ab999-110">Description</span></span>                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
-| <span data-ttu-id="e022d-110">**id**</span><span class="sxs-lookup"><span data-stu-id="e022d-110">**id**</span></span>                   | <span data-ttu-id="e022d-111">string</span><span class="sxs-lookup"><span data-stu-id="e022d-111">string</span></span>                                               | <span data-ttu-id="e022d-112">Идентификатор версии.</span><span class="sxs-lookup"><span data-stu-id="e022d-112">The ID of the version.</span></span> <span data-ttu-id="e022d-113">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="e022d-113">Read-only.</span></span>                                       |
-| <span data-ttu-id="e022d-114">**lastModifiedBy**;</span><span class="sxs-lookup"><span data-stu-id="e022d-114">**lastModifiedBy**</span></span>       | [<span data-ttu-id="e022d-115">IdentitySet</span><span class="sxs-lookup"><span data-stu-id="e022d-115">IdentitySet</span></span>](../resources/identityset.md)           | <span data-ttu-id="e022d-116">Удостоверение пользователя, который последним изменил версию.</span><span class="sxs-lookup"><span data-stu-id="e022d-116">Identity of the user which last modified the version.</span></span> <span data-ttu-id="e022d-117">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="e022d-117">Read-only.</span></span>        |
-| <span data-ttu-id="e022d-118">**lastModifiedDateTime**</span><span class="sxs-lookup"><span data-stu-id="e022d-118">**lastModifiedDateTime**</span></span> | [<span data-ttu-id="e022d-119">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="e022d-119">DateTimeOffset</span></span>](../resources/timestamp.md)          | <span data-ttu-id="e022d-120">Дата и время последнего изменения версии.</span><span class="sxs-lookup"><span data-stu-id="e022d-120">Date and time the version was last modified.</span></span> <span data-ttu-id="e022d-121">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="e022d-121">Read-only.</span></span>                 |
-| <span data-ttu-id="e022d-122">**publication**</span><span class="sxs-lookup"><span data-stu-id="e022d-122">**publication**</span></span>          | [<span data-ttu-id="e022d-123">PublicationFacet</span><span class="sxs-lookup"><span data-stu-id="e022d-123">PublicationFacet</span></span>](../resources/publicationfacet.md) | <span data-ttu-id="e022d-124">Указывает состояние публикации конкретной версии.</span><span class="sxs-lookup"><span data-stu-id="e022d-124">Indicates the publication status of this particular version.</span></span> <span data-ttu-id="e022d-125">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="e022d-125">Read-only.</span></span> |
+| <span data-ttu-id="ab999-111">**id**</span><span class="sxs-lookup"><span data-stu-id="ab999-111">**id**</span></span>                   | <span data-ttu-id="ab999-112">строка</span><span class="sxs-lookup"><span data-stu-id="ab999-112">string</span></span>                                               | <span data-ttu-id="ab999-113">Идентификатор версии.</span><span class="sxs-lookup"><span data-stu-id="ab999-113">The ID of the version.</span></span> <span data-ttu-id="ab999-114">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="ab999-114">Read-only.</span></span>                                       |
+| <span data-ttu-id="ab999-115">**lastModifiedBy**;</span><span class="sxs-lookup"><span data-stu-id="ab999-115">**lastModifiedBy**</span></span>       | [<span data-ttu-id="ab999-116">IdentitySet</span><span class="sxs-lookup"><span data-stu-id="ab999-116">IdentitySet</span></span>](../resources/identityset.md)           | <span data-ttu-id="ab999-117">Удостоверение пользователя, который последним изменил версию.</span><span class="sxs-lookup"><span data-stu-id="ab999-117">Identity of the user which last modified the version.</span></span> <span data-ttu-id="ab999-118">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="ab999-118">Read-only.</span></span>        |
+| <span data-ttu-id="ab999-119">**lastModifiedDateTime**</span><span class="sxs-lookup"><span data-stu-id="ab999-119">**lastModifiedDateTime**</span></span> | [<span data-ttu-id="ab999-120">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ab999-120">DateTimeOffset</span></span>](../resources/timestamp.md)          | <span data-ttu-id="ab999-121">Дата и время последнего изменения версии.</span><span class="sxs-lookup"><span data-stu-id="ab999-121">Date and time the version was last modified.</span></span> <span data-ttu-id="ab999-122">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="ab999-122">Read-only.</span></span>                 |
+| <span data-ttu-id="ab999-123">**publication**</span><span class="sxs-lookup"><span data-stu-id="ab999-123">**publication**</span></span>          | [<span data-ttu-id="ab999-124">PublicationFacet</span><span class="sxs-lookup"><span data-stu-id="ab999-124">PublicationFacet</span></span>](../resources/publicationfacet.md) | <span data-ttu-id="ab999-125">Указывает состояние публикации конкретной версии.</span><span class="sxs-lookup"><span data-stu-id="ab999-125">Indicates the publication status of this particular version.</span></span> <span data-ttu-id="ab999-126">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="ab999-126">Read-only.</span></span> |
 
 
 <!--

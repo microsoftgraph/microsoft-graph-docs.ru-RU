@@ -5,30 +5,32 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 05a800d4732ae54dd6c8b1ce76074b64625b9c16
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 4ec3df8bc56e6164af3b7752333d28bd10665d67
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913361"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507606"
 ---
-# <a name="commsnotification-resource-type"></a><span data-ttu-id="a84d5-103">Тип ресурса Коммснотификатион</span><span class="sxs-lookup"><span data-stu-id="a84d5-103">commsNotification resource type</span></span>
+# <a name="commsnotification-resource-type"></a><span data-ttu-id="2c64b-103">Тип ресурса Коммснотификатион</span><span class="sxs-lookup"><span data-stu-id="2c64b-103">commsNotification resource type</span></span>
+
+<span data-ttu-id="2c64b-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="2c64b-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a84d5-104">Базовый тип уведомления о связи, который публикуется серверами Communications Server для уведомления об изменениях.</span><span class="sxs-lookup"><span data-stu-id="a84d5-104">Communications notification base type that is published by Communications servers to notify changes.</span></span>
+<span data-ttu-id="2c64b-105">Базовый тип уведомления о связи, который публикуется серверами Communications Server для уведомления об изменениях.</span><span class="sxs-lookup"><span data-stu-id="2c64b-105">Communications notification base type that is published by Communications servers to notify changes.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="a84d5-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="a84d5-105">Properties</span></span>
-| <span data-ttu-id="a84d5-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="a84d5-106">Property</span></span>       | <span data-ttu-id="a84d5-107">Тип</span><span class="sxs-lookup"><span data-stu-id="a84d5-107">Type</span></span>    | <span data-ttu-id="a84d5-108">Описание</span><span class="sxs-lookup"><span data-stu-id="a84d5-108">Description</span></span>                                                |
+## <a name="properties"></a><span data-ttu-id="2c64b-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="2c64b-106">Properties</span></span>
+| <span data-ttu-id="2c64b-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="2c64b-107">Property</span></span>       | <span data-ttu-id="2c64b-108">Тип</span><span class="sxs-lookup"><span data-stu-id="2c64b-108">Type</span></span>    | <span data-ttu-id="2c64b-109">Описание</span><span class="sxs-lookup"><span data-stu-id="2c64b-109">Description</span></span>                                                |
 |:---------------|:--------|:-----------------------------------------------------------|
-| <span data-ttu-id="a84d5-109">changeType</span><span class="sxs-lookup"><span data-stu-id="a84d5-109">changeType</span></span>     | <span data-ttu-id="a84d5-110">String</span><span class="sxs-lookup"><span data-stu-id="a84d5-110">String</span></span>  | <span data-ttu-id="a84d5-111">Возможные значения: `created`, `updated`, `deleted`.</span><span class="sxs-lookup"><span data-stu-id="a84d5-111">Possible values are: `created`, `updated`, `deleted`.</span></span>      |
-| <span data-ttu-id="a84d5-112">Resourceurl экземпляром</span><span class="sxs-lookup"><span data-stu-id="a84d5-112">resourceUrl</span></span>       | <span data-ttu-id="a84d5-113">String</span><span class="sxs-lookup"><span data-stu-id="a84d5-113">String</span></span>  | <span data-ttu-id="a84d5-114">URI ресурса, который был изменен.</span><span class="sxs-lookup"><span data-stu-id="a84d5-114">URI of the resource that was changed.</span></span>                      |
+| <span data-ttu-id="2c64b-110">changeType</span><span class="sxs-lookup"><span data-stu-id="2c64b-110">changeType</span></span>     | <span data-ttu-id="2c64b-111">String</span><span class="sxs-lookup"><span data-stu-id="2c64b-111">String</span></span>  | <span data-ttu-id="2c64b-112">Возможные значения: `created`, `updated`, `deleted`.</span><span class="sxs-lookup"><span data-stu-id="2c64b-112">Possible values are: `created`, `updated`, `deleted`.</span></span>      |
+| <span data-ttu-id="2c64b-113">Resourceurl экземпляром</span><span class="sxs-lookup"><span data-stu-id="2c64b-113">resourceUrl</span></span>       | <span data-ttu-id="2c64b-114">String</span><span class="sxs-lookup"><span data-stu-id="2c64b-114">String</span></span>  | <span data-ttu-id="2c64b-115">URI ресурса, который был изменен.</span><span class="sxs-lookup"><span data-stu-id="2c64b-115">URI of the resource that was changed.</span></span>                      |
 
-> <span data-ttu-id="a84d5-115">**Примечание:** `resourceData` доступно в виде дополнительных данных.</span><span class="sxs-lookup"><span data-stu-id="a84d5-115">**Note:** `resourceData` is available as additional data.</span></span> <span data-ttu-id="a84d5-116">Это либо сущность, либо коллекция сущностей в зависимости от количества изменений, упакованных в уведомление.</span><span class="sxs-lookup"><span data-stu-id="a84d5-116">It is either an entity or a collection of entities depending on the number of changes packaged in the notification.</span></span>
+> <span data-ttu-id="2c64b-116">**Примечание:** `resourceData` доступно в виде дополнительных данных.</span><span class="sxs-lookup"><span data-stu-id="2c64b-116">**Note:** `resourceData` is available as additional data.</span></span> <span data-ttu-id="2c64b-117">Это либо сущность, либо коллекция сущностей в зависимости от количества изменений, упакованных в уведомление.</span><span class="sxs-lookup"><span data-stu-id="2c64b-117">It is either an entity or a collection of entities depending on the number of changes packaged in the notification.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="a84d5-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a84d5-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2c64b-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="2c64b-118">JSON representation</span></span>
 
-<span data-ttu-id="a84d5-118">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a84d5-118">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="2c64b-119">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2c64b-119">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

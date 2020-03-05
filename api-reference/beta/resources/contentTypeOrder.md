@@ -6,22 +6,24 @@ title: contentTypeOrder
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 464ac5978f505e74ca99226080c35574917fd550
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7198e6f17fc77c73c5b2334bc6d1e7b7262f5dcd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973211"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507445"
 ---
-# <a name="contenttypeorder-resource-type"></a><span data-ttu-id="dba94-103">Тип ресурса contentTypeOrder</span><span class="sxs-lookup"><span data-stu-id="dba94-103">ContentTypeOrder resource type</span></span>
+# <a name="contenttypeorder-resource-type"></a><span data-ttu-id="5b336-103">Тип ресурса contentTypeOrder</span><span class="sxs-lookup"><span data-stu-id="5b336-103">ContentTypeOrder resource type</span></span>
+
+<span data-ttu-id="5b336-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="5b336-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="dba94-104">Ресурс **contentTypeOrder** указывает, в каком порядке тип контента будет отображаться в пользовательском интерфейсе выбора.</span><span class="sxs-lookup"><span data-stu-id="dba94-104">The **contentTypeOrder** resource specifies in which order the Content Type will appear in the selection UI.</span></span>
+<span data-ttu-id="5b336-105">Ресурс **contentTypeOrder** указывает, в каком порядке тип контента будет отображаться в пользовательском интерфейсе выбора.</span><span class="sxs-lookup"><span data-stu-id="5b336-105">The **contentTypeOrder** resource specifies in which order the Content Type will appear in the selection UI.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="dba94-105">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="dba94-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5b336-106">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="5b336-106">JSON representation</span></span>
 
-<span data-ttu-id="dba94-106">Ниже показано представление ресурса **contentTypeOrder** в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="dba94-106">Here is a JSON representation of a **contentTypeOrder** resource.</span></span>
+<span data-ttu-id="5b336-107">Ниже показано представление ресурса **contentTypeOrder** в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5b336-107">Here is a JSON representation of a **contentTypeOrder** resource.</span></span>
 <!-- { "blockType": "resource", "@type": "microsoft.graph.contentTypeOrder", "@type.aka": "oneDrive.contentTypeOrderFacet" } -->
 
 ```json
@@ -31,12 +33,12 @@ ms.locfileid: "35973211"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="dba94-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="dba94-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="5b336-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="5b336-108">Properties</span></span>
 
-| <span data-ttu-id="dba94-108">Имя свойства</span><span class="sxs-lookup"><span data-stu-id="dba94-108">Property name</span></span> | <span data-ttu-id="dba94-109">Тип</span><span class="sxs-lookup"><span data-stu-id="dba94-109">Type</span></span>    | <span data-ttu-id="dba94-110">Описание</span><span class="sxs-lookup"><span data-stu-id="dba94-110">Description</span></span>
+| <span data-ttu-id="5b336-109">Имя свойства</span><span class="sxs-lookup"><span data-stu-id="5b336-109">Property name</span></span> | <span data-ttu-id="5b336-110">Тип</span><span class="sxs-lookup"><span data-stu-id="5b336-110">Type</span></span>    | <span data-ttu-id="5b336-111">Описание</span><span class="sxs-lookup"><span data-stu-id="5b336-111">Description</span></span>
 |:--------------|:--------|:----------------------------------------------------
-| <span data-ttu-id="dba94-111">**default**</span><span class="sxs-lookup"><span data-stu-id="dba94-111">**default**</span></span>   | <span data-ttu-id="dba94-112">boolean</span><span class="sxs-lookup"><span data-stu-id="dba94-112">boolean</span></span> | <span data-ttu-id="dba94-113">Указывает, используется ли этот тип контента по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="dba94-113">Whether this is the default Content Type</span></span>
-| <span data-ttu-id="dba94-114">**position**</span><span class="sxs-lookup"><span data-stu-id="dba94-114">**position**</span></span>  | <span data-ttu-id="dba94-115">Int32</span><span class="sxs-lookup"><span data-stu-id="dba94-115">Int32</span></span>   | <span data-ttu-id="dba94-116">Указывает позицию, в которой тип контента отображается в пользовательском интерфейсе выбора.</span><span class="sxs-lookup"><span data-stu-id="dba94-116">Specifies the position in which the Content Type appears in the selection UI.</span></span>
+| <span data-ttu-id="5b336-112">**default**</span><span class="sxs-lookup"><span data-stu-id="5b336-112">**default**</span></span>   | <span data-ttu-id="5b336-113">boolean</span><span class="sxs-lookup"><span data-stu-id="5b336-113">boolean</span></span> | <span data-ttu-id="5b336-114">Указывает, используется ли этот тип контента по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="5b336-114">Whether this is the default Content Type</span></span>
+| <span data-ttu-id="5b336-115">**position**</span><span class="sxs-lookup"><span data-stu-id="5b336-115">**position**</span></span>  | <span data-ttu-id="5b336-116">Int32</span><span class="sxs-lookup"><span data-stu-id="5b336-116">Int32</span></span>   | <span data-ttu-id="5b336-117">Указывает позицию, в которой тип контента отображается в пользовательском интерфейсе выбора.</span><span class="sxs-lookup"><span data-stu-id="5b336-117">Specifies the position in which the Content Type appears in the selection UI.</span></span>
 
 <!--
 {

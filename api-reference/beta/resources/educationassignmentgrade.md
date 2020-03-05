@@ -5,29 +5,31 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 4de74fc9cbdf505bd57cfad3ab8dbf5a12e4e58a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9680a298c405a81648ba0a5fe95cdf0df0c841bb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006474"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502748"
 ---
-# <a name="educationassignmentgrade-resource-type"></a><span data-ttu-id="3154e-103">Тип ресурса Едукатионассигнментграде</span><span class="sxs-lookup"><span data-stu-id="3154e-103">educationAssignmentGrade resource type</span></span>
+# <a name="educationassignmentgrade-resource-type"></a><span data-ttu-id="390e6-103">Тип ресурса Едукатионассигнментграде</span><span class="sxs-lookup"><span data-stu-id="390e6-103">educationAssignmentGrade resource type</span></span>
+
+<span data-ttu-id="390e6-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="390e6-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3154e-104">Представляет объект **Grade** при отправке.</span><span class="sxs-lookup"><span data-stu-id="3154e-104">Represents the **Grade** object on a Submission.</span></span> <span data-ttu-id="3154e-105">Это абстрактный тип, экземпляры которого никогда не будут создаваться; Тем не менее, все типы ступенчатого (точки, проход/завершение и т. д.) являются подклассами этого типа ресурсов.</span><span class="sxs-lookup"><span data-stu-id="3154e-105">This is an abstract type that will never be instantiated; however, all types of grading (points, pass/fail, and so on) are subclasses of this resource type.</span></span> <span data-ttu-id="3154e-106">Кроме того, этот объект отслеживает круг пользователей, выполняющих ступенчатое выполнение.</span><span class="sxs-lookup"><span data-stu-id="3154e-106">This object also tracks who is doing the grading.</span></span> <span data-ttu-id="3154e-107">Используется в свойстве **отсылки. Grade** .</span><span class="sxs-lookup"><span data-stu-id="3154e-107">This is used in the **submission.grade** property.</span></span>
+<span data-ttu-id="390e6-105">Представляет объект **Grade** при отправке.</span><span class="sxs-lookup"><span data-stu-id="390e6-105">Represents the **Grade** object on a Submission.</span></span> <span data-ttu-id="390e6-106">Это абстрактный тип, экземпляры которого никогда не будут создаваться; Тем не менее, все типы ступенчатого (точки, проход/завершение и т. д.) являются подклассами этого типа ресурсов.</span><span class="sxs-lookup"><span data-stu-id="390e6-106">This is an abstract type that will never be instantiated; however, all types of grading (points, pass/fail, and so on) are subclasses of this resource type.</span></span> <span data-ttu-id="390e6-107">Кроме того, этот объект отслеживает круг пользователей, выполняющих ступенчатое выполнение.</span><span class="sxs-lookup"><span data-stu-id="390e6-107">This object also tracks who is doing the grading.</span></span> <span data-ttu-id="390e6-108">Используется в свойстве **отсылки. Grade** .</span><span class="sxs-lookup"><span data-stu-id="390e6-108">This is used in the **submission.grade** property.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="3154e-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="3154e-108">Properties</span></span>
-| <span data-ttu-id="3154e-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="3154e-109">Property</span></span>     | <span data-ttu-id="3154e-110">Тип</span><span class="sxs-lookup"><span data-stu-id="3154e-110">Type</span></span>   |<span data-ttu-id="3154e-111">Описание</span><span class="sxs-lookup"><span data-stu-id="3154e-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="390e6-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="390e6-109">Properties</span></span>
+| <span data-ttu-id="390e6-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="390e6-110">Property</span></span>     | <span data-ttu-id="390e6-111">Тип</span><span class="sxs-lookup"><span data-stu-id="390e6-111">Type</span></span>   |<span data-ttu-id="390e6-112">Описание</span><span class="sxs-lookup"><span data-stu-id="390e6-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="3154e-112">Градедби</span><span class="sxs-lookup"><span data-stu-id="3154e-112">gradedBy</span></span>|[<span data-ttu-id="3154e-113">identitySet</span><span class="sxs-lookup"><span data-stu-id="3154e-113">identitySet</span></span>](identityset.md)| <span data-ttu-id="3154e-114">Пользователь, который выполнил ступенчатое.</span><span class="sxs-lookup"><span data-stu-id="3154e-114">User who did the grading.</span></span> |
-|<span data-ttu-id="3154e-115">Градеддатетиме</span><span class="sxs-lookup"><span data-stu-id="3154e-115">gradedDateTime</span></span>|<span data-ttu-id="3154e-116">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="3154e-116">DateTimeOffset</span></span>| <span data-ttu-id="3154e-117">Момент времени, когда уровень был применен к этому объекту отправки.</span><span class="sxs-lookup"><span data-stu-id="3154e-117">Moment in time when the grade was applied to this submission object.</span></span> <span data-ttu-id="3154e-118">Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601, причем всегда используется время в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="3154e-118">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="3154e-119">Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.</span><span class="sxs-lookup"><span data-stu-id="3154e-119">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
+|<span data-ttu-id="390e6-113">градедби</span><span class="sxs-lookup"><span data-stu-id="390e6-113">gradedBy</span></span>|[<span data-ttu-id="390e6-114">identitySet</span><span class="sxs-lookup"><span data-stu-id="390e6-114">identitySet</span></span>](identityset.md)| <span data-ttu-id="390e6-115">Пользователь, который выполнил ступенчатое.</span><span class="sxs-lookup"><span data-stu-id="390e6-115">User who did the grading.</span></span> |
+|<span data-ttu-id="390e6-116">градеддатетиме</span><span class="sxs-lookup"><span data-stu-id="390e6-116">gradedDateTime</span></span>|<span data-ttu-id="390e6-117">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="390e6-117">DateTimeOffset</span></span>| <span data-ttu-id="390e6-118">Момент времени, когда уровень был применен к этому объекту отправки.</span><span class="sxs-lookup"><span data-stu-id="390e6-118">Moment in time when the grade was applied to this submission object.</span></span> <span data-ttu-id="390e6-119">Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC).</span><span class="sxs-lookup"><span data-stu-id="390e6-119">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="390e6-120">Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.</span><span class="sxs-lookup"><span data-stu-id="390e6-120">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="3154e-120">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="3154e-120">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="390e6-121">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="390e6-121">JSON representation</span></span>
 
-<span data-ttu-id="3154e-121">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="3154e-121">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="390e6-122">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="390e6-122">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

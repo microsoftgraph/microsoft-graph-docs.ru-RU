@@ -5,31 +5,33 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 6dcfef0f86913ee1afe98681b71f9210216dd416
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e90cc8d9a3a3b5178a30dd485eecc10be82478b5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006983"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519024"
 ---
-# <a name="yammerdeviceusagedistributionusercounts-resource-type"></a><span data-ttu-id="a5ad0-103">Тип ресурса Яммердевицеусажедистрибутионусеркаунтс</span><span class="sxs-lookup"><span data-stu-id="a5ad0-103">yammerDeviceUsageDistributionUserCounts resource type</span></span>
+# <a name="yammerdeviceusagedistributionusercounts-resource-type"></a><span data-ttu-id="be19d-103">Тип ресурса Яммердевицеусажедистрибутионусеркаунтс</span><span class="sxs-lookup"><span data-stu-id="be19d-103">yammerDeviceUsageDistributionUserCounts resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="a5ad0-104">Свойства</span><span class="sxs-lookup"><span data-stu-id="a5ad0-104">Properties</span></span>
+<span data-ttu-id="be19d-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="be19d-104">Namespace: microsoft.graph</span></span>
 
-| <span data-ttu-id="a5ad0-105">Свойство</span><span class="sxs-lookup"><span data-stu-id="a5ad0-105">Property</span></span>          | <span data-ttu-id="a5ad0-106">Тип</span><span class="sxs-lookup"><span data-stu-id="a5ad0-106">Type</span></span>   |
+## <a name="properties"></a><span data-ttu-id="be19d-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="be19d-105">Properties</span></span>
+
+| <span data-ttu-id="be19d-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="be19d-106">Property</span></span>          | <span data-ttu-id="be19d-107">Тип</span><span class="sxs-lookup"><span data-stu-id="be19d-107">Type</span></span>   |
 | :---------------- | :----- |
-| <span data-ttu-id="a5ad0-107">Репортрефрешдате</span><span class="sxs-lookup"><span data-stu-id="a5ad0-107">reportRefreshDate</span></span> | <span data-ttu-id="a5ad0-108">Дата</span><span class="sxs-lookup"><span data-stu-id="a5ad0-108">Date</span></span>   |
-| <span data-ttu-id="a5ad0-109">web</span><span class="sxs-lookup"><span data-stu-id="a5ad0-109">web</span></span>               | <span data-ttu-id="a5ad0-110">Int32</span><span class="sxs-lookup"><span data-stu-id="a5ad0-110">Int32</span></span>  |
-| <span data-ttu-id="a5ad0-111">windowsPhone</span><span class="sxs-lookup"><span data-stu-id="a5ad0-111">windowsPhone</span></span>      | <span data-ttu-id="a5ad0-112">Int32</span><span class="sxs-lookup"><span data-stu-id="a5ad0-112">Int32</span></span>  |
-| <span data-ttu-id="a5ad0-113">Андроидфоне</span><span class="sxs-lookup"><span data-stu-id="a5ad0-113">androidPhone</span></span>      | <span data-ttu-id="a5ad0-114">Int32</span><span class="sxs-lookup"><span data-stu-id="a5ad0-114">Int32</span></span>  |
-| <span data-ttu-id="a5ad0-115">iPhone</span><span class="sxs-lookup"><span data-stu-id="a5ad0-115">iPhone</span></span>            | <span data-ttu-id="a5ad0-116">Int32</span><span class="sxs-lookup"><span data-stu-id="a5ad0-116">Int32</span></span>  |
-| <span data-ttu-id="a5ad0-117">iPad</span><span class="sxs-lookup"><span data-stu-id="a5ad0-117">iPad</span></span>              | <span data-ttu-id="a5ad0-118">Int32</span><span class="sxs-lookup"><span data-stu-id="a5ad0-118">Int32</span></span>  |
-| <span data-ttu-id="a5ad0-119">остальные</span><span class="sxs-lookup"><span data-stu-id="a5ad0-119">other</span></span>             | <span data-ttu-id="a5ad0-120">Int32</span><span class="sxs-lookup"><span data-stu-id="a5ad0-120">Int32</span></span>  |
-| <span data-ttu-id="a5ad0-121">Репортпериод</span><span class="sxs-lookup"><span data-stu-id="a5ad0-121">reportPeriod</span></span>      | <span data-ttu-id="a5ad0-122">String</span><span class="sxs-lookup"><span data-stu-id="a5ad0-122">String</span></span> |
+| <span data-ttu-id="be19d-108">репортрефрешдате</span><span class="sxs-lookup"><span data-stu-id="be19d-108">reportRefreshDate</span></span> | <span data-ttu-id="be19d-109">Дата</span><span class="sxs-lookup"><span data-stu-id="be19d-109">Date</span></span>   |
+| <span data-ttu-id="be19d-110">web</span><span class="sxs-lookup"><span data-stu-id="be19d-110">web</span></span>               | <span data-ttu-id="be19d-111">Int32</span><span class="sxs-lookup"><span data-stu-id="be19d-111">Int32</span></span>  |
+| <span data-ttu-id="be19d-112">windowsPhone</span><span class="sxs-lookup"><span data-stu-id="be19d-112">windowsPhone</span></span>      | <span data-ttu-id="be19d-113">Int32</span><span class="sxs-lookup"><span data-stu-id="be19d-113">Int32</span></span>  |
+| <span data-ttu-id="be19d-114">андроидфоне</span><span class="sxs-lookup"><span data-stu-id="be19d-114">androidPhone</span></span>      | <span data-ttu-id="be19d-115">Int32</span><span class="sxs-lookup"><span data-stu-id="be19d-115">Int32</span></span>  |
+| <span data-ttu-id="be19d-116">iPhone</span><span class="sxs-lookup"><span data-stu-id="be19d-116">iPhone</span></span>            | <span data-ttu-id="be19d-117">Int32</span><span class="sxs-lookup"><span data-stu-id="be19d-117">Int32</span></span>  |
+| <span data-ttu-id="be19d-118">iPad</span><span class="sxs-lookup"><span data-stu-id="be19d-118">iPad</span></span>              | <span data-ttu-id="be19d-119">Int32</span><span class="sxs-lookup"><span data-stu-id="be19d-119">Int32</span></span>  |
+| <span data-ttu-id="be19d-120">остальные</span><span class="sxs-lookup"><span data-stu-id="be19d-120">other</span></span>             | <span data-ttu-id="be19d-121">Int32</span><span class="sxs-lookup"><span data-stu-id="be19d-121">Int32</span></span>  |
+| <span data-ttu-id="be19d-122">репортпериод</span><span class="sxs-lookup"><span data-stu-id="be19d-122">reportPeriod</span></span>      | <span data-ttu-id="be19d-123">String</span><span class="sxs-lookup"><span data-stu-id="be19d-123">String</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="a5ad0-123">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a5ad0-123">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="be19d-124">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="be19d-124">JSON representation</span></span>
 
-<span data-ttu-id="a5ad0-124">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a5ad0-124">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="be19d-125">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="be19d-125">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

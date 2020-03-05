@@ -5,28 +5,30 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 5476d84e156ae0294fc3502d6de6d808644574c7
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: c2ef014c3e9e2954dba5fb759fcf3f86b3681b68
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36173078"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502510"
 ---
-# <a name="educationassignmentpointsgrade-resource-type"></a><span data-ttu-id="6d054-104">Тип ресурса Едукатионассигнментпоинтсграде</span><span class="sxs-lookup"><span data-stu-id="6d054-104">educationAssignmentPointsGrade resource type</span></span>
+# <a name="educationassignmentpointsgrade-resource-type"></a><span data-ttu-id="304f3-104">Тип ресурса Едукатионассигнментпоинтсграде</span><span class="sxs-lookup"><span data-stu-id="304f3-104">educationAssignmentPointsGrade resource type</span></span>
+
+<span data-ttu-id="304f3-105">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="304f3-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6d054-105">Если для назначения задан тип уровня баллов, то каждая отправка будет иметь этот объект, связанный с свойством **отправку. Grade** .</span><span class="sxs-lookup"><span data-stu-id="6d054-105">When an assignment is set to a points grade type, each submission will have this object associated with the **submission.grade** property.</span></span> <span data-ttu-id="6d054-106">При этом создается подкласс из [едукатионассигнментграде](educationassignmentgrade.md), который добавляет к этому свойству данные.</span><span class="sxs-lookup"><span data-stu-id="6d054-106">This creates a subclass from [educationAssignmentGrade](educationassignmentgrade.md), which will add the who data to this property.</span></span> <span data-ttu-id="6d054-107">Максимальные точки хранятся в свойстве **назначений. ступенчато** .</span><span class="sxs-lookup"><span data-stu-id="6d054-107">The max points is stored in the **assignments.grading** property.</span></span>
+<span data-ttu-id="304f3-106">Если для назначения задан тип уровня баллов, то каждая отправка будет иметь этот объект, связанный с свойством **отправку. Grade** .</span><span class="sxs-lookup"><span data-stu-id="304f3-106">When an assignment is set to a points grade type, each submission will have this object associated with the **submission.grade** property.</span></span> <span data-ttu-id="304f3-107">При этом создается подкласс из [едукатионассигнментграде](educationassignmentgrade.md), который добавляет к этому свойству данные.</span><span class="sxs-lookup"><span data-stu-id="304f3-107">This creates a subclass from [educationAssignmentGrade](educationassignmentgrade.md), which will add the who data to this property.</span></span> <span data-ttu-id="304f3-108">Максимальные точки хранятся в свойстве **назначений. ступенчато** .</span><span class="sxs-lookup"><span data-stu-id="304f3-108">The max points is stored in the **assignments.grading** property.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="6d054-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="6d054-108">Properties</span></span>
-| <span data-ttu-id="6d054-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="6d054-109">Property</span></span>     | <span data-ttu-id="6d054-110">Тип</span><span class="sxs-lookup"><span data-stu-id="6d054-110">Type</span></span>   |<span data-ttu-id="6d054-111">Описание</span><span class="sxs-lookup"><span data-stu-id="6d054-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="304f3-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="304f3-109">Properties</span></span>
+| <span data-ttu-id="304f3-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="304f3-110">Property</span></span>     | <span data-ttu-id="304f3-111">Тип</span><span class="sxs-lookup"><span data-stu-id="304f3-111">Type</span></span>   |<span data-ttu-id="304f3-112">Описание</span><span class="sxs-lookup"><span data-stu-id="304f3-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="6d054-112">points</span><span class="sxs-lookup"><span data-stu-id="6d054-112">points</span></span>|<span data-ttu-id="6d054-113">Одинарное</span><span class="sxs-lookup"><span data-stu-id="6d054-113">Single</span></span>|<span data-ttu-id="6d054-114">Количество баллов, на которые преподаватель предоставляет этот объект отправки.</span><span class="sxs-lookup"><span data-stu-id="6d054-114">Number of points a teacher is giving this submission object.</span></span>|
+|<span data-ttu-id="304f3-113">points</span><span class="sxs-lookup"><span data-stu-id="304f3-113">points</span></span>|<span data-ttu-id="304f3-114">Одинарное</span><span class="sxs-lookup"><span data-stu-id="304f3-114">Single</span></span>|<span data-ttu-id="304f3-115">Количество баллов, на которые преподаватель предоставляет этот объект отправки.</span><span class="sxs-lookup"><span data-stu-id="304f3-115">Number of points a teacher is giving this submission object.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="6d054-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="6d054-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="304f3-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="304f3-116">JSON representation</span></span>
 
-<span data-ttu-id="6d054-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="6d054-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="304f3-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="304f3-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

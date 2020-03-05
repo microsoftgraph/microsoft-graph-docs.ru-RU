@@ -5,25 +5,27 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 22dc12070a801988d814ba73c6bffe1414bb5218
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bafd2c9d66c0d696649944f88e4fcfbdea4bcca6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012998"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507763"
 ---
-#  <a name="certificationcontrol-resource-type"></a><span data-ttu-id="8d778-103">Тип ресурса Цертификатионконтрол</span><span class="sxs-lookup"><span data-stu-id="8d778-103">certificationControl resource type</span></span>
+#  <a name="certificationcontrol-resource-type"></a><span data-ttu-id="062c4-103">Тип ресурса Цертификатионконтрол</span><span class="sxs-lookup"><span data-stu-id="062c4-103">certificationControl resource type</span></span>
 
-<span data-ttu-id="8d778-104">Содержит данные сертификации соответствия требованиям, связанные с контролем безопасного индекса.</span><span class="sxs-lookup"><span data-stu-id="8d778-104">Contains compliance certification data associated with secure score control.</span></span>
+<span data-ttu-id="062c4-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="062c4-104">Namespace: microsoft.graph</span></span>
 
-|<span data-ttu-id="8d778-105">Свойство</span><span class="sxs-lookup"><span data-stu-id="8d778-105">Property</span></span> |<span data-ttu-id="8d778-106">Тип</span><span class="sxs-lookup"><span data-stu-id="8d778-106">Type</span></span> |<span data-ttu-id="8d778-107">Описание</span><span class="sxs-lookup"><span data-stu-id="8d778-107">Description</span></span> |
+<span data-ttu-id="062c4-105">Содержит данные сертификации соответствия требованиям, связанные с контролем безопасного индекса.</span><span class="sxs-lookup"><span data-stu-id="062c4-105">Contains compliance certification data associated with secure score control.</span></span>
+
+|<span data-ttu-id="062c4-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="062c4-106">Property</span></span> |<span data-ttu-id="062c4-107">Тип</span><span class="sxs-lookup"><span data-stu-id="062c4-107">Type</span></span> |<span data-ttu-id="062c4-108">Описание</span><span class="sxs-lookup"><span data-stu-id="062c4-108">Description</span></span> |
 |:--|:--|:--|
-|<span data-ttu-id="8d778-108">name</span><span class="sxs-lookup"><span data-stu-id="8d778-108">name</span></span> | <span data-ttu-id="8d778-109">string</span><span class="sxs-lookup"><span data-stu-id="8d778-109">string</span></span> | <span data-ttu-id="8d778-110">Имя элемента управления сертификацией</span><span class="sxs-lookup"><span data-stu-id="8d778-110">Certification control name</span></span> |
-|<span data-ttu-id="8d778-111">url</span><span class="sxs-lookup"><span data-stu-id="8d778-111">url</span></span> | <span data-ttu-id="8d778-112">string</span><span class="sxs-lookup"><span data-stu-id="8d778-112">string</span></span> | <span data-ttu-id="8d778-113">URL-адрес портала доверия службы Майкрософт</span><span class="sxs-lookup"><span data-stu-id="8d778-113">URL for the Microsoft Service Trust Portal</span></span> |
+|<span data-ttu-id="062c4-109">name</span><span class="sxs-lookup"><span data-stu-id="062c4-109">name</span></span> | <span data-ttu-id="062c4-110">string</span><span class="sxs-lookup"><span data-stu-id="062c4-110">string</span></span> | <span data-ttu-id="062c4-111">Имя элемента управления сертификацией</span><span class="sxs-lookup"><span data-stu-id="062c4-111">Certification control name</span></span> |
+|<span data-ttu-id="062c4-112">url</span><span class="sxs-lookup"><span data-stu-id="062c4-112">url</span></span> | <span data-ttu-id="062c4-113">string</span><span class="sxs-lookup"><span data-stu-id="062c4-113">string</span></span> | <span data-ttu-id="062c4-114">URL-адрес портала доверия службы Майкрософт</span><span class="sxs-lookup"><span data-stu-id="062c4-114">URL for the Microsoft Service Trust Portal</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="8d778-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="8d778-114">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="062c4-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="062c4-115">JSON representation</span></span>
 
-<span data-ttu-id="8d778-115">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8d778-115">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="062c4-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="062c4-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

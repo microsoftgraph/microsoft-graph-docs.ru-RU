@@ -5,25 +5,27 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 5af649da3e34336e1e8a1d45d70ab391c300ab35
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9af962149f0cb9458567a67e4411a273c5fe770f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972833"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502741"
 ---
-# <a name="educationassignmentgradetype-resource-type"></a><span data-ttu-id="96ad9-104">Тип ресурса Едукатионассигнментградетипе</span><span class="sxs-lookup"><span data-stu-id="96ad9-104">educationAssignmentGradeType resource type</span></span>
+# <a name="educationassignmentgradetype-resource-type"></a><span data-ttu-id="ea14d-104">Тип ресурса Едукатионассигнментградетипе</span><span class="sxs-lookup"><span data-stu-id="ea14d-104">educationAssignmentGradeType resource type</span></span>
+
+<span data-ttu-id="ea14d-105">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="ea14d-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="96ad9-105">Указывает, как будет выполняться оценка назначения.</span><span class="sxs-lookup"><span data-stu-id="96ad9-105">Represents how an assignment will be graded.</span></span> <span data-ttu-id="96ad9-106">Используется в свойстве **назначений. ступенчато** .</span><span class="sxs-lookup"><span data-stu-id="96ad9-106">This is used within the **assignments.grading** property.</span></span>
+<span data-ttu-id="ea14d-106">Указывает, как будет выполняться оценка назначения.</span><span class="sxs-lookup"><span data-stu-id="ea14d-106">Represents how an assignment will be graded.</span></span> <span data-ttu-id="ea14d-107">Используется в свойстве **назначений. ступенчато** .</span><span class="sxs-lookup"><span data-stu-id="ea14d-107">This is used within the **assignments.grading** property.</span></span>
 
-<span data-ttu-id="96ad9-107">Этот суперкласс нельзя использовать непосредственно в свойстве присваивания.</span><span class="sxs-lookup"><span data-stu-id="96ad9-107">This superclass can not be used directly in the assignment property.</span></span> <span data-ttu-id="96ad9-108">Он существует для того, чтобы иметь возможность использовать несколько различных способов оценки назначений.</span><span class="sxs-lookup"><span data-stu-id="96ad9-108">It exists to allow for multiple different ways to grade assignments.</span></span>
+<span data-ttu-id="ea14d-108">Этот суперкласс нельзя использовать непосредственно в свойстве присваивания.</span><span class="sxs-lookup"><span data-stu-id="ea14d-108">This superclass can not be used directly in the assignment property.</span></span> <span data-ttu-id="ea14d-109">Он существует для того, чтобы иметь возможность использовать несколько различных способов оценки назначений.</span><span class="sxs-lookup"><span data-stu-id="ea14d-109">It exists to allow for multiple different ways to grade assignments.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="96ad9-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="96ad9-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="ea14d-110">Свойства</span><span class="sxs-lookup"><span data-stu-id="ea14d-110">Properties</span></span>
 
-<span data-ttu-id="96ad9-110">Нет.</span><span class="sxs-lookup"><span data-stu-id="96ad9-110">None.</span></span>
+<span data-ttu-id="ea14d-111">Нет.</span><span class="sxs-lookup"><span data-stu-id="ea14d-111">None.</span></span>
 
 <!-- {
   "blockType": "resource",

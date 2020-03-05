@@ -5,36 +5,38 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: ''
-ms.openlocfilehash: 2c51d94b3143d9929c03093cfb1a6625d6a9e3db
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 21915811da771bd0eebdb5fb2c16df5cfbdea096
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974547"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508459"
 ---
-# <a name="accessreviewsettings-resource-type"></a><span data-ttu-id="edc40-102">Тип ресурса Акцессревиевсеттингс</span><span class="sxs-lookup"><span data-stu-id="edc40-102">accessReviewSettings resource type</span></span>
+# <a name="accessreviewsettings-resource-type"></a><span data-ttu-id="b0889-102">Тип ресурса Акцессревиевсеттингс</span><span class="sxs-lookup"><span data-stu-id="b0889-102">accessReviewSettings resource type</span></span>
+
+<span data-ttu-id="b0889-103">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="b0889-103">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-## <a name="properties"></a><span data-ttu-id="edc40-103">Свойства</span><span class="sxs-lookup"><span data-stu-id="edc40-103">Properties</span></span>
-|<span data-ttu-id="edc40-104">Свойство</span><span class="sxs-lookup"><span data-stu-id="edc40-104">Property</span></span>|<span data-ttu-id="edc40-105">Тип</span><span class="sxs-lookup"><span data-stu-id="edc40-105">Type</span></span>|<span data-ttu-id="edc40-106">Описание</span><span class="sxs-lookup"><span data-stu-id="edc40-106">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="b0889-104">Свойства</span><span class="sxs-lookup"><span data-stu-id="b0889-104">Properties</span></span>
+|<span data-ttu-id="b0889-105">Свойство</span><span class="sxs-lookup"><span data-stu-id="b0889-105">Property</span></span>|<span data-ttu-id="b0889-106">Тип</span><span class="sxs-lookup"><span data-stu-id="b0889-106">Type</span></span>|<span data-ttu-id="b0889-107">Описание</span><span class="sxs-lookup"><span data-stu-id="b0889-107">Description</span></span>|
 |:---|:---|:---|
-| <span data-ttu-id="edc40-107">Маилнотификатионсенаблед</span><span class="sxs-lookup"><span data-stu-id="edc40-107">mailNotificationsEnabled</span></span> | <span data-ttu-id="edc40-108">boolean</span><span class="sxs-lookup"><span data-stu-id="edc40-108">boolean</span></span> |  |
-| <span data-ttu-id="edc40-109">Реминдерсенаблед</span><span class="sxs-lookup"><span data-stu-id="edc40-109">remindersEnabled</span></span> | <span data-ttu-id="edc40-110">boolean</span><span class="sxs-lookup"><span data-stu-id="edc40-110">boolean</span></span> |  |
-| <span data-ttu-id="edc40-111">Жустификатионрекуиредонаппровал</span><span class="sxs-lookup"><span data-stu-id="edc40-111">justificationRequiredOnApproval</span></span> | <span data-ttu-id="edc40-112">boolean</span><span class="sxs-lookup"><span data-stu-id="edc40-112">boolean</span></span> |  |
-| <span data-ttu-id="edc40-113">Рекурренцесеттингс</span><span class="sxs-lookup"><span data-stu-id="edc40-113">recurrenceSettings</span></span> | <span data-ttu-id="edc40-114">Акцессревиеврекурренцесеттингс</span><span class="sxs-lookup"><span data-stu-id="edc40-114">accessReviewRecurrenceSettings</span></span> |  |
-| <span data-ttu-id="edc40-115">Ауторевиевенаблед</span><span class="sxs-lookup"><span data-stu-id="edc40-115">autoReviewEnabled</span></span> | <span data-ttu-id="edc40-116">boolean</span><span class="sxs-lookup"><span data-stu-id="edc40-116">boolean</span></span> |  |
-| <span data-ttu-id="edc40-117">Активитидуратиониндайс</span><span class="sxs-lookup"><span data-stu-id="edc40-117">activityDurationInDays</span></span> | <span data-ttu-id="edc40-118">Int32</span><span class="sxs-lookup"><span data-stu-id="edc40-118">Int32</span></span> |  |
-| <span data-ttu-id="edc40-119">Ауторевиевсеттингс</span><span class="sxs-lookup"><span data-stu-id="edc40-119">autoReviewSettings</span></span> | <span data-ttu-id="edc40-120">Ауторевиевсеттингс</span><span class="sxs-lookup"><span data-stu-id="edc40-120">autoReviewSettings</span></span> |  |
-| <span data-ttu-id="edc40-121">Аутоапплиревиевресултсенаблед</span><span class="sxs-lookup"><span data-stu-id="edc40-121">autoApplyReviewResultsEnabled</span></span> | <span data-ttu-id="edc40-122">boolean</span><span class="sxs-lookup"><span data-stu-id="edc40-122">boolean</span></span> |  |
-| <span data-ttu-id="edc40-123">Акцессрекоммендатионсенаблед</span><span class="sxs-lookup"><span data-stu-id="edc40-123">accessRecommendationsEnabled</span></span> | <span data-ttu-id="edc40-124">boolean</span><span class="sxs-lookup"><span data-stu-id="edc40-124">boolean</span></span> |  |
+| <span data-ttu-id="b0889-108">маилнотификатионсенаблед</span><span class="sxs-lookup"><span data-stu-id="b0889-108">mailNotificationsEnabled</span></span> | <span data-ttu-id="b0889-109">boolean</span><span class="sxs-lookup"><span data-stu-id="b0889-109">boolean</span></span> |  |
+| <span data-ttu-id="b0889-110">реминдерсенаблед</span><span class="sxs-lookup"><span data-stu-id="b0889-110">remindersEnabled</span></span> | <span data-ttu-id="b0889-111">boolean</span><span class="sxs-lookup"><span data-stu-id="b0889-111">boolean</span></span> |  |
+| <span data-ttu-id="b0889-112">жустификатионрекуиредонаппровал</span><span class="sxs-lookup"><span data-stu-id="b0889-112">justificationRequiredOnApproval</span></span> | <span data-ttu-id="b0889-113">boolean</span><span class="sxs-lookup"><span data-stu-id="b0889-113">boolean</span></span> |  |
+| <span data-ttu-id="b0889-114">рекурренцесеттингс</span><span class="sxs-lookup"><span data-stu-id="b0889-114">recurrenceSettings</span></span> | <span data-ttu-id="b0889-115">акцессревиеврекурренцесеттингс</span><span class="sxs-lookup"><span data-stu-id="b0889-115">accessReviewRecurrenceSettings</span></span> |  |
+| <span data-ttu-id="b0889-116">ауторевиевенаблед</span><span class="sxs-lookup"><span data-stu-id="b0889-116">autoReviewEnabled</span></span> | <span data-ttu-id="b0889-117">boolean</span><span class="sxs-lookup"><span data-stu-id="b0889-117">boolean</span></span> |  |
+| <span data-ttu-id="b0889-118">активитидуратиониндайс</span><span class="sxs-lookup"><span data-stu-id="b0889-118">activityDurationInDays</span></span> | <span data-ttu-id="b0889-119">Int32</span><span class="sxs-lookup"><span data-stu-id="b0889-119">Int32</span></span> |  |
+| <span data-ttu-id="b0889-120">ауторевиевсеттингс</span><span class="sxs-lookup"><span data-stu-id="b0889-120">autoReviewSettings</span></span> | <span data-ttu-id="b0889-121">ауторевиевсеттингс</span><span class="sxs-lookup"><span data-stu-id="b0889-121">autoReviewSettings</span></span> |  |
+| <span data-ttu-id="b0889-122">аутоапплиревиевресултсенаблед</span><span class="sxs-lookup"><span data-stu-id="b0889-122">autoApplyReviewResultsEnabled</span></span> | <span data-ttu-id="b0889-123">boolean</span><span class="sxs-lookup"><span data-stu-id="b0889-123">boolean</span></span> |  |
+| <span data-ttu-id="b0889-124">акцессрекоммендатионсенаблед</span><span class="sxs-lookup"><span data-stu-id="b0889-124">accessRecommendationsEnabled</span></span> | <span data-ttu-id="b0889-125">boolean</span><span class="sxs-lookup"><span data-stu-id="b0889-125">boolean</span></span> |  |
 
 
-## <a name="relationships"></a><span data-ttu-id="edc40-125">Отношения</span><span class="sxs-lookup"><span data-stu-id="edc40-125">Relationships</span></span>
-<span data-ttu-id="edc40-126">Нет</span><span class="sxs-lookup"><span data-stu-id="edc40-126">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="edc40-127">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="edc40-127">JSON Representation</span></span>
-<span data-ttu-id="edc40-128">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="edc40-128">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="b0889-126">Связи</span><span class="sxs-lookup"><span data-stu-id="b0889-126">Relationships</span></span>
+<span data-ttu-id="b0889-127">Нет</span><span class="sxs-lookup"><span data-stu-id="b0889-127">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b0889-128">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="b0889-128">JSON Representation</span></span>
+<span data-ttu-id="b0889-129">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b0889-129">Here is a JSON representation of the resource.</span></span>
 <!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.accessReviewSettings"

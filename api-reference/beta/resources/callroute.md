@@ -5,30 +5,32 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: bdc4c54f9f5676496ae64e97b1ce14e3918e7cc9
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 9a2ac5e0e8656cf6d7dcde2528d7ca000368d640
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913319"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507798"
 ---
-# <a name="callroute-resource-type"></a><span data-ttu-id="46b36-103">Тип ресурса Каллрауте</span><span class="sxs-lookup"><span data-stu-id="46b36-103">callRoute resource type</span></span>
+# <a name="callroute-resource-type"></a><span data-ttu-id="982f3-103">Тип ресурса Каллрауте</span><span class="sxs-lookup"><span data-stu-id="982f3-103">callRoute resource type</span></span>
+
+<span data-ttu-id="982f3-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="982f3-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="46b36-104">Тип Каллрауте.</span><span class="sxs-lookup"><span data-stu-id="46b36-104">The callRoute type.</span></span>
+<span data-ttu-id="982f3-105">Тип Каллрауте.</span><span class="sxs-lookup"><span data-stu-id="982f3-105">The callRoute type.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="46b36-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="46b36-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="982f3-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="982f3-106">Properties</span></span>
 
-| <span data-ttu-id="46b36-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="46b36-106">Property</span></span>            | <span data-ttu-id="46b36-107">Тип</span><span class="sxs-lookup"><span data-stu-id="46b36-107">Type</span></span>                          | <span data-ttu-id="46b36-108">Описание</span><span class="sxs-lookup"><span data-stu-id="46b36-108">Description</span></span>                                                  |
+| <span data-ttu-id="982f3-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="982f3-107">Property</span></span>            | <span data-ttu-id="982f3-108">Тип</span><span class="sxs-lookup"><span data-stu-id="982f3-108">Type</span></span>                          | <span data-ttu-id="982f3-109">Описание</span><span class="sxs-lookup"><span data-stu-id="982f3-109">Description</span></span>                                                  |
 | :------------------ | :---------------------------- | :----------------------------------------------------------- |
-| <span data-ttu-id="46b36-109">Наконец</span><span class="sxs-lookup"><span data-stu-id="46b36-109">final</span></span>               | [<span data-ttu-id="46b36-110">identitySet</span><span class="sxs-lookup"><span data-stu-id="46b36-110">identitySet</span></span>](identityset.md) | <span data-ttu-id="46b36-111">Идентификатор, разрешенный в вызове.</span><span class="sxs-lookup"><span data-stu-id="46b36-111">The identity that was resolved to in the call.</span></span>               |
-| <span data-ttu-id="46b36-112">Исходный текст</span><span class="sxs-lookup"><span data-stu-id="46b36-112">original</span></span>            | [<span data-ttu-id="46b36-113">identitySet</span><span class="sxs-lookup"><span data-stu-id="46b36-113">identitySet</span></span>](identityset.md) | <span data-ttu-id="46b36-114">Идентификатор, который изначально использовался при вызове.</span><span class="sxs-lookup"><span data-stu-id="46b36-114">The identity that was originally used in the call.</span></span>           |
-| <span data-ttu-id="46b36-115">раутингтипе</span><span class="sxs-lookup"><span data-stu-id="46b36-115">routingType</span></span>         | <span data-ttu-id="46b36-116">String</span><span class="sxs-lookup"><span data-stu-id="46b36-116">String</span></span>                        | <span data-ttu-id="46b36-117">Возможные значения: `forwarded`, `lookup`, `selfFork`.</span><span class="sxs-lookup"><span data-stu-id="46b36-117">Possible values are: `forwarded`, `lookup`, `selfFork`.</span></span>  |
+| <span data-ttu-id="982f3-110">Наконец</span><span class="sxs-lookup"><span data-stu-id="982f3-110">final</span></span>               | [<span data-ttu-id="982f3-111">identitySet</span><span class="sxs-lookup"><span data-stu-id="982f3-111">identitySet</span></span>](identityset.md) | <span data-ttu-id="982f3-112">Идентификатор, разрешенный в вызове.</span><span class="sxs-lookup"><span data-stu-id="982f3-112">The identity that was resolved to in the call.</span></span>               |
+| <span data-ttu-id="982f3-113">Исходный текст</span><span class="sxs-lookup"><span data-stu-id="982f3-113">original</span></span>            | [<span data-ttu-id="982f3-114">identitySet</span><span class="sxs-lookup"><span data-stu-id="982f3-114">identitySet</span></span>](identityset.md) | <span data-ttu-id="982f3-115">Идентификатор, который изначально использовался при вызове.</span><span class="sxs-lookup"><span data-stu-id="982f3-115">The identity that was originally used in the call.</span></span>           |
+| <span data-ttu-id="982f3-116">раутингтипе</span><span class="sxs-lookup"><span data-stu-id="982f3-116">routingType</span></span>         | <span data-ttu-id="982f3-117">String</span><span class="sxs-lookup"><span data-stu-id="982f3-117">String</span></span>                        | <span data-ttu-id="982f3-118">Возможные значения: `forwarded`, `lookup`, `selfFork`.</span><span class="sxs-lookup"><span data-stu-id="982f3-118">Possible values are: `forwarded`, `lookup`, `selfFork`.</span></span>  |
 
-## <a name="json-representation"></a><span data-ttu-id="46b36-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="46b36-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="982f3-119">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="982f3-119">JSON representation</span></span>
 
-<span data-ttu-id="46b36-119">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="46b36-119">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="982f3-120">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="982f3-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
