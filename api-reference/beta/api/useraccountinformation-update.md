@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 78d890a00916c72b8c48e5b41a1c84e1e2e2ffb8
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 429e26ef14ed461c61f00072cdad878f59d5870f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938143"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451604"
 ---
 # <a name="update-useraccountinformation"></a>Обновление усераккаунтинформатион
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,7 +43,7 @@ PATCH /me/profile/account/{id}
 | Имя           |Описание                 |
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
-| Content-Type   | application/json. Обязательное |
+| Content-Type   | application/json. Обязательна |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -50,7 +52,7 @@ PATCH /me/profile/account/{id}
 | Свойство            | Тип                                    | Описание                                                                                    |
 |:--------------------|:----------------------------------------|:-----------------------------------------------------------------------------------------------|
 |ageGroup             |String                                   |Показывает группу возрастных пользователей. Допустимые `null`значения `minor`, `notAdult` и `adult`. Только для чтения. |
-|countryCode          |Строка                                   |Содержит два символа countryCode, связанных с учетной записью "Пользователи".                       |
+|countryCode          |String                                   |Содержит два символа countryCode, связанных с учетной записью "Пользователи".                       |
 |преферредлангуажетаг |[localeInfo](../resources/localeinfo.md) |Содержит язык, который пользователь связал с учетной записью как предпочитаемый.                     |
 |userPrincipalName    |String                                   |Имя участника-пользователя (UPN) пользователя, связанного с учетной записью.                          |
 
@@ -63,6 +65,8 @@ PATCH /me/profile/account/{id}
 ### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_useraccountinformation"
@@ -82,6 +86,20 @@ Content-type: application/json
   "userPrincipalName": "userPrincipalName-value"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-useraccountinformation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-useraccountinformation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-useraccountinformation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

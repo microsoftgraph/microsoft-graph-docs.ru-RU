@@ -5,15 +5,16 @@ localization_priority: Normal
 ms.prod: notifications
 doc_type: apiPageType
 author: merzink
-ms.openlocfilehash: 911e18d4a866d1e1af53582e9b6d32aaf3f33764
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: b66544406372c2eaa7be6f8f4261c75cbd7c6c5e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39843982"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451668"
 ---
 # <a name="create-and-send-a-notification"></a>Создание и отправление уведомления
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Пространство имен: Microsoft. Graph[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Создание и отправка уведомления, предназначенного для пользователя с помощью Microsoft Graph. Уведомление хранится в хранилище каналов уведомлений Microsoft Graph и отправляется всем клиентам приложений во всех конечных точках устройств, в которых пользователь вошел в систему.  
 
@@ -41,11 +42,11 @@ POST /me/notifications/
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя | Описание|
 |:----|:-----------|
-|Authorization | Заголовок Authorization используется для передачи учетных данных вызывающей стороны. Bearer {Token}. Обязательно. |
+|Authorization | Заголовок Authorization используется для передачи учетных данных вызывающей стороны. Bearer {Token}. Обязательное. |
 |X – УНС — ID | Усернотификатионсубскриптионид, возвращенный службой уведомлений Microsoft Graph после создания подписки, и используется для назначения определенного пользователя. Обязательный параметр. |
 |Content-Type | application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 В тексте запроса добавьте представление объекта [уведомления](../resources/projectrome-notification.md) в формате JSON.
 
 ## <a name="response"></a>Отклик

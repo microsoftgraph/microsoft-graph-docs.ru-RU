@@ -5,14 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 587a9e34db293a738e1242b3d41406bb15990834
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cd962184bc655a9df36d6a9b24876a9c1651bcac
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35987483"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451737"
 ---
 # <a name="list-workingwith"></a>Список workingWith
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +45,7 @@ GET /drive/root/lastModifiedByUser/workingWith
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type   | application/json           |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -56,7 +58,7 @@ GET /drive/root/lastModifiedByUser/workingWith
 GET https://graph.microsoft.com/beta/me/workingWith
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

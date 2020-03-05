@@ -5,14 +5,16 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1e45926ee17ecec717595ad1eb2b1a9b2f8161b0
-ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
+ms.openlocfilehash: ae26f5b5a5a109145daa132837890943a98c8c0d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42268377"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451632"
 ---
 # <a name="user-translateexchangeids"></a>Пользователь: Транслатиксчанжеидс
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,7 +49,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
-| инпутидс | Коллекция строк | Коллекция идентификаторов для преобразования. Все идентификаторы в коллекции должны иметь одинаковый тип идентификатора источника и должны быть для элементов в одном почтовом ящике. Максимальный размер этой коллекции составляет 1000 строк. |
+| инпутидс | Коллекция String | Коллекция идентификаторов для преобразования. Все идентификаторы в коллекции должны иметь одинаковый тип идентификатора источника и должны быть для элементов в одном почтовом ящике. Максимальный размер этой коллекции составляет 1000 строк. |
 | саурцеидтипе | ексчанжеидформат | Тип идентификатора идентификаторов в `InputIds` параметре. |
 | таржетидтипе | ексчанжеидформат | Запрошенный тип идентификатора для преобразования. |
 

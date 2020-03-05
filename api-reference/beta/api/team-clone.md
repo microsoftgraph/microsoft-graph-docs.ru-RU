@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1ed4880d80bd94febc4d12deb04ca10a4cb7dad3
-ms.sourcegitcommit: 3db93e28e215c0e09a65b4705ba956c6ac3b5426
+ms.openlocfilehash: 782be85dc7a82e56bc5a2dc0d4449b6562f68c17
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "36396739"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42452619"
 ---
 # <a name="clone-a-team"></a>Клонирование команды
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +54,7 @@ POST /teams/{id}/clone
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
@@ -61,7 +63,7 @@ POST /teams/{id}/clone
 |displayName|String|Отображаемое имя для группы. Это свойство необходимо при создании группы. Оно не может быть удалено во время обновления. Поддерживает параметры $filter и $orderby.|
 |mailNickname|String|Почтовый псевдоним для группы (уникальный в организации). Это свойство должно быть указано при создании группы. Поддерживает параметр $filter. Если это свойство не задано, оно будет вычислено в displayName. Известная проблема: данное свойство в настоящее время игнорируется.|
 |партстоклоне| [клонаблетеампартс](../resources/clonableteamparts.md) |Разделенный запятыми список частей, которые необходимо клонировать. Юридическими частями являются "приложения, вкладки, параметры, каналы, элементы".|
-|visibility|[объекта teamvisibilitytype](../resources/teamvisibilitytype.md) необязательно| Задает видимость группы. Возможные значения: **Private**, **Public**. Если параметр Visibility не указан, то видимость будет скопирована из исходной группы или группы. Если группа является клонированной, параметр видимости **** игнорируется, и для отображения новой группы будет задано значение значение hiddenmembership.|
+|visibility|[объекта teamvisibilitytype](../resources/teamvisibilitytype.md) (необязательно)| Задает видимость группы. Возможные значения: **Private**, **Public**. Если параметр Visibility не указан, то видимость будет скопирована из исходной группы или группы. Если **Группа является** клонированной, параметр видимости игнорируется, и для отображения новой группы будет задано значение значение hiddenmembership.|
 
 ## <a name="response"></a>Отклик
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 32b6314409bd9253e85d8a9df31cf005d0fe3983
-ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
+ms.openlocfilehash: 61e110d00bb39074314f847cdfb530b9488a855f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37734474"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42452185"
 ---
 # <a name="list-trustframeworkpolicies"></a>Список ТрустфрамеворкполиЦиес
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -24,9 +26,9 @@ ms.locfileid: "37734474"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|Policy.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|Policy. Read. ALL, Policy. ReadWrite. Трустфрамеворк|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|Policy.Read.All|
+|Для приложений|Policy. Read. ALL, Policy. ReadWrite. Трустфрамеворк|
 
 Рабочая или учебная учетная запись должна быть глобальным администратором клиента.
 
@@ -61,7 +63,7 @@ GET /trustFramework/policies/
 ##### <a name="request"></a>Запрос
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_trustFrameworks"
@@ -69,15 +71,15 @@ GET /trustFramework/policies/
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/trustFramework/policies
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-trustframeworks-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-trustframeworks-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-trustframeworks-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

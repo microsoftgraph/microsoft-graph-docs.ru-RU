@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bf06455a0501054097cbf9f3b5e2bf3b4aa8d965
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: fa902da0ce46243fad4697ed5e5549c9f6a2722e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870710"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451805"
 ---
 # <a name="list-manager"></a>Получение руководителя
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,10 +44,10 @@ GET /users/{id | userPrincipalName}/manager
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type   | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [directoryObject](../resources/directoryobject.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -55,7 +57,7 @@ GET /users/{id | userPrincipalName}/manager
 ```http
 GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/manager
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 <!-- { "blockType": "ignored" } -->
 ```http

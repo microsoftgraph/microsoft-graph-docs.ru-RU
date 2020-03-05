@@ -5,14 +5,16 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 697218f1ff488b935b401406fbd30ddd9f5ebf65
-ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
+ms.openlocfilehash: b8a7c2a9d38d5da3ef38d2a724b3fa1b015a4efd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37734390"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42452070"
 ---
 # <a name="get-trustframeworkpolicy"></a>Получение Трустфрамеворкполици
+
+Пространство имен: Microsoft. Graph
 
 >**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -24,9 +26,9 @@ ms.locfileid: "37734390"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| Policy.Read.All|
+|Делегированные (рабочая или учебная учетная запись)| Policy. Read. ALL, Policy. ReadWrite. Трустфрамеворк|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|Policy.Read.All|
+|Для приложений|Policy. Read. ALL, Policy. ReadWrite. Трустфрамеворк|
 
 Рабочая или учебная учетная запись должна быть глобальным администратором клиента.
 

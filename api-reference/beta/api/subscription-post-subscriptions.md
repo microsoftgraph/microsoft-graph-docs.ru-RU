@@ -5,14 +5,16 @@ localization_priority: Normal
 author: baywet
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 6bb11e36b2a5f11f94cea7294e77e6d23aa8dd54
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 2b01ed0193c5360b46aaa24da6fe257a6a86bb47
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394479"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453095"
 ---
 # <a name="create-subscription"></a>Создание подписки
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +28,7 @@ ms.locfileid: "42394479"
 
 | Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Для приложений |
 |:-----|:-----|:-----|:-----|
-|[каллрекорд](../resources/callrecords-callrecord.md) (/коммуникатионс/каллрекордс) | Не поддерживается | Не поддерживается | Каллрекордс. Read. ALL  |
+|[каллрекорд](../resources/callrecords-callrecord.md) (/коммуникатионс/каллрекордс) | Не поддерживается | Не поддерживается | CallRecords.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/теамс/{ИД}/чаннелс/{ИД}/мессажес) | Не поддерживается | Не поддерживается | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/теамс/аллмессажес--все сообщения каналов в организации) | Не поддерживается | Не поддерживается | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/ЧАТС/{ИД}/мессажес) | Не поддерживается | Не поддерживается | Chat.Read.All  |

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: d2cda5dd77124d96139cde568d6d88ac4d167dde
-ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
+ms.openlocfilehash: 0fa3fcfad09b345cc5dac741f71b63022de38571
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219729"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42452367"
 ---
 # <a name="tiindicator-submittiindicators"></a>Тииндикатор: Субмиттииндикаторс
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -5,19 +5,21 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 82d6897f0637090db704a5ca174f75f04446ba13
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: fa1856d6c30e11eee3f3b3379e6d9e8164f56d08
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844171"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451562"
 ---
 # <a name="get-settings"></a>Получение параметров
 
+Пространство имен: Microsoft. Graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Чтение объекта User и Organization [усерсеттингс](../resources/usersettings.md) .
-Чтобы узнать, как обновить свойства объекта [усерсеттингс](../resources/usersettings.md) , ознакомьтесь со статьей [Обновление параметров пользователя](usersettings-update.md).
+Чтение объекта [userSettings](../resources/usersettings.md) пользователя и организации.
+Сведения об обновлении свойств объекта [userSettings](../resources/usersettings.md) см. в статье [Обновление параметров пользователя](usersettings-update.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -45,9 +47,9 @@ GET /users/{id | userPrincipalName}/settings/
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [усерсеттингс](../resources/usersettings.md) в тексте отклика.
+При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [userSettings](../resources/usersettings.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

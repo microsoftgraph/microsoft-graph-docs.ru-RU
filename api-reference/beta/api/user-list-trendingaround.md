@@ -5,20 +5,22 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dc7b6176fe4fceeeeea78d63c6b7140568ff6875
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6b1da05001da565e03cdcc06fc46459e971cf660
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35996191"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451744"
 ---
 # <a name="list-trendingaround"></a>Список trendingAround
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Вычисляемое представление, возвращающее список элементов, которые обходить пользователь.
 
-**Примечание:** Этот API будет устаревшим и заменен [API](../resources/insights-trending.md)-интерфейсом тенденций.
+**Примечание:** Этот API будет устаревшим и заменен [API-интерфейсом тенденций](../resources/insights-trending.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -45,7 +47,7 @@ GET /drive/root/lastModifiedByUser/trendingAround
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type   | application/json           |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -58,7 +60,7 @@ GET /drive/root/lastModifiedByUser/trendingAround
 GET https://graph.microsoft.com/beta/me/trendingAround
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
