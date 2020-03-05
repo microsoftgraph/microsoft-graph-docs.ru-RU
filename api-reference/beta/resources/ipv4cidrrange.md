@@ -5,30 +5,32 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4864388492f3dedec4add271904f2e07a3e85419
-ms.sourcegitcommit: d189830649794365464e37539e02239f883011da
+ms.openlocfilehash: a6aa9202310ac2c0edcb70bac07fd49f5de668c8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37653827"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523151"
 ---
-# <a name="ipv4cidrrange-resource-type"></a><span data-ttu-id="4d62e-103">Тип ресурса iPv4CidrRange</span><span class="sxs-lookup"><span data-stu-id="4d62e-103">iPv4CidrRange resource type</span></span>
+# <a name="ipv4cidrrange-resource-type"></a><span data-ttu-id="0324f-103">Тип ресурса iPv4CidrRange</span><span class="sxs-lookup"><span data-stu-id="0324f-103">iPv4CidrRange resource type</span></span>
+
+<span data-ttu-id="0324f-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="0324f-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4d62e-104">Представляет диапазон IPv4-адресов с использованием нотации CIDR.</span><span class="sxs-lookup"><span data-stu-id="4d62e-104">Represents an IPv4 range using the CIDR notation.</span></span>
+<span data-ttu-id="0324f-105">Представляет диапазон IPv4-адресов с использованием нотации CIDR.</span><span class="sxs-lookup"><span data-stu-id="0324f-105">Represents an IPv4 range using the CIDR notation.</span></span>
 
-<span data-ttu-id="4d62e-105">Наследуется от ресурса [ipRange](../resources/iprange.md)</span><span class="sxs-lookup"><span data-stu-id="4d62e-105">Inherits from [ipRange](../resources/iprange.md)</span></span>
+<span data-ttu-id="0324f-106">Наследуется от ресурса [ipRange](../resources/iprange.md)</span><span class="sxs-lookup"><span data-stu-id="0324f-106">Inherits from [ipRange](../resources/iprange.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="4d62e-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="4d62e-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="0324f-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="0324f-107">Properties</span></span>
 
-| <span data-ttu-id="4d62e-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="4d62e-107">Property</span></span>     | <span data-ttu-id="4d62e-108">Тип</span><span class="sxs-lookup"><span data-stu-id="4d62e-108">Type</span></span>        | <span data-ttu-id="4d62e-109">Описание</span><span class="sxs-lookup"><span data-stu-id="4d62e-109">Description</span></span> |
+| <span data-ttu-id="0324f-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="0324f-108">Property</span></span>     | <span data-ttu-id="0324f-109">Тип</span><span class="sxs-lookup"><span data-stu-id="0324f-109">Type</span></span>        | <span data-ttu-id="0324f-110">Описание</span><span class="sxs-lookup"><span data-stu-id="0324f-110">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="4d62e-110">Цидраддресс</span><span class="sxs-lookup"><span data-stu-id="4d62e-110">cidrAddress</span></span>|<span data-ttu-id="4d62e-111">String</span><span class="sxs-lookup"><span data-stu-id="4d62e-111">String</span></span>|<span data-ttu-id="4d62e-112">IPv4-адрес в нотации CIDR</span><span class="sxs-lookup"><span data-stu-id="4d62e-112">IPv4 address in CIDR notation</span></span>|
+|<span data-ttu-id="0324f-111">Цидраддресс</span><span class="sxs-lookup"><span data-stu-id="0324f-111">cidrAddress</span></span>|<span data-ttu-id="0324f-112">String</span><span class="sxs-lookup"><span data-stu-id="0324f-112">String</span></span>|<span data-ttu-id="0324f-113">IPv4-адрес в нотации CIDR</span><span class="sxs-lookup"><span data-stu-id="0324f-113">IPv4 address in CIDR notation</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="4d62e-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="4d62e-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0324f-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="0324f-114">JSON representation</span></span>
 
-<span data-ttu-id="4d62e-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="4d62e-114">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="0324f-115">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0324f-115">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -5,31 +5,33 @@ localization_priority: Normal
 author: ananmishr
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 52bfe4fd46443c826838153cc2a40ea57712182b
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 8ac6c42f28ed1f2adccd54fcd3bd6667f4113b7a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913158"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522251"
 ---
-# <a name="onlinemeetinginfo-resource-type"></a><span data-ttu-id="a5022-103">Тип ресурса Онлинемитингинфо</span><span class="sxs-lookup"><span data-stu-id="a5022-103">onlineMeetingInfo resource type</span></span>
+# <a name="onlinemeetinginfo-resource-type"></a><span data-ttu-id="56959-103">Тип ресурса Онлинемитингинфо</span><span class="sxs-lookup"><span data-stu-id="56959-103">onlineMeetingInfo resource type</span></span>
 
-<span data-ttu-id="a5022-104">Сведения, необходимые участнику, чтобы присоединиться к собранию по сети.</span><span class="sxs-lookup"><span data-stu-id="a5022-104">Details for an attendee to join the meeting online.</span></span>
+<span data-ttu-id="56959-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="56959-104">Namespace: microsoft.graph</span></span>
 
-## <a name="properties"></a><span data-ttu-id="a5022-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="a5022-105">Properties</span></span>
+<span data-ttu-id="56959-105">Сведения, необходимые участнику, чтобы присоединиться к собранию по сети.</span><span class="sxs-lookup"><span data-stu-id="56959-105">Details for an attendee to join the meeting online.</span></span>
 
-| <span data-ttu-id="a5022-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="a5022-106">Property</span></span>     | <span data-ttu-id="a5022-107">Тип</span><span class="sxs-lookup"><span data-stu-id="a5022-107">Type</span></span>        | <span data-ttu-id="a5022-108">Описание</span><span class="sxs-lookup"><span data-stu-id="a5022-108">Description</span></span> |
+## <a name="properties"></a><span data-ttu-id="56959-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="56959-106">Properties</span></span>
+
+| <span data-ttu-id="56959-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="56959-107">Property</span></span>     | <span data-ttu-id="56959-108">Тип</span><span class="sxs-lookup"><span data-stu-id="56959-108">Type</span></span>        | <span data-ttu-id="56959-109">Описание</span><span class="sxs-lookup"><span data-stu-id="56959-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="a5022-109">конференцеид</span><span class="sxs-lookup"><span data-stu-id="a5022-109">conferenceId</span></span>|<span data-ttu-id="a5022-110">String</span><span class="sxs-lookup"><span data-stu-id="a5022-110">String</span></span>| <span data-ttu-id="a5022-111">Идентификатор конференции.</span><span class="sxs-lookup"><span data-stu-id="a5022-111">The ID of the conference.</span></span>|
-|<span data-ttu-id="a5022-112">жоинурл</span><span class="sxs-lookup"><span data-stu-id="a5022-112">joinUrl</span></span>|<span data-ttu-id="a5022-113">String</span><span class="sxs-lookup"><span data-stu-id="a5022-113">String</span></span>| <span data-ttu-id="a5022-114">Внешняя ссылка, которая запускает собрание по сети.</span><span class="sxs-lookup"><span data-stu-id="a5022-114">The external link that launches the online meeting.</span></span> <span data-ttu-id="a5022-115">Это URL-адрес, который клиенты будут запускать в браузере и перенаправит пользователя для присоединения к собранию.</span><span class="sxs-lookup"><span data-stu-id="a5022-115">This is a URL that clients will launch into a browser and will redirect the user to join the meeting.</span></span>|
-|<span data-ttu-id="a5022-116">phones</span><span class="sxs-lookup"><span data-stu-id="a5022-116">phones</span></span>|<span data-ttu-id="a5022-117">Коллекция [phone](phone.md)</span><span class="sxs-lookup"><span data-stu-id="a5022-117">[phone](phone.md) collection</span></span>| <span data-ttu-id="a5022-118">Все номера телефонов, связанные с этой Конференции.</span><span class="sxs-lookup"><span data-stu-id="a5022-118">All of the phone numbers associated with this conference.</span></span>|
-|<span data-ttu-id="a5022-119">куиккдиал</span><span class="sxs-lookup"><span data-stu-id="a5022-119">quickDial</span></span>|<span data-ttu-id="a5022-120">String</span><span class="sxs-lookup"><span data-stu-id="a5022-120">String</span></span>| <span data-ttu-id="a5022-121">Предварительно отформатированный куиккдиал для этого вызова.</span><span class="sxs-lookup"><span data-stu-id="a5022-121">The pre-formatted quickdial for this call.</span></span>|
-|<span data-ttu-id="a5022-122">толлфринумберс</span><span class="sxs-lookup"><span data-stu-id="a5022-122">tollFreeNumbers</span></span>|<span data-ttu-id="a5022-123">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="a5022-123">String collection</span></span>| <span data-ttu-id="a5022-124">Бесплатных бесплатных номеров, которые можно использовать для присоединения к Конференции.</span><span class="sxs-lookup"><span data-stu-id="a5022-124">The toll free numbers that can be used to join the conference.</span></span>|
-|<span data-ttu-id="a5022-125">толлнумбер</span><span class="sxs-lookup"><span data-stu-id="a5022-125">tollNumber</span></span>|<span data-ttu-id="a5022-126">String</span><span class="sxs-lookup"><span data-stu-id="a5022-126">String</span></span>| <span data-ttu-id="a5022-127">Платный номер, который можно использовать для присоединения к Конференции.</span><span class="sxs-lookup"><span data-stu-id="a5022-127">The toll number that can be used to join the conference.</span></span>|
+|<span data-ttu-id="56959-110">конференцеид</span><span class="sxs-lookup"><span data-stu-id="56959-110">conferenceId</span></span>|<span data-ttu-id="56959-111">String</span><span class="sxs-lookup"><span data-stu-id="56959-111">String</span></span>| <span data-ttu-id="56959-112">Идентификатор конференции.</span><span class="sxs-lookup"><span data-stu-id="56959-112">The ID of the conference.</span></span>|
+|<span data-ttu-id="56959-113">жоинурл</span><span class="sxs-lookup"><span data-stu-id="56959-113">joinUrl</span></span>|<span data-ttu-id="56959-114">String</span><span class="sxs-lookup"><span data-stu-id="56959-114">String</span></span>| <span data-ttu-id="56959-115">Внешняя ссылка, которая запускает собрание по сети.</span><span class="sxs-lookup"><span data-stu-id="56959-115">The external link that launches the online meeting.</span></span> <span data-ttu-id="56959-116">Это URL-адрес, который клиенты будут запускать в браузере и перенаправит пользователя для присоединения к собранию.</span><span class="sxs-lookup"><span data-stu-id="56959-116">This is a URL that clients will launch into a browser and will redirect the user to join the meeting.</span></span>|
+|<span data-ttu-id="56959-117">phones</span><span class="sxs-lookup"><span data-stu-id="56959-117">phones</span></span>|<span data-ttu-id="56959-118">Коллекция [phone](phone.md)</span><span class="sxs-lookup"><span data-stu-id="56959-118">[phone](phone.md) collection</span></span>| <span data-ttu-id="56959-119">Все номера телефонов, связанные с этой Конференции.</span><span class="sxs-lookup"><span data-stu-id="56959-119">All of the phone numbers associated with this conference.</span></span>|
+|<span data-ttu-id="56959-120">куиккдиал</span><span class="sxs-lookup"><span data-stu-id="56959-120">quickDial</span></span>|<span data-ttu-id="56959-121">String</span><span class="sxs-lookup"><span data-stu-id="56959-121">String</span></span>| <span data-ttu-id="56959-122">Предварительно отформатированный куиккдиал для этого вызова.</span><span class="sxs-lookup"><span data-stu-id="56959-122">The pre-formatted quickdial for this call.</span></span>|
+|<span data-ttu-id="56959-123">толлфринумберс</span><span class="sxs-lookup"><span data-stu-id="56959-123">tollFreeNumbers</span></span>|<span data-ttu-id="56959-124">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="56959-124">String collection</span></span>| <span data-ttu-id="56959-125">Бесплатных бесплатных номеров, которые можно использовать для присоединения к Конференции.</span><span class="sxs-lookup"><span data-stu-id="56959-125">The toll free numbers that can be used to join the conference.</span></span>|
+|<span data-ttu-id="56959-126">толлнумбер</span><span class="sxs-lookup"><span data-stu-id="56959-126">tollNumber</span></span>|<span data-ttu-id="56959-127">String</span><span class="sxs-lookup"><span data-stu-id="56959-127">String</span></span>| <span data-ttu-id="56959-128">Платный номер, который можно использовать для присоединения к Конференции.</span><span class="sxs-lookup"><span data-stu-id="56959-128">The toll number that can be used to join the conference.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="a5022-128">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a5022-128">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="56959-129">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="56959-129">JSON representation</span></span>
 
-<span data-ttu-id="a5022-129">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a5022-129">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="56959-130">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="56959-130">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

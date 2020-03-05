@@ -5,28 +5,30 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c9c7dce23eb3b5548722c837f20902561ecc0a92
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: f8adc2829b7910fa5780c320cffe0ee91b9bbe23
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40912722"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522766"
 ---
-# <a name="mediaprompt-resource-type"></a><span data-ttu-id="31289-103">Тип ресурса Медиапромпт</span><span class="sxs-lookup"><span data-stu-id="31289-103">mediaPrompt resource type</span></span>
+# <a name="mediaprompt-resource-type"></a><span data-ttu-id="f3237-103">Тип ресурса Медиапромпт</span><span class="sxs-lookup"><span data-stu-id="f3237-103">mediaPrompt resource type</span></span>
+
+<span data-ttu-id="f3237-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="f3237-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="31289-104">Содержит сведения о звуковом файле, который необходимо воспроизвести, и другие дополнительные параметры.</span><span class="sxs-lookup"><span data-stu-id="31289-104">Contains information about the audio file to be played and other additional settings.</span></span>
+<span data-ttu-id="f3237-105">Содержит сведения о звуковом файле, который необходимо воспроизвести, и другие дополнительные параметры.</span><span class="sxs-lookup"><span data-stu-id="f3237-105">Contains information about the audio file to be played and other additional settings.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="31289-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="31289-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="f3237-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="f3237-106">Properties</span></span>
 
-| <span data-ttu-id="31289-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="31289-106">Property</span></span>    | <span data-ttu-id="31289-107">Тип</span><span class="sxs-lookup"><span data-stu-id="31289-107">Type</span></span>                      | <span data-ttu-id="31289-108">Описание</span><span class="sxs-lookup"><span data-stu-id="31289-108">Description</span></span>                                                                     |
+| <span data-ttu-id="f3237-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="f3237-107">Property</span></span>    | <span data-ttu-id="f3237-108">Тип</span><span class="sxs-lookup"><span data-stu-id="f3237-108">Type</span></span>                      | <span data-ttu-id="f3237-109">Описание</span><span class="sxs-lookup"><span data-stu-id="f3237-109">Description</span></span>                                                                     |
 | :---------- | :------------------------ | :------------------------------------------------------------------------------ |
-| <span data-ttu-id="31289-109">медиаинфо</span><span class="sxs-lookup"><span data-stu-id="31289-109">mediaInfo</span></span>   | [<span data-ttu-id="31289-110">медиаинфо</span><span class="sxs-lookup"><span data-stu-id="31289-110">mediaInfo</span></span>](mediainfo.md) | <span data-ttu-id="31289-111">Сведения о мультимедиа.</span><span class="sxs-lookup"><span data-stu-id="31289-111">The media information.</span></span>                                                          |
+| <span data-ttu-id="f3237-110">медиаинфо</span><span class="sxs-lookup"><span data-stu-id="f3237-110">mediaInfo</span></span>   | [<span data-ttu-id="f3237-111">медиаинфо</span><span class="sxs-lookup"><span data-stu-id="f3237-111">mediaInfo</span></span>](mediainfo.md) | <span data-ttu-id="f3237-112">Сведения о мультимедиа.</span><span class="sxs-lookup"><span data-stu-id="f3237-112">The media information.</span></span>                                                          |
 
-## <a name="json-representation"></a><span data-ttu-id="31289-112">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="31289-112">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f3237-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="f3237-113">JSON representation</span></span>
 
-<span data-ttu-id="31289-113">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="31289-113">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="f3237-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f3237-114">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -42,7 +44,7 @@ ms.locfileid: "40912722"
 }
 ```
 
-## <a name="example"></a><span data-ttu-id="31289-114">Пример</span><span class="sxs-lookup"><span data-stu-id="31289-114">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f3237-115">Пример</span><span class="sxs-lookup"><span data-stu-id="f3237-115">Example</span></span>
 
 <!-- {
   "blockType": "example",

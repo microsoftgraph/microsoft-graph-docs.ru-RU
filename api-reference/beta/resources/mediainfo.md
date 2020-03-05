@@ -5,29 +5,31 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d17117880cf736870d2728a9666af689a4296d04
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: db672c21aafceab08cf1825199686f9c9a1070e4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913298"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522773"
 ---
-# <a name="mediainfo-resource-type"></a><span data-ttu-id="cf1f3-103">Тип ресурса Медиаинфо</span><span class="sxs-lookup"><span data-stu-id="cf1f3-103">mediaInfo resource type</span></span>
+# <a name="mediainfo-resource-type"></a><span data-ttu-id="0a80f-103">Тип ресурса Медиаинфо</span><span class="sxs-lookup"><span data-stu-id="0a80f-103">mediaInfo resource type</span></span>
+
+<span data-ttu-id="0a80f-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="0a80f-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cf1f3-104">Сведения о мультимедиа, используемые в действиях для запросов.</span><span class="sxs-lookup"><span data-stu-id="cf1f3-104">The media information used in actions for prompts.</span></span>
+<span data-ttu-id="0a80f-105">Сведения о мультимедиа, используемые в действиях для запросов.</span><span class="sxs-lookup"><span data-stu-id="0a80f-105">The media information used in actions for prompts.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="cf1f3-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="cf1f3-105">Properties</span></span>
-| <span data-ttu-id="cf1f3-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="cf1f3-106">Property</span></span>       | <span data-ttu-id="cf1f3-107">Тип</span><span class="sxs-lookup"><span data-stu-id="cf1f3-107">Type</span></span>    | <span data-ttu-id="cf1f3-108">Описание</span><span class="sxs-lookup"><span data-stu-id="cf1f3-108">Description</span></span>                      |
+## <a name="properties"></a><span data-ttu-id="0a80f-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="0a80f-106">Properties</span></span>
+| <span data-ttu-id="0a80f-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="0a80f-107">Property</span></span>       | <span data-ttu-id="0a80f-108">Тип</span><span class="sxs-lookup"><span data-stu-id="0a80f-108">Type</span></span>    | <span data-ttu-id="0a80f-109">Описание</span><span class="sxs-lookup"><span data-stu-id="0a80f-109">Description</span></span>                      |
 |:---------------|:--------|:---------------------------------|
-| <span data-ttu-id="cf1f3-109">resourceId</span><span class="sxs-lookup"><span data-stu-id="cf1f3-109">resourceId</span></span>     | <span data-ttu-id="cf1f3-110">String</span><span class="sxs-lookup"><span data-stu-id="cf1f3-110">String</span></span>  | <span data-ttu-id="cf1f3-111">Необязательный параметр, используемый для уникальной идентификации ресурса.</span><span class="sxs-lookup"><span data-stu-id="cf1f3-111">Optional, used to uniquely identity the resource.</span></span> <span data-ttu-id="cf1f3-112">При передаче URI приглашения будет кэшироваться с этим ИД ресурса как key.</span><span class="sxs-lookup"><span data-stu-id="cf1f3-112">If passed the prompt uri will be cached against this resourceId as key.</span></span> |
-| <span data-ttu-id="cf1f3-113">URI</span><span class="sxs-lookup"><span data-stu-id="cf1f3-113">uri</span></span>            | <span data-ttu-id="cf1f3-114">String</span><span class="sxs-lookup"><span data-stu-id="cf1f3-114">String</span></span>  | <span data-ttu-id="cf1f3-115">Путь к приглашению для воспроизведения.</span><span class="sxs-lookup"><span data-stu-id="cf1f3-115">Path to the prompt to be played.</span></span> <span data-ttu-id="cf1f3-116">В настоящее время поддерживается только формат волнового файла (WAV), 16-разрядных образцов с частотой 16 000 (16 кГц).</span><span class="sxs-lookup"><span data-stu-id="cf1f3-116">Currently only Wave file (.wav) format, single-channel, 16-bit samples with a 16,000 (16KHz) sampling rate is only supported.</span></span> |
+| <span data-ttu-id="0a80f-110">resourceId</span><span class="sxs-lookup"><span data-stu-id="0a80f-110">resourceId</span></span>     | <span data-ttu-id="0a80f-111">String</span><span class="sxs-lookup"><span data-stu-id="0a80f-111">String</span></span>  | <span data-ttu-id="0a80f-112">Необязательный параметр, используемый для уникальной идентификации ресурса.</span><span class="sxs-lookup"><span data-stu-id="0a80f-112">Optional, used to uniquely identity the resource.</span></span> <span data-ttu-id="0a80f-113">При передаче URI приглашения будет кэшироваться с этим ИД ресурса как key.</span><span class="sxs-lookup"><span data-stu-id="0a80f-113">If passed the prompt uri will be cached against this resourceId as key.</span></span> |
+| <span data-ttu-id="0a80f-114">URI</span><span class="sxs-lookup"><span data-stu-id="0a80f-114">uri</span></span>            | <span data-ttu-id="0a80f-115">String</span><span class="sxs-lookup"><span data-stu-id="0a80f-115">String</span></span>  | <span data-ttu-id="0a80f-116">Путь к приглашению для воспроизведения.</span><span class="sxs-lookup"><span data-stu-id="0a80f-116">Path to the prompt to be played.</span></span> <span data-ttu-id="0a80f-117">В настоящее время поддерживается только формат волнового файла (WAV), 16-разрядных образцов с частотой 16 000 (16 кГц).</span><span class="sxs-lookup"><span data-stu-id="0a80f-117">Currently only Wave file (.wav) format, single-channel, 16-bit samples with a 16,000 (16KHz) sampling rate is only supported.</span></span> |
 
 
-## <a name="json-representation"></a><span data-ttu-id="cf1f3-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="cf1f3-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0a80f-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="0a80f-118">JSON representation</span></span>
 
-<span data-ttu-id="cf1f3-118">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="cf1f3-118">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="0a80f-119">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0a80f-119">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

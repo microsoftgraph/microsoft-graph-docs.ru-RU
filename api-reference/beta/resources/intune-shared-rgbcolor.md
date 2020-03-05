@@ -5,33 +5,35 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4850385cc4d32218c515c81cfa3594aebb60cebb
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 250c4881fd21cfc3659032712a31cbad4c3ac094
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36347880"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523564"
 ---
-# <a name="rgbcolor-resource-type"></a><span data-ttu-id="4375b-103">Тип ресурса rgbColor</span><span class="sxs-lookup"><span data-stu-id="4375b-103">rgbColor resource type</span></span>
+# <a name="rgbcolor-resource-type"></a><span data-ttu-id="52493-103">Тип ресурса rgbColor</span><span class="sxs-lookup"><span data-stu-id="52493-103">rgbColor resource type</span></span>
 
-> <span data-ttu-id="4375b-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4375b-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="52493-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="52493-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="4375b-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="4375b-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="52493-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="52493-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="4375b-106">Цвет в формате RGB.</span><span class="sxs-lookup"><span data-stu-id="4375b-106">Color in RGB.</span></span>
+> <span data-ttu-id="52493-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="52493-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="4375b-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="4375b-107">Properties</span></span>
-|<span data-ttu-id="4375b-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="4375b-108">Property</span></span>|<span data-ttu-id="4375b-109">Тип</span><span class="sxs-lookup"><span data-stu-id="4375b-109">Type</span></span>|<span data-ttu-id="4375b-110">Описание</span><span class="sxs-lookup"><span data-stu-id="4375b-110">Description</span></span>|
+<span data-ttu-id="52493-107">Цвет в формате RGB.</span><span class="sxs-lookup"><span data-stu-id="52493-107">Color in RGB.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="52493-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="52493-108">Properties</span></span>
+|<span data-ttu-id="52493-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="52493-109">Property</span></span>|<span data-ttu-id="52493-110">Тип</span><span class="sxs-lookup"><span data-stu-id="52493-110">Type</span></span>|<span data-ttu-id="52493-111">Описание</span><span class="sxs-lookup"><span data-stu-id="52493-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="4375b-111">r</span><span class="sxs-lookup"><span data-stu-id="4375b-111">r</span></span>|<span data-ttu-id="4375b-112">Байт</span><span class="sxs-lookup"><span data-stu-id="4375b-112">Byte</span></span>|<span data-ttu-id="4375b-113">Значение красного</span><span class="sxs-lookup"><span data-stu-id="4375b-113">Red value</span></span>|
-|<span data-ttu-id="4375b-114">g</span><span class="sxs-lookup"><span data-stu-id="4375b-114">g</span></span>|<span data-ttu-id="4375b-115">Байт</span><span class="sxs-lookup"><span data-stu-id="4375b-115">Byte</span></span>|<span data-ttu-id="4375b-116">Значение зеленого</span><span class="sxs-lookup"><span data-stu-id="4375b-116">Green value</span></span>|
-|<span data-ttu-id="4375b-117">b</span><span class="sxs-lookup"><span data-stu-id="4375b-117">b</span></span>|<span data-ttu-id="4375b-118">Байт</span><span class="sxs-lookup"><span data-stu-id="4375b-118">Byte</span></span>|<span data-ttu-id="4375b-119">Значение синего</span><span class="sxs-lookup"><span data-stu-id="4375b-119">Blue value</span></span>|
+|<span data-ttu-id="52493-112">r</span><span class="sxs-lookup"><span data-stu-id="52493-112">r</span></span>|<span data-ttu-id="52493-113">Байт</span><span class="sxs-lookup"><span data-stu-id="52493-113">Byte</span></span>|<span data-ttu-id="52493-114">Значение красного</span><span class="sxs-lookup"><span data-stu-id="52493-114">Red value</span></span>|
+|<span data-ttu-id="52493-115">g</span><span class="sxs-lookup"><span data-stu-id="52493-115">g</span></span>|<span data-ttu-id="52493-116">Байт</span><span class="sxs-lookup"><span data-stu-id="52493-116">Byte</span></span>|<span data-ttu-id="52493-117">Значение зеленого</span><span class="sxs-lookup"><span data-stu-id="52493-117">Green value</span></span>|
+|<span data-ttu-id="52493-118">b</span><span class="sxs-lookup"><span data-stu-id="52493-118">b</span></span>|<span data-ttu-id="52493-119">Байт</span><span class="sxs-lookup"><span data-stu-id="52493-119">Byte</span></span>|<span data-ttu-id="52493-120">Значение синего</span><span class="sxs-lookup"><span data-stu-id="52493-120">Blue value</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="4375b-120">Отношения</span><span class="sxs-lookup"><span data-stu-id="4375b-120">Relationships</span></span>
-<span data-ttu-id="4375b-121">Нет</span><span class="sxs-lookup"><span data-stu-id="4375b-121">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="52493-121">Связи</span><span class="sxs-lookup"><span data-stu-id="52493-121">Relationships</span></span>
+<span data-ttu-id="52493-122">Нет</span><span class="sxs-lookup"><span data-stu-id="52493-122">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="4375b-122">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="4375b-122">JSON Representation</span></span>
-<span data-ttu-id="4375b-123">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="4375b-123">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="52493-123">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="52493-123">JSON Representation</span></span>
+<span data-ttu-id="52493-124">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="52493-124">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.rgbColor"

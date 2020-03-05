@@ -5,31 +5,33 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 27af99e84bfae80021f26163e3618da0c0a44113
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 8a530c7b67d4bde5829f11471434341d365d3275
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36370713"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523347"
 ---
-# <a name="mobileappintent-enum-type"></a><span data-ttu-id="0fbb4-103">тип перечисления Мобилеаппинтент</span><span class="sxs-lookup"><span data-stu-id="0fbb4-103">mobileAppIntent enum type</span></span>
+# <a name="mobileappintent-enum-type"></a><span data-ttu-id="c328a-103">тип перечисления Мобилеаппинтент</span><span class="sxs-lookup"><span data-stu-id="c328a-103">mobileAppIntent enum type</span></span>
 
-> <span data-ttu-id="0fbb4-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0fbb4-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="c328a-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="c328a-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="0fbb4-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="0fbb4-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c328a-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c328a-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="0fbb4-106">Указывает состояние мобильного приложения на устройстве.</span><span class="sxs-lookup"><span data-stu-id="0fbb4-106">Indicates the status of the mobile app on the device.</span></span>
+> <span data-ttu-id="c328a-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="c328a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="0fbb4-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="0fbb4-107">Members</span></span>
-|<span data-ttu-id="0fbb4-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="0fbb4-108">Member</span></span>|<span data-ttu-id="0fbb4-109">Значение</span><span class="sxs-lookup"><span data-stu-id="0fbb4-109">Value</span></span>|<span data-ttu-id="0fbb4-110">Описание</span><span class="sxs-lookup"><span data-stu-id="0fbb4-110">Description</span></span>|
+<span data-ttu-id="c328a-107">Указывает состояние мобильного приложения на устройстве.</span><span class="sxs-lookup"><span data-stu-id="c328a-107">Indicates the status of the mobile app on the device.</span></span>
+
+## <a name="members"></a><span data-ttu-id="c328a-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="c328a-108">Members</span></span>
+|<span data-ttu-id="c328a-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="c328a-109">Member</span></span>|<span data-ttu-id="c328a-110">Значение</span><span class="sxs-lookup"><span data-stu-id="c328a-110">Value</span></span>|<span data-ttu-id="c328a-111">Описание</span><span class="sxs-lookup"><span data-stu-id="c328a-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="0fbb4-111">доступен</span><span class="sxs-lookup"><span data-stu-id="0fbb4-111">available</span></span>|<span data-ttu-id="0fbb4-112">нуль</span><span class="sxs-lookup"><span data-stu-id="0fbb4-112">0</span></span>|<span data-ttu-id="0fbb4-113">Available</span><span class="sxs-lookup"><span data-stu-id="0fbb4-113">Available</span></span>|
-|<span data-ttu-id="0fbb4-114">нотаваилабле</span><span class="sxs-lookup"><span data-stu-id="0fbb4-114">notAvailable</span></span>|<span data-ttu-id="0fbb4-115">1,1</span><span class="sxs-lookup"><span data-stu-id="0fbb4-115">1</span></span>|<span data-ttu-id="0fbb4-116">Компонент недоступен</span><span class="sxs-lookup"><span data-stu-id="0fbb4-116">Not Available</span></span>|
-|<span data-ttu-id="0fbb4-117">рекуирединсталл</span><span class="sxs-lookup"><span data-stu-id="0fbb4-117">requiredInstall</span></span>|<span data-ttu-id="0fbb4-118">2</span><span class="sxs-lookup"><span data-stu-id="0fbb4-118">2</span></span>|<span data-ttu-id="0fbb4-119">Обязательная установка</span><span class="sxs-lookup"><span data-stu-id="0fbb4-119">Required Install</span></span>|
-|<span data-ttu-id="0fbb4-120">рекуиредунинсталл</span><span class="sxs-lookup"><span data-stu-id="0fbb4-120">requiredUninstall</span></span>|<span data-ttu-id="0fbb4-121">4</span><span class="sxs-lookup"><span data-stu-id="0fbb4-121">3</span></span>|<span data-ttu-id="0fbb4-122">Обязательное удаление</span><span class="sxs-lookup"><span data-stu-id="0fbb4-122">Required Uninstall</span></span>|
-|<span data-ttu-id="0fbb4-123">рекуиредандаваилаблеинсталл</span><span class="sxs-lookup"><span data-stu-id="0fbb4-123">requiredAndAvailableInstall</span></span>|<span data-ttu-id="0fbb4-124">SP4</span><span class="sxs-lookup"><span data-stu-id="0fbb4-124">4</span></span>|<span data-ttu-id="0fbb4-125">рекуиредандаваилаблеинсталл</span><span class="sxs-lookup"><span data-stu-id="0fbb4-125">RequiredAndAvailableInstall</span></span>|
-|<span data-ttu-id="0fbb4-126">аваилаблеинсталлвисаутенроллмент</span><span class="sxs-lookup"><span data-stu-id="0fbb4-126">availableInstallWithoutEnrollment</span></span>|<span data-ttu-id="0fbb4-127">17:00</span><span class="sxs-lookup"><span data-stu-id="0fbb4-127">5</span></span>|<span data-ttu-id="0fbb4-128">аваилаблеинсталлвисаутенроллмент</span><span class="sxs-lookup"><span data-stu-id="0fbb4-128">AvailableInstallWithoutEnrollment</span></span>|
-|<span data-ttu-id="0fbb4-129">Отличающ</span><span class="sxs-lookup"><span data-stu-id="0fbb4-129">exclude</span></span>|<span data-ttu-id="0fbb4-130">6 </span><span class="sxs-lookup"><span data-stu-id="0fbb4-130">6</span></span>|<span data-ttu-id="0fbb4-131">Исключить</span><span class="sxs-lookup"><span data-stu-id="0fbb4-131">Exclude</span></span>|
+|<span data-ttu-id="c328a-112">доступен</span><span class="sxs-lookup"><span data-stu-id="c328a-112">available</span></span>|<span data-ttu-id="c328a-113">нуль</span><span class="sxs-lookup"><span data-stu-id="c328a-113">0</span></span>|<span data-ttu-id="c328a-114">Available</span><span class="sxs-lookup"><span data-stu-id="c328a-114">Available</span></span>|
+|<span data-ttu-id="c328a-115">нотаваилабле</span><span class="sxs-lookup"><span data-stu-id="c328a-115">notAvailable</span></span>|<span data-ttu-id="c328a-116">1 </span><span class="sxs-lookup"><span data-stu-id="c328a-116">1</span></span>|<span data-ttu-id="c328a-117">Компонент недоступен</span><span class="sxs-lookup"><span data-stu-id="c328a-117">Not Available</span></span>|
+|<span data-ttu-id="c328a-118">рекуирединсталл</span><span class="sxs-lookup"><span data-stu-id="c328a-118">requiredInstall</span></span>|<span data-ttu-id="c328a-119">2 </span><span class="sxs-lookup"><span data-stu-id="c328a-119">2</span></span>|<span data-ttu-id="c328a-120">Обязательная установка</span><span class="sxs-lookup"><span data-stu-id="c328a-120">Required Install</span></span>|
+|<span data-ttu-id="c328a-121">рекуиредунинсталл</span><span class="sxs-lookup"><span data-stu-id="c328a-121">requiredUninstall</span></span>|<span data-ttu-id="c328a-122">3 </span><span class="sxs-lookup"><span data-stu-id="c328a-122">3</span></span>|<span data-ttu-id="c328a-123">Обязательное удаление</span><span class="sxs-lookup"><span data-stu-id="c328a-123">Required Uninstall</span></span>|
+|<span data-ttu-id="c328a-124">рекуиредандаваилаблеинсталл</span><span class="sxs-lookup"><span data-stu-id="c328a-124">requiredAndAvailableInstall</span></span>|<span data-ttu-id="c328a-125">4 </span><span class="sxs-lookup"><span data-stu-id="c328a-125">4</span></span>|<span data-ttu-id="c328a-126">рекуиредандаваилаблеинсталл</span><span class="sxs-lookup"><span data-stu-id="c328a-126">RequiredAndAvailableInstall</span></span>|
+|<span data-ttu-id="c328a-127">аваилаблеинсталлвисаутенроллмент</span><span class="sxs-lookup"><span data-stu-id="c328a-127">availableInstallWithoutEnrollment</span></span>|<span data-ttu-id="c328a-128">5 </span><span class="sxs-lookup"><span data-stu-id="c328a-128">5</span></span>|<span data-ttu-id="c328a-129">аваилаблеинсталлвисаутенроллмент</span><span class="sxs-lookup"><span data-stu-id="c328a-129">AvailableInstallWithoutEnrollment</span></span>|
+|<span data-ttu-id="c328a-130">Отличающ</span><span class="sxs-lookup"><span data-stu-id="c328a-130">exclude</span></span>|<span data-ttu-id="c328a-131">6 </span><span class="sxs-lookup"><span data-stu-id="c328a-131">6</span></span>|<span data-ttu-id="c328a-132">Исключить</span><span class="sxs-lookup"><span data-stu-id="c328a-132">Exclude</span></span>|
 
 
 

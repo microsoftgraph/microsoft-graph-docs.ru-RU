@@ -6,28 +6,30 @@ author: JeremyKelley
 ms.date: 08/06/2019
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: d83a68bf555fa5cc239fb38b147d12754f223e13
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: 31629ee29bc91b3b2bae53e954743df17cde7d30
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333432"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521971"
 ---
-# <a name="pendingoperations-resource-type"></a><span data-ttu-id="34ed6-103">Тип ресурса Пендингоператионс</span><span class="sxs-lookup"><span data-stu-id="34ed6-103">pendingOperations resource type</span></span>
+# <a name="pendingoperations-resource-type"></a><span data-ttu-id="80c98-103">Тип ресурса Пендингоператионс</span><span class="sxs-lookup"><span data-stu-id="80c98-103">pendingOperations resource type</span></span>
+
+<span data-ttu-id="80c98-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="80c98-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="34ed6-104">Указывает, что одна или несколько операций, которые могут повлиять на состояние **driveItem** , ожидают завершения.</span><span class="sxs-lookup"><span data-stu-id="34ed6-104">Indicates that one or more operations that might affect the state of the **driveItem** are pending completion.</span></span>
+<span data-ttu-id="80c98-105">Указывает, что одна или несколько операций, которые могут повлиять на состояние **driveItem** , ожидают завершения.</span><span class="sxs-lookup"><span data-stu-id="80c98-105">Indicates that one or more operations that might affect the state of the **driveItem** are pending completion.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="34ed6-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="34ed6-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="80c98-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="80c98-106">Properties</span></span>
 
-| <span data-ttu-id="34ed6-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="34ed6-106">Property</span></span>     | <span data-ttu-id="34ed6-107">Тип</span><span class="sxs-lookup"><span data-stu-id="34ed6-107">Type</span></span>        | <span data-ttu-id="34ed6-108">Описание</span><span class="sxs-lookup"><span data-stu-id="34ed6-108">Description</span></span> |
+| <span data-ttu-id="80c98-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="80c98-107">Property</span></span>     | <span data-ttu-id="80c98-108">Тип</span><span class="sxs-lookup"><span data-stu-id="80c98-108">Type</span></span>        | <span data-ttu-id="80c98-109">Описание</span><span class="sxs-lookup"><span data-stu-id="80c98-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="34ed6-109">пендингконтентупдате</span><span class="sxs-lookup"><span data-stu-id="34ed6-109">pendingContentUpdate</span></span>|[<span data-ttu-id="34ed6-110">пендингконтентупдате</span><span class="sxs-lookup"><span data-stu-id="34ed6-110">pendingContentUpdate</span></span>](pendingcontentupdate.md)|<span data-ttu-id="34ed6-111">Свойство, указывающее на то, что операция, которая может обновить двоичный контент файла, ожидает завершения.</span><span class="sxs-lookup"><span data-stu-id="34ed6-111">A property that indicates that an operation that might update the binary content of a file is pending completion.</span></span>|
+|<span data-ttu-id="80c98-110">пендингконтентупдате</span><span class="sxs-lookup"><span data-stu-id="80c98-110">pendingContentUpdate</span></span>|[<span data-ttu-id="80c98-111">пендингконтентупдате</span><span class="sxs-lookup"><span data-stu-id="80c98-111">pendingContentUpdate</span></span>](pendingcontentupdate.md)|<span data-ttu-id="80c98-112">Свойство, указывающее на то, что операция, которая может обновить двоичный контент файла, ожидает завершения.</span><span class="sxs-lookup"><span data-stu-id="80c98-112">A property that indicates that an operation that might update the binary content of a file is pending completion.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="34ed6-112">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="34ed6-112">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="80c98-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="80c98-113">JSON representation</span></span>
 
-<span data-ttu-id="34ed6-113">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="34ed6-113">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="80c98-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="80c98-114">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
