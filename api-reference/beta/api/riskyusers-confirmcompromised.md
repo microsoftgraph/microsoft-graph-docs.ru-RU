@@ -6,53 +6,55 @@ localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.date: 03/20/2019
 doc_type: apiPageType
-ms.openlocfilehash: 62cad8b9cdad952c5233a6f9ffedd3a16ad6b832
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 1e234ecb92084bc0c180b4b069cfa7f7ce38629a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410866"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453886"
 ---
-# <a name="riskyuser-confirmcompromised"></a><span data-ttu-id="9c673-103">Рискюсер: Конфирмкомпромисед</span><span class="sxs-lookup"><span data-stu-id="9c673-103">riskyUser: confirmCompromised</span></span>
+# <a name="riskyuser-confirmcompromised"></a><span data-ttu-id="db85d-103">Рискюсер: Конфирмкомпромисед</span><span class="sxs-lookup"><span data-stu-id="db85d-103">riskyUser: confirmCompromised</span></span>
+
+<span data-ttu-id="db85d-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="db85d-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-><span data-ttu-id="9c673-104">**Примечание:** Для API riskyUsers требуется лицензия Azure AD Premium P2.</span><span class="sxs-lookup"><span data-stu-id="9c673-104">**Note:** The riskyUsers API requires an Azure AD Premium P2 license.</span></span>
+><span data-ttu-id="db85d-105">**Примечание:** Для API riskyUsers требуется лицензия Azure AD Premium P2.</span><span class="sxs-lookup"><span data-stu-id="db85d-105">**Note:** The riskyUsers API requires an Azure AD Premium P2 license.</span></span>
 
-<span data-ttu-id="9c673-105">Подтвердите, что один или несколько объектов [рискюсер](../resources/riskyuser.md) считаются скомпрометированными.</span><span class="sxs-lookup"><span data-stu-id="9c673-105">Confirm one or more [riskyUser](../resources/riskyuser.md) objects as compromised.</span></span> <span data-ttu-id="9c673-106">Это действие устанавливает высокий уровень риска для целевого пользователя.</span><span class="sxs-lookup"><span data-stu-id="9c673-106">This action sets the targeted user's risk level to high.</span></span>
+<span data-ttu-id="db85d-106">Подтвердите, что один или несколько объектов [рискюсер](../resources/riskyuser.md) считаются скомпрометированными.</span><span class="sxs-lookup"><span data-stu-id="db85d-106">Confirm one or more [riskyUser](../resources/riskyuser.md) objects as compromised.</span></span> <span data-ttu-id="db85d-107">Это действие устанавливает высокий уровень риска для целевого пользователя.</span><span class="sxs-lookup"><span data-stu-id="db85d-107">This action sets the targeted user's risk level to high.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9c673-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="9c673-107">Permissions</span></span>
-<span data-ttu-id="9c673-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9c673-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="db85d-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="db85d-108">Permissions</span></span>
+<span data-ttu-id="db85d-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="db85d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9c673-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9c673-110">Permission type</span></span>      | <span data-ttu-id="9c673-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="9c673-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="db85d-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="db85d-111">Permission type</span></span>      | <span data-ttu-id="db85d-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="db85d-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9c673-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9c673-112">Delegated (work or school account)</span></span> | <span data-ttu-id="9c673-113">Идентитирискюсер. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="9c673-113">IdentityRiskyUser.ReadWrite.All</span></span>    |
-|<span data-ttu-id="9c673-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9c673-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9c673-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9c673-115">Not supported.</span></span>    |
-|<span data-ttu-id="9c673-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9c673-116">Application</span></span> | <span data-ttu-id="9c673-117">Идентитирискюсер. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="9c673-117">IdentityRiskyUser.ReadWrite.All</span></span> |
+|<span data-ttu-id="db85d-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="db85d-113">Delegated (work or school account)</span></span> | <span data-ttu-id="db85d-114">IdentityRiskyUser.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="db85d-114">IdentityRiskyUser.ReadWrite.All</span></span>    |
+|<span data-ttu-id="db85d-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="db85d-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="db85d-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="db85d-116">Not supported.</span></span>    |
+|<span data-ttu-id="db85d-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="db85d-117">Application</span></span> | <span data-ttu-id="db85d-118">IdentityRiskyUser.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="db85d-118">IdentityRiskyUser.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9c673-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9c673-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="db85d-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="db85d-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /riskyUsers/confirmCompromised
 ```
 
 
-## <a name="request-headers"></a><span data-ttu-id="9c673-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9c673-119">Request headers</span></span>
-| <span data-ttu-id="9c673-120">Имя</span><span class="sxs-lookup"><span data-stu-id="9c673-120">Name</span></span>      |<span data-ttu-id="9c673-121">Описание</span><span class="sxs-lookup"><span data-stu-id="9c673-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="db85d-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="db85d-120">Request headers</span></span>
+| <span data-ttu-id="db85d-121">Имя</span><span class="sxs-lookup"><span data-stu-id="db85d-121">Name</span></span>      |<span data-ttu-id="db85d-122">Описание</span><span class="sxs-lookup"><span data-stu-id="db85d-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="9c673-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="9c673-122">Authorization</span></span>  | <span data-ttu-id="9c673-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9c673-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="db85d-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="db85d-123">Authorization</span></span>  | <span data-ttu-id="db85d-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="db85d-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="9c673-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="9c673-125">Request body</span></span>
-<span data-ttu-id="9c673-126">Укажите рискованные идентификаторы пользователей, которые нужно отклонить в теле запроса.</span><span class="sxs-lookup"><span data-stu-id="9c673-126">Specify the risky user IDs to dismiss in the request body.</span></span>
+## <a name="request-body"></a><span data-ttu-id="db85d-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="db85d-126">Request body</span></span>
+<span data-ttu-id="db85d-127">Укажите рискованные идентификаторы пользователей, которые нужно отклонить в теле запроса.</span><span class="sxs-lookup"><span data-stu-id="db85d-127">Specify the risky user IDs to dismiss in the request body.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9c673-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="9c673-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="db85d-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="db85d-128">Response</span></span>
 
-<span data-ttu-id="9c673-p104">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="9c673-p104">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="9c673-130">Пример</span><span class="sxs-lookup"><span data-stu-id="9c673-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="9c673-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="9c673-131">Request</span></span>
-<span data-ttu-id="9c673-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9c673-132">Here is an example of the request.</span></span>
+<span data-ttu-id="db85d-p104">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="db85d-p104">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="db85d-131">Пример</span><span class="sxs-lookup"><span data-stu-id="db85d-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="db85d-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="db85d-132">Request</span></span>
+<span data-ttu-id="db85d-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="db85d-133">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="9c673-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="9c673-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="db85d-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="db85d-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "confirm_riskyuser"
@@ -68,22 +70,22 @@ Content-type: application/json
   ]
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="9c673-134">C#</span><span class="sxs-lookup"><span data-stu-id="9c673-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="db85d-135">C#</span><span class="sxs-lookup"><span data-stu-id="db85d-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/confirm-riskyuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9c673-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9c673-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="db85d-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="db85d-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/confirm-riskyuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="9c673-136">Цель — C</span><span class="sxs-lookup"><span data-stu-id="9c673-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="db85d-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="db85d-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/confirm-riskyuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="9c673-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="9c673-137">Response</span></span>
-<span data-ttu-id="9c673-138">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="9c673-138">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="db85d-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="db85d-138">Response</span></span>
+<span data-ttu-id="db85d-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="db85d-139">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

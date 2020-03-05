@@ -5,30 +5,32 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: 05eb1ecbc8ceb8474cdc1af3d7dabcb6a75aa44a
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 5d1488051a423d044c5cc203e8c8421d485ef232
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36725362"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42454544"
 ---
-# <a name="reportroot-getcredentialusagesummary"></a><span data-ttu-id="bb195-103">Reportroot.: Жеткредентиалусажесуммари</span><span class="sxs-lookup"><span data-stu-id="bb195-103">reportRoot: getCredentialUsageSummary</span></span>
+# <a name="reportroot-getcredentialusagesummary"></a><span data-ttu-id="ba5e0-103">Reportroot.: Жеткредентиалусажесуммари</span><span class="sxs-lookup"><span data-stu-id="ba5e0-103">reportRoot: getCredentialUsageSummary</span></span>
+
+<span data-ttu-id="ba5e0-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="ba5e0-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="bb195-104">Сообщите о текущем состоянии того, сколько пользователей в вашей организации использовало возможности самостоятельного сброса пароля.</span><span class="sxs-lookup"><span data-stu-id="bb195-104">Report the current state of how many users in your organization used the self-service password reset capabilities.</span></span>
+<span data-ttu-id="ba5e0-105">Сообщите о текущем состоянии того, сколько пользователей в вашей организации использовало возможности самостоятельного сброса пароля.</span><span class="sxs-lookup"><span data-stu-id="ba5e0-105">Report the current state of how many users in your organization used the self-service password reset capabilities.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="bb195-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="bb195-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ba5e0-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ba5e0-106">Permissions</span></span>
 
-<span data-ttu-id="bb195-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bb195-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ba5e0-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ba5e0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="bb195-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="bb195-108">Permission type</span></span>                        | <span data-ttu-id="bb195-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="bb195-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="ba5e0-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ba5e0-109">Permission type</span></span>                        | <span data-ttu-id="ba5e0-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ba5e0-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="bb195-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="bb195-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="bb195-111">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="bb195-111">Reports.Read.All</span></span> |
-| <span data-ttu-id="bb195-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="bb195-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bb195-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bb195-113">Not supported.</span></span> |
-| <span data-ttu-id="bb195-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="bb195-114">Application</span></span>                            | <span data-ttu-id="bb195-115">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="bb195-115">Reports.Read.All</span></span> |
+| <span data-ttu-id="ba5e0-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ba5e0-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="ba5e0-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="ba5e0-112">Reports.Read.All</span></span> |
+| <span data-ttu-id="ba5e0-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ba5e0-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ba5e0-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ba5e0-114">Not supported.</span></span> |
+| <span data-ttu-id="ba5e0-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ba5e0-115">Application</span></span>                            | <span data-ttu-id="ba5e0-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="ba5e0-116">Reports.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="bb195-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="bb195-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ba5e0-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ba5e0-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,46 +38,46 @@ ms.locfileid: "36725362"
 GET /reports/getCredentialUsageSummary
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="bb195-117">Параметры функции</span><span class="sxs-lookup"><span data-stu-id="bb195-117">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="ba5e0-118">Параметры функции</span><span class="sxs-lookup"><span data-stu-id="ba5e0-118">Function parameters</span></span>
 
-<span data-ttu-id="bb195-118">Для настройки отклика можно использовать следующий параметр функции.</span><span class="sxs-lookup"><span data-stu-id="bb195-118">You can use the following function parameter to adjust the response.</span></span>
+<span data-ttu-id="ba5e0-119">Для настройки отклика можно использовать следующий параметр функции.</span><span class="sxs-lookup"><span data-stu-id="ba5e0-119">You can use the following function parameter to adjust the response.</span></span>
 
-| <span data-ttu-id="bb195-119">Параметр</span><span class="sxs-lookup"><span data-stu-id="bb195-119">Parameter</span></span> | <span data-ttu-id="bb195-120">Тип</span><span class="sxs-lookup"><span data-stu-id="bb195-120">Type</span></span> | <span data-ttu-id="bb195-121">Описание</span><span class="sxs-lookup"><span data-stu-id="bb195-121">Description</span></span> |
+| <span data-ttu-id="ba5e0-120">Параметр</span><span class="sxs-lookup"><span data-stu-id="ba5e0-120">Parameter</span></span> | <span data-ttu-id="ba5e0-121">Тип</span><span class="sxs-lookup"><span data-stu-id="ba5e0-121">Type</span></span> | <span data-ttu-id="ba5e0-122">Описание</span><span class="sxs-lookup"><span data-stu-id="ba5e0-122">Description</span></span> |
 |:--------- |:---- |:----------- |
-| <span data-ttu-id="bb195-122">period</span><span class="sxs-lookup"><span data-stu-id="bb195-122">period</span></span> | <span data-ttu-id="bb195-123">String.</span><span class="sxs-lookup"><span data-stu-id="bb195-123">String</span></span> | <span data-ttu-id="bb195-124">Задает период времени, для которого требуются данные об использовании.</span><span class="sxs-lookup"><span data-stu-id="bb195-124">Specifies the time period for which you need the usage data.</span></span> <span data-ttu-id="bb195-125">Пример: `/reports/getCredentialUsageSummary(period='D30')`.</span><span class="sxs-lookup"><span data-stu-id="bb195-125">For example: `/reports/getCredentialUsageSummary(period='D30')`.</span></span> <span data-ttu-id="bb195-126">Поддерживаемые периоды: `D1`, `D7`, и `D30`.</span><span class="sxs-lookup"><span data-stu-id="bb195-126">Supported periods: `D1`, `D7`, and `D30`.</span></span> <span data-ttu-id="bb195-127">В периоде регистр не учитывается.</span><span class="sxs-lookup"><span data-stu-id="bb195-127">Period is case insensitive.</span></span> |
+| <span data-ttu-id="ba5e0-123">period</span><span class="sxs-lookup"><span data-stu-id="ba5e0-123">period</span></span> | <span data-ttu-id="ba5e0-124">String</span><span class="sxs-lookup"><span data-stu-id="ba5e0-124">String</span></span> | <span data-ttu-id="ba5e0-125">Задает период времени, для которого требуются данные об использовании.</span><span class="sxs-lookup"><span data-stu-id="ba5e0-125">Specifies the time period for which you need the usage data.</span></span> <span data-ttu-id="ba5e0-126">Пример: `/reports/getCredentialUsageSummary(period='D30')`.</span><span class="sxs-lookup"><span data-stu-id="ba5e0-126">For example: `/reports/getCredentialUsageSummary(period='D30')`.</span></span> <span data-ttu-id="ba5e0-127">Поддерживаемые периоды: `D1`, `D7`, и `D30`.</span><span class="sxs-lookup"><span data-stu-id="ba5e0-127">Supported periods: `D1`, `D7`, and `D30`.</span></span> <span data-ttu-id="ba5e0-128">В периоде регистр не учитывается.</span><span class="sxs-lookup"><span data-stu-id="ba5e0-128">Period is case insensitive.</span></span> |
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="bb195-128">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="bb195-128">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="ba5e0-129">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="ba5e0-129">Optional query parameters</span></span>
 
-<span data-ttu-id="bb195-129">Эта функция поддерживает необязательный параметр запроса OData **$Filter**.</span><span class="sxs-lookup"><span data-stu-id="bb195-129">This function supports the optional OData query parameter **$filter**.</span></span> <span data-ttu-id="bb195-130">**$Filter** можно применить к одному или нескольким из следующих свойств ресурса [кредентиалусажесуммари](../resources/credentialusagesummary.md) .</span><span class="sxs-lookup"><span data-stu-id="bb195-130">You can apply **$filter** on one or more of the following properties of the [credentialUsageSummary](../resources/credentialusagesummary.md) resource.</span></span>
+<span data-ttu-id="ba5e0-130">Эта функция поддерживает необязательный параметр запроса OData **$Filter**.</span><span class="sxs-lookup"><span data-stu-id="ba5e0-130">This function supports the optional OData query parameter **$filter**.</span></span> <span data-ttu-id="ba5e0-131">**$Filter** можно применить к одному или нескольким из следующих свойств ресурса [кредентиалусажесуммари](../resources/credentialusagesummary.md) .</span><span class="sxs-lookup"><span data-stu-id="ba5e0-131">You can apply **$filter** on one or more of the following properties of the [credentialUsageSummary](../resources/credentialusagesummary.md) resource.</span></span>
 
-| <span data-ttu-id="bb195-131">Свойства</span><span class="sxs-lookup"><span data-stu-id="bb195-131">Properties</span></span> | <span data-ttu-id="bb195-132">Описание и пример</span><span class="sxs-lookup"><span data-stu-id="bb195-132">Description and example</span></span> |
+| <span data-ttu-id="ba5e0-132">Свойства</span><span class="sxs-lookup"><span data-stu-id="ba5e0-132">Properties</span></span> | <span data-ttu-id="ba5e0-133">Описание и пример</span><span class="sxs-lookup"><span data-stu-id="ba5e0-133">Description and example</span></span> |
 |:---- |:----------- |
-| <span data-ttu-id="bb195-133">состав</span><span class="sxs-lookup"><span data-stu-id="bb195-133">feature</span></span> | <span data-ttu-id="bb195-134">Задает тип данных об использовании (регистрация и сброс).</span><span class="sxs-lookup"><span data-stu-id="bb195-134">Specifies the type of usage data you want (registration vs. reset).</span></span> <span data-ttu-id="bb195-135">Пример: `/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'`.</span><span class="sxs-lookup"><span data-stu-id="bb195-135">For example: `/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'`.</span></span> <span data-ttu-id="bb195-136">Поддерживаемые операторы фильтра: `eq`.</span><span class="sxs-lookup"><span data-stu-id="bb195-136">Supported filter operators: `eq`.</span></span> |
+| <span data-ttu-id="ba5e0-134">состав</span><span class="sxs-lookup"><span data-stu-id="ba5e0-134">feature</span></span> | <span data-ttu-id="ba5e0-135">Задает тип данных об использовании (регистрация и сброс).</span><span class="sxs-lookup"><span data-stu-id="ba5e0-135">Specifies the type of usage data you want (registration vs. reset).</span></span> <span data-ttu-id="ba5e0-136">Пример: `/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'`.</span><span class="sxs-lookup"><span data-stu-id="ba5e0-136">For example: `/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'`.</span></span> <span data-ttu-id="ba5e0-137">Поддерживаемые операторы фильтра: `eq`.</span><span class="sxs-lookup"><span data-stu-id="ba5e0-137">Supported filter operators: `eq`.</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="bb195-137">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="bb195-137">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ba5e0-138">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ba5e0-138">Request headers</span></span>
 
-| <span data-ttu-id="bb195-138">Имя</span><span class="sxs-lookup"><span data-stu-id="bb195-138">Name</span></span>          | <span data-ttu-id="bb195-139">Описание</span><span class="sxs-lookup"><span data-stu-id="bb195-139">Description</span></span>   |
+| <span data-ttu-id="ba5e0-139">Имя</span><span class="sxs-lookup"><span data-stu-id="ba5e0-139">Name</span></span>          | <span data-ttu-id="ba5e0-140">Описание</span><span class="sxs-lookup"><span data-stu-id="ba5e0-140">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="bb195-140">Авторизация</span><span class="sxs-lookup"><span data-stu-id="bb195-140">Authorization</span></span> | <span data-ttu-id="bb195-141">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="bb195-141">Bearer {token}</span></span> |
-| <span data-ttu-id="bb195-142">Content-Type</span><span class="sxs-lookup"><span data-stu-id="bb195-142">Content-Type</span></span> | <span data-ttu-id="bb195-143">application/json</span><span class="sxs-lookup"><span data-stu-id="bb195-143">application/json</span></span> |
+| <span data-ttu-id="ba5e0-141">Authorization</span><span class="sxs-lookup"><span data-stu-id="ba5e0-141">Authorization</span></span> | <span data-ttu-id="ba5e0-142">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="ba5e0-142">Bearer {token}</span></span> |
+| <span data-ttu-id="ba5e0-143">Content-Type</span><span class="sxs-lookup"><span data-stu-id="ba5e0-143">Content-Type</span></span> | <span data-ttu-id="ba5e0-144">application/json</span><span class="sxs-lookup"><span data-stu-id="ba5e0-144">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="bb195-144">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="bb195-144">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="ba5e0-145">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ba5e0-145">Request body</span></span>
 
-<span data-ttu-id="bb195-145">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="bb195-145">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="ba5e0-146">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="ba5e0-146">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="bb195-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="bb195-146">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ba5e0-147">Ответ</span><span class="sxs-lookup"><span data-stu-id="ba5e0-147">Response</span></span>
 
-<span data-ttu-id="bb195-147">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект коллекции [кредентиалусажесуммари](../resources/credentialusagesummary.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="bb195-147">If successful, this method returns a `200 OK` response code and a new [credentialUsageSummary](../resources/credentialusagesummary.md) collection object in the response body.</span></span>
+<span data-ttu-id="ba5e0-148">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект коллекции [кредентиалусажесуммари](../resources/credentialusagesummary.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="ba5e0-148">If successful, this method returns a `200 OK` response code and a new [credentialUsageSummary](../resources/credentialusagesummary.md) collection object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="bb195-148">Примеры</span><span class="sxs-lookup"><span data-stu-id="bb195-148">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="ba5e0-149">Примеры</span><span class="sxs-lookup"><span data-stu-id="ba5e0-149">Examples</span></span>
 
-<span data-ttu-id="bb195-149">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="bb195-149">The following example shows how to call this API.</span></span>
+<span data-ttu-id="ba5e0-150">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="ba5e0-150">The following example shows how to call this API.</span></span>
 
-### <a name="request"></a><span data-ttu-id="bb195-150">Запрос</span><span class="sxs-lookup"><span data-stu-id="bb195-150">Request</span></span>
+### <a name="request"></a><span data-ttu-id="ba5e0-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="ba5e0-151">Request</span></span>
 
-<span data-ttu-id="bb195-151">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="bb195-151">The following is an example of the request.</span></span>
+<span data-ttu-id="ba5e0-152">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ba5e0-152">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="bb195-152">HTTP</span><span class="sxs-lookup"><span data-stu-id="bb195-152">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ba5e0-153">HTTP</span><span class="sxs-lookup"><span data-stu-id="ba5e0-153">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportroot_getcredentialusagesummary"
@@ -84,26 +86,26 @@ GET /reports/getCredentialUsageSummary
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getCredentialUsageSummary(period='D30')?$filter=feature eq 'registration'
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="bb195-153">C#</span><span class="sxs-lookup"><span data-stu-id="bb195-153">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ba5e0-154">C#</span><span class="sxs-lookup"><span data-stu-id="ba5e0-154">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getcredentialusagesummary-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="bb195-154">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bb195-154">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ba5e0-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ba5e0-155">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getcredentialusagesummary-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="bb195-155">Цель — C</span><span class="sxs-lookup"><span data-stu-id="bb195-155">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ba5e0-156">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ba5e0-156">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getcredentialusagesummary-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="bb195-156">Отклик</span><span class="sxs-lookup"><span data-stu-id="bb195-156">Response</span></span>
+### <a name="response"></a><span data-ttu-id="ba5e0-157">Отклик</span><span class="sxs-lookup"><span data-stu-id="ba5e0-157">Response</span></span>
 
-<span data-ttu-id="bb195-157">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="bb195-157">The following is an example of the response.</span></span>
+<span data-ttu-id="ba5e0-158">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="ba5e0-158">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="bb195-158">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="bb195-158">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="bb195-159">Все свойства возвращаются при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="bb195-159">All the properties are returned from an actual call.</span></span>
+> <span data-ttu-id="ba5e0-159">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="ba5e0-159">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="ba5e0-160">Все свойства возвращаются при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="ba5e0-160">All the properties are returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

@@ -5,62 +5,64 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: d8160074fdf8f034ccf2c5b6836a066c44173034
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: ec30559cf24edc5ba8e35077cd8af868aacc42ca
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412833"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455412"
 ---
-# <a name="update-privilegedapproval"></a><span data-ttu-id="44cfc-103">Обновление привилежедаппровал</span><span class="sxs-lookup"><span data-stu-id="44cfc-103">Update privilegedapproval</span></span>
+# <a name="update-privilegedapproval"></a><span data-ttu-id="9546f-103">Обновление привилежедаппровал</span><span class="sxs-lookup"><span data-stu-id="9546f-103">Update privilegedapproval</span></span>
+
+<span data-ttu-id="9546f-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="9546f-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="44cfc-104">Обновление свойств объекта привилежедаппровал.</span><span class="sxs-lookup"><span data-stu-id="44cfc-104">Update the properties of privilegedapproval object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="44cfc-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="44cfc-105">Permissions</span></span>
-<span data-ttu-id="44cfc-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="44cfc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9546f-105">Обновление свойств объекта привилежедаппровал.</span><span class="sxs-lookup"><span data-stu-id="9546f-105">Update the properties of privilegedapproval object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="9546f-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="9546f-106">Permissions</span></span>
+<span data-ttu-id="9546f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9546f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="44cfc-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="44cfc-108">Permission type</span></span>      | <span data-ttu-id="44cfc-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="44cfc-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9546f-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9546f-109">Permission type</span></span>      | <span data-ttu-id="9546f-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="9546f-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="44cfc-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="44cfc-110">Delegated (work or school account)</span></span> | <span data-ttu-id="44cfc-111">Привилежедакцесс. ReadWrite. AzureAD, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="44cfc-111">PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="44cfc-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="44cfc-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="44cfc-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="44cfc-113">Not supported.</span></span>    |
-|<span data-ttu-id="44cfc-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="44cfc-114">Application</span></span> | <span data-ttu-id="44cfc-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="44cfc-115">Not supported.</span></span> |
+|<span data-ttu-id="9546f-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9546f-111">Delegated (work or school account)</span></span> | <span data-ttu-id="9546f-112">Привилежедакцесс. ReadWrite. AzureAD, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="9546f-112">PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="9546f-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9546f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9546f-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9546f-114">Not supported.</span></span>    |
+|<span data-ttu-id="9546f-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9546f-115">Application</span></span> | <span data-ttu-id="9546f-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9546f-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="44cfc-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="44cfc-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9546f-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9546f-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /privilegedApproval/{id}
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="44cfc-117">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="44cfc-117">Optional request headers</span></span>
-| <span data-ttu-id="44cfc-118">Имя</span><span class="sxs-lookup"><span data-stu-id="44cfc-118">Name</span></span>       | <span data-ttu-id="44cfc-119">Описание</span><span class="sxs-lookup"><span data-stu-id="44cfc-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="9546f-118">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9546f-118">Optional request headers</span></span>
+| <span data-ttu-id="9546f-119">Имя</span><span class="sxs-lookup"><span data-stu-id="9546f-119">Name</span></span>       | <span data-ttu-id="9546f-120">Описание</span><span class="sxs-lookup"><span data-stu-id="9546f-120">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="44cfc-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="44cfc-120">Authorization</span></span>  | <span data-ttu-id="44cfc-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="44cfc-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="9546f-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="9546f-121">Authorization</span></span>  | <span data-ttu-id="9546f-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9546f-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="44cfc-123">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="44cfc-123">Request body</span></span>
-<span data-ttu-id="44cfc-p103">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="44cfc-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9546f-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="9546f-124">Request body</span></span>
+<span data-ttu-id="9546f-p103">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="9546f-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="44cfc-127">Свойство</span><span class="sxs-lookup"><span data-stu-id="44cfc-127">Property</span></span>     | <span data-ttu-id="44cfc-128">Тип</span><span class="sxs-lookup"><span data-stu-id="44cfc-128">Type</span></span>   |<span data-ttu-id="44cfc-129">Описание</span><span class="sxs-lookup"><span data-stu-id="44cfc-129">Description</span></span>|
+| <span data-ttu-id="9546f-128">Свойство</span><span class="sxs-lookup"><span data-stu-id="9546f-128">Property</span></span>     | <span data-ttu-id="9546f-129">Тип</span><span class="sxs-lookup"><span data-stu-id="9546f-129">Type</span></span>   |<span data-ttu-id="9546f-130">Описание</span><span class="sxs-lookup"><span data-stu-id="9546f-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="44cfc-130">аппровалдуратион</span><span class="sxs-lookup"><span data-stu-id="44cfc-130">approvalDuration</span></span>|<span data-ttu-id="44cfc-131">Duration (Длительность)</span><span class="sxs-lookup"><span data-stu-id="44cfc-131">Duration</span></span>||
-|<span data-ttu-id="44cfc-132">аппровалстате</span><span class="sxs-lookup"><span data-stu-id="44cfc-132">approvalState</span></span>|<span data-ttu-id="44cfc-133">string</span><span class="sxs-lookup"><span data-stu-id="44cfc-133">string</span></span>| <span data-ttu-id="44cfc-134">Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.</span><span class="sxs-lookup"><span data-stu-id="44cfc-134">Possible values are: `pending`, `approved`, `denied`, `aborted`, `canceled`.</span></span>|
-|<span data-ttu-id="44cfc-135">аппровалтипе</span><span class="sxs-lookup"><span data-stu-id="44cfc-135">approvalType</span></span>|<span data-ttu-id="44cfc-136">String</span><span class="sxs-lookup"><span data-stu-id="44cfc-136">String</span></span>||
-|<span data-ttu-id="44cfc-137">аппроверреасон</span><span class="sxs-lookup"><span data-stu-id="44cfc-137">approverReason</span></span>|<span data-ttu-id="44cfc-138">String</span><span class="sxs-lookup"><span data-stu-id="44cfc-138">String</span></span>||
-|<span data-ttu-id="44cfc-139">endDateTime</span><span class="sxs-lookup"><span data-stu-id="44cfc-139">endDateTime</span></span>|<span data-ttu-id="44cfc-140">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="44cfc-140">DateTimeOffset</span></span>||
-|<span data-ttu-id="44cfc-141">рекуесторреасон</span><span class="sxs-lookup"><span data-stu-id="44cfc-141">requestorReason</span></span>|<span data-ttu-id="44cfc-142">String</span><span class="sxs-lookup"><span data-stu-id="44cfc-142">String</span></span>||
-|<span data-ttu-id="44cfc-143">roleId</span><span class="sxs-lookup"><span data-stu-id="44cfc-143">roleId</span></span>|<span data-ttu-id="44cfc-144">String</span><span class="sxs-lookup"><span data-stu-id="44cfc-144">String</span></span>||
-|<span data-ttu-id="44cfc-145">startDateTime</span><span class="sxs-lookup"><span data-stu-id="44cfc-145">startDateTime</span></span>|<span data-ttu-id="44cfc-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="44cfc-146">DateTimeOffset</span></span>||
-|<span data-ttu-id="44cfc-147">userId</span><span class="sxs-lookup"><span data-stu-id="44cfc-147">userId</span></span>|<span data-ttu-id="44cfc-148">String</span><span class="sxs-lookup"><span data-stu-id="44cfc-148">String</span></span>||
+|<span data-ttu-id="9546f-131">аппровалдуратион</span><span class="sxs-lookup"><span data-stu-id="9546f-131">approvalDuration</span></span>|<span data-ttu-id="9546f-132">Длительность</span><span class="sxs-lookup"><span data-stu-id="9546f-132">Duration</span></span>||
+|<span data-ttu-id="9546f-133">аппровалстате</span><span class="sxs-lookup"><span data-stu-id="9546f-133">approvalState</span></span>|<span data-ttu-id="9546f-134">строка</span><span class="sxs-lookup"><span data-stu-id="9546f-134">string</span></span>| <span data-ttu-id="9546f-135">Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.</span><span class="sxs-lookup"><span data-stu-id="9546f-135">Possible values are: `pending`, `approved`, `denied`, `aborted`, `canceled`.</span></span>|
+|<span data-ttu-id="9546f-136">аппровалтипе</span><span class="sxs-lookup"><span data-stu-id="9546f-136">approvalType</span></span>|<span data-ttu-id="9546f-137">String</span><span class="sxs-lookup"><span data-stu-id="9546f-137">String</span></span>||
+|<span data-ttu-id="9546f-138">аппроверреасон</span><span class="sxs-lookup"><span data-stu-id="9546f-138">approverReason</span></span>|<span data-ttu-id="9546f-139">String</span><span class="sxs-lookup"><span data-stu-id="9546f-139">String</span></span>||
+|<span data-ttu-id="9546f-140">endDateTime</span><span class="sxs-lookup"><span data-stu-id="9546f-140">endDateTime</span></span>|<span data-ttu-id="9546f-141">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9546f-141">DateTimeOffset</span></span>||
+|<span data-ttu-id="9546f-142">рекуесторреасон</span><span class="sxs-lookup"><span data-stu-id="9546f-142">requestorReason</span></span>|<span data-ttu-id="9546f-143">String</span><span class="sxs-lookup"><span data-stu-id="9546f-143">String</span></span>||
+|<span data-ttu-id="9546f-144">roleId</span><span class="sxs-lookup"><span data-stu-id="9546f-144">roleId</span></span>|<span data-ttu-id="9546f-145">String</span><span class="sxs-lookup"><span data-stu-id="9546f-145">String</span></span>||
+|<span data-ttu-id="9546f-146">startDateTime</span><span class="sxs-lookup"><span data-stu-id="9546f-146">startDateTime</span></span>|<span data-ttu-id="9546f-147">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="9546f-147">DateTimeOffset</span></span>||
+|<span data-ttu-id="9546f-148">userId</span><span class="sxs-lookup"><span data-stu-id="9546f-148">userId</span></span>|<span data-ttu-id="9546f-149">String</span><span class="sxs-lookup"><span data-stu-id="9546f-149">String</span></span>||
 
-## <a name="response"></a><span data-ttu-id="44cfc-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="44cfc-149">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9546f-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="9546f-150">Response</span></span>
 
-<span data-ttu-id="44cfc-150">В случае успеха этот метод возвращает код `204 No Content` отклика</span><span class="sxs-lookup"><span data-stu-id="44cfc-150">If successful, this method returns a `204 No Content` response code</span></span>
+<span data-ttu-id="9546f-151">В случае успеха этот метод возвращает код `204 No Content` отклика</span><span class="sxs-lookup"><span data-stu-id="9546f-151">If successful, this method returns a `204 No Content` response code</span></span>
 
-<span data-ttu-id="44cfc-151">Обратите внимание, что клиент должен быть зарегистрирован в PIM.</span><span class="sxs-lookup"><span data-stu-id="44cfc-151">Note that the tenant needs to be registered to PIM.</span></span> <span data-ttu-id="44cfc-152">В противном случае будет возвращен код состояния HTTP 403 запрещено.</span><span class="sxs-lookup"><span data-stu-id="44cfc-152">Otherwise, the HTTP 403 Forbidden status code will be returned.</span></span>
+<span data-ttu-id="9546f-152">Обратите внимание, что клиент должен быть зарегистрирован в PIM.</span><span class="sxs-lookup"><span data-stu-id="9546f-152">Note that the tenant needs to be registered to PIM.</span></span> <span data-ttu-id="9546f-153">В противном случае будет возвращен код состояния HTTP 403 запрещено.</span><span class="sxs-lookup"><span data-stu-id="9546f-153">Otherwise, the HTTP 403 Forbidden status code will be returned.</span></span>
 
-## <a name="example"></a><span data-ttu-id="44cfc-153">Пример</span><span class="sxs-lookup"><span data-stu-id="44cfc-153">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="44cfc-154">Запрос</span><span class="sxs-lookup"><span data-stu-id="44cfc-154">Request</span></span>
-<span data-ttu-id="44cfc-155">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="44cfc-155">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="9546f-154">Пример</span><span class="sxs-lookup"><span data-stu-id="9546f-154">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="9546f-155">Запрос</span><span class="sxs-lookup"><span data-stu-id="9546f-155">Request</span></span>
+<span data-ttu-id="9546f-156">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9546f-156">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_privilegedapproval"
@@ -75,8 +77,8 @@ Content-length: 180
   "approverReason": "approverReason-value"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="44cfc-156">Отклик</span><span class="sxs-lookup"><span data-stu-id="44cfc-156">Response</span></span>
-<span data-ttu-id="44cfc-p105">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="44cfc-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="9546f-157">Отклик</span><span class="sxs-lookup"><span data-stu-id="9546f-157">Response</span></span>
+<span data-ttu-id="9546f-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="9546f-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

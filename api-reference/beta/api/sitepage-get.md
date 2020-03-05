@@ -6,67 +6,68 @@ title: Получение страницы на сайте
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 33dd707d942dfe0d5e4215cfcac257ec50e492b5
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 9854dff5708d12b5e48c0cd64567ff3ddb12d832
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36724493"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453181"
 ---
-# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="caeda-103">Получение страницы в списке страниц сайта</span><span class="sxs-lookup"><span data-stu-id="caeda-103">Get a page in the site pages list of a site</span></span>
+# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="a0aa7-103">Получение страницы в списке страниц сайта</span><span class="sxs-lookup"><span data-stu-id="a0aa7-103">Get a page in the site pages list of a site</span></span>
+
+<span data-ttu-id="a0aa7-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="a0aa7-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="caeda-104">Возвращает метаданные для объекта [ситепаже][] в [списке][] страниц сайта на [сайте][].</span><span class="sxs-lookup"><span data-stu-id="caeda-104">Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].</span></span>
+<span data-ttu-id="a0aa7-105">Возвращает метаданные для объекта [ситепаже][] в [списке][] страниц сайта на [сайте][].</span><span class="sxs-lookup"><span data-stu-id="a0aa7-105">Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].</span></span>
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
-[сайта]: ../resources/site.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="caeda-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="caeda-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a0aa7-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a0aa7-109">Permissions</span></span>
 
-<span data-ttu-id="caeda-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="caeda-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a0aa7-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a0aa7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="caeda-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="caeda-111">Permission type</span></span>      | <span data-ttu-id="caeda-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="caeda-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a0aa7-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a0aa7-112">Permission type</span></span>      | <span data-ttu-id="a0aa7-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a0aa7-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="caeda-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="caeda-113">Delegated (work or school account)</span></span> | <span data-ttu-id="caeda-114">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="caeda-114">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="caeda-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="caeda-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="caeda-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="caeda-116">Not supported.</span></span>    |
-|<span data-ttu-id="caeda-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="caeda-117">Application</span></span> | <span data-ttu-id="caeda-118">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="caeda-118">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="a0aa7-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a0aa7-114">Delegated (work or school account)</span></span> | <span data-ttu-id="a0aa7-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a0aa7-115">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="a0aa7-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a0aa7-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a0aa7-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a0aa7-117">Not supported.</span></span>    |
+|<span data-ttu-id="a0aa7-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a0aa7-118">Application</span></span> | <span data-ttu-id="a0aa7-119">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a0aa7-119">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="caeda-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="caeda-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a0aa7-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a0aa7-120">HTTP request</span></span>
 
 ```http
 GET /sites/{site-id}/pages/{page-id}
 ```
 
-## <a name="example"></a><span data-ttu-id="caeda-120">Пример</span><span class="sxs-lookup"><span data-stu-id="caeda-120">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a0aa7-121">Пример</span><span class="sxs-lookup"><span data-stu-id="a0aa7-121">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="caeda-121">Запрос</span><span class="sxs-lookup"><span data-stu-id="caeda-121">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="a0aa7-122">Запрос</span><span class="sxs-lookup"><span data-stu-id="a0aa7-122">Request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="caeda-122">HTTP</span><span class="sxs-lookup"><span data-stu-id="caeda-122">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a0aa7-123">HTTP</span><span class="sxs-lookup"><span data-stu-id="a0aa7-123">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-page", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```msgraph-interactive
 GET /sites/{site-id}/pages/{page-id}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="caeda-123">C#</span><span class="sxs-lookup"><span data-stu-id="caeda-123">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a0aa7-124">C#</span><span class="sxs-lookup"><span data-stu-id="a0aa7-124">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-page-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="caeda-124">JavaScript</span><span class="sxs-lookup"><span data-stu-id="caeda-124">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a0aa7-125">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a0aa7-125">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-page-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="caeda-125">Цель — C</span><span class="sxs-lookup"><span data-stu-id="caeda-125">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a0aa7-126">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a0aa7-126">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-page-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="caeda-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="caeda-126">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="a0aa7-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="a0aa7-127">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 

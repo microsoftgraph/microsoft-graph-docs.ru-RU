@@ -5,69 +5,71 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 653f2fcb01e7fb0db5599b3dbc87fa7f38827ffd
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: c56ab5562e9b242819d7110914329996e64596a5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36414226"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456245"
 ---
-# <a name="update-orgcontact"></a><span data-ttu-id="afc1a-103">Обновление orgcontact</span><span class="sxs-lookup"><span data-stu-id="afc1a-103">Update orgcontact</span></span>
+# <a name="update-orgcontact"></a><span data-ttu-id="2c667-103">Обновление orgcontact</span><span class="sxs-lookup"><span data-stu-id="2c667-103">Update orgcontact</span></span>
+
+<span data-ttu-id="2c667-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="2c667-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="afc1a-104">Обновление свойств объекта orgcontact.</span><span class="sxs-lookup"><span data-stu-id="afc1a-104">Update the properties of orgcontact object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="afc1a-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="afc1a-105">Permissions</span></span>
-<span data-ttu-id="afc1a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="afc1a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2c667-105">Обновление свойств объекта orgcontact.</span><span class="sxs-lookup"><span data-stu-id="2c667-105">Update the properties of orgcontact object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="2c667-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2c667-106">Permissions</span></span>
+<span data-ttu-id="2c667-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2c667-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="afc1a-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="afc1a-108">Permission type</span></span>      | <span data-ttu-id="afc1a-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="afc1a-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2c667-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2c667-109">Permission type</span></span>      | <span data-ttu-id="2c667-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="2c667-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="afc1a-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="afc1a-110">Delegated (work or school account)</span></span> | <span data-ttu-id="afc1a-111">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="afc1a-111">Not supported.</span></span>    |
-|<span data-ttu-id="afc1a-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="afc1a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="afc1a-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="afc1a-113">Not supported.</span></span>    |
-|<span data-ttu-id="afc1a-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="afc1a-114">Application</span></span> | <span data-ttu-id="afc1a-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="afc1a-115">Not supported.</span></span> |
+|<span data-ttu-id="2c667-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2c667-111">Delegated (work or school account)</span></span> | <span data-ttu-id="2c667-112">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2c667-112">Not supported.</span></span>    |
+|<span data-ttu-id="2c667-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2c667-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2c667-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2c667-114">Not supported.</span></span>    |
+|<span data-ttu-id="2c667-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2c667-115">Application</span></span> | <span data-ttu-id="2c667-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2c667-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="afc1a-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="afc1a-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2c667-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2c667-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /contacts/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="afc1a-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="afc1a-117">Request headers</span></span>
-| <span data-ttu-id="afc1a-118">Имя</span><span class="sxs-lookup"><span data-stu-id="afc1a-118">Name</span></span>       | <span data-ttu-id="afc1a-119">Тип</span><span class="sxs-lookup"><span data-stu-id="afc1a-119">Type</span></span> | <span data-ttu-id="afc1a-120">Описание</span><span class="sxs-lookup"><span data-stu-id="afc1a-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2c667-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2c667-118">Request headers</span></span>
+| <span data-ttu-id="2c667-119">Имя</span><span class="sxs-lookup"><span data-stu-id="2c667-119">Name</span></span>       | <span data-ttu-id="2c667-120">Тип</span><span class="sxs-lookup"><span data-stu-id="2c667-120">Type</span></span> | <span data-ttu-id="2c667-121">Описание</span><span class="sxs-lookup"><span data-stu-id="2c667-121">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="afc1a-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="afc1a-121">Authorization</span></span>  | <span data-ttu-id="afc1a-122">string</span><span class="sxs-lookup"><span data-stu-id="afc1a-122">string</span></span>  | <span data-ttu-id="afc1a-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="afc1a-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2c667-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="2c667-122">Authorization</span></span>  | <span data-ttu-id="2c667-123">string</span><span class="sxs-lookup"><span data-stu-id="2c667-123">string</span></span>  | <span data-ttu-id="2c667-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2c667-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="afc1a-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="afc1a-125">Request body</span></span>
-<span data-ttu-id="afc1a-p103">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="afc1a-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2c667-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="2c667-126">Request body</span></span>
+<span data-ttu-id="2c667-p103">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="2c667-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="afc1a-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="afc1a-129">Property</span></span>     | <span data-ttu-id="afc1a-130">Тип</span><span class="sxs-lookup"><span data-stu-id="afc1a-130">Type</span></span>   |<span data-ttu-id="afc1a-131">Описание</span><span class="sxs-lookup"><span data-stu-id="afc1a-131">Description</span></span>|
+| <span data-ttu-id="2c667-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="2c667-130">Property</span></span>     | <span data-ttu-id="2c667-131">Тип</span><span class="sxs-lookup"><span data-stu-id="2c667-131">Type</span></span>   |<span data-ttu-id="2c667-132">Описание</span><span class="sxs-lookup"><span data-stu-id="2c667-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="afc1a-132">city</span><span class="sxs-lookup"><span data-stu-id="afc1a-132">city</span></span>|<span data-ttu-id="afc1a-133">String</span><span class="sxs-lookup"><span data-stu-id="afc1a-133">String</span></span>||
-|<span data-ttu-id="afc1a-134">country</span><span class="sxs-lookup"><span data-stu-id="afc1a-134">country</span></span>|<span data-ttu-id="afc1a-135">String</span><span class="sxs-lookup"><span data-stu-id="afc1a-135">String</span></span>||
-|<span data-ttu-id="afc1a-136">department</span><span class="sxs-lookup"><span data-stu-id="afc1a-136">department</span></span>|<span data-ttu-id="afc1a-137">String</span><span class="sxs-lookup"><span data-stu-id="afc1a-137">String</span></span>||
-|<span data-ttu-id="afc1a-138">onPremisesSyncEnabled</span><span class="sxs-lookup"><span data-stu-id="afc1a-138">onPremisesSyncEnabled</span></span>|<span data-ttu-id="afc1a-139">Boolean</span><span class="sxs-lookup"><span data-stu-id="afc1a-139">Boolean</span></span>||
-|<span data-ttu-id="afc1a-140">displayName</span><span class="sxs-lookup"><span data-stu-id="afc1a-140">displayName</span></span>|<span data-ttu-id="afc1a-141">Строка</span><span class="sxs-lookup"><span data-stu-id="afc1a-141">String</span></span>||
-|<span data-ttu-id="afc1a-142">givenName</span><span class="sxs-lookup"><span data-stu-id="afc1a-142">givenName</span></span>|<span data-ttu-id="afc1a-143">String</span><span class="sxs-lookup"><span data-stu-id="afc1a-143">String</span></span>||
-|<span data-ttu-id="afc1a-144">jobTitle</span><span class="sxs-lookup"><span data-stu-id="afc1a-144">jobTitle</span></span>|<span data-ttu-id="afc1a-145">String</span><span class="sxs-lookup"><span data-stu-id="afc1a-145">String</span></span>||
-|<span data-ttu-id="afc1a-146">onPremisesLastSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="afc1a-146">onPremisesLastSyncDateTime</span></span>|<span data-ttu-id="afc1a-147">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="afc1a-147">DateTimeOffset</span></span>||
-|<span data-ttu-id="afc1a-148">mail</span><span class="sxs-lookup"><span data-stu-id="afc1a-148">mail</span></span>|<span data-ttu-id="afc1a-149">String</span><span class="sxs-lookup"><span data-stu-id="afc1a-149">String</span></span>||
-|<span data-ttu-id="afc1a-150">mailNickname</span><span class="sxs-lookup"><span data-stu-id="afc1a-150">mailNickname</span></span>|<span data-ttu-id="afc1a-151">String</span><span class="sxs-lookup"><span data-stu-id="afc1a-151">String</span></span>||
-|<span data-ttu-id="afc1a-152">mobilePhone</span><span class="sxs-lookup"><span data-stu-id="afc1a-152">mobilePhone</span></span>|<span data-ttu-id="afc1a-153">String</span><span class="sxs-lookup"><span data-stu-id="afc1a-153">String</span></span>||
-|<span data-ttu-id="afc1a-154">officeLocation</span><span class="sxs-lookup"><span data-stu-id="afc1a-154">officeLocation</span></span>|<span data-ttu-id="afc1a-155">String</span><span class="sxs-lookup"><span data-stu-id="afc1a-155">String</span></span>||
-|<span data-ttu-id="afc1a-156">postalCode</span><span class="sxs-lookup"><span data-stu-id="afc1a-156">postalCode</span></span>|<span data-ttu-id="afc1a-157">String</span><span class="sxs-lookup"><span data-stu-id="afc1a-157">String</span></span>||
-|<span data-ttu-id="afc1a-158">proxyAddresses</span><span class="sxs-lookup"><span data-stu-id="afc1a-158">proxyAddresses</span></span>|<span data-ttu-id="afc1a-159">String</span><span class="sxs-lookup"><span data-stu-id="afc1a-159">String</span></span>||
-|<span data-ttu-id="afc1a-160">state</span><span class="sxs-lookup"><span data-stu-id="afc1a-160">state</span></span>|<span data-ttu-id="afc1a-161">Строка</span><span class="sxs-lookup"><span data-stu-id="afc1a-161">String</span></span>||
-|<span data-ttu-id="afc1a-162">streetAddress</span><span class="sxs-lookup"><span data-stu-id="afc1a-162">streetAddress</span></span>|<span data-ttu-id="afc1a-163">String</span><span class="sxs-lookup"><span data-stu-id="afc1a-163">String</span></span>||
-|<span data-ttu-id="afc1a-164">surname</span><span class="sxs-lookup"><span data-stu-id="afc1a-164">surname</span></span>|<span data-ttu-id="afc1a-165">String</span><span class="sxs-lookup"><span data-stu-id="afc1a-165">String</span></span>||
-|<span data-ttu-id="afc1a-166">businessPhones</span><span class="sxs-lookup"><span data-stu-id="afc1a-166">businessPhones</span></span>|<span data-ttu-id="afc1a-167">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="afc1a-167">String collection</span></span>||
+|<span data-ttu-id="2c667-133">city</span><span class="sxs-lookup"><span data-stu-id="2c667-133">city</span></span>|<span data-ttu-id="2c667-134">String</span><span class="sxs-lookup"><span data-stu-id="2c667-134">String</span></span>||
+|<span data-ttu-id="2c667-135">country</span><span class="sxs-lookup"><span data-stu-id="2c667-135">country</span></span>|<span data-ttu-id="2c667-136">Строка</span><span class="sxs-lookup"><span data-stu-id="2c667-136">String</span></span>||
+|<span data-ttu-id="2c667-137">department</span><span class="sxs-lookup"><span data-stu-id="2c667-137">department</span></span>|<span data-ttu-id="2c667-138">String</span><span class="sxs-lookup"><span data-stu-id="2c667-138">String</span></span>||
+|<span data-ttu-id="2c667-139">onPremisesSyncEnabled</span><span class="sxs-lookup"><span data-stu-id="2c667-139">onPremisesSyncEnabled</span></span>|<span data-ttu-id="2c667-140">Логический</span><span class="sxs-lookup"><span data-stu-id="2c667-140">Boolean</span></span>||
+|<span data-ttu-id="2c667-141">displayName</span><span class="sxs-lookup"><span data-stu-id="2c667-141">displayName</span></span>|<span data-ttu-id="2c667-142">String</span><span class="sxs-lookup"><span data-stu-id="2c667-142">String</span></span>||
+|<span data-ttu-id="2c667-143">givenName</span><span class="sxs-lookup"><span data-stu-id="2c667-143">givenName</span></span>|<span data-ttu-id="2c667-144">String</span><span class="sxs-lookup"><span data-stu-id="2c667-144">String</span></span>||
+|<span data-ttu-id="2c667-145">jobTitle;</span><span class="sxs-lookup"><span data-stu-id="2c667-145">jobTitle</span></span>|<span data-ttu-id="2c667-146">String</span><span class="sxs-lookup"><span data-stu-id="2c667-146">String</span></span>||
+|<span data-ttu-id="2c667-147">onPremisesLastSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="2c667-147">onPremisesLastSyncDateTime</span></span>|<span data-ttu-id="2c667-148">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="2c667-148">DateTimeOffset</span></span>||
+|<span data-ttu-id="2c667-149">mail</span><span class="sxs-lookup"><span data-stu-id="2c667-149">mail</span></span>|<span data-ttu-id="2c667-150">String</span><span class="sxs-lookup"><span data-stu-id="2c667-150">String</span></span>||
+|<span data-ttu-id="2c667-151">mailNickname</span><span class="sxs-lookup"><span data-stu-id="2c667-151">mailNickname</span></span>|<span data-ttu-id="2c667-152">String</span><span class="sxs-lookup"><span data-stu-id="2c667-152">String</span></span>||
+|<span data-ttu-id="2c667-153">mobilePhone</span><span class="sxs-lookup"><span data-stu-id="2c667-153">mobilePhone</span></span>|<span data-ttu-id="2c667-154">String</span><span class="sxs-lookup"><span data-stu-id="2c667-154">String</span></span>||
+|<span data-ttu-id="2c667-155">officeLocation</span><span class="sxs-lookup"><span data-stu-id="2c667-155">officeLocation</span></span>|<span data-ttu-id="2c667-156">String</span><span class="sxs-lookup"><span data-stu-id="2c667-156">String</span></span>||
+|<span data-ttu-id="2c667-157">postalCode</span><span class="sxs-lookup"><span data-stu-id="2c667-157">postalCode</span></span>|<span data-ttu-id="2c667-158">String</span><span class="sxs-lookup"><span data-stu-id="2c667-158">String</span></span>||
+|<span data-ttu-id="2c667-159">proxyAddresses</span><span class="sxs-lookup"><span data-stu-id="2c667-159">proxyAddresses</span></span>|<span data-ttu-id="2c667-160">String</span><span class="sxs-lookup"><span data-stu-id="2c667-160">String</span></span>||
+|<span data-ttu-id="2c667-161">state</span><span class="sxs-lookup"><span data-stu-id="2c667-161">state</span></span>|<span data-ttu-id="2c667-162">Строка</span><span class="sxs-lookup"><span data-stu-id="2c667-162">String</span></span>||
+|<span data-ttu-id="2c667-163">streetAddress</span><span class="sxs-lookup"><span data-stu-id="2c667-163">streetAddress</span></span>|<span data-ttu-id="2c667-164">String</span><span class="sxs-lookup"><span data-stu-id="2c667-164">String</span></span>||
+|<span data-ttu-id="2c667-165">surname</span><span class="sxs-lookup"><span data-stu-id="2c667-165">surname</span></span>|<span data-ttu-id="2c667-166">String</span><span class="sxs-lookup"><span data-stu-id="2c667-166">String</span></span>||
+|<span data-ttu-id="2c667-167">businessPhones</span><span class="sxs-lookup"><span data-stu-id="2c667-167">businessPhones</span></span>|<span data-ttu-id="2c667-168">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="2c667-168">String collection</span></span>||
 
-## <a name="response"></a><span data-ttu-id="afc1a-168">Отклик</span><span class="sxs-lookup"><span data-stu-id="afc1a-168">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2c667-169">Отклик</span><span class="sxs-lookup"><span data-stu-id="2c667-169">Response</span></span>
 
-<span data-ttu-id="afc1a-169">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [orgContact](../resources/orgcontact.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="afc1a-169">If successful, this method returns a `200 OK` response code and updated [orgContact](../resources/orgcontact.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="afc1a-170">Пример</span><span class="sxs-lookup"><span data-stu-id="afc1a-170">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="afc1a-171">Запрос</span><span class="sxs-lookup"><span data-stu-id="afc1a-171">Request</span></span>
-<span data-ttu-id="afc1a-172">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="afc1a-172">Here is an example of the request.</span></span>
+<span data-ttu-id="2c667-170">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [orgContact](../resources/orgcontact.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="2c667-170">If successful, this method returns a `200 OK` response code and updated [orgContact](../resources/orgcontact.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="2c667-171">Пример</span><span class="sxs-lookup"><span data-stu-id="2c667-171">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="2c667-172">Запрос</span><span class="sxs-lookup"><span data-stu-id="2c667-172">Request</span></span>
+<span data-ttu-id="2c667-173">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2c667-173">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="afc1a-173">HTTP</span><span class="sxs-lookup"><span data-stu-id="afc1a-173">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="2c667-174">HTTP</span><span class="sxs-lookup"><span data-stu-id="2c667-174">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_orgcontact"
@@ -88,22 +90,22 @@ Content-length: 222
   "displayName": "displayName-value"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="afc1a-174">C#</span><span class="sxs-lookup"><span data-stu-id="afc1a-174">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="2c667-175">C#</span><span class="sxs-lookup"><span data-stu-id="2c667-175">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-orgcontact-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="afc1a-175">JavaScript</span><span class="sxs-lookup"><span data-stu-id="afc1a-175">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="2c667-176">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2c667-176">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-orgcontact-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="afc1a-176">Цель — C</span><span class="sxs-lookup"><span data-stu-id="afc1a-176">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="2c667-177">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2c667-177">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-orgcontact-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="afc1a-177">Отклик</span><span class="sxs-lookup"><span data-stu-id="afc1a-177">Response</span></span>
-<span data-ttu-id="afc1a-p104">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="afc1a-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="2c667-178">Отклик</span><span class="sxs-lookup"><span data-stu-id="2c667-178">Response</span></span>
+<span data-ttu-id="2c667-p104">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="2c667-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

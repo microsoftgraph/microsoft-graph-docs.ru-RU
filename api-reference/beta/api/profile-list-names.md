@@ -5,30 +5,32 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: c996554b68e2dc898b4b65e082345d3cb891277d
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 9552a435d130db6eed3216ff8f1990ff33447381
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37997954"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455181"
 ---
-# <a name="list-names"></a><span data-ttu-id="01e3b-103">Перечисление имен</span><span class="sxs-lookup"><span data-stu-id="01e3b-103">List names</span></span>
+# <a name="list-names"></a><span data-ttu-id="121f7-103">Перечисление имен</span><span class="sxs-lookup"><span data-stu-id="121f7-103">List names</span></span>
+
+<span data-ttu-id="121f7-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="121f7-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="01e3b-104">Получение списка объектов [PersonName](../resources/personname.md) из [профиля](../resources/profile.md)пользователя.</span><span class="sxs-lookup"><span data-stu-id="01e3b-104">Retrieve a list of [personName](../resources/personname.md) objects from a user's [profile](../resources/profile.md).</span></span>
+<span data-ttu-id="121f7-105">Получение списка объектов [PersonName](../resources/personname.md) из [профиля](../resources/profile.md)пользователя.</span><span class="sxs-lookup"><span data-stu-id="121f7-105">Retrieve a list of [personName](../resources/personname.md) objects from a user's [profile](../resources/profile.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="01e3b-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="01e3b-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="121f7-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="121f7-106">Permissions</span></span>
 
-<span data-ttu-id="01e3b-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="01e3b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="121f7-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="121f7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="01e3b-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="01e3b-108">Permission type</span></span>                        | <span data-ttu-id="01e3b-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="01e3b-109">Permissions (from least to most privileged)</span></span>                                      |
+| <span data-ttu-id="121f7-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="121f7-109">Permission type</span></span>                        | <span data-ttu-id="121f7-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="121f7-110">Permissions (from least to most privileged)</span></span>                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| <span data-ttu-id="01e3b-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="01e3b-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="01e3b-111">User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="01e3b-111">User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span> |
-| <span data-ttu-id="01e3b-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="01e3b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="01e3b-113">User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="01e3b-113">User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span> |
-| <span data-ttu-id="01e3b-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="01e3b-114">Application</span></span>                            | <span data-ttu-id="01e3b-115">User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="01e3b-115">User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span>                            |
+| <span data-ttu-id="121f7-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="121f7-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="121f7-112">User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="121f7-112">User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span> |
+| <span data-ttu-id="121f7-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="121f7-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="121f7-114">User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="121f7-114">User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span> |
+| <span data-ttu-id="121f7-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="121f7-115">Application</span></span>                            | <span data-ttu-id="121f7-116">User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="121f7-116">User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span>                            |
 
-## <a name="http-request"></a><span data-ttu-id="01e3b-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="01e3b-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="121f7-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="121f7-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,32 +38,32 @@ ms.locfileid: "37997954"
 GET /me/profile/names
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="01e3b-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="01e3b-117">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="121f7-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="121f7-118">Optional query parameters</span></span>
 
-<span data-ttu-id="01e3b-118">Этот метод поддерживает некоторые параметры запроса OData для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="01e3b-118">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="01e3b-119">Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="01e3b-119">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="121f7-119">Этот метод поддерживает некоторые параметры запроса OData для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="121f7-119">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="121f7-120">Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="121f7-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="01e3b-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="01e3b-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="121f7-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="121f7-121">Request headers</span></span>
 
-| <span data-ttu-id="01e3b-121">Имя</span><span class="sxs-lookup"><span data-stu-id="01e3b-121">Name</span></span>           |<span data-ttu-id="01e3b-122">Описание</span><span class="sxs-lookup"><span data-stu-id="01e3b-122">Description</span></span>                  |
+| <span data-ttu-id="121f7-122">Имя</span><span class="sxs-lookup"><span data-stu-id="121f7-122">Name</span></span>           |<span data-ttu-id="121f7-123">Описание</span><span class="sxs-lookup"><span data-stu-id="121f7-123">Description</span></span>                  |
 |:---------------|:----------------------------|
-| <span data-ttu-id="01e3b-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="01e3b-123">Authorization</span></span>  | <span data-ttu-id="01e3b-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="01e3b-p103">Bearer {token}. Required.</span></span>   |
-| <span data-ttu-id="01e3b-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="01e3b-126">Content-Type</span></span>   | <span data-ttu-id="01e3b-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="01e3b-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="121f7-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="121f7-124">Authorization</span></span>  | <span data-ttu-id="121f7-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="121f7-p103">Bearer {token}. Required.</span></span>   |
+| <span data-ttu-id="121f7-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="121f7-127">Content-Type</span></span>   | <span data-ttu-id="121f7-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="121f7-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="01e3b-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="01e3b-129">Request body</span></span> 
+## <a name="request-body"></a><span data-ttu-id="121f7-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="121f7-130">Request body</span></span> 
 
-<span data-ttu-id="01e3b-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="01e3b-130">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="121f7-131">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="121f7-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="01e3b-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="01e3b-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="121f7-132">Ответ</span><span class="sxs-lookup"><span data-stu-id="121f7-132">Response</span></span>
 
-<span data-ttu-id="01e3b-132">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [PersonName](../resources/personname.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="01e3b-132">If successful, this method returns a `200 OK` response code and a collection of [personName](../resources/personname.md) objects in the response body.</span></span>
+<span data-ttu-id="121f7-133">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [PersonName](../resources/personname.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="121f7-133">If successful, this method returns a `200 OK` response code and a collection of [personName](../resources/personname.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="01e3b-133">Примеры</span><span class="sxs-lookup"><span data-stu-id="01e3b-133">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="121f7-134">Примеры</span><span class="sxs-lookup"><span data-stu-id="121f7-134">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="01e3b-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="01e3b-134">Request</span></span>
+### <a name="request"></a><span data-ttu-id="121f7-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="121f7-135">Request</span></span>
 
-<span data-ttu-id="01e3b-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="01e3b-135">The following is an example of the request.</span></span>
+<span data-ttu-id="121f7-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="121f7-136">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="01e3b-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="01e3b-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="121f7-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="121f7-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_names"
@@ -70,26 +72,26 @@ GET /me/profile/names
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile/names
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="01e3b-137">C#</span><span class="sxs-lookup"><span data-stu-id="01e3b-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="121f7-138">C#</span><span class="sxs-lookup"><span data-stu-id="121f7-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-names-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="01e3b-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="01e3b-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="121f7-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="121f7-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-names-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="01e3b-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="01e3b-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="121f7-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="121f7-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-names-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="01e3b-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="01e3b-140">Response</span></span>
+### <a name="response"></a><span data-ttu-id="121f7-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="121f7-141">Response</span></span>
 
-<span data-ttu-id="01e3b-141">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="01e3b-141">The following is an example of the response.</span></span>
+<span data-ttu-id="121f7-142">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="121f7-142">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="01e3b-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="01e3b-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="121f7-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="121f7-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
