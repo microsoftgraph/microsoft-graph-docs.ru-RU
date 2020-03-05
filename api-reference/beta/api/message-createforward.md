@@ -5,35 +5,37 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 03a017bee28278d2e06bee1fb7acd93408733a50
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: aed74a1c071b76ddec478abc4f665d00c1c26a35
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36415143"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456973"
 ---
-# <a name="message-createforward"></a><span data-ttu-id="5c013-103">message: createForward</span><span class="sxs-lookup"><span data-stu-id="5c013-103">message: createForward</span></span>
+# <a name="message-createforward"></a><span data-ttu-id="efd15-103">message: createForward</span><span class="sxs-lookup"><span data-stu-id="efd15-103">message: createForward</span></span>
+
+<span data-ttu-id="efd15-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="efd15-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5c013-104">Создание черновика переадресации сообщений для включения комментария или обновления любых свойств сообщения</span><span class="sxs-lookup"><span data-stu-id="5c013-104">Create a draft forward message to include a comment or update any message properties</span></span>  
-<span data-ttu-id="5c013-105">все в одном вызове **createForward** .</span><span class="sxs-lookup"><span data-stu-id="5c013-105">all in one **createForward** call.</span></span> <span data-ttu-id="5c013-106">Затем вы можете [Отправить](../api/message-send.md) черновик сообщения.</span><span class="sxs-lookup"><span data-stu-id="5c013-106">You can then [send](../api/message-send.md) the draft message.</span></span>
+<span data-ttu-id="efd15-105">Создание черновика переадресации сообщений для включения комментария или обновления любых свойств сообщения</span><span class="sxs-lookup"><span data-stu-id="efd15-105">Create a draft forward message to include a comment or update any message properties</span></span>  
+<span data-ttu-id="efd15-106">все в одном вызове **createForward** .</span><span class="sxs-lookup"><span data-stu-id="efd15-106">all in one **createForward** call.</span></span> <span data-ttu-id="efd15-107">Затем вы можете [Отправить](../api/message-send.md) черновик сообщения.</span><span class="sxs-lookup"><span data-stu-id="efd15-107">You can then [send](../api/message-send.md) the draft message.</span></span>
 
-<span data-ttu-id="5c013-107">**Примечание**</span><span class="sxs-lookup"><span data-stu-id="5c013-107">**Note**</span></span>
+<span data-ttu-id="efd15-108">**Примечание**</span><span class="sxs-lookup"><span data-stu-id="efd15-108">**Note**</span></span>
 
-- <span data-ttu-id="5c013-108">Можно указать либо свойство Comment, либо свойство **Body** для `message` параметра.</span><span class="sxs-lookup"><span data-stu-id="5c013-108">You can specify either a comment or the **body** property of the `message` parameter.</span></span> <span data-ttu-id="5c013-109">Если указать и то, и другое, будет возвращена ошибка неправильного запроса HTTP 400.</span><span class="sxs-lookup"><span data-stu-id="5c013-109">Specifying both will return an HTTP 400 Bad Request error.</span></span>
-- <span data-ttu-id="5c013-110">Необходимо указать либо параметр, `toRecipients` либо свойство **toRecipients** `message` параметра.</span><span class="sxs-lookup"><span data-stu-id="5c013-110">You must specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter.</span></span> <span data-ttu-id="5c013-111">Если указать оба параметра или не указывать ни один из них, будет возвращена ошибка ошибки запроса HTTP 400.</span><span class="sxs-lookup"><span data-stu-id="5c013-111">Specifying both or specifying neither will return an HTTP 400 Bad Request error.</span></span>
+- <span data-ttu-id="efd15-109">Можно указать либо свойство Comment, либо свойство **Body** для `message` параметра.</span><span class="sxs-lookup"><span data-stu-id="efd15-109">You can specify either a comment or the **body** property of the `message` parameter.</span></span> <span data-ttu-id="efd15-110">Если указать и то, и другое, будет возвращена ошибка неправильного запроса HTTP 400.</span><span class="sxs-lookup"><span data-stu-id="efd15-110">Specifying both will return an HTTP 400 Bad Request error.</span></span>
+- <span data-ttu-id="efd15-111">Необходимо указать либо параметр, `toRecipients` либо свойство **toRecipients** `message` параметра.</span><span class="sxs-lookup"><span data-stu-id="efd15-111">You must specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter.</span></span> <span data-ttu-id="efd15-112">Если указать оба параметра или не указывать ни один из них, будет возвращена ошибка ошибки запроса HTTP 400.</span><span class="sxs-lookup"><span data-stu-id="efd15-112">Specifying both or specifying neither will return an HTTP 400 Bad Request error.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5c013-112">Разрешения</span><span class="sxs-lookup"><span data-stu-id="5c013-112">Permissions</span></span>
-<span data-ttu-id="5c013-p104">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5c013-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="efd15-113">Разрешения</span><span class="sxs-lookup"><span data-stu-id="efd15-113">Permissions</span></span>
+<span data-ttu-id="efd15-p104">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="efd15-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5c013-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5c013-115">Permission type</span></span>      | <span data-ttu-id="5c013-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="5c013-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="efd15-116">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="efd15-116">Permission type</span></span>      | <span data-ttu-id="efd15-117">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="efd15-117">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5c013-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5c013-117">Delegated (work or school account)</span></span> | <span data-ttu-id="5c013-118">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5c013-118">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="5c013-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5c013-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5c013-120">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5c013-120">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="5c013-121">Для приложений</span><span class="sxs-lookup"><span data-stu-id="5c013-121">Application</span></span> | <span data-ttu-id="5c013-122">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5c013-122">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="efd15-118">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="efd15-118">Delegated (work or school account)</span></span> | <span data-ttu-id="efd15-119">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="efd15-119">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="efd15-120">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="efd15-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="efd15-121">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="efd15-121">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="efd15-122">Для приложений</span><span class="sxs-lookup"><span data-stu-id="efd15-122">Application</span></span> | <span data-ttu-id="efd15-123">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="efd15-123">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5c013-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5c013-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="efd15-124">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="efd15-124">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/{id}/createForward
@@ -41,31 +43,31 @@ POST /users/{id | userPrincipalName}/messages/{id}/createForward
 POST /me/mailFolders/{id}/messages/{id}/createForward
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForward
 ```
-## <a name="request-headers"></a><span data-ttu-id="5c013-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="5c013-124">Request headers</span></span>
-| <span data-ttu-id="5c013-125">Имя</span><span class="sxs-lookup"><span data-stu-id="5c013-125">Name</span></span>       | <span data-ttu-id="5c013-126">Тип</span><span class="sxs-lookup"><span data-stu-id="5c013-126">Type</span></span> | <span data-ttu-id="5c013-127">Описание</span><span class="sxs-lookup"><span data-stu-id="5c013-127">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="efd15-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="efd15-125">Request headers</span></span>
+| <span data-ttu-id="efd15-126">Имя</span><span class="sxs-lookup"><span data-stu-id="efd15-126">Name</span></span>       | <span data-ttu-id="efd15-127">Тип</span><span class="sxs-lookup"><span data-stu-id="efd15-127">Type</span></span> | <span data-ttu-id="efd15-128">Описание</span><span class="sxs-lookup"><span data-stu-id="efd15-128">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="5c013-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="5c013-128">Authorization</span></span>  | <span data-ttu-id="5c013-129">string</span><span class="sxs-lookup"><span data-stu-id="5c013-129">string</span></span>  | <span data-ttu-id="5c013-p105">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5c013-p105">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="5c013-132">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5c013-132">Content-Type</span></span> | <span data-ttu-id="5c013-133">string</span><span class="sxs-lookup"><span data-stu-id="5c013-133">string</span></span>  | <span data-ttu-id="5c013-p106">Характер данных в теле объекта. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5c013-p106">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="efd15-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="efd15-129">Authorization</span></span>  | <span data-ttu-id="efd15-130">string</span><span class="sxs-lookup"><span data-stu-id="efd15-130">string</span></span>  | <span data-ttu-id="efd15-p105">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="efd15-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="efd15-133">Content-Type</span><span class="sxs-lookup"><span data-stu-id="efd15-133">Content-Type</span></span> | <span data-ttu-id="efd15-134">string</span><span class="sxs-lookup"><span data-stu-id="efd15-134">string</span></span>  | <span data-ttu-id="efd15-p106">Характер данных в теле объекта. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="efd15-p106">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="5c013-136">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="5c013-136">Request body</span></span>
-<span data-ttu-id="5c013-137">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="5c013-137">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="efd15-137">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="efd15-137">Request body</span></span>
+<span data-ttu-id="efd15-138">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="efd15-138">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="5c013-138">Параметр</span><span class="sxs-lookup"><span data-stu-id="5c013-138">Parameter</span></span>    | <span data-ttu-id="5c013-139">Тип</span><span class="sxs-lookup"><span data-stu-id="5c013-139">Type</span></span>   |<span data-ttu-id="5c013-140">Описание</span><span class="sxs-lookup"><span data-stu-id="5c013-140">Description</span></span>|
+| <span data-ttu-id="efd15-139">Параметр</span><span class="sxs-lookup"><span data-stu-id="efd15-139">Parameter</span></span>    | <span data-ttu-id="efd15-140">Тип</span><span class="sxs-lookup"><span data-stu-id="efd15-140">Type</span></span>   |<span data-ttu-id="efd15-141">Описание</span><span class="sxs-lookup"><span data-stu-id="efd15-141">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="5c013-141">comment</span><span class="sxs-lookup"><span data-stu-id="5c013-141">comment</span></span>|<span data-ttu-id="5c013-142">String</span><span class="sxs-lookup"><span data-stu-id="5c013-142">String</span></span>|<span data-ttu-id="5c013-p107">Добавляемый комментарий. Может быть пустой строкой.</span><span class="sxs-lookup"><span data-stu-id="5c013-p107">A comment to include. Can be an empty string.</span></span>|
-|<span data-ttu-id="5c013-145">toRecipients</span><span class="sxs-lookup"><span data-stu-id="5c013-145">toRecipients</span></span>|<span data-ttu-id="5c013-146">Коллекция [recipient](../resources/recipient.md)</span><span class="sxs-lookup"><span data-stu-id="5c013-146">[recipient](../resources/recipient.md) collection</span></span>|<span data-ttu-id="5c013-147">Список получателей.</span><span class="sxs-lookup"><span data-stu-id="5c013-147">The list of recipients.</span></span>|
-|<span data-ttu-id="5c013-148">message</span><span class="sxs-lookup"><span data-stu-id="5c013-148">message</span></span>|[<span data-ttu-id="5c013-149">message</span><span class="sxs-lookup"><span data-stu-id="5c013-149">message</span></span>](../resources/message.md)|<span data-ttu-id="5c013-150">Все доступные для записи свойства, которые необходимо обновить в ответном сообщении.</span><span class="sxs-lookup"><span data-stu-id="5c013-150">Any writeable properties to update in the reply message.</span></span>|
+|<span data-ttu-id="efd15-142">comment</span><span class="sxs-lookup"><span data-stu-id="efd15-142">comment</span></span>|<span data-ttu-id="efd15-143">String</span><span class="sxs-lookup"><span data-stu-id="efd15-143">String</span></span>|<span data-ttu-id="efd15-p107">Добавляемый комментарий. Может быть пустой строкой.</span><span class="sxs-lookup"><span data-stu-id="efd15-p107">A comment to include. Can be an empty string.</span></span>|
+|<span data-ttu-id="efd15-146">toRecipients</span><span class="sxs-lookup"><span data-stu-id="efd15-146">toRecipients</span></span>|<span data-ttu-id="efd15-147">Коллекция [recipient](../resources/recipient.md)</span><span class="sxs-lookup"><span data-stu-id="efd15-147">[recipient](../resources/recipient.md) collection</span></span>|<span data-ttu-id="efd15-148">Список получателей.</span><span class="sxs-lookup"><span data-stu-id="efd15-148">The list of recipients.</span></span>|
+|<span data-ttu-id="efd15-149">message</span><span class="sxs-lookup"><span data-stu-id="efd15-149">message</span></span>|[<span data-ttu-id="efd15-150">message</span><span class="sxs-lookup"><span data-stu-id="efd15-150">message</span></span>](../resources/message.md)|<span data-ttu-id="efd15-151">Все доступные для записи свойства, которые необходимо обновить в ответном сообщении.</span><span class="sxs-lookup"><span data-stu-id="efd15-151">Any writeable properties to update in the reply message.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="5c013-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="5c013-151">Response</span></span>
+## <a name="response"></a><span data-ttu-id="efd15-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="efd15-152">Response</span></span>
 
-<span data-ttu-id="5c013-152">В случае успеха этот метод возвращает код отклика `201 Created` и объект [message](../resources/message.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="5c013-152">If successful, this method returns `201 Created` response code and [message](../resources/message.md) object in the response body.</span></span>
+<span data-ttu-id="efd15-153">В случае успеха этот метод возвращает код отклика `201 Created` и объект [message](../resources/message.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="efd15-153">If successful, this method returns `201 Created` response code and [message](../resources/message.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5c013-153">Пример</span><span class="sxs-lookup"><span data-stu-id="5c013-153">Example</span></span>
-<span data-ttu-id="5c013-154">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="5c013-154">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="5c013-155">Запрос</span><span class="sxs-lookup"><span data-stu-id="5c013-155">Request</span></span>
-<span data-ttu-id="5c013-156">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="5c013-156">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="efd15-154">Пример</span><span class="sxs-lookup"><span data-stu-id="efd15-154">Example</span></span>
+<span data-ttu-id="efd15-155">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="efd15-155">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="efd15-156">Запрос</span><span class="sxs-lookup"><span data-stu-id="efd15-156">Request</span></span>
+<span data-ttu-id="efd15-157">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="efd15-157">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="5c013-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="5c013-157">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="efd15-158">HTTP</span><span class="sxs-lookup"><span data-stu-id="efd15-158">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "message_createforward"
@@ -89,23 +91,23 @@ Content-Type: application/json
   "comment": "Dana, just want to make sure you get this; you'll need this if the project gets approved." 
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="5c013-158">C#</span><span class="sxs-lookup"><span data-stu-id="5c013-158">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="efd15-159">C#</span><span class="sxs-lookup"><span data-stu-id="efd15-159">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-createforward-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="5c013-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5c013-159">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="efd15-160">JavaScript</span><span class="sxs-lookup"><span data-stu-id="efd15-160">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-createforward-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="5c013-160">Цель — C</span><span class="sxs-lookup"><span data-stu-id="5c013-160">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="efd15-161">Objective-C</span><span class="sxs-lookup"><span data-stu-id="efd15-161">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/message-createforward-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="5c013-161">Ответ</span><span class="sxs-lookup"><span data-stu-id="5c013-161">Response</span></span>
-<span data-ttu-id="5c013-p108">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="5c013-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="efd15-162">Отклик</span><span class="sxs-lookup"><span data-stu-id="efd15-162">Response</span></span>
+<span data-ttu-id="efd15-p108">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="efd15-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

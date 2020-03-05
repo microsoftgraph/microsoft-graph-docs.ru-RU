@@ -6,30 +6,32 @@ title: Изменение записи в списке SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 8ddc87113fb94660f11f8f9113ac11c62e389375
-ms.sourcegitcommit: bbef506636bce5b72351ee3834123771c301b1b1
+ms.openlocfilehash: 8d95c144bf0acf6a14a1166298b94369d009bcb7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "37726294"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457120"
 ---
-# <a name="update-an-item-in-a-list"></a><span data-ttu-id="44b53-103">Изменение элемента в списке</span><span class="sxs-lookup"><span data-stu-id="44b53-103">Update an item in a list</span></span>
+# <a name="update-an-item-in-a-list"></a><span data-ttu-id="a3ef5-103">Изменение элемента в списке</span><span class="sxs-lookup"><span data-stu-id="a3ef5-103">Update an item in a list</span></span>
+
+<span data-ttu-id="a3ef5-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="a3ef5-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="44b53-104">Изменение свойств ресурса **[listItem][]**.</span><span class="sxs-lookup"><span data-stu-id="44b53-104">Update the properties on a **[listItem][]**.</span></span>
+<span data-ttu-id="a3ef5-105">Изменение свойств ресурса **[listItem][]**.</span><span class="sxs-lookup"><span data-stu-id="a3ef5-105">Update the properties on a **[listItem][]**.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="44b53-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="44b53-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a3ef5-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a3ef5-106">Permissions</span></span>
 
-<span data-ttu-id="44b53-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="44b53-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a3ef5-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a3ef5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="44b53-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="44b53-108">Permission type</span></span>      | <span data-ttu-id="44b53-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="44b53-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a3ef5-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a3ef5-109">Permission type</span></span>      | <span data-ttu-id="a3ef5-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a3ef5-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="44b53-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="44b53-110">Delegated (work or school account)</span></span> | <span data-ttu-id="44b53-111">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="44b53-111">Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="44b53-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="44b53-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="44b53-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="44b53-113">Not supported.</span></span>    |
-|<span data-ttu-id="44b53-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="44b53-114">Application</span></span> | <span data-ttu-id="44b53-115">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="44b53-115">Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="a3ef5-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a3ef5-111">Delegated (work or school account)</span></span> | <span data-ttu-id="a3ef5-112">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a3ef5-112">Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="a3ef5-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a3ef5-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a3ef5-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a3ef5-114">Not supported.</span></span>    |
+|<span data-ttu-id="a3ef5-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a3ef5-115">Application</span></span> | <span data-ttu-id="a3ef5-116">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a3ef5-116">Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="44b53-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="44b53-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a3ef5-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a3ef5-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -37,24 +39,24 @@ ms.locfileid: "37726294"
 PATCH /sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 ```
 
-## <a name="optional-request-headers"></a><span data-ttu-id="44b53-117">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="44b53-117">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="a3ef5-118">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a3ef5-118">Optional request headers</span></span>
 
-| <span data-ttu-id="44b53-118">Имя</span><span class="sxs-lookup"><span data-stu-id="44b53-118">Name</span></span>       | <span data-ttu-id="44b53-119">Значение</span><span class="sxs-lookup"><span data-stu-id="44b53-119">Value</span></span> | <span data-ttu-id="44b53-120">Описание</span><span class="sxs-lookup"><span data-stu-id="44b53-120">Description</span></span>
+| <span data-ttu-id="a3ef5-119">Имя</span><span class="sxs-lookup"><span data-stu-id="a3ef5-119">Name</span></span>       | <span data-ttu-id="a3ef5-120">Значение</span><span class="sxs-lookup"><span data-stu-id="a3ef5-120">Value</span></span> | <span data-ttu-id="a3ef5-121">Описание</span><span class="sxs-lookup"><span data-stu-id="a3ef5-121">Description</span></span>
 |:-----------|:------|:--------------------------------------------------------
-| <span data-ttu-id="44b53-121">_if-match_</span><span class="sxs-lookup"><span data-stu-id="44b53-121">_if-match_</span></span> | <span data-ttu-id="44b53-122">etag</span><span class="sxs-lookup"><span data-stu-id="44b53-122">etag</span></span>  | <span data-ttu-id="44b53-123">Если указан этот заголовок запроса, а предоставленный тег eTag не совпадает с текущим тегом eTag элемента, то будет возвращен ответ `412 Precondition Failed`, а элемент не будет обновлен.</span><span class="sxs-lookup"><span data-stu-id="44b53-123">If this request header is included and the eTag provided does not match the current eTag on the item, a `412 Precondition Failed` response is returned and the item will not be updated.</span></span>
+| <span data-ttu-id="a3ef5-122">_if-match_</span><span class="sxs-lookup"><span data-stu-id="a3ef5-122">_if-match_</span></span> | <span data-ttu-id="a3ef5-123">etag</span><span class="sxs-lookup"><span data-stu-id="a3ef5-123">etag</span></span>  | <span data-ttu-id="a3ef5-124">Если указан этот заголовок запроса, а предоставленный тег eTag не совпадает с текущим тегом eTag элемента, то будет возвращен ответ `412 Precondition Failed`, а элемент не будет обновлен.</span><span class="sxs-lookup"><span data-stu-id="a3ef5-124">If this request header is included and the eTag provided does not match the current eTag on the item, a `412 Precondition Failed` response is returned and the item will not be updated.</span></span>
 
 
-## <a name="request-body"></a><span data-ttu-id="44b53-124">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="44b53-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="a3ef5-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="a3ef5-125">Request body</span></span>
 
-<span data-ttu-id="44b53-125">Включите представление объекта [fieldValueSet][] в формате JSON в тело запроса, указав поля, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="44b53-125">In the request body, supply a JSON representation of a [fieldValueSet][] specifying the fields to update.</span></span>
+<span data-ttu-id="a3ef5-126">Включите представление объекта [fieldValueSet][] в формате JSON в тело запроса, указав поля, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="a3ef5-126">In the request body, supply a JSON representation of a [fieldValueSet][] specifying the fields to update.</span></span>
 
-## <a name="example"></a><span data-ttu-id="44b53-126">Пример</span><span class="sxs-lookup"><span data-stu-id="44b53-126">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a3ef5-127">Пример</span><span class="sxs-lookup"><span data-stu-id="a3ef5-127">Example</span></span>
 
-<span data-ttu-id="44b53-127">В примере ниже показано, как обновить поля Color (Цвет) и Quantity (Количество) элемента списка, указав новые значения.</span><span class="sxs-lookup"><span data-stu-id="44b53-127">Here is an example that updates the Color and Quantity fields of the list item with new values.</span></span>
-<span data-ttu-id="44b53-128">Все остальные значения для ресурса listItem останутся без изменений.</span><span class="sxs-lookup"><span data-stu-id="44b53-128">All other values on the listItem are left alone.</span></span> 
+<span data-ttu-id="a3ef5-128">В примере ниже показано, как обновить поля Color (Цвет) и Quantity (Количество) элемента списка, указав новые значения.</span><span class="sxs-lookup"><span data-stu-id="a3ef5-128">Here is an example that updates the Color and Quantity fields of the list item with new values.</span></span>
+<span data-ttu-id="a3ef5-129">Все остальные значения для ресурса listItem останутся без изменений.</span><span class="sxs-lookup"><span data-stu-id="a3ef5-129">All other values on the listItem are left alone.</span></span> 
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="44b53-129">HTTP</span><span class="sxs-lookup"><span data-stu-id="44b53-129">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a3ef5-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="a3ef5-130">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
 
 ```json
@@ -66,24 +68,24 @@ Content-Type: application/json
     "Quantity": 934
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="44b53-130">C#</span><span class="sxs-lookup"><span data-stu-id="44b53-130">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a3ef5-131">C#</span><span class="sxs-lookup"><span data-stu-id="a3ef5-131">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-listitem-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="44b53-131">JavaScript</span><span class="sxs-lookup"><span data-stu-id="44b53-131">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a3ef5-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a3ef5-132">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-listitem-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="44b53-132">Objective-C</span><span class="sxs-lookup"><span data-stu-id="44b53-132">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a3ef5-133">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a3ef5-133">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-listitem-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## <a name="response"></a><span data-ttu-id="44b53-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="44b53-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a3ef5-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="a3ef5-134">Response</span></span>
 
-<span data-ttu-id="44b53-134">При успешном выполнении этот метод возвращает объект [fieldValueSet][] для обновленного элемента списка в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="44b53-134">If successful, this method returns a [fieldValueSet][] in the response body for the updated list item.</span></span>
+<span data-ttu-id="a3ef5-135">При успешном выполнении этот метод возвращает объект [fieldValueSet][] для обновленного элемента списка в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="a3ef5-135">If successful, this method returns a [fieldValueSet][] in the response body for the updated list item.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 

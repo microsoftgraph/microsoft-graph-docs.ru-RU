@@ -5,31 +5,33 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5781f0c3e148f349cf05831657d89d430a471820
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: c843e66f2ceefc4c14b1780693f8a2111deca0d5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39939010"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457701"
 ---
-# <a name="create-devicemanagementtroubleshootingevent"></a><span data-ttu-id="245ca-103">Создание объекта deviceManagementTroubleshootingEvent</span><span class="sxs-lookup"><span data-stu-id="245ca-103">Create deviceManagementTroubleshootingEvent</span></span>
+# <a name="create-devicemanagementtroubleshootingevent"></a><span data-ttu-id="8cb35-103">Создание объекта deviceManagementTroubleshootingEvent</span><span class="sxs-lookup"><span data-stu-id="8cb35-103">Create deviceManagementTroubleshootingEvent</span></span>
 
-> <span data-ttu-id="245ca-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="245ca-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="8cb35-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="8cb35-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="245ca-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="245ca-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="8cb35-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8cb35-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="245ca-106">Создание объекта [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md).</span><span class="sxs-lookup"><span data-stu-id="245ca-106">Create a new [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) object.</span></span>
+> <span data-ttu-id="8cb35-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="8cb35-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="245ca-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="245ca-107">Prerequisites</span></span>
-<span data-ttu-id="245ca-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="245ca-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8cb35-107">Создание объекта [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md).</span><span class="sxs-lookup"><span data-stu-id="8cb35-107">Create a new [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) object.</span></span>
 
-|<span data-ttu-id="245ca-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="245ca-110">Permission type</span></span>|<span data-ttu-id="245ca-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="245ca-111">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="8cb35-108">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="8cb35-108">Prerequisites</span></span>
+<span data-ttu-id="8cb35-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8cb35-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="8cb35-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8cb35-111">Permission type</span></span>|<span data-ttu-id="8cb35-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="8cb35-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="245ca-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="245ca-112">Delegated (work or school account)</span></span>|<span data-ttu-id="245ca-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="245ca-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="245ca-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="245ca-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="245ca-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="245ca-115">Not supported.</span></span>|
-|<span data-ttu-id="245ca-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="245ca-116">Application</span></span>|<span data-ttu-id="245ca-117">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="245ca-117">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="8cb35-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8cb35-113">Delegated (work or school account)</span></span>|<span data-ttu-id="8cb35-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8cb35-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="8cb35-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8cb35-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="8cb35-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8cb35-116">Not supported.</span></span>|
+|<span data-ttu-id="8cb35-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="8cb35-117">Application</span></span>|<span data-ttu-id="8cb35-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8cb35-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="245ca-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="245ca-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8cb35-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8cb35-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,35 +40,35 @@ ms.locfileid: "39939010"
 POST /deviceManagement/troubleshootingEvents
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="245ca-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="245ca-119">Request headers</span></span>
-|<span data-ttu-id="245ca-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="245ca-120">Header</span></span>|<span data-ttu-id="245ca-121">Значение</span><span class="sxs-lookup"><span data-stu-id="245ca-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="8cb35-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="8cb35-120">Request headers</span></span>
+|<span data-ttu-id="8cb35-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="8cb35-121">Header</span></span>|<span data-ttu-id="8cb35-122">Значение</span><span class="sxs-lookup"><span data-stu-id="8cb35-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="245ca-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="245ca-122">Authorization</span></span>|<span data-ttu-id="245ca-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="245ca-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="245ca-124">Accept</span><span class="sxs-lookup"><span data-stu-id="245ca-124">Accept</span></span>|<span data-ttu-id="245ca-125">application/json</span><span class="sxs-lookup"><span data-stu-id="245ca-125">application/json</span></span>|
+|<span data-ttu-id="8cb35-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="8cb35-123">Authorization</span></span>|<span data-ttu-id="8cb35-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8cb35-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="8cb35-125">Accept</span><span class="sxs-lookup"><span data-stu-id="8cb35-125">Accept</span></span>|<span data-ttu-id="8cb35-126">application/json</span><span class="sxs-lookup"><span data-stu-id="8cb35-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="245ca-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="245ca-126">Request body</span></span>
-<span data-ttu-id="245ca-127">В теле запроса добавьте представление объекта deviceManagementTroubleshootingEvent в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="245ca-127">In the request body, supply a JSON representation for the deviceManagementTroubleshootingEvent object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8cb35-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="8cb35-127">Request body</span></span>
+<span data-ttu-id="8cb35-128">В теле запроса добавьте представление объекта deviceManagementTroubleshootingEvent в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8cb35-128">In the request body, supply a JSON representation for the deviceManagementTroubleshootingEvent object.</span></span>
 
-<span data-ttu-id="245ca-128">В приведенной ниже таблице указаны свойства, необходимые при создании объекта deviceManagementTroubleshootingEvent.</span><span class="sxs-lookup"><span data-stu-id="245ca-128">The following table shows the properties that are required when you create the deviceManagementTroubleshootingEvent.</span></span>
+<span data-ttu-id="8cb35-129">В приведенной ниже таблице указаны свойства, необходимые при создании объекта deviceManagementTroubleshootingEvent.</span><span class="sxs-lookup"><span data-stu-id="8cb35-129">The following table shows the properties that are required when you create the deviceManagementTroubleshootingEvent.</span></span>
 
-|<span data-ttu-id="245ca-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="245ca-129">Property</span></span>|<span data-ttu-id="245ca-130">Тип</span><span class="sxs-lookup"><span data-stu-id="245ca-130">Type</span></span>|<span data-ttu-id="245ca-131">Описание</span><span class="sxs-lookup"><span data-stu-id="245ca-131">Description</span></span>|
+|<span data-ttu-id="8cb35-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="8cb35-130">Property</span></span>|<span data-ttu-id="8cb35-131">Тип</span><span class="sxs-lookup"><span data-stu-id="8cb35-131">Type</span></span>|<span data-ttu-id="8cb35-132">Описание</span><span class="sxs-lookup"><span data-stu-id="8cb35-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="245ca-132">id</span><span class="sxs-lookup"><span data-stu-id="245ca-132">id</span></span>|<span data-ttu-id="245ca-133">Строка</span><span class="sxs-lookup"><span data-stu-id="245ca-133">String</span></span>|<span data-ttu-id="245ca-134">UUID объекта.</span><span class="sxs-lookup"><span data-stu-id="245ca-134">UUID for the object</span></span>|
-|<span data-ttu-id="245ca-135">eventDateTime</span><span class="sxs-lookup"><span data-stu-id="245ca-135">eventDateTime</span></span>|<span data-ttu-id="245ca-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="245ca-136">DateTimeOffset</span></span>|<span data-ttu-id="245ca-137">Время возникновения события.</span><span class="sxs-lookup"><span data-stu-id="245ca-137">Time when the event occurred .</span></span>|
-|<span data-ttu-id="245ca-138">correlationId</span><span class="sxs-lookup"><span data-stu-id="245ca-138">correlationId</span></span>|<span data-ttu-id="245ca-139">String</span><span class="sxs-lookup"><span data-stu-id="245ca-139">String</span></span>|<span data-ttu-id="245ca-140">Идентификатор, используемый для трассировки сбоя в службе.</span><span class="sxs-lookup"><span data-stu-id="245ca-140">Id used for tracing the failure in the service.</span></span>|
-|<span data-ttu-id="245ca-141">траублешутинжеррордетаилс</span><span class="sxs-lookup"><span data-stu-id="245ca-141">troubleshootingErrorDetails</span></span>|[<span data-ttu-id="245ca-142">deviceManagementTroubleshootingErrorDetails</span><span class="sxs-lookup"><span data-stu-id="245ca-142">deviceManagementTroubleshootingErrorDetails</span></span>](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|<span data-ttu-id="245ca-143">Объект, содержащий подробные сведения об ошибке и ее исправлении.</span><span class="sxs-lookup"><span data-stu-id="245ca-143">Object containing detailed information about the error and its remediation.</span></span>|
-|<span data-ttu-id="245ca-144">eventName</span><span class="sxs-lookup"><span data-stu-id="245ca-144">eventName</span></span>|<span data-ttu-id="245ca-145">Строка</span><span class="sxs-lookup"><span data-stu-id="245ca-145">String</span></span>|<span data-ttu-id="245ca-146">Имя события, соответствующее событию устранения неполадок.</span><span class="sxs-lookup"><span data-stu-id="245ca-146">Event Name corresponding to the Troubleshooting Event.</span></span> <span data-ttu-id="245ca-147">Это необязательное поле</span><span class="sxs-lookup"><span data-stu-id="245ca-147">It is an Optional field</span></span>|
-|<span data-ttu-id="245ca-148">аддитионалинформатион</span><span class="sxs-lookup"><span data-stu-id="245ca-148">additionalInformation</span></span>|<span data-ttu-id="245ca-149">Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)</span><span class="sxs-lookup"><span data-stu-id="245ca-149">[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection</span></span>|<span data-ttu-id="245ca-150">Набор пар строкового ключа и строкового значения, предоставляющий дополнительные сведения о событии устранения неполадок</span><span class="sxs-lookup"><span data-stu-id="245ca-150">A set of string key and string value pairs which provides additional information on the Troubleshooting event</span></span>|
+|<span data-ttu-id="8cb35-133">id</span><span class="sxs-lookup"><span data-stu-id="8cb35-133">id</span></span>|<span data-ttu-id="8cb35-134">Строка</span><span class="sxs-lookup"><span data-stu-id="8cb35-134">String</span></span>|<span data-ttu-id="8cb35-135">UUID объекта.</span><span class="sxs-lookup"><span data-stu-id="8cb35-135">UUID for the object</span></span>|
+|<span data-ttu-id="8cb35-136">eventDateTime</span><span class="sxs-lookup"><span data-stu-id="8cb35-136">eventDateTime</span></span>|<span data-ttu-id="8cb35-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="8cb35-137">DateTimeOffset</span></span>|<span data-ttu-id="8cb35-138">Время возникновения события.</span><span class="sxs-lookup"><span data-stu-id="8cb35-138">Time when the event occurred .</span></span>|
+|<span data-ttu-id="8cb35-139">correlationId</span><span class="sxs-lookup"><span data-stu-id="8cb35-139">correlationId</span></span>|<span data-ttu-id="8cb35-140">String</span><span class="sxs-lookup"><span data-stu-id="8cb35-140">String</span></span>|<span data-ttu-id="8cb35-141">Идентификатор, используемый для трассировки сбоя в службе.</span><span class="sxs-lookup"><span data-stu-id="8cb35-141">Id used for tracing the failure in the service.</span></span>|
+|<span data-ttu-id="8cb35-142">траублешутинжеррордетаилс</span><span class="sxs-lookup"><span data-stu-id="8cb35-142">troubleshootingErrorDetails</span></span>|[<span data-ttu-id="8cb35-143">deviceManagementTroubleshootingErrorDetails</span><span class="sxs-lookup"><span data-stu-id="8cb35-143">deviceManagementTroubleshootingErrorDetails</span></span>](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|<span data-ttu-id="8cb35-144">Объект, содержащий подробные сведения об ошибке и ее исправлении.</span><span class="sxs-lookup"><span data-stu-id="8cb35-144">Object containing detailed information about the error and its remediation.</span></span>|
+|<span data-ttu-id="8cb35-145">eventName</span><span class="sxs-lookup"><span data-stu-id="8cb35-145">eventName</span></span>|<span data-ttu-id="8cb35-146">String</span><span class="sxs-lookup"><span data-stu-id="8cb35-146">String</span></span>|<span data-ttu-id="8cb35-147">Имя события, соответствующее событию устранения неполадок.</span><span class="sxs-lookup"><span data-stu-id="8cb35-147">Event Name corresponding to the Troubleshooting Event.</span></span> <span data-ttu-id="8cb35-148">Это необязательное поле</span><span class="sxs-lookup"><span data-stu-id="8cb35-148">It is an Optional field</span></span>|
+|<span data-ttu-id="8cb35-149">аддитионалинформатион</span><span class="sxs-lookup"><span data-stu-id="8cb35-149">additionalInformation</span></span>|<span data-ttu-id="8cb35-150">Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)</span><span class="sxs-lookup"><span data-stu-id="8cb35-150">[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection</span></span>|<span data-ttu-id="8cb35-151">Набор пар строкового ключа и строкового значения, предоставляющий дополнительные сведения о событии устранения неполадок</span><span class="sxs-lookup"><span data-stu-id="8cb35-151">A set of string key and string value pairs which provides additional information on the Troubleshooting event</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="245ca-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="245ca-151">Response</span></span>
-<span data-ttu-id="245ca-152">При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="245ca-152">If successful, this method returns a `201 Created` response code and a [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="8cb35-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="8cb35-152">Response</span></span>
+<span data-ttu-id="8cb35-153">При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="8cb35-153">If successful, this method returns a `201 Created` response code and a [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="245ca-153">Пример</span><span class="sxs-lookup"><span data-stu-id="245ca-153">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8cb35-154">Пример</span><span class="sxs-lookup"><span data-stu-id="8cb35-154">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="245ca-154">Запрос</span><span class="sxs-lookup"><span data-stu-id="245ca-154">Request</span></span>
-<span data-ttu-id="245ca-155">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="245ca-155">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="8cb35-155">Запрос</span><span class="sxs-lookup"><span data-stu-id="8cb35-155">Request</span></span>
+<span data-ttu-id="8cb35-156">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="8cb35-156">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents
 Content-type: application/json
@@ -101,8 +103,8 @@ Content-length: 852
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="245ca-156">Отклик</span><span class="sxs-lookup"><span data-stu-id="245ca-156">Response</span></span>
-<span data-ttu-id="245ca-p103">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="245ca-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="8cb35-157">Отклик</span><span class="sxs-lookup"><span data-stu-id="8cb35-157">Response</span></span>
+<span data-ttu-id="8cb35-p103">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="8cb35-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
