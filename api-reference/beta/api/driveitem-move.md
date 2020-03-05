@@ -6,34 +6,36 @@ title: Перемещение файла или папки
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: f3290034f3aa82cafc1390b9b9cd57f185394561
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: fd7e67e613d7f08cb02b820c5e2d48be28a0da64
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416669"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42432483"
 ---
-# <a name="move-a-driveitem-to-a-new-folder"></a><span data-ttu-id="641b1-103">Перемещение ресурса DriveItem в новую папку</span><span class="sxs-lookup"><span data-stu-id="641b1-103">Move a DriveItem to a new folder</span></span>
+# <a name="move-a-driveitem-to-a-new-folder"></a><span data-ttu-id="65c11-103">Перемещение ресурса DriveItem в новую папку</span><span class="sxs-lookup"><span data-stu-id="65c11-103">Move a DriveItem to a new folder</span></span>
+
+<span data-ttu-id="65c11-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="65c11-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="641b1-104">Чтобы переместить ресурс DriveItem в новый родительский элемент, вашему приложению требуется обновить элемент **parentReference** ресурса DriveItem, который необходимо переместить.</span><span class="sxs-lookup"><span data-stu-id="641b1-104">To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.</span></span>
+<span data-ttu-id="65c11-105">Чтобы переместить ресурс DriveItem в новый родительский элемент, веб-приложению требуется обновить элемент **parentReference** из DriveItem.</span><span class="sxs-lookup"><span data-stu-id="65c11-105">To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.</span></span>
 
-<span data-ttu-id="641b1-105">Это особый случай, касающийся метода [Обновление](driveitem-update.md).</span><span class="sxs-lookup"><span data-stu-id="641b1-105">This is a special case of the [Update](driveitem-update.md) method.</span></span>
-<span data-ttu-id="641b1-106">Приложение может объединять процедуры перемещения элемента в новый контейнер и обновления других свойств элемента в один запрос.</span><span class="sxs-lookup"><span data-stu-id="641b1-106">Your app can combine moving an item to a new container and updating other properties of the item into a single request.</span></span>
+<span data-ttu-id="65c11-106">Это особый случай, касающийся метода [Обновление](driveitem-update.md).</span><span class="sxs-lookup"><span data-stu-id="65c11-106">This is a special case of the [Update](driveitem-update.md) method.</span></span>
+<span data-ttu-id="65c11-107">Приложение может объединять процедуры перемещения элемента в новый контейнер и обновления других свойств элемента в один запрос.</span><span class="sxs-lookup"><span data-stu-id="65c11-107">Your app can combine moving an item to a new container and updating other properties of the item into a single request.</span></span>
 
-<span data-ttu-id="641b1-107">С помощью этого запроса не удастся переместить элементы между объектами [Drive](../resources/drive.md).</span><span class="sxs-lookup"><span data-stu-id="641b1-107">Items cannot be moved between [Drives](../resources/drive.md) using this request.</span></span>
+<span data-ttu-id="65c11-108">С помощью этого запроса не удастся переместить элементы между объектами [Drive](../resources/drive.md).</span><span class="sxs-lookup"><span data-stu-id="65c11-108">Items cannot be moved between [Drives](../resources/drive.md) using this request.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="641b1-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="641b1-108">Permissions</span></span>
-<span data-ttu-id="641b1-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="641b1-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="65c11-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="65c11-109">Permissions</span></span>
+<span data-ttu-id="65c11-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="65c11-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="641b1-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="641b1-111">Permission type</span></span>      | <span data-ttu-id="641b1-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="641b1-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="65c11-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="65c11-112">Permission type</span></span>      | <span data-ttu-id="65c11-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="65c11-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="641b1-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="641b1-113">Delegated (work or school account)</span></span> | <span data-ttu-id="641b1-114">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="641b1-114">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="641b1-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="641b1-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="641b1-116">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="641b1-116">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="641b1-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="641b1-117">Application</span></span> | <span data-ttu-id="641b1-118">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="641b1-118">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="65c11-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="65c11-114">Delegated (work or school account)</span></span> | <span data-ttu-id="65c11-115">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="65c11-115">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="65c11-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="65c11-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="65c11-117">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="65c11-117">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="65c11-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="65c11-118">Application</span></span> | <span data-ttu-id="65c11-119">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="65c11-119">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="641b1-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="641b1-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="65c11-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="65c11-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -45,29 +47,29 @@ PATCH /sites/{site-id}/drive/items/{item-id}
 PATCH /users/{user-id}/drive/items/{item-id}
 ```
 
-## <a name="optional-request-headers"></a><span data-ttu-id="641b1-120">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="641b1-120">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="65c11-121">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="65c11-121">Optional request headers</span></span>
 
-| <span data-ttu-id="641b1-121">Имя</span><span class="sxs-lookup"><span data-stu-id="641b1-121">Name</span></span>          | <span data-ttu-id="641b1-122">Тип</span><span class="sxs-lookup"><span data-stu-id="641b1-122">Type</span></span>   | <span data-ttu-id="641b1-123">Описание</span><span class="sxs-lookup"><span data-stu-id="641b1-123">Description</span></span>                                                                                                                                                         |
+| <span data-ttu-id="65c11-122">Имя</span><span class="sxs-lookup"><span data-stu-id="65c11-122">Name</span></span>          | <span data-ttu-id="65c11-123">Тип</span><span class="sxs-lookup"><span data-stu-id="65c11-123">Type</span></span>   | <span data-ttu-id="65c11-124">Описание</span><span class="sxs-lookup"><span data-stu-id="65c11-124">Description</span></span>                                                                                                                                                         |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="641b1-124">if-match</span><span class="sxs-lookup"><span data-stu-id="641b1-124">if-match</span></span>      | <span data-ttu-id="641b1-125">String</span><span class="sxs-lookup"><span data-stu-id="641b1-125">String</span></span> | <span data-ttu-id="641b1-126">Если указан заголовок запроса, а предоставленный тег eTag (или cTag) не совпадает с текущим тегом eTag папки, то возвращается отклик `412 Precondition Failed`.</span><span class="sxs-lookup"><span data-stu-id="641b1-126">If this request header is included and the eTag (or cTag) provided does not match the current eTag on the folder, a `412 Precondition Failed` response is returned.</span></span> |
+| <span data-ttu-id="65c11-125">if-match</span><span class="sxs-lookup"><span data-stu-id="65c11-125">if-match</span></span>      | <span data-ttu-id="65c11-126">String</span><span class="sxs-lookup"><span data-stu-id="65c11-126">String</span></span> | <span data-ttu-id="65c11-127">Если указан заголовок запроса, а предоставленный тег eTag (или cTag) не совпадает с текущим тегом eTag папки, то возвращается отклик `412 Precondition Failed`.</span><span class="sxs-lookup"><span data-stu-id="65c11-127">If this request header is included and the eTag (or cTag) provided does not match the current eTag on the folder, a `412 Precondition Failed` response is returned.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="641b1-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="641b1-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="65c11-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="65c11-128">Request body</span></span>
 
-<span data-ttu-id="641b1-p103">В тексте запроса предоставьте новое значение для поля свойства **parentReference**. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в другие значения свойств. Чтобы производительность была максимальной, не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="641b1-p103">In the request body, supply the new value for the **parentReference** property. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+<span data-ttu-id="65c11-p103">В тексте запроса предоставьте новое значение для поля свойства **parentReference**. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в другие значения свойств. Чтобы производительность была максимальной, не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="65c11-p103">In the request body, supply the new value for the **parentReference** property. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-<span data-ttu-id="641b1-131">**Примечание.** При перемещении элементов в корневую папку объекта drive вашему приложению не удастся использовать синтаксис `"id:" "root"`.</span><span class="sxs-lookup"><span data-stu-id="641b1-131">**Note:** When moving items to the root of a drive your app cannot use the `"id:" "root"` syntax.</span></span>
-<span data-ttu-id="641b1-132">Приложению потребуется предоставить фактический идентификатор корневой папки для ссылки на родительский элемент.</span><span class="sxs-lookup"><span data-stu-id="641b1-132">Your app needs to provide the actual ID of the root folder for the parent reference.</span></span>
+<span data-ttu-id="65c11-132">**Примечание.** При перемещении элементов в корневую папку объекта drive вашему приложению не удастся использовать синтаксис `"id:" "root"`.</span><span class="sxs-lookup"><span data-stu-id="65c11-132">**Note:** When moving items to the root of a drive your app cannot use the `"id:" "root"` syntax.</span></span>
+<span data-ttu-id="65c11-133">Приложению потребуется предоставить фактический идентификатор корневой папки для ссылки на родительский элемент.</span><span class="sxs-lookup"><span data-stu-id="65c11-133">Your app needs to provide the actual ID of the root folder for the parent reference.</span></span>
 
-## <a name="response"></a><span data-ttu-id="641b1-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="641b1-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="65c11-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="65c11-134">Response</span></span>
 
-<span data-ttu-id="641b1-134">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный ресурс [DriveItem](../resources/driveitem.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="641b1-134">If successful, this method returns a `200 OK` response code and updated [DriveItem](../resources/driveitem.md) resource in the response body.</span></span>
+<span data-ttu-id="65c11-135">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный ресурс [DriveItem](../resources/driveitem.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="65c11-135">If successful, this method returns a `200 OK` response code and updated [DriveItem](../resources/driveitem.md) resource in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="641b1-135">Пример</span><span class="sxs-lookup"><span data-stu-id="641b1-135">Example</span></span>
+## <a name="example"></a><span data-ttu-id="65c11-136">Пример</span><span class="sxs-lookup"><span data-stu-id="65c11-136">Example</span></span>
 
-<span data-ttu-id="641b1-136">В этом примере показано, как переместить элемент, указанный с помощью идентификатора {item-id}, в папку с идентификатором `new-parent-folder-id` для объекта drive пользователя.</span><span class="sxs-lookup"><span data-stu-id="641b1-136">This example moves an item specified by {item-id} into a folder in the user's drive with the ID `new-parent-folder-id`.</span></span>
+<span data-ttu-id="65c11-137">В этом примере показано, как переместить элемент, указанный с помощью идентификатора {item-id}, в папку с идентификатором `new-parent-folder-id` для объекта drive пользователя.</span><span class="sxs-lookup"><span data-stu-id="65c11-137">This example moves an item specified by {item-id} into a folder in the user's drive with the ID `new-parent-folder-id`.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="641b1-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="641b1-137">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="65c11-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="65c11-138">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "move-item", "scopes": "files.readwrite" } -->
 
 ```http
@@ -81,24 +83,24 @@ Content-type: application/json
   "name": "new-item-name.txt"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="641b1-138">C#</span><span class="sxs-lookup"><span data-stu-id="641b1-138">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="65c11-139">C#</span><span class="sxs-lookup"><span data-stu-id="65c11-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/move-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="641b1-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="641b1-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="65c11-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="65c11-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/move-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="641b1-140">Цель — C</span><span class="sxs-lookup"><span data-stu-id="641b1-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="65c11-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="65c11-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/move-item-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="641b1-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="641b1-141">Response</span></span>
+### <a name="response"></a><span data-ttu-id="65c11-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="65c11-142">Response</span></span>
 
-<span data-ttu-id="641b1-142">В примере ниже показан отклик для этого запроса на перемещение.</span><span class="sxs-lookup"><span data-stu-id="641b1-142">The following example shows the response for this move request.</span></span>
+<span data-ttu-id="65c11-143">В примере ниже показан отклик для этого запроса на перемещение.</span><span class="sxs-lookup"><span data-stu-id="65c11-143">The following example shows the response for this move request.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -118,9 +120,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="error-responses"></a><span data-ttu-id="641b1-143">Отклики с ошибками</span><span class="sxs-lookup"><span data-stu-id="641b1-143">Error responses</span></span>
+## <a name="error-responses"></a><span data-ttu-id="65c11-144">Ответы с ошибками</span><span class="sxs-lookup"><span data-stu-id="65c11-144">Error responses</span></span>
 
-<span data-ttu-id="641b1-144">Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].</span><span class="sxs-lookup"><span data-stu-id="641b1-144">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
+<span data-ttu-id="65c11-145">Дополнительные сведения о возвращении ошибок см. в статье [Ответы с ошибками][error-response].</span><span class="sxs-lookup"><span data-stu-id="65c11-145">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 

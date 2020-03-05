@@ -1,64 +1,66 @@
 ---
 author: JeremyKelley
-description: Получение коллекции ресурсов DriveItem, к которым предоставлен общий доступ для владельца ресурса Drive.
+description: Получение коллекции ресурсов DriveItem, доступ к которым предоставлен владельцу ресурса Drive.
 ms.date: 09/10/2017
 title: Создание списка файлов, к которым мне предоставлен доступ
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: ce039c92a18e6a146e97b7beb4571c2b2428c2d1
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 035389dac72aa31eaa3e9bd353ec00a60457797b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36719425"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42433043"
 ---
-# <a name="list-items-shared-with-the-signed-in-user"></a><span data-ttu-id="7e7e9-103">Создание списка элементов, к которым предоставлен доступ пользователю, выполнившему вход в систему</span><span class="sxs-lookup"><span data-stu-id="7e7e9-103">List items shared with the signed-in user</span></span>
+# <a name="list-items-shared-with-the-signed-in-user"></a><span data-ttu-id="bf536-103">Создание списка элементов, к которым предоставлен доступ пользователю, выполнившему вход в систему</span><span class="sxs-lookup"><span data-stu-id="bf536-103">List items shared with the signed-in user</span></span>
+
+<span data-ttu-id="bf536-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="bf536-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7e7e9-104">Получение коллекции ресурсов [DriveItem](../resources/driveitem.md), к которым предоставлен общий доступ для владельца ресурса [Drive](../resources/drive.md).</span><span class="sxs-lookup"><span data-stu-id="7e7e9-104">Retrieve a collection of [DriveItem](../resources/driveitem.md) resources that have been shared with the owner of the [Drive](../resources/drive.md).</span></span>
+<span data-ttu-id="bf536-105">Получение коллекции ресурсов [DriveItem](../resources/driveitem.md), к которым предоставлен общий доступ для владельца ресурса [Drive](../resources/drive.md).</span><span class="sxs-lookup"><span data-stu-id="bf536-105">Retrieve a collection of [DriveItem](../resources/driveitem.md) resources that have been shared with the owner of the [Drive](../resources/drive.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7e7e9-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7e7e9-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="bf536-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="bf536-106">Permissions</span></span>
 
-<span data-ttu-id="7e7e9-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7e7e9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="bf536-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bf536-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7e7e9-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7e7e9-108">Permission type</span></span>      | <span data-ttu-id="7e7e9-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7e7e9-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="bf536-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="bf536-109">Permission type</span></span>      | <span data-ttu-id="bf536-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="bf536-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7e7e9-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7e7e9-110">Delegated (work or school account)</span></span> | <span data-ttu-id="7e7e9-111">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7e7e9-111">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="7e7e9-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7e7e9-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7e7e9-113">Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7e7e9-113">Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="7e7e9-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7e7e9-114">Application</span></span> | <span data-ttu-id="7e7e9-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7e7e9-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="bf536-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="bf536-111">Delegated (work or school account)</span></span> | <span data-ttu-id="bf536-112">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bf536-112">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="bf536-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="bf536-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bf536-114">Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bf536-114">Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="bf536-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="bf536-115">Application</span></span> | <span data-ttu-id="bf536-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bf536-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-<span data-ttu-id="7e7e9-116">**Примечание.** Несмотря на то что при наличии разрешений Files.Read или Files.ReadWrite запрос /sharedWithMe будет успешно выполнен, могут отсутствовать некоторые свойства.</span><span class="sxs-lookup"><span data-stu-id="7e7e9-116">**Note:** while the /sharedWithMe request will succeed with Files.Read or Files.ReadWrite permissions, some properties may be missing.</span></span>
-<span data-ttu-id="7e7e9-117">Кроме того, если отсутствует одно из разрешений **All**, общие элементы, возвращаемые этим API, будут недоступны.</span><span class="sxs-lookup"><span data-stu-id="7e7e9-117">Additionally, without one of the  **All** permissions, shared items returned from this API will not be accessible.</span></span>
+<span data-ttu-id="bf536-117">**Примечание.** Несмотря на то что при наличии разрешений Files.Read или Files.ReadWrite запрос /sharedWithMe будет успешно выполнен, могут отсутствовать некоторые свойства.</span><span class="sxs-lookup"><span data-stu-id="bf536-117">**Note:** while the /sharedWithMe request will succeed with Files.Read or Files.ReadWrite permissions, some properties may be missing.</span></span>
+<span data-ttu-id="bf536-118">Кроме того, если отсутствует одно из разрешений **All**, общие элементы, возвращаемые этим API, будут недоступны.</span><span class="sxs-lookup"><span data-stu-id="bf536-118">Additionally, without one of the  **All** permissions, shared items returned from this API will not be accessible.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="7e7e9-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7e7e9-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bf536-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="bf536-119">HTTP request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="7e7e9-119">HTTP</span><span class="sxs-lookup"><span data-stu-id="7e7e9-119">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="bf536-120">HTTP</span><span class="sxs-lookup"><span data-stu-id="bf536-120">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "target": "action" } -->
 
 ```msgraph-interactive
 GET /me/drive/sharedWithMe
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="7e7e9-120">C#</span><span class="sxs-lookup"><span data-stu-id="7e7e9-120">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="bf536-121">C#</span><span class="sxs-lookup"><span data-stu-id="bf536-121">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/shared-with-me-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7e7e9-121">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7e7e9-121">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="bf536-122">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bf536-122">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/shared-with-me-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7e7e9-122">Цель — C</span><span class="sxs-lookup"><span data-stu-id="7e7e9-122">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="bf536-123">Objective-C</span><span class="sxs-lookup"><span data-stu-id="bf536-123">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/shared-with-me-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## <a name="response"></a><span data-ttu-id="7e7e9-123">Отклик</span><span class="sxs-lookup"><span data-stu-id="7e7e9-123">Response</span></span>
+## <a name="response"></a><span data-ttu-id="bf536-124">Отклик</span><span class="sxs-lookup"><span data-stu-id="bf536-124">Response</span></span>
 
-<span data-ttu-id="7e7e9-p103">Возвращает коллекцию ресурсов [DriveItem](../resources/driveitem.md), содержащую ресурсы DriveItem, к которым предоставлен общий доступ для владельца диска. В этом примере, так как указан диск по умолчанию пользователя, запрос возвращает элементы, к которым предоставлен общий доступ для пользователя, выполнившего вход.</span><span class="sxs-lookup"><span data-stu-id="7e7e9-p103">This returns a collection of [DriveItem](../resources/driveitem.md) resources which contain the DriveItem resources shared with the owner of the drive. In this example, since the drive is the user's default drive, this returns items shared with the signed in user.</span></span>
+<span data-ttu-id="bf536-p103">Возвращает коллекцию ресурсов [DriveItem](../resources/driveitem.md), содержащую ресурсы DriveItem, к которым предоставлен общий доступ для владельца диска. В этом примере, так как указан диск по умолчанию пользователя, запрос возвращает элементы, к которым предоставлен общий доступ для пользователя, выполнившего вход.</span><span class="sxs-lookup"><span data-stu-id="bf536-p103">This returns a collection of [DriveItem](../resources/driveitem.md) resources which contain the DriveItem resources shared with the owner of the drive. In this example, since the drive is the user's default drive, this returns items shared with the signed in user.</span></span>
 
 <!-- {"blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true} -->
 
@@ -98,9 +100,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="7e7e9-126">Заметки</span><span class="sxs-lookup"><span data-stu-id="7e7e9-126">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="bf536-127">Заметки</span><span class="sxs-lookup"><span data-stu-id="bf536-127">Remarks</span></span>
 
-<span data-ttu-id="7e7e9-p104">Элементы DriveItem, возвращенные действием **sharedWithMe**, будут всегда содержать аспект [**remoteItem**](../resources/remoteitem.md), который указывает, что это элементы с другого диска. Чтобы получить доступ к общему ресурсу DriveItem, следует отправить запрос, используя указанные в **remoteItem** данные, в следующем формате:</span><span class="sxs-lookup"><span data-stu-id="7e7e9-p104">DriveItems returned from the **sharedWithMe** action will always include the [**remoteItem**](../resources/remoteitem.md) facet which indicates they are items from a different drive. To access the shared DriveItem resource, you will need to make a request using the information provided in **remoteItem** in the following format:</span></span>
+<span data-ttu-id="bf536-p104">Элементы DriveItem, возвращенные действием **sharedWithMe**, будут всегда содержать аспект [**remoteItem**](../resources/remoteitem.md), который указывает, что это элементы с другого диска. Чтобы получить доступ к общему ресурсу DriveItem, следует отправить запрос, используя указанные в **remoteItem** данные, в следующем формате:</span><span class="sxs-lookup"><span data-stu-id="bf536-p104">DriveItems returned from the **sharedWithMe** action will always include the [**remoteItem**](../resources/remoteitem.md) facet which indicates they are items from a different drive. To access the shared DriveItem resource, you will need to make a request using the information provided in **remoteItem** in the following format:</span></span>
 
 <!-- { "blockType": "ignored", "name": "drives-get-remoteitem" } -->
 
