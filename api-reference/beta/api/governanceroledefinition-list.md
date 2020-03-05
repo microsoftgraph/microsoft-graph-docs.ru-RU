@@ -5,15 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: 95b8b4dad1777775660aea8b2a2d137f1564c9bc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3b8d45a3d4f5f89ed35fd2defaf733d2d03af097
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35954111"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42420894"
 ---
 # <a name="list-governanceroledefinitions"></a>Список Говернанцероледефинитионс
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Пространство имен: Microsoft. Graph[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение коллекции [говернанцероледефинитионс](../resources/governanceroledefinition.md) для ресурса.
 
@@ -22,7 +23,7 @@ ms.locfileid: "35954111"
 
 |Тип разрешения      | Разрешения              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. Азурересаурцес  |
+|Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 

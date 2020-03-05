@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: a49bd528ffe97e33402ab8aef51f86a07b33e5fa
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 8d9946425e90968d65f2592901ae6d5ac7f3c018
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36420327"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42421041"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Создание governanceRoleAssignmentRequest
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,7 +38,7 @@ ms.locfileid: "36420327"
 
 | Тип разрешения                        | Разрешения                               |
 |:---------------------------------------|:------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Привилежедакцесс. ReadWrite. Азурересаурцес |
+| Делегированные (рабочая или учебная учетная запись)     | PrivilegedAccess.ReadWrite.AzureResources |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                            |
 | Для приложений                            | Не поддерживается. |
 
@@ -55,18 +57,18 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 | Авторизация | Bearer {code}    |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в формате JSON.
 
 | Свойство         | Тип                                                     | Описание |
 |:-----------------|:---------------------------------------------------------|:--|
-| resourceId       | String                                                   | Идентификатор ресурса. Обязательно. |
-| роледефинитионид | String                                                   | Идентификатор определения роли. Обязательно. |
-| субжектид        | String                                                   | ИДЕНТИФИКАТОР субъекта. Обязательно. |
+| resourceId       | String                                                   | Идентификатор ресурса. Обязательное. |
+| роледефинитионид | String                                                   | Идентификатор определения роли. Обязательное. |
+| субжектид        | String                                                   | ИДЕНТИФИКАТОР субъекта. Обязательное. |
 | ассигнментстате  | String                                                   | Состояние назначения. Значение может быть `Eligible` и `Active`. Обязательное. |
-| type             | String                                                   | Тип запроса. Возможные значения: `AdminAdd`, `UserAdd` `AdminUpdate` `AdminRemove` `UserRemove` `AdminRenew` `AdminExtend`,,,,, и. `UserExtend` `UserRenew` Обязательно. |
-| причиной           | String                                                   | Необходимо указать причину для запроса на назначение роли для аудита и проверки. |
+| type             | String                                                   | Тип запроса. Возможные значения: `AdminAdd`, `UserAdd` `AdminUpdate` `AdminRemove` `UserRemove` `AdminRenew` `AdminExtend`,,,,, и. `UserExtend` `UserRenew` Обязательное. |
+| reason           | String                                                   | Необходимо указать причину для запроса на назначение роли для аудита и проверки. |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Расписание запроса на назначение роли. `UserAdd`Для типа запроса `AdminAdd`,, `AdminUpdate`, и `AdminExtend`, он необходим. |
 
 ## <a name="response"></a>Отклик
@@ -104,13 +106,13 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 | субжектид        | String                                                   | Да                      | \<субжектид\> |
 | ассигнментстате  | String                                                   | Да                      | Подходящие/активные |
 | type             | String                                                   | Да                      | админадд |
-| причиной           | String                                                   | зависит от параметров роли |   |
+| reason           | String                                                   | зависит от параметров роли |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Да                      |   |
 
 #### <a name="request"></a>Запрос
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "governanceroleassignmentrequest_post"
@@ -134,15 +136,15 @@ Content-type: application/json
   }
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/governanceroleassignmentrequest-post-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/governanceroleassignmentrequest-post-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/governanceroleassignmentrequest-post-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -212,10 +214,10 @@ Content-type: application/json
 | субжектид        | String                                                   | Да                      | \<субжектид\> |
 | ассигнментстате  | String                                                   | Да                      | Активное |
 | type             | String                                                   | Да                      | усерадд |
-| причиной           | String                                                   | зависит от параметров роли |   |
+| reason           | String                                                   | зависит от параметров роли |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Да                      |   |
 
-#### <a name="request"></a>Запрос
+#### <a name="request"></a>Запросить
 
 <!-- {
   "blockType": "request",
@@ -242,7 +244,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 <!-- {
   "blockType": "response",
@@ -315,7 +317,7 @@ Content-type: application/json
 | субжектид        | String                                                   | Да      | \<субжектид\> |
 | ассигнментстате  | Строка                                                   | Да      | Активное |
 | type             | Строка                                                   | Да      | усерремове |
-| причиной           | String                                                   | Нет       |   |
+| reason           | String                                                   | Нет       |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Нет       |   |
 
 #### <a name="request"></a>Запрос
@@ -385,7 +387,7 @@ Content-type: application/json
 | субжектид        | Строка                                                   | Да      | \<субжектид\> |
 | ассигнментстате  | Строка                                                   | Да      | Подходящие/активные |
 | type             | Строка                                                   | Да      | админремове |
-| причиной           | String                                                   | Нет       |   |
+| reason           | String                                                   | Нет       |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Нет       |   |
 
 #### <a name="request"></a>Запрос
@@ -453,7 +455,7 @@ Content-type: application/json
 | субжектид        | Строка                                                   | Да                     | \<субжектид\> |
 | ассигнментстате  | Строка                                                   | Да                     | Подходящие/активные |
 | type             | Строка                                                   | Да                     | админупдате |
-| причиной           | String                                                   | зависит от Ролесеттингс |   |
+| reason           | String                                                   | зависит от Ролесеттингс |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Да                     |   |
 
 #### <a name="request"></a>Запрос
@@ -544,7 +546,7 @@ Content-type: application/json
 | субжектид        | String                                                   | Да                     | \<субжектид\> |
 | ассигнментстате  | String                                                   | Да                     | Подходящие/активные |
 | type             | String                                                   | Да                     | админекстенд |
-| причиной           | String                                                   | зависит от Ролесеттингс |   |
+| reason           | String                                                   | зависит от Ролесеттингс |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Да                     |   |
 
 #### <a name="request"></a>Запрос

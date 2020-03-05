@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dbdbe19a401f10acead10884f02de5d380465e0a
-ms.sourcegitcommit: bbed891d16995b4a8ce866169dddb96abdc28776
+ms.openlocfilehash: e93dbcbdc7d4a4d40b929a801dae4b673100a274
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36062171"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42421713"
 ---
 # <a name="update-featurerolloutpolicy"></a>Обновление феатурероллаутполици
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ ms.locfileid: "36062171"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy. ReadWrite. Феатурероллаут |
+| Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.FeatureRollout |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
@@ -50,7 +52,7 @@ PATCH /directory/featureRolloutPolicies/{id}
 |:-------------|:------------|:------------|
 |description|String|Описание этой политики.|
 |displayName|Строка|Отображаемое имя для этой политики.|
-|Исапплиедтурганизатион|Boolean|Указывает, следует ли применять эту политику развертывания функций ко всей Организации.|
+|исапплиедтурганизатион|Логический|Указывает, следует ли применять эту политику развертывания функций ко всей Организации.|
 |isEnabled|Boolean|Указывает, включен ли выпуск компонентов.|
 
 ## <a name="response"></a>Отклик
