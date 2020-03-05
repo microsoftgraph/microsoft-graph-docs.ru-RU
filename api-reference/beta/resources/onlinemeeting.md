@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 5d86df3bde56e242559e224cc27921d162be7bf4
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: b6e0848b88427cf0929030f07b163204842c3cd7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913417"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522258"
 ---
 # <a name="onlinemeeting-resource-type"></a>Тип ресурса Онлинемитинг
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

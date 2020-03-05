@@ -6,14 +6,16 @@ title: ListItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 3c05125257eeec9d7b21a7d1eb03de79bc189ccd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 03f3dae851cf9a23dbe300f834846046dce4de74
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009981"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522948"
 ---
 # <a name="listitem-resource"></a>Ресурс ListItem
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +29,7 @@ ms.locfileid: "36009981"
 
 | Стандартная задача                    | Метод HTTP
 |:-------------------------------|:------------------------
-| [Получение][]                        | GET /items/{item-id}
+| [получение][];                        | GET /items/{item-id}
 | [Получение значений столбцов][Получение]       | GET /items/{item-id}?expand=fields
 | [Получение аналитики][]              | ПОЛУЧЕНИЕ/итемс/{итем-ИД}/Аналитикс
 | [Получение действий по интервалу][] | ПОЛУЧЕНИЕ/Итемс/{итем-ИД}/жетактивитиесбинтервал

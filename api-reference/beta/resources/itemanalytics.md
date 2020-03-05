@@ -2,18 +2,20 @@
 author: daspek
 description: Ресурс Итеманалитикс предоставляет аналитику о действиях, которые были выполнены для элемента. Этот ресурс в настоящее время доступен только в SharePoint и OneDrive для бизнеса.
 ms.date: 09/14/2017
-title: Итеманалитикс
+title: итеманалитикс
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: d2be5c7665961248e989101a1a9bd21eb805e6e3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4035ff821927d520ed457c3040be01bd9368240c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967107"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523102"
 ---
 # <a name="itemanalytics-resource-type"></a>Тип ресурса Итеманалитикс
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,8 +45,8 @@ ms.locfileid: "35967107"
 
 | Свойство      | Тип                 | Описание
 |:--------------|:---------------------|:--------------------------------------
-| Аллтиме       | [itemActivityStat][] | Аналитика за сроком службы элемента.
-| Ластсевендайс | [itemActivityStat][] | Аналитика за последние семь дней.
+| аллтиме       | [itemActivityStat][] | Аналитика за сроком службы элемента.
+| ластсевендайс | [itemActivityStat][] | Аналитика за последние семь дней.
 
 [itemActivityStat]: itemactivitystat.md
 

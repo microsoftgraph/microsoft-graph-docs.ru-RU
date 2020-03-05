@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса outlookItem
-description: Ниже этот ресурс представлен в формате JSON.
+description: Ниже показано представление JSON ресурса.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 77741fa05f356418e688cdc4a45c5a4750604c3c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 59510469101b0b35865a945c8170025ad80ef3db
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009281"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522097"
 ---
 # <a name="outlookitem-resource-type"></a>Тип ресурса outlookItem
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,7 +49,7 @@ ms.locfileid: "36009281"
 |id|String| Только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

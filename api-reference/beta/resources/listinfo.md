@@ -6,14 +6,16 @@ title: ListInfo
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 962fc4928bac69489cf2ae2a4c77f3b72169ce0c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3a066505348b1a1014b27ca3c83e0ee2f97f41a5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966947"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522955"
 ---
 # <a name="listinfo-resource"></a>Ресурс listInfo
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,7 +46,7 @@ ms.locfileid: "35966947"
 
 | Имя свойства           | Тип    | Описание
 |:------------------------|:--------|:------------------------------------------------
-| **contentTypesEnabled** | Boolean | Если свойство имеет значение `true`, это указывает на то, что для этого списка разрешено использовать типы контента.
+| **contentTypesEnabled** | Логический | Если свойство имеет значение `true`, это указывает на то, что для этого списка разрешено использовать типы контента.
 | **hidden**              | Boolean | Если это свойство имеет значение `true`, это указывает на то, что список обычно не отображается в пользовательском интерфейсе SharePoint.
 | **template**            | String  | Перечислимое значение, которое представляет базовый шаблон списка, используемый при создании списка. Возможные значения: `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts` и другие.
 

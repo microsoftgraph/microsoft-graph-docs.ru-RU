@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0274cdb1c35307e91e31c0b357ecf9a16e2d3f19
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 8d6bce42c31e39f5b36e3beccdac2fc660f9cb30
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913081"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522759"
 ---
 # <a name="mediastream-resource-type"></a>Тип ресурса Медиастреам
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +27,7 @@ ms.locfileid: "40913081"
 | direction   | String  | Направление. `inactive`Возможные значения: `sendOnly`,, `receiveOnly`,. `sendReceive`                  |
 | label       | String  | Метка потока мультимедиа.                                                                                       |
 | mediaType   | String  | Тип мультимедиа. Возможные `unknown`значения:, `audio` `video`,, `videoBasedScreenSharing`,. `data`        |
-| сервермутед | Boolean | Указывает, отключен ли сервер к мультимедиа.                                                                          |
+| сервермутед | Логический | Указывает, отключен ли сервер к мультимедиа.                                                                          |
 | Идентификатор    | String  | Идентификатор источника.                                                                                                |
 
 ## <a name="json-representation"></a>Представление JSON

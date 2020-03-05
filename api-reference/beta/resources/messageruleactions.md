@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 74462319b2878d4f0915b3f03d70a6dae06534b7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 945656aa89fd5786ce4f072fe85ec196d1e6ce48
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009687"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522668"
 ---
 # <a name="messageruleactions-resource-type"></a>Тип ресурса messageRuleActions
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,13 +25,13 @@ ms.locfileid: "36009687"
 |:---------------|:--------|:----------|
 | assignCategories | Коллекция String | Список категорий, которые необходимо назначить сообщению. |
 | copyToFolder | String | Идентификатор папки, в которую необходимо скопировать сообщение. |
-| delete | Boolean | Указывает, нужно ли перемещать сообщение в папку "Удаленные". |
+| delete | Логический | Указывает, нужно ли перемещать сообщение в папку "Удаленные". |
 | forwardAsAttachmentTo | Коллекция [recipient](recipient.md) | Электронные адреса получателей, которым необходимо переслать сообщение как вложение. |
 | forwardTo | Коллекция [recipient](recipient.md) | Электронные адреса получателей, которым необходимо переслать сообщение. |
-| markAsRead | Boolean | Указывает, необходимо ли отмечать сообщение как прочтенное. |
+| markAsRead | Логический | Указывает, необходимо ли отмечать сообщение как прочтенное. |
 | markImportance | String | Задает важность сообщения. Допустимые значения: `low`, `normal`, `high`. |
 | moveToFolder |  String| Идентификатор папки, в которую сообщение будет перемещено. |
-| permanentDelete | Boolean | Указывает, нужно ли окончательно удалять сообщение без сохранения в папке "Удаленные". |
+| permanentDelete | Логический | Указывает, нужно ли окончательно удалять сообщение без сохранения в папке "Удаленные". |
 | redirectTo | [recipient](recipient.md) | Электронный адрес, на который должно быть перенаправлено сообщение. |
 | stopProcessingRules | Boolean | Указывает, должны ли обрабатываться последующие правила. |
 

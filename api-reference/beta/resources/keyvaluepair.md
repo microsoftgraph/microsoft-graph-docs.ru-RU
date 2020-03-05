@@ -5,14 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: db8d3b14ceaa0ff05181894af803b8b6feea77c6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2417ada5a3fa3937d6560f62a47c99f6b47d44e0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967037"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523018"
 ---
 # <a name="keyvaluepair-resource-type"></a>Тип ресурса keyValuePair
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

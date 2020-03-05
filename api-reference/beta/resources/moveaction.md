@@ -6,14 +6,16 @@ title: MoveAction
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 9fbb19097b6a1401bd3c0b6dba4ce1fd5649e706
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a42ef869a32cfe01a03344d3f155880bd528c462
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009645"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522619"
 ---
 # <a name="moveaction-resource-type"></a>Тип ресурса MoveAction
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +42,7 @@ ms.locfileid: "36009645"
 
 | Имя свойства | Тип   | Описание
 |:--------------|:-------|:----------------------------------------------------
-| from          | string | Имя расположения, из которого был перемещен элемент.
+| from          | строка | Имя расположения, из которого был перемещен элемент.
 | to            | string | Имя расположения, в которое был перемещен элемент.
 
 ## <a name="remarks"></a>Замечания

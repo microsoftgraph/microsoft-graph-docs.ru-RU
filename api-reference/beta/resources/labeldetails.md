@@ -5,14 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7f2ff99f6f7548e9176358219d70cd55e1232a05
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: cf031459004e0c0d56b5b09145ed897a9f960142
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939175"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523011"
 ---
 # <a name="labeldetails-resource-type"></a>Тип ресурса Лабелдетаилс
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,12 +25,12 @@ ms.locfileid: "37939175"
 | Свойство    | Тип    | Описание                                                                                                  |
 | :---------- | :------ | :----------------------------------------------------------------------------------------------------------- |
 | color       | String  | Цвет, который должен отображаться в пользовательском интерфейсе для метки, если она настроена.                               |
-| description | Строка  | Заданное администратором описание метки.                                                                 |
+| description | String  | Заданное администратором описание метки.                                                                 |
 | id          | Строка  | ИДЕНТИФИКАТОР метки является глобальным уникальным идентификатором (GUID).                                                          |
 | isActive    | Логический | Указывает, активна ли метка. Активные метки должны быть скрыты или отключены в пользовательских интерфейсах. |
 | name        | String  | Имя в виде открытого текста метки.                                                                             |
 | sensitivity | Int32   | Значение чувствительности метки, где меньше конфиденциально.                                           |
-| tooltip     | Строка  | Всплывающая подсказка, отображаемая для метки в пользовательском интерфейсе.                                      |
+| tooltip     | String  | Всплывающая подсказка, отображаемая для метки в пользовательском интерфейсе.                                      |
 
 ## <a name="json-representation"></a>Представление JSON
 

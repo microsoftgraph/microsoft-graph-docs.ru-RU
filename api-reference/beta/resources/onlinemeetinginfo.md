@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ananmishr
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 52bfe4fd46443c826838153cc2a40ea57712182b
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 8ac6c42f28ed1f2adccd54fcd3bd6667f4113b7a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913158"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522251"
 ---
 # <a name="onlinemeetinginfo-resource-type"></a>Тип ресурса Онлинемитингинфо
+
+Пространство имен: Microsoft. Graph
 
 Сведения, необходимые участнику, чтобы присоединиться к собранию по сети.
 

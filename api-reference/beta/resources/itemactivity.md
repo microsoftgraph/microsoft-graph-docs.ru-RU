@@ -6,14 +6,16 @@ title: ItemActivity
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: ab96c3169a2d2dc37e6b94ab325866e93fa4d6c0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4cac403e44abaf9ae69f78005555772b9979046f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35967105"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523123"
 ---
 # <a name="itemactivity-resource-type"></a>Тип ресурса ItemActivity
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,8 +49,8 @@ ms.locfileid: "35967105"
 
 | Свойство | Тип                    | Описание
 |:---------|:------------------------|:----------------------------------------
-| id       | string                  | Уникальный идентификатор действия. Только для чтения.
-| обращения   | [Акцессактион][]        | Доступ к элементу.
+| id       | строка                  | Уникальный идентификатор действия. Только для чтения.
+| обращения   | [акцессактион][]        | Доступ к элементу.
 | action   | [itemActionSet][]       | Сведения о выполненном действии. Только для чтения.
 | actor    | [identitySet][]         | Удостоверение, выполнившее действие. Только для чтения.
 | location | [location][]            | Физическое расположение, в котором было выполнено действие. Только для чтения.
@@ -87,7 +89,7 @@ ms.locfileid: "35967105"
 | share       | [shareAction][]   | К элементу был предоставлен общий доступ.
 | version     | [versionAction][] | Для элемента была указана версия.
 
-[Акцессактион]: accessaction.md
+[акцессактион]: accessaction.md
 [commentAction]: commentaction.md
 [createAction]: createaction.md
 [deleteAction]: deleteaction.md

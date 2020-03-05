@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 53edcd8f5f6de071c9bf694858219388bea5002b
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 79e07ebd09f8cbb5ab3715e1d7baf30d8277b6a0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539129"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523263"
 ---
 # <a name="windowsdefenderapplicationcontrolsupplementalpolicy-resource-type"></a>Тип ресурса Виндовсдефендераппликатионконтролсупплементалполици
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Н/Д
 
@@ -24,10 +26,10 @@ ms.locfileid: "37539129"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список ВиндовсдефендераппликатионконтролсупплементалполиЦиес](../api/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy-list.md)|Коллекция [виндовсдефендераппликатионконтролсупплементалполици](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)|Список свойств и связей объектов [виндовсдефендераппликатионконтролсупплементалполици](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) .|
-|[Получение Виндовсдефендераппликатионконтролсупплементалполици](../api/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy-get.md)|[виндовсдефендераппликатионконтролсупплементалполици](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)|Чтение свойств и связей объекта [виндовсдефендераппликатионконтролсупплементалполици](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) .|
-|[Создание Виндовсдефендераппликатионконтролсупплементалполици](../api/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy-create.md)|[виндовсдефендераппликатионконтролсупплементалполици](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)|Создание нового объекта [виндовсдефендераппликатионконтролсупплементалполици](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) .|
+|[Получение Виндовсдефендераппликатионконтролсупплементалполици](../api/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy-get.md)|[windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)|Чтение свойств и связей объекта [виндовсдефендераппликатионконтролсупплементалполици](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) .|
+|[Создание Виндовсдефендераппликатионконтролсупплементалполици](../api/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy-create.md)|[windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)|Создание нового объекта [виндовсдефендераппликатионконтролсупплементалполици](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) .|
 |[Удаление Виндовсдефендераппликатионконтролсупплементалполици](../api/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy-delete.md)|Нет|Удаляет объект [виндовсдефендераппликатионконтролсупплементалполици](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md).|
-|[Обновление Виндовсдефендераппликатионконтролсупплементалполици](../api/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy-update.md)|[виндовсдефендераппликатионконтролсупплементалполици](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)|Обновление свойств объекта [виндовсдефендераппликатионконтролсупплементалполици](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) .|
+|[Обновление Виндовсдефендераппликатионконтролсупплементалполици](../api/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy-update.md)|[windowsDefenderApplicationControlSupplementalPolicy](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)|Обновление свойств объекта [виндовсдефендераппликатионконтролсупплементалполици](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) .|
 |[Действие assign](../api/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy-assign.md)|Нет|Пока не задокументировано|
 
 ## <a name="properties"></a>Свойства
@@ -47,7 +49,7 @@ ms.locfileid: "37539129"
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [виндовсдефендераппликатионконтролсупплементалполициассигнмент](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicyassignment.md)|Связанные назначения группы для этой дополнительной политики Виндовсдефендераппликатионконтрол.|
-|деплойсуммари|[виндовсдефендераппликатионконтролсупплементалполицидеплойментсуммари](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary.md)|Дополнительные сведения о развертывании дополнительной политики Виндовсдефендераппликатионконтрол.|
+|деплойсуммари|[windowsDefenderApplicationControlSupplementalPolicyDeploymentSummary](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentsummary.md)|Дополнительные сведения о развертывании дополнительной политики Виндовсдефендераппликатионконтрол.|
 |deviceStatuses|Коллекция [виндовсдефендераппликатионконтролсупплементалполицидеплойментстатус](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus.md)|Список состояний развертывания устройств для этой дополнительной политики Виндовсдефендераппликатионконтрол.|
 
 ## <a name="json-representation"></a>Представление JSON

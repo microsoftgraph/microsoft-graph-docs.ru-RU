@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a33bab80a8d988ad2f57f0b98c42cf8eca8662da
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: c143a323db566c49003733a7592d380a46443440
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42159069"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523354"
 ---
 # <a name="mobileappactiontype-enum-type"></a>тип перечисления Мобилеаппактионтипе
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -24,10 +26,10 @@ ms.locfileid: "42159069"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Неизвестный результат.|
-|инсталлкоммандсент|1,1|Была отправлена команда установки приложения.|
-|устанавлива|4|Приложение установлено.|
-|удалить|SP4|Приложение удалено.|
-|усеррекуестединсталл|17:00|Установка запрошена пользователем|
+|инсталлкоммандсент|1 |Была отправлена команда установки приложения.|
+|устанавлива|3 |Приложение установлено.|
+|удалить|4 |Приложение удалено.|
+|усеррекуестединсталл|5 |Установка запрошена пользователем|
 
 
 

@@ -5,28 +5,30 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 89f864da336045622af0e59a94fb14d0132872db
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 17a2313b60d4cf843e5b048821a58748c8eb27ca
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36308192"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523916"
 ---
 # <a name="deviceandappmanagementassignedroledetails-resource-type"></a>Тип ресурса Девицеандаппманажементассигнедроледетаилс
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Набор определений ролей и назначений ролей, назначенных пользователю.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|роледефинитионидс|Коллекция строк|Идентификаторы определений ролей для определений ролей частности, назначенных пользователю.|
-|ролеассигнментидс|Коллекция строк|Идентификаторы назначения ролей для назначений ролей частности, назначенных пользователю.|
+|роледефинитионидс|Коллекция String|Идентификаторы определений ролей для определений ролей частности, назначенных пользователю.|
+|ролеассигнментидс|Коллекция String|Идентификаторы назначения ролей для назначений ролей частности, назначенных пользователю.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

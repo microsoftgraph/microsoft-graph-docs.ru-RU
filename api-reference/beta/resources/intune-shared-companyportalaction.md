@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e6370ddb4ef8c5bcfd05553e594129a8cad72efa
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: c969e4638116edff08bd1412ec2824d950e8bb0f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088191"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523760"
 ---
 # <a name="companyportalaction-enum-type"></a>тип перечисления Компанипорталактион
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -24,8 +26,8 @@ ms.locfileid: "38088191"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Неизвестное действие устройства|
-|удалить|1,1|Удаление устройства из корпоративного портала|
-|сброс|2|Сброс устройства, зарегистрированного на портале компании|
+|удалить|1 |Удаление устройства из корпоративного портала|
+|сброс|2 |Сброс устройства, зарегистрированного на портале компании|
 
 
 

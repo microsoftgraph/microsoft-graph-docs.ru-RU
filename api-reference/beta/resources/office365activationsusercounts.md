@@ -5,24 +5,26 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 33339578f498460aacd24481f166ab717138f8fa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 78c21f33352e5f6357638de8dacc4b628b6ef93b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966568"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522486"
 ---
 # <a name="office365activationsusercounts-resource-type"></a>Тип ресурса office365ActivationsUserCounts
+
+Пространство имен: Microsoft. Graph
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                 | Тип   | Описание                              |
 | :----------------------- | :----- | ---------------------------------------- |
-| Репортрефрешдате        | Дата   | Самая поздняя дата контента.          |
-| Продукттипе              | String | Тип продукта, например "Office 365 профессиональный плюс", "клиент Project" или "Visio Pro для Office 365". |
+| репортрефрешдате        | Дата   | Самая поздняя дата контента.          |
+| продукттипе              | String | Тип продукта, например "Office 365 профессиональный плюс", "клиент Project" или "Visio Pro для Office 365". |
 | ей                 | Int64  | Количество пользователей, которым назначена лицензия на продукт. |
 | активной                | Int64  | Количество пользователей, которые активировали продукт. |
-| Шаредкомпутерактиватион | Int64  | Количество пользователей, которые использовали продукт на общем компьютере. |
+| шаредкомпутерактиватион | Int64  | Количество пользователей, которые использовали продукт на общем компьютере. |
 
 ## <a name="json-representation"></a>Представление JSON
 

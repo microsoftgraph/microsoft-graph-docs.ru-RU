@@ -5,14 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c2b12dd9df816ad7fecbf6c520f0fff579087428
-ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
+ms.openlocfilehash: 6b0d56a3c9e3e8b098dbbe7f172a42631afbb33b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40952295"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522521"
 ---
 # <a name="offershiftrequest-resource-type"></a>Тип ресурса Оффершифтрекуест
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,7 +39,7 @@ ms.locfileid: "40952295"
 |реЦипиентусерид|String| Идентификатор пользователя, который является получателем запроса на смену.|
 |сендершифтид|String| Идентификатор пользователя отправителя запроса на смену.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Нет
 

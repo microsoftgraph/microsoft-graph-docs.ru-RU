@@ -2,18 +2,20 @@
 author: JeremyKelley
 description: " или коллекция элементов, которые должны рассматриваться как коллекция, а не как отдельные элементы."
 ms.date: 09/10/2017
-title: Режим
+title: Пакет
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 6ae382d1f69a88d814339370264dc5dc7fac9414
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d58d370abb628138040f34a0ffa6362c86b6a1ae
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966267"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522062"
 ---
 # <a name="package-resource-type"></a>Тип ресурса Package
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

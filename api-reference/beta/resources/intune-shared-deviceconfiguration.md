@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 68204c747aa983ed44cf2c30fb056baaa7de7225
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 6c38a3b33368d4359ebfca42b83a52e795826643
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539150"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523725"
 ---
 # <a name="deviceconfiguration-resource-type"></a>Тип ресурса deviceConfiguration
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Конфигурация устройства
 
@@ -25,7 +27,7 @@ ms.locfileid: "37539150"
 |:---|:---|:---|
 |[Список объектов deviceConfiguration](../api/intune-shared-deviceconfiguration-list.md)|Коллекция [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|Список свойств и связей объектов [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |[Получение объекта deviceConfiguration](../api/intune-shared-deviceconfiguration-get.md)|[deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|Чтение свойств и связей объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|**Конфигурация устройств**|
+|**Конфигурация устройства**|
 |[Действие assign](../api/intune-shared-deviceconfiguration-assign.md)|Коллекция [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|Н/Д|
 |[Действие windowsPrivacyAccessControls](../api/intune-shared-deviceconfiguration-windowsprivacyaccesscontrols.md)|Нет|Пока не задокументировано|
 |[Действие assignedAccessMultiModeProfiles](../api/intune-shared-deviceconfiguration-assignedaccessmultimodeprofiles.md)|Нет|Пока не задокументировано|
@@ -51,7 +53,7 @@ ms.locfileid: "37539150"
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|**Конфигурация устройств**|
+|**Конфигурация устройства**|
 |groupAssignments|Коллекция [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|Список назначений групп для профиля конфигурации устройства.|
 |assignments|Коллекция объектов [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|Список назначений для профиля конфигурации устройства.|
 |deviceStatuses|Коллекция [deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md)|Состояние установки конфигурации для каждого устройства.|

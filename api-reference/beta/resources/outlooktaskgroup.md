@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: d519e18723ac9fbd38e7cec64a6758b0c9396bc2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 67439b11cc2067df23c71cf9fc939fbfb250f874
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966281"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522076"
 ---
 # <a name="outlooktaskgroup-resource-type"></a>Тип ресурса outlookTaskGroup
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,22 +30,22 @@ ms.locfileid: "35966281"
 |[Получение outlookTaskGroup](../api/outlooktaskgroup-get.md) | [outlookTaskGroup](outlooktaskgroup.md) |Получение свойств и связей указанной группы задач Outlook.|
 |[Создание outlookTaskFolder](../api/outlooktaskgroup-post-taskfolders.md) |[outlookTaskFolder](outlooktaskfolder.md)| Создайте папку задач Outlook.|
 |[Список Таскфолдерс](../api/outlooktaskgroup-list-taskfolders.md) |Коллекция [outlookTaskFolder](outlooktaskfolder.md)| Получение коллекции папок задач Outlook.|
-|[обновление](../api/outlooktaskgroup-update.md); | [outlookTaskGroup](outlooktaskgroup.md)  |Обновление свойств, доступных для записи, для группы задач Outlook. |
-|[Удаление](../api/outlooktaskgroup-delete.md) | Нет |Удаление указанной группы задач Outlook. |
+|[обновление](../api/outlooktaskgroup-update.md). | [outlookTaskGroup](outlooktaskgroup.md)  |Обновление свойств, доступных для записи, для группы задач Outlook. |
+|[удаление](../api/outlooktaskgroup-delete.md); | Нет |Удаление указанной группы задач Outlook. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |changeKey|String|Версия группы задач.|
-|Граупкэй|Edm.Guid|Уникальный идентификатор GUID для группы задач.|
+|граупкэй|Edm.Guid|Уникальный идентификатор GUID для группы задач.|
 |id|String|Уникальный строковый идентификатор группы задач. Только для чтения.|
-|Исдефаултграуп|Boolean|Значение true, если группа задач является группой задач по умолчанию.|
+|исдефаултграуп|Логический|Значение true, если группа задач является группой задач по умолчанию.|
 |name|String|Имя группы задач.|
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Таскфолдерс|Коллекция [outlookTaskFolder](outlooktaskfolder.md)| Коллекция папок задач в группе задач. Только для чтения. Допускается значение null.|
+|таскфолдерс|Коллекция [outlookTaskFolder](outlooktaskfolder.md)| Коллекция папок задач в группе задач. Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

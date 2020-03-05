@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса orgContact
-description: Ниже этот ресурс представлен в формате JSON.
+description: Ниже показано представление JSON ресурса.
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 38ded4e6cddcf945c741e43c1f80f2b3d63711ad
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 42a02cce980af57cf0bac7e1a97eb7cf77c91918
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966323"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522118"
 ---
 # <a name="orgcontact-resource-type"></a>Тип ресурса orgContact
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,9 +26,9 @@ ms.locfileid: "35966323"
 |[Получение имени руководителя](../api/orgcontact-get-manager.md) |[directoryObject](directoryobject.md)| Получение руководителя контакта.|
 |[Список directReports](../api/orgcontact-list-directreports.md) |Коллекция [directoryObject](directoryobject.md)| Перечислите непосредственные отчеты контакта.|
 |[Перечисление memberOf](../api/orgcontact-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Получение коллекции memberOf Objects.|
-|[Удаление](../api/orgcontact-delete.md) | Нет |Удаление объекта orgContact. |
-|[checkMemberGroups](../api/orgcontact-checkmembergroups.md)|Коллекция строк| Проверьте принадлежность к группе. |
-|[getMemberGroups](../api/orgcontact-getmembergroups.md)|Коллекция строк| Возврат всех групп, членом которых является указанный контакт. |
+|[удаление](../api/orgcontact-delete.md); | Нет |Удаление объекта orgContact. |
+|[checkMemberGroups](../api/orgcontact-checkmembergroups.md)|Коллекция String| Проверьте принадлежность к группе. |
+|[getMemberGroups](../api/orgcontact-getmembergroups.md)|Коллекция String| Возврат всех групп, членом которых является указанный контакт. |
 |[getMemberObjects](../api/orgcontact-getmemberobjects.md)|Коллекция String| Возвращает список Директорйобжектс, членом которых является контакт. |
 
 ## <a name="properties"></a>Свойства
@@ -39,19 +41,19 @@ ms.locfileid: "35966323"
 | displayName                  | Строка                                                     | Отображаемое имя для этого организационного контакта.                                                                                                                                                                                                                                                                                                                                   |
 | givenName                    | String                                                     | Имя для этого организационного контакта.                                                                                                                                                                                                                                                                                                                                     |
 | id                           | Строка                                                     | Уникальный идентификатор для этого организационного контакта.                                                                                                                                                                                                                                                                                                                             |
-| jobTitle                     | String                                                     | Должность для этого контакта в Организации.                                                                                                                                                                                                                                                                                                                                      |
+| jobTitle;                     | String                                                     | Должность для этого контакта в Организации.                                                                                                                                                                                                                                                                                                                                      |
 |mail|String| SMTP-адрес контакта, например, "jeff@contoso.onmicrosoft.com". |
 | mailNickname                 | String                                                     | Псевдоним электронной почты (часть адреса электронной почты, предварительно заданная в параметре @ Symbol) для этого контакта в Организации.                                                                                                                                                                                                                                                                                |
-| onPremisesLastSyncDateTime   | DateTimeOffset                                             | Дата и время последней синхронизации этого контакта в организации из локальной службы AD. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z".   |
+| onPremisesLastSyncDateTime   | DateTimeOffset                                             | Дата и время последней синхронизации этого контакта в организации из локальной службы AD. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z".   |
 | onPremisesProvisioningErrors |Коллекция [onPremisesProvisioningError](onpremisesprovisioningerror.md)       | Список всех ошибок подготовки синхронизации для данного контакта Организации.                                                                                                                                                                                                                                                                                                |
-|onPremisesSyncEnabled|Boolean|**значение true** , если объект синхронизирован из локального каталога; **false** , если этот объект изначально был синхронизирован из локального каталога, но больше не синхронизируется и не выполняется в Exchange. **значение NULL** , если объект никогда не был синхронизирован из локального каталога (по умолчанию).|
+|onPremisesSyncEnabled|Логический|**значение true** , если объект синхронизирован из локального каталога; **false** , если этот объект изначально был синхронизирован из локального каталога, но больше не синхронизируется и не выполняется в Exchange. **значение NULL** , если объект никогда не был синхронизирован из локального каталога (по умолчанию).|
 | phones                       | Коллекция [phone](phone.md)                            | Список телефонов для этого контакта в Организации. Типы телефонов могут быть мобильными, рабочими и Бусинессфакс. В коллекции всегда может присутствовать только один из этих типов.                                                                                                                       |
-| proxyAddresses               | Коллекция строк                                         | Пример: "SMTP: bob@contoso.com", "SMTP: bob@sales.contoso.com". Для выражений фильтра в случае многозначных свойств требуется оператор **any**. Поддерживает \$фильтр.                                                                                                                                                                               |
+| proxyAddresses               | Коллекция String                                         | Пример: "SMTP: bob@contoso.com", "SMTP: bob@sales.contoso.com". Для выражений фильтра в случае многозначных свойств требуется оператор **any**. Поддерживает \$фильтр.                                                                                                                                                                               |
 | surname                      | String                                                     | Фамилия для этого организационного контакта.                          |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
-| Отношение | Тип   |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |directReports|Коллекция [directoryObject](directoryobject.md)| Прямые отчеты контакта. (К этому контакту присвоено значение "Пользователи" и "Контакты", которому назначено свойство "руководитель").  Только для чтения. Допускается значение null.|
 |manager|[directoryObject](directoryobject.md)| Пользователь или контакт, который является руководителем этого контакта. Только для чтения.|

@@ -5,30 +5,32 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: ''
-ms.openlocfilehash: c61db94678ed50e6cc93f123a506ce262616a1ab
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 22702a392a76a21951c24667da0e8a1e61c8b36c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966484"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522395"
 ---
 # <a name="onedriveactivityuserdetail-resource-type"></a>Тип ресурса Онедривеактивитюсердетаил
+
+Пространство имен: Microsoft. Graph
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                  | Тип              |
 | :------------------------ | :---------------- |
-| Репортрефрешдате         | Дата              |
+| репортрефрешдате         | Дата              |
 | userPrincipalName         | String            |
-| isDeleted                 | Boolean           |
-| Делетеддате               | Дата              |
-| Ластактивитидате          | Дата              |
-| Виеведоредитедфилекаунт   | Int64             |
-| Синцедфилекаунт           | Int64             |
-| Шарединтерналлифилекаунт | Int64             |
-| Шаредекстерналлифилекаунт | Int64             |
-| Ассигнедпродуктс          | Коллекция строк |
-| Репортпериод              | String            |
+| isDeleted                 | Логический           |
+| делетеддате               | Дата              |
+| ластактивитидате          | Дата              |
+| виеведоредитедфилекаунт   | Int64             |
+| синцедфилекаунт           | Int64             |
+| шарединтерналлифилекаунт | Int64             |
+| шаредекстерналлифилекаунт | Int64             |
+| ассигнедпродуктс          | Коллекция String |
+| репортпериод              | String            |
 
 ## <a name="json-representation"></a>Представление JSON
 

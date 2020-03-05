@@ -5,14 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: f3ce94c12328e9c05f899c5d2176339bbed93432
-ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
+ms.openlocfilehash: e544f54c7fbf015ed1050ab23d76217b311bdeaf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40951939"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522195"
 ---
 # <a name="openshift-resource-type"></a>Тип ресурса Опеншифт
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +28,7 @@ ms.locfileid: "40951939"
 | [List](../api/openshift-list.md) | Коллекция [опеншифт](openshift.md) | Перечисление свойств и связей объектов **опеншифт** в команде.|
 | [получение](../api/openshift-get.md); | [опеншифт](openshift.md) | Чтение свойств и связей объекта **опеншифт** . |
 | [обновление](../api/openshift-update.md). | [опеншифт](openshift.md) | Обновление объекта **опеншифт** . |
-| [Удаление](../api/openshift-delete.md) | Нет | Удаление объекта **опеншифт** . |
+| [удаление](../api/openshift-delete.md); | Нет | Удаление объекта **опеншифт** . |
 
 ## <a name="properties"></a>Свойства
 
@@ -36,7 +38,7 @@ ms.locfileid: "40951939"
 |schedulingGroupId|String|Идентификатор группы планирования, к которой относится открытая смена.|
 |шаредопеншифт|[опеншифтитем](openshiftitem.md)|Опубликованная открытая смена.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 

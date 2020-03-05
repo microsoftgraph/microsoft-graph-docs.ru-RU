@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: conceptualPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 98b89140028d0deeaec674dcc124d39fa72a1cd9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 75d5dc07d2722964acc7975b8f41ca6d6fd18df5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009813"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522857"
 ---
 # <a name="manage-focused-inbox"></a>Управление сортировкой почты
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

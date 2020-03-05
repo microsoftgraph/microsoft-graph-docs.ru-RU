@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6326ad561f7589f85f59fe5d4729816d7f046949
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 6ae920e35c3ba7c2b31c5947f15b3e9d6585a21c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913592"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522041"
 ---
 # <a name="participant-resource-type"></a>Тип ресурса участника
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,13 +36,13 @@ ms.locfileid: "40913592"
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
 | id                   | String                                   | Идентификатор участника.                                          |
 | info                 | [participantInfo](participantinfo.md)    | Участник участника.                          |
-| исинлобби            | Boolean                                  | `true`Если участник находится в "зале ожидания".                          |
-| Автозвук              | Boolean                                  | `true`Если участник отключен (клиент или сервер выключен).    |
+| исинлобби            | Логический                                  | `true`Если участник находится в "зале ожидания".                          |
+| Автозвук              | Логический                                  | `true`Если участник отключен (клиент или сервер выключен).    |
 | медиастреамс         | Коллекция [медиастреам](mediastream.md) | Список потоков мультимедиа.                                   |
 | метаданных             | String                                   | Большой двоичный объект данных, предоставляемый участником в списке.     |
 | рекордингинфо        | [рекордингинфо](recordinginfo.md)        | Сведения о том, имеет ли участник возможность записи. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

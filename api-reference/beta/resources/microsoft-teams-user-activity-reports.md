@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: ca8d1f772744b33aa5fee60fc3b843bf60b0be9f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c5807af05bda74019ac8b28c53f902ecac6f8e2a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009638"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522633"
 ---
 # <a name="microsoft-teams-user-activity-reports"></a>Отчеты о действиях пользователей Microsoft Teams
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,6 +24,6 @@ ms.locfileid: "36009638"
 
 | Метод                                   | Возвращаемый тип                              | Описание                              |
 | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- |
-| [Получение сведений о пользователях](../api/reportroot-getteamsuseractivityuserdetail.md) | [Теамсусерактивитюсердетаил](../resources/teamsuseractivityuserdetail.md) | Получение сведения о действиях отдельных пользователей Microsoft Teams. |
-| [Получение количества действий](../api/reportroot-getteamsuseractivitycounts.md) | [Теамсусерактивитикаунтс](../resources/teamsuseractivitycounts.md) | Получение количества действий Microsoft Teams по типам. К типам действий относятся сообщения в чатах групп, сообщения в частных чатах, звонки и собрания. |
-| [Получение количества пользователей](../api/reportroot-getteamsuseractivityusercounts.md) | [Теамсусерактивитюсеркаунтс](../resources/teamsuseractivityusercounts.md) | Получение сведений о количестве пользователей по типам действий. К типам действий относятся сообщения в чатах групп, сообщения в частных чатах, звонки и собрания. |
+| [Получение сведений о пользователях](../api/reportroot-getteamsuseractivityuserdetail.md) | [теамсусерактивитюсердетаил](../resources/teamsuseractivityuserdetail.md) | Получение сведения о действиях отдельных пользователей Microsoft Teams. |
+| [Получение количества действий](../api/reportroot-getteamsuseractivitycounts.md) | [теамсусерактивитикаунтс](../resources/teamsuseractivitycounts.md) | Получение количества действий Microsoft Teams по типам. К типам действий относятся сообщения в чатах групп, сообщения в частных чатах, звонки и собрания. |
+| [Получение количества пользователей](../api/reportroot-getteamsuseractivityusercounts.md) | [теамсусерактивитюсеркаунтс](../resources/teamsuseractivityusercounts.md) | Получение сведений о количестве пользователей по типам действий. К типам действий относятся сообщения в чатах групп, сообщения в частных чатах, звонки и собрания. |

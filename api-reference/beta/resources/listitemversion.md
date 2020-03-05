@@ -6,14 +6,16 @@ title: ListItemVersion
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: ff3fbd3144a62939f9d4f6077c556c9d5884c687
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ac09e46d974f8fe5c54fe47d4023674b07c66a1c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966967"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522941"
 ---
 # <a name="listitemversion-resource-type"></a>Тип ресурса listItemVersion
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,8 +28,8 @@ ms.locfileid: "35966967"
 |            Стандартная задача             |         Метод HTTP         |
 | :--------------------------------- | :-------------------------- |
 | [Список версий][version-list]      | `GET /sites/{site-id}/items/{item-id}/versions`  |
-| [Get version][version-get]         | `GET /sites/{site-id}/items/versions/{version-id}`     |
-| [Restore version][version-restore] | `POST /sites/{site-id}/items/versions/{version-id}/restore` |
+| [Получение версии][version-get]         | `GET /sites/{site-id}/items/versions/{version-id}`     |
+| [Восстановление версии][version-restore] | `POST /sites/{site-id}/items/versions/{version-id}/restore` |
 
 [version-list]: ../api/listitem-list-versions.md
 [version-get]: ../api/listitemversion-get.md
@@ -53,7 +55,7 @@ ms.locfileid: "35966967"
 
 |      Имя свойства       |                         Тип                         |                               Описание                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
-| **id**                   | string                                               | Идентификатор версии. Только для чтения.                                       |
+| **id**                   | строка                                               | Идентификатор версии. Только для чтения.                                       |
 | **lastModifiedBy**;       | [IdentitySet](../resources/identityset.md)           | Удостоверение пользователя, который последним изменил версию. Только для чтения.        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Дата и время последнего изменения версии. Только для чтения.                 |
 | **published**            | [PublicationFacet](../resources/publicationfacet.md) | Указывает состояние публикации конкретной версии. Только для чтения. |

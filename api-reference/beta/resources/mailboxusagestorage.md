@@ -5,23 +5,25 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 6f4ee4b29c82102db96cd4d71718f7da449776b5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 40cc5f9b9cab7f17e185619d7fccdec028ae6250
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009841"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522836"
 ---
 # <a name="mailboxusagestorage-resource-type"></a>Тип ресурса Маилбоксусажестораже
+
+Пространство имен: Microsoft. Graph
 
 ## <a name="properties"></a>Свойства
 
 | Свойство           | Тип   |
 | :----------------- | :----- |
-| Репортрефрешдате  | Дата   |
-| Сторажеусединбитес | Int64  |
+| репортрефрешдате  | Дата   |
+| сторажеусединбитес | Int64  |
 | reportDate         | Дата   |
-| Репортпериод       | String |
+| репортпериод       | String |
 
 ## <a name="json-representation"></a>Представление JSON
 

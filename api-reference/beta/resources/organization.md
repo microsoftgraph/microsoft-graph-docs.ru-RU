@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3853192a328439eed57e22531d81b09986e2766b
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: cb347dcd95b60a0afcbb4704f65f9339db2973e6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539255"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522132"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,12 +39,12 @@ ms.locfileid: "37539255"
 |:-------- |:---- |:----------- |
 | assignedPlans | Коллекция [assignedPlan](assignedplan.md) | Коллекция планов обслуживания, сопоставленных с клиентом. Значение null не допускается. |
 | businessPhones | Коллекция строк | Номер телефона организации. **Примечание.** Несмотря на то что это коллекция строк, для этого свойства можно задать только один номер. |
-| city | String | Город название адреса Организации. |
-| country | String | Страна или регион в адресе организации. |
-| countryLetterCode | String | Сокращенное название страны или региона для Организации. |
+| city | String | Название города в адресе организации. |
+| country | Строка | Название страны или региона в адресе организации. |
+| countryLetterCode | String | Сокращенное название страны или региона для организации. |
 | createdDateTime | DateTimeOffset | Метка времени создания организации. Значение не может изменяться и заполняется автоматически, когда создается организация. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
 | deletedDateTime | DateTimeOffset | Представляет дату и время удаления клиента Azure AD с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
-| displayName | Строка | Отображаемое имя для клиента. |
+| displayName | String | Отображаемое имя для клиента. |
 | id | String | Уникальный идентификатор клиента, представляющий организацию (или клиента). Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения. |
 | isMultipleDataLocationsForServicesEnabled | Boolean | Используется значение **true**, если в организации включена поддержка нескольких регионов. Используется значение **false**, если поддержка нескольких регионов в организации не включена. По умолчанию используется значение **null**. Только для чтения. Дополнительные сведения см. в статье [OneDrive Online с поддержкой нескольких регионов](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction). |
 | marketingNotificationEmails | Коллекция String | Значение null не допускается. |
@@ -55,7 +57,7 @@ ms.locfileid: "37539255"
 | provisionedPlans | Коллекция [provisionedPlan](provisionedplan.md) | Значение null не допускается. |
 | securityComplianceNotificationMails | Коллекция String ||
 | securityComplianceNotificationPhones | Коллекция String ||
-| state | String | Название региона в адресе организации. |
+| state | String | Название республики, области или края в адресе организации. |
 | street | String | Название улицы в адресе организации. |
 | technicalNotificationMails |Коллекция String | Значение null не допускается. |
 | verifiedDomains | Коллекция [коллекция verifieddomain](verifieddomain.md)|Коллекция доменов, сопоставленных с этим клиентом. Значение null не допускается. |
@@ -64,7 +66,7 @@ ms.locfileid: "37539255"
 
 | Связь  | Тип  |Описание|
 |:---------------|:--------|:----------|
-|цертификатебаседаусконфигуратион|Коллекция [цертификатебаседаусконфигуратион](certificatebasedauthconfiguration.md)| Свойство навигации для управления конфигурацией проверки подлинности на основе сертификатов. В коллекции может быть создан только один экземпляр Цертификатебаседаусконфигуратион.  |
+|certificateBasedAuthConfiguration|Коллекция [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md)| Свойство навигации для управления конфигурацией проверки подлинности на основе сертификатов. В коллекции можно создать только один экземпляр объекта certificateBasedAuthConfiguration.  |
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для ресурса Организации. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON

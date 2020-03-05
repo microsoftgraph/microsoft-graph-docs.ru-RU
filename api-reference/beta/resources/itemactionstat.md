@@ -2,18 +2,20 @@
 author: daspek
 description: Ресурс Итемактионстат предоставляет статистические сведения о действии в течение определенного периода времени.
 ms.date: 09/14/2017
-title: Итемактионстат
+title: итемактионстат
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 719a443af65fd9642feee3bc8ddbc832eb3964c4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6ab31d8a155e0b9fd54b3f2185e7d05969291ec1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36010114"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523130"
 ---
 # <a name="itemactionstat-resource-type"></a>Тип ресурса Итемактионстат
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -38,8 +40,8 @@ ms.locfileid: "36010114"
 
 | Свойство    | Тип  | Описание
 |:------------|:------|:-------------------------------------------------------
-| Актионкаунт | Int32 | Количество попыток выполнения действия. Только для чтения.
-| Акторкаунт  | Int32 | Количество уникальных субъектов, которые выполнили действие. Только для чтения.
+| актионкаунт | Int32 | Количество попыток выполнения действия. Только для чтения.
+| акторкаунт  | Int32 | Количество уникальных субъектов, которые выполнили действие. Только для чтения.
 
 <!--
 {

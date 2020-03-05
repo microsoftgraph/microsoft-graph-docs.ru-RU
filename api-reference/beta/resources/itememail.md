@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: eed73f61b281463848c8520ebdcdbc75ac26d29d
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: a18d72fb44f373b6cee1047cc2eed5f0c18a1d0e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939336"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523081"
 ---
 # <a name="itememail-resource-type"></a>Тип ресурса Итемемаил
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,9 +24,9 @@ ms.locfileid: "37939336"
 
 | Метод                                   | Возвращаемый тип               | Описание                                            |
 |:-----------------------------------------|:--------------------------|:-------------------------------------------------------|
-| [Получение](../api/itememail-get.md) | [итемемаил](itememail.md) | Чтение свойств и связей объекта **итемемаил** . |
-| [Update](../api/itememail-update.md)     | [итемемаил](itememail.md) | Обновление объекта **итемемаил** .                               |
-| [Delete](../api/itememail-delete.md)     | Нет.                      | Удаление объекта **итемемаил** .                               |
+| [получение](../api/itememail-get.md); | [итемемаил](itememail.md) | Чтение свойств и связей объекта **итемемаил** . |
+| [обновление](../api/itememail-update.md).     | [итемемаил](itememail.md) | Обновление объекта **итемемаил** .                               |
+| [удаление](../api/itememail-delete.md);     | Нет                      | Удаление объекта **итемемаил** .                               |
 
 ## <a name="properties"></a>Свойства
 

@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6b04dcd01d21ace78368411524067f83db3bc93a
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: f1d2b51ce966caf923e15e39694db616b639c441
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42163551"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523930"
 ---
 # <a name="userpfxpaddingscheme-enum-type"></a>тип перечисления Усерпфкспаддингсчеме
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -24,11 +26,11 @@ ms.locfileid: "42163551"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |нет|нуль|Неизвестная схема заполнения.|
-|pkcs1|1,1|Pkcs1 больше не поддерживается|
-|oaepSha1|2|OaepSha1 больше не поддерживается|
-|oaepSha256|4|Используйте заполнение OAEP SHA – 256.|
-|oaepSha384|SP4|Используйте заполнение OAEP SHA – 384.|
-|oaepSha512|17:00|Используйте заполнение OAEP SHA – 512.|
+|pkcs1|1 |Pkcs1 больше не поддерживается|
+|oaepSha1|2 |OaepSha1 больше не поддерживается|
+|oaepSha256|3 |Используйте заполнение OAEP SHA – 256.|
+|oaepSha384|4 |Используйте заполнение OAEP SHA – 384.|
+|oaepSha512|5 |Используйте заполнение OAEP SHA – 512.|
 
 
 

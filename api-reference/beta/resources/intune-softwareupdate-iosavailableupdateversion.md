@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2113f8ddf34c87be6554bc29d7220881e8c634f6
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: b2174e13cf80e39e1f63f7fb03da6e9b305add30
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42161296"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523445"
 ---
 # <a name="iosavailableupdateversion-resource-type"></a>Тип ресурса Иосаваилаблеупдатеверсион
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +28,9 @@ ms.locfileid: "42161296"
 |productVersion|String|Версия обновления.|
 |постингдатетиме|DateTimeOffset|Дата разноски обновления.|
 |expirationDateTime|DateTimeOffset|Дата окончания срока действия обновления.|
-|суппортеддевицес|Коллекция строк|Список поддерживаемых устройств для обновления.|
+|суппортеддевицес|Коллекция String|Список поддерживаемых устройств для обновления.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

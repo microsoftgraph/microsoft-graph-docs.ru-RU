@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: 57305e7e5767b8ad5454d7fd3a229be53489b5fd
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 507ea4283ae34e0148d84cd8f76036880a255e98
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939259"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523032"
 ---
 # <a name="keycredential-resource-type"></a>Тип ресурса Кэйкредентиал
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,12 +24,12 @@ ms.locfileid: "37939259"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |кустомкэйидентифиер|Binary| Настраиваемый идентификатор ключа |
-| displayName | Строка | Понятное имя для ключа. Необязательный элемент. |
+| displayName | Строка | Понятное имя для ключа. Необязательное свойство. |
 |endDateTime|DateTimeOffset|Дата и время истечения срока действия учетных данных. Тип timestamp представляет сведения о дате и времени с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |Него значение KeyID|GUID|Уникальный идентификатор (GUID) для ключа.|
 |startDateTime|DateTimeOffset|Дата и время, когда учетные данные становятся действительными. Тип timestamp представляет сведения о дате и времени с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |type|String|Тип учетных данных ключа; Например, "симметричный".|
-|сведений|Строка|Строка, описывающая цель, для которой можно использовать ключ; Пример: "Verify".|
+|сведений|String|Строка, описывающая цель, для которой можно использовать ключ; Пример: "Verify".|
 |key|Двоичный| Значение для учетных данных ключа. Должно быть значением в кодировке Base 64. |
 
 ## <a name="json-representation"></a>Представление JSON

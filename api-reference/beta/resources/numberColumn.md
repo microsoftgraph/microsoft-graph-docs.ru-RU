@@ -6,14 +6,16 @@ title: NumberColumn
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: c8abaca08682e4a68e8e5efbeb798a8810b20bfb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0f6ed1c8aca8909b50f47f539e0569a4b68dad89
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966638"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522549"
 ---
 # <a name="numbercolumn-resource-type"></a>Тип ресурса numberColumn
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -38,7 +40,7 @@ ms.locfileid: "35966638"
 | Имя свойства      | Тип   | Описание
 |:-------------------|:-------|:-----------------------------------------------
 | **decimalPlaces**  | string | Количество десятичных разрядов, которые необходимо отображать. Ниже перечислены возможные значения.
-| **displayAs**      | string | Способ отображения значения в пользовательском интерфейсе. Должно иметь тип `number` или `percentage`. Если тип не указан, считается, что значение имеет тип `number`.
+| **displayAs**      | строка | Способ отображения значения в пользовательском интерфейсе. Должно иметь тип `number` или `percentage`. Если тип не указан, считается, что значение имеет тип `number`.
 | **maximum**        | double | Максимальное разрешенное значение.
 | **minimum**        | double | Минимальное разрешенное значение.
 

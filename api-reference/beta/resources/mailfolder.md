@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 87195cf98406e37e0f4a419833fbc1d101b19563
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9f80f49c193192f4a7ef63c51b20f6693fabc403
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966883"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522829"
 ---
 # <a name="mailfolder-resource-type"></a>Тип ресурса mailFolder
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -59,7 +61,7 @@ GET /me/mailFolders/drafts
 |[Создание объекта MailFolder](../api/mailfolder-post-childfolders.md) |[mailFolder](mailfolder.md)| Создание объекта mailFolder в текущем объекте путем публикации в коллекции элементов childFolders.|
 |[Вывод списка объектов childFolder](../api/mailfolder-list-childfolders.md) |Коллекция [mailFolder](mailfolder.md)| Получение коллекции папок в указанной папке. С помощью ярлыка `.../me/MailFolders` вы можете получить коллекцию папок верхнего уровня и перейти к другой папке.|
 |[Создание сообщения](../api/mailfolder-post-messages.md) |[message](message.md)| Создание сообщения в текущем элементе mailFolder путем его публикации в коллекции сообщений.|
-|[Вывод списка сообщений](../api/mailfolder-list-messages.md) |Коллекция [message](message.md)| Получение всех сообщений в почтовом ящике пользователя, вошедшего в систему, или в указанной папке почтового ящика.|
+|[Список сообщений](../api/mailfolder-list-messages.md) |Коллекция [message](message.md)| Получение всех сообщений в почтовом ящике пользователя, вошедшего в систему, или в указанной папке почтового ящика.|
 |[Обновление](../api/mailfolder-update.md) | [mailFolder](mailfolder.md)|Обновление указанного объекта mailFolder. |
 |[Удаление](../api/mailfolder-delete.md) | Нет |Удаление указанного объекта mailFolder. |
 |[copy](../api/mailfolder-copy.md)|[mailFolder](mailfolder.md)|Копирование элемента mailFolder и его содержимого в другой элемент mailFolder.|
@@ -77,7 +79,7 @@ GET /me/mailFolders/drafts
 |:---------|:-----|:------------|
 |childFolderCount|Int32|Количество непосредственных дочерних элементов mailFolder в текущем элементе mailFolder.|
 |displayName|Строка|Отображаемое имя элемента mailFolder.|
-|id|Строка|Уникальный идентификатор элемента mailFolder.|
+|id|String|Уникальный идентификатор элемента mailFolder.|
 |parentFolderId|Строка|Уникальный идентификатор родительского элемента mailFolder для элемента mailFolder.|
 |totalItemCount|Int32|Количество элементов в элементе mailFolder.|
 |unreadItemCount|Int32|Количество элементов, помеченных как непрочитанные, в элементе mailFolder.|
@@ -96,7 +98,7 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
 
 ## <a name="relationships"></a>Отношения
 
-| Отношение | Тип | Описание |
+| Связь | Тип | Описание |
 |:-------------|:-----|:------------|
 |childFolders|Коллекция объектов [MailFolder](mailfolder.md)|Коллекция дочерних папок в элементе mailFolder.|
 |messageRules | Коллекция [messageRule](messagerule.md) | Коллекция правил, которые применяются к папке пользователя "Входящие". |
@@ -140,7 +142,7 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
 
 ## <a name="see-also"></a>См. также
 
-- [Отслеживание изменений данных Microsoft Graph с помощью разностного запроса](/graph/delta-query-overview)
+- [Отслеживание изменений данных Microsoft Graph с помощью запроса изменений](/graph/delta-query-overview)
 - [Получение добавочных изменений сообщений в папке](/graph/delta-query-messages)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

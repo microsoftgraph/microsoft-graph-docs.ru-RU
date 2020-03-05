@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e916c0498a3a8fffd09dd4b86d7b7ec3ab4b9a08
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: a913c910183c1abeae57a3a9f00d7f0c92f9bb69
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913676"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522570"
 ---
 # <a name="nomediaconfig-resource-type"></a>Тип ресурса Номедиаконфиг
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +24,7 @@ ms.locfileid: "40913676"
 
 | Свойство       | Тип    | Описание|
 |:---------------|:--------|:----------|
-| ремовефромдефаултаудиограуп | Boolean |  |
+| ремовефромдефаултаудиограуп | Логический |  |
 
 ## <a name="json-representation"></a>Представление JSON
 

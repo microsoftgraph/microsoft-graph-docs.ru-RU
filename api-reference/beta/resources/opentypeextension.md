@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 260ece8f5764250e4d728dd279d73ac94d77af5d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 77afcc7c2894e92c02d9383af6c1e3f634122b4c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009323"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522167"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>Тип ресурсов openTypeExtension (открытые расширения)
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -84,7 +86,7 @@ ms.locfileid: "36009323"
 
 | Метод | Возвращаемый тип | Описание |
 |:---------------|:--------|:----------|
-|[Post](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) (в существующем экземпляре ресурса) или нового [контакта](../resources/contact.md), [события](../resources/event.md)или [сообщения](../resources/message.md) , содержащего объект openTypeExtension. | Создание объекта openTypeExtension в существующем или новом экземпляре ресурса.|
+|[Post](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md)(в существующем экземпляре ресурса) или новый [контакт](../resources/contact.md), [событие](../resources/event.md)или [сообщение](../resources/message.md) , содержащее объект openTypeExtension. | Создание объекта openTypeExtension в существующем или новом экземпляре ресурса.|
 |[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Чтение свойств и связей объекта openTypeExtension.|
 |[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Обновление объекта openTypeExtension. |
 |[Delete](../api/opentypeextension-delete.md) | Нет |Удаление объекта openTypeExtension. |

@@ -5,34 +5,36 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: e630a64e7ece98d956a5f3821ec92413512fc7e4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9c84ee4f36dac10499d553333654635934ca01a6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966939"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522864"
 ---
 # <a name="mailboxusagedetail-resource-type"></a>Тип ресурса Маилбоксусажедетаил
+
+Пространство имен: Microsoft. Graph
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                        | Тип    |
 | :------------------------------ | :------ |
-| Репортрефрешдате               | Дата    |
+| репортрефрешдате               | Дата    |
 | userPrincipalName               | String  |
 | displayName                     | Строка  |
-| isDeleted                       | Boolean |
-| Делетеддате                     | Дата    |
+| isDeleted                       | Логический |
+| делетеддате                     | Дата    |
 | createdDate                     | Дата    |
-| Ластактивитидате                | Дата    |
+| ластактивитидате                | Дата    |
 | itemCount                       | Int64   |
-| Сторажеусединбитес              | Int64   |
-| Делетедитемкаунт                | Int64   |
-| Делетедитемсизеинбитес          | Int64   |
-| Иссуеварнингкуотаинбитес        | Int64   |
-| Прохибитсендкуотаинбитес        | Int64   |
-| Прохибитсендрецеивекуотаинбитес | Int64   |
-| Репортпериод                    | String  |
+| сторажеусединбитес              | Int64   |
+| делетедитемкаунт                | Int64   |
+| делетедитемсизеинбитес          | Int64   |
+| иссуеварнингкуотаинбитес        | Int64   |
+| прохибитсендкуотаинбитес        | Int64   |
+| прохибитсендрецеивекуотаинбитес | Int64   |
+| репортпериод                    | String  |
 
 ## <a name="json-representation"></a>Представление JSON
 

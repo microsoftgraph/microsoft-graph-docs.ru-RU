@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 2bdcdba51424f7f864acb454869522b0996ef254
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ec7225800c179ae5592c5d2ef040f8a009568ac7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009702"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522675"
 ---
 # <a name="messagerule-resource-type"></a>Тип ресурса messageRule
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,9 +32,9 @@ ms.locfileid: "36009702"
 | conditions | [messageRulePredicates](messagerulepredicates.md) | Условия, выполнение которых активирует соответствующие действия для указанного правила. |
 | displayName | Строка | Отображаемое имя правила. |
 | exceptions | [messageRulePredicates](messagerulepredicates.md) | Условия исключения для правила. |
-| hasError | Boolean | Указывает, является ли правило ошибкой. Только для чтения. |
+| hasError | Логический | Указывает, является ли правило ошибкой. Только для чтения. |
 | id |String|Уникальный идентификатор правила. Только для чтения.|
-| isEnabled | Boolean | Указывает, включено ли применение правила к сообщениям. |
+| isEnabled | Логический | Указывает, включено ли применение правила к сообщениям. |
 | isReadOnly | Boolean | Указывает, доступно ли правило только для чтения и можно ли изменить или удалить его с помощью REST API для правил. |
 | sequence | Int32 | Определяет последовательность выполнения правила среди прочих правил. |
 
@@ -69,7 +71,7 @@ ms.locfileid: "36009702"
 |[Получение правила](../api/messagerule-get.md) | [messageRule](messagerule.md) |Считывает свойства и отношения объекта **messageRule**.|
 |[Создание](../api/mailfolder-post-messagerules.md) | [messageRule](messagerule.md) |Создает объект **messageRule**, определяя набор условий и действий.|
 |[Обновление](../api/messagerule-update.md) | [messageRule](messagerule.md) |Изменяет записываемые свойства объекта **messageRule** и сохраняет изменения. |
-|[Удаление](../api/messagerule-delete.md) | Нет |Удаляет указанный объект **messageRule**. |
+|[удаление](../api/messagerule-delete.md); | Нет |Удаляет указанный объект **messageRule**. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

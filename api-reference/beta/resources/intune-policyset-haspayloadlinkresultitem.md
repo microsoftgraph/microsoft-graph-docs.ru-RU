@@ -5,30 +5,32 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 09e61f33151158c600e3a3ea783965f2f131fcce
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 219bf9b1a2058b06895ec90883849cc8bdf0b569
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37201268"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524008"
 ---
 # <a name="haspayloadlinkresultitem-resource-type"></a>Тип ресурса Хаспайлоадлинкресултитем
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Класс, содержащий результат действия Хаспайлоадлинкс.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|пайлоадид|String.|Ключ полезных данных в формате GUID.|
-|хаслинк|Boolean.|Указывает, содержит ли полезная нагрузка какую бы то ни было ссылку.|
-|error|String.|Сведения об исключении указывают на успешность проверки этого элемента. Пустая строка без ошибки.|
+|пайлоадид|String|Ключ полезных данных в формате GUID.|
+|хаслинк|Логический|Указывает, содержит ли полезная нагрузка какую бы то ни было ссылку.|
+|error|String|Сведения об исключении указывают на успешность проверки этого элемента. Пустая строка без ошибки.|
 |sources|Коллекция [девицеандаппманажементассигнментсаурце](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Причина, по которой получена ссылка.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

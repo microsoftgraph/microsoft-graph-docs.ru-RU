@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a3cfe862f0686a0de9f1e7368402868ffaeef00f
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 2509c7a185282c90f0cb5ac60e03f4fc44bc212d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088184"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523606"
 ---
 # <a name="ownertype-enum-type"></a>ownerType тип enum
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -24,8 +26,8 @@ ms.locfileid: "38088184"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Найден.|
-|внутрихолдинговом|1,1|Принадлежит компании.|
-|personal|2|Принадлежит пользователю.|
+|внутрихолдинговом|1 |Принадлежит компании.|
+|personal|2 |Принадлежит пользователю.|
 
 
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 10bdafb9894d822f345bb6fb23174fa7f7deee4c
-ms.sourcegitcommit: d189830649794365464e37539e02239f883011da
+ms.openlocfilehash: e32d6c51ae09601bc752ed2a352dc50a4285f7c2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37653820"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523165"
 ---
 # <a name="ipnamedlocation-resource-type"></a>Тип ресурса Ипнамедлокатион
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

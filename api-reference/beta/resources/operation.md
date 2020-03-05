@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 237e16373db30db9f4a9ed61c6182f6dd826d956
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 44d1bdfdca902652d77d978b0eae4cffdf359f39
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966365"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522161"
 ---
 # <a name="operation-resource-type"></a>Тип ресурса Operation
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +30,7 @@ ms.locfileid: "35966365"
 | :----------------- | :-------------- | :-------------------------------------------------------------------------------|
 | createdDateTime    | DateTimeOffset  | Время начала операции.                                                |
 | id                 | Строка          | Идентификатор операции. Только для чтения. Создается сервером.                                  |
-| Ластактиондатетиме | DateTimeOffset  | Время последнего действия операции.                                   |
+| ластактиондатетиме | DateTimeOffset  | Время последнего действия операции.                                   |
 | status             | String          | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения. |
 
 ## <a name="relationships"></a>Отношения

@@ -5,28 +5,30 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ede152d056c082e3b55c9142730ce61af86ae48c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a9955b825fffab7837cb2c77ffa443ad3f9c9fa1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36369348"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524064"
 ---
 # <a name="vpptokensyncstatus-enum-type"></a>тип перечисления Впптокенсинкстатус
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Возможные состояния синхронизации, связанные с токеном Apple Volume Purchase Program.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Состояние по умолчанию.|
-|inProgress|1,1|Выполняется Последняя синхронизация.|
-|готовы|2|Последняя синхронизация выполнена успешно.|
-|сбоев|4|Не удалось выполнить последнюю синхронизацию.|
+|нет|нуль|Состояние по умолчанию.|
+|inProgress|1 |Выполняется Последняя синхронизация.|
+|готовы|2 |Последняя синхронизация выполнена успешно.|
+|сбоев|3 |Не удалось выполнить последнюю синхронизацию.|
 
 
 

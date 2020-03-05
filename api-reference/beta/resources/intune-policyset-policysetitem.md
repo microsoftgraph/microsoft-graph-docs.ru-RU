@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 11ebd543bf14df00bddd408dcb26400e3e783b6f
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: df5cdc970696db9785c19c0a6c5afb5ab2266f7b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37201253"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42523980"
 ---
 # <a name="policysetitem-resource-type"></a>Тип ресурса Полицисетитем
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Класс, содержащий свойства, используемые для элемента "набор политик".
 
@@ -24,7 +26,7 @@ ms.locfileid: "37201253"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Полицисетитемс](../api/intune-policyset-policysetitem-list.md)|Коллекция [полицисетитем](../resources/intune-policyset-policysetitem.md)|Список свойств и связей объектов [полицисетитем](../resources/intune-policyset-policysetitem.md) .|
-|[Получение Полицисетитем](../api/intune-policyset-policysetitem-get.md)|[полицисетитем](../resources/intune-policyset-policysetitem.md)|Чтение свойств и связей объекта [полицисетитем](../resources/intune-policyset-policysetitem.md) .|
+|[Получение Полицисетитем](../api/intune-policyset-policysetitem-get.md)|[policySetItem](../resources/intune-policyset-policysetitem.md)|Чтение свойств и связей объекта [полицисетитем](../resources/intune-policyset-policysetitem.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -32,14 +34,14 @@ ms.locfileid: "37201253"
 |id|String|Ключ Мобилеаппполицисетитем.|
 |createdDateTime|DateTimeOffset|Время создания Полицисетитем.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения Полицисетитем.|
-|пайлоадид|String.|Пайлоадид Полицисетитем.|
-|itemType|String.|Полицисеттипе Полицисетитем.|
+|пайлоадид|String|Пайлоадид Полицисетитем.|
+|itemType|String|Полицисеттипе Полицисетитем.|
 |displayName|Строка|DisplayName объекта Полицисетитем.|
-|status|[полицисетстатус](../resources/intune-policyset-policysetstatus.md)|Состояние Полицисетитем. Возможные значения: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
-|errorCode|[Коде](../resources/intune-policyset-errorcode.md)|Код ошибки (при возникновении ошибки). Возможные значения: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|гуидеддеплойменттагс|Коллекция строк|Теги в руководстве по развертыванию|
+|status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Состояние Полицисетитем. Возможные значения: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
+|errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Код ошибки (при возникновении ошибки). Возможные значения: `noError`, `unauthorized`, `notFound`, `deleted`.|
+|гуидеддеплойменттагс|Коллекция String|Теги в руководстве по развертыванию|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

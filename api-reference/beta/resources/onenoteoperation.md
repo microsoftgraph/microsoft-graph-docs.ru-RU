@@ -5,14 +5,16 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 3f6a8bdfc6cee8b71fb77fb7778171677acb5df9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 500a4c20583f6af9cc8bacf98dd4de60354f0ab2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966435"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522346"
 ---
 # <a name="onenoteoperation-resource-type"></a>Тип ресурса onenoteOperation
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,15 +49,15 @@ ms.locfileid: "35966435"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |Время начала операции.|
-|error|[Оненотеоператионеррор](onenoteoperationerror.md)|Ошибка, возвращенная операцией.|
-|id|string|Идентификатор операции. Только для чтения.|
-|Ластактиондатетиме| DateTimeOffset |Время последнего действия операции.|
-|resourceId|string|Идентификатор ресурса.|
-|Ресаурцелокатион|string|URI ресурса для объекта. Например, URI ресурса для скопированной страницы или раздела. |
+|error|[оненотеоператионеррор](onenoteoperationerror.md)|Ошибка, возвращенная операцией.|
+|id|строка|Идентификатор операции. Только для чтения.|
+|ластактиондатетиме| DateTimeOffset |Время последнего действия операции.|
+|resourceId|строка|Идентификатор ресурса.|
+|ресаурцелокатион|строка|URI ресурса для объекта. Например, URI ресурса для скопированной страницы или раздела. |
 |status|string|Текущее состояние операции: `notstarted`, `running`,, `completed``failed` |
-|percentComplete|string|Процент завершения операции, если операция все еще находится в `running` состоянии.
+|percentComplete|строка|Процент завершения операции, если операция все еще находится в `running` состоянии.
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

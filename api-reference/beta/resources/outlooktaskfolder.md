@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 631da782e47325a2ff28eb6ae9eb1447e1b0a14d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 094c8f9fc6489f081f93d5a6e1ece02857884910
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009260"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522083"
 ---
 # <a name="outlooktaskfolder-resource-type"></a>Тип ресурса outlookTaskFolder
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,10 +28,10 @@ ms.locfileid: "36009260"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение outlookTaskFolder](../api/outlooktaskfolder-get.md) | [outlookTaskFolder](outlooktaskfolder.md) |Получение свойств и связей указанной папки задач Outlook.|
-|[Создание outlookTask](../api/outlooktaskfolder-post-tasks.md) |[outlookTask](outlooktask.md)| Создание задачи Outlook в указанной папке задач.|
-|[Перечисление задач](../api/outlooktaskfolder-list-tasks.md) |Коллекция [outlookTask](outlooktask.md)| Получение всех задач Outlook в указанной папке.|
-|[обновление](../api/outlooktaskfolder-update.md); | [outlookTaskFolder](outlooktaskfolder.md)   |Обновление свойств, доступных для записи, папки задач Outlook. |
-|[Удаление](../api/outlooktaskfolder-delete.md) | Нет |Удаление указанной папки задач Outlook.|
+|[Создание объекта outlookTask](../api/outlooktaskfolder-post-tasks.md) |[outlookTask](outlooktask.md)| Создание задачи Outlook в указанной папке задач.|
+|[Список задач](../api/outlooktaskfolder-list-tasks.md) |Коллекция объектов [outlookTask](outlooktask.md)| Получение всех задач Outlook в указанной папке.|
+|[обновление](../api/outlooktaskfolder-update.md). | [outlookTaskFolder](outlooktaskfolder.md)   |Обновление свойств, доступных для записи, папки задач Outlook. |
+|[удаление](../api/outlooktaskfolder-delete.md); | Нет |Удаление указанной папки задач Outlook.|
 |**Расширенные свойства**| | |
 |[Создание расширенного свойства с одним значением](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[outlookTaskFolder](outlooktaskfolder.md)  |Создайте одно или несколько расширенных свойств с одним значением в новой или существующей папке задач Outlook.   |
 |[Получение папки задач с расширенным свойством с одним значением](../api/singlevaluelegacyextendedproperty-get.md)  | [outlookTaskFolder](outlooktaskfolder.md) | Получение папок задач Outlook, которые содержат расширенное свойство с одним значением, `$expand` с `$filter`помощью или. |
@@ -41,16 +43,16 @@ ms.locfileid: "36009260"
 |:---------------|:--------|:----------|
 |changeKey|String|Версия папки задач.|
 |id|String|Идентификатор папки задач, уникальный в почтовом ящике пользователя. Только для чтения.|
-|Исдефаултфолдер|Boolean|Значение true, если папка является папкой задач по умолчанию.|
+|исдефаултфолдер|Логический|Значение true, если папка является папкой задач по умолчанию.|
 |name|String|Имя папки задач.|
-|Парентграупкэй|GUID|Уникальный идентификатор GUID родительской группы папок задач.|
+|парентграупкэй|GUID|Уникальный идентификатор GUID родительской группы папок задач.|
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)|Коллекция расширенных свойств с несколькими значениями, определенных для папки задач. Только для чтения. Допускается значение null.|
 |singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)|Коллекция расширенных свойств с одним значением, определенных для папки задач. Только для чтения. Допускается значение null.|
-|tasks|Коллекция [outlookTask](outlooktask.md)|Задачи в этой папке задач. Только для чтения. Допускается значение null.|
+|tasks|Коллекция объектов [outlookTask](outlooktask.md)|Задачи в этой папке задач. Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
