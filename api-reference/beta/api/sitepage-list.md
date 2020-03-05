@@ -6,14 +6,16 @@ title: Список страниц сайта
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e7fa95ee251e1d33038074da584470895f48761f
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: ff281526e49fa9b9f6a790f00e4d83f4cf95853e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36722330"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453162"
 ---
 # <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a>Перечисление страниц в списке страниц сайта
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,7 +23,7 @@ ms.locfileid: "36722330"
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
-[сайта]: ../resources/site.md
+[site]: ../resources/site.md
 
 ## <a name="permissions"></a>Разрешения
 

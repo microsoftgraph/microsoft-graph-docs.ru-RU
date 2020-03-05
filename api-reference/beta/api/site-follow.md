@@ -1,18 +1,20 @@
 ---
 author: learafa
-title: Подписаться на сайт
+title: Отслеживание сайта
 description: Подпишитесь на сайт или сайты пользователя.
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e33e7e9906697df70cab845a8372e9adfb0c6078
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 5eaec23451dd7e2d47264b1214464c37dc10ff09
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36410005"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453256"
 ---
-# <a name="follow-site"></a>Подписаться на сайт 
+# <a name="follow-site"></a>Отслеживание сайта 
+
+Пространство имен: Microsoft. Graph
 
 Подпишитесь на [сайт](../resources/site.md) пользователя или несколько сайтов.
 
@@ -34,14 +36,14 @@ ms.locfileid: "36410005"
 POST /users/{user-id}/followedSites/add
 ```
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса добавьте массив объектов JSON с параметром ID, указанным в приведенной ниже таблице. 
 
 
 | Имя                 | Значение  | Описание                                                            |
 |:---------------------|:-------|:-----------------------------------------------------------------------|
-|   id                 | string | [Уникальный идентификатор](../resources/site.md#id-property) элемента. |
+|   id                 | строка | [Уникальный идентификатор](../resources/site.md#id-property) элемента. |
 
 
 ## <a name="response"></a>Отклик 
@@ -56,7 +58,7 @@ POST /users/{user-id}/followedSites/add
 ### <a name="request"></a>Запрос
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "follow-site", "scopes": "sites.readwrite.all" } -->
 
 ```http
@@ -75,15 +77,15 @@ Content-Type: application/json
     ] 
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/follow-site-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/follow-site-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/follow-site-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

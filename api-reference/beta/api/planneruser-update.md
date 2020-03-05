@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 269741aff4f17a0855bda4681ae49799c03cd4f6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 690b3f5ee5eac190916aa1137fc90504cc1de8ee
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35992173"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455552"
 ---
 # <a name="update-planneruser"></a>Обновление plannerUser
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,15 +38,15 @@ PATCH /me/planner
 | Имя       | Описание|
 |:-----------|:-----------|
 | Авторизация  | Bearer {код}. Обязательно.|
-| If-Match  | Последнее известное значение ETag для **plannerUser** , которое требуется обновить. Обязательно.|
+| If-Match  | Последнее известное значение ETag для **plannerUser** , которое требуется обновить. Обязательный элемент.|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Фаворитепланреференцес|[plannerFavoritePlanReferenceCollection](../resources/plannerfavoriteplanreferencecollection.md);|Изменения коллекции, содержащие ссылки на планы, помеченные пользователем в качестве избранного.|
-|Рецентпланреференцес|[plannerRecentPlanReferenceCollection](../resources/plannerrecentplanreferencecollection.md).|Изменения коллекции, содержащие ссылки на планы, которые пользователь недавно просматривал.|
+|фаворитепланреференцес|[plannerFavoritePlanReferenceCollection](../resources/plannerfavoriteplanreferencecollection.md);|Изменения коллекции, содержащие ссылки на планы, помеченные пользователем в качестве избранного.|
+|рецентпланреференцес|[plannerRecentPlanReferenceCollection](../resources/plannerrecentplanreferencecollection.md).|Изменения коллекции, содержащие ссылки на планы, которые пользователь недавно просматривал.|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [plannerUser](../resources/planneruser.md) в тексте отклика.

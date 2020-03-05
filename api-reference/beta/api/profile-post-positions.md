@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: faca957f2a4c1ee040d14d84b5c50702256cd941
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 1e435595ff4647c65c20c8465e450ac14dd45047
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37937674"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455090"
 ---
 # <a name="create-workposition"></a>Создание Воркпоситион
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +45,7 @@ POST /me/profile/positions
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Content-Type   | application/json. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
 В тексте запроса добавьте представление объекта [воркпоситион](../resources/workposition.md) в формате JSON.
 

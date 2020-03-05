@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 74a937c58a0662c34547f23587206c42d5801fb3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d86f4011df727ec31e2c054e0fa2ea10736ca9e5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35992180"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455533"
 ---
 # <a name="delete-policy"></a>Удаление политики
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,12 +39,12 @@ DELETE /policies/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-При успешном выполнении этот метод возвращает код отклика `204 No Content`. В случае неудачного завершения...
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В случае неудачного завершения...
 
 ## <a name="example"></a>Пример
 В следующем примере удаляется политика.
@@ -55,7 +57,7 @@ DELETE https://graph.microsoft.com/beta/policies/{id}
 ```
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 ```http
 HTTP/1.1 204 No Content

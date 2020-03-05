@@ -1,18 +1,20 @@
 ---
-title: Создание outlookTask
+title: Создание объекта outlookTask
 description: Создание задачи Outlook в указанной папке задач.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a6e26dc9640baaf5c6f7a81bda29ba5b1c035a51
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d9054dbc262c9350bb3efcc17193d66f27ae5904
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35988694"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42456147"
 ---
-# <a name="create-outlooktask"></a>Создание outlookTask
+# <a name="create-outlooktask"></a>Создание объекта outlookTask
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,9 +43,9 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательно.|
+| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательное свойство.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [outlookTask](../resources/outlooktask.md) в формате JSON.
 
 ## <a name="response"></a>Отклик

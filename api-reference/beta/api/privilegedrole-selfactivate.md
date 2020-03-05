@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: eb984bb532d19e3e0cacd5827a9027e4aa4c0533
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: f9f7c351d0d5fd64c2c4b40870e5df1ed9194387
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412777"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455387"
 ---
 # <a name="privilegedrole-selfactivate"></a>Привилежедроле: Селфактивате
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,15 +47,15 @@ POST /privilegedRoles/{id}/selfActivate
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|причиной|string|Необязательно. Описание причины активации этой роли.|
-|duration|string|Необязательно. Допустимые значения ```min``` : (минимальная длительность активации), ```default``` (длительность активации по умолчанию для роли) или значение Double, определяющее количество часов активации. Указанное время не может быть длиннее, чем длительность активации роли из параметра Role. |
-|тиккетнумбер|string|Необязательно. Номер билета, который используется для отслеживания активации этой роли.|
-|тиккетсистем|string|Необязательно. Система билетов.|
+|reason|string|Необязательный параметр. Описание причины активации этой роли.|
+|duration|string|Необязательный параметр. Допустимые значения ```min``` : (минимальная длительность активации), ```default``` (длительность активации по умолчанию для роли) или значение Double, определяющее количество часов активации. Указанное время не может быть длиннее, чем длительность активации роли из параметра Role. |
+|тиккетнумбер|string|Необязательный параметр. Номер билета, который используется для отслеживания активации этой роли.|
+|тиккетсистем|string|Необязательный параметр. Система билетов.|
 
 ## <a name="response"></a>Отклик
 
@@ -65,7 +67,7 @@ POST /privilegedRoles/{id}/selfActivate
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "privilegedrole_selfactivate"
@@ -82,15 +84,15 @@ Content-length: 142
   "ticketSystem": "ticketSystem-value"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/privilegedrole-selfactivate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/privilegedrole-selfactivate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/privilegedrole-selfactivate-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

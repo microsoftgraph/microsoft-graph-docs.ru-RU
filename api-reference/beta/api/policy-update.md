@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 85104248d840478a9595382b54d3eaa7ea7e1e5b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 81c9d429ba3a74d854a9d091f6e40af7993916f0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35978863"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455494"
 ---
 # <a name="update-policy"></a>Обновление политики
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,7 +47,7 @@ PATCH /policies/{id}
 |:---------------|:--------|:----------|
 |RDLC|String|Версия преобразованного объекта [Policy](../resources/policy.md) .|
 |displayName|Строка|Настраиваемое имя политики.|
-|Исорганизатиондефаулт|Boolean|Указывает, применяется ли эта политика по умолчанию.|
+|исорганизатиондефаулт|Логический|Указывает, применяется ли эта политика по умолчанию.|
 |type|String|Указывает тип политики. В настоящее время должен быть "Токенлифетимеполици"|
 
 ## <a name="response"></a>Ответ
@@ -68,7 +70,7 @@ Content-Type: application/json
 ```
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 ```http
 HTTP/1.1 204 No Content

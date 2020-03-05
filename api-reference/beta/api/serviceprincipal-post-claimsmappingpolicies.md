@@ -1,18 +1,20 @@
 ---
-title: Назначение Клаимсмаппингполици
+title: Назначение типа ресурса claimsMappingPolicy
 description: Назначьте Клаимсмаппингполици участнику службы.
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ce7a1af7b058aa25fbeaad3df21fb8f4ed735046
-ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
+ms.openlocfilehash: 6fea8527d6da5f9422e1d81c5f2a0a662dfcd00c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41234487"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42453368"
 ---
-# <a name="assign-claimsmappingpolicy"></a>Назначение Клаимсмаппингполици
+# <a name="assign-claimsmappingpolicy"></a>Назначение типа ресурса claimsMappingPolicy
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +42,7 @@ POST /servicePrincipals/{id}/claimsMappingPolicies/$ref
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -56,6 +58,8 @@ POST /servicePrincipals/{id}/claimsMappingPolicies/$ref
 ### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_claimsmappingpolicy_from_serviceprincipal"
@@ -69,6 +73,12 @@ Content-Type: application/json
   "@odata.id":"https://graph.microsoft.com/beta/policies/claimsMappingPolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-claimsmappingpolicy-from-serviceprincipal-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

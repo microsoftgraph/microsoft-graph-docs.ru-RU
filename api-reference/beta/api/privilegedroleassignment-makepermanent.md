@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: d1d8995f8effa376b13393e59db30831d9ac49d0
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: b17cb3d7bb1248be06d34078f0f0bc897870c684
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36412693"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42455335"
 ---
 # <a name="privilegedroleassignment-makepermanent"></a>Привилежедролеассигнмент: Макеперманент
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +25,7 @@ ms.locfileid: "36412693"
 
 Клиент должен быть зарегистрирован в PIM. В противном случае возвращается сообщение об ошибке HTTP 403 запрещено.
 
-Запрашивающая сторона должна иметь привилегированную роль _администратора ролей_ . 
+Запрашивающая сторона должна иметь _привилегированную роль администратора ролей_ . 
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -41,14 +43,14 @@ POST /privilegedRoleAssignments/{id}/makePermanent
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|причиной|string|Необязательно. Причина для совершения звонка.|
-|тиккетнумбер|string|Необязательно. Регистрационный номер, связанный с этим действием.|
-|тиккетсистем|string|Необязательно. Система билетов.|
+|reason|string|Необязательный параметр. Причина для совершения звонка.|
+|тиккетнумбер|string|Необязательный параметр. Регистрационный номер, связанный с этим действием.|
+|тиккетсистем|string|Необязательный параметр. Система билетов.|
 
 ## <a name="response"></a>Отклик
 
@@ -59,7 +61,7 @@ POST /privilegedRoleAssignments/{id}/makePermanent
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "privilegedroleassignment_makepermanent"
@@ -75,15 +77,15 @@ Content-length: 110
   "ticketSystem": "ticketSystem-value"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/privilegedroleassignment-makepermanent-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/privilegedroleassignment-makepermanent-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/privilegedroleassignment-makepermanent-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -91,7 +93,7 @@ Content-length: 110
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
