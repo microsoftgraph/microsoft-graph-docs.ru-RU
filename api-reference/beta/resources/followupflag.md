@@ -5,30 +5,32 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 28f60187fcfb3d41779547b6252edf69c1fc2735
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9f69eca77fbeb7b9501c1f9186d0e00199a08658
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971979"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42497834"
 ---
-# <a name="followupflag-resource-type"></a><span data-ttu-id="b8c74-104">Тип ресурса followupFlag</span><span class="sxs-lookup"><span data-stu-id="b8c74-104">followupFlag resource type</span></span>
+# <a name="followupflag-resource-type"></a><span data-ttu-id="d965a-104">Тип ресурса followupFlag</span><span class="sxs-lookup"><span data-stu-id="d965a-104">followupFlag resource type</span></span>
+
+<span data-ttu-id="d965a-105">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="d965a-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b8c74-105">Позволяет установить отметку для пользователя, что к этому элементу необходимо вернуться позже.</span><span class="sxs-lookup"><span data-stu-id="b8c74-105">Allows setting a flag for the user to follow up on an item later.</span></span> <span data-ttu-id="b8c74-106">К поддерживаемым элементам относятся [message](message.md) и [contact](contact.md).</span><span class="sxs-lookup"><span data-stu-id="b8c74-106">Supported items include [message](message.md) and [contact](contact.md).</span></span>
+<span data-ttu-id="d965a-106">Позволяет установить отметку для пользователя, что к этому элементу необходимо вернуться позже.</span><span class="sxs-lookup"><span data-stu-id="d965a-106">Allows setting a flag for the user to follow up on an item later.</span></span> <span data-ttu-id="d965a-107">К поддерживаемым элементам относятся [message](message.md) и [contact](contact.md).</span><span class="sxs-lookup"><span data-stu-id="d965a-107">Supported items include [message](message.md) and [contact](contact.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="b8c74-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="b8c74-107">Properties</span></span>
-| <span data-ttu-id="b8c74-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="b8c74-108">Property</span></span>     | <span data-ttu-id="b8c74-109">Тип</span><span class="sxs-lookup"><span data-stu-id="b8c74-109">Type</span></span>   |<span data-ttu-id="b8c74-110">Описание</span><span class="sxs-lookup"><span data-stu-id="b8c74-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="d965a-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="d965a-108">Properties</span></span>
+| <span data-ttu-id="d965a-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="d965a-109">Property</span></span>     | <span data-ttu-id="d965a-110">Тип</span><span class="sxs-lookup"><span data-stu-id="d965a-110">Type</span></span>   |<span data-ttu-id="d965a-111">Описание</span><span class="sxs-lookup"><span data-stu-id="d965a-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="b8c74-111">completedDateTime</span><span class="sxs-lookup"><span data-stu-id="b8c74-111">completedDateTime</span></span>|[<span data-ttu-id="b8c74-112">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="b8c74-112">dateTimeTimeZone</span></span>](datetimetimezone.md)|<span data-ttu-id="b8c74-113">Дата и время, когда выполнение было завершено.</span><span class="sxs-lookup"><span data-stu-id="b8c74-113">The date and time that the follow-up was finished.</span></span>|
-|<span data-ttu-id="b8c74-114">dueDateTime</span><span class="sxs-lookup"><span data-stu-id="b8c74-114">dueDateTime</span></span>|<span data-ttu-id="b8c74-115">**dateTimeTimeZone**</span><span class="sxs-lookup"><span data-stu-id="b8c74-115">**dateTimeTimeZone**</span></span>|<span data-ttu-id="b8c74-116">Дата и время, когда выполнение должно быть завершено.</span><span class="sxs-lookup"><span data-stu-id="b8c74-116">The date and time that the follow-up is to be finished.</span></span>|
-|<span data-ttu-id="b8c74-117">flagStatus</span><span class="sxs-lookup"><span data-stu-id="b8c74-117">flagStatus</span></span>|<span data-ttu-id="b8c74-118">String</span><span class="sxs-lookup"><span data-stu-id="b8c74-118">String</span></span>|<span data-ttu-id="b8c74-119">Состояние выполнения для элемента.</span><span class="sxs-lookup"><span data-stu-id="b8c74-119">The status for follow-up for an item.</span></span> <span data-ttu-id="b8c74-120">Возможные значения: `notFlagged`, `complete` и `flagged`.</span><span class="sxs-lookup"><span data-stu-id="b8c74-120">Possible values are `notFlagged`, `complete`, and `flagged`.</span></span>|
-|<span data-ttu-id="b8c74-121">startDateTime</span><span class="sxs-lookup"><span data-stu-id="b8c74-121">startDateTime</span></span>|<span data-ttu-id="b8c74-122">**dateTimeTimeZone**</span><span class="sxs-lookup"><span data-stu-id="b8c74-122">**dateTimeTimeZone**</span></span>|<span data-ttu-id="b8c74-123">Дата и время, когда следует начать выполнение.</span><span class="sxs-lookup"><span data-stu-id="b8c74-123">The date and time that the follow-up is to begin.</span></span>|
+|<span data-ttu-id="d965a-112">completedDateTime</span><span class="sxs-lookup"><span data-stu-id="d965a-112">completedDateTime</span></span>|[<span data-ttu-id="d965a-113">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="d965a-113">dateTimeTimeZone</span></span>](datetimetimezone.md)|<span data-ttu-id="d965a-114">Дата и время, когда выполнение было завершено.</span><span class="sxs-lookup"><span data-stu-id="d965a-114">The date and time that the follow-up was finished.</span></span>|
+|<span data-ttu-id="d965a-115">dueDateTime</span><span class="sxs-lookup"><span data-stu-id="d965a-115">dueDateTime</span></span>|<span data-ttu-id="d965a-116">**dateTimeTimeZone**</span><span class="sxs-lookup"><span data-stu-id="d965a-116">**dateTimeTimeZone**</span></span>|<span data-ttu-id="d965a-117">Дата и время, когда выполнение должно быть завершено.</span><span class="sxs-lookup"><span data-stu-id="d965a-117">The date and time that the follow-up is to be finished.</span></span>|
+|<span data-ttu-id="d965a-118">flagStatus</span><span class="sxs-lookup"><span data-stu-id="d965a-118">flagStatus</span></span>|<span data-ttu-id="d965a-119">String</span><span class="sxs-lookup"><span data-stu-id="d965a-119">String</span></span>|<span data-ttu-id="d965a-120">Состояние выполнения для элемента.</span><span class="sxs-lookup"><span data-stu-id="d965a-120">The status for follow-up for an item.</span></span> <span data-ttu-id="d965a-121">Возможные значения: `notFlagged`, `complete` и `flagged`.</span><span class="sxs-lookup"><span data-stu-id="d965a-121">Possible values are `notFlagged`, `complete`, and `flagged`.</span></span>|
+|<span data-ttu-id="d965a-122">startDateTime</span><span class="sxs-lookup"><span data-stu-id="d965a-122">startDateTime</span></span>|<span data-ttu-id="d965a-123">**dateTimeTimeZone**</span><span class="sxs-lookup"><span data-stu-id="d965a-123">**dateTimeTimeZone**</span></span>|<span data-ttu-id="d965a-124">Дата и время, когда следует начать выполнение.</span><span class="sxs-lookup"><span data-stu-id="d965a-124">The date and time that the follow-up is to begin.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="b8c74-124">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="b8c74-124">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d965a-125">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d965a-125">JSON representation</span></span>
 
-<span data-ttu-id="b8c74-125">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b8c74-125">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="d965a-126">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d965a-126">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -5,34 +5,36 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 0ca694c5d416dcc062984ba03a3521a39a010a87
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d34ceaf4450a66f07c0678e55db344adc20bb0b1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972182"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42499500"
 ---
-# <a name="emailappusageappsusercounts-resource-type"></a><span data-ttu-id="eb438-103">Тип ресурса Емаилаппусажеаппсусеркаунтс</span><span class="sxs-lookup"><span data-stu-id="eb438-103">emailAppUsageAppsUserCounts resource type</span></span>
+# <a name="emailappusageappsusercounts-resource-type"></a><span data-ttu-id="fa4fa-103">Тип ресурса Емаилаппусажеаппсусеркаунтс</span><span class="sxs-lookup"><span data-stu-id="fa4fa-103">emailAppUsageAppsUserCounts resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="eb438-104">Свойства</span><span class="sxs-lookup"><span data-stu-id="eb438-104">Properties</span></span>
+<span data-ttu-id="fa4fa-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="fa4fa-104">Namespace: microsoft.graph</span></span>
 
-| <span data-ttu-id="eb438-105">Свойство</span><span class="sxs-lookup"><span data-stu-id="eb438-105">Property</span></span>          | <span data-ttu-id="eb438-106">Тип</span><span class="sxs-lookup"><span data-stu-id="eb438-106">Type</span></span>   |
+## <a name="properties"></a><span data-ttu-id="fa4fa-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="fa4fa-105">Properties</span></span>
+
+| <span data-ttu-id="fa4fa-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="fa4fa-106">Property</span></span>          | <span data-ttu-id="fa4fa-107">Тип</span><span class="sxs-lookup"><span data-stu-id="fa4fa-107">Type</span></span>   |
 | :---------------- | :----- |
-| <span data-ttu-id="eb438-107">Репортрефрешдате</span><span class="sxs-lookup"><span data-stu-id="eb438-107">reportRefreshDate</span></span> | <span data-ttu-id="eb438-108">Дата</span><span class="sxs-lookup"><span data-stu-id="eb438-108">Date</span></span>   |
-| <span data-ttu-id="eb438-109">Маилформак</span><span class="sxs-lookup"><span data-stu-id="eb438-109">mailForMac</span></span>        | <span data-ttu-id="eb438-110">Int64</span><span class="sxs-lookup"><span data-stu-id="eb438-110">Int64</span></span>  |
-| <span data-ttu-id="eb438-111">Аутлукформак</span><span class="sxs-lookup"><span data-stu-id="eb438-111">outlookForMac</span></span>     | <span data-ttu-id="eb438-112">Int64</span><span class="sxs-lookup"><span data-stu-id="eb438-112">Int64</span></span>  |
-| <span data-ttu-id="eb438-113">Аутлукфорвиндовс</span><span class="sxs-lookup"><span data-stu-id="eb438-113">outlookForWindows</span></span> | <span data-ttu-id="eb438-114">Int64</span><span class="sxs-lookup"><span data-stu-id="eb438-114">Int64</span></span>  |
-| <span data-ttu-id="eb438-115">Аутлукформобиле</span><span class="sxs-lookup"><span data-stu-id="eb438-115">outlookForMobile</span></span>  | <span data-ttu-id="eb438-116">Int64</span><span class="sxs-lookup"><span data-stu-id="eb438-116">Int64</span></span>  |
-| <span data-ttu-id="eb438-117">Осерформобиле</span><span class="sxs-lookup"><span data-stu-id="eb438-117">otherForMobile</span></span>    | <span data-ttu-id="eb438-118">Int64</span><span class="sxs-lookup"><span data-stu-id="eb438-118">Int64</span></span>  |
-| <span data-ttu-id="eb438-119">Аутлукфорвеб</span><span class="sxs-lookup"><span data-stu-id="eb438-119">outlookForWeb</span></span>     | <span data-ttu-id="eb438-120">Int64</span><span class="sxs-lookup"><span data-stu-id="eb438-120">Int64</span></span>  |
-| <span data-ttu-id="eb438-121">pop3App</span><span class="sxs-lookup"><span data-stu-id="eb438-121">pop3App</span></span>           | <span data-ttu-id="eb438-122">Int64</span><span class="sxs-lookup"><span data-stu-id="eb438-122">Int64</span></span>  |
-| <span data-ttu-id="eb438-123">imap4App</span><span class="sxs-lookup"><span data-stu-id="eb438-123">imap4App</span></span>          | <span data-ttu-id="eb438-124">Int64</span><span class="sxs-lookup"><span data-stu-id="eb438-124">Int64</span></span>  |
-| <span data-ttu-id="eb438-125">Смтпапп</span><span class="sxs-lookup"><span data-stu-id="eb438-125">smtpApp</span></span>           | <span data-ttu-id="eb438-126">Int64</span><span class="sxs-lookup"><span data-stu-id="eb438-126">Int64</span></span>  |
-| <span data-ttu-id="eb438-127">Репортпериод</span><span class="sxs-lookup"><span data-stu-id="eb438-127">reportPeriod</span></span>      | <span data-ttu-id="eb438-128">String</span><span class="sxs-lookup"><span data-stu-id="eb438-128">String</span></span> |
+| <span data-ttu-id="fa4fa-108">репортрефрешдате</span><span class="sxs-lookup"><span data-stu-id="fa4fa-108">reportRefreshDate</span></span> | <span data-ttu-id="fa4fa-109">Дата</span><span class="sxs-lookup"><span data-stu-id="fa4fa-109">Date</span></span>   |
+| <span data-ttu-id="fa4fa-110">маилформак</span><span class="sxs-lookup"><span data-stu-id="fa4fa-110">mailForMac</span></span>        | <span data-ttu-id="fa4fa-111">Int64</span><span class="sxs-lookup"><span data-stu-id="fa4fa-111">Int64</span></span>  |
+| <span data-ttu-id="fa4fa-112">аутлукформак</span><span class="sxs-lookup"><span data-stu-id="fa4fa-112">outlookForMac</span></span>     | <span data-ttu-id="fa4fa-113">Int64</span><span class="sxs-lookup"><span data-stu-id="fa4fa-113">Int64</span></span>  |
+| <span data-ttu-id="fa4fa-114">аутлукфорвиндовс</span><span class="sxs-lookup"><span data-stu-id="fa4fa-114">outlookForWindows</span></span> | <span data-ttu-id="fa4fa-115">Int64</span><span class="sxs-lookup"><span data-stu-id="fa4fa-115">Int64</span></span>  |
+| <span data-ttu-id="fa4fa-116">аутлукформобиле</span><span class="sxs-lookup"><span data-stu-id="fa4fa-116">outlookForMobile</span></span>  | <span data-ttu-id="fa4fa-117">Int64</span><span class="sxs-lookup"><span data-stu-id="fa4fa-117">Int64</span></span>  |
+| <span data-ttu-id="fa4fa-118">осерформобиле</span><span class="sxs-lookup"><span data-stu-id="fa4fa-118">otherForMobile</span></span>    | <span data-ttu-id="fa4fa-119">Int64</span><span class="sxs-lookup"><span data-stu-id="fa4fa-119">Int64</span></span>  |
+| <span data-ttu-id="fa4fa-120">аутлукфорвеб</span><span class="sxs-lookup"><span data-stu-id="fa4fa-120">outlookForWeb</span></span>     | <span data-ttu-id="fa4fa-121">Int64</span><span class="sxs-lookup"><span data-stu-id="fa4fa-121">Int64</span></span>  |
+| <span data-ttu-id="fa4fa-122">pop3App</span><span class="sxs-lookup"><span data-stu-id="fa4fa-122">pop3App</span></span>           | <span data-ttu-id="fa4fa-123">Int64</span><span class="sxs-lookup"><span data-stu-id="fa4fa-123">Int64</span></span>  |
+| <span data-ttu-id="fa4fa-124">imap4App</span><span class="sxs-lookup"><span data-stu-id="fa4fa-124">imap4App</span></span>          | <span data-ttu-id="fa4fa-125">Int64</span><span class="sxs-lookup"><span data-stu-id="fa4fa-125">Int64</span></span>  |
+| <span data-ttu-id="fa4fa-126">смтпапп</span><span class="sxs-lookup"><span data-stu-id="fa4fa-126">smtpApp</span></span>           | <span data-ttu-id="fa4fa-127">Int64</span><span class="sxs-lookup"><span data-stu-id="fa4fa-127">Int64</span></span>  |
+| <span data-ttu-id="fa4fa-128">репортпериод</span><span class="sxs-lookup"><span data-stu-id="fa4fa-128">reportPeriod</span></span>      | <span data-ttu-id="fa4fa-129">String</span><span class="sxs-lookup"><span data-stu-id="fa4fa-129">String</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="eb438-129">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="eb438-129">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="fa4fa-130">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="fa4fa-130">JSON representation</span></span>
 
-<span data-ttu-id="eb438-130">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="eb438-130">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="fa4fa-131">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="fa4fa-131">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

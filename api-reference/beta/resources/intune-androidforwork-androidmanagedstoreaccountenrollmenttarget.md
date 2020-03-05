@@ -5,28 +5,30 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5425c8da26a6db8fc4fba3ad5367f0dd2508e650
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ce2548311cdaa6aadc9beea47cad1a858b6e0855
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36367017"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42494627"
 ---
-# <a name="androidmanagedstoreaccountenrollmenttarget-enum-type"></a><span data-ttu-id="e93fe-103">тип перечисления Андроидманажедстореаккаунтенроллменттаржет</span><span class="sxs-lookup"><span data-stu-id="e93fe-103">androidManagedStoreAccountEnrollmentTarget enum type</span></span>
+# <a name="androidmanagedstoreaccountenrollmenttarget-enum-type"></a><span data-ttu-id="2d220-103">тип перечисления Андроидманажедстореаккаунтенроллменттаржет</span><span class="sxs-lookup"><span data-stu-id="2d220-103">androidManagedStoreAccountEnrollmentTarget enum type</span></span>
 
-> <span data-ttu-id="e93fe-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e93fe-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="2d220-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="2d220-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="e93fe-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="e93fe-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="2d220-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2d220-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="e93fe-106">Тип нацеленности управления рабочими устройствами Android для учетной записи</span><span class="sxs-lookup"><span data-stu-id="e93fe-106">Android for Work device management targeting type for the account</span></span>
+> <span data-ttu-id="2d220-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="2d220-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="e93fe-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="e93fe-107">Members</span></span>
-|<span data-ttu-id="e93fe-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="e93fe-108">Member</span></span>|<span data-ttu-id="e93fe-109">Значение</span><span class="sxs-lookup"><span data-stu-id="e93fe-109">Value</span></span>|<span data-ttu-id="e93fe-110">Описание</span><span class="sxs-lookup"><span data-stu-id="e93fe-110">Description</span></span>|
+<span data-ttu-id="2d220-107">Тип нацеленности управления рабочими устройствами Android для учетной записи</span><span class="sxs-lookup"><span data-stu-id="2d220-107">Android for Work device management targeting type for the account</span></span>
+
+## <a name="members"></a><span data-ttu-id="2d220-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="2d220-108">Members</span></span>
+|<span data-ttu-id="2d220-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="2d220-109">Member</span></span>|<span data-ttu-id="2d220-110">Значение</span><span class="sxs-lookup"><span data-stu-id="2d220-110">Value</span></span>|<span data-ttu-id="2d220-111">Описание</span><span class="sxs-lookup"><span data-stu-id="2d220-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e93fe-111">none</span><span class="sxs-lookup"><span data-stu-id="e93fe-111">none</span></span>|<span data-ttu-id="e93fe-112">нуль</span><span class="sxs-lookup"><span data-stu-id="e93fe-112">0</span></span>|<span data-ttu-id="e93fe-113">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="e93fe-113">Not yet documented</span></span>|
-|<span data-ttu-id="e93fe-114">ко</span><span class="sxs-lookup"><span data-stu-id="e93fe-114">all</span></span>|<span data-ttu-id="e93fe-115">1,1</span><span class="sxs-lookup"><span data-stu-id="e93fe-115">1</span></span>|<span data-ttu-id="e93fe-116">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="e93fe-116">Not yet documented</span></span>|
-|<span data-ttu-id="e93fe-117">Целевой</span><span class="sxs-lookup"><span data-stu-id="e93fe-117">targeted</span></span>|<span data-ttu-id="e93fe-118">2</span><span class="sxs-lookup"><span data-stu-id="e93fe-118">2</span></span>|<span data-ttu-id="e93fe-119">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="e93fe-119">Not yet documented</span></span>|
-|<span data-ttu-id="e93fe-120">таржетедасенроллментрестриктионс</span><span class="sxs-lookup"><span data-stu-id="e93fe-120">targetedAsEnrollmentRestrictions</span></span>|<span data-ttu-id="e93fe-121">4</span><span class="sxs-lookup"><span data-stu-id="e93fe-121">3</span></span>|<span data-ttu-id="e93fe-122">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="e93fe-122">Not yet documented</span></span>|
+|<span data-ttu-id="2d220-112">нет</span><span class="sxs-lookup"><span data-stu-id="2d220-112">none</span></span>|<span data-ttu-id="2d220-113">нуль</span><span class="sxs-lookup"><span data-stu-id="2d220-113">0</span></span>|<span data-ttu-id="2d220-114">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="2d220-114">Not yet documented</span></span>|
+|<span data-ttu-id="2d220-115">ко</span><span class="sxs-lookup"><span data-stu-id="2d220-115">all</span></span>|<span data-ttu-id="2d220-116">1 </span><span class="sxs-lookup"><span data-stu-id="2d220-116">1</span></span>|<span data-ttu-id="2d220-117">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="2d220-117">Not yet documented</span></span>|
+|<span data-ttu-id="2d220-118">Целевой</span><span class="sxs-lookup"><span data-stu-id="2d220-118">targeted</span></span>|<span data-ttu-id="2d220-119">2 </span><span class="sxs-lookup"><span data-stu-id="2d220-119">2</span></span>|<span data-ttu-id="2d220-120">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="2d220-120">Not yet documented</span></span>|
+|<span data-ttu-id="2d220-121">таржетедасенроллментрестриктионс</span><span class="sxs-lookup"><span data-stu-id="2d220-121">targetedAsEnrollmentRestrictions</span></span>|<span data-ttu-id="2d220-122">3 </span><span class="sxs-lookup"><span data-stu-id="2d220-122">3</span></span>|<span data-ttu-id="2d220-123">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="2d220-123">Not yet documented</span></span>|
 
 
 

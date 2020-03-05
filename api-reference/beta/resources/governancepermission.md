@@ -5,30 +5,32 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 8bf32b855ed77ccdf712b1a739ef913d0a3dade0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3efdebea07bb824b2314af516810ca36ad43adc9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971946"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42497624"
 ---
-# <a name="governancepermission-resource-type"></a><span data-ttu-id="6db9e-103">Тип ресурса Говернанцепермиссион</span><span class="sxs-lookup"><span data-stu-id="6db9e-103">governancePermission resource type</span></span>
+# <a name="governancepermission-resource-type"></a><span data-ttu-id="f02ef-103">Тип ресурса Говернанцепермиссион</span><span class="sxs-lookup"><span data-stu-id="f02ef-103">governancePermission resource type</span></span>
+
+<span data-ttu-id="f02ef-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="f02ef-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6db9e-104">Представляет разрешение на доступ к определенному [governanceResource](../resources/governanceresource.md)в [говернанцесубжект](../resources/governancesubject.md) .</span><span class="sxs-lookup"><span data-stu-id="6db9e-104">Represents the access permission that a [governanceSubject](../resources/governancesubject.md) has to a specific [governanceResource](../resources/governanceresource.md).</span></span>  
+<span data-ttu-id="f02ef-105">Представляет разрешение на доступ к определенному [governanceResource](../resources/governanceresource.md)в [говернанцесубжект](../resources/governancesubject.md) .</span><span class="sxs-lookup"><span data-stu-id="f02ef-105">Represents the access permission that a [governanceSubject](../resources/governancesubject.md) has to a specific [governanceResource](../resources/governanceresource.md).</span></span>  
 
 
-## <a name="properties"></a><span data-ttu-id="6db9e-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="6db9e-105">Properties</span></span>
-| <span data-ttu-id="6db9e-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="6db9e-106">Property</span></span>     | <span data-ttu-id="6db9e-107">Тип</span><span class="sxs-lookup"><span data-stu-id="6db9e-107">Type</span></span>   |<span data-ttu-id="6db9e-108">Описание</span><span class="sxs-lookup"><span data-stu-id="6db9e-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="f02ef-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="f02ef-106">Properties</span></span>
+| <span data-ttu-id="f02ef-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="f02ef-107">Property</span></span>     | <span data-ttu-id="f02ef-108">Тип</span><span class="sxs-lookup"><span data-stu-id="f02ef-108">Type</span></span>   |<span data-ttu-id="f02ef-109">Описание</span><span class="sxs-lookup"><span data-stu-id="f02ef-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="6db9e-109">accessLevel</span><span class="sxs-lookup"><span data-stu-id="6db9e-109">accessLevel</span></span>|<span data-ttu-id="6db9e-110">String</span><span class="sxs-lookup"><span data-stu-id="6db9e-110">String</span></span>|<span data-ttu-id="6db9e-111">Уровень доступа.</span><span class="sxs-lookup"><span data-stu-id="6db9e-111">The access level.</span></span> <span data-ttu-id="6db9e-112">Допустимые значения ``None``: ``UserRead``, ``AdminRead``, и ``AdminReadWrite``.</span><span class="sxs-lookup"><span data-stu-id="6db9e-112">Valid values: ``None``, ``UserRead``, ``AdminRead``, and ``AdminReadWrite``.</span></span>|
-|<span data-ttu-id="6db9e-113">isActive</span><span class="sxs-lookup"><span data-stu-id="6db9e-113">isActive</span></span>|<span data-ttu-id="6db9e-114">Boolean</span><span class="sxs-lookup"><span data-stu-id="6db9e-114">Boolean</span></span>|<span data-ttu-id="6db9e-115">Указывает, имеет ли запрашивающая сторона какие – либо активные назначения ролей для этого уровня доступа.</span><span class="sxs-lookup"><span data-stu-id="6db9e-115">Indicate if the requestor has any active role assignment for the access level.</span></span>|
-|<span data-ttu-id="6db9e-116">Действительный</span><span class="sxs-lookup"><span data-stu-id="6db9e-116">isEligible</span></span>|<span data-ttu-id="6db9e-117">Boolean</span><span class="sxs-lookup"><span data-stu-id="6db9e-117">Boolean</span></span>|<span data-ttu-id="6db9e-118">Указывает, имеет ли запрашивающее назначение роли для уровня доступа.</span><span class="sxs-lookup"><span data-stu-id="6db9e-118">Indicate if the requestor has any eligible role assignment for the access level.</span></span>|
+|<span data-ttu-id="f02ef-110">accessLevel</span><span class="sxs-lookup"><span data-stu-id="f02ef-110">accessLevel</span></span>|<span data-ttu-id="f02ef-111">String</span><span class="sxs-lookup"><span data-stu-id="f02ef-111">String</span></span>|<span data-ttu-id="f02ef-112">Уровень доступа.</span><span class="sxs-lookup"><span data-stu-id="f02ef-112">The access level.</span></span> <span data-ttu-id="f02ef-113">Допустимые значения ``None``: ``UserRead``, ``AdminRead``, и ``AdminReadWrite``.</span><span class="sxs-lookup"><span data-stu-id="f02ef-113">Valid values: ``None``, ``UserRead``, ``AdminRead``, and ``AdminReadWrite``.</span></span>|
+|<span data-ttu-id="f02ef-114">isActive</span><span class="sxs-lookup"><span data-stu-id="f02ef-114">isActive</span></span>|<span data-ttu-id="f02ef-115">Логический</span><span class="sxs-lookup"><span data-stu-id="f02ef-115">Boolean</span></span>|<span data-ttu-id="f02ef-116">Указывает, имеет ли запрашивающая сторона какие – либо активные назначения ролей для этого уровня доступа.</span><span class="sxs-lookup"><span data-stu-id="f02ef-116">Indicate if the requestor has any active role assignment for the access level.</span></span>|
+|<span data-ttu-id="f02ef-117">Действительный</span><span class="sxs-lookup"><span data-stu-id="f02ef-117">isEligible</span></span>|<span data-ttu-id="f02ef-118">Логический</span><span class="sxs-lookup"><span data-stu-id="f02ef-118">Boolean</span></span>|<span data-ttu-id="f02ef-119">Указывает, имеет ли запрашивающее назначение роли для уровня доступа.</span><span class="sxs-lookup"><span data-stu-id="f02ef-119">Indicate if the requestor has any eligible role assignment for the access level.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="6db9e-119">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="6db9e-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f02ef-120">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="f02ef-120">JSON representation</span></span>
 
-<span data-ttu-id="6db9e-120">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="6db9e-120">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="f02ef-121">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f02ef-121">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "optionalProperties": [

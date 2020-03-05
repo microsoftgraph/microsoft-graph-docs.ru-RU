@@ -5,29 +5,31 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: profile
 doc_type: resourcePageType
-ms.openlocfilehash: 43d6585243eed560a6a8f77268305b7d7f5824a8
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 2097dc14de984f3d1517b4d17e8043f38411b89a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938851"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42496175"
 ---
-# <a name="inferencedata-resource-type"></a><span data-ttu-id="8c9f2-103">Тип ресурса Инференцедата</span><span class="sxs-lookup"><span data-stu-id="8c9f2-103">inferenceData resource type</span></span>
+# <a name="inferencedata-resource-type"></a><span data-ttu-id="822fe-103">Тип ресурса Инференцедата</span><span class="sxs-lookup"><span data-stu-id="822fe-103">inferenceData resource type</span></span>
+
+<span data-ttu-id="822fe-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="822fe-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8c9f2-104">Тип ресурса [инференцедата](inferencedata.md) предоставляет дополнительные сведения об объекте, который был создан с помощью получения сведений о пользователе.</span><span class="sxs-lookup"><span data-stu-id="8c9f2-104">The [inferenceData](inferencedata.md) resource type provides additional detail about an entity which has been created through inferring information about the user.</span></span> <span data-ttu-id="8c9f2-105">Эти сведения будут представлены, когда данные в определенной сущности появлялись на основе машинного обучения или другого процесса обработки данных.</span><span class="sxs-lookup"><span data-stu-id="8c9f2-105">This information will be present whenever the data within a particular entity was derived from a machine learning or other system process iterating over data.</span></span>
+<span data-ttu-id="822fe-105">Тип ресурса [инференцедата](inferencedata.md) предоставляет дополнительные сведения об объекте, который был создан с помощью получения сведений о пользователе.</span><span class="sxs-lookup"><span data-stu-id="822fe-105">The [inferenceData](inferencedata.md) resource type provides additional detail about an entity which has been created through inferring information about the user.</span></span> <span data-ttu-id="822fe-106">Эти сведения будут представлены, когда данные в определенной сущности появлялись на основе машинного обучения или другого процесса обработки данных.</span><span class="sxs-lookup"><span data-stu-id="822fe-106">This information will be present whenever the data within a particular entity was derived from a machine learning or other system process iterating over data.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="8c9f2-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="8c9f2-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="822fe-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="822fe-107">Properties</span></span>
 
-| <span data-ttu-id="8c9f2-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="8c9f2-107">Property</span></span>              | <span data-ttu-id="8c9f2-108">Тип</span><span class="sxs-lookup"><span data-stu-id="8c9f2-108">Type</span></span>        | <span data-ttu-id="8c9f2-109">Описание</span><span class="sxs-lookup"><span data-stu-id="8c9f2-109">Description</span></span>                                                                     |
+| <span data-ttu-id="822fe-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="822fe-108">Property</span></span>              | <span data-ttu-id="822fe-109">Тип</span><span class="sxs-lookup"><span data-stu-id="822fe-109">Type</span></span>        | <span data-ttu-id="822fe-110">Описание</span><span class="sxs-lookup"><span data-stu-id="822fe-110">Description</span></span>                                                                     |
 |:----------------------|:------------|:--------------------------------------------------------------------------------|
-|<span data-ttu-id="8c9f2-110">конфиденцескоре</span><span class="sxs-lookup"><span data-stu-id="8c9f2-110">confidenceScore</span></span>        |<span data-ttu-id="8c9f2-111">Двойное с плавающей точкой</span><span class="sxs-lookup"><span data-stu-id="8c9f2-111">Double</span></span>       | <span data-ttu-id="8c9f2-112">Показатель достоверности, отражающий точность данных, выведенных о пользователе.</span><span class="sxs-lookup"><span data-stu-id="8c9f2-112">Confidence score reflecting the accuracy of the data inferred about the user.</span></span>   |
-|<span data-ttu-id="8c9f2-113">усерхасверифиедаккураци</span><span class="sxs-lookup"><span data-stu-id="8c9f2-113">userHasVerifiedAccuracy</span></span>|<span data-ttu-id="8c9f2-114">Логический</span><span class="sxs-lookup"><span data-stu-id="8c9f2-114">Boolean</span></span>      | <span data-ttu-id="8c9f2-115">Записывается, если пользователь подтвердил получение значения true или false.</span><span class="sxs-lookup"><span data-stu-id="8c9f2-115">Records if the user has confirmed this inference as being True or False.</span></span>        |
+|<span data-ttu-id="822fe-111">конфиденцескоре</span><span class="sxs-lookup"><span data-stu-id="822fe-111">confidenceScore</span></span>        |<span data-ttu-id="822fe-112">Двойное с плавающей точкой</span><span class="sxs-lookup"><span data-stu-id="822fe-112">Double</span></span>       | <span data-ttu-id="822fe-113">Показатель достоверности, отражающий точность данных, выведенных о пользователе.</span><span class="sxs-lookup"><span data-stu-id="822fe-113">Confidence score reflecting the accuracy of the data inferred about the user.</span></span>   |
+|<span data-ttu-id="822fe-114">усерхасверифиедаккураци</span><span class="sxs-lookup"><span data-stu-id="822fe-114">userHasVerifiedAccuracy</span></span>|<span data-ttu-id="822fe-115">Логический</span><span class="sxs-lookup"><span data-stu-id="822fe-115">Boolean</span></span>      | <span data-ttu-id="822fe-116">Записывается, если пользователь подтвердил получение значения true или false.</span><span class="sxs-lookup"><span data-stu-id="822fe-116">Records if the user has confirmed this inference as being True or False.</span></span>        |
 
-## <a name="json-representation"></a><span data-ttu-id="8c9f2-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="8c9f2-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="822fe-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="822fe-117">JSON representation</span></span>
 
-<span data-ttu-id="8c9f2-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8c9f2-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="822fe-118">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="822fe-118">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

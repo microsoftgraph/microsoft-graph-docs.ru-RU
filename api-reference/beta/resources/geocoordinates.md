@@ -6,34 +6,36 @@ title: GeoCoordinates
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 86de97358591df8dc446b91d0be7a8192c7346f8
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: 07b0a39155b8c9c4dc02d6cff1e0a93c1a9cd418
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333257"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42497638"
 ---
-# <a name="geocoordinates-resource-type"></a><span data-ttu-id="03efa-103">Тип ресурса "геокоординаты"</span><span class="sxs-lookup"><span data-stu-id="03efa-103">geoCoordinates resource type</span></span>
+# <a name="geocoordinates-resource-type"></a><span data-ttu-id="3d576-103">Тип ресурса "геокоординаты"</span><span class="sxs-lookup"><span data-stu-id="3d576-103">geoCoordinates resource type</span></span>
+
+<span data-ttu-id="3d576-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="3d576-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="03efa-104">Предоставляет географические координаты и расширение расположения на основе метаданных, содержащихся в файле.</span><span class="sxs-lookup"><span data-stu-id="03efa-104">Provides geographic coordinates and elevation of a location based on metadata contained within the file.</span></span>
-<span data-ttu-id="03efa-105">Если [**driveItem**](driveitem.md) имеет аспект **Location** , отличный от NULL, элемент представляет файл с известным расположением связанной с ним.</span><span class="sxs-lookup"><span data-stu-id="03efa-105">If a [**driveItem**](driveitem.md) has a non-null **location** facet, the item represents a file with a known location assocaited with it.</span></span>
+<span data-ttu-id="3d576-105">Предоставляет географические координаты и расширение расположения на основе метаданных, содержащихся в файле.</span><span class="sxs-lookup"><span data-stu-id="3d576-105">Provides geographic coordinates and elevation of a location based on metadata contained within the file.</span></span>
+<span data-ttu-id="3d576-106">Если [**driveItem**](driveitem.md) имеет аспект **Location** , отличный от NULL, элемент представляет файл с известным расположением связанной с ним.</span><span class="sxs-lookup"><span data-stu-id="3d576-106">If a [**driveItem**](driveitem.md) has a non-null **location** facet, the item represents a file with a known location assocaited with it.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="03efa-106">При обновлении широты и долготы фотографии необходимо указать ресурс [Photo](photo.md) (пустой или другой).</span><span class="sxs-lookup"><span data-stu-id="03efa-106">When updating the latitude and longitude of a photo, a [photo](photo.md) resource (empty or otherwise) must be provided.</span></span>
+> <span data-ttu-id="3d576-107">При обновлении широты и долготы фотографии необходимо указать ресурс [Photo](photo.md) (пустой или другой).</span><span class="sxs-lookup"><span data-stu-id="3d576-107">When updating the latitude and longitude of a photo, a [photo](photo.md) resource (empty or otherwise) must be provided.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="03efa-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="03efa-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="3d576-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="3d576-108">Properties</span></span>
 
-| <span data-ttu-id="03efa-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="03efa-108">Property</span></span>  | <span data-ttu-id="03efa-109">Тип</span><span class="sxs-lookup"><span data-stu-id="03efa-109">Type</span></span>   | <span data-ttu-id="03efa-110">Описание</span><span class="sxs-lookup"><span data-stu-id="03efa-110">Description</span></span>
+| <span data-ttu-id="3d576-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="3d576-109">Property</span></span>  | <span data-ttu-id="3d576-110">Тип</span><span class="sxs-lookup"><span data-stu-id="3d576-110">Type</span></span>   | <span data-ttu-id="3d576-111">Описание</span><span class="sxs-lookup"><span data-stu-id="3d576-111">Description</span></span>
 |:----------|:-------|:--------------------------------------------------------
-| <span data-ttu-id="03efa-111">altitude</span><span class="sxs-lookup"><span data-stu-id="03efa-111">altitude</span></span>  | <span data-ttu-id="03efa-112">Double</span><span class="sxs-lookup"><span data-stu-id="03efa-112">Double</span></span> | <span data-ttu-id="03efa-p102">Необязательный. Высота элемента над уровнем моря (в футах). Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="03efa-p102">Optional. The altitude (height), in feet,  above sea level for the item. Read-only.</span></span>
-| <span data-ttu-id="03efa-116">latitude</span><span class="sxs-lookup"><span data-stu-id="03efa-116">latitude</span></span>  | <span data-ttu-id="03efa-117">Double</span><span class="sxs-lookup"><span data-stu-id="03efa-117">Double</span></span> | <span data-ttu-id="03efa-118">Необязательный.</span><span class="sxs-lookup"><span data-stu-id="03efa-118">Optional.</span></span> <span data-ttu-id="03efa-119">Широта элемента (в десятичной системе).</span><span class="sxs-lookup"><span data-stu-id="03efa-119">The latitude, in decimal, for the item.</span></span> <span data-ttu-id="03efa-120">Возможность записи в OneDrive персональный.</span><span class="sxs-lookup"><span data-stu-id="03efa-120">Writable on OneDrive Personal.</span></span>
-| <span data-ttu-id="03efa-121">longitude</span><span class="sxs-lookup"><span data-stu-id="03efa-121">longitude</span></span> | <span data-ttu-id="03efa-122">Double</span><span class="sxs-lookup"><span data-stu-id="03efa-122">Double</span></span> | <span data-ttu-id="03efa-123">Необязательный.</span><span class="sxs-lookup"><span data-stu-id="03efa-123">Optional.</span></span> <span data-ttu-id="03efa-124">Широта элемента (в десятичном виде).</span><span class="sxs-lookup"><span data-stu-id="03efa-124">The longitude, in decimal, for the item.</span></span> <span data-ttu-id="03efa-125">Возможность записи в OneDrive персональный.</span><span class="sxs-lookup"><span data-stu-id="03efa-125">Writable on OneDrive Personal.</span></span>
+| <span data-ttu-id="3d576-112">altitude</span><span class="sxs-lookup"><span data-stu-id="3d576-112">altitude</span></span>  | <span data-ttu-id="3d576-113">Double</span><span class="sxs-lookup"><span data-stu-id="3d576-113">Double</span></span> | <span data-ttu-id="3d576-p102">Необязательный. Высота элемента над уровнем моря (в футах). Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="3d576-p102">Optional. The altitude (height), in feet,  above sea level for the item. Read-only.</span></span>
+| <span data-ttu-id="3d576-117">latitude</span><span class="sxs-lookup"><span data-stu-id="3d576-117">latitude</span></span>  | <span data-ttu-id="3d576-118">Double</span><span class="sxs-lookup"><span data-stu-id="3d576-118">Double</span></span> | <span data-ttu-id="3d576-119">Необязательный.</span><span class="sxs-lookup"><span data-stu-id="3d576-119">Optional.</span></span> <span data-ttu-id="3d576-120">Широта элемента (в десятичной системе).</span><span class="sxs-lookup"><span data-stu-id="3d576-120">The latitude, in decimal, for the item.</span></span> <span data-ttu-id="3d576-121">Возможность записи в OneDrive персональный.</span><span class="sxs-lookup"><span data-stu-id="3d576-121">Writable on OneDrive Personal.</span></span>
+| <span data-ttu-id="3d576-122">longitude</span><span class="sxs-lookup"><span data-stu-id="3d576-122">longitude</span></span> | <span data-ttu-id="3d576-123">Double</span><span class="sxs-lookup"><span data-stu-id="3d576-123">Double</span></span> | <span data-ttu-id="3d576-124">Необязательный.</span><span class="sxs-lookup"><span data-stu-id="3d576-124">Optional.</span></span> <span data-ttu-id="3d576-125">Широта элемента (в десятичном виде).</span><span class="sxs-lookup"><span data-stu-id="3d576-125">The longitude, in decimal, for the item.</span></span> <span data-ttu-id="3d576-126">Возможность записи в OneDrive персональный.</span><span class="sxs-lookup"><span data-stu-id="3d576-126">Writable on OneDrive Personal.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="03efa-126">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="03efa-126">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3d576-127">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="3d576-127">JSON representation</span></span>
 
-<span data-ttu-id="03efa-127">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="03efa-127">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="3d576-128">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="3d576-128">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
