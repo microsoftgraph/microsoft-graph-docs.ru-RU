@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a11be182f023377c7bc052923f2c6a85f3d81bd
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 4358266f70f6c21462e037c870e948806b29bfac
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39925615"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42445598"
 ---
 # <a name="revokealllicenses-action"></a>Действие revokeAllLicenses
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -43,17 +45,17 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|нотифиманажеддевицес|Boolean|Логическое значение, указывающее, следует ли отправлять уведомление об отзыве на устройство|
+|нотифиманажеддевицес|Логический|Логическое значение, указывающее, следует ли отправлять уведомление об отзыве на устройство|
 
 
 

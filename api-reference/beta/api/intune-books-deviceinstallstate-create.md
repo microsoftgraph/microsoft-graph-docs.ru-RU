@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b6363af3c96923a1d2a91815e0c257ff496fcda4
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 6d26d61ca0c7a97466d16df3ba29d71ab5d1c735
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39932028"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42444611"
 ---
 # <a name="create-deviceinstallstate"></a>Создание объекта deviceInstallState
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -42,24 +44,24 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userI
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта deviceInstallState в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта deviceInstallState.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|deviceName|Строка|Имя устройства.|
-|deviceId|Строка|Идентификатор устройства.|
+|id|String|Ключ объекта.|
+|deviceName|String|Имя устройства.|
+|deviceId|String|Идентификатор устройства.|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации.|
 |installState|[installState](../resources/intune-books-installstate.md)|Состояние установки электронной книги. Возможные значения: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
-|errorCode|Строка|Код ошибки для сбоев при установке.|
-|osVersion|Строка|Версия ОС.|
-|osDescription|Строка|Описание ОС.|
+|errorCode|String|Код ошибки для сбоев при установке.|
+|osVersion|String|Версия ОС.|
+|osDescription|String|Описание ОС.|
 |userName|String|Имя пользователя устройства.|
 
 

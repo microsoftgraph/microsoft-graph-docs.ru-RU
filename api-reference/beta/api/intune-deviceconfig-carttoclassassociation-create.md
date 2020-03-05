@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b0c606be725364927a686bdec24e985850fa33d
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 2338e879df9f7e1920c90df61dda62a86d1bc2db
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39954183"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42443330"
 ---
 # <a name="create-carttoclassassociation"></a>Создание КарттоклассассоЦиатион
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -41,10 +43,10 @@ POST /deviceManagement/cartToClassAssociations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта КарттоклассассоЦиатион в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании КарттоклассассоЦиатион.
@@ -57,12 +59,12 @@ POST /deviceManagement/cartToClassAssociations
 |version|Int32|Версия КарттоклассассоЦиатион.|
 |displayName|Строка|Указанное администратором имя конфигурации устройства.|
 |description|String|Администратор предоставил описание КарттоклассассоЦиатион.|
-|девицекартидс|Коллекция строк|Идентификаторы корзин устройств, которые необходимо связать с классами.|
-|классрумидс|Коллекция строк|Идентификаторы аудиторий, которые необходимо связать с тележками устройств.|
+|девицекартидс|Коллекция String|Идентификаторы корзин устройств, которые необходимо связать с классами.|
+|классрумидс|Коллекция String|Идентификаторы аудиторий, которые необходимо связать с тележками устройств.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [карттоклассассоЦиатион](../resources/intune-deviceconfig-carttoclassassociation.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

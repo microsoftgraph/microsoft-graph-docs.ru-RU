@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 262b1a0006c01ac2613a5322d162855497873df0
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: c93131300a328eb2aa95cff034e2b82ccead5ab8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42159446"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42444345"
 ---
 # <a name="get-termsandconditionsacceptancestatus"></a>Get termsAndConditionsAcceptanceStatus
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

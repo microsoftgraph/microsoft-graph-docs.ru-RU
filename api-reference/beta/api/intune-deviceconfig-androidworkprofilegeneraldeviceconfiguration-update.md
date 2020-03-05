@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c063474301b7cb54ab9ef94703e36a2342015ed
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 282584140243b8142ffe6a1919657efef5126a2f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39950087"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42443484"
 ---
 # <a name="update-androidworkprofilegeneraldeviceconfiguration"></a>Обновление androidWorkProfileGeneralDeviceConfiguration
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -43,10 +45,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md).
@@ -55,8 +57,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|суппортсскопетагс|Логический|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -73,17 +75,17 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Количество неудачных попыток входа до восстановления заводских настроек. Допустимые значения — от 1 до 16.|
 |passwordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
 |воркпрофиледаташарингтипе|[androidWorkProfileCrossProfileDataSharingType](../resources/intune-deviceconfig-androidworkprofilecrossprofiledatasharingtype.md)|Тип разрешенного общего доступа к данным. Возможные значения: `deviceDefault`, `preventAny`, `allowPersonalToWork`, `noRestrictions`.|
-|воркпрофилеблоккнотификатионсвхиледевицелоккед|Boolean|Указывает, следует ли блокировать уведомления, когда устройство заблокировано.|
-|воркпрофилеблоккаддингаккаунтс|Boolean|Запретить пользователям добавлять и удалять учетные записи в рабочем профиле.|
-|воркпрофилеблуетусенаблеконтактшаринг|Boolean|Разрешить устройствам Bluetooth получать доступ к корпоративным контактам.|
-|воркпрофилеблоккскринкаптуре|Boolean|Блокировать снимок экрана в рабочем профиле.|
-|воркпрофилеблокккросспрофилекаллерид|Boolean|Блокировать отображение идентификатора исполнителя рабочего профиля в личном профиле.|
-|Свойства workprofileblockcamera|Boolean|Блокировать камеру рабочего профиля.|
-|workProfileBlockCrossProfileContactsSearch|Boolean|Блокировать доступность контактов для рабочих профилей в личном профиле.|
-|воркпрофилеблокккросспрофилекопипасте|Boolean|Логическое значение, которое указывает, включено ли для параметра возможность копирования и вставки в нескольких профилях.|
+|воркпрофилеблоккнотификатионсвхиледевицелоккед|Логический|Указывает, следует ли блокировать уведомления, когда устройство заблокировано.|
+|воркпрофилеблоккаддингаккаунтс|Логический|Запретить пользователям добавлять и удалять учетные записи в рабочем профиле.|
+|воркпрофилеблуетусенаблеконтактшаринг|Логический|Разрешить устройствам Bluetooth получать доступ к корпоративным контактам.|
+|воркпрофилеблоккскринкаптуре|Логический|Блокировать снимок экрана в рабочем профиле.|
+|воркпрофилеблокккросспрофилекаллерид|Логический|Блокировать отображение идентификатора исполнителя рабочего профиля в личном профиле.|
+|Свойства workprofileblockcamera|Логический|Блокировать камеру рабочего профиля.|
+|workProfileBlockCrossProfileContactsSearch|Логический|Блокировать доступность контактов для рабочих профилей в личном профиле.|
+|воркпрофилеблокккросспрофилекопипасте|Логический|Логическое значение, которое указывает, включено ли для параметра возможность копирования и вставки в нескольких профилях.|
 |воркпрофиледефаултапппермиссионполици|[androidWorkProfileDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androidworkprofiledefaultapppermissionpolicytype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `prompt`, `autoGrant`, `autoDeny`.|
-|Свойства workprofilepasswordblockfingerprintunlock|Boolean|Указывает, следует ли заблокировать разблокировку отпечатков пальцев для рабочего профиля.|
-|workProfilePasswordBlockTrustAgents|Boolean|Указывает, следует ли заблокировать для рабочего профиля интеллектуальную блокировку и другие агенты доверия.|
+|Свойства workprofilepasswordblockfingerprintunlock|Логический|Указывает, следует ли заблокировать разблокировку отпечатков пальцев для рабочего профиля.|
+|workProfilePasswordBlockTrustAgents|Логический|Указывает, следует ли заблокировать для рабочего профиля интеллектуальную блокировку и другие агенты доверия.|
 |workProfilePasswordExpirationDays|Int32|Количество дней до истечения срока действия пароля рабочего профиля. Допустимые значения: от 1 до 365.|
 |workProfilePasswordMinimumLength|Int32|Минимальная длина пароля рабочего профиля. Допустимые значения: от 4 до 16.|
 |воркпрофилепассвордминнумерикчарактерс|Int32|Минимальное количество числовых символов в пароле рабочего профиля. Допустимые значения — от 1 до 10|
@@ -96,16 +98,16 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |workProfilePasswordPreviousPasswordBlockCount|Int32|Число паролей предыдущих рабочих профилей, которые необходимо заблокировать. Допустимые значения: от 0 до 24.|
 |workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|Количество неудачных попыток входа, разрешенных до удаления профиля работы и удаления всех корпоративных данных. Допустимые значения — от 1 до 16.|
 |workProfilePasswordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|Тип требуемого пароля рабочего профиля. Возможные значения: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
-|workProfileRequirePassword|Boolean|Пароль обязателен или не для рабочего профиля|
+|workProfileRequirePassword|Логический|Пароль обязателен или не для рабочего профиля|
 |securityRequireVerifyApps|Boolean|Указывает, что требуется включить функцию проверки приложений для Android.|
-|Свойства vpnalwaysonpackageidentifier|Строка|Включение режима блокировки для постоянного подключения VPN.|
-|vpnEnableAlwaysOnLockdownMode|Boolean|Включение режима блокировки для постоянного подключения VPN.|
-|воркпрофилеалловвиджетс|Boolean|Разрешить графические элементы из приложений профилей рабочих приложений.|
-|воркпрофилеблоккперсоналаппинсталлсфромункновнсаурцес|Boolean|Запретить установку приложений из неизвестных источников в личном профиле.|
+|Свойства vpnalwaysonpackageidentifier|String|Включение режима блокировки для постоянного подключения VPN.|
+|vpnEnableAlwaysOnLockdownMode|Логический|Включение режима блокировки для постоянного подключения VPN.|
+|воркпрофилеалловвиджетс|Логический|Разрешить графические элементы из приложений профилей рабочих приложений.|
+|воркпрофилеблоккперсоналаппинсталлсфромункновнсаурцес|Логический|Запретить установку приложений из неизвестных источников в личном профиле.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [androidWorkProfileGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

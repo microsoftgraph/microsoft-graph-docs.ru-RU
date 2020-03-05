@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fe7dac809911c7902f35805d9ca5bff4f7025973
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 8f50b72b586f7e91a6f336a34c4c94e8aa093bbe
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39926161"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42445787"
 ---
 # <a name="create-enterprisecodesigningcertificate"></a>Создание Ентерприсекодесигнингцертификате
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -41,10 +43,10 @@ POST /deviceAppManagement/enterpriseCodeSigningCertificates
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Ентерприсекодесигнингцертификате в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Ентерприсекодесигнингцертификате.
@@ -56,14 +58,14 @@ POST /deviceAppManagement/enterpriseCodeSigningCertificates
 |status|[цертификатестатус](../resources/intune-apps-certificatestatus.md)|Состояние сертификата подготовлено или не подготовлено. Возможные значения: `notProvisioned`, `provisioned`.|
 |subjectName|String|Имя субъекта для сертификата.|
 |subject|String|Значение субъекта для сертификата.|
-|иссуернаме|Строка|Имя поставщика сертификата.|
-|имени|Строка|Значение издателя для сертификата.|
+|иссуернаме|String|Имя поставщика сертификата.|
+|имени|String|Значение издателя для сертификата.|
 |expirationDateTime|DateTimeOffset|Дата окончания срока действия сертификата.|
 |уплоаддатетиме|DateTimeOffset|Дата и время отправки сертификата соконструирования.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [ентерприсекодесигнингцертификате](../resources/intune-apps-enterprisecodesigningcertificate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

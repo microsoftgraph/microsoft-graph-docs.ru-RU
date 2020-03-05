@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6161faa323846ef64bc7e61d018e2dd431a81665
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 6684046b6587838370ae01349a0e0cf6a962b814
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39934940"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42444947"
 ---
 # <a name="create-mobileappprovisioningconfiggroupassignment"></a>Создание К mobileappprovisioningconfiggroupassignment.
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -41,18 +43,18 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта К mobileappprovisioningconfiggroupassignment. в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании К mobileappprovisioningconfiggroupassignment..
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|таржетграупид|Строка|Идентификатор группы AAD, в которой нацелена конфигурация подготовки приложений.|
-|id|Строка|Ключ объекта.|
+|таржетграупид|String|Идентификатор группы AAD, в которой нацелена конфигурация подготовки приложений.|
+|id|String|Ключ объекта.|
 
 
 

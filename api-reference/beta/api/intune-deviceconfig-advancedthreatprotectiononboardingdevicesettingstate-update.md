@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a3c735bb6b8cf21454c50343cbb64d790759192
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 1805d7e342b6db49ccbdad4a23bcf9f647f22e29
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39954274"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42444282"
 ---
 # <a name="update-advancedthreatprotectiononboardingdevicesettingstate"></a>Обновление Адванцедсреатпротектиононбоардингдевицесеттингстате
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -41,10 +43,10 @@ PATCH /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedT
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [адванцедсреатпротектиононбоардингдевицесеттингстате](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [адванцедсреатпротектиононбоардингдевицесеттингстате](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md).
@@ -53,15 +55,15 @@ PATCH /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedT
 |:---|:---|:---|
 |id|Строка|Ключ объекта|
 |platformType|[deviceType](../resources/intune-shared-devicetype.md)|Тип платформы устройства. Возможные значения: `desktop`, `windowsRT`, `winMO6`, `nokia` `windowsPhone` `mac` `winCE` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `blackberry` `palm` `iSocConsumer` `unknown`,,,,,,,,,,,,,,,,,,,,,,,,. `winEmbedded` `iPhone` `iPad` `iPod` `android`|
-|setting|Строка|Имя класса параметров и свойства.|
-|settingName|Строка|Имя параметра в отчете|
-|deviceId|Строка|ИД устройства в отчете|
-|deviceName|Строка|Имя устройства в отчете|
+|setting|String|Имя класса параметров и свойства.|
+|settingName|String|Имя параметра в отчете|
+|deviceId|String|ИД устройства в отчете|
+|deviceName|String|Имя устройства в отчете|
 |userId|String|ИД пользователя в отчете|
 |userEmail|String|Электронный адрес пользователя в отчете|
-|userName|Строка|Имя пользователя в отчете|
+|userName|String|Имя пользователя в отчете|
 |userPrincipalName|String|Имя участника-пользователя в отчете|
-|deviceModel|Строка|Модель устройства в отчете|
+|deviceModel|String|Модель устройства в отчете|
 |state|[комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние соответствия для параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время, когда истекает период отсрочки применения политик на устройстве.|
 
