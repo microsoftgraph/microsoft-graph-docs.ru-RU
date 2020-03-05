@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5c3efdd55f432add28f6d13797a0f73b4458b966
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: c10173d099ac7c2ad9714b0240f306e783fdd6da
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35841250"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42496812"
 ---
 # <a name="hybridagentupdaterconfiguration-resource-type"></a>Тип ресурса Хибридажентупдатерконфигуратион
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,9 +39,9 @@ ms.locfileid: "35841250"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|Алловупдатеконфигуратионоверриде|Boolean|Указывает, будет ли пропущена Конфигурация обновления, и агент будет получать обновление при наличии следующей версии агента.|
-|Деферупдатедатетиме|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|Упдатевиндов|[Упдатевиндов](updatewindow.md)||
+|алловупдатеконфигуратионоверриде|Логический|Указывает, будет ли пропущена Конфигурация обновления, и агент будет получать обновление при наличии следующей версии агента.|
+|деферупдатедатетиме|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|упдатевиндов|[упдатевиндов](updatewindow.md)||
 
 ## <a name="json-representation"></a>Представление JSON
 

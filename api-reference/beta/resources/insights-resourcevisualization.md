@@ -5,14 +5,16 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: b49ce2c0fb0c1d2ab167ffbb033bf11b0171a20f
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: cb782ff0090c5e89e4a87f86af75f3fb51bb8251
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844493"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42495657"
 ---
 # <a name="resourcevisualization-resource-type"></a>Тип ресурса ресурсе resourcevisualization
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -65,7 +67,7 @@ ms.locfileid: "39844493"
 -   Visio
 -   Publisher
 -   Project
--   Access
+-   Доступ
 -   Почта
 -   Расширения
 -   Архив
@@ -79,7 +81,7 @@ ms.locfileid: "39844493"
 -   Story
 -   екстерналконтент
 -   Folder
--   Other
+-   Другие
 
 Пример запроса:`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
@@ -87,7 +89,7 @@ ms.locfileid: "39844493"
 Поддерживаемые типы могут различаться в зависимости от контейнеров, из которых [оффицеграфинсигхтс](officegraphinsights.md) возвращает файлы. Например, только представление [шарединсигхт](insights-shared.md) возвращает файлы из "Dropbox", "Box" и "гдриве".
 
 -   онедривебусинесс
--   Site
+-   Сайт
 -   Почта
 -   Оставляют
 -   Box

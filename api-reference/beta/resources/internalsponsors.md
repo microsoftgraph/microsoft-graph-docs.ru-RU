@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c7ec468638de5e9a49cbf2f664eb7d05e3bef5b1
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: e556daf6fd8039b6783c6d08e595d0df1a6c3541
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331480"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42495412"
 ---
 # <a name="internalsponsors-complex-type"></a>сложный тип Интерналспонсорс
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 7eccede97fb4f9eafc69a04136612c30ad2c27ee
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bc98036c28deb67fdf6057d51ae075868a1d2d8a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971832"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42497079"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>Тип ресурса groupLifecyclePolicy
+
+Пространство имен: Microsoft. Graph
 
 Представляет политику жизненного цикла для группы Office 365. Политика жизненного цикла позволяет администраторам устанавливать срок действия групп. Например, срок действия группы истекает через 180 дней. Когда срок действия группы истекает, ее владельцы должны продлить его в течение определенного администратором времени. После продления группа будет оставаться активной в течение определенного политикой количества дней. Например, срок действия группы истекает через 180 дней после продления. Если срок действия группы не продлить, она будет удалена. Группу можно восстановить в течение 30 дней после удаления.
 
@@ -37,7 +39,7 @@ ms.locfileid: "35971832"
 |id|GUID| Уникальный идентификатор политики. Только для чтения.|
 |managedGroupTypes|String| Тип группы, к которому применяется политика истечения срока действия. Возможные значения — **All**, **Selected** и **None**. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 

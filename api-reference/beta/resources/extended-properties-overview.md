@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 1b6364fd42b72e175a58bfcd28c0bdacc5e9629e
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: d6e4cd91e8195530f6138bdd068907988b42c237
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866835"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42499017"
 ---
 # <a name="outlook-extended-properties-overview"></a>Общие сведения о расширенных свойствах Outlook
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +25,7 @@ ms.locfileid: "40866835"
 - [event](../resources/event.md);
 - [calendar](../resources/calendar.md);
 - [contact](../resources/contact.md);
-- [contactFolder](../resources/contactfolder.md).
+- [contactFolder](../resources/contactfolder.md)
 - [Задача Outlook](../resources/outlooktask.md)
 - [Папка задач Outlook](../resources/outlooktaskfolder.md)
 

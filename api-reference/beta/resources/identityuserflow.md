@@ -5,14 +5,16 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5410b65dfdb0841aa997022b43dc04d0a4627008
-ms.sourcegitcommit: 8bef2bc8b9e56d1a787ea2f0cda4ed94f05109ad
+ms.openlocfilehash: d4fa3064d19d96a2a8297f72de6a625ee36c8db3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "37734676"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42496553"
 ---
 # <a name="userflow-resource-type"></a>Тип ресурса Усерфлов
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,8 +24,8 @@ ms.locfileid: "37734676"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [List](../api/identityuserflow-list.md) | [усерфлов](identityuserflow.md) | Список Усерфловс. |
-| [создание](../api/identityuserflow-post-userflows.md); | Нет | Создание объекта Усерфлов. |
+| [List](../api/identityuserflow-list.md) | Коллекция [усерфлов](identityuserflow.md) | Список Усерфловс. |
+| [создание](../api/identityuserflow-post-userflows.md); | [усерфлов](identityuserflow.md) | Создание объекта Усерфлов. |
 | [получение](../api/identityuserflow-get.md); | [усерфлов](identityuserflow.md) | Чтение свойств и связей объекта Усерфлов. |
 | [удаление](../api/identityuserflow-delete.md); | Нет | Удаление объекта Усерфлов. |
 
@@ -32,7 +34,7 @@ ms.locfileid: "37734676"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |id|String| Только для чтения.|
-|усерфловтипе|string| Возможные значения: `signUp`, `signIn`, `signUpOrSignIn`, `passwordReset`, `profileUpdate`, `resourceOwner`, `unknownFutureValue`.|
+|усерфловтипе|строка| Возможные значения: `signUp`, `signIn`, `signUpOrSignIn`, `passwordReset`, `profileUpdate`, `resourceOwner`, `unknownFutureValue`.|
 |усерфловтипеверсион|Одинарное| Это версия пользовательского типа. Каждый тип пользовательского типа может иметь различные варианты, например 1, 1,1 или 2.  |
 
 ## <a name="relationships"></a>Связи

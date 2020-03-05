@@ -2,18 +2,20 @@
 author: JeremyKelley
 description: Ресурс File — это единая структура, объединяющая элементы данных, связанные с файлами.
 ms.date: 09/10/2017
-title: Файл
+title: File
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 3c7cc99fdd8d8405f3738f1259adbb2fba5fa0df
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d3f4e2b8d6c5e5df6b8be10a4876d4e9ebe03168
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973574"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42498352"
 ---
 # <a name="file-resource-type"></a>Тип ресурса file
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

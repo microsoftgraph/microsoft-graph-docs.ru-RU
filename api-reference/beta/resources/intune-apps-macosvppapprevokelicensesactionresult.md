@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bb8a69ab5852aa3fee9ab8ffab757a87ef0235ba
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ccbdc0fe0e1d288571a768551691b539692572fc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36365897"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42492924"
 ---
 # <a name="macosvppapprevokelicensesactionresult-resource-type"></a>Тип ресурса Макосвппаппревокелиценсесактионресулт
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Определяет результаты для действий в приложениях MacOS VPP, содержит унаследованные свойства для Актионресулт.
 
@@ -33,7 +35,7 @@ ms.locfileid: "36365897"
 |startDateTime|DateTimeOffset|Время начала действия|
 |lastUpdatedDateTime|DateTimeOffset|Время последнего обновления состояния действия|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

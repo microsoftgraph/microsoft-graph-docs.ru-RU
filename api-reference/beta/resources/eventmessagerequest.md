@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: be7304f603cac5de8256f540b5df31f897c4f1ad
-ms.sourcegitcommit: 7c017000888a910a0ad85404946f4fc50742c8d1
+ms.openlocfilehash: 086abfa10e26cc85ffdbe48932feb8b7761c2872
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41652209"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42499038"
 ---
 # <a name="eventmessagerequest-resource-type"></a>Тип ресурса eventMessageRequest
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -103,17 +105,17 @@ ms.locfileid: "41652209"
 |conversationIndex|Edm.Binary|Индекс беседы, к которой относится электронная почта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сообщения.|
 |endDateTime|[DateTimeTimeZone](datetimetimezone.md)|Время окончания запрошенного собрания.|
-|from|[recipient](recipient.md)|Владелец почтового ящика, из которого отправляется сообщение. В большинстве случаев это значение совпадает со свойством **sender** , за исключением сценариев общего доступа или делегирования. Значение должно соответствовать фактически используемому почтовому ящику. Дополнительные сведения о [задании свойств from и sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) сообщения.|
+|from|[recipient](recipient.md)|Владелец почтового ящика, из которого отправлено сообщение. В большинстве случаев это значение совпадает со свойством **sender**, кроме сценариев предоставления общего доступа или делегирования. Значение должно соответствовать фактически используемому почтовому ящику. Дополнительные сведения о [задании свойств from и sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) сообщения.|
 |hasAttachments|Boolean|Указывает на наличие вложений в сообщении.|
-|id|Строка|Только для чтения.|
+|id|String|Только для чтения.|
 |importance|String| Важность сообщения: `Low`, `Normal`, `High`.|
-|inferenceClassification|Строка| Возможные значения: `Focused`, `Other`.|
-|Isdelegated для|Boolean|Значение true, если ответ на приглашение на собрание доступен представителю, в противном случае — значение false. Значение по умолчанию: false.|
-|isDeliveryReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
+|inferenceClassification|String| Возможные значения: `Focused`, `Other`.|
+|Isdelegated для|Логический|Значение true, если ответ на приглашение на собрание доступен представителю, в противном случае — значение false. Значение по умолчанию: false.|
+|isDeliveryReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |isDraft|Логическое|Указывает, является ли сообщение черновиком. Сообщение считается черновиком, если оно еще не отправлено.|
-|isOutOfDate|Boolean|Указывает, было ли это приглашение на собрание отменено в последний запрос.|
-|isRead|Boolean|Указывает, прочитано ли сообщение.|
-|isReadReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
+|isOutOfDate|Логический|Указывает, было ли это приглашение на собрание отменено в последний запрос.|
+|isRead|Логический|Указывает, прочитано ли сообщение.|
+|isReadReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сообщения.|
 |location|[Location](location.md)|Расположение запрошенного собрания.|
 |meetingMessageType|String| Тип сообщения о событии: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTentativelyAccepted`, `meetingDeclined`.|
@@ -125,11 +127,11 @@ ms.locfileid: "41652209"
 |receivedDateTime|DateTimeOffset|Дата и время получения сообщения.|
 |recurrence|[PatternedRecurrence](patternedrecurrence.md)|Шаблон повторения запрошенного собрания.|
 |replyTo|Коллекция [recipient](recipient.md)|Электронные адреса, которые необходимо использовать при ответе.|
-|responseRequested|Boolean|Задайте значение true, если отправитель хочет отправить ответ на запрошенное собрание.|
-|sender|[recipient](recipient.md)|Учетная запись, которая фактически используется для создания сообщения. В большинстве случаев это значение совпадает со значением свойства **from**. Для этого свойства можно задать другое значение при отправке сообщения из [общего почтового ящика](/exchange/collaboration/shared-mailboxes/shared-mailboxes), [общего календаря или представителем](/graph/outlook-share-delegate-calendar.md). В любом случае значение должно соответствовать фактически используемому почтовому ящику. Дополнительные сведения о [задании свойств from и sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) сообщения.|
+|responseRequested|Логический|Задайте значение true, если отправитель хочет отправить ответ на запрошенное собрание.|
+|sender|[recipient](recipient.md)|Учетная запись, которая фактически используется для создания сообщения. В большинстве случаев это значение совпадает со значением свойства **from**. Этому свойству можно присвоить другое значение при отправке сообщения из [общего почтового ящика](/exchange/collaboration/shared-mailboxes/shared-mailboxes), [для общего календаря или в качестве делегата](/graph/outlook-share-delegate-calendar.md). В любом случае значение должно соответствовать фактически используемому почтовому ящику. Дополнительные сведения о [задании свойств from и sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) сообщения.|
 |sentDateTime|DateTimeOffset|Дата и время отправки сообщения.|
 |startDateTime|[DateTimeTimeZone](datetimetimezone.md)|Время начала запрошенного собрания.|
-|subject|Строка|Тема сообщения.|
+|subject|String|Тема сообщения.|
 |toRecipients|Коллекция [recipient](recipient.md)|Получатели сообщения, указанные в поле "Кому".|
 |type|String|Тип запрошенного собрания `singleInstance`:, `occurence`, `exception`,. `seriesMaster`|
 |uniqueBody|[itemBody](itembody.md)|Часть текста сообщения, которая является уникальной для текущего сообщения.|
@@ -170,7 +172,7 @@ ms.locfileid: "41652209"
 |[Создание открытого расширения](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Создание открытого расширения и добавление настраиваемых свойств в новый или существующий экземпляр ресурса.|
 |[Получение открытого расширения](../api/opentypeextension-get.md) |Коллекция объектов [openTypeExtension](opentypeextension.md)| Получение открытого расширения, определенного по имени.|
 |**Расширенные свойства**| | |
-|[Создание однозначного расширенного свойства](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[eventMessage](eventmessage.md)  |Создание одного или нескольких расширенных свойств с одним значением в новом или существующем экземпляре eventMessage.   |
+|[Создание расширенного свойства с одним значением](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[eventMessage](eventmessage.md)  |Создание одного или нескольких расширенных свойств с одним значением в новом или существующем экземпляре eventMessage.   |
 |[Получение eventMessage с расширенным свойством с одним значением](../api/singlevaluelegacyextendedproperty-get.md)  | [eventMessage](eventmessage.md) | Получение экземпляров eventMessage, которые содержат расширенное свойство с одним значением, с помощью параметра `$expand` или `$filter`. |
 |[Создание расширенного свойства с несколькими значениями](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [eventMessage](eventmessage.md) | Создание одного или нескольких расширенных свойств с несколькими значениями в новом или существующем экземпляре eventMessage.  |
 |[Получение eventMessage с расширенным свойством с несколькими значениями](../api/multivaluelegacyextendedproperty-get.md)  | [eventMessage](eventmessage.md) | Получение eventMessage, которое содержит расширенное свойство с несколькими значениями, с помощью параметра `$expand`. |

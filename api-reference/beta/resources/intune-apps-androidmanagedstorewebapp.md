@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 840a544bd5c880481e170d23deb3eb9b289837d3
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: bfdb4339ced00f2f2e3a9335c114a213fa1c914a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37201323"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42494186"
 ---
 # <a name="androidmanagedstorewebapp-resource-type"></a>Тип ресурса Андроидманажедсторевебапп
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Содержит свойства и наследуемые свойства для веб-приложений, настроенных для распространения с помощью управляемого хранилища приложений Android.
 
@@ -27,10 +29,10 @@ ms.locfileid: "37201323"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Андроидманажедсторевебаппс](../api/intune-apps-androidmanagedstorewebapp-list.md)|Коллекция [андроидманажедсторевебапп](../resources/intune-apps-androidmanagedstorewebapp.md)|Список свойств и связей объектов [андроидманажедсторевебапп](../resources/intune-apps-androidmanagedstorewebapp.md) .|
-|[Получение Андроидманажедсторевебапп](../api/intune-apps-androidmanagedstorewebapp-get.md)|[андроидманажедсторевебапп](../resources/intune-apps-androidmanagedstorewebapp.md)|Чтение свойств и связей объекта [андроидманажедсторевебапп](../resources/intune-apps-androidmanagedstorewebapp.md) .|
-|[Создание Андроидманажедсторевебапп](../api/intune-apps-androidmanagedstorewebapp-create.md)|[андроидманажедсторевебапп](../resources/intune-apps-androidmanagedstorewebapp.md)|Создание нового объекта [андроидманажедсторевебапп](../resources/intune-apps-androidmanagedstorewebapp.md) .|
+|[Получение Андроидманажедсторевебапп](../api/intune-apps-androidmanagedstorewebapp-get.md)|[androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md)|Чтение свойств и связей объекта [андроидманажедсторевебапп](../resources/intune-apps-androidmanagedstorewebapp.md) .|
+|[Создание Андроидманажедсторевебапп](../api/intune-apps-androidmanagedstorewebapp-create.md)|[androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md)|Создание нового объекта [андроидманажедсторевебапп](../resources/intune-apps-androidmanagedstorewebapp.md) .|
 |[Удаление Андроидманажедсторевебапп](../api/intune-apps-androidmanagedstorewebapp-delete.md)|Нет|Удаляет объект [андроидманажедсторевебапп](../resources/intune-apps-androidmanagedstorewebapp.md).|
-|[Обновление Андроидманажедсторевебапп](../api/intune-apps-androidmanagedstorewebapp-update.md)|[андроидманажедсторевебапп](../resources/intune-apps-androidmanagedstorewebapp.md)|Обновление свойств объекта [андроидманажедсторевебапп](../resources/intune-apps-androidmanagedstorewebapp.md) .|
+|[Обновление Андроидманажедсторевебапп](../api/intune-apps-androidmanagedstorewebapp-update.md)|[androidManagedStoreWebApp](../resources/intune-apps-androidmanagedstorewebapp.md)|Обновление свойств объекта [андроидманажедсторевебапп](../resources/intune-apps-androidmanagedstorewebapp.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -38,32 +40,32 @@ ms.locfileid: "37201323"
 |id|Строка|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |description|Строка|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|publisher|String.|Издатель приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Представляет большой значок, который отображается в сведениях о приложении, используется для отправки значка. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |isFeatured|Boolean|Значение, которое показывает, отмечено ли приложение как подобранное администратором. Наследуется от объекта [mobileApp](../resources/intune-shared-mobileapp.md).|
-|privacyInformationUrl|String.|URL-адрес заявления о конфиденциальности. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|informationUrl|String.|URL-адрес страницы с дополнительными сведениями. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|privacyInformationUrl|String|URL-адрес заявления о конфиденциальности. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|informationUrl|String|URL-адрес страницы с дополнительными сведениями. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |owner|String|Владелец приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|developer|String.|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|notes|String.|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|developer|String|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |uploadState|Int32|Состояние отправки. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |packageId|String|Идентификатор пакета. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
 |appIdentifier|String|Имя удостоверения. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
 |usedLicenseCount|Int32|Количество используемых лицензий VPP. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
 |totalLicenseCount|Int32|Общее количество лицензий VPP. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
 |appStoreUrl|String|URL-адрес приложения для рабочего хранилища. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
-|Частный|Boolean.|Указывает, доступно ли приложение только для указанных пользователей предприятия. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
-|иссистемапп|Boolean.|Указывает, является ли приложение предустановленным системным приложением. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
-|суппортсоемконфиг|Boolean.|Поддерживает ли это приложение политику Оемконфиг. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
+|Частный|Логический|Указывает, доступно ли приложение только для указанных пользователей предприятия. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
+|иссистемапп|Логический|Указывает, является ли приложение предустановленным системным приложением. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
+|суппортсоемконфиг|Логический|Поддерживает ли это приложение политику Оемконфиг. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
 
-## <a name="relationships"></a>Отношения
-|Отношение|Тип|Описание|
+## <a name="relationships"></a>Связи
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |categories|Коллекция [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |assignments|Коллекция [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md)|Список назначений группы для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|

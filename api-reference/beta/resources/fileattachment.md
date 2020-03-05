@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: angelgolfer-ms
-ms.openlocfilehash: 2b73c69b7fdb7099994e9925815d80e2bf99d5f6
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: c77f5294a191b827673e52ee60c132713b16e490
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036223"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42498303"
 ---
 # <a name="fileattachment-resource-type"></a>Тип ресурса fileAttachment
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,13 +32,13 @@ ms.locfileid: "37036223"
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
 |[Получение](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Чтение свойств, связей или необработанного содержимого объекта fileAttachment.|
-|[Удаление](../api/attachment-delete.md) | Нет |Удаление объекта fileAttachment. |
+|[удаление](../api/attachment-delete.md); | Нет |Удаление объекта fileAttachment. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|contentBytes|EDM. binary|Содержимое файла в кодировке base64.|
-|contentId|String.|Идентификатор вложения в хранилище Exchange.|
+|contentBytes|Edm.Binary|Содержимое файла в кодировке base64.|
+|contentId|String|Идентификатор вложения в хранилище Exchange.|
 |contentLocation|String|Не используйте это свойство, так как оно не поддерживается.|
 |contentType|String|Тип контента этого вложения.|
 |id|Строка|Идентификатор вложения.|

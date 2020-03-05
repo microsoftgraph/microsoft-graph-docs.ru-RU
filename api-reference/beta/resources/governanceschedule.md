@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 36a2b4c73f5f85439a34a42ea2aa23cfe861c4ab
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d52df62d0bed004d2126a775c44b92b5f285607f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006376"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42497218"
 ---
 # <a name="governanceschedule-resource-type"></a>Тип ресурса Говернанцесчедуле
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,10 +25,10 @@ ms.locfileid: "36006376"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|startDateTime|DateTimeOffset|Время начала назначения роли. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601, причем всегда используется время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|endDateTime|DateTimeOffset|Время окончания назначения роли. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. *Note: Если значение задано `null`, оно указывает на постоянное назначение.*|
+|startDateTime|DateTimeOffset|Время начала назначения роли. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|endDateTime|DateTimeOffset|Время окончания назначения роли. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. *Note: Если значение задано `null`, оно указывает на постоянное назначение.*|
 |type|String|Тип расписания назначения ролей. Поддерживается `Once` только в настоящее время.
-|duration|Duration (Длительность)|Продолжительность назначения роли. Он имеет формат TimeSpan.|
+|duration|Длительность|Продолжительность назначения роли. Он имеет формат TimeSpan.|
 
 ## <a name="json-representation"></a>Представление JSON
 

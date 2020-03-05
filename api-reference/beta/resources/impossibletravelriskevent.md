@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: be2b5db09a20264525e783e05771f6d1da2783e2
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 39cfbc804fc786875b7cb1b6ee8058ae2a0571e0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866786"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42496392"
 ---
 # <a name="impossibletravelriskevent-resource-type"></a>Тип ресурса Импоссиблетравелрискевент
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -33,24 +35,24 @@ ms.locfileid: "40866786"
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| Дата и время закрытия события риска|
 |createdDateTime|dateTimeOffset| Дата и время создания события риска. Он всегда больше или равен значению DateTime самого события риска. Это правильное свойство, используемое в качестве фильтра при запросе событий риска.|
-|девицеинформатион|string| Сведения об устройстве|
+|девицеинформатион|строка| Сведения об устройстве|
 |id|string| Только для чтения|
-|ipAddress|string| IP-адрес второго входа|
+|ipAddress|строка| IP-адрес второго входа|
 |исатипикаллокатион|boolean| Если одно из расположений для пользователя является нетипичным|
-|location|string| Расположение, подключенное к IP-адресу второго входа|
-|превиаусипаддресс|string| IP-адрес первого входа|
-|превиауслокатион|string| Расположение, подключенное к IP-адресу первого входа|
+|location|строка| Расположение, подключенное к IP-адресу второго входа|
+|превиаусипаддресс|строка| IP-адрес первого входа|
+|превиауслокатион|строка| Расположение, подключенное к IP-адресу первого входа|
 |превиауссигниндатетиме|dateTimeOffset| Дата и время первого входа|
 |рискевентдатетиме|dateTimeOffset| Дата и время второго входа|
-|рискевентстатус|string| Возможные значения: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
+|рискевентстатус|строка| Возможные значения: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
 |riskLevel|string| Возможные значения: `low`, `medium`, `high`.|
-|рискевенттипе|string| Тип риска|
-|userAgent|string| Строка агента пользователя браузера|
-|userDisplayName|string| Имя пользователя под угрозой|
+|рискевенттипе|строка| Тип риска|
+|userAgent|строка| Строка агента пользователя браузера|
+|userDisplayName|строка| Имя пользователя под угрозой|
 |userId|строка| Идентификатор пользователя, который подвергается риску|
 |userPrincipalName|string| Имя участника пользователя, который подвергается риску|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |импактедусер|[user](user.md)| Только для чтения. Допускается значение null.|

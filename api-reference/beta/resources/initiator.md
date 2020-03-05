@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 2846c247d4a0d196d4c620f447b40d47cd486c81
-ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
+ms.openlocfilehash: 909849775e5bf35c9a29902efbbc3975177956d1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35349454"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42496014"
 ---
 # <a name="initiator-resource-type"></a>Тип ресурса инициатора
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ ms.locfileid: "35349454"
 |:-------------|:------------|:------------|
 |displayName|Строка|Имя пользователя или службы, которые инициировали событие подготовки.|
 |id|String|Уникальный идентификатор пользователя или службы, которые инициировали событие подготовки.|
-|Инитиатортипе|String| Тип инициатора. Возможные значения: `user`, `app`, `system`, `unknownFutureValue`.|
+|инитиатортипе|String| Тип инициатора. Возможные значения: `user`, `app`, `system`, `unknownFutureValue`.|
 
 ## <a name="json-representation"></a>Представление JSON
 

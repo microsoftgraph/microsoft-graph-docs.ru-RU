@@ -2,18 +2,20 @@
 author: daspek
 description: Аспект Инкомплетедата указывает, что ресурс был создан с неполными данными.
 ms.date: 10/06/2017
-title: Инкомплетедата
+title: инкомплетедата
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 23d78fa3605259031fc2c408e93a0461bb12cb28
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3abefff4749413648a3f1a56d1dbf6d44f16a471
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006285"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42496280"
 ---
 # <a name="incompletedata-resource-type"></a>Тип ресурса Инкомплетедата
+
+Пространство имен: Microsoft. Graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,8 +37,8 @@ ms.locfileid: "36006285"
 
 | Свойство                  | Тип           | Описание
 |:--------------------------|:---------------|:--------------------------------
-| Миссингдатабефоредатетиме | DateTimeOffset | В службе нет исходных данных до указанного времени.
-| Вассроттлед              | Boolean        | Некоторые данные не были записаны из-за чрезмерной активности.
+| миссингдатабефоредатетиме | DateTimeOffset | В службе нет исходных данных до указанного времени.
+| вассроттлед              | Логический        | Некоторые данные не были записаны из-за чрезмерной активности.
 
 <!--
 {

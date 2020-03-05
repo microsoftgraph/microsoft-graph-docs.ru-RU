@@ -5,14 +5,16 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 930937feb584e160afc429ab31f3974351eee2c3
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: de892cb10d7333b8807253f99148edbdcedf5d66
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40867277"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42499409"
 ---
 # <a name="emailfileassessmentrequest-resource-type"></a>Тип ресурса Емаилфилеассессментрекуест
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,8 +26,8 @@ ms.locfileid: "40867277"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Создание Среатассессментрекуест](../api/informationprotection-post-threatassessmentrequests.md) | [емаилфилеассессментрекуест](emailFileAssessmentRequest.md) | Создание нового запроса на оценку файла электронной почты путем отправки объекта **емаилфилеассессментрекуест** . |
-| [Получение Среатассессментрекуест](../api/threatassessmentrequest-get.md) | [емаилфилеассессментрекуест](emailfileassessmentrequest.md) | Чтение свойств и связей объекта **емаилфилеассессментрекуест** . |
+| [Создание объекта threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [emailFileAssessmentRequest](emailFileAssessmentRequest.md) | Создание нового запроса на оценку файла электронной почты путем отправки объекта **емаилфилеассессментрекуест** . |
+| [Получение объекта threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [emailFileAssessmentRequest](emailfileassessmentrequest.md) | Чтение свойств и связей объекта **емаилфилеассессментрекуест** . |
 
 ## <a name="properties"></a>Свойства
 
@@ -43,7 +45,7 @@ ms.locfileid: "40867277"
 |рекуестсаурце|[среатассессментрекуестсаурце](enums.md#threatassessmentrequestsource-values)|Источник запроса на оценку угроз. Возможные значения: `user`, `administrator`.|
 |status|[среатассессментстатус](enums.md#threatassessmentstatus-values)|Состояние процесса оценки. Возможные значения: `pending`, `completed`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|

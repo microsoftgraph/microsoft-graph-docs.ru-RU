@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: enumPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: d377d530bf3b9dbdef37178ff6290ba4b63e6ad4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c8f2b733363ecbd79a885a0b76c170f076664590
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972036"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42498226"
 ---
 # <a name="filehashtype-enum"></a>Перечисление Филехаштипе
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,11 +25,11 @@ Enum для типов хэша файлов.
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Неизвестный тип.|
-|хэшем|1,1|Тип хеша SHA1.|
-|хэш|2| Тип хеша SHA256.|
-|алгоритм|4| Тип хеша MD5.|
-|Свойства authenticodehash256|SP4| Тип хеша свойства authenticodehash256.|
-|Лшаш|17:00| Тип хеша Лшаш.|
-|КТФ|6 | Тип хеша КТФ.|
+|хэшем|1 |Тип хеша SHA1.|
+|хэш|2 | Тип хеша SHA256.|
+|алгоритм|3 | Тип хеша MD5.|
+|Свойства authenticodehash256|4 | Тип хеша свойства authenticodehash256.|
+|лшаш|5 | Тип хеша Лшаш.|
+|ктф|6 | Тип хеша КТФ.|
 |peSha1|7 | Тип хеша PESHA1.|
 |peSha256|8 | Тип хеша PESHA256.|

@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 2f9f654b1a68ff393315889d7b2d9286636fcf35
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ec4b6ba22aceaaaeb3c612f61eb522bfe14243c6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005837"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42496868"
 ---
 # <a name="hostsecuritystate-resource-type"></a>Тип ресурса Хостсекуритистате
+
+Пространство имен: Microsoft. Graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,13 +25,13 @@ ms.locfileid: "36005837"
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
 |полным|String|ПОЛНОЕ доменное имя узла (полное доменное имя) (например, machine.company.com).|
-|Исазуреааджоинед|Boolean|True, если узел подключен к доменным службам Azure Active Directory.|
-|Исазуреаадрегистеред|Boolean|True, если узел зарегистрирован с регистрацией устройств Azure Active Directory (BYOD Devices — то есть, не полностью управляется предприятием).|
-|Ишибридазуредомаинжоинед|Boolean|True, если узел является доменом, присоединенным к локальному домену Active Directory.|
-|Нетбиоснаме|String|Имя локального узла без DNS-имени домена.|
+|исазуреааджоинед|Логический|True, если узел подключен к доменным службам Azure Active Directory.|
+|исазуреаадрегистеред|Логический|True, если узел зарегистрирован с регистрацией устройств Azure Active Directory (BYOD Devices — то есть, не полностью управляется предприятием).|
+|ишибридазуредомаинжоинед|Логический|True, если узел является доменом, присоединенным к локальному домену Active Directory.|
+|нетбиоснаме|String|Имя локального узла без DNS-имени домена.|
 |совместим|String|Хост операционной системы. (Например, Windows10, MacOS, РХЕЛ и т. д.).|
-|Приватеипаддресс|String|Частный (без маршрутизации) IPv4-или IPv6-адрес (см. [RFC 1918](https://tools.ietf.org/html/rfc1918)) на момент оповещения.|
-|ПублиЦипаддресс|String|IPv4-или IPv6-адрес общедоступной маршрутизации (см. [RFC 1918](https://tools.ietf.org/html/rfc1918)) во время оповещения.|
+|приватеипаддресс|String|Частный (без маршрутизации) IPv4-или IPv6-адрес (см. [RFC 1918](https://tools.ietf.org/html/rfc1918)) на момент оповещения.|
+|публиЦипаддресс|String|IPv4-или IPv6-адрес общедоступной маршрутизации (см. [RFC 1918](https://tools.ietf.org/html/rfc1918)) во время оповещения.|
 |riskScore|String|Полученный поставщиком и вычисляемый показатель риска для узла.  Рекомендуемый диапазон значений 0-1, указывающий на процентное соотношение.|
 
 ## <a name="json-representation"></a>Представление JSON

@@ -6,14 +6,16 @@ title: FolderView
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 5238c749d509339cd0e922e49b7e2d4d2da3b23f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7ad664b20f125857943e93e62b66301c82af89ed
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973550"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42497869"
 ---
 # <a name="folderview-resource-type"></a>Тип ресурса FolderView
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,8 +39,8 @@ ms.locfileid: "35973550"
 
 | Имя свойства         | Тип   | Описание
 |:----------------------|:-------|:--------------------------------------------
-| **sortBy**            | string | Метод сортировки содержимого папки.
-| **sortOrder**         | string | Если значение равно true, то необходимо отсортировать элементы по убыванию. В противном случае необходимо отсортировать элементы по возрастанию.
+| **sortBy**            | строка | Метод сортировки содержимого папки.
+| **sortOrder**         | строка | Если значение равно true, то необходимо отсортировать элементы по убыванию. В противном случае необходимо отсортировать элементы по возрастанию.
 | **viewType**          | строка | Тип представления, который следует использовать для представления папки.
 
 Вы можете использовать свойство _sortBy_ для управления порядком сортировки элементов в приложениях, использующих аспект **viewType**.

@@ -5,30 +5,32 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 0ca694c5d416dcc062984ba03a3521a39a010a87
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d34ceaf4450a66f07c0678e55db344adc20bb0b1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972182"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42499500"
 ---
 # <a name="emailappusageappsusercounts-resource-type"></a>Тип ресурса Емаилаппусажеаппсусеркаунтс
+
+Пространство имен: Microsoft. Graph
 
 ## <a name="properties"></a>Свойства
 
 | Свойство          | Тип   |
 | :---------------- | :----- |
-| Репортрефрешдате | Дата   |
-| Маилформак        | Int64  |
-| Аутлукформак     | Int64  |
-| Аутлукфорвиндовс | Int64  |
-| Аутлукформобиле  | Int64  |
-| Осерформобиле    | Int64  |
-| Аутлукфорвеб     | Int64  |
+| репортрефрешдате | Дата   |
+| маилформак        | Int64  |
+| аутлукформак     | Int64  |
+| аутлукфорвиндовс | Int64  |
+| аутлукформобиле  | Int64  |
+| осерформобиле    | Int64  |
+| аутлукфорвеб     | Int64  |
 | pop3App           | Int64  |
 | imap4App          | Int64  |
-| Смтпапп           | Int64  |
-| Репортпериод      | String |
+| смтпапп           | Int64  |
+| репортпериод      | String |
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -2,18 +2,20 @@
 author: kevklam
 description: Жеолокатионколумн для ресурса columnDefinition указывает на то, что столбец содержит географическое положение.
 ms.date: 09/10/2018
-title: Жеолокатионколумн
+title: жеолокатионколумн
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 7ab8617ea48e02a1deca29e4aed725a938a5a07c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1bb749ebf38709fee04a0009fea2174297a173ad
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973524"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42497631"
 ---
 # <a name="geolocationcolumn-resource-type"></a>Тип ресурса Жеолокатионколумн
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

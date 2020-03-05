@@ -5,35 +5,37 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: ae0409124569f4318df94f97729402a91d4b8e45
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 700ef4b222860d19ef3ba78ae583a50e8cf8d0cc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972147"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42499486"
 ---
 # <a name="emailappusageuserdetail-resource-type"></a>Тип ресурса Емаилаппусажеусердетаил
+
+Пространство имен: Microsoft. Graph
 
 ## <a name="properties"></a>Свойства
 
 | Свойство          | Тип              |
 | :---------------- | :---------------- |
-| Репортрефрешдате | Дата              |
+| репортрефрешдате | Дата              |
 | userPrincipalName | String            |
 | displayName       | Строка            |
-| isDeleted         | Boolean           |
-| Делетеддате       | Дата              |
-| Ластактивитидате  | Дата              |
-| Маилформак        | Коллекция строк |
-| Аутлукформак     | Коллекция строк |
-| Аутлукфорвиндовс | Коллекция строк |
-| Аутлукформобиле  | Коллекция строк |
-| Осерформобиле    | Коллекция строк |
-| Аутлукфорвеб     | Коллекция строк |
-| pop3App           | Коллекция строк |
-| imap4App          | Коллекция строк |
-| Смтпапп           | Коллекция строк |
-| Репортпериод      | String            |
+| isDeleted         | Логический           |
+| делетеддате       | Дата              |
+| ластактивитидате  | Дата              |
+| маилформак        | Коллекция String |
+| аутлукформак     | Коллекция String |
+| аутлукфорвиндовс | Коллекция String |
+| аутлукформобиле  | Коллекция String |
+| осерформобиле    | Коллекция String |
+| аутлукфорвеб     | Коллекция String |
+| pop3App           | Коллекция String |
+| imap4App          | Коллекция String |
+| смтпапп           | Коллекция String |
+| репортпериод      | String            |
 
 ## <a name="json-representation"></a>Представление JSON
 

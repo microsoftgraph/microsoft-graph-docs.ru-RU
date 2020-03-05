@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 82350bc8cfeece76e0cd5c6873810988194cfb01
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 163352538dac4d7ba27def978b3bcc379807d4e4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971965"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42497722"
 ---
 # <a name="freebusyerror-resource-type"></a>Тип ресурса Фрибусеррор
+
+Пространство имен: Microsoft. Graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
@@ -22,7 +24,7 @@ ms.locfileid: "35971965"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |message |String |Описание ошибки. |
-|Респонсекоде |String |Код ответа из запроса на доступность пользователя, списка рассылки или ресурса. |
+|респонсекоде |String |Код ответа из запроса на доступность пользователя, списка рассылки или ресурса. |
 
 
 ## <a name="json-representation"></a>Представление JSON

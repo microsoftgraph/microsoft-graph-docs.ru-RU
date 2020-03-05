@@ -5,14 +5,16 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 4a77afc0aeef6c68d7bd58e554848068f25e1142
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 49e268f894b6733eb3f44d36fa34bc7c80df0ded
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866842"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42498919"
 ---
 # <a name="externalconnection-resource-type"></a>Тип ресурса Екстерналконнектион
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +30,7 @@ ms.locfileid: "40866842"
 | [Список Екстерналконнектионс](../api/externalconnection-list.md)    | Коллекция Екстерналконнектион                 | Получение коллекции объектов Екстерналконнектион. |
 | [Получение Екстерналконнектион](../api/externalconnection-get.md)       | externalConnection                            | Чтение свойств и связей объекта Екстерналконнектион. |
 | [Обновление Екстерналконнектион](../api/externalconnection-update.md) | externalConnection                            | Обновление объекта Екстерналконнектион. |
-| [Удаление Екстерналконнектион](../api/externalconnection-delete.md) | Нет.                                          | Удаление объекта Екстерналконнектион. |
+| [Удаление Екстерналконнектион](../api/externalconnection-delete.md) | Нет                                          | Удаление объекта Екстерналконнектион. |
 | [Создание схемы](../api/externalconnection-post-schema.md)        | Нет *или* [схема](schema.md)                 | Регистрация схемы подключения. |
 | [Получение операции](../api/connectionoperation-get.md)               | [коннектионоператион](connectionoperation.md) | Получение состояния асинхронного запроса для создания схемы подключения. |
 | [Создание Екстерналитем](../api/externalconnection-put-items.md)    | [externalItem](externalitem.md)               | Создание нового Екстерналитем путем публикации в коллекции Items. |
@@ -37,12 +39,12 @@ ms.locfileid: "40866842"
 
 | Свойство      | Тип                              | Описание |
 |:--------------|:----------------------------------|:------------|
-| конфигурацион | [configuration](configuration.md) | Задает дополнительные идентификаторы приложений, которым разрешено управлять подключением и индексировать содержимое в подключении. Необязательный атрибут. |
-| description   | String                            | Описание подключения, отображаемое в центре администрирования Microsoft 365. Необязательный атрибут. |
-| id            | Строка                            | Предоставленный разработчиком уникальный идентификатор подключения в клиенте Azure Active Directory. Максимальная длина 32 символов. Должно содержать только буквенно-цифровые символы. `Microsoft` Не может начинаться с одного из следующих значений: `None`, `Directory`, `Exchange`, `ExchangeArchive` `LinkedIn` `Mailbox` `MicrosoftSearch` `OneDriveBusiness` `SharePoint` `Teams`,,,,,,, `Yammer`,. `Connectors` Обязательный атрибут. |
-| name          | String                            | Отображаемое имя подключения, отображаемое в центре администрирования Microsoft 365. Максимальная длина 128 символов. Обязательный атрибут. |
+| конфигурацион | [configuration](configuration.md) | Задает дополнительные идентификаторы приложений, которым разрешено управлять подключением и индексировать содержимое в подключении. Необязательное свойство. |
+| description   | String                            | Описание подключения, отображаемое в центре администрирования Microsoft 365. Необязательное свойство. |
+| id            | Строка                            | Предоставленный разработчиком уникальный идентификатор подключения в клиенте Azure Active Directory. Максимальная длина 32 символов. Должно содержать только буквенно-цифровые символы. `Microsoft` Не может начинаться с одного из следующих значений: `None`, `Directory`, `Exchange`, `ExchangeArchive` `LinkedIn` `Mailbox` `MicrosoftSearch` `OneDriveBusiness` `SharePoint` `Teams`,,,,,,, `Yammer`,. `Connectors` Обязательное. |
+| name          | String                            | Отображаемое имя подключения, отображаемое в центре администрирования Microsoft 365. Максимальная длина 128 символов. Обязательное. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип                                                     | Описание |
 |:-------------|:---------------------------------------------------------|:---|

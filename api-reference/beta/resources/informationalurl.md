@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: c8cf7bcc40480042b4cd43230ca0245bd690fd7b
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 88b3ae7af8604b6092ad87f2751791f48d273a68
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938844"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42496098"
 ---
 # <a name="informationalurl-resource-type"></a>Тип ресурса informationalUrl
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,11 +24,11 @@ ms.locfileid: "37938844"
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|logoUrl|Строка|URL-адрес сети CDN для логотипа приложения и только для чтения.|
-|маркетингурл|Строка| Ссылка на маркетинговую страницу приложения. Пример: https://www.contoso.com/app/marketing |
-|привацистатементурл|Строка| Ссылка на заявление о конфиденциальности приложения. Пример: https://www.contoso.com/app/privacy |
-|supportUrl|Строка| Ссылка на страницу поддержки приложения. Пример: https://www.contoso.com/app/support |
-|термсофсервицеурл|Строка| Ссылка на условия заявления приложения. Пример: https://www.contoso.com/app/termsofservice |
+|logoUrl|String|URL-адрес сети CDN для логотипа приложения и только для чтения.|
+|маркетингурл|String| Ссылка на маркетинговую страницу приложения. Пример: https://www.contoso.com/app/marketing |
+|привацистатементурл|String| Ссылка на заявление о конфиденциальности приложения. Пример: https://www.contoso.com/app/privacy |
+|supportUrl|String| Ссылка на страницу поддержки приложения. Пример: https://www.contoso.com/app/support |
+|термсофсервицеурл|String| Ссылка на условия заявления приложения. Пример: https://www.contoso.com/app/termsofservice |
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f38e87c5a54bce5c1da95cf9ac9ad5db422113f4
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 5717936692dde3e92071e0f697fa0204bf7550ee
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36366835"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42493792"
 ---
 # <a name="fileencryptioninfo-resource-type"></a>Тип ресурса fileEncryptionInfo
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Содержит свойства сведений о шифровании файлов для версии содержимого бизнес-приложения.
 
@@ -31,7 +33,7 @@ ms.locfileid: "36366835"
 |fileDigest|Binary|Дайджест файла до шифрования.|
 |fileDigestAlgorithm|String|Алгоритм дайджеста файла.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

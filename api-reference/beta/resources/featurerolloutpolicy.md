@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 958e6750c9b6a0749613d3a380b43a7d1ab282c2
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: a5ebc5884b0fd1ccf52fca961247e610b1c8cad5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870252"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42498485"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>Тип ресурса Феатурероллаутполици
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,9 +51,9 @@ ms.locfileid: "40870252"
 | [Получение Феатурероллаутполици](../api/featurerolloutpolicy-get.md) | [феатурероллаутполици](featurerolloutpolicy.md) | Получение свойств и связей объекта феатурероллаутполици. ||
 | [Создание Феатурероллаутполици](../api/directory-post-featurerolloutpolicies.md) | [феатурероллаутполици](featurerolloutpolicy.md) | Создание нового объекта Феатурероллаутполици.
 | [Обновление Феатурероллаутполици](../api/featurerolloutpolicy-update.md) | [феатурероллаутполици](featurerolloutpolicy.md) | Обновление свойств объекта феатурероллаутполици. |
-| [Удаление Феатурероллаутполици](../api/featurerolloutpolicy-delete.md) | Нет. | Удаление объекта Феатурероллаутполици. |
+| [Удаление Феатурероллаутполици](../api/featurerolloutpolicy-delete.md) | Нет | Удаление объекта Феатурероллаутполици. |
 | [Назначение appliesTo](../api/featurerolloutpolicy-post-appliesto.md) | [directoryObject](directoryobject.md) | Назначение directoryObject для развертывания компонентов. |
-| [Удаление appliesTo](../api/featurerolloutpolicy-delete-appliesto.md) | Нет. | Удаление directoryObject из развертывания компонента. |
+| [Удаление appliesTo](../api/featurerolloutpolicy-delete-appliesto.md) | Нет | Удаление directoryObject из развертывания компонента. |
 
 ## <a name="properties"></a>Свойства
 
@@ -64,7 +66,7 @@ ms.locfileid: "40870252"
 |исапплиедтурганизатион|Логический|Указывает, следует ли применять эту политику развертывания функций ко всей Организации.|
 |isEnabled|Boolean|Указывает, включен ли выпуск компонентов.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|

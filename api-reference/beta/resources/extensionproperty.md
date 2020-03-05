@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f42ac98e0e13d8482f025e8b86886b1658d80d1d
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 5c71eade005bc76b5e0ebe3c23d3482d63e3712f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939069"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42499003"
 ---
 # <a name="extensionproperty-resource-type"></a>Тип ресурса Екстенсионпроперти
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,9 +31,9 @@ ms.locfileid: "37939069"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Расширения списка](../api/application-list-extensionproperty.md) | Коллекция [екстенсионпроперти](extensionProperty.md) | Список свойств расширения для объекта Application. |
-| [Создание расширения](../api/application-post-extensionproperty.md) | [екстенсионпроперти](extensionProperty.md) | Создание свойства расширения для объекта Application. |
-| [Удаление расширения](../api/application-delete-extensionproperty.md) | Нет. | Удаление свойства расширения из объекта Application. |
+| [Список расширений](../api/application-list-extensionproperty.md) | Коллекция [extensionProperty](extensionProperty.md) | Список свойств расширения для объекта application. |
+| [Создание расширения](../api/application-post-extensionproperty.md) | [extensionProperty](extensionProperty.md) | Создание свойства расширения для объекта application. |
+| [Удаление расширения](../api/application-delete-extensionproperty.md) | Нет | Удаление свойства расширения объекта application. |
 
 ## <a name="properties"></a>Свойства
 
@@ -41,7 +43,7 @@ ms.locfileid: "37939069"
 |dataType|String| Задает тип данных значения, которое может содержать свойство Extension. Поддерживаются следующие значения: Значение null не допускается. <ul><li>`Binary`– 256 байт (максимум)</li><li>`Boolean`</li><li>`DateTime`-Должен быть указан в формате ISO 8601. Данные времени будут храниться в формате UTC.</li><li>`Integer`— значение 32 — бит.</li><li>`LargeInteger`— значение 64 — бит.</li><li>`String`– 256 символов максимум</li></ul>|
 |иссинцедфромонпремисес|Логический| Указывает, было ли это свойство расширения сикнед из локального каталога с помощью Azure AD Connect. Только для чтения. |
 |name|Строка| Имя свойства расширения. Значение null не допускается. |
-|таржетобжектс|Коллекция строк| Поддерживаются следующие значения: Значение null не допускается. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
+|таржетобжектс|Коллекция String| Поддерживаются следующие значения: Значение null не допускается. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 ## <a name="relationships"></a>Связи
 

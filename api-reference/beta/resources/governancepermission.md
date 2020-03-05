@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 8bf32b855ed77ccdf712b1a739ef913d0a3dade0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3efdebea07bb824b2314af516810ca36ad43adc9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971946"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42497624"
 ---
 # <a name="governancepermission-resource-type"></a>Тип ресурса Говернанцепермиссион
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,8 +25,8 @@ ms.locfileid: "35971946"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |accessLevel|String|Уровень доступа. Допустимые значения ``None``: ``UserRead``, ``AdminRead``, и ``AdminReadWrite``.|
-|isActive|Boolean|Указывает, имеет ли запрашивающая сторона какие – либо активные назначения ролей для этого уровня доступа.|
-|Действительный|Boolean|Указывает, имеет ли запрашивающее назначение роли для уровня доступа.|
+|isActive|Логический|Указывает, имеет ли запрашивающая сторона какие – либо активные назначения ролей для этого уровня доступа.|
+|Действительный|Логический|Указывает, имеет ли запрашивающее назначение роли для уровня доступа.|
 
 ## <a name="json-representation"></a>Представление JSON
 

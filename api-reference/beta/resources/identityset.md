@@ -6,14 +6,16 @@ title: Identity
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: c43981c1f7e79567afe901217030a0b5abed6f53
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 08986af20ae7591798a222e68d9b9bee5244e273
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006292"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42496609"
 ---
 # <a name="identityset-resource-type"></a>Тип ресурса Identity
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -61,9 +63,9 @@ ms.locfileid: "36006292"
 |:------------|:------------------------|:--------------------------------------------------------|
 | application | [Идентификация](identity.md) | Необязательный. Приложение, связанное с данным действием.  |
 | conversation| [Identity](identity.md) | Необязательный. Группа или канал, связанные с этим действием.       |
-| Конверсатионидентититипе| [Identity](identity.md) | Необязательный. Указывает, идентифицирует **** ли свойство беседы группу или канал.|
+| конверсатионидентититипе| [Identity](identity.md) | Необязательный. Указывает, идентифицирует ли свойство **беседы** группу или канал.|
 | Устройство      | [Идентификация](identity.md) | Необязательный. Устройство, связанное с данным действием.       |
-| phone       | [identity](identity.md) | Необязательно. Номер телефона, связанный с этим действием. |
+| phone       | [identity](identity.md) | Необязательное свойство. Номер телефона, связанный с этим действием. |
 | user        | [Identity](identity.md) | Необязательный. Пользователь, связанный с данным действием.         |
 
 ## <a name="remarks"></a>Заметки 

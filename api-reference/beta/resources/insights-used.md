@@ -5,14 +5,16 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 2b6e7a7c4df94e9ffbcb34ef200457b4a903eb24
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7a334e701012b4794018c19d57f350e7f4fe1b07
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36005690"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42495475"
 ---
 # <a name="usedinsight-resource-type"></a>Тип ресурса Усединсигхт
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,18 +27,18 @@ ms.locfileid: "36005690"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Список "Использованные"](../api/insights-list-used.md) |Коллекция [usedInsight](insights-used.md)| Получение списка используемых файлов.|
+|[Список "Использованные"](../api/insights-list-used.md) |Коллекция объектов [usedInsight](insights-used.md)| Получение списка используемых файлов.|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство              | Тип                      | Описание  |
 | -------------         |---------------            | -------------|
 | id                    | String                    | Уникальный идентификатор связи. Только для чтения.        |
-| Ластусед              | [usageDetails](insights-usagedetails.md)              | Сведения о том, когда элемент был последний раз просмотрен и изменен пользователем. Только для чтения.     |
+| ластусед              | [usageDetails](insights-usagedetails.md)              | Сведения о том, когда элемент был последний раз просмотрен и изменен пользователем. Только для чтения.     |
 | Ресурсе resourcevisualization | [Ресурсе resourcevisualization](insights-resourcevisualization.md)                | Свойства, которые можно использовать для отображения документа в вашем интерфейсе. Только для чтения      |
-| Ресаурцереференце     | [Ресаурцереференце](insights-resourcereference.md)                      | Справочные свойства используемого документа, например URL-адрес и тип документа. Только для чтения     |
+| ресаурцереференце     | [ресаурцереференце](insights-resourcereference.md)                      | Справочные свойства используемого документа, например URL-адрес и тип документа. Только для чтения     |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Свойство      | Тип          | Описание  |
 | ------------- |---------------| -------------|

@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 668f5430e8f098986b7d5398f32c9c35543a7e11
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 985e674c0e8e79f7b929097dd5c61dfa15917a93
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35971855"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42497393"
 ---
 # <a name="governanceroledefinition-resource-type"></a>Тип ресурса Говернанцероледефинитион
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +27,7 @@ ms.locfileid: "35971855"
 | Метод          | Возвращаемый тип |Описание|
 |:---------------|:--------|:--------|
 |[List](../api/governanceroledefinition-list.md) | Коллекция [говернанцероледефинитион](../resources/governanceroledefinition.md) |Перечисление коллекции определений ролей для ресурса.|
-|[получение](../api/governanceroledefinition-get.md); | [Говернанцероледефинитион](../resources/governanceroledefinition.md) |Считывание свойств и связей объекта определения роли, указанного по идентификатору.|
+|[получение](../api/governanceroledefinition-get.md); | [governanceRoleDefinition](../resources/governanceroledefinition.md) |Считывание свойств и связей объекта определения роли, указанного по идентификатору.|
 
 Нет `POST`, `PUT`, `PATCH`, `DELETE` поддерживается в `roleDefinitions` наборе сущностей для Now.
 
@@ -38,11 +40,11 @@ ms.locfileid: "35971855"
 |displayName|Строка     |Отображаемое имя определения роли.|
 |templateId | String | |
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |resource|[governanceResource](../resources/governanceresource.md)|Только для чтения. Связанный ресурс для определения роли.|
-|Ролесеттинг|[Говернанцеролесеттинг](../resources/governancerolesetting.md)|Связанный параметр роли для определения роли.|
+|ролесеттинг|[governanceRoleSetting](../resources/governancerolesetting.md)|Связанный параметр роли для определения роли.|
 
 ## <a name="json-representation"></a>Представление JSON
 

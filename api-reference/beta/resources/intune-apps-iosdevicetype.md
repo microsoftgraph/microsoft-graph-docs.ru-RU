@@ -5,28 +5,30 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 88ea8f52e41a8cc363975dd3bb2f8bd22d1990d1
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 312db37bcd7f8750f35db55d0303ece2f875415b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36366079"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42493694"
 ---
 # <a name="iosdevicetype-resource-type"></a>Тип ресурса iosDeviceType
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Содержит свойства возможных типов устройств iOS, на которых может работать мобильное приложение.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|iPad|Boolean|Указывает, должно ли приложение работать на iPad.|
+|iPad|Логический|Указывает, должно ли приложение работать на iPad.|
 |iPhoneAndIPod|Boolean|Указывает, должно ли приложение работать на iPhone и iPod.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
