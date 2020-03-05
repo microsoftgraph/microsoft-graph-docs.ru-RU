@@ -5,18 +5,20 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: df8f1927329a34a51b5f6d8738faec05be01b451
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9b5509fed7c7dba43a9070695982c120f007f097
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012004"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42488546"
 ---
 # <a name="officeclientcheckinstatus-resource-type"></a>Тип ресурса Оффицеклиентчеккинстатус
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Сущность, описывающая статистику по возврату клиента.
 ## <a name="properties"></a>Свойства
@@ -25,14 +27,14 @@ ms.locfileid: "36012004"
 |userPrincipalName|Строка|Имя участника пользователя, использующего устройство.|
 |deviceName|String|Имя устройства, пытающееся вернуть.|
 |devicePlatform|String|Платформа устройства пытается вернуться.|
-|Девицеплатформверсион|String|Версия платформы устройства, пытающаяся вернуть значение.|
-|Вассукцессфул|Boolean|, Если последний возврат выполнен успешно.|
+|девицеплатформверсион|String|Версия платформы устройства, пытающаяся вернуть значение.|
+|вассукцессфул|Логический|, Если последний возврат выполнен успешно.|
 |userId|String|Идентификатор пользователя, использующий устройство.|
-|Чеккиндатетиме|DateTimeOffset|Время последнего возврата устройства в формате UTC.|
+|чеккиндатетиме|DateTimeOffset|Время последнего возврата устройства в формате UTC.|
 |Ошибк|String|Сообщение об ошибке, если оно связано с последним возвратом.|
-|appliedPolicies|Коллекция строк|Список политик, доставляемых на устройство при последнем возврате.|
+|appliedPolicies|Коллекция String|Список политик, доставляемых на устройство при последнем возврате.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

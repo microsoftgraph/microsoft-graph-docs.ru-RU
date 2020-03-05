@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ecda609a38d3dc9fe44376a0df9fc49bc06f63c3
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ec8ce4a680fd959db38a19a2cd36b13a6b018be6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36334936"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42487370"
 ---
 # <a name="advancedthreatprotectiononboardingstatesummary-resource-type"></a>Тип ресурса Адванцедсреатпротектиононбоардингстатесуммари
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Сводка по состоянию Advanced Threat Protection в Защитнике Windows по всей учетной записи.
 
@@ -39,8 +41,8 @@ ms.locfileid: "36334936"
 |conflictDeviceCount|Int32|Количество конфликтующих устройств.|
 |нотассигнеддевицекаунт|Int32|Количество неназначенных устройств|
 
-## <a name="relationships"></a>Отношения
-|Отношение|Тип|Описание|
+## <a name="relationships"></a>Связи
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |адванцедсреатпротектиононбоардингдевицесеттингстатес|Коллекция [адванцедсреатпротектиононбоардингдевицесеттингстате](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)|Н/Д|
 

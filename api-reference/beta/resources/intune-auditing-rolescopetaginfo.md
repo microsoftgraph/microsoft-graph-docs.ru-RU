@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 09ddd40d5f24b6c85c3637960a446728830e8dea
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: f90ae06b56a641d18260b020588a082c2583066b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38082769"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42489302"
 ---
 # <a name="rolescopetaginfo-resource-type"></a>Тип ресурса Ролескопетагинфо
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

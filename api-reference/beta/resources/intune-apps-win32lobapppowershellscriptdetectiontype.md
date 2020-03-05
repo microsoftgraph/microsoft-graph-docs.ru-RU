@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 42cdd8c15cbf59e51375643852291d2c7e55ee2c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: cbadfc4ccf93db91478752335eaa59dac4a3eee0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335594"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42490576"
 ---
 # <a name="win32lobapppowershellscriptdetectiontype-enum-type"></a>тип перечисления win32LobAppPowerShellScriptDetectionType
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Содержит все поддерживаемые типы обнаружения вывода сценариев PowerShell.
 
@@ -24,11 +26,11 @@ ms.locfileid: "36335594"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
-|string|1,1|Выходной тип данных String.|
-|dateTime|2|Тип выходных данных — Дата и время.|
-|целое|4|Тип выходных данных — целое число.|
-|с плавающей запятой|SP4|Тип выходных данных — float.|
-|version|17:00|Тип выходных данных — Version.|
+|строка|1 |Выходной тип данных String.|
+|dateTime|2 |Тип выходных данных — Дата и время.|
+|целое|3 |Тип выходных данных — целое число.|
+|с плавающей запятой|4 |Тип выходных данных — float.|
+|version|5 |Тип выходных данных — Version.|
 |boolean|6 |Тип выходных данных — Boolean.|
 
 

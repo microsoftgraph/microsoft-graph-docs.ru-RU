@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e01d39a60b9b1e329bcfd849cdbfaddeaf175b8e
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 6471aee5a287a9977800f273c438719b1e9daadc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42162451"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42485739"
 ---
 # <a name="androidenterprisealwaysonvpnpackagetype-enum-type"></a>тип перечисления Андроидентерприсеалвайсонвпнпаккажетипе
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -24,11 +26,11 @@ ms.locfileid: "42162451"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен; Это значение игнорируется.|
-|собственный|1,1|Имя настраиваемого пакета, ИТ-специалистов может предоставить имя пакета VPN-клиента, который необходимо использовать.|
-|Цискоаниконнект|2|Cisco Аниконнект.|
-|f5Access|4|Клавиша F5 доступ.|
-|палоалтонетворксглобалпротект|SP4|Palo Alto сети Глобалпротект.|
-|пулсесекуре|17:00|Безопасный импульс.|
+|собственный|1 |Имя настраиваемого пакета, ИТ-специалистов может предоставить имя пакета VPN-клиента, который необходимо использовать.|
+|Цискоаниконнект|2 |Cisco Аниконнект.|
+|f5Access|3 |Клавиша F5 доступ.|
+|палоалтонетворксглобалпротект|4 |Palo Alto сети Глобалпротект.|
+|пулсесекуре|5 |Безопасный импульс.|
 
 
 

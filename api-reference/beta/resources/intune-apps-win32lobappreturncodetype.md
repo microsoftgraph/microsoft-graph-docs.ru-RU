@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 19ecf9f8047b1fe73cf6cff9efdd140f39ece35a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d97896382ef5b596cdded326f3579f746d9b09b4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335496"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42490261"
 ---
 # <a name="win32lobappreturncodetype-enum-type"></a>тип перечисления win32LobAppReturnCodeType
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Указывает тип кода возврата.
 
@@ -24,10 +26,10 @@ ms.locfileid: "36335496"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |сбоев|нуль|Сбоев.|
-|success|1,1|Отключен.|
-|софтребут|2|Требуется программная перезагрузка.|
-|хардребут|4|Необходима аппаратная перезагрузка.|
-|Retry|SP4|Повторите попытку.|
+|success|1 |Выполнено.|
+|софтребут|2 |Требуется программная перезагрузка.|
+|хардребут|3 |Необходима аппаратная перезагрузка.|
+|Retry|4 |Повторите попытку.|
 
 
 

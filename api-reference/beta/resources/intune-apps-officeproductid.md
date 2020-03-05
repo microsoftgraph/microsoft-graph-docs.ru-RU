@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4ed956d1632c5f27f750d5e493673b8e1b1d6d4e
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c43faf49ab6fc1fc3015dbd42f33e5bd1e377b75
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335867"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42491248"
 ---
 # <a name="officeproductid-enum-type"></a>тип перечисления Оффицепродуктид
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Перечисление для указания ProductId Office365, представляющих SKU набора Office365.
 
@@ -24,9 +26,9 @@ ms.locfileid: "36335867"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |o365ProPlusRetail|нуль|Пока не задокументировано.|
-|o365BusinessRetail|1,1|Пока не задокументировано.|
-|висиопроретаил|2|Пока не задокументировано.|
-|прожектпроретаил|4|Пока не задокументировано.|
+|o365BusinessRetail|1 |Пока не задокументировано.|
+|висиопроретаил|2 |Пока не задокументировано.|
+|прожектпроретаил|3 |Пока не задокументировано.|
 
 
 

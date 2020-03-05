@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 20b50f04530c20459944285294c67bd454c785ea
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 28b89119acb17ecbc94e081122f69c27e0357c45
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36342147"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42491769"
 ---
 # <a name="mobileappcontentfileuploadstate-enum-type"></a>тип перечисления Мобилеаппконтентфилеуплоадстате
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Содержит свойства для состояний запроса на отправку.
 
@@ -24,9 +26,9 @@ ms.locfileid: "36342147"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |success|нуль|Пока не задокументировано.|
-|трансиентеррор|1,1|Пока не задокументировано.|
-|error|2|Пока не задокументировано.|
-|unknown|4|Пока не задокументировано.|
+|трансиентеррор|1 |Пока не задокументировано.|
+|error|2 |Пока не задокументировано.|
+|unknown|3 |Пока не задокументировано.|
 |азуресторажеурирекуестсукцесс|100|Пока не задокументировано.|
 |азуресторажеурирекуестпендинг|101|Пока не задокументировано.|
 |азуресторажеурирекуестфаилед|102|Пока не задокументировано.|

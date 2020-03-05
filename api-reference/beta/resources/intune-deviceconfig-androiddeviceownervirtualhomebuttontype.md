@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ed2a3bbd1ca44a88da5cad72bb0e4715287d71bd
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7549853813a3af17333907b8e6c71b1775a33b28
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36336593"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42486005"
 ---
 # <a name="androiddeviceownervirtualhomebuttontype-enum-type"></a>тип перечисления Андроиддевицеовнервиртуалхомебуттонтипе
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Управляемый в режиме киоска владельца устройств Android виртуальный тип кнопки домашней страницы на домашнем экране.
 
@@ -24,8 +26,8 @@ ms.locfileid: "36336593"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен; Это значение игнорируется.|
-|свипеуп|1,1|Кнопка "Прокрутка на домашнюю страницу".|
-|чисел|2|Кнопка "Плавающая Домашняя страница".|
+|свипеуп|1 |Кнопка "Прокрутка на домашнюю страницу".|
+|чисел|2 |Кнопка "Плавающая Домашняя страница".|
 
 
 
