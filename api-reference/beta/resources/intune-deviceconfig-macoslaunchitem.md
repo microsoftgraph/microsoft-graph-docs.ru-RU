@@ -5,32 +5,34 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0d1d9f2e2f17deeca2267bcc0397d4cfc7d650a7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: dbdec2156c135544a6ce36887fcd7c911217dff5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36321927"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529682"
 ---
-# <a name="macoslaunchitem-resource-type"></a><span data-ttu-id="71a20-103">Тип ресурса Макослаунчитем</span><span class="sxs-lookup"><span data-stu-id="71a20-103">macOSLaunchItem resource type</span></span>
+# <a name="macoslaunchitem-resource-type"></a><span data-ttu-id="3d9e7-103">Тип ресурса Макослаунчитем</span><span class="sxs-lookup"><span data-stu-id="3d9e7-103">macOSLaunchItem resource type</span></span>
 
-> <span data-ttu-id="71a20-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="71a20-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="3d9e7-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="3d9e7-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="71a20-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="71a20-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="3d9e7-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3d9e7-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="71a20-106">Представляет приложение в списке элементов запуска macOS</span><span class="sxs-lookup"><span data-stu-id="71a20-106">Represents an app in the list of macOS launch items</span></span>
+> <span data-ttu-id="3d9e7-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="3d9e7-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="71a20-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="71a20-107">Properties</span></span>
-|<span data-ttu-id="71a20-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="71a20-108">Property</span></span>|<span data-ttu-id="71a20-109">Тип</span><span class="sxs-lookup"><span data-stu-id="71a20-109">Type</span></span>|<span data-ttu-id="71a20-110">Описание</span><span class="sxs-lookup"><span data-stu-id="71a20-110">Description</span></span>|
+<span data-ttu-id="3d9e7-107">Представляет приложение в списке элементов запуска macOS</span><span class="sxs-lookup"><span data-stu-id="3d9e7-107">Represents an app in the list of macOS launch items</span></span>
+
+## <a name="properties"></a><span data-ttu-id="3d9e7-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="3d9e7-108">Properties</span></span>
+|<span data-ttu-id="3d9e7-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="3d9e7-109">Property</span></span>|<span data-ttu-id="3d9e7-110">Тип</span><span class="sxs-lookup"><span data-stu-id="3d9e7-110">Type</span></span>|<span data-ttu-id="3d9e7-111">Описание</span><span class="sxs-lookup"><span data-stu-id="3d9e7-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="71a20-111">path</span><span class="sxs-lookup"><span data-stu-id="71a20-111">path</span></span>|<span data-ttu-id="71a20-112">String</span><span class="sxs-lookup"><span data-stu-id="71a20-112">String</span></span>|<span data-ttu-id="71a20-113">Путь к запускаемому элементу.</span><span class="sxs-lookup"><span data-stu-id="71a20-113">Path to the launch item.</span></span>|
-|<span data-ttu-id="71a20-114">скрытых</span><span class="sxs-lookup"><span data-stu-id="71a20-114">hide</span></span>|<span data-ttu-id="71a20-115">Boolean</span><span class="sxs-lookup"><span data-stu-id="71a20-115">Boolean</span></span>|<span data-ttu-id="71a20-116">Указывает, следует ли скрыть элемент в списке "пользователи и группы".</span><span class="sxs-lookup"><span data-stu-id="71a20-116">Whether or not to hide the item from the Users and Groups List.</span></span>|
+|<span data-ttu-id="3d9e7-112">path</span><span class="sxs-lookup"><span data-stu-id="3d9e7-112">path</span></span>|<span data-ttu-id="3d9e7-113">String</span><span class="sxs-lookup"><span data-stu-id="3d9e7-113">String</span></span>|<span data-ttu-id="3d9e7-114">Путь к запускаемому элементу.</span><span class="sxs-lookup"><span data-stu-id="3d9e7-114">Path to the launch item.</span></span>|
+|<span data-ttu-id="3d9e7-115">скрытых</span><span class="sxs-lookup"><span data-stu-id="3d9e7-115">hide</span></span>|<span data-ttu-id="3d9e7-116">Логический</span><span class="sxs-lookup"><span data-stu-id="3d9e7-116">Boolean</span></span>|<span data-ttu-id="3d9e7-117">Указывает, следует ли скрыть элемент в списке "пользователи и группы".</span><span class="sxs-lookup"><span data-stu-id="3d9e7-117">Whether or not to hide the item from the Users and Groups List.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="71a20-117">Отношения</span><span class="sxs-lookup"><span data-stu-id="71a20-117">Relationships</span></span>
-<span data-ttu-id="71a20-118">Нет</span><span class="sxs-lookup"><span data-stu-id="71a20-118">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="3d9e7-118">Связи</span><span class="sxs-lookup"><span data-stu-id="3d9e7-118">Relationships</span></span>
+<span data-ttu-id="3d9e7-119">Нет</span><span class="sxs-lookup"><span data-stu-id="3d9e7-119">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="71a20-119">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="71a20-119">JSON Representation</span></span>
-<span data-ttu-id="71a20-120">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="71a20-120">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3d9e7-120">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="3d9e7-120">JSON Representation</span></span>
+<span data-ttu-id="3d9e7-121">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="3d9e7-121">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.macOSLaunchItem"

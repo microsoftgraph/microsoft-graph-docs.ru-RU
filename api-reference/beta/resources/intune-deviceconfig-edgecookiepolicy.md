@@ -5,28 +5,30 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c08748b271b56b2fcd0f7c0a7868d9c054ef794c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1379c7d484c68d0f691fc57bd72923b3928becdb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36332619"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530065"
 ---
-# <a name="edgecookiepolicy-enum-type"></a><span data-ttu-id="bb8ae-103">тип перечисления Еджекукиеполици</span><span class="sxs-lookup"><span data-stu-id="bb8ae-103">edgeCookiePolicy enum type</span></span>
+# <a name="edgecookiepolicy-enum-type"></a><span data-ttu-id="35acc-103">тип перечисления Еджекукиеполици</span><span class="sxs-lookup"><span data-stu-id="35acc-103">edgeCookiePolicy enum type</span></span>
 
-> <span data-ttu-id="bb8ae-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bb8ae-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="35acc-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="35acc-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="bb8ae-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="bb8ae-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="35acc-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="35acc-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="bb8ae-106">Возможные значения, указывающие, какие файлы cookie разрешено использовать в Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="bb8ae-106">Possible values to specify which cookies are allowed in Microsoft Edge.</span></span>
+> <span data-ttu-id="35acc-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="35acc-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="bb8ae-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="bb8ae-107">Members</span></span>
-|<span data-ttu-id="bb8ae-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="bb8ae-108">Member</span></span>|<span data-ttu-id="bb8ae-109">Значение</span><span class="sxs-lookup"><span data-stu-id="bb8ae-109">Value</span></span>|<span data-ttu-id="bb8ae-110">Описание</span><span class="sxs-lookup"><span data-stu-id="bb8ae-110">Description</span></span>|
+<span data-ttu-id="35acc-107">Возможные значения, указывающие, какие файлы cookie разрешено использовать в Microsoft Edge.</span><span class="sxs-lookup"><span data-stu-id="35acc-107">Possible values to specify which cookies are allowed in Microsoft Edge.</span></span>
+
+## <a name="members"></a><span data-ttu-id="35acc-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="35acc-108">Members</span></span>
+|<span data-ttu-id="35acc-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="35acc-109">Member</span></span>|<span data-ttu-id="35acc-110">Значение</span><span class="sxs-lookup"><span data-stu-id="35acc-110">Value</span></span>|<span data-ttu-id="35acc-111">Описание</span><span class="sxs-lookup"><span data-stu-id="35acc-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="bb8ae-111">UserDefined типа</span><span class="sxs-lookup"><span data-stu-id="bb8ae-111">userDefined</span></span>|<span data-ttu-id="bb8ae-112">нуль</span><span class="sxs-lookup"><span data-stu-id="bb8ae-112">0</span></span>|<span data-ttu-id="bb8ae-113">Разрешить пользователю устанавливать.</span><span class="sxs-lookup"><span data-stu-id="bb8ae-113">Allow the user to set.</span></span>|
-|<span data-ttu-id="bb8ae-114">разрешить</span><span class="sxs-lookup"><span data-stu-id="bb8ae-114">allow</span></span>|<span data-ttu-id="bb8ae-115">1,1</span><span class="sxs-lookup"><span data-stu-id="bb8ae-115">1</span></span>|<span data-ttu-id="bb8ae-116">Разрешить.</span><span class="sxs-lookup"><span data-stu-id="bb8ae-116">Allow.</span></span>|
-|<span data-ttu-id="bb8ae-117">блокксирдпарти</span><span class="sxs-lookup"><span data-stu-id="bb8ae-117">blockThirdParty</span></span>|<span data-ttu-id="bb8ae-118">2</span><span class="sxs-lookup"><span data-stu-id="bb8ae-118">2</span></span>|<span data-ttu-id="bb8ae-119">Блокировать только сторонние файлы cookie.</span><span class="sxs-lookup"><span data-stu-id="bb8ae-119">Block only third party cookies.</span></span>|
-|<span data-ttu-id="bb8ae-120">блоккалл</span><span class="sxs-lookup"><span data-stu-id="bb8ae-120">blockAll</span></span>|<span data-ttu-id="bb8ae-121">4</span><span class="sxs-lookup"><span data-stu-id="bb8ae-121">3</span></span>|<span data-ttu-id="bb8ae-122">Блокировать все файлы cookie.</span><span class="sxs-lookup"><span data-stu-id="bb8ae-122">Block all cookies.</span></span>|
+|<span data-ttu-id="35acc-112">UserDefined типа</span><span class="sxs-lookup"><span data-stu-id="35acc-112">userDefined</span></span>|<span data-ttu-id="35acc-113">нуль</span><span class="sxs-lookup"><span data-stu-id="35acc-113">0</span></span>|<span data-ttu-id="35acc-114">Разрешить пользователю устанавливать.</span><span class="sxs-lookup"><span data-stu-id="35acc-114">Allow the user to set.</span></span>|
+|<span data-ttu-id="35acc-115">разрешить</span><span class="sxs-lookup"><span data-stu-id="35acc-115">allow</span></span>|<span data-ttu-id="35acc-116">1 </span><span class="sxs-lookup"><span data-stu-id="35acc-116">1</span></span>|<span data-ttu-id="35acc-117">Разрешить.</span><span class="sxs-lookup"><span data-stu-id="35acc-117">Allow.</span></span>|
+|<span data-ttu-id="35acc-118">блокксирдпарти</span><span class="sxs-lookup"><span data-stu-id="35acc-118">blockThirdParty</span></span>|<span data-ttu-id="35acc-119">2 </span><span class="sxs-lookup"><span data-stu-id="35acc-119">2</span></span>|<span data-ttu-id="35acc-120">Блокировать только сторонние файлы cookie.</span><span class="sxs-lookup"><span data-stu-id="35acc-120">Block only third party cookies.</span></span>|
+|<span data-ttu-id="35acc-121">блоккалл</span><span class="sxs-lookup"><span data-stu-id="35acc-121">blockAll</span></span>|<span data-ttu-id="35acc-122">3 </span><span class="sxs-lookup"><span data-stu-id="35acc-122">3</span></span>|<span data-ttu-id="35acc-123">Блокировать все файлы cookie.</span><span class="sxs-lookup"><span data-stu-id="35acc-123">Block all cookies.</span></span>|
 
 
 

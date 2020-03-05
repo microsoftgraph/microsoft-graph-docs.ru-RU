@@ -5,26 +5,28 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a12fd23ba22031241d3f716591ce029189b61409
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b4928f16d25da8a78d6c2c08641d32e3bc669ac7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36368109"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529452"
 ---
-# <a name="restrictedappsstate-enum-type"></a><span data-ttu-id="a827a-103">тип перечисления Рестриктедаппсстате</span><span class="sxs-lookup"><span data-stu-id="a827a-103">restrictedAppsState enum type</span></span>
+# <a name="restrictedappsstate-enum-type"></a><span data-ttu-id="92f0e-103">тип перечисления Рестриктедаппсстате</span><span class="sxs-lookup"><span data-stu-id="92f0e-103">restrictedAppsState enum type</span></span>
 
-> <span data-ttu-id="a827a-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a827a-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="92f0e-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="92f0e-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="a827a-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="a827a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="92f0e-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="92f0e-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="a827a-106">Состояние ограниченных приложений</span><span class="sxs-lookup"><span data-stu-id="a827a-106">Restricted apps state</span></span>
+> <span data-ttu-id="92f0e-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="92f0e-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="a827a-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="a827a-107">Members</span></span>
-|<span data-ttu-id="a827a-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="a827a-108">Member</span></span>|<span data-ttu-id="a827a-109">Значение</span><span class="sxs-lookup"><span data-stu-id="a827a-109">Value</span></span>|<span data-ttu-id="a827a-110">Описание</span><span class="sxs-lookup"><span data-stu-id="a827a-110">Description</span></span>|
+<span data-ttu-id="92f0e-107">Состояние ограниченных приложений</span><span class="sxs-lookup"><span data-stu-id="92f0e-107">Restricted apps state</span></span>
+
+## <a name="members"></a><span data-ttu-id="92f0e-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="92f0e-108">Members</span></span>
+|<span data-ttu-id="92f0e-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="92f0e-109">Member</span></span>|<span data-ttu-id="92f0e-110">Значение</span><span class="sxs-lookup"><span data-stu-id="92f0e-110">Value</span></span>|<span data-ttu-id="92f0e-111">Описание</span><span class="sxs-lookup"><span data-stu-id="92f0e-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a827a-111">прохибитедаппс</span><span class="sxs-lookup"><span data-stu-id="a827a-111">prohibitedApps</span></span>|<span data-ttu-id="a827a-112">нуль</span><span class="sxs-lookup"><span data-stu-id="a827a-112">0</span></span>|<span data-ttu-id="a827a-113">Запрещенные приложения</span><span class="sxs-lookup"><span data-stu-id="a827a-113">Prohibited apps</span></span>|
-|<span data-ttu-id="a827a-114">нотаппроведаппс</span><span class="sxs-lookup"><span data-stu-id="a827a-114">notApprovedApps</span></span>|<span data-ttu-id="a827a-115">1,1</span><span class="sxs-lookup"><span data-stu-id="a827a-115">1</span></span>|<span data-ttu-id="a827a-116">Неутвержденные приложения</span><span class="sxs-lookup"><span data-stu-id="a827a-116">Not approved apps</span></span>|
+|<span data-ttu-id="92f0e-112">прохибитедаппс</span><span class="sxs-lookup"><span data-stu-id="92f0e-112">prohibitedApps</span></span>|<span data-ttu-id="92f0e-113">нуль</span><span class="sxs-lookup"><span data-stu-id="92f0e-113">0</span></span>|<span data-ttu-id="92f0e-114">Запрещенные приложения</span><span class="sxs-lookup"><span data-stu-id="92f0e-114">Prohibited apps</span></span>|
+|<span data-ttu-id="92f0e-115">нотаппроведаппс</span><span class="sxs-lookup"><span data-stu-id="92f0e-115">notApprovedApps</span></span>|<span data-ttu-id="92f0e-116">1 </span><span class="sxs-lookup"><span data-stu-id="92f0e-116">1</span></span>|<span data-ttu-id="92f0e-117">Неутвержденные приложения</span><span class="sxs-lookup"><span data-stu-id="92f0e-117">Not approved apps</span></span>|
 
 
 

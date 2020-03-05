@@ -1,0 +1,53 @@
+---
+title: Тип ресурса Кэйстрингвалуепаир
+description: Значение типа "ключ — значение" со строковым ключом и строковым значением.
+author: rolyon
+localization_priority: Normal
+ms.prod: Intune
+doc_type: resourcePageType
+ms.openlocfilehash: 7ad2380d84a329d2bfaf9359128944e90a90c393
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529779"
+---
+# <a name="keystringvaluepair-resource-type"></a><span data-ttu-id="0f13d-103">Тип ресурса Кэйстрингвалуепаир</span><span class="sxs-lookup"><span data-stu-id="0f13d-103">keyStringValuePair resource type</span></span>
+
+<span data-ttu-id="0f13d-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="0f13d-104">Namespace: microsoft.graph</span></span>
+
+> <span data-ttu-id="0f13d-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0f13d-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+
+> <span data-ttu-id="0f13d-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="0f13d-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+
+<span data-ttu-id="0f13d-107">Значение типа "ключ — значение" со строковым ключом и строковым значением.</span><span class="sxs-lookup"><span data-stu-id="0f13d-107">A key-value pair with a string key and a string value.</span></span>
+
+
+<span data-ttu-id="0f13d-108">Наследуется от [кэйтипедвалуепаир](../resources/intune-deviceconfig-keytypedvaluepair.md)</span><span class="sxs-lookup"><span data-stu-id="0f13d-108">Inherits from [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)</span></span>
+
+## <a name="properties"></a><span data-ttu-id="0f13d-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="0f13d-109">Properties</span></span>
+|<span data-ttu-id="0f13d-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="0f13d-110">Property</span></span>|<span data-ttu-id="0f13d-111">Тип</span><span class="sxs-lookup"><span data-stu-id="0f13d-111">Type</span></span>|<span data-ttu-id="0f13d-112">Описание</span><span class="sxs-lookup"><span data-stu-id="0f13d-112">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="0f13d-113">key</span><span class="sxs-lookup"><span data-stu-id="0f13d-113">key</span></span>|<span data-ttu-id="0f13d-114">String</span><span class="sxs-lookup"><span data-stu-id="0f13d-114">String</span></span>|<span data-ttu-id="0f13d-115">Строковый ключ для типа "ключ — значение".</span><span class="sxs-lookup"><span data-stu-id="0f13d-115">The string key of the key-value pair.</span></span> <span data-ttu-id="0f13d-116">Наследуется от [кэйтипедвалуепаир](../resources/intune-deviceconfig-keytypedvaluepair.md)</span><span class="sxs-lookup"><span data-stu-id="0f13d-116">Inherited from [keyTypedValuePair](../resources/intune-deviceconfig-keytypedvaluepair.md)</span></span>|
+|<span data-ttu-id="0f13d-117">value</span><span class="sxs-lookup"><span data-stu-id="0f13d-117">value</span></span>|<span data-ttu-id="0f13d-118">String</span><span class="sxs-lookup"><span data-stu-id="0f13d-118">String</span></span>|<span data-ttu-id="0f13d-119">Строковое значение для параметра "ключ — значение".</span><span class="sxs-lookup"><span data-stu-id="0f13d-119">The string value of the key-value pair.</span></span>|
+
+## <a name="relationships"></a><span data-ttu-id="0f13d-120">Связи</span><span class="sxs-lookup"><span data-stu-id="0f13d-120">Relationships</span></span>
+<span data-ttu-id="0f13d-121">Нет</span><span class="sxs-lookup"><span data-stu-id="0f13d-121">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="0f13d-122">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="0f13d-122">JSON Representation</span></span>
+<span data-ttu-id="0f13d-123">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0f13d-123">Here is a JSON representation of the resource.</span></span>
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.keyStringValuePair"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.keyStringValuePair",
+  "key": "String",
+  "value": "String"
+}
+```
+
+
+

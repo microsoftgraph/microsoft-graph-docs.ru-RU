@@ -5,29 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: dba073db7bf9cfb948fa5f3c76ce4294f1ee51f6
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 07ce6969c79581ed33b3a34d75445f7bf5612598
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36333893"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527074"
 ---
-# <a name="applockerapplicationcontroltype-enum-type"></a><span data-ttu-id="3cc4b-103">тип перечисления Апплоккераппликатионконтролтипе</span><span class="sxs-lookup"><span data-stu-id="3cc4b-103">appLockerApplicationControlType enum type</span></span>
+# <a name="applockerapplicationcontroltype-enum-type"></a><span data-ttu-id="4f17d-103">тип перечисления Апплоккераппликатионконтролтипе</span><span class="sxs-lookup"><span data-stu-id="4f17d-103">appLockerApplicationControlType enum type</span></span>
 
-> <span data-ttu-id="3cc4b-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3cc4b-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="4f17d-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="4f17d-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="3cc4b-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="3cc4b-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="4f17d-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4f17d-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="3cc4b-106">Возможные значения типов элементов управления приложения AppLocker</span><span class="sxs-lookup"><span data-stu-id="3cc4b-106">Possible values of AppLocker Application Control Types</span></span>
+> <span data-ttu-id="4f17d-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="4f17d-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="3cc4b-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="3cc4b-107">Members</span></span>
-|<span data-ttu-id="3cc4b-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="3cc4b-108">Member</span></span>|<span data-ttu-id="3cc4b-109">Значение</span><span class="sxs-lookup"><span data-stu-id="3cc4b-109">Value</span></span>|<span data-ttu-id="3cc4b-110">Описание</span><span class="sxs-lookup"><span data-stu-id="3cc4b-110">Description</span></span>|
+<span data-ttu-id="4f17d-107">Возможные значения типов элементов управления приложения AppLocker</span><span class="sxs-lookup"><span data-stu-id="4f17d-107">Possible values of AppLocker Application Control Types</span></span>
+
+## <a name="members"></a><span data-ttu-id="4f17d-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="4f17d-108">Members</span></span>
+|<span data-ttu-id="4f17d-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="4f17d-109">Member</span></span>|<span data-ttu-id="4f17d-110">Значение</span><span class="sxs-lookup"><span data-stu-id="4f17d-110">Value</span></span>|<span data-ttu-id="4f17d-111">Описание</span><span class="sxs-lookup"><span data-stu-id="4f17d-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="3cc4b-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="3cc4b-111">notConfigured</span></span>|<span data-ttu-id="3cc4b-112">нуль</span><span class="sxs-lookup"><span data-stu-id="3cc4b-112">0</span></span>|<span data-ttu-id="3cc4b-113">Значение по умолчанию для устройства, тип элемента управления приложения не выбран.</span><span class="sxs-lookup"><span data-stu-id="3cc4b-113">Device default value, no Application Control type selected.</span></span>|
-|<span data-ttu-id="3cc4b-114">енфорцекомпонентсандстореаппс</span><span class="sxs-lookup"><span data-stu-id="3cc4b-114">enforceComponentsAndStoreApps</span></span>|<span data-ttu-id="3cc4b-115">1,1</span><span class="sxs-lookup"><span data-stu-id="3cc4b-115">1</span></span>|<span data-ttu-id="3cc4b-116">Принудительное применение компонентов Windows и сохранение приложений.</span><span class="sxs-lookup"><span data-stu-id="3cc4b-116">Enforce Windows component and store apps.</span></span>|
-|<span data-ttu-id="3cc4b-117">аудиткомпонентсандстореаппс</span><span class="sxs-lookup"><span data-stu-id="3cc4b-117">auditComponentsAndStoreApps</span></span>|<span data-ttu-id="3cc4b-118">2</span><span class="sxs-lookup"><span data-stu-id="3cc4b-118">2</span></span>|<span data-ttu-id="3cc4b-119">Аудит компонентов Windows и хранение приложений.</span><span class="sxs-lookup"><span data-stu-id="3cc4b-119">Audit Windows component and store apps.</span></span>|
-|<span data-ttu-id="3cc4b-120">енфорцекомпонентсстореаппсандсмартлоккер</span><span class="sxs-lookup"><span data-stu-id="3cc4b-120">enforceComponentsStoreAppsAndSmartlocker</span></span>|<span data-ttu-id="3cc4b-121">4</span><span class="sxs-lookup"><span data-stu-id="3cc4b-121">3</span></span>|<span data-ttu-id="3cc4b-122">Принудительное применение компонентов Windows, хранение приложений и интеллектуальных блокировок.</span><span class="sxs-lookup"><span data-stu-id="3cc4b-122">Enforce Windows components, store apps and smart locker.</span></span>|
-|<span data-ttu-id="3cc4b-123">аудиткомпонентсстореаппсандсмартлоккер</span><span class="sxs-lookup"><span data-stu-id="3cc4b-123">auditComponentsStoreAppsAndSmartlocker</span></span>|<span data-ttu-id="3cc4b-124">SP4</span><span class="sxs-lookup"><span data-stu-id="3cc4b-124">4</span></span>|<span data-ttu-id="3cc4b-125">Аудит компонентов Windows, хранение приложений и интеллектуальных блокировок.</span><span class="sxs-lookup"><span data-stu-id="3cc4b-125">Audit Windows components, store apps and smart locker.</span></span>|
+|<span data-ttu-id="4f17d-112">notConfigured</span><span class="sxs-lookup"><span data-stu-id="4f17d-112">notConfigured</span></span>|<span data-ttu-id="4f17d-113">нуль</span><span class="sxs-lookup"><span data-stu-id="4f17d-113">0</span></span>|<span data-ttu-id="4f17d-114">Значение по умолчанию для устройства, тип элемента управления приложения не выбран.</span><span class="sxs-lookup"><span data-stu-id="4f17d-114">Device default value, no Application Control type selected.</span></span>|
+|<span data-ttu-id="4f17d-115">енфорцекомпонентсандстореаппс</span><span class="sxs-lookup"><span data-stu-id="4f17d-115">enforceComponentsAndStoreApps</span></span>|<span data-ttu-id="4f17d-116">1 </span><span class="sxs-lookup"><span data-stu-id="4f17d-116">1</span></span>|<span data-ttu-id="4f17d-117">Принудительное применение компонентов Windows и сохранение приложений.</span><span class="sxs-lookup"><span data-stu-id="4f17d-117">Enforce Windows component and store apps.</span></span>|
+|<span data-ttu-id="4f17d-118">аудиткомпонентсандстореаппс</span><span class="sxs-lookup"><span data-stu-id="4f17d-118">auditComponentsAndStoreApps</span></span>|<span data-ttu-id="4f17d-119">2 </span><span class="sxs-lookup"><span data-stu-id="4f17d-119">2</span></span>|<span data-ttu-id="4f17d-120">Аудит компонентов Windows и хранение приложений.</span><span class="sxs-lookup"><span data-stu-id="4f17d-120">Audit Windows component and store apps.</span></span>|
+|<span data-ttu-id="4f17d-121">енфорцекомпонентсстореаппсандсмартлоккер</span><span class="sxs-lookup"><span data-stu-id="4f17d-121">enforceComponentsStoreAppsAndSmartlocker</span></span>|<span data-ttu-id="4f17d-122">3 </span><span class="sxs-lookup"><span data-stu-id="4f17d-122">3</span></span>|<span data-ttu-id="4f17d-123">Принудительное применение компонентов Windows, хранение приложений и интеллектуальных блокировок.</span><span class="sxs-lookup"><span data-stu-id="4f17d-123">Enforce Windows components, store apps and smart locker.</span></span>|
+|<span data-ttu-id="4f17d-124">аудиткомпонентсстореаппсандсмартлоккер</span><span class="sxs-lookup"><span data-stu-id="4f17d-124">auditComponentsStoreAppsAndSmartlocker</span></span>|<span data-ttu-id="4f17d-125">4 </span><span class="sxs-lookup"><span data-stu-id="4f17d-125">4</span></span>|<span data-ttu-id="4f17d-126">Аудит компонентов Windows, хранение приложений и интеллектуальных блокировок.</span><span class="sxs-lookup"><span data-stu-id="4f17d-126">Audit Windows components, store apps and smart locker.</span></span>|
 
 
 

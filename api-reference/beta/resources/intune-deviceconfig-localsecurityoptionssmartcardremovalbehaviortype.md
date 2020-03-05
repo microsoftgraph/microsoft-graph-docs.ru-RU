@@ -5,28 +5,30 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1315f7664b5966d276127bcdfabf9efc21b55355
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 653a0e7bef7355c432297613bfa88a82a467c863
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36356671"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529743"
 ---
-# <a name="localsecurityoptionssmartcardremovalbehaviortype-enum-type"></a><span data-ttu-id="6c219-103">тип перечисления Локалсекуритйоптионссмарткардремовалбехавиортипе</span><span class="sxs-lookup"><span data-stu-id="6c219-103">localSecurityOptionsSmartCardRemovalBehaviorType enum type</span></span>
+# <a name="localsecurityoptionssmartcardremovalbehaviortype-enum-type"></a><span data-ttu-id="f9168-103">тип перечисления Локалсекуритйоптионссмарткардремовалбехавиортипе</span><span class="sxs-lookup"><span data-stu-id="f9168-103">localSecurityOptionsSmartCardRemovalBehaviorType enum type</span></span>
 
-> <span data-ttu-id="6c219-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6c219-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="f9168-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="f9168-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="6c219-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="6c219-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="f9168-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f9168-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="6c219-106">Возможные значения для Локалсекуритйоптионссмарткардремовалбехавиортипе</span><span class="sxs-lookup"><span data-stu-id="6c219-106">Possible values for LocalSecurityOptionsSmartCardRemovalBehaviorType</span></span>
+> <span data-ttu-id="f9168-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="f9168-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="6c219-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="6c219-107">Members</span></span>
-|<span data-ttu-id="6c219-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="6c219-108">Member</span></span>|<span data-ttu-id="6c219-109">Значение</span><span class="sxs-lookup"><span data-stu-id="6c219-109">Value</span></span>|<span data-ttu-id="6c219-110">Описание</span><span class="sxs-lookup"><span data-stu-id="6c219-110">Description</span></span>|
+<span data-ttu-id="f9168-107">Возможные значения для Локалсекуритйоптионссмарткардремовалбехавиортипе</span><span class="sxs-lookup"><span data-stu-id="f9168-107">Possible values for LocalSecurityOptionsSmartCardRemovalBehaviorType</span></span>
+
+## <a name="members"></a><span data-ttu-id="f9168-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="f9168-108">Members</span></span>
+|<span data-ttu-id="f9168-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="f9168-109">Member</span></span>|<span data-ttu-id="f9168-110">Значение</span><span class="sxs-lookup"><span data-stu-id="f9168-110">Value</span></span>|<span data-ttu-id="f9168-111">Описание</span><span class="sxs-lookup"><span data-stu-id="f9168-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="6c219-111">локкворкстатион</span><span class="sxs-lookup"><span data-stu-id="6c219-111">lockWorkstation</span></span>|<span data-ttu-id="6c219-112">нуль</span><span class="sxs-lookup"><span data-stu-id="6c219-112">0</span></span>|<span data-ttu-id="6c219-113">Без действий</span><span class="sxs-lookup"><span data-stu-id="6c219-113">No Action</span></span>|
-|<span data-ttu-id="6c219-114">noAction</span><span class="sxs-lookup"><span data-stu-id="6c219-114">noAction</span></span>|<span data-ttu-id="6c219-115">1,1</span><span class="sxs-lookup"><span data-stu-id="6c219-115">1</span></span>|<span data-ttu-id="6c219-116">Блокировка рабочей станции</span><span class="sxs-lookup"><span data-stu-id="6c219-116">Lock Workstation</span></span>|
-|<span data-ttu-id="6c219-117">форцелогофф</span><span class="sxs-lookup"><span data-stu-id="6c219-117">forceLogoff</span></span>|<span data-ttu-id="6c219-118">2</span><span class="sxs-lookup"><span data-stu-id="6c219-118">2</span></span>|<span data-ttu-id="6c219-119">Принудительный выход</span><span class="sxs-lookup"><span data-stu-id="6c219-119">Force Logoff</span></span>|
-|<span data-ttu-id="6c219-120">дисконнектремотедесктопсессион</span><span class="sxs-lookup"><span data-stu-id="6c219-120">disconnectRemoteDesktopSession</span></span>|<span data-ttu-id="6c219-121">4</span><span class="sxs-lookup"><span data-stu-id="6c219-121">3</span></span>|<span data-ttu-id="6c219-122">Отключение при удаленном сеансе служб удаленных рабочих столов</span><span class="sxs-lookup"><span data-stu-id="6c219-122">Disconnect if a remote Remote Desktop Services session</span></span>|
+|<span data-ttu-id="f9168-112">локкворкстатион</span><span class="sxs-lookup"><span data-stu-id="f9168-112">lockWorkstation</span></span>|<span data-ttu-id="f9168-113">нуль</span><span class="sxs-lookup"><span data-stu-id="f9168-113">0</span></span>|<span data-ttu-id="f9168-114">Без действий</span><span class="sxs-lookup"><span data-stu-id="f9168-114">No Action</span></span>|
+|<span data-ttu-id="f9168-115">noAction</span><span class="sxs-lookup"><span data-stu-id="f9168-115">noAction</span></span>|<span data-ttu-id="f9168-116">1 </span><span class="sxs-lookup"><span data-stu-id="f9168-116">1</span></span>|<span data-ttu-id="f9168-117">Блокировка рабочей станции</span><span class="sxs-lookup"><span data-stu-id="f9168-117">Lock Workstation</span></span>|
+|<span data-ttu-id="f9168-118">форцелогофф</span><span class="sxs-lookup"><span data-stu-id="f9168-118">forceLogoff</span></span>|<span data-ttu-id="f9168-119">2 </span><span class="sxs-lookup"><span data-stu-id="f9168-119">2</span></span>|<span data-ttu-id="f9168-120">Принудительный выход</span><span class="sxs-lookup"><span data-stu-id="f9168-120">Force Logoff</span></span>|
+|<span data-ttu-id="f9168-121">дисконнектремотедесктопсессион</span><span class="sxs-lookup"><span data-stu-id="f9168-121">disconnectRemoteDesktopSession</span></span>|<span data-ttu-id="f9168-122">3 </span><span class="sxs-lookup"><span data-stu-id="f9168-122">3</span></span>|<span data-ttu-id="f9168-123">Отключение при удаленном сеансе служб удаленных рабочих столов</span><span class="sxs-lookup"><span data-stu-id="f9168-123">Disconnect if a remote Remote Desktop Services session</span></span>|
 
 
 

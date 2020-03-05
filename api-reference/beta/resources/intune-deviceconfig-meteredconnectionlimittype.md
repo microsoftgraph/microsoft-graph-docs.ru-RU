@@ -5,27 +5,29 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b75f39befaf2aca569cfa19df9803431e780356c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ae979859b9e6802e91602c96e42cafb1104f6eeb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36368657"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42526015"
 ---
-# <a name="meteredconnectionlimittype-enum-type"></a><span data-ttu-id="a8365-103">тип перечисления Метередконнектионлимиттипе</span><span class="sxs-lookup"><span data-stu-id="a8365-103">meteredConnectionLimitType enum type</span></span>
+# <a name="meteredconnectionlimittype-enum-type"></a><span data-ttu-id="bb980-103">тип перечисления Метередконнектионлимиттипе</span><span class="sxs-lookup"><span data-stu-id="bb980-103">meteredConnectionLimitType enum type</span></span>
 
-> <span data-ttu-id="a8365-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a8365-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="bb980-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="bb980-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="a8365-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="a8365-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="bb980-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bb980-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="a8365-106">Параметры ограничения лимитного подключения.</span><span class="sxs-lookup"><span data-stu-id="a8365-106">Metered Connection Limit Settings.</span></span>
+> <span data-ttu-id="bb980-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="bb980-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="a8365-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="a8365-107">Members</span></span>
-|<span data-ttu-id="a8365-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="a8365-108">Member</span></span>|<span data-ttu-id="a8365-109">Значение</span><span class="sxs-lookup"><span data-stu-id="a8365-109">Value</span></span>|<span data-ttu-id="a8365-110">Описание</span><span class="sxs-lookup"><span data-stu-id="a8365-110">Description</span></span>|
+<span data-ttu-id="bb980-107">Параметры ограничения лимитного подключения.</span><span class="sxs-lookup"><span data-stu-id="bb980-107">Metered Connection Limit Settings.</span></span>
+
+## <a name="members"></a><span data-ttu-id="bb980-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="bb980-108">Members</span></span>
+|<span data-ttu-id="bb980-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="bb980-109">Member</span></span>|<span data-ttu-id="bb980-110">Значение</span><span class="sxs-lookup"><span data-stu-id="bb980-110">Value</span></span>|<span data-ttu-id="bb980-111">Описание</span><span class="sxs-lookup"><span data-stu-id="bb980-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a8365-111">unrestricted</span><span class="sxs-lookup"><span data-stu-id="a8365-111">unrestricted</span></span>|<span data-ttu-id="a8365-112">нуль</span><span class="sxs-lookup"><span data-stu-id="a8365-112">0</span></span>|<span data-ttu-id="a8365-113">Unrestricted</span><span class="sxs-lookup"><span data-stu-id="a8365-113">Unrestricted</span></span>|
-|<span data-ttu-id="a8365-114">стандарт</span><span class="sxs-lookup"><span data-stu-id="a8365-114">fixed</span></span>|<span data-ttu-id="a8365-115">1,1</span><span class="sxs-lookup"><span data-stu-id="a8365-115">1</span></span>|<span data-ttu-id="a8365-116">ИСПРАВЛЕНО</span><span class="sxs-lookup"><span data-stu-id="a8365-116">Fixed</span></span>|
-|<span data-ttu-id="a8365-117">переменная</span><span class="sxs-lookup"><span data-stu-id="a8365-117">variable</span></span>|<span data-ttu-id="a8365-118">2</span><span class="sxs-lookup"><span data-stu-id="a8365-118">2</span></span>|<span data-ttu-id="a8365-119">Переменная</span><span class="sxs-lookup"><span data-stu-id="a8365-119">Variable</span></span>|
+|<span data-ttu-id="bb980-112">unrestricted</span><span class="sxs-lookup"><span data-stu-id="bb980-112">unrestricted</span></span>|<span data-ttu-id="bb980-113">нуль</span><span class="sxs-lookup"><span data-stu-id="bb980-113">0</span></span>|<span data-ttu-id="bb980-114">Unrestricted</span><span class="sxs-lookup"><span data-stu-id="bb980-114">Unrestricted</span></span>|
+|<span data-ttu-id="bb980-115">стандарт</span><span class="sxs-lookup"><span data-stu-id="bb980-115">fixed</span></span>|<span data-ttu-id="bb980-116">1 </span><span class="sxs-lookup"><span data-stu-id="bb980-116">1</span></span>|<span data-ttu-id="bb980-117">ИСПРАВЛЕНО</span><span class="sxs-lookup"><span data-stu-id="bb980-117">Fixed</span></span>|
+|<span data-ttu-id="bb980-118">переменная</span><span class="sxs-lookup"><span data-stu-id="bb980-118">variable</span></span>|<span data-ttu-id="bb980-119">2 </span><span class="sxs-lookup"><span data-stu-id="bb980-119">2</span></span>|<span data-ttu-id="bb980-120">Переменная</span><span class="sxs-lookup"><span data-stu-id="bb980-120">Variable</span></span>|
 
 
 

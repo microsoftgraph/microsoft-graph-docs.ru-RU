@@ -5,32 +5,34 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 10070c62f7877b5a26cadc89afbcede55f668113
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b2da5f800d719558e0ba3990fbb7efb7b9280176
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36368725"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529620"
 ---
-# <a name="mediacontentratingireland-resource-type"></a><span data-ttu-id="57393-103">Тип ресурса mediaContentRatingIreland</span><span class="sxs-lookup"><span data-stu-id="57393-103">mediaContentRatingIreland resource type</span></span>
+# <a name="mediacontentratingireland-resource-type"></a><span data-ttu-id="949ce-103">Тип ресурса mediaContentRatingIreland</span><span class="sxs-lookup"><span data-stu-id="949ce-103">mediaContentRatingIreland resource type</span></span>
 
-> <span data-ttu-id="57393-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="57393-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="949ce-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="949ce-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="57393-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="57393-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="949ce-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="949ce-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="57393-106">Н/Д</span><span class="sxs-lookup"><span data-stu-id="57393-106">Not yet documented</span></span>
+> <span data-ttu-id="949ce-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="949ce-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="57393-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="57393-107">Properties</span></span>
-|<span data-ttu-id="57393-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="57393-108">Property</span></span>|<span data-ttu-id="57393-109">Тип</span><span class="sxs-lookup"><span data-stu-id="57393-109">Type</span></span>|<span data-ttu-id="57393-110">Описание</span><span class="sxs-lookup"><span data-stu-id="57393-110">Description</span></span>|
+<span data-ttu-id="949ce-107">Н/Д</span><span class="sxs-lookup"><span data-stu-id="949ce-107">Not yet documented</span></span>
+
+## <a name="properties"></a><span data-ttu-id="949ce-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="949ce-108">Properties</span></span>
+|<span data-ttu-id="949ce-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="949ce-109">Property</span></span>|<span data-ttu-id="949ce-110">Тип</span><span class="sxs-lookup"><span data-stu-id="949ce-110">Type</span></span>|<span data-ttu-id="949ce-111">Описание</span><span class="sxs-lookup"><span data-stu-id="949ce-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="57393-111">movieRating</span><span class="sxs-lookup"><span data-stu-id="57393-111">movieRating</span></span>|[<span data-ttu-id="57393-112">ратингиреландмовиестипе</span><span class="sxs-lookup"><span data-stu-id="57393-112">ratingIrelandMoviesType</span></span>](../resources/intune-deviceconfig-ratingirelandmoviestype.md)|<span data-ttu-id="57393-113">Оценка фильмов выбрана для Ирландии.</span><span class="sxs-lookup"><span data-stu-id="57393-113">Movies rating selected for Ireland.</span></span> <span data-ttu-id="57393-114">Возможные значения: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove12`, `agesAbove15`, `agesAbove16`, `adults`.</span><span class="sxs-lookup"><span data-stu-id="57393-114">Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove12`, `agesAbove15`, `agesAbove16`, `adults`.</span></span>|
-|<span data-ttu-id="57393-115">tvRating</span><span class="sxs-lookup"><span data-stu-id="57393-115">tvRating</span></span>|[<span data-ttu-id="57393-116">ратингиреландтелевисионтипе</span><span class="sxs-lookup"><span data-stu-id="57393-116">ratingIrelandTelevisionType</span></span>](../resources/intune-deviceconfig-ratingirelandtelevisiontype.md)|<span data-ttu-id="57393-117">Рейтинг телевизора выбран для Ирландии.</span><span class="sxs-lookup"><span data-stu-id="57393-117">TV rating selected for Ireland.</span></span> <span data-ttu-id="57393-118">Возможные значения: `allAllowed`, `allBlocked`, `general`, `children`, `youngAdults`, `parentalSupervision`, `mature`.</span><span class="sxs-lookup"><span data-stu-id="57393-118">Possible values are: `allAllowed`, `allBlocked`, `general`, `children`, `youngAdults`, `parentalSupervision`, `mature`.</span></span>|
+|<span data-ttu-id="949ce-112">movieRating</span><span class="sxs-lookup"><span data-stu-id="949ce-112">movieRating</span></span>|[<span data-ttu-id="949ce-113">ратингиреландмовиестипе</span><span class="sxs-lookup"><span data-stu-id="949ce-113">ratingIrelandMoviesType</span></span>](../resources/intune-deviceconfig-ratingirelandmoviestype.md)|<span data-ttu-id="949ce-114">Оценка фильмов выбрана для Ирландии.</span><span class="sxs-lookup"><span data-stu-id="949ce-114">Movies rating selected for Ireland.</span></span> <span data-ttu-id="949ce-115">Возможные значения: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove12`, `agesAbove15`, `agesAbove16`, `adults`.</span><span class="sxs-lookup"><span data-stu-id="949ce-115">Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove12`, `agesAbove15`, `agesAbove16`, `adults`.</span></span>|
+|<span data-ttu-id="949ce-116">tvRating</span><span class="sxs-lookup"><span data-stu-id="949ce-116">tvRating</span></span>|[<span data-ttu-id="949ce-117">ратингиреландтелевисионтипе</span><span class="sxs-lookup"><span data-stu-id="949ce-117">ratingIrelandTelevisionType</span></span>](../resources/intune-deviceconfig-ratingirelandtelevisiontype.md)|<span data-ttu-id="949ce-118">Рейтинг телевизора выбран для Ирландии.</span><span class="sxs-lookup"><span data-stu-id="949ce-118">TV rating selected for Ireland.</span></span> <span data-ttu-id="949ce-119">Возможные значения: `allAllowed`, `allBlocked`, `general`, `children`, `youngAdults`, `parentalSupervision`, `mature`.</span><span class="sxs-lookup"><span data-stu-id="949ce-119">Possible values are: `allAllowed`, `allBlocked`, `general`, `children`, `youngAdults`, `parentalSupervision`, `mature`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="57393-119">Отношения</span><span class="sxs-lookup"><span data-stu-id="57393-119">Relationships</span></span>
-<span data-ttu-id="57393-120">Нет</span><span class="sxs-lookup"><span data-stu-id="57393-120">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="949ce-120">Связи</span><span class="sxs-lookup"><span data-stu-id="949ce-120">Relationships</span></span>
+<span data-ttu-id="949ce-121">Нет</span><span class="sxs-lookup"><span data-stu-id="949ce-121">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="57393-121">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="57393-121">JSON Representation</span></span>
-<span data-ttu-id="57393-122">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="57393-122">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="949ce-122">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="949ce-122">JSON Representation</span></span>
+<span data-ttu-id="949ce-123">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="949ce-123">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mediaContentRatingIreland"

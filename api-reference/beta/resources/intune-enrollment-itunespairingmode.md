@@ -5,27 +5,29 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c4c5014b428ddc82f04a01c6fd852d7aa161d590
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 25517e4483a90a59753e58b866fdbf6fd11ebd1b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36327803"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528269"
 ---
-# <a name="itunespairingmode-enum-type"></a><span data-ttu-id="d2e7d-103">тип перечисления Итунеспаирингмоде</span><span class="sxs-lookup"><span data-stu-id="d2e7d-103">iTunesPairingMode enum type</span></span>
+# <a name="itunespairingmode-enum-type"></a><span data-ttu-id="8b404-103">тип перечисления Итунеспаирингмоде</span><span class="sxs-lookup"><span data-stu-id="8b404-103">iTunesPairingMode enum type</span></span>
 
-> <span data-ttu-id="d2e7d-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d2e7d-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="8b404-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="8b404-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="d2e7d-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="d2e7d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="8b404-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8b404-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="d2e7d-106">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="d2e7d-106">Not yet documented</span></span>
+> <span data-ttu-id="8b404-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="8b404-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="d2e7d-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="d2e7d-107">Members</span></span>
-|<span data-ttu-id="d2e7d-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="d2e7d-108">Member</span></span>|<span data-ttu-id="d2e7d-109">Значение</span><span class="sxs-lookup"><span data-stu-id="d2e7d-109">Value</span></span>|<span data-ttu-id="d2e7d-110">Описание</span><span class="sxs-lookup"><span data-stu-id="d2e7d-110">Description</span></span>|
+<span data-ttu-id="8b404-107">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="8b404-107">Not yet documented</span></span>
+
+## <a name="members"></a><span data-ttu-id="8b404-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="8b404-108">Members</span></span>
+|<span data-ttu-id="8b404-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="8b404-109">Member</span></span>|<span data-ttu-id="8b404-110">Значение</span><span class="sxs-lookup"><span data-stu-id="8b404-110">Value</span></span>|<span data-ttu-id="8b404-111">Описание</span><span class="sxs-lookup"><span data-stu-id="8b404-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d2e7d-111">Использование</span><span class="sxs-lookup"><span data-stu-id="d2e7d-111">disallow</span></span>|<span data-ttu-id="d2e7d-112">нуль</span><span class="sxs-lookup"><span data-stu-id="d2e7d-112">0</span></span>|<span data-ttu-id="d2e7d-113">Связывание запрещено</span><span class="sxs-lookup"><span data-stu-id="d2e7d-113">Pairing is not allowed</span></span>|
-|<span data-ttu-id="d2e7d-114">разрешить</span><span class="sxs-lookup"><span data-stu-id="d2e7d-114">allow</span></span>|<span data-ttu-id="d2e7d-115">1,1</span><span class="sxs-lookup"><span data-stu-id="d2e7d-115">1</span></span>|<span data-ttu-id="d2e7d-116">Связывание разрешено</span><span class="sxs-lookup"><span data-stu-id="d2e7d-116">Pairing allowed</span></span>|
-|<span data-ttu-id="d2e7d-117">рекуиресцертификате</span><span class="sxs-lookup"><span data-stu-id="d2e7d-117">requiresCertificate</span></span>|<span data-ttu-id="d2e7d-118">2</span><span class="sxs-lookup"><span data-stu-id="d2e7d-118">2</span></span>|<span data-ttu-id="d2e7d-119">Сертификат, необходимый для связывания с iTunes</span><span class="sxs-lookup"><span data-stu-id="d2e7d-119">Certificate required to pair with iTunes</span></span>|
+|<span data-ttu-id="8b404-112">Использование</span><span class="sxs-lookup"><span data-stu-id="8b404-112">disallow</span></span>|<span data-ttu-id="8b404-113">нуль</span><span class="sxs-lookup"><span data-stu-id="8b404-113">0</span></span>|<span data-ttu-id="8b404-114">Связывание запрещено</span><span class="sxs-lookup"><span data-stu-id="8b404-114">Pairing is not allowed</span></span>|
+|<span data-ttu-id="8b404-115">разрешить</span><span class="sxs-lookup"><span data-stu-id="8b404-115">allow</span></span>|<span data-ttu-id="8b404-116">1 </span><span class="sxs-lookup"><span data-stu-id="8b404-116">1</span></span>|<span data-ttu-id="8b404-117">Связывание разрешено</span><span class="sxs-lookup"><span data-stu-id="8b404-117">Pairing allowed</span></span>|
+|<span data-ttu-id="8b404-118">рекуиресцертификате</span><span class="sxs-lookup"><span data-stu-id="8b404-118">requiresCertificate</span></span>|<span data-ttu-id="8b404-119">2 </span><span class="sxs-lookup"><span data-stu-id="8b404-119">2</span></span>|<span data-ttu-id="8b404-120">Сертификат, необходимый для связывания с iTunes</span><span class="sxs-lookup"><span data-stu-id="8b404-120">Certificate required to pair with iTunes</span></span>|
 
 
 
