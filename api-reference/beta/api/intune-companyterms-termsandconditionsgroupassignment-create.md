@@ -5,31 +5,33 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 80cdecd3e4ab70d1a16179ff2aafc7ab383f7937
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: e57349fb95334fa204b4f5c33b4ae3a3e904b473
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39954099"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42444317"
 ---
-# <a name="create-termsandconditionsgroupassignment"></a><span data-ttu-id="d2c84-103">Создание Термсандкондитионсграупассигнмент</span><span class="sxs-lookup"><span data-stu-id="d2c84-103">Create termsAndConditionsGroupAssignment</span></span>
+# <a name="create-termsandconditionsgroupassignment"></a><span data-ttu-id="0112b-103">Создание Термсандкондитионсграупассигнмент</span><span class="sxs-lookup"><span data-stu-id="0112b-103">Create termsAndConditionsGroupAssignment</span></span>
 
-> <span data-ttu-id="d2c84-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d2c84-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="0112b-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="0112b-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="d2c84-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="d2c84-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="0112b-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0112b-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="d2c84-106">Создание нового объекта [термсандкондитионсграупассигнмент](../resources/intune-companyterms-termsandconditionsgroupassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="d2c84-106">Create a new [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) object.</span></span>
+> <span data-ttu-id="0112b-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="0112b-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="d2c84-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="d2c84-107">Prerequisites</span></span>
-<span data-ttu-id="d2c84-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d2c84-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0112b-107">Создание нового объекта [термсандкондитионсграупассигнмент](../resources/intune-companyterms-termsandconditionsgroupassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="0112b-107">Create a new [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) object.</span></span>
 
-|<span data-ttu-id="d2c84-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d2c84-110">Permission type</span></span>|<span data-ttu-id="d2c84-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="d2c84-111">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="0112b-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="0112b-108">Prerequisites</span></span>
+<span data-ttu-id="0112b-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0112b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="0112b-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0112b-111">Permission type</span></span>|<span data-ttu-id="0112b-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="0112b-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="d2c84-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d2c84-112">Delegated (work or school account)</span></span>|<span data-ttu-id="d2c84-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d2c84-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="d2c84-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d2c84-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d2c84-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d2c84-115">Not supported.</span></span>|
-|<span data-ttu-id="d2c84-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d2c84-116">Application</span></span>|<span data-ttu-id="d2c84-117">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d2c84-117">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="0112b-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0112b-113">Delegated (work or school account)</span></span>|<span data-ttu-id="0112b-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0112b-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="0112b-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0112b-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="0112b-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0112b-116">Not supported.</span></span>|
+|<span data-ttu-id="0112b-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="0112b-117">Application</span></span>|<span data-ttu-id="0112b-118">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0112b-118">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="d2c84-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d2c84-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0112b-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0112b-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,31 +40,31 @@ ms.locfileid: "39954099"
 POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignments
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d2c84-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="d2c84-119">Request headers</span></span>
-|<span data-ttu-id="d2c84-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="d2c84-120">Header</span></span>|<span data-ttu-id="d2c84-121">Значение</span><span class="sxs-lookup"><span data-stu-id="d2c84-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0112b-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="0112b-120">Request headers</span></span>
+|<span data-ttu-id="0112b-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="0112b-121">Header</span></span>|<span data-ttu-id="0112b-122">Значение</span><span class="sxs-lookup"><span data-stu-id="0112b-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="d2c84-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="d2c84-122">Authorization</span></span>|<span data-ttu-id="d2c84-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d2c84-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="d2c84-124">Accept</span><span class="sxs-lookup"><span data-stu-id="d2c84-124">Accept</span></span>|<span data-ttu-id="d2c84-125">application/json</span><span class="sxs-lookup"><span data-stu-id="d2c84-125">application/json</span></span>|
+|<span data-ttu-id="0112b-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="0112b-123">Authorization</span></span>|<span data-ttu-id="0112b-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="0112b-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="0112b-125">Accept</span><span class="sxs-lookup"><span data-stu-id="0112b-125">Accept</span></span>|<span data-ttu-id="0112b-126">application/json</span><span class="sxs-lookup"><span data-stu-id="0112b-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="d2c84-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="d2c84-126">Request body</span></span>
-<span data-ttu-id="d2c84-127">В тексте запроса добавьте представление объекта Термсандкондитионсграупассигнмент в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d2c84-127">In the request body, supply a JSON representation for the termsAndConditionsGroupAssignment object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0112b-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="0112b-127">Request body</span></span>
+<span data-ttu-id="0112b-128">В тексте запроса добавьте представление объекта Термсандкондитионсграупассигнмент в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0112b-128">In the request body, supply a JSON representation for the termsAndConditionsGroupAssignment object.</span></span>
 
-<span data-ttu-id="d2c84-128">В следующей таблице приведены свойства, необходимые при создании Термсандкондитионсграупассигнмент.</span><span class="sxs-lookup"><span data-stu-id="d2c84-128">The following table shows the properties that are required when you create the termsAndConditionsGroupAssignment.</span></span>
+<span data-ttu-id="0112b-129">В следующей таблице приведены свойства, необходимые при создании Термсандкондитионсграупассигнмент.</span><span class="sxs-lookup"><span data-stu-id="0112b-129">The following table shows the properties that are required when you create the termsAndConditionsGroupAssignment.</span></span>
 
-|<span data-ttu-id="d2c84-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="d2c84-129">Property</span></span>|<span data-ttu-id="d2c84-130">Тип</span><span class="sxs-lookup"><span data-stu-id="d2c84-130">Type</span></span>|<span data-ttu-id="d2c84-131">Описание</span><span class="sxs-lookup"><span data-stu-id="d2c84-131">Description</span></span>|
+|<span data-ttu-id="0112b-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="0112b-130">Property</span></span>|<span data-ttu-id="0112b-131">Тип</span><span class="sxs-lookup"><span data-stu-id="0112b-131">Type</span></span>|<span data-ttu-id="0112b-132">Описание</span><span class="sxs-lookup"><span data-stu-id="0112b-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d2c84-132">id</span><span class="sxs-lookup"><span data-stu-id="d2c84-132">id</span></span>|<span data-ttu-id="d2c84-133">Строка</span><span class="sxs-lookup"><span data-stu-id="d2c84-133">String</span></span>|<span data-ttu-id="d2c84-134">Уникальный идентификатор объекта.</span><span class="sxs-lookup"><span data-stu-id="d2c84-134">Unique identifier of the entity.</span></span>|
-|<span data-ttu-id="d2c84-135">таржетграупид</span><span class="sxs-lookup"><span data-stu-id="d2c84-135">targetGroupId</span></span>|<span data-ttu-id="d2c84-136">Строка</span><span class="sxs-lookup"><span data-stu-id="d2c84-136">String</span></span>|<span data-ttu-id="d2c84-137">Уникальный идентификатор группы, которой назначена политика T&C.</span><span class="sxs-lookup"><span data-stu-id="d2c84-137">Unique identifier of a group that the T&C policy is assigned to.</span></span>|
+|<span data-ttu-id="0112b-133">id</span><span class="sxs-lookup"><span data-stu-id="0112b-133">id</span></span>|<span data-ttu-id="0112b-134">String</span><span class="sxs-lookup"><span data-stu-id="0112b-134">String</span></span>|<span data-ttu-id="0112b-135">Уникальный идентификатор объекта.</span><span class="sxs-lookup"><span data-stu-id="0112b-135">Unique identifier of the entity.</span></span>|
+|<span data-ttu-id="0112b-136">таржетграупид</span><span class="sxs-lookup"><span data-stu-id="0112b-136">targetGroupId</span></span>|<span data-ttu-id="0112b-137">String</span><span class="sxs-lookup"><span data-stu-id="0112b-137">String</span></span>|<span data-ttu-id="0112b-138">Уникальный идентификатор группы, которой назначена политика T&C.</span><span class="sxs-lookup"><span data-stu-id="0112b-138">Unique identifier of a group that the T&C policy is assigned to.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="d2c84-138">Ответ</span><span class="sxs-lookup"><span data-stu-id="d2c84-138">Response</span></span>
-<span data-ttu-id="d2c84-139">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [термсандкондитионсграупассигнмент](../resources/intune-companyterms-termsandconditionsgroupassignment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="d2c84-139">If successful, this method returns a `201 Created` response code and a [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="0112b-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="0112b-139">Response</span></span>
+<span data-ttu-id="0112b-140">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [термсандкондитионсграупассигнмент](../resources/intune-companyterms-termsandconditionsgroupassignment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="0112b-140">If successful, this method returns a `201 Created` response code and a [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d2c84-140">Пример</span><span class="sxs-lookup"><span data-stu-id="d2c84-140">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0112b-141">Пример</span><span class="sxs-lookup"><span data-stu-id="0112b-141">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="d2c84-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="d2c84-141">Request</span></span>
-<span data-ttu-id="d2c84-142">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d2c84-142">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="0112b-142">Запрос</span><span class="sxs-lookup"><span data-stu-id="0112b-142">Request</span></span>
+<span data-ttu-id="0112b-143">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="0112b-143">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignments
 Content-type: application/json
@@ -74,8 +76,8 @@ Content-length: 120
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="d2c84-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="d2c84-143">Response</span></span>
-<span data-ttu-id="d2c84-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d2c84-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="0112b-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="0112b-144">Response</span></span>
+<span data-ttu-id="0112b-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="0112b-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

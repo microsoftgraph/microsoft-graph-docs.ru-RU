@@ -5,31 +5,33 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cdf842aa57cacc21c65b8b847ef729cb4445c8db
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 00de09750cdce4f9cdba16eda7830e0d03fc42f0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39922316"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42445941"
 ---
-# <a name="get-androidlobapp"></a><span data-ttu-id="ca7c4-103">Get androidLobApp</span><span class="sxs-lookup"><span data-stu-id="ca7c4-103">Get androidLobApp</span></span>
+# <a name="get-androidlobapp"></a><span data-ttu-id="f1250-103">Get androidLobApp</span><span class="sxs-lookup"><span data-stu-id="f1250-103">Get androidLobApp</span></span>
 
-> <span data-ttu-id="ca7c4-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ca7c4-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="f1250-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="f1250-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="ca7c4-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="ca7c4-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="f1250-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f1250-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="ca7c4-106">Чтение свойств и связей объекта [androidLobApp](../resources/intune-apps-androidlobapp.md).</span><span class="sxs-lookup"><span data-stu-id="ca7c4-106">Read properties and relationships of the [androidLobApp](../resources/intune-apps-androidlobapp.md) object.</span></span>
+> <span data-ttu-id="f1250-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="f1250-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="ca7c4-107">Необходимые разрешения</span><span class="sxs-lookup"><span data-stu-id="ca7c4-107">Prerequisites</span></span>
-<span data-ttu-id="ca7c4-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ca7c4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f1250-107">Чтение свойств и связей объекта [androidLobApp](../resources/intune-apps-androidlobapp.md).</span><span class="sxs-lookup"><span data-stu-id="f1250-107">Read properties and relationships of the [androidLobApp](../resources/intune-apps-androidlobapp.md) object.</span></span>
 
-|<span data-ttu-id="ca7c4-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ca7c4-110">Permission type</span></span>|<span data-ttu-id="ca7c4-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="ca7c4-111">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="f1250-108">Необходимые разрешения</span><span class="sxs-lookup"><span data-stu-id="f1250-108">Prerequisites</span></span>
+<span data-ttu-id="f1250-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f1250-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="f1250-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f1250-111">Permission type</span></span>|<span data-ttu-id="f1250-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="f1250-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="ca7c4-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ca7c4-112">Delegated (work or school account)</span></span>|<span data-ttu-id="ca7c4-113">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="ca7c4-113">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
-|<span data-ttu-id="ca7c4-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ca7c4-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ca7c4-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ca7c4-115">Not supported.</span></span>|
-|<span data-ttu-id="ca7c4-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ca7c4-116">Application</span></span>|<span data-ttu-id="ca7c4-117">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="ca7c4-117">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="f1250-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f1250-113">Delegated (work or school account)</span></span>|<span data-ttu-id="f1250-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="f1250-114">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="f1250-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f1250-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f1250-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f1250-116">Not supported.</span></span>|
+|<span data-ttu-id="f1250-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f1250-117">Application</span></span>|<span data-ttu-id="f1250-118">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="f1250-118">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="ca7c4-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ca7c4-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f1250-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f1250-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,31 +42,31 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallSt
 GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="ca7c4-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="ca7c4-119">Optional query parameters</span></span>
-<span data-ttu-id="ca7c4-120">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="ca7c4-120">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="f1250-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="f1250-120">Optional query parameters</span></span>
+<span data-ttu-id="f1250-121">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="f1250-121">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="ca7c4-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ca7c4-121">Request headers</span></span>
-|<span data-ttu-id="ca7c4-122">Заголовок</span><span class="sxs-lookup"><span data-stu-id="ca7c4-122">Header</span></span>|<span data-ttu-id="ca7c4-123">Значение</span><span class="sxs-lookup"><span data-stu-id="ca7c4-123">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f1250-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f1250-122">Request headers</span></span>
+|<span data-ttu-id="f1250-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="f1250-123">Header</span></span>|<span data-ttu-id="f1250-124">Значение</span><span class="sxs-lookup"><span data-stu-id="f1250-124">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="ca7c4-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ca7c4-124">Authorization</span></span>|<span data-ttu-id="ca7c4-125">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ca7c4-125">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="ca7c4-126">Accept</span><span class="sxs-lookup"><span data-stu-id="ca7c4-126">Accept</span></span>|<span data-ttu-id="ca7c4-127">application/json</span><span class="sxs-lookup"><span data-stu-id="ca7c4-127">application/json</span></span>|
+|<span data-ttu-id="f1250-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="f1250-125">Authorization</span></span>|<span data-ttu-id="f1250-126">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f1250-126">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="f1250-127">Accept</span><span class="sxs-lookup"><span data-stu-id="f1250-127">Accept</span></span>|<span data-ttu-id="f1250-128">application/json</span><span class="sxs-lookup"><span data-stu-id="f1250-128">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ca7c4-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="ca7c4-128">Request body</span></span>
-<span data-ttu-id="ca7c4-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="ca7c4-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f1250-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f1250-129">Request body</span></span>
+<span data-ttu-id="f1250-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="f1250-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ca7c4-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="ca7c4-130">Response</span></span>
-<span data-ttu-id="ca7c4-131">В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [androidLobApp](../resources/intune-apps-androidlobapp.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="ca7c4-131">If successful, this method returns a `200 OK` response code and [androidLobApp](../resources/intune-apps-androidlobapp.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f1250-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="f1250-131">Response</span></span>
+<span data-ttu-id="f1250-132">В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [androidLobApp](../resources/intune-apps-androidlobapp.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="f1250-132">If successful, this method returns a `200 OK` response code and [androidLobApp](../resources/intune-apps-androidlobapp.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ca7c4-132">Пример</span><span class="sxs-lookup"><span data-stu-id="ca7c4-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f1250-133">Пример</span><span class="sxs-lookup"><span data-stu-id="f1250-133">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="ca7c4-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="ca7c4-133">Request</span></span>
-<span data-ttu-id="ca7c4-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ca7c4-134">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="f1250-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="f1250-134">Request</span></span>
+<span data-ttu-id="f1250-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f1250-135">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
-### <a name="response"></a><span data-ttu-id="ca7c4-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="ca7c4-135">Response</span></span>
-<span data-ttu-id="ca7c4-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ca7c4-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="f1250-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="f1250-136">Response</span></span>
+<span data-ttu-id="f1250-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f1250-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
