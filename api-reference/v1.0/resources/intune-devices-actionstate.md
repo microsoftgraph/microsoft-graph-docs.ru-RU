@@ -5,29 +5,31 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4cd21f0ac93e59d551400e87886e5bc871fd55c9
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: e11fc186dcfe16005e3ceaab5c6306f5893a8598
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37357089"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42418169"
 ---
-# <a name="actionstate-enum-type"></a><span data-ttu-id="b92cc-103">тип перечисления actionState</span><span class="sxs-lookup"><span data-stu-id="b92cc-103">actionState enum type</span></span>
+# <a name="actionstate-enum-type"></a><span data-ttu-id="cac0c-103">тип перечисления actionState</span><span class="sxs-lookup"><span data-stu-id="cac0c-103">actionState enum type</span></span>
 
-> <span data-ttu-id="b92cc-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="b92cc-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="cac0c-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="cac0c-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="b92cc-105">Состояние действия на устройстве</span><span class="sxs-lookup"><span data-stu-id="b92cc-105">State of the action on the device</span></span>
+> <span data-ttu-id="cac0c-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="cac0c-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="b92cc-106">Элементы</span><span class="sxs-lookup"><span data-stu-id="b92cc-106">Members</span></span>
-|<span data-ttu-id="b92cc-107">Элемент</span><span class="sxs-lookup"><span data-stu-id="b92cc-107">Member</span></span>|<span data-ttu-id="b92cc-108">Значение</span><span class="sxs-lookup"><span data-stu-id="b92cc-108">Value</span></span>|<span data-ttu-id="b92cc-109">Описание</span><span class="sxs-lookup"><span data-stu-id="b92cc-109">Description</span></span>|
+<span data-ttu-id="cac0c-106">Состояние действия на устройстве</span><span class="sxs-lookup"><span data-stu-id="cac0c-106">State of the action on the device</span></span>
+
+## <a name="members"></a><span data-ttu-id="cac0c-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="cac0c-107">Members</span></span>
+|<span data-ttu-id="cac0c-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="cac0c-108">Member</span></span>|<span data-ttu-id="cac0c-109">Значение</span><span class="sxs-lookup"><span data-stu-id="cac0c-109">Value</span></span>|<span data-ttu-id="cac0c-110">Описание</span><span class="sxs-lookup"><span data-stu-id="cac0c-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b92cc-110">none</span><span class="sxs-lookup"><span data-stu-id="b92cc-110">none</span></span>|<span data-ttu-id="b92cc-111">нуль</span><span class="sxs-lookup"><span data-stu-id="b92cc-111">0</span></span>|<span data-ttu-id="b92cc-112">Недопустимое состояние действия</span><span class="sxs-lookup"><span data-stu-id="b92cc-112">Not a valid action state</span></span>|
-|<span data-ttu-id="b92cc-113">закончен</span><span class="sxs-lookup"><span data-stu-id="b92cc-113">pending</span></span>|<span data-ttu-id="b92cc-114">1,1</span><span class="sxs-lookup"><span data-stu-id="b92cc-114">1</span></span>|<span data-ttu-id="b92cc-115">Ожидается действие</span><span class="sxs-lookup"><span data-stu-id="b92cc-115">Action is pending</span></span>|
-|<span data-ttu-id="b92cc-116">закрыт</span><span class="sxs-lookup"><span data-stu-id="b92cc-116">canceled</span></span>|<span data-ttu-id="b92cc-117">2</span><span class="sxs-lookup"><span data-stu-id="b92cc-117">2</span></span>|<span data-ttu-id="b92cc-118">Действие отменено.</span><span class="sxs-lookup"><span data-stu-id="b92cc-118">Action has been cancelled.</span></span>|
-|<span data-ttu-id="b92cc-119">ASP</span><span class="sxs-lookup"><span data-stu-id="b92cc-119">active</span></span>|<span data-ttu-id="b92cc-120">4</span><span class="sxs-lookup"><span data-stu-id="b92cc-120">3</span></span>|<span data-ttu-id="b92cc-121">Действие активно.</span><span class="sxs-lookup"><span data-stu-id="b92cc-121">Action is active.</span></span>|
-|<span data-ttu-id="b92cc-122">done</span><span class="sxs-lookup"><span data-stu-id="b92cc-122">done</span></span>|<span data-ttu-id="b92cc-123">SP4</span><span class="sxs-lookup"><span data-stu-id="b92cc-123">4</span></span>|<span data-ttu-id="b92cc-124">Действие выполнено без ошибок.</span><span class="sxs-lookup"><span data-stu-id="b92cc-124">Action completed without errors.</span></span>|
-|<span data-ttu-id="b92cc-125">сбоев</span><span class="sxs-lookup"><span data-stu-id="b92cc-125">failed</span></span>|<span data-ttu-id="b92cc-126">17:00</span><span class="sxs-lookup"><span data-stu-id="b92cc-126">5</span></span>|<span data-ttu-id="b92cc-127">Не удалось выполнить действие</span><span class="sxs-lookup"><span data-stu-id="b92cc-127">Action failed</span></span>|
-|<span data-ttu-id="b92cc-128">notSupported</span><span class="sxs-lookup"><span data-stu-id="b92cc-128">notSupported</span></span>|<span data-ttu-id="b92cc-129">6 </span><span class="sxs-lookup"><span data-stu-id="b92cc-129">6</span></span>|<span data-ttu-id="b92cc-130">Действие не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b92cc-130">Action is not supported.</span></span>|
+|<span data-ttu-id="cac0c-111">нет</span><span class="sxs-lookup"><span data-stu-id="cac0c-111">none</span></span>|<span data-ttu-id="cac0c-112">нуль</span><span class="sxs-lookup"><span data-stu-id="cac0c-112">0</span></span>|<span data-ttu-id="cac0c-113">Недопустимое состояние действия</span><span class="sxs-lookup"><span data-stu-id="cac0c-113">Not a valid action state</span></span>|
+|<span data-ttu-id="cac0c-114">закончен</span><span class="sxs-lookup"><span data-stu-id="cac0c-114">pending</span></span>|<span data-ttu-id="cac0c-115">1 </span><span class="sxs-lookup"><span data-stu-id="cac0c-115">1</span></span>|<span data-ttu-id="cac0c-116">Ожидается действие</span><span class="sxs-lookup"><span data-stu-id="cac0c-116">Action is pending</span></span>|
+|<span data-ttu-id="cac0c-117">закрыт</span><span class="sxs-lookup"><span data-stu-id="cac0c-117">canceled</span></span>|<span data-ttu-id="cac0c-118">2 </span><span class="sxs-lookup"><span data-stu-id="cac0c-118">2</span></span>|<span data-ttu-id="cac0c-119">Действие отменено.</span><span class="sxs-lookup"><span data-stu-id="cac0c-119">Action has been cancelled.</span></span>|
+|<span data-ttu-id="cac0c-120">ASP</span><span class="sxs-lookup"><span data-stu-id="cac0c-120">active</span></span>|<span data-ttu-id="cac0c-121">3 </span><span class="sxs-lookup"><span data-stu-id="cac0c-121">3</span></span>|<span data-ttu-id="cac0c-122">Действие активно.</span><span class="sxs-lookup"><span data-stu-id="cac0c-122">Action is active.</span></span>|
+|<span data-ttu-id="cac0c-123">done</span><span class="sxs-lookup"><span data-stu-id="cac0c-123">done</span></span>|<span data-ttu-id="cac0c-124">4 </span><span class="sxs-lookup"><span data-stu-id="cac0c-124">4</span></span>|<span data-ttu-id="cac0c-125">Действие выполнено без ошибок.</span><span class="sxs-lookup"><span data-stu-id="cac0c-125">Action completed without errors.</span></span>|
+|<span data-ttu-id="cac0c-126">сбоев</span><span class="sxs-lookup"><span data-stu-id="cac0c-126">failed</span></span>|<span data-ttu-id="cac0c-127">5 </span><span class="sxs-lookup"><span data-stu-id="cac0c-127">5</span></span>|<span data-ttu-id="cac0c-128">Не удалось выполнить действие</span><span class="sxs-lookup"><span data-stu-id="cac0c-128">Action failed</span></span>|
+|<span data-ttu-id="cac0c-129">notSupported</span><span class="sxs-lookup"><span data-stu-id="cac0c-129">notSupported</span></span>|<span data-ttu-id="cac0c-130">6 </span><span class="sxs-lookup"><span data-stu-id="cac0c-130">6</span></span>|<span data-ttu-id="cac0c-131">Действие не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cac0c-131">Action is not supported.</span></span>|
 
 
 

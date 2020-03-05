@@ -5,55 +5,57 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ''
 ms.prod: ''
-ms.openlocfilehash: caf1c3331a064e6af41aa0d788f926cddbf08dcb
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: a311eec12be417fcfcc0526ccf4d63d21c7d487e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419764"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42421629"
 ---
-# <a name="update-formatprotection"></a><span data-ttu-id="78748-103">Обновление объекта FormatProtection</span><span class="sxs-lookup"><span data-stu-id="78748-103">Update formatprotection</span></span>
+# <a name="update-formatprotection"></a><span data-ttu-id="4d317-103">Обновление объекта FormatProtection</span><span class="sxs-lookup"><span data-stu-id="4d317-103">Update formatprotection</span></span>
+
+<span data-ttu-id="4d317-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="4d317-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="78748-104">Обновление свойств объекта FormatProtection.</span><span class="sxs-lookup"><span data-stu-id="78748-104">Update the properties of formatprotection object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="78748-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="78748-105">Permissions</span></span>
-<span data-ttu-id="78748-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="78748-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4d317-105">Обновление свойств объекта FormatProtection.</span><span class="sxs-lookup"><span data-stu-id="4d317-105">Update the properties of formatprotection object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="4d317-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="4d317-106">Permissions</span></span>
+<span data-ttu-id="4d317-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4d317-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="78748-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="78748-108">Permission type</span></span>      | <span data-ttu-id="78748-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="78748-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4d317-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4d317-109">Permission type</span></span>      | <span data-ttu-id="4d317-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4d317-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="78748-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="78748-110">Delegated (work or school account)</span></span> | <span data-ttu-id="78748-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="78748-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="78748-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="78748-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="78748-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="78748-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="78748-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="78748-114">Application</span></span> | <span data-ttu-id="78748-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="78748-115">Not supported.</span></span> |
+|<span data-ttu-id="4d317-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4d317-111">Delegated (work or school account)</span></span> | <span data-ttu-id="4d317-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4d317-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="4d317-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4d317-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4d317-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="4d317-114">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="4d317-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4d317-115">Application</span></span> | <span data-ttu-id="4d317-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4d317-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="78748-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="78748-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4d317-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4d317-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/names/{name}/range/format/protection
 PATCH /workbook/worksheets/{id|name}/range(<address>)/format/protection
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="78748-117">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="78748-117">Optional request headers</span></span>
-| <span data-ttu-id="78748-118">Имя</span><span class="sxs-lookup"><span data-stu-id="78748-118">Name</span></span>       | <span data-ttu-id="78748-119">Описание</span><span class="sxs-lookup"><span data-stu-id="78748-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="4d317-118">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="4d317-118">Optional request headers</span></span>
+| <span data-ttu-id="4d317-119">Имя</span><span class="sxs-lookup"><span data-stu-id="4d317-119">Name</span></span>       | <span data-ttu-id="4d317-120">Описание</span><span class="sxs-lookup"><span data-stu-id="4d317-120">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="78748-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="78748-120">Authorization</span></span>  | <span data-ttu-id="78748-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="78748-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="4d317-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="4d317-121">Authorization</span></span>  | <span data-ttu-id="4d317-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4d317-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="78748-123">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="78748-123">Request body</span></span>
-<span data-ttu-id="78748-p103">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="78748-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4d317-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="4d317-124">Request body</span></span>
+<span data-ttu-id="4d317-p103">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="4d317-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="78748-127">Свойство</span><span class="sxs-lookup"><span data-stu-id="78748-127">Property</span></span>     | <span data-ttu-id="78748-128">Тип</span><span class="sxs-lookup"><span data-stu-id="78748-128">Type</span></span>   |<span data-ttu-id="78748-129">Описание</span><span class="sxs-lookup"><span data-stu-id="78748-129">Description</span></span>|
+| <span data-ttu-id="4d317-128">Свойство</span><span class="sxs-lookup"><span data-stu-id="4d317-128">Property</span></span>     | <span data-ttu-id="4d317-129">Тип</span><span class="sxs-lookup"><span data-stu-id="4d317-129">Type</span></span>   |<span data-ttu-id="4d317-130">Описание</span><span class="sxs-lookup"><span data-stu-id="4d317-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="78748-130">formulaHidden</span><span class="sxs-lookup"><span data-stu-id="78748-130">formulaHidden</span></span>|<span data-ttu-id="78748-131">boolean</span><span class="sxs-lookup"><span data-stu-id="78748-131">boolean</span></span>|<span data-ttu-id="78748-p104">Указывает, скрывает ли Excel формулу для ячеек в диапазоне. Значение NULL указывает, что для всего диапазона не задан единый параметр скрытия формулы.</span><span class="sxs-lookup"><span data-stu-id="78748-p104">Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.</span></span>|
-|<span data-ttu-id="78748-134">locked</span><span class="sxs-lookup"><span data-stu-id="78748-134">locked</span></span>|<span data-ttu-id="78748-135">boolean</span><span class="sxs-lookup"><span data-stu-id="78748-135">boolean</span></span>|<span data-ttu-id="78748-p105">Указывает, блокирует ли Excel ячейки в объекте. Значение NULL указывает, что для всего диапазона не задан единый параметр блокировки.</span><span class="sxs-lookup"><span data-stu-id="78748-p105">Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.</span></span>|
+|<span data-ttu-id="4d317-131">formulaHidden</span><span class="sxs-lookup"><span data-stu-id="4d317-131">formulaHidden</span></span>|<span data-ttu-id="4d317-132">boolean</span><span class="sxs-lookup"><span data-stu-id="4d317-132">boolean</span></span>|<span data-ttu-id="4d317-p104">Указывает, скрывает ли Excel формулу для ячеек в диапазоне. Значение NULL указывает, что для всего диапазона не задан единый параметр скрытия формулы.</span><span class="sxs-lookup"><span data-stu-id="4d317-p104">Indicates if Excel hides the formula for the cells in the range. A null value indicates that the entire range doesn't have uniform formula hidden setting.</span></span>|
+|<span data-ttu-id="4d317-135">locked</span><span class="sxs-lookup"><span data-stu-id="4d317-135">locked</span></span>|<span data-ttu-id="4d317-136">boolean</span><span class="sxs-lookup"><span data-stu-id="4d317-136">boolean</span></span>|<span data-ttu-id="4d317-p105">Указывает, блокирует ли Excel ячейки в объекте. Значение NULL указывает, что для всего диапазона не задан единый параметр блокировки.</span><span class="sxs-lookup"><span data-stu-id="4d317-p105">Indicates if Excel locks the cells in the object. A null value indicates that the entire range doesn't have uniform lock setting.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="78748-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="78748-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4d317-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="4d317-139">Response</span></span>
 
-<span data-ttu-id="78748-139">В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [FormatProtection](../resources/formatprotection.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="78748-139">If successful, this method returns a `200 OK` response code and updated [FormatProtection](../resources/formatprotection.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="78748-140">Пример</span><span class="sxs-lookup"><span data-stu-id="78748-140">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="78748-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="78748-141">Request</span></span>
-<span data-ttu-id="78748-142">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="78748-142">Here is an example of the request.</span></span>
+<span data-ttu-id="4d317-140">В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [FormatProtection](../resources/formatprotection.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="4d317-140">If successful, this method returns a `200 OK` response code and updated [FormatProtection](../resources/formatprotection.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="4d317-141">Пример</span><span class="sxs-lookup"><span data-stu-id="4d317-141">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="4d317-142">Запрос</span><span class="sxs-lookup"><span data-stu-id="4d317-142">Request</span></span>
+<span data-ttu-id="4d317-143">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4d317-143">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="78748-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="78748-143">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="4d317-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="4d317-144">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_formatprotection"
@@ -68,22 +70,22 @@ Content-length: 45
   "formulaHidden": true
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="78748-144">C#</span><span class="sxs-lookup"><span data-stu-id="78748-144">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="4d317-145">C#</span><span class="sxs-lookup"><span data-stu-id="4d317-145">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-formatprotection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="78748-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="78748-145">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="4d317-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4d317-146">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-formatprotection-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="78748-146">Цель — C</span><span class="sxs-lookup"><span data-stu-id="78748-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="4d317-147">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4d317-147">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-formatprotection-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="78748-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="78748-147">Response</span></span>
-<span data-ttu-id="78748-p106">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="78748-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="4d317-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="4d317-148">Response</span></span>
+<span data-ttu-id="4d317-p106">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="4d317-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

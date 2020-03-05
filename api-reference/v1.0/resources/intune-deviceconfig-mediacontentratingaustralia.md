@@ -5,30 +5,32 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 29e7c1d6668671afee5e382f6ba71e7d8f146df0
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 973c8abcbb2cc0cdc523fc4175282c523266b58c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37360036"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42418155"
 ---
-# <a name="mediacontentratingaustralia-resource-type"></a><span data-ttu-id="a7b4d-103">Тип ресурса mediaContentRatingAustralia</span><span class="sxs-lookup"><span data-stu-id="a7b4d-103">mediaContentRatingAustralia resource type</span></span>
+# <a name="mediacontentratingaustralia-resource-type"></a><span data-ttu-id="8d989-103">Тип ресурса mediaContentRatingAustralia</span><span class="sxs-lookup"><span data-stu-id="8d989-103">mediaContentRatingAustralia resource type</span></span>
 
-> <span data-ttu-id="a7b4d-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="a7b4d-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="8d989-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="8d989-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="a7b4d-105">Н/Д</span><span class="sxs-lookup"><span data-stu-id="a7b4d-105">Not yet documented</span></span>
+> <span data-ttu-id="8d989-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="8d989-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="a7b4d-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="a7b4d-106">Properties</span></span>
-|<span data-ttu-id="a7b4d-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="a7b4d-107">Property</span></span>|<span data-ttu-id="a7b4d-108">Тип</span><span class="sxs-lookup"><span data-stu-id="a7b4d-108">Type</span></span>|<span data-ttu-id="a7b4d-109">Описание</span><span class="sxs-lookup"><span data-stu-id="a7b4d-109">Description</span></span>|
+<span data-ttu-id="8d989-106">Н/Д</span><span class="sxs-lookup"><span data-stu-id="8d989-106">Not yet documented</span></span>
+
+## <a name="properties"></a><span data-ttu-id="8d989-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="8d989-107">Properties</span></span>
+|<span data-ttu-id="8d989-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="8d989-108">Property</span></span>|<span data-ttu-id="8d989-109">Тип</span><span class="sxs-lookup"><span data-stu-id="8d989-109">Type</span></span>|<span data-ttu-id="8d989-110">Описание</span><span class="sxs-lookup"><span data-stu-id="8d989-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a7b4d-110">movieRating</span><span class="sxs-lookup"><span data-stu-id="a7b4d-110">movieRating</span></span>|[<span data-ttu-id="a7b4d-111">ратингаустралиамовиестипе</span><span class="sxs-lookup"><span data-stu-id="a7b4d-111">ratingAustraliaMoviesType</span></span>](../resources/intune-deviceconfig-ratingaustraliamoviestype.md)|<span data-ttu-id="a7b4d-112">Оценка фильмов выбрана для Австралии.</span><span class="sxs-lookup"><span data-stu-id="a7b4d-112">Movies rating selected for Australia.</span></span> <span data-ttu-id="a7b4d-113">Возможные значения: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove15`, `agesAbove18`.</span><span class="sxs-lookup"><span data-stu-id="a7b4d-113">Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove15`, `agesAbove18`.</span></span>|
-|<span data-ttu-id="a7b4d-114">tvRating</span><span class="sxs-lookup"><span data-stu-id="a7b4d-114">tvRating</span></span>|[<span data-ttu-id="a7b4d-115">ратингаустралиателевисионтипе</span><span class="sxs-lookup"><span data-stu-id="a7b4d-115">ratingAustraliaTelevisionType</span></span>](../resources/intune-deviceconfig-ratingaustraliatelevisiontype.md)|<span data-ttu-id="a7b4d-116">Рейтинг для телевизора выбран для Австралии.</span><span class="sxs-lookup"><span data-stu-id="a7b4d-116">TV rating selected for Australia.</span></span> <span data-ttu-id="a7b4d-117">Возможные значения: `allAllowed`, `allBlocked`, `preschoolers`, `children`, `general`, `parentalGuidance`, `mature`, `agesAbove15`, `agesAbove15AdultViolence`.</span><span class="sxs-lookup"><span data-stu-id="a7b4d-117">Possible values are: `allAllowed`, `allBlocked`, `preschoolers`, `children`, `general`, `parentalGuidance`, `mature`, `agesAbove15`, `agesAbove15AdultViolence`.</span></span>|
+|<span data-ttu-id="8d989-111">movieRating</span><span class="sxs-lookup"><span data-stu-id="8d989-111">movieRating</span></span>|[<span data-ttu-id="8d989-112">ратингаустралиамовиестипе</span><span class="sxs-lookup"><span data-stu-id="8d989-112">ratingAustraliaMoviesType</span></span>](../resources/intune-deviceconfig-ratingaustraliamoviestype.md)|<span data-ttu-id="8d989-113">Оценка фильмов выбрана для Австралии.</span><span class="sxs-lookup"><span data-stu-id="8d989-113">Movies rating selected for Australia.</span></span> <span data-ttu-id="8d989-114">Возможные значения: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove15`, `agesAbove18`.</span><span class="sxs-lookup"><span data-stu-id="8d989-114">Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove15`, `agesAbove18`.</span></span>|
+|<span data-ttu-id="8d989-115">tvRating</span><span class="sxs-lookup"><span data-stu-id="8d989-115">tvRating</span></span>|[<span data-ttu-id="8d989-116">ратингаустралиателевисионтипе</span><span class="sxs-lookup"><span data-stu-id="8d989-116">ratingAustraliaTelevisionType</span></span>](../resources/intune-deviceconfig-ratingaustraliatelevisiontype.md)|<span data-ttu-id="8d989-117">Рейтинг для телевизора выбран для Австралии.</span><span class="sxs-lookup"><span data-stu-id="8d989-117">TV rating selected for Australia.</span></span> <span data-ttu-id="8d989-118">Возможные значения: `allAllowed`, `allBlocked`, `preschoolers`, `children`, `general`, `parentalGuidance`, `mature`, `agesAbove15`, `agesAbove15AdultViolence`.</span><span class="sxs-lookup"><span data-stu-id="8d989-118">Possible values are: `allAllowed`, `allBlocked`, `preschoolers`, `children`, `general`, `parentalGuidance`, `mature`, `agesAbove15`, `agesAbove15AdultViolence`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="a7b4d-118">Связи</span><span class="sxs-lookup"><span data-stu-id="a7b4d-118">Relationships</span></span>
-<span data-ttu-id="a7b4d-119">Нет</span><span class="sxs-lookup"><span data-stu-id="a7b4d-119">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="8d989-119">Связи</span><span class="sxs-lookup"><span data-stu-id="8d989-119">Relationships</span></span>
+<span data-ttu-id="8d989-120">Нет</span><span class="sxs-lookup"><span data-stu-id="8d989-120">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="a7b4d-120">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a7b4d-120">JSON Representation</span></span>
-<span data-ttu-id="a7b4d-121">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a7b4d-121">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8d989-121">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="8d989-121">JSON Representation</span></span>
+<span data-ttu-id="8d989-122">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8d989-122">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mediaContentRatingAustralia"
