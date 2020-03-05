@@ -5,51 +5,53 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6c0465488949244a66c2e25149b4e9958c6b94bc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1c8eb575415f9063405b6c8d7c9891eb0cb9aaaf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35945755"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42441699"
 ---
-# <a name="add-a-member"></a><span data-ttu-id="57b24-103">Добавление участника</span><span class="sxs-lookup"><span data-stu-id="57b24-103">Add a member</span></span>
+# <a name="add-a-member"></a><span data-ttu-id="be8b5-103">Добавление участника</span><span class="sxs-lookup"><span data-stu-id="be8b5-103">Add a member</span></span>
+
+<span data-ttu-id="be8b5-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="be8b5-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="57b24-104">Используйте этот API, чтобы добавить члена (пользователя или группы) в административную единицу.</span><span class="sxs-lookup"><span data-stu-id="57b24-104">Use this API to add a member (user or group) to an administrative unit.</span></span>
+<span data-ttu-id="be8b5-105">Используйте этот API, чтобы добавить члена (пользователя или группы) в административную единицу.</span><span class="sxs-lookup"><span data-stu-id="be8b5-105">Use this API to add a member (user or group) to an administrative unit.</span></span>
 
 `NOTE: Currently it's only possible to add one member at a time to an administrative unit.`
 
-## <a name="permissions"></a><span data-ttu-id="57b24-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="57b24-105">Permissions</span></span>
-<span data-ttu-id="57b24-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="57b24-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="be8b5-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="be8b5-106">Permissions</span></span>
+<span data-ttu-id="be8b5-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="be8b5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="57b24-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="57b24-108">Permission type</span></span>      | <span data-ttu-id="57b24-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="57b24-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="be8b5-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="be8b5-109">Permission type</span></span>      | <span data-ttu-id="be8b5-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="be8b5-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="57b24-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="57b24-110">Delegated (work or school account)</span></span> | <span data-ttu-id="57b24-111">AdministrativeUnit. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="57b24-111">AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="57b24-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="57b24-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="57b24-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="57b24-113">Not supported.</span></span>    |
-|<span data-ttu-id="57b24-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="57b24-114">Application</span></span> | <span data-ttu-id="57b24-115">AdministrativeUnit. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="57b24-115">AdministrativeUnit.ReadWrite.All</span></span> |
+|<span data-ttu-id="be8b5-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="be8b5-111">Delegated (work or school account)</span></span> | <span data-ttu-id="be8b5-112">AdministrativeUnit. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="be8b5-112">AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="be8b5-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="be8b5-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="be8b5-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="be8b5-114">Not supported.</span></span>    |
+|<span data-ttu-id="be8b5-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="be8b5-115">Application</span></span> | <span data-ttu-id="be8b5-116">AdministrativeUnit.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="be8b5-116">AdministrativeUnit.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="57b24-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="57b24-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="be8b5-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="be8b5-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /administrativeUnits/{id}/members/$ref
 ```
-## <a name="request-headers"></a><span data-ttu-id="57b24-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="57b24-117">Request headers</span></span>
-| <span data-ttu-id="57b24-118">Имя</span><span class="sxs-lookup"><span data-stu-id="57b24-118">Name</span></span>      |<span data-ttu-id="57b24-119">Описание</span><span class="sxs-lookup"><span data-stu-id="57b24-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="be8b5-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="be8b5-118">Request headers</span></span>
+| <span data-ttu-id="be8b5-119">Имя</span><span class="sxs-lookup"><span data-stu-id="be8b5-119">Name</span></span>      |<span data-ttu-id="be8b5-120">Описание</span><span class="sxs-lookup"><span data-stu-id="be8b5-120">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="57b24-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="57b24-120">Authorization</span></span>  | <span data-ttu-id="57b24-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="57b24-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="be8b5-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="be8b5-121">Authorization</span></span>  | <span data-ttu-id="be8b5-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="be8b5-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="57b24-123">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="57b24-123">Request body</span></span>
-<span data-ttu-id="57b24-124">В тексте запроса добавьте представление объекта [User](../resources/user.md), [Group](../resources/group.md) или [directoryObject](../resources/directoryobject.md) , которое необходимо добавить, в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="57b24-124">In the request body, supply a JSON representation of a [user](../resources/user.md),  [group](../resources/group.md) or [directoryObject](../resources/directoryobject.md) to be added.</span></span>
+## <a name="request-body"></a><span data-ttu-id="be8b5-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="be8b5-124">Request body</span></span>
+<span data-ttu-id="be8b5-125">В тексте `id` запроса укажите [пользователя](../resources/user.md), [группу](../resources/group.md) или [directoryObject](../resources/directoryobject.md) , которого требуется добавить.</span><span class="sxs-lookup"><span data-stu-id="be8b5-125">In the request body, provide the `id` of a [user](../resources/user.md),  [group](../resources/group.md) or [directoryObject](../resources/directoryobject.md) to be added.</span></span>
 
-## <a name="response"></a><span data-ttu-id="57b24-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="57b24-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="be8b5-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="be8b5-126">Response</span></span>
 
-<span data-ttu-id="57b24-p103">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="57b24-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="be8b5-p103">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="be8b5-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="57b24-128">Пример</span><span class="sxs-lookup"><span data-stu-id="57b24-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="57b24-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="57b24-129">Request</span></span>
-<span data-ttu-id="57b24-130">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="57b24-130">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="be8b5-129">Пример</span><span class="sxs-lookup"><span data-stu-id="be8b5-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="be8b5-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="be8b5-130">Request</span></span>
+<span data-ttu-id="be8b5-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="be8b5-131">Here is an example of the request.</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/administrativeUnits/{id}/members/$ref
@@ -61,10 +63,10 @@ Content-length: 109
 }
 
 ```
-<span data-ttu-id="57b24-131">В тексте запроса добавьте представление `id` объекта [пользователя](../resources/user.md) или [группы](../resources/group.md) , который вы хотите добавить, в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="57b24-131">In the request body, supply a JSON representation of the `id` of the [user](../resources/user.md) or [group](../resources/group.md) object you want to add.</span></span>
+<span data-ttu-id="be8b5-132">В тексте запроса укажите `id` объект [пользователя](../resources/user.md) или [группы](../resources/group.md) , который вы хотите добавить.</span><span class="sxs-lookup"><span data-stu-id="be8b5-132">In the request body, provide the `id` of the [user](../resources/user.md) or [group](../resources/group.md) object you want to add.</span></span>
 
-##### <a name="response"></a><span data-ttu-id="57b24-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="57b24-132">Response</span></span>
-<span data-ttu-id="57b24-133">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="57b24-133">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="be8b5-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="be8b5-133">Response</span></span>
+<span data-ttu-id="be8b5-134">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="be8b5-134">Here is an example of the response.</span></span>
  
 ```http
 HTTP/1.1 204 No Content

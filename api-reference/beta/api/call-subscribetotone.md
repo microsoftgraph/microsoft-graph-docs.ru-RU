@@ -5,63 +5,65 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4aade47d641cbeb129b199858956f144e2d4bd0d
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: db11ab63008dc092206550a91b027878d3cf1547
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40912750"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42440754"
 ---
-# <a name="call-subscribetotone"></a><span data-ttu-id="55a70-104">Call: Субскрибетотоне</span><span class="sxs-lookup"><span data-stu-id="55a70-104">call: subscribeToTone</span></span>
+# <a name="call-subscribetotone"></a><span data-ttu-id="59973-104">Call: Субскрибетотоне</span><span class="sxs-lookup"><span data-stu-id="59973-104">call: subscribeToTone</span></span>
+
+<span data-ttu-id="59973-105">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="59973-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="55a70-105">Подпишитесь на DTMF (многочастотный многочастотный сигнал).</span><span class="sxs-lookup"><span data-stu-id="55a70-105">Subscribe to DTMF (dual-tone multi-frequency signaling).</span></span> <span data-ttu-id="55a70-106">Это позволяет получать уведомления, когда пользователь нажимает клавиши в "Диалпад".</span><span class="sxs-lookup"><span data-stu-id="55a70-106">This allows you to be notified when the user presses keys on a "Dialpad".</span></span>
+<span data-ttu-id="59973-106">Подпишитесь на DTMF (многочастотный многочастотный сигнал).</span><span class="sxs-lookup"><span data-stu-id="59973-106">Subscribe to DTMF (dual-tone multi-frequency signaling).</span></span> <span data-ttu-id="59973-107">Это позволяет получать уведомления, когда пользователь нажимает клавиши в "Диалпад".</span><span class="sxs-lookup"><span data-stu-id="59973-107">This allows you to be notified when the user presses keys on a "Dialpad".</span></span>
 
 > [!Note]
-> <span data-ttu-id="55a70-107">Действие **субскрибетотоне** поддерживается только для [вызовов](../resources/call.md) , инициированных с помощью [сервицехостедмедиаконфиг](../resources/servicehostedmediaconfig.md).</span><span class="sxs-lookup"><span data-stu-id="55a70-107">The **subscribeToTone** action is supported only for [calls](../resources/call.md) that are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).</span></span>
+> <span data-ttu-id="59973-108">Действие **субскрибетотоне** поддерживается только для [вызовов](../resources/call.md) , инициированных с помощью [сервицехостедмедиаконфиг](../resources/servicehostedmediaconfig.md).</span><span class="sxs-lookup"><span data-stu-id="59973-108">The **subscribeToTone** action is supported only for [calls](../resources/call.md) that are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="55a70-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="55a70-108">Permissions</span></span>
-<span data-ttu-id="55a70-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="55a70-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="59973-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="59973-109">Permissions</span></span>
+<span data-ttu-id="59973-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="59973-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="55a70-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="55a70-111">Permission type</span></span> | <span data-ttu-id="55a70-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="55a70-112">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="59973-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="59973-112">Permission type</span></span> | <span data-ttu-id="59973-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="59973-113">Permissions (from least to most privileged)</span></span> |
 | :-------------- | :------------------------------------------ |
-| <span data-ttu-id="55a70-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="55a70-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="55a70-114">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="55a70-114">Not Supported</span></span>        |
-| <span data-ttu-id="55a70-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="55a70-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="55a70-116">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="55a70-116">Not Supported</span></span>        |
-| <span data-ttu-id="55a70-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="55a70-117">Application</span></span>     | <span data-ttu-id="55a70-118">Calls.AccessMedia.All</span><span class="sxs-lookup"><span data-stu-id="55a70-118">Calls.AccessMedia.All</span></span>                       |
+| <span data-ttu-id="59973-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="59973-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="59973-115">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="59973-115">Not Supported</span></span>        |
+| <span data-ttu-id="59973-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="59973-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="59973-117">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="59973-117">Not Supported</span></span>        |
+| <span data-ttu-id="59973-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="59973-118">Application</span></span>     | <span data-ttu-id="59973-119">Calls.AccessMedia.All</span><span class="sxs-lookup"><span data-stu-id="59973-119">Calls.AccessMedia.All</span></span>                       |
 
-><span data-ttu-id="55a70-119">**Примечание:** Все указанные данные тона могут быть не сохранены.</span><span class="sxs-lookup"><span data-stu-id="55a70-119">**Note:** Any tone data provided may not be persisted.</span></span> <span data-ttu-id="55a70-120">Убедитесь, что вы соответствуете законам и нормативам, касающимся защиты данных и конфиденциальности коммуникаций.</span><span class="sxs-lookup"><span data-stu-id="55a70-120">Make sure you are compliant with the laws and regulations of your area regarding data protection and confidentiality of communications.</span></span> <span data-ttu-id="55a70-121">Дополнительные сведения можно узнать из [условий использования](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) и обратившись за юридической помощью.</span><span class="sxs-lookup"><span data-stu-id="55a70-121">Please see the [Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.</span></span>
-## <a name="http-request"></a><span data-ttu-id="55a70-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="55a70-122">HTTP request</span></span>
+><span data-ttu-id="59973-120">**Примечание:** Все указанные данные тона могут быть не сохранены.</span><span class="sxs-lookup"><span data-stu-id="59973-120">**Note:** Any tone data provided may not be persisted.</span></span> <span data-ttu-id="59973-121">Убедитесь, что вы соответствуете законам и нормативам, касающимся защиты данных и конфиденциальности коммуникаций.</span><span class="sxs-lookup"><span data-stu-id="59973-121">Make sure you are compliant with the laws and regulations of your area regarding data protection and confidentiality of communications.</span></span> <span data-ttu-id="59973-122">Дополнительные сведения можно узнать из [условий использования](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) и обратившись за юридической помощью.</span><span class="sxs-lookup"><span data-stu-id="59973-122">Please see the [Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.</span></span>
+## <a name="http-request"></a><span data-ttu-id="59973-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="59973-123">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/subscribeToTone
 POST /communications/calls/{id}/subscribeToTone
 ```
-> <span data-ttu-id="55a70-123">**Примечание.** Путь `/app` является устаревшим.</span><span class="sxs-lookup"><span data-stu-id="55a70-123">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="55a70-124">В дальнейшем используйте путь `/communications`.</span><span class="sxs-lookup"><span data-stu-id="55a70-124">Going forward, use the `/communications` path.</span></span>
+> <span data-ttu-id="59973-124">**Примечание.** Путь `/app` является устаревшим.</span><span class="sxs-lookup"><span data-stu-id="59973-124">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="59973-125">В дальнейшем используйте путь `/communications`.</span><span class="sxs-lookup"><span data-stu-id="59973-125">Going forward, use the `/communications` path.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="55a70-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="55a70-125">Request headers</span></span>
-| <span data-ttu-id="55a70-126">Имя</span><span class="sxs-lookup"><span data-stu-id="55a70-126">Name</span></span>          | <span data-ttu-id="55a70-127">Описание</span><span class="sxs-lookup"><span data-stu-id="55a70-127">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="59973-126">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="59973-126">Request headers</span></span>
+| <span data-ttu-id="59973-127">Имя</span><span class="sxs-lookup"><span data-stu-id="59973-127">Name</span></span>          | <span data-ttu-id="59973-128">Описание</span><span class="sxs-lookup"><span data-stu-id="59973-128">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="55a70-128">Авторизация</span><span class="sxs-lookup"><span data-stu-id="55a70-128">Authorization</span></span> | <span data-ttu-id="55a70-p106">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="55a70-p106">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="59973-129">Авторизация</span><span class="sxs-lookup"><span data-stu-id="59973-129">Authorization</span></span> | <span data-ttu-id="59973-p106">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="59973-p106">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="55a70-131">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="55a70-131">Request body</span></span>
-<span data-ttu-id="55a70-132">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="55a70-132">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="59973-132">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="59973-132">Request body</span></span>
+<span data-ttu-id="59973-133">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="59973-133">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="55a70-133">Параметр</span><span class="sxs-lookup"><span data-stu-id="55a70-133">Parameter</span></span>      | <span data-ttu-id="55a70-134">Тип</span><span class="sxs-lookup"><span data-stu-id="55a70-134">Type</span></span>    | <span data-ttu-id="55a70-135">Описание</span><span class="sxs-lookup"><span data-stu-id="55a70-135">Description</span></span> |
+| <span data-ttu-id="59973-134">Параметр</span><span class="sxs-lookup"><span data-stu-id="59973-134">Parameter</span></span>      | <span data-ttu-id="59973-135">Тип</span><span class="sxs-lookup"><span data-stu-id="59973-135">Type</span></span>    | <span data-ttu-id="59973-136">Описание</span><span class="sxs-lookup"><span data-stu-id="59973-136">Description</span></span> |
 |:---------------|:--------|:------------|
-| <span data-ttu-id="55a70-136">Контекст</span><span class="sxs-lookup"><span data-stu-id="55a70-136">clientContext</span></span>  | <span data-ttu-id="55a70-137">String</span><span class="sxs-lookup"><span data-stu-id="55a70-137">String</span></span>  | <span data-ttu-id="55a70-138">Уникальная строка контекста клиента.</span><span class="sxs-lookup"><span data-stu-id="55a70-138">Unique client context string.</span></span> <span data-ttu-id="55a70-139">Может содержать до 256 символов.</span><span class="sxs-lookup"><span data-stu-id="55a70-139">Can have a maximum of 256 characters.</span></span> |
+| <span data-ttu-id="59973-137">Контекст</span><span class="sxs-lookup"><span data-stu-id="59973-137">clientContext</span></span>  | <span data-ttu-id="59973-138">String</span><span class="sxs-lookup"><span data-stu-id="59973-138">String</span></span>  | <span data-ttu-id="59973-139">Уникальная строка контекста клиента.</span><span class="sxs-lookup"><span data-stu-id="59973-139">Unique client context string.</span></span> <span data-ttu-id="59973-140">Может содержать до 256 символов.</span><span class="sxs-lookup"><span data-stu-id="59973-140">Can have a maximum of 256 characters.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="55a70-140">Ответ</span><span class="sxs-lookup"><span data-stu-id="55a70-140">Response</span></span>
-<span data-ttu-id="55a70-141">В случае успешного выполнения этот метод возвращает код отклика `200 OK`.</span><span class="sxs-lookup"><span data-stu-id="55a70-141">If successful, this method returns `200 OK` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="59973-141">Ответ</span><span class="sxs-lookup"><span data-stu-id="59973-141">Response</span></span>
+<span data-ttu-id="59973-142">В случае успешного выполнения этот метод возвращает код отклика `200 OK`.</span><span class="sxs-lookup"><span data-stu-id="59973-142">If successful, this method returns `200 OK` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="55a70-142">Пример</span><span class="sxs-lookup"><span data-stu-id="55a70-142">Example</span></span>
-<span data-ttu-id="55a70-143">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="55a70-143">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="59973-143">Пример</span><span class="sxs-lookup"><span data-stu-id="59973-143">Example</span></span>
+<span data-ttu-id="59973-144">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="59973-144">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="55a70-144">Запрос</span><span class="sxs-lookup"><span data-stu-id="55a70-144">Request</span></span>
-<span data-ttu-id="55a70-145">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="55a70-145">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="59973-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="59973-145">Request</span></span>
+<span data-ttu-id="59973-146">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="59973-146">The following example shows the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="55a70-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="55a70-146">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="59973-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="59973-147">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-subscribeToTone"
@@ -75,24 +77,24 @@ Content-Length: 46
   "clientContext": "fd1c7836-4d84-4e24-b6aa-23188688cc54"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="55a70-147">C#</span><span class="sxs-lookup"><span data-stu-id="55a70-147">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="59973-148">C#</span><span class="sxs-lookup"><span data-stu-id="59973-148">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-subscribetotone-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="55a70-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="55a70-148">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="59973-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="59973-149">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-subscribetotone-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="55a70-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="55a70-149">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="59973-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="59973-150">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-subscribetotone-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="55a70-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="55a70-150">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="59973-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="59973-151">Response</span></span>
 
-> <span data-ttu-id="55a70-p108">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="55a70-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="59973-p108">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="59973-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -114,9 +116,9 @@ Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-40
 ```
 
 
-##### <a name="notification---tone-notification"></a><span data-ttu-id="55a70-153">Уведомление о тоновом уведомлении</span><span class="sxs-lookup"><span data-stu-id="55a70-153">Notification - tone notification</span></span>
+##### <a name="notification---tone-notification"></a><span data-ttu-id="59973-154">Уведомление о тоновом уведомлении</span><span class="sxs-lookup"><span data-stu-id="59973-154">Notification - tone notification</span></span>
 
-<span data-ttu-id="55a70-154">В уведомлении содержится информация о нажатии тона в ресурсе [тонеинфо](../resources/toneinfo.md) .</span><span class="sxs-lookup"><span data-stu-id="55a70-154">The notification contain information of the tone pressed in the [toneinfo](../resources/toneinfo.md) resource.</span></span>
+<span data-ttu-id="59973-155">В уведомлении содержится информация о нажатии тона в ресурсе [тонеинфо](../resources/toneinfo.md) .</span><span class="sxs-lookup"><span data-stu-id="59973-155">The notification contain information of the tone pressed in the [toneinfo](../resources/toneinfo.md) resource.</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls

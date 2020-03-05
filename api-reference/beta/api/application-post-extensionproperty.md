@@ -5,30 +5,32 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5194281dee925171f8834b7e8dde76cf60b17244
-ms.sourcegitcommit: 9bddc0b7746383e8d05ce50d163af3f4196f12a6
+ms.openlocfilehash: 424ed26e4ba72100e65683b0526354d8b5febea2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38006433"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42441465"
 ---
-# <a name="create-extensionproperty"></a><span data-ttu-id="7944c-103">Создание Екстенсионпроперти</span><span class="sxs-lookup"><span data-stu-id="7944c-103">Create extensionProperty</span></span>
+# <a name="create-extensionproperty"></a><span data-ttu-id="868f4-103">Создание Екстенсионпроперти</span><span class="sxs-lookup"><span data-stu-id="868f4-103">Create extensionProperty</span></span>
+
+<span data-ttu-id="868f4-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="868f4-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7944c-104">Создайте новое определение [екстенсионпроперти](../resources/extensionproperty.md) .</span><span class="sxs-lookup"><span data-stu-id="7944c-104">Create a new [extensionProperty](../resources/extensionproperty.md) definition.</span></span> <span data-ttu-id="7944c-105">Эту операцию можно использовать для добавления настраиваемого значения свойства в целевой тип объекта, определенный в Екстенсионпроперти, с помощью стандартных запросов на создание и обновление целевого объекта.</span><span class="sxs-lookup"><span data-stu-id="7944c-105">You can use this operation to add a custom property value to the targeted object type defined in the extensionProperty, using standard creation and update requests to the target object.</span></span>
+<span data-ttu-id="868f4-105">Создайте новое определение [екстенсионпроперти](../resources/extensionproperty.md) .</span><span class="sxs-lookup"><span data-stu-id="868f4-105">Create a new [extensionProperty](../resources/extensionproperty.md) definition.</span></span> <span data-ttu-id="868f4-106">Эту операцию можно использовать для добавления настраиваемого значения свойства в целевой тип объекта, определенный в Екстенсионпроперти, с помощью стандартных запросов на создание и обновление целевого объекта.</span><span class="sxs-lookup"><span data-stu-id="868f4-106">You can use this operation to add a custom property value to the targeted object type defined in the extensionProperty, using standard creation and update requests to the target object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7944c-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7944c-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="868f4-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="868f4-107">Permissions</span></span>
 
-<span data-ttu-id="7944c-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7944c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="868f4-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="868f4-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7944c-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7944c-109">Permission type</span></span>      | <span data-ttu-id="7944c-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7944c-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="868f4-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="868f4-110">Permission type</span></span>      | <span data-ttu-id="868f4-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="868f4-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7944c-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7944c-111">Delegated (work or school account)</span></span> | <span data-ttu-id="7944c-112">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="7944c-112">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="7944c-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7944c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7944c-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7944c-114">Not supported.</span></span>    |
-|<span data-ttu-id="7944c-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7944c-115">Application</span></span> | <span data-ttu-id="7944c-116">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7944c-116">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span></span> |
+|<span data-ttu-id="868f4-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="868f4-112">Delegated (work or school account)</span></span> | <span data-ttu-id="868f4-113">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="868f4-113">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="868f4-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="868f4-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="868f4-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="868f4-115">Not supported.</span></span>    |
+|<span data-ttu-id="868f4-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="868f4-116">Application</span></span> | <span data-ttu-id="868f4-117">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="868f4-117">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7944c-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7944c-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="868f4-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="868f4-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,35 +38,35 @@ ms.locfileid: "38006433"
 POST /applications/{id}/extensionProperties
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7944c-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="7944c-118">Request headers</span></span>
-| <span data-ttu-id="7944c-119">Имя</span><span class="sxs-lookup"><span data-stu-id="7944c-119">Name</span></span>       | <span data-ttu-id="7944c-120">Описание</span><span class="sxs-lookup"><span data-stu-id="7944c-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="868f4-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="868f4-119">Request headers</span></span>
+| <span data-ttu-id="868f4-120">Имя</span><span class="sxs-lookup"><span data-stu-id="868f4-120">Name</span></span>       | <span data-ttu-id="868f4-121">Описание</span><span class="sxs-lookup"><span data-stu-id="868f4-121">Description</span></span>|
 |:-----------|:----------|
-| <span data-ttu-id="7944c-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="7944c-121">Authorization</span></span>  | <span data-ttu-id="7944c-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7944c-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="7944c-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7944c-124">Content-type</span></span> | <span data-ttu-id="7944c-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7944c-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="868f4-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="868f4-122">Authorization</span></span>  | <span data-ttu-id="868f4-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="868f4-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="868f4-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="868f4-125">Content-type</span></span> | <span data-ttu-id="868f4-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="868f4-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="7944c-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="7944c-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="868f4-128">Основной текст запроса</span><span class="sxs-lookup"><span data-stu-id="868f4-128">Request body</span></span>
 
-<span data-ttu-id="7944c-128">В тексте запроса укажите объект [екстенсионпроперти](../resources/extensionproperty.md) со следующими свойствами.</span><span class="sxs-lookup"><span data-stu-id="7944c-128">In the request body, provide an [extensionProperty](../resources/extensionproperty.md) object with the following properties.</span></span>
+<span data-ttu-id="868f4-129">В тексте запроса укажите объект [екстенсионпроперти](../resources/extensionproperty.md) со следующими свойствами.</span><span class="sxs-lookup"><span data-stu-id="868f4-129">In the request body, provide an [extensionProperty](../resources/extensionproperty.md) object with the following properties.</span></span>
 
 
-| <span data-ttu-id="7944c-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="7944c-129">Property</span></span>     | <span data-ttu-id="7944c-130">Тип</span><span class="sxs-lookup"><span data-stu-id="7944c-130">Type</span></span>        | <span data-ttu-id="7944c-131">Описание</span><span class="sxs-lookup"><span data-stu-id="7944c-131">Description</span></span> |
+| <span data-ttu-id="868f4-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="868f4-130">Property</span></span>     | <span data-ttu-id="868f4-131">Тип</span><span class="sxs-lookup"><span data-stu-id="868f4-131">Type</span></span>        | <span data-ttu-id="868f4-132">Описание</span><span class="sxs-lookup"><span data-stu-id="868f4-132">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="7944c-132">dataType</span><span class="sxs-lookup"><span data-stu-id="7944c-132">dataType</span></span>|<span data-ttu-id="7944c-133">String</span><span class="sxs-lookup"><span data-stu-id="7944c-133">String</span></span>| <span data-ttu-id="7944c-134">Задает тип данных значения, которое может содержать свойство Extension.</span><span class="sxs-lookup"><span data-stu-id="7944c-134">Specifies the data type of the value the extension property can hold.</span></span> <span data-ttu-id="7944c-135">Поддерживаются следующие значения:</span><span class="sxs-lookup"><span data-stu-id="7944c-135">Following values are supported.</span></span> <span data-ttu-id="7944c-136">Значение null не допускается.</span><span class="sxs-lookup"><span data-stu-id="7944c-136">Not nullable.</span></span> <ul><li><span data-ttu-id="7944c-137">`Binary`– 256 байт (максимум)</span><span class="sxs-lookup"><span data-stu-id="7944c-137">`Binary` - 256 bytes maximum</span></span></li><li>`Boolean`</li><li><span data-ttu-id="7944c-138">`DateTime`-Должен быть указан в формате ISO 8601.</span><span class="sxs-lookup"><span data-stu-id="7944c-138">`DateTime` - Must be specified in ISO 8601 format.</span></span> <span data-ttu-id="7944c-139">Данные времени будут храниться в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="7944c-139">Will be stored in UTC.</span></span></li><li><span data-ttu-id="7944c-140">`Integer`— значение 32 — бит.</span><span class="sxs-lookup"><span data-stu-id="7944c-140">`Integer` - 32-bit value.</span></span></li><li><span data-ttu-id="7944c-141">`LargeInteger`— значение 64 — бит.</span><span class="sxs-lookup"><span data-stu-id="7944c-141">`LargeInteger` - 64-bit value.</span></span></li><li><span data-ttu-id="7944c-142">`String`– 256 символов максимум</span><span class="sxs-lookup"><span data-stu-id="7944c-142">`String` - 256 characters maximum</span></span></li></ul>|
-|<span data-ttu-id="7944c-143">name</span><span class="sxs-lookup"><span data-stu-id="7944c-143">name</span></span>|<span data-ttu-id="7944c-144">String</span><span class="sxs-lookup"><span data-stu-id="7944c-144">String</span></span>| <span data-ttu-id="7944c-145">Имя свойства расширения.</span><span class="sxs-lookup"><span data-stu-id="7944c-145">Name of the extension property.</span></span> <span data-ttu-id="7944c-146">Значение null не допускается.</span><span class="sxs-lookup"><span data-stu-id="7944c-146">Not nullable.</span></span> |
-|<span data-ttu-id="7944c-147">таржетобжектс</span><span class="sxs-lookup"><span data-stu-id="7944c-147">targetObjects</span></span>|<span data-ttu-id="7944c-148">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="7944c-148">String collection</span></span>| <span data-ttu-id="7944c-149">Поддерживаются следующие значения:</span><span class="sxs-lookup"><span data-stu-id="7944c-149">Following values are supported.</span></span> <span data-ttu-id="7944c-150">Значение null не допускается.</span><span class="sxs-lookup"><span data-stu-id="7944c-150">Not nullable.</span></span> <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
+|<span data-ttu-id="868f4-133">dataType</span><span class="sxs-lookup"><span data-stu-id="868f4-133">dataType</span></span>|<span data-ttu-id="868f4-134">String</span><span class="sxs-lookup"><span data-stu-id="868f4-134">String</span></span>| <span data-ttu-id="868f4-135">Задает тип данных значения, которое может содержать свойство Extension.</span><span class="sxs-lookup"><span data-stu-id="868f4-135">Specifies the data type of the value the extension property can hold.</span></span> <span data-ttu-id="868f4-136">Поддерживаются следующие значения:</span><span class="sxs-lookup"><span data-stu-id="868f4-136">Following values are supported.</span></span> <span data-ttu-id="868f4-137">Значение null не допускается.</span><span class="sxs-lookup"><span data-stu-id="868f4-137">Not nullable.</span></span> <ul><li><span data-ttu-id="868f4-138">`Binary`– 256 байт (максимум)</span><span class="sxs-lookup"><span data-stu-id="868f4-138">`Binary` - 256 bytes maximum</span></span></li><li>`Boolean`</li><li><span data-ttu-id="868f4-139">`DateTime`-Должен быть указан в формате ISO 8601.</span><span class="sxs-lookup"><span data-stu-id="868f4-139">`DateTime` - Must be specified in ISO 8601 format.</span></span> <span data-ttu-id="868f4-140">Данные времени будут храниться в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="868f4-140">Will be stored in UTC.</span></span></li><li><span data-ttu-id="868f4-141">`Integer`— значение 32 — бит.</span><span class="sxs-lookup"><span data-stu-id="868f4-141">`Integer` - 32-bit value.</span></span></li><li><span data-ttu-id="868f4-142">`LargeInteger`— значение 64 — бит.</span><span class="sxs-lookup"><span data-stu-id="868f4-142">`LargeInteger` - 64-bit value.</span></span></li><li><span data-ttu-id="868f4-143">`String`– 256 символов максимум</span><span class="sxs-lookup"><span data-stu-id="868f4-143">`String` - 256 characters maximum</span></span></li></ul>|
+|<span data-ttu-id="868f4-144">name</span><span class="sxs-lookup"><span data-stu-id="868f4-144">name</span></span>|<span data-ttu-id="868f4-145">String</span><span class="sxs-lookup"><span data-stu-id="868f4-145">String</span></span>| <span data-ttu-id="868f4-146">Имя свойства расширения.</span><span class="sxs-lookup"><span data-stu-id="868f4-146">Name of the extension property.</span></span> <span data-ttu-id="868f4-147">Значение null не допускается.</span><span class="sxs-lookup"><span data-stu-id="868f4-147">Not nullable.</span></span> |
+|<span data-ttu-id="868f4-148">таржетобжектс</span><span class="sxs-lookup"><span data-stu-id="868f4-148">targetObjects</span></span>|<span data-ttu-id="868f4-149">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="868f4-149">String collection</span></span>| <span data-ttu-id="868f4-150">Поддерживаются следующие значения:</span><span class="sxs-lookup"><span data-stu-id="868f4-150">Following values are supported.</span></span> <span data-ttu-id="868f4-151">Значение null не допускается.</span><span class="sxs-lookup"><span data-stu-id="868f4-151">Not nullable.</span></span> <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 
-## <a name="response"></a><span data-ttu-id="7944c-151">Ответ</span><span class="sxs-lookup"><span data-stu-id="7944c-151">Response</span></span>
+## <a name="response"></a><span data-ttu-id="868f4-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="868f4-152">Response</span></span>
 
-<span data-ttu-id="7944c-152">В случае успешного выполнения этот метод `201, Created` возвращает код отклика и новый объект [екстенсионпроперти](../resources/extensionproperty.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="7944c-152">If successful, this method returns `201, Created` response code and a new [extensionProperty](../resources/extensionproperty.md) object in the response body.</span></span>
+<span data-ttu-id="868f4-153">В случае успешного выполнения этот метод `201, Created` возвращает код отклика и новый объект [екстенсионпроперти](../resources/extensionproperty.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="868f4-153">If successful, this method returns `201, Created` response code and a new [extensionProperty](../resources/extensionproperty.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="7944c-153">Примеры</span><span class="sxs-lookup"><span data-stu-id="7944c-153">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="868f4-154">Примеры</span><span class="sxs-lookup"><span data-stu-id="868f4-154">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="7944c-154">Запрос</span><span class="sxs-lookup"><span data-stu-id="7944c-154">Request</span></span>
+### <a name="request"></a><span data-ttu-id="868f4-155">Запрос</span><span class="sxs-lookup"><span data-stu-id="868f4-155">Request</span></span>
 
-<span data-ttu-id="7944c-155">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="7944c-155">The following is an example of the request.</span></span>
+<span data-ttu-id="868f4-156">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="868f4-156">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="7944c-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="7944c-156">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="868f4-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="868f4-157">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_extensionproperty_from_application"
@@ -82,24 +84,24 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="7944c-157">C#</span><span class="sxs-lookup"><span data-stu-id="7944c-157">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="868f4-158">C#</span><span class="sxs-lookup"><span data-stu-id="868f4-158">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-extensionproperty-from-application-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7944c-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7944c-158">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="868f4-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="868f4-159">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-extensionproperty-from-application-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7944c-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7944c-159">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="868f4-160">Objective-C</span><span class="sxs-lookup"><span data-stu-id="868f4-160">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-extensionproperty-from-application-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="7944c-160">Отклик</span><span class="sxs-lookup"><span data-stu-id="7944c-160">Response</span></span>
+### <a name="response"></a><span data-ttu-id="868f4-161">Отклик</span><span class="sxs-lookup"><span data-stu-id="868f4-161">Response</span></span>
 
-<span data-ttu-id="7944c-161">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [екстенсионпроперти](../resources/extensionProperty.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="7944c-161">If successful, this method returns a `201 Created` response code and an [extensionProperty](../resources/extensionProperty.md) object in the response body.</span></span>
+<span data-ttu-id="868f4-162">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [екстенсионпроперти](../resources/extensionProperty.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="868f4-162">If successful, this method returns a `201 Created` response code and an [extensionProperty](../resources/extensionProperty.md) object in the response body.</span></span>
 
 <!-- {
   "blockType": "response",
