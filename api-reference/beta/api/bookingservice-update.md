@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: a9738c22e920635b3ef08dcc97803adb611831c5
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: a218ee14aaa0a27118e9d4dfd05b074937a50118
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419330"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42441083"
 ---
 # <a name="update-bookingservice"></a>Обновление букингсервице
+
+Пространство имен: Microsoft. Graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,21 +51,21 @@ PATCH /bookingBusinesses/{id}/services/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|дефаултдуратион|Duration (Длительность)|Длина службы по умолчанию, представленная в виде числа дней, часов, минут и секунд. Например, P11D23H59M 59.999999999999 S. |
+|дефаултдуратион|Длительность|Длина службы по умолчанию, представленная в виде числа дней, часов, минут и секунд. Например, P11D23H59M 59.999999999999 S. |
 |defaultLocation|[location](../resources/location.md)|Физическое расположение службы по умолчанию.|
-|дефаултприце|Двойное|Денежная Цена по умолчанию для службы.|
-|дефаултприцетипе|string|Способ оплаты службы по умолчанию. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
+|дефаултприце|Двойное с плавающей точкой|Денежная Цена по умолчанию для службы.|
+|дефаултприцетипе|строка|Способ оплаты службы по умолчанию. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
 |дефаултреминдерс|Коллекция [букингреминдер](../resources/bookingreminder.md)|Набор напоминаний по умолчанию для встречи этой службы. Значение этого свойства доступно только при чтении этого **букингсервице** с помощью идентификатора.|
 |description|String|Текстовое описание службы.|
 |displayName|Строка|Имя службы.|
 |emailAddress|String|Адрес электронной почты|
 |id|String| Только для чтения.|
-|ишидденфромкустомерс|Boolean|Значение true означает, что эта служба недоступна клиентам для резервирования.|
+|ишидденфромкустомерс|Логический|Значение true означает, что эта служба недоступна клиентам для резервирования.|
 |notes|String|Дополнительные сведения об этой службе.|
-|Буфер буфера|Duration (Длительность)|Время, в течение которого помещается в буфер после встречи для этой службы и до того, как может быть зарезервирована Следующая встреча покупателя.|
-|пребуфер|Duration (Длительность)|Время, в течение которого будет помещено в буфер, прежде чем можно будет запустить встречу для этой службы.|
+|Буфер буфера|Длительность|Время, в течение которого помещается в буфер после встречи для этой службы и до того, как может быть зарезервирована Следующая встреча покупателя.|
+|пребуфер|Длительность|Время, в течение которого будет помещено в буфер, прежде чем можно будет запустить встречу для этой службы.|
 |счедулингполици|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Набор политик, определяющих, как должны создаваться встречи для этого типа службы и управлять ими.|
-|стаффмемберидс|Коллекция строк|Представляет [сотрудников](../resources/bookingstaffmember.md) , которые предоставляют эту службу. |
+|стаффмемберидс|Коллекция String|Представляет [сотрудников](../resources/bookingstaffmember.md) , которые предоставляют эту службу. |
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204 No content`. Метод не возвращает данные в теле отклика.
@@ -71,7 +73,7 @@ PATCH /bookingBusinesses/{id}/services/{id}
 ##### <a name="request"></a>Запрос
 В следующем примере обновляется длительность указанной службы.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_bookingservice"
@@ -85,15 +87,15 @@ Content-type: application/json
     "defaultDuration":"PT30M"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-bookingservice-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-bookingservice-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-bookingservice-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 11984b8f0976c3410cd05f2d4a7252939f3e6786
-ms.sourcegitcommit: 6144934d4f6cf8c9797aa19e62285217220c7f45
+ms.openlocfilehash: 41f971e51099c00b93ae5e083103a869e0bfd403
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42268362"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42441356"
 ---
 # <a name="attachment-createuploadsession"></a>вложение: createUploadSession
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -33,6 +35,10 @@ ms.locfileid: "42268362"
 
 > [!TIP]
 > Exchange Online позволяет администраторам настраивать ограничения на размер сообщений для почтовых ящиков Office 365, включая вложения в сообщения. По умолчанию это максимальный размер сообщения 35 МБ. Узнайте [, как настроить максимальный размер сообщения](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb) для поддержки вложений, превышающих ограничение по умолчанию для клиента. 
+
+> [!IMPORTANT] 
+> Если вы присоединяетесь к сообщению в общем или делегированном почтовом ящике, помните о [известной проблеме](/graph/known-issues#attaching-large-files-to-messages) .
+
 
 ## <a name="permissions"></a>Разрешения
 

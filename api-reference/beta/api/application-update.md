@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5850de9653891e0eb4f8acac07d9bd6dd5ea6ada
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: a4229d563e562cd5d8d33086f2fef04d1607ffea
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37934937"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42441440"
 ---
 # <a name="update-application"></a>Обновление приложения
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,23 +44,23 @@ PATCH /applications/{id}
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-| api | [apiApplication](../resources/apiapplication.md) | Задает параметры для приложения, реализующего веб-API. |
+| api | [apiApplication](../resources/apiapplication.md) | Задает параметры приложения, реализующего веб-API. |
 | appRoles | Коллекция [appRole](../resources/approle.md) | Коллекция ролей приложения, которые могут быть объявлены приложением. Эти роли могут назначаться пользователям, группам или субъектам-службам. Значение null не допускается. |
 | displayName | Строка | Отображаемое имя приложения. |
-| граупмембершипклаимс | Строка | Настраивает заявку на **группы** , выданную в маркере доступа пользователя или OAuth 2,0, которое ожидается приложением. Чтобы задать этот атрибут, используйте одно из следующих допустимых строковых значений:<ul><li>`None`</li><li>`SecurityGroup`: Для групп безопасности и ролей Azure Active Directory (Azure AD)</li><li>`All`: Будут получены все группы безопасности, группы рассылки и роли каталога Azure AD, участником которых является вошедшего пользователь</li></ul> |
-| identifierUris | Коллекция String | URI, идентифицирующие приложение в клиенте Azure AD или в проверенном пользовательском домене, если приложение является многоклиентским. Для получения дополнительных сведений см [объект приложения и объекты участника службы](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals). Для выражений фильтра в случае многозначных свойств требуется оператор *any*. Значение null не допускается. |
-| info | [informationalUrl](../resources/informationalurl.md) | Основные сведения о профиле приложения, такие как маркетинг приложения, поддержка, условия обслуживания и URL-адреса заявлений о конфиденциальности. Условия предоставления услуг и заявления о конфиденциальности предоставляются пользователям с помощью пользовательского интерфейса. Дополнительные сведения см. в статье [Add условия предоставления услуг и заявление о конфиденциальности для зарегистрированных приложений Azure AD](https://docs.microsoft.com/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). |
+| groupMembershipClaims | String | Настраивает заявку на **группы** , выданную в маркере доступа пользователя или OAuth 2,0, которое ожидается приложением. Чтобы задать этот атрибут, используйте одно из следующих допустимых строковых значений.<ul><li>`None`</li><li>`SecurityGroup`: Для групп безопасности и ролей Azure Active Directory (Azure AD)</li><li>`All` — предоставит все группы безопасности, группы рассылки и роли каталога Azure AD, членом которых является выполнивший вход пользователь</li></ul> |
+| identifierUris | Коллекция String | URI, идентифицирующие приложение в клиенте Azure AD или в проверенном личном домене, если приложение является мультитенантным. Для получения дополнительных сведений см [объект приложения и объекты участника службы](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals). Для выражений фильтра в случае многозначных свойств требуется оператор *any*. Значение null не допускается. |
+| info | [informationalUrl](../resources/informationalurl.md) | Основные сведения о профиле приложения, такие как маркетинг приложения, поддержка, условия обслуживания и URL-адреса заявлений о конфиденциальности. Условия обслуживания и заявление о конфиденциальности отображаются в окне запроса согласия пользователя. Дополнительные сведения см. в статье [Add условия предоставления услуг и заявление о конфиденциальности для зарегистрированных приложений Azure AD](https://docs.microsoft.com/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). |
 | isFallbackPublicClient | Boolean | Указывает резервный тип приложения как общедоступный клиент, например установленное приложение, запущенное на мобильном устройстве. Значение по умолчанию `false`, то есть резервный тип приложения — это конфиденциальный клиент, например веб-приложение. Существует несколько сценариев, в которых Azure AD не может определить тип клиентского приложения (например, [ропк](https://tools.ietf.org/html/rfc6749#section-4.3) , где он настроен без указания URI перенаправления). В этих случаях Azure AD будет интерпретировать тип приложения на основе значения этого свойства.|
 | keyCredentials | Коллекция [keyCredential](../resources/keycredential.md) | Коллекция ключевых учетных данных, связанных с приложением. Значение null не допускается. |
 | logo | Stream | Основной логотип для приложения. Значение null не допускается. |
-| optionalClaims | optionalClaims | Разработчики приложений могут настроить необязательные утверждения в своих приложениях Azure AD, чтобы указать, какие утверждения они хотят в маркерах, отправляемых приложению службой маркеров безопасности Майкрософт. Дополнительные сведения см. в статье дополнительные [утверждения](https://docs.microsoft.com/azure/active-directory/develop/active-directory-optional-claims) . |
+| optionalClaims | optionalClaims | Разработчики приложений могут настраивать необязательные утверждения в своих приложениях Azure AD, чтобы указать, какие утверждения им нужны в маркерах, отправляемых в приложения службой маркеров безопасности (Майкрософт). Дополнительные сведения см. в статье дополнительные [утверждения](https://docs.microsoft.com/azure/active-directory/develop/active-directory-optional-claims) . |
 | parentalControlSettings | [parentalControlSettings](../resources/parentalcontrolsettings.md) |Указывает параметры родительского контроля для приложения. |
 | passwordCredentials | Коллекция [passwordCredential](../resources/passwordcredential.md)|Коллекция учетных данных паролей, связанных с приложением. Значение null не допускается.|
 | publicClient | [publicClientApplication](../resources/publicclientapplication.md) | Указывает параметры для установленных клиентов, например классических или мобильных устройств. |
 | requiredResourceAccess |Коллекция [requiredResourceAccess](../resources/requiredresourceaccess.md)|Указывает ресурсы, к которым приложению требуется доступ, и устанавливает области разрешений OAuth и роли приложения, требующиеся приложению для каждого из этих ресурсов. Эта предварительная настройка доступа к необходимым ресурсам определяет интерфейс предоставления согласия. Значение null не допускается.|
-| signInAudience | String | Указывает, какие учетные записи Майкрософт поддерживаются для текущего приложения. Поддерживаемые значения:<ul><li>`AzureADMyOrg`: Пользователи с рабочей или учебной учетной записью Майкрософт в клиенте Azure AD в Организации (например, один клиент)</li><li>`AzureADMultipleOrgs`: Пользователи с рабочей или учебной учетной записью Майкрософт в клиенте Azure AD в любой организации (например, с несколькими клиентами)</li> <li>`AzureADandPersonalMicrosoftAccount`: Пользователи с личной учетной записью Майкрософт или рабочей или учебной учетной записью в клиенте Azure AD в любой организации</li></ul> | `AzureADandPersonalMicrosoftAccount` |
+| signInAudience | String | Указывает, какие учетные записи Майкрософт поддерживаются для текущего приложения. Поддерживаемые значения:<ul><li>`AzureADMyOrg` — пользователи с рабочей или учебной учетной записью Майкрософт в клиенте Azure AD моей организации (т. е. один клиент)</li><li>`AzureADMultipleOrgs` — пользователи с рабочей или учебной учетной записью Майкрософт в клиенте Azure AD любой организации (т. е. несколько клиентов)</li> <li>`AzureADandPersonalMicrosoftAccount` — пользователи с личной учетной записью Майкрософт, рабочей или учебной учетной записью в клиенте Azure AD любой организации</li></ul> | `AzureADandPersonalMicrosoftAccount` |
 | tags |Коллекция String| Настраиваемые строки, которые можно использовать для классификации и определения приложения. Значение null не допускается.|
-| токененкриптионкэйид |Строка|Задает него значение KeyID открытого ключа из коллекции keyCredentials. При настройке Azure AD шифрует все выданные им токены с помощью ключа, на который указывает данное свойство. Код приложения, который получает зашифрованный маркер, должен использовать сопоставленный закрытый ключ для расшифровки маркера, прежде чем его можно будет использовать для пользователя, выполнившего вход в систему.|
+| tokenEncryptionKeyId |String|Задает значение открытого ключа keyId из коллекции keyCredentials. При настройке Azure AD шифрует все созданные маркеры с помощью ключа, на который указывает это свойство. Код приложения, получающий зашифрованный маркер, должен использовать соответствующий закрытый ключ для расшифровки маркера, прежде чем его можно будет применить для пользователя, выполнившего вход.|
 | web |[webApplication](../resources/webapplication.md)| Указывает параметры для веб-приложения. |
 
 ## <a name="response"></a>Отклик
@@ -68,7 +70,7 @@ PATCH /applications/{id}
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_application"
@@ -82,15 +84,15 @@ Content-length: 72
   "displayName": "New display name"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-application-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-application-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-application-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

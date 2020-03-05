@@ -1,18 +1,20 @@
 ---
-title: Удаление Токенлифетимеполици
+title: Удаление типа ресурса tokenLifetimePolicy
 description: Удаление Токенлифетимеполици из приложения или servicePrincipal.
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 055da6eb449c8600e39755f4725ce72af35af045
-ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
+ms.openlocfilehash: 1db08aab8d8806574cccfbdaa0e7b414d56f230d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41234451"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42441538"
 ---
-# <a name="remove-tokenlifetimepolicy"></a>Удаление Токенлифетимеполици
+# <a name="remove-tokenlifetimepolicy"></a>Удаление типа ресурса tokenLifetimePolicy
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,7 +43,7 @@ DELETE /servicePrincipals/{id}/tokenLifetimePolicies/{id}$ref
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 

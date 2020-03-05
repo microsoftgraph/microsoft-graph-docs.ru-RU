@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8d0512b808e0ac89cb94e8a429599b27781822f6
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 7eeddd2bbecb82ee0c5b90232a6e0b64de050f9d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40912820"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42440768"
 ---
 # <a name="call-redirect"></a>вызов: redirect
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,8 +57,8 @@ POST /communications/calls/{id}/redirect
 |targets|Коллекция [invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Целевые участники операции перенаправления. Если указано несколько целевых объектов, вызывается выполнение. Это означает, что все целевые объекты будут находиться в одном и том же периоде, и будет подключен только первый целевой объект. Поддерживается до 25 целевых объектов для выполнение.
 |таржетдиспоситион|String|Устаревшие Возможные значения: `default` , `simultaneousRing` ,. `forward` Этот параметр является нерекомендуемым, мы автоматически вычислим, является ли это вызов переадресацией или вызовом выполнение из указанного количества целевых объектов.|
 |timeout|Int32|Время ожидания (в секундах) для операции перенаправления. Диапазон значений времени ожидания составляет от 15 до 90 секунд включительно. Значение времени ожидания по умолчанию составляет 55 секунд для одной цели и 60 секунд для нескольких целевых объектов (подлежит изменению). |
-|масккалли|Boolean|Указывает, следует ли скрыть вызываемого абонента от вызывающего абонента. Если этот параметр имеет значение true, идентификатором вызываемого абонента является "bot". Значение по умолчанию: false.|
-|масккаллер|Boolean|Указывает, следует ли скрыть абонента от вызываемого абонента. Если задано значение true, идентификатором звонящего является идентификатор Bot. Значение по умолчанию: false.|
+|масккалли|Логический|Указывает, следует ли скрыть вызываемого абонента от вызывающего абонента. Если этот параметр имеет значение true, идентификатором вызываемого абонента является "bot". Значение по умолчанию: false.|
+|масккаллер|Логический|Указывает, следует ли скрыть абонента от вызываемого абонента. Если задано значение true, идентификатором звонящего является идентификатор Bot. Значение по умолчанию: false.|
 |callbackUri|String|Это позволяет Боты предоставить определенный URI обратного вызова для текущего вызова, чтобы получать уведомления позже. Если это свойство не задано, вместо него будет использоваться глобальный URI обратного вызова Bot. Это должно быть `https`.|
 
 ## <a name="response"></a>Отклик
@@ -123,7 +125,7 @@ POST /communications/calls/{id}/redirect
 
 ##### <a name="request"></a>Запрос
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request", 
   "name": "call-redirect"
@@ -149,15 +151,15 @@ Content-Type: application/json
   "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-redirect-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-redirect-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-redirect-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: a43cda1f55516d61383f6a31c1742d87eb5c42d2
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: f9a6eb580d7a4873cf9e909308243f22ac2b935a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036132"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42441349"
 ---
 # <a name="get-attachment"></a>Получение вложения
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,19 +29,19 @@ ms.locfileid: "37036132"
 Все эти типы ресурсов вложений являются производными от ресурса [attachment](../resources/attachment.md).
 
 ### <a name="get-the-raw-contents-of-a-file-or-item-attachment"></a>Получение необработанного содержимого вложенного файла или элемента
-Вы можете добавить сегмент `/$value` пути, чтобы получить необработанное содержимое вложения файла или элемента. 
+Чтобы получить необработанное содержимое вложенного файла или элемента, вы можете добавить сегмент пути `/$value`. 
 
-Для вложенного файла тип контента основан на исходном типе контента. См. [пример](#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message) ниже.
+Для вложенного файла тип содержимого определяется исходя из его исходного типа. См. [пример](#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message) ниже.
 
-Для вложенного элемента, который является [контактом](../resources/contact.md), [событием](../resources/event.md)или [сообщением](../resources/message.md), возвращенное содержимое имеет формат MIME.
+Для вложенного элемента, которое является [контактом ](../resources/contact.md), [событием ](../resources/event.md) и [сообщением](../resources/message.md), возвращаемое необработанное содержимое будет иметь формат MIME.
 
-| Тип вложения элемента  | Возвращено необработанное содержимое |
+| тип вложенного элемента  | Возвращаемое необработанное содержимое |
 |:-----------|:----------|
-| **contact** | [vCard](http://www.faqs.org/rfcs/rfc2426.html) Формат MIME. Смотрите [Пример](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message). |
-| **event** | формат MIME iCal. Смотрите [Пример](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message). |
-| **message** | Формат MIME. Смотрите [Пример](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message). |
+| **контакт** | [vCard](http://www.faqs.org/rfcs/rfc2426.html) в формате MIME. См. [пример](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message). |
+| **событие** | iCal в формате MIME. См. [пример](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message). |
+| **сообщение** | Формат MIME. См. [пример](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message). |
 
-При попытке получить `$value` вложение ссылки возвращается HTTP 405.
+При попытке получить `$value` вложенной ссылки происходит возврат HTTP 405.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -59,7 +61,7 @@ ms.locfileid: "37036132"
 В этом разделе показан синтаксис HTTP-запроса GET для каждого из сущностей ([event](../resources/event.md), [Message](../resources/message.md), [Task Task](../resources/outlooktask.md)и [POST](../resources/post.md)), поддерживающих вложения:
 
 - Чтобы получить свойства и связи вложения, укажите идентификатор вложения для индексирования в коллекции **вложений** , прикрепленных к указанному [событию](../resources/event.md), [сообщению](../resources/message.md), [задаче Outlook](../resources/outlooktask.md)или экземпляру [POST](../resources/post.md) .
-- Если вложение представляет собой файл или элемент Outlook (контакт, событие или сообщение), вы можете получить необработанное содержимое вложения, добавив сегмент `/$value` пути в URL-адрес запроса.
+- Если вложением является файл или элемент Outlook (контакт, событие или сообщение), вы можете также получить необработанное содержимое вложения, добавив сегмент пути `/$value` в URL-адрес запроса.
 
 Вложение [события](../resources/event.md):
 
@@ -138,28 +140,28 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$va
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения метод GET возвращает код `200 OK` отклика. 
 
-Если вы получаете свойства и связи вложения, текст отклика включает объект [вложения](../resources/attachment.md) .
-Кроме того, возвращаются свойства этого типа вложения: fileAttachment, [itemAttachment или referenceAttachment.
+При получении свойств и связей вложения текст ответа включает объект [attachment](../resources/attachment.md).
+Кроме того, возвращаются свойства этого типа вложения: [fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md) или [referenceAttachment](../resources/referenceattachment.md).
 
-Если вы получаете необработанное содержимое вложения файла или элемента, текст отклика включает необработанное значение вложения.
+При получении необработанного содержимого вложенного файла или элемента, текст ответа содержит необработанное значение вложения.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-the-properties-of-a-file-attachment"></a>Пример 1: получение свойств вложенного файла
+### <a name="example-1-get-the-properties-of-a-file-attachment"></a>Пример 1. Получение свойств вложенного файла
 
 #### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса на получение свойств вложенного файла сообщения.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_file_attachment_beta",
@@ -169,15 +171,15 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$va
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-file-attachment-beta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-file-attachment-beta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-file-attachment-beta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -186,7 +188,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/A
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "name": "get_file_attachment_beta",
@@ -213,13 +215,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-properties-of-an-item-attachment"></a>Пример 2: получение свойств вложения элемента
+### <a name="example-2-get-the-properties-of-an-item-attachment"></a>Пример 2. Получение свойств вложенного элемента
 
 #### <a name="request"></a>Запрос
 
-В следующем примере показано, как получить вложение элемента для сообщения. Возвращаются свойства **itemAttachment**.
+В следующем примере показано, как получить вложенный элемент в сообщении. Возвращаются свойства **itemAttachment**.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_item_attachment",
@@ -229,15 +231,15 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-item-attachment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-attachment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-attachment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -245,7 +247,7 @@ GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments(
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "name": "get_item_attachment",
@@ -269,12 +271,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message"></a>Пример 3: разверните и получите свойства элемента, вложенного в сообщение.
+### <a name="example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message"></a>Пример 3. Развертывание и изменение свойств элемента, вложенного в сообщение
 #### <a name="request"></a>Запрос
 
-В следующем примере показано, как `$expand` получить свойства элемента (контакта, события или сообщения), вложенного в сообщение. В этом примере вложением является сообщением. Свойства вложенного сообщения также возвращаются.
+В следующем примере показано, как использовать `$expand` для получения свойств элемента (контакт, событие или сообщение), вложенного в сообщение. В этом примере вложением является сообщением. Свойства вложенного сообщения также возвращаются.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_and_expand_item_attachment",
@@ -284,15 +286,15 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-and-expand-item-attachment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-and-expand-item-attachment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-and-expand-item-attachment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -300,7 +302,7 @@ GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments(
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "name": "get_and_expand_item_attachment",
@@ -379,13 +381,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-get-the-properties-of-a-reference-attachment"></a>Пример 4: получение свойств вложения для ссылки
+### <a name="example-4-get-the-properties-of-a-reference-attachment"></a>Пример 4. Получение свойств вложенной ссылки
 
 #### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса на получение вложенной ссылки из данных, касающихся события.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_reference_attachment",
@@ -395,15 +397,15 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachments/AAMkAGE1Mg72tgf7hJp0PICVGCc0g=
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-reference-attachment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-reference-attachment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-reference-attachment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -411,7 +413,7 @@ GET https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachmen
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "name": "get_reference_attachment",
@@ -442,7 +444,7 @@ Content-type: application/json
 ```
 
 
-### <a name="example-5-get-the-raw-contents-of-a-file-attachment-on-a-message"></a>Пример 5: получение необработанного содержимого вложенного файла сообщения
+### <a name="example-5-get-the-raw-contents-of-a-file-attachment-on-a-message"></a>Пример 5. Получение необработанного содержимого вложенного файла в сообщении
 
 #### <a name="request"></a>Запрос
 
@@ -457,8 +459,8 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=/$value
 ```
 
-#### <a name="response"></a>Ответ
-Ниже приведен пример отклика. Текст фактического ответа содержит необработанные байты вложенного файла, которые кратко указаны ниже.
+#### <a name="response"></a>Отклик
+Ниже приведен пример отклика. Фактический текст ответа содержит необработанные байты вложенного файла, которые кратко описаны ниже.
 
 <!-- {
   "blockType": "ignored",
@@ -473,7 +475,7 @@ HTTP/1.1 200 OK
 ```
 
 
-### <a name="example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message"></a>Пример 6: получение необработанного MIME содержимого контакта из вложения в сообщении
+### <a name="example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message"></a>Пример 6. Получение необработанного содержимого MIME вложенного контакта в сообщении
 
 #### <a name="request"></a>Запрос
 
@@ -488,7 +490,7 @@ HTTP/1.1 200 OK
 GET https://graph.microsoft.com/beta/me/messages/AAMkADI5MAAGjk2PxAAA=/attachments/AAMkADI5MAAGjk2PxAAABEgAQACEJqrbJZBNIlr3pGFvd9K8=/$value
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 <!-- {
@@ -522,7 +524,7 @@ END:VCARD
 ```
 
 
-### <a name="example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message"></a>Пример 7: получение необработанного MIME содержимого вложения события в сообщении
+### <a name="example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message"></a>Пример 7. Получение необработанного содержимого MIME вложенного события в сообщении
 
 #### <a name="request"></a>Запрос
 
@@ -602,11 +604,11 @@ END:VCALENDAR
 ```
 
 
-### <a name="example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message"></a>Пример 8: получение необработанного MIME содержимого приглашения на собрание, вложенного в сообщение
+### <a name="example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message"></a>Пример 8. Получение необработанного содержимого MIME вложенного элемента приглашения на собрание в сообщении
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса на получение необработанного содержимого приглашения на собрание (из типа [eventMessage](../resources/eventmessage.md) ), которое было прикреплено к сообщению. Объект **eventMessage** основан на типе **сообщения** .
+Ниже приведен пример запроса на получение необработанного содержимого приглашения на собрание (типа [eventMessage](../resources/eventmessage.md)), вложенного в сообщение. Сущность **eventMessage** основана на типе **сообщения**.
 <!-- {
   "blockType": "ignored",
   "name": "get_value_message_attachment",
@@ -620,7 +622,7 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKiAAA=/attachments/A
 #### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
-Текст отклика включает вложение **eventMessage** в формате MIME. Текст **eventMessage** усекается для краткости. Весь текст сообщения возвращается при фактическом вызове.
+В тексте ответа содержится приложение **eventMessage ** в формате MIME. Текст **eventMessage ** усекается для краткости. Полный текст сообщения возвращается от фактического вызова.
 
 <!-- {
   "blockType": "ignored",

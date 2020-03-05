@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 0e3aab1564d6007924d696a8d07a86c5cc4854b0
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: d5dfce0736cf44e386c5ff2ec1f343ae1aa324c1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40912846"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42440775"
 ---
 # <a name="call-recordresponse"></a>Call: Рекордреспонсе
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -57,11 +59,11 @@ POST /communications/calls/{id}/recordResponse
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |выдан|Коллекция [медиапромпт](../resources/mediaprompt.md) | Приглашения для воспроизведения. Максимальный поддерживаемый размер коллекции Медиапромпт составляет 1.|
-|баржеиналловед|Boolean| Если этот параметр имеет значение true, запрос Рекордреспонсе будет барже в другие существующие запросы записи или плайпромпт в очереди. Значение по умолчанию = false. |
+|баржеиналловед|Логический| Если этот параметр имеет значение true, запрос Рекордреспонсе будет барже в другие существующие запросы записи или плайпромпт в очереди. Значение по умолчанию = false. |
 |инитиалсиленцетимеаутинсекондс | Int32| Максимальное значение параметра "тишина" (тишина пользователя) разрешено с момента запуска операции записи ответа до истечения времени ожидания и сбоев операции. При воспроизведении приглашения этот таймер запускается после завершения приглашения. Значение по умолчанию = 5 секунд, минимум = 1 секунда, максимум = 120 секунд |
 |макссиленцетимеаутинсекондс|Int32| Максимально допустимое время тишины (пауза) после начала диктовки пользователя. Значение по умолчанию = 5 секунд, минимум = 1 секунда, максимум = 120 секунд.|
 |максрекорддуратионинсекондс|Int32| Максимальная длительность операции Рекордреспонсе перед остановкой записи. Значение по умолчанию = 5 секунд, минимум = 1 секунда, максимум = 120 секунд.|
-|плайбип|Boolean| Если этот параметр имеет значение true, воспроизводит звуковой сигнал, указывающий пользователю, что он может начать запись сообщения. Значение по умолчанию = true.|
+|плайбип|Логический| Если этот параметр имеет значение true, воспроизводит звуковой сигнал, указывающий пользователю, что он может начать запись сообщения. Значение по умолчанию = true.|
 |стоптонес|Коллекция String|Остановка заданных тонов в конец записи.|
 |Контекст|String|Уникальная строка контекста клиента. Максимальный лимит — 256 символов.|
 
@@ -79,7 +81,7 @@ POST /communications/calls/{id}/recordResponse
 Ниже показан пример запроса.
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-recordResponse"
@@ -108,7 +110,7 @@ Content-Length: 394
   "stopTones": [ "#", "1", "*" ]
 }
 ```
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-recordresponse-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

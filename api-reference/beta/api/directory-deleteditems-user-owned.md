@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 81a538f8be964521593da11a5a4ab86de8e1b8e1
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 08b15d7fed9f4a5a25211199e7c467a88a97d7ff
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868655"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42435313"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>Список удаленных элементов, принадлежащих пользователю
+
+Пространство имен: Microsoft. Graph
 
 Получает список недавно удаленных элементов, принадлежащих указанному пользователю.  
 
@@ -28,7 +30,7 @@ ms.locfileid: "40868655"
 | --- | --- |
 | Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) |  Не поддерживается. |
-| Приложение | Group.Read.All, Group.ReadWrite.All  |
+| Для приложений | Group.Read.All, Group.ReadWrite.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +44,7 @@ POST /directory/deletedItems/getUserOwnedObjects
 | ------------- | ------------------------- |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса требуются следующие параметры:
 
@@ -52,7 +54,7 @@ POST /directory/deletedItems/getUserOwnedObjects
 |type|String|Тип собственных объектов, которые требуется вернуть; `group` в настоящее время является единственным поддерживаемым значением.|
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешные запросы `200 OK` возвращают коды ответа; объект Response содержит свойства [Directory (удаленные элементы)](../resources/directory.md) .
 

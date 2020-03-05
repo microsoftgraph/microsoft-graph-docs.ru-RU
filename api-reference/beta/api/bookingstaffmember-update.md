@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: d9a9e6d429fddfc087506a02191918571fb4c7dc
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: e710d98ffd287e2c763608d899f74ddf2e6ce82c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36419284"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42441069"
 ---
 # <a name="update-bookingstaffmember"></a>Обновление букингстаффмембер
+
+Пространство имен: Microsoft. Graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,12 +43,12 @@ PATCH /bookingBusinesses/{id}/staffMembers/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|аваилабилитисаффектедбиперсоналкалендар|Boolean|True означает, что если сотрудник является пользователем Office 365, то в API учета используется личный календарь сотрудника в Office 365, а свойство **воркингхаурс** для определения доступности. |
+|аваилабилитисаффектедбиперсоналкалендар|Логический|True означает, что если сотрудник является пользователем Office 365, то в API учета используется личный календарь сотрудника в Office 365, а свойство **воркингхаурс** для определения доступности. |
 |colorIndex|Int32|Определяет цвет для представления сотрудника. Цвет соответствует цветовой палитре на странице " **сведения о персонале** " в приложении "книги".|
 |displayName|String|Имя сотрудника, отображаемое для клиентов.|
 |emailAddress|String|Адрес электронной почты сотрудника. Это может быть тот же клиент Office 365, что и в Организации, или в другом домене электронной почты. Этот адрес электронной почты используется, если для свойства **сендконфирматионстувнер** в политике планирования бизнеса задано значение true.|
-|role|string| Роль сотрудника в Организации. Возможные значения: `guest`, `administrator`, `viewer`, `externalGuest`.|
-|усебусинесшаурс|Boolean|Значение true означает, что доступность сотрудника определяется свойством **businessHours** предприятия. Значение false означает, что доступность определяется значением свойства **воркингхаусе** сотрудника.|
+|role|строка| Роль сотрудника в Организации. Возможные значения: `guest`, `administrator`, `viewer`, `externalGuest`.|
+|усебусинесшаурс|Логический|Значение true означает, что доступность сотрудника определяется свойством **businessHours** предприятия. Значение false означает, что доступность определяется значением свойства **воркингхаусе** сотрудника.|
 |workingHours|Коллекция [букингворкхаурс](../resources/bookingworkhours.md)|Диапазон часов на каждый день недели, когда сотрудник становится доступен для резервирования.|
 
 ## <a name="response"></a>Отклик
@@ -55,7 +57,7 @@ PATCH /bookingBusinesses/{id}/staffMembers/{id}
 ##### <a name="request"></a>Запрос
 В следующем примере для сотрудника в календарном плане изменяется понедельник.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_bookingstaffmember"
@@ -130,15 +132,15 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-bookingstaffmember-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-bookingstaffmember-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-bookingstaffmember-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
