@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: f24726931cd6aec7d4f246879bb3da32d23bdd3c
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: bf6b88ec992734114de7e63e82d97026b22f7081
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792067"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42431622"
 ---
 # <a name="create-customerpaymentjournals"></a>Создание Кустомерпайментжаурналс
+
+Пространство имен: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Создает объект журнала клиентских платежей в Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Разрешения
@@ -41,7 +46,7 @@ POST /financials/companies/{id}/customerPaymentJournals/{id}
 |Авторизация |Bearer {токен}. Обязательный.|
 |Content-Type  |application/json         |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта **кустомерпайментжаурналс** в формате JSON.
 
 ## <a name="response"></a>Отклик

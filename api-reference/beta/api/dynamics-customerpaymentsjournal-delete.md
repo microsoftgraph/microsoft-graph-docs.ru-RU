@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 0ddd675b617c679258b0f5de5363922b1e3e6d8d
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 7844d1caab27cb1cc5e4fd171a79d5c585a16a49
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791731"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42430576"
 ---
 # <a name="delete-customerpaymentjournals"></a>Удаление Кустомерпайментжаурналс
+
+Пространство имен: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Удаление объекта журнала платежей клиентов из Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Разрешения
@@ -38,9 +43,9 @@ DELETE /financials/companies/{id}/customerPaymentJournals/{id}
 |Заголовок       |Значение                     |
 |-------------|--------------------------|
 |Авторизация|Bearer {токен}. Обязательный. |
-|If-Match     |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **кустомерпайментжаурналс**, **кустомерпайментжаурналс** не будет обновлен. |
+|If-Match     |Обязательное. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **кустомерпайментжаурналс**, **кустомерпайментжаурналс** не будет обновлен. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

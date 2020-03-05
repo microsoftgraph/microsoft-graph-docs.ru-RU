@@ -6,14 +6,16 @@ title: Преобразование в другие форматы
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 914f6b5d847c6b8af5439c4b5e83f3d9f281aa65
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 03bb884e8dde82c99d0aadfa2a6e925b0d6552a7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36719383"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42432658"
 ---
 # <a name="download-a-file-in-another-format"></a>Скачивание файла в другом формате
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,10 +48,10 @@ GET /drive/root:/{path and filename}:/content?format={format}
 
 | Значение | Описание                        | Поддерживаемые расширения источника
 |:------|:-----------------------------------|---------------------------------
-| глб   | Преобразует элемент в формат ГЛБ  | крутой, фбкс, obj, лист, STL, 3mf
+| glb   | Преобразует элемент в формат GLB  | COOL, FBX, OBJ, PLY, STL, 3MF
 | html  | Преобразует элемент в формат HTML | EML, MD, MSG
-| JPEG   | Преобразует элемент в формат JPG  | 3G2, 3GP, 3GP2, 3GPP, 3mf, AI, АРВ, ASF, AVI, BAS, bash, bat, BMP, c, КБЛ, cmd, Cool, CPP, CR2, КРВ, CS, CSS, CSV, cur, DCM, dcm30, DIC, ДИКМ, DICOM, ДНГ, doc, DOCX, DWG, EML, EPI,, епсф, епси, GIF, епуб, h, HCP , хеик, хеиф, htm, HTML, ICO, Icon, Java, жфиф, JPEG, JPG, JS, JSON, Key, log, M2TS, M4A, M4V, Markdown, MD, MEF, MOV, Movie, MP3, MP4, MP4V, МРВ, MSG, MTS, неф, НРВ, Number,, ODP,, ОГГ, в формате PICT , POTM, POTX, PPS, ppsx, ппсксм, PPT, PPTM, PPTX, PS, PS1, PSB, PSD, копировать, RAW, RB, RTF, RW1, RW2, sh,, SR2, STL, TIF, TIFF,,, ВебМ, в формате WMA, WMV, XAML, ксбм,, WMV, XML, КСКФ, КСПМ,, ямл
-| pdf   | Преобразует элемент в формат PDF  | doc, DOCX, епуб, EML, htm, HTML, MD, MSG, ODP, ODS, ODT, PPS, ppsx, PPT, PPTX, RTF, TIF, TIFF, XLS, xlsm, XLSX
+| jpg   | Преобразует элемент в формат JPG  | 3G2, 3GP, 3GP2, 3GPP, 3MF, AI, ARW, ASF, AVI, BAS, BASH, BAT, BMP, C, CBL, CMD, COOL, CPP, CR2, CRW, CS, CSS, CSV, CUR, DCM, DCM30, DIC, DICM, DICOM, DNG, DOC, DOCX, DWG, EML, EPI, EPS, EPSF, EPSI, EPUB, ERF, FBX, FPPX, GIF, GLB, H, HCP, HEIC, HEIF, HTM, HTML, ICO, ICON, JAVA, JFIF, JPEG, JPG, JS, JSON, KEY, LOG, M2TS, M4A, M4V, MARKDOWN, MD, MEF, MOV, MOVIE, MP3, MP4, MP4V, MRW, MSG, MTS, NEF, NRW, NUMBERS, OBJ, ODP, ODT, OGG, ORF, PAGES, PANO, PDF, PEF, PHP, PICT, PL, PLY, PNG, POT, POTM, POTX, PPS, PPSX, PPSXM, PPT, PPTM, PPTX, PS, PS1, PSB, PSD, PY, RAW, RB, RTF, RW1, RW2, SH, SKETCH, SQL, SR2, STL, TIF, TIFF, TS, TXT, VB, WEBM, WMA, WMV, XAML, XBM, XCF, XD, XML, XPM, YAML, YML
+| pdf   | Преобразует элемент в формат PDF  | DOC, DOCX, EPUB, EML, HTM, HTML, MD, MSG, ODP, ODS, ODT, PPS, PPSX, PPT, PPTX, RTF, TIF, TIFF, XLS, XLSM, XLSX
 
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 
@@ -60,28 +62,28 @@ GET /drive/root:/{path and filename}:/content?format={format}
 ## <a name="example"></a>Пример
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
 
 ```msgraph-interactive
 GET /drive/items/{item-id}/content?format={format}
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/convert-item-content-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/convert-item-content-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/convert-item-content-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Возвращает ответ `302 Found`, выполняющий перенаправление на URL-адрес скачивания, прошедший предварительную аутентификацию, для преобразованного файла.
 
@@ -98,7 +100,7 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 
 ### <a name="error-responses"></a>Ответы с ошибками
 
-Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
+Дополнительные сведения о возвращении ошибок см. в статье [Ответы с ошибками][error-response].
 
 [error-response]: /graph/errors
 [file-facet]: ../resources/file.md

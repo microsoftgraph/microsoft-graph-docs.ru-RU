@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: ac17678b5cc75d8416918b6f39583d27f9d5dea7
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: a47564285e3aa9977736451bb3e8046f1d5ed31e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791661"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42429988"
 ---
 # <a name="update-employees"></a>Обновление сотрудников
+
+Пространство имен: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Обновление свойств объекта Employee для Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Разрешения
@@ -40,9 +45,9 @@ PATCH /financials/companies/{id}/employees/{id}
 |---------------|--------------------------|
 |Авторизация  |Bearer {токен}. Обязательный. |
 |Content-Type   |application/json.         |
-|If-Match       |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу **сотрудников**, **сотрудники** не будут обновляться. |
+|If-Match       |Обязательное. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу **сотрудников**, **сотрудники** не будут обновляться. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 ## <a name="response"></a>Ответ
@@ -68,7 +73,7 @@ Content-type: application/json
 
 Ниже приведен пример отклика. 
 
-> **Note**: объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 ```json
 HTTP/1.1 200 OK

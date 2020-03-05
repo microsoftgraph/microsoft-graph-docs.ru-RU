@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: a34fe9f02907a8572e2d31e7bec439eb4c8a8b91
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 6cb80ee20192ef18cbfd606b358acf87a51ec67f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791311"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42428399"
 ---
 # <a name="update-shipmentmethods"></a>Обновление Шипментмесодс
+
+Пространство имен: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Обновление свойств объекта метода отгрузки для Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Разрешения
@@ -39,9 +44,9 @@ PATCH /financials/companies/{id}/shipmentMethods/{id}
 |------|-----|
 |Авторизация |Bearer {токен}. Обязательный.|
 |Content-Type  |application/json|
-|If-Match      |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **шипментмесодс**, **шипментмесодс** не будет обновлен. |
+|If-Match      |Обязательное. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **шипментмесодс**, **шипментмесодс** не будет обновлен. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 ## <a name="response"></a>Ответ

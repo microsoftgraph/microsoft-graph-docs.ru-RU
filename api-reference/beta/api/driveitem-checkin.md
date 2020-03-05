@@ -6,14 +6,16 @@ title: Возврат файлов
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 23dd00bcaeff1b6dcf23afa9eae7213cd7ee7e8d
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: ee6a711d1b065784a93a2a2363cfdc6ffbede1a9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36416879"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42433022"
 ---
 # <a name="check-in-changes-to-a-driveitem-resource"></a>Возврат изменений в ресурсе DriveItem
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,14 +43,14 @@ POST /sites/{siteId}/drive/items/{itemId}/checkin
 POST /users/{userId}/drive/items/{itemId}/checkin
 ```
 
-### <a name="request-body"></a>Тело запроса
+### <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 
 |   Имя    | Значение  |                                                Описание                                                |
 | :-------- | :----- | :-------------------------------------------------------------------------------------------------------- |
-| checkInAs | string | Необязательно. Желаемое состояние документа после завершения операции возврата. Может иметь значение `published` либо значение может быть не указано. |
+| checkInAs | string | Необязательный параметр. Желаемое состояние документа после завершения операции возврата. Может иметь значение `published` либо значение может быть не указано. |
 | comment   | string | Комментарий к возврату, сопоставленный с версией.                                                   |
 
 ## <a name="example"></a>Пример
@@ -56,7 +58,7 @@ POST /users/{userId}/drive/items/{itemId}/checkin
 В этом примере показано, как возвратить файл, идентифицируемый по `{item-id}`.
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "checkin-item", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
@@ -67,15 +69,15 @@ Content-Type: application/json
   "comment": "Updating the latest guidelines"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/checkin-item-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/checkin-item-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/checkin-item-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

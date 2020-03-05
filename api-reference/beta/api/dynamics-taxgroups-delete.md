@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 6374936502929a3a7be3c6822d9145eb0034957c
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 960e33b108ec49618126f9e9d77a92dc80be26d7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791248"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42428280"
 ---
 # <a name="delete-taxgroups"></a>Удаление Таксграупс
+
+Пространство имен: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Удаление объекта налоговой группы из Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Разрешения
@@ -38,9 +43,9 @@ DELETE /financials/companies/{id}/taxGroups/{id}
 |Заголовок|Значение|
 |------|-----|
 |Авторизация  |Bearer {токен}. Обязательный. |
-|If-Match       |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **таксграупс**, **таксграупс** не будет обновлен. |
+|If-Match       |Обязательное. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **таксграупс**, **таксграупс** не будет обновлен. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

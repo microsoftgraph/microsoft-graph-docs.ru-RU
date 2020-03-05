@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 71f8f868531c0a7bf690b92cd9aac2212c79d8f1
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 795b47ff0590ef8d9cf42409eea6031a544a2e09
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791451"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42428791"
 ---
 # <a name="get-journallines"></a>Получение Жаурналлинес
+
+Пространство имен: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Получение свойств и связей объекта строки журнала для Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Разрешения
@@ -40,7 +45,7 @@ GET /financials/companies/{id}/journals/{id}/journalLines/{id}
 |-------------|--------------------------|
 |Авторизация|Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -59,7 +64,7 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}/jou
 
 Ниже приведен пример отклика. 
 
-> **Note**: объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 ```json
 {

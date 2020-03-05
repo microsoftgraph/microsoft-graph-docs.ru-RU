@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: e2e253131da757e0a1565d8ef8b3e9b48d6f26b9
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: c89f99a32ba04012dcd33587dce01545f6c31cea
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791675"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42430338"
 ---
 # <a name="get-dimensions"></a>Получение измерений
+
+Пространство имен: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Получение свойств и связей объекта **измерений** для Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Разрешения
@@ -40,7 +45,7 @@ GET /financials/companies/{id}/dimensions/{id}
 |------|-----|
 |Авторизация  |Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -59,7 +64,7 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/dimensions/{id}
 
 Ниже приведен пример отклика. 
 
-> **Note**: объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 ```json
 {

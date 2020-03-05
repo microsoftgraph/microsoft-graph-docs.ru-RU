@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 2fd0cf37d37e2e9e903f842a1a61c5c19b905372
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: d916ed3e1de5643983808c3bd410a2746d64c2b5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792053"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42431902"
 ---
 # <a name="get-countriesregions"></a>Получение Каунтриесрегионс
+
+Пространство имен: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Получение свойств и связей объекта Каунтриесрегионс для Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Разрешения
@@ -39,7 +44,7 @@ GET /financials/companies/{id}/countriesRegions/{id}
 |------|-----|
 |Авторизация  |Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -58,7 +63,7 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/countriesRegions/
 
 Ниже приведен пример отклика. 
 
-> **Note**: объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 ```json
 {

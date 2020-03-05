@@ -8,14 +8,19 @@ localization_priority: Normal
 ms.author: solsen
 doc_type: apiPageType
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 15e29f2cfce50cb2e24e503fc893354fbb94f48a
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 70b0e5824f29c356a1df3c74e33a3fed355bd166
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792221"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42431979"
 ---
 # <a name="get-agedaccountsreceivable"></a>Получение Ажедаккаунтсрецеивабле
+
+Пространство имен: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Получение свойств и связей для устаревших объектов отчета о расчетах с поставщиками для Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Разрешения
@@ -39,7 +44,7 @@ GET /financials/companies/{id}/agedAccountsReceivable
 |------|-----|
 |Авторизация  |Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -59,7 +64,7 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/agedAccountsRecei
 
 Ниже приведен пример отклика. 
 
-> **Note**: объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 ```json
 {

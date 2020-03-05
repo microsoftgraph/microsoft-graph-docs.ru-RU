@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 7be8690da317a727cc93cbe95ba0a7b52ab7aab0
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: e58f0f3c44d9ed7e78ecdd8176d4710e89542f7b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792004"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42431587"
 ---
 # <a name="create-employees"></a>Создание сотрудников
+
+Пространство имен: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Создайте объект Employee в Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Разрешения
@@ -40,7 +45,7 @@ POST /financials/companies/{id}/employees
 |Авторизация |Bearer {токен}. Обязательный.|
 |Content-Type  |application/json         |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта **Employees** в формате JSON.
 
 ## <a name="response"></a>Отклик
@@ -82,7 +87,7 @@ Content-type: application/json
 
 Ниже приведен пример отклика. 
 
-> **Note**: объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 ```json
 HTTP/1.1 201 Created

@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 744b1d13af8b91b6994164bb03cae27926ad5335
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: eeeb6a2143963803dc9b6ba06a2e780d7c7fab02
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36792011"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42431517"
 ---
 # <a name="create-items"></a>Создание элементов
+
+Пространство имен: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Создание элемента в Dynamics 365 Business Central для использования в счетах, квотах и т. д.
 
 ## <a name="permissions"></a>Разрешения
@@ -40,7 +45,7 @@ POST /financials/companies/{id}/items
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type |application/json         |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта **Items** в формате JSON.
 
 ## <a name="response"></a>Отклик
@@ -76,7 +81,7 @@ Content-type: application/json
 
 Ниже приведен пример отклика. 
 
-> **Note**: объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 ```json
 HTTP/1.1 201 Created

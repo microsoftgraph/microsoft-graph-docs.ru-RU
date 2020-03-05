@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: c0d047840143c87618eb33fc1ee9d0bc074f3f7e
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 2350bb112b0585e822c4c4c92af5511705b3612c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791955"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42431384"
 ---
 # <a name="create-journallines"></a>Создание Жаурналлинес
+
+Пространство имен: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Создает объект строки журнала в Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Разрешения
@@ -41,7 +46,7 @@ POST /financials/companies/{id}/journals/{id}/journalLines/{id}
 |Авторизация |Bearer {токен}. Обязательный.|
 |Content-Type  |application/json         |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта **жаурналлинес** в формате JSON.
 
 ## <a name="response"></a>Отклик

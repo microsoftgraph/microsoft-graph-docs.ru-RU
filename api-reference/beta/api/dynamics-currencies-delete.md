@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 6c2b5235cdc8f841ad7fb11c5319d236f727d4da
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 8900330ed7f7f62aa9f2ba3de05aef01044cbbeb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791843"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42431045"
 ---
 # <a name="delete-currencies"></a>Удаление валют
+
+Пространство имен: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Удаление объекта Currency из Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Разрешения
@@ -39,10 +44,10 @@ DELETE /financials/companies/{id}/currencies/{id}
 |Заголовок|Значение|
 |------|-----|
 |Авторизация  |Bearer {токен}. Обязательный. |
-|If-Match       |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **валютах**, то **валюты** не будут
+|If-Match       |Обязательное. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **валютах**, то **валюты** не будут
  обновленный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

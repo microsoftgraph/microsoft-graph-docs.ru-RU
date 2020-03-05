@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: b75a8d70b2692fb5add39e12e388aa364e8ea585
-ms.sourcegitcommit: c68a83d28fa4bfca6e0618467934813a9ae17b12
+ms.openlocfilehash: 67d95e18f16fd7a556ef78f13dbb1e09f1eb6b8f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/07/2019
-ms.locfileid: "36791626"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42429946"
 ---
 # <a name="get-generalledgerentries"></a>Получение Женералледжерентриес
+
+Пространство имен: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Получение свойств и связей объекта записи главной книги для Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Разрешения
@@ -38,9 +43,9 @@ GET /financials/companies/{id}/generalLedgerEntries/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок       |Значение             |
 |-------------|------------------|
-|Авторизация|Носителя. Обязательно. |
+|Authorization|Носителя. Обязательный элемент. |
 
-## <a name="request-body"></a>Основной текст запросов
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -59,7 +64,7 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/generalLedgerEntr
 
 Ниже приведен пример отклика. 
 
-> **Note**: объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 ```json
 {

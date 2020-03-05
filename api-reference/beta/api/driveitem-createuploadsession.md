@@ -6,14 +6,16 @@ title: Возобновляемая отправка файлов
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 33bd220fcacaa513495a277108d68f19f901d053
-ms.sourcegitcommit: 2ddc63c889fc2f4666aa55bca7ce0221ab899abf
+ms.openlocfilehash: 764d58d0bd4c26d4222eccaef61be1ecebbbe056
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "39895359"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42432791"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Отправка больших файлов с помощью сеанса отправки
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -165,7 +167,7 @@ Content-Range: bytes 0-25/128
 **Важно!** Приложение должно указывать в заголовках **Content-Range** всех запросов один и тот же общий размер файла.
 Если объявить для диапазона байтов другой размер файла, запрос не будет выполнен.
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 После выполнения запроса сервер отправит в ответ код `202 Accepted`, если требуется отправить дополнительные диапазоны байтов.
 
