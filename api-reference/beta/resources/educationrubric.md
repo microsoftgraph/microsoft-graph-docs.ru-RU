@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: b43b611465af4dabb62d9dd741eb9a8670f241b9
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: 6c448652719f20ab2edd7c283ea18e99a37edbbd
+ms.sourcegitcommit: fc818699566f03493937be95447eb9f656a1f950
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36173239"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534435"
 ---
 # <a name="educationrubric-resource-type"></a>Тип ресурса Едукатионрубрик
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,8 +26,9 @@ Rubricа, который можно прикрепить к назначению
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Получение Едукатионрубрик](../api/educationrubric-get.md) | [Едукатионрубрик](educationrubric.md) | Чтение свойств и связей объекта Едукатионрубрик. |
-| [Обновление Едукатионрубрик](../api/educationrubric-update.md) | [Едукатионрубрик](educationrubric.md) | Обновление объекта Едукатионрубрик. |
+| [Создание Едукатионрубрик](../api/educationuser-post-rubrics.md) | [едукатионрубрик](educationrubric.md) | Создание нового объекта Едукатионрубрик. |
+| [Получение Едукатионрубрик](../api/educationrubric-get.md) | [едукатионрубрик](educationrubric.md) | Чтение свойств и связей объекта Едукатионрубрик. |
+| [Обновление Едукатионрубрик](../api/educationrubric-update.md) | [едукатионрубрик](educationrubric.md) | Обновление объекта Едукатионрубрик. |
 | [Удаление Едукатионрубрик](../api/educationrubric-delete.md) | Нет | Удаление объекта Едукатионрубрик. |
 
 ## <a name="properties"></a>Свойства
@@ -36,13 +39,13 @@ Rubricа, который можно прикрепить к назначению
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |description|[itemBody](itembody.md)|Описание этого Rubric.|
 |displayName|String|Имя этого Rubric.|
-|снижения|[Едукатионассигнментградетипе](educationassignmentgradetype.md)|Тип ступенчатости этого Rubric — NULL для нулевых точек Rubric или [едукатионассигнментпоинтсградетипе](educationassignmentpointsgradetype.md) для точек Rubric.|
+|снижения|[едукатионассигнментградетипе](educationassignmentgradetype.md)|Тип ступенчатости этого Rubric — NULL для нулевых точек Rubric или [едукатионассигнментпоинтсградетипе](educationassignmentpointsgradetype.md) для точек Rubric.|
 |lastModifiedBy|[identitySet](identityset.md)|Последний пользователь для изменения ресурса.|
-|lastModifiedDateTime|DateTimeOffset|Момент времени последнего изменения ресурса.  Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601, причем всегда используется время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|lastModifiedDateTime|DateTimeOffset|Момент времени последнего изменения ресурса.  Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |тонов|Коллекция [рубриклевел](rubriclevel.md)|Коллекция уровней, составляющих данный Rubric.|
 |являются|Коллекция [рубриккуалити](rubricquality.md)|Коллекция качеств, составляющих этот Rubric.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Нет
 

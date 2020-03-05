@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 08fcefafe9a354a57415a7d05bee1ec57ffdc138
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: dd70512db17df29685c4af2d8aa4c410a78642b0
+ms.sourcegitcommit: fc818699566f03493937be95447eb9f656a1f950
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331306"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534441"
 ---
 # <a name="accesspackageassignmentpolicy-resource-type"></a>Тип ресурса Акцесспаккажеассигнментполици
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,7 +46,6 @@ ms.locfileid: "42331306"
 |дуратиониндайс|Int32|Количество дней, в течение которых назначения из этой политики последний раз до истечения срока действия.|
 |expirationDateTime|DateTimeOffset|Срок действия для назначений, созданных в этой политике. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |id|String| Только для чтения.|
-|исдениполици|Логический|Если этот параметр имеет значение true, доступ не будет разрешен. Только для чтения.|
 |модифиедби|String|Только для чтения.|
 |modifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |рекуестаппровалсеттингс|[аппровалсеттингс](approvalsettings.md)|Кто должен утверждать запросы на пакет Access в этой политике.|

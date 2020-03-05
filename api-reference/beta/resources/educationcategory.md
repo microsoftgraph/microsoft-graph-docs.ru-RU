@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 4732bab700ab23869e0463437288b1aa8897aa0e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 14a399e09c74e439b64a273695b65e5a96cd25f8
+ms.sourcegitcommit: fc818699566f03493937be95447eb9f656a1f950
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972791"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534390"
 ---
 # <a name="educationcategory-resource-type"></a>Тип ресурса Едукатионкатегори
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +25,8 @@ ms.locfileid: "35972791"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение Едукатионкатегори](../api/educationcategory-get.md) | [Едукатионкатегори](educationcategory.md) | Получение существующего **едукатионкатегори**.|
+|[Создание категории](../api/educationclass-post-category.md) | [едукатионкатегори](educationcategory.md) | Создание нового **едукатионкатегори**.|
+|[Получение Едукатионкатегори](../api/educationcategory-get.md) | [едукатионкатегори](educationcategory.md) | Получение существующего **едукатионкатегори**.|
 |[Удаление категории](../api/educationcategory-delete.md) | Нет | Удаление **едукатионкатегори**.|
 
 
