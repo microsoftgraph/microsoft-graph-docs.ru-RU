@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 43de5d2a1d83eb33ecb7a9618a76001c1d8e4b6c
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: f671e741f63a20575c3f7c189494507ca1e83305
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42161968"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42468220"
 ---
 # <a name="delete-userexperienceanalyticsdevicestartupprocessperformance"></a>Удаление Усерекспериенцеаналитиксдевицестартуппроцессперформанце
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

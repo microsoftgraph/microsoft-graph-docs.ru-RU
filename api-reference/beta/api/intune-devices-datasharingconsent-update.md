@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6f0fafa578b115b1b3f9bce8feabae7181f522cd
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: f8a856ce266380796344e178279a0629ddac2488
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39945209"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42469904"
 ---
 # <a name="update-datasharingconsent"></a>Обновление Даташарингконсент
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -41,27 +43,27 @@ PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [даташарингконсент](../resources/intune-devices-datasharingconsent.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [даташарингконсент](../resources/intune-devices-datasharingconsent.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор согласия общего доступа к данным|
-|сервицедисплайнаме|Строка|Отображаемое имя рабочего процесса службы|
-|термсурл|Строка|Термсурл для согласия общего доступа к данным|
-|granted|Boolean|Состояние предоставления согласия на общий доступ к данным|
+|id|String|Идентификатор согласия общего доступа к данным|
+|сервицедисплайнаме|String|Отображаемое имя рабочего процесса службы|
+|термсурл|String|Термсурл для согласия общего доступа к данным|
+|granted|Логический|Состояние предоставления согласия на общий доступ к данным|
 |грантдатетиме|DateTimeOffset|Для этой учетной записи предоставлено согласие по времени|
-|грантедбюпн|Строка|Имя участника-пользователя, которому назначено согласие для этой учетной записи.|
-|грантедбюсерид|Строка|UserId пользователя, который предоставил согласие для этой учетной записи|
+|грантедбюпн|String|Имя участника-пользователя, которому назначено согласие для этой учетной записи.|
+|грантедбюсерид|String|UserId пользователя, который предоставил согласие для этой учетной записи|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [даташарингконсент](../resources/intune-devices-datasharingconsent.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 58bda115444b78ee414b2d6a445ab97b489736d0
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 7a2b6e815fb96ca14c78be467921c9926d8e4bba
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42162297"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42470604"
 ---
 # <a name="update-devicemanagementsettingcategory"></a>Обновление Девицеманажементсеттингкатегори
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -53,7 +55,7 @@ PATCH /deviceManagement/categories/{deviceManagementSettingCategoryId}
 |:---|:---|:---|
 |id|String|Идентификатор категории|
 |displayName|Строка|Имя категории|
-|хасрекуиредсеттинг|Boolean|Категория содержит параметры, необходимые для верхнего уровня|
+|хасрекуиредсеттинг|Логический|Категория содержит параметры, необходимые для верхнего уровня|
 
 
 

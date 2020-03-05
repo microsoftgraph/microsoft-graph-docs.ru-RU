@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2622a418d39e01f1d5e965de28fc5a8ef8922391
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 78c748e038ca2c8b266ae61a5a2bc6645cd3b693
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42162080"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42468644"
 ---
 # <a name="update-manageddeviceoverview"></a>Обновление объекта managedDeviceOverview
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

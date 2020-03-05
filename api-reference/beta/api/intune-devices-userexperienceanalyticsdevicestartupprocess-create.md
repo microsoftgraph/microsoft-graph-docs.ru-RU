@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4d48c58274e731afac219424bd333f840f9c37bf
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 7df6088f0d8af5bdb1dbdbe4303cd7a634b7522b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42162010"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42468336"
 ---
 # <a name="create-userexperienceanalyticsdevicestartupprocess"></a>Создание Усерекспериенцеаналитиксдевицестартуппроцесс
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
