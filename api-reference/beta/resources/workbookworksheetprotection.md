@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: ed6f52074836368eade8851ea32f1e8ef64e493e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ab5d3101b1b9cabf8843d3726f036de74bf3a258
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007041"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519101"
 ---
 # <a name="workbookworksheetprotection-resource-type"></a>Тип ресурса Воркбукворкшитпротектион
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,17 +25,17 @@ ms.locfileid: "36007041"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение Воркбукворкшитпротектион](../api/worksheetprotection-get.md) | [Воркбукворкшитпротектион](workbookworksheetprotection.md) |Чтение свойств и связей объекта Воркбукворкшитпротектион.|
+|[Получение Воркбукворкшитпротектион](../api/worksheetprotection-get.md) | [воркбукворкшитпротектион](workbookworksheetprotection.md) |Чтение свойств и связей объекта Воркбукворкшитпротектион.|
 |[Protect](../api/worksheetprotection-protect.md)|Нет|Защита листа. Выдает исключение, если лист защищен.|
 |[Unprotect](../api/worksheetprotection-unprotect.md)|Нет|Снятие защиты с листа|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|options|[Воркбукворкшитпротектионоптионс](workbookworksheetprotectionoptions.md)|Параметры защиты листа. Только для чтения.|
+|options|[воркбукворкшитпротектионоптионс](workbookworksheetprotectionoptions.md)|Параметры защиты листа. Только для чтения.|
 |protected|boolean|Указывает, защищен ли лист.  Только для чтения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: baywet
 doc_type: conceptualPageType
 ms.prod: ''
-ms.openlocfilehash: af08e7a405492a8a7ac02b9889a881190a5689af
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: aa8bcf293c0b85c242a442961e07e81fb6f9a818
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394437"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519444"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Получение уведомлений об изменениях с помощью API Microsoft Graph 
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -66,5 +68,5 @@ REST API Microsoft Graph использует механизм веб-перех
 [group]: ./group.md
 [message]: ./message.md
 [user]: ./user.md
-[каллрекорд]: ./callrecords-callrecord.md
+[callRecord]: ./callrecords-callrecord.md
 [alert]: ./alert.md

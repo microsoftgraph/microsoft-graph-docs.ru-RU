@@ -5,14 +5,16 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 51e72d21cfb0e26e46a7d247f4ede59b112893ea
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: ffe6830088bd60c4de9cea8def8e8202d1b33f13
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450801"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519542"
 ---
 # <a name="useranalytics-resource-type"></a>Тип ресурса Усераналитикс
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,9 +32,9 @@ ms.locfileid: "36450801"
 |:-------------|:------------|:------------|
 |settings|[settings](settings.md)|Текущие параметры пользователя для использования API аналитики.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
-| Отношение | Тип        | Описание |
+| Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
 |активитистатистикс|Коллекция [активитистатистикс](activitystatistics.md)| Коллекция рабочих действий, затраченных пользователем во время и за пределами рабочего времени. Только для чтения. Допускается значение null.|
 

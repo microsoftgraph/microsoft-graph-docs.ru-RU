@@ -5,14 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 6ec27300e720892debbd458970063f1b79270597
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 27024cdc75358d80849b7fa67ff6262faadbbe46
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007069"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519171"
 ---
 # <a name="workbookrangeformat-resource-type"></a>Тип ресурса Воркбукранжеформат
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,10 +25,10 @@ ms.locfileid: "36007069"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение Воркбукранжеформат](../api/rangeformat-get.md) | [Воркбукранжеформат](workbookrangeformat.md) |Чтение свойств и связей объекта rangeFormat.|
-|[Создание Воркбукранжебордер](../api/rangeformat-post-borders.md) |[Воркбукранжебордер](workbookrangeborder.md)| Создание объекта RangeBorder путем добавления в коллекцию границ.|
+|[Получение Воркбукранжеформат](../api/rangeformat-get.md) | [воркбукранжеформат](workbookrangeformat.md) |Чтение свойств и связей объекта rangeFormat.|
+|[Создание Воркбукранжебордер](../api/rangeformat-post-borders.md) |[воркбукранжебордер](workbookrangeborder.md)| Создание объекта RangeBorder путем добавления в коллекцию границ.|
 |[Список границ](../api/rangeformat-list-borders.md) |Коллекция [воркбукранжебордер](workbookrangeborder.md)| Получение коллекции объектов RangeBorder.|
-|[Обновление](../api/rangeformat-update.md) | [Воркбукранжеформат](workbookrangeformat.md) |Обновление объекта RangeFormat. |
+|[Обновление](../api/rangeformat-update.md) | [воркбукранжеформат](workbookrangeformat.md) |Обновление объекта RangeFormat. |
 |[Autofitcolumns](../api/rangeformat-autofitcolumns.md)|Нет|Изменяет ширину столбцов текущего диапазона на оптимальную с учетом текущих данных в столбцах.|
 |[Autofitrows](../api/rangeformat-autofitrows.md)|Нет|Изменяет высоту строк текущего диапазона на оптимальную с учетом текущих данных в столбцах.|
 
@@ -34,17 +36,17 @@ ms.locfileid: "36007069"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |columnWidth|double|Возвращает или задает ширину всех столбцов в пределах диапазона. Если столбцы разной ширины, будет возвращено значение NULL.|
-|horizontalAlignment|string|Представляет горизонтальное выравнивание для указанного объекта. Возможные значения: `General`, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`, `Distributed`.|
+|horizontalAlignment|строка|Представляет горизонтальное выравнивание для указанного объекта. Возможные значения: `General`, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`, `Distributed`.|
 |rowHeight|double|Возвращает или задает высоту всех строк в диапазоне. Если строки разной высоты, будет возвращено значение NULL.|
 |verticalAlignment|string|Представляет вертикальное выравнивание для указанного объекта. Возможные значения: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.|
 |wrapText|boolean|Указывает, использует ли Excel обтекание текстом для объекта. Значение null указывает, что для диапазона в целом не применяется согласованный параметр обтекания.|
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |borders|Коллекция [воркбукранжебордер](workbookrangeborder.md)|Коллекция объектов границы, которые применяются к общему выделенному диапазону. Только для чтения.|
-|fill|[Воркбукранжефилл](workbookrangefill.md)|Возвращает объект заливки, определенный для всего диапазона. Только для чтения.|
-|font|[Воркбукранжефонт](workbookrangefont.md)|Возвращает объект шрифта, определенный для общего выбранного диапазона. Только для чтения.|
+|fill|[воркбукранжефилл](workbookrangefill.md)|Возвращает объект заливки, определенный для всего диапазона. Только для чтения.|
+|font|[воркбукранжефонт](workbookrangefont.md)|Возвращает объект шрифта, определенный для общего выбранного диапазона. Только для чтения.|
 |protection|[formatProtection](formatprotection.md)|Возвращает объект защиты формата для диапазона. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON

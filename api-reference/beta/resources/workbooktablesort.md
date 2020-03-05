@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: ea0332f1ad00029cf511f2bc55aca80836e5ef2c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 422c1836317d7299b2e485d578561dda6e1bab91
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007034"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519115"
 ---
 # <a name="workbooktablesort-resource-type"></a>Тип ресурса Воркбуктаблесорт
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +25,7 @@ ms.locfileid: "36007034"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта TableSort](../api/tablesort-get.md) | [Воркбуктаблесорт](workbooktablesort.md) |Чтение свойств и связей объекта tableSort.|
+|[Получение объекта TableSort](../api/tablesort-get.md) | [воркбуктаблесорт](workbooktablesort.md) |Чтение свойств и связей объекта tableSort.|
 |[Apply](../api/tablesort-apply.md)|Нет|Выполняет сортировку.|
 |[Clear](../api/tablesort-clear.md)|Нет|Удаляет текущие параметры сортировки таблицы. При этом сбрасывается состояние кнопок в заголовках, но порядок сортировки таблицы остается неизменным.|
 |[Reapply](../api/tablesort-reapply.md)|Нет|Повторно применяет текущие параметры сортировки к таблице.|
@@ -34,10 +36,10 @@ ms.locfileid: "36007034"
 |matchCase|boolean|Указывает, учитывался ли регистр при последней сортировке таблице. Только для чтения.|
 |method|string|Указывает метод сортировки китайских символов, который использовался при последней сортировке таблицы. Возможные значения: `PinYin`, `StrokeCount`. Только для чтения.|
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|fields|[Воркбуксортфиелд](workbooksortfield.md)|Указывает текущие условия, которые использовались при последней сортировке таблицы. Только для чтения.|
+|fields|[воркбуксортфиелд](workbooksortfield.md)|Указывает текущие условия, которые использовались при последней сортировке таблицы. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

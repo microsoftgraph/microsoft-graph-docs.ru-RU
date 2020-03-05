@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 42414f0089cf3e33529796ebbeb53b95bc1d4ef2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 60d37ab606668fbe6828293112997980c7e4580c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964047"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519311"
 ---
 # <a name="workbookchartlegend-resource-type"></a>Тип ресурса Воркбукчартлеженд
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,8 +24,8 @@ ms.locfileid: "35964047"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение Воркбукчартлеженд](../api/chartlegend-get.md) | [Воркбукчартлеженд](workbookchartlegend.md) |Чтение свойств и связей объекта chartLegend.|
-|[Обновление](../api/chartlegend-update.md) | [Воркбукчартлеженд](workbookchartlegend.md) |Обновление объекта ChartLegend. |
+|[Получение Воркбукчартлеженд](../api/chartlegend-get.md) | [воркбукчартлеженд](workbookchartlegend.md) |Чтение свойств и связей объекта chartLegend.|
+|[Обновление](../api/chartlegend-update.md) | [воркбукчартлеженд](workbookchartlegend.md) |Обновление объекта ChartLegend. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -32,10 +34,10 @@ ms.locfileid: "35964047"
 |position|string|Представляет расположение легенды на диаграмме. Допустимые значения: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.|
 |visible|boolean|Логическое значение, представляющее видимость объекта ChartLegend.|
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|format|[Воркбукчартлежендформат](workbookchartlegendformat.md)|Представляет форматирование легенды диаграммы, включая заливку и шрифт. Только для чтения.|
+|format|[воркбукчартлежендформат](workbookchartlegendformat.md)|Представляет форматирование легенды диаграммы, включая заливку и шрифт. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

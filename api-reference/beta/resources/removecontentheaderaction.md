@@ -5,14 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 99f3b77607b34cb68cdef3fa9fc5658ed06b52ec
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 907113e20b5e4257a672190433efd055a628c17f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938943"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521154"
 ---
 # <a name="removecontentheaderaction-resource-type"></a>Тип ресурса Ремовеконтенсеадерактион
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +24,7 @@ ms.locfileid: "37938943"
 
 | Свойство       | Тип              | Описание                                                |
 | :------------- | :---------------- | :--------------------------------------------------------- |
-| уиелементнамес | Коллекция строк | Имя элемента пользовательского интерфейса заголовка, который требуется удалить. |
+| уиелементнамес | Коллекция String | Имя элемента пользовательского интерфейса заголовка, который требуется удалить. |
 
 ## <a name="json-representation"></a>Представление JSON
 

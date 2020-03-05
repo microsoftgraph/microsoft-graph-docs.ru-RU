@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: aad97177a06933d2dd98c5cc94744450197f7dcb
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 6212721774b9b7bc47a4e312d438f1b001a90bef
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939602"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521906"
 ---
 # <a name="personname-resource-type"></a>Тип ресурса personName
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,23 +27,23 @@ ms.locfileid: "37939602"
 | Метод                                     | Возвращаемый тип                 | Описание                                             |
 |:-------------------------------------------|:----------------------------|:--------------------------------------------------------|
 | [Получение personName](../api/personname-get.md) | [personName](personname.md) | Чтение свойств и связей объекта personName. |
-| [Update](../api/personname-update.md)      | [personName](personname.md) | Обновление объекта personName.                               |
-| [Delete](../api/personname-delete.md)      | Нет.                        | Удаление объекта personName.                               |
+| [обновление](../api/personname-update.md).      | [personName](personname.md) | Обновление объекта personName.                               |
+| [удаление](../api/personname-delete.md);      | Нет                        | Удаление объекта personName.                               |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип                              | Описание |
 |:-------------|:----------------------------------|:------------|
 |displayName   |Строка                             | Предоставляет упорядоченную визуализацию имени и фамилии в зависимости от языкового стандарта пользователя или устройства. |
-|первыми         |Строка                             | Имя пользователя.                                                                                      |
+|первыми         |String                             | Имя пользователя.                                                                                      |
 |initials      |String                             | Инициалы пользователя.                                                                                        |
-|лангуажетаг   |Строка                             | Содержит имя языка (EN-US, No-NetBIOS, en-AU), следуя формату IETF BCP47.                        |
-|Фамили          |Строка                             | Фамилия пользователя.                                                                                       |
-|маиден        |Строка                             | Маиден имя пользователя.                                                                                     |
-|назван        |Строка                             | Миддлие имя пользователя.                                                                                    | 
-|прозвищ      |Строка                             | Псевдоним пользователя.                                                                                        |
+|лангуажетаг   |String                             | Содержит имя языка (EN-US, No-NetBIOS, en-AU), следуя формату IETF BCP47.                        |
+|Фамили          |String                             | Фамилия пользователя.                                                                                       |
+|маиден        |String                             | Маиден имя пользователя.                                                                                     |
+|назван        |String                             | Миддлие имя пользователя.                                                                                    | 
+|прозвищ      |String                             | Псевдоним пользователя.                                                                                        |
 |произношение |[йомиперсоннаме](yomipersonname.md)| Руководство по произношению имени пользователя.                                                                 |
-|суффикс        |Строка                             | Обозначения, используемые после имени пользователя (например, "доктор").                                                             |
+|суффикс        |String                             | Обозначения, используемые после имени пользователя (например, "доктор").                                                             |
 |title         |String                             | Хонорификс используется для префикса имени пользователя (например, Dr, Sir, мадам, MRS).                                            |
 
 ## <a name="relationships"></a>Связи

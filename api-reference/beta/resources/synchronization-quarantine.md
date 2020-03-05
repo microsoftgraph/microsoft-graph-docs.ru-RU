@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d5e36d62c26225a3dda5fe0adb4610c56c226b79
-ms.sourcegitcommit: d419565add1f731be50c9b5911eb1310fa007097
+ms.openlocfilehash: 2a0564630857a7b032ad076e5fa10556f456d064
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280703"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520130"
 ---
 # <a name="synchronizationquarantine-resource-type"></a>Тип ресурса Синчронизатионкуарантине
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

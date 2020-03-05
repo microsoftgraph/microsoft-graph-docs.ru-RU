@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: azure-ad
-ms.openlocfilehash: a67cfbccf9d05872ec0d9207ac54c51cda222053
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 751ac6af11b8fdb5709dad816ad2e4c7f2cb53db
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964580"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519997"
 ---
 # <a name="targetresource-resource-type"></a>Тип ресурса targetResource
+
+Пространство имен: Microsoft. Graph
 
 Представляет целевые типы ресурсов, связанные с действиями аудита. 
 

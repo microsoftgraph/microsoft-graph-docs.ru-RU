@@ -5,31 +5,33 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: cbe6297388907f28f8841e0a1dcb2ec3ae788844
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 237cfc933cbabd628320131866f7bf24ba0195c7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964356"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519815"
 ---
 # <a name="teamsuseractivityuserdetail-resource-type"></a>Тип ресурса Теамсусерактивитюсердетаил
+
+Пространство имен: Microsoft. Graph
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                | Тип              |
 | :---------------------- | :---------------- |
-| Репортрефрешдате       | Дата              |
+| репортрефрешдате       | Дата              |
 | userPrincipalName       | String            |
-| Ластактивитидате        | Дата              |
-| isDeleted               | Boolean           |
-| Делетеддате             | Дата              |
-| Ассигнедпродуктс        | Коллекция строк |
-| Теамчатмессажекаунт    | Int64             |
-| Приватечатмессажекаунт | Int64             |
-| Каллкаунт               | Int64             |
-| Митингкаунт            | Int64             |
-| Хасосерактион          | Boolean           |
-| Репортпериод            | String            |
+| ластактивитидате        | Дата              |
+| isDeleted               | Логический           |
+| делетеддате             | Дата              |
+| ассигнедпродуктс        | Коллекция String |
+| теамчатмессажекаунт    | Int64             |
+| приватечатмессажекаунт | Int64             |
+| каллкаунт               | Int64             |
+| митингкаунт            | Int64             |
+| хасосерактион          | Логический           |
+| репортпериод            | String            |
 
 ## <a name="json-representation"></a>Представление JSON
 

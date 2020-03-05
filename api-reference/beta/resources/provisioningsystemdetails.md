@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e84af77ac7d2b14fb25ce07939bc1a542102fb19
-ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
+ms.openlocfilehash: 286ae448cbbaee428820d274d11d8584a9150393
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35349447"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521322"
 ---
 # <a name="provisioningsystemdetails-resource-type"></a>Тип ресурса Провисионингсистемдетаилс
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +24,7 @@ ms.locfileid: "35349447"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|details|[Детаилсинфо](detailsinfo.md)|Сведения о системе.|
+|подробности|[detailsInfo](detailsinfo.md)|Сведения о системе.|
 |displayName|Строка|Имя системы, в которую были подготовлены пользователи.|
 |id|String|Идентификатор системы, в которую были подготовлены пользователи.|
 

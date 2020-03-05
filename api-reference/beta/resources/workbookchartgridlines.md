@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: bf2b481b3b60b7cf5893a1c7ab6e2f168c7cc1ca
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6bc796f5bf680b017c6f9cc20bc88f60f1b1c70d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964029"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519325"
 ---
 # <a name="workbookchartgridlines-resource-type"></a>Тип ресурса Воркбукчартгридлинес
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,18 +25,18 @@ ms.locfileid: "35964029"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение Воркбукчартгридлинес](../api/chartgridlines-get.md) | [Воркбукчартгридлинес](workbookchartgridlines.md) |Чтение свойств и связей объекта chartGridlines.|
-|[Обновление](../api/chartgridlines-update.md) | [Воркбукчартгридлинес](workbookchartgridlines.md)    |Обновление объекта ChartGridlines. |
+|[Получение Воркбукчартгридлинес](../api/chartgridlines-get.md) | [воркбукчартгридлинес](workbookchartgridlines.md) |Чтение свойств и связей объекта chartGridlines.|
+|[Обновление](../api/chartgridlines-update.md) | [воркбукчартгридлинес](workbookchartgridlines.md)    |Обновление объекта ChartGridlines. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |visible|boolean|Логическое значение, определяющее, отображаются ли линии сетки оси.|
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|format|[Воркбукчартгридлинесформат](workbookchartgridlinesformat.md)|Представляет форматирование линий сетки диаграммы. Только для чтения.|
+|format|[воркбукчартгридлинесформат](workbookchartgridlinesformat.md)|Представляет форматирование линий сетки диаграммы. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

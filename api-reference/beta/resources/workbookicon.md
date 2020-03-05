@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: excel
 author: ''
-ms.openlocfilehash: 2b61bbf8e0b35f7d9e7599cd75a27a245449f9a5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6c2cbbe26c3c1440afa8a0954bac5d0d38feea29
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964027"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519220"
 ---
 # <a name="workbookicon-resource-type"></a>Тип ресурса Воркбукикон
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,8 +25,8 @@ ms.locfileid: "35964027"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта Icon](../api/icon-get.md) | [Воркбукикон](workbookicon.md) |Чтение свойств и связей объекта значка.|
-|[Обновление](../api/icon-update.md) | [Воркбукикон](workbookicon.md)  |Обновление объекта значка. |
+|[Получение объекта Icon](../api/icon-get.md) | [воркбукикон](workbookicon.md) |Чтение свойств и связей объекта значка.|
+|[Обновление](../api/icon-update.md) | [воркбукикон](workbookicon.md)  |Обновление объекта значка. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -32,7 +34,7 @@ ms.locfileid: "35964027"
 |index|int|Представляет собой индекс значка данного набора.|
 |set|string|Представляет набор, в который входит значок. Возможные значения: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles`, `FiveBoxes`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 2d6e10ccde127e2318ad9c2f3015f5d911574513
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: be38d577d52e0086059f9a5627c670fb537941ce
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964559"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519948"
 ---
 # <a name="teamguestsettings-resource-type"></a>Тип ресурса Теамгуестсеттингс
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,8 +23,8 @@ ms.locfileid: "35964559"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Алловкреатеупдатечаннелс|Boolean|Если задано значение true, гости могут добавлять и обновлять каналы.|
-|Алловделетечаннелс|Boolean|Если задано значение true, гости могут удалять каналы.|
+|алловкреатеупдатечаннелс|Логический|Если задано значение true, гости могут добавлять и обновлять каналы.|
+|алловделетечаннелс|Логический|Если задано значение true, гости могут удалять каналы.|
 
 ## <a name="json-representation"></a>Представление JSON
 

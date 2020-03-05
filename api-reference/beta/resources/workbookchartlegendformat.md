@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 987753588beeec62ded346d2f2ff8611c0436e48
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 32f9fcec2002039c9ccee399c90f1a26048c71cc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007265"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519304"
 ---
 # <a name="workbookchartlegendformat-resource-type"></a>Тип ресурса Воркбукчартлежендформат
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,11 +26,11 @@ ms.locfileid: "36007265"
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|fill|[Воркбукчартфилл](workbookchartfill.md)|Представляет формат заливки объекта, включая сведения о форматировании фона. Только для чтения.|
-|шрифт|[Воркбукчартфонт](workbookchartfont.md)|Представляет атрибуты шрифта, такие как имя шрифта, размер шрифта, цвет и т. д., в условных обозначениях диаграммы. Только для чтения.|
+|fill|[воркбукчартфилл](workbookchartfill.md)|Представляет формат заливки объекта, включая сведения о форматировании фона. Только для чтения.|
+|шрифт|[воркбукчартфонт](workbookchartfont.md)|Представляет атрибуты шрифта, такие как имя шрифта, размер шрифта, цвет и т. д., в условных обозначениях диаграммы. Только для чтения.|
 
 
 ## <a name="json-representation"></a>Представление JSON

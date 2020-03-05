@@ -5,14 +5,16 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: a7a3427512962bd38c90faa710c501380e353f22
-ms.sourcegitcommit: c74195b8725c3f28bb3bded43c855261590a0cec
+ms.openlocfilehash: c2165f43c04ebbaf3274cc0ae912756bf250785a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "36775897"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519248"
 ---
 # <a name="workbookcomment-resource-type"></a>Тип ресурса Воркбуккоммент
+
+Пространство имен: Microsoft. Graph
 
 Представляет комментарий в книге.
 
@@ -34,9 +36,9 @@ ms.locfileid: "36775897"
 
 ## <a name="relationships"></a>Отношения
 
-| Отношение | Тип        | Описание |
+| Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|replies|Коллекция [воркбуккомментрепли](workbookcommentreply.md)| Только для чтения. Допускается значение null.|
+|отвечать|Коллекция [воркбуккомментрепли](workbookcommentreply.md)| Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 

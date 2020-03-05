@@ -5,14 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 45b5cce5b6c79ef041d80a467f6663e7cdc670bb
-ms.sourcegitcommit: 2f3e7325b5bc1f0cdc12a8acdf34d31cea3b8bdb
+ms.openlocfilehash: 47a0a9cc517bad5ad005a23b1de94a38992da44e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38023207"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519423"
 ---
 # <a name="workbook-resource-type"></a>Тип ресурса "книга"
+
+Пространство имен: Microsoft. Graph
 
 Содержит связанные объекты книг, такие как листы, таблицы, диапазоны и т. д.
 
@@ -27,7 +29,7 @@ ms.locfileid: "38023207"
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |names|Коллекция [воркбукнамедитем](workbooknameditem.md) |Представляет коллекцию именованных элементов в книге (именованные диапазоны и константы). Только для чтения.|

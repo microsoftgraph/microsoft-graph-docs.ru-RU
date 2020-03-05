@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2be415a127f7bcef030407be737bb9b48c8a116f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5a754b03379d1e40ba7310283a0efdd94ff30631
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964671"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520081"
 ---
 # <a name="synchronizationerror-resource-type"></a>Тип ресурса Синчронизатионеррор
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +27,7 @@ ms.locfileid: "35964671"
 |:---------------|:--------|:----------|
 |code|String||
 |message|String||
-|Тенантактионабле|Boolean||
+|тенантактионабле|Логический||
 
 ## <a name="json-representation"></a>Представление JSON
 

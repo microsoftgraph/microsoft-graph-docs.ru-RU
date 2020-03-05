@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 91e749fd0f1449883eca261f5ef27c0f2a7ba5dc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0bb5375edc2a2e504b602d6b66720ac9aee9bc55
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964090"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519374"
 ---
 # <a name="workbookchartaxisformat-resource-type"></a>Тип ресурса Воркбукчартаксисформат
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,11 +26,11 @@ ms.locfileid: "35964090"
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|font|[Воркбукчартфонт](workbookchartfont.md)|Представляет атрибуты шрифта (имя, размер, цвет и т. д.) для элемента оси диаграммы. Только для чтения.|
-|line|[Воркбукчартлинеформат](workbookchartlineformat.md)|Представляет форматирование линий диаграммы. Только для чтения.|
+|font|[воркбукчартфонт](workbookchartfont.md)|Представляет атрибуты шрифта (имя, размер, цвет и т. д.) для элемента оси диаграммы. Только для чтения.|
+|line|[воркбукчартлинеформат](workbookchartlineformat.md)|Представляет форматирование линий диаграммы. Только для чтения.|
 
 
 ## <a name="json-representation"></a>Представление JSON

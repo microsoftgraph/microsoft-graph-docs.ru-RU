@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-teams
 author: ''
-ms.openlocfilehash: f2901412dcf1d52d8b117afa214da159b4553a8a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fd71cd95d676ea226e03a15324cda01e41b6d2c1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008644"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520972"
 ---
 # <a name="scheduleitem-resource-type"></a>Тип ресурса Счедулеитем
+
+Пространство имен: Microsoft. Graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
@@ -22,11 +24,11 @@ ms.locfileid: "36008644"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |end |[dateTimeTimeZone](datetimetimezone.md) |Дата, время и часовой пояс, в течение которого заканчивается соответствующее событие. |
-|Частный |Boolean |Чувствительность соответствующего события. Значение true, если событие помечено `private`, в противном случае — false. Необязательно. |
-|location |String | Расположение, в котором находится соответствующее событие. Необязательно.|
+|Частный |Логический |Чувствительность соответствующего события. Значение true, если событие помечено `private`, в противном случае — false. Необязательное свойство. |
+|location |String | Расположение, в котором находится соответствующее событие. Необязательное свойство.|
 |начать |[dateTimeTimeZone](datetimetimezone.md) |Дата, время и часовой пояс, в котором начинается соответствующее событие. |
 |status |freeBusyStatus | Состояние доступности пользователя или ресурса во время соответствующего события. Допустимые значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`. |
-|subject |String | Строка темы соответствующего события. Необязательно.|
+|subject |String | Строка темы соответствующего события. Необязательное свойство.|
 
 
 ## <a name="json-representation"></a>Представление JSON

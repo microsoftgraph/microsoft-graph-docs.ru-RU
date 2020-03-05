@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: f4094da9c3ffc6a000fc0f7954ca8838a2d659af
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 6c77c116f013000ec4d419ec20c1e45c07187a22
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939798"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521595"
 ---
 # <a name="positiondetail-resource-type"></a>Тип ресурса Поситиондетаил
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,9 +28,9 @@ ms.locfileid: "37939798"
 |description     |String                            | Описание интересующей должности.               |
 |ендмонсеар    |Дата                              | По завершении должности.                               |
 |jobTitle;        |String                            | Заголовок, хранящийся в этой позиции.                  |
-|role            |Строка                            | Роль, к которой присвоено место.                        |
+|role            |String                            | Роль, к которой присвоено место.                        |
 |стартмонсеар  |Дата                              | Начальный месяц и год позиции.              |
-|summary         |Строка                            |Краткое описание положения.                          |
+|summary         |String                            |Краткое описание положения.                          |
 
 ## <a name="json-representation"></a>Представление JSON
 

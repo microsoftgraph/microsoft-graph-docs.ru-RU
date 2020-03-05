@@ -5,14 +5,16 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 4637784ac20d92c82e7a4771c815136ddd3e175a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5183affe44244ab5cdc5685dd1200443d583fcaa
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965274"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520880"
 ---
 # <a name="sectiongroup-resource-type"></a>Тип ресурса sectionGroup
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -57,14 +59,14 @@ ms.locfileid: "35965274"
 |lastModifiedBy|[identitySet](identityset.md)|Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения группы разделов. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
 |displayName|Строка|Имя группы разделов.|
-|Сектионграупсурл|String|URL-адрес для `sectionGroups` свойства навигации, который возвращает все группы разделов в группе разделов. Только для чтения.|
-|Сектионсурл|String|URL-адрес для `sections` свойства навигации, который возвращает все разделы в группе разделов. Только для чтения.|
+|сектионграупсурл|String|URL-адрес для `sectionGroups` свойства навигации, который возвращает все группы разделов в группе разделов. Только для чтения.|
+|сектионсурл|String|URL-адрес для `sections` свойства навигации, который возвращает все разделы в группе разделов. Только для чтения.|
 |Self|String|Конечная точка, где можно получить сведения о группе разделов. Только для чтения.|
 
 ## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|parentNotebook|[записной книжки](notebook.md)|Записная книжка, содержащая группу разделов. Только для чтения.|
+|parentNotebook|[notebook](notebook.md)|Записная книжка, содержащая группу разделов. Только для чтения.|
 |parentSectionGroup|[sectionGroup](sectiongroup.md)|Группа разделов, содержащая группу разделов. Только для чтения.|
 |sectionGroups|Коллекция [sectionGroup](sectiongroup.md)|Группы разделов в разделе. Только для чтения. Допускает значение null.|
 |sections|Коллекция [оненотесектион](onenotesection.md)|Разделы в группе разделов. Только для чтения. Допускается значение null.|
@@ -76,7 +78,7 @@ ms.locfileid: "35965274"
 |[Вывод группы разделов](../api/sectiongroup-get.md) | [sectionGroup](sectiongroup.md) |Прочитайте свойства и связи группы разделов.|
 |[Создание группы разделов](../api/sectiongroup-post-sectiongroups.md) |[sectionGroup](sectiongroup.md)| Создание группы разделов путем отправки в коллекцию sectionGroups в указанной группе разделов.|
 |[Перечисление групп разделов](../api/sectiongroup-list-sectiongroups.md) |Коллекция [sectionGroup](sectiongroup.md)| Получение коллекции групп разделов в указанной группе разделов.|
-|[Создание раздела](../api/sectiongroup-post-sections.md) |[Оненотесектион](onenotesection.md)| Создание раздела путем публикации в коллекции разделов в указанной группе разделов.|
+|[Создание раздела](../api/sectiongroup-post-sections.md) |[оненотесектион](onenotesection.md)| Создание раздела путем публикации в коллекции разделов в указанной группе разделов.|
 |[Перечисление разделов](../api/sectiongroup-list-sections.md) |Коллекция [оненотесектион](onenotesection.md)| Получение коллекции разделов в указанной группе разделов.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

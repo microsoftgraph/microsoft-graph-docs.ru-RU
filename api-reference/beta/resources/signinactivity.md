@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d93ff4f3b395d9b0820865c3293a419471ab6473
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 8144a681f93df45827c8b304d507eea820adcca2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939245"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520599"
 ---
 # <a name="signinactivity-resource-type"></a>Тип ресурса Сигнинактивити
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +25,7 @@ ms.locfileid: "37939245"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |ластсигниндатетиме|DateTimeOffset|Дата последнего входа для определенного пользователя. С помощью этого поля можно вычислить время последнего входа пользователя в каталог. Это поле можно использовать для создания отчетов, например неактивных пользователей. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|ластсигнинрекуестид|Строка|Идентификатор запроса последнего входа, выполненного этим пользователем.|
+|ластсигнинрекуестид|String|Идентификатор запроса последнего входа, выполненного этим пользователем.|
 
 ## <a name="json-representation"></a>Представление JSON
 

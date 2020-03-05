@@ -5,25 +5,27 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: c4f97f8377ec5693be1cc477ab40119675a24908
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 666587fce76366a2bd4b0b833a273e7977fa3da0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008203"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520452"
 ---
 # <a name="skypeforbusinessactivitycounts-resource-type"></a>Тип ресурса Скипефорбусинессактивитикаунтс
+
+Пространство имен: Microsoft. Graph
 
 ## <a name="properties"></a>Свойства
 
 | Свойство          | Тип   |
 | :---------------- | :----- |
-| Пиртопир        | Int64  |
+| пиртопир        | Int64  |
 | распределяют         | Int64  |
 | участвовал      | Int64  |
-| Репортрефрешдате | Дата   |
+| репортрефрешдате | Дата   |
 | reportDate        | Дата   |
-| Репортпериод      | String |
+| репортпериод      | String |
 
 ## <a name="json-representation"></a>Представление JSON
 

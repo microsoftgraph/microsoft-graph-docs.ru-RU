@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: e920d34cc9a42c29138a97a83786087c86b7ee10
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1269e23b5cbb68c665aace8c2590150f687611cd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008917"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521553"
 ---
 # <a name="privilegedapproval-resource-type"></a>Тип ресурса Привилежедаппровал
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,27 +29,27 @@ ms.locfileid: "36008917"
 |[Список объектов Привилежедаппровал](../api/privilegedapproval-list.md) | Коллекция [privilegedApproval](privilegedapproval.md)|Получение коллекции Привилежедаппровал.|
 |[Создание privilegedApproval](../api/privilegedapproval-post-privilegedapproval.md) | [privilegedApproval](privilegedapproval.md)    |Создание объекта privilegedApproval. |
 |[Обновление privilegedApproval](../api/privilegedapproval-update.md) | [privilegedApproval](privilegedapproval.md) |Обновление объекта privilegedApproval. |
-|[Мирекуестс](../api/privilegedapproval-myrequests.md)|[privilegedApproval](privilegedapproval.md)|Получение запросов утверждения запрашивающей стороны.|
+|[мирекуестс](../api/privilegedapproval-myrequests.md)|[privilegedApproval](privilegedapproval.md)|Получение запросов утверждения запрашивающей стороны.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Аппровалдуратион|Duration (Длительность)||
-|Аппровалстате|string| Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
-|Аппровалтипе|String||
-|Аппроверреасон|String||
+|аппровалдуратион|Длительность||
+|аппровалстате|строка| Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
+|аппровалтипе|String||
+|аппроверреасон|String||
 |endDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |id|String| Только для чтения.|
-|Рекуесторреасон|String||
+|рекуесторреасон|String||
 |roleId|String||
 |startDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |userId|String||
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Ролеинфо|[privilegedRole](privilegedrole.md)| Только для чтения. Допускается значение null.|
-|Request|[Привилежедролеассигнментрекуест](privilegedroleassignmentrequest.md)| Только для чтения. Запрос на назначение роли для этого объекта утверждения|
+|ролеинфо|[privilegedRole](privilegedrole.md)| Только для чтения. Допускается значение null.|
+|Request|[привилежедролеассигнментрекуест](privilegedroleassignmentrequest.md)| Только для чтения. Запрос на назначение роли для этого объекта утверждения|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: d3a91cd7b4f2b4d8e32219514d1190599ac416de
-ms.sourcegitcommit: a700f1c283a5d847cd1697e26bcd47bc8625384e
-ms.translationtype: HT
+ms.openlocfilehash: 16cce4d0c2ad6526154acd5895f5a24f76a7025d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36049633"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520641"
 ---
 # <a name="shift-resource-type"></a>Тип ресурса shift
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,9 +34,9 @@ ms.locfileid: "36049633"
 |Имя          |Тип           |Описание                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | id            |`string`      |Идентификатор объекта `shift`.|
-| userId            |`string`      |Идентификатор пользователя, назначенного объекту `shift`. Обязательный элемент. |
-| schedulingGroupId         |`string`      |Идентификатор группы планирования, частью которой является объект `shift`. Обязательный элемент. |
-| sharedShift   |[shiftItem](shiftitem.md)  |Общая версия объекта `shift`, доступная для просмотра как сотрудникам, так и руководителям. Обязательный элемент. |
+| userId            |`string`      |Идентификатор пользователя, назначенного объекту `shift`. Обязательное. |
+| schedulingGroupId         |`string`      |Идентификатор группы планирования, частью которой является объект `shift`. Обязательное. |
+| sharedShift   |[shiftItem](shiftitem.md)  |Общая версия объекта `shift`, доступная для просмотра как сотрудникам, так и руководителям. Обязательное. |
 | draftShift        |[shiftItem](shiftitem.md)        |Черновая версия объекта `shift`, доступная для просмотра руководителями. Обязательный элемент. |
 | createdDateTime       |`DateTimeOffset`        |Метка времени создания объекта `shift`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". |
 | lastModifiedDateTime      |`DateTimeOffset`        |Метка времени последнего обновления объекта `shift`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". |

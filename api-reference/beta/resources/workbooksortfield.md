@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: excel
 author: ''
-ms.openlocfilehash: 55a1f822e080f786b588837dd6d9120cea546d4b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: adcebc20b39d40ef283d25cfd2a8c247160580eb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35963908"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519143"
 ---
 # <a name="workbooksortfield-resource-type"></a>Тип ресурса Воркбуксортфиелд
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,14 +25,14 @@ ms.locfileid: "35963908"
 |:---------------|:--------|:----------|
 |ascending|boolean|Указывает, выполняется ли сортировка по возрастанию.|
 |color|строка|Представляет целевой цвет условия при сортировке по шрифту или цвету ячеек.|
-|dataOption|string|Представляет дополнительные параметры сортировки для этого поля. Возможные значения: `Normal`, `TextAsNumber`.|
+|dataOption|строка|Представляет дополнительные параметры сортировки для этого поля. Возможные значения: `Normal`, `TextAsNumber`.|
 |key|int|Представляет столбец (или строку в зависимости от ориентации сортировки), для которого задано условие. Представляется в виде расстояния от первого столбца (или строки).|
 |sortOn|string|Представляет тип сортировки этого условия. Возможные значения: `Value`, `CellColor`, `FontColor`, `Icon`.|
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|icon|[Воркбукикон](workbookicon.md)|Представляет значок, определенный условием, при сортировке по значку ячейки.|
+|icon|[воркбукикон](workbookicon.md)|Представляет значок, определенный условием, при сортировке по значку ячейки.|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 113c38e540b8c41fb3d3156b27f6f5e1f1df42f2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 107dd80187f7b00439ec248be513d921bc64888e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007951"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520207"
 ---
 # <a name="expressioninputobject-resource-type"></a>Тип ресурса Експрессионинпутобжект
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,7 +23,7 @@ ms.locfileid: "36007951"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|RDLC|[Обжектдефинитион](synchronization-objectdefinition.md)|Определение тестового объекта.|
+|RDLC|[обжектдефинитион](synchronization-objectdefinition.md)|Определение тестового объекта.|
 |properties|Коллекция [стрингкэйобжектвалуепаир](synchronization-stringkeyobjectvaluepair.md)|Значения свойств тестового объекта.|
 
 ## <a name="json-representation"></a>Представление JSON

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 97fffc4cf36d0389afd4a2f159b1a9ea624c3a82
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3fc3e8a67e92091b5e273d45c483751c63dbbf0a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009043"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521722"
 ---
 # <a name="plannerorderhintsbyassignee-resource-type"></a>Тип ресурса Планнерордерхинтсбяссигни
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

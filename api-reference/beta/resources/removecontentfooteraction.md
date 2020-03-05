@@ -5,14 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 62bd0fbefeb9bf246619bc470c5552cd20d174d2
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: ddc507d4c958b7453e53df1f0475497cb0b3ad89
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939448"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521161"
 ---
 # <a name="removecontentfooteraction-resource-type"></a>Тип ресурса Ремовеконтентфутерактион
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +24,7 @@ ms.locfileid: "37939448"
 
 | Свойство       | Тип              | Описание                                                |
 | :------------- | :---------------- | :--------------------------------------------------------- |
-| уиелементнамес | Коллекция строк | Имя элемента пользовательского интерфейса нижнего колонтитула, который требуется удалить. |
+| уиелементнамес | Коллекция String | Имя элемента пользовательского интерфейса нижнего колонтитула, который требуется удалить. |
 
 ## <a name="json-representation"></a>Представление JSON
 

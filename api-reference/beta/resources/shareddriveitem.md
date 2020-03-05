@@ -6,14 +6,16 @@ title: SharedDriveItem
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 7d5af60c4ba5c67046909f6998d298444fa06d51
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f310d35c6126573f022a13934faf911de1122606
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965161"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520733"
 ---
 # <a name="shareddriveitem-resource-type"></a>Тип ресурса SharedDriveItem
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -63,8 +65,8 @@ ms.locfileid: "35965161"
 | **driveItem**     | [**driveItem**][driveItem] | Используется для доступа к базовому объекту **driveItem**
 | **list**          | [**перечн**][list]           | Используется для доступа к базовому объекту **list**
 | **listItem**      | [**listItem**][listItem]   | Используется для доступа к базовому объекту **listItem**
-| **permission**    | [**permission**][permission] | Используется для доступа к **разрешению** , представляющему базовую ссылку для совместного доступа
-| **сайта**          | [**страницу**][site]           | Используется для доступа к базовому объекту **site**
+| **permission**    | [**права**][permission] | Используется для доступа к **разрешению** , представляющему базовую ссылку для совместного доступа
+| **site**          | [**страницу**][site]           | Используется для доступа к базовому объекту **site**
 
 Кроме того, для объектов **driveItem**, к которым предоставлен доступ в личных учетных записях OneDrive, можно использовать указанные ниже связи.
 

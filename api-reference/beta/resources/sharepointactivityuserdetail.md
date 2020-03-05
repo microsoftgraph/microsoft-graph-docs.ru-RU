@@ -5,31 +5,33 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: ''
-ms.openlocfilehash: 3d1c1f1b2bcf919769009bbb65a917c4b9cb84f9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d7d030bbfaff939da4be645d8003984e5dde0a7e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008434"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520697"
 ---
 # <a name="sharepointactivityuserdetail-resource-type"></a>Тип ресурса Шарепоинтактивитюсердетаил
+
+Пространство имен: Microsoft. Graph
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                  | Тип              |
 | :------------------------ | :---------------- |
-| Репортрефрешдате         | Дата              |
+| репортрефрешдате         | Дата              |
 | userPrincipalName         | String            |
-| isDeleted                 | Boolean           |
-| Делетеддате               | Дата              |
-| Ластактивитидате          | Дата              |
-| Виеведоредитедфилекаунт   | Int64             |
-| Синцедфилекаунт           | Int64             |
-| Шарединтерналлифилекаунт | Int64             |
-| Шаредекстерналлифилекаунт | Int64             |
-| Виситедпажекаунт          | Int64             |
-| Ассигнедпродуктс          | Коллекция строк |
-| Репортпериод              | String            |
+| isDeleted                 | Логический           |
+| делетеддате               | Дата              |
+| ластактивитидате          | Дата              |
+| виеведоредитедфилекаунт   | Int64             |
+| синцедфилекаунт           | Int64             |
+| шарединтерналлифилекаунт | Int64             |
+| шаредекстерналлифилекаунт | Int64             |
+| виситедпажекаунт          | Int64             |
+| ассигнедпродуктс          | Коллекция String |
+| репортпериод              | String            |
 
 ## <a name="json-representation"></a>Представление JSON
 

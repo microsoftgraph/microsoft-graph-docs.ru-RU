@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: cfc0c00add243b98c852a00f0a4ab990c3ca5173
-ms.sourcegitcommit: 567d0420243765b4088bc8029306a517f92926fd
+ms.openlocfilehash: c51c3cd7c706cf154db8c1de21c04aaa098c3efb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36437792"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519619"
 ---
 # <a name="unifiedroleassignment-resource-type"></a>Тип ресурса Унифиедролеассигнмент
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ ms.locfileid: "36437792"
 |:-------------|:------------|:------------|
 | [Получение Унифиедролеассигнмент](../api/unifiedroleassignment-get.md) | [унифиедролеассигнмент](unifiedroleassignment.md) | Чтение свойств и связей объекта Унифиедролеассигнмент. |
 | [Создание Унифиедролеассигнмент](../api/rbacapplication-post-roleassignments.md) | [унифиедролеассигнмент](unifiedroleassignment.md) | Создание нового Унифиедролеассигнмент путем отправки в коллекцию roleAssignment. |
-| [Удаление](../api/unifiedroleassignment-delete.md) | Нет | Удаление объекта Унифиедролеассигнмент. |
+| [удаление](../api/unifiedroleassignment-delete.md); | Нет | Удаление объекта Унифиедролеассигнмент. |
 
 ## <a name="properties"></a>Свойства
 
@@ -35,7 +37,7 @@ ms.locfileid: "36437792"
 |ресаурцескопе|String| Область, в которой применяется Унифиедролеассигнмент. Это "/" для всей службы. |
 |роледефинитионид|String| Унифиедроледефинитион, для которого предназначено назначение. Только для чтения. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Нет
 

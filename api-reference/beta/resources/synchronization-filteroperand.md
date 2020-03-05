@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fc428022e0a95ce0ea46c9c95bb8e4f0a101b8bd
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 26aab36386f8d3468555974e56ad91fcd55bc413
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007916"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520179"
 ---
 # <a name="filteroperand-resource-type"></a>Тип ресурса Филтероперанд
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,7 +23,7 @@ ms.locfileid: "36007916"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|values|Коллекция строк|Коллекция значений.|
+|values|Коллекция String|Коллекция значений.|
 
 ## <a name="json-representation"></a>Представление JSON
 

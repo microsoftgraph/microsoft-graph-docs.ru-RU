@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fb535bbba827f93b597c5e41efb128f2ad610ef2
-ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
+ms.openlocfilehash: 86363bdf77f83e6903c86362c2797c51d1215073
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35349435"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521357"
 ---
 # <a name="provisionedidentity-resource-type"></a>Тип ресурса Провисионедидентити
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,10 +24,10 @@ ms.locfileid: "35349435"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|details|[Детаилсинфо](detailsinfo.md)|Сведения об удостоверении.|
+|подробности|[detailsInfo](detailsinfo.md)|Сведения об удостоверении.|
 |displayName|Строка|Отображаемое имя удостоверения. |
 |id|String|Уникально идентифицирует удостоверение.|
-|Идентититипе|String|Тип удостоверения, которое было подготовлено, например "пользователь" или "Группа".|
+|идентититипе|String|Тип удостоверения, которое было подготовлено, например "пользователь" или "Группа".|
 
 ## <a name="json-representation"></a>Представление JSON
 

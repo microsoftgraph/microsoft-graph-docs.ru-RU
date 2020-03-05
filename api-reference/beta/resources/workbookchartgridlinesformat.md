@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 6d32e916b3156082b45cbcaa105fd55e1c377b2e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: bdd676f1271c0fdfd0273d3a5064c46127b73fd3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007279"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519318"
 ---
 # <a name="workbookchartgridlinesformat-resource-type"></a>Тип ресурса Воркбукчартгридлинесформат
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,10 +26,10 @@ ms.locfileid: "36007279"
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|line|[Воркбукчартлинеформат](workbookchartlineformat.md)|Представляет форматирование линий диаграммы. Только для чтения.|
+|line|[воркбукчартлинеформат](workbookchartlineformat.md)|Представляет форматирование линий диаграммы. Только для чтения.|
 
 
 ## <a name="json-representation"></a>Представление JSON

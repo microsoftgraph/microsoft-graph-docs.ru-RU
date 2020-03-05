@@ -5,14 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: b3982a8026cd720fe614b11405a37bed8626042d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9ddbb607a243f4571d53dcf887f80a171b230748
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964053"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519178"
 ---
 # <a name="workbookrangefont-resource-type"></a>Тип ресурса Воркбукранжефонт
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,8 +25,8 @@ ms.locfileid: "35964053"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение Воркбукранжефонт](../api/rangefont-get.md) | [Воркбукранжефонт](workbookrangefont.md) |Чтение свойств и связей объекта rangeFont.|
-|[Обновление](../api/rangefont-update.md) | [Воркбукранжефонт](workbookrangefont.md)   |Обновление объекта RangeFont. |
+|[Получение Воркбукранжефонт](../api/rangefont-get.md) | [воркбукранжефонт](workbookrangefont.md) |Чтение свойств и связей объекта rangeFont.|
+|[Обновление](../api/rangefont-update.md) | [воркбукранжефонт](workbookrangefont.md)   |Обновление объекта RangeFont. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -36,7 +38,7 @@ ms.locfileid: "35964053"
 |size|double|размер шрифта|
 |underline| String |Тип подчеркивания, применяемый для шрифта. Возможные значения: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

@@ -6,14 +6,16 @@ title: SpecialFolder
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 647916e53409be47ebd3547a8712778bb6ba9f54
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a4ecce871115e92bfe91d5e6229c3ddd1a3c0472
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008077"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520340"
 ---
 # <a name="specialfolder-resource-type"></a>Тип ресурса SpecialFolder
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

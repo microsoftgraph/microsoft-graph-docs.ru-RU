@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: resourcePageType
 author: ''
-ms.openlocfilehash: 53496734f79121edd010a429ec0a8da28b16e836
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4b10536af68a20bd5c92da132406fe7dd8ee65b7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008889"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521413"
 ---
 # <a name="imageinfo-resource-type"></a>Тип ресурса Имажеинфо
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,8 +25,8 @@ ms.locfileid: "36008889"
 |Имя | Тип | Описание|
 |:----|:-----|:-----------|
 |iconUrl | String | Необязательно URI, указывающий на значок, представляющий приложение, используемое для создания действия.|
-|Алтернатетекст | String | Необязательно доступное для изображения содержимое с замещающим текстом|
-|Аддимажекуери | Boolean | Необязательно параметр, указывающий на то, что сервер может динамически отображать изображение в ответ на параметризация. Например, изображение с высокой контрастностью|
+|алтернатетекст | String | Необязательно доступное для изображения содержимое с замещающим текстом|
+|аддимажекуери | Логический | Необязательно параметр, указывающий на то, что сервер может динамически отображать изображение в ответ на параметризация. Например, изображение с высокой контрастностью|
 
 ## <a name="json-representation"></a>Представление JSON
 

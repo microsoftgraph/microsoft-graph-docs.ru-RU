@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 8c102ea62b29cba017793dcaf135853121fc4bd4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e8cb26645dd25f56dd5a4fdb3f0e5f47cbe55835
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007153"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519395"
 ---
 # <a name="workbookcharttitle-resource-type"></a>Тип ресурса Воркбукчарттитле
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,8 +25,8 @@ ms.locfileid: "36007153"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение Воркбукчарттитле](../api/charttitle-get.md) | [Воркбукчарттитле](workbookcharttitle.md) |Чтение свойств и связей объекта chartTitle.|
-|[Обновление](../api/charttitle-update.md) | [Воркбукчарттитле](workbookcharttitle.md)    |Обновление объекта ChartTitle. |
+|[Получение Воркбукчарттитле](../api/charttitle-get.md) | [воркбукчарттитле](workbookcharttitle.md) |Чтение свойств и связей объекта chartTitle.|
+|[Обновление](../api/charttitle-update.md) | [воркбукчарттитле](workbookcharttitle.md)    |Обновление объекта ChartTitle. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -33,10 +35,10 @@ ms.locfileid: "36007153"
 |text|string|Представляет текст заголовка диаграммы.|
 |visible|boolean|Логическое значение, представляющее видимость объекта заголовка диаграммы.|
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|format|[Воркбукчарттитлеформат](workbookcharttitleformat.md)|Представляет форматирование названия диаграммы, включая формат заливки и шрифта. Только для чтения.|
+|format|[воркбукчарттитлеформат](workbookcharttitleformat.md)|Представляет форматирование названия диаграммы, включая формат заливки и шрифта. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

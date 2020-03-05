@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: b5e6b8c3013c647087ab3d8db28b0196d0c79036
-ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
+ms.openlocfilehash: cf4386cf70179715880a1ae07db3dfbb5f07c224
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949505"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521899"
 ---
 # <a name="personwebsite-resource-type"></a>Тип ресурса Персонвебсите
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +28,7 @@ ms.locfileid: "37949505"
 |:-------------------------------------------------|:----------------------------------|:-----------------------------------------------------------|
 | [Получение Персонвебсите](../api/personwebsite-get.md) | [персонвебсите](personwebsite.md) | Чтение свойств и связей объекта **персонвебсите** . |
 | [Обновление Персонвебсите](../api/personwebsite-update.md)         | [персонвебсите](personwebsite.md) | Обновление объекта **персонвебсите** .                               |
-| [Удаление Персонвебсите](../api/personwebsite-delete.md)         | Нет.                              | Удаление объекта **персонвебсите** .                               |
+| [Удаление Персонвебсите](../api/personwebsite-delete.md)         | Нет                              | Удаление объекта **персонвебсите** .                               |
 
 ## <a name="properties"></a>Свойства
 

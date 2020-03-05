@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 0bdb0bd3856e8eaf55d19d01a8566a34810051c7
-ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
+ms.openlocfilehash: cdeb6a676304fe4ec69207f9df6331d0df503b56
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37949491"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519556"
 ---
 # <a name="useraccountinformation-resource-type"></a>Тип ресурса Усераккаунтинформатион
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

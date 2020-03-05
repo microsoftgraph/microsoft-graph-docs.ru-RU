@@ -5,14 +5,16 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: a7d534aecf6e7ffa427ea175ae06e2b1820435b2
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: abd68f3623f78d57b2db5812038223dc6137027f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450816"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520768"
 ---
 # <a name="settings-resource-type"></a>Тип ресурса settings
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,9 +32,9 @@ ms.locfileid: "36450816"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|хасграфмаилбокс|Boolean|Указывает, размещается ли основной почтовый ящик пользователя в облаке и включено ли для Microsoft Graph.|
-|хаслиценсе|Boolean|Указывает, назначена ли лицензия MyAnalytics для пользователя.|
-|хасоптедаут|Boolean|Указывает, выбрал ли пользователь из MyAnalytics.|
+|хасграфмаилбокс|Логический|Указывает, размещается ли основной почтовый ящик пользователя в облаке и включено ли для Microsoft Graph.|
+|хаслиценсе|Логический|Указывает, назначена ли лицензия MyAnalytics для пользователя.|
+|хасоптедаут|Логический|Указывает, выбрал ли пользователь из MyAnalytics.|
 
 ## <a name="json-representation"></a>Представление JSON
 

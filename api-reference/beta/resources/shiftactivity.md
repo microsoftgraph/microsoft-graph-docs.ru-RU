@@ -5,27 +5,29 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType_
-ms.openlocfilehash: 8acfb16235c90cf6067ad5fd6c5d8e82ae239f8d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6adc82eca2c7ce53713997c18001aef19c76e3dc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965077"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520634"
 ---
 # <a name="shiftactivity-resource-type"></a>Тип ресурса Шифтактивити
 
+Пространство имен: Microsoft. Graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет действие в смене [](shift.md).
+Представляет действие в [смене](shift.md).
 
 ## <a name="properties"></a>Свойства
 | Свойство                         | Тип                    | Описание                                                                                                                                                                        |
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
-| Предопл               | `bool`                  | Указывает, следует `microsoft.graph.user` ли платить за действие в течение этого периода `shift`. Обязательно.    |
-| startDateTime               | `DateTimeOffset`                  | Дата и время начала для `shiftActivity`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". Обязательно. |
-| endDateTime               | `DateTimeOffset`                  | Дата и время окончания для `shiftActivity`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". Обязательно.    |
+| Предопл               | `bool`                  | Указывает, следует `microsoft.graph.user` ли платить за действие в течение этого периода `shift`. Обязательное.    |
+| startDateTime               | `DateTimeOffset`                  | Дата и время начала для ресурса `shiftActivity`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". Обязательный элемент. |
+| endDateTime               | `DateTimeOffset`                  | Дата и время окончания для ресурса `shiftActivity`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". Обязательный элемент.    |
 | code               | `string`                  | Определенный пользователем код для `shiftActivity`. Обязательный.    |
-| displayName               | `string`                  | Имя файла `shiftActivity`. Обязательное.    |
+| displayName               | `string`                  | Имя ресурса `shiftActivity`. Обязательный элемент.    |
 
 ## <a name="json-representation"></a>Представление JSON
 

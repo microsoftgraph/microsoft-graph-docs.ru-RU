@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: c5ece5d1ad1c5c38253d73353b05b94727855fd5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7d6c064e7a87b0e9c776a5691f24b48dfff56422
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007573"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519633"
 ---
 # <a name="typedemailaddress-resource-type"></a>Тип ресурса Типедемаиладдресс
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ ms.locfileid: "36007573"
 |address|String|Адрес электронной почты контакта.|
 |name|Строка|Отображаемое имя контакта.|
 |type |String |Тип адреса электронной почты. Возможные значения: `unknown`, `work`, `personal`, `main`, `other`. Значение по умолчанию `unknown`—, то есть **адрес** не был задан как определенный тип. |
-|Осерлабел |String  |Чтобы указать настраиваемый тип адреса электронной почты, задайте **** для `other`параметра Тип значение и назначьте **осерлабел** настраиваемой строке. Например, вы можете использовать конкретный адрес электронной почты для своих мероприятий. Задайте **** для `other`параметра Type значение, а для параметра **осерлабел** — настраиваемую `Volunteer work`строку (например,). |
+|осерлабел |String  |Чтобы указать настраиваемый тип адреса электронной почты, задайте **** для `other`параметра Тип значение и назначьте **осерлабел** настраиваемой строке. Например, вы можете использовать конкретный адрес электронной почты для своих мероприятий. Задайте **** для `other`параметра Type значение, а для параметра **осерлабел** — настраиваемую `Volunteer work`строку (например,). |
 
 ## <a name="json-representation"></a>Представление JSON
 

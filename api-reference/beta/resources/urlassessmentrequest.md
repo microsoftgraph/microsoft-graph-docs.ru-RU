@@ -5,14 +5,16 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 27e728e172ec8870082f6b7d668f1f19f29f22dc
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 2eb3372b92a3665129bb0b4eb4d0f27bc77884f3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40867269"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519570"
 ---
 # <a name="urlassessmentrequest-resource-type"></a>Тип ресурса Урлассессментрекуест
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,8 +24,8 @@ ms.locfileid: "40867269"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Создание Среатассессментрекуест](../api/informationprotection-post-threatassessmentrequests.md) | [урлассессментрекуест](urlAssessmentRequest.md) | Создание нового запроса на оценку URL-адреса путем отправки объекта **урлассессментрекуест** . |
-| [Получение Среатассессментрекуест](../api/threatassessmentrequest-get.md) | [урлассессментрекуест](urlassessmentrequest.md) | Чтение свойств и связей объекта **урлассессментрекуест** . |
+| [Создание объекта threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [urlAssessmentRequest](urlAssessmentRequest.md) | Создание нового запроса на оценку URL-адреса путем отправки объекта **урлассессментрекуест** . |
+| [Получение объекта threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [urlAssessmentRequest](urlassessmentrequest.md) | Чтение свойств и связей объекта **урлассессментрекуест** . |
 
 ## <a name="properties"></a>Свойства
 
@@ -39,7 +41,7 @@ ms.locfileid: "40867269"
 |рекуестсаурце|[среатассессментрекуестсаурце](enums.md#threatassessmentrequestsource-values)|Источник запроса на оценку угроз. Возможные значения: `user`, `administrator`.|
 |status|[среатассессментстатус](enums.md#threatassessmentstatus-values)|Состояние процесса оценки. Возможные значения: `pending`, `completed`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 1658114615c4532f0a7f9b9f5ad3c3a25deff81b
-ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
+ms.openlocfilehash: 4275730cfd7c9c9c58496b674062ffedb5d7a6cc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35349437"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521329"
 ---
 # <a name="provisioningstep-resource-type"></a>Тип ресурса Провисионингстеп
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,9 +25,9 @@ ms.locfileid: "35349437"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |description|String|Сводка действий, произошедших на этапе.|
-|details|[Детаилсинфо](detailsinfo.md)|Сведения о том, что произошло на этапе.|
+|подробности|[detailsInfo](detailsinfo.md)|Сведения о том, что произошло на этапе.|
 |name|String|Имя этапа.|
-|Провисионингстептипе|String| Тип этапа. Возможные значения: `import`, `scoping`, `matching`, `processing`, `referenceResolution`, `export`, `unknownFutureValue`.|
+|провисионингстептипе|String| Тип этапа. Возможные значения: `import`, `scoping`, `matching`, `processing`, `referenceResolution`, `export`, `unknownFutureValue`.|
 |status|String| Состояние этапа. Возможные значения: `success`, `failure`, `skipped`, `unknownFutureValue`.|
 
 ## <a name="json-representation"></a>Представление JSON

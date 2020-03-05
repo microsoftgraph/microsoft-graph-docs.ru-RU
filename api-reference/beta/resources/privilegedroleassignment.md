@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 010dbf110de414e5221873263ffb5bcffe30db48
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2781e601b82e33c260ead70c5d87c9e36c495569
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008882"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521511"
 ---
 # <a name="privilegedroleassignment-resource-type"></a>Тип ресурса Привилежедролеассигнмент
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +28,7 @@ ms.locfileid: "36008882"
 |[Коллекция Привилежедролеассигнмент списка](../api/privilegedroleassignment-list.md) | Коллекция [privilegedRoleAssignment](privilegedroleassignment.md)|Получение коллекции объектов Привилежедролеассигнмент.|
 |[Получение privilegedRoleAssignment](../api/privilegedroleassignment-get.md) | [privilegedRoleAssignment](privilegedroleassignment.md) |Чтение свойств и связей объекта Привилежедролеассигнмент.|
 |[Создание задания](../api/privilegedroleassignment-post-privilegedroleassignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md)| Создайте новое назначение путем публикации в коллекции назначений.|
-|[Удаление](../api/privilegedroleassignment-delete.md) | Нет |Удаление объекта privilegedRoleAssignment. |
+|[удаление](../api/privilegedroleassignment-delete.md); | Нет |Удаление объекта privilegedRoleAssignment. |
 |[makePermanent](../api/privilegedroleassignment-makepermanent.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Выполнение назначения ролей как бессрочного.|
 |[makeEligible](../api/privilegedroleassignment-makeeligible.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Выполнение назначения ролей как соответствующего требованиям.|
 |[my](../api/privilegedroleassignment-my.md)|Коллекция [privilegedRoleAssignment](privilegedroleassignment.md)|Получение привилегированных назначений ролей текущего пользователя.|
@@ -35,16 +37,16 @@ ms.locfileid: "36008882"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |expirationDateTime|dateTimeOffset|Дата и время в формате UTC, когда истечет срок действия назначения роли Temporary privileged. Для назначения постоянной роли значение равно null.|
-|id|string| Уникальный идентификатор для назначения привилегированной роли. Только для чтения. Он указан в формате "Усерид_ролеид", где userId — это строка GUID для идентификатора пользователя Azure AD, а roleId — строка GUID для идентификатора роли администратора Azure.|
+|id|string| Уникальный идентификатор для назначения привилегированной роли. Только для чтения. Он имеет формат "userId_roleId", где userId — это строка GUID для идентификатора пользователя Azure AD, а roleId — строка GUID для идентификатора роли администратора Azure.|
 |Повышенный уровень|boolean|**значение true** , если назначение роли активировано. **значение false** , если назначение роли отключено.|
-|Ресултмессаже|string|Результирующее сообщение, заданное службой.|
-|roleId|string|Идентификатор роли. В формате строки GUID.|
-|userId|string|Идентификатор пользователя. В формате строки GUID.|
+|ресултмессаже|строка|Результирующее сообщение, заданное службой.|
+|roleId|строка|Идентификатор роли. В формате строки GUID.|
+|userId|строка|Идентификатор пользователя. В формате строки GUID.|
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Ролеинфо|[privilegedRole](privilegedrole.md)| Только для чтения. Допускается значение null. Сведения о связанной роли.|
+|ролеинфо|[privilegedRole](privilegedrole.md)| Только для чтения. Допускается значение null. Сведения о связанной роли.|
 
 ## <a name="json-representation"></a>Представление JSON
 

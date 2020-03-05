@@ -5,15 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 00408fee6217fd53bb82c61da7ea1e4db8dc1a1e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a7493f24a46251ce5515eafa6f27bedd13ae63d0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007720"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519990"
 ---
 # <a name="targetresourceapp-resource-type"></a>Тип ресурса Таржетресаурцеапп
-Указывает, что объект приложения был добавлен, обновлен или удален администраторами в рамках действия аудита. Является производным от ресурса [targetResource](targetresource.md) .
+
+Пространство имен: Microsoft. Graph указывает объект приложения, который был добавлен, обновлен или удален администраторами в рамках действия аудита. Является производным от ресурса [targetResource](targetresource.md) .
 
 
 

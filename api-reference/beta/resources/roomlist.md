@@ -5,14 +5,16 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: f0c56f986663c71d8c6817c0024919e8714af94a
-ms.sourcegitcommit: 8844023e15b7649a5c03603aee243acf85930ef2
+ms.openlocfilehash: 3aa89075b93f34ad565d210bee3dff2bfd1ffe81
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35841257"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521035"
 ---
 # <a name="roomlist-resource-type"></a>Тип ресурса RoomList принимают одиночные
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -38,9 +40,9 @@ ms.locfileid: "35841257"
 | id             | String                                            | Уникальный идентификатор для списка помещений. Только для чтения. |
 | phone          | String                                            | Номер телефона списка помещений. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
-| Отношение | Тип                         | Описание          |
+| Связь | Тип                         | Описание          |
 |:-------------|:-----------------------------|:---------------------|
 | комната        | [помещение](place.md) коллекции | Только для чтения. Допускается значение null. |
 

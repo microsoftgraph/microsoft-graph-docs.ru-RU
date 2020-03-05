@@ -6,14 +6,16 @@ localization_priority: Normal
 author: JeremyKelley
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ed3d60fabfd367668b5c7a8230bba0f19f7d88f5
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: bdb587e7440fd98c48f71a2611e2a34e039367dd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333243"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521885"
 ---
 # <a name="photo-resource-type"></a>Тип ресурса Photo
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,9 +30,9 @@ ms.locfileid: "37333243"
 |:------------------|:--------------|:---------------------------------------------------------------------------|
 |cameraMake         |Строка         | Изготовитель камеры. Только для чтения.                                            |
 |cameraModel        |String         | Модель камеры. Только для чтения.                                                   |
-|exposureDenominator|Двойное         | Знаменатель дробного значения выдержки камеры. Только для чтения. |
-|exposureNumerator  |Двойное         | Числитель дробного значения выдержки камеры. Только для чтения.   |
-|fNumber            |Двойное         | Значение диафрагмы камеры. Только для чтения.                               |
+|exposureDenominator|Двойное с плавающей точкой         | Знаменатель дробного значения выдержки камеры. Только для чтения. |
+|exposureNumerator  |Двойное с плавающей точкой         | Числитель дробного значения выдержки камеры. Только для чтения.   |
+|fNumber            |Двойное с плавающей точкой         | Значение диафрагмы камеры. Только для чтения.                               |
 |focalLength        |Double         | Фокусное расстояние камеры. Только для чтения.                               |
 |iso                |Int32          | Значение ISO камеры. Только для чтения.                                  |
 |orientation        |Int16          | Значение ориентации камеры. Возможность записи в OneDrive персональный.      |

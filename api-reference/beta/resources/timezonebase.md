@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: a5ebe26cb7968e9a5cce3ab05821dfb81e1221ec
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 95347a76ff5622f1e93d6e4c61a6ab050c302db9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007566"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519689"
 ---
 # <a name="timezonebase-resource-type"></a>Тип ресурса timeZoneBase
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

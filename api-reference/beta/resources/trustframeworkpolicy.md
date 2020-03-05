@@ -5,14 +5,16 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 83b4a747007ed0ba55cc0fec37b9cf45debf1f47
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 2cda564b353675d54305db5c0e6eaaa64682a7ef
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866506"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519640"
 ---
 # <a name="trustframeworkpolicy-resource-type"></a>Тип ресурса Трустфрамеворкполици
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -32,8 +34,8 @@ ms.locfileid: "40866506"
 |[Создание Трустфрамеворкполици](../api/trustframework-post-trustframeworkpolicy.md)|трустфрамеворкполици|Создание нового Трустфрамеворкполици.|
 |[Получение Трустфрамеворкполици](../api/trustframeworkpolicy-get.md) |трустфрамеворкполици|Чтение свойств существующего Трустфрамеворкполици.|
 |[Список ТрустфрамеворкполиЦиес](../api/trustframework-list-trustframeworkpolicies.md)|Коллекция Трустфрамеворкполици|Список всех ТрустфрамеворкполиЦиес, настроенных в клиенте.|
-|[Обновление или создание Трустфрамеворкполици](../api/trustframework-put-trustframeworkpolicy.md)|Нет.|Обновление существующего Трустфрамеворкполици.|
-|[Удаление Трустфрамеворкполици](../api/trustframeworkpolicy-delete.md)|Нет.|Удаление существующего Трустфрамеворкполици.|
+|[Обновление или создание Трустфрамеворкполици](../api/trustframework-put-trustframeworkpolicy.md)|Нет|Обновление существующего Трустфрамеворкполици.|
+|[Удаление Трустфрамеворкполици](../api/trustframeworkpolicy-delete.md)|Нет|Удаление существующего Трустфрамеворкполици.|
 
 ## <a name="properties"></a>Свойства
 

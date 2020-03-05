@@ -6,14 +6,16 @@ title: PublicationFacet
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 9c09f0863376e1569fb4af0acc0044fa1c7c8cfa
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 46e5a8925e6f2521763bd1b1830e967a08df3abb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008861"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521315"
 ---
 # <a name="publicationfacet-resource-type"></a>Тип ресурса publicationFacet
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

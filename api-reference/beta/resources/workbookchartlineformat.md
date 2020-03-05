@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: fe36b0448d430566b51ee836e93d02f08cdbdbd5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6900b961608ff29c503dc355dfb8876d3e273feb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007244"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519297"
 ---
 # <a name="workbookchartlineformat-resource-type"></a>Тип ресурса Воркбукчартлинеформат
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,8 +25,8 @@ ms.locfileid: "36007244"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение Воркбукчартлинеформат](../api/chartlineformat-get.md) | [Воркбукчартлинеформат](workbookchartlineformat.md) |Чтение свойств и связей объекта chartLineFormat.|
-|[Обновление](../api/chartlineformat-update.md) | [Воркбукчартлинеформат](workbookchartlineformat.md) |Обновление объекта ChartLineFormat. |
+|[Получение Воркбукчартлинеформат](../api/chartlineformat-get.md) | [воркбукчартлинеформат](workbookchartlineformat.md) |Чтение свойств и связей объекта chartLineFormat.|
+|[Обновление](../api/chartlineformat-update.md) | [воркбукчартлинеформат](workbookchartlineformat.md) |Обновление объекта ChartLineFormat. |
 |[Clear](../api/chartlineformat-clear.md)|Нет|Очищает формат линий элемента диаграммы.|
 
 ## <a name="properties"></a>Свойства
@@ -32,7 +34,7 @@ ms.locfileid: "36007244"
 |:---------------|:--------|:----------|
 |color|string|HTML-код цвета, представляющий цвет линий в диаграмме.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

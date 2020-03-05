@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: e7cd34ab250f5232d1620af3b3be4fe36c286f41
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 89d9a45f0f9e992ac8a93cde6114fc8c9f073359
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964085"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519388"
 ---
 # <a name="workbookchartaxes-resource-type"></a>Тип ресурса Воркбукчартаксес
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,12 +27,12 @@ ms.locfileid: "35964085"
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Категоряксис|[Воркбукчартаксис](workbookchartaxis.md)|Представляет ось категорий на диаграмме. Только для чтения.|
-|Сериесаксис|[Воркбукчартаксис](workbookchartaxis.md)|Представляет ось ряда данных для объемной диаграммы. Только для чтения.|
-|valueAxis|[Воркбукчартаксис](workbookchartaxis.md)|Представляет ось значений для оси. Только для чтения.|
+|категоряксис|[воркбукчартаксис](workbookchartaxis.md)|Представляет ось категорий на диаграмме. Только для чтения.|
+|сериесаксис|[воркбукчартаксис](workbookchartaxis.md)|Представляет ось ряда данных для объемной диаграммы. Только для чтения.|
+|valueAxis|[воркбукчартаксис](workbookchartaxis.md)|Представляет ось значений для оси. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

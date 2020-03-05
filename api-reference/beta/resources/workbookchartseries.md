@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: c7f7c8108ac17e6705b8bf5f69b0e87f0dc96b31
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2f93eb5ccf8b3acda9113312f4dbbb9063bdfcef
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007251"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519276"
 ---
 # <a name="workbookchartseries-resource-type"></a>Тип ресурса Воркбукчартсериес
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,22 +25,22 @@ ms.locfileid: "36007251"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartSeries](../api/chartseries-get.md) | [Воркбукчартсериес](workbookchartseries.md) |Чтение свойств и связей объекта chartSeries.|
+|[Получение объекта ChartSeries](../api/chartseries-get.md) | [воркбукчартсериес](workbookchartseries.md) |Чтение свойств и связей объекта chartSeries.|
 |[Создание ChartPoint](../api/chartseries-post-points.md) |[chartPoints](workbookchartpoint.md)| Создание нового chartPoint путем публикации в коллекции Points.|
 |[Список точек](../api/chartseries-list-points.md) |Коллекция [воркбукчартпоинтс](workbookchartpoint.md)| Получение коллекции объектов chartPoints.|
-|[обновление](../api/chartseries-update.md); | [Воркбукчартсериес](workbookchartseries.md) |Обновление объекта chartSeries. |
+|[обновление](../api/chartseries-update.md). | [воркбукчартсериес](workbookchartseries.md) |Обновление объекта chartSeries. |
 |[List](../api/chartseries-list.md) | Коллекция [воркбукчартсериес](workbookchartseries.md) |Получение коллекции объектов chartSeries. |
-|[Итемат](../api/chartseriescollection-itemat.md)|[Воркбукчартсериес](workbookchartseries.md)|Возвращает ряд на основании сведений о его позиции в коллекции.|
+|[итемат](../api/chartseriescollection-itemat.md)|[воркбукчартсериес](workbookchartseries.md)|Возвращает ряд на основании сведений о его позиции в коллекции.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |name|string|Представляет имя ряда в диаграмме.|
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|format|[Воркбукчартсериесформат](workbookchartseriesformat.md)|Представляет форматирование ряда диаграммы, включая формат заливки и линий. Только для чтения.|
+|format|[воркбукчартсериесформат](workbookchartseriesformat.md)|Представляет форматирование ряда диаграммы, включая формат заливки и линий. Только для чтения.|
 |points|Коллекция [воркбукчартпоинт](workbookchartpoint.md)|Представляет коллекцию всех точек в ряду. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON

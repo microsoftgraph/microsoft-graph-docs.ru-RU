@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 465a45a2ba8a607d0537e66b96207b3d60626517
-ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
+ms.openlocfilehash: 1aa9188f40175ba0f52f143081004d8c3cbc4797
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37950474"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521434"
 ---
 # <a name="projectparticipation-resource-type"></a>Тип ресурса ПрожектпартиЦипатион
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

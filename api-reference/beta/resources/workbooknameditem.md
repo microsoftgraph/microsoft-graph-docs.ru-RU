@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: excel
 author: ''
-ms.openlocfilehash: 90c816bde49cf7062bf2b04deebd8ce6a7e08669
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 17b9e7a04a2524febcb949829b626bc6efe6b779
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007118"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519213"
 ---
 # <a name="workbooknameditem-resource-type"></a>Тип ресурса Воркбукнамедитем
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,10 +25,10 @@ ms.locfileid: "36007118"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Add](../api/nameditem-add.md)|[Воркбукнамедитем](workbooknameditem.md)|Добавляет новое имя в определенную коллекцию.|
-|[AddFormulaLocal](../api/nameditem-addformulalocal.md)|[Воркбукнамедитем](workbooknameditem.md)|Добавляет новое имя в определенную коллекцию, используя языковой стандарт пользователя для формулы.|
-|[Get NamedItem](../api/nameditem-get.md) | [Воркбукнамедитем](workbooknameditem.md) |Чтение свойств и связей объекта namedItem.|
-|[Обновление](../api/nameditem-update.md) | [Воркбукнамедитем](workbooknameditem.md)   |Обновление объекта NamedItem. |
+|[Add](../api/nameditem-add.md)|[воркбукнамедитем](workbooknameditem.md)|Добавляет новое имя в определенную коллекцию.|
+|[AddFormulaLocal](../api/nameditem-addformulalocal.md)|[воркбукнамедитем](workbooknameditem.md)|Добавляет новое имя в определенную коллекцию, используя языковой стандарт пользователя для формулы.|
+|[Get NamedItem](../api/nameditem-get.md) | [воркбукнамедитем](workbooknameditem.md) |Чтение свойств и связей объекта namedItem.|
+|[Обновление](../api/nameditem-update.md) | [воркбукнамедитем](workbooknameditem.md)   |Обновление объекта NamedItem. |
 |[Range](../api/nameditem-range.md)|[workbookRange](workbookrange.md)|Возвращает объект Range, сопоставленный с именем. Вызывает исключение, если тип именованного элемента не является диапазоном.|
 |[Список](../api/nameditem-list.md) | Коллекция [воркбукнамедитем](workbooknameditem.md) |Получение коллекции объектов namedItem. |
 
@@ -34,16 +36,16 @@ ms.locfileid: "36007118"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |name|string|Имя объекта. Только для чтения.|
-|comment|string|Представляет примечание, связанное с этим именем.|
+|comment|строка|Представляет примечание, связанное с этим именем.|
 |scope|string|Указывает, относится ли имя к книге или определенному листу. Только для чтения.|
 |type|string|Указывает тип ссылки, связанный с именем. Возможные значения: `String`, `Integer`, `Double`, `Boolean`, `Range`. Только для чтения.|
 |value|строка|Представляет формулу, на которую ссылается имя. Например, =Sheet14!$B$2:$H$12, =4.75 и т. д. Только для чтения.|
 |visible|boolean|Определяет, является ли объект видимым.|
 
-## <a name="relationships"></a>Отношения
-| Отношение     | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|worksheet|[Воркбукворкшит](workbookworksheet.md)|Возвращает лист, к которому относится именованный элемент. Доступно, только если элемент относится к листу. Только для чтения.|
+|worksheet|[воркбукворкшит](workbookworksheet.md)|Возвращает лист, к которому относится именованный элемент. Доступно, только если элемент относится к листу. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

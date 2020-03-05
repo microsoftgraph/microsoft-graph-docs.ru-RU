@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: db0037e91f1ee9279a131c5a318c4425e7878aed
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 54342227c15eeb1b11c3ddfb157e1ef3bc83390e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007258"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519290"
 ---
 # <a name="workbookchartpoint-resource-type"></a>Тип ресурса Воркбукчартпоинт
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,20 +25,20 @@ ms.locfileid: "36007258"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение Воркбукчартпоинт](../api/chartpoint-get.md) | [Воркбукчартпоинт](workbookchartpoint.md) |Чтение свойств и связей объекта chartPoint.|
+|[Получение Воркбукчартпоинт](../api/chartpoint-get.md) | [воркбукчартпоинт](workbookchartpoint.md) |Чтение свойств и связей объекта chartPoint.|
 |[Список](../api/chartpoint-list.md) | Коллекция [воркбукчартпоинт](workbookchartpoint.md) |Получение коллекции объектов chartPoint. |
-|[Итемат](../api/chartpointscollection-itemat.md)|[Воркбукчартпоинт](workbookchartpoint.md)|Получение точки на основании ее положения в ряду.|
+|[итемат](../api/chartpointscollection-itemat.md)|[воркбукчартпоинт](workbookchartpoint.md)|Получение точки на основании ее положения в ряду.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |значение|Json|Возвращает значение точки диаграммы. Только для чтения.|
-|id|string|уникальный идентификатор|
+|id|строка|уникальный идентификатор|
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|format|[Воркбукчартпоинтформат](workbookchartpointformat.md)|Инкапсулирует свойства формата точки диаграммы. Только для чтения.|
+|format|[воркбукчартпоинтформат](workbookchartpointformat.md)|Инкапсулирует свойства формата точки диаграммы. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

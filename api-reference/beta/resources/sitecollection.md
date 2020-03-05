@@ -6,14 +6,16 @@ title: SiteCollection
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 0989306be8fa8e456d2718079aec069097cab035
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 240f0b804e8b87c0dc3aae1e03a46be3527bed22
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008294"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520543"
 ---
 # <a name="sitecollection-resource"></a>Ресурс SiteCollection
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,7 +48,7 @@ ms.locfileid: "36008294"
 | Имя свойства        | Тип     | Описание
 |:---------------------|:---------|:---------------------------------------------------
 | **hostname**         | строка   | Имя узла для семейства веб-сайтов. Только для чтения.
-| **Даталокатионкоде** | string   | Код географического региона, в котором располагается это семейство веб-сайтов. Только для чтения.
+| **даталокатионкоде** | строка   | Код географического региона, в котором располагается это семейство веб-сайтов. Только для чтения.
 | **root**             | [root][] | Если задано, это указывает на то, что это корневое семейство веб-сайтов в SharePoint. Только для чтения.
 
 [root]: root.md

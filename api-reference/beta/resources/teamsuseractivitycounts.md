@@ -5,26 +5,28 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 9e1a40d962ded7825b72d31675cefb9869750866
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3066877d109e7dd61243b7cd2f4c105b03c0c533
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007623"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519829"
 ---
 # <a name="teamsuseractivitycounts-resource-type"></a>Тип ресурса Теамсусерактивитикаунтс
+
+Пространство имен: Microsoft. Graph
 
 ## <a name="properties"></a>Свойства
 
 | Свойство            | Тип   |
 | :------------------ | :----- |
-| Репортрефрешдате   | Дата   |
+| репортрефрешдате   | Дата   |
 | reportDate          | Дата   |
-| Теамчатмессажес    | Int64  |
-| Приватечатмессажес | Int64  |
+| теамчатмессажес    | Int64  |
+| приватечатмессажес | Int64  |
 | calls               | Int64  |
 | meetings            | Int64  |
-| Репортпериод        | String |
+| репортпериод        | String |
 
 
 ## <a name="json-representation"></a>Представление JSON

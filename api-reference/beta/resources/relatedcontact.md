@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: ce1ff84abb6704255267b521c67e5fc7b231b7df
-ms.sourcegitcommit: e4b0211db9b20dfea8be964003661cd99fe064d1
+ms.openlocfilehash: 7eb8f39c30343412584e63fa1e8c3382db4fa9c6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37439936"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521189"
 ---
 # <a name="relatedcontact-resource-type"></a>Тип ресурса Релатедконтакт
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,13 +25,13 @@ ms.locfileid: "37439936"
 | Свойство      | Тип                  | Описание                                                                                                         |
 | :------------ | :-------------------- | :------------------------------------------------------------------------------------------------------------------ |
 | id            | Строка                | Идентификатор контакта в Azure Active Directory.                                                              |
-| displayName   | Строка                | Имя контакта. Обязательный.                                                                                      |
+| displayName   | Строка                | Имя контакта. Обязательное.                                                                                      |
 | emailAddress  | String                | Основной адрес электронной почты контакта.                                                                               |
 | mobilePhone   | String                | Номер мобильного телефона контакта.                                                                                 |
 | Отношение  | `contactRelationship` | Отношение к пользователю. Возможные значения: `parent`, `relative`, `aide`, `doctor` `guardian`,, `child`, `other`. |
-| акцессконсент | Boolean               | Указывает, было ли пользователь отправлен для доступа к данным учащихся.                                               |
+| акцессконсент | Логический               | Указывает, было ли пользователь отправлен для доступа к данным учащихся.                                               |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

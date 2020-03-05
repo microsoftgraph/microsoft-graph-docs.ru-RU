@@ -5,18 +5,20 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: e63fd8ad7aa7d0a19fe1774e18bba5d59af52140
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: 6f900056db140719ff5bc7902a6a7a9531cebe9b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36173309"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521007"
 ---
 # <a name="rubricquality-resource-type"></a>Тип ресурса Рубриккуалити
 
+Пространство имен: Microsoft. Graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Качество Rubric. Описание связи между Rubric *качеством*, *уровнями*и критериями можно узнать в разделе ** [едукатионрубрик](educationrubric.md) .
+Качество Rubric. Описание связи между Rubric *качеством*, *уровнями*и *критериями*можно узнать в разделе [едукатионрубрик](educationrubric.md) .
 
 ## <a name="properties"></a>Свойства
 
@@ -25,7 +27,7 @@ ms.locfileid: "36173309"
 |criteria|Коллекция [рубриккритерион](rubriccriterion.md)|Коллекция критериев для этого качества Rubric.|
 |description|[itemBody](itembody.md)|Описание этого качества Rubric.|
 |displayName|String|Имя этого rubricного качества.|
-|Куалитид|String|ИДЕНТИФИКАТОР этого ресурса.|
+|куалитид|String|ИДЕНТИФИКАТОР этого ресурса.|
 |weight|Одинарное|Если задано, числовой вес для этого качества.  Весовые значения должны добавим до 100.|
 
 ## <a name="json-representation"></a>Представление JSON

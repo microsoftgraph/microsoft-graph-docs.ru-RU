@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5ffbc327d40edb071c70336032506b5f97c9e083
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dc34a596af9b8f1270462b7c180e62ffde0cf0f0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964629"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520046"
 ---
 # <a name="synchronizationschedule-resource-type"></a>Тип ресурса Синчронизатионсчедуле
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +24,7 @@ ms.locfileid: "35964629"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |срока действия|DateTimeOffset|Дата и время истечения срока действия этого задания. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|interval|Duration (Длительность)|Интервал между итерациями синхронизации.|
+|interval|Длительность|Интервал между итерациями синхронизации.|
 |state|String| Возможные значения: `Active`, `Disabled`.|
 
 ## <a name="json-representation"></a>Представление JSON

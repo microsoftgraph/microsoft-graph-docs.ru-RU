@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 414e3f491736f51ee670390519241110bc81f66e
-ms.sourcegitcommit: dd94c3a0f7663699825b6dbc119cdcef494cd130
+ms.openlocfilehash: ceb282dbcf0370e5eca2001b582660bdcaa1f1aa
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "37950357"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519451"
 ---
 # <a name="webaccount-resource-type"></a>Тип ресурса "учетная запись"
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +28,7 @@ ms.locfileid: "37950357"
 |:-------------------------------------------|:----------------------------|:--------------------------------------------------------|
 | [Получение учетной записи службы](../api/webaccount-get.md) | [Учетная запись учетной записи](webaccount.md) | Чтение свойств и связей объекта веб- **учетных записей** . |
 | [Обновление учетной записи](../api/webaccount-update.md)      | [Учетная запись учетной записи](webaccount.md) | Обновление объекта **учетной записи** .                               |
-| [Удаление учетной записи службы](../api/webaccount-delete.md)      | Нет.                        | Удаление объекта **учетной записи** .                               |
+| [Удаление учетной записи службы](../api/webaccount-delete.md)      | Нет                        | Удаление объекта **учетной записи** .                               |
 
 ## <a name="properties"></a>Свойства
 

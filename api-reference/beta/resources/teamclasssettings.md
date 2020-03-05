@@ -5,23 +5,25 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: ca8d345cd229c4a6c003c87865b5aaddf01096b4
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 50fd73203697b008163337eb32ab9b54c0e8fd0b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37998618"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519969"
 ---
 # <a name="teamclasssettings-resource-type"></a>Тип ресурса Теамкласссеттингс
 
+Пространство имен: Microsoft. Graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет свойства [команды](team.md), зависящие от класса. Доступно только в том случае, если команда представляет класс.
+Представляет свойства [команды](team.md), зависящие от класса. Доступна только в том случае, если команда представляет класс.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|нотифигуардиансабаутассигнментс|Boolean|Если задано `true`значение, разрешает отправку сообщений сводки по неделям в родительские и опекуны, если администратор клиента включил параметр глобально.|
+|нотифигуардиансабаутассигнментс|Логический|Если задано `true`значение, разрешает отправку сообщений сводки по неделям в родительские и опекуны, если администратор клиента включил параметр глобально.|
 
 ## <a name="json-representation"></a>Представление JSON
 

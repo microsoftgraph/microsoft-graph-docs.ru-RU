@@ -5,31 +5,33 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 5bd7443e775a8a9de0dbbc27cf8843331f8f8cb7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c5c3815b2418f414aa552f211bbeed5f643eb0d4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007629"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519864"
 ---
 # <a name="teamsdeviceusageuserdetail-resource-type"></a>Тип ресурса Теамсдевицеусажеусердетаил
+
+Пространство имен: Microsoft. Graph
 
 ## <a name="properties"></a>Свойства
 
 | Свойство          | Тип    |
 | :---------------- | :------ |
-| Репортрефрешдате | Дата    |
+| репортрефрешдате | Дата    |
 | userPrincipalName | String  |
-| Ластактивитидате  | Дата    |
-| isDeleted         | Boolean |
-| Делетеддате       | Дата    |
-| Уседвеб           | Boolean |
-| Уседвиндовсфоне  | Boolean |
-| Уседиос           | Boolean |
-| Уседмак           | Boolean |
-| Уседандроидфоне  | Boolean |
-| Уседвиндовс       | Boolean |
-| Репортпериод      | String  |
+| ластактивитидате  | Дата    |
+| isDeleted         | Логический |
+| делетеддате       | Дата    |
+| уседвеб           | Логический |
+| уседвиндовсфоне  | Логический |
+| уседиос           | Логический |
+| уседмак           | Логический |
+| уседандроидфоне  | Логический |
+| уседвиндовс       | Логический |
+| репортпериод      | String  |
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -5,26 +5,28 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: b5c90db3ec241017781d52bbb623d728a7959445
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d7b6639b810507d7bee0c0a54f98cefae8d51677
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964944"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520424"
 ---
 # <a name="skypeforbusinessdeviceusagedistributionusercounts-resource-type"></a>Тип ресурса Скипефорбусинессдевицеусажедистрибутионусеркаунтс
+
+Пространство имен: Microsoft. Graph
 
 ## <a name="properties"></a>Свойства
 
 | Свойство          | Тип   |
 | :---------------- | :----- |
-| Репортрефрешдате | Дата   |
+| репортрефрешдате | Дата   |
 | под           | Int64  |
 | windowsPhone      | Int64  |
-| Андроидфоне      | Int64  |
+| андроидфоне      | Int64  |
 | iPhone            | Int64  |
 | iPad              | Int64  |
-| Репортпериод      | String |
+| репортпериод      | String |
 
 ## <a name="json-representation"></a>Представление JSON
 

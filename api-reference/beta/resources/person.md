@@ -5,14 +5,16 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 762d3bf04c891c9a2388368ca90a90ce904dc6e9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4df5f82bd14ba56969c26facef82b59f3ac7e3f0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966164"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521941"
 ---
 # <a name="person-resource-type"></a>Тип ресурса person
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,27 +30,27 @@ ms.locfileid: "35966164"
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|birthday|string|День рождения человека.|
-|companyName|string|Название компании человека.|
-|department|string|Отдел, в котором работает человек.|
-|displayName|string|Отображаемое имя человека.|
+|birthday|строка|День рождения человека.|
+|companyName|строка|Название компании человека.|
+|department|строка|Отдел, в котором работает человек.|
+|displayName|строка|Отображаемое имя человека.|
 |emailAddresses|Коллекция [ранкедемаиладдресс](rankedemailaddress.md)|Электронные адреса человека.|
-|givenName|string|Имя человека.|
-|id|string|Уникальный идентификатор человека. Только для чтения.|
+|givenName|строка|Имя человека.|
+|id|строка|Уникальный идентификатор человека. Только для чтения.|
 |isFavorite|boolean|Имеет значение `true`, если пользователь добавил этого человека в список избранных.|
-|mailboxType|string|Тип почтового ящика, представленного адресом электронной почты пользователя.|
-|officeLocation|string|Расположение офиса человека.|
-|personNotes|string|Заметки в произвольной форме о человеке, созданные пользователем.|
-|personType|string|Тип лица, например список рассылки.|
+|mailboxType|строка|Тип почтового ящика, представленного адресом электронной почты пользователя.|
+|officeLocation;|строка|Расположение офиса человека.|
+|personNotes|строка|Заметки в произвольной форме о человеке, созданные пользователем.|
+|personType|строка|Тип лица, например список рассылки.|
 |phones|Коллекция [phone](phone.md)|Номера телефонов человека.|
 |postalAddresses|Коллекция [location](location.md)|Адреса человека.|
-|profession|string|Профессия человека.|
+|profession|строка|Профессия человека.|
 |sources|Коллекция [персондатасаурце](persondatasource.md)|Источники, из которых берутся данные пользователя, например, "каталог" или "Контакты Outlook".|
-|surname|string|Фамилия человека.|
+|surname|строка|Фамилия человека.|
 |title|string|Должность человека.|
 |userPrincipalName|string|Имя участника-пользователя человека. Имя участника-пользователя — это имя для входа, используемое в Интернете и закрепленное за человеком. Оно основано на интернет-стандарте [RFC 822](https://www.ietf.org/rfc/rfc0822.txt). В соответствии с соглашением оно должно быть сопоставлено с именем пользователя для электронной почты. В общем случае оно должно иметь следующий формат: псевдоним@домен.|
 |websites|Коллекция [website](website.md)|Веб-сайты человека.|
-|yomiCompany|string|Название компании человека, записанное так, как оно звучит по-японски.|
+|yomiCompany|строка|Название компании человека, записанное так, как оно звучит по-японски.|
 
 ## <a name="relationships"></a>Связи
 

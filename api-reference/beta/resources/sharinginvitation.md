@@ -6,14 +6,16 @@ title: SharingInvitation
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: eebfa17a08918ec3ac08700577921b1037761086
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6bbe39603ed4daad9c354b1c14ed6a68b3638c6d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008336"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520655"
 ---
 # <a name="sharinginvitation-resource-type"></a>Тип ресурса SharingInvitation
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

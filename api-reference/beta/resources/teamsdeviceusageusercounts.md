@@ -5,28 +5,30 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 99cb675880962591d6298062f979f0930bc0a15d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 02dc1b734e039e7c5eac7b8ffaed7a418e443c71
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964398"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519871"
 ---
 # <a name="teamsdeviceusageusercounts-resource-type"></a>Тип ресурса Теамсдевицеусажеусеркаунтс
+
+Пространство имен: Microsoft. Graph
 
 ## <a name="properties"></a>Свойства
 
 | Свойство          | Тип   |
 | :---------------- | :----- |
-| Репортрефрешдате | Дата   |
+| репортрефрешдате | Дата   |
 | web               | Int64  |
 | windowsPhone      | Int64  |
-| Андроидфоне      | Int64  |
+| андроидфоне      | Int64  |
 | модуле               | Int64  |
 | mac               | Int64  |
 | под           | Int64  |
 | reportDate        | Дата   |
-| Репортпериод      | String |
+| репортпериод      | String |
 
 ## <a name="json-representation"></a>Представление JSON
 

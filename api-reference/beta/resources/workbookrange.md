@@ -5,14 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: baf4dc86e4a13436e1dc96edc4f1a84967a88e38
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 23748b2f92d8ba786ba6e8ef82df0243f9fe2617
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007083"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519199"
 ---
 # <a name="workbookrange-resource-type"></a>Тип ресурса workbookRange
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -71,11 +73,11 @@ ms.locfileid: "36007083"
 |values|Json|Представляет необработанные значения указанного диапазона. Могут возвращаться строковые и числовые данные, а также логические значения. Ячейка, которая содержит ошибку, вернет строку ошибки.|
 
 ## <a name="relationships"></a>Связи
-| Отношение | Тип   |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|format|[Воркбукранжеформат](workbookrangeformat.md)|Возвращает объект формата, в который включены шрифт, заливка, границы, выравнивание и другие свойства диапазона. Только для чтения.|
-|sort|[Воркбукранжесорт](workbookrangesort.md)|Лист, содержащий текущий диапазон. Только для чтения.|
-|worksheet|[Воркбукворкшит](workbookworksheet.md)|Лист, содержащий текущий диапазон. Только для чтения.|
+|format|[воркбукранжеформат](workbookrangeformat.md)|Возвращает объект формата, в который включены шрифт, заливка, границы, выравнивание и другие свойства диапазона. Только для чтения.|
+|sort|[воркбукранжесорт](workbookrangesort.md)|Лист, содержащий текущий диапазон. Только для чтения.|
+|worksheet|[воркбукворкшит](workbookworksheet.md)|Лист, содержащий текущий диапазон. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

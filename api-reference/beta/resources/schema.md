@@ -5,14 +5,16 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 2a13d797ff3b695250f7dd5cfef3bc077afe505b
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 40c31536f8d53c46563fda4205d34deee0501beb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870119"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520958"
 ---
 # <a name="schema-resource-type"></a>Тип ресурса схемы
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,10 +33,10 @@ ms.locfileid: "40870119"
 
 | Свойство   | Тип                               | Описание                |
 |:-----------|:-----------------------------------|:---------------------------|
-| baseType   | String                             | Возможные значения: `microsoft.graph.externalItem` и `microsoft.graph.externalFile`. Обязательный атрибут. |
+| baseType   | String                             | Возможные значения: `microsoft.graph.externalItem` и `microsoft.graph.externalFile`. Обязательное. |
 | properties | Коллекция [свойств](property.md) | Свойства, заданные для элементов в подключении. Минимальное число свойств — 1, максимальное — 64. Является обязательным `baseType` , если задано значение `microsoft.graph.externalItem`. Игнорируется `baseType` , если задано значение `microsoft.graph.externalFile`. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Нет
 

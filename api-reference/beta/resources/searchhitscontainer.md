@@ -5,14 +5,16 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0bb960156a6c8f3a407dbd0691cdbed32e03693d
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 750bd79dad9758f3ffe883fd87713c42c29c0917
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703914"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520923"
 ---
 # <a name="searchhitscontainer-resource-type"></a>Тип ресурса Сеарчхитсконтаинер
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +27,7 @@ ms.locfileid: "38703914"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |успешных|Коллекция [сеарчхит](searchhit.md)|Енкасулате результаты поиска.|
-|морересултсаваилабле|Логическое|Предоставляет сведения, если доступны дополнительные результаты. В этом случае можно увеличить смещение "от" и "до".|
+|морересултсаваилабле|Логический|Предоставляет сведения, если доступны дополнительные результаты. В этом случае можно увеличить смещение "от" и "до".|
 |total|Int32|Общее число результатов. Обратите внимание, что это не количество результатов на странице, а общее количество результатов, удовлетворяющих запросу.|
 
 ## <a name="json-representation"></a>Представление JSON

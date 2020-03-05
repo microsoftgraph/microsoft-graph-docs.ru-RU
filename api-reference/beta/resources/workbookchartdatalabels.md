@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: c5e469f5d95065fa3b5a161d510ca023e17f807a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2e276a3d4e6f958930add9095e8c6c67972bed4f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007293"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519346"
 ---
 # <a name="workbookchartdatalabels-resource-type"></a>Тип ресурса Воркбукчартдаталабелс
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,13 +25,13 @@ ms.locfileid: "36007293"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение Воркбукчартдаталабелс](../api/chartdatalabels-get.md) | [Воркбукчартдаталабелс](workbookchartdatalabels.md) |Чтение свойств и связей объекта chartDataLabels.|
-|[Обновление](../api/chartdatalabels-update.md) | [Воркбукчартдаталабелс](workbookchartdatalabels.md) |Обновление объекта chartDataLabels. |
+|[Получение Воркбукчартдаталабелс](../api/chartdatalabels-get.md) | [воркбукчартдаталабелс](workbookchartdatalabels.md) |Чтение свойств и связей объекта chartDataLabels.|
+|[Обновление](../api/chartdatalabels-update.md) | [воркбукчартдаталабелс](workbookchartdatalabels.md) |Обновление объекта chartDataLabels. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|position|string|Значение DataLabelPosition, которое представляет положение метки данных. `None`Возможные значения:, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`,. `Callout`|
+|position|строка|Значение DataLabelPosition, которое представляет положение метки данных. `None`Возможные значения:, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`,. `Callout`|
 |separator|string|Строка, представляющая разделитель для меток данных на диаграмме.|
 |showBubbleSize|boolean|Логическое значение, которое указывает, отображается ли размер пузырьков с метками данных.|
 |showCategoryName|boolean|Логическое значение, которое указывает, отображается ли имя для категории меток данных.|
@@ -38,10 +40,10 @@ ms.locfileid: "36007293"
 |showSeriesName|boolean|Логическое значение, которое указывает, отображается ли имя ряда для меток данных.|
 |showValue|boolean|Логическое значение, которое указывает, отображается ли значение метки данных.|
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|format|[Воркбукчартдаталабелформат](workbookchartdatalabelformat.md)|Представляет формат меток данных диаграммы, включая форматирование заливки и шрифтов. Только для чтения.|
+|format|[воркбукчартдаталабелформат](workbookchartdatalabelformat.md)|Представляет формат меток данных диаграммы, включая форматирование заливки и шрифтов. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

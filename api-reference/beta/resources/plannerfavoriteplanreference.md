@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 07803375ca31162f0f7e392d81edb83ab2bd6da3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d1bb7cb2ac675d558054523e38ba6bde44378568
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009071"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521743"
 ---
 # <a name="plannerfavoriteplanreference-resource-type"></a>Тип ресурса Планнерфаворитепланреференце
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +27,7 @@ ms.locfileid: "36009071"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |orderHint|String|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определен в статье [Использование указаний order в Планировщике](planner-order-hint-format.md).|
-|Плантитле|String|Название плана на тот момент, когда пользователь пометил его в качестве избранного.|
+|плантитле|String|Название плана на тот момент, когда пользователь пометил его в качестве избранного.|
 
 
 ## <a name="json-representation"></a>Представление JSON

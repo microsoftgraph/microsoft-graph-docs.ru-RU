@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 95cb2a9bc38b3c23d8ddece5abe5520bf0fe25a8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3a50a53c7d76d281f4a42e976bacc0803377379d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007783"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520039"
 ---
 # <a name="synchronizationschema-resource-type"></a>Тип ресурса Синчронизатионсчема
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,12 +38,12 @@ ms.locfileid: "36007783"
 
 | Метод        | Возвращаемый тип               | Описание                  |
 |:--------------|:--------------------------|:-----------------------------|
-|[Получение схемы](../api/synchronization-synchronizationschema-get.md)    |[Синчронизатионсчема](synchronization-synchronizationschema.md)   |Чтение свойств и связей объекта **синчронизатионсчема** .|
+|[Получение схемы](../api/synchronization-synchronizationschema-get.md)    |[синчронизатионсчема](synchronization-synchronizationschema.md)   |Чтение свойств и связей объекта **синчронизатионсчема** .|
 |[Обновление схемы](../api/synchronization-synchronizationschema-update.md)    |Нет   |Обновите схему синхронизации. |
 |[Удаление схемы](../api/synchronization-synchronizationschema-delete.md)    |Нет   |Удаление настраиваемой схемы путем сброса схемы к конфигурации по умолчанию. |
 |[Операторы фильтра списка](../api/synchronization-synchronizationschema-filteroperators.md)    |Коллекция [филтероператорсчема](../resources/synchronization-filteroperatorschema.md)   |Перечисление всех операторов, поддерживаемых в фильтрах областей видимости. |
 |[Функции сопоставления атрибутов списка](../api/synchronization-synchronizationschema-functions.md)    |Коллекция [аттрибутемаппингфунктионсчема](../resources/synchronization-attributemappingfunctionschema.md)   |Перечисление всех функций, поддерживаемых в выражениях сопоставления атрибутов. |
-|[Анализ выражения сопоставления атрибутов](../api/synchronization-synchronizationschema-parseexpression.md)|[Парсикспрессионреспонсе](synchronization-parseexpressionresponse.md)|Синтаксический анализ строкового выражения в объект [Аттрибутемаппингсаурце|(.. Объект/ресаурцес/синчронизатион_аттрибутемаппингсаурце.МД).|
+|[Анализ выражения сопоставления атрибутов](../api/synchronization-synchronizationschema-parseexpression.md)|[парсикспрессионреспонсе](synchronization-parseexpressionresponse.md)|Синтаксический анализ строкового выражения в объект [Аттрибутемаппингсаурце|(.. Объект/ресаурцес/synchronization_attributemappingsource. md).|
 
 
 ## <a name="properties"></a>Свойства
@@ -49,7 +51,7 @@ ms.locfileid: "36007783"
 | Свойство      | Тип      | Описание    |
 |:--------------|:----------|:---------------|
 |каталоги            |Коллекция [директоридефинитион](synchronization-directorydefinition.md)   |Описывает каталоги и объекты, входящие в состав [синчронизатионжоб](synchronization-synchronizationjob.md) или [синчронизатионтемплате](synchronization-synchronizationtemplate.md). |
-|Синчронизатионрулес   |Коллекция [синчронизатионруле](synchronization-synchronizationrule.md)   |Коллекция правил синхронизации, настроенных для [синчронизатионжоб](synchronization-synchronizationjob.md) или [синчронизатионтемплате](synchronization-synchronizationtemplate.md) |
+|синчронизатионрулес   |Коллекция [синчронизатионруле](synchronization-synchronizationrule.md)   |Коллекция правил синхронизации, настроенных для [синчронизатионжоб](synchronization-synchronizationjob.md) или [синчронизатионтемплате](synchronization-synchronizationtemplate.md) |
 |version                |String                             |Версия схемы, автоматически обновляемая при каждом изменении схемы.|
 
 

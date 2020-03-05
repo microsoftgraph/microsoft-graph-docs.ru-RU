@@ -5,28 +5,30 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: b84cf9c7654354446fb7c6a5005befe3d17a0fa4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 582c3483d4292f634385461508bf579834dfd12e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964916"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520410"
 ---
 # <a name="skypeforbusinessdeviceusageuserdetail-resource-type"></a>Тип ресурса Скипефорбусинессдевицеусажеусердетаил
+
+Пространство имен: Microsoft. Graph
 
 ## <a name="properties"></a>Свойства
 
 | Свойство          | Тип    |
 | :---------------- | :------ |
-| Репортрефрешдате | Дата    |
+| репортрефрешдате | Дата    |
 | userPrincipalName | String  |
-| Ластактивитидате  | Дата    |
-| Уседвиндовс       | Boolean |
-| Уседвиндовсфоне  | Boolean |
-| Уседандроидфоне  | Boolean |
-| Уседифоне        | Boolean |
-| Уседипад          | Boolean |
-| Репортпериод      | String  |
+| ластактивитидате  | Дата    |
+| уседвиндовс       | Логический |
+| уседвиндовсфоне  | Логический |
+| уседандроидфоне  | Логический |
+| уседифоне        | Логический |
+| уседипад          | Логический |
+| репортпериод      | String  |
 
 ## <a name="json-representation"></a>Представление JSON
 

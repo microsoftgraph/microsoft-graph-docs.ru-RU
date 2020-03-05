@@ -6,14 +6,16 @@ title: Видео
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: e93fd4bbd348df3ad31d1be6aa2b1dc73593327a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b80d36ce35a950fa20424124b20cba34c19307c3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007363"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519472"
 ---
 # <a name="video-resource-type"></a>Тип ресурса video
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +54,7 @@ ms.locfileid: "36007363"
 |:--------------------------|:-------|:----------------------------------------
 | **audioBitsPerSample**    | Int32  | Количество разрядов звука на выборку.
 | **audioChannels**         | Int32  | Количество звуковых каналов.
-| **audioFormat**           | string | Название формата аудио (AAC, MP3, и т. д.).
+| **audioFormat**           | строка | Название формата аудио (AAC, MP3, и т. д.).
 | **audioSamplesPerSecond** | Int32  | Количество выборок звука в секунду.
 | **bitrate**               | Int32  | Скорость видео в битах в секунду.
 | **duration**              | Int64  | Длительность файла в миллисекундах.

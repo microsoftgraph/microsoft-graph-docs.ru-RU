@@ -5,14 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 6a7a557dfd72dac9161ae29436f5fc96eb55075d
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 3fc936179a0c0764492a3dc8d677060931a1223a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939076"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521371"
 ---
 # <a name="protectbytemplateaction-resource-type"></a>Тип ресурса Протектбитемплатеактион
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +24,7 @@ ms.locfileid: "37939076"
 
 | Свойство   | Тип   | Описание                                                                        |
 | :--------- | :----- | :--------------------------------------------------------------------------------- |
-| templateId | Строка | GUID шаблона Azure Information Protection для применения к данным. |
+| templateId | String | GUID шаблона Azure Information Protection для применения к данным. |
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: b3ee13166a81fad96e577efd6721983714ca17b4
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: f4f13bf13b34c41c7c15c3356cc67636e6f441c0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870063"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519927"
 ---
 # <a name="teamsapp-resource-type"></a>Тип ресурса teamsApp
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,13 +44,13 @@ ms.locfileid: "40870063"
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|store|0| Приложение доступно всем клиентам через магазин приложений Microsoft Teams.|
-|organization|1|Приложение доступно только в этом клиенте|
-|sideloaded|2|Приложение доступно только тому пользователю или той команде, где оно установлено.|
+|store|нуль| Приложение доступно всем клиентам через магазин приложений Microsoft Teams.|
+|organization|1 |Приложение доступно только в этом клиенте|
+|sideloaded|2 |Приложение доступно только тому пользователю или той команде, где оно установлено.|
 
 ## <a name="relationships"></a>Отношения
 
-| Отношение | Тип   | Описание |
+| Связь | Тип   | Описание |
 |:---------------|:--------|:----------|
 |appDefinitions|Коллекция [teamsAppDefinition](teamsappdefinition.md)| Сведения о каждой версии приложения. |
 

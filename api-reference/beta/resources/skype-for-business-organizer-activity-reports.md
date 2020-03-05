@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 1c5962466933b0479f76c51bc15bf3a36bcc9d43
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5f5de33ff12b0b1afebe91d3d7499204495ffdbe
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008224"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520480"
 ---
 # <a name="skype-for-business-organizer-activity-reports"></a>Отчеты об организации конференций Skype для бизнеса
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,6 +26,6 @@ ms.locfileid: "36008224"
 
 | Функция                                 | Возвращаемый тип CSV | Возвращаемый тип JSON                         | Описание                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
-| [Получение количества действий](../api/reportroot-getskypeforbusinessorganizeractivitycounts.md) | Stream          | [Скипефорбусинессорганизерактивитикаунтс](../resources/skypeforbusinessorganizeractivitycounts.md) | Отслеживайте динамику использования по количеству и типу проведенных и организованных конференций (обмен мгновенными сообщениями, аудио, видео, общий доступ к приложениям, веб-конференции, конференции с телефонным подключением и присоединением обратным звонком через Майкрософт или стороннюю службу). |
-| [Получение количества пользователей](../api/reportroot-getskypeforbusinessorganizeractivityusercounts.md) | Поток          | [Скипефорбусинессорганизерактивитюсеркаунтс](../resources/skypeforbusinessorganizeractivityusercounts.md) | Отслеживайте динамику использования по количеству уникальных пользователей и типу проведенных и организованных конференций (обмен мгновенными сообщениями, аудио, видео, общий доступ к приложениям, веб-конференции, конференции с телефонным подключением и присоединением обратным звонком через Майкрософт или стороннюю службу). |
-| [Получение количества минут](../api/reportroot-getskypeforbusinessorganizeractivityminutecounts.md) | Поток          | [Скипефорбусинессорганизерактивитиминутекаунтс](../resources/skypeforbusinessorganizeractivityminutecounts.md) | Отслеживайте динамику использования по продолжительности (в минутах) и типу проведенных и организованных конференций (аудио и видео, с телефонным подключением или с присоединением обратным звонком через Майкрософт). |
+| [Получение количества действий](../api/reportroot-getskypeforbusinessorganizeractivitycounts.md) | Stream          | [скипефорбусинессорганизерактивитикаунтс](../resources/skypeforbusinessorganizeractivitycounts.md) | Отслеживайте динамику использования по количеству и типу проведенных и организованных конференций (обмен мгновенными сообщениями, аудио, видео, общий доступ к приложениям, веб-конференции, конференции с телефонным подключением и присоединением обратным звонком через Майкрософт или стороннюю службу). |
+| [Получение количества пользователей](../api/reportroot-getskypeforbusinessorganizeractivityusercounts.md) | Stream          | [скипефорбусинессорганизерактивитюсеркаунтс](../resources/skypeforbusinessorganizeractivityusercounts.md) | Отслеживайте динамику использования по количеству уникальных пользователей и типу проведенных и организованных конференций (обмен мгновенными сообщениями, аудио, видео, общий доступ к приложениям, веб-конференции, конференции с телефонным подключением и присоединением обратным звонком через Майкрософт или стороннюю службу). |
+| [Получение количества минут](../api/reportroot-getskypeforbusinessorganizeractivityminutecounts.md) | Поток          | [скипефорбусинессорганизерактивитиминутекаунтс](../resources/skypeforbusinessorganizeractivityminutecounts.md) | Отслеживайте динамику использования по продолжительности (в минутах) и типу проведенных и организованных конференций (аудио и видео, с телефонным подключением или с присоединением обратным звонком через Майкрософт). |

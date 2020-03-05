@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 685ed8ce049fda8cdba12d4bc9171156b458e443
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 543a13042f4245f90b799f6298a3f29c6368ea8f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007300"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519367"
 ---
 # <a name="workbookchartaxistitle-resource-type"></a>Тип ресурса Воркбукчартаксиститле
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,8 +25,8 @@ ms.locfileid: "36007300"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartAxisTitle](../api/chartaxistitle-get.md) | [Воркбукчартаксиститле](workbookchartaxistitle.md) |Чтение свойств и связей объекта chartAxisTitle.|
-|[Обновление](../api/chartaxistitle-update.md) | [Воркбукчартаксиститле](workbookchartaxistitle.md)    |Обновление объекта ChartAxisTitle. |
+|[Получение объекта ChartAxisTitle](../api/chartaxistitle-get.md) | [воркбукчартаксиститле](workbookchartaxistitle.md) |Чтение свойств и связей объекта chartAxisTitle.|
+|[Обновление](../api/chartaxistitle-update.md) | [воркбукчартаксиститле](workbookchartaxistitle.md)    |Обновление объекта ChartAxisTitle. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -32,10 +34,10 @@ ms.locfileid: "36007300"
 |text|string|Обозначает название оси.|
 |visible|boolean|Логическое значение, которое определяет видимость названия оси.|
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|format|[Воркбукчартаксиститлеформат](workbookchartaxistitleformat.md)|Представляет форматирование для названия оси диаграммы. Только для чтения.|
+|format|[воркбукчартаксиститлеформат](workbookchartaxistitleformat.md)|Представляет форматирование для названия оси диаграммы. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

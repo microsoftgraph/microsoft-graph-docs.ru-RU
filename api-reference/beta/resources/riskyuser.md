@@ -5,14 +5,16 @@ author: cloudhandler
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3548be0439eaa5335d710a35f51fdbaecb19060c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5cb1087323287f3c8e752810b1c37365c8268a19
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008728"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521063"
 ---
 # <a name="riskyuser-resource-type"></a>Тип ресурса Рискюсер
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +29,7 @@ ms.locfileid: "36008728"
 | Метод   | Возвращаемый тип|Описание|
 |:---------------|:--------|:----------|
 |[Список riskyUsers](../api/riskyusers-list.md) | Коллекция [рискюсер](riskyuser.md)|Список рискованных пользователей и их свойств.|
-|[Получение Рискюсер](../api/riskyusers-get.md) | [Рискюсер](riskyuser.md)|Получение определенного опасного пользователя и его свойств.|
+|[Получение Рискюсер](../api/riskyusers-get.md) | [рискюсер](riskyuser.md)|Получение определенного опасного пользователя и его свойств.|
 |[Журнал списка](../api/riskyuser-list-history.md) | Коллекция [рискюсерхисторитем](riskyuserhistoryitem.md)|Получение журнала рисков пользователя Azure AD.|
 |[Подтверждение riskyUsers скомпрометированных атак](../api/riskyusers-confirmcompromised.md)|Нет |Подтвердите опасного пользователя в качестве скомпрометированного.|
 |[Отклонить riskyUsers](../api/riskyusers-dismiss.md)|Нет | Отклонить риск опасного пользователя.|
@@ -47,8 +49,8 @@ ms.locfileid: "36008728"
 |`userDisplayName`|`string`|Опасное отображаемое имя пользователя|
 |`userPrincipalName`|`string`|Рискованное имя участника пользователя|
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |лист|Коллекция [рискюсерхисторитем](riskyuserhistoryitem.md)|Представляет историю риска пользователя Azure AD, определенная службой защиты удостоверений Azure AD. |
 

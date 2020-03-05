@@ -6,14 +6,16 @@ title: RestoreAction
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 88adfd244e2f8460d6749333cc64a80bf4d47361
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ec2456105c7ae1844f97e80601fe2df3bf38d028
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008693"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521091"
 ---
 # <a name="restoreaction-resource-type"></a>Тип ресурса RestoreAction
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

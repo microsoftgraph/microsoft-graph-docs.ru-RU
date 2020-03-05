@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 78dac11af0168b6981e98688536064e9cbc5f528
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 9f8e3c2144bebe042040384b70e8ae91a9a4770d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938732"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521077"
 ---
 # <a name="riskdetection-resource-type"></a>Тип ресурса Рискдетектион
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,7 +56,7 @@ Azure AD постоянно оценивает [риски пользовате�
 |`lastUpdatedDateTime`|`datetime`|Дата и время последнего обновления обнаружения риска. |
 |`userId`|`string`|Уникальный идентификатор пользователя. |
 |`userDisplayName`|`string`|Имя пользователя. |
-|`userPrincipalName`|`string`|Имя участника-пользователя (UPN). |
+|`userPrincipalName`|`string`|Имя участника-пользователя. |
 |`additionalInfo`|`string`|Дополнительные сведения, связанные с определением риска в формате JSON. |
 
 ## <a name="json-representation"></a>Представление JSON

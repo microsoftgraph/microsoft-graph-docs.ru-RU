@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 8439502aa1214e1ef2bbedd9864ef4724abf8021
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1dc33d8a5f2ae34776154a2a0f11df854dea51e5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965868"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521666"
 ---
 # <a name="plannerrecentplanreference-resource-type"></a>Тип ресурса Планнеррецентпланреференце
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ ms.locfileid: "35965868"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |lastAccessedDateTime|DateTimeOffset|Дата и время последнего просмотра плана пользователем. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|Плантитле|String|Название плана на момент просмотра его пользователем.|
+|плантитле|String|Название плана на момент просмотра его пользователем.|
 
 ## <a name="json-representation"></a>Представление JSON
 

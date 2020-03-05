@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 6083e5b17429cb2914850d91aba9acca8ab0433c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 10e1d95eb20bbfe4e1bcf43e75eaa51a3ebec189
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964004"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519164"
 ---
 # <a name="workbookrangesort-resource-type"></a>Тип ресурса Воркбукранжесорт
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,8 +30,8 @@ ms.locfileid: "35964004"
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Отношения
-None
+## <a name="relationships"></a>Связи
+Нет
 
 <!-- {
   "blockType": "resource",

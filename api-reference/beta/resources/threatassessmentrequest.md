@@ -5,14 +5,16 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8441fe14434733efda10c51d88e0750904ee1246
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 1a6a8f0f1448522d624b9c9e97bb2fab426b6988
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40867271"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519780"
 ---
 # <a name="threatassessmentrequest-resource-type"></a>Тип ресурса Среатассессментрекуест
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,9 +31,9 @@ ms.locfileid: "40867271"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список Среатассессментрекуест](../api/informationprotection-list-threatassessmentrequests.md) | Коллекция [среатассессментрекуест](threatassessmentrequest.md) | Список всех запросов оценки угроз в клиенте. |
-| [Создание Среатассессментрекуест](../api/informationprotection-post-threatassessmentrequests.md) | [среатассессментрекуест](threatassessmentrequest.md) | Создание запроса на оценку угроз путем отправки производного типа ресурса: [маилассессментрекуест](../resources/mailAssessmentRequest.md), [емаилфилеассессментрекуест](../resources/emailFileAssessmentRequest.md), [филеассессментрекуест](../resources/fileAssessmentRequest.md), [урлассессментрекуест](../resources/urlAssessmentRequest.md). |
-| [Получение Среатассессментрекуест](../api/threatassessmentrequest-get.md) | [среатассессментрекуест](threatassessmentrequest.md) | Получение свойств и связей указанного ресурса **среатассессментрекуест** . |
+| [Перечисление объектов threatAssessmentRequest](../api/informationprotection-list-threatassessmentrequests.md) | Коллекция [среатассессментрекуест](threatassessmentrequest.md) | Список всех запросов оценки угроз в клиенте. |
+| [Создание объекта threatAssessmentRequest](../api/informationprotection-post-threatassessmentrequests.md) | [threatAssessmentRequest](threatassessmentrequest.md) | Создание запроса на оценку угроз путем отправки производного типа ресурса: [маилассессментрекуест](../resources/mailAssessmentRequest.md), [емаилфилеассессментрекуест](../resources/emailFileAssessmentRequest.md), [филеассессментрекуест](../resources/fileAssessmentRequest.md), [урлассессментрекуест](../resources/urlAssessmentRequest.md). |
+| [Получение объекта threatAssessmentRequest](../api/threatassessmentrequest-get.md) | [threatAssessmentRequest](threatassessmentrequest.md) | Получение свойств и связей указанного ресурса **среатассессментрекуест** . |
 
 ## <a name="properties"></a>Свойства
 
@@ -46,7 +48,7 @@ ms.locfileid: "40867271"
 |рекуестсаурце|[среатассессментрекуестсаурце](enums.md#threatassessmentrequestsource-values)|Источник запроса на оценку угроз. Возможные значения: `user`, `administrator`.|
 |status|[среатассессментстатус](enums.md#threatassessmentstatus-values)|Состояние процесса оценки. Возможные значения: `pending`, `completed`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|

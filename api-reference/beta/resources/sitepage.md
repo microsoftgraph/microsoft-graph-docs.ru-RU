@@ -6,14 +6,16 @@ title: ситепаже
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: d92a78ff73854d465ba8363b7bddff66be6bffc4
-ms.sourcegitcommit: 1a84f80798692fc0381b1acecfe023b3ce6ab02c
+ms.openlocfilehash: 6b7ce7bc14ce95ec4573fb7660cb584703d4a54e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41953618"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520536"
 ---
 # <a name="sitepage-resource"></a>ресурс Ситепаже
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -92,7 +94,7 @@ ms.locfileid: "41953618"
 | Имя свойства      | Тип                       | Описание
 |:-------------------|:---------------------------|:---------------------------
 | title              | string                     | Заголовок страницы.
-| pageLayout         | string                     | Имя макета страницы.
+| pageLayout         | строка                     | Имя макета страницы.
 | webParts           | [Частей][]                | Веб-части на странице.
 
 ## <a name="authoring-metadata"></a>Метаданные для разработки
@@ -129,7 +131,7 @@ ms.locfileid: "41953618"
 [listInfo]: listinfo.md
 [listItem]: listitem.md
 [publicationFacet]: publicationfacet.md.
-[сайта]: site.md
+[site]: site.md
 [Частей]: webpart.md
 
 <!--

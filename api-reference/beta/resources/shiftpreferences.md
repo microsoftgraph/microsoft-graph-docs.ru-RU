@@ -5,14 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 083b0ad81ffee25d8a03bf5ff38815d2ca0155a8
-ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
+ms.openlocfilehash: 75084cba71946d8b14ab080ac5872359bf0ceb12
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40952274"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520613"
 ---
 # <a name="shiftpreferences-resource-type"></a>Тип ресурса Шифтпреференцес
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,7 +38,7 @@ ms.locfileid: "40952274"
 | lastModifiedDateTime | `Edm.DateTimeOffset` | Временная метка, соответствующая дате последнего изменения объекта. |
 | lastModifiedBy | [identitySet](identityset.md) | Идентификатор пользователя, который последним изменил объект. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 
