@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 936657cdc24a48a0fe572eb8ab80c164732e6f2e
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: d52b6f791ef11696889f36dbff7cf903fd311d36
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41635974"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42442875"
 ---
 # <a name="create-iosdevicefeaturesconfiguration"></a>Создание объекта iosDeviceFeaturesConfiguration
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,7 +28,7 @@ ms.locfileid: "41635974"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -42,7 +44,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,7 +57,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|суппортсскопетагс|Логический|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -64,7 +66,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |аирпринтдестинатионс|Коллекция [аирпринтдестинатион](../resources/intune-deviceconfig-airprintdestination.md)|Массив принтеров Аирпринт, которые должны отображаться всегда. Эта коллекция может содержать не более 500 элементов. Наследуется от [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)|
-|assetTagTemplate|Строка|Сведения о теге ресурса для устройства, отображаемые в окне входа и на экране блокировки.|
+|assetTagTemplate|String|Сведения о теге ресурса для устройства, отображаемые в окне входа и на экране блокировки.|
 |Contentfiltersettings к объекту|[iosWebContentFilterBase](../resources/intune-deviceconfig-ioswebcontentfilterbase.md);|Получает или задает параметры фильтра веб-содержимого iOS, режим с контролируемым режимом|
 |lockScreenFootnote|String|Сноска, отображаемая в окне входа и на экране блокировки. Доступна в iOS 9.3.1 и более поздних версий.|
 |homeScreenDockIcons|Коллекция [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|Список приложений и папок, которые должны отображаться на панели Dock на начальном экране. Эта коллекция может содержать не более 500 элементов.|
@@ -74,7 +76,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |валлпапердисплайлокатион|[иосваллпапердисплайлокатион](../resources/intune-deviceconfig-ioswallpaperdisplaylocation.md)|Описатель расположения для отображения фонового рисунка. Возможные значения: `notConfigured`, `lockScreen`, `homeScreen`, `lockAndHomeScreens`.|
 |валлпаперимаже|[mimeContent](../resources/intune-shared-mimecontent.md);|Изображение фонового рисунка должно иметь формат PNG или JPEG. Для этого требуется контролируемое устройство с iOS 8 или более поздней версии.|
 |singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|Получает или задает профиль расширения единого входа. Устарело: вместо этого используйте Иоссинглесигнонекстенсион.|
-|иоссинглесигнонекстенсион|[иоссинглесигнонекстенсион](../resources/intune-deviceconfig-iossinglesignonextension.md)|Получает или задает профиль расширения единого входа.|
+|iosSingleSignOnExtension|[iosSingleSignOnExtension](../resources/intune-deviceconfig-iossinglesignonextension.md)|Получает или задает профиль расширения единого входа.|
 
 
 
