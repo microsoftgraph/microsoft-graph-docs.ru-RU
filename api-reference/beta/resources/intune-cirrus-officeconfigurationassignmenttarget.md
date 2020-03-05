@@ -5,30 +5,32 @@ localization_priority: Normal
 author: rolyon
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f1bc157179881d172a5588e5e4c9ad42633d3a72
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 78ca4dd7e1cd04c9b924f82af9a60b560c9e7c96
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36004780"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42488182"
 ---
-# <a name="officeconfigurationassignmenttarget-resource-type"></a><span data-ttu-id="2ad72-103">Тип ресурса Оффицеконфигуратионассигнменттаржет</span><span class="sxs-lookup"><span data-stu-id="2ad72-103">officeConfigurationAssignmentTarget resource type</span></span>
+# <a name="officeconfigurationassignmenttarget-resource-type"></a><span data-ttu-id="ca645-103">Тип ресурса Оффицеконфигуратионассигнменттаржет</span><span class="sxs-lookup"><span data-stu-id="ca645-103">officeConfigurationAssignmentTarget resource type</span></span>
 
-> <span data-ttu-id="2ad72-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2ad72-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="ca645-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="ca645-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="2ad72-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="2ad72-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="ca645-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ca645-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="2ad72-106">Целевой объект назначения конфигурации клиента Office.</span><span class="sxs-lookup"><span data-stu-id="2ad72-106">Office Client Configuration Assignment Target.</span></span>
+> <span data-ttu-id="ca645-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="ca645-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="2ad72-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="2ad72-107">Properties</span></span>
-|<span data-ttu-id="2ad72-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="2ad72-108">Property</span></span>|<span data-ttu-id="2ad72-109">Тип</span><span class="sxs-lookup"><span data-stu-id="2ad72-109">Type</span></span>|<span data-ttu-id="2ad72-110">Описание</span><span class="sxs-lookup"><span data-stu-id="2ad72-110">Description</span></span>|
+<span data-ttu-id="ca645-107">Целевой объект назначения конфигурации клиента Office.</span><span class="sxs-lookup"><span data-stu-id="ca645-107">Office Client Configuration Assignment Target.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="ca645-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="ca645-108">Properties</span></span>
+|<span data-ttu-id="ca645-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="ca645-109">Property</span></span>|<span data-ttu-id="ca645-110">Тип</span><span class="sxs-lookup"><span data-stu-id="ca645-110">Type</span></span>|<span data-ttu-id="ca645-111">Описание</span><span class="sxs-lookup"><span data-stu-id="ca645-111">Description</span></span>|
 |:---|:---|:---|
 
-## <a name="relationships"></a><span data-ttu-id="2ad72-111">Отношения</span><span class="sxs-lookup"><span data-stu-id="2ad72-111">Relationships</span></span>
-<span data-ttu-id="2ad72-112">Нет</span><span class="sxs-lookup"><span data-stu-id="2ad72-112">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="ca645-112">Связи</span><span class="sxs-lookup"><span data-stu-id="ca645-112">Relationships</span></span>
+<span data-ttu-id="ca645-113">Нет</span><span class="sxs-lookup"><span data-stu-id="ca645-113">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="2ad72-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="2ad72-113">JSON Representation</span></span>
-<span data-ttu-id="2ad72-114">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2ad72-114">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ca645-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="ca645-114">JSON Representation</span></span>
+<span data-ttu-id="ca645-115">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ca645-115">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

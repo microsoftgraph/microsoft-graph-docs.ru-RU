@@ -5,30 +5,32 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 262705012420f40c9aedffa5403f633dd6810445
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b3324b0e2bc8833e9c5b5e2167174a839c3942e2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36335531"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42490457"
 ---
-# <a name="win32lobappregistrydetectiontype-enum-type"></a><span data-ttu-id="1fccb-103">тип перечисления win32LobAppRegistryDetectionType</span><span class="sxs-lookup"><span data-stu-id="1fccb-103">win32LobAppRegistryDetectionType enum type</span></span>
+# <a name="win32lobappregistrydetectiontype-enum-type"></a><span data-ttu-id="75564-103">тип перечисления win32LobAppRegistryDetectionType</span><span class="sxs-lookup"><span data-stu-id="75564-103">win32LobAppRegistryDetectionType enum type</span></span>
 
-> <span data-ttu-id="1fccb-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1fccb-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="75564-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="75564-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="1fccb-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="1fccb-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="75564-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="75564-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="1fccb-106">Содержит все поддерживаемые типы обнаружения данных в реестре.</span><span class="sxs-lookup"><span data-stu-id="1fccb-106">Contains all supported registry data detection type.</span></span>
+> <span data-ttu-id="75564-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="75564-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="1fccb-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="1fccb-107">Members</span></span>
-|<span data-ttu-id="1fccb-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="1fccb-108">Member</span></span>|<span data-ttu-id="1fccb-109">Значение</span><span class="sxs-lookup"><span data-stu-id="1fccb-109">Value</span></span>|<span data-ttu-id="1fccb-110">Описание</span><span class="sxs-lookup"><span data-stu-id="1fccb-110">Description</span></span>|
+<span data-ttu-id="75564-107">Содержит все поддерживаемые типы обнаружения данных в реестре.</span><span class="sxs-lookup"><span data-stu-id="75564-107">Contains all supported registry data detection type.</span></span>
+
+## <a name="members"></a><span data-ttu-id="75564-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="75564-108">Members</span></span>
+|<span data-ttu-id="75564-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="75564-109">Member</span></span>|<span data-ttu-id="75564-110">Значение</span><span class="sxs-lookup"><span data-stu-id="75564-110">Value</span></span>|<span data-ttu-id="75564-111">Описание</span><span class="sxs-lookup"><span data-stu-id="75564-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="1fccb-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="1fccb-111">notConfigured</span></span>|<span data-ttu-id="1fccb-112">нуль</span><span class="sxs-lookup"><span data-stu-id="1fccb-112">0</span></span>|<span data-ttu-id="1fccb-113">Не настроен.</span><span class="sxs-lookup"><span data-stu-id="1fccb-113">Not configured.</span></span>|
-|<span data-ttu-id="1fccb-114">Существует</span><span class="sxs-lookup"><span data-stu-id="1fccb-114">exists</span></span>|<span data-ttu-id="1fccb-115">1,1</span><span class="sxs-lookup"><span data-stu-id="1fccb-115">1</span></span>|<span data-ttu-id="1fccb-116">Указанный раздел или значение реестра существуют.</span><span class="sxs-lookup"><span data-stu-id="1fccb-116">The specified registry key or value exists.</span></span>|
-|<span data-ttu-id="1fccb-117">доеснотексист</span><span class="sxs-lookup"><span data-stu-id="1fccb-117">doesNotExist</span></span>|<span data-ttu-id="1fccb-118">2</span><span class="sxs-lookup"><span data-stu-id="1fccb-118">2</span></span>|<span data-ttu-id="1fccb-119">Указанный раздел реестра или значение не существует.</span><span class="sxs-lookup"><span data-stu-id="1fccb-119">The specified registry key or value does not exist.</span></span>|
-|<span data-ttu-id="1fccb-120">string</span><span class="sxs-lookup"><span data-stu-id="1fccb-120">string</span></span>|<span data-ttu-id="1fccb-121">4</span><span class="sxs-lookup"><span data-stu-id="1fccb-121">3</span></span>|<span data-ttu-id="1fccb-122">Тип строкового значения.</span><span class="sxs-lookup"><span data-stu-id="1fccb-122">String value type.</span></span>|
-|<span data-ttu-id="1fccb-123">целое</span><span class="sxs-lookup"><span data-stu-id="1fccb-123">integer</span></span>|<span data-ttu-id="1fccb-124">SP4</span><span class="sxs-lookup"><span data-stu-id="1fccb-124">4</span></span>|<span data-ttu-id="1fccb-125">Тип значения Integer.</span><span class="sxs-lookup"><span data-stu-id="1fccb-125">Integer value type.</span></span>|
-|<span data-ttu-id="1fccb-126">version</span><span class="sxs-lookup"><span data-stu-id="1fccb-126">version</span></span>|<span data-ttu-id="1fccb-127">17:00</span><span class="sxs-lookup"><span data-stu-id="1fccb-127">5</span></span>|<span data-ttu-id="1fccb-128">Тип значения Version.</span><span class="sxs-lookup"><span data-stu-id="1fccb-128">Version value type.</span></span>|
+|<span data-ttu-id="75564-112">notConfigured</span><span class="sxs-lookup"><span data-stu-id="75564-112">notConfigured</span></span>|<span data-ttu-id="75564-113">нуль</span><span class="sxs-lookup"><span data-stu-id="75564-113">0</span></span>|<span data-ttu-id="75564-114">Не настроен.</span><span class="sxs-lookup"><span data-stu-id="75564-114">Not configured.</span></span>|
+|<span data-ttu-id="75564-115">Существует</span><span class="sxs-lookup"><span data-stu-id="75564-115">exists</span></span>|<span data-ttu-id="75564-116">1 </span><span class="sxs-lookup"><span data-stu-id="75564-116">1</span></span>|<span data-ttu-id="75564-117">Указанный раздел или значение реестра существуют.</span><span class="sxs-lookup"><span data-stu-id="75564-117">The specified registry key or value exists.</span></span>|
+|<span data-ttu-id="75564-118">доеснотексист</span><span class="sxs-lookup"><span data-stu-id="75564-118">doesNotExist</span></span>|<span data-ttu-id="75564-119">2 </span><span class="sxs-lookup"><span data-stu-id="75564-119">2</span></span>|<span data-ttu-id="75564-120">Указанный раздел реестра или значение не существует.</span><span class="sxs-lookup"><span data-stu-id="75564-120">The specified registry key or value does not exist.</span></span>|
+|<span data-ttu-id="75564-121">строка</span><span class="sxs-lookup"><span data-stu-id="75564-121">string</span></span>|<span data-ttu-id="75564-122">3 </span><span class="sxs-lookup"><span data-stu-id="75564-122">3</span></span>|<span data-ttu-id="75564-123">Тип строкового значения.</span><span class="sxs-lookup"><span data-stu-id="75564-123">String value type.</span></span>|
+|<span data-ttu-id="75564-124">целое</span><span class="sxs-lookup"><span data-stu-id="75564-124">integer</span></span>|<span data-ttu-id="75564-125">4 </span><span class="sxs-lookup"><span data-stu-id="75564-125">4</span></span>|<span data-ttu-id="75564-126">Тип значения Integer.</span><span class="sxs-lookup"><span data-stu-id="75564-126">Integer value type.</span></span>|
+|<span data-ttu-id="75564-127">version</span><span class="sxs-lookup"><span data-stu-id="75564-127">version</span></span>|<span data-ttu-id="75564-128">5 </span><span class="sxs-lookup"><span data-stu-id="75564-128">5</span></span>|<span data-ttu-id="75564-129">Тип значения Version.</span><span class="sxs-lookup"><span data-stu-id="75564-129">Version value type.</span></span>|
 
 
 
