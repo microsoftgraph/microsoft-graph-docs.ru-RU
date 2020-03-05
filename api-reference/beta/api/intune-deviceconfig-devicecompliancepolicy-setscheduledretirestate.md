@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: af16ccc162b6139ae8260f99f36f627225e53399
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: b52797d7dc62f4f5b24d5a55fe8248d5b864adb2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39949709"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42449315"
 ---
 # <a name="setscheduledretirestate-action"></a>действие Сетсчедуледретирестате
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -41,17 +43,17 @@ POST /deviceManagement/deviceCompliancePolicies/setScheduledRetireState
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|state|[счедуледретирестате](../resources/intune-deviceconfig-scheduledretirestate.md)|Пока не задокументировано.|
+|state|[scheduledRetireState](../resources/intune-deviceconfig-scheduledretirestate.md)|Пока не задокументировано.|
 |манажеддевицеидс|Коллекция строк|Н/Д|
 
 

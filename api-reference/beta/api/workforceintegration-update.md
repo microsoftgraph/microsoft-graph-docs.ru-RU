@@ -5,14 +5,16 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a3e73cf0b0dbe0b54b9ac3af5a5378503f336e6a
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 4c87031c5d8957e4014f491f671c05b7a10b4934
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870466"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42451268"
 ---
 # <a name="update-workforceintegration"></a>Обновление воркфорцеинтегратион
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,10 +54,10 @@ PATCH /teamwork/workforceIntegrations
 |displayName|String|Имя интеграции трудовых ресурсов.|
 |шифрования|воркфорцеинтегратионенкриптион|Ресурс для шифрования взаимодействия сотрудников. |
 |isActive|Логический|Указывает, активна ли эта интеграция сотрудников в настоящее время и доступна ли она.|
-|имеется|string| `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. Если выбрано более одного значения, все значения должны начинаться с первой буквы в верхнем регистре.|
+|имеется|строка| `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. Если выбрано более одного значения, все значения должны начинаться с первой буквы в верхнем регистре.|
 |url|String| URL-адрес интеграции сотрудников для обратных вызовов из службы смены. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [воркфорцеинтегратион](../resources/workforceintegration.md) в тексте отклика.
 
@@ -65,7 +67,7 @@ PATCH /teamwork/workforceIntegrations
 
 Ниже приведен пример запроса.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_workforceintegration"
@@ -87,15 +89,15 @@ Content-type: application/json
   "supports": "supports-value"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-workforceintegration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-workforceintegration-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-workforceintegration-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 65be6c79e05b19ad7dcd5fc3fabc4117e2cddec2
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 3a4b4a0e2ef8355450f039608a7769a613296cc2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39932042"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42450393"
 ---
 # <a name="update-auditevent"></a>Update auditEvent
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -41,10 +43,10 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [auditEvent](../resources/intune-auditing-auditevent.md) в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта [auditEvent](../resources/intune-auditing-auditevent.md).
@@ -53,12 +55,12 @@ PATCH /deviceManagement/auditEvents/{auditEventId}
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |displayName|Строка|Отображаемое имя события.|
-|componentName|Строка|Имя компонента.|
+|componentName|String|Имя компонента.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Пользователь AAD и приложение, связанные с событием аудита.|
-|activity|Строка|Понятное имя действия.|
+|activity|String|Понятное имя действия.|
 |activityDateTime|DateTimeOffset|Дата и время выполнения действия (в формате UTC).|
-|activityType|Строка|Тип выполненного действия.|
-|activityOperationType|Строка|Тип операции HTTP для действия.|
+|activityType|String|Тип выполненного действия.|
+|activityOperationType|String|Тип операции HTTP для действия.|
 |activityResult|String|Результат действия.|
 |correlationId|Guid|ИД клиентского запроса, используемый для согласования действий в системе.|
 |resources|Коллекция [auditResource](../resources/intune-auditing-auditresource.md)|Изменяемые ресурсы.|

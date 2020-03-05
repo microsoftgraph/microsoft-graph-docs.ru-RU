@@ -5,24 +5,26 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 904109eaaea5f1182ade54a35ced59c1bbf64c36
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: d3d4080c6e91194f0a6d1165559674cc5234a835
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37356354"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448405"
 ---
 # <a name="managedappflaggedreason-enum-type"></a>тип перечисления Манажедаппфлагжедреасон
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+Пространство имен: Microsoft. Graph
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Причина, по которой пользователю был применен флаг
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Нет ошибок.|
-|рутеддевице|1,1|Регистрация приложения выполняется на корневом/незаблокированном устройстве.|
+|нет|нуль|Нет ошибок.|
+|рутеддевице|1 |Регистрация приложения выполняется на корневом/незаблокированном устройстве.|
 
 
 

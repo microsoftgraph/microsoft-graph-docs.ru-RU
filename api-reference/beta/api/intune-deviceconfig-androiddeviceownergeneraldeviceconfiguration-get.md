@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9435706289d88c3e1879cc3e74297b756fee59a5
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 1a64c62cb90862839c825315d91eb99a6c2be2e8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42160272"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42450064"
 ---
 # <a name="get-androiddeviceownergeneraldeviceconfiguration"></a>Получение androidDeviceOwnerGeneralDeviceConfiguration
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
