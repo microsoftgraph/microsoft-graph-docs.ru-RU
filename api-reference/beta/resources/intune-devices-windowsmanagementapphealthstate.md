@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8ffd7a970e36a93c93004e33ccdef2fefb782ed5
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 84fee0fa2ce527b72d91735af17686cba6be6634
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196660"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524797"
 ---
 # <a name="windowsmanagementapphealthstate-resource-type"></a>Тип ресурса Виндовсманажементапфеалсстате
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Объект состояния работоспособности приложения управления Windows.
 
@@ -34,12 +36,12 @@ ms.locfileid: "37196660"
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для состояния работоспособности приложения управления Windows. Это свойство доступно только для чтения.|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Состояние работоспособности приложения управления Windows. Возможные значения: `unknown`, `healthy`, `unhealthy`.|
-|инсталледверсион|String.|Установленная версия приложения управления Windows.|
+|инсталледверсион|String|Установленная версия приложения управления Windows.|
 |ластчеккиндатетиме|DateTimeOffset|Время последнего возврата приложения управления Windows.|
 |deviceName|String|Имя устройства, на котором установлено приложение "Управление Windows".|
-|девицеосверсион|String.|Версия Windows 10 OS устройства, на котором установлено приложение "Управление Windows".|
+|девицеосверсион|String|Версия Windows 10 OS устройства, на котором установлено приложение "Управление Windows".|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

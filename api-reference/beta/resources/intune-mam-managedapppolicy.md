@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ddc93ff13e55af15e86fbc72514b7b7daac81556
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e96da6ab943e22b7e779f969abec3c87201df750
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36332073"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524324"
 ---
 # <a name="managedapppolicy-resource-type"></a>Тип ресурса managedAppPolicy
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Ресурс ManagedAppPolicy представляет базовый тип политик для определенных платформ.
 
@@ -34,11 +36,11 @@ ms.locfileid: "36332073"
 |description|String|Описание политики.|
 |createdDateTime|DateTimeOffset|Дата и время создания политики.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики.|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности.|
 |id|String|Ключ объекта.|
 |version|String|Версия объекта.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: eb54b4a8f96c35a623a67290b158ee07c9215c1f
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 696901900f3bad4829bd4b51018992d25e99aefc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36326795"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524930"
 ---
 # <a name="revokeapplevpplicensesactionresult-resource-type"></a>Тип ресурса Ревокеапплевпплиценсесактионресулт
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Отзыв результатов действий для лицензий Apple VPP
 
@@ -33,7 +35,7 @@ ms.locfileid: "36326795"
 |тоталлиценсескаунт|Int32|Общее количество связанных лицензий Apple VPP|
 |фаиледлиценсескаунт|Int32|Общее количество лицензий Apple VPP, которые не удалось отозвать|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

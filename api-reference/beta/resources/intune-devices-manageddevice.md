@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ec7175ceccb2a5eeb247a5e746dc124c31dd8434
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 79c3fdc651a4d65cf1ed9c4a4c90259642fd87a9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42163579"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524986"
 ---
 # <a name="manageddevice-resource-type"></a>Тип ресурса managedDevice
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -75,7 +77,7 @@ ms.locfileid: "42163579"
 |jailBroken|String|Указывает, является ли устройство взломанным или рутованным. Это свойство доступно только для чтения.|
 |managementAgent|[манажементаженттипе](../resources/intune-shared-managementagenttype.md)|Канал управления устройством. Intune, EAS и т. д. Это свойство доступно только для чтения. Возможные значения: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`, `windowsManagementCloudApi`.|
 |osVersion|String|Версия операционной системы устройства. Это свойство доступно только для чтения.|
-|easActivated|Boolean|Указывает, активировано ли устройство в Exchange ActiveSync. Это свойство доступно только для чтения.|
+|easActivated|Логический|Указывает, активировано ли устройство в Exchange ActiveSync. Это свойство доступно только для чтения.|
 |easDeviceId|String|Идентификатор устройства в Exchange ActiveSync. Это свойство доступно только для чтения.|
 |easActivationDateTime|DateTimeOffset|Время активации устройства в Exchange ActivationSync. Это свойство доступно только для чтения.|
 |аадрегистеред|Boolean|Указывает, зарегистрировано ли устройство в Azure Active Directory. Это свойство доступно только для чтения.|
@@ -88,7 +90,7 @@ ms.locfileid: "42163579"
 |azureADDeviceId|String|Уникальный идентификатор устройства Azure Active Directory. Только для чтения. Это свойство доступно только для чтения.|
 |deviceRegistrationState|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|Состояние регистрации устройства. Это свойство доступно только для чтения. Возможные значения: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.|
 |deviceCategoryDisplayName|String|Отображаемое имя категории устройств. Это свойство доступно только для чтения.|
-|isSupervised|Boolean|Состояние контролируемого устройства. Это свойство доступно только для чтения.|
+|isSupervised|Логический|Состояние контролируемого устройства. Это свойство доступно только для чтения.|
 |exchangeLastSuccessfulSyncDateTime|DateTimeOffset|Время последнего подключения устройства к Exchange. Это свойство доступно только для чтения.|
 |exchangeAccessState|[девицеманажементексчанжеакцессстате](../resources/intune-devices-devicemanagementexchangeaccessstate.md)|Состояние доступа к устройству в Exchange. Это свойство доступно только для чтения. Возможные значения: `none`, `unknown`, `allowed`, `blocked`, `quarantined`.|
 |exchangeAccessStateReason|[девицеманажементексчанжеакцессстатереасон](../resources/intune-devices-devicemanagementexchangeaccessstatereason.md)|Причина состояния доступа к устройству в Exchange. Это свойство доступно только для чтения. Возможные значения: `none`, `unknown`, `exchangeGlobalRule`, `exchangeIndividualRule`, `exchangeDeviceRule`, `exchangeUpgrade`, `exchangeMailboxPolicy`, `other`, `compliant`, `notCompliant`, `notEnrolled`, `unknownLocation`, `mfaRequired`, `azureADBlockDueToAccessPolicy`, `compromisedPassword`, `deviceNotKnownWithManagedApp`.|
@@ -117,12 +119,12 @@ ms.locfileid: "42163579"
 |ретиреафтердатетиме|DateTimeOffset|Указывает время, по истечении которого устройство будет автоматически снято из-за запланированного действия. Это свойство доступно только для чтения.|
 |усерслогжедон|Коллекция [логжедонусер](../resources/intune-devices-loggedonuser.md)|Указывает последнего вошедшего в систему пользователя устройства. Это свойство доступно только для чтения.|
 |префермдмоверграупполициапплиеддатетиме|DateTimeOffset|Сообщает о значении DateTime, заданном параметром Префермдмоверграупполици.  Если этот параметр установлен, параметры групповой политики в случае конфликта будут переопределяться параметрами групповой политики. Только для чтения. Это свойство доступно только для чтения.|
-|аутопилотенроллед|Boolean|Сообщает, зарегистрировано ли управляемое устройство через Автоматический пилот. Это свойство доступно только для чтения.|
-|рекуиреусеренроллментаппровал|Boolean|Указывает, является ли управляемое устройство iOS регистрацией на утверждение пользователя. Это свойство доступно только для чтения.|
+|аутопилотенроллед|Логический|Сообщает, зарегистрировано ли управляемое устройство через Автоматический пилот. Это свойство доступно только для чтения.|
+|рекуиреусеренроллментаппровал|Логический|Указывает, является ли управляемое устройство iOS регистрацией на утверждение пользователя. Это свойство доступно только для чтения.|
 |манажементцертификатикспиратиондате|DateTimeOffset|Дата окончания срока действия сертификата управления устройствами. Это свойство доступно только для чтения.|
 |икЦид|String|Идентификатор встроенной карты — это уникальный идентификационный номер SIM-карты. Это свойство доступно только для чтения.|
 |удид|String|Уникальный идентификатор устройства для устройств iOS и macOS. Это свойство доступно только для чтения.|
-|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого экземпляра устройства.|
+|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого экземпляра устройства.|
 |виндовсактивемалварекаунт|Int32|Количество активных вредоносных программ для этого устройства Windows. Это свойство доступно только для чтения.|
 |виндовсремедиатедмалварекаунт|Int32|Количество исправленных вредоносных программ для этого устройства с Windows. Это свойство доступно только для чтения.|
 |notes|String|Примечания к устройству, созданному ИТ ИТ Admin|
@@ -132,7 +134,7 @@ ms.locfileid: "42163579"
 |фисикалмеморинбитес|Int64|Общий объем памяти в байтах. Это свойство доступно только для чтения.|
 |процессорарчитектуре|[managedDeviceArchitecture](../resources/intune-devices-manageddevicearchitecture.md)|Архитектура процессора. Это свойство доступно только для чтения. Возможные значения: `unknown`, `x86`, `x64`, `arm`, `arM64`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |detectedApps|Коллекция [detectedApp](../resources/intune-devices-detectedapp.md)|Все установленные на устройстве приложения|

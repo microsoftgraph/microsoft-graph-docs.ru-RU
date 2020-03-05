@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6a287ede8651b3466acdd4ebe229eb1a0f84810d
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: cf982cb474edb750212630622b9be7ca1d728aea
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36319379"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525203"
 ---
 # <a name="securitybaselinecompliancestate-enum-type"></a>тип перечисления Секуритибаселинекомплианцестате
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Состояние соответствия нормативным требованиям безопасности
 
@@ -24,11 +26,11 @@ ms.locfileid: "36319379"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Неизвестное состояние|
-|месте|1,1|Безопасное состояние|
-|нотаппликабле|2|Неприменимое состояние|
-|нотсекуре|4|Небезопасное состояние|
-|error|SP4|Состояние ошибки|
-|противоречивы|17:00|Состояние конфликта|
+|месте|1 |Безопасное состояние|
+|нотаппликабле|2 |Неприменимое состояние|
+|нотсекуре|3 |Небезопасное состояние|
+|error|4 |Состояние ошибки|
+|противоречивы|5 |Состояние конфликта|
 
 
 

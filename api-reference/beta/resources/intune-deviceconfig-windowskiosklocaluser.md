@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bdf3547b7cc6a1262c0bd29a4943b2b740835b0b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e25c887c34008e0ffa001cfe713340ad9443f4dd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36370867"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525483"
 ---
 # <a name="windowskiosklocaluser-resource-type"></a>Тип ресурса Виндовскиосклокалусер
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Класс, используемый для определения локальной учетной записи для конфигурации киоска
 
@@ -28,7 +30,7 @@ ms.locfileid: "36370867"
 |:---|:---|:---|
 |userName|String|Локальный пользователь, который будет заблокирован для этой конфигурации киоска|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

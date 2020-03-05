@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5a09b1e4d5e788d19ae0df6f6a02fe46009e5362
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 40c3c122fe5aae65b4ed34d5178c67160a7fbe0a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36369929"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525014"
 ---
 # <a name="hardwareinformation-resource-type"></a>Тип ресурса Hardwareinformation.
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Сведения об оборудовании для данного устройства.
 
@@ -35,9 +37,9 @@ ms.locfileid: "36369929"
 |целлулартечнологи|String|Технология сотовой связи устройства|
 |вифимак|String|MAC-адрес устройства Wi-Fi|
 |оператингсистемлангуаже|String|Язык операционной системы устройства|
-|isSupervised|Boolean|Контролируемый режим устройства|
+|isSupervised|Логический|Контролируемый режим устройства|
 |isEncrypted|Boolean|Состояние шифрования устройства|
-|Свойства isshareddevice|Boolean|Общие iPad|
+|Свойства isshareddevice|Логический|Общие iPad|
 |шареддевицекачедусерс|Коллекция [шаредаппледевицеусер](../resources/intune-devices-sharedappledeviceuser.md)|Все пользователи на общем устройстве Apple|
 |тпмспеЦификатионверсион|String|Строка, указывающая версию спецификации.|
 |оператингсистемедитион|String|Строка, задающая выпуск операционной системы.|
@@ -47,7 +49,7 @@ ms.locfileid: "36369929"
 |девицегуардлокалсистемаусоритикредентиалгуардстате|[девицегуардлокалсистемаусоритикредентиалгуардстате](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|Состояние Credential Guard в администраторе локальной системы (LSA). . Возможные значения: `running`, `rebootRequired`, `notLicensed`, `notConfigured`, `virtualizationBasedSecurityNotRunning`.|
 |осбуилднумбер|String|Номер сборки операционной системы на устройстве с Android|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

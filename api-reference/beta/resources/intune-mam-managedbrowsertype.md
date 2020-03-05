@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b682bee3248d9c429b9e40b09c04a546f70e4dff
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 4d27f75c4528511a304426f609452caebb21564a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088233"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524289"
 ---
 # <a name="managedbrowsertype-enum-type"></a>тип перечисления Манажедбровсертипе
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -24,7 +26,7 @@ ms.locfileid: "38088233"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроено|
-|микрософтедже|1,1|Microsoft Edge|
+|микрософтедже|1 |Microsoft Edge|
 
 
 

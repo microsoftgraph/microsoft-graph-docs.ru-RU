@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0fabb90bebb112ccb2e74b7914f14be08523e0a8
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c5f91d6e789f4b6b1b515284a4da318b825ec539
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36370244"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525126"
 ---
 # <a name="datasharingconsent-resource-type"></a>Тип ресурса Даташарингконсент
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Сведения о согласии общего доступа к данным.
 
@@ -36,12 +38,12 @@ ms.locfileid: "36370244"
 |id|String|Идентификатор согласия общего доступа к данным|
 |сервицедисплайнаме|String|Отображаемое имя рабочего процесса службы|
 |термсурл|String|Термсурл для согласия общего доступа к данным|
-|granted|Boolean|Состояние предоставления согласия на общий доступ к данным|
+|granted|Логический|Состояние предоставления согласия на общий доступ к данным|
 |грантдатетиме|DateTimeOffset|Для этой учетной записи предоставлено согласие по времени|
 |грантедбюпн|String|Имя участника-пользователя, которому назначено согласие для этой учетной записи.|
 |грантедбюсерид|String|UserId пользователя, который предоставил согласие для этой учетной записи|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 587f6a777c475d28bef63e270dbb14333c2693d6
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 6fba944e078d5572d3067c90004e8c3e68499fa9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42163943"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524895"
 ---
 # <a name="userexperienceanalyticsdevicestartupprocess-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксдевицестартуппроцесс
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -24,10 +26,10 @@ ms.locfileid: "42163943"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Усерекспериенцеаналитиксдевицестартуппроцессес](../api/intune-devices-userexperienceanalyticsdevicestartupprocess-list.md)|Коллекция [усерекспериенцеаналитиксдевицестартуппроцесс](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md)|Список свойств и связей объектов [усерекспериенцеаналитиксдевицестартуппроцесс](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md) .|
-|[Получение Усерекспериенцеаналитиксдевицестартуппроцесс](../api/intune-devices-userexperienceanalyticsdevicestartupprocess-get.md)|[усерекспериенцеаналитиксдевицестартуппроцесс](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md)|Чтение свойств и связей объекта [усерекспериенцеаналитиксдевицестартуппроцесс](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md) .|
-|[Создание Усерекспериенцеаналитиксдевицестартуппроцесс](../api/intune-devices-userexperienceanalyticsdevicestartupprocess-create.md)|[усерекспериенцеаналитиксдевицестартуппроцесс](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md)|Создание нового объекта [усерекспериенцеаналитиксдевицестартуппроцесс](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md) .|
+|[Получение Усерекспериенцеаналитиксдевицестартуппроцесс](../api/intune-devices-userexperienceanalyticsdevicestartupprocess-get.md)|[userExperienceAnalyticsDeviceStartupProcess](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md)|Чтение свойств и связей объекта [усерекспериенцеаналитиксдевицестартуппроцесс](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md) .|
+|[Создание Усерекспериенцеаналитиксдевицестартуппроцесс](../api/intune-devices-userexperienceanalyticsdevicestartupprocess-create.md)|[userExperienceAnalyticsDeviceStartupProcess](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md)|Создание нового объекта [усерекспериенцеаналитиксдевицестартуппроцесс](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md) .|
 |[Удаление Усерекспериенцеаналитиксдевицестартуппроцесс](../api/intune-devices-userexperienceanalyticsdevicestartupprocess-delete.md)|Нет|Удаляет объект [усерекспериенцеаналитиксдевицестартуппроцесс](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md).|
-|[Обновление Усерекспериенцеаналитиксдевицестартуппроцесс](../api/intune-devices-userexperienceanalyticsdevicestartupprocess-update.md)|[усерекспериенцеаналитиксдевицестартуппроцесс](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md)|Обновление свойств объекта [усерекспериенцеаналитиксдевицестартуппроцесс](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md) .|
+|[Обновление Усерекспериенцеаналитиксдевицестартуппроцесс](../api/intune-devices-userexperienceanalyticsdevicestartupprocess-update.md)|[userExperienceAnalyticsDeviceStartupProcess](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md)|Обновление свойств объекта [усерекспериенцеаналитиксдевицестартуппроцесс](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -39,7 +41,7 @@ ms.locfileid: "42163943"
 |publisher|String|Издатель процесса запуска устройства Analytics User Experience.|
 |стартупимпактинмс|Int32|Влияние процесса запуска пользователя на устройство Analytics в миллисекундах.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

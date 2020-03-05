@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c9b375299db9fa52be494dca185ba9370627e3cb
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 0579008f0994aba06de3bc5869af998a80cab683
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42159481"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525091"
 ---
 # <a name="devicehealthscript-resource-type"></a>Тип ресурса Девицехеалсскрипт
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -32,7 +34,7 @@ Intune предоставит клиенту возможность выполн
 |[действие Упдатеглобалскрипт](../api/intune-devices-devicehealthscript-updateglobalscript.md)|String|Обновление сценария работоспособности собственного устройства|
 |[действие Жетглобалскрипсигхеставаилаблеверсион](../api/intune-devices-devicehealthscript-getglobalscripthighestavailableversion.md)|String|Обновление сценария работоспособности собственного устройства|
 |[действие Енаблеглобалскриптс](../api/intune-devices-devicehealthscript-enableglobalscripts.md)|Нет|Н/Д|
-|[Функция Ареглобалскриптсаваилабле](../api/intune-devices-devicehealthscript-areglobalscriptsavailable.md)|[глобалдевицехеалсскриптстате](../resources/intune-devices-globaldevicehealthscriptstate.md)|Н/Д|
+|[Функция Ареглобалскриптсаваилабле](../api/intune-devices-devicehealthscript-areglobalscriptsavailable.md)|[globalDeviceHealthScriptState](../resources/intune-devices-globaldevicehealthscriptstate.md)|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -47,13 +49,13 @@ Intune предоставит клиенту возможность выполн
 |createdDateTime|DateTimeOffset|Метка времени создания сценария работоспособности устройства. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Метка времени изменения сценария работоспособности устройства. Это свойство доступно только для чтения.|
 |runAsAccount|[рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|Свойства enforcesignaturecheck|Boolean|Указывает, нужно ли проверять подпись скрипта|
-|runAs32Bit|Boolean|Указывает, следует ли выполнять скрипты PowerShell как 32-разрядные|
-|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для сценария работоспособности устройства|
-|исглобалскрипт|Boolean|Определяет, является ли этот сценарий фирменным (Майкрософт). Специальные сценарии доступны только для чтения|
+|Свойства enforcesignaturecheck|Логический|Указывает, нужно ли проверять подпись скрипта|
+|runAs32Bit|Логический|Указывает, следует ли выполнять скрипты PowerShell как 32-разрядные|
+|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для сценария работоспособности устройства|
+|исглобалскрипт|Логический|Определяет, является ли этот сценарий фирменным (Майкрософт). Специальные сценарии доступны только для чтения|
 |хигхеставаилаблеверсион|String|Самая высокая доступная версия для собственного сценария Майкрософт|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [девицехеалсскриптассигнмент](../resources/intune-devices-devicehealthscriptassignment.md)|Список назначений групп для сценария работоспособности устройства|

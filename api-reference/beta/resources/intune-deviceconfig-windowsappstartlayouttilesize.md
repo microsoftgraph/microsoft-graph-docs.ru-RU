@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4be31b5c7dfdc100215a2dfc1aef511e446ac6cf
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 3c3082054c42072c365088d70746fba6386f8826
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371257"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525574"
 ---
 # <a name="windowsappstartlayouttilesize-enum-type"></a>тип перечисления Виндовсаппстартлайауттилесизе
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Размер плитки приложения Windows в макете "начало".
 
@@ -24,10 +26,10 @@ ms.locfileid: "36371257"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |hidden|нуль|Скрыто.|
-|small|1,1|Малый 1x1.|
-|medium|2|Средний 2x2.|
-|уровне|4|Широкие 4x2.|
-|large|SP4|Большой 4x4.|
+|small|1 |Малый 1x1.|
+|medium|2 |Средний 2x2.|
+|уровне|3 |Широкие 4x2.|
+|large|4 |Большой 4x4.|
 
 
 

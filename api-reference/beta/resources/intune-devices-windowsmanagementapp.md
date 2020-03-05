@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b86d6d6ddad847b1a4b39fd96d61f619e19afaac
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 90d9dab5977d3748fb4b69bca77f312e6f36a797
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36365225"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524804"
 ---
 # <a name="windowsmanagementapp-resource-type"></a>Тип ресурса windowsManagementApp
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Сущность приложения управления Windows.
 
@@ -32,8 +34,8 @@ ms.locfileid: "36365225"
 |id|String|Уникальный идентификатор для приложения управления Windows|
 |availableVersion|String|Доступная версия приложения управления Windows.|
 
-## <a name="relationships"></a>Отношения
-|Отношение|Тип|Описание|
+## <a name="relationships"></a>Связи
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |healthStates|Коллекция [виндовсманажементапфеалсстате](../resources/intune-devices-windowsmanagementapphealthstate.md)|Список состояний работоспособности для установленного приложения управления Windows.|
 

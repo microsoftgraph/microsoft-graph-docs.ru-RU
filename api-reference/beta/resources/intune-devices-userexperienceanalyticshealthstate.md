@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 684a44e0df645b80526eccf17245980d54eeaac6
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 74001c5d7e3e4dd482c9afae4261428e184a5ae2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37201293"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524888"
 ---
 # <a name="userexperienceanalyticshealthstate-enum-type"></a>тип перечисления Усерекспериенцеаналитикшеалсстате
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Пока не задокументировано.
 
@@ -24,9 +26,9 @@ ms.locfileid: "37201293"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Пока не задокументировано.|
-|инсуффиЦиентдата|1,1|Пока не задокументировано.|
-|нидсаттентион|2|Пока не задокументировано.|
-|митинггоалс|4|Пока не задокументировано.|
+|инсуффиЦиентдата|1 |Пока не задокументировано.|
+|нидсаттентион|2 |Пока не задокументировано.|
+|митинггоалс|3 |Пока не задокументировано.|
 
 
 

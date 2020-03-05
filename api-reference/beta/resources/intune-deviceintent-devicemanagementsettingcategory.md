@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 569c71d80411d4ec75086d47dcd9f74c5e4ef9e9
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 7a45388001f24cb147e7dcea526a104a21385526
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42163483"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525273"
 ---
 # <a name="devicemanagementsettingcategory-resource-type"></a>Тип ресурса Девицеманажементсеттингкатегори
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -34,9 +36,9 @@ ms.locfileid: "42163483"
 |:---|:---|:---|
 |id|String|Идентификатор категории|
 |displayName|Строка|Имя категории|
-|хасрекуиредсеттинг|Boolean|Категория содержит параметры, необходимые для верхнего уровня|
+|хасрекуиредсеттинг|Логический|Категория содержит параметры, необходимые для верхнего уровня|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |сеттингдефинитионс|Коллекция [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|Определения параметров, содержащиеся в этой категории|

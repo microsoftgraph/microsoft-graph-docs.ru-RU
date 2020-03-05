@@ -5,28 +5,30 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f1059706429c566c672e09a95a291c24a1760181
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 8233531964cbcbd7e41e703a4b477fc948dfede8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36374234"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524176"
 ---
 # <a name="devicemanagementexchangeaccesslevel-enum-type"></a>тип перечисления Девицеманажементексчанжеакцесслевел
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Уровень доступа в Exchange.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|В Exchange не настроено правило доступа к устройствам.|
-|разрешить|1,1|Разрешить устройству доступ к Exchange.|
-|блок|2|Блокировать доступ устройства к Exchange.|
-|папку|4|Карантин устройства в Exchange.|
+|нет|нуль|В Exchange не настроено правило доступа к устройствам.|
+|разрешить|1 |Разрешить устройству доступ к Exchange.|
+|блок|2 |Блокировать доступ устройства к Exchange.|
+|папку|3 |Карантин устройства в Exchange.|
 
 
 

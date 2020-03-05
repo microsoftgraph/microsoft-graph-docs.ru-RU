@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 63e4b858404242d84597a7f650bae6c0870f5b76
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: d687b74ad64e360b5e1f88f8d8bb28c4054363ae
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42162507"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525182"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>Тип ресурса applePushNotificationCertificate
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -40,7 +42,7 @@ ms.locfileid: "42162507"
 |цертификатесериалнумбер|String|Серийный номер сертификата. Это свойство доступно только для чтения.|
 |certificate|String|Н/Д|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 59d49f6862f8ab8df1baad1db5458131067514b4
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 0427ebde59a1e6cf2edda768ecceaec642fb38be
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42162493"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525035"
 ---
 # <a name="deviceoperatingsystemsummary-resource-type"></a>Тип ресурса deviceOperatingSystemSummary
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -35,7 +37,7 @@ ms.locfileid: "42162493"
 |андроидворкпрофилекаунт|Int32|Количество устройств с Android в рабочем профиле.|
 |конфигмгрдевицекаунт|Int32|Количество управляемых устройств ConfigMgr.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

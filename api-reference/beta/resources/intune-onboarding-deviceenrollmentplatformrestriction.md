@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 26f29427dfe863ed1b89eaef5025655dc07430fd
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: ed769c1e6550584688324f4bfdf2db772feae19c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636597"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524190"
 ---
 # <a name="deviceenrollmentplatformrestriction-resource-type"></a>Тип ресурса deviceEnrollmentPlatformRestriction
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -23,9 +25,9 @@ ms.locfileid: "41636597"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|platformBlocked|Boolean|Указывает, блокируется ли регистрация платформы|
+|platformBlocked|Логический|Указывает, блокируется ли регистрация платформы|
 |personalDeviceEnrollmentBlocked|Boolean|Указывает, блокируется ли регистрация личных устройств|
-|osMinimumVersion|Строка|Минимальная поддерживаемая версия ОС|
+|osMinimumVersion|String|Минимальная поддерживаемая версия ОС|
 |osMaximumVersion|String|Максимальная поддерживаемая версия ОС|
 |блоккедмануфактурерс|Коллекция String|Коллекция заблокированных производителей.|
 

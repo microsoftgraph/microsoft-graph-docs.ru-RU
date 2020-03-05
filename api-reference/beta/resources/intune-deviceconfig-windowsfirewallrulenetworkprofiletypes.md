@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c7e0f50a830134cea6b4bfc15c6e68b49b86d0a2
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0d57b5e52261ac720090921003665b05dd467ad1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371084"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525553"
 ---
 # <a name="windowsfirewallrulenetworkprofiletypes-enum-type"></a>тип перечисления Виндовсфиреваллруленетворкпрофилетипес
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Флаги, определяющие, какие типы профилей сети применяются к правилу брандмауэра.
 
@@ -24,9 +26,9 @@ ms.locfileid: "36371084"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Флаги не заданы.|
-|domain|1,1|Профиль для сетей, подключенных к доменам.|
-|закрытый|2|Профиль для частных сетей.|
-|public|SP4|Профиль для общедоступных сетей.|
+|domain|1 |Профиль для сетей, подключенных к доменам.|
+|закрытый|2 |Профиль для частных сетей.|
+|public|4 |Профиль для общедоступных сетей.|
 
 
 

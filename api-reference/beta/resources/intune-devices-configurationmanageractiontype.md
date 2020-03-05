@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: eb2e4ccc3718ff06b1805ee6a19639e9e2d659eb
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: b15d8315c33890185f91c84b95bd75155c6a94f6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37201295"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525147"
 ---
 # <a name="configurationmanageractiontype-enum-type"></a>тип перечисления Конфигуратионманажерактионтипе
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Тип действия в клиенте Configuration Manager
 
@@ -24,9 +26,9 @@ ms.locfileid: "37201295"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |рефрешмачинеполици|нуль|Обновление политики компьютера в клиенте Configuration Manager|
-|рефрешусерполици|1,1|Обновление политики пользователя в клиенте Configuration Manager|
-|вакеупклиент|2|Пробуждение клиента Configuration Manager|
-|аппевалуатион|4|Оценка политики применения в клиенте Configuration Manager|
+|рефрешусерполици|1 |Обновление политики пользователя в клиенте Configuration Manager|
+|вакеупклиент|2 |Пробуждение клиента Configuration Manager|
+|аппевалуатион|3 |Оценка политики применения в клиенте Configuration Manager|
 
 
 

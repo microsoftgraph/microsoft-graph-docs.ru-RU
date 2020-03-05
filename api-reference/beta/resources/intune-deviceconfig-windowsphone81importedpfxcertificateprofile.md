@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 29dcc41132db2b0baf734a4632d6d4d463af8cd9
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 8ba482aca09c5e8113b22e29b4dbdfd21d051271
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088114"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525434"
 ---
 # <a name="windowsphone81importedpfxcertificateprofile-resource-type"></a>Тип ресурса windowsPhone81ImportedPFXCertificateProfile
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

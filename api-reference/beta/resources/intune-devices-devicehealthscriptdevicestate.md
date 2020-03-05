@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f9ae4ae7e6f014b52f4049d6663b732680d033d5
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 4a5e7aa1816c4b47765259e41acd70a8fbd74405
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539087"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525084"
 ---
 # <a name="devicehealthscriptdevicestate-resource-type"></a>Тип ресурса Девицехеалсскриптдевицестате
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Содержит свойства состояния запуска для сценария работоспособности устройства.
 
@@ -24,10 +26,10 @@ ms.locfileid: "37539087"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Девицехеалсскриптдевицестатес](../api/intune-devices-devicehealthscriptdevicestate-list.md)|Коллекция [девицехеалсскриптдевицестате](../resources/intune-devices-devicehealthscriptdevicestate.md)|Список свойств и связей объектов [девицехеалсскриптдевицестате](../resources/intune-devices-devicehealthscriptdevicestate.md) .|
-|[Получение Девицехеалсскриптдевицестате](../api/intune-devices-devicehealthscriptdevicestate-get.md)|[девицехеалсскриптдевицестате](../resources/intune-devices-devicehealthscriptdevicestate.md)|Чтение свойств и связей объекта [девицехеалсскриптдевицестате](../resources/intune-devices-devicehealthscriptdevicestate.md) .|
-|[Создание Девицехеалсскриптдевицестате](../api/intune-devices-devicehealthscriptdevicestate-create.md)|[девицехеалсскриптдевицестате](../resources/intune-devices-devicehealthscriptdevicestate.md)|Создание нового объекта [девицехеалсскриптдевицестате](../resources/intune-devices-devicehealthscriptdevicestate.md) .|
+|[Получение Девицехеалсскриптдевицестате](../api/intune-devices-devicehealthscriptdevicestate-get.md)|[deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md)|Чтение свойств и связей объекта [девицехеалсскриптдевицестате](../resources/intune-devices-devicehealthscriptdevicestate.md) .|
+|[Создание Девицехеалсскриптдевицестате](../api/intune-devices-devicehealthscriptdevicestate-create.md)|[deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md)|Создание нового объекта [девицехеалсскриптдевицестате](../resources/intune-devices-devicehealthscriptdevicestate.md) .|
 |[Удаление Девицехеалсскриптдевицестате](../api/intune-devices-devicehealthscriptdevicestate-delete.md)|Нет|Удаляет объект [девицехеалсскриптдевицестате](../resources/intune-devices-devicehealthscriptdevicestate.md).|
-|[Обновление Девицехеалсскриптдевицестате](../api/intune-devices-devicehealthscriptdevicestate-update.md)|[девицехеалсскриптдевицестате](../resources/intune-devices-devicehealthscriptdevicestate.md)|Обновление свойств объекта [девицехеалсскриптдевицестате](../resources/intune-devices-devicehealthscriptdevicestate.md) .|
+|[Обновление Девицехеалсскриптдевицестате](../api/intune-devices-devicehealthscriptdevicestate-update.md)|[deviceHealthScriptDeviceState](../resources/intune-devices-devicehealthscriptdevicestate.md)|Обновление свойств объекта [девицехеалсскриптдевицестате](../resources/intune-devices-devicehealthscriptdevicestate.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -42,7 +44,7 @@ ms.locfileid: "37539087"
 |ремедиатионскриптеррор|String|Вывод ошибок сценария исправления|
 |постремедиатиондетектионскриптаутпут|String|Выходные данные сценария обнаружения после исправления|
 |постремедиатиондетектионскриптеррор|String|Ошибка сценария обнаружения после исправления|
-|ремедиатионстате|[ремедиатионстате](../resources/intune-devices-remediationstate.md)|Состояние исправления с последнего выполнения скрипта работоспособности устройства. Возможные значения: `unknown`, `skipped`, `success`, `remediationFailed`, `scriptError`.|
+|remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|Состояние исправления с последнего выполнения скрипта работоспособности устройства. Возможные значения: `unknown`, `skipped`, `success`, `remediationFailed`, `scriptError`.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

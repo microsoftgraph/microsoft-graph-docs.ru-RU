@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c3bc5d531910af33af5c45d913c6f2ee827b0bd8
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 64b8adf3aa82575db53472f047f8f4145ce32535
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955661"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524338"
 ---
 # <a name="managedappdataingestionlocation-enum-type"></a>тип перечисления Манажедаппдатаинжестионлокатион
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -23,9 +25,9 @@ ms.locfileid: "39955661"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|онедривефорбусинесс|1,1|OneDrive для бизнеса;|
-|sharePoint|2|SharePoint Online|
-|видеокамер|4|Камера устройства|
+|онедривефорбусинесс|1 |OneDrive для бизнеса;|
+|sharePoint|2 |SharePoint Online|
+|видеокамер|3 |Камера устройства|
 
 
 

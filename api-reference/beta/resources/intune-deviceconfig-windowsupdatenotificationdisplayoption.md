@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 69c990e8cb2eefc71e1a0cae085e71da7e095383
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 55f574ec7812477f3fa8e3cb1b6772970df73df4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337673"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525378"
 ---
 # <a name="windowsupdatenotificationdisplayoption-enum-type"></a>тип перечисления Виндовсупдатенотификатиондисплайоптион
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Параметры отображения уведомлений центра обновления Windows
 
@@ -24,9 +26,9 @@ ms.locfileid: "36337673"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроено|
-|дефаултнотификатионс|1,1|Используйте уведомления центра обновления Windows по умолчанию.|
-|рестартварнингсонли|2|Отключить все уведомления, Кроме предупреждений о перезапуске.|
-|дисаблеаллнотификатионс|4|Отключение всех уведомлений, в том числе предупреждений о перезапуске.|
+|дефаултнотификатионс|1 |Используйте уведомления центра обновления Windows по умолчанию.|
+|рестартварнингсонли|2 |Отключить все уведомления, Кроме предупреждений о перезапуске.|
+|дисаблеаллнотификатионс|3 |Отключение всех уведомлений, в том числе предупреждений о перезапуске.|
 
 
 

@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 873fe2c09453303125bca3a1754aea7dbd64bf16
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b9e97ee882922fde3493181f1b4299f061606954
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36367703"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525777"
 ---
 # <a name="vpnintegrityalgorithmtype-enum-type"></a>тип перечисления Впнинтегритялгорисмтипе
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Тип алгоритма проверки подлинности сопоставления VPN
 
@@ -24,10 +26,10 @@ ms.locfileid: "36367703"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |sha2_256|нуль|SHA2 — 256|
-|sha1_96|1,1|SHA1 — 96|
-|sha1_160|2|SHA1 – 160|
-|sha2_384|4|SHA2 — 384|
-|sha2_512|SP4|SHA2 — 512|
+|sha1_96|1 |SHA1 — 96|
+|sha1_160|2 |SHA1 – 160|
+|sha2_384|3 |SHA2 — 384|
+|sha2_512|4 |SHA2 — 512|
 
 
 

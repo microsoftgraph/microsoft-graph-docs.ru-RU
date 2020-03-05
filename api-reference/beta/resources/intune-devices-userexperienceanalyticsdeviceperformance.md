@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3cc165fed3f08d961b34bccd436e87d6b82dc8cc
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: f796311fcd901ed472d7732ef54a2f25663f3d79
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42162479"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524902"
 ---
 # <a name="userexperienceanalyticsdeviceperformance-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксдевицеперформанце
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -49,7 +51,7 @@ ms.locfileid: "42162479"
 |deviceCount|Int64|Число устройств для аналитики взаимодействия с пользователем.|
 |респонсиведесктоптимеинмс|Int32|Время, в течение которого выполняется анализ пользовательского интерфейса на рабочем столе в миллисекундах.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
