@@ -5,14 +5,16 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: b6810a62ecab5209ca1c17aa7f3ca9e4753a50a9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 40dc49363e4214c044c408760007a46b8f65ea46
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035326"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447152"
 ---
 # <a name="plannerbucket-resource-type"></a>Тип ресурса plannerBucket
+
+Пространство имен: Microsoft. Graph
 
 Ресурс **plannerBucket** представляет сегмент (или "настраиваемый столбец") для задач в плане в Office 365. Он находится в [plannerPlan](plannerplan.md) и может иметь коллекцию [перечисление plannertasks](plannertask.md).
 
@@ -25,8 +27,8 @@ ms.locfileid: "36035326"
 |[Получение объекта plannerBucket](../api/plannerbucket-get.md) | [plannerBucket](plannerbucket.md); |Чтение свойств и связей объекта **plannerBucket** .|
 |[Перечисление plannerTasks](../api/plannerbucket-list-tasks.md) |Коллекция [plannerTask](plannertask.md)| Получение коллекции объектов **plannerTask**.|
 |[создание](../api/planner-post-buckets.md); | [plannerBucket](plannerbucket.md);   | Создание нового объекта **plannerBucket** . |
-|[обновление](../api/plannerbucket-update.md); | [plannerBucket](plannerbucket.md);   |Обновление объекта **plannerBucket** . |
-|[Удаление](../api/plannerbucket-delete.md) | Нет |Удаление объекта **plannerBucket** . |
+|[обновление](../api/plannerbucket-update.md). | [plannerBucket](plannerbucket.md);   |Обновление объекта **plannerBucket** . |
+|[удаление](../api/plannerbucket-delete.md); | Нет |Удаление объекта **plannerBucket** . |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -36,8 +38,8 @@ ms.locfileid: "36035326"
 |orderHint|String|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](planner-order-hint-format.md).|
 |planId|Строка|ИДЕНТИФИКАТОР плана, к которому относится сегмент.|
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |tasks|Коллекция объектов [plannerTask](plannertask.md)| Только для чтения. Допускается значение null. Коллекция задач в сегменте.|
 

@@ -7,14 +7,16 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Ресурс SharePointIds — это единая структура, объединяющая различные идентификаторы элемента, хранящегося на сайте SharePoint или в OneDrive для бизнеса.
 doc_type: resourcePageType
-ms.openlocfilehash: a7dfd936770ac85b458cb8b086ff05e328d2ea9c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a61810792d4085c4ddd92c95b4f46ead54f57e67
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034281"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446872"
 ---
 # <a name="sharepointids-resource-type"></a>Тип ресурса SharePointIds
+
+Пространство имен: Microsoft. Graph
 
 Ресурс **SharePointIds** — это единая структура, объединяющая различные идентификаторы элемента, хранящегося на сайте SharePoint или в OneDrive для бизнеса.
 
@@ -45,10 +47,10 @@ ms.locfileid: "36034281"
 
 | Свойство         | Тип         | Описание
 |:-----------------|:-------------|:-------------------------------------------
-| listId           | string       | Уникальный идентификатор (GUID) списка, содержащего элемент, в SharePoint.
-| listItemId       | string       | Целочисленный идентификатор элемента в списке.
+| listId           | строка       | Уникальный идентификатор (GUID) списка, содержащего элемент, в SharePoint.
+| listItemId       | строка       | Целочисленный идентификатор элемента в списке.
 | listItemUniqueId | string       | Уникальный идентификатор (GUID) элемента в OneDrive для бизнеса или на сайте SharePoint.
-| siteId           | string       | Уникальный идентификатор (GUID) семейства веб-сайтов (SPSite), содержащего элемент.
+| siteId           | строка       | Уникальный идентификатор (GUID) семейства веб-сайтов (SPSite), содержащего элемент.
 | siteUrl          | string (url) | URL-адрес SharePoint для сайта, содержащего элемент.
 | webId            | string       | Уникальный идентификатор (GUID) семейства веб-сайтов (SPWeb), содержащего элемент.
 

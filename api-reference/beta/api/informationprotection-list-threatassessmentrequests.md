@@ -5,14 +5,16 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5023a539c760fa531283a34ea3ee5fdf61df1deb
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: a87828e1700a8813caae64f01d1e970f8a1f7939
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871928"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446389"
 ---
 # <a name="list-threatassessmentrequests"></a>Список Среатассессментрекуестс
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,7 +22,7 @@ ms.locfileid: "40871928"
 
 Запрос на оценку угроз может иметь один из следующих типов:
 
-* [Почтовая](../resources/mailAssessmentRequest.md)
+* [почта](../resources/mailAssessmentRequest.md);
 * [Файл электронной почты](../resources/emailFileAssessmentRequest.md)
 * [Файл](../resources/fileAssessmentRequest.md)
 * [URL](../resources/urlAssessmentRequest.md)
@@ -33,7 +35,7 @@ ms.locfileid: "40871928"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Среатассессмент. ReadWrite. ALL.             |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Приложение                            | Среатассессмент. Read. ALL.                  |
+| Для приложений                            | Среатассессмент. Read. ALL.                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,7 +51,7 @@ GET /informationProtection/threatAssessmentRequests
 
 |Имя            |Значение    |Описание                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |string   |Разрешает отклик только на те объекты, которые содержат заданные условия.                                                                                             |
+|$filter         |строка   |Разрешает отклик только на те объекты, которые содержат заданные условия.                                                                                             |
 |$orderby        |строка   |По умолчанию объекты в отклике сортируются по убыванию по значению **createdDateTime** .                                                                          |
 |$select         |string   |Список разделенных запятыми свойств, которые необходимо включить в отклик. Для оптимизации производительности выбирайте только необходимые свойства.                                        |
 |$skipToken      |string   |Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц.                                                                                               |
@@ -60,7 +62,7 @@ GET /informationProtection/threatAssessmentRequests
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -74,7 +76,7 @@ GET /informationProtection/threatAssessmentRequests
 
 Ниже приведен пример запроса.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_threatassessmentrequests"
@@ -83,15 +85,15 @@ GET /informationProtection/threatAssessmentRequests
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/informationProtection/threatAssessmentRequests
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-threatassessmentrequests-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-threatassessmentrequests-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-threatassessmentrequests-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0e72f5338f7281188b7023aed342dd34ee57595e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 304d5a27714d7e6e02183b372814c8cb16c4e0b9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033504"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446795"
 ---
 # <a name="useridentity-resource-type"></a>Тип ресурса userIdentity
+
+Пространство имен: Microsoft. Graph
 
 В контексте журнала аудита Azure AD — это сведения о пользователях, которые были инициированы или затронуты действием аудита.
 

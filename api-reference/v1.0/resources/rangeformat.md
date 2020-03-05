@@ -5,14 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 3e1b79c80c20197cc14a5097efdf9eb0513b43e4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: edf239d5e14ca65ee4ae15f846182e5678f89f46
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034890"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447019"
 ---
 # <a name="rangeformat-resource-type"></a>Тип ресурса RangeFormat
+
+Пространство имен: Microsoft. Graph
 
 Объект формата, в который включены шрифт, заливка, границы, выравнивание и другие свойства диапазона.
 
@@ -22,7 +24,7 @@ ms.locfileid: "36034890"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта RangeFormat](../api/rangeformat-get.md) | [WorkbookRangeFormat](rangeformat.md) |Чтение свойств и связей объекта rangeFormat.|
-|[Создание объекта RangeBorder](../api/rangeformat-post-borders.md) |[Воркбукранжебордер](rangeborder.md)| Создание объекта RangeBorder путем добавления в коллекцию границ.|
+|[Создание объекта RangeBorder](../api/rangeformat-post-borders.md) |[воркбукранжебордер](rangeborder.md)| Создание объекта RangeBorder путем добавления в коллекцию границ.|
 |[Список границ](../api/rangeformat-list-borders.md) |Коллекция [воркбукранжебордер](rangeborder.md)| Получение коллекции объектов RangeBorder.|
 |[Обновление](../api/rangeformat-update.md) | [WorkbookRangeFormat](rangeformat.md) |Обновление объекта RangeFormat. |
 |[Autofitcolumns](../api/rangeformat-autofitcolumns.md)|Нет|Изменяет ширину столбцов текущего диапазона на оптимальную с учетом текущих данных в столбцах.|
@@ -32,18 +34,18 @@ ms.locfileid: "36034890"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |columnWidth|double|Возвращает или задает ширину всех столбцов в пределах диапазона. Если столбцы разной ширины, будет возвращено значение NULL.|
-|horizontalAlignment|string|Представляет выравнивание по горизонтали для указанного объекта. Возможные `General`значения:, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`,. `Distributed`|
+|horizontalAlignment|строка|Представляет выравнивание по горизонтали для указанного объекта. Возможные `General`значения:, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`,. `Distributed`|
 |rowHeight|double|Возвращает или задает высоту всех строк в диапазоне. Если строки разной высоты, будет возвращено значение NULL.|
 |verticalAlignment|string|Представляет выравнивание по вертикали для указанного объекта. Допустимые значения: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.|
 |wrapText|boolean|Указывает, использует ли Excel обтекание текстом для объекта. Значение null указывает, что для диапазона в целом не применяется согласованный параметр обтекания.|
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |borders|Коллекция [воркбукранжебордер](rangeborder.md)|Коллекция объектов границы, которые применяются к общему выделенному диапазону. Только для чтения.|
-|fill|[Воркбукранжефилл](rangefill.md)|Возвращает объект заливки, определенный для всего диапазона. Только для чтения.|
-|font|[Воркбукранжефонт](rangefont.md)|Возвращает объект шрифта, определенный для общего выбранного диапазона. Только для чтения.|
-|protection|[Воркбукформатпротектион](formatprotection.md)|Возвращает объект защиты формата для диапазона. Только для чтения.|
+|fill|[воркбукранжефилл](rangefill.md)|Возвращает объект заливки, определенный для всего диапазона. Только для чтения.|
+|font|[воркбукранжефонт](rangefont.md)|Возвращает объект шрифта, определенный для общего выбранного диапазона. Только для чтения.|
+|protection|[воркбукформатпротектион](formatprotection.md)|Возвращает объект защиты формата для диапазона. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 45b6d7db50afc1f5ea6723ab1f442eb7a9a6ee00
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 603ae99efdde27aa75352b01706fcb4e69a02c9b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37360841"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447985"
 ---
 # <a name="role-based-access-control-in-microsoft-intune"></a>Управление доступом на основе ролей в Microsoft Intune
+
+Пространство имен: Microsoft. Graph
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune надлежащим образом.
 

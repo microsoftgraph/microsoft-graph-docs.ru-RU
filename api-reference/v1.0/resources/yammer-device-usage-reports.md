@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 209410e21cd9f96c87695409741e6a088a272601
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3e2c91db77fbd57118c340d2d51a3bcd67ac0641
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033266"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446641"
 ---
 # <a name="yammer-device-usage-reports"></a>Отчеты об использовании устройств с Yammer
+
+Пространство имен: Microsoft. Graph
 
 Отчеты об использовании устройств с Yammer содержат сведения о том, какие устройства с Yammer есть у пользователей. Вы можете просматривать сведения о количестве пользователей за указанный период с разбивкой по типам устройств и по пользователям.
 
@@ -24,4 +26,4 @@ ms.locfileid: "36033266"
 | :--------------------------------------- | :---------- | :--------------------------------------- |
 | [Получение сведений о пользователях](../api/reportroot-getyammerdeviceusageuserdetail.md) | Поток      | Получение сведений об использовании устройств с Yammer с разбивкой по пользователям. |
 | [Получение количества пользователей с разбивкой по устройствам](../api/reportroot-getyammerdeviceusagedistributionusercounts.md) | Stream      | Получение сведений о количестве пользователей с разбивкой по типам устройств.  |
-| [Получение количества пользователей](../api/reportroot-getyammerdeviceusageusercounts.md) | Поток      | Получение сведений о количестве пользователей в день с разбивкой по типам устройств. |
+| [Получение количества пользователей](../api/reportroot-getyammerdeviceusageusercounts.md) | Stream      | Получение сведений о количестве пользователей в день с разбивкой по типам устройств. |

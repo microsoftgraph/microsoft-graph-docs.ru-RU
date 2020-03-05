@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 7a3008b328337e4dd4d816f4b0d7432b7e24c08d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: adac348de690b3796399a4276ede4280f35713b3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036493"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447607"
 ---
 # <a name="keyvalue-resource-type"></a>Тип ресурса Ключзначение
+
+Пространство имен: Microsoft. Graph
 
 Представляет собой ключевую строку "ключ — значение".
 
@@ -21,7 +23,7 @@ ms.locfileid: "36036493"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |key|string| Ключ для параметра "ключ — значение". |
-|value|string| Значение для параметра "ключ — значение".|
+|value|строка| Значение для параметра "ключ — значение".|
 
 ## <a name="json-representation"></a>Представление JSON
 

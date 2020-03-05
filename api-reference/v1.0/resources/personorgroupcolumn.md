@@ -6,14 +6,16 @@ localization_priority: Normal
 ms.prod: insights
 description: Ресурс personOrGroupColumn в ресурсе columnDefinition указывает, что значения столбца представляют человека или группу, выбранные в каталоге.
 doc_type: resourcePageType
-ms.openlocfilehash: d8ce31e7eb044e588f73afefb2b370e161fa7cdf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ea89377f38f820ec00fc38343ba714ec22a10c1c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035520"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447201"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>Тип ресурса personOrGroupColumn
+
+Пространство имен: Microsoft. Graph
 
 Ресурс **personOrGroupColumn** в ресурсе [columnDefinition](columndefinition.md) указывает, что значения столбца представляют человека или группу, выбранные в каталоге.
 
@@ -35,7 +37,7 @@ ms.locfileid: "36035520"
 | Имя свойства              | Тип    | Описание
 |:---------------------------|:--------|:--------------------------------------
 | **allowMultipleSelection** | boolean | Указывает, можно ли выбрать несколько значений в источнике.
-| **displayAs**              | string  | Указывает способ отображения сведений о выбранном человеке или группе. См. ниже.
+| **displayAs**              | строка  | Указывает способ отображения сведений о выбранном человеке или группе. См. ниже.
 | **chooseFromType**         | string  | Указывает, что можно выбирать: только людей либо людей и группы. Должно иметь тип `peopleAndGroups` или `peopleOnly`.
 
 ## <a name="displayas-options"></a>Параметры DisplayAs

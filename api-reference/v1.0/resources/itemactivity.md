@@ -6,21 +6,23 @@ description: Объект itemActivity предоставляет сведени
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: ddd478794cc3ad87ce29513c45455a9ba2911a52
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f1ffbcc84f3cb399b131ae40c46cae9230e4cac8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036731"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447677"
 ---
 # <a name="itemactivity-resource-type"></a>Тип ресурса itemActivity
+
+Пространство имен: Microsoft. Graph
 
 Ресурс **itemActivity** предоставляет сведения о действиях, выполняемых над элементом или в контейнере.
 В настоящее время доступен только в SharePoint и OneDrive для бизнеса.
 
 Действия, выполняемые в itemActivity, подробно описаны в свойстве [itemActionSet][] .
 
->**Примечание:** **itemActivity** в настоящее время доступно только в SharePoint и OneDrive для бизнеса.
+>**Note:** **itemActivity** в настоящее время доступно только в SharePoint и OneDrive для бизнеса.
 
 [itemActionSet]: itemactionset.md#properties
 
@@ -28,12 +30,12 @@ ms.locfileid: "36036731"
 
 | Свойство | Тип                    | Описание
 |:---------|:------------------------|:----------------------------------------
-| id       | string                  | Уникальный идентификатор действия. Только для чтения.
-| обращения   | [Акцессактион][]        | Доступ к элементу.
+| id       | строка                  | Уникальный идентификатор действия. Только для чтения.
+| обращения   | [акцессактион][]        | Доступ к элементу.
 | actor    | [identitySet][]         | Удостоверение, выполнившее действие. Только для чтения.
 | activityDateTime    | DateTimeOffset | Сведения о том, когда было выполнено действие. Только для чтения.
 
-[Акцессактион]: accessaction.md
+[акцессактион]: accessaction.md
 [identitySet]: identityset.md
 
 ## <a name="relationships"></a>Связи

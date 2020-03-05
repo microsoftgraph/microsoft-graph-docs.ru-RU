@@ -6,14 +6,16 @@ description: Объект itemActionSet предоставляет сведен�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 9dce21afc1acc8e93181204e026f74a597c9120f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e7c2357965acaf049e8483b33b888116fea6e994
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036591"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447663"
 ---
 # <a name="itemactivitytimeset-resource-type"></a>Тип ресурса itemActivityTimeSet
+
+Пространство имен: Microsoft. Graph
 
 Ресурс **itemActivityTimeSet** предоставляет сведения о том, когда выполнялось [действие][activity] для элемента.
 

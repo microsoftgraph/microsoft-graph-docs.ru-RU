@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 95c377ae8ee00c39196586822019e33ad97fcb8f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 163eab83bfcb5089ec21d449d90840384c12e4ef
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035972"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447348"
 ---
 # <a name="office-365-active-users-reports"></a>Отчеты об активных пользователях Office 365
+
+Пространство имен: Microsoft. Graph
 
 Эти отчеты позволяют узнать, сколько лицензий используется в вашей организации, и выяснить, кто какие продукты использует. Эти отчеты помогут администраторам определить редко используемые продукты или выявить пользователей, которым, возможно, необходимо дополнительное обучение или информация.
 
@@ -22,5 +24,5 @@ ms.locfileid: "36035972"
 | Функция                                 | Возвращаемый тип | Описание                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
 | [Получение сведений о пользователях](../api/reportroot-getoffice365activeuserdetail.md) | Stream      | Получите сведения об активных пользователях Office 365. |
-| [Получение количества пользователей](../api/reportroot-getoffice365activeusercounts.md) | Поток      | Узнайте, сколько активных пользователей в день было у каждого продукта в отчетный период. |
+| [Получение количества пользователей](../api/reportroot-getoffice365activeusercounts.md) | Stream      | Узнайте, сколько активных пользователей в день было у каждого продукта в отчетный период. |
 | [Получение количества пользователей по службам](../api/reportroot-getoffice365servicesusercounts.md) | Поток      | Узнайте, сколько пользователей были активны и неактивны в каждой службе. |

@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 3e1903b192891befa4d9b1806d764a1faecbdbc0
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 2682aa4a4c28564e0f4474c7d215f4f5df05177d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37368318"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448083"
 ---
 # <a name="devicemanagementpartnertenantstate-enum-type"></a>тип перечисления Девицеманажементпартнертенантстате
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+Пространство имен: Microsoft. Graph
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Состояние партнера этого клиента.
 
@@ -22,11 +24,11 @@ ms.locfileid: "37368318"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Состояние партнера неизвестно.|
-|выходе|1,1|Партнер недоступен.|
-|enabled|2|Партнер включен.|
-|нулем|4|Подключение к партнеру завершается.|
-|клоняет|SP4|Партнерские сообщения отклоняются.|
-|не отвечает|17:00|Партнер не отвечает.|
+|выходе|1 |Партнер недоступен.|
+|enabled|2 |Партнер включен.|
+|нулем|3 |Подключение к партнеру завершается.|
+|клоняет|4 |Партнерские сообщения отклоняются.|
+|не отвечает|5 |Партнер не отвечает.|
 
 
 

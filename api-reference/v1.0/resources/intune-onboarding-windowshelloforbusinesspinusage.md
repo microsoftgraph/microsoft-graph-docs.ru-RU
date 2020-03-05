@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e4b0fba95896e0787d69f6312f41c4a8c6144a36
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: b1867ac65e897568639cf158a025e50bb9658c20
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37360855"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447978"
 ---
 # <a name="windowshelloforbusinesspinusage-enum-type"></a>тип перечисления Виндовшеллофорбусинесспинусаже
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+Пространство имен: Microsoft. Graph
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Параметры использования ПИН-кода Windows Hello для бизнеса
 
@@ -22,8 +24,8 @@ ms.locfileid: "37360855"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |разрешенных|нуль|Пока не задокументировано.|
-|Обязательный|1,1|Пока не задокументировано.|
-|разрешена|2|Пока не задокументировано.|
+|Обязательный|1 |Пока не задокументировано.|
+|разрешена|2 |Пока не задокументировано.|
 
 
 

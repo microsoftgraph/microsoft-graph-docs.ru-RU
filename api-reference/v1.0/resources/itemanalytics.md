@@ -6,14 +6,16 @@ description: Объект Итеманалитикс предоставляет 
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 9c33a79d2728b578eeab1348a655e2b7a7574955
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0b4ee2bba6cff84a99cf5a0e20dddc09ad87ee59
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036584"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447656"
 ---
 # <a name="itemanalytics-resource-type"></a>Тип ресурса Итеманалитикс
+
+Пространство имен: Microsoft. Graph
 
 Ресурс **итеманалитикс** предоставляет аналитику о действиях, которые были выполнены для элемента. Этот ресурс в настоящее время доступен только в SharePoint и OneDrive для бизнеса.
 
@@ -25,8 +27,8 @@ ms.locfileid: "36036584"
 
 | Свойство      | Тип                 | Описание
 |:--------------|:---------------------|:--------------------------------------
-| Аллтиме       | [itemActivityStat][] | Аналитика за сроком службы элемента.
-| Ластсевендайс | [itemActivityStat][] | Аналитика за последние семь дней.
+| аллтиме       | [itemActivityStat][] | Аналитика за сроком службы элемента.
+| ластсевендайс | [itemActivityStat][] | Аналитика за последние семь дней.
 
 [itemActivityStat]: itemactivitystat.md
 [getActivitiesByInterval]: ../api/itemactivitystat-getactivitybyinterval.md

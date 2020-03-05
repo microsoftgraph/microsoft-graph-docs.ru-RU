@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 12dc1a5992146c23ac6f2858fd7ee0b3508e455a
-ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
+ms.openlocfilehash: 99097c026ef219e82a34a6c7b043cf70d36c965d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37418302"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447509"
 ---
 # <a name="mailboxsettings-resource-type"></a>Тип ресурса mailboxSettings
+
+Пространство имен: Microsoft. Graph
 
 Параметры основного почтового ящика [пользователя](user.md).
 
@@ -22,11 +24,11 @@ ms.locfileid: "37418302"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|archiveFolder|string|Идентификатор архивной папки пользователя.|
+|archiveFolder|строка|Идентификатор архивной папки пользователя.|
 |automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|Параметры конфигурации для автоматического уведомления отправителя о входящем письме с помощью сообщения от пользователя, вошедшего в систему.|
-|dateFormat|string|Формат даты для почтового ящика пользователя.|
+|dateFormat|строка|Формат даты для почтового ящика пользователя.|
 |language|[localeInfo](localeinfo.md)|Сведения о языковом стандарте пользователя, в том числе о предпочитаемом языке и стране или регионе.|
-|тимеформат|string|Формат времени для почтового ящика пользователя.|
+|тимеформат|строка|Формат времени для почтового ящика пользователя.|
 |timeZone|string|Часовой пояс, используемый по умолчанию, для почтового ящика пользователя.|
 |workingHours|[workingHours](workinghours.md)|Дни недели и часы работы пользователя в определенном часовом поясе.|
 

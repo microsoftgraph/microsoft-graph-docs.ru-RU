@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 9a1efdb217b6f4970cf0925aa69ebb50f451e938
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2b09e95db4c6d599e1e61925991912bb55ff8424
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033553"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446809"
 ---
 # <a name="timezoneinformation-resource-type"></a>Тип ресурса timeZoneInformation
+
+Пространство имен: Microsoft. Graph
 
 
 Представляет часовой пояс. Поддерживаются формат Windows и формат [часового пояса IANA](https://www.iana.org/time-zones), также известного как часовой пояс Олсона (после устранения известной проблемы).

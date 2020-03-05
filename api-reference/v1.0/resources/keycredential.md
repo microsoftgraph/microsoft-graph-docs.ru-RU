@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: 346ff30ad0479d2b25dc57d09a67cc4ddd5f83bc
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 48ea2f837f62baeb8a8c7dc8f2204af8d8aa3113
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939630"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447614"
 ---
 # <a name="keycredential-resource-type"></a>Тип ресурса Кэйкредентиал
+
+Пространство имен: Microsoft. Graph
 
 Содержит ключевые учетные данные, связанные с приложением <!--or a service principal-->. Свойство **keyCredentials** [приложения](application.md) <!--and [servicePrincipal](serviceprincipal.md)--> сущность представляет собой коллекцию **кэйкредентиал**.
 
@@ -20,7 +22,7 @@ ms.locfileid: "37939630"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |кустомкэйидентифиер|Binary| Настраиваемый идентификатор ключа |
-| displayName | Строка | Понятное имя для ключа. Необязательный параметр. |
+| displayName | Строка | Понятное имя для ключа. Необязательное свойство. |
 |endDateTime|DateTimeOffset|Дата и время истечения срока действия учетных данных. Тип timestamp представляет сведения о дате и времени с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |Него значение KeyID|GUID|Уникальный идентификатор (GUID) для ключа.|
 |startDateTime|DateTimeOffset|Дата и время, когда учетные данные становятся действительными. Тип timestamp представляет сведения о дате и времени с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|

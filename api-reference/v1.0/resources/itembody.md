@@ -5,14 +5,16 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 6cf87c803ec957b42cc55cf1523a708b145af117
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: fb7fea89a7da3d98899a19614d7c40f76dcb6f8e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "38657490"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447649"
 ---
 # <a name="itembody-resource-type"></a>Тип ресурса itemBody
+
+Пространство имен: Microsoft. Graph
 
 Представляет свойства основного текста элемента, например сообщения, события или записи группы.
 

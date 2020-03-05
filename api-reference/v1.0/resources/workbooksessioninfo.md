@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: f2e6b925e7cc1790b1c6d4f08bab02fa92f19936
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1e9746f27a23b12a3bfdf3168cd271c7f2cbc0d2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033336"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446694"
 ---
 # <a name="workbooksessioninfo-resource-type"></a>Тип ресурса workbookSessionInfo
+
+Пространство имен: Microsoft. Graph
 
 Предоставляет сведения о сеансе книги.
 
@@ -38,6 +40,6 @@ ms.locfileid: "36033336"
 
 | Свойство | Тип  | Описание                               |
 |:---------|:------|:------------------------------------------|
-| id  | string | Идентификатор сеанса книги. |
+| id  | строка | Идентификатор сеанса книги. |
 | persistChanges | boolean |  Имеет значение `true` для сохраняемого сеанса. Имеет значение `false` для несохраняемого сеанса (режим просмотра) |
 

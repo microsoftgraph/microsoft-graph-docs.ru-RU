@@ -7,14 +7,16 @@ localization_priority: Normal
 description: Ресурс Shared указывает, что к элементу DriveItem был предоставлен доступ другим пользователям.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 547d227aff5b62cf47f3f6c11219a2c55c3e8205
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 027a4275b342be4c6e61e0e3ad8a47c665de5946
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034330"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446900"
 ---
 # <a name="shared-resource-type"></a>Тип ресурса Shared
+
+Пространство имен: Microsoft. Graph
 
 Ресурс **Shared** указывает, что к элементу DriveItem был предоставлен доступ другим пользователям. Ресурс содержит сведения о способе предоставления совместного доступа к элементу.
 

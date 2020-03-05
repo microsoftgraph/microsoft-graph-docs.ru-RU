@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e79bea73a5a7a81ad92eab159745d2cf64938483
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 35b4ad8573fe588c8e58123a36cc3acd97122fe2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035016"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447054"
 ---
 # <a name="imageinfo-resource-type"></a>Тип ресурса Имажеинфо
+
+Пространство имен: Microsoft. Graph
 
 Сложный тип для представления свойства " **атрибуты** " в части [висуалинфо](../resources/projectrome-visualinfo.md) объекта [Activity](../resources/projectrome-activity.md) .
 
@@ -21,8 +23,8 @@ ms.locfileid: "36035016"
 |Имя | Тип | Описание|
 |:----|:-----|:-----------|
 |iconUrl | String | Необязательно URI, указывающий на значок, представляющий приложение, используемое для создания действия.|
-|Алтернатетекст | String | Необязательно доступное для изображения содержимое с замещающим текстом|
-|Аддимажекуери | Boolean | Необязательно параметр, указывающий на то, что сервер может динамически отображать изображение в ответ на параметризация. Например, изображение с высокой контрастностью|
+|алтернатетекст | String | Необязательно доступное для изображения содержимое с замещающим текстом|
+|аддимажекуери | Логический | Необязательно параметр, указывающий на то, что сервер может динамически отображать изображение в ответ на параметризация. Например, изображение с высокой контрастностью|
 
 ## <a name="json-representation"></a>Представление JSON
 

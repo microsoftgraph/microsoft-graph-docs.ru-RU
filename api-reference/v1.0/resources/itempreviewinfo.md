@@ -2,19 +2,21 @@
 author: kevinlam
 ms.author: kevinlam
 ms.date: 3/16/2018
-title: Итемпревиевинфо
+title: итемпревиевинфо
 localization_priority: Normal
 description: Ресурс Итемпревиевинфо содержит сведения о внедрении предварительного просмотра driveItem.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 71d660a71bce09f198a0feb9c3acbb9a69a23a5f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7d2050a38e77e0cfa7176ba63756e9b9d8dcd384
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036563"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447628"
 ---
 # <a name="itempreviewinfo-resource-type"></a>Тип ресурса Итемпревиевинфо
+
+Пространство имен: Microsoft. Graph
 
 Ресурс **итемпревиевинфо** содержит сведения о внедрении предварительного просмотра [driveItem](driveitem.md).
 
@@ -32,13 +34,13 @@ ms.locfileid: "36036563"
 
 | Имя           | Тип   | Описание
 |:---------------|:-------|:---------------------------------------------------
-| Команда         | string | URL-адрес, подходящие для внедрения с помощью HTTP GET (Iframes и т. д.)
-| Постурл        | string | URL-адрес, подходящий для внедрения с помощью HTTP POST (форма POST, JS и т. д.)
-| Параметры | string | Параметры POST для включения при использовании Постурл
+| Команда         | строка | URL-адрес, подходящие для внедрения с помощью HTTP GET (Iframes и т. д.)
+| постурл        | строка | URL-адрес, подходящий для внедрения с помощью HTTP POST (форма POST, JS и т. д.)
+| Параметры | строка | Параметры POST для включения при использовании Постурл
 
 В зависимости от текущего состояния поддержки для заданных параметров может возвращаться либо getUrl, Постурл, либо и то, и другое.
 
-i-параметры — это строка, `application/x-www-form-urlencoded`отформатированная как, и при выполнении POST для постурл Content-Type необходимо задать соответствующие параметры. Пример:
+i-параметры — это строка, `application/x-www-form-urlencoded`отформатированная как, и при выполнении POST для постурл Content-Type необходимо задать соответствующие параметры. Например:
 ```
 POST https://www.onedrive.com/embed_by_post
 Content-Type: application/x-www-form-urlencoded

@@ -6,14 +6,16 @@ description: Объект itemActionSet предоставляет сведен�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: a28a3380761e2d1914d7c088e5927fc5d3addd4b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 76778f959f52518ca4055a0da471bffeca5a73e7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036724"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447698"
 ---
 # <a name="itemactionset-resource-type"></a>Тип ресурса itemActionSet
+
+Пространство имен: Microsoft. Graph
 
 Ресурс **itemActionSet** предоставляет сведения о действиях, которые составляют [действие][itemActivity] для элемента.
 

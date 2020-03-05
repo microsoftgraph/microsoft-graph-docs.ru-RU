@@ -5,26 +5,28 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 96f6b40e563728da9bde6bddb62fd85faf816d1e
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 807ef6ad5352174685971e4d1539f525a6c1938b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37367282"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448174"
 ---
 # <a name="notificationtemplatebrandingoptions-enum-type"></a>тип перечисления Нотификатионтемплатебрандингоптионс
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+Пространство имен: Microsoft. Graph
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Параметры фирменной символики для шаблона сообщения. Фирменная символика определяется в консоли администрирования Intune.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Нет фирменной символики.|
-|инклудекомпанилого|1,1|Включите логотип компании.|
-|инклудекомпанинаме|2|Включите название компании.|
-|инклудеконтактинформатион|SP4|Включение контактной информации.|
+|нет|нуль|Нет фирменной символики.|
+|инклудекомпанилого|1 |Включите логотип компании.|
+|инклудекомпанинаме|2 |Включите название компании.|
+|инклудеконтактинформатион|4 |Включение контактной информации.|
 
 
 

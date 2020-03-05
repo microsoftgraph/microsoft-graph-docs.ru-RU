@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: be8d9a7d08334bd716cfcbf565225add790b65e3
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: bdc022f82f2e0dc7a1277d2674f215b58d521679
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939371"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447215"
 ---
 # <a name="permissionscope-resource-type"></a>Тип ресурса permissionScope
+
+Пространство имен: Microsoft. Graph
 
 Представляет область делегированного разрешения OAuth 2,0. Указанные делегированные области разрешений OAuth 2,0 могут запрашиваться клиентскими приложениями (через коллекцию **рекуиредресаурцеакцесс** для объекта [Application](application.md) ) при вызове приложения-ресурса. Свойство **oauth2Permissions** <!-- of the [servicePrincipal](serviceprincipal.md) entity and --> объекта [Application](application.md) — коллекция **permissionScope**.
 

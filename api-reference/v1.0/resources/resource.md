@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: cd8ea18047aa3f24343411f8dafd7a79357da87b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 03dde18905892538e4f883f2e90b6b0c36fda460
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034694"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446977"
 ---
 # <a name="onenoteresource-resource-type"></a>Тип ресурса Оненотересаурце
+
+Пространство имен: Microsoft. Graph
 
 Изображение или другой файловый ресурс на странице OneNote. 
 
@@ -70,14 +72,14 @@ GET ../onenote/pages/{id}/content
 | содержимое              | Поток          | Поток содержимого
 | contentUrl           | Строка (URL-адрес)    | URL-адрес для скачивания контента
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 
 ## <a name="methods"></a>Методы
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение двоичных данных ресурса](../api/resource-get.md) | Поток |Получение двоичных данных ресурса файла или изображения.|
+|[Получение двоичных данных ресурса](../api/resource-get.md) | Stream |Получение двоичных данных ресурса файла или изображения.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

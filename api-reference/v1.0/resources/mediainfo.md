@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 20134131dba64ad48effa1c95e5d81ab81102805
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 2ec3500c8b7040fafc70b04932ceb0e69ece6736
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913207"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447453"
 ---
 # <a name="mediainfo-resource-type"></a>Тип ресурса Медиаинфо
+
+Пространство имен: Microsoft. Graph
 
 Сведения о мультимедиа, используемые в действиях для запросов.
 

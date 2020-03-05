@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: c17b0f0e4127c570514dad0498f3f5384e4a69ab
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 891e4c154faf053fd72578210b3d8602422279e5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035282"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447131"
 ---
 # <a name="plannerchecklistitems-resource-type"></a>Тип ресурса Планнерчекклиститемс
+
+Пространство имен: Microsoft. Graph
 
 Ресурс **планнерчекклиститемколлектион** представляет коллекцию элементов контрольного списка в задаче. Это открытый тип. Он является частью объекта [сведений о задаче](plannertaskdetails.md) . Значение в параметре "свойство-значение" является объектом [чекклиститем](plannerchecklistitem.md) .
 
@@ -22,7 +24,7 @@ ms.locfileid: "36035282"
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже этот ресурс представлен в формате JSON.
+Ниже показано представление JSON ресурса.
 
 <!-- {
   "blockType": "resource",

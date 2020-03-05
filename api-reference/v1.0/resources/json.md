@@ -5,21 +5,23 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 53bb564b1cb41829bb18707a196263a1c3030cc9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c619b0acd0e07059c309670c6aa66502b4b10823
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036514"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447635"
 ---
 # <a name="json-resource-type"></a>Тип ресурса Json
+
+Пространство имен: Microsoft. Graph
 
 Представляет данные, возвращаемые в формате JSON.
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

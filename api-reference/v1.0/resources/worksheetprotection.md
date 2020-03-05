@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 9d3cbf4c03ff1e9938c7464d1501f261634ef347
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 805c3b53a60495ebd50a230a83e3ce1272cacf4d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033308"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446669"
 ---
 # <a name="worksheetprotection-resource-type"></a>Тип ресурса WorksheetProtection
+
+Пространство имен: Microsoft. Graph
 
 Представляет защиту объекта листа.
 
@@ -28,7 +30,7 @@ ms.locfileid: "36033308"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|options|[Воркбукворкшитпротектионоптионс](worksheetprotectionoptions.md)|Параметры защиты листа. Только для чтения.|
+|options|[воркбукворкшитпротектионоптионс](worksheetprotectionoptions.md)|Параметры защиты листа. Только для чтения.|
 |protected|boolean|Указывает, защищен ли лист.  Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON

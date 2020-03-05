@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0ef83d9645ac4277893ff8c769ecb6e092e3e84d
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 4bc2f315a2f339d2ef6fe0f4b76b335970b5a642
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913200"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447446"
 ---
 # <a name="mediaprompt-resource-type"></a>Тип ресурса Медиапромпт
+
+Пространство имен: Microsoft. Graph
 
 Этот тип ресурса содержит сведения о звуковом файле, который необходимо воспроизвести, и другие дополнительные параметры.
 

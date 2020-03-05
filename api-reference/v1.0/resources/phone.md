@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 6bdcc4331b14ad7a0e03404781014b66daf55b46
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2e20932285f7009ee470ba66a6a9cd78c50d65ec
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035478"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447187"
 ---
 # <a name="phone-resource-type"></a>Тип ресурса Phone
+
+Пространство имен: Microsoft. Graph
 
 Представляет номер телефона.
 
@@ -20,8 +22,8 @@ ms.locfileid: "36035478"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|число|string|Номер телефона.|
-|type|Фонетипе|Тип номера телефона. Возможные значения: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
+|число|строка|Номер телефона.|
+|type|фонетипе|Тип номера телефона. Возможные значения: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
 ## <a name="json-representation"></a>Представление JSON
 

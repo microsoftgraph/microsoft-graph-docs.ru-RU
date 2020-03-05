@@ -7,14 +7,16 @@ localization_priority: Normal
 description: Ресурс ItemReference предоставляет сведения, необходимые для обращения к ресурсу DriveItem через API.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f7d8f6d524b605b544785b0379a273d4c022c9c9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1c25b75dd422eb9d9fe515c425c9e71672bdecf8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036528"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447622"
 ---
 # <a name="itemreference-resource-type"></a>Тип ресурса ItemReference
+
+Пространство имен: Microsoft. Graph
 
 Ресурс **ItemReference** предоставляет сведения, необходимые для обращения к ресурсу [DriveItem](driveitem.md) через API.
 
@@ -47,9 +49,9 @@ ms.locfileid: "36036528"
 | driveId       | Строка            | Уникальный идентификатор экземпляра диска, содержащего элемент. Только для чтения.
 | driveType     | String            | Служит для идентификации типа для объекта drive. Сведения о возможных значениях см. в статье, посвященной ресурсу [drive][].
 | id            | String            | Уникальный идентификатор элемента на диске. Только для чтения.
-| name          | String            | Имя элемента, на который направлена ссылка. Только для чтения.
+| name          | Строка            | Имя элемента, на который направлена ссылка. Только для чтения.
 | path          | String            | Путь, по которому можно перейти к элементу. Только для чтения.
-| shareId       | Строка            | Уникальный идентификатор общего ресурса, доступ к которому можно получить с помощью API [Shares][].
+| shareId       | String            | Уникальный идентификатор общего ресурса, доступ к которому можно получить с помощью API [Shares][].
 | sharepointIds | [sharepointIds][] | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.
 
 [drive]: ../resources/drive.md

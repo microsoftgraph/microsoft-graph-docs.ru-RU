@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: 8a4c31b24fd22929fae3d4848c141efacb894ef7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dbac4aa73d9310ed78e88a2149ea0c64ddf3c640
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034414"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446914"
 ---
 # <a name="service-root"></a>Корневой каталог для обслуживания
+
+Пространство имен: Microsoft. Graph
 
 
 ## <a name="methods"></a>Методы
@@ -27,7 +29,7 @@ ms.locfileid: "36034414"
 |[Список объектов directoryRole](../api/directoryrole-list.md) | Коллекция объектов [directoryRole](directoryrole.md) |Получение коллекции объектов directoryRole. |
 |[Список объектов directoryRoleTemplate](../api/directoryroletemplate-list.md) | Коллекция объектов [directoryRoleTemplate](directoryroletemplate.md) |Получение коллекции объектов directoryRoleTemplate. |
 |[Список дисков](../api/drive-list.md) | Коллекция объектов [drive](drive.md) |Получение коллекции объектов drive. |
-|[Получение диска](../api/drive-get.md) | [drive](drive.md)  |Получение свойств объекта drive. |
+|[Получение объекта drive](../api/drive-get.md) | [drive](drive.md)  |Получение свойств объекта drive. |
 |[Создание группы](../api/group-post-groups.md) |[group](group.md)| Создание группы путем добавления в коллекцию групп.|
 |[Список групп](../api/group-list.md) | Коллекция объектов [group](group.md) |Получение коллекции объектов group. |
 |[Список организаций](../api/organization-get.md) | Коллекция объектов [organization](organization.md) |Получение коллекции объектов organization. |

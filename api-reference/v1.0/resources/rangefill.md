@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: b884312f8c3a9e8e02242023556713be62f8529f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 37bc96fdd0dad65a1f6b5b6bcec244ef96b915ac
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034911"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447026"
 ---
 # <a name="rangefill-resource-type"></a>Тип ресурса RangeFill
+
+Пространство имен: Microsoft. Graph
 
 Представляет фон объекта диапазона.
 
@@ -21,8 +23,8 @@ ms.locfileid: "36034911"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта RangeFill](../api/rangefill-get.md) | [Воркбукранжефилл](rangefill.md) |Чтение свойств и связей объекта rangeFill.|
-|[Обновление](../api/rangefill-update.md) | [Воркбукранжефилл](rangefill.md)   |Обновление объекта RangeFill. |
+|[Получение объекта RangeFill](../api/rangefill-get.md) | [воркбукранжефилл](rangefill.md) |Чтение свойств и связей объекта rangeFill.|
+|[Обновление](../api/rangefill-update.md) | [воркбукранжефилл](rangefill.md)   |Обновление объекта RangeFill. |
 |[Clear](../api/rangefill-clear.md)|Нет|Сбрасывает фон диапазона.|
 
 ## <a name="properties"></a>Свойства
@@ -30,7 +32,7 @@ ms.locfileid: "36034911"
 |:---------------|:--------|:----------|
 |color|string|HTML-код, представляющий цвет линии границы в виде #RRGGBB (например, FFA500) или в виде ключевого слова в HTML (например, orange).|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

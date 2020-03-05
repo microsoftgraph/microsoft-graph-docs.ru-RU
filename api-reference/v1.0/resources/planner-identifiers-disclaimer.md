@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: conceptualPageType
-ms.openlocfilehash: 75a0262b085b6649d7390a2a6196d0190cdefc5d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 32d00a6e93d09287087ee52bc024519828f7e822
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035450"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447173"
 ---
 # <a name="identifiers-in-planner"></a>Идентификаторы в планировщике
+
+Пространство имен: Microsoft. Graph
 
 Идентификаторы объектов в планировщике — это строковые значения, создаваемые службой. Значения: 28 символов, с учетом регистра. Если параметр передается как in, служба выполняет простую проверку формата идентификатора, при неудачной проверке формата вызывающие абоненты получат ошибочный запрос (400) об ошибке, указывающий на эту проблему. Получение этой ошибки указывает на ошибку в вызывающем приложении, например:
 

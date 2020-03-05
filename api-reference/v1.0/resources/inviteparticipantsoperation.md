@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: c49876cbb56e3630e357ad54a57682958151a9f7
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 54223a5b9e807dc45a9868b3251b8d8b1a0fcd72
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913718"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447691"
 ---
 # <a name="inviteparticipantsoperation-resource-type"></a>Тип ресурса ИнвитепартиЦипантсоператион
+
+Пространство имен: Microsoft. Graph
 
 Представляет состояние длительной операции с приглашением для участников, активируемым при вызове API участника-приглашения.
 

@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: bc74f435533a679263d144478334738f73c79f34
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 548d5bba0bf176c8cde4d9b46b28ed6e0520c579
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036129"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447397"
 ---
 # <a name="messageruleactions-resource-type"></a>Тип ресурса messageRuleActions
+
+Пространство имен: Microsoft. Graph
 
 
 Представляет набор действий, доступных для правила.
@@ -22,13 +24,13 @@ ms.locfileid: "36036129"
 |:---------------|:--------|:----------|
 | assignCategories | Коллекция String | Список категорий, которые необходимо назначить сообщению. |
 | copyToFolder | String | Идентификатор папки, в которую необходимо скопировать сообщение. |
-| delete | Boolean | Указывает, нужно ли перемещать сообщение в папку "Удаленные". |
+| delete | Логический | Указывает, нужно ли перемещать сообщение в папку "Удаленные". |
 | forwardAsAttachmentTo | Коллекция [recipient](recipient.md) | Электронные адреса получателей, которым необходимо переслать сообщение как вложение. |
 | forwardTo | Коллекция [recipient](recipient.md) | Электронные адреса получателей, которым необходимо переслать сообщение. |
-| markAsRead | Boolean | Указывает, необходимо ли отмечать сообщение как прочтенное. |
+| markAsRead | Логический | Указывает, необходимо ли отмечать сообщение как прочтенное. |
 | markImportance | importance | Задает важность сообщения. Допустимые значения: `low`, `normal`, `high`. |
 | moveToFolder |  String| Идентификатор папки, в которую сообщение будет перемещено. |
-| permanentDelete | Boolean | Указывает, нужно ли окончательно удалять сообщение без сохранения в папке "Удаленные". |
+| permanentDelete | Логический | Указывает, нужно ли окончательно удалять сообщение без сохранения в папке "Удаленные". |
 | redirectTo | Коллекция [recipient](recipient.md) | Адреса электронной почты, на которые необходимо перенаправить сообщение. |
 | stopProcessingRules | Boolean | Указывает, должны ли обрабатываться последующие правила. |
 

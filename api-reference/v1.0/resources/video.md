@@ -7,14 +7,16 @@ localization_priority: Normal
 description: Ресурс Video — это единая структура, объединяющая элементы данных, связанные с видео.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 24af35fff4e867caa8e7052c821cb44d1f2c3755
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2982dbad8f1e06a2f1288bd499c88c77a4ef2fda
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033434"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446767"
 ---
 # <a name="video-resource-type"></a>Тип ресурса video
+
+Пространство имен: Microsoft. Graph
 
 Ресурс **Video** — это единая структура, объединяющая элементы данных, связанные с видео.
 
@@ -51,7 +53,7 @@ ms.locfileid: "36033434"
 |:--------------------------|:-------|:----------------------------------------
 | **audioBitsPerSample**    | Int32  | Количество разрядов звука на выборку.
 | **audioChannels**         | Int32  | Количество звуковых каналов.
-| **audioFormat**           | string | Название формата аудио (AAC, MP3, и т. д.).
+| **audioFormat**           | строка | Название формата аудио (AAC, MP3, и т. д.).
 | **audioSamplesPerSecond** | Int32  | Количество выборок звука в секунду.
 | **bitrate**               | Int32  | Скорость видео в битах в секунду.
 | **duration**              | Int64  | Длительность файла в миллисекундах.

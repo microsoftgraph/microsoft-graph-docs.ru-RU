@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: fdb99f770e719d05ef097820ff5fff56b7f0a74d
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 848e7aba02627042603e4240694fc7f267ef903e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37367968"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448104"
 ---
 # <a name="devicemanagementexchangeconnectortype-enum-type"></a>тип перечисления Девицеманажементексчанжеконнектортипе
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+Пространство имен: Microsoft. Graph
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Тип соединителя Exchange.
 
@@ -22,9 +24,9 @@ ms.locfileid: "37367968"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |onPremises|нуль|Подключается к локальной среде Exchange.|
-|хост|1,1|Подключается к среде Exchange с несколькими клиентами Office 365|
-|сервицетосервице|2|Служба Intune подключается напрямую к среде Exchange с несколькими клиентами Office 365|
-|уполномочен|4|Подключается к выделенной среде Exchange O365.|
+|хост|1 |Подключается к среде Exchange с несколькими клиентами Office 365|
+|сервицетосервице|2 |Служба Intune подключается напрямую к среде Exchange с несколькими клиентами Office 365|
+|уполномочен|3 |Подключается к выделенной среде Exchange O365.|
 
 
 

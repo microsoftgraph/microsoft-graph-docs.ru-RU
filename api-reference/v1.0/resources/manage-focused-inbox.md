@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: 9d1e0dc5e228036bd92863126da0478d6ebb90ac
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e9debdbb7e2c44276b6af82fa37cb5b33ab89c70
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036192"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447467"
 ---
 # <a name="manage-focused-inbox"></a>Управление сортировкой почты
+
+Пространство имен: Microsoft. Graph
 
 Сортировка почты позволяет просматривать важные сообщения на вкладке `Focused` папки "Входящие", а остальные входящие сообщения — на вкладке `Other`. Система классификации изначально упорядочивает сообщения в папке "Входящие" стандартным способом. По мере использования системы вы можете исправлять ее поведение и обучать ее с помощью пользовательского интерфейса или программного кода. Чем больше вы используете систему, тем лучше она будет определять важные входящие сообщения.
 

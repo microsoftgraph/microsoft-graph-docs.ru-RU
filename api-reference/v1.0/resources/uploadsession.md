@@ -7,14 +7,16 @@ localization_priority: Normal
 description: Ресурс UploadSession предоставляет сведения о том, как отправлять большие файлы в библиотеки документов OneDrive, OneDrive для бизнеса или SharePoint.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 49453d730e1195c68b1c6245496e9c5530aba720
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3537a59da65499e67283d8a0640e5392c65edce1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033546"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446788"
 ---
 # <a name="uploadsession-resource"></a>Ресурс UploadSession
+
+Пространство имен: Microsoft. Graph
 
 Ресурс **UploadSession** содержит сведения о способе отправки больших файлов в OneDrive, OneDrive для бизнеса или в библиотеки документов SharePoint.
 

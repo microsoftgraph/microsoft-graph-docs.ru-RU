@@ -7,14 +7,16 @@ localization_priority: Normal
 description: Ресурс SharingInvitation группирует элементы данных, связанные с приглашением, в единую структуру.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 011402b40b601642a048b91e3b3f66de0792aaf2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5e1b5434f025c48f1eea08d31a00b4bc5fc9d39f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034246"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446879"
 ---
 # <a name="sharinginvitation-resource-type"></a>Тип ресурса SharingInvitation
+
+Пространство имен: Microsoft. Graph
 
 Ресурс **SharingInvitation** группирует элементы данных, связанные с приглашением, в единую структуру.
 

@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e355a947957eefa0a8f21e9429cee3d0e0c20912
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: ba8e8cded8ac4a245a556de78fc2ab99443eab3e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37360659"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448244"
 ---
 # <a name="windowsinformationprotectionenforcementlevel-enum-type"></a>тип перечисления Виндовсинформатионпротектионенфорцементлевел
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+Пространство имен: Microsoft. Graph
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Возможные значения для уровней принудительной защиты НЗП
 
@@ -22,9 +24,9 @@ ms.locfileid: "37360659"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Защита от незащищенных|нуль|Защита не включена|
-|енкриптандаудитонли|1,1|Только шифрование и аудит|
-|енкриптаудитандпромпт|2|Шифрование, аудит и запрос|
-|енкриптаудитандблокк|4|Шифрование, аудит и блокировка|
+|енкриптандаудитонли|1 |Только шифрование и аудит|
+|енкриптаудитандпромпт|2 |Шифрование, аудит и запрос|
+|енкриптаудитандблокк|3 |Шифрование, аудит и блокировка|
 
 
 

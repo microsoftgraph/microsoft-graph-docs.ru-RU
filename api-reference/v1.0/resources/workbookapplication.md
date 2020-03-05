@@ -5,14 +5,16 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: a4f7d2cd6887598ac0a60522dc5bee1101dff9c9
-ms.sourcegitcommit: 2f3e7325b5bc1f0cdc12a8acdf34d31cea3b8bdb
+ms.openlocfilehash: d4b2833910d22696ee95ed707469f6da2068453c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38023250"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446725"
 ---
 # <a name="workbookapplication-resource-type"></a>Тип ресурса Воркбукаппликатион
+
+Пространство имен: Microsoft. Graph
 
 Представляет приложение Excel, которое управляет книгой.
 
@@ -29,11 +31,11 @@ ms.locfileid: "38023250"
 |:---------------|:--------|:----------|
 |калкулатионмоде|string|Возвращает режим вычисления, который используется в книге. Возможные значения: `Automatic`, `AutomaticExceptTables`, `Manual`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 <!-- {
   "blockType": "resource",

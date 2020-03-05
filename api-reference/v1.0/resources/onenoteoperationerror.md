@@ -5,14 +5,16 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 95eda3299b62a1ebe49b2520206265cc14c3ac57
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3bb434db18361c9c918189744a9197ae6a6df8e2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035772"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447306"
 ---
 # <a name="onenoteoperationerror-resource-type"></a>Тип ресурса Оненотеоператионеррор
+
+Пространство имен: Microsoft. Graph
 
 Ошибка при выполнении операции с OneNote.
 
@@ -38,7 +40,7 @@ ms.locfileid: "36035772"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|code|string|Код ошибки.|
+|code|строка|Код ошибки.|
 |message|string|Сообщение об ошибке.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

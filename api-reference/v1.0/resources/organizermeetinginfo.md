@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: e7750e282801a938fd42c01717cc7bbbedcf95a3
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 89f487b5edcf1b176a67d10b0ae45d8dd62c46d3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913683"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447264"
 ---
 # <a name="organizermeetinginfo-resource-type"></a>Тип ресурса Организермитингинфо
+
+Пространство имен: Microsoft. Graph
 
 Содержит сведения об организаторе собрания. 
 

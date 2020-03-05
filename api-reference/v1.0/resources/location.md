@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: bb975753e838d273c8d516472f1963d92413a367
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 51c04110cf41a6934658c82d7436854adfc9c45f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036431"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447544"
 ---
 # <a name="location-resource-type"></a>Тип ресурса Location
+
+Пространство имен: Microsoft. Graph
 
 Представляет сведения о месте проведения [мероприятия](event.md).
 
@@ -35,7 +37,7 @@ ms.locfileid: "36036431"
 | locationUri | String | Необязательный URI, представляющий местоположение. |
 | locationType | locationType | Тип расположения. Возможные `default`значения:, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`,. `postalAddress` Только для чтения.|
 | uniqueId | String | Только для внутреннего использования.|
-| uniqueIdType | Локатионуникуеидтипе | Только для внутреннего использования. |
+| uniqueIdType | локатионуникуеидтипе | Только для внутреннего использования. |
 
 ## <a name="json-representation"></a>Представление JSON
 
