@@ -5,14 +5,16 @@ localization_priority: Priority
 author: pranoychaudhuri
 ms.prod: reports
 doc_type: conceptualPageType
-ms.openlocfilehash: f88f940541bee75a6898ac638fe80e44fc368320
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3c7b932bf7f0747ff6b5050f7e19accf871c1b1a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036297"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447516"
 ---
 # <a name="mailbox-usage-reports"></a>Отчеты об использовании почтовых ящиков
+
+Пространство имен: microsoft.graph
 
 Эти отчеты позволяют получить сведения о пользователях почтовых ящиков и уровне их активности, основанном на количестве отправленных и полученных писем. Вы также можете посмотреть, сколько места занимает каждый почтовый ящик и сколько почтовых ящиков скоро превысят квоту хранилища.
 

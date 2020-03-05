@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph. Сведения о последних обновлениях см. в журнале изменений Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 4166056959d9ca01edd475878f8ed5444cea7cea
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: 09a53d4103436eab8314c19420ecb9b15cd981a5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39637145"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42418148"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -164,9 +164,8 @@ GET /me/calendars/{id}/events
 
 В бета-версии предлагается обходное решение, позволяющее использовать свойство **onlineMeetingProvider** ресурса [event](/graph/api/resources/event?view=graph-rest-beta) с целью убедиться, что поставщиком является Microsoft Teams. С помощью свойства **onlineMeeting** ресурса **event** вы можете получить доступ к объекту **joinUrl**.
 
-## <a name="cloud-communications-preview"></a>Коммуникации из облака (предварительная версия)
+## <a name="cloud-communications"></a>Облачные коммуникации 
 
-> **Примечание.** В настоящее время коммуникации из облака находятся в предварительной версии и доступны только в конечной точке бета-версии Microsoft Graph.
 Клиент Microsoft Teams не отображает меню **Просмотреть сведения о собрании** для собраний канала, созданных с помощью API коммуникаций из облака.
 
 ## <a name="contacts"></a>Контакты
@@ -217,6 +216,9 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 ```
 
 ## <a name="messages"></a>Сообщения
+
+### <a name="attaching-large-files-to-messages"></a>Вложение больших файлов в сообщения
+Приложение с делегированными разрешениями возвращает `HTTP 403 Forbidden` при попытке [вложить большие файлы](outlook-large-attachments.md) в сообщение Outlook в общем или делегированном почтовом ящике. С делегированными разрешениями [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-beta) выполняется успешно только в том случае, если сообщение находится в почтовом ящике вошедшего пользователя.
 
 ### <a name="the-comment-parameter-for-creating-a-draft"></a>Параметр comment для создания черновика
 

@@ -4,12 +4,12 @@ description: В зависимости от размера файла можно
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: f6087de7146dd7b395bbe122097a41bd221c1da5
-ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
+ms.openlocfilehash: 5f6f54adf38c0f2827b587e6646df4cb3549a204
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "42229754"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448573"
 ---
 # <a name="attach-large-files-to-outlook-messages-as-attachments-preview"></a>Прикрепление крупных файлов к сообщениям Outlook в виде вложений (предварительная версия)
 
@@ -21,6 +21,9 @@ ms.locfileid: "42229754"
 Чтобы вложить в сообщение несколько файлов, выберите способ для каждого файла на основе их размеров и вложите их по отдельности.
 
 В этой статье используется пример для иллюстрации второго подхода. В этом примере создается и используется сеанс отправки, чтобы добавить большой файл (размером свыше 3 МБ) к определенному сообщению в качестве вложения. После успешной отправки всего файла возвращается URL-адрес с ИД вложения, с которыми можно выполнять другие операции, например получать метаданные о вложенном файле.
+
+> [!IMPORTANT] 
+> Обратите внимание на [известную проблему](known-issues.md#attaching-large-files-to-messages) при вложении больших файлов в сообщение в общем или делегированном почтовом ящике.
 
 ## <a name="step-1-create-an-upload-session"></a>Шаг 1. Создайте сеанс отправки.
 

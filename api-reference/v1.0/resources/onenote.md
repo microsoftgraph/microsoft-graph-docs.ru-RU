@@ -5,14 +5,16 @@ author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 0311e514c7d15e8b5fafcc94beecaecdcc6d9d49
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 207d7ce3f5cf572d3c32de23882e04a8cc9dd54d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035856"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447327"
 ---
 # <a name="onenote-resource-type"></a>Тип ресурса onenote
+
+Пространство имен: microsoft.graph
 
 Точка входа для ресурсов OneNote.
 
@@ -48,7 +50,7 @@ https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections |
 
 
 ## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |notebooks|Коллекция [Notebook](notebook.md)|Коллекция записных книжек OneNote, принадлежащих пользователю или группе. Только для чтения. Допускается значение null.|
 |operations|Коллекция [OnenoteOperation](onenoteoperation.md) |Состояние операций OneNote. Получение коллекции операций не поддерживается, но можно получить состояние длительных операций, если в отклике возвращается заголовок `Operation-Location`. Только для чтения. Допускается значение null.|

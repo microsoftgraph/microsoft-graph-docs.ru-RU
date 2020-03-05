@@ -3,12 +3,12 @@ title: Доступ к данным и методам с помощью Microsof
 description: Помимо чтения и записи данных с помощью API Microsoft Graph, вы можете использовать шаблоны запросов для просмотра ресурсов в Microsoft Graph. Документ метаданных поможет вам разобраться в модели данных ресурсов и отношений в Microsoft Graph.
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: cf71da309cd123895dfb0666c8fe3e60e3f65e23
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: c00179e5ea39f5be40308e400774bb1316ff8c3a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969512"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448538"
 ---
 # <a name="access-data-and-methods-by-navigating-microsoft-graph"></a>Доступ к данным и методам с помощью Microsoft Graph
 
@@ -29,7 +29,9 @@ ms.locfileid: "37969512"
     https://graph.microsoft.com/beta/$metadata
 ```
 
-Метаданные позволяют разобраться в модели данных Microsoft Graph, в том числе типах объектов, сложных типах и перечислениях, из которых состоят ресурсы, представленные в пакетах запросов и откликов.
+Метаданные позволяют разобраться в модели данных Microsoft Graph, в том числе типах объектов, сложных типах и перечислениях, из которых состоят ресурсы, представленные в пакетах запросов и откликов. 
+
+Метаданные также поддерживают определение типов, методов и перечислений в соответствующих пространствах имен OData. Большая часть API Microsoft Graph определена в пространстве имен OData, `microsoft.graph`.
 
 С помощью метаданных можно узнать об отношениях между объектами в Microsoft Graph и создать URL-адреса для перехода между ними.
 

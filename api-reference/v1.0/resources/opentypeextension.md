@@ -5,14 +5,16 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 51633d9d166d28033f49463176232c62aa557c59
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c066a0faad8662150689a2b811a871371793e36b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035748"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447292"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>Тип ресурсов openTypeExtension (открытые расширения)
+
+Пространство имен: microsoft.graph
 
 Открытые расширения (прежнее название — расширения данных Office 365) позволяют легко добавлять нетипизированные свойства непосредственно в ресурс в Microsoft Graph.
 

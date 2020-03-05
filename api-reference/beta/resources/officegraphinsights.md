@@ -5,14 +5,16 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 807cb786577b9c9ddd512d9dcce9a03517170f5c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 412e27360b9f9f7d7539dbc1ffa5c1f21f332239
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966519"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42522416"
 ---
 # <a name="officegraphinsights-resource-type"></a>Тип ресурса officeGraphInsights
+
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +30,7 @@ ms.locfileid: "35966519"
 
 ## <a name="relationships"></a>Связи
 
-| Отношение      | Тип          | Описание  |
+| Связь      | Тип          | Описание  |
 | ------------- |---------------| -------------|
 | trending      | Коллекция [trending](insights-trending.md)       | Вычисляемая связь, определяющая популярные документы. Популярные документы могут храниться в OneDrive или на сайтах SharePoint.   |
 | used      | Коллекция [usedInsight](insights-used.md)        | Вычисляемая связь, определяющая документы, просмотренные и измененные пользователем. Включает документы, используемые пользователем в OneDrive для бизнеса, SharePoint, открытые как вложения почты и вложенные ссылки из таких источников, как Box, DropBox и Google Диск.  |

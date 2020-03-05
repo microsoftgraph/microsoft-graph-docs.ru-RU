@@ -5,16 +5,16 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: conceptualPageType
-ms.openlocfilehash: 171f75d35812176202263659185bd4dca94e06de
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6159d830656ed898de1e91a4866c74f145cfa0a4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974201"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508026"
 ---
 # <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>Использование API Microsoft Bookings в Microsoft Graph
 
- [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
 Microsoft Bookings позволяет владельцам малого бизнеса управлять резервированиями и сведениями клиентов с минимальной настройкой. Владелец бизнеса можно создать одну или несколько компаний, каждая из которых предлагает набор услуг. Владелец может настроить сотрудников и указать услуги, оказываемые каждым из них. Клиент может зарезервировать встречу для определенной услуги в этой компании в сетевом или мобильном приложении. Приложение Bookings обеспечивает обновление времени встречи для компании, сотрудников и соответствующих клиентов.
 
@@ -29,7 +29,7 @@ Microsoft Bookings позволяет владельцам малого бизн
 
 Выполните указанные ниже действия перед первым резервированием встреч клиента с компанией. Убедитесь, что предоставлены подходящие [маркеры доступа](/graph/auth-overview) для соответствующих операций.
 
-1. Убедитесь, что у компании есть подписка на [Office 365 бизнес премиум](https://products.office.com/en-us/business/office-365-business-premium).
+1. Убедитесь, что у компании есть подписка на [Office 365 бизнес премиум](https://products.office.com/ru-RU/business/office-365-business-premium).
 2. Создайте новый объект **bookingBusiness**, отправив операцию POST в набор объектов. Как минимум, следует указать имя новой компании, отображаемое для клиентов:
 <!-- { "blockType": "ignored" } -->
 ```http

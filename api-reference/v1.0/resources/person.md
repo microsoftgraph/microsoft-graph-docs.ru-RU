@@ -5,14 +5,16 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 66c37327f329995a84a8017625f86fde989b4e3c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 27f0f5c27814ff09433cc68b82930878feb95963
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035548"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447208"
 ---
 # <a name="person-resource-type"></a>Тип ресурса person
+
+Пространство имен: microsoft.graph
 
 Агрегирование сведений о человеке из почты, контактов и социальных сетей. В качестве людей могут выступать локальные контакты, контакты из социальных сетей или каталога вашей организации, а также лица, с которыми пользователь недавно общался (например, по почте или в Skype).
 

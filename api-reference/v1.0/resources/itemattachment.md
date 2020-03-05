@@ -5,14 +5,16 @@ localization_priority: Priority
 ms.prod: outlook
 author: angelgolfer-ms
 doc_type: resourcePageType
-ms.openlocfilehash: 554a1cd2e0f6059cf9213f1f19d756349ef000fc
-ms.sourcegitcommit: 6deec57c0ab736260ee3599703bfd3f567ee6d82
+ms.openlocfilehash: c5c565e81ed9218d3d04f15585236b87a362d5e6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "37036363"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447642"
 ---
 # <a name="itemattachment-resource-type"></a>Тип ресурса itemAttachment
+
+Пространство имен: microsoft.graph
 
 Контакт, событие или сообщение, вложенное в [событие](../resources/event.md), [сообщение](../resources/message.md) или [запись](../resources/post.md) пользователя.  
 

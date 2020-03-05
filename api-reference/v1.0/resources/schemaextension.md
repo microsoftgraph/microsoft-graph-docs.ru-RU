@@ -5,14 +5,16 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 7c0bf49bc0de24cda47e309fdbfb1c4e75b42283
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 38bb2d34347f253d114d549b32d6db98c12aa831
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034617"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446956"
 ---
 # <a name="schemaextension-resource-type-schema-extensions"></a>Тип ресурса schemaExtension (расширения схемы)
+
+Пространство имен: microsoft.graph
 
 С помощью расширений схемы вы можете задать схему, которую необходимо расширить, и добавить строго типизированные пользовательские данные в тип ресурса. В расширенном ресурсе пользовательские данные имеют сложный тип. 
 

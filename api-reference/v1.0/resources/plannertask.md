@@ -5,14 +5,16 @@ localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 048b4af4bb227686651e680dd993f0e5ca22b8c5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7a5e5db3baf0ebf82597d796f4f1a8737f3d7ea9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035163"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447103"
 ---
 # <a name="plannertask-resource-type"></a>Тип ресурса plannerTask
+
+Пространство имен: microsoft.graph
 
 Ресурс **plannerTask** представляет задачу планировщика в Office 365. Задача планировщика содержится в [плане](plannerplan.md) и может быть назначена [сегменту](plannerbucket.md) в плане. Каждый объект задачи имеет объект [details](plannertaskdetails.md), который может содержать дополнительные сведения о задаче. Дополнительные сведения об отношениях между группой, планом и задачей см. в [этом обзоре](planner-overview.md).
 
@@ -51,7 +53,7 @@ ms.locfileid: "36035163"
 |title|Строка|Название задачи.|
 
 ## <a name="relationships"></a>Связи
-| Отношение | Тип   |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |assignedToTaskBoardFormat|[plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md);| Только для чтения. Допускает значение null. Используется для правильного отображения задачи на доске задач при сортировке по свойству assignedTo.|
 |bucketTaskBoardFormat|[plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md);| Только для чтения. Допускает значение null. Используется для правильного отображения задачи на доске задач при сортировке по сегменту.|

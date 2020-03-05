@@ -7,14 +7,16 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Ресурс list представляет список на сайте.
 doc_type: resourcePageType
-ms.openlocfilehash: db6fceb1f7806b5356a4e75f1e4fb6a247bd5b00
-ms.sourcegitcommit: f51ba08d604d93f5f6af9ee8979cbf76baa285ce
+ms.openlocfilehash: af970267f4aebcac986659324a30238a8510c010
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42108485"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447586"
 ---
 # <a name="list-resource"></a>Ресурс List
+
+Пространство имен: microsoft.graph
 
 Ресурс **list** представляет список в ресурсе [site][].
 Этот ресурс содержит высокоуровневые свойства списка, включая определения шаблонов и полей.

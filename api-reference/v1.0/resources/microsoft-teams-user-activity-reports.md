@@ -5,14 +5,16 @@ localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 8e8dff7029614f509eaa52d0af27601772c2f9ff
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: adde0eecbfe468b5eac45bf0c0d496d430947284
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036087"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447390"
 ---
 # <a name="microsoft-teams-user-activity-reports"></a>Отчеты о действиях пользователей Microsoft Teams
+
+Пространство имен: microsoft.graph
 
 С помощью отчетов о действиях пользователей Microsoft Teams можно анализировать действия пользователей Microsoft Teams в организации.
 

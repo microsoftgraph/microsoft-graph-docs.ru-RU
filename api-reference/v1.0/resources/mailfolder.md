@@ -5,14 +5,16 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 7e829929df46208ee321f56ae2d9f0144c320d4a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0de32560e154eaa732e596040525025ad0676926
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036332"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448020"
 ---
 # <a name="mailfolder-resource-type"></a>Тип ресурса mailFolder
+
+Пространство имен: microsoft.graph
 
 Почтовая папка в почтовом ящике пользователя, например "Входящие" или "Черновики". Почтовые папки могут содержать сообщения, другие элементы Outlook и дочерние почтовые папки.
 
@@ -93,7 +95,7 @@ https://outlook.office.com/api/v1.0/me/folders/inbox/messages?$count=true&$filte
 
 ## <a name="relationships"></a>Отношения
 
-| Отношение | Тип | Описание |
+| Связь | Тип | Описание |
 |:-------------|:-----|:------------|
 |childFolders|Коллекция объектов [MailFolder](mailfolder.md)|Коллекция дочерних папок в элементе mailFolder.|
 |messageRules | Коллекция [messageRule](messagerule.md) | Коллекция правил, которые применяются к папке пользователя "Входящие". |

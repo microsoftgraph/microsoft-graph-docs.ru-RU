@@ -5,14 +5,16 @@ localization_priority: Priority
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ae916f3723ed59bc317e3a59507da81841d0c563
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d811b9d3cf785e4beaca98b4291677955ed8d1ec
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035597"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447222"
 ---
 # <a name="passwordprofile-resource-type"></a>Тип ресурса passwordProfile
+
+Пространство имен: microsoft.graph
 
 Содержит профиль пароля, связанный с пользователем. Свойство **passwordProfile** объекта [user](user.md) является объектом **passwordProfile**.
 
