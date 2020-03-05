@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a18582a826ecf44afc1db137af98294f3637292c
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 7030fe6fcc821e8c20f3ec4c27809217322e7b0b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39943405"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42465704"
 ---
 # <a name="update-managementconditionstatement"></a>Обновление Манажементкондитионстатемент
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -42,17 +44,17 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор оператора условия управления. Созданное системой значение, назначаемое при создании.|
+|id|String|Уникальный идентификатор оператора условия управления. Созданное системой значение, назначаемое при создании.|
 |displayName|Строка|Имя, определенное администратором оператора условия управления.|
 |description|String|Заданное администратором описание оператора условия управления.|
 |createdDateTime|DateTimeOffset|Время создания оператора условия управления. Созданная сторона службы.|
@@ -64,7 +66,7 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

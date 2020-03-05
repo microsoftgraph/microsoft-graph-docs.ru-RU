@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a9e707ea17ed090741244487c1bb8d33a1b60b99
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 8bfb9d75b373867dcefa4625ab2cc46e9a5c9e0d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39943230"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42465284"
 ---
 # <a name="create-grouppolicyconfiguration"></a>Создание Граупполициконфигуратион
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -41,10 +43,10 @@ POST /deviceManagement/groupPolicyConfigurations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Граупполициконфигуратион в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Граупполициконфигуратион.
@@ -54,13 +56,13 @@ POST /deviceManagement/groupPolicyConfigurations
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |displayName|Строка|Предоставленное пользователем имя объекта ресурса.|
 |description|String|Предоставленное пользователем описание объекта ресурса.|
-|roleScopeTagIds|Коллекция строк|Список тегов области для конфигурации.|
+|roleScopeTagIds|Коллекция String|Список тегов области для конфигурации.|
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [граупполициконфигуратион](../resources/intune-grouppolicy-grouppolicyconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

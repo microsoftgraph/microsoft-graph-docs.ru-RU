@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b2b18cdc101701d5f12f7536871a9a1a3d456597
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 954218aa1493bac9a414142c2c9b8782499ccadc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39943447"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42465809"
 ---
 # <a name="create-managementconditionstatement"></a>Создание Манажементкондитионстатемент
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -42,17 +44,17 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Манажементкондитионстатемент в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Манажементкондитионстатемент.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор оператора условия управления. Созданное системой значение, назначаемое при создании.|
+|id|String|Уникальный идентификатор оператора условия управления. Созданное системой значение, назначаемое при создании.|
 |displayName|Строка|Имя, определенное администратором оператора условия управления.|
 |description|String|Заданное администратором описание оператора условия управления.|
 |createdDateTime|DateTimeOffset|Время создания оператора условия управления. Созданная сторона службы.|
@@ -64,7 +66,7 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

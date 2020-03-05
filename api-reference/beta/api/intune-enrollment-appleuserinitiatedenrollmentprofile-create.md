@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 49f77a4533cd350b2b685bae6fe542132fffe36e
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 51ffbfb8b8335ec5954604c29847cbe6bc98b088
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39944121"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42467489"
 ---
 # <a name="create-appleuserinitiatedenrollmentprofile"></a>Создание Апплеусеринитиатеденроллментпрофиле
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -41,10 +43,10 @@ POST /deviceManagement/appleUserInitiatedEnrollmentProfiles
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Апплеусеринитиатеденроллментпрофиле в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Апплеусеринитиатеденроллментпрофиле.
@@ -63,7 +65,7 @@ POST /deviceManagement/appleUserInitiatedEnrollmentProfiles
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [апплеусеринитиатеденроллментпрофиле](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

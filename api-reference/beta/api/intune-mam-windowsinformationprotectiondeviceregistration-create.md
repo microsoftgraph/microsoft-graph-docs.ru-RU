@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bbe37b0ed8bfb8d0f4b12c0b05d69ea6a13834fe
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 3fd6c029efc52acc594c51f37700388231c08260
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39942144"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42462973"
 ---
 # <a name="create-windowsinformationprotectiondeviceregistration"></a>Создание Виндовсинформатионпротектиондевицерегистратион
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -41,10 +43,10 @@ POST /deviceAppManagement/windowsInformationProtectionDeviceRegistrations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Виндовсинформатионпротектиондевицерегистратион в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Виндовсинформатионпротектиондевицерегистратион.
@@ -56,12 +58,12 @@ POST /deviceAppManagement/windowsInformationProtectionDeviceRegistrations
 |deviceRegistrationId|Строка|Идентификатор устройства для записи регистрации этого устройства.|
 |deviceName|String|Имя устройства.|
 |deviceType|String|Тип устройства, например Windows для портативного компьютера Windows и Windows Phone.|
-|девицемакаддресс|Строка|Mac-адрес устройства.|
+|девицемакаддресс|String|Mac-адрес устройства.|
 |ластчеккиндатетиме|DateTimeOffset|Время последнего возврата устройства.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [виндовсинформатионпротектиондевицерегистратион](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
