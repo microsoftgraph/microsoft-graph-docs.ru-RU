@@ -5,31 +5,33 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ee1a1807d95239cc6e7d3c49d8914fa93ce41fae
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: cc58ccd51909f70a0ebd9d9b92adbe72782aa2cd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39942579"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42464031"
 ---
-# <a name="create-grouppolicypresentationvaluemultitext"></a><span data-ttu-id="2f26d-103">Создание Граупполиципресентатионвалуемултитекст</span><span class="sxs-lookup"><span data-stu-id="2f26d-103">Create groupPolicyPresentationValueMultiText</span></span>
+# <a name="create-grouppolicypresentationvaluemultitext"></a><span data-ttu-id="46f7d-103">Создание Граупполиципресентатионвалуемултитекст</span><span class="sxs-lookup"><span data-stu-id="46f7d-103">Create groupPolicyPresentationValueMultiText</span></span>
 
-> <span data-ttu-id="2f26d-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2f26d-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="46f7d-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="46f7d-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="2f26d-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="2f26d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="46f7d-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="46f7d-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="2f26d-106">Создание нового объекта [граупполиципресентатионвалуемултитекст](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md) .</span><span class="sxs-lookup"><span data-stu-id="2f26d-106">Create a new [groupPolicyPresentationValueMultiText](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md) object.</span></span>
+> <span data-ttu-id="46f7d-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="46f7d-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="2f26d-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="2f26d-107">Prerequisites</span></span>
-<span data-ttu-id="2f26d-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2f26d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="46f7d-107">Создание нового объекта [граупполиципресентатионвалуемултитекст](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md) .</span><span class="sxs-lookup"><span data-stu-id="46f7d-107">Create a new [groupPolicyPresentationValueMultiText](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md) object.</span></span>
 
-|<span data-ttu-id="2f26d-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2f26d-110">Permission type</span></span>|<span data-ttu-id="2f26d-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="2f26d-111">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="46f7d-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="46f7d-108">Prerequisites</span></span>
+<span data-ttu-id="46f7d-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="46f7d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="46f7d-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="46f7d-111">Permission type</span></span>|<span data-ttu-id="46f7d-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="46f7d-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="2f26d-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2f26d-112">Delegated (work or school account)</span></span>|<span data-ttu-id="2f26d-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2f26d-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="2f26d-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2f26d-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2f26d-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2f26d-115">Not supported.</span></span>|
-|<span data-ttu-id="2f26d-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2f26d-116">Application</span></span>|<span data-ttu-id="2f26d-117">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2f26d-117">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="46f7d-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="46f7d-113">Delegated (work or school account)</span></span>|<span data-ttu-id="46f7d-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="46f7d-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="46f7d-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="46f7d-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="46f7d-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="46f7d-116">Not supported.</span></span>|
+|<span data-ttu-id="46f7d-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="46f7d-117">Application</span></span>|<span data-ttu-id="46f7d-118">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="46f7d-118">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="2f26d-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2f26d-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="46f7d-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="46f7d-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,33 +40,33 @@ ms.locfileid: "39942579"
 POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2f26d-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="2f26d-119">Request headers</span></span>
-|<span data-ttu-id="2f26d-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="2f26d-120">Header</span></span>|<span data-ttu-id="2f26d-121">Значение</span><span class="sxs-lookup"><span data-stu-id="2f26d-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="46f7d-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="46f7d-120">Request headers</span></span>
+|<span data-ttu-id="46f7d-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="46f7d-121">Header</span></span>|<span data-ttu-id="46f7d-122">Значение</span><span class="sxs-lookup"><span data-stu-id="46f7d-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="2f26d-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="2f26d-122">Authorization</span></span>|<span data-ttu-id="2f26d-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2f26d-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="2f26d-124">Accept</span><span class="sxs-lookup"><span data-stu-id="2f26d-124">Accept</span></span>|<span data-ttu-id="2f26d-125">application/json</span><span class="sxs-lookup"><span data-stu-id="2f26d-125">application/json</span></span>|
+|<span data-ttu-id="46f7d-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="46f7d-123">Authorization</span></span>|<span data-ttu-id="46f7d-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="46f7d-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="46f7d-125">Accept</span><span class="sxs-lookup"><span data-stu-id="46f7d-125">Accept</span></span>|<span data-ttu-id="46f7d-126">application/json</span><span class="sxs-lookup"><span data-stu-id="46f7d-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="2f26d-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="2f26d-126">Request body</span></span>
-<span data-ttu-id="2f26d-127">В тексте запроса добавьте представление объекта Граупполиципресентатионвалуемултитекст в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2f26d-127">In the request body, supply a JSON representation for the groupPolicyPresentationValueMultiText object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="46f7d-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="46f7d-127">Request body</span></span>
+<span data-ttu-id="46f7d-128">В тексте запроса добавьте представление объекта Граупполиципресентатионвалуемултитекст в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="46f7d-128">In the request body, supply a JSON representation for the groupPolicyPresentationValueMultiText object.</span></span>
 
-<span data-ttu-id="2f26d-128">В следующей таблице приведены свойства, необходимые при создании Граупполиципресентатионвалуемултитекст.</span><span class="sxs-lookup"><span data-stu-id="2f26d-128">The following table shows the properties that are required when you create the groupPolicyPresentationValueMultiText.</span></span>
+<span data-ttu-id="46f7d-129">В следующей таблице приведены свойства, необходимые при создании Граупполиципресентатионвалуемултитекст.</span><span class="sxs-lookup"><span data-stu-id="46f7d-129">The following table shows the properties that are required when you create the groupPolicyPresentationValueMultiText.</span></span>
 
-|<span data-ttu-id="2f26d-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="2f26d-129">Property</span></span>|<span data-ttu-id="2f26d-130">Тип</span><span class="sxs-lookup"><span data-stu-id="2f26d-130">Type</span></span>|<span data-ttu-id="2f26d-131">Описание</span><span class="sxs-lookup"><span data-stu-id="2f26d-131">Description</span></span>|
+|<span data-ttu-id="46f7d-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="46f7d-130">Property</span></span>|<span data-ttu-id="46f7d-131">Тип</span><span class="sxs-lookup"><span data-stu-id="46f7d-131">Type</span></span>|<span data-ttu-id="46f7d-132">Описание</span><span class="sxs-lookup"><span data-stu-id="46f7d-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="2f26d-132">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="2f26d-132">lastModifiedDateTime</span></span>|<span data-ttu-id="2f26d-133">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="2f26d-133">DateTimeOffset</span></span>|<span data-ttu-id="2f26d-134">Дата и время последнего изменения объекта.</span><span class="sxs-lookup"><span data-stu-id="2f26d-134">The date and time the object was last modified.</span></span> <span data-ttu-id="2f26d-135">Наследуется от [граупполиципресентатионвалуе](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span><span class="sxs-lookup"><span data-stu-id="2f26d-135">Inherited from [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span></span>|
-|<span data-ttu-id="2f26d-136">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="2f26d-136">createdDateTime</span></span>|<span data-ttu-id="2f26d-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="2f26d-137">DateTimeOffset</span></span>|<span data-ttu-id="2f26d-138">Дата и время создания объекта.</span><span class="sxs-lookup"><span data-stu-id="2f26d-138">The date and time the object was created.</span></span> <span data-ttu-id="2f26d-139">Наследуется от [граупполиципресентатионвалуе](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span><span class="sxs-lookup"><span data-stu-id="2f26d-139">Inherited from [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span></span>|
-|<span data-ttu-id="2f26d-140">id</span><span class="sxs-lookup"><span data-stu-id="2f26d-140">id</span></span>|<span data-ttu-id="2f26d-141">Строка</span><span class="sxs-lookup"><span data-stu-id="2f26d-141">String</span></span>|<span data-ttu-id="2f26d-142">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="2f26d-142">Key of the entity.</span></span> <span data-ttu-id="2f26d-143">Наследуется от [граупполиципресентатионвалуе](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span><span class="sxs-lookup"><span data-stu-id="2f26d-143">Inherited from [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span></span>|
-|<span data-ttu-id="2f26d-144">values</span><span class="sxs-lookup"><span data-stu-id="2f26d-144">values</span></span>|<span data-ttu-id="2f26d-145">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="2f26d-145">String collection</span></span>|<span data-ttu-id="2f26d-146">Коллекция непустых строк для связанной презентации.</span><span class="sxs-lookup"><span data-stu-id="2f26d-146">A collection of non-empty strings for the associated presentation.</span></span>|
+|<span data-ttu-id="46f7d-133">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="46f7d-133">lastModifiedDateTime</span></span>|<span data-ttu-id="46f7d-134">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="46f7d-134">DateTimeOffset</span></span>|<span data-ttu-id="46f7d-135">Дата и время последнего изменения объекта.</span><span class="sxs-lookup"><span data-stu-id="46f7d-135">The date and time the object was last modified.</span></span> <span data-ttu-id="46f7d-136">Наследуется от [граупполиципресентатионвалуе](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span><span class="sxs-lookup"><span data-stu-id="46f7d-136">Inherited from [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span></span>|
+|<span data-ttu-id="46f7d-137">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="46f7d-137">createdDateTime</span></span>|<span data-ttu-id="46f7d-138">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="46f7d-138">DateTimeOffset</span></span>|<span data-ttu-id="46f7d-139">Дата и время создания объекта.</span><span class="sxs-lookup"><span data-stu-id="46f7d-139">The date and time the object was created.</span></span> <span data-ttu-id="46f7d-140">Наследуется от [граупполиципресентатионвалуе](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span><span class="sxs-lookup"><span data-stu-id="46f7d-140">Inherited from [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span></span>|
+|<span data-ttu-id="46f7d-141">id</span><span class="sxs-lookup"><span data-stu-id="46f7d-141">id</span></span>|<span data-ttu-id="46f7d-142">String</span><span class="sxs-lookup"><span data-stu-id="46f7d-142">String</span></span>|<span data-ttu-id="46f7d-143">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="46f7d-143">Key of the entity.</span></span> <span data-ttu-id="46f7d-144">Наследуется от [граупполиципресентатионвалуе](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span><span class="sxs-lookup"><span data-stu-id="46f7d-144">Inherited from [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span></span>|
+|<span data-ttu-id="46f7d-145">values</span><span class="sxs-lookup"><span data-stu-id="46f7d-145">values</span></span>|<span data-ttu-id="46f7d-146">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="46f7d-146">String collection</span></span>|<span data-ttu-id="46f7d-147">Коллекция непустых строк для связанной презентации.</span><span class="sxs-lookup"><span data-stu-id="46f7d-147">A collection of non-empty strings for the associated presentation.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="2f26d-147">Ответ</span><span class="sxs-lookup"><span data-stu-id="2f26d-147">Response</span></span>
-<span data-ttu-id="2f26d-148">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [граупполиципресентатионвалуемултитекст](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="2f26d-148">If successful, this method returns a `201 Created` response code and a [groupPolicyPresentationValueMultiText](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="46f7d-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="46f7d-148">Response</span></span>
+<span data-ttu-id="46f7d-149">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [граупполиципресентатионвалуемултитекст](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="46f7d-149">If successful, this method returns a `201 Created` response code and a [groupPolicyPresentationValueMultiText](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2f26d-149">Пример</span><span class="sxs-lookup"><span data-stu-id="2f26d-149">Example</span></span>
+## <a name="example"></a><span data-ttu-id="46f7d-150">Пример</span><span class="sxs-lookup"><span data-stu-id="46f7d-150">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="2f26d-150">Запрос</span><span class="sxs-lookup"><span data-stu-id="2f26d-150">Request</span></span>
-<span data-ttu-id="2f26d-151">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2f26d-151">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="46f7d-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="46f7d-151">Request</span></span>
+<span data-ttu-id="46f7d-152">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="46f7d-152">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues
 Content-type: application/json
@@ -78,8 +80,8 @@ Content-length: 120
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="2f26d-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="2f26d-152">Response</span></span>
-<span data-ttu-id="2f26d-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="2f26d-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="46f7d-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="46f7d-153">Response</span></span>
+<span data-ttu-id="46f7d-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="46f7d-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
