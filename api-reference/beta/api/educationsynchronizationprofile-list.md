@@ -5,50 +5,52 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ee295989618b4095425267fd1ff3d0bebfaf8baf
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d3039e1bd88dad5be48d0a2b6b2d13861b51b054
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35954874"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42424479"
 ---
-# <a name="list-educationsynchronizationprofiles"></a><span data-ttu-id="454cf-103">Список Едукатионсинчронизатионпрофилес</span><span class="sxs-lookup"><span data-stu-id="454cf-103">List educationSynchronizationProfiles</span></span>
+# <a name="list-educationsynchronizationprofiles"></a><span data-ttu-id="1ed4f-103">Список Едукатионсинчронизатионпрофилес</span><span class="sxs-lookup"><span data-stu-id="1ed4f-103">List educationSynchronizationProfiles</span></span>
+
+<span data-ttu-id="1ed4f-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="1ed4f-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="454cf-104">Получение коллекции [профилей синхронизации](../resources/educationsynchronizationprofile.md) учебных данных в клиенте.</span><span class="sxs-lookup"><span data-stu-id="454cf-104">Retrieve the collection of school data [synchronization profiles](../resources/educationsynchronizationprofile.md) in the tenant.</span></span>
+<span data-ttu-id="1ed4f-105">Получение коллекции [профилей синхронизации](../resources/educationsynchronizationprofile.md) учебных данных в клиенте.</span><span class="sxs-lookup"><span data-stu-id="1ed4f-105">Retrieve the collection of school data [synchronization profiles](../resources/educationsynchronizationprofile.md) in the tenant.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="454cf-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="454cf-105">Permissions</span></span>
-<span data-ttu-id="454cf-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="454cf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="1ed4f-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1ed4f-106">Permissions</span></span>
+<span data-ttu-id="1ed4f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1ed4f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="454cf-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="454cf-108">Permission type</span></span> | <span data-ttu-id="454cf-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="454cf-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="1ed4f-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1ed4f-109">Permission type</span></span> | <span data-ttu-id="1ed4f-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1ed4f-110">Permissions (from least to most privileged)</span></span> |
 |:-----------|:----------|
-| <span data-ttu-id="454cf-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="454cf-110">Delegated (work or school account)</span></span> | <span data-ttu-id="454cf-111">Едуадминистратион. Read, Едуадминистратион. ReadWrite</span><span class="sxs-lookup"><span data-stu-id="454cf-111">EduAdministration.Read, EduAdministration.ReadWrite</span></span> |
-|<span data-ttu-id="454cf-112">Делегированная учетная запись (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="454cf-112">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="454cf-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="454cf-113">Not supported.</span></span>|
-|<span data-ttu-id="454cf-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="454cf-114">Application</span></span>|<span data-ttu-id="454cf-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="454cf-115">Not supported.</span></span>|
+| <span data-ttu-id="1ed4f-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1ed4f-111">Delegated (work or school account)</span></span> | <span data-ttu-id="1ed4f-112">Едуадминистратион. Read, Едуадминистратион. ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1ed4f-112">EduAdministration.Read, EduAdministration.ReadWrite</span></span> |
+|<span data-ttu-id="1ed4f-113">Делегированная учетная запись (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1ed4f-113">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="1ed4f-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1ed4f-114">Not supported.</span></span>|
+|<span data-ttu-id="1ed4f-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1ed4f-115">Application</span></span>|<span data-ttu-id="1ed4f-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1ed4f-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="454cf-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="454cf-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1ed4f-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1ed4f-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /synchronizationProfiles
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="454cf-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="454cf-117">Optional query parameters</span></span>
-<span data-ttu-id="454cf-118">Этот метод поддерживает следующие [Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика: $filter, $orderby, $top, $skip и $Count.</span><span class="sxs-lookup"><span data-stu-id="454cf-118">This method supports the following [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response: $filter, $orderby, $top, $skip, and $count.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="1ed4f-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="1ed4f-118">Optional query parameters</span></span>
+<span data-ttu-id="1ed4f-119">Этот метод поддерживает следующие [Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика: $filter, $orderby, $top, $skip и $Count.</span><span class="sxs-lookup"><span data-stu-id="1ed4f-119">This method supports the following [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response: $filter, $orderby, $top, $skip, and $count.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="454cf-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="454cf-119">Request headers</span></span>
-| <span data-ttu-id="454cf-120">Имя</span><span class="sxs-lookup"><span data-stu-id="454cf-120">Name</span></span>       | <span data-ttu-id="454cf-121">Тип</span><span class="sxs-lookup"><span data-stu-id="454cf-121">Type</span></span> | <span data-ttu-id="454cf-122">Описание</span><span class="sxs-lookup"><span data-stu-id="454cf-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1ed4f-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1ed4f-120">Request headers</span></span>
+| <span data-ttu-id="1ed4f-121">Имя</span><span class="sxs-lookup"><span data-stu-id="1ed4f-121">Name</span></span>       | <span data-ttu-id="1ed4f-122">Тип</span><span class="sxs-lookup"><span data-stu-id="1ed4f-122">Type</span></span> | <span data-ttu-id="1ed4f-123">Описание</span><span class="sxs-lookup"><span data-stu-id="1ed4f-123">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="454cf-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="454cf-123">Authorization</span></span>  | <span data-ttu-id="454cf-124">string</span><span class="sxs-lookup"><span data-stu-id="454cf-124">string</span></span>  | <span data-ttu-id="454cf-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="454cf-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="1ed4f-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="1ed4f-124">Authorization</span></span>  | <span data-ttu-id="1ed4f-125">string</span><span class="sxs-lookup"><span data-stu-id="1ed4f-125">string</span></span>  | <span data-ttu-id="1ed4f-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1ed4f-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="454cf-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="454cf-127">Request body</span></span>
-<span data-ttu-id="454cf-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="454cf-128">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="454cf-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="454cf-129">Response</span></span>
-<span data-ttu-id="454cf-130">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [едукатионсинчронизатионпрофиле](../resources/educationsynchronizationprofile.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="454cf-130">If successful, this method returns a `200 OK` response code and a collection of [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) objects in the response body.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1ed4f-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="1ed4f-128">Request body</span></span>
+<span data-ttu-id="1ed4f-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="1ed4f-129">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="1ed4f-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="1ed4f-130">Response</span></span>
+<span data-ttu-id="1ed4f-131">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [едукатионсинчронизатионпрофиле](../resources/educationsynchronizationprofile.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="1ed4f-131">If successful, this method returns a `200 OK` response code and a collection of [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="454cf-131">Пример</span><span class="sxs-lookup"><span data-stu-id="454cf-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="454cf-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="454cf-132">Request</span></span>
-<span data-ttu-id="454cf-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="454cf-133">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="1ed4f-132">Пример</span><span class="sxs-lookup"><span data-stu-id="1ed4f-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="1ed4f-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="1ed4f-133">Request</span></span>
+<span data-ttu-id="1ed4f-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1ed4f-134">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "list_synchronizationProfile"
@@ -57,10 +59,10 @@ GET /synchronizationProfiles
 GET https://graph.microsoft.com/beta/education/synchronizationProfiles
 ```
 
-##### <a name="response"></a><span data-ttu-id="454cf-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="454cf-134">Response</span></span>
-<span data-ttu-id="454cf-135">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="454cf-135">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="1ed4f-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="1ed4f-135">Response</span></span>
+<span data-ttu-id="1ed4f-136">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="1ed4f-136">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="454cf-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="454cf-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="1ed4f-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1ed4f-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "ignored",

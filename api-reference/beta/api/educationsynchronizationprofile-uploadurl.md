@@ -5,55 +5,57 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 3896dca45d533accaf66300d936461e73d8cb390
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: abab00a78e9160e4c1cfe856bc31e8ee691bdf9f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40869810"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42424227"
 ---
-# <a name="educationsynchronizationprofile-uploadurl"></a><span data-ttu-id="66ed5-104">Едукатионсинчронизатионпрофиле: адрес uploadurl</span><span class="sxs-lookup"><span data-stu-id="66ed5-104">educationSynchronizationProfile: uploadUrl</span></span>
+# <a name="educationsynchronizationprofile-uploadurl"></a><span data-ttu-id="6baa2-104">Едукатионсинчронизатионпрофиле: адрес uploadurl</span><span class="sxs-lookup"><span data-stu-id="6baa2-104">educationSynchronizationProfile: uploadUrl</span></span>
+
+<span data-ttu-id="6baa2-105">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="6baa2-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="66ed5-105">Получение подписи общего доступа (SAS) для отправки исходных файлов в хранилище BLOB-объектов Azure для определенного [профиля синхронизации](../resources/educationsynchronizationprofile.md) данных School в клиенте.</span><span class="sxs-lookup"><span data-stu-id="66ed5-105">Retrieve a shared access signature (SAS) for uploading source files to Azure blob storage for a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.</span></span> <span data-ttu-id="66ed5-106">Срок действия маркера SAS — 1 час.</span><span class="sxs-lookup"><span data-stu-id="66ed5-106">The SAS token has a validity of one hour.</span></span>
+<span data-ttu-id="6baa2-106">Получение подписи общего доступа (SAS) для отправки исходных файлов в хранилище BLOB-объектов Azure для определенного [профиля синхронизации](../resources/educationsynchronizationprofile.md) данных School в клиенте.</span><span class="sxs-lookup"><span data-stu-id="6baa2-106">Retrieve a shared access signature (SAS) for uploading source files to Azure blob storage for a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.</span></span> <span data-ttu-id="6baa2-107">Срок действия маркера SAS — 1 час.</span><span class="sxs-lookup"><span data-stu-id="6baa2-107">The SAS token has a validity of one hour.</span></span>
 
-<span data-ttu-id="66ed5-107">URL-адрес отправки предоставляется только для [поставщика данных в формате CSV](../resources/educationcsvdataprovider.md).</span><span class="sxs-lookup"><span data-stu-id="66ed5-107">The upload URL is provided only for the [CSV data provider](../resources/educationcsvdataprovider.md).</span></span>
+<span data-ttu-id="6baa2-108">URL-адрес отправки предоставляется только для [поставщика данных в формате CSV](../resources/educationcsvdataprovider.md).</span><span class="sxs-lookup"><span data-stu-id="6baa2-108">The upload URL is provided only for the [CSV data provider](../resources/educationcsvdataprovider.md).</span></span>
 
-> <span data-ttu-id="66ed5-108">**Примечание:** Чтобы получить доступ к хранилищу больших двоичных объектов с маркером SAS, используйте пакеты SDK или [AzCopy](/azure/storage/storage-use-azcopy) [хранилища Azure](https://github.com/search?q=org%3AAzure+azure-storage) .</span><span class="sxs-lookup"><span data-stu-id="66ed5-108">**Note:** To access the blob storage with the SAS token, use the [Azure storage SDKs](https://github.com/search?q=org%3AAzure+azure-storage) or [AzCopy](/azure/storage/storage-use-azcopy).</span></span>
+> <span data-ttu-id="6baa2-109">**Примечание:** Чтобы получить доступ к хранилищу больших двоичных объектов с маркером SAS, используйте пакеты SDK или [AzCopy](/azure/storage/storage-use-azcopy) [хранилища Azure](https://github.com/search?q=org%3AAzure+azure-storage) .</span><span class="sxs-lookup"><span data-stu-id="6baa2-109">**Note:** To access the blob storage with the SAS token, use the [Azure storage SDKs](https://github.com/search?q=org%3AAzure+azure-storage) or [AzCopy](/azure/storage/storage-use-azcopy).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="66ed5-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="66ed5-109">Permissions</span></span>
-<span data-ttu-id="66ed5-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="66ed5-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="6baa2-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="6baa2-110">Permissions</span></span>
+<span data-ttu-id="6baa2-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6baa2-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="66ed5-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="66ed5-112">Permission type</span></span> | <span data-ttu-id="66ed5-113">Permissions</span><span class="sxs-lookup"><span data-stu-id="66ed5-113">Permissions</span></span> |
+| <span data-ttu-id="6baa2-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="6baa2-113">Permission type</span></span> | <span data-ttu-id="6baa2-114">Разрешения</span><span class="sxs-lookup"><span data-stu-id="6baa2-114">Permissions</span></span> |
 |:-----------|:----------|
-| <span data-ttu-id="66ed5-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="66ed5-114">Delegated (work or school account)</span></span> | <span data-ttu-id="66ed5-115">EduAdministration.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="66ed5-115">EduAdministration.ReadWrite</span></span> |
-|<span data-ttu-id="66ed5-116">Делегированная учетная запись (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="66ed5-116">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="66ed5-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="66ed5-117">Not supported.</span></span>|
-|<span data-ttu-id="66ed5-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="66ed5-118">Application</span></span>|<span data-ttu-id="66ed5-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="66ed5-119">Not supported.</span></span>|
+| <span data-ttu-id="6baa2-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="6baa2-115">Delegated (work or school account)</span></span> | <span data-ttu-id="6baa2-116">EduAdministration.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6baa2-116">EduAdministration.ReadWrite</span></span> |
+|<span data-ttu-id="6baa2-117">Делегированная учетная запись (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="6baa2-117">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="6baa2-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6baa2-118">Not supported.</span></span>|
+|<span data-ttu-id="6baa2-119">Для приложений</span><span class="sxs-lookup"><span data-stu-id="6baa2-119">Application</span></span>|<span data-ttu-id="6baa2-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6baa2-120">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="66ed5-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="66ed5-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6baa2-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="6baa2-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /synchronizationProfiles/{id}/uploadUrl
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="66ed5-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="66ed5-121">Request headers</span></span>
-| <span data-ttu-id="66ed5-122">Имя</span><span class="sxs-lookup"><span data-stu-id="66ed5-122">Name</span></span>       | <span data-ttu-id="66ed5-123">Тип</span><span class="sxs-lookup"><span data-stu-id="66ed5-123">Type</span></span> | <span data-ttu-id="66ed5-124">Описание</span><span class="sxs-lookup"><span data-stu-id="66ed5-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6baa2-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="6baa2-122">Request headers</span></span>
+| <span data-ttu-id="6baa2-123">Имя</span><span class="sxs-lookup"><span data-stu-id="6baa2-123">Name</span></span>       | <span data-ttu-id="6baa2-124">Тип</span><span class="sxs-lookup"><span data-stu-id="6baa2-124">Type</span></span> | <span data-ttu-id="6baa2-125">Описание</span><span class="sxs-lookup"><span data-stu-id="6baa2-125">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="66ed5-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="66ed5-125">Authorization</span></span>  | <span data-ttu-id="66ed5-126">string</span><span class="sxs-lookup"><span data-stu-id="66ed5-126">string</span></span>  | <span data-ttu-id="66ed5-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="66ed5-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="6baa2-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="6baa2-126">Authorization</span></span>  | <span data-ttu-id="6baa2-127">string</span><span class="sxs-lookup"><span data-stu-id="6baa2-127">string</span></span>  | <span data-ttu-id="6baa2-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="6baa2-p104">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="66ed5-129">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="66ed5-129">Request body</span></span>
-<span data-ttu-id="66ed5-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="66ed5-130">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="66ed5-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="66ed5-131">Response</span></span>
-<span data-ttu-id="66ed5-132">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и URL-адрес SAS для [едукатионсинчронизатионпрофиле](../resources/educationsynchronizationprofile.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="66ed5-132">If successful, this method returns a `200 OK` response code and a SAS URL for the [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) in the response body.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6baa2-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="6baa2-130">Request body</span></span>
+<span data-ttu-id="6baa2-131">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="6baa2-131">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="6baa2-132">Ответ</span><span class="sxs-lookup"><span data-stu-id="6baa2-132">Response</span></span>
+<span data-ttu-id="6baa2-133">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и URL-адрес SAS для [едукатионсинчронизатионпрофиле](../resources/educationsynchronizationprofile.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="6baa2-133">If successful, this method returns a `200 OK` response code and a SAS URL for the [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) in the response body.</span></span>
 
-<span data-ttu-id="66ed5-133">Если предыдущий запрос по-прежнему обрабатывается, этот метод возвращает значение `409 Conflict` , указывающее на то, что отправка в [едукатионсинчронизатионпрофиле](../resources/educationsynchronizationprofile.md)заблокирована.</span><span class="sxs-lookup"><span data-stu-id="66ed5-133">If a previous request is still being processed, this method returns a `409 Conflict` indicating that the upload is presently blocked for the [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md).</span></span>
+<span data-ttu-id="6baa2-134">Если предыдущий запрос по-прежнему обрабатывается, этот метод возвращает значение `409 Conflict` , указывающее на то, что отправка в [едукатионсинчронизатионпрофиле](../resources/educationsynchronizationprofile.md)заблокирована.</span><span class="sxs-lookup"><span data-stu-id="6baa2-134">If a previous request is still being processed, this method returns a `409 Conflict` indicating that the upload is presently blocked for the [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md).</span></span>
 
-## <a name="example"></a><span data-ttu-id="66ed5-134">Пример</span><span class="sxs-lookup"><span data-stu-id="66ed5-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="66ed5-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="66ed5-135">Request</span></span>
-<span data-ttu-id="66ed5-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="66ed5-136">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="6baa2-135">Пример</span><span class="sxs-lookup"><span data-stu-id="6baa2-135">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="6baa2-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="6baa2-136">Request</span></span>
+<span data-ttu-id="6baa2-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6baa2-137">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="66ed5-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="66ed5-137">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="6baa2-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="6baa2-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_educationSynchronizationProfile_uploadurl"
@@ -61,25 +63,25 @@ GET /synchronizationProfiles/{id}/uploadUrl
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/uploadUrl
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="66ed5-138">C#</span><span class="sxs-lookup"><span data-stu-id="66ed5-138">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="6baa2-139">C#</span><span class="sxs-lookup"><span data-stu-id="6baa2-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationsynchronizationprofile-uploadurl-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="66ed5-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="66ed5-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="6baa2-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6baa2-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationsynchronizationprofile-uploadurl-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="66ed5-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="66ed5-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="6baa2-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6baa2-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationsynchronizationprofile-uploadurl-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="66ed5-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="66ed5-141">Response</span></span>
-<span data-ttu-id="66ed5-142">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="66ed5-142">The following is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="6baa2-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="6baa2-142">Response</span></span>
+<span data-ttu-id="6baa2-143">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="6baa2-143">The following is an example of the response.</span></span>
 
-><span data-ttu-id="66ed5-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="66ed5-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="6baa2-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="6baa2-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

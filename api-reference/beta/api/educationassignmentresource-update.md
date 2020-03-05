@@ -5,52 +5,54 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: aa9c2738b894457234cb82daee1364605fd64ba9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cb210affa5d98bdbc9a5cd012adc20a5c4ac49ea
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955553"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42427090"
 ---
-# <a name="update-educationassignmentresource"></a><span data-ttu-id="2a300-104">Обновление Едукатионассигнментресаурце</span><span class="sxs-lookup"><span data-stu-id="2a300-104">Update educationAssignmentResource</span></span>
+# <a name="update-educationassignmentresource"></a><span data-ttu-id="80f87-104">Обновление Едукатионассигнментресаурце</span><span class="sxs-lookup"><span data-stu-id="80f87-104">Update educationAssignmentResource</span></span>
+
+<span data-ttu-id="80f87-105">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="80f87-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2a300-105">Обновление свойств ресурса, связанного с назначением.</span><span class="sxs-lookup"><span data-stu-id="2a300-105">Update the properties of resource associated with an assignment.</span></span> <span data-ttu-id="2a300-106">Изменять объекты ресурсов назначения могут только преподаватели в классе.</span><span class="sxs-lookup"><span data-stu-id="2a300-106">Only teachers in a class can change assignment resource objects.</span></span>  
+<span data-ttu-id="80f87-106">Обновление свойств ресурса, связанного с назначением.</span><span class="sxs-lookup"><span data-stu-id="80f87-106">Update the properties of resource associated with an assignment.</span></span> <span data-ttu-id="80f87-107">Изменять объекты ресурсов назначения могут только преподаватели в классе.</span><span class="sxs-lookup"><span data-stu-id="80f87-107">Only teachers in a class can change assignment resource objects.</span></span>  
 
-## <a name="permissions"></a><span data-ttu-id="2a300-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2a300-107">Permissions</span></span>
-<span data-ttu-id="2a300-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2a300-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="80f87-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="80f87-108">Permissions</span></span>
+<span data-ttu-id="80f87-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="80f87-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2a300-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2a300-110">Permission type</span></span>      | <span data-ttu-id="2a300-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="2a300-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="80f87-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="80f87-111">Permission type</span></span>      | <span data-ttu-id="80f87-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="80f87-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2a300-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2a300-112">Delegated (work or school account)</span></span> |  <span data-ttu-id="2a300-113">EduAssignments. Реадвритебасик, EduAssignments. ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2a300-113">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>   |
-|<span data-ttu-id="2a300-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2a300-114">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="2a300-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2a300-115">Not supported.</span></span>  |
-|<span data-ttu-id="2a300-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2a300-116">Application</span></span> | <span data-ttu-id="2a300-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2a300-117">Not supported.</span></span> | 
+|<span data-ttu-id="80f87-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="80f87-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="80f87-114">EduAssignments. Реадвритебасик, EduAssignments. ReadWrite</span><span class="sxs-lookup"><span data-stu-id="80f87-114">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>   |
+|<span data-ttu-id="80f87-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="80f87-115">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="80f87-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="80f87-116">Not supported.</span></span>  |
+|<span data-ttu-id="80f87-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="80f87-117">Application</span></span> | <span data-ttu-id="80f87-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="80f87-118">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="2a300-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2a300-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="80f87-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="80f87-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /education/classes/{id}/assignments/{id}/resources/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="2a300-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2a300-119">Request headers</span></span>
-| <span data-ttu-id="2a300-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="2a300-120">Header</span></span>       | <span data-ttu-id="2a300-121">Значение</span><span class="sxs-lookup"><span data-stu-id="2a300-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="80f87-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="80f87-120">Request headers</span></span>
+| <span data-ttu-id="80f87-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="80f87-121">Header</span></span>       | <span data-ttu-id="80f87-122">Значение</span><span class="sxs-lookup"><span data-stu-id="80f87-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="2a300-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="2a300-122">Authorization</span></span>  | <span data-ttu-id="2a300-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2a300-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="2a300-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="2a300-125">Content-Type</span></span>  | <span data-ttu-id="2a300-126">application/json</span><span class="sxs-lookup"><span data-stu-id="2a300-126">application/json</span></span>  |
+| <span data-ttu-id="80f87-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="80f87-123">Authorization</span></span>  | <span data-ttu-id="80f87-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="80f87-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="80f87-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="80f87-126">Content-Type</span></span>  | <span data-ttu-id="80f87-127">application/json</span><span class="sxs-lookup"><span data-stu-id="80f87-127">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="2a300-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="2a300-127">Request body</span></span>
-<span data-ttu-id="2a300-128">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="2a300-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="2a300-129">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="2a300-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="2a300-130">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="2a300-130">For best performance, don't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="80f87-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="80f87-128">Request body</span></span>
+<span data-ttu-id="80f87-129">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="80f87-129">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="80f87-130">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="80f87-130">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="80f87-131">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="80f87-131">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="2a300-131">Свойство</span><span class="sxs-lookup"><span data-stu-id="2a300-131">Property</span></span>     | <span data-ttu-id="2a300-132">Тип</span><span class="sxs-lookup"><span data-stu-id="2a300-132">Type</span></span>   |<span data-ttu-id="2a300-133">Описание</span><span class="sxs-lookup"><span data-stu-id="2a300-133">Description</span></span>|
+| <span data-ttu-id="80f87-132">Свойство</span><span class="sxs-lookup"><span data-stu-id="80f87-132">Property</span></span>     | <span data-ttu-id="80f87-133">Тип</span><span class="sxs-lookup"><span data-stu-id="80f87-133">Type</span></span>   |<span data-ttu-id="80f87-134">Описание</span><span class="sxs-lookup"><span data-stu-id="80f87-134">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="2a300-134">Дистрибутефорстудентворк</span><span class="sxs-lookup"><span data-stu-id="2a300-134">distributeForStudentWork</span></span>|<span data-ttu-id="2a300-135">Boolean</span><span class="sxs-lookup"><span data-stu-id="2a300-135">Boolean</span></span>| <span data-ttu-id="2a300-136">Указывает, следует ли копировать этот ресурс в объект ресурса каждого учащегося при публикации назначения.</span><span class="sxs-lookup"><span data-stu-id="2a300-136">Indicates whether this resource should be copied to each student's resource object when the assignment is published.</span></span>|
-|<span data-ttu-id="2a300-137">resource</span><span class="sxs-lookup"><span data-stu-id="2a300-137">resource</span></span>|<span data-ttu-id="2a300-138">Едукатионресаурце</span><span class="sxs-lookup"><span data-stu-id="2a300-138">educationResource</span></span>| <span data-ttu-id="2a300-139">Объект Resource.</span><span class="sxs-lookup"><span data-stu-id="2a300-139">Resource object.</span></span> |
+|<span data-ttu-id="80f87-135">дистрибутефорстудентворк</span><span class="sxs-lookup"><span data-stu-id="80f87-135">distributeForStudentWork</span></span>|<span data-ttu-id="80f87-136">Логический</span><span class="sxs-lookup"><span data-stu-id="80f87-136">Boolean</span></span>| <span data-ttu-id="80f87-137">Указывает, следует ли копировать этот ресурс в объект ресурса каждого учащегося при публикации назначения.</span><span class="sxs-lookup"><span data-stu-id="80f87-137">Indicates whether this resource should be copied to each student's resource object when the assignment is published.</span></span>|
+|<span data-ttu-id="80f87-138">resource</span><span class="sxs-lookup"><span data-stu-id="80f87-138">resource</span></span>|<span data-ttu-id="80f87-139">едукатионресаурце</span><span class="sxs-lookup"><span data-stu-id="80f87-139">educationResource</span></span>| <span data-ttu-id="80f87-140">Объект Resource.</span><span class="sxs-lookup"><span data-stu-id="80f87-140">Resource object.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="2a300-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="2a300-140">Response</span></span>
-<span data-ttu-id="2a300-141">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [едукатионассигнментресаурце](../resources/educationassignmentresource.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="2a300-141">If successful, this method returns a `200 OK` response code and an updated [educationAssignmentResource](../resources/educationassignmentresource.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="2a300-142">Пример</span><span class="sxs-lookup"><span data-stu-id="2a300-142">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="2a300-143">Запрос</span><span class="sxs-lookup"><span data-stu-id="2a300-143">Request</span></span>
-<span data-ttu-id="2a300-144">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2a300-144">The following is an example of the request.</span></span>
+## <a name="response"></a><span data-ttu-id="80f87-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="80f87-141">Response</span></span>
+<span data-ttu-id="80f87-142">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [едукатионассигнментресаурце](../resources/educationassignmentresource.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="80f87-142">If successful, this method returns a `200 OK` response code and an updated [educationAssignmentResource](../resources/educationassignmentresource.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="80f87-143">Пример</span><span class="sxs-lookup"><span data-stu-id="80f87-143">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="80f87-144">Запрос</span><span class="sxs-lookup"><span data-stu-id="80f87-144">Request</span></span>
+<span data-ttu-id="80f87-145">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="80f87-145">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "update_educationassignmentresource"
@@ -64,10 +66,10 @@ Content-length: 822
   "distributeForStudentWork": "false"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="2a300-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="2a300-145">Response</span></span>
-<span data-ttu-id="2a300-146">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="2a300-146">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="80f87-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="80f87-146">Response</span></span>
+<span data-ttu-id="80f87-147">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="80f87-147">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="2a300-147">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="2a300-147">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="2a300-148">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="2a300-148">All of the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="80f87-148">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="80f87-148">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="80f87-149">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="80f87-149">All of the properties will be returned from an actual call.</span></span>
 
 
 <!-- {
