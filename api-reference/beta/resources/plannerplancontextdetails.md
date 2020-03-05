@@ -5,27 +5,29 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 9d4bf7d0a5c2149f826097eedc350e81eb32bf70
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f1d360e049ad279d1a481fe9dc1ea0a672514a9b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36009022"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521694"
 ---
-# <a name="plannerplancontextdetails-resource-type"></a><span data-ttu-id="30ec4-103">Тип ресурса Планнерпланконтекстдетаилс</span><span class="sxs-lookup"><span data-stu-id="30ec4-103">plannerPlanContextDetails resource type</span></span>
+# <a name="plannerplancontextdetails-resource-type"></a><span data-ttu-id="3ebbf-103">Тип ресурса Планнерпланконтекстдетаилс</span><span class="sxs-lookup"><span data-stu-id="3ebbf-103">plannerPlanContextDetails resource type</span></span>
+
+<span data-ttu-id="3ebbf-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="3ebbf-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="30ec4-104">Ресурс **планнерпланконтекстдетаилс** содержит дополнительные сведения о [планнерпланконтекст](plannerplancontext.md).</span><span class="sxs-lookup"><span data-stu-id="30ec4-104">The **plannerPlanContextDetails** resource contains additional information about a [plannerPlanContext](plannerplancontext.md).</span></span>
+<span data-ttu-id="3ebbf-105">Ресурс **планнерпланконтекстдетаилс** содержит дополнительные сведения о [планнерпланконтекст](plannerplancontext.md).</span><span class="sxs-lookup"><span data-stu-id="3ebbf-105">The **plannerPlanContextDetails** resource contains additional information about a [plannerPlanContext](plannerplancontext.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="30ec4-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="30ec4-105">Properties</span></span>
-| <span data-ttu-id="30ec4-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="30ec4-106">Property</span></span>     | <span data-ttu-id="30ec4-107">Тип</span><span class="sxs-lookup"><span data-stu-id="30ec4-107">Type</span></span>   |<span data-ttu-id="30ec4-108">Описание</span><span class="sxs-lookup"><span data-stu-id="30ec4-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="3ebbf-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="3ebbf-106">Properties</span></span>
+| <span data-ttu-id="3ebbf-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="3ebbf-107">Property</span></span>     | <span data-ttu-id="3ebbf-108">Тип</span><span class="sxs-lookup"><span data-stu-id="3ebbf-108">Type</span></span>   |<span data-ttu-id="3ebbf-109">Описание</span><span class="sxs-lookup"><span data-stu-id="3ebbf-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="30ec4-109">url</span><span class="sxs-lookup"><span data-stu-id="30ec4-109">url</span></span>|<span data-ttu-id="30ec4-110">String</span><span class="sxs-lookup"><span data-stu-id="30ec4-110">String</span></span>|<span data-ttu-id="30ec4-111">URL-адрес пользовательского интерфейса, представленного связанным [планнерпланконтекст](plannerplancontext.md).</span><span class="sxs-lookup"><span data-stu-id="30ec4-111">URL of the user experience represented by the associated [plannerPlanContext](plannerplancontext.md).</span></span> |
+|<span data-ttu-id="3ebbf-110">url</span><span class="sxs-lookup"><span data-stu-id="3ebbf-110">url</span></span>|<span data-ttu-id="3ebbf-111">String</span><span class="sxs-lookup"><span data-stu-id="3ebbf-111">String</span></span>|<span data-ttu-id="3ebbf-112">URL-адрес пользовательского интерфейса, представленного связанным [планнерпланконтекст](plannerplancontext.md).</span><span class="sxs-lookup"><span data-stu-id="3ebbf-112">URL of the user experience represented by the associated [plannerPlanContext](plannerplancontext.md).</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="30ec4-112">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="30ec4-112">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3ebbf-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="3ebbf-113">JSON representation</span></span>
 
-<span data-ttu-id="30ec4-113">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="30ec4-113">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="3ebbf-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="3ebbf-114">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

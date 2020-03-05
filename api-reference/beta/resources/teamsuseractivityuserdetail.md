@@ -5,35 +5,37 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: cbe6297388907f28f8841e0a1dcb2ec3ae788844
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 237cfc933cbabd628320131866f7bf24ba0195c7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964356"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519815"
 ---
-# <a name="teamsuseractivityuserdetail-resource-type"></a><span data-ttu-id="a5287-103">Тип ресурса Теамсусерактивитюсердетаил</span><span class="sxs-lookup"><span data-stu-id="a5287-103">teamsUserActivityUserDetail resource type</span></span>
+# <a name="teamsuseractivityuserdetail-resource-type"></a><span data-ttu-id="56240-103">Тип ресурса Теамсусерактивитюсердетаил</span><span class="sxs-lookup"><span data-stu-id="56240-103">teamsUserActivityUserDetail resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="a5287-104">Свойства</span><span class="sxs-lookup"><span data-stu-id="a5287-104">Properties</span></span>
+<span data-ttu-id="56240-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="56240-104">Namespace: microsoft.graph</span></span>
 
-| <span data-ttu-id="a5287-105">Свойство</span><span class="sxs-lookup"><span data-stu-id="a5287-105">Property</span></span>                | <span data-ttu-id="a5287-106">Тип</span><span class="sxs-lookup"><span data-stu-id="a5287-106">Type</span></span>              |
+## <a name="properties"></a><span data-ttu-id="56240-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="56240-105">Properties</span></span>
+
+| <span data-ttu-id="56240-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="56240-106">Property</span></span>                | <span data-ttu-id="56240-107">Тип</span><span class="sxs-lookup"><span data-stu-id="56240-107">Type</span></span>              |
 | :---------------------- | :---------------- |
-| <span data-ttu-id="a5287-107">Репортрефрешдате</span><span class="sxs-lookup"><span data-stu-id="a5287-107">reportRefreshDate</span></span>       | <span data-ttu-id="a5287-108">Дата</span><span class="sxs-lookup"><span data-stu-id="a5287-108">Date</span></span>              |
-| <span data-ttu-id="a5287-109">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="a5287-109">userPrincipalName</span></span>       | <span data-ttu-id="a5287-110">String</span><span class="sxs-lookup"><span data-stu-id="a5287-110">String</span></span>            |
-| <span data-ttu-id="a5287-111">Ластактивитидате</span><span class="sxs-lookup"><span data-stu-id="a5287-111">lastActivityDate</span></span>        | <span data-ttu-id="a5287-112">Дата</span><span class="sxs-lookup"><span data-stu-id="a5287-112">Date</span></span>              |
-| <span data-ttu-id="a5287-113">isDeleted</span><span class="sxs-lookup"><span data-stu-id="a5287-113">isDeleted</span></span>               | <span data-ttu-id="a5287-114">Boolean</span><span class="sxs-lookup"><span data-stu-id="a5287-114">Boolean</span></span>           |
-| <span data-ttu-id="a5287-115">Делетеддате</span><span class="sxs-lookup"><span data-stu-id="a5287-115">deletedDate</span></span>             | <span data-ttu-id="a5287-116">Дата</span><span class="sxs-lookup"><span data-stu-id="a5287-116">Date</span></span>              |
-| <span data-ttu-id="a5287-117">Ассигнедпродуктс</span><span class="sxs-lookup"><span data-stu-id="a5287-117">assignedProducts</span></span>        | <span data-ttu-id="a5287-118">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="a5287-118">String collection</span></span> |
-| <span data-ttu-id="a5287-119">Теамчатмессажекаунт</span><span class="sxs-lookup"><span data-stu-id="a5287-119">teamChatMessageCount</span></span>    | <span data-ttu-id="a5287-120">Int64</span><span class="sxs-lookup"><span data-stu-id="a5287-120">Int64</span></span>             |
-| <span data-ttu-id="a5287-121">Приватечатмессажекаунт</span><span class="sxs-lookup"><span data-stu-id="a5287-121">privateChatMessageCount</span></span> | <span data-ttu-id="a5287-122">Int64</span><span class="sxs-lookup"><span data-stu-id="a5287-122">Int64</span></span>             |
-| <span data-ttu-id="a5287-123">Каллкаунт</span><span class="sxs-lookup"><span data-stu-id="a5287-123">callCount</span></span>               | <span data-ttu-id="a5287-124">Int64</span><span class="sxs-lookup"><span data-stu-id="a5287-124">Int64</span></span>             |
-| <span data-ttu-id="a5287-125">Митингкаунт</span><span class="sxs-lookup"><span data-stu-id="a5287-125">meetingCount</span></span>            | <span data-ttu-id="a5287-126">Int64</span><span class="sxs-lookup"><span data-stu-id="a5287-126">Int64</span></span>             |
-| <span data-ttu-id="a5287-127">Хасосерактион</span><span class="sxs-lookup"><span data-stu-id="a5287-127">hasOtherAction</span></span>          | <span data-ttu-id="a5287-128">Boolean</span><span class="sxs-lookup"><span data-stu-id="a5287-128">Boolean</span></span>           |
-| <span data-ttu-id="a5287-129">Репортпериод</span><span class="sxs-lookup"><span data-stu-id="a5287-129">reportPeriod</span></span>            | <span data-ttu-id="a5287-130">String</span><span class="sxs-lookup"><span data-stu-id="a5287-130">String</span></span>            |
+| <span data-ttu-id="56240-108">репортрефрешдате</span><span class="sxs-lookup"><span data-stu-id="56240-108">reportRefreshDate</span></span>       | <span data-ttu-id="56240-109">Дата</span><span class="sxs-lookup"><span data-stu-id="56240-109">Date</span></span>              |
+| <span data-ttu-id="56240-110">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="56240-110">userPrincipalName</span></span>       | <span data-ttu-id="56240-111">String</span><span class="sxs-lookup"><span data-stu-id="56240-111">String</span></span>            |
+| <span data-ttu-id="56240-112">ластактивитидате</span><span class="sxs-lookup"><span data-stu-id="56240-112">lastActivityDate</span></span>        | <span data-ttu-id="56240-113">Дата</span><span class="sxs-lookup"><span data-stu-id="56240-113">Date</span></span>              |
+| <span data-ttu-id="56240-114">isDeleted</span><span class="sxs-lookup"><span data-stu-id="56240-114">isDeleted</span></span>               | <span data-ttu-id="56240-115">Логический</span><span class="sxs-lookup"><span data-stu-id="56240-115">Boolean</span></span>           |
+| <span data-ttu-id="56240-116">делетеддате</span><span class="sxs-lookup"><span data-stu-id="56240-116">deletedDate</span></span>             | <span data-ttu-id="56240-117">Дата</span><span class="sxs-lookup"><span data-stu-id="56240-117">Date</span></span>              |
+| <span data-ttu-id="56240-118">ассигнедпродуктс</span><span class="sxs-lookup"><span data-stu-id="56240-118">assignedProducts</span></span>        | <span data-ttu-id="56240-119">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="56240-119">String collection</span></span> |
+| <span data-ttu-id="56240-120">теамчатмессажекаунт</span><span class="sxs-lookup"><span data-stu-id="56240-120">teamChatMessageCount</span></span>    | <span data-ttu-id="56240-121">Int64</span><span class="sxs-lookup"><span data-stu-id="56240-121">Int64</span></span>             |
+| <span data-ttu-id="56240-122">приватечатмессажекаунт</span><span class="sxs-lookup"><span data-stu-id="56240-122">privateChatMessageCount</span></span> | <span data-ttu-id="56240-123">Int64</span><span class="sxs-lookup"><span data-stu-id="56240-123">Int64</span></span>             |
+| <span data-ttu-id="56240-124">каллкаунт</span><span class="sxs-lookup"><span data-stu-id="56240-124">callCount</span></span>               | <span data-ttu-id="56240-125">Int64</span><span class="sxs-lookup"><span data-stu-id="56240-125">Int64</span></span>             |
+| <span data-ttu-id="56240-126">митингкаунт</span><span class="sxs-lookup"><span data-stu-id="56240-126">meetingCount</span></span>            | <span data-ttu-id="56240-127">Int64</span><span class="sxs-lookup"><span data-stu-id="56240-127">Int64</span></span>             |
+| <span data-ttu-id="56240-128">хасосерактион</span><span class="sxs-lookup"><span data-stu-id="56240-128">hasOtherAction</span></span>          | <span data-ttu-id="56240-129">Логический</span><span class="sxs-lookup"><span data-stu-id="56240-129">Boolean</span></span>           |
+| <span data-ttu-id="56240-130">репортпериод</span><span class="sxs-lookup"><span data-stu-id="56240-130">reportPeriod</span></span>            | <span data-ttu-id="56240-131">String</span><span class="sxs-lookup"><span data-stu-id="56240-131">String</span></span>            |
 
-## <a name="json-representation"></a><span data-ttu-id="a5287-131">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a5287-131">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="56240-132">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="56240-132">JSON representation</span></span>
 
-<span data-ttu-id="a5287-132">Ниже приведен пример JSON репресентаион для ресурса.</span><span class="sxs-lookup"><span data-stu-id="a5287-132">The following is a JSON representaion of the resource.</span></span>
+<span data-ttu-id="56240-133">Ниже приведен пример JSON репресентаион для ресурса.</span><span class="sxs-lookup"><span data-stu-id="56240-133">The following is a JSON representaion of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

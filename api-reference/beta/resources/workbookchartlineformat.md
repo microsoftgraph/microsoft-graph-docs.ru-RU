@@ -5,40 +5,42 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: fe36b0448d430566b51ee836e93d02f08cdbdbd5
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6900b961608ff29c503dc355dfb8876d3e273feb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007244"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519297"
 ---
-# <a name="workbookchartlineformat-resource-type"></a><span data-ttu-id="9157b-103">Тип ресурса Воркбукчартлинеформат</span><span class="sxs-lookup"><span data-stu-id="9157b-103">workbookChartLineFormat resource type</span></span>
+# <a name="workbookchartlineformat-resource-type"></a><span data-ttu-id="bea03-103">Тип ресурса Воркбукчартлинеформат</span><span class="sxs-lookup"><span data-stu-id="bea03-103">workbookChartLineFormat resource type</span></span>
+
+<span data-ttu-id="bea03-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="bea03-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9157b-104">Инкапсулирует параметры форматирования для элементов линий.</span><span class="sxs-lookup"><span data-stu-id="9157b-104">Enapsulates the formatting options for line elements.</span></span>
+<span data-ttu-id="bea03-105">Инкапсулирует параметры форматирования для элементов линий.</span><span class="sxs-lookup"><span data-stu-id="bea03-105">Enapsulates the formatting options for line elements.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="9157b-105">Методы</span><span class="sxs-lookup"><span data-stu-id="9157b-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="bea03-106">Методы</span><span class="sxs-lookup"><span data-stu-id="bea03-106">Methods</span></span>
 
-| <span data-ttu-id="9157b-106">Метод</span><span class="sxs-lookup"><span data-stu-id="9157b-106">Method</span></span>           | <span data-ttu-id="9157b-107">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="9157b-107">Return Type</span></span>    |<span data-ttu-id="9157b-108">Описание</span><span class="sxs-lookup"><span data-stu-id="9157b-108">Description</span></span>|
+| <span data-ttu-id="bea03-107">Метод</span><span class="sxs-lookup"><span data-stu-id="bea03-107">Method</span></span>           | <span data-ttu-id="bea03-108">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="bea03-108">Return Type</span></span>    |<span data-ttu-id="bea03-109">Описание</span><span class="sxs-lookup"><span data-stu-id="bea03-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="9157b-109">Получение Воркбукчартлинеформат</span><span class="sxs-lookup"><span data-stu-id="9157b-109">Get workbookChartLineFormat</span></span>](../api/chartlineformat-get.md) | [<span data-ttu-id="9157b-110">Воркбукчартлинеформат</span><span class="sxs-lookup"><span data-stu-id="9157b-110">workbookChartLineFormat</span></span>](workbookchartlineformat.md) |<span data-ttu-id="9157b-111">Чтение свойств и связей объекта chartLineFormat.</span><span class="sxs-lookup"><span data-stu-id="9157b-111">Read properties and relationships of chartLineFormat object.</span></span>|
-|[<span data-ttu-id="9157b-112">Обновление</span><span class="sxs-lookup"><span data-stu-id="9157b-112">Update</span></span>](../api/chartlineformat-update.md) | [<span data-ttu-id="9157b-113">Воркбукчартлинеформат</span><span class="sxs-lookup"><span data-stu-id="9157b-113">workbookChartLineFormat</span></span>](workbookchartlineformat.md) |<span data-ttu-id="9157b-114">Обновление объекта ChartLineFormat.</span><span class="sxs-lookup"><span data-stu-id="9157b-114">Update ChartLineFormat object.</span></span> |
-|[<span data-ttu-id="9157b-115">Clear</span><span class="sxs-lookup"><span data-stu-id="9157b-115">Clear</span></span>](../api/chartlineformat-clear.md)|<span data-ttu-id="9157b-116">Нет</span><span class="sxs-lookup"><span data-stu-id="9157b-116">None</span></span>|<span data-ttu-id="9157b-117">Очищает формат линий элемента диаграммы.</span><span class="sxs-lookup"><span data-stu-id="9157b-117">Clear the line format of a chart element.</span></span>|
+|[<span data-ttu-id="bea03-110">Получение Воркбукчартлинеформат</span><span class="sxs-lookup"><span data-stu-id="bea03-110">Get workbookChartLineFormat</span></span>](../api/chartlineformat-get.md) | [<span data-ttu-id="bea03-111">воркбукчартлинеформат</span><span class="sxs-lookup"><span data-stu-id="bea03-111">workbookChartLineFormat</span></span>](workbookchartlineformat.md) |<span data-ttu-id="bea03-112">Чтение свойств и связей объекта chartLineFormat.</span><span class="sxs-lookup"><span data-stu-id="bea03-112">Read properties and relationships of chartLineFormat object.</span></span>|
+|[<span data-ttu-id="bea03-113">Обновление</span><span class="sxs-lookup"><span data-stu-id="bea03-113">Update</span></span>](../api/chartlineformat-update.md) | [<span data-ttu-id="bea03-114">воркбукчартлинеформат</span><span class="sxs-lookup"><span data-stu-id="bea03-114">workbookChartLineFormat</span></span>](workbookchartlineformat.md) |<span data-ttu-id="bea03-115">Обновление объекта ChartLineFormat.</span><span class="sxs-lookup"><span data-stu-id="bea03-115">Update ChartLineFormat object.</span></span> |
+|[<span data-ttu-id="bea03-116">Clear</span><span class="sxs-lookup"><span data-stu-id="bea03-116">Clear</span></span>](../api/chartlineformat-clear.md)|<span data-ttu-id="bea03-117">Нет</span><span class="sxs-lookup"><span data-stu-id="bea03-117">None</span></span>|<span data-ttu-id="bea03-118">Очищает формат линий элемента диаграммы.</span><span class="sxs-lookup"><span data-stu-id="bea03-118">Clear the line format of a chart element.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="9157b-118">Свойства</span><span class="sxs-lookup"><span data-stu-id="9157b-118">Properties</span></span>
-| <span data-ttu-id="9157b-119">Свойство</span><span class="sxs-lookup"><span data-stu-id="9157b-119">Property</span></span>     | <span data-ttu-id="9157b-120">Тип</span><span class="sxs-lookup"><span data-stu-id="9157b-120">Type</span></span>   |<span data-ttu-id="9157b-121">Описание</span><span class="sxs-lookup"><span data-stu-id="9157b-121">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="bea03-119">Свойства</span><span class="sxs-lookup"><span data-stu-id="bea03-119">Properties</span></span>
+| <span data-ttu-id="bea03-120">Свойство</span><span class="sxs-lookup"><span data-stu-id="bea03-120">Property</span></span>     | <span data-ttu-id="bea03-121">Тип</span><span class="sxs-lookup"><span data-stu-id="bea03-121">Type</span></span>   |<span data-ttu-id="bea03-122">Описание</span><span class="sxs-lookup"><span data-stu-id="bea03-122">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="9157b-122">color</span><span class="sxs-lookup"><span data-stu-id="9157b-122">color</span></span>|<span data-ttu-id="9157b-123">string</span><span class="sxs-lookup"><span data-stu-id="9157b-123">string</span></span>|<span data-ttu-id="9157b-124">HTML-код цвета, представляющий цвет линий в диаграмме.</span><span class="sxs-lookup"><span data-stu-id="9157b-124">HTML color code representing the color of lines in the chart.</span></span>|
+|<span data-ttu-id="bea03-123">color</span><span class="sxs-lookup"><span data-stu-id="bea03-123">color</span></span>|<span data-ttu-id="bea03-124">string</span><span class="sxs-lookup"><span data-stu-id="bea03-124">string</span></span>|<span data-ttu-id="bea03-125">HTML-код цвета, представляющий цвет линий в диаграмме.</span><span class="sxs-lookup"><span data-stu-id="bea03-125">HTML color code representing the color of lines in the chart.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="9157b-125">Отношения</span><span class="sxs-lookup"><span data-stu-id="9157b-125">Relationships</span></span>
-<span data-ttu-id="9157b-126">Нет</span><span class="sxs-lookup"><span data-stu-id="9157b-126">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="bea03-126">Связи</span><span class="sxs-lookup"><span data-stu-id="bea03-126">Relationships</span></span>
+<span data-ttu-id="bea03-127">Нет</span><span class="sxs-lookup"><span data-stu-id="bea03-127">None</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="9157b-127">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="9157b-127">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="bea03-128">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="bea03-128">JSON representation</span></span>
 
-<span data-ttu-id="9157b-128">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="9157b-128">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="bea03-129">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="bea03-129">Here is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",

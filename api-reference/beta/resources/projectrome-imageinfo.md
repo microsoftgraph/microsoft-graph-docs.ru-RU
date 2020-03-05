@@ -5,30 +5,32 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: resourcePageType
 author: ''
-ms.openlocfilehash: 53496734f79121edd010a429ec0a8da28b16e836
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4b10536af68a20bd5c92da132406fe7dd8ee65b7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008889"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521413"
 ---
-# <a name="imageinfo-resource-type"></a><span data-ttu-id="1fe6a-103">Тип ресурса Имажеинфо</span><span class="sxs-lookup"><span data-stu-id="1fe6a-103">imageInfo resource type</span></span>
+# <a name="imageinfo-resource-type"></a><span data-ttu-id="8c99c-103">Тип ресурса Имажеинфо</span><span class="sxs-lookup"><span data-stu-id="8c99c-103">imageInfo resource type</span></span>
+
+<span data-ttu-id="8c99c-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="8c99c-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1fe6a-104">Сложный тип для представления свойства " **атрибуты** " в части [висуалинфо](../resources/projectrome-visualinfo.md) объекта [Activity](../resources/projectrome-activity.md) .</span><span class="sxs-lookup"><span data-stu-id="1fe6a-104">A complex type for representing the **attribution** property in the [visualInfo](../resources/projectrome-visualinfo.md) part of the [activity](../resources/projectrome-activity.md) object.</span></span>
+<span data-ttu-id="8c99c-105">Сложный тип для представления свойства " **атрибуты** " в части [висуалинфо](../resources/projectrome-visualinfo.md) объекта [Activity](../resources/projectrome-activity.md) .</span><span class="sxs-lookup"><span data-stu-id="8c99c-105">A complex type for representing the **attribution** property in the [visualInfo](../resources/projectrome-visualinfo.md) part of the [activity](../resources/projectrome-activity.md) object.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="1fe6a-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="1fe6a-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="8c99c-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="8c99c-106">Properties</span></span>
 
-|<span data-ttu-id="1fe6a-106">Имя</span><span class="sxs-lookup"><span data-stu-id="1fe6a-106">Name</span></span> | <span data-ttu-id="1fe6a-107">Тип</span><span class="sxs-lookup"><span data-stu-id="1fe6a-107">Type</span></span> | <span data-ttu-id="1fe6a-108">Описание</span><span class="sxs-lookup"><span data-stu-id="1fe6a-108">Description</span></span>|
+|<span data-ttu-id="8c99c-107">Имя</span><span class="sxs-lookup"><span data-stu-id="8c99c-107">Name</span></span> | <span data-ttu-id="8c99c-108">Тип</span><span class="sxs-lookup"><span data-stu-id="8c99c-108">Type</span></span> | <span data-ttu-id="8c99c-109">Описание</span><span class="sxs-lookup"><span data-stu-id="8c99c-109">Description</span></span>|
 |:----|:-----|:-----------|
-|<span data-ttu-id="1fe6a-109">iconUrl</span><span class="sxs-lookup"><span data-stu-id="1fe6a-109">iconUrl</span></span> | <span data-ttu-id="1fe6a-110">String</span><span class="sxs-lookup"><span data-stu-id="1fe6a-110">String</span></span> | <span data-ttu-id="1fe6a-111">Необязательно URI, указывающий на значок, представляющий приложение, используемое для создания действия.</span><span class="sxs-lookup"><span data-stu-id="1fe6a-111">Optional; URI that points to an icon which represents the application used to generate the activity</span></span>|
-|<span data-ttu-id="1fe6a-112">Алтернатетекст</span><span class="sxs-lookup"><span data-stu-id="1fe6a-112">alternateText</span></span> | <span data-ttu-id="1fe6a-113">String</span><span class="sxs-lookup"><span data-stu-id="1fe6a-113">String</span></span> | <span data-ttu-id="1fe6a-114">Необязательно доступное для изображения содержимое с замещающим текстом</span><span class="sxs-lookup"><span data-stu-id="1fe6a-114">Optional; alt-text accessible content for the image</span></span>|
-|<span data-ttu-id="1fe6a-115">Аддимажекуери</span><span class="sxs-lookup"><span data-stu-id="1fe6a-115">addImageQuery</span></span> | <span data-ttu-id="1fe6a-116">Boolean</span><span class="sxs-lookup"><span data-stu-id="1fe6a-116">Boolean</span></span> | <span data-ttu-id="1fe6a-117">Необязательно параметр, указывающий на то, что сервер может динамически отображать изображение в ответ на параметризация.</span><span class="sxs-lookup"><span data-stu-id="1fe6a-117">Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization.</span></span> <span data-ttu-id="1fe6a-118">Например, изображение с высокой контрастностью</span><span class="sxs-lookup"><span data-stu-id="1fe6a-118">For example – a high contrast image</span></span>|
+|<span data-ttu-id="8c99c-110">iconUrl</span><span class="sxs-lookup"><span data-stu-id="8c99c-110">iconUrl</span></span> | <span data-ttu-id="8c99c-111">String</span><span class="sxs-lookup"><span data-stu-id="8c99c-111">String</span></span> | <span data-ttu-id="8c99c-112">Необязательно URI, указывающий на значок, представляющий приложение, используемое для создания действия.</span><span class="sxs-lookup"><span data-stu-id="8c99c-112">Optional; URI that points to an icon which represents the application used to generate the activity</span></span>|
+|<span data-ttu-id="8c99c-113">алтернатетекст</span><span class="sxs-lookup"><span data-stu-id="8c99c-113">alternateText</span></span> | <span data-ttu-id="8c99c-114">String</span><span class="sxs-lookup"><span data-stu-id="8c99c-114">String</span></span> | <span data-ttu-id="8c99c-115">Необязательно доступное для изображения содержимое с замещающим текстом</span><span class="sxs-lookup"><span data-stu-id="8c99c-115">Optional; alt-text accessible content for the image</span></span>|
+|<span data-ttu-id="8c99c-116">аддимажекуери</span><span class="sxs-lookup"><span data-stu-id="8c99c-116">addImageQuery</span></span> | <span data-ttu-id="8c99c-117">Логический</span><span class="sxs-lookup"><span data-stu-id="8c99c-117">Boolean</span></span> | <span data-ttu-id="8c99c-118">Необязательно параметр, указывающий на то, что сервер может динамически отображать изображение в ответ на параметризация.</span><span class="sxs-lookup"><span data-stu-id="8c99c-118">Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization.</span></span> <span data-ttu-id="8c99c-119">Например, изображение с высокой контрастностью</span><span class="sxs-lookup"><span data-stu-id="8c99c-119">For example – a high contrast image</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="1fe6a-119">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="1fe6a-119">JSON Representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8c99c-120">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="8c99c-120">JSON Representation</span></span>
 
-<span data-ttu-id="1fe6a-120">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="1fe6a-120">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="8c99c-121">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8c99c-121">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",

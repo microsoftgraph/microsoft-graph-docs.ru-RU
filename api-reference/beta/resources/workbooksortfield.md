@@ -5,36 +5,38 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: excel
 author: ''
-ms.openlocfilehash: 55a1f822e080f786b588837dd6d9120cea546d4b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: adcebc20b39d40ef283d25cfd2a8c247160580eb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35963908"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519143"
 ---
-# <a name="workbooksortfield-resource-type"></a><span data-ttu-id="13aff-103">Тип ресурса Воркбуксортфиелд</span><span class="sxs-lookup"><span data-stu-id="13aff-103">workbookSortField resource type</span></span>
+# <a name="workbooksortfield-resource-type"></a><span data-ttu-id="506b5-103">Тип ресурса Воркбуксортфиелд</span><span class="sxs-lookup"><span data-stu-id="506b5-103">workbookSortField resource type</span></span>
+
+<span data-ttu-id="506b5-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="506b5-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="13aff-104">Представляет условие в операции сортировки.</span><span class="sxs-lookup"><span data-stu-id="13aff-104">Represents a condition in a sorting operation.</span></span>
+<span data-ttu-id="506b5-105">Представляет условие в операции сортировки.</span><span class="sxs-lookup"><span data-stu-id="506b5-105">Represents a condition in a sorting operation.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="13aff-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="13aff-105">Properties</span></span>
-| <span data-ttu-id="13aff-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="13aff-106">Property</span></span>     | <span data-ttu-id="13aff-107">Тип</span><span class="sxs-lookup"><span data-stu-id="13aff-107">Type</span></span>   |<span data-ttu-id="13aff-108">Описание</span><span class="sxs-lookup"><span data-stu-id="13aff-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="506b5-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="506b5-106">Properties</span></span>
+| <span data-ttu-id="506b5-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="506b5-107">Property</span></span>     | <span data-ttu-id="506b5-108">Тип</span><span class="sxs-lookup"><span data-stu-id="506b5-108">Type</span></span>   |<span data-ttu-id="506b5-109">Описание</span><span class="sxs-lookup"><span data-stu-id="506b5-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="13aff-109">ascending</span><span class="sxs-lookup"><span data-stu-id="13aff-109">ascending</span></span>|<span data-ttu-id="13aff-110">boolean</span><span class="sxs-lookup"><span data-stu-id="13aff-110">boolean</span></span>|<span data-ttu-id="13aff-111">Указывает, выполняется ли сортировка по возрастанию.</span><span class="sxs-lookup"><span data-stu-id="13aff-111">Represents whether the sorting is done in an ascending fashion.</span></span>|
-|<span data-ttu-id="13aff-112">color</span><span class="sxs-lookup"><span data-stu-id="13aff-112">color</span></span>|<span data-ttu-id="13aff-113">строка</span><span class="sxs-lookup"><span data-stu-id="13aff-113">string</span></span>|<span data-ttu-id="13aff-114">Представляет целевой цвет условия при сортировке по шрифту или цвету ячеек.</span><span class="sxs-lookup"><span data-stu-id="13aff-114">Represents the color that is the target of the condition if the sorting is on font or cell color.</span></span>|
-|<span data-ttu-id="13aff-115">dataOption</span><span class="sxs-lookup"><span data-stu-id="13aff-115">dataOption</span></span>|<span data-ttu-id="13aff-116">string</span><span class="sxs-lookup"><span data-stu-id="13aff-116">string</span></span>|<span data-ttu-id="13aff-p101">Представляет дополнительные параметры сортировки для этого поля. Возможные значения: `Normal`, `TextAsNumber`.</span><span class="sxs-lookup"><span data-stu-id="13aff-p101">Represents additional sorting options for this field. Possible values are: `Normal`, `TextAsNumber`.</span></span>|
-|<span data-ttu-id="13aff-119">key</span><span class="sxs-lookup"><span data-stu-id="13aff-119">key</span></span>|<span data-ttu-id="13aff-120">int</span><span class="sxs-lookup"><span data-stu-id="13aff-120">int</span></span>|<span data-ttu-id="13aff-p102">Представляет столбец (или строку в зависимости от ориентации сортировки), для которого задано условие. Представляется в виде расстояния от первого столбца (или строки).</span><span class="sxs-lookup"><span data-stu-id="13aff-p102">Represents the column (or row, depending on the sort orientation) that the condition is on. Represented as an offset from the first column (or row).</span></span>|
-|<span data-ttu-id="13aff-123">sortOn</span><span class="sxs-lookup"><span data-stu-id="13aff-123">sortOn</span></span>|<span data-ttu-id="13aff-124">string</span><span class="sxs-lookup"><span data-stu-id="13aff-124">string</span></span>|<span data-ttu-id="13aff-p103">Представляет тип сортировки этого условия. Возможные значения: `Value`, `CellColor`, `FontColor`, `Icon`.</span><span class="sxs-lookup"><span data-stu-id="13aff-p103">Represents the type of sorting of this condition. Possible values are: `Value`, `CellColor`, `FontColor`, `Icon`.</span></span>|
+|<span data-ttu-id="506b5-110">ascending</span><span class="sxs-lookup"><span data-stu-id="506b5-110">ascending</span></span>|<span data-ttu-id="506b5-111">boolean</span><span class="sxs-lookup"><span data-stu-id="506b5-111">boolean</span></span>|<span data-ttu-id="506b5-112">Указывает, выполняется ли сортировка по возрастанию.</span><span class="sxs-lookup"><span data-stu-id="506b5-112">Represents whether the sorting is done in an ascending fashion.</span></span>|
+|<span data-ttu-id="506b5-113">color</span><span class="sxs-lookup"><span data-stu-id="506b5-113">color</span></span>|<span data-ttu-id="506b5-114">строка</span><span class="sxs-lookup"><span data-stu-id="506b5-114">string</span></span>|<span data-ttu-id="506b5-115">Представляет целевой цвет условия при сортировке по шрифту или цвету ячеек.</span><span class="sxs-lookup"><span data-stu-id="506b5-115">Represents the color that is the target of the condition if the sorting is on font or cell color.</span></span>|
+|<span data-ttu-id="506b5-116">dataOption</span><span class="sxs-lookup"><span data-stu-id="506b5-116">dataOption</span></span>|<span data-ttu-id="506b5-117">строка</span><span class="sxs-lookup"><span data-stu-id="506b5-117">string</span></span>|<span data-ttu-id="506b5-p101">Представляет дополнительные параметры сортировки для этого поля. Возможные значения: `Normal`, `TextAsNumber`.</span><span class="sxs-lookup"><span data-stu-id="506b5-p101">Represents additional sorting options for this field. Possible values are: `Normal`, `TextAsNumber`.</span></span>|
+|<span data-ttu-id="506b5-120">key</span><span class="sxs-lookup"><span data-stu-id="506b5-120">key</span></span>|<span data-ttu-id="506b5-121">int</span><span class="sxs-lookup"><span data-stu-id="506b5-121">int</span></span>|<span data-ttu-id="506b5-p102">Представляет столбец (или строку в зависимости от ориентации сортировки), для которого задано условие. Представляется в виде расстояния от первого столбца (или строки).</span><span class="sxs-lookup"><span data-stu-id="506b5-p102">Represents the column (or row, depending on the sort orientation) that the condition is on. Represented as an offset from the first column (or row).</span></span>|
+|<span data-ttu-id="506b5-124">sortOn</span><span class="sxs-lookup"><span data-stu-id="506b5-124">sortOn</span></span>|<span data-ttu-id="506b5-125">string</span><span class="sxs-lookup"><span data-stu-id="506b5-125">string</span></span>|<span data-ttu-id="506b5-p103">Представляет тип сортировки этого условия. Возможные значения: `Value`, `CellColor`, `FontColor`, `Icon`.</span><span class="sxs-lookup"><span data-stu-id="506b5-p103">Represents the type of sorting of this condition. Possible values are: `Value`, `CellColor`, `FontColor`, `Icon`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="13aff-127">Отношения</span><span class="sxs-lookup"><span data-stu-id="13aff-127">Relationships</span></span>
-| <span data-ttu-id="13aff-128">Отношение</span><span class="sxs-lookup"><span data-stu-id="13aff-128">Relationship</span></span> | <span data-ttu-id="13aff-129">Тип</span><span class="sxs-lookup"><span data-stu-id="13aff-129">Type</span></span>   |<span data-ttu-id="13aff-130">Описание</span><span class="sxs-lookup"><span data-stu-id="13aff-130">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="506b5-128">Связи</span><span class="sxs-lookup"><span data-stu-id="506b5-128">Relationships</span></span>
+| <span data-ttu-id="506b5-129">Связь</span><span class="sxs-lookup"><span data-stu-id="506b5-129">Relationship</span></span> | <span data-ttu-id="506b5-130">Тип</span><span class="sxs-lookup"><span data-stu-id="506b5-130">Type</span></span>   |<span data-ttu-id="506b5-131">Описание</span><span class="sxs-lookup"><span data-stu-id="506b5-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="13aff-131">icon</span><span class="sxs-lookup"><span data-stu-id="13aff-131">icon</span></span>|[<span data-ttu-id="13aff-132">Воркбукикон</span><span class="sxs-lookup"><span data-stu-id="13aff-132">workbookIcon</span></span>](workbookicon.md)|<span data-ttu-id="13aff-133">Представляет значок, определенный условием, при сортировке по значку ячейки.</span><span class="sxs-lookup"><span data-stu-id="13aff-133">Represents the icon that is the target of the condition if the sorting is on the cell's icon.</span></span>|
+|<span data-ttu-id="506b5-132">icon</span><span class="sxs-lookup"><span data-stu-id="506b5-132">icon</span></span>|[<span data-ttu-id="506b5-133">воркбукикон</span><span class="sxs-lookup"><span data-stu-id="506b5-133">workbookIcon</span></span>](workbookicon.md)|<span data-ttu-id="506b5-134">Представляет значок, определенный условием, при сортировке по значку ячейки.</span><span class="sxs-lookup"><span data-stu-id="506b5-134">Represents the icon that is the target of the condition if the sorting is on the cell's icon.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="13aff-134">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="13aff-134">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="506b5-135">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="506b5-135">JSON representation</span></span>
 
-<span data-ttu-id="13aff-135">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="13aff-135">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="506b5-136">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="506b5-136">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

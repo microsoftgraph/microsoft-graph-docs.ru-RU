@@ -5,30 +5,32 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 05f882a54ab43dce3f985a4913b3f20c4ef3a1f9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8aedd6e049e2832c9db637827e8457928d950a3a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007713"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519955"
 ---
-# <a name="teamfunsettings-resource-type"></a><span data-ttu-id="f95dd-103">Тип ресурса Теамфунсеттингс</span><span class="sxs-lookup"><span data-stu-id="f95dd-103">teamFunSettings resource type</span></span>
+# <a name="teamfunsettings-resource-type"></a><span data-ttu-id="d10da-103">Тип ресурса Теамфунсеттингс</span><span class="sxs-lookup"><span data-stu-id="d10da-103">teamFunSettings resource type</span></span>
+
+<span data-ttu-id="d10da-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="d10da-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f95dd-104">Параметры для настройки использования Giphy, мемес и наклеек в [команде](team.md).</span><span class="sxs-lookup"><span data-stu-id="f95dd-104">Settings to configure use of Giphy, memes, and stickers in the [team](team.md).</span></span>
+<span data-ttu-id="d10da-105">Параметры для настройки использования Giphy, мемес и наклеек в [команде](team.md).</span><span class="sxs-lookup"><span data-stu-id="d10da-105">Settings to configure use of Giphy, memes, and stickers in the [team](team.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="f95dd-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="f95dd-105">Properties</span></span>
-| <span data-ttu-id="f95dd-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="f95dd-106">Property</span></span>     | <span data-ttu-id="f95dd-107">Тип</span><span class="sxs-lookup"><span data-stu-id="f95dd-107">Type</span></span>   |<span data-ttu-id="f95dd-108">Описание</span><span class="sxs-lookup"><span data-stu-id="f95dd-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="d10da-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="d10da-106">Properties</span></span>
+| <span data-ttu-id="d10da-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="d10da-107">Property</span></span>     | <span data-ttu-id="d10da-108">Тип</span><span class="sxs-lookup"><span data-stu-id="d10da-108">Type</span></span>   |<span data-ttu-id="d10da-109">Описание</span><span class="sxs-lookup"><span data-stu-id="d10da-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f95dd-109">Алловгифи</span><span class="sxs-lookup"><span data-stu-id="f95dd-109">allowGiphy</span></span>|<span data-ttu-id="f95dd-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="f95dd-110">Boolean</span></span>|<span data-ttu-id="f95dd-111">Если задано значение true, включается использование Giphy.</span><span class="sxs-lookup"><span data-stu-id="f95dd-111">If set to true, enables Giphy use.</span></span>|
-|<span data-ttu-id="f95dd-112">Гификонтентратинг</span><span class="sxs-lookup"><span data-stu-id="f95dd-112">giphyContentRating</span></span>|<span data-ttu-id="f95dd-113">String (enum)</span><span class="sxs-lookup"><span data-stu-id="f95dd-113">String (enum)</span></span>|<span data-ttu-id="f95dd-114">Оценка содержимого Giphy.</span><span class="sxs-lookup"><span data-stu-id="f95dd-114">Giphy content rating.</span></span> <span data-ttu-id="f95dd-115">Возможные значения: `moderate`, `strict`.</span><span class="sxs-lookup"><span data-stu-id="f95dd-115">Possible values are: `moderate`, `strict`.</span></span>|
-|<span data-ttu-id="f95dd-116">Алловстиккерсандмемес</span><span class="sxs-lookup"><span data-stu-id="f95dd-116">allowStickersAndMemes</span></span>|<span data-ttu-id="f95dd-117">Boolean</span><span class="sxs-lookup"><span data-stu-id="f95dd-117">Boolean</span></span>|<span data-ttu-id="f95dd-118">Если задано значение true, пользователям разрешается включать наклейки и мемес.</span><span class="sxs-lookup"><span data-stu-id="f95dd-118">If set to true, enables users to include stickers and memes.</span></span>|
-|<span data-ttu-id="f95dd-119">Алловкустоммемес</span><span class="sxs-lookup"><span data-stu-id="f95dd-119">allowCustomMemes</span></span>|<span data-ttu-id="f95dd-120">Boolean</span><span class="sxs-lookup"><span data-stu-id="f95dd-120">Boolean</span></span>|<span data-ttu-id="f95dd-121">Если задано значение true, пользователи могут включать пользовательские мемес.</span><span class="sxs-lookup"><span data-stu-id="f95dd-121">If set to true, enables users to include custom memes.</span></span>|
+|<span data-ttu-id="d10da-110">алловгифи</span><span class="sxs-lookup"><span data-stu-id="d10da-110">allowGiphy</span></span>|<span data-ttu-id="d10da-111">Логический</span><span class="sxs-lookup"><span data-stu-id="d10da-111">Boolean</span></span>|<span data-ttu-id="d10da-112">Если задано значение true, включается использование Giphy.</span><span class="sxs-lookup"><span data-stu-id="d10da-112">If set to true, enables Giphy use.</span></span>|
+|<span data-ttu-id="d10da-113">гификонтентратинг</span><span class="sxs-lookup"><span data-stu-id="d10da-113">giphyContentRating</span></span>|<span data-ttu-id="d10da-114">String (enum)</span><span class="sxs-lookup"><span data-stu-id="d10da-114">String (enum)</span></span>|<span data-ttu-id="d10da-115">Оценка содержимого Giphy.</span><span class="sxs-lookup"><span data-stu-id="d10da-115">Giphy content rating.</span></span> <span data-ttu-id="d10da-116">Возможные значения: `moderate`, `strict`.</span><span class="sxs-lookup"><span data-stu-id="d10da-116">Possible values are: `moderate`, `strict`.</span></span>|
+|<span data-ttu-id="d10da-117">алловстиккерсандмемес</span><span class="sxs-lookup"><span data-stu-id="d10da-117">allowStickersAndMemes</span></span>|<span data-ttu-id="d10da-118">Логический</span><span class="sxs-lookup"><span data-stu-id="d10da-118">Boolean</span></span>|<span data-ttu-id="d10da-119">Если задано значение true, пользователям разрешается включать наклейки и мемес.</span><span class="sxs-lookup"><span data-stu-id="d10da-119">If set to true, enables users to include stickers and memes.</span></span>|
+|<span data-ttu-id="d10da-120">алловкустоммемес</span><span class="sxs-lookup"><span data-stu-id="d10da-120">allowCustomMemes</span></span>|<span data-ttu-id="d10da-121">Логический</span><span class="sxs-lookup"><span data-stu-id="d10da-121">Boolean</span></span>|<span data-ttu-id="d10da-122">Если задано значение true, пользователи могут включать пользовательские мемес.</span><span class="sxs-lookup"><span data-stu-id="d10da-122">If set to true, enables users to include custom memes.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="f95dd-122">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="f95dd-122">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d10da-123">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d10da-123">JSON representation</span></span>
 
-<span data-ttu-id="f95dd-123">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f95dd-123">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="d10da-124">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d10da-124">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

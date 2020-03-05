@@ -5,38 +5,40 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: a7d534aecf6e7ffa427ea175ae06e2b1820435b2
-ms.sourcegitcommit: 9cd96fcbaae9d2ebaa3f3b69e440a1aea106f535
+ms.openlocfilehash: abd68f3623f78d57b2db5812038223dc6137027f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/17/2019
-ms.locfileid: "36450816"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520768"
 ---
-# <a name="settings-resource-type"></a><span data-ttu-id="e8c48-103">Тип ресурса settings</span><span class="sxs-lookup"><span data-stu-id="e8c48-103">settings resource type</span></span>
+# <a name="settings-resource-type"></a><span data-ttu-id="125f2-103">Тип ресурса settings</span><span class="sxs-lookup"><span data-stu-id="125f2-103">settings resource type</span></span>
+
+<span data-ttu-id="125f2-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="125f2-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e8c48-104">Представляет текущие обязательные параметры для пользователя с помощью API аналитики.</span><span class="sxs-lookup"><span data-stu-id="e8c48-104">Represents the current required settings for a user to use the analytics API.</span></span>
+<span data-ttu-id="125f2-105">Представляет текущие обязательные параметры для пользователя с помощью API аналитики.</span><span class="sxs-lookup"><span data-stu-id="125f2-105">Represents the current required settings for a user to use the analytics API.</span></span>
 
-<span data-ttu-id="e8c48-105">Чтобы API аналитики возвращал результаты для пользователей, они должны иметь размещенный в облаке почтовый ящик, включенный для Microsoft Graph, имеющий действительную лицензию MyAnalytics и быть участником использования MyAnalytics.</span><span class="sxs-lookup"><span data-stu-id="e8c48-105">For the analytics API to return results for users, they must have a cloud-hosted mailbox that’s enabled for Microsoft Graph, have a valid MyAnalytics license, and be opted in to using MyAnalytics.</span></span>
+<span data-ttu-id="125f2-106">Чтобы API аналитики возвращал результаты для пользователей, они должны иметь размещенный в облаке почтовый ящик, включенный для Microsoft Graph, имеющий действительную лицензию MyAnalytics и быть участником использования MyAnalytics.</span><span class="sxs-lookup"><span data-stu-id="125f2-106">For the analytics API to return results for users, they must have a cloud-hosted mailbox that’s enabled for Microsoft Graph, have a valid MyAnalytics license, and be opted in to using MyAnalytics.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="e8c48-106">Методы</span><span class="sxs-lookup"><span data-stu-id="e8c48-106">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="125f2-107">Методы</span><span class="sxs-lookup"><span data-stu-id="125f2-107">Methods</span></span>
 
-| <span data-ttu-id="e8c48-107">Метод</span><span class="sxs-lookup"><span data-stu-id="e8c48-107">Method</span></span>       | <span data-ttu-id="e8c48-108">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="e8c48-108">Return Type</span></span> | <span data-ttu-id="e8c48-109">Описание</span><span class="sxs-lookup"><span data-stu-id="e8c48-109">Description</span></span> |
+| <span data-ttu-id="125f2-108">Метод</span><span class="sxs-lookup"><span data-stu-id="125f2-108">Method</span></span>       | <span data-ttu-id="125f2-109">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="125f2-109">Return Type</span></span> | <span data-ttu-id="125f2-110">Описание</span><span class="sxs-lookup"><span data-stu-id="125f2-110">Description</span></span> |
 |:-------------|:------------|:------------|
-[<span data-ttu-id="e8c48-110">Получение параметров</span><span class="sxs-lookup"><span data-stu-id="e8c48-110">Get settings</span></span>](../api/useranalytics-get-settings.md) | [<span data-ttu-id="e8c48-111">settings</span><span class="sxs-lookup"><span data-stu-id="e8c48-111">settings</span></span>](settings.md) | <span data-ttu-id="e8c48-112">Получение следующих параметров свойства для пользователя.</span><span class="sxs-lookup"><span data-stu-id="e8c48-112">Get the following property settings for a user.</span></span>|
+[<span data-ttu-id="125f2-111">Получение параметров</span><span class="sxs-lookup"><span data-stu-id="125f2-111">Get settings</span></span>](../api/useranalytics-get-settings.md) | [<span data-ttu-id="125f2-112">settings</span><span class="sxs-lookup"><span data-stu-id="125f2-112">settings</span></span>](settings.md) | <span data-ttu-id="125f2-113">Получение следующих параметров свойства для пользователя.</span><span class="sxs-lookup"><span data-stu-id="125f2-113">Get the following property settings for a user.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="e8c48-113">Свойства</span><span class="sxs-lookup"><span data-stu-id="e8c48-113">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="125f2-114">Свойства</span><span class="sxs-lookup"><span data-stu-id="125f2-114">Properties</span></span>
 
-| <span data-ttu-id="e8c48-114">Свойство</span><span class="sxs-lookup"><span data-stu-id="e8c48-114">Property</span></span>     | <span data-ttu-id="e8c48-115">Тип</span><span class="sxs-lookup"><span data-stu-id="e8c48-115">Type</span></span>        | <span data-ttu-id="e8c48-116">Описание</span><span class="sxs-lookup"><span data-stu-id="e8c48-116">Description</span></span> |
+| <span data-ttu-id="125f2-115">Свойство</span><span class="sxs-lookup"><span data-stu-id="125f2-115">Property</span></span>     | <span data-ttu-id="125f2-116">Тип</span><span class="sxs-lookup"><span data-stu-id="125f2-116">Type</span></span>        | <span data-ttu-id="125f2-117">Описание</span><span class="sxs-lookup"><span data-stu-id="125f2-117">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="e8c48-117">хасграфмаилбокс</span><span class="sxs-lookup"><span data-stu-id="e8c48-117">hasGraphMailbox</span></span>|<span data-ttu-id="e8c48-118">Boolean</span><span class="sxs-lookup"><span data-stu-id="e8c48-118">Boolean</span></span>|<span data-ttu-id="e8c48-119">Указывает, размещается ли основной почтовый ящик пользователя в облаке и включено ли для Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="e8c48-119">Specifies if the user's primary mailbox is hosted in the cloud and is enabled for Microsoft Graph.</span></span>|
-|<span data-ttu-id="e8c48-120">хаслиценсе</span><span class="sxs-lookup"><span data-stu-id="e8c48-120">hasLicense</span></span>|<span data-ttu-id="e8c48-121">Boolean</span><span class="sxs-lookup"><span data-stu-id="e8c48-121">Boolean</span></span>|<span data-ttu-id="e8c48-122">Указывает, назначена ли лицензия MyAnalytics для пользователя.</span><span class="sxs-lookup"><span data-stu-id="e8c48-122">Specifies if the user has a MyAnalytics license assigned.</span></span>|
-|<span data-ttu-id="e8c48-123">хасоптедаут</span><span class="sxs-lookup"><span data-stu-id="e8c48-123">hasOptedOut</span></span>|<span data-ttu-id="e8c48-124">Boolean</span><span class="sxs-lookup"><span data-stu-id="e8c48-124">Boolean</span></span>|<span data-ttu-id="e8c48-125">Указывает, выбрал ли пользователь из MyAnalytics.</span><span class="sxs-lookup"><span data-stu-id="e8c48-125">Specifies if the user opted out of MyAnalytics.</span></span>|
+|<span data-ttu-id="125f2-118">хасграфмаилбокс</span><span class="sxs-lookup"><span data-stu-id="125f2-118">hasGraphMailbox</span></span>|<span data-ttu-id="125f2-119">Логический</span><span class="sxs-lookup"><span data-stu-id="125f2-119">Boolean</span></span>|<span data-ttu-id="125f2-120">Указывает, размещается ли основной почтовый ящик пользователя в облаке и включено ли для Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="125f2-120">Specifies if the user's primary mailbox is hosted in the cloud and is enabled for Microsoft Graph.</span></span>|
+|<span data-ttu-id="125f2-121">хаслиценсе</span><span class="sxs-lookup"><span data-stu-id="125f2-121">hasLicense</span></span>|<span data-ttu-id="125f2-122">Логический</span><span class="sxs-lookup"><span data-stu-id="125f2-122">Boolean</span></span>|<span data-ttu-id="125f2-123">Указывает, назначена ли лицензия MyAnalytics для пользователя.</span><span class="sxs-lookup"><span data-stu-id="125f2-123">Specifies if the user has a MyAnalytics license assigned.</span></span>|
+|<span data-ttu-id="125f2-124">хасоптедаут</span><span class="sxs-lookup"><span data-stu-id="125f2-124">hasOptedOut</span></span>|<span data-ttu-id="125f2-125">Логический</span><span class="sxs-lookup"><span data-stu-id="125f2-125">Boolean</span></span>|<span data-ttu-id="125f2-126">Указывает, выбрал ли пользователь из MyAnalytics.</span><span class="sxs-lookup"><span data-stu-id="125f2-126">Specifies if the user opted out of MyAnalytics.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="e8c48-126">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="e8c48-126">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="125f2-127">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="125f2-127">JSON representation</span></span>
 
-<span data-ttu-id="e8c48-127">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e8c48-127">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="125f2-128">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="125f2-128">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

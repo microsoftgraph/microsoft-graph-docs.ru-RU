@@ -5,28 +5,30 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: dab0376441904f7ec935aa87da3b825d2a0e197d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f28b58b5f6bdadf33412a125a841d1c614285557
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007881"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520109"
 ---
-# <a name="stringkeyattributemappingsourcevaluepair-resource-type"></a><span data-ttu-id="35511-103">Тип ресурса Стрингкэйаттрибутемаппингсаурцевалуепаир</span><span class="sxs-lookup"><span data-stu-id="35511-103">stringKeyAttributeMappingSourceValuePair resource type</span></span>
+# <a name="stringkeyattributemappingsourcevaluepair-resource-type"></a><span data-ttu-id="59267-103">Тип ресурса Стрингкэйаттрибутемаппингсаурцевалуепаир</span><span class="sxs-lookup"><span data-stu-id="59267-103">stringKeyAttributeMappingSourceValuePair resource type</span></span>
+
+<span data-ttu-id="59267-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="59267-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="35511-104">Представляет собой комбинацию "ключ-значение", в которой ключ является строкой, а значение — [аттрибутемаппингсаурце](synchronization-attributemappingsource.md).</span><span class="sxs-lookup"><span data-stu-id="35511-104">Represents a key-value pair where the key is a string and the value is [attributeMappingSource](synchronization-attributemappingsource.md).</span></span>
+<span data-ttu-id="59267-105">Представляет собой комбинацию "ключ-значение", в которой ключ является строкой, а значение — [аттрибутемаппингсаурце](synchronization-attributemappingsource.md).</span><span class="sxs-lookup"><span data-stu-id="59267-105">Represents a key-value pair where the key is a string and the value is [attributeMappingSource](synchronization-attributemappingsource.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="35511-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="35511-105">Properties</span></span>
-| <span data-ttu-id="35511-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="35511-106">Property</span></span>     | <span data-ttu-id="35511-107">Тип</span><span class="sxs-lookup"><span data-stu-id="35511-107">Type</span></span>   |<span data-ttu-id="35511-108">Описание</span><span class="sxs-lookup"><span data-stu-id="35511-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="59267-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="59267-106">Properties</span></span>
+| <span data-ttu-id="59267-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="59267-107">Property</span></span>     | <span data-ttu-id="59267-108">Тип</span><span class="sxs-lookup"><span data-stu-id="59267-108">Type</span></span>   |<span data-ttu-id="59267-109">Описание</span><span class="sxs-lookup"><span data-stu-id="59267-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="35511-109">key</span><span class="sxs-lookup"><span data-stu-id="35511-109">key</span></span>|<span data-ttu-id="35511-110">String</span><span class="sxs-lookup"><span data-stu-id="35511-110">String</span></span>|<span data-ttu-id="35511-111">Имя параметра.</span><span class="sxs-lookup"><span data-stu-id="35511-111">The name of the parameter.</span></span>|
-|<span data-ttu-id="35511-112">значение</span><span class="sxs-lookup"><span data-stu-id="35511-112">value</span></span>|[<span data-ttu-id="35511-113">Аттрибутемаппингсаурце</span><span class="sxs-lookup"><span data-stu-id="35511-113">attributeMappingSource</span></span>](synchronization-attributemappingsource.md)|<span data-ttu-id="35511-114">Значение параметра.</span><span class="sxs-lookup"><span data-stu-id="35511-114">The value of the parameter.</span></span>|
+|<span data-ttu-id="59267-110">key</span><span class="sxs-lookup"><span data-stu-id="59267-110">key</span></span>|<span data-ttu-id="59267-111">String</span><span class="sxs-lookup"><span data-stu-id="59267-111">String</span></span>|<span data-ttu-id="59267-112">Имя параметра.</span><span class="sxs-lookup"><span data-stu-id="59267-112">The name of the parameter.</span></span>|
+|<span data-ttu-id="59267-113">значение</span><span class="sxs-lookup"><span data-stu-id="59267-113">value</span></span>|[<span data-ttu-id="59267-114">аттрибутемаппингсаурце</span><span class="sxs-lookup"><span data-stu-id="59267-114">attributeMappingSource</span></span>](synchronization-attributemappingsource.md)|<span data-ttu-id="59267-115">Значение параметра.</span><span class="sxs-lookup"><span data-stu-id="59267-115">The value of the parameter.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="35511-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="35511-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="59267-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="59267-116">JSON representation</span></span>
 
-<span data-ttu-id="35511-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="35511-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="59267-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="59267-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,31 +1,33 @@
 ---
 title: Тип ресурса Теамдисковерисеттингс
-description: Параметры, позволяющие настроить обнаружение команды другими пользователями.
+description: Параметры для настройки возможности обнаружения команды другими пользователями.
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 6dd1c3728d91be88689f72e020b773f7875807a1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9a668c9d3b234fede0ad5c151e1dbbc95fc93516
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964573"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519962"
 ---
-# <a name="teamdiscoverysettings-resource-type"></a><span data-ttu-id="baec7-103">Тип ресурса Теамдисковерисеттингс</span><span class="sxs-lookup"><span data-stu-id="baec7-103">teamDiscoverySettings resource type</span></span>
+# <a name="teamdiscoverysettings-resource-type"></a><span data-ttu-id="b7405-103">Тип ресурса Теамдисковерисеттингс</span><span class="sxs-lookup"><span data-stu-id="b7405-103">teamDiscoverySettings resource type</span></span>
+
+<span data-ttu-id="b7405-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="b7405-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="baec7-104">Предоставляет параметры, позволяющие другим пользователям настраивать обнаружение [команды](team.md) .</span><span class="sxs-lookup"><span data-stu-id="baec7-104">Provides settings to enable others to configure [team](team.md) discoverability.</span></span> <span data-ttu-id="baec7-105">Параметры обнаружения можно изменять только для частных Teams.</span><span class="sxs-lookup"><span data-stu-id="baec7-105">You can only modify discovery settings for private teams.</span></span>
+<span data-ttu-id="b7405-105">Предоставляет параметры, позволяющие другим пользователям настраивать обнаружение [команды](team.md) .</span><span class="sxs-lookup"><span data-stu-id="b7405-105">Provides settings to enable others to configure [team](team.md) discoverability.</span></span> <span data-ttu-id="b7405-106">Параметры обнаружения можно изменять только для частных Teams.</span><span class="sxs-lookup"><span data-stu-id="b7405-106">You can only modify discovery settings for private teams.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="baec7-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="baec7-106">Properties</span></span>
-| <span data-ttu-id="baec7-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="baec7-107">Property</span></span>     | <span data-ttu-id="baec7-108">Тип</span><span class="sxs-lookup"><span data-stu-id="baec7-108">Type</span></span>   |<span data-ttu-id="baec7-109">Описание</span><span class="sxs-lookup"><span data-stu-id="baec7-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="b7405-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="b7405-107">Properties</span></span>
+| <span data-ttu-id="b7405-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="b7405-108">Property</span></span>     | <span data-ttu-id="b7405-109">Тип</span><span class="sxs-lookup"><span data-stu-id="b7405-109">Type</span></span>   |<span data-ttu-id="b7405-110">Описание</span><span class="sxs-lookup"><span data-stu-id="b7405-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="baec7-110">Шовинтеамссеарчандсугжестионс</span><span class="sxs-lookup"><span data-stu-id="baec7-110">showInTeamsSearchAndSuggestions</span></span>|<span data-ttu-id="baec7-111">Boolean</span><span class="sxs-lookup"><span data-stu-id="baec7-111">Boolean</span></span>|<span data-ttu-id="baec7-112">Если задано значение true, команда становится видимой через поиск и предложения от клиента Teams.</span><span class="sxs-lookup"><span data-stu-id="baec7-112">If set to true, the team is visible via search and suggestions from the Teams client.</span></span>|
+|<span data-ttu-id="b7405-111">шовинтеамссеарчандсугжестионс</span><span class="sxs-lookup"><span data-stu-id="b7405-111">showInTeamsSearchAndSuggestions</span></span>|<span data-ttu-id="b7405-112">Логический</span><span class="sxs-lookup"><span data-stu-id="b7405-112">Boolean</span></span>|<span data-ttu-id="b7405-113">Если задано значение true, команда становится видимой через поиск и предложения от клиента Teams.</span><span class="sxs-lookup"><span data-stu-id="b7405-113">If set to true, the team is visible via search and suggestions from the Teams client.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="baec7-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="baec7-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b7405-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="b7405-114">JSON representation</span></span>
 
-<span data-ttu-id="baec7-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="baec7-114">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="b7405-115">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b7405-115">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

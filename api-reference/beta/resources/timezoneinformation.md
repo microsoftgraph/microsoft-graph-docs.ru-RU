@@ -5,28 +5,30 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: ea20a14ddd18e533767e7e969a91a07f6e2ad479
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3deae74f1ffc991e6e9178a46575c21d69272d2c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964291"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519682"
 ---
-# <a name="timezoneinformation-resource-type"></a><span data-ttu-id="51c75-104">Тип ресурса timeZoneInformation</span><span class="sxs-lookup"><span data-stu-id="51c75-104">timeZoneInformation resource type</span></span>
+# <a name="timezoneinformation-resource-type"></a><span data-ttu-id="e4904-104">Тип ресурса timeZoneInformation</span><span class="sxs-lookup"><span data-stu-id="e4904-104">timeZoneInformation resource type</span></span>
+
+<span data-ttu-id="e4904-105">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="e4904-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="51c75-105">Представляет часовой пояс.</span><span class="sxs-lookup"><span data-stu-id="51c75-105">Represents a time zone.</span></span> <span data-ttu-id="51c75-106">Поддерживаются формат Windows и формат [часового пояса IANA](https://www.iana.org/time-zones), также известного как часовой пояс Олсона (после устранения известной проблемы).</span><span class="sxs-lookup"><span data-stu-id="51c75-106">The supported format is Windows, and [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format as well when the current known problem is fixed.</span></span>
+<span data-ttu-id="e4904-106">Представляет часовой пояс.</span><span class="sxs-lookup"><span data-stu-id="e4904-106">Represents a time zone.</span></span> <span data-ttu-id="e4904-107">Поддерживаются формат Windows и формат [часового пояса IANA](https://www.iana.org/time-zones), также известного как часовой пояс Олсона (после устранения известной проблемы).</span><span class="sxs-lookup"><span data-stu-id="e4904-107">The supported format is Windows, and [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format as well when the current known problem is fixed.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="51c75-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="51c75-107">Properties</span></span>
-| <span data-ttu-id="51c75-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="51c75-108">Property</span></span>     | <span data-ttu-id="51c75-109">Тип</span><span class="sxs-lookup"><span data-stu-id="51c75-109">Type</span></span>   |<span data-ttu-id="51c75-110">Описание</span><span class="sxs-lookup"><span data-stu-id="51c75-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="e4904-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="e4904-108">Properties</span></span>
+| <span data-ttu-id="e4904-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="e4904-109">Property</span></span>     | <span data-ttu-id="e4904-110">Тип</span><span class="sxs-lookup"><span data-stu-id="e4904-110">Type</span></span>   |<span data-ttu-id="e4904-111">Описание</span><span class="sxs-lookup"><span data-stu-id="e4904-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="51c75-111">alias</span><span class="sxs-lookup"><span data-stu-id="51c75-111">alias</span></span>|<span data-ttu-id="51c75-112">string</span><span class="sxs-lookup"><span data-stu-id="51c75-112">string</span></span>|<span data-ttu-id="51c75-113">Идентификатор часового пояса.</span><span class="sxs-lookup"><span data-stu-id="51c75-113">An identifier for the time zone.</span></span>|
-|<span data-ttu-id="51c75-114">displayName</span><span class="sxs-lookup"><span data-stu-id="51c75-114">displayName</span></span>|<span data-ttu-id="51c75-115">string</span><span class="sxs-lookup"><span data-stu-id="51c75-115">string</span></span>|<span data-ttu-id="51c75-116">Отображаемое имя часового пояса.</span><span class="sxs-lookup"><span data-stu-id="51c75-116">A display string that represents the time zone.</span></span>|
+|<span data-ttu-id="e4904-112">alias</span><span class="sxs-lookup"><span data-stu-id="e4904-112">alias</span></span>|<span data-ttu-id="e4904-113">string</span><span class="sxs-lookup"><span data-stu-id="e4904-113">string</span></span>|<span data-ttu-id="e4904-114">Идентификатор часового пояса.</span><span class="sxs-lookup"><span data-stu-id="e4904-114">An identifier for the time zone.</span></span>|
+|<span data-ttu-id="e4904-115">displayName</span><span class="sxs-lookup"><span data-stu-id="e4904-115">displayName</span></span>|<span data-ttu-id="e4904-116">string</span><span class="sxs-lookup"><span data-stu-id="e4904-116">string</span></span>|<span data-ttu-id="e4904-117">Отображаемое имя часового пояса.</span><span class="sxs-lookup"><span data-stu-id="e4904-117">A display string that represents the time zone.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="51c75-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="51c75-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e4904-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="e4904-118">JSON representation</span></span>
 
-<span data-ttu-id="51c75-118">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="51c75-118">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="e4904-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e4904-119">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

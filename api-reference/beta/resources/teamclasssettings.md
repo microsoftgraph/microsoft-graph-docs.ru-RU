@@ -5,27 +5,29 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: ca8d345cd229c4a6c003c87865b5aaddf01096b4
-ms.sourcegitcommit: 60dfb2ad9ef17f2918c4ee34ebb74f63e32ce2d3
+ms.openlocfilehash: 50fd73203697b008163337eb32ab9b54c0e8fd0b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37998618"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519969"
 ---
-# <a name="teamclasssettings-resource-type"></a><span data-ttu-id="051c3-103">Тип ресурса Теамкласссеттингс</span><span class="sxs-lookup"><span data-stu-id="051c3-103">teamClassSettings resource type</span></span>
+# <a name="teamclasssettings-resource-type"></a><span data-ttu-id="6b2f7-103">Тип ресурса Теамкласссеттингс</span><span class="sxs-lookup"><span data-stu-id="6b2f7-103">teamClassSettings resource type</span></span>
+
+<span data-ttu-id="6b2f7-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="6b2f7-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="051c3-104">Представляет свойства [команды](team.md), зависящие от класса.</span><span class="sxs-lookup"><span data-stu-id="051c3-104">Represents class-specific properties of a [team](team.md).</span></span> <span data-ttu-id="051c3-105">Доступно только в том случае, если команда представляет класс.</span><span class="sxs-lookup"><span data-stu-id="051c3-105">Available only when the team represents a class.</span></span>
+<span data-ttu-id="6b2f7-105">Представляет свойства [команды](team.md), зависящие от класса.</span><span class="sxs-lookup"><span data-stu-id="6b2f7-105">Represents class-specific properties of a [team](team.md).</span></span> <span data-ttu-id="6b2f7-106">Доступна только в том случае, если команда представляет класс.</span><span class="sxs-lookup"><span data-stu-id="6b2f7-106">Available only when the team represents a class.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="051c3-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="051c3-106">Properties</span></span>
-| <span data-ttu-id="051c3-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="051c3-107">Property</span></span>     | <span data-ttu-id="051c3-108">Тип</span><span class="sxs-lookup"><span data-stu-id="051c3-108">Type</span></span>   |<span data-ttu-id="051c3-109">Описание</span><span class="sxs-lookup"><span data-stu-id="051c3-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="6b2f7-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="6b2f7-107">Properties</span></span>
+| <span data-ttu-id="6b2f7-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="6b2f7-108">Property</span></span>     | <span data-ttu-id="6b2f7-109">Тип</span><span class="sxs-lookup"><span data-stu-id="6b2f7-109">Type</span></span>   |<span data-ttu-id="6b2f7-110">Описание</span><span class="sxs-lookup"><span data-stu-id="6b2f7-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="051c3-110">нотифигуардиансабаутассигнментс</span><span class="sxs-lookup"><span data-stu-id="051c3-110">notifyGuardiansAboutAssignments</span></span>|<span data-ttu-id="051c3-111">Boolean</span><span class="sxs-lookup"><span data-stu-id="051c3-111">Boolean</span></span>|<span data-ttu-id="051c3-112">Если задано `true`значение, разрешает отправку сообщений сводки по неделям в родительские и опекуны, если администратор клиента включил параметр глобально.</span><span class="sxs-lookup"><span data-stu-id="051c3-112">If set to `true`, enables sending of weekly assignments digest emails to parents/guardians, provided the tenant admin has enabled the setting globally.</span></span>|
+|<span data-ttu-id="6b2f7-111">нотифигуардиансабаутассигнментс</span><span class="sxs-lookup"><span data-stu-id="6b2f7-111">notifyGuardiansAboutAssignments</span></span>|<span data-ttu-id="6b2f7-112">Логический</span><span class="sxs-lookup"><span data-stu-id="6b2f7-112">Boolean</span></span>|<span data-ttu-id="6b2f7-113">Если задано `true`значение, разрешает отправку сообщений сводки по неделям в родительские и опекуны, если администратор клиента включил параметр глобально.</span><span class="sxs-lookup"><span data-stu-id="6b2f7-113">If set to `true`, enables sending of weekly assignments digest emails to parents/guardians, provided the tenant admin has enabled the setting globally.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="051c3-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="051c3-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6b2f7-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="6b2f7-114">JSON representation</span></span>
 
-<span data-ttu-id="051c3-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="051c3-114">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="6b2f7-115">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="6b2f7-115">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

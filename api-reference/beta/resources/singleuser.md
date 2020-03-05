@@ -5,32 +5,34 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0d4db47278051dd79b697dc352549b95b872e4aa
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: 13792bcffabbc9dceb272cd1cf156fbf9a5a5a10
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331406"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520571"
 ---
-# <a name="singleuser-complex-type"></a><span data-ttu-id="ff477-103">сложный тип SingleUser.</span><span class="sxs-lookup"><span data-stu-id="ff477-103">singleUser complex type</span></span>
+# <a name="singleuser-complex-type"></a><span data-ttu-id="f3e6d-103">сложный тип SingleUser.</span><span class="sxs-lookup"><span data-stu-id="f3e6d-103">singleUser complex type</span></span>
+
+<span data-ttu-id="f3e6d-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="f3e6d-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ff477-104">Используется в параметрах просмотра запроса, утверждения и назначения для [политики назначения пакетов Access](accesspackageassignmentpolicy.md).</span><span class="sxs-lookup"><span data-stu-id="ff477-104">Used in the request, approval, and assignment review settings of an [access package assignment policy](accesspackageassignmentpolicy.md).</span></span> <span data-ttu-id="ff477-105">Это `@odata.type` значение `#microsoft.graph.singleUser` указывает на то, что этот набор пользователей определяет определенного пользователя в клиенте, который будет разрешен в качестве запрашивающего, утверждающего или проверяющего.</span><span class="sxs-lookup"><span data-stu-id="ff477-105">The  `@odata.type` value `#microsoft.graph.singleUser` indicates that this user set identifies a specific user in the tenant who will be allowed as a requestor, approver, or reviewer.</span></span>
+<span data-ttu-id="f3e6d-105">Используется в параметрах просмотра запроса, утверждения и назначения для [политики назначения пакетов Access](accesspackageassignmentpolicy.md).</span><span class="sxs-lookup"><span data-stu-id="f3e6d-105">Used in the request, approval, and assignment review settings of an [access package assignment policy](accesspackageassignmentpolicy.md).</span></span> <span data-ttu-id="f3e6d-106">Это `@odata.type` значение `#microsoft.graph.singleUser` указывает на то, что этот набор пользователей определяет определенного пользователя в клиенте, который будет разрешен в качестве запрашивающего, утверждающего или проверяющего.</span><span class="sxs-lookup"><span data-stu-id="f3e6d-106">The  `@odata.type` value `#microsoft.graph.singleUser` indicates that this user set identifies a specific user in the tenant who will be allowed as a requestor, approver, or reviewer.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="ff477-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="ff477-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="f3e6d-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="f3e6d-107">Properties</span></span>
 
-<span data-ttu-id="ff477-107">Этот тип имеет следующие свойства:</span><span class="sxs-lookup"><span data-stu-id="ff477-107">This type has the following properties:</span></span>
+<span data-ttu-id="f3e6d-108">Этот тип имеет следующие свойства:</span><span class="sxs-lookup"><span data-stu-id="f3e6d-108">This type has the following properties:</span></span>
 
-| <span data-ttu-id="ff477-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="ff477-108">Property</span></span>                     | <span data-ttu-id="ff477-109">Тип</span><span class="sxs-lookup"><span data-stu-id="ff477-109">Type</span></span>                      | <span data-ttu-id="ff477-110">Описание</span><span class="sxs-lookup"><span data-stu-id="ff477-110">Description</span></span> |
+| <span data-ttu-id="f3e6d-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="f3e6d-109">Property</span></span>                     | <span data-ttu-id="f3e6d-110">Тип</span><span class="sxs-lookup"><span data-stu-id="f3e6d-110">Type</span></span>                      | <span data-ttu-id="f3e6d-111">Описание</span><span class="sxs-lookup"><span data-stu-id="f3e6d-111">Description</span></span> |
 | :--------------------------- | :------------------------ | :---------- |
-| <span data-ttu-id="ff477-111">id</span><span class="sxs-lookup"><span data-stu-id="ff477-111">id</span></span> |<span data-ttu-id="ff477-112">Строка</span><span class="sxs-lookup"><span data-stu-id="ff477-112">String</span></span> | <span data-ttu-id="ff477-113">Идентификатор пользователя в Azure AD.</span><span class="sxs-lookup"><span data-stu-id="ff477-113">The ID of the user in Azure AD.</span></span> |
-| <span data-ttu-id="ff477-114">description</span><span class="sxs-lookup"><span data-stu-id="ff477-114">description</span></span> |<span data-ttu-id="ff477-115">String</span><span class="sxs-lookup"><span data-stu-id="ff477-115">String</span></span> | <span data-ttu-id="ff477-116">Имя пользователя в Azure AD.</span><span class="sxs-lookup"><span data-stu-id="ff477-116">The name of the user in Azure AD.</span></span> <span data-ttu-id="ff477-117">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="ff477-117">Read only.</span></span> |
-| <span data-ttu-id="ff477-118">Создание резервной копии</span><span class="sxs-lookup"><span data-stu-id="ff477-118">isBackup</span></span> | <span data-ttu-id="ff477-119">Логический</span><span class="sxs-lookup"><span data-stu-id="ff477-119">Boolean</span></span> | <span data-ttu-id="ff477-120">Для **SingleUser.** на этапе утверждения указывает, является ли пользователь утверждающим резервной копии.</span><span class="sxs-lookup"><span data-stu-id="ff477-120">For a **singleUser** in an approval stage, indicates whether the user is a backup fallback approver.</span></span> |
+| <span data-ttu-id="f3e6d-112">id</span><span class="sxs-lookup"><span data-stu-id="f3e6d-112">id</span></span> |<span data-ttu-id="f3e6d-113">Строка</span><span class="sxs-lookup"><span data-stu-id="f3e6d-113">String</span></span> | <span data-ttu-id="f3e6d-114">Идентификатор пользователя в Azure AD.</span><span class="sxs-lookup"><span data-stu-id="f3e6d-114">The ID of the user in Azure AD.</span></span> |
+| <span data-ttu-id="f3e6d-115">description</span><span class="sxs-lookup"><span data-stu-id="f3e6d-115">description</span></span> |<span data-ttu-id="f3e6d-116">String</span><span class="sxs-lookup"><span data-stu-id="f3e6d-116">String</span></span> | <span data-ttu-id="f3e6d-117">Имя пользователя в Azure AD.</span><span class="sxs-lookup"><span data-stu-id="f3e6d-117">The name of the user in Azure AD.</span></span> <span data-ttu-id="f3e6d-118">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="f3e6d-118">Read only.</span></span> |
+| <span data-ttu-id="f3e6d-119">Создание резервной копии</span><span class="sxs-lookup"><span data-stu-id="f3e6d-119">isBackup</span></span> | <span data-ttu-id="f3e6d-120">Логический</span><span class="sxs-lookup"><span data-stu-id="f3e6d-120">Boolean</span></span> | <span data-ttu-id="f3e6d-121">Для **SingleUser.** на этапе утверждения указывает, является ли пользователь утверждающим резервной копии.</span><span class="sxs-lookup"><span data-stu-id="f3e6d-121">For a **singleUser** in an approval stage, indicates whether the user is a backup fallback approver.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="ff477-121">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="ff477-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f3e6d-122">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="f3e6d-122">JSON representation</span></span>
 
-<span data-ttu-id="ff477-122">Ниже представлено представление типа в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ff477-122">The following is a JSON representation of the type.</span></span>
+<span data-ttu-id="f3e6d-123">Ниже представлено представление типа в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f3e6d-123">The following is a JSON representation of the type.</span></span>
 
 <!-- {
   "blockType": "resource",

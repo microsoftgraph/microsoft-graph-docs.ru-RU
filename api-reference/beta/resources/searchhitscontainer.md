@@ -5,32 +5,34 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0bb960156a6c8f3a407dbd0691cdbed32e03693d
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 750bd79dad9758f3ffe883fd87713c42c29c0917
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38703914"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520923"
 ---
-# <a name="searchhitscontainer-resource-type"></a><span data-ttu-id="09f3f-103">Тип ресурса Сеарчхитсконтаинер</span><span class="sxs-lookup"><span data-stu-id="09f3f-103">searchHitsContainer resource type</span></span>
+# <a name="searchhitscontainer-resource-type"></a><span data-ttu-id="353c2-103">Тип ресурса Сеарчхитсконтаинер</span><span class="sxs-lookup"><span data-stu-id="353c2-103">searchHitsContainer resource type</span></span>
+
+<span data-ttu-id="353c2-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="353c2-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="09f3f-104">Представляет список результатов поиска.</span><span class="sxs-lookup"><span data-stu-id="09f3f-104">Represent the list of search results.</span></span>
+<span data-ttu-id="353c2-105">Представляет список результатов поиска.</span><span class="sxs-lookup"><span data-stu-id="353c2-105">Represent the list of search results.</span></span>
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="properties"></a><span data-ttu-id="09f3f-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="09f3f-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="353c2-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="353c2-106">Properties</span></span>
 
-| <span data-ttu-id="09f3f-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="09f3f-106">Property</span></span>     | <span data-ttu-id="09f3f-107">Тип</span><span class="sxs-lookup"><span data-stu-id="09f3f-107">Type</span></span>        | <span data-ttu-id="09f3f-108">Описание</span><span class="sxs-lookup"><span data-stu-id="09f3f-108">Description</span></span> |
+| <span data-ttu-id="353c2-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="353c2-107">Property</span></span>     | <span data-ttu-id="353c2-108">Тип</span><span class="sxs-lookup"><span data-stu-id="353c2-108">Type</span></span>        | <span data-ttu-id="353c2-109">Описание</span><span class="sxs-lookup"><span data-stu-id="353c2-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="09f3f-109">успешных</span><span class="sxs-lookup"><span data-stu-id="09f3f-109">hits</span></span>|<span data-ttu-id="09f3f-110">Коллекция [сеарчхит](searchhit.md)</span><span class="sxs-lookup"><span data-stu-id="09f3f-110">[searchHit](searchhit.md) collection</span></span>|<span data-ttu-id="09f3f-111">Енкасулате результаты поиска.</span><span class="sxs-lookup"><span data-stu-id="09f3f-111">Encasulate the Search results.</span></span>|
-|<span data-ttu-id="09f3f-112">морересултсаваилабле</span><span class="sxs-lookup"><span data-stu-id="09f3f-112">moreResultsAvailable</span></span>|<span data-ttu-id="09f3f-113">Логическое</span><span class="sxs-lookup"><span data-stu-id="09f3f-113">Boolean</span></span>|<span data-ttu-id="09f3f-114">Предоставляет сведения, если доступны дополнительные результаты.</span><span class="sxs-lookup"><span data-stu-id="09f3f-114">Provides information if more results are available.</span></span> <span data-ttu-id="09f3f-115">В этом случае можно увеличить смещение "от" и "до".</span><span class="sxs-lookup"><span data-stu-id="09f3f-115">In that case you can increase the "from" and "to" offset.</span></span>|
-|<span data-ttu-id="09f3f-116">total</span><span class="sxs-lookup"><span data-stu-id="09f3f-116">total</span></span>|<span data-ttu-id="09f3f-117">Int32</span><span class="sxs-lookup"><span data-stu-id="09f3f-117">Int32</span></span>|<span data-ttu-id="09f3f-118">Общее число результатов.</span><span class="sxs-lookup"><span data-stu-id="09f3f-118">The total number of results.</span></span> <span data-ttu-id="09f3f-119">Обратите внимание, что это не количество результатов на странице, а общее количество результатов, удовлетворяющих запросу.</span><span class="sxs-lookup"><span data-stu-id="09f3f-119">Note this is not the number on results in the page, but the total number of results satisfying the query.</span></span>|
+|<span data-ttu-id="353c2-110">успешных</span><span class="sxs-lookup"><span data-stu-id="353c2-110">hits</span></span>|<span data-ttu-id="353c2-111">Коллекция [сеарчхит](searchhit.md)</span><span class="sxs-lookup"><span data-stu-id="353c2-111">[searchHit](searchhit.md) collection</span></span>|<span data-ttu-id="353c2-112">Енкасулате результаты поиска.</span><span class="sxs-lookup"><span data-stu-id="353c2-112">Encasulate the Search results.</span></span>|
+|<span data-ttu-id="353c2-113">морересултсаваилабле</span><span class="sxs-lookup"><span data-stu-id="353c2-113">moreResultsAvailable</span></span>|<span data-ttu-id="353c2-114">Логический</span><span class="sxs-lookup"><span data-stu-id="353c2-114">Boolean</span></span>|<span data-ttu-id="353c2-115">Предоставляет сведения, если доступны дополнительные результаты.</span><span class="sxs-lookup"><span data-stu-id="353c2-115">Provides information if more results are available.</span></span> <span data-ttu-id="353c2-116">В этом случае можно увеличить смещение "от" и "до".</span><span class="sxs-lookup"><span data-stu-id="353c2-116">In that case you can increase the "from" and "to" offset.</span></span>|
+|<span data-ttu-id="353c2-117">total</span><span class="sxs-lookup"><span data-stu-id="353c2-117">total</span></span>|<span data-ttu-id="353c2-118">Int32</span><span class="sxs-lookup"><span data-stu-id="353c2-118">Int32</span></span>|<span data-ttu-id="353c2-119">Общее число результатов.</span><span class="sxs-lookup"><span data-stu-id="353c2-119">The total number of results.</span></span> <span data-ttu-id="353c2-120">Обратите внимание, что это не количество результатов на странице, а общее количество результатов, удовлетворяющих запросу.</span><span class="sxs-lookup"><span data-stu-id="353c2-120">Note this is not the number on results in the page, but the total number of results satisfying the query.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="09f3f-120">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="09f3f-120">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="353c2-121">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="353c2-121">JSON representation</span></span>
 
-<span data-ttu-id="09f3f-121">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="09f3f-121">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="353c2-122">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="353c2-122">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

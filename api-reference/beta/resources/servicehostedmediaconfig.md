@@ -5,29 +5,31 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6a6cc16dec5c1ff5318a4d1b6d46799a4ab071aa
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 16db7e17e48ce8f257d9b6a1bfd296ca06bd0634
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913648"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520796"
 ---
-# <a name="servicehostedmediaconfig-resource-type"></a><span data-ttu-id="09845-103">Тип ресурса Сервицехостедмедиаконфиг</span><span class="sxs-lookup"><span data-stu-id="09845-103">serviceHostedMediaConfig resource type</span></span>
+# <a name="servicehostedmediaconfig-resource-type"></a><span data-ttu-id="f70bc-103">Тип ресурса Сервицехостедмедиаконфиг</span><span class="sxs-lookup"><span data-stu-id="f70bc-103">serviceHostedMediaConfig resource type</span></span>
+
+<span data-ttu-id="f70bc-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="f70bc-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="09845-104">Удаленно размещенный носитель.</span><span class="sxs-lookup"><span data-stu-id="09845-104">The media that's hosted remotely.</span></span> <span data-ttu-id="09845-105">Это наследуется от [медиаконфиг](mediaconfig.md).</span><span class="sxs-lookup"><span data-stu-id="09845-105">This is inherited from [mediaConfig](mediaconfig.md).</span></span>
+<span data-ttu-id="f70bc-105">Удаленно размещенный носитель.</span><span class="sxs-lookup"><span data-stu-id="f70bc-105">The media that's hosted remotely.</span></span> <span data-ttu-id="f70bc-106">Это наследуется от [медиаконфиг](mediaconfig.md).</span><span class="sxs-lookup"><span data-stu-id="f70bc-106">This is inherited from [mediaConfig](mediaconfig.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="09845-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="09845-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="f70bc-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="f70bc-107">Properties</span></span>
 
-| <span data-ttu-id="09845-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="09845-107">Property</span></span>                    | <span data-ttu-id="09845-108">Тип</span><span class="sxs-lookup"><span data-stu-id="09845-108">Type</span></span>                                                        | <span data-ttu-id="09845-109">Описание</span><span class="sxs-lookup"><span data-stu-id="09845-109">Description</span></span>                                       |
+| <span data-ttu-id="f70bc-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="f70bc-108">Property</span></span>                    | <span data-ttu-id="f70bc-109">Тип</span><span class="sxs-lookup"><span data-stu-id="f70bc-109">Type</span></span>                                                        | <span data-ttu-id="f70bc-110">Описание</span><span class="sxs-lookup"><span data-stu-id="f70bc-110">Description</span></span>                                       |
 | :-------------------------- | :---------------------------------------------------------- | :-------------------------------------------------|
-| <span data-ttu-id="09845-110">префетчмедиа</span><span class="sxs-lookup"><span data-stu-id="09845-110">preFetchMedia</span></span>               | <span data-ttu-id="09845-111">Коллекция [медиаинфо](mediainfo.md)</span><span class="sxs-lookup"><span data-stu-id="09845-111">[mediaInfo](mediainfo.md) collection</span></span>                        | <span data-ttu-id="09845-112">Список носителей для предварительной загрузки.</span><span class="sxs-lookup"><span data-stu-id="09845-112">The list of media to pre-fetch.</span></span>                   |
-| <span data-ttu-id="09845-113">ремовефромдефаултаудиограуп</span><span class="sxs-lookup"><span data-stu-id="09845-113">removeFromDefaultAudioGroup</span></span> | <span data-ttu-id="09845-114">Boolean</span><span class="sxs-lookup"><span data-stu-id="09845-114">Boolean</span></span>                                                     | <span data-ttu-id="09845-115">Удаление самостоятельного участника из группы "звук" по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="09845-115">Remove self participant from default audio group.</span></span> |
+| <span data-ttu-id="f70bc-111">префетчмедиа</span><span class="sxs-lookup"><span data-stu-id="f70bc-111">preFetchMedia</span></span>               | <span data-ttu-id="f70bc-112">Коллекция [медиаинфо](mediainfo.md)</span><span class="sxs-lookup"><span data-stu-id="f70bc-112">[mediaInfo](mediainfo.md) collection</span></span>                        | <span data-ttu-id="f70bc-113">Список носителей для предварительной загрузки.</span><span class="sxs-lookup"><span data-stu-id="f70bc-113">The list of media to pre-fetch.</span></span>                   |
+| <span data-ttu-id="f70bc-114">ремовефромдефаултаудиограуп</span><span class="sxs-lookup"><span data-stu-id="f70bc-114">removeFromDefaultAudioGroup</span></span> | <span data-ttu-id="f70bc-115">Логический</span><span class="sxs-lookup"><span data-stu-id="f70bc-115">Boolean</span></span>                                                     | <span data-ttu-id="f70bc-116">Удаление самостоятельного участника из группы "звук" по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="f70bc-116">Remove self participant from default audio group.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="09845-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="09845-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f70bc-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="f70bc-117">JSON representation</span></span>
 
-<span data-ttu-id="09845-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="09845-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="f70bc-118">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f70bc-118">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

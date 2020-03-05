@@ -6,29 +6,31 @@ title: SpecialFolder
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 647916e53409be47ebd3547a8712778bb6ba9f54
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a4ecce871115e92bfe91d5e6229c3ddd1a3c0472
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008077"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520340"
 ---
-# <a name="specialfolder-resource-type"></a><span data-ttu-id="8bc7f-103">Тип ресурса SpecialFolder</span><span class="sxs-lookup"><span data-stu-id="8bc7f-103">SpecialFolder resource type</span></span>
+# <a name="specialfolder-resource-type"></a><span data-ttu-id="a0a52-103">Тип ресурса SpecialFolder</span><span class="sxs-lookup"><span data-stu-id="a0a52-103">SpecialFolder resource type</span></span>
+
+<span data-ttu-id="a0a52-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="a0a52-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8bc7f-104">Ресурс **SpecialFolder** группирует элементы данных, связанные со специальной папкой, в единую структуру.</span><span class="sxs-lookup"><span data-stu-id="8bc7f-104">The **SpecialFolder** resource groups special folder-related data items into a single structure.</span></span>
+<span data-ttu-id="a0a52-105">Ресурс **SpecialFolder** группирует элементы данных, связанные со специальной папкой, в единую структуру.</span><span class="sxs-lookup"><span data-stu-id="a0a52-105">The **SpecialFolder** resource groups special folder-related data items into a single structure.</span></span>
 
-<span data-ttu-id="8bc7f-105">Если у элемента **DriveItem** есть аспект **specialFolder**, значение которого не равно null, то элемент представляет специальную (именованную) папку.</span><span class="sxs-lookup"><span data-stu-id="8bc7f-105">If a **DriveItem** has a non-null **specialFolder** facet, the item represents a special (named) folder.</span></span>
-<span data-ttu-id="8bc7f-106">Прямой доступ к специальным папкам можно получить с помощью [коллекции специальных папок](../api/drive-get-specialfolder.md).</span><span class="sxs-lookup"><span data-stu-id="8bc7f-106">Special folders can be accessed directly via the [special folders collection](../api/drive-get-specialfolder.md).</span></span>
+<span data-ttu-id="a0a52-106">Если у элемента **DriveItem** есть аспект **specialFolder**, значение которого не равно null, то элемент представляет специальную (именованную) папку.</span><span class="sxs-lookup"><span data-stu-id="a0a52-106">If a **DriveItem** has a non-null **specialFolder** facet, the item represents a special (named) folder.</span></span>
+<span data-ttu-id="a0a52-107">Прямой доступ к специальным папкам можно получить с помощью [коллекции специальных папок](../api/drive-get-specialfolder.md).</span><span class="sxs-lookup"><span data-stu-id="a0a52-107">Special folders can be accessed directly via the [special folders collection](../api/drive-get-specialfolder.md).</span></span>
 
-<span data-ttu-id="8bc7f-p102">Специальные папки предоставляют простые псевдонимы для доступа к известным папкам, чтобы не нужно было искать папку по пути (что требует локализации) или ссылаться на папку по идентификатору. При переименовании специальной папки или ее перемещении в другое расположение на диске команда с таким синтаксисом будет по-прежнему возвращать эту папку.</span><span class="sxs-lookup"><span data-stu-id="8bc7f-p102">Special folders provide simple aliases to access well-known folders without the need to look up the folder by path (which would require localization), or reference the folder with an ID. If a special folder is renamed or moved to another location within the drive, this syntax will continue to return that folder.</span></span>
+<span data-ttu-id="a0a52-p102">Специальные папки предоставляют простые псевдонимы для доступа к известным папкам, чтобы не нужно было искать папку по пути (что требует локализации) или ссылаться на папку по идентификатору. При переименовании специальной папки или ее перемещении в другое расположение на диске команда с таким синтаксисом будет по-прежнему возвращать эту папку.</span><span class="sxs-lookup"><span data-stu-id="a0a52-p102">Special folders provide simple aliases to access well-known folders without the need to look up the folder by path (which would require localization), or reference the folder with an ID. If a special folder is renamed or moved to another location within the drive, this syntax will continue to return that folder.</span></span>
 
-<span data-ttu-id="8bc7f-p103">Когда приложение впервые пробует записать что-то в специальную папку, она создается автоматически, если не была создана ранее. Если пользователь удалил такую папку, она создается повторно при записи в нее.</span><span class="sxs-lookup"><span data-stu-id="8bc7f-p103">Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist. If a user deletes one, it is recreated when written to again.</span></span>
+<span data-ttu-id="a0a52-p103">Когда приложение впервые пробует записать что-то в специальную папку, она создается автоматически, если не была создана ранее. Если пользователь удалил такую папку, она создается повторно при записи в нее.</span><span class="sxs-lookup"><span data-stu-id="a0a52-p103">Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist. If a user deletes one, it is recreated when written to again.</span></span>
 
-<span data-ttu-id="8bc7f-111">**Примечание.** Если ваше приложение запросило только область **Files.Read** и запрашивает специальную папку, которая не существует, в качестве отклика будет возвращена ошибка `403 Forbidden`.</span><span class="sxs-lookup"><span data-stu-id="8bc7f-111">**Note:** If your app has only requested **Files.Read** scope and requests a special folder that doesn't exist, the response will be a `403 Forbidden` error.</span></span>
+<span data-ttu-id="a0a52-112">**Примечание.** Если ваше приложение запросило только область **Files.Read** и запрашивает специальную папку, которая не существует, в качестве отклика будет возвращена ошибка `403 Forbidden`.</span><span class="sxs-lookup"><span data-stu-id="a0a52-112">**Note:** If your app has only requested **Files.Read** scope and requests a special folder that doesn't exist, the response will be a `403 Forbidden` error.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="8bc7f-112">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="8bc7f-112">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a0a52-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a0a52-113">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -43,27 +45,27 @@ ms.locfileid: "36008077"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="8bc7f-113">Свойства</span><span class="sxs-lookup"><span data-stu-id="8bc7f-113">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="a0a52-114">Свойства</span><span class="sxs-lookup"><span data-stu-id="a0a52-114">Properties</span></span>
 
-| <span data-ttu-id="8bc7f-114">Свойство</span><span class="sxs-lookup"><span data-stu-id="8bc7f-114">Property</span></span>  | <span data-ttu-id="8bc7f-115">Тип</span><span class="sxs-lookup"><span data-stu-id="8bc7f-115">Type</span></span>   | <span data-ttu-id="8bc7f-116">Описание</span><span class="sxs-lookup"><span data-stu-id="8bc7f-116">Description</span></span>                                                            |
+| <span data-ttu-id="a0a52-115">Свойство</span><span class="sxs-lookup"><span data-stu-id="a0a52-115">Property</span></span>  | <span data-ttu-id="a0a52-116">Тип</span><span class="sxs-lookup"><span data-stu-id="a0a52-116">Type</span></span>   | <span data-ttu-id="a0a52-117">Описание</span><span class="sxs-lookup"><span data-stu-id="a0a52-117">Description</span></span>                                                            |
 |:----------|:-------|:-----------------------------------------------------------------------|
-| <span data-ttu-id="8bc7f-117">name</span><span class="sxs-lookup"><span data-stu-id="8bc7f-117">name</span></span>      | <span data-ttu-id="8bc7f-118">string</span><span class="sxs-lookup"><span data-stu-id="8bc7f-118">string</span></span> | <span data-ttu-id="8bc7f-119">Уникальный идентификатор для этого элемента в коллекции `/drive/special`.</span><span class="sxs-lookup"><span data-stu-id="8bc7f-119">The unique identifier for this item in the `/drive/special` collection</span></span> |
+| <span data-ttu-id="a0a52-118">name</span><span class="sxs-lookup"><span data-stu-id="a0a52-118">name</span></span>      | <span data-ttu-id="a0a52-119">string</span><span class="sxs-lookup"><span data-stu-id="a0a52-119">string</span></span> | <span data-ttu-id="a0a52-120">Уникальный идентификатор для этого элемента в коллекции `/drive/special`.</span><span class="sxs-lookup"><span data-stu-id="a0a52-120">The unique identifier for this item in the `/drive/special` collection</span></span> |
 
-## <a name="special-folders"></a><span data-ttu-id="8bc7f-120">Специальные папки</span><span class="sxs-lookup"><span data-stu-id="8bc7f-120">Special folders</span></span>
+## <a name="special-folders"></a><span data-ttu-id="a0a52-121">Специальные папки</span><span class="sxs-lookup"><span data-stu-id="a0a52-121">Special folders</span></span>
 
-<span data-ttu-id="8bc7f-121">Вот специальные папки, доступные в OneDrive персональный и OneDrive для бизнеса.</span><span class="sxs-lookup"><span data-stu-id="8bc7f-121">Here are the special folders available in OneDrive Personal and OneDrive for Business.</span></span>
+<span data-ttu-id="a0a52-122">Вот специальные папки, доступные в OneDrive персональный и OneDrive для бизнеса.</span><span class="sxs-lookup"><span data-stu-id="a0a52-122">Here are the special folders available in OneDrive Personal and OneDrive for Business.</span></span>
 
-| <span data-ttu-id="8bc7f-122">Имя</span><span class="sxs-lookup"><span data-stu-id="8bc7f-122">Name</span></span>        | <span data-ttu-id="8bc7f-123">Идентификатор папки</span><span class="sxs-lookup"><span data-stu-id="8bc7f-123">Folder id</span></span>    | <span data-ttu-id="8bc7f-124">Описание</span><span class="sxs-lookup"><span data-stu-id="8bc7f-124">Description</span></span>                                                              |
+| <span data-ttu-id="a0a52-123">Имя</span><span class="sxs-lookup"><span data-stu-id="a0a52-123">Name</span></span>        | <span data-ttu-id="a0a52-124">Идентификатор папки</span><span class="sxs-lookup"><span data-stu-id="a0a52-124">Folder id</span></span>    | <span data-ttu-id="a0a52-125">Описание</span><span class="sxs-lookup"><span data-stu-id="a0a52-125">Description</span></span>                                                              |
 |:------------|:-------------|:-------------------------------------------------------------------------|
-| <span data-ttu-id="8bc7f-125">Корневая папка приложения</span><span class="sxs-lookup"><span data-stu-id="8bc7f-125">App Root</span></span>    | `approot`    | <span data-ttu-id="8bc7f-p104">Личная папка приложения. Обычно расположена в папке `/Apps/{Application Name}`</span><span class="sxs-lookup"><span data-stu-id="8bc7f-p104">The application's personal folder. Usually in `/Apps/{Application Name}`</span></span> |
-| <span data-ttu-id="8bc7f-128">Альбом камеры</span><span class="sxs-lookup"><span data-stu-id="8bc7f-128">Camera Roll</span></span> | `cameraroll` | <span data-ttu-id="8bc7f-p105">Папка для резервных копий "Альбом камеры". Недоступна в OneDrive для бизнеса.</span><span class="sxs-lookup"><span data-stu-id="8bc7f-p105">The Camera Roll Backup folder. Not available in OneDrive for Business.</span></span>   |
-| <span data-ttu-id="8bc7f-131">Документы</span><span class="sxs-lookup"><span data-stu-id="8bc7f-131">Documents</span></span>   | `documents`  | <span data-ttu-id="8bc7f-132">Папка "Документы".</span><span class="sxs-lookup"><span data-stu-id="8bc7f-132">The Documents folder.</span></span>                                                    |
-| <span data-ttu-id="8bc7f-133">Музыка</span><span class="sxs-lookup"><span data-stu-id="8bc7f-133">Music</span></span>       | `music`      | <span data-ttu-id="8bc7f-p106">Папка "Музыка". Недоступна в OneDrive для бизнеса.</span><span class="sxs-lookup"><span data-stu-id="8bc7f-p106">The Music folder. Not available in OneDrive for Business.</span></span>                |
-| <span data-ttu-id="8bc7f-136">Фотографии</span><span class="sxs-lookup"><span data-stu-id="8bc7f-136">Photos</span></span>      | `photos`     | <span data-ttu-id="8bc7f-137">Папка "Фотографии".</span><span class="sxs-lookup"><span data-stu-id="8bc7f-137">The Photos folder.</span></span>                                                       |
+| <span data-ttu-id="a0a52-126">Корневая папка приложения</span><span class="sxs-lookup"><span data-stu-id="a0a52-126">App Root</span></span>    | `approot`    | <span data-ttu-id="a0a52-p104">Личная папка приложения. Обычно расположена в папке `/Apps/{Application Name}`</span><span class="sxs-lookup"><span data-stu-id="a0a52-p104">The application's personal folder. Usually in `/Apps/{Application Name}`</span></span> |
+| <span data-ttu-id="a0a52-129">Альбом камеры</span><span class="sxs-lookup"><span data-stu-id="a0a52-129">Camera Roll</span></span> | `cameraroll` | <span data-ttu-id="a0a52-p105">Папка для резервных копий "Альбом камеры". Недоступна в OneDrive для бизнеса.</span><span class="sxs-lookup"><span data-stu-id="a0a52-p105">The Camera Roll Backup folder. Not available in OneDrive for Business.</span></span>   |
+| <span data-ttu-id="a0a52-132">Документы</span><span class="sxs-lookup"><span data-stu-id="a0a52-132">Documents</span></span>   | `documents`  | <span data-ttu-id="a0a52-133">Папка "Документы".</span><span class="sxs-lookup"><span data-stu-id="a0a52-133">The Documents folder.</span></span>                                                    |
+| <span data-ttu-id="a0a52-134">Музыка</span><span class="sxs-lookup"><span data-stu-id="a0a52-134">Music</span></span>       | `music`      | <span data-ttu-id="a0a52-p106">Папка "Музыка". Недоступна в OneDrive для бизнеса.</span><span class="sxs-lookup"><span data-stu-id="a0a52-p106">The Music folder. Not available in OneDrive for Business.</span></span>                |
+| <span data-ttu-id="a0a52-137">Фотографии</span><span class="sxs-lookup"><span data-stu-id="a0a52-137">Photos</span></span>      | `photos`     | <span data-ttu-id="a0a52-138">Папка "Фотографии".</span><span class="sxs-lookup"><span data-stu-id="a0a52-138">The Photos folder.</span></span>                                                       |
 
-## <a name="remarks"></a><span data-ttu-id="8bc7f-138">Заметки</span><span class="sxs-lookup"><span data-stu-id="8bc7f-138">Remarks</span></span> 
+## <a name="remarks"></a><span data-ttu-id="a0a52-139">Заметки</span><span class="sxs-lookup"><span data-stu-id="a0a52-139">Remarks</span></span> 
 
-<span data-ttu-id="8bc7f-139">Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="8bc7f-139">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
+<span data-ttu-id="a0a52-140">Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="a0a52-140">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

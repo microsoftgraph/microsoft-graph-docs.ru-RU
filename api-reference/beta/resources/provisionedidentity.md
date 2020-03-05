@@ -5,31 +5,33 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fb535bbba827f93b597c5e41efb128f2ad610ef2
-ms.sourcegitcommit: e0de4e41773e361752870411d1b1a74270738127
+ms.openlocfilehash: 86363bdf77f83e6903c86362c2797c51d1215073
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "35349435"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521357"
 ---
-# <a name="provisionedidentity-resource-type"></a><span data-ttu-id="ffe86-103">Тип ресурса Провисионедидентити</span><span class="sxs-lookup"><span data-stu-id="ffe86-103">provisionedIdentity resource type</span></span>
+# <a name="provisionedidentity-resource-type"></a><span data-ttu-id="de0e5-103">Тип ресурса Провисионедидентити</span><span class="sxs-lookup"><span data-stu-id="de0e5-103">provisionedIdentity resource type</span></span>
+
+<span data-ttu-id="de0e5-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="de0e5-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ffe86-104">Описывает удостоверение, связанное со сводным событием объекта наполнения.</span><span class="sxs-lookup"><span data-stu-id="ffe86-104">Describes the identity associated with the provisioning object summary event.</span></span> 
+<span data-ttu-id="de0e5-105">Описывает удостоверение, связанное со сводным событием объекта наполнения.</span><span class="sxs-lookup"><span data-stu-id="de0e5-105">Describes the identity associated with the provisioning object summary event.</span></span> 
 
-## <a name="properties"></a><span data-ttu-id="ffe86-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="ffe86-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="de0e5-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="de0e5-106">Properties</span></span>
 
-| <span data-ttu-id="ffe86-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="ffe86-106">Property</span></span>     | <span data-ttu-id="ffe86-107">Тип</span><span class="sxs-lookup"><span data-stu-id="ffe86-107">Type</span></span>        | <span data-ttu-id="ffe86-108">Описание</span><span class="sxs-lookup"><span data-stu-id="ffe86-108">Description</span></span> |
+| <span data-ttu-id="de0e5-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="de0e5-107">Property</span></span>     | <span data-ttu-id="de0e5-108">Тип</span><span class="sxs-lookup"><span data-stu-id="de0e5-108">Type</span></span>        | <span data-ttu-id="de0e5-109">Описание</span><span class="sxs-lookup"><span data-stu-id="de0e5-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="ffe86-109">details</span><span class="sxs-lookup"><span data-stu-id="ffe86-109">details</span></span>|[<span data-ttu-id="ffe86-110">Детаилсинфо</span><span class="sxs-lookup"><span data-stu-id="ffe86-110">detailsInfo</span></span>](detailsinfo.md)|<span data-ttu-id="ffe86-111">Сведения об удостоверении.</span><span class="sxs-lookup"><span data-stu-id="ffe86-111">Details of the identity.</span></span>|
-|<span data-ttu-id="ffe86-112">displayName</span><span class="sxs-lookup"><span data-stu-id="ffe86-112">displayName</span></span>|<span data-ttu-id="ffe86-113">Строка</span><span class="sxs-lookup"><span data-stu-id="ffe86-113">String</span></span>|<span data-ttu-id="ffe86-114">Отображаемое имя удостоверения.</span><span class="sxs-lookup"><span data-stu-id="ffe86-114">Display name of the identity.</span></span> |
-|<span data-ttu-id="ffe86-115">id</span><span class="sxs-lookup"><span data-stu-id="ffe86-115">id</span></span>|<span data-ttu-id="ffe86-116">String</span><span class="sxs-lookup"><span data-stu-id="ffe86-116">String</span></span>|<span data-ttu-id="ffe86-117">Уникально идентифицирует удостоверение.</span><span class="sxs-lookup"><span data-stu-id="ffe86-117">Uniquely identifies the identity.</span></span>|
-|<span data-ttu-id="ffe86-118">Идентититипе</span><span class="sxs-lookup"><span data-stu-id="ffe86-118">identityType</span></span>|<span data-ttu-id="ffe86-119">String</span><span class="sxs-lookup"><span data-stu-id="ffe86-119">String</span></span>|<span data-ttu-id="ffe86-120">Тип удостоверения, которое было подготовлено, например "пользователь" или "Группа".</span><span class="sxs-lookup"><span data-stu-id="ffe86-120">Type of identity that has been provisioned, such as 'user' or 'group'.</span></span>|
+|<span data-ttu-id="de0e5-110">подробности</span><span class="sxs-lookup"><span data-stu-id="de0e5-110">details</span></span>|[<span data-ttu-id="de0e5-111">detailsInfo</span><span class="sxs-lookup"><span data-stu-id="de0e5-111">detailsInfo</span></span>](detailsinfo.md)|<span data-ttu-id="de0e5-112">Сведения об удостоверении.</span><span class="sxs-lookup"><span data-stu-id="de0e5-112">Details of the identity.</span></span>|
+|<span data-ttu-id="de0e5-113">displayName</span><span class="sxs-lookup"><span data-stu-id="de0e5-113">displayName</span></span>|<span data-ttu-id="de0e5-114">Строка</span><span class="sxs-lookup"><span data-stu-id="de0e5-114">String</span></span>|<span data-ttu-id="de0e5-115">Отображаемое имя удостоверения.</span><span class="sxs-lookup"><span data-stu-id="de0e5-115">Display name of the identity.</span></span> |
+|<span data-ttu-id="de0e5-116">id</span><span class="sxs-lookup"><span data-stu-id="de0e5-116">id</span></span>|<span data-ttu-id="de0e5-117">String</span><span class="sxs-lookup"><span data-stu-id="de0e5-117">String</span></span>|<span data-ttu-id="de0e5-118">Уникально идентифицирует удостоверение.</span><span class="sxs-lookup"><span data-stu-id="de0e5-118">Uniquely identifies the identity.</span></span>|
+|<span data-ttu-id="de0e5-119">идентититипе</span><span class="sxs-lookup"><span data-stu-id="de0e5-119">identityType</span></span>|<span data-ttu-id="de0e5-120">String</span><span class="sxs-lookup"><span data-stu-id="de0e5-120">String</span></span>|<span data-ttu-id="de0e5-121">Тип удостоверения, которое было подготовлено, например "пользователь" или "Группа".</span><span class="sxs-lookup"><span data-stu-id="de0e5-121">Type of identity that has been provisioned, such as 'user' or 'group'.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="ffe86-121">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="ffe86-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="de0e5-122">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="de0e5-122">JSON representation</span></span>
 
-<span data-ttu-id="ffe86-122">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ffe86-122">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="de0e5-123">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="de0e5-123">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

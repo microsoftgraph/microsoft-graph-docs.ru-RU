@@ -5,31 +5,33 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 9e070dd3dc4687ee70f3189812e5f55ea90d718a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 863a8ff1fa9b44159cb873c48694cdef749b2e8a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008126"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520382"
 ---
-# <a name="skypeforbusinessparticipantactivitycounts-resource-type"></a><span data-ttu-id="6418b-103">Тип ресурса СкипефорбусинесспартиЦипантактивитикаунтс</span><span class="sxs-lookup"><span data-stu-id="6418b-103">skypeForBusinessParticipantActivityCounts resource type</span></span>
+# <a name="skypeforbusinessparticipantactivitycounts-resource-type"></a><span data-ttu-id="43778-103">Тип ресурса СкипефорбусинесспартиЦипантактивитикаунтс</span><span class="sxs-lookup"><span data-stu-id="43778-103">skypeForBusinessParticipantActivityCounts resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="6418b-104">Свойства</span><span class="sxs-lookup"><span data-stu-id="6418b-104">Properties</span></span>
+<span data-ttu-id="43778-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="43778-104">Namespace: microsoft.graph</span></span>
 
-| <span data-ttu-id="6418b-105">Свойство</span><span class="sxs-lookup"><span data-stu-id="6418b-105">Property</span></span>          | <span data-ttu-id="6418b-106">Тип</span><span class="sxs-lookup"><span data-stu-id="6418b-106">Type</span></span>   |
+## <a name="properties"></a><span data-ttu-id="43778-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="43778-105">Properties</span></span>
+
+| <span data-ttu-id="43778-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="43778-106">Property</span></span>          | <span data-ttu-id="43778-107">Тип</span><span class="sxs-lookup"><span data-stu-id="43778-107">Type</span></span>   |
 | :---------------- | :----- |
-| <span data-ttu-id="6418b-107">im</span><span class="sxs-lookup"><span data-stu-id="6418b-107">im</span></span>                | <span data-ttu-id="6418b-108">Int64</span><span class="sxs-lookup"><span data-stu-id="6418b-108">Int64</span></span>  |
-| <span data-ttu-id="6418b-109">Audiovideohttp</span><span class="sxs-lookup"><span data-stu-id="6418b-109">audioVideo</span></span>        | <span data-ttu-id="6418b-110">Int64</span><span class="sxs-lookup"><span data-stu-id="6418b-110">Int64</span></span>  |
-| <span data-ttu-id="6418b-111">Аппшаринг</span><span class="sxs-lookup"><span data-stu-id="6418b-111">appSharing</span></span>        | <span data-ttu-id="6418b-112">Int64</span><span class="sxs-lookup"><span data-stu-id="6418b-112">Int64</span></span>  |
-| <span data-ttu-id="6418b-113">web</span><span class="sxs-lookup"><span data-stu-id="6418b-113">web</span></span>               | <span data-ttu-id="6418b-114">Int64</span><span class="sxs-lookup"><span data-stu-id="6418b-114">Int64</span></span>  |
-| <span data-ttu-id="6418b-115">dialInOut3rdParty</span><span class="sxs-lookup"><span data-stu-id="6418b-115">dialInOut3rdParty</span></span> | <span data-ttu-id="6418b-116">Int64</span><span class="sxs-lookup"><span data-stu-id="6418b-116">Int64</span></span>  |
-| <span data-ttu-id="6418b-117">Репортрефрешдате</span><span class="sxs-lookup"><span data-stu-id="6418b-117">reportRefreshDate</span></span> | <span data-ttu-id="6418b-118">Дата</span><span class="sxs-lookup"><span data-stu-id="6418b-118">Date</span></span>   |
-| <span data-ttu-id="6418b-119">reportDate</span><span class="sxs-lookup"><span data-stu-id="6418b-119">reportDate</span></span>        | <span data-ttu-id="6418b-120">Дата</span><span class="sxs-lookup"><span data-stu-id="6418b-120">Date</span></span>   |
-| <span data-ttu-id="6418b-121">Репортпериод</span><span class="sxs-lookup"><span data-stu-id="6418b-121">reportPeriod</span></span>      | <span data-ttu-id="6418b-122">String</span><span class="sxs-lookup"><span data-stu-id="6418b-122">String</span></span> |
+| <span data-ttu-id="43778-108">im</span><span class="sxs-lookup"><span data-stu-id="43778-108">im</span></span>                | <span data-ttu-id="43778-109">Int64</span><span class="sxs-lookup"><span data-stu-id="43778-109">Int64</span></span>  |
+| <span data-ttu-id="43778-110">Audiovideohttp</span><span class="sxs-lookup"><span data-stu-id="43778-110">audioVideo</span></span>        | <span data-ttu-id="43778-111">Int64</span><span class="sxs-lookup"><span data-stu-id="43778-111">Int64</span></span>  |
+| <span data-ttu-id="43778-112">аппшаринг</span><span class="sxs-lookup"><span data-stu-id="43778-112">appSharing</span></span>        | <span data-ttu-id="43778-113">Int64</span><span class="sxs-lookup"><span data-stu-id="43778-113">Int64</span></span>  |
+| <span data-ttu-id="43778-114">web</span><span class="sxs-lookup"><span data-stu-id="43778-114">web</span></span>               | <span data-ttu-id="43778-115">Int64</span><span class="sxs-lookup"><span data-stu-id="43778-115">Int64</span></span>  |
+| <span data-ttu-id="43778-116">dialInOut3rdParty</span><span class="sxs-lookup"><span data-stu-id="43778-116">dialInOut3rdParty</span></span> | <span data-ttu-id="43778-117">Int64</span><span class="sxs-lookup"><span data-stu-id="43778-117">Int64</span></span>  |
+| <span data-ttu-id="43778-118">репортрефрешдате</span><span class="sxs-lookup"><span data-stu-id="43778-118">reportRefreshDate</span></span> | <span data-ttu-id="43778-119">Дата</span><span class="sxs-lookup"><span data-stu-id="43778-119">Date</span></span>   |
+| <span data-ttu-id="43778-120">reportDate</span><span class="sxs-lookup"><span data-stu-id="43778-120">reportDate</span></span>        | <span data-ttu-id="43778-121">Дата</span><span class="sxs-lookup"><span data-stu-id="43778-121">Date</span></span>   |
+| <span data-ttu-id="43778-122">репортпериод</span><span class="sxs-lookup"><span data-stu-id="43778-122">reportPeriod</span></span>      | <span data-ttu-id="43778-123">String</span><span class="sxs-lookup"><span data-stu-id="43778-123">String</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="6418b-123">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="6418b-123">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="43778-124">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="43778-124">JSON representation</span></span>
 
-<span data-ttu-id="6418b-124">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="6418b-124">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="43778-125">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="43778-125">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

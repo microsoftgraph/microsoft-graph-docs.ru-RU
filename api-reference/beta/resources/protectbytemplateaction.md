@@ -5,28 +5,30 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 6a7a557dfd72dac9161ae29436f5fc96eb55075d
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 3fc936179a0c0764492a3dc8d677060931a1223a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939076"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521371"
 ---
-# <a name="protectbytemplateaction-resource-type"></a><span data-ttu-id="84f63-103">Тип ресурса Протектбитемплатеактион</span><span class="sxs-lookup"><span data-stu-id="84f63-103">protectByTemplateAction resource type</span></span>
+# <a name="protectbytemplateaction-resource-type"></a><span data-ttu-id="8b712-103">Тип ресурса Протектбитемплатеактион</span><span class="sxs-lookup"><span data-stu-id="8b712-103">protectByTemplateAction resource type</span></span>
+
+<span data-ttu-id="8b712-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="8b712-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="84f63-104">Информирует приложение о том, что шаблон защиты Azure Information Protection должен быть применен.</span><span class="sxs-lookup"><span data-stu-id="84f63-104">Informs the application that an Azure Information Protection protection template should be applied.</span></span> <span data-ttu-id="84f63-105">**протектионбитемплатеактион** может быть возвращено [евалуатеаппликатион](../api/informationprotectionlabel-evaluateapplication.md) или [евалуатеклассификатионресултс](../api/informationprotectionlabel-evaluateclassificationresults.md) , если полученная метка настроена на применение защиты.</span><span class="sxs-lookup"><span data-stu-id="84f63-105">**protectionByTemplateAction** may be returned by [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md) or [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md) if the resulting label has been configured to apply protection.</span></span> <span data-ttu-id="84f63-106">Приложение-приложение должно прочитать templateId из результата, а затем использовать клиентскую библиотеку, например Microsoft Information Protection SDK, для применения защиты с помощью Azure Information Protection.</span><span class="sxs-lookup"><span data-stu-id="84f63-106">The consuming application must read the templateId from the result and then use a client library, such as the Microsoft Information Protection SDK, to apply protection via Azure Information Protection.</span></span>
+<span data-ttu-id="8b712-105">Информирует приложение о том, что шаблон защиты Azure Information Protection должен быть применен.</span><span class="sxs-lookup"><span data-stu-id="8b712-105">Informs the application that an Azure Information Protection protection template should be applied.</span></span> <span data-ttu-id="8b712-106">**протектионбитемплатеактион** может быть возвращено [евалуатеаппликатион](../api/informationprotectionlabel-evaluateapplication.md) или [евалуатеклассификатионресултс](../api/informationprotectionlabel-evaluateclassificationresults.md) , если полученная метка настроена на применение защиты.</span><span class="sxs-lookup"><span data-stu-id="8b712-106">**protectionByTemplateAction** may be returned by [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md) or [evaluateClassificationResults](../api/informationprotectionlabel-evaluateclassificationresults.md) if the resulting label has been configured to apply protection.</span></span> <span data-ttu-id="8b712-107">Приложение-приложение должно прочитать templateId из результата, а затем использовать клиентскую библиотеку, например Microsoft Information Protection SDK, для применения защиты с помощью Azure Information Protection.</span><span class="sxs-lookup"><span data-stu-id="8b712-107">The consuming application must read the templateId from the result and then use a client library, such as the Microsoft Information Protection SDK, to apply protection via Azure Information Protection.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="84f63-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="84f63-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="8b712-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="8b712-108">Properties</span></span>
 
-| <span data-ttu-id="84f63-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="84f63-108">Property</span></span>   | <span data-ttu-id="84f63-109">Тип</span><span class="sxs-lookup"><span data-stu-id="84f63-109">Type</span></span>   | <span data-ttu-id="84f63-110">Описание</span><span class="sxs-lookup"><span data-stu-id="84f63-110">Description</span></span>                                                                        |
+| <span data-ttu-id="8b712-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="8b712-109">Property</span></span>   | <span data-ttu-id="8b712-110">Тип</span><span class="sxs-lookup"><span data-stu-id="8b712-110">Type</span></span>   | <span data-ttu-id="8b712-111">Описание</span><span class="sxs-lookup"><span data-stu-id="8b712-111">Description</span></span>                                                                        |
 | :--------- | :----- | :--------------------------------------------------------------------------------- |
-| <span data-ttu-id="84f63-111">templateId</span><span class="sxs-lookup"><span data-stu-id="84f63-111">templateId</span></span> | <span data-ttu-id="84f63-112">Строка</span><span class="sxs-lookup"><span data-stu-id="84f63-112">String</span></span> | <span data-ttu-id="84f63-113">GUID шаблона Azure Information Protection для применения к данным.</span><span class="sxs-lookup"><span data-stu-id="84f63-113">The GUID of the Azure Information Protection template to apply to the information.</span></span> |
+| <span data-ttu-id="8b712-112">templateId</span><span class="sxs-lookup"><span data-stu-id="8b712-112">templateId</span></span> | <span data-ttu-id="8b712-113">String</span><span class="sxs-lookup"><span data-stu-id="8b712-113">String</span></span> | <span data-ttu-id="8b712-114">GUID шаблона Azure Information Protection для применения к данным.</span><span class="sxs-lookup"><span data-stu-id="8b712-114">The GUID of the Azure Information Protection template to apply to the information.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="84f63-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="84f63-114">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8b712-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="8b712-115">JSON representation</span></span>
 
-<span data-ttu-id="84f63-115">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="84f63-115">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="8b712-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8b712-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

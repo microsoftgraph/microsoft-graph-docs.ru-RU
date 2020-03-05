@@ -5,35 +5,37 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 35826dabd9052023abdc9d8c83ac9640ef550061
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 53b1e18bd1e7b78e7afb479cac3c5f6cc7ecff88
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35966123"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521878"
 ---
-# <a name="physicaladdress-resource-type"></a><span data-ttu-id="49588-103">Тип ресурса physicalAddress</span><span class="sxs-lookup"><span data-stu-id="49588-103">physicalAddress resource type</span></span>
+# <a name="physicaladdress-resource-type"></a><span data-ttu-id="a016d-103">Тип ресурса physicalAddress</span><span class="sxs-lookup"><span data-stu-id="a016d-103">physicalAddress resource type</span></span>
+
+<span data-ttu-id="a016d-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="a016d-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="49588-104">Представляет почтовый адрес ресурса, например контакта или события.</span><span class="sxs-lookup"><span data-stu-id="49588-104">Represents the street address of a resource such as a contact or event.</span></span>
+<span data-ttu-id="a016d-105">Представляет почтовый адрес ресурса, например контакта или события.</span><span class="sxs-lookup"><span data-stu-id="a016d-105">Represents the street address of a resource such as a contact or event.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="49588-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="49588-105">Properties</span></span>
-| <span data-ttu-id="49588-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="49588-106">Property</span></span>     | <span data-ttu-id="49588-107">Тип</span><span class="sxs-lookup"><span data-stu-id="49588-107">Type</span></span>   |<span data-ttu-id="49588-108">Описание</span><span class="sxs-lookup"><span data-stu-id="49588-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="a016d-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="a016d-106">Properties</span></span>
+| <span data-ttu-id="a016d-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="a016d-107">Property</span></span>     | <span data-ttu-id="a016d-108">Тип</span><span class="sxs-lookup"><span data-stu-id="a016d-108">Type</span></span>   |<span data-ttu-id="a016d-109">Описание</span><span class="sxs-lookup"><span data-stu-id="a016d-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="49588-109">city</span><span class="sxs-lookup"><span data-stu-id="49588-109">city</span></span>|<span data-ttu-id="49588-110">String</span><span class="sxs-lookup"><span data-stu-id="49588-110">String</span></span>|<span data-ttu-id="49588-111">Город.</span><span class="sxs-lookup"><span data-stu-id="49588-111">The city.</span></span>|
-|<span data-ttu-id="49588-112">countryOrRegion</span><span class="sxs-lookup"><span data-stu-id="49588-112">countryOrRegion</span></span>|<span data-ttu-id="49588-113">String</span><span class="sxs-lookup"><span data-stu-id="49588-113">String</span></span>|<span data-ttu-id="49588-p101">Страна или регион. Это строковое значение в произвольном формате, например "США".</span><span class="sxs-lookup"><span data-stu-id="49588-p101">The country or region. It's a free-format string value, for example, "United States".</span></span>|
-|<span data-ttu-id="49588-116">postalCode</span><span class="sxs-lookup"><span data-stu-id="49588-116">postalCode</span></span>|<span data-ttu-id="49588-117">String</span><span class="sxs-lookup"><span data-stu-id="49588-117">String</span></span>|<span data-ttu-id="49588-118">Почтовый индекс.</span><span class="sxs-lookup"><span data-stu-id="49588-118">The postal code.</span></span>|
-|<span data-ttu-id="49588-119">postOfficeBox</span><span class="sxs-lookup"><span data-stu-id="49588-119">postOfficeBox</span></span>|<span data-ttu-id="49588-120">String</span><span class="sxs-lookup"><span data-stu-id="49588-120">String</span></span>|<span data-ttu-id="49588-121">Номер почтового ящика в почтовом ящике.</span><span class="sxs-lookup"><span data-stu-id="49588-121">The post office box number.</span></span>|
-|<span data-ttu-id="49588-122">state</span><span class="sxs-lookup"><span data-stu-id="49588-122">state</span></span>|<span data-ttu-id="49588-123">String</span><span class="sxs-lookup"><span data-stu-id="49588-123">String</span></span>|<span data-ttu-id="49588-124">Штат.</span><span class="sxs-lookup"><span data-stu-id="49588-124">The state.</span></span>|
-|<span data-ttu-id="49588-125">street</span><span class="sxs-lookup"><span data-stu-id="49588-125">street</span></span>|<span data-ttu-id="49588-126">String</span><span class="sxs-lookup"><span data-stu-id="49588-126">String</span></span>|<span data-ttu-id="49588-127">Улица.</span><span class="sxs-lookup"><span data-stu-id="49588-127">The street.</span></span>|
-|<span data-ttu-id="49588-128">type</span><span class="sxs-lookup"><span data-stu-id="49588-128">type</span></span>|<span data-ttu-id="49588-129">physicalAddressType</span><span class="sxs-lookup"><span data-stu-id="49588-129">physicalAddressType</span></span>|<span data-ttu-id="49588-130">Тип адреса.</span><span class="sxs-lookup"><span data-stu-id="49588-130">The type of address.</span></span> <span data-ttu-id="49588-131">Возможные значения: `unknown`, `home`, `business`, `other`.</span><span class="sxs-lookup"><span data-stu-id="49588-131">Possible values are: `unknown`, `home`, `business`, `other`.</span></span>|
+|<span data-ttu-id="a016d-110">city</span><span class="sxs-lookup"><span data-stu-id="a016d-110">city</span></span>|<span data-ttu-id="a016d-111">String</span><span class="sxs-lookup"><span data-stu-id="a016d-111">String</span></span>|<span data-ttu-id="a016d-112">Город.</span><span class="sxs-lookup"><span data-stu-id="a016d-112">The city.</span></span>|
+|<span data-ttu-id="a016d-113">countryOrRegion</span><span class="sxs-lookup"><span data-stu-id="a016d-113">countryOrRegion</span></span>|<span data-ttu-id="a016d-114">String</span><span class="sxs-lookup"><span data-stu-id="a016d-114">String</span></span>|<span data-ttu-id="a016d-p101">Страна или регион. Это строковое значение в произвольном формате, например "США".</span><span class="sxs-lookup"><span data-stu-id="a016d-p101">The country or region. It's a free-format string value, for example, "United States".</span></span>|
+|<span data-ttu-id="a016d-117">postalCode</span><span class="sxs-lookup"><span data-stu-id="a016d-117">postalCode</span></span>|<span data-ttu-id="a016d-118">String</span><span class="sxs-lookup"><span data-stu-id="a016d-118">String</span></span>|<span data-ttu-id="a016d-119">Почтовый индекс.</span><span class="sxs-lookup"><span data-stu-id="a016d-119">The postal code.</span></span>|
+|<span data-ttu-id="a016d-120">postOfficeBox</span><span class="sxs-lookup"><span data-stu-id="a016d-120">postOfficeBox</span></span>|<span data-ttu-id="a016d-121">String</span><span class="sxs-lookup"><span data-stu-id="a016d-121">String</span></span>|<span data-ttu-id="a016d-122">Номер почтового ящика в почтовом ящике.</span><span class="sxs-lookup"><span data-stu-id="a016d-122">The post office box number.</span></span>|
+|<span data-ttu-id="a016d-123">state</span><span class="sxs-lookup"><span data-stu-id="a016d-123">state</span></span>|<span data-ttu-id="a016d-124">String</span><span class="sxs-lookup"><span data-stu-id="a016d-124">String</span></span>|<span data-ttu-id="a016d-125">Штат.</span><span class="sxs-lookup"><span data-stu-id="a016d-125">The state.</span></span>|
+|<span data-ttu-id="a016d-126">street</span><span class="sxs-lookup"><span data-stu-id="a016d-126">street</span></span>|<span data-ttu-id="a016d-127">String</span><span class="sxs-lookup"><span data-stu-id="a016d-127">String</span></span>|<span data-ttu-id="a016d-128">Улица.</span><span class="sxs-lookup"><span data-stu-id="a016d-128">The street.</span></span>|
+|<span data-ttu-id="a016d-129">type</span><span class="sxs-lookup"><span data-stu-id="a016d-129">type</span></span>|<span data-ttu-id="a016d-130">physicalAddressType</span><span class="sxs-lookup"><span data-stu-id="a016d-130">physicalAddressType</span></span>|<span data-ttu-id="a016d-131">Тип адреса.</span><span class="sxs-lookup"><span data-stu-id="a016d-131">The type of address.</span></span> <span data-ttu-id="a016d-132">Возможные значения: `unknown`, `home`, `business`, `other`.</span><span class="sxs-lookup"><span data-stu-id="a016d-132">Possible values are: `unknown`, `home`, `business`, `other`.</span></span>|
 
 
-## <a name="json-representation"></a><span data-ttu-id="49588-132">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="49588-132">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a016d-133">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a016d-133">JSON representation</span></span>
 
-<span data-ttu-id="49588-133">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="49588-133">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="a016d-134">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a016d-134">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",

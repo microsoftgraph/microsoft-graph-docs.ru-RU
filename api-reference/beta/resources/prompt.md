@@ -5,26 +5,28 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f43babf47f767ad24c6466d9a454ed026f027564
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: eac53ae6bd4de602c15df5c6c543e12dd58192ff
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913662"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521392"
 ---
-# <a name="prompt-resource-type"></a><span data-ttu-id="d3a65-103">Тип ресурса Prompt</span><span class="sxs-lookup"><span data-stu-id="d3a65-103">prompt resource type</span></span>
+# <a name="prompt-resource-type"></a><span data-ttu-id="002b3-103">Тип ресурса Prompt</span><span class="sxs-lookup"><span data-stu-id="002b3-103">prompt resource type</span></span>
+
+<span data-ttu-id="002b3-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="002b3-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d3a65-104">Базовый тип действия приглашения.</span><span class="sxs-lookup"><span data-stu-id="d3a65-104">Prompt action base type.</span></span>
+<span data-ttu-id="002b3-105">Базовый тип действия приглашения.</span><span class="sxs-lookup"><span data-stu-id="002b3-105">Prompt action base type.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d3a65-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="d3a65-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="002b3-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="002b3-106">Properties</span></span>
 
-<span data-ttu-id="d3a65-106">Нет</span><span class="sxs-lookup"><span data-stu-id="d3a65-106">None</span></span>
+<span data-ttu-id="002b3-107">Нет</span><span class="sxs-lookup"><span data-stu-id="002b3-107">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="d3a65-107">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d3a65-107">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="002b3-108">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="002b3-108">JSON representation</span></span>
 
-<span data-ttu-id="d3a65-108">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d3a65-108">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="002b3-109">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="002b3-109">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

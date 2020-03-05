@@ -5,33 +5,35 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 88880fbe88c0bd702eefeac5bed9668aac12a356
-ms.sourcegitcommit: 3f6a4eebe4b73ba848edbff74d51a2d5c81b7318
+ms.openlocfilehash: 853f7ba95ca4e569efd57bb46024b4258b098d90
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35455184"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520319"
 ---
-# <a name="statusdetails-resource-type"></a><span data-ttu-id="feecd-103">Тип ресурса Статусдетаилс</span><span class="sxs-lookup"><span data-stu-id="feecd-103">statusDetails resource type</span></span>
+# <a name="statusdetails-resource-type"></a><span data-ttu-id="10266-103">Тип ресурса Статусдетаилс</span><span class="sxs-lookup"><span data-stu-id="10266-103">statusDetails resource type</span></span>
+
+<span data-ttu-id="10266-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="10266-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="feecd-104">Описывает состояние события подготовки и связанных с ним ошибок.</span><span class="sxs-lookup"><span data-stu-id="feecd-104">Describes the status of the provisioning event and the associated errors.</span></span> <span data-ttu-id="feecd-105">Он наследуется от [статусбасе](/graph/api/resources/statusbase?view=graph-rest-beta) и используется только в том случае, если для параметра Status задано значение "failure".</span><span class="sxs-lookup"><span data-stu-id="feecd-105">It is inherited from [statusBase](/graph/api/resources/statusbase?view=graph-rest-beta) and only used when status is set to 'failure'.</span></span>  
+<span data-ttu-id="10266-105">Описывает состояние события подготовки и связанных с ним ошибок.</span><span class="sxs-lookup"><span data-stu-id="10266-105">Describes the status of the provisioning event and the associated errors.</span></span> <span data-ttu-id="10266-106">Он наследуется от [статусбасе](/graph/api/resources/statusbase?view=graph-rest-beta) и используется только в том случае, если для параметра Status задано значение "failure".</span><span class="sxs-lookup"><span data-stu-id="10266-106">It is inherited from [statusBase](/graph/api/resources/statusbase?view=graph-rest-beta) and only used when status is set to 'failure'.</span></span>  
 
-## <a name="properties"></a><span data-ttu-id="feecd-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="feecd-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="10266-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="10266-107">Properties</span></span>
 
-| <span data-ttu-id="feecd-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="feecd-107">Property</span></span>     | <span data-ttu-id="feecd-108">Тип</span><span class="sxs-lookup"><span data-stu-id="feecd-108">Type</span></span>        | <span data-ttu-id="feecd-109">Описание</span><span class="sxs-lookup"><span data-stu-id="feecd-109">Description</span></span> |
+| <span data-ttu-id="10266-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="10266-108">Property</span></span>     | <span data-ttu-id="10266-109">Тип</span><span class="sxs-lookup"><span data-stu-id="10266-109">Type</span></span>        | <span data-ttu-id="10266-110">Описание</span><span class="sxs-lookup"><span data-stu-id="10266-110">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="feecd-110">status</span><span class="sxs-lookup"><span data-stu-id="feecd-110">status</span></span>|<span data-ttu-id="feecd-111">String</span><span class="sxs-lookup"><span data-stu-id="feecd-111">String</span></span>|<span data-ttu-id="feecd-112">Возможные значения: `success`, `failure`, `skipped`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="feecd-112">Possible values are: `success`, `failure`, `skipped`, `unknownFutureValue`.</span></span> <span data-ttu-id="feecd-113">Наследуется от Статусбасе.</span><span class="sxs-lookup"><span data-stu-id="feecd-113">Inherited from statusBase.</span></span>|
-|<span data-ttu-id="feecd-114">additionalDetails</span><span class="sxs-lookup"><span data-stu-id="feecd-114">additionalDetails</span></span>|<span data-ttu-id="feecd-115">String</span><span class="sxs-lookup"><span data-stu-id="feecd-115">String</span></span>|<span data-ttu-id="feecd-116">Дополнительные сведения в случае ошибки.</span><span class="sxs-lookup"><span data-stu-id="feecd-116">Additional details in case of error.</span></span>|
-|<span data-ttu-id="feecd-117">errorCategory</span><span class="sxs-lookup"><span data-stu-id="feecd-117">errorCategory</span></span>|<span data-ttu-id="feecd-118">String</span><span class="sxs-lookup"><span data-stu-id="feecd-118">String</span></span>|<span data-ttu-id="feecd-119">Классификация кода ошибки.</span><span class="sxs-lookup"><span data-stu-id="feecd-119">Categorizes the error code.</span></span>|
-|<span data-ttu-id="feecd-120">errorCode</span><span class="sxs-lookup"><span data-stu-id="feecd-120">errorCode</span></span>|<span data-ttu-id="feecd-121">String</span><span class="sxs-lookup"><span data-stu-id="feecd-121">String</span></span>|<span data-ttu-id="feecd-122">Уникальный код ошибки (при возникновении ошибки).</span><span class="sxs-lookup"><span data-stu-id="feecd-122">Unique error code if any occurred.</span></span>|
-|<span data-ttu-id="feecd-123">причиной</span><span class="sxs-lookup"><span data-stu-id="feecd-123">reason</span></span>|<span data-ttu-id="feecd-124">String</span><span class="sxs-lookup"><span data-stu-id="feecd-124">String</span></span>|<span data-ttu-id="feecd-125">Сводка состояния и описание причин возникновения состояния.</span><span class="sxs-lookup"><span data-stu-id="feecd-125">Summarizes the status and describes why the status happened.</span></span>|
-|<span data-ttu-id="feecd-126">Рекоммендедактион</span><span class="sxs-lookup"><span data-stu-id="feecd-126">recommendedAction</span></span>|<span data-ttu-id="feecd-127">String</span><span class="sxs-lookup"><span data-stu-id="feecd-127">String</span></span>|<span data-ttu-id="feecd-128">Предоставляет решение для соответствующей ошибки.</span><span class="sxs-lookup"><span data-stu-id="feecd-128">Provides the resolution for the corresponding error.</span></span>|
+|<span data-ttu-id="10266-111">status</span><span class="sxs-lookup"><span data-stu-id="10266-111">status</span></span>|<span data-ttu-id="10266-112">String</span><span class="sxs-lookup"><span data-stu-id="10266-112">String</span></span>|<span data-ttu-id="10266-113">Возможные значения: `success`, `failure`, `skipped`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="10266-113">Possible values are: `success`, `failure`, `skipped`, `unknownFutureValue`.</span></span> <span data-ttu-id="10266-114">Наследуется от Статусбасе.</span><span class="sxs-lookup"><span data-stu-id="10266-114">Inherited from statusBase.</span></span>|
+|<span data-ttu-id="10266-115">additionalDetails</span><span class="sxs-lookup"><span data-stu-id="10266-115">additionalDetails</span></span>|<span data-ttu-id="10266-116">String</span><span class="sxs-lookup"><span data-stu-id="10266-116">String</span></span>|<span data-ttu-id="10266-117">Дополнительные сведения в случае ошибки.</span><span class="sxs-lookup"><span data-stu-id="10266-117">Additional details in case of error.</span></span>|
+|<span data-ttu-id="10266-118">errorCategory</span><span class="sxs-lookup"><span data-stu-id="10266-118">errorCategory</span></span>|<span data-ttu-id="10266-119">String</span><span class="sxs-lookup"><span data-stu-id="10266-119">String</span></span>|<span data-ttu-id="10266-120">Классификация кода ошибки.</span><span class="sxs-lookup"><span data-stu-id="10266-120">Categorizes the error code.</span></span>|
+|<span data-ttu-id="10266-121">errorCode</span><span class="sxs-lookup"><span data-stu-id="10266-121">errorCode</span></span>|<span data-ttu-id="10266-122">String</span><span class="sxs-lookup"><span data-stu-id="10266-122">String</span></span>|<span data-ttu-id="10266-123">Уникальный код ошибки (при возникновении ошибки).</span><span class="sxs-lookup"><span data-stu-id="10266-123">Unique error code if any occurred.</span></span>|
+|<span data-ttu-id="10266-124">reason</span><span class="sxs-lookup"><span data-stu-id="10266-124">reason</span></span>|<span data-ttu-id="10266-125">String</span><span class="sxs-lookup"><span data-stu-id="10266-125">String</span></span>|<span data-ttu-id="10266-126">Сводка состояния и описание причин возникновения состояния.</span><span class="sxs-lookup"><span data-stu-id="10266-126">Summarizes the status and describes why the status happened.</span></span>|
+|<span data-ttu-id="10266-127">рекоммендедактион</span><span class="sxs-lookup"><span data-stu-id="10266-127">recommendedAction</span></span>|<span data-ttu-id="10266-128">String</span><span class="sxs-lookup"><span data-stu-id="10266-128">String</span></span>|<span data-ttu-id="10266-129">Предоставляет решение для соответствующей ошибки.</span><span class="sxs-lookup"><span data-stu-id="10266-129">Provides the resolution for the corresponding error.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="feecd-129">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="feecd-129">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="10266-130">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="10266-130">JSON representation</span></span>
 
-<span data-ttu-id="feecd-130">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="feecd-130">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="10266-131">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="10266-131">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

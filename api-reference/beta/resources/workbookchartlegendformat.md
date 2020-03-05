@@ -5,35 +5,37 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 987753588beeec62ded346d2f2ff8611c0436e48
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 32f9fcec2002039c9ccee399c90f1a26048c71cc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007265"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519304"
 ---
-# <a name="workbookchartlegendformat-resource-type"></a><span data-ttu-id="e82ed-103">Тип ресурса Воркбукчартлежендформат</span><span class="sxs-lookup"><span data-stu-id="e82ed-103">workbookChartLegendFormat resource type</span></span>
+# <a name="workbookchartlegendformat-resource-type"></a><span data-ttu-id="911f6-103">Тип ресурса Воркбукчартлежендформат</span><span class="sxs-lookup"><span data-stu-id="911f6-103">workbookChartLegendFormat resource type</span></span>
+
+<span data-ttu-id="911f6-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="911f6-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e82ed-104">Инкапсулирует свойства формата легенды диаграммы.</span><span class="sxs-lookup"><span data-stu-id="e82ed-104">Encapsulates the format properties of a chart legend.</span></span>
+<span data-ttu-id="911f6-105">Инкапсулирует свойства формата легенды диаграммы.</span><span class="sxs-lookup"><span data-stu-id="911f6-105">Encapsulates the format properties of a chart legend.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="e82ed-105">Методы</span><span class="sxs-lookup"><span data-stu-id="e82ed-105">Methods</span></span>
-<span data-ttu-id="e82ed-106">Нет</span><span class="sxs-lookup"><span data-stu-id="e82ed-106">None</span></span>
+## <a name="methods"></a><span data-ttu-id="911f6-106">Методы</span><span class="sxs-lookup"><span data-stu-id="911f6-106">Methods</span></span>
+<span data-ttu-id="911f6-107">Нет</span><span class="sxs-lookup"><span data-stu-id="911f6-107">None</span></span>
 
-## <a name="properties"></a><span data-ttu-id="e82ed-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="e82ed-107">Properties</span></span>
-<span data-ttu-id="e82ed-108">Нет</span><span class="sxs-lookup"><span data-stu-id="e82ed-108">None</span></span>
+## <a name="properties"></a><span data-ttu-id="911f6-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="911f6-108">Properties</span></span>
+<span data-ttu-id="911f6-109">Нет</span><span class="sxs-lookup"><span data-stu-id="911f6-109">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="e82ed-109">Отношения</span><span class="sxs-lookup"><span data-stu-id="e82ed-109">Relationships</span></span>
-| <span data-ttu-id="e82ed-110">Отношение</span><span class="sxs-lookup"><span data-stu-id="e82ed-110">Relationship</span></span> | <span data-ttu-id="e82ed-111">Тип</span><span class="sxs-lookup"><span data-stu-id="e82ed-111">Type</span></span>   |<span data-ttu-id="e82ed-112">Описание</span><span class="sxs-lookup"><span data-stu-id="e82ed-112">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="911f6-110">Связи</span><span class="sxs-lookup"><span data-stu-id="911f6-110">Relationships</span></span>
+| <span data-ttu-id="911f6-111">Связь</span><span class="sxs-lookup"><span data-stu-id="911f6-111">Relationship</span></span> | <span data-ttu-id="911f6-112">Тип</span><span class="sxs-lookup"><span data-stu-id="911f6-112">Type</span></span>   |<span data-ttu-id="911f6-113">Описание</span><span class="sxs-lookup"><span data-stu-id="911f6-113">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e82ed-113">fill</span><span class="sxs-lookup"><span data-stu-id="e82ed-113">fill</span></span>|[<span data-ttu-id="e82ed-114">Воркбукчартфилл</span><span class="sxs-lookup"><span data-stu-id="e82ed-114">workbookChartFill</span></span>](workbookchartfill.md)|<span data-ttu-id="e82ed-p101">Представляет формат заливки объекта, включая сведения о форматировании фона. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="e82ed-p101">Represents the fill format of an object, which includes background formating information. Read-only.</span></span>|
-|<span data-ttu-id="e82ed-117">шрифт</span><span class="sxs-lookup"><span data-stu-id="e82ed-117">font</span></span>|[<span data-ttu-id="e82ed-118">Воркбукчартфонт</span><span class="sxs-lookup"><span data-stu-id="e82ed-118">workbookChartFont</span></span>](workbookchartfont.md)|<span data-ttu-id="e82ed-119">Представляет атрибуты шрифта, такие как имя шрифта, размер шрифта, цвет и т. д., в условных обозначениях диаграммы.</span><span class="sxs-lookup"><span data-stu-id="e82ed-119">Represents the font attributes such as font name, font size, color, etc. of a chart legend.</span></span> <span data-ttu-id="e82ed-120">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="e82ed-120">Read-only.</span></span>|
+|<span data-ttu-id="911f6-114">fill</span><span class="sxs-lookup"><span data-stu-id="911f6-114">fill</span></span>|[<span data-ttu-id="911f6-115">воркбукчартфилл</span><span class="sxs-lookup"><span data-stu-id="911f6-115">workbookChartFill</span></span>](workbookchartfill.md)|<span data-ttu-id="911f6-p101">Представляет формат заливки объекта, включая сведения о форматировании фона. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="911f6-p101">Represents the fill format of an object, which includes background formating information. Read-only.</span></span>|
+|<span data-ttu-id="911f6-118">шрифт</span><span class="sxs-lookup"><span data-stu-id="911f6-118">font</span></span>|[<span data-ttu-id="911f6-119">воркбукчартфонт</span><span class="sxs-lookup"><span data-stu-id="911f6-119">workbookChartFont</span></span>](workbookchartfont.md)|<span data-ttu-id="911f6-120">Представляет атрибуты шрифта, такие как имя шрифта, размер шрифта, цвет и т. д., в условных обозначениях диаграммы.</span><span class="sxs-lookup"><span data-stu-id="911f6-120">Represents the font attributes such as font name, font size, color, etc. of a chart legend.</span></span> <span data-ttu-id="911f6-121">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="911f6-121">Read-only.</span></span>|
 
 
-## <a name="json-representation"></a><span data-ttu-id="e82ed-121">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="e82ed-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="911f6-122">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="911f6-122">JSON representation</span></span>
 
-<span data-ttu-id="e82ed-122">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e82ed-122">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="911f6-123">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="911f6-123">Here is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",

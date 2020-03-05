@@ -5,37 +5,39 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 04b2d4ab31651fe34affe42ef4811c3802762581
-ms.sourcegitcommit: 2f3e7325b5bc1f0cdc12a8acdf34d31cea3b8bdb
+ms.openlocfilehash: 6357d43093b590a42b4a1f6583f46ff7c2fc2d14
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "38023200"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519416"
 ---
-# <a name="workbookapplication-resource-type"></a><span data-ttu-id="482d1-103">Тип ресурса Воркбукаппликатион</span><span class="sxs-lookup"><span data-stu-id="482d1-103">workbookApplication resource type</span></span>
+# <a name="workbookapplication-resource-type"></a><span data-ttu-id="de9fb-103">Тип ресурса Воркбукаппликатион</span><span class="sxs-lookup"><span data-stu-id="de9fb-103">workbookApplication resource type</span></span>
+
+<span data-ttu-id="de9fb-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="de9fb-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="482d1-104">Представляет приложение Excel, которое управляет книгой.</span><span class="sxs-lookup"><span data-stu-id="482d1-104">Represents the Excel application that manages the workbook.</span></span>
+<span data-ttu-id="de9fb-105">Представляет приложение Excel, которое управляет книгой.</span><span class="sxs-lookup"><span data-stu-id="de9fb-105">Represents the Excel application that manages the workbook.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="482d1-105">Методы</span><span class="sxs-lookup"><span data-stu-id="482d1-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="de9fb-106">Методы</span><span class="sxs-lookup"><span data-stu-id="de9fb-106">Methods</span></span>
 
-| <span data-ttu-id="482d1-106">Метод</span><span class="sxs-lookup"><span data-stu-id="482d1-106">Method</span></span>           | <span data-ttu-id="482d1-107">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="482d1-107">Return Type</span></span>    |<span data-ttu-id="482d1-108">Описание</span><span class="sxs-lookup"><span data-stu-id="482d1-108">Description</span></span>|
+| <span data-ttu-id="de9fb-107">Метод</span><span class="sxs-lookup"><span data-stu-id="de9fb-107">Method</span></span>           | <span data-ttu-id="de9fb-108">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="de9fb-108">Return Type</span></span>    |<span data-ttu-id="de9fb-109">Описание</span><span class="sxs-lookup"><span data-stu-id="de9fb-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="482d1-109">Получение Воркбукаппликатион</span><span class="sxs-lookup"><span data-stu-id="482d1-109">Get workbookApplication</span></span>](../api/workbookapplication-get.md) | [<span data-ttu-id="482d1-110">воркбукаппликатион</span><span class="sxs-lookup"><span data-stu-id="482d1-110">workbookApplication</span></span>](workbookapplication.md) |<span data-ttu-id="482d1-111">Чтение свойств и связей объекта Воркбукаппликатион.</span><span class="sxs-lookup"><span data-stu-id="482d1-111">Read properties and relationships of workbookApplication object.</span></span>|
-|[<span data-ttu-id="482d1-112">Calculate</span><span class="sxs-lookup"><span data-stu-id="482d1-112">Calculate</span></span>](../api/workbookapplication-calculate.md)|<span data-ttu-id="482d1-113">Нет</span><span class="sxs-lookup"><span data-stu-id="482d1-113">None</span></span>|<span data-ttu-id="482d1-114">Пересчитывает данные во всех открытых в текущий момент книгах Excel.</span><span class="sxs-lookup"><span data-stu-id="482d1-114">Recalculate all currently opened workbooks in Excel.</span></span>|
+|[<span data-ttu-id="de9fb-110">Получение Воркбукаппликатион</span><span class="sxs-lookup"><span data-stu-id="de9fb-110">Get workbookApplication</span></span>](../api/workbookapplication-get.md) | [<span data-ttu-id="de9fb-111">воркбукаппликатион</span><span class="sxs-lookup"><span data-stu-id="de9fb-111">workbookApplication</span></span>](workbookapplication.md) |<span data-ttu-id="de9fb-112">Чтение свойств и связей объекта Воркбукаппликатион.</span><span class="sxs-lookup"><span data-stu-id="de9fb-112">Read properties and relationships of workbookApplication object.</span></span>|
+|[<span data-ttu-id="de9fb-113">Calculate</span><span class="sxs-lookup"><span data-stu-id="de9fb-113">Calculate</span></span>](../api/workbookapplication-calculate.md)|<span data-ttu-id="de9fb-114">Нет</span><span class="sxs-lookup"><span data-stu-id="de9fb-114">None</span></span>|<span data-ttu-id="de9fb-115">Пересчитывает данные во всех открытых в текущий момент книгах Excel.</span><span class="sxs-lookup"><span data-stu-id="de9fb-115">Recalculate all currently opened workbooks in Excel.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="482d1-115">Свойства</span><span class="sxs-lookup"><span data-stu-id="482d1-115">Properties</span></span>
-| <span data-ttu-id="482d1-116">Свойство</span><span class="sxs-lookup"><span data-stu-id="482d1-116">Property</span></span>     | <span data-ttu-id="482d1-117">Тип</span><span class="sxs-lookup"><span data-stu-id="482d1-117">Type</span></span>   |<span data-ttu-id="482d1-118">Описание</span><span class="sxs-lookup"><span data-stu-id="482d1-118">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="de9fb-116">Свойства</span><span class="sxs-lookup"><span data-stu-id="de9fb-116">Properties</span></span>
+| <span data-ttu-id="de9fb-117">Свойство</span><span class="sxs-lookup"><span data-stu-id="de9fb-117">Property</span></span>     | <span data-ttu-id="de9fb-118">Тип</span><span class="sxs-lookup"><span data-stu-id="de9fb-118">Type</span></span>   |<span data-ttu-id="de9fb-119">Описание</span><span class="sxs-lookup"><span data-stu-id="de9fb-119">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="482d1-119">калкулатионмоде</span><span class="sxs-lookup"><span data-stu-id="482d1-119">calculationMode</span></span>|<span data-ttu-id="482d1-120">string</span><span class="sxs-lookup"><span data-stu-id="482d1-120">string</span></span>|<span data-ttu-id="482d1-121">Возвращает режим вычисления, который используется в книге.</span><span class="sxs-lookup"><span data-stu-id="482d1-121">Returns the calculation mode used in the workbook.</span></span> <span data-ttu-id="482d1-122">Возможные значения: `Automatic`, `AutomaticExceptTables`, `Manual`.</span><span class="sxs-lookup"><span data-stu-id="482d1-122">Possible values are: `Automatic`, `AutomaticExceptTables`, `Manual`.</span></span>|
+|<span data-ttu-id="de9fb-120">калкулатионмоде</span><span class="sxs-lookup"><span data-stu-id="de9fb-120">calculationMode</span></span>|<span data-ttu-id="de9fb-121">string</span><span class="sxs-lookup"><span data-stu-id="de9fb-121">string</span></span>|<span data-ttu-id="de9fb-122">Возвращает режим вычисления, который используется в книге.</span><span class="sxs-lookup"><span data-stu-id="de9fb-122">Returns the calculation mode used in the workbook.</span></span> <span data-ttu-id="de9fb-123">Возможные значения: `Automatic`, `AutomaticExceptTables`, `Manual`.</span><span class="sxs-lookup"><span data-stu-id="de9fb-123">Possible values are: `Automatic`, `AutomaticExceptTables`, `Manual`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="482d1-123">Отношения</span><span class="sxs-lookup"><span data-stu-id="482d1-123">Relationships</span></span>
-<span data-ttu-id="482d1-124">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="482d1-124">None.</span></span>
+## <a name="relationships"></a><span data-ttu-id="de9fb-124">Связи</span><span class="sxs-lookup"><span data-stu-id="de9fb-124">Relationships</span></span>
+<span data-ttu-id="de9fb-125">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="de9fb-125">None.</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="482d1-125">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="482d1-125">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="de9fb-126">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="de9fb-126">JSON representation</span></span>
 
 
 <!-- {

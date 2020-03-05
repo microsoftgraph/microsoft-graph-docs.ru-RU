@@ -5,31 +5,33 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 3a89ed35c820338cde7b3f22a7345c860b1a4427
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 213a8d388b80a4b35d26afc0071445a8ac6095b9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964531"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519934"
 ---
-# <a name="teammessagingsettings-resource-type"></a><span data-ttu-id="1ea21-103">Тип ресурса Теаммессагингсеттингс</span><span class="sxs-lookup"><span data-stu-id="1ea21-103">teamMessagingSettings resource type</span></span>
+# <a name="teammessagingsettings-resource-type"></a><span data-ttu-id="37fb5-103">Тип ресурса Теаммессагингсеттингс</span><span class="sxs-lookup"><span data-stu-id="37fb5-103">teamMessagingSettings resource type</span></span>
+
+<span data-ttu-id="37fb5-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="37fb5-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1ea21-104">Параметры для настройки обмена сообщениями и упоминаний в [команде](team.md).</span><span class="sxs-lookup"><span data-stu-id="1ea21-104">Settings to configure messaging and mentions in the [team](team.md).</span></span>
+<span data-ttu-id="37fb5-105">Параметры для настройки обмена сообщениями и упоминаний в [команде](team.md).</span><span class="sxs-lookup"><span data-stu-id="37fb5-105">Settings to configure messaging and mentions in the [team](team.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="1ea21-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="1ea21-105">Properties</span></span>
-| <span data-ttu-id="1ea21-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="1ea21-106">Property</span></span>     | <span data-ttu-id="1ea21-107">Тип</span><span class="sxs-lookup"><span data-stu-id="1ea21-107">Type</span></span>   |<span data-ttu-id="1ea21-108">Описание</span><span class="sxs-lookup"><span data-stu-id="1ea21-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="37fb5-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="37fb5-106">Properties</span></span>
+| <span data-ttu-id="37fb5-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="37fb5-107">Property</span></span>     | <span data-ttu-id="37fb5-108">Тип</span><span class="sxs-lookup"><span data-stu-id="37fb5-108">Type</span></span>   |<span data-ttu-id="37fb5-109">Описание</span><span class="sxs-lookup"><span data-stu-id="37fb5-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="1ea21-109">Алловусередитмессажес</span><span class="sxs-lookup"><span data-stu-id="1ea21-109">allowUserEditMessages</span></span>|<span data-ttu-id="1ea21-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="1ea21-110">Boolean</span></span>|<span data-ttu-id="1ea21-111">Если задано значение true, пользователи могут редактировать сообщения.</span><span class="sxs-lookup"><span data-stu-id="1ea21-111">If set to true, users can edit their messages.</span></span>|
-|<span data-ttu-id="1ea21-112">Алловусерделетемессажес</span><span class="sxs-lookup"><span data-stu-id="1ea21-112">allowUserDeleteMessages</span></span>|<span data-ttu-id="1ea21-113">Boolean</span><span class="sxs-lookup"><span data-stu-id="1ea21-113">Boolean</span></span>|<span data-ttu-id="1ea21-114">Если задано значение true, пользователи могут удалять свои сообщения.</span><span class="sxs-lookup"><span data-stu-id="1ea21-114">If set to true, users can delete their messages.</span></span>|
-|<span data-ttu-id="1ea21-115">Аллововнерделетемессажес</span><span class="sxs-lookup"><span data-stu-id="1ea21-115">allowOwnerDeleteMessages</span></span>|<span data-ttu-id="1ea21-116">Boolean</span><span class="sxs-lookup"><span data-stu-id="1ea21-116">Boolean</span></span>|<span data-ttu-id="1ea21-117">Если задано значение true, владельцы могут удалять любые сообщения.</span><span class="sxs-lookup"><span data-stu-id="1ea21-117">If set to true, owners can delete any message.</span></span>|
-|<span data-ttu-id="1ea21-118">Алловтеамментионс</span><span class="sxs-lookup"><span data-stu-id="1ea21-118">allowTeamMentions</span></span>|<span data-ttu-id="1ea21-119">Boolean</span><span class="sxs-lookup"><span data-stu-id="1ea21-119">Boolean</span></span>|<span data-ttu-id="1ea21-120">Если задано значение true, @team упоминаний разрешены.</span><span class="sxs-lookup"><span data-stu-id="1ea21-120">If set to true, @team mentions are allowed.</span></span>|
-|<span data-ttu-id="1ea21-121">Алловчаннелментионс</span><span class="sxs-lookup"><span data-stu-id="1ea21-121">allowChannelMentions</span></span>|<span data-ttu-id="1ea21-122">Boolean</span><span class="sxs-lookup"><span data-stu-id="1ea21-122">Boolean</span></span>|<span data-ttu-id="1ea21-123">Если задано значение true, @channel упоминаний разрешены.</span><span class="sxs-lookup"><span data-stu-id="1ea21-123">If set to true, @channel mentions are allowed.</span></span>|
+|<span data-ttu-id="37fb5-110">алловусередитмессажес</span><span class="sxs-lookup"><span data-stu-id="37fb5-110">allowUserEditMessages</span></span>|<span data-ttu-id="37fb5-111">Логический</span><span class="sxs-lookup"><span data-stu-id="37fb5-111">Boolean</span></span>|<span data-ttu-id="37fb5-112">Если задано значение true, пользователи могут редактировать сообщения.</span><span class="sxs-lookup"><span data-stu-id="37fb5-112">If set to true, users can edit their messages.</span></span>|
+|<span data-ttu-id="37fb5-113">алловусерделетемессажес</span><span class="sxs-lookup"><span data-stu-id="37fb5-113">allowUserDeleteMessages</span></span>|<span data-ttu-id="37fb5-114">Логический</span><span class="sxs-lookup"><span data-stu-id="37fb5-114">Boolean</span></span>|<span data-ttu-id="37fb5-115">Если задано значение true, пользователи могут удалять свои сообщения.</span><span class="sxs-lookup"><span data-stu-id="37fb5-115">If set to true, users can delete their messages.</span></span>|
+|<span data-ttu-id="37fb5-116">аллововнерделетемессажес</span><span class="sxs-lookup"><span data-stu-id="37fb5-116">allowOwnerDeleteMessages</span></span>|<span data-ttu-id="37fb5-117">Логический</span><span class="sxs-lookup"><span data-stu-id="37fb5-117">Boolean</span></span>|<span data-ttu-id="37fb5-118">Если задано значение true, владельцы могут удалять любые сообщения.</span><span class="sxs-lookup"><span data-stu-id="37fb5-118">If set to true, owners can delete any message.</span></span>|
+|<span data-ttu-id="37fb5-119">алловтеамментионс</span><span class="sxs-lookup"><span data-stu-id="37fb5-119">allowTeamMentions</span></span>|<span data-ttu-id="37fb5-120">Логический</span><span class="sxs-lookup"><span data-stu-id="37fb5-120">Boolean</span></span>|<span data-ttu-id="37fb5-121">Если задано значение true, @team упоминаний разрешены.</span><span class="sxs-lookup"><span data-stu-id="37fb5-121">If set to true, @team mentions are allowed.</span></span>|
+|<span data-ttu-id="37fb5-122">алловчаннелментионс</span><span class="sxs-lookup"><span data-stu-id="37fb5-122">allowChannelMentions</span></span>|<span data-ttu-id="37fb5-123">Логический</span><span class="sxs-lookup"><span data-stu-id="37fb5-123">Boolean</span></span>|<span data-ttu-id="37fb5-124">Если задано значение true, @channel упоминаний разрешены.</span><span class="sxs-lookup"><span data-stu-id="37fb5-124">If set to true, @channel mentions are allowed.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="1ea21-124">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="1ea21-124">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="37fb5-125">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="37fb5-125">JSON representation</span></span>
 
-<span data-ttu-id="1ea21-125">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="1ea21-125">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="37fb5-126">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="37fb5-126">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

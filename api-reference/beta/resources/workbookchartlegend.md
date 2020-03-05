@@ -5,41 +5,43 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 42414f0089cf3e33529796ebbeb53b95bc1d4ef2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 60d37ab606668fbe6828293112997980c7e4580c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964047"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519311"
 ---
-# <a name="workbookchartlegend-resource-type"></a><span data-ttu-id="a59f7-103">Тип ресурса Воркбукчартлеженд</span><span class="sxs-lookup"><span data-stu-id="a59f7-103">workbookChartLegend resource type</span></span>
+# <a name="workbookchartlegend-resource-type"></a><span data-ttu-id="3d955-103">Тип ресурса Воркбукчартлеженд</span><span class="sxs-lookup"><span data-stu-id="3d955-103">workbookChartLegend resource type</span></span>
+
+<span data-ttu-id="3d955-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="3d955-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a59f7-104">Представляет легенду в диаграмме.</span><span class="sxs-lookup"><span data-stu-id="a59f7-104">Represents the legend in a chart.</span></span>
+<span data-ttu-id="3d955-105">Представляет легенду в диаграмме.</span><span class="sxs-lookup"><span data-stu-id="3d955-105">Represents the legend in a chart.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="a59f7-105">Методы</span><span class="sxs-lookup"><span data-stu-id="a59f7-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="3d955-106">Методы</span><span class="sxs-lookup"><span data-stu-id="3d955-106">Methods</span></span>
 
-| <span data-ttu-id="a59f7-106">Метод</span><span class="sxs-lookup"><span data-stu-id="a59f7-106">Method</span></span>           | <span data-ttu-id="a59f7-107">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="a59f7-107">Return Type</span></span>    |<span data-ttu-id="a59f7-108">Описание</span><span class="sxs-lookup"><span data-stu-id="a59f7-108">Description</span></span>|
+| <span data-ttu-id="3d955-107">Метод</span><span class="sxs-lookup"><span data-stu-id="3d955-107">Method</span></span>           | <span data-ttu-id="3d955-108">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="3d955-108">Return Type</span></span>    |<span data-ttu-id="3d955-109">Описание</span><span class="sxs-lookup"><span data-stu-id="3d955-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="a59f7-109">Получение Воркбукчартлеженд</span><span class="sxs-lookup"><span data-stu-id="a59f7-109">Get workbookChartLegend</span></span>](../api/chartlegend-get.md) | [<span data-ttu-id="a59f7-110">Воркбукчартлеженд</span><span class="sxs-lookup"><span data-stu-id="a59f7-110">workbookChartLegend</span></span>](workbookchartlegend.md) |<span data-ttu-id="a59f7-111">Чтение свойств и связей объекта chartLegend.</span><span class="sxs-lookup"><span data-stu-id="a59f7-111">Read properties and relationships of chartLegend object.</span></span>|
-|[<span data-ttu-id="a59f7-112">Обновление</span><span class="sxs-lookup"><span data-stu-id="a59f7-112">Update</span></span>](../api/chartlegend-update.md) | [<span data-ttu-id="a59f7-113">Воркбукчартлеженд</span><span class="sxs-lookup"><span data-stu-id="a59f7-113">workbookChartLegend</span></span>](workbookchartlegend.md) |<span data-ttu-id="a59f7-114">Обновление объекта ChartLegend.</span><span class="sxs-lookup"><span data-stu-id="a59f7-114">Update ChartLegend object.</span></span> |
+|[<span data-ttu-id="3d955-110">Получение Воркбукчартлеженд</span><span class="sxs-lookup"><span data-stu-id="3d955-110">Get workbookChartLegend</span></span>](../api/chartlegend-get.md) | [<span data-ttu-id="3d955-111">воркбукчартлеженд</span><span class="sxs-lookup"><span data-stu-id="3d955-111">workbookChartLegend</span></span>](workbookchartlegend.md) |<span data-ttu-id="3d955-112">Чтение свойств и связей объекта chartLegend.</span><span class="sxs-lookup"><span data-stu-id="3d955-112">Read properties and relationships of chartLegend object.</span></span>|
+|[<span data-ttu-id="3d955-113">Обновление</span><span class="sxs-lookup"><span data-stu-id="3d955-113">Update</span></span>](../api/chartlegend-update.md) | [<span data-ttu-id="3d955-114">воркбукчартлеженд</span><span class="sxs-lookup"><span data-stu-id="3d955-114">workbookChartLegend</span></span>](workbookchartlegend.md) |<span data-ttu-id="3d955-115">Обновление объекта ChartLegend.</span><span class="sxs-lookup"><span data-stu-id="3d955-115">Update ChartLegend object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="a59f7-115">Свойства</span><span class="sxs-lookup"><span data-stu-id="a59f7-115">Properties</span></span>
-| <span data-ttu-id="a59f7-116">Свойство</span><span class="sxs-lookup"><span data-stu-id="a59f7-116">Property</span></span>     | <span data-ttu-id="a59f7-117">Тип</span><span class="sxs-lookup"><span data-stu-id="a59f7-117">Type</span></span>   |<span data-ttu-id="a59f7-118">Описание</span><span class="sxs-lookup"><span data-stu-id="a59f7-118">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="3d955-116">Свойства</span><span class="sxs-lookup"><span data-stu-id="3d955-116">Properties</span></span>
+| <span data-ttu-id="3d955-117">Свойство</span><span class="sxs-lookup"><span data-stu-id="3d955-117">Property</span></span>     | <span data-ttu-id="3d955-118">Тип</span><span class="sxs-lookup"><span data-stu-id="3d955-118">Type</span></span>   |<span data-ttu-id="3d955-119">Описание</span><span class="sxs-lookup"><span data-stu-id="3d955-119">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a59f7-119">overlay</span><span class="sxs-lookup"><span data-stu-id="a59f7-119">overlay</span></span>|<span data-ttu-id="a59f7-120">boolean</span><span class="sxs-lookup"><span data-stu-id="a59f7-120">boolean</span></span>|<span data-ttu-id="a59f7-121">Логическое значение, определяющее, должна ли легенда диаграммы пересекаться с основной частью диаграммы.</span><span class="sxs-lookup"><span data-stu-id="a59f7-121">Boolean value for whether the chart legend should overlap with the main body of the chart.</span></span>|
-|<span data-ttu-id="a59f7-122">position</span><span class="sxs-lookup"><span data-stu-id="a59f7-122">position</span></span>|<span data-ttu-id="a59f7-123">string</span><span class="sxs-lookup"><span data-stu-id="a59f7-123">string</span></span>|<span data-ttu-id="a59f7-124">Представляет расположение легенды на диаграмме.</span><span class="sxs-lookup"><span data-stu-id="a59f7-124">Represents the position of the legend on the chart.</span></span> <span data-ttu-id="a59f7-125">Допустимые значения: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.</span><span class="sxs-lookup"><span data-stu-id="a59f7-125">The possible values are: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.</span></span>|
-|<span data-ttu-id="a59f7-126">visible</span><span class="sxs-lookup"><span data-stu-id="a59f7-126">visible</span></span>|<span data-ttu-id="a59f7-127">boolean</span><span class="sxs-lookup"><span data-stu-id="a59f7-127">boolean</span></span>|<span data-ttu-id="a59f7-128">Логическое значение, представляющее видимость объекта ChartLegend.</span><span class="sxs-lookup"><span data-stu-id="a59f7-128">A boolean value the represents the visibility of a ChartLegend object.</span></span>|
+|<span data-ttu-id="3d955-120">overlay</span><span class="sxs-lookup"><span data-stu-id="3d955-120">overlay</span></span>|<span data-ttu-id="3d955-121">boolean</span><span class="sxs-lookup"><span data-stu-id="3d955-121">boolean</span></span>|<span data-ttu-id="3d955-122">Логическое значение, определяющее, должна ли легенда диаграммы пересекаться с основной частью диаграммы.</span><span class="sxs-lookup"><span data-stu-id="3d955-122">Boolean value for whether the chart legend should overlap with the main body of the chart.</span></span>|
+|<span data-ttu-id="3d955-123">position</span><span class="sxs-lookup"><span data-stu-id="3d955-123">position</span></span>|<span data-ttu-id="3d955-124">string</span><span class="sxs-lookup"><span data-stu-id="3d955-124">string</span></span>|<span data-ttu-id="3d955-125">Представляет расположение легенды на диаграмме.</span><span class="sxs-lookup"><span data-stu-id="3d955-125">Represents the position of the legend on the chart.</span></span> <span data-ttu-id="3d955-126">Допустимые значения: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.</span><span class="sxs-lookup"><span data-stu-id="3d955-126">The possible values are: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.</span></span>|
+|<span data-ttu-id="3d955-127">visible</span><span class="sxs-lookup"><span data-stu-id="3d955-127">visible</span></span>|<span data-ttu-id="3d955-128">boolean</span><span class="sxs-lookup"><span data-stu-id="3d955-128">boolean</span></span>|<span data-ttu-id="3d955-129">Логическое значение, представляющее видимость объекта ChartLegend.</span><span class="sxs-lookup"><span data-stu-id="3d955-129">A boolean value the represents the visibility of a ChartLegend object.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="a59f7-129">Отношения</span><span class="sxs-lookup"><span data-stu-id="a59f7-129">Relationships</span></span>
-| <span data-ttu-id="a59f7-130">Отношение</span><span class="sxs-lookup"><span data-stu-id="a59f7-130">Relationship</span></span> | <span data-ttu-id="a59f7-131">Тип</span><span class="sxs-lookup"><span data-stu-id="a59f7-131">Type</span></span>   |<span data-ttu-id="a59f7-132">Описание</span><span class="sxs-lookup"><span data-stu-id="a59f7-132">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="3d955-130">Связи</span><span class="sxs-lookup"><span data-stu-id="3d955-130">Relationships</span></span>
+| <span data-ttu-id="3d955-131">Связь</span><span class="sxs-lookup"><span data-stu-id="3d955-131">Relationship</span></span> | <span data-ttu-id="3d955-132">Тип</span><span class="sxs-lookup"><span data-stu-id="3d955-132">Type</span></span>   |<span data-ttu-id="3d955-133">Описание</span><span class="sxs-lookup"><span data-stu-id="3d955-133">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a59f7-133">format</span><span class="sxs-lookup"><span data-stu-id="a59f7-133">format</span></span>|[<span data-ttu-id="a59f7-134">Воркбукчартлежендформат</span><span class="sxs-lookup"><span data-stu-id="a59f7-134">workbookChartLegendFormat</span></span>](workbookchartlegendformat.md)|<span data-ttu-id="a59f7-135">Представляет форматирование легенды диаграммы, включая заливку и шрифт.</span><span class="sxs-lookup"><span data-stu-id="a59f7-135">Represents the formatting of a chart legend, which includes fill and font formatting.</span></span> <span data-ttu-id="a59f7-136">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="a59f7-136">Read-only.</span></span>|
+|<span data-ttu-id="3d955-134">format</span><span class="sxs-lookup"><span data-stu-id="3d955-134">format</span></span>|[<span data-ttu-id="3d955-135">воркбукчартлежендформат</span><span class="sxs-lookup"><span data-stu-id="3d955-135">workbookChartLegendFormat</span></span>](workbookchartlegendformat.md)|<span data-ttu-id="3d955-136">Представляет форматирование легенды диаграммы, включая заливку и шрифт.</span><span class="sxs-lookup"><span data-stu-id="3d955-136">Represents the formatting of a chart legend, which includes fill and font formatting.</span></span> <span data-ttu-id="3d955-137">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="3d955-137">Read-only.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="a59f7-137">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a59f7-137">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3d955-138">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="3d955-138">JSON representation</span></span>
 
-<span data-ttu-id="a59f7-138">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a59f7-138">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="3d955-139">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="3d955-139">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

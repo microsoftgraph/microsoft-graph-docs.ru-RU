@@ -5,29 +5,31 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: ba13967a2b4373c1a3599baf2fcc856967fbb00c
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 7b121a1bd3369eebd752651fa412510daf943b76
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939833"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520789"
 ---
-# <a name="serviceinformation-resource-type"></a><span data-ttu-id="dc6e2-103">Тип ресурса Сервицеинформатион</span><span class="sxs-lookup"><span data-stu-id="dc6e2-103">serviceInformation resource type</span></span>
+# <a name="serviceinformation-resource-type"></a><span data-ttu-id="8896b-103">Тип ресурса Сервицеинформатион</span><span class="sxs-lookup"><span data-stu-id="8896b-103">serviceInformation resource type</span></span>
+
+<span data-ttu-id="8896b-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="8896b-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="dc6e2-104">Представляет базовые описательные данные о облачных службах, на которые пользователь выбрал ссылку из своей учетной записи.</span><span class="sxs-lookup"><span data-stu-id="dc6e2-104">Represents basic descriptive data about cloud services that a user has chosen to refer to from their account.</span></span>
+<span data-ttu-id="8896b-105">Представляет базовые описательные данные о облачных службах, на которые пользователь выбрал ссылку из своей учетной записи.</span><span class="sxs-lookup"><span data-stu-id="8896b-105">Represents basic descriptive data about cloud services that a user has chosen to refer to from their account.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="dc6e2-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="dc6e2-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="8896b-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="8896b-106">Properties</span></span>
 
-| <span data-ttu-id="dc6e2-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="dc6e2-106">Property</span></span>     | <span data-ttu-id="dc6e2-107">Тип</span><span class="sxs-lookup"><span data-stu-id="dc6e2-107">Type</span></span>        | <span data-ttu-id="dc6e2-108">Описание</span><span class="sxs-lookup"><span data-stu-id="dc6e2-108">Description</span></span>                                            |
+| <span data-ttu-id="8896b-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="8896b-107">Property</span></span>     | <span data-ttu-id="8896b-108">Тип</span><span class="sxs-lookup"><span data-stu-id="8896b-108">Type</span></span>        | <span data-ttu-id="8896b-109">Описание</span><span class="sxs-lookup"><span data-stu-id="8896b-109">Description</span></span>                                            |
 |:-------------|:------------|:-------------------------------------------------------|
-|<span data-ttu-id="dc6e2-109">name</span><span class="sxs-lookup"><span data-stu-id="dc6e2-109">name</span></span>          | <span data-ttu-id="dc6e2-110">String</span><span class="sxs-lookup"><span data-stu-id="dc6e2-110">String</span></span>      | <span data-ttu-id="dc6e2-111">Имя облачной службы (например, Twitter, Инстаграм).</span><span class="sxs-lookup"><span data-stu-id="dc6e2-111">The name of the cloud service (for example, Twitter, Instagram).</span></span> |
-|<span data-ttu-id="dc6e2-112">webUrl</span><span class="sxs-lookup"><span data-stu-id="dc6e2-112">webUrl</span></span>        | <span data-ttu-id="dc6e2-113">String</span><span class="sxs-lookup"><span data-stu-id="dc6e2-113">String</span></span>      | <span data-ttu-id="dc6e2-114">Содержит URL-адрес для службы, на которую указывает ссылка.</span><span class="sxs-lookup"><span data-stu-id="dc6e2-114">Contains the URL for the service being referenced.</span></span>     |
+|<span data-ttu-id="8896b-110">name</span><span class="sxs-lookup"><span data-stu-id="8896b-110">name</span></span>          | <span data-ttu-id="8896b-111">String</span><span class="sxs-lookup"><span data-stu-id="8896b-111">String</span></span>      | <span data-ttu-id="8896b-112">Имя облачной службы (например, Twitter, Инстаграм).</span><span class="sxs-lookup"><span data-stu-id="8896b-112">The name of the cloud service (for example, Twitter, Instagram).</span></span> |
+|<span data-ttu-id="8896b-113">webUrl</span><span class="sxs-lookup"><span data-stu-id="8896b-113">webUrl</span></span>        | <span data-ttu-id="8896b-114">String</span><span class="sxs-lookup"><span data-stu-id="8896b-114">String</span></span>      | <span data-ttu-id="8896b-115">Содержит URL-адрес для службы, на которую указывает ссылка.</span><span class="sxs-lookup"><span data-stu-id="8896b-115">Contains the URL for the service being referenced.</span></span>     |
 
-## <a name="json-representation"></a><span data-ttu-id="dc6e2-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="dc6e2-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8896b-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="8896b-116">JSON representation</span></span>
 
-<span data-ttu-id="dc6e2-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="dc6e2-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="8896b-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8896b-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -5,31 +5,33 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: dd8e67cbf4ba8994e03d683665928f9e62608d8e
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: 24af9e9be6dc9b63934a02193958e0267dde8dea
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36173337"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521014"
 ---
-# <a name="rubriclevel-resource-type"></a><span data-ttu-id="cafbb-103">Тип ресурса Рубриклевел</span><span class="sxs-lookup"><span data-stu-id="cafbb-103">rubricLevel resource type</span></span>
+# <a name="rubriclevel-resource-type"></a><span data-ttu-id="19355-103">Тип ресурса Рубриклевел</span><span class="sxs-lookup"><span data-stu-id="19355-103">rubricLevel resource type</span></span>
+
+<span data-ttu-id="19355-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="19355-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cafbb-104">Уровень Rubric.</span><span class="sxs-lookup"><span data-stu-id="cafbb-104">A level of a rubric.</span></span> <span data-ttu-id="cafbb-105">Описание связи между Rubric *качеством*, *уровнями*и критериями можно узнать в разделе \*\* [едукатионрубрик](educationrubric.md) .</span><span class="sxs-lookup"><span data-stu-id="cafbb-105">See [educationRubric](educationrubric.md) for a description of the relationship between rubric *qualities*, *levels*, and *criteria*.</span></span>
+<span data-ttu-id="19355-105">Уровень Rubric.</span><span class="sxs-lookup"><span data-stu-id="19355-105">A level of a rubric.</span></span> <span data-ttu-id="19355-106">Описание связи между Rubric *качеством*, *уровнями*и *критериями*можно узнать в разделе [едукатионрубрик](educationrubric.md) .</span><span class="sxs-lookup"><span data-stu-id="19355-106">See [educationRubric](educationrubric.md) for a description of the relationship between rubric *qualities*, *levels*, and *criteria*.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="cafbb-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="cafbb-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="19355-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="19355-107">Properties</span></span>
 
-| <span data-ttu-id="cafbb-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="cafbb-107">Property</span></span>     | <span data-ttu-id="cafbb-108">Тип</span><span class="sxs-lookup"><span data-stu-id="cafbb-108">Type</span></span>        | <span data-ttu-id="cafbb-109">Описание</span><span class="sxs-lookup"><span data-stu-id="cafbb-109">Description</span></span> |
+| <span data-ttu-id="19355-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="19355-108">Property</span></span>     | <span data-ttu-id="19355-109">Тип</span><span class="sxs-lookup"><span data-stu-id="19355-109">Type</span></span>        | <span data-ttu-id="19355-110">Описание</span><span class="sxs-lookup"><span data-stu-id="19355-110">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="cafbb-110">description</span><span class="sxs-lookup"><span data-stu-id="cafbb-110">description</span></span>|[<span data-ttu-id="cafbb-111">itemBody</span><span class="sxs-lookup"><span data-stu-id="cafbb-111">itemBody</span></span>](itembody.md)|<span data-ttu-id="cafbb-112">Описание этого уровня Rubric.</span><span class="sxs-lookup"><span data-stu-id="cafbb-112">The description of this rubric level.</span></span>|
-|<span data-ttu-id="cafbb-113">displayName</span><span class="sxs-lookup"><span data-stu-id="cafbb-113">displayName</span></span>|<span data-ttu-id="cafbb-114">String</span><span class="sxs-lookup"><span data-stu-id="cafbb-114">String</span></span>|<span data-ttu-id="cafbb-115">Имя этого уровня Rubric.</span><span class="sxs-lookup"><span data-stu-id="cafbb-115">The name of this rubric level.</span></span>|
-|<span data-ttu-id="cafbb-116">снижения</span><span class="sxs-lookup"><span data-stu-id="cafbb-116">grading</span></span>|[<span data-ttu-id="cafbb-117">Едукатионассигнментградетипе</span><span class="sxs-lookup"><span data-stu-id="cafbb-117">educationAssignmentGradeType</span></span>](educationassignmentgradetype.md)|<span data-ttu-id="cafbb-118">Значение null, если это неrubricная точка. [едукатионассигнментпоинтсградетипе](educationassignmentpointsgradetype.md) , если это точки Rubric.</span><span class="sxs-lookup"><span data-stu-id="cafbb-118">Null if this is a no-points rubric; [educationAssignmentPointsGradeType](educationassignmentpointsgradetype.md) if it is a points rubric.</span></span>|
-|<span data-ttu-id="cafbb-119">Левелид</span><span class="sxs-lookup"><span data-stu-id="cafbb-119">levelId</span></span>|<span data-ttu-id="cafbb-120">String</span><span class="sxs-lookup"><span data-stu-id="cafbb-120">String</span></span>|<span data-ttu-id="cafbb-121">ИДЕНТИФИКАТОР этого ресурса.</span><span class="sxs-lookup"><span data-stu-id="cafbb-121">The ID of this resource.</span></span>|
+|<span data-ttu-id="19355-111">description</span><span class="sxs-lookup"><span data-stu-id="19355-111">description</span></span>|[<span data-ttu-id="19355-112">itemBody</span><span class="sxs-lookup"><span data-stu-id="19355-112">itemBody</span></span>](itembody.md)|<span data-ttu-id="19355-113">Описание этого уровня Rubric.</span><span class="sxs-lookup"><span data-stu-id="19355-113">The description of this rubric level.</span></span>|
+|<span data-ttu-id="19355-114">displayName</span><span class="sxs-lookup"><span data-stu-id="19355-114">displayName</span></span>|<span data-ttu-id="19355-115">String</span><span class="sxs-lookup"><span data-stu-id="19355-115">String</span></span>|<span data-ttu-id="19355-116">Имя этого уровня Rubric.</span><span class="sxs-lookup"><span data-stu-id="19355-116">The name of this rubric level.</span></span>|
+|<span data-ttu-id="19355-117">снижения</span><span class="sxs-lookup"><span data-stu-id="19355-117">grading</span></span>|[<span data-ttu-id="19355-118">едукатионассигнментградетипе</span><span class="sxs-lookup"><span data-stu-id="19355-118">educationAssignmentGradeType</span></span>](educationassignmentgradetype.md)|<span data-ttu-id="19355-119">Значение null, если это неrubricная точка. [едукатионассигнментпоинтсградетипе](educationassignmentpointsgradetype.md) , если это точки Rubric.</span><span class="sxs-lookup"><span data-stu-id="19355-119">Null if this is a no-points rubric; [educationAssignmentPointsGradeType](educationassignmentpointsgradetype.md) if it is a points rubric.</span></span>|
+|<span data-ttu-id="19355-120">левелид</span><span class="sxs-lookup"><span data-stu-id="19355-120">levelId</span></span>|<span data-ttu-id="19355-121">String</span><span class="sxs-lookup"><span data-stu-id="19355-121">String</span></span>|<span data-ttu-id="19355-122">ИДЕНТИФИКАТОР этого ресурса.</span><span class="sxs-lookup"><span data-stu-id="19355-122">The ID of this resource.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="cafbb-122">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="cafbb-122">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="19355-123">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="19355-123">JSON representation</span></span>
 
-<span data-ttu-id="cafbb-123">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="cafbb-123">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="19355-124">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="19355-124">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

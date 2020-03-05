@@ -5,31 +5,33 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: e6f543a85ac2974f9b3e99d4290fb9d93a8cc025
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 517213e3e2266681eee0f6bdca53b0b9ce5a0bb3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965217"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520810"
 ---
-# <a name="securityvendorinformation-resource-type"></a><span data-ttu-id="08c60-104">Тип ресурса Секуритивендоринформатион</span><span class="sxs-lookup"><span data-stu-id="08c60-104">securityVendorInformation resource type</span></span>
+# <a name="securityvendorinformation-resource-type"></a><span data-ttu-id="8db74-104">Тип ресурса Секуритивендоринформатион</span><span class="sxs-lookup"><span data-stu-id="8db74-104">securityVendorInformation resource type</span></span>
+
+<span data-ttu-id="8db74-105">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="8db74-105">Namespace: microsoft.graph</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="08c60-105">Содержит сведения о продуктах, поставщиках и подценнях безопасности (например, Vendor = Microsoft; Provider = защитник Windows ATP; подпредоставление = AppLocker).</span><span class="sxs-lookup"><span data-stu-id="08c60-105">Contains details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker).</span></span>
+<span data-ttu-id="8db74-106">Содержит сведения о продуктах, поставщиках и подценнях безопасности (например, Vendor = Microsoft; Provider = защитник Windows ATP; подпредоставление = AppLocker).</span><span class="sxs-lookup"><span data-stu-id="8db74-106">Contains details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="08c60-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="08c60-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="8db74-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="8db74-107">Properties</span></span>
 
-| <span data-ttu-id="08c60-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="08c60-107">Property</span></span>   | <span data-ttu-id="08c60-108">Тип</span><span class="sxs-lookup"><span data-stu-id="08c60-108">Type</span></span>|<span data-ttu-id="08c60-109">Описание</span><span class="sxs-lookup"><span data-stu-id="08c60-109">Description</span></span>|
+| <span data-ttu-id="8db74-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="8db74-108">Property</span></span>   | <span data-ttu-id="8db74-109">Тип</span><span class="sxs-lookup"><span data-stu-id="8db74-109">Type</span></span>|<span data-ttu-id="8db74-110">Описание</span><span class="sxs-lookup"><span data-stu-id="8db74-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="08c60-110">поставщики</span><span class="sxs-lookup"><span data-stu-id="08c60-110">provider</span></span> |<span data-ttu-id="08c60-111">String</span><span class="sxs-lookup"><span data-stu-id="08c60-111">String</span></span>|<span data-ttu-id="08c60-112">Конкретный поставщик (продукт или услуга — не компания поставщика); Например, Виндовсдефендератп.</span><span class="sxs-lookup"><span data-stu-id="08c60-112">Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.</span></span>|
-|<span data-ttu-id="08c60-113">Провидерверсион</span><span class="sxs-lookup"><span data-stu-id="08c60-113">providerVersion</span></span>|<span data-ttu-id="08c60-114">String</span><span class="sxs-lookup"><span data-stu-id="08c60-114">String</span></span>|<span data-ttu-id="08c60-115">Версия поставщика или подсистемы, если она существует, создавшего оповещение.</span><span class="sxs-lookup"><span data-stu-id="08c60-115">Version of the provider or subprovider, if it exists, that generated the alert.</span></span> <span data-ttu-id="08c60-116">**Required**</span><span class="sxs-lookup"><span data-stu-id="08c60-116">**Required**</span></span>|
-|<span data-ttu-id="08c60-117">подпредоставление</span><span class="sxs-lookup"><span data-stu-id="08c60-117">subProvider</span></span>|<span data-ttu-id="08c60-118">String</span><span class="sxs-lookup"><span data-stu-id="08c60-118">String</span></span>|<span data-ttu-id="08c60-119">Конкретный подпредоставленный поставщик (в разделе Поставщик статистической обработки); Например, Виндовсдефендератп. SmartScreen.</span><span class="sxs-lookup"><span data-stu-id="08c60-119">Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.</span></span>|
-|<span data-ttu-id="08c60-120">поставщика</span><span class="sxs-lookup"><span data-stu-id="08c60-120">vendor</span></span> |<span data-ttu-id="08c60-121">String</span><span class="sxs-lookup"><span data-stu-id="08c60-121">String</span></span>|<span data-ttu-id="08c60-122">Имя поставщика оповещений (например, Microsoft, Dell, Фирие).</span><span class="sxs-lookup"><span data-stu-id="08c60-122">Name of the alert vendor (for example, Microsoft, Dell, FireEye).</span></span> <span data-ttu-id="08c60-123">**Required**</span><span class="sxs-lookup"><span data-stu-id="08c60-123">**Required**</span></span>|
+|<span data-ttu-id="8db74-111">поставщики</span><span class="sxs-lookup"><span data-stu-id="8db74-111">provider</span></span> |<span data-ttu-id="8db74-112">String</span><span class="sxs-lookup"><span data-stu-id="8db74-112">String</span></span>|<span data-ttu-id="8db74-113">Конкретный поставщик (продукт или услуга — не компания поставщика); Например, Виндовсдефендератп.</span><span class="sxs-lookup"><span data-stu-id="8db74-113">Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.</span></span>|
+|<span data-ttu-id="8db74-114">провидерверсион</span><span class="sxs-lookup"><span data-stu-id="8db74-114">providerVersion</span></span>|<span data-ttu-id="8db74-115">String</span><span class="sxs-lookup"><span data-stu-id="8db74-115">String</span></span>|<span data-ttu-id="8db74-116">Версия поставщика или подсистемы, если она существует, создавшего оповещение.</span><span class="sxs-lookup"><span data-stu-id="8db74-116">Version of the provider or subprovider, if it exists, that generated the alert.</span></span> <span data-ttu-id="8db74-117">**Required**</span><span class="sxs-lookup"><span data-stu-id="8db74-117">**Required**</span></span>|
+|<span data-ttu-id="8db74-118">подпредоставление</span><span class="sxs-lookup"><span data-stu-id="8db74-118">subProvider</span></span>|<span data-ttu-id="8db74-119">String</span><span class="sxs-lookup"><span data-stu-id="8db74-119">String</span></span>|<span data-ttu-id="8db74-120">Конкретный подпредоставленный поставщик (в разделе Поставщик статистической обработки); Например, Виндовсдефендератп. SmartScreen.</span><span class="sxs-lookup"><span data-stu-id="8db74-120">Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.</span></span>|
+|<span data-ttu-id="8db74-121">поставщика</span><span class="sxs-lookup"><span data-stu-id="8db74-121">vendor</span></span> |<span data-ttu-id="8db74-122">String</span><span class="sxs-lookup"><span data-stu-id="8db74-122">String</span></span>|<span data-ttu-id="8db74-123">Имя поставщика оповещений (например, Microsoft, Dell, Фирие).</span><span class="sxs-lookup"><span data-stu-id="8db74-123">Name of the alert vendor (for example, Microsoft, Dell, FireEye).</span></span> <span data-ttu-id="8db74-124">**Required**</span><span class="sxs-lookup"><span data-stu-id="8db74-124">**Required**</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="08c60-124">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="08c60-124">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8db74-125">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="8db74-125">JSON representation</span></span>
 
-<span data-ttu-id="08c60-125">Следующем — это представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="08c60-125">The folllowing is a JSON representation of the resource.</span></span>
+<span data-ttu-id="8db74-126">Следующем — это представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8db74-126">The folllowing is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "optionalProperties": [

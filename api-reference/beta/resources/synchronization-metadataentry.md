@@ -5,28 +5,30 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 55b686bc04ccf869ddf9d6dc6029c6206f7b2274
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 13e1277dfd4a9fc3042369632919d9c58c99f260
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964844"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520165"
 ---
-# <a name="metadataentry-resource-type"></a><span data-ttu-id="ddefe-103">Тип ресурса Метадатаентри</span><span class="sxs-lookup"><span data-stu-id="ddefe-103">metadataEntry resource type</span></span>
+# <a name="metadataentry-resource-type"></a><span data-ttu-id="c3788-103">Тип ресурса Метадатаентри</span><span class="sxs-lookup"><span data-stu-id="c3788-103">metadataEntry resource type</span></span>
+
+<span data-ttu-id="c3788-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="c3788-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ddefe-104">Метаданные для данного объекта.</span><span class="sxs-lookup"><span data-stu-id="ddefe-104">Metadata for the given object.</span></span>
+<span data-ttu-id="c3788-105">Метаданные для данного объекта.</span><span class="sxs-lookup"><span data-stu-id="c3788-105">Metadata for the given object.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="ddefe-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="ddefe-105">Properties</span></span>
-| <span data-ttu-id="ddefe-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="ddefe-106">Property</span></span>     | <span data-ttu-id="ddefe-107">Тип</span><span class="sxs-lookup"><span data-stu-id="ddefe-107">Type</span></span>   |<span data-ttu-id="ddefe-108">Описание</span><span class="sxs-lookup"><span data-stu-id="ddefe-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="c3788-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="c3788-106">Properties</span></span>
+| <span data-ttu-id="c3788-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="c3788-107">Property</span></span>     | <span data-ttu-id="c3788-108">Тип</span><span class="sxs-lookup"><span data-stu-id="c3788-108">Type</span></span>   |<span data-ttu-id="c3788-109">Описание</span><span class="sxs-lookup"><span data-stu-id="c3788-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ddefe-109">key</span><span class="sxs-lookup"><span data-stu-id="ddefe-109">key</span></span>|<span data-ttu-id="ddefe-110">String</span><span class="sxs-lookup"><span data-stu-id="ddefe-110">String</span></span>|<span data-ttu-id="ddefe-111">Имя свойства метаданных.</span><span class="sxs-lookup"><span data-stu-id="ddefe-111">Name of the metadata property.</span></span>|
-|<span data-ttu-id="ddefe-112">value</span><span class="sxs-lookup"><span data-stu-id="ddefe-112">value</span></span>|<span data-ttu-id="ddefe-113">String</span><span class="sxs-lookup"><span data-stu-id="ddefe-113">String</span></span>|<span data-ttu-id="ddefe-114">Значение свойства метаданных.</span><span class="sxs-lookup"><span data-stu-id="ddefe-114">Value of the metadata property.</span></span>|
+|<span data-ttu-id="c3788-110">key</span><span class="sxs-lookup"><span data-stu-id="c3788-110">key</span></span>|<span data-ttu-id="c3788-111">String</span><span class="sxs-lookup"><span data-stu-id="c3788-111">String</span></span>|<span data-ttu-id="c3788-112">Имя свойства метаданных.</span><span class="sxs-lookup"><span data-stu-id="c3788-112">Name of the metadata property.</span></span>|
+|<span data-ttu-id="c3788-113">value</span><span class="sxs-lookup"><span data-stu-id="c3788-113">value</span></span>|<span data-ttu-id="c3788-114">String</span><span class="sxs-lookup"><span data-stu-id="c3788-114">String</span></span>|<span data-ttu-id="c3788-115">Значение свойства метаданных.</span><span class="sxs-lookup"><span data-stu-id="c3788-115">Value of the metadata property.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="ddefe-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="ddefe-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c3788-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="c3788-116">JSON representation</span></span>
 
-<span data-ttu-id="ddefe-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ddefe-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="c3788-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c3788-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

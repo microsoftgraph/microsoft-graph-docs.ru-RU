@@ -5,34 +5,36 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: e992f083bd063ea7708f0aec4261ec04cbcc8539
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a676bb28ccce19c7f4293e9fc082a59ec0cfdbb7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007286"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519360"
 ---
-# <a name="workbookchartaxistitleformat-resource-type"></a><span data-ttu-id="db45b-103">Тип ресурса Воркбукчартаксиститлеформат</span><span class="sxs-lookup"><span data-stu-id="db45b-103">workbookChartAxisTitleFormat resource type</span></span>
+# <a name="workbookchartaxistitleformat-resource-type"></a><span data-ttu-id="da3ed-103">Тип ресурса Воркбукчартаксиститлеформат</span><span class="sxs-lookup"><span data-stu-id="da3ed-103">workbookChartAxisTitleFormat resource type</span></span>
+
+<span data-ttu-id="da3ed-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="da3ed-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="db45b-104">Представляет форматирование для названий осей диаграммы.</span><span class="sxs-lookup"><span data-stu-id="db45b-104">Represents the chart axis title formatting.</span></span>
+<span data-ttu-id="da3ed-105">Представляет форматирование для названий осей диаграммы.</span><span class="sxs-lookup"><span data-stu-id="da3ed-105">Represents the chart axis title formatting.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="db45b-105">Методы</span><span class="sxs-lookup"><span data-stu-id="db45b-105">Methods</span></span>
-<span data-ttu-id="db45b-106">Нет</span><span class="sxs-lookup"><span data-stu-id="db45b-106">None</span></span>
+## <a name="methods"></a><span data-ttu-id="da3ed-106">Методы</span><span class="sxs-lookup"><span data-stu-id="da3ed-106">Methods</span></span>
+<span data-ttu-id="da3ed-107">Нет</span><span class="sxs-lookup"><span data-stu-id="da3ed-107">None</span></span>
 
-## <a name="properties"></a><span data-ttu-id="db45b-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="db45b-107">Properties</span></span>
-<span data-ttu-id="db45b-108">Нет</span><span class="sxs-lookup"><span data-stu-id="db45b-108">None</span></span>
+## <a name="properties"></a><span data-ttu-id="da3ed-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="da3ed-108">Properties</span></span>
+<span data-ttu-id="da3ed-109">Нет</span><span class="sxs-lookup"><span data-stu-id="da3ed-109">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="db45b-109">Отношения</span><span class="sxs-lookup"><span data-stu-id="db45b-109">Relationships</span></span>
-| <span data-ttu-id="db45b-110">Отношение</span><span class="sxs-lookup"><span data-stu-id="db45b-110">Relationship</span></span> | <span data-ttu-id="db45b-111">Тип</span><span class="sxs-lookup"><span data-stu-id="db45b-111">Type</span></span>   |<span data-ttu-id="db45b-112">Описание</span><span class="sxs-lookup"><span data-stu-id="db45b-112">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="da3ed-110">Связи</span><span class="sxs-lookup"><span data-stu-id="da3ed-110">Relationships</span></span>
+| <span data-ttu-id="da3ed-111">Связь</span><span class="sxs-lookup"><span data-stu-id="da3ed-111">Relationship</span></span> | <span data-ttu-id="da3ed-112">Тип</span><span class="sxs-lookup"><span data-stu-id="da3ed-112">Type</span></span>   |<span data-ttu-id="da3ed-113">Описание</span><span class="sxs-lookup"><span data-stu-id="da3ed-113">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="db45b-113">font</span><span class="sxs-lookup"><span data-stu-id="db45b-113">font</span></span>|[<span data-ttu-id="db45b-114">Воркбукчартфонт</span><span class="sxs-lookup"><span data-stu-id="db45b-114">workbookChartFont</span></span>](workbookchartfont.md)|<span data-ttu-id="db45b-115">Представляет атрибуты шрифта, такие как имя шрифта, размер шрифта, цвет и т. д. объект заголовка оси диаграммы.</span><span class="sxs-lookup"><span data-stu-id="db45b-115">Represents the font attributes, such as font name, font size, color, etc. of chart axis title object.</span></span> <span data-ttu-id="db45b-116">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="db45b-116">Read-only.</span></span>|
+|<span data-ttu-id="da3ed-114">font</span><span class="sxs-lookup"><span data-stu-id="da3ed-114">font</span></span>|[<span data-ttu-id="da3ed-115">воркбукчартфонт</span><span class="sxs-lookup"><span data-stu-id="da3ed-115">workbookChartFont</span></span>](workbookchartfont.md)|<span data-ttu-id="da3ed-116">Представляет атрибуты шрифта, такие как имя шрифта, размер шрифта, цвет и т. д. объект заголовка оси диаграммы.</span><span class="sxs-lookup"><span data-stu-id="da3ed-116">Represents the font attributes, such as font name, font size, color, etc. of chart axis title object.</span></span> <span data-ttu-id="da3ed-117">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="da3ed-117">Read-only.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="db45b-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="db45b-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="da3ed-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="da3ed-118">JSON representation</span></span>
 
-<span data-ttu-id="db45b-118">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="db45b-118">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="da3ed-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="da3ed-119">Here is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",

@@ -5,28 +5,30 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ad3348cea31567cedfca9b2626c81383ab8c6b8f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 437bbd9b2f266dc8176657e670ea973904efcbe4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964702"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520116"
 ---
-# <a name="synchronizationsecretkeystringvaluepair-resource-type"></a><span data-ttu-id="b7dc7-103">Тип ресурса Синчронизатионсекреткэйстрингвалуепаир</span><span class="sxs-lookup"><span data-stu-id="b7dc7-103">synchronizationSecretKeyStringValuePair resource type</span></span>
+# <a name="synchronizationsecretkeystringvaluepair-resource-type"></a><span data-ttu-id="4e935-103">Тип ресурса Синчронизатионсекреткэйстрингвалуепаир</span><span class="sxs-lookup"><span data-stu-id="4e935-103">synchronizationSecretKeyStringValuePair resource type</span></span>
+
+<span data-ttu-id="4e935-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="4e935-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b7dc7-104">Представляет одно секретное значение.</span><span class="sxs-lookup"><span data-stu-id="b7dc7-104">Represents a single secret value.</span></span> 
+<span data-ttu-id="4e935-105">Представляет одно секретное значение.</span><span class="sxs-lookup"><span data-stu-id="4e935-105">Represents a single secret value.</span></span> 
 
-## <a name="properties"></a><span data-ttu-id="b7dc7-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="b7dc7-105">Properties</span></span>
-| <span data-ttu-id="b7dc7-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="b7dc7-106">Property</span></span>     | <span data-ttu-id="b7dc7-107">Тип</span><span class="sxs-lookup"><span data-stu-id="b7dc7-107">Type</span></span>   |<span data-ttu-id="b7dc7-108">Описание</span><span class="sxs-lookup"><span data-stu-id="b7dc7-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="4e935-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="4e935-106">Properties</span></span>
+| <span data-ttu-id="4e935-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="4e935-107">Property</span></span>     | <span data-ttu-id="4e935-108">Тип</span><span class="sxs-lookup"><span data-stu-id="4e935-108">Type</span></span>   |<span data-ttu-id="4e935-109">Описание</span><span class="sxs-lookup"><span data-stu-id="4e935-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="b7dc7-109">key</span><span class="sxs-lookup"><span data-stu-id="b7dc7-109">key</span></span>|<span data-ttu-id="b7dc7-110">String</span><span class="sxs-lookup"><span data-stu-id="b7dc7-110">String</span></span>| <span data-ttu-id="b7dc7-111">Возможные значения: `None`, `UserName`, `Password`, `SecretToken` `AppKey` `BaseAddress` `ClientIdentifier` `ConsumerSecret` `TokenKey` `TokenExpiration` `Oauth2AccessToken` `Oauth2AccessTokenCreationTime` `Oauth2RefreshToken` `Domain` `ConsumerKey`,,,,,,,,,,,,,,,,,,,,, `ClientSecret` `SingleSignOnType` `Sandbox` `Url` , `SyncAll`, `InstanceName`, `Oauth2ClientId`, `Oauth2ClientSecret`, `CompanyId`, `UpdateKeyOnSoftDelete`, `SynchronizationSchedule`, `SystemOfRecord`, `SandboxName`, `EnforceDomain`, `SyncNotificationSettings`, `Server`, `PerformInboundEntitlementGrants`, `HardDeletesEnabled`, `SyncAgentCompatibilityKey`, `SyncAgentADContainer`, `ValidateDomain`, `TestReferences`.</span><span class="sxs-lookup"><span data-stu-id="b7dc7-111">Possible values are: `None`, `UserName`, `Password`, `SecretToken`, `AppKey`, `BaseAddress`, `ClientIdentifier`, `ClientSecret`, `SingleSignOnType`, `Sandbox`, `Url`, `Domain`, `ConsumerKey`, `ConsumerSecret`, `TokenKey`, `TokenExpiration`, `Oauth2AccessToken`, `Oauth2AccessTokenCreationTime`, `Oauth2RefreshToken`, `SyncAll`, `InstanceName`, `Oauth2ClientId`, `Oauth2ClientSecret`, `CompanyId`, `UpdateKeyOnSoftDelete`, `SynchronizationSchedule`, `SystemOfRecord`, `SandboxName`, `EnforceDomain`, `SyncNotificationSettings`, `Server`, `PerformInboundEntitlementGrants`, `HardDeletesEnabled`, `SyncAgentCompatibilityKey`, `SyncAgentADContainer`, `ValidateDomain`, `TestReferences`.</span></span>|
-|<span data-ttu-id="b7dc7-112">value</span><span class="sxs-lookup"><span data-stu-id="b7dc7-112">value</span></span>|<span data-ttu-id="b7dc7-113">String</span><span class="sxs-lookup"><span data-stu-id="b7dc7-113">String</span></span>|<span data-ttu-id="b7dc7-114">Значение секрета.</span><span class="sxs-lookup"><span data-stu-id="b7dc7-114">The value of the secret.</span></span>|
+|<span data-ttu-id="4e935-110">key</span><span class="sxs-lookup"><span data-stu-id="4e935-110">key</span></span>|<span data-ttu-id="4e935-111">String</span><span class="sxs-lookup"><span data-stu-id="4e935-111">String</span></span>| <span data-ttu-id="4e935-112">`None`Возможные значения:, `UserName`, `Password`, `SecretToken` `AppKey` `BaseAddress` `ClientIdentifier` `Domain` `ConsumerKey` `ConsumerSecret` `TokenKey` `TokenExpiration` `Oauth2AccessToken` `Oauth2AccessTokenCreationTime` `TestReferences`,,,,,, `Oauth2RefreshToken`,,,,, `SyncAll` `InstanceName` `Oauth2ClientId` `Oauth2ClientSecret` `CompanyId` `UpdateKeyOnSoftDelete` `SynchronizationSchedule` `SystemOfRecord`,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,. `SandboxName` `EnforceDomain` `SyncNotificationSettings` `Server` `PerformInboundEntitlementGrants` `HardDeletesEnabled` `SyncAgentCompatibilityKey` `SyncAgentADContainer` `ValidateDomain` `Url` `ClientSecret` `SingleSignOnType` `Sandbox`</span><span class="sxs-lookup"><span data-stu-id="4e935-112">Possible values are: `None`, `UserName`, `Password`, `SecretToken`, `AppKey`, `BaseAddress`, `ClientIdentifier`, `ClientSecret`, `SingleSignOnType`, `Sandbox`, `Url`, `Domain`, `ConsumerKey`, `ConsumerSecret`, `TokenKey`, `TokenExpiration`, `Oauth2AccessToken`, `Oauth2AccessTokenCreationTime`, `Oauth2RefreshToken`, `SyncAll`, `InstanceName`, `Oauth2ClientId`, `Oauth2ClientSecret`, `CompanyId`, `UpdateKeyOnSoftDelete`, `SynchronizationSchedule`, `SystemOfRecord`, `SandboxName`, `EnforceDomain`, `SyncNotificationSettings`, `Server`, `PerformInboundEntitlementGrants`, `HardDeletesEnabled`, `SyncAgentCompatibilityKey`, `SyncAgentADContainer`, `ValidateDomain`, `TestReferences`.</span></span>|
+|<span data-ttu-id="4e935-113">value</span><span class="sxs-lookup"><span data-stu-id="4e935-113">value</span></span>|<span data-ttu-id="4e935-114">String</span><span class="sxs-lookup"><span data-stu-id="4e935-114">String</span></span>|<span data-ttu-id="4e935-115">Значение секрета.</span><span class="sxs-lookup"><span data-stu-id="4e935-115">The value of the secret.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="b7dc7-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="b7dc7-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4e935-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="4e935-116">JSON representation</span></span>
 
-<span data-ttu-id="b7dc7-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b7dc7-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="4e935-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="4e935-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

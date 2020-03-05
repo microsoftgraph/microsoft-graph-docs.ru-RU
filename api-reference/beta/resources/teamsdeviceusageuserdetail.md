@@ -5,35 +5,37 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 5bd7443e775a8a9de0dbbc27cf8843331f8f8cb7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c5c3815b2418f414aa552f211bbeed5f643eb0d4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007629"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519864"
 ---
-# <a name="teamsdeviceusageuserdetail-resource-type"></a><span data-ttu-id="1ef47-103">Тип ресурса Теамсдевицеусажеусердетаил</span><span class="sxs-lookup"><span data-stu-id="1ef47-103">teamsDeviceUsageUserDetail resource type</span></span>
+# <a name="teamsdeviceusageuserdetail-resource-type"></a><span data-ttu-id="a72ff-103">Тип ресурса Теамсдевицеусажеусердетаил</span><span class="sxs-lookup"><span data-stu-id="a72ff-103">teamsDeviceUsageUserDetail resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="1ef47-104">Свойства</span><span class="sxs-lookup"><span data-stu-id="1ef47-104">Properties</span></span>
+<span data-ttu-id="a72ff-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="a72ff-104">Namespace: microsoft.graph</span></span>
 
-| <span data-ttu-id="1ef47-105">Свойство</span><span class="sxs-lookup"><span data-stu-id="1ef47-105">Property</span></span>          | <span data-ttu-id="1ef47-106">Тип</span><span class="sxs-lookup"><span data-stu-id="1ef47-106">Type</span></span>    |
+## <a name="properties"></a><span data-ttu-id="a72ff-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="a72ff-105">Properties</span></span>
+
+| <span data-ttu-id="a72ff-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="a72ff-106">Property</span></span>          | <span data-ttu-id="a72ff-107">Тип</span><span class="sxs-lookup"><span data-stu-id="a72ff-107">Type</span></span>    |
 | :---------------- | :------ |
-| <span data-ttu-id="1ef47-107">Репортрефрешдате</span><span class="sxs-lookup"><span data-stu-id="1ef47-107">reportRefreshDate</span></span> | <span data-ttu-id="1ef47-108">Дата</span><span class="sxs-lookup"><span data-stu-id="1ef47-108">Date</span></span>    |
-| <span data-ttu-id="1ef47-109">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="1ef47-109">userPrincipalName</span></span> | <span data-ttu-id="1ef47-110">String</span><span class="sxs-lookup"><span data-stu-id="1ef47-110">String</span></span>  |
-| <span data-ttu-id="1ef47-111">Ластактивитидате</span><span class="sxs-lookup"><span data-stu-id="1ef47-111">lastActivityDate</span></span>  | <span data-ttu-id="1ef47-112">Дата</span><span class="sxs-lookup"><span data-stu-id="1ef47-112">Date</span></span>    |
-| <span data-ttu-id="1ef47-113">isDeleted</span><span class="sxs-lookup"><span data-stu-id="1ef47-113">isDeleted</span></span>         | <span data-ttu-id="1ef47-114">Boolean</span><span class="sxs-lookup"><span data-stu-id="1ef47-114">Boolean</span></span> |
-| <span data-ttu-id="1ef47-115">Делетеддате</span><span class="sxs-lookup"><span data-stu-id="1ef47-115">deletedDate</span></span>       | <span data-ttu-id="1ef47-116">Дата</span><span class="sxs-lookup"><span data-stu-id="1ef47-116">Date</span></span>    |
-| <span data-ttu-id="1ef47-117">Уседвеб</span><span class="sxs-lookup"><span data-stu-id="1ef47-117">usedWeb</span></span>           | <span data-ttu-id="1ef47-118">Boolean</span><span class="sxs-lookup"><span data-stu-id="1ef47-118">Boolean</span></span> |
-| <span data-ttu-id="1ef47-119">Уседвиндовсфоне</span><span class="sxs-lookup"><span data-stu-id="1ef47-119">usedWindowsPhone</span></span>  | <span data-ttu-id="1ef47-120">Boolean</span><span class="sxs-lookup"><span data-stu-id="1ef47-120">Boolean</span></span> |
-| <span data-ttu-id="1ef47-121">Уседиос</span><span class="sxs-lookup"><span data-stu-id="1ef47-121">usediOS</span></span>           | <span data-ttu-id="1ef47-122">Boolean</span><span class="sxs-lookup"><span data-stu-id="1ef47-122">Boolean</span></span> |
-| <span data-ttu-id="1ef47-123">Уседмак</span><span class="sxs-lookup"><span data-stu-id="1ef47-123">usedMac</span></span>           | <span data-ttu-id="1ef47-124">Boolean</span><span class="sxs-lookup"><span data-stu-id="1ef47-124">Boolean</span></span> |
-| <span data-ttu-id="1ef47-125">Уседандроидфоне</span><span class="sxs-lookup"><span data-stu-id="1ef47-125">usedAndroidPhone</span></span>  | <span data-ttu-id="1ef47-126">Boolean</span><span class="sxs-lookup"><span data-stu-id="1ef47-126">Boolean</span></span> |
-| <span data-ttu-id="1ef47-127">Уседвиндовс</span><span class="sxs-lookup"><span data-stu-id="1ef47-127">usedWindows</span></span>       | <span data-ttu-id="1ef47-128">Boolean</span><span class="sxs-lookup"><span data-stu-id="1ef47-128">Boolean</span></span> |
-| <span data-ttu-id="1ef47-129">Репортпериод</span><span class="sxs-lookup"><span data-stu-id="1ef47-129">reportPeriod</span></span>      | <span data-ttu-id="1ef47-130">String</span><span class="sxs-lookup"><span data-stu-id="1ef47-130">String</span></span>  |
+| <span data-ttu-id="a72ff-108">репортрефрешдате</span><span class="sxs-lookup"><span data-stu-id="a72ff-108">reportRefreshDate</span></span> | <span data-ttu-id="a72ff-109">Дата</span><span class="sxs-lookup"><span data-stu-id="a72ff-109">Date</span></span>    |
+| <span data-ttu-id="a72ff-110">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="a72ff-110">userPrincipalName</span></span> | <span data-ttu-id="a72ff-111">String</span><span class="sxs-lookup"><span data-stu-id="a72ff-111">String</span></span>  |
+| <span data-ttu-id="a72ff-112">ластактивитидате</span><span class="sxs-lookup"><span data-stu-id="a72ff-112">lastActivityDate</span></span>  | <span data-ttu-id="a72ff-113">Дата</span><span class="sxs-lookup"><span data-stu-id="a72ff-113">Date</span></span>    |
+| <span data-ttu-id="a72ff-114">isDeleted</span><span class="sxs-lookup"><span data-stu-id="a72ff-114">isDeleted</span></span>         | <span data-ttu-id="a72ff-115">Логический</span><span class="sxs-lookup"><span data-stu-id="a72ff-115">Boolean</span></span> |
+| <span data-ttu-id="a72ff-116">делетеддате</span><span class="sxs-lookup"><span data-stu-id="a72ff-116">deletedDate</span></span>       | <span data-ttu-id="a72ff-117">Дата</span><span class="sxs-lookup"><span data-stu-id="a72ff-117">Date</span></span>    |
+| <span data-ttu-id="a72ff-118">уседвеб</span><span class="sxs-lookup"><span data-stu-id="a72ff-118">usedWeb</span></span>           | <span data-ttu-id="a72ff-119">Логический</span><span class="sxs-lookup"><span data-stu-id="a72ff-119">Boolean</span></span> |
+| <span data-ttu-id="a72ff-120">уседвиндовсфоне</span><span class="sxs-lookup"><span data-stu-id="a72ff-120">usedWindowsPhone</span></span>  | <span data-ttu-id="a72ff-121">Логический</span><span class="sxs-lookup"><span data-stu-id="a72ff-121">Boolean</span></span> |
+| <span data-ttu-id="a72ff-122">уседиос</span><span class="sxs-lookup"><span data-stu-id="a72ff-122">usediOS</span></span>           | <span data-ttu-id="a72ff-123">Логический</span><span class="sxs-lookup"><span data-stu-id="a72ff-123">Boolean</span></span> |
+| <span data-ttu-id="a72ff-124">уседмак</span><span class="sxs-lookup"><span data-stu-id="a72ff-124">usedMac</span></span>           | <span data-ttu-id="a72ff-125">Логический</span><span class="sxs-lookup"><span data-stu-id="a72ff-125">Boolean</span></span> |
+| <span data-ttu-id="a72ff-126">уседандроидфоне</span><span class="sxs-lookup"><span data-stu-id="a72ff-126">usedAndroidPhone</span></span>  | <span data-ttu-id="a72ff-127">Логический</span><span class="sxs-lookup"><span data-stu-id="a72ff-127">Boolean</span></span> |
+| <span data-ttu-id="a72ff-128">уседвиндовс</span><span class="sxs-lookup"><span data-stu-id="a72ff-128">usedWindows</span></span>       | <span data-ttu-id="a72ff-129">Логический</span><span class="sxs-lookup"><span data-stu-id="a72ff-129">Boolean</span></span> |
+| <span data-ttu-id="a72ff-130">репортпериод</span><span class="sxs-lookup"><span data-stu-id="a72ff-130">reportPeriod</span></span>      | <span data-ttu-id="a72ff-131">String</span><span class="sxs-lookup"><span data-stu-id="a72ff-131">String</span></span>  |
 
-## <a name="json-representation"></a><span data-ttu-id="1ef47-131">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="1ef47-131">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a72ff-132">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a72ff-132">JSON representation</span></span>
 
-<span data-ttu-id="1ef47-132">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="1ef47-132">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="a72ff-133">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a72ff-133">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -5,29 +5,31 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5ffbc327d40edb071c70336032506b5f97c9e083
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dc34a596af9b8f1270462b7c180e62ffde0cf0f0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35964629"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42520046"
 ---
-# <a name="synchronizationschedule-resource-type"></a><span data-ttu-id="d0c38-103">Тип ресурса Синчронизатионсчедуле</span><span class="sxs-lookup"><span data-stu-id="d0c38-103">synchronizationSchedule resource type</span></span>
+# <a name="synchronizationschedule-resource-type"></a><span data-ttu-id="fe237-103">Тип ресурса Синчронизатионсчедуле</span><span class="sxs-lookup"><span data-stu-id="fe237-103">synchronizationSchedule resource type</span></span>
+
+<span data-ttu-id="fe237-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="fe237-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d0c38-104">Определяет расписание, используемое для запуска [синчронизатионжоб](synchronization-synchronizationjob.md).</span><span class="sxs-lookup"><span data-stu-id="d0c38-104">Defines the schedule used to run a [synchronizationJob](synchronization-synchronizationjob.md).</span></span>
+<span data-ttu-id="fe237-105">Определяет расписание, используемое для запуска [синчронизатионжоб](synchronization-synchronizationjob.md).</span><span class="sxs-lookup"><span data-stu-id="fe237-105">Defines the schedule used to run a [synchronizationJob](synchronization-synchronizationjob.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d0c38-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="d0c38-105">Properties</span></span>
-| <span data-ttu-id="d0c38-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="d0c38-106">Property</span></span>     | <span data-ttu-id="d0c38-107">Тип</span><span class="sxs-lookup"><span data-stu-id="d0c38-107">Type</span></span>   |<span data-ttu-id="d0c38-108">Описание</span><span class="sxs-lookup"><span data-stu-id="d0c38-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="fe237-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="fe237-106">Properties</span></span>
+| <span data-ttu-id="fe237-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="fe237-107">Property</span></span>     | <span data-ttu-id="fe237-108">Тип</span><span class="sxs-lookup"><span data-stu-id="fe237-108">Type</span></span>   |<span data-ttu-id="fe237-109">Описание</span><span class="sxs-lookup"><span data-stu-id="fe237-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="d0c38-109">срока действия</span><span class="sxs-lookup"><span data-stu-id="d0c38-109">expiration</span></span>|<span data-ttu-id="d0c38-110">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d0c38-110">DateTimeOffset</span></span>|<span data-ttu-id="d0c38-111">Дата и время истечения срока действия этого задания.</span><span class="sxs-lookup"><span data-stu-id="d0c38-111">Date and time when this job will expire.</span></span> <span data-ttu-id="d0c38-112">Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC).</span><span class="sxs-lookup"><span data-stu-id="d0c38-112">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="d0c38-113">Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.</span><span class="sxs-lookup"><span data-stu-id="d0c38-113">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.</span></span>|
-|<span data-ttu-id="d0c38-114">interval</span><span class="sxs-lookup"><span data-stu-id="d0c38-114">interval</span></span>|<span data-ttu-id="d0c38-115">Duration (Длительность)</span><span class="sxs-lookup"><span data-stu-id="d0c38-115">Duration</span></span>|<span data-ttu-id="d0c38-116">Интервал между итерациями синхронизации.</span><span class="sxs-lookup"><span data-stu-id="d0c38-116">The interval between synchronization iterations.</span></span>|
-|<span data-ttu-id="d0c38-117">state</span><span class="sxs-lookup"><span data-stu-id="d0c38-117">state</span></span>|<span data-ttu-id="d0c38-118">String</span><span class="sxs-lookup"><span data-stu-id="d0c38-118">String</span></span>| <span data-ttu-id="d0c38-119">Возможные значения: `Active`, `Disabled`.</span><span class="sxs-lookup"><span data-stu-id="d0c38-119">Possible values are: `Active`, `Disabled`.</span></span>|
+|<span data-ttu-id="fe237-110">срока действия</span><span class="sxs-lookup"><span data-stu-id="fe237-110">expiration</span></span>|<span data-ttu-id="fe237-111">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="fe237-111">DateTimeOffset</span></span>|<span data-ttu-id="fe237-112">Дата и время истечения срока действия этого задания.</span><span class="sxs-lookup"><span data-stu-id="fe237-112">Date and time when this job will expire.</span></span> <span data-ttu-id="fe237-113">Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC).</span><span class="sxs-lookup"><span data-stu-id="fe237-113">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="fe237-114">Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.</span><span class="sxs-lookup"><span data-stu-id="fe237-114">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.</span></span>|
+|<span data-ttu-id="fe237-115">interval</span><span class="sxs-lookup"><span data-stu-id="fe237-115">interval</span></span>|<span data-ttu-id="fe237-116">Длительность</span><span class="sxs-lookup"><span data-stu-id="fe237-116">Duration</span></span>|<span data-ttu-id="fe237-117">Интервал между итерациями синхронизации.</span><span class="sxs-lookup"><span data-stu-id="fe237-117">The interval between synchronization iterations.</span></span>|
+|<span data-ttu-id="fe237-118">state</span><span class="sxs-lookup"><span data-stu-id="fe237-118">state</span></span>|<span data-ttu-id="fe237-119">String</span><span class="sxs-lookup"><span data-stu-id="fe237-119">String</span></span>| <span data-ttu-id="fe237-120">Возможные значения: `Active`, `Disabled`.</span><span class="sxs-lookup"><span data-stu-id="fe237-120">Possible values are: `Active`, `Disabled`.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="d0c38-120">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d0c38-120">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="fe237-121">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="fe237-121">JSON representation</span></span>
 
-<span data-ttu-id="d0c38-121">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d0c38-121">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="fe237-122">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="fe237-122">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

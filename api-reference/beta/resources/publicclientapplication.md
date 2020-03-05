@@ -5,27 +5,29 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: a9d54ed7f15f6bbcabd85ee50e8137b131399b22
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: e22f973f9d133b3c4c7827733f51f2028cd506ce
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939385"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521308"
 ---
-# <a name="publicclientapplication-resource-type"></a><span data-ttu-id="c83d5-104">Тип ресурса publicClientApplication</span><span class="sxs-lookup"><span data-stu-id="c83d5-104">publicClientApplication resource type</span></span>
+# <a name="publicclientapplication-resource-type"></a><span data-ttu-id="b043f-104">Тип ресурса publicClientApplication</span><span class="sxs-lookup"><span data-stu-id="b043f-104">publicClientApplication resource type</span></span>
+
+<span data-ttu-id="b043f-105">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="b043f-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c83d5-105">Задает параметры для невеб-приложения или API, не являющихся веб-приложениями (например, мобильных или других общедоступных клиентов, таких как установленное приложение, запущенное на настольном устройстве).</span><span class="sxs-lookup"><span data-stu-id="c83d5-105">Specifies settings for non-web app or non-web API (for example, mobile or other public clients such as an installed application running on a desktop device).</span></span>
+<span data-ttu-id="b043f-106">Задает параметры для невеб-приложения или API, не являющихся веб-приложениями (например, мобильных или других общедоступных клиентов, таких как установленное приложение, запущенное на настольном устройстве).</span><span class="sxs-lookup"><span data-stu-id="b043f-106">Specifies settings for non-web app or non-web API (for example, mobile or other public clients such as an installed application running on a desktop device).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="c83d5-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="c83d5-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="b043f-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="b043f-107">Properties</span></span>
 
-| <span data-ttu-id="c83d5-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="c83d5-107">Property</span></span> | <span data-ttu-id="c83d5-108">Тип</span><span class="sxs-lookup"><span data-stu-id="c83d5-108">Type</span></span> | <span data-ttu-id="c83d5-109">Описание</span><span class="sxs-lookup"><span data-stu-id="c83d5-109">Description</span></span> |
+| <span data-ttu-id="b043f-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="b043f-108">Property</span></span> | <span data-ttu-id="b043f-109">Тип</span><span class="sxs-lookup"><span data-stu-id="b043f-109">Type</span></span> | <span data-ttu-id="b043f-110">Описание</span><span class="sxs-lookup"><span data-stu-id="b043f-110">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c83d5-110">редиректурис</span><span class="sxs-lookup"><span data-stu-id="c83d5-110">redirectUris</span></span>|<span data-ttu-id="c83d5-111">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="c83d5-111">String collection</span></span>| <span data-ttu-id="c83d5-112">Задает URL-адреса, по которым маркеры пользователей отправляются для входа, или URI перенаправления, для которых отправляются коды авторизации OAuth 2,0 и маркеры доступа.</span><span class="sxs-lookup"><span data-stu-id="c83d5-112">Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.</span></span> |
+|<span data-ttu-id="b043f-111">редиректурис</span><span class="sxs-lookup"><span data-stu-id="b043f-111">redirectUris</span></span>|<span data-ttu-id="b043f-112">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="b043f-112">String collection</span></span>| <span data-ttu-id="b043f-113">Задает URL-адреса, по которым маркеры пользователей отправляются для входа, или URI перенаправления, для которых отправляются коды авторизации OAuth 2,0 и маркеры доступа.</span><span class="sxs-lookup"><span data-stu-id="b043f-113">Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="c83d5-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="c83d5-113">JSON representation</span></span>
-<span data-ttu-id="c83d5-114">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c83d5-114">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b043f-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="b043f-114">JSON representation</span></span>
+<span data-ttu-id="b043f-115">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b043f-115">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -5,23 +5,25 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 6688175224d0578d1b4907b9fa184cd5f459c089
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 915357db8a30ae6298fb76279a46379465fb2b10
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008840"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521301"
 ---
-# <a name="publicerror-resource-type"></a><span data-ttu-id="7d0d8-102">Тип ресурса Публицеррор</span><span class="sxs-lookup"><span data-stu-id="7d0d8-102">publicError resource type</span></span>
+# <a name="publicerror-resource-type"></a><span data-ttu-id="8a71b-102">Тип ресурса Публицеррор</span><span class="sxs-lookup"><span data-stu-id="8a71b-102">publicError resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="7d0d8-103">Свойства</span><span class="sxs-lookup"><span data-stu-id="7d0d8-103">Properties</span></span>
-|<span data-ttu-id="7d0d8-104">Свойство</span><span class="sxs-lookup"><span data-stu-id="7d0d8-104">Property</span></span>|<span data-ttu-id="7d0d8-105">Тип</span><span class="sxs-lookup"><span data-stu-id="7d0d8-105">Type</span></span>|<span data-ttu-id="7d0d8-106">Описание</span><span class="sxs-lookup"><span data-stu-id="7d0d8-106">Description</span></span>|
+<span data-ttu-id="8a71b-103">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="8a71b-103">Namespace: microsoft.graph</span></span>
+
+## <a name="properties"></a><span data-ttu-id="8a71b-104">Свойства</span><span class="sxs-lookup"><span data-stu-id="8a71b-104">Properties</span></span>
+|<span data-ttu-id="8a71b-105">Свойство</span><span class="sxs-lookup"><span data-stu-id="8a71b-105">Property</span></span>|<span data-ttu-id="8a71b-106">Тип</span><span class="sxs-lookup"><span data-stu-id="8a71b-106">Type</span></span>|<span data-ttu-id="8a71b-107">Описание</span><span class="sxs-lookup"><span data-stu-id="8a71b-107">Description</span></span>|
 |:---|:---|:---|
 
-## <a name="relationships"></a><span data-ttu-id="7d0d8-107">Отношения</span><span class="sxs-lookup"><span data-stu-id="7d0d8-107">Relationships</span></span>
-<span data-ttu-id="7d0d8-108">Нет</span><span class="sxs-lookup"><span data-stu-id="7d0d8-108">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="7d0d8-109">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="7d0d8-109">JSON Representation</span></span>
-<span data-ttu-id="7d0d8-110">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7d0d8-110">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="8a71b-108">Связи</span><span class="sxs-lookup"><span data-stu-id="8a71b-108">Relationships</span></span>
+<span data-ttu-id="8a71b-109">Нет</span><span class="sxs-lookup"><span data-stu-id="8a71b-109">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8a71b-110">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="8a71b-110">JSON Representation</span></span>
+<span data-ttu-id="8a71b-111">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8a71b-111">Here is a JSON representation of the resource.</span></span>
 <!--{
   "blockType": "resource",
   "@odata.type": "microsoft.graph.publicError"
