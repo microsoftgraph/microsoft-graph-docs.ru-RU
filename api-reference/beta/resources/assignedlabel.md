@@ -5,14 +5,16 @@ localization_priority: Normal
 author: krbain
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 7e8390ec1773061d447e7526f55e67b87e51531b
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 4f4f1fd854885668160b46f2b1ee9396dcf954fe
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870941"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508221"
 ---
 # <a name="assignedlabel-resource-type"></a>Тип ресурса Ассигнедлабел
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

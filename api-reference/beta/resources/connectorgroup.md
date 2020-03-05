@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 02ef418f0f2124b4bd0c7489db8c732398005761
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: d57f116adac652cb55a3a270383ddb5c65d8e40f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538387"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507473"
 ---
 # <a name="connectorgroup-resource-type"></a>Тип ресурса Коннекторграуп
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,16 +24,16 @@ ms.locfileid: "37538387"
 |:---------------|:--------|:----------|
 |[Получение Коннекторграуп](../api/connectorgroup-get.md) | [connectorGroup](connectorgroup.md) |Чтение свойств и связей объекта Коннекторграуп.|
 |[Создание приложения](../api/connectorgroup-post-applications.md) |[application](application.md)| Свяжите приложение с группой соединителей, размещая в коллекции Applications.|
-|[Перечисление приложений](../api/connectorgroup-list-applications.md) |Коллекция [приложений](application.md)| Получение связанной коллекции объектов Application.|
+|[Перечисление приложений](../api/connectorgroup-list-applications.md) |Коллекция [application](application.md)| Получение связанной коллекции объектов Application.|
 |[Создание соединителя](../api/connectorgroup-post-members.md) |[PDIF](connector.md)| Добавьте соединитель в группу соединителей, отправив его в коллекцию Members.|
-|[Перечисление участников](../api/connectorgroup-list-members.md) |Коллекция [соединителей](connector.md)| Получение коллекции объектов Connector.|
+|[Список членов](../api/connectorgroup-list-members.md) |Коллекция [соединителей](connector.md)| Получение коллекции объектов Connector.|
 |[обновление](../api/connectorgroup-update.md). | [connectorGroup](connectorgroup.md)    |Обновление объекта Коннекторграуп. |
-|[Удаление](../api/connectorgroup-delete.md) | Нет |Удаление объекта Коннекторграуп. Перед удалением группы соединителей необходимо удалить все соединители. |
+|[удаление](../api/connectorgroup-delete.md); | Нет |Удаление объекта Коннекторграуп. Перед удалением группы соединителей необходимо удалить все соединители. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|коннекторграуптипе|string| Тип соединителей, которые будут использоваться для группы. Возможные значения: `applicationProxy`.|
+|коннекторграуптипе|строка| Тип соединителей, которые будут использоваться для группы. Возможные значения: `applicationProxy`.|
 |id|Строка| Идентификатор объекта Коннекторграуп|
 |isDefault|Boolean| Указывает, является ли Коннекторграуп группой соединителей по умолчанию. Только одна группа соединителей может быть Коннекторграуп по умолчанию и задается системой.|
 |name|String| Имя, связанное с Коннекторграуп.|
@@ -39,7 +41,7 @@ ms.locfileid: "37538387"
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|заявлен|Коллекция [приложений](application.md)| Только для чтения. Допускается значение null.|
+|заявлен|Коллекция [application](application.md)| Только для чтения. Допускается значение null.|
 |members|Коллекция [соединителей](connector.md)| Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 1418e2cb21a1023e864d842b760006e05f3afb03
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 242c90e9d0e506dbeb6576975305d0a0f8397f86
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870969"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508501"
 ---
 # <a name="accesspackageresourcescope-resource-type"></a>Тип ресурса Акцесспаккажересаурцескопе
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -33,7 +35,7 @@ ms.locfileid: "40870969"
 |ролеоригинид|String|Исходная система для роли, если она отличается.|
 |url|String|Указатель ресурсов для области.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|

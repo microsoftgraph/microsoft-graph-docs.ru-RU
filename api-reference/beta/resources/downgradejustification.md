@@ -5,14 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: aacc32ac86df4eda087f49dbb3dca05a356e8080
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 91bcb5a8e12a159bf2c6586a0e3dc49a540a69f2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939427"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42505793"
 ---
 # <a name="downgradejustification-resource-type"></a>Тип ресурса Довнградежустификатион
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +25,7 @@ ms.locfileid: "37939427"
 | Свойство             | Тип    | Описание                                                                                          |
 | :------------------- | :------ | :--------------------------------------------------------------------------------------------------- |
 | исдовнградежустифиед | Логический | Указывает, является ли переход на предыдущее или не выровненный.                                              |
-| жустификатионмессаже | Строка  | Сообщение, указывающее, почему выравниваются более ранние версии. Сообщение будет отображаться в разделе Журналы администрирования. |
+| жустификатионмессаже | String  | Сообщение, указывающее, почему выравниваются более ранние версии. Сообщение будет отображаться в разделе Журналы администрирования. |
 
 ## <a name="json-representation"></a>Представление JSON
 

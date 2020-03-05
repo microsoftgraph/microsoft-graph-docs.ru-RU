@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 35997bfcae7f33cc9bf8e62121c5dc2a724c95be
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: beb67d906c5f159f94ab8f64863eb383286489b2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913746"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508103"
 ---
 # <a name="audiosourcelevel-resource-type"></a>Тип ресурса Аудиосаурцелевел
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +24,7 @@ ms.locfileid: "40913746"
 
 | Свойство               | Тип    | Описание                                                                                         |
 | :--------------------- | :------ | :---------------------------------------------------------------------------------------------------|
-| дуккосерс             | Boolean | Позволяет этому источнику дукк другие источники в активном состоянии. Если задано значение true, необходимо задать уровень дуккинг.|
+| дуккосерс             | Логический | Позволяет этому источнику дукк другие источники в активном состоянии. Если задано значение true, необходимо задать уровень дуккинг.|
 | степень                  | Int64   | Дуккинг уровень источника, если `duckOthers` задано значение. `true`                                     |
 | participant            | String  | Поток звука участника источника.                                                                |
 

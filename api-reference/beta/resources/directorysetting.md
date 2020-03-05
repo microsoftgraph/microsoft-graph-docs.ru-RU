@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fdef82ef7585d3b59510b491f6b10396afbf6763
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1d42e46d39e28357d6839111a5e6a865b421cf87
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973843"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42506633"
 ---
 # <a name="directorysetting-resource-type"></a>Тип ресурса Директорисеттинг
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,11 +36,11 @@ ms.locfileid: "35973843"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |displayName|string|Отображаемое имя группы параметров, поступающих из связанного шаблона. Только для чтения.|
-|id|string| Уникальный идентификатор для этих параметров. Только для чтения.|
-|templateId|string| Уникальный идентификатор шаблона, который используется для создания этой группы параметров. Только для чтения.|
+|id|строка| Уникальный идентификатор для этих параметров. Только для чтения.|
+|templateId|строка| Уникальный идентификатор шаблона, который используется для создания этой группы параметров. Только для чтения.|
 |values|Коллекция [settingValue](settingvalue.md)| Коллекция пар "имя-значение". Должен содержать и задавать все параметры, определенные в шаблоне.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

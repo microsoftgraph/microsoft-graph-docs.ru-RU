@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 2a478f7b0ed06a247ece20ac14763f7de8ff498d
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: 0edcb4af5ae6bbc154d0748b57ec83efcb3137f0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331430"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508228"
 ---
 # <a name="approvalstage-complex-type"></a>сложный тип Аппровалстаже
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

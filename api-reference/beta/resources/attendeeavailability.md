@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 8e9a9eb91ccfc70e771357abf3b91d6a23dbd367
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5c01c12f486fd8efeb5a3c9ba3d90776e480bafa
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013257"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508145"
 ---
 # <a name="attendeeavailability-resource-type"></a>Тип ресурсов attendeeAvailability
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

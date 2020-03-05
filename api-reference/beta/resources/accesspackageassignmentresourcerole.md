@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 1dbf73623ddd51cc1172e5610e84cc7861657489
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: c9eddff042af5b2cd724e87e3438f398e8d68c19
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939196"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508543"
 ---
 # <a name="accesspackageassignmentresourcerole-resource-type"></a>Тип ресурса Акцесспаккажеассигнментресаурцероле
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,9 +30,9 @@ ms.locfileid: "37939196"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|Строка| Только для чтения.|
-|оригинид|Строка|Уникальный идентификатор, связанный с исходной системой. |
-|оригинсистем|Строка|Система, в которой необходимо создать назначение ролей для назначения пакета Access.|
+|id|String| Только для чтения.|
+|оригинид|String|Уникальный идентификатор, связанный с исходной системой. |
+|оригинсистем|String|Система, в которой необходимо создать назначение ролей для назначения пакета Access.|
 |status|String|Значение задается, `Fulfilled` когда назначение пакета Access было доставлено в исходную систему.|
 
 ## <a name="relationships"></a>Связи

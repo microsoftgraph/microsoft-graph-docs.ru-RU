@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a76818c23890a011a4607629b16122a767126178
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9b3a957197821bfb010aed5de071ec1e89192828
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012760"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42506367"
 ---
 # <a name="domaindnscnamerecord-resource-type"></a>Тип ресурса Домаинднскнамерекорд
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,15 +27,15 @@ ms.locfileid: "36012760"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Каноникалнаме|String| Каноническое имя записи CNAME. Используется для настройки записи CNAME на узле DNS. |
+|каноникалнаме|String| Каноническое имя записи CNAME. Используется для настройки записи CNAME на узле DNS. |
 |id|String| Уникальный идентификатор, назначенный этой сущности. Не допускает значение null, доступно только для чтения|
-|Переключатель|Boolean| Если значение равно false, запись CNAME должна быть настроена клиентом на узле DNS для правильной работы Microsoft Online Services с доменом. Не допускает значение null |
+|Переключатель|Логический| Если значение равно false, запись CNAME должна быть настроена клиентом на узле DNS для правильной работы Microsoft Online Services с доменом. Не допускает значение null |
 |label|String| Значение, используемое при настройке *псевдонима/узла или имени* записи CNAME на узле DNS. |
 |recordType|String| Тип записи DNS. Значение всегда равно *CNAME*. Key|
-|Суппортедсервице|String| Служба или компонент Microsoft Online, который имеет зависимость от этой записи CNAME.</br></br>Может принимать одно из следующих значений: **null**, *Email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic *, *OrgIdAuthentication*, *Yammer*, *Intune*|
+|суппортедсервице|String| Служба или компонент Microsoft Online, который имеет зависимость от этой записи CNAME.</br></br>Может принимать одно из следующих значений: **null**, *Email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*|
 |используем|Int32| Значение, используемое при настройке свойства срока жизни (TTL) записи CNAME на узле DNS. Не допускает значение null |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

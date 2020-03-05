@@ -5,20 +5,22 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: finsharp
-ms.openlocfilehash: 95f61a34f7dc2eb610f8be7812e3c38b86979b1a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f61d3cf4c80a03e2cc29372b1ce4013b90b234bd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973288"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507623"
 ---
 # <a name="command-resource-type"></a>Тип ресурса Command
+
+Пространство имен: Microsoft. Graph
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

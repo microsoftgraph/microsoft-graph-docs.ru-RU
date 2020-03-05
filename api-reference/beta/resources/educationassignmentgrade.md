@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 4de74fc9cbdf505bd57cfad3ab8dbf5a12e4e58a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9680a298c405a81648ba0a5fe95cdf0df0c841bb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006474"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502748"
 ---
 # <a name="educationassignmentgrade-resource-type"></a>Тип ресурса Едукатионассигнментграде
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,8 +24,8 @@ ms.locfileid: "36006474"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Градедби|[identitySet](identityset.md)| Пользователь, который выполнил ступенчатое. |
-|Градеддатетиме|DateTimeOffset| Момент времени, когда уровень был применен к этому объекту отправки. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601, причем всегда используется время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|градедби|[identitySet](identityset.md)| Пользователь, который выполнил ступенчатое. |
+|градеддатетиме|DateTimeOffset| Момент времени, когда уровень был применен к этому объекту отправки. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 
 ## <a name="json-representation"></a>Представление JSON
 

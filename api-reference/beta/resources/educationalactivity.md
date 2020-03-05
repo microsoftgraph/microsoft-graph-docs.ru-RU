@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 8d060de55d765adb7e01e6b03842c569f03c8d4f
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: e1f4ffd3154700f59ebdd26a2213755810b561ad
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939623"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502846"
 ---
 # <a name="educationalactivity-resource-type"></a>Тип ресурса Едукатионалактивити
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,8 +27,8 @@ ms.locfileid: "37939623"
 | Метод                                                       | Возвращаемый тип                                   | Описание                                                      |
 |:-------------------------------------------------------------|:----------------------------------------------|:-----------------------------------------------------------------|
 | [Получение Едукатионалактивити](../api/educationalactivity-get.md) | [едукатионалактивити](educationalactivity.md) | Чтение свойств и связей объекта Едукатионалактивити. |
-| [Update](../api/educationalactivity-update.md)               | [едукатионалактивити](educationalactivity.md) | Обновление объекта Едукатионалактивити.                               |
-| [Delete](../api/educationalactivity-delete.md)               | Нет.                                          | Удаление объекта Едукатионалактивити.                               |
+| [обновление](../api/educationalactivity-update.md).               | [едукатионалактивити](educationalactivity.md) | Обновление объекта Едукатионалактивити.                               |
+| [удаление](../api/educationalactivity-delete.md);               | Нет                                          | Удаление объекта Едукатионалактивити.                               |
 
 ## <a name="properties"></a>Свойства
 

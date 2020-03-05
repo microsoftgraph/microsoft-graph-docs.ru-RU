@@ -5,14 +5,16 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 48f4549354603346e39b5e1f6f387b207e2f14ef
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 876a490c3dfcf69eb993d1ba18868e2fc5a62fa8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972485"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42500641"
 ---
 # <a name="educationsubmissionresource-resource-type"></a>Тип ресурса Едукатионсубмиссионресаурце
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,17 +25,17 @@ ms.locfileid: "35972485"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение Едукатионсубмиссионресаурце](../api/educationsubmissionresource-get.md) | [Едукатионсубмиссионресаурце](educationsubmissionresource.md) |Чтение свойств и связей объекта **едукатионсубмиссионресаурце** .|
-|[Удаление](../api/educationsubmissionresource-delete.md) | Нет |Удаление объекта **едукатионсубмиссионресаурце** . |
+|[Получение Едукатионсубмиссионресаурце](../api/educationsubmissionresource-get.md) | [едукатионсубмиссионресаурце](educationsubmissionresource.md) |Чтение свойств и связей объекта **едукатионсубмиссионресаурце** .|
+|[удаление](../api/educationsubmissionresource-delete.md); | Нет |Удаление объекта **едукатионсубмиссионресаурце** . |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Ассигнментресаурцеурл|String|Указатель на назначение, из которого был скопирован данный ресурс. Если это значение равно null, учащийся передал ресурс.|
+|ассигнментресаурцеурл|String|Указатель на назначение, из которого был скопирован данный ресурс. Если это значение равно null, учащийся передал ресурс.|
 |id|String| Только для чтения.|
-|resource|[Едукатионресаурце](educationresource.md)|Объект Resource.|
+|resource|[едукатионресаурце](educationresource.md)|Объект Resource.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

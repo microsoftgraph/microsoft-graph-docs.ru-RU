@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 8117dd71947fea41508ccbe7d50d49a4f78b335d
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 0a598c4b5e999b03aeb7201c6eae3a230d3160a7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939770"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518975"
 ---
 # <a name="yomipersonname-resource-type"></a>Тип ресурса Йомиперсоннаме
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,11 +24,11 @@ ms.locfileid: "37939770"
 
 | Свойство     | Тип        | Описание                                             |
 |:-------------|:------------|:--------------------------------------------------------|
-|displayName   |Строка       | Составные руководства по произношению имени и фамилии.  |
-|первыми         |Строка       | Произношение руководства для первого имени пользователя.     |
-|Фамили          |Строка       | Произношение руководства для последнего имени пользователя.      |
-|маиден        |Строка       | Произношение руководства для маиден имени пользователя.    |
-|назван        |Строка       | Произношение руководства по среднему имени пользователя.    |
+|displayName   |String       | Составные руководства по произношению имени и фамилии.  |
+|первыми         |String       | Произношение руководства для первого имени пользователя.     |
+|Фамили          |String       | Произношение руководства для последнего имени пользователя.      |
+|маиден        |String       | Произношение руководства для маиден имени пользователя.    |
+|назван        |String       | Произношение руководства по среднему имени пользователя.    |
 
 ## <a name="json-representation"></a>Представление JSON
 

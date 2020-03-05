@@ -7,21 +7,26 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: af7ba3b49051a4e89fcdf2a4a408a1f72fc547ad
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 368fc28f7bd46d8d5385b6e6041cd82255e0271f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973617"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42504141"
 ---
 # <a name="dimensionvalues-resource-type"></a>Тип ресурса Дименсионвалуес
+
+Пространство имен: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Представляет значение измерения в Dynamics 365 Business Central.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание                   |
 |:-------------|:-------------|:-----------------------------|
-|[Получение Дименсионвалуес](../api/dynamics-dimensionvalue-get.md)|Дименсионвалуес|Возвращает объект значения измерения.|
+|[Получение Дименсионвалуес](../api/dynamics-dimensionvalue-get.md)|дименсионвалуес|Возвращает объект значения измерения.|
 
 
 ## <a name="properties"></a>Свойства
@@ -30,7 +35,7 @@ ms.locfileid: "35973617"
 |id                  |GUID                   |Уникальный идентификатор элемента.                         |
 |code                |Строка, максимальный размер 20|Код значения измерения.                          |
 |displayName         |string                 |Задает имя значения измерения. Это имя будет отображаться там, где используется значение измерения.|
-|lastModifiedDateTime|отличным               |Дата и время последнего изменения значения измерения.|  
+|lastModifiedDateTime|datetime               |Дата и время последнего изменения значения измерения.|  
 
 
 ## <a name="json-representation"></a>Представление JSON

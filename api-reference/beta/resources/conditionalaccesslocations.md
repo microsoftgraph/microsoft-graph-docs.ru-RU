@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 6997664eb131664bcaaf571398ed393fb13c987c
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: 5a3b6affa1dccdf9065061bec855fb8a2000d387
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37638570"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507543"
 ---
 # <a name="conditionalaccesslocations-resource-type"></a>Тип ресурса Кондитионалакцесслокатионс
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,8 +24,8 @@ ms.locfileid: "37638570"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| инклуделокатионс | Коллекция строк | Идентификаторы расположений в области применения политики, если `All`явно не `AllTrusted`исключены, или. |
-| ексклуделокатионс | Коллекция строк | Идентификаторы расположений, исключенные из области применения политики. |
+| инклуделокатионс | Коллекция String | Идентификаторы расположений в области применения политики, если `All`явно не `AllTrusted`исключены, или. |
+| ексклуделокатионс | Коллекция String | Идентификаторы расположений, исключенные из области применения политики. |
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: ec4d3fdb415533d5b3f2effc72688fe912551bc8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 25d350e48aaddbda2b931ae5a9e177ec6caa9799
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012879"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507480"
 ---
 # <a name="connector-resource-type"></a>Тип ресурса Connector
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -33,13 +35,13 @@ ms.locfileid: "36012879"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Екстерналип|String|Внешний IP-адрес, обнаруженный службой для соединителного компьютера. Только для чтения|
+|екстерналип|String|Внешний IP-адрес, обнаруженный службой для соединителного компьютера. Только для чтения|
 |id|Строка| Идентификатор объекта Connector. <BR>Только для чтения.|
 |ИмяКомпьютера|String| Имя компьютера, на котором работает соединитель. <BR>Только для чтения|
 |status|string| Указывает состояние соединителя. Возможные значения: `active`, `inactive`. Только для чтения |
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |memberOf|Коллекция [коннекторграуп](connectorgroup.md)| Коннекторграуп, участником которого является подключение.<br>Только для чтения. |
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 04e33c9fdae1eae811ee88e7cdef95b4b97b2c3f
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: dc8da38c9da8d6631e8e46199f420ae0b3ab652e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37936841"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507585"
 ---
 # <a name="companydetail-resource-type"></a>Тип ресурса Компанидетаил
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,10 +25,10 @@ ms.locfileid: "37936841"
 | Свойство       | Тип                                | Описание                                 |
 |:---------------|:------------------------------------|:--------------------------------------------|
 |address         |[physicalAddress](physicaladdress.md)| Адрес компании.                     |
-|department      |Строка                               | Название отдела в компании.           |
+|department      |String                               | Название отдела в компании.           |
 |displayName     |Строка                               | Название компании.                               |
 |officeLocation  |String                               | Местонахождение комнаты для пользователя, на который ссылается.  |
-|произношение   |Строка                               | Рекомендации по произношению названия компании.   |
+|произношение   |String                               | Рекомендации по произношению названия компании.   |
 |webUrl          |String                               | Ссылка на домашнюю страницу компании.              |
 
 ## <a name="json-representation"></a>Представление JSON

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4239a12be5fffbf5c579752c3de4998c88749bd3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f1881c697eae6b4032635d2e4797a14ef2e848e2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012788"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42506465"
 ---
 # <a name="directorysettingtemplate-resource-type"></a>Тип ресурса Директорисеттингтемплате
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,7 +34,7 @@ ms.locfileid: "36012788"
 |:---------------|:--------|:----------|
 |description|string|Описание шаблона. Только для чтения.|
 |displayName|string|Отображаемое имя шаблона. Только для чтения. |
-|id|string| Уникальный идентификатор шаблона. Только для чтения.|
+|id|строка| Уникальный идентификатор шаблона. Только для чтения.|
 |values|Коллекция [сеттингтемплатевалуе](settingtemplatevalue.md)| Коллекция Settingtemplatevalue, в которой перечислены набор доступных параметров, значения по умолчанию и типы, которые составляют этот шаблон.  Только для чтения. |
 
 ## <a name="relationships"></a>Отношения

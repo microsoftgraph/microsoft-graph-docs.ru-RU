@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3c8fde3b6ead60cada5e663b2150ba463187b22b
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 66b7939541ba57dafc3be852c82c89781fc82381
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870420"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508536"
 ---
 # <a name="accesspackagecatalog-resource-type"></a>Тип ресурса Акцесспаккажекаталог
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

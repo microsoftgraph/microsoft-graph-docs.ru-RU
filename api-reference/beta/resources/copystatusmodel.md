@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 2bc83b7eb519b3d11adc9f548becbec4444f1ef0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ac09b095b3b903b31c90776266d2a5dc3741a046
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973970"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507382"
 ---
 # <a name="copystatusmodel-resource-type"></a>Тип ресурса Копистатусмодел
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +42,7 @@ ms.locfileid: "35973970"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset ||
-|id|string||
+|id|строка||
 |status|string||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

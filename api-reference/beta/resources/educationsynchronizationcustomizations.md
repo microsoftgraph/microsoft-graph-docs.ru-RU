@@ -5,14 +5,16 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: d31be9bd808f411c1e208ab953784fdefd65fdda
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a2ff93d6a91d522c5d1140035e278e9832332321
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972441"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42500452"
 ---
 # <a name="educationsynchronizationcustomizations-resource-type"></a>Тип ресурса Едукатионсинчронизатионкустомизатионс
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,19 +24,19 @@ ms.locfileid: "35972441"
 
 Этот ресурс является членом следующих поставщиков данных:
 
-* [Едукатионксвдатапровидер](educationcsvdataprovider.md)
-* [Едукатионповерсчулдатапровидер](educationpowerschooldataprovider.md)
+* [едукатионксвдатапровидер](educationcsvdataprovider.md)
+* [едукатионповерсчулдатапровидер](educationpowerschooldataprovider.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:-|:-|:-|
-| **Название** | [Едукатионсинчронизатионкустомизатион](educationsynchronizationcustomization.md) |  Настройка для учебного объекта School.        |
-| **section** | [Едукатионсинчронизатионкустомизатион](educationsynchronizationcustomization.md) |  Настройка для объекта Section.         |
-| **student** | [Едукатионсинчронизатионкустомизатион](educationsynchronizationcustomization.md) |  Настройка для объекта Student.         |
-| **teacher** | [Едукатионсинчронизатионкустомизатион](educationsynchronizationcustomization.md) |  Настройка для объекта учителя.         |
-| **Студентенроллмент** | [Едукатионсинчронизатионкустомизатион](educationsynchronizationcustomization.md) |  Настройка регистрации для учащихся.           |
-| **Теачерростер** | [Едукатионсинчронизатионкустомизатион](educationsynchronizationcustomization.md) |       Настройка для списка преподавателей.    |
+| **Название** | [едукатионсинчронизатионкустомизатион](educationsynchronizationcustomization.md) |  Настройка для учебного объекта School.        |
+| **section** | [едукатионсинчронизатионкустомизатион](educationsynchronizationcustomization.md) |  Настройка для объекта Section.         |
+| **student** | [едукатионсинчронизатионкустомизатион](educationsynchronizationcustomization.md) |  Настройка для объекта Student.         |
+| **teacher** | [едукатионсинчронизатионкустомизатион](educationsynchronizationcustomization.md) |  Настройка для объекта учителя.         |
+| **студентенроллмент** | [едукатионсинчронизатионкустомизатион](educationsynchronizationcustomization.md) |  Настройка регистрации для учащихся.           |
+| **теачерростер** | [едукатионсинчронизатионкустомизатион](educationsynchronizationcustomization.md) |       Настройка для списка преподавателей.    |
 
 ## <a name="json-representation"></a>Представление JSON
 <!-- {

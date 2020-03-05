@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 1b47a9de683c62986054e6ed2b5926af03bbd4ba
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e341e7136697614b579773cbe113591a46bf2f91
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972786"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502447"
 ---
 # <a name="educationassignmentrecipient-resource-type"></a>Тип ресурса ЕдукатионассигнментреЦипиент
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

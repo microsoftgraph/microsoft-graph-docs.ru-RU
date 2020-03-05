@@ -7,24 +7,29 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 3658c4c510194d3cc950094ec9e46db31589bc03
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9b0774f24109f40684039bd8ac98188903f28c3d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972868"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42503014"
 ---
 # <a name="unitsofmeasure-resource-type"></a>Тип ресурса Унитсофмеасуре
+
+Пространство имен: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Представляет единицу измерения, которая является стандартом измерения количества в Dynamics 365 Business Central.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение Унитсофмеасуре](../api/dynamics-unitsofmeasure-get.md)|Унитсофмеасуре|Возвращает объект единицы измерения.|
-|[POST Унитсофмеасуре](../api/dynamics-create-unitsofmeasure.md)|Унитсофмеасуре|Создает объект единицы измерения.|
-|[Исправление Унитсофмеасуре](../api/dynamics-unitsofmeasure-update.md)|Унитсофмеасуре|Обновляет объект единицы измерения.|
-|[Удаление Унитсофмеасуре](../api/dynamics-unitsofmeasure-delete.md)|none|Удаляет объект единицы измерения.|
+|[Получение Унитсофмеасуре](../api/dynamics-unitsofmeasure-get.md)|унитсофмеасуре|Возвращает объект единицы измерения.|
+|[POST Унитсофмеасуре](../api/dynamics-create-unitsofmeasure.md)|унитсофмеасуре|Создает объект единицы измерения.|
+|[Исправление Унитсофмеасуре](../api/dynamics-unitsofmeasure-update.md)|унитсофмеасуре|Обновляет объект единицы измерения.|
+|[Удаление Унитсофмеасуре](../api/dynamics-unitsofmeasure-delete.md)|нет|Удаляет объект единицы измерения.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -32,11 +37,11 @@ ms.locfileid: "35972868"
 |id|GUID|Уникальный идентификатор Унитсофмеасуре. Не редактируемые.|
 |code|string|Задает код для единицы измерения.|
 |displayName|string|Задает отображаемое имя единицы измерения.|
-|Интернатионалстандардкоде|string|Указывает код единицы измерения, выраженный в соответствии с УНЕЦЕ Rec20 Standard в связи с электронной отправкой документов продажи.|
-|lastModifiedDateTime|отличным|Дата и время последнего изменения единицы измерения. Только для чтения.|  
+|интернатионалстандардкоде|строка|Указывает код единицы измерения, выраженный в соответствии с УНЕЦЕ Rec20 Standard в связи с электронной отправкой документов продажи.|
+|lastModifiedDateTime|datetime|Дата и время последнего изменения единицы измерения. Только для чтения.|  
 
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

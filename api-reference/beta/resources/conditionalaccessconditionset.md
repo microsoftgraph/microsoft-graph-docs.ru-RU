@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9e81e8b2748a7dc3b6a9ca028472c1f6ab153b0e
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: dee80ebdacfda6c0b633f1aec1dd085d80eb22e3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37638514"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507564"
 ---
 # <a name="conditionalaccessconditionset-resource-type"></a>Тип ресурса Кондитионалакцесскондитионсет
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,13 +24,13 @@ ms.locfileid: "37638514"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|заявлен|[кондитионалакцессаппликатионс](conditionalaccessapplications.md)| Приложения и действия пользователя, включенные в политику и исключенные из нее. Обязательный элемент. |
-|users|[кондитионалакцессусерс](conditionalaccessusers.md)| Пользователи, группы и роли, включенные в политику и исключенные из нее. Обязательный элемент. |
-|клиентапптипес|Коллекция строк| Типы клиентских приложений, включенные в политику. Возможные значения: `browser`, `modern`, `easSupported`, `easUnsupported`, `other`.|
-|deviceStates|[кондитионалакцессдевицестатес](conditionalaccessdevicestates.md)| Состояния устройств в политике. |
-|locations|[кондитионалакцесслокатионс](conditionalaccesslocations.md)| Расположения, включенные в политику и исключенные из нее. |
-|Embedded|[кондитионалакцессплатформс](conditionalaccessplatforms.md)| Платформы, включенные в политику и исключенные из нее. |
-|сигнинрисклевелс|Коллекция строк| Уровни риска, включенные в политику. Возможные значения: `low`, `medium`, `high`, `none`.|
+|заявлен|[conditionalAccessApplications](conditionalaccessapplications.md)| Приложения и действия пользователя, включенные в политику и исключенные из нее. Обязательное. |
+|users|[conditionalAccessUsers](conditionalaccessusers.md)| Пользователи, группы и роли, включенные в политику и исключенные из нее. Обязательное. |
+|клиентапптипес|Коллекция String| Типы клиентских приложений, включенные в политику. Возможные значения: `browser`, `modern`, `easSupported`, `easUnsupported`, `other`.|
+|deviceStates|[conditionalAccessDeviceStates](conditionalaccessdevicestates.md)| Состояния устройств в политике. |
+|locations|[conditionalAccessLocations](conditionalaccesslocations.md)| Расположения, включенные в политику и исключенные из нее. |
+|Embedded|[conditionalAccessPlatforms](conditionalaccessplatforms.md)| Платформы, включенные в политику и исключенные из нее. |
+|сигнинрисклевелс|Коллекция String| Уровни риска, включенные в политику. Возможные значения: `low`, `medium`, `high`, `none`.|
 
 ## <a name="relationships"></a>Связи
 

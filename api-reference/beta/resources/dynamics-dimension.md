@@ -5,14 +5,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 5bd5382ae020baaf726db53f9252c4d3498833ee
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ed7c7a389778e651af8d2c11c53277a27e022ce1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973627"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42504540"
 ---
 # <a name="dimensions-resource-type"></a>Тип ресурса Dimensions
+
+Пространство имен: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Представляет измерение в Dynamics 365 Business Central.
 
 ## <a name="methods"></a>Методы
@@ -27,7 +32,7 @@ ms.locfileid: "35973627"
 |id                  |GUID                   |Уникальный идентификатор элемента.|
 |code                |Строка, максимальный размер 20|Код измерения.       |
 |displayName         |string                 |Задает имя измерения. Это имя будет отображаться там, где используется измерение.|
-|lastModifiedDateTime|отличным               |Дата и время последнего изменения измерения.|  
+|lastModifiedDateTime|datetime               |Дата и время последнего изменения измерения.|  
 
 
 ## <a name="json-representation"></a>Представление JSON

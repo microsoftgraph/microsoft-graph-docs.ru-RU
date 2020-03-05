@@ -5,25 +5,27 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: dda08acb0a390bfb8b26d88de15aac72dfa1f5f3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9b8f2de9f3b40a72aab7f9273b9b4fc30594059b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972539"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42500767"
 ---
 # <a name="educationstudent-resource-type"></a>Тип ресурса educationStudent
 
+Пространство имен: Microsoft. Graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавляются дополнительные сведения в файл [educationUser](educationuser.md), который присутствует, когда значение параметра primaryRole для пользователя — `student`.
+Дополнительные сведения, добавляемые в объект [educationUser](educationuser.md), который присутствует, когда значение параметра primaryRole для пользователя — `student`.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |birthDate|Date| Дата рождения учащегося.|
 |externalId|String| Идентификатор учащегося в исходной системе.|
-|gender|Едукатионжендер| Возможные значения: `female`, `male`, `other`.|
+|gender|едукатионжендер| Возможные значения: `female`, `male`, `other`.|
 |оценка|String|Текущий уровень оценок учащегося.|
 |graduationYear|String| Год выпуска учащегося из школы.|
 |studentNumber|String| Student Number.|

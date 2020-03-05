@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fb03e368a8a9c5cf929f314714a3a5d2fdee4b93
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 5aa90644a679c34eb7d2f9b53a5759b6b4293fed
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866849"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507053"
 ---
 # <a name="directory-resource-type-deleted-items"></a>Тип ресурса directory (удаленные элементы)
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -33,7 +35,7 @@ ms.locfileid: "40866849"
 |[Создание Феатурероллаутполици](../api/directory-post-featurerolloutpolicies.md) | [феатурероллаутполици](featurerolloutpolicy.md) | Создание нового объекта Феатурероллаутполици. |
 | [Получение Феатурероллаутполици](../api/featurerolloutpolicy-get.md) | [феатурероллаутполици](featurerolloutpolicy.md) | Получение свойств и связей объекта феатурероллаутполици. |
 | [Обновление Феатурероллаутполици](../api/featurerolloutpolicy-update.md) | [феатурероллаутполици](featurerolloutpolicy.md) | Обновление свойств объекта феатурероллаутполици. |
-| [Удаление Феатурероллаутполици](../api/featurerolloutpolicy-delete.md) | Нет. | Удаление объекта Феатурероллаутполици. |
+| [Удаление Феатурероллаутполици](../api/featurerolloutpolicy-delete.md) | Нет | Удаление объекта Феатурероллаутполици. |
 
 ## <a name="properties"></a>Свойства
 | Свойство   | Тип |Описание|

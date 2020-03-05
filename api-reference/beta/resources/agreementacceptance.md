@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 58ed332429d7976b75929b433d57bd77536b9e70
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 28f3c0adccb853ac8daddca9aaad70a2c0b35e2c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013453"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508382"
 ---
 # <a name="agreementacceptance-resource-type"></a>Тип ресурса agreementAcceptance
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,17 +33,17 @@ ms.locfileid: "36013453"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|Агриментфилеид|String|Идентификатор файла соглашения, принятого пользователем.|
-|Агриментид|String|Идентификатор соглашения.|
+|агриментфилеид|String|Идентификатор файла соглашения, принятого пользователем.|
+|агриментид|String|Идентификатор соглашения.|
 |id|String| Только для чтения.|
 |recordedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|состояние|string| Возможные значения: `accepted`, `declined`.|
+|состояние|строка| Возможные значения: `accepted`, `declined`.|
 |userDisplayName|String|Отображаемое имя пользователя, когда оно было записано.|
 |userEmail|String|Сообщение электронной почты пользователя, когда сообщение о принятии было записано.|
 |userId|String|Идентификатор пользователя, который принял соглашение.|
 |userPrincipalName|String|Имя участника-пользователя, когда оно было записано.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

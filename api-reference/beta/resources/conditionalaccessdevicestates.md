@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 822f819cd8e9ef0f93279c67b94972a1e9fb7929
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: ff61b1d9713a0da322d01e3c302ebefc98dbee46
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37638584"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507557"
 ---
 # <a name="conditionalaccessdevicestates-resource-type"></a>Тип ресурса Кондитионалакцессдевицестатес
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,8 +24,8 @@ ms.locfileid: "37638584"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| инклудестатес | Коллекция строк | Состояния политики. `All`— Единственное допустимое значение. |
-| ексклудестатес | Коллекция строк | Состояния, исключенные из области применения политики. Возможные значения: `Compliant`, `DomainJoined`. |
+| инклудестатес | Коллекция String | Состояния политики. `All`— Единственное допустимое значение. |
+| ексклудестатес | Коллекция String | Состояния, исключенные из области применения политики. Возможные значения: `Compliant`, `DomainJoined`. |
 
 ## <a name="relationships"></a>Связи
 

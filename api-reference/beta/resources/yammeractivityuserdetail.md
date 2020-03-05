@@ -5,30 +5,32 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 960945d72db1cc347228983b9567968dfcfc52d7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 922ebf14f59d60a988fe77ee36ce04d9c76befec
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35963789"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519031"
 ---
 # <a name="yammeractivityuserdetail-resource-type"></a>Тип ресурса Яммерактивитюсердетаил
+
+Пространство имен: Microsoft. Graph
 
 ## <a name="properties"></a>Свойства
 
 | Свойство          | Тип              |
 | :---------------- | :---------------- |
-| Репортрефрешдате | Дата              |
+| репортрефрешдате | Дата              |
 | userPrincipalName | String            |
 | displayName       | Строка            |
 | userState         | String            |
-| Статечанжедате   | Дата              |
-| Ластактивитидате  | Дата              |
-| Постедкаунт       | Int64             |
-| Реадкаунт         | Int64             |
-| Ликедкаунт        | Int64             |
-| Ассигнедпродуктс  | Коллекция строк |
-| Репортпериод      | String            |
+| статечанжедате   | Дата              |
+| ластактивитидате  | Дата              |
+| постедкаунт       | Int64             |
+| реадкаунт         | Int64             |
+| ликедкаунт        | Int64             |
+| ассигнедпродуктс  | Коллекция String |
+| репортпериод      | String            |
 
 ## <a name="json-representation"></a>Представление JSON
 

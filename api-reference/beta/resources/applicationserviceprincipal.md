@@ -5,14 +5,16 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c3a6d0d1017f89587f1f826c4225eefc51dc5edb
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.openlocfilehash: 9a7cc33e05c28e5552815778e86e5b1b9e7aaf06
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35147938"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508284"
 ---
 # <a name="applicationserviceprincipal-resource-type"></a>Тип ресурса АппликатионсервицепринЦипал
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,7 +31,7 @@ ms.locfileid: "35147938"
 |application|[application](../resources/application.md)|Представляет приложение, зарегистрированное в Azure Active Directory.|
 |servicePrincipal|[servicePrincipal](../resources/serviceprincipal.md)|Представляет экземпляр приложения в каталоге.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Нет
 

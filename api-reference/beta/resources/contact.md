@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 8eb692a3671672b82891a66531c64df1fcaa0e5c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 256a8e63b5ff331bdc770ed690998c98c1e92098
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012886"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507466"
 ---
 # <a name="contact-resource-type"></a>Тип ресурса contact
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -100,7 +102,7 @@ ms.locfileid: "36012886"
 |gender |String |Пол контакта. |
 |generation|String|Поколение контакта.|
 |givenName|String|Имя контакта.|
-|id|String| Уникальный идентификатор контакта. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)]Только для чтения. |
+|id|String| Уникальный идентификатор контакта. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Только для чтения. |
 |imAddresses|Коллекция String|Адреса контакта для обмена мгновенными сообщениями.|
 |initials|String|Инициалы контакта.|
 |jobTitle|String|Должность контакта.|
@@ -118,13 +120,13 @@ ms.locfileid: "36012886"
 |surname|String|Фамилия контакта.|
 |title|Строка|Звание контакта.|
 |websites |Коллекция [website](website.md)|Веб-сайты, связанные с контактом. |
-|Веддинганниверсари |Дата |Годовщина свадьбы контакта. |
+|веддинганниверсари |Дата |Годовщина свадьбы контакта. |
 |yomiCompanyName|String|Название компании контакта, записанное так, как оно звучит по-японски.|
 |yomiGivenName|String|Имя контакта, записанное так, как оно звучит по-японски.|
 |yomiSurname|String|Фамилия контакта, записанная так, как она звучит по-японски.|
 
 ## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для контакта. Допускается значение null.|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для контакта. Только для чтения. Допускается значение null.|
@@ -153,7 +155,7 @@ ms.locfileid: "36012886"
 
 ## <a name="see-also"></a>См. также
 
-- [Отслеживание изменений данных Microsoft Graph с помощью разностного запроса](/graph/delta-query-overview)
+- [Отслеживание изменений данных Microsoft Graph с помощью запроса изменений](/graph/delta-query-overview)
 - [Получение добавочных изменений сообщений в папке](/graph/delta-query-messages)
 - [Добавление пользовательских данных в ресурсы с помощью расширений](/graph/extensibility-overview)
 - [Добавление пользовательских данных в ресурсы user с помощью открытых расширений](/graph/extensibility-open-users)

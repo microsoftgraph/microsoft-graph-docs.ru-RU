@@ -5,14 +5,16 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0c34c083a4cfee63db724228d9390c7452ca5a92
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: c707a9010103f4226e62782a83891ff880a245e8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870948"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508263"
 ---
 # <a name="applicationtemplate-resource-type"></a>Тип ресурса Аппликатионтемплате
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -38,10 +40,10 @@ ms.locfileid: "40870948"
 |id|Строка| Уникальный идентификатор приложения. Только для чтения.|
 |logoUrl|String|URL-адрес для получения логотипа для этого приложения.|
 |publisher|String|Имя издателя для этого приложения.|
-|суппортедпровисионингтипес|Коллекция строк|Список режимов подготовки, поддерживаемых этим приложением. Единственное допустимое значение: `sync`.|
-|суппортедсинглесигнонмодес|Коллекция строк|Список режимов единого входа, поддерживаемых этим приложением. `password`Поддерживаемые значения: `saml`, `external`, и. `oidc`|
+|суппортедпровисионингтипес|Коллекция String|Список режимов подготовки, поддерживаемых этим приложением. Единственное допустимое значение: `sync`.|
+|суппортедсинглесигнонмодес|Коллекция String|Список режимов единого входа, поддерживаемых этим приложением. `password`Поддерживаемые значения: `saml`, `external`, и. `oidc`|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 

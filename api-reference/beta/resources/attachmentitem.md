@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: b6570b44bab06c0ab4b8b6788ea585276b43c3cc
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: fa739af74f00142405ecb536346639d3a2ca9f60
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37621640"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508159"
 ---
 # <a name="attachmentitem-resource-type"></a>Тип ресурса Аттачментитем
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,9 +25,9 @@ ms.locfileid: "37621640"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |attachmentType|String| Тип вложения. Возможные значения: `file`, `item`, `reference`. Обязательное.|
-|contentType|String|Характер данных во вложении. Необязательный параметр.|
-|isInline|Boolean|Значение `true`, если вложение является встроенным. В противном случае — значение `false`. Необязательный параметр.|
-|name|String|Отображаемое имя вложения. Это может быть строка с описанием и не обязательно должно быть фактическим именем файла. Обязательно.|
+|contentType|String|Характер данных во вложении. Необязательное свойство.|
+|isInline|Boolean|Значение `true`, если вложение является встроенным. В противном случае — значение `false`. Необязательное свойство.|
+|name|String|Отображаемое имя вложения. Это может быть строка с описанием и не обязательно должно быть фактическим именем файла. Обязательное.|
 |size|Int64|Размер вложения в байтах. Обязательный элемент.|
 
 ## <a name="json-representation"></a>Представление JSON

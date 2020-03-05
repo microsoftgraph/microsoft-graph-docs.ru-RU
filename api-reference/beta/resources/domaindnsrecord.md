@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c8a2c7203de55e4436a4b17f144357ae3c1e8f10
-ms.sourcegitcommit: 2f78ac96a9b0462626a242429055ef824590bd3f
+ms.openlocfilehash: 4eb36c4d57826dab8e2da83eeab2bfaf577008c0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "41476975"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42506297"
 ---
 # <a name="domaindnsrecord-resource-type"></a>Тип ресурса domainDnsRecord
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +27,7 @@ ms.locfileid: "41476975"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|String| Уникальный идентификатор, назначенный этой сущности. Не допускает значения NULL и только для чтения.|
-|Переключатель|Boolean| Если задано значение false, эта запись должна быть настроена клиентом на узле DNS для правильной работы Microsoft Online Services с доменом. |
+|Переключатель|Логический| Если задано значение false, эта запись должна быть настроена клиентом на узле DNS для правильной работы Microsoft Online Services с доменом. |
 |label|String| Значение, используемое при настройке имени DNS-записи на узле DNS. |
 |recordType|String| Указывает, какой тип записи DNS представляет эта сущность.</br></br>Может принимать одно из следующих значений: *CNAME*, *MX*, *SRV*, *txt* .</br></br>Key |
 |суппортедсервице|String| Служба или компонент Microsoft Online, зависящие от этой записи DNS.</br></br>Может принимать одно из следующих значений: **null**, *Email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*|

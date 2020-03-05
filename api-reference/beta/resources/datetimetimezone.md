@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 6c1bae369b71744e69753b9e7b38e5b193db00a7
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 9ffbc319700fd871bd3f27af9eaaaf85cdaf1ffa
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870339"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507298"
 ---
 # <a name="datetimetimezone-resource-type"></a>Тип ресурса dateTimeTimeZone
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4ba3bd679d01d31aec779071a766ab804761e614
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 2a94f517fe9f5da207febf9e776643a7c17c18d2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939168"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508403"
 ---
 # <a name="addwatermarkaction-resource-type"></a>Тип ресурса Аддватермаркактион
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,12 +24,12 @@ ms.locfileid: "37939168"
 
 | Свойство      | Тип   | Описание                                                      |
 | :------------ | :----- | :--------------------------------------------------------------- |
-| фонтколор     | Строка | Цвет шрифта, который будет использоваться для водяного знака.                      |
-| fontName      | Строка | Имя шрифта, который будет использоваться для водяного знака.                       |
+| фонтколор     | String | Цвет шрифта, который будет использоваться для водяного знака.                      |
+| fontName      | String | Имя шрифта, который будет использоваться для водяного знака.                       |
 | fontSize      | Int32  | Размер шрифта, используемый для водяного знака.                              |
 | макет        | String | Возможные значения: `horizontal`, `diagonal`.                   |
-| текст          | Строка | Содержимое водяного знака.                            |
-| уиелементнаме | Строка | Имя элемента пользовательского интерфейса, в котором следует поместить водяной знак. |
+| текст          | String | Содержимое водяного знака.                            |
+| уиелементнаме | String | Имя элемента пользовательского интерфейса, в котором следует поместить водяной знак. |
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -5,31 +5,33 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: f16eda3f28556a18c47c68d532ace4244edfad19
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9363bd711900cc6211e995c112581d3a91e08a04
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35963754"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518989"
 ---
 # <a name="yammergroupsactivitydetail-resource-type"></a>Тип ресурса Яммерграупсактивитидетаил
+
+Пространство имен: Microsoft. Graph
 
 ## <a name="properties"></a>Свойства
 
 | Свойство           | Тип    |
 | :----------------- | :------ |
-| Репортрефрешдате  | Дата    |
-| Граупдисплайнаме   | String  |
-| isDeleted          | Boolean |
-| ОвнерпринЦипалнаме | String  |
-| Ластактивитидате   | Дата    |
+| репортрефрешдате  | Дата    |
+| граупдисплайнаме   | String  |
+| isDeleted          | Логический |
+| овнерпринЦипалнаме | String  |
+| ластактивитидате   | Дата    |
 | groupType          | String  |
-| office365Connected | Boolean |
-| Мемберкаунт        | Int64   |
-| Постедкаунт        | Int64   |
-| Реадкаунт          | Int64   |
-| Ликедкаунт         | Int64   |
-| Репортпериод       | String  |
+| office365Connected | Логический |
+| мемберкаунт        | Int64   |
+| постедкаунт        | Int64   |
+| реадкаунт          | Int64   |
+| ликедкаунт         | Int64   |
+| репортпериод       | String  |
 
 ## <a name="json-representation"></a>Представление JSON
 

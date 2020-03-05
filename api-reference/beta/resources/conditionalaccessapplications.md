@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e163d8f958a400c9c478b0aca865bdfa077c8d60
-ms.sourcegitcommit: 3ee6a3a949be7f0a9028bde90092a10a42e0f1fc
+ms.openlocfilehash: 4e66618a8dbf6d5d29ca3b5c08a9b7bd10e05ded
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "37638591"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507571"
 ---
 # <a name="conditionalaccessapplications-resource-type"></a>Тип ресурса Кондитионалакцессаппликатионс
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,9 +24,9 @@ ms.locfileid: "37638591"
 
 | Свойство | Тип | Описание |
 |:-------- |:---- |:----------- |
-| инклудеаппликатионс | Коллекция строк | Список идентификаторов приложений, к которым применяется политика, если явно не исключено (в Ексклудеаппликатионс). Также можно задать значение `All`. |
-| ексклудеаппликатионс | Коллекция строк | Список идентификаторов приложений, явно исключенных из политики. |
-| инклудеусерактионс | Коллекция строк | Включаемые действия пользователя (например, `urn:user:registersecurityinfo`); |
+| инклудеаппликатионс | Коллекция String | Список идентификаторов приложений, к которым применяется политика, если явно не исключено (в Ексклудеаппликатионс). Также можно задать значение `All`. |
+| ексклудеаппликатионс | Коллекция String | Список идентификаторов приложений, явно исключенных из политики. |
+| инклудеусерактионс | Коллекция String | Включаемые действия пользователя (например, `urn:user:registersecurityinfo`); |
 
 ## <a name="relationships"></a>Связи
 

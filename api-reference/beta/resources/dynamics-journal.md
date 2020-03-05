@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 7cfc723a4370c2b30440dcd4e33b50ed066ac89b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 041de72a3372fd80063b96ba73d10272247c4fdb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006594"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42503749"
 ---
 # <a name="journal-resource-type"></a>Тип ресурса "журнал"
+
+Пространство имен: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Представляет журнал в Dynamics 365 Business Central.
 
 ## <a name="methods"></a>Методы
@@ -24,7 +29,7 @@ ms.locfileid: "36006594"
 |[Получение журнала](../api/dynamics-journal-get.md)      |Фин    |Получает журнал.   |
 |[Разноска журнала](../api/dynamics-create-journal.md)  |Фин    |Создает журнал.|
 |[Журнал исправлений](../api/dynamics-journal-update.md) |Фин    |Обновляет журнал.|
-|[Удаление журнала](../api/dynamics-journal-delete.md)|none       |Удаляет журнал.|
+|[Удаление журнала](../api/dynamics-journal-delete.md)|нет       |Удаляет журнал.|
 
 ## <a name="properties"></a>Свойства
 | Свойство           | Тип                  |Описание                                           |
@@ -32,7 +37,7 @@ ms.locfileid: "36006594"
 |id                  |GUID                   |Уникальный идентификатор журнала. Не редактируемые.           |
 |code                |Строка, максимальный размер 10| Код журнала.                             |
 |displayName         |Строка, максимальный размер 50| Отображаемое имя журнала.                     |
-|lastModifiedDateTime|отличным               |Дата и время последнего изменения, внесенные в журнал. Только для чтения.|
+|lastModifiedDateTime|datetime               |Дата и время последнего изменения, внесенные в журнал. Только для чтения.|
 
 ## <a name="bound-actions"></a>Связанные действия
 Тип ресурса журнал предоставляет связанное действие `post` , которое отправляет соответствующий раздел общего журнала.

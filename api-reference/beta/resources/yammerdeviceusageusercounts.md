@@ -5,28 +5,30 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 6832d4c1829c6fd7ce679fe12511b694cc999b95
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ca8a1eaee94f7f125e2d2eb039561286737d58c6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35963782"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519010"
 ---
 # <a name="yammerdeviceusageusercounts-resource-type"></a>Тип ресурса Яммердевицеусажеусеркаунтс
+
+Пространство имен: Microsoft. Graph
 
 ## <a name="properties"></a>Свойства
 
 | Свойство          | Тип   |
 | :---------------- | :----- |
-| Репортрефрешдате | Дата   |
+| репортрефрешдате | Дата   |
 | web               | Int32  |
 | windowsPhone      | Int32  |
-| Андроидфоне      | Int32  |
+| андроидфоне      | Int32  |
 | iPhone            | Int32  |
 | iPad              | Int32  |
 | остальные             | Int32  |
 | reportDate        | Дата   |
-| Репортпериод      | String |
+| репортпериод      | String |
 
 ## <a name="json-representation"></a>Представление JSON
 

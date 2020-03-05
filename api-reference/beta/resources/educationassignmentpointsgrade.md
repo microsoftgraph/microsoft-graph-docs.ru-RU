@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 5476d84e156ae0294fc3502d6de6d808644574c7
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: c2ef014c3e9e2954dba5fb759fcf3f86b3681b68
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36173078"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502510"
 ---
 # <a name="educationassignmentpointsgrade-resource-type"></a>Тип ресурса Едукатионассигнментпоинтсграде
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

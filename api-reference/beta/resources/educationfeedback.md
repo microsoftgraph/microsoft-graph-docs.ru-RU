@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 7300c5f2d46a3a60a104288d8ee9559e6cf5fd2c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: aac921b1e9f70bc22db2b91833a6b6d348a935db
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006418"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502146"
 ---
 # <a name="educationfeedback-resource-type"></a>Тип ресурса Едукатионфидбакк
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,8 +24,8 @@ ms.locfileid: "36006418"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Фидбаккби|[identitySet](identityset.md)|Пользователь, создавший отзыв.|
-|Фидбаккдатетиме|DateTimeOffset|Момент времени, когда была выдана обратная связь. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601, причем всегда используется время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|фидбаккби|[identitySet](identityset.md)|Пользователь, создавший отзыв.|
+|фидбаккдатетиме|DateTimeOffset|Момент времени, когда была выдана обратная связь. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |текст|[itemBody](itembody.md)|Замечания.|
 
 ## <a name="json-representation"></a>Представление JSON

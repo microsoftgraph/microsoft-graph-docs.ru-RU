@@ -5,14 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 9467da6f5b088e9b1fadd3797a8b10f4b6e820db
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3729078eb803cea09a998aee819904876e88c6c2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974425"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508347"
 ---
 # <a name="alerthistorystate-resource-type"></a>Тип ресурса Алерсистористате
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +29,7 @@ ms.locfileid: "35974425"
 |comments|Коллекция String|Комментарий, введенный пользователем, который выполнил вход.|
 |feedback|String| Обратная связь аналитика с оповещением в этом обновлении. Возможные значения: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
 |status|Строка| Значение состояния оповещения (при обновлении). Возможные значения: `unknown`, `newAlert`, `inProgress`, `resolved`, `dismissed`.|
-|Упдатеддатетиме|DateTimeOffset| Дата и время обновления оповещения. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601, причем всегда используется время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|упдатеддатетиме|DateTimeOffset| Дата и время обновления оповещения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |user|String| UPN пользователя, выполнившего вход, который обновил оповещение (берется из маркера носителя — если в режиме пользователя или делегированной проверки подлинности). |
 
 ## <a name="json-representation"></a>Представление JSON

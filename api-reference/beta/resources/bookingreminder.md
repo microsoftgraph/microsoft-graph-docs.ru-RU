@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: a87f504824136fc1f3e3639361e22f78c6719dba
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 685f4136b5b16c09d8fa53c385d75312a9337870
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974138"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507917"
 ---
 # <a name="bookingreminder-resource-type"></a>Тип ресурса Букингреминдер
+
+Пространство имен: Microsoft. Graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
@@ -23,7 +25,7 @@ ms.locfileid: "35974138"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |message|String|Сообщение в памятке.|
-|корреспондирующей|Duration (Длительность)|Количество времени до начала встречи, в которое будет отправлено напоминание. Он отмечен в формате [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
+|корреспондирующей|Длительность|Количество времени до начала встречи, в которое будет отправлено напоминание. Он отмечен в формате [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
 |recipients|String| Лица, шауолд получать напоминание. Возможные значения: `allAttendees`, `staff`, `customer`.|
 
 ## <a name="json-representation"></a>Представление JSON

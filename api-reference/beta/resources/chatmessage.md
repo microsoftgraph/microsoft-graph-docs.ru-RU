@@ -5,14 +5,16 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: 895425cd7c5b83661fb55be53cd17cefb0a73103
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 5443f88005f46a07353d6d24ed07bea11df7b30b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844241"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507721"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,10 +29,10 @@ ms.locfileid: "39844241"
 |[Получение chatMessages в разностном канале](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Получение добавочных сообщений чата в канале. |
 |[Создание подписки для сообщений о новых каналах](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Прослушивать новые и измененные сообщения каналов и реакции на них. |
 |[Получение chatMessage Channel](../api/channel-get-message.md) | [chatMessage](chatmessage.md) | Получение одного из каналов сообщения с одним корневым сеансом.|
+|[Создание объекта chatMessage в канале](../api/channel-post-messages.md) | [chatMessage](chatmessage.md)| Создайте новое сообщение разговора верхнего уровня в канале.|
 |**Ответы на сообщения канала**| | |
 |[Перечисление ответов на chatMessage](../api/channel-list-messagereplies.md) | Коллекция [chatMessage](chatmessage.md)| Список всех ответов на сообщение чата в канале.|
 |[Получение ответа на chatMessage](../api/channel-get-messagereply.md) | [chatMessage](chatmessage.md)| Получение одного ответа на сообщение чата в канале.|
-|[Создание объекта chatMessage в канале](../api/channel-post-messages.md) | [chatMessage](chatmessage.md)| Создайте новое сообщение разговора верхнего уровня в канале.|
 |[Ответ на chatMessage в канале](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| Ответ на существующее сообщение чата в канале.|
 |**1:1 и сообщения группового чата**| | |
 |[Создание chatMessage в чате](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| Отправка сообщения чата в существующей беседе 1:1 или группе чата.|

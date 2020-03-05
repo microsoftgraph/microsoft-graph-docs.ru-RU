@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e248e47cf94e2c26e80b505cbaead450e03561d4
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: 23227bd4f363748bade73999a4004747d691a364
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331442"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508235"
 ---
 # <a name="approvalsettings-complex-type"></a>сложный тип Аппровалсеттингс
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

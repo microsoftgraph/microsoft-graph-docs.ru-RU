@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7147378e308faac7ca1fea931a465e1ea54f22ef
-ms.sourcegitcommit: f51ba08d604d93f5f6af9ee8979cbf76baa285ce
+ms.openlocfilehash: 2b52b9dbd7b2b76df34ab6c55a46b69718d4a0e2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42108450"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508564"
 ---
 # <a name="accesspackageassignment-resource-type"></a>Тип ресурса Акцесспаккажеассигнмент
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,7 +39,7 @@ ms.locfileid: "42108450"
 |каталогид|String|Идентификатор каталога, содержащего пакет Access. Только для чтения.|
 |експиреддатетиме|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |id|String| Только для чтения.|
-|Расширенная|Boolean|Указывает, является ли назначение пакета доступа расширенным. Только для чтения.|
+|Расширенная|Логический|Указывает, является ли назначение пакета доступа расширенным. Только для чтения.|
 |targetId|String| ИДЕНТИФИКАТОР субъекта с назначением. Только для чтения.|
 
 ## <a name="relationships"></a>Отношения

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 72ab3435ed30602bbd9b2fadf9a6f4d0879e9198
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 82bd2a49b95bfb8e880869c753556e9cde868236
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972607"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42501299"
 ---
 # <a name="educationpowerpointresource-resource-type"></a>Тип ресурса Едукатионповерпоинтресаурце
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: e63fa37dacea7fee6d4378a2a6040a5cf71f3790
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 67baa3f5a57e968b53ae3f51a6c49b3743be25a6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37553938"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42500949"
 ---
 # <a name="educationschool-resource-type"></a>Тип ресурса educationSchool
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ ms.locfileid: "37553938"
 
 | Метод                                                                     | Возвращаемый тип                                      | Описание                                                                                 |
 | :------------------------------------------------------------------------- | :----------------------------------------------- | :------------------------------------------------------------------------------------------ |
-| [Получение](../api/educationschool-get.md)                                       | [educationSchool](educationschool.md)            | Считывание свойств и отношений объекта **educationSchool**.                         |
+| [получение](../api/educationschool-get.md);                                       | [educationSchool](educationschool.md)            | Считывание свойств и отношений объекта **educationSchool**.                         |
 | [Добавление класса](../api/educationschool-post-classes.md)                        | [educationClass](educationclass.md)              | Добавление нового объекта **educationClass** в учебное заведение через публикацию в свойстве навигации classes.  |
 | [Перечисление классов](../api/educationschool-list-classes.md)                     | Коллекция [educationClass](educationclass.md)   | Получение коллекции объектов **educationClass**.                                               |
 | [Удаление класса](../api/educationschool-delete-classes.md)                   | [educationClass](educationclass.md)              | Удаление **educationClass** из учебного заведения через свойство навигации classes.       |
@@ -33,7 +35,7 @@ ms.locfileid: "37553938"
 | [Удаление пользователя](../api/educationschool-delete-users.md)                      | [educationUser](educationuser.md)                | Удаление **educationUser** из учебного заведения через свойство навигации **users**.      |
 | [Получение administrativeUnit](../api/educationschool-get-administrativeunit.md) | [administrativeUnit](administrativeunit.md)      | Получение **administrativeUnit** , соответствующего этому **educationSchool**.                |
 | [Обновление](../api/educationschool-update.md)                                 | [educationSchool](educationschool.md)            | Обновление объекта **educationSchool**.                                                       |
-| [Удаление](../api/educationschool-delete.md)                                 | Нет                                             | Удаление объекта **educationSchool**.                                                       |
+| [удаление](../api/educationschool-delete.md);                                 | Нет                                             | Удаление объекта **educationSchool**.                                                       |
 | [Delta](../api/educationschool-delta.md)                                   | Коллекция [educationSchool](educationschool.md) | Получение добавочных изменений для **едукатионсчулс**                                            |
 
 ## <a name="properties"></a>Свойства

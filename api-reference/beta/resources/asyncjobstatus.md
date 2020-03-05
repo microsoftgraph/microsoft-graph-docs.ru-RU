@@ -6,14 +6,16 @@ title: AsyncJobStatus
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: e8a745a6ab03728eb879767c6af45a423f151d63
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 81348ce59e060dadf4201222fca43bf96241dbc3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974306"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508173"
 ---
 # <a name="asyncjobstatus-resource"></a>Ресурс AsyncJobStatus
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

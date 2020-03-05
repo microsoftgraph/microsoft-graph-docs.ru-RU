@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f2a3b55e3fab41f0fe08fcf844a6d143b12d7146
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: 20f4477998547d6e98572fd8409f69e811c2198d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331479"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507494"
 ---
 # <a name="connectedorganizationmembers-complex-type"></a>сложный тип Коннектедорганизатионмемберс
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

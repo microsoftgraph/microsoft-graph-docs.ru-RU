@@ -2,18 +2,20 @@
 author: daspek
 description: Ресурс contentType представляет тип контента в SharePoint.
 ms.date: 09/12/2017
-title: ContentType
+title: Контент
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: b7376b431154595f9b3d2de1931918b629e74acb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a051a8bb31cd138d351321255e77b7fb1517fe3e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012865"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507452"
 ---
 # <a name="contenttype-resource-type"></a>Тип ресурса contentType
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,9 +52,9 @@ ms.locfileid: "36012865"
 | Имя свойства     | Тип                 | Описание
 |:------------------|:---------------------|:----------------------------------
 | **description**   | строка               | Текст с описанием элемента.
-| **group**         | string               | Имя группы, которой принадлежит этот тип контента. Позволяет упорядочить связанные типы контента.
+| **group**         | строка               | Имя группы, которой принадлежит этот тип контента. Позволяет упорядочить связанные типы контента.
 | **hidden**        | логический              | Указывает, является ли данный тип контента скрытым в меню "Создать" в списке.
-| **id**            | string               | Уникальный идентификатор типа контента.
+| **id**            | строка               | Уникальный идентификатор типа контента.
 | **inheritedFrom** | [itemReference][]    | Если этот тип контента унаследован от другой области (например, сайта), он будет содержать ссылку на элемент, в котором определен тип контента.
 | **name**          | string               | Имя типа контента.
 | **order**         | [contentTypeOrder][] | Указывает порядок, в котором тип контента отображается в пользовательском интерфейсе выбора.

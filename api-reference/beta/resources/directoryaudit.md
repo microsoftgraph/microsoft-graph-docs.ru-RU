@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fbd3789ca6a33a16f214d5d961986ef4e1b6c016
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: bffdf7e806d3f78cc07f4d0d04dfea84987dfb27
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870332"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507046"
 ---
 # <a name="directoryaudit-resource-type"></a>Тип ресурса directoryAudit
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,7 +36,7 @@ ms.locfileid: "40870332"
 |additionalDetails|Коллекция [keyValue](keyvalue.md)|Указывает дополнительные сведения о действии.|
 |category|String|Указывает, для какой категории ресурса предназначено действие. (Пример: управление пользователями, управление группами и т. д.)|
 |correlationId|GUID|Указывает уникальный идентификатор, помогающий соотносить действия, происходящие в различных службах. Можно использовать для отслеживания журналов в службах.|
-|id|String| Указывает уникальный идентификатор для действия. Это идентификатор GUID.|
+|id|Строка| Указывает уникальный идентификатор для действия. Это идентификатор GUID.|
 |initiatedBy|[auditActivityInitiator](auditactivityinitiator.md)|Указывает сведения о пользователе или приложении, запустившем действие.|
 |loggedByService|String|Указывает, в какой службе запущено действие (например: самостоятельное управление паролями, основной каталог, B2C, приглашенные пользователи, Microsoft Identity Manager, Privileged Identity Management).|
 |result|string| Указывает результат действия. Возможные значения: `success`, `failure`, `timeout`, `unknownFutureValue`.||

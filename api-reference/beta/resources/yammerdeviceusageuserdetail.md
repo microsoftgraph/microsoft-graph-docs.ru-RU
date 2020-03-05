@@ -5,32 +5,34 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 083ace4b10b24e8e5de5d287ddf418d93658c879
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 982ebfc0de39bd956a4223e7bb0665ac73c42402
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006984"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519003"
 ---
 # <a name="yammerdeviceusageuserdetail-resource-type"></a>Тип ресурса Яммердевицеусажеусердетаил
+
+Пространство имен: Microsoft. Graph
 
 ## <a name="properties"></a>Свойства
 
 | Свойство          | Тип    |
 | :---------------- | :------ |
-| Репортрефрешдате | Дата    |
+| репортрефрешдате | Дата    |
 | userPrincipalName | String  |
 | displayName       | Строка  |
 | userState         | String  |
-| Статечанжедате   | Дата    |
-| Ластактивитидате  | Дата    |
-| Уседвеб           | Boolean |
-| Уседвиндовсфоне  | Boolean |
-| Уседандроидфоне  | Boolean |
-| Уседифоне        | Boolean |
-| Уседипад          | Boolean |
-| Уседосерс        | Boolean |
-| Репортпериод      | String  |
+| статечанжедате   | Дата    |
+| ластактивитидате  | Дата    |
+| уседвеб           | Логический |
+| уседвиндовсфоне  | Логический |
+| уседандроидфоне  | Логический |
+| уседифоне        | Логический |
+| уседипад          | Логический |
+| уседосерс        | Логический |
+| репортпериод      | String  |
 
 ## <a name="json-representation"></a>Представление JSON
 

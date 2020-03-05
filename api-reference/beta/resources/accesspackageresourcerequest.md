@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c109c2c28a9c4c9248adfbad4c94c9c50268f28f
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 74cc7815d4df22c1914f525ed0451b778c7777d1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871938"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508522"
 ---
 # <a name="accesspackageresourcerequest-resource-type"></a>Тип ресурса Акцесспаккажересаурцерекуест
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -38,7 +40,7 @@ ms.locfileid: "40871938"
 |рекуестстатус|String|Только для чтения.|
 |requestType|String|Используйте `AdminAdd` для добавления ресурса, если вызывающий абонент является администратором или владельцем ресурса. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|

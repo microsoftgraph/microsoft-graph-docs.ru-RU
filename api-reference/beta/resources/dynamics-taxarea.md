@@ -7,23 +7,28 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 09c1c51fed961489d824136f28aaa2f5b3859b44
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d2c4f007c23ae32fb79255a0a8f1509589740a70
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972896"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42503434"
 ---
 # <a name="taxareas-resource-type"></a>Тип ресурса Таксареас
+
+Пространство имен: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Представляет тип ресурса "налоговая область" в Dynamics 365 Business Central.
 
 ## <a name="methods"></a>Методы
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение Таксареас](../api/dynamics-taxarea-get.md)|Таксареас|Получает объект налоговой области.|
-|[POST Таксареас](../api/dynamics-create-taxarea.md)|Таксареас|Создает объект налоговой области.|
-|[Исправление Таксареас](../api/dynamics-taxarea-update.md)|Таксареас|Обновляет объект налоговой области.|
-|[Удаление Таксареас](../api/dynamics-taxarea-delete.md)|none|Удаляет объект налоговой области.|
+|[Получение Таксареас](../api/dynamics-taxarea-get.md)|таксареас|Получает объект налоговой области.|
+|[POST Таксареас](../api/dynamics-create-taxarea.md)|таксареас|Создает объект налоговой области.|
+|[Исправление Таксареас](../api/dynamics-taxarea-update.md)|таксареас|Обновляет объект налоговой области.|
+|[Удаление Таксареас](../api/dynamics-taxarea-delete.md)|нет|Удаляет объект налоговой области.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -31,8 +36,8 @@ ms.locfileid: "35972896"
 |id|GUID|Уникальный идентификатор налоговой области. Не редактируемые.|
 |code|Строка, максимальный размер 20| Код налоговой области.|
 |displayName|Строка, максимальный размер 50| Отображаемое имя налоговой области.|
-|Такстипе|string|Тип налога для налоговой области.|
-|lastModifiedDateTime|отличным|Дата и время последнего изменения налоговой области. Только для чтения.|
+|такстипе|строка|Тип налога для налоговой области.|
+|lastModifiedDateTime|datetime|Дата и время последнего изменения налоговой области. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
 

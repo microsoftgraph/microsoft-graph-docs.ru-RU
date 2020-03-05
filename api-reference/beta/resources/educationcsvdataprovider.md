@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: f515744f5206ea132531373e3df317e02dd6cbb4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 207fee7f889c4369862918943371e2d629c8fab9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006404"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502174"
 ---
 # <a name="educationcsvdataprovider-resource-type"></a>Тип ресурса Едукатионксвдатапровидер
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ ms.locfileid: "36006404"
 
 | Свойство | Тип | Описание |
 |:-|:-|:-|
-| **настроек** | [Едукатионсинчронизатионкустомизатионс](educationsynchronizationcustomizations.md) | Необязательные настройки, которые необходимо применить к профилю синхронизации.|
+| **настроек** | [едукатионсинчронизатионкустомизатионс](educationsynchronizationcustomizations.md) | Необязательные настройки, которые необходимо применить к профилю синхронизации.|
 
 ## <a name="json-representation"></a>Представление JSON
 

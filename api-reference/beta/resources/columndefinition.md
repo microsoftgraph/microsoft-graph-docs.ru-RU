@@ -6,14 +6,16 @@ title: ColumnDefinition
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 7f60d33f8fbfe76c9dfd0ca02c98df96ca6ab380
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d36c7460b5ee50a6230cdacc5514e200920e31c4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973302"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507630"
 ---
 # <a name="columndefinition-resource-type"></a>Тип ресурса columnDefinition
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -68,7 +70,7 @@ ms.locfileid: "35973302"
 | **displayName**         | string  | Имя столбца, которое видит пользователь.
 | **enforceUniqueValues** | boolean | Если задано значение true, в соответствующем столбце не может быть нескольких элементов списка с одинаковыми значениями.
 | **hidden**              | boolean | Указывает, отображается ли столбец в пользовательском интерфейсе.
-| **id**                  | string  | Уникальный идентификатор столбца.
+| **id**                  | строка  | Уникальный идентификатор столбца.
 | **indexed**             | boolean | Указывает, можно ли использовать значения столбцов для сортировки и поиска.
 | **name**                | string  | Используемое в API имя столбца из свойства [fields][] объекта [listItem][]. Имя, которое видит пользователь, указывается в свойстве **displayName**.
 | **readOnly**            | логический    | Указывает, можно ли менять значения в столбце.
@@ -79,7 +81,7 @@ ms.locfileid: "35973302"
 | **currency**      | [currencyColumn][]      | В этом столбце хранятся денежные значения.
 | **dateTime**      | [dateTimeColumn][]      | В этом столбце хранятся значения даты и времени.
 | **defaultValue**  | [defaultColumnValue][]  | Значение по умолчанию для этого столбца.
-| **географическое положение**   | [Жеолокатионколумн][]   | В этом столбце хранится географическое положение.
+| **географическое положение**   | [жеолокатионколумн][]   | В этом столбце хранится географическое положение.
 | **lookup**        | [lookupColumn][]        | Данные в этом столбце берутся из другого источника на сайте.
 | **number**        | [numberColumn][]        | В этом столбце хранятся числовые значения.
 | **personOrGroup** | [personOrGroupColumn][] | В этом столбце хранятся значения людей или групп.
@@ -101,7 +103,7 @@ ms.locfileid: "35973302"
 [currencyColumn]: currencycolumn.md
 [dateTimeColumn]: datetimecolumn.md
 [defaultColumnValue]: defaultcolumnvalue.md
-[Жеолокатионколумн]: geolocationcolumn.md
+[жеолокатионколумн]: geolocationcolumn.md
 [lookupColumn]: lookupcolumn.md
 [numberColumn]: numbercolumn.md
 [personOrGroupColumn]: personorgroupcolumn.md

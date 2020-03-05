@@ -5,14 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: a44234c2ec82b0b28df6c9bbf57b8d8069f129f8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 55a8b414022a338628264fe09e58559a52c3fbcd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973951"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507396"
 ---
 # <a name="conversationthread-resource-type"></a>Тип ресурса conversationThread
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +30,7 @@ conversationThread — это коллекция экземпляров [post](p
 |[Создание цепочки](../api/group-post-threads.md) | [conversationThread](conversationthread.md) |Создание беседы путем создания цепочки. В группе создаются беседа, цепочка беседы и запись.|
 |[Получение conversationThread](../api/conversationthread-get.md) | [conversationThread](conversationthread.md) |Получение определенной цепочки, принадлежащей группе. |
 |[Обновление](../api/conversationthread-update.md) | [conversationThread](conversationthread.md)  |Обновление объекта conversationThread. |
-|[Удаление](../api/conversationthread-delete.md) | Нет. |Удаление объекта conversationThread. |
+|[удаление](../api/conversationthread-delete.md); | Нет. |Удаление объекта conversationThread. |
 |[reply](../api/conversationthread-reply.md)|Нет|Создание ответа для этой цепочки с помощью создания сущности Post.|
 |[Список сущностей Post](../api/conversationthread-list-posts.md) |Коллекция [post](post.md)| Получение записей для указанной цепочки. |
 
@@ -40,13 +42,13 @@ conversationThread — это коллекция экземпляров [post](p
 |ccRecipients|Коллекция [recipient](recipient.md)|Получатели в поле "Копия" для цепочки.|
 |topic|String|Тема беседы. Это свойство можно задать при создании беседы, но его невозможно обновить.||
 |hasAttachments|Boolean|Указывает, содержит ли какая-либо запись в этой цепочке хотя бы одно вложение.|
-|Ластделивереддатетиме|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|Уникуесендерс|Коллекция String|Все пользователи, которые отправили сообщение в эту цепочку.|
+|ластделивереддатетиме|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|уникуесендерс|Коллекция String|Все пользователи, которые отправили сообщение в эту цепочку.|
 |preview|String|Краткая сводка из текста последней записи в этой беседе.|
 |isLocked|Boolean|Указывает, заблокирована ли цепочка.|
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |posts|Коллекция [post](post.md)| Только для чтения. Допускается значение null.|
 

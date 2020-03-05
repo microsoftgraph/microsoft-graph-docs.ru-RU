@@ -7,23 +7,28 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 378d8c1d773eacb3339eba35d5d60cc7ef5f2400
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3c8f244b9c3601aaeb315b09bb51d21275a63f6f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006607"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42503259"
 ---
 # <a name="taxgroups-resource-type"></a>Тип ресурса Таксграупс
+
+Пространство имен: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Представляет тип ресурса Таксграупс в Dynamics 365 Business Central.
 
 ## <a name="methods"></a>Методы
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение Таксграупс](../api/dynamics-taxgroups-get.md)|Таксграупс|Получает объект налоговой группы.|
-|[POST Таксграупс](../api/dynamics-create-taxgroups.md)|Таксграупс|Создает объект налоговой группы.|
-|[Исправление Таксграупс](../api/dynamics-taxgroups-update.md)|Таксграупс|Обновляет объект налоговой группы.|
-|[Удаление Таксграупс](../api/dynamics-taxgroups-delete.md)|none|Удаляет объект налоговой группы.|
+|[Получение Таксграупс](../api/dynamics-taxgroups-get.md)|таксграупс|Получает объект налоговой группы.|
+|[POST Таксграупс](../api/dynamics-create-taxgroups.md)|таксграупс|Создает объект налоговой группы.|
+|[Исправление Таксграупс](../api/dynamics-taxgroups-update.md)|таксграупс|Обновляет объект налоговой группы.|
+|[Удаление Таксграупс](../api/dynamics-taxgroups-delete.md)|нет|Удаляет объект налоговой группы.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -31,11 +36,11 @@ ms.locfileid: "36006607"
 |id|GUID|Уникальный идентификатор Таксграуп. Только для чтения.|
 |code|string|Указывает налоговую группу.|
 |displayName|string|Задает отображаемое имя налоговой группы.|
-|Такстипе|string|Указывает тип налога для группы.|
-|lastModifiedDateTime|отличным|Дата и время последнего изменения налоговой группы. Только для чтения.|  
+|такстипе|строка|Указывает тип налога для группы.|
+|lastModifiedDateTime|datetime|Дата и время последнего изменения налоговой группы. Только для чтения.|  
 
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

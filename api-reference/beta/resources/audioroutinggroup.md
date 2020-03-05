@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: cb96e83f6c80a3b3c50b37612731272ca329e3cc
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 44049ebaa431ac1c11e6581c82eab76a7406fb94
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913753"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508110"
 ---
 # <a name="audioroutinggroup-resource-type"></a>Тип ресурса Аудиораутингграуп
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,7 +36,7 @@ ms.locfileid: "40913753"
 | :----------   | :---------------- | :--------------------------------------------------------------------|
 | id            | string            | Только для чтения.                                                           |
 | приемники     | Коллекция (string) | Список идентификаторов участников.                                   |
-| раутингмоде   | string            | Режим группы маршрутизации.  Возможные значения: `oneToOne`, `multicast`.   |
+| раутингмоде   | строка            | Режим группы маршрутизации.  Возможные значения: `oneToOne`, `multicast`.   |
 | sources       | Коллекция (string) | Список идентификаторов участников исходного участника.                                      |
 
 > **Примечание:** Режим маршрутизации определяет ограничения для источников и получателей. Поддерживаются только следующие группы маршрутизации.
@@ -43,7 +45,7 @@ ms.locfileid: "40913753"
 
 > **Примечание:** Если вы создаете множество групп маршрутизации звука (например, Bot для каждого участника), пересылается только звук главных 4 главных динамиков. Это означает, что даже если пользователь настроил группу маршрутизации аудио, если динамики не хватает громкости в основном микшере, то он/она не может быть слышна с помощью Bot, даже если для этого динамика и для этого динамика достаточно частной группы звука.
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

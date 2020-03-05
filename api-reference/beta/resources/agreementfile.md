@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: a6651eafb57d75d6edb6342bd3f382008336332c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ea78059ecf29f1cadb9634492ced726775f5614d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974542"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508375"
 ---
 # <a name="agreementfile-resource-type"></a>Тип ресурса Агриментфиле
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,7 +33,7 @@ ms.locfileid: "35974542"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|fileData|[Агриментфиледата](agreementfiledata.md)|Данные, представляющие условия использования PDF-документа. Только для чтения.|
+|fileData|[агриментфиледата](agreementfiledata.md)|Данные, представляющие условия использования PDF-документа. Только для чтения.|
 |fileName|String|Имя файла соглашения (например, Тау. PDF). Только для чтения.|
 |id|String|Только для чтения.|
 |isDefault|Boolean|Указывает, является ли этот файл соглашением по умолчанию, если ни одна из культур не соответствует параметрам клиента. Если ни один из файлов не помечен как используемый по умолчанию, первый из них будет считаться используемым по умолчанию. Только для чтения.|

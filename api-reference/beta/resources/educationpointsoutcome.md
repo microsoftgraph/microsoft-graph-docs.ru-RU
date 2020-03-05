@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 12e288e49fffd3cf385111878483408b5c6610c1
-ms.sourcegitcommit: 129e58f83fc566f9d9f36e26b0c0b8cdf81d27d9
+ms.openlocfilehash: 51f57683e06f90e877b4cd72e62d0898d0ef8013
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "36173246"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42501432"
 ---
 # <a name="educationpointsoutcome-resource-type"></a>Тип ресурса Едукатионпоинтсауткоме
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,16 +24,16 @@ ms.locfileid: "36173246"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Обновление Едукатионауткоме](../api/educationoutcome-update.md) | [Едукатионауткоме](educationoutcome.md) | Обновление объекта Едукатионауткоме. |
+| [Обновление Едукатионауткоме](../api/educationoutcome-update.md) | [едукатионауткоме](educationoutcome.md) | Обновление объекта Едукатионауткоме. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|points|[Едукатионассигнментпоинтсграде](educationassignmentpointsgrade.md)|Числовое значение, которое преподаватель приделил студенту для этого назначения.|
-|Публишедпоинтс|[Едукатионассигнментпоинтсграде](educationassignmentpointsgrade.md)|Копия свойства Points, которое устанавливается при отпадении уровня на учащийся.|
+|points|[едукатионассигнментпоинтсграде](educationassignmentpointsgrade.md)|Числовое значение, которое преподаватель приделил студенту для этого назначения.|
+|публишедпоинтс|[едукатионассигнментпоинтсграде](educationassignmentpointsgrade.md)|Копия свойства Points, которое устанавливается при отпадении уровня на учащийся.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Нет
 

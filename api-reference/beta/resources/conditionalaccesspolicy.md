@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d8291bcd418af5549a8abb7dd30deebcdde9ed03
-ms.sourcegitcommit: fce7ce328f0c88c6310af9cc85d12bcebc88a6c3
+ms.openlocfilehash: baa5daded03e9ddc5dedbb97f86d15d690240d09
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "39636808"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507529"
 ---
 # <a name="conditionalaccesspolicy-resource-type"></a>Тип ресурса Кондитионалакцессполици
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,7 +34,7 @@ ms.locfileid: "39636808"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|conditions|[conditionalAccessConditionSet](conditionalaccessconditionset.md)| Задает правила, которые должны выполняться для применения политики. Обязательный. |
+|conditions|[conditionalAccessConditionSet](conditionalaccessconditionset.md)| Задает правила, которые должны выполняться для применения политики. Обязательный элемент. |
 |createdDateTime|DateTimeOffset| Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Статического. |
 |description|String| Не используется. |
 |displayName|Строка| Задает отображаемое имя для объекта Кондитионалакцессполици. |
@@ -40,9 +42,9 @@ ms.locfileid: "39636808"
 |id|String| Задает идентификатор объекта Кондитионалакцессполици. Только для чтения.|
 |modifiedDateTime| DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Статического. |
 |сессионконтролс|[conditionalAccessSessionControls](conditionalaccesssessioncontrols.md)| Задает элементы управления сеансом, которые применяются после входа. |
-|состояние|string| Задает состояние объекта Кондитионалакцессполици. Возможные значения: `enabled`, `disabled`, `enabledForReportingButNotEnforced`. Обязательное. |
+|состояние|строка| Задает состояние объекта Кондитионалакцессполици. Возможные значения: `enabled`, `disabled`, `enabledForReportingButNotEnforced`. Обязательное. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 

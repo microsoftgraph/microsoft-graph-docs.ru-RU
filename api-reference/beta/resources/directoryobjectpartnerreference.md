@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 54a6d742e31dba6861bed55d26179e1936fa8c5d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3158e081586cbcb822d385cbb357b017ac7239ba
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973838"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507025"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>Тип ресурса Директорйобжектпартнерреференце
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ ms.locfileid: "35973838"
 |:---------------|:--------|:----------|
 |description|String| Описание возвращаемого объекта. Только для чтения. |
 |displayName|Строка| Имя возвращаемого объекта каталога, например Group или Application. Только для чтения. |
-|Екстерналпартнертенантид|GUID| Идентификатор клиента для партнерского клиента. Только для чтения. |
+|екстерналпартнертенантид|GUID| Идентификатор клиента для партнерского клиента. Только для чтения. |
 |id|String| Уникальный идентификатор ресурса. Наследуется от [directoryObject](directoryobject.md). Только для чтения. |
 |objectType|String| Тип упоминаемого объекта в партнерской клиенте. Только для чтения. |
 

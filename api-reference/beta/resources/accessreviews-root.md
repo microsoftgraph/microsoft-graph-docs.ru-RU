@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: d19879c2768a7f3647fb18631e278afdc0989b36
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 536293390da403c4c8375d551bda8643f3ffb9dd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870430"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508466"
 ---
 # <a name="azure-ad-access-reviews"></a>Проверки доступа Azure AD
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,7 +34,7 @@ ms.locfileid: "40870430"
 Прежде чем приступать к созданию обзора, программы или элемента управления программы, администратор должен заранее подготовиться к работе, чтобы подготовить ресурсы [програмконтролтипе](programcontroltype.md) и [бусинессфловтемплате](businessflowtemplate.md) . Организация может выполнять проверку доступа Azure AD или, в случае рецензирования роли Azure AD или ролей подписки Azure, системы PIM Azure AD.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Методы
 
 В следующей таблице перечислены методы, которые можно использовать для взаимодействия с ресурсами, связанными с проверкой доступа.
 

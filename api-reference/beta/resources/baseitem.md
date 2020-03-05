@@ -6,14 +6,16 @@ title: baseItem
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 38e697e4a991871bd592cc891dcd131e845572fe
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5d72147602872478578b39617c77b227a27124b4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013145"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508033"
 ---
 # <a name="baseitem-resource-type"></a>Тип ресурса baseItem
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

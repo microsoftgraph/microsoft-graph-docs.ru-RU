@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType_
-ms.openlocfilehash: d169755679cd60285808c1c93cb31810b1d1939d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ed491c9bce61bdc7f9ae3821360832dd8cbe04e5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013341"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508270"
 ---
 # <a name="applicationsigninsummary-resource-type"></a>Тип ресурса Аппликатионсигнинсуммари
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,18 +24,18 @@ ms.locfileid: "36013341"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Получение Аппликатионсигнинсуммари](../api/applicationsigninsummary-get.md) | [Аппликатионсигнинсуммари](applicationsigninsummary.md) | Чтение свойств и связей объекта **аппликатионсигнинсуммари** . |
+| [Получение Аппликатионсигнинсуммари](../api/applicationsigninsummary-get.md) | [аппликатионсигнинсуммари](applicationsigninsummary.md) | Чтение свойств и связей объекта **аппликатионсигнинсуммари** . |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |appDisplayName|String|Имя приложения, в которое пользователь выполнил вход.|
 |appId|String|  Идентификатор приложения, выполнившего вход пользователя.|
-|Фаиледсигнинкаунт|Int64|Количество неудачных операций входа, выполненных приложением.|
-|Сукцессперцентаже|Int32|Процент успешных входов, выполненных приложением.|
-|Сукцессфулсигнинкаунт|Int64|Количество успешных входов, выполненных приложением.|
+|фаиледсигнинкаунт|Int64|Количество неудачных операций входа, выполненных приложением.|
+|сукцессперцентаже|Int32|Процент успешных входов, выполненных приложением.|
+|сукцессфулсигнинкаунт|Int64|Количество успешных входов, выполненных приложением.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

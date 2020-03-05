@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: d698aa85f38061ce22d63f37ea3deca3635ba219
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 9d45be38338554a1bf5181e4f7a3624b3d928127
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870955"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508389"
 ---
 # <a name="agreement-resource-type"></a>Тип ресурса договора
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +28,7 @@ ms.locfileid: "40870955"
 | [Список соглашений](../api/agreement-list.md) | Коллекция [договоров](agreement.md) | Получение коллекции объектов Agreement. |
 | [Получение соглашения](../api/agreement-get.md) | [Корпоратив](agreement.md) | Чтение свойств и связей объекта Agreement. |
 | [Обновление соглашения](../api/agreement-update.md) | [Корпоратив](agreement.md) | Обновление объекта договора. |
-| [Удаление соглашения](../api/agreement-delete.md) | Нет. | Удаление объекта соглашения. |
+| [Удаление соглашения](../api/agreement-delete.md) | Нет | Удаление объекта соглашения. |
 <!--
 | [Create agreementFile](../api/agreement-post-files.md) | [agreementFile](agreementfile.md) | Create a new agreementFile by posting to the files collection. |
 | [List files](../api/agreement-list-files.md) | [agreementFile](agreementfile.md) collection | Get an agreementFile object collection. |
@@ -39,7 +41,7 @@ ms.locfileid: "40870955"
 |id|String| Только для чтения.|
 |исвиевингбефореакцептанцерекуиред|Логический|Указывает, должно ли пользователь развернуть и просмотреть Соглашение перед принятием.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
 |files|Коллекция [агриментфиле](agreementfile.md)|Только для чтения. Документы PDF, связанные с этим соглашением.|

@@ -5,14 +5,16 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 61c23e32d455dd18af639dad31806d54d9e8bd07
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3fa6952640a1986d0139007ba863275aef2bc6aa
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974028"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507742"
 ---
 # <a name="chat-resource-type"></a>Тип ресурса Chat
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,8 +26,8 @@ ms.locfileid: "35974028"
 |:---------------|:--------|:----------|
 |[Список чатов](../api/chat-list.md) | Коллекция [чата](channel.md) | Получение списка сеансов, в которые входит пользователь.|
 |[Получение чата](../api/chat-get.md) | [отображаются](channel.md) | Чтение свойств и связей чата.|
-|[Список членов чата](../api/conversationmember-list.md) | Коллекция [конверсатионмембер](conversationmember.md) | Получение списка всех пользователей в чате.|
-|[Получение члена чата](../api/conversationmember-get.md) | [конверсатионмембер](conversationmember.md) | Получение одного пользователя в чате.|
+|[Список членов чата](../api/conversationmember-list.md) | Коллекция [conversationmember](conversationmember.md) | Получение списка всех пользователей в чате.|
+|[Получение члена чата](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | Получение одного пользователя в чате.|
 |[Список сообщений в чате](../api/chatmessage-list.md)  | [chatMessage](../resources/chatmessage.md) | Получение сообщений в индивидуальном или групповом чате. |
 |[Получение сообщения в чате](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Получение одного сообщения в чате. |
 
@@ -40,10 +42,10 @@ ms.locfileid: "35974028"
 
 ## <a name="relationships"></a>Отношения
 
-| Отношение | Тип |Описание|
+| Связь | Тип |Описание|
 |:---------------|:--------|:----------|
 | installedApps | [teamsAppInstallation](teamsappinstallation.md) collection | Коллекция всех приложений в чате. Допускается значение null. |
-| members | Коллекция [конверсатионмембер](conversationmember.md) | Коллекция всех людей в чате. Допускается значение null. |
+| members | Коллекция [conversationMember](conversationmember.md) | Коллекция всех людей в чате. Допускается значение null. |
 | messages | Коллекция [chatMessage](chatmessage.md) | Коллекция всех сообщений в чате. Допускается значение NULL. |
 
 ## <a name="json-representation"></a>Представление JSON

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: d3a7f4e49f50ca4cb26e52d767064cc57b255ce4
-ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
+ms.openlocfilehash: 0de9c384c5f48d832180da48c22ed6595ce3922d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "36633708"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502279"
 ---
 # <a name="educationclass-resource-type"></a>Тип ресурса educationClass
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,7 +38,7 @@ ms.locfileid: "36633708"
 | [Создание Едукатионкатегори](../api/educationclass-post-category.md)      | [едукатионкатегори]                            | Создание нового **едукатионкатегори** для этого класса.                                        |
 | [Перечисление категорий](../api/educationclass-list-categories.md)             | Коллекция [едукатионкатегори]                 | Получение списка объектов **едукатионкатегори** , принадлежащих этому классу.                      |
 | [Обновление](../api/educationclass-update.md)                               | [educationClass]                               | Обновление объекта **educationClass**.                                                         |
-| [Удаление](../api/educationclass-delete.md)                               | Нет                                           | Удаление объекта **educationClass**.                                                         |
+| [удаление](../api/educationclass-delete.md);                               | Нет                                           | Удаление объекта **educationClass**.                                                         |
 | [Delta](../api/educationclass-delta.md)                                 | Коллекция [educationClass](educationclass.md) | Получение добавочных изменений для **едукатионклассес**                                          |
 
 ## <a name="properties"></a>Свойства
@@ -44,21 +46,21 @@ ms.locfileid: "36633708"
 | Свойство       | Тип                                  | Описание                                                                             |
 | :------------- | :------------------------------------ | :-------------------------------------------------------------------------------------- |
 | id             | Строка                                | Уникальный идентификатор для курса.                                                        |
-| classCode      | String.                                | Код курса, используемый учебным заведением для идентификации курса.                                    |
+| classCode      | String                                | Код курса, используемый учебным заведением для идентификации курса.                                    |
 | курсе         | [едукатионкаурсе](educationcourse.md) | Сведения о курсе для класса                                                        |
 | createdBy      | [identitySet]                         | Объект, который создал курс.                                                            |
 | description    | String                                | Описание курса.                                                               |
 | displayName    | Строка                                | Название курса.                                                                      |
-| externalId     | String.                                | Идентификатор курса из системы синхронизации.                                                |
+| externalId     | String                                | Идентификатор курса из системы синхронизации.                                                |
 | externalName   | String                                | Название курса в системе синхронизации.                                                |
 | externalSource | string                                | Способ создания этого курса. Возможные значения: `sis`, `manual`, `unknownFutureValue`. |
-| оценка          | string                                | Уровень категории класса.                                                               |
-| mailNickname   | String.                                | Почтовое имя для отправки почты всем участникам, если это возможно.                         |
+| оценка          | строка                                | Уровень категории класса.                                                               |
+| mailNickname   | String                                | Почтовое имя для отправки почты всем участникам, если это возможно.                         |
 | term           | [educationTerm]                       | Термин для класса.                                                                     |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
-| Отношение | Тип                             | Описание                                               |
+| Связь | Тип                             | Описание                                               |
 | :----------- | :------------------------------- | :-------------------------------------------------------- |
 | assignments  | Коллекция [educationAssignment] | Все назначения, связанные с этим классом. Допускается значение null.     |
 | members      | Коллекция [educationUser]       | Все пользователи для этого курса. Допускается значение null.                         |

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: pranoychaudhuri
 ms.prod: reports
 doc_type: conceptualPageType
-ms.openlocfilehash: 2540934b93a1047df5b19c4fe1b477ba30fd798c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7dcfaf2d5cc2d1dbd38cdc4a8a7c5eac71e9539b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972273"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42499808"
 ---
 # <a name="email-activity-reports"></a>Отчеты о работе с электронной почтой
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,6 +26,6 @@ ms.locfileid: "35972273"
 
 | Функция                                 | Возвращаемый тип CSV | Возвращаемый тип JSON                         | Описание                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
-| [Получение сведений о пользователях](../api/reportroot-getemailactivityuserdetail.md) | Поток          | [Емаилактивитюсердетаил](../resources/emailactivityuserdetail.md) | Узнайте, какие действия пользователи выполняли с электронной почтой. |
-| [Получение количества действий](../api/reportroot-getemailactivitycounts.md) | Stream          | [Емаилактивитисуммари](../resources/emailactivitysummary.md) | Позволяет понять динамику работы с электронной почтой (сколько писем было отправлено, прочитано и получено) в организации. |
-| [Получение количества пользователей](../api/reportroot-getemailactivityusercounts.md) | Поток          | [Емаилактивитисуммари](../resources/emailactivitysummary.md) | Позволяет понять, как меняется количество уникальных пользователей, которые отправляют, читают и получают письма. |
+| [Получение сведений о пользователях](../api/reportroot-getemailactivityuserdetail.md) | Stream          | [емаилактивитюсердетаил](../resources/emailactivityuserdetail.md) | Узнайте, какие действия пользователи выполняли с электронной почтой. |
+| [Получение количества действий](../api/reportroot-getemailactivitycounts.md) | Поток          | [емаилактивитисуммари](../resources/emailactivitysummary.md) | Позволяет понять динамику работы с электронной почтой (сколько писем было отправлено, прочитано и получено) в организации. |
+| [Получение количества пользователей](../api/reportroot-getemailactivityusercounts.md) | Stream          | [емаилактивитисуммари](../resources/emailactivitysummary.md) | Позволяет понять, как меняется количество уникальных пользователей, которые отправляют, читают и получают письма. |

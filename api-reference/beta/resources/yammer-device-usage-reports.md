@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: f36ed78805bc664adfbbd4ced9bc86b1444ab262
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 02d5f3bcb71b343b0406536d77d80d477cc71223
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36007006"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519052"
 ---
 # <a name="yammer-device-usage-reports"></a>Отчеты об использовании устройств с Yammer
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,6 +26,6 @@ ms.locfileid: "36007006"
 
 | Функция                                 | Возвращаемый тип CSV | Возвращаемый тип JSON                         | Описание                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
-| [Получение сведений о пользователях](../api/reportroot-getyammerdeviceusageuserdetail.md) | Поток          | [Яммердевицеусажеусердетаил](../resources/yammerdeviceusageuserdetail.md) | Получение сведений об использовании устройств с Yammer с разбивкой по пользователям. |
-| [Получение количества пользователей с разбивкой по устройствам](../api/reportroot-getyammerdeviceusagedistributionusercounts.md) | Stream          | [Яммердевицеусажедистрибутионусеркаунтс](../resources/yammerdeviceusagedistributionusercounts.md) | Получение сведений о количестве пользователей с разбивкой по типам устройств.  |
-| [Получение количества пользователей](../api/reportroot-getyammerdeviceusageusercounts.md) | Поток          | [Яммердевицеусажеусеркаунтс](../resources/yammerdeviceusageusercounts.md) | Получение сведений о количестве пользователей в день с разбивкой по типам устройств. |
+| [Получение сведений о пользователях](../api/reportroot-getyammerdeviceusageuserdetail.md) | Поток          | [яммердевицеусажеусердетаил](../resources/yammerdeviceusageuserdetail.md) | Получение сведений об использовании устройств с Yammer с разбивкой по пользователям. |
+| [Получение количества пользователей с разбивкой по устройствам](../api/reportroot-getyammerdeviceusagedistributionusercounts.md) | Stream          | [яммердевицеусажедистрибутионусеркаунтс](../resources/yammerdeviceusagedistributionusercounts.md) | Получение сведений о количестве пользователей с разбивкой по типам устройств.  |
+| [Получение количества пользователей](../api/reportroot-getyammerdeviceusageusercounts.md) | Stream          | [яммердевицеусажеусеркаунтс](../resources/yammerdeviceusageusercounts.md) | Получение сведений о количестве пользователей в день с разбивкой по типам устройств. |

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7cb413aab72abe401152b67b985f023350f80f30
-ms.sourcegitcommit: d189830649794365464e37539e02239f883011da
+ms.openlocfilehash: 0adfe767c23a8f6fda5d44a2520ee307c0499bd1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37653673"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507375"
 ---
 # <a name="countrynamedlocation-resource-type"></a>Тип ресурса Каунтринамедлокатион
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,7 +36,7 @@ ms.locfileid: "37653673"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|каунтриесандрегионс|Коллекция строк|Список стран и/или регионов в формате из двух букв, заданных в стандарте ISO 3166-2.|
+|каунтриесандрегионс|Коллекция String|Список стран и/или регионов в формате из двух букв, заданных в стандарте ISO 3166-2.|
 |createdDateTime|DateTimeOffset|Тип timestamp представляет дату и время создания расположения с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. Наследуется от [намедлокатион](../resources/namedLocation.md).|
 |displayName|Строка|Удобное для человека имя расположения. Наследуется от [намедлокатион](../resources/namedLocation.md).|
 |id|String|Идентификатор объекта Намедлокатион. Только для чтения. Наследуется от [намедлокатион](../resources/namedLocation.md).|

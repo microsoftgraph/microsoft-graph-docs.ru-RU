@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: d2e10ea6db0236b7deff3581c2e1b4f97c589045
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ed81e1e9e74ad311e4102963649ff4a4015bb093
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972721"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42501964"
 ---
 # <a name="educationformresource-resource-type"></a>Тип ресурса Едукатионформресаурце
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,12 +24,12 @@ ms.locfileid: "35972721"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Оригиналформид|String|Исходный идентификатор формы.|
-|Формид|String|Идентификатор формы.|
-|Исграупформ|Boolean|Принадлежность формы группе классов.|
-|Виевурл|String|URL-адрес студента для формы.|
-|Виевурл|String|URL-адрес студента для формы.|
-|Едитурл|String|URL-адрес преподавателя для формы.|
+|оригиналформид|String|Исходный идентификатор формы.|
+|формид|String|Идентификатор формы.|
+|исграупформ|Логический|Принадлежность формы группе классов.|
+|виевурл|String|URL-адрес студента для формы.|
+|виевурл|String|URL-адрес студента для формы.|
+|едитурл|String|URL-адрес преподавателя для формы.|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -7,24 +7,29 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 08cfc864ee670a799a5f1672fa96cf8167ef1423
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d72ac6ec655e15ad6f3c824dc2d5e9c3e09db0c2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006586"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42503651"
 ---
 # <a name="paymentmethods-resource-type"></a>Тип ресурса Пайментмесодс
+
+Пространство имен: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Представляет способ оплаты в Dynamics 365 Business Central, например PayPal, кредитную карту и банковский счет.
 
 ## <a name="methods"></a>Методы
 
 | Метод                                                          | Возвращаемый тип  |Описание             |
 |:----------------------------------------------------------------|:-------------|:-----------------------|
-|[Получение Пайментмесодс](../api/dynamics-paymentmethods-get.md)      |Пайментмесодс|Возвращает объект метода платежа.   |
-|[POST Пайментмесодс](../api/dynamics-create-paymentmethods.md)  |Пайментмесодс|Создает объект метода оплаты.|
-|[Исправление Пайментмесодс](../api/dynamics-paymentmethods-update.md) |Пайментмесодс|Обновляет объект метода оплаты.|
-|[Удаление Пайментмесодс](../api/dynamics-paymentmethods-delete.md)|none          |Удаляет объект метода оплаты.|
+|[Получение Пайментмесодс](../api/dynamics-paymentmethods-get.md)      |пайментмесодс|Возвращает объект метода платежа.   |
+|[POST Пайментмесодс](../api/dynamics-create-paymentmethods.md)  |пайментмесодс|Создает объект метода оплаты.|
+|[Исправление Пайментмесодс](../api/dynamics-paymentmethods-update.md) |пайментмесодс|Обновляет объект метода оплаты.|
+|[Удаление Пайментмесодс](../api/dynamics-paymentmethods-delete.md)|нет          |Удаляет объект метода оплаты.|
 
 ## <a name="properties"></a>Свойства
 | Свойство           | Тип   |Описание                                                  |
@@ -32,10 +37,10 @@ ms.locfileid: "36006586"
 |id                  |GUID    |Уникальный идентификатор Пайментмесодс. Не редактируемые.           |
 |code                |string  |Указывает код метода оплаты.                           |
 |displayName         |string  |Задает отображаемое имя метода оплаты.                   |
-|lastModifiedDateTime|отличным|Дата и время последнего изменения метода оплаты. Только для чтения.|  
+|lastModifiedDateTime|datetime|Дата и время последнего изменения метода оплаты. Только для чтения.|  
 
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

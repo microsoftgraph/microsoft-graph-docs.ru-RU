@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса электронной почты
-description: Ниже этот ресурс представлен в формате JSON.
+description: Ниже показано представление JSON ресурса.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 76a849d3ac1e80a1dd70be250740449dd2412d94
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3e49ea89de278b4914156ba422ad2fec7bc69b47
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972245"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42499605"
 ---
 # <a name="email-resource-type"></a>Тип ресурса электронной почты
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

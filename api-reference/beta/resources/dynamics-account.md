@@ -7,14 +7,19 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: cd42177d4886793adedc222cb360a2b3e89faa7e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: af6c1eccfc30259f2b86fb5a65b81d95802b67f9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012690"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42505282"
 ---
 # <a name="accounts-resource-type"></a>Тип ресурса Accounts
+
+Пространство имен: Microsoft. Graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Представляет объект Account в Dynamics 365 Business Central.
 
 ## <a name="methods"></a>Методы
@@ -32,10 +37,10 @@ ms.locfileid: "36012690"
 |category|Строка, максимальный размер 20|Указывает категорию финансового счета.|
 |Подкатегории|Строка, максимальный размер 80|Указывает подкатегорию категории счетов для финансового счета.|
 |заблокированных|boolean|Указывает, что операции не могут быть учтены на финансовом счете. **Значение true** указывает, что учетная запись заблокирована, а Разноска не разрешена.|
-|lastModifiedDateTime|отличным|Дата и время последнего изменения учетной записи.|
+|lastModifiedDateTime|datetime|Дата и время последнего изменения учетной записи.|
 
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

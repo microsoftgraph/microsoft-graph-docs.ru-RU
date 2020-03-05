@@ -6,14 +6,16 @@ description: Аспект, описывающий driveItem, который яв
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: f843afa112f95e391761d0c8804600018a67534c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ae03674970c8861c7d1c158e62662d9691e74789
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974105"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507868"
 ---
 # <a name="bundle-resource-type"></a>Тип ресурса пакета
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,7 +43,7 @@ ms.locfileid: "35974105"
 | Имя свойства | Тип      | Описание
 |:--------------|:----------|:------------------------------------------------
 | childCount    | Int32     | Количество дочерних объектов в корне данного контейнера.
-| album         | [album][] | Если пакет является альбомом [][], то `album` свойство включается
+| album         | [album][] | Если пакет является [альбомом][], то `album` свойство включается
 
 ## <a name="json-representation"></a>Представление JSON
 

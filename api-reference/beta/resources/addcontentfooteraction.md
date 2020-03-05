@@ -5,14 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b1a2cb0f3e2ffbfb5554c4ae0323cf4fd028e0c8
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 05bbd7ee4b2d4b2b9c4e772b19bd26c86d91cc69
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939111"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508424"
 ---
 # <a name="addcontentfooteraction-resource-type"></a>Тип ресурса Аддконтентфутерактион
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,13 +24,13 @@ ms.locfileid: "37939111"
 
 | Свойство      | Тип   | Описание                                                   |
 | :------------ | :----- | :------------------------------------------------------------ |
-| alignment     | Строка | Возможные значения: `left`, `right`, `center`.               |
-| фонтколор     | Строка | Цвет шрифта, который будет использоваться для нижнего колонтитула.                      |
-| fontName      | Строка | Имя шрифта, который будет использоваться для нижнего колонтитула.                       |
+| alignment     | String | Возможные значения: `left`, `right`, `center`.               |
+| фонтколор     | String | Цвет шрифта, который будет использоваться для нижнего колонтитула.                      |
+| fontName      | String | Имя шрифта, который будет использоваться для нижнего колонтитула.                       |
 | fontSize      | Int32  | Размер шрифта, который будет использоваться для нижнего колонтитула.                              |
 | поля        | Int32  | Поле заголовка из нижней части документа.     |
-| текст          | Строка | Содержимое нижнего колонтитула.                            |
-| уиелементнаме | Строка | Имя элемента пользовательского интерфейса, в котором следует поместить нижний колонтитул. |
+| текст          | String | Содержимое нижнего колонтитула.                            |
+| уиелементнаме | String | Имя элемента пользовательского интерфейса, в котором следует поместить нижний колонтитул. |
 
 ## <a name="json-representation"></a>Представление JSON
 

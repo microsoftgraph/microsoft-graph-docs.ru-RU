@@ -5,14 +5,16 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c7808d014ee2ab19fda9eceb6064375cf5904d52
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: be4fa7bd8f4b44842bd6dbc9876d0dd19fe466fd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38704152"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507501"
 ---
 # <a name="configuration-resource-type"></a>Тип ресурса конфигурации
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ ms.locfileid: "38704152"
 
 | Свойство       | Тип              | Описание |
 |:---------------|:------------------|:------------|
-| аусоризедаппс | Коллекция строк | Коллекция идентификаторов приложений для зарегистрированных приложений Azure Active Directory, которым разрешено управлять Екстерналконнектион и индексировать контент в Екстерналконнектион. |
+| аусоризедаппс | Коллекция String | Коллекция идентификаторов приложений для зарегистрированных приложений Azure Active Directory, которым разрешено управлять Екстерналконнектион и индексировать контент в Екстерналконнектион. |
 
 ## <a name="json-representation"></a>Представление JSON
 

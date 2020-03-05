@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: enumPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: dd9f71bc7bba90d8a854af4aeb3918faef5a4ac4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 287e63d9972043508c62b29ccf9b72d19accc337
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973475"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507658"
 ---
 # <a name="clonableteamparts-enum-type"></a>тип перечисления Клонаблетеампартс
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,8 +24,8 @@ ms.locfileid: "35973475"
 
 | Элемент | Значение| Описание |
 |:---------------|:--------|:----------|
-|apps|1,1|Скопируйте список установленных приложений.|
-|tabs|2|копирует вкладки в каналах.|
-|settings|SP4|Копирует все параметры в группе вместе с параметрами группы ключей.|
+|apps|1 |Скопируйте список установленных приложений.|
+|tabs|2 |копирует вкладки в каналах.|
+|settings|4 |Копирует все параметры в группе вместе с параметрами группы ключей.|
 |channels|8 |копирует структуру канала (но не сообщения в канале).|
-|members|столбцов|копирует участников и владельцев группы.|
+|members|16 |копирует участников и владельцев группы.|

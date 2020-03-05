@@ -6,14 +6,16 @@ title: "\"Audio\" (Аудио);"
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 539afcd93ed2f8d9d5b1a136edefa5a69fd2e4bd
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 944ad03a3ab70be5131e64f7d96c2a14ffea06ea
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913144"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508131"
 ---
 # <a name="audio-facet"></a>Аспект Audio
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,16 +51,16 @@ ms.locfileid: "40913144"
 
 | Имя свойства         | Тип    | Описание                                                          |
 |:----------------------|:--------|:---------------------------------------------------------------------|
-| **album**             | string  | Название альбома для этого звукового файла.                          |
-| **albumArtist**       | string  | Название исполнителя альбома для этого звукового файла.                    |
-| **artist**            | string  | Исполнитель для звукового файла.                            |
+| **album**             | строка  | Название альбома для этого звукового файла.                          |
+| **albumArtist**       | строка  | Название исполнителя альбома для этого звукового файла.                    |
+| **artist**            | строка  | Исполнитель для звукового файла.                            |
 | **bitrate**           | Int32   | Скорость передачи данных в кбит/с.                                           |
-| **composers**         | string  | Имя композитора для звукового файла.                          |
-| **copyright**         | string  | Сведения об авторском праве для звукового файла.                            |
+| **composers**         | строка  | Имя композитора для звукового файла.                          |
+| **copyright**         | строка  | Сведения об авторском праве для звукового файла.                            |
 | **disc**              | Int32   | Номер диска, с которого был взят этот звуковой файл.                    |
 | **discCount**         | Int32   | Общее количество дисков для этого альбома.                             |
 | **duration**          | Int64   | Длительность воспроизведения звукового файла в миллисекундах.                |
-| **genre**             | string  | Жанр этого звукового файла.                                        |
+| **genre**             | строка  | Жанр этого звукового файла.                                        |
 | **hasDrm**            | boolean | Указывает, защищен ли файл с помощью технологии управления цифровыми правами.   |
 | **isVariableBitrate** | boolean | Указывает, закодирован ли файл с использованием переменной скорости передачи данных.            |
 | **title**             | строка  | Название звукового файла.                                         |

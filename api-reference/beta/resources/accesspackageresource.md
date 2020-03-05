@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0567ca9347b560b14ae96da4914a8801f9183019
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 8f862972b1c061d2c95267af19b26da300978288
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870976"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508529"
 ---
 # <a name="accesspackageresource-resource-type"></a>Тип ресурса Акцесспаккажересаурце
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +41,7 @@ ms.locfileid: "40870976"
 |Ресурса|String|Тип ресурса, например, `Application` если это приложение, подключаемое к Azure AD, или `SharePoint Online Site` сайт SharePoint Online.|
 |url|String|Уникальный указатель ресурсов для ресурса, например URL-адрес для подписания пользователя в приложении.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|

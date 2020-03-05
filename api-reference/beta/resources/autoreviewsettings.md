@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 5dbd6212d1b568871d5a61750da822353f0a816f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cde3ca5af63f71e577614ebbfda232c8f1a755ff
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974271"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508061"
 ---
 # <a name="autoreviewsettings-resource-type"></a>Тип ресурса Ауторевиевсеттингс
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,9 +22,9 @@ ms.locfileid: "35974271"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-| Нотревиеведресулт | String |  |
+| нотревиеведресулт | String |  |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

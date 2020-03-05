@@ -5,14 +5,16 @@ author: mlafleur
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: c160f9bd20f7dfccfa19dbf4d466dd967fde9c2c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9ba29e98150db6ffa9938585540d9b77f8a755cc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972763"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502272"
 ---
 # <a name="educationcourse-resource-type"></a>Тип ресурса Едукатионкаурсе
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +24,7 @@ ms.locfileid: "35972763"
 
 | Свойство     | Тип   | Описание                               |
 | :----------- | :----- | :---------------------------------------- |
-| Каурсенумбер | String | Уникальный идентификатор курса.         |
+| каурсенумбер | String | Уникальный идентификатор курса.         |
 | description  | Строка | Описание курса.                |
 | displayName  | Строка | Название курса.                       |
 | externalId   | String | ИДЕНТИФИКАТОР курса из системы синхронизации. |

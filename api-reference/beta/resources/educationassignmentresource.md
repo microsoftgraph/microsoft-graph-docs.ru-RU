@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 60181a2289b272809cff025abeee83c594ae833e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0012344d2a641b892ae5e3fa905ce1e0c6282a5a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36006432"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42502426"
 ---
 # <a name="educationassignmentresource-resource-type"></a>Тип ресурса Едукатионассигнментресаурце
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,18 +25,18 @@ ms.locfileid: "36006432"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение Едукатионассигнментресаурце](../api/educationassignmentresource-get.md) | [Едукатионассигнментресаурце](educationassignmentresource.md) |Чтение свойств и связей объекта **едукатионассигнментресаурце** .|
-|[обновление](../api/educationassignmentresource-update.md); | [Едукатионассигнментресаурце](educationassignmentresource.md) |Обновление объекта **едукатионассигнментресаурце** . |
-|[Удаление](../api/educationassignmentresource-delete.md) | Нет |Удаление объекта **едукатионассигнментресаурце** . |
+|[Получение Едукатионассигнментресаурце](../api/educationassignmentresource-get.md) | [едукатионассигнментресаурце](educationassignmentresource.md) |Чтение свойств и связей объекта **едукатионассигнментресаурце** .|
+|[обновление](../api/educationassignmentresource-update.md). | [едукатионассигнментресаурце](educationassignmentresource.md) |Обновление объекта **едукатионассигнментресаурце** . |
+|[удаление](../api/educationassignmentresource-delete.md); | Нет |Удаление объекта **едукатионассигнментресаурце** . |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Дистрибутефорстудентворк|Boolean|Указывает, следует ли копировать этот ресурс в каждую отправку учащегося для изменения и отправки.|
+|дистрибутефорстудентворк|Логический|Указывает, следует ли копировать этот ресурс в каждую отправку учащегося для изменения и отправки.|
 |id|String| ИДЕНТИФИКАТОР этого ресурса. Только для чтения.|
-|resource|[Едукатионресаурце](educationresource.md)|Объект ресурса, связанный с этим назначением.|
+|resource|[едукатионресаурце](educationresource.md)|Объект ресурса, связанный с этим назначением.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 

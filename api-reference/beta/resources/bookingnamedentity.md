@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: 7eba40effa1ef5107a97e2acd075dad0c5e350f1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5c219d0ab879c1bc1ae172d08322647b2c261497
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36013103"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507991"
 ---
 # <a name="bookingnamedentity-resource-type"></a>Тип ресурса Букингнамедентити
+
+Пространство имен: Microsoft. Graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 341af43f03d8a319c7aaec535681f21db0a7f7f4
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: d426252b6ab83557c3d3085ac4ffa7a530aae271
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939109"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508410"
 ---
 # <a name="addcontentheaderaction-resource-type"></a>Тип ресурса Аддконтенсеадерактион
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,13 +24,13 @@ ms.locfileid: "37939109"
 
 | Свойство      | Тип   | Описание                                                   |
 | :------------ | :----- | :------------------------------------------------------------ |
-| alignment     | Строка | Возможные значения: `left`, `right`, `center`.               |
-| фонтколор     | Строка | Цвет шрифта, который будет использоваться для заголовка.                      |
-| fontName      | Строка | Имя шрифта, используемого для заголовка.                       |
+| alignment     | String | Возможные значения: `left`, `right`, `center`.               |
+| фонтколор     | String | Цвет шрифта, который будет использоваться для заголовка.                      |
+| fontName      | String | Имя шрифта, используемого для заголовка.                       |
 | fontSize      | Int32  | Размер шрифта, используемый для заголовка.                              |
 | поля        | Int32  | Поле заголовка, начиная с верхнего края документа.        |
-| текст          | Строка | Содержимое самого верхнего колонтитула.                            |
-| уиелементнаме | Строка | Имя элемента пользовательского интерфейса, в котором следует поместить заголовок. |
+| текст          | String | Содержимое самого верхнего колонтитула.                            |
+| уиелементнаме | String | Имя элемента пользовательского интерфейса, в котором следует поместить заголовок. |
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 30324c84bdfdc9fdb1ce7e6fd2379d5a60235d72
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5555fa6f02e0639f1e126112918c39168b445945
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012732"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42505849"
 ---
 # <a name="domaindnstxtrecord-resource-type"></a>Тип ресурса Домаинднсткстрекорд
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,14 +27,14 @@ ms.locfileid: "36012732"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|String| Уникальный идентификатор, назначенный этой сущности. Не допускает значения NULL и только для чтения. |
-|Переключатель|Boolean| Если этот параметр имеет значение false, запись TXT должна быть настроена клиентом на узле DNS для правильной работы Microsoft Online Services с доменом. |
+|Переключатель|Логический| Если этот параметр имеет значение false, запись TXT должна быть настроена клиентом на узле DNS для правильной работы Microsoft Online Services с доменом. |
 |label|String| Значение, используемое при настройке свойства *Name* записи TXT на узле DNS.|
 |recordType|String| Тип записи DNS. Значение всегда является *txt*. Key |
-|Суппортедсервице|String| Служба или компонент Microsoft Online, зависящие от этой записи TXT.</br></br>Может принимать одно из следующих значений: **null**, *Email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic *, *OrgIdAuthentication*, *Yammer*, *Intune* |
+|суппортедсервице|String| Служба или компонент Microsoft Online, зависящие от этой записи TXT.</br></br>Может принимать одно из следующих значений: **null**, *Email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
 |текст|String| Значение, используемое при настройке свойства *Text* на узле DNS. |
 |используем|Int32| Значение, используемое при настройке свойства срока *жизни (TTL)* записи MX на узле DNS. Не допускает значение null |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 130b1d536c881991a54e5b6fd06aee2f3f59483a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 70dd4a277caa005883d205f353bbcfbf63428bcf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012963"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507700"
 ---
 # <a name="chatmessagemention-resource-type"></a>Тип ресурса Чатмессажементион
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +41,7 @@ ms.locfileid: "36012963"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|Int32|Индекс объекта, упоминаемого в заданном **chatMessage**. Соответствует значению {index} в соответствующем `<at id="{index}">` теге в тексте сообщения.|
-|Ментионтекст|string|Строка, используемая для представления упоминания. Например, отображаемое имя пользователя, имя группы.|
+|ментионтекст|строка|Строка, используемая для представления упоминания. Например, отображаемое имя пользователя, имя группы.|
 |котором|[identitySet](identityset.md)|Упоминаемая сущность (пользователь, приложение, группа или канал).  Если это канал или группа, @mentioned, Identity содержит свойство **CONVERSATION** , предоставляющее идентификатор команды или канала, и свойство **конверсатионидентититипе** , которое представляет группу или канал.|
 
 

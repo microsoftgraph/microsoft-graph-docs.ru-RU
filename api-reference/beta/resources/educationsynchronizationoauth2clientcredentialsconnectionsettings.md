@@ -5,14 +5,16 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: ffc3af93a90ba0d6991007a64d24b9fb776e8bc8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d38853e40d8f88bf4aa8323395848185793cc42c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972371"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42500095"
 ---
 # <a name="educationsynchronizationoauth2clientcredentialsconnectionsettings-resource"></a>ресурс educationSynchronizationOAuth2ClientCredentialsConnectionSettings
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +26,7 @@ ms.locfileid: "35972371"
 
 | Свойство | Тип | Описание |
 |:-|:-|:-|
-| **Токенурл** | String | URL-адрес для получения маркеров доступа для поставщика данных. |
+| **токенурл** | String | URL-адрес для получения маркеров доступа для поставщика данных. |
 | **scope** | String | [Область запроса доступа](https://tools.ietf.org/html/rfc6749#section-3.3). |
 
 ## <a name="json-representation"></a>Представление JSON

@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 8084b1aae61ffb9e9982fbf8b5f4b8e430a85da1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 14e152fa5aa24366eade56b632d96e2c4e4bfcc8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35972567"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42501061"
 ---
 # <a name="educationroot-resource-type"></a>Тип ресурса educationRoot
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,8 +34,8 @@ ms.locfileid: "35972567"
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |classes|Коллекция [educationClass](educationclass.md)| Только для чтения. Допускается значение null.|
 |me|[educationUser](educationuser.md)| Только для чтения. Допускается значение null.|

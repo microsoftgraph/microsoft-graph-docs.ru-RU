@@ -5,14 +5,16 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a944309d59383b8c1501495c12d937acb13adbbb
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: bc08a1b92ccb8404a20cd5013be74d37f7659a5f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870983"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508571"
 ---
 # <a name="accesspackage-resource-type"></a>Тип ресурса Акцесспаккаже
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,9 +30,9 @@ ms.locfileid: "40870983"
 | [Список Акцесспаккажес](../api/accesspackage-list.md) | Коллекция [акцесспаккаже](accesspackage.md) | Получение списка объектов **акцесспаккаже** . |
 | [Создание Акцесспаккаже](../api/accesspackage-post.md) | [акцесспаккаже](accesspackage.md) | Создание нового объекта **акцесспаккаже** . |
 | [Получение Акцесспаккаже](../api/accesspackage-get.md) | [акцесспаккаже](accesspackage.md) | Чтение свойств и связей объекта **акцесспаккаже** . |
-| [Удаление Акцесспаккаже](../api/accesspackage-delete.md) |Нет. | Удаление **акцесспаккаже**. |
+| [Удаление Акцесспаккаже](../api/accesspackage-delete.md) |Нет | Удаление **акцесспаккаже**. |
 | [Список Акцесспаккажересаурцеролескопес](../api/accesspackage-list-accesspackageresourcerolescopes.md) | Коллекция [акцесспаккажересаурцеролескопе](accesspackageresourcerolescope.md) | Получение списка объектов **акцесспаккажересаурцеролескопе** для этого пакета Access. |
-| [Создание Акцесспаккажересаурцеролескопе](../api/accesspackage-post-accesspackageresourcerolescopes.md) |Нет. | Создайте новый объект **акцесспаккажересаурцеролескопе** для этого пакета Access. |
+| [Создание Акцесспаккажересаурцеролескопе](../api/accesspackage-post-accesspackageresourcerolescopes.md) |Нет | Создайте новый объект **акцесспаккажересаурцеролескопе** для этого пакета Access. |
 
 ## <a name="properties"></a>Свойства
 

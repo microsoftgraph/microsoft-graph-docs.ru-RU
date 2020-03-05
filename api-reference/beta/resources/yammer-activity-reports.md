@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: efdb4ba603be33f18cd66529edd724f6e1a3798d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8f1358c188b06953d7af180c2b7ad83b6183af35
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35963833"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519059"
 ---
 # <a name="yammer-activity-reports"></a>Отчеты о действиях в Yammer
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,6 +26,6 @@ ms.locfileid: "35963833"
 
 | Функция                                 | Возвращаемый тип CSV | Возвращаемый тип JSON                         | Описание                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
-| [Получение сведений о пользователях](../api/reportroot-getyammeractivityuserdetail.md) | Поток          | [Яммерактивитюсердетаил](../resources/yammeractivityuserdetail.md) | Получение сведений о действиях в Yammer с разбивкой по пользователям. |
-| [Получение количества действий](../api/reportroot-getyammeractivitycounts.md) | Stream          | [Яммерактивитисуммари](../resources/yammeractivitysummary.md) | Отследите динамику использования Yammer в организации по количеству опубликованных, прочитанных и понравившихся сообщений. |
-| [Получение количества пользователей](../api/reportroot-getyammeractivityusercounts.md) | Поток          | [Яммерактивитисуммари](../resources/yammeractivitysummary.md) | Отследите динамику по количеству уникальных пользователей, которые опубликовали, прочитали и оценили сообщения Yammer. |
+| [Получение сведений о пользователях](../api/reportroot-getyammeractivityuserdetail.md) | Stream          | [яммерактивитюсердетаил](../resources/yammeractivityuserdetail.md) | Получение сведений о действиях в Yammer с разбивкой по пользователям. |
+| [Получение количества действий](../api/reportroot-getyammeractivitycounts.md) | Stream          | [яммерактивитисуммари](../resources/yammeractivitysummary.md) | Отследите динамику использования Yammer в организации по количеству опубликованных, прочитанных и понравившихся сообщений. |
+| [Получение количества пользователей](../api/reportroot-getyammeractivityusercounts.md) | Stream          | [яммерактивитисуммари](../resources/yammeractivitysummary.md) | Отследите динамику по количеству уникальных пользователей, которые опубликовали, прочитали и оценили сообщения Yammer. |

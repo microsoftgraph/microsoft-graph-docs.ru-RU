@@ -5,21 +5,23 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: b93e01bf6274591282fd5e486bebb878672d8cc3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 65eda1c24fee112ef18fc6682b537f92f924dcf8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35973232"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507578"
 ---
 #  <a name="complianceinformation-resource-type"></a>Тип ресурса Комплианцеинформатион
+
+Пространство имен: Microsoft. Graph
 
 Содержит данные соответствия требованиям, связанные с контролем безопасного рейтинга.
 
 |Свойство |Тип |Описание |
 |:--|:--|:--|
-|Цертификатионнаме | string | Имя сертификации соответствия (например, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171). |
-|Цертификатионконтролс | Коллекция [цертификатионконтрол](certificationcontrol.md) | Коллекция элементов управления сертификацией, связанных с сертификацией |
+|цертификатионнаме | строка | Имя сертификации соответствия (например, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171). |
+|цертификатионконтролс | Коллекция [цертификатионконтрол](certificationcontrol.md) | Коллекция элементов управления сертификацией, связанных с сертификацией |
 
 ## <a name="json-representation"></a>Представление JSON
 

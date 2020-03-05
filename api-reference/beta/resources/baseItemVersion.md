@@ -6,14 +6,16 @@ title: BaseItemVersion
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: d5265004eac969fa827e5456183180a4c6434f96
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 47865e388616763b60ce3cd45195bf9919c7acf2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974238"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508040"
 ---
 # <a name="baseitemversion-resource-type"></a>Тип ресурса baseItemVersion
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -38,7 +40,7 @@ ms.locfileid: "35974238"
 
 |      Имя свойства       |                         Тип                         |                               Описание                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
-| **id**                   | string                                               | Идентификатор версии. Только для чтения.                                       |
+| **id**                   | строка                                               | Идентификатор версии. Только для чтения.                                       |
 | **lastModifiedBy**;       | [IdentitySet](../resources/identityset.md)           | Удостоверение пользователя, который последним изменил версию. Только для чтения.        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Дата и время последнего изменения версии. Только для чтения.                 |
 | **publication**          | [PublicationFacet](../resources/publicationfacet.md) | Указывает состояние публикации конкретной версии. Только для чтения. |
