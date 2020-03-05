@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e8ec2733b23e2b2609e922bd6dce9d16cf667ea6
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: b32c901f00f341191c306f0e6a9ee563a8ac10ef
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42161314"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42460173"
 ---
 # <a name="get-onpremencryptedpayload"></a>Получение Онпременкриптедпайлоад
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

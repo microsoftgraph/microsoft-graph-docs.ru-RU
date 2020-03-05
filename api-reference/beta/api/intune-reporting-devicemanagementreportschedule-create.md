@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5cac3be06db06eb13fc371c41fe832dabefd36dd
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 97543d849f09b643eff23d0f25a069586d302421
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39940266"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42459052"
 ---
 # <a name="create-devicemanagementreportschedule"></a>Создание Девицеманажементрепортсчедуле
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -41,10 +43,10 @@ POST /deviceManagement/reports/reportSchedules
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Девицеманажементрепортсчедуле в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицеманажементрепортсчедуле.
@@ -52,17 +54,17 @@ POST /deviceManagement/reports/reportSchedules
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Уникальный идентификатор для этой сущности|
-|репортсчедуленаме|Строка|Имя расписания|
+|репортсчедуленаме|String|Имя расписания|
 |subject|String|Тема запланированных отчетов, которые доставляются|
-|письма|Коллекция строк|Сообщения электронной почты, на которые доставляются запланированные отчеты|
+|письма|Коллекция String|Сообщения электронной почты, на которые доставляются запланированные отчеты|
 |recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|Периодичность запланированной доставки отчета. Возможные значения: `none`, `daily`, `weekly`, `monthly`.|
 |startDateTime|DateTimeOffset|Время, когда начинается доставка запланированных отчетов|
 |endDateTime|DateTimeOffset|Время окончания доставки запланированных отчетов|
 |userId|String|Идентификатор пользователя, создавшего отчет|
-|репортнаме|Строка|Имя отчета|
-|filter|Строка|Фильтры, примененные к отчету|
-|select|Коллекция строк|Столбцы, выбранные из отчета|
-|orderBy|Коллекция строк|Упорядочение столбцов в отчете|
+|репортнаме|String|Имя отчета|
+|filter|String|Фильтры, примененные к отчету|
+|select|Коллекция String|Столбцы, выбранные из отчета|
+|orderBy|Коллекция String|Упорядочение столбцов в отчете|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Формат запланированного отчета. Возможные значения: `csv`, `pdf`.|
 
 

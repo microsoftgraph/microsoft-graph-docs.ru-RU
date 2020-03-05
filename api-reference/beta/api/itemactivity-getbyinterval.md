@@ -6,14 +6,16 @@ title: Получение статистики по действиям элем�
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 6d1f7a3b4e6a326f107a0d0ff33db59ed73f2794
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7bd05327e1571174b3ce1a228ab6a1b736c0fcd7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35979108"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457309"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>Получение статистики по действиям элемента по интервалу
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +25,7 @@ ms.locfileid: "35979108"
 
 Статистические функции аналитики могут быть недоступны для всех типов действий.
 
-[Итемактивитистатс]: ../resources/itemactivitystat.md
+[итемактивитистатс]: ../resources/itemactivitystat.md
 
 ## <a name="permissions"></a>Разрешения
 
@@ -51,7 +53,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 |:---------------|:-------------------|:---------------------------------------
 | startDateTime  | строка (timestamp) | Время начала агрегирования действий.
 | endDateTime    | строка (timestamp) | Время окончания агрегирования действий.
-| interval       | string             | Интервал объединения.
+| interval       | строка             | Интервал объединения.
 
 ## <a name="example"></a>Пример
 

@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 47b0f41dfd0430a4b6674a126c7d8cedc58ef400
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: d0edc4507607ebad9614209289fe9705a3f2e290
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42161305"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42457603"
 ---
 # <a name="getmanageddeviceswithfailedorpendingapps-function"></a>Функция Жетманажеддевицесвисфаиледорпендингаппс
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
