@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: dd84d705d1786bf1a340a4220a606dcf62c96abd
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6b0e4f6bd795fee2cf46003ada0bb8fcd8478c84
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36332612"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42526541"
 ---
 # <a name="easauthenticationmethod-enum-type"></a>тип перечисления Еасаусентикатионмесод
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Метод проверки подлинности Exchange Active Sync.
 
@@ -24,8 +26,8 @@ ms.locfileid: "36332612"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |усернамеандпассворд|нуль|Проверка подлинности с использованием имени пользователя и пароля.|
-|certificate|1,1|Проверка подлинности с помощью сертификата.|
-|дериведкредентиал|2|Проверка подлинности с использованием производных учетных данных.|
+|certificate|1 |Проверка подлинности с помощью сертификата.|
+|дериведкредентиал|2 |Проверка подлинности с использованием производных учетных данных.|
 
 
 

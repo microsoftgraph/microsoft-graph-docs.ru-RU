@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c670be3a74d3e612e7a6dd0236ddec16b663f774
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a4b31229a5745d889271c886cf5d0b63f91e2627
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36331618"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528158"
 ---
 # <a name="networkipv4configurationmanagementcondition-resource-type"></a>Тип ресурса networkIPv4ConfigurationManagementCondition
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Можно определить условия управления IPv4 на основе конфигурации, которые будут срабатывать, когда устройство обнаружит определенные параметры IP-сети. Условия управления IP-конфигурацией будут считаться ИСТИНными, только если сетевое подключение активно.
 
@@ -46,11 +48,11 @@ ms.locfileid: "36331618"
 |ipV4Prefix|String|Подсеть IPv4, к которой необходимо подключиться. Например, 10.0.0.0/8|
 |ipV4Gateway|String|IPv4-адрес шлюза. Например, 10.0.0.0|
 |ipV4DHCPServer|String|IPv4-адрес DHCP-сервера для адаптера.|
-|ipV4DNSServerList|Коллекция строк|DNS-серверы IPv4, настроенные для адаптера.|
-|днссуффикслист|Коллекция строк|Допустимые DNS-суффиксы для текущей сети. Например, seattle.contoso.com|
+|ipV4DNSServerList|Коллекция String|DNS-серверы IPv4, настроенные для адаптера.|
+|днссуффикслист|Коллекция String|Допустимые DNS-суффиксы для текущей сети. Например, seattle.contoso.com|
 
-## <a name="relationships"></a>Отношения
-|Отношение|Тип|Описание|
+## <a name="relationships"></a>Связи
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |манажементкондитионстатементс|Коллекция [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md)|Операторы условия управления, связанные с условием управления. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|
 

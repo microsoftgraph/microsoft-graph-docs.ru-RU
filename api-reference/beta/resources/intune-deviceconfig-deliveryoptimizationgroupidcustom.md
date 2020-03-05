@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c2e0fa587c312d4e4eef43873f08842ac5c7c79b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4f19576203d720eeb35c4268e6ea4f28c968c969
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36333403"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42526792"
 ---
 # <a name="deliveryoptimizationgroupidcustom-resource-type"></a>Тип ресурса Деливерйоптимизатионграупидкустом
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Тип идентификатора настраиваемой группы
 
@@ -28,7 +30,7 @@ ms.locfileid: "36333403"
 |:---|:---|:---|
 |граупидкустом|String|Указывает произвольный идентификатор группы, к которому относится устройство.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

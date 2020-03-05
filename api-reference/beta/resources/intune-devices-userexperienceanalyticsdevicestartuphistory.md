@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: dfec7c1433dcad1748a039281f214d8da7b315f9
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 1c3b335119c175c17e6591439725e0c0c4fdf929
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42162472"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528482"
 ---
 # <a name="userexperienceanalyticsdevicestartuphistory-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксдевицестартуфистори
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -43,11 +45,11 @@ ms.locfileid: "42162472"
 |корелогинтимеинмс|Int32|Время входа в ядро устройства аналитики взаимодействия с пользователем (в миллисекундах).|
 |респонсиведесктоптимеинмс|Int32|Время, в течение которого выполняется анализ пользовательского интерфейса на рабочем столе в миллисекундах.|
 |тоталлогинтимеинмс|Int32|Общее время входа в систему для устройства аналитики взаимодействия с пользователем (в миллисекундах).|
-|исфирстлогин|Boolean|Первое имя входа устройства Analytics User Experience.|
-|исфеатуреупдате|Boolean|Загрузочная запись устройства аналитики взаимодействия с пользователем — это обновление компонентов.|
+|исфирстлогин|Логический|Первое имя входа устройства Analytics User Experience.|
+|исфеатуреупдате|Логический|Загрузочная запись устройства аналитики взаимодействия с пользователем — это обновление компонентов.|
 |operatingSystemVersion|String|Версия операционной системы для записи загрузки устройства службы аналитики взаимодействия с пользователем.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

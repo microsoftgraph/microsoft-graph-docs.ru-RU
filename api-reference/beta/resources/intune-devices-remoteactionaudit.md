@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 369cf366cb05aca8b826f9f4a6df8c47fa95f471
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: f0e2efd04cbb2fff10ac51b463438d758b59006c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37196744"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528498"
 ---
 # <a name="remoteactionaudit-resource-type"></a>Тип ресурса remoteActionAudit
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Отчет о удаленных действиях, запущенных на устройствах, относящихся к определенному клиенту.
 
@@ -34,16 +36,16 @@ ms.locfileid: "37196744"
 |:---|:---|:---|
 |id|String|Идентификатор отчета.|
 |deviceDisplayName|String|Имя устройства Intune.|
-|userName|String.|\[\] рекомендуется вместо этого использовать свойства initiatedbyuserprincipalname.|
-|Свойства initiatedbyuserprincipalname|String.|Пользователь, который инициировал действие с устройством, имеет формат UPN.|
-|action|[ремотеактион](../resources/intune-devices-remoteaction.md)|Имя действия. Возможные значения: `unknown`, `factoryReset`, `removeCompanyData`, `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown` `logoutSharedAppleDeviceActiveUser` `quickScan`,,,,,,,,,,,,,,,,,,,,, `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` , `rotateBitLockerKeys`, `rotateFileVaultKey`, `getFileVaultKey`, `setDeviceName`.|
+|userName|String|\[\] рекомендуется вместо этого использовать свойства initiatedbyuserprincipalname.|
+|Свойства initiatedbyuserprincipalname|String|Пользователь, который инициировал действие с устройством, имеет формат UPN.|
+|action|[ремотеактион](../resources/intune-devices-remoteaction.md)|Имя действия. Возможные `unknown`значения:, `factoryReset`, `removeCompanyData`, `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown` `rotateBitLockerKeys` `rotateFileVaultKey` `getFileVaultKey` `setDeviceName`,,,,,,, `quickScan`,,,,,,,,,,,,,,,,,,. `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser`|
 |рекуестдатетиме|DateTimeOffset|Время, когда действие было выдано, заданное в формате UTC.|
-|deviceOwnerUserPrincipalName|String.|Имя участника-пользователя для владельца устройства.|
-|deviceIMEI|String.|IMEI устройства.|
+|deviceOwnerUserPrincipalName|String|Имя участника-пользователя для владельца устройства.|
+|deviceIMEI|String|IMEI устройства.|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Состояние действия. Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|манажеддевицеид|String.|Цель действия.|
+|манажеддевицеид|String|Цель действия.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

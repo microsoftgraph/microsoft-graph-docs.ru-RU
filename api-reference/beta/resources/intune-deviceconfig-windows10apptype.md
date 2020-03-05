@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: fd601144e84014ff366bd77884d2828da2833b26
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a5d1503dee28726160896e9ae11e29b85b37cd9e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36337918"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529236"
 ---
 # <a name="windows10apptype-enum-type"></a>тип перечисления windows10AppType
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Тип приложения Windows 10.
 
@@ -24,7 +26,7 @@ ms.locfileid: "36337918"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |системной|нуль|Системной.|
-|Гринвич|1,1|Гринвич.|
+|Гринвич|1 |Гринвич.|
 
 
 

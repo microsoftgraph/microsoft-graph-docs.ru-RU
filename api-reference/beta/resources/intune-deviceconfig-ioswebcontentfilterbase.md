@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 70eb3de89ad8ce3621eb6457968f1cce8462c100
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 8db21c6f82f9a4b9393111c1fb51e8d47851fc36
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36356755"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529805"
 ---
 # <a name="ioswebcontentfilterbase-resource-type"></a>Тип ресурса Иосвебконтентфилтербасе
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Представляет базовый тип параметра фильтра веб-содержимого iOS. Пустой и абстрактный базовый. Вызывающий абонент должен использовать один из производных типов для конфигураций.
 
@@ -24,7 +26,7 @@ ms.locfileid: "36356755"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

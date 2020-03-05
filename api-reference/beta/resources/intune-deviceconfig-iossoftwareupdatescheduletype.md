@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 431afa07b2276219186c508b88bc05ab981f65ff
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 58a59e32fd75a99c9585d9c22115620b8a4aad20
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42162430"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42526306"
 ---
 # <a name="iossoftwareupdatescheduletype-enum-type"></a>тип перечисления Иоссофтвареупдатесчедулетипе
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -24,9 +26,9 @@ ms.locfileid: "42162430"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |упдатеаутсидеофактивехаурс|нуль|Обновление вне периода активности.|
-|алвайсупдате|1,1|Всегда обновлять.|
-|упдатедурингтимевиндовс|2|Обновление в течение времени Windows.|
-|упдатеаутсидеофтимевиндовс|4|Обновление в нерабочее время.|
+|алвайсупдате|1 |Всегда обновлять.|
+|упдатедурингтимевиндовс|2 |Обновление в течение времени Windows.|
+|упдатеаутсидеофтимевиндовс|3 |Обновление в нерабочее время.|
 
 
 

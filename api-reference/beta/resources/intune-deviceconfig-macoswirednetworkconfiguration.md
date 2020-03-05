@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ba48b7c930d373be9af620874b8d55d002f08962
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 9b9f98f3b1d696f5d6b4dbfe3ab0b8eb46a064d4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088254"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529652"
 ---
 # <a name="macoswirednetworkconfiguration-resource-type"></a>Тип ресурса Макосвиреднетворкконфигуратион
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,10 +29,10 @@ ms.locfileid: "38088254"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Макосвиреднетворкконфигуратионс](../api/intune-deviceconfig-macoswirednetworkconfiguration-list.md)|Коллекция [макосвиреднетворкконфигуратион](../resources/intune-deviceconfig-macoswirednetworkconfiguration.md)|Список свойств и связей объектов [макосвиреднетворкконфигуратион](../resources/intune-deviceconfig-macoswirednetworkconfiguration.md) .|
-|[Получение Макосвиреднетворкконфигуратион](../api/intune-deviceconfig-macoswirednetworkconfiguration-get.md)|[макосвиреднетворкконфигуратион](../resources/intune-deviceconfig-macoswirednetworkconfiguration.md)|Чтение свойств и связей объекта [макосвиреднетворкконфигуратион](../resources/intune-deviceconfig-macoswirednetworkconfiguration.md) .|
-|[Создание Макосвиреднетворкконфигуратион](../api/intune-deviceconfig-macoswirednetworkconfiguration-create.md)|[макосвиреднетворкконфигуратион](../resources/intune-deviceconfig-macoswirednetworkconfiguration.md)|Создание нового объекта [макосвиреднетворкконфигуратион](../resources/intune-deviceconfig-macoswirednetworkconfiguration.md) .|
+|[Получение Макосвиреднетворкконфигуратион](../api/intune-deviceconfig-macoswirednetworkconfiguration-get.md)|[macOSWiredNetworkConfiguration](../resources/intune-deviceconfig-macoswirednetworkconfiguration.md)|Чтение свойств и связей объекта [макосвиреднетворкконфигуратион](../resources/intune-deviceconfig-macoswirednetworkconfiguration.md) .|
+|[Создание Макосвиреднетворкконфигуратион](../api/intune-deviceconfig-macoswirednetworkconfiguration-create.md)|[macOSWiredNetworkConfiguration](../resources/intune-deviceconfig-macoswirednetworkconfiguration.md)|Создание нового объекта [макосвиреднетворкконфигуратион](../resources/intune-deviceconfig-macoswirednetworkconfiguration.md) .|
 |[Удаление Макосвиреднетворкконфигуратион](../api/intune-deviceconfig-macoswirednetworkconfiguration-delete.md)|Нет|Удаляет объект [макосвиреднетворкконфигуратион](../resources/intune-deviceconfig-macoswirednetworkconfiguration.md).|
-|[Обновление Макосвиреднетворкконфигуратион](../api/intune-deviceconfig-macoswirednetworkconfiguration-update.md)|[макосвиреднетворкконфигуратион](../resources/intune-deviceconfig-macoswirednetworkconfiguration.md)|Обновление свойств объекта [макосвиреднетворкконфигуратион](../resources/intune-deviceconfig-macoswirednetworkconfiguration.md) .|
+|[Обновление Макосвиреднетворкконфигуратион](../api/intune-deviceconfig-macoswirednetworkconfiguration-update.md)|[macOSWiredNetworkConfiguration](../resources/intune-deviceconfig-macoswirednetworkconfiguration.md)|Обновление свойств объекта [макосвиреднетворкконфигуратион](../resources/intune-deviceconfig-macoswirednetworkconfiguration.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -47,7 +49,7 @@ ms.locfileid: "38088254"
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |нетворкнаме|String|Сетевое имя|
-|нетворкинтерфаце|[виреднетворкинтерфаце](../resources/intune-deviceconfig-wirednetworkinterface.md)|Сетевой интерфейс. Возможные значения: `anyEthernet`, `firstActiveEthernet`, `secondActiveEthernet`, `thirdActiveEthernet`, `firstEthernet`, `secondEthernet`, `thirdEthernet`.|
+|нетворкинтерфаце|[wiredNetworkInterface](../resources/intune-deviceconfig-wirednetworkinterface.md)|Сетевой интерфейс. Возможные значения: `anyEthernet`, `firstActiveEthernet`, `secondActiveEthernet`, `thirdActiveEthernet`, `firstEthernet`, `secondEthernet`, `thirdEthernet`.|
 |еаптипе|[еаптипе](../resources/intune-deviceconfig-eaptype.md)|Протокол расширенной проверки подлинности (EAP). Указывает тип протокола EAP, установленный для проводной сети. Возможные значения: `eapTls`, `leap`, `eapSim`, `eapTtls`, `peap`, `eapFast`.|
 |еапфастконфигуратион|[еапфастконфигуратион](../resources/intune-deviceconfig-eapfastconfiguration.md)|Параметр конфигурации EAP-FAST, когда EAP-FAST выбран тип EAP. Возможные значения: `noProtectedAccessCredential`, `useProtectedAccessCredential`, `useProtectedAccessCredentialAndProvision`, `useProtectedAccessCredentialAndProvisionAnonymously`.|
 |трустедсерверцертификатенамес|Коллекция String|Имена сертификатов доверенных серверов, когда тип EAP настроен для EAP-TLS/TTLS/FAST или PEAP. Это общее имя, используемое в сертификатах, выдаваемых доверенным центром сертификации (CA). Если вы предоставляете эти сведения, вы можете обходить диалоговое окно динамического доверия, отображаемое на устройствах конечных пользователей, когда они подключаются к этой проводной сети.|

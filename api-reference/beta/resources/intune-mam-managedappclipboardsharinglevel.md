@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1e479f925e8b52ae746180851ce52ad116774367
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 97e5e74b9d8f039e75df61791ef8dea945e49818
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36332213"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527960"
 ---
 # <a name="managedappclipboardsharinglevel-enum-type"></a>тип перечисления Манажедаппклипбоардшаринглевел
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Представляет уровень, к которому может быть предоставлен общий доступ к буферу обмена устройства между приложениями
 
@@ -24,9 +26,9 @@ ms.locfileid: "36332213"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |аллаппс|нуль|Общий доступ разрешен между всеми приложениями, управляемым или не|
-|манажедаппсвиспастеин|1,1|Разрешен общий доступ для всех управляемых приложений с включенной вставкой|
-|managedApps|2|Общий доступ разрешен для всех управляемых приложений|
-|заблокированных|4|Совместное использование приложений отключено|
+|манажедаппсвиспастеин|1 |Разрешен общий доступ для всех управляемых приложений с включенной вставкой|
+|managedApps|2 |Общий доступ разрешен для всех управляемых приложений|
+|заблокированных|3 |Совместное использование приложений отключено|
 
 
 

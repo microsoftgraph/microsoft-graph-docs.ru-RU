@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 8b3679139f004298ac28dbcbe03eb9e626b4d7f7
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: e801b8d2e981f3695b3afe8710c21e6050b18632
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636646"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527122"
 ---
 # <a name="applevpnconnectiontype-enum-type"></a>тип перечисления Апплевпнконнектионтипе
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -35,7 +37,7 @@ ms.locfileid: "41636646"
 |Элемент paloaltoglobalprotect|9 |Palo Alto сети Глобалпротект.|
 |зскалерприватеакцесс|10 |Частный доступ зскалер.|
 |f5Access2018|11 |F5 доступ 2018.|
-|Цитриксссо|12|Единый вход Citrix.|
+|Цитриксссо|12 |Единый вход Citrix.|
 |paloAltoGlobalProtectV2|13 |Palo Alto сети Глобалпротект v2.|
 |Клиентских|14 |Клиентских.|
 |Группа|15 |Группа.|

@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d412f568a48c4da7b41d56b44180ac5200961238
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 6aa5ac1dfe78f2eb05ddee236689a1707f87389f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42161343"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42526932"
 ---
 # <a name="customupdatetimewindow-resource-type"></a>Тип ресурса Кустомупдатетимевиндов
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -28,7 +30,7 @@ ms.locfileid: "42161343"
 |startTime|TimeOfDay|Время начала периода времени|
 |endTime|TimeOfDay|Время окончания периода времени|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

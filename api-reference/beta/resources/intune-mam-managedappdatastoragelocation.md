@@ -5,26 +5,28 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 8bb2af36d5d03c1e6d3662b97602cb7fd0c7e4d3
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a0975d0ebbfd27bb7bcad7d2252a5d73eced95c3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36332164"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527948"
 ---
 # <a name="managedappdatastoragelocation-enum-type"></a>тип перечисления Манажедаппдатасторажелокатион
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Места хранения, в которых управляемые приложения потенциально могут хранить свои данные
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|онедривефорбусинесс|1,1|OneDrive для бизнеса;|
-|sharePoint|2|SharePoint|
+|онедривефорбусинесс|1 |OneDrive для бизнеса;|
+|sharePoint|2 |SharePoint|
 |localStorage|6 |Локальное хранилище на устройстве|
 
 

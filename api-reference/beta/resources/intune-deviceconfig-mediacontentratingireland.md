@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 10070c62f7877b5a26cadc89afbcede55f668113
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b2da5f800d719558e0ba3990fbb7efb7b9280176
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36368725"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529620"
 ---
 # <a name="mediacontentratingireland-resource-type"></a>Тип ресурса mediaContentRatingIreland
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Н/Д
 
@@ -26,7 +28,7 @@ ms.locfileid: "36368725"
 |movieRating|[ратингиреландмовиестипе](../resources/intune-deviceconfig-ratingirelandmoviestype.md)|Оценка фильмов выбрана для Ирландии. Возможные значения: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove12`, `agesAbove15`, `agesAbove16`, `adults`.|
 |tvRating|[ратингиреландтелевисионтипе](../resources/intune-deviceconfig-ratingirelandtelevisiontype.md)|Рейтинг телевизора выбран для Ирландии. Возможные значения: `allAllowed`, `allBlocked`, `general`, `children`, `youngAdults`, `parentalSupervision`, `mature`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

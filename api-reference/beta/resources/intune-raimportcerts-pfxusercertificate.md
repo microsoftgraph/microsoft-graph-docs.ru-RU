@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e89c76b7fa429fad828f0b463f5b2ac6ff626685
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 65b35f1f75c99ce0d4823233212a8b1a1d807832
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42163565"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527591"
 ---
 # <a name="pfxusercertificate-resource-type"></a>Тип ресурса Пфксусерцертификате
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -50,7 +52,7 @@ ms.locfileid: "42163565"
 |lastModifiedTime|DateTimeOffset|Пока не задокументировано.|
 |eTag|String|Пока не задокументировано.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

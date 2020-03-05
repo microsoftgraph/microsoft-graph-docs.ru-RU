@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a592586e2d3c46c5551232ec036ff6ae1e1d8f7c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 8fd6bb4207d1d13178ac95f3622d22ce2a35e7ce
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36333508"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42526859"
 ---
 # <a name="defenderscantype-enum-type"></a>тип перечисления Дефендерскантипе
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Возможные значения для типа "сканирование системы".
 
@@ -24,9 +26,9 @@ ms.locfileid: "36333508"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|активирован|1,1|Сканирование системы отключено.|
-|Quick|2|Быстрая проверка системы.|
-|полный|4|Полное сканирование системы.|
+|активирован|1 |Сканирование системы отключено.|
+|Quick|2 |Быстрая проверка системы.|
+|полный|3 |Полное сканирование системы.|
 
 
 

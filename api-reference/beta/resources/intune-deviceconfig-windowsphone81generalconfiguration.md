@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3376c22b8fd8ae6b4c51e729c62ba9b74b070164
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 27c0b4b4758c81e459c02becd01e817775ffbed9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37197122"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528995"
 ---
 # <a name="windowsphone81generalconfiguration-resource-type"></a>Тип ресурса windowsPhone81GeneralConfiguration
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 В этой статье описаны объявляемые методы, свойства и связи, которые предоставляются ресурсом windowsPhone81GeneralConfiguration.
 
@@ -37,28 +39,28 @@ ms.locfileid: "37197122"
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|суппортсскопетагс|Boolean.|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|суппортсскопетагс|Логический|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|девицеманажементаппликабилитируледевицемоде|[девицеманажементаппликабилитируледевицемоде](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|applyOnlyToWindowsPhone81|Boolean.|Указывает, применяется ли эта политика только к Windows Phone 8.1. Это свойство доступно только для чтения.|
-|appsBlockCopyPaste|Boolean.|Указывает, следует ли заблокировать копирование данных.|
-|bluetoothBlocked|Boolean.|Указывает, следует ли заблокировать Bluetooth.|
-|cameraBlocked|Boolean.|Указывает, следует ли заблокировать камеру.|
-|cellularBlockWifiTethering|Boolean.|Указывает, следует ли заблокировать модем Wi-Fi. Ни на что не влияет, если Wi-Fi заблокирован.|
+|applyOnlyToWindowsPhone81|Логический|Указывает, применяется ли эта политика только к Windows Phone 8.1. Это свойство доступно только для чтения.|
+|appsBlockCopyPaste|Логический|Указывает, следует ли заблокировать копирование данных.|
+|bluetoothBlocked|Логический|Указывает, следует ли заблокировать Bluetooth.|
+|cameraBlocked|Логический|Указывает, следует ли заблокировать камеру.|
+|cellularBlockWifiTethering|Логический|Указывает, следует ли заблокировать модем Wi-Fi. Ни на что не влияет, если Wi-Fi заблокирован.|
 |compliantAppsList|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список приложений, соответствующих требованиям (список разрешений или блокировок, определяется свойством CompliantAppListType). Эта коллекция может содержать не более 10 000 элементов.|
 |compliantAppListType|[апплисттипе](../resources/intune-deviceconfig-applisttype.md)|Список, указанный с помощью свойства AppComplianceList. Возможные значения: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |diagnosticDataBlockSubmission|Логический|Указывает, следует ли заблокировать отправку диагностических данных.|
 |emailBlockAddingAccounts|Boolean|Указывает, следует ли заблокировать пользовательские учетные записи электронной почты.|
-|locationServicesBlocked|Boolean.|Указывает, следует ли заблокировать службы определения местоположения.|
+|locationServicesBlocked|Логический|Указывает, следует ли заблокировать службы определения местоположения.|
 |microsoftAccountBlocked|Boolean|Указывает, следует ли запретить использовать учетную запись Майкрософт.|
 |nfcBlocked|Логический|Указывает, следует ли заблокировать NFC.|
-|passwordBlockSimple|Boolean.|Указывает, следует ли заблокировать синхронизацию календаря.|
+|passwordBlockSimple|Логический|Указывает, следует ли заблокировать синхронизацию календаря.|
 |passwordExpirationDays|Int32|Количество дней до окончания срока действия пароля.|
 |passwordMinimumLength|Int32|Минимальная длина паролей.|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Время с момента последнего действия до отключения экрана (в минутах).|
@@ -66,18 +68,18 @@ ms.locfileid: "37197122"
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, которые следует заблокировать. Допустимые значения: от 0 до 24.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Количество неудачных попыток входа до восстановления заводских настроек.|
 |passwordRequiredType|[рекуиредпассвордтипе](../resources/intune-deviceconfig-requiredpasswordtype.md)|Необходимый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
-|passwordRequired|Boolean.|Указывает, обязательно ли использовать пароль.|
-|screenCaptureBlocked|Boolean.|Указывает, следует ли запретить делать снимки экрана.|
-|storageBlockRemovableStorage|Boolean.|Указывает, следует ли запретить использовать съемные носители.|
-|storageRequireEncryption|Boolean.|Указывает, обязательно ли шифрование.|
-|webBrowserBlocked|Boolean.|Указывает, следует ли заблокировать веб-браузер.|
-|wifiBlocked|Boolean.|Указывает, следует ли заблокировать Wi-Fi.|
-|wifiBlockAutomaticConnectHotspots|Boolean.|Указывает, следует ли заблокировать автоматическое подключение к хот-спотам Wi-Fi. Ни на что не влияет, если Wi-Fi заблокирован.|
+|passwordRequired|Логический|Указывает, обязательно ли использовать пароль.|
+|screenCaptureBlocked|Логический|Указывает, следует ли запретить делать снимки экрана.|
+|storageBlockRemovableStorage|Логический|Указывает, следует ли запретить использовать съемные носители.|
+|storageRequireEncryption|Логический|Указывает, обязательно ли шифрование.|
+|webBrowserBlocked|Логический|Указывает, следует ли заблокировать веб-браузер.|
+|wifiBlocked|Логический|Указывает, следует ли заблокировать Wi-Fi.|
+|wifiBlockAutomaticConnectHotspots|Логический|Указывает, следует ли заблокировать автоматическое подключение к хот-спотам Wi-Fi. Ни на что не влияет, если Wi-Fi заблокирован.|
 |wifiBlockHotspotReporting|Boolean|Указывает, следует ли запретить устройству сообщать об обнаруженных хот-спотах Wi-Fi. Ни на что не влияет, если Wi-Fi заблокирован.|
 |windowsStoreBlocked|Boolean|Указывает, следует ли заблокировать Microsoft Store.|
 
-## <a name="relationships"></a>Отношения
-|Отношение|Тип|Описание|
+## <a name="relationships"></a>Связи
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |groupAssignments|Коллекция [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|Список назначений групп для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |assignments|Коллекция [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|Список назначений для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|

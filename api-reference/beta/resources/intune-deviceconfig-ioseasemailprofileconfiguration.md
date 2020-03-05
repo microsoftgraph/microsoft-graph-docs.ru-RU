@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 17f56ac8860b93b046381a017a91894eea07e21c
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 83f5e382a1cccb23b0f30414b48f505b82199e92
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078304"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529938"
 ---
 # <a name="ioseasemailprofileconfiguration-resource-type"></a>Тип ресурса iosEasEmailProfileConfiguration
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -57,7 +59,7 @@ ms.locfileid: "38078304"
 |блокксинЦингрецентлюседемаиладдрессес|Логический|Указывает, следует ли заблокировать синхронизацию недавно использовавшихся адресов электронной почты (например, при создании нового сообщения электронной почты).|
 |дуратионофемаилтосинк|[емаилсинкдуратион](../resources/intune-deviceconfig-emailsyncduration.md)|Длительность времени, в течение которого будет синхронизироваться электронная почта. . Возможные значения: `userDefined`, `oneDay`, `threeDays`, `oneWeek`, `twoWeeks`, `oneMonth`, `unlimited`.|
 |емаиладдресссаурце|[усеремаилсаурце](../resources/intune-deviceconfig-useremailsource.md)|Атрибут электронной почты, выбранный из AAD и добавленный в этот профиль перед установкой на устройстве. Возможные значения: `userPrincipalName`, `primarySmtpAddress`.|
-|еассервицес|[еассервицес](../resources/intune-deviceconfig-easservices.md)|Синхронизация данных Exchange. Возможные `none`значения:, `calendars`, `contacts`, `email`, `notes`,. `reminders`|
+|easServices|[easServices](../resources/intune-deviceconfig-easservices.md)|Синхронизация данных Exchange. Возможные `none`значения:, `calendars`, `contacts`, `email`, `notes`,. `reminders`|
 |еассервицесусероверридинаблед|Логический|Разрешить пользователям изменять параметры синхронизации.|
 |hostName|String|Расположение Exchange (URL-адрес), к которому подключается собственное почтовое приложение.|
 |рекуиресмиме|Логический|Указывает, следует ли использовать сертификат S/MIME.|

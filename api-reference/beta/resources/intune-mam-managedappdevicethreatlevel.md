@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 8a676a27abeb48bd5a6cc487e036fa08db3afcda
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: df62fd78a6cf26eec9c3850bde0389c5e48cc91d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538877"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527934"
 ---
 # <a name="managedappdevicethreatlevel-enum-type"></a>тип перечисления Манажедаппдевицесреатлевел
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Уровень угроз максиум, разрешенный для приложения в соответствии с требованиями.
 
@@ -24,9 +26,9 @@ ms.locfileid: "37538877"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Значение не задано|
-|входящего|1,1|Устройство не должно иметь угроз|
-|потребление|2|Устройство должно иметь низкую угрозу.|
-|medium|4|Устройство должно иметь не более средней угрозы.|
+|входящего|1 |Устройство не должно иметь угроз|
+|потребление|2 |Устройство должно иметь низкую угрозу.|
+|medium|3 |Устройство должно иметь не более средней угрозы.|
 |высокоуровневых|4 |Устройство должно иметь не более высоких угроз|
 
 

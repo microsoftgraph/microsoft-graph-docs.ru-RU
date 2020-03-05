@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 87d223f8fc65036023647563de8705d5820514b5
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 08d5f3102bb2c748d24235290a8f75abe8408334
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42162444"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527599"
 ---
 # <a name="onpremencryptedpayload-resource-type"></a>Тип ресурса Онпременкриптедпайлоад
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -49,7 +51,7 @@ ms.locfileid: "42162444"
 |eTag|String|Пока не задокументировано.|
 |isDeleted|Boolean|Пока не задокументировано|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

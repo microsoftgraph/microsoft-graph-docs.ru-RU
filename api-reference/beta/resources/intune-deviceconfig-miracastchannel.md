@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 450dc01bcd66ab64022ad242808ffed7ef80fda0
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d0c280f5c4c1db74d1323375006a839ea422397e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36368641"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529602"
 ---
 # <a name="miracastchannel-enum-type"></a>тип перечисления Миракастчаннел
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Возможные значения для канала Miracast.
 
@@ -24,17 +26,17 @@ ms.locfileid: "36368641"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|one|1,1|Один.|
-|two|2|2.|
-|three|4|Трёх.|
-|four|SP4|Четыре.|
-|five|17:00|Следующих.|
+|one|1 |Один.|
+|two|2 |2.|
+|three|3 |Трёх.|
+|four|4 |Четыре.|
+|five|5 |Следующих.|
 |шест|6 |Шест.|
 |неделю|7 |Неделю.|
 |Основными|8 |Основными.|
 |9|9 |9.|
 |раз|10 |Раз.|
-|Eleven|-11:00|Eleven.|
+|Eleven|11 |Eleven.|
 |сиртисикс|36|36.|
 |40|40|40.|
 |фортифаур|44|44.|

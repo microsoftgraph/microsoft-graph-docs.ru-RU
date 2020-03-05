@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 226f9bc0ec559bad7ba155aff6da864525882822
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 20e0e4ea5d7152553f7de690ec693d5d0a1d30d1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42163474"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529730"
 ---
 # <a name="macoscredentialsinglesignonextension-resource-type"></a>Тип ресурса Макоскредентиалсинглесигнонекстенсион
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -28,11 +30,11 @@ ms.locfileid: "42163474"
 |:---|:---|:---|
 |екстенсионидентифиер|String|Получает или задает идентификатор пакета расширения приложения, выполняющего единый вход для указанных URL-адресов.|
 |теамидентифиер|String|Получает или задает идентификатор группы расширения приложения, выполняющего единый вход для указанных URL-адресов.|
-|домена|Коллекция строк|Получает или задает список имен узлов или доменов, для которых расширение приложения выполняет единый вход.|
+|домена|Коллекция String|Получает или задает список имен узлов или доменов, для которых расширение приложения выполняет единый вход.|
 |область|String|Получает или задает имя области для этого профиля, заданное с учетом регистра.|
 |построения|Коллекция [кэйтипедвалуепаир](../resources/intune-deviceconfig-keytypedvaluepair.md)|Получает или задает список типизированных пар "ключ — значение", используемых для настройки профилей типа учетных данных. Эта коллекция может содержать не более 500 элементов.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

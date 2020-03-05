@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 2f4113bd82c6afa6570ccdb2be77dd65584f01a5
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 00418943b8f10888f4517879907ad0bddfac47cc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42163558"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527585"
 ---
 # <a name="userpfxintendedpurpose-enum-type"></a>тип перечисления Усерпфксинтендедпурпосе
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -24,9 +26,9 @@ ms.locfileid: "42163558"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |неназначенных|нуль|Не назначены роли и использования.|
-|смиминкриптион|1,1|Является допустимым для шифрования S/MIME.|
-|смимесигнинг|2|Является допустимым для подписывания S/MIME.|
-|виртуального|SP4|Допустимо для использования в VPN.|
+|смиминкриптион|1 |Является допустимым для шифрования S/MIME.|
+|смимесигнинг|2 |Является допустимым для подписывания S/MIME.|
+|виртуального|4 |Допустимо для использования в VPN.|
 |подключений|8 |Допустимо для использования в Wi-Fi.|
 
 

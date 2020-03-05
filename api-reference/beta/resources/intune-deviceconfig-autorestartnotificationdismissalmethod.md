@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 56533377462f65428298d2878192faa9e1afb6df
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 27a94e59814588511f6eae6c8a6ecff3f64144b4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36333865"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527066"
 ---
 # <a name="autorestartnotificationdismissalmethod-enum-type"></a>тип перечисления Ауторестартнотификатиондисмиссалмесод
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Метод увольнения уведомления о необходимости автоматического перезапуска
 
@@ -24,8 +26,8 @@ ms.locfileid: "36333865"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроено|
-|Автоматически|1,1|Автоматическое закрытие|
-|user|2|Увольнение пользователей|
+|Автоматически|1 |Автоматическое закрытие|
+|user|2 |Увольнение пользователей|
 
 
 

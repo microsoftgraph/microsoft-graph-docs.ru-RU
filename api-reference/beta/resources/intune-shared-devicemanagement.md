@@ -5,14 +5,16 @@ localization_priority: Normal
 author: rolyon
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d498bf40347a43bf15f339952f05e37c711f7921
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: c41fe8c7b6f90994e02b14892b5a4094f7b3136a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42159474"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527456"
 ---
 # <a name="devicemanagement-resource-type"></a>Тип ресурса deviceManagement
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -65,7 +67,7 @@ ms.locfileid: "42159474"
 |id|String|Уникальный идентификатор, связанный с устройством.|
 |**Конфигурация устройства**|
 |интунеаккаунтид|GUID|Идентификатор учетной записи Intune для данного клиента|
-|легаципкмананжементенаблед|Boolean|Свойство, позволяющее управлять устаревшим управлением устаревших ПК для этой учетной записи. Это свойство доступно только для чтения.|
+|легаципкмананжементенаблед|Логический|Свойство, позволяющее управлять устаревшим управлением устаревших ПК для этой учетной записи. Это свойство доступно только для чтения.|
 |максимумдептокенс|Int32|Максимальное число маркеров DEP, разрешенных для каждого клиента.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Параметры уровня учетной записи.|
 |**Управление устройствами**|
@@ -83,7 +85,7 @@ ms.locfileid: "42159474"
 |**одж**|
 |домаинжоинконнекторс|Коллекция [девицеманажементдомаинжоинконнектор](../resources/intune-odj-devicemanagementdomainjoinconnector.md)|Список объектов Connector.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Обзор&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
 |:---|:---|:---|
 |**Android для работы**|
@@ -139,8 +141,8 @@ ms.locfileid: "42159474"
 |userExperienceAnalyticsRegressionSummary|userExperienceAnalyticsRegressionSummary|Сводка по регрессии аналитики взаимодействия с пользователем|
 |userExperienceAnalyticsDeviceStartupHistory|Коллекция Усерекспериенцеаналитиксдевицестартуфистори|Журнал запуска устройства Analytics User Experience|
 |усерекспериенцеаналитиксдевицестартуппроцессес|Коллекция Усерекспериенцеаналитиксдевицестартуппроцесс|Процессы запуска устройства Analytics User Experience|
-|усерекспериенцеаналитиксдевицестартуппроцессперформанце|Коллекция Усерекспериенцеаналитиксдевицестартуппроцессперформанце|Производительность процесса запуска устройства Analytics User Experience|
-|усерекспериенцеаналитиксстартупскорехистори|Коллекция Усерекспериенцеаналитиксстартупскорехистори|Журнал оценки запуска устройства Analytics User Experience|
+|userExperienceAnalyticsDeviceStartupProcessPerformance|Коллекция Усерекспериенцеаналитиксдевицестартуппроцессперформанце|Производительность процесса запуска устройства Analytics User Experience|
+|userExperienceAnalyticsStartupScoreHistory|Коллекция Усерекспериенцеаналитиксстартупскорехистори|Журнал оценки запуска устройства Analytics User Experience|
 |**Регистрации**|
 |depOnboardingSettings|Коллекция [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Эти коллекции нескольких маркеров DEP для каждого клиента.|
 |импортеддевицеидентитиес|Коллекция [импортеддевицеидентити](../resources/intune-enrollment-importeddeviceidentity.md)|Импортированные удостоверения устройств.|

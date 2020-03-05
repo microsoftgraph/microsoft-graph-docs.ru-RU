@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f2d3c6808b6fa350ea1ca5965eb7c123c0e70287
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7b63183914de4bf0fd2903142003f77359e9bb2a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36368795"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529635"
 ---
 # <a name="mediacontentratingaustralia-resource-type"></a>Тип ресурса mediaContentRatingAustralia
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Н/Д
 
@@ -26,7 +28,7 @@ ms.locfileid: "36368795"
 |movieRating|[ратингаустралиамовиестипе](../resources/intune-deviceconfig-ratingaustraliamoviestype.md)|Оценка фильмов выбрана для Австралии. Возможные значения: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove15`, `agesAbove18`.|
 |tvRating|[ратингаустралиателевисионтипе](../resources/intune-deviceconfig-ratingaustraliatelevisiontype.md)|Рейтинг для телевизора выбран для Австралии. Возможные значения: `allAllowed`, `allBlocked`, `preschoolers`, `children`, `general`, `parentalGuidance`, `mature`, `agesAbove15`, `agesAbove15AdultViolence`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 15ee9c536174aef1e56b6e6529b4a865780f9d2f
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 299cbc4d3fef034b412e0432ff5629f59a0c4b34
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38078255"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529896"
 ---
 # <a name="iosimportedpfxcertificateprofile-resource-type"></a>Тип ресурса Иосимпортедпфксцертификатепрофиле
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

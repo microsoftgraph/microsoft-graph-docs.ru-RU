@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1deab5310fad6a18a6770990f7f84ae100134451
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ff93946acfd1681dd03d94a742926be1653f543e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36333494"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42526854"
 ---
 # <a name="defendersecuritycenteritcontactdisplaytype-enum-type"></a>тип перечисления Дефендерсекуритицентеритконтактдисплайтипе
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Возможные значения для Дефендерсекуритицентеритконтактдисплай
 
@@ -24,9 +26,9 @@ ms.locfileid: "36333494"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Not Configured|
-|дисплайинаппандиннотификатионс|1,1|Отображение в приложении и в уведомлениях|
-|дисплайонлинапп|2|Отображение только в приложении|
-|дисплайонлиннотификатионс|4|Отображение только в уведомлениях|
+|дисплайинаппандиннотификатионс|1 |Отображение в приложении и в уведомлениях|
+|дисплайонлинапп|2 |Отображение только в приложении|
+|дисплайонлиннотификатионс|3 |Отображение только в уведомлениях|
 
 
 

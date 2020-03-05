@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8ed24dc039742ef7c0412fcd8a67f1a460062c7f
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 15460de0c53b1b7b383095b7bee50af0192b3462
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088282"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527486"
 ---
 # <a name="companyportalblockedaction-resource-type"></a>Тип ресурса Компанипорталблоккедактион
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -25,7 +27,7 @@ ms.locfileid: "38088282"
 |:---|:---|:---|
 |platform|[девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|ОС устройства/платформа. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |ownerType|[ownerType](../resources/intune-shared-ownertype.md)|Тип владения устройством. Возможные значения: `unknown`, `company`, `personal`.|
-|action|[компанипорталактион](../resources/intune-shared-companyportalaction.md)|Действие устройства. Возможные значения: `unknown`, `remove`, `reset`.|
+|action|[companyPortalAction](../resources/intune-shared-companyportalaction.md)|Действие устройства. Возможные значения: `unknown`, `remove`, `reset`.|
 
 ## <a name="relationships"></a>Связи
 Нет

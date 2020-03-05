@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 00608f053d5c41d25a089708165af7494cf435d2
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1894e9e91f74fdfec2c1531a908b2237d382f8a5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36368627"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42526008"
 ---
 # <a name="ndesconnector-resource-type"></a>Тип ресурса Ндесконнектор
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Сущность, представляющая локальный Соединитель NDES.
 
@@ -34,10 +36,10 @@ ms.locfileid: "36368627"
 |:---|:---|:---|
 |id|String|Ключ соединителя NDES Connector.|
 |lastConnectionDateTime|DateTimeOffset|Время последнего подключения для соединителя NDES Connector|
-|состояние|[ндесконнекторстате](../resources/intune-deviceconfig-ndesconnectorstate.md)|Состояние соединителя NDES Connector. Возможные значения: `none`, `active`, `inactive`.|
+|state|[ндесконнекторстате](../resources/intune-deviceconfig-ndesconnectorstate.md)|Состояние соединителя NDES Connector. Возможные значения: `none`, `active`, `inactive`.|
 |displayName|Строка|Понятное имя соединителя NDES Connector.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

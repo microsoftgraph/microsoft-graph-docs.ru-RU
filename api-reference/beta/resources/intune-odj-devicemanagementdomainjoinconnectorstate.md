@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f664a6b57d92f5a8cd2d586f8bc2747ffa6db71c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9cee18df0fe6ba3cc59d8d427aa472f8943e03d9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36342007"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527795"
 ---
 # <a name="devicemanagementdomainjoinconnectorstate-enum-type"></a>тип перечисления Девицеманажементдомаинжоинконнекторстате
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Состояние запроса ОДЖ.
 
@@ -24,8 +26,8 @@ ms.locfileid: "36342007"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |ASP|нуль|Соединитель активно проверяет связь с Intune.|
-|error|1,1|Нет сердца-червей от последнего часа до 1 часа.|
-|отсутств|2|От соединителя за последние 5 дней нет сердца-червей.|
+|error|1 |Нет сердца-червей от последнего часа до 1 часа.|
+|отсутств|2 |От соединителя за последние 5 дней нет сердца-червей.|
 
 
 

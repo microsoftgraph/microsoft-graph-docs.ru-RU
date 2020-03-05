@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5b2df645780cdd7d06847d3acb18766027bf4ad8
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: ea5cd7d7fe20e2b956e8beadcddf27f4b73f89ea
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636604"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528782"
 ---
 # <a name="devicemanagementsettingrequiredconstraint-resource-type"></a>Тип ресурса Девицеманажементсеттингрекуиредконстраинт
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,7 +28,7 @@ ms.locfileid: "41636604"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|нотконфигуредвалуе|Строка|Список значений, которые не настроены для параметра|
+|нотконфигуредвалуе|String|Список значений, которые не настроены для параметра|
 
 ## <a name="relationships"></a>Связи
 Нет

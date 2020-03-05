@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 391e911eb32639b9f814e8ad00aa9948e9f9e0e3
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 6dddb69c9559fbf7472615216c4498e5db65d69a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41634958"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528586"
 ---
 # <a name="deviceshellscript-resource-type"></a>Тип ресурса Девицешеллскрипт
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

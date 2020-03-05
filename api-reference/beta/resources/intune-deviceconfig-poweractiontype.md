@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 47ab4ba877f5563ff57d20eadde42f241713b311
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 9db6e404722c0de1f65f43d0ecfd5feff5852b60
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36371556"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529546"
 ---
 # <a name="poweractiontype-enum-type"></a>тип перечисления Поверактионтипе
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Типы действий по питанию
 
@@ -24,10 +26,10 @@ ms.locfileid: "36371556"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроено|
-|noAction|1,1|Нет действий|
-|спящий режим|2|Перевод устройства в состояние сна|
-|режим гибернации|4|Перевод устройства в спящий режим|
-|запланирован|SP4|Устройство завершения работы|
+|noAction|1 |Нет действий|
+|спящий режим|2 |Перевод устройства в состояние сна|
+|режим гибернации|3 |Перевод устройства в спящий режим|
+|запланирован|4 |Устройство завершения работы|
 
 
 

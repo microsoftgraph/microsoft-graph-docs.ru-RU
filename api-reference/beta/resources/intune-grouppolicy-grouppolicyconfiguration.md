@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c9ee783ffa3e037243a78cd49187511797e221de
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 5624f86622b49d8739de85a2c58067dd7263aace
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088072"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528117"
 ---
 # <a name="grouppolicyconfiguration-resource-type"></a>Тип ресурса Граупполициконфигуратион
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

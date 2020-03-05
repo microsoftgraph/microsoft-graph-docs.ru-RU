@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a05570ea826d3b1f23b36da4b49167dd422181b0
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 9a5f02d26a52560e982d386f714a199799e19a99
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636807"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528698"
 ---
 # <a name="comanagementeligibletype-enum-type"></a>тип перечисления Команажементелигиблетипе
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

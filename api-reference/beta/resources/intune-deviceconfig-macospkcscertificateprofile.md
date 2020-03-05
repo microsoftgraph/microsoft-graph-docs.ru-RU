@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 80a2fba4420552861b39c2e0a0f499ffcb7c378d
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 47cf0e9fcb109785ae0a82f87d8397caef4ed1b8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37538884"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42526092"
 ---
 # <a name="macospkcscertificateprofile-resource-type"></a>Тип ресурса Макоспкксцертификатепрофиле
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Профиль сертификата PKCS MacOS.
 
@@ -27,10 +29,10 @@ ms.locfileid: "37538884"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Макоспкксцертификатепрофилес](../api/intune-deviceconfig-macospkcscertificateprofile-list.md)|Коллекция [макоспкксцертификатепрофиле](../resources/intune-deviceconfig-macospkcscertificateprofile.md)|Список свойств и связей объектов [макоспкксцертификатепрофиле](../resources/intune-deviceconfig-macospkcscertificateprofile.md) .|
-|[Получение Макоспкксцертификатепрофиле](../api/intune-deviceconfig-macospkcscertificateprofile-get.md)|[макоспкксцертификатепрофиле](../resources/intune-deviceconfig-macospkcscertificateprofile.md)|Чтение свойств и связей объекта [макоспкксцертификатепрофиле](../resources/intune-deviceconfig-macospkcscertificateprofile.md) .|
-|[Создание Макоспкксцертификатепрофиле](../api/intune-deviceconfig-macospkcscertificateprofile-create.md)|[макоспкксцертификатепрофиле](../resources/intune-deviceconfig-macospkcscertificateprofile.md)|Создание нового объекта [макоспкксцертификатепрофиле](../resources/intune-deviceconfig-macospkcscertificateprofile.md) .|
+|[Получение Макоспкксцертификатепрофиле](../api/intune-deviceconfig-macospkcscertificateprofile-get.md)|[macOSPkcsCertificateProfile](../resources/intune-deviceconfig-macospkcscertificateprofile.md)|Чтение свойств и связей объекта [макоспкксцертификатепрофиле](../resources/intune-deviceconfig-macospkcscertificateprofile.md) .|
+|[Создание Макоспкксцертификатепрофиле](../api/intune-deviceconfig-macospkcscertificateprofile-create.md)|[macOSPkcsCertificateProfile](../resources/intune-deviceconfig-macospkcscertificateprofile.md)|Создание нового объекта [макоспкксцертификатепрофиле](../resources/intune-deviceconfig-macospkcscertificateprofile.md) .|
 |[Удаление Макоспкксцертификатепрофиле](../api/intune-deviceconfig-macospkcscertificateprofile-delete.md)|Нет|Удаляет объект [макоспкксцертификатепрофиле](../resources/intune-deviceconfig-macospkcscertificateprofile.md).|
-|[Обновление Макоспкксцертификатепрофиле](../api/intune-deviceconfig-macospkcscertificateprofile-update.md)|[макоспкксцертификатепрофиле](../resources/intune-deviceconfig-macospkcscertificateprofile.md)|Обновление свойств объекта [макоспкксцертификатепрофиле](../resources/intune-deviceconfig-macospkcscertificateprofile.md) .|
+|[Обновление Макоспкксцертификатепрофиле](../api/intune-deviceconfig-macospkcscertificateprofile-update.md)|[macOSPkcsCertificateProfile](../resources/intune-deviceconfig-macospkcscertificateprofile.md)|Обновление свойств объекта [макоспкксцертификатепрофиле](../resources/intune-deviceconfig-macospkcscertificateprofile.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|

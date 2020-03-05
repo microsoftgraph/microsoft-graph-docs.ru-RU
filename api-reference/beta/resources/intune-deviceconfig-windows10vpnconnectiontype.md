@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f16b905161a88b8e07f8f2d3b3f343ac2d693bef
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: e464f8136c069edd94d7ebacf9946d6648028dc6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36369698"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529161"
 ---
 # <a name="windows10vpnconnectiontype-enum-type"></a>тип перечисления windows10VpnConnectionType
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Типы VPN-подключений.
 
@@ -24,11 +26,11 @@ ms.locfileid: "36369698"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |пулсесекуре|нуль|Безопасный импульс.|
-|f5EdgeClient|1,1|Пограничный клиент F5.|
-|деллсоникваллмобилеконнект|2|Мобильное подключение Dell Сониквалл.|
-|чеккпоинткапсулевпн|4|Проверка покапсулы VPN.|
-|Автоматически|SP4|Автоматически.|
-|Клиентских|17:00|Клиентских.|
+|f5EdgeClient|1 |Пограничный клиент F5.|
+|деллсоникваллмобилеконнект|2 |Мобильное подключение Dell Сониквалл.|
+|чеккпоинткапсулевпн|3 |Проверка покапсулы VPN.|
+|Автоматически|4 |Автоматически.|
+|Клиентских|5 |Клиентских.|
 |L2TP|6 |L2TP.|
 |PPTP|7 |PPTP.|
 |клиентов|8 |Клиентов.|

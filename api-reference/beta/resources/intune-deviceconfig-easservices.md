@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c082cee7256718209b4ab5cb997a665c04fe25b5
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 263cd5001c23218e6465aba9860eee363099db26
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088135"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42526534"
 ---
 # <a name="easservices-enum-type"></a>тип перечисления Еассервицес
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -24,10 +26,10 @@ ms.locfileid: "38088135"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |нет|нуль|Пока не задокументировано.|
-|calendars|1,1|Включает синхронизацию календарей.|
-|contacts|2|Включает синхронизацию контактов.|
-|email|SP4|Включает синхронизацию электронной почты.|
-|notes|8,5|Включает синхронизацию заметок.|
+|calendars|1 |Включает синхронизацию календарей.|
+|contacts|2 |Включает синхронизацию контактов.|
+|email|4 |Включает синхронизацию электронной почты.|
+|notes|8 |Включает синхронизацию заметок.|
 |напоминания|16 |Включает синхронизацию напоминаний.|
 
 

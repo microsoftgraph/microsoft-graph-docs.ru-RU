@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a89a1b1ea890f26ef49d0cc5362af866c1f4c4ff
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: ccf5de7e4a9b877b1466f632ba2e1821aaed6161
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42163789"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528443"
 ---
 # <a name="userexperienceanalyticsstartupscorehistory-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксстартупскорехистори
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -24,10 +26,10 @@ ms.locfileid: "42163789"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Усерекспериенцеаналитиксстартупскорехисториес](../api/intune-devices-userexperienceanalyticsstartupscorehistory-list.md)|Коллекция [усерекспериенцеаналитиксстартупскорехистори](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md)|Список свойств и связей объектов [усерекспериенцеаналитиксстартупскорехистори](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md) .|
-|[Получение Усерекспериенцеаналитиксстартупскорехистори](../api/intune-devices-userexperienceanalyticsstartupscorehistory-get.md)|[усерекспериенцеаналитиксстартупскорехистори](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md)|Чтение свойств и связей объекта [усерекспериенцеаналитиксстартупскорехистори](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md) .|
-|[Создание Усерекспериенцеаналитиксстартупскорехистори](../api/intune-devices-userexperienceanalyticsstartupscorehistory-create.md)|[усерекспериенцеаналитиксстартупскорехистори](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md)|Создание нового объекта [усерекспериенцеаналитиксстартупскорехистори](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md) .|
+|[Получение Усерекспериенцеаналитиксстартупскорехистори](../api/intune-devices-userexperienceanalyticsstartupscorehistory-get.md)|[userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md)|Чтение свойств и связей объекта [усерекспериенцеаналитиксстартупскорехистори](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md) .|
+|[Создание Усерекспериенцеаналитиксстартупскорехистори](../api/intune-devices-userexperienceanalyticsstartupscorehistory-create.md)|[userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md)|Создание нового объекта [усерекспериенцеаналитиксстартупскорехистори](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md) .|
 |[Удаление Усерекспериенцеаналитиксстартупскорехистори](../api/intune-devices-userexperienceanalyticsstartupscorehistory-delete.md)|Нет|Удаляет объект [усерекспериенцеаналитиксстартупскорехистори](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md).|
-|[Обновление Усерекспериенцеаналитиксстартупскорехистори](../api/intune-devices-userexperienceanalyticsstartupscorehistory-update.md)|[усерекспериенцеаналитиксстартупскорехистори](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md)|Обновление свойств объекта [усерекспериенцеаналитиксстартупскорехистори](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md) .|
+|[Обновление Усерекспериенцеаналитиксстартупскорехистори](../api/intune-devices-userexperienceanalyticsstartupscorehistory-update.md)|[userExperienceAnalyticsStartupScoreHistory](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md)|Обновление свойств объекта [усерекспериенцеаналитиксстартупскорехистори](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -38,7 +40,7 @@ ms.locfileid: "42163789"
 |коребутскоре|Int32|Оценка загрузки ядра устройств для службы аналитики взаимодействия с пользователем.|
 |коресигнинскоре|Int32|Показатель для входа в систему для устройства аналитики с пользовательским интерфейсом.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

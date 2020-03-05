@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 2ea4dee71a18a6ddca4519d8b421d2097fc7907b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7455e6a3f3d9887a36dd49e9c66a207da950c785
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36367647"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529301"
 ---
 # <a name="vpnprovidertype-enum-type"></a>тип перечисления Впнпровидертипе
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Тип поставщика для VPN каждого приложения.
 
@@ -24,8 +26,8 @@ ms.locfileid: "36367647"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Туннельный трафик не настраивается явным образом.|
-|апппрокси|1,1|Трафик туннеля на уровне приложения.|
-|паккеттуннел|2|Трафик туннеля на уровне IP.|
+|апппрокси|1 |Трафик туннеля на уровне приложения.|
+|паккеттуннел|2 |Трафик туннеля на уровне IP.|
 
 
 

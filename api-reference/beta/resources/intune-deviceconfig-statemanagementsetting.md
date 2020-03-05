@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: edcd8f3c8217c29f1b3488bde90ffc8021464b73
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 603d2a282602f40a1804b4f317dd2d35e58e7b91
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36367899"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529367"
 ---
 # <a name="statemanagementsetting-enum-type"></a>тип перечисления Статеманажементсеттинг
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Параметр управления состоянием.
 
@@ -24,8 +26,8 @@ ms.locfileid: "36367899"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
-|заблокированных|1,1|Заблокированных.|
-|разрешенных|2|Разрешенных.|
+|заблокированных|1 |Заблокированных.|
+|разрешенных|2 |Разрешенных.|
 
 
 

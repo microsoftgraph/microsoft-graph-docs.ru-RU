@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 42ca89d265c65b49239e8272e0bd91f0666dc08a
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 03b8457573a88ade90bdf09289715727ffc9d6b7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37201285"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528352"
 ---
 # <a name="appleownertypeenrollmenttype-resource-type"></a>Тип ресурса Апплеовнертипинроллменттипе
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Н/Д
 
@@ -24,9 +26,9 @@ ms.locfileid: "37201285"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |ownerType|[managedDeviceOwnerType](../resources/intune-shared-manageddeviceownertype.md)|Тип владельца. Возможные значения: `unknown`, `company`, `personal`.|
-|enrollmentType|[апплеусеринитиатеденроллменттипе](../resources/intune-enrollment-appleuserinitiatedenrollmenttype.md)|Тип регистрации. Возможные значения: `unknown`, `device`, `user`.|
+|enrollmentType|[appleUserInitiatedEnrollmentType](../resources/intune-enrollment-appleuserinitiatedenrollmenttype.md)|Тип регистрации. Возможные значения: `unknown`, `device`, `user`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

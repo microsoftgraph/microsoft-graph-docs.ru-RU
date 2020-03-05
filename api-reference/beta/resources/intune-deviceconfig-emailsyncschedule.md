@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9e4d3645ea2c0eaa7f8f1cf8138f1c0727cfa0d8
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c77a56b5dea371b4d91deb2258dad265b4d0433c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36325633"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42526467"
 ---
 # <a name="emailsyncschedule-enum-type"></a>тип перечисления Емаилсинксчедуле
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Возможные значения для расписания синхронизации электронной почты.
 
@@ -24,11 +26,11 @@ ms.locfileid: "36325633"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|асмессажесарриве|1,1|Синхронизация по мере поступления сообщений.|
-|Вручную|2|Синхронизация вручную.|
-|фифтинминутес|4|Синхронизация каждые пятнадцать минут.|
-|thirtyMinutes|SP4|Синхронизация каждые 30 минут.|
-|сикстиминутес|17:00|Синхронизация каждые 60 минут.|
+|асмессажесарриве|1 |Синхронизация по мере поступления сообщений.|
+|Вручную|2 |Синхронизация вручную.|
+|фифтинминутес|3 |Синхронизация каждые пятнадцать минут.|
+|thirtyMinutes|4 |Синхронизация каждые 30 минут.|
+|сикстиминутес|5 |Синхронизация каждые 60 минут.|
 |баседонмюсаже|6 |Синхронизация с учетом использования.|
 
 

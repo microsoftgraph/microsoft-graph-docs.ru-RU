@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f5d6fbdcc26dd071387ae3a66d46fafa75c68758
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 48199ce2dac2fffcae35f483ebba174677805a52
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36356944"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529878"
 ---
 # <a name="iosnotificationalerttype-enum-type"></a>тип перечисления Иоснотификатионалерттипе
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Тип оповещения о параметрах уведомлений.
 
@@ -24,9 +26,9 @@ ms.locfileid: "36356944"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
-|заголовок|1,1|Заголовок.|
-|модаль|2|Модаль.|
-|none|4|Нет.|
+|заголовок|1 |Заголовок.|
+|модаль|2 |Модаль.|
+|нет|3 |Нет.|
 
 
 

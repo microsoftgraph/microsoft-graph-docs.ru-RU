@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 84877e37477ee0fcc9e1fdc5e1deb33846073845
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 15db6cf48925767ab66ad98204a7283a72a294b9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37201217"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527382"
 ---
 # <a name="macosvppappassignmentsettings-resource-type"></a>Тип ресурса Макосвппаппассигнментсеттингс
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Содержит свойства, используемые для назначения мобильному приложению Mac VPP группе.
 
@@ -28,7 +30,7 @@ ms.locfileid: "37201217"
 |:---|:---|:---|
 |useDeviceLicensing|Boolean|Указывает, используется ли лицензирование устройств.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

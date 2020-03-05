@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1da2a612a777491731fa0b85e2f754605ffa04bc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7417f5020fd7496a2daecde3ffbeb6e7391eaf08
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36370167"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528645"
 ---
 # <a name="devicegeolocation-resource-type"></a>Тип ресурса deviceGeoLocation
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Расположение устройства
 
@@ -25,15 +27,15 @@ ms.locfileid: "36370167"
 |:---|:---|:---|
 |ластколлектеддатетимеутк|DateTimeOffset|Время записи расположения относительно времени UTC|
 |lastCollectedDateTime|DateTimeOffset|Время записи расположения относительно времени UTC|
-|longitude|Двойное|Долгота расположения устройства|
-|latitude|Двойное|Широта расположения устройства|
-|altitude|Двойное|Высота (метров над уровнем моря)|
-|horizontalAccuracy|Двойное|Точность долготы и широты (м)|
-|verticalAccuracy|Двойное|Точность высоты (м)|
-|heading|Двойное|Направление от географического севера (градусов)|
+|longitude|Двойное с плавающей точкой|Долгота расположения устройства|
+|latitude|Двойное с плавающей точкой|Широта расположения устройства|
+|altitude|Двойное с плавающей точкой|Высота (метров над уровнем моря)|
+|horizontalAccuracy|Двойное с плавающей точкой|Точность долготы и широты (м)|
+|verticalAccuracy|Двойное с плавающей точкой|Точность высоты (м)|
+|heading|Двойное с плавающей точкой|Направление от географического севера (градусов)|
 |speed|Double|Скорость передвижения устройства (м/с)|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

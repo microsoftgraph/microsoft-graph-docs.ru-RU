@@ -5,26 +5,28 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: eebae7c21b7089718d5dc514511f4e3530db58c7
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: c596d2b328ebbd971a68a085c99414c0901ba898
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36332346"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528011"
 ---
 # <a name="androidmanagedappsafetynetappsverificationtype-enum-type"></a>тип перечисления Андроидманажедаппсафетинетаппсверификатионтипе
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Для управляемого приложения требуется, чтобы администратор применяет SafetyNet аттестации устройств Android.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|нет набора требований|
-|enabled|1,1|требовать, чтобы на устройстве Android была включена проверка приложений SafetyNet|
+|нет|нуль|нет набора требований|
+|enabled|1 |требовать, чтобы на устройстве Android была включена проверка приложений SafetyNet|
 
 
 

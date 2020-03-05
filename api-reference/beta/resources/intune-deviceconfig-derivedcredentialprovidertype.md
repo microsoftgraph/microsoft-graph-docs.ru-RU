@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6a6850d171d7298c514be5b9f92e261238df7642
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ab592c6e8e50def1b2064225d5e6bef108bed4c5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36333242"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42526735"
 ---
 # <a name="derivedcredentialprovidertype-enum-type"></a>тип перечисления Дериведкредентиалпровидертипе
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Тип поставщика для производных учетных данных.
 
@@ -24,10 +26,10 @@ ms.locfileid: "36333242"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен производный поставщик учетных данных.|
-|ентрустдатакард|1,1|Ентруст.|
-|пуребред|2|Агентство по оборонным информационным системам пуребред.|
-|кстек|4|Кстек — Аусенткс.|
-|интерцеде|SP4|Интерцеде.|
+|ентрустдатакард|1 |Ентруст.|
+|пуребред|2 |Агентство по оборонным информационным системам пуребред.|
+|кстек|3 |Кстек — Аусенткс.|
+|интерцеде|4 |Интерцеде.|
 
 
 

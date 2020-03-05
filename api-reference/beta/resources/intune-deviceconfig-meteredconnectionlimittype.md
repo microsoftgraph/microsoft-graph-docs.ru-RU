@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b75f39befaf2aca569cfa19df9803431e780356c
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ae979859b9e6802e91602c96e42cafb1104f6eeb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36368657"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42526015"
 ---
 # <a name="meteredconnectionlimittype-enum-type"></a>тип перечисления Метередконнектионлимиттипе
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Параметры ограничения лимитного подключения.
 
@@ -24,8 +26,8 @@ ms.locfileid: "36368657"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unrestricted|нуль|Unrestricted|
-|стандарт|1,1|ИСПРАВЛЕНО|
-|переменная|2|Переменная|
+|стандарт|1 |ИСПРАВЛЕНО|
+|переменная|2 |Переменная|
 
 
 

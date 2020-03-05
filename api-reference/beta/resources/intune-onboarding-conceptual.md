@@ -4,14 +4,16 @@ description: Перечисление API Microsoft Graph для конечны�
 localization_priority: Normal
 author: rolyon
 ms.prod: intune
-ms.openlocfilehash: b07c93901feb565b9f6816b5d8d5ae4580825b21
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: f32518db3843cdaf20c2af163c1fd01b40b6b58a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38088044"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527781"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Регистрация устройств для управления в Intune
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 

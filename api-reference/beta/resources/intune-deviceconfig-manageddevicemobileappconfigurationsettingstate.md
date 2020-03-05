@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d828b57e6ae76e3a0babcc2b27a009e60f7a6407
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 4b044565f0ec87570bbf9584b37217c0f4881839
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636299"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42529648"
 ---
 # <a name="manageddevicemobileappconfigurationsettingstate-resource-type"></a>Тип ресурса Манажеддевицемобилеаппконфигуратионсеттингстате
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -23,15 +25,15 @@ ms.locfileid: "41636299"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|setting|Строка|Параметр для отчета|
-|settingName|Строка|Локализованное или понятное имя параметра для отчета|
-|instanceDisplayName|Строка|Имя экземпляра параметра для отчета|
+|setting|String|Параметр для отчета|
+|settingName|String|Локализованное или понятное имя параметра для отчета|
+|instanceDisplayName|String|Имя экземпляра параметра для отчета|
 |state|[комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние соответствия для параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |errorCode|Int64|Код ошибки для параметра|
-|errorDescription|Строка|Описание ошибки|
+|errorDescription|String|Описание ошибки|
 |userId|String|ИД пользователя|
-|userName|Строка|Имя пользователя|
-|userEmail|Строка|Электронный адрес пользователя|
+|userName|String|Имя пользователя|
+|userEmail|String|Электронный адрес пользователя|
 |userPrincipalName|Строка|Имя участника-пользователя.|
 |sources|Коллекция [settingSource](../resources/intune-deviceconfig-settingsource.md)|Соответствующие политики|
 |currentValue|String|Текущее значение параметра на устройстве|

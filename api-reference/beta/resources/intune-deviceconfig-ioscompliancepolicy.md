@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c2563e970d23eaf1182e1a5b63cadae03180e676
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: 58e6e5601e06ab58d9e97b0fa9996c1dd6badc9a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37198147"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42526404"
 ---
 # <a name="ioscompliancepolicy-resource-type"></a>Тип ресурса iosCompliancePolicy
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Этот класс содержит параметры обеспечения соответствия требованиям для IOS.
 
@@ -35,14 +37,14 @@ ms.locfileid: "37198147"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |id|Строка|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
-|passcodeBlockSimple|Boolean.|Указывает, следует ли заблокировать простые секретные коды.|
+|passcodeBlockSimple|Логический|Указывает, следует ли заблокировать простые секретные коды.|
 |passcodeExpirationDays|Int32|Количество дней до окончания срока действия секретного кода. Допустимые значения: от 1 до 65 535.|
 |passcodeMinimumLength|Int32|Минимальная длина секретного кода. Допустимые значения: от 4 до 14.|
 |passcodeMinutesOfInactivityBeforeLock|Int32|Период бездействия (в минутах) до запроса пароля.|
@@ -51,18 +53,18 @@ ms.locfileid: "37198147"
 |passcodeMinimumCharacterSetCount|Int32|Количество наборов символов, которые требуются для пароля.|
 |passcodeRequiredType|[рекуиредпассвордтипе](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип секретного кода. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passcodeRequired|Логический|Указывает, требуется ли запрашивать секретный код.|
-|osMinimumVersion|String.|Минимальная версия iOS.|
+|osMinimumVersion|String|Минимальная версия iOS.|
 |osMaximumVersion|String|Максимальная версия iOS.|
-|осминимумбуилдверсион|String.|Минимальная версия сборки IOS.|
-|осмаксимумбуилдверсион|String.|Максимальная версия сборки IOS.|
-|securityBlockJailbrokenDevices|Boolean.|Устройства нельзя взламывать и рутовать.|
-|deviceThreatProtectionEnabled|Boolean.|Указывает на то, что защита от угроз для устройств должна быть включена.|
+|осминимумбуилдверсион|String|Минимальная версия сборки IOS.|
+|осмаксимумбуилдверсион|String|Максимальная версия сборки IOS.|
+|securityBlockJailbrokenDevices|Логический|Устройства нельзя взламывать и рутовать.|
+|deviceThreatProtectionEnabled|Логический|Указывает на то, что защита от угроз для устройств должна быть включена.|
 |deviceThreatProtectionRequiredSecurityLevel|[девицесреатпротектионлевел](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Указывает на то, что на уровне минимального риска, определенного в Mobile Threat Protection, нужно сообщать о несоответствии требованиям. Возможные значения: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |managedEmailProfileRequired|Boolean|Указывает, обязательно ли использовать управляемый профиль электронной почты.|
 |restrictedApps|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Потребовать, чтобы на устройстве не было установлено указанное приложение. Эта коллекция может содержать не более 100 элементов.|
 
-## <a name="relationships"></a>Отношения
-|Отношение|Тип|Описание|
+## <a name="relationships"></a>Связи
+|Связь|Тип|Описание|
 |:---|:---|:---|
 |scheduledActionsForRule|Коллекция [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md)|Список запланированных действий для этого правила. Наследуется от [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |deviceStatuses|Коллекция [deviceComplianceDeviceStatus](../resources/intune-deviceconfig-devicecompliancedevicestatus.md)|Список DeviceComplianceDeviceStatus. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|

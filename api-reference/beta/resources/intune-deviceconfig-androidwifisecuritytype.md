@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 84b55dc8b1b40eb5f9d590447a06cd37d9ffafad
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 773e53075f0a86d6c04b4d294e4604ff357260f9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36334278"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42527255"
 ---
 # <a name="androidwifisecuritytype-enum-type"></a>тип перечисления Андроидвифисекурититипе
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Типы безопасности Wi/Fi для Android.
 
@@ -24,8 +26,8 @@ ms.locfileid: "36334278"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |окно|нуль|Открыть (без проверки подлинности).|
-|впаентерприсе|1,1|WPA — предприятие. Для настройки параметров предприятия необходимо использовать тип AndroidEnterpriseWifiConfiguration.|
-|wpa2Enterprise|2|WPA2 — предприятие. Для настройки параметров предприятия необходимо использовать тип AndroidEnterpriseWifiConfiguration.|
+|впаентерприсе|1 |WPA — предприятие. Для настройки параметров предприятия необходимо использовать тип AndroidEnterpriseWifiConfiguration.|
+|wpa2Enterprise|2 |WPA2 — предприятие. Для настройки параметров предприятия необходимо использовать тип AndroidEnterpriseWifiConfiguration.|
 
 
 

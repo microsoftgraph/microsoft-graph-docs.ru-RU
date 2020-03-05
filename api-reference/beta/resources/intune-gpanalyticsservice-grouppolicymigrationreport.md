@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 40e173e3d40a7253bf0947edfd1284094b9ada26
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.openlocfilehash: 8f15de982acad969967b9c1bf4fdf634e8456172
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42159495"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528142"
 ---
 # <a name="grouppolicymigrationreport-resource-type"></a>Тип ресурса Граупполицимигратионрепорт
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -42,12 +44,12 @@ ms.locfileid: "42159495"
 |граупполицикреатеддатетиме|DateTimeOffset|Дата и время создания Граупполицимигратионрепорт.|
 |граупполициластмодифиеддатетиме|DateTimeOffset|Дата и время последнего изменения Граупполицимигратионрепорт.|
 |мигратионреадинесс|[groupPolicyMigrationReadiness](../resources/intune-gpanalyticsservice-grouppolicymigrationreadiness.md)|Область действия Intune для связанного файлового объекта групповой политики. Возможные значения: `none`, `partial`, `complete`, `error`, `notApplicable`.|
-|таржетединактиведиректори|Boolean|Свойство Targeted в Active Directory из XML-контента объекта групповой политики|
+|таржетединактиведиректори|Логический|Свойство Targeted в Active Directory из XML-контента объекта групповой политики|
 |тоталсеттингскаунт|Int32|Общее количество параметров групповой политики из файла GPO.|
 |суппортедсеттингскаунт|Int32|Количество параметров групповой политики, поддерживаемых Intune.|
 |суппортедсеттингсперцент|Int32|Процент параметров групповой политики, поддерживаемых Intune.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |граупполицисеттингмаппингс|Коллекция [граупполицисеттингмаппинг](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md)|Список параметров групповой политики для сопоставлений MDM/Intune.|

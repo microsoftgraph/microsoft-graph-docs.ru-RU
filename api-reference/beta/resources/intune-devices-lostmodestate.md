@@ -5,18 +5,20 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b8fd3f7399fb3a3dd120b4536481ad6f7fc29c80
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: a6b163529a28536780ea6a4cf95145fcf849ecdb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36372309"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42528548"
 ---
 # <a name="lostmodestate-enum-type"></a>тип перечисления Лостмодестате
 
+Пространство имен: Microsoft. Graph
+
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Состояние режима потери данных, указывающий, включен ли режим потерянных или отключенных
 
@@ -24,7 +26,7 @@ ms.locfileid: "36372309"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |активирован|нуль|Отключенный режим отключен.|
-|enabled|1,1|Включен режим "потеряно".|
+|enabled|1 |Включен режим "потеряно".|
 
 
 

@@ -5,14 +5,16 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 063be0456ae8f14dec3b300bd6387169ce057615
-ms.sourcegitcommit: 5b1fad41067629d0e9f87746328664bb248f754f
+ms.openlocfilehash: 69ea4c240c9f0e4db2cb11eaad3324d98db16ec5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "38082768"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42526201"
 ---
 # <a name="macoscustomappconfiguration-resource-type"></a>Тип ресурса Макоскустомаппконфигуратион
+
+Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,10 +29,10 @@ ms.locfileid: "38082768"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Макоскустомаппконфигуратионс](../api/intune-deviceconfig-macoscustomappconfiguration-list.md)|Коллекция [макоскустомаппконфигуратион](../resources/intune-deviceconfig-macoscustomappconfiguration.md)|Список свойств и связей объектов [макоскустомаппконфигуратион](../resources/intune-deviceconfig-macoscustomappconfiguration.md) .|
-|[Получение Макоскустомаппконфигуратион](../api/intune-deviceconfig-macoscustomappconfiguration-get.md)|[макоскустомаппконфигуратион](../resources/intune-deviceconfig-macoscustomappconfiguration.md)|Чтение свойств и связей объекта [макоскустомаппконфигуратион](../resources/intune-deviceconfig-macoscustomappconfiguration.md) .|
-|[Создание Макоскустомаппконфигуратион](../api/intune-deviceconfig-macoscustomappconfiguration-create.md)|[макоскустомаппконфигуратион](../resources/intune-deviceconfig-macoscustomappconfiguration.md)|Создание нового объекта [макоскустомаппконфигуратион](../resources/intune-deviceconfig-macoscustomappconfiguration.md) .|
+|[Получение Макоскустомаппконфигуратион](../api/intune-deviceconfig-macoscustomappconfiguration-get.md)|[macOSCustomAppConfiguration](../resources/intune-deviceconfig-macoscustomappconfiguration.md)|Чтение свойств и связей объекта [макоскустомаппконфигуратион](../resources/intune-deviceconfig-macoscustomappconfiguration.md) .|
+|[Создание Макоскустомаппконфигуратион](../api/intune-deviceconfig-macoscustomappconfiguration-create.md)|[macOSCustomAppConfiguration](../resources/intune-deviceconfig-macoscustomappconfiguration.md)|Создание нового объекта [макоскустомаппконфигуратион](../resources/intune-deviceconfig-macoscustomappconfiguration.md) .|
 |[Удаление Макоскустомаппконфигуратион](../api/intune-deviceconfig-macoscustomappconfiguration-delete.md)|Нет|Удаляет объект [макоскустомаппконфигуратион](../resources/intune-deviceconfig-macoscustomappconfiguration.md).|
-|[Обновление Макоскустомаппконфигуратион](../api/intune-deviceconfig-macoscustomappconfiguration-update.md)|[макоскустомаппконфигуратион](../resources/intune-deviceconfig-macoscustomappconfiguration.md)|Обновление свойств объекта [макоскустомаппконфигуратион](../resources/intune-deviceconfig-macoscustomappconfiguration.md) .|
+|[Обновление Макоскустомаппконфигуратион](../api/intune-deviceconfig-macoscustomappconfiguration-update.md)|[macOSCustomAppConfiguration](../resources/intune-deviceconfig-macoscustomappconfiguration.md)|Обновление свойств объекта [макоскустомаппконфигуратион](../resources/intune-deviceconfig-macoscustomappconfiguration.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
