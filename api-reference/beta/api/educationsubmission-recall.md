@@ -5,14 +5,16 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d37d34685aabe00bff82de453e68a8ebba36aa3a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 765fbd52abcab03682ea93769c9c1700b6a8436b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955084"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42424878"
 ---
 # <a name="educationsubmission-recall"></a>educationSubmission: отзыв
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

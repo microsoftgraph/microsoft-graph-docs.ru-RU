@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 591f9cbdc4d1d83af74dddca34102ad23e6d31a5
-ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
+ms.openlocfilehash: 043268b4822c8f43a332d8a6908a3d6a3c407634
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37418246"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42427272"
 ---
 # <a name="update-educationassignment"></a>Обновление educationassignment
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,15 +45,15 @@ PATCH /education/classes/{id}/assignments/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|алловлатесубмиссионс|Boolean| Можно ли отправлять отправку после даты выполнения.|
-|алловстудентстоаддресаурцестосубмиссион|Boolean| Может ли студент добавить ресурсы в отправку. Указывает, поступили ли только элементы, отправленные в отправке, из списка ресурсов назначения. |
+|алловлатесубмиссионс|Логический| Можно ли отправлять отправку после даты выполнения.|
+|алловстудентстоаддресаурцестосубмиссион|Логический| Может ли студент добавить ресурсы в отправку. Указывает, поступили ли только элементы, отправленные в отправке, из списка ресурсов назначения. |
 |ассигндатетиме|DateTimeOffset| Дата, когда назначение должно быть опубликовано для учащихся. |
 |ассигнто|едукатионассигнментреЦипиент| Студенты, которые получают назначение.|
 |клоседатетиме|DateTimeOffset| Дата, когда назначение будет закрыто для отправки. Это необязательное поле, которое может иметь значение null, если назначение не Алловлатесубмиссионс или Клоседатетиме совпадает с Дуедатетиме, но если указано, оно должно быть больше или равно Дуедатетиме.|
 |displayName|String| Имя назначения. |
 |dueDateTime|DateTimeOffset| Дата выполнения. |
 |снижения|едукатионассигнментградетипе| Как будет выполняться оценка назначения.|
-|выполнен|itemBody| Инструкции, которые необходимо предоставить студентам вместе с назначением. |
+|выполнен|итембоди| Инструкции, которые необходимо предоставить студентам вместе с назначением. |
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [educationAssignment](../resources/educationassignment.md) в тексте отклика.
@@ -59,7 +61,7 @@ PATCH /education/classes/{id}/assignments/{id}
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationassignment"
@@ -78,15 +80,15 @@ Content-length: 279
   "dueDateTime": "2014-02-01T00:00:00Z"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationassignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationassignment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

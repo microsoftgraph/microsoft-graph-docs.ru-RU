@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0ec9ebc02c10794d6e022de33e12a77cac66620e
-ms.sourcegitcommit: f50b1feff72182d1e19bfa346304beaf29558b68
+ms.openlocfilehash: a02098f65bdf9357bcc944d667d7657871895e1e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36461129"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42426194"
 ---
 # <a name="update-educationoutcome"></a>Обновление едукатионауткоме
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +42,7 @@ PATCH /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -48,7 +50,7 @@ PATCH /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 
 Объект Едукатионауткоме будет одним из следующих производных типов: **едукатионпоинтсауткоме**, **едукатионфидбаккауткоме**или **едукатионрубрикауткоме**. Предоставьте конкретные свойства, относящиеся к типу обновляемого результата.
 
-Все производные типы результатов имеют обычные и публикуемые свойства, соответствующие этому типу результата; Например, **баллы** и **публишедпоинтс**, **Отзывы** и **публишедфидбакк**. Не обновляйте свойство "Опубликовано"; Он предназначен для внутреннего использования. Например, чтобы назначить точки **едукатионпоинтсауткоме**, обновите свойство Points **** , но не обновляйте **публишедпоинтс**.
+Все производные типы результатов имеют обычные и публикуемые свойства, соответствующие этому типу результата; Например, **баллы** и **публишедпоинтс**, **Отзывы** и **публишедфидбакк**. Не обновляйте свойство "Опубликовано"; Он предназначен для внутреннего использования. Например, чтобы назначить точки **едукатионпоинтсауткоме**, обновите свойство **points** , но не обновляйте **публишедпоинтс**.
 
 ## <a name="response"></a>Отклик
 
@@ -62,7 +64,7 @@ PATCH /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 
 Ниже приведен пример запроса на обновление результатов обратной связи.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationfeedbackoutcome"
@@ -82,7 +84,7 @@ Content-type: application/json
     }
 }
 ```
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationfeedbackoutcome-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -134,7 +136,7 @@ Content-type: application/json
 
 Ниже приведен пример запроса на обновление результата баллов.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationpointsoutcome"
@@ -152,7 +154,7 @@ Content-type: application/json
     }
 }
 ```
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationpointsoutcome-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -201,7 +203,7 @@ Content-type: application/json
 
 Ниже приведен пример запроса на обновление результата Rubric.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationoutcome"
@@ -241,7 +243,7 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationoutcome-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

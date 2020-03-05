@@ -5,14 +5,16 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: aa9c2738b894457234cb82daee1364605fd64ba9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cb210affa5d98bdbc9a5cd012adc20a5c4ac49ea
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955553"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42427090"
 ---
 # <a name="update-educationassignmentresource"></a>Обновление Едукатионассигнментресаурце
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,8 +45,8 @@ PATCH /education/classes/{id}/assignments/{id}/resources/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Дистрибутефорстудентворк|Boolean| Указывает, следует ли копировать этот ресурс в объект ресурса каждого учащегося при публикации назначения.|
-|resource|Едукатионресаурце| Объект Resource. |
+|дистрибутефорстудентворк|Логический| Указывает, следует ли копировать этот ресурс в объект ресурса каждого учащегося при публикации назначения.|
+|resource|едукатионресаурце| Объект Resource. |
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [едукатионассигнментресаурце](../resources/educationassignmentresource.md) в тексте отклика.
@@ -65,7 +67,7 @@ Content-length: 822
 }
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 

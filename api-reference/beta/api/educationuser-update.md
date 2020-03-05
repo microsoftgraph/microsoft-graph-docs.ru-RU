@@ -5,14 +5,16 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 6be8a60248290ab1a96b499000b6b548925974e4
-ms.sourcegitcommit: e4b0211db9b20dfea8be964003661cd99fe064d1
+ms.openlocfilehash: 11c0b59f5ee79c18e8920a8979db23fe3769f60c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "37439738"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42423520"
 ---
 # <a name="update-educationuser-properties"></a>Обновление свойств educationUser
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,8 +56,8 @@ PATCH /education/users/{id}
 | surname          | String                                               | Фамилия пользователя                                                                                                                                  |
 | mail             | String                                               | Электронный адрес                                                                                                                                    |
 | mobilePhone      | String                                               | Номер мобильного телефона пользователя                                                                                                                            |
-| externalSource   | string                                               | Возможные значения: `sis`, `manual`, `enum_sentinel`.                                                                                           |
-| externalSource   | string                                               | Источник для создания пользователя.  Возможные значения: `sis`, `manual`, `enum_sentinel`.                                                        |
+| externalSource   | строка                                               | Возможные значения: `sis`, `manual`, `enum_sentinel`.                                                                                           |
+| externalSource   | строка                                               | Источник для создания пользователя.  Возможные значения: `sis`, `manual`, `enum_sentinel`.                                                        |
 | mailingAddress   | [physicalAddress](../resources/physicaladdress.md)   | Почтовый адрес пользователя.                                                                                                                            |
 | residenceAddress | [physicalAddress](../resources/physicaladdress.md)   | Адрес проживания пользователя.                                                                                                                        |
 | primaryRole      | string                                               | Роль по умолчанию для пользователя.  Роль пользователя для отдельного курса может отличаться. Возможные значения: `student`, `teacher`, `enum_sentinel`. |
@@ -72,7 +74,7 @@ PATCH /education/users/{id}
 
 Ниже приведен пример запроса.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationuser"
@@ -89,15 +91,15 @@ Content-length: 508
   "surname": "Cazares",
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -105,7 +107,7 @@ Content-length: 508
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",

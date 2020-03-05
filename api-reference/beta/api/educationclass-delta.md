@@ -5,14 +5,16 @@ localization_priority: Normal
 author: mlafleur
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 03a026a479c9502e00b86e41936619613013b9af
-ms.sourcegitcommit: a3cdbd21dd81ca0158d63a1725fa0bd1dc270618
+ms.openlocfilehash: 874898b68bcdb1d4bfc450668ebff89030859a02
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34764773"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42426880"
 ---
 # <a name="educationclass-delta"></a>educationClass: Delta
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

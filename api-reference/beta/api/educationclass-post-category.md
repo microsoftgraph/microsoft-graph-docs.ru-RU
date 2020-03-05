@@ -5,14 +5,16 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 16f7f4bf6ea58aa5d29ae63b95f4b104d0dd1d93
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: db552b9b452453c3efed72c7d94fc14fa1cbe6c1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955371"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42426425"
 ---
 # <a name="create-educationcategory"></a>Создание Едукатионкатегори
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +41,7 @@ POST /education/classes/{id}/assignmentCategories
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [едукатионкатегори](../resources/educationcategory.md) в формате JSON.
 
 

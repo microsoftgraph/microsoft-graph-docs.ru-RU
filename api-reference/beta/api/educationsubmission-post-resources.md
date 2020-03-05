@@ -5,14 +5,16 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 36b7f0432577dacb716c0eaa2ee232cc3e49a40e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8b8c92e3e26d588a79c7af460124fe56b3f708a8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35955074"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42425032"
 ---
 # <a name="create-educationsubmissionresource"></a>Создание Едукатионсубмиссионресаурце
+
+Пространство имен: Microsoft. Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +41,7 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/resources
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [едукатионсубмиссионресаурце](../resources/educationsubmissionresource.md) в формате JSON.
 
 
