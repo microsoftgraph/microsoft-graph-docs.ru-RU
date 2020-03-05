@@ -5,28 +5,30 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: eaab7f66d35b7251aa9dd4f87a8b24f071d26140
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 6c8e7463df2b8f2f172b87e137522906e14b8105
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36374150"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524148"
 ---
-# <a name="devicemanagementexchangeconnectortype-enum-type"></a><span data-ttu-id="b16f3-103">тип перечисления Девицеманажементексчанжеконнектортипе</span><span class="sxs-lookup"><span data-stu-id="b16f3-103">deviceManagementExchangeConnectorType enum type</span></span>
+# <a name="devicemanagementexchangeconnectortype-enum-type"></a><span data-ttu-id="921b0-103">тип перечисления Девицеманажементексчанжеконнектортипе</span><span class="sxs-lookup"><span data-stu-id="921b0-103">deviceManagementExchangeConnectorType enum type</span></span>
 
-> <span data-ttu-id="b16f3-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b16f3-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="921b0-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="921b0-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="b16f3-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="b16f3-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="921b0-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="921b0-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="b16f3-106">Тип соединителя Exchange.</span><span class="sxs-lookup"><span data-stu-id="b16f3-106">The type of Exchange Connector.</span></span>
+> <span data-ttu-id="921b0-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="921b0-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="b16f3-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="b16f3-107">Members</span></span>
-|<span data-ttu-id="b16f3-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="b16f3-108">Member</span></span>|<span data-ttu-id="b16f3-109">Значение</span><span class="sxs-lookup"><span data-stu-id="b16f3-109">Value</span></span>|<span data-ttu-id="b16f3-110">Описание</span><span class="sxs-lookup"><span data-stu-id="b16f3-110">Description</span></span>|
+<span data-ttu-id="921b0-107">Тип соединителя Exchange.</span><span class="sxs-lookup"><span data-stu-id="921b0-107">The type of Exchange Connector.</span></span>
+
+## <a name="members"></a><span data-ttu-id="921b0-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="921b0-108">Members</span></span>
+|<span data-ttu-id="921b0-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="921b0-109">Member</span></span>|<span data-ttu-id="921b0-110">Значение</span><span class="sxs-lookup"><span data-stu-id="921b0-110">Value</span></span>|<span data-ttu-id="921b0-111">Описание</span><span class="sxs-lookup"><span data-stu-id="921b0-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b16f3-111">onPremises</span><span class="sxs-lookup"><span data-stu-id="b16f3-111">onPremises</span></span>|<span data-ttu-id="b16f3-112">нуль</span><span class="sxs-lookup"><span data-stu-id="b16f3-112">0</span></span>|<span data-ttu-id="b16f3-113">Подключается к локальной среде Exchange.</span><span class="sxs-lookup"><span data-stu-id="b16f3-113">Connects to on-premises Exchange Environment.</span></span>|
-|<span data-ttu-id="b16f3-114">хост</span><span class="sxs-lookup"><span data-stu-id="b16f3-114">hosted</span></span>|<span data-ttu-id="b16f3-115">1,1</span><span class="sxs-lookup"><span data-stu-id="b16f3-115">1</span></span>|<span data-ttu-id="b16f3-116">Подключается к среде Exchange с несколькими клиентами Office 365</span><span class="sxs-lookup"><span data-stu-id="b16f3-116">Connects to O365 multi-tenant Exchange environment</span></span>|
-|<span data-ttu-id="b16f3-117">сервицетосервице</span><span class="sxs-lookup"><span data-stu-id="b16f3-117">serviceToService</span></span>|<span data-ttu-id="b16f3-118">2</span><span class="sxs-lookup"><span data-stu-id="b16f3-118">2</span></span>|<span data-ttu-id="b16f3-119">Служба Intune подключается напрямую к среде Exchange с несколькими клиентами Office 365</span><span class="sxs-lookup"><span data-stu-id="b16f3-119">Intune Service connects directly to O365 multi-tenant Exchange environment</span></span>|
-|<span data-ttu-id="b16f3-120">уполномочен</span><span class="sxs-lookup"><span data-stu-id="b16f3-120">dedicated</span></span>|<span data-ttu-id="b16f3-121">4</span><span class="sxs-lookup"><span data-stu-id="b16f3-121">3</span></span>|<span data-ttu-id="b16f3-122">Подключается к выделенной среде Exchange O365.</span><span class="sxs-lookup"><span data-stu-id="b16f3-122">Connects to O365 Dedicated Exchange environment.</span></span>|
+|<span data-ttu-id="921b0-112">onPremises</span><span class="sxs-lookup"><span data-stu-id="921b0-112">onPremises</span></span>|<span data-ttu-id="921b0-113">нуль</span><span class="sxs-lookup"><span data-stu-id="921b0-113">0</span></span>|<span data-ttu-id="921b0-114">Подключается к локальной среде Exchange.</span><span class="sxs-lookup"><span data-stu-id="921b0-114">Connects to on-premises Exchange Environment.</span></span>|
+|<span data-ttu-id="921b0-115">хост</span><span class="sxs-lookup"><span data-stu-id="921b0-115">hosted</span></span>|<span data-ttu-id="921b0-116">1 </span><span class="sxs-lookup"><span data-stu-id="921b0-116">1</span></span>|<span data-ttu-id="921b0-117">Подключается к среде Exchange с несколькими клиентами Office 365</span><span class="sxs-lookup"><span data-stu-id="921b0-117">Connects to O365 multi-tenant Exchange environment</span></span>|
+|<span data-ttu-id="921b0-118">сервицетосервице</span><span class="sxs-lookup"><span data-stu-id="921b0-118">serviceToService</span></span>|<span data-ttu-id="921b0-119">2 </span><span class="sxs-lookup"><span data-stu-id="921b0-119">2</span></span>|<span data-ttu-id="921b0-120">Служба Intune подключается напрямую к среде Exchange с несколькими клиентами Office 365</span><span class="sxs-lookup"><span data-stu-id="921b0-120">Intune Service connects directly to O365 multi-tenant Exchange environment</span></span>|
+|<span data-ttu-id="921b0-121">уполномочен</span><span class="sxs-lookup"><span data-stu-id="921b0-121">dedicated</span></span>|<span data-ttu-id="921b0-122">3 </span><span class="sxs-lookup"><span data-stu-id="921b0-122">3</span></span>|<span data-ttu-id="921b0-123">Подключается к выделенной среде Exchange O365.</span><span class="sxs-lookup"><span data-stu-id="921b0-123">Connects to O365 Dedicated Exchange environment.</span></span>|
 
 
 

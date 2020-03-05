@@ -5,26 +5,28 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e770a111ed7182660dc1d1b921a0f9a08920bf95
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b2761879846a71a7d12a13a3f03730c70ea52c7d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36367941"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525847"
 ---
-# <a name="signinassistantoptions-enum-type"></a><span data-ttu-id="70fbd-103">тип перечисления Сигнинассистантоптионс</span><span class="sxs-lookup"><span data-stu-id="70fbd-103">signInAssistantOptions enum type</span></span>
+# <a name="signinassistantoptions-enum-type"></a><span data-ttu-id="53dea-103">тип перечисления Сигнинассистантоптионс</span><span class="sxs-lookup"><span data-stu-id="53dea-103">signInAssistantOptions enum type</span></span>
 
-> <span data-ttu-id="70fbd-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="70fbd-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="53dea-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="53dea-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="70fbd-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="70fbd-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="53dea-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="53dea-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="70fbd-106">Значения для параметра Сигнинассистантсеттингс.</span><span class="sxs-lookup"><span data-stu-id="70fbd-106">Values for the SignInAssistantSettings.</span></span>
+> <span data-ttu-id="53dea-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="53dea-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="70fbd-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="70fbd-107">Members</span></span>
-|<span data-ttu-id="70fbd-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="70fbd-108">Member</span></span>|<span data-ttu-id="70fbd-109">Значение</span><span class="sxs-lookup"><span data-stu-id="70fbd-109">Value</span></span>|<span data-ttu-id="70fbd-110">Описание</span><span class="sxs-lookup"><span data-stu-id="70fbd-110">Description</span></span>|
+<span data-ttu-id="53dea-107">Значения для параметра Сигнинассистантсеттингс.</span><span class="sxs-lookup"><span data-stu-id="53dea-107">Values for the SignInAssistantSettings.</span></span>
+
+## <a name="members"></a><span data-ttu-id="53dea-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="53dea-108">Members</span></span>
+|<span data-ttu-id="53dea-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="53dea-109">Member</span></span>|<span data-ttu-id="53dea-110">Значение</span><span class="sxs-lookup"><span data-stu-id="53dea-110">Value</span></span>|<span data-ttu-id="53dea-111">Описание</span><span class="sxs-lookup"><span data-stu-id="53dea-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="70fbd-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="70fbd-111">notConfigured</span></span>|<span data-ttu-id="70fbd-112">нуль</span><span class="sxs-lookup"><span data-stu-id="70fbd-112">0</span></span>|<span data-ttu-id="70fbd-113">Не настроено — влидсвк для запуска будет установлено значение SERVICE_DEMAND_START.</span><span class="sxs-lookup"><span data-stu-id="70fbd-113">Not configured - wlidsvc Start will be set to SERVICE_DEMAND_START.</span></span>|
-|<span data-ttu-id="70fbd-114">активирован</span><span class="sxs-lookup"><span data-stu-id="70fbd-114">disabled</span></span>|<span data-ttu-id="70fbd-115">1,1</span><span class="sxs-lookup"><span data-stu-id="70fbd-115">1</span></span>|<span data-ttu-id="70fbd-116">Disabled — для запуска влидсвк будет задано значение SERVICE_DISABLED.</span><span class="sxs-lookup"><span data-stu-id="70fbd-116">Disabled - wlidsvc Start will be set to SERVICE_DISABLED.</span></span>|
+|<span data-ttu-id="53dea-112">notConfigured</span><span class="sxs-lookup"><span data-stu-id="53dea-112">notConfigured</span></span>|<span data-ttu-id="53dea-113">нуль</span><span class="sxs-lookup"><span data-stu-id="53dea-113">0</span></span>|<span data-ttu-id="53dea-114">Не настроено — для параметра Start влидсвк будет задано значение SERVICE_DEMAND_START.</span><span class="sxs-lookup"><span data-stu-id="53dea-114">Not configured - wlidsvc Start will be set to SERVICE_DEMAND_START.</span></span>|
+|<span data-ttu-id="53dea-115">активирован</span><span class="sxs-lookup"><span data-stu-id="53dea-115">disabled</span></span>|<span data-ttu-id="53dea-116">1 </span><span class="sxs-lookup"><span data-stu-id="53dea-116">1</span></span>|<span data-ttu-id="53dea-117">Disabled — для запуска влидсвк будет задано значение SERVICE_DISABLED.</span><span class="sxs-lookup"><span data-stu-id="53dea-117">Disabled - wlidsvc Start will be set to SERVICE_DISABLED.</span></span>|
 
 
 

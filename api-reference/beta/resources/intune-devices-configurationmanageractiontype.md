@@ -5,28 +5,30 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: eb2e4ccc3718ff06b1805ee6a19639e9e2d659eb
-ms.sourcegitcommit: 86903a4730bbd825eabb7f0a1b2429723cc8b1e6
+ms.openlocfilehash: b15d8315c33890185f91c84b95bd75155c6a94f6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "37201295"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525147"
 ---
-# <a name="configurationmanageractiontype-enum-type"></a><span data-ttu-id="f4e80-103">тип перечисления Конфигуратионманажерактионтипе</span><span class="sxs-lookup"><span data-stu-id="f4e80-103">configurationManagerActionType enum type</span></span>
+# <a name="configurationmanageractiontype-enum-type"></a><span data-ttu-id="38a68-103">тип перечисления Конфигуратионманажерактионтипе</span><span class="sxs-lookup"><span data-stu-id="38a68-103">configurationManagerActionType enum type</span></span>
 
-> <span data-ttu-id="f4e80-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f4e80-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="38a68-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="38a68-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="f4e80-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="f4e80-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="38a68-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="38a68-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="f4e80-106">Тип действия в клиенте Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="f4e80-106">Action type on Configuration Manager client</span></span>
+> <span data-ttu-id="38a68-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="38a68-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="f4e80-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="f4e80-107">Members</span></span>
-|<span data-ttu-id="f4e80-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="f4e80-108">Member</span></span>|<span data-ttu-id="f4e80-109">Значение</span><span class="sxs-lookup"><span data-stu-id="f4e80-109">Value</span></span>|<span data-ttu-id="f4e80-110">Описание</span><span class="sxs-lookup"><span data-stu-id="f4e80-110">Description</span></span>|
+<span data-ttu-id="38a68-107">Тип действия в клиенте Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="38a68-107">Action type on Configuration Manager client</span></span>
+
+## <a name="members"></a><span data-ttu-id="38a68-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="38a68-108">Members</span></span>
+|<span data-ttu-id="38a68-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="38a68-109">Member</span></span>|<span data-ttu-id="38a68-110">Значение</span><span class="sxs-lookup"><span data-stu-id="38a68-110">Value</span></span>|<span data-ttu-id="38a68-111">Описание</span><span class="sxs-lookup"><span data-stu-id="38a68-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="f4e80-111">рефрешмачинеполици</span><span class="sxs-lookup"><span data-stu-id="f4e80-111">refreshMachinePolicy</span></span>|<span data-ttu-id="f4e80-112">нуль</span><span class="sxs-lookup"><span data-stu-id="f4e80-112">0</span></span>|<span data-ttu-id="f4e80-113">Обновление политики компьютера в клиенте Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="f4e80-113">Refresh machine policy on Configuration Manager client</span></span>|
-|<span data-ttu-id="f4e80-114">рефрешусерполици</span><span class="sxs-lookup"><span data-stu-id="f4e80-114">refreshUserPolicy</span></span>|<span data-ttu-id="f4e80-115">1,1</span><span class="sxs-lookup"><span data-stu-id="f4e80-115">1</span></span>|<span data-ttu-id="f4e80-116">Обновление политики пользователя в клиенте Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="f4e80-116">Refresh user policy on Configuration Manager client</span></span>|
-|<span data-ttu-id="f4e80-117">вакеупклиент</span><span class="sxs-lookup"><span data-stu-id="f4e80-117">wakeUpClient</span></span>|<span data-ttu-id="f4e80-118">2</span><span class="sxs-lookup"><span data-stu-id="f4e80-118">2</span></span>|<span data-ttu-id="f4e80-119">Пробуждение клиента Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="f4e80-119">Wake up Configuration Manager client</span></span>|
-|<span data-ttu-id="f4e80-120">аппевалуатион</span><span class="sxs-lookup"><span data-stu-id="f4e80-120">appEvaluation</span></span>|<span data-ttu-id="f4e80-121">4</span><span class="sxs-lookup"><span data-stu-id="f4e80-121">3</span></span>|<span data-ttu-id="f4e80-122">Оценка политики применения в клиенте Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="f4e80-122">Evaluation application policy on Configuration Manager client</span></span>|
+|<span data-ttu-id="38a68-112">рефрешмачинеполици</span><span class="sxs-lookup"><span data-stu-id="38a68-112">refreshMachinePolicy</span></span>|<span data-ttu-id="38a68-113">нуль</span><span class="sxs-lookup"><span data-stu-id="38a68-113">0</span></span>|<span data-ttu-id="38a68-114">Обновление политики компьютера в клиенте Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="38a68-114">Refresh machine policy on Configuration Manager client</span></span>|
+|<span data-ttu-id="38a68-115">рефрешусерполици</span><span class="sxs-lookup"><span data-stu-id="38a68-115">refreshUserPolicy</span></span>|<span data-ttu-id="38a68-116">1 </span><span class="sxs-lookup"><span data-stu-id="38a68-116">1</span></span>|<span data-ttu-id="38a68-117">Обновление политики пользователя в клиенте Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="38a68-117">Refresh user policy on Configuration Manager client</span></span>|
+|<span data-ttu-id="38a68-118">вакеупклиент</span><span class="sxs-lookup"><span data-stu-id="38a68-118">wakeUpClient</span></span>|<span data-ttu-id="38a68-119">2 </span><span class="sxs-lookup"><span data-stu-id="38a68-119">2</span></span>|<span data-ttu-id="38a68-120">Пробуждение клиента Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="38a68-120">Wake up Configuration Manager client</span></span>|
+|<span data-ttu-id="38a68-121">аппевалуатион</span><span class="sxs-lookup"><span data-stu-id="38a68-121">appEvaluation</span></span>|<span data-ttu-id="38a68-122">3 </span><span class="sxs-lookup"><span data-stu-id="38a68-122">3</span></span>|<span data-ttu-id="38a68-123">Оценка политики применения в клиенте Configuration Manager</span><span class="sxs-lookup"><span data-stu-id="38a68-123">Evaluation application policy on Configuration Manager client</span></span>|
 
 
 

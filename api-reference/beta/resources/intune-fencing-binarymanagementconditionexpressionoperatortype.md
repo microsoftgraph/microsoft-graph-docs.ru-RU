@@ -5,26 +5,28 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 11833fdc640182f628bcc2d08974d01cade4a4f1
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 58a58f8c4344ff7206389d89608fbeb6ba7d8e88
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36326704"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524534"
 ---
-# <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a><span data-ttu-id="78958-103">тип перечисления Бинариманажементкондитионекспрессионоператортипе</span><span class="sxs-lookup"><span data-stu-id="78958-103">binaryManagementConditionExpressionOperatorType enum type</span></span>
+# <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a><span data-ttu-id="4692e-103">тип перечисления Бинариманажементкондитионекспрессионоператортипе</span><span class="sxs-lookup"><span data-stu-id="4692e-103">binaryManagementConditionExpressionOperatorType enum type</span></span>
 
-> <span data-ttu-id="78958-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="78958-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="4692e-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="4692e-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="78958-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="78958-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="4692e-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4692e-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="78958-106">Поддерживаемые бинарные операторы для выражений условия управления.</span><span class="sxs-lookup"><span data-stu-id="78958-106">Supported binary operators for management condition expressions.</span></span>
+> <span data-ttu-id="4692e-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="4692e-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="78958-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="78958-107">Members</span></span>
-|<span data-ttu-id="78958-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="78958-108">Member</span></span>|<span data-ttu-id="78958-109">Значение</span><span class="sxs-lookup"><span data-stu-id="78958-109">Value</span></span>|<span data-ttu-id="78958-110">Описание</span><span class="sxs-lookup"><span data-stu-id="78958-110">Description</span></span>|
+<span data-ttu-id="4692e-107">Поддерживаемые бинарные операторы для выражений условия управления.</span><span class="sxs-lookup"><span data-stu-id="4692e-107">Supported binary operators for management condition expressions.</span></span>
+
+## <a name="members"></a><span data-ttu-id="4692e-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="4692e-108">Members</span></span>
+|<span data-ttu-id="4692e-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="4692e-109">Member</span></span>|<span data-ttu-id="4692e-110">Значение</span><span class="sxs-lookup"><span data-stu-id="4692e-110">Value</span></span>|<span data-ttu-id="4692e-111">Описание</span><span class="sxs-lookup"><span data-stu-id="4692e-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="78958-111">или</span><span class="sxs-lookup"><span data-stu-id="78958-111">or</span></span>|<span data-ttu-id="78958-112">нуль</span><span class="sxs-lookup"><span data-stu-id="78958-112">0</span></span>|<span data-ttu-id="78958-113">Оценивает набор операндов как true, если один или несколько его операндов имеют значение true.</span><span class="sxs-lookup"><span data-stu-id="78958-113">Evaluates a set of operands as true if and only if one or more of its operands is true.</span></span>|
-|<span data-ttu-id="78958-114">и</span><span class="sxs-lookup"><span data-stu-id="78958-114">and</span></span>|<span data-ttu-id="78958-115">1,1</span><span class="sxs-lookup"><span data-stu-id="78958-115">1</span></span>|<span data-ttu-id="78958-116">Оценивает набор операндов как true, если все его операнды имеют значение true.</span><span class="sxs-lookup"><span data-stu-id="78958-116">Evaluates a set of operands as true if and only if all of its operands are true.</span></span>|
+|<span data-ttu-id="4692e-112">или</span><span class="sxs-lookup"><span data-stu-id="4692e-112">or</span></span>|<span data-ttu-id="4692e-113">нуль</span><span class="sxs-lookup"><span data-stu-id="4692e-113">0</span></span>|<span data-ttu-id="4692e-114">Оценивает набор операндов как true, если один или несколько его операндов имеют значение true.</span><span class="sxs-lookup"><span data-stu-id="4692e-114">Evaluates a set of operands as true if and only if one or more of its operands is true.</span></span>|
+|<span data-ttu-id="4692e-115">и</span><span class="sxs-lookup"><span data-stu-id="4692e-115">and</span></span>|<span data-ttu-id="4692e-116">1 </span><span class="sxs-lookup"><span data-stu-id="4692e-116">1</span></span>|<span data-ttu-id="4692e-117">Оценивает набор операндов как true, если все его операнды имеют значение true.</span><span class="sxs-lookup"><span data-stu-id="4692e-117">Evaluates a set of operands as true if and only if all of its operands are true.</span></span>|
 
 
 

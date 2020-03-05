@@ -5,32 +5,34 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9fc6535147b8e7a5f2a2295b09cb73cce86c1793
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0e28bc8c4bbf6b4f0b1309c1241b054aa08445e2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36327810"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42524705"
 ---
-# <a name="managementcertificatewiththumbprint-resource-type"></a><span data-ttu-id="72dfe-103">Тип ресурса Манажементцертификатевиссумбпринт</span><span class="sxs-lookup"><span data-stu-id="72dfe-103">managementCertificateWithThumbprint resource type</span></span>
+# <a name="managementcertificatewiththumbprint-resource-type"></a><span data-ttu-id="1842d-103">Тип ресурса Манажементцертификатевиссумбпринт</span><span class="sxs-lookup"><span data-stu-id="1842d-103">managementCertificateWithThumbprint resource type</span></span>
 
-> <span data-ttu-id="72dfe-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="72dfe-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="1842d-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="1842d-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="72dfe-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="72dfe-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="1842d-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1842d-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="72dfe-106">Н/Д</span><span class="sxs-lookup"><span data-stu-id="72dfe-106">Not yet documented</span></span>
+> <span data-ttu-id="1842d-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="1842d-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="72dfe-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="72dfe-107">Properties</span></span>
-|<span data-ttu-id="72dfe-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="72dfe-108">Property</span></span>|<span data-ttu-id="72dfe-109">Тип</span><span class="sxs-lookup"><span data-stu-id="72dfe-109">Type</span></span>|<span data-ttu-id="72dfe-110">Описание</span><span class="sxs-lookup"><span data-stu-id="72dfe-110">Description</span></span>|
+<span data-ttu-id="1842d-107">Н/Д</span><span class="sxs-lookup"><span data-stu-id="1842d-107">Not yet documented</span></span>
+
+## <a name="properties"></a><span data-ttu-id="1842d-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="1842d-108">Properties</span></span>
+|<span data-ttu-id="1842d-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="1842d-109">Property</span></span>|<span data-ttu-id="1842d-110">Тип</span><span class="sxs-lookup"><span data-stu-id="1842d-110">Type</span></span>|<span data-ttu-id="1842d-111">Описание</span><span class="sxs-lookup"><span data-stu-id="1842d-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="72dfe-111">отпечаток</span><span class="sxs-lookup"><span data-stu-id="72dfe-111">thumbprint</span></span>|<span data-ttu-id="72dfe-112">String</span><span class="sxs-lookup"><span data-stu-id="72dfe-112">String</span></span>|<span data-ttu-id="72dfe-113">Отпечаток сертификата управления</span><span class="sxs-lookup"><span data-stu-id="72dfe-113">The thumbprint of the management certificate</span></span>|
-|<span data-ttu-id="72dfe-114">certificate</span><span class="sxs-lookup"><span data-stu-id="72dfe-114">certificate</span></span>|<span data-ttu-id="72dfe-115">String</span><span class="sxs-lookup"><span data-stu-id="72dfe-115">String</span></span>|<span data-ttu-id="72dfe-116">Сертификат управления Base 64 с шифрованием</span><span class="sxs-lookup"><span data-stu-id="72dfe-116">The Base 64 encoded management certificate</span></span>|
+|<span data-ttu-id="1842d-112">отпечаток</span><span class="sxs-lookup"><span data-stu-id="1842d-112">thumbprint</span></span>|<span data-ttu-id="1842d-113">String</span><span class="sxs-lookup"><span data-stu-id="1842d-113">String</span></span>|<span data-ttu-id="1842d-114">Отпечаток сертификата управления</span><span class="sxs-lookup"><span data-stu-id="1842d-114">The thumbprint of the management certificate</span></span>|
+|<span data-ttu-id="1842d-115">certificate</span><span class="sxs-lookup"><span data-stu-id="1842d-115">certificate</span></span>|<span data-ttu-id="1842d-116">String</span><span class="sxs-lookup"><span data-stu-id="1842d-116">String</span></span>|<span data-ttu-id="1842d-117">Сертификат управления Base 64 с шифрованием</span><span class="sxs-lookup"><span data-stu-id="1842d-117">The Base 64 encoded management certificate</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="72dfe-117">Отношения</span><span class="sxs-lookup"><span data-stu-id="72dfe-117">Relationships</span></span>
-<span data-ttu-id="72dfe-118">Нет</span><span class="sxs-lookup"><span data-stu-id="72dfe-118">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="1842d-118">Связи</span><span class="sxs-lookup"><span data-stu-id="1842d-118">Relationships</span></span>
+<span data-ttu-id="1842d-119">Нет</span><span class="sxs-lookup"><span data-stu-id="1842d-119">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="72dfe-119">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="72dfe-119">JSON Representation</span></span>
-<span data-ttu-id="72dfe-120">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="72dfe-120">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="1842d-120">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="1842d-120">JSON Representation</span></span>
+<span data-ttu-id="1842d-121">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="1842d-121">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.managementCertificateWithThumbprint"

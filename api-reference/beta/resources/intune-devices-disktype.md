@@ -5,27 +5,29 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: af423557c7fdf703bf1c01b98778201f4ae3feb8
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: e67a48385546c94863c1afb46f30cc2110aea680
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37539017"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525021"
 ---
-# <a name="disktype-enum-type"></a><span data-ttu-id="280e7-103">тип перечисления Дисктипе</span><span class="sxs-lookup"><span data-stu-id="280e7-103">diskType enum type</span></span>
+# <a name="disktype-enum-type"></a><span data-ttu-id="03959-103">тип перечисления Дисктипе</span><span class="sxs-lookup"><span data-stu-id="03959-103">diskType enum type</span></span>
 
-> <span data-ttu-id="280e7-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="280e7-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="03959-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="03959-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="280e7-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="280e7-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="03959-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="03959-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="280e7-106">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="280e7-106">Not yet documented</span></span>
+> <span data-ttu-id="03959-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="03959-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="280e7-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="280e7-107">Members</span></span>
-|<span data-ttu-id="280e7-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="280e7-108">Member</span></span>|<span data-ttu-id="280e7-109">Значение</span><span class="sxs-lookup"><span data-stu-id="280e7-109">Value</span></span>|<span data-ttu-id="280e7-110">Описание</span><span class="sxs-lookup"><span data-stu-id="280e7-110">Description</span></span>|
+<span data-ttu-id="03959-107">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="03959-107">Not yet documented</span></span>
+
+## <a name="members"></a><span data-ttu-id="03959-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="03959-108">Members</span></span>
+|<span data-ttu-id="03959-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="03959-109">Member</span></span>|<span data-ttu-id="03959-110">Значение</span><span class="sxs-lookup"><span data-stu-id="03959-110">Value</span></span>|<span data-ttu-id="03959-111">Описание</span><span class="sxs-lookup"><span data-stu-id="03959-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="280e7-111">неизвестных</span><span class="sxs-lookup"><span data-stu-id="280e7-111">unkown</span></span>|<span data-ttu-id="280e7-112">нуль</span><span class="sxs-lookup"><span data-stu-id="280e7-112">0</span></span>|<span data-ttu-id="280e7-113">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="280e7-113">Not yet documented</span></span>|
-|<span data-ttu-id="280e7-114">объединительной</span><span class="sxs-lookup"><span data-stu-id="280e7-114">hdd</span></span>|<span data-ttu-id="280e7-115">1,1</span><span class="sxs-lookup"><span data-stu-id="280e7-115">1</span></span>|<span data-ttu-id="280e7-116">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="280e7-116">Not yet documented</span></span>|
-|<span data-ttu-id="280e7-117">ssd</span><span class="sxs-lookup"><span data-stu-id="280e7-117">ssd</span></span>|<span data-ttu-id="280e7-118">2</span><span class="sxs-lookup"><span data-stu-id="280e7-118">2</span></span>|<span data-ttu-id="280e7-119">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="280e7-119">Not yet documented</span></span>|
+|<span data-ttu-id="03959-112">неизвестных</span><span class="sxs-lookup"><span data-stu-id="03959-112">unkown</span></span>|<span data-ttu-id="03959-113">нуль</span><span class="sxs-lookup"><span data-stu-id="03959-113">0</span></span>|<span data-ttu-id="03959-114">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="03959-114">Not yet documented</span></span>|
+|<span data-ttu-id="03959-115">объединительной</span><span class="sxs-lookup"><span data-stu-id="03959-115">hdd</span></span>|<span data-ttu-id="03959-116">1 </span><span class="sxs-lookup"><span data-stu-id="03959-116">1</span></span>|<span data-ttu-id="03959-117">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="03959-117">Not yet documented</span></span>|
+|<span data-ttu-id="03959-118">ssd</span><span class="sxs-lookup"><span data-stu-id="03959-118">ssd</span></span>|<span data-ttu-id="03959-119">2 </span><span class="sxs-lookup"><span data-stu-id="03959-119">2</span></span>|<span data-ttu-id="03959-120">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="03959-120">Not yet documented</span></span>|
 
 
 

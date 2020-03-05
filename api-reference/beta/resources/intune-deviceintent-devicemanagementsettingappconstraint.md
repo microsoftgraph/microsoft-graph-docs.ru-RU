@@ -5,34 +5,36 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 218e4ca91d69c1d68b19e12ed659a3cd87884b5b
-ms.sourcegitcommit: b12904a27b6d0e197f562aca0dac5e74cd7bd3a1
+ms.openlocfilehash: 7818493bb5767ce74d0f6f71cf5ffa05a775eded
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636793"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525280"
 ---
-# <a name="devicemanagementsettingappconstraint-resource-type"></a><span data-ttu-id="84af6-103">Тип ресурса Девицеманажементсеттингаппконстраинт</span><span class="sxs-lookup"><span data-stu-id="84af6-103">deviceManagementSettingAppConstraint resource type</span></span>
+# <a name="devicemanagementsettingappconstraint-resource-type"></a><span data-ttu-id="0f4d1-103">Тип ресурса Девицеманажементсеттингаппконстраинт</span><span class="sxs-lookup"><span data-stu-id="0f4d1-103">deviceManagementSettingAppConstraint resource type</span></span>
 
-> <span data-ttu-id="84af6-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="84af6-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="0f4d1-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="0f4d1-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="84af6-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="84af6-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="0f4d1-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0f4d1-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="84af6-106">Ограничение, включающее параметр, содержит только доступные типы приложений.</span><span class="sxs-lookup"><span data-stu-id="84af6-106">Constraint enforcing the setting contains only vaild app types.</span></span>
+> <span data-ttu-id="0f4d1-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="0f4d1-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+
+<span data-ttu-id="0f4d1-107">Ограничение, включающее параметр, содержит только доступные типы приложений.</span><span class="sxs-lookup"><span data-stu-id="0f4d1-107">Constraint enforcing the setting contains only vaild app types.</span></span>
 
 
-<span data-ttu-id="84af6-107">Наследуется от [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)</span><span class="sxs-lookup"><span data-stu-id="84af6-107">Inherits from [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)</span></span>
+<span data-ttu-id="0f4d1-108">Наследуется от [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)</span><span class="sxs-lookup"><span data-stu-id="0f4d1-108">Inherits from [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="84af6-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="84af6-108">Properties</span></span>
-|<span data-ttu-id="84af6-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="84af6-109">Property</span></span>|<span data-ttu-id="84af6-110">Тип</span><span class="sxs-lookup"><span data-stu-id="84af6-110">Type</span></span>|<span data-ttu-id="84af6-111">Описание</span><span class="sxs-lookup"><span data-stu-id="84af6-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="0f4d1-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="0f4d1-109">Properties</span></span>
+|<span data-ttu-id="0f4d1-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="0f4d1-110">Property</span></span>|<span data-ttu-id="0f4d1-111">Тип</span><span class="sxs-lookup"><span data-stu-id="0f4d1-111">Type</span></span>|<span data-ttu-id="0f4d1-112">Описание</span><span class="sxs-lookup"><span data-stu-id="0f4d1-112">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="84af6-112">суппортедтипес</span><span class="sxs-lookup"><span data-stu-id="84af6-112">supportedTypes</span></span>|<span data-ttu-id="84af6-113">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="84af6-113">String collection</span></span>|<span data-ttu-id="84af6-114">Допустимые типы приложений, которые необходимо разрешить для этого параметра</span><span class="sxs-lookup"><span data-stu-id="84af6-114">Acceptable app types to allow for this setting</span></span>|
+|<span data-ttu-id="0f4d1-113">суппортедтипес</span><span class="sxs-lookup"><span data-stu-id="0f4d1-113">supportedTypes</span></span>|<span data-ttu-id="0f4d1-114">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="0f4d1-114">String collection</span></span>|<span data-ttu-id="0f4d1-115">Допустимые типы приложений, которые необходимо разрешить для этого параметра</span><span class="sxs-lookup"><span data-stu-id="0f4d1-115">Acceptable app types to allow for this setting</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="84af6-115">Связи</span><span class="sxs-lookup"><span data-stu-id="84af6-115">Relationships</span></span>
-<span data-ttu-id="84af6-116">Нет</span><span class="sxs-lookup"><span data-stu-id="84af6-116">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="0f4d1-116">Связи</span><span class="sxs-lookup"><span data-stu-id="0f4d1-116">Relationships</span></span>
+<span data-ttu-id="0f4d1-117">Нет</span><span class="sxs-lookup"><span data-stu-id="0f4d1-117">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="84af6-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="84af6-117">JSON Representation</span></span>
-<span data-ttu-id="84af6-118">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="84af6-118">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0f4d1-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="0f4d1-118">JSON Representation</span></span>
+<span data-ttu-id="0f4d1-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0f4d1-119">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceManagementSettingAppConstraint"

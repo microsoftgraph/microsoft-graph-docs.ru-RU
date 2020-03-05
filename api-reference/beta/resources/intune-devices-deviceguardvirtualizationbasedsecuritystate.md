@@ -5,31 +5,33 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 2e5c2f9a4d1dd58e0bb5292930fcda4e14f95eb2
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7f996338b9d79494fd98ba8b9ec0dda7d711b59b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36370125"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525098"
 ---
-# <a name="deviceguardvirtualizationbasedsecuritystate-enum-type"></a><span data-ttu-id="fc575-103">тип перечисления Девицегуардвиртуализатионбаседсекуритистате</span><span class="sxs-lookup"><span data-stu-id="fc575-103">deviceGuardVirtualizationBasedSecurityState enum type</span></span>
+# <a name="deviceguardvirtualizationbasedsecuritystate-enum-type"></a><span data-ttu-id="71368-103">тип перечисления Девицегуардвиртуализатионбаседсекуритистате</span><span class="sxs-lookup"><span data-stu-id="71368-103">deviceGuardVirtualizationBasedSecurityState enum type</span></span>
 
-> <span data-ttu-id="fc575-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fc575-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="71368-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="71368-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="fc575-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="fc575-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="71368-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="71368-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="fc575-106">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="fc575-106">Not yet documented</span></span>
+> <span data-ttu-id="71368-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="71368-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="fc575-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="fc575-107">Members</span></span>
-|<span data-ttu-id="fc575-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="fc575-108">Member</span></span>|<span data-ttu-id="fc575-109">Значение</span><span class="sxs-lookup"><span data-stu-id="fc575-109">Value</span></span>|<span data-ttu-id="fc575-110">Описание</span><span class="sxs-lookup"><span data-stu-id="fc575-110">Description</span></span>|
+<span data-ttu-id="71368-107">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="71368-107">Not yet documented</span></span>
+
+## <a name="members"></a><span data-ttu-id="71368-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="71368-108">Members</span></span>
+|<span data-ttu-id="71368-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="71368-109">Member</span></span>|<span data-ttu-id="71368-110">Значение</span><span class="sxs-lookup"><span data-stu-id="71368-110">Value</span></span>|<span data-ttu-id="71368-111">Описание</span><span class="sxs-lookup"><span data-stu-id="71368-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="fc575-111">запускается</span><span class="sxs-lookup"><span data-stu-id="fc575-111">running</span></span>|<span data-ttu-id="fc575-112">нуль</span><span class="sxs-lookup"><span data-stu-id="fc575-112">0</span></span>|<span data-ttu-id="fc575-113">Запущено</span><span class="sxs-lookup"><span data-stu-id="fc575-113">Running</span></span>|
-|<span data-ttu-id="fc575-114">ребутрекуиред</span><span class="sxs-lookup"><span data-stu-id="fc575-114">rebootRequired</span></span>|<span data-ttu-id="fc575-115">1,1</span><span class="sxs-lookup"><span data-stu-id="fc575-115">1</span></span>|<span data-ttu-id="fc575-116">Обязательный корень</span><span class="sxs-lookup"><span data-stu-id="fc575-116">Root required</span></span>|
-|<span data-ttu-id="fc575-117">require64BitArchitecture</span><span class="sxs-lookup"><span data-stu-id="fc575-117">require64BitArchitecture</span></span>|<span data-ttu-id="fc575-118">2</span><span class="sxs-lookup"><span data-stu-id="fc575-118">2</span></span>|<span data-ttu-id="fc575-119">необходима разрядная архитектура 64</span><span class="sxs-lookup"><span data-stu-id="fc575-119">64 bit architecture required</span></span>|
-|<span data-ttu-id="fc575-120">нотлиценсед</span><span class="sxs-lookup"><span data-stu-id="fc575-120">notLicensed</span></span>|<span data-ttu-id="fc575-121">4</span><span class="sxs-lookup"><span data-stu-id="fc575-121">3</span></span>|<span data-ttu-id="fc575-122">Не лицензировано</span><span class="sxs-lookup"><span data-stu-id="fc575-122">Not licensed</span></span>|
-|<span data-ttu-id="fc575-123">notConfigured</span><span class="sxs-lookup"><span data-stu-id="fc575-123">notConfigured</span></span>|<span data-ttu-id="fc575-124">SP4</span><span class="sxs-lookup"><span data-stu-id="fc575-124">4</span></span>|<span data-ttu-id="fc575-125">Не настроено</span><span class="sxs-lookup"><span data-stu-id="fc575-125">Not configured</span></span>|
-|<span data-ttu-id="fc575-126">доеснотмисардваререкуирементс</span><span class="sxs-lookup"><span data-stu-id="fc575-126">doesNotMeetHardwareRequirements</span></span>|<span data-ttu-id="fc575-127">17:00</span><span class="sxs-lookup"><span data-stu-id="fc575-127">5</span></span>|<span data-ttu-id="fc575-128">Система не соответствует требованиям к оборудованию</span><span class="sxs-lookup"><span data-stu-id="fc575-128">System does not meet hardware requirements</span></span>|
-|<span data-ttu-id="fc575-129">остальные</span><span class="sxs-lookup"><span data-stu-id="fc575-129">other</span></span>|<span data-ttu-id="fc575-130">42</span><span class="sxs-lookup"><span data-stu-id="fc575-130">42</span></span>|<span data-ttu-id="fc575-131">Остальные.</span><span class="sxs-lookup"><span data-stu-id="fc575-131">Other.</span></span> <span data-ttu-id="fc575-132">Дополнительные сведения см. в журналах событий в Microsoft Windows Девицегуард.</span><span class="sxs-lookup"><span data-stu-id="fc575-132">Event logs in microsoft-Windows-DeviceGuard have more details.</span></span>|
+|<span data-ttu-id="71368-112">запускается</span><span class="sxs-lookup"><span data-stu-id="71368-112">running</span></span>|<span data-ttu-id="71368-113">нуль</span><span class="sxs-lookup"><span data-stu-id="71368-113">0</span></span>|<span data-ttu-id="71368-114">Работает</span><span class="sxs-lookup"><span data-stu-id="71368-114">Running</span></span>|
+|<span data-ttu-id="71368-115">ребутрекуиред</span><span class="sxs-lookup"><span data-stu-id="71368-115">rebootRequired</span></span>|<span data-ttu-id="71368-116">1 </span><span class="sxs-lookup"><span data-stu-id="71368-116">1</span></span>|<span data-ttu-id="71368-117">Обязательный корень</span><span class="sxs-lookup"><span data-stu-id="71368-117">Root required</span></span>|
+|<span data-ttu-id="71368-118">require64BitArchitecture</span><span class="sxs-lookup"><span data-stu-id="71368-118">require64BitArchitecture</span></span>|<span data-ttu-id="71368-119">2 </span><span class="sxs-lookup"><span data-stu-id="71368-119">2</span></span>|<span data-ttu-id="71368-120">необходима разрядная архитектура 64</span><span class="sxs-lookup"><span data-stu-id="71368-120">64 bit architecture required</span></span>|
+|<span data-ttu-id="71368-121">нотлиценсед</span><span class="sxs-lookup"><span data-stu-id="71368-121">notLicensed</span></span>|<span data-ttu-id="71368-122">3 </span><span class="sxs-lookup"><span data-stu-id="71368-122">3</span></span>|<span data-ttu-id="71368-123">Не лицензировано</span><span class="sxs-lookup"><span data-stu-id="71368-123">Not licensed</span></span>|
+|<span data-ttu-id="71368-124">notConfigured</span><span class="sxs-lookup"><span data-stu-id="71368-124">notConfigured</span></span>|<span data-ttu-id="71368-125">4 </span><span class="sxs-lookup"><span data-stu-id="71368-125">4</span></span>|<span data-ttu-id="71368-126">Не настроено</span><span class="sxs-lookup"><span data-stu-id="71368-126">Not configured</span></span>|
+|<span data-ttu-id="71368-127">доеснотмисардваререкуирементс</span><span class="sxs-lookup"><span data-stu-id="71368-127">doesNotMeetHardwareRequirements</span></span>|<span data-ttu-id="71368-128">5 </span><span class="sxs-lookup"><span data-stu-id="71368-128">5</span></span>|<span data-ttu-id="71368-129">Система не соответствует требованиям к оборудованию</span><span class="sxs-lookup"><span data-stu-id="71368-129">System does not meet hardware requirements</span></span>|
+|<span data-ttu-id="71368-130">остальные</span><span class="sxs-lookup"><span data-stu-id="71368-130">other</span></span>|<span data-ttu-id="71368-131">42</span><span class="sxs-lookup"><span data-stu-id="71368-131">42</span></span>|<span data-ttu-id="71368-132">Остальные.</span><span class="sxs-lookup"><span data-stu-id="71368-132">Other.</span></span> <span data-ttu-id="71368-133">Дополнительные сведения см. в журналах событий в Microsoft Windows Девицегуард.</span><span class="sxs-lookup"><span data-stu-id="71368-133">Event logs in microsoft-Windows-DeviceGuard have more details.</span></span>|
 
 
 

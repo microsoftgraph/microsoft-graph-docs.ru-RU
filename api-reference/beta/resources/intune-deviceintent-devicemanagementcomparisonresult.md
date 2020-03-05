@@ -5,29 +5,31 @@ author: rolyon
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 03e4a0625c668a434ee373614a47cb608722c3b9
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: fcbec4eea2ab05ff6e8f1f304dfdd175926d3b97
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36365379"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42525336"
 ---
-# <a name="devicemanagementcomparisonresult-enum-type"></a><span data-ttu-id="84eff-103">тип перечисления Девицеманажементкомпарисонресулт</span><span class="sxs-lookup"><span data-stu-id="84eff-103">deviceManagementComparisonResult enum type</span></span>
+# <a name="devicemanagementcomparisonresult-enum-type"></a><span data-ttu-id="0c487-103">тип перечисления Девицеманажементкомпарисонресулт</span><span class="sxs-lookup"><span data-stu-id="0c487-103">deviceManagementComparisonResult enum type</span></span>
 
-> <span data-ttu-id="84eff-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="84eff-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="0c487-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="0c487-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="84eff-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="84eff-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="0c487-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0c487-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="84eff-106">Определение типа результатов сравнения</span><span class="sxs-lookup"><span data-stu-id="84eff-106">Setting comparison result type</span></span>
+> <span data-ttu-id="0c487-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="0c487-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="84eff-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="84eff-107">Members</span></span>
-|<span data-ttu-id="84eff-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="84eff-108">Member</span></span>|<span data-ttu-id="84eff-109">Значение</span><span class="sxs-lookup"><span data-stu-id="84eff-109">Value</span></span>|<span data-ttu-id="84eff-110">Описание</span><span class="sxs-lookup"><span data-stu-id="84eff-110">Description</span></span>|
+<span data-ttu-id="0c487-107">Определение типа результатов сравнения</span><span class="sxs-lookup"><span data-stu-id="0c487-107">Setting comparison result type</span></span>
+
+## <a name="members"></a><span data-ttu-id="0c487-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="0c487-108">Members</span></span>
+|<span data-ttu-id="0c487-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="0c487-109">Member</span></span>|<span data-ttu-id="0c487-110">Значение</span><span class="sxs-lookup"><span data-stu-id="0c487-110">Value</span></span>|<span data-ttu-id="0c487-111">Описание</span><span class="sxs-lookup"><span data-stu-id="0c487-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="84eff-111">unknown</span><span class="sxs-lookup"><span data-stu-id="84eff-111">unknown</span></span>|<span data-ttu-id="84eff-112">нуль</span><span class="sxs-lookup"><span data-stu-id="84eff-112">0</span></span>|<span data-ttu-id="84eff-113">Неизвестное сравнение параметров</span><span class="sxs-lookup"><span data-stu-id="84eff-113">Unknown setting comparison</span></span>|
-|<span data-ttu-id="84eff-114">одинаков</span><span class="sxs-lookup"><span data-stu-id="84eff-114">equal</span></span>|<span data-ttu-id="84eff-115">1,1</span><span class="sxs-lookup"><span data-stu-id="84eff-115">1</span></span>|<span data-ttu-id="84eff-116">Значения параметров равны</span><span class="sxs-lookup"><span data-stu-id="84eff-116">The setting values are equal</span></span>|
-|<span data-ttu-id="84eff-117">notEqual</span><span class="sxs-lookup"><span data-stu-id="84eff-117">notEqual</span></span>|<span data-ttu-id="84eff-118">2</span><span class="sxs-lookup"><span data-stu-id="84eff-118">2</span></span>|<span data-ttu-id="84eff-119">Значения параметров не равны</span><span class="sxs-lookup"><span data-stu-id="84eff-119">The setting values are not equal</span></span>|
-|<span data-ttu-id="84eff-120">Добавлено</span><span class="sxs-lookup"><span data-stu-id="84eff-120">added</span></span>|<span data-ttu-id="84eff-121">4</span><span class="sxs-lookup"><span data-stu-id="84eff-121">3</span></span>|<span data-ttu-id="84eff-122">Параметр добавлен</span><span class="sxs-lookup"><span data-stu-id="84eff-122">The setting is added</span></span>|
-|<span data-ttu-id="84eff-123">удалены</span><span class="sxs-lookup"><span data-stu-id="84eff-123">removed</span></span>|<span data-ttu-id="84eff-124">SP4</span><span class="sxs-lookup"><span data-stu-id="84eff-124">4</span></span>|<span data-ttu-id="84eff-125">Параметр удален</span><span class="sxs-lookup"><span data-stu-id="84eff-125">The setting is removed</span></span>|
+|<span data-ttu-id="0c487-112">unknown</span><span class="sxs-lookup"><span data-stu-id="0c487-112">unknown</span></span>|<span data-ttu-id="0c487-113">нуль</span><span class="sxs-lookup"><span data-stu-id="0c487-113">0</span></span>|<span data-ttu-id="0c487-114">Неизвестное сравнение параметров</span><span class="sxs-lookup"><span data-stu-id="0c487-114">Unknown setting comparison</span></span>|
+|<span data-ttu-id="0c487-115">одинаков</span><span class="sxs-lookup"><span data-stu-id="0c487-115">equal</span></span>|<span data-ttu-id="0c487-116">1 </span><span class="sxs-lookup"><span data-stu-id="0c487-116">1</span></span>|<span data-ttu-id="0c487-117">Значения параметров равны</span><span class="sxs-lookup"><span data-stu-id="0c487-117">The setting values are equal</span></span>|
+|<span data-ttu-id="0c487-118">notEqual</span><span class="sxs-lookup"><span data-stu-id="0c487-118">notEqual</span></span>|<span data-ttu-id="0c487-119">2 </span><span class="sxs-lookup"><span data-stu-id="0c487-119">2</span></span>|<span data-ttu-id="0c487-120">Значения параметров не равны</span><span class="sxs-lookup"><span data-stu-id="0c487-120">The setting values are not equal</span></span>|
+|<span data-ttu-id="0c487-121">Добавлено</span><span class="sxs-lookup"><span data-stu-id="0c487-121">added</span></span>|<span data-ttu-id="0c487-122">3 </span><span class="sxs-lookup"><span data-stu-id="0c487-122">3</span></span>|<span data-ttu-id="0c487-123">Параметр добавлен</span><span class="sxs-lookup"><span data-stu-id="0c487-123">The setting is added</span></span>|
+|<span data-ttu-id="0c487-124">удалены</span><span class="sxs-lookup"><span data-stu-id="0c487-124">removed</span></span>|<span data-ttu-id="0c487-125">4 </span><span class="sxs-lookup"><span data-stu-id="0c487-125">4</span></span>|<span data-ttu-id="0c487-126">Параметр удален</span><span class="sxs-lookup"><span data-stu-id="0c487-126">The setting is removed</span></span>|
 
 
 
