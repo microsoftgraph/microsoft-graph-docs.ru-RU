@@ -5,30 +5,32 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8ef003db89ea676b4415a90c27913add49aad6e1
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: c27fe67c2c57d609a7524c8d2efda27443d75efe
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913179"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447425"
 ---
-# <a name="meetinginfo-resource-type"></a><span data-ttu-id="b742a-103">Тип ресурса Митингинфо</span><span class="sxs-lookup"><span data-stu-id="b742a-103">meetingInfo resource type</span></span>
+# <a name="meetinginfo-resource-type"></a><span data-ttu-id="8ff1d-103">Тип ресурса Митингинфо</span><span class="sxs-lookup"><span data-stu-id="8ff1d-103">meetingInfo resource type</span></span>
 
-<span data-ttu-id="b742a-104">Это абстрактный класс, который содержит сведения о собрании.</span><span class="sxs-lookup"><span data-stu-id="b742a-104">This is an abstract class that contains meeting specific information.</span></span>
+<span data-ttu-id="8ff1d-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="8ff1d-104">Namespace: microsoft.graph</span></span>
+
+<span data-ttu-id="8ff1d-105">Это абстрактный класс, который содержит сведения о собрании.</span><span class="sxs-lookup"><span data-stu-id="8ff1d-105">This is an abstract class that contains meeting specific information.</span></span>
  
-<span data-ttu-id="b742a-105">Чтобы присоединиться к существующему собранию, необходимо либо указать [организермитингинфо](organizermeetinginfo.md) в сочетании с [чатинфо](./chatinfo.md), либо только с [токенмитингинфо](tokenmeetinginfo.md).</span><span class="sxs-lookup"><span data-stu-id="b742a-105">To join an existing meeting, you must either specify the [organizerMeetingInfo](organizermeetinginfo.md) in combination with the [chatInfo](./chatinfo.md), or just the [tokenMeetingInfo](tokenmeetinginfo.md).</span></span>
+<span data-ttu-id="8ff1d-106">Чтобы присоединиться к существующему собранию, необходимо либо указать [организермитингинфо](organizermeetinginfo.md) в сочетании с [чатинфо](./chatinfo.md), либо только с [токенмитингинфо](tokenmeetinginfo.md).</span><span class="sxs-lookup"><span data-stu-id="8ff1d-106">To join an existing meeting, you must either specify the [organizerMeetingInfo](organizermeetinginfo.md) in combination with the [chatInfo](./chatinfo.md), or just the [tokenMeetingInfo](tokenmeetinginfo.md).</span></span>
 
 
-## <a name="derived-types"></a><span data-ttu-id="b742a-106">Производные типы</span><span class="sxs-lookup"><span data-stu-id="b742a-106">Derived types</span></span>
+## <a name="derived-types"></a><span data-ttu-id="8ff1d-107">Производные типы</span><span class="sxs-lookup"><span data-stu-id="8ff1d-107">Derived types</span></span>
 
-| <span data-ttu-id="b742a-107">Тип</span><span class="sxs-lookup"><span data-stu-id="b742a-107">Type</span></span>                                                 | <span data-ttu-id="b742a-108">Описание</span><span class="sxs-lookup"><span data-stu-id="b742a-108">Description</span></span>                                                         |
+| <span data-ttu-id="8ff1d-108">Тип</span><span class="sxs-lookup"><span data-stu-id="8ff1d-108">Type</span></span>                                                 | <span data-ttu-id="8ff1d-109">Описание</span><span class="sxs-lookup"><span data-stu-id="8ff1d-109">Description</span></span>                                                         |
 |:-----------------------------------------------------|:--------------------------------------------------------------------|
-| [<span data-ttu-id="b742a-109">организермитингинфо</span><span class="sxs-lookup"><span data-stu-id="b742a-109">organizerMeetingInfo</span></span>](./organizermeetinginfo.md)    | <span data-ttu-id="b742a-110">Сведения об организаторе собрания</span><span class="sxs-lookup"><span data-stu-id="b742a-110">Details about the organizer of the meeting</span></span>                          |
-| [<span data-ttu-id="b742a-111">токенмитингинфо</span><span class="sxs-lookup"><span data-stu-id="b742a-111">tokenMeetingInfo</span></span>](tokenmeetinginfo.md)              | <span data-ttu-id="b742a-112">Зашифрованный маркер, содержащий сведения о собрании</span><span class="sxs-lookup"><span data-stu-id="b742a-112">An encrypted token that contains the information about the meeting</span></span>  |
+| [<span data-ttu-id="8ff1d-110">организермитингинфо</span><span class="sxs-lookup"><span data-stu-id="8ff1d-110">organizerMeetingInfo</span></span>](./organizermeetinginfo.md)    | <span data-ttu-id="8ff1d-111">Сведения об организаторе собрания</span><span class="sxs-lookup"><span data-stu-id="8ff1d-111">Details about the organizer of the meeting</span></span>                          |
+| [<span data-ttu-id="8ff1d-112">токенмитингинфо</span><span class="sxs-lookup"><span data-stu-id="8ff1d-112">tokenMeetingInfo</span></span>](tokenmeetinginfo.md)              | <span data-ttu-id="8ff1d-113">Зашифрованный маркер, содержащий сведения о собрании</span><span class="sxs-lookup"><span data-stu-id="8ff1d-113">An encrypted token that contains the information about the meeting</span></span>  |
 
-## <a name="json-representation"></a><span data-ttu-id="b742a-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="b742a-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8ff1d-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="8ff1d-114">JSON representation</span></span>
 
-<span data-ttu-id="b742a-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b742a-114">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="8ff1d-115">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8ff1d-115">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

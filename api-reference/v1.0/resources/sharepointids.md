@@ -7,22 +7,24 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Ресурс SharePointIds — это единая структура, объединяющая различные идентификаторы элемента, хранящегося на сайте SharePoint или в OneDrive для бизнеса.
 doc_type: resourcePageType
-ms.openlocfilehash: a7dfd936770ac85b458cb8b086ff05e328d2ea9c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a61810792d4085c4ddd92c95b4f46ead54f57e67
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034281"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446872"
 ---
-# <a name="sharepointids-resource-type"></a><span data-ttu-id="1bf5e-103">Тип ресурса SharePointIds</span><span class="sxs-lookup"><span data-stu-id="1bf5e-103">SharePointIds resource type</span></span>
+# <a name="sharepointids-resource-type"></a><span data-ttu-id="b8ee5-103">Тип ресурса SharePointIds</span><span class="sxs-lookup"><span data-stu-id="b8ee5-103">SharePointIds resource type</span></span>
 
-<span data-ttu-id="1bf5e-104">Ресурс **SharePointIds** — это единая структура, объединяющая различные идентификаторы элемента, хранящегося на сайте SharePoint или в OneDrive для бизнеса.</span><span class="sxs-lookup"><span data-stu-id="1bf5e-104">The **SharePointIds** resource groups the various identifiers for an item stored in a SharePoint site or OneDrive for Business into a single structure.</span></span>
+<span data-ttu-id="b8ee5-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="b8ee5-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="1bf5e-105">**Примечание.** Элементы, возвращаемые из личного хранилища OneDrive, не включают аспект **SharePointIds**.</span><span class="sxs-lookup"><span data-stu-id="1bf5e-105">**Note:** items returned from OneDrive personal will not include a **SharePointIds** facet.</span></span>
+<span data-ttu-id="b8ee5-105">Ресурс **SharePointIds** — это единая структура, объединяющая различные идентификаторы элемента, хранящегося на сайте SharePoint или в OneDrive для бизнеса.</span><span class="sxs-lookup"><span data-stu-id="b8ee5-105">The **SharePointIds** resource groups the various identifiers for an item stored in a SharePoint site or OneDrive for Business into a single structure.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="1bf5e-106">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="1bf5e-106">JSON representation</span></span>
+<span data-ttu-id="b8ee5-106">**Примечание.** Элементы, возвращаемые из личного хранилища OneDrive, не включают аспект **SharePointIds**.</span><span class="sxs-lookup"><span data-stu-id="b8ee5-106">**Note:** items returned from OneDrive personal will not include a **SharePointIds** facet.</span></span>
 
-<span data-ttu-id="1bf5e-107">Ниже показано представление JSON ресурса.</span><span class="sxs-lookup"><span data-stu-id="1bf5e-107">Here is a JSON representation of the resource</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b8ee5-107">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="b8ee5-107">JSON representation</span></span>
+
+<span data-ttu-id="b8ee5-108">Ниже показано представление JSON ресурса.</span><span class="sxs-lookup"><span data-stu-id="b8ee5-108">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -41,20 +43,20 @@ ms.locfileid: "36034281"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="1bf5e-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="1bf5e-108">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="b8ee5-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="b8ee5-109">Properties</span></span>
 
-| <span data-ttu-id="1bf5e-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="1bf5e-109">Property</span></span>         | <span data-ttu-id="1bf5e-110">Тип</span><span class="sxs-lookup"><span data-stu-id="1bf5e-110">Type</span></span>         | <span data-ttu-id="1bf5e-111">Описание</span><span class="sxs-lookup"><span data-stu-id="1bf5e-111">Description</span></span>
+| <span data-ttu-id="b8ee5-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="b8ee5-110">Property</span></span>         | <span data-ttu-id="b8ee5-111">Тип</span><span class="sxs-lookup"><span data-stu-id="b8ee5-111">Type</span></span>         | <span data-ttu-id="b8ee5-112">Описание</span><span class="sxs-lookup"><span data-stu-id="b8ee5-112">Description</span></span>
 |:-----------------|:-------------|:-------------------------------------------
-| <span data-ttu-id="1bf5e-112">listId</span><span class="sxs-lookup"><span data-stu-id="1bf5e-112">listId</span></span>           | <span data-ttu-id="1bf5e-113">string</span><span class="sxs-lookup"><span data-stu-id="1bf5e-113">string</span></span>       | <span data-ttu-id="1bf5e-114">Уникальный идентификатор (GUID) списка, содержащего элемент, в SharePoint.</span><span class="sxs-lookup"><span data-stu-id="1bf5e-114">The unique identifier (guid) for the item's list in SharePoint.</span></span>
-| <span data-ttu-id="1bf5e-115">listItemId</span><span class="sxs-lookup"><span data-stu-id="1bf5e-115">listItemId</span></span>       | <span data-ttu-id="1bf5e-116">string</span><span class="sxs-lookup"><span data-stu-id="1bf5e-116">string</span></span>       | <span data-ttu-id="1bf5e-117">Целочисленный идентификатор элемента в списке.</span><span class="sxs-lookup"><span data-stu-id="1bf5e-117">An integer identifier for the item within the containing list.</span></span>
-| <span data-ttu-id="1bf5e-118">listItemUniqueId</span><span class="sxs-lookup"><span data-stu-id="1bf5e-118">listItemUniqueId</span></span> | <span data-ttu-id="1bf5e-119">string</span><span class="sxs-lookup"><span data-stu-id="1bf5e-119">string</span></span>       | <span data-ttu-id="1bf5e-120">Уникальный идентификатор (GUID) элемента в OneDrive для бизнеса или на сайте SharePoint.</span><span class="sxs-lookup"><span data-stu-id="1bf5e-120">The unique identifier (guid) for the item within OneDrive for Business or a SharePoint site.</span></span>
-| <span data-ttu-id="1bf5e-121">siteId</span><span class="sxs-lookup"><span data-stu-id="1bf5e-121">siteId</span></span>           | <span data-ttu-id="1bf5e-122">string</span><span class="sxs-lookup"><span data-stu-id="1bf5e-122">string</span></span>       | <span data-ttu-id="1bf5e-123">Уникальный идентификатор (GUID) семейства веб-сайтов (SPSite), содержащего элемент.</span><span class="sxs-lookup"><span data-stu-id="1bf5e-123">The unique identifier (guid) for the item's site collection (SPSite).</span></span>
-| <span data-ttu-id="1bf5e-124">siteUrl</span><span class="sxs-lookup"><span data-stu-id="1bf5e-124">siteUrl</span></span>          | <span data-ttu-id="1bf5e-125">string (url)</span><span class="sxs-lookup"><span data-stu-id="1bf5e-125">string (url)</span></span> | <span data-ttu-id="1bf5e-126">URL-адрес SharePoint для сайта, содержащего элемент.</span><span class="sxs-lookup"><span data-stu-id="1bf5e-126">The SharePoint URL for the site that contains the item.</span></span>
-| <span data-ttu-id="1bf5e-127">webId</span><span class="sxs-lookup"><span data-stu-id="1bf5e-127">webId</span></span>            | <span data-ttu-id="1bf5e-128">string</span><span class="sxs-lookup"><span data-stu-id="1bf5e-128">string</span></span>       | <span data-ttu-id="1bf5e-129">Уникальный идентификатор (GUID) семейства веб-сайтов (SPWeb), содержащего элемент.</span><span class="sxs-lookup"><span data-stu-id="1bf5e-129">The unique identifier (guid) for the item's site (SPWeb).</span></span>
+| <span data-ttu-id="b8ee5-113">listId</span><span class="sxs-lookup"><span data-stu-id="b8ee5-113">listId</span></span>           | <span data-ttu-id="b8ee5-114">строка</span><span class="sxs-lookup"><span data-stu-id="b8ee5-114">string</span></span>       | <span data-ttu-id="b8ee5-115">Уникальный идентификатор (GUID) списка, содержащего элемент, в SharePoint.</span><span class="sxs-lookup"><span data-stu-id="b8ee5-115">The unique identifier (guid) for the item's list in SharePoint.</span></span>
+| <span data-ttu-id="b8ee5-116">listItemId</span><span class="sxs-lookup"><span data-stu-id="b8ee5-116">listItemId</span></span>       | <span data-ttu-id="b8ee5-117">строка</span><span class="sxs-lookup"><span data-stu-id="b8ee5-117">string</span></span>       | <span data-ttu-id="b8ee5-118">Целочисленный идентификатор элемента в списке.</span><span class="sxs-lookup"><span data-stu-id="b8ee5-118">An integer identifier for the item within the containing list.</span></span>
+| <span data-ttu-id="b8ee5-119">listItemUniqueId</span><span class="sxs-lookup"><span data-stu-id="b8ee5-119">listItemUniqueId</span></span> | <span data-ttu-id="b8ee5-120">string</span><span class="sxs-lookup"><span data-stu-id="b8ee5-120">string</span></span>       | <span data-ttu-id="b8ee5-121">Уникальный идентификатор (GUID) элемента в OneDrive для бизнеса или на сайте SharePoint.</span><span class="sxs-lookup"><span data-stu-id="b8ee5-121">The unique identifier (guid) for the item within OneDrive for Business or a SharePoint site.</span></span>
+| <span data-ttu-id="b8ee5-122">siteId</span><span class="sxs-lookup"><span data-stu-id="b8ee5-122">siteId</span></span>           | <span data-ttu-id="b8ee5-123">строка</span><span class="sxs-lookup"><span data-stu-id="b8ee5-123">string</span></span>       | <span data-ttu-id="b8ee5-124">Уникальный идентификатор (GUID) семейства веб-сайтов (SPSite), содержащего элемент.</span><span class="sxs-lookup"><span data-stu-id="b8ee5-124">The unique identifier (guid) for the item's site collection (SPSite).</span></span>
+| <span data-ttu-id="b8ee5-125">siteUrl</span><span class="sxs-lookup"><span data-stu-id="b8ee5-125">siteUrl</span></span>          | <span data-ttu-id="b8ee5-126">string (url)</span><span class="sxs-lookup"><span data-stu-id="b8ee5-126">string (url)</span></span> | <span data-ttu-id="b8ee5-127">URL-адрес SharePoint для сайта, содержащего элемент.</span><span class="sxs-lookup"><span data-stu-id="b8ee5-127">The SharePoint URL for the site that contains the item.</span></span>
+| <span data-ttu-id="b8ee5-128">webId</span><span class="sxs-lookup"><span data-stu-id="b8ee5-128">webId</span></span>            | <span data-ttu-id="b8ee5-129">string</span><span class="sxs-lookup"><span data-stu-id="b8ee5-129">string</span></span>       | <span data-ttu-id="b8ee5-130">Уникальный идентификатор (GUID) семейства веб-сайтов (SPWeb), содержащего элемент.</span><span class="sxs-lookup"><span data-stu-id="b8ee5-130">The unique identifier (guid) for the item's site (SPWeb).</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="1bf5e-130">Заметки</span><span class="sxs-lookup"><span data-stu-id="1bf5e-130">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="b8ee5-131">Заметки</span><span class="sxs-lookup"><span data-stu-id="b8ee5-131">Remarks</span></span>
 
-<span data-ttu-id="1bf5e-131">Дополнительные сведения об аспектах ресурса **driveItem** см. в описании типа [**driveItem**](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="1bf5e-131">For more information about the facets on a **driveItem**, see [**driveItem**](driveitem.md).</span></span>
+<span data-ttu-id="b8ee5-132">Дополнительные сведения об аспектах ресурса **driveItem** см. в описании типа [**driveItem**](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="b8ee5-132">For more information about the facets on a **driveItem**, see [**driveItem**](driveitem.md).</span></span>
 
 
 

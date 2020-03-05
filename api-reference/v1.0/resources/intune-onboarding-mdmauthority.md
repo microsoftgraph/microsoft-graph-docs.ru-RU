@@ -5,26 +5,28 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 25b08a2d678190fee281595f4a4f0c0fe1b969aa
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: f9ec6f04f49397c4d273cf6f4819a31e8e1ce962
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37367891"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448048"
 ---
-# <a name="mdmauthority-enum-type"></a><span data-ttu-id="d7b04-103">тип перечисления Мдмаусорити</span><span class="sxs-lookup"><span data-stu-id="d7b04-103">mdmAuthority enum type</span></span>
+# <a name="mdmauthority-enum-type"></a><span data-ttu-id="4f67f-103">тип перечисления Мдмаусорити</span><span class="sxs-lookup"><span data-stu-id="4f67f-103">mdmAuthority enum type</span></span>
 
-> <span data-ttu-id="d7b04-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="d7b04-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="4f67f-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="4f67f-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="d7b04-105">Центр управления мобильными устройствами.</span><span class="sxs-lookup"><span data-stu-id="d7b04-105">Mobile device management authority.</span></span>
+> <span data-ttu-id="4f67f-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="4f67f-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="d7b04-106">Элементы</span><span class="sxs-lookup"><span data-stu-id="d7b04-106">Members</span></span>
-|<span data-ttu-id="d7b04-107">Элемент</span><span class="sxs-lookup"><span data-stu-id="d7b04-107">Member</span></span>|<span data-ttu-id="d7b04-108">Значение</span><span class="sxs-lookup"><span data-stu-id="d7b04-108">Value</span></span>|<span data-ttu-id="d7b04-109">Описание</span><span class="sxs-lookup"><span data-stu-id="d7b04-109">Description</span></span>|
+<span data-ttu-id="4f67f-106">Центр управления мобильными устройствами.</span><span class="sxs-lookup"><span data-stu-id="4f67f-106">Mobile device management authority.</span></span>
+
+## <a name="members"></a><span data-ttu-id="4f67f-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="4f67f-107">Members</span></span>
+|<span data-ttu-id="4f67f-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="4f67f-108">Member</span></span>|<span data-ttu-id="4f67f-109">Значение</span><span class="sxs-lookup"><span data-stu-id="4f67f-109">Value</span></span>|<span data-ttu-id="4f67f-110">Описание</span><span class="sxs-lookup"><span data-stu-id="4f67f-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d7b04-110">unknown</span><span class="sxs-lookup"><span data-stu-id="d7b04-110">unknown</span></span>|<span data-ttu-id="d7b04-111">нуль</span><span class="sxs-lookup"><span data-stu-id="d7b04-111">0</span></span>|<span data-ttu-id="d7b04-112">Неизвестно</span><span class="sxs-lookup"><span data-stu-id="d7b04-112">Unknown</span></span>|
-|<span data-ttu-id="d7b04-113">корпоративного</span><span class="sxs-lookup"><span data-stu-id="d7b04-113">intune</span></span>|<span data-ttu-id="d7b04-114">1,1</span><span class="sxs-lookup"><span data-stu-id="d7b04-114">1</span></span>|<span data-ttu-id="d7b04-115">Intune</span><span class="sxs-lookup"><span data-stu-id="d7b04-115">Intune</span></span>|
-|<span data-ttu-id="d7b04-116">SCCM</span><span class="sxs-lookup"><span data-stu-id="d7b04-116">sccm</span></span>|<span data-ttu-id="d7b04-117">2</span><span class="sxs-lookup"><span data-stu-id="d7b04-117">2</span></span>|<span data-ttu-id="d7b04-118">SCCM</span><span class="sxs-lookup"><span data-stu-id="d7b04-118">SCCM</span></span>|
-|<span data-ttu-id="d7b04-119">Office365</span><span class="sxs-lookup"><span data-stu-id="d7b04-119">office365</span></span>|<span data-ttu-id="d7b04-120">4</span><span class="sxs-lookup"><span data-stu-id="d7b04-120">3</span></span>|<span data-ttu-id="d7b04-121">Office365</span><span class="sxs-lookup"><span data-stu-id="d7b04-121">Office365</span></span>|
+|<span data-ttu-id="4f67f-111">unknown</span><span class="sxs-lookup"><span data-stu-id="4f67f-111">unknown</span></span>|<span data-ttu-id="4f67f-112">нуль</span><span class="sxs-lookup"><span data-stu-id="4f67f-112">0</span></span>|<span data-ttu-id="4f67f-113">Unknown</span><span class="sxs-lookup"><span data-stu-id="4f67f-113">Unknown</span></span>|
+|<span data-ttu-id="4f67f-114">корпоративного</span><span class="sxs-lookup"><span data-stu-id="4f67f-114">intune</span></span>|<span data-ttu-id="4f67f-115">1 </span><span class="sxs-lookup"><span data-stu-id="4f67f-115">1</span></span>|<span data-ttu-id="4f67f-116">Intune</span><span class="sxs-lookup"><span data-stu-id="4f67f-116">Intune</span></span>|
+|<span data-ttu-id="4f67f-117">SCCM</span><span class="sxs-lookup"><span data-stu-id="4f67f-117">sccm</span></span>|<span data-ttu-id="4f67f-118">2 </span><span class="sxs-lookup"><span data-stu-id="4f67f-118">2</span></span>|<span data-ttu-id="4f67f-119">SCCM</span><span class="sxs-lookup"><span data-stu-id="4f67f-119">SCCM</span></span>|
+|<span data-ttu-id="4f67f-120">Office365</span><span class="sxs-lookup"><span data-stu-id="4f67f-120">office365</span></span>|<span data-ttu-id="4f67f-121">3 </span><span class="sxs-lookup"><span data-stu-id="4f67f-121">3</span></span>|<span data-ttu-id="4f67f-122">Office365</span><span class="sxs-lookup"><span data-stu-id="4f67f-122">Office365</span></span>|
 
 
 

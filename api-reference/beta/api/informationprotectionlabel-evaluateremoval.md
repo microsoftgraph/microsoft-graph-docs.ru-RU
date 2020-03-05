@@ -5,39 +5,41 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: acea1f8ba7021e76d069f8da60c7b5cb9bbe9604
-ms.sourcegitcommit: 844c6d552a8a60fcda5ef65148570a32fd1004bb
+ms.openlocfilehash: 1554c3caa38a79d5638ae4e9c1fad56f5457508a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "41216717"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446357"
 ---
-# <a name="informationprotectionlabel-evaluateremoval"></a><span data-ttu-id="f7520-103">Информатионпротектионлабел: Евалуатеремовал</span><span class="sxs-lookup"><span data-stu-id="f7520-103">informationProtectionLabel: evaluateRemoval</span></span>
+# <a name="informationprotectionlabel-evaluateremoval"></a><span data-ttu-id="b82d0-103">Информатионпротектионлабел: Евалуатеремовал</span><span class="sxs-lookup"><span data-stu-id="b82d0-103">informationProtectionLabel: evaluateRemoval</span></span>
+
+<span data-ttu-id="b82d0-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="b82d0-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f7520-104">Укажите, какие действия необходимо предпринять для удаления сведений о наклейках в приложении, используемом для использования.</span><span class="sxs-lookup"><span data-stu-id="f7520-104">Indicate to the consuming application what actions it should take to remove the label information.</span></span>
+<span data-ttu-id="b82d0-105">Укажите, какие действия необходимо предпринять для удаления сведений о наклейках в приложении, используемом для использования.</span><span class="sxs-lookup"><span data-stu-id="b82d0-105">Indicate to the consuming application what actions it should take to remove the label information.</span></span>
 
-<span data-ttu-id="f7520-105">В [качестве](../resources/contentinfo.md) входных данных, которые включают существующие [пары ключ/значение](../resources/keyvaluepair.md)метаданных содержимого, API возвращает объект [информатионпротектионактион](../resources/informationprotectionaction.md) , который содержит несколько комбинаций одного из следующих элементов:</span><span class="sxs-lookup"><span data-stu-id="f7520-105">Given [contentInfo](../resources/contentinfo.md) as an input, which includes existing content metadata [key/value pairs](../resources/keyvaluepair.md), the API returns an [informationProtectionAction](../resources/informationprotectionaction.md) that contains some combination of one of more of the following:</span></span> 
+<span data-ttu-id="b82d0-106">В [качестве](../resources/contentinfo.md) входных данных, которые включают существующие [пары ключ/значение](../resources/keyvaluepair.md)метаданных содержимого, API возвращает объект [информатионпротектионактион](../resources/informationprotectionaction.md) , который содержит несколько комбинаций одного из следующих элементов:</span><span class="sxs-lookup"><span data-stu-id="b82d0-106">Given [contentInfo](../resources/contentinfo.md) as an input, which includes existing content metadata [key/value pairs](../resources/keyvaluepair.md), the API returns an [informationProtectionAction](../resources/informationprotectionaction.md) that contains some combination of one of more of the following:</span></span> 
 
-* [<span data-ttu-id="f7520-106">жустифяктион</span><span class="sxs-lookup"><span data-stu-id="f7520-106">justifyAction</span></span>](../resources/justifyaction.md)
-* [<span data-ttu-id="f7520-107">метадатаактион</span><span class="sxs-lookup"><span data-stu-id="f7520-107">metadataAction</span></span>](../resources/metadataaction.md)
-* [<span data-ttu-id="f7520-108">ремовеконтентфутерактион</span><span class="sxs-lookup"><span data-stu-id="f7520-108">removeContentFooterAction</span></span>](../resources/removecontentfooteraction.md)
-* [<span data-ttu-id="f7520-109">ремовеконтенсеадерактион</span><span class="sxs-lookup"><span data-stu-id="f7520-109">removeContentHeaderAction</span></span>](../resources/removecontentheaderaction.md)
-* [<span data-ttu-id="f7520-110">ремовепротектионактион</span><span class="sxs-lookup"><span data-stu-id="f7520-110">removeProtectionAction</span></span>](../resources/removeprotectionaction.md)
-* [<span data-ttu-id="f7520-111">ремовеватермаркактион</span><span class="sxs-lookup"><span data-stu-id="f7520-111">removeWatermarkAction</span></span>](../resources/removewatermarkaction.md)
+* [<span data-ttu-id="b82d0-107">жустифяктион</span><span class="sxs-lookup"><span data-stu-id="b82d0-107">justifyAction</span></span>](../resources/justifyaction.md)
+* [<span data-ttu-id="b82d0-108">метадатаактион</span><span class="sxs-lookup"><span data-stu-id="b82d0-108">metadataAction</span></span>](../resources/metadataaction.md)
+* [<span data-ttu-id="b82d0-109">ремовеконтентфутерактион</span><span class="sxs-lookup"><span data-stu-id="b82d0-109">removeContentFooterAction</span></span>](../resources/removecontentfooteraction.md)
+* [<span data-ttu-id="b82d0-110">ремовеконтенсеадерактион</span><span class="sxs-lookup"><span data-stu-id="b82d0-110">removeContentHeaderAction</span></span>](../resources/removecontentheaderaction.md)
+* [<span data-ttu-id="b82d0-111">ремовепротектионактион</span><span class="sxs-lookup"><span data-stu-id="b82d0-111">removeProtectionAction</span></span>](../resources/removeprotectionaction.md)
+* [<span data-ttu-id="b82d0-112">ремовеватермаркактион</span><span class="sxs-lookup"><span data-stu-id="b82d0-112">removeWatermarkAction</span></span>](../resources/removewatermarkaction.md)
 
-## <a name="permissions"></a><span data-ttu-id="f7520-112">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f7520-112">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b82d0-113">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b82d0-113">Permissions</span></span>
 
-<span data-ttu-id="f7520-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f7520-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b82d0-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b82d0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="f7520-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f7520-115">Permission type</span></span>                        | <span data-ttu-id="f7520-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f7520-116">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="b82d0-116">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b82d0-116">Permission type</span></span>                        | <span data-ttu-id="b82d0-117">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b82d0-117">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="f7520-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f7520-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="f7520-118">Информатионпротектионполици. Read</span><span class="sxs-lookup"><span data-stu-id="f7520-118">InformationProtectionPolicy.Read</span></span>            |
-| <span data-ttu-id="f7520-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f7520-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f7520-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f7520-120">Not supported.</span></span>                              |
-| <span data-ttu-id="f7520-121">Для приложения</span><span class="sxs-lookup"><span data-stu-id="f7520-121">Application</span></span>                            | <span data-ttu-id="f7520-122">Информатионпротектионполици. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="f7520-122">InformationProtectionPolicy.Read.All</span></span>        |
+| <span data-ttu-id="b82d0-118">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b82d0-118">Delegated (work or school account)</span></span>     | <span data-ttu-id="b82d0-119">Информатионпротектионполици. Read</span><span class="sxs-lookup"><span data-stu-id="b82d0-119">InformationProtectionPolicy.Read</span></span>            |
+| <span data-ttu-id="b82d0-120">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b82d0-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b82d0-121">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b82d0-121">Not supported.</span></span>                              |
+| <span data-ttu-id="b82d0-122">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b82d0-122">Application</span></span>                            | <span data-ttu-id="b82d0-123">Информатионпротектионполици. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="b82d0-123">InformationProtectionPolicy.Read.All</span></span>        |
 
-## <a name="http-request"></a><span data-ttu-id="f7520-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f7520-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b82d0-124">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b82d0-124">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -45,37 +47,37 @@ ms.locfileid: "41216717"
 POST /informationprotection/policy/labels/evaluateRemoval
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f7520-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f7520-124">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b82d0-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b82d0-125">Request headers</span></span>
 
-| <span data-ttu-id="f7520-125">Имя</span><span class="sxs-lookup"><span data-stu-id="f7520-125">Name</span></span>          | <span data-ttu-id="f7520-126">Описание</span><span class="sxs-lookup"><span data-stu-id="f7520-126">Description</span></span>                                                                                                                                                                       |
+| <span data-ttu-id="b82d0-126">Имя</span><span class="sxs-lookup"><span data-stu-id="b82d0-126">Name</span></span>          | <span data-ttu-id="b82d0-127">Описание</span><span class="sxs-lookup"><span data-stu-id="b82d0-127">Description</span></span>                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <span data-ttu-id="f7520-127">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f7520-127">Authorization</span></span> | <span data-ttu-id="f7520-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f7520-p102">Bearer {token}. Required.</span></span>                                                                                                                                                         |
-| <span data-ttu-id="f7520-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f7520-130">Content-type</span></span>  | <span data-ttu-id="f7520-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f7520-p103">application/json. Required.</span></span>                                                                                                                                                       |
-| <span data-ttu-id="f7520-133">User — Agent</span><span class="sxs-lookup"><span data-stu-id="f7520-133">User-Agent</span></span>    | <span data-ttu-id="f7520-134">Описывает имя и версию вызывающего приложения.</span><span class="sxs-lookup"><span data-stu-id="f7520-134">Describes the name and version of the calling application.</span></span> <span data-ttu-id="f7520-135">Подробные сведения отображаются в Azure Information Protection Analytics.</span><span class="sxs-lookup"><span data-stu-id="f7520-135">Details will surface in Azure Information Protection Analytics.</span></span> <span data-ttu-id="f7520-136">Рекомендуемый формат — ApplicationName/Version.</span><span class="sxs-lookup"><span data-stu-id="f7520-136">Suggested format is ApplicationName/Version.</span></span> <span data-ttu-id="f7520-137">Необязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="f7520-137">Optional.</span></span> |
+| <span data-ttu-id="b82d0-128">Авторизация</span><span class="sxs-lookup"><span data-stu-id="b82d0-128">Authorization</span></span> | <span data-ttu-id="b82d0-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b82d0-p102">Bearer {token}. Required.</span></span>                                                                                                                                                         |
+| <span data-ttu-id="b82d0-131">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b82d0-131">Content-type</span></span>  | <span data-ttu-id="b82d0-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b82d0-p103">application/json. Required.</span></span>                                                                                                                                                       |
+| <span data-ttu-id="b82d0-134">User — Agent</span><span class="sxs-lookup"><span data-stu-id="b82d0-134">User-Agent</span></span>    | <span data-ttu-id="b82d0-135">Описывает имя и версию вызывающего приложения.</span><span class="sxs-lookup"><span data-stu-id="b82d0-135">Describes the name and version of the calling application.</span></span> <span data-ttu-id="b82d0-136">Подробные сведения отображаются в Azure Information Protection Analytics.</span><span class="sxs-lookup"><span data-stu-id="b82d0-136">Details will surface in Azure Information Protection Analytics.</span></span> <span data-ttu-id="b82d0-137">Рекомендуемый формат — ApplicationName/Version.</span><span class="sxs-lookup"><span data-stu-id="b82d0-137">Suggested format is ApplicationName/Version.</span></span> <span data-ttu-id="b82d0-138">Необязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="b82d0-138">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f7520-138">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f7520-138">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b82d0-139">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b82d0-139">Request body</span></span>
 
-<span data-ttu-id="f7520-139">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="f7520-139">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="b82d0-140">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="b82d0-140">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="f7520-140">Параметр</span><span class="sxs-lookup"><span data-stu-id="f7520-140">Parameter</span></span>              | <span data-ttu-id="f7520-141">Тип</span><span class="sxs-lookup"><span data-stu-id="f7520-141">Type</span></span>                                                             | <span data-ttu-id="f7520-142">Описание</span><span class="sxs-lookup"><span data-stu-id="f7520-142">Description</span></span>                                                                                                                         |
+| <span data-ttu-id="b82d0-141">Параметр</span><span class="sxs-lookup"><span data-stu-id="b82d0-141">Parameter</span></span>              | <span data-ttu-id="b82d0-142">Тип</span><span class="sxs-lookup"><span data-stu-id="b82d0-142">Type</span></span>                                                             | <span data-ttu-id="b82d0-143">Описание</span><span class="sxs-lookup"><span data-stu-id="b82d0-143">Description</span></span>                                                                                                                         |
 | :--------------------- | :--------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
-| <span data-ttu-id="f7520-143">контентинфо</span><span class="sxs-lookup"><span data-stu-id="f7520-143">contentInfo</span></span>            | [<span data-ttu-id="f7520-144">контентинфо</span><span class="sxs-lookup"><span data-stu-id="f7520-144">contentInfo</span></span>](../resources/contentinfo.md)                       | <span data-ttu-id="f7520-145">Предоставляет подробные сведения о формате содержимого, состоянии контента и существующих [метаданных](../resources/keyvaluepair.md) в виде пар "ключ-значение".</span><span class="sxs-lookup"><span data-stu-id="f7520-145">Provides details about the content format, content state, and existing [metadata](../resources/keyvaluepair.md) as key/value pairs.</span></span> |
-| <span data-ttu-id="f7520-146">довнградежустификатион</span><span class="sxs-lookup"><span data-stu-id="f7520-146">downgradeJustification</span></span> | [<span data-ttu-id="f7520-147">довнградежустификатион</span><span class="sxs-lookup"><span data-stu-id="f7520-147">downgradeJustification</span></span>](../resources/downgradejustification.md) | <span data-ttu-id="f7520-148">Обоснование, которое должно быть предоставлено логикой пользователя или приложения.</span><span class="sxs-lookup"><span data-stu-id="f7520-148">Justification that must be provided by the user or application logic.</span></span>                                                               |
+| <span data-ttu-id="b82d0-144">контентинфо</span><span class="sxs-lookup"><span data-stu-id="b82d0-144">contentInfo</span></span>            | [<span data-ttu-id="b82d0-145">контентинфо</span><span class="sxs-lookup"><span data-stu-id="b82d0-145">contentInfo</span></span>](../resources/contentinfo.md)                       | <span data-ttu-id="b82d0-146">Предоставляет подробные сведения о формате содержимого, состоянии контента и существующих [метаданных](../resources/keyvaluepair.md) в виде пар "ключ-значение".</span><span class="sxs-lookup"><span data-stu-id="b82d0-146">Provides details about the content format, content state, and existing [metadata](../resources/keyvaluepair.md) as key/value pairs.</span></span> |
+| <span data-ttu-id="b82d0-147">довнградежустификатион</span><span class="sxs-lookup"><span data-stu-id="b82d0-147">downgradeJustification</span></span> | [<span data-ttu-id="b82d0-148">довнградежустификатион</span><span class="sxs-lookup"><span data-stu-id="b82d0-148">downgradeJustification</span></span>](../resources/downgradejustification.md) | <span data-ttu-id="b82d0-149">Обоснование, которое должно быть предоставлено логикой пользователя или приложения.</span><span class="sxs-lookup"><span data-stu-id="b82d0-149">Justification that must be provided by the user or application logic.</span></span>                                                               |
 
 
-## <a name="response"></a><span data-ttu-id="f7520-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="f7520-149">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b82d0-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="b82d0-150">Response</span></span>
 
-<span data-ttu-id="f7520-150">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект коллекции [информатионпротектионактион](../resources/informationprotectionaction.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="f7520-150">If successful, this method returns a `200 OK` response code and a new [informationProtectionAction](../resources/informationprotectionaction.md) collection object in the response body.</span></span> <span data-ttu-id="f7520-151">[Объект информатионпротектионактион](../resources/informationprotectionaction.md) будет содержать объект [метадатаактион](../resources/metadataaction.md) , который информирует приложение о том, какие метаданные необходимо удалить.</span><span class="sxs-lookup"><span data-stu-id="f7520-151">The [informationProtectionAction object](../resources/informationprotectionaction.md) will contain a [metadataAction](../resources/metadataaction.md) object that informs the application which metadata to remove.</span></span> 
+<span data-ttu-id="b82d0-151">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект коллекции [информатионпротектионактион](../resources/informationprotectionaction.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="b82d0-151">If successful, this method returns a `200 OK` response code and a new [informationProtectionAction](../resources/informationprotectionaction.md) collection object in the response body.</span></span> <span data-ttu-id="b82d0-152">[Объект информатионпротектионактион](../resources/informationprotectionaction.md) будет содержать объект [метадатаактион](../resources/metadataaction.md) , который информирует приложение о том, какие метаданные необходимо удалить.</span><span class="sxs-lookup"><span data-stu-id="b82d0-152">The [informationProtectionAction object](../resources/informationprotectionaction.md) will contain a [metadataAction](../resources/metadataaction.md) object that informs the application which metadata to remove.</span></span> 
 
-## <a name="examples"></a><span data-ttu-id="f7520-152">Примеры</span><span class="sxs-lookup"><span data-stu-id="f7520-152">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="b82d0-153">Примеры</span><span class="sxs-lookup"><span data-stu-id="b82d0-153">Examples</span></span>
 
-<span data-ttu-id="f7520-153">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="f7520-153">The following is an example of how to call this API.</span></span>
+<span data-ttu-id="b82d0-154">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="b82d0-154">The following is an example of how to call this API.</span></span>
 
-### <a name="request"></a><span data-ttu-id="f7520-154">Запрос</span><span class="sxs-lookup"><span data-stu-id="f7520-154">Request</span></span>
+### <a name="request"></a><span data-ttu-id="b82d0-155">Запрос</span><span class="sxs-lookup"><span data-stu-id="b82d0-155">Request</span></span>
 
-<span data-ttu-id="f7520-155">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f7520-155">The following is an example of the request.</span></span>
+<span data-ttu-id="b82d0-156">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b82d0-156">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="f7520-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="f7520-156">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b82d0-157">HTTP</span><span class="sxs-lookup"><span data-stu-id="b82d0-157">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "informationprotectionlabel_evaluateremoval"
@@ -139,26 +141,26 @@ User-agent: ContosoLOBApp/1.0
     }
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="f7520-157">C#</span><span class="sxs-lookup"><span data-stu-id="f7520-157">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b82d0-158">C#</span><span class="sxs-lookup"><span data-stu-id="b82d0-158">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/informationprotectionlabel-evaluateremoval-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="f7520-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f7520-158">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b82d0-159">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b82d0-159">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/informationprotectionlabel-evaluateremoval-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="f7520-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f7520-159">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b82d0-160">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b82d0-160">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/informationprotectionlabel-evaluateremoval-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="f7520-160">Отклик</span><span class="sxs-lookup"><span data-stu-id="f7520-160">Response</span></span>
+### <a name="response"></a><span data-ttu-id="b82d0-161">Отклик</span><span class="sxs-lookup"><span data-stu-id="b82d0-161">Response</span></span>
 
-<span data-ttu-id="f7520-161">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="f7520-161">The following is an example of the response.</span></span>
+<span data-ttu-id="b82d0-162">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="b82d0-162">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="f7520-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f7520-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="b82d0-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="b82d0-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

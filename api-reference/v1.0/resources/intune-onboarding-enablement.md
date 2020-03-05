@@ -5,25 +5,27 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 40530d501652f8967d33291d3305a58df36adbbd
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 053c0b3a361eb3c47bd3ea7073be43d6dbd11289
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37367926"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42448076"
 ---
-# <a name="enablement-enum-type"></a><span data-ttu-id="da79d-103">тип перечисления включения</span><span class="sxs-lookup"><span data-stu-id="da79d-103">enablement enum type</span></span>
+# <a name="enablement-enum-type"></a><span data-ttu-id="1cf9a-103">тип перечисления включения</span><span class="sxs-lookup"><span data-stu-id="1cf9a-103">enablement enum type</span></span>
 
-> <span data-ttu-id="da79d-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="da79d-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="1cf9a-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="1cf9a-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="da79d-105">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="da79d-105">Not yet documented</span></span>
+> <span data-ttu-id="1cf9a-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="1cf9a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="da79d-106">Элементы</span><span class="sxs-lookup"><span data-stu-id="da79d-106">Members</span></span>
-|<span data-ttu-id="da79d-107">Элемент</span><span class="sxs-lookup"><span data-stu-id="da79d-107">Member</span></span>|<span data-ttu-id="da79d-108">Значение</span><span class="sxs-lookup"><span data-stu-id="da79d-108">Value</span></span>|<span data-ttu-id="da79d-109">Описание</span><span class="sxs-lookup"><span data-stu-id="da79d-109">Description</span></span>|
+<span data-ttu-id="1cf9a-106">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="1cf9a-106">Not yet documented</span></span>
+
+## <a name="members"></a><span data-ttu-id="1cf9a-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="1cf9a-107">Members</span></span>
+|<span data-ttu-id="1cf9a-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="1cf9a-108">Member</span></span>|<span data-ttu-id="1cf9a-109">Значение</span><span class="sxs-lookup"><span data-stu-id="1cf9a-109">Value</span></span>|<span data-ttu-id="1cf9a-110">Описание</span><span class="sxs-lookup"><span data-stu-id="1cf9a-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="da79d-110">notConfigured</span><span class="sxs-lookup"><span data-stu-id="da79d-110">notConfigured</span></span>|<span data-ttu-id="da79d-111">нуль</span><span class="sxs-lookup"><span data-stu-id="da79d-111">0</span></span>|<span data-ttu-id="da79d-112">Н/Д</span><span class="sxs-lookup"><span data-stu-id="da79d-112">Not yet documented</span></span>|
-|<span data-ttu-id="da79d-113">enabled</span><span class="sxs-lookup"><span data-stu-id="da79d-113">enabled</span></span>|<span data-ttu-id="da79d-114">1,1</span><span class="sxs-lookup"><span data-stu-id="da79d-114">1</span></span>|<span data-ttu-id="da79d-115">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="da79d-115">Not yet documented</span></span>|
-|<span data-ttu-id="da79d-116">активирован</span><span class="sxs-lookup"><span data-stu-id="da79d-116">disabled</span></span>|<span data-ttu-id="da79d-117">2</span><span class="sxs-lookup"><span data-stu-id="da79d-117">2</span></span>|<span data-ttu-id="da79d-118">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="da79d-118">Not yet documented</span></span>|
+|<span data-ttu-id="1cf9a-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="1cf9a-111">notConfigured</span></span>|<span data-ttu-id="1cf9a-112">нуль</span><span class="sxs-lookup"><span data-stu-id="1cf9a-112">0</span></span>|<span data-ttu-id="1cf9a-113">Н/Д</span><span class="sxs-lookup"><span data-stu-id="1cf9a-113">Not yet documented</span></span>|
+|<span data-ttu-id="1cf9a-114">enabled</span><span class="sxs-lookup"><span data-stu-id="1cf9a-114">enabled</span></span>|<span data-ttu-id="1cf9a-115">1 </span><span class="sxs-lookup"><span data-stu-id="1cf9a-115">1</span></span>|<span data-ttu-id="1cf9a-116">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="1cf9a-116">Not yet documented</span></span>|
+|<span data-ttu-id="1cf9a-117">активирован</span><span class="sxs-lookup"><span data-stu-id="1cf9a-117">disabled</span></span>|<span data-ttu-id="1cf9a-118">2 </span><span class="sxs-lookup"><span data-stu-id="1cf9a-118">2</span></span>|<span data-ttu-id="1cf9a-119">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="1cf9a-119">Not yet documented</span></span>|
 
 
 

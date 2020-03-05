@@ -5,20 +5,22 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 4072a6d02ffb003731613c081effac50215f605a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7f0d0d23d56091db051352eaa8bde7668829e5da
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035814"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447320"
 ---
-# <a name="onenoteentityschemaobjectmodel-resource"></a><span data-ttu-id="28d25-103">ресурс Оненотинтитисчемаобжектмодел</span><span class="sxs-lookup"><span data-stu-id="28d25-103">onenoteEntitySchemaObjectModel resource</span></span>
+# <a name="onenoteentityschemaobjectmodel-resource"></a><span data-ttu-id="11e15-103">ресурс Оненотинтитисчемаобжектмодел</span><span class="sxs-lookup"><span data-stu-id="11e15-103">onenoteEntitySchemaObjectModel resource</span></span>
 
-<span data-ttu-id="28d25-104">Это базовый тип для объектов OneNote.</span><span class="sxs-lookup"><span data-stu-id="28d25-104">This is a base type for OneNote entities.</span></span>
+<span data-ttu-id="11e15-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="11e15-104">Namespace: microsoft.graph</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="28d25-105">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="28d25-105">JSON representation</span></span>
+<span data-ttu-id="11e15-105">Это базовый тип для объектов OneNote.</span><span class="sxs-lookup"><span data-stu-id="11e15-105">This is a base type for OneNote entities.</span></span>
 
-<span data-ttu-id="28d25-106">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="28d25-106">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="11e15-106">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="11e15-106">JSON representation</span></span>
+
+<span data-ttu-id="11e15-107">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="11e15-107">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -36,10 +38,10 @@ ms.locfileid: "36035814"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="28d25-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="28d25-107">Properties</span></span>
-| <span data-ttu-id="28d25-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="28d25-108">Property</span></span>     | <span data-ttu-id="28d25-109">Тип</span><span class="sxs-lookup"><span data-stu-id="28d25-109">Type</span></span>   |<span data-ttu-id="28d25-110">Описание</span><span class="sxs-lookup"><span data-stu-id="28d25-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="11e15-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="11e15-108">Properties</span></span>
+| <span data-ttu-id="11e15-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="11e15-109">Property</span></span>     | <span data-ttu-id="11e15-110">Тип</span><span class="sxs-lookup"><span data-stu-id="11e15-110">Type</span></span>   |<span data-ttu-id="11e15-111">Описание</span><span class="sxs-lookup"><span data-stu-id="11e15-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="28d25-111">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="28d25-111">createdDateTime</span></span>|<span data-ttu-id="28d25-112">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="28d25-112">DateTimeOffset</span></span>|<span data-ttu-id="28d25-113">Дата и время создания страницы.</span><span class="sxs-lookup"><span data-stu-id="28d25-113">The date and time when the page was created.</span></span> <span data-ttu-id="28d25-114">Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC).</span><span class="sxs-lookup"><span data-stu-id="28d25-114">The timestamp represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="28d25-115">Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.</span><span class="sxs-lookup"><span data-stu-id="28d25-115">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.</span></span> <span data-ttu-id="28d25-116">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="28d25-116">Read-only.</span></span>|
+|<span data-ttu-id="11e15-112">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="11e15-112">createdDateTime</span></span>|<span data-ttu-id="11e15-113">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="11e15-113">DateTimeOffset</span></span>|<span data-ttu-id="11e15-114">Дата и время создания страницы.</span><span class="sxs-lookup"><span data-stu-id="11e15-114">The date and time when the page was created.</span></span> <span data-ttu-id="11e15-115">Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC).</span><span class="sxs-lookup"><span data-stu-id="11e15-115">The timestamp represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="11e15-116">Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.</span><span class="sxs-lookup"><span data-stu-id="11e15-116">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.</span></span> <span data-ttu-id="11e15-117">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="11e15-117">Read-only.</span></span>|
 
 <!-- uuid: bfb567de-2a2a-4b81-bf47-a55626a0c166
 2015-10-25 14:57:30 UTC -->

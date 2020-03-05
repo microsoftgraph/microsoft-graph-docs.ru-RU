@@ -1,41 +1,43 @@
 ---
-title: Создание Среатассессментрекуест
+title: Создание объекта threatAssessmentRequest
 description: Создайте новый запрос на оценку угроз.
 localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3c62ef964acc7d67fb31b0df7dfb840c73fb5b9f
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 0818b495c209fcd264d1ddcc2a8c9f146f2983c7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871919"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446396"
 ---
-# <a name="create-threatassessmentrequest"></a><span data-ttu-id="56442-103">Создание Среатассессментрекуест</span><span class="sxs-lookup"><span data-stu-id="56442-103">Create threatAssessmentRequest</span></span>
+# <a name="create-threatassessmentrequest"></a><span data-ttu-id="82f99-103">Создание объекта threatAssessmentRequest</span><span class="sxs-lookup"><span data-stu-id="82f99-103">Create threatAssessmentRequest</span></span>
+
+<span data-ttu-id="82f99-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="82f99-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="56442-104">Создайте новый запрос на оценку угроз.</span><span class="sxs-lookup"><span data-stu-id="56442-104">Create a new threat assessment request.</span></span>
+<span data-ttu-id="82f99-105">Создайте новый запрос на оценку угроз.</span><span class="sxs-lookup"><span data-stu-id="82f99-105">Create a new threat assessment request.</span></span>
 
-<span data-ttu-id="56442-105">Запрос на оценку угроз может иметь один из следующих типов:</span><span class="sxs-lookup"><span data-stu-id="56442-105">A threat assessment request can be one of the following types:</span></span>
+<span data-ttu-id="82f99-106">Запрос на оценку угроз может иметь один из следующих типов:</span><span class="sxs-lookup"><span data-stu-id="82f99-106">A threat assessment request can be one of the following types:</span></span>
 
-* [<span data-ttu-id="56442-106">Почтовая</span><span class="sxs-lookup"><span data-stu-id="56442-106">Mail</span></span>](../resources/mailAssessmentRequest.md)
-* [<span data-ttu-id="56442-107">Файл электронной почты</span><span class="sxs-lookup"><span data-stu-id="56442-107">Email file</span></span>](../resources/emailFileAssessmentRequest.md)
-* [<span data-ttu-id="56442-108">Файл</span><span class="sxs-lookup"><span data-stu-id="56442-108">File</span></span>](../resources/fileAssessmentRequest.md)
-* [<span data-ttu-id="56442-109">URL</span><span class="sxs-lookup"><span data-stu-id="56442-109">URL</span></span>](../resources/urlAssessmentRequest.md)
+* <span data-ttu-id="82f99-107">[почта](../resources/mailAssessmentRequest.md);</span><span class="sxs-lookup"><span data-stu-id="82f99-107">[Mail](../resources/mailAssessmentRequest.md)</span></span>
+* [<span data-ttu-id="82f99-108">Файл электронной почты</span><span class="sxs-lookup"><span data-stu-id="82f99-108">Email file</span></span>](../resources/emailFileAssessmentRequest.md)
+* [<span data-ttu-id="82f99-109">Файл</span><span class="sxs-lookup"><span data-stu-id="82f99-109">File</span></span>](../resources/fileAssessmentRequest.md)
+* [<span data-ttu-id="82f99-110">URL</span><span class="sxs-lookup"><span data-stu-id="82f99-110">URL</span></span>](../resources/urlAssessmentRequest.md)
 
-## <a name="permissions"></a><span data-ttu-id="56442-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="56442-110">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="82f99-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="82f99-111">Permissions</span></span>
 
-<span data-ttu-id="56442-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="56442-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="82f99-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="82f99-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="56442-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="56442-113">Permission type</span></span>                        | <span data-ttu-id="56442-114">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="56442-114">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="82f99-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="82f99-114">Permission type</span></span>                        | <span data-ttu-id="82f99-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="82f99-115">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="56442-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="56442-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="56442-116">Среатассессмент. ReadWrite. ALL.</span><span class="sxs-lookup"><span data-stu-id="56442-116">ThreatAssessment.ReadWrite.All.</span></span>             |
-| <span data-ttu-id="56442-117">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="56442-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="56442-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="56442-118">Not supported.</span></span>                              |
-| <span data-ttu-id="56442-119">Для приложений</span><span class="sxs-lookup"><span data-stu-id="56442-119">Application</span></span>                            | <span data-ttu-id="56442-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="56442-120">Not supported.</span></span>                              |
+| <span data-ttu-id="82f99-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="82f99-116">Delegated (work or school account)</span></span>     | <span data-ttu-id="82f99-117">Среатассессмент. ReadWrite. ALL.</span><span class="sxs-lookup"><span data-stu-id="82f99-117">ThreatAssessment.ReadWrite.All.</span></span>             |
+| <span data-ttu-id="82f99-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="82f99-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="82f99-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="82f99-119">Not supported.</span></span>                              |
+| <span data-ttu-id="82f99-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="82f99-120">Application</span></span>                            | <span data-ttu-id="82f99-121">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="82f99-121">Not supported.</span></span>                              |
 
-## <a name="http-request"></a><span data-ttu-id="56442-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="56442-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="82f99-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="82f99-122">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -43,29 +45,29 @@ ms.locfileid: "40871919"
 POST /informationProtection/threatAssessmentRequests
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="56442-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="56442-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="82f99-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="82f99-123">Request headers</span></span>
 
-| <span data-ttu-id="56442-123">Имя</span><span class="sxs-lookup"><span data-stu-id="56442-123">Name</span></span>          | <span data-ttu-id="56442-124">Описание</span><span class="sxs-lookup"><span data-stu-id="56442-124">Description</span></span>   |
+| <span data-ttu-id="82f99-124">Имя</span><span class="sxs-lookup"><span data-stu-id="82f99-124">Name</span></span>          | <span data-ttu-id="82f99-125">Описание</span><span class="sxs-lookup"><span data-stu-id="82f99-125">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="56442-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="56442-125">Authorization</span></span> | <span data-ttu-id="56442-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="56442-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="82f99-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="82f99-126">Authorization</span></span> | <span data-ttu-id="82f99-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="82f99-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="56442-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="56442-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="82f99-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="82f99-129">Request body</span></span>
 
-<span data-ttu-id="56442-129">В тексте запроса добавьте представление объекта [среатассессментрекуест](../resources/threatassessmentrequest.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="56442-129">In the request body, supply a JSON representation of [threatAssessmentRequest](../resources/threatassessmentrequest.md) object.</span></span>
+<span data-ttu-id="82f99-130">В тексте запроса добавьте представление объекта [среатассессментрекуест](../resources/threatassessmentrequest.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="82f99-130">In the request body, supply a JSON representation of [threatAssessmentRequest](../resources/threatassessmentrequest.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="56442-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="56442-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="82f99-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="82f99-131">Response</span></span>
 
-<span data-ttu-id="56442-131">В случае успешного выполнения этот метод возвращает `201, Created` код отклика и новый объект [среатассессментрекуест](../resources/threatassessmentrequest.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="56442-131">If successful, this method returns a `201, Created` response code and a new [threatAssessmentRequest](../resources/threatassessmentrequest.md) object in the response body.</span></span>
+<span data-ttu-id="82f99-132">В случае успешного выполнения этот метод возвращает `201, Created` код отклика и новый объект [среатассессментрекуест](../resources/threatassessmentrequest.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="82f99-132">If successful, this method returns a `201, Created` response code and a new [threatAssessmentRequest](../resources/threatassessmentrequest.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="56442-132">Примеры</span><span class="sxs-lookup"><span data-stu-id="56442-132">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="82f99-133">Примеры</span><span class="sxs-lookup"><span data-stu-id="82f99-133">Examples</span></span>
 
-### <a name="example-1-create-a-mail-assessment-request"></a><span data-ttu-id="56442-133">Пример 1: Создание запроса на оценку почты</span><span class="sxs-lookup"><span data-stu-id="56442-133">Example 1: Create a mail assessment request</span></span>
+### <a name="example-1-create-a-mail-assessment-request"></a><span data-ttu-id="82f99-134">Пример 1: Создание запроса на оценку почты</span><span class="sxs-lookup"><span data-stu-id="82f99-134">Example 1: Create a mail assessment request</span></span>
 
-#### <a name="request"></a><span data-ttu-id="56442-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="56442-134">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="82f99-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="82f99-135">Request</span></span>
 
-<span data-ttu-id="56442-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="56442-135">The following is an example of the request.</span></span>
+<span data-ttu-id="82f99-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="82f99-136">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="56442-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="56442-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="82f99-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="82f99-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_mailassessmentrequest_from_informationprotection"
@@ -83,26 +85,26 @@ Content-type: application/json
   "messageUri": "https://graph.microsoft.com/beta/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt="
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="56442-137">C#</span><span class="sxs-lookup"><span data-stu-id="56442-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="82f99-138">C#</span><span class="sxs-lookup"><span data-stu-id="82f99-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-mailassessmentrequest-from-informationprotection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="56442-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="56442-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="82f99-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="82f99-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-mailassessmentrequest-from-informationprotection-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="56442-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="56442-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="82f99-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="82f99-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-mailassessmentrequest-from-informationprotection-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="56442-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="56442-140">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="82f99-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="82f99-141">Response</span></span>
 
-<span data-ttu-id="56442-141">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="56442-141">The following is an example of the response.</span></span>
+<span data-ttu-id="82f99-142">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="82f99-142">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="56442-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="56442-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="82f99-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="82f99-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -136,13 +138,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-an-email-assessment-request"></a><span data-ttu-id="56442-144">Пример 2: Создание запроса на оценку электронной почты</span><span class="sxs-lookup"><span data-stu-id="56442-144">Example 2: Create an email assessment request</span></span>
+### <a name="example-2-create-an-email-assessment-request"></a><span data-ttu-id="82f99-145">Пример 2: Создание запроса на оценку электронной почты</span><span class="sxs-lookup"><span data-stu-id="82f99-145">Example 2: Create an email assessment request</span></span>
 
-#### <a name="request"></a><span data-ttu-id="56442-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="56442-145">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="82f99-146">Запрос</span><span class="sxs-lookup"><span data-stu-id="82f99-146">Request</span></span>
 
-<span data-ttu-id="56442-146">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="56442-146">The following is an example of the request.</span></span>
+<span data-ttu-id="82f99-147">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="82f99-147">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="56442-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="56442-147">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="82f99-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="82f99-148">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_emailfileassessmentrequest_from_informationprotection"
@@ -160,26 +162,26 @@ Content-type: application/json
   "contentData": "UmVjZWl2ZWQ6IGZyb20gTVcyUFIwME1CMDMxNC5uYW1wcmQwMC....."
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="56442-148">C#</span><span class="sxs-lookup"><span data-stu-id="56442-148">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="82f99-149">C#</span><span class="sxs-lookup"><span data-stu-id="82f99-149">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-emailfileassessmentrequest-from-informationprotection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="56442-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="56442-149">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="82f99-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="82f99-150">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-emailfileassessmentrequest-from-informationprotection-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="56442-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="56442-150">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="82f99-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="82f99-151">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-emailfileassessmentrequest-from-informationprotection-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="56442-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="56442-151">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="82f99-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="82f99-152">Response</span></span>
 
-<span data-ttu-id="56442-152">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="56442-152">The following is an example of the response.</span></span>
+<span data-ttu-id="82f99-153">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="82f99-153">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="56442-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="56442-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="82f99-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="82f99-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -213,13 +215,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-create-a-file-assessment-request"></a><span data-ttu-id="56442-155">Пример 3: Создание запроса на оценку файла</span><span class="sxs-lookup"><span data-stu-id="56442-155">Example 3: Create a file assessment request</span></span>
+### <a name="example-3-create-a-file-assessment-request"></a><span data-ttu-id="82f99-156">Пример 3: Создание запроса на оценку файла</span><span class="sxs-lookup"><span data-stu-id="82f99-156">Example 3: Create a file assessment request</span></span>
 
-#### <a name="request"></a><span data-ttu-id="56442-156">Запрос</span><span class="sxs-lookup"><span data-stu-id="56442-156">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="82f99-157">Запрос</span><span class="sxs-lookup"><span data-stu-id="82f99-157">Request</span></span>
 
-<span data-ttu-id="56442-157">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="56442-157">The following is an example of the request.</span></span>
+<span data-ttu-id="82f99-158">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="82f99-158">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="56442-158">HTTP</span><span class="sxs-lookup"><span data-stu-id="56442-158">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="82f99-159">HTTP</span><span class="sxs-lookup"><span data-stu-id="82f99-159">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_fileassessmentrequest_from_informationprotection"
@@ -237,26 +239,26 @@ Content-type: application/json
   "contentData": "VGhpcyBpcyBhIHRlc3QgZmlsZQ=="
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="56442-159">C#</span><span class="sxs-lookup"><span data-stu-id="56442-159">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="82f99-160">C#</span><span class="sxs-lookup"><span data-stu-id="82f99-160">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-fileassessmentrequest-from-informationprotection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="56442-160">JavaScript</span><span class="sxs-lookup"><span data-stu-id="56442-160">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="82f99-161">JavaScript</span><span class="sxs-lookup"><span data-stu-id="82f99-161">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-fileassessmentrequest-from-informationprotection-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="56442-161">Objective-C</span><span class="sxs-lookup"><span data-stu-id="56442-161">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="82f99-162">Objective-C</span><span class="sxs-lookup"><span data-stu-id="82f99-162">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-fileassessmentrequest-from-informationprotection-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="56442-162">Отклик</span><span class="sxs-lookup"><span data-stu-id="56442-162">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="82f99-163">Отклик</span><span class="sxs-lookup"><span data-stu-id="82f99-163">Response</span></span>
 
-<span data-ttu-id="56442-163">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="56442-163">The following is an example of the response.</span></span>
+<span data-ttu-id="82f99-164">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="82f99-164">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="56442-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="56442-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="82f99-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="82f99-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -289,13 +291,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-create-an-url-assessment-request"></a><span data-ttu-id="56442-166">Пример 4: Создание запроса на оценку URL-адреса</span><span class="sxs-lookup"><span data-stu-id="56442-166">Example 4: Create an url assessment request</span></span>
+### <a name="example-4-create-an-url-assessment-request"></a><span data-ttu-id="82f99-167">Пример 4: Создание запроса на оценку URL-адреса</span><span class="sxs-lookup"><span data-stu-id="82f99-167">Example 4: Create an url assessment request</span></span>
 
-#### <a name="request"></a><span data-ttu-id="56442-167">Запрос</span><span class="sxs-lookup"><span data-stu-id="56442-167">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="82f99-168">Запрос</span><span class="sxs-lookup"><span data-stu-id="82f99-168">Request</span></span>
 
-<span data-ttu-id="56442-168">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="56442-168">The following is an example of the request.</span></span>
+<span data-ttu-id="82f99-169">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="82f99-169">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="56442-169">HTTP</span><span class="sxs-lookup"><span data-stu-id="56442-169">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="82f99-170">HTTP</span><span class="sxs-lookup"><span data-stu-id="82f99-170">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_urlassessmentrequest_from_informationprotection"
@@ -312,26 +314,26 @@ Content-type: application/json
   "category": "phishing"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="56442-170">C#</span><span class="sxs-lookup"><span data-stu-id="56442-170">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="82f99-171">C#</span><span class="sxs-lookup"><span data-stu-id="82f99-171">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-urlassessmentrequest-from-informationprotection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="56442-171">JavaScript</span><span class="sxs-lookup"><span data-stu-id="56442-171">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="82f99-172">JavaScript</span><span class="sxs-lookup"><span data-stu-id="82f99-172">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-urlassessmentrequest-from-informationprotection-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="56442-172">Objective-C</span><span class="sxs-lookup"><span data-stu-id="56442-172">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="82f99-173">Objective-C</span><span class="sxs-lookup"><span data-stu-id="82f99-173">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-urlassessmentrequest-from-informationprotection-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="56442-173">Отклик</span><span class="sxs-lookup"><span data-stu-id="56442-173">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="82f99-174">Отклик</span><span class="sxs-lookup"><span data-stu-id="82f99-174">Response</span></span>
 
-<span data-ttu-id="56442-174">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="56442-174">The following is an example of the response.</span></span>
+<span data-ttu-id="82f99-175">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="82f99-175">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="56442-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="56442-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="82f99-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="82f99-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

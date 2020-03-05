@@ -5,32 +5,34 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 2a3c16c69acefb8f746d11807a898e74de7620be
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ad6c3bcee979e10e308b307cec780c8ddc8950dd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033686"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446837"
 ---
-# <a name="teamstabconfiguration-resource-type-open-type"></a><span data-ttu-id="50cd9-103">Тип ресурса Теамстабконфигуратион (Open Type)</span><span class="sxs-lookup"><span data-stu-id="50cd9-103">teamsTabConfiguration resource type (Open Type)</span></span>
+# <a name="teamstabconfiguration-resource-type-open-type"></a><span data-ttu-id="2d40b-103">Тип ресурса Теамстабконфигуратион (Open Type)</span><span class="sxs-lookup"><span data-stu-id="2d40b-103">teamsTabConfiguration resource type (Open Type)</span></span>
+
+<span data-ttu-id="2d40b-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="2d40b-104">Namespace: microsoft.graph</span></span>
 
 
 
-<span data-ttu-id="50cd9-104">Параметры, определяющие содержимое [вкладки](teamstab.md). При настройке вкладки в интерактивном режиме эти сведения задаются приложением поставщика вкладок.</span><span class="sxs-lookup"><span data-stu-id="50cd9-104">The settings that determine the content of a [tab](teamstab.md). When a tab is interactively configured, this information is set by the tab provider application.</span></span>
-<span data-ttu-id="50cd9-105">Помимо приведенных ниже свойств, некоторые приложения поставщика вкладок задают дополнительные настраиваемые свойства.</span><span class="sxs-lookup"><span data-stu-id="50cd9-105">In addition to the properties below, some tab provider applications specify additional custom properties.</span></span>
+<span data-ttu-id="2d40b-105">Параметры, определяющие содержимое [вкладки](teamstab.md). При настройке вкладки в интерактивном режиме эти сведения задаются приложением поставщика вкладок.</span><span class="sxs-lookup"><span data-stu-id="2d40b-105">The settings that determine the content of a [tab](teamstab.md). When a tab is interactively configured, this information is set by the tab provider application.</span></span>
+<span data-ttu-id="2d40b-106">Помимо приведенных ниже свойств, некоторые приложения поставщика вкладок задают дополнительные настраиваемые свойства.</span><span class="sxs-lookup"><span data-stu-id="2d40b-106">In addition to the properties below, some tab provider applications specify additional custom properties.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="50cd9-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="50cd9-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="2d40b-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="2d40b-107">Properties</span></span>
 
-|<span data-ttu-id="50cd9-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="50cd9-107">Property</span></span>|<span data-ttu-id="50cd9-108">Тип</span><span class="sxs-lookup"><span data-stu-id="50cd9-108">Type</span></span>|<span data-ttu-id="50cd9-109">Описание</span><span class="sxs-lookup"><span data-stu-id="50cd9-109">Description</span></span>|
+|<span data-ttu-id="2d40b-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="2d40b-108">Property</span></span>|<span data-ttu-id="2d40b-109">Тип</span><span class="sxs-lookup"><span data-stu-id="2d40b-109">Type</span></span>|<span data-ttu-id="2d40b-110">Описание</span><span class="sxs-lookup"><span data-stu-id="2d40b-110">Description</span></span>|
 |-|-|-|
-|  <span data-ttu-id="50cd9-110">entityId</span><span class="sxs-lookup"><span data-stu-id="50cd9-110">entityId</span></span>   |   <span data-ttu-id="50cd9-111">string</span><span class="sxs-lookup"><span data-stu-id="50cd9-111">string</span></span> |  <span data-ttu-id="50cd9-112">Идентификатор для сущности, размещенной у поставщика вкладок.</span><span class="sxs-lookup"><span data-stu-id="50cd9-112">Identifier for the entity hosted by the tab provider.</span></span>     |
-|  <span data-ttu-id="50cd9-113">contentUrl</span><span class="sxs-lookup"><span data-stu-id="50cd9-113">contentUrl</span></span> |   <span data-ttu-id="50cd9-114">string</span><span class="sxs-lookup"><span data-stu-id="50cd9-114">string</span></span> |  <span data-ttu-id="50cd9-115">URL-адрес, используемый для отображения содержимого вкладки в Teams.</span><span class="sxs-lookup"><span data-stu-id="50cd9-115">Url used for rendering tab contents in Teams.</span></span> <span data-ttu-id="50cd9-116">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="50cd9-116">Required.</span></span>    |
-|  <span data-ttu-id="50cd9-117">removeUrl</span><span class="sxs-lookup"><span data-stu-id="50cd9-117">removeUrl</span></span>  |   <span data-ttu-id="50cd9-118">string</span><span class="sxs-lookup"><span data-stu-id="50cd9-118">string</span></span> |  <span data-ttu-id="50cd9-119">URL-адрес, вызываемый клиентом Teams при удалении вкладки с помощью клиента Teams.</span><span class="sxs-lookup"><span data-stu-id="50cd9-119">Url called by Teams client when a Tab is removed using the Teams Client.</span></span>     |
-|  <span data-ttu-id="50cd9-120">websiteUrl</span><span class="sxs-lookup"><span data-stu-id="50cd9-120">websiteUrl</span></span> |   <span data-ttu-id="50cd9-121">string</span><span class="sxs-lookup"><span data-stu-id="50cd9-121">string</span></span> |  <span data-ttu-id="50cd9-122">URL-адрес для отображения содержимого вкладки вне Teams.</span><span class="sxs-lookup"><span data-stu-id="50cd9-122">Url for showing tab contents outside of Teams.</span></span>     |
+|  <span data-ttu-id="2d40b-111">entityId</span><span class="sxs-lookup"><span data-stu-id="2d40b-111">entityId</span></span>   |   <span data-ttu-id="2d40b-112">строка</span><span class="sxs-lookup"><span data-stu-id="2d40b-112">string</span></span> |  <span data-ttu-id="2d40b-113">Идентификатор для сущности, размещенной у поставщика вкладок.</span><span class="sxs-lookup"><span data-stu-id="2d40b-113">Identifier for the entity hosted by the tab provider.</span></span>     |
+|  <span data-ttu-id="2d40b-114">contentUrl</span><span class="sxs-lookup"><span data-stu-id="2d40b-114">contentUrl</span></span> |   <span data-ttu-id="2d40b-115">строка</span><span class="sxs-lookup"><span data-stu-id="2d40b-115">string</span></span> |  <span data-ttu-id="2d40b-116">URL-адрес, используемый для отображения содержимого вкладки в Teams.</span><span class="sxs-lookup"><span data-stu-id="2d40b-116">Url used for rendering tab contents in Teams.</span></span> <span data-ttu-id="2d40b-117">Обязательное.</span><span class="sxs-lookup"><span data-stu-id="2d40b-117">Required.</span></span>    |
+|  <span data-ttu-id="2d40b-118">removeUrl</span><span class="sxs-lookup"><span data-stu-id="2d40b-118">removeUrl</span></span>  |   <span data-ttu-id="2d40b-119">строка</span><span class="sxs-lookup"><span data-stu-id="2d40b-119">string</span></span> |  <span data-ttu-id="2d40b-120">URL-адрес, вызываемый клиентом Teams при удалении вкладки с помощью клиента Teams.</span><span class="sxs-lookup"><span data-stu-id="2d40b-120">Url called by Teams client when a Tab is removed using the Teams Client.</span></span>     |
+|  <span data-ttu-id="2d40b-121">websiteUrl</span><span class="sxs-lookup"><span data-stu-id="2d40b-121">websiteUrl</span></span> |   <span data-ttu-id="2d40b-122">string</span><span class="sxs-lookup"><span data-stu-id="2d40b-122">string</span></span> |  <span data-ttu-id="2d40b-123">URL-адрес для отображения содержимого вкладки вне Teams.</span><span class="sxs-lookup"><span data-stu-id="2d40b-123">Url for showing tab contents outside of Teams.</span></span>     |
 
-## <a name="json-representation"></a><span data-ttu-id="50cd9-123">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="50cd9-123">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2d40b-124">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="2d40b-124">JSON representation</span></span>
 
-<span data-ttu-id="50cd9-124">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="50cd9-124">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="2d40b-125">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2d40b-125">The following is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamsTabConfiguration"

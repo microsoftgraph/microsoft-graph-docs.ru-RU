@@ -5,25 +5,27 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: enumPageType
-ms.openlocfilehash: 4ffd6653752968c16d469ade39fc0e399fbee37c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 042bc6ed29fcdc8db083920794b3ba2330191a66
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033735"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42446851"
 ---
-# <a name="teamsasyncoperationstatus-enum-type"></a><span data-ttu-id="d2df8-103">тип перечисления Теамсасинкоператионстатус</span><span class="sxs-lookup"><span data-stu-id="d2df8-103">teamsAsyncOperationStatus enum type</span></span>
+# <a name="teamsasyncoperationstatus-enum-type"></a><span data-ttu-id="b1956-103">тип перечисления Теамсасинкоператионстатус</span><span class="sxs-lookup"><span data-stu-id="b1956-103">teamsAsyncOperationStatus enum type</span></span>
+
+<span data-ttu-id="b1956-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="b1956-104">Namespace: microsoft.graph</span></span>
 
 
 
-<span data-ttu-id="d2df8-104">Описывает текущее состояние [теамсасинкоператион](teamsasyncoperation.md).</span><span class="sxs-lookup"><span data-stu-id="d2df8-104">Describes the current status of a [teamsAsyncOperation](teamsasyncoperation.md).</span></span>
+<span data-ttu-id="b1956-105">Описывает текущее состояние [теамсасинкоператион](teamsasyncoperation.md).</span><span class="sxs-lookup"><span data-stu-id="b1956-105">Describes the current status of a [teamsAsyncOperation](teamsasyncoperation.md).</span></span>
 
-## <a name="members"></a><span data-ttu-id="d2df8-105">Элементы</span><span class="sxs-lookup"><span data-stu-id="d2df8-105">Members</span></span>
+## <a name="members"></a><span data-ttu-id="b1956-106">Элементы</span><span class="sxs-lookup"><span data-stu-id="b1956-106">Members</span></span>
 
-| <span data-ttu-id="d2df8-106">Элемент</span><span class="sxs-lookup"><span data-stu-id="d2df8-106">Member</span></span> | <span data-ttu-id="d2df8-107">Значение</span><span class="sxs-lookup"><span data-stu-id="d2df8-107">Value</span></span>| <span data-ttu-id="d2df8-108">Описание</span><span class="sxs-lookup"><span data-stu-id="d2df8-108">Description</span></span> |
+| <span data-ttu-id="b1956-107">Элемент</span><span class="sxs-lookup"><span data-stu-id="b1956-107">Member</span></span> | <span data-ttu-id="b1956-108">Значение</span><span class="sxs-lookup"><span data-stu-id="b1956-108">Value</span></span>| <span data-ttu-id="b1956-109">Описание</span><span class="sxs-lookup"><span data-stu-id="b1956-109">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="d2df8-109">Недопустимый</span><span class="sxs-lookup"><span data-stu-id="d2df8-109">invalid</span></span>|<span data-ttu-id="d2df8-110">нуль</span><span class="sxs-lookup"><span data-stu-id="d2df8-110">0</span></span>|<span data-ttu-id="d2df8-111">Недопустимое значение.</span><span class="sxs-lookup"><span data-stu-id="d2df8-111">Invalid value.</span></span>|
-|<span data-ttu-id="d2df8-112">notStarted</span><span class="sxs-lookup"><span data-stu-id="d2df8-112">notStarted</span></span>|<span data-ttu-id="d2df8-113">1,1</span><span class="sxs-lookup"><span data-stu-id="d2df8-113">1</span></span>|<span data-ttu-id="d2df8-114">Операция не запущена.</span><span class="sxs-lookup"><span data-stu-id="d2df8-114">The operation has not started.</span></span>|
-|<span data-ttu-id="d2df8-115">inProgress</span><span class="sxs-lookup"><span data-stu-id="d2df8-115">inProgress</span></span>|<span data-ttu-id="d2df8-116">2</span><span class="sxs-lookup"><span data-stu-id="d2df8-116">2</span></span>|<span data-ttu-id="d2df8-117">Выполняется операция.</span><span class="sxs-lookup"><span data-stu-id="d2df8-117">The operation is running.</span></span>|
-|<span data-ttu-id="d2df8-118">закончил</span><span class="sxs-lookup"><span data-stu-id="d2df8-118">succeeded</span></span>|<span data-ttu-id="d2df8-119">4</span><span class="sxs-lookup"><span data-stu-id="d2df8-119">3</span></span>|<span data-ttu-id="d2df8-120">Операция выполнена успешно.</span><span class="sxs-lookup"><span data-stu-id="d2df8-120">The operation succeeded.</span></span>|
-|<span data-ttu-id="d2df8-121">сбоев</span><span class="sxs-lookup"><span data-stu-id="d2df8-121">failed</span></span>|<span data-ttu-id="d2df8-122">SP4</span><span class="sxs-lookup"><span data-stu-id="d2df8-122">4</span></span>|<span data-ttu-id="d2df8-123">Сбой операции.</span><span class="sxs-lookup"><span data-stu-id="d2df8-123">The operation failed.</span></span>|
+|<span data-ttu-id="b1956-110">Недопустимый</span><span class="sxs-lookup"><span data-stu-id="b1956-110">invalid</span></span>|<span data-ttu-id="b1956-111">нуль</span><span class="sxs-lookup"><span data-stu-id="b1956-111">0</span></span>|<span data-ttu-id="b1956-112">Недопустимое значение.</span><span class="sxs-lookup"><span data-stu-id="b1956-112">Invalid value.</span></span>|
+|<span data-ttu-id="b1956-113">notStarted</span><span class="sxs-lookup"><span data-stu-id="b1956-113">notStarted</span></span>|<span data-ttu-id="b1956-114">1 </span><span class="sxs-lookup"><span data-stu-id="b1956-114">1</span></span>|<span data-ttu-id="b1956-115">Операция не запущена.</span><span class="sxs-lookup"><span data-stu-id="b1956-115">The operation has not started.</span></span>|
+|<span data-ttu-id="b1956-116">inProgress</span><span class="sxs-lookup"><span data-stu-id="b1956-116">inProgress</span></span>|<span data-ttu-id="b1956-117">2 </span><span class="sxs-lookup"><span data-stu-id="b1956-117">2</span></span>|<span data-ttu-id="b1956-118">Выполняется операция.</span><span class="sxs-lookup"><span data-stu-id="b1956-118">The operation is running.</span></span>|
+|<span data-ttu-id="b1956-119">закончил</span><span class="sxs-lookup"><span data-stu-id="b1956-119">succeeded</span></span>|<span data-ttu-id="b1956-120">3 </span><span class="sxs-lookup"><span data-stu-id="b1956-120">3</span></span>|<span data-ttu-id="b1956-121">Операция выполнена успешно.</span><span class="sxs-lookup"><span data-stu-id="b1956-121">The operation succeeded.</span></span>|
+|<span data-ttu-id="b1956-122">сбоев</span><span class="sxs-lookup"><span data-stu-id="b1956-122">failed</span></span>|<span data-ttu-id="b1956-123">4 </span><span class="sxs-lookup"><span data-stu-id="b1956-123">4</span></span>|<span data-ttu-id="b1956-124">Сбой операции.</span><span class="sxs-lookup"><span data-stu-id="b1956-124">The operation failed.</span></span>|

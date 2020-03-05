@@ -5,25 +5,27 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 592ad28d076fc28ebba36d5c1196e81cba1286dd
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: cba399e54bd41e20148c4e34818b446400a0e85f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37355892"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447922"
 ---
-# <a name="remoteassistanceonboardingstatus-enum-type"></a><span data-ttu-id="a462f-103">тип перечисления Ремотеассистанцеонбоардингстатус</span><span class="sxs-lookup"><span data-stu-id="a462f-103">remoteAssistanceOnboardingStatus enum type</span></span>
+# <a name="remoteassistanceonboardingstatus-enum-type"></a><span data-ttu-id="4743a-103">тип перечисления Ремотеассистанцеонбоардингстатус</span><span class="sxs-lookup"><span data-stu-id="4743a-103">remoteAssistanceOnboardingStatus enum type</span></span>
 
-> <span data-ttu-id="a462f-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="a462f-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="4743a-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="4743a-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="a462f-105">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="a462f-105">Not yet documented</span></span>
+> <span data-ttu-id="4743a-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="4743a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="a462f-106">Элементы</span><span class="sxs-lookup"><span data-stu-id="a462f-106">Members</span></span>
-|<span data-ttu-id="a462f-107">Элемент</span><span class="sxs-lookup"><span data-stu-id="a462f-107">Member</span></span>|<span data-ttu-id="a462f-108">Значение</span><span class="sxs-lookup"><span data-stu-id="a462f-108">Value</span></span>|<span data-ttu-id="a462f-109">Описание</span><span class="sxs-lookup"><span data-stu-id="a462f-109">Description</span></span>|
+<span data-ttu-id="4743a-106">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="4743a-106">Not yet documented</span></span>
+
+## <a name="members"></a><span data-ttu-id="4743a-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="4743a-107">Members</span></span>
+|<span data-ttu-id="4743a-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="4743a-108">Member</span></span>|<span data-ttu-id="4743a-109">Значение</span><span class="sxs-lookup"><span data-stu-id="4743a-109">Value</span></span>|<span data-ttu-id="4743a-110">Описание</span><span class="sxs-lookup"><span data-stu-id="4743a-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a462f-110">нотонбоардед</span><span class="sxs-lookup"><span data-stu-id="a462f-110">notOnboarded</span></span>|<span data-ttu-id="a462f-111">нуль</span><span class="sxs-lookup"><span data-stu-id="a462f-111">0</span></span>|<span data-ttu-id="a462f-112">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="a462f-112">Not yet documented</span></span>|
-|<span data-ttu-id="a462f-113">входящей миграции</span><span class="sxs-lookup"><span data-stu-id="a462f-113">onboarding</span></span>|<span data-ttu-id="a462f-114">1,1</span><span class="sxs-lookup"><span data-stu-id="a462f-114">1</span></span>|<span data-ttu-id="a462f-115">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="a462f-115">Not yet documented</span></span>|
-|<span data-ttu-id="a462f-116">подключены</span><span class="sxs-lookup"><span data-stu-id="a462f-116">onboarded</span></span>|<span data-ttu-id="a462f-117">2</span><span class="sxs-lookup"><span data-stu-id="a462f-117">2</span></span>|<span data-ttu-id="a462f-118">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="a462f-118">Not yet documented</span></span>|
+|<span data-ttu-id="4743a-111">нотонбоардед</span><span class="sxs-lookup"><span data-stu-id="4743a-111">notOnboarded</span></span>|<span data-ttu-id="4743a-112">нуль</span><span class="sxs-lookup"><span data-stu-id="4743a-112">0</span></span>|<span data-ttu-id="4743a-113">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="4743a-113">Not yet documented</span></span>|
+|<span data-ttu-id="4743a-114">входящей миграции</span><span class="sxs-lookup"><span data-stu-id="4743a-114">onboarding</span></span>|<span data-ttu-id="4743a-115">1 </span><span class="sxs-lookup"><span data-stu-id="4743a-115">1</span></span>|<span data-ttu-id="4743a-116">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="4743a-116">Not yet documented</span></span>|
+|<span data-ttu-id="4743a-117">подключены</span><span class="sxs-lookup"><span data-stu-id="4743a-117">onboarded</span></span>|<span data-ttu-id="4743a-118">2 </span><span class="sxs-lookup"><span data-stu-id="4743a-118">2</span></span>|<span data-ttu-id="4743a-119">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="4743a-119">Not yet documented</span></span>|
 
 
 

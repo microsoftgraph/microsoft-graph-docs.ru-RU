@@ -5,23 +5,25 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: c4c5099485c75c41e9ebb6275a7ffa5fed3be5a2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d15ea9d47ab8f092bd754f02f1d1517af2120ad7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035233"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42447117"
 ---
-# <a name="plannerorderhintsbyassignee-resource-type"></a><span data-ttu-id="9e8ac-103">Тип ресурса Планнерордерхинтсбяссигни</span><span class="sxs-lookup"><span data-stu-id="9e8ac-103">plannerOrderHintsByAssignee resource type</span></span>
+# <a name="plannerorderhintsbyassignee-resource-type"></a><span data-ttu-id="5c975-103">Тип ресурса Планнерордерхинтсбяссигни</span><span class="sxs-lookup"><span data-stu-id="5c975-103">plannerOrderHintsByAssignee resource type</span></span>
 
-<span data-ttu-id="9e8ac-104">**Планнерордерхинтсбяссигни** — это ресурс, который содержит [подсказки упорядочения](planner-order-hint-format.md) для уполномоченные в ресурсе [plannerTask](plannertask.md) , чтобы указать порядок задачи, назначенный для представления доски задач.</span><span class="sxs-lookup"><span data-stu-id="9e8ac-104">The **plannerOrderHintsByAssignee** is a resource that contains [ordering hints](planner-order-hint-format.md) for assignees in a [plannerTask](plannertask.md) resource, to indicate the order of the task in Assigned To view of the Task Board.</span></span>
-<span data-ttu-id="9e8ac-105">Этот тип является открытым типом.</span><span class="sxs-lookup"><span data-stu-id="9e8ac-105">This type is an open type.</span></span> <span data-ttu-id="9e8ac-106">Свойства — это идентификаторы пользователей, назначенных задаче, а значения — подсказки порядка.</span><span class="sxs-lookup"><span data-stu-id="9e8ac-106">The properties are the ids of users assigned to the task, and the values are order hints.</span></span>
+<span data-ttu-id="5c975-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="5c975-104">Namespace: microsoft.graph</span></span>
 
-## <a name="properties"></a><span data-ttu-id="9e8ac-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="9e8ac-107">Properties</span></span>
-<span data-ttu-id="9e8ac-108">Клиентская возможность может определять свойства открытого типа.</span><span class="sxs-lookup"><span data-stu-id="9e8ac-108">Properties of an Open Type can be defined by the client.</span></span> <span data-ttu-id="9e8ac-109">В этом случае клиент должен предоставить идентификаторы пользователей, назначенных задаче, в качестве имен свойств и допустимую [подсказку порядка](planner-order-hint-format.md) в качестве значения.</span><span class="sxs-lookup"><span data-stu-id="9e8ac-109">In this case, the client must provide ids of users assigned to the task as property names, and a valid [order hint](planner-order-hint-format.md) as the value.</span></span>
-<span data-ttu-id="9e8ac-110">Невозможно удалить свойства из этого типа.</span><span class="sxs-lookup"><span data-stu-id="9e8ac-110">Properties cannot be removed from this type.</span></span> <span data-ttu-id="9e8ac-111">Служба автоматически удалит значения, так как назначения для содержащегося [plannerTask](plannertask.md) будут обновлены.</span><span class="sxs-lookup"><span data-stu-id="9e8ac-111">The service will automatically remove values as the assignments on the containing [plannerTask](plannertask.md) are updated.</span></span>
+<span data-ttu-id="5c975-105">**Планнерордерхинтсбяссигни** — это ресурс, который содержит [подсказки упорядочения](planner-order-hint-format.md) для уполномоченные в ресурсе [plannerTask](plannertask.md) , чтобы указать порядок задачи, назначенный для представления доски задач.</span><span class="sxs-lookup"><span data-stu-id="5c975-105">The **plannerOrderHintsByAssignee** is a resource that contains [ordering hints](planner-order-hint-format.md) for assignees in a [plannerTask](plannertask.md) resource, to indicate the order of the task in Assigned To view of the Task Board.</span></span>
+<span data-ttu-id="5c975-106">Этот тип является открытым типом.</span><span class="sxs-lookup"><span data-stu-id="5c975-106">This type is an open type.</span></span> <span data-ttu-id="5c975-107">Свойства — это идентификаторы пользователей, назначенных задаче, а значения — подсказки порядка.</span><span class="sxs-lookup"><span data-stu-id="5c975-107">The properties are the ids of users assigned to the task, and the values are order hints.</span></span>
 
-<span data-ttu-id="9e8ac-112">Пример.</span><span class="sxs-lookup"><span data-stu-id="9e8ac-112">Example:</span></span>
+## <a name="properties"></a><span data-ttu-id="5c975-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="5c975-108">Properties</span></span>
+<span data-ttu-id="5c975-109">Клиентская возможность может определять свойства открытого типа.</span><span class="sxs-lookup"><span data-stu-id="5c975-109">Properties of an Open Type can be defined by the client.</span></span> <span data-ttu-id="5c975-110">В этом случае клиент должен предоставить идентификаторы пользователей, назначенных задаче, в качестве имен свойств и допустимую [подсказку порядка](planner-order-hint-format.md) в качестве значения.</span><span class="sxs-lookup"><span data-stu-id="5c975-110">In this case, the client must provide ids of users assigned to the task as property names, and a valid [order hint](planner-order-hint-format.md) as the value.</span></span>
+<span data-ttu-id="5c975-111">Невозможно удалить свойства из этого типа.</span><span class="sxs-lookup"><span data-stu-id="5c975-111">Properties cannot be removed from this type.</span></span> <span data-ttu-id="5c975-112">Служба автоматически удалит значения, так как назначения для содержащегося [plannerTask](plannertask.md) будут обновлены.</span><span class="sxs-lookup"><span data-stu-id="5c975-112">The service will automatically remove values as the assignments on the containing [plannerTask](plannertask.md) are updated.</span></span>
+
+<span data-ttu-id="5c975-113">Пример.</span><span class="sxs-lookup"><span data-stu-id="5c975-113">Example:</span></span>
 
 <!-- {
   "blockType": "resource",
