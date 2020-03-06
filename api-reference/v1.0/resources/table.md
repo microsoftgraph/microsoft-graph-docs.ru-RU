@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Priority
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 5c1d9ccd71e49e673235bfca151f5b5db92efd1f
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 87189999f94cacbbcc4b8e3d0e8cdfe97e7993a6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36730297"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533591"
 ---
 # <a name="table-resource-type"></a>Тип ресурса Table
+
+Пространство имен: microsoft.graph
 
 Представляет таблицу Excel.
 
@@ -54,7 +56,7 @@ ms.locfileid: "36730297"
 |legacyId|String|Устаревший идентификатор, используемый в старых клиентах Excel. Значение идентификатора остается прежним, даже если переименовать таблицу. Это свойство должно интерпретироваться как непрозрачное строковое значение и не должно преобразовываться в любой другой тип. Только для чтения.   |
 
 ## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |columns|Коллекция [WorkbookTableColumn](workbooktablecolumn.md)|Представляет коллекцию всех столбцов в таблице. Только для чтения.|
 |rows|Коллекция [WorkbookTableRow](tablerow.md)|Представляет коллекцию всех строк в таблице. Только для чтения.|

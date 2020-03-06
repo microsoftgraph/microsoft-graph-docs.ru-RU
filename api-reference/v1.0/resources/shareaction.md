@@ -6,14 +6,16 @@ description: Объект shareAction предоставляет сведени�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 73b847bbd9608a7647f3895e8d67fff9dbdc9a68
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f8b4870ec82a2f264d6f67cdd02cd22c9747e51e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034351"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533739"
 ---
 # <a name="shareaction-resource-type"></a>Тип ресурса shareAction
+
+Пространство имен: microsoft.graph
 
 Ресурс **shareAction** предоставляет сведения о [действии][activity] , в котором общий доступ к элементу.
 
