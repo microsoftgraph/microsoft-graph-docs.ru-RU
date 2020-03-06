@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 4cf6edbf7652ae3a7aebcbc73fc398587b1fac30
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d40763e53aef06209818476314bca76ad2ba1293
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036094"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534236"
 ---
 # <a name="messagerulepredicates-resource-type"></a>Тип ресурса messageRulePredicates
+
+Пространство имен: microsoft.graph
 
 
 Представляет набор условий и исключений, доступных для правила.

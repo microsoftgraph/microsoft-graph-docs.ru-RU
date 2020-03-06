@@ -5,14 +5,16 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 1a76d11472b3faef95e87ed4724f1397ebe467a6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 70dfe86840bd908a2e626b7f965d89251b9221aa
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033784"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533500"
 ---
 # <a name="teamsappinstallation-resource-type"></a>Тип ресурса Теамсаппинсталлатион
+
+Пространство имен: microsoft.graph
 
 [TeamsApp](teamsapp.md) , установленный в [команде](team.md). Все боты, которые входят в состав приложения, станут частью любой команды, в которую добавляется приложение.
 
@@ -31,9 +33,9 @@ ms.locfileid: "36033784"
 |:------------------- |:-------- |:----------- |
 | id                  | string   | Уникальный идентификатор (а не идентификаторы Teams). |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
-| Отношение   | Тип    | Описание |
+| Связь   | Тип    | Описание |
 |:---------------|:--------|:----------|
 |teamsApp|[teamsApp](teamsapp.md)| Установленное приложение. |
 |teamsAppDefinition|[teamsAppDefinition](teamsappdefinition.md)| Сведения о данной версии приложения. |

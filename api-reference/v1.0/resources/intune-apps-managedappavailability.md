@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d7b823a4475bed046afc35982c1442b9f502405e
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: d6da24b9815ac31e1ee2cbc0cc5add7b1072cc4c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37360225"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531199"
 ---
 # <a name="managedappavailability-enum-type"></a>тип перечисления Манажедаппаваилабилити
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+Пространство имен: microsoft.graph
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Доступность управляемого приложения (MAM).
 
@@ -22,7 +24,7 @@ ms.locfileid: "37360225"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |глобального|нуль|Глобальное доступное приложение ко всем клиентам.|
-|линеофбусинесс|1,1|Частные бизнес-приложения, частные для Организации.|
+|линеофбусинесс|1 |Частные бизнес-приложения, частные для Организации.|
 
 
 

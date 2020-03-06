@@ -5,14 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e490a990344d27a5672b72466815b2754c3cb1fc
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: dca26c0c8fcff8fb3ccbc92ef7f7560c50f4c44c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844433"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508893"
 ---
 # <a name="update-settings"></a>Обновление параметров
+
+Пространство имен: microsoft.graph
 
 Обновление свойств объекта [усерсеттингс](../resources/usersettings.md) . Пользователи в одной организации могут иметь различные параметры в зависимости от их предпочтения или политики Организации. Чтобы получить текущие параметры пользователя, просмотрите [параметры текущей учетной записи пользователя](usersettings-get.md). 
 

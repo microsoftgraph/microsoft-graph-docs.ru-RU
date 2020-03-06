@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e34076cb7bbeec338e71aab6dc7ca9dc4e6cca37
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 89375d4856c5d2d93931c5e2d9c2e3b492c85273
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030396"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532969"
 ---
 # <a name="extension-resource-type"></a>Тип ресурса extension
+
+Пространство имен: microsoft.graph
 
 Абстрактный тип для поддержки открытого типа [openTypeExtension](opentypeextension.md) в OData 4-й версии.
 

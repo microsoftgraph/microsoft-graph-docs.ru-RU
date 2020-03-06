@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ba55408490c821160a7d0a0e95f98ccba712c8f5
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 36fc70847c8c09f2601509ba02e633af1429c145
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37367128"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532306"
 ---
 # <a name="welcomescreenmeetinginformation-enum-type"></a>тип перечисления Велкомескринмитингинформатион
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+Пространство имен: microsoft.graph
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Возможные значения для сведений о собрании на экране приветствия.
 
@@ -22,8 +24,8 @@ ms.locfileid: "37367128"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|шоворганизерандтимеонли|1,1|Показывать только организатор и время.|
-|шоворганизерандтимеандсубжект|2|Отображение организатора, времени и темы (тема скрыта для частных собраний).|
+|шоворганизерандтимеонли|1 |Показывать только организатор и время.|
+|шоворганизерандтимеандсубжект|2 |Отображение организатора, времени и темы (тема скрыта для частных собраний).|
 
 
 
