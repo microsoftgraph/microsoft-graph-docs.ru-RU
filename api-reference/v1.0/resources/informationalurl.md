@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: e81d8cc4a1ef25364727049269b420cf426eb0c8
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: ebf2a79931936e8f45f93cba46b1fefdbf0163b7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939483"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532881"
 ---
 # <a name="informationalurl-resource-type"></a>Тип ресурса informationalUrl
+
+Пространство имен: microsoft.graph
 
 Основные сведения о профиле приложения.
 
@@ -20,11 +22,11 @@ ms.locfileid: "37939483"
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|logoUrl|String|URL-адрес сети CDN для логотипа приложения и только для чтения.|
-|маркетингурл|String| Ссылка на маркетинговую страницу приложения. Пример: https://www.contoso.com/app/marketing |
-|привацистатементурл|String| Ссылка на заявление о конфиденциальности приложения. Пример: https://www.contoso.com/app/privacy |
-|supportUrl|String| Ссылка на страницу поддержки приложения. Пример: https://www.contoso.com/app/support |
-|термсофсервицеурл|String| Ссылка на условия заявления приложения. Пример: https://www.contoso.com/app/termsofservice |
+|logoUrl|Строка|URL-адрес сети CDN для логотипа приложения и только для чтения.|
+|маркетингурл|Строка| Ссылка на маркетинговую страницу приложения. Пример: https://www.contoso.com/app/marketing |
+|привацистатементурл|Строка| Ссылка на заявление о конфиденциальности приложения. Пример: https://www.contoso.com/app/privacy |
+|supportUrl|Строка| Ссылка на страницу поддержки приложения. Пример: https://www.contoso.com/app/support |
+|термсофсервицеурл|Строка| Ссылка на условия заявления приложения. Пример: https://www.contoso.com/app/termsofservice |
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

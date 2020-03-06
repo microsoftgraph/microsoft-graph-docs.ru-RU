@@ -7,14 +7,16 @@ localization_priority: Normal
 description: Ресурс textColumn в ресурсе columnDefinition указывает, что значения столбца представляют собой текст.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 37a5bbd985d163cf627f4bc0a16a756eaf00af66
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 67e6b1f24155a8cfcecb2fb2443f3b1536ba48bd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033658"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533472"
 ---
 # <a name="textcolumn-resource-type"></a>Тип ресурса textColumn
+
+Пространство имен: microsoft.graph
 
 Ресурс **textColumn** в ресурсе [columnDefinition](columndefinition.md) указывает, что значения столбца представляют собой текст.
 

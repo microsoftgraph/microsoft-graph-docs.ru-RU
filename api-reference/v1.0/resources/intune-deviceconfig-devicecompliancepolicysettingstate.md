@@ -5,31 +5,33 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e26beda0907c8a8e56c202088dfaad666b795ee7
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 1d75c82cfdd53d1df51537980487e7f7ed780414
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37359623"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530817"
 ---
 # <a name="devicecompliancepolicysettingstate-resource-type"></a>Тип ресурса deviceCompliancePolicySettingState
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+Пространство имен: microsoft.graph
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Состояние параметров политики соответствия требованиям для определенного устройства.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|setting|String|Параметр для отчета|
-|settingName|String|Локализованное или понятное имя параметра для отчета|
-|instanceDisplayName|String|Имя экземпляра параметра для отчета|
+|setting|Строка|Параметр для отчета|
+|settingName|Строка|Локализованное или понятное имя параметра для отчета|
+|instanceDisplayName|Строка|Имя экземпляра параметра для отчета|
 |state|[комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние соответствия для параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |errorCode|Int64|Код ошибки для параметра|
-|errorDescription|String|Описание ошибки|
+|errorDescription|Строка|Описание ошибки|
 |userId|String|ИД пользователя|
-|userName|String|Имя пользователя|
-|userEmail|String|Электронный адрес пользователя|
+|userName|Строка|Имя пользователя|
+|userEmail|Строка|Электронный адрес пользователя|
 |userPrincipalName|Строка|Имя участника-пользователя.|
 |sources|Коллекция [settingSource](../resources/intune-deviceconfig-settingsource.md)|Соответствующие политики|
 |currentValue|String|Текущее значение параметра на устройстве|

@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 01c0a3443eae87fb69b4b6482a2da2c2e067c5d1
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 3b0b20615dfdda489649182d0c0687e9a735b5f7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37357061"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532226"
 ---
 # <a name="compliancestate-enum-type"></a>тип перечисления Комплианцестате
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+Пространство имен: microsoft.graph
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Состояние соответствия требованиям.
 
@@ -22,10 +24,10 @@ ms.locfileid: "37357061"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Найден.|
-|совместимо|1,1|Совместимо.|
-|несоответствующих|2|Устройство не совместимо и заблокировано из корпоративных ресурсов.|
-|противоречивы|4|Конфликт с другими правилами.|
-|error|SP4|Ошибка|
+|совместимо|1 |Совместимо.|
+|несоответствующих|2 |Устройство не совместимо и заблокировано из корпоративных ресурсов.|
+|противоречивы|3 |Конфликт с другими правилами.|
+|error|4 |Ошибка|
 |инграцепериод|254|Устройство не соответствует требованиям, но имеет доступ к корпоративным ресурсам|
 |конфигманажер|255|Управление с помощью диспетчера конфигураций|
 

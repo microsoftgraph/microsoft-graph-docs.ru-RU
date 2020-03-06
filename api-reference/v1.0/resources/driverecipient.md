@@ -7,14 +7,16 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Ресурс DriveRecipient представляет человека, группу или другого получателя, которому можно предоставить доступ с помощью действия invite.
 doc_type: resourcePageType
-ms.openlocfilehash: a198bdc8a50fdb754ba8f9c88ce8e925c548a600
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d1b123c897791dff5bd6c42eb9e4b030e83e1d5c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029388"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531532"
 ---
 # <a name="driverecipient-resource"></a>Ресурс DriveRecipient
+
+Пространство имен: microsoft.graph
 
 Ресурс **DriveRecipient** представляет человека, группу или другого получателя, которому можно предоставить доступ с помощью действия [invite](../api/driveitem-invite.md).
 
@@ -38,7 +40,7 @@ ms.locfileid: "36029388"
 | Имя свойства | Тип   | Описание                                                                                             |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------|
 | email         | String | Электронный адрес получателя (если с получателем связан электронный адрес).                  |
-| alias         | String | Псевдоним объекта домена для тех случаев, когда электронный адрес недоступен (например, для групп безопасности). |
+| alias         | Строка | Псевдоним объекта домена для тех случаев, когда электронный адрес недоступен (например, для групп безопасности). |
 | objectId      | String | Уникальный идентификатор получателя в каталоге.                                               |
 
 ## <a name="remarks"></a>Заметки

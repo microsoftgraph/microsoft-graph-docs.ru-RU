@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 33c2d37f46d4fdfdaef4bc5b6d92557668bf9d70
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1c1d5a83323c28b8ec54543d4ee633861654991e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034057"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533638"
 ---
 # <a name="sortfield-resource-type"></a>Тип ресурса SortField
+
+Пространство имен: microsoft.graph
 
 Представляет условие в операции сортировки.
 
@@ -24,7 +26,7 @@ ms.locfileid: "36034057"
 |dataOption|string|Представляет дополнительные параметры сортировки для этого поля. Возможные значения: `Normal`, `TextAsNumber`.|
 |key|int|Представляет столбец (или строку в зависимости от ориентации сортировки), для которого задано условие. Представляется в виде расстояния от первого столбца (или строки).|
 |sortOn|string|Представляет тип сортировки этого условия. Допустимые значения: `Value`, `CellColor`, `FontColor`, `Icon`.|
-|значок|[Воркбукикон](icon.md)|Представляет значок, определенный условием, при сортировке по значку ячейки.|
+|значок|[воркбукикон](icon.md)|Представляет значок, определенный условием, при сортировке по значку ячейки.|
 
 ## <a name="json-representation"></a>Представление JSON
 

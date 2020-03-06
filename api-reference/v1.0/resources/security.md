@@ -5,14 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 87bd321a3c5e66cdc5d4fdc7fcb1407d02fbca1c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 89db6a8efbf50042e5514758ee5a7ae3b7f88de6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034456"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533767"
 ---
 # <a name="security-resource-type"></a>Тип ресурса "безопасность"
+
+Пространство имен: microsoft.graph
 
 Ресурс Security — точка входа для объектной модели безопасности. Он возвращает одноэлементный ресурс безопасности. Он не содержит пригодных для использования свойств.
 
@@ -27,8 +29,8 @@ ms.locfileid: "36034456"
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип        | Описание |
+## <a name="relationships"></a>Связи
+| Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
 |alerts|Коллекция [alert](alert.md)| Только для чтения. Допускается значение null.|
 

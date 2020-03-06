@@ -5,22 +5,24 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 7d94b7462c50ca5a9304a2c4c320f6e244815373
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: d11bda4be798bb4a9d9c0e1048258020c5c2ca08
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913249"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533050"
 ---
 # <a name="commsnotification-resource-type"></a>Тип ресурса Коммснотификатион
+
+Пространство имен: microsoft.graph
 
 Базовый тип уведомления о связи, который публикуется серверами Communications Server для уведомления об изменениях.
 
 ## <a name="properties"></a>Свойства
 | Свойство       | Тип    | Описание                                                |
 |:---------------|:--------|:-----------------------------------------------------------|
-| changeType     | String  | Возможные значения: `created`, `updated`, `deleted`.      |
-| Resourceurl экземпляром       | String  | URI ресурса, который был изменен.                      |
+| changeType     | Строка  | Возможные значения: `created`, `updated`, `deleted`.      |
+| Resourceurl экземпляром       | Строка  | URI ресурса, который был изменен.                      |
 
 > **Примечание:** `resourceData` доступно в виде дополнительных данных. Это либо сущность, либо коллекция сущностей в зависимости от количества изменений, упакованных в уведомление.
 

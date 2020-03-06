@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e6d41fd97ea52588d1d68c3439d39400acb95014
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 82026017e3d82b5daa792c0cbe73718751cc2efd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913270"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518695"
 ---
 # <a name="call-playprompt"></a>Call: Плайпромпт
+
+Пространство имен: microsoft.graph
 
 Проигрывать запрос в вызове.
 
@@ -28,7 +30,7 @@ ms.locfileid: "40913270"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                               |
-| Для приложений                            | Нет.                                        |
+| Для приложений                            | Отсутствуют.                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,7 +50,7 @@ POST /communications/calls/{id}/playPrompt
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |выдан|Коллекция [медиапромпт](../resources/mediaprompt.md)| Приглашения для воспроизведения. Максимальный поддерживаемый размер коллекции Медиапромпт составляет 20.|
-|Контекст|String|Уникальная строка контекста клиента. Может содержать до 256 символов.|
+|Контекст|Строка|Уникальная строка контекста клиента. Может содержать до 256 символов.|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [плайпромптоператион](../resources/playpromptoperation.md) в тексте отклика.
@@ -60,7 +62,7 @@ POST /communications/calls/{id}/playPrompt
 Ниже показан пример запроса.
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-playPrompt"
@@ -84,7 +86,7 @@ Content-Length: 166
   ]
 }
 ```
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-playprompt-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

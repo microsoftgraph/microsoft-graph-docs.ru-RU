@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 5c89b3e90cce7dcc064dfd7186eafcc26a37dd0c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3da7e07e7d918d451e996e859463d31d6cf9d0a1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033028"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531886"
 ---
 # <a name="chartaxistitle-resource-type"></a>Тип ресурса ChartAxisTitle
+
+Пространство имен: microsoft.graph
 
 Представляет название оси диаграммы.
 
@@ -21,8 +23,8 @@ ms.locfileid: "36033028"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartAxisTitle](../api/chartaxistitle-get.md) | [Воркбукчартаксиститле](chartaxistitle.md) |Чтение свойств и связей объекта chartAxisTitle.|
-|[Обновление](../api/chartaxistitle-update.md) | [Воркбукчартаксиститле](chartaxistitle.md)    |Обновление объекта ChartAxisTitle. |
+|[Получение объекта ChartAxisTitle](../api/chartaxistitle-get.md) | [воркбукчартаксиститле](chartaxistitle.md) |Чтение свойств и связей объекта chartAxisTitle.|
+|[Обновление](../api/chartaxistitle-update.md) | [воркбукчартаксиститле](chartaxistitle.md)    |Обновление объекта ChartAxisTitle. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -30,10 +32,10 @@ ms.locfileid: "36033028"
 |text|string|Обозначает название оси.|
 |visible|boolean|Логическое значение, которое определяет видимость названия оси.|
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|format|[Воркбукчартаксиститлеформат](chartaxistitleformat.md)|Представляет форматирование для названия оси диаграммы. Только для чтения.|
+|format|[воркбукчартаксиститлеформат](chartaxistitleformat.md)|Представляет форматирование для названия оси диаграммы. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

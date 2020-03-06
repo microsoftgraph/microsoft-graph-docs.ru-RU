@@ -7,14 +7,16 @@ localization_priority: Normal
 description: Ресурс calculatedColumn в ресурсе columnDefinition указывает, что данные столбца вычисляются на основании значений в других столбцах на сайте.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 19f11c7033f03dbf4a190acbd6df54bbdfe1fa24
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 77db50430d2d28eb8d23a7e45018b84734dcb77b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029976"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532003"
 ---
 # <a name="calculatedcolumn-resource-type"></a>Тип ресурса calculatedColumn
+
+Пространство имен: microsoft.graph
 
 Ресурс **calculatedColumn** в ресурсе [columnDefinition](columndefinition.md) указывает, что данные столбца вычисляются на основании значений в других столбцах на сайте.
 

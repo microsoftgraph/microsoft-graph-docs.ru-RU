@@ -5,24 +5,26 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 594b1bab8fe1b98c9101a89bd2cbc40ac1c81403
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 1b39428c82cb298a75bf6b87cf6dd894ef204712
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37366680"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530918"
 ---
 # <a name="bitlockerencryptionmethod-enum-type"></a>тип перечисления Битлоккеренкриптионмесод
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+Пространство имен: microsoft.graph
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Типы Битлоккеренкриптионмесод
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|aesCbc128|4|AES — CBC 128 — бит.|
-|aesCbc256|SP4|AES — CBC 256 — бит.|
+|aesCbc128|3 |AES — CBC 128 — бит.|
+|aesCbc256|4 |AES — CBC 256 — бит.|
 |xtsAes128|6 |КСТС — AES 128 — бит.|
 |xtsAes256|7 |КСТС — AES 256 — бит.|
 

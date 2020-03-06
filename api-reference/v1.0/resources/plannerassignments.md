@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 1bcb28800da11255027394ea8de51e9438a5c488
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 915064d1c697f05c66dfefbbda39a6d31d7d8b47
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035338"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534024"
 ---
 # <a name="plannerassignments-resource-type"></a>Тип ресурса Планнерассигнментс
+
+Пространство имен: microsoft.graph
 
 Ресурс **планнерассигнментс** представляет назначения ресурса [plannerTask](plannertask.md) . Этот тип является открытым типом. Каждое имя свойства в этом типе — это идентификатор объекта пользователя, которому назначена задача. Пользователи могут быть назначены задачам, создавая новые свойства с именем ID и объект [планнерассигнмент](plannerassignment.md) со свойством ордерхинт, заполненным как значение. Уполномоченные можно отменить от задачи, задав для пропети с именем ID значение null.
 
@@ -20,7 +22,7 @@ ms.locfileid: "36035338"
 ## <a name="properties"></a>Свойства
 Клиентская возможность может определять свойства открытого типа. В этом случае клиент должен предоставить идентификаторы назначенных пользователей в качестве имен свойств. Свойству необходимо присвоить значение объекта **планнерассигнмент** , чтобы создать или изменить уполномоченные, и значение null, чтобы удалить их.
 
-Пример.
+Пример:
 
 <!-- {
   "blockType": "resource",

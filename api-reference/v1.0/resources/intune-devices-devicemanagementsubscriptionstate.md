@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c3aef499e90222dc1e60feebce334e1797e5b299
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 36494fc309e1dc5bd7612117a924136e2f1b2bf2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37356928"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533276"
 ---
 # <a name="devicemanagementsubscriptionstate-enum-type"></a>тип перечисления Девицеманажементсубскриптионстате
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+Пространство имен: microsoft.graph
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Состояние подписки на управление мобильными устройствами для клиента.
 
@@ -22,11 +24,11 @@ ms.locfileid: "37356928"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |закончен|нуль|Pending|
-|ASP|1,1|Активное|
-|warning|2|Предупреждение|
-|активирован|4|Отключена|
-|deleted|SP4|Deleted|
-|заблокированных|17:00|Заблокировано|
+|ASP|1 |Активное|
+|warning|2 |Предупреждение|
+|активирован|3 |Отключено|
+|deleted|4 |Deleted|
+|заблокированных|5 |Заблокировано|
 |Блокировка|8 |Блокировка|
 
 

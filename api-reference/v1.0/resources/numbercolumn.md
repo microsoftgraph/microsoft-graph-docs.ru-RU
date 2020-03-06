@@ -7,14 +7,16 @@ localization_priority: Normal
 description: Ресурс numberColumn в ресурсе columnDefinition указывает, что значения столбца представляют собой числа.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 9196e2508ed3109ee56c24ad72943ca50aed11bc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f8dfa6ddfae3ef9ec09e1afffdaf816cdc690386
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035974"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534193"
 ---
 # <a name="numbercolumn-resource-type"></a>Тип ресурса numberColumn
+
+Пространство имен: microsoft.graph
 
 Ресурс **numberColumn** в ресурсе [columnDefinition](columndefinition.md) указывает, что значения столбца представляют собой числа.
 

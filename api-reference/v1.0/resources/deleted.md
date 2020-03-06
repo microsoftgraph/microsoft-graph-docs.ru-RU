@@ -7,14 +7,16 @@ localization_priority: Normal
 description: Тип ресурса Deleted указывает, что элемент был удален.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: d1f5c07c60c8de4890a2a4ac334df04a59b7339c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c81c2623d49d40f1a4619c7f964ba9b7f0b94cf2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029521"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531687"
 ---
 # <a name="deleted-facet"></a>Аспект Deleted
+
+Пространство имен: microsoft.graph
 
 Тип ресурса **Deleted** указывает, что элемент был удален. В этой версии API наличие ненулевого значения ресурса указывает, что файл был удален. Нулевое (или отсутствующее) значение указывает, что файл не удален.
 

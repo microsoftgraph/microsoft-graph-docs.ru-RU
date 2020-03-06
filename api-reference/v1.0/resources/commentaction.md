@@ -6,16 +6,18 @@ description: Объект commentAction предоставляет сведен�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 72502e466ff90ec0a299eb993346968c9038e2d1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f3720d84624fa728a168515beb28422ab355b335
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029682"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531803"
 ---
 # <a name="commentaction-resource-type"></a>Тип ресурса commentAction
 
-Ресурс **commentAction** предоставляет сведения о действиях с [][] комментариями, выполняемых над элементом.
+Пространство имен: microsoft.graph
+
+Ресурс **commentAction** предоставляет сведения о [действиях][] с комментариями, выполняемых над элементом.
 
 >**Примечание:** Записи действий элементов в настоящее время доступны только в SharePoint и OneDrive для бизнеса.
 

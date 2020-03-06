@@ -5,15 +5,16 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: b220de863e70c9540915ee6ba42480417576e96e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 163d13fd4045442188aee76c39b5f2bfa6af893a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36021538"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509964"
 ---
 # <a name="get-schemaextension"></a>Получение schemaExtension
-Получение свойств указанного определения [schemaExtension](../resources/schemaextension.md) .
+
+Пространство имен: Microsoft. Graph получение свойств указанного определения [schemaExtension](../resources/schemaextension.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -39,7 +40,7 @@ GET /schemaExtensions/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type   | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

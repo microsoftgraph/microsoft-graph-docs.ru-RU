@@ -2,19 +2,21 @@
 author: daspek
 ms.author: dspektor
 ms.date: 09/12/2017
-title: ContentType
+title: Контент
 localization_priority: Normal
 description: Ресурс contentType представляет тип контента в SharePoint.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: b26f9b7a3bafb7b6185aa781c1f842f7c20adab3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c05ed39c0f92b209925fc9a722c5562999ae438c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029640"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531780"
 ---
 # <a name="contenttype-resource-type"></a>Тип ресурса contentType
+
+Пространство имен: microsoft.graph
 
 Ресурс **contentType** представляет _тип контента_ в SharePoint.
 Типы контента позволяют определить набор столбцов, которые должны присутствовать в каждом элементе [**ListItem**][listItem] в [**списке**][list].
@@ -54,7 +56,7 @@ ms.locfileid: "36029640"
 | **description**   | строка               | Текст с описанием элемента.
 | **group**         | string               | Имя группы, которой принадлежит этот тип контента. Позволяет упорядочить связанные типы контента.
 | **hidden**        | логический              | Указывает, является ли данный тип контента скрытым в меню "Создать" в списке.
-| **id**            | string               | Уникальный идентификатор типа контента.
+| **id**            | строка               | Уникальный идентификатор типа контента.
 | **inheritedFrom** | [itemReference][]    | Если этот тип контента унаследован от другой области (например, сайта), он будет содержать ссылку на элемент, в котором определен тип контента.
 | **name**          | string               | Имя типа контента.
 | **order**         | [contentTypeOrder][] | Указывает порядок, в котором тип контента отображается в пользовательском интерфейсе выбора.

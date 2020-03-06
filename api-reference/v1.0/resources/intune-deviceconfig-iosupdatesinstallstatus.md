@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d47cc095cb751d4392a82ab388f2fcccab414573
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: b03d47f3c28bd095d39fab5aae9b399d81dd4819
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37366848"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532466"
 ---
 # <a name="iosupdatesinstallstatus-enum-type"></a>тип перечисления Иосупдатесинсталлстатус
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+Пространство имен: microsoft.graph
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Пока не задокументировано.
 
@@ -22,9 +24,9 @@ ms.locfileid: "37366848"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |success|нуль|Пока не задокументировано.|
-|доступен|1,1|Пока не задокументировано.|
-|простоя|2|Пока не задокументировано.|
-|unknown|4|Пока не задокументировано.|
+|доступен|1 |Пока не задокументировано.|
+|простоя|2 |Пока не задокументировано.|
+|unknown|3 |Пока не задокументировано.|
 |скачивание|— 2016330712|Пока не задокументировано.|
 |довнлоадфаилед|— 2016330711|Пока не задокументировано.|
 |довнлоадрекуирескомпутер|— 2016330710|Пока не задокументировано.|

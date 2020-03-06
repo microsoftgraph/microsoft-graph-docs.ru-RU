@@ -2,19 +2,21 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Режим
+title: Пакет
 localization_priority: Normal
 description: " или коллекция элементов, которые должны рассматриваться как коллекция, а не как отдельные элементы."
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: d8eff13e0cfdc6b355cc289833e7b3050ded2641
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 10e99df4a2411fd63e8b8a2ad78d2aa5f0684571
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035667"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534103"
 ---
 # <a name="package-resource-type"></a>Тип ресурса Package
+
+Пространство имен: microsoft.graph
 
 Ресурс **Package** указывает, что элемент DriveItem — это элемент верхнего уровня в "пакете" или коллекции элементов, с которыми следует обращаться как с коллекцией, а не как с отдельными элементами.
 

@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c3ed6ebdb4386c8203964ad1072767ec580dce2a
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 0b5976d7ff06620db9958dacdfdd0b8b0c81a191
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37359231"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530728"
 ---
 # <a name="firewallpacketqueueingmethodtype-enum-type"></a>тип перечисления Фиреваллпаккеткуеуеингмесодтипе
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+Пространство имен: microsoft.graph
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Возможные значения для Фиреваллпаккеткуеуеингмесод
 
@@ -22,10 +24,10 @@ ms.locfileid: "37359231"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |девицедефаулт|нуль|Значение не настроено Intune, не переопределять значение устройства по умолчанию, настроенное пользователем|
-|активирован|1,1|Отключение очереди пакетов|
-|куеуеинбаунд|2|Очередь входящих зашифрованных пакетов|
-|куеуеаутбаунд|4|Очередь расшифрованных исходящих пакетов для пересылки|
-|куеуебос|SP4|Постановка в очередь входящих и исходящих пакетов|
+|активирован|1 |Отключение очереди пакетов|
+|куеуеинбаунд|2 |Очередь входящих зашифрованных пакетов|
+|куеуеаутбаунд|3 |Очередь расшифрованных исходящих пакетов для пересылки|
+|куеуебос|4 |Постановка в очередь входящих и исходящих пакетов|
 
 
 

@@ -7,14 +7,16 @@ localization_priority: Normal
 description: Ниже показано представление ресурса ColumnDefinition в формате JSON.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 3a02721c5289b1d49077e1b2d9fa1017f0c53021
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1d178fce760def6ae74fa6fa6c520139e2f778dd
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032874"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533060"
 ---
 # <a name="columndefinition-resource"></a>Ресурс ColumnDefinition
+
+Пространство имен: microsoft.graph
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
@@ -60,11 +62,11 @@ ms.locfileid: "36032874"
 | Имя свойства           | Тип    | Описание
 |:------------------------|:--------|:-----------------------------------------
 | **columnGroup**         | строка  | Для столбцов сайтов это имя группы, к которой принадлежит данный столбец. Помогает упорядочивать связанные столбцы.
-| **description**         | строка  | Описание столбца, которое видит пользователь.
+| **description**         | string  | Описание столбца, которое видит пользователь.
 | **displayName**         | string  | Имя столбца, которое видит пользователь.
 | **enforceUniqueValues** | boolean | Если задано значение true, в соответствующем столбце не может быть нескольких элементов списка с одинаковыми значениями.
 | **hidden**              | boolean | Указывает, отображается ли столбец в пользовательском интерфейсе.
-| **id**                  | string  | Уникальный идентификатор столбца.
+| **id**                  | строка  | Уникальный идентификатор столбца.
 | **indexed**             | boolean | Указывает, можно ли использовать значения столбцов для сортировки и поиска.
 | **name**                | string  | Используемое в API имя столбца из свойства [fields][] объекта [listItem][]. Имя, которое видит пользователь, указывается в свойстве **displayName**.
 | **readOnly**            | логический    | Указывает, можно ли менять значения в столбце.

@@ -7,17 +7,19 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Отправляет приглашение к совместному использованию ресурса DriveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 47aa7e49875d4d07ebc8b80a0f86c5939aea13ec
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 16924f6bd09b0f6e1a5918e002456ce8201571cb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36375046"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517736"
 ---
 # <a name="send-a-sharing-invitation"></a>Отправка приглашения к совместному использованию
 
+Пространство имен: microsoft.graph
+
 Отправляет приглашение к совместному использованию ресурса **DriveItem**.
-Приглашение к совместному использованию предоставляет разрешения получателям и при необходимости отправляет им сообщение электронной почты с [ссылкой для совместного доступа][].
+Приглашение к совместному использованию предоставляет получателям разрешения и при необходимости отправляет им сообщение электронной почты с [ссылкой совместного доступа][].
 
 ## <a name="permissions"></a>Разрешения
 
@@ -41,7 +43,7 @@ POST /sites/{siteId}/drive/items/{itemId}/invite
 POST /users/{userId}/drive/items/{itemId}/invite
 ```
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -64,21 +66,21 @@ POST /users/{userId}/drive/items/{itemId}/invite
 |:-----------------|:-------------------------------|:-------------------------
 | recipients       | Collection([DriveRecipient][]) | Коллекция получателей, которые будут получать доступ и приглашение к совместному использованию.
 | message          | String                         | Сообщение с обычным форматированным текстом, включенное в приглашение на доступ. Максимальная длина составляет 2000 символов.
-| requireSignIn    | Boolean                        | Указывает, требуется ли получателю приглашения на вход для просмотра общего элемента.
-| sendInvitation   | Boolean                        | Если этот параметр имеет значение true, получателю отправляется [ссылка для совместного доступа][] . В противном случае разрешение предоставляется напрямую без отправки уведомления.
-| roles            | Collection(String)             | Укажите роли, которые должны быть предоставлены получателям приглашения к совместному использованию.
+| requireSignIn    | Boolean                        | Указывает, должен ли получатель приглашения выполнить вход, чтобы просмотреть элемент, к которому предоставлен общий доступ.
+| sendInvitation   | Boolean                        | Если указано значение true, получателю отправляется [ссылка совместного доступа][]. В противном случае разрешение предоставляется напрямую без отправки уведомления.
+| roles            | Collection(String)             | Указывает роли, которые необходимо предоставить получателям приглашения к совместному использованию.
 
 ## <a name="example"></a>Пример
 
-В этом примере показано, как отправить приглашение к совместному использованию пользователю с адресом электронной почты "ryan@contoso.com" с сообщением о том, что файл работает совместно.
+В этом примере показано, как отправить приглашение к совместному использованию пользователю с электронным адресом ryan@contoso.com и добавить сообщение о файле, над которым ведется совместная работа.
 Приглашение предоставляет пользователю Ryan доступ для чтения и записи к файлу.
 
 ### <a name="http-request"></a>HTTP-запрос
 
-При успешном выполнении этот метод возвращает код отклика `200 OK` и объект коллекции [permission](../resources/permission.md) в теле отклика.
+При успешном выполнении этот метод возвращает код ответа `200 OK` и объект коллекции [permission](../resources/permission.md) в теле ответа.
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "send-sharing-invite", "scopes": "files.readwrite", "target": "action" } -->
 
 ```json
@@ -97,19 +99,19 @@ Content-type: application/json
   "roles": [ "write" ]
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/send-sharing-invite-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/send-sharing-invite-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/send-sharing-invite-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/send-sharing-invite-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -149,16 +151,16 @@ Content-type: application/json
 ## <a name="remarks"></a>Примечания
 
 * [Дискам](../resources/drive.md), у которых параметр **driveType** имеет значение `personal` (OneDrive персональный), не удастся создать или изменить разрешения в корневой папке ресурса DriveItem.
-* Список доступных ролей см. в разделе [Перечисление ролей](../resources/permission.md#roles-enumeration).
+* Список доступных ролей см. в таблице [Перечисление ролей](../resources/permission.md#roles-enumeration).
 
-## <a name="error-responses"></a>Отклики с ошибками
+## <a name="error-responses"></a>Ответы с ошибками
 
 Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
 
 
 [driveRecipient]: ../resources/driverecipient.md
 [error-response]: /graph/errors
-[Ссылка совместного доступа]: ../resources/permission.md#sharing-links
+[ссылка совместного доступа]: ../resources/permission.md#sharing-links
 
 <!-- {
   "type": "#page.annotation",
