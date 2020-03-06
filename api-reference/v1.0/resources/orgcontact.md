@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a6c604fa008c66447457f1c5736a31df0f39f28b
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: fbef400f5b48bf79c46b4a445c7f92d62150c746
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37622691"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534123"
 ---
 # <a name="orgcontact-resource-type"></a>Тип ресурса orgContact
+
+Пространство имен: microsoft.graph
 
 Представляет организационный контакт. Организационные контакты управляются администраторами Организации и отличаются от [личных контактов](contact.md). Кроме того, контакты организации синхронизируются из локальных каталогов или из Exchange Online и доступны только для чтения.
 
@@ -28,8 +30,8 @@ ms.locfileid: "37622691"
 |[Список directReports](../api/orgcontact-list-directreports.md) |Коллекция [directoryObject](directoryobject.md)| Перечислите подчиненные отчеты в Организации.|
 |[Перечисление memberOf](../api/orgcontact-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Список групп, участником которых является контактное лицо.|
 |[Список Транситивемембероф](../api/orgcontact-list-transitivememberof.md) |Коллекция [directoryObject](directoryobject.md)| Список групп, участником которых является контактное лицо, в том числе групп, в которых размещено Контактное лицо Организации.|
-|[checkMemberGroups](../api/orgcontact-checkmembergroups.md)|Коллекция строк| Проверьте принадлежность к группе. |
-|[getMemberGroups](../api/orgcontact-getmembergroups.md)|Коллекция строк| Возвращает все группы, в которых входит указанный контакт Организации. |
+|[checkMemberGroups](../api/orgcontact-checkmembergroups.md)|Коллекция String| Проверьте принадлежность к группе. |
+|[getMemberGroups](../api/orgcontact-getmembergroups.md)|Коллекция String| Возвращает все группы, в которых входит указанный контакт Организации. |
 |[getMemberObjects](../api/orgcontact-getmemberobjects.md)|Коллекция String| Возвращает список Директорйобжектс, членом которых является контактное лицо Организации. |
 
 ## <a name="properties"></a>Свойства
@@ -37,19 +39,19 @@ ms.locfileid: "37622691"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 | устраняющее                    | Коллекция [фисикалоффицеаддресс](physicalofficeaddress.md)           | Почтовые адреса для этого организационного контакта. Теперь контакт может иметь только один физический адрес. |
-| companyName                  | String                                                    | Имя компании, к которой принадлежит это Контактное лицо.                                                                                                                                                                                                                                                                                                                 |
-| department                   | String                                                     | Имя отдела, в котором работает контакт.                                                                                                                                                                                                                                                                                                                                |
+| companyName                  | Строка                                                    | Имя компании, к которой принадлежит это Контактное лицо.                                                                                                                                                                                                                                                                                                                 |
+| department                   | Строка                                                     | Имя отдела, в котором работает контакт.                                                                                                                                                                                                                                                                                                                                |
 | displayName                  | Строка                                                     | Отображаемое имя для этого организационного контакта.                                                                                                                                                                                                                                                                                                                                   |
-| givenName                    | String                                                     | Имя для этого организационного контакта.                                                                                                                                                                                                                                                                                                                                     |
+| givenName                    | Строка                                                     | Имя для этого организационного контакта.                                                                                                                                                                                                                                                                                                                                     |
 | id                           | Строка                                                     | Уникальный идентификатор для этого организационного контакта.                                                                                                                                                                                                                                                                                                                             |
 | jobTitle                     | String                                                     | Должность для этого контакта в Организации.                                                                                                                                                                                                                                                                                                                                      |
-|mail|String| SMTP-адрес контакта, например, "jeff@contoso.onmicrosoft.com". |
-| mailNickname                 | String                                                     | Псевдоним электронной почты (часть адреса электронной почты, предварительно заданная в параметре @ Symbol) для этого контакта в Организации.                                                                                                                                                                                                                                                                                |
+|mail|Строка| SMTP-адрес контакта, например, "jeff@contoso.onmicrosoft.com". |
+| mailNickname                 | Строка                                                     | Псевдоним электронной почты (часть адреса электронной почты, предварительно заданная в параметре @ Symbol) для этого контакта в Организации.                                                                                                                                                                                                                                                                                |
 | onPremisesLastSyncDateTime   | DateTimeOffset                                             | Дата и время последней синхронизации этого контакта в организации из локальной службы AD. Эти сведения о дате и времени используют формат ISO 8601 и всегда задаются в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z".   |
 | onPremisesProvisioningErrors |Коллекция [onPremisesProvisioningError](onpremisesprovisioningerror.md)       | Список всех ошибок подготовки синхронизации для данного контакта Организации.                                                                                                                                                                                                                                                                                                |
 |onPremisesSyncEnabled|Boolean|**значение true** , если объект синхронизирован из локального каталога; **false** , если этот объект изначально был синхронизирован из локального каталога, но больше не синхронизируется и не выполняется в Exchange. **значение NULL** , если объект никогда не был синхронизирован из локального каталога (по умолчанию).|
 | phones                       | Коллекция [phone](phone.md)                            | Список телефонов для этого контакта в Организации. Типы телефонов могут быть мобильными, рабочими и Бусинессфакс. В коллекции всегда может присутствовать только один из этих типов.                                                                                                                       |
-| proxyAddresses               | Коллекция строк                                         | Пример: "SMTP: bob@contoso.com", "SMTP: bob@sales.contoso.com". Для выражений фильтра в случае многозначных свойств требуется оператор **any**. Поддерживает \$фильтр.                                                                                                                                                                               |
+| proxyAddresses               | Коллекция String                                         | Пример: "SMTP: bob@contoso.com", "SMTP: bob@sales.contoso.com". Для выражений фильтра в случае многозначных свойств требуется оператор **any**. Поддерживает \$фильтр.                                                                                                                                                                               |
 | surname                      | String                                                     | Фамилия для этого организационного контакта.                          |
 
 ## <a name="relationships"></a>Связи

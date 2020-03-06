@@ -5,14 +5,16 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 9241691296b93eb21e19e10b81f36e692fea0692
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1768e40edde1d02c109e77c7e7ca3c2dd0ffdafa
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033000"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531855"
 ---
 # <a name="chartfont-resource-type"></a>Тип ресурса ChartFont
+
+Пространство имен: microsoft.graph
 
 Этот объект представляет атрибуты шрифта (название, размер, цвет и т. д.) для объекта диаграммы.
 
@@ -21,8 +23,8 @@ ms.locfileid: "36033000"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartFont](../api/chartfont-get.md) | [Воркбукчартфонт](chartfont.md) |Чтение свойств и связей объекта chartFont.|
-|[Обновление](../api/chartfont-update.md) | [Воркбукчартфонт](chartfont.md)   |Обновление объекта ChartFont. |
+|[Получение объекта ChartFont](../api/chartfont-get.md) | [воркбукчартфонт](chartfont.md) |Чтение свойств и связей объекта chartFont.|
+|[Обновление](../api/chartfont-update.md) | [воркбукчартфонт](chartfont.md)   |Обновление объекта ChartFont. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -34,7 +36,7 @@ ms.locfileid: "36033000"
 |size|Double|Размер шрифта (например, 11)|
 |underline|string|Тип подчеркивания, применяемый для шрифта. Возможные значения: `None`, `Single`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

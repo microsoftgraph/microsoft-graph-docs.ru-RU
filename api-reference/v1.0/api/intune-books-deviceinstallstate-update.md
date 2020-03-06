@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 86ea7e0963cd33efd284a66c34d10d27d80932a9
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 00cee8abcd16995d7b3397def235c16eff1fb42d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37354807"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42515695"
 ---
 # <a name="update-deviceinstallstate"></a>Обновление объекта deviceInstallState
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+Пространство имен: microsoft.graph
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойств объекта [deviceInstallState](../resources/intune-books-deviceinstallstate.md).
 
@@ -37,10 +39,10 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/deviceStates/{deviceIn
 PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userInstallStateSummaryId}/deviceStates/{deviceInstallStateId}
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -50,14 +52,14 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{user
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|deviceName|String|Имя устройства.|
-|deviceId|String|Идентификатор устройства.|
+|id|Строка|Ключ объекта.|
+|deviceName|Строка|Имя устройства.|
+|deviceId|Строка|Идентификатор устройства.|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации.|
 |installState|[installState](../resources/intune-books-installstate.md)|Состояние установки электронной книги. Возможные значения: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
-|errorCode|String|Код ошибки для сбоев при установке.|
-|osVersion|String|Версия ОС.|
-|osDescription|String|Описание ОС.|
+|errorCode|Строка|Код ошибки для сбоев при установке.|
+|osVersion|Строка|Версия ОС.|
+|osDescription|Строка|Описание ОС.|
 |userName|String|Имя пользователя устройства.|
 
 
@@ -88,7 +90,7 @@ Content-length: 374
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

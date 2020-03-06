@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 6e6f30625412022006d88179e3192b1463c797c0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fc9d05e875104469a25ee742635ea8e86682d9e9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032496"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531429"
 ---
 # <a name="filesecuritystate-resource-type"></a>Тип ресурса объекта filesecuritystate
+
+Пространство имен: microsoft.graph
 
 Содержит сведения о файле (не процессу), связанном с предупреждением.
 
@@ -23,7 +25,7 @@ ms.locfileid: "36032496"
 |fileHash|[fileHash](filehash.md)|Сложный тип, содержащий хэши файлов (криптография и с учетом расположения).|
 |name|String|Имя файла (без пути).|
 |path|String|Полный путь к файлу или файлу imageFile.|
-|riskScore|String|Созданный поставщиком/вычисляемый показатель риска для файла оповещений. Рекомендуемый диапазон значений 0-1, указывающий на процентное соотношение.|
+|riskScore|Строка|Созданный поставщиком/вычисляемый показатель риска для файла оповещений. Рекомендуемый диапазон значений 0-1, указывающий на процентное соотношение.|
 
 ## <a name="json-representation"></a>Представление JSON
 

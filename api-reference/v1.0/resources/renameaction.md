@@ -6,14 +6,16 @@ description: Объект renameAction предоставляет сведени
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 2949a3875d657dba3c64b6753855476c1d66bfb3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b21d4630ca29aff9322d5114a5048b42f19fa4a0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034722"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533850"
 ---
 # <a name="renameaction-resource-type"></a>Тип ресурса renameAction
+
+Пространство имен: microsoft.graph
 
 Присутствие ресурса **renameAction** в [**itemActivity**][activity] указывает, что действие переименовало элемент.
 

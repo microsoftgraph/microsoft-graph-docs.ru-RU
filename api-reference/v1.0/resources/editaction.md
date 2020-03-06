@@ -6,14 +6,16 @@ description: Объект EditAction предоставляет сведения
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 9d53760827b324dc8ea9c6b16629dfc2948c5e01
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 53998155929289314ad8b222bb5eb790f0350add
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029360"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531519"
 ---
 # <a name="editaction-resource-type"></a>Тип ресурса editAction
+
+Пространство имен: microsoft.graph
 
 Присутствие ресурса **editAction** в [**itemActivity**][activity] указывает на то, что действие редактировало элемент.
 

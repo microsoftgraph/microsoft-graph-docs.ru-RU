@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 723468d14ebd089d8ed5b020f56e0c70c426ed9b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 048761f3d224cee916f7d1c869c0cbee2fbfb06e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036206"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534251"
 ---
 # <a name="meetingtimesuggestion-resource-type"></a>Тип ресурсов meetingTimeSuggestion
+
+Пространство имен: microsoft.graph
 
 Вариант собрания с такими сведениями, как информация о времени собрания, вероятности участия, занятости отдельных участников, а также доступных расположениях для проведения собрания.
 
@@ -46,9 +48,9 @@ ms.locfileid: "36036206"
 |attendeeAvailability|Коллекция [attendeeAvailability](attendeeavailability.md)|Массив, показывающий состояние занятости каждого участника для этого варианта собрания.|
 |confidence|Double|Процент вероятности того, что все участники будут присутствовать на собрании.|
 |locations|Коллекция [location](location.md)|Массив, в котором указано имя и географические данные каждого расположения для проведения этого варианта собрания.|
-|Митингтимеслот|[timeSlot](timeslot.md)|Период времени, предложенный для собрания.|
+|митингтимеслот|[timeSlot](timeslot.md)|Период времени, предложенный для собрания.|
 |порядке|Int32|Порядок предложений по времени собраний, отсортированных по их вычисленному значению, от высокого до невысокой, затем по чронологи при наличии предложений с одинаковым уровнем достоверности. |
-|Организераваилабилити|freeBusyStatus| Доступность организатора собрания для этого варианта собрания. Допустимые значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
+|организераваилабилити|freeBusyStatus| Доступность организатора собрания для этого варианта собрания. Допустимые значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |Suggestionreason объяснение|String|Обоснование предложенного времени для проведения собрания.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -5,14 +5,17 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6fcc143dc9c55b3bdb23b72eb8b538bbae6659d9
-ms.sourcegitcommit: 2a601cffdb8df375b2ee32a1f35b8f71e0ffd04f
+ms.openlocfilehash: 5d593ff2ea0b98f126e0509316c203a03e996877
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41023154"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517105"
 ---
 # <a name="list-calendarview"></a>Список calendarView
+
+Пространство имен: microsoft.graph
+
 Получение исключений, повторяемых или единичных экземпляров событий в таком представлении стандартного календаря группы, которое определяется заданным диапазоном времени.
 
 ## <a name="permissions"></a>Разрешения
@@ -35,10 +38,10 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 
 | Параметр     | Тип   | Описание                                                                                                            |
 |:--------------|:-------|:-----------------------------------------------------------------------------------------------------------------------|
-| startDateTime | String | Дата и время начала диапазона, представленные в формате ISO 8601. Пример: "2019 – 11 – 08T19:00:00 – 08:00". |
-| endDateTime   | String | Дата и время окончания диапазона, представленные в формате ISO 8601. Пример: "2019 – 11 – 08T20:00:00 – 08:00".   |
+| startDateTime | String | Дата и время начала диапазона, представленные в формате ISO 8601. Пример: "2019-11-08T19:00:00-08:00". |
+| endDateTime   | String | Дата и время окончания диапазона, представленные в формате ISO 8601. Пример: "2019-11-08T20:00:00-08:00".   |
 
-Значения `startDateTime` и `endDateTime` интерпретируются с использованием смещения часового пояса, указанного в значении, и не влияют на значение `Prefer: outlook.timezone` заголовка, если оно присутствует. Если значение смещения в часовом поясе не включено, оно интерпретируется как время в формате UTC.
+Значения `startDateTime` и `endDateTime` интерпретируются с использованием смещения часового пояса, указанного в значении, и на них не влияет значение заголовка `Prefer: outlook.timezone` при его наличии. Если в значении не указано смещение часового пояса, оно интерпретируется в формате UTC.
 
 Этот метод также поддерживает некоторые [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
 
@@ -62,7 +65,7 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 #### <a name="request"></a>Запрос
 Приведенный ниже пример запрашивает возвращение тел событий в текстовом формате.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["02bd9fd6-8f93-4758-87c3-1fb73740a315"],
@@ -72,19 +75,19 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/calendarView?startDateTime=2017-01-01T19:00:00-08:00&endDateTime=2017-10-01T19:00:00.00-08:00
 Prefer: outlook.body-content-type="text"
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-get-calendarview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-get-calendarview-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-get-calendarview-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-get-calendarview-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
