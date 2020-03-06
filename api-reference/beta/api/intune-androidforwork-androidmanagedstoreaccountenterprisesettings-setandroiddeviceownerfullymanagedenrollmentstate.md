@@ -14,7 +14,7 @@ ms.locfileid: "42446102"
 ---
 # <a name="setandroiddeviceownerfullymanagedenrollmentstate-action"></a>Действие setAndroidDeviceOwnerFullyManagedEnrollmentState
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -43,10 +43,10 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/setAndroidDe
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.

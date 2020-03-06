@@ -14,7 +14,7 @@ ms.locfileid: "42521631"
 ---
 # <a name="planneruserids-resource-type"></a>Тип ресурса Планнерусеридс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ ms.locfileid: "42521631"
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже показано представление JSON ресурса.
+Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",

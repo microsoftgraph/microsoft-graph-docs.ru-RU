@@ -14,7 +14,7 @@ ms.locfileid: "42453515"
 ---
 # <a name="send-device-command"></a>Отправка команд для устройства
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,7 +47,7 @@ POST me/devices/{id}/commands
 |Авторизация| Bearer {токен}. Обязательный. |
 |Accept | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса добавьте представление свойств команды в формате JSON.
 
@@ -61,7 +61,7 @@ POST me/devices/{id}/commands
 }
 ```
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 ```http
 HTTP/1.1 201 OK
@@ -117,7 +117,7 @@ Content-Type: application/json; charset=utf-8
 { "type" : "LaunchUri", "payload" : {"uri":"https://bing.com"}}
 
 ```
-#### <a name="response"></a>Отклик 
+#### <a name="response"></a>Ответ 
 
 <!-- {
   "blockType": "ignored",
