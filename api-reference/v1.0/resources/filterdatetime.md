@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e2938c151e052372df1b959e6e24d4a2c0d94ea4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9214e8ecde9b2c09e06cfcc6d6145ea5319eace9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032461"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531407"
 ---
 # <a name="filterdatetime-resource-type"></a>Тип ресурса FilterDatetime
+
+Пространство имен: microsoft.graph
 
 Представляет способ фильтрации даты при фильтрации по значениям.
 
@@ -22,7 +24,7 @@ ms.locfileid: "36032461"
 |дата|строка|Дата в формате ISO8601, используемая для фильтрации данных.|
 |specificity|string|Точность, с которой производится фильтрация данных на основе даты. Например, если указана дата 2005-04-02, а для свойства specificity задано значение month, после фильтрации останутся все строки, датированные апрелем 2009 г. Допустимые значения: `Year`, `Monday`, `Day`, `Hour`, `Minute`, `Second`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

@@ -6,14 +6,16 @@ description: Объект deleteAction предоставляет сведени
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 93f605e74a0a483a94593a9aaa40d6fd30efe914
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4d19b41d886c459822abc2ea1b04acebd94c7b68
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032734"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531690"
 ---
 # <a name="deleteaction-resource-type"></a>Тип ресурса deleteAction
+
+Пространство имен: microsoft.graph
 
 Присутствие ресурса **deleteAction** в [**itemActivity**][activity] указывает на то, что действие удалило элемент.
 

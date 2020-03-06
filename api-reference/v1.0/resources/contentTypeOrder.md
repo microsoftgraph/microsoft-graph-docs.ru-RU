@@ -7,14 +7,16 @@ localization_priority: Normal
 description: Ресурс contentTypeOrder указывает, в каком порядке тип контента будет отображаться в пользовательском интерфейсе выбора.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 5c77f2dd3763199fea8f0a1377a1b46f8aa4881d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9470596cc064006c3bc4307df5f20634886dfc7f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032839"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531778"
 ---
 # <a name="contenttypeorder-resource-type"></a>Тип ресурса contentTypeOrder
+
+Пространство имен: microsoft.graph
 
 Ресурс **contentTypeOrder** указывает, в каком порядке тип контента будет отображаться в пользовательском интерфейсе выбора.
 

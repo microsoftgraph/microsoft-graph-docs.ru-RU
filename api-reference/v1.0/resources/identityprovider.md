@@ -5,14 +5,16 @@ localization_priority: Priority
 author: valnav
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8eb9789f9ec15c51c4ce02b6958ad1ec3886be92
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 29a0459e27f27f4563101d8100675046ca2731b1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029234"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532894"
 ---
 # <a name="identityprovider-resource-type"></a>Тип ресурса identityProvider
+
+Пространство имен: microsoft.graph
 
 Представляет поставщика удостоверений Azure Active Directory (Azure AD). Поставщиком удостоверений может быть Майкрософт, Google, Facebook, Amazon, LinkedIn или Twitter. Поставщики удостоверений в предварительной версии: Weibo, QQ, WeChat, GitHub и любой поставщик, поддерживаемый OpenID Connect. 
 

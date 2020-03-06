@@ -7,14 +7,16 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Ресурс siteCollection предоставляет больше сведений о семействе веб-сайтов.
 doc_type: resourcePageType
-ms.openlocfilehash: 27a534f2f9afe99a1a5abb1aee91b1b53b29566d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2e34b4fdb63a825e87cea8eda6117232ee1da93d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034162"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533690"
 ---
 # <a name="sitecollection-resource"></a>Ресурс SiteCollection
+
+Пространство имен: microsoft.graph
 
 Ресурс **siteCollection** предоставляет больше сведений о семействе веб-сайтов.
 

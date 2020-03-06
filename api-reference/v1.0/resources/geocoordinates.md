@@ -7,14 +7,16 @@ localization_priority: Normal
 description: Ресурс GeoCoordinates предоставляет географические координаты и высоту расположения в соответствии с метаданными файла.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 64b81bc2946658ffc8617662879bc6cb20e25047
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c6fce88c0a85b23e799030e9190d7d82e884089d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029311"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532930"
 ---
 # <a name="geocoordinates-resource-type"></a>Тип ресурса GeoCoordinates
+
+Пространство имен: microsoft.graph
 
 Ресурс **GeoCoordinates** предоставляет географические координаты и высоту расположения в соответствии с метаданными файла. Если у ресурса [**DriveItem**](driveitem.md) есть ненулевой аспект **location**, то этот ресурс представляет файл, с которым связано известное расположение.
 
@@ -43,7 +45,7 @@ ms.locfileid: "36029311"
 | Свойство  | Тип   | Описание
 |:----------|:-------|:--------------------------------------------------------
 | altitude  | Double | Необязательный. Высота элемента над уровнем моря (в футах). Только для чтения.
-| latitude  | Двойное | Необязательный. Широта элемента (в десятичной системе). Только для чтения.
+| latitude  | Двойное с плавающей точкой | Необязательный. Широта элемента (в десятичной системе). Только для чтения.
 | longitude | Double | Необязательный. Широта элемента (в десятичном виде). Только для чтения.
 
 ## <a name="remarks"></a>Заметки

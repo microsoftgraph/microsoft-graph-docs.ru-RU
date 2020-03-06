@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 69e1e604fe3cc2cfc0702f54fcdc48e8941cf7ed
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 1f0e2635d2b384b46a68e284daace799a196119d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37368108"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531110"
 ---
 # <a name="mobileapp-resource-type"></a>Тип ресурса mobileApp
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+Пространство имен: microsoft.graph
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Абстрактный класс, содержащий базовые свойства мобильных приложений Intune.
 
@@ -31,15 +33,15 @@ ms.locfileid: "37368108"
 |id|Строка|Ключ объекта.|
 |displayName|Строка|Администратор предоставил или импортировал название приложения.|
 |description|Строка|Описание приложения.|
-|publisher|String|Издатель приложения.|
+|publisher|Строка|Издатель приложения.|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Большой значок, отображается в сведениях о приложении и используется для отправки значка.|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения приложения.|
 |isFeatured|Boolean|Значение, которое показывает, отмечено ли приложение как подобранное администратором.|
-|privacyInformationUrl|String|URL-адрес заявления о конфиденциальности.|
-|informationUrl|String|URL-адрес с дополнительными сведениями.|
+|privacyInformationUrl|Строка|URL-адрес заявления о конфиденциальности.|
+|informationUrl|Строка|URL-адрес с дополнительными сведениями.|
 |owner|String|Владелец приложения.|
-|developer|String|Разработчик приложения.|
+|developer|Строка|Разработчик приложения.|
 |notes|String|Заметки для приложения.|
 |publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение не может быть назначено, если оно не опубликовано. Возможные значения: `notPublished`, `processing`, `published`.|
 

@@ -6,14 +6,16 @@ description: Объект MentionAction предоставляет сведен�
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 511519439f4079b2d7d618767855582f201c00f7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: de6bf1657e9b9ba21d589a6ef27292553bf93f7e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036185"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534249"
 ---
 # <a name="mentionaction-resource-type"></a>Тип ресурса mentionAction
+
+Пространство имен: microsoft.graph
 
 Ресурс **MentionAction** предоставляет сведения о ресурсе [activity][], в котором есть упоминания пользователей.
 

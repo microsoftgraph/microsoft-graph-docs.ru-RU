@@ -5,16 +5,18 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: decce4a854b3b48b316f4caec1290a7d19efb329
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 94be61bf19b74ca95c4659c3bd9c8166dc7c01a1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37937408"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532123"
 ---
 # <a name="apiapplication-resource-type"></a>Тип ресурса Апиаппликатион
 
-Задает параметры для приложения, реализующего веб-API.
+Пространство имен: microsoft.graph
+
+Задает параметры приложения, реализующего веб-API.
 
 ## <a name="properties"></a>Свойства
 

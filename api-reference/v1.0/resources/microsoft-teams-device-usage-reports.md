@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: ebac2c81b613b967ca6c559a586c349e59d0c552
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d9d2e28b2f7e04771bb4487171531762518f7589
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036080"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534224"
 ---
 # <a name="microsoft-teams-device-usage-reports"></a>Отчеты об использовании устройств Microsoft Teams
+
+Пространство имен: microsoft.graph
 
 С помощью отчетов об использовании устройств Microsoft Teams можно анализировать использование устройств Microsoft Teams в организации.
 
@@ -21,5 +23,5 @@ ms.locfileid: "36036080"
 | Метод                                   | Возвращаемый тип | Описание                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
 | [Получение сведений о пользователях](../api/reportroot-getteamsdeviceusageuserdetail.md) | Поток      | Получение сведений об использовании устройств Microsoft Teams отдельными пользователями. |
-| [Получение количества пользователей](../api/reportroot-getteamsdeviceusageusercounts.md) | Поток      | Получение сведений о количестве уникальных пользователей в день по типам устройств. |
+| [Получение количества пользователей](../api/reportroot-getteamsdeviceusageusercounts.md) | Stream      | Получение сведений о количестве уникальных пользователей в день по типам устройств. |
 | [Получение распределенного количества пользователей](../api/reportroot-getteamsdeviceusagedistributionusercounts.md) | Stream      | Получение количества уникальных пользователей по типам устройств за выбранный период времени. |
