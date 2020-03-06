@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 9907ac1b1fbf00f83389ea6b3f1a80ac0263bd78
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: d4b1cdc6dd7499f0f62c7e7cabda47d0435fde4c
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35722760"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36638524"
 ---
 ```javascript
 
@@ -32,6 +32,6 @@ const conversationThread = {
 };
 
 let res = await client.api('/groups/{id}/threads')
-    .post({conversationThread : conversationThread});
+    .post(conversationThread);
 
 ```

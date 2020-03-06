@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 92d7223a8e52cf33bcdebb99421aceca0ab385cf
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 8e66ba4c8e6b25e0d153fcb7c0bd8ef7b3611a77
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35731593"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36638516"
 ---
 ```javascript
 
@@ -20,6 +20,6 @@ const identityProvider = {
 };
 
 let res = await client.api('/identityProviders/Amazon-OAuth')
-    .update({identityProvider : identityProvider});
+    .update(identityProvider);
 
 ```

@@ -5,28 +5,30 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 124992e2481209debecf9edc9e10f54ebc3a8f5a
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 0e81ff66a280e32f8224a471bd1dfd1d36e2e818
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36374675"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511483"
 ---
-# <a name="message-send"></a><span data-ttu-id="b2bf9-104">message: send</span><span class="sxs-lookup"><span data-stu-id="b2bf9-104">message: send</span></span>
+# <a name="message-send"></a><span data-ttu-id="e4bb6-104">message: send</span><span class="sxs-lookup"><span data-stu-id="e4bb6-104">message: send</span></span>
 
-<span data-ttu-id="b2bf9-p102">Отправка сообщения из папки черновиков. Черновик сообщения может быть предназначен для нового сообщения, ответа, ответа всем пользователям или пересылки. Затем сообщение сохраняется в папке "Отправленные".</span><span class="sxs-lookup"><span data-stu-id="b2bf9-p102">Send a message in the draft folder. The draft message can be a new message draft, reply draft, reply-all draft, or a forward draft. The message is then saved in the Sent Items folder.</span></span>
+<span data-ttu-id="e4bb6-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e4bb6-105">Namespace: microsoft.graph</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b2bf9-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b2bf9-108">Permissions</span></span>
+<span data-ttu-id="e4bb6-p102">Отправка сообщения из папки черновиков. Черновик сообщения может быть предназначен для нового сообщения, ответа, ответа всем пользователям или пересылки. Затем сообщение сохраняется в папке "Отправленные".</span><span class="sxs-lookup"><span data-stu-id="e4bb6-p102">Send a message in the draft folder. The draft message can be a new message draft, reply draft, reply-all draft, or a forward draft. The message is then saved in the Sent Items folder.</span></span>
 
-<span data-ttu-id="b2bf9-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b2bf9-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="e4bb6-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e4bb6-109">Permissions</span></span>
 
-|<span data-ttu-id="b2bf9-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b2bf9-111">Permission type</span></span>      | <span data-ttu-id="b2bf9-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b2bf9-112">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="e4bb6-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e4bb6-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="e4bb6-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e4bb6-112">Permission type</span></span>      | <span data-ttu-id="e4bb6-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e4bb6-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b2bf9-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b2bf9-113">Delegated (work or school account)</span></span> | <span data-ttu-id="b2bf9-114">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="b2bf9-114">Mail.Send</span></span>    |
-|<span data-ttu-id="b2bf9-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b2bf9-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b2bf9-116">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="b2bf9-116">Mail.Send</span></span>    |
-|<span data-ttu-id="b2bf9-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b2bf9-117">Application</span></span> | <span data-ttu-id="b2bf9-118">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="b2bf9-118">Mail.Send</span></span> |
+|<span data-ttu-id="e4bb6-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e4bb6-114">Delegated (work or school account)</span></span> | <span data-ttu-id="e4bb6-115">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="e4bb6-115">Mail.Send</span></span>    |
+|<span data-ttu-id="e4bb6-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e4bb6-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e4bb6-117">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="e4bb6-117">Mail.Send</span></span>    |
+|<span data-ttu-id="e4bb6-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e4bb6-118">Application</span></span> | <span data-ttu-id="e4bb6-119">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="e4bb6-119">Mail.Send</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b2bf9-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b2bf9-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e4bb6-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e4bb6-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,28 +37,28 @@ POST /me/messages/{id}/send
 POST /users/{id | userPrincipalName}/messages/{id}/send
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b2bf9-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b2bf9-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="e4bb6-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e4bb6-121">Request headers</span></span>
 
-| <span data-ttu-id="b2bf9-121">Имя</span><span class="sxs-lookup"><span data-stu-id="b2bf9-121">Name</span></span>       | <span data-ttu-id="b2bf9-122">Тип</span><span class="sxs-lookup"><span data-stu-id="b2bf9-122">Type</span></span> | <span data-ttu-id="b2bf9-123">Описание</span><span class="sxs-lookup"><span data-stu-id="b2bf9-123">Description</span></span>|
+| <span data-ttu-id="e4bb6-122">Имя</span><span class="sxs-lookup"><span data-stu-id="e4bb6-122">Name</span></span>       | <span data-ttu-id="e4bb6-123">Тип</span><span class="sxs-lookup"><span data-stu-id="e4bb6-123">Type</span></span> | <span data-ttu-id="e4bb6-124">Описание</span><span class="sxs-lookup"><span data-stu-id="e4bb6-124">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="b2bf9-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="b2bf9-124">Authorization</span></span>  | <span data-ttu-id="b2bf9-125">string</span><span class="sxs-lookup"><span data-stu-id="b2bf9-125">string</span></span>  | <span data-ttu-id="b2bf9-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b2bf9-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="b2bf9-128">Content-Length</span><span class="sxs-lookup"><span data-stu-id="b2bf9-128">Content-Length</span></span> | <span data-ttu-id="b2bf9-129">число</span><span class="sxs-lookup"><span data-stu-id="b2bf9-129">number</span></span> | <span data-ttu-id="b2bf9-130">0. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b2bf9-130">0. Required.</span></span> |
+| <span data-ttu-id="e4bb6-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="e4bb6-125">Authorization</span></span>  | <span data-ttu-id="e4bb6-126">string</span><span class="sxs-lookup"><span data-stu-id="e4bb6-126">string</span></span>  | <span data-ttu-id="e4bb6-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e4bb6-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e4bb6-129">Content-Length</span><span class="sxs-lookup"><span data-stu-id="e4bb6-129">Content-Length</span></span> | <span data-ttu-id="e4bb6-130">число</span><span class="sxs-lookup"><span data-stu-id="e4bb6-130">number</span></span> | <span data-ttu-id="e4bb6-131">0. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e4bb6-131">0. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="b2bf9-131">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b2bf9-131">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="e4bb6-132">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="e4bb6-132">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="b2bf9-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="b2bf9-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e4bb6-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="e4bb6-133">Response</span></span>
 
-<span data-ttu-id="b2bf9-p105">В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="b2bf9-p105">If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="e4bb6-p105">В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="e4bb6-p105">If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b2bf9-135">Пример</span><span class="sxs-lookup"><span data-stu-id="b2bf9-135">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e4bb6-136">Пример</span><span class="sxs-lookup"><span data-stu-id="e4bb6-136">Example</span></span>
 
-<span data-ttu-id="b2bf9-136">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="b2bf9-136">The following example shows how to call this API.</span></span>
+<span data-ttu-id="e4bb6-137">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="e4bb6-137">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="b2bf9-137">Запрос</span><span class="sxs-lookup"><span data-stu-id="b2bf9-137">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="e4bb6-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="e4bb6-138">Request</span></span>
 
-<span data-ttu-id="b2bf9-138">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b2bf9-138">Here is an example of the request.</span></span>
+<span data-ttu-id="e4bb6-139">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e4bb6-139">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="b2bf9-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="b2bf9-139">--Http</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e4bb6-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="e4bb6-140">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "message_send"
@@ -65,28 +67,28 @@ POST /users/{id | userPrincipalName}/messages/{id}/send
 ```http
 POST https://graph.microsoft.com/v1.0/me/messages/{id}/send
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="b2bf9-140">C#</span><span class="sxs-lookup"><span data-stu-id="b2bf9-140">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e4bb6-141">C#</span><span class="sxs-lookup"><span data-stu-id="e4bb6-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-send-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="b2bf9-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b2bf9-141">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e4bb6-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e4bb6-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-send-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="b2bf9-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b2bf9-142">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e4bb6-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e4bb6-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/message-send-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="b2bf9-143">Java</span><span class="sxs-lookup"><span data-stu-id="b2bf9-143">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="e4bb6-144">Java</span><span class="sxs-lookup"><span data-stu-id="e4bb6-144">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/message-send-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="b2bf9-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="b2bf9-144">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="e4bb6-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="e4bb6-145">Response</span></span>
 
-<span data-ttu-id="b2bf9-145">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="b2bf9-145">Here is an example of the response.</span></span>
+<span data-ttu-id="e4bb6-146">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="e4bb6-146">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -5,26 +5,28 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 594b1bab8fe1b98c9101a89bd2cbc40ac1c81403
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 1b39428c82cb298a75bf6b87cf6dd894ef204712
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37366680"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530918"
 ---
-# <a name="bitlockerencryptionmethod-enum-type"></a><span data-ttu-id="d6481-103">тип перечисления Битлоккеренкриптионмесод</span><span class="sxs-lookup"><span data-stu-id="d6481-103">bitLockerEncryptionMethod enum type</span></span>
+# <a name="bitlockerencryptionmethod-enum-type"></a><span data-ttu-id="a609b-103">тип перечисления Битлоккеренкриптионмесод</span><span class="sxs-lookup"><span data-stu-id="a609b-103">bitLockerEncryptionMethod enum type</span></span>
 
-> <span data-ttu-id="d6481-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="d6481-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="a609b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a609b-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="d6481-105">Типы Битлоккеренкриптионмесод</span><span class="sxs-lookup"><span data-stu-id="d6481-105">BitLockerEncryptionMethod types</span></span>
+> <span data-ttu-id="a609b-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="a609b-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="d6481-106">Элементы</span><span class="sxs-lookup"><span data-stu-id="d6481-106">Members</span></span>
-|<span data-ttu-id="d6481-107">Элемент</span><span class="sxs-lookup"><span data-stu-id="d6481-107">Member</span></span>|<span data-ttu-id="d6481-108">Значение</span><span class="sxs-lookup"><span data-stu-id="d6481-108">Value</span></span>|<span data-ttu-id="d6481-109">Описание</span><span class="sxs-lookup"><span data-stu-id="d6481-109">Description</span></span>|
+<span data-ttu-id="a609b-106">Типы Битлоккеренкриптионмесод</span><span class="sxs-lookup"><span data-stu-id="a609b-106">BitLockerEncryptionMethod types</span></span>
+
+## <a name="members"></a><span data-ttu-id="a609b-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="a609b-107">Members</span></span>
+|<span data-ttu-id="a609b-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="a609b-108">Member</span></span>|<span data-ttu-id="a609b-109">Значение</span><span class="sxs-lookup"><span data-stu-id="a609b-109">Value</span></span>|<span data-ttu-id="a609b-110">Описание</span><span class="sxs-lookup"><span data-stu-id="a609b-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d6481-110">aesCbc128</span><span class="sxs-lookup"><span data-stu-id="d6481-110">aesCbc128</span></span>|<span data-ttu-id="d6481-111">4</span><span class="sxs-lookup"><span data-stu-id="d6481-111">3</span></span>|<span data-ttu-id="d6481-112">AES — CBC 128 — бит.</span><span class="sxs-lookup"><span data-stu-id="d6481-112">AES-CBC 128-bit.</span></span>|
-|<span data-ttu-id="d6481-113">aesCbc256</span><span class="sxs-lookup"><span data-stu-id="d6481-113">aesCbc256</span></span>|<span data-ttu-id="d6481-114">SP4</span><span class="sxs-lookup"><span data-stu-id="d6481-114">4</span></span>|<span data-ttu-id="d6481-115">AES — CBC 256 — бит.</span><span class="sxs-lookup"><span data-stu-id="d6481-115">AES-CBC 256-bit.</span></span>|
-|<span data-ttu-id="d6481-116">xtsAes128</span><span class="sxs-lookup"><span data-stu-id="d6481-116">xtsAes128</span></span>|<span data-ttu-id="d6481-117">6 </span><span class="sxs-lookup"><span data-stu-id="d6481-117">6</span></span>|<span data-ttu-id="d6481-118">КСТС — AES 128 — бит.</span><span class="sxs-lookup"><span data-stu-id="d6481-118">XTS-AES 128-bit.</span></span>|
-|<span data-ttu-id="d6481-119">xtsAes256</span><span class="sxs-lookup"><span data-stu-id="d6481-119">xtsAes256</span></span>|<span data-ttu-id="d6481-120">7 </span><span class="sxs-lookup"><span data-stu-id="d6481-120">7</span></span>|<span data-ttu-id="d6481-121">КСТС — AES 256 — бит.</span><span class="sxs-lookup"><span data-stu-id="d6481-121">XTS-AES 256-bit.</span></span>|
+|<span data-ttu-id="a609b-111">aesCbc128</span><span class="sxs-lookup"><span data-stu-id="a609b-111">aesCbc128</span></span>|<span data-ttu-id="a609b-112">3 </span><span class="sxs-lookup"><span data-stu-id="a609b-112">3</span></span>|<span data-ttu-id="a609b-113">AES — CBC 128 — бит.</span><span class="sxs-lookup"><span data-stu-id="a609b-113">AES-CBC 128-bit.</span></span>|
+|<span data-ttu-id="a609b-114">aesCbc256</span><span class="sxs-lookup"><span data-stu-id="a609b-114">aesCbc256</span></span>|<span data-ttu-id="a609b-115">4 </span><span class="sxs-lookup"><span data-stu-id="a609b-115">4</span></span>|<span data-ttu-id="a609b-116">AES — CBC 256 — бит.</span><span class="sxs-lookup"><span data-stu-id="a609b-116">AES-CBC 256-bit.</span></span>|
+|<span data-ttu-id="a609b-117">xtsAes128</span><span class="sxs-lookup"><span data-stu-id="a609b-117">xtsAes128</span></span>|<span data-ttu-id="a609b-118">6 </span><span class="sxs-lookup"><span data-stu-id="a609b-118">6</span></span>|<span data-ttu-id="a609b-119">КСТС — AES 128 — бит.</span><span class="sxs-lookup"><span data-stu-id="a609b-119">XTS-AES 128-bit.</span></span>|
+|<span data-ttu-id="a609b-120">xtsAes256</span><span class="sxs-lookup"><span data-stu-id="a609b-120">xtsAes256</span></span>|<span data-ttu-id="a609b-121">7 </span><span class="sxs-lookup"><span data-stu-id="a609b-121">7</span></span>|<span data-ttu-id="a609b-122">КСТС — AES 256 — бит.</span><span class="sxs-lookup"><span data-stu-id="a609b-122">XTS-AES 256-bit.</span></span>|
 
 
 

@@ -5,28 +5,30 @@ author: preetikr
 localization_priority: Normal
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 18c320eddbbc9c982d8a3ddfa1b7a067272f34cc
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: f8d0fd0237bbca4b13deb7fbc8efb3f064f92e2c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36307961"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509852"
 ---
-# <a name="update-securescorecontrolprofile"></a><span data-ttu-id="2c306-103">Обновление объектов secureScoreControlProfile</span><span class="sxs-lookup"><span data-stu-id="2c306-103">Update secureScoreControlProfile</span></span>
+# <a name="update-securescorecontrolprofile"></a><span data-ttu-id="d0f74-103">Обновление объектов secureScoreControlProfile</span><span class="sxs-lookup"><span data-stu-id="d0f74-103">Update secureScoreControlProfile</span></span>
 
-<span data-ttu-id="2c306-104">Обновление редактируемого объекта **секурескореконтролпрофиле** в любом интегрированном решении для изменения различных свойств, таких как **assignedTo** или **тенантноте**.</span><span class="sxs-lookup"><span data-stu-id="2c306-104">Update an editable **secureScoreControlProfile** object within any integrated solution to change various properties, such as **assignedTo** or **tenantNote**.</span></span>
+<span data-ttu-id="d0f74-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d0f74-104">Namespace: microsoft.graph</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2c306-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2c306-105">Permissions</span></span>
+<span data-ttu-id="d0f74-105">Обновление редактируемого объекта **секурескореконтролпрофиле** в любом интегрированном решении для изменения различных свойств, таких как **assignedTo** или **тенантноте**.</span><span class="sxs-lookup"><span data-stu-id="d0f74-105">Update an editable **secureScoreControlProfile** object within any integrated solution to change various properties, such as **assignedTo** or **tenantNote**.</span></span>
 
-<span data-ttu-id="2c306-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2c306-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="d0f74-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d0f74-106">Permissions</span></span>
 
-|<span data-ttu-id="2c306-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2c306-108">Permission type</span></span>      | <span data-ttu-id="2c306-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="2c306-109">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="d0f74-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d0f74-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="d0f74-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d0f74-109">Permission type</span></span>      | <span data-ttu-id="d0f74-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d0f74-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2c306-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2c306-110">Delegated (work or school account)</span></span> |   <span data-ttu-id="2c306-111">Область securityevents. ReadWrite. ALL.</span><span class="sxs-lookup"><span data-stu-id="2c306-111">SecurityEvents.ReadWrite.All.</span></span>  |
-|<span data-ttu-id="2c306-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2c306-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="2c306-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2c306-113">Not supported.</span></span>  |
-|<span data-ttu-id="2c306-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2c306-114">Application</span></span> | <span data-ttu-id="2c306-115">Область securityevents. ReadWrite. ALL.</span><span class="sxs-lookup"><span data-stu-id="2c306-115">SecurityEvents.ReadWrite.All.</span></span> |
+|<span data-ttu-id="d0f74-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d0f74-111">Delegated (work or school account)</span></span> |   <span data-ttu-id="d0f74-112">Область securityevents. ReadWrite. ALL.</span><span class="sxs-lookup"><span data-stu-id="d0f74-112">SecurityEvents.ReadWrite.All.</span></span>  |
+|<span data-ttu-id="d0f74-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d0f74-113">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="d0f74-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d0f74-114">Not supported.</span></span>  |
+|<span data-ttu-id="d0f74-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d0f74-115">Application</span></span> | <span data-ttu-id="d0f74-116">Область securityevents. ReadWrite. ALL.</span><span class="sxs-lookup"><span data-stu-id="d0f74-116">SecurityEvents.ReadWrite.All.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2c306-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2c306-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d0f74-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d0f74-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -34,40 +36,40 @@ ms.locfileid: "36307961"
 PATCH /security/secureScoreControlProfiles/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2c306-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2c306-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d0f74-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d0f74-118">Request headers</span></span>
 
-| <span data-ttu-id="2c306-118">Имя</span><span class="sxs-lookup"><span data-stu-id="2c306-118">Name</span></span>       | <span data-ttu-id="2c306-119">Описание</span><span class="sxs-lookup"><span data-stu-id="2c306-119">Description</span></span>|
+| <span data-ttu-id="d0f74-119">Имя</span><span class="sxs-lookup"><span data-stu-id="d0f74-119">Name</span></span>       | <span data-ttu-id="d0f74-120">Описание</span><span class="sxs-lookup"><span data-stu-id="d0f74-120">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="2c306-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="2c306-120">Authorization</span></span>  | <span data-ttu-id="2c306-121">Bearer {код}.</span><span class="sxs-lookup"><span data-stu-id="2c306-121">Bearer {code}.</span></span> <span data-ttu-id="2c306-122">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="2c306-122">Required.</span></span>|
-|<span data-ttu-id="2c306-123">Prefer</span><span class="sxs-lookup"><span data-stu-id="2c306-123">Prefer</span></span> | <span data-ttu-id="2c306-124">Возврат = представление.</span><span class="sxs-lookup"><span data-stu-id="2c306-124">return=representation.</span></span> |
+| <span data-ttu-id="d0f74-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="d0f74-121">Authorization</span></span>  | <span data-ttu-id="d0f74-122">Bearer {код}.</span><span class="sxs-lookup"><span data-stu-id="d0f74-122">Bearer {code}.</span></span> <span data-ttu-id="d0f74-123">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="d0f74-123">Required.</span></span>|
+|<span data-ttu-id="d0f74-124">Prefer</span><span class="sxs-lookup"><span data-stu-id="d0f74-124">Prefer</span></span> | <span data-ttu-id="d0f74-125">Возврат = представление.</span><span class="sxs-lookup"><span data-stu-id="d0f74-125">return=representation.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="2c306-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="2c306-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="d0f74-126">Основной текст запроса</span><span class="sxs-lookup"><span data-stu-id="d0f74-126">Request body</span></span>
 
-<span data-ttu-id="2c306-126">В тексте запроса добавьте представление значений в формате JSON для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="2c306-126">In the request body, supply a JSON representation of the values for relevant fields that should be updated.</span></span> <span data-ttu-id="2c306-127">Текст **должен** содержать `vendorInformation` свойство Valid `provider` и `vendor` Fields.</span><span class="sxs-lookup"><span data-stu-id="2c306-127">The body **must** contain the `vendorInformation` property with valid `provider` and `vendor` fields.</span></span> <span data-ttu-id="2c306-128">В следующей таблице перечислены поля, которые можно обновить для **секурескореконтролпрофиле**.</span><span class="sxs-lookup"><span data-stu-id="2c306-128">The following table lists the fields that can be updated for a **secureScoreControlProfile**.</span></span> <span data-ttu-id="2c306-129">Значения для существующих свойств, не включенных в текст запроса, не изменятся.</span><span class="sxs-lookup"><span data-stu-id="2c306-129">The values for existing properties that are not included in the request body will not change.</span></span> <span data-ttu-id="2c306-130">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="2c306-130">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="d0f74-127">В тексте запроса добавьте представление значений в формате JSON для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="d0f74-127">In the request body, supply a JSON representation of the values for relevant fields that should be updated.</span></span> <span data-ttu-id="d0f74-128">Текст **должен** содержать `vendorInformation` свойство Valid `provider` и `vendor` Fields.</span><span class="sxs-lookup"><span data-stu-id="d0f74-128">The body **must** contain the `vendorInformation` property with valid `provider` and `vendor` fields.</span></span> <span data-ttu-id="d0f74-129">В следующей таблице перечислены поля, которые можно обновить для **секурескореконтролпрофиле**.</span><span class="sxs-lookup"><span data-stu-id="d0f74-129">The following table lists the fields that can be updated for a **secureScoreControlProfile**.</span></span> <span data-ttu-id="d0f74-130">Значения для существующих свойств, не включенных в текст запроса, не изменятся.</span><span class="sxs-lookup"><span data-stu-id="d0f74-130">The values for existing properties that are not included in the request body will not change.</span></span> <span data-ttu-id="d0f74-131">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="d0f74-131">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="2c306-131">Свойство</span><span class="sxs-lookup"><span data-stu-id="2c306-131">Property</span></span>   | <span data-ttu-id="2c306-132">Тип</span><span class="sxs-lookup"><span data-stu-id="2c306-132">Type</span></span> |<span data-ttu-id="2c306-133">Описание</span><span class="sxs-lookup"><span data-stu-id="2c306-133">Description</span></span>|
+| <span data-ttu-id="d0f74-132">Свойство</span><span class="sxs-lookup"><span data-stu-id="d0f74-132">Property</span></span>   | <span data-ttu-id="d0f74-133">Тип</span><span class="sxs-lookup"><span data-stu-id="d0f74-133">Type</span></span> |<span data-ttu-id="d0f74-134">Описание</span><span class="sxs-lookup"><span data-stu-id="d0f74-134">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="2c306-134">assignedTo</span><span class="sxs-lookup"><span data-stu-id="2c306-134">assignedTo</span></span>|<span data-ttu-id="2c306-135">String</span><span class="sxs-lookup"><span data-stu-id="2c306-135">String</span></span>|<span data-ttu-id="2c306-136">Имя аналитики, которой назначен элемент управления для рассмотрения, внедрения или исправления.</span><span class="sxs-lookup"><span data-stu-id="2c306-136">Name of the analyst the control is assigned to for triage, implementation, or remediation.</span></span>|
-|<span data-ttu-id="2c306-137">comment</span><span class="sxs-lookup"><span data-stu-id="2c306-137">comment</span></span>|<span data-ttu-id="2c306-138">String</span><span class="sxs-lookup"><span data-stu-id="2c306-138">String</span></span>|<span data-ttu-id="2c306-139">Комментарии аналитика в элементе управления (для управления клиентом).</span><span class="sxs-lookup"><span data-stu-id="2c306-139">Analyst comments on the control (for customer control management).</span></span>|
-|<span data-ttu-id="2c306-140">state</span><span class="sxs-lookup"><span data-stu-id="2c306-140">state</span></span>| <span data-ttu-id="2c306-141">String</span><span class="sxs-lookup"><span data-stu-id="2c306-141">String</span></span>|<span data-ttu-id="2c306-142">Управляемый аналитикой параметр для элемента управления.</span><span class="sxs-lookup"><span data-stu-id="2c306-142">Analyst driven setting on the control.</span></span> <span data-ttu-id="2c306-143">Возможные значения: `Default`, `Ignored`, `ThirdParty`, `Reviewed`.</span><span class="sxs-lookup"><span data-stu-id="2c306-143">Possible values are: `Default`, `Ignored`, `ThirdParty`, `Reviewed`.</span></span>|
-| <span data-ttu-id="2c306-144">vendorInformation</span><span class="sxs-lookup"><span data-stu-id="2c306-144">vendorInformation</span></span> | [<span data-ttu-id="2c306-145">securityVendorInformation</span><span class="sxs-lookup"><span data-stu-id="2c306-145">securityVendorInformation</span></span>](../resources/securityvendorinformation.md) | <span data-ttu-id="2c306-146">Сложный тип, содержащий сведения о продукте, поставщике и подобеспечении безопасности (например, Vendor = Microsoft; Provider = Секурескоре;).</span><span class="sxs-lookup"><span data-stu-id="2c306-146">Complex type containing details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=SecureScore;).</span></span> <span data-ttu-id="2c306-147">**Требуются поля поставщика и поставщика.**</span><span class="sxs-lookup"><span data-stu-id="2c306-147">**Provider and vendor fields are required.**</span></span> |
+|<span data-ttu-id="d0f74-135">assignedTo</span><span class="sxs-lookup"><span data-stu-id="d0f74-135">assignedTo</span></span>|<span data-ttu-id="d0f74-136">String</span><span class="sxs-lookup"><span data-stu-id="d0f74-136">String</span></span>|<span data-ttu-id="d0f74-137">Имя аналитики, которой назначен элемент управления для рассмотрения, внедрения или исправления.</span><span class="sxs-lookup"><span data-stu-id="d0f74-137">Name of the analyst the control is assigned to for triage, implementation, or remediation.</span></span>|
+|<span data-ttu-id="d0f74-138">comment</span><span class="sxs-lookup"><span data-stu-id="d0f74-138">comment</span></span>|<span data-ttu-id="d0f74-139">String</span><span class="sxs-lookup"><span data-stu-id="d0f74-139">String</span></span>|<span data-ttu-id="d0f74-140">Комментарии аналитика в элементе управления (для управления клиентом).</span><span class="sxs-lookup"><span data-stu-id="d0f74-140">Analyst comments on the control (for customer control management).</span></span>|
+|<span data-ttu-id="d0f74-141">state</span><span class="sxs-lookup"><span data-stu-id="d0f74-141">state</span></span>| <span data-ttu-id="d0f74-142">Строка</span><span class="sxs-lookup"><span data-stu-id="d0f74-142">String</span></span>|<span data-ttu-id="d0f74-143">Управляемый аналитикой параметр для элемента управления.</span><span class="sxs-lookup"><span data-stu-id="d0f74-143">Analyst driven setting on the control.</span></span> <span data-ttu-id="d0f74-144">Возможные значения: `Default`, `Ignored`, `ThirdParty`, `Reviewed`.</span><span class="sxs-lookup"><span data-stu-id="d0f74-144">Possible values are: `Default`, `Ignored`, `ThirdParty`, `Reviewed`.</span></span>|
+| <span data-ttu-id="d0f74-145">vendorInformation</span><span class="sxs-lookup"><span data-stu-id="d0f74-145">vendorInformation</span></span> | [<span data-ttu-id="d0f74-146">securityVendorInformation</span><span class="sxs-lookup"><span data-stu-id="d0f74-146">securityVendorInformation</span></span>](../resources/securityvendorinformation.md) | <span data-ttu-id="d0f74-147">Сложный тип, содержащий сведения о продукте, поставщике и подобеспечении безопасности (например, Vendor = Microsoft; Provider = Секурескоре;).</span><span class="sxs-lookup"><span data-stu-id="d0f74-147">Complex type containing details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=SecureScore;).</span></span> <span data-ttu-id="d0f74-148">**Требуются поля поставщика и поставщика.**</span><span class="sxs-lookup"><span data-stu-id="d0f74-148">**Provider and vendor fields are required.**</span></span> |
 
 
-## <a name="response"></a><span data-ttu-id="2c306-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="2c306-148">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d0f74-149">Ответ</span><span class="sxs-lookup"><span data-stu-id="d0f74-149">Response</span></span>
 
-<span data-ttu-id="2c306-149">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="2c306-149">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="d0f74-150">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="d0f74-150">If successful, this method returns a `204 No Content` response code.</span></span>
 
-<span data-ttu-id="2c306-150">Если используется заголовок необязательного запроса, метод возвращает код `200 OK` отклика и обновленный объект [секурескореконтролпрофилес](../resources/securescorecontrolprofile.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="2c306-150">If the optional request header is used, the method returns a `200 OK` response code and the updated [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) object in the response body.</span></span>
+<span data-ttu-id="d0f74-151">Если используется заголовок необязательного запроса, метод возвращает код `200 OK` отклика и обновленный объект [секурескореконтролпрофилес](../resources/securescorecontrolprofile.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="d0f74-151">If the optional request header is used, the method returns a `200 OK` response code and the updated [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2c306-151">Пример</span><span class="sxs-lookup"><span data-stu-id="2c306-151">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d0f74-152">Пример</span><span class="sxs-lookup"><span data-stu-id="d0f74-152">Example</span></span>
 
-### <a name="example-1-request-without-prefer-header"></a><span data-ttu-id="2c306-152">Пример 1: запрос без верхнего колонтитула</span><span class="sxs-lookup"><span data-stu-id="2c306-152">Example 1: Request without Prefer header</span></span>
+### <a name="example-1-request-without-prefer-header"></a><span data-ttu-id="d0f74-153">Пример 1: запрос без верхнего колонтитула</span><span class="sxs-lookup"><span data-stu-id="d0f74-153">Example 1: Request without Prefer header</span></span>
 
-### <a name="request"></a><span data-ttu-id="2c306-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="2c306-153">Request</span></span>
+### <a name="request"></a><span data-ttu-id="d0f74-154">Запрос</span><span class="sxs-lookup"><span data-stu-id="d0f74-154">Request</span></span>
 
-<span data-ttu-id="2c306-154">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2c306-154">The following is an example of the request.</span></span>
+<span data-ttu-id="d0f74-155">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d0f74-155">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="2c306-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="2c306-155">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="d0f74-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="d0f74-156">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "securescorecontrolprofiles_update"
@@ -90,28 +92,28 @@ Content-type: application/json
   }
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="2c306-156">C#</span><span class="sxs-lookup"><span data-stu-id="2c306-156">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="d0f74-157">C#</span><span class="sxs-lookup"><span data-stu-id="d0f74-157">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/securescorecontrolprofiles-update-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="2c306-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2c306-157">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="d0f74-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d0f74-158">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/securescorecontrolprofiles-update-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="2c306-158">Цель — C</span><span class="sxs-lookup"><span data-stu-id="2c306-158">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="d0f74-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d0f74-159">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/securescorecontrolprofiles-update-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="2c306-159">Java</span><span class="sxs-lookup"><span data-stu-id="2c306-159">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="d0f74-160">Java</span><span class="sxs-lookup"><span data-stu-id="d0f74-160">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/securescorecontrolprofiles-update-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="2c306-160">Отклик</span><span class="sxs-lookup"><span data-stu-id="2c306-160">Response</span></span>
+### <a name="response"></a><span data-ttu-id="d0f74-161">Отклик</span><span class="sxs-lookup"><span data-stu-id="d0f74-161">Response</span></span>
 
-<span data-ttu-id="2c306-161">Ниже представлен пример успешного отклика.</span><span class="sxs-lookup"><span data-stu-id="2c306-161">The following is an example of a successful response.</span></span>
+<span data-ttu-id="d0f74-162">Ниже представлен пример успешного отклика.</span><span class="sxs-lookup"><span data-stu-id="d0f74-162">The following is an example of a successful response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -122,11 +124,11 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-request-with-prefer-header"></a><span data-ttu-id="2c306-162">Пример 2: запрос с заголовком предпочтения</span><span class="sxs-lookup"><span data-stu-id="2c306-162">Example 2: Request with Prefer header</span></span>
+### <a name="example-2-request-with-prefer-header"></a><span data-ttu-id="d0f74-163">Пример 2: запрос с заголовком предпочтения</span><span class="sxs-lookup"><span data-stu-id="d0f74-163">Example 2: Request with Prefer header</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2c306-163">Запрос</span><span class="sxs-lookup"><span data-stu-id="2c306-163">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="d0f74-164">Запрос</span><span class="sxs-lookup"><span data-stu-id="d0f74-164">Request</span></span>
 
-<span data-ttu-id="2c306-164">В приведенном ниже примере показан запрос, включающий заголовок `Prefer` запроса.</span><span class="sxs-lookup"><span data-stu-id="2c306-164">The following example shows a request that includes the `Prefer` request header.</span></span>
+<span data-ttu-id="d0f74-165">В приведенном ниже примере показан запрос, включающий заголовок `Prefer` запроса.</span><span class="sxs-lookup"><span data-stu-id="d0f74-165">The following example shows a request that includes the `Prefer` request header.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -150,11 +152,11 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="2c306-165">Отклик</span><span class="sxs-lookup"><span data-stu-id="2c306-165">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="d0f74-166">Отклик</span><span class="sxs-lookup"><span data-stu-id="d0f74-166">Response</span></span>
 
-<span data-ttu-id="2c306-166">Ниже приведен пример отклика при использовании заголовка необязательного `Prefer: return=representation` запроса.</span><span class="sxs-lookup"><span data-stu-id="2c306-166">The following is an example of the response when the optional `Prefer: return=representation` request header is used.</span></span>
+<span data-ttu-id="d0f74-167">Ниже приведен пример отклика при использовании заголовка необязательного `Prefer: return=representation` запроса.</span><span class="sxs-lookup"><span data-stu-id="d0f74-167">The following is an example of the response when the optional `Prefer: return=representation` request header is used.</span></span>
 
-> <span data-ttu-id="2c306-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="2c306-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="d0f74-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d0f74-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

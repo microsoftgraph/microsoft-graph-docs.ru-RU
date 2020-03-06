@@ -5,29 +5,31 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8f8e3140c4f74477a2c7579e0b06ec4cb3d97b78
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 23130ca72077f55a69cbfd5a3d921cce49ae07c1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37364223"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42513457"
 ---
-# <a name="windowsdefenderupdatesignatures-action"></a><span data-ttu-id="d9bae-103">Действие windowsDefenderUpdateSignatures</span><span class="sxs-lookup"><span data-stu-id="d9bae-103">windowsDefenderUpdateSignatures action</span></span>
+# <a name="windowsdefenderupdatesignatures-action"></a><span data-ttu-id="daf44-103">Действие windowsDefenderUpdateSignatures</span><span class="sxs-lookup"><span data-stu-id="daf44-103">windowsDefenderUpdateSignatures action</span></span>
 
-> <span data-ttu-id="d9bae-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="d9bae-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="daf44-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="daf44-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="d9bae-105">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="d9bae-105">Not yet documented</span></span>
+> <span data-ttu-id="daf44-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="daf44-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="d9bae-106">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="d9bae-106">Prerequisites</span></span>
-<span data-ttu-id="d9bae-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d9bae-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="daf44-106">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="daf44-106">Not yet documented</span></span>
 
-|<span data-ttu-id="d9bae-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d9bae-109">Permission type</span></span>|<span data-ttu-id="d9bae-110">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="d9bae-110">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="daf44-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="daf44-107">Prerequisites</span></span>
+<span data-ttu-id="daf44-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="daf44-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="daf44-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="daf44-110">Permission type</span></span>|<span data-ttu-id="daf44-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="daf44-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="d9bae-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d9bae-111">Delegated (work or school account)</span></span>|<span data-ttu-id="d9bae-112">DeviceManagementManagedDevices.PriviligedOperation.All</span><span class="sxs-lookup"><span data-stu-id="d9bae-112">DeviceManagementManagedDevices.PriviligedOperation.All</span></span>|
-|<span data-ttu-id="d9bae-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d9bae-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d9bae-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d9bae-114">Not supported.</span></span>|
-|<span data-ttu-id="d9bae-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d9bae-115">Application</span></span>|<span data-ttu-id="d9bae-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d9bae-116">Not supported.</span></span>|
+|<span data-ttu-id="daf44-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="daf44-112">Delegated (work or school account)</span></span>|<span data-ttu-id="daf44-113">DeviceManagementManagedDevices.PriviligedOperation.All</span><span class="sxs-lookup"><span data-stu-id="daf44-113">DeviceManagementManagedDevices.PriviligedOperation.All</span></span>|
+|<span data-ttu-id="daf44-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="daf44-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="daf44-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="daf44-115">Not supported.</span></span>|
+|<span data-ttu-id="daf44-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="daf44-116">Application</span></span>|<span data-ttu-id="daf44-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="daf44-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="d9bae-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d9bae-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="daf44-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="daf44-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,28 +40,28 @@ POST /deviceManagement/managedDevices/{managedDeviceId}/windowsDefenderUpdateSig
 POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/windowsDefenderUpdateSignatures
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d9bae-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d9bae-118">Request headers</span></span>
-|<span data-ttu-id="d9bae-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="d9bae-119">Header</span></span>|<span data-ttu-id="d9bae-120">Значение</span><span class="sxs-lookup"><span data-stu-id="d9bae-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="daf44-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="daf44-119">Request headers</span></span>
+|<span data-ttu-id="daf44-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="daf44-120">Header</span></span>|<span data-ttu-id="daf44-121">Значение</span><span class="sxs-lookup"><span data-stu-id="daf44-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="d9bae-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="d9bae-121">Authorization</span></span>|<span data-ttu-id="d9bae-122">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d9bae-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="d9bae-123">Accept</span><span class="sxs-lookup"><span data-stu-id="d9bae-123">Accept</span></span>|<span data-ttu-id="d9bae-124">application/json</span><span class="sxs-lookup"><span data-stu-id="d9bae-124">application/json</span></span>|
+|<span data-ttu-id="daf44-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="daf44-122">Authorization</span></span>|<span data-ttu-id="daf44-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="daf44-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="daf44-124">Accept</span><span class="sxs-lookup"><span data-stu-id="daf44-124">Accept</span></span>|<span data-ttu-id="daf44-125">application/json</span><span class="sxs-lookup"><span data-stu-id="daf44-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="d9bae-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="d9bae-125">Request body</span></span>
-<span data-ttu-id="d9bae-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="d9bae-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="daf44-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="daf44-126">Request body</span></span>
+<span data-ttu-id="daf44-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="daf44-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d9bae-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="d9bae-127">Response</span></span>
-<span data-ttu-id="d9bae-128">В случае успешного выполнения это действие возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="d9bae-128">If successful, this action returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="daf44-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="daf44-128">Response</span></span>
+<span data-ttu-id="daf44-129">В случае успешного выполнения это действие возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="daf44-129">If successful, this action returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d9bae-129">Пример</span><span class="sxs-lookup"><span data-stu-id="d9bae-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="daf44-130">Пример</span><span class="sxs-lookup"><span data-stu-id="daf44-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="d9bae-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="d9bae-130">Request</span></span>
-<span data-ttu-id="d9bae-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d9bae-131">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="daf44-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="daf44-131">Request</span></span>
+<span data-ttu-id="daf44-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="daf44-132">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDeviceId}/windowsDefenderUpdateSignatures
 ```
 
-### <a name="response"></a><span data-ttu-id="d9bae-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="d9bae-132">Response</span></span>
-<span data-ttu-id="d9bae-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d9bae-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="daf44-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="daf44-133">Response</span></span>
+<span data-ttu-id="daf44-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="daf44-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```

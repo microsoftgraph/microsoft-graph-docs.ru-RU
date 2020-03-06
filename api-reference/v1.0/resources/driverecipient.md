@@ -7,18 +7,20 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Ресурс DriveRecipient представляет человека, группу или другого получателя, которому можно предоставить доступ с помощью действия invite.
 doc_type: resourcePageType
-ms.openlocfilehash: a198bdc8a50fdb754ba8f9c88ce8e925c548a600
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d1b123c897791dff5bd6c42eb9e4b030e83e1d5c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029388"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531532"
 ---
-# <a name="driverecipient-resource"></a><span data-ttu-id="75779-103">Ресурс DriveRecipient</span><span class="sxs-lookup"><span data-stu-id="75779-103">DriveRecipient resource</span></span>
+# <a name="driverecipient-resource"></a><span data-ttu-id="36bf0-103">Ресурс DriveRecipient</span><span class="sxs-lookup"><span data-stu-id="36bf0-103">DriveRecipient resource</span></span>
 
-<span data-ttu-id="75779-104">Ресурс **DriveRecipient** представляет человека, группу или другого получателя, которому можно предоставить доступ с помощью действия [invite](../api/driveitem-invite.md).</span><span class="sxs-lookup"><span data-stu-id="75779-104">The **DriveRecipient** resource represents a person, group, or other recipient to share with using the [invite](../api/driveitem-invite.md) action.</span></span>
+<span data-ttu-id="36bf0-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="36bf0-104">Namespace: microsoft.graph</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="75779-105">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="75779-105">JSON representation</span></span>
+<span data-ttu-id="36bf0-105">Ресурс **DriveRecipient** представляет человека, группу или другого получателя, которому можно предоставить доступ с помощью действия [invite](../api/driveitem-invite.md).</span><span class="sxs-lookup"><span data-stu-id="36bf0-105">The **DriveRecipient** resource represents a person, group, or other recipient to share with using the [invite](../api/driveitem-invite.md) action.</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="36bf0-106">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="36bf0-106">JSON representation</span></span>
 
 <!-- { 
   "blockType": "resource", 
@@ -32,18 +34,18 @@ ms.locfileid: "36029388"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="75779-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="75779-106">Properties</span></span>
-<span data-ttu-id="75779-107">Ниже перечислены свойства ресурса получателя.</span><span class="sxs-lookup"><span data-stu-id="75779-107">The recipients resource has these properties.</span></span>
+## <a name="properties"></a><span data-ttu-id="36bf0-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="36bf0-107">Properties</span></span>
+<span data-ttu-id="36bf0-108">Ниже перечислены свойства ресурса получателя.</span><span class="sxs-lookup"><span data-stu-id="36bf0-108">The recipients resource has these properties.</span></span>
 
-| <span data-ttu-id="75779-108">Имя свойства</span><span class="sxs-lookup"><span data-stu-id="75779-108">Property name</span></span> | <span data-ttu-id="75779-109">Тип</span><span class="sxs-lookup"><span data-stu-id="75779-109">Type</span></span>   | <span data-ttu-id="75779-110">Описание</span><span class="sxs-lookup"><span data-stu-id="75779-110">Description</span></span>                                                                                             |
+| <span data-ttu-id="36bf0-109">Имя свойства</span><span class="sxs-lookup"><span data-stu-id="36bf0-109">Property name</span></span> | <span data-ttu-id="36bf0-110">Тип</span><span class="sxs-lookup"><span data-stu-id="36bf0-110">Type</span></span>   | <span data-ttu-id="36bf0-111">Описание</span><span class="sxs-lookup"><span data-stu-id="36bf0-111">Description</span></span>                                                                                             |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="75779-111">email</span><span class="sxs-lookup"><span data-stu-id="75779-111">email</span></span>         | <span data-ttu-id="75779-112">String</span><span class="sxs-lookup"><span data-stu-id="75779-112">String</span></span> | <span data-ttu-id="75779-113">Электронный адрес получателя (если с получателем связан электронный адрес).</span><span class="sxs-lookup"><span data-stu-id="75779-113">The email address for the recipient, if the recipient has an associated email address.</span></span>                  |
-| <span data-ttu-id="75779-114">alias</span><span class="sxs-lookup"><span data-stu-id="75779-114">alias</span></span>         | <span data-ttu-id="75779-115">String</span><span class="sxs-lookup"><span data-stu-id="75779-115">String</span></span> | <span data-ttu-id="75779-116">Псевдоним объекта домена для тех случаев, когда электронный адрес недоступен (например, для групп безопасности).</span><span class="sxs-lookup"><span data-stu-id="75779-116">The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).</span></span> |
-| <span data-ttu-id="75779-117">objectId</span><span class="sxs-lookup"><span data-stu-id="75779-117">objectId</span></span>      | <span data-ttu-id="75779-118">String</span><span class="sxs-lookup"><span data-stu-id="75779-118">String</span></span> | <span data-ttu-id="75779-119">Уникальный идентификатор получателя в каталоге.</span><span class="sxs-lookup"><span data-stu-id="75779-119">The unique identifier for the recipient in the directory.</span></span>                                               |
+| <span data-ttu-id="36bf0-112">email</span><span class="sxs-lookup"><span data-stu-id="36bf0-112">email</span></span>         | <span data-ttu-id="36bf0-113">String</span><span class="sxs-lookup"><span data-stu-id="36bf0-113">String</span></span> | <span data-ttu-id="36bf0-114">Электронный адрес получателя (если с получателем связан электронный адрес).</span><span class="sxs-lookup"><span data-stu-id="36bf0-114">The email address for the recipient, if the recipient has an associated email address.</span></span>                  |
+| <span data-ttu-id="36bf0-115">alias</span><span class="sxs-lookup"><span data-stu-id="36bf0-115">alias</span></span>         | <span data-ttu-id="36bf0-116">Строка</span><span class="sxs-lookup"><span data-stu-id="36bf0-116">String</span></span> | <span data-ttu-id="36bf0-117">Псевдоним объекта домена для тех случаев, когда электронный адрес недоступен (например, для групп безопасности).</span><span class="sxs-lookup"><span data-stu-id="36bf0-117">The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).</span></span> |
+| <span data-ttu-id="36bf0-118">objectId</span><span class="sxs-lookup"><span data-stu-id="36bf0-118">objectId</span></span>      | <span data-ttu-id="36bf0-119">String</span><span class="sxs-lookup"><span data-stu-id="36bf0-119">String</span></span> | <span data-ttu-id="36bf0-120">Уникальный идентификатор получателя в каталоге.</span><span class="sxs-lookup"><span data-stu-id="36bf0-120">The unique identifier for the recipient in the directory.</span></span>                                               |
 
-## <a name="remarks"></a><span data-ttu-id="75779-120">Заметки</span><span class="sxs-lookup"><span data-stu-id="75779-120">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="36bf0-121">Заметки</span><span class="sxs-lookup"><span data-stu-id="36bf0-121">Remarks</span></span>
 
-<span data-ttu-id="75779-p101">При добавлении разрешений с помощью действия [invite](../api/driveitem-invite.md) в объекте DriveRecipient могут быть указаны свойства **email**, **alias** и **objectId**. Достаточно указать только одно из этих значений.</span><span class="sxs-lookup"><span data-stu-id="75779-p101">When using [invite](../api/driveitem-invite.md) to add permissions, the DriveRecipient can specify **email**, **alias**, or **objectId**. Only one of these values is required.</span></span>
+<span data-ttu-id="36bf0-p101">При добавлении разрешений с помощью действия [invite](../api/driveitem-invite.md) в объекте DriveRecipient могут быть указаны свойства **email**, **alias** и **objectId**. Достаточно указать только одно из этих значений.</span><span class="sxs-lookup"><span data-stu-id="36bf0-p101">When using [invite](../api/driveitem-invite.md) to add permissions, the DriveRecipient can specify **email**, **alias**, or **objectId**. Only one of these values is required.</span></span>
 
 <!-- {
   "type": "#page.annotation",
