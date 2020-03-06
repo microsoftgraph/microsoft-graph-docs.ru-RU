@@ -14,7 +14,7 @@ ms.locfileid: "42454096"
 ---
 # <a name="reportroot-getskypeforbusinessparticipantactivitycounts"></a>reportRoot: getSkypeForBusinessParticipantActivityCounts
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

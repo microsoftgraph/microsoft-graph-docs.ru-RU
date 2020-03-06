@@ -14,7 +14,7 @@ ms.locfileid: "42521336"
 ---
 # <a name="provisioningserviceprincipal-resource-type"></a>Тип ресурса ПровисионингсервицепринЦипал
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

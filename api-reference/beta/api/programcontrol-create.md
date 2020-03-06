@@ -14,7 +14,7 @@ ms.locfileid: "42454985"
 ---
 # <a name="create-programcontrol"></a>Создание Програмконтрол
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

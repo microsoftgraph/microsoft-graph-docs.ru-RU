@@ -1,5 +1,5 @@
 ---
-title: Создание расширенного свойства с одним значением
+title: Создание однозначного расширенного свойства
 description: 'Создайте одно или несколько свойств с одним значением в новом или существующем экземпляре ресурса. '
 localization_priority: Normal
 doc_type: apiPageType
@@ -12,9 +12,9 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42453244"
 ---
-# <a name="create-single-value-extended-property"></a>Создание расширенного свойства с одним значением
+# <a name="create-single-value-extended-property"></a>Создание однозначного расширенного свойства
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -160,7 +160,7 @@ PATCH /groups/{id}/events/{id}
 |**Свойство**|**Тип**|**Описание**|
 |:-----|:-----|:-----|
 |singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)| Массив из одного или нескольких расширенных свойств с одним значением. |
-|id|String|Чтобы идентифицировать свойства в коллекции **singleValueExtendedProperties**, для каждого из них укажите этот параметр. Свойство должно быть одного из поддерживаемых форматов. Дополнительные сведения см. в статье [Обзор расширенных свойств Outlook](../resources/extended-properties-overview.md). Обязательный параметр.|
+|id|Строка|Чтобы идентифицировать свойства в коллекции **singleValueExtendedProperties**, для каждого из них укажите этот параметр. Свойство должно быть одного из поддерживаемых форматов. Дополнительные сведения см. в статье [Обзор расширенных свойств Outlook](../resources/extended-properties-overview.md). Обязательный параметр.|
 |значение|string|Для каждого свойства из коллекции **singleValueExtendedProperties** следует указать значение. Обязательный параметр.|
 
 При создании расширенного свойства в _новом_ экземпляре ресурса, помимо новой коллекции **singleValueExtendedProperties**, нужно указать описание этого экземпляра ресурса (то есть [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md) и т. д.) в формате JSON.

@@ -14,7 +14,7 @@ ms.locfileid: "42507529"
 ---
 # <a name="conditionalaccesspolicy-resource-type"></a>Тип ресурса Кондитионалакцессполици
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,7 +42,7 @@ ms.locfileid: "42507529"
 |id|String| Задает идентификатор объекта Кондитионалакцессполици. Только для чтения.|
 |modifiedDateTime| DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Статического. |
 |сессионконтролс|[conditionalAccessSessionControls](conditionalaccesssessioncontrols.md)| Задает элементы управления сеансом, которые применяются после входа. |
-|состояние|строка| Задает состояние объекта Кондитионалакцессполици. Возможные значения: `enabled`, `disabled`, `enabledForReportingButNotEnforced`. Обязательное. |
+|состояние|string| Задает состояние объекта Кондитионалакцессполици. Возможные значения: `enabled`, `disabled`, `enabledForReportingButNotEnforced`. Обязательное. |
 
 ## <a name="relationships"></a>Связи
 

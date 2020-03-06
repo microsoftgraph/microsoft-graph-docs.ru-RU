@@ -14,7 +14,7 @@ ms.locfileid: "42456000"
 ---
 # <a name="participant-configuremixer"></a>участник: Конфигуремиксер
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +48,7 @@ POST /communications/calls/{id}/participants/configureMixer
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |партиЦипантмиксерлевелс|Коллекция [партиЦипантмиксерлевел](../resources/participantmixerlevel.md)| Настройка уровней микшера для данного участника аудио.|
-|Контекст|String|Контекст клиента.|
+|Контекст|Строка|Контекст клиента.|
 
 ## <a name="response"></a>Отклик
 Возвращает `202 Accepted` код отклика и заголовок Location с URI для [коммсоператион](../resources/commsoperation.md) , созданного для этого запроса.

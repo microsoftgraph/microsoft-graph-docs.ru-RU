@@ -14,7 +14,7 @@ ms.locfileid: "42456427"
 ---
 # <a name="delete-openshift"></a>Удаление Опеншифт
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

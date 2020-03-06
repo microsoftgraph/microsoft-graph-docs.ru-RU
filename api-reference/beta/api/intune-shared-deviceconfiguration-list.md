@@ -14,7 +14,7 @@ ms.locfileid: "42458611"
 ---
 # <a name="list-deviceconfigurations"></a>Перечисление объектов deviceConfiguration
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

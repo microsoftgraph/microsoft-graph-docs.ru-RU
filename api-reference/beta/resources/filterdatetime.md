@@ -14,7 +14,7 @@ ms.locfileid: "42498051"
 ---
 # <a name="filterdatetime-resource-type"></a>Тип ресурса FilterDatetime
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

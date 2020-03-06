@@ -14,7 +14,7 @@ ms.locfileid: "42521273"
 ---
 # <a name="rbacapplication-resource-type"></a>Тип ресурса Рбакаппликатион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

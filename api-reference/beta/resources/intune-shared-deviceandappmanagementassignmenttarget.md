@@ -14,7 +14,7 @@ ms.locfileid: "42527472"
 ---
 # <a name="deviceandappmanagementassignmenttarget-resource-type"></a>Тип ресурса deviceAndAppManagementAssignmentTarget
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -14,7 +14,7 @@ ms.locfileid: "42455643"
 ---
 # <a name="delete-plannertask"></a>Удаление объекта plannerTask
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

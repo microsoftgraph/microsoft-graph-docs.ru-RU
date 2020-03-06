@@ -14,7 +14,7 @@ ms.locfileid: "42456546"
 ---
 # <a name="create-notebook"></a>Создание записной книжки
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +40,7 @@ POST /sites/{id}/onenote/notebooks
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type | строка | `application/json` |
+| Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите имя записной книжки. 

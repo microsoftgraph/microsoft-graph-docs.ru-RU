@@ -14,7 +14,7 @@ ms.locfileid: "42519094"
 ---
 # <a name="workbookworksheetprotectionoptions-resource-type"></a>Тип ресурса Воркбукворкшитпротектионоптионс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

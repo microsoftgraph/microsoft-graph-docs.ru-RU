@@ -14,7 +14,7 @@ ms.locfileid: "42488623"
 ---
 # <a name="managedebookcategory-resource-type"></a>Тип ресурса Манажедебуккатегори
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

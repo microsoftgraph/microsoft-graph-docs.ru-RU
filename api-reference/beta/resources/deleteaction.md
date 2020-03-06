@@ -15,7 +15,7 @@ ms.locfileid: "42507277"
 ---
 # <a name="deleteaction-resource-type"></a>Тип ресурса DeleteAction
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +43,7 @@ ms.locfileid: "42507277"
 | Имя свойства | Тип   | Описание
 |:--------------|:-------|:----------------------------------------------------
 | name          | string | Имя элемента, который был удален.
-| objectType    | строка | `File`или `Folder`, в зависимости от типа удаленного элемента.
+| objectType    | string | `File`или `Folder`, в зависимости от типа удаленного элемента.
 
 ## <a name="remarks"></a>Замечания
 

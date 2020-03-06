@@ -14,7 +14,7 @@ ms.locfileid: "42455727"
 ---
 # <a name="update-plannerbuckettaskboardtaskformat"></a>Обновление объекта plannerBucketTaskBoardTaskFormat
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

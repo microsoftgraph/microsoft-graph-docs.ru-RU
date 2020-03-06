@@ -14,7 +14,7 @@ ms.locfileid: "42470702"
 ---
 # <a name="delete-devicemanagementsettingcategory"></a>Удаление Девицеманажементсеттингкатегори
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -14,7 +14,7 @@ ms.locfileid: "42458429"
 ---
 # <a name="haspayloadlinks-action"></a>действие Хаспайлоадлинкс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

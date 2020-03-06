@@ -14,7 +14,7 @@ ms.locfileid: "42472998"
 ---
 # <a name="list-devicemanagementabstractcomplexsettingdefinitions"></a>Список Девицеманажементабстракткомплекссеттингдефинитионс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

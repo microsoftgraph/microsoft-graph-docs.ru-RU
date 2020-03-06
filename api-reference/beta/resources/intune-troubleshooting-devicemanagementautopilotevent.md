@@ -14,7 +14,7 @@ ms.locfileid: "42523396"
 ---
 # <a name="devicemanagementautopilotevent-resource-type"></a>Тип ресурса Девицеманажементаутопилотевент
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -39,14 +39,14 @@ ms.locfileid: "42523396"
 |девицерегистереддатетиме|DateTimeOffset|Дата регистрации устройства.|
 |енроллментстартдатетиме|DateTimeOffset|Дата начала регистрации устройства.|
 |enrollmentType|[windowsAutopilotEnrollmentType](../resources/intune-troubleshooting-windowsautopilotenrollmenttype.md)|Тип регистрации. Возможные значения: `unknown`, `azureADJoinedWithAutopilotProfile`, `offlineDomainJoined`, `azureADJoinedUsingDeviceAuthWithAutopilotProfile`, `azureADJoinedUsingDeviceAuthWithoutAutopilotProfile`, `azureADJoinedWithOfflineAutopilotProfile`, `azureADJoinedWithWhiteGlove`, `offlineDomainJoinedWithWhiteGlove`, `offlineDomainJoinedWithOfflineAutopilotProfile`.|
-|девицесериалнумбер|String|Серийный номер устройства.|
+|девицесериалнумбер|Строка|Серийный номер устройства.|
 |managedDeviceName|String|Управляемое имя устройства.|
 |userPrincipalName|String|Имя участника пользователя, используемое для регистрации устройства.|
-|виндовсаутопилотдеплойментпрофиледисплайнаме|String|Имя профиля для автопилота.|
+|виндовсаутопилотдеплойментпрофиледисплайнаме|Строка|Имя профиля для автопилота.|
 |енроллментстате|[енроллментстате](../resources/intune-shared-enrollmentstate.md)|Не удалось зарегистрировать состояние регистрации, например "зарегистрировано". Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|windows10EnrollmentCompletionPageConfigurationDisplayName|String|Имя профиля страницы состояния регистрации|
+|windows10EnrollmentCompletionPageConfigurationDisplayName|Строка|Имя профиля страницы состояния регистрации|
 |деплойментстате|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Состояние развертывания, например успешное выполнение, сбой, выполнение, Сукцессвистимеаут. Возможные значения: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`.|
-|osVersion|String|Версия операционной системы устройства.|
+|osVersion|Строка|Версия операционной системы устройства.|
 |деплойментдуратион|Длительность|Длительность развертывания с автопилотной версией, включая регистрацию.|
 |деплойменттоталдуратион|Длительность|Общее время развертывания с экрана регистрации на рабочем столе.|
 |девицепрепаратиондуратион|Длительность|Время, затраченное на регистрацию устройств.|
@@ -56,7 +56,7 @@ ms.locfileid: "42523396"
 |деплойментенддатетиме|DateTimeOffset|Время окончания развертывания.|
 |таржетедаппкаунт|Int32|Количество целевых приложений.|
 |таржетедполицикаунт|Int32|Количество целевых политик.|
-|енроллментфаилуредетаилс|String|Сведения о сбоях при регистрации.|
+|енроллментфаилуредетаилс|Строка|Сведения о сбоях при регистрации.|
 
 ## <a name="relationships"></a>Связи
 Нет

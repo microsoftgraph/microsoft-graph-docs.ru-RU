@@ -14,7 +14,7 @@ ms.locfileid: "42523354"
 ---
 # <a name="mobileappactiontype-enum-type"></a>тип перечисления Мобилеаппактионтипе
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

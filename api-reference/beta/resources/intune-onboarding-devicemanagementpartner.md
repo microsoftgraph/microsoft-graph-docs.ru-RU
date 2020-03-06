@@ -14,7 +14,7 @@ ms.locfileid: "42524134"
 ---
 # <a name="devicemanagementpartner-resource-type"></a>Тип ресурса deviceManagementPartner
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

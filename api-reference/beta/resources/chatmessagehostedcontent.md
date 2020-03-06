@@ -14,7 +14,7 @@ ms.locfileid: "42507707"
 ---
 # <a name="chatmessagehostedcontent-resource-type"></a>Тип ресурса Чатмессажехостедконтент
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

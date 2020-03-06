@@ -14,7 +14,7 @@ ms.locfileid: "42498170"
 ---
 # <a name="filesecuritystate-resource-type"></a>Тип ресурса объекта filesecuritystate
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ ms.locfileid: "42498170"
 |fileHash|[fileHash](filehash.md)|Сложный тип, содержащий хэши файлов (криптография и с учетом расположения).|
 |name|String|Имя файла (без пути).|
 |path|String|Полный путь к файлу или файлу imageFile.|
-|riskScore|String|Созданный поставщиком/вычисляемый показатель риска для файла оповещений. Рекомендуемый диапазон значений 0-1, указывающий на процентное соотношение.|
+|riskScore|Строка|Созданный поставщиком/вычисляемый показатель риска для файла оповещений. Рекомендуемый диапазон значений 0-1, указывающий на процентное соотношение.|
 
 ## <a name="json-representation"></a>Представление JSON
 

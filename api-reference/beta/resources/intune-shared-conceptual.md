@@ -13,7 +13,7 @@ ms.locfileid: "42527479"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Общие ресурсы в Microsoft Intune
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 

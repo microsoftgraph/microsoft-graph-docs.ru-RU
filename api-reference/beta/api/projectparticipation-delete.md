@@ -14,7 +14,7 @@ ms.locfileid: "42454943"
 ---
 # <a name="delete-projectparticipation"></a>Удаление ПрожектпартиЦипатион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

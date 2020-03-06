@@ -14,7 +14,7 @@ ms.locfileid: "42457242"
 ---
 # <a name="get-itemphonenumber"></a>Получение Итемфоненумбер
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

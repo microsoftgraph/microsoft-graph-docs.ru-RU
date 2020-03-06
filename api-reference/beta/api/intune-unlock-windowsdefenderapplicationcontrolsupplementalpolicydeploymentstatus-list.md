@@ -14,7 +14,7 @@ ms.locfileid: "42457491"
 ---
 # <a name="list-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatuses"></a>Список Виндовсдефендераппликатионконтролсупплементалполицидеплойментстатусес
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

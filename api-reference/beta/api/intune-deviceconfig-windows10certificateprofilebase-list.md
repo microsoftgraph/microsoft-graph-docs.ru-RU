@@ -14,7 +14,7 @@ ms.locfileid: "42482134"
 ---
 # <a name="list-windows10certificateprofilebases"></a>Список windows10CertificateProfileBases
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -14,7 +14,7 @@ ms.locfileid: "42456259"
 ---
 # <a name="list-orgcontacts"></a>Список Оргконтактс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

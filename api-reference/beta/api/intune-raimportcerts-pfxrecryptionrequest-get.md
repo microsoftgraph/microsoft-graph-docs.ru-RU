@@ -14,7 +14,7 @@ ms.locfileid: "42460124"
 ---
 # <a name="get-pfxrecryptionrequest"></a>Получение Пфксрекриптионрекуест
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

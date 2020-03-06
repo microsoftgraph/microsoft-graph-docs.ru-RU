@@ -14,7 +14,7 @@ ms.locfileid: "42459479"
 ---
 # <a name="assign-action"></a>Действие назначения
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

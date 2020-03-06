@@ -14,7 +14,7 @@ ms.locfileid: "42474692"
 ---
 # <a name="list-windowsphone81scepcertificateprofiles"></a>Список windowsPhone81SCEPCertificateProfiles
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

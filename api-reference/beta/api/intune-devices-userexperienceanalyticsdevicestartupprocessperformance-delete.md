@@ -14,7 +14,7 @@ ms.locfileid: "42468220"
 ---
 # <a name="delete-userexperienceanalyticsdevicestartupprocessperformance"></a>Удаление Усерекспериенцеаналитиксдевицестартуппроцессперформанце
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

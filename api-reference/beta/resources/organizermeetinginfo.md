@@ -14,7 +14,7 @@ ms.locfileid: "42522125"
 ---
 # <a name="organizermeetinginfo-resource-type"></a>Тип ресурса Организермитингинфо
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

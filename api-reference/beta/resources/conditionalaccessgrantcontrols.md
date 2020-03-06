@@ -14,7 +14,7 @@ ms.locfileid: "42507550"
 ---
 # <a name="conditionalaccessgrantcontrols-resource-type"></a>Тип ресурса Кондитионалакцессгрантконтролс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "42507550"
 
 | Свойство | Тип | Описание |
 |:-------- |:---- |:----------- |
-| operator | String | Определяет связь элементов управления предоставлением. Возможные значения: `AND`, `OR`. |
+| operator | Строка | Определяет связь элементов управления предоставлением. Возможные значения: `AND`, `OR`. |
 | буилтинконтролс | Коллекция String | Список значений встроенных элементов управления, необходимых для политики. Возможные значения: `Block`, `Mfa`, `CompliantDevice`, `DomainJoinedDevice`, `ApprovedApplication`,`CompliantApplication` |
 | кустомаусентикатионфакторс | Коллекция String | Список идентификаторов настраиваемых элементов управления, необходимых для политики. Дополнительные сведения о настраиваемых элементах управления:https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview |
 | термсофусе | Коллекция String | Список [условий использования](agreement.md) идентификаторов, необходимых для политики. |

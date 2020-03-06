@@ -14,7 +14,7 @@ ms.locfileid: "42523473"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>Тип ресурса windowsAutopilotDeploymentProfile
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -41,10 +41,10 @@ ms.locfileid: "42523473"
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения профиля|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|Настройка "нет на месте"|
 |енроллментстатусскринсеттингс|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|Настройка экрана состояния регистрации|
-|екстраксардварехаш|Логический|Извлечение Хардварехаш для профиля|
-|девиценаметемплате|String|Шаблон, используемый для именования автопилотного устройства. Это может быть настраиваемый текст, который также может содержать серийный номер устройства или случайное число. Общая длина текста, созданного шаблоном, не может превышать 15 символов.|
+|екстраксардварехаш|Boolean|Извлечение Хардварехаш для профиля|
+|девиценаметемплате|Строка|Шаблон, используемый для именования автопилотного устройства. Это может быть настраиваемый текст, который также может содержать серийный номер устройства или случайное число. Общая длина текста, созданного шаблоном, не может превышать 15 символов.|
 |deviceType|[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype.md)|Тип устройства автопилота, к которому применяется этот профиль. Возможные значения: `windowsPc`, `surfaceHub2`.|
-|енаблевхитеглове|Логический|Включите для профиля белый Глове для автопилотного развертывания.|
+|енаблевхитеглове|Boolean|Включите для профиля белый Глове для автопилотного развертывания.|
 |roleScopeTagIds|Коллекция String|Теги областей для профиля.|
 
 ## <a name="relationships"></a>Связи

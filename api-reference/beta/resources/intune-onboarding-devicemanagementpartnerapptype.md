@@ -14,7 +14,7 @@ ms.locfileid: "42524127"
 ---
 # <a name="devicemanagementpartnerapptype-enum-type"></a>тип перечисления Девицеманажементпартнерапптипе
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

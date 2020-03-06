@@ -14,7 +14,7 @@ ms.locfileid: "42472676"
 ---
 # <a name="get-devicemanagementbooleansettinginstance"></a>Получение Девицеманажементбулеансеттингинстанце
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

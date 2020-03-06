@@ -14,7 +14,7 @@ ms.locfileid: "42470268"
 ---
 # <a name="create-securitybaselinecategorystatesummary"></a>Создание Секуритибаселинекатегористатесуммари
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

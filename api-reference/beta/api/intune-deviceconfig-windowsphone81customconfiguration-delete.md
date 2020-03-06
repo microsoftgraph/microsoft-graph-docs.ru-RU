@@ -14,7 +14,7 @@ ms.locfileid: "42475350"
 ---
 # <a name="delete-windowsphone81customconfiguration"></a>Удаление объекта windowsPhone81CustomConfiguration
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

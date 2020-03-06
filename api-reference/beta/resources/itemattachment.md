@@ -14,7 +14,7 @@ ms.locfileid: "42523095"
 ---
 # <a name="itemattachment-resource-type"></a>Тип ресурса itemAttachment
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "42523095"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |contentType|String|Тип контента этого вложения.|
-|id|Строка| Идентификатор вложения.|
+|id|String| Идентификатор вложения.|
 |isInline|Boolean|Значение true указывает, что вложение является встроенным, например внедренным изображением в теле элемента.|
 |lastModifiedDateTime|DateTimeOffset|Время и дата последнего изменения вложения.|
 |name|String|Отображаемое имя вложения.|

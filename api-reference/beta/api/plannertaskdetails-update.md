@@ -14,7 +14,7 @@ ms.locfileid: "42455601"
 ---
 # <a name="update-plannertaskdetails"></a>Обновление объекта plannertaskdetails
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
