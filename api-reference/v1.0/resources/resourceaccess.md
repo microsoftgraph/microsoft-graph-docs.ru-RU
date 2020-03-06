@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: 9717b9d28c8fb9f4a17c09d4bb0029d07c6b673b
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: 7544d877941ca7457a925811a4ffaca2ba4b09e5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37938739"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533836"
 ---
 # <a name="resourceaccess-resource-type"></a>Тип ресурса Ресаурцеакцесс
+
+Пространство имен: microsoft.graph
 
 Указывает область разрешений OAuth 2,0 или роль приложения, требуемую приложением. Свойство **ресаурцеакцесс** типа [рекуиредресаурцеакцесс](requiredresourceaccess.md) является коллекцией **ресаурцеакцесс**.
 

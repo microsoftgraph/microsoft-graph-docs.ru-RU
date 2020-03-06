@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: b2c65a53dc5ff6ebcbc91438ff0e0e8d55bc3647
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2e3d30d1796945c7d0217a83db966a203678f938
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032902"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533094"
 ---
 # <a name="charttitle-resource-type"></a>Тип ресурса ChartTitle
+
+Пространство имен: microsoft.graph
 
 Представляет объект заголовка диаграммы.
 
@@ -21,8 +23,8 @@ ms.locfileid: "36032902"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartTitle](../api/charttitle-get.md) | [Воркбукчарттитле](charttitle.md) |Чтение свойств и связей объекта chartTitle.|
-|[Обновление](../api/charttitle-update.md) | [Воркбукчарттитле](charttitle.md)    |Обновление объекта ChartTitle. |
+|[Получение объекта ChartTitle](../api/charttitle-get.md) | [воркбукчарттитле](charttitle.md) |Чтение свойств и связей объекта chartTitle.|
+|[Обновление](../api/charttitle-update.md) | [воркбукчарттитле](charttitle.md)    |Обновление объекта ChartTitle. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -31,10 +33,10 @@ ms.locfileid: "36032902"
 |text|string|Представляет текст заголовка диаграммы.|
 |visible|boolean|Логическое значение, представляющее видимость объекта заголовка диаграммы.|
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|format|[Воркбукчарттитлеформат](charttitleformat.md)|Представляет форматирование названия диаграммы, включая формат заливки и шрифта. Только для чтения.|
+|format|[воркбукчарттитлеформат](charttitleformat.md)|Представляет форматирование названия диаграммы, включая формат заливки и шрифта. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 07ea8e7a3a5622446ab2c0126d21187f6d7ce3b9
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: dadb35cb95db83c03c74bdb2e4eac70a5951cc5e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37359238"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532521"
 ---
 # <a name="firewallpresharedkeyencodingmethodtype-enum-type"></a>тип перечисления Фиреваллпрешаредкэйенкодингмесодтипе
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+Пространство имен: microsoft.graph
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Возможные значения для Фиреваллпрешаредкэйенкодингмесод
 
@@ -22,8 +24,8 @@ ms.locfileid: "37359238"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |девицедефаулт|нуль|Значение не настроено Intune, не переопределять значение устройства по умолчанию, настроенное пользователем|
-|none|1,1|Общий ключ не кодируется. Вместо этого он хранится в расширенном формате символов|
-|utF8|2|Кодирование общего ключа с помощью UTF – 8|
+|нет|1 |Общий ключ не кодируется. Вместо этого он хранится в расширенном формате символов|
+|utF8|2 |Кодирование общего ключа с помощью UTF – 8|
 
 
 

@@ -5,14 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b6f5e7b736ad1467d9cdf0f20e9d5626b6d950c8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f45e33c96805e5c56dad572c5294486812759210
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36014559"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42516859"
 ---
 # <a name="grouplifecyclepolicy-removegroup"></a>groupLifecyclePolicy: removeGroup
+
+Пространство имен: microsoft.graph
 
 Удаляет группу из политики жизненного цикла.
 
@@ -39,7 +41,7 @@ POST /groupLifecyclePolicies/{id}/removeGroup
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр | Тип | Описание |
@@ -48,7 +50,7 @@ POST /groupLifecyclePolicies/{id}/removeGroup
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `200 OK`. Если из политики удаляется группа, в теле отклика возвращается значение **true**. Если нет, то в теле отклика возвращается значение **false**.
+В случае успешного выполнения этот метод возвращает код отклика `200 OK`. Если из политики удаляется группа, в теле отклика возвращается значение **true**. Если нет, то в теле отклика возвращается значение **false**.
 
 ## <a name="example"></a>Пример
 

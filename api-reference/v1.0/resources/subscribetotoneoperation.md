@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6d1e42d375dd53fcb71ae049622c59d2d31b3406
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: f29d385060d93b8de54ee27f9f948f83e3ad2711
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913543"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533615"
 ---
 # <a name="subscribetotoneoperation-resource-type"></a>Тип ресурса Субскрибетотонеоператион
+
+Пространство имен: microsoft.graph
 
 Описывает формат ответа на создание подписки для получения тонов DTMF.
 
@@ -20,7 +22,7 @@ ms.locfileid: "40913543"
 
 | Свойство                       | Тип                        | Описание                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Контекст                  | String                      | Контекст клиента.                                                                                                                               |
+| Контекст                  | Строка                      | Контекст клиента.                                                                                                                               |
 | id                             | Строка                      | ИДЕНТИФИКАТОР операции сервера. Только для чтения.                                                                                             |
 | status                         | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения.                                                 |
 

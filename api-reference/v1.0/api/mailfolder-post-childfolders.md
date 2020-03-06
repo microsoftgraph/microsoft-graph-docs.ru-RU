@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2ff43d14003fd77e18817af77f5718e2eab8589b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b5a9e475c289f35404512a009fc8df98b0589169
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36374948"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511616"
 ---
 # <a name="create-mailfolder"></a>Создание объекта MailFolder
+
+Пространство имен: microsoft.graph
 
 С помощью этого API можно создать дочернюю папку почты.
 
@@ -41,7 +43,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 | Заголовок | Значение |
 |:-------|:------|
-| Авторизация | `Bearer {token}`. Обязательно. |
+| Авторизация | `Bearer {token}`. Обязательный элемент. |
 | Content-Type | `application/json`. Обязательно. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -50,7 +52,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
-|displayName|String|Отображаемое имя новой папки.|
+|displayName|Строка|Отображаемое имя новой папки.|
 
 ## <a name="response"></a>Ответ
 
@@ -62,7 +64,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 Ниже приведен пример запроса.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_mailfolder_from_mailfolder"
@@ -77,19 +79,19 @@ Content-length: 159
   "displayName": "displayName-value",
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-mailfolder-from-mailfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-mailfolder-from-mailfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-mailfolder-from-mailfolder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-mailfolder-from-mailfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

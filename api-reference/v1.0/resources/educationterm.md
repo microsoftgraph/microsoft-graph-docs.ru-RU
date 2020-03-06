@@ -5,21 +5,23 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 36426a7e3f1fb79264a788d8af7e7768f5bae26a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 59558512d27bb92c48fb5c0ac2dd0fb52f7c426d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032622"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531505"
 ---
 # <a name="educationterm-resource-type"></a>Тип ресурса educationTerm
+
+Пространство имен: microsoft.graph
 
 Срок. Представляет определенную часть учебного года. Используется в [educationClass](educationclass.md).
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName| String| Отображаемое имя срока.| 
+|displayName| Строка| Отображаемое имя срока.| 
 |externalId|String| Идентификатор срока в системе синхронизации.|
 |startDate|Дата|Начало срока.|
 |endDate|Date|Конец срока.|

@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 606baa54f37d25ab2954a30152eb699cebac2337
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 7eda16d5f255243650073efb54ee641b61bf960f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36369082"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518758"
 ---
 # <a name="create-calendar"></a>Создание объекта Calendar
+
+Пространство имен: microsoft.graph
 
 С помощью этого API можно для экземпляра [user](../resources/user.md) создать календарь в группе календарей.
 
@@ -66,7 +68,7 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 Ниже приведен пример запроса.
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADYAAAR9NR5AAA="],
@@ -82,7 +84,7 @@ Content-type: application/json
   "name": "Marketing calendar"
 }
 ```
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-calendar-from-calendargroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -93,7 +95,7 @@ Content-type: application/json
 
 ##### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",

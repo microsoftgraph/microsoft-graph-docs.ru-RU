@@ -7,14 +7,16 @@ localization_priority: Normal
 description: Ресурс FileSystemInfo содержит свойства, которые отображаются в локальной файловой системе устройства для локальной версии элемента.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 12f2c0ed0dd10b36adea919795c2ae55f586436a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c53710ebdf2c14b405d69f883a125e4d14b6b7b7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030340"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532946"
 ---
 # <a name="filesysteminfo-facet"></a>Аспект FileSystemInfo
+
+Пространство имен: microsoft.graph
 
 Ресурс **FileSystemInfo** содержит свойства, которые отображаются в локальной файловой системе устройства для локальной версии элемента. Этот аспект можно использовать, чтобы указать последнюю дату изменения или создания элемента, какой она была на локальном устройстве.
 

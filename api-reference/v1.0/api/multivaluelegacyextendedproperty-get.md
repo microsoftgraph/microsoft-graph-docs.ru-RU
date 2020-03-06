@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: c8ca94f253b2949dc25c6cacf8ccdef516827a9d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6a2642a0c93218020dfb001eca2578a1946453c9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36022805"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511441"
 ---
 # <a name="get-multivaluelegacyextendedproperty"></a>Получение объекта multiValueLegacyExtendedProperty
+
+Пространство имен: microsoft.graph
 
 Получение экземпляра ресурса, который содержит расширенное свойство с несколькими значениями, с использованием параметра `$expand`.
 
@@ -22,7 +24,7 @@ ms.locfileid: "36022805"
 
 - [calendar](../resources/calendar.md);
 - [contact](../resources/contact.md);
-- [contactFolder](../resources/contactfolder.md). 
+- [contactFolder](../resources/contactfolder.md) 
 - [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md) 
@@ -42,7 +44,7 @@ ms.locfileid: "36022805"
 |:-----|:-----|:-----|:-----|
 | [calendar](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-| [contactFolder](../resources/contactfolder.md). | Contacts.Read | Contacts.Read | Contacts.Read |
+| [contactFolder](../resources/contactfolder.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [event](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
 | [calendar](../resources/calendar.md) для групп; | Group.Read.All | Не поддерживается | Не поддерживается |
 | group [event](../resources/event.md); | Group.Read.All | Не поддерживается | Не поддерживается |
@@ -117,7 +119,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueEx
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

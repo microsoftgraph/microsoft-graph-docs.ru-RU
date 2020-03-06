@@ -5,14 +5,16 @@ localization_priority: Normal
 author: pranoychaudhuri
 ms.prod: reports
 doc_type: conceptualPageType
-ms.openlocfilehash: 1418fbbb672a4470aa7873259707c7039533a86b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 9ea3418dd065758fb2d623c9995b78126ea3d475
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030452"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532988"
 ---
 # <a name="email-app-usage-reports"></a>Отчеты об использовании почтовых приложений
+
+Пространство имен: microsoft.graph
 
 Эти отчеты позволяют узнать, сколько почтовых приложений используется для подключения к Exchange Online. Вы также можете посмотреть, какие версии приложений Outlook используются, что позволит вам выявить пользователей старых версий и связаться с ними по поводу обновления.
 
@@ -23,6 +25,6 @@ ms.locfileid: "36030452"
 | Функция                                 | Возвращаемый тип | Описание                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
 | [Получение сведений о пользователях](../api/reportroot-getemailappusageuserdetail.md) | Stream      | Узнайте, какие действия пользователи выполняли в различных почтовых приложениях. |
-| [Получение количества пользователей по приложениям](../api/reportroot-getemailappusageappsusercounts.md) | Поток      | Узнайте, сколько уникальных пользователей у каждого почтового приложения. |
-| [Получение количества пользователей](../api/reportroot-getemailappusageusercounts.md) | Поток      | Узнайте, сколько уникальных пользователей подключалось к Exchange Online с помощью любого почтового приложения. |
+| [Получение количества пользователей по приложениям](../api/reportroot-getemailappusageappsusercounts.md) | Stream      | Узнайте, сколько уникальных пользователей у каждого почтового приложения. |
+| [Получение количества пользователей](../api/reportroot-getemailappusageusercounts.md) | Stream      | Узнайте, сколько уникальных пользователей подключалось к Exchange Online с помощью любого почтового приложения. |
 | [Получение количества пользователей по версиям](../api/reportroot-getemailappusageversionsusercounts.md) | Поток      | Узнайте, сколько уникальных пользователей у каждой версии Outlook для компьютера. |
