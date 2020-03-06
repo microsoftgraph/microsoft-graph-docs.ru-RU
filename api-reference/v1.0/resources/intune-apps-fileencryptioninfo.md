@@ -5,35 +5,37 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e0dff917b9fc6dc8bc99cb388cdf0f461dc394c3
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: a0859447e06b7264f5018e575c047a283d02dc34
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37356291"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532850"
 ---
-# <a name="fileencryptioninfo-resource-type"></a><span data-ttu-id="f2a51-103">Тип ресурса fileEncryptionInfo</span><span class="sxs-lookup"><span data-stu-id="f2a51-103">fileEncryptionInfo resource type</span></span>
+# <a name="fileencryptioninfo-resource-type"></a><span data-ttu-id="2ba7d-103">Тип ресурса fileEncryptionInfo</span><span class="sxs-lookup"><span data-stu-id="2ba7d-103">fileEncryptionInfo resource type</span></span>
 
-> <span data-ttu-id="f2a51-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="f2a51-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="2ba7d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2ba7d-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="f2a51-105">Содержит свойства сведений о шифровании файлов для версии содержимого бизнес-приложения.</span><span class="sxs-lookup"><span data-stu-id="f2a51-105">Contains properties for file encryption information for the content version of a line of business app.</span></span>
+> <span data-ttu-id="2ba7d-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="2ba7d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="f2a51-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="f2a51-106">Properties</span></span>
-|<span data-ttu-id="f2a51-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="f2a51-107">Property</span></span>|<span data-ttu-id="f2a51-108">Тип</span><span class="sxs-lookup"><span data-stu-id="f2a51-108">Type</span></span>|<span data-ttu-id="f2a51-109">Описание</span><span class="sxs-lookup"><span data-stu-id="f2a51-109">Description</span></span>|
+<span data-ttu-id="2ba7d-106">Содержит свойства сведений о шифровании файлов для версии содержимого бизнес-приложения.</span><span class="sxs-lookup"><span data-stu-id="2ba7d-106">Contains properties for file encryption information for the content version of a line of business app.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="2ba7d-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="2ba7d-107">Properties</span></span>
+|<span data-ttu-id="2ba7d-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="2ba7d-108">Property</span></span>|<span data-ttu-id="2ba7d-109">Тип</span><span class="sxs-lookup"><span data-stu-id="2ba7d-109">Type</span></span>|<span data-ttu-id="2ba7d-110">Описание</span><span class="sxs-lookup"><span data-stu-id="2ba7d-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="f2a51-110">encryptionKey</span><span class="sxs-lookup"><span data-stu-id="f2a51-110">encryptionKey</span></span>|<span data-ttu-id="f2a51-111">Binary</span><span class="sxs-lookup"><span data-stu-id="f2a51-111">Binary</span></span>|<span data-ttu-id="f2a51-112">Ключ, используемый для шифрования содержимого файла.</span><span class="sxs-lookup"><span data-stu-id="f2a51-112">The key used to encrypt the file content.</span></span>|
-|<span data-ttu-id="f2a51-113">initializationVector</span><span class="sxs-lookup"><span data-stu-id="f2a51-113">initializationVector</span></span>|<span data-ttu-id="f2a51-114">Binary</span><span class="sxs-lookup"><span data-stu-id="f2a51-114">Binary</span></span>|<span data-ttu-id="f2a51-115">Вектор инициализации, используемый для алгоритма шифрования.</span><span class="sxs-lookup"><span data-stu-id="f2a51-115">The initialization vector used for the encryption algorithm.</span></span>|
-|<span data-ttu-id="f2a51-116">mac</span><span class="sxs-lookup"><span data-stu-id="f2a51-116">mac</span></span>|<span data-ttu-id="f2a51-117">Binary</span><span class="sxs-lookup"><span data-stu-id="f2a51-117">Binary</span></span>|<span data-ttu-id="f2a51-118">Хэш зашифрованного содержимого файла + IV (хэш содержимого).</span><span class="sxs-lookup"><span data-stu-id="f2a51-118">The hash of the encrypted file content + IV (content hash).</span></span>|
-|<span data-ttu-id="f2a51-119">macKey</span><span class="sxs-lookup"><span data-stu-id="f2a51-119">macKey</span></span>|<span data-ttu-id="f2a51-120">Binary</span><span class="sxs-lookup"><span data-stu-id="f2a51-120">Binary</span></span>|<span data-ttu-id="f2a51-121">Ключ для получения свойства mac.</span><span class="sxs-lookup"><span data-stu-id="f2a51-121">The key used to get mac.</span></span>|
-|<span data-ttu-id="f2a51-122">profileIdentifier</span><span class="sxs-lookup"><span data-stu-id="f2a51-122">profileIdentifier</span></span>|<span data-ttu-id="f2a51-123">String</span><span class="sxs-lookup"><span data-stu-id="f2a51-123">String</span></span>|<span data-ttu-id="f2a51-124">Идентификатор профиля.</span><span class="sxs-lookup"><span data-stu-id="f2a51-124">The profile identifier.</span></span>|
-|<span data-ttu-id="f2a51-125">fileDigest</span><span class="sxs-lookup"><span data-stu-id="f2a51-125">fileDigest</span></span>|<span data-ttu-id="f2a51-126">Binary</span><span class="sxs-lookup"><span data-stu-id="f2a51-126">Binary</span></span>|<span data-ttu-id="f2a51-127">Дайджест файла до шифрования.</span><span class="sxs-lookup"><span data-stu-id="f2a51-127">The file digest prior to encryption.</span></span>|
-|<span data-ttu-id="f2a51-128">fileDigestAlgorithm</span><span class="sxs-lookup"><span data-stu-id="f2a51-128">fileDigestAlgorithm</span></span>|<span data-ttu-id="f2a51-129">String</span><span class="sxs-lookup"><span data-stu-id="f2a51-129">String</span></span>|<span data-ttu-id="f2a51-130">Алгоритм дайджеста файла.</span><span class="sxs-lookup"><span data-stu-id="f2a51-130">The file digest algorithm.</span></span>|
+|<span data-ttu-id="2ba7d-111">encryptionKey</span><span class="sxs-lookup"><span data-stu-id="2ba7d-111">encryptionKey</span></span>|<span data-ttu-id="2ba7d-112">Binary</span><span class="sxs-lookup"><span data-stu-id="2ba7d-112">Binary</span></span>|<span data-ttu-id="2ba7d-113">Ключ, используемый для шифрования содержимого файла.</span><span class="sxs-lookup"><span data-stu-id="2ba7d-113">The key used to encrypt the file content.</span></span>|
+|<span data-ttu-id="2ba7d-114">initializationVector</span><span class="sxs-lookup"><span data-stu-id="2ba7d-114">initializationVector</span></span>|<span data-ttu-id="2ba7d-115">Binary</span><span class="sxs-lookup"><span data-stu-id="2ba7d-115">Binary</span></span>|<span data-ttu-id="2ba7d-116">Вектор инициализации, используемый для алгоритма шифрования.</span><span class="sxs-lookup"><span data-stu-id="2ba7d-116">The initialization vector used for the encryption algorithm.</span></span>|
+|<span data-ttu-id="2ba7d-117">mac</span><span class="sxs-lookup"><span data-stu-id="2ba7d-117">mac</span></span>|<span data-ttu-id="2ba7d-118">Binary</span><span class="sxs-lookup"><span data-stu-id="2ba7d-118">Binary</span></span>|<span data-ttu-id="2ba7d-119">Хэш зашифрованного содержимого файла + IV (хэш содержимого).</span><span class="sxs-lookup"><span data-stu-id="2ba7d-119">The hash of the encrypted file content + IV (content hash).</span></span>|
+|<span data-ttu-id="2ba7d-120">macKey</span><span class="sxs-lookup"><span data-stu-id="2ba7d-120">macKey</span></span>|<span data-ttu-id="2ba7d-121">Binary</span><span class="sxs-lookup"><span data-stu-id="2ba7d-121">Binary</span></span>|<span data-ttu-id="2ba7d-122">Ключ для получения свойства mac.</span><span class="sxs-lookup"><span data-stu-id="2ba7d-122">The key used to get mac.</span></span>|
+|<span data-ttu-id="2ba7d-123">profileIdentifier</span><span class="sxs-lookup"><span data-stu-id="2ba7d-123">profileIdentifier</span></span>|<span data-ttu-id="2ba7d-124">Строка</span><span class="sxs-lookup"><span data-stu-id="2ba7d-124">String</span></span>|<span data-ttu-id="2ba7d-125">Идентификатор профиля.</span><span class="sxs-lookup"><span data-stu-id="2ba7d-125">The profile identifier.</span></span>|
+|<span data-ttu-id="2ba7d-126">fileDigest</span><span class="sxs-lookup"><span data-stu-id="2ba7d-126">fileDigest</span></span>|<span data-ttu-id="2ba7d-127">Binary</span><span class="sxs-lookup"><span data-stu-id="2ba7d-127">Binary</span></span>|<span data-ttu-id="2ba7d-128">Дайджест файла до шифрования.</span><span class="sxs-lookup"><span data-stu-id="2ba7d-128">The file digest prior to encryption.</span></span>|
+|<span data-ttu-id="2ba7d-129">fileDigestAlgorithm</span><span class="sxs-lookup"><span data-stu-id="2ba7d-129">fileDigestAlgorithm</span></span>|<span data-ttu-id="2ba7d-130">String</span><span class="sxs-lookup"><span data-stu-id="2ba7d-130">String</span></span>|<span data-ttu-id="2ba7d-131">Алгоритм дайджеста файла.</span><span class="sxs-lookup"><span data-stu-id="2ba7d-131">The file digest algorithm.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="f2a51-131">Связи</span><span class="sxs-lookup"><span data-stu-id="f2a51-131">Relationships</span></span>
-<span data-ttu-id="f2a51-132">Нет</span><span class="sxs-lookup"><span data-stu-id="f2a51-132">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="2ba7d-132">Связи</span><span class="sxs-lookup"><span data-stu-id="2ba7d-132">Relationships</span></span>
+<span data-ttu-id="2ba7d-133">Нет</span><span class="sxs-lookup"><span data-stu-id="2ba7d-133">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="f2a51-133">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="f2a51-133">JSON Representation</span></span>
-<span data-ttu-id="f2a51-134">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f2a51-134">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2ba7d-134">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="2ba7d-134">JSON Representation</span></span>
+<span data-ttu-id="2ba7d-135">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2ba7d-135">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.fileEncryptionInfo"

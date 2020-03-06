@@ -5,89 +5,91 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: a8a702397358eeb07cdcd0b7d55175b47ed0c065
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 33a0d0462c0cf75c1e855e969b50521c337b3308
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36727749"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509810"
 ---
-# <a name="get-singlevaluelegacyextendedproperty"></a><span data-ttu-id="8095f-103">Получение объекта singleValueLegacyExtendedProperty</span><span class="sxs-lookup"><span data-stu-id="8095f-103">Get singleValueLegacyExtendedProperty</span></span>
+# <a name="get-singlevaluelegacyextendedproperty"></a><span data-ttu-id="48a96-103">Получение объекта singleValueLegacyExtendedProperty</span><span class="sxs-lookup"><span data-stu-id="48a96-103">Get singleValueLegacyExtendedProperty</span></span>
 
-<span data-ttu-id="8095f-104">Вы можете получить отдельный экземпляр ресурса, дополненный определенным расширенным свойством, или коллекцию экземпляров ресурсов, включающую расширенные свойства, которые соответствуют фильтру.</span><span class="sxs-lookup"><span data-stu-id="8095f-104">You can get a single resource instance expanded with a specific extended property, or a collection of resource instances that include extended properties matching a filter.</span></span>
+<span data-ttu-id="48a96-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="48a96-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="8095f-105">Параметр запроса `$expand` позволяет получить указанный экземпляр ресурса, дополненный определенным расширенным свойством.</span><span class="sxs-lookup"><span data-stu-id="8095f-105">Using the query parameter `$expand` allows you to get the specified resource instance expanded with a specific extended property.</span></span> <span data-ttu-id="8095f-106">Используйте операторы `$filter` и `eq` в свойстве **id**, чтобы указать расширенное свойство.</span><span class="sxs-lookup"><span data-stu-id="8095f-106">Use a `$filter` and `eq` operator on the **id** property to specify the extended property.</span></span> <span data-ttu-id="8095f-107">На данный момент это единственный способ получить объект [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md), представляющий расширенное свойство.</span><span class="sxs-lookup"><span data-stu-id="8095f-107">This is currently the only way to get the [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) object that represents an extended property.</span></span> 
+<span data-ttu-id="48a96-105">Вы можете получить отдельный экземпляр ресурса, дополненный определенным расширенным свойством, или коллекцию экземпляров ресурсов, включающую расширенные свойства, которые соответствуют фильтру.</span><span class="sxs-lookup"><span data-stu-id="48a96-105">You can get a single resource instance expanded with a specific extended property, or a collection of resource instances that include extended properties matching a filter.</span></span>
 
-<span data-ttu-id="8095f-108">Чтобы получить экземпляры ресурсов, которые содержат определенные расширенные свойства, используйте параметр запроса `$filter` и примените оператор `eq` к свойству **id**.</span><span class="sxs-lookup"><span data-stu-id="8095f-108">To get resource instances that have certain extended properties, use the `$filter` query parameter and apply an `eq` operator on the **id** property.</span></span> <span data-ttu-id="8095f-109">Кроме того, для числовых расширенных свойств примените один из следующих операторов к свойству **value**: `eq`, `ne`, `ge`, `gt`, `le` или `lt`.</span><span class="sxs-lookup"><span data-stu-id="8095f-109">In addition, for numeric extended properties, apply one of the following operators on the **value** property: `eq`, `ne`,`ge`, `gt`, `le`, or `lt`.</span></span> <span data-ttu-id="8095f-110">Для расширенных свойств строкового типа примените оператор `contains`, `startswith`, `eq` или `ne` к свойству **value**.</span><span class="sxs-lookup"><span data-stu-id="8095f-110">For string-typed extended properties, apply a `contains`, `startswith`, `eq`, or `ne` operator on **value**.</span></span>
+<span data-ttu-id="48a96-106">Параметр запроса `$expand` позволяет получить указанный экземпляр ресурса, дополненный определенным расширенным свойством.</span><span class="sxs-lookup"><span data-stu-id="48a96-106">Using the query parameter `$expand` allows you to get the specified resource instance expanded with a specific extended property.</span></span> <span data-ttu-id="48a96-107">Используйте операторы `$filter` и `eq` в свойстве **id**, чтобы указать расширенное свойство.</span><span class="sxs-lookup"><span data-stu-id="48a96-107">Use a `$filter` and `eq` operator on the **id** property to specify the extended property.</span></span> <span data-ttu-id="48a96-108">На данный момент это единственный способ получить объект [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md), представляющий расширенное свойство.</span><span class="sxs-lookup"><span data-stu-id="48a96-108">This is currently the only way to get the [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) object that represents an extended property.</span></span> 
 
-<span data-ttu-id="8095f-111">Фильтр применяется ко всем экземплярам ресурса в почтовом ящике вошедшего пользователя.</span><span class="sxs-lookup"><span data-stu-id="8095f-111">The filter is applied to all instances of the resource in the signed-in user's mailbox.</span></span> 
+<span data-ttu-id="48a96-109">Чтобы получить экземпляры ресурсов, которые содержат определенные расширенные свойства, используйте параметр запроса `$filter` и примените оператор `eq` к свойству **id**.</span><span class="sxs-lookup"><span data-stu-id="48a96-109">To get resource instances that have certain extended properties, use the `$filter` query parameter and apply an `eq` operator on the **id** property.</span></span> <span data-ttu-id="48a96-110">Кроме того, для числовых расширенных свойств примените один из следующих операторов к свойству **value**: `eq`, `ne`, `ge`, `gt`, `le` или `lt`.</span><span class="sxs-lookup"><span data-stu-id="48a96-110">In addition, for numeric extended properties, apply one of the following operators on the **value** property: `eq`, `ne`,`ge`, `gt`, `le`, or `lt`.</span></span> <span data-ttu-id="48a96-111">Для расширенных свойств строкового типа примените оператор `contains`, `startswith`, `eq` или `ne` к свойству **value**.</span><span class="sxs-lookup"><span data-stu-id="48a96-111">For string-typed extended properties, apply a `contains`, `startswith`, `eq`, or `ne` operator on **value**.</span></span>
 
-<span data-ttu-id="8095f-112">При фильтрации имени строки (`Name`) в свойстве **id** расширенного свойства учитывается регистр.</span><span class="sxs-lookup"><span data-stu-id="8095f-112">Filtering the string name (`Name`) in the **id** of an extended property is case-sensitive.</span></span> <span data-ttu-id="8095f-113">При фильтрации свойства **value** расширенного свойства регистр не учитывается.</span><span class="sxs-lookup"><span data-stu-id="8095f-113">Filtering the **value** property of an extended property is case-insensitive.</span></span>
+<span data-ttu-id="48a96-112">Фильтр применяется ко всем экземплярам ресурса в почтовом ящике вошедшего пользователя.</span><span class="sxs-lookup"><span data-stu-id="48a96-112">The filter is applied to all instances of the resource in the signed-in user's mailbox.</span></span> 
 
-<span data-ttu-id="8095f-114">Поддерживаются следующие ресурсы пользователей:</span><span class="sxs-lookup"><span data-stu-id="8095f-114">The following user resources are supported:</span></span>
+<span data-ttu-id="48a96-113">При фильтрации имени строки (`Name`) в свойстве **id** расширенного свойства учитывается регистр.</span><span class="sxs-lookup"><span data-stu-id="48a96-113">Filtering the string name (`Name`) in the **id** of an extended property is case-sensitive.</span></span> <span data-ttu-id="48a96-114">При фильтрации свойства **value** расширенного свойства регистр не учитывается.</span><span class="sxs-lookup"><span data-stu-id="48a96-114">Filtering the **value** property of an extended property is case-insensitive.</span></span>
 
-- <span data-ttu-id="8095f-115">[calendar](../resources/calendar.md);</span><span class="sxs-lookup"><span data-stu-id="8095f-115">[calendar](../resources/calendar.md)</span></span>
-- <span data-ttu-id="8095f-116">[contact](../resources/contact.md);</span><span class="sxs-lookup"><span data-stu-id="8095f-116">[contact](../resources/contact.md)</span></span>
-- <span data-ttu-id="8095f-117">[contactFolder](../resources/contactfolder.md).</span><span class="sxs-lookup"><span data-stu-id="8095f-117">[contactFolder](../resources/contactfolder.md)</span></span> 
-- [<span data-ttu-id="8095f-118">event</span><span class="sxs-lookup"><span data-stu-id="8095f-118">event</span></span>](../resources/event.md)
-- [<span data-ttu-id="8095f-119">mailFolder</span><span class="sxs-lookup"><span data-stu-id="8095f-119">mailFolder</span></span>](../resources/mailfolder.md)
-- [<span data-ttu-id="8095f-120">message</span><span class="sxs-lookup"><span data-stu-id="8095f-120">message</span></span>](../resources/message.md) 
+<span data-ttu-id="48a96-115">Поддерживаются следующие ресурсы пользователей:</span><span class="sxs-lookup"><span data-stu-id="48a96-115">The following user resources are supported:</span></span>
 
-<span data-ttu-id="8095f-121">Кроме того, поддерживаются следующие ресурсы групп:</span><span class="sxs-lookup"><span data-stu-id="8095f-121">As well as the following group resources:</span></span>
+- <span data-ttu-id="48a96-116">[calendar](../resources/calendar.md);</span><span class="sxs-lookup"><span data-stu-id="48a96-116">[calendar](../resources/calendar.md)</span></span>
+- <span data-ttu-id="48a96-117">[contact](../resources/contact.md);</span><span class="sxs-lookup"><span data-stu-id="48a96-117">[contact](../resources/contact.md)</span></span>
+- [<span data-ttu-id="48a96-118">contactFolder</span><span class="sxs-lookup"><span data-stu-id="48a96-118">contactFolder</span></span>](../resources/contactfolder.md) 
+- [<span data-ttu-id="48a96-119">event</span><span class="sxs-lookup"><span data-stu-id="48a96-119">event</span></span>](../resources/event.md)
+- [<span data-ttu-id="48a96-120">mailFolder</span><span class="sxs-lookup"><span data-stu-id="48a96-120">mailFolder</span></span>](../resources/mailfolder.md)
+- [<span data-ttu-id="48a96-121">message</span><span class="sxs-lookup"><span data-stu-id="48a96-121">message</span></span>](../resources/message.md) 
 
-- <span data-ttu-id="8095f-122">[calendar](../resources/calendar.md) для групп;</span><span class="sxs-lookup"><span data-stu-id="8095f-122">group [calendar](../resources/calendar.md)</span></span>
-- <span data-ttu-id="8095f-123">group [event](../resources/event.md);</span><span class="sxs-lookup"><span data-stu-id="8095f-123">group [event](../resources/event.md)</span></span>
-- <span data-ttu-id="8095f-124">[post](../resources/post.md) для групп.</span><span class="sxs-lookup"><span data-stu-id="8095f-124">group [post](../resources/post.md)</span></span> 
+<span data-ttu-id="48a96-122">Кроме того, поддерживаются следующие ресурсы групп:</span><span class="sxs-lookup"><span data-stu-id="48a96-122">As well as the following group resources:</span></span>
 
-<span data-ttu-id="8095f-125">Дополнительные сведения о том, когда следует использовать расширенные свойства или открытые расширения и как задавать расширенные свойства, см. в статье [Обзор расширенных свойств](../resources/extended-properties-overview.md).</span><span class="sxs-lookup"><span data-stu-id="8095f-125">See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use open extensions or extended properties, and how to specify extended properties.</span></span>
+- <span data-ttu-id="48a96-123">[calendar](../resources/calendar.md) для групп;</span><span class="sxs-lookup"><span data-stu-id="48a96-123">group [calendar](../resources/calendar.md)</span></span>
+- <span data-ttu-id="48a96-124">group [event](../resources/event.md);</span><span class="sxs-lookup"><span data-stu-id="48a96-124">group [event](../resources/event.md)</span></span>
+- <span data-ttu-id="48a96-125">[post](../resources/post.md) для групп.</span><span class="sxs-lookup"><span data-stu-id="48a96-125">group [post](../resources/post.md)</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="8095f-126">Разрешения</span><span class="sxs-lookup"><span data-stu-id="8095f-126">Permissions</span></span>
-<span data-ttu-id="8095f-127">В зависимости от ресурса, из которого вы получаете расширенное свойство, а также от запрашиваемого типа разрешения (делегированного или приложения), для вызова этого API требуется минимум разрешение, указанное в следующей таблице.</span><span class="sxs-lookup"><span data-stu-id="8095f-127">Depending on the resource you're getting the extended property from and the permission type (delegated or application) you request, the permission specified in the following table is the minimum required to call this API.</span></span> <span data-ttu-id="8095f-128">Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8095f-128">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="48a96-126">Дополнительные сведения о том, когда следует использовать расширенные свойства или открытые расширения и как задавать расширенные свойства, см. в статье [Обзор расширенных свойств](../resources/extended-properties-overview.md).</span><span class="sxs-lookup"><span data-stu-id="48a96-126">See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use open extensions or extended properties, and how to specify extended properties.</span></span>
 
-| <span data-ttu-id="8095f-129">Поддерживаемый ресурс</span><span class="sxs-lookup"><span data-stu-id="8095f-129">Supported resource</span></span> | <span data-ttu-id="8095f-130">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8095f-130">Delegated (work or school account)</span></span> | <span data-ttu-id="8095f-131">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8095f-131">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8095f-132">Для приложений</span><span class="sxs-lookup"><span data-stu-id="8095f-132">Application</span></span> |
+## <a name="permissions"></a><span data-ttu-id="48a96-127">Разрешения</span><span class="sxs-lookup"><span data-stu-id="48a96-127">Permissions</span></span>
+<span data-ttu-id="48a96-128">В зависимости от ресурса, из которого вы получаете расширенное свойство, а также от запрашиваемого типа разрешения (делегированного или приложения), для вызова этого API требуется минимум разрешение, указанное в следующей таблице.</span><span class="sxs-lookup"><span data-stu-id="48a96-128">Depending on the resource you're getting the extended property from and the permission type (delegated or application) you request, the permission specified in the following table is the minimum required to call this API.</span></span> <span data-ttu-id="48a96-129">Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="48a96-129">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+| <span data-ttu-id="48a96-130">Поддерживаемый ресурс</span><span class="sxs-lookup"><span data-stu-id="48a96-130">Supported resource</span></span> | <span data-ttu-id="48a96-131">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="48a96-131">Delegated (work or school account)</span></span> | <span data-ttu-id="48a96-132">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="48a96-132">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="48a96-133">Для приложений</span><span class="sxs-lookup"><span data-stu-id="48a96-133">Application</span></span> |
 |:-----|:-----|:-----|:-----|
-| [<span data-ttu-id="8095f-133">calendar</span><span class="sxs-lookup"><span data-stu-id="8095f-133">calendar</span></span>](../resources/calendar.md) | <span data-ttu-id="8095f-134">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="8095f-134">Calendars.Read</span></span> | <span data-ttu-id="8095f-135">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="8095f-135">Calendars.Read</span></span> | <span data-ttu-id="8095f-136">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="8095f-136">Calendars.Read</span></span> |
-| [<span data-ttu-id="8095f-137">contact</span><span class="sxs-lookup"><span data-stu-id="8095f-137">contact</span></span>](../resources/contact.md) | <span data-ttu-id="8095f-138">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="8095f-138">Contacts.Read</span></span> | <span data-ttu-id="8095f-139">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="8095f-139">Contacts.Read</span></span> | <span data-ttu-id="8095f-140">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="8095f-140">Contacts.Read</span></span> |
-| <span data-ttu-id="8095f-141">[contactFolder](../resources/contactfolder.md).</span><span class="sxs-lookup"><span data-stu-id="8095f-141">[contactFolder](../resources/contactfolder.md)</span></span> | <span data-ttu-id="8095f-142">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="8095f-142">Contacts.Read</span></span> | <span data-ttu-id="8095f-143">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="8095f-143">Contacts.Read</span></span> | <span data-ttu-id="8095f-144">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="8095f-144">Contacts.Read</span></span> |
-| [<span data-ttu-id="8095f-145">event</span><span class="sxs-lookup"><span data-stu-id="8095f-145">event</span></span>](../resources/event.md) | <span data-ttu-id="8095f-146">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="8095f-146">Calendars.Read</span></span> | <span data-ttu-id="8095f-147">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="8095f-147">Calendars.Read</span></span> |  <span data-ttu-id="8095f-148">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="8095f-148">Calendars.Read</span></span>|
-| <span data-ttu-id="8095f-149">[calendar](../resources/calendar.md) для групп;</span><span class="sxs-lookup"><span data-stu-id="8095f-149">group [calendar](../resources/calendar.md)</span></span> | <span data-ttu-id="8095f-150">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="8095f-150">Group.Read.All</span></span> | <span data-ttu-id="8095f-151">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="8095f-151">Not supported</span></span> | <span data-ttu-id="8095f-152">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="8095f-152">Not supported</span></span> |
-| <span data-ttu-id="8095f-153">group [event](../resources/event.md);</span><span class="sxs-lookup"><span data-stu-id="8095f-153">group [event](../resources/event.md)</span></span> | <span data-ttu-id="8095f-154">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="8095f-154">Group.Read.All</span></span> | <span data-ttu-id="8095f-155">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="8095f-155">Not supported</span></span> | <span data-ttu-id="8095f-156">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="8095f-156">Not supported</span></span> |
-| <span data-ttu-id="8095f-157">[post](../resources/post.md) для групп.</span><span class="sxs-lookup"><span data-stu-id="8095f-157">group [post](../resources/post.md)</span></span> | <span data-ttu-id="8095f-158">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="8095f-158">Group.Read.All</span></span> | <span data-ttu-id="8095f-159">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="8095f-159">Not supported</span></span> | <span data-ttu-id="8095f-160">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="8095f-160">Group.Read.All</span></span> |
-| [<span data-ttu-id="8095f-161">mailFolder</span><span class="sxs-lookup"><span data-stu-id="8095f-161">mailFolder</span></span>](../resources/mailfolder.md) | <span data-ttu-id="8095f-162">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="8095f-162">Mail.Read</span></span> | <span data-ttu-id="8095f-163">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="8095f-163">Mail.Read</span></span> | <span data-ttu-id="8095f-164">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="8095f-164">Mail.Read</span></span> |
-| [<span data-ttu-id="8095f-165">message</span><span class="sxs-lookup"><span data-stu-id="8095f-165">message</span></span>](../resources/message.md) | <span data-ttu-id="8095f-166">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="8095f-166">Mail.Read</span></span> | <span data-ttu-id="8095f-167">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="8095f-167">Mail.Read</span></span> | <span data-ttu-id="8095f-168">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="8095f-168">Mail.Read</span></span> |
+| [<span data-ttu-id="48a96-134">calendar</span><span class="sxs-lookup"><span data-stu-id="48a96-134">calendar</span></span>](../resources/calendar.md) | <span data-ttu-id="48a96-135">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="48a96-135">Calendars.Read</span></span> | <span data-ttu-id="48a96-136">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="48a96-136">Calendars.Read</span></span> | <span data-ttu-id="48a96-137">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="48a96-137">Calendars.Read</span></span> |
+| [<span data-ttu-id="48a96-138">contact</span><span class="sxs-lookup"><span data-stu-id="48a96-138">contact</span></span>](../resources/contact.md) | <span data-ttu-id="48a96-139">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="48a96-139">Contacts.Read</span></span> | <span data-ttu-id="48a96-140">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="48a96-140">Contacts.Read</span></span> | <span data-ttu-id="48a96-141">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="48a96-141">Contacts.Read</span></span> |
+| [<span data-ttu-id="48a96-142">contactFolder</span><span class="sxs-lookup"><span data-stu-id="48a96-142">contactFolder</span></span>](../resources/contactfolder.md) | <span data-ttu-id="48a96-143">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="48a96-143">Contacts.Read</span></span> | <span data-ttu-id="48a96-144">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="48a96-144">Contacts.Read</span></span> | <span data-ttu-id="48a96-145">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="48a96-145">Contacts.Read</span></span> |
+| [<span data-ttu-id="48a96-146">event</span><span class="sxs-lookup"><span data-stu-id="48a96-146">event</span></span>](../resources/event.md) | <span data-ttu-id="48a96-147">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="48a96-147">Calendars.Read</span></span> | <span data-ttu-id="48a96-148">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="48a96-148">Calendars.Read</span></span> |  <span data-ttu-id="48a96-149">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="48a96-149">Calendars.Read</span></span>|
+| <span data-ttu-id="48a96-150">[calendar](../resources/calendar.md) для групп;</span><span class="sxs-lookup"><span data-stu-id="48a96-150">group [calendar](../resources/calendar.md)</span></span> | <span data-ttu-id="48a96-151">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="48a96-151">Group.Read.All</span></span> | <span data-ttu-id="48a96-152">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="48a96-152">Not supported</span></span> | <span data-ttu-id="48a96-153">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="48a96-153">Not supported</span></span> |
+| <span data-ttu-id="48a96-154">group [event](../resources/event.md);</span><span class="sxs-lookup"><span data-stu-id="48a96-154">group [event](../resources/event.md)</span></span> | <span data-ttu-id="48a96-155">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="48a96-155">Group.Read.All</span></span> | <span data-ttu-id="48a96-156">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="48a96-156">Not supported</span></span> | <span data-ttu-id="48a96-157">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="48a96-157">Not supported</span></span> |
+| <span data-ttu-id="48a96-158">[post](../resources/post.md) для групп.</span><span class="sxs-lookup"><span data-stu-id="48a96-158">group [post](../resources/post.md)</span></span> | <span data-ttu-id="48a96-159">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="48a96-159">Group.Read.All</span></span> | <span data-ttu-id="48a96-160">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="48a96-160">Not supported</span></span> | <span data-ttu-id="48a96-161">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="48a96-161">Group.Read.All</span></span> |
+| [<span data-ttu-id="48a96-162">mailFolder</span><span class="sxs-lookup"><span data-stu-id="48a96-162">mailFolder</span></span>](../resources/mailfolder.md) | <span data-ttu-id="48a96-163">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="48a96-163">Mail.Read</span></span> | <span data-ttu-id="48a96-164">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="48a96-164">Mail.Read</span></span> | <span data-ttu-id="48a96-165">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="48a96-165">Mail.Read</span></span> |
+| [<span data-ttu-id="48a96-166">message</span><span class="sxs-lookup"><span data-stu-id="48a96-166">message</span></span>](../resources/message.md) | <span data-ttu-id="48a96-167">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="48a96-167">Mail.Read</span></span> | <span data-ttu-id="48a96-168">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="48a96-168">Mail.Read</span></span> | <span data-ttu-id="48a96-169">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="48a96-169">Mail.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8095f-169">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8095f-169">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="48a96-170">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="48a96-170">HTTP request</span></span>
 
-#### <a name="get-a-resource-instance-expanded-with-an-extended-property-that-matches-a-filter"></a><span data-ttu-id="8095f-170">Получение экземпляра ресурса, дополненного расширенным свойством, которое соответствует фильтру</span><span class="sxs-lookup"><span data-stu-id="8095f-170">GET a resource instance expanded with an extended property that matches a filter</span></span>
-<span data-ttu-id="8095f-p105">Вы можете получить экземпляр ресурса, дополненный расширенным свойством, которое совпадает с фильтром в свойстве **id**. Убедитесь, что вы применяете [кодировку URL](https://www.w3schools.com/tags/ref_urlencode.asp) для символов пробелов в строке фильтра.</span><span class="sxs-lookup"><span data-stu-id="8095f-p105">Get a resource instance expanded with the extended property which matches a filter on the **id** property. Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the filter string.</span></span>
+#### <a name="get-a-resource-instance-expanded-with-an-extended-property-that-matches-a-filter"></a><span data-ttu-id="48a96-171">Получение экземпляра ресурса, дополненного расширенным свойством, которое соответствует фильтру</span><span class="sxs-lookup"><span data-stu-id="48a96-171">GET a resource instance expanded with an extended property that matches a filter</span></span>
+<span data-ttu-id="48a96-p105">Вы можете получить экземпляр ресурса, дополненный расширенным свойством, которое совпадает с фильтром в свойстве **id**. Убедитесь, что вы применяете [кодировку URL](https://www.w3schools.com/tags/ref_urlencode.asp) для символов пробелов в строке фильтра.</span><span class="sxs-lookup"><span data-stu-id="48a96-p105">Get a resource instance expanded with the extended property which matches a filter on the **id** property. Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the filter string.</span></span>
 
-<span data-ttu-id="8095f-173">Получение экземпляра объекта **message**:</span><span class="sxs-lookup"><span data-stu-id="8095f-173">Get a **message** instance:</span></span>
+<span data-ttu-id="48a96-174">Получение экземпляра объекта **message**:</span><span class="sxs-lookup"><span data-stu-id="48a96-174">Get a **message** instance:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/mailFolders/{id}/messages/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-<span data-ttu-id="8095f-174">Получение экземпляра объекта **mailFolder**:</span><span class="sxs-lookup"><span data-stu-id="8095f-174">Get a **mailFolder** instance:</span></span>
+<span data-ttu-id="48a96-175">Получение экземпляра объекта **mailFolder**:</span><span class="sxs-lookup"><span data-stu-id="48a96-175">Get a **mailFolder** instance:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-<span data-ttu-id="8095f-175">Получение экземпляра объекта **event**:</span><span class="sxs-lookup"><span data-stu-id="8095f-175">Get an **event** instance:</span></span>
+<span data-ttu-id="48a96-176">Получение экземпляра объекта **event**:</span><span class="sxs-lookup"><span data-stu-id="48a96-176">Get an **event** instance:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-<span data-ttu-id="8095f-176">Получение экземпляра объекта **calendar**:</span><span class="sxs-lookup"><span data-stu-id="8095f-176">Get a **calendar** instance:</span></span>
+<span data-ttu-id="48a96-177">Получение экземпляра объекта **calendar**:</span><span class="sxs-lookup"><span data-stu-id="48a96-177">Get a **calendar** instance:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/calendars/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-<span data-ttu-id="8095f-177">Получение экземпляра объекта **contact**:</span><span class="sxs-lookup"><span data-stu-id="8095f-177">Get a **contact** instance:</span></span>
+<span data-ttu-id="48a96-178">Получение экземпляра объекта **contact**:</span><span class="sxs-lookup"><span data-stu-id="48a96-178">Get a **contact** instance:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
@@ -95,58 +97,58 @@ GET /users/{id|userPrincipalName}/contacts/{id}?$expand=singleValueExtendedPrope
 GET /me/contactFolders/{id}/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-<span data-ttu-id="8095f-178">Получение экземпляра объекта **contactFolder**:</span><span class="sxs-lookup"><span data-stu-id="8095f-178">Get a **contactFolder** instance:</span></span>
+<span data-ttu-id="48a96-179">Получение экземпляра объекта **contactFolder**:</span><span class="sxs-lookup"><span data-stu-id="48a96-179">Get a **contactFolder** instance:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactfolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
-<span data-ttu-id="8095f-179">Получение экземпляра объекта **event** для группы:</span><span class="sxs-lookup"><span data-stu-id="8095f-179">Get a group **event** instance:</span></span>
+<span data-ttu-id="48a96-180">Получение экземпляра объекта **event** для группы:</span><span class="sxs-lookup"><span data-stu-id="48a96-180">Get a group **event** instance:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-<span data-ttu-id="8095f-180">Получение экземпляра объекта **post** для группы:</span><span class="sxs-lookup"><span data-stu-id="8095f-180">Get a group **post** instance:</span></span>
+<span data-ttu-id="48a96-181">Получение экземпляра объекта **post** для группы:</span><span class="sxs-lookup"><span data-stu-id="48a96-181">Get a group **post** instance:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-#### <a name="get-resource-instances-that-include-numeric-extended-properties-matching-a-filter"></a><span data-ttu-id="8095f-181">Получение экземпляров ресурсов с числовыми расширенными свойствами, которые соответствуют фильтру</span><span class="sxs-lookup"><span data-stu-id="8095f-181">GET resource instances that include numeric extended properties matching a filter</span></span>
+#### <a name="get-resource-instances-that-include-numeric-extended-properties-matching-a-filter"></a><span data-ttu-id="48a96-182">Получение экземпляров ресурсов с числовыми расширенными свойствами, которые соответствуют фильтру</span><span class="sxs-lookup"><span data-stu-id="48a96-182">GET resource instances that include numeric extended properties matching a filter</span></span>
 
-<span data-ttu-id="8095f-182">Получите экземпляры поддерживаемого ресурса с расширенным свойством, соответствующим фильтру.</span><span class="sxs-lookup"><span data-stu-id="8095f-182">Get instances of a supported resource that have a numeric extended property matching a filter.</span></span> <span data-ttu-id="8095f-183">В случае фильтра используется оператор `eq` для свойства **id**, а также применяется один из следующих операторов для свойства **value**: `eq`, `ne`, `ge`, `gt`, `le` или `lt`.</span><span class="sxs-lookup"><span data-stu-id="8095f-183">The filter uses an `eq` operator on the **id** property, and one of the following operators on the **value** property: `eq`, `ne`,`ge`, `gt`, `le`, or `lt`.</span></span> <span data-ttu-id="8095f-184">Применяйте [кодировку URL](https://www.w3schools.com/tags/ref_urlencode.asp) для следующих символов в строке фильтра: двоеточие, косая черта и пробел.</span><span class="sxs-lookup"><span data-stu-id="8095f-184">Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the following characters in the filter string - colon, forward slash, and space.</span></span>
+<span data-ttu-id="48a96-183">Получите экземпляры поддерживаемого ресурса с расширенным свойством, соответствующим фильтру.</span><span class="sxs-lookup"><span data-stu-id="48a96-183">Get instances of a supported resource that have a numeric extended property matching a filter.</span></span> <span data-ttu-id="48a96-184">В случае фильтра используется оператор `eq` для свойства **id**, а также применяется один из следующих операторов для свойства **value**: `eq`, `ne`, `ge`, `gt`, `le` или `lt`.</span><span class="sxs-lookup"><span data-stu-id="48a96-184">The filter uses an `eq` operator on the **id** property, and one of the following operators on the **value** property: `eq`, `ne`,`ge`, `gt`, `le`, or `lt`.</span></span> <span data-ttu-id="48a96-185">Применяйте [кодировку URL](https://www.w3schools.com/tags/ref_urlencode.asp) для следующих символов в строке фильтра: двоеточие, косая черта и пробел.</span><span class="sxs-lookup"><span data-stu-id="48a96-185">Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the following characters in the filter string - colon, forward slash, and space.</span></span>
 
-<span data-ttu-id="8095f-185">В приведенных ниже строках синтаксиса показан фильтр, в случае которого один оператор `eq` используется для свойства id, а другой оператор `eq` — для свойства value.</span><span class="sxs-lookup"><span data-stu-id="8095f-185">The following syntax lines show a filter that uses an `eq` operator on the id, and another `eq` operator on the property value.</span></span> <span data-ttu-id="8095f-186">Вы можете заменить оператор `eq` для свойства **value** любым из других операторов (`ne`, `ge`, `gt`, `le` или `lt`), которые применяются к числовым значениям.</span><span class="sxs-lookup"><span data-stu-id="8095f-186">You can substitute the `eq` operator on the **value** by any one of the other operators (`ne`,`ge`, `gt`, `le`, or `lt`) that apply to numeric values.</span></span>
+<span data-ttu-id="48a96-186">В приведенных ниже строках синтаксиса показан фильтр, в случае которого один оператор `eq` используется для свойства id, а другой оператор `eq` — для свойства value.</span><span class="sxs-lookup"><span data-stu-id="48a96-186">The following syntax lines show a filter that uses an `eq` operator on the id, and another `eq` operator on the property value.</span></span> <span data-ttu-id="48a96-187">Вы можете заменить оператор `eq` для свойства **value** любым из других операторов (`ne`, `ge`, `gt`, `le` или `lt`), которые применяются к числовым значениям.</span><span class="sxs-lookup"><span data-stu-id="48a96-187">You can substitute the `eq` operator on the **value** by any one of the other operators (`ne`,`ge`, `gt`, `le`, or `lt`) that apply to numeric values.</span></span>
 
-<span data-ttu-id="8095f-187">Получение экземпляров объекта **message**:</span><span class="sxs-lookup"><span data-stu-id="8095f-187">Get **message** instances:</span></span>
+<span data-ttu-id="48a96-188">Получение экземпляров объекта **message**:</span><span class="sxs-lookup"><span data-stu-id="48a96-188">Get **message** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-<span data-ttu-id="8095f-188">Получение экземпляров объекта **mailFolder**:</span><span class="sxs-lookup"><span data-stu-id="8095f-188">Get **mailFolder** instances:</span></span>
+<span data-ttu-id="48a96-189">Получение экземпляров объекта **mailFolder**:</span><span class="sxs-lookup"><span data-stu-id="48a96-189">Get **mailFolder** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/mailFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
-<span data-ttu-id="8095f-189">Список экземпляров объекта **event**:</span><span class="sxs-lookup"><span data-stu-id="8095f-189">Get **event** instances:</span></span>
+<span data-ttu-id="48a96-190">Список экземпляров объекта **event**:</span><span class="sxs-lookup"><span data-stu-id="48a96-190">Get **event** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-<span data-ttu-id="8095f-190">Получение экземпляров объекта **calendar**:</span><span class="sxs-lookup"><span data-stu-id="8095f-190">Get **calendar** instances:</span></span>
+<span data-ttu-id="48a96-191">Получение экземпляров объекта **calendar**:</span><span class="sxs-lookup"><span data-stu-id="48a96-191">Get **calendar** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/calendars?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-<span data-ttu-id="8095f-191">Получение экземпляров объекта **contact**:</span><span class="sxs-lookup"><span data-stu-id="8095f-191">Get **contact** instances:</span></span>
+<span data-ttu-id="48a96-192">Получение экземпляров объекта **contact**:</span><span class="sxs-lookup"><span data-stu-id="48a96-192">Get **contact** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
@@ -154,31 +156,31 @@ GET /users/{id|userPrincipalName}/contacts?$filter=singleValueExtendedProperties
 GET /me/contactFolders/{id}/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-<span data-ttu-id="8095f-192">Получение экземпляров объекта **contactFolder**:</span><span class="sxs-lookup"><span data-stu-id="8095f-192">Get **contactFolder** instances:</span></span>
+<span data-ttu-id="48a96-193">Получение экземпляров объекта **contactFolder**:</span><span class="sxs-lookup"><span data-stu-id="48a96-193">Get **contactFolder** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactfolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /users/{id|userPrincipalName}/contactFolders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
-<span data-ttu-id="8095f-193">Получение экземпляров объекта **event** для группы:</span><span class="sxs-lookup"><span data-stu-id="8095f-193">Get group **event** instances:</span></span>
+<span data-ttu-id="48a96-194">Получение экземпляров объекта **event** для группы:</span><span class="sxs-lookup"><span data-stu-id="48a96-194">Get group **event** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
-<span data-ttu-id="8095f-194">Получение экземпляров объекта **post** для группы:</span><span class="sxs-lookup"><span data-stu-id="8095f-194">Get group **post** instances:</span></span>
+<span data-ttu-id="48a96-195">Получение экземпляров объекта **post** для группы:</span><span class="sxs-lookup"><span data-stu-id="48a96-195">Get group **post** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /groups/{id}/conversations/{id}/threads/{id}/posts?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 ```
 
-#### <a name="get-resource-instances-with-string-typed-extended-properties-matching-a-filter"></a><span data-ttu-id="8095f-195">Получение экземпляров ресурсов с расширенными свойствами строкового типа, которые соответствуют фильтру</span><span class="sxs-lookup"><span data-stu-id="8095f-195">GET resource instances with string-typed extended properties matching a filter</span></span>
+#### <a name="get-resource-instances-with-string-typed-extended-properties-matching-a-filter"></a><span data-ttu-id="48a96-196">Получение экземпляров ресурсов с расширенными свойствами строкового типа, которые соответствуют фильтру</span><span class="sxs-lookup"><span data-stu-id="48a96-196">GET resource instances with string-typed extended properties matching a filter</span></span>
 
-<span data-ttu-id="8095f-196">Получите экземпляры ресурса **message** или **event**, которые включают расширенное свойство строкового типа, соответствующее фильтру.</span><span class="sxs-lookup"><span data-stu-id="8095f-196">Get instances of the **message** or **event** resource that have a string-typed extended property matching a filter.</span></span> <span data-ttu-id="8095f-197">В случае фильтра используется оператор `eq` для свойства **id**, а также применяется один из следующих операторов для свойства **value**: `contains`, `startswith`, `eq` или `ne`.</span><span class="sxs-lookup"><span data-stu-id="8095f-197">The filter uses an `eq` operator on the **id** property, and one of the following operators on the **value** property: `contains`, `startswith`, `eq`, or `ne`.</span></span> <span data-ttu-id="8095f-198">Применяйте [кодировку URL](https://www.w3schools.com/tags/ref_urlencode.asp) для следующих символов в строке фильтра: двоеточие, косая черта и пробел.</span><span class="sxs-lookup"><span data-stu-id="8095f-198">Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the following characters in the filter string - colon, forward slash, and space.</span></span>
+<span data-ttu-id="48a96-197">Получите экземпляры ресурса **message** или **event**, которые включают расширенное свойство строкового типа, соответствующее фильтру.</span><span class="sxs-lookup"><span data-stu-id="48a96-197">Get instances of the **message** or **event** resource that have a string-typed extended property matching a filter.</span></span> <span data-ttu-id="48a96-198">В случае фильтра используется оператор `eq` для свойства **id**, а также применяется один из следующих операторов для свойства **value**: `contains`, `startswith`, `eq` или `ne`.</span><span class="sxs-lookup"><span data-stu-id="48a96-198">The filter uses an `eq` operator on the **id** property, and one of the following operators on the **value** property: `contains`, `startswith`, `eq`, or `ne`.</span></span> <span data-ttu-id="48a96-199">Применяйте [кодировку URL](https://www.w3schools.com/tags/ref_urlencode.asp) для следующих символов в строке фильтра: двоеточие, косая черта и пробел.</span><span class="sxs-lookup"><span data-stu-id="48a96-199">Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the following characters in the filter string - colon, forward slash, and space.</span></span>
 
 
-<span data-ttu-id="8095f-199">Получение экземпляров объекта **message**:</span><span class="sxs-lookup"><span data-stu-id="8095f-199">Get **message** instances:</span></span>
+<span data-ttu-id="48a96-200">Получение экземпляров объекта **message**:</span><span class="sxs-lookup"><span data-stu-id="48a96-200">Get **message** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
@@ -198,7 +200,7 @@ GET /users/{id|userPrincipalName}/messages?$filter=singleValueExtendedProperties
 GET /me/mailFolders/{id}/messages?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
 ```
 
-<span data-ttu-id="8095f-200">Получение экземпляров объекта **event**:</span><span class="sxs-lookup"><span data-stu-id="8095f-200">Get **event** instances:</span></span>
+<span data-ttu-id="48a96-201">Получение экземпляров объекта **event**:</span><span class="sxs-lookup"><span data-stu-id="48a96-201">Get **event** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
@@ -214,7 +216,7 @@ GET /me/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value
 GET /users/{id|userPrincipalName}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
 ```
 
-<span data-ttu-id="8095f-201">Получение экземпляров объекта **event** для группы:</span><span class="sxs-lookup"><span data-stu-id="8095f-201">Get group **event** instances:</span></span>
+<span data-ttu-id="48a96-202">Получение экземпляров объекта **event** для группы:</span><span class="sxs-lookup"><span data-stu-id="48a96-202">Get group **event** instances:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and contains(ep/value, '{property_value}'))
@@ -223,37 +225,37 @@ GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '
 GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value ne '{property_value}')
 ```
 
-## <a name="path-parameters"></a><span data-ttu-id="8095f-202">Параметры пути</span><span class="sxs-lookup"><span data-stu-id="8095f-202">Path parameters</span></span>
-|<span data-ttu-id="8095f-203">Параметр</span><span class="sxs-lookup"><span data-stu-id="8095f-203">Parameter</span></span>|<span data-ttu-id="8095f-204">Тип</span><span class="sxs-lookup"><span data-stu-id="8095f-204">Type</span></span>|<span data-ttu-id="8095f-205">Описание</span><span class="sxs-lookup"><span data-stu-id="8095f-205">Description</span></span>|
+## <a name="path-parameters"></a><span data-ttu-id="48a96-203">Параметры пути</span><span class="sxs-lookup"><span data-stu-id="48a96-203">Path parameters</span></span>
+|<span data-ttu-id="48a96-204">Параметр</span><span class="sxs-lookup"><span data-stu-id="48a96-204">Parameter</span></span>|<span data-ttu-id="48a96-205">Тип</span><span class="sxs-lookup"><span data-stu-id="48a96-205">Type</span></span>|<span data-ttu-id="48a96-206">Описание</span><span class="sxs-lookup"><span data-stu-id="48a96-206">Description</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="8095f-206">id_value</span><span class="sxs-lookup"><span data-stu-id="8095f-206">id_value</span></span>|<span data-ttu-id="8095f-207">String.</span><span class="sxs-lookup"><span data-stu-id="8095f-207">String</span></span>|<span data-ttu-id="8095f-p109">Идентификатор сопоставляемого расширенного свойства. Свойство должно относиться к одному из поддерживаемых форматов. Дополнительные сведения см. в статье [Обзор расширенных свойств Outlook](../resources/extended-properties-overview.md). Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8095f-p109">The ID of the extended property to match. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.</span></span>|
-|<span data-ttu-id="8095f-212">property_value</span><span class="sxs-lookup"><span data-stu-id="8095f-212">property_value</span></span> |<span data-ttu-id="8095f-213">String</span><span class="sxs-lookup"><span data-stu-id="8095f-213">String</span></span>|<span data-ttu-id="8095f-214">Значение сопоставляемого расширенного свойства.</span><span class="sxs-lookup"><span data-stu-id="8095f-214">The value of the extended property to match.</span></span> <span data-ttu-id="8095f-215">Его необходимо указывать, если этот параметр указан для соответствующего сценария в разделе **HTTP-запрос** выше.</span><span class="sxs-lookup"><span data-stu-id="8095f-215">Required where listed in the **HTTP request** section above.</span></span> <span data-ttu-id="8095f-216">Если параметр {property_value} не является строкой, явно приведите `ep/value` к правильному типу данных Edm при сравнении с параметром {property_value}.</span><span class="sxs-lookup"><span data-stu-id="8095f-216">If {property_value} is not a string, make sure you explicitly cast `ep/value` to the appropriate Edm data type when comparing it with {property_value}.</span></span> <span data-ttu-id="8095f-217">Примеры см. в разделе [Запрос 4](#request-4).</span><span class="sxs-lookup"><span data-stu-id="8095f-217">See [request 4](#request-4) below for examples.</span></span> |
+|<span data-ttu-id="48a96-207">id_value</span><span class="sxs-lookup"><span data-stu-id="48a96-207">id_value</span></span>|<span data-ttu-id="48a96-208">Строка</span><span class="sxs-lookup"><span data-stu-id="48a96-208">String</span></span>|<span data-ttu-id="48a96-p109">Идентификатор сопоставляемого расширенного свойства. Свойство должно относиться к одному из поддерживаемых форматов. Дополнительные сведения см. в статье [Обзор расширенных свойств Outlook](../resources/extended-properties-overview.md). Обязательный.</span><span class="sxs-lookup"><span data-stu-id="48a96-p109">The ID of the extended property to match. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.</span></span>|
+|<span data-ttu-id="48a96-213">property_value</span><span class="sxs-lookup"><span data-stu-id="48a96-213">property_value</span></span> |<span data-ttu-id="48a96-214">String</span><span class="sxs-lookup"><span data-stu-id="48a96-214">String</span></span>|<span data-ttu-id="48a96-215">Значение сопоставляемого расширенного свойства.</span><span class="sxs-lookup"><span data-stu-id="48a96-215">The value of the extended property to match.</span></span> <span data-ttu-id="48a96-216">Его необходимо указывать, если этот параметр указан для соответствующего сценария в разделе **HTTP-запрос** выше.</span><span class="sxs-lookup"><span data-stu-id="48a96-216">Required where listed in the **HTTP request** section above.</span></span> <span data-ttu-id="48a96-217">Если параметр {property_value} не является строкой, явно приведите `ep/value` к правильному типу данных Edm при сравнении с параметром {property_value}.</span><span class="sxs-lookup"><span data-stu-id="48a96-217">If {property_value} is not a string, make sure you explicitly cast `ep/value` to the appropriate Edm data type when comparing it with {property_value}.</span></span> <span data-ttu-id="48a96-218">Примеры см. в разделе [Запрос 4](#request-4).</span><span class="sxs-lookup"><span data-stu-id="48a96-218">See [request 4](#request-4) below for examples.</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="8095f-218">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="8095f-218">Request headers</span></span>
-| <span data-ttu-id="8095f-219">Имя</span><span class="sxs-lookup"><span data-stu-id="8095f-219">Name</span></span>      |<span data-ttu-id="8095f-220">Описание</span><span class="sxs-lookup"><span data-stu-id="8095f-220">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="48a96-219">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="48a96-219">Request headers</span></span>
+| <span data-ttu-id="48a96-220">Имя</span><span class="sxs-lookup"><span data-stu-id="48a96-220">Name</span></span>      |<span data-ttu-id="48a96-221">Описание</span><span class="sxs-lookup"><span data-stu-id="48a96-221">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="8095f-221">Авторизация</span><span class="sxs-lookup"><span data-stu-id="8095f-221">Authorization</span></span>  | <span data-ttu-id="8095f-p111">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8095f-p111">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="48a96-222">Авторизация</span><span class="sxs-lookup"><span data-stu-id="48a96-222">Authorization</span></span>  | <span data-ttu-id="48a96-p111">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="48a96-p111">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="8095f-224">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="8095f-224">Request body</span></span>
-<span data-ttu-id="8095f-225">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="8095f-225">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="48a96-225">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="48a96-225">Request body</span></span>
+<span data-ttu-id="48a96-226">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="48a96-226">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8095f-226">Отклик</span><span class="sxs-lookup"><span data-stu-id="8095f-226">Response</span></span>
+## <a name="response"></a><span data-ttu-id="48a96-227">Отклик</span><span class="sxs-lookup"><span data-stu-id="48a96-227">Response</span></span>
 
-<span data-ttu-id="8095f-227">В случае успешного выполнения этот метод возвращает код отклика `200 OK`.</span><span class="sxs-lookup"><span data-stu-id="8095f-227">If successful, this method returns a `200 OK` response code.</span></span>
+<span data-ttu-id="48a96-228">В случае успешного выполнения этот метод возвращает код отклика `200 OK`.</span><span class="sxs-lookup"><span data-stu-id="48a96-228">If successful, this method returns a `200 OK` response code.</span></span>
 
-#### <a name="get-resource-instance-expanded-with-a-matching-extended-property"></a><span data-ttu-id="8095f-228">Получение экземпляра ресурса с соответствующим расширенным свойством</span><span class="sxs-lookup"><span data-stu-id="8095f-228">GET resource instance expanded with a matching extended property</span></span>
-<span data-ttu-id="8095f-229">Тело отклика содержит объект, который представляет запрашиваемый экземпляр ресурса, дополненный соответствующим объектом [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md).</span><span class="sxs-lookup"><span data-stu-id="8095f-229">The response body includes an object representing the requested resource instance, expanded with the matching [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) object.</span></span>
+#### <a name="get-resource-instance-expanded-with-a-matching-extended-property"></a><span data-ttu-id="48a96-229">Получение экземпляра ресурса с соответствующим расширенным свойством</span><span class="sxs-lookup"><span data-stu-id="48a96-229">GET resource instance expanded with a matching extended property</span></span>
+<span data-ttu-id="48a96-230">Тело отклика содержит объект, который представляет запрашиваемый экземпляр ресурса, дополненный соответствующим объектом [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md).</span><span class="sxs-lookup"><span data-stu-id="48a96-230">The response body includes an object representing the requested resource instance, expanded with the matching [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) object.</span></span>
   
-#### <a name="get-resource-instances-that-contain-an-extended-property-matching-a-filter"></a><span data-ttu-id="8095f-230">Получение экземпляров ресурсов с расширенным свойством, которое соответствует фильтру</span><span class="sxs-lookup"><span data-stu-id="8095f-230">GET resource instances that contain an extended property matching a filter</span></span>
-<span data-ttu-id="8095f-231">Тело отклика содержит один или несколько объектов, представляющих экземпляры ресурсов, которые содержат соответствующее расширенное свойство.</span><span class="sxs-lookup"><span data-stu-id="8095f-231">The response body includes one or more objects representing the resource instances that contain a matching extended property.</span></span> <span data-ttu-id="8095f-232">Тело отклика не включает расширенное свойство.</span><span class="sxs-lookup"><span data-stu-id="8095f-232">The response body does not include the extended property.</span></span>
+#### <a name="get-resource-instances-that-contain-an-extended-property-matching-a-filter"></a><span data-ttu-id="48a96-231">Получение экземпляров ресурсов с расширенным свойством, которое соответствует фильтру</span><span class="sxs-lookup"><span data-stu-id="48a96-231">GET resource instances that contain an extended property matching a filter</span></span>
+<span data-ttu-id="48a96-232">Тело отклика содержит один или несколько объектов, представляющих экземпляры ресурсов, которые содержат соответствующее расширенное свойство.</span><span class="sxs-lookup"><span data-stu-id="48a96-232">The response body includes one or more objects representing the resource instances that contain a matching extended property.</span></span> <span data-ttu-id="48a96-233">Тело отклика не включает расширенное свойство.</span><span class="sxs-lookup"><span data-stu-id="48a96-233">The response body does not include the extended property.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8095f-233">Пример</span><span class="sxs-lookup"><span data-stu-id="8095f-233">Example</span></span>
-#### <a name="request-1"></a><span data-ttu-id="8095f-234">Запрос 1</span><span class="sxs-lookup"><span data-stu-id="8095f-234">Request 1</span></span>
+## <a name="example"></a><span data-ttu-id="48a96-234">Пример</span><span class="sxs-lookup"><span data-stu-id="48a96-234">Example</span></span>
+#### <a name="request-1"></a><span data-ttu-id="48a96-235">Запрос 1</span><span class="sxs-lookup"><span data-stu-id="48a96-235">Request 1</span></span>
 
-<span data-ttu-id="8095f-p113">В первом примере показано, как получить указанное сообщение и дополнить его расширенным свойством с одним значением. Фильтр возвращает расширенное свойство, значение **id** которого совпадает со строкой `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (для наглядности здесь убрана кодировка URL).</span><span class="sxs-lookup"><span data-stu-id="8095f-p113">The first example gets and expands the specified message by including a single-value extended property. The filter returns the extended property that has its **id** matching the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (with URL encoding removed here for ease of reading).</span></span>
+<span data-ttu-id="48a96-p113">В первом примере показано, как получить указанное сообщение и дополнить его расширенным свойством с одним значением. Фильтр возвращает расширенное свойство, значение **id** которого совпадает со строкой `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (для наглядности здесь убрана кодировка URL).</span><span class="sxs-lookup"><span data-stu-id="48a96-p113">The first example gets and expands the specified message by including a single-value extended property. The filter returns the extended property that has its **id** matching the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (with URL encoding removed here for ease of reading).</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="8095f-237">HTTP</span><span class="sxs-lookup"><span data-stu-id="8095f-237">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="48a96-238">HTTP</span><span class="sxs-lookup"><span data-stu-id="48a96-238">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGE1M2_bs88AACHsLqWAAA="],
@@ -262,28 +264,28 @@ GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2_bs88AACHsLqWAAA=?$expand=singleValueExtendedProperties($filter=id%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color')
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="8095f-238">C#</span><span class="sxs-lookup"><span data-stu-id="8095f-238">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="48a96-239">C#</span><span class="sxs-lookup"><span data-stu-id="48a96-239">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-singlevaluelegacyextendedproperty-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8095f-239">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8095f-239">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="48a96-240">JavaScript</span><span class="sxs-lookup"><span data-stu-id="48a96-240">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-singlevaluelegacyextendedproperty-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="8095f-240">Цель — C</span><span class="sxs-lookup"><span data-stu-id="8095f-240">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="48a96-241">Objective-C</span><span class="sxs-lookup"><span data-stu-id="48a96-241">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-singlevaluelegacyextendedproperty-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="8095f-241">Java</span><span class="sxs-lookup"><span data-stu-id="8095f-241">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="48a96-242">Java</span><span class="sxs-lookup"><span data-stu-id="48a96-242">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-singlevaluelegacyextendedproperty-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response-1"></a><span data-ttu-id="8095f-242">Отклик 1</span><span class="sxs-lookup"><span data-stu-id="8095f-242">Response 1</span></span>
-<span data-ttu-id="8095f-243">Текст отклика включает все свойства указанного сообщения и расширенное свойство, возвращенное из фильтра.</span><span class="sxs-lookup"><span data-stu-id="8095f-243">The response body includes all the properties of the specified message and extended property returned from the filter.</span></span>
+#### <a name="response-1"></a><span data-ttu-id="48a96-243">Отклик 1</span><span class="sxs-lookup"><span data-stu-id="48a96-243">Response 1</span></span>
+<span data-ttu-id="48a96-244">Текст отклика включает все свойства указанного сообщения и расширенное свойство, возвращенное из фильтра.</span><span class="sxs-lookup"><span data-stu-id="48a96-244">The response body includes all the properties of the specified message and extended property returned from the filter.</span></span>
 
-<span data-ttu-id="8095f-p114">Примечание. Показанный здесь объект **message** усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="8095f-p114">Note: The **message** object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="48a96-p114">Примечание. Показанный здесь объект **message** усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="48a96-p114">Note: The **message** object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -324,53 +326,53 @@ Content-type: application/json
 }
 ```
 
-#### <a name="request-2"></a><span data-ttu-id="8095f-246">Запрос 2</span><span class="sxs-lookup"><span data-stu-id="8095f-246">Request 2</span></span>
+#### <a name="request-2"></a><span data-ttu-id="48a96-247">Запрос 2</span><span class="sxs-lookup"><span data-stu-id="48a96-247">Request 2</span></span>
 
-<span data-ttu-id="8095f-247">Во втором примере показано, как получить сообщения с указанным в фильтре однозначным расширенным свойством типа string.</span><span class="sxs-lookup"><span data-stu-id="8095f-247">The second example gets messages that have the string-typed single-value extended property specified in the filter.</span></span> <span data-ttu-id="8095f-248">Фильтр ищет расширенное свойство со следующими параметрами:</span><span class="sxs-lookup"><span data-stu-id="8095f-248">The filter looks for the extended property that has:</span></span>
+<span data-ttu-id="48a96-248">Во втором примере показано, как получить сообщения с указанным в фильтре однозначным расширенным свойством типа string.</span><span class="sxs-lookup"><span data-stu-id="48a96-248">The second example gets messages that have the string-typed single-value extended property specified in the filter.</span></span> <span data-ttu-id="48a96-249">Фильтр ищет расширенное свойство со следующими параметрами:</span><span class="sxs-lookup"><span data-stu-id="48a96-249">The filter looks for the extended property that has:</span></span>
 
-- <span data-ttu-id="8095f-249">его свойство **id** соответствует строке `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (для наглядности здесь убрана кодировка URL-адреса);</span><span class="sxs-lookup"><span data-stu-id="8095f-249">Its **id** equal to the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (with URL encoding removed here for ease of reading).</span></span>
+- <span data-ttu-id="48a96-250">его свойство **id** соответствует строке `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (для наглядности здесь убрана кодировка URL-адреса);</span><span class="sxs-lookup"><span data-stu-id="48a96-250">Its **id** equal to the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (with URL encoding removed here for ease of reading).</span></span>
 
-- <span data-ttu-id="8095f-250">его свойство **value** равно строке `Green`.</span><span class="sxs-lookup"><span data-stu-id="8095f-250">Its **value** equal to the string `Green`.</span></span>
+- <span data-ttu-id="48a96-251">его свойство **value** равно строке `Green`.</span><span class="sxs-lookup"><span data-stu-id="48a96-251">Its **value** equal to the string `Green`.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProperties%2FAny(ep%3A%20ep%2Fid%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color'%20and%20ep%2Fvalue%20eq%20'Green')
 ```
 
-#### <a name="response-2"></a><span data-ttu-id="8095f-251">Отклик 2</span><span class="sxs-lookup"><span data-stu-id="8095f-251">Response 2</span></span>
+#### <a name="response-2"></a><span data-ttu-id="48a96-252">Отклик 2</span><span class="sxs-lookup"><span data-stu-id="48a96-252">Response 2</span></span>
 
-<span data-ttu-id="8095f-p116">В случае успешного выполнения возвращается код отклика `HTTP 200 OK`, а текст отклика включает все свойства сообщений, у которых есть расширенное свойство, соответствующее фильтру. Текст отклика аналогичен отклику при [получении коллекции сообщений](../api/user-list-messages.md). Отклик не включает соответствующее расширенное свойство.</span><span class="sxs-lookup"><span data-stu-id="8095f-p116">A successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all the properties of the messages that have the extended property matching the filter. The response body is similar to the response from [getting a message collection](../api/user-list-messages.md). The response does not include the matching extended property.</span></span>
+<span data-ttu-id="48a96-p116">В случае успешного выполнения возвращается код отклика `HTTP 200 OK`, а текст отклика включает все свойства сообщений, у которых есть расширенное свойство, соответствующее фильтру. Текст отклика аналогичен отклику при [получении коллекции сообщений](../api/user-list-messages.md). Отклик не включает соответствующее расширенное свойство.</span><span class="sxs-lookup"><span data-stu-id="48a96-p116">A successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all the properties of the messages that have the extended property matching the filter. The response body is similar to the response from [getting a message collection](../api/user-list-messages.md). The response does not include the matching extended property.</span></span>
 
 
-#### <a name="request-3"></a><span data-ttu-id="8095f-255">Запрос 3</span><span class="sxs-lookup"><span data-stu-id="8095f-255">Request 3</span></span>
+#### <a name="request-3"></a><span data-ttu-id="48a96-256">Запрос 3</span><span class="sxs-lookup"><span data-stu-id="48a96-256">Request 3</span></span>
 
-<span data-ttu-id="8095f-256">В третьем примере показано, как получить сообщения с указанным в фильтре однозначным расширенным свойством строкового типа.</span><span class="sxs-lookup"><span data-stu-id="8095f-256">The third example gets messages that have the string-typed single-value extended property specified in the filter.</span></span> <span data-ttu-id="8095f-257">Фильтр ищет расширенное свойство со следующими параметрами:</span><span class="sxs-lookup"><span data-stu-id="8095f-257">The filter looks for the extended property that has:</span></span>
+<span data-ttu-id="48a96-257">В третьем примере показано, как получить сообщения с указанным в фильтре однозначным расширенным свойством строкового типа.</span><span class="sxs-lookup"><span data-stu-id="48a96-257">The third example gets messages that have the string-typed single-value extended property specified in the filter.</span></span> <span data-ttu-id="48a96-258">Фильтр ищет расширенное свойство со следующими параметрами:</span><span class="sxs-lookup"><span data-stu-id="48a96-258">The filter looks for the extended property that has:</span></span>
 
-- <span data-ttu-id="8095f-258">его свойство **id** соответствует строке `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (для наглядности здесь убрана кодировка URL-адреса);</span><span class="sxs-lookup"><span data-stu-id="8095f-258">Its **id** equal to the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (with URL encoding removed here for ease of reading).</span></span>
+- <span data-ttu-id="48a96-259">его свойство **id** соответствует строке `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (для наглядности здесь убрана кодировка URL-адреса);</span><span class="sxs-lookup"><span data-stu-id="48a96-259">Its **id** equal to the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color` (with URL encoding removed here for ease of reading).</span></span>
 
-- <span data-ttu-id="8095f-259">его свойство **value** включает строку `green`.</span><span class="sxs-lookup"><span data-stu-id="8095f-259">Its **value** containing the string `green`.</span></span> 
+- <span data-ttu-id="48a96-260">его свойство **value** включает строку `green`.</span><span class="sxs-lookup"><span data-stu-id="48a96-260">Its **value** containing the string `green`.</span></span> 
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/Me/messages?$filter=singleValueExtendedProperties/any(ep:ep/Id eq 'String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color' and contains(ep/Value, 'green'))
 ```
 
-#### <a name="response-3"></a><span data-ttu-id="8095f-260">Отклик 3</span><span class="sxs-lookup"><span data-stu-id="8095f-260">Response 3</span></span>
+#### <a name="response-3"></a><span data-ttu-id="48a96-261">Отклик 3</span><span class="sxs-lookup"><span data-stu-id="48a96-261">Response 3</span></span>
 
-<span data-ttu-id="8095f-261">В случае успешного выполнения возвращается код отклика `HTTP 200 OK`, а тело отклика включает все свойства сообщений, у которых есть расширенное свойство, соответствующее фильтру.</span><span class="sxs-lookup"><span data-stu-id="8095f-261">A successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all the properties of the messages that have the extended property matching the filter.</span></span> <span data-ttu-id="8095f-262">Например, сообщение, которое содержит однозначное расширенное свойство со свойством **id**, равным строке `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color`, и свойством **value**, равным строке `Light green`, будет соответствовать фильтру и включено в отклик.</span><span class="sxs-lookup"><span data-stu-id="8095f-262">For example, a message that has a single-value extended property with the **id** equal to the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color`, and the **value** `Light green`, would match the filter and be included in the response.</span></span>
+<span data-ttu-id="48a96-262">В случае успешного выполнения возвращается код отклика `HTTP 200 OK`, а тело отклика включает все свойства сообщений, у которых есть расширенное свойство, соответствующее фильтру.</span><span class="sxs-lookup"><span data-stu-id="48a96-262">A successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all the properties of the messages that have the extended property matching the filter.</span></span> <span data-ttu-id="48a96-263">Например, сообщение, которое содержит однозначное расширенное свойство со свойством **id**, равным строке `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color`, и свойством **value**, равным строке `Light green`, будет соответствовать фильтру и включено в отклик.</span><span class="sxs-lookup"><span data-stu-id="48a96-263">For example, a message that has a single-value extended property with the **id** equal to the string `String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color`, and the **value** `Light green`, would match the filter and be included in the response.</span></span>
 
-<span data-ttu-id="8095f-263">Тело отклика такое же, как при [получении коллекции сообщений](../api/user-list-messages.md).</span><span class="sxs-lookup"><span data-stu-id="8095f-263">The response body is similar to the response from [getting a message collection](../api/user-list-messages.md).</span></span> <span data-ttu-id="8095f-264">Отклик не включает соответствующее расширенное свойство.</span><span class="sxs-lookup"><span data-stu-id="8095f-264">The response does not include the matching extended property.</span></span>
+<span data-ttu-id="48a96-264">Тело отклика такое же, как при [получении коллекции сообщений](../api/user-list-messages.md).</span><span class="sxs-lookup"><span data-stu-id="48a96-264">The response body is similar to the response from [getting a message collection](../api/user-list-messages.md).</span></span> <span data-ttu-id="48a96-265">Отклик не включает соответствующее расширенное свойство.</span><span class="sxs-lookup"><span data-stu-id="48a96-265">The response does not include the matching extended property.</span></span>
 
 
-#### <a name="request-4"></a><span data-ttu-id="8095f-265">Запрос 4</span><span class="sxs-lookup"><span data-stu-id="8095f-265">Request 4</span></span>
+#### <a name="request-4"></a><span data-ttu-id="48a96-266">Запрос 4</span><span class="sxs-lookup"><span data-stu-id="48a96-266">Request 4</span></span>
 
-<span data-ttu-id="8095f-266">В следующих двух примерах показано, как получить сообщения с однозначными расширенными свойствами типа, отличного от строкового.</span><span class="sxs-lookup"><span data-stu-id="8095f-266">The next 2 examples show how to get messages that have non-string typed single-value extended properties.</span></span> <span data-ttu-id="8095f-267">Необходимая кодировка URL не указана для удобства чтения.</span><span class="sxs-lookup"><span data-stu-id="8095f-267">For ease of reading, they do not include the necessary URL encoding.</span></span>
+<span data-ttu-id="48a96-267">В следующих двух примерах показано, как получить сообщения с однозначными расширенными свойствами типа, отличного от строкового.</span><span class="sxs-lookup"><span data-stu-id="48a96-267">The next 2 examples show how to get messages that have non-string typed single-value extended properties.</span></span> <span data-ttu-id="48a96-268">Необходимая кодировка URL не указана для удобства чтения.</span><span class="sxs-lookup"><span data-stu-id="48a96-268">For ease of reading, they do not include the necessary URL encoding.</span></span>
 
-<span data-ttu-id="8095f-268">В следующем примере показан фильтр, который ищет расширенное свойство со следующими параметрами:</span><span class="sxs-lookup"><span data-stu-id="8095f-268">The following example shows a filter that looks for the extended property that has:</span></span>
+<span data-ttu-id="48a96-269">В следующем примере показан фильтр, который ищет расширенное свойство со следующими параметрами:</span><span class="sxs-lookup"><span data-stu-id="48a96-269">The following example shows a filter that looks for the extended property that has:</span></span>
 
-- <span data-ttu-id="8095f-269">Свойство **id** соответствует строке `CLSID {00062008-0000-0000-C000-000000000046} Name ConnectorSenderGuid`.</span><span class="sxs-lookup"><span data-stu-id="8095f-269">Its **id** matching the string `CLSID {00062008-0000-0000-C000-000000000046} Name ConnectorSenderGuid`.</span></span>
+- <span data-ttu-id="48a96-270">Свойство **id** соответствует строке `CLSID {00062008-0000-0000-C000-000000000046} Name ConnectorSenderGuid`.</span><span class="sxs-lookup"><span data-stu-id="48a96-270">Its **id** matching the string `CLSID {00062008-0000-0000-C000-000000000046} Name ConnectorSenderGuid`.</span></span>
 
-- <span data-ttu-id="8095f-270">Свойство **value** равно GUID `b9cf8971-7d55-4b73-9ffa-a584611b600b`.</span><span class="sxs-lookup"><span data-stu-id="8095f-270">Its **value** being the GUID `b9cf8971-7d55-4b73-9ffa-a584611b600b`.</span></span> <span data-ttu-id="8095f-271">Чтобы сравнить значение свойства с GUID, приведите `ep/value` к `Edm.Guid`.</span><span class="sxs-lookup"><span data-stu-id="8095f-271">To compare the property value with a GUID, cast `ep/value` to `Edm.Guid`.</span></span>
+- <span data-ttu-id="48a96-271">Свойство **value** равно GUID `b9cf8971-7d55-4b73-9ffa-a584611b600b`.</span><span class="sxs-lookup"><span data-stu-id="48a96-271">Its **value** being the GUID `b9cf8971-7d55-4b73-9ffa-a584611b600b`.</span></span> <span data-ttu-id="48a96-272">Чтобы сравнить значение свойства с GUID, приведите `ep/value` к `Edm.Guid`.</span><span class="sxs-lookup"><span data-stu-id="48a96-272">To compare the property value with a GUID, cast `ep/value` to `Edm.Guid`.</span></span>
 
 
 <!-- { "blockType": "ignored" } -->
@@ -378,11 +380,11 @@ GET https://graph.microsoft.com/v1.0/Me/messages?$filter=singleValueExtendedProp
 GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProperties/any(ep:ep/id eq 'CLSID {00062008-0000-0000-C000-000000000046} Name ConnectorSenderGuid' and cast(ep/value, Edm.Guid) eq (b9cf8971-7d55-4b73-9ffa-a584611b600b))
 ```
 
-<span data-ttu-id="8095f-272">В следующем примере показан фильтр, который ищет расширенное свойство со следующими параметрами:</span><span class="sxs-lookup"><span data-stu-id="8095f-272">The next example shows a filter that looks for the extended property that has:</span></span>
+<span data-ttu-id="48a96-273">В следующем примере показан фильтр, который ищет расширенное свойство со следующими параметрами:</span><span class="sxs-lookup"><span data-stu-id="48a96-273">The next example shows a filter that looks for the extended property that has:</span></span>
 
-- <span data-ttu-id="8095f-273">Свойство **id** соответствует строке `Integer {66f5a359-4659-4830-9070-00047ec6ac6e} Name Pallete`.</span><span class="sxs-lookup"><span data-stu-id="8095f-273">Its **id** matching the string `Integer {66f5a359-4659-4830-9070-00047ec6ac6e} Name Pallete`.</span></span>
+- <span data-ttu-id="48a96-274">Свойство **id** соответствует строке `Integer {66f5a359-4659-4830-9070-00047ec6ac6e} Name Pallete`.</span><span class="sxs-lookup"><span data-stu-id="48a96-274">Its **id** matching the string `Integer {66f5a359-4659-4830-9070-00047ec6ac6e} Name Pallete`.</span></span>
 
-- <span data-ttu-id="8095f-274">Свойство **value** равно целому числу 12.</span><span class="sxs-lookup"><span data-stu-id="8095f-274">Its **value** equal to the integer 12.</span></span> <span data-ttu-id="8095f-275">Чтобы сравнить значение свойства с целым числом, приведите `ep/value` к `Edm.Int32`.</span><span class="sxs-lookup"><span data-stu-id="8095f-275">To compare the property value with an integer, cast `ep/value` to `Edm.Int32`.</span></span>
+- <span data-ttu-id="48a96-275">Свойство **value** равно целому числу 12.</span><span class="sxs-lookup"><span data-stu-id="48a96-275">Its **value** equal to the integer 12.</span></span> <span data-ttu-id="48a96-276">Чтобы сравнить значение свойства с целым числом, приведите `ep/value` к `Edm.Int32`.</span><span class="sxs-lookup"><span data-stu-id="48a96-276">To compare the property value with an integer, cast `ep/value` to `Edm.Int32`.</span></span>
 
 
 <!-- { "blockType": "ignored" } -->
@@ -391,9 +393,9 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProp
 ```
 
 
-#### <a name="response-4"></a><span data-ttu-id="8095f-276">Отклик 4</span><span class="sxs-lookup"><span data-stu-id="8095f-276">Response 4</span></span>
+#### <a name="response-4"></a><span data-ttu-id="48a96-277">Отклик 4</span><span class="sxs-lookup"><span data-stu-id="48a96-277">Response 4</span></span>
 
-<span data-ttu-id="8095f-277">В предыдущих двух примерах в случае успешного выполнения возвращается код ответа `HTTP 200 OK`, а текст ответа включает все свойства сообщений с расширенным свойством, соответствующим фильтру.</span><span class="sxs-lookup"><span data-stu-id="8095f-277">For each of the preceding 2 examples, a successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all the properties of the messages that have the extended property matching the corresponding filter.</span></span> <span data-ttu-id="8095f-278">Текст ответа аналогичен ответу при [получении коллекции сообщений](../api/user-list-messages.md).</span><span class="sxs-lookup"><span data-stu-id="8095f-278">The response body is similar to the response from [getting a message collection](../api/user-list-messages.md).</span></span> <span data-ttu-id="8095f-279">Отклик не включает соответствующее расширенное свойство.</span><span class="sxs-lookup"><span data-stu-id="8095f-279">The response does not include the matching extended property.</span></span>
+<span data-ttu-id="48a96-278">В предыдущих двух примерах в случае успешного выполнения возвращается код ответа `HTTP 200 OK`, а текст ответа включает все свойства сообщений с расширенным свойством, соответствующим фильтру.</span><span class="sxs-lookup"><span data-stu-id="48a96-278">For each of the preceding 2 examples, a successful response is indicated by an `HTTP 200 OK` response code, and the response body includes all the properties of the messages that have the extended property matching the corresponding filter.</span></span> <span data-ttu-id="48a96-279">Текст ответа аналогичен ответу при [получении коллекции сообщений](../api/user-list-messages.md).</span><span class="sxs-lookup"><span data-stu-id="48a96-279">The response body is similar to the response from [getting a message collection](../api/user-list-messages.md).</span></span> <span data-ttu-id="48a96-280">Отклик не включает соответствующее расширенное свойство.</span><span class="sxs-lookup"><span data-stu-id="48a96-280">The response does not include the matching extended property.</span></span>
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

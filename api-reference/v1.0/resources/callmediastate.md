@@ -5,27 +5,29 @@ author: ananmishr
 ms.prod: cloud-communications
 localization_priority: Normal
 doc_type: resourcePageType
-ms.openlocfilehash: b73f6110639cfb158bef8e5f529d9a2c65b34689
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 3bf6b0e2387ac658ad506e3b4ea226a9a8f66e6d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913466"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531961"
 ---
-# <a name="callmediastate-resource-type"></a><span data-ttu-id="7aef6-103">Тип ресурса Каллмедиастате</span><span class="sxs-lookup"><span data-stu-id="7aef6-103">callMediaState resource type</span></span>
+# <a name="callmediastate-resource-type"></a><span data-ttu-id="40988-103">Тип ресурса Каллмедиастате</span><span class="sxs-lookup"><span data-stu-id="40988-103">callMediaState resource type</span></span>
+
+<span data-ttu-id="40988-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="40988-104">Namespace: microsoft.graph</span></span>
 
 
-<span data-ttu-id="7aef6-104">Представляет состояние мультимедиа для [вызова](call.md).</span><span class="sxs-lookup"><span data-stu-id="7aef6-104">Represents the media state for a [call](call.md).</span></span>
+<span data-ttu-id="40988-105">Представляет состояние мультимедиа для [вызова](call.md).</span><span class="sxs-lookup"><span data-stu-id="40988-105">Represents the media state for a [call](call.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="7aef6-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="7aef6-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="40988-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="40988-106">Properties</span></span>
 
-| <span data-ttu-id="7aef6-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="7aef6-106">Property</span></span>            | <span data-ttu-id="7aef6-107">Тип</span><span class="sxs-lookup"><span data-stu-id="7aef6-107">Type</span></span>    | <span data-ttu-id="7aef6-108">Описание</span><span class="sxs-lookup"><span data-stu-id="7aef6-108">Description</span></span>                                                                    |
+| <span data-ttu-id="40988-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="40988-107">Property</span></span>            | <span data-ttu-id="40988-108">Тип</span><span class="sxs-lookup"><span data-stu-id="40988-108">Type</span></span>    | <span data-ttu-id="40988-109">Описание</span><span class="sxs-lookup"><span data-stu-id="40988-109">Description</span></span>                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
-| <span data-ttu-id="7aef6-109">audio</span><span class="sxs-lookup"><span data-stu-id="7aef6-109">audio</span></span>           | <span data-ttu-id="7aef6-110">String</span><span class="sxs-lookup"><span data-stu-id="7aef6-110">String</span></span>  | <span data-ttu-id="7aef6-111">Состояние звукового носителя.</span><span class="sxs-lookup"><span data-stu-id="7aef6-111">The audio media state.</span></span> <span data-ttu-id="7aef6-112">Возможные значения: `active`, `inactive`.</span><span class="sxs-lookup"><span data-stu-id="7aef6-112">Possible values are: `active`, `inactive`.</span></span> |
+| <span data-ttu-id="40988-110">audio</span><span class="sxs-lookup"><span data-stu-id="40988-110">audio</span></span>           | <span data-ttu-id="40988-111">Строка</span><span class="sxs-lookup"><span data-stu-id="40988-111">String</span></span>  | <span data-ttu-id="40988-112">Состояние звукового носителя.</span><span class="sxs-lookup"><span data-stu-id="40988-112">The audio media state.</span></span> <span data-ttu-id="40988-113">Возможные значения: `active`, `inactive`.</span><span class="sxs-lookup"><span data-stu-id="40988-113">Possible values are: `active`, `inactive`.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="7aef6-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="7aef6-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="40988-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="40988-114">JSON representation</span></span>
 
-<span data-ttu-id="7aef6-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7aef6-114">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="40988-115">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="40988-115">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

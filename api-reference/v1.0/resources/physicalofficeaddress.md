@@ -5,31 +5,33 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7d79479136390627eeb82a269e79b286cebf9a2e
-ms.sourcegitcommit: c9b9ff2c862f8d96d282a7bdf641cdb9c53a4600
+ms.openlocfilehash: 0c7b0280d8b9e7d62357985b88ead034b015aef1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "37622693"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534059"
 ---
-# <a name="physicalofficeaddress-resource-type"></a><span data-ttu-id="f09b3-103">Тип ресурса Фисикалоффицеаддресс</span><span class="sxs-lookup"><span data-stu-id="f09b3-103">physicalOfficeAddress resource type</span></span>
+# <a name="physicalofficeaddress-resource-type"></a><span data-ttu-id="b5b88-103">Тип ресурса Фисикалоффицеаддресс</span><span class="sxs-lookup"><span data-stu-id="b5b88-103">physicalOfficeAddress resource type</span></span>
 
-<span data-ttu-id="f09b3-104">Представляет рабочий адрес ресурса, например контакта в Организации.</span><span class="sxs-lookup"><span data-stu-id="f09b3-104">Represents the business address of a resource such as an organizational contact.</span></span>
+<span data-ttu-id="b5b88-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b5b88-104">Namespace: microsoft.graph</span></span>
 
-## <a name="properties"></a><span data-ttu-id="f09b3-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="f09b3-105">Properties</span></span>
+<span data-ttu-id="b5b88-105">Представляет рабочий адрес ресурса, например контакта в Организации.</span><span class="sxs-lookup"><span data-stu-id="b5b88-105">Represents the business address of a resource such as an organizational contact.</span></span>
 
-| <span data-ttu-id="f09b3-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="f09b3-106">Property</span></span>     | <span data-ttu-id="f09b3-107">Тип</span><span class="sxs-lookup"><span data-stu-id="f09b3-107">Type</span></span>   |<span data-ttu-id="f09b3-108">Описание</span><span class="sxs-lookup"><span data-stu-id="f09b3-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="b5b88-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="b5b88-106">Properties</span></span>
+
+| <span data-ttu-id="b5b88-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="b5b88-107">Property</span></span>     | <span data-ttu-id="b5b88-108">Тип</span><span class="sxs-lookup"><span data-stu-id="b5b88-108">Type</span></span>   |<span data-ttu-id="b5b88-109">Описание</span><span class="sxs-lookup"><span data-stu-id="b5b88-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f09b3-109">city</span><span class="sxs-lookup"><span data-stu-id="f09b3-109">city</span></span>|<span data-ttu-id="f09b3-110">String</span><span class="sxs-lookup"><span data-stu-id="f09b3-110">String</span></span>|<span data-ttu-id="f09b3-111">Город.</span><span class="sxs-lookup"><span data-stu-id="f09b3-111">The city.</span></span>|
-|<span data-ttu-id="f09b3-112">countryOrRegion</span><span class="sxs-lookup"><span data-stu-id="f09b3-112">countryOrRegion</span></span>|<span data-ttu-id="f09b3-113">String</span><span class="sxs-lookup"><span data-stu-id="f09b3-113">String</span></span>|<span data-ttu-id="f09b3-p101">Страна или регион. Это строковое значение в произвольном формате, например "США".</span><span class="sxs-lookup"><span data-stu-id="f09b3-p101">The country or region. It's a free-format string value, for example, "United States".</span></span>|
-|<span data-ttu-id="f09b3-116">officeLocation</span><span class="sxs-lookup"><span data-stu-id="f09b3-116">officeLocation</span></span>  | <span data-ttu-id="f09b3-117">String</span><span class="sxs-lookup"><span data-stu-id="f09b3-117">String</span></span> | <span data-ttu-id="f09b3-118">Местоположение Office, например здание и номер офиса для контакта в Организации.</span><span class="sxs-lookup"><span data-stu-id="f09b3-118">Office location such as building and office number for an organizational contact.</span></span>  |
-|<span data-ttu-id="f09b3-119">postalCode</span><span class="sxs-lookup"><span data-stu-id="f09b3-119">postalCode</span></span>|<span data-ttu-id="f09b3-120">String</span><span class="sxs-lookup"><span data-stu-id="f09b3-120">String</span></span>|<span data-ttu-id="f09b3-121">Почтовый индекс.</span><span class="sxs-lookup"><span data-stu-id="f09b3-121">The postal code.</span></span>|
-|<span data-ttu-id="f09b3-122">state</span><span class="sxs-lookup"><span data-stu-id="f09b3-122">state</span></span>|<span data-ttu-id="f09b3-123">String</span><span class="sxs-lookup"><span data-stu-id="f09b3-123">String</span></span>|<span data-ttu-id="f09b3-124">Штат.</span><span class="sxs-lookup"><span data-stu-id="f09b3-124">The state.</span></span>|
-|<span data-ttu-id="f09b3-125">street</span><span class="sxs-lookup"><span data-stu-id="f09b3-125">street</span></span>|<span data-ttu-id="f09b3-126">String</span><span class="sxs-lookup"><span data-stu-id="f09b3-126">String</span></span>|<span data-ttu-id="f09b3-127">Улица.</span><span class="sxs-lookup"><span data-stu-id="f09b3-127">The street.</span></span>|
+|<span data-ttu-id="b5b88-110">city</span><span class="sxs-lookup"><span data-stu-id="b5b88-110">city</span></span>|<span data-ttu-id="b5b88-111">Строка</span><span class="sxs-lookup"><span data-stu-id="b5b88-111">String</span></span>|<span data-ttu-id="b5b88-112">Город.</span><span class="sxs-lookup"><span data-stu-id="b5b88-112">The city.</span></span>|
+|<span data-ttu-id="b5b88-113">countryOrRegion</span><span class="sxs-lookup"><span data-stu-id="b5b88-113">countryOrRegion</span></span>|<span data-ttu-id="b5b88-114">String</span><span class="sxs-lookup"><span data-stu-id="b5b88-114">String</span></span>|<span data-ttu-id="b5b88-p101">Страна или регион. Это строковое значение в произвольном формате, например "США".</span><span class="sxs-lookup"><span data-stu-id="b5b88-p101">The country or region. It's a free-format string value, for example, "United States".</span></span>|
+|<span data-ttu-id="b5b88-117">officeLocation</span><span class="sxs-lookup"><span data-stu-id="b5b88-117">officeLocation</span></span>  | <span data-ttu-id="b5b88-118">Строка</span><span class="sxs-lookup"><span data-stu-id="b5b88-118">String</span></span> | <span data-ttu-id="b5b88-119">Местоположение Office, например здание и номер офиса для контакта в Организации.</span><span class="sxs-lookup"><span data-stu-id="b5b88-119">Office location such as building and office number for an organizational contact.</span></span>  |
+|<span data-ttu-id="b5b88-120">postalCode</span><span class="sxs-lookup"><span data-stu-id="b5b88-120">postalCode</span></span>|<span data-ttu-id="b5b88-121">Строка</span><span class="sxs-lookup"><span data-stu-id="b5b88-121">String</span></span>|<span data-ttu-id="b5b88-122">Почтовый индекс.</span><span class="sxs-lookup"><span data-stu-id="b5b88-122">The postal code.</span></span>|
+|<span data-ttu-id="b5b88-123">state</span><span class="sxs-lookup"><span data-stu-id="b5b88-123">state</span></span>|<span data-ttu-id="b5b88-124">String</span><span class="sxs-lookup"><span data-stu-id="b5b88-124">String</span></span>|<span data-ttu-id="b5b88-125">Штат.</span><span class="sxs-lookup"><span data-stu-id="b5b88-125">The state.</span></span>|
+|<span data-ttu-id="b5b88-126">street</span><span class="sxs-lookup"><span data-stu-id="b5b88-126">street</span></span>|<span data-ttu-id="b5b88-127">String</span><span class="sxs-lookup"><span data-stu-id="b5b88-127">String</span></span>|<span data-ttu-id="b5b88-128">Улица.</span><span class="sxs-lookup"><span data-stu-id="b5b88-128">The street.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="f09b3-128">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="f09b3-128">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b5b88-129">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="b5b88-129">JSON representation</span></span>
 
-<span data-ttu-id="f09b3-129">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f09b3-129">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="b5b88-130">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b5b88-130">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",

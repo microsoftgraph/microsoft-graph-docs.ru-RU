@@ -5,50 +5,52 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: df54c737a33f31dcbb22bf4776beccd9b8ee2faf
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: be5f2054e589ff010b8942130108cec73a8f6a60
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "36341923"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517273"
 ---
-# <a name="filter-clear"></a><span data-ttu-id="3b4bc-103">Filter: clear</span><span class="sxs-lookup"><span data-stu-id="3b4bc-103">Filter: clear</span></span>
+# <a name="filter-clear"></a><span data-ttu-id="e1cc4-103">Filter: clear</span><span class="sxs-lookup"><span data-stu-id="e1cc4-103">Filter: clear</span></span>
 
-<span data-ttu-id="3b4bc-104">Сброс фильтра для определенного столбца.</span><span class="sxs-lookup"><span data-stu-id="3b4bc-104">Clear the filter on the given column.</span></span>
-## <a name="permissions"></a><span data-ttu-id="3b4bc-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3b4bc-105">Permissions</span></span>
-<span data-ttu-id="3b4bc-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3b4bc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e1cc4-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e1cc4-104">Namespace: microsoft.graph</span></span>
 
-|<span data-ttu-id="3b4bc-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3b4bc-108">Permission type</span></span>      | <span data-ttu-id="3b4bc-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="3b4bc-109">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="e1cc4-105">Сброс фильтра для определенного столбца.</span><span class="sxs-lookup"><span data-stu-id="e1cc4-105">Clear the filter on the given column.</span></span>
+## <a name="permissions"></a><span data-ttu-id="e1cc4-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e1cc4-106">Permissions</span></span>
+<span data-ttu-id="e1cc4-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e1cc4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="e1cc4-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e1cc4-109">Permission type</span></span>      | <span data-ttu-id="e1cc4-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e1cc4-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3b4bc-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3b4bc-110">Delegated (work or school account)</span></span> | <span data-ttu-id="3b4bc-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="3b4bc-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="3b4bc-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3b4bc-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3b4bc-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3b4bc-113">Not supported.</span></span>    |
-|<span data-ttu-id="3b4bc-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="3b4bc-114">Application</span></span> | <span data-ttu-id="3b4bc-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3b4bc-115">Not supported.</span></span> |
+|<span data-ttu-id="e1cc4-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e1cc4-111">Delegated (work or school account)</span></span> | <span data-ttu-id="e1cc4-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e1cc4-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="e1cc4-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e1cc4-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e1cc4-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e1cc4-114">Not supported.</span></span>    |
+|<span data-ttu-id="e1cc4-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e1cc4-115">Application</span></span> | <span data-ttu-id="e1cc4-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e1cc4-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="3b4bc-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3b4bc-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e1cc4-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e1cc4-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/columns/{id|name}/filter/clear
 POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/clear
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="3b4bc-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="3b4bc-117">Request headers</span></span>
-| <span data-ttu-id="3b4bc-118">Имя</span><span class="sxs-lookup"><span data-stu-id="3b4bc-118">Name</span></span>       | <span data-ttu-id="3b4bc-119">Описание</span><span class="sxs-lookup"><span data-stu-id="3b4bc-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e1cc4-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e1cc4-118">Request headers</span></span>
+| <span data-ttu-id="e1cc4-119">Имя</span><span class="sxs-lookup"><span data-stu-id="e1cc4-119">Name</span></span>       | <span data-ttu-id="e1cc4-120">Описание</span><span class="sxs-lookup"><span data-stu-id="e1cc4-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="3b4bc-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="3b4bc-120">Authorization</span></span>  | <span data-ttu-id="3b4bc-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3b4bc-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e1cc4-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e1cc4-121">Authorization</span></span>  | <span data-ttu-id="e1cc4-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e1cc4-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="3b4bc-123">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="3b4bc-123">Request body</span></span>
-<span data-ttu-id="3b4bc-124">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="3b4bc-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e1cc4-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="e1cc4-124">Request body</span></span>
+<span data-ttu-id="e1cc4-125">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="e1cc4-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3b4bc-125">Ответ</span><span class="sxs-lookup"><span data-stu-id="3b4bc-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e1cc4-126">Ответ</span><span class="sxs-lookup"><span data-stu-id="e1cc4-126">Response</span></span>
 
-<span data-ttu-id="3b4bc-p103">В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="3b4bc-p103">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="e1cc4-p103">В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="e1cc4-p103">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3b4bc-128">Пример</span><span class="sxs-lookup"><span data-stu-id="3b4bc-128">Example</span></span>
-<span data-ttu-id="3b4bc-129">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="3b4bc-129">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="3b4bc-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="3b4bc-130">Request</span></span>
-<span data-ttu-id="3b4bc-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="3b4bc-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="e1cc4-129">Пример</span><span class="sxs-lookup"><span data-stu-id="e1cc4-129">Example</span></span>
+<span data-ttu-id="e1cc4-130">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="e1cc4-130">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="e1cc4-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="e1cc4-131">Request</span></span>
+<span data-ttu-id="e1cc4-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e1cc4-132">Here is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="3b4bc-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="3b4bc-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="e1cc4-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="e1cc4-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "filter_clear"
@@ -56,27 +58,27 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/cl
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/filter/clear
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="3b4bc-133">C#</span><span class="sxs-lookup"><span data-stu-id="3b4bc-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="e1cc4-134">C#</span><span class="sxs-lookup"><span data-stu-id="e1cc4-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/filter-clear-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="3b4bc-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3b4bc-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="e1cc4-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e1cc4-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/filter-clear-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="3b4bc-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3b4bc-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="e1cc4-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e1cc4-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/filter-clear-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="3b4bc-136">Java</span><span class="sxs-lookup"><span data-stu-id="3b4bc-136">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="e1cc4-137">Java</span><span class="sxs-lookup"><span data-stu-id="e1cc4-137">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/filter-clear-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="3b4bc-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="3b4bc-137">Response</span></span>
-<span data-ttu-id="3b4bc-138">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="3b4bc-138">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="e1cc4-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="e1cc4-138">Response</span></span>
+<span data-ttu-id="e1cc4-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="e1cc4-139">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
