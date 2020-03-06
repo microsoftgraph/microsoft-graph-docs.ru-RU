@@ -12,22 +12,22 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42521631"
 ---
-# <a name="planneruserids-resource-type"></a><span data-ttu-id="70d81-106">Тип ресурса Планнерусеридс</span><span class="sxs-lookup"><span data-stu-id="70d81-106">plannerUserIds resource type</span></span>
+# <a name="planneruserids-resource-type"></a><span data-ttu-id="e77dc-106">Тип ресурса Планнерусеридс</span><span class="sxs-lookup"><span data-stu-id="e77dc-106">plannerUserIds resource type</span></span>
 
-<span data-ttu-id="70d81-107">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="70d81-107">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e77dc-107">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e77dc-107">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="70d81-108">Ресурс **планнерусеридс** представляет список идентификаторов пользователей, к которым предоставлен общий доступ к [плану](plannerplan.md) .</span><span class="sxs-lookup"><span data-stu-id="70d81-108">The **plannerUserIds** resource represents the list of users ids that a [plan](plannerplan.md) is shared with.</span></span> <span data-ttu-id="70d81-109">Это открытый тип.</span><span class="sxs-lookup"><span data-stu-id="70d81-109">This is an Open Type.</span></span> <span data-ttu-id="70d81-110">Если вы используете группы Office 365, используйте API групп для управления членством в группах, чтобы поделиться планом [группы](group.md) .</span><span class="sxs-lookup"><span data-stu-id="70d81-110">If you are leveraging Office 365 Groups, use the Groups API to manage group membership to share the [group's](group.md) plan.</span></span> <span data-ttu-id="70d81-111">Вы также можете добавить существующих членов группы в эту коллекцию, несмотря на то, что они не требуются для доступа к плану, принадлежащему группе.</span><span class="sxs-lookup"><span data-stu-id="70d81-111">You can also add existing members of the group to this collection though it is not required for them to access the plan owned by the group.</span></span>
+<span data-ttu-id="e77dc-108">Ресурс **планнерусеридс** представляет список идентификаторов пользователей, к которым предоставлен общий доступ к [плану](plannerplan.md) .</span><span class="sxs-lookup"><span data-stu-id="e77dc-108">The **plannerUserIds** resource represents the list of users ids that a [plan](plannerplan.md) is shared with.</span></span> <span data-ttu-id="e77dc-109">Это открытый тип.</span><span class="sxs-lookup"><span data-stu-id="e77dc-109">This is an Open Type.</span></span> <span data-ttu-id="e77dc-110">Если вы используете группы Office 365, используйте API групп для управления членством в группах, чтобы поделиться планом [группы](group.md) .</span><span class="sxs-lookup"><span data-stu-id="e77dc-110">If you are leveraging Office 365 Groups, use the Groups API to manage group membership to share the [group's](group.md) plan.</span></span> <span data-ttu-id="e77dc-111">Вы также можете добавить существующих членов группы в эту коллекцию, несмотря на то, что они не требуются для доступа к плану, принадлежащему группе.</span><span class="sxs-lookup"><span data-stu-id="e77dc-111">You can also add existing members of the group to this collection though it is not required for them to access the plan owned by the group.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="70d81-112">Свойства</span><span class="sxs-lookup"><span data-stu-id="70d81-112">Properties</span></span>
-<span data-ttu-id="70d81-113">Клиентская возможность может определять свойства открытого типа.</span><span class="sxs-lookup"><span data-stu-id="70d81-113">Properties of an Open Type can be defined by the client.</span></span> <span data-ttu-id="70d81-114">В этом случае клиент должен предоставить идентификаторы пользователей как свойства с `true` логическими значениями.</span><span class="sxs-lookup"><span data-stu-id="70d81-114">In this case, the client should provide user ids as properties with their values being the `true` boolean.</span></span> <span data-ttu-id="70d81-115">Если к идентификаторам пользователей больше не предоставляется доступ, свойства автоматически удаляются путем присвоения их значений `false` логическому значению.</span><span class="sxs-lookup"><span data-stu-id="70d81-115">When user ids are no longer shared with, properties are automatically removed by setting their values to the `false` boolean.</span></span>
+## <a name="properties"></a><span data-ttu-id="e77dc-112">Свойства</span><span class="sxs-lookup"><span data-stu-id="e77dc-112">Properties</span></span>
+<span data-ttu-id="e77dc-113">Клиентская возможность может определять свойства открытого типа.</span><span class="sxs-lookup"><span data-stu-id="e77dc-113">Properties of an Open Type can be defined by the client.</span></span> <span data-ttu-id="e77dc-114">В этом случае клиент должен предоставить идентификаторы пользователей как свойства с `true` логическими значениями.</span><span class="sxs-lookup"><span data-stu-id="e77dc-114">In this case, the client should provide user ids as properties with their values being the `true` boolean.</span></span> <span data-ttu-id="e77dc-115">Если к идентификаторам пользователей больше не предоставляется доступ, свойства автоматически удаляются путем присвоения их значений `false` логическому значению.</span><span class="sxs-lookup"><span data-stu-id="e77dc-115">When user ids are no longer shared with, properties are automatically removed by setting their values to the `false` boolean.</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="70d81-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="70d81-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e77dc-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="e77dc-116">JSON representation</span></span>
 
-<span data-ttu-id="70d81-117">Ниже показано представление JSON ресурса.</span><span class="sxs-lookup"><span data-stu-id="70d81-117">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="e77dc-117">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e77dc-117">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -43,7 +43,7 @@ ms.locfileid: "42521631"
 }
 ```
 
-<span data-ttu-id="70d81-118">Примеры</span><span class="sxs-lookup"><span data-stu-id="70d81-118">// Example</span></span>
+<span data-ttu-id="e77dc-118">Примеры</span><span class="sxs-lookup"><span data-stu-id="e77dc-118">// Example</span></span>
 ```json
 {
   "400723e1-102b-43aa-aba9-f35524827084": true, // property name is user id
