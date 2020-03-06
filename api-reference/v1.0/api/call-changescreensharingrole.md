@@ -5,57 +5,59 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7691e8200b1ac2bdc5f46219365f8e27251d5bf4
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 6ba2925118d443250c991e570bf7bd7efe8f4316
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913368"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518737"
 ---
-# <a name="call-changescreensharingrole"></a><span data-ttu-id="7ae9e-103">Call: Чанжескриншарингроле</span><span class="sxs-lookup"><span data-stu-id="7ae9e-103">call: changeScreenSharingRole</span></span>
+# <a name="call-changescreensharingrole"></a><span data-ttu-id="b1f14-103">Call: Чанжескриншарингроле</span><span class="sxs-lookup"><span data-stu-id="b1f14-103">call: changeScreenSharingRole</span></span>
 
-<span data-ttu-id="7ae9e-104">Разрешить приложениям предоставлять доступ к содержимому экрана участникам группового вызова.</span><span class="sxs-lookup"><span data-stu-id="7ae9e-104">Allow applications to share screen content with the participants of a group call.</span></span>
+<span data-ttu-id="b1f14-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b1f14-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="7ae9e-105">**Примечание:** Это поддерживается только для звонков групп, использующих мультимедиа, размещаемых в приложении.</span><span class="sxs-lookup"><span data-stu-id="7ae9e-105">**Note:** This is only supported for group calls that use App-Hosted Media.</span></span>
+<span data-ttu-id="b1f14-105">Разрешить приложениям предоставлять доступ к содержимому экрана участникам группового вызова.</span><span class="sxs-lookup"><span data-stu-id="b1f14-105">Allow applications to share screen content with the participants of a group call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7ae9e-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7ae9e-106">Permissions</span></span>
-<span data-ttu-id="7ae9e-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7ae9e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+> <span data-ttu-id="b1f14-106">**Примечание:** Это поддерживается только для звонков групп, использующих мультимедиа, размещаемых в приложении.</span><span class="sxs-lookup"><span data-stu-id="b1f14-106">**Note:** This is only supported for group calls that use App-Hosted Media.</span></span>
 
-| <span data-ttu-id="7ae9e-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7ae9e-109">Permission type</span></span>                        | <span data-ttu-id="7ae9e-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7ae9e-110">Permissions (from least to most privileged)</span></span> |
+## <a name="permissions"></a><span data-ttu-id="b1f14-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b1f14-107">Permissions</span></span>
+<span data-ttu-id="b1f14-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b1f14-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+| <span data-ttu-id="b1f14-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b1f14-110">Permission type</span></span>                        | <span data-ttu-id="b1f14-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b1f14-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="7ae9e-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7ae9e-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="7ae9e-112">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="7ae9e-112">Not Supported</span></span>                               |
-| <span data-ttu-id="7ae9e-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7ae9e-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7ae9e-114">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="7ae9e-114">Not Supported</span></span>                               |
-| <span data-ttu-id="7ae9e-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7ae9e-115">Application</span></span>                            | <span data-ttu-id="7ae9e-116">Calls.AccessMedia.All</span><span class="sxs-lookup"><span data-stu-id="7ae9e-116">Calls.AccessMedia.All</span></span>                       |
+| <span data-ttu-id="b1f14-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b1f14-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="b1f14-113">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="b1f14-113">Not Supported</span></span>                               |
+| <span data-ttu-id="b1f14-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b1f14-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b1f14-115">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="b1f14-115">Not Supported</span></span>                               |
+| <span data-ttu-id="b1f14-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b1f14-116">Application</span></span>                            | <span data-ttu-id="b1f14-117">Calls.AccessMedia.All</span><span class="sxs-lookup"><span data-stu-id="b1f14-117">Calls.AccessMedia.All</span></span>                       |
 
-## <a name="http-request"></a><span data-ttu-id="7ae9e-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7ae9e-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b1f14-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b1f14-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /communications/calls/{id}/changeScreenSharingRole
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7ae9e-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="7ae9e-118">Request headers</span></span>
-| <span data-ttu-id="7ae9e-119">Имя</span><span class="sxs-lookup"><span data-stu-id="7ae9e-119">Name</span></span>          | <span data-ttu-id="7ae9e-120">Описание</span><span class="sxs-lookup"><span data-stu-id="7ae9e-120">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="b1f14-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b1f14-119">Request headers</span></span>
+| <span data-ttu-id="b1f14-120">Имя</span><span class="sxs-lookup"><span data-stu-id="b1f14-120">Name</span></span>          | <span data-ttu-id="b1f14-121">Описание</span><span class="sxs-lookup"><span data-stu-id="b1f14-121">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="7ae9e-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="7ae9e-121">Authorization</span></span> | <span data-ttu-id="7ae9e-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7ae9e-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="7ae9e-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7ae9e-124">Content-type</span></span>  | <span data-ttu-id="7ae9e-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7ae9e-p103">application/json. Required.</span></span>|
+| <span data-ttu-id="b1f14-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="b1f14-122">Authorization</span></span> | <span data-ttu-id="b1f14-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b1f14-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b1f14-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b1f14-125">Content-type</span></span>  | <span data-ttu-id="b1f14-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b1f14-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="7ae9e-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="7ae9e-127">Request body</span></span>
-<span data-ttu-id="7ae9e-128">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="7ae9e-128">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b1f14-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b1f14-128">Request body</span></span>
+<span data-ttu-id="b1f14-129">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="b1f14-129">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="7ae9e-129">Параметр</span><span class="sxs-lookup"><span data-stu-id="7ae9e-129">Parameter</span></span>      | <span data-ttu-id="7ae9e-130">Тип</span><span class="sxs-lookup"><span data-stu-id="7ae9e-130">Type</span></span>    |<span data-ttu-id="7ae9e-131">Описание</span><span class="sxs-lookup"><span data-stu-id="7ae9e-131">Description</span></span>|
+| <span data-ttu-id="b1f14-130">Параметр</span><span class="sxs-lookup"><span data-stu-id="b1f14-130">Parameter</span></span>      | <span data-ttu-id="b1f14-131">Тип</span><span class="sxs-lookup"><span data-stu-id="b1f14-131">Type</span></span>    |<span data-ttu-id="b1f14-132">Описание</span><span class="sxs-lookup"><span data-stu-id="b1f14-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="7ae9e-132">role</span><span class="sxs-lookup"><span data-stu-id="7ae9e-132">role</span></span>|<span data-ttu-id="7ae9e-133">String</span><span class="sxs-lookup"><span data-stu-id="7ae9e-133">String</span></span>|<span data-ttu-id="7ae9e-134">Возможные значения: "средство просмотра", "общий доступ"</span><span class="sxs-lookup"><span data-stu-id="7ae9e-134">Possible values are: 'viewer', 'sharer'</span></span>|
+|<span data-ttu-id="b1f14-133">role</span><span class="sxs-lookup"><span data-stu-id="b1f14-133">role</span></span>|<span data-ttu-id="b1f14-134">Строка</span><span class="sxs-lookup"><span data-stu-id="b1f14-134">String</span></span>|<span data-ttu-id="b1f14-135">Возможные значения: "средство просмотра", "общий доступ"</span><span class="sxs-lookup"><span data-stu-id="b1f14-135">Possible values are: 'viewer', 'sharer'</span></span>|
 
-## <a name="response"></a><span data-ttu-id="7ae9e-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="7ae9e-135">Response</span></span>
-<span data-ttu-id="7ae9e-136">В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика, а все участники получат обновление списка.</span><span class="sxs-lookup"><span data-stu-id="7ae9e-136">If successful, this method returns a `202 Accepted` response code, and all participants will receive a roster update.</span></span>
+## <a name="response"></a><span data-ttu-id="b1f14-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="b1f14-136">Response</span></span>
+<span data-ttu-id="b1f14-137">В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика, а все участники получат обновление списка.</span><span class="sxs-lookup"><span data-stu-id="b1f14-137">If successful, this method returns a `202 Accepted` response code, and all participants will receive a roster update.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7ae9e-137">Пример</span><span class="sxs-lookup"><span data-stu-id="7ae9e-137">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b1f14-138">Пример</span><span class="sxs-lookup"><span data-stu-id="b1f14-138">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="7ae9e-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="7ae9e-138">Request</span></span>
-<span data-ttu-id="7ae9e-139">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="7ae9e-139">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="b1f14-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="b1f14-139">Request</span></span>
+<span data-ttu-id="b1f14-140">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b1f14-140">The following example shows the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="7ae9e-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="7ae9e-140">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b1f14-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="b1f14-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-changeScreenSharingRole"
@@ -69,27 +71,27 @@ Content-Length: 24
   "role": "viewer"
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="7ae9e-141">C#</span><span class="sxs-lookup"><span data-stu-id="7ae9e-141">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b1f14-142">C#</span><span class="sxs-lookup"><span data-stu-id="b1f14-142">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-changescreensharingrole-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="7ae9e-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7ae9e-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b1f14-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b1f14-143">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-changescreensharingrole-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="7ae9e-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7ae9e-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b1f14-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b1f14-144">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-changescreensharingrole-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="7ae9e-144">Java</span><span class="sxs-lookup"><span data-stu-id="7ae9e-144">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="b1f14-145">Java</span><span class="sxs-lookup"><span data-stu-id="b1f14-145">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/call-changescreensharingrole-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="7ae9e-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="7ae9e-145">Response</span></span>
-<span data-ttu-id="7ae9e-146">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="7ae9e-146">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="b1f14-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="b1f14-146">Response</span></span>
+<span data-ttu-id="b1f14-147">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="b1f14-147">Here is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -99,8 +101,8 @@ Content-Length: 24
 ```http
 HTTP/1.1 202 Accepted
 ```
-##### <a name="notification---roster-updated-with-participant-sending-screen-sharing-video"></a><span data-ttu-id="7ae9e-147">Уведомление о подсписке, обновленный при отправке участником демонстрации экрана общего видео</span><span class="sxs-lookup"><span data-stu-id="7ae9e-147">Notification - roster updated with participant sending screen sharing video</span></span>
-<span data-ttu-id="7ae9e-148">Обратите `direction: sendOnly` внимание на свойство в потоке мультимедиа.</span><span class="sxs-lookup"><span data-stu-id="7ae9e-148">Note the `direction: sendOnly` property on the media stream.</span></span>
+##### <a name="notification---roster-updated-with-participant-sending-screen-sharing-video"></a><span data-ttu-id="b1f14-148">Уведомление о подсписке, обновленный при отправке участником демонстрации экрана общего видео</span><span class="sxs-lookup"><span data-stu-id="b1f14-148">Notification - roster updated with participant sending screen sharing video</span></span>
+<span data-ttu-id="b1f14-149">Обратите `direction: sendOnly` внимание на свойство в потоке мультимедиа.</span><span class="sxs-lookup"><span data-stu-id="b1f14-149">Note the `direction: sendOnly` property on the media stream.</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls

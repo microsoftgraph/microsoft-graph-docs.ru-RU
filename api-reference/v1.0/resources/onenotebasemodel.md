@@ -5,20 +5,22 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: be196cff07a33f1debabd71e3e344aee220bf0a2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f92d59913065bad82e2af0726a0669c98e4d4df3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035842"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534163"
 ---
-# <a name="onenoteentitybasemodel-resource"></a><span data-ttu-id="085c8-103">ресурс Оненотинтитибасемодел</span><span class="sxs-lookup"><span data-stu-id="085c8-103">onenoteEntityBaseModel resource</span></span>
+# <a name="onenoteentitybasemodel-resource"></a><span data-ttu-id="9d05e-103">ресурс Оненотинтитибасемодел</span><span class="sxs-lookup"><span data-stu-id="9d05e-103">onenoteEntityBaseModel resource</span></span>
 
-<span data-ttu-id="085c8-104">Это базовый тип для объектов OneNote.</span><span class="sxs-lookup"><span data-stu-id="085c8-104">This is the base type for OneNote entities.</span></span>
+<span data-ttu-id="9d05e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9d05e-104">Namespace: microsoft.graph</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="085c8-105">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="085c8-105">JSON representation</span></span>
+<span data-ttu-id="9d05e-105">Это базовый тип для объектов OneNote.</span><span class="sxs-lookup"><span data-stu-id="9d05e-105">This is the base type for OneNote entities.</span></span>
 
-<span data-ttu-id="085c8-106">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="085c8-106">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="9d05e-106">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="9d05e-106">JSON representation</span></span>
+
+<span data-ttu-id="9d05e-107">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="9d05e-107">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -36,10 +38,10 @@ ms.locfileid: "36035842"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="085c8-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="085c8-107">Properties</span></span>
-| <span data-ttu-id="085c8-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="085c8-108">Property</span></span>     | <span data-ttu-id="085c8-109">Тип</span><span class="sxs-lookup"><span data-stu-id="085c8-109">Type</span></span>   |<span data-ttu-id="085c8-110">Описание</span><span class="sxs-lookup"><span data-stu-id="085c8-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="9d05e-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="9d05e-108">Properties</span></span>
+| <span data-ttu-id="9d05e-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="9d05e-109">Property</span></span>     | <span data-ttu-id="9d05e-110">Тип</span><span class="sxs-lookup"><span data-stu-id="9d05e-110">Type</span></span>   |<span data-ttu-id="9d05e-111">Описание</span><span class="sxs-lookup"><span data-stu-id="9d05e-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="085c8-111">Self</span><span class="sxs-lookup"><span data-stu-id="085c8-111">self</span></span>|<span data-ttu-id="085c8-112">String</span><span class="sxs-lookup"><span data-stu-id="085c8-112">String</span></span>|<span data-ttu-id="085c8-113">Конечная точка, в которой можно получить сведения о странице.</span><span class="sxs-lookup"><span data-stu-id="085c8-113">The endpoint where you can get details about the page.</span></span> <span data-ttu-id="085c8-114">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="085c8-114">Read-only.</span></span>|
+|<span data-ttu-id="9d05e-112">Self</span><span class="sxs-lookup"><span data-stu-id="9d05e-112">self</span></span>|<span data-ttu-id="9d05e-113">Строка</span><span class="sxs-lookup"><span data-stu-id="9d05e-113">String</span></span>|<span data-ttu-id="9d05e-114">Конечная точка, в которой можно получить сведения о странице.</span><span class="sxs-lookup"><span data-stu-id="9d05e-114">The endpoint where you can get details about the page.</span></span> <span data-ttu-id="9d05e-115">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="9d05e-115">Read-only.</span></span>|
 
 <!-- uuid: bfb567de-2a2a-4b81-bf47-a55626a0c166
 2015-10-25 14:57:30 UTC -->

@@ -5,51 +5,53 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 48ba8ef11dedc266a24cb84dc29dd4de1bd9af81
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 8f2aac2615c570e245b39b37006e12743c48da6f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36730066"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511028"
 ---
-# <a name="get-photo"></a><span data-ttu-id="8f04f-103">Получение фотографии</span><span class="sxs-lookup"><span data-stu-id="8f04f-103">Get photo</span></span>
+# <a name="get-photo"></a><span data-ttu-id="56a8b-103">Получение фотографии</span><span class="sxs-lookup"><span data-stu-id="56a8b-103">Get photo</span></span>
 
-<span data-ttu-id="8f04f-104">Получение свойств и связей объекта фотографии.</span><span class="sxs-lookup"><span data-stu-id="8f04f-104">Retrieve the properties and relationships of photo object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="8f04f-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="8f04f-105">Permissions</span></span>
-<span data-ttu-id="8f04f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8f04f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="56a8b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="56a8b-104">Namespace: microsoft.graph</span></span>
 
-|<span data-ttu-id="8f04f-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8f04f-108">Permission type</span></span>      | <span data-ttu-id="8f04f-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="8f04f-109">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="56a8b-105">Получение свойств и связей объекта фотографии.</span><span class="sxs-lookup"><span data-stu-id="56a8b-105">Retrieve the properties and relationships of photo object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="56a8b-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="56a8b-106">Permissions</span></span>
+<span data-ttu-id="56a8b-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="56a8b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="56a8b-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="56a8b-109">Permission type</span></span>      | <span data-ttu-id="56a8b-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="56a8b-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8f04f-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8f04f-110">Delegated (work or school account)</span></span> | <span data-ttu-id="8f04f-111">Files.Read</span><span class="sxs-lookup"><span data-stu-id="8f04f-111">Files.Read</span></span>    |
-|<span data-ttu-id="8f04f-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8f04f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8f04f-113">Files.Read</span><span class="sxs-lookup"><span data-stu-id="8f04f-113">Files.Read</span></span>    |
-|<span data-ttu-id="8f04f-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="8f04f-114">Application</span></span> | <span data-ttu-id="8f04f-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8f04f-115">Not supported.</span></span> |
+|<span data-ttu-id="56a8b-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="56a8b-111">Delegated (work or school account)</span></span> | <span data-ttu-id="56a8b-112">Files.Read</span><span class="sxs-lookup"><span data-stu-id="56a8b-112">Files.Read</span></span>    |
+|<span data-ttu-id="56a8b-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="56a8b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="56a8b-114">Files.Read</span><span class="sxs-lookup"><span data-stu-id="56a8b-114">Files.Read</span></span>    |
+|<span data-ttu-id="56a8b-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="56a8b-115">Application</span></span> | <span data-ttu-id="56a8b-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="56a8b-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8f04f-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8f04f-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="56a8b-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="56a8b-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}/photo
 GET /groups/{id}/photo
 GET /drive/root/createdByUser/photo
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="8f04f-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="8f04f-117">Optional query parameters</span></span>
-<span data-ttu-id="8f04f-118">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="8f04f-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="56a8b-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="56a8b-118">Optional query parameters</span></span>
+<span data-ttu-id="56a8b-119">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="56a8b-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="8f04f-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="8f04f-119">Request headers</span></span>
-| <span data-ttu-id="8f04f-120">Имя</span><span class="sxs-lookup"><span data-stu-id="8f04f-120">Name</span></span>       | <span data-ttu-id="8f04f-121">Тип</span><span class="sxs-lookup"><span data-stu-id="8f04f-121">Type</span></span> | <span data-ttu-id="8f04f-122">Описание</span><span class="sxs-lookup"><span data-stu-id="8f04f-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="56a8b-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="56a8b-120">Request headers</span></span>
+| <span data-ttu-id="56a8b-121">Имя</span><span class="sxs-lookup"><span data-stu-id="56a8b-121">Name</span></span>       | <span data-ttu-id="56a8b-122">Тип</span><span class="sxs-lookup"><span data-stu-id="56a8b-122">Type</span></span> | <span data-ttu-id="56a8b-123">Описание</span><span class="sxs-lookup"><span data-stu-id="56a8b-123">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="8f04f-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="8f04f-123">Authorization</span></span>  | <span data-ttu-id="8f04f-124">string</span><span class="sxs-lookup"><span data-stu-id="8f04f-124">string</span></span>  | <span data-ttu-id="8f04f-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8f04f-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="56a8b-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="56a8b-124">Authorization</span></span>  | <span data-ttu-id="56a8b-125">string</span><span class="sxs-lookup"><span data-stu-id="56a8b-125">string</span></span>  | <span data-ttu-id="56a8b-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="56a8b-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="8f04f-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="8f04f-127">Request body</span></span>
-<span data-ttu-id="8f04f-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="8f04f-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="56a8b-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="56a8b-128">Request body</span></span>
+<span data-ttu-id="56a8b-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="56a8b-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8f04f-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="8f04f-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="56a8b-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="56a8b-130">Response</span></span>
 
-<span data-ttu-id="8f04f-130">В случае успеха этот метод возвращает код отклика `200 OK` и объект [photo](../resources/photo.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="8f04f-130">If successful, this method returns a `200 OK` response code and [photo](../resources/photo.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="8f04f-131">Пример</span><span class="sxs-lookup"><span data-stu-id="8f04f-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="8f04f-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="8f04f-132">Request</span></span>
-<span data-ttu-id="8f04f-133">Ниже приведен пример запроса на получение метаданных фотографий.</span><span class="sxs-lookup"><span data-stu-id="8f04f-133">Here is an example of the request for photo metadata.</span></span>
+<span data-ttu-id="56a8b-131">В случае успеха этот метод возвращает код отклика `200 OK` и объект [photo](../resources/photo.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="56a8b-131">If successful, this method returns a `200 OK` response code and [photo](../resources/photo.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="56a8b-132">Пример</span><span class="sxs-lookup"><span data-stu-id="56a8b-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="56a8b-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="56a8b-133">Request</span></span>
+<span data-ttu-id="56a8b-134">Ниже приведен пример запроса на получение метаданных фотографий.</span><span class="sxs-lookup"><span data-stu-id="56a8b-134">Here is an example of the request for photo metadata.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="8f04f-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="8f04f-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="56a8b-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="56a8b-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_photo"
@@ -57,26 +59,26 @@ GET /drive/root/createdByUser/photo
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="8f04f-135">C#</span><span class="sxs-lookup"><span data-stu-id="8f04f-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="56a8b-136">C#</span><span class="sxs-lookup"><span data-stu-id="56a8b-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-photo-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8f04f-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8f04f-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="56a8b-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="56a8b-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-photo-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="8f04f-137">Цель — C</span><span class="sxs-lookup"><span data-stu-id="8f04f-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="56a8b-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="56a8b-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-photo-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="8f04f-138">Java</span><span class="sxs-lookup"><span data-stu-id="8f04f-138">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="56a8b-139">Java</span><span class="sxs-lookup"><span data-stu-id="56a8b-139">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-photo-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="8f04f-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="8f04f-139">Response</span></span>
-<span data-ttu-id="8f04f-140">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="8f04f-140">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="56a8b-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="56a8b-140">Response</span></span>
+<span data-ttu-id="56a8b-141">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="56a8b-141">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -93,10 +95,10 @@ Content-length: 53
   "id": "id-value"
 }
 ```
-##### <a name="request"></a><span data-ttu-id="8f04f-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="8f04f-141">Request</span></span>
-<span data-ttu-id="8f04f-142">Ниже приведен пример запроса на получение байтов фотографий.</span><span class="sxs-lookup"><span data-stu-id="8f04f-142">Here is an example of the request for the photo bytes.</span></span>
+##### <a name="request"></a><span data-ttu-id="56a8b-142">Запрос</span><span class="sxs-lookup"><span data-stu-id="56a8b-142">Request</span></span>
+<span data-ttu-id="56a8b-143">Ниже приведен пример запроса на получение байтов фотографий.</span><span class="sxs-lookup"><span data-stu-id="56a8b-143">Here is an example of the request for the photo bytes.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="8f04f-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="8f04f-143">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="56a8b-144">HTTP</span><span class="sxs-lookup"><span data-stu-id="56a8b-144">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_photo_value"
@@ -104,26 +106,26 @@ Content-length: 53
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo/$value
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="8f04f-144">C#</span><span class="sxs-lookup"><span data-stu-id="8f04f-144">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="56a8b-145">C#</span><span class="sxs-lookup"><span data-stu-id="56a8b-145">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-photo-value-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="8f04f-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8f04f-145">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="56a8b-146">JavaScript</span><span class="sxs-lookup"><span data-stu-id="56a8b-146">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-photo-value-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="8f04f-146">Цель — C</span><span class="sxs-lookup"><span data-stu-id="8f04f-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="56a8b-147">Objective-C</span><span class="sxs-lookup"><span data-stu-id="56a8b-147">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-photo-value-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="8f04f-147">Java</span><span class="sxs-lookup"><span data-stu-id="8f04f-147">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="56a8b-148">Java</span><span class="sxs-lookup"><span data-stu-id="56a8b-148">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-photo-value-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="8f04f-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="8f04f-148">Response</span></span>
-<span data-ttu-id="8f04f-149">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="8f04f-149">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="56a8b-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="56a8b-149">Response</span></span>
+<span data-ttu-id="56a8b-150">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="56a8b-150">Here is an example of the response.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Edm.Stream" } -->
 

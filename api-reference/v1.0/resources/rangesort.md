@@ -5,33 +5,35 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: f4b5ffac155542615d17db0f6e511cf77c72cc82
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 3a542ffef4efa84aa6be046d0e66dffabbf34f76
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36730311"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533928"
 ---
-# <a name="rangesort-resource-type"></a><span data-ttu-id="6779f-103">Тип ресурса RangeSort</span><span class="sxs-lookup"><span data-stu-id="6779f-103">RangeSort resource type</span></span>
+# <a name="rangesort-resource-type"></a><span data-ttu-id="1c4f4-103">Тип ресурса RangeSort</span><span class="sxs-lookup"><span data-stu-id="1c4f4-103">RangeSort resource type</span></span>
 
-<span data-ttu-id="6779f-104">Управляет операциями сортировки для объектов Range.</span><span class="sxs-lookup"><span data-stu-id="6779f-104">Manages sorting operations on Range objects.</span></span>
+<span data-ttu-id="1c4f4-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1c4f4-104">Namespace: microsoft.graph</span></span>
+
+<span data-ttu-id="1c4f4-105">Управляет операциями сортировки для объектов Range.</span><span class="sxs-lookup"><span data-stu-id="1c4f4-105">Manages sorting operations on Range objects.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="6779f-105">Методы</span><span class="sxs-lookup"><span data-stu-id="6779f-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="1c4f4-106">Методы</span><span class="sxs-lookup"><span data-stu-id="1c4f4-106">Methods</span></span>
 
-| <span data-ttu-id="6779f-106">Метод</span><span class="sxs-lookup"><span data-stu-id="6779f-106">Method</span></span>           | <span data-ttu-id="6779f-107">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="6779f-107">Return Type</span></span>    |<span data-ttu-id="6779f-108">Описание</span><span class="sxs-lookup"><span data-stu-id="6779f-108">Description</span></span>|
+| <span data-ttu-id="1c4f4-107">Метод</span><span class="sxs-lookup"><span data-stu-id="1c4f4-107">Method</span></span>           | <span data-ttu-id="1c4f4-108">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="1c4f4-108">Return Type</span></span>    |<span data-ttu-id="1c4f4-109">Описание</span><span class="sxs-lookup"><span data-stu-id="1c4f4-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="6779f-109">Apply</span><span class="sxs-lookup"><span data-stu-id="6779f-109">Apply</span></span>](../api/rangesort-apply.md)|<span data-ttu-id="6779f-110">Нет</span><span class="sxs-lookup"><span data-stu-id="6779f-110">None</span></span>|<span data-ttu-id="6779f-111">Выполняет сортировку.</span><span class="sxs-lookup"><span data-stu-id="6779f-111">Perform a sort operation.</span></span>|
+|[<span data-ttu-id="1c4f4-110">Apply</span><span class="sxs-lookup"><span data-stu-id="1c4f4-110">Apply</span></span>](../api/rangesort-apply.md)|<span data-ttu-id="1c4f4-111">Нет</span><span class="sxs-lookup"><span data-stu-id="1c4f4-111">None</span></span>|<span data-ttu-id="1c4f4-112">Выполняет сортировку.</span><span class="sxs-lookup"><span data-stu-id="1c4f4-112">Perform a sort operation.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="6779f-112">Свойства</span><span class="sxs-lookup"><span data-stu-id="6779f-112">Properties</span></span>
-<span data-ttu-id="6779f-113">Нет</span><span class="sxs-lookup"><span data-stu-id="6779f-113">None</span></span>
+## <a name="properties"></a><span data-ttu-id="1c4f4-113">Свойства</span><span class="sxs-lookup"><span data-stu-id="1c4f4-113">Properties</span></span>
+<span data-ttu-id="1c4f4-114">Нет</span><span class="sxs-lookup"><span data-stu-id="1c4f4-114">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="6779f-114">Отношения</span><span class="sxs-lookup"><span data-stu-id="6779f-114">Relationships</span></span>
-<span data-ttu-id="6779f-115">Нет</span><span class="sxs-lookup"><span data-stu-id="6779f-115">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="1c4f4-115">Связи</span><span class="sxs-lookup"><span data-stu-id="1c4f4-115">Relationships</span></span>
+<span data-ttu-id="1c4f4-116">Нет</span><span class="sxs-lookup"><span data-stu-id="1c4f4-116">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="6779f-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="6779f-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="1c4f4-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="1c4f4-117">JSON representation</span></span>
 
-<span data-ttu-id="6779f-117">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="6779f-117">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="1c4f4-118">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="1c4f4-118">Here is a JSON representation of the resource.</span></span>
 
 
 <!-- {
@@ -48,11 +50,11 @@ ms.locfileid: "36730311"
 }
 ```
 
-##### <a name="request"></a><span data-ttu-id="6779f-118">Запрос</span><span class="sxs-lookup"><span data-stu-id="6779f-118">Request</span></span>
-<span data-ttu-id="6779f-119">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6779f-119">Here is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="1c4f4-119">Запрос</span><span class="sxs-lookup"><span data-stu-id="1c4f4-119">Request</span></span>
+<span data-ttu-id="1c4f4-120">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1c4f4-120">Here is an example of the request.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="6779f-120">HTTP</span><span class="sxs-lookup"><span data-stu-id="6779f-120">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="1c4f4-121">HTTP</span><span class="sxs-lookup"><span data-stu-id="1c4f4-121">HTTP</span></span>](#tab/http)
 <!--{
   "blockType": "request",
   "name": "range_sort"
@@ -60,27 +62,27 @@ ms.locfileid: "36730311"
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/sort
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="6779f-121">C#</span><span class="sxs-lookup"><span data-stu-id="6779f-121">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="1c4f4-122">C#</span><span class="sxs-lookup"><span data-stu-id="1c4f4-122">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/range-sort-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="6779f-122">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6779f-122">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="1c4f4-123">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1c4f4-123">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/range-sort-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="6779f-123">Цель — C</span><span class="sxs-lookup"><span data-stu-id="6779f-123">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="1c4f4-124">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1c4f4-124">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/range-sort-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="6779f-124">Java</span><span class="sxs-lookup"><span data-stu-id="6779f-124">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="1c4f4-125">Java</span><span class="sxs-lookup"><span data-stu-id="1c4f4-125">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/range-sort-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="6779f-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="6779f-125">Response</span></span>
-<span data-ttu-id="6779f-126">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="6779f-126">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="1c4f4-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="1c4f4-126">Response</span></span>
+<span data-ttu-id="1c4f4-127">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="1c4f4-127">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

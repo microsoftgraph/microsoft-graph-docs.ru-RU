@@ -5,55 +5,57 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 96a016618cc9f2ed97b5da178612da7d7ee0af44
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 4e6aba0c4d712febeee1273738a0c2cbd2bc2dff
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36370377"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517553"
 ---
-# <a name="update-educationclass-properties"></a><span data-ttu-id="bead7-103">Обновление свойств educationclass</span><span class="sxs-lookup"><span data-stu-id="bead7-103">Update educationclass properties</span></span>
+# <a name="update-educationclass-properties"></a><span data-ttu-id="563c7-103">Обновление свойств educationclass</span><span class="sxs-lookup"><span data-stu-id="563c7-103">Update educationclass properties</span></span>
 
-<span data-ttu-id="bead7-104">Обновление свойств курса.</span><span class="sxs-lookup"><span data-stu-id="bead7-104">Update the properties of a class.</span></span>
+<span data-ttu-id="563c7-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="563c7-104">Namespace: microsoft.graph</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="bead7-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="bead7-105">Permissions</span></span>
-<span data-ttu-id="bead7-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bead7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="563c7-105">Обновление свойств курса.</span><span class="sxs-lookup"><span data-stu-id="563c7-105">Update the properties of a class.</span></span>
 
-|<span data-ttu-id="bead7-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="bead7-108">Permission type</span></span>      | <span data-ttu-id="bead7-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="bead7-109">Permissions (from least to most privileged)</span></span>              |
+## <a name="permissions"></a><span data-ttu-id="563c7-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="563c7-106">Permissions</span></span>
+<span data-ttu-id="563c7-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="563c7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="563c7-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="563c7-109">Permission type</span></span>      | <span data-ttu-id="563c7-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="563c7-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="bead7-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="bead7-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="bead7-111">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bead7-111">Not supported.</span></span>  |
-|<span data-ttu-id="bead7-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="bead7-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bead7-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bead7-113">Not supported.</span></span>   |
-|<span data-ttu-id="bead7-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="bead7-114">Application</span></span> | <span data-ttu-id="bead7-115">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bead7-115">EduRoster.ReadWrite.All</span></span> | 
+|<span data-ttu-id="563c7-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="563c7-111">Delegated (work or school account)</span></span> |  <span data-ttu-id="563c7-112">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="563c7-112">Not supported.</span></span>  |
+|<span data-ttu-id="563c7-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="563c7-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="563c7-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="563c7-114">Not supported.</span></span>   |
+|<span data-ttu-id="563c7-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="563c7-115">Application</span></span> | <span data-ttu-id="563c7-116">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="563c7-116">EduRoster.ReadWrite.All</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="bead7-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="bead7-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="563c7-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="563c7-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /education/classes/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="bead7-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="bead7-117">Request headers</span></span>
-| <span data-ttu-id="bead7-118">Заголовок</span><span class="sxs-lookup"><span data-stu-id="bead7-118">Header</span></span>       | <span data-ttu-id="bead7-119">Значение</span><span class="sxs-lookup"><span data-stu-id="bead7-119">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="563c7-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="563c7-118">Request headers</span></span>
+| <span data-ttu-id="563c7-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="563c7-119">Header</span></span>       | <span data-ttu-id="563c7-120">Значение</span><span class="sxs-lookup"><span data-stu-id="563c7-120">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="bead7-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="bead7-120">Authorization</span></span>  | <span data-ttu-id="bead7-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="bead7-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="bead7-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="bead7-123">Content-Type</span></span>  | <span data-ttu-id="bead7-124">application/json</span><span class="sxs-lookup"><span data-stu-id="bead7-124">application/json</span></span>  |
+| <span data-ttu-id="563c7-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="563c7-121">Authorization</span></span>  | <span data-ttu-id="563c7-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="563c7-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="563c7-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="563c7-124">Content-Type</span></span>  | <span data-ttu-id="563c7-125">application/json</span><span class="sxs-lookup"><span data-stu-id="563c7-125">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="bead7-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="bead7-125">Request body</span></span>
-<span data-ttu-id="bead7-126">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="bead7-126">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="bead7-127">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="bead7-127">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="bead7-128">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="bead7-128">For best performance, don't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="563c7-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="563c7-126">Request body</span></span>
+<span data-ttu-id="563c7-127">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="563c7-127">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="563c7-128">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="563c7-128">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="563c7-129">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="563c7-129">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="bead7-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="bead7-129">Property</span></span>     | <span data-ttu-id="bead7-130">Тип</span><span class="sxs-lookup"><span data-stu-id="bead7-130">Type</span></span>   |<span data-ttu-id="bead7-131">Описание</span><span class="sxs-lookup"><span data-stu-id="bead7-131">Description</span></span>|
+| <span data-ttu-id="563c7-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="563c7-130">Property</span></span>     | <span data-ttu-id="563c7-131">Тип</span><span class="sxs-lookup"><span data-stu-id="563c7-131">Type</span></span>   |<span data-ttu-id="563c7-132">Описание</span><span class="sxs-lookup"><span data-stu-id="563c7-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="bead7-132">description</span><span class="sxs-lookup"><span data-stu-id="bead7-132">description</span></span>|<span data-ttu-id="bead7-133">String</span><span class="sxs-lookup"><span data-stu-id="bead7-133">String</span></span>| <span data-ttu-id="bead7-134">Описание курса.</span><span class="sxs-lookup"><span data-stu-id="bead7-134">Description of the class.</span></span>|
-|<span data-ttu-id="bead7-135">displayName</span><span class="sxs-lookup"><span data-stu-id="bead7-135">displayName</span></span>|<span data-ttu-id="bead7-136">Строка</span><span class="sxs-lookup"><span data-stu-id="bead7-136">String</span></span>| <span data-ttu-id="bead7-137">Название курса.</span><span class="sxs-lookup"><span data-stu-id="bead7-137">Name of the class.</span></span>|
-|<span data-ttu-id="bead7-138">mailNickname</span><span class="sxs-lookup"><span data-stu-id="bead7-138">mailNickname</span></span>|<span data-ttu-id="bead7-139">String</span><span class="sxs-lookup"><span data-stu-id="bead7-139">String</span></span>| <span data-ttu-id="bead7-140">Почтовый псевдоним для отправки электронных сообщений всем пользователям, если это возможно.</span><span class="sxs-lookup"><span data-stu-id="bead7-140">Email alias for sending email to all users if that feature is enabled.</span></span> |
+|<span data-ttu-id="563c7-133">description</span><span class="sxs-lookup"><span data-stu-id="563c7-133">description</span></span>|<span data-ttu-id="563c7-134">String</span><span class="sxs-lookup"><span data-stu-id="563c7-134">String</span></span>| <span data-ttu-id="563c7-135">Описание курса.</span><span class="sxs-lookup"><span data-stu-id="563c7-135">Description of the class.</span></span>|
+|<span data-ttu-id="563c7-136">displayName</span><span class="sxs-lookup"><span data-stu-id="563c7-136">displayName</span></span>|<span data-ttu-id="563c7-137">Строка</span><span class="sxs-lookup"><span data-stu-id="563c7-137">String</span></span>| <span data-ttu-id="563c7-138">Название курса.</span><span class="sxs-lookup"><span data-stu-id="563c7-138">Name of the class.</span></span>|
+|<span data-ttu-id="563c7-139">mailNickname</span><span class="sxs-lookup"><span data-stu-id="563c7-139">mailNickname</span></span>|<span data-ttu-id="563c7-140">String</span><span class="sxs-lookup"><span data-stu-id="563c7-140">String</span></span>| <span data-ttu-id="563c7-141">Почтовый псевдоним для отправки электронных сообщений всем пользователям, если это возможно.</span><span class="sxs-lookup"><span data-stu-id="563c7-141">Email alias for sending email to all users if that feature is enabled.</span></span> |
 <!-- Please verify the revised description here. -->
-<span data-ttu-id="bead7-141">Свойство classCode типа String представляет собой код курса, используемый учебным заведением. Свойство externalId типа String представляет собой идентификатор курса из системы синхронизации.</span><span class="sxs-lookup"><span data-stu-id="bead7-141">|classCode|String| Class code used by the school.| |externalId|String| ID of the class from the syncing system.</span></span> <span data-ttu-id="bead7-142">Свойство externalName типа String представляет собой название курса в системе синхронизации. Свойство externalSource типа String представляет собой способ создания курса.</span><span class="sxs-lookup"><span data-stu-id="bead7-142">| |externalName|String|Name of the class in the syncing system.| |externalSource|string| How this class was created.</span></span> <span data-ttu-id="bead7-143">Возможные значения: `sis`, `manual`, `enum_sentinel`. |</span><span class="sxs-lookup"><span data-stu-id="bead7-143">The possible values are: `sis`, `manual`, `enum_sentinel`.|</span></span>
+<span data-ttu-id="563c7-142">Свойство classCode типа String представляет собой код курса, используемый учебным заведением. Свойство externalId типа String представляет собой идентификатор курса из системы синхронизации.</span><span class="sxs-lookup"><span data-stu-id="563c7-142">|classCode|String| Class code used by the school.| |externalId|String| ID of the class from the syncing system.</span></span> <span data-ttu-id="563c7-143">Свойство externalName типа String представляет собой название курса в системе синхронизации. Свойство externalSource типа String представляет собой способ создания курса.</span><span class="sxs-lookup"><span data-stu-id="563c7-143">| |externalName|String|Name of the class in the syncing system.| |externalSource|string| How this class was created.</span></span> <span data-ttu-id="563c7-144">Возможные значения: `sis`, `manual`, `enum_sentinel`. |</span><span class="sxs-lookup"><span data-stu-id="563c7-144">The possible values are: `sis`, `manual`, `enum_sentinel`.|</span></span>
 
-## <a name="response"></a><span data-ttu-id="bead7-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="bead7-144">Response</span></span>
-<span data-ttu-id="bead7-145">При успешном выполнении этот метод возвратит код отклика `200 OK` и обновленный объект [educationClass](../resources/educationclass.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="bead7-145">If successful, this method returns a `200 OK` response code and an updated [educationClass](../resources/educationclass.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="bead7-146">Пример</span><span class="sxs-lookup"><span data-stu-id="bead7-146">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="bead7-147">Запрос</span><span class="sxs-lookup"><span data-stu-id="bead7-147">Request</span></span>
-<span data-ttu-id="bead7-148">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="bead7-148">The following is an example of the request.</span></span>
+## <a name="response"></a><span data-ttu-id="563c7-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="563c7-145">Response</span></span>
+<span data-ttu-id="563c7-146">При успешном выполнении этот метод возвратит код отклика `200 OK` и обновленный объект [educationClass](../resources/educationclass.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="563c7-146">If successful, this method returns a `200 OK` response code and an updated [educationClass](../resources/educationclass.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="563c7-147">Пример</span><span class="sxs-lookup"><span data-stu-id="563c7-147">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="563c7-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="563c7-148">Request</span></span>
+<span data-ttu-id="563c7-149">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="563c7-149">The following is an example of the request.</span></span>
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="bead7-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="bead7-149">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="563c7-150">HTTP</span><span class="sxs-lookup"><span data-stu-id="563c7-150">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_educationclass"
@@ -68,28 +70,28 @@ Content-length: 224
   "displayName": "World History Level 1",
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="bead7-150">C#</span><span class="sxs-lookup"><span data-stu-id="bead7-150">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="563c7-151">C#</span><span class="sxs-lookup"><span data-stu-id="563c7-151">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationclass-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="bead7-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="bead7-151">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="563c7-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="563c7-152">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationclass-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="bead7-152">Цель — C</span><span class="sxs-lookup"><span data-stu-id="bead7-152">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="563c7-153">Objective-C</span><span class="sxs-lookup"><span data-stu-id="563c7-153">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationclass-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="bead7-153">Java</span><span class="sxs-lookup"><span data-stu-id="bead7-153">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="563c7-154">Java</span><span class="sxs-lookup"><span data-stu-id="563c7-154">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationclass-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="bead7-154">Отклик</span><span class="sxs-lookup"><span data-stu-id="bead7-154">Response</span></span>
-<span data-ttu-id="bead7-155">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="bead7-155">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="563c7-155">Отклик</span><span class="sxs-lookup"><span data-stu-id="563c7-155">Response</span></span>
+<span data-ttu-id="563c7-156">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="563c7-156">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="bead7-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="bead7-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="563c7-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="563c7-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

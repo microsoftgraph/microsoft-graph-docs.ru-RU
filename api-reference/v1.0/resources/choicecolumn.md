@@ -7,20 +7,22 @@ localization_priority: Normal
 description: Ресурс choiceColumn в ресурсе columnDefinition указывает, что значения столбца можно выбрать из списка вариантов.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a86cb783fb170c2b9528b47272fc214ea0010760
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a29a80bccd2afb76804b2e1a4d81b5a69d44adf1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029738"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533074"
 ---
-# <a name="choicecolumn-resource-type"></a><span data-ttu-id="3a236-103">Тип ресурса choiceColumn</span><span class="sxs-lookup"><span data-stu-id="3a236-103">ChoiceColumn resource type</span></span>
+# <a name="choicecolumn-resource-type"></a><span data-ttu-id="4a51b-103">Тип ресурса choiceColumn</span><span class="sxs-lookup"><span data-stu-id="4a51b-103">ChoiceColumn resource type</span></span>
 
-<span data-ttu-id="3a236-104">Ресурс **choiceColumn** в ресурсе [columnDefinition](columndefinition.md) указывает, что значения столбца можно выбрать из списка вариантов.</span><span class="sxs-lookup"><span data-stu-id="3a236-104">The **choiceColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values can be selected from a list of choices.</span></span>
+<span data-ttu-id="4a51b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4a51b-104">Namespace: microsoft.graph</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="3a236-105">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="3a236-105">JSON representation</span></span>
+<span data-ttu-id="4a51b-105">Ресурс **choiceColumn** в ресурсе [columnDefinition](columndefinition.md) указывает, что значения столбца можно выбрать из списка вариантов.</span><span class="sxs-lookup"><span data-stu-id="4a51b-105">The **choiceColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column's values can be selected from a list of choices.</span></span>
 
-<span data-ttu-id="3a236-106">Ниже показано представление ресурса **choiceColumn** в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="3a236-106">Here is a JSON representation of a **choiceColumn** resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4a51b-106">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="4a51b-106">JSON representation</span></span>
+
+<span data-ttu-id="4a51b-107">Ниже показано представление ресурса **choiceColumn** в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="4a51b-107">Here is a JSON representation of a **choiceColumn** resource.</span></span>
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.choiceColumn" } -->
 
 ```json
@@ -31,13 +33,13 @@ ms.locfileid: "36029738"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="3a236-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="3a236-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="4a51b-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="4a51b-108">Properties</span></span>
 
-| <span data-ttu-id="3a236-108">Имя свойства</span><span class="sxs-lookup"><span data-stu-id="3a236-108">Property name</span></span>      | <span data-ttu-id="3a236-109">Тип</span><span class="sxs-lookup"><span data-stu-id="3a236-109">Type</span></span>               | <span data-ttu-id="3a236-110">Описание</span><span class="sxs-lookup"><span data-stu-id="3a236-110">Description</span></span>
+| <span data-ttu-id="4a51b-109">Имя свойства</span><span class="sxs-lookup"><span data-stu-id="4a51b-109">Property name</span></span>      | <span data-ttu-id="4a51b-110">Тип</span><span class="sxs-lookup"><span data-stu-id="4a51b-110">Type</span></span>               | <span data-ttu-id="4a51b-111">Описание</span><span class="sxs-lookup"><span data-stu-id="4a51b-111">Description</span></span>
 |:-------------------|:-------------------|:----------------------------------------------
-| <span data-ttu-id="3a236-111">**allowTextEntry**</span><span class="sxs-lookup"><span data-stu-id="3a236-111">**allowTextEntry**</span></span> | <span data-ttu-id="3a236-112">boolean</span><span class="sxs-lookup"><span data-stu-id="3a236-112">boolean</span></span>            | <span data-ttu-id="3a236-113">Если это свойство имеет значение true, то разрешено указывать значения, которых нет в списке заранее настроенных вариантов.</span><span class="sxs-lookup"><span data-stu-id="3a236-113">If true, allows custom values that aren't in the configured choices.</span></span>
-| <span data-ttu-id="3a236-114">**choices**</span><span class="sxs-lookup"><span data-stu-id="3a236-114">**choices**</span></span>        | <span data-ttu-id="3a236-115">Коллекция (string)</span><span class="sxs-lookup"><span data-stu-id="3a236-115">collection(string)</span></span> | <span data-ttu-id="3a236-116">Список значений, доступных для данного столбца.</span><span class="sxs-lookup"><span data-stu-id="3a236-116">The list of values available for this column.</span></span>
-| <span data-ttu-id="3a236-117">**displayAs**</span><span class="sxs-lookup"><span data-stu-id="3a236-117">**displayAs**</span></span>      | <span data-ttu-id="3a236-118">string</span><span class="sxs-lookup"><span data-stu-id="3a236-118">string</span></span>             | <span data-ttu-id="3a236-119">Способ отображения вариантов в пользовательском интерфейсе.</span><span class="sxs-lookup"><span data-stu-id="3a236-119">How the choices are to be presented in the UX.</span></span> <span data-ttu-id="3a236-120">Должно иметь один из типов `checkBoxes`, `dropDownMenu` или `radioButtons`.</span><span class="sxs-lookup"><span data-stu-id="3a236-120">Must be one of `checkBoxes`, `dropDownMenu`, or `radioButtons`</span></span>
+| <span data-ttu-id="4a51b-112">**allowTextEntry**</span><span class="sxs-lookup"><span data-stu-id="4a51b-112">**allowTextEntry**</span></span> | <span data-ttu-id="4a51b-113">boolean</span><span class="sxs-lookup"><span data-stu-id="4a51b-113">boolean</span></span>            | <span data-ttu-id="4a51b-114">Если это свойство имеет значение true, то разрешено указывать значения, которых нет в списке заранее настроенных вариантов.</span><span class="sxs-lookup"><span data-stu-id="4a51b-114">If true, allows custom values that aren't in the configured choices.</span></span>
+| <span data-ttu-id="4a51b-115">**choices**</span><span class="sxs-lookup"><span data-stu-id="4a51b-115">**choices**</span></span>        | <span data-ttu-id="4a51b-116">Коллекция (string)</span><span class="sxs-lookup"><span data-stu-id="4a51b-116">collection(string)</span></span> | <span data-ttu-id="4a51b-117">Список значений, доступных для данного столбца.</span><span class="sxs-lookup"><span data-stu-id="4a51b-117">The list of values available for this column.</span></span>
+| <span data-ttu-id="4a51b-118">**displayAs**</span><span class="sxs-lookup"><span data-stu-id="4a51b-118">**displayAs**</span></span>      | <span data-ttu-id="4a51b-119">string</span><span class="sxs-lookup"><span data-stu-id="4a51b-119">string</span></span>             | <span data-ttu-id="4a51b-120">Способ отображения вариантов в пользовательском интерфейсе.</span><span class="sxs-lookup"><span data-stu-id="4a51b-120">How the choices are to be presented in the UX.</span></span> <span data-ttu-id="4a51b-121">Должно иметь один из типов `checkBoxes`, `dropDownMenu` или `radioButtons`.</span><span class="sxs-lookup"><span data-stu-id="4a51b-121">Must be one of `checkBoxes`, `dropDownMenu`, or `radioButtons`</span></span>
 
 
 <!-- {
