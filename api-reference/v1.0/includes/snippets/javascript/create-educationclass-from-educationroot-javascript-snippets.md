@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 8aeea6b1b22d77d4a36c0a257a1a17782a759aee
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 5a1cf5a3c72db918b1de065544f0bcf5c8765a05
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35711448"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36638544"
 ---
 ```javascript
 
@@ -26,6 +26,6 @@ const educationClass = {
 };
 
 let res = await client.api('/education/classes')
-    .post({educationClass : educationClass});
+    .post(educationClass);
 
 ```
