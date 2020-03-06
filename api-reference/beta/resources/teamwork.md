@@ -5,34 +5,36 @@ author: clearab
 doc_type: resourcePageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7a72e34fc3d9d02a36e34295f7d4469536506df3
-ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
+ms.openlocfilehash: a68c7422b43106882327dd0a3068f89aad20b6e0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "35908595"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519801"
 ---
-# <a name="teamwork-resource-type"></a><span data-ttu-id="6d9f3-103">Тип ресурса teamwork</span><span class="sxs-lookup"><span data-stu-id="6d9f3-103">teamwork resource type</span></span>
+# <a name="teamwork-resource-type"></a><span data-ttu-id="98719-103">Тип ресурса teamwork</span><span class="sxs-lookup"><span data-stu-id="98719-103">teamwork resource type</span></span>
+
+<span data-ttu-id="98719-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="98719-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6d9f3-104">Контейнер для набора функциональных возможностей Microsoft Teams, доступных для организации.</span><span class="sxs-lookup"><span data-stu-id="6d9f3-104">A container for the range of Microsoft Teams functionalities that are available for the organization.</span></span>
+<span data-ttu-id="98719-105">Контейнер для набора функциональных возможностей Microsoft Teams, доступных для организации.</span><span class="sxs-lookup"><span data-stu-id="98719-105">A container for the range of Microsoft Teams functionalities that are available for the organization.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="6d9f3-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="6d9f3-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="98719-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="98719-106">Properties</span></span>
 
-| <span data-ttu-id="6d9f3-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="6d9f3-106">Property</span></span> | <span data-ttu-id="6d9f3-107">Тип</span><span class="sxs-lookup"><span data-stu-id="6d9f3-107">Type</span></span> | <span data-ttu-id="6d9f3-108">Описание</span><span class="sxs-lookup"><span data-stu-id="6d9f3-108">Description</span></span> |
+| <span data-ttu-id="98719-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="98719-107">Property</span></span> | <span data-ttu-id="98719-108">Тип</span><span class="sxs-lookup"><span data-stu-id="98719-108">Type</span></span> | <span data-ttu-id="98719-109">Описание</span><span class="sxs-lookup"><span data-stu-id="98719-109">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="6d9f3-109">id</span><span class="sxs-lookup"><span data-stu-id="6d9f3-109">id</span></span>|<span data-ttu-id="6d9f3-110">string</span><span class="sxs-lookup"><span data-stu-id="6d9f3-110">string</span></span>| <span data-ttu-id="6d9f3-111">Уникальный идентификатор.</span><span class="sxs-lookup"><span data-stu-id="6d9f3-111">A globally unique identifier (GUID).</span></span> |
+|<span data-ttu-id="98719-110">id</span><span class="sxs-lookup"><span data-stu-id="98719-110">id</span></span>|<span data-ttu-id="98719-111">string</span><span class="sxs-lookup"><span data-stu-id="98719-111">string</span></span>| <span data-ttu-id="98719-112">Уникальный идентификатор.</span><span class="sxs-lookup"><span data-stu-id="98719-112">A unique identifier.</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="6d9f3-112">Связи</span><span class="sxs-lookup"><span data-stu-id="6d9f3-112">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="98719-113">Связи</span><span class="sxs-lookup"><span data-stu-id="98719-113">Relationships</span></span>
 
-| <span data-ttu-id="6d9f3-113">Отношение</span><span class="sxs-lookup"><span data-stu-id="6d9f3-113">Relationship</span></span> | <span data-ttu-id="6d9f3-114">Тип</span><span class="sxs-lookup"><span data-stu-id="6d9f3-114">Type</span></span> | <span data-ttu-id="6d9f3-115">Описание</span><span class="sxs-lookup"><span data-stu-id="6d9f3-115">Description</span></span> |
+| <span data-ttu-id="98719-114">Связь</span><span class="sxs-lookup"><span data-stu-id="98719-114">Relationship</span></span> | <span data-ttu-id="98719-115">Тип</span><span class="sxs-lookup"><span data-stu-id="98719-115">Type</span></span> | <span data-ttu-id="98719-116">Описание</span><span class="sxs-lookup"><span data-stu-id="98719-116">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="6d9f3-116">installedApps</span><span class="sxs-lookup"><span data-stu-id="6d9f3-116">installedApps</span></span>|<span data-ttu-id="6d9f3-117">[teamsAppInstallation](teamsappinstallation.md) collection</span><span class="sxs-lookup"><span data-stu-id="6d9f3-117">[teamsAppInstallation](teamsappinstallation.md) collection</span></span>|<span data-ttu-id="6d9f3-118">Приложения, установленные в личной области пользователя.</span><span class="sxs-lookup"><span data-stu-id="6d9f3-118">The apps installed in the personal scope of this user.</span></span>|
+|<span data-ttu-id="98719-117">installedApps</span><span class="sxs-lookup"><span data-stu-id="98719-117">installedApps</span></span>|<span data-ttu-id="98719-118">[teamsAppInstallation](teamsappinstallation.md) collection</span><span class="sxs-lookup"><span data-stu-id="98719-118">[teamsAppInstallation](teamsappinstallation.md) collection</span></span>|<span data-ttu-id="98719-119">Приложения, установленные в личной области пользователя.</span><span class="sxs-lookup"><span data-stu-id="98719-119">The apps installed in the personal scope of this user.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="6d9f3-119">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="6d9f3-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="98719-120">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="98719-120">JSON representation</span></span>
 
-<span data-ttu-id="6d9f3-120">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="6d9f3-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="98719-121">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="98719-121">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -60,6 +62,6 @@ ms.locfileid: "35908595"
 }
 -->
 
-## <a name="see-also"></a><span data-ttu-id="6d9f3-121">См. также</span><span class="sxs-lookup"><span data-stu-id="6d9f3-121">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="98719-122">См. также</span><span class="sxs-lookup"><span data-stu-id="98719-122">See Also</span></span>
 
-- [<span data-ttu-id="6d9f3-122">Ресурс userTeamwork</span><span class="sxs-lookup"><span data-stu-id="6d9f3-122">userTeamwork resource</span></span>](userteamwork.md)
+- [<span data-ttu-id="98719-123">Ресурс userTeamwork</span><span class="sxs-lookup"><span data-stu-id="98719-123">userTeamwork resource</span></span>](userteamwork.md)
