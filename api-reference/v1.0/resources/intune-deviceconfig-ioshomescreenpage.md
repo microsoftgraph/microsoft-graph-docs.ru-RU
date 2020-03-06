@@ -5,30 +5,32 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a6024ba4d097c99a7abf501b89803dba13bcb096
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: abe09741cd3ed4f25f417cbb99cd144d6105acba
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37359077"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532489"
 ---
-# <a name="ioshomescreenpage-resource-type"></a><span data-ttu-id="a5fec-103">Тип ресурса iosHomeScreenPage</span><span class="sxs-lookup"><span data-stu-id="a5fec-103">iosHomeScreenPage resource type</span></span>
+# <a name="ioshomescreenpage-resource-type"></a><span data-ttu-id="f11c7-103">Тип ресурса iosHomeScreenPage</span><span class="sxs-lookup"><span data-stu-id="f11c7-103">iosHomeScreenPage resource type</span></span>
 
-> <span data-ttu-id="a5fec-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="a5fec-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="f11c7-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f11c7-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="a5fec-105">Страница, содержащая приложения и папки с начального экрана</span><span class="sxs-lookup"><span data-stu-id="a5fec-105">A page containing apps and folders on the Home Screen</span></span>
+> <span data-ttu-id="f11c7-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="f11c7-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="a5fec-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="a5fec-106">Properties</span></span>
-|<span data-ttu-id="a5fec-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="a5fec-107">Property</span></span>|<span data-ttu-id="a5fec-108">Тип</span><span class="sxs-lookup"><span data-stu-id="a5fec-108">Type</span></span>|<span data-ttu-id="a5fec-109">Описание</span><span class="sxs-lookup"><span data-stu-id="a5fec-109">Description</span></span>|
+<span data-ttu-id="f11c7-106">Страница, содержащая приложения и папки с начального экрана</span><span class="sxs-lookup"><span data-stu-id="f11c7-106">A page containing apps and folders on the Home Screen</span></span>
+
+## <a name="properties"></a><span data-ttu-id="f11c7-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="f11c7-107">Properties</span></span>
+|<span data-ttu-id="f11c7-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="f11c7-108">Property</span></span>|<span data-ttu-id="f11c7-109">Тип</span><span class="sxs-lookup"><span data-stu-id="f11c7-109">Type</span></span>|<span data-ttu-id="f11c7-110">Описание</span><span class="sxs-lookup"><span data-stu-id="f11c7-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a5fec-110">displayName</span><span class="sxs-lookup"><span data-stu-id="a5fec-110">displayName</span></span>|<span data-ttu-id="a5fec-111">String</span><span class="sxs-lookup"><span data-stu-id="a5fec-111">String</span></span>|<span data-ttu-id="a5fec-112">Имя страницы</span><span class="sxs-lookup"><span data-stu-id="a5fec-112">Name of the page</span></span>|
-|<span data-ttu-id="a5fec-113">icons</span><span class="sxs-lookup"><span data-stu-id="a5fec-113">icons</span></span>|<span data-ttu-id="a5fec-114">Коллекция [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)</span><span class="sxs-lookup"><span data-stu-id="a5fec-114">[iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md) collection</span></span>|<span data-ttu-id="a5fec-115">Список приложений и папок, отображающихся на странице.</span><span class="sxs-lookup"><span data-stu-id="a5fec-115">A list of apps and folders to appear on a page.</span></span> <span data-ttu-id="a5fec-116">Эта коллекция может включать до 500 элементов.</span><span class="sxs-lookup"><span data-stu-id="a5fec-116">This collection can contain a maximum of 500 elements.</span></span>|
+|<span data-ttu-id="f11c7-111">displayName</span><span class="sxs-lookup"><span data-stu-id="f11c7-111">displayName</span></span>|<span data-ttu-id="f11c7-112">Строка</span><span class="sxs-lookup"><span data-stu-id="f11c7-112">String</span></span>|<span data-ttu-id="f11c7-113">Имя страницы</span><span class="sxs-lookup"><span data-stu-id="f11c7-113">Name of the page</span></span>|
+|<span data-ttu-id="f11c7-114">icons</span><span class="sxs-lookup"><span data-stu-id="f11c7-114">icons</span></span>|<span data-ttu-id="f11c7-115">Коллекция [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)</span><span class="sxs-lookup"><span data-stu-id="f11c7-115">[iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md) collection</span></span>|<span data-ttu-id="f11c7-116">Список приложений и папок, отображающихся на странице.</span><span class="sxs-lookup"><span data-stu-id="f11c7-116">A list of apps and folders to appear on a page.</span></span> <span data-ttu-id="f11c7-117">Эта коллекция может включать до 500 элементов.</span><span class="sxs-lookup"><span data-stu-id="f11c7-117">This collection can contain a maximum of 500 elements.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="a5fec-117">Связи</span><span class="sxs-lookup"><span data-stu-id="a5fec-117">Relationships</span></span>
-<span data-ttu-id="a5fec-118">Нет</span><span class="sxs-lookup"><span data-stu-id="a5fec-118">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="f11c7-118">Связи</span><span class="sxs-lookup"><span data-stu-id="f11c7-118">Relationships</span></span>
+<span data-ttu-id="f11c7-119">Нет</span><span class="sxs-lookup"><span data-stu-id="f11c7-119">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="a5fec-119">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a5fec-119">JSON Representation</span></span>
-<span data-ttu-id="a5fec-120">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a5fec-120">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f11c7-120">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="f11c7-120">JSON Representation</span></span>
+<span data-ttu-id="f11c7-121">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f11c7-121">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosHomeScreenPage"

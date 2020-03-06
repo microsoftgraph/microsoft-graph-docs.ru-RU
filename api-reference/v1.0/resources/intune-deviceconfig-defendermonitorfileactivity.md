@@ -5,27 +5,29 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 04e18e6935ef4ec6c1f3c2415a638d08f9e4576b
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 2eea63d3f3d40727f990b4e4acdcc2f428380fcc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37366610"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530878"
 ---
-# <a name="defendermonitorfileactivity-enum-type"></a><span data-ttu-id="c5490-103">тип перечисления Дефендермониторфилеактивити</span><span class="sxs-lookup"><span data-stu-id="c5490-103">defenderMonitorFileActivity enum type</span></span>
+# <a name="defendermonitorfileactivity-enum-type"></a><span data-ttu-id="7683b-103">тип перечисления Дефендермониторфилеактивити</span><span class="sxs-lookup"><span data-stu-id="7683b-103">defenderMonitorFileActivity enum type</span></span>
 
-> <span data-ttu-id="c5490-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="c5490-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="7683b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7683b-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="c5490-105">Возможные значения для отслеживания действий с файлами.</span><span class="sxs-lookup"><span data-stu-id="c5490-105">Possible values for monitoring file activity.</span></span>
+> <span data-ttu-id="7683b-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="7683b-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="c5490-106">Элементы</span><span class="sxs-lookup"><span data-stu-id="c5490-106">Members</span></span>
-|<span data-ttu-id="c5490-107">Элемент</span><span class="sxs-lookup"><span data-stu-id="c5490-107">Member</span></span>|<span data-ttu-id="c5490-108">Значение</span><span class="sxs-lookup"><span data-stu-id="c5490-108">Value</span></span>|<span data-ttu-id="c5490-109">Описание</span><span class="sxs-lookup"><span data-stu-id="c5490-109">Description</span></span>|
+<span data-ttu-id="7683b-106">Возможные значения для отслеживания действий с файлами.</span><span class="sxs-lookup"><span data-stu-id="7683b-106">Possible values for monitoring file activity.</span></span>
+
+## <a name="members"></a><span data-ttu-id="7683b-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="7683b-107">Members</span></span>
+|<span data-ttu-id="7683b-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="7683b-108">Member</span></span>|<span data-ttu-id="7683b-109">Значение</span><span class="sxs-lookup"><span data-stu-id="7683b-109">Value</span></span>|<span data-ttu-id="7683b-110">Описание</span><span class="sxs-lookup"><span data-stu-id="7683b-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="c5490-110">UserDefined типа</span><span class="sxs-lookup"><span data-stu-id="c5490-110">userDefined</span></span>|<span data-ttu-id="c5490-111">нуль</span><span class="sxs-lookup"><span data-stu-id="c5490-111">0</span></span>|<span data-ttu-id="c5490-112">Пользователь определен, значение по умолчанию, без намерения.</span><span class="sxs-lookup"><span data-stu-id="c5490-112">User Defined, default value, no intent.</span></span>|
-|<span data-ttu-id="c5490-113">отключение</span><span class="sxs-lookup"><span data-stu-id="c5490-113">disable</span></span>|<span data-ttu-id="c5490-114">1,1</span><span class="sxs-lookup"><span data-stu-id="c5490-114">1</span></span>|<span data-ttu-id="c5490-115">Отключите мониторинг действий с файлами.</span><span class="sxs-lookup"><span data-stu-id="c5490-115">Disable monitoring file activity.</span></span>|
-|<span data-ttu-id="c5490-116">монитораллфилес</span><span class="sxs-lookup"><span data-stu-id="c5490-116">monitorAllFiles</span></span>|<span data-ttu-id="c5490-117">2</span><span class="sxs-lookup"><span data-stu-id="c5490-117">2</span></span>|<span data-ttu-id="c5490-118">Отслеживайте все файлы.</span><span class="sxs-lookup"><span data-stu-id="c5490-118">Monitor all files.</span></span>|
-|<span data-ttu-id="c5490-119">мониторинкомингфилесонли</span><span class="sxs-lookup"><span data-stu-id="c5490-119">monitorIncomingFilesOnly</span></span>|<span data-ttu-id="c5490-120">4</span><span class="sxs-lookup"><span data-stu-id="c5490-120">3</span></span>| <span data-ttu-id="c5490-121">Отслеживайте только входящие файлы.</span><span class="sxs-lookup"><span data-stu-id="c5490-121">Monitor incoming files only.</span></span>|
-|<span data-ttu-id="c5490-122">монитораутгоингфилесонли</span><span class="sxs-lookup"><span data-stu-id="c5490-122">monitorOutgoingFilesOnly</span></span>|<span data-ttu-id="c5490-123">SP4</span><span class="sxs-lookup"><span data-stu-id="c5490-123">4</span></span>|<span data-ttu-id="c5490-124">Отслеживайте только исходящие файлы.</span><span class="sxs-lookup"><span data-stu-id="c5490-124">Monitor outgoing files only.</span></span>|
+|<span data-ttu-id="7683b-111">UserDefined типа</span><span class="sxs-lookup"><span data-stu-id="7683b-111">userDefined</span></span>|<span data-ttu-id="7683b-112">нуль</span><span class="sxs-lookup"><span data-stu-id="7683b-112">0</span></span>|<span data-ttu-id="7683b-113">Пользователь определен, значение по умолчанию, без намерения.</span><span class="sxs-lookup"><span data-stu-id="7683b-113">User Defined, default value, no intent.</span></span>|
+|<span data-ttu-id="7683b-114">отключение</span><span class="sxs-lookup"><span data-stu-id="7683b-114">disable</span></span>|<span data-ttu-id="7683b-115">1 </span><span class="sxs-lookup"><span data-stu-id="7683b-115">1</span></span>|<span data-ttu-id="7683b-116">Отключите мониторинг действий с файлами.</span><span class="sxs-lookup"><span data-stu-id="7683b-116">Disable monitoring file activity.</span></span>|
+|<span data-ttu-id="7683b-117">монитораллфилес</span><span class="sxs-lookup"><span data-stu-id="7683b-117">monitorAllFiles</span></span>|<span data-ttu-id="7683b-118">2 </span><span class="sxs-lookup"><span data-stu-id="7683b-118">2</span></span>|<span data-ttu-id="7683b-119">Отслеживайте все файлы.</span><span class="sxs-lookup"><span data-stu-id="7683b-119">Monitor all files.</span></span>|
+|<span data-ttu-id="7683b-120">мониторинкомингфилесонли</span><span class="sxs-lookup"><span data-stu-id="7683b-120">monitorIncomingFilesOnly</span></span>|<span data-ttu-id="7683b-121">3 </span><span class="sxs-lookup"><span data-stu-id="7683b-121">3</span></span>| <span data-ttu-id="7683b-122">Отслеживайте только входящие файлы.</span><span class="sxs-lookup"><span data-stu-id="7683b-122">Monitor incoming files only.</span></span>|
+|<span data-ttu-id="7683b-123">монитораутгоингфилесонли</span><span class="sxs-lookup"><span data-stu-id="7683b-123">monitorOutgoingFilesOnly</span></span>|<span data-ttu-id="7683b-124">4 </span><span class="sxs-lookup"><span data-stu-id="7683b-124">4</span></span>|<span data-ttu-id="7683b-125">Отслеживайте только исходящие файлы.</span><span class="sxs-lookup"><span data-stu-id="7683b-125">Monitor outgoing files only.</span></span>|
 
 
 

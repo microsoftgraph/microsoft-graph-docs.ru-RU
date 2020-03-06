@@ -5,27 +5,29 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ca306ba5a40ffc08147c8e8449ab03bf51afd745
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8e069aef1d26a409e9ebe29a516136a952604ee6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030284"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531387"
 ---
-# <a name="freebusyerror-resource-type"></a><span data-ttu-id="988a2-103">Тип ресурса Фрибусеррор</span><span class="sxs-lookup"><span data-stu-id="988a2-103">freeBusyError resource type</span></span>
+# <a name="freebusyerror-resource-type"></a><span data-ttu-id="c7d8b-103">Тип ресурса Фрибусеррор</span><span class="sxs-lookup"><span data-stu-id="c7d8b-103">freeBusyError resource type</span></span>
 
-<span data-ttu-id="988a2-104">Представляет сведения об ошибке при попытке получить доступ к пользователю, списку рассылки или ресурсу.</span><span class="sxs-lookup"><span data-stu-id="988a2-104">Represents error information from attempting to get the availability of a user, distribution list, or resource.</span></span>
+<span data-ttu-id="c7d8b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c7d8b-104">Namespace: microsoft.graph</span></span>
 
-## <a name="properties"></a><span data-ttu-id="988a2-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="988a2-105">Properties</span></span>
-| <span data-ttu-id="988a2-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="988a2-106">Property</span></span>     | <span data-ttu-id="988a2-107">Тип</span><span class="sxs-lookup"><span data-stu-id="988a2-107">Type</span></span>   |<span data-ttu-id="988a2-108">Описание</span><span class="sxs-lookup"><span data-stu-id="988a2-108">Description</span></span>|
+<span data-ttu-id="c7d8b-105">Представляет сведения об ошибке при попытке получить доступ к пользователю, списку рассылки или ресурсу.</span><span class="sxs-lookup"><span data-stu-id="c7d8b-105">Represents error information from attempting to get the availability of a user, distribution list, or resource.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="c7d8b-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="c7d8b-106">Properties</span></span>
+| <span data-ttu-id="c7d8b-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="c7d8b-107">Property</span></span>     | <span data-ttu-id="c7d8b-108">Тип</span><span class="sxs-lookup"><span data-stu-id="c7d8b-108">Type</span></span>   |<span data-ttu-id="c7d8b-109">Описание</span><span class="sxs-lookup"><span data-stu-id="c7d8b-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="988a2-109">message</span><span class="sxs-lookup"><span data-stu-id="988a2-109">message</span></span> |<span data-ttu-id="988a2-110">String</span><span class="sxs-lookup"><span data-stu-id="988a2-110">String</span></span> |<span data-ttu-id="988a2-111">Описание ошибки.</span><span class="sxs-lookup"><span data-stu-id="988a2-111">Describes the error.</span></span> |
-|<span data-ttu-id="988a2-112">Респонсекоде</span><span class="sxs-lookup"><span data-stu-id="988a2-112">responseCode</span></span> |<span data-ttu-id="988a2-113">String</span><span class="sxs-lookup"><span data-stu-id="988a2-113">String</span></span> |<span data-ttu-id="988a2-114">Код ответа из запроса на доступность пользователя, списка рассылки или ресурса.</span><span class="sxs-lookup"><span data-stu-id="988a2-114">The response code from querying for the availability of the user, distribution list, or resource.</span></span> |
+|<span data-ttu-id="c7d8b-110">message</span><span class="sxs-lookup"><span data-stu-id="c7d8b-110">message</span></span> |<span data-ttu-id="c7d8b-111">String</span><span class="sxs-lookup"><span data-stu-id="c7d8b-111">String</span></span> |<span data-ttu-id="c7d8b-112">Описание ошибки.</span><span class="sxs-lookup"><span data-stu-id="c7d8b-112">Describes the error.</span></span> |
+|<span data-ttu-id="c7d8b-113">респонсекоде</span><span class="sxs-lookup"><span data-stu-id="c7d8b-113">responseCode</span></span> |<span data-ttu-id="c7d8b-114">Строка</span><span class="sxs-lookup"><span data-stu-id="c7d8b-114">String</span></span> |<span data-ttu-id="c7d8b-115">Код ответа из запроса на доступность пользователя, списка рассылки или ресурса.</span><span class="sxs-lookup"><span data-stu-id="c7d8b-115">The response code from querying for the availability of the user, distribution list, or resource.</span></span> |
 
 
-## <a name="json-representation"></a><span data-ttu-id="988a2-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="988a2-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c7d8b-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="c7d8b-116">JSON representation</span></span>
 
-<span data-ttu-id="988a2-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="988a2-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="c7d8b-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c7d8b-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

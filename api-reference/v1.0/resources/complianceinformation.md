@@ -5,27 +5,29 @@ localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 9fc47940b8a9f249e66092ee016453a9eb5152ca
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ef62f6df73c24f9e6b3884921865c28ea152a3dc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032860"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533038"
 ---
-#  <a name="complianceinformation-resource-type"></a><span data-ttu-id="0d3e2-103">Тип ресурса Комплианцеинформатион</span><span class="sxs-lookup"><span data-stu-id="0d3e2-103">complianceInformation resource type</span></span>
+#  <a name="complianceinformation-resource-type"></a><span data-ttu-id="26583-103">Тип ресурса Комплианцеинформатион</span><span class="sxs-lookup"><span data-stu-id="26583-103">complianceInformation resource type</span></span>
 
-<span data-ttu-id="0d3e2-104">Содержит данные соответствия требованиям, связанные с контролем безопасного рейтинга.</span><span class="sxs-lookup"><span data-stu-id="0d3e2-104">Contains compliance data associated with secure score control.</span></span>
+<span data-ttu-id="26583-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="26583-104">Namespace: microsoft.graph</span></span>
 
-## <a name="properties"></a><span data-ttu-id="0d3e2-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="0d3e2-105">Properties</span></span>
+<span data-ttu-id="26583-105">Содержит данные соответствия требованиям, связанные с контролем безопасного рейтинга.</span><span class="sxs-lookup"><span data-stu-id="26583-105">Contains compliance data associated with secure score control.</span></span>
 
-|<span data-ttu-id="0d3e2-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="0d3e2-106">Property</span></span> |<span data-ttu-id="0d3e2-107">Тип</span><span class="sxs-lookup"><span data-stu-id="0d3e2-107">Type</span></span> |<span data-ttu-id="0d3e2-108">Описание</span><span class="sxs-lookup"><span data-stu-id="0d3e2-108">Description</span></span> |
+## <a name="properties"></a><span data-ttu-id="26583-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="26583-106">Properties</span></span>
+
+|<span data-ttu-id="26583-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="26583-107">Property</span></span> |<span data-ttu-id="26583-108">Тип</span><span class="sxs-lookup"><span data-stu-id="26583-108">Type</span></span> |<span data-ttu-id="26583-109">Описание</span><span class="sxs-lookup"><span data-stu-id="26583-109">Description</span></span> |
 |:--|:--|:--|
-|<span data-ttu-id="0d3e2-109">Цертификатионнаме</span><span class="sxs-lookup"><span data-stu-id="0d3e2-109">certificationName</span></span>|<span data-ttu-id="0d3e2-110">String</span><span class="sxs-lookup"><span data-stu-id="0d3e2-110">String</span></span>| <span data-ttu-id="0d3e2-111">Имя сертификации соответствия (например, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171).</span><span class="sxs-lookup"><span data-stu-id="0d3e2-111">Compliance certification name (for example, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171)</span></span> |
-|<span data-ttu-id="0d3e2-112">Цертификатионконтролс</span><span class="sxs-lookup"><span data-stu-id="0d3e2-112">certificationControls</span></span>|<span data-ttu-id="0d3e2-113">Коллекция [цертификатионконтрол](certificationcontrol.md)</span><span class="sxs-lookup"><span data-stu-id="0d3e2-113">[certificationControl](certificationcontrol.md) collection</span></span>|<span data-ttu-id="0d3e2-114">Коллекция элементов управления сертификацией, связанных с сертификацией</span><span class="sxs-lookup"><span data-stu-id="0d3e2-114">Collection of the certification controls associated with certification</span></span>|
+|<span data-ttu-id="26583-110">цертификатионнаме</span><span class="sxs-lookup"><span data-stu-id="26583-110">certificationName</span></span>|<span data-ttu-id="26583-111">Строка</span><span class="sxs-lookup"><span data-stu-id="26583-111">String</span></span>| <span data-ttu-id="26583-112">Имя сертификации соответствия (например, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171).</span><span class="sxs-lookup"><span data-stu-id="26583-112">Compliance certification name (for example, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171)</span></span> |
+|<span data-ttu-id="26583-113">цертификатионконтролс</span><span class="sxs-lookup"><span data-stu-id="26583-113">certificationControls</span></span>|<span data-ttu-id="26583-114">Коллекция [цертификатионконтрол](certificationcontrol.md)</span><span class="sxs-lookup"><span data-stu-id="26583-114">[certificationControl](certificationcontrol.md) collection</span></span>|<span data-ttu-id="26583-115">Коллекция элементов управления сертификацией, связанных с сертификацией</span><span class="sxs-lookup"><span data-stu-id="26583-115">Collection of the certification controls associated with certification</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="0d3e2-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="0d3e2-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="26583-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="26583-116">JSON representation</span></span>
 
-<span data-ttu-id="0d3e2-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0d3e2-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="26583-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="26583-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -5,29 +5,31 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3924133a9df4a480198f94c8fbd9e155944d9824
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 0fdd070e495dca9af77f484542405a45e50fe652
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37357929"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42515632"
 ---
-# <a name="create-iosvppebookassignment"></a><span data-ttu-id="cdd33-103">Создание объекта iosVppEBookAssignment</span><span class="sxs-lookup"><span data-stu-id="cdd33-103">Create iosVppEBookAssignment</span></span>
+# <a name="create-iosvppebookassignment"></a><span data-ttu-id="85ce6-103">Создание объекта iosVppEBookAssignment</span><span class="sxs-lookup"><span data-stu-id="85ce6-103">Create iosVppEBookAssignment</span></span>
 
-> <span data-ttu-id="cdd33-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="cdd33-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="85ce6-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="85ce6-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="cdd33-105">Создание объекта [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md).</span><span class="sxs-lookup"><span data-stu-id="cdd33-105">Create a new [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) object.</span></span>
+> <span data-ttu-id="85ce6-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="85ce6-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="cdd33-106">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="cdd33-106">Prerequisites</span></span>
-<span data-ttu-id="cdd33-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cdd33-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="85ce6-106">Создание объекта [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md).</span><span class="sxs-lookup"><span data-stu-id="85ce6-106">Create a new [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) object.</span></span>
 
-|<span data-ttu-id="cdd33-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="cdd33-109">Permission type</span></span>|<span data-ttu-id="cdd33-110">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="cdd33-110">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="85ce6-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="85ce6-107">Prerequisites</span></span>
+<span data-ttu-id="85ce6-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="85ce6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="85ce6-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="85ce6-110">Permission type</span></span>|<span data-ttu-id="85ce6-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="85ce6-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="cdd33-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="cdd33-111">Delegated (work or school account)</span></span>|<span data-ttu-id="cdd33-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cdd33-112">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="cdd33-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="cdd33-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="cdd33-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cdd33-114">Not supported.</span></span>|
-|<span data-ttu-id="cdd33-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="cdd33-115">Application</span></span>|<span data-ttu-id="cdd33-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cdd33-116">Not supported.</span></span>|
+|<span data-ttu-id="85ce6-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="85ce6-112">Delegated (work or school account)</span></span>|<span data-ttu-id="85ce6-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="85ce6-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="85ce6-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="85ce6-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="85ce6-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="85ce6-115">Not supported.</span></span>|
+|<span data-ttu-id="85ce6-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="85ce6-116">Application</span></span>|<span data-ttu-id="85ce6-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="85ce6-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="cdd33-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="cdd33-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="85ce6-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="85ce6-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -36,32 +38,32 @@ ms.locfileid: "37357929"
 POST /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="cdd33-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="cdd33-118">Request headers</span></span>
-|<span data-ttu-id="cdd33-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="cdd33-119">Header</span></span>|<span data-ttu-id="cdd33-120">Значение</span><span class="sxs-lookup"><span data-stu-id="cdd33-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="85ce6-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="85ce6-119">Request headers</span></span>
+|<span data-ttu-id="85ce6-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="85ce6-120">Header</span></span>|<span data-ttu-id="85ce6-121">Значение</span><span class="sxs-lookup"><span data-stu-id="85ce6-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="cdd33-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="cdd33-121">Authorization</span></span>|<span data-ttu-id="cdd33-122">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="cdd33-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="cdd33-123">Accept</span><span class="sxs-lookup"><span data-stu-id="cdd33-123">Accept</span></span>|<span data-ttu-id="cdd33-124">application/json</span><span class="sxs-lookup"><span data-stu-id="cdd33-124">application/json</span></span>|
+|<span data-ttu-id="85ce6-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="85ce6-122">Authorization</span></span>|<span data-ttu-id="85ce6-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="85ce6-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="85ce6-124">Accept</span><span class="sxs-lookup"><span data-stu-id="85ce6-124">Accept</span></span>|<span data-ttu-id="85ce6-125">application/json</span><span class="sxs-lookup"><span data-stu-id="85ce6-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="cdd33-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="cdd33-125">Request body</span></span>
-<span data-ttu-id="cdd33-126">В тексте запроса добавьте представление объекта iosVppEBookAssignment в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="cdd33-126">In the request body, supply a JSON representation for the iosVppEBookAssignment object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="85ce6-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="85ce6-126">Request body</span></span>
+<span data-ttu-id="85ce6-127">В тексте запроса добавьте представление объекта iosVppEBookAssignment в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="85ce6-127">In the request body, supply a JSON representation for the iosVppEBookAssignment object.</span></span>
 
-<span data-ttu-id="cdd33-127">В таблице ниже приведены свойства, которые необходимо указывать при создании объекта iosVppEBookAssignment.</span><span class="sxs-lookup"><span data-stu-id="cdd33-127">The following table shows the properties that are required when you create the iosVppEBookAssignment.</span></span>
+<span data-ttu-id="85ce6-128">В таблице ниже приведены свойства, которые необходимо указывать при создании объекта iosVppEBookAssignment.</span><span class="sxs-lookup"><span data-stu-id="85ce6-128">The following table shows the properties that are required when you create the iosVppEBookAssignment.</span></span>
 
-|<span data-ttu-id="cdd33-128">Свойство</span><span class="sxs-lookup"><span data-stu-id="cdd33-128">Property</span></span>|<span data-ttu-id="cdd33-129">Тип</span><span class="sxs-lookup"><span data-stu-id="cdd33-129">Type</span></span>|<span data-ttu-id="cdd33-130">Описание</span><span class="sxs-lookup"><span data-stu-id="cdd33-130">Description</span></span>|
+|<span data-ttu-id="85ce6-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="85ce6-129">Property</span></span>|<span data-ttu-id="85ce6-130">Тип</span><span class="sxs-lookup"><span data-stu-id="85ce6-130">Type</span></span>|<span data-ttu-id="85ce6-131">Описание</span><span class="sxs-lookup"><span data-stu-id="85ce6-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="cdd33-131">id</span><span class="sxs-lookup"><span data-stu-id="cdd33-131">id</span></span>|<span data-ttu-id="cdd33-132">String</span><span class="sxs-lookup"><span data-stu-id="cdd33-132">String</span></span>|<span data-ttu-id="cdd33-133">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="cdd33-133">Key of the entity.</span></span> <span data-ttu-id="cdd33-134">Наследуется от объекта [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).</span><span class="sxs-lookup"><span data-stu-id="cdd33-134">Inherited from [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)</span></span>|
-|<span data-ttu-id="cdd33-135">target</span><span class="sxs-lookup"><span data-stu-id="cdd33-135">target</span></span>|[<span data-ttu-id="cdd33-136">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="cdd33-136">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="cdd33-137">Цель назначения электронной книги.</span><span class="sxs-lookup"><span data-stu-id="cdd33-137">The assignment target for eBook.</span></span> <span data-ttu-id="cdd33-138">Наследуется от объекта [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).</span><span class="sxs-lookup"><span data-stu-id="cdd33-138">Inherited from [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)</span></span>|
-|<span data-ttu-id="cdd33-139">installIntent</span><span class="sxs-lookup"><span data-stu-id="cdd33-139">installIntent</span></span>|[<span data-ttu-id="cdd33-140">installIntent</span><span class="sxs-lookup"><span data-stu-id="cdd33-140">installIntent</span></span>](../resources/intune-shared-installintent.md)|<span data-ttu-id="cdd33-141">Цель установки электронной книги.</span><span class="sxs-lookup"><span data-stu-id="cdd33-141">The install intent for eBook.</span></span> <span data-ttu-id="cdd33-142">Наследуется от [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).</span><span class="sxs-lookup"><span data-stu-id="cdd33-142">Inherited from [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).</span></span> <span data-ttu-id="cdd33-143">Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.</span><span class="sxs-lookup"><span data-stu-id="cdd33-143">Possible values are: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.</span></span>|
+|<span data-ttu-id="85ce6-132">id</span><span class="sxs-lookup"><span data-stu-id="85ce6-132">id</span></span>|<span data-ttu-id="85ce6-133">Строка</span><span class="sxs-lookup"><span data-stu-id="85ce6-133">String</span></span>|<span data-ttu-id="85ce6-134">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="85ce6-134">Key of the entity.</span></span> <span data-ttu-id="85ce6-135">Наследуется от объекта [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).</span><span class="sxs-lookup"><span data-stu-id="85ce6-135">Inherited from [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)</span></span>|
+|<span data-ttu-id="85ce6-136">target</span><span class="sxs-lookup"><span data-stu-id="85ce6-136">target</span></span>|[<span data-ttu-id="85ce6-137">deviceAndAppManagementAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="85ce6-137">deviceAndAppManagementAssignmentTarget</span></span>](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|<span data-ttu-id="85ce6-138">Цель назначения электронной книги.</span><span class="sxs-lookup"><span data-stu-id="85ce6-138">The assignment target for eBook.</span></span> <span data-ttu-id="85ce6-139">Наследуется от объекта [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).</span><span class="sxs-lookup"><span data-stu-id="85ce6-139">Inherited from [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)</span></span>|
+|<span data-ttu-id="85ce6-140">installIntent</span><span class="sxs-lookup"><span data-stu-id="85ce6-140">installIntent</span></span>|[<span data-ttu-id="85ce6-141">installIntent</span><span class="sxs-lookup"><span data-stu-id="85ce6-141">installIntent</span></span>](../resources/intune-shared-installintent.md)|<span data-ttu-id="85ce6-142">Цель установки электронной книги.</span><span class="sxs-lookup"><span data-stu-id="85ce6-142">The install intent for eBook.</span></span> <span data-ttu-id="85ce6-143">Наследуется от [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).</span><span class="sxs-lookup"><span data-stu-id="85ce6-143">Inherited from [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).</span></span> <span data-ttu-id="85ce6-144">Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.</span><span class="sxs-lookup"><span data-stu-id="85ce6-144">Possible values are: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="cdd33-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="cdd33-144">Response</span></span>
-<span data-ttu-id="cdd33-145">В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="cdd33-145">If successful, this method returns a `201 Created` response code and a [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="85ce6-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="85ce6-145">Response</span></span>
+<span data-ttu-id="85ce6-146">В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="85ce6-146">If successful, this method returns a `201 Created` response code and a [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="cdd33-146">Пример</span><span class="sxs-lookup"><span data-stu-id="cdd33-146">Example</span></span>
+## <a name="example"></a><span data-ttu-id="85ce6-147">Пример</span><span class="sxs-lookup"><span data-stu-id="85ce6-147">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="cdd33-147">Запрос</span><span class="sxs-lookup"><span data-stu-id="cdd33-147">Request</span></span>
-<span data-ttu-id="cdd33-148">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="cdd33-148">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="85ce6-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="85ce6-148">Request</span></span>
+<span data-ttu-id="85ce6-149">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="85ce6-149">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 Content-type: application/json
@@ -76,8 +78,8 @@ Content-length: 193
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="cdd33-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="cdd33-149">Response</span></span>
-<span data-ttu-id="cdd33-p105">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="cdd33-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="85ce6-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="85ce6-150">Response</span></span>
+<span data-ttu-id="85ce6-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="85ce6-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
