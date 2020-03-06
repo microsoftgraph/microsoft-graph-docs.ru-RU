@@ -5,31 +5,33 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6d1e42d375dd53fcb71ae049622c59d2d31b3406
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: f29d385060d93b8de54ee27f9f948f83e3ad2711
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913543"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533615"
 ---
-# <a name="subscribetotoneoperation-resource-type"></a><span data-ttu-id="cf1b2-103">Тип ресурса Субскрибетотонеоператион</span><span class="sxs-lookup"><span data-stu-id="cf1b2-103">SubscribeToToneOperation resource type</span></span>
+# <a name="subscribetotoneoperation-resource-type"></a><span data-ttu-id="a4e0a-103">Тип ресурса Субскрибетотонеоператион</span><span class="sxs-lookup"><span data-stu-id="a4e0a-103">SubscribeToToneOperation resource type</span></span>
 
-<span data-ttu-id="cf1b2-104">Описывает формат ответа на создание подписки для получения тонов DTMF.</span><span class="sxs-lookup"><span data-stu-id="cf1b2-104">Describes the response format of creation of subscription to receive DTMF tones.</span></span>
+<span data-ttu-id="a4e0a-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a4e0a-104">Namespace: microsoft.graph</span></span>
 
-## <a name="properties"></a><span data-ttu-id="cf1b2-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="cf1b2-105">Properties</span></span>
+<span data-ttu-id="a4e0a-105">Описывает формат ответа на создание подписки для получения тонов DTMF.</span><span class="sxs-lookup"><span data-stu-id="a4e0a-105">Describes the response format of creation of subscription to receive DTMF tones.</span></span>
 
-| <span data-ttu-id="cf1b2-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="cf1b2-106">Property</span></span>                       | <span data-ttu-id="cf1b2-107">Тип</span><span class="sxs-lookup"><span data-stu-id="cf1b2-107">Type</span></span>                        | <span data-ttu-id="cf1b2-108">Описание</span><span class="sxs-lookup"><span data-stu-id="cf1b2-108">Description</span></span>                                                                                                                                       |
+## <a name="properties"></a><span data-ttu-id="a4e0a-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="a4e0a-106">Properties</span></span>
+
+| <span data-ttu-id="a4e0a-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="a4e0a-107">Property</span></span>                       | <span data-ttu-id="a4e0a-108">Тип</span><span class="sxs-lookup"><span data-stu-id="a4e0a-108">Type</span></span>                        | <span data-ttu-id="a4e0a-109">Описание</span><span class="sxs-lookup"><span data-stu-id="a4e0a-109">Description</span></span>                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="cf1b2-109">Контекст</span><span class="sxs-lookup"><span data-stu-id="cf1b2-109">clientContext</span></span>                  | <span data-ttu-id="cf1b2-110">String</span><span class="sxs-lookup"><span data-stu-id="cf1b2-110">String</span></span>                      | <span data-ttu-id="cf1b2-111">Контекст клиента.</span><span class="sxs-lookup"><span data-stu-id="cf1b2-111">The client context.</span></span>                                                                                                                               |
-| <span data-ttu-id="cf1b2-112">id</span><span class="sxs-lookup"><span data-stu-id="cf1b2-112">id</span></span>                             | <span data-ttu-id="cf1b2-113">Строка</span><span class="sxs-lookup"><span data-stu-id="cf1b2-113">String</span></span>                      | <span data-ttu-id="cf1b2-114">ИДЕНТИФИКАТОР операции сервера.</span><span class="sxs-lookup"><span data-stu-id="cf1b2-114">The server operation ID.</span></span> <span data-ttu-id="cf1b2-115">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="cf1b2-115">Read-only.</span></span>                                                                                             |
-| <span data-ttu-id="cf1b2-116">status</span><span class="sxs-lookup"><span data-stu-id="cf1b2-116">status</span></span>                         | <span data-ttu-id="cf1b2-117">String</span><span class="sxs-lookup"><span data-stu-id="cf1b2-117">String</span></span>                      | <span data-ttu-id="cf1b2-118">Возможные значения: `notStarted`, `running`, `completed`, `failed`.</span><span class="sxs-lookup"><span data-stu-id="cf1b2-118">Possible values are: `notStarted`, `running`, `completed`, `failed`.</span></span> <span data-ttu-id="cf1b2-119">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="cf1b2-119">Read-only.</span></span>                                                 |
+| <span data-ttu-id="a4e0a-110">Контекст</span><span class="sxs-lookup"><span data-stu-id="a4e0a-110">clientContext</span></span>                  | <span data-ttu-id="a4e0a-111">Строка</span><span class="sxs-lookup"><span data-stu-id="a4e0a-111">String</span></span>                      | <span data-ttu-id="a4e0a-112">Контекст клиента.</span><span class="sxs-lookup"><span data-stu-id="a4e0a-112">The client context.</span></span>                                                                                                                               |
+| <span data-ttu-id="a4e0a-113">id</span><span class="sxs-lookup"><span data-stu-id="a4e0a-113">id</span></span>                             | <span data-ttu-id="a4e0a-114">Строка</span><span class="sxs-lookup"><span data-stu-id="a4e0a-114">String</span></span>                      | <span data-ttu-id="a4e0a-115">ИДЕНТИФИКАТОР операции сервера.</span><span class="sxs-lookup"><span data-stu-id="a4e0a-115">The server operation ID.</span></span> <span data-ttu-id="a4e0a-116">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="a4e0a-116">Read-only.</span></span>                                                                                             |
+| <span data-ttu-id="a4e0a-117">status</span><span class="sxs-lookup"><span data-stu-id="a4e0a-117">status</span></span>                         | <span data-ttu-id="a4e0a-118">String</span><span class="sxs-lookup"><span data-stu-id="a4e0a-118">String</span></span>                      | <span data-ttu-id="a4e0a-119">Возможные значения: `notStarted`, `running`, `completed`, `failed`.</span><span class="sxs-lookup"><span data-stu-id="a4e0a-119">Possible values are: `notStarted`, `running`, `completed`, `failed`.</span></span> <span data-ttu-id="a4e0a-120">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="a4e0a-120">Read-only.</span></span>                                                 |
 
-## <a name="relationships"></a><span data-ttu-id="cf1b2-120">Отношения</span><span class="sxs-lookup"><span data-stu-id="cf1b2-120">Relationships</span></span>
-<span data-ttu-id="cf1b2-121">Нет</span><span class="sxs-lookup"><span data-stu-id="cf1b2-121">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="a4e0a-121">Отношения</span><span class="sxs-lookup"><span data-stu-id="a4e0a-121">Relationships</span></span>
+<span data-ttu-id="a4e0a-122">Нет</span><span class="sxs-lookup"><span data-stu-id="a4e0a-122">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="cf1b2-122">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="cf1b2-122">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a4e0a-123">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a4e0a-123">JSON representation</span></span>
 
-<span data-ttu-id="cf1b2-123">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="cf1b2-123">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="a4e0a-124">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a4e0a-124">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

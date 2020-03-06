@@ -5,28 +5,30 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 36426a7e3f1fb79264a788d8af7e7768f5bae26a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 59558512d27bb92c48fb5c0ac2dd0fb52f7c426d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032622"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531505"
 ---
-# <a name="educationterm-resource-type"></a><span data-ttu-id="41485-105">Тип ресурса educationTerm</span><span class="sxs-lookup"><span data-stu-id="41485-105">educationTerm resource type</span></span>
+# <a name="educationterm-resource-type"></a><span data-ttu-id="cd5a9-105">Тип ресурса educationTerm</span><span class="sxs-lookup"><span data-stu-id="cd5a9-105">educationTerm resource type</span></span>
 
-<span data-ttu-id="41485-106">Срок.</span><span class="sxs-lookup"><span data-stu-id="41485-106">A term.</span></span> <span data-ttu-id="41485-107">Представляет определенную часть учебного года.</span><span class="sxs-lookup"><span data-stu-id="41485-107">This represents a designated portion of the academic year.</span></span> <span data-ttu-id="41485-108">Используется в [educationClass](educationclass.md).</span><span class="sxs-lookup"><span data-stu-id="41485-108">It is used within [educationClass](educationclass.md).</span></span>
+<span data-ttu-id="cd5a9-106">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cd5a9-106">Namespace: microsoft.graph</span></span>
 
-## <a name="properties"></a><span data-ttu-id="41485-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="41485-109">Properties</span></span>
-| <span data-ttu-id="41485-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="41485-110">Property</span></span>     | <span data-ttu-id="41485-111">Тип</span><span class="sxs-lookup"><span data-stu-id="41485-111">Type</span></span>   |<span data-ttu-id="41485-112">Описание</span><span class="sxs-lookup"><span data-stu-id="41485-112">Description</span></span>|
+<span data-ttu-id="cd5a9-107">Срок.</span><span class="sxs-lookup"><span data-stu-id="cd5a9-107">A term.</span></span> <span data-ttu-id="cd5a9-108">Представляет определенную часть учебного года.</span><span class="sxs-lookup"><span data-stu-id="cd5a9-108">This represents a designated portion of the academic year.</span></span> <span data-ttu-id="cd5a9-109">Используется в [educationClass](educationclass.md).</span><span class="sxs-lookup"><span data-stu-id="cd5a9-109">It is used within [educationClass](educationclass.md).</span></span>
+
+## <a name="properties"></a><span data-ttu-id="cd5a9-110">Свойства</span><span class="sxs-lookup"><span data-stu-id="cd5a9-110">Properties</span></span>
+| <span data-ttu-id="cd5a9-111">Свойство</span><span class="sxs-lookup"><span data-stu-id="cd5a9-111">Property</span></span>     | <span data-ttu-id="cd5a9-112">Тип</span><span class="sxs-lookup"><span data-stu-id="cd5a9-112">Type</span></span>   |<span data-ttu-id="cd5a9-113">Описание</span><span class="sxs-lookup"><span data-stu-id="cd5a9-113">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="41485-113">displayName</span><span class="sxs-lookup"><span data-stu-id="41485-113">displayName</span></span>| <span data-ttu-id="41485-114">String</span><span class="sxs-lookup"><span data-stu-id="41485-114">String</span></span>| <span data-ttu-id="41485-115">Отображаемое имя срока.</span><span class="sxs-lookup"><span data-stu-id="41485-115">Display name of the term.</span></span>| 
-|<span data-ttu-id="41485-116">externalId</span><span class="sxs-lookup"><span data-stu-id="41485-116">externalId</span></span>|<span data-ttu-id="41485-117">String</span><span class="sxs-lookup"><span data-stu-id="41485-117">String</span></span>| <span data-ttu-id="41485-118">Идентификатор срока в системе синхронизации.</span><span class="sxs-lookup"><span data-stu-id="41485-118">ID of term in the syncing system.</span></span>|
-|<span data-ttu-id="41485-119">startDate</span><span class="sxs-lookup"><span data-stu-id="41485-119">startDate</span></span>|<span data-ttu-id="41485-120">Дата</span><span class="sxs-lookup"><span data-stu-id="41485-120">Date</span></span>|<span data-ttu-id="41485-121">Начало срока.</span><span class="sxs-lookup"><span data-stu-id="41485-121">Start of the term.</span></span>|
-|<span data-ttu-id="41485-122">endDate</span><span class="sxs-lookup"><span data-stu-id="41485-122">endDate</span></span>|<span data-ttu-id="41485-123">Date</span><span class="sxs-lookup"><span data-stu-id="41485-123">Date</span></span>|<span data-ttu-id="41485-124">Конец срока.</span><span class="sxs-lookup"><span data-stu-id="41485-124">End of the term.</span></span>|
+|<span data-ttu-id="cd5a9-114">displayName</span><span class="sxs-lookup"><span data-stu-id="cd5a9-114">displayName</span></span>| <span data-ttu-id="cd5a9-115">Строка</span><span class="sxs-lookup"><span data-stu-id="cd5a9-115">String</span></span>| <span data-ttu-id="cd5a9-116">Отображаемое имя срока.</span><span class="sxs-lookup"><span data-stu-id="cd5a9-116">Display name of the term.</span></span>| 
+|<span data-ttu-id="cd5a9-117">externalId</span><span class="sxs-lookup"><span data-stu-id="cd5a9-117">externalId</span></span>|<span data-ttu-id="cd5a9-118">String</span><span class="sxs-lookup"><span data-stu-id="cd5a9-118">String</span></span>| <span data-ttu-id="cd5a9-119">Идентификатор срока в системе синхронизации.</span><span class="sxs-lookup"><span data-stu-id="cd5a9-119">ID of term in the syncing system.</span></span>|
+|<span data-ttu-id="cd5a9-120">startDate</span><span class="sxs-lookup"><span data-stu-id="cd5a9-120">startDate</span></span>|<span data-ttu-id="cd5a9-121">Дата</span><span class="sxs-lookup"><span data-stu-id="cd5a9-121">Date</span></span>|<span data-ttu-id="cd5a9-122">Начало срока.</span><span class="sxs-lookup"><span data-stu-id="cd5a9-122">Start of the term.</span></span>|
+|<span data-ttu-id="cd5a9-123">endDate</span><span class="sxs-lookup"><span data-stu-id="cd5a9-123">endDate</span></span>|<span data-ttu-id="cd5a9-124">Date</span><span class="sxs-lookup"><span data-stu-id="cd5a9-124">Date</span></span>|<span data-ttu-id="cd5a9-125">Конец срока.</span><span class="sxs-lookup"><span data-stu-id="cd5a9-125">End of the term.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="41485-125">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="41485-125">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="cd5a9-126">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="cd5a9-126">JSON representation</span></span>
 
-<span data-ttu-id="41485-126">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="41485-126">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="cd5a9-127">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="cd5a9-127">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
