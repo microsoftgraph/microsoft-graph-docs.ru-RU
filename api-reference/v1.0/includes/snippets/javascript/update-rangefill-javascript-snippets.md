@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: a087f5c315f3cb594582df78eabbbe0bafcfba95
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: b7eeb65da55227c0c3d23810d4003b5dd0e700a6
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35736725"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36638472"
 ---
 ```javascript
 
@@ -20,6 +20,6 @@ const workbookRangeFill = {
 };
 
 let res = await client.api('/me/drive/items/{id}/workbook/names/{name}/range/format/fill')
-    .update({workbookRangeFill : workbookRangeFill});
+    .update(workbookRangeFill);
 
 ```
