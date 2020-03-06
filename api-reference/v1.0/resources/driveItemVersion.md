@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: sharepoint
 author: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e9521eb549bf84b900e6c49c4dedc5f2199de317
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b0ca825a0cd920ba10575ad2cd826da7e0b64055
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029402"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531558"
 ---
 # <a name="driveitemversion-resource-type"></a>Тип ресурса DriveItemVersion
+
+Пространство имен: microsoft.graph
 
 Ресурс **DriveItemVersion** представляет определенную версию элемента [DriveItem](driveitem.md).
 
@@ -24,9 +26,9 @@ ms.locfileid: "36029402"
 |            Стандартная задача             |         Метод HTTP         |
 | :--------------------------------- | :-------------------------- |
 | [Список версий][version-list]      | `GET /drive/items/{item-id}/versions`  |
-| [Get version][version-get]         | `GET /drive/items/{item-id}/versions/{version-id}`     |
+| [Получение версии][version-get]         | `GET /drive/items/{item-id}/versions/{version-id}`     |
 | [Get contents][content-get]        | `GET /drive/items/{item-id}/versions/{version-id}/content` |
-| [Restore version][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restoreversion` |
+| [Восстановление версии][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restoreversion` |
 
 [version-list]: ../api/driveitem-list-versions.md
 [version-get]: ../api/driveitemversion-get.md

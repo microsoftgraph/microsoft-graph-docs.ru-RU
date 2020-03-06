@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b24cc817fc36deed7a11330a5ed21254b18d81be
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 82b37629bfecd34a8cb8a8cbea288f22c6b68e6f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37367611"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530426"
 ---
 # <a name="weeklyschedule-enum-type"></a>тип перечисления Виклисчедуле
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+Пространство имен: microsoft.graph
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Возможные значения для еженедельного расписания.
 
@@ -22,11 +24,11 @@ ms.locfileid: "37367611"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|решения|1,1|Решения.|
-|воскресеньям|2|Воскресеньям.|
-|Вторник|4|Вторник.|
-|во|SP4|Во.|
-|Четверг|17:00|Четверг.|
+|решения|1 |Решения.|
+|воскресеньям|2 |Воскресеньям.|
+|Вторник|3 |Вторник.|
+|во|4 |Во.|
+|Четверг|5 |Четверг.|
 |Пятница|6 |Пятница.|
 |пятницам|7 |Пятницам.|
 |субботу|8 |Субботу.|

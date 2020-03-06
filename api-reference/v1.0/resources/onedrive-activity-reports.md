@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: e403d53df04ebf5b76cf695a80c2a03769293f24
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0399b7e3d320efbc98c3cf25cd2830a4749d8df5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035933"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534168"
 ---
 # <a name="onedrive-activity-reports"></a>Отчеты о действиях в OneDrive
+
+Пространство имен: microsoft.graph
 
 Просматривайте сведения о действиях каждого пользователя, имеющего лицензию на OneDrive, в отчетах действий с файлами в OneDrive. Эти отчеты позволят оценить уровень взаимодействия благодаря данным о количестве файлов, к которым предоставлен общий доступ.
 
@@ -22,7 +24,7 @@ ms.locfileid: "36035933"
 
 | Функция                                 | Возвращаемый тип | Описание                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [Получение сведений о пользователях](../api/reportroot-getonedriveactivityuserdetail.md) | Поток      | Получите сведения о действиях в OneDrive с разбивкой по пользователям. |
-| [Получение количества пользователей](../api/reportroot-getonedriveactivityusercounts.md) | Поток      | Получение тренда в отношении количества активных пользователей OneDrive. |
+| [Получение сведений о пользователях](../api/reportroot-getonedriveactivityuserdetail.md) | Stream      | Получите сведения о действиях в OneDrive с разбивкой по пользователям. |
+| [Получение количества пользователей](../api/reportroot-getonedriveactivityusercounts.md) | Stream      | Получение тренда в отношении количества активных пользователей OneDrive. |
 | [Получение количества файлов](../api/reportroot-getonedriveactivityfilecounts.md) | Stream      | Получение количества уникальных пользователей с лицензией, которые работали с файлами в любой учетной записи OneDrive. |
 

@@ -5,14 +5,16 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: conceptualPageType
-ms.openlocfilehash: 5cba8d9e69ba5d30700202ae811f7755f0234a40
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 585c8d34a90cf8f567014b763ebeeb9b296c7aae
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035436"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534045"
 ---
 # <a name="using-order-hints-in-planner"></a>Использование подсказок порядка в Планировщике
+
+Пространство имен: microsoft.graph
 
 Порядок сортировки объектов в Планировщике определяется подсказками порядка. Значения подсказок порядка — строки. Чтобы определить порядок следования элементов, клиенты могут сортировать эти строки по порядковому значению символов в них. Сравниваются символы с начала строки и до тех пор, пока не будет обнаружена разница в порядковом значении символов, либо пока одна из строк не закончится — в таком случае короткая строка будет расположена выше длинной. Значения могут содержать любой символ с порядковым номером от 32 (пробел) до 126 (`~`).
 

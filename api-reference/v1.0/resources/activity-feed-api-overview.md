@@ -5,16 +5,18 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: 927e83a57a3b199bddbc05394c58facfff89b25c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8b92e5fc5ec5ee8092c84dcfeb2c9daaf52b49f9
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030130"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533179"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>Использование REST API веб-канала активности
 
-Вы можете использовать API веб-канала активности в Microsoft Graph, чтобы возобновить действия пользователя на различных устройствах и платформах. Запросы API веб-канала активности выполняются от имени пользователя с [делегированными](/graph/permissions-reference#delegated-permissions-application-permissions-and-effective-permissions) разрешениями и [разрешением действий пользователя](/graph/permissions-reference), которые можно использовать с личными или рабочими и учебными учетными записями. 
+Пространство имен: microsoft.graph
+
+Вы можете использовать API веб-канала активности в Microsoft Graph, чтобы возобновить действия пользователя на различных устройствах и платформах. Запросы API веб-канала активности выполняются от имени пользователя с [делегированными разрешениями](/graph/permissions-reference#delegated-permissions-application-permissions-and-effective-permissions) и [разрешением действий пользователя](/graph/permissions-reference), которые можно использовать с личными или рабочими и учебными учетными записями. 
 
 Действия пользователей представлены ресурсом [активности](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/projectrome_activity) и организованы в канал на основе времени, представленный мной и действиями коллекции. 
 <!-- Add missing content.
@@ -64,7 +66,7 @@ Each activity represents a unique...
 ## <a name="next-steps"></a>Дальнейшие действия
 
 - Просмотрите [ресурс действия](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/projectrome_activity) и определите действия приложения, чтобы помочь пользователям возобновить важные задачи.
-- В этом разделе приведены примеры использования [адаптивных карточек](https://adaptivecards.io/samples/) для создания новых **** действий.  
+- В этом разделе приведены примеры использования [адаптивных карточек](https://adaptivecards.io/samples/) для создания новых **действий.**  
 - Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
 
 **Ищете дополнительные идеи?** 

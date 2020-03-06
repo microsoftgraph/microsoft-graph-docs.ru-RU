@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f2ca05079eaa59e7d602f5590ff2a6fed1129f76
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 9e8b1387c3bbc921bd653e5d4026d13b18bd2c64
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37357215"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532254"
 ---
 # <a name="windowsspotlightenablementsettings-enum-type"></a>тип перечисления Виндовсспотлигхтенаблементсеттингс
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+Пространство имен: microsoft.graph
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Позволяет ИТ для администраторов устанавливать предварительно определенную поисковую подсистему по умолчанию для устройств под управлением MDM
 
@@ -22,8 +24,8 @@ ms.locfileid: "37357215"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|"Прожектор" на экране блокировки не настроен|
-|активирован|1,1|Отключить Windows Spotlight на экране блокировки|
-|enabled|2|Включить Windows Spotlight на экране блокировки|
+|активирован|1 |Отключить Windows Spotlight на экране блокировки|
+|enabled|2 |Включить Windows Spotlight на экране блокировки|
 
 
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 011b68f2e85c041ccb0f654295dfaf1a42d5d237
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3529cfe38d6fa17b25df412b65ca9e2d42a18aff
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36024226"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509344"
 ---
 # <a name="unarchive-team"></a>Распаковка объекта команды
+
+Пространство имен: microsoft.graph
 
 
 
@@ -42,7 +44,7 @@ POST /teams/{id}/unarchive
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

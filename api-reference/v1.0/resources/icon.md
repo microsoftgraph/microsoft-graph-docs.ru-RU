@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 734276c4881f4a9c7628afe2a8f6dfa45c308f5d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: af719295a0d3ab46c94877a9cd046f63423e5ed4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030214"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532901"
 ---
 # <a name="icon-resource-type"></a>Тип ресурса Icon
+
+Пространство имен: microsoft.graph
 
 Представляет значок ячейки.
 
@@ -28,9 +30,9 @@ ms.locfileid: "36030214"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |index|int|Представляет собой индекс значка данного набора.|
-|set|string|Представляет набор, в который входит значок. Возможные значения: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags` `ThreeTrafficLights1` `ThreeTrafficLights2` `ThreeSigns` `FourTrafficLights` `FiveArrows` `FiveArrowsGray` `FiveRating` `FiveQuarters` `ThreeStars` `FourRedToBlack` `FourRating`,,,,,,,,,,,,,,,,,,,,,, `ThreeSymbols` `ThreeSymbols2` `FourArrows` `FourArrowsGray` , `ThreeTriangles`, `FiveBoxes`.|
+|set|string|Представляет набор, в который входит значок. Возможные значения `Invalid`:, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags` `ThreeTrafficLights1` `ThreeTrafficLights2` `ThreeSigns`,,,, `ThreeSymbols`, `ThreeSymbols2` `FourArrows` `FourArrowsGray` `FourRedToBlack`,,,,,, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles`, `FiveBoxes`,,,,,.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ba2c32a7dcbe1574f2135cd098207eeb23716136
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 894deaf58f8e2e6466a6670caadb1d587b2a227a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032398"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531317"
 ---
 # <a name="inferenceclassification-resource-type"></a>Тип ресурса inferenceClassification
+
+Пространство имен: microsoft.graph
 
 Классификация сообщений пользователя, позволяющая сосредоточиться на самых важных сообщениях. 
 
@@ -32,7 +34,7 @@ ms.locfileid: "36032398"
 |id|string| Только для чтения.|
 
 ## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |overrides|Коллекция объектов [inferenceClassificationOverride](inferenceclassificationoverride.md)| Набор переопределений пользователя, классифицирующих сообщения от определенных отправителей указанными способами: `focused` или `other`. Только для чтения. Допускается значение null.|
 

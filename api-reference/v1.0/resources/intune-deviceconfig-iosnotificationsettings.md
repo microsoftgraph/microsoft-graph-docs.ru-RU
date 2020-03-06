@@ -5,23 +5,25 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 993266d2a96946bf9f22b2c66c26db48e9915837
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 309bc8ce2211f4b2abfb1e72a01c857b9221ae4b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37359938"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530658"
 ---
 # <a name="iosnotificationsettings-resource-type"></a>Тип ресурса iosNotificationSettings
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+Пространство имен: microsoft.graph
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Элемент, описывающий параметры уведомлений.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|bundleID|String|Идентификатор пакета для приложения, к которому необходимо применить эти параметры уведомлений.|
+|bundleID|Строка|Идентификатор пакета для приложения, к которому необходимо применить эти параметры уведомлений.|
 |appName|String|Имя приложения, которое нужно связать со свойством bundleID.|
 |publisher|String|Издатель, которого нужно связать со свойством bundleID.|
 |enabled|Boolean|Указывает, разрешены ли уведомления для этого приложения.|

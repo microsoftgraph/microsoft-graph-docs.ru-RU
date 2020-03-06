@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 6ad126aa04f1d977ad065a9baaa2ce2cc2a72065
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e4a74630682277909a96eb76fc05b1be2cf98114
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36014454"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42516796"
 ---
 # <a name="get-icon"></a>Получение объекта Icon
+
+Пространство имен: microsoft.graph
 
 Получение свойств и связей объекта значка.
 ## <a name="permissions"></a>Разрешения
@@ -39,7 +41,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -56,7 +58,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/sort/fields/icon
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

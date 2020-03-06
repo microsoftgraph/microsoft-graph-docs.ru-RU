@@ -7,14 +7,16 @@ localization_priority: Normal
 description: Ресурс SpecialFolder группирует элементы данных, связанные со специальной папкой, в единую структуру.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e7b5878d091e766ffa5a591c3ea72e4abcad9461
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 767ac4c5ce8819290e9a47e3e3f4f4efd1a9d238
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034036"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533631"
 ---
 # <a name="specialfolder-resource-type"></a>Тип ресурса SpecialFolder
+
+Пространство имен: microsoft.graph
 
 Ресурс **SpecialFolder** группирует элементы данных, связанные со специальной папкой, в единую структуру.
 

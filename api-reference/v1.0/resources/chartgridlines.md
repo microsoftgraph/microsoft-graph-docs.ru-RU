@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: af1f9576c486174b6aa78dd3196c813e744a1552
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b4c621739ea654b479825f293944a39db1c0b66e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029801"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533128"
 ---
 # <a name="chartgridlines-resource-type"></a>Тип ресурса ChartGridlines
+
+Пространство имен: microsoft.graph
 
 Представляет основные или вспомогательные линии сетки на оси диаграммы.
 
@@ -21,18 +23,18 @@ ms.locfileid: "36029801"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartGridlines](../api/chartgridlines-get.md) | [Воркбукчартгридлинес](chartgridlines.md) |Чтение свойств и связей объекта chartGridlines.|
-|[Обновление](../api/chartgridlines-update.md) | [Воркбукчартгридлинес](chartgridlines.md)    |Обновление объекта ChartGridlines. |
+|[Получение объекта ChartGridlines](../api/chartgridlines-get.md) | [воркбукчартгридлинес](chartgridlines.md) |Чтение свойств и связей объекта chartGridlines.|
+|[Обновление](../api/chartgridlines-update.md) | [воркбукчартгридлинес](chartgridlines.md)    |Обновление объекта ChartGridlines. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |visible|boolean|Логическое значение, определяющее, отображаются ли линии сетки оси.|
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|format|[Воркбукчартгридлинесформат](chartgridlinesformat.md)|Представляет форматирование линий сетки диаграммы. Только для чтения.|
+|format|[воркбукчартгридлинесформат](chartgridlinesformat.md)|Представляет форматирование линий сетки диаграммы. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: edcd1fcf52cc020ce4b261aebc115cea302b05c6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b354be83058d67dc99cd3ffd7c98798017733199
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36003744"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518576"
 ---
 # <a name="chart-image"></a>Chart: Image
+
+Пространство имен: microsoft.graph
 
 Отрисовывает диаграмму в виде изображения с кодировкой Base64, масштабируя ее в соответствии с указанным размером.
 ## <a name="permissions"></a>Разрешения
@@ -43,8 +45,8 @@ GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fitt
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|height|Int32|Нужная высота создаваемого изображения. Необязательно.|
-|width|Int32|Нужная ширина создаваемого изображения. Необязательно.|
+|height|Int32|Нужная высота создаваемого изображения. Необязательный.|
+|width|Int32|Нужная ширина создаваемого изображения. Необязательный.|
 |fittingMode|string|Метод, используемый для масштабирования диаграммы до указанных размеров (если заданы и высота, и ширина). "  Допустимые значения: `Fit`, `FitAndCenter`, `Fill`.|
 
 ## <a name="response"></a>Отклик
@@ -63,7 +65,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id
 ```
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json;odata.metadata=minimal;odata.streaming=true
@@ -75,13 +77,13 @@ Content-type: application/json;odata.metadata=minimal;odata.streaming=true
 
 ## <a name="usage"></a>Применение
 
-Вы можете обеспечить отображение строки Base64 в теге изображения HTML: `<img src="data:image/png;base64,{base-64 chart image string}/>`.
+Вы можете отображать строку в кодировке Base 64 в HTML-теге изображения: `<img src="data:image/png;base64,{base-64 chart image string}/>`.
 
 В случае поведения по умолчанию используйте `Image(width=0,height=0,fittingMode='fit')`. Ниже приведен пример изображения диаграммы, возвращаемого с параметрами по умолчанию.
 
 ![Изображение диаграммы Excel с высотой и шириной по умолчанию.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-default.png)
 
-Если вы хотите настроить отображение этого изображения, укажите высоту, ширину и режим подгонки. Ниже показано то же изображение диаграммы, но с такими параметрами: `Image(width=500,height=500,fittingMode='Fill')`.
+Если вы хотите настроить отображение этого изображения, укажите высоту, ширину и режим подгонки. А вот как выглядит то же самое изображение диаграммы, если получить его с этими параметрами: `Image(width=500,height=500,fittingMode='Fill')`.
 
 ![Изображение диаграммы Excel с высотой и шириной по умолчанию.](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/GetChart-fill.png)
 

@@ -5,14 +5,16 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: e8e69f7f28fb66ecbe7181eb76645f89d5278148
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: 8c53ef8b8b7e431319b448f26a41ce5eba857033
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844939"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531267"
 ---
 # <a name="usedinsight-resource-type"></a>Тип ресурса Усединсигхт
+
+Пространство имен: microsoft.graph
 
 Представление документов, используемых определенным пользователем. Аналитика возвращает наиболее релевантные документы, которые пользователь просматривал или к которым обращался. Сюда входят документы в:
 
@@ -29,7 +31,7 @@ ms.locfileid: "39844939"
 
 | Свойство              | Тип                      | Описание  |
 | -------------         |---------------            | -------------|
-| id                    | String                    | Уникальный идентификатор связи. Только для чтения.        |
+| id                    | Строка                    | Уникальный идентификатор связи. Только для чтения.        |
 | ластусед              | [usageDetails](insights-usagedetails.md)              | Сведения о том, когда элемент был последний раз просмотрен и изменен пользователем. Только для чтения.     |
 | Ресурсе resourcevisualization | [Ресурсе resourcevisualization](insights-resourcevisualization.md)                | Свойства, которые можно использовать для отображения документа в вашем интерфейсе. Только для чтения      |
 | ресаурцереференце     | [ресаурцереференце](insights-resourcereference.md)                      | Справочные свойства используемого документа, например URL-адрес и тип документа. Только для чтения     |

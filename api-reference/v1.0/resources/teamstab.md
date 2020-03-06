@@ -5,14 +5,16 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: bf07770d920ee05c7856f89e2e099bcc958ad50c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c62905699b8986d9594ccad06d154d93b71313fc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033693"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533475"
 ---
 # <a name="teamstab-resource-type"></a>Тип ресурса teamsTab
+
+Пространство имен: microsoft.graph
 
 
 
@@ -36,11 +38,11 @@ TeamsTab — это [вкладка](../resources/teamstab.md) , которая 
 |  id              |   string                  |  Идентификатор, который уникальным образом определяет определенный экземпляр вкладки канала. только чтение.     |
 |  displayName            |   string                  |  Имя вкладки.     |
 |  webUrl          |   string                  |  URL-адрес глубокой ссылки для экземпляра вкладки. Только для чтения.     |
-|  конфигурацион        |   [Теамстабконфигуратион](teamstabconfiguration.md) |  Контейнер для настраиваемых параметров, применяемых к вкладке. Вкладка считается настроенной только после задания этого свойства.     |
+|  конфигурацион        |   [теамстабконфигуратион](teamstabconfiguration.md) |  Контейнер для настраиваемых параметров, применяемых к вкладке. Вкладка считается настроенной только после задания этого свойства.     |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
-| Отношение | Тип   | Описание |
+| Связь | Тип   | Описание |
 |:---------------|:--------|:----------|
 |teamsApp|[teamsApp](teamsapp.md) | Приложение, связанное с вкладкой. Его нельзя изменить после создания вкладки. |
 

@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a1c66f2d189d3c85316277ee6c23b6c798d610f3
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: cf0111d656ea4d16b20ed28ef5d033396a878307
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40864091"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509316"
 ---
 # <a name="update-apps-published-to-your-organizations-app-catalog"></a>Обновление приложений, опубликованных в каталоге приложений вашей организации
+
+Пространство имен: microsoft.graph
 
 
 
@@ -30,7 +32,7 @@ ms.locfileid: "40864091"
 |:----------------------------------     |:-------------|
 | Делегированные (рабочая или учебная учетная запись)     | AppCatalog.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается|
-| Приложение                            | Не поддерживается|
+| Для приложений                            | Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -45,14 +47,14 @@ PUT /appCatalogs/teamsApps/{id}
 | Авторизация | Bearer {токен}. Обязательный.  |
 | Content-Type  | приложение/ZIP-индекс |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Основной текст запроса
 
 Полезные данные манифеста ZIP для teams: в ZIP-файле приложения Teams [см. Создание пакета приложения](/microsoftteams/platform/concepts/apps/apps-package)
 
 >**Примечание:** Используйте идентификатор, возвращенный при вызове [списка опубликованных приложений](./teamsapp-list.md) , для ссылки на приложение, которое вы хотите обновить.
 Не используйте идентификатор из манифеста пакета приложения ZIP.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 ```
 HTTP/1.1 204 No Content

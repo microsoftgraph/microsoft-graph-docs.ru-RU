@@ -7,14 +7,16 @@ localization_priority: Normal
 description: Ресурс photo предоставляет свойства фотографии и камеры, например метаданные EXIF, в ресурсе driveItem.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c86190768c10b04bb55f59104368089cf7c77b18
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4e3f167384112c3c3354cdff88b41632f92e2637
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035501"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534052"
 ---
 # <a name="photo-resource-type"></a>Тип ресурса Photo
+
+Пространство имен: microsoft.graph
 
 Ресурс **photo** предоставляет свойства фотографии и камеры, например метаданные EXIF, в ресурсе [driveItem](driveitem.md).
 
@@ -46,9 +48,9 @@ ms.locfileid: "36035501"
 | **takenDateTime**       | DateTimeOffset | Представляет дату и время съемки. Только для чтения.
 | **cameraMake**          | Строка         | Изготовитель камеры. Только для чтения.
 | **cameraModel**         | String         | Модель камеры. Только для чтения.
-| **fNumber**             | Двойное         | Значение диафрагмы камеры. Только для чтения.
-| **exposureDenominator** | Двойное         | Знаменатель дробного значения выдержки камеры. Только для чтения.
-| **exposureNumerator**   | Двойное         | Числитель дробного значения выдержки камеры. Только для чтения.
+| **fNumber**             | Двойное с плавающей точкой         | Значение диафрагмы камеры. Только для чтения.
+| **exposureDenominator** | Двойное с плавающей точкой         | Знаменатель дробного значения выдержки камеры. Только для чтения.
+| **exposureNumerator**   | Двойное с плавающей точкой         | Числитель дробного значения выдержки камеры. Только для чтения.
 | **focalLength**         | Double         | Фокусное расстояние камеры. Только для чтения.
 | **iso**                 | Int32          | Значение ISO камеры. Только для чтения.
 

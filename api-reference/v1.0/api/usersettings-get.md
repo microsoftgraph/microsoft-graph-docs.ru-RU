@@ -5,14 +5,16 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6a71d34dc623a54936bfdaf4db73813948cc8d3a
-ms.sourcegitcommit: 1cdb3bcddf34e7445e65477b9bf661d4d10c7311
+ms.openlocfilehash: cce0c226a977db1e628aa759352cb686b2597e3a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "39844974"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508900"
 ---
 # <a name="get-settings"></a>Получение параметров
+
+Пространство имен: microsoft.graph
 
 Чтение объекта [userSettings](../resources/usersettings.md) пользователя и организации.
 Сведения об обновлении свойств объекта [userSettings](../resources/usersettings.md) см. в статье [Обновление параметров пользователя](usersettings-update.md).
