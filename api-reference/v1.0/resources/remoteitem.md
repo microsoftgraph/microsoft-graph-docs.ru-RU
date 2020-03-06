@@ -7,14 +7,16 @@ localization_priority: Normal
 description: Ресурс remoteItem указывает, что элемент driveItem ссылается на элемент, находящийся на другом диске.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0d19034475f72984f023cef368e1fec5f75fe456
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 8ce3c5c24506e75a34a95ee1da52d5bebd15ebd3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034729"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533858"
 ---
 # <a name="remoteitem-resource-type"></a>Тип ресурса RemoteItem
+
+Пространство имен: microsoft.graph
 
 Ресурс **remoteItem** указывает, что элемент [**driveItem**](driveitem.md) ссылается на элемент, находящийся на другом диске.
 Этот ресурс предоставляет уникальные идентификаторы исходного диска и целевого элемента.
