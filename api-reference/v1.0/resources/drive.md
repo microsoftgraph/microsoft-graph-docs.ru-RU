@@ -7,14 +7,16 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Ресурс Drive — объект верхнего уровня, представляющий хранилище OneDrive пользователя или библиотеку документов в SharePoint.
 doc_type: resourcePageType
-ms.openlocfilehash: ba40d2ac0605a255b0b7df05db1e5bebb68c2e42
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3b3d7d2d82ab2a6539ace2fa143ceaad55722336
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030543"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531564"
 ---
 # <a name="drive-resource-type"></a>Тип ресурса Drive
+
+Пространство имен: microsoft.graph
 
 Ресурс Drive — объект верхнего уровня, представляющий хранилище OneDrive пользователя или библиотеку документов в SharePoint.
 
@@ -93,7 +95,7 @@ ms.locfileid: "36030543"
 
 ## <a name="relationships"></a>Связи
 
-| Отношение | Тип                                 | Описание
+| Связь | Тип                                 | Описание
 |:-------------|:-------------------------------------|:-----------------------
 | items        | Коллекция [DriveItem](driveitem.md) | Все элементы, содержащиеся на диске. Только для чтения. Допускается значение null.
 | root         | [DriveItem](driveitem.md)            | Корневая папка на диске. Только для чтения.

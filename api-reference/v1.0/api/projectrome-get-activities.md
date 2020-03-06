@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ''
 doc_type: apiPageType
-ms.openlocfilehash: 1a3dad16f96f8b16618a1916bcccf6cf67eb95ff
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 74ea4cf908e8d6aecf53bbc9f1011a51b23ac270
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35975888"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42510734"
 ---
 # <a name="get-user-activities"></a>Получение действий пользователей
+
+Пространство имен: microsoft.graph
 
 Получение действий для определенного пользователя. В отличие от **последней** функции OData, будут возвращены действия без журналов. Разрешение UserActivity. ReadWrite. CreatedByApp будет применять к отклику дополнительную фильтрацию, чтобы возвращались только действия, созданные приложением. Такая фильтрация на стороне сервера может привести к пустым страницам, если пользователь является особенно активным и другие приложения создали более новые действия. Чтобы получить действия приложения, используйте свойство **nextLink** для разбивки на страницы.
 
@@ -58,7 +60,7 @@ GET /me/activities
 |:----|:-----|:-----------|
 |Authorization | string | Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Текст запроса отсутствует.
 

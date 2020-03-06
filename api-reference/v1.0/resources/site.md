@@ -6,14 +6,16 @@ description: Ресурс site предоставляет метаданные �
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 56df3754ab0fc87e839e3eb71db06ea5b05c75e7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1878b46f7738f440808960e43310b2d7606ee22f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034176"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533694"
 ---
 # <a name="site-resource"></a>Ресурс site
+
+Пространство имен: microsoft.graph
 
 Ресурс **site** предоставляет метаданные и связи для сайта SharePoint.
 
@@ -56,7 +58,7 @@ ms.locfileid: "36034176"
 
 ## <a name="relationships"></a>Связи
 
-| Отношение      | Тип                             | Описание
+| Связь      | Тип                             | Описание
 |:------------------|:---------------------------------|:----------------------
 | **analytics**     | Ресурс [itemAnalytics][]       | Аналитические данные о действиях просмотра, выполненных на этом сайте.
 | **columns**       | Collection([columnDefinition][]) | Коллекция определений столбцов, которые можно повторно использовать в разных списках на этом сайте.

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 8b1150c0470db5bc7d361b962432f8e78e87e7f7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cb0fac47407f008ee3e6d17fe628fe1fde70e037
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36021482"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509915"
 ---
 # <a name="list-pages"></a>Список страниц
+
+Пространство имен: microsoft.graph
 
 Получение списка объектов [Page](../resources/page.md) из указанного раздела.
 ## <a name="permissions"></a>Разрешения

@@ -5,17 +5,19 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: be29685f40b925e2e4156de4e653d03db6712818
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d70fc12e64d056cd484502d46bd25874951f79a4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36027190"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509260"
 ---
 # <a name="list-tabs-in-channel"></a>Вкладки списка в канале
 
+Пространство имен: microsoft.graph
 
-Получение списка [вкладок](../resources/teamstab.md) в указанном канале [](../resources/channel.md) в [команде](../resources/team.md). 
+
+Получение списка [вкладок](../resources/teamstab.md) в указанном [канале](../resources/channel.md) в [команде](../resources/team.md). 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,7 +45,7 @@ GET /teams/{id}/channels/{id}/tabs
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

@@ -5,16 +5,18 @@ ms.date: 09/10/2017
 title: Получение сайта SharePoint по пути
 localization_priority: Normal
 ms.prod: sharepoint
-description: Вы можете получить свойства и связи ресурса site.
+description: Получение свойств и отношений ресурса site.
 doc_type: apiPageType
-ms.openlocfilehash: 5e6195ddb90578d31d4cf68f081aafebbd004e24
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 767f6c3bd882fcc8a04931a5d3b802a56d4b39c0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36021475"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509789"
 ---
 # <a name="get-a-site-resource-by-path"></a>Получение ресурса site по его пути
+
+Пространство имен: microsoft.graph
 
 Получение свойств и отношений ресурса [site][]. Ресурс **site** представляет сайт группы в SharePoint.
 

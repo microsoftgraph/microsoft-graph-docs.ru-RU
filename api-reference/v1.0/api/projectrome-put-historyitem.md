@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ''
 doc_type: apiPageType
-ms.openlocfilehash: 851862a49a3a6852d70e597d70f5622833c7c087
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ce1abf2ea6df1e7a289802073a47bd1b9fdeb005
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36025360"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42510706"
 ---
 # <a name="create-or-replace-a-historyitem"></a>Создание или замена объекта historyItem
+
+Пространство имен: microsoft.graph
 
 Создание нового или замена существующего элемента журнала для существующего действия пользователя.
 
@@ -43,7 +45,7 @@ PUT /me/activities/{id}/historyItems/{id}
 |:----|:-----|:-----------|
 |Authorization | string | Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [historyItem](../resources/projectrome-historyitem.md) в формате JSON.
 

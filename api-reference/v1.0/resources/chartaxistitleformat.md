@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 3ae74b7353a0b4198b42a04fdd420eb3447d4c11
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 62522cee67684141911511de26731879936b4f2b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029850"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531884"
 ---
 # <a name="chartaxistitleformat-resource-type"></a>Тип ресурса ChartAxisTitleFormat
+
+Пространство имен: microsoft.graph
 
 Представляет форматирование для названий осей диаграммы.
 
@@ -23,10 +25,10 @@ ms.locfileid: "36029850"
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|font|[Воркбукчартфонт](chartfont.md)|Представляет атрибуты шрифта, такие как имя шрифта, размер шрифта, цвет и т. д. объект заголовка оси диаграммы. Только для чтения.|
+|font|[воркбукчартфонт](chartfont.md)|Представляет атрибуты шрифта, такие как имя шрифта, размер шрифта, цвет и т. д. объект заголовка оси диаграммы. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

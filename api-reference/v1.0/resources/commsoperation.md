@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 91b56b93e6572d3b5a87b3f37dcbe9cdeee7e00a
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 05dcb092c34db57660c149fef0665ec31bdaba74
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913235"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533045"
 ---
 # <a name="commsoperation-resource-type"></a>Тип ресурса Коммсоператион
+
+Пространство имен: microsoft.graph
 
 Представляет состояние определенных длительных операций.
 
@@ -26,7 +28,7 @@ ms.locfileid: "40913235"
 
 | Свойство           | Тип                        | Описание                                                                     |
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
-| Контекст      | String                      | Уникальная строка контекста клиента. Максимальный лимит — 256 символов.                           |
+| Контекст      | Строка                      | Уникальная строка контекста клиента. Максимальный лимит — 256 символов.                           |
 | id                 | Строка                      | ИДЕНТИФИКАТОР операции. Только для чтения.                                                    |
 | resultInfo         | [resultInfo](resultinfo.md) | Сведения о результате. Только для чтения.                                              |
 | status             | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения. |

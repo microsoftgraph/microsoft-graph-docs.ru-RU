@@ -7,14 +7,16 @@ localization_priority: Normal
 description: Ресурс ThumbnailSet представляет собой коллекцию ресурсов thumbnail с ключами.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 1dbd9ec5698fd3a9aac21e2f1463ce4364946e69
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ffcd654534dc1ff38f4f708b135d29ab101e0878
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033630"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533461"
 ---
 # <a name="thumbnailset-resource-type"></a>Тип ресурса ThumbnailSet
+
+Пространство имен: microsoft.graph
 
 Ресурс **ThumbnailSet** представляет собой коллекцию ресурсов [thumbnail](thumbnail.md) с ключами. Он представляет набор эскизов, связанных с ресурсом DriveItem.
 
@@ -50,7 +52,7 @@ ms.locfileid: "36033630"
 
 | Свойство | Тип                      | Описание                                                                       |
 |:---------|:--------------------------|:----------------------------------------------------------------------------------|
-| id       | String                    | Идентификатор в элементе. Только для чтения.                                                |
+| id       | Строка                    | Идентификатор в элементе. Только для чтения.                                                |
 | large    | [Thumbnail](thumbnail.md) | Эскиз размером 1920x1920.                                                     |
 | medium   | [Thumbnail](thumbnail.md) | Эскиз размером 176x176.                                                       |
 | small    | [Thumbnail](thumbnail.md) | Обрезанный эскиз размером 48x48.                                                        |

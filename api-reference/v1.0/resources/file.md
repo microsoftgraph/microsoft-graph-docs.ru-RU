@@ -2,19 +2,21 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Файл
+title: File
 localization_priority: Normal
 description: Ресурс File — это единая структура, объединяющая элементы данных, связанные с файлами.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 51ec91a635db2ca259ba84cea29304e4e6ac7cbb
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c316e3b09f00ffebd7ebfab5e47b49c7df3980d3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030375"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532961"
 ---
 # <a name="file-resource-type"></a>Тип ресурса file
+
+Пространство имен: microsoft.graph
 
 Ресурс **File** — это единая структура, объединяющая элементы данных, связанные с файлами.
 

@@ -5,14 +5,16 @@ author: ananmishr
 ms.prod: cloud-communications
 localization_priority: Normal
 doc_type: resourcePageType
-ms.openlocfilehash: b73f6110639cfb158bef8e5f529d9a2c65b34689
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 3bf6b0e2387ac658ad506e3b4ea226a9a8f66e6d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913466"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531961"
 ---
 # <a name="callmediastate-resource-type"></a>Тип ресурса Каллмедиастате
+
+Пространство имен: microsoft.graph
 
 
 Представляет состояние мультимедиа для [вызова](call.md).
@@ -21,7 +23,7 @@ ms.locfileid: "40913466"
 
 | Свойство            | Тип    | Описание                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
-| audio           | String  | Состояние звукового носителя. Возможные значения: `active`, `inactive`. |
+| audio           | Строка  | Состояние звукового носителя. Возможные значения: `active`, `inactive`. |
 
 ## <a name="json-representation"></a>Представление JSON
 

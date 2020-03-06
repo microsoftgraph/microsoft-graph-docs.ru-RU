@@ -7,14 +7,16 @@ title: Тип ресурса Hashes
 description: Ресурс хэшей группирует доступных хэши в единую структуру для элемента.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 6ed5cef48584aeb9d656ba0e088b535988f25a1f
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cb852ad01394ac463cb3d23ed404a7956bbf1eea
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030235"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532912"
 ---
 # <a name="hashes-resource-type"></a>Тип ресурса Hashes
+
+Пространство имен: microsoft.graph
 
 Ресурс **хэшей** группирует доступных хэши в единую структуру для элемента.
 

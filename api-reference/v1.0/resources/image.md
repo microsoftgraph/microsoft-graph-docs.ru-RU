@@ -7,14 +7,16 @@ localization_priority: Normal
 description: Ресурс Image — это единая структура, объединяющая свойства, связанные с изображением.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: d8b9f871ed465f3f6f617638a8dba38d575509a1
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b270d7ed2cacc5da5926d77d651878f9b0598093
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032405"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532892"
 ---
 # <a name="image-resource-type"></a>Тип ресурса Image
+
+Пространство имен: microsoft.graph
 
 Ресурс **Image** — это единая структура, объединяющая свойства, связанные с изображением. Если у ресурса [**DriveItem**](driveitem.md) есть ненулевой аспект **image**, то этот ресурс представляет точечный рисунок.
 

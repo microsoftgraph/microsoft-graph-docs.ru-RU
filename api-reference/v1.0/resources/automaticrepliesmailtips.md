@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 948aad9e8f077c8255ec75540647814b748defa2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: fc7d7c5c6a3560435c4e61a8953887f5b6b61324
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030032"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532043"
 ---
 # <a name="automaticrepliesmailtips-resource-type"></a>Тип ресурса Аутоматикреплиесмаилтипс
+
+Пространство имен: microsoft.graph
 
 
 [Подсказки](../resources/mailtips.md) о любых автоматических ответах, настроенных в почтовом ящике.
@@ -21,9 +23,9 @@ ms.locfileid: "36030032"
 | Свойство     | Тип   |Описание|
 |:-----|:-----|:-----|
 | message | String | Сообщение автоматического ответа. |
-| Мессажелангуаже | [localeInfo](../resources/localeinfo.md) | Язык, на котором находится сообщение с автоматическим ответом. |
-| Счедуледендтиме | [dateTimeTimeZone](../resources/datetimetimezone.md) | Дата и время завершения установки автоматических ответов. |
-| Счедуледстарттиме | [dateTimeTimeZone](../resources/datetimetimezone.md) | Дата и время начала набора автоматических ответов. |
+| мессажелангуаже | [localeInfo](../resources/localeinfo.md) | Язык, на котором находится сообщение с автоматическим ответом. |
+| счедуледендтиме | [dateTimeTimeZone](../resources/datetimetimezone.md) | Дата и время завершения установки автоматических ответов. |
+| счедуледстарттиме | [dateTimeTimeZone](../resources/datetimetimezone.md) | Дата и время начала набора автоматических ответов. |
 
 ## <a name="json-representation"></a>Представление JSON
 

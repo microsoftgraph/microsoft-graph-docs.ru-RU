@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3288b86ec735b4480577bb36a604107a51bb4f7f
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 66d0efae21a68bd14286af45c4c021dbf7ba96fc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37360463"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531009"
 ---
 # <a name="managedebook-resource-type"></a>Тип ресурса managedEBook
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+Пространство имен: microsoft.graph
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Абстрактный класс, содержащий базовые свойства управляемой электронной книги.
 
@@ -37,7 +39,7 @@ ms.locfileid: "37360463"
 |createdDateTime|DateTimeOffset|Дата и время создания электронной книги.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения электронной книги.|
 |informationUrl|String|URL-адрес с дополнительными сведениями.|
-|privacyInformationUrl|String|URL-адрес заявления о конфиденциальности.|
+|privacyInformationUrl|Строка|URL-адрес заявления о конфиденциальности.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

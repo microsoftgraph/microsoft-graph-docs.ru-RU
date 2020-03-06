@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 8b5a12c05bed39363d8a8a01eef749f2e88b929e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 3f906b1e98134b255858015efd765df2194c4a5b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034932"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533906"
 ---
 # <a name="rangeborder-resource-type"></a>Тип ресурса RangeBorder
+
+Пространство имен: microsoft.graph
 
 Представляет границу объекта.
 
@@ -21,21 +23,21 @@ ms.locfileid: "36034932"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта RangeBorder](../api/rangeborder-get.md) | [Воркбукранжебордер](rangeborder.md) |Чтение свойств и связей объекта rangeBorder.|
-|[Обновление](../api/rangeborder-update.md) | [Воркбукранжебордер](rangeborder.md) |Обновление объекта RangeBorder. |
+|[Получение объекта RangeBorder](../api/rangeborder-get.md) | [воркбукранжебордер](rangeborder.md) |Чтение свойств и связей объекта rangeBorder.|
+|[Обновление](../api/rangeborder-update.md) | [воркбукранжебордер](rangeborder.md) |Обновление объекта RangeBorder. |
 |[Список](../api/rangeborder-list.md) | Коллекция [воркбукранжебордер](rangeborder.md) |Получение коллекции объектов rangeBorder. |
-|[Itemat](../api/rangebordercollection-itemat.md)|[Воркбукранжебордер](rangeborder.md)|Получает объект границы по индексу.|
+|[Itemat](../api/rangebordercollection-itemat.md)|[воркбукранжебордер](rangeborder.md)|Получает объект границы по индексу.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |color|строка|HTML-код, представляющий цвет линии границы в виде #RRGGBB (например, FFA500) или в виде ключевого слова (например, orange).|
-|id|string|Представляет идентификатор границы. Возможные `EdgeTop`значения:, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`,. `DiagonalUp` Только для чтения.|
-|Сидеиндекс|string|Постоянное значение, указывающее определенную сторону границы. Возможные `EdgeTop`значения:, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`,. `DiagonalUp` Только для чтения.|
+|id|строка|Представляет идентификатор границы. Возможные `EdgeTop`значения:, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`,. `DiagonalUp` Только для чтения.|
+|сидеиндекс|string|Постоянное значение, указывающее определенную сторону границы. Возможные `EdgeTop`значения:, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown`,. `DiagonalUp` Только для чтения.|
 |style|string|Одна из констант стиля линии, определяющая стиль линии границы. Возможные `None`значения:, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double`,. `SlantDashDot`|
 |weight|string|Определяет толщину границы вокруг диапазона. Допустимые значения: `Hairline`, `Thin`, `Medium`, `Thick`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 
