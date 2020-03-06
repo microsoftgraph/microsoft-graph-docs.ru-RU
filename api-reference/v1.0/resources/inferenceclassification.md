@@ -5,40 +5,42 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ba2c32a7dcbe1574f2135cd098207eeb23716136
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 894deaf58f8e2e6466a6670caadb1d587b2a227a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032398"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531317"
 ---
-# <a name="inferenceclassification-resource-type"></a><span data-ttu-id="acb36-103">Тип ресурса inferenceClassification</span><span class="sxs-lookup"><span data-stu-id="acb36-103">inferenceClassification resource type</span></span>
+# <a name="inferenceclassification-resource-type"></a><span data-ttu-id="28557-103">Тип ресурса inferenceClassification</span><span class="sxs-lookup"><span data-stu-id="28557-103">inferenceClassification resource type</span></span>
 
-<span data-ttu-id="acb36-104">Классификация сообщений пользователя, позволяющая сосредоточиться на самых важных сообщениях.</span><span class="sxs-lookup"><span data-stu-id="acb36-104">Classification of a user's messages to enable focus on those that are more relevant or important to the user.</span></span> 
+<span data-ttu-id="28557-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="28557-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="acb36-105">Дополнительные сведения см. в статье [Управление сортировкой почты](manage-focused-inbox.md).</span><span class="sxs-lookup"><span data-stu-id="acb36-105">For more information, see [Manage Focused Inbox](manage-focused-inbox.md).</span></span>
+<span data-ttu-id="28557-105">Классификация сообщений пользователя, позволяющая сосредоточиться на самых важных сообщениях.</span><span class="sxs-lookup"><span data-stu-id="28557-105">Classification of a user's messages to enable focus on those that are more relevant or important to the user.</span></span> 
+
+<span data-ttu-id="28557-106">Дополнительные сведения см. в статье [Управление сортировкой почты](manage-focused-inbox.md).</span><span class="sxs-lookup"><span data-stu-id="28557-106">For more information, see [Manage Focused Inbox](manage-focused-inbox.md).</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="acb36-106">Методы</span><span class="sxs-lookup"><span data-stu-id="acb36-106">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="28557-107">Методы</span><span class="sxs-lookup"><span data-stu-id="28557-107">Methods</span></span>
 
-| <span data-ttu-id="acb36-107">Метод</span><span class="sxs-lookup"><span data-stu-id="acb36-107">Method</span></span>           | <span data-ttu-id="acb36-108">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="acb36-108">Return Type</span></span>    |<span data-ttu-id="acb36-109">Описание</span><span class="sxs-lookup"><span data-stu-id="acb36-109">Description</span></span>|
+| <span data-ttu-id="28557-108">Метод</span><span class="sxs-lookup"><span data-stu-id="28557-108">Method</span></span>           | <span data-ttu-id="28557-109">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="28557-109">Return Type</span></span>    |<span data-ttu-id="28557-110">Описание</span><span class="sxs-lookup"><span data-stu-id="28557-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="acb36-110">Создание объекта inferenceClassificationOverride</span><span class="sxs-lookup"><span data-stu-id="acb36-110">Create inferenceClassificationOverride</span></span>](../api/inferenceclassification-post-overrides.md) |[<span data-ttu-id="acb36-111">inferenceClassificationOverride</span><span class="sxs-lookup"><span data-stu-id="acb36-111">inferenceClassificationOverride</span></span>](inferenceclassificationoverride.md)| <span data-ttu-id="acb36-p101">Создание переопределения для отправителя, указанному по SMTP-адресу. Последующие сообщения с этого SMTP-адреса всегда будут классифицироваться так, как указано в переопределении.</span><span class="sxs-lookup"><span data-stu-id="acb36-p101">Create an override for a sender identified by an SMTP address. Future messages from that SMTP address will be consistently classified as specified in the override.</span></span>|
-|[<span data-ttu-id="acb36-114">Список переопределений</span><span class="sxs-lookup"><span data-stu-id="acb36-114">List overrides</span></span>](../api/inferenceclassification-list-overrides.md) |<span data-ttu-id="acb36-115">Коллекция объектов [inferenceClassificationOverride](inferenceclassificationoverride.md)</span><span class="sxs-lookup"><span data-stu-id="acb36-115">[inferenceClassificationOverride](inferenceclassificationoverride.md) collection</span></span>| <span data-ttu-id="acb36-116">Получение переопределений, настроенных пользователем для классификации сообщений от определенных отправителей.</span><span class="sxs-lookup"><span data-stu-id="acb36-116">Get the overrides that a user has set up to always classify messages from certain senders in specific ways.</span></span>|
+|[<span data-ttu-id="28557-111">Создание объекта inferenceClassificationOverride</span><span class="sxs-lookup"><span data-stu-id="28557-111">Create inferenceClassificationOverride</span></span>](../api/inferenceclassification-post-overrides.md) |[<span data-ttu-id="28557-112">inferenceClassificationOverride</span><span class="sxs-lookup"><span data-stu-id="28557-112">inferenceClassificationOverride</span></span>](inferenceclassificationoverride.md)| <span data-ttu-id="28557-p101">Создание переопределения для отправителя, указанному по SMTP-адресу. Последующие сообщения с этого SMTP-адреса всегда будут классифицироваться так, как указано в переопределении.</span><span class="sxs-lookup"><span data-stu-id="28557-p101">Create an override for a sender identified by an SMTP address. Future messages from that SMTP address will be consistently classified as specified in the override.</span></span>|
+|[<span data-ttu-id="28557-115">Список переопределений</span><span class="sxs-lookup"><span data-stu-id="28557-115">List overrides</span></span>](../api/inferenceclassification-list-overrides.md) |<span data-ttu-id="28557-116">Коллекция объектов [inferenceClassificationOverride](inferenceclassificationoverride.md)</span><span class="sxs-lookup"><span data-stu-id="28557-116">[inferenceClassificationOverride](inferenceclassificationoverride.md) collection</span></span>| <span data-ttu-id="28557-117">Получение переопределений, настроенных пользователем для классификации сообщений от определенных отправителей.</span><span class="sxs-lookup"><span data-stu-id="28557-117">Get the overrides that a user has set up to always classify messages from certain senders in specific ways.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="acb36-117">Свойства</span><span class="sxs-lookup"><span data-stu-id="acb36-117">Properties</span></span>
-| <span data-ttu-id="acb36-118">Свойство</span><span class="sxs-lookup"><span data-stu-id="acb36-118">Property</span></span>     | <span data-ttu-id="acb36-119">Тип</span><span class="sxs-lookup"><span data-stu-id="acb36-119">Type</span></span>   |<span data-ttu-id="acb36-120">Описание</span><span class="sxs-lookup"><span data-stu-id="acb36-120">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="28557-118">Свойства</span><span class="sxs-lookup"><span data-stu-id="28557-118">Properties</span></span>
+| <span data-ttu-id="28557-119">Свойство</span><span class="sxs-lookup"><span data-stu-id="28557-119">Property</span></span>     | <span data-ttu-id="28557-120">Тип</span><span class="sxs-lookup"><span data-stu-id="28557-120">Type</span></span>   |<span data-ttu-id="28557-121">Описание</span><span class="sxs-lookup"><span data-stu-id="28557-121">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="acb36-121">id</span><span class="sxs-lookup"><span data-stu-id="acb36-121">id</span></span>|<span data-ttu-id="acb36-122">string</span><span class="sxs-lookup"><span data-stu-id="acb36-122">string</span></span>| <span data-ttu-id="acb36-123">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="acb36-123">Read-only.</span></span>|
+|<span data-ttu-id="28557-122">id</span><span class="sxs-lookup"><span data-stu-id="28557-122">id</span></span>|<span data-ttu-id="28557-123">string</span><span class="sxs-lookup"><span data-stu-id="28557-123">string</span></span>| <span data-ttu-id="28557-124">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="28557-124">Read-only.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="acb36-124">Отношения</span><span class="sxs-lookup"><span data-stu-id="acb36-124">Relationships</span></span>
-| <span data-ttu-id="acb36-125">Отношение</span><span class="sxs-lookup"><span data-stu-id="acb36-125">Relationship</span></span> | <span data-ttu-id="acb36-126">Тип</span><span class="sxs-lookup"><span data-stu-id="acb36-126">Type</span></span>   |<span data-ttu-id="acb36-127">Описание</span><span class="sxs-lookup"><span data-stu-id="acb36-127">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="28557-125">Отношения</span><span class="sxs-lookup"><span data-stu-id="28557-125">Relationships</span></span>
+| <span data-ttu-id="28557-126">Связь</span><span class="sxs-lookup"><span data-stu-id="28557-126">Relationship</span></span> | <span data-ttu-id="28557-127">Тип</span><span class="sxs-lookup"><span data-stu-id="28557-127">Type</span></span>   |<span data-ttu-id="28557-128">Описание</span><span class="sxs-lookup"><span data-stu-id="28557-128">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="acb36-128">overrides</span><span class="sxs-lookup"><span data-stu-id="acb36-128">overrides</span></span>|<span data-ttu-id="acb36-129">Коллекция объектов [inferenceClassificationOverride](inferenceclassificationoverride.md)</span><span class="sxs-lookup"><span data-stu-id="acb36-129">[inferenceClassificationOverride](inferenceclassificationoverride.md) collection</span></span>| <span data-ttu-id="acb36-p102">Набор переопределений пользователя, классифицирующих сообщения от определенных отправителей указанными способами: `focused` или `other`. Только для чтения. Допускается значение null.</span><span class="sxs-lookup"><span data-stu-id="acb36-p102">A set of overrides for a user to always classify messages from specific senders in certain ways: `focused`, or `other`. Read-only. Nullable.</span></span>|
+|<span data-ttu-id="28557-129">overrides</span><span class="sxs-lookup"><span data-stu-id="28557-129">overrides</span></span>|<span data-ttu-id="28557-130">Коллекция объектов [inferenceClassificationOverride](inferenceclassificationoverride.md)</span><span class="sxs-lookup"><span data-stu-id="28557-130">[inferenceClassificationOverride](inferenceclassificationoverride.md) collection</span></span>| <span data-ttu-id="28557-p102">Набор переопределений пользователя, классифицирующих сообщения от определенных отправителей указанными способами: `focused` или `other`. Только для чтения. Допускается значение null.</span><span class="sxs-lookup"><span data-stu-id="28557-p102">A set of overrides for a user to always classify messages from specific senders in certain ways: `focused`, or `other`. Read-only. Nullable.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="acb36-133">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="acb36-133">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="28557-134">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="28557-134">JSON representation</span></span>
 
-<span data-ttu-id="acb36-134">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="acb36-134">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="28557-135">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="28557-135">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

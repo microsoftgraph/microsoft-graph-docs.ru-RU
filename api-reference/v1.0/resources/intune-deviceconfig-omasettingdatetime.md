@@ -5,35 +5,37 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4405f8446ceb76dbdd5b4c9df1407ee14861a3b8
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 4c85711df4d7de9245196ca86ea47de0c72efc9c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37360799"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532430"
 ---
-# <a name="omasettingdatetime-resource-type"></a><span data-ttu-id="2b367-103">Тип ресурса omaSettingDateTime</span><span class="sxs-lookup"><span data-stu-id="2b367-103">omaSettingDateTime resource type</span></span>
+# <a name="omasettingdatetime-resource-type"></a><span data-ttu-id="d0723-103">Тип ресурса omaSettingDateTime</span><span class="sxs-lookup"><span data-stu-id="d0723-103">omaSettingDateTime resource type</span></span>
 
-> <span data-ttu-id="2b367-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="2b367-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="d0723-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d0723-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="2b367-105">Определение даты и времени параметра OMA.</span><span class="sxs-lookup"><span data-stu-id="2b367-105">OMA Settings DateTime definition.</span></span>
+> <span data-ttu-id="d0723-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="d0723-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+
+<span data-ttu-id="d0723-106">Определение даты и времени параметра OMA.</span><span class="sxs-lookup"><span data-stu-id="d0723-106">OMA Settings DateTime definition.</span></span>
 
 
-<span data-ttu-id="2b367-106">Наследуется от ресурса [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="2b367-106">Inherits from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>
+<span data-ttu-id="d0723-107">Наследуется от ресурса [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="d0723-107">Inherits from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="2b367-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="2b367-107">Properties</span></span>
-|<span data-ttu-id="2b367-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="2b367-108">Property</span></span>|<span data-ttu-id="2b367-109">Тип</span><span class="sxs-lookup"><span data-stu-id="2b367-109">Type</span></span>|<span data-ttu-id="2b367-110">Описание</span><span class="sxs-lookup"><span data-stu-id="2b367-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="d0723-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="d0723-108">Properties</span></span>
+|<span data-ttu-id="d0723-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="d0723-109">Property</span></span>|<span data-ttu-id="d0723-110">Тип</span><span class="sxs-lookup"><span data-stu-id="d0723-110">Type</span></span>|<span data-ttu-id="d0723-111">Описание</span><span class="sxs-lookup"><span data-stu-id="d0723-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="2b367-111">displayName</span><span class="sxs-lookup"><span data-stu-id="2b367-111">displayName</span></span>|<span data-ttu-id="2b367-112">Строка</span><span class="sxs-lookup"><span data-stu-id="2b367-112">String</span></span>|<span data-ttu-id="2b367-113">Отображаемое имя.</span><span class="sxs-lookup"><span data-stu-id="2b367-113">Display Name.</span></span> <span data-ttu-id="2b367-114">Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="2b367-114">Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>|
-|<span data-ttu-id="2b367-115">description</span><span class="sxs-lookup"><span data-stu-id="2b367-115">description</span></span>|<span data-ttu-id="2b367-116">String</span><span class="sxs-lookup"><span data-stu-id="2b367-116">String</span></span>|<span data-ttu-id="2b367-117">Описание.</span><span class="sxs-lookup"><span data-stu-id="2b367-117">Description.</span></span> <span data-ttu-id="2b367-118">Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="2b367-118">Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>|
-|<span data-ttu-id="2b367-119">omaUri</span><span class="sxs-lookup"><span data-stu-id="2b367-119">omaUri</span></span>|<span data-ttu-id="2b367-120">String</span><span class="sxs-lookup"><span data-stu-id="2b367-120">String</span></span>|<span data-ttu-id="2b367-121">OMA.</span><span class="sxs-lookup"><span data-stu-id="2b367-121">OMA.</span></span> <span data-ttu-id="2b367-122">Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="2b367-122">Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>|
-|<span data-ttu-id="2b367-123">value</span><span class="sxs-lookup"><span data-stu-id="2b367-123">value</span></span>|<span data-ttu-id="2b367-124">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="2b367-124">DateTimeOffset</span></span>|<span data-ttu-id="2b367-125">Значение.</span><span class="sxs-lookup"><span data-stu-id="2b367-125">Value.</span></span>|
+|<span data-ttu-id="d0723-112">displayName</span><span class="sxs-lookup"><span data-stu-id="d0723-112">displayName</span></span>|<span data-ttu-id="d0723-113">Строка</span><span class="sxs-lookup"><span data-stu-id="d0723-113">String</span></span>|<span data-ttu-id="d0723-114">Отображаемое имя.</span><span class="sxs-lookup"><span data-stu-id="d0723-114">Display Name.</span></span> <span data-ttu-id="d0723-115">Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="d0723-115">Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>|
+|<span data-ttu-id="d0723-116">description</span><span class="sxs-lookup"><span data-stu-id="d0723-116">description</span></span>|<span data-ttu-id="d0723-117">String</span><span class="sxs-lookup"><span data-stu-id="d0723-117">String</span></span>|<span data-ttu-id="d0723-118">Описание.</span><span class="sxs-lookup"><span data-stu-id="d0723-118">Description.</span></span> <span data-ttu-id="d0723-119">Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="d0723-119">Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>|
+|<span data-ttu-id="d0723-120">omaUri</span><span class="sxs-lookup"><span data-stu-id="d0723-120">omaUri</span></span>|<span data-ttu-id="d0723-121">String</span><span class="sxs-lookup"><span data-stu-id="d0723-121">String</span></span>|<span data-ttu-id="d0723-122">OMA.</span><span class="sxs-lookup"><span data-stu-id="d0723-122">OMA.</span></span> <span data-ttu-id="d0723-123">Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="d0723-123">Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>|
+|<span data-ttu-id="d0723-124">value</span><span class="sxs-lookup"><span data-stu-id="d0723-124">value</span></span>|<span data-ttu-id="d0723-125">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d0723-125">DateTimeOffset</span></span>|<span data-ttu-id="d0723-126">Значение.</span><span class="sxs-lookup"><span data-stu-id="d0723-126">Value.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="2b367-126">Связи</span><span class="sxs-lookup"><span data-stu-id="2b367-126">Relationships</span></span>
-<span data-ttu-id="2b367-127">Нет</span><span class="sxs-lookup"><span data-stu-id="2b367-127">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="d0723-127">Связи</span><span class="sxs-lookup"><span data-stu-id="d0723-127">Relationships</span></span>
+<span data-ttu-id="d0723-128">Нет</span><span class="sxs-lookup"><span data-stu-id="d0723-128">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="2b367-128">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="2b367-128">JSON Representation</span></span>
-<span data-ttu-id="2b367-129">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2b367-129">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d0723-129">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d0723-129">JSON Representation</span></span>
+<span data-ttu-id="d0723-130">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d0723-130">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.omaSettingDateTime"

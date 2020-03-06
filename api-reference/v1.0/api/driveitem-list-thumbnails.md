@@ -7,40 +7,42 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Получение коллекции ресурсов ThumbnailSet для ресурса DriveItem.
 doc_type: apiPageType
-ms.openlocfilehash: e210f42c7695d7c9f36c142c73621b09b71802e3
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: 51fc9302ab356ead935aabed24bbe76490fc75f1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36726391"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517715"
 ---
-# <a name="list-thumbnails-for-a-driveitem"></a><span data-ttu-id="9b8d8-103">Список эскизов для ресурса DriveItem</span><span class="sxs-lookup"><span data-stu-id="9b8d8-103">List thumbnails for a DriveItem</span></span>
+# <a name="list-thumbnails-for-a-driveitem"></a><span data-ttu-id="7f761-103">Список эскизов для ресурса DriveItem</span><span class="sxs-lookup"><span data-stu-id="7f761-103">List thumbnails for a DriveItem</span></span>
 
-<span data-ttu-id="9b8d8-104">Получение коллекции ресурсов [ThumbnailSet](../resources/thumbnailset.md) для ресурса [DriveItem](../resources/driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="9b8d8-104">Retrieve a collection of [ThumbnailSet](../resources/thumbnailset.md) resources for a [DriveItem](../resources/driveitem.md) resource.</span></span>
+<span data-ttu-id="7f761-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7f761-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="9b8d8-p101">Ресурс DriveItem представляют ресурсы [ThumbnailSet](../resources/thumbnailset.md), количество которых может быть нуль и более. Каждый ресурс **thumbnailSet** может включать один или несколько объектов [**thumbnail**](../resources/thumbnail.md) — изображений, представляющих элемент. К примеру, ресурс **thumbnailSet** может включать такие распространенные объекты **thumbnail**, как `small`, `medium` и `large`.</span><span class="sxs-lookup"><span data-stu-id="9b8d8-p101">A DriveItem can be represented by zero or more [ThumbnailSet](../resources/thumbnailset.md) resources. Each **thumbnailSet** can have one or more [**thumbnail**](../resources/thumbnail.md) objects, which are images that represent the item. For example, a **thumbnailSet** may include **thumbnail** objects, such as common ones including `small`, `medium`, or `large`.</span></span>
+<span data-ttu-id="7f761-105">Получение коллекции ресурсов [ThumbnailSet](../resources/thumbnailset.md) для ресурса [DriveItem](../resources/driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="7f761-105">Retrieve a collection of [ThumbnailSet](../resources/thumbnailset.md) resources for a [DriveItem](../resources/driveitem.md) resource.</span></span>
 
-<span data-ttu-id="9b8d8-p102">Работать с эскизами в OneDrive можно множеством способов. Ниже представлены наиболее распространенные из них.</span><span class="sxs-lookup"><span data-stu-id="9b8d8-p102">There are many ways to work with thumbnails on OneDrive. Here are the most common ones:</span></span>
+<span data-ttu-id="7f761-p101">Ресурс DriveItem представляют ресурсы [ThumbnailSet](../resources/thumbnailset.md), количество которых может быть нуль и более. Каждый ресурс **thumbnailSet** может включать один или несколько объектов [**thumbnail**](../resources/thumbnail.md) — изображений, представляющих элемент. К примеру, ресурс **thumbnailSet** может включать такие распространенные объекты **thumbnail**, как `small`, `medium` и `large`.</span><span class="sxs-lookup"><span data-stu-id="7f761-p101">A DriveItem can be represented by zero or more [ThumbnailSet](../resources/thumbnailset.md) resources. Each **thumbnailSet** can have one or more [**thumbnail**](../resources/thumbnail.md) objects, which are images that represent the item. For example, a **thumbnailSet** may include **thumbnail** objects, such as common ones including `small`, `medium`, or `large`.</span></span>
 
-* <span data-ttu-id="9b8d8-110">Перечисление доступных эскизов элемента</span><span class="sxs-lookup"><span data-stu-id="9b8d8-110">Enumerate available thumbnails for an item</span></span>
-* <span data-ttu-id="9b8d8-111">Получение одного эскиза элемента</span><span class="sxs-lookup"><span data-stu-id="9b8d8-111">Retrieve a single thumbnail for an item</span></span>
-* <span data-ttu-id="9b8d8-112">Получение содержимого эскиза</span><span class="sxs-lookup"><span data-stu-id="9b8d8-112">Retrieve thumbnail content</span></span>
-* <span data-ttu-id="9b8d8-113">Получение эскизов нескольких элементов в одном запросе</span><span class="sxs-lookup"><span data-stu-id="9b8d8-113">Retrieve thumbnails for multiple items in a single request</span></span>
-* <span data-ttu-id="9b8d8-114">Получение эскизов настраиваемых размеров</span><span class="sxs-lookup"><span data-stu-id="9b8d8-114">Retrieve custom thumbnail sizes</span></span>
-* <span data-ttu-id="9b8d8-115">Отправка пользовательского эскиза элемента</span><span class="sxs-lookup"><span data-stu-id="9b8d8-115">Upload a custom thumbnail for an item</span></span>
-* <span data-ttu-id="9b8d8-116">Определение того, существует ли отправленный пользовательский эскиз</span><span class="sxs-lookup"><span data-stu-id="9b8d8-116">Determine if a custom uploaded thumbnail exists</span></span>
+<span data-ttu-id="7f761-p102">Работать с эскизами в OneDrive можно множеством способов. Ниже представлены наиболее распространенные из них.</span><span class="sxs-lookup"><span data-stu-id="7f761-p102">There are many ways to work with thumbnails on OneDrive. Here are the most common ones:</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9b8d8-117">Разрешения</span><span class="sxs-lookup"><span data-stu-id="9b8d8-117">Permissions</span></span>
+* <span data-ttu-id="7f761-111">Перечисление доступных эскизов элемента</span><span class="sxs-lookup"><span data-stu-id="7f761-111">Enumerate available thumbnails for an item</span></span>
+* <span data-ttu-id="7f761-112">Получение одного эскиза элемента</span><span class="sxs-lookup"><span data-stu-id="7f761-112">Retrieve a single thumbnail for an item</span></span>
+* <span data-ttu-id="7f761-113">Получение содержимого эскиза</span><span class="sxs-lookup"><span data-stu-id="7f761-113">Retrieve thumbnail content</span></span>
+* <span data-ttu-id="7f761-114">Получение эскизов нескольких элементов в одном запросе</span><span class="sxs-lookup"><span data-stu-id="7f761-114">Retrieve thumbnails for multiple items in a single request</span></span>
+* <span data-ttu-id="7f761-115">Получение эскизов настраиваемых размеров</span><span class="sxs-lookup"><span data-stu-id="7f761-115">Retrieve custom thumbnail sizes</span></span>
+* <span data-ttu-id="7f761-116">Отправка пользовательского эскиза элемента</span><span class="sxs-lookup"><span data-stu-id="7f761-116">Upload a custom thumbnail for an item</span></span>
+* <span data-ttu-id="7f761-117">Определение того, существует ли отправленный пользовательский эскиз</span><span class="sxs-lookup"><span data-stu-id="7f761-117">Determine if a custom uploaded thumbnail exists</span></span>
 
-<span data-ttu-id="9b8d8-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9b8d8-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="7f761-118">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7f761-118">Permissions</span></span>
 
-|<span data-ttu-id="9b8d8-120">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9b8d8-120">Permission type</span></span>      | <span data-ttu-id="9b8d8-121">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="9b8d8-121">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="7f761-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7f761-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="7f761-121">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7f761-121">Permission type</span></span>      | <span data-ttu-id="7f761-122">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7f761-122">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9b8d8-122">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9b8d8-122">Delegated (work or school account)</span></span> | <span data-ttu-id="9b8d8-123">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9b8d8-123">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="9b8d8-124">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9b8d8-124">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9b8d8-125">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9b8d8-125">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="9b8d8-126">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9b8d8-126">Application</span></span> | <span data-ttu-id="9b8d8-127">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9b8d8-127">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="7f761-123">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7f761-123">Delegated (work or school account)</span></span> | <span data-ttu-id="7f761-124">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7f761-124">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="7f761-125">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7f761-125">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7f761-126">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7f761-126">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="7f761-127">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7f761-127">Application</span></span> | <span data-ttu-id="7f761-128">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7f761-128">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9b8d8-128">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9b8d8-128">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7f761-129">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7f761-129">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -52,50 +54,50 @@ GET /sites/{site-id}/drive/items/{item-id}/thumbnails
 GET /users/{user-id}/drive/items/{item-id}/thumbnails
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="9b8d8-129">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="9b8d8-129">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="7f761-130">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="7f761-130">Optional query parameters</span></span>
 
-<span data-ttu-id="9b8d8-130">Этот метод поддерживает [параметр запросов OData](/graph/query-parameters) `$select` для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="9b8d8-130">This method supports the `$select` [OData puery parameter](/graph/query-parameters) to customize the response.</span></span>
+<span data-ttu-id="7f761-131">Этот метод поддерживает [параметр запросов OData](/graph/query-parameters) `$select` для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="7f761-131">This method supports the `$select` [OData puery parameter](/graph/query-parameters) to customize the response.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9b8d8-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="9b8d8-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7f761-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="7f761-132">Response</span></span>
 
-<span data-ttu-id="9b8d8-132">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [ThumbnailSet](../resources/thumbnailset.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="9b8d8-132">If successful, this method returns a `200 OK` response code and collection of [ThumbnailSet](../resources/thumbnailset.md) objects in the response body.</span></span>
+<span data-ttu-id="7f761-133">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [ThumbnailSet](../resources/thumbnailset.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="7f761-133">If successful, this method returns a `200 OK` response code and collection of [ThumbnailSet](../resources/thumbnailset.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9b8d8-133">Пример</span><span class="sxs-lookup"><span data-stu-id="9b8d8-133">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7f761-134">Пример</span><span class="sxs-lookup"><span data-stu-id="7f761-134">Example</span></span>
 
-<span data-ttu-id="9b8d8-134">Ниже представлен пример запроса на получение доступных эскизов элемента в хранилище OneDrive текущего пользователя.</span><span class="sxs-lookup"><span data-stu-id="9b8d8-134">Here is an example of the request which retrieves available thumbnails for an item in the current user's OneDrive.</span></span>
+<span data-ttu-id="7f761-135">Ниже представлен пример запроса на получение доступных эскизов элемента в хранилище OneDrive текущего пользователя.</span><span class="sxs-lookup"><span data-stu-id="7f761-135">Here is an example of the request which retrieves available thumbnails for an item in the current user's OneDrive.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="9b8d8-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="9b8d8-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="7f761-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="7f761-136">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "enum-item-thumbnails", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/thumbnails
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="9b8d8-136">C#</span><span class="sxs-lookup"><span data-stu-id="9b8d8-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="7f761-137">C#</span><span class="sxs-lookup"><span data-stu-id="7f761-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/enum-item-thumbnails-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9b8d8-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9b8d8-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="7f761-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7f761-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/enum-item-thumbnails-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="9b8d8-138">Цель — C</span><span class="sxs-lookup"><span data-stu-id="9b8d8-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="7f761-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7f761-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/enum-item-thumbnails-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="9b8d8-139">Java</span><span class="sxs-lookup"><span data-stu-id="9b8d8-139">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="7f761-140">Java</span><span class="sxs-lookup"><span data-stu-id="7f761-140">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/enum-item-thumbnails-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-<span data-ttu-id="9b8d8-140">Этот запрос возвращает массив доступных объектов **thumbnailSet** для элемента.</span><span class="sxs-lookup"><span data-stu-id="9b8d8-140">This returns an array of available **thumbnailSets** for the item.</span></span> <span data-ttu-id="9b8d8-141">У любого элемента в объекте drive может быть один или несколько эскизов (либо ни одного эскиза).</span><span class="sxs-lookup"><span data-stu-id="9b8d8-141">Any item in a drive can have zero or more thumbnails.</span></span>
+<span data-ttu-id="7f761-141">Этот запрос возвращает массив доступных объектов **thumbnailSet** для элемента.</span><span class="sxs-lookup"><span data-stu-id="7f761-141">This returns an array of available **thumbnailSets** for the item.</span></span> <span data-ttu-id="7f761-142">У любого элемента в объекте drive может быть один или несколько эскизов (либо ни одного эскиза).</span><span class="sxs-lookup"><span data-stu-id="7f761-142">Any item in a drive can have zero or more thumbnails.</span></span>
 
-<span data-ttu-id="9b8d8-p105">**Примечание.** С помощью параметра _select_ строки запроса вы можете указывать размеры эскизов, возвращаемых в объекте **ThumbnailSet**. Например, запрос `/thumbnails?select=medium` получает только эскизы среднего размера.</span><span class="sxs-lookup"><span data-stu-id="9b8d8-p105">**Note:** You can use the _select_ query string parameter to control which thumbnail sizes are returned in the **ThumbnailSet**. For example, `/thumbnails?select=medium` retrieves only the medium sized thumbnails.</span></span>
+<span data-ttu-id="7f761-p105">**Примечание.** С помощью параметра _select_ строки запроса вы можете указывать размеры эскизов, возвращаемых в объекте **ThumbnailSet**. Например, запрос `/thumbnails?select=medium` получает только эскизы среднего размера.</span><span class="sxs-lookup"><span data-stu-id="7f761-p105">**Note:** You can use the _select_ query string parameter to control which thumbnail sizes are returned in the **ThumbnailSet**. For example, `/thumbnails?select=medium` retrieves only the medium sized thumbnails.</span></span>
 
 
-### <a name="response"></a><span data-ttu-id="9b8d8-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="9b8d8-144">Response</span></span>
+### <a name="response"></a><span data-ttu-id="7f761-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="7f761-145">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.thumbnailSet)" } -->
 
@@ -115,45 +117,45 @@ Content-type: application/json
 }
 ```
 
-## <a name="get-a-single-thumbnail"></a><span data-ttu-id="9b8d8-145">Получение одного эскиза</span><span class="sxs-lookup"><span data-stu-id="9b8d8-145">Get a single thumbnail</span></span>
+## <a name="get-a-single-thumbnail"></a><span data-ttu-id="7f761-146">Получение одного эскиза</span><span class="sxs-lookup"><span data-stu-id="7f761-146">Get a single thumbnail</span></span>
 
-<span data-ttu-id="9b8d8-146">Получение метаданных для одного эскиза и размера с помощью прямого запроса.</span><span class="sxs-lookup"><span data-stu-id="9b8d8-146">Retrieve the metadata for a single thumbnail and size by addressing it directly in a request.</span></span>
+<span data-ttu-id="7f761-147">Получение метаданных для одного эскиза и размера с помощью прямого запроса.</span><span class="sxs-lookup"><span data-stu-id="7f761-147">Retrieve the metadata for a single thumbnail and size by addressing it directly in a request.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="9b8d8-147">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9b8d8-147">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="7f761-148">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7f761-148">HTTP request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="9b8d8-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="9b8d8-148">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="7f761-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="7f761-149">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-one-thumbnail", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="9b8d8-149">C#</span><span class="sxs-lookup"><span data-stu-id="9b8d8-149">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="7f761-150">C#</span><span class="sxs-lookup"><span data-stu-id="7f761-150">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-one-thumbnail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9b8d8-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9b8d8-150">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="7f761-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7f761-151">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-one-thumbnail-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="9b8d8-151">Цель — C</span><span class="sxs-lookup"><span data-stu-id="9b8d8-151">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="7f761-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7f761-152">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-one-thumbnail-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="9b8d8-152">Java</span><span class="sxs-lookup"><span data-stu-id="9b8d8-152">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="7f761-153">Java</span><span class="sxs-lookup"><span data-stu-id="7f761-153">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-one-thumbnail-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="path-parameters"></a><span data-ttu-id="9b8d8-153">Параметры пути</span><span class="sxs-lookup"><span data-stu-id="9b8d8-153">Path parameters</span></span>
+### <a name="path-parameters"></a><span data-ttu-id="7f761-154">Параметры пути</span><span class="sxs-lookup"><span data-stu-id="7f761-154">Path parameters</span></span>
 
-| <span data-ttu-id="9b8d8-154">Имя</span><span class="sxs-lookup"><span data-stu-id="9b8d8-154">Name</span></span>         | <span data-ttu-id="9b8d8-155">Тип</span><span class="sxs-lookup"><span data-stu-id="9b8d8-155">Type</span></span>   | <span data-ttu-id="9b8d8-156">Описание</span><span class="sxs-lookup"><span data-stu-id="9b8d8-156">Description</span></span>                                                                              |
+| <span data-ttu-id="7f761-155">Имя</span><span class="sxs-lookup"><span data-stu-id="7f761-155">Name</span></span>         | <span data-ttu-id="7f761-156">Тип</span><span class="sxs-lookup"><span data-stu-id="7f761-156">Type</span></span>   | <span data-ttu-id="7f761-157">Описание</span><span class="sxs-lookup"><span data-stu-id="7f761-157">Description</span></span>                                                                              |
 |:-------------|:-------|:-----------------------------------------------------------------------------------------|
-| <span data-ttu-id="9b8d8-157">**item-id**</span><span class="sxs-lookup"><span data-stu-id="9b8d8-157">**item-id**</span></span>  | <span data-ttu-id="9b8d8-158">string</span><span class="sxs-lookup"><span data-stu-id="9b8d8-158">string</span></span> | <span data-ttu-id="9b8d8-159">Уникальный идентификатор элемента.</span><span class="sxs-lookup"><span data-stu-id="9b8d8-159">The unique identifier for the item referenced.</span></span>                                           |
-| <span data-ttu-id="9b8d8-160">**thumb-id**</span><span class="sxs-lookup"><span data-stu-id="9b8d8-160">**thumb-id**</span></span> | <span data-ttu-id="9b8d8-161">number</span><span class="sxs-lookup"><span data-stu-id="9b8d8-161">number</span></span> | <span data-ttu-id="9b8d8-p106">Индекс эскиза (как правило, 0–4). Если присутствует пользовательский эскиз, для него задается индекс 0.</span><span class="sxs-lookup"><span data-stu-id="9b8d8-p106">The index of the thumbnail, usually 0-4. If there is a custom thumbnail, its index is 0.</span></span> |
-| <span data-ttu-id="9b8d8-164">**size**</span><span class="sxs-lookup"><span data-stu-id="9b8d8-164">**size**</span></span>     | <span data-ttu-id="9b8d8-165">string</span><span class="sxs-lookup"><span data-stu-id="9b8d8-165">string</span></span> | <span data-ttu-id="9b8d8-166">Размер запрашиваемого эскиза.</span><span class="sxs-lookup"><span data-stu-id="9b8d8-166">The size of the thumbnail requested.</span></span> <span data-ttu-id="9b8d8-167">Это должен быть один из стандартных размеров, указанных ниже, либо пользовательский размер.</span><span class="sxs-lookup"><span data-stu-id="9b8d8-167">This can be one of the standard sizes listed below or a custom size.</span></span> |
+| <span data-ttu-id="7f761-158">**item-id**</span><span class="sxs-lookup"><span data-stu-id="7f761-158">**item-id**</span></span>  | <span data-ttu-id="7f761-159">string</span><span class="sxs-lookup"><span data-stu-id="7f761-159">string</span></span> | <span data-ttu-id="7f761-160">Уникальный идентификатор элемента.</span><span class="sxs-lookup"><span data-stu-id="7f761-160">The unique identifier for the item referenced.</span></span>                                           |
+| <span data-ttu-id="7f761-161">**thumb-id**</span><span class="sxs-lookup"><span data-stu-id="7f761-161">**thumb-id**</span></span> | <span data-ttu-id="7f761-162">число</span><span class="sxs-lookup"><span data-stu-id="7f761-162">number</span></span> | <span data-ttu-id="7f761-p106">Индекс эскиза (как правило, 0–4). Если присутствует пользовательский эскиз, для него задается индекс 0.</span><span class="sxs-lookup"><span data-stu-id="7f761-p106">The index of the thumbnail, usually 0-4. If there is a custom thumbnail, its index is 0.</span></span> |
+| <span data-ttu-id="7f761-165">**size**</span><span class="sxs-lookup"><span data-stu-id="7f761-165">**size**</span></span>     | <span data-ttu-id="7f761-166">string</span><span class="sxs-lookup"><span data-stu-id="7f761-166">string</span></span> | <span data-ttu-id="7f761-167">Размер запрашиваемого эскиза.</span><span class="sxs-lookup"><span data-stu-id="7f761-167">The size of the thumbnail requested.</span></span> <span data-ttu-id="7f761-168">Это должен быть один из стандартных размеров, указанных ниже, либо пользовательский размер.</span><span class="sxs-lookup"><span data-stu-id="7f761-168">This can be one of the standard sizes listed below or a custom size.</span></span> |
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.thumbnail" } -->
 
@@ -168,41 +170,41 @@ Content-Type: application/json
 }
 ```
 
-## <a name="retrieve-thumbnail-binary-content"></a><span data-ttu-id="9b8d8-168">Получение двоичного содержимого эскиза</span><span class="sxs-lookup"><span data-stu-id="9b8d8-168">Retrieve thumbnail binary content</span></span>
+## <a name="retrieve-thumbnail-binary-content"></a><span data-ttu-id="7f761-169">Получение двоичного содержимого эскиза</span><span class="sxs-lookup"><span data-stu-id="7f761-169">Retrieve thumbnail binary content</span></span>
 
-<span data-ttu-id="9b8d8-169">Вы можете получить содержимое эскиза напрямую, запросив свойство **content** этого эскиза.</span><span class="sxs-lookup"><span data-stu-id="9b8d8-169">You can directly retrieve the content of the thumbnail by requesting the **content** property of the thumbnail.</span></span>
+<span data-ttu-id="7f761-170">Вы можете получить содержимое эскиза напрямую, запросив свойство **content** этого эскиза.</span><span class="sxs-lookup"><span data-stu-id="7f761-170">You can directly retrieve the content of the thumbnail by requesting the **content** property of the thumbnail.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="9b8d8-170">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9b8d8-170">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="7f761-171">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7f761-171">HTTP request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="9b8d8-171">HTTP</span><span class="sxs-lookup"><span data-stu-id="9b8d8-171">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="7f761-172">HTTP</span><span class="sxs-lookup"><span data-stu-id="7f761-172">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name":"get-thumbnail-content", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}/content
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="9b8d8-172">C#</span><span class="sxs-lookup"><span data-stu-id="9b8d8-172">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="7f761-173">C#</span><span class="sxs-lookup"><span data-stu-id="7f761-173">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-thumbnail-content-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9b8d8-173">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9b8d8-173">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="7f761-174">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7f761-174">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-thumbnail-content-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="9b8d8-174">Цель — C</span><span class="sxs-lookup"><span data-stu-id="9b8d8-174">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="7f761-175">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7f761-175">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-thumbnail-content-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="9b8d8-175">Java</span><span class="sxs-lookup"><span data-stu-id="9b8d8-175">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="7f761-176">Java</span><span class="sxs-lookup"><span data-stu-id="7f761-176">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-thumbnail-content-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="9b8d8-176">Отклик</span><span class="sxs-lookup"><span data-stu-id="9b8d8-176">Response</span></span>
+### <a name="response"></a><span data-ttu-id="7f761-177">Отклик</span><span class="sxs-lookup"><span data-stu-id="7f761-177">Response</span></span>
 
-<span data-ttu-id="9b8d8-177">В ответ служба выполняет перенаправление на URL-адрес эскиза.</span><span class="sxs-lookup"><span data-stu-id="9b8d8-177">The service responds with a redirect to the thumbnail URL.</span></span>
+<span data-ttu-id="7f761-178">В ответ служба выполняет перенаправление на URL-адрес эскиза.</span><span class="sxs-lookup"><span data-stu-id="7f761-178">The service responds with a redirect to the thumbnail URL.</span></span>
 
 <!-- { "blockType": "response" } -->
 
@@ -211,45 +213,45 @@ HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
 
-<span data-ttu-id="9b8d8-178">URL-адреса эскизов не кэшируются.</span><span class="sxs-lookup"><span data-stu-id="9b8d8-178">Thumbnail URLs are cache-safe.</span></span> <span data-ttu-id="9b8d8-179">Если в результате изменения элемента потребуется создать новый эскиз, изменится его URL-адрес.</span><span class="sxs-lookup"><span data-stu-id="9b8d8-179">The URL will change, if the item changes in a way that requires a new thumbnail to be generated.</span></span>
+<span data-ttu-id="7f761-179">URL-адреса эскизов не кэшируются.</span><span class="sxs-lookup"><span data-stu-id="7f761-179">Thumbnail URLs are cache-safe.</span></span> <span data-ttu-id="7f761-180">Если в результате изменения элемента потребуется создать новый эскиз, изменится его URL-адрес.</span><span class="sxs-lookup"><span data-stu-id="7f761-180">The URL will change, if the item changes in a way that requires a new thumbnail to be generated.</span></span>
 
 
-## <a name="getting-thumbnails-while-listing-driveitems"></a><span data-ttu-id="9b8d8-180">Получение эскизов при перечислении ресурсов DriveItem</span><span class="sxs-lookup"><span data-stu-id="9b8d8-180">Getting thumbnails while listing DriveItems</span></span>
+## <a name="getting-thumbnails-while-listing-driveitems"></a><span data-ttu-id="7f761-181">Получение эскизов при перечислении ресурсов DriveItem</span><span class="sxs-lookup"><span data-stu-id="7f761-181">Getting thumbnails while listing DriveItems</span></span>
 
-<span data-ttu-id="9b8d8-181">При получении списка отображаемых ресурсов DriveItem можно использовать параметр строки запроса _$expand_, чтобы также включить эскизы этих ресурсов.</span><span class="sxs-lookup"><span data-stu-id="9b8d8-181">If you are retrieving a list of DriveItem resources to display, you can use the _$expand_ query string parameter to also include the thumbnails for those resources.</span></span>
-<span data-ttu-id="9b8d8-182">Благодаря этому приложение может получить эскизы и элементы в одном запросе.</span><span class="sxs-lookup"><span data-stu-id="9b8d8-182">This enables your app to retrieve thumbnails and items in a single request, instead of issuing many requests.</span></span>
+<span data-ttu-id="7f761-182">При получении списка отображаемых ресурсов DriveItem можно использовать параметр строки запроса _$expand_, чтобы также включить эскизы этих ресурсов.</span><span class="sxs-lookup"><span data-stu-id="7f761-182">If you are retrieving a list of DriveItem resources to display, you can use the _$expand_ query string parameter to also include the thumbnails for those resources.</span></span>
+<span data-ttu-id="7f761-183">Благодаря этому приложение может получить эскизы и элементы в одном запросе.</span><span class="sxs-lookup"><span data-stu-id="7f761-183">This enables your app to retrieve thumbnails and items in a single request, instead of issuing many requests.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="9b8d8-183">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9b8d8-183">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="7f761-184">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7f761-184">HTTP request</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="9b8d8-184">HTTP</span><span class="sxs-lookup"><span data-stu-id="9b8d8-184">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="7f761-185">HTTP</span><span class="sxs-lookup"><span data-stu-id="7f761-185">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name":"get-thumbnail-while-listing", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/children?$expand=thumbnails
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="9b8d8-185">C#</span><span class="sxs-lookup"><span data-stu-id="9b8d8-185">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="7f761-186">C#</span><span class="sxs-lookup"><span data-stu-id="7f761-186">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-thumbnail-while-listing-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9b8d8-186">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9b8d8-186">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="7f761-187">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7f761-187">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-thumbnail-while-listing-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="9b8d8-187">Цель — C</span><span class="sxs-lookup"><span data-stu-id="9b8d8-187">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="7f761-188">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7f761-188">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-thumbnail-while-listing-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="9b8d8-188">Java</span><span class="sxs-lookup"><span data-stu-id="9b8d8-188">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="7f761-189">Java</span><span class="sxs-lookup"><span data-stu-id="7f761-189">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-thumbnail-while-listing-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="9b8d8-189">Отклик</span><span class="sxs-lookup"><span data-stu-id="9b8d8-189">Response</span></span>
+### <a name="response"></a><span data-ttu-id="7f761-190">Ответ</span><span class="sxs-lookup"><span data-stu-id="7f761-190">Response</span></span>
 
-<span data-ttu-id="9b8d8-190">Служба возвращает список ресурсов DriveItem и их эскизов.</span><span class="sxs-lookup"><span data-stu-id="9b8d8-190">The service responses with the list of DriveItems and their thumbnails.</span></span>
+<span data-ttu-id="7f761-191">Служба возвращает список ресурсов DriveItem и их эскизов.</span><span class="sxs-lookup"><span data-stu-id="7f761-191">The service responses with the list of DriveItems and their thumbnails.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true } -->
 
@@ -287,51 +289,51 @@ Content-type: application/json
 }
 ```
 
-## <a name="size-options"></a><span data-ttu-id="9b8d8-191">Параметры размера</span><span class="sxs-lookup"><span data-stu-id="9b8d8-191">Size options</span></span>
+## <a name="size-options"></a><span data-ttu-id="7f761-192">Параметры размера</span><span class="sxs-lookup"><span data-stu-id="7f761-192">Size options</span></span>
 
-<span data-ttu-id="9b8d8-p110">В этой таблице определены возможные размеры эскизов. Хотя вы можете указать в запросе произвольный размер эскиза, определенные значения встречаются намного чаще и позволяют быстрее получить результат.</span><span class="sxs-lookup"><span data-stu-id="9b8d8-p110">This table defines the possible thumbnail sizes. While you can request any arbitrary thumbnail size, the defined values are likely to exist and return a value quickly:</span></span>
+<span data-ttu-id="7f761-p110">В этой таблице определены возможные размеры эскизов. Хотя вы можете указать в запросе произвольный размер эскиза, определенные значения встречаются намного чаще и позволяют быстрее получить результат.</span><span class="sxs-lookup"><span data-stu-id="7f761-p110">This table defines the possible thumbnail sizes. While you can request any arbitrary thumbnail size, the defined values are likely to exist and return a value quickly:</span></span>
 
-| <span data-ttu-id="9b8d8-194">Имя</span><span class="sxs-lookup"><span data-stu-id="9b8d8-194">Name</span></span>           | <span data-ttu-id="9b8d8-195">Разрешение</span><span class="sxs-lookup"><span data-stu-id="9b8d8-195">Resolution</span></span>  | <span data-ttu-id="9b8d8-196">Пропорции</span><span class="sxs-lookup"><span data-stu-id="9b8d8-196">Aspect Ratio</span></span> | <span data-ttu-id="9b8d8-197">Описание</span><span class="sxs-lookup"><span data-stu-id="9b8d8-197">Description</span></span>                                                          |
+| <span data-ttu-id="7f761-195">Имя</span><span class="sxs-lookup"><span data-stu-id="7f761-195">Name</span></span>           | <span data-ttu-id="7f761-196">Разрешение</span><span class="sxs-lookup"><span data-stu-id="7f761-196">Resolution</span></span>  | <span data-ttu-id="7f761-197">Пропорции</span><span class="sxs-lookup"><span data-stu-id="7f761-197">Aspect Ratio</span></span> | <span data-ttu-id="7f761-198">Описание</span><span class="sxs-lookup"><span data-stu-id="7f761-198">Description</span></span>                                                          |
 |:---------------|:------------|:-------------|:---------------------------------------------------------------------|
-| `small`        | <span data-ttu-id="9b8d8-198">96 для большей стороны</span><span class="sxs-lookup"><span data-stu-id="9b8d8-198">96 longest</span></span>  | <span data-ttu-id="9b8d8-199">Исходные</span><span class="sxs-lookup"><span data-stu-id="9b8d8-199">Original</span></span>     | <span data-ttu-id="9b8d8-200">Небольшой эскиз с сильным сжатием, обрезанный до квадрата.</span><span class="sxs-lookup"><span data-stu-id="9b8d8-200">Small, highly compressed thumbnail cropped to a square aspect ratio.</span></span> |
-| `medium`       | <span data-ttu-id="9b8d8-201">176 для большей стороны</span><span class="sxs-lookup"><span data-stu-id="9b8d8-201">176 longest</span></span> | <span data-ttu-id="9b8d8-202">Исходные</span><span class="sxs-lookup"><span data-stu-id="9b8d8-202">Original</span></span>     | <span data-ttu-id="9b8d8-203">Обрезан до стандартного размера элемента для веб-представления OneDrive.</span><span class="sxs-lookup"><span data-stu-id="9b8d8-203">Cropped to the standard item size for the OneDrive web view.</span></span>         |
-| `large`        | <span data-ttu-id="9b8d8-204">800 для большей стороны</span><span class="sxs-lookup"><span data-stu-id="9b8d8-204">800 longest</span></span> | <span data-ttu-id="9b8d8-205">Исходные</span><span class="sxs-lookup"><span data-stu-id="9b8d8-205">Original</span></span>     | <span data-ttu-id="9b8d8-206">Эскиз, длина большей стороны которого изменена на 800 пикселей.</span><span class="sxs-lookup"><span data-stu-id="9b8d8-206">Thumbnail with the longest edge resized to 800 pixels.</span></span>               |
-| `smallSquare`  | <span data-ttu-id="9b8d8-207">96x96</span><span class="sxs-lookup"><span data-stu-id="9b8d8-207">96x96</span></span>       | <span data-ttu-id="9b8d8-208">Квадратная обрезка</span><span class="sxs-lookup"><span data-stu-id="9b8d8-208">Square Crop</span></span>  | <span data-ttu-id="9b8d8-209">Небольшой квадратный эскиз</span><span class="sxs-lookup"><span data-stu-id="9b8d8-209">Small square thumbnail</span></span>                                               |
-| `mediumSquare` | <span data-ttu-id="9b8d8-210">176x176</span><span class="sxs-lookup"><span data-stu-id="9b8d8-210">176x176</span></span>     | <span data-ttu-id="9b8d8-211">Квадратная обрезка</span><span class="sxs-lookup"><span data-stu-id="9b8d8-211">Square Crop</span></span>  | <span data-ttu-id="9b8d8-212">Небольшой квадратный эскиз</span><span class="sxs-lookup"><span data-stu-id="9b8d8-212">Small square thumbnail</span></span>                                               |
-| `largeSquare`  | <span data-ttu-id="9b8d8-213">800x800</span><span class="sxs-lookup"><span data-stu-id="9b8d8-213">800x800</span></span>     | <span data-ttu-id="9b8d8-214">Квадратная обрезка</span><span class="sxs-lookup"><span data-stu-id="9b8d8-214">Square Crop</span></span>  | <span data-ttu-id="9b8d8-215">Большой квадратный эскиз</span><span class="sxs-lookup"><span data-stu-id="9b8d8-215">Large square thumbnail</span></span>                                               |
+| `small`        | <span data-ttu-id="7f761-199">96 для большей стороны</span><span class="sxs-lookup"><span data-stu-id="7f761-199">96 longest</span></span>  | <span data-ttu-id="7f761-200">Исходные</span><span class="sxs-lookup"><span data-stu-id="7f761-200">Original</span></span>     | <span data-ttu-id="7f761-201">Небольшой эскиз с сильным сжатием, обрезанный до квадрата.</span><span class="sxs-lookup"><span data-stu-id="7f761-201">Small, highly compressed thumbnail cropped to a square aspect ratio.</span></span> |
+| `medium`       | <span data-ttu-id="7f761-202">176 для большей стороны</span><span class="sxs-lookup"><span data-stu-id="7f761-202">176 longest</span></span> | <span data-ttu-id="7f761-203">Исходные</span><span class="sxs-lookup"><span data-stu-id="7f761-203">Original</span></span>     | <span data-ttu-id="7f761-204">Обрезан до стандартного размера элемента для веб-представления OneDrive.</span><span class="sxs-lookup"><span data-stu-id="7f761-204">Cropped to the standard item size for the OneDrive web view.</span></span>         |
+| `large`        | <span data-ttu-id="7f761-205">800 для большей стороны</span><span class="sxs-lookup"><span data-stu-id="7f761-205">800 longest</span></span> | <span data-ttu-id="7f761-206">Исходные</span><span class="sxs-lookup"><span data-stu-id="7f761-206">Original</span></span>     | <span data-ttu-id="7f761-207">Эскиз, длина большей стороны которого изменена на 800 пикселей.</span><span class="sxs-lookup"><span data-stu-id="7f761-207">Thumbnail with the longest edge resized to 800 pixels.</span></span>               |
+| `smallSquare`  | <span data-ttu-id="7f761-208">96x96</span><span class="sxs-lookup"><span data-stu-id="7f761-208">96x96</span></span>       | <span data-ttu-id="7f761-209">Квадратная обрезка</span><span class="sxs-lookup"><span data-stu-id="7f761-209">Square Crop</span></span>  | <span data-ttu-id="7f761-210">Небольшой квадратный эскиз</span><span class="sxs-lookup"><span data-stu-id="7f761-210">Small square thumbnail</span></span>                                               |
+| `mediumSquare` | <span data-ttu-id="7f761-211">176x176</span><span class="sxs-lookup"><span data-stu-id="7f761-211">176x176</span></span>     | <span data-ttu-id="7f761-212">Квадратная обрезка</span><span class="sxs-lookup"><span data-stu-id="7f761-212">Square Crop</span></span>  | <span data-ttu-id="7f761-213">Небольшой квадратный эскиз</span><span class="sxs-lookup"><span data-stu-id="7f761-213">Small square thumbnail</span></span>                                               |
+| `largeSquare`  | <span data-ttu-id="7f761-214">800x800</span><span class="sxs-lookup"><span data-stu-id="7f761-214">800x800</span></span>     | <span data-ttu-id="7f761-215">Квадратная обрезка</span><span class="sxs-lookup"><span data-stu-id="7f761-215">Square Crop</span></span>  | <span data-ttu-id="7f761-216">Большой квадратный эскиз</span><span class="sxs-lookup"><span data-stu-id="7f761-216">Large square thumbnail</span></span>                                               |
 
-## <a name="requesting-custom-thumbnail-sizes"></a><span data-ttu-id="9b8d8-216">Запрос эскизов настраиваемых размеров</span><span class="sxs-lookup"><span data-stu-id="9b8d8-216">Requesting custom thumbnail sizes</span></span>
+## <a name="requesting-custom-thumbnail-sizes"></a><span data-ttu-id="7f761-217">Запрос эскизов настраиваемых размеров</span><span class="sxs-lookup"><span data-stu-id="7f761-217">Requesting custom thumbnail sizes</span></span>
 
-<span data-ttu-id="9b8d8-217">Помимо определенных размеров, приложение может запрашивать эскизы настраиваемых размеров, указав ширину и высоту с префиксом `c`.</span><span class="sxs-lookup"><span data-stu-id="9b8d8-217">In addition to the defined sizes, your app can request a custom thumbnail size by specifying the dimensions of the thumbnail prefixed with `c`.</span></span>
-<span data-ttu-id="9b8d8-218">Например, если вашему приложению нужны эскизы размером 300x400, оно может запросить размер следующим образом:</span><span class="sxs-lookup"><span data-stu-id="9b8d8-218">For example if your app needs thumbnails that are 300x400, it can request that size like this:</span></span>
+<span data-ttu-id="7f761-218">Помимо определенных размеров, приложение может запрашивать эскизы пользовательских размеров, указав ширину и высоту с префиксом `c`.</span><span class="sxs-lookup"><span data-stu-id="7f761-218">In addition to the defined sizes, your app can request a custom thumbnail size by specifying the dimensions of the thumbnail prefixed with `c`.</span></span>
+<span data-ttu-id="7f761-219">Например, если вашему приложению нужны эскизы размером 300x400, оно может запросить размер следующим образом:</span><span class="sxs-lookup"><span data-stu-id="7f761-219">For example if your app needs thumbnails that are 300x400, it can request that size like this:</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="9b8d8-219">HTTP</span><span class="sxs-lookup"><span data-stu-id="9b8d8-219">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="7f761-220">HTTP</span><span class="sxs-lookup"><span data-stu-id="7f761-220">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-thumbnail-custom-size", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/thumbnails?select=c300x400_Crop
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="9b8d8-220">C#</span><span class="sxs-lookup"><span data-stu-id="9b8d8-220">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="7f761-221">C#</span><span class="sxs-lookup"><span data-stu-id="7f761-221">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-thumbnail-custom-size-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="9b8d8-221">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9b8d8-221">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="7f761-222">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7f761-222">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-thumbnail-custom-size-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="9b8d8-222">Цель — C</span><span class="sxs-lookup"><span data-stu-id="9b8d8-222">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="7f761-223">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7f761-223">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-thumbnail-custom-size-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="9b8d8-223">Java</span><span class="sxs-lookup"><span data-stu-id="9b8d8-223">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="7f761-224">Java</span><span class="sxs-lookup"><span data-stu-id="7f761-224">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-thumbnail-custom-size-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-<span data-ttu-id="9b8d8-224">В ответ вы получите только эскиз выбранного размера:</span><span class="sxs-lookup"><span data-stu-id="9b8d8-224">Which responds with just the custom thumbnail size selected:</span></span>
+<span data-ttu-id="7f761-225">В ответ вы получите только эскиз выбранного размера:</span><span class="sxs-lookup"><span data-stu-id="7f761-225">Which responds with just the custom thumbnail size selected:</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.thumbnailSet)" } -->
 
@@ -349,32 +351,32 @@ Content-Type: application/json
 }
 ```
 
-<span data-ttu-id="9b8d8-225">Запросив размер эскиза, вы можете указать следующие параметры:</span><span class="sxs-lookup"><span data-stu-id="9b8d8-225">You can specify the following options after the size of the thumbnail requested:</span></span>
+<span data-ttu-id="7f761-226">Запросив размер эскиза, вы можете указать следующие параметры:</span><span class="sxs-lookup"><span data-stu-id="7f761-226">You can specify the following options after the size of the thumbnail requested:</span></span>
 
-### <a name="examples-of-custom-identifiers"></a><span data-ttu-id="9b8d8-226">Примеры пользовательских идентификаторов</span><span class="sxs-lookup"><span data-stu-id="9b8d8-226">Examples of custom identifiers</span></span>
+### <a name="examples-of-custom-identifiers"></a><span data-ttu-id="7f761-227">Примеры пользовательских идентификаторов</span><span class="sxs-lookup"><span data-stu-id="7f761-227">Examples of custom identifiers</span></span>
 
-| <span data-ttu-id="9b8d8-227">Идентификатор эскиза</span><span class="sxs-lookup"><span data-stu-id="9b8d8-227">Thumbnail identifier</span></span> | <span data-ttu-id="9b8d8-228">Разрешение</span><span class="sxs-lookup"><span data-stu-id="9b8d8-228">Resolution</span></span>             | <span data-ttu-id="9b8d8-229">Пропорции</span><span class="sxs-lookup"><span data-stu-id="9b8d8-229">Aspect ratio</span></span> | <span data-ttu-id="9b8d8-230">Описание</span><span class="sxs-lookup"><span data-stu-id="9b8d8-230">Description</span></span>                                                                                                                                         |
+| <span data-ttu-id="7f761-228">Идентификатор эскиза</span><span class="sxs-lookup"><span data-stu-id="7f761-228">Thumbnail identifier</span></span> | <span data-ttu-id="7f761-229">Разрешение</span><span class="sxs-lookup"><span data-stu-id="7f761-229">Resolution</span></span>             | <span data-ttu-id="7f761-230">Пропорции</span><span class="sxs-lookup"><span data-stu-id="7f761-230">Aspect ratio</span></span> | <span data-ttu-id="7f761-231">Описание</span><span class="sxs-lookup"><span data-stu-id="7f761-231">Description</span></span>                                                                                                                                         |
 |:---------------------|:-----------------------|:-------------|:----------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="9b8d8-231">c300x400</span><span class="sxs-lookup"><span data-stu-id="9b8d8-231">c300x400</span></span>             | <span data-ttu-id="9b8d8-232">Заключен в прямоугольник размером 300x400</span><span class="sxs-lookup"><span data-stu-id="9b8d8-232">Bounded by 300x400 box</span></span> | <span data-ttu-id="9b8d8-233">Исходные</span><span class="sxs-lookup"><span data-stu-id="9b8d8-233">Original</span></span>     | <span data-ttu-id="9b8d8-234">Создается эскиз, который помещается в прямоугольник размером 300x400 пикселей с сохранением пропорций.</span><span class="sxs-lookup"><span data-stu-id="9b8d8-234">Generate a thumbnail that fits inside a 300x400 pixel box, maintaining aspect ratio</span></span>                                                                 |
-| <span data-ttu-id="9b8d8-235">c300x400_Crop</span><span class="sxs-lookup"><span data-stu-id="9b8d8-235">c300x400_Crop</span></span>        | <span data-ttu-id="9b8d8-236">300x400</span><span class="sxs-lookup"><span data-stu-id="9b8d8-236">300x400</span></span>                | <span data-ttu-id="9b8d8-237">Обрезанный</span><span class="sxs-lookup"><span data-stu-id="9b8d8-237">Cropped</span></span>      | <span data-ttu-id="9b8d8-p112">Создается эскиз размером 300x400. Сначала размер изображения меняется так, чтобы оно помещалось в прямоугольник размером 300x400, а затем обрезается все, что выходит за пределы прямоугольника.</span><span class="sxs-lookup"><span data-stu-id="9b8d8-p112">Generate a thumbnail that is 300x400 pixels. This works by resizing the image to fill the 300x400 box and cropping whatever spills outside the box.</span></span> |
+| <span data-ttu-id="7f761-232">c300x400</span><span class="sxs-lookup"><span data-stu-id="7f761-232">c300x400</span></span>             | <span data-ttu-id="7f761-233">Заключен в прямоугольник размером 300x400</span><span class="sxs-lookup"><span data-stu-id="7f761-233">Bounded by 300x400 box</span></span> | <span data-ttu-id="7f761-234">Исходные</span><span class="sxs-lookup"><span data-stu-id="7f761-234">Original</span></span>     | <span data-ttu-id="7f761-235">Создается эскиз, который помещается в прямоугольник размером 300x400 пикселей с сохранением пропорций.</span><span class="sxs-lookup"><span data-stu-id="7f761-235">Generate a thumbnail that fits inside a 300x400 pixel box, maintaining aspect ratio</span></span>                                                                 |
+| <span data-ttu-id="7f761-236">c300x400_Crop</span><span class="sxs-lookup"><span data-stu-id="7f761-236">c300x400_Crop</span></span>        | <span data-ttu-id="7f761-237">300x400</span><span class="sxs-lookup"><span data-stu-id="7f761-237">300x400</span></span>                | <span data-ttu-id="7f761-238">Обрезанный</span><span class="sxs-lookup"><span data-stu-id="7f761-238">Cropped</span></span>      | <span data-ttu-id="7f761-p112">Создается эскиз размером 300x400. Сначала размер изображения меняется так, чтобы оно помещалось в прямоугольник размером 300x400, а затем обрезается все, что выходит за пределы прямоугольника.</span><span class="sxs-lookup"><span data-stu-id="7f761-p112">Generate a thumbnail that is 300x400 pixels. This works by resizing the image to fill the 300x400 box and cropping whatever spills outside the box.</span></span> |
 
-<span data-ttu-id="9b8d8-240">**Примечание.** Размер возвращаемого эскиза в пикселях может не полностью совпадать с запрашиваемым, но его пропорции будут соответствовать запросу.</span><span class="sxs-lookup"><span data-stu-id="9b8d8-240">**Note:** The thumbnail returned may not exactly match the pixel dimensions that was requested, but will match the aspect ratio.</span></span>
-<span data-ttu-id="9b8d8-241">В некоторых случаях возвращаются эскизы большего размера, если эскиз уже существует и легко масштабируется до запрашиваемого разрешения.</span><span class="sxs-lookup"><span data-stu-id="9b8d8-241">In some cases, a larger thumbnail may be returned than was requested, if the thumbnail already exists and can easily be scaled to match the requested resolution.</span></span>
+<span data-ttu-id="7f761-241">**Примечание.** Размер возвращаемого эскиза в пикселях может не полностью совпадать с запрашиваемым, но его пропорции будут соответствовать запросу.</span><span class="sxs-lookup"><span data-stu-id="7f761-241">**Note:** The thumbnail returned may not exactly match the pixel dimensions that was requested, but will match the aspect ratio.</span></span>
+<span data-ttu-id="7f761-242">В некоторых случаях возвращаются эскизы большего размера, если эскиз уже существует и легко масштабируется до запрашиваемого разрешения.</span><span class="sxs-lookup"><span data-stu-id="7f761-242">In some cases, a larger thumbnail may be returned than was requested, if the thumbnail already exists and can easily be scaled to match the requested resolution.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="9b8d8-242">Замечания</span><span class="sxs-lookup"><span data-stu-id="9b8d8-242">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="7f761-243">Примечания</span><span class="sxs-lookup"><span data-stu-id="7f761-243">Remarks</span></span>
 
-<span data-ttu-id="9b8d8-243">**Примечание.** В OneDrive для бизнеса и SharePoint:</span><span class="sxs-lookup"><span data-stu-id="9b8d8-243">**Note** In OneDrive for Business and SharePoint:</span></span>
+<span data-ttu-id="7f761-244">**Примечание.** В OneDrive для бизнеса и SharePoint:</span><span class="sxs-lookup"><span data-stu-id="7f761-244">**Note** In OneDrive for Business and SharePoint:</span></span>
 
-<span data-ttu-id="9b8d8-244">С помощью таких вызовов невозможно дополнить коллекцию эскизов:</span><span class="sxs-lookup"><span data-stu-id="9b8d8-244">Using these calls to expand the thumbnails collection will not work:</span></span>
+<span data-ttu-id="7f761-245">С помощью таких вызовов невозможно дополнить коллекцию эскизов:</span><span class="sxs-lookup"><span data-stu-id="7f761-245">Using these calls to expand the thumbnails collection will not work:</span></span>
 
 * `GET /drive/root:/{item-path}?expand=children(expand=thumbnails)`
 * `GET /drive/items/{item-id}/children?expand=thumbnails`
 
-<span data-ttu-id="9b8d8-245">Эскизы не поддерживаются в SharePoint Server 2016.</span><span class="sxs-lookup"><span data-stu-id="9b8d8-245">Thumbnails are not supported on SharePoint Server 2016.</span></span>
+<span data-ttu-id="7f761-246">Эскизы не поддерживаются в SharePoint Server 2016.</span><span class="sxs-lookup"><span data-stu-id="7f761-246">Thumbnails are not supported on SharePoint Server 2016.</span></span>
 
-### <a name="error-responses"></a><span data-ttu-id="9b8d8-246">Отклики с ошибками</span><span class="sxs-lookup"><span data-stu-id="9b8d8-246">Error responses</span></span>
+### <a name="error-responses"></a><span data-ttu-id="7f761-247">Отклики с ошибками</span><span class="sxs-lookup"><span data-stu-id="7f761-247">Error responses</span></span>
 
-<span data-ttu-id="9b8d8-247">Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].</span><span class="sxs-lookup"><span data-stu-id="9b8d8-247">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
+<span data-ttu-id="7f761-248">Дополнительные сведения о возвращении ошибок см. в статье [Ответы с ошибками][error-response].</span><span class="sxs-lookup"><span data-stu-id="7f761-248">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 
