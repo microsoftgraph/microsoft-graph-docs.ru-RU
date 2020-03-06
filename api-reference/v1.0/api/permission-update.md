@@ -7,30 +7,32 @@ localization_priority: Normal
 description: В этой статье рассказывается, как обновить свойства разрешения на общий доступ путем обновления ресурса разрешения.
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 261066450894c5cdfccbed85a9aaec0a59c976be
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: b2d67cd965240620e6f40ec62f56c09ce51a7813
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36365624"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511042"
 ---
-# <a name="update-sharing-permission"></a><span data-ttu-id="541ae-103">Обновление разрешения на общий доступ</span><span class="sxs-lookup"><span data-stu-id="541ae-103">Update sharing permission</span></span>
+# <a name="update-sharing-permission"></a><span data-ttu-id="5c739-103">Обновление разрешения на общий доступ</span><span class="sxs-lookup"><span data-stu-id="5c739-103">Update sharing permission</span></span>
 
-<span data-ttu-id="541ae-104">В этой статье рассказывается, как обновить свойства разрешения на общий доступ путем обновления ресурса разрешения.</span><span class="sxs-lookup"><span data-stu-id="541ae-104">Update the properties of a sharing permission by patching the permission resource.</span></span>
+<span data-ttu-id="5c739-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5c739-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="541ae-105">Таким способом можно изменить только свойство **roles**.</span><span class="sxs-lookup"><span data-stu-id="541ae-105">Only the **roles** property can be modified this way.</span></span>
+<span data-ttu-id="5c739-105">В этой статье рассказывается, как обновить свойства разрешения на общий доступ путем обновления ресурса разрешения.</span><span class="sxs-lookup"><span data-stu-id="5c739-105">Update the properties of a sharing permission by patching the permission resource.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="541ae-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="541ae-106">Permissions</span></span>
+<span data-ttu-id="5c739-106">Таким способом можно изменить только свойство **roles**.</span><span class="sxs-lookup"><span data-stu-id="5c739-106">Only the **roles** property can be modified this way.</span></span>
 
-<span data-ttu-id="541ae-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="541ae-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="5c739-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="5c739-107">Permissions</span></span>
 
-|<span data-ttu-id="541ae-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="541ae-109">Permission type</span></span>      | <span data-ttu-id="541ae-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="541ae-110">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="5c739-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5c739-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="5c739-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5c739-110">Permission type</span></span>      | <span data-ttu-id="5c739-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="5c739-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="541ae-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="541ae-111">Delegated (work or school account)</span></span> | <span data-ttu-id="541ae-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="541ae-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="541ae-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="541ae-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="541ae-114">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="541ae-114">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="541ae-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="541ae-115">Application</span></span> | <span data-ttu-id="541ae-116">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="541ae-116">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="5c739-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5c739-112">Delegated (work or school account)</span></span> | <span data-ttu-id="5c739-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5c739-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="5c739-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5c739-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5c739-115">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5c739-115">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="5c739-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="5c739-116">Application</span></span> | <span data-ttu-id="5c739-117">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5c739-117">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="541ae-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="541ae-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5c739-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5c739-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -42,33 +44,33 @@ PATCH /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
 PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
 
-## <a name="optional-request-headers"></a><span data-ttu-id="541ae-118">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="541ae-118">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="5c739-119">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="5c739-119">Optional request headers</span></span>
 
-| <span data-ttu-id="541ae-119">Имя</span><span class="sxs-lookup"><span data-stu-id="541ae-119">Name</span></span>          | <span data-ttu-id="541ae-120">Тип</span><span class="sxs-lookup"><span data-stu-id="541ae-120">Type</span></span>   | <span data-ttu-id="541ae-121">Описание</span><span class="sxs-lookup"><span data-stu-id="541ae-121">Description</span></span>                                                                                                                                                                                       |
+| <span data-ttu-id="5c739-120">Имя</span><span class="sxs-lookup"><span data-stu-id="5c739-120">Name</span></span>          | <span data-ttu-id="5c739-121">Тип</span><span class="sxs-lookup"><span data-stu-id="5c739-121">Type</span></span>   | <span data-ttu-id="5c739-122">Описание</span><span class="sxs-lookup"><span data-stu-id="5c739-122">Description</span></span>                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="541ae-122">if-match</span><span class="sxs-lookup"><span data-stu-id="541ae-122">if-match</span></span>      | <span data-ttu-id="541ae-123">string</span><span class="sxs-lookup"><span data-stu-id="541ae-123">string</span></span> | <span data-ttu-id="541ae-124">Если указан заголовок запроса, а предоставленный тег eTag (или cTag) не совпадает с текущим тегом элемента, то возвращается отклик `412 Precondition Failed`, а элемент не удаляется.</span><span class="sxs-lookup"><span data-stu-id="541ae-124">If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.</span></span> |
+| <span data-ttu-id="5c739-123">if-match</span><span class="sxs-lookup"><span data-stu-id="5c739-123">if-match</span></span>      | <span data-ttu-id="5c739-124">string</span><span class="sxs-lookup"><span data-stu-id="5c739-124">string</span></span> | <span data-ttu-id="5c739-125">Если указан заголовок запроса, а предоставленный тег eTag (или cTag) не совпадает с текущим тегом элемента, то возвращается отклик `412 Precondition Failed`, а элемент не удаляется.</span><span class="sxs-lookup"><span data-stu-id="5c739-125">If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="541ae-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="541ae-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="5c739-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="5c739-126">Request body</span></span>
 
-<span data-ttu-id="541ae-126">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="541ae-126">In the request body, supply the values for relevant fields that should be updated.</span></span>
+<span data-ttu-id="5c739-127">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="5c739-127">In the request body, supply the values for relevant fields that should be updated.</span></span>
 
-<span data-ttu-id="541ae-127">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="541ae-127">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span>
-<span data-ttu-id="541ae-128">Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="541ae-128">For best performance you shouldn't include existing values that haven't changed.</span></span>
+<span data-ttu-id="5c739-128">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="5c739-128">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span>
+<span data-ttu-id="5c739-129">Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="5c739-129">For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="541ae-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="541ae-129">Property</span></span> | <span data-ttu-id="541ae-130">Тип</span><span class="sxs-lookup"><span data-stu-id="541ae-130">Type</span></span>              | <span data-ttu-id="541ae-131">Описание</span><span class="sxs-lookup"><span data-stu-id="541ae-131">Description</span></span>                   |
+| <span data-ttu-id="5c739-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="5c739-130">Property</span></span> | <span data-ttu-id="5c739-131">Тип</span><span class="sxs-lookup"><span data-stu-id="5c739-131">Type</span></span>              | <span data-ttu-id="5c739-132">Описание</span><span class="sxs-lookup"><span data-stu-id="5c739-132">Description</span></span>                   |
 |:---------|:------------------|:------------------------------|
-| <span data-ttu-id="541ae-132">roles</span><span class="sxs-lookup"><span data-stu-id="541ae-132">roles</span></span>    | <span data-ttu-id="541ae-133">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="541ae-133">String collection</span></span> | <span data-ttu-id="541ae-134">Массив типов разрешений.</span><span class="sxs-lookup"><span data-stu-id="541ae-134">An array of permission types.</span></span> |
+| <span data-ttu-id="5c739-133">roles</span><span class="sxs-lookup"><span data-stu-id="5c739-133">roles</span></span>    | <span data-ttu-id="5c739-134">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="5c739-134">String collection</span></span> | <span data-ttu-id="5c739-135">Массив типов разрешений.</span><span class="sxs-lookup"><span data-stu-id="5c739-135">An array of permission types.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="541ae-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="541ae-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5c739-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="5c739-136">Response</span></span>
 
-<span data-ttu-id="541ae-136">В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [permission](../resources/permission.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="541ae-136">If successful, this method returns a `200 OK` response code and updated [permission](../resources/permission.md) object in the response body.</span></span>
+<span data-ttu-id="5c739-137">В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [permission](../resources/permission.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="5c739-137">If successful, this method returns a `200 OK` response code and updated [permission](../resources/permission.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="541ae-137">Пример</span><span class="sxs-lookup"><span data-stu-id="541ae-137">Example</span></span>
+## <a name="example"></a><span data-ttu-id="5c739-138">Пример</span><span class="sxs-lookup"><span data-stu-id="5c739-138">Example</span></span>
 
-<span data-ttu-id="541ae-138">Вот пример запроса, изменяющего роль в разрешении на общий доступ на роль "только чтение".</span><span class="sxs-lookup"><span data-stu-id="541ae-138">Here is an example of the request that changes the role on the sharing permission to read-only.</span></span>
+<span data-ttu-id="5c739-139">Вот пример запроса, изменяющего роль в разрешении на общий доступ на роль "только чтение".</span><span class="sxs-lookup"><span data-stu-id="5c739-139">Here is an example of the request that changes the role on the sharing permission to read-only.</span></span>
 
 
-# <a name="httptabhttp"></a>[<span data-ttu-id="541ae-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="541ae-139">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="5c739-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="5c739-140">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "update-permission", "@odata.type": "microsoft.graph.permission", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
@@ -79,28 +81,28 @@ Content-type: application/json
   "roles": [ "read" ]
 }
 ```
-# <a name="ctabcsharp"></a>[<span data-ttu-id="541ae-140">C#</span><span class="sxs-lookup"><span data-stu-id="541ae-140">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="5c739-141">C#</span><span class="sxs-lookup"><span data-stu-id="5c739-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-permission-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[<span data-ttu-id="541ae-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="541ae-141">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="5c739-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5c739-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-permission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[<span data-ttu-id="541ae-142">Цель — C</span><span class="sxs-lookup"><span data-stu-id="541ae-142">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="5c739-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5c739-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-permission-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[<span data-ttu-id="541ae-143">Java</span><span class="sxs-lookup"><span data-stu-id="541ae-143">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="5c739-144">Java</span><span class="sxs-lookup"><span data-stu-id="5c739-144">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-permission-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="541ae-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="541ae-144">Response</span></span>
+### <a name="response"></a><span data-ttu-id="5c739-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="5c739-145">Response</span></span>
 
-<span data-ttu-id="541ae-145">При успешном выполнении этот метод возвращает ресурс [Permission](../resources/permission.md), представляющий обновленное состояние разрешения, в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="541ae-145">If successful, this method returns a [Permission](../resources/permission.md) resource in the response body that represents the updated state of the permission.</span></span>
+<span data-ttu-id="5c739-146">При успешном выполнении этот метод возвращает ресурс [Permission](../resources/permission.md), представляющий обновленное состояние разрешения, в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="5c739-146">If successful, this method returns a [Permission](../resources/permission.md) resource in the response body that represents the updated state of the permission.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission", "truncated": true } -->
 
@@ -120,9 +122,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="error-responses"></a><span data-ttu-id="541ae-146">Отклики с ошибками</span><span class="sxs-lookup"><span data-stu-id="541ae-146">Error responses</span></span>
+## <a name="error-responses"></a><span data-ttu-id="5c739-147">Отклики с ошибками</span><span class="sxs-lookup"><span data-stu-id="5c739-147">Error responses</span></span>
 
-<span data-ttu-id="541ae-147">Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].</span><span class="sxs-lookup"><span data-stu-id="541ae-147">Read the [Error Responses][error-response] topic for more information about how errors are returned.</span></span>
+<span data-ttu-id="5c739-148">Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].</span><span class="sxs-lookup"><span data-stu-id="5c739-148">Read the [Error Responses][error-response] topic for more information about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 

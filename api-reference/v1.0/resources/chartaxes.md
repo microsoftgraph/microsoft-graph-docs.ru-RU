@@ -5,34 +5,36 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 7e8ee5eac8face4d16418799d627d3aa168c48c2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a5a33108de8225e3222ecea74afa3c0d9f1caa4b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029878"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531911"
 ---
-# <a name="chartaxes-resource-type"></a><span data-ttu-id="9f7c2-103">Тип ресурса ChartAxes</span><span class="sxs-lookup"><span data-stu-id="9f7c2-103">ChartAxes resource type</span></span>
+# <a name="chartaxes-resource-type"></a><span data-ttu-id="29826-103">Тип ресурса ChartAxes</span><span class="sxs-lookup"><span data-stu-id="29826-103">ChartAxes resource type</span></span>
 
-<span data-ttu-id="9f7c2-104">Представляет оси диаграммы.</span><span class="sxs-lookup"><span data-stu-id="9f7c2-104">Represents the chart axes.</span></span>
+<span data-ttu-id="29826-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="29826-104">Namespace: microsoft.graph</span></span>
+
+<span data-ttu-id="29826-105">Представляет оси диаграммы.</span><span class="sxs-lookup"><span data-stu-id="29826-105">Represents the chart axes.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="9f7c2-105">Методы</span><span class="sxs-lookup"><span data-stu-id="9f7c2-105">Methods</span></span>
-<span data-ttu-id="9f7c2-106">Нет</span><span class="sxs-lookup"><span data-stu-id="9f7c2-106">None</span></span>
+## <a name="methods"></a><span data-ttu-id="29826-106">Методы</span><span class="sxs-lookup"><span data-stu-id="29826-106">Methods</span></span>
+<span data-ttu-id="29826-107">Нет</span><span class="sxs-lookup"><span data-stu-id="29826-107">None</span></span>
 
-## <a name="properties"></a><span data-ttu-id="9f7c2-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="9f7c2-107">Properties</span></span>
-<span data-ttu-id="9f7c2-108">Нет</span><span class="sxs-lookup"><span data-stu-id="9f7c2-108">None</span></span>
+## <a name="properties"></a><span data-ttu-id="29826-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="29826-108">Properties</span></span>
+<span data-ttu-id="29826-109">Нет</span><span class="sxs-lookup"><span data-stu-id="29826-109">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="9f7c2-109">Отношения</span><span class="sxs-lookup"><span data-stu-id="9f7c2-109">Relationships</span></span>
-| <span data-ttu-id="9f7c2-110">Отношение</span><span class="sxs-lookup"><span data-stu-id="9f7c2-110">Relationship</span></span> | <span data-ttu-id="9f7c2-111">Тип</span><span class="sxs-lookup"><span data-stu-id="9f7c2-111">Type</span></span>   |<span data-ttu-id="9f7c2-112">Описание</span><span class="sxs-lookup"><span data-stu-id="9f7c2-112">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="29826-110">Связи</span><span class="sxs-lookup"><span data-stu-id="29826-110">Relationships</span></span>
+| <span data-ttu-id="29826-111">Связь</span><span class="sxs-lookup"><span data-stu-id="29826-111">Relationship</span></span> | <span data-ttu-id="29826-112">Тип</span><span class="sxs-lookup"><span data-stu-id="29826-112">Type</span></span>   |<span data-ttu-id="29826-113">Описание</span><span class="sxs-lookup"><span data-stu-id="29826-113">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="9f7c2-113">Категоряксис</span><span class="sxs-lookup"><span data-stu-id="9f7c2-113">categoryAxis</span></span>|[<span data-ttu-id="9f7c2-114">Воркбукчартаксис</span><span class="sxs-lookup"><span data-stu-id="9f7c2-114">WorkbookChartAxis</span></span>](chartaxis.md)|<span data-ttu-id="9f7c2-p101">Представляет ось категорий на диаграмме. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="9f7c2-p101">Represents the category axis in a chart. Read-only.</span></span>|
-|<span data-ttu-id="9f7c2-117">Сериесаксис</span><span class="sxs-lookup"><span data-stu-id="9f7c2-117">seriesAxis</span></span>|[<span data-ttu-id="9f7c2-118">Воркбукчартаксис</span><span class="sxs-lookup"><span data-stu-id="9f7c2-118">WorkbookChartAxis</span></span>](chartaxis.md)|<span data-ttu-id="9f7c2-p102">Представляет ось ряда данных для объемной диаграммы. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="9f7c2-p102">Represents the series axis of a 3-dimensional chart. Read-only.</span></span>|
-|<span data-ttu-id="9f7c2-121">valueAxis</span><span class="sxs-lookup"><span data-stu-id="9f7c2-121">valueAxis</span></span>|[<span data-ttu-id="9f7c2-122">Воркбукчартаксис</span><span class="sxs-lookup"><span data-stu-id="9f7c2-122">WorkbookChartAxis</span></span>](chartaxis.md)|<span data-ttu-id="9f7c2-123">Представляет ось значений для оси.</span><span class="sxs-lookup"><span data-stu-id="9f7c2-123">Represents the value axis in an axis.</span></span> <span data-ttu-id="9f7c2-124">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="9f7c2-124">Read-only.</span></span>|
+|<span data-ttu-id="29826-114">категоряксис</span><span class="sxs-lookup"><span data-stu-id="29826-114">categoryAxis</span></span>|[<span data-ttu-id="29826-115">воркбукчартаксис</span><span class="sxs-lookup"><span data-stu-id="29826-115">WorkbookChartAxis</span></span>](chartaxis.md)|<span data-ttu-id="29826-p101">Представляет ось категорий на диаграмме. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="29826-p101">Represents the category axis in a chart. Read-only.</span></span>|
+|<span data-ttu-id="29826-118">сериесаксис</span><span class="sxs-lookup"><span data-stu-id="29826-118">seriesAxis</span></span>|[<span data-ttu-id="29826-119">воркбукчартаксис</span><span class="sxs-lookup"><span data-stu-id="29826-119">WorkbookChartAxis</span></span>](chartaxis.md)|<span data-ttu-id="29826-p102">Представляет ось ряда данных для объемной диаграммы. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="29826-p102">Represents the series axis of a 3-dimensional chart. Read-only.</span></span>|
+|<span data-ttu-id="29826-122">valueAxis</span><span class="sxs-lookup"><span data-stu-id="29826-122">valueAxis</span></span>|[<span data-ttu-id="29826-123">воркбукчартаксис</span><span class="sxs-lookup"><span data-stu-id="29826-123">WorkbookChartAxis</span></span>](chartaxis.md)|<span data-ttu-id="29826-124">Представляет ось значений для оси.</span><span class="sxs-lookup"><span data-stu-id="29826-124">Represents the value axis in an axis.</span></span> <span data-ttu-id="29826-125">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="29826-125">Read-only.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="9f7c2-125">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="9f7c2-125">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="29826-126">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="29826-126">JSON representation</span></span>
 
-<span data-ttu-id="9f7c2-126">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="9f7c2-126">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="29826-127">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="29826-127">Here is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",
