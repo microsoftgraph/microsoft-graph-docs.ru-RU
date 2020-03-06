@@ -6,18 +6,20 @@ description: Ресурс drive представляет хранилище OneD
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 689c020a0c717fb395d13822c2c8de8f265988a3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 7544c479673f774d5e530eb27e90ee2529799daf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36012725"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42505765"
 ---
 # <a name="drive-resource-type"></a>Тип ресурса drive
 
+Пространство имен: microsoft.graph
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ресурс drive — объект верхнего уровня, представляющий хранилище OneDrive пользователя или библиотеку документов в SharePoint.
+Ресурс Drive — объект верхнего уровня, представляющий хранилище OneDrive пользователя или библиотеку документов в SharePoint.
 
 Для пользователей OneDrive всегда будет доступен хотя бы один диск (диск по умолчанию). Для пользователей, у которых нет лицензии на OneDrive, такой диск может быть недоступен.
 
@@ -59,7 +61,7 @@ ms.locfileid: "36012725"
 
 ## <a name="relationships"></a>Связи
 
-| Отношение | Тип                                 | Описание
+| Связь | Тип                                 | Описание
 |:-------------|:-------------------------------------|:-----------------------
 | activities   | Коллекция [itemActivity][]          | Список последних действий, выполненных для этого объекта drive.
 | bundles      | Коллекция [driveItem][]             | Коллекция объектов [bundles][bundle] (альбомы и наборы общих элементов с множественным выбором). Только в OneDrive для личного пользования.

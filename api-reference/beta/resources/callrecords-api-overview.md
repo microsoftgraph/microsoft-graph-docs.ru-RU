@@ -5,20 +5,20 @@ author: stephenjust
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: 23fc6babd1b5fb8372e6471a6b1d0d22d36001f1
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 9b48b3d7f0265c44bc62c3ee2182353343692a10
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394886"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507805"
 ---
 # <a name="working-with-the-call-records-api-in-microsoft-graph"></a>Работа с API записей звонков в Microsoft Graph
-
-Пространство имен: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Записи звонков содержат сведения об использовании и диагностике, касающиеся звонков и собраний по сети в вашей организации при применении Microsoft Teams или Skype для бизнеса. Вы можете использовать API записей звонков, чтобы подписаться на записи звонков и искать их по идентификаторам.
+
+API записи звонков задается в подпространстве имен OData, `microsoft.graph.callRecords`.
 
 ## <a name="key-resource-types"></a>Ключевые типы ресурсов
 

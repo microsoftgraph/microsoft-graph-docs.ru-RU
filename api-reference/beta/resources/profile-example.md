@@ -5,14 +5,16 @@ author: kevinbellinger
 localization_priority: Priority
 ms.prod: people
 doc_type: conceptualPageType
-ms.openlocfilehash: 342eb433f7acc5c8e37d37e7ebcf7cb59f768aa1
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: e0a402cd01cf9dc8effd16496d7230cc8e98d5d1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37939252"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521476"
 ---
 # <a name="use-the-profile-api-in-microsoft-graph-to-retrieve-information-about-yourself-or-another-user"></a>Использование API профилей в Microsoft Graph для получения информации о себе или другом пользователе 
+
+Пространство имен: microsoft.graph
 
 Приложения Microsoft Graph могут использовать API профилей для получения профиля вошедшего или другого пользователя с помощью действительной учетной записи Майкрософт или Azure AD. Эту информацию можно использовать в приложениях, чтобы помочь получить контекстные сведения о другом пользователе, расширить возможности пользователя приложения или реализовать механизм хранения расширенной информации о пользователе, который также можно использовать в Microsoft 365. 
 

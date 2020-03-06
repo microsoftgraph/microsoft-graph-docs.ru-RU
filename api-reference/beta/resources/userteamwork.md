@@ -5,14 +5,16 @@ author: clearab
 doc_type: resourcePageType
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: d68ceff79856b23f2d86b2c57a6278b7c6ad7e9d
-ms.sourcegitcommit: 82b73552fff79a4ef7a2ee57fc2d1b3286b5bd4c
+ms.openlocfilehash: f633f6ea214374aa7171bdd6ada24f4fadb4b507
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "35908588"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42519493"
 ---
 # <a name="userteamwork-resource-type"></a>Тип ресурса userTeamwork
+
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +28,7 @@ ms.locfileid: "35908588"
 
 ## <a name="relationships"></a>Связи
 
-| Отношение | Тип | Описание |
+| Связь | Тип | Описание |
 |:---------------|:--------|:----------|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|Приложения, установленные в личной области пользователя.|
 

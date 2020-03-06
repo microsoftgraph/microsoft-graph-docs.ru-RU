@@ -5,14 +5,16 @@ localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: a4ca96d9296843fe716512f6d316d60f6c7b61d7
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cf8bc26cf65fc8181edbeef82f521cc68eb8e6a1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35965798"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42521532"
 ---
-# <a name="privileged-identity-management"></a>Управление привилегированными пользователями (PIM)
+# <a name="privileged-identity-management"></a>Управление привилегированными пользователями
+
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

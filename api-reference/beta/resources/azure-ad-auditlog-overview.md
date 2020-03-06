@@ -5,14 +5,16 @@ localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: ''
 author: ''
-ms.openlocfilehash: 9d739cbe711ad175e485ecb3d9d12173718a1b75
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 49bd7ed44dc3ece2fcdfe6e79e1adf6e27e2d02d
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35974243"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42508047"
 ---
 # <a name="azure-ad-audit-log-api-overview"></a>Обзор API журнала аудита Azure AD
+
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

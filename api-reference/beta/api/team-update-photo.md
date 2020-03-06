@@ -5,14 +5,16 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6c19e09713d16f8c2739b1a8398509953a19ddd0
-ms.sourcegitcommit: f23cc661a0e30d01a6b59cfdae90768c55b80ae2
+ms.openlocfilehash: 26a0852df065e983de3e926bac06a751e9cc083f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "37418337"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42452556"
 ---
 # <a name="update-team-photo"></a>Обновление фотографии команды
+
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

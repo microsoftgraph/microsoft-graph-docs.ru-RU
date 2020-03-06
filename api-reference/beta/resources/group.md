@@ -5,14 +5,16 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 1f9be33d5a4932951ca2a12a2a0bbad01a9f5b2c
-ms.sourcegitcommit: 0f39f39a1c0300ef013ebd12e4df2b5ba4dabbf8
+ms.openlocfilehash: 84706a54b9628ef142d75804b1950f531bc18282
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "41559028"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42497149"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
+
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
