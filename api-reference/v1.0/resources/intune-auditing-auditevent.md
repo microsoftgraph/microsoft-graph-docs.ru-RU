@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5dfadf90d2498fa13f2367ca7467bbce5f810e3f
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: ec433c2ad38e967d7772031ab654e35fafa7c8b8
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37355990"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531034"
 ---
 # <a name="auditevent-resource-type"></a>Тип ресурса auditEvent
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+Пространство имен: microsoft.graph
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Класс, содержащий свойства события аудита.
 
@@ -34,12 +36,12 @@ ms.locfileid: "37355990"
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |displayName|Строка|Отображаемое имя события.|
-|componentName|String|Имя компонента.|
+|componentName|Строка|Имя компонента.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Пользователь AAD и приложение, связанные с событием аудита.|
-|activity|String|Понятное имя действия.|
+|activity|Строка|Понятное имя действия.|
 |activityDateTime|DateTimeOffset|Дата и время выполнения действия (в формате UTC).|
-|activityType|String|Тип выполненного действия.|
-|activityOperationType|String|Тип операции HTTP для действия.|
+|activityType|Строка|Тип выполненного действия.|
+|activityOperationType|Строка|Тип операции HTTP для действия.|
 |activityResult|String|Результат действия.|
 |correlationId|Guid|ИД клиентского запроса, используемый для согласования действий в системе.|
 |resources|Коллекция [auditResource](../resources/intune-auditing-auditresource.md)|Изменяемые ресурсы.|

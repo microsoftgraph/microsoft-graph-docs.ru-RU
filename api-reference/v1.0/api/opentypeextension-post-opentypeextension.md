@@ -5,14 +5,16 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 3846d7d899a057c42227e4c70584d8c1e84493d4
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 6901ea90ba446d4e89a0a11c50bfab1704d54292
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36022630"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511252"
 ---
 # <a name="create-open-extension"></a>Создание открытого расширения
+
+Пространство имен: microsoft.graph
 
 Создание открытого расширения (объекта [openTypeExtension](../resources/opentypeextension.md)) и добавление настраиваемых свойств в новый или существующий экземпляр ресурса.
 

@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6a0b128bc0205c54191e4d2c862ef9631734f986
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: d8ccdda286034a340ccc0f7f65d21f8ffb5a6101
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37367639"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532318"
 ---
 # <a name="webbrowsercookiesettings-enum-type"></a>тип перечисления Веббровсеркукиесеттингс
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+Пространство имен: microsoft.graph
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Параметры файлов cookie веб-браузера.
 
@@ -22,10 +24,10 @@ ms.locfileid: "37367639"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |бровсердефаулт|нуль|Значение по умолчанию браузера без намерения.|
-|блоккалвайс|1,1|Всегда блокируйте файлы cookie.|
-|алловкуррентвебсите|2|Разрешить файлы cookie с текущего веб-сайта.|
-|алловфромвебситесвиситед|4|Разрешить файлы cookie со посещенных веб-сайтов.|
-|алловалвайс|SP4|Всегда разрешать файлы cookie.|
+|блоккалвайс|1 |Всегда блокируйте файлы cookie.|
+|алловкуррентвебсите|2 |Разрешить файлы cookie с текущего веб-сайта.|
+|алловфромвебситесвиситед|3 |Разрешить файлы cookie со посещенных веб-сайтов.|
+|алловалвайс|4 |Всегда разрешать файлы cookie.|
 
 
 

@@ -5,14 +5,16 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 2dfdcc3b47583b6f37b8b3b760a6bb435f39214b
-ms.sourcegitcommit: d8a425766aa6a56027b8576bbec6a9d1ae3e079c
+ms.openlocfilehash: 4e26fb6521c3f9bcd6672da4241a727b3680aab1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "36361746"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518296"
 ---
 # <a name="update-contact"></a>Обновление контакта
+
+Пространство имен: microsoft.graph
 
 Обновление свойств объекта contact.
 ## <a name="permissions"></a>Разрешения
@@ -52,38 +54,38 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|assistantName|String|Имя помощника контакта.|
+|assistantName|Строка|Имя помощника контакта.|
 |birthday|DateTimeOffset|Дата рождения контакта.|
 |businessAddress|[PhysicalAddress](../resources/physicaladdress.md)|Рабочий адрес контакта.|
-|businessHomePage|String|Домашняя страница контакта (рабочая).|
-|businessPhones|String|Рабочие номера телефонов контакта.|
+|businessHomePage|Строка|Домашняя страница контакта (рабочая).|
+|businessPhones|Строка|Рабочие номера телефонов контакта.|
 |categories|String|Категории, связанные с контактом.|
-|children|String|Имена детей контакта.|
-|companyName|String|Название компании контакта.|
-|department|String|Отдел контакта.|
+|children|Строка|Имена детей контакта.|
+|companyName|Строка|Название компании контакта.|
+|department|Строка|Отдел контакта.|
 |displayName|Строка|Отображаемое имя контакта. Обратите внимание, что последующие обновления других свойств могут привести к тому, что автоматически созданное значение перезапишет указанное значение displayName. Чтобы сохранить существующее значение, всегда добавляйте его как displayName в операцию обновления.|
 |emailAddresses|Коллекция [EmailAddress](../resources/emailaddress.md)|Электронные адреса контакта.|
-|fileAs|String|Имя, под которым хранится контакт.|
-|generation|String|Поколение контакта.|
-|givenName|String|Имя контакта.|
+|fileAs|Строка|Имя, под которым хранится контакт.|
+|generation|Строка|Поколение контакта.|
+|givenName|Строка|Имя контакта.|
 |homeAddress|[PhysicalAddress](../resources/physicaladdress.md)|Домашний адрес контакта.|
 |homePhones|Коллекция String|Номера домашних телефонов контакта.|
 |imAddresses|String|Адреса контакта для обмена мгновенными сообщениями.|
-|initials|String|Инициалы контакта.|
-|jobTitle|String|Должность контакта.|
-|manager|String|Имя руководителя контакта.
-|middleName|String|Отчество контакта.|
-|mobilePhone|String|Номер мобильного телефона контакта.|
-|nickName|String|Псевдоним контакта.|
+|initials|Строка|Инициалы контакта.|
+|jobTitle|Строка|Должность контакта.|
+|manager|Строка|Имя руководителя контакта.
+|middleName|Строка|Отчество контакта.|
+|mobilePhone|Строка|Номер мобильного телефона контакта.|
+|nickName|Строка|Псевдоним контакта.|
 |officeLocation|String|Расположение офиса контакта.|
 |otherAddress|[PhysicalAddress](../resources/physicaladdress.md)|Другие адреса контакта.|
 |parentFolderId|Строка|Идентификатор родительской папки контакта.|
-|personalNotes|String|Заметки пользователя о контакте.|
-|profession|String|Профессия контакта.|
-|spouseName|String|Имя супруга или супруги контакта.|
-|surname|String|Фамилия контакта.|
+|personalNotes|Строка|Заметки пользователя о контакте.|
+|profession|Строка|Профессия контакта.|
+|spouseName|Строка|Имя супруга или супруги контакта.|
+|surname|Строка|Фамилия контакта.|
 |title|String|Звание контакта.|
-|yomiCompanyName|String|Название компании контакта, записанное так, как оно звучит по-японски. Это необязательное свойство.|
+|yomiCompanyName|Строка|Название компании контакта, записанное так, как оно звучит по-японски. Это необязательное свойство.|
 |yomiGivenName|String|Имя контакта, записанное так, как оно звучит по-японски. Это необязательное свойство.|
 |yomiSurname|String|Фамилия контакта, записанная так, как она звучит по-японски. Это необязательное свойство.|
 
@@ -94,7 +96,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_contact"
@@ -114,19 +116,19 @@ Content-length: 1977
   "birthday": "1974-07-22"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-contact-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-contact-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-contact-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-contact-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

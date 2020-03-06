@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: b17eb84c3de5505a3dfea23ce3fef564dca9aa2b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: c71b7158b7ba3cef208fb6bf983d077c9474e77c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029766"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533104"
 ---
 # <a name="chartpointformat-resource-type"></a>Тип ресурса ChartPointFormat
+
+Пространство имен: microsoft.graph
 
 Представляет объект форматирования для точек диаграммы.
 
@@ -23,10 +25,10 @@ ms.locfileid: "36029766"
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|fill|[Воркбукчартфилл](chartfill.md)|Представляет формат заливки диаграммы, включая сведения о форматировании фона. Только для чтения.|
+|fill|[воркбукчартфилл](chartfill.md)|Представляет формат заливки диаграммы, включая сведения о форматировании фона. Только для чтения.|
 
 
 ## <a name="json-representation"></a>Представление JSON

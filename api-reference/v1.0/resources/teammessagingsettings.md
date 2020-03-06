@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 27ef5062e84f20dc1dbf6be11020f421871fbc09
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e742dd0e785a94b33a57e55b50a00aab0c207ab4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033840"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533522"
 ---
 # <a name="teammessagingsettings-resource-type"></a>Тип ресурса Теаммессагингсеттингс
+
+Пространство имен: microsoft.graph
 
 
 
@@ -21,11 +23,11 @@ ms.locfileid: "36033840"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Алловусередитмессажес|Boolean|Если задано значение true, пользователи могут редактировать сообщения.|
-|Алловусерделетемессажес|Boolean|Если задано значение true, пользователи могут удалять свои сообщения.|
-|Аллововнерделетемессажес|Boolean|Если задано значение true, владельцы могут удалять любые сообщения.|
-|Алловтеамментионс|Boolean|Если задано значение true, @team упоминаний разрешены.|
-|Алловчаннелментионс|Boolean|Если задано значение true, @channel упоминаний разрешены.|
+|алловусередитмессажес|Boolean|Если задано значение true, пользователи могут редактировать сообщения.|
+|алловусерделетемессажес|Boolean|Если задано значение true, пользователи могут удалять свои сообщения.|
+|аллововнерделетемессажес|Boolean|Если задано значение true, владельцы могут удалять любые сообщения.|
+|алловтеамментионс|Boolean|Если задано значение true, @team упоминаний разрешены.|
+|алловчаннелментионс|Boolean|Если задано значение true, @channel упоминаний разрешены.|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 362072f8727d82e4b5b5744922d8b819e0eae079
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a684d71aa25267c1b2f19f13d35d796825783544
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032538"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531455"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>Тип ресурса extensionSchemaProperty
+
+Пространство имен: microsoft.graph
 
 Ресурс **extensionSchemaProperty** используется для задания имени и типа свойства в качестве части определения [schemaExtension](schemaextension.md).
 

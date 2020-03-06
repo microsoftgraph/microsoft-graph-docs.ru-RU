@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 14d4cb88c79651bbba381206df7d5ff9b26db0bc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: f717be91f466790c86b529d9cc81852e7c37853a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030200"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531255"
 ---
 # <a name="internetmessageheader-resource-type"></a>Тип ресурса internetMessageHeader
+
+Пространство имен: microsoft.graph
 
 
 Пара "ключ-значение", представляющая заголовок сообщения Интернета, как определено в документе [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), где приводятся сведения о сетевом пути, по которому сообщение доставляется от отправителя получателю. 

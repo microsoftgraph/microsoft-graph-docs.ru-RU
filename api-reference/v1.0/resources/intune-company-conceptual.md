@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: f58a3b5bcdaa8c35bb0b9ea0f60261909705519e
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: a0d6e64e8423896c5a506886f7f4cdc3c70ded11
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37360421"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532691"
 ---
 # <a name="company-terms-and-conditions-in-microsoft-intune"></a>Корпоративные условия в Microsoft Intune
+
+Пространство имен: microsoft.graph
 
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) Intune надлежащим образом.
 

@@ -6,14 +6,16 @@ description: Объект RestoreAction предоставляет сведен�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 1395ee284fa2f3ca16371c8282124c07c9b4bd73
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d6b186e7e9fdc620fa59b7c5445d10296f80e4a4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034659"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533827"
 ---
 # <a name="restoreaction-resource-type"></a>Тип ресурса restoreAction
+
+Пространство имен: microsoft.graph
 
 Присутствие ресурса **restoreAction** в [**itemActivity**][activity] указывает на то, что действие восстановило элемент.
 

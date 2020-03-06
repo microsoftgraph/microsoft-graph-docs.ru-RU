@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d95db2f79100cc0ddbab5b85a9073ff6e80716cf
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 492f3a2786acd51b6ecf376dd1f1d0c0d4542af1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37355969"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532719"
 ---
 # <a name="deviceinstallstate-resource-type"></a>Тип ресурса deviceInstallState
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+Пространство имен: microsoft.graph
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Содержит свойства состояния установки для устройства.
 
@@ -30,14 +32,14 @@ ms.locfileid: "37355969"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|deviceName|String|Имя устройства.|
-|deviceId|String|Идентификатор устройства.|
+|id|Строка|Ключ объекта.|
+|deviceName|Строка|Имя устройства.|
+|deviceId|Строка|Идентификатор устройства.|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации.|
 |installState|[installState](../resources/intune-books-installstate.md)|Состояние установки электронной книги. Возможные значения: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
-|errorCode|String|Код ошибки для сбоев при установке.|
-|osVersion|String|Версия ОС.|
-|osDescription|String|Описание ОС.|
+|errorCode|Строка|Код ошибки для сбоев при установке.|
+|osVersion|Строка|Версия ОС.|
+|osDescription|Строка|Описание ОС.|
 |userName|String|Имя пользователя устройства.|
 
 ## <a name="relationships"></a>Связи

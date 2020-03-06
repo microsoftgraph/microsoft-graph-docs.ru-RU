@@ -5,14 +5,16 @@ localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 18d756c21d5c19b24eebca78543e3fa31a86a1dc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 953c62e5747176c7eace8c8ee4baa82d0d48d6d3
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034130"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533673"
 ---
 # <a name="skype-for-business-activity-reports"></a>Отчеты о работе со Skype для бизнеса
+
+Пространство имен: microsoft.graph
 
 Эти отчеты позволяют получить подробные сведения о работе со Skype для бизнеса в организации. Эти данные могут пригодиться при проведении анализа, планировании и принятии других бизнес-решений.
 

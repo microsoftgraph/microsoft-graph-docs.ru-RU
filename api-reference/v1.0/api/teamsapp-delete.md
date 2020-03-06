@@ -5,14 +5,16 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 7fa273be1265c4e0a236688cc4af4a3f695a1477
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e6c8e6922836c6a7cccdb0d33befc78f9455e87b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36021144"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509337"
 ---
 # <a name="remove-an-app-from-your-organizations-app-catalog"></a>Удаление приложения из каталога приложений Организации
+
+Пространство имен: microsoft.graph
 
 
 
@@ -42,9 +44,9 @@ DELETE /appCatalogs/teamsApps/{id}
 |:--------------|:--------------  |
 | Авторизация | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
-Нет.
+Отсутствуют.
 
 >**Примечание:** Используйте идентификатор, возвращенный при вызове [списка опубликованных приложений](./teamsapp-list.md) , для ссылки на приложение, которое вы хотите обновить. Не используйте идентификатор из манифеста пакета приложения ZIP.
 

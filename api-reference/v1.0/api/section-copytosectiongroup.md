@@ -5,15 +5,16 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 9163d87b2048a7db377a335bb880354153d486d8
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: d590de1f62b5c4a5af55783c5e500c8be41c5d5b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36320100"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509929"
 ---
 # <a name="section-copytosectiongroup"></a>раздел: copyToSectionGroup
-Копирует раздел в определенную группу разделов.
+
+Пространство имен: Microsoft. Graph копирует раздел в определенную группу разделов.
 
 Для операций копирования необходимо использовать шаблон асинхронного вызова: сначала вызвать действие Copy, а затем опросить конечную точку операции, чтобы получить результат.
 
@@ -45,8 +46,8 @@ POST /groups/{id}/onenote/sections/{id}/copyToSectionGroup
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |groupId|String|Идентификатор группы, в которую будет копироваться. Используйте только при копировании в группу Office 365.|
-|id|String|Обязательный. Идентификатор группы разделов назначения. |
-|ренамеас|String|Имя копии. По умолчанию используется имя существующего элемента. |
+|id|Строка|Обязательный. Идентификатор группы разделов назначения. |
+|ренамеас|Строка|Имя копии. По умолчанию используется имя существующего элемента. |
 
 <!--groupId missing-->
 <!--|siteCollectionId|String||
@@ -61,7 +62,7 @@ POST /groups/{id}/onenote/sections/{id}/copyToSectionGroup
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "section_copytosectiongroup"
@@ -77,19 +78,19 @@ Content-length: 84
   "renameAs": "renameAs-value"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/section-copytosectiongroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/section-copytosectiongroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/section-copytosectiongroup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/section-copytosectiongroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8d460aa4c35fd99ab50f28f8ec7d6fd60fda1f81
-ms.sourcegitcommit: c25828c596b7e0939fa164a3d7754722943152c2
+ms.openlocfilehash: 45b1829337c93af45e6f3edc1dd72191fcc0d14c
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "38756786"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531678"
 ---
 # <a name="device-resource-type"></a>Тип ресурса device
+
+Пространство имен: microsoft.graph
 
 Представляет устройство, зарегистрированное в организации. Экземпляры device создаются в облаке с помощью службы Device Registration Service или Intune. Их используют политики условного доступа для многофакторной проверки подлинности. Представленными устройствами могут быть компьютеры и ноутбуки, смартфоны и планшеты. Наследуется от [directoryObject](directoryobject.md).
 
@@ -60,13 +62,13 @@ ms.locfileid: "38756786"
 |operatingSystemVersion|Строка|Версия операционной системы на устройстве. Обязательный параметр. |
 |physicalIds|Коллекция String| Только для внутреннего использования. Значение NULL не допускается. |
 |профилетипе|Строка|Тип профиля устройства. Возможные значения:<br />**Регистереддевице** (по умолчанию)<br />**секуревм**<br />**Printer**<br />**Shared**<br />**Интернета**|
-|системлабелс|Коллекция строк| Список меток, примененных к устройству системой. |
+|системлабелс|Коллекция String| Список меток, примененных к устройству системой. |
 |trustType|String| Тип доверия для присоединенного устройства. Только для чтения. Возможные значения: <br />**Workplace**. *Принесенные личные устройства*.<br />**AzureAd**. Устройства, присоединенные только через облако.<br />**ServerAd**. Устройства, присоединенные к Azure Active Directory через локальный домен. Дополнительные сведения см. в статье [Общие сведения об управлении устройствами в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction). |
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|extensions|Коллекция объектов [extension](extension.md)|Коллекция открытых расширений, определенных для устройства. Только для чтения. Допускается значение null.|
+|extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для устройства. Только для чтения. Допускается значение null.|
 |memberOf|Коллекция [directoryObject](directoryobject.md)|Группы, в которых состоит эта группа. Методы HTTP: GET (поддерживается для всех групп). Только для чтения. Допускается значение null.|
 |[Перечисление транзитивных свойств memberOf](../api/device-list-transitivememberof.md) |Коллекция [directoryObject](directoryobject.md)| Список групп, участником которых является устройство. Эта операция является транзитивным. |
 |registeredOwners|Коллекция [directoryObject](directoryobject.md)|Пользователь, который присоединил устройство через облако или зарегистрировал личное устройство. Зарегистрированный владелец задается при регистрации. Сейчас можно настроить лишь одного такого владельца. Только для чтения. Допускается значение null. |

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: f128fd22562889a5a537f3815a4003aec9bfc8a9
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 1ed82e040121f49bdef29009f6ac387ed4c79cbc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030018"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532030"
 ---
 #  <a name="averagecomparativescore-resource-type"></a>Тип ресурса Аверажекомпаративескоре
+
+Пространство имен: microsoft.graph
 
 Содержит различные оценки на основе различных областей (например, усреднение по отраслевым вертикали, среднее значение по размеру компании и т. д.) и категории элементов управления (идентификация, данные, устройство, приложения, инфраструктура).
 
@@ -20,8 +22,8 @@ ms.locfileid: "36030018"
 
 |Свойство |Тип |Описание |
 |:--|:--|:--|
-|бы|String|Тип области. Допустимые значения: `AllTenants`, `TotalSeats`, `IndustryTypes`.|
-|Аверажескоре|Двойное|Средняя оценка в указанном базисе.|
+|бы|Строка|Тип области. Допустимые значения: `AllTenants`, `TotalSeats`, `IndustryTypes`.|
+|аверажескоре|Двойное с плавающей точкой|Средняя оценка в указанном базисе.|
 
 ## <a name="json-representation"></a>Представление JSON
 

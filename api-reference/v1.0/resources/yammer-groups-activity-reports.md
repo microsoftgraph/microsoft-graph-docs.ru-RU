@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: c5627ea69b34fd186e09b3d381482721a28b09a2
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 961072e088d36748d51a4a6081f0ee06c47b6e20
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033224"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534266"
 ---
 # <a name="yammer-groups-activity-reports"></a>Отчеты об активности в группах Yammer
+
+Пространство имен: microsoft.graph
 
 Эти отчеты позволяют получить представление об активности в группах Yammer в организации и узнать, сколько групп Yammer создается и используется.
 
@@ -22,6 +24,6 @@ ms.locfileid: "36033224"
 
 | Функция                                 | Возвращаемый тип | Описание                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [Получение сведений о группах](../api/reportroot-getyammergroupsactivitydetail.md) | Поток      | Получите сведения об активности в группах Yammer. |
+| [Получение сведений о группах](../api/reportroot-getyammergroupsactivitydetail.md) | Stream      | Получите сведения об активности в группах Yammer. |
 | [Получение количества групп](../api/reportroot-getyammergroupsactivitygroupcounts.md) | Поток      | Узнайте, сколько всего существовало групп и в скольких из них была активность. |
-| [Получение количества действий](../api/reportroot-getyammergroupsactivitycounts.md) | Поток      | Узнайте, сколько сообщений Yammer было отправлено, прочитано и оценено в группах. |
+| [Получение количества действий](../api/reportroot-getyammergroupsactivitycounts.md) | Stream      | Узнайте, сколько сообщений Yammer было отправлено, прочитано и оценено в группах. |

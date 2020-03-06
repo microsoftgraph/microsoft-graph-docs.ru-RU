@@ -5,14 +5,16 @@ localization_priority: Priority
 author: pranoychaudhuri
 ms.prod: reports
 doc_type: conceptualPageType
-ms.openlocfilehash: 87340d09655ef682cfbc98bb8795ceaa4bdd33a6
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 110502c61a25ae046aa17fde72a5ffc64368b1eb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032601"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531488"
 ---
 # <a name="email-activity-reports"></a>Отчеты о работе с электронной почтой
+
+Пространство имен: microsoft.graph
 
 Эти отчеты позволяют получить общее представление о трафике электронной почты в организации. Вы также можете посмотреть развернутые отчеты, чтобы понять динамику и особенности работы с электронной почтой каждого пользователя в организации.
 

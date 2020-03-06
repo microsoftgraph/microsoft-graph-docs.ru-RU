@@ -7,14 +7,16 @@ localization_priority: Normal
 description: Ресурс choiceColumn в ресурсе columnDefinition указывает, что значения столбца можно выбрать из списка вариантов.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a86cb783fb170c2b9528b47272fc214ea0010760
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a29a80bccd2afb76804b2e1a4d81b5a69d44adf1
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029738"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533074"
 ---
 # <a name="choicecolumn-resource-type"></a>Тип ресурса choiceColumn
+
+Пространство имен: microsoft.graph
 
 Ресурс **choiceColumn** в ресурсе [columnDefinition](columndefinition.md) указывает, что значения столбца можно выбрать из списка вариантов.
 

@@ -5,27 +5,29 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b6058f35b86b1a8ae760fc8a3effb0f81f6571d4
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: ef97c75379a446c0dc503636e8870dfe14f52ee2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37356949"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533290"
 ---
 # <a name="devicemanagementexchangeaccessstate-enum-type"></a>тип перечисления Девицеманажементексчанжеакцессстате
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+Пространство имен: microsoft.graph
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Состояние доступа к Exchange для устройства.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Не обнаружено состояние доступа в Exchange|
-|unknown|1,1|Неизвестный режим доступа к устройству Exchange|
-|разрешенных|2|Устройство имеет доступ к Exchange|
-|заблокированных|4|Устройство заблокировано в Exchange|
-|карантин|SP4|Устройство помещено в карантин в Exchange|
+|нет|нуль|Не обнаружено состояние доступа в Exchange|
+|unknown|1 |Неизвестный режим доступа к устройству Exchange|
+|разрешенных|2 |Устройство имеет доступ к Exchange|
+|заблокированных|3 |Устройство заблокировано в Exchange|
+|карантин|4 |Устройство помещено в карантин в Exchange|
 
 
 

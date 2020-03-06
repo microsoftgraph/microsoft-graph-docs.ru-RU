@@ -7,14 +7,16 @@ localization_priority: Normal
 description: Ресурс Identity представляет удостоверение субъекта.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e545ddc582404f963cab35d1e57f46817c5dfec0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e68b57ed69463cfaa67e3505abe57f3968480065
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029262"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531340"
 ---
 # <a name="identity-resource-type"></a>Тип ресурса Identity
+
+Пространство имен: microsoft.graph
 
 Ресурс **Identity** представляет удостоверение _субъекта_. В роли субъекта может выступать пользователь, устройство или приложение.
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ad7c07d269f9dc627de41db621e4d73f0d2c10b0
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: eb792c5ce3b462fa5d2febcd1fb5ed0509d3ef30
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029906"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531939"
 ---
 #  <a name="certificationcontrol-resource-type"></a>Тип ресурса Цертификатионконтрол
+
+Пространство имен: microsoft.graph
 
 Содержит данные сертификации соответствия требованиям, связанные с контролем безопасного индекса.
 

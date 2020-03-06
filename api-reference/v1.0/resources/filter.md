@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 3f58e1f5207fc3b4aebe2fdfb780735c0c5d209d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 06167bbb0eb55da409e807aeabc9bfaf8287cc9b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032482"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531421"
 ---
 # <a name="filter-resource-type"></a>Тип ресурса Filter
+
+Пространство имен: microsoft.graph
 
 Управляет фильтрацией столбца таблицы.
 
@@ -28,7 +30,7 @@ ms.locfileid: "36032482"
 
 | Имя | Тип   |Описание|
 |:---------------|:--------|:----------|
-|criteria|[Воркбукфилтеркритериа](filtercriteria.md)|Текущий фильтр, заданный для определенного столбца. Только для чтения.|
+|criteria|[воркбукфилтеркритериа](filtercriteria.md)|Текущий фильтр, заданный для определенного столбца. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

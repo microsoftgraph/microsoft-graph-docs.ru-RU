@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: outlook
 author: angelgolfer-ms
 doc_type: resourcePageType
-ms.openlocfilehash: 49005be287e9ecb10bd184ff1c18750878fbaa46
-ms.sourcegitcommit: 496269b62d42cb7a96752a77b0f2e0cb16918f0b
+ms.openlocfilehash: 9c17070e2ff10877039a98e42303f06f7842da2f
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "36484347"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533869"
 ---
 # <a name="referenceattachment-resource-type"></a>Тип ресурса referenceAttachment
+
+Пространство имен: microsoft.graph
 
 Ссылка на файл (например, текстовый файл или документ Word) на облачном диске OneDrive для бизнеса или в других поддерживаемых местах хранения, вложенный в событие, сообщение или запись.
 
@@ -35,7 +37,7 @@ ms.locfileid: "36484347"
 |name|String|Текст, который отображается под значком, представляет внедренное вложение. Он может не быть фактическим именем файла.|
 |size|Int32|Объем метаданных, которые хранятся в сообщении с вложением (в байтах). Это значение не отображает фактический размер файла.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

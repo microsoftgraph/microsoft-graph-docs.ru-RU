@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: ce9a777936b25ed77b130dc2b2219eba0f72c183
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a44392eb718c157f6422228405f7bb2a4b411733
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029752"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533099"
 ---
 # <a name="chartseriesformat-resource-type"></a>Тип ресурса ChartSeriesFormat
+
+Пространство имен: microsoft.graph
 
 Инкапсулирует свойства формата для ряда диаграммы.
 
@@ -23,11 +25,11 @@ ms.locfileid: "36029752"
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|fill|[Воркбукчартфилл](chartfill.md)|Представляет формат заливки ряда диаграммы, включая сведения о форматировании фона. Только для чтения.|
-|line|[Воркбукчартлинеформат](chartlineformat.md)|Представляет форматирование линий. Только для чтения.|
+|fill|[воркбукчартфилл](chartfill.md)|Представляет формат заливки ряда диаграммы, включая сведения о форматировании фона. Только для чтения.|
+|line|[воркбукчартлинеформат](chartlineformat.md)|Представляет форматирование линий. Только для чтения.|
 
 
 ## <a name="json-representation"></a>Представление JSON

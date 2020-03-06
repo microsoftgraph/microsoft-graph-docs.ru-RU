@@ -6,14 +6,16 @@ description: Объект VersionAction предоставляет сведен�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 22f06691824d2ffa5b773a796b4c456cb2fcaecc
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: cde5c906c41972950431d5219bea73e4095f74e7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033448"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533417"
 ---
 # <a name="versionaction-resource-type"></a>Тип ресурса versionAction
+
+Пространство имен: microsoft.graph
 
 Присутствие ресурса **versionAction** в [**itemActivity**][activity] указывает на то, что действие привело к созданию новой версии.
 

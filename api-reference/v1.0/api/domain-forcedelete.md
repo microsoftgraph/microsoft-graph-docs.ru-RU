@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fd00353777b908cc80a77e75878bbac0240ed490
-ms.sourcegitcommit: 1066aa4045d48f9c9b764d3b2891cf4f806d17d5
+ms.openlocfilehash: 98be54b7eb97a18572f44c9be61ea8a4485ec081
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36422291"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517897"
 ---
 # <a name="force-domain-deletion"></a>Принудительное удаление домена
+
+Пространство имен: microsoft.graph
 
 Удаляет домен с помощью асинхронной длительной операции.
 
@@ -57,7 +59,7 @@ POST /domains/{id}/forceDelete
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -65,7 +67,7 @@ POST /domains/{id}/forceDelete
 |:---------------|:--------|:----------|
 |`disableUserAccounts`|`Boolean`| Параметр для отключения переименованных учетных записей пользователей. Если учетная запись пользователя отключена, пользователь не может войти в систему. Если задано **значение true** , то `users` обновление в рамках этой операции будет отключено.  Значение по умолчанию: **true**. |
 
-## <a name="response-body"></a>Текст отклика
+## <a name="response-body"></a>Текст ответа
 
 В случае успеха этот метод возвращает `HTTP/1.1 204 OK` код состояния.
 
@@ -74,7 +76,7 @@ POST /domains/{id}/forceDelete
 ### <a name="request"></a>Запрос
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "domain_forcedelete"
@@ -89,15 +91,15 @@ Content-length: 33
   "disableUserAccounts": true
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/domain-forcedelete-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/domain-forcedelete-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/domain-forcedelete-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

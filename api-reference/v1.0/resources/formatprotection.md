@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: babd1192e216179c59b40d78175f24b0e8366d71
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e474a29e657d19e06aa35fbebffeee85d855acfa
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032440"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531380"
 ---
 # <a name="formatprotection-resource-type"></a>Тип ресурса FormatProtection
+
+Пространство имен: microsoft.graph
 
 Представляет защиту формата объекта Range.
 
@@ -30,7 +32,7 @@ ms.locfileid: "36032440"
 |formulaHidden|boolean|Указывает, скрывает ли Excel формулу для ячеек в диапазоне. Значение NULL указывает, что для всего диапазона не задан единый параметр скрытия формулы.|
 |locked|boolean|Указывает, блокирует ли Excel ячейки в объекте. Значение NULL указывает, что для всего диапазона не задан единый параметр блокировки.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 

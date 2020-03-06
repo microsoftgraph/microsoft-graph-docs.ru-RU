@@ -5,14 +5,16 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 4975e9b46a4b55429906fbcd9b7b23f8774a47e9
-ms.sourcegitcommit: 471f07c30867658688bd932e06822be1bbcea360
+ms.openlocfilehash: ad8c1a9ffd4a4b5cc68554505464173a40aafd29
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "37036202"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531433"
 ---
 # <a name="fileattachment-resource-type"></a>Тип ресурса fileAttachment
+
+Пространство имен: microsoft.graph
 
 Файл (например, текстовый файл или документ Word), вложенный в сведения о пользовательском [событии](../resources/event.md), [сообщение](../resources/message.md) или [запись](../resources/post.md). Свойство **contentBytes** включает содержимое файла в кодировке base64.  
 

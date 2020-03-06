@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 530cab8a11344959df32f7acc41bb706162ccab1
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 987d0d691bef1b5e9aa2a1e1500a8be74c67d8e6
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913263"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42518688"
 ---
 # <a name="call-recordresponse"></a>Call: Рекордреспонсе
+
+Пространство имен: microsoft.graph
 
 Запись короткого голосового ответа звонящего.
 С помощью Bot можно получить голосовой ответ от вызывающего абонента после того, как им будет предложено ответить.
@@ -57,7 +59,7 @@ POST /communications/calls/{id}/recordResponse
 |максрекорддуратионинсекондс|Int32| Максимальная длительность операции Рекордреспонсе перед остановкой записи. Значение по умолчанию = 5 секунд, минимум = 1 секунда, максимум = 120 секунд.|
 |плайбип|Boolean| Если этот параметр имеет значение true, воспроизводит звуковой сигнал, указывающий пользователю, что он может начать запись сообщения. Значение по умолчанию = true.|
 |стоптонес|Коллекция String|Остановка заданных тонов в конец записи.|
-|Контекст|String|Уникальная строка контекста клиента. Максимальный лимит — 256 символов.|
+|Контекст|Строка|Уникальная строка контекста клиента. Максимальный лимит — 256 символов.|
 
 ## <a name="response"></a>Отклик
 Этот метод возвращает код `200 OK` отклика и заголовок Location с URI для [рекордоператион](../resources/recordoperation.md) , созданного для этого запроса.
@@ -71,7 +73,7 @@ POST /communications/calls/{id}/recordResponse
 Ниже показан пример запроса.
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-recordResponse"
@@ -100,7 +102,7 @@ Content-Length: 394
   "stopTones": [ "#", "1", "*" ]
 }
 ```
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-recordresponse-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

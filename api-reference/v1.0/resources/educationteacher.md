@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 8e2cfef452538b9b75500898bf9a809ee871d372
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 494fc0d3bed992a8df4921fe8601024e7eb01668
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030480"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533003"
 ---
 # <a name="educationteacher-resource-type"></a>Тип ресурса educationTeacher
+
+Пространство имен: microsoft.graph
 
 Дополнительные сведения, добавляемые в объект [educationUser](educationuser.md), который присутствует, когда значение параметра primaryRole для пользователя — `teacher`.
 
@@ -20,7 +22,7 @@ ms.locfileid: "36030480"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|externalId|String| Идентификатор преподавателя в исходной системе.|
+|externalId|Строка| Идентификатор преподавателя в исходной системе.|
 |teacherNumber|String|Номер преподавателя.|
 
 ## <a name="json-representation"></a>Представление JSON

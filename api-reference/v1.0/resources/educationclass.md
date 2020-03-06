@@ -5,14 +5,16 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 1dc246c3a8f48980b65c896bba4b6fbe1ae66809
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d767f25fd5d383d297f3765498f3558a162f2716
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029332"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531541"
 ---
 # <a name="educationclass-resource-type"></a>Тип ресурса educationClass
+
+Пространство имен: microsoft.graph
 
 Представляет курс в учебном заведении. Ресурс **educationClass** соответствует группе Office 365, для него используется тот же идентификатор. Учащиеся — постоянные участники курса, а преподаватели являются владельцами и обладают соответствующими правами. Чтобы решения для Office работали правильно, преподаватели должны быть включены как в коллекцию teachers, так и в коллекцию members.  
 
@@ -39,16 +41,16 @@ ms.locfileid: "36029332"
 |id| Строка| Уникальный идентификатор для курса.|
 |description|String| Описание курса.|
 |displayName|Строка| Название курса.|
-|mailNickname|String| Почтовое имя для отправки почты всем участникам, если это возможно. |
+|mailNickname|Строка| Почтовое имя для отправки почты всем участникам, если это возможно. |
 |createdBy|[identitySet](identityset.md)| Объект, который создал курс. |
-|classCode|String| Код курса, используемый учебным заведением для идентификации курса.|
-|externalId|String| Идентификатор курса из системы синхронизации. |
+|classCode|Строка| Код курса, используемый учебным заведением для идентификации курса.|
+|externalId|Строка| Идентификатор курса из системы синхронизации. |
 |externalName|String|Название курса в системе синхронизации.|
-|externalSource|Едукатионекстерналсаурце| Способ создания этого курса. Допустимые значения: `sis`, `manual`, `unknownFutureValue`.|
+|externalSource|едукатионекстерналсаурце| Способ создания этого курса. Допустимые значения: `sis`, `manual`, `unknownFutureValue`.|
 |term|[educationTerm](educationterm.md)|Срок для этого курса.|
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |members|Коллекция [educationUser](../resources/educationuser.md)| Все пользователи для этого курса. Допускается значение null.|
 |schools|Коллекция [educationSchool](../resources/educationschool.md)| Все учебные заведения, с которыми сопоставлен этот курс. Допускается значение NULL.|

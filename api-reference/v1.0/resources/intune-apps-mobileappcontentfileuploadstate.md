@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 82a08c86c228e0cd8645c6ff481d89067e679db3
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: d43e4db629b4a993e7bcc338e061148cb061ed36
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37359021"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531086"
 ---
 # <a name="mobileappcontentfileuploadstate-enum-type"></a>тип перечисления Мобилеаппконтентфилеуплоадстате
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+Пространство имен: microsoft.graph
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Содержит свойства для состояний запроса на отправку.
 
@@ -22,9 +24,9 @@ ms.locfileid: "37359021"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |success|нуль|Пока не задокументировано.|
-|трансиентеррор|1,1|Пока не задокументировано.|
-|error|2|Пока не задокументировано.|
-|unknown|4|Пока не задокументировано.|
+|трансиентеррор|1 |Пока не задокументировано.|
+|error|2 |Пока не задокументировано.|
+|unknown|3 |Пока не задокументировано.|
 |азуресторажеурирекуестсукцесс|100|Пока не задокументировано.|
 |азуресторажеурирекуестпендинг|101|Пока не задокументировано.|
 |азуресторажеурирекуестфаилед|102|Пока не задокументировано.|

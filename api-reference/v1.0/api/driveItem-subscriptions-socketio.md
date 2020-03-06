@@ -6,14 +6,16 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Позволяет получать уведомления об изменении почти в режиме реального времени для диска с помощью socket.io.
 doc_type: apiPageType
-ms.openlocfilehash: a53c172ca6c6347ec6051d62f2b8830dd1553392
-ms.sourcegitcommit: d1742ec820776f1e95cba76d98c6cfd17d3eadbb
+ms.openlocfilehash: a1343cb1dcab4ea1fda9ffc13ba14f7402f3dca2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "36726342"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517799"
 ---
 # <a name="get-websocket-endpoint"></a>Получение конечной точки WebSocket
+
+Пространство имен: microsoft.graph
 
 Позволяет получать уведомления об изменении почти в режиме реального времени для [диска][] с помощью [Socket.IO][].
 Socket.io — это популярная библиотека уведомлений для JavaScript, использующая WebSocket. Дополнительные сведения см. в разделе [Socket.IO](https://socket.io).
@@ -47,24 +49,24 @@ GET /sites/{siteId}/lists/{listId}/drive/root/subscriptions/socketIo
 ### <a name="request"></a>Запрос
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "drive_root_subscriptions_socketIo" } -->
 ```msgraph-interactive
 GET /me/drive/root/subscriptions/socketIo
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/drive-root-subscriptions-socketio-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/drive-root-subscriptions-socketio-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/drive-root-subscriptions-socketio-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/drive-root-subscriptions-socketio-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

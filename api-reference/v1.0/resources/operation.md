@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 8088d704d5a075131d5ee1b2c3b9edf75785708b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: b7bf1daec731033bddab63ee0fa232fbf83fe3a2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035730"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534143"
 ---
 # <a name="operation-resource-type"></a>Тип ресурса Operation
+
+Пространство имен: microsoft.graph
 
 Состояние длительной операции.
 
@@ -39,8 +41,8 @@ ms.locfileid: "36035730"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |Время начала операции.|
-|Ластактиондатетиме| DateTimeOffset |Время последнего действия операции.|
-|status|Оператионстатус|Текущее состояние операции: `notStarted`, `running`,, `completed``failed` |
+|ластактиондатетиме| DateTimeOffset |Время последнего действия операции.|
+|status|оператионстатус|Текущее состояние операции: `notStarted`, `running`,, `completed``failed` |
 
 <!-- uuid: 13fa92b1-3b41-498b-aab1-f943464a124f
 2018-03-30 10:29:30 UTC -->

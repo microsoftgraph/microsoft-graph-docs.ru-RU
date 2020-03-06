@@ -5,14 +5,16 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 2eec5e11e22c6c9724ddb3935166b05ad8a1f38c
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: a05839eaa7c9c41392fcc2dbe91c415cb3d69600
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35975860"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42510636"
 ---
 # <a name="range-intersection"></a>Range: Intersection
+
+Пространство имен: microsoft.graph
 
 Возвращает объект диапазона, представляющий собой прямоугольное пересечение заданных диапазонов.
 ## <a name="permissions"></a>Разрешения
@@ -38,7 +40,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/intersection
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -69,7 +71,7 @@ Content-length: 42
 ```
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: db660e457473e228d69e105ce85a03537f79df9d
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d8cd6839991e16c5b8517d8ce3630fe81862cd1b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36014412"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42516789"
 ---
 # <a name="update-icon"></a>Обновление значка
+
+Пространство имен: microsoft.graph
 
 Обновление свойств объекта значка.
 ## <a name="permissions"></a>Разрешения
@@ -36,13 +38,13 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |index|int|Представляет собой индекс значка данного набора.|
-|set|string|Представляет набор, в который входит значок. Возможные значения: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags` `ThreeTrafficLights1` `ThreeTrafficLights2` `ThreeSigns` `FourTrafficLights` `FiveArrows` `FiveArrowsGray` `FiveRating` `FiveQuarters` `ThreeStars` `FourRedToBlack` `FourRating`,,,,,,,,,,,,,,,,,,,,,, `ThreeSymbols` `ThreeSymbols2` `FourArrows` `FourArrowsGray` , `ThreeTriangles`, `FiveBoxes`.|
+|set|string|Представляет набор, в который входит значок. Возможные значения `Invalid`:, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags` `ThreeTrafficLights1` `ThreeTrafficLights2` `ThreeSigns`,,,, `ThreeSymbols`, `ThreeSymbols2` `FourArrows` `FourArrowsGray` `FourRedToBlack`,,,,,, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles`, `FiveBoxes`,,,,,.|
 
 ## <a name="response"></a>Отклик
 
@@ -65,7 +67,7 @@ Content-length: 39
 }
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

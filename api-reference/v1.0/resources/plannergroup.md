@@ -5,14 +5,16 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 65d0e81eede4f5edf75a43eaa662e9c044674624
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d7b495575eafbea877df79a6b8a5fb83b0ad2060
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035240"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533998"
 ---
 # <a name="plannergroup-resource-type"></a>Тип ресурса Планнерграуп
+
+Пространство имен: microsoft.graph
 
 Ресурс **планнерграуп** предоставляет доступ к ресурсам планировщика для [группы](group.md). Он не содержит пригодных для использования свойств.
 
@@ -27,8 +29,8 @@ ms.locfileid: "36035240"
 |:---------------|:--------|:----------|
 |id|String| Только для чтения. Идентификатор объекта **планнерграуп**|
 
-## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |планирует|Коллекция объектов [plannerPlan](plannerplan.md)| Только для чтения. Допускается значение null. Возвращает [планов](plannerplan.md) , принадлежащий группе.|
 

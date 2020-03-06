@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: d5950fe533150fe41072c339f65c8757897255ba
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: abeb98f2db49ce7fde14e9360b1647ecf4b93acb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032769"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531706"
 ---
 # <a name="daylighttimezoneoffset-resource-type"></a>Тип ресурса daylightTimeZoneOffset
+
+Пространство имен: microsoft.graph
 
 Определяет, когда в часовом поясе осуществляется переход со стандартного времени на летнее.
 

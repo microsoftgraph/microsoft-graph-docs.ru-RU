@@ -5,14 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1e4f5ce3867be2bc7109ae3069e7737ee6be2498
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 29cde581de207637fd0a296b2ba1b20d3e04ef44
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40865176"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42509323"
 ---
 # <a name="publish-apps-to-your-organizations-app-catalog"></a>Публикация приложений в каталоге приложений Организации
+
+Пространство имен: microsoft.graph
 
 
 
@@ -29,7 +31,7 @@ ms.locfileid: "40865176"
 |:----------------------------------     |:-------------|
 | Делегированные (рабочая или учебная учетная запись)     | AppCatalog.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается|
-| Приложение                            | Не поддерживается|
+| Для приложений                            | Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -44,13 +46,13 @@ POST /appCatalogs/teamsApps
 | Авторизация | Bearer {токен}. Обязательный.  |
 | Content-Type  | приложение/ZIP-индекс |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Основной текст запроса
 
 Полезные данные манифеста ZIP Teams.
 Для ZIP-файла приложения Teams [в разделе Create a App Package](/microsoftteams/platform/concepts/apps/apps-package).
 Вы не можете создать приложение для Организации с таким же ИДЕНТИФИКАТОРом манифеста, что и у другого приложения в этой Организации.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [теамскаталогапп](../resources/teamsapp.md) .
 

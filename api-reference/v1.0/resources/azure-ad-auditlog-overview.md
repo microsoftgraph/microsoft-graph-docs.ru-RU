@@ -5,14 +5,16 @@ localization_priority: Priority
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 7c91aea96c93065a469b64bb3088540928e2e1d3
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0391d250d109731da43fc86f5b67c50dadc52373
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033077"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532018"
 ---
 # <a name="azure-ad-audit-log-api-overview"></a>Обзор API журнала аудита Azure AD
+
+Пространство имен: microsoft.graph
 
 Azure Active Directory (Azure AD) отслеживает действия пользователя, регистрирует показатели входа и создает отчеты журнала аудита, помогающие понять, как пользователи переходят к службам Azure AD и используют их. Чтобы анализировать данные, лежащие в основе этих отчетов, и создавать настраиваемые решения в соответствии с конкретными требованиями организации, используйте API Microsoft Graph в Azure AD.
 

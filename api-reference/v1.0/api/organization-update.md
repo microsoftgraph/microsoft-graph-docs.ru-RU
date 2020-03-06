@@ -5,16 +5,18 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0208e930b934cf0edb635cdd88f131a4d8f63cbf
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 1252db4f457bd783fd52998187127a832839cc93
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36309455"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511224"
 ---
 # <a name="update-organization"></a>Обновление организации
 
-Обновление свойств объекта organization, для которого выполнена проверка подлинности. В этом случае `organization` определяется как коллекция только одной записи, поэтому ее **идентификатор** должен быть указан в запросе.  **Идентификатор** также называется **tenantId** Организации.
+Пространство имен: microsoft.graph
+
+Обновите свойства организации, которая прошла проверку подлинности. В этом случае `organization` определяется как коллекция только одной записи, поэтому ее **идентификатор** должен быть указан в запросе.  **Идентификатор** также называется **tenantId** Организации.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,7 +26,7 @@ ms.locfileid: "36309455"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Организация. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Организация. ReadWrite. ALL |
+|Для приложений | Organization.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +49,7 @@ PATCH /organization/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|marketingNotificationEmails|Коллекция строк|                                        **Примечание.** Значение NULL не допускается.            |
+|marketingNotificationEmails|Коллекция String|                                        **Примечание.** Значение NULL не допускается.            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|Профиль конфиденциальности организации (заданные свойства statementUrl и contactEmail).            |
 |securityComplianceNotificationMails|Коллекция String||
 |securityComplianceNotificationPhones|Коллекция String||
@@ -62,7 +64,7 @@ PATCH /organization/{id}
 ### <a name="request"></a>Запрос
 
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_organization"
@@ -85,19 +87,19 @@ Content-length: 411
   "technicalNotificationMails" : ["tech@contoso.com"]
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-organization-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-organization-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Цель — C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-organization-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-organization-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

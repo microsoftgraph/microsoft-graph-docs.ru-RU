@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2bd875c4824296c1b5ccfc6bd3969010a00b4f3b
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: 2cbbd02b3fcbb3653e1cc3a9adeffc18865894cb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38303106"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517448"
 ---
 # <a name="update-educationschool-properties"></a>Обновление свойств educationSchool
+
+Пространство имен: microsoft.graph
 
 Обновление свойств объекта school.
 
@@ -48,13 +50,13 @@ PATCH /education/schools/{id}
 | :------------------ | :------------------------------------------------- | :--------------------------------- |
 | displayName         | Строка                                             | Отображаемое имя школы         |
 | description         | String                                             | Описание школы          |
-| principalEmail      | String                                             | Адрес электронной почты директора     |
-| principalName       | String                                             | Имя директора              |
-| externalPrincipalId | String                                             | Идентификатор директора в системе синхронизации. |
-| highestGrade        | String                                             | Самый старший класс.              |
-| lowestGrade         | String                                             | Самый младший класс.               |
-| schoolNumber        | String                                             | Номер школы.                     |
-| externalId          | String                                             | Идентификатор учебного заведения в системе синхронизации.    |
+| principalEmail      | Строка                                             | Адрес электронной почты директора     |
+| principalName       | Строка                                             | Имя директора              |
+| externalPrincipalId | Строка                                             | Идентификатор директора в системе синхронизации. |
+| highestGrade        | Строка                                             | Самый старший класс.              |
+| lowestGrade         | Строка                                             | Самый младший класс.               |
+| schoolNumber        | Строка                                             | Номер школы.                     |
+| externalId          | Строка                                             | Идентификатор учебного заведения в системе синхронизации.    |
 | phone               | String                                             | Номер телефона учебного заведения.            |
 | address             | [physicalAddress](../resources/physicaladdress.md) | Адрес учебного заведения.             |
 | createdBy           | [identitySet](../resources/identityset.md)         | Объект, который создал учебное заведение.     |
@@ -69,7 +71,7 @@ PATCH /education/schools/{id}
 
 Ниже приведен пример запроса.
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 
 <!-- {
   "blockType": "request",
@@ -86,19 +88,19 @@ Content-length: 292
 }
 ```
 
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationschool-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-educationschool-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationschool-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javatabjava"></a>[Java](#tab/java)
+# <a name="java"></a>[Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/update-educationschool-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

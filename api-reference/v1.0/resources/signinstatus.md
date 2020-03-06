@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4ea1daabd57724c789dfb690321e2f485ded225d
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 8c7880eb89aa4147baa7d8b0bda3aa80d1628bbb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40863787"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533709"
 ---
 # <a name="signinstatus-resource-type"></a>Тип ресурса Сигнинстатус
+
+Пространство имен: microsoft.graph
 
 Предоставляет состояние входа (успешный или неудачный) входа.
 
@@ -20,7 +22,7 @@ ms.locfileid: "40863787"
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|additionalDetails|String|Предоставляет дополнительные сведения об активности входа|
+|additionalDetails|Строка|Предоставляет дополнительные сведения об активности входа|
 |errorCode|Int32|Предоставляет код ошибки 5 6digit, который создается при сбое входа. Ознакомьтесь со [списком кодов и сообщений об ошибках](/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).|
 |failureReason|String|Содержит сообщение об ошибке или причину сбоя для соответствующего действия при входе. Ознакомьтесь со [списком кодов и сообщений об ошибках](/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).|
 

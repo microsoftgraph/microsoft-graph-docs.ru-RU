@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c048396d54383c84606cc0d903c17b76043ca5ab
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 99a736b6f8798ec21664c43bccfc172f19c2ac16
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36016554"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42517855"
 ---
 # <a name="create-domain"></a>Создание домена
+
+Пространство имен: microsoft.graph
 
 Добавление домена в клиент.
 
@@ -41,7 +43,7 @@ POST /domains
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса укажите представление JSON объекта [domain](../resources/domain.md).
 
 > Тело запроса содержит свойство id для нового домена. id — это единственное свойство, которое можно указать, и оно является обязательным. Значение свойства id — полное доменное имя, которое необходимо создать.

@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: da72ca2f8147ce09ccacaf9b374c0fbd99dce17f
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 913b782289c821536a7bc92e2d3f4e2f68a87ef7
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37357201"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530341"
 ---
 # <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>тип перечисления Виндовсстартменуапплиствисибилититипе
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+Пространство имен: microsoft.graph
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Тип отображения списка приложений меню "Пуск".
 
@@ -22,9 +24,9 @@ ms.locfileid: "37357201"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Определено пользователем. Значение по умолчанию.|
-|свертываются|1,1|Свертывание списка приложений в меню "Пуск".|
-|удалить|2|Полностью удаляет список приложений из меню "Пуск".|
-|дисаблесеттингсапп|SP4|Отключает соответствующий переключатель (сворачивать или удалить) в приложении "Параметры".|
+|свертываются|1 |Свертывание списка приложений в меню "Пуск".|
+|удалить|2 |Полностью удаляет список приложений из меню "Пуск".|
+|дисаблесеттингсапп|4 |Отключает соответствующий переключатель (сворачивать или удалить) в приложении "Параметры".|
 
 
 

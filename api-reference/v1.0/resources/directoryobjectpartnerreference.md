@@ -5,14 +5,16 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7b8fb49ac74d7f1a603f5f0b74d47751242ae01a
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 2f15edcbdc3b78b3565548a740058728c4996770
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36029472"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531640"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>Тип ресурса Директорйобжектпартнерреференце
+
+Пространство имен: microsoft.graph
 
 Представляет ссылку на объект каталога в партнерской организации. Наследуется от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0).
 
@@ -22,8 +24,8 @@ ms.locfileid: "36029472"
 |:---------------|:--------|:----------|
 |description|String| Описание возвращаемого объекта. Только для чтения. |
 |displayName|Строка| Имя возвращаемого объекта каталога, например Group или Application. Только для чтения. |
-|Екстерналпартнертенантид|GUID| Идентификатор клиента для партнерского клиента. Только для чтения. |
-|id|String| Уникальный идентификатор ресурса. Наследуется от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0). Только для чтения. |
+|екстерналпартнертенантид|GUID| Идентификатор клиента для партнерского клиента. Только для чтения. |
+|id|Строка| Уникальный идентификатор ресурса. Наследуется от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0). Только для чтения. |
 |objectType|String| Тип упоминаемого объекта в партнерской клиенте. Только для чтения. |
 
 ## <a name="json-representation"></a>Представление JSON

@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: fcf6fd60d6d4e601d5e0b5c5fcd3aab33b8f77c1
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 97093e06872583a905276188f2a610385a5da42e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37359322"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530747"
 ---
 # <a name="edgecookiepolicy-enum-type"></a>тип перечисления Еджекукиеполици
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+Пространство имен: microsoft.graph
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Возможные значения, указывающие, какие файлы cookie разрешено использовать в Microsoft Edge.
 
@@ -22,9 +24,9 @@ ms.locfileid: "37359322"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Разрешить пользователю устанавливать.|
-|разрешить|1,1|Разрешить.|
-|блокксирдпарти|2|Блокировать только сторонние файлы cookie.|
-|блоккалл|4|Блокировать все файлы cookie.|
+|разрешить|1 |Разрешить.|
+|блокксирдпарти|2 |Блокировать только сторонние файлы cookie.|
+|блоккалл|3 |Блокировать все файлы cookie.|
 
 
 

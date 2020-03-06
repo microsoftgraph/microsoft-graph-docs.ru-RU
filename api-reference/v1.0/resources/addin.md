@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: 3671ad561fde44aac90d20284c7acbfedba6b0c3
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: b4729d8291611ece0218bd00e059e9f7ee6b4d59
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40863937"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532134"
 ---
 # <a name="addin-resource-type"></a>Тип ресурса addIn
+
+Пространство имен: microsoft.graph
 
 Определяет пользовательское поведение, которое служба может использовать для вызова приложения в определенных контекстах. Например, приложения, которые могут визуализировать файловые потоки, [могут настраивать надстройки](/onedrive/developer/file-handlers/?view=odsp-graph-online) для своей функции "филехандлер". Это позволит таким службам, как Office 365, вызывать приложение в контексте документов, над которыми работает пользователь.
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: azure-ad
 doc_type: resourcePageType
-ms.openlocfilehash: 0c5375ea3e188d6023e3588531e07877f6de38ee
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 13d377f05650f50f9f87f618ca1c9c07d1da70ee
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36036101"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534219"
 ---
 # <a name="modifiedproperty-resource-type"></a>Тип ресурса Модифиедпроперти
+
+Пространство имен: microsoft.graph
 
 Указывает все свойства в ресурсе Azure AD, которые были изменены, включая старые и новые значения.
 
@@ -20,9 +22,9 @@ ms.locfileid: "36036101"
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|String|Указывает имя свойства целевого атрибута, которое было изменено.|
+|displayName|Строка|Указывает имя свойства целевого атрибута, которое было изменено.|
 |newValue|String|Указывает обновленное значение для правильной работы.|
-|oldValue|String|Указывает предыдущее значение свойства (перед обновлением).|
+|oldValue|Строка|Указывает предыдущее значение свойства (перед обновлением).|
 
 ## <a name="json-representation"></a>Представление JSON
 

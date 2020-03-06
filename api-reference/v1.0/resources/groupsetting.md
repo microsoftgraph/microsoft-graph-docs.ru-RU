@@ -5,14 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c85b062e955fc15f83728813427f2de5579e297e
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: dabede2f21d7ed81bd32eee084e044c00382c447
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36030242"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532919"
 ---
 # <a name="groupsetting-resource-type"></a>Тип ресурса groupSetting
+
+Пространство имен: microsoft.graph
 
 Параметры группы, такие как заблокированные списки слов для отображаемых имен группы или, могут ли гостевые пользователи быть владельцами групп.
 
@@ -34,10 +36,10 @@ ms.locfileid: "36030242"
 |:---------------|:--------|:----------|
 |displayName|Строка| Отображаемое имя группы параметров, поступающих из связанного шаблона. |
 |id|String| Уникальный идентификатор для этих параметров. Только для чтения. |
-|templateId|String| Уникальный идентификатор шаблона, который используется для создания этой группы параметров. Только для чтения. |
+|templateId|Строка| Уникальный идентификатор шаблона, который используется для создания этой группы параметров. Только для чтения. |
 |values|Коллекция [settingValue](settingvalue.md)| Коллекция пар "имя-значение". Должен содержать и задавать все параметры, определенные в шаблоне. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 

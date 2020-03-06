@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 87cb6d617d719575705bdfb9379f4b5a87ddfe57
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: e63dd8b810feba508addccc6e30a30993b1e1ccf
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "35976602"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42511434"
 ---
 # <a name="create-multi-value-extended-property"></a>Создание расширенного свойства с несколькими значениями
+
+Пространство имен: microsoft.graph
 
 Создание одного или нескольких многозначных расширенных свойств в новом или существующем экземпляре ресурса. 
 
@@ -20,7 +22,7 @@ ms.locfileid: "35976602"
 
 - [calendar](../resources/calendar.md);
 - [contact](../resources/contact.md);
-- [contactFolder](../resources/contactfolder.md). 
+- [contactFolder](../resources/contactfolder.md) 
 - [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
@@ -40,7 +42,7 @@ ms.locfileid: "35976602"
 |:-----|:-----|:-----|:-----|
 | [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [contactFolder](../resources/contactfolder.md). | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
+| [contactFolder](../resources/contactfolder.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite |  Calendars.ReadWrite|
 | [calendar](../resources/calendar.md) для групп; | Group.ReadWrite.All | Не поддерживается | Не поддерживается |
 | group [event](../resources/event.md); | Group.ReadWrite.All | Не поддерживается | Не поддерживается |
@@ -120,17 +122,17 @@ PATCH /groups/{id}/events/{id}
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Предоставьте тело в формате JSON для каждого объекта [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) в свойстве коллекции **multiValueExtendedProperties** для экземпляра ресурса.
 
 |Свойство|Тип|Описание|
 |:-----|:-----|:-----|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)| Массив из одного или нескольких многозначных расширенных свойств. |
-|id|String|Чтобы идентифицировать свойства в коллекции **multiValueExtendedProperties**, укажите этот параметр для каждого из них. Свойство должно относиться к одному из поддерживаемых форматов. Дополнительные сведения см. в статье [Обзор расширенных свойств Outlook](../resources/extended-properties-overview.md). Обязательный параметр.|
+|id|Строка|Чтобы идентифицировать свойства в коллекции **multiValueExtendedProperties**, укажите этот параметр для каждого из них. Свойство должно относиться к одному из поддерживаемых форматов. Дополнительные сведения см. в статье [Обзор расширенных свойств Outlook](../resources/extended-properties-overview.md). Обязательный параметр.|
 |значение|string|Укажите значение для каждого свойства в коллекции **multiValueExtendedProperties**. Обязательный параметр.|
 
-При создании расширенного свойства в _новом_ экземпляре ресурса, в дополнение к новой коллекции **multiValueExtendedProperties** , необходимо также предоставить представление этого экземпляра ресурса в формате JSON ( [сообщение](../resources/message.md), [mailFolder ](../resources/mailfolder.md), [событие](../resources/event.md)и т. д.).
+При создании расширенного свойства в _новом_ экземпляре ресурса в дополнение к новой коллекции **multiValueExtendedProperties** предоставьте представление этого экземпляра ресурса в формате JSON (то есть [сообщение](../resources/message.md), [mailFolder](../resources/mailfolder.md), [событие](../resources/event.md)и т. д.).
 
 
 ## <a name="response"></a>Ответ
@@ -141,7 +143,7 @@ PATCH /groups/{id}/events/{id}
 В результате успешной операции создания в существующем экземпляре ресурса возвращается код `200 OK`. 
 
 
-#### <a name="response-body"></a>Текст отклика
+#### <a name="response-body"></a>Текст ответа
 
 При создании расширенного свойства в поддерживаемом ресурсе, отличном от [post для групп](../resources/post.md), отклик включает только новый или существующий экземпляр (он будет без нового расширенного свойства). Чтобы просмотреть только что созданное расширенное свойство, [разверните экземпляр с этим свойством](../api/multivaluelegacyextendedproperty-get.md).
 

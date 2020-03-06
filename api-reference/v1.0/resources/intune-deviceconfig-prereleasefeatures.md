@@ -5,16 +5,18 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: fa02678bcbed5111b8c9b67163e569a2f4b6fc1f
-ms.sourcegitcommit: bd5bb20856d4bffe93b2f77f131664849b602dbb
+ms.openlocfilehash: 92b2f8e438b0d0aea50f7268e4d19bfc0b6b0c82
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "37359861"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42530551"
 ---
 # <a name="prereleasefeatures-enum-type"></a>тип перечисления prereleaseFeatures
 
-> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+Пространство имен: microsoft.graph
+
+> **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Возможные значения для предварительных версий функций.
 
@@ -22,9 +24,9 @@ ms.locfileid: "37359861"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|сеттингсонли|1,1|Только функции предварительной версии.|
-|сеттингсандекспериментатионс|2|Параметры и эксперименты, которые предварительно выпускают функции.|
-|notAllowed|4|Функции предварительной версии не разрешены.|
+|сеттингсонли|1 |Только функции предварительной версии.|
+|сеттингсандекспериментатионс|2 |Параметры и эксперименты, которые предварительно выпускают функции.|
+|notAllowed|3 |Функции предварительной версии не разрешены.|
 
 
 
