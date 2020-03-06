@@ -12,19 +12,19 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42502447"
 ---
-# <a name="educationassignmentrecipient-resource-type"></a><span data-ttu-id="871b5-104">Тип ресурса ЕдукатионассигнментреЦипиент</span><span class="sxs-lookup"><span data-stu-id="871b5-104">educationAssignmentRecipient resource type</span></span>
+# <a name="educationassignmentrecipient-resource-type"></a><span data-ttu-id="3fd36-104">Тип ресурса ЕдукатионассигнментреЦипиент</span><span class="sxs-lookup"><span data-stu-id="3fd36-104">educationAssignmentRecipient resource type</span></span>
 
-<span data-ttu-id="871b5-105">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="871b5-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3fd36-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3fd36-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="871b5-106">Используется в свойстве **назначений. ассигнто** .</span><span class="sxs-lookup"><span data-stu-id="871b5-106">Used within the **assignments.assignTo** property.</span></span> <span data-ttu-id="871b5-107">Этот суперкласс является абстрактным, и вы не можете задать это значение для свойства в назначениях.</span><span class="sxs-lookup"><span data-stu-id="871b5-107">This superclass is abstract and you cannot set the property in assignments to this value.</span></span> <span data-ttu-id="871b5-108">Этот суперкласс представляет, Кому назначено назначение при публикации назначения.</span><span class="sxs-lookup"><span data-stu-id="871b5-108">This superclass represents who the assignment should be assigned to when the assignment is published.</span></span>
+<span data-ttu-id="3fd36-106">Используется в свойстве **назначений. ассигнто** .</span><span class="sxs-lookup"><span data-stu-id="3fd36-106">Used within the **assignments.assignTo** property.</span></span> <span data-ttu-id="3fd36-107">Этот суперкласс является абстрактным, и вы не можете задать это значение для свойства в назначениях.</span><span class="sxs-lookup"><span data-stu-id="3fd36-107">This superclass is abstract and you cannot set the property in assignments to this value.</span></span> <span data-ttu-id="3fd36-108">Этот суперкласс представляет, Кому назначено назначение при публикации назначения.</span><span class="sxs-lookup"><span data-stu-id="3fd36-108">This superclass represents who the assignment should be assigned to when the assignment is published.</span></span>
 
 
-<span data-ttu-id="871b5-109">Ресурс [едукатионассигнментклассреЦипиент](educationassignmentclassrecipient.md) является подклассом этого суперкласса.</span><span class="sxs-lookup"><span data-stu-id="871b5-109">The [educationAssignmentClassRecipient](educationassignmentclassrecipient.md) resource is a subclass of this superclass.</span></span>
+<span data-ttu-id="3fd36-109">Ресурс [едукатионассигнментклассреЦипиент](educationassignmentclassrecipient.md) является подклассом этого суперкласса.</span><span class="sxs-lookup"><span data-stu-id="3fd36-109">The [educationAssignmentClassRecipient](educationassignmentclassrecipient.md) resource is a subclass of this superclass.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="871b5-110">Свойства</span><span class="sxs-lookup"><span data-stu-id="871b5-110">Properties</span></span>
-<span data-ttu-id="871b5-111">Нет.</span><span class="sxs-lookup"><span data-stu-id="871b5-111">None.</span></span>
+## <a name="properties"></a><span data-ttu-id="3fd36-110">Свойства</span><span class="sxs-lookup"><span data-stu-id="3fd36-110">Properties</span></span>
+<span data-ttu-id="3fd36-111">Нет.</span><span class="sxs-lookup"><span data-stu-id="3fd36-111">None.</span></span>
 
 <!-- {
   "blockType": "resource",

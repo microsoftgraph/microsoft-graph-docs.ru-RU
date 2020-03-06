@@ -12,63 +12,63 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/05/2020
 ms.locfileid: "42454985"
 ---
-# <a name="create-programcontrol"></a><span data-ttu-id="0d616-104">Создание Програмконтрол</span><span class="sxs-lookup"><span data-stu-id="0d616-104">Create programControl</span></span>
+# <a name="create-programcontrol"></a><span data-ttu-id="14088-104">Создание Програмконтрол</span><span class="sxs-lookup"><span data-stu-id="14088-104">Create programControl</span></span>
 
-<span data-ttu-id="0d616-105">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="0d616-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="14088-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="14088-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0d616-106">В средстве проверки [доступа](../resources/accessreviews-root.md) Azure AD создайте новый объект [програмконтрол](../resources/programcontrol.md) .</span><span class="sxs-lookup"><span data-stu-id="0d616-106">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, create a new [programControl](../resources/programcontrol.md) object.</span></span>  <span data-ttu-id="0d616-107">При этом будет связана проверка доступа к программе.</span><span class="sxs-lookup"><span data-stu-id="0d616-107">This links an access review to a program.</span></span>
+<span data-ttu-id="14088-106">В средстве проверки [доступа](../resources/accessreviews-root.md) Azure AD создайте новый объект [програмконтрол](../resources/programcontrol.md) .</span><span class="sxs-lookup"><span data-stu-id="14088-106">In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, create a new [programControl](../resources/programcontrol.md) object.</span></span>  <span data-ttu-id="14088-107">При этом будет связана проверка доступа к программе.</span><span class="sxs-lookup"><span data-stu-id="14088-107">This links an access review to a program.</span></span>
 
-<span data-ttu-id="0d616-108">Перед выполнением этого запроса вызывающий абонент должен был</span><span class="sxs-lookup"><span data-stu-id="0d616-108">Prior to making this request, the caller must have previously</span></span>
+<span data-ttu-id="14088-108">Перед выполнением этого запроса вызывающий абонент должен был</span><span class="sxs-lookup"><span data-stu-id="14088-108">Prior to making this request, the caller must have previously</span></span>
 
-- <span data-ttu-id="0d616-109">[созданная программа](program-create.md) или [получена программа](program-list.md)со значением `programId` , включаемым в запрос.</span><span class="sxs-lookup"><span data-stu-id="0d616-109">[created a program](program-create.md) or [retrieved a program](program-list.md), to have the value of `programId` to include in the request,</span></span>
-- <span data-ttu-id="0d616-110">[создана проверка доступа](accessreview-create.md) или [полученная проверка доступа](accessreview-get.md), для которой значение `controlId` должно быть включено в запрос, а</span><span class="sxs-lookup"><span data-stu-id="0d616-110">[created an access review](accessreview-create.md) or [retrieved an access review](accessreview-get.md), to have the value of `controlId` to include in the request, and</span></span>
-- <span data-ttu-id="0d616-111">[получен список типов программного управления](programcontroltype-list.md), чтобы включить в запрос значение `controlTypeId` , которое необходимо включить в запрос.</span><span class="sxs-lookup"><span data-stu-id="0d616-111">[retrieved the list of program control types](programcontroltype-list.md), to have the value of `controlTypeId` to include in the request.</span></span>
+- <span data-ttu-id="14088-109">[созданная программа](program-create.md) или [получена программа](program-list.md)со значением `programId` , включаемым в запрос.</span><span class="sxs-lookup"><span data-stu-id="14088-109">[created a program](program-create.md) or [retrieved a program](program-list.md), to have the value of `programId` to include in the request,</span></span>
+- <span data-ttu-id="14088-110">[создана проверка доступа](accessreview-create.md) или [полученная проверка доступа](accessreview-get.md), для которой значение `controlId` должно быть включено в запрос, а</span><span class="sxs-lookup"><span data-stu-id="14088-110">[created an access review](accessreview-create.md) or [retrieved an access review](accessreview-get.md), to have the value of `controlId` to include in the request, and</span></span>
+- <span data-ttu-id="14088-111">[получен список типов программного управления](programcontroltype-list.md), чтобы включить в запрос значение `controlTypeId` , которое необходимо включить в запрос.</span><span class="sxs-lookup"><span data-stu-id="14088-111">[retrieved the list of program control types](programcontroltype-list.md), to have the value of `controlTypeId` to include in the request.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="0d616-112">Разрешения</span><span class="sxs-lookup"><span data-stu-id="0d616-112">Permissions</span></span>
-<span data-ttu-id="0d616-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0d616-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="14088-112">Разрешения</span><span class="sxs-lookup"><span data-stu-id="14088-112">Permissions</span></span>
+<span data-ttu-id="14088-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="14088-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0d616-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0d616-115">Permission type</span></span>                        | <span data-ttu-id="0d616-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="0d616-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="14088-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="14088-115">Permission type</span></span>                        | <span data-ttu-id="14088-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="14088-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="0d616-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0d616-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="0d616-118">ProgramControl.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0d616-118">ProgramControl.ReadWrite.All</span></span>  |
-|<span data-ttu-id="0d616-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0d616-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0d616-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0d616-120">Not supported.</span></span> |
-|<span data-ttu-id="0d616-121">Для приложений</span><span class="sxs-lookup"><span data-stu-id="0d616-121">Application</span></span>                            |  <span data-ttu-id="0d616-122">ProgramControl.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0d616-122">ProgramControl.ReadWrite.All</span></span>  |
+|<span data-ttu-id="14088-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="14088-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="14088-118">ProgramControl.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="14088-118">ProgramControl.ReadWrite.All</span></span>  |
+|<span data-ttu-id="14088-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="14088-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="14088-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="14088-120">Not supported.</span></span> |
+|<span data-ttu-id="14088-121">Для приложений</span><span class="sxs-lookup"><span data-stu-id="14088-121">Application</span></span>                            |  <span data-ttu-id="14088-122">ProgramControl.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="14088-122">ProgramControl.ReadWrite.All</span></span>  |
 
-<span data-ttu-id="0d616-123">Пользователь, вошедшего в систему, также должен находиться в роли каталога, который позволяет им создавать **програмконтрол**.</span><span class="sxs-lookup"><span data-stu-id="0d616-123">The signed in user must also be in a directory role that permits them to create a **programControl**.</span></span> 
+<span data-ttu-id="14088-123">Пользователь, вошедшего в систему, также должен находиться в роли каталога, который позволяет им создавать **програмконтрол**.</span><span class="sxs-lookup"><span data-stu-id="14088-123">The signed in user must also be in a directory role that permits them to create a **programControl**.</span></span> 
 
-## <a name="http-request"></a><span data-ttu-id="0d616-124">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0d616-124">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="14088-124">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="14088-124">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /programControls
 ```
-## <a name="request-headers"></a><span data-ttu-id="0d616-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0d616-125">Request headers</span></span>
-| <span data-ttu-id="0d616-126">Имя</span><span class="sxs-lookup"><span data-stu-id="0d616-126">Name</span></span>         | <span data-ttu-id="0d616-127">Тип</span><span class="sxs-lookup"><span data-stu-id="0d616-127">Type</span></span>        | <span data-ttu-id="0d616-128">Описание</span><span class="sxs-lookup"><span data-stu-id="0d616-128">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="14088-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="14088-125">Request headers</span></span>
+| <span data-ttu-id="14088-126">Имя</span><span class="sxs-lookup"><span data-stu-id="14088-126">Name</span></span>         | <span data-ttu-id="14088-127">Тип</span><span class="sxs-lookup"><span data-stu-id="14088-127">Type</span></span>        | <span data-ttu-id="14088-128">Описание</span><span class="sxs-lookup"><span data-stu-id="14088-128">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="0d616-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="0d616-129">Authorization</span></span> | <span data-ttu-id="0d616-130">string</span><span class="sxs-lookup"><span data-stu-id="0d616-130">string</span></span> | <span data-ttu-id="0d616-p104">Носитель \{токен\}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="0d616-p104">Bearer \{token\}. Required.</span></span> |
+| <span data-ttu-id="14088-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="14088-129">Authorization</span></span> | <span data-ttu-id="14088-130">string</span><span class="sxs-lookup"><span data-stu-id="14088-130">string</span></span> | <span data-ttu-id="14088-p104">Носитель \{токен\}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="14088-p104">Bearer \{token\}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="0d616-133">Основной текст запроса</span><span class="sxs-lookup"><span data-stu-id="0d616-133">Request body</span></span>
-<span data-ttu-id="0d616-134">В тексте запроса добавьте представление объекта [програмконтрол](../resources/programcontrol.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0d616-134">In the request body, supply a JSON representation of a [programControl](../resources/programcontrol.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="14088-133">Основной текст запроса</span><span class="sxs-lookup"><span data-stu-id="14088-133">Request body</span></span>
+<span data-ttu-id="14088-134">В тексте запроса добавьте представление объекта [програмконтрол](../resources/programcontrol.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="14088-134">In the request body, supply a JSON representation of a [programControl](../resources/programcontrol.md) object.</span></span>
 
-<span data-ttu-id="0d616-135">В следующей таблице приведены свойства, необходимые при создании программного элемента управления.</span><span class="sxs-lookup"><span data-stu-id="0d616-135">The following table shows the properties that are required when you create a program control.</span></span>
+<span data-ttu-id="14088-135">В следующей таблице приведены свойства, необходимые при создании программного элемента управления.</span><span class="sxs-lookup"><span data-stu-id="14088-135">The following table shows the properties that are required when you create a program control.</span></span>
 
-| <span data-ttu-id="0d616-136">Свойство</span><span class="sxs-lookup"><span data-stu-id="0d616-136">Property</span></span>     | <span data-ttu-id="0d616-137">Тип</span><span class="sxs-lookup"><span data-stu-id="0d616-137">Type</span></span>        | <span data-ttu-id="0d616-138">Описание</span><span class="sxs-lookup"><span data-stu-id="0d616-138">Description</span></span> |
+| <span data-ttu-id="14088-136">Свойство</span><span class="sxs-lookup"><span data-stu-id="14088-136">Property</span></span>     | <span data-ttu-id="14088-137">Тип</span><span class="sxs-lookup"><span data-stu-id="14088-137">Type</span></span>        | <span data-ttu-id="14088-138">Описание</span><span class="sxs-lookup"><span data-stu-id="14088-138">Description</span></span> |
 |:-------------|:------------|:------------|
-| `programId`              |`String`                | <span data-ttu-id="0d616-139">Програмид программы, которая будет являться частью этого элемента управления.</span><span class="sxs-lookup"><span data-stu-id="0d616-139">The programId of the program this control is going to become a part of.</span></span>                             |
-| `controlId`              |`String`                | <span data-ttu-id="0d616-140">ControlId элемента управления, в частности идентификатор проверки доступа.</span><span class="sxs-lookup"><span data-stu-id="0d616-140">The controlId of the control, in particular the identifier of an access review.</span></span>                                                |
-| `controlTypeId`          |`String`                | <span data-ttu-id="0d616-141">Програмконтролтипе определяет тип элемента управления программы, например элемент управления, который связывается с проверками гостевого доступа.</span><span class="sxs-lookup"><span data-stu-id="0d616-141">The programControlType identifies the type of program control - for example, a control linking to guest access reviews.</span></span> |
+| `programId`              |`String`                | <span data-ttu-id="14088-139">Програмид программы, которая будет являться частью этого элемента управления.</span><span class="sxs-lookup"><span data-stu-id="14088-139">The programId of the program this control is going to become a part of.</span></span>                             |
+| `controlId`              |`String`                | <span data-ttu-id="14088-140">ControlId элемента управления, в частности идентификатор проверки доступа.</span><span class="sxs-lookup"><span data-stu-id="14088-140">The controlId of the control, in particular the identifier of an access review.</span></span>                                                |
+| `controlTypeId`          |`String`                | <span data-ttu-id="14088-141">Програмконтролтипе определяет тип элемента управления программы, например элемент управления, который связывается с проверками гостевого доступа.</span><span class="sxs-lookup"><span data-stu-id="14088-141">The programControlType identifies the type of program control - for example, a control linking to guest access reviews.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="0d616-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="0d616-142">Response</span></span>
-<span data-ttu-id="0d616-143">В случае успешного выполнения этот метод возвращает `201, Created` код отклика и объект [програмконтрол](../resources/programcontrol.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="0d616-143">If successful, this method returns a `201, Created` response code and a [programControl](../resources/programcontrol.md) object in the response body.</span></span>
-
-
-## <a name="example"></a><span data-ttu-id="0d616-144">Пример</span><span class="sxs-lookup"><span data-stu-id="0d616-144">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="0d616-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="0d616-145">Request</span></span>
-<span data-ttu-id="0d616-146">В тексте запроса добавьте представление объекта [програмконтрол](../resources/programcontrol.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0d616-146">In the request body, supply a JSON representation of the [programControl](../resources/programcontrol.md) object.</span></span>
+## <a name="response"></a><span data-ttu-id="14088-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="14088-142">Response</span></span>
+<span data-ttu-id="14088-143">В случае успешного выполнения этот метод возвращает `201, Created` код отклика и объект [програмконтрол](../resources/programcontrol.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="14088-143">If successful, this method returns a `201, Created` response code and a [programControl](../resources/programcontrol.md) object in the response body.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="0d616-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="0d616-147">HTTP</span></span>](#tab/http)
+## <a name="example"></a><span data-ttu-id="14088-144">Пример</span><span class="sxs-lookup"><span data-stu-id="14088-144">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="14088-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="14088-145">Request</span></span>
+<span data-ttu-id="14088-146">В тексте запроса добавьте представление объекта [програмконтрол](../resources/programcontrol.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="14088-146">In the request body, supply a JSON representation of the [programControl](../resources/programcontrol.md) object.</span></span>
+
+
+# <a name="http"></a>[<span data-ttu-id="14088-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="14088-147">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_programControl_from_programControls"
@@ -83,23 +83,23 @@ Content-type: application/json
     "programId": "7e59d237-2fb0-4e5d-b7bb-d4f9f9129213"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="0d616-148">C#</span><span class="sxs-lookup"><span data-stu-id="0d616-148">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="14088-148">C#</span><span class="sxs-lookup"><span data-stu-id="14088-148">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-programcontrol-from-programcontrols-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="0d616-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0d616-149">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="14088-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="14088-149">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-programcontrol-from-programcontrols-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="0d616-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0d616-150">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="14088-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="14088-150">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-programcontrol-from-programcontrols-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="0d616-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="0d616-151">Response</span></span>
-><span data-ttu-id="0d616-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="0d616-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="14088-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="14088-151">Response</span></span>
+><span data-ttu-id="14088-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="14088-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -120,11 +120,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="0d616-154">См. также</span><span class="sxs-lookup"><span data-stu-id="0d616-154">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="14088-154">См. также</span><span class="sxs-lookup"><span data-stu-id="14088-154">See also</span></span>
 
-| <span data-ttu-id="0d616-155">Метод</span><span class="sxs-lookup"><span data-stu-id="0d616-155">Method</span></span>           | <span data-ttu-id="0d616-156">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="0d616-156">Return Type</span></span>    |<span data-ttu-id="0d616-157">Описание</span><span class="sxs-lookup"><span data-stu-id="0d616-157">Description</span></span>|
+| <span data-ttu-id="14088-155">Метод</span><span class="sxs-lookup"><span data-stu-id="14088-155">Method</span></span>           | <span data-ttu-id="14088-156">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="14088-156">Return Type</span></span>    |<span data-ttu-id="14088-157">Описание</span><span class="sxs-lookup"><span data-stu-id="14088-157">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="0d616-158">Список Програмконтролтипес</span><span class="sxs-lookup"><span data-stu-id="0d616-158">List programControlTypes</span></span>](../api/programcontroltype-list.md) | <span data-ttu-id="0d616-159">Коллекция [програмконтролтипе](../resources/programcontroltype.md)</span><span class="sxs-lookup"><span data-stu-id="0d616-159">[programControlType](../resources/programcontroltype.md) collection</span></span>| <span data-ttu-id="0d616-160">Список типов элементов управления программы.</span><span class="sxs-lookup"><span data-stu-id="0d616-160">List program control types.</span></span> |
+|[<span data-ttu-id="14088-158">Список Програмконтролтипес</span><span class="sxs-lookup"><span data-stu-id="14088-158">List programControlTypes</span></span>](../api/programcontroltype-list.md) | <span data-ttu-id="14088-159">Коллекция [програмконтролтипе](../resources/programcontroltype.md)</span><span class="sxs-lookup"><span data-stu-id="14088-159">[programControlType](../resources/programcontroltype.md) collection</span></span>| <span data-ttu-id="14088-160">Список типов элементов управления программы.</span><span class="sxs-lookup"><span data-stu-id="14088-160">List program control types.</span></span> |
 
 
 <!--
