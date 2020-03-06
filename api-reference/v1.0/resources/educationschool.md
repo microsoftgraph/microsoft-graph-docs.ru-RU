@@ -5,14 +5,16 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: d7cc20b01b35f678b20e18e21dcb099a89982ab9
-ms.sourcegitcommit: 0dcabe677927c259c2ddcefd0d5e2a2aef065e8b
+ms.openlocfilehash: 407f29c7d8f9468c5e9b1da1badad294cb655121
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "37553910"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531510"
 ---
 # <a name="educationschool-resource-type"></a>Тип ресурса educationSchool
+
+Пространство имен: microsoft.graph
 
 Ресурс представляет учебное заведение и используется для управления классами, преподавателями и учащимися данного учебного заведения.  
 
@@ -34,17 +36,17 @@ ms.locfileid: "37553910"
 
 | Свойство            | Тип                                  | Описание                                                                        |
 | :------------------ | :------------------------------------ | :--------------------------------------------------------------------------------- |
-| id                  | String                                | GUID этого учебного заведения.                                                               |
+| id                  | Строка                                | GUID этого учебного заведения.                                                               |
 | displayName         | Строка                                | Отображаемое имя учебного заведения.                                                        |
 | description         | Строка                                | Описание учебного заведения.                                                         |
 | status              | string                                | Только для чтения. Допустимые значения: `inactive`, `active`, `expired`, `deleteable`. |
 | externalSource      | едукатионекстерналсаурце               | Только для чтения.  Допустимые значения: `sis`, `manual`, `unknownFutureValue`.        |
-| principalEmail      | String                                | Адрес электронной почты директора.                                                    |
-| principalName       | String                                | Имя директора.                                                             |
-| externalPrincipalId | String                                | Идентификатор директора в системе синхронизации.                                                 |
-| highestGrade        | String                                | Самый старший класс.                                                              |
-| lowestGrade         | String                                | Самый младший класс.                                                               |
-| schoolNumber        | String                                | Номер школы.                                                                     |
+| principalEmail      | Строка                                | Адрес электронной почты директора.                                                    |
+| principalName       | Строка                                | Имя директора.                                                             |
+| externalPrincipalId | Строка                                | Идентификатор директора в системе синхронизации.                                                 |
+| highestGrade        | Строка                                | Самый старший класс.                                                              |
+| lowestGrade         | Строка                                | Самый младший класс.                                                               |
+| schoolNumber        | Строка                                | Номер школы.                                                                     |
 | externalId          | String                                | Идентификатор учебного заведения в системе синхронизации.                                                    |
 | phone               | String                                | Номер телефона учебного заведения.                                                            |
 | address             | [physicalAddress](physicaladdress.md) | Адрес учебного заведения.                                                             |

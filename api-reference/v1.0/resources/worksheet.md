@@ -5,14 +5,16 @@ localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: ded792f69573b4434e4157d7c665471683273169
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d9edb4e0ad13f7caf94fd4308f606fccc14861aa
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033322"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533365"
 ---
 # <a name="worksheet-resource-type"></a>Тип ресурса Worksheet
+
+Пространство имен: microsoft.graph
 
 Лист Excel представляет собой сетку ячеек. Он может содержать данные, таблицы, диаграммы и т. д.
 
@@ -45,7 +47,7 @@ ms.locfileid: "36033322"
 |visibility|string|Видимость листа. Допустимые значения: `Visible`, `Hidden`, `VeryHidden`.|
 
 ## <a name="relationships"></a>Отношения
-| Отношение | Тип   |Описание|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |charts|Коллекция [WorkbookChart](chart.md)|Возвращает коллекцию диаграмм, имеющихся на листе. Только для чтения.|
 |names|Коллекция [WorkbookNamedItem](nameditem.md)|Возвращает коллекцию имен, связанных с листом. Только для чтения.|

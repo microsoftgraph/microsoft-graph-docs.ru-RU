@@ -5,14 +5,16 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 5ecf1aeb0014ec8ead97fc7d1b01d366c9565291
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d01f3116f6a6a12753384ec41c2cee609b9b7f8a
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36035989"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534182"
 ---
 # <a name="office-365-activations-reports"></a>Отчеты об активации Office 365
+
+Пространство имен: microsoft.graph
 
 Эти отчеты позволяют узнать, кто из пользователей активировал подписку на Office 365 по крайней мере на одном устройстве. Они содержат разбивку по активациям подписок на Office 365 профессиональный плюс, Project и Visio Pro для Office 365, а также разбивку по активациям на компьютерах и мобильных устройствах. Эти отчеты помогут вам выявить пользователей, которым, возможно, нужна помощь с активацией подписки на Office.
 
@@ -23,4 +25,4 @@ ms.locfileid: "36035989"
 | :--------------------------------------- | :---------- | :--------------------------------------- |
 | [Получение сведений о пользователях](../api/reportroot-getoffice365activationsuserdetail.md) | Stream      | Получите сведения о пользователях, которые активировали Office 365. |
 | [Получение количества активаций](../api/reportroot-getoffice365activationcounts.md) | Поток      | Получите сведения о количестве активаций Office 365 на компьютерах и мобильных устройствах. |
-| [Получение количества пользователей](../api/reportroot-getoffice365activationsusercounts.md) | Поток      | Узнайте, сколько пользователей активировали подписку на Office на компьютере или мобильном устройстве. |
+| [Получение количества пользователей](../api/reportroot-getoffice365activationsusercounts.md) | Stream      | Узнайте, сколько пользователей активировали подписку на Office на компьютере или мобильном устройстве. |

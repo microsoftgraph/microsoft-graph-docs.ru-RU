@@ -5,14 +5,16 @@ localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 9fc47940b8a9f249e66092ee016453a9eb5152ca
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: ef62f6df73c24f9e6b3884921865c28ea152a3dc
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032860"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533038"
 ---
 #  <a name="complianceinformation-resource-type"></a>Тип ресурса Комплианцеинформатион
+
+Пространство имен: microsoft.graph
 
 Содержит данные соответствия требованиям, связанные с контролем безопасного рейтинга.
 
@@ -20,8 +22,8 @@ ms.locfileid: "36032860"
 
 |Свойство |Тип |Описание |
 |:--|:--|:--|
-|Цертификатионнаме|String| Имя сертификации соответствия (например, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171). |
-|Цертификатионконтролс|Коллекция [цертификатионконтрол](certificationcontrol.md)|Коллекция элементов управления сертификацией, связанных с сертификацией|
+|цертификатионнаме|Строка| Имя сертификации соответствия (например, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171). |
+|цертификатионконтролс|Коллекция [цертификатионконтрол](certificationcontrol.md)|Коллекция элементов управления сертификацией, связанных с сертификацией|
 
 ## <a name="json-representation"></a>Представление JSON
 

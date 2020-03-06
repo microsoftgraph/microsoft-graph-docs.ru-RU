@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 7b82170b606334c6db8fa07c3f9b2f95f16c0082
-ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
+ms.openlocfilehash: 531413ee2a9c322af99a98ecf2270faa50ccb0e0
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40951967"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534158"
 ---
 # <a name="onlinemeeting-resource-type"></a>Тип ресурса Онлинемитинг
+
+Пространство имен: microsoft.graph
 
 Содержит сведения о собрании, включая URL-адрес, используемый для присоединения к собранию, список участников и описание.
 
@@ -34,10 +36,10 @@ ms.locfileid: "40951967"
 | startDateTime             | DateTime                                               | Время начала собрания в формате UTC. |
 | endDateTime               | DateTime                                               | Время окончания собрания в формате UTC. |
 | id                        | Строка                                                 | ИДЕНТИФИКАТОР по умолчанию, связанный с собранием по сети. Только для чтения. |
-| жоинвебурл                | String                                                 | URL-адрес присоединения к собранию по сети. Только для чтения.|
+| жоинвебурл                | Строка                                                 | URL-адрес присоединения к собранию по сети. Только для чтения.|
 | participants              | [митингпартиЦипантс](meetingparticipants.md)          | Участники, связанные с собранием по сети.  Сюда входят Организатор и участники. |
 | subject                   | String                                                 | Тема собрания по сети. |
-| видеотелеконференцеид     | String                                                 | Идентификатор видеоконференций для видеоконференций. Только для чтения. |
+| видеотелеконференцеид     | Строка                                                 | Идентификатор видеоконференций для видеоконференций. Только для чтения. |
 
 
 ## <a name="json-representation"></a>Представление JSON

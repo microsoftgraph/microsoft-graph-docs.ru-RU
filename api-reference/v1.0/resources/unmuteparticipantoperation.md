@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 1066861ab084f42c6652fab63a0199161bf9cd5e
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: d1365ea90f2c6cd1d6670204d40da4ea1fd84591
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40912960"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533437"
 ---
 # <a name="unmuteparticipantoperation-resource-type"></a>Тип ресурса УнмутепартиЦипантоператион
+
+Пространство имен: microsoft.graph
 
 Описывает формат ответа для функции "без звука".
 
@@ -20,7 +22,7 @@ ms.locfileid: "40912960"
 
 | Свойство                       | Тип                        | Описание                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Контекст                  | String                      | Уникальная строка контекста клиента. Может содержать до 256 символов.                                                                               |
+| Контекст                  | Строка                      | Уникальная строка контекста клиента. Может содержать до 256 символов.                                                                               |
 | id                             | Строка                      | ИДЕНТИФИКАТОР операции сервера. Только для чтения.                                                                                            |
 | resultInfo                     | [resultInfo](resultinfo.md) | Сведения о результате.  Только для чтения.                                                                                            |
 | status                         | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения.                                                 |

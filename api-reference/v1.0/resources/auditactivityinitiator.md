@@ -5,14 +5,16 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 946f548efc8bb8eea731480f303d8d15703dc018
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0ed2a68d3e3fa07edb5b5b2ce0d969287ba9a7a5
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033084"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532051"
 ---
 # <a name="auditactivityinitiator-resource-type"></a>Тип ресурса Аудитактивитинитиатор
+
+Пространство имен: microsoft.graph
 
 Identity объект ресурса, инициирующий действие. Инициатор может быть пользователем, приложением или системой (которое считается приложением).
 
@@ -20,7 +22,7 @@ Identity объект ресурса, инициирующий действие.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|программы|[Аппидентити](appidentity.md)|Если ресурс, инициирующий действие, является приложением, это свойство указывает все связанные с приложением сведения, такие как appId, Name, СервицепринЦипалид и Name.|
+|программы|[аппидентити](appidentity.md)|Если ресурс, инициирующий действие, является приложением, это свойство указывает все связанные с приложением сведения, такие как appId, Name, СервицепринЦипалид и Name.|
 |user|[userIdentity](useridentity.md)|Если ресурс, инициирующий действие, является пользователем, это свойство указывает все связанные с пользователем сведения, такие как userId, Name, Усерприникпалнаме.|
 
 ## <a name="json-representation"></a>Представление JSON

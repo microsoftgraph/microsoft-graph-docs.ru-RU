@@ -5,14 +5,16 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 2e61b4032e3d8c0976659cb34de2b043fac2ef8e
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: cdd0bb125fd8b84177b1370bca633f6d9ae5bb87
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913074"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42534264"
 ---
 # <a name="meetingparticipantinfo-resource-type"></a>Тип ресурса МитингпартиЦипантинфо
+
+Пространство имен: microsoft.graph
 
 Сведения о участниках собрания.
 
@@ -21,7 +23,7 @@ ms.locfileid: "40913074"
 | Свойство       | Тип                          | Описание                              |
 |:---------------|:------------------------------|:-----------------------------------------|
 | хищения       | [identitySet](identityset.md) | Сведения об удостоверении участника. |
-| Основное            | String                        | Имя участника пользователя.  |
+| Основное            | Строка                        | Имя участника пользователя.  |
 
 ## <a name="json-representation"></a>Представление JSON
 

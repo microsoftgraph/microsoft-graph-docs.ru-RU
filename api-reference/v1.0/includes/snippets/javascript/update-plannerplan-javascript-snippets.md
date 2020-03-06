@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: f42aa223c0dbbd9d912420baa1c5ad60246b740b
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 306d3ea0e796e3a4d798e7468169a0b07d9e6c4d
+ms.sourcegitcommit: 0329bbcd5f1b09a2a6c5f935a30c4560b6eed492
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35734358"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36638483"
 ---
 ```javascript
 
@@ -20,6 +20,6 @@ const plannerPlan = {
 };
 
 let res = await client.api('/planner/plans/{plan-id}')
-    .update({plannerPlan : plannerPlan});
+    .update(plannerPlan);
 
 ```

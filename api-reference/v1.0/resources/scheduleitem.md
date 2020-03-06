@@ -5,14 +5,16 @@ localization_priority: Normal
 author: ''
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: fb544041948d5e46c1ae8c3f6f887f595ddb82e8
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 4136b71dfb273525e8793521d50545ee5b1873cb
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36034636"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533790"
 ---
 # <a name="scheduleitem-resource-type"></a>Тип ресурса Счедулеитем
+
+Пространство имен: microsoft.graph
 
 Элемент, описывающий доступность пользователя, соответствующего фактическому событию, в календаре пользователя по умолчанию. Этот элемент также применяется к ресурсу (комнате или оборудованию).
 
@@ -20,11 +22,11 @@ ms.locfileid: "36034636"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |end |[dateTimeTimeZone](datetimetimezone.md) |Дата, время и часовой пояс, в течение которого заканчивается соответствующее событие. |
-|Частный |Boolean |Чувствительность соответствующего события. Значение true, если событие помечено `private`, в противном случае — false. Необязательно.|
-|location |String | Расположение, в котором находится соответствующее событие. Необязательно.|
+|Частный |Boolean |Чувствительность соответствующего события. Значение true, если событие помечено `private`, в противном случае — false. Необязательный.|
+|location |Строка | Расположение, в котором находится соответствующее событие. Необязательный.|
 |начать |[dateTimeTimeZone](datetimetimezone.md) |Дата, время и часовой пояс, в котором начинается соответствующее событие. |
 |status |freeBusyStatus | Состояние доступности пользователя или ресурса во время соответствующего события. Допустимые значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`. |
-|subject |String | Строка темы соответствующего события. Необязательно.|
+|subject |String | Строка темы соответствующего события. Необязательный.|
 
 
 ## <a name="json-representation"></a>Представление JSON

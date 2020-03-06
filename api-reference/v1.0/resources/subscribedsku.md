@@ -5,14 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: bcd9e9b9cf32b3bfc35c5c10cb43a2a748b32041
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: b7f1d532c88b3b289e0d337236843fada7c0dd2e
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394619"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533613"
 ---
 # <a name="subscribedsku-resource-type"></a>Тип ресурса subscribedSku
+
+Пространство имен: microsoft.graph
 
 Содержит сведения о SKU службы, на которую компания подписана.
 
@@ -28,9 +30,9 @@ ms.locfileid: "42394619"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |Тег|String| Например, User или Company. |
-|капабилитистатус|String|  Возможные значения: `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`. |
+|капабилитистатус|Строка|  Возможные значения: `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`. |
 |consumedUnits|Int32| Количество лицензий, которые были назначены. |
-|id|String| Уникальный идентификатор объекта sku, подписка на который выполнена. Key, не допускающая значение null. |
+|id|Строка| Уникальный идентификатор объекта sku, подписка на который выполнена. Key, не допускающая значение null. |
 |препаидунитс|[licenseUnitsDetail](licenseunitsdetail.md)| Сведения о количестве и состоянии предварительно оплаченных лицензий. |
 |сервицепланс|Коллекция [servicePlanInfo](serviceplaninfo.md)| Сведения о планах обслуживания, доступных в отношении SKU. Не допускает значение null |
 |skuId|Guid| Уникальный идентификатор (GUID) для SKU службы. |

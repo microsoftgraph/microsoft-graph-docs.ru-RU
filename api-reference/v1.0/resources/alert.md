@@ -5,14 +5,16 @@ localization_priority: Priority
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 7248fb61f62c9b17d639a5e7e2c3d8b4b2e92719
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: d3a6e6a0ca0f789183de5b32bed66ee03ec38dce
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36033232"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533166"
 ---
 # <a name="alert-resource-type"></a>Тип ресурса alert
+
+Пространство имен: microsoft.graph
 
 Представляет потенциальные проблемы безопасности в клиенте пользователя, выявленные решениями по обеспечению безопасности корпорации Майкрософт или партнеров. Используйте оповещения, чтобы объединить и оптимизировать управления проблемами безопасности во всех интегрированных решениях. Дополнительные сведения см. в примерах запросов в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
 

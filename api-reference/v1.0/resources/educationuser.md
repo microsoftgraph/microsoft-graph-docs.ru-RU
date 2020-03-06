@@ -5,14 +5,16 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 14fef4a171a1d0fa2dd8f72a5d98da34a5b3d14a
-ms.sourcegitcommit: d40d2a9266bd376d713382925323aefab285ed69
+ms.openlocfilehash: 4a7a238f9453cd7663573472240ed41f3944493b
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "38748546"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532994"
 ---
 # <a name="educationuser-resource-type"></a>Тип ресурса educationUser
+
+Пространство имен: microsoft.graph
 
 Пользователь в системе. Используемый для сферы образования вариант указания пользователя с тем же параметром `id`, который Microsoft Graph возвратит из конечной точки `/users`, не ограниченной сферой образования.
 Этот объект предоставляет целевое подмножество свойств из основного объекта [user](user.md), а также добавляет ряд используемых для сферы образования свойств, таких как `primaryRole`, student и teacher.
@@ -27,7 +29,7 @@ ms.locfileid: "38748546"
 |[Перечисление учебных заведений](../api/educationuser-list-schools.md) |Коллекция [educationSchool](educationschool.md)| Получение коллекции объектов **educationSchool**, для которых пользователь является участником.|
 |[Получение пользователя](../api/educationuser-get-user.md) |[user](user.md)| Получение простого каталога **user**, который соответствует этому объекту **educationUser**.|
 |[Обновление](../api/educationuser-update.md) | [educationUser](educationuser.md)   |Обновление объекта **educationUser**. |
-|[удаление](../api/educationuser-delete.md); | Нет |Удаление объекта **educationUser**. |
+|[Удаление](../api/educationuser-delete.md) | Нет |Удаление объекта **educationUser**. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|

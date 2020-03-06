@@ -5,14 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 3b6bddb5436408fa38c931cd7e1e1f5503979e5b
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 5e22b568ba05808fc9a87257686afd540145b3ec
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36032594"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42531484"
 ---
 # <a name="emailaddress-resource-type"></a>Тип ресурса emailAddress
+
+Пространство имен: microsoft.graph
 
 Имя и электронный адрес контакта или получателя сообщения.
 

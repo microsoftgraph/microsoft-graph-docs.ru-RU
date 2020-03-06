@@ -6,14 +6,16 @@ localization_priority: Normal
 ms.prod: microsoft-teams
 description: Ресурс Audio группирует свойства элемента, связанные со звуком, в единую структуру.
 doc_type: resourcePageType
-ms.openlocfilehash: 1351ae9dcd363d156997fd5cc75e7e3387a0fb38
-ms.sourcegitcommit: 636671293b0be89088459c4fc8a5e661341b37cf
+ms.openlocfilehash: 5487c7fb0505a1ab9a6b0e53278e235083cb83e4
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "40913487"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42532065"
 ---
 # <a name="audio-facet"></a>Аспект Audio
+
+Пространство имен: microsoft.graph
 
 Ресурс **Audio** группирует свойства элемента, связанные со звуком, в единую структуру.
 
