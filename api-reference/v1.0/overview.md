@@ -5,12 +5,12 @@ localization_priority: Priority
 author: ''
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: aa5b9f8d28cc77878fe1da261621b63163595828
-ms.sourcegitcommit: 46ee19b244349e2a1537f0c44c576d7c01cf03a9
+ms.openlocfilehash: 0b21aab90fb1eabec82ab1ee783fcdc89fe397d2
+ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "37402650"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42533183"
 ---
 # <a name="microsoft-graph-rest-api-v10-reference"></a>Справочные материалы по REST API Microsoft Graph v1.0
 
@@ -49,6 +49,16 @@ ms.locfileid: "37402650"
 Если вас интересует новые и улучшенные API, которые по-прежнему находятся в предварительной версии, см. статью [Справочник по конечной точке бета-версии Microsoft Graph](/graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta). Следует помнить, что API в предварительной версии могут изменяться и могут нарушить работу существующих сценариев без уведомлений. Не создавайте зависимость рабочей среды от API в конечной точке бета-версии.
 
 Дополнительные сведения см. в статье [Управление версиями и поддержка](/graph/versioning-and-support).
+
+## <a name="call-the-v10-endpoint"></a>Вызов конечной точки версии 1.0
+
+В запросах API Microsoft Graph к конечной точке версии 1.0 используется следующий шаблон:
+
+```
+    https://graph.microsoft.com/v1.0/{resource}?[query_parameters]
+```
+
+Дополнительные сведения см. в статье [Использование API Microsoft Graph](/graph/use-the-api).
 
 ## <a name="connect-with-us"></a>Обратная связь
 
