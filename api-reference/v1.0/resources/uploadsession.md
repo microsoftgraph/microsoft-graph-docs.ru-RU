@@ -4,21 +4,21 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: UploadSession
 localization_priority: Normal
-description: Ресурс UploadSession предоставляет сведения о том, как отправлять большие файлы в библиотеки документов OneDrive, OneDrive для бизнеса или SharePoint.
+description: Ресурс UploadSession предоставляет сведения о том, как отправлять большие файлы в OneDrive, OneDrive для бизнеса или библиотеки документов SharePoint, а также в виде вложений файлов в события и объекты сообщений Outlook.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 3537a59da65499e67283d8a0640e5392c65edce1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b2540c1abdd5e40ea960dc3672ab7cc788e08ddd
+ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446788"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42590015"
 ---
-# <a name="uploadsession-resource"></a>Ресурс UploadSession
+# <a name="uploadsession-resource-type"></a>Тип ресурса uploadSession
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
-Ресурс **UploadSession** содержит сведения о способе отправки больших файлов в OneDrive, OneDrive для бизнеса или в библиотеки документов SharePoint.
+Ресурс **uploadSession** предоставляет сведения о том, как отправлять большие файлы в OneDrive, Onedrive для бизнеса или библиотеки документов SharePoint, а также [события](event.md) и элементы [сообщений](message.md) Outlook в качестве вложений.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -44,11 +44,12 @@ ms.locfileid: "42446788"
 | Свойство       | Тип              |Описание
 |:-------------------|:------------------|:------------------------------------
 | expirationDateTime | DateTimeOffset    | Дата и время (в формате UTC) истечения срока действия сеанса. Полный файл необходимо отправить до наступления этого момента.
-| nextExpectedRanges | Коллекция строк | Коллекция диапазонов байтов файла, отсутствующих на сервере. Эти диапазоны имеют нулевую индексацию и формат "начало-конец" (например, "0–26" для указания первых 27 байтов файла).
+| nextExpectedRanges | Коллекция строк | Коллекция диапазонов байтов файла, отсутствующих на сервере. Эти диапазоны имеют нулевую индексацию и формат "начало-конец" (например, "0–26" для указания первых 27 байтов файла). При отправке файлов в виде вложений Outlook вместо коллекции диапазонов это свойство всегда указывает на одно значение "{Start}", расположение в файле, в котором должна начаться следующая загрузка.
 | uploadUrl          | Строка            | URL-адрес конечной точки, принимающей запросы PUT для диапазонов байтов файла.
 
 ## <a name="see-also"></a>См. также
 
+- [Присоединение больших файлов к сообщениям и событиям Outlook в качестве вложений](/graph/outlook-large-attachments)
 - [Отправка больших файлов с помощью сеанса отправки](../api/driveitem-createuploadsession.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
