@@ -5,32 +5,32 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 951abd9d307df51cb823ca9ecc3617a7eddec0c2
-ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
+ms.openlocfilehash: 60fbcf43890ee8dd4b87bc9a19b2eaa842250421
+ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "42562628"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42589900"
 ---
-# <a name="assign-tokenlifetimepolicy"></a><span data-ttu-id="feaa5-103">Назначение типа ресурса tokenLifetimePolicy</span><span class="sxs-lookup"><span data-stu-id="feaa5-103">Assign tokenLifetimePolicy</span></span>
+# <a name="assign-tokenlifetimepolicy"></a><span data-ttu-id="65049-103">Назначение типа ресурса tokenLifetimePolicy</span><span class="sxs-lookup"><span data-stu-id="65049-103">Assign tokenLifetimePolicy</span></span>
 
-<span data-ttu-id="feaa5-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="feaa5-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="65049-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="65049-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="feaa5-105">Назначьте [токенлифетимеполици](../resources/tokenlifetimepolicy.md) [приложению](../resources/application.md) или [servicePrincipal](../resources/servicePrincipal.md).</span><span class="sxs-lookup"><span data-stu-id="feaa5-105">Assign a [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) to an [application](../resources/application.md) or [servicePrincipal](../resources/servicePrincipal.md).</span></span>
+<span data-ttu-id="65049-105">Назначьте [токенлифетимеполици](../resources/tokenlifetimepolicy.md) [приложению](../resources/application.md) или [servicePrincipal](../resources/servicePrincipal.md).</span><span class="sxs-lookup"><span data-stu-id="65049-105">Assign a [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) to an [application](../resources/application.md) or [servicePrincipal](../resources/servicePrincipal.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="feaa5-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="feaa5-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="65049-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="65049-106">Permissions</span></span>
 
-<span data-ttu-id="feaa5-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="feaa5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="65049-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="65049-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="feaa5-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="feaa5-109">Permission type</span></span>                        | <span data-ttu-id="feaa5-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="feaa5-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="65049-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="65049-109">Permission type</span></span>                        | <span data-ttu-id="65049-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="65049-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="feaa5-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="feaa5-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="feaa5-112">Policy. Read. ALL и Application. ReadWrite. ALL, Policy. ReadWrite. Аппликатионконфигуратион и Application. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="feaa5-112">Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All</span></span> |
-| <span data-ttu-id="feaa5-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="feaa5-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="feaa5-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="feaa5-114">Not supported.</span></span> |
-| <span data-ttu-id="feaa5-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="feaa5-115">Application</span></span>                            | <span data-ttu-id="feaa5-116">Policy. Read. ALL и Application. ReadWrite. Овнедби, Policy. Read. ALL и Application. ReadWrite. ALL, Policy. ReadWrite. Аппликатионконфигуратион и Application. ReadWrite. Овнедби, Policy. ReadWrite. Аппликатионконфигуратион и Application. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="feaa5-116">Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All</span></span> |
+| <span data-ttu-id="65049-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="65049-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="65049-112">Policy. Read. ALL и Application. ReadWrite. ALL, Policy. ReadWrite. Аппликатионконфигуратион и Application. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="65049-112">Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All</span></span> |
+| <span data-ttu-id="65049-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="65049-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="65049-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="65049-114">Not supported.</span></span> |
+| <span data-ttu-id="65049-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="65049-115">Application</span></span>                            | <span data-ttu-id="65049-116">Policy. Read. ALL и Application. ReadWrite. Овнедби, Policy. Read. ALL и Application. ReadWrite. ALL, Policy. ReadWrite. Аппликатионконфигуратион и Application. ReadWrite. Овнедби, Policy. ReadWrite. Аппликатионконфигуратион и Application. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="65049-116">Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="feaa5-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="feaa5-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="65049-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="65049-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,28 +39,28 @@ POST /applications/{id}/tokenLifetimePolicies/$ref
 POST /servicePrincipals/{id}/tokenLifetimePolicies/$ref
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="feaa5-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="feaa5-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="65049-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="65049-118">Request headers</span></span>
 
-| <span data-ttu-id="feaa5-119">Имя</span><span class="sxs-lookup"><span data-stu-id="feaa5-119">Name</span></span>          | <span data-ttu-id="feaa5-120">Описание</span><span class="sxs-lookup"><span data-stu-id="feaa5-120">Description</span></span>   |
+| <span data-ttu-id="65049-119">Имя</span><span class="sxs-lookup"><span data-stu-id="65049-119">Name</span></span>          | <span data-ttu-id="65049-120">Описание</span><span class="sxs-lookup"><span data-stu-id="65049-120">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="feaa5-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="feaa5-121">Authorization</span></span> | <span data-ttu-id="feaa5-122">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="feaa5-122">Bearer {token}</span></span> |
-| <span data-ttu-id="feaa5-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="feaa5-123">Content-Type</span></span> | <span data-ttu-id="feaa5-124">application/json</span><span class="sxs-lookup"><span data-stu-id="feaa5-124">application/json</span></span> |
+| <span data-ttu-id="65049-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="65049-121">Authorization</span></span> | <span data-ttu-id="65049-122">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="65049-122">Bearer {token}</span></span> |
+| <span data-ttu-id="65049-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="65049-123">Content-Type</span></span> | <span data-ttu-id="65049-124">application/json</span><span class="sxs-lookup"><span data-stu-id="65049-124">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="feaa5-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="feaa5-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="65049-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="65049-125">Request body</span></span>
 
-<span data-ttu-id="feaa5-126">В тексте запроса укажите идентификатор объекта [токенлифетимеполици](../resources/tokenlifetimepolicy.md) (с помощью `@odata.id` свойства), который должен быть назначен для приложения или участника-службы.</span><span class="sxs-lookup"><span data-stu-id="feaa5-126">In the request body, supply the identifier of the [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) object (using an `@odata.id` property) that should be assigned to the application or service principal.</span></span>
+<span data-ttu-id="65049-126">В тексте запроса укажите идентификатор объекта [токенлифетимеполици](../resources/tokenlifetimepolicy.md) (с помощью `@odata.id` свойства), который должен быть назначен для приложения или участника-службы.</span><span class="sxs-lookup"><span data-stu-id="65049-126">In the request body, supply the identifier of the [tokenLifetimePolicy](../resources/tokenlifetimepolicy.md) object (using an `@odata.id` property) that should be assigned to the application or service principal.</span></span>
 
-## <a name="response"></a><span data-ttu-id="feaa5-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="feaa5-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="65049-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="65049-127">Response</span></span>
 
-<span data-ttu-id="feaa5-p102">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="feaa5-p102">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="65049-p102">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="65049-p102">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="feaa5-130">Примеры</span><span class="sxs-lookup"><span data-stu-id="feaa5-130">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="65049-130">Примеры</span><span class="sxs-lookup"><span data-stu-id="65049-130">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="feaa5-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="feaa5-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="65049-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="65049-131">Request</span></span>
 
-<span data-ttu-id="feaa5-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="feaa5-132">The following is an example of the request.</span></span>
+<span data-ttu-id="65049-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="65049-132">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="feaa5-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="feaa5-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="65049-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="65049-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_tokenlifetimepolicy_from_application"
@@ -74,16 +74,24 @@ Content-Type: application/json
   "@odata.id":"https://graph.microsoft.com/beta/policies/tokenLifetimePolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9"
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="feaa5-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="feaa5-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="65049-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="65049-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-tokenlifetimepolicy-from-application-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[<span data-ttu-id="65049-135">C#</span><span class="sxs-lookup"><span data-stu-id="65049-135">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-tokenlifetimepolicy-from-application-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="65049-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="65049-136">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-tokenlifetimepolicy-from-application-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="feaa5-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="feaa5-135">Response</span></span>
+### <a name="response"></a><span data-ttu-id="65049-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="65049-137">Response</span></span>
 
-<span data-ttu-id="feaa5-136">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="feaa5-136">The following is an example of the response.</span></span>
+<span data-ttu-id="65049-138">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="65049-138">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
