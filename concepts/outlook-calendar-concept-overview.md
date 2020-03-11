@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 4db79703595e9a8e4f21fa6eefd0ab098123138b
-ms.sourcegitcommit: 3d22631d6a8c235f7b9ec0575f60c3fb557a1368
+ms.openlocfilehash: 7b79fb25c3f498f284c9bfd582b31dc8ff01fcc0
+ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41840006"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42590909"
 ---
 # <a name="outlook-calendar-api-overview"></a>Общие сведения об API календарей Outlook
 
@@ -113,6 +113,7 @@ Outlook и API Календаря предоставляют множество 
   - [Организация и посещение собраний по сети с помощью Outlook (предварительная версия)](outlook-calendar-online-meetings.md)
   - [Планирование повторных встреч в качестве повторяющихся мероприятий в Outlook](outlook-schedule-recurring-events.md)
   - [Получение общих событий](outlook-get-shared-events-calendars.md)
+  - [Вложение крупных файлов в сообщения и события Outlook](outlook-large-attachments.md)
   - [Получение неизменяемых идентификаторов для ресурсов Outlook](outlook-immutable-id.md)
 - Ознакомьтесь со справочными материалами по [API Календаря](/graph/api/resources/calendar?view=graph-rest-1.0) в Outlook.
 

@@ -97,6 +97,8 @@ items:
             href: outlook-get-shared-events-calendars.md
           - name: Создание общих событий
             href: outlook-create-event-in-shared-delegated-calendar.md
+          - name: Вложение больших файлов
+            href: outlook-large-attachments.md
           - name: Неизменяемый идентификатор
             href: outlook-immutable-id.md
       - name: Коммуникации из облака
@@ -176,16 +178,16 @@ items:
             href: outlook-mail-concept-overview.md
           - name: Автоматизация обмена сообщениями
             href: outlook-create-send-messages.md
+          - name: Упорядочение сообщений
+            href: outlook-organize-messages.md
           - name: Получение содержимого MIME
             href: outlook-get-mime-message.md
+          - name: Вложение больших файлов
+            href: outlook-large-attachments.md
           - name: Получение общих сообщений
             href: outlook-share-messages-folders.md
           - name: Отправка почты от имени другого пользователя
             href: outlook-send-mail-from-other-user.md
-          - name: Вложение больших файлов (предварительная версия)
-            href: outlook-large-attachments.md
-          - name: Упорядочение сообщений
-            href: outlook-organize-messages.md
           - name: Неизменяемый идентификатор
             href: outlook-immutable-id.md
       - name: Примечания

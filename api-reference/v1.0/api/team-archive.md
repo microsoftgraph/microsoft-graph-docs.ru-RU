@@ -5,18 +5,16 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 68037939f6c2abcda77efa6eb0aa606616baf695
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d849f4166e0481accb991c6f318e486917e562e3
+ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509452"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42572393"
 ---
 # <a name="archive-team"></a>Архивация команды
 
 Пространство имен: microsoft.graph
-
-
 
 Архивация указанной [команды](../resources/team.md). При архивации команды пользователь больше не сможет отправлять сообщения в любой канал команды или присваивать сообщениям отметку "Нравится", изменять название команды, описание, другие параметры и в целом вносить большинство изменений в команду.
 Изменение участия в команде по-прежнему допускается.
@@ -56,6 +54,9 @@ POST /teams/{id}/archive
 }
 ```
 Этот необязательный параметр определяет, следует ли для участников команды задать разрешения только для чтения на сайте Sharepoint Online, связанном с командой. Если присвоить ему значение false или не указать текст, этот этап будет пропущен.
+
+>[!IMPORTANT]
+>Параметр `shouldSetSpoSiteReadOnlyForMembers` не поддерживается в контексте приложения.
 
 ## <a name="response"></a>Отклик
 
