@@ -4,7 +4,7 @@
       href: /graph/overview
     - name: Получение маркеров аутентификации
       items:
-        - name: Общие сведения
+        - name: Обзор
           href: /graph/auth/index?context=graph/api/1.0
         - name: Основы
           href: /graph/auth/auth-concepts?context=graph/api/1.0
@@ -22,7 +22,7 @@
           href: /graph/auth-limit-mailbox-access?context=graph/api/1.0
     - name: Использование API
       items:
-        - name: Общие сведения
+        - name: Обзор
           href: /graph/use-the-api?context=graph/api/1.0
         - name: Разбиение на страницы
           href: /graph/paging?context=graph/api/1.0
@@ -44,7 +44,7 @@
         - name: Отслеживание изменений
           displayname: 'Delta query, Outlook calendar, Groups, Outlook mail, Users'
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: /graph/delta-query-overview?context=graph/api/1.0
             - name: Получение изменений для событий (пример)
               href: /graph/delta-query-events?context=graph/api/1.0
@@ -57,7 +57,7 @@
         - name: Добавление пользовательских данных
           displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: /graph/extensibility-overview?context=graph/api/1.0
             - name: Использование открытых расширений (пример)
               href: /graph/extensibility-open-users?context=graph/api/1.0
@@ -71,7 +71,7 @@
         - name: Azure AD Graph
           displayname: 'Migration, Azure AD Graph'
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: /graph/migrate-azure-ad-graph-overview?context=graph/api/1.0
             - name: Контрольный список для переноса приложений
               href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
@@ -158,11 +158,11 @@
     - name: Справочник по версии 1.0
       expanded: true
       items:
-        - name: Общие сведения
+        - name: Обзор
           href: overview.md
         - name: Пользователи
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/users.md
             - name: Пользователь
               href: resources/user.md
@@ -359,7 +359,7 @@
                   href: api/planneruser-list-tasks.md
         - name: Группы
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/groups-overview.md
             - name: Группа
               href: resources/group.md
@@ -617,8 +617,6 @@
                   href: api/event-list-attachments.md
                 - name: Добавление вложения
                   href: api/event-post-attachments.md
-                - name: Создание сеанса для присоединения большого файла
-                  href: api/attachment-createuploadsession.md
                 - name: Создание открытого расширения
                   href: api/opentypeextension-post-opentypeextension.md
                 - name: Получение открытого расширения
@@ -667,8 +665,6 @@
                   href: resources/itemattachment.md
                 - name: Ссылочный тип вложения
                   href: resources/referenceattachment.md
-                - name: Создание сеанса для присоединения большого файла
-                  href: api/attachment-createuploadsession.md
                 - name: Получение вложения
                   href: api/attachment-get.md
                 - name: Удаление вложения
@@ -816,7 +812,7 @@
         - name: Взаимодействие с разными устройствами
           displayName: Project Rome
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/project-rome-overview.md
             - name: Веб-канал активности
               href: resources/activity-feed-api-overview.md
@@ -842,7 +838,7 @@
         - name: Устройства и приложения
           displayName: Intune
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/intune-graph-overview.md
             - name: Управление приложениями
               href: resources/intune-app-conceptual.md
@@ -3204,7 +3200,7 @@
         - name: Файлы
           displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/onedrive.md
             - name: Диски
               href: resources/drive.md
@@ -3278,7 +3274,7 @@
         - name: Удостоверения и доступ
           displayName: 'Azure AD, Microsoft identity platform'
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/azure-ad-overview.md
             - name: Приложение
               href: resources/application.md
@@ -3488,7 +3484,7 @@
               items:
                 - name: Оценка угроз
                   items:
-                    - name: Общие сведения
+                    - name: Обзор
                       href: resources/threatassessment-api-overview.md
                     - name: Запрос оценки угроз
                       href: resources/threatassessmentrequest.md
@@ -3582,8 +3578,6 @@
                   href: api/message-list-attachments.md
                 - name: Добавление вложения
                   href: api/message-post-attachments.md
-                - name: Создание сеанса для присоединения большого файла
-                  href: api/attachment-createuploadsession.md
                 - name: Создание открытого расширения
                   href: api/opentypeextension-post-opentypeextension.md
                 - name: Получение открытого расширения
@@ -3597,8 +3591,6 @@
                   href: resources/itemattachment.md
                 - name: Ссылочный тип вложения
                   href: resources/referenceattachment.md
-                - name: Создание сеанса для присоединения большого файла
-                  href: api/attachment-createuploadsession.md
                 - name: Получение вложения
                   href: api/attachment-get.md
                 - name: Удаление вложения
@@ -3706,7 +3698,7 @@
         - name: Примечания
           displayName: OneNote
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/onenote-api-overview.md
             - name: Заметки
               href: resources/onenote.md
@@ -4134,7 +4126,7 @@
         - name: Сайты и списки
           displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/sharepoint.md
             - name: Сайты
               href: resources/site.md
@@ -4174,7 +4166,7 @@
         - name: Задачи и планы
           displayName: Planner
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/planner-overview.md
             - name: План
               href: resources/plannerplan.md
