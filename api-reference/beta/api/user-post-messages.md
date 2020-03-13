@@ -6,15 +6,15 @@ author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
 ms.openlocfilehash: af201dadb3e00d04cfef18381c4ceca5defa0ad7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451684"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42619007"
 ---
 # <a name="create-message"></a>Создание объекта Message
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

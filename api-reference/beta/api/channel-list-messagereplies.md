@@ -6,15 +6,15 @@ localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
 ms.openlocfilehash: 6dd782e937e4709a899a22f9bbc49af0f0ed6548
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440313"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42619011"
 ---
 # <a name="list-channel-message-replies"></a>Список ответов на сообщения канала
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,9 +27,9 @@ ms.locfileid: "42440313"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |---------|-------------|
-|Делегированные (рабочая или учебная учетная запись)| Чаннелмессаже. Read. ALL, Group. Read. ALL, Group. ReadWrite. ALL|
+|Делегированные (рабочая или учебная учетная запись)| ChannelMessage.Read.All, Group.Read.All,Group.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений| Чаннелмессаже. Read. ALL, Group. Read. ALL, Group. ReadWrite. ALL|
+|Для приложений| ChannelMessage.Read.All, Group.Read.All,Group.ReadWrite.All|
 
 > [!NOTE]
 > Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).
