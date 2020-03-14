@@ -3,12 +3,12 @@ title: Компонент входа в набор средств Microsoft Grap
 description: Компонент входа — это кнопка и всплывающий элемент управления для упрощения проверки подлинности на платформе Microsoft Identity.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: e7c657b3b6c9772b2d7b7b8e64a57c9982f4caef
-ms.sourcegitcommit: 750c82f161a0f62bc2486995456ccd92ee5c7831
+ms.openlocfilehash: 3b326cc97bf7a3463e43ffcf757cc34d5cc00975
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35243084"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639984"
 ---
 # <a name="login-component-in-the-microsoft-graph-toolkit"></a>Компонент входа в набор средств Microsoft Graph
 
@@ -18,19 +18,19 @@ ms.locfileid: "35243084"
 
 ## <a name="example"></a>Пример
 
-[Пример жсфиддле](https://jsfiddle.net/metulev/scb9muh4)
+В следующем примере показан `mgt-login` компонент с пользователь, вошедшего в систему. 
 
-```html
-<mgt-login></mgt-login>
-```
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-login--login&source=docs" height="350"></iframe>
+
+[Откройте этот пример в меню упр. dev.](https://mgt.dev/?path=/story/components-mgt-login--login&source=docs)
 
 ## <a name="using-the-control-without-an-authentication-provider"></a>Использование элемента управления без поставщика проверки подлинности
 
 Компонент работает с поставщиком и Microsoft Graph из этого ящика. Тем не менее, если вы хотите предоставить собственную логику и проверку подлинности, `userDetails` вы можете использовать свойство, чтобы задать сведения о пользователе, выполнившего вход в систему. 
 
-| Свойство | Атрибут | Описание |
+| Атрибут | Свойство | Описание |
 | --- | --- | -- |
-| `userDetails` | `user-details` | Задайте объект пользователя, который будет отображаться в элементе управления. |
+| пользователь — сведения | усердетаилс | Задайте объект пользователя, который будет отображаться в элементе управления. |
 
 В приведенном ниже примере задаются сведения о лице.
 
@@ -59,10 +59,12 @@ mgt-login {
   --margin: 0;
   --padding: 12px 20px;
   --color: #201f1e;
+  --color-hover: var(--theme-primary-color);
   --background-color: transparent;
   --background-color--hover: #edebe9;
   --popup-content-background-color: white;
-  --popup-command-font-size: 12px; }
+  --popup-command-font-size: 12px;
+  --popup-color: #201f1e;
 }
 ```
 
@@ -86,4 +88,4 @@ mgt-login {
 
 ## <a name="authentication"></a>Проверка подлинности
 
-Элемент управления входом использует глобальный поставщик проверки подлинности, описанный в [документации по проверке](./../providers.md)подлинности. 
+Элемент управления входом использует глобальный поставщик проверки подлинности, описанный в [документации по проверке подлинности](./../providers.md). 

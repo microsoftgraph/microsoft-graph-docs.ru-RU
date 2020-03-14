@@ -6,11 +6,11 @@ author: anthona
 localization_priority: Priority
 ms.prod: insights
 ms.openlocfilehash: db528c5e3e687d32ceacae327531a3f6c7ccee90
-ms.sourcegitcommit: 360d176a29047a2686f1bff076f15c6ce9d12ef5
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41711705"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42618855"
 ---
 # <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>Использование API People в Microsoft Graph для получения сведений о наиболее релевантных для вас людях
 

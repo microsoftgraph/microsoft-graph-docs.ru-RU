@@ -5,16 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: dddbdcdb9631e54f012e3111fb4080c72926f767
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5c5e5d3e8019bc7820692caf173d3d190f769246
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451725"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639904"
 ---
 # <a name="create-event"></a>Создание события
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -145,7 +145,7 @@ Content-type: application/json
 Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
 #### <a name="response"></a>Ответ
 Ниже приведен пример ответа, где показано, что свойства **start** и **end** соответствуют часовому поясу, указанному в заголовке `Prefer: outlook.timezone`.
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user",
@@ -179,6 +179,7 @@ Content-length: 2197
     "sensitivity":"normal",
     "isAllDay":false,
     "isCancelled":false,
+    "isDraft": false,
     "isOrganizer":true,
     "responseRequested":true,
     "seriesMasterId":null,
@@ -372,6 +373,7 @@ Content-length: 2985
   "sensitivity":"normal",
   "isAllDay":false,
   "isCancelled":false,
+  "isDraft": false,
   "isOrganizer":true,
   "responseRequested":true,
   "seriesMasterId":null,
@@ -473,7 +475,7 @@ Content-length: 2985
 ### <a name="example-3-create-a-weekly-recurring-event"></a>Пример 3: создание повторяющегося повторяющегося события
 
 #### <a name="request"></a>Запрос
-В третьем примере показано, как создать повторяющееся событие, которое происходит один раз в неделю. Событие происходит с 12:00 до 14:00 каждый понедельник с 4 сентября 2017 г. до конца года.
+В третьем примере показано, как создать событие, повторяющееся раз в неделю. Событие происходит с 12:00 до 14:00 каждый понедельник с 4 сентября 2017 г. до конца года.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -573,6 +575,7 @@ Content-type: application/json
     "sensitivity":"normal",
     "isAllDay":false,
     "isCancelled":false,
+    "isDraft": false,
     "isOrganizer":true,
     "responseRequested":true,
     "seriesMasterId":null,
@@ -659,7 +662,7 @@ Content-type: application/json
 ### <a name="example-4-create-a-daily-recurring-event"></a>Пример 4: создание ежедневного повторяющегося события
 
 #### <a name="request"></a>Запрос
-В четвертом примере показано, как создать ежедневное повторяющееся событие. Событие происходит в интервале от 12:00pm до 2:00pm, каждый день начиная с 25 февраля 2020 по два вхождения.
+В четвертом примере показано, как создать событие, повторяющееся ежедневно. Событие происходит в интервале от 12:00pm до 2:00pm, каждый день начиная с 25 февраля 2020 по два вхождения.
 
 <!-- {
   "blockType": "request",
@@ -744,6 +747,7 @@ Content-type: application/json
     "sensitivity": "normal",
     "isAllDay": false,
     "isCancelled": false,
+    "isDraft": false,
     "isOrganizer": true,
     "responseRequested": true,
     "seriesMasterId": null,
@@ -888,7 +892,7 @@ Content-type: application/json
 Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
 #### <a name="response"></a>Ответ
 Ниже приведен пример ответа, где показано, что свойства **start** и **end** соответствуют часовому поясу, указанному в заголовке `Prefer: outlook.timezone`.
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user_with_online_meeting",
@@ -922,6 +926,7 @@ Content-length: 2197
     "sensitivity":"normal",
     "isAllDay":false,
     "isCancelled":false,
+    "isDraft": false,
     "isOrganizer":true,
     "responseRequested":true,
     "seriesMasterId":null,

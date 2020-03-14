@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph. Сведения о последних обновлениях см. в журнале изменений Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 2e829da3a7e99ff5991a94cb37c5c8282c065916
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 09a53d4103436eab8314c19420ecb9b15cd981a5
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42590832"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42619126"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -158,9 +158,6 @@ GET /me/calendars/{id}/events
 * [Перечисление календарей пользователя](/graph/api/user-list-calendars?view=graph-rest-1.0) позволяет получить свойства **name**, **color** и **id** всех [календарей](/graph/api/resources/calendar?view=graph-rest-1.0) в группе календарей пользователя по умолчанию или указанной группе календарей, в том числе календарей ICS. URL-адрес ICS невозможно хранить и открывать в ресурсе calendar.
 * Вы также можете [отобразить события](/graph/api/calendar-list-events?view=graph-rest-1.0) календаря ICS.
 
-### <a name="attaching-large-files-to-events"></a>Прикрепление больших файлов к событиям
-Приложение с делегированными разрешениями возвращает `HTTP 403 Forbidden` при попытке [присоединить большие файлы](outlook-large-attachments.md) к сообщению Outlook или событию, которое находится в общем или делегированном почтовом ящике. С делегированными разрешениями [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) завершается успешно, только если сообщение или событие находятся в почтовом ящике вошедшего в систему пользователя.
-
 ### <a name="onlinemeetingurl-property-support-for-microsoft-teams"></a>Поддержка свойства onlineMeetingUrl для Microsoft Teams
 
 В настоящее время свойство **onlineMeetingUrl** ресурса [event](/graph/api/resources/event?view=graph-rest-1.0) для собрания Skype означает URL-адрес для собрания по сети. Однако для ресурса event собрания в Microsoft Teams задано значение NULL.
@@ -221,7 +218,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 ## <a name="messages"></a>Сообщения
 
 ### <a name="attaching-large-files-to-messages"></a>Вложение больших файлов в сообщения
-Приложение с делегированными разрешениями возвращает `HTTP 403 Forbidden` при попытке [присоединить большие файлы](outlook-large-attachments.md) к сообщению Outlook или событию, которое находится в общем или делегированном почтовом ящике. С делегированными разрешениями [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) завершается успешно, только если сообщение или событие находятся в почтовом ящике вошедшего в систему пользователя.
+Приложение с делегированными разрешениями возвращает `HTTP 403 Forbidden` при попытке [вложить большие файлы](outlook-large-attachments.md) в сообщение Outlook в общем или делегированном почтовом ящике. С делегированными разрешениями [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-beta) выполняется успешно только в том случае, если сообщение находится в почтовом ящике вошедшего пользователя.
 
 ### <a name="the-comment-parameter-for-creating-a-draft"></a>Параметр comment для создания черновика
 

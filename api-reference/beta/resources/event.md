@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 51a6a3094f78917d9b4afba8ced9bc698a9cf3bb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 94e36bf5e451385b0a41d959ca39b4084a06b9d3
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42499122"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639886"
 ---
 # <a name="event-resource-type"></a>Тип ресурса event
 
@@ -69,9 +69,10 @@ ms.locfileid: "42499122"
   "importance": "String",
   "isAllDay": true,
   "isCancelled": true,
+  "isDraft": false,
   "isOnlineMeeting": true,
   "isOrganizer": true,
-  "isReminderOn": true,
+  "isReminderOn": true,  
   "lastModifiedDateTime": "String (timestamp)",
   "location": {"@odata.type": "microsoft.graph.location"},
   "locations": [{"@odata.type": "microsoft.graph.location"}],
@@ -119,6 +120,7 @@ ms.locfileid: "42499122"
 |importance|String|Важность события. Возможные значения: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Задайте значение true, если событие длится весь день. Если значение равно true, то независимо от того, один или несколько дней длится событие, время его начала и окончания должно быть установлено на полночь в одном и том же часовом поясе.|
 |isCancelled|Boolean|Задайте значение true, если событие отменено.|
+|isDraft|Логический|Присвоено значение true, если пользователь обновил собрание в Outlook, но не отправил обновления участникам. Присвоено значение false, если все изменения отправлены или событие является встречей без участников.|
 |isOnlineMeeting|Логический| `True`, если событие содержит информацию о собрании по сети (т. е. **onlineMeeting** указывает на ресурс [onlineMeetingInfo](onlinemeetinginfo.md)), в противном случае — `false`. Значение по умолчанию — `false` (**onlineMeeting** — `null`). Необязательное свойство. <br> После настройки **isOnlineMeeting** на `true` Microsoft Graph инициализирует **onlineMeeting**. Outlook будет игнорировать любые последующие изменения **isOnlineMeeting**, и собрание останется доступным по сети. |
 |isOrganizer|Boolean|Присвоено значение true, если владелец календаря (указанный свойством **owner** объекта [calendar](calendar.md)) является организатором события (определятся свойством **organizer** объекта **event**). Это также применимо, если делегат организовал событие от имени владельца.|
 |isReminderOn|Boolean|Задайте значение true, если установлено напоминание пользователю о событии.|

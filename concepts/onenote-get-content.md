@@ -5,11 +5,11 @@ author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
 ms.openlocfilehash: 57b4531770a78f030d093d4c486760d64d9764ea
-ms.sourcegitcommit: 5cf98ba275547e5659df4af1eeeff0ba484b0e67
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42163060"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42618842"
 ---
 # <a name="get-onenote-content-and-structure-with-microsoft-graph"></a>Получение содержимого и структуры OneNote с помощью Microsoft Graph
 

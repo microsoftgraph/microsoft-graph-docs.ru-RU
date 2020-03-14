@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: b3651bc4ea5153c5b3fc68d0106868c3857adca6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 974c6b69ccac03df2515e427267f84db07e2d492
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507847"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639543"
 ---
 # <a name="calendar-resource-type"></a>Тип ресурса calendar
 
@@ -49,6 +49,7 @@ ms.locfileid: "42507847"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |allowedOnlineMeetingProviders|Коллекция строк| Представляет поставщиков служб собраний по сети, которых можно использовать для создания собраний в этом календаре. Возможные значения: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|
+|calendarGroupId|Строка|Объект [calendarGroup](calendargroup.md) для создания календаря. Если пользователь не указал группу для календаря явным образом, это свойство будет иметь значение NULL.|
 |canEdit |Boolean |Значение true, если пользователь может вносить изменения в календарь, в противном случае — значение false. Это свойство имеет значение true для пользователя, создавшего календарь. Это свойство также имеет значение true для пользователей, которые совместно используют календарь и имеют доступ на запись через клиент Outlook или соответствующий ресурс [calendarPermission](calendarpermission.md). Только для чтения.|
 |canShare |Boolean |Значение true, если у пользователя есть разрешение на совместное использование календаря, в противном случае — значение false. Только пользователь, создавший календарь, может предоставлять общий доступ к нему. Только для чтения.|
 |canViewPrivateItems |Boolean |Значение true, если пользователь может читать элементы календаря, которые были помечены как частные, в противном случае — значение false. Это свойство задается через клиент Outlook или соответствующий ресурс [calendarPermission](calendarpermission.md). Только для чтения.|

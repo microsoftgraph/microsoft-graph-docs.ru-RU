@@ -3,18 +3,18 @@ title: Список Говернанцеролеассигнментрекуес
 description: 'Получение коллекции Говернанцеролеассигнментрекуестс. '
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: 69dddf7e6073412c2398769165e52c530a3a68e1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: davidmu1
+ms.prod: microsoft-identitiy-platform
+ms.openlocfilehash: 5d69c81fcd9de1d69be69500c2b654351d68897a
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42421062"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639817"
 ---
 # <a name="list-governanceroleassignmentrequests"></a>Список Говернанцеролеассигнментрекуестс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,11 +23,11 @@ ms.locfileid: "42421062"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения              |
+|Тип разрешения      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Не поддерживается. |
+|Приложение | Привилежедакцесс. Read. Азурересаурцес |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

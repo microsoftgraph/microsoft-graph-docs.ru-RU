@@ -3,14 +3,14 @@ title: Список Говернанцероледефинитионс
 description: Получение коллекции Говернанцероледефинитионс для ресурса.
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: 3b8d45a3d4f5f89ed35fd2defaf733d2d03af097
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: davidmu1
+ms.prod: microsoft-identitiy-platform
+ms.openlocfilehash: 93702d24229f0e3a86c5b999cdbd2074c6a357e8
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42420894"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639676"
 ---
 # <a name="list-governanceroledefinitions"></a>Список Говернанцероледефинитионс
 
@@ -21,11 +21,11 @@ ms.locfileid: "42420894"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения              |
+|Тип разрешения      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Не поддерживается. |
+|Приложение | Привилежедакцесс. Read. Азурересаурцес |
 
 Кроме области разрешений, этот API требует, чтобы запрашивающий был иметь по крайней мере одно назначение роли для ресурса.
 

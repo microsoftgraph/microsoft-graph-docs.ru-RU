@@ -3,12 +3,12 @@ title: Компонент Tasks в наборе инструментов Microso
 description: Компонент Tasks позволяет пользователю просматривать, добавлять, удалять, выполнять или изменять задачи. Она работает с любой из задач в планировщике (Майкрософт) или в Microsoft.
 localization_priority: Normal
 author: benotter
-ms.openlocfilehash: 19faf3dec1c61680250cacf3cfaf5837b8bc4cee
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 80da5522b73051df4d5c264e5289845b9521058f
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955850"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639921"
 ---
 # <a name="tasks-component-in-the-microsoft-graph-toolkit"></a>Компонент Tasks в наборе инструментов Microsoft Graph
 
@@ -18,11 +18,11 @@ ms.locfileid: "39955850"
 
 ## <a name="example"></a>Пример
 
-[Пример жсфиддле](https://jsfiddle.net/metulev/qhg68m31/)
+В следующем примере отображаются задачи планировщика Microsoft, вошедшего в систему, с `mgt-tasks` помощью компонента. С помощью редактора кода можно увидеть, как [Свойства](#properties) изменяют поведение компонента.
 
-````html
-    <mgt-tasks></mgt-tasks>
-````
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-tasks--tasks&source=docs" height="500"></iframe>
+
+[Откройте этот пример в меню упр. dev.](https://mgt.dev/?path=/story/components-mgt-tasks--tasks&source=docs)
 
 ## <a name="properties"></a>Свойства
 

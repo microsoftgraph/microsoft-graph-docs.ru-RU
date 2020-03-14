@@ -3,12 +3,12 @@ title: Компонент Person в наборе инструментов Micros
 description: Компонент Person используется для отображения человека или контакта, используя фотографию, имя и/или адрес электронной почты.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 8a0498203296f3880741a4bc2cc53ffd69aff518
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 0202d8bc8c8ae23f98cb4add9f9d5ca96afea04d
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866877"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639956"
 ---
 # <a name="person-component-in-the-microsoft-graph-toolkit"></a>Компонент Person в наборе инструментов Microsoft Graph
 
@@ -18,12 +18,11 @@ ms.locfileid: "40866877"
 
 ## <a name="example"></a>Пример
 
-[Пример жсфиддле](https://jsfiddle.net/metulev/0jkzfr42/)
+В приведенном ниже примере отображается пользователь, `mgt-person` использующий компонент. С помощью редактора кода можно увидеть, как [Свойства](#properties) изменяют поведение компонента.
 
-### <a name="add-the-control-to-the-html-page"></a>Добавление элемента управления на HTML-страницу
-```html
-<mgt-person person-query=""></mgt-person>
-```
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-person--person&source=docs" height="250"></iframe>
+
+[Откройте этот пример в меню упр. dev.](https://mgt.dev/?path=/story/components-mgt-person--person&source=docs)
 
 ## <a name="setting-the-person-details"></a>Настройка сведений о лице
 
@@ -47,7 +46,7 @@ ms.locfileid: "40866877"
 
   Если изображение не указано, выбирается один из них (если он доступен).
 
-## <a name="changing-how-the-component-looks"></a>Изменение вида компонента
+## <a name="properties"></a>Свойства
 
 Для настройки компонента можно использовать несколько свойств.
 
@@ -123,7 +122,7 @@ mgt-person {
 
 Этот элемент управления использует указанные ниже API и разрешения Microsoft Graph.
 
-| Ресурс                                                                                                    | Разрешение     |
+| Resource                                                                                                    | Разрешение     |
 | ----------------------------------------------------------------------------------------------------------- | -------------------- |
 | [/ме](/graph/api/user-get?view=graph-rest-1.0)                              | User.Read          |
 | [/ме/фото/$value](/graph/api/profilephoto-get?view=graph-rest-beta)        | User.Read          |

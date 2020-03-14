@@ -3,18 +3,18 @@ title: Получение governanceRoleAssignmentRequest
 description: 'Получение governanceRoleAssignmentRequest. '
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: 86edec1ad26b703da07541411342832b95aea568
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: davidmu1
+ms.prod: microsoft-identitiy-platform
+ms.openlocfilehash: 1e659e5b3aefbd3995bd4e04b28b5de87d2f4fe4
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42421118"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639830"
 ---
 # <a name="get-governanceroleassignmentrequest"></a>Получение governanceRoleAssignmentRequest
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,11 +23,11 @@ ms.locfileid: "42421118"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения              |
+|Тип разрешения      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Не поддерживается. |
+|Приложение | Привилежедакцесс. Read. Азурересаурцес |
 
 Кроме области разрешений, для него требуется запрашивающий 
 *   для ресурса по крайней мере одно назначение роли; также

@@ -3,12 +3,12 @@ title: Компонент "люди" в наборе инструментов Mi
 description: Вы можете использовать `mgt-people` веб-компонент для отображения группы людей или контактов с помощью фотографий или инициалов.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 21a530abe227897941c59115a17522cf79d4b163
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 78dc1504d7f46756809abcf922dfcea431fd796c
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40870906"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639963"
 ---
 # <a name="people-component-in-the-microsoft-graph-toolkit"></a>Компонент "люди" в наборе инструментов Microsoft Graph
 
@@ -18,13 +18,11 @@ ms.locfileid: "40870906"
 
 ## <a name="example"></a>Пример
 
-[Пример жсфиддле](https://jsfiddle.net/metulev/az6pqy2r/)
+В приведенном ниже примере показана группа людей, отображаемая с помощью `mgt-people` компонента. С помощью редактора кода можно увидеть, как [Свойства](#properties) изменяют поведение компонента.
 
-```html
-<mgt-people></mgt-people>
-```
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-people--people&source=docs" height="350"></iframe>
 
-![упр. польз.](./images/mgt-people.png)
+[Откройте этот пример в меню упр. dev.](https://mgt.dev/?path=/story/components-mgt-people--people&source=docs)
 
 ## <a name="properties"></a>Свойства
 
@@ -88,7 +86,7 @@ mgt-people {
 
 В этом компоненте используются следующие API и разрешения Microsoft Graph:
 
-| Ресурс | Разрешение |
+| Resource | Разрешение |
 | - | - |
 | [/ме/пеопле](/graph/api/user-list-people?view=graph-rest-1.0) | `People.Read` |
 

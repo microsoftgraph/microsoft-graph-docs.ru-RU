@@ -3,18 +3,18 @@ title: Экспорт Говернанцеролеассигнментрекуе
 description: Получение коллекции Говернанцеролеассигнментрекуестс в формате `application/octet-stream`, который можно проанализировать как CSV-файл в браузере.
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: 616a6a7132d900fc57c2243bf86a372a23d37e77
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: davidmu1
+ms.prod: microsoft-identitiy-platform
+ms.openlocfilehash: 5a4440a8a7870522e50cee7622c6ec7ef95393a9
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42421293"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639858"
 ---
 # <a name="export-governanceroleassignmentrequests"></a>Экспорт Говернанцеролеассигнментрекуестс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,11 +23,11 @@ ms.locfileid: "42421293"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения              |
+|Тип разрешения      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Не поддерживается. |
+|Приложение | Привилежедакцесс. Read. Азурересаурцес |
 
 
 ## <a name="http-request"></a>HTTP-запрос

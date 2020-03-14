@@ -3,12 +3,12 @@ title: Получение компонента в наборе инструме�
 description: Компонент Get позволяет создавать любой запрос GET из Microsoft Graph непосредственно в HTML-коде.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 77beb3940eb29a2c9158fba88d78084639e433ed
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 7c9c3fcc804dd5ba8257a1140791fa2eb60ff4ce
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39921704"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639970"
 ---
 # <a name="get-component-in-the-microsoft-graph-toolkit"></a>Получение компонента в наборе инструментов Microsoft Graph
 
@@ -16,16 +16,11 @@ ms.locfileid: "39921704"
 
 ## <a name="example"></a>Пример
 
-```html
-<mgt-get resource="/me/messages" version="beta" scopes="mail.read" max-pages="2">
-  <template>
-    emails: {{value.length}}
-  </template>
-  <template data-type="loading">
-    loading
-  </template>
-</mgt-get>
-```
+В приведенном ниже примере показано, как `mgt-get` использовать компонент для отображения сообщений пользователя. Вы можете использовать редактор кода, чтобы увидеть, как [Свойства и атрибуты](#properties-and-attributes) изменяют поведение компонента.
+
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-get--get-email&source=docs" height="500"></iframe>
+
+[Откройте этот пример в меню упр. dev.](https://mgt.dev/?path=/story/components-mgt-get--get-email&source=docs)
 
 ## <a name="properties-and-attributes"></a>Свойства и атрибуты
 

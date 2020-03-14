@@ -3,12 +3,12 @@ title: Компонент повестки в наборе инструмент�
 description: Веб-компонент "центр центровой связи" используется для представления событий в календаре пользователя или группы.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 0676c7ab66e899aa4af3dea0f623f301ce9b9f4e
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 334da23db286c7243b9722cae443913219a97f7f
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866891"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639949"
 ---
 # <a name="agenda-component-in-the-microsoft-graph-toolkit"></a>Компонент повестки в наборе инструментов Microsoft Graph
 
@@ -16,13 +16,11 @@ ms.locfileid: "40866891"
 
 ## <a name="example"></a>Пример
 
-[Пример жсфиддле](https://jsfiddle.net/metulev/ojt2c7vp/)
+В следующем примере показаны события календаря вошедшего пользователя, отображаемые с помощью `mgt-agenda` компонента. С помощью редактора кода можно увидеть, как [Свойства](#properties) изменяют поведение компонента.
 
-```html
-<mgt-agenda group-by-day></mgt-agenda>
-```
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-agenda--simple&source=docs" height="500"></iframe>
 
-![центр, повестка](./images/mgt-agenda.png)
+[Откройте этот пример в меню упр. dev.](https://mgt.dev/?path=/story/components-mgt-agenda--simple&source=docs)
 
 ## <a name="properties"></a>Свойства
 

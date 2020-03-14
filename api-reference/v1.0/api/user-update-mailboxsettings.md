@@ -6,11 +6,11 @@ author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
 ms.openlocfilehash: 088b1f1d6f575cc96029f282ae6608cdeff6b3fb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508914"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42618720"
 ---
 # <a name="update-user-mailbox-settings"></a>Обновление параметров почтового ящика пользователя
 
@@ -60,9 +60,9 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Параметры конфигурации для автоматического уведомления отправителя о входящем письме с помощью сообщения от пользователя, вошедшего в систему. Вы можете настроить такие уведомления только для диапазона дат в будущем.|
-|dateFormat|string|Формат даты для почтового ящика пользователя.|
+|dateFormat|строка|Формат даты для почтового ящика пользователя.|
 |language|[localeInfo](../resources/localeinfo.md)|Сведения о языковом стандарте пользователя, в том числе о предпочитаемом языке и стране или регионе.|
-|тимеформат|string|Формат времени для почтового ящика пользователя.|
+|тимеформат|строка|Формат времени для почтового ящика пользователя.|
 |timeZone|string|Часовой пояс, используемый по умолчанию, для почтового ящика пользователя.|
 |workingHours|[workingHours](../resources/workinghours.md)|Часы, дни недели и часовой пояс работы пользователя.|
 
@@ -132,7 +132,7 @@ Content-Type: application/json
 
 
 #### <a name="response"></a>Отклик
-Ответ включает обновленные параметры автоматических ответов. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ответ включает обновленные параметры автоматических ответов. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "name": "update_mailboxsettings_1",

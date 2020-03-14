@@ -1,203 +1,89 @@
 ---
-title: Набор средств Microsoft Graph
+title: 'Набор средств Microsoft Graph: веб-компоненты на платформе Microsoft Graph'
 description: Набор инструментов Microsoft Graph представляет собой набор ресуабле, независимых от платформы веб-компонентов и вспомогательных средств для доступа к Microsoft Graph и работы с ним.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: f777a6ecd0b7b936c5dad6859ac13b2f9f211ac6
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: 348e08212010f66fdde5ee3b752fe901699fbaa9
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333298"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639555"
 ---
-# <a name="microsoft-graph-toolkit"></a>Набор средств Microsoft Graph
+# <a name="microsoft-graph-toolkit-web-components-powered-by-microsoft-graph"></a>Набор средств Microsoft Graph: веб-компоненты на платформе Microsoft Graph
 
-Набор инструментов Microsoft Graph представляет собой набор компонентов и вспомогательных программ для доступа к Microsoft Graph, не зависящего от платформы. Все компоненты могут получать доступ к Microsoft Graph без необходимости настройки.
+Набор инструментов Microsoft Graph представляет собой набор компонентов и вспомогательных программ для доступа к Microsoft Graph, не зависящего от платформы. Компоненты полностью функционируют прямо из этого поля со встроенными поставщиками, которые проходят проверку подлинности и извлекают данные из Microsoft Graph.
 
-Набор инструментов Microsoft Graph — это отличный ресурс для всех разработчиков, которые стремятся к созданию веб-приложения, вкладки Microsoft Teams или веб-части SharePoint, выполняющей вызовы Microsoft Graph. Предоставляя компоненты пользовательского интерфейса, предназначенные для внешнего вида и работы с Microsoft 365, набор инструментов сокращает время и стоимость интеграции с платформой. Все компоненты пользовательского интерфейса проходят проверку подлинности и получают доступ к данным из Microsoft Graph. Компоненты полностью настраиваются с помощью CSS и шаблонов, поэтому вы можете соотнесение с уникальной фирменной символикой и управлять содержимым, отображаемым в компонентах.
+Набор средств Microsoft Graph позволяет легко использовать Microsoft Graph в приложении. В приведенном ниже примере показано, как пользователи, вошедшего в систему, и их события календаря отображаются только с двумя строками кода, используя компоненты [входа](./components/login.md) и [повестки](./components/agenda.md) .
 
-## <a name="get-started"></a>Начало работы
+<iframe src="https://mgt.dev/iframe.html?id=samples-general--login-to-show-agenda&source=docs&source=docs" height="400"></iframe>
 
-Вы можете использовать компоненты, обратившись непосредственно к загрузчику (через унпкг) или установив пакет NPM.
+[Откройте этот пример в меню упр. dev.](https://mgt.dev/?path=/story/samples-general--login-to-show-agenda&source=docs)
 
-![Анимированный GIF-файл, который показывает ссылку на загрузчик для использования компонентов набора инструментов](images/get-started.gif)
+## <a name="whats-in-the-microsoft-graph-toolkit"></a>Что входит в набор средств Microsoft Graph?
 
-Сведения о том, как приступить к работе с набором инструментов Microsoft Graph, можно найти в [видеоролике](https://www.youtube.com/watch?v=oZCGb2MMxa0)"Приступая к работе".
+### <a name="components"></a>Компоненты
 
-### <a name="use-via-mgt-loader"></a>Использование с помощью упр. загрузчиком
+Набор средств Microsoft Graph включает в себя набор веб-компонентов для наиболее часто создаваемых интерфейсов API Microsoft Graph.
 
-Просмотрите следующий [Пример жсфиддле](https://jsfiddle.net/metulev/9phqxLd5/).
+|Компонент|Описание|
+|---------|-----------|
+|[Вход](./components/login.md)|Кнопка и всплывающий элемент управления для проверки подлинности пользователя с платформой Microsoft Identity и отображения сведений о профиле пользователя при входе.|
+|[Пользователь](./components/person.md)|Отображает пользователя или контакт по фотографии, названию и/или адресу электронной почты.|
+|[Люди](./components/people.md)|Отображает группу людей или контактов по их фотографиям или инициалам.|
+|[Повестка](./components/agenda.md)|Отображает события в календаре пользователя или группы.|
+|[Tasks](./components/tasks.md)|Показывает и разрешает добавлять, удалять, завершать или изменять задачи из планировщика (Майкрософт) или задачи Майкрософт.|
+|[Средство выбора людей](./components/people-picker.md)|Предоставляет возможность поиска людей и отображения списка результатов.|
+|[Карточка лица](./components/person-card.md)|Раскрывающееся меню, используемое компонентом Person для отображения дополнительных сведений о профиле пользователя.|
+|[получение](./components/get.md);|Сделайте запрос GET к любому API Microsoft Graph непосредственно в HTML-коде.|
 
-```html
-<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
-```
+### <a name="providers"></a>Поставщики
 
-Затем можно использовать компоненты на HTML-странице. Ниже приведен полный рабочий пример с поставщиком MSAL.
+Компоненты лучше всего подходят для использования с [поставщиками](/providers/providers.md). Поставщики обеспечивают проверку подлинности и предоставляют реализацию для получения маркеров доступа для вызова API Microsoft Graph.
 
-```html
-<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
-<mgt-msal-provider client-id="[CLIENT-ID]"></mgt-msal-provider>
-<mgt-login></mgt-login>
+|Поставщики|Описание|
+|---------|-----------|
+|[Msal](./providers/msal.md)|Использует MSAL. js для входа пользователей и получения маркеров для использования с Microsoft Graph.|
+|[SharePoint](./providers/sharepoint.md)|Проверяет подлинность и предоставляет Microsoft Graph доступ к компонентам в веб-частях SharePoint.|
+|[Teams](./providers/teams.md)|Проверка подлинности и предоставление доступа Microsoft Graph к компонентам внутри вкладок Microsoft Teams.|
+|[Сервера](./providers/proxy.md)|Позволяет использовать внутреннюю проверку подлинности путем маршрутизации всех вызовов Microsoft Graph через серверный сервер.|
+|[Пользовательский](./providers/custom.md)|Создайте настраиваемый поставщик, чтобы включить проверку подлинности и доступ к Microsoft Graph с помощью существующего кода проверки подлинности приложения.|
 
-<!-- <script>
-    // alternatively, you can set the provider in code and provide more options
-    mgt.Providers.globalProvider = new mgt.MsalProvider({clientId: '[CLIENT-ID]'});
-</script> -->
-```
+## <a name="why-use-the-microsoft-graph-toolkit"></a>Зачем использовать набор средств Microsoft Graph?
 
-> **Примечание:** Для перенаправления проверки подлинности MSAL необходимо, чтобы страница была размещена на веб-сервере. Если вы только начинаете работать и хотите поиграть, вы можете использовать [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) в Visual Studio Code.
+Набор средств Microsoft Graph позволяет быстро и легко интегрировать общедоступные возможности Microsoft Graph в свое приложение.
 
-### <a name="use-via-npm-es6-modules"></a>Использование через NPM (модули ES6)
+:::row:::
+   :::column span="":::
+    **Сокращение времени разработки**
 
-С помощью модулей ES6 вы можете получить полный доступ к процессу объединения, и вы можете объединить только код, который требуется для вашего сайта. Сначала добавьте пакет NPM:
+    Работа по подключению к API Microsoft Graph и визуализация данных в пользовательском интерфейсе, которая выглядит так же, как Microsoft365, выполняется без необходимости настройки.
+  :::column-end:::
+  :::column span="":::
+    **Работает везде**
 
-```bash
-npm install @microsoft/mgt
-```
+    Все компоненты основываются на веб-стандартах и тесно работают с любым современным браузером и веб-средой (реагируем, радиально, Vue и т. д.). 
+  :::column-end:::
+  :::column span="":::
+    **Прекрасная, но гибкая**
 
-Теперь вы можете ссылаться на все компоненты на странице, которую вы используете:
+    Компоненты предназначены для внешнего вида и работы с Microsoft365, но также могут настраиваться с помощью [настраиваемых свойств CSS](./style.md) и [шаблонов](./templates.md).
+  :::column-end:::
+:::row-end:::
 
-```html
-<script src="node_modules/@microsoft/mgt/dist/es6/components.js"></script>
-```
+## <a name="who-should-use-it"></a>Кто должен использовать его?
 
-Или просто сделайте ссылку на необходимый компонент и не загружаете все остальные:
+Набор средств Microsoft Graph прекрасно подходит разработчикам всех уровней опыта разработки веб-приложения, вкладки Microsoft Teams или веб-части SharePoint, которые подключаются к данным из Microsoft Graph и обращаются к ним.
 
-```html
-<script src="node_modules/@microsoft/mgt/dist/es6/components/mgt-login/mgt-login.js"></script>
-```
+## <a name="where-can-i-use-it"></a>Где можно использовать его?
 
-Аналогичным образом, чтобы добавить поставщика, можно добавить его в качестве компонента:
+Набор средств Microsoft Graph поддерживается в следующих браузерах.
 
-```html
-<script src="node_modules/@microsoft/mgt/dist/es6/components/providers/mgt-msal-provider.js"></script>
+|![Microsoft Edge](images/edgeIcon.png)|![Internet Explorer 11](images/internetExplorerIcon.png)|![Firefox](images/firefoxIcon.png)|![Chrome](images/chromeIcon.png)|![Safari](images/safariIcon.png)|![Opera](images/operaIcon.png)|![Samsung Internet](images/samsungInternetIcon.png)|
+|----|----|----|----|----|----|----|
+|**Microsoft Edge**|**IE 11**|**Firefox**|**Chrome**|**Safari**|**Opera**|**Samsung**|
 
-<mgt-msal-provider client-id="[CLIENT-ID]"></mgt-msal-provider>
-```
+## <a name="next-steps"></a>Дальнейшие действия
 
-Или добавьте его в код:
-
-```html
-<script type="module">
-  import { Providers, MsalProvider } from '@microsoft/mgt';
-
-  Providers.globalProvider = new MsalProvider({ clientId: '[CLIENT-ID]' });
-</script>
-```
-
-## <a name="providers"></a>Поставщики
-
-Компоненты лучше всего подходят для использования с [поставщиками](./providers.md). Поставщик предоставляет доступ к проверке подлинности и интерфейсам API, которые используются компонентами для вызова Microsoft Graph.
-
-Набор средств содержит поставщики для [MSAL](./providers/msal.md), [SharePoint](./providers/sharepoint.md), [Teams](./providers/teams.md)и надстроек Office (ожидается в ближайшее время). Вы также можете создавать собственные поставщики, расширяя абстрактный класс [Ипровидер].
-
-## <a name="polyfills"></a>Polyfills
-
-Если вы используете модули ES6 из пакета NPM, не забудьте включить в проект только те, которые не включены автоматически. Дополнительные сведения [см.](https://www.webcomponents.org/polyfills)
-
-Если вы используете скрипт МГТ-лоадер. js из пакета в унпкг, то эти функции уже включены.
-
-
-## <a name="using-the-components-with-react-angular-and-other-frameworks"></a>Использование компонентов с реагирует, радиально и другими платформами
-
-Веб-компоненты основываются на нескольких веб-стандартах и могут использоваться с любой уже используемой платформой. Однако не все платформы обрабатывают веб-компоненты одинаковым образом. Чтобы узнать больше о возможностях, которые могут применяться в зависимости от вашей платформы, ознакомьтесь со статьей " [настраиваемые элементы везде](https://custom-elements-everywhere.com/) ".
-
-В следующих разделах приводится краткий обзор использования компонентов набора инструментов Microsoft Graph с откликом и радиальным.
-
-### <a name="react"></a>React
-
-Реагирует, что все данные передаются в настраиваемые элементы формы HTML Attributes. Для примитивных данных это нормально, но не работает при передаче форматированных данных, таких как объекты или массивы. В этих случаях для передачи объекта потребуется использовать `ref` объект.
-
-Пример
-
-```jsx
-// import all the components
-import '@microsoft/mgt';
-
-class App extends Component {
-  render() {
-    return <mgt-person show-name ref={el => (el.personDetails = { displayName: 'Nikola Metulev' })} />;
-  }
-}
-```
-
-Так как реакция реализует собственную виртуальную систему обработки событий, она не может прослушивать события модели DOM, поступающие из настраиваемых элементов, без использования обходного пути. Необходимо использовать элемент a `ref` для ссылки на компоненты набора инструментов и вручную присоединить прослушиватели событий с помощью метода addEventListener, как показано в следующем примере.
-
-```jsx
-// you can just import a single component
-import '@microsoft/mgt/dist/es6/components/mgt-login/mgt-login.js';
-
-class App extends Component {
-  render() {
-    return <mgt-login ref="loginComponent" />;
-  }
-
-  componentDidMount() {
-    this.refs.loginComponent.addEventListener('loginCompleted', e => {
-      // handle event
-    });
-  }
-}
-```
-
-#### <a name="react-typescript-and-tsx"></a>Реакция, typescript и целевой серверу
-
-Известная ошибка может возникать при использовании настраиваемых элементов с помощью реакции и typescript. Typescript выдаст ошибку при попытке использовать компонент в целевом элементе. Временное решение заключается в определении настраиваемого элемента в коде, как показано ниже.
-
-```ts
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      'mgt-login': any;
-    }
-  }
-}
-```
-
-Затем вы можете использовать его в целевом параметре как `<mgt-login></mgt-login>`.
-
-### <a name="angular"></a>Angular
-
-Синтаксис привязки по умолчанию в радиальной системе всегда будет задавайте свойства элемента. Это хорошо подходит для сложных данных, таких как объекты и массивы, а также для примитивных значений.
-
-Прежде чем использовать настраиваемые элементы, включите в него `app.module.ts` `CUSTOM_ELEMENT_SCHEMA` `@NgModule() decorator`настраиваемые элементы, как показано в следующем примере.
-
-```ts
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-
-import { AppComponent } from './app.component';
-
-@NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule {}
-```
-
-Затем вы можете импортировать компонент, который вы хотите использовать, в файле Component \*. TS.
-
-```ts
-import { Component } from '@angular/core';
-import '@microsoft/mgt/dist/es6/components/mgt-person/mgt-person';
-
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
-})
-export class AppComponent {
-  person = {
-    displayName: 'Nikola Metulev'
-  };
-}
-```
-
-Наконец, используйте компонент, как обычно в шаблоне.
-
-```html
-<mgt-person [personDetails]="person" show-name></mgt-person>
-```
+- Опробуйте компоненты в [интерактивная среда](https://mgt.dev).
+- Приступите к [работе](get-started.md) с набором инструментов Microsoft Graph.

@@ -3,11 +3,11 @@ title: 'Политики поддержки и внесения критичес
 description: В этой статье описаны политики поддержки и внесения критических изменений в Microsoft Graph, а также доступные версии API Microsoft Graph.
 localization_priority: Priority
 ms.openlocfilehash: e2a3cd66c3d03ce5c2569449d99830865cb1810b
-ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "42562544"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42618818"
 ---
 # <a name="versioning-support-and-breaking-change-policies-for-microsoft-graph"></a>Политики поддержки и внесения критических изменений в Microsoft Graph, а также доступные версии
 

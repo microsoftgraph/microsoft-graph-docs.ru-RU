@@ -6,11 +6,11 @@ ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
 ms.openlocfilehash: 099a5af3dafe3d1f7531f88583236cb1ab381ab7
-ms.sourcegitcommit: dbc547a845e507aa934025f9dc73563c13b4fb90
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/12/2020
-ms.locfileid: "42606859"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42618836"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Настройка уведомлений об изменениях в пользовательских данных
 

@@ -5,12 +5,12 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 260aa688c3116222638bf91349a72acea0fa1493
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 73a01402b444ddd7ec8004376a2221bacafcf8b8
+ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42590972"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42618682"
 ---
 # <a name="outlook-mail-api-overview"></a>Обзор API почты Outlook
 
@@ -80,7 +80,6 @@ Outlook — это центр обмена сообщениями в Office 36
   - [Получение общих сообщений](outlook-share-messages-folders.md)
   - Как [отправлять почту от имени другого пользователя](outlook-send-mail-from-other-user.md)
   - [Получение неизменяемых идентификаторов для ресурсов Outlook](outlook-immutable-id.md)
-  
 
 - Узнайте больше о том, как [использовать API почты](/graph/api/resources/mail-api-overview?view=graph-rest-1.0), и о [вариантах использования](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) этого API в Microsoft Graph версии 1.0.
 

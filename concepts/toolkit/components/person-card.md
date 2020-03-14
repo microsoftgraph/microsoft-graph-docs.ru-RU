@@ -3,24 +3,26 @@ title: Компонент Person Card в наборе инструментов M
 description: Компонент Person-Card является компонентом для отображения дополнительных сведений, относящихся к пользователю.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 7f4f20773b152db037d3b57481aa5e8638866f52
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 336e6beabc227a2574e41cf6a658d38fdabfcdcf
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955871"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639928"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Компонент Person Card в наборе инструментов Microsoft Graph
 
 Компонент Person-Card — это реагирующий на работу компонент для отображения дополнительных сведений, относящихся к пользователю. Он обычно используется в качестве всплывающего элемента в `mgt-person` компоненте.
 
 Дополнительную информацию о компоненте `mgt-person` можно узнать в статье [упр](./person.md).
-  
+
 ## <a name="example"></a>Пример
 
-```html
-<mgt-person-card person-details="{personObject}" person-image="imgUrl"></mgt-person-card>
-```
+В следующем примере показано использование `mgt-person-card` компонента с `mgt-person` компонентом. Наведите указатель мыши на лицо, чтобы увидеть карточку сотрудника, и используйте редактор кода, чтобы увидеть, как [Свойства](#properties) изменяют поведение компонента.
+  
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-card--person-card-hover&source=docs" height="400"></iframe>
+
+[Откройте этот пример в меню упр. dev.](https://mgt.dev/?path=/story/components-mgt-person-card--person-card-hover&source=docs)
 
 ## <a name="properties"></a>Свойства
 

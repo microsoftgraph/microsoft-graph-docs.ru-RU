@@ -3,12 +3,12 @@ title: Компонент "Выбор людей"
 description: Вы можете использовать веб-компонент "центр управления", чтобы выполнить поиск указанного числа людей и отобразить список результатов с помощью Microsoft Graph.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 65ff9382de97ddcd7a0b4bd8a315f8350a80ec35
-ms.sourcegitcommit: 2a601cffdb8df375b2ee32a1f35b8f71e0ffd04f
+ms.openlocfilehash: 91b11006df02d563902b99c79c4b1ec09bb7e50a
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "41023126"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639942"
 ---
 # <a name="people-picker-component"></a>Компонент "Выбор людей"
 
@@ -18,13 +18,11 @@ ms.locfileid: "41023126"
 
 ## <a name="example"></a>Пример
 
-[Пример жсфиддле](https://jsfiddle.net/metulev/jdv38fg0/)
+В приведенном ниже примере `mgt-people-picker` показан компонент. Начните поиск имени, чтобы увидеть результаты, и используйте редактор кода, чтобы увидеть, как [Свойства](#properties) изменяют поведение компонента.
 
-```html
-<mgt-people-picker></mgt-people-picker>
-```
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-people-picker--people-picker&source=docs" height="450"></iframe>
 
-![Центр управления "Выбор людей"](./images/mgt-people-picker-image.png)
+[Откройте этот пример в меню упр. dev.](https://mgt.dev/?path=/story/components-mgt-people-picker--people-picker&source=docs)
 
 ## <a name="properties"></a>Свойства
 
@@ -82,7 +80,7 @@ mgt-people-picker {
 
  `mgt-people-picker`поддерживает несколько [шаблонов](../templates.md) , которые можно использовать для замены определенных частей компонента. Чтобы указать шаблон, включите `<template>` элемент в компонент и задайте для него `data-type` одно из следующих значений.
 
-| Тип данных | Контекст данных | Description |
+| Тип данных | Контекст данных | Описание |
 | --- | --- | --- |
 | загрузки | NULL: нет данных | Шаблон, используемый для отображения состояния средства выбора при запросе к Graph. |
 | error | NULL: нет данных| Шаблон, используемый, если поиск пользователей не возвращает пользователей. |

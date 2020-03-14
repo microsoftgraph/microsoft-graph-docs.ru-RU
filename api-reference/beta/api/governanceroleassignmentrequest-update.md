@@ -3,18 +3,18 @@ title: Обновление Говернанцеролеассигнментре
 description: Позволяет администраторам обновлять свои решения (`AdminApproved` или `AdminDenied`) в говернанцеролеассигнментрекуестс, которые находятся в состоянии `PendingAdminDecision`.
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: d8fc97ff329b171050b0309161ec818a9996d4ec
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: davidmu1
+ms.prod: microsoft-identitiy-platform
+ms.openlocfilehash: 17e4c273a4ab3da5c5d4da4a54c9b57e339b5b81
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42420950"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639809"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>Обновление Говернанцеролеассигнментрекуестс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +25,7 @@ ms.locfileid: "42420950"
 
 >**Примечание:** Кроме того, для этого API необходимо, чтобы у автора `Active` запроса было по крайней мере одно назначение роли администратора (`owner` или `user access administrator`) для ресурса, к которому относится [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) . 
 
-|Тип разрешения      | Разрешения              |
+|Тип разрешения      | Permissions              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
@@ -47,10 +47,10 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 
 |Параметры      |Тип                   |Обязательный |Описание|
 |:-------------|:----------------------|:--------|:----------|
-|reason        |String                 |✓        |Причина, предоставляемая администратором для своего решения.|
-|решении        |String                 |✓        |Принятие решения администратором запроса на назначение роли. Значение должно быть Обновлено как `AdminApproved` или. `AdminDenied`|
+|reason        |Строка                 |✓        |Причина, предоставляемая администратором для своего решения.|
+|решении        |Строка                 |✓        |Принятие решения администратором запроса на назначение роли. Значение должно быть Обновлено как `AdminApproved` или. `AdminDenied`|
 |schedule      |[governanceSchedule](../resources/governanceschedule.md)|        | Расписание запроса на назначение роли. Для состояния `AdminApproved`это обязательное требование.|
-|ассигнментстате      |String|         | Состояние присваивания, а также значения: `Eligible` или. `Active` Для решения `AdminApproved`это необходимо. |
+|ассигнментстате      |Строка|         | Состояние присваивания, а также значения: `Eligible` или. `Active` Для решения `AdminApproved`это необходимо. |
 ### <a name="response"></a>Отклик
 Этот метод можно применять только к запросам, которые находятся в состоянии `PendingAdminDecision`.
 
