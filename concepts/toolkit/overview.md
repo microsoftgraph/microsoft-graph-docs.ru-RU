@@ -1,203 +1,89 @@
 ---
-title: Набор средств Microsoft Graph
+title: 'Набор средств Microsoft Graph: веб-компоненты на платформе Microsoft Graph'
 description: Набор инструментов Microsoft Graph представляет собой набор ресуабле, независимых от платформы веб-компонентов и вспомогательных средств для доступа к Microsoft Graph и работы с ним.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: f777a6ecd0b7b936c5dad6859ac13b2f9f211ac6
-ms.sourcegitcommit: 2fb178ae78b5ecc47207d2b19d0c5a46e07e0960
+ms.openlocfilehash: 348e08212010f66fdde5ee3b752fe901699fbaa9
+ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2019
-ms.locfileid: "37333298"
+ms.lasthandoff: 03/14/2020
+ms.locfileid: "42639555"
 ---
-# <a name="microsoft-graph-toolkit"></a><span data-ttu-id="702b2-103">Набор средств Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="702b2-103">Microsoft Graph Toolkit</span></span>
+# <a name="microsoft-graph-toolkit-web-components-powered-by-microsoft-graph"></a><span data-ttu-id="74602-103">Набор средств Microsoft Graph: веб-компоненты на платформе Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="74602-103">Microsoft Graph Toolkit: Web Components powered by Microsoft Graph</span></span>
 
-<span data-ttu-id="702b2-104">Набор инструментов Microsoft Graph представляет собой набор компонентов и вспомогательных программ для доступа к Microsoft Graph, не зависящего от платформы.</span><span class="sxs-lookup"><span data-stu-id="702b2-104">The Microsoft Graph Toolkit is a collection of reusable, framework-agnostic web components and helpers for accessing and working with Microsoft Graph.</span></span> <span data-ttu-id="702b2-105">Все компоненты могут получать доступ к Microsoft Graph без необходимости настройки.</span><span class="sxs-lookup"><span data-stu-id="702b2-105">All components can access Microsoft Graph without any customization required.</span></span>
+<span data-ttu-id="74602-104">Набор инструментов Microsoft Graph представляет собой набор компонентов и вспомогательных программ для доступа к Microsoft Graph, не зависящего от платформы.</span><span class="sxs-lookup"><span data-stu-id="74602-104">The Microsoft Graph Toolkit is a collection of reusable, framework-agnostic web components and helpers for accessing and working with Microsoft Graph.</span></span> <span data-ttu-id="74602-105">Компоненты полностью функционируют прямо из этого поля со встроенными поставщиками, которые проходят проверку подлинности и извлекают данные из Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="74602-105">The components are fully functional right of out of the box, with built in providers that authenticate with and fetch data from Microsoft Graph.</span></span>
 
-<span data-ttu-id="702b2-106">Набор инструментов Microsoft Graph — это отличный ресурс для всех разработчиков, которые стремятся к созданию веб-приложения, вкладки Microsoft Teams или веб-части SharePoint, выполняющей вызовы Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="702b2-106">The Microsoft Graph Toolkit is a great resource for any developer looking to create a web app, Microsoft Teams tab, or SharePoint web part that makes calls to Microsoft Graph.</span></span> <span data-ttu-id="702b2-107">Предоставляя компоненты пользовательского интерфейса, предназначенные для внешнего вида и работы с Microsoft 365, набор инструментов сокращает время и стоимость интеграции с платформой.</span><span class="sxs-lookup"><span data-stu-id="702b2-107">By providing UI components that are designed to look and feel like Microsoft 365 experiences, the Toolkit reduces your time and cost to integrate with the platform.</span></span> <span data-ttu-id="702b2-108">Все компоненты пользовательского интерфейса проходят проверку подлинности и получают доступ к данным из Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="702b2-108">All the UI components authenticate with and access data from Microsoft Graph.</span></span> <span data-ttu-id="702b2-109">Компоненты полностью настраиваются с помощью CSS и шаблонов, поэтому вы можете соотнесение с уникальной фирменной символикой и управлять содержимым, отображаемым в компонентах.</span><span class="sxs-lookup"><span data-stu-id="702b2-109">The components are fully customizable using CSS and templating so you can match your unique branding and control the content displayed in the components.</span></span>
+<span data-ttu-id="74602-106">Набор средств Microsoft Graph позволяет легко использовать Microsoft Graph в приложении.</span><span class="sxs-lookup"><span data-stu-id="74602-106">The Microsoft Graph Toolkit makes it easy to use Microsoft Graph in your application.</span></span> <span data-ttu-id="74602-107">В приведенном ниже примере показано, как пользователи, вошедшего в систему, и их события календаря отображаются только с двумя строками кода, используя компоненты [входа](./components/login.md) и [повестки](./components/agenda.md) .</span><span class="sxs-lookup"><span data-stu-id="74602-107">In the example below, see how a signed in user and their calendar events are displayed with just two lines of code by using the [Login](./components/login.md) and [Agenda](./components/agenda.md) components.</span></span>
 
-## <a name="get-started"></a><span data-ttu-id="702b2-110">Начало работы</span><span class="sxs-lookup"><span data-stu-id="702b2-110">Get started</span></span>
+<iframe src="https://mgt.dev/iframe.html?id=samples-general--login-to-show-agenda&source=docs&source=docs" height="400"></iframe>
 
-<span data-ttu-id="702b2-111">Вы можете использовать компоненты, обратившись непосредственно к загрузчику (через унпкг) или установив пакет NPM.</span><span class="sxs-lookup"><span data-stu-id="702b2-111">You can use the components by referencing the loader directly (via unpkg), or by installing the npm package.</span></span>
+[<span data-ttu-id="74602-108">Откройте этот пример в меню упр. dev.</span><span class="sxs-lookup"><span data-stu-id="74602-108">Open this example in mgt.dev</span></span>](https://mgt.dev/?path=/story/samples-general--login-to-show-agenda&source=docs)
 
-![Анимированный GIF-файл, который показывает ссылку на загрузчик для использования компонентов набора инструментов](images/get-started.gif)
+## <a name="whats-in-the-microsoft-graph-toolkit"></a><span data-ttu-id="74602-109">Что входит в набор средств Microsoft Graph?</span><span class="sxs-lookup"><span data-stu-id="74602-109">What's in the Microsoft Graph Toolkit?</span></span>
 
-<span data-ttu-id="702b2-113">Сведения о том, как приступить к работе с набором инструментов Microsoft Graph, можно найти в [видеоролике](https://www.youtube.com/watch?v=oZCGb2MMxa0)"Приступая к работе".</span><span class="sxs-lookup"><span data-stu-id="702b2-113">For details about how to get started with the Microsoft Graph Toolkit, see the [Get started video](https://www.youtube.com/watch?v=oZCGb2MMxa0).</span></span>
+### <a name="components"></a><span data-ttu-id="74602-110">Компоненты</span><span class="sxs-lookup"><span data-stu-id="74602-110">Components</span></span>
 
-### <a name="use-via-mgt-loader"></a><span data-ttu-id="702b2-114">Использование с помощью упр. загрузчиком</span><span class="sxs-lookup"><span data-stu-id="702b2-114">Use via mgt-loader</span></span>
+<span data-ttu-id="74602-111">Набор средств Microsoft Graph включает в себя набор веб-компонентов для наиболее часто создаваемых интерфейсов API Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="74602-111">The Microsoft Graph Toolkit includes a collection of web components for the most commonly built experiences powered by Microsoft Graph APIs.</span></span>
 
-<span data-ttu-id="702b2-115">Просмотрите следующий [Пример жсфиддле](https://jsfiddle.net/metulev/9phqxLd5/).</span><span class="sxs-lookup"><span data-stu-id="702b2-115">See the following [jsfiddle example](https://jsfiddle.net/metulev/9phqxLd5/).</span></span>
+|<span data-ttu-id="74602-112">Компонент</span><span class="sxs-lookup"><span data-stu-id="74602-112">Component</span></span>|<span data-ttu-id="74602-113">Описание</span><span class="sxs-lookup"><span data-stu-id="74602-113">Description</span></span>|
+|---------|-----------|
+|[<span data-ttu-id="74602-114">Вход</span><span class="sxs-lookup"><span data-stu-id="74602-114">Login</span></span>](./components/login.md)|<span data-ttu-id="74602-115">Кнопка и всплывающий элемент управления для проверки подлинности пользователя с платформой Microsoft Identity и отображения сведений о профиле пользователя при входе.</span><span class="sxs-lookup"><span data-stu-id="74602-115">A button and a flyout control to authenticate a user with the Microsoft Identity platform and display the user's profile information on sign in.</span></span>|
+|[<span data-ttu-id="74602-116">Пользователь</span><span class="sxs-lookup"><span data-stu-id="74602-116">Person</span></span>](./components/person.md)|<span data-ttu-id="74602-117">Отображает пользователя или контакт по фотографии, названию и/или адресу электронной почты.</span><span class="sxs-lookup"><span data-stu-id="74602-117">Displays a person or contact by their photo, name, and/or email address.</span></span>|
+|[<span data-ttu-id="74602-118">Люди</span><span class="sxs-lookup"><span data-stu-id="74602-118">People</span></span>](./components/people.md)|<span data-ttu-id="74602-119">Отображает группу людей или контактов по их фотографиям или инициалам.</span><span class="sxs-lookup"><span data-stu-id="74602-119">Displays a group of people or contacts by their photos or initials.</span></span>|
+|[<span data-ttu-id="74602-120">Повестка</span><span class="sxs-lookup"><span data-stu-id="74602-120">Agenda</span></span>](./components/agenda.md)|<span data-ttu-id="74602-121">Отображает события в календаре пользователя или группы.</span><span class="sxs-lookup"><span data-stu-id="74602-121">Displays events in a user or group's calendar.</span></span>|
+|[<span data-ttu-id="74602-122">Tasks</span><span class="sxs-lookup"><span data-stu-id="74602-122">Tasks</span></span>](./components/tasks.md)|<span data-ttu-id="74602-123">Показывает и разрешает добавлять, удалять, завершать или изменять задачи из планировщика (Майкрософт) или задачи Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="74602-123">Displays and enables adding, removing, completing, or editing of tasks from Microsoft Planner or Microsoft To-Do.</span></span>|
+|[<span data-ttu-id="74602-124">Средство выбора людей</span><span class="sxs-lookup"><span data-stu-id="74602-124">People picker</span></span>](./components/people-picker.md)|<span data-ttu-id="74602-125">Предоставляет возможность поиска людей и отображения списка результатов.</span><span class="sxs-lookup"><span data-stu-id="74602-125">Provides the ability to search for people and renders the list of results.</span></span>|
+|[<span data-ttu-id="74602-126">Карточка лица</span><span class="sxs-lookup"><span data-stu-id="74602-126">Person card</span></span>](./components/person-card.md)|<span data-ttu-id="74602-127">Раскрывающееся меню, используемое компонентом Person для отображения дополнительных сведений о профиле пользователя.</span><span class="sxs-lookup"><span data-stu-id="74602-127">A flyout used on the person component to display more profile information about a user.</span></span>|
+|<span data-ttu-id="74602-128">[получение](./components/get.md);</span><span class="sxs-lookup"><span data-stu-id="74602-128">[Get](./components/get.md)</span></span>|<span data-ttu-id="74602-129">Сделайте запрос GET к любому API Microsoft Graph непосредственно в HTML-коде.</span><span class="sxs-lookup"><span data-stu-id="74602-129">Make a GET query to any Microsoft Graph API directly in your HTML.</span></span>|
 
-```html
-<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
-```
+### <a name="providers"></a><span data-ttu-id="74602-130">Поставщики</span><span class="sxs-lookup"><span data-stu-id="74602-130">Providers</span></span>
 
-<span data-ttu-id="702b2-116">Затем можно использовать компоненты на HTML-странице.</span><span class="sxs-lookup"><span data-stu-id="702b2-116">You can then start using the components in your HTML page.</span></span> <span data-ttu-id="702b2-117">Ниже приведен полный рабочий пример с поставщиком MSAL.</span><span class="sxs-lookup"><span data-stu-id="702b2-117">The following is a full working example with the MSAL provider.</span></span>
+<span data-ttu-id="74602-131">Компоненты лучше всего подходят для использования с [поставщиками](/providers/providers.md).</span><span class="sxs-lookup"><span data-stu-id="74602-131">The components work best when used with a [provider](/providers/providers.md).</span></span> <span data-ttu-id="74602-132">Поставщики обеспечивают проверку подлинности и предоставляют реализацию для получения маркеров доступа для вызова API Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="74602-132">Providers enable authentication and provide the implementation for acquiring the access tokens for calling the Microsoft Graph APIs.</span></span>
 
-```html
-<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
-<mgt-msal-provider client-id="[CLIENT-ID]"></mgt-msal-provider>
-<mgt-login></mgt-login>
+|<span data-ttu-id="74602-133">Поставщики</span><span class="sxs-lookup"><span data-stu-id="74602-133">Providers</span></span>|<span data-ttu-id="74602-134">Описание</span><span class="sxs-lookup"><span data-stu-id="74602-134">Description</span></span>|
+|---------|-----------|
+|[<span data-ttu-id="74602-135">Msal</span><span class="sxs-lookup"><span data-stu-id="74602-135">Msal</span></span>](./providers/msal.md)|<span data-ttu-id="74602-136">Использует MSAL. js для входа пользователей и получения маркеров для использования с Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="74602-136">Uses MSAL.js to sign in users and acquire tokens to use with Microsoft Graph.</span></span>|
+|[<span data-ttu-id="74602-137">SharePoint</span><span class="sxs-lookup"><span data-stu-id="74602-137">SharePoint</span></span>](./providers/sharepoint.md)|<span data-ttu-id="74602-138">Проверяет подлинность и предоставляет Microsoft Graph доступ к компонентам в веб-частях SharePoint.</span><span class="sxs-lookup"><span data-stu-id="74602-138">Authenticates and provides Microsoft Graph access to components inside of SharePoint web parts.</span></span>|
+|[<span data-ttu-id="74602-139">Teams</span><span class="sxs-lookup"><span data-stu-id="74602-139">Teams</span></span>](./providers/teams.md)|<span data-ttu-id="74602-140">Проверка подлинности и предоставление доступа Microsoft Graph к компонентам внутри вкладок Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="74602-140">Authenticates and provides Microsoft Graph access to components inside of Microsoft Teams tabs.</span></span>|
+|[<span data-ttu-id="74602-141">Сервера</span><span class="sxs-lookup"><span data-stu-id="74602-141">Proxy</span></span>](./providers/proxy.md)|<span data-ttu-id="74602-142">Позволяет использовать внутреннюю проверку подлинности путем маршрутизации всех вызовов Microsoft Graph через серверный сервер.</span><span class="sxs-lookup"><span data-stu-id="74602-142">Allows the use of backend authentication by routing all calls to Microsoft Graph through your backend.</span></span>|
+|[<span data-ttu-id="74602-143">Пользовательский</span><span class="sxs-lookup"><span data-stu-id="74602-143">Custom</span></span>](./providers/custom.md)|<span data-ttu-id="74602-144">Создайте настраиваемый поставщик, чтобы включить проверку подлинности и доступ к Microsoft Graph с помощью существующего кода проверки подлинности приложения.</span><span class="sxs-lookup"><span data-stu-id="74602-144">Create a custom provider to enable authentication and access to Microsoft Graph with your application's existing authentication code.</span></span>|
 
-<!-- <script>
-    // alternatively, you can set the provider in code and provide more options
-    mgt.Providers.globalProvider = new mgt.MsalProvider({clientId: '[CLIENT-ID]'});
-</script> -->
-```
+## <a name="why-use-the-microsoft-graph-toolkit"></a><span data-ttu-id="74602-145">Зачем использовать набор средств Microsoft Graph?</span><span class="sxs-lookup"><span data-stu-id="74602-145">Why use the Microsoft Graph Toolkit?</span></span>
 
-> <span data-ttu-id="702b2-118">**Примечание:** Для перенаправления проверки подлинности MSAL необходимо, чтобы страница была размещена на веб-сервере.</span><span class="sxs-lookup"><span data-stu-id="702b2-118">**Note:** MSAL requires the page to be hosted in a web server for the authentication redirects.</span></span> <span data-ttu-id="702b2-119">Если вы только начинаете работать и хотите поиграть, вы можете использовать [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) в Visual Studio Code.</span><span class="sxs-lookup"><span data-stu-id="702b2-119">If you're just getting started and want to play around, you can use [live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in Visual Studio Code.</span></span>
+<span data-ttu-id="74602-146">Набор средств Microsoft Graph позволяет быстро и легко интегрировать общедоступные возможности Microsoft Graph в свое приложение.</span><span class="sxs-lookup"><span data-stu-id="74602-146">The Microsoft Graph Toolkit makes integrating common experiences powered by Microsoft Graph into your own application quick and easy.</span></span>
 
-### <a name="use-via-npm-es6-modules"></a><span data-ttu-id="702b2-120">Использование через NPM (модули ES6)</span><span class="sxs-lookup"><span data-stu-id="702b2-120">Use via NPM (es6 modules)</span></span>
+:::row:::
+   :::column span="":::
+    <span data-ttu-id="74602-147">**Сокращение времени разработки**</span><span class="sxs-lookup"><span data-stu-id="74602-147">**Cut Development Time**</span></span>
 
-<span data-ttu-id="702b2-121">С помощью модулей ES6 вы можете получить полный доступ к процессу объединения, и вы можете объединить только код, который требуется для вашего сайта.</span><span class="sxs-lookup"><span data-stu-id="702b2-121">By using the es6 modules, you have full control of the bundling process and you can bundle only the code you need for your site.</span></span> <span data-ttu-id="702b2-122">Сначала добавьте пакет NPM:</span><span class="sxs-lookup"><span data-stu-id="702b2-122">First, add the npm package:</span></span>
+    <span data-ttu-id="74602-148">Работа по подключению к API Microsoft Graph и визуализация данных в пользовательском интерфейсе, которая выглядит так же, как Microsoft365, выполняется без необходимости настройки.</span><span class="sxs-lookup"><span data-stu-id="74602-148">The work to connect to Microsoft Graph APIs and render the data in a UI that looks and feels like a Microsoft365 experience is done for you, with no customization required.</span></span>
+  :::column-end:::
+  :::column span="":::
+    <span data-ttu-id="74602-149">**Работает везде**</span><span class="sxs-lookup"><span data-stu-id="74602-149">**Works Everywhere**</span></span>
 
-```bash
-npm install @microsoft/mgt
-```
+    <span data-ttu-id="74602-150">Все компоненты основываются на веб-стандартах и тесно работают с любым современным браузером и веб-средой (реагируем, радиально, Vue и т. д.).</span><span class="sxs-lookup"><span data-stu-id="74602-150">All components are based on web standards and work seamlessly with any modern browser and web framework (React, Angular, Vue, etc.).</span></span> 
+  :::column-end:::
+  :::column span="":::
+    <span data-ttu-id="74602-151">**Прекрасная, но гибкая**</span><span class="sxs-lookup"><span data-stu-id="74602-151">**Beautiful but Flexible**</span></span>
 
-<span data-ttu-id="702b2-123">Теперь вы можете ссылаться на все компоненты на странице, которую вы используете:</span><span class="sxs-lookup"><span data-stu-id="702b2-123">Now you can reference all components at the page you are using:</span></span>
+    <span data-ttu-id="74602-152">Компоненты предназначены для внешнего вида и работы с Microsoft365, но также могут настраиваться с помощью [настраиваемых свойств CSS](./style.md) и [шаблонов](./templates.md).</span><span class="sxs-lookup"><span data-stu-id="74602-152">The components are designed to look and feel like Microsoft365 experiences, but are also customizable using [CSS custom properties](./style.md) and [templating](./templates.md).</span></span>
+  :::column-end:::
+:::row-end:::
 
-```html
-<script src="node_modules/@microsoft/mgt/dist/es6/components.js"></script>
-```
+## <a name="who-should-use-it"></a><span data-ttu-id="74602-153">Кто должен использовать его?</span><span class="sxs-lookup"><span data-stu-id="74602-153">Who should use it?</span></span>
 
-<span data-ttu-id="702b2-124">Или просто сделайте ссылку на необходимый компонент и не загружаете все остальные:</span><span class="sxs-lookup"><span data-stu-id="702b2-124">Or, just reference the component you need and avoid loading everything else:</span></span>
+<span data-ttu-id="74602-154">Набор средств Microsoft Graph прекрасно подходит разработчикам всех уровней опыта разработки веб-приложения, вкладки Microsoft Teams или веб-части SharePoint, которые подключаются к данным из Microsoft Graph и обращаются к ним.</span><span class="sxs-lookup"><span data-stu-id="74602-154">The Microsoft Graph Toolkit is great for developers of all experience levels looking to develop a web application, Microsoft Teams tab, or SharePoint web part that connects to and accesses data from Microsoft Graph.</span></span>
 
-```html
-<script src="node_modules/@microsoft/mgt/dist/es6/components/mgt-login/mgt-login.js"></script>
-```
+## <a name="where-can-i-use-it"></a><span data-ttu-id="74602-155">Где можно использовать его?</span><span class="sxs-lookup"><span data-stu-id="74602-155">Where can I use it?</span></span>
 
-<span data-ttu-id="702b2-125">Аналогичным образом, чтобы добавить поставщика, можно добавить его в качестве компонента:</span><span class="sxs-lookup"><span data-stu-id="702b2-125">Similarly, to add a provider, you can add it as a component:</span></span>
+<span data-ttu-id="74602-156">Набор средств Microsoft Graph поддерживается в следующих браузерах.</span><span class="sxs-lookup"><span data-stu-id="74602-156">The Microsoft Graph Toolkit is supported in the following browsers.</span></span>
 
-```html
-<script src="node_modules/@microsoft/mgt/dist/es6/components/providers/mgt-msal-provider.js"></script>
+|![Microsoft Edge](images/edgeIcon.png)|![Internet Explorer 11](images/internetExplorerIcon.png)|![Firefox](images/firefoxIcon.png)|![Chrome](images/chromeIcon.png)|![Safari](images/safariIcon.png)|![Opera](images/operaIcon.png)|![Samsung Internet](images/samsungInternetIcon.png)|
+|----|----|----|----|----|----|----|
+|<span data-ttu-id="74602-164">**Microsoft Edge**</span><span class="sxs-lookup"><span data-stu-id="74602-164">**Edge**</span></span>|<span data-ttu-id="74602-165">**IE 11**</span><span class="sxs-lookup"><span data-stu-id="74602-165">**IE 11**</span></span>|<span data-ttu-id="74602-166">**Firefox**</span><span class="sxs-lookup"><span data-stu-id="74602-166">**Firefox**</span></span>|<span data-ttu-id="74602-167">**Chrome**</span><span class="sxs-lookup"><span data-stu-id="74602-167">**Chrome**</span></span>|<span data-ttu-id="74602-168">**Safari**</span><span class="sxs-lookup"><span data-stu-id="74602-168">**Safari**</span></span>|<span data-ttu-id="74602-169">**Opera**</span><span class="sxs-lookup"><span data-stu-id="74602-169">**Opera**</span></span>|<span data-ttu-id="74602-170">**Samsung**</span><span class="sxs-lookup"><span data-stu-id="74602-170">**Samsung**</span></span>|
 
-<mgt-msal-provider client-id="[CLIENT-ID]"></mgt-msal-provider>
-```
+## <a name="next-steps"></a><span data-ttu-id="74602-171">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="74602-171">Next steps</span></span>
 
-<span data-ttu-id="702b2-126">Или добавьте его в код:</span><span class="sxs-lookup"><span data-stu-id="702b2-126">Or, add it in your code:</span></span>
-
-```html
-<script type="module">
-  import { Providers, MsalProvider } from '@microsoft/mgt';
-
-  Providers.globalProvider = new MsalProvider({ clientId: '[CLIENT-ID]' });
-</script>
-```
-
-## <a name="providers"></a><span data-ttu-id="702b2-127">Поставщики</span><span class="sxs-lookup"><span data-stu-id="702b2-127">Providers</span></span>
-
-<span data-ttu-id="702b2-128">Компоненты лучше всего подходят для использования с [поставщиками](./providers.md).</span><span class="sxs-lookup"><span data-stu-id="702b2-128">The components work best when used with a [provider](./providers.md).</span></span> <span data-ttu-id="702b2-129">Поставщик предоставляет доступ к проверке подлинности и интерфейсам API, которые используются компонентами для вызова Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="702b2-129">The provider exposes authentication and APIs that the components use to call Microsoft Graph.</span></span>
-
-<span data-ttu-id="702b2-130">Набор средств содержит поставщики для [MSAL](./providers/msal.md), [SharePoint](./providers/sharepoint.md), [Teams](./providers/teams.md)и надстроек Office (ожидается в ближайшее время).</span><span class="sxs-lookup"><span data-stu-id="702b2-130">The toolkit contains providers for [MSAL](./providers/msal.md), [SharePoint](./providers/sharepoint.md), [Teams](./providers/teams.md), and Office Add-ins (coming soon).</span></span> <span data-ttu-id="702b2-131">Вы также можете создавать собственные поставщики, расширяя абстрактный класс [Ипровидер].</span><span class="sxs-lookup"><span data-stu-id="702b2-131">You can also create your own providers by extending the [IProvider] abstract class.</span></span>
-
-## <a name="polyfills"></a><span data-ttu-id="702b2-132">Polyfills</span><span class="sxs-lookup"><span data-stu-id="702b2-132">Polyfills</span></span>
-
-<span data-ttu-id="702b2-133">Если вы используете модули ES6 из пакета NPM, не забудьте включить в проект только те, которые не включены автоматически.</span><span class="sxs-lookup"><span data-stu-id="702b2-133">If you're using the es6 modules from the npm package, make sure to include polyfills in your project as they are not included automatically.</span></span> <span data-ttu-id="702b2-134">Дополнительные сведения [см.](https://www.webcomponents.org/polyfills)</span><span class="sxs-lookup"><span data-stu-id="702b2-134">To learn more, see [polyfills](https://www.webcomponents.org/polyfills).</span></span>
-
-<span data-ttu-id="702b2-135">Если вы используете скрипт МГТ-лоадер. js из пакета в унпкг, то эти функции уже включены.</span><span class="sxs-lookup"><span data-stu-id="702b2-135">If you're using the mgt-loader.js script from the bundle on unpkg, the polyfills are already included.</span></span>
-
-
-## <a name="using-the-components-with-react-angular-and-other-frameworks"></a><span data-ttu-id="702b2-136">Использование компонентов с реагирует, радиально и другими платформами</span><span class="sxs-lookup"><span data-stu-id="702b2-136">Using the components with React, Angular, and other frameworks</span></span>
-
-<span data-ttu-id="702b2-137">Веб-компоненты основываются на нескольких веб-стандартах и могут использоваться с любой уже используемой платформой.</span><span class="sxs-lookup"><span data-stu-id="702b2-137">Web components are based on several web standards and can be used with any framework you're already using.</span></span> <span data-ttu-id="702b2-138">Однако не все платформы обрабатывают веб-компоненты одинаковым образом.</span><span class="sxs-lookup"><span data-stu-id="702b2-138">However, not all frameworks handle web components the same way.</span></span> <span data-ttu-id="702b2-139">Чтобы узнать больше о возможностях, которые могут применяться в зависимости от вашей платформы, ознакомьтесь со статьей " [настраиваемые элементы везде](https://custom-elements-everywhere.com/) ".</span><span class="sxs-lookup"><span data-stu-id="702b2-139">To learn more about the considerations that might apply depending on your framework, see the [Custom Elements Everywhere](https://custom-elements-everywhere.com/) project.</span></span>
-
-<span data-ttu-id="702b2-140">В следующих разделах приводится краткий обзор использования компонентов набора инструментов Microsoft Graph с откликом и радиальным.</span><span class="sxs-lookup"><span data-stu-id="702b2-140">The following sections provide a quick overview of using the Microsoft Graph Toolkit components with React and Angular.</span></span>
-
-### <a name="react"></a><span data-ttu-id="702b2-141">React</span><span class="sxs-lookup"><span data-stu-id="702b2-141">React</span></span>
-
-<span data-ttu-id="702b2-142">Реагирует, что все данные передаются в настраиваемые элементы формы HTML Attributes.</span><span class="sxs-lookup"><span data-stu-id="702b2-142">React passes all data to Custom Elements in the form of HTML attributes.</span></span> <span data-ttu-id="702b2-143">Для примитивных данных это нормально, но не работает при передаче форматированных данных, таких как объекты или массивы.</span><span class="sxs-lookup"><span data-stu-id="702b2-143">For primitive data this is fine, but it does not work when passing rich data, like objects or arrays.</span></span> <span data-ttu-id="702b2-144">В этих случаях для передачи объекта потребуется использовать `ref` объект.</span><span class="sxs-lookup"><span data-stu-id="702b2-144">In those cases you will need to use a `ref` to pass in the object.</span></span>
-
-<span data-ttu-id="702b2-145">Пример</span><span class="sxs-lookup"><span data-stu-id="702b2-145">Ex:</span></span>
-
-```jsx
-// import all the components
-import '@microsoft/mgt';
-
-class App extends Component {
-  render() {
-    return <mgt-person show-name ref={el => (el.personDetails = { displayName: 'Nikola Metulev' })} />;
-  }
-}
-```
-
-<span data-ttu-id="702b2-146">Так как реакция реализует собственную виртуальную систему обработки событий, она не может прослушивать события модели DOM, поступающие из настраиваемых элементов, без использования обходного пути.</span><span class="sxs-lookup"><span data-stu-id="702b2-146">Because React implements its own synthetic event system, it cannot listen for DOM events coming from custom elements without the use of a workaround.</span></span> <span data-ttu-id="702b2-147">Необходимо использовать элемент a `ref` для ссылки на компоненты набора инструментов и вручную присоединить прослушиватели событий с помощью метода addEventListener, как показано в следующем примере.</span><span class="sxs-lookup"><span data-stu-id="702b2-147">You will need to use a `ref` to reference the toolkit components and manually attach event listeners with addEventListener, as shown in the following example.</span></span>
-
-```jsx
-// you can just import a single component
-import '@microsoft/mgt/dist/es6/components/mgt-login/mgt-login.js';
-
-class App extends Component {
-  render() {
-    return <mgt-login ref="loginComponent" />;
-  }
-
-  componentDidMount() {
-    this.refs.loginComponent.addEventListener('loginCompleted', e => {
-      // handle event
-    });
-  }
-}
-```
-
-#### <a name="react-typescript-and-tsx"></a><span data-ttu-id="702b2-148">Реакция, typescript и целевой серверу</span><span class="sxs-lookup"><span data-stu-id="702b2-148">React, Typescript, and TSX</span></span>
-
-<span data-ttu-id="702b2-149">Известная ошибка может возникать при использовании настраиваемых элементов с помощью реакции и typescript.</span><span class="sxs-lookup"><span data-stu-id="702b2-149">A known issue can occur when you use custom elements with React and Typescript.</span></span> <span data-ttu-id="702b2-150">Typescript выдаст ошибку при попытке использовать компонент в целевом элементе.</span><span class="sxs-lookup"><span data-stu-id="702b2-150">Typescript will throw an error when trying to use a component in tsx.</span></span> <span data-ttu-id="702b2-151">Временное решение заключается в определении настраиваемого элемента в коде, как показано ниже.</span><span class="sxs-lookup"><span data-stu-id="702b2-151">The workaround is to define the custom element in your code, as shown.</span></span>
-
-```ts
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      'mgt-login': any;
-    }
-  }
-}
-```
-
-<span data-ttu-id="702b2-152">Затем вы можете использовать его в целевом параметре как `<mgt-login></mgt-login>`.</span><span class="sxs-lookup"><span data-stu-id="702b2-152">You can then use it in your tsx as `<mgt-login></mgt-login>`.</span></span>
-
-### <a name="angular"></a><span data-ttu-id="702b2-153">Angular</span><span class="sxs-lookup"><span data-stu-id="702b2-153">Angular</span></span>
-
-<span data-ttu-id="702b2-154">Синтаксис привязки по умолчанию в радиальной системе всегда будет задавайте свойства элемента.</span><span class="sxs-lookup"><span data-stu-id="702b2-154">Angular's default binding syntax will always set properties on an element.</span></span> <span data-ttu-id="702b2-155">Это хорошо подходит для сложных данных, таких как объекты и массивы, а также для примитивных значений.</span><span class="sxs-lookup"><span data-stu-id="702b2-155">This works well for rich data, like objects and arrays, and also works well for primitive values.</span></span>
-
-<span data-ttu-id="702b2-156">Прежде чем использовать настраиваемые элементы, включите в него `app.module.ts` `CUSTOM_ELEMENT_SCHEMA` `@NgModule() decorator`настраиваемые элементы, как показано в следующем примере.</span><span class="sxs-lookup"><span data-stu-id="702b2-156">To use custom elements, first, enable custom elements in your `app.module.ts` by adding the `CUSTOM_ELEMENT_SCHEMA` to the `@NgModule() decorator`, as shown in the following example.</span></span>
-
-```ts
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-
-import { AppComponent } from './app.component';
-
-@NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule {}
-```
-
-<span data-ttu-id="702b2-157">Затем вы можете импортировать компонент, который вы хотите использовать, в файле Component \*. TS.</span><span class="sxs-lookup"><span data-stu-id="702b2-157">You can then import the component you'd like to use in your component \*.ts file.</span></span>
-
-```ts
-import { Component } from '@angular/core';
-import '@microsoft/mgt/dist/es6/components/mgt-person/mgt-person';
-
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
-})
-export class AppComponent {
-  person = {
-    displayName: 'Nikola Metulev'
-  };
-}
-```
-
-<span data-ttu-id="702b2-158">Наконец, используйте компонент, как обычно в шаблоне.</span><span class="sxs-lookup"><span data-stu-id="702b2-158">Finally, use the component as you normally would in your template.</span></span>
-
-```html
-<mgt-person [personDetails]="person" show-name></mgt-person>
-```
+- <span data-ttu-id="74602-172">Опробуйте компоненты в [интерактивная среда](https://mgt.dev).</span><span class="sxs-lookup"><span data-stu-id="74602-172">Try out the components in the [playground](https://mgt.dev).</span></span>
+- <span data-ttu-id="74602-173">Приступите к [работе](get-started.md) с набором инструментов Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="74602-173">[Get started](get-started.md) with the Microsoft Graph Toolkit.</span></span>

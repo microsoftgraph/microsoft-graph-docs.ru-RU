@@ -49,6 +49,8 @@ items:
             href: /graph/tutorials/ios-swift
           - name: Java
             href: /graph/tutorials/java
+          - name: JavaScript
+            href: /graph/tutorials/javascript
           - name: Node.js
             href: /graph/tutorials/node
           - name: PHP
@@ -97,8 +99,6 @@ items:
             href: outlook-get-shared-events-calendars.md
           - name: Создание общих событий
             href: outlook-create-event-in-shared-delegated-calendar.md
-          - name: Вложение больших файлов
-            href: outlook-large-attachments.md
           - name: Неизменяемый идентификатор
             href: outlook-immutable-id.md
       - name: Коммуникации из облака
@@ -182,7 +182,7 @@ items:
             href: outlook-organize-messages.md
           - name: Получение содержимого MIME
             href: outlook-get-mime-message.md
-          - name: Вложение больших файлов
+          - name: Вложение больших файлов (предварительная версия)
             href: outlook-large-attachments.md
           - name: Получение общих сообщений
             href: outlook-share-messages-folders.md
@@ -455,6 +455,8 @@ items:
         items:
           - name: Общие сведения о наборе средств
             href: toolkit/overview.md
+          - name: Начало работы
+            href: toolkit/get-started.md
           - name: Компоненты
             items:
               - name: Вход
