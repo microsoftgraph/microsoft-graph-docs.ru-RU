@@ -1,36 +1,34 @@
 ---
 title: тип перечисления Еаптипе
 description: Типы конфигурации протокола EAP (Extensible Authentication Protocol).
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5d3aff411b572748cddaab980eefa60731c45d27
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 29fb01e6d9f0e5d8fd86fec2455442bc7f11ebfa
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530092"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791949"
 ---
-# <a name="eaptype-enum-type"></a><span data-ttu-id="a619a-103">тип перечисления Еаптипе</span><span class="sxs-lookup"><span data-stu-id="a619a-103">eapType enum type</span></span>
+# <a name="eaptype-enum-type"></a><span data-ttu-id="48a4a-103">тип перечисления Еаптипе</span><span class="sxs-lookup"><span data-stu-id="48a4a-103">eapType enum type</span></span>
 
-<span data-ttu-id="a619a-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="a619a-104">Namespace: microsoft.graph</span></span>
+> <span data-ttu-id="48a4a-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="48a4a-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="a619a-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a619a-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="48a4a-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="48a4a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-> <span data-ttu-id="a619a-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="a619a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="48a4a-106">Типы конфигурации протокола EAP (Extensible Authentication Protocol).</span><span class="sxs-lookup"><span data-stu-id="48a4a-106">Extensible Authentication Protocol (EAP) configuration types.</span></span>
 
-<span data-ttu-id="a619a-107">Типы конфигурации протокола EAP (Extensible Authentication Protocol).</span><span class="sxs-lookup"><span data-stu-id="a619a-107">Extensible Authentication Protocol (EAP) configuration types.</span></span>
-
-## <a name="members"></a><span data-ttu-id="a619a-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="a619a-108">Members</span></span>
-|<span data-ttu-id="a619a-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="a619a-109">Member</span></span>|<span data-ttu-id="a619a-110">Значение</span><span class="sxs-lookup"><span data-stu-id="a619a-110">Value</span></span>|<span data-ttu-id="a619a-111">Описание</span><span class="sxs-lookup"><span data-stu-id="a619a-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="48a4a-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="48a4a-107">Members</span></span>
+|<span data-ttu-id="48a4a-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="48a4a-108">Member</span></span>|<span data-ttu-id="48a4a-109">Значение</span><span class="sxs-lookup"><span data-stu-id="48a4a-109">Value</span></span>|<span data-ttu-id="48a4a-110">Описание</span><span class="sxs-lookup"><span data-stu-id="48a4a-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a619a-112">еаптлс</span><span class="sxs-lookup"><span data-stu-id="a619a-112">eapTls</span></span>|<span data-ttu-id="a619a-113">13 </span><span class="sxs-lookup"><span data-stu-id="a619a-113">13</span></span>|<span data-ttu-id="a619a-114">Протокол EAP-Transport Layer Security (EAP-TLS).</span><span class="sxs-lookup"><span data-stu-id="a619a-114">EAP-Transport Layer Security (EAP-TLS).</span></span>|
-|<span data-ttu-id="a619a-115">LEAP</span><span class="sxs-lookup"><span data-stu-id="a619a-115">leap</span></span>|<span data-ttu-id="a619a-116">17 </span><span class="sxs-lookup"><span data-stu-id="a619a-116">17</span></span>|<span data-ttu-id="a619a-117">Облегченный протокол проверки подлинности (LEAP).</span><span class="sxs-lookup"><span data-stu-id="a619a-117">Lightweight Extensible Authentication Protocol (LEAP).</span></span>|
-|<span data-ttu-id="a619a-118">еапсим</span><span class="sxs-lookup"><span data-stu-id="a619a-118">eapSim</span></span>|<span data-ttu-id="a619a-119">18 </span><span class="sxs-lookup"><span data-stu-id="a619a-119">18</span></span>|<span data-ttu-id="a619a-120">EAP для модуля удостоверения абонента GSM (EAP-SIM).</span><span class="sxs-lookup"><span data-stu-id="a619a-120">EAP for GSM Subscriber Identity Module (EAP-SIM).</span></span>|
-|<span data-ttu-id="a619a-121">еапттлс</span><span class="sxs-lookup"><span data-stu-id="a619a-121">eapTtls</span></span>|<span data-ttu-id="a619a-122">21</span><span class="sxs-lookup"><span data-stu-id="a619a-122">21</span></span>|<span data-ttu-id="a619a-123">Протокол TLS-туннелирования (EAP-TTLS).</span><span class="sxs-lookup"><span data-stu-id="a619a-123">EAP-Tunneled Transport Layer Security (EAP-TTLS).</span></span>|
-|<span data-ttu-id="a619a-124">протокола</span><span class="sxs-lookup"><span data-stu-id="a619a-124">peap</span></span>|<span data-ttu-id="a619a-125">25</span><span class="sxs-lookup"><span data-stu-id="a619a-125">25</span></span>|<span data-ttu-id="a619a-126">Протокол PEAP (protected Extensible Authentication Protocol).</span><span class="sxs-lookup"><span data-stu-id="a619a-126">Protected Extensible Authentication Protocol (PEAP).</span></span>|
-|<span data-ttu-id="a619a-127">еапфаст</span><span class="sxs-lookup"><span data-stu-id="a619a-127">eapFast</span></span>|<span data-ttu-id="a619a-128">43</span><span class="sxs-lookup"><span data-stu-id="a619a-128">43</span></span>|<span data-ttu-id="a619a-129">EAP-гибкая Проверка подлинности с помощью безопасного туннелирования (EAP-FAST).</span><span class="sxs-lookup"><span data-stu-id="a619a-129">EAP-Flexible Authentication via Secure Tunneling (EAP-FAST).</span></span>|
+|<span data-ttu-id="48a4a-111">еаптлс</span><span class="sxs-lookup"><span data-stu-id="48a4a-111">eapTls</span></span>|<span data-ttu-id="48a4a-112">13 </span><span class="sxs-lookup"><span data-stu-id="48a4a-112">13</span></span>|<span data-ttu-id="48a4a-113">Протокол EAP-Transport Layer Security (EAP-TLS).</span><span class="sxs-lookup"><span data-stu-id="48a4a-113">EAP-Transport Layer Security (EAP-TLS).</span></span>|
+|<span data-ttu-id="48a4a-114">LEAP</span><span class="sxs-lookup"><span data-stu-id="48a4a-114">leap</span></span>|<span data-ttu-id="48a4a-115">17 </span><span class="sxs-lookup"><span data-stu-id="48a4a-115">17</span></span>|<span data-ttu-id="48a4a-116">Облегченный протокол проверки подлинности (LEAP).</span><span class="sxs-lookup"><span data-stu-id="48a4a-116">Lightweight Extensible Authentication Protocol (LEAP).</span></span>|
+|<span data-ttu-id="48a4a-117">еапсим</span><span class="sxs-lookup"><span data-stu-id="48a4a-117">eapSim</span></span>|<span data-ttu-id="48a4a-118">18 </span><span class="sxs-lookup"><span data-stu-id="48a4a-118">18</span></span>|<span data-ttu-id="48a4a-119">EAP для модуля удостоверения абонента GSM (EAP-SIM).</span><span class="sxs-lookup"><span data-stu-id="48a4a-119">EAP for GSM Subscriber Identity Module (EAP-SIM).</span></span>|
+|<span data-ttu-id="48a4a-120">еапттлс</span><span class="sxs-lookup"><span data-stu-id="48a4a-120">eapTtls</span></span>|<span data-ttu-id="48a4a-121">21</span><span class="sxs-lookup"><span data-stu-id="48a4a-121">21</span></span>|<span data-ttu-id="48a4a-122">Протокол TLS-туннелирования (EAP-TTLS).</span><span class="sxs-lookup"><span data-stu-id="48a4a-122">EAP-Tunneled Transport Layer Security (EAP-TTLS).</span></span>|
+|<span data-ttu-id="48a4a-123">протокола</span><span class="sxs-lookup"><span data-stu-id="48a4a-123">peap</span></span>|<span data-ttu-id="48a4a-124">25</span><span class="sxs-lookup"><span data-stu-id="48a4a-124">25</span></span>|<span data-ttu-id="48a4a-125">Протокол PEAP (protected Extensible Authentication Protocol).</span><span class="sxs-lookup"><span data-stu-id="48a4a-125">Protected Extensible Authentication Protocol (PEAP).</span></span>|
+|<span data-ttu-id="48a4a-126">еапфаст</span><span class="sxs-lookup"><span data-stu-id="48a4a-126">eapFast</span></span>|<span data-ttu-id="48a4a-127">43</span><span class="sxs-lookup"><span data-stu-id="48a4a-127">43</span></span>|<span data-ttu-id="48a4a-128">EAP-гибкая Проверка подлинности с помощью безопасного туннелирования (EAP-FAST).</span><span class="sxs-lookup"><span data-stu-id="48a4a-128">EAP-Flexible Authentication via Secure Tunneling (EAP-FAST).</span></span>|
 
 
 

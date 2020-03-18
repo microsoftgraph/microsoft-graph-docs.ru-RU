@@ -1,44 +1,42 @@
 ---
 title: Тип ресурса omaSettingBase64
 description: Определение параметров OMA в кодировке Base64.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cba87b6ce02f9683de9e4013585b2a960f8df512
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1e95f17d0b9e4a8347c71042244100c96590a527
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529571"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788480"
 ---
-# <a name="omasettingbase64-resource-type"></a><span data-ttu-id="27317-103">Тип ресурса omaSettingBase64</span><span class="sxs-lookup"><span data-stu-id="27317-103">omaSettingBase64 resource type</span></span>
+# <a name="omasettingbase64-resource-type"></a><span data-ttu-id="a8d32-103">Тип ресурса omaSettingBase64</span><span class="sxs-lookup"><span data-stu-id="a8d32-103">omaSettingBase64 resource type</span></span>
 
-<span data-ttu-id="27317-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="27317-104">Namespace: microsoft.graph</span></span>
+> <span data-ttu-id="a8d32-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a8d32-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="27317-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="27317-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="a8d32-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="a8d32-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-> <span data-ttu-id="27317-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="27317-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
-
-<span data-ttu-id="27317-107">Определение параметров OMA в кодировке Base64.</span><span class="sxs-lookup"><span data-stu-id="27317-107">OMA Settings Base64 definition.</span></span>
+<span data-ttu-id="a8d32-106">Определение параметров OMA в кодировке Base64.</span><span class="sxs-lookup"><span data-stu-id="a8d32-106">OMA Settings Base64 definition.</span></span>
 
 
-<span data-ttu-id="27317-108">Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="27317-108">Inherits from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>
+<span data-ttu-id="a8d32-107">Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="a8d32-107">Inherits from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="27317-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="27317-109">Properties</span></span>
-|<span data-ttu-id="27317-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="27317-110">Property</span></span>|<span data-ttu-id="27317-111">Тип</span><span class="sxs-lookup"><span data-stu-id="27317-111">Type</span></span>|<span data-ttu-id="27317-112">Описание</span><span class="sxs-lookup"><span data-stu-id="27317-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="a8d32-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="a8d32-108">Properties</span></span>
+|<span data-ttu-id="a8d32-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="a8d32-109">Property</span></span>|<span data-ttu-id="a8d32-110">Тип</span><span class="sxs-lookup"><span data-stu-id="a8d32-110">Type</span></span>|<span data-ttu-id="a8d32-111">Описание</span><span class="sxs-lookup"><span data-stu-id="a8d32-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="27317-113">displayName</span><span class="sxs-lookup"><span data-stu-id="27317-113">displayName</span></span>|<span data-ttu-id="27317-114">Строка</span><span class="sxs-lookup"><span data-stu-id="27317-114">String</span></span>|<span data-ttu-id="27317-115">Отображаемое имя.</span><span class="sxs-lookup"><span data-stu-id="27317-115">Display Name.</span></span> <span data-ttu-id="27317-116">Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="27317-116">Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>|
-|<span data-ttu-id="27317-117">description</span><span class="sxs-lookup"><span data-stu-id="27317-117">description</span></span>|<span data-ttu-id="27317-118">String</span><span class="sxs-lookup"><span data-stu-id="27317-118">String</span></span>|<span data-ttu-id="27317-119">Описание.</span><span class="sxs-lookup"><span data-stu-id="27317-119">Description.</span></span> <span data-ttu-id="27317-120">Наследуется от ресурса [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="27317-120">Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>|
-|<span data-ttu-id="27317-121">omaUri</span><span class="sxs-lookup"><span data-stu-id="27317-121">omaUri</span></span>|<span data-ttu-id="27317-122">String</span><span class="sxs-lookup"><span data-stu-id="27317-122">String</span></span>|<span data-ttu-id="27317-123">OMA.</span><span class="sxs-lookup"><span data-stu-id="27317-123">OMA.</span></span> <span data-ttu-id="27317-124">Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="27317-124">Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>|
-|<span data-ttu-id="27317-125">fileName</span><span class="sxs-lookup"><span data-stu-id="27317-125">fileName</span></span>|<span data-ttu-id="27317-126">String</span><span class="sxs-lookup"><span data-stu-id="27317-126">String</span></span>|<span data-ttu-id="27317-127">Имя файла, связанное со свойством Value (CER, </span><span class="sxs-lookup"><span data-stu-id="27317-127">File name associated with the Value property (\*.cer</span></span> | <span data-ttu-id="27317-128">\*. CRT</span><span class="sxs-lookup"><span data-stu-id="27317-128">\*.crt</span></span> | <span data-ttu-id="27317-129">\*. p7b</span><span class="sxs-lookup"><span data-stu-id="27317-129">\*.p7b</span></span> | <span data-ttu-id="27317-130">\*. bin).</span><span class="sxs-lookup"><span data-stu-id="27317-130">\*.bin).</span></span>|
-|<span data-ttu-id="27317-131">value</span><span class="sxs-lookup"><span data-stu-id="27317-131">value</span></span>|<span data-ttu-id="27317-132">Строка</span><span class="sxs-lookup"><span data-stu-id="27317-132">String</span></span>|<span data-ttu-id="27317-133">Значение</span><span class="sxs-lookup"><span data-stu-id="27317-133">Value.</span></span> <span data-ttu-id="27317-134">(строка в кодировке Base64).</span><span class="sxs-lookup"><span data-stu-id="27317-134">(Base64 encoded string)</span></span>|
+|<span data-ttu-id="a8d32-112">displayName</span><span class="sxs-lookup"><span data-stu-id="a8d32-112">displayName</span></span>|<span data-ttu-id="a8d32-113">Строка</span><span class="sxs-lookup"><span data-stu-id="a8d32-113">String</span></span>|<span data-ttu-id="a8d32-114">Отображаемое имя.</span><span class="sxs-lookup"><span data-stu-id="a8d32-114">Display Name.</span></span> <span data-ttu-id="a8d32-115">Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="a8d32-115">Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>|
+|<span data-ttu-id="a8d32-116">description</span><span class="sxs-lookup"><span data-stu-id="a8d32-116">description</span></span>|<span data-ttu-id="a8d32-117">String</span><span class="sxs-lookup"><span data-stu-id="a8d32-117">String</span></span>|<span data-ttu-id="a8d32-118">Описание.</span><span class="sxs-lookup"><span data-stu-id="a8d32-118">Description.</span></span> <span data-ttu-id="a8d32-119">Наследуется от ресурса [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="a8d32-119">Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>|
+|<span data-ttu-id="a8d32-120">omaUri</span><span class="sxs-lookup"><span data-stu-id="a8d32-120">omaUri</span></span>|<span data-ttu-id="a8d32-121">String</span><span class="sxs-lookup"><span data-stu-id="a8d32-121">String</span></span>|<span data-ttu-id="a8d32-122">OMA.</span><span class="sxs-lookup"><span data-stu-id="a8d32-122">OMA.</span></span> <span data-ttu-id="a8d32-123">Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="a8d32-123">Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>|
+|<span data-ttu-id="a8d32-124">fileName</span><span class="sxs-lookup"><span data-stu-id="a8d32-124">fileName</span></span>|<span data-ttu-id="a8d32-125">String</span><span class="sxs-lookup"><span data-stu-id="a8d32-125">String</span></span>|<span data-ttu-id="a8d32-126">Имя файла, связанное со свойством Value (CER, </span><span class="sxs-lookup"><span data-stu-id="a8d32-126">File name associated with the Value property (\*.cer</span></span> | <span data-ttu-id="a8d32-127">\*. CRT</span><span class="sxs-lookup"><span data-stu-id="a8d32-127">\*.crt</span></span> | <span data-ttu-id="a8d32-128">\*. p7b</span><span class="sxs-lookup"><span data-stu-id="a8d32-128">\*.p7b</span></span> | <span data-ttu-id="a8d32-129">\*. bin).</span><span class="sxs-lookup"><span data-stu-id="a8d32-129">\*.bin).</span></span>|
+|<span data-ttu-id="a8d32-130">value</span><span class="sxs-lookup"><span data-stu-id="a8d32-130">value</span></span>|<span data-ttu-id="a8d32-131">Строка</span><span class="sxs-lookup"><span data-stu-id="a8d32-131">String</span></span>|<span data-ttu-id="a8d32-132">Значение</span><span class="sxs-lookup"><span data-stu-id="a8d32-132">Value.</span></span> <span data-ttu-id="a8d32-133">(строка в кодировке Base64).</span><span class="sxs-lookup"><span data-stu-id="a8d32-133">(Base64 encoded string)</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="27317-135">Связи</span><span class="sxs-lookup"><span data-stu-id="27317-135">Relationships</span></span>
-<span data-ttu-id="27317-136">Нет</span><span class="sxs-lookup"><span data-stu-id="27317-136">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="a8d32-134">Связи</span><span class="sxs-lookup"><span data-stu-id="a8d32-134">Relationships</span></span>
+<span data-ttu-id="a8d32-135">Нет</span><span class="sxs-lookup"><span data-stu-id="a8d32-135">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="27317-137">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="27317-137">JSON Representation</span></span>
-<span data-ttu-id="27317-138">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="27317-138">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a8d32-136">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a8d32-136">JSON Representation</span></span>
+<span data-ttu-id="a8d32-137">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a8d32-137">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.omaSettingBase64"
