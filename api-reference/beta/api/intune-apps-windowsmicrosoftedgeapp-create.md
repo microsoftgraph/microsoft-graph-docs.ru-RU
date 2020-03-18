@@ -1,20 +1,18 @@
 ---
 title: Создание Виндовсмикрософтеджеапп
 description: Создание нового объекта Виндовсмикрософтеджеапп.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 41dbf19434aa39f5d8d11b02ec5c5212c36fd248
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 86cc901ce6541c9d97dac55b6580575b6fa8f415
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444821"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760923"
 ---
 # <a name="create-windowsmicrosoftedgeapp"></a>Создание Виндовсмикрософтеджеапп
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42444821"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -153,7 +151,6 @@ Content-Length: 977
   "displayLanguageLocale": "Display Language Locale value"
 }
 ```
-
 
 
 

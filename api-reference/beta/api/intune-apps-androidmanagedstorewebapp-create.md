@@ -1,20 +1,18 @@
 ---
 title: Создание Андроидманажедсторевебапп
 description: Создание нового объекта Андроидманажедсторевебапп.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fd6b656729bcd5fcbeda2308966cf2581368c3e4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bb71488437b40c050c77d72dd9e62320223b016b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42445864"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42762205"
 ---
 # <a name="create-androidmanagedstorewebapp"></a>Создание Андроидманажедсторевебапп
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42445864"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -171,7 +169,6 @@ Content-Length: 1159
   "supportsOemConfig": true
 }
 ```
-
 
 
 

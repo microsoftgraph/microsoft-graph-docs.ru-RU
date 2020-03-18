@@ -2,19 +2,17 @@
 title: Список Виндовсоффицеклиентсекуритиконфигуратионс
 description: Список свойств и связей объектов Виндовсоффицеклиентсекуритиконфигуратион.
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c8cd37c950c63a9555e4bdd2ad9b3166c8401f05
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6485a05e93acb053b40c9ad53cfb3f278209ef0c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444380"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760195"
 ---
 # <a name="list-windowsofficeclientsecurityconfigurations"></a>Список Виндовсоффицеклиентсекуритиконфигуратионс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42444380"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration. ReadWrite. ALL DeviceManagementConfiguration. Read. ALL|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration. ReadWrite. ALL DeviceManagementConfiguration. Read. ALL|
+|Приложение|DeviceManagementConfiguration. ReadWrite. ALL DeviceManagementConfiguration. Read. ALL|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -102,7 +100,6 @@ Content-Length: 1222
   ]
 }
 ```
-
 
 
 

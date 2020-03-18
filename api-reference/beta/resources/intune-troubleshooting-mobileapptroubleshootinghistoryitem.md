@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Мобилеапптраублешутингхисторитем
 description: Элемент History, содержащийся в событии устранения неполадок мобильного приложения.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 23760e335db70d011043647a0d5fd81354b0025e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c1c30f3cb1f6eb4375da4112ca51c0b8298245a6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523284"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42764420"
 ---
 # <a name="mobileapptroubleshootinghistoryitem-resource-type"></a>Тип ресурса Мобилеапптраублешутингхисторитем
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

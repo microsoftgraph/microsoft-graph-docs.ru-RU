@@ -1,20 +1,18 @@
 ---
 title: Создание Макосмдатпапп
 description: Создание нового объекта Макосмдатпапп.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d972a78219f0fefee6a3e5c9502ee8d1b9a8d41c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 27ac3e5f34bf323bfb59806306b58ff6528389ee
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42445388"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42761785"
 ---
 # <a name="create-macosmdatpapp"></a>Создание Макосмдатпапп
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42445388"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -147,7 +145,6 @@ Content-Length: 884
   "dependentAppCount": 1
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Создание Макослобапп
 description: Создание нового объекта Макослобапп.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f20ed7099e66645cf70a3ab01d9c8a0df05e33ce
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4094c0b96ab5ecf3e45c603ca143f4307fb423d0
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42445423"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42761806"
 ---
 # <a name="create-macoslobapp"></a>Создание Макослобапп
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42445423"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -223,7 +221,6 @@ Content-Length: 1788
   "ignoreVersionDetection": true
 }
 ```
-
 
 
 

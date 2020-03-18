@@ -1,20 +1,18 @@
 ---
 title: Удаление Адванцедсреатпротектиононбоардингдевицесеттингстате
 description: Удаляет объект Адванцедсреатпротектиононбоардингдевицесеттингстате.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ec6bba898c7788ab8017ae88435b475ae0084c8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5f395748b8bd074bf82ccdba6ac274e48c2c6ca7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444296"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760034"
 ---
 # <a name="delete-advancedthreatprotectiononboardingdevicesettingstate"></a>Удаление Адванцедсреатпротектиононбоардингдевицесеттингстате
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42444296"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/advancedThreatProtectio
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

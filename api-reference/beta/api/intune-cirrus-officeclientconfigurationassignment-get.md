@@ -2,19 +2,17 @@
 title: Получение Оффицеклиентконфигуратионассигнмент
 description: Чтение свойств и связей объекта Оффицеклиентконфигуратионассигнмент.
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a77552daf69df542d963ed45c84385f23283a51d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0d0fd8828bf68e86295ef034580fb7af4396f780
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444436"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42760272"
 ---
 # <a name="get-officeclientconfigurationassignment"></a>Получение Оффицеклиентконфигуратионассигнмент
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42444436"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|* * TODO: определение областей * *|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|* * TODO: определение областей * *|
+|Приложение|* * TODO: определение областей * *|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -80,7 +78,6 @@ Content-Length: 250
   }
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Обновление Андроиддевицеовнервификонфигуратион
 description: Обновление свойств объекта Андроиддевицеовнервификонфигуратион.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b32d9a064d8e9ae7d3916e47c8f37008005aa91b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fcd76958264c5633dce046254554c11a19790a9e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444016"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42759621"
 ---
 # <a name="update-androiddeviceownerwificonfiguration"></a>Обновление Андроиддевицеовнервификонфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42444016"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -177,7 +175,6 @@ Content-Length: 1454
   "preSharedKeyIsSet": true
 }
 ```
-
 
 
 

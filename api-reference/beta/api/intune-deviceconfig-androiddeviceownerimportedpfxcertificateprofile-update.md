@@ -1,20 +1,18 @@
 ---
 title: Обновление Андроиддевицеовнеримпортедпфксцертификатепрофиле
 description: Обновление свойств объекта Андроиддевицеовнеримпортедпфксцертификатепрофиле.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6ac42ad7d0cf8b7024e725b87ca5fd1c186af15e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 298382a70d52ff28031c1fbe4616b79e7750b3d2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42444149"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42759761"
 ---
 # <a name="update-androiddeviceownerimportedpfxcertificateprofile"></a>Обновление Андроиддевицеовнеримпортедпфксцертификатепрофиле
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42444149"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -189,7 +187,6 @@ Content-Length: 1675
   "intendedPurpose": "smimeEncryption"
 }
 ```
-
 
 
 

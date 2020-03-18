@@ -1,20 +1,18 @@
 ---
 title: Список Мобилеапппровисионингконфигграупассигнментс
 description: Список свойств и связей объектов К mobileappprovisioningconfiggroupassignment..
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d58cee201fb0fa34fd0968f1d9375be89f9f332
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 747534e0e37ae2c5d2d936b12ebfaad139df5dc4
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42450673"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42761169"
 ---
 # <a name="list-mobileappprovisioningconfiggroupassignments"></a>Список Мобилеапппровисионингконфигграупассигнментс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42450673"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -77,7 +75,6 @@ Content-Length: 223
   ]
 }
 ```
-
 
 
 

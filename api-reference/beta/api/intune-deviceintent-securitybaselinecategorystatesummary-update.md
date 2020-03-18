@@ -1,20 +1,18 @@
 ---
 title: Обновление Секуритибаселинекатегористатесуммари
 description: Обновление свойств объекта Секуритибаселинекатегористатесуммари.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 07b87a57cc9b54f72c306289d82ceac5cf8ced72
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: da5058853bb846b11388c7522d48ea2f0cbaec92
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42470254"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42764658"
 ---
 # <a name="update-securitybaselinecategorystatesummary"></a>Обновление Секуритибаселинекатегористатесуммари
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42470254"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -107,7 +105,6 @@ Content-Length: 310
   "displayName": "Display Name value"
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Обновление Макосмдатпапп
 description: Обновление свойств объекта Макосмдатпапп.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e786d4f2a90dbea02ba78fc8583a7a672ac119cd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b9ab04385b3b1fde11148d215e866ab241a54720
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42445318"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42761757"
 ---
 # <a name="update-macosmdatpapp"></a>Обновление Макосмдатпапп
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42445318"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -149,7 +147,6 @@ Content-Length: 884
   "dependentAppCount": 1
 }
 ```
-
 
 
 

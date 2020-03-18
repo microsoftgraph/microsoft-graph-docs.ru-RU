@@ -1,20 +1,18 @@
 ---
 title: Список Макосмикрософтеджеаппс
 description: Список свойств и связей объектов Макосмикрософтеджеапп.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4200be0bfe2244d60e11c4f7039b0c7d3ef2e38b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2499b431de98a4130122c5cfdf30a0d80334a658
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42445304"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42761750"
 ---
 # <a name="list-macosmicrosoftedgeapps"></a>Список Макосмикрософтеджеаппс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42445304"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -100,7 +98,6 @@ Content-Length: 1051
   ]
 }
 ```
-
 
 
 

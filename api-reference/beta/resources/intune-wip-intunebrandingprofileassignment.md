@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Интунебрандингпрофилеассигнмент
 description: Эта сущность содержит свойства, используемые для назначения профиля фирменной символики группе.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 286c431fb57244b1bca7e326fbafff7acd5d6aff
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cc3e7442202c9d6de3bab5dd19d536a528bdfc85
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523214"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42763279"
 ---
 # <a name="intunebrandingprofileassignment-resource-type"></a>Тип ресурса Интунебрандингпрофилеассигнмент
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
