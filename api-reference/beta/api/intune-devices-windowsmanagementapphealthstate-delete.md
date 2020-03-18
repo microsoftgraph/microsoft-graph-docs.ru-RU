@@ -1,20 +1,18 @@
 ---
 title: Удаление Виндовсманажементапфеалсстате
 description: Удаляет объект Виндовсманажементапфеалсстате.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 41fc80bd800546795cfe3e49dca90bfbba161a12
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 815c158543bba37fa7829bde013a53e3a95d2cf5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42467706"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813616"
 ---
 # <a name="delete-windowsmanagementapphealthstate"></a>Удаление Виндовсманажементапфеалсстате
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42467706"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/windowsManagementApp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

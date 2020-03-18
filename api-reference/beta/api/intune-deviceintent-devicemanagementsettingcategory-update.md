@@ -1,20 +1,18 @@
 ---
 title: Обновление Девицеманажементсеттингкатегори
 description: Обновление свойств объекта Девицеманажементсеттингкатегори.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7a2b6e815fb96ca14c78be467921c9926d8e4bba
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a4e5711e8d9adf026e94b85c01c0d7e384ce677c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42470604"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42815109"
 ---
 # <a name="update-devicemanagementsettingcategory"></a>Обновление Девицеманажементсеттингкатегори
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42470604"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -92,7 +90,6 @@ Content-Length: 193
   "hasRequiredSetting": true
 }
 ```
-
 
 
 

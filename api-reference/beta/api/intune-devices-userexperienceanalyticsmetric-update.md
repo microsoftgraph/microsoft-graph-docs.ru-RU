@@ -1,20 +1,18 @@
 ---
 title: Обновление Усерекспериенцеаналитиксметрик
 description: Обновление свойств объекта Усерекспериенцеаналитиксметрик.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1a52039aa25a681d07d0f6c13594e90e96896eec
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 194cf15baf27033803eba0d4c32b2633d3954f36
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42468175"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813819"
 ---
 # <a name="update-userexperienceanalyticsmetric"></a>Обновление Усерекспериенцеаналитиксметрик
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42468175"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -95,7 +93,6 @@ Content-Length: 196
   "unit": "Unit value"
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Создание Усерекспериенцеаналитиксстартупскорехистори
 description: Создание нового объекта Усерекспериенцеаналитиксстартупскорехистори.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fd2dfad7eecfd373c6fa92c8b1023200b08a61d8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 83f83c797e7a2a1bf5852453572f1e94b84d6d93
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42468049"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813777"
 ---
 # <a name="create-userexperienceanalyticsstartupscorehistory"></a>Создание Усерекспериенцеаналитиксстартупскорехистори
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42468049"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -58,6 +56,7 @@ POST /deviceManagement/userExperienceAnalyticsStartupScoreHistory
 |стартупскоре|Int32|Оценка запуска устройства Analytics для пользователя.|
 |коребутскоре|Int32|Оценка загрузки ядра устройств для службы аналитики взаимодействия с пользователем.|
 |коресигнинскоре|Int32|Показатель для входа в систему для устройства аналитики с пользовательским интерфейсом.|
+|рекоммендедсофтварескоре|Int32|Показатель для входа в систему для устройства аналитики с пользовательским интерфейсом.|
 
 
 
@@ -71,14 +70,15 @@ POST /deviceManagement/userExperienceAnalyticsStartupScoreHistory
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsStartupScoreHistory
 Content-type: application/json
-Content-length: 216
+Content-length: 250
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsStartupScoreHistory",
   "startupDateTime": "2017-01-01T00:03:13.1084278-08:00",
   "startupScore": 12,
   "coreBootScore": 13,
-  "coreSigninScore": 15
+  "coreSigninScore": 15,
+  "recommendedSoftwareScore": 8
 }
 ```
 
@@ -87,7 +87,7 @@ Content-length: 216
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 265
+Content-Length: 299
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsStartupScoreHistory",
@@ -95,10 +95,10 @@ Content-Length: 265
   "startupDateTime": "2017-01-01T00:03:13.1084278-08:00",
   "startupScore": 12,
   "coreBootScore": 13,
-  "coreSigninScore": 15
+  "coreSigninScore": 15,
+  "recommendedSoftwareScore": 8
 }
 ```
-
 
 
 

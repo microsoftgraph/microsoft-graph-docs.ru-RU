@@ -1,20 +1,18 @@
 ---
 title: Обновление Усерекспериенцеаналитиксдевицестартуфистори
 description: Обновление свойств объекта Усерекспериенцеаналитиксдевицестартуфистори.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c4e4ea779fd9d11d243a4afbb35ba9c626b79e92
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1593fc62a9cc6b185af558bd4f4b5c73edd5630b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42468371"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813925"
 ---
 # <a name="update-userexperienceanalyticsdevicestartuphistory"></a>Обновление Усерекспериенцеаналитиксдевицестартуфистори
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42468371"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -125,7 +123,6 @@ Content-Length: 582
   "operatingSystemVersion": "Operating System Version value"
 }
 ```
-
 
 
 

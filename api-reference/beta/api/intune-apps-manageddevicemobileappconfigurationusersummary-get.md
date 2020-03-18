@@ -1,20 +1,18 @@
 ---
 title: Get managedDeviceMobileAppConfigurationUserSummary
 description: Чтение свойств и связей объекта managedDeviceMobileAppConfigurationUserSummary.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8dd2faf97f250f121bcf2bbc6ca6f565b84fbce7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f0bb5f1b60d2525f61034b44228ad13831828508
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42445115"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42815439"
 ---
 # <a name="get-manageddevicemobileappconfigurationusersummary"></a>Get managedDeviceMobileAppConfigurationUserSummary
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42445115"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -85,7 +83,6 @@ Content-Length: 409
   }
 }
 ```
-
 
 
 

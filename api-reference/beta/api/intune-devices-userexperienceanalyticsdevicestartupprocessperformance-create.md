@@ -1,20 +1,18 @@
 ---
 title: Создание Усерекспериенцеаналитиксдевицестартуппроцессперформанце
 description: Создание нового объекта Усерекспериенцеаналитиксдевицестартуппроцессперформанце.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d1f87169ff1477aae7d64e8fe4fce65df926df8b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 60947f54e7f06c71c78b966bcab2c80f5e39cf4f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42468252"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813882"
 ---
 # <a name="create-userexperienceanalyticsdevicestartupprocessperformance"></a>Создание Усерекспериенцеаналитиксдевицестартуппроцессперформанце
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42468252"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -104,7 +102,6 @@ Content-Length: 334
   "totalImpactInMs": 15
 }
 ```
-
 
 
 

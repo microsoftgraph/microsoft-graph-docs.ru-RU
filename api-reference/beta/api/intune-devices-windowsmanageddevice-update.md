@@ -1,20 +1,18 @@
 ---
 title: Обновление Виндовсманажеддевице
 description: Обновление свойств объекта Виндовсманажеддевице.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 73898965523a71d9ee9544922c56f7d7f3abaa63
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c970bc2ffa742086ef7bb5723acebe4e90a945ed
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42467769"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813644"
 ---
 # <a name="update-windowsmanageddevice"></a>Обновление Виндовсманажеддевице
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42467769"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -144,7 +142,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 7641
+Content-length: 7665
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -315,7 +313,8 @@ Content-length: 7641
   },
   "configurationManagerClientInformation": {
     "@odata.type": "microsoft.graph.configurationManagerClientInformation",
-    "clientIdentifier": "Client Identifier value"
+    "clientIdentifier": "Client Identifier value",
+    "isBlocked": true
   },
   "ethernetMacAddress": "Ethernet Mac Address value",
   "physicalMemoryInBytes": 5,
@@ -328,7 +327,7 @@ Content-length: 7641
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7690
+Content-Length: 7714
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -500,14 +499,14 @@ Content-Length: 7690
   },
   "configurationManagerClientInformation": {
     "@odata.type": "microsoft.graph.configurationManagerClientInformation",
-    "clientIdentifier": "Client Identifier value"
+    "clientIdentifier": "Client Identifier value",
+    "isBlocked": true
   },
   "ethernetMacAddress": "Ethernet Mac Address value",
   "physicalMemoryInBytes": 5,
   "processorArchitecture": "x86"
 }
 ```
-
 
 
 

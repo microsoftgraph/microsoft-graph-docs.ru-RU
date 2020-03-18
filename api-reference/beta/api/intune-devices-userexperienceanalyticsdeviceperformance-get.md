@@ -1,20 +1,18 @@
 ---
 title: Получение Усерекспериенцеаналитиксдевицеперформанце
 description: Чтение свойств и связей объекта Усерекспериенцеаналитиксдевицеперформанце.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e191614985945e29b3409749ef7957aecae77139
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9fa7fe377a46be82d22ce879825abc6fdde2f39c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42468448"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813981"
 ---
 # <a name="get-userexperienceanalyticsdeviceperformance"></a>Получение Усерекспериенцеаналитиксдевицеперформанце
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42468448"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -91,7 +89,6 @@ Content-Length: 629
   }
 }
 ```
-
 
 
 

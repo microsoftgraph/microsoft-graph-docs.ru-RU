@@ -1,20 +1,18 @@
 ---
 title: Обновление Усерекспериенцеаналитиксдевицестартуппроцесс
 description: Обновление свойств объекта Усерекспериенцеаналитиксдевицестартуппроцесс.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c483cc8cb3f70c6a1db235a0189a337960a46045
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 64f52f9a08543ae0cef610bd32e6c58e81f5a45c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42468245"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813889"
 ---
 # <a name="update-userexperienceanalyticsdevicestartupprocess"></a>Обновление Усерекспериенцеаналитиксдевицестартуппроцесс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42468245"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -101,7 +99,6 @@ Content-Length: 325
   "startupImpactInMs": 1
 }
 ```
-
 
 
 

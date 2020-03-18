@@ -1,20 +1,18 @@
 ---
 title: Create managedIOSLobApp
 description: Создание объекта managedIOSLobApp.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 48e8c7b6ae2882281a6137b0a269ca3fe185affa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 20998e6d3d6dd6fb4ed06da56773e45926e98f43
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42445101"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42815425"
 ---
 # <a name="create-managedioslobapp"></a>Create managedIOSLobApp
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42445101"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -207,7 +205,6 @@ Content-Length: 1661
   "identityVersion": "Identity Version value"
 }
 ```
-
 
 
 

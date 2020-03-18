@@ -1,20 +1,18 @@
 ---
 title: Список Виндовсманажеддевицес
 description: Список свойств и связей объектов Виндовсманажеддевице.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f63a58834635cd1a109df0ec355ad0853d871b61
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4c0a46964a7553730405e84a913ba4c98a8d1549
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42467755"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813651"
 ---
 # <a name="list-windowsmanageddevices"></a>Список Виндовсманажеддевицес
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42467755"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -67,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8419
+Content-Length: 8447
 
 {
   "value": [
@@ -241,7 +239,8 @@ Content-Length: 8419
       },
       "configurationManagerClientInformation": {
         "@odata.type": "microsoft.graph.configurationManagerClientInformation",
-        "clientIdentifier": "Client Identifier value"
+        "clientIdentifier": "Client Identifier value",
+        "isBlocked": true
       },
       "ethernetMacAddress": "Ethernet Mac Address value",
       "physicalMemoryInBytes": 5,
@@ -250,7 +249,6 @@ Content-Length: 8419
   ]
 }
 ```
-
 
 
 
