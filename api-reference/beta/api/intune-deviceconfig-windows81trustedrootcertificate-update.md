@@ -1,20 +1,18 @@
 ---
 title: Обновление windows81TrustedRootCertificate
 description: Обновление свойств объекта windows81TrustedRootCertificate.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 176daa4d88339ca49b85febc95e97803c022af07
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 88a65b914c357efc0ef74231a1d0ced3a4175f29
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42476834"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42736701"
 ---
 # <a name="update-windows81trustedrootcertificate"></a>Обновление windows81TrustedRootCertificate
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42476834"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -164,7 +162,6 @@ Content-Length: 1370
   "destinationStore": "computerCertStoreIntermediate"
 }
 ```
-
 
 
 

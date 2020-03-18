@@ -1,20 +1,18 @@
 ---
 title: Создание iosEasEmailProfileConfiguration
 description: Создание нового объекта iosEasEmailProfileConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 536e287341b7109384c82926162b5dfb746565dd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b1053af59d3cb94d5fe3c0f801ce4f53ab7c5417
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442868"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42751750"
 ---
 # <a name="create-ioseasemailprofileconfiguration"></a>Создание iosEasEmailProfileConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42442868"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -233,7 +231,6 @@ Content-Length: 2303
   "encryptionCertificateType": "certificate"
 }
 ```
-
 
 
 

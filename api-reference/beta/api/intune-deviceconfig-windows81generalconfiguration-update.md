@@ -1,20 +1,18 @@
 ---
 title: Update windows81GeneralConfiguration
 description: Обновление свойств объекта windows81GeneralConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5a59e89f01723fe1555641c9a00678fbdfa0a0ae
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 479c45569e1ca2162aa98c16517031e96794a791
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42477198"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42737128"
 ---
 # <a name="update-windows81generalconfiguration"></a>Update windows81GeneralConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42477198"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -261,7 +259,6 @@ Content-Length: 2869
   "workFoldersUrl": "https://example.com/workFoldersUrl/"
 }
 ```
-
 
 
 

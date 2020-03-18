@@ -1,20 +1,18 @@
 ---
 title: Создание Иоседудевицеконфигуратион
 description: Создание нового объекта Иоседудевицеконфигуратион.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 70f053dd57f7e6b232efa85e28227eec3de2b6f9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 56e8dc67a83a01fef9f6e8eb8b6832494e38ec67
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448958"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42751309"
 ---
 # <a name="create-iosedudeviceconfiguration"></a>Создание Иоседудевицеконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42448958"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -224,7 +222,6 @@ Content-Length: 2855
   }
 }
 ```
-
 
 
 

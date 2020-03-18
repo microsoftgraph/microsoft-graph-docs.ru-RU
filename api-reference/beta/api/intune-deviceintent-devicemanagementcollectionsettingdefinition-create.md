@@ -1,20 +1,18 @@
 ---
 title: Создание Девицеманажементколлектионсеттингдефинитион
 description: Создание нового объекта Девицеманажементколлектионсеттингдефинитион.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 025ee6d376eb806d42c3478de3370d6e37651128
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d0892369d7fc1758ea45c57bc82f6e34f4c9a234
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42472571"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42730706"
 ---
 # <a name="create-devicemanagementcollectionsettingdefinition"></a>Создание Девицеманажементколлектионсеттингдефинитион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42472571"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -163,7 +161,6 @@ Content-Length: 1044
   "elementDefinitionId": "Element Definition Id value"
 }
 ```
-
 
 
 

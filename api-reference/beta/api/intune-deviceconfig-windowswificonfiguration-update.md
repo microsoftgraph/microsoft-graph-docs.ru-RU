@@ -1,20 +1,18 @@
 ---
 title: Обновление Виндовсвификонфигуратион
 description: Обновление свойств объекта Виндовсвификонфигуратион.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 73ec09f47315d0eaf14bdd94e07af474d89f1a62
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fbdad47420326e96976f54a49427a17348528692
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42473334"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42731994"
 ---
 # <a name="update-windowswificonfiguration"></a>Обновление Виндовсвификонфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42473334"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -195,7 +193,6 @@ Content-Length: 1731
   "forceFIPSCompliance": true
 }
 ```
-
 
 
 

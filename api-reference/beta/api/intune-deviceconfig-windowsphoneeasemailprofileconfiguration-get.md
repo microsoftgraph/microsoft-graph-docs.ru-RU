@@ -1,20 +1,18 @@
 ---
 title: Получение Виндовсфониасемаилпрофилеконфигуратион
 description: Чтение свойств и связей объекта Виндовсфониасемаилпрофилеконфигуратион.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7e7cc2cd48dd2d6d598fa93cb2239b6fd90ea208
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 22aaa691e376c8e69a7430bc3b291c75202943f9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42474013"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42732939"
 ---
 # <a name="get-windowsphoneeasemailprofileconfiguration"></a>Получение Виндовсфониасемаилпрофилеконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42474013"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -123,7 +121,6 @@ Content-Length: 1850
   }
 }
 ```
-
 
 
 

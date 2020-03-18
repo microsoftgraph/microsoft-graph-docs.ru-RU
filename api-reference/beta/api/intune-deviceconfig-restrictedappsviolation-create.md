@@ -1,20 +1,18 @@
 ---
 title: Создание Рестриктедаппсвиолатион
 description: Создание нового объекта Рестриктедаппсвиолатион.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9263b339eefc18dab24e46457b78e0095ed58e00
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f0eafb779404ef622fe565d7c305ea09a1644c46
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42483926"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42742675"
 ---
 # <a name="create-restrictedappsviolation"></a>Создание Рестриктедаппсвиолатион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42483926"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -123,7 +121,6 @@ Content-Length: 613
   ]
 }
 ```
-
 
 
 

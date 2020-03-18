@@ -1,20 +1,18 @@
 ---
 title: Обновление iosikEv2VpnConfiguration
 description: Обновление свойств объекта iosikEv2VpnConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c8f09a7ef8c7aa0f83b6a45482bb2cb1d030496
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2cc9f0fce1aef3bb5f6ff30e0af72c24f177d619
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448874"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42750315"
 ---
 # <a name="update-iosikev2vpnconfiguration"></a>Обновление iosikEv2VpnConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42448874"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -429,7 +427,6 @@ Content-Length: 5156
   "enableAlwaysOnConfiguration": true
 }
 ```
-
 
 
 

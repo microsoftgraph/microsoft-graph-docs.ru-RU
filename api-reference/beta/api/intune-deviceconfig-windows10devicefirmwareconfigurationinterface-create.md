@@ -1,20 +1,18 @@
 ---
 title: Создание windows10DeviceFirmwareConfigurationInterface
 description: Создание нового объекта windows10DeviceFirmwareConfigurationInterface.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 47ac6afb07f8e0fad89e9283d5737f729a81e00d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 16bdb9cb28b378fcedb14b970088b5020a782c72
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42481399"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42740869"
 ---
 # <a name="create-windows10devicefirmwareconfigurationinterface"></a>Создание windows10DeviceFirmwareConfigurationInterface
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42481399"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -176,7 +174,6 @@ Content-Length: 1481
   "bootFromBuiltInNetworkAdapters": "enabled"
 }
 ```
-
 
 
 

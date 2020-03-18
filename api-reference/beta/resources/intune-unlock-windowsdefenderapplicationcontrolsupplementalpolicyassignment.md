@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Виндовсдефендераппликатионконтролсупплементалполициассигнмент
 description: Класс, содержащий свойства, которые используются для назначения дополнительной политики Виндовсдефендераппликатионконтрол группе.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e6c26c97ded8320cf4473c295a28210d6176205d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d340b8784ca59d4e0995ec8f370f9c35d7a4d3a6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523256"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42729075"
 ---
 # <a name="windowsdefenderapplicationcontrolsupplementalpolicyassignment-resource-type"></a>Тип ресурса Виндовсдефендераппликатионконтролсупплементалполициассигнмент
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Виндовсдефендераппликатионконтролсупплементалполици
 description: Пока не задокументировано.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 79e07ebd09f8cbb5ab3715e1d7baf30d8277b6a0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: df4373ba0bd438eb645c11e86449b3fd4d84e913
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523263"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42729082"
 ---
 # <a name="windowsdefenderapplicationcontrolsupplementalpolicy-resource-type"></a>Тип ресурса Виндовсдефендераппликатионконтролсупплементалполици
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

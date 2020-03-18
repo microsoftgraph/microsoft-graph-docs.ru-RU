@@ -1,20 +1,18 @@
 ---
 title: Перечисление объектов macOSDeviceFeaturesConfiguration
 description: Список свойств и связей объектов macOSDeviceFeaturesConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b306fd728c5fbbe55d4d9205d48179ec6318b4dc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 96b6bbdab3d459d296371b2e2d2534bf9433cb39
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442385"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42746964"
 ---
 # <a name="list-macosdevicefeaturesconfigurations"></a>Перечисление объектов macOSDeviceFeaturesConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42442385"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -153,7 +151,6 @@ Content-Length: 2985
   ]
 }
 ```
-
 
 
 

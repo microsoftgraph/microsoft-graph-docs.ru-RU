@@ -1,20 +1,18 @@
 ---
 title: Create windows10SecureAssessmentConfiguration
 description: Создание объекта windows10SecureAssessmentConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 959f77b5bef52b09680566de314138e744896bc9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 90098638dc2094d6d32fd2681d48d76ef5981279
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42478073"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42738489"
 ---
 # <a name="create-windows10secureassessmentconfiguration"></a>Create windows10SecureAssessmentConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42478073"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -179,7 +177,6 @@ Content-Length: 1575
   "assessmentAppUserModelId": "Assessment App User Model Id value"
 }
 ```
-
 
 
 

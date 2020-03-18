@@ -1,20 +1,18 @@
 ---
 title: Список Манажеддевицеенкриптионстатес
 description: Список свойств и связей объектов Манажеддевицеенкриптионстате.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f02b295f4b9d094b2a9aecdad7f2bd9bd196adb0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0413c786efcfb3f3c3a6079fb7193059f62d5936
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442091"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42743025"
 ---
 # <a name="list-manageddeviceencryptionstates"></a>Список Манажеддевицеенкриптионстатес
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42442091"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -93,7 +91,6 @@ Content-Length: 862
   ]
 }
 ```
-
 
 
 

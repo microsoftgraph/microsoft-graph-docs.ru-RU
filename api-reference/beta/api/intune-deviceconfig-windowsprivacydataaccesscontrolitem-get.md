@@ -1,20 +1,18 @@
 ---
 title: Получение Виндовспривацидатаакцессконтролитем
 description: Чтение свойств и связей объекта Виндовспривацидатаакцессконтролитем.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bed7f164c01bf4a853d391519b99fffac70f661c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6e0532cd79c6eb7c968fded01e0b1e78905bc2da
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42473908"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42732596"
 ---
 # <a name="get-windowsprivacydataaccesscontrolitem"></a>Получение Виндовспривацидатаакцессконтролитем
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42473908"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -81,7 +79,6 @@ Content-Length: 330
   }
 }
 ```
-
 
 
 

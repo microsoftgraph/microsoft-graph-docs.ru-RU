@@ -1,20 +1,18 @@
 ---
 title: Создание Виндовсидентитипротектионконфигуратион
 description: Создание нового объекта Виндовсидентитипротектионконфигуратион.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 47f7f34e24874d1f6ce23499d7a323be014b9bb9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 07357f72954378ac9190f0a5845e382fc7f3ccaa
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42475994"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42735277"
 ---
 # <a name="create-windowsidentityprotectionconfiguration"></a>Создание Виндовсидентитипротектионконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42475994"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -197,7 +195,6 @@ Content-Length: 1755
   "windowsHelloForBusinessBlocked": true
 }
 ```
-
 
 
 

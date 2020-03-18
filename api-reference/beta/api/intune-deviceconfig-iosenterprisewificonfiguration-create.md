@@ -1,20 +1,18 @@
 ---
 title: Создание iosEnterpriseWiFiConfiguration
 description: Создание нового объекта iosEnterpriseWiFiConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 243fd70da27535d3a19d2e271d0346abeab13742
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8a787f96cde0f88be4107d91bf14b408ad02b7c6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442798"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42751001"
 ---
 # <a name="create-iosenterprisewificonfiguration"></a>Создание iosEnterpriseWiFiConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42442798"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -213,7 +211,6 @@ Content-Length: 2146
   "passwordFormatString": "Password Format String value"
 }
 ```
-
 
 
 

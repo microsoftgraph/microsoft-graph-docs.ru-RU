@@ -1,20 +1,18 @@
 ---
 title: Обновление Макострустедрутцертификате
 description: Обновление свойств объекта Макострустедрутцертификате.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4ed8b693f01a9d0134b4aca119a6fcf78ebc1f34
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c605365c3dc091cceb3b5e583474ef4932fa1b30
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442210"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42744551"
 ---
 # <a name="update-macostrustedrootcertificate"></a>Обновление Макострустедрутцертификате
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42442210"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -162,7 +160,6 @@ Content-Length: 1310
   "certFileName": "Cert File Name value"
 }
 ```
-
 
 
 

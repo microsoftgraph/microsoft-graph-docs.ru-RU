@@ -1,20 +1,18 @@
 ---
 title: Update iosCompliancePolicy
 description: Обновление свойств объекта iosCompliancePolicy.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 03f8f542b65c4af370bb1e00a86880ffbeae5f95
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7270cd8b591408c30c94b2a1c3b8cee70fe255e9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442938"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42752487"
 ---
 # <a name="update-ioscompliancepolicy"></a>Update iosCompliancePolicy
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42442938"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -176,7 +174,6 @@ Content-Length: 1413
   ]
 }
 ```
-
 
 
 

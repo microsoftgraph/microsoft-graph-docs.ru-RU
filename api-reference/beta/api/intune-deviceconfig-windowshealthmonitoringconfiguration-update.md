@@ -1,20 +1,18 @@
 ---
 title: Обновление Виндовшеалсмониторингконфигуратион
 description: Обновление свойств объекта Виндовшеалсмониторингконфигуратион.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8cb6a2b8af4a6a6fdb0303bc47cebcf2c4adb346
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b81d1af4ad9a6cdd0b62a9ef9da293ab7145ad9f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42476001"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42735298"
 ---
 # <a name="update-windowshealthmonitoringconfiguration"></a>Обновление Виндовшеалсмониторингконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42476001"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -165,7 +163,6 @@ Content-Length: 1416
   "configDeviceHealthMonitoringCustomScope": "Config Device Health Monitoring Custom Scope value"
 }
 ```
-
 
 
 

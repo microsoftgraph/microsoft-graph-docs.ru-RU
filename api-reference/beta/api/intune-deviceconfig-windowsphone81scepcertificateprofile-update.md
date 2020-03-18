@@ -1,20 +1,18 @@
 ---
 title: Обновление windowsPhone81SCEPCertificateProfile
 description: Обновление свойств объекта windowsPhone81SCEPCertificateProfile.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ecc840ea9454b81e8483e752bbb91c431ecb2d28
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0d6b4ea37d470dc94c0a0b186017afd7eb85352f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42474587"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42733464"
 ---
 # <a name="update-windowsphone81scepcertificateprofile"></a>Обновление windowsPhone81SCEPCertificateProfile
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42474587"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -211,7 +209,6 @@ Content-Length: 1977
   "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Обновление объекта windows10GeneralConfiguration
 description: Обновление свойств объекта windows10GeneralConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c590c7587778a8efa8ec65b0935e8ff37308352c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a768484213cdff3e620eccdaee3da25a604cb7d1
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42479844"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42739616"
 ---
 # <a name="update-windows10generalconfiguration"></a>Обновление объекта windows10GeneralConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42479844"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -109,6 +107,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |searchDisableIndexingRemovableDrive|Boolean|Указывает, могут ли пользователи добавлять расположения на съемных дисках в библиотеки и для индексирования.|
 |searchEnableAutomaticIndexSizeManangement|Логический|Указывает минимальный объем памяти на жестком диске с индексом до остановки индексирования.|
 |сеарчблокквебресултс|Логический|Указывает, следует ли запретить Поиск в Интернете.|
+|финдмифилес|[Включение](../resources/intune-shared-enablement.md)|Определяет, может ли пользователь настроить поиск в режиме "Мои файлы", который выполняет поиск файлов на дополнительных жестких дисках, а также вне профиля пользователя. "Найти мои файлы" не позволяет пользователям искать файлы и расположения, к которым у них нет доступа. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |секуритиблокказуреаджоинеддевицесаутоенкриптион|Логический|Укажите, следует ли разрешить автоматическое шифрование устройства во время OOBE, когда устройство присоединяется к Azure AD (только для настольных компьютеров).|
 |diagnosticsDataSubmissionMode|[диагностикдатасубмиссионмоде](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|Возвращает или задает значение, позволяющее устройству отправлять данные диагностики и телеметрии использования, такие как Watson. Возможные значения: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
 |oneDriveDisableFileSync|Логический|Возвращает или задает значение, позволяющее ИТ-администраторам запретить работу приложений и функций с файлами в OneDrive.|
@@ -135,8 +134,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |edgeBlockInPrivateBrowsing|Логический|Указывает, следует ли заблокировать просмотр InPrivate в корпоративных сетях в браузере Edge.|
 |edgeBlockJavaScript|Логический|Указывает, следует ли запретить использовать JavaScript.|
 |edgeBlockPasswordManager|Логический|Указывает, следует ли заблокировать диспетчер паролей.|
-|edgeBlockAddressBarDropdown|Логический|Позволяет заблокировать раскрывающийся список адресной строки в Microsoft Edge. Отключите этот параметр, чтобы уменьшить количество сетевых подключений Microsoft Edge к службам Майкрософт.|
-|edgeBlockCompatibilityList|Boolean|Позволяет заблокировать список совместимости Майкрософт в Microsoft Edge. Этот список помогает Edge правильно отображать сайты с известными проблемами совместимости.|
+|edgeBlockAddressBarDropdown|Boolean|Позволяет заблокировать раскрывающийся список адресной строки в Microsoft Edge. Отключите этот параметр, чтобы уменьшить количество сетевых подключений Microsoft Edge к службам Майкрософт.|
+|edgeBlockCompatibilityList|Логический|Позволяет заблокировать список совместимости Майкрософт в Microsoft Edge. Этот список помогает Edge правильно отображать сайты с известными проблемами совместимости.|
 |edgeClearBrowsingDataOnExit|Логический|Указывает, следует ли удалять данные просмотра при выходе из Microsoft Edge.|
 |edgeAllowStartPagesModification|Логический|Указывает, могут ли пользователи изменять начальные страницы в Edge. Используйте свойство EdgeHomepageUrls, чтобы указать начальные страницы по умолчанию, отображаемые при открытии Edge.|
 |edgeDisableFirstRunPage|Логический|Позволяет заблокировать веб-страницу Майкрософт, которая открывается при первом запуске Microsoft Edge. Эта политика позволяет предприятиям, зарегистрированным в конфигурациях с нулевым выбросом, блокировать эту страницу.|
@@ -223,6 +222,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |privacyBlockInputPersonalization|Boolean|Указывает, следует ли запретить использовать облачные службы распознавания речи для приложений "Кортана", "Диктофон" или Store.|
 |привациблоккпублишусерактивитиес|Логический|Блокирует общий доступ/обнаружение недавно использовавшихся ресурсов в переключателе задач и т. д.|
 |привациблоккактивитифид|Логический|Блокирует использование облачных голосовых служб для Кортаны, диктовки или хранения приложений.|
+|активатеаппсвисвоице|[Включение](../resources/intune-shared-enablement.md)|Указывает, можно ли активировать приложения Windows с помощью голосовых вызовов. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |startBlockUnpinningAppsFromTaskbar|Логический|Указывает, следует ли запретить пользователю откреплять приложения с панели задач.|
 |startMenuAppListVisibility|[виндовсстартменуапплиствисибилититипе](../resources/intune-deviceconfig-windowsstartmenuapplistvisibilitytype.md)|Эта политика позволяет свернуть список приложений, полностью удалить этот список или отключить соответствующий переключатель в приложении "Параметры". Возможные значения: `userDefined`, `collapse`, `remove`, `disableSettingsApp`.|
 |startMenuHideChangeAccountSettings|Логический|Эта политика позволяет скрыть параметр для смены учетной записи на плитке пользователя в меню "Пуск".|
@@ -276,12 +276,12 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |networkProxyAutomaticConfigurationUrl|String|Адрес сценария автонастройки прокси-сервера (PAC).|
 |networkProxyServer|[windows10NetworkProxyServer](../resources/intune-deviceconfig-windows10networkproxyserver.md)|Определяет ручные настройки прокси-сервера.|
 |accountsBlockAddingNonMicrosoftAccountEmail|Логический|Указывает, следует ли запретить пользователю добавлять учетные записи электронной почты на устройства, не связанные с учетной записью Майкрософт.|
-|antiTheftModeBlocked|Логический|Указывает, следует ли запретить пользователю выбирать режим AntiTheft (только для Windows 10 Mobile).|
+|antiTheftModeBlocked|Boolean|Указывает, следует ли запретить пользователю выбирать режим AntiTheft (только для Windows 10 Mobile).|
 |bluetoothBlocked|Логический|Указывает, следует ли запретить использовать Bluetooth.|
-|cameraBlocked|Логический|Определяет, следует ли запретить доступ к камере устройства.|
+|cameraBlocked|Boolean|Определяет, следует ли запретить доступ к камере устройства.|
 |connectedDevicesServiceBlocked|Логический|Указывает, следует ли блокировать службу подключенных устройств, которая позволяет находить другие устройства и подключаться к ним, удаленно обмениваться сообщениями и работать с приложениями, а также выполнять другие действия.|
 |certificatesBlockManualRootCertificateInstallation|Логический|Указывает, следует ли запретить пользователю вручную устанавливать корневой сертификат.|
-|copyPasteBlocked|Boolean|Указывает, следует ли запретить пользователю копировать данные.|
+|copyPasteBlocked|Логический|Указывает, следует ли запретить пользователю копировать данные.|
 |cortanaBlocked|Логический|Указывает, следует ли запретить использовать Кортану.|
 |deviceManagementBlockFactoryResetOnMobile|Логический|Указывает, следует ли запретить пользователю сбрасывать настройки телефона.|
 |deviceManagementBlockManualUnenroll|Логический|Указывает, следует ли запретить пользователю вручную отменять регистрацию в системе управления устройствами.|
@@ -310,10 +310,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |settingsBlockChangePowerSleep|Логический|Указывает, следует ли запретить пользователю изменять параметры питания и спящего режима.|
 |locationServicesBlocked|Логический|Указывает, следует ли запретить использовать службы определения местоположения.|
 |microsoftAccountBlocked|Логический|Указывает, следует ли запретить использовать учетную запись Майкрософт.|
-|microsoftAccountBlockSettingsSync|Логический|Указывает, следует ли запретить синхронизировать настройки учетной записи Майкрософт.|
+|microsoftAccountBlockSettingsSync|Boolean|Указывает, следует ли запретить синхронизировать настройки учетной записи Майкрософт.|
 |nfcBlocked|Логический|Указывает, следует ли запретить использовать NFC.|
-|resetProtectionModeBlocked|Boolean|Указывает, следует ли запретить пользователю сбрасывать режим защиты.|
-|screenCaptureBlocked|Boolean|Указывает, следует ли запретить пользователю делать снимки экрана.|
+|resetProtectionModeBlocked|Логический|Указывает, следует ли запретить пользователю сбрасывать режим защиты.|
+|screenCaptureBlocked|Логический|Указывает, следует ли запретить пользователю делать снимки экрана.|
 |storageBlockRemovableStorage|Логический|Указывает, следует ли запретить использовать съемные носители.|
 |storageRequireMobileDeviceEncryption|Логический|Указывает, обязательно ли шифровать данные на мобильном устройстве.|
 |usbBlocked|Логический|Указывает, следует ли запретить пользователю подключать USB-устройства.|
@@ -344,7 +344,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |аппманажементмсиалвайсинсталлвиселеватедпривилежес|Логический|Этот параметр политики направляет установщик Windows использовать повышенные разрешения при установке любой программы в систему.|
 |датапротектионблоккдиректмеморякцесс|Логический|Этот параметр политики позволяет заблокировать прямой доступ к памяти (DMA) для всех подключенных портов PCI, подключенных к горячему подключению, пока пользователь не войдет в систему Windows.|
 |аппманажементпаккажефамилинаместолаунчафтерлогон|Коллекция String|Список имен семейств пакетов для приложений Windows, разделенных точкой с запятой. Перечисленные приложения Windows будут запущены после входа в систему.|
-|uninstallBuiltInApps|Логический|Указывает, следует ли удалить фиксированный список встроенных приложений Windows.|
+|uninstallBuiltInApps|Boolean|Указывает, следует ли удалить фиксированный список встроенных приложений Windows.|
+|конфигуретимезоне|String|Указывает часовой пояс, применяемый к устройству. Это стандартное имя Windows для целевого часового пояса.|
 
 
 
@@ -358,7 +359,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 14888
+Content-length: 15009
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -444,6 +445,7 @@ Content-length: 14888
   "searchDisableIndexingRemovableDrive": true,
   "searchEnableAutomaticIndexSizeManangement": true,
   "searchBlockWebResults": true,
+  "findMyFiles": "enabled",
   "securityBlockAzureADJoinedDevicesAutoEncryption": true,
   "diagnosticsDataSubmissionMode": "none",
   "oneDriveDisableFileSync": true,
@@ -576,6 +578,7 @@ Content-length: 14888
   "privacyBlockInputPersonalization": true,
   "privacyBlockPublishUserActivities": true,
   "privacyBlockActivityFeed": true,
+  "activateAppsWithVoice": "enabled",
   "startBlockUnpinningAppsFromTaskbar": true,
   "startMenuAppListVisibility": "collapse",
   "startMenuHideChangeAccountSettings": true,
@@ -710,7 +713,8 @@ Content-length: 14888
   "appManagementPackageFamilyNamesToLaunchAfterLogOn": [
     "App Management Package Family Names To Launch After Log On value"
   ],
-  "uninstallBuiltInApps": true
+  "uninstallBuiltInApps": true,
+  "configureTimeZone": "Configure Time Zone value"
 }
 ```
 
@@ -719,7 +723,7 @@ Content-length: 14888
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 15060
+Content-Length: 15181
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -808,6 +812,7 @@ Content-Length: 15060
   "searchDisableIndexingRemovableDrive": true,
   "searchEnableAutomaticIndexSizeManangement": true,
   "searchBlockWebResults": true,
+  "findMyFiles": "enabled",
   "securityBlockAzureADJoinedDevicesAutoEncryption": true,
   "diagnosticsDataSubmissionMode": "none",
   "oneDriveDisableFileSync": true,
@@ -940,6 +945,7 @@ Content-Length: 15060
   "privacyBlockInputPersonalization": true,
   "privacyBlockPublishUserActivities": true,
   "privacyBlockActivityFeed": true,
+  "activateAppsWithVoice": "enabled",
   "startBlockUnpinningAppsFromTaskbar": true,
   "startMenuAppListVisibility": "collapse",
   "startMenuHideChangeAccountSettings": true,
@@ -1074,10 +1080,10 @@ Content-Length: 15060
   "appManagementPackageFamilyNamesToLaunchAfterLogOn": [
     "App Management Package Family Names To Launch After Log On value"
   ],
-  "uninstallBuiltInApps": true
+  "uninstallBuiltInApps": true,
+  "configureTimeZone": "Configure Time Zone value"
 }
 ```
-
 
 
 

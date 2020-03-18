@@ -1,20 +1,18 @@
 ---
 title: Обновление windowsPhone81GeneralConfiguration
 description: Обновление свойств объекта windowsPhone81GeneralConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 538357ecbc4e76fd5fa6273a879cbfe0205bf5a2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 38fd6719b238a335a6472d2e1e75d2afed1d6760
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42475091"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42733947"
 ---
 # <a name="update-windowsphone81generalconfiguration"></a>Обновление windowsPhone81GeneralConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42475091"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -259,7 +257,6 @@ Content-Length: 2498
   "windowsStoreBlocked": true
 }
 ```
-
 
 
 

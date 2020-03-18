@@ -1,20 +1,18 @@
 ---
 title: Создание объекта windows10CustomConfiguration
 description: Создание объекта windows10CustomConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: aed1a68c123e3c3e0a19bd5e33fa76717154eee5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dd5f805a20740c8f5ecd7031e3f738b9774660e8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42481812"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42741002"
 ---
 # <a name="create-windows10customconfiguration"></a>Создание объекта windows10CustomConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42481812"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -176,7 +174,6 @@ Content-Length: 1468
   ]
 }
 ```
-
 
 
 

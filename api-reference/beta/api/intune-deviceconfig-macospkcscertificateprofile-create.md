@@ -1,20 +1,18 @@
 ---
 title: Создание Макоспкксцертификатепрофиле
 description: Создание нового объекта Макоспкксцертификатепрофиле.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f9c3400ba91f224da905c4875b2a2ecd98ea259d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7386f92437688974d9737f09e96cb38233b06fcc
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442252"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42745340"
 ---
 # <a name="create-macospkcscertificateprofile"></a>Создание Макоспкксцертификатепрофиле
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42442252"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -206,7 +204,6 @@ Content-Length: 2029
   "allowAllAppsAccess": true
 }
 ```
-
 
 
 

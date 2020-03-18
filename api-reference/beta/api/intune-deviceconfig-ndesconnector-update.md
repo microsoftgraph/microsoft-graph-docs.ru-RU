@@ -1,20 +1,18 @@
 ---
 title: Обновление Ндесконнектор
 description: Обновление свойств объекта Ндесконнектор.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: eeb82b23c907b1be3c7f51bdace91d76bf1f2891
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 789afccb18c449379fa5d0b5d6aec7510f258ea9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442021"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42742682"
 ---
 # <a name="update-ndesconnector"></a>Обновление Ндесконнектор
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42442021"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -95,7 +93,6 @@ Content-Length: 232
   "displayName": "Display Name value"
 }
 ```
-
 
 
 

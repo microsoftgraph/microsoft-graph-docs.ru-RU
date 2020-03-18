@@ -1,20 +1,18 @@
 ---
 title: Создание macOSScepCertificateProfile
 description: Создание нового объекта macOSScepCertificateProfile.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ad61d3732af48ad7c375221e8c7b755c0c6a4e0b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 38964b45ea970258c0ff64f91ae7c5e2608508f7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448720"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42745193"
 ---
 # <a name="create-macosscepcertificateprofile"></a>Создание macOSScepCertificateProfile
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42448720"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -225,7 +223,6 @@ Content-Length: 2134
   ]
 }
 ```
-
 
 
 

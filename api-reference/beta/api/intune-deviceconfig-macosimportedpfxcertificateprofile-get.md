@@ -1,20 +1,18 @@
 ---
 title: Получение Макосимпортедпфксцертификатепрофиле
 description: Чтение свойств и связей объекта Макосимпортедпфксцертификатепрофиле.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b9859d877fc9b1b217fa3285e34e9f734417655c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f0498973728c3834df031e6654a94edec9f31c9b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448748"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42745606"
 ---
 # <a name="get-macosimportedpfxcertificateprofile"></a>Получение Макосимпортедпфксцертификатепрофиле
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42448748"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -115,7 +113,6 @@ Content-Length: 1564
   }
 }
 ```
-
 
 
 

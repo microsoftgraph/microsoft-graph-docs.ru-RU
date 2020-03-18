@@ -1,20 +1,18 @@
 ---
 title: Создание Девицеманажементбулеансеттингинстанце
 description: Создание нового объекта Девицеманажементбулеансеттингинстанце.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: efb1048ffe3371272efcf6c8c54e366ba42bb2a7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c0ea64c5c33562cdb2278e0a8b6f9ce00cadb924
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42472767"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42731098"
 ---
 # <a name="create-devicemanagementbooleansettinginstance"></a>Создание Девицеманажементбулеансеттингинстанце
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42472767"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -98,7 +96,6 @@ Content-Length: 225
   "value": true
 }
 ```
-
 
 
 

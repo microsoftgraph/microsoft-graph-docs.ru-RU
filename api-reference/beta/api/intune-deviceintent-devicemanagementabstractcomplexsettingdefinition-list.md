@@ -1,20 +1,18 @@
 ---
 title: Список Девицеманажементабстракткомплекссеттингдефинитионс
 description: Список свойств и связей объектов Девицеманажементабстракткомплекссеттингдефинитион.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: efc1a9f06b951c5e5e70ab8ef10a89c80f38e2cd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0e72a616e76b1961a17aacacbf8439602f35910e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42472998"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42731553"
 ---
 # <a name="list-devicemanagementabstractcomplexsettingdefinitions"></a>Список Девицеманажементабстракткомплекссеттингдефинитионс
-
-Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42472998"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -113,7 +111,6 @@ Content-Length: 1228
   ]
 }
 ```
-
 
 
 

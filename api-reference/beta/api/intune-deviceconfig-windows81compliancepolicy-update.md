@@ -1,20 +1,18 @@
 ---
 title: Update windows81CompliancePolicy
 description: Обновление свойств объекта windows81CompliancePolicy.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f57d96a7b3c04c844e477bb424526b7c325c5148
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e2f3676b424dcea79c3d77cc81a8e177907c3f2b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42477366"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42737388"
 ---
 # <a name="update-windows81compliancepolicy"></a>Update windows81CompliancePolicy
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42477366"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -139,7 +137,6 @@ Content-Length: 836
   "storageRequireEncryption": true
 }
 ```
-
 
 
 

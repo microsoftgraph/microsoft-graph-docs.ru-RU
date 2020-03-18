@@ -1,20 +1,18 @@
 ---
 title: Получение Макосцертификатепрофилебасе
 description: Чтение свойств и связей объекта Макосцертификатепрофилебасе.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2c8e033143719c8d952446e9ff785e09500cf420
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 29ac3b68d78c197e4cb09979ae611f1004b8a054
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442490"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42747961"
 ---
 # <a name="get-macoscertificateprofilebase"></a>Получение Макосцертификатепрофилебасе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42442490"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -115,7 +113,6 @@ Content-Length: 1514
   }
 }
 ```
-
 
 
 

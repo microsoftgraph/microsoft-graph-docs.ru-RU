@@ -1,20 +1,18 @@
 ---
 title: Update windows10MobileCompliancePolicy
 description: Обновление свойств объекта windows10MobileCompliancePolicy.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f76826d0f5b1ff9661654755874c2582ff1aafc0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6539b56a4a916efe495284d1788d3bd57bdb4955
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42478955"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42739161"
 ---
 # <a name="update-windows10mobilecompliancepolicy"></a>Update windows10MobileCompliancePolicy
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42478955"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -174,7 +172,6 @@ Content-Length: 1330
   ]
 }
 ```
-
 
 
 

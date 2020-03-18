@@ -1,20 +1,18 @@
 ---
 title: Получение объекта softwareUpdateStatusSummary
 description: Чтение свойств и связей объекта softwareUpdateStatusSummary.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1eebd4fccc48e74096d0ff6bf358d54816adfdad
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f3b304e8012c2b27d44ca0be24e48c1c5288cdb9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42482841"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42741793"
 ---
 # <a name="get-softwareupdatestatussummary"></a>Получение объекта softwareUpdateStatusSummary
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42482841"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -92,7 +90,6 @@ Content-Length: 620
   }
 }
 ```
-
 
 
 

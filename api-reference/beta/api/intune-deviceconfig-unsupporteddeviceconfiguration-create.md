@@ -1,20 +1,18 @@
 ---
 title: Создание Унсуппортеддевицеконфигуратион
 description: Создание нового объекта Унсуппортеддевицеконфигуратион.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d116ed74055fbc21b1b9073aa4b18aabdd699f21
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9aca4e3aa714481f11c9f20731ae862fc1600059
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42482617"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42741737"
 ---
 # <a name="create-unsupporteddeviceconfiguration"></a>Создание Унсуппортеддевицеконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42482617"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -66,7 +64,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |оригиналентититипенаме|String|Тип сущности, возвращаемой в противном случае.|
-|подробности|Коллекция [унсуппортеддевицеконфигуратиондетаил](../resources/intune-deviceconfig-unsupporteddeviceconfigurationdetail.md)|Сведения о том, почему сущность не поддерживается. Эта коллекция может содержать не более 1000 элементов.|
+|details|Коллекция [унсуппортеддевицеконфигуратиондетаил](../resources/intune-deviceconfig-unsupporteddeviceconfigurationdetail.md)|Сведения о том, почему сущность не поддерживается. Эта коллекция может содержать не более 1000 элементов.|
 
 
 
@@ -173,7 +171,6 @@ Content-Length: 1463
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Обновление Девицеманажементкомплекссеттингдефинитион
 description: Обновление свойств объекта Девицеманажементкомплекссеттингдефинитион.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d2678660d4ab0631fad58fc7f7bd78b33d6d19f3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ac2d8e047a59012f6c62674d97a50451bf7b2909
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42472039"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42730111"
 ---
 # <a name="update-devicemanagementcomplexsettingdefinition"></a>Обновление Девицеманажементкомплекссеттингдефинитион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42472039"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -167,7 +165,6 @@ Content-Length: 1057
   ]
 }
 ```
-
 
 
 

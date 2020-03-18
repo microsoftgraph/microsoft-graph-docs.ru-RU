@@ -1,20 +1,18 @@
 ---
 title: Перечисление объектов windows10EndpointProtectionConfiguration
 description: Перечисление свойств и связей объектов windows10EndpointProtectionConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5075a6f3b2bcec7b8954f36fbdfec3577f65ca06
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2e03f0186a6d28a28a07bf2f60dca3c42d1dc616
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42480461"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42740218"
 ---
 # <a name="list-windows10endpointprotectionconfigurations"></a>Перечисление объектов windows10EndpointProtectionConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42480461"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -66,7 +64,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 33552
+Content-Length: 34154
 
 {
   "value": [
@@ -752,18 +750,29 @@ Content-Length: 33552
       },
       "bitLockerRecoveryPasswordRotation": "disabled",
       "defenderDisableScanArchiveFiles": true,
+      "defenderAllowScanArchiveFiles": true,
       "defenderDisableBehaviorMonitoring": true,
+      "defenderAllowBehaviorMonitoring": true,
       "defenderDisableCloudProtection": true,
+      "defenderAllowCloudProtection": true,
       "defenderEnableScanIncomingMail": true,
       "defenderEnableScanMappedNetworkDrivesDuringFullScan": true,
       "defenderDisableScanRemovableDrivesDuringFullScan": true,
+      "defenderAllowScanRemovableDrivesDuringFullScan": true,
       "defenderDisableScanDownloads": true,
+      "defenderAllowScanDownloads": true,
       "defenderDisableIntrusionPreventionSystem": true,
+      "defenderAllowIntrusionPreventionSystem": true,
       "defenderDisableOnAccessProtection": true,
+      "defenderAllowOnAccessProtection": true,
       "defenderDisableRealTimeMonitoring": true,
+      "defenderAllowRealTimeMonitoring": true,
       "defenderDisableScanNetworkFiles": true,
+      "defenderAllowScanNetworkFiles": true,
       "defenderDisableScanScriptsLoadedInInternetExplorer": true,
+      "defenderAllowScanScriptsLoadedInInternetExplorer": true,
       "defenderBlockEndUserAccess": true,
+      "defenderAllowEndUserAccess": true,
       "defenderScanMaxCpuPercentage": 12,
       "defenderCheckForSignaturesBeforeRunningScan": true,
       "defenderCloudBlockLevel": "high",
@@ -787,6 +796,7 @@ Content-Length: 33552
       "defenderScheduledQuickScanTime": "11:58:49.3840000",
       "defenderScheduledScanDay": "everyday",
       "defenderScheduledScanTime": "11:59:10.9990000",
+      "defenderSignatureUpdateIntervalInHours": 6,
       "defenderSubmitSamplesConsentType": "alwaysPrompt",
       "defenderDetectedMalwareActions": {
         "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
@@ -799,7 +809,6 @@ Content-Length: 33552
   ]
 }
 ```
-
 
 
 

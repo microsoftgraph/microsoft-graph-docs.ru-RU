@@ -1,20 +1,18 @@
 ---
 title: Создание windows10PFXImportCertificateProfile
 description: Создание нового объекта windows10PFXImportCertificateProfile.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e8f1382a9c2cd911ddcdb5077efaf89ca5ada908
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1c451aa4dd306246e45221c6b16f1d0b3fc16adc
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42478493"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42738930"
 ---
 # <a name="create-windows10pfximportcertificateprofile"></a>Создание windows10PFXImportCertificateProfile
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42478493"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -158,7 +156,6 @@ Content-Length: 1262
   "keyStorageProvider": "useTpmKspOtherwiseFail"
 }
 ```
-
 
 
 

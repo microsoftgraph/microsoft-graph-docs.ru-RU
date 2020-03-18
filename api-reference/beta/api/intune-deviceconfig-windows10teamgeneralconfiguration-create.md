@@ -1,20 +1,18 @@
 ---
 title: Создание объекта windows10TeamGeneralConfiguration
 description: Создает объект windows10TeamGeneralConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8f1250a152435ff48bf84f34c953f78abb8b9f8c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7e17ae1f60495242882c9617da2d439092f4823f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42477891"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42738216"
 ---
 # <a name="create-windows10teamgeneralconfiguration"></a>Создание объекта windows10TeamGeneralConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42477891"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -215,7 +213,6 @@ Content-Length: 2187
   "welcomeScreenMeetingInformation": "showOrganizerAndTimeOnly"
 }
 ```
-
 
 
 

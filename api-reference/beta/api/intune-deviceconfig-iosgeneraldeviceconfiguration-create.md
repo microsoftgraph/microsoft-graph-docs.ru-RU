@@ -1,20 +1,18 @@
 ---
 title: Create iosGeneralDeviceConfiguration
 description: Создание объекта iosGeneralDeviceConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 09c353e27b2fdf1c15337dfd9ed0b9a637e61034
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 773f4bc46c6e090ac9ff42c6865c3cf7b51611a6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448916"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42750763"
 ---
 # <a name="create-iosgeneraldeviceconfiguration"></a>Create iosGeneralDeviceConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42448916"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -77,8 +75,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |appsVisibilityList|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список приложений в списке видимых/запускаемых приложений или списке скрытых/незапускаемых приложений (определяется свойством AppsVisibilityListType) (iOS 9.3 и более поздних версий). Эта коллекция может содержать не более 10 000 элементов.|
 |appsVisibilityListType|[апплисттипе](../resources/intune-deviceconfig-applisttype.md)|Тип списка, определенного свойством AppsVisibilityList. Возможные значения: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |appStoreBlockAutomaticDownloads|Логический|Указывает, следует ли запретить автоматическое скачивание приложений, приобретенных на других устройствах, когда устройство находится в защищенном режиме (iOS 9.0 и более поздних версий).|
-|appStoreBlocked|Boolean|Указывает, следует ли запретить использовать App Store. Для iOS 13 и более поздних версий требуется контролируемое устройство.|
-|appStoreBlockInAppPurchases|Логический|Указывает, следует ли запретить пользователю совершать покупки из приложения.|
+|appStoreBlocked|Логический|Указывает, следует ли запретить использовать App Store. Для iOS 13 и более поздних версий требуется контролируемое устройство.|
+|appStoreBlockInAppPurchases|Boolean|Указывает, следует ли запретить пользователю совершать покупки из приложения.|
 |appStoreBlockUIAppInstallation|Логический|Указывает, следует ли заблокировать приложение App Store, не ограничивая установку через ведущие приложения. Применяется только к защищенному режиму (iOS 9.0 и более поздних версий).|
 |appStoreRequirePassword|Логический|Указывает, требуется ли пароль, когда вы используете приложение App Store.|
 |аутофиллфорцеаусентикатион|Логический|Указывает, следует ли принудительно выполнять проверку подлинности пользователей перед автозаполнением паролей и сведений о кредитных картах в Safari и других приложениях на контролируемых устройствах.|
@@ -107,8 +105,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |documentsBlockManagedDocumentsInUnmanagedApps|Логический|Указывает, следует ли запретить пользователю просматривать управляемые документы в неуправляемых приложениях.|
 |documentsBlockUnmanagedDocumentsInManagedApps|Логический|Указывает, следует ли запретить пользователю просматривать неуправляемые документы в управляемых приложениях.|
 |emailInDomainSuffixes|Коллекция String|Адрес электронной почты без суффикса, соответствующего одной из этих строк, будет считаться внешним.|
-|enterpriseAppBlockTrust|Логический|Указывает, следует ли запретить пользователю подтверждать доверие корпоративному приложению.|
-|enterpriseAppBlockTrustModification|Boolean|Указывает, следует ли запретить пользователю изменять настройки доверия корпоративному приложению.|
+|enterpriseAppBlockTrust|Boolean|Указывает, следует ли запретить пользователю подтверждать доверие корпоративному приложению.|
+|enterpriseAppBlockTrustModification|Boolean|\[Нерекомендуемая\] Настройка этого параметра и установка для этого параметра значения "true" не оказывает никакого действия на устройстве.|
 |есимблоккмодификатион|Логический|Указывает, следует ли разрешить добавление или удаление планов сотовой связи на eSIM контролируемого устройства.|
 |faceTimeBlocked|Логический|Указывает, следует ли запретить использовать FaceTime. Для iOS 13 и более поздних версий требуется контролируемое устройство.|
 |findMyFriendsBlocked|Логический|Указывает, следует ли заблокировать изменения для поиска друзей, когда устройство находится в защищенном режиме.|
@@ -845,7 +843,6 @@ Content-Length: 10690
   "kioskModeAppType": "appStoreApp"
 }
 ```
-
 
 
 

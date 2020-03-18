@@ -1,20 +1,18 @@
 ---
 title: Действие extendQualityUpdatesPause
 description: Дополнительные сведения об остановке обновлений качества приостанавливаются для центра обновления Windows для бизнеса.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c11f29063a4823e4d4d698639ca00e79d86aeb3e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 80c6d631b1483d40aa7f13f60e25e2bc5c836edf
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42473698"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42732484"
 ---
 # <a name="extendqualityupdatespause-action"></a>Действие extendQualityUpdatesPause
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42473698"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -67,7 +65,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

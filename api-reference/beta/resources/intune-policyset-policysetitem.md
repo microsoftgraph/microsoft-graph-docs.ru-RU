@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Полицисетитем
 description: Класс, содержащий свойства, используемые для элемента "набор политик".
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: df5cdc970696db9785c19c0a6c5afb5ab2266f7b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 98000e00ad90938bc3835b9ba3becb047920fd0a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523980"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42729110"
 ---
 # <a name="policysetitem-resource-type"></a>Тип ресурса Полицисетитем
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

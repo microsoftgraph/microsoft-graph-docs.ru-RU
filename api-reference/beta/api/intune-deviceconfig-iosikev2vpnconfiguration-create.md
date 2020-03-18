@@ -1,20 +1,18 @@
 ---
 title: Создание iosikEv2VpnConfiguration
 description: Создание нового объекта iosikEv2VpnConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 104a115acd07324c98ef7e3c8598734663dba7c3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 297f47534430511524e8b5c6c6bb0f1e0e77b2b2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442763"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42750483"
 ---
 # <a name="create-iosikev2vpnconfiguration"></a>Создание iosikEv2VpnConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42442763"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -428,7 +426,6 @@ Content-Length: 5156
   "enableAlwaysOnConfiguration": true
 }
 ```
-
 
 
 

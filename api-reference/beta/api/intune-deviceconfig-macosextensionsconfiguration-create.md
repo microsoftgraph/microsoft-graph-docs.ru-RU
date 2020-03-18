@@ -1,20 +1,18 @@
 ---
 title: Создание Макосекстенсионсконфигуратион
 description: Создание нового объекта Макосекстенсионсконфигуратион.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 939c533c4d558e717359cc2fa37b41ae0800ecde
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e8adf7245fc19a6bf81c389bdb06c0458e9697d7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442301"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42746325"
 ---
 # <a name="create-macosextensionsconfiguration"></a>Создание Макосекстенсионсконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42442301"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -180,7 +178,6 @@ Content-Length: 1555
   ]
 }
 ```
-
 
 
 

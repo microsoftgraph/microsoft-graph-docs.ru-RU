@@ -1,20 +1,18 @@
 ---
 title: Создание windowsPhone81ImportedPFXCertificateProfile
 description: Создание нового объекта windowsPhone81ImportedPFXCertificateProfile.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b638edf805edfe90fb5b5425f50ec847afc3190e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 669a215face06cf15380b3b692c48761d1c674f7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42475063"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42733933"
 ---
 # <a name="create-windowsphone81importedpfxcertificateprofile"></a>Создание windowsPhone81ImportedPFXCertificateProfile
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42475063"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -176,7 +174,6 @@ Content-Length: 1536
   "intendedPurpose": "smimeEncryption"
 }
 ```
-
 
 
 

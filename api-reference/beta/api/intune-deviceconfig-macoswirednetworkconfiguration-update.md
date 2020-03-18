@@ -1,20 +1,18 @@
 ---
 title: Обновление Макосвиреднетворкконфигуратион
 description: Обновление свойств объекта Макосвиреднетворкконфигуратион.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 77666d65c75173e8447d6df49e02d4293d123e5b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 401bf33facb0fddeb6991372491ec46bab9ee8eb
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442147"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42743725"
 ---
 # <a name="update-macoswirednetworkconfiguration"></a>Обновление Макосвиреднетворкконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42442147"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -184,7 +182,6 @@ Content-Length: 1671
   "enableOuterIdentityPrivacy": "Enable Outer Identity Privacy value"
 }
 ```
-
 
 
 

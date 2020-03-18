@@ -1,20 +1,18 @@
 ---
 title: Create windowsPhone81CompliancePolicy
 description: Создание объекта windowsPhone81CompliancePolicy.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7ab0e2331d9f5538f88fa0f83e33ea92a7bd94f2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0690db272a4dbd5ba59571890778ee6821e83059
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42475511"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42734822"
 ---
 # <a name="create-windowsphone81compliancepolicy"></a>Create windowsPhone81CompliancePolicy
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42475511"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -139,7 +137,6 @@ Content-Length: 841
   "storageRequireEncryption": true
 }
 ```
-
 
 
 

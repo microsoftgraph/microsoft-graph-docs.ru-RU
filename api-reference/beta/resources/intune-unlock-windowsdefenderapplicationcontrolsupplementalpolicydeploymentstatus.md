@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Виндовсдефендераппликатионконтролсупплементалполицидеплойментстатус
 description: Содержит свойства для состояния развертывания дополнительной политики Виндовсдефендераппликатионконтрол для устройства.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ba11aedae421faff69634f209bbd748bd8bd1238
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1e706c22b8add271c0837c525b25bc3c4e43daa7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523249"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42729068"
 ---
 # <a name="windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus-resource-type"></a>Тип ресурса Виндовсдефендераппликатионконтролсупплементалполицидеплойментстатус
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,20 +1,18 @@
 ---
 title: Список Иосеасемаилпрофилеконфигуратионс
 description: Список свойств и связей объектов iosEasEmailProfileConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 583f1fda4a4764535d5ab91d4bc624bc7edc076d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f92219bc19d00b1b1be6be1979f595dcd6c69a1e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442847"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42751575"
 ---
 # <a name="list-ioseasemailprofileconfigurations"></a>Список Иосеасемаилпрофилеконфигуратионс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42442847"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -133,7 +131,6 @@ Content-Length: 2568
   ]
 }
 ```
-
 
 
 

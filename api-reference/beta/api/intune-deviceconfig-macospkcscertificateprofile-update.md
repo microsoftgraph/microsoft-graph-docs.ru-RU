@@ -1,20 +1,18 @@
 ---
 title: Обновление Макоспкксцертификатепрофиле
 description: Обновление свойств объекта Макоспкксцертификатепрофиле.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a44851cfedd710eeab5a70c67a0e3f54fa529f2a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3fe9272d6722d8d5f73f9c3670c468987646cda8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442245"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42745200"
 ---
 # <a name="update-macospkcscertificateprofile"></a>Обновление Макоспкксцертификатепрофиле
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42442245"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -207,7 +205,6 @@ Content-Length: 2029
   "allowAllAppsAccess": true
 }
 ```
-
 
 
 

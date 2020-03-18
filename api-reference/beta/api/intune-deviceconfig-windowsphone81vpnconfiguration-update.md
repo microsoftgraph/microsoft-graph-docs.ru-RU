@@ -1,20 +1,18 @@
 ---
 title: Обновление windowsPhone81VpnConfiguration
 description: Обновление свойств объекта windowsPhone81VpnConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 08becfcc1e5eea6a1cde176413dfa1b212294ce9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 315faa431c23ddb36c57709ccf3baa0a15ffa1b6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42474167"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42732974"
 ---
 # <a name="update-windowsphone81vpnconfiguration"></a>Обновление windowsPhone81VpnConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42474167"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -227,7 +225,6 @@ Content-Length: 2188
   ]
 }
 ```
-
 
 
 

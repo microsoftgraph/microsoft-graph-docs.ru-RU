@@ -1,20 +1,18 @@
 ---
 title: Обновление Макосендпоинтпротектионконфигуратион
 description: Обновление свойств объекта Макосендпоинтпротектионконфигуратион.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7e449c5282f1904f3e368e10322abaab7b8f986d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 32c304b4ac704709a5ed3542580125aea79fcdf6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442343"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42746509"
 ---
 # <a name="update-macosendpointprotectionconfiguration"></a>Обновление Макосендпоинтпротектионконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42442343"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -81,6 +79,15 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |филеваултнумберофтимесусерканигноре|Int32|Необязательный. При использовании параметра "отложить" это максимальное число раз, когда пользователь может игнорировать приглашения на включение Филеваулт, чтобы пользователь мог выполнить вход. Если задано значение-1, всегда будет выдаваться запрос на включение Филеваулт, пока Филеваулт не будет включен, хотя разрешить пользователю обходить включение Филеваулт. Если задать для этого параметра значение 0, эта функция будет отключена.|
 |филеваултдисаблепромптатсигнаут|Boolean|Необязательное свойство. При использовании параметра отсрочки, если задано значение true, пользователю не предлагается включить Филеваулт при входе.|
 |филеваултперсоналрековерикэйротатионинмонсс|Int32|Необязательный. Если выбранные типы ключей восстановления включают Персоналрековерикэй, частота вращения этого ключа в месяцах.|
+|филеваулсидеперсоналрековерикэй|Boolean|Необязательное свойство. Скрытый персональный ключ восстановления не отображается на экране пользователя во время шифрования Филеваулт, что снижает риск его завершения в неправильной руки.|
+|адванцедсреатпротектионреалтиме|[Включение](../resources/intune-shared-enablement.md)|Определяет, следует ли включить защиту в режиме реального времени для функции Advanced Threat Protection для защитника Майкрософт в macOS. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|адванцедсреатпротектионклаудделиверед|[Включение](../resources/intune-shared-enablement.md)|Определяет, следует ли включить защиту от облачной защиты для Advanced Threat Protection в защитнике Майкрософт для macOS. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|адванцедсреатпротектионаутоматиксамплесубмиссион|[Включение](../resources/intune-shared-enablement.md)|Определяет, следует ли включать автоматическую отправку образца файлов для Advanced Threat Protection в защитнике Майкрософт в macOS. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|адванцедсреатпротектиондиагностикдатаколлектион|[Включение](../resources/intune-shared-enablement.md)|Определяет, следует ли включить сбор данных диагностики и использования для Advanced Threat Protection для защитника Майкрософт в macOS. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|адванцедсреатпротектионексклудедфолдерс|Коллекция String|Список путей к папкам, которые необходимо исключить из антивирусной проверки для Advanced Threat protection защитника Майкрософт в macOS.|
+|адванцедсреатпротектионексклудедфилес|Коллекция String|Список путей к файлам, которые необходимо исключить из антивирусной проверки для Advanced Threat Protection в macOS.|
+|адванцедсреатпротектионексклудедекстенсионс|Коллекция String|Список расширений файлов, которые необходимо исключить из антивирусного сканирования для Advanced Threat Protection в macOS.|
+|адванцедсреатпротектионексклудедпроцессес|Коллекция String|Список имен процессов, которые необходимо исключить из антивирусной проверки для Advanced Threat Protection в macOS.|
 
 
 
@@ -94,7 +101,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 2052
+Content-length: 2786
 
 {
   "@odata.type": "#microsoft.graph.macOSEndpointProtectionConfiguration",
@@ -146,7 +153,24 @@ Content-length: 2052
   "fileVaultAllowDeferralUntilSignOut": true,
   "fileVaultNumberOfTimesUserCanIgnore": 3,
   "fileVaultDisablePromptAtSignOut": true,
-  "fileVaultPersonalRecoveryKeyRotationInMonths": 12
+  "fileVaultPersonalRecoveryKeyRotationInMonths": 12,
+  "fileVaultHidePersonalRecoveryKey": true,
+  "advancedThreatProtectionRealTime": "enabled",
+  "advancedThreatProtectionCloudDelivered": "enabled",
+  "advancedThreatProtectionAutomaticSampleSubmission": "enabled",
+  "advancedThreatProtectionDiagnosticDataCollection": "enabled",
+  "advancedThreatProtectionExcludedFolders": [
+    "Advanced Threat Protection Excluded Folders value"
+  ],
+  "advancedThreatProtectionExcludedFiles": [
+    "Advanced Threat Protection Excluded Files value"
+  ],
+  "advancedThreatProtectionExcludedExtensions": [
+    "Advanced Threat Protection Excluded Extensions value"
+  ],
+  "advancedThreatProtectionExcludedProcesses": [
+    "Advanced Threat Protection Excluded Processes value"
+  ]
 }
 ```
 
@@ -155,7 +179,7 @@ Content-length: 2052
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2224
+Content-Length: 2958
 
 {
   "@odata.type": "#microsoft.graph.macOSEndpointProtectionConfiguration",
@@ -210,10 +234,26 @@ Content-Length: 2224
   "fileVaultAllowDeferralUntilSignOut": true,
   "fileVaultNumberOfTimesUserCanIgnore": 3,
   "fileVaultDisablePromptAtSignOut": true,
-  "fileVaultPersonalRecoveryKeyRotationInMonths": 12
+  "fileVaultPersonalRecoveryKeyRotationInMonths": 12,
+  "fileVaultHidePersonalRecoveryKey": true,
+  "advancedThreatProtectionRealTime": "enabled",
+  "advancedThreatProtectionCloudDelivered": "enabled",
+  "advancedThreatProtectionAutomaticSampleSubmission": "enabled",
+  "advancedThreatProtectionDiagnosticDataCollection": "enabled",
+  "advancedThreatProtectionExcludedFolders": [
+    "Advanced Threat Protection Excluded Folders value"
+  ],
+  "advancedThreatProtectionExcludedFiles": [
+    "Advanced Threat Protection Excluded Files value"
+  ],
+  "advancedThreatProtectionExcludedExtensions": [
+    "Advanced Threat Protection Excluded Extensions value"
+  ],
+  "advancedThreatProtectionExcludedProcesses": [
+    "Advanced Threat Protection Excluded Processes value"
+  ]
 }
 ```
-
 
 
 

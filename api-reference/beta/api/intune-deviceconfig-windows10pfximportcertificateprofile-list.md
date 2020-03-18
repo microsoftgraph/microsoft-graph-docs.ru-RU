@@ -1,20 +1,18 @@
 ---
 title: Список windows10PFXImportCertificateProfiles
 description: Список свойств и связей объектов windows10PFXImportCertificateProfile.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8d2954d593c8ec66e04f34488173914ef4b83fd1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ada5f619fc1dec93bdf538a4d87795129b2d9cb8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42478423"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42738741"
 ---
 # <a name="list-windows10pfximportcertificateprofiles"></a>Список windows10PFXImportCertificateProfiles
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42478423"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -108,7 +106,6 @@ Content-Length: 1427
   ]
 }
 ```
-
 
 
 

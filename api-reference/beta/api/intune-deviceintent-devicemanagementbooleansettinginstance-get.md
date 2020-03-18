@@ -1,20 +1,18 @@
 ---
 title: Получение Девицеманажементбулеансеттингинстанце
 description: Чтение свойств и связей объекта Девицеманажементбулеансеттингинстанце.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 35a7126a8c50163e1b7bde70a236316c3365f94f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7c1766b08bf652fc0294cddd4789bcf19bc61ceb
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42472676"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42731077"
 ---
 # <a name="get-devicemanagementbooleansettinginstance"></a>Получение Девицеманажементбулеансеттингинстанце
-
-Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42472676"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -83,7 +81,6 @@ Content-Length: 254
   }
 }
 ```
-
 
 
 

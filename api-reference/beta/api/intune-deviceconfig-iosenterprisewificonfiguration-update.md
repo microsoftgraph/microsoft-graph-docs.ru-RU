@@ -1,20 +1,18 @@
 ---
 title: Обновление iosEnterpriseWiFiConfiguration
 description: Обновление свойств объекта iosEnterpriseWiFiConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ef6daa6e13a34c0f2a86a91216d34e497d50afbf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 739c0f1dc769d0a784bde066bd146dc1e90b8dc0
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442784"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42750826"
 ---
 # <a name="update-iosenterprisewificonfiguration"></a>Обновление iosEnterpriseWiFiConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42442784"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -214,7 +212,6 @@ Content-Length: 2146
   "passwordFormatString": "Password Format String value"
 }
 ```
-
 
 
 

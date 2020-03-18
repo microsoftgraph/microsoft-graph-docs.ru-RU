@@ -1,20 +1,18 @@
 ---
 title: Получение Виндовсделиверйоптимизатионконфигуратион
 description: Чтение свойств и связей объекта Виндовсделиверйоптимизатионконфигуратион.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7f024ed08cb013ddbd5e1b3a6cc8a2e6da78ccea
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e420d124c6946ffa6f3d90cc93c4d0162f38ad72
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42476190"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42735646"
 ---
 # <a name="get-windowsdeliveryoptimizationconfiguration"></a>Получение Виндовсделиверйоптимизатионконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42476190"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -134,7 +132,6 @@ Content-Length: 2344
   }
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Создание Иострустедрутцертификате
 description: Создание нового объекта Иострустедрутцертификате.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 50d0a71b374b6b3b3d373560dbd4ecaee61b36dc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b09cafa899fa6148dc73dc086d57f0d9fe9ad43a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442679"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42749454"
 ---
 # <a name="create-iostrustedrootcertificate"></a>Создание Иострустедрутцертификате
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42442679"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -160,7 +158,6 @@ Content-Length: 1308
   "certFileName": "Cert File Name value"
 }
 ```
-
 
 
 

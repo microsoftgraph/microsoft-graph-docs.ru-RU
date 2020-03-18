@@ -1,20 +1,18 @@
 ---
 title: Обновление Иосимпортедпфксцертификатепрофиле
 description: Обновление свойств объекта Иосимпортедпфксцертификатепрофиле.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6dad332a8c7a831725a4f61f8629961d9bf7bc06
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c299897d2d292b42861face3d9c527a9cfa36f6f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442742"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42750007"
 ---
 # <a name="update-iosimportedpfxcertificateprofile"></a>Обновление Иосимпортедпфксцертификатепрофиле
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42442742"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -159,7 +157,6 @@ Content-Length: 1248
   "intendedPurpose": "smimeEncryption"
 }
 ```
-
 
 
 

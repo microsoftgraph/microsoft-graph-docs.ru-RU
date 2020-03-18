@@ -1,20 +1,18 @@
 ---
 title: Перечисление объектов windows10EnterpriseModernAppManagementConfiguration
 description: Список свойств и связей объектов windows10EnterpriseModernAppManagementConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d0b6eca9c29854d9fc431363faecc69ae74dde20
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7e4a56f86fff005d8a02bff66fee8d3520a4497d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42480026"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42739959"
 ---
 # <a name="list-windows10enterprisemodernappmanagementconfigurations"></a>Перечисление объектов windows10EnterpriseModernAppManagementConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42480026"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -108,7 +106,6 @@ Content-Length: 1424
   ]
 }
 ```
-
 
 
 

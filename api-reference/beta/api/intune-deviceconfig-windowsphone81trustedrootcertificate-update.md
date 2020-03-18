@@ -1,20 +1,18 @@
 ---
 title: Обновление windowsPhone81TrustedRootCertificate
 description: Обновление свойств объекта windowsPhone81TrustedRootCertificate.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1dd69c1f2f1f900e1f165cb05773c743fb11860c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4df551c9b763429e90374f109f94987d44ffb79b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42474496"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42733373"
 ---
 # <a name="update-windowsphone81trustedrootcertificate"></a>Обновление windowsPhone81TrustedRootCertificate
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42474496"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -160,7 +158,6 @@ Content-Length: 1319
   "certFileName": "Cert File Name value"
 }
 ```
-
 
 
 

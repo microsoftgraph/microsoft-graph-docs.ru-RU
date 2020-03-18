@@ -1,20 +1,18 @@
 ---
 title: Список Виндовсвифиентерприсиапконфигуратионс
 description: Список свойств и связей объектов Виндовсвифиентерприсиапконфигуратион.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 53eae216c438f33da3c76ab9bdd65135d6bd5953
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 152a663fc4be08a7eddd61b7c5b1d5cff60a5b32
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42473187"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42731665"
 ---
 # <a name="list-windowswifienterpriseeapconfigurations"></a>Список Виндовсвифиентерприсиапконфигуратионс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42473187"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -135,7 +133,6 @@ Content-Length: 2722
   ]
 }
 ```
-
 
 
 

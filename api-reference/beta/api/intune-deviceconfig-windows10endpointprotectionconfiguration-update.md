@@ -1,20 +1,18 @@
 ---
 title: Обновление объекта windows10EndpointProtectionConfiguration
 description: Обновляет свойства объекта windows10EndpointProtectionConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 852130090080da70034df5642822da812d74d79d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2736eb870bdefcdd7c54b8844c19aaec96be9196
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42480391"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42740085"
 ---
 # <a name="update-windows10endpointprotectionconfiguration"></a>Обновление объекта windows10EndpointProtectionConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42480391"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -214,7 +212,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |дефендернетворкпротектионтипе|[дефендерпротектионтипе](../resources/intune-deviceconfig-defenderprotectiontype.md)|Значение, указывающее поведение Нетворкпротектион. Возможные значения: `userDefined`, `enable`, `auditMode`.|
 |defenderExploitProtectionXml|Binary|XML-файл с информацией о защите от эксплойтов.|
 |defenderExploitProtectionXmlFileName|String|Имя файла, из которого получено свойство DefenderExploitProtectionXml.|
-|defenderSecurityCenterBlockExploitProtectionOverride|Логический|Указывает, следует ли запретить пользователю переопределять настройки защиты от эксплойтов.|
+|defenderSecurityCenterBlockExploitProtectionOverride|Boolean|Указывает, следует ли запретить пользователю переопределять настройки защиты от эксплойтов.|
 |appLockerApplicationControl|[апплоккераппликатионконтролтипе](../resources/intune-deviceconfig-applockerapplicationcontroltype.md)|Позволяет администратору выбирать разрешенные типы приложений для устройств. Возможные значения: `notConfigured`, `enforceComponentsAndStoreApps`, `auditComponentsAndStoreApps`, `enforceComponentsStoreAppsAndSmartlocker`, `auditComponentsStoreAppsAndSmartlocker`.|
 |девицегуардлокалсистемаусоритикредентиалгуардсеттингс|[девицегуардлокалсистемаусоритикредентиалгуардтипе](../resources/intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)|Включите Guard в учетных данных, когда включен уровень безопасности платформы с безопасной загрузкой и безопасностью на основе виртуализации. Возможные значения: `notConfigured`, `enableWithUEFILock`, `enableWithoutUEFILock`.|
 |девицегуарденаблевиртуализатионбаседсекурити|Логический|Включает безопасность на основе виртуализации (VBS).|
@@ -245,18 +243,29 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |bitLockerRemovableDrivePolicy|[bitLockerRemovableDrivePolicy](../resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md)|Политика BitLocker в отношении съемных дисков.|
 |битлоккеррековерипассвордротатион|[bitLockerRecoveryPasswordRotationType](../resources/intune-deviceconfig-bitlockerrecoverypasswordrotationtype.md)|Этот параметр инициирует поворот пароля восстановления на основе клиента после восстановления диска ОС (с помощью BOOTMGR или WinRE). Возможные значения: `notConfigured`, `disabled`, `enabledForAzureAd`, `enabledForAzureAdAndHybrid`.|
 |дефендердисаблесканарчивефилес|Логический|Разрешает или запрещает сканирование архивов.|
+|дефендералловсканарчивефилес|Логический|Разрешает или запрещает сканирование архивов.|
 |дефендердисаблебехавиормониторинг|Логический|Разрешает или запрещает функции мониторинга режима защитника Windows.|
+|дефендералловбехавиормониторинг|Логический|Разрешает или запрещает функции мониторинга режима защитника Windows.|
 |дефендердисаблеклаудпротектион|Логический|Чтобы лучше защитить компьютер, защитник Windows будет отправлять в корпорацию Майкрософт сведения обо всех обнаруженных неполадках. Корпорация Майкрософт проанализирует эти сведения, Узнайте больше об ошибках, которые могут повлиять на ваших клиентов и других пользователей, и предложит улучшенные решения.|
+|дефендералловклаудпротектион|Логический|Чтобы лучше защитить компьютер, защитник Windows будет отправлять в корпорацию Майкрософт сведения обо всех обнаруженных неполадках. Корпорация Майкрософт проанализирует эти сведения, Узнайте больше об ошибках, которые могут повлиять на ваших клиентов и других пользователей, и предложит улучшенные решения.|
 |дефендеренаблесканинкомингмаил|Логический|Разрешает или запрещает сканирование электронной почты.|
 |дефендеренаблесканмаппеднетворкдривесдурингфуллскан|Логический|Разрешает или запрещает полное сканирование подключенных сетевых дисков.|
 |дефендердисаблесканремовабледривесдурингфуллскан|Логический|Разрешает или запрещает полное сканирование съемных дисков. Во время быстрого сканирования съемные диски все еще могут сканироваться.|
+|дефендералловсканремовабледривесдурингфуллскан|Логический|Разрешает или запрещает полное сканирование съемных дисков. Во время быстрого сканирования съемные диски все еще могут сканироваться.|
 |дефендердисаблескандовнлоадс|Логический|Разрешает или запрещает функции защиты ИОАВП защитника Windows.|
+|дефендералловскандовнлоадс|Логический|Разрешает или запрещает функции защиты ИОАВП защитника Windows.|
 |дефендердисаблеинтрусионпревентионсистем|Логический|Разрешает или запрещает функции предотвращения вторжения в Защитнике Windows.|
+|дефендералловинтрусионпревентионсистем|Логический|Разрешает или запрещает функции предотвращения вторжения в Защитнике Windows.|
 |дефендердисаблеонакцесспротектион|Логический|Разрешает или запрещает защитник Windows для функций защиты доступа.|
+|дефендералловонакцесспротектион|Логический|Разрешает или запрещает защитник Windows для функций защиты доступа.|
 |дефендердисаблереалтимемониторинг|Логический|Разрешает или запрещает функции мониторинга в режиме реального времени защитник Windows.|
+|дефендералловреалтимемониторинг|Логический|Разрешает или запрещает функции мониторинга в режиме реального времени защитник Windows.|
 |дефендердисаблесканнетворкфилес|Логический|Разрешает или запрещает сканирование сетевых файлов.|
+|дефендералловсканнетворкфилес|Логический|Разрешает или запрещает сканирование сетевых файлов.|
 |дефендердисаблесканскриптслоадедининтернетексплорер|Логический|Разрешает или запрещает функцию сканирования сценариев защитника Windows.|
+|дефендералловсканскриптслоадедининтернетексплорер|Логический|Разрешает или запрещает функцию сканирования сценариев защитника Windows.|
 |defenderBlockEndUserAccess|Boolean|Разрешает или запрещает пользователям доступ к пользовательскому интерфейсу защитника Windows. Если этот флажок не разрешен, все уведомления защитника Windows также будут подавляться.|
+|дефендералловендусеракцесс|Логический|Разрешает или запрещает пользователям доступ к пользовательскому интерфейсу защитника Windows. Если этот флажок не разрешен, все уведомления защитника Windows также будут подавляться.|
 |дефендерсканмакскпуперцентаже|Int32|Представляет средний коэффициент загрузки ЦП для сканирования защитником Windows (в процентах). Значение по умолчанию равно 50. Допустимые значения: от 0 до 100|
 |дефендерчеккфорсигнатуресбефореруннингскан|Логический|Этот параметр политики позволяет управлять тем, будет ли выполняться проверка новых определений вирусов и программ-шпионов перед выполнением проверки.|
 |defenderCloudBlockLevel|[дефендерклаудблокклевелтипе](../resources/intune-deviceconfig-defendercloudblockleveltype.md)|Добавлено в Windows 10 версии 1709. Этот параметр политики определяет, как активно антивирусная программа "Защитник Windows" будет блокировать и сканировать подозрительные файлы. Тип значения: целое число. Для работы этой функции необходимо включить параметр "присоединение к Microsoft MAPS". Возможные значения: `notConfigured`, `high`, `highPlus`, `zeroTolerance`.|
@@ -274,6 +283,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |defenderScheduledQuickScanTime|TimeOfDay|Выбирает время суток, которое должно выполняться при запуске быстрого сканирования защитника Windows. Например, значение 0 = 12:00AM, значение 60 = 1:00AM, значение 120 = 2:00 и т. д., вплоть до значения 1380 = 11:00PM. Значение по умолчанию — 120|
 |дефендерсчедуледскандай|[виклисчедуле](../resources/intune-deviceconfig-weeklyschedule.md)|Выбирает день запуска проверки защитником Windows. Возможные значения: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `noScheduledScan`.|
 |defenderScheduledScanTime|TimeOfDay|Выбирает время суток, в течение которого должно выполняться сканирование защитника Windows.|
+|defenderSignatureUpdateIntervalInHours|Int32|Указывает интервал (в часах), который будет использоваться для проверки подписей, поэтому вместо использования Счедуледай и Счедулетиме проверка новых подписей будет установлена в соответствии с интервалом. Допустимые значения: от 0 до 24.|
 |defenderSubmitSamplesConsentType|[defenderSubmitSamplesConsentType](../resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md);|Проверка уровня согласия пользователя в Защитнике Windows для отправки данных. Возможные значения: `sendSafeSamplesAutomatically`, `alwaysPrompt`, `neverSend`, `sendAllSamplesAutomatically`.|
 |defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|Позволяет администратору указать допустимые уровни серьезности угроз и соответствующий идентификатор действия по умолчанию.|
 
@@ -289,7 +299,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 30451
+Content-length: 31005
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -970,18 +980,29 @@ Content-length: 30451
   },
   "bitLockerRecoveryPasswordRotation": "disabled",
   "defenderDisableScanArchiveFiles": true,
+  "defenderAllowScanArchiveFiles": true,
   "defenderDisableBehaviorMonitoring": true,
+  "defenderAllowBehaviorMonitoring": true,
   "defenderDisableCloudProtection": true,
+  "defenderAllowCloudProtection": true,
   "defenderEnableScanIncomingMail": true,
   "defenderEnableScanMappedNetworkDrivesDuringFullScan": true,
   "defenderDisableScanRemovableDrivesDuringFullScan": true,
+  "defenderAllowScanRemovableDrivesDuringFullScan": true,
   "defenderDisableScanDownloads": true,
+  "defenderAllowScanDownloads": true,
   "defenderDisableIntrusionPreventionSystem": true,
+  "defenderAllowIntrusionPreventionSystem": true,
   "defenderDisableOnAccessProtection": true,
+  "defenderAllowOnAccessProtection": true,
   "defenderDisableRealTimeMonitoring": true,
+  "defenderAllowRealTimeMonitoring": true,
   "defenderDisableScanNetworkFiles": true,
+  "defenderAllowScanNetworkFiles": true,
   "defenderDisableScanScriptsLoadedInInternetExplorer": true,
+  "defenderAllowScanScriptsLoadedInInternetExplorer": true,
   "defenderBlockEndUserAccess": true,
+  "defenderAllowEndUserAccess": true,
   "defenderScanMaxCpuPercentage": 12,
   "defenderCheckForSignaturesBeforeRunningScan": true,
   "defenderCloudBlockLevel": "high",
@@ -1005,6 +1026,7 @@ Content-length: 30451
   "defenderScheduledQuickScanTime": "11:58:49.3840000",
   "defenderScheduledScanDay": "everyday",
   "defenderScheduledScanTime": "11:59:10.9990000",
+  "defenderSignatureUpdateIntervalInHours": 6,
   "defenderSubmitSamplesConsentType": "alwaysPrompt",
   "defenderDetectedMalwareActions": {
     "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
@@ -1021,7 +1043,7 @@ Content-length: 30451
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 30623
+Content-Length: 31177
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -1705,18 +1727,29 @@ Content-Length: 30623
   },
   "bitLockerRecoveryPasswordRotation": "disabled",
   "defenderDisableScanArchiveFiles": true,
+  "defenderAllowScanArchiveFiles": true,
   "defenderDisableBehaviorMonitoring": true,
+  "defenderAllowBehaviorMonitoring": true,
   "defenderDisableCloudProtection": true,
+  "defenderAllowCloudProtection": true,
   "defenderEnableScanIncomingMail": true,
   "defenderEnableScanMappedNetworkDrivesDuringFullScan": true,
   "defenderDisableScanRemovableDrivesDuringFullScan": true,
+  "defenderAllowScanRemovableDrivesDuringFullScan": true,
   "defenderDisableScanDownloads": true,
+  "defenderAllowScanDownloads": true,
   "defenderDisableIntrusionPreventionSystem": true,
+  "defenderAllowIntrusionPreventionSystem": true,
   "defenderDisableOnAccessProtection": true,
+  "defenderAllowOnAccessProtection": true,
   "defenderDisableRealTimeMonitoring": true,
+  "defenderAllowRealTimeMonitoring": true,
   "defenderDisableScanNetworkFiles": true,
+  "defenderAllowScanNetworkFiles": true,
   "defenderDisableScanScriptsLoadedInInternetExplorer": true,
+  "defenderAllowScanScriptsLoadedInInternetExplorer": true,
   "defenderBlockEndUserAccess": true,
+  "defenderAllowEndUserAccess": true,
   "defenderScanMaxCpuPercentage": 12,
   "defenderCheckForSignaturesBeforeRunningScan": true,
   "defenderCloudBlockLevel": "high",
@@ -1740,6 +1773,7 @@ Content-Length: 30623
   "defenderScheduledQuickScanTime": "11:58:49.3840000",
   "defenderScheduledScanDay": "everyday",
   "defenderScheduledScanTime": "11:59:10.9990000",
+  "defenderSignatureUpdateIntervalInHours": 6,
   "defenderSubmitSamplesConsentType": "alwaysPrompt",
   "defenderDetectedMalwareActions": {
     "@odata.type": "microsoft.graph.defenderDetectedMalwareActions",
@@ -1750,7 +1784,6 @@ Content-Length: 30623
   }
 }
 ```
-
 
 
 

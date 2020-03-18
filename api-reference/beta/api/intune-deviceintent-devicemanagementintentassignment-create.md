@@ -1,20 +1,18 @@
 ---
 title: Создание Девицеманажементинтентассигнмент
 description: Создание нового объекта Девицеманажементинтентассигнмент.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 096d949bbef788e4a17eebed0cb1052460c4cc37
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5f4363886e6c66b852cb2f45fcd7ad837c6846fb
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42471122"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42729166"
 ---
 # <a name="create-devicemanagementintentassignment"></a>Создание Девицеманажементинтентассигнмент
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42471122"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -93,7 +91,6 @@ Content-Length: 221
   }
 }
 ```
-
 
 
 

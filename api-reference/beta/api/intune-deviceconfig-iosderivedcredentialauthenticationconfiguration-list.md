@@ -1,20 +1,18 @@
 ---
 title: Список Иосдериведкредентиалаусентикатионконфигуратионс
 description: Список свойств и связей объектов Иосдериведкредентиалаусентикатионконфигуратион.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 29e22ce1bf568d31d2491d22542747bc73fd7101
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a328df35d291b0b34d2125446d1c717b4773f634
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442882"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42752052"
 ---
 # <a name="list-iosderivedcredentialauthenticationconfigurations"></a>Список Иосдериведкредентиалаусентикатионконфигуратионс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42442882"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -107,7 +105,6 @@ Content-Length: 1383
   ]
 }
 ```
-
 
 
 

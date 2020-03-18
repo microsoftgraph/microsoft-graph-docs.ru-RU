@@ -1,20 +1,18 @@
 ---
 title: Update softwareUpdateStatusSummary
 description: Обновление свойств объекта softwareUpdateStatusSummary.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f85046f33067b8fb6d572f46d7d805d8f33368d5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 83ca1ad68913ecfe04824c16fb61701a353f0fca
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42482834"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42741772"
 ---
 # <a name="update-softwareupdatestatussummary"></a>Update softwareUpdateStatusSummary
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42482834"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -131,7 +129,6 @@ Content-Length: 567
   "notApplicableUserCount": 6
 }
 ```
-
 
 
 

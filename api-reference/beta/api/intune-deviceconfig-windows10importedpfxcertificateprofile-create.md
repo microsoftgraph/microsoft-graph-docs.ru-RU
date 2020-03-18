@@ -1,20 +1,18 @@
 ---
 title: Создание windows10ImportedPFXCertificateProfile
 description: Создание нового объекта windows10ImportedPFXCertificateProfile.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 68ace69740845e3c338a7b5b4d8bc035819ced6b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e6f155d381eb95e80bd0cffa4c0d39a1964a652a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42479424"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42739546"
 ---
 # <a name="create-windows10importedpfxcertificateprofile"></a>Создание windows10ImportedPFXCertificateProfile
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42479424"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -176,7 +174,6 @@ Content-Length: 1531
   "intendedPurpose": "smimeEncryption"
 }
 ```
-
 
 
 

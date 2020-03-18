@@ -1,20 +1,18 @@
 ---
 title: Get windows10EnterpriseModernAppManagementConfiguration
 description: Чтение свойств и связей объекта windows10EnterpriseModernAppManagementConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a1896c238fa7a9aa323d245d7afe978eda85d021
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 09fe9a773a39a462b907dbd490178fbbde3b356f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42480054"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42739987"
 ---
 # <a name="get-windows10enterprisemodernappmanagementconfiguration"></a>Get windows10EnterpriseModernAppManagementConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42480054"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -110,7 +108,6 @@ Content-Length: 1344
   }
 }
 ```
-
 
 
 
