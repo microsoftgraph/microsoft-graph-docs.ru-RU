@@ -1,38 +1,36 @@
 ---
 title: Тип ресурса Манажеддевицемоделсандмануфактурерс
 description: Модели и производства меатадата для управляемых устройств в учетной записи
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: aa241bd17ad8c42074ed74d2d2548777ea8bf3ba
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ac83d2501eb42cc12044e8d566031e6a5dd6080c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528536"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783958"
 ---
-# <a name="manageddevicemodelsandmanufacturers-resource-type"></a><span data-ttu-id="0e552-103">Тип ресурса Манажеддевицемоделсандмануфактурерс</span><span class="sxs-lookup"><span data-stu-id="0e552-103">managedDeviceModelsAndManufacturers resource type</span></span>
+# <a name="manageddevicemodelsandmanufacturers-resource-type"></a><span data-ttu-id="f7251-103">Тип ресурса Манажеддевицемоделсандмануфактурерс</span><span class="sxs-lookup"><span data-stu-id="f7251-103">managedDeviceModelsAndManufacturers resource type</span></span>
 
-<span data-ttu-id="0e552-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="0e552-104">Namespace: microsoft.graph</span></span>
+> <span data-ttu-id="f7251-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f7251-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="0e552-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0e552-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="f7251-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="f7251-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-> <span data-ttu-id="0e552-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="0e552-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="f7251-106">Модели и производства меатадата для управляемых устройств в учетной записи</span><span class="sxs-lookup"><span data-stu-id="f7251-106">Models and Manufactures meatadata for managed devices in the account</span></span>
 
-<span data-ttu-id="0e552-107">Модели и производства меатадата для управляемых устройств в учетной записи</span><span class="sxs-lookup"><span data-stu-id="0e552-107">Models and Manufactures meatadata for managed devices in the account</span></span>
-
-## <a name="properties"></a><span data-ttu-id="0e552-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="0e552-108">Properties</span></span>
-|<span data-ttu-id="0e552-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="0e552-109">Property</span></span>|<span data-ttu-id="0e552-110">Тип</span><span class="sxs-lookup"><span data-stu-id="0e552-110">Type</span></span>|<span data-ttu-id="0e552-111">Описание</span><span class="sxs-lookup"><span data-stu-id="0e552-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="f7251-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="f7251-107">Properties</span></span>
+|<span data-ttu-id="f7251-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="f7251-108">Property</span></span>|<span data-ttu-id="f7251-109">Тип</span><span class="sxs-lookup"><span data-stu-id="f7251-109">Type</span></span>|<span data-ttu-id="f7251-110">Описание</span><span class="sxs-lookup"><span data-stu-id="f7251-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="0e552-112">девицемоделс</span><span class="sxs-lookup"><span data-stu-id="0e552-112">deviceModels</span></span>|<span data-ttu-id="0e552-113">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="0e552-113">String collection</span></span>|<span data-ttu-id="0e552-114">Список моделей для управляемых устройств в учетной записи</span><span class="sxs-lookup"><span data-stu-id="0e552-114">List of Models for managed devices in the account</span></span>|
-|<span data-ttu-id="0e552-115">девицемануфактурерс</span><span class="sxs-lookup"><span data-stu-id="0e552-115">deviceManufacturers</span></span>|<span data-ttu-id="0e552-116">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="0e552-116">String collection</span></span>|<span data-ttu-id="0e552-117">Список производства для управляемых устройств в учетной записи</span><span class="sxs-lookup"><span data-stu-id="0e552-117">List of Manufactures for managed devices in the account</span></span>|
+|<span data-ttu-id="f7251-111">девицемоделс</span><span class="sxs-lookup"><span data-stu-id="f7251-111">deviceModels</span></span>|<span data-ttu-id="f7251-112">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="f7251-112">String collection</span></span>|<span data-ttu-id="f7251-113">Список моделей для управляемых устройств в учетной записи</span><span class="sxs-lookup"><span data-stu-id="f7251-113">List of Models for managed devices in the account</span></span>|
+|<span data-ttu-id="f7251-114">девицемануфактурерс</span><span class="sxs-lookup"><span data-stu-id="f7251-114">deviceManufacturers</span></span>|<span data-ttu-id="f7251-115">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="f7251-115">String collection</span></span>|<span data-ttu-id="f7251-116">Список производства для управляемых устройств в учетной записи</span><span class="sxs-lookup"><span data-stu-id="f7251-116">List of Manufactures for managed devices in the account</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="0e552-118">Связи</span><span class="sxs-lookup"><span data-stu-id="0e552-118">Relationships</span></span>
-<span data-ttu-id="0e552-119">Нет</span><span class="sxs-lookup"><span data-stu-id="0e552-119">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="f7251-117">Связи</span><span class="sxs-lookup"><span data-stu-id="f7251-117">Relationships</span></span>
+<span data-ttu-id="f7251-118">Нет</span><span class="sxs-lookup"><span data-stu-id="f7251-118">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="0e552-120">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="0e552-120">JSON Representation</span></span>
-<span data-ttu-id="0e552-121">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0e552-121">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f7251-119">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="f7251-119">JSON Representation</span></span>
+<span data-ttu-id="f7251-120">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f7251-120">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.managedDeviceModelsAndManufacturers"

@@ -1,33 +1,31 @@
 ---
 title: тип перечисления Виндовсаутопилотдевицетипе
 description: Пока не задокументировано.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c4ba7144144bd59ab1eb0256951574581c7ec97e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8ffe8b8f161fbb1c39f0ec03a47d652cd2bb3430
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528248"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783384"
 ---
-# <a name="windowsautopilotdevicetype-enum-type"></a><span data-ttu-id="7f3b7-103">тип перечисления Виндовсаутопилотдевицетипе</span><span class="sxs-lookup"><span data-stu-id="7f3b7-103">windowsAutopilotDeviceType enum type</span></span>
+# <a name="windowsautopilotdevicetype-enum-type"></a><span data-ttu-id="5e273-103">тип перечисления Виндовсаутопилотдевицетипе</span><span class="sxs-lookup"><span data-stu-id="5e273-103">windowsAutopilotDeviceType enum type</span></span>
 
-<span data-ttu-id="7f3b7-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="7f3b7-104">Namespace: microsoft.graph</span></span>
+> <span data-ttu-id="5e273-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5e273-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="7f3b7-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7f3b7-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="5e273-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="5e273-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-> <span data-ttu-id="7f3b7-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="7f3b7-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="5e273-106">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="5e273-106">Not yet documented</span></span>
 
-<span data-ttu-id="7f3b7-107">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="7f3b7-107">Not yet documented</span></span>
-
-## <a name="members"></a><span data-ttu-id="7f3b7-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="7f3b7-108">Members</span></span>
-|<span data-ttu-id="7f3b7-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="7f3b7-109">Member</span></span>|<span data-ttu-id="7f3b7-110">Значение</span><span class="sxs-lookup"><span data-stu-id="7f3b7-110">Value</span></span>|<span data-ttu-id="7f3b7-111">Описание</span><span class="sxs-lookup"><span data-stu-id="7f3b7-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="5e273-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="5e273-107">Members</span></span>
+|<span data-ttu-id="5e273-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="5e273-108">Member</span></span>|<span data-ttu-id="5e273-109">Значение</span><span class="sxs-lookup"><span data-stu-id="5e273-109">Value</span></span>|<span data-ttu-id="5e273-110">Описание</span><span class="sxs-lookup"><span data-stu-id="5e273-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="7f3b7-112">виндовспк</span><span class="sxs-lookup"><span data-stu-id="7f3b7-112">windowsPc</span></span>|<span data-ttu-id="7f3b7-113">нуль</span><span class="sxs-lookup"><span data-stu-id="7f3b7-113">0</span></span>|<span data-ttu-id="7f3b7-114">Windows PC</span><span class="sxs-lookup"><span data-stu-id="7f3b7-114">Windows PC</span></span>|
-|<span data-ttu-id="7f3b7-115">surfaceHub2</span><span class="sxs-lookup"><span data-stu-id="7f3b7-115">surfaceHub2</span></span>|<span data-ttu-id="7f3b7-116">1 </span><span class="sxs-lookup"><span data-stu-id="7f3b7-116">1</span></span>|<span data-ttu-id="7f3b7-117">Surface Hub 2</span><span class="sxs-lookup"><span data-stu-id="7f3b7-117">Surface Hub 2</span></span>|
-|<span data-ttu-id="7f3b7-118">holoLens</span><span class="sxs-lookup"><span data-stu-id="7f3b7-118">holoLens</span></span>|<span data-ttu-id="7f3b7-119">2 </span><span class="sxs-lookup"><span data-stu-id="7f3b7-119">2</span></span>|<span data-ttu-id="7f3b7-120">HoloLens</span><span class="sxs-lookup"><span data-stu-id="7f3b7-120">HoloLens</span></span>|
+|<span data-ttu-id="5e273-111">виндовспк</span><span class="sxs-lookup"><span data-stu-id="5e273-111">windowsPc</span></span>|<span data-ttu-id="5e273-112">нуль</span><span class="sxs-lookup"><span data-stu-id="5e273-112">0</span></span>|<span data-ttu-id="5e273-113">Windows PC</span><span class="sxs-lookup"><span data-stu-id="5e273-113">Windows PC</span></span>|
+|<span data-ttu-id="5e273-114">surfaceHub2</span><span class="sxs-lookup"><span data-stu-id="5e273-114">surfaceHub2</span></span>|<span data-ttu-id="5e273-115">1,1</span><span class="sxs-lookup"><span data-stu-id="5e273-115">1</span></span>|<span data-ttu-id="5e273-116">Surface Hub 2</span><span class="sxs-lookup"><span data-stu-id="5e273-116">Surface Hub 2</span></span>|
+|<span data-ttu-id="5e273-117">holoLens</span><span class="sxs-lookup"><span data-stu-id="5e273-117">holoLens</span></span>|<span data-ttu-id="5e273-118">2</span><span class="sxs-lookup"><span data-stu-id="5e273-118">2</span></span>|<span data-ttu-id="5e273-119">HoloLens</span><span class="sxs-lookup"><span data-stu-id="5e273-119">HoloLens</span></span>|
 
 
 
