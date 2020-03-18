@@ -1,20 +1,18 @@
 ---
 title: Получение Дефаултдевицекомплианцеполици
 description: Чтение свойств и связей объекта Дефаултдевицекомплианцеполици.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7ab8019b025cab57c8190994fc9d235f8203d69c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 524b906cf185eb94bb2ba221e923ea4bd8a8950d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449371"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42756605"
 ---
 # <a name="get-defaultdevicecompliancepolicy"></a>Получение Дефаултдевицекомплианцеполици
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42449371"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -85,7 +83,6 @@ Content-Length: 440
   }
 }
 ```
-
 
 
 

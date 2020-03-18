@@ -1,20 +1,18 @@
 ---
 title: Получение Девицеконфигуратионусерстатесуммари
 description: Чтение свойств и связей объекта Девицеконфигуратионусерстатесуммари.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 946cda4cfc23b2a7282b87f6101847b6591563ac
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fb37fe92fdcc919701842cc9fdc8eeb5a9912372
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42443008"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42753539"
 ---
 # <a name="get-deviceconfigurationuserstatesummary"></a>Получение Девицеконфигуратионусерстатесуммари
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42443008"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -84,7 +82,6 @@ Content-Length: 361
   }
 }
 ```
-
 
 
 

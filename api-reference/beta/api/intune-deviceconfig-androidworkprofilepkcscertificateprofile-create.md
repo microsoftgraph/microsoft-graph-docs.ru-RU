@@ -1,20 +1,18 @@
 ---
 title: Создание Андроидворкпрофилепкксцертификатепрофиле
 description: Создание нового объекта Андроидворкпрофилепкксцертификатепрофиле.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 39e08c48659b16881dec0aa820fb76e672e74e8a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 167b0a69d0be0ed18cf4a420b2f043f4b7207267
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42443442"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42758364"
 ---
 # <a name="create-androidworkprofilepkcscertificateprofile"></a>Создание Андроидворкпрофилепкксцертификатепрофиле
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42443442"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -218,7 +216,6 @@ Content-Length: 2204
   ]
 }
 ```
-
 
 
 

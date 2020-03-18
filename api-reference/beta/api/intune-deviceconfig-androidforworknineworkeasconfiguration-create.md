@@ -1,20 +1,18 @@
 ---
 title: Создание Андроидфорворкниневоркеасконфигуратион
 description: Создание нового объекта Андроидфорворкниневоркеасконфигуратион.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 32a77e0985efbe4890b9c3c9158e5eaa2259962a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 638f7f573ea061d0984f7069e0853496d9abeb8e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449854"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42759234"
 ---
 # <a name="create-androidforworknineworkeasconfiguration"></a>Создание Андроидфорворкниневоркеасконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42449854"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -182,7 +180,6 @@ Content-Length: 1511
   "syncTasks": true
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Создание Андроидворкпрофилегмаилеасконфигуратион
 description: Создание нового объекта Андроидворкпрофилегмаилеасконфигуратион.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 45d8b48ae4ef824d8ddc38abeffdb29fecde234d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cbc76964358af4b5530f5cdc2b7e8aac30113a9c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449532"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42758455"
 ---
 # <a name="create-androidworkprofilegmaileasconfiguration"></a>Создание Андроидворкпрофилегмаилеасконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42449532"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -173,7 +171,6 @@ Content-Length: 1440
   "usernameSource": "userPrincipalName"
 }
 ```
-
 
 
 

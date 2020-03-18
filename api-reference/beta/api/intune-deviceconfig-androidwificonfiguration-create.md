@@ -1,20 +1,18 @@
 ---
 title: Создание Андроидвификонфигуратион
 description: Создание нового объекта Андроидвификонфигуратион.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5dbe46439b6672e3d30f4c56ac6c8852b39c1395
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aadb7c021b5cbbfe0183316dd15fb68854abac45
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449623"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42758661"
 ---
 # <a name="create-androidwificonfiguration"></a>Создание Андроидвификонфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42449623"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -170,7 +168,6 @@ Content-Length: 1380
   "wiFiSecurityType": "wpaEnterprise"
 }
 ```
-
 
 
 

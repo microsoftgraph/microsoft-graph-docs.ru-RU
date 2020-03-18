@@ -1,20 +1,18 @@
 ---
 title: Список Андроидворкпрофилиасемаилпрофилебасес
 description: Список свойств и связей объектов Андроидворкпрофилиасемаилпрофилебасе.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dad5b8e5aa644db37c0687c255413890c4d72212
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0d3dc44324e8140238744308f0bc4df6d19b8374
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42443526"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42758532"
 ---
 # <a name="list-androidworkprofileeasemailprofilebases"></a>Список Андроидворкпрофилиасемаилпрофилебасес
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42443526"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -113,7 +111,6 @@ Content-Length: 1623
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Получение Андроидфорворктрустедрутцертификате
 description: Чтение свойств и связей объекта Андроидфорворктрустедрутцертификате.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 88da71d51eca7cb17ea8ab61452ab613631a3444
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bf2a00ef7ce529ef9d80dfaae5cea922e91b9230
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449784"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42759115"
 ---
 # <a name="get-androidforworktrustedrootcertificate"></a>Получение Андроидфорворктрустедрутцертификате
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42449784"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -110,7 +108,6 @@ Content-Length: 1406
   }
 }
 ```
-
 
 
 

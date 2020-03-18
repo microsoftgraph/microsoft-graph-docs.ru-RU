@@ -1,20 +1,18 @@
 ---
 title: Получение androidForWorkEnterpriseWiFiConfiguration
 description: Чтение свойств и связей объекта androidForWorkEnterpriseWiFiConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d11750cdd0e79683bea13fbaa6e418d0216509e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fca98617ea3d8f7e0f23f2815c6aa28694029edf
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42443904"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42759360"
 ---
 # <a name="get-androidforworkenterprisewificonfiguration"></a>Получение androidForWorkEnterpriseWiFiConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42443904"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -119,7 +117,6 @@ Content-Length: 1820
   }
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Обновление Андроидворкпрофилевпнконфигуратион
 description: Обновление свойств объекта Андроидворкпрофилевпнконфигуратион.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6c10e6fb4e7f9074228e737bc2181a434cc35187
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d9c7f2f3db3520cab91075ffc8d80cacd9e9bfd7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42449420"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42757453"
 ---
 # <a name="update-androidworkprofilevpnconfiguration"></a>Обновление Андроидворкпрофилевпнконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42449420"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -221,7 +219,6 @@ Content-Length: 1934
   "authenticationMethod": "usernameAndPassword"
 }
 ```
-
 
 
 

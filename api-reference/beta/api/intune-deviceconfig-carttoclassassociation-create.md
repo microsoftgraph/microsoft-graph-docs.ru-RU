@@ -1,20 +1,18 @@
 ---
 title: Создание КарттоклассассоЦиатион
 description: Создание нового объекта КарттоклассассоЦиатион.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2338e879df9f7e1920c90df61dda62a86d1bc2db
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: abfd05152a968696e4f35879e7cd5a8bb957bc2f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42443330"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42756991"
 ---
 # <a name="create-carttoclassassociation"></a>Создание КарттоклассассоЦиатион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42443330"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -113,7 +111,6 @@ Content-Length: 443
   ]
 }
 ```
-
 
 
 

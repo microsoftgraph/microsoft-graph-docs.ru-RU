@@ -1,20 +1,18 @@
 ---
 title: Получение Андроидворкпрофилецертификатепрофилебасе
 description: Чтение свойств и связей объекта Андроидворкпрофилецертификатепрофилебасе.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 597717ffe4d35e185a76ca935e460a94e1e4d5ce
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e969a7b0b1c1c2f76f4a7c375a770df8e9c2256b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42443582"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42758626"
 ---
 # <a name="get-androidworkprofilecertificateprofilebase"></a>Получение Андроидворкпрофилецертификатепрофилебасе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42443582"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -122,7 +120,6 @@ Content-Length: 1734
   }
 }
 ```
-
 
 
 

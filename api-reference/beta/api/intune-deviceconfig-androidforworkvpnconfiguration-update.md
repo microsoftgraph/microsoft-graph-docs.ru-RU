@@ -1,20 +1,18 @@
 ---
 title: Обновление androidForWorkVpnConfiguration
 description: Обновление свойств объекта androidForWorkVpnConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4cb8bb84aca348cb5f44c4bc8ae054a5dbf4182b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 366ae571efbc867753638c533b144bcf2693d32f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42443764"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42759059"
 ---
 # <a name="update-androidforworkvpnconfiguration"></a>Обновление androidForWorkVpnConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42443764"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -221,7 +219,6 @@ Content-Length: 1930
   "authenticationMethod": "usernameAndPassword"
 }
 ```
-
 
 
 

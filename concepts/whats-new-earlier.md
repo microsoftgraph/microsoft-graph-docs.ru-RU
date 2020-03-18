@@ -3,14 +3,31 @@ title: Обзор предыдущих выпусков Microsoft Graph
 description: Новые возможности в предыдущих выпусках Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 3d22924a867e55459b57c63e6563bd66e79f9c75
-ms.sourcegitcommit: cea768f767cf27a938b72bb26892d70e3dedaf2e
+ms.openlocfilehash: 76c967e9674f9d3fbb0dd92db179aef4843e3f52
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41865860"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42729040"
 ---
 # <a name="highlights-of-earlier-releases"></a>Обзор предыдущих выпусков
+
+## <a name="january-2020-new-and-generally-available"></a>Январь 2020 г.: новые и общедоступные возможности
+
+### <a name="security"></a>Безопасность
+В рамках управления оповещениями используйте метод [обновления оповещений](/graph/api/alert-update?view=graph-rest-1.0) и обновляйте поле **комментариев** как `Closed in IPC` или `Closed in MCAS`.
+
+### <a name="teamwork"></a>Командная работа
+Используйте свойство навигации **primaryChannel** [группы](/graph/api/resources/team?view=graph-rest-1.0) для доступа к каналу по умолчанию **General**.
+
+### <a name="users"></a>Пользователи
+Чтобы получить доступ к одному или нескольким удостоверениям, которые [пользователь](/graph/api/resources/user?view=graph-rest-1.0) может использовать для входа в учетную запись пользователя Azure AD, используйте свойство **удостоверения **. Удостоверения могут предоставляться поставщиками услуг Майкрософт, организаций или социальных удостоверений, таких как Facebook, Google или Microsoft. Это свойство позволяет пользователю входить в учетную запись пользователя с помощью любого из этих удостоверений.
+
+## <a name="january-2020-new-in-preview"></a>Январь 2020: Новое в предварительной версии
+
+### <a name="devices-and-apps"></a>Устройства и приложения
+Обновления Intune за [Январь](changelog.md#january-2020).
+
 
 ## <a name="december-2019-new-and-generally-available"></a>Декабрь 2019 г.: новые и общедоступные возможности
 
