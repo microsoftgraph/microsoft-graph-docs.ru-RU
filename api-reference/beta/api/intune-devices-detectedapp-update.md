@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42769628"
+ms.locfileid: "42814668"
 ---
 # <a name="update-detectedapp"></a><span data-ttu-id="1d22b-103">Обновление объекта detectedApp</span><span class="sxs-lookup"><span data-stu-id="1d22b-103">Update detectedApp</span></span>
 

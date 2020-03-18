@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42764868"
+ms.locfileid: "42814948"
 ---
 # <a name="list-devicemanagementtemplatesettingcategories"></a><span data-ttu-id="50a0a-103">Список Девицеманажементтемплатесеттингкатегориес</span><span class="sxs-lookup"><span data-stu-id="50a0a-103">List deviceManagementTemplateSettingCategories</span></span>
 

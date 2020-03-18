@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762886"
+ms.locfileid: "42814353"
 ---
 # <a name="update-devicemanagementscriptuserstate"></a><span data-ttu-id="44711-103">Обновление Девицеманажементскриптусерстате</span><span class="sxs-lookup"><span data-stu-id="44711-103">Update deviceManagementScriptUserState</span></span>
 

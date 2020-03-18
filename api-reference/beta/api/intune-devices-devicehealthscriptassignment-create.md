@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42769138"
+ms.locfileid: "42814584"
 ---
 # <a name="create-devicehealthscriptassignment"></a><span data-ttu-id="2ffcb-103">Создание Девицехеалсскриптассигнмент</span><span class="sxs-lookup"><span data-stu-id="2ffcb-103">Create deviceHealthScriptAssignment</span></span>
 

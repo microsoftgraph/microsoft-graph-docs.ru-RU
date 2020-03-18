@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42767787"
+ms.locfileid: "42814290"
 ---
 # <a name="deleteuserfromsharedappledevice-action"></a><span data-ttu-id="ca5e3-103">Действие deleteUserFromSharedAppleDevice</span><span class="sxs-lookup"><span data-stu-id="ca5e3-103">deleteUserFromSharedAppleDevice action</span></span>
 

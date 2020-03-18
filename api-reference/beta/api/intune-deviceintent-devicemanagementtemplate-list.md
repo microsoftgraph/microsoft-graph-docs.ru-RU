@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42765169"
+ms.locfileid: "42814990"
 ---
 # <a name="list-devicemanagementtemplates"></a><span data-ttu-id="6090d-103">Список Девицеманажементтемплатес</span><span class="sxs-lookup"><span data-stu-id="6090d-103">List deviceManagementTemplates</span></span>
 

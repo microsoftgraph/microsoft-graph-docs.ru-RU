@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762971"
+ms.locfileid: "42814500"
 ---
 # <a name="create-devicemanagementscriptassignment"></a><span data-ttu-id="abf17-103">Создание Девицеманажементскриптассигнмент</span><span class="sxs-lookup"><span data-stu-id="abf17-103">Create deviceManagementScriptAssignment</span></span>
 

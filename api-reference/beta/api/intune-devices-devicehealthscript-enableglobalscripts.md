@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42763489"
+ms.locfileid: "42814633"
 ---
 # <a name="enableglobalscripts-action"></a><span data-ttu-id="4e71e-103">действие Енаблеглобалскриптс</span><span class="sxs-lookup"><span data-stu-id="4e71e-103">enableGlobalScripts action</span></span>
 

@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762978"
+ms.locfileid: "42814514"
 ---
 # <a name="get-devicehealthscriptrunsummary"></a><span data-ttu-id="8cb75-103">Получение Девицехеалсскриптрунсуммари</span><span class="sxs-lookup"><span data-stu-id="8cb75-103">Get deviceHealthScriptRunSummary</span></span>
 

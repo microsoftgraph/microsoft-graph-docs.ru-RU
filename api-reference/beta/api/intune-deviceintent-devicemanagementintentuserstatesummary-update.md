@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42765813"
+ms.locfileid: "42815144"
 ---
 # <a name="update-devicemanagementintentuserstatesummary"></a><span data-ttu-id="ef2ee-103">Обновление Девицеманажементинтентусерстатесуммари</span><span class="sxs-lookup"><span data-stu-id="ef2ee-103">Update deviceManagementIntentUserStateSummary</span></span>
 

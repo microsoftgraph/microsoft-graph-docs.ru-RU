@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762943"
+ms.locfileid: "42814458"
 ---
 # <a name="delete-devicemanagementscriptdevicestate"></a><span data-ttu-id="eb4b7-103">Удаление Девицеманажементскриптдевицестате</span><span class="sxs-lookup"><span data-stu-id="eb4b7-103">Delete deviceManagementScriptDeviceState</span></span>
 

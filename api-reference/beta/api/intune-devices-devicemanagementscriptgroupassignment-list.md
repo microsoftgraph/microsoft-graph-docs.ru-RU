@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762915"
+ms.locfileid: "42814409"
 ---
 # <a name="list-devicemanagementscriptgroupassignments"></a><span data-ttu-id="259e9-103">Список Девицеманажементскриптграупассигнментс</span><span class="sxs-lookup"><span data-stu-id="259e9-103">List deviceManagementScriptGroupAssignments</span></span>
 

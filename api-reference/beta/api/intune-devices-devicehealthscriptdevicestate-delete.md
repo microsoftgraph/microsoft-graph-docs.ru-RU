@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762999"
+ms.locfileid: "42814542"
 ---
 # <a name="delete-devicehealthscriptdevicestate"></a><span data-ttu-id="2c2d6-103">Удаление Девицехеалсскриптдевицестате</span><span class="sxs-lookup"><span data-stu-id="2c2d6-103">Delete deviceHealthScriptDeviceState</span></span>
 

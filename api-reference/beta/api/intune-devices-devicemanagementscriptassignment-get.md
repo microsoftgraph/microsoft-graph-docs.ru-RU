@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762964"
+ms.locfileid: "42814486"
 ---
 # <a name="get-devicemanagementscriptassignment"></a><span data-ttu-id="29199-103">Получение Девицеманажементскриптассигнмент</span><span class="sxs-lookup"><span data-stu-id="29199-103">Get deviceManagementScriptAssignment</span></span>
 

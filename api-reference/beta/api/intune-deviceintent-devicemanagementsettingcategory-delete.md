@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42765589"
+ms.locfileid: "42815130"
 ---
 # <a name="delete-devicemanagementsettingcategory"></a><span data-ttu-id="4ce2f-103">Удаление Девицеманажементсеттингкатегори</span><span class="sxs-lookup"><span data-stu-id="4ce2f-103">Delete deviceManagementSettingCategory</span></span>
 

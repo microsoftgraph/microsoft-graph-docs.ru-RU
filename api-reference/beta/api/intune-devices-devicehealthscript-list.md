@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42763405"
+ms.locfileid: "42814605"
 ---
 # <a name="list-devicehealthscripts"></a><span data-ttu-id="ac63c-103">Список Девицехеалсскриптс</span><span class="sxs-lookup"><span data-stu-id="ac63c-103">List deviceHealthScripts</span></span>
 

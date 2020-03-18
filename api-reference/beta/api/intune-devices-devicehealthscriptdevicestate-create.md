@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42763062"
+ms.locfileid: "42814549"
 ---
 # <a name="create-devicehealthscriptdevicestate"></a><span data-ttu-id="8776f-103">Создание Девицехеалсскриптдевицестате</span><span class="sxs-lookup"><span data-stu-id="8776f-103">Create deviceHealthScriptDeviceState</span></span>
 

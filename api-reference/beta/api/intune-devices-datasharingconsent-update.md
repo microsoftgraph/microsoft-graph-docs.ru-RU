@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42763622"
+ms.locfileid: "42814703"
 ---
 # <a name="update-datasharingconsent"></a><span data-ttu-id="851a1-103">Обновление Даташарингконсент</span><span class="sxs-lookup"><span data-stu-id="851a1-103">Update dataSharingConsent</span></span>
 

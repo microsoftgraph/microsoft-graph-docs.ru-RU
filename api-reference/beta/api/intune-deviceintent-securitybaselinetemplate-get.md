@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42764224"
+ms.locfileid: "42814829"
 ---
 # <a name="get-securitybaselinetemplate"></a><span data-ttu-id="4864d-103">Получение Секуритибаселинетемплате</span><span class="sxs-lookup"><span data-stu-id="4864d-103">Get securityBaselineTemplate</span></span>
 

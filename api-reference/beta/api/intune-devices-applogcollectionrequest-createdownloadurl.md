@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42764154"
+ms.locfileid: "42814857"
 ---
 # <a name="createdownloadurl-action"></a><span data-ttu-id="e6b30-103">Действие createDownloadUrl</span><span class="sxs-lookup"><span data-stu-id="e6b30-103">createDownloadUrl action</span></span>
 

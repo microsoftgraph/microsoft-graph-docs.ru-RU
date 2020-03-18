@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42763132"
+ms.locfileid: "42814591"
 ---
 # <a name="updateglobalscript-action"></a><span data-ttu-id="f5010-103">действие Упдатеглобалскрипт</span><span class="sxs-lookup"><span data-stu-id="f5010-103">updateGlobalScript action</span></span>
 
