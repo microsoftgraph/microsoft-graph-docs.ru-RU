@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Девицеаппманажементтаскстатус
 description: Состояние задачи управления приложениями для устройств.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6819f5ad7ab0cc9f931392a55371fe555b9bc1a6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b1c1b75c47f3c99e318cf0c7edf5efc9bbdfc292
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524029"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42776608"
 ---
 # <a name="deviceappmanagementtaskstatus-enum-type"></a>тип перечисления Девицеаппманажементтаскстатус
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42524029"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Состояние не определено.|
-|закончен|1 |Задача готова к просмотру.|
-|ASP|2 |Задача принята и работает над.|
-|готовы|3 |Трудозатраты завершены.|
+|закончен|1,1|Задача готова к просмотру.|
+|ASP|2|Задача принята и работает над.|
+|готовы|4|Трудозатраты завершены.|
 |клоняет|4 |Задача отклонена.|
 
 

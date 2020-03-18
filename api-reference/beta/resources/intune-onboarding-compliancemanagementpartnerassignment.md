@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Комплианцеманажементпартнерассигнмент
 description: Нацеленность для группы пользователей для партнера по управлению соответствием требованиям
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8a04caf164e6761c95676b9029a2533cd86e7370
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 83652eb419566836c349fd2f12160516710c710b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524204"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42779802"
 ---
 # <a name="compliancemanagementpartnerassignment-resource-type"></a>Тип ресурса Комплианцеманажементпартнерассигнмент
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

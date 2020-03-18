@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицеманажементексчанжедевицекласс
 description: Класс устройства в Exchange.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4304fb138ede5cf35db07bbb08814f3d8fcf532f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 384fa172c255ec3f21ec0088c2b9f4ab025768ce
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527745"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42779032"
 ---
 # <a name="devicemanagementexchangedeviceclass-resource-type"></a>Тип ресурса Девицеманажементексчанжедевицекласс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

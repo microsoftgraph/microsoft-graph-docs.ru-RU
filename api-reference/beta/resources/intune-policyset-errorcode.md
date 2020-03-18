@@ -1,20 +1,18 @@
 ---
 title: тип перечисления errorCode
 description: Пока не задокументировано.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 36ac9226d012a7583f85652d517c22da33c1c403
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dc9eadcd34e40be407389d2df2a5c7d85bbf6c5f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527622"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42775943"
 ---
 # <a name="errorcode-enum-type"></a>тип перечисления errorCode
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42527622"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |noError|нуль|Значение по умолчанию, указывающее на отсутствие ошибки.|
-|доступ|1 |У текущего пользователя нет доступа из-за отсутствия разрешений RBAC для ресурса.|
-|нотфаунд|2 |У текущего пользователя нет доступа из-за отсутствия тегов области RBAC в ресурсе.|
-|deleted|3 |Ресурс удален.|
+|доступ|1,1|У текущего пользователя нет доступа из-за отсутствия разрешений RBAC для ресурса.|
+|нотфаунд|2|У текущего пользователя нет доступа из-за отсутствия тегов области RBAC в ресурсе.|
+|deleted|4|Ресурс удален.|
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса vppTokenActionResult
 description: Состояние действия, выполняемого с помощью маркера Apple Volume Purchase Program.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f9146b98288a7ed5a7f6de944cc832ddc71f9179
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5a0a722bf9314d03794fb3b1823afd4bc27cb94f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527696"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42777758"
 ---
 # <a name="vpptokenactionresult-resource-type"></a>Тип ресурса vppTokenActionResult
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Мобилесреатпартнертенантстате
 description: Состояние партнера этого клиента.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 3576d3cc5641bcbdafb20d53791d4e4f75ecb500
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c13a7e3d12299b86c3112e10e09d7b4eb746ba61
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527715"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42778171"
 ---
 # <a name="mobilethreatpartnertenantstate-enum-type"></a>тип перечисления Мобилесреатпартнертенантстате
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42527715"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |выходе|нуль|Партнер недоступен.|
-|доступен|1 |Партнер доступен.|
-|enabled|2 |Партнер включен.|
-|не отвечает|3 |Партнер не отвечает.|
+|доступен|1,1|Партнер доступен.|
+|enabled|2|Партнер включен.|
+|не отвечает|4|Партнер не отвечает.|
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса deviceManagementPartner
 description: Объект, представляющий подключение к партнеру по управлению устройствами.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5c64ad9a714a28bd0269ab66d296d6ad2c8177d4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6806b94e559139de09ddb74a0eadc759e8e12541
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524134"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42778913"
 ---
 # <a name="devicemanagementpartner-resource-type"></a>Тип ресурса deviceManagementPartner
-
-Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

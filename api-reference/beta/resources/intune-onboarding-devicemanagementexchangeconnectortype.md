@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Девицеманажементексчанжеконнектортипе
 description: Тип соединителя Exchange.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6c8e7463df2b8f2f172b87e137522906e14b8105
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ba3550a494350a31a4b7dc3a2977c7b9660a51cd
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524148"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42779067"
 ---
 # <a name="devicemanagementexchangeconnectortype-enum-type"></a>тип перечисления Девицеманажементексчанжеконнектортипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42524148"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |onPremises|нуль|Подключается к локальной среде Exchange.|
-|хост|1 |Подключается к среде Exchange с несколькими клиентами Office 365|
-|сервицетосервице|2 |Служба Intune подключается напрямую к среде Exchange с несколькими клиентами Office 365|
-|уполномочен|3 |Подключается к выделенной среде Exchange O365.|
+|хост|1,1|Подключается к среде Exchange с несколькими клиентами Office 365|
+|сервицетосервице|2|Служба Intune подключается напрямую к среде Exchange с несколькими клиентами Office 365|
+|уполномочен|4|Подключается к выделенной среде Exchange O365.|
 
 
 

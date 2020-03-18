@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Таржетедманажедаппконфигуратионполицисетитем
 description: Класс, содержащий свойства, которые используются для целевой Полицисетитем конфигурации управляемого приложения.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0bfb8bca0d204ed87ca4917552ff7bc125c697fc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dd76257c9c9eba8390d417798ca528cd12aa42da
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523966"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42775039"
 ---
 # <a name="targetedmanagedappconfigurationpolicysetitem-resource-type"></a>Тип ресурса Таржетедманажедаппконфигуратионполицисетитем
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса mobileThreatDefenseConnector
 description: Объект, представляющий подключение к партнеру по Mobile Threat Defense.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d43a5a2fc276d630f5e3507e3a5c897ce0837029
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2f9425ed13b8723a506cf115b5f243e2634b4efb
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524099"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42778192"
 ---
 # <a name="mobilethreatdefenseconnector-resource-type"></a>Тип ресурса mobileThreatDefenseConnector
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

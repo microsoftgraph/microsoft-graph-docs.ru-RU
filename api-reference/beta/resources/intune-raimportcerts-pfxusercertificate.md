@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Пфксусерцертификате
 description: Пока не задокументировано.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 65b35f1f75c99ce0d4823233212a8b1a1d807832
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 46e46a28a558cfe98decf66d90c3a5ed8c2fac3c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527591"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42774682"
 ---
 # <a name="pfxusercertificate-resource-type"></a>Тип ресурса Пфксусерцертификате
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

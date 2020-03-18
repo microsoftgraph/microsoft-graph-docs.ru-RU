@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Девицеманажементексчанжеакцесслевел
 description: Уровень доступа в Exchange.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 8233531964cbcbd7e41e703a4b477fc948dfede8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4eb983f79c208a887dabe1b06e43d48f80e86bf5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524176"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42779319"
 ---
 # <a name="devicemanagementexchangeaccesslevel-enum-type"></a>тип перечисления Девицеманажементексчанжеакцесслевел
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -25,10 +23,10 @@ ms.locfileid: "42524176"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|нет|нуль|В Exchange не настроено правило доступа к устройствам.|
-|разрешить|1 |Разрешить устройству доступ к Exchange.|
-|блок|2 |Блокировать доступ устройства к Exchange.|
-|папку|3 |Карантин устройства в Exchange.|
+|none|нуль|В Exchange не настроено правило доступа к устройствам.|
+|разрешить|1,1|Разрешить устройству доступ к Exchange.|
+|блок|2|Блокировать доступ устройства к Exchange.|
+|папку|4|Карантин устройства в Exchange.|
 
 
 

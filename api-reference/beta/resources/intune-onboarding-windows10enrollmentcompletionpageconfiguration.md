@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса windows10EnrollmentCompletionPageConfiguration
 description: Конфигурация страницы состояния регистрации Windows 10
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 43994b3099eecc44b875156155a78c16d658dca3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 06463e7757a0cc20ef53606b674759ab30736da0
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527683"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42777252"
 ---
 # <a name="windows10enrollmentcompletionpageconfiguration-resource-type"></a>Тип ресурса windows10EnrollmentCompletionPageConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

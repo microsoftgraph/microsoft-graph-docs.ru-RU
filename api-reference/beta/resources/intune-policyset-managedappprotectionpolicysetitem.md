@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Манажедапппротектионполицисетитем
 description: Класс, содержащий свойства, используемые для Полицисетитем защиты управляемых приложений.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 648632bbf9c3929bd3d73f4fa0ce65ffc4617243
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4e8bdc277f92d30f6506b5528bc00816d8639e65
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524001"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42775740"
 ---
 # <a name="managedappprotectionpolicysetitem-resource-type"></a>Тип ресурса Манажедапппротектионполицисетитем
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

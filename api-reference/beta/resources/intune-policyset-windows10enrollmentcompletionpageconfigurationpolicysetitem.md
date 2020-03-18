@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса windows10EnrollmentCompletionPageConfigurationPolicySetItem
 description: Класс, содержащий свойства, используемые для Windows10EnrollmentCompletionPageConfiguration Полицисетитем.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3a130acc7cafcc5c9a44c08369e2e4eb7e54ab78
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a72aaab953c889d2b05122b86ea4523ce9bf1e91
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523959"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42774892"
 ---
 # <a name="windows10enrollmentcompletionpageconfigurationpolicysetitem-resource-type"></a>Тип ресурса windows10EnrollmentCompletionPageConfigurationPolicySetItem
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

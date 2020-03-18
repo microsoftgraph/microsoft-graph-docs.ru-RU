@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Микрософтсторефорбусинесспорталселектионоптионс
 description: Портал, на котором администратор синхронизирует доступные приложения Microsoft Store для бизнеса. Это доступно в консоли администрирования Intune.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 3b22035f3e7fa214f7c5fa19ffc54209c10bc59d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 060d97787428d05a16ea6316c52ee899aef485e2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527725"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42778283"
 ---
 # <a name="microsoftstoreforbusinessportalselectionoptions-enum-type"></a>тип перечисления Микрософтсторефорбусинесспорталселектионоптионс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -25,9 +23,9 @@ ms.locfileid: "42527725"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|нет|нуль|Этот параметр недоступен для учетной записи|
-|компанипортал|1 |Только корпоративный портал Intune.|
-|приватесторе|2 |Только частный магазин МСФБ.|
+|none|нуль|Этот параметр недоступен для учетной записи|
+|компанипортал|1,1|Только корпоративный портал Intune.|
+|приватесторе|2|Только частный магазин МСФБ.|
 
 
 

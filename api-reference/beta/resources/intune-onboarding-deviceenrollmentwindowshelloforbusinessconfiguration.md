@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса deviceEnrollmentWindowsHelloForBusinessConfiguration
 description: Параметры Windows Hello для бизнеса позволяют пользователям получать доступ к своим устройствам с помощью жестов, таких как биометрическая проверка подлинности или ПИН-код. Настройка параметров для зарегистрированных Windows 10, Windows 10 Mobile и более поздних версий.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8188177065623176f31dec0e6ddfc8ebec5bff5e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 50ba5c5a2df8455ce50b36ca276780339f495a86
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524183"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42779410"
 ---
 # <a name="deviceenrollmentwindowshelloforbusinessconfiguration-resource-type"></a>Тип ресурса deviceEnrollmentWindowsHelloForBusinessConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

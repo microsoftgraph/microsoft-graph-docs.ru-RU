@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса intuneBrand
 description: Ресурс intuneBrand содержит данные, которые используются для настройки внешнего вида приложения "Корпоративный портал" и веб-портала пользователя.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d31b4ab9931fd0693776646161528aa73e31205e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c50e0b3a55a3df4e1c1f71f9058f407a7f912516
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527726"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42778374"
 ---
 # <a name="intunebrand-resource-type"></a>Тип ресурса intuneBrand
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

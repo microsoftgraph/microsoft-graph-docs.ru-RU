@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Девицеманажементексчанжеакцессрулетипе
 description: Критерий, определяющий тип устройства, к которому будет применяться это правило доступа
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 37d35bf9eeaaf3c9f8f4778a6d49081af60577b8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 56c1ae6a193a21ab650016bea18a62507d240a19
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524162"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42779172"
 ---
 # <a name="devicemanagementexchangeaccessruletype-enum-type"></a>тип перечисления Девицеманажементексчанжеакцессрулетипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,7 +24,7 @@ ms.locfileid: "42524162"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |системами|нуль|Семейство устройств|
-|model|1 |Определенная модель устройства|
+|model|1,1|Определенная модель устройства|
 
 
 

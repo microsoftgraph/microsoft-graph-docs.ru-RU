@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицекомплианцеполициполицисетитем
 description: Класс, содержащий свойства, используемые для политики соответствия требованиям устройств Полицисетитем.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 55019ee566c9f11b1a1c8edeaebc74b1abc9e914
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9bf6b597daf014ccbd8228becae06237714cd9e5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527646"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42776307"
 ---
 # <a name="devicecompliancepolicypolicysetitem-resource-type"></a>Тип ресурса Девицекомплианцеполициполицисетитем
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
