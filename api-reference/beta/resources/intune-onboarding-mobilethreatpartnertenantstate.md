@@ -1,34 +1,32 @@
 ---
 title: тип перечисления Мобилесреатпартнертенантстате
 description: Состояние партнера этого клиента.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 3576d3cc5641bcbdafb20d53791d4e4f75ecb500
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c13a7e3d12299b86c3112e10e09d7b4eb746ba61
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527715"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42778171"
 ---
-# <a name="mobilethreatpartnertenantstate-enum-type"></a><span data-ttu-id="6c4f9-103">тип перечисления Мобилесреатпартнертенантстате</span><span class="sxs-lookup"><span data-stu-id="6c4f9-103">mobileThreatPartnerTenantState enum type</span></span>
+# <a name="mobilethreatpartnertenantstate-enum-type"></a><span data-ttu-id="32d4a-103">тип перечисления Мобилесреатпартнертенантстате</span><span class="sxs-lookup"><span data-stu-id="32d4a-103">mobileThreatPartnerTenantState enum type</span></span>
 
-<span data-ttu-id="6c4f9-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="6c4f9-104">Namespace: microsoft.graph</span></span>
+> <span data-ttu-id="32d4a-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="32d4a-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="6c4f9-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6c4f9-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="32d4a-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="32d4a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-> <span data-ttu-id="6c4f9-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="6c4f9-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+<span data-ttu-id="32d4a-106">Состояние партнера этого клиента.</span><span class="sxs-lookup"><span data-stu-id="32d4a-106">Partner state of this tenant.</span></span>
 
-<span data-ttu-id="6c4f9-107">Состояние партнера этого клиента.</span><span class="sxs-lookup"><span data-stu-id="6c4f9-107">Partner state of this tenant.</span></span>
-
-## <a name="members"></a><span data-ttu-id="6c4f9-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="6c4f9-108">Members</span></span>
-|<span data-ttu-id="6c4f9-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="6c4f9-109">Member</span></span>|<span data-ttu-id="6c4f9-110">Значение</span><span class="sxs-lookup"><span data-stu-id="6c4f9-110">Value</span></span>|<span data-ttu-id="6c4f9-111">Описание</span><span class="sxs-lookup"><span data-stu-id="6c4f9-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="32d4a-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="32d4a-107">Members</span></span>
+|<span data-ttu-id="32d4a-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="32d4a-108">Member</span></span>|<span data-ttu-id="32d4a-109">Значение</span><span class="sxs-lookup"><span data-stu-id="32d4a-109">Value</span></span>|<span data-ttu-id="32d4a-110">Описание</span><span class="sxs-lookup"><span data-stu-id="32d4a-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="6c4f9-112">выходе</span><span class="sxs-lookup"><span data-stu-id="6c4f9-112">unavailable</span></span>|<span data-ttu-id="6c4f9-113">нуль</span><span class="sxs-lookup"><span data-stu-id="6c4f9-113">0</span></span>|<span data-ttu-id="6c4f9-114">Партнер недоступен.</span><span class="sxs-lookup"><span data-stu-id="6c4f9-114">Partner is unavailable.</span></span>|
-|<span data-ttu-id="6c4f9-115">доступен</span><span class="sxs-lookup"><span data-stu-id="6c4f9-115">available</span></span>|<span data-ttu-id="6c4f9-116">1 </span><span class="sxs-lookup"><span data-stu-id="6c4f9-116">1</span></span>|<span data-ttu-id="6c4f9-117">Партнер доступен.</span><span class="sxs-lookup"><span data-stu-id="6c4f9-117">Partner is available.</span></span>|
-|<span data-ttu-id="6c4f9-118">enabled</span><span class="sxs-lookup"><span data-stu-id="6c4f9-118">enabled</span></span>|<span data-ttu-id="6c4f9-119">2 </span><span class="sxs-lookup"><span data-stu-id="6c4f9-119">2</span></span>|<span data-ttu-id="6c4f9-120">Партнер включен.</span><span class="sxs-lookup"><span data-stu-id="6c4f9-120">Partner is enabled.</span></span>|
-|<span data-ttu-id="6c4f9-121">не отвечает</span><span class="sxs-lookup"><span data-stu-id="6c4f9-121">unresponsive</span></span>|<span data-ttu-id="6c4f9-122">3 </span><span class="sxs-lookup"><span data-stu-id="6c4f9-122">3</span></span>|<span data-ttu-id="6c4f9-123">Партнер не отвечает.</span><span class="sxs-lookup"><span data-stu-id="6c4f9-123">Partner is unresponsive.</span></span>|
+|<span data-ttu-id="32d4a-111">выходе</span><span class="sxs-lookup"><span data-stu-id="32d4a-111">unavailable</span></span>|<span data-ttu-id="32d4a-112">нуль</span><span class="sxs-lookup"><span data-stu-id="32d4a-112">0</span></span>|<span data-ttu-id="32d4a-113">Партнер недоступен.</span><span class="sxs-lookup"><span data-stu-id="32d4a-113">Partner is unavailable.</span></span>|
+|<span data-ttu-id="32d4a-114">доступен</span><span class="sxs-lookup"><span data-stu-id="32d4a-114">available</span></span>|<span data-ttu-id="32d4a-115">1,1</span><span class="sxs-lookup"><span data-stu-id="32d4a-115">1</span></span>|<span data-ttu-id="32d4a-116">Партнер доступен.</span><span class="sxs-lookup"><span data-stu-id="32d4a-116">Partner is available.</span></span>|
+|<span data-ttu-id="32d4a-117">enabled</span><span class="sxs-lookup"><span data-stu-id="32d4a-117">enabled</span></span>|<span data-ttu-id="32d4a-118">2</span><span class="sxs-lookup"><span data-stu-id="32d4a-118">2</span></span>|<span data-ttu-id="32d4a-119">Партнер включен.</span><span class="sxs-lookup"><span data-stu-id="32d4a-119">Partner is enabled.</span></span>|
+|<span data-ttu-id="32d4a-120">не отвечает</span><span class="sxs-lookup"><span data-stu-id="32d4a-120">unresponsive</span></span>|<span data-ttu-id="32d4a-121">4</span><span class="sxs-lookup"><span data-stu-id="32d4a-121">3</span></span>|<span data-ttu-id="32d4a-122">Партнер не отвечает.</span><span class="sxs-lookup"><span data-stu-id="32d4a-122">Partner is unresponsive.</span></span>|
 
 
 
