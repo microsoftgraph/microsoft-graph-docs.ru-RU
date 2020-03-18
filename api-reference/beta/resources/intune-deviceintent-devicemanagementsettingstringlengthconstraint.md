@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицеманажементсеттингстрингленгсконстраинт
 description: Ограничение, ограничивающее заданный диапазон длины строки
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f78206495b4694b19a7558df4ab790c24b8f658b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5e77c60950bef96fc83c3af186598a37c2e58d2a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528774"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785276"
 ---
 # <a name="devicemanagementsettingstringlengthconstraint-resource-type"></a>Тип ресурса Девицеманажементсеттингстрингленгсконстраинт
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

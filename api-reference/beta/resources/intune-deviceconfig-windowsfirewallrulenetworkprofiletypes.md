@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Виндовсфиреваллруленетворкпрофилетипес
 description: Флаги, определяющие, какие типы профилей сети применяются к правилу брандмауэра.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0d57b5e52261ac720090921003665b05dd467ad1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4d2a7a10936df83300c432ea9412790ba33ccc1c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525553"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786490"
 ---
 # <a name="windowsfirewallrulenetworkprofiletypes-enum-type"></a>тип перечисления Виндовсфиреваллруленетворкпрофилетипес
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42525553"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Флаги не заданы.|
-|domain|1 |Профиль для сетей, подключенных к доменам.|
-|закрытый|2 |Профиль для частных сетей.|
+|domain|1,1|Профиль для сетей, подключенных к доменам.|
+|закрытый|2|Профиль для частных сетей.|
 |public|4 |Профиль для общедоступных сетей.|
 
 

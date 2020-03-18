@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса depOnboardingSetting
 description: DepOnboardingSetting представляет экземпляр службы Apple DEP, входящей в Intune. Встроенный экземпляр службы управляет маркером Apple, используемым для синхронизации данных между Apple и Intune.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2c3f63482e082d8d6d3f868f87e7aeb6a491ad08
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1d9a6d0e6d413a5cd406a8ef40f9fe3ed011770d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524754"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783510"
 ---
 # <a name="deponboardingsetting-resource-type"></a>Тип ресурса depOnboardingSetting
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -31,6 +29,7 @@ DepOnboardingSetting представляет экземпляр службы Ap
 |[Удаление depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-delete.md)|Нет|Удаляет объект [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md).|
 |[Обновление depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-update.md)|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Обновление свойств объекта [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .|
 |[Функция getEncryptionPublicKey](../api/intune-enrollment-deponboardingsetting-getencryptionpublickey.md)|String|Получение открытого ключа, используемого для шифрования маркера программы регистрации устройств Apple|
+|[действие Женератинкриптионпубликкэй](../api/intune-enrollment-deponboardingsetting-generateencryptionpublickey.md)|String|Создание открытого ключа, используемого для шифрования маркера программы регистрации устройств Apple|
 |[Действие uploadDepToken](../api/intune-enrollment-deponboardingsetting-uploaddeptoken.md)|Нет|Отправка нового маркера программы регистрации устройств|
 |[Действие syncWithAppleDeviceEnrollmentProgram](../api/intune-enrollment-deponboardingsetting-syncwithappledeviceenrollmentprogram.md)|Нет|Синхронизация между программой регистрации устройств Apple и Intune|
 |[Действие shareForSchoolDataSyncService](../api/intune-enrollment-deponboardingsetting-shareforschooldatasyncservice.md)|Нет|Пока не задокументировано.|

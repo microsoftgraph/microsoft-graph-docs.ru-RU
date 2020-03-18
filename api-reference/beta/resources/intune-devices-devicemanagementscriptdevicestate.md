@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицеманажементскриптдевицестате
 description: Содержит свойства для состояния запуска на устройстве скрипта управления устройствами.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 037ebebad70a21e32a09fc0b54fabde1c8603069
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dbb088dbe6fc9e9cd324124269e4cfb8a4c7c66b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525056"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42784911"
 ---
 # <a name="devicemanagementscriptdevicestate-resource-type"></a>Тип ресурса Девицеманажементскриптдевицестате
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Виндовсаутопилотдевицетипе
 description: Пока не задокументировано.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c4ba7144144bd59ab1eb0256951574581c7ec97e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8ffe8b8f161fbb1c39f0ec03a47d652cd2bb3430
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528248"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783384"
 ---
 # <a name="windowsautopilotdevicetype-enum-type"></a>тип перечисления Виндовсаутопилотдевицетипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42528248"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |виндовспк|нуль|Windows PC|
-|surfaceHub2|1 |Surface Hub 2|
-|holoLens|2 |HoloLens|
+|surfaceHub2|1,1|Surface Hub 2|
+|holoLens|2|HoloLens|
 
 
 

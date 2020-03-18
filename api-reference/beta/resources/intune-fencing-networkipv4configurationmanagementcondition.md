@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса networkIPv4ConfigurationManagementCondition
 description: Можно определить условия управления IPv4 на основе конфигурации, которые будут срабатывать, когда устройство обнаружит определенные параметры IP-сети. Условия управления IP-конфигурацией будут считаться ИСТИНными, только если сетевое подключение активно.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a4b31229a5745d889271c886cf5d0b63f91e2627
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 936a846bff444c3d7c5392bf267de5cbd84d765e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528158"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783216"
 ---
 # <a name="networkipv4configurationmanagementcondition-resource-type"></a>Тип ресурса networkIPv4ConfigurationManagementCondition
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

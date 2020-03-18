@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса windowsInformationProtection
 description: Политика для Windows Information Protection, которая используется для настройки расширенных параметров управления.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1ab6932eb6be1de93b189d303a7d87fbb61793dd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2f437ba9f60b7929c572038daf2f434ff8323f52
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527857"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42781090"
 ---
 # <a name="windowsinformationprotection-resource-type"></a>Тип ресурса windowsInformationProtection
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

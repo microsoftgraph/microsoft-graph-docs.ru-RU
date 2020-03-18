@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Мдмсуппортедстате
 description: Состояние поддержки MDM для параметра.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9d5424eccf29e30ecff1cc9a216d82b28d3ce6ae
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ca95d05201fdf398fccd282e9437b3de352abdb1
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524464"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783139"
 ---
 # <a name="mdmsupportedstate-enum-type"></a>тип перечисления Мдмсуппортедстате
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42524464"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Неизвестный статус поддержки MDM для параметра.|
-|поддерживается|1 |Параметр поддерживается.|
-|Неподдерживаемые|2 |Параметр не поддерживается.|
-|устаревшие|3 |Параметр — депкрекатед.|
+|поддерживается|1,1|Параметр поддерживается.|
+|Неподдерживаемые|2|Параметр не поддерживается.|
+|устаревшие|4|Параметр — депкрекатед.|
 
 
 

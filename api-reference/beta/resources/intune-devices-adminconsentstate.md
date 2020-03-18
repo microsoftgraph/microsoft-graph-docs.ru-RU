@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Админконсентстате
 description: Состояние согласия администратора.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0b7640cf2942d3f3ba9278effa8296585e4cd89f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9be3a8210d30bd0fad1c8685cbb813630884eae7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528715"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785170"
 ---
 # <a name="adminconsentstate-enum-type"></a>тип перечисления Админконсентстате
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42528715"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Администратор не настроил элемент|
-|granted|1 |Элемент, которому назначен администратор|
-|нотгрантед|2 |Администратор не предоставляет элемент|
+|granted|1,1|Элемент, которому назначен администратор|
+|нотгрантед|2|Администратор деос не предоставил элемент|
 
 
 

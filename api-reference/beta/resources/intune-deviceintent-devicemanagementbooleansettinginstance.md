@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицеманажементбулеансеттингинстанце
 description: Экземпляр параметра, представляющий логическое значение.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0886e4ca691a29ed6c33efd2f4104d37ab0ef629
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a211d46c753d4eeb51098af7498c3a21bea0df24
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528895"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786090"
 ---
 # <a name="devicemanagementbooleansettinginstance-resource-type"></a>Тип ресурса Девицеманажементбулеансеттингинстанце
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

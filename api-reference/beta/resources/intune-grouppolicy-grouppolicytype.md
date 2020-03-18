@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Граупполицитипе
 description: Тип файла или определения групповой политики.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 855e70f2bc1405b01c518dc949878f060625e958
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c7eb2e11b080daf29bdc9cedf985e42ccb639335
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528016"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42782792"
 ---
 # <a name="grouppolicytype-enum-type"></a>тип перечисления Граупполицитипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,7 +24,7 @@ ms.locfileid: "42528016"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |адмксбаккед|нуль|Административные шаблоны групповой политики, встроенные в поставщика службы настройки политик (CSP).|
-|адмксинжестед|1 |Административные шаблоны групповой политики, установленные с помощью поставщика службы настройки политик (CSP).|
+|адмксинжестед|1,1|Административные шаблоны групповой политики, установленные с помощью поставщика службы настройки политик (CSP).|
 
 
 

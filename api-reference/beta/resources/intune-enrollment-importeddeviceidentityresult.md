@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Импортеддевицеидентитиресулт
 description: Ресурс Импортеддевицеидентитиресулт представляет результат попытки импорта удостоверения устройства.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ae81088878985ead80131cc6bdd8d5f09309b225
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 58a2c990836c5bddb89db10e39e80568767daa25
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528289"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783468"
 ---
 # <a name="importeddeviceidentityresult-resource-type"></a>Тип ресурса Импортеддевицеидентитиресулт
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

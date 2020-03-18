@@ -1,20 +1,18 @@
 ---
 title: тип перечисления deviceRegistrationState
 description: Состояние регистрации устройства.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f999e393caab410ea3f7565ade25d189193cfc40
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 908f38a2da8f5960eb9c5f1879b7b54374b806ed
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525028"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42784135"
 ---
 # <a name="deviceregistrationstate-enum-type"></a>тип перечисления deviceRegistrationState
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42525028"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |нотрегистеред|нуль|Устройство не зарегистрировано.|
-|охраняем|2 |Устройство зарегистрировано.|
-|отозван|3 |Устройство заблокировано, очищено или снято.|
+|охраняем|2|Устройство зарегистрировано.|
+|отозван|4|Устройство заблокировано, очищено или снято.|
 |кэйконфликт|4 |У устройства есть конфликт ключей.|
 |аппровалпендинг|5 |Устройство ожидает утверждения.|
 |цертификатересет|6 |Сертификат устройства сброшен.|

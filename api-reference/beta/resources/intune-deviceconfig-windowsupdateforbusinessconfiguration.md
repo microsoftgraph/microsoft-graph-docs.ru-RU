@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса windowsUpdateForBusinessConfiguration
 description: Конфигурация Центра обновления Windows для бизнеса.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9cd9e6e3d56e2e33884ea9b65c221534c8969ff9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 63d8b77a61082beb9b74aaaa0ddfed78735b8ed9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528948"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786202"
 ---
 # <a name="windowsupdateforbusinessconfiguration-resource-type"></a>Тип ресурса windowsUpdateForBusinessConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

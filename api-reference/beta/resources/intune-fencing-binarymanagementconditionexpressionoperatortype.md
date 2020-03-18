@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Бинариманажементкондитионекспрессионоператортипе
 description: Поддерживаемые бинарные операторы для выражений условия управления.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 58a58f8c4344ff7206389d89608fbeb6ba7d8e88
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7f45ab4c43f8836402142ccf1a848551be646713
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524534"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783272"
 ---
 # <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a>тип перечисления Бинариманажементкондитионекспрессионоператортипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -25,8 +23,8 @@ ms.locfileid: "42524534"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|или|нуль|Оценивает набор операндов как true, если один или несколько его операндов имеют значение true.|
-|и|1 |Оценивает набор операндов как true, если все его операнды имеют значение true.|
+|Кроме того:|нуль|Оценивает набор операндов как true, если один или несколько его операндов имеют значение true.|
+|и|1,1|Оценивает набор операндов как true, если все его операнды имеют значение true.|
 
 
 

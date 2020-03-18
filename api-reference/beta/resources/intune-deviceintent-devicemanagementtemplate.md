@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицеманажементтемплате
 description: Объект, представляющий определенную коллекцию параметров устройства
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9a8721af64af42b93d8a60349443b68381ad89f9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3a66507e4b2c8384980bcc5217708efb94da660c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528762"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785255"
 ---
 # <a name="devicemanagementtemplate-resource-type"></a>Тип ресурса Девицеманажементтемплате
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -49,7 +47,7 @@ ms.locfileid: "42528762"
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|settings|Коллекция [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|Коллекция всех параметров, которые содержит этот шаблон|
+|параметры|Коллекция [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|Коллекция всех параметров, которые содержит этот шаблон|
 |categories|Коллекция [девицеманажементтемплатесеттингкатегори](../resources/intune-deviceintent-devicemanagementtemplatesettingcategory.md)|Коллекция настроек категорий в шаблоне|
 |мигратаблето|Коллекция [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md)|Коллекция шаблонов, в которые можно перенести этот шаблон|
 

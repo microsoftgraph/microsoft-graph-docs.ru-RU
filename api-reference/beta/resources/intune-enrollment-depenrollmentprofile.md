@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса depEnrollmentProfile
 description: Ресурс depEnrollmentProfile представляет профиль регистрации программы регистрации устройств Apple (DEP). Этот тип профиля должен быть назначен серийным номерам Apple DEP, прежде чем соответствующие устройства смогут регистрироваться с помощью функции DEP.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c17abee6015b0e95ccbcc9099c3ff5b85b32d6a9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1ef354674d2ecf7c44559d61df7b1f9ec90fda08
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528327"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783538"
 ---
 # <a name="depenrollmentprofile-resource-type"></a>Тип ресурса depEnrollmentProfile
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

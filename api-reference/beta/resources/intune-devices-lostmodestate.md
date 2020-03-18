@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Лостмодестате
 description: Состояние режима потери данных, указывающий, включен ли режим потерянных или отключенных
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a6b163529a28536780ea6a4cf95145fcf849ecdb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ce195a48326f715cdb26c6e26ca9912c4de829d7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528548"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783986"
 ---
 # <a name="lostmodestate-enum-type"></a>тип перечисления Лостмодестате
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,7 +24,7 @@ ms.locfileid: "42528548"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |активирован|нуль|Отключенный режим отключен.|
-|enabled|1 |Включен режим "потеряно".|
+|enabled|1,1|Включен режим "потеряно".|
 
 
 

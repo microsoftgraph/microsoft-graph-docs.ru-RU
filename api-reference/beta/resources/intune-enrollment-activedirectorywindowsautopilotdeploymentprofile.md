@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Активедиректоривиндовсаутопилотдеплойментпрофиле
 description: Профиль развертывания Windows для автопилота
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f0a0edc30e594ea2d9d1a19b43db6f7de4c2f218
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0af86c38a3e6437ad4db0cc0536c868f5ce06629
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524783"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783594"
 ---
 # <a name="activedirectorywindowsautopilotdeploymentprofile-resource-type"></a>Тип ресурса Активедиректоривиндовсаутопилотдеплойментпрофиле
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

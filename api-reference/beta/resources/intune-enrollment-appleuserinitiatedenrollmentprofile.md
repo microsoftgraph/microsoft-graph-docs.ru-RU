@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Апплеусеринитиатеденроллментпрофиле
 description: Ресурс объекта enrollmentprofile представляет коллекцию конфигураций, которым необходимо предоставить предварительную регистрацию, чтобы включить регистрацию определенных устройств, удостоверения которых были предварительно настроены. Для этого типа профиля назначаются идентификаторы предварительно подготовленных устройств, чтобы применить конфигурации профиля при регистрации соответствующего устройства.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 108abd8668d6c863f876a0188ea48085a722e281
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b6bf6eefeb94156b85affa3df72665fbe4c3f7bb
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528348"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783573"
 ---
 # <a name="appleuserinitiatedenrollmentprofile-resource-type"></a>Тип ресурса Апплеусеринитиатеденроллментпрофиле
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

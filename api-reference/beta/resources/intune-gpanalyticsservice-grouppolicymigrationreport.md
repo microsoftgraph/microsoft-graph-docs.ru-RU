@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Граупполицимигратионрепорт
 description: Отчет о миграции групповой политики.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8f15de982acad969967b9c1bf4fdf634e8456172
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 05729d8cd03b54de5a07ef2e9cfd79d391c5e9b9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528142"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783167"
 ---
 # <a name="grouppolicymigrationreport-resource-type"></a>Тип ресурса Граупполицимигратионрепорт
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -30,7 +28,6 @@ ms.locfileid: "42528142"
 |[Создание Граупполицимигратионрепорт](../api/intune-gpanalyticsservice-grouppolicymigrationreport-create.md)|[groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md)|Создание нового объекта [граупполицимигратионрепорт](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) .|
 |[Удаление Граупполицимигратионрепорт](../api/intune-gpanalyticsservice-grouppolicymigrationreport-delete.md)|Нет|Удаляет объект [граупполицимигратионрепорт](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md).|
 |[Обновление Граупполицимигратионрепорт](../api/intune-gpanalyticsservice-grouppolicymigrationreport-update.md)|[groupPolicyMigrationReport](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md)|Обновление свойств объекта [граупполицимигратионрепорт](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) .|
-|[действие Креатемигратионрепорт](../api/intune-gpanalyticsservice-grouppolicymigrationreport-createmigrationreport.md)|String|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|

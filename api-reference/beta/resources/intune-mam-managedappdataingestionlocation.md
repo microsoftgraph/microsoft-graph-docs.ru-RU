@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Манажедаппдатаинжестионлокатион
 description: Расположения, которые можно использовать для переноса данных в документы Организации
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 64b8adf3aa82575db53472f047f8f4145ce32535
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e7ec5f46055a3282dc0de46d4790df6fbfd53a10
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524338"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42782099"
 ---
 # <a name="managedappdataingestionlocation-enum-type"></a>тип перечисления Манажедаппдатаинжестионлокатион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -25,9 +23,9 @@ ms.locfileid: "42524338"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|онедривефорбусинесс|1 |OneDrive для бизнеса;|
-|sharePoint|2 |SharePoint Online|
-|видеокамер|3 |Камера устройства|
+|онедривефорбусинесс|1,1|OneDrive для бизнеса;|
+|sharePoint|2|SharePoint Online|
+|видеокамер|4|Камера устройства|
 
 
 

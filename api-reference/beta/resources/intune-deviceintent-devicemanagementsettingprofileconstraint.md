@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицеманажементсеттингпрофилеконстраинт
 description: Ограничение на применение заданной метаданных профиля
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cb6784fa929aa298579cc889b39cfa90b475a014
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f4b565321069c27949fbd5814c4ddc1c4eb1451b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525231"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785304"
 ---
 # <a name="devicemanagementsettingprofileconstraint-resource-type"></a>Тип ресурса Девицеманажементсеттингпрофилеконстраинт
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

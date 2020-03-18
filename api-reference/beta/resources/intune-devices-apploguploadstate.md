@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Апплогуплоадстате
 description: апплогуплоадстатус
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d692e352f177c7f882a33e49604934c4b1a22912
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 193344351f5654ea09c0246e06d1d3abf0d54039
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525168"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785135"
 ---
 # <a name="apploguploadstate-enum-type"></a>тип перечисления Апплогуплоадстате
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42525168"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |закончен|нуль|Запрос ожидает обработки или обработки|
-|готовы|1 |Запрос выполнен с помощью файла, отправленного в большой двоичный объект Azure для скачивания.|
-|сбоев|2 |Запрос завершил обработку и находится в состоянии ошибки.|
+|готовы|1,1|Запрос выполнен с помощью файла, отправленного в большой двоичный объект Azure для скачивания.|
+|сбоев|2|Запрос завершил обработку и находится в состоянии ошибки.|
 
 
 

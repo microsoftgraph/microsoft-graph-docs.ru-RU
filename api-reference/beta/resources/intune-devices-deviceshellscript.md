@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицешеллскрипт
 description: Intune предоставит клиенту возможность выполнять сценарии оболочки на зарегистрированных устройствах Mac OS. Сценарий можно выполнить один раз или периодически.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6dddb69c9559fbf7472615216c4498e5db65d69a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e0583eb6dca38af0e490fc23bf57c852bd195ba5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528586"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42784128"
 ---
 # <a name="deviceshellscript-resource-type"></a>Тип ресурса Девицешеллскрипт
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

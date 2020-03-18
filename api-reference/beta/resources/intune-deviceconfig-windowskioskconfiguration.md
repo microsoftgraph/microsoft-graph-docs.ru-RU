@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Виндовскиоскконфигуратион
 description: Эта сущность предоставляет описания объявляемых методов, свойств и связей, предоставляемых ресурсом киоска.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 122b3d25f822452eac9db90bf6a1933b3c7fca3e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d1121baf71e85082b56242b6e49e32789ebd5542
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525504"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786406"
 ---
 # <a name="windowskioskconfiguration-resource-type"></a>Тип ресурса Виндовскиоскконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

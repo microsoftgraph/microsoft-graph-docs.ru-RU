@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Виндовсстартменуапплиствисибилититипе
 description: Тип отображения списка приложений меню "Пуск".
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 35b1145a0d643f028cd2403236e297f091d9f684
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dd517d9fa660136df39dff6ab96c455ca280b61e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525399"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786223"
 ---
 # <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>тип перечисления Виндовсстартменуапплиствисибилититипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42525399"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Определено пользователем. Значение по умолчанию.|
-|свертываются|1 |Свертывание списка приложений в меню "Пуск".|
-|удалить|2 |Полностью удаляет список приложений из меню "Пуск".|
+|свертываются|1,1|Свертывание списка приложений в меню "Пуск".|
+|удалить|2|Полностью удаляет список приложений из меню "Пуск".|
 |дисаблесеттингсапп|4 |Отключает соответствующий переключатель (сворачивать или удалить) в приложении "Параметры".|
 
 

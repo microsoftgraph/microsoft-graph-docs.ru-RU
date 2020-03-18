@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Секуритибаселинедевицестате
 description: Сводка по базовому состоянию соответствия требованиям безопасности для устройства.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3d3fa75d79789d91efd22efc40637132bad4f80c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0db4b05fc804e58c2cee1ba030540bd948dcc479
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528741"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785198"
 ---
 # <a name="securitybaselinedevicestate-resource-type"></a>Тип ресурса Секуритибаселинедевицестате
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

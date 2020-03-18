@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Манажементкондитион
 description: Условия управления — это события, которые могут динамически запускаться, например, с географическими ограждениями, временными ограждениями и сетевыми ограждениями.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2e5cef389cd6349f11f5e5554146d220608a368a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3d1adf4538cdfc4bfd819c1e9871c3d3a5a5a800
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528185"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783251"
 ---
 # <a name="managementcondition-resource-type"></a>Тип ресурса Манажементкондитион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

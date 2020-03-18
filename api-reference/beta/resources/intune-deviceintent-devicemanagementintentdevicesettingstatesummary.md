@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицеманажементинтентдевицесеттингстатесуммари
 description: Объект Entity, представляющий сводку состояний параметров устройства для намерения
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bd4b59ebf8937f0ee9b2bdd9e0c06388a35d6f42
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3a351f3ca7dd778592150605ca7a491212f4e51d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528844"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785430"
 ---
 # <a name="devicemanagementintentdevicesettingstatesummary-resource-type"></a>Тип ресурса Девицеманажементинтентдевицесеттингстатесуммари
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

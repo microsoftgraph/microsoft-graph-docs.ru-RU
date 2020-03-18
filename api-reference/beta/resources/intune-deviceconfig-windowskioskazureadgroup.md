@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Виндовскиосказуреадграуп
 description: Класс, используемый для идентификации группы AzureAD для конфигурации киоска
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6569dc23786b9587ab7290859ff9a151a3e370c2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a17c17a825b544093ebd8e8ecd858db65bd449b6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525511"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786420"
 ---
 # <a name="windowskioskazureadgroup-resource-type"></a>Тип ресурса Виндовскиосказуреадграуп
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

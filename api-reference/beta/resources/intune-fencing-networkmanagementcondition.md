@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Нетворкманажементкондитион
 description: Содержит сведения для определения условия управления сетью.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bced41a40200cd79d58fe71a36cf1af5b1a65cc5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0558d4580842322ef34e1836df0cd498d79996b2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528150"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783202"
 ---
 # <a name="networkmanagementcondition-resource-type"></a>Тип ресурса Нетворкманажементкондитион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

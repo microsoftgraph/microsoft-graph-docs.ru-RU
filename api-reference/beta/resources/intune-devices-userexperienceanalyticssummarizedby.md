@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Усерекспериенцеаналитикссуммаризедби
 description: Пока не задокументировано.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5a7f0f315fb1789356b5f83940894dd6a7e74d82
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: adea92a33643be33b6a9704f1d2adc39bc852051
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524860"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783748"
 ---
 # <a name="userexperienceanalyticssummarizedby-enum-type"></a>тип перечисления Усерекспериенцеаналитикссуммаризедби
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -25,9 +23,9 @@ ms.locfileid: "42524860"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|нет|нуль|Пока не задокументировано.|
-|model|1 |Пока не задокументировано.|
-|аллрегрессионс|3 |Пока не задокументировано.|
+|none|нуль|Пока не задокументировано.|
+|model|1,1|Пока не задокументировано.|
+|аллрегрессионс|4|Пока не задокументировано.|
 |моделрегрессион|4 |Пока не задокументировано.|
 |мануфактуреррегрессион|5 |Пока не задокументировано.|
 |оператингсистемверсионрегрессион|6 |Пока не задокументировано.|

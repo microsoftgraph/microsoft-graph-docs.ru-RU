@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицеманажементсеттингдефинитион
 description: Сущность, представляющая определение определения для заданной настройки
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1184dd9f6337643566db20b6a45151ea24b601b3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 72789bb8dc5c331f896deafa8615614f65e9cd75
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528799"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785346"
 ---
 # <a name="devicemanagementsettingdefinition-resource-type"></a>Тип ресурса Девицеманажементсеттингдефинитион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

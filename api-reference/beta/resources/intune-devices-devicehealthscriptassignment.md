@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицехеалсскриптассигнмент
 description: Содержит свойства, используемые для назначения скрипта управления устройствами группе.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cb041ab1c1cd5d416d3e7acb8a91cc1e488b65a3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ef7a088f85646d699958b5ebbcbc996b3f0b3d57
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528628"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42784960"
 ---
 # <a name="devicehealthscriptassignment-resource-type"></a>Тип ресурса Девицехеалсскриптассигнмент
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

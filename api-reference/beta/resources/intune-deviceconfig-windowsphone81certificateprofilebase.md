@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса windowsPhone81CertificateProfileBase
 description: Базовый профиль сертификата Windows Phone 8.1 +.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2af5d7697f9c4917985befa6663dc9f757e75f99
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1fd911098deae8a49b263a25e27516b83e4eca0a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525448"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786322"
 ---
 # <a name="windowsphone81certificateprofilebase-resource-type"></a>Тип ресурса windowsPhone81CertificateProfileBase
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

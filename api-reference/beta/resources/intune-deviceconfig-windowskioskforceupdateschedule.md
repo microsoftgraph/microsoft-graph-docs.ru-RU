@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Виндовскиоскфорцеупдатесчедуле
 description: Расписание принудительного обновления Windows 10 для устройств киоска.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d08a5e54aca83a71b094dbcd17095e421850b5ab
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2c1b9f1b82bc5edcbe1bdc7d1521ec669de5f6af
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525497"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786398"
 ---
 # <a name="windowskioskforceupdateschedule-resource-type"></a>Тип ресурса Виндовскиоскфорцеупдатесчедуле
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

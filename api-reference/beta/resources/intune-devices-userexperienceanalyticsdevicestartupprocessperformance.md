@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Усерекспериенцеаналитиксдевицестартуппроцессперформанце
 description: Производительность процесса запуска устройства Analytics.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5866e7f948ed53541a0ca32e2f215ba3fbb6343d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 06c60401702f942337e35632fdfe0b310cee4ee7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528475"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783811"
 ---
 # <a name="userexperienceanalyticsdevicestartupprocessperformance-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксдевицестартуппроцессперформанце
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

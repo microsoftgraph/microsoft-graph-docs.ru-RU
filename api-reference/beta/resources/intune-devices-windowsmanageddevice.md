@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Виндовсманажеддевице
 description: Устройства Windows, которые управляются или предварительно зарегистрированы в Intune
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cd8602f43245f0a7270b4538fd680d0d11552ef2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 170579d94b5c28e2c77c404d18a408322f8d8c4f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528368"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783622"
 ---
 # <a name="windowsmanageddevice-resource-type"></a>Тип ресурса Виндовсманажеддевице
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -299,7 +297,8 @@ ms.locfileid: "42528368"
   },
   "configurationManagerClientInformation": {
     "@odata.type": "microsoft.graph.configurationManagerClientInformation",
-    "clientIdentifier": "String"
+    "clientIdentifier": "String",
+    "isBlocked": true
   },
   "ethernetMacAddress": "String",
   "physicalMemoryInBytes": 1024,

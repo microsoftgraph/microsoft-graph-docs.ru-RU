@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицеманажементконстраинт
 description: Базовая сущность для ограничения
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b2638be5d762616bd8f5454362d8be6119e705ee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f52150e249899276db26bbe52a8594bd75af0b10
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528861"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785472"
 ---
 # <a name="devicemanagementconstraint-resource-type"></a>Тип ресурса Девицеманажементконстраинт
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Манажементкондитионекспрессионмодел
 description: Модель выражения условия управления — это представление условия управления в виде модели.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 120e0b76823ab1d46a38b74d99b09ce0a6a0a6e0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f6bdd75b0d37e41b4e4363869ea4dd6305836dce
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528181"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783237"
 ---
 # <a name="managementconditionexpressionmodel-resource-type"></a>Тип ресурса Манажементкондитионекспрессионмодел
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

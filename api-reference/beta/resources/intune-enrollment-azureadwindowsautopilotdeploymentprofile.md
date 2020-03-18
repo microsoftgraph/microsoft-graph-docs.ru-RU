@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Азуреадвиндовсаутопилотдеплойментпрофиле
 description: Профиль развертывания Windows для автопилота
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9ab8263eabddcce7e1d46779634e2d6e17293c06
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c3eb9a30ad393512f2aad3a9bcd68702b207a378
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524775"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783559"
 ---
 # <a name="azureadwindowsautopilotdeploymentprofile-resource-type"></a>Тип ресурса Азуреадвиндовсаутопилотдеплойментпрофиле
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Граупполиципресентатиончеккбокс
 description: Представляет элемент checkBox ADMX и логический элемент ADMX.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d501757d51bde7204ff3afbd929c0bfec2353e74
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 51318c184aeb481946f30a71eedac50bb069df06
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524443"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42782990"
 ---
 # <a name="grouppolicypresentationcheckbox-resource-type"></a>Тип ресурса Граупполиципресентатиончеккбокс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

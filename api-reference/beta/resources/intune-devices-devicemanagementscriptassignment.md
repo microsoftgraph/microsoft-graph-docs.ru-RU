@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицеманажементскриптассигнмент
 description: Содержит свойства, используемые для назначения скрипта управления устройствами группе.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 53b60befc6ad613d89b3d62cd851c42a24dd863a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1eb5092de59dbe9b6f83916a082aaa5e2a9879bc
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525063"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42784918"
 ---
 # <a name="devicemanagementscriptassignment-resource-type"></a>Тип ресурса Девицеманажементскриптассигнмент
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

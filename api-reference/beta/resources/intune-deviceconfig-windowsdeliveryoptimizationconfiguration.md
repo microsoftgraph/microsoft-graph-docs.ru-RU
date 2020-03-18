@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Виндовсделиверйоптимизатионконфигуратион
 description: Конфигурация оптимизации доставки Windows
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 36334403ecbbb9d2117f10a5ae2cc167d275b87b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f8b2d45ef607bdc2ef90f8224452347bce7bfa73
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529105"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786525"
 ---
 # <a name="windowsdeliveryoptimizationconfiguration-resource-type"></a>Тип ресурса Виндовсделиверйоптимизатионконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Adminconsent.
 description: Сведения о согласия администратора.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2d9b6e3ce006c78d2f83406fe9fe7e4092089339
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0f0f60f39c676fb8c6aca5144b2aa3b561b7cbaf
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525189"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785177"
 ---
 # <a name="adminconsent-resource-type"></a>Тип ресурса Adminconsent.
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

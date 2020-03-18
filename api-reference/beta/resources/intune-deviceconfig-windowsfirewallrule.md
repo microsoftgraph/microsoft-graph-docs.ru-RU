@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Виндовсфиреваллруле
 description: Правило, контролирующее трафик через брандмауэр Windows.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b0576c68ad1db2153d085349037db3beaafe8237
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2e34621106d4ce73763ffd5bab15cb1aaeb70366
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525560"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786504"
 ---
 # <a name="windowsfirewallrule-resource-type"></a>Тип ресурса Виндовсфиреваллруле
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

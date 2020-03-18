@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Осверсионкаунт
 description: Количество устройств с вредоносной программой для каждой версии ОС
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d4a75ac62e0744b621300fc5474cfefe0823cab8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4654f49d6d58d07dbb349edf38d4336da82a4aeb
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524958"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783923"
 ---
 # <a name="osversioncount-resource-type"></a>Тип ресурса Осверсионкаунт
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

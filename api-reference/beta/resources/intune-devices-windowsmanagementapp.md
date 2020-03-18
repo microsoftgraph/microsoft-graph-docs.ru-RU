@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса windowsManagementApp
 description: Сущность приложения управления Windows.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 90d9dab5977d3748fb4b69bca77f312e6f36a797
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4f4dc0e11da5a669d42b13fc3ff81945726c18c9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524804"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783615"
 ---
 # <a name="windowsmanagementapp-resource-type"></a>Тип ресурса windowsManagementApp
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

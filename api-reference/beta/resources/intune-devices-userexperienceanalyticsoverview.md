@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Усерекспериенцеаналитиксовервиев
 description: В объекте обзор анализа взаимодействия с пользователем содержатся общие показатели и оценки всех показателей всех категорий.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ad7d65e041f8d62e5a8de8aaa9d2f9963b8066b0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 306c6c9e2ca1903c2bd16012dba3b78e1c906cd6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528453"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783769"
 ---
 # <a name="userexperienceanalyticsoverview-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксовервиев
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Унариманажементкондитионекспрессионоператортипе
 description: Поддерживаемые операторы для выражений унарного условия управления
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: df6660d63ad2c1f596a402126ebe1498cfd60aa6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b8983ed82dbe525088a4e5ee234bbc8c9a9829c5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524499"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783188"
 ---
 # <a name="unarymanagementconditionexpressionoperatortype-enum-type"></a>тип перечисления Унариманажементкондитионекспрессионоператортипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

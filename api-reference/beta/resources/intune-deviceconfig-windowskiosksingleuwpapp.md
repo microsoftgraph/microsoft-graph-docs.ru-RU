@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Виндовскиосксинглеувпапп
 description: Класс, используемый для определения сведений о приложении UWP для конфигурации киоска
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 05042fe7d0285c593dfd325aa9b186808e85bc2f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1ae650af23985c26b00f99513ecfa4b3f691e14b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529023"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786357"
 ---
 # <a name="windowskiosksingleuwpapp-resource-type"></a>Тип ресурса Виндовскиосксинглеувпапп
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -30,7 +28,7 @@ ms.locfileid: "42529023"
 |:---|:---|:---|
 |увпапп|[windowsKioskUWPApp](../resources/intune-deviceconfig-windowskioskuwpapp.md);|Это единственный идентификатор пользовательской модели приложения (AUMID), который будет доступен для запуска в режиме киоска|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

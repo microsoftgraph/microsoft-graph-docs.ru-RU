@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Граупполиципресентатионтекстбокс
 description: Представляет элемент textBox ADMX и элемент текста ADMX.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2342dea625d4d707c9f877e5c75c75025b450c18
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e5fb77bf740f7b5dc0e1c622d19e9252149ecadc
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528047"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42782927"
 ---
 # <a name="grouppolicypresentationtextbox-resource-type"></a>Тип ресурса Граупполиципресентатионтекстбокс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

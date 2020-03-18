@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицеманажементабстракткомплекссеттингинстанце
 description: Экземпляр параметра, представляющий сложное значение для абстрактного параметра
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ca1fe7a7440545cdc97cc08b5a2b2b76a0ec9d59
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9b9895cd74bb0807adcf2b8f1a86713e45097b22
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528883"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786097"
 ---
 # <a name="devicemanagementabstractcomplexsettinginstance-resource-type"></a>Тип ресурса Девицеманажементабстракткомплекссеттингинстанце
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

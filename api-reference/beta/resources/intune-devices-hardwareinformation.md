@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Hardwareinformation.
 description: Сведения об оборудовании для данного устройства.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 40c3c122fe5aae65b4ed34d5178c67160a7fbe0a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 40edcecb7c581722b7c423e4d76f181689a6020d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525014"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42784035"
 ---
 # <a name="hardwareinformation-resource-type"></a>Тип ресурса Hardwareinformation.
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

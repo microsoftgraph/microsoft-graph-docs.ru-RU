@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Граупполицисеттингмаппинг
 description: Параметр групповой политики для сопоставления MDM/Intune.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d6d513f16debcec4c636101591e966eef58cd260
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 83c3f827bcd7ed9bf5a0fa7fcf863c1d585e4342
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528138"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783160"
 ---
 # <a name="grouppolicysettingmapping-resource-type"></a>Тип ресурса Граупполицисеттингмаппинг
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -53,6 +51,7 @@ ms.locfileid: "42528138"
 |mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|Указывает, поддерживается ли параметр в MDM. Возможные значения: `unknown`, `supported`, `unsupported`, `deprecated`.|
 |сеттингскопе|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|Область применения параметра. Возможные значения: `unknown`, `device`, `user`.|
 |интунесеттингурилист|Коллекция String|Список URI параметров Intune, которые сопоставлены параметру групповой политики|
+|интунесеттингдефинитионид|String|Идентификатор определения параметра Intune|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -90,7 +89,8 @@ ms.locfileid: "42528138"
   "settingScope": "String",
   "intuneSettingUriList": [
     "String"
-  ]
+  ],
+  "intuneSettingDefinitionId": "String"
 }
 ```
 

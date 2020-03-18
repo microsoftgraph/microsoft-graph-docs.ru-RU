@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Виндовсфиреваллрулетраффикдиректионтипе
 description: Направления трафика правила брандмауэра.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0eaa7f90fd593c463557f81e97b5a9d72da5cb9f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 610c4dba681eaebd68131bbaa9d3ca3681127a76
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529076"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786483"
 ---
 # <a name="windowsfirewallruletrafficdirectiontype-enum-type"></a>тип перечисления Виндовсфиреваллрулетраффикдиректионтипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42529076"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
-|вышли|1 |Правило применяется к исходящему трафику.|
-|возврата|2 |Правило применяется к входящему трафику.|
+|вышли|1,1|Правило применяется к исходящему трафику.|
+|возврата|2|Правило применяется к входящему трафику.|
 
 
 

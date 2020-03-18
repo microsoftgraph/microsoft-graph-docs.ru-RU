@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса managedAppPolicy
 description: Ресурс ManagedAppPolicy представляет базовый тип политик для определенных платформ.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e96da6ab943e22b7e779f969abec3c87201df750
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5552fdb9882941c106d43aa29c80c0d4813c66c1
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524324"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42781679"
 ---
 # <a name="managedapppolicy-resource-type"></a>Тип ресурса managedAppPolicy
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

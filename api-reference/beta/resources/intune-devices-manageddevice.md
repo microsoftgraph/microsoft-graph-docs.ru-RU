@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса managedDevice
 description: Устройства, которые управляются или предварительно регистрируются с помощью Intune
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 79c3fdc651a4d65cf1ed9c4a4c90259642fd87a9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 981a02c9ce52467a2cd48ebf8ca780ce80791a02
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524986"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783979"
 ---
 # <a name="manageddevice-resource-type"></a>Тип ресурса managedDevice
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -321,7 +319,8 @@ ms.locfileid: "42524986"
   },
   "configurationManagerClientInformation": {
     "@odata.type": "microsoft.graph.configurationManagerClientInformation",
-    "clientIdentifier": "String"
+    "clientIdentifier": "String",
+    "isBlocked": true
   },
   "ethernetMacAddress": "String",
   "physicalMemoryInBytes": 1024,

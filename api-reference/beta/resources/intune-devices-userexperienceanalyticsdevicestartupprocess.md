@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Усерекспериенцеаналитиксдевицестартуппроцесс
 description: Сведения о процессе запуска устройства Analytics User Experience.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6fba944e078d5572d3067c90004e8c3e68499fa9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 71f65179d5a8dc4334362a3aefe2704650afc60b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524895"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783818"
 ---
 # <a name="userexperienceanalyticsdevicestartupprocess-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксдевицестартуппроцесс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

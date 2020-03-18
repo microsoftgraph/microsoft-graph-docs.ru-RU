@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса windowsPhone81CustomConfiguration
 description: В этой статье описаны объявляемые методы, свойства и связи, которые предоставляются ресурсом windowsPhone81CustomConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1976da7ccf0d9a913a01c707614900812f41243d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f3d743ced4fa2b7a50b17549a70e5661192302c0
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525441"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786308"
 ---
 # <a name="windowsphone81customconfiguration-resource-type"></a>Тип ресурса windowsPhone81CustomConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

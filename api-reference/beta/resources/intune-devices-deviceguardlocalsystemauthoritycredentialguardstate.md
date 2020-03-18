@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Девицегуардлокалсистемаусоритикредентиалгуардстате
 description: Пока не задокументировано.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7564e845fb38416c32949f4304010d483cc912e4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 14c6841d3683bd9b101cfb89d1fb9cc92bd027b2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525105"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42784995"
 ---
 # <a name="deviceguardlocalsystemauthoritycredentialguardstate-enum-type"></a>тип перечисления Девицегуардлокалсистемаусоритикредентиалгуардстате
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42525105"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |запускается|нуль|Работает|
-|ребутрекуиред|1 |Требуется перезагрузка|
-|нотлиценсед|2 |Не лицензировано для Credential Guard|
-|notConfigured|3 |Не настроено|
+|ребутрекуиред|1,1|Требуется перезагрузка|
+|нотлиценсед|2|Не лицензировано для Credential Guard|
+|notConfigured|4|Не настроено|
 |виртуализатионбаседсекуритинотруннинг|4 |Безопасность на основе виртуализации не запущена|
 
 

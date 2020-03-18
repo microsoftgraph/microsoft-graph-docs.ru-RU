@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Усерекспериенцеаналитикшеалсстате
 description: Пока не задокументировано.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 74001c5d7e3e4dd482c9afae4261428e184a5ae2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e12867ece70127f42fdd7f68d5c2f5f6eaae4718
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524888"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783804"
 ---
 # <a name="userexperienceanalyticshealthstate-enum-type"></a>тип перечисления Усерекспериенцеаналитикшеалсстате
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42524888"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Пока не задокументировано.|
-|инсуффиЦиентдата|1 |Пока не задокументировано.|
-|нидсаттентион|2 |Пока не задокументировано.|
-|митинггоалс|3 |Пока не задокументировано.|
+|инсуффиЦиентдата|1,1|Пока не задокументировано.|
+|нидсаттентион|2|Пока не задокументировано.|
+|митинггоалс|4|Пока не задокументировано.|
 
 
 

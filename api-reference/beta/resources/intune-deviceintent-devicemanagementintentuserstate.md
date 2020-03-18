@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицеманажементинтентусерстате
 description: Объект, представляющий состояние пользователя для намерения
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 57466ea2c673c46d4ac944391992a558801293d4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2c2380df4d4c81bcd19ca2877a3151977b0d833c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525287"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785395"
 ---
 # <a name="devicemanagementintentuserstate-resource-type"></a>Тип ресурса Девицеманажементинтентусерстате
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

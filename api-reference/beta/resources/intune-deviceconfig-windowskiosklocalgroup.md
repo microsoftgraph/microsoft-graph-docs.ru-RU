@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Виндовскиосклокалграуп
 description: Класс, используемый для идентификации локальной группы для конфигурации киоска
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 52a7295a6a0c0d157ac8200c8de367cf67103bb6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8afbba5f158f7766255bb1252c06b6ed1c9024d6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525490"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786385"
 ---
 # <a name="windowskiosklocalgroup-resource-type"></a>Тип ресурса Виндовскиосклокалграуп
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицеманажементсеттингкомпарисон
 description: Объект, представляющий результат сравнения параметров
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6eebd6da0667960fc4319c8c073ad221ddc694a7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5a91dc3ce4cb7e8730f346800d53740db78e5526
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525266"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785353"
 ---
 # <a name="devicemanagementsettingcomparison-resource-type"></a>Тип ресурса Девицеманажементсеттингкомпарисон
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

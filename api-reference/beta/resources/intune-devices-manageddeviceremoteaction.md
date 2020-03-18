@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Манажеддевицеремотеактион
 description: Пока не задокументировано.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 77e7b0b9c10f80ce7e447295d73ebc6e52ed6de2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: eafb9c017516620186b3ad10a44c19ad0ebf2ecf
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524965"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783937"
 ---
 # <a name="manageddeviceremoteaction-enum-type"></a>тип перечисления Манажеддевицеремотеактион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42524965"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |снять|нуль|Пока не задокументировано.|
-|delete|1 |Пока не задокументировано.|
-|fullScan|2 |Пока не задокументировано.|
-|quickScan|3 |Пока не задокументировано.|
+|delete|1,1|Пока не задокументировано.|
+|fullScan|2|Пока не задокументировано.|
+|quickScan|4|Пока не задокументировано.|
 |сигнатуреупдате|4 |Пока не задокументировано.|
 |Очистка|5 |Пока не задокументировано.|
 |кустомтекстнотификатион|6 |Пока не задокументировано.|

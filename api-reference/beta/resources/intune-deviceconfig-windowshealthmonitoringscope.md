@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Виндовшеалсмониторингскопе
 description: Область мониторинга работоспособности устройств
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: be45d71e3490a2680d7c4d38541488094a2b09c9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0ba94d9c583840a98ab31da06622b793a94aa1ee
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529064"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786469"
 ---
 # <a name="windowshealthmonitoringscope-enum-type"></a>тип перечисления Виндовшеалсмониторингскопе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42529064"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |undefined|нуль|Undefined|
-|healthMonitoring|1 |Основные события для мониторинга работоспособности устройств Windows|
-|бутперформанце|2 |События производительности загрузки|
+|healthMonitoring|1,1|Основные события для мониторинга работоспособности устройств Windows|
+|бутперформанце|2|События производительности загрузки|
 |усерекспериенцеаналитикс|4 |События аналитики взаимодействия с пользователем|
 
 

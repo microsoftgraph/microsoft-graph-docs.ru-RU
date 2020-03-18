@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Секуритибаселинетемплате
 description: Базовый шаблон безопасности учетной записи
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c877636bb36f3b18762e13e754b86745ecb87e8e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 30f6f2078611b86bb3047859f0bf7808bf7ce908
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528724"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785184"
 ---
 # <a name="securitybaselinetemplate-resource-type"></a>Тип ресурса Секуритибаселинетемплате
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -50,7 +48,7 @@ ms.locfileid: "42528724"
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|settings|Коллекция [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|Коллекция всех параметров, унаследованных этим шаблоном от [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md)|
+|параметры|Коллекция [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|Коллекция всех параметров, унаследованных этим шаблоном от [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md)|
 |categories|Коллекция [девицеманажементтемплатесеттингкатегори](../resources/intune-deviceintent-devicemanagementtemplatesettingcategory.md)|Коллекция параметров категорий в шаблоне, унаследованных от [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md)|
 |мигратаблето|Коллекция [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md)|Коллекция шаблонов, которые можно перенести в шаблон, наследуемый от [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md)|
 |девицестатесуммари|[securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)|Сводка по состоянию базового устройства безопасности|

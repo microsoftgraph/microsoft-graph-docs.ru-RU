@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Девицеманажементтемплатетипе
 description: Тип шаблона
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 595dd535b46657872f76c7a0571d5005cc65db38
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d75494230ae69e06511e7d6eb818e4592e1496b5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528754"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785234"
 ---
 # <a name="devicemanagementtemplatetype-enum-type"></a>тип перечисления Девицеманажементтемплатетипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42528754"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |секуритибаселине|нуль|Шаблон базового плана безопасности|
-|спеЦиализеддевицес|1 |Шаблон специализированных устройств|
-|адванцедсреатпротектионсекуритибаселине|2 |Основной шаблон безопасности Advanced Threat protection|
-|deviceConfiguration|3 |Шаблон конфигурации устройства|
+|спеЦиализеддевицес|1,1|Шаблон специализированных устройств|
+|адванцедсреатпротектионсекуритибаселине|2|Основной шаблон безопасности Advanced Threat protection|
+|deviceConfiguration|4|Шаблон конфигурации устройства|
 |собственный|4 |Настраиваемый шаблон, определенный администратором|
 |секурититемплате|5 |Шаблоны с определенными параметрами безопасности|
 |микрософтеджесекуритибаселине|6 |Базовый шаблон безопасности Microsoft Edge|

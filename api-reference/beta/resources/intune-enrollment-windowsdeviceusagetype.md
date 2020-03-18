@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Виндовсдевицеусажетипе
 description: Пока не задокументировано.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 83f2e7a0e2e0d414dd00ff6f17d43d96d7e498f4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4bf1300c1a786fabc36aacad1162d00185adf7c5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524562"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783349"
 ---
 # <a name="windowsdeviceusagetype-enum-type"></a>тип перечисления Виндовсдевицеусажетипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,7 +24,7 @@ ms.locfileid: "42524562"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |SingleUser.|нуль|Тип устройства "один пользователь"|
-|общие|1 |Тип общего устройства|
+|общие|1,1|Тип общего устройства|
 
 
 

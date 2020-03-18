@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса windowsInformationProtectionDesktopApp
 description: Защита данных классических приложений для Windows
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 87b1d6bc990057e498629148050bb2cd0aae58f4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 44aa52bfe2dbae82adfc98c49fbba5a1aae500bf
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527842"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42780789"
 ---
 # <a name="windowsinformationprotectiondesktopapp-resource-type"></a>Тип ресурса windowsInformationProtectionDesktopApp
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

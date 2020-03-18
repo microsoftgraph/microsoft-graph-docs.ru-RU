@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса iosManagedAppRegistration
 description: Представляет собой сведения о синхронизации управляемого приложения iOS для определенного пользователя. Ресурс ManagedAppRegistration представляет собой сведения об управляемом приложении, используемом членом организации.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ddebe5a982a2490a9e465a16f9de1ae2004e4350
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3312cf491865befce39941e6aaeca4e407d0d618
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524359"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42782379"
 ---
 # <a name="iosmanagedappregistration-resource-type"></a>Тип ресурса iosManagedAppRegistration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

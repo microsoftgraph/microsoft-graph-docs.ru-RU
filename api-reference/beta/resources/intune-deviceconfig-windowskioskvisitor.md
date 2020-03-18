@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Виндовскиосквиситор
 description: Класс, используемый для определения учетной записи киоска посетителя
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0d5951ed9c3a947b6db58d4af406a5d374984807
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 468bf057c1d312fe61abeca271b4fa5da5b18997
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525455"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786336"
 ---
 # <a name="windowskioskvisitor-resource-type"></a>Тип ресурса Виндовскиосквиситор
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

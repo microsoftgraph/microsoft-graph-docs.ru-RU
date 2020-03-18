@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Манажедаппремедиатионактион
 description: Действие, инициированное администратором, для применения в управляемом приложении.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 92fb38fa7b165359e3ed5e378da4e14b2f26095f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7c625ecde045860f49f06acff4513698fd82b474
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527882"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42781490"
 ---
 # <a name="managedappremediationaction-enum-type"></a>тип перечисления Манажедаппремедиатионактион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42527882"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |блок|нуль|приложение и соответствующие данные компании, которые необходимо заблокировать|
-|Очистка|1 |приложение и соответствующие данные компании для очистки|
-|пользователя|2 |приложение и соответствующий пользователь для предупреждения|
+|Очистка|1,1|приложение и соответствующие данные компании для очистки|
+|пользователя|2|приложение и соответствующий пользователь для предупреждения|
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Бинариманажементкондитионекспрессион
 description: Выражение условия управления, вычисляемое с помощью бинарной операции.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d0919ac70a5855900aef5f87ad5f63e35e28b60a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ff87c376bd88e49d8dc2c3d4657607e7bddcb503
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528197"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783279"
 ---
 # <a name="binarymanagementconditionexpression-resource-type"></a>Тип ресурса Бинариманажементкондитионекспрессион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

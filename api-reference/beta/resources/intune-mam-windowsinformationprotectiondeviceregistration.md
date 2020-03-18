@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Виндовсинформатионпротектиондевицерегистратион
 description: Представляет записи регистрации устройств для устройств Windows с поддержкой собственных устройств (BYOD).
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a5b8b6275ea81830c3f4ebac66e12bf290484f5a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0b7d30fad170fa03d96fbfb715d81dbdc028b776
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524260"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42780656"
 ---
 # <a name="windowsinformationprotectiondeviceregistration-resource-type"></a>Тип ресурса Виндовсинформатионпротектиондевицерегистратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

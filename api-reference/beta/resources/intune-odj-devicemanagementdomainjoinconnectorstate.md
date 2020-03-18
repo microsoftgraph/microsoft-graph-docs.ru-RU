@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Девицеманажементдомаинжоинконнекторстате
 description: Состояние запроса ОДЖ.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9cee18df0fe6ba3cc59d8d427aa472f8943e03d9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e8eff02a8ff4d47f920bad6506bcb9e3b37f0785
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527795"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42779886"
 ---
 # <a name="devicemanagementdomainjoinconnectorstate-enum-type"></a>тип перечисления Девицеманажементдомаинжоинконнекторстате
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42527795"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |ASP|нуль|Соединитель активно проверяет связь с Intune.|
-|error|1 |Нет сердца-червей от последнего часа до 1 часа.|
-|отсутств|2 |От соединителя за последние 5 дней нет сердца-червей.|
+|error|1,1|Нет сердца-червей от последнего часа до 1 часа.|
+|отсутств|2|От соединителя за последние 5 дней нет сердца-червей.|
 
 
 

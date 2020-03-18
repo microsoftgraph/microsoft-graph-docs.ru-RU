@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса windowsInformationProtectionProxiedDomainCollection
 description: Коллекция проксируемых доменов Windows Information Protection
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5a741f0da4a2219e04c7f3cde43bfb9e7ab9cb63
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 35c4f00965aa6878368e922a0c193484c90c6aed
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527818"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42780362"
 ---
 # <a name="windowsinformationprotectionproxieddomaincollection-resource-type"></a>Тип ресурса windowsInformationProtectionProxiedDomainCollection
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

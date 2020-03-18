@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Граупполицидефинитион
 description: Сущность описывает все сведения об одной групповой политике.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 038647f4e40036db89ecf61cdece531662658c46
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8e99b32687c0a93673cdbf8889b05e6423cc73c3
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528091"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783025"
 ---
 # <a name="grouppolicydefinition-resource-type"></a>Тип ресурса Граупполицидефинитион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -37,6 +35,7 @@ ms.locfileid: "42528091"
 |категорипас|String|Локализованный полный путь к категории для политики.|
 |суппортедон|String|Локализованная строка, используемая для указания версии операционной системы или приложения, на которые влияет политика.|
 |полицитипе|[граупполицитипе](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Возможные значения: `admxBacked`, `admxIngested`.|
+|граупполицикатегорид|GUID|Идентификатор категории родительской категории|
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
@@ -44,6 +43,7 @@ ms.locfileid: "42528091"
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |дефинитионфиле|[граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|Файл групповой политики, связанный с определением.|
+|category|[граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md)|Категория групповой политики, связанная с определением.|
 |материалы|Коллекция [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|Презентации групповой политики, связанные с определением.|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -63,6 +63,7 @@ ms.locfileid: "42528091"
   "categoryPath": "String",
   "supportedOn": "String",
   "policyType": "String",
+  "groupPolicyCategoryId": "Guid",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)"
 }

@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Манажедбровсертипе
 description: Тип управляемого браузера
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4d27f75c4528511a304426f609452caebb21564a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a712746b1f44cbf379c7c75561ab77d5f6fd1857
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524289"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42781363"
 ---
 # <a name="managedbrowsertype-enum-type"></a>тип перечисления Манажедбровсертипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,7 +24,7 @@ ms.locfileid: "42524289"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроено|
-|микрософтедже|1 |Microsoft Edge|
+|микрософтедже|1,1|Microsoft Edge|
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Виндовсстартменумодетипе
 description: Тип режимов отображения для меню "Пуск".
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d443236d44f6ca2119e6cab6511d88a783045b84
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fe206ef79848924cc752c3e2e8302392a487d2ab
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528957"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786216"
 ---
 # <a name="windowsstartmenumodetype-enum-type"></a>тип перечисления Виндовсстартменумодетипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42528957"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Определено пользователем. Значение по умолчанию.|
-|Перейти|1 |Полноэкранный режим.|
-|неполноэкранный режим|2 |Не полный экран.|
+|Перейти|1,1|Полноэкранный режим.|
+|неполноэкранный режим|2|Не полный экран.|
 
 
 

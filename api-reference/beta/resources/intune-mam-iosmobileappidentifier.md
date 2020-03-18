@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса iosMobileAppIdentifier
 description: Идентификатор приложения для iOS.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 00644356df293ff2171d51bd60c7c5f84748d753
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 10744d417738baf6f0d83a287a5e518fa6e55b60
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527968"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42782365"
 ---
 # <a name="iosmobileappidentifier-resource-type"></a>Тип ресурса iosMobileAppIdentifier
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

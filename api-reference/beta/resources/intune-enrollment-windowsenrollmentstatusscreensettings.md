@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Виндовсенроллментстатусскринсеттингс
 description: Настройка экрана состояния регистрации
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3758dd850a5c98ea2c0ddad4d261fc9a7388ac3c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d5e167652c57ad7380b7185865dd1437819dbe68
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528227"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783342"
 ---
 # <a name="windowsenrollmentstatusscreensettings-resource-type"></a>Тип ресурса Виндовсенроллментстатусскринсеттингс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

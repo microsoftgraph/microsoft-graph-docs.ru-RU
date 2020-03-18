@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса windowsProtectionState
 description: Объект состояния защиты устройства.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 151b2f5f573c825416ac4560b4374e7b289a56a5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2d42efcc04a060d9585c8d02d17d72449ae0a9c8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524790"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783601"
 ---
 # <a name="windowsprotectionstate-resource-type"></a>Тип ресурса windowsProtectionState
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

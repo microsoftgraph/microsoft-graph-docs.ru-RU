@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Json
 description: Представляет данные, возвращаемые в формате JSON.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7b1c0d75542fc57fd60f90b73473afba297e5855
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a3024777448a7ba2c72395c46fa173797e49487e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524352"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42782274"
 ---
 # <a name="json-resource-type"></a>Тип ресурса Json
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

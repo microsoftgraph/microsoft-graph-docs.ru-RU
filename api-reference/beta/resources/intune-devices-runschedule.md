@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Рунсчедуле
 description: Запустите расписание для повторяющегося сценария управления устройствами.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3efbaf31ac0bdf241848df9a81a7b3beaee0551f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0450c63472439d42dc317045659c7ae07a3aea3a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528510"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783867"
 ---
 # <a name="runschedule-resource-type"></a>Тип ресурса Рунсчедуле
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

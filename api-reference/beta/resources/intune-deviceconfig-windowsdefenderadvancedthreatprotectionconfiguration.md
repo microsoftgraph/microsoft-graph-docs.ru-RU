@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса windowsDefenderAdvancedThreatProtectionConfiguration
 description: Конфигурация Advanced Threat Protection в Защитника Windows.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: dfb9648befe5e4e52bb94e4df54d8e333b3fc98d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 52c4afcedf105a08ec710caad025f2353c85e259
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525567"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786539"
 ---
 # <a name="windowsdefenderadvancedthreatprotectionconfiguration-resource-type"></a>Тип ресурса windowsDefenderAdvancedThreatProtectionConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

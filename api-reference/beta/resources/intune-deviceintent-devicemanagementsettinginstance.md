@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицеманажементсеттингинстанце
 description: Базовый тип для экземпляра параметра
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8f52c90a7e03ceb2463be3589e60694251d002c6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e374faf132e5da0ee3e2213e61fcdcc3078b3300
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525245"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785318"
 ---
 # <a name="devicemanagementsettinginstance-resource-type"></a>Тип ресурса Девицеманажементсеттингинстанце
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицеманажементкомплекссеттингдефинитион
 description: Объект, представляющий определение для сложного параметра
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a2a5dbe6e145fe6165ae63ea714ef22797d0615e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b8c47458f767c44ef31e84c1bc8744ef2d9bae08
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528874"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785486"
 ---
 # <a name="devicemanagementcomplexsettingdefinition-resource-type"></a>Тип ресурса Девицеманажементкомплекссеттингдефинитион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса windows81TrustedRootCertificate
 description: Профиль доверенного сертификата конфигурации Windows 8,1
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 536f4ab8f7b47e949d2ed80c5f6803c4bbdb347c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 98693b8469a35ca6ed0d8fe99f785c5434e2ab21
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525595"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786581"
 ---
 # <a name="windows81trustedrootcertificate-resource-type"></a>Тип ресурса windows81TrustedRootCertificate
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

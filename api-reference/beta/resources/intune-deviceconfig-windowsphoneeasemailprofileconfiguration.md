@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Виндовсфониасемаилпрофилеконфигуратион
 description: Предоставляя конфигурации в этом профиле, вы можете указать в собственном почтовом клиенте Windows Phone возможность обмениваться данными с сервером Exchange и получать электронную почту, контакты, календарь и задачи. Кроме того, вы также можете указать, какой объем электронной почты необходимо синхронизировать, и как часто устройство должно синхронизироваться.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7c1f1823dc1d04a797e0a6a6fd0b339ec9f44503
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 337a0b274aec9aadd71683532959a3e12b7b0511
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525420"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786266"
 ---
 # <a name="windowsphoneeasemailprofileconfiguration-resource-type"></a>Тип ресурса Виндовсфониасемаилпрофилеконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

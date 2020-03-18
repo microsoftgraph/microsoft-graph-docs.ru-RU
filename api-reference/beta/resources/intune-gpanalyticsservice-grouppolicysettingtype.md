@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Граупполицисеттингтипе
 description: Тип параметра групповой политики.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 411b19f05c626dce8898a75139b34cdd44647860
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e14bf54c781e33fd6cef140f210d5ff4b2e3039f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528125"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783146"
 ---
 # <a name="grouppolicysettingtype-enum-type"></a>тип перечисления Граупполицисеттингтипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42528125"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Граупполицисеттингтипе Unknown|
-|policy|1 |Тип параметра политики|
-|финансового|2 |Тип параметра учетной записи|
-|секуритйоптионс|3 |Тип параметра Секуритйоптионс|
+|policy|1,1|Тип параметра политики|
+|финансового|2|Тип параметра учетной записи|
+|секуритйоптионс|4|Тип параметра Секуритйоптионс|
 |усерригхтсассигнмент|4 |Тип параметра Усерригхтсассигнмент|
 |аудитсеттинг|5 |Тип параметра Аудитсеттинг|
 |виндовсфиреваллсеттингс|6 |Тип параметра Виндовсфиреваллсеттингс|

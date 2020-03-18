@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Виндовсвифиентерприсиапконфигуратион
 description: Эта сущность предоставляет описания объявляемых методов, свойств и связей, предоставляемых CSP WiFi.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 188df057b42f32f951f02e3d996db5cb66c1ad3d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0d6996cbbbc6dfa36892f24ac95ad58b7ba7840b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525350"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786188"
 ---
 # <a name="windowswifienterpriseeapconfiguration-resource-type"></a>Тип ресурса Виндовсвифиентерприсиапконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

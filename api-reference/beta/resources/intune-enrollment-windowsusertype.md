@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Виндовсусертипе
 description: Пока не задокументировано.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6297f93578b0d202ce2b9be41e77b3edc721ee4d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4ed17a91b6baed1b7de87a9f035c858fdddfe69f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524555"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783335"
 ---
 # <a name="windowsusertype-enum-type"></a>тип перечисления Виндовсусертипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,7 +24,7 @@ ms.locfileid: "42524555"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |имени|нуль|Пока не задокументировано.|
-|Стандартный|1 |Пока не задокументировано.|
+|Стандартный|1,1|Пока не задокументировано.|
 
 
 

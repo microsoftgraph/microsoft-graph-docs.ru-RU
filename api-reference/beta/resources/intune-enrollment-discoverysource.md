@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Дисковерисаурце
 description: Пока не задокументировано.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f5d43d71900e719ba824f9e66d2edab709bf1eb7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a8125f21268fe29dd4e6c625b46caf5f9288508f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524747"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783503"
 ---
 # <a name="discoverysource-enum-type"></a>тип перечисления Дисковерисаурце
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,7 +24,7 @@ ms.locfileid: "42524747"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Дисковерисаурце неизвестен.|
-|админимпорт|2 |Устройство импортируется администратором.|
+|админимпорт|2|Устройство импортируется администратором.|
 |девицеенроллментпрограм|4 |Устройство добавляется программой регистрации устройств Apple (DEP).|
 
 

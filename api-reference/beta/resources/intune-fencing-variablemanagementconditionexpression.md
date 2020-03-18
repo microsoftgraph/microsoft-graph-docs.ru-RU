@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Вариаблеманажементкондитионекспрессион
 description: Оценивает состояние условия управления как логическое выражение.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 11c85ab4f2488c7cb27ae8564f49ab6a4faef585
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 363f19e2f8b6860ba0228cd6a29a07dd82bd8277
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524492"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783181"
 ---
 # <a name="variablemanagementconditionexpression-resource-type"></a>Тип ресурса Вариаблеманажементкондитионекспрессион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

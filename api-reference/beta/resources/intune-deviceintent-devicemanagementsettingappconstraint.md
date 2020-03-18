@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицеманажементсеттингаппконстраинт
 description: Ограничение, включающее параметр, содержит только доступные типы приложений.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7818493bb5767ce74d0f6f71cf5ffa05a775eded
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4b80fa581686692a47051405cc68f4d6d0694b95
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525280"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785381"
 ---
 # <a name="devicemanagementsettingappconstraint-resource-type"></a>Тип ресурса Девицеманажементсеттингаппконстраинт
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

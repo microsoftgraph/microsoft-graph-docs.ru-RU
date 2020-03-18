@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Депмакосенроллментпрофиле
 description: Ресурс Депмакосенроллментпрофиле представляет профиль регистрации программы регистрации устройств Apple (DEP), характерный для конфигурации macOS. Этот тип профиля должен быть назначен серийным номерам Apple DEP, прежде чем соответствующие устройства смогут регистрироваться с помощью функции DEP.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f734d62cf427796657bd6782925f28236a4174be
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 77c6dc412c8effa84caa0ed125a120a614b7247e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528316"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783524"
 ---
 # <a name="depmacosenrollmentprofile-resource-type"></a>Тип ресурса Депмакосенроллментпрофиле
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

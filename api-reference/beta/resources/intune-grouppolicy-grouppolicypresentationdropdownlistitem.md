@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Граупполиципресентатиондропдовнлиститем
 description: Пока не задокументировано.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a9034264764b40deace2777cb3dc691ed96e272d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7e86e60e47fdaa2b7bb7e7e5b74c2f89c23c11a4
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524429"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42782962"
 ---
 # <a name="grouppolicypresentationdropdownlistitem-resource-type"></a>Тип ресурса Граупполиципресентатиондропдовнлиститем
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

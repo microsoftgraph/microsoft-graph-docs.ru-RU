@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса windowsUpdateInstallScheduleType
 description: Пока не задокументировано.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f95be55cc23923806d8d8af85c1186e519e4de30
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1a3fabc33b386dfab47017f4d233ab82ff6ae7dd
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528943"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786181"
 ---
 # <a name="windowsupdateinstallscheduletype-resource-type"></a>Тип ресурса windowsUpdateInstallScheduleType
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

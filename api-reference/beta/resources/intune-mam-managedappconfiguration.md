@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса managedAppConfiguration
 description: Конфигурация, используемая для доставки набора пользовательских настроек (без изменений) в приложение тех пользователей, для которых задана конфигурация
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 48944007e33237e175822cfd2f5b076a5ddbe50e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f6dca605ff6c2e10cdf363660d9144c90ce43467
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524345"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42782232"
 ---
 # <a name="managedappconfiguration-resource-type"></a>Тип ресурса managedAppConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

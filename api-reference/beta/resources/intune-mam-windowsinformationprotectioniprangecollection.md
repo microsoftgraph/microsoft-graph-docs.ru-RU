@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса windowsInformationProtectionIPRangeCollection
 description: Коллекция диапазонов IP-адресов Windows Information Protection
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b894318bb0b56bb2e5fc86e47a677dd9709e1092
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1c277bf90b14fec8408b918d1bbef99ad4ca21fa
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524253"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42780572"
 ---
 # <a name="windowsinformationprotectioniprangecollection-resource-type"></a>Тип ресурса windowsInformationProtectionIPRangeCollection
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

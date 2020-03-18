@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса windowsInformationProtectionStoreApp
 description: Защита данных приложений для Windows из Microsoft Store
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 11a3c466fac209d65a6713ae7578e33fc375c62e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c389b9a8e529b549c537cba9c9f02b0f81879db6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527815"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42780334"
 ---
 # <a name="windowsinformationprotectionstoreapp-resource-type"></a>Тип ресурса windowsInformationProtectionStoreApp
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

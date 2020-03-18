@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Манажеддевицеарчитектуре
 description: Архитектура процессора
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: efbb507dc4efd9e94ca894ff53e48be0644fdf91
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 688dfdd800e80a76869d3adf9fd4f7154d49422f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528543"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783972"
 ---
 # <a name="manageddevicearchitecture-enum-type"></a>тип перечисления Манажеддевицеарчитектуре
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42528543"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Неизвестная архитектура|
-|платформы|1 |Платформы|
-|x|2 |X|
-|руки|3 |РУКИ|
+|платформы|1,1|Платформы|
+|x|2|X|
+|руки|4|РУКИ|
 |arM64|4 |ARM64|
 
 

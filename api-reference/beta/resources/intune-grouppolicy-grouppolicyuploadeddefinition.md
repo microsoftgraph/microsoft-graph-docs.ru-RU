@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Граупполициуплоадеддефинитион
 description: Сущность описывает все сведения об одной групповой политике.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8c3eda09caf3bcc031697e2b3d410c1933eb6e63
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2e345d43db0048afa395793faa6edfa6cfface1a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524380"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42782778"
 ---
 # <a name="grouppolicyuploadeddefinition-resource-type"></a>Тип ресурса Граупполициуплоадеддефинитион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -43,6 +41,7 @@ ms.locfileid: "42524380"
 |категорипас|String|Локализованный полный путь к категории для политики. Наследуется от [граупполицидефинитион](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |суппортедон|String|Локализованная строка, используемая для указания версии операционной системы или приложения, на которые влияет политика. Наследуется от [граупполицидефинитион](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |полицитипе|[граупполицитипе](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Наследуется от [граупполицидефинитион](../resources/intune-grouppolicy-grouppolicydefinition.md). Возможные значения: `admxBacked`, `admxIngested`.|
+|граупполицикатегорид|GUID|Идентификатор категории родительской категории, унаследованной от [граупполицидефинитион](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |id|String|Ключ объекта. Наследуется от [граупполицидефинитион](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [граупполицидефинитион](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 
@@ -50,6 +49,7 @@ ms.locfileid: "42524380"
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |дефинитионфиле|[граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|Файл групповой политики, связанный с определением. Наследуется от [граупполицидефинитион](../resources/intune-grouppolicy-grouppolicydefinition.md)|
+|category|[граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md)|Категория групповой политики, связанная с определением. Наследуется от [граупполицидефинитион](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 |материалы|Коллекция [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|Презентации групповой политики, связанные с определением. Наследуется от [граупполицидефинитион](../resources/intune-grouppolicy-grouppolicydefinition.md)|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -69,6 +69,7 @@ ms.locfileid: "42524380"
   "categoryPath": "String",
   "supportedOn": "String",
   "policyType": "String",
+  "groupPolicyCategoryId": "Guid",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)"
 }

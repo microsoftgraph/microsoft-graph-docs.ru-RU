@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицеманажементскриптрунсуммари
 description: Содержит свойства сводки по запуску сценария управления устройствами.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d041023fe8e3ab3e52f3e5c3383bf66a7eecf6ff
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ce974f3d5e024a9559f454e8837fd04183e4de9d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525049"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42784897"
 ---
 # <a name="devicemanagementscriptrunsummary-resource-type"></a>Тип ресурса Девицеманажементскриптрунсуммари
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

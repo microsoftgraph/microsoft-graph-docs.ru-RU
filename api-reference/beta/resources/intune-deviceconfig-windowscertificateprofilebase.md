@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Windowscertificateprofilebase)
 description: Конфигурация устройства
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 366bccbd6649044c747716463ffce43040fc786e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9c77bf8cc0203c46b8635dec20772f67ca8640b0
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529116"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786546"
 ---
 # <a name="windowscertificateprofilebase-resource-type"></a>Тип ресурса Windowscertificateprofilebase)
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

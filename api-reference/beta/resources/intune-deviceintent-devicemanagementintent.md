@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицеманажементинтент
 description: Сущность, которая представляет цель применения параметров к устройству
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7b83db92a410239df3101d56a9f3dabe3850349d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8ab1b6cd07bfa922f82cbd11e4f03aa2ba0a3515
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528851"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785437"
 ---
 # <a name="devicemanagementintent-resource-type"></a>Тип ресурса Девицеманажементинтент
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -49,7 +47,7 @@ ms.locfileid: "42528851"
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|settings|Коллекция [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|Набор всех параметров, которые необходимо применить|
+|параметры|Коллекция [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|Набор всех параметров, которые необходимо применить|
 |categories|Коллекция [девицеманажементинтентсеттингкатегори](../resources/intune-deviceintent-devicemanagementintentsettingcategory.md)|Коллекция настроек категорий|
 |assignments|Коллекция [девицеманажементинтентассигнмент](../resources/intune-deviceintent-devicemanagementintentassignment.md)|Коллекция назначений|
 |deviceSettingStateSummaries|Коллекция [девицеманажементинтентдевицесеттингстатесуммари](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md)|Набор параметров и их состояний, а также количество устройств, которые относятся к соответствующему состоянию для всех параметров в цели|

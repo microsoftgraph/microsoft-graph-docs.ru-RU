@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса managedDeviceOverview
 description: Сводные данные для управляемых устройств
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3ab3f0712b2472757f8f1b36e179e0058d88df0b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7bff057f872a8b315e0335f5d68633fce6d04e71
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524972"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783951"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>Тип ресурса managedDeviceOverview
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

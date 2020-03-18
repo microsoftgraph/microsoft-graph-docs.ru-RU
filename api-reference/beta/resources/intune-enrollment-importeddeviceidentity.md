@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Импортеддевицеидентити
 description: Ресурс Импортеддевицеидентити представляет уникальное аппаратное удостоверение устройства, которое было предварительно подготовлено для настройки предварительной регистрации.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a3ff0c7a18c97c868f5f3a19132b5e844f313994
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 093cc5057ecdb6a34398567378677e5a41aaa18e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524733"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783475"
 ---
 # <a name="importeddeviceidentity-resource-type"></a>Тип ресурса Импортеддевицеидентити
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

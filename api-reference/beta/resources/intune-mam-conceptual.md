@@ -4,16 +4,16 @@ description: Перечисляет API Microsoft Graph для конечных 
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: ad33549186663bbbc25d55c2cc0b4add4c89ad20
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c8ac4358b9f3011422d2f65d56f3f76f67b2f25b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527978"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42782456"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -78,5 +78,3 @@ ms.locfileid: "42527978"
 - [Коллекция ресурсов Windows Information Protection](intune-mam-windowsinformationprotectionresourcecollection.md)
 - [Приложение из магазина Windows Information Protection](intune-mam-windowsinformationprotectionstoreapp.md)
 - [Действие wipe для Windows Information Protection](intune-mam-windowsinformationprotectionwipeaction.md)
-
-

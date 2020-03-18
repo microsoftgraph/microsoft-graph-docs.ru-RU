@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса deviceGeoLocation
 description: Расположение устройства
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7417f5020fd7496a2daecde3ffbeb6e7391eaf08
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3c3c8251987dee0aadafdb88eebd9e29afbb5f76
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528645"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785002"
 ---
 # <a name="devicegeolocation-resource-type"></a>Тип ресурса deviceGeoLocation
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

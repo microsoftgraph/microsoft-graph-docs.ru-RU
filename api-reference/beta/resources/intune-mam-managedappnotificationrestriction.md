@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Манажедаппнотификатионрестриктион
 description: Ограничение уведомления управляемого приложения
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 941fcac27234996e78c67a572fe0a2bbe66f10f0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e89f9b17ae7a94a9d7447d802821047cdfc09f28
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527912"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42781826"
 ---
 # <a name="managedappnotificationrestriction-enum-type"></a>тип перечисления Манажедаппнотификатионрестриктион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42527912"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |разрешить|нуль|Поделитесь всеми уведомлениями.|
-|блоккорганизатионалдата|1 |Не предоставляйте общий доступ к данным Оргнизатионал в уведомлениях.|
-|блок|2 |Не предоставляйте уведомления.|
+|блоккорганизатионалдата|1,1|Не предоставляйте общий доступ к данным Оргнизатионал в уведомлениях.|
+|блок|2|Не предоставляйте уведомления.|
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Итунеспаирингмоде
 description: Пока не задокументировано.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 25517e4483a90a59753e58b866fdbf6fd11ebd1b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c5d0700ab22ac0cf88ba3231494f0048dd2987a5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528269"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783426"
 ---
 # <a name="itunespairingmode-enum-type"></a>тип перечисления Итунеспаирингмоде
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42528269"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Использование|нуль|Связывание запрещено|
-|разрешить|1 |Связывание разрешено|
-|рекуиресцертификате|2 |Сертификат, необходимый для связывания с iTunes|
+|разрешить|1,1|Связывание разрешено|
+|рекуиресцертификате|2|Сертификат, необходимый для связывания с iTunes|
 
 
 

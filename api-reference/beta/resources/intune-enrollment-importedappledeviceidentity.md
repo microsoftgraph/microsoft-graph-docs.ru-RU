@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Импортедаппледевицеидентити
 description: Ресурс Импортедаппледевицеидентити представляет импортированное удостоверение устройства Apple.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ea45d329e28fb87741c4b0e31746f9591f4afec8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f1a96736679b2d71632f577975d3527abf2b10ac
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524740"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783489"
 ---
 # <a name="importedappledeviceidentity-resource-type"></a>Тип ресурса Импортедаппледевицеидентити
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

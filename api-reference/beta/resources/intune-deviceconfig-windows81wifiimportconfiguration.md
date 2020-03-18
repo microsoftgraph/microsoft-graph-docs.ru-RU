@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса windows81WifiImportConfiguration
 description: Windows 8.1 + Конфигурация импорта Wi/Fi. Настраивая этот профиль, вы можете указать устройствам Windows 8,1 (и более поздних версий) подключаться к желаемой конечной точке Wi-Fi. Подключите устройство Windows 8,1 к нужной сети Wi-Fi и извлеките XML-код с этого устройства, чтобы потом внедрить его в этот профиль Wi-Fi.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bd5bb0868b973b2d3fa001bf037b53538713624b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e6e363204281086fbfa8ca2f628fcbd6e696b2a7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529121"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786560"
 ---
 # <a name="windows81wifiimportconfiguration-resource-type"></a>Тип ресурса windows81WifiImportConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

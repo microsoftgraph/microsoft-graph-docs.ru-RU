@@ -4,16 +4,16 @@ description: Перечисляет API Microsoft Graph для конечных 
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 596e4deb8743cbb43f3d44c94165499408ee6b9e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fb0dd9d6b03330cc0f585fb36dfff64a2dfe1a34
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528331"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783552"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Регистрация корпоративных устройств с помощью Intune
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -60,4 +60,3 @@ ms.locfileid: "42528331"
 - [Тип использования устройства Windows](intune-enrollment-windowsdeviceusagetype.md)
 - [Параметры экрана состояния регистрации Windows](intune-enrollment-windowsenrollmentstatusscreensettings.md)
 - [Тип пользователя Windows](intune-enrollment-windowsusertype.md)
-

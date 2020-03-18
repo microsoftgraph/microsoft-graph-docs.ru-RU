@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицеманажементколлектионсеттингдефинитион
 description: Сущность, представляющая параметр определения коллекции
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b0bdecf88c951782b9efc98de5313e1f17893f85
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 65ea31bdf9742f034bd75fd670bc48f433eb82e0
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525343"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786083"
 ---
 # <a name="devicemanagementcollectionsettingdefinition-resource-type"></a>Тип ресурса Девицеманажементколлектионсеттингдефинитион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

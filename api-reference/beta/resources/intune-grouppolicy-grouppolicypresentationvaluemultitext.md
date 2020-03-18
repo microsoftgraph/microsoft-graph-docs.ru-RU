@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Граупполиципресентатионвалуемултитекст
 description: Сущность представляет строковое значение представления многострочного текстового поля в определении политики.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5a377e399ec3c26b6aa7fdfff285b014dce71b20
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1f5c77757fca09f20da8fe9eaf0f605cd24fd33f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528025"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42782813"
 ---
 # <a name="grouppolicypresentationvaluemultitext-resource-type"></a>Тип ресурса Граупполиципресентатионвалуемултитекст
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

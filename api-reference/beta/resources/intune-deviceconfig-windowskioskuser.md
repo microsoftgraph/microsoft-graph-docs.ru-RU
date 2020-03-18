@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Виндовскиоскусер
 description: Базовый класс пользователя, используемый для определения сведений об учетной записи для конфигурации киоска
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 50f5fb2f646881c48094ac1047a15291f0668e5e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ea2ddf6d9f159c63a58a2abe6db07f0b1f59b99c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525581"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786350"
 ---
 # <a name="windowskioskuser-resource-type"></a>Тип ресурса Виндовскиоскусер
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

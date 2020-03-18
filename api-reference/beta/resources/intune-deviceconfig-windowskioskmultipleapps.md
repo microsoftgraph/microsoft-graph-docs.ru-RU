@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса windowsKioskMultipleApps
 description: Класс, используемый для определения конфигурации приложения с многорежимным режимом для конфигурации киоска
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1f5a56f3717b3d03b4caf900005661e316fa3401
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 240625f8cac334375fe1f02b4de0c48f49b73478
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525476"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786371"
 ---
 # <a name="windowskioskmultipleapps-resource-type"></a>Тип ресурса windowsKioskMultipleApps
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Дептокентипе
 description: Пока не задокументировано.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0cadc497b9d90885cc02d3eeecc77e63119f2c73
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 93bda40e65cdf938495bcff08a4ac286722b856a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528310"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783517"
 ---
 # <a name="deptokentype-enum-type"></a>тип перечисления Дептокентипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -25,9 +23,9 @@ ms.locfileid: "42528310"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|нет|нуль|Тип маркера — None|
-|DEP|1 |Тип токена — DEP.|
-|апплесчулманажер|2 |Тип маркера — Apple School Manager|
+|none|нуль|Тип маркера — None|
+|DEP|1,1|Тип токена — DEP.|
+|апплесчулманажер|2|Тип маркера — Apple School Manager|
 
 
 

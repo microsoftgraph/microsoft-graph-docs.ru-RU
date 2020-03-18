@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицеманажементтемплатесеттингкатегори
 description: Сущность, представляющая категорию параметров шаблона
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 40962d400f1931ad5bb3e850e371a3fbe240e436
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 854655e59fdc1579b3f678b7aaabf55daf4f1238
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525217"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785241"
 ---
 # <a name="devicemanagementtemplatesettingcategory-resource-type"></a>Тип ресурса Девицеманажементтемплатесеттингкатегори
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

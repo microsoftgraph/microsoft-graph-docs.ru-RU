@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса applePushNotificationCertificate
 description: Сертификат push-уведомлений Apple
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d687b74ad64e360b5e1f88f8d8bb28c4054363ae
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 63e49aa6dfe5def2e505c7b2bf8a995c72df27c4
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525182"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785163"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>Тип ресурса applePushNotificationCertificate
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -28,6 +26,7 @@ ms.locfileid: "42525182"
 |[Получение объекта applePushNotificationCertificate](../api/intune-devices-applepushnotificationcertificate-get.md)|[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md)|Чтение свойств и связей объекта [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md).|
 |[Обновление объекта applePushNotificationCertificate](../api/intune-devices-applepushnotificationcertificate-update.md)|[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md)|Обновление свойств объекта [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md).|
 |[Функция downloadApplePushNotificationCertificateSigningRequest](../api/intune-devices-applepushnotificationcertificate-downloadapplepushnotificationcertificatesigningrequest.md)|String|Скачивание запроса на подпись сертификата для push-уведомлений Apple|
+|[действие Женератеапплепушнотификатионцертификатесигнингрекуест](../api/intune-devices-applepushnotificationcertificate-generateapplepushnotificationcertificatesigningrequest.md)|String|Скачивание запроса на подпись сертификата для push-уведомлений Apple|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|

@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Дисктипе
 description: Пока не задокументировано.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e67a48385546c94863c1afb46f30cc2110aea680
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ff896519862909504ee9756be643c5bd514dcf57
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525021"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42784121"
 ---
 # <a name="disktype-enum-type"></a>тип перечисления Дисктипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42525021"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |неизвестных|нуль|Пока не задокументировано.|
-|объединительной|1 |Пока не задокументировано.|
-|ssd|2 |Пока не задокументировано.|
+|объединительной|1,1|Пока не задокументировано.|
+|ssd|2|Пока не задокументировано.|
 
 
 

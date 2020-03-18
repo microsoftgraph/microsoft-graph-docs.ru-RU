@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса windowsPhone81SCEPCertificateProfile
 description: Профиль сертификата SCEP для Windows Phone 8.1 и SCEP
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3d166ff1818c3f400b9f537a069cb2f24cca4b81
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c1fd856d78fceaacfde238e455f86a4ce21068ec
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528989"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786287"
 ---
 # <a name="windowsphone81scepcertificateprofile-resource-type"></a>Тип ресурса windowsPhone81SCEPCertificateProfile
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

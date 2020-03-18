@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Шаредаппледевицеусер
 description: Пока не задокументировано.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3d6142b47205640e64b8e422b1727fdf60ac8a2d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 550d8af3cab51f611feed7f87f1d2f56a850de4e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524916"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783860"
 ---
 # <a name="sharedappledeviceuser-resource-type"></a>Тип ресурса Шаредаппледевицеусер
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

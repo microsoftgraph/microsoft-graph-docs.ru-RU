@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Цертификатеконнекторсеттинг
 description: Параметры соединителя сертификатов.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8778bd6b3594ebe1c9a33c2960955e1de63f8cb9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3230a5b512ab09b8b3c033f95c3fc7682197ff4a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524211"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42779879"
 ---
 # <a name="certificateconnectorsetting-resource-type"></a>Тип ресурса Цертификатеконнекторсеттинг
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

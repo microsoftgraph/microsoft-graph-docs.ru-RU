@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса configurationManagerClientEnabledFeatures
 description: Включенные клиентом функции диспетчера конфигураций
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2dfae041f1aab4c4ea74490d372350c5c0c2087b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ce366adec1bcab58df761a6a271a45fbd0510c03
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528685"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785072"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>Тип ресурса configurationManagerClientEnabledFeatures
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

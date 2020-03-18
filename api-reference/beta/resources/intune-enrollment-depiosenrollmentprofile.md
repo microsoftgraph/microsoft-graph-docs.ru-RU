@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Депиосенроллментпрофиле
 description: Ресурс Депиосенроллментпрофиле представляет профиль регистрации программы регистрации устройств Apple (DEP), характерный для конфигурации iOS. Этот тип профиля должен быть назначен серийным номерам Apple DEP, прежде чем соответствующие устройства смогут регистрироваться с помощью функции DEP.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ab378aaaece9ab7a2f162be9970d0ecc0213fea2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9295f5d29581bc98be0c1fb90c3549ee0d81f863
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524761"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783531"
 ---
 # <a name="depiosenrollmentprofile-resource-type"></a>Тип ресурса Депиосенроллментпрофиле
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицехеалсскрипт
 description: Intune предоставит клиенту возможность выполнять сценарии работоспособности PowerShell (исправление и обнаружение) на зарегистрированных устройствах, подключенных к Windows 10 Azure Active Directory.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0579008f0994aba06de3bc5869af998a80cab683
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 80e1539cf941d2d1cfa04fefcb442493f984347c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525091"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42784967"
 ---
 # <a name="devicehealthscript-resource-type"></a>Тип ресурса Девицехеалсскрипт
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -34,7 +32,8 @@ Intune предоставит клиенту возможность выполн
 |[действие Упдатеглобалскрипт](../api/intune-devices-devicehealthscript-updateglobalscript.md)|String|Обновление сценария работоспособности собственного устройства|
 |[действие Жетглобалскрипсигхеставаилаблеверсион](../api/intune-devices-devicehealthscript-getglobalscripthighestavailableversion.md)|String|Обновление сценария работоспособности собственного устройства|
 |[действие Енаблеглобалскриптс](../api/intune-devices-devicehealthscript-enableglobalscripts.md)|Нет|Н/Д|
-|[Функция Ареглобалскриптсаваилабле](../api/intune-devices-devicehealthscript-areglobalscriptsavailable.md)|[globalDeviceHealthScriptState](../resources/intune-devices-globaldevicehealthscriptstate.md)|Н/Д|
+|[Функция Ареглобалскриптсаваилабле](../api/intune-devices-devicehealthscript-areglobalscriptsavailable.md)|[globalDeviceHealthScriptState](../resources/intune-devices-globaldevicehealthscriptstate.md)|Пока не задокументировано.|
+|[Функция Жетремедиатионсуммари](../api/intune-devices-devicehealthscript-getremediationsummary.md)|[девицехеалсскриптремедиатионсуммари](../resources/intune-devices-devicehealthscriptremediationsummary.md)|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|

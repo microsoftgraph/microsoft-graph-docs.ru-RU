@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса targetedManagedAppProtection
 description: Политика, используемая для настройки расширенных параметров управления для определенных групп безопасности
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e69f6b7fe2edecc4e6da4eafb405f1ef1716120d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a90d155fb49a09ab3fc26fd6773ae7705a4d0206
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524282"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42781174"
 ---
 # <a name="targetedmanagedappprotection-resource-type"></a>Тип ресурса targetedManagedAppProtection
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

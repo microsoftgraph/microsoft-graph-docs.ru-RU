@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицеманажементсеттингрежексконстраинт
 description: Ограничение, в соответствии с которым параметр соответствует заданному шаблону регулярного выражения
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 12107fb0338e98d6ea423a2f14cd5e6809acfce9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9e4eca30a72ebeeaf3c1410fd458821519ea11c9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528789"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42785297"
 ---
 # <a name="devicemanagementsettingregexconstraint-resource-type"></a>Тип ресурса Девицеманажементсеттингрежексконстраинт
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

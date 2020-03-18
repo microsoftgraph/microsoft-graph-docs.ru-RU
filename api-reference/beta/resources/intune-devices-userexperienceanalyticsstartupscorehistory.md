@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Усерекспериенцеаналитиксстартупскорехистори
 description: Журнал оценки запуска устройств Analytics Device (взаимодействие с пользователем).
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ccf5de7e4a9b877b1466f632ba2e1821aaed6161
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8a0be4c680485975bf1bbb338609b2cf0817ba0d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42528443"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783755"
 ---
 # <a name="userexperienceanalyticsstartupscorehistory-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксстартупскорехистори
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -39,6 +37,7 @@ ms.locfileid: "42528443"
 |стартупскоре|Int32|Оценка запуска устройства Analytics для пользователя.|
 |коребутскоре|Int32|Оценка загрузки ядра устройств для службы аналитики взаимодействия с пользователем.|
 |коресигнинскоре|Int32|Показатель для входа в систему для устройства аналитики с пользовательским интерфейсом.|
+|рекоммендедсофтварескоре|Int32|Показатель для входа в систему для устройства аналитики с пользовательским интерфейсом.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -58,7 +57,8 @@ ms.locfileid: "42528443"
   "startupDateTime": "String (timestamp)",
   "startupScore": 1024,
   "coreBootScore": 1024,
-  "coreSigninScore": 1024
+  "coreSigninScore": 1024,
+  "recommendedSoftwareScore": 1024
 }
 ```
 

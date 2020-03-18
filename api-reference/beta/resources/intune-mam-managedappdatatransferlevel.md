@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Манажедаппдататрансферлевел
 description: Данные можно переносить из/в эти классы приложений
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b1d74ae998016c0988c2912b23e15bad80273b0c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 68d3fcaf0a75be8405f06c21102d8a462318825d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527941"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42782022"
 ---
 # <a name="managedappdatatransferlevel-enum-type"></a>тип перечисления Манажедаппдататрансферлевел
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42527941"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |аллаппс|нуль|Все приложения.|
-|managedApps|1 |Управляемые приложения.|
-|нет|2 |Нет приложений.|
+|managedApps|1,1|Управляемые приложения.|
+|none|2|Нет приложений.|
 
 
 

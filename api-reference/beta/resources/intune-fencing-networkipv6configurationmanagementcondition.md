@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса networkIPv6ConfigurationManagementCondition
 description: Можно определить условия управления на основе конфигурации IPv6, которые будут вызываться, когда устройство обнаружит определенные параметры IP-сети. Условие управления IP-конфигурацией считается ИСТИНным, только если сетевое подключение активно. Адреса DHCP-серверов IPv6 могут быть несогласованными. Это связано с тем, что Windows (цирка Редстоне) не предоставляет эту информацию в службу естественной проверки подлинности.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bf7fab6135a4d4fd11f62742e8435651a723523c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ca8c907d09a742b237483144fa849da27e4f9ae8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42524513"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42783209"
 ---
 # <a name="networkipv6configurationmanagementcondition-resource-type"></a>Тип ресурса networkIPv6ConfigurationManagementCondition
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
