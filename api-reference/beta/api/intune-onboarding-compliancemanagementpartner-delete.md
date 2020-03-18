@@ -1,20 +1,18 @@
 ---
 title: Удаление Комплианцеманажементпартнер
 description: Удаляет объект Комплианцеманажементпартнер.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8683c82ee203a16c822a288a171d32d717191a22
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c394591651179979e53c57876705d2943ee6ba81
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42462524"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803072"
 ---
 # <a name="delete-compliancemanagementpartner"></a>Удаление Комплианцеманажементпартнер
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42462524"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/complianceManagementPar
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

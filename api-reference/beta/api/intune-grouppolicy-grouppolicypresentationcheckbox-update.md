@@ -1,20 +1,18 @@
 ---
 title: Обновление Граупполиципресентатиончеккбокс
 description: Обновление свойств объекта Граупполиципресентатиончеккбокс.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 52cc0f88d30a0277156ca88f1a1f746d7f0bec45
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 26de37d645174d60dbfaf0717f236ec15ce0f31e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464899"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804333"
 ---
 # <a name="update-grouppolicypresentationcheckbox"></a>Обновление Граупполиципресентатиончеккбокс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42464899"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -95,7 +93,6 @@ Content-Length: 240
   "defaultChecked": true
 }
 ```
-
 
 
 

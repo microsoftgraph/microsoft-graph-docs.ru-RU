@@ -1,20 +1,18 @@
 ---
 title: Удаление Азуреадвиндовсаутопилотдеплойментпрофиле
 description: Удаляет объект Азуреадвиндовсаутопилотдеплойментпрофиле.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1498253e2375553d891746410cbf6dc96ddb59eb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e8e175528c24ea9a13396209aad0236992737350
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42467328"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813448"
 ---
 # <a name="delete-azureadwindowsautopilotdeploymentprofile"></a>Удаление Азуреадвиндовсаутопилотдеплойментпрофиле
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42467328"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -67,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeploym
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

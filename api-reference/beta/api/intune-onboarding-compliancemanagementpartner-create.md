@@ -1,20 +1,18 @@
 ---
 title: Создание Комплианцеманажементпартнер
 description: Создание нового объекта Комплианцеманажементпартнер.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1f449556df216643ff8d3e72797d105d39934e37
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: afedb4cb5b55aff57cd599364b2576e590fccd66
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42462532"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803079"
 ---
 # <a name="create-compliancemanagementpartner"></a>Создание Комплианцеманажементпартнер
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42462532"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -175,7 +173,6 @@ Content-Length: 1293
   ]
 }
 ```
-
 
 
 

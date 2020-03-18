@@ -1,20 +1,18 @@
 ---
 title: Функция getEncryptionPublicKey
 description: Получение открытого ключа, используемого для шифрования маркера программы регистрации устройств Apple
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e73afeb29e228f8d122a340d66ddc02810ed72ac
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 495b24472bd36672710de8df765da78af61d7a0f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42467153"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42813255"
 ---
 # <a name="getencryptionpublickey-function"></a>Функция getEncryptionPublicKey
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42467153"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -71,7 +69,6 @@ Content-Length: 50
   "value": "Get Encryption Public Key value"
 }
 ```
-
 
 
 

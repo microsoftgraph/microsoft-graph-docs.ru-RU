@@ -1,20 +1,18 @@
 ---
 title: Получение объекта onPremisesConditionalAccessSettings
 description: Чтение свойств и связей объекта onPremisesConditionalAccessSettings.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 84d1971a5c1e666b6c4f6a425a9090bd2b258888
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dd048231a797ebcf4f791bfd735fcb3f0a44dd88
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42461874"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802778"
 ---
 # <a name="get-onpremisesconditionalaccesssettings"></a>Получение объекта onPremisesConditionalAccessSettings
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42461874"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -86,7 +84,6 @@ Content-Length: 363
   }
 }
 ```
-
 
 
 

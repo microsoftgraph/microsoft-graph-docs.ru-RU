@@ -1,20 +1,18 @@
 ---
 title: Удаление notificationMessageTemplate
 description: Удаление объекта notificationMessageTemplate.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f887152c56d5cb445edc4ee0664dbe8b636ff8a4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b3053b24de1ce7513d4dd5feb4c981ad24afd6dd
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42462658"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803149"
 ---
 # <a name="delete-notificationmessagetemplate"></a>Удаление notificationMessageTemplate
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42462658"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/notificationMessageTemp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

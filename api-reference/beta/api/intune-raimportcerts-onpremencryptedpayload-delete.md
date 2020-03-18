@@ -1,20 +1,18 @@
 ---
 title: Удаление Онпременкриптедпайлоад
 description: Удаляет объект Онпременкриптедпайлоад.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 80ce244ddb69f10284b1bce2f72f1b8fa97e8e73
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bd060a9ab9d9c0e7b6660bf4600321d1fe46f067
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42460187"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801945"
 ---
 # <a name="delete-onpremencryptedpayload"></a>Удаление Онпременкриптедпайлоад
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42460187"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/onPremEncryptedPayloads/{onPremEncrypted
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

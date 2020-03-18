@@ -1,20 +1,18 @@
 ---
 title: Обновление объекта deviceCategory
 description: Обновление свойств объекта deviceCategory.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 68a8c13314284d546e5c750ac6dff2e040ddecc3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: da1a4ea9d886b331fd0b2b0e2ccb0f6b9512a8b5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42458821"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801224"
 ---
 # <a name="update-devicecategory"></a>Обновление объекта deviceCategory
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -32,7 +30,7 @@ ms.locfileid: "42458821"
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementManagedDevices.ReadWrite.All|
 
@@ -117,7 +115,6 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
-
 
 
 

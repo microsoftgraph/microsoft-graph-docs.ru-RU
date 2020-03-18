@@ -1,20 +1,18 @@
 ---
 title: Создание объекта defaultManagedAppProtection
 description: Создает объект defaultManagedAppProtection.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 730d5979f35a2032adeb1652448b9e6030b3129b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 97c247aff076beba7f4a06b426cafbc3d2cc07de
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42463729"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803675"
 ---
 # <a name="create-defaultmanagedappprotection"></a>Создание объекта defaultManagedAppProtection
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42463729"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -376,7 +374,6 @@ Content-Length: 4695
   "appActionIfAndroidDeviceModelNotAllowed": "wipe"
 }
 ```
-
 
 
 

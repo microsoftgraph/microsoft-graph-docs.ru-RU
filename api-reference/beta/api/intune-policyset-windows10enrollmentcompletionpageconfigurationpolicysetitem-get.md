@@ -1,20 +1,18 @@
 ---
 title: Получение windows10EnrollmentCompletionPageConfigurationPolicySetItem
 description: Чтение свойств и связей объекта windows10EnrollmentCompletionPageConfigurationPolicySetItem.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3b9d8ed94d14ee56755deb7ca8bbcb29a6b9c9fa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 38978b49ba796fad5f698c23320f3c244e7ecdf7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42460327"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802008"
 ---
 # <a name="get-windows10enrollmentcompletionpageconfigurationpolicysetitem"></a>Получение windows10EnrollmentCompletionPageConfigurationPolicySetItem
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42460327"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -88,7 +86,6 @@ Content-Length: 576
   }
 }
 ```
-
 
 
 

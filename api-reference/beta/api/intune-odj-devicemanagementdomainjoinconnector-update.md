@@ -1,20 +1,18 @@
 ---
 title: Обновление Девицеманажементдомаинжоинконнектор
 description: Обновление свойств объекта Девицеманажементдомаинжоинконнектор.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 12bc8b52a857e70b3bda358365399f398d19c10d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bad7fad13a1780b185c6bac4b66bd08a5e6e92c8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42462546"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803086"
 ---
 # <a name="update-devicemanagementdomainjoinconnector"></a>Обновление Девицеманажементдомаинжоинконнектор
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42462546"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -98,7 +96,6 @@ Content-Length: 284
   "version": "Version value"
 }
 ```
-
 
 
 

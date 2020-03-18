@@ -1,20 +1,18 @@
 ---
 title: Обновление Граупполиципресентатионкомбобокс
 description: Обновление свойств объекта Граупполиципресентатионкомбобокс.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 07b286b58a478e2b91446dfba9fd849b5621940f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a3d677e27de4b0eb30bcabf9a2cfeccd6da00669
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464857"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804298"
 ---
 # <a name="update-grouppolicypresentationcombobox"></a>Обновление Граупполиципресентатионкомбобокс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42464857"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -108,7 +106,6 @@ Content-Length: 346
   "maxLength": 9
 }
 ```
-
 
 
 

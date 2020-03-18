@@ -1,20 +1,18 @@
 ---
 title: Удаление объекта deviceAndAppManagementRoleAssignment
 description: Удаление объекта deviceAndAppManagementRoleAssignment.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d33f813d59791c2c1b0a853cc63ea0b86b84dd1b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d3aa5d65d0275a049bf65966a9ebb93d1330657c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42460054"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801805"
 ---
 # <a name="delete-deviceandappmanagementroleassignment"></a>Удаление объекта deviceAndAppManagementRoleAssignment
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42460054"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementRBAC.ReadWrite.All|
+|Приложение|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/roleAssignments/{device
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

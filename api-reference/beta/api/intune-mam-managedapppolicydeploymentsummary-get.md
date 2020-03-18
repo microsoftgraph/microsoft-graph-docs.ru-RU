@@ -1,20 +1,18 @@
 ---
 title: Получение объекта managedAppPolicyDeploymentSummary
 description: Чтение свойств и связей объекта managedAppPolicyDeploymentSummary.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 414cc9983a16e87400de3707ead54bc4ded4c00d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f09a768b509c237400af32f3ba656f883938e31e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42463477"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803556"
 ---
 # <a name="get-managedapppolicydeploymentsummary"></a>Получение объекта managedAppPolicyDeploymentSummary
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42463477"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -94,7 +92,6 @@ Content-Length: 688
   }
 }
 ```
-
 
 
 

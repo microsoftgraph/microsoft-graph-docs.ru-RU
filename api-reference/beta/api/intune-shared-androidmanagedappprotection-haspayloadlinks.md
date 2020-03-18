@@ -1,20 +1,18 @@
 ---
 title: действие Хаспайлоадлинкс
 description: Пока не задокументировано.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c9da27e5f3d5b5cf0c52d4d9de44fbaa5b1b8754
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c1b2124c5d2abc85b6ee426ef50e60be367e8f8b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42458954"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801294"
 ---
 # <a name="haspayloadlinks-action"></a>действие Хаспайлоадлинкс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -30,7 +28,7 @@ ms.locfileid: "42458954"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -100,7 +98,6 @@ Content-Length: 249
   ]
 }
 ```
-
 
 
 

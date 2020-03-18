@@ -1,20 +1,18 @@
 ---
 title: Обновление Девицеманажементскриптполицисетитем
 description: Обновление свойств объекта Девицеманажементскриптполицисетитем.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fc202484f477256cc37db79d38886794431e867d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4f11dbb27c2eebae1dbf3d2270448381be6ce223
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42461055"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802365"
 ---
 # <a name="update-devicemanagementscriptpolicysetitem"></a>Обновление Девицеманажементскриптполицисетитем
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42461055"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -112,7 +110,6 @@ Content-Length: 489
   ]
 }
 ```
-
 
 
 

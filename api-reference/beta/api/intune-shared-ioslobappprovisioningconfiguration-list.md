@@ -1,20 +1,18 @@
 ---
 title: Список iosLobAppProvisioningConfigurations
 description: Список свойств и связей объектов iosLobAppProvisioningConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ab0abc7fa170b8bbb2f744be1626ea4422f09a57
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 695101e4d983f0d6351c9597fb053d5ccb084359
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42458422"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800902"
 ---
 # <a name="list-ioslobappprovisioningconfigurations"></a>Список iosLobAppProvisioningConfigurations
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -31,7 +29,7 @@ ms.locfileid: "42458422"
 | &nbsp; &nbsp; **Приложения** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 | &nbsp; &nbsp; **Приложения** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
@@ -91,7 +89,6 @@ Content-Length: 632
   ]
 }
 ```
-
 
 
 

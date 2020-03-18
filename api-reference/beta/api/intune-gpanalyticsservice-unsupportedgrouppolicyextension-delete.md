@@ -1,20 +1,18 @@
 ---
 title: Удаление Унсуппортедграупполициекстенсион
 description: Удаляет объект Унсуппортедграупполициекстенсион.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 917d385bd7018fb8dacc3b6948c8b7a8a597e1b8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 40a2065ee2fee6077533404b2225221e0d78e442
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42465445"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804564"
 ---
 # <a name="delete-unsupportedgrouppolicyextension"></a>Удаление Унсуппортедграупполициекстенсион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42465445"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/groupPolicyMigrationRep
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

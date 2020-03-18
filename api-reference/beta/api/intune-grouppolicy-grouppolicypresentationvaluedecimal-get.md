@@ -1,20 +1,18 @@
 ---
 title: Получение ГраупполиципресентатионвалуедеЦимал
 description: Чтение свойств и связей объекта ГраупполиципресентатионвалуедеЦимал.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2580fcd809f6dfeba86af93f503d694dd69afa07
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 56fb77ba62a6a7707da1e13e3e1f8eeb00db4303
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464220"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803962"
 ---
 # <a name="get-grouppolicypresentationvaluedecimal"></a>Получение ГраупполиципресентатионвалуедеЦимал
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42464220"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -80,7 +78,6 @@ Content-Length: 293
   }
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Обновление ГраупполиципресентатионлонгдеЦималтекстбокс
 description: Обновление свойств объекта ГраупполиципресентатионлонгдеЦималтекстбокс.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: af2cb713497e291e2ca3f58ad0c627b15837f9a0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 24863f8ea3b67c446c2d6d7c5945289b193b85c5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464584"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804158"
 ---
 # <a name="update-grouppolicypresentationlongdecimaltextbox"></a>Обновление ГраупполиципресентатионлонгдеЦималтекстбокс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42464584"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -110,7 +108,6 @@ Content-Length: 338
   "maxValue": 8
 }
 ```
-
 
 
 

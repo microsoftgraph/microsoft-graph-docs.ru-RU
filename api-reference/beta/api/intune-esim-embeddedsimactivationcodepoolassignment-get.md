@@ -1,20 +1,18 @@
 ---
 title: Получение Ембеддедсимактиватионкодепулассигнмент
 description: Чтение свойств и связей объекта Ембеддедсимактиватионкодепулассигнмент.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 94945f40298cc19879bb5888e533e2e144f32301
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f6e46af41bb41986d8b249b9ddedb027ee9f5de8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42466082"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804900"
 ---
 # <a name="get-embeddedsimactivationcodepoolassignment"></a>Получение Ембеддедсимактиватионкодепулассигнмент
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42466082"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -80,7 +78,6 @@ Content-Length: 257
   }
 }
 ```
-
 
 
 

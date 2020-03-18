@@ -1,20 +1,18 @@
 ---
 title: Список Граупполиципресентатионвалуелистс
 description: Список свойств и связей объектов Граупполиципресентатионвалуелист.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5790d2ed3fab29747b3d4872388c7c4e73953754
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a4dae17d72637dd4643c9668979bc4e5e1c1a7f8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464199"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803920"
 ---
 # <a name="list-grouppolicypresentationvaluelists"></a>Список Граупполиципресентатионвалуелистс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42464199"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -85,7 +83,6 @@ Content-Length: 471
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: действие Випеандблоккманажедаппс
 description: Блокирует возврат из приложения для пользователя управляемого приложения.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: fc0e820299ad97f7557168fe345c1fa38c3b2c5d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e159a6298421ccb857a027127e4a48ec33ecc130
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42463078"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803367"
 ---
 # <a name="wipeandblockmanagedapps-action"></a>действие Випеандблоккманажедаппс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42463078"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -65,7 +63,6 @@ POST https://graph.microsoft.com/beta/users/{usersId}/wipeAndBlockManagedApps
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

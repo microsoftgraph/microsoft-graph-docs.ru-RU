@@ -1,20 +1,18 @@
 ---
 title: Удаление объекта mobileThreatDefenseConnector
 description: Удаляет объект mobileThreatDefenseConnector.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 93d0972884e7584f8f9c014ea4bcd674f4f9c38a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 426018a96d0eff2b0f50c6fcaa027be6f39b6798
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42461965"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802806"
 ---
 # <a name="delete-mobilethreatdefenseconnector"></a>Удаление объекта mobileThreatDefenseConnector
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42461965"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/mobileThreatDefenseConn
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

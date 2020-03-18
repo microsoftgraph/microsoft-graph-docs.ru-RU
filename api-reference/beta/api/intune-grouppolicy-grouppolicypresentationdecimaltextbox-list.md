@@ -1,20 +1,18 @@
 ---
 title: Список ГраупполиципресентатиондеЦималтекстбоксес
 description: Список свойств и связей объектов ГраупполиципресентатиондеЦималтекстбокс.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3035aea197f59dba7ba88bf8a382832a326b8b62
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8c1b56335a6070a2e327f49b483dd96b9c2b6346
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464794"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804270"
 ---
 # <a name="list-grouppolicypresentationdecimaltextboxes"></a>Список ГраупполиципресентатиондеЦималтекстбоксес
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42464794"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -84,7 +82,6 @@ Content-Length: 407
   ]
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Функция deviceConfigurationDeviceActivity
 description: Метаданные для отчета о работе устройств
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 68ea1e7e8eeacf7b7582bedbb65ffd27515e1967
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f215748ff5b694e493a1bc01403e69e52951b642
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42458219"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800720"
 ---
 # <a name="deviceconfigurationdeviceactivity-function"></a>Функция deviceConfigurationDeviceActivity
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42458219"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -74,7 +72,6 @@ Content-Length: 123
   }
 }
 ```
-
 
 
 

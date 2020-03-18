@@ -1,20 +1,18 @@
 ---
 title: Действие assignUserToDevice
 description: Назначение пользователям автопилотных устройств.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1b2a8051ca4f430a3624d80c8c6711a7c87c6af1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c974720ab6f1efca4daa6c3d8ec3b0ad25a40143
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42466348"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42805040"
 ---
 # <a name="assignusertodevice-action"></a>Действие assignUserToDevice
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42466348"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -83,7 +81,6 @@ Content-length: 113
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Создание Иослобапппровисионингконфигуратионполицисетитем
 description: Создание нового объекта Иослобапппровисионингконфигуратионполицисетитем.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b18cfa204befb83787a8f609aad65971edc66bc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3dd192d8c102b656aabc5df760a5d103ece71059
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42461027"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802323"
 ---
 # <a name="create-ioslobappprovisioningconfigurationpolicysetitem"></a>Создание Иослобапппровисионингконфигуратионполицисетитем
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42461027"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -112,7 +110,6 @@ Content-Length: 501
   ]
 }
 ```
-
 
 
 

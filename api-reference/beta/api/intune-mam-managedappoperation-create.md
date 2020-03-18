@@ -1,20 +1,18 @@
 ---
 title: Создание объекта managedAppOperation
 description: Создание объекта managedAppOperation.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e2ba1f5a28cadee8e55b352d99ef0b02fd9a531f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 84a954832fb709e0431535653b9e6d175624364c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42463575"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803612"
 ---
 # <a name="create-managedappoperation"></a>Создание объекта managedAppOperation
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42463575"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -97,7 +95,6 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
-
 
 
 

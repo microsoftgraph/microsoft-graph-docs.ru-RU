@@ -1,20 +1,18 @@
 ---
 title: Обновление windows10EnrollmentCompletionPageConfigurationPolicySetItem
 description: Обновление свойств объекта windows10EnrollmentCompletionPageConfigurationPolicySetItem.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f084e2b900ae2663fa1fcc063245656adcb18cd6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3ec355aaf5c0afce3c4efaaa24511c30dc2c1e36
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42460306"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801994"
 ---
 # <a name="update-windows10enrollmentcompletionpageconfigurationpolicysetitem"></a>Обновление windows10EnrollmentCompletionPageConfigurationPolicySetItem
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42460306"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -115,7 +113,6 @@ Content-Length: 531
   "priority": 8
 }
 ```
-
 
 
 

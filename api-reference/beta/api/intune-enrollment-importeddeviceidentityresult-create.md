@@ -1,20 +1,18 @@
 ---
 title: Создание Импортеддевицеидентитиресулт
 description: Создание нового объекта Импортеддевицеидентитиресулт.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1b4384e6040a29f24abd574d4d6872242346ef2b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ee9fd86692bbf80ee7f3552dbca8de2428d4375e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42466537"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42805159"
 ---
 # <a name="create-importeddeviceidentityresult"></a>Создание Импортеддевицеидентитиресулт
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42466537"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -111,7 +109,6 @@ Content-Length: 529
   "status": true
 }
 ```
-
 
 
 

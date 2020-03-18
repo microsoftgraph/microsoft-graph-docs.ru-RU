@@ -1,20 +1,18 @@
 ---
 title: Обновление Таржетедманажедаппконфигуратионполицисетитем
 description: Обновление свойств объекта Таржетедманажедаппконфигуратионполицисетитем.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 34a19427595d218fcdff96f2e11481ada59d2217
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f6028d982bb2320e00a5d438c10c0d06e926d385
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42460383"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802029"
 ---
 # <a name="update-targetedmanagedappconfigurationpolicysetitem"></a>Обновление Таржетедманажедаппконфигуратионполицисетитем
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42460383"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -112,7 +110,6 @@ Content-Length: 498
   ]
 }
 ```
-
 
 
 

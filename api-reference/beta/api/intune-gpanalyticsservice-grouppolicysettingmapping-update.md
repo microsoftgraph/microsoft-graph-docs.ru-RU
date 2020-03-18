@@ -1,20 +1,18 @@
 ---
 title: Обновление Граупполицисеттингмаппинг
 description: Обновление свойств объекта Граупполицисеттингмаппинг.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 49b0ca62f96c16a37761517e41eeae74ffb929d2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a98970a6bef6a17ab134322d1b9d41bfcd195ef5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42465424"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804578"
 ---
 # <a name="update-grouppolicysettingmapping"></a>Обновление Граупполицисеттингмаппинг
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42465424"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -72,6 +70,7 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 |mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|Указывает, поддерживается ли параметр в MDM. Возможные значения: `unknown`, `supported`, `unsupported`, `deprecated`.|
 |сеттингскопе|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|Область применения параметра. Возможные значения: `unknown`, `device`, `user`.|
 |интунесеттингурилист|Коллекция String|Список URI параметров Intune, которые сопоставлены параметру групповой политики|
+|интунесеттингдефинитионид|String|Идентификатор определения параметра Intune|
 
 
 
@@ -85,7 +84,7 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId}/groupPolicySettingMappings/{groupPolicySettingMappingId}
 Content-type: application/json
-Content-length: 887
+Content-length: 957
 
 {
   "@odata.type": "#microsoft.graph.groupPolicySettingMapping",
@@ -110,7 +109,8 @@ Content-length: 887
   "settingScope": "device",
   "intuneSettingUriList": [
     "Intune Setting Uri List value"
-  ]
+  ],
+  "intuneSettingDefinitionId": "Intune Setting Definition Id value"
 }
 ```
 
@@ -119,7 +119,7 @@ Content-length: 887
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 936
+Content-Length: 1006
 
 {
   "@odata.type": "#microsoft.graph.groupPolicySettingMapping",
@@ -145,10 +145,10 @@ Content-Length: 936
   "settingScope": "device",
   "intuneSettingUriList": [
     "Intune Setting Uri List value"
-  ]
+  ],
+  "intuneSettingDefinitionId": "Intune Setting Definition Id value"
 }
 ```
-
 
 
 

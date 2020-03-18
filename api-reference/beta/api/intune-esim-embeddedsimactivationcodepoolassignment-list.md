@@ -1,20 +1,18 @@
 ---
 title: Список Ембеддедсимактиватионкодепулассигнментс
 description: Список свойств и связей объектов Ембеддедсимактиватионкодепулассигнмент.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: da4bd88694cd075ea07b1fdf01492d922a4ca61d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2e5bfa537d2f2204e5bea77303b04a526e57aeed
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42466047"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804893"
 ---
 # <a name="list-embeddedsimactivationcodepoolassignments"></a>Список Ембеддедсимактиватионкодепулассигнментс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42466047"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -79,7 +77,6 @@ Content-Length: 281
   ]
 }
 ```
-
 
 
 

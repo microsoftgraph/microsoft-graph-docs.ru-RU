@@ -1,20 +1,18 @@
 ---
 title: Получение Виндовсинформатионпротектионвипеактион
 description: Чтение свойств и связей объекта Виндовсинформатионпротектионвипеактион.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 664bcb6f63534559ca85625e2e05bd9b9d9e480a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: df3bdbb696aa1baf249c6a9a9ef1543b77d0b411
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42462819"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803212"
 ---
 # <a name="get-windowsinformationprotectionwipeaction"></a>Получение Виндовсинформатионпротектионвипеактион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42462819"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -83,7 +81,6 @@ Content-Length: 496
   }
 }
 ```
-
 
 
 

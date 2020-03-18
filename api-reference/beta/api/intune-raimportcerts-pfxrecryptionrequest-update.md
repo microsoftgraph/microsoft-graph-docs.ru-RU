@@ -1,20 +1,18 @@
 ---
 title: Обновление Пфксрекриптионрекуест
 description: Обновление свойств объекта Пфксрекриптионрекуест.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d1bd51caa6aa72fffc03da24265f5a11e9fa9550
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 71ba546291d3e25847240ca11efb2db64929f74d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42460145"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801889"
 ---
 # <a name="update-pfxrecryptionrequest"></a>Обновление Пфксрекриптионрекуест
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42460145"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -120,7 +118,6 @@ Content-Length: 574
   "eTag": "ETag value"
 }
 ```
-
 
 
 

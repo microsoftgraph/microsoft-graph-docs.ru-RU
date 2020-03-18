@@ -1,20 +1,18 @@
 ---
 title: Получение Граупполицидефинитионфиле
 description: Чтение свойств и связей объекта Граупполицидефинитионфиле.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f3c9cb16dcc28fa04924fa903080fdd6264d5dc3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: befb3d00be5e493461fdfb962abfead06cfec05c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42465053"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42804424"
 ---
 # <a name="get-grouppolicydefinitionfile"></a>Получение Граупполицидефинитионфиле
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42465053"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -39,6 +37,7 @@ ms.locfileid: "42465053"
 ``` http
 GET /deviceManagement/groupPolicyDefinitionFiles/{groupPolicyDefinitionFileId}
 GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/definitionFile
+GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/category/definitionFile
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -88,7 +87,6 @@ Content-Length: 514
   }
 }
 ```
-
 
 
 

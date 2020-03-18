@@ -1,20 +1,18 @@
 ---
 title: Удаление Девицеманажементдериведкредентиалсеттингс
 description: Удаляет объект Девицеманажементдериведкредентиалсеттингс.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bc01aaadd69c7ac6d20756bd75ebe805e8d53e54
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1c0cfabb9571ad08458c628b0e8871fda90e35ed
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42458534"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801021"
 ---
 # <a name="delete-devicemanagementderivedcredentialsettings"></a>Удаление Девицеманажементдериведкредентиалсеттингс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -30,7 +28,7 @@ ms.locfileid: "42458534"
 |Делегированные (рабочая или учебная учетная запись)||
 |&nbsp;&nbsp; **Политика доступа к ресурсам**|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 |&nbsp;&nbsp; **Политика доступа к ресурсам**|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -67,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/derivedCredentials/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

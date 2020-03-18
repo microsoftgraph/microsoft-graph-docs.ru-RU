@@ -1,20 +1,18 @@
 ---
 title: Удаление Девицеаппманажементтаск
 description: Удаляет объект Девицеаппманажементтаск.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b3950e7bb4e488b6dc30ff889de54623de24e75
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 30032378acea996b98927c56ed4f19a586b45af4
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42461356"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802498"
 ---
 # <a name="delete-deviceappmanagementtask"></a>Удаление Девицеаппманажементтаск
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42461356"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/deviceAppManagementT
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

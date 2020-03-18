@@ -1,20 +1,18 @@
 ---
 title: Получение Девицеманажементексчанжеонпремисесполици
 description: Чтение свойств и связей объекта Девицеманажементексчанжеонпремисесполици.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 43e259d622981c126936c513633fd0f9f0ac90fa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c81bbfb81d59e931f700b9a46999548a7eca9a37
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42462120"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802897"
 ---
 # <a name="get-devicemanagementexchangeonpremisespolicy"></a>Получение Девицеманажементексчанжеонпремисесполици
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42462120"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -98,7 +96,6 @@ Content-Length: 777
   }
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Функция Манажеддевицеенроллментабандонментсуммари
 description: Метаданные для сводного отчета об отмене регистрации
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e0ac224ec30110abd39675c1fcb8c64e3087185a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 62ed37262c8c9a2ed75df9b4e7c497c28bc61847
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42458170"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800692"
 ---
 # <a name="manageddeviceenrollmentabandonmentsummary-function"></a>Функция Манажеддевицеенроллментабандонментсуммари
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42458170"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp;&nbsp; **Траублшутинг** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 | &nbsp;&nbsp; **Траублшутинг** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -84,7 +82,6 @@ Content-Length: 123
   }
 }
 ```
-
 
 
 

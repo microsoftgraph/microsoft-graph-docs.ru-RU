@@ -1,20 +1,18 @@
 ---
 title: Создание Манажеддевицемобилеаппконфигуратионполицисетитем
 description: Создание нового объекта Манажеддевицемобилеаппконфигуратионполицисетитем.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5462b45c25fad5b6be0f04e41529178158d8dc18
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b3b042f4ff486a2bb83836144b9c9310492d6cb5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42460873"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802253"
 ---
 # <a name="create-manageddevicemobileappconfigurationpolicysetitem"></a>Создание Манажеддевицемобилеаппконфигуратионполицисетитем
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42460873"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -112,7 +110,6 @@ Content-Length: 502
   ]
 }
 ```
-
 
 
 

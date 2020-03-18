@@ -1,16 +1,16 @@
 ---
 title: Действие enableLegacyPcManagement
 description: Пока не задокументировано.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e54d6c24f78ea19943f66be5b2e4d00daa5f5b89
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 5b006bdb26e1144169afb561bac1a25c570cfd09
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39940007"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42801084"
 ---
 # <a name="enablelegacypcmanagement-action"></a>Действие enableLegacyPcManagement
 
@@ -27,7 +27,7 @@ ms.locfileid: "39940007"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -42,10 +42,10 @@ POST /deviceManagement/enableLegacyPcManagement
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -63,7 +63,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/enableLegacyPcManagement
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

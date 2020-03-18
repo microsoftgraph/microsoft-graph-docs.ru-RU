@@ -1,20 +1,18 @@
 ---
 title: Создание ГраупполиципресентатионвалуедеЦимал
 description: Создание нового объекта ГраупполиципресентатионвалуедеЦимал.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e4ef33a1f72444fc951b4161bb46225d5d9750c1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 87c88f69dc0759b154f8f4ffc7d3d32b6a8fb787
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42464213"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42803976"
 ---
 # <a name="create-grouppolicypresentationvaluedecimal"></a>Создание ГраупполиципресентатионвалуедеЦимал
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42464213"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -93,7 +91,6 @@ Content-Length: 264
   "value": 5
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Функция Манажеддевицеенроллментфаилуретрендс
 description: Метаданные отчета о тенденциях сбоев регистрации
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f881d108487d849ddee9d80c654ae3f493e7418c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 20c9701f2d21414a37b4c778d87aa1d237f12d88
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42458163"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800678"
 ---
 # <a name="manageddeviceenrollmentfailuretrends-function"></a>Функция Манажеддевицеенроллментфаилуретрендс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42458163"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Устранение неполадок** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 | &nbsp; &nbsp; **Устранение неполадок** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -74,7 +72,6 @@ Content-Length: 123
   }
 }
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Список Мдмвиндовсинформатионпротектионполициполицисетитемс
 description: Список свойств и связей объектов Мдмвиндовсинформатионпротектионполициполицисетитем.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 67fa133f7df2b62d1382967a8772bb7e45919ccd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 654b6cc3fcd437e338803658f21b233c57084874
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42460733"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802197"
 ---
 # <a name="list-mdmwindowsinformationprotectionpolicypolicysetitems"></a>Список Мдмвиндовсинформатионпротектионполициполицисетитемс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42460733"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -86,7 +84,6 @@ Content-Length: 585
   ]
 }
 ```
-
 
 
 

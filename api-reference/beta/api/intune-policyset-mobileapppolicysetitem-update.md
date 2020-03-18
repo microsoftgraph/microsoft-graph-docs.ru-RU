@@ -1,20 +1,18 @@
 ---
 title: Обновление Мобилеаппполицисетитем
 description: Обновление свойств объекта Мобилеаппполицисетитем.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c5bee1d17f4adb1cc5da05edc4854b7b6f438782
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8ac03bc2949b08a70b0413c372a8a522bda3975a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42460691"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802155"
 ---
 # <a name="update-mobileapppolicysetitem"></a>Обновление Мобилеаппполицисетитем
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42460691"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -122,7 +120,6 @@ Content-Length: 590
   }
 }
 ```
-
 
 
 

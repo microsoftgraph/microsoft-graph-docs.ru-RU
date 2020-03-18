@@ -1,20 +1,18 @@
 ---
 title: Функция deviceConfigurationUserActivity
 description: Метаданные для отчета о действиях пользователей с конфигурацией устройств
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9c78c8590a0f9d115551b49c6be9156927884180
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 40356d2f2c2c75a1bdcb046c8775ccef30674695
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42458212"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800713"
 ---
 # <a name="deviceconfigurationuseractivity-function"></a>Функция deviceConfigurationUserActivity
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42458212"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -74,7 +72,6 @@ Content-Length: 123
   }
 }
 ```
-
 
 
 

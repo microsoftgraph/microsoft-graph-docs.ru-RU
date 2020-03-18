@@ -1,20 +1,18 @@
 ---
 title: Создание Енроллментрестриктионсконфигуратионполицисетитем
 description: Создание нового объекта Енроллментрестриктионсконфигуратионполицисетитем.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c08cd8082c853ef15f5147bddc76f7e97181f8db
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fb7608fc07979d114b1c7516627421b822ddb63a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42461069"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42802358"
 ---
 # <a name="create-enrollmentrestrictionsconfigurationpolicysetitem"></a>Создание Енроллментрестриктионсконфигуратионполицисетитем
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42461069"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -118,7 +116,6 @@ Content-Length: 535
   "limit": 5
 }
 ```
-
 
 
 
