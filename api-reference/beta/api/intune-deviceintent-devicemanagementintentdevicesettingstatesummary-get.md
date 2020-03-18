@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42767248"
+ms.locfileid: "42815291"
 ---
 # <a name="get-devicemanagementintentdevicesettingstatesummary"></a><span data-ttu-id="6ff85-103">Получение Девицеманажементинтентдевицесеттингстатесуммари</span><span class="sxs-lookup"><span data-stu-id="6ff85-103">Get deviceManagementIntentDeviceSettingStateSummary</span></span>
 

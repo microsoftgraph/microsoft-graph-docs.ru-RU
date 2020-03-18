@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762788"
+ms.locfileid: "42815770"
 ---
 # <a name="create-androidforworkappconfigurationschema"></a><span data-ttu-id="08bba-103">Создание объекта androidForWorkAppConfigurationSchema</span><span class="sxs-lookup"><span data-stu-id="08bba-103">Create androidForWorkAppConfigurationSchema</span></span>
 

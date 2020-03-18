@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42766387"
+ms.locfileid: "42815207"
 ---
 # <a name="get-devicemanagementintentsettingcategory"></a><span data-ttu-id="3048c-103">Получение Девицеманажементинтентсеттингкатегори</span><span class="sxs-lookup"><span data-stu-id="3048c-103">Get deviceManagementIntentSettingCategory</span></span>
 

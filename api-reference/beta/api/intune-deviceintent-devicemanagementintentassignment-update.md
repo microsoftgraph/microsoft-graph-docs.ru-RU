@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42767458"
+ms.locfileid: "42815312"
 ---
 # <a name="update-devicemanagementintentassignment"></a><span data-ttu-id="648be-103">Обновление Девицеманажементинтентассигнмент</span><span class="sxs-lookup"><span data-stu-id="648be-103">Update deviceManagementIntentAssignment</span></span>
 

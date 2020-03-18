@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762630"
+ms.locfileid: "42815721"
 ---
 # <a name="delete-androidforworkenrollmentprofile"></a><span data-ttu-id="34e21-103">Удаление объекта androidForWorkEnrollmentProfile</span><span class="sxs-lookup"><span data-stu-id="34e21-103">Delete androidForWorkEnrollmentProfile</span></span>
 

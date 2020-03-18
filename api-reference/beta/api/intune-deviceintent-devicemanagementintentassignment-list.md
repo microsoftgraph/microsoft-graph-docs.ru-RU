@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42767465"
+ms.locfileid: "42815319"
 ---
 # <a name="list-devicemanagementintentassignments"></a><span data-ttu-id="92cd2-103">Список Девицеманажементинтентассигнментс</span><span class="sxs-lookup"><span data-stu-id="92cd2-103">List deviceManagementIntentAssignments</span></span>
 

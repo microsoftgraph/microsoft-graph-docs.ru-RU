@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762809"
+ms.locfileid: "42815791"
 ---
 # <a name="list-androiddeviceownerenrollmentprofiles"></a><span data-ttu-id="3971e-103">Список Андроиддевицеовнеренроллментпрофилес</span><span class="sxs-lookup"><span data-stu-id="3971e-103">List androidDeviceOwnerEnrollmentProfiles</span></span>
 

@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762659"
+ms.locfileid: "42815749"
 ---
 # <a name="list-androidforworkappconfigurationschemas"></a><span data-ttu-id="ab3a2-103">Перечисление объектов androidForWorkAppConfigurationSchema</span><span class="sxs-lookup"><span data-stu-id="ab3a2-103">List androidForWorkAppConfigurationSchemas</span></span>
 

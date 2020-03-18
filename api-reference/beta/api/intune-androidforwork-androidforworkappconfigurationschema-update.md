@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762652"
+ms.locfileid: "42815742"
 ---
 # <a name="update-androidforworkappconfigurationschema"></a><span data-ttu-id="0e248-103">Обновление объекта androidForWorkAppConfigurationSchema</span><span class="sxs-lookup"><span data-stu-id="0e248-103">Update androidForWorkAppConfigurationSchema</span></span>
 
