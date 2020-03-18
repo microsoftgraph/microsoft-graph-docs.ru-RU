@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Мобилеаппинсталлтимесеттингс
 description: Содержит свойства, используемые для определения времени предоставления приложения устройствам и для установки приложения на устройствах.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7ff666c29e75d6571dede3834b4660f43e863826
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 413d37ef0f672289e68e7dd8d8e2d0b6bc7d17ea
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523620"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42768508"
 ---
 # <a name="mobileappinstalltimesettings-resource-type"></a>Тип ресурса Мобилеаппинсталлтимесеттингс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

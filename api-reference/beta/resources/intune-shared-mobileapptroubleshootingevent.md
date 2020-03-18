@@ -2,19 +2,17 @@
 title: Тип ресурса Мобилеапптраублешутинжевент
 description: Описывает ресурс Мобилеапптраублешутинжевент API Microsoft Graph для Intune, который поддерживает несколько рабочих процессов.
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7540eb30c98275250d0f16781fcf6f95e8fd9797
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4d65f9c096d42c38cb69cdbf900727f88c2a58cf
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523613"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42768200"
 ---
 # <a name="mobileapptroubleshootingevent-resource-type"></a>Тип ресурса Мобилеапптраублешутинжевент
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Рунстате
 description: Указывает тип состояния выполнения скрипта управления устройствами.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: fef95d2d5744d0cdc6b92328b15a44f8b21c6cb0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8f4c1605734afef3caefc4b51e2c8a826d2f2cd4
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523550"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42767822"
 ---
 # <a name="runstate-enum-type"></a>тип перечисления Рунстате
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42523550"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Неизвестный результат.|
-|success|1 |Сценарий успешно запущен.|
-|сбой|2 |Не удалось выполнить скрипт.|
-|скриптеррор|3 |Ошибка при обращении к скрипту обнаружения.|
+|success|1,1|Сценарий успешно запущен.|
+|сбой|2|Не удалось выполнить скрипт.|
+|скриптеррор|4|Ошибка при обращении к скрипту обнаружения.|
 |закончен|4 |Сценарий находится в состоянии ожидания выполнения.|
 |нотаппликабле|5 |Сценарий неприменим для этого устройства.|
 

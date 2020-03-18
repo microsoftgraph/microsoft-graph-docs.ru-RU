@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса proxiedDomain
 description: Проксируемый домен
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 352f466ad12f767feb68acd654d6d7d8133a25c3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bdfdf1fdbea81f415633c810bd21172164f3765f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523592"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42768060"
 ---
 # <a name="proxieddomain-resource-type"></a>Тип ресурса proxiedDomain
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

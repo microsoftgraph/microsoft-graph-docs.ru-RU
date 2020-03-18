@@ -1,20 +1,18 @@
 ---
 title: Создание Девицехеалсскриптассигнмент
 description: Создание нового объекта Девицехеалсскриптассигнмент.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: abe35146756d70acb737334e7958f8f77cf9fe24
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 54e365b3984bb313f5fa4dd5795f7534a38596d2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42469680"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42769138"
 ---
 # <a name="create-devicehealthscriptassignment"></a>Создание Девицехеалсскриптассигнмент
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42469680"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -103,7 +101,6 @@ Content-Length: 326
   }
 }
 ```
-
 
 
 

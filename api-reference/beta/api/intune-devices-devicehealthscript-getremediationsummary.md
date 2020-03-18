@@ -1,33 +1,33 @@
 ---
-title: Удаление Девицеманажементскриптусерстате
-description: Удаляет объект Девицеманажементскриптусерстате.
+title: Функция Жетремедиатионсуммари
+description: Пока не задокументировано.
 author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2397b08589ee392d89a5270b047eb3c66fc73b00
+ms.openlocfilehash: 4ea937ff0199fc4ed13df92a17c51c1b8d1ed195
 ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42768361"
+ms.locfileid: "42769341"
 ---
-# <a name="delete-devicemanagementscriptuserstate"></a>Удаление Девицеманажементскриптусерстате
+# <a name="getremediationsummary-function"></a>Функция Жетремедиатионсуммари
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Удаляет объект [девицеманажементскриптусерстате](../resources/intune-devices-devicemanagementscriptuserstate.md).
+Пока не задокументировано.
 
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -35,8 +35,7 @@ ms.locfileid: "42768361"
 }
 -->
 ``` http
-DELETE /deviceManagement/deviceShellScripts/{deviceShellScriptId}/userRunStates/{deviceManagementScriptUserStateId}
-DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRunStates/{deviceManagementScriptUserStateId}
+GET /deviceManagement/deviceHealthScripts/getRemediationSummary
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -48,21 +47,31 @@ DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/user
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+## <a name="response"></a>Ответ
+В случае успеха эта функция возвращает код `200 OK` отклика и объект [девицехеалсскриптремедиатионсуммари](../resources/intune-devices-devicehealthscriptremediationsummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{deviceShellScriptId}/userRunStates/{deviceManagementScriptUserStateId}
+GET https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/getRemediationSummary
 ```
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 155
+
+{
+  "value": {
+    "@odata.type": "microsoft.graph.deviceHealthScriptRemediationSummary",
+    "scriptCount": 11,
+    "remediatedDeviceCount": 5
+  }
+}
 ```
 
 

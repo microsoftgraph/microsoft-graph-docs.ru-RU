@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Манажементаженттипе
 description: Тип агента управления.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5305a0a6e2749851e1669d51310db52e5a587b86
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9e6b10c92a2c09505d1e3c5031f1d9046cfa56cb
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523641"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42769012"
 ---
 # <a name="managementagenttype-enum-type"></a>тип перечисления Манажементаженттипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -25,18 +23,19 @@ ms.locfileid: "42523641"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|атрибутов|1 |Управление устройством осуществляется с помощью Exchange Server.|
-|Корпоратив|2 |Управление устройством осуществляется с помощью Intune MDM.|
-|еасмдм|3 |Устройство управляется как в Exchange Server, так и в Intune MDM.|
+|атрибутов|1,1|Управление устройством осуществляется с помощью Exchange Server.|
+|Корпоратив|2|Управление устройством осуществляется с помощью Intune MDM.|
+|еасмдм|4|Устройство управляется как в Exchange Server, так и в Intune MDM.|
 |интунеклиент|4 |Управление клиентом Intune.|
 |еасинтунеклиент|5 |Устройство — это EAS и двойное управление клиентом Intune.|
 |конфигуратионманажерклиент|8 |Управление устройством осуществляется с помощью Configuration Manager.|
 |конфигуратионманажерклиентмдм|10 |Управление устройством осуществляется с помощью Configuration Manager и MDM.|
-|конфигуратионманажерклиентмдмеас|11 |Управление устройством осуществляется с помощью Configuration Manager, MDM и EAS.|
+|конфигуратионманажерклиентмдмеас|-11:00|Управление устройством осуществляется с помощью Configuration Manager, MDM и EAS.|
 |unknown|16 |Неизвестный тип агента управления.|
 |жамф|32|Атрибуты устройства извлекаются из Жамф.|
 |гуглеклауддевицеполициконтроллер|64|Управление устройством осуществляется с помощью Клауддпк Google.|
 |microsoft365ManagedMdm|258|Это устройство управляется Microsoft 365 с помощью Intune.|
+|виндовсманажементклаудапи|512|Это устройство управляется Cloud API управления Windows.|
 
 
 

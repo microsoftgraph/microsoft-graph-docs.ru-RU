@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Виндовсуниверсалаппксаппассигнментсеттингс
 description: Содержит свойства, используемые при назначении мобильного приложения Windows Universal AppX группе.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e8928634dd9e169b0550e10ec4d43ac638519bfa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 26a1876879955d6db404cb521e10f4e07c8db043
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523459"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42766793"
 ---
 # <a name="windowsuniversalappxappassignmentsettings-resource-type"></a>Тип ресурса Виндовсуниверсалаппксаппассигнментсеттингс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

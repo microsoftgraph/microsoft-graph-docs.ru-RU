@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицеманажементтраублешутинжеррордетаилс
 description: Объект, содержащий подробные сведения об ошибке и ее исправлении.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6fea29d21c34ab123ba5c573b2a19858cd3bf756
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0d2d9fc5f7ca2764e91c18b2bf77c0042f5b65f9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523389"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42765687"
 ---
 # <a name="devicemanagementtroubleshootingerrordetails-resource-type"></a>Тип ресурса Девицеманажементтраублешутинжеррордетаилс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

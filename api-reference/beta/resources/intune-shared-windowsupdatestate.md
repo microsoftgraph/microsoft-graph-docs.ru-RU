@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Виндовсупдатестате
 description: Пока не задокументировано.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1ed75dc4249c2d686568459928c8e0c0f894b3ac
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 92d052c50c75231e45dc40047d0985845d904cd6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523452"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42766604"
 ---
 # <a name="windowsupdatestate-resource-type"></a>Тип ресурса Виндовсупдатестате
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -39,7 +37,7 @@ ms.locfileid: "42523452"
 |userId|String|Идентификатор пользователя.|
 |deviceDisplayName|String|Отображаемое имя устройства.|
 |userPrincipalName|Строка|Имя участника пользователя.|
-|status|[windowsUpdateState](../resources/intune-shared-windowsupdatestate.md)|Состояние Windows удпате. Возможные значения: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
+|status|windowsUpdateStatus|Состояние Windows удпате. Возможные значения: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
 |куалитюпдатеверсион|String|Версия устройства для обновления качества.|
 |феатуреупдатеверсион|String|Текущая версия обновления компонентов устройства.|
 |ластскандатетиме|DateTimeOffset|Дата и время, когда агент обновления Windows успешно выполнил сканирование.|

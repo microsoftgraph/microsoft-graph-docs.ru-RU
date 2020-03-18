@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса iosVppAppAssignmentSettings
 description: Содержит свойства, используемые при назначении мобильного приложения VPP для iOS группе.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 987f020bbdae683a1ff8df9439af698c2102918b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8a72f1876d0d0dcd181aee7a9b0322f372838377
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523655"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42769572"
 ---
 # <a name="iosvppappassignmentsettings-resource-type"></a>Тип ресурса iosVppAppAssignmentSettings
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

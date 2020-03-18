@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Виндовсдомаинжоинконфигуратион
 description: Конфигурация устройства присоединения к домену Windows.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0bca3583c3d38e48be2b46015d12ebb1847332be
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7ec3d8d6eedbc342ea69799b702f747b76857eeb
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523466"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42766814"
 ---
 # <a name="windowsdomainjoinconfiguration-resource-type"></a>Тип ресурса Виндовсдомаинжоинконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -64,7 +62,7 @@ ms.locfileid: "42523466"
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Обзор состояния конфигурации устройств для пользователей. Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 
 ## <a name="json-representation"></a>Представление JSON
-Ниже представлено описание ресурса в формате JSON.  Примечание. Представленный здесь объект отклика может быть усечен для краткости. Объекты Response будут содержать свойства, относящиеся к контексту вызова.
+Ниже представлено описание ресурса в формате JSON.  Примечание. Представленный здесь объект ответа может быть усечен для краткости. Объекты Response будут содержать свойства, относящиеся к контексту вызова.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

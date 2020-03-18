@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Апплевпптокентраублешутинжевент
 description: Событие, представляющее событие устранения неполадок маркера Apple VPP.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5a278918edd904a28427b181f52444f0ce7d0dcf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d03222ffcf04b814af3c5155d7ead5c3f0b61787
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523410"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42766037"
 ---
 # <a name="applevpptokentroubleshootingevent-resource-type"></a>Тип ресурса Апплевпптокентраублешутинжевент
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

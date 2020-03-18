@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса ipRange
 description: Базовый класс диапазона IP-адресов для представления диапазонов IPv4- и IPv6-адресов
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a5256e928b916b082eb857fbe36128453d17293e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6353740dcdb537cbe72e340aa24b02dbb22deb4e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527410"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42769292"
 ---
 # <a name="iprange-resource-type"></a>Тип ресурса ipRange
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

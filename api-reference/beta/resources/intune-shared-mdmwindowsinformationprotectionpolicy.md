@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса mdmWindowsInformationProtectionPolicy
 description: Политика для Windows Information Protection с MDM
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8ccc749e230ef815c75c78a7c4d15cf18921a877
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cdd86a4fc9be088112f4118deb773db13bd9fc20
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527364"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42768977"
 ---
 # <a name="mdmwindowsinformationprotectionpolicy-resource-type"></a>Тип ресурса mdmWindowsInformationProtectionPolicy
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,20 +1,18 @@
 ---
 title: Создание Девицеманажементскриптграупассигнмент
 description: Создание нового объекта Девицеманажементскриптграупассигнмент.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6542170b28dc326d4bf96616cc982395244dd5ca
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7c6980fe83c3cb935139a5bac49f2a9883c5d4b8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42469365"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42768557"
 ---
 # <a name="create-devicemanagementscriptgroupassignment"></a>Создание Девицеманажементскриптграупассигнмент
-
-Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42469365"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,8 +52,8 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupA
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта назначения группы сценариев управления устройствами. Это свойство доступно только для чтения.|
-|таржетграупид|Строка|Идентификатор группы Azure Active Directory, на которую ориентирован сценарий.|
+|id|String|Ключ объекта назначения группы сценариев управления устройствами. Это свойство доступно только для чтения.|
+|таржетграупид|String|Идентификатор группы Azure Active Directory, на которую ориентирован сценарий.|
 
 
 
@@ -90,7 +88,6 @@ Content-Length: 173
   "targetGroupId": "Target Group Id value"
 }
 ```
-
 
 
 

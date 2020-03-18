@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса user
 description: Представляет объект пользователя Azure Active Directory.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ee24b3134c6d58224bd1fecad7c0b9e968707271
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c1c5d18be286fae35acaa35bef37bd5c3757fbe3
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523522"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42767199"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

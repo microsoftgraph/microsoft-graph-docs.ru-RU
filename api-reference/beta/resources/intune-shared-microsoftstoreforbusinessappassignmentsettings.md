@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса microsoftStoreForBusinessAppAssignmentSettings
 description: Содержит свойства, используемые при назначении мобильного приложения Microsoft Store для бизнеса группе.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bb2dc1fda4fdc903bd64d053ce377f4f5f203aa7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 62dab652d6b4f9b16d8f95d6820f3361835f4711
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523634"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42768928"
 ---
 # <a name="microsoftstoreforbusinessappassignmentsettings-resource-type"></a>Тип ресурса microsoftStoreForBusinessAppAssignmentSettings
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

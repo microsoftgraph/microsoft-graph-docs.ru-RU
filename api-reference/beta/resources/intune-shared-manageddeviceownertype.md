@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Манажеддевицеовнертипе
 description: Тип владельца устройства.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6722052f3f46abd1dad70da3ad02f2df1445b868
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f340ca4a53ee9d62747885522aeedc6f57b81252
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527370"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42769019"
 ---
 # <a name="manageddeviceownertype-enum-type"></a>тип перечисления Манажеддевицеовнертипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42527370"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Найден.|
-|внутрихолдинговом|1 |Принадлежит компании.|
-|personal|2 |Принадлежит пользователю.|
+|внутрихолдинговом|1,1|Принадлежит компании.|
+|personal|2|Принадлежит пользователю.|
 
 
 

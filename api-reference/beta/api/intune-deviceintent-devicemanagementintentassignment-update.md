@@ -1,20 +1,18 @@
 ---
 title: Обновление Девицеманажементинтентассигнмент
 description: Обновление свойств объекта Девицеманажементинтентассигнмент.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a1fd6d161288bc3be0323478ea2d3ac79529397c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 862ecb3b706d486499a3bee8c0de14c92b7368e8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42471045"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42767458"
 ---
 # <a name="update-devicemanagementintentassignment"></a>Обновление Девицеманажементинтентассигнмент
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42471045"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -93,7 +91,6 @@ Content-Length: 221
   }
 }
 ```
-
 
 
 

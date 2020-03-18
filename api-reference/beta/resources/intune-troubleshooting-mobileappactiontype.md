@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Мобилеаппактионтипе
 description: Определяет типы действий для приложения Intune.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c143a323db566c49003733a7592d380a46443440
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bfa1e56aea8a6a48437922ed002a6110001d4c70
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523354"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42765148"
 ---
 # <a name="mobileappactiontype-enum-type"></a>тип перечисления Мобилеаппактионтипе
-
-Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42523354"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Неизвестный результат.|
-|инсталлкоммандсент|1 |Была отправлена команда установки приложения.|
-|устанавлива|3 |Приложение установлено.|
+|инсталлкоммандсент|1,1|Была отправлена команда установки приложения.|
+|устанавлива|4|Приложение установлено.|
 |удалить|4 |Приложение удалено.|
 |усеррекуестединсталл|5 |Установка запрошена пользователем|
 

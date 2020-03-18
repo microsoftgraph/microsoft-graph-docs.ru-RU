@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса win32LobAppAssignmentSettings
 description: Содержит свойства, используемые для назначения бизнес-приложения Win32 для группы.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1c56d236c48918592394dc143bc6f2c45fb80401
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 340dc21cce7b52ebc55c13488f7340c7b66f9e26
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523501"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42767045"
 ---
 # <a name="win32lobappassignmentsettings-resource-type"></a>Тип ресурса win32LobAppAssignmentSettings
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -31,6 +29,7 @@ ms.locfileid: "42523501"
 |уведомления|[win32LobAppNotification](../resources/intune-shared-win32lobappnotification.md)|Состояние уведомления для этого назначения приложения. Возможные значения: `showAll`, `showReboot`, `hideAll`.|
 |рестартсеттингс|[win32LobAppRestartSettings](../resources/intune-shared-win32lobapprestartsettings.md)|Параметры перезагрузки, которые необходимо применить к данному назначению приложения.|
 |инсталлтимесеттингс|[mobileAppInstallTimeSettings](../resources/intune-shared-mobileappinstalltimesettings.md)|Параметры времени установки, применяемые к данному назначению приложения.|
+|деливерйоптимизатионприорити|[win32LobAppDeliveryOptimizationPriority](../resources/intune-apps-win32lobappdeliveryoptimizationpriority.md)|Приоритет оптимизации доставки для этого назначения приложения. Этот параметр не поддерживается в национальных облачных средах. Возможные значения: `notConfigured`, `foreground`.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -57,7 +56,8 @@ ms.locfileid: "42523501"
     "useLocalTime": true,
     "startDateTime": "String (timestamp)",
     "deadlineDateTime": "String (timestamp)"
-  }
+  },
+  "deliveryOptimizationPriority": "String"
 }
 ```
 

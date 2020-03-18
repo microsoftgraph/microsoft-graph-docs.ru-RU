@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицеманажементаутопилотевент
 description: Представляет событие процесса автопилота.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 361506e7fb04aaa06eac708ab3a13b1f08f6e163
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a70f87915e5ec886d33031f7c19a6417fafa7794
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523396"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42765988"
 ---
 # <a name="devicemanagementautopilotevent-resource-type"></a>Тип ресурса Девицеманажементаутопилотевент
-
-Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -35,18 +33,19 @@ ms.locfileid: "42523396"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|UUID объекта.|
+|deviceId|String|Идентификатор устройства, связанный с объектом|
 |eventDateTime|DateTimeOffset|Время возникновения события.|
 |девицерегистереддатетиме|DateTimeOffset|Дата регистрации устройства.|
 |енроллментстартдатетиме|DateTimeOffset|Дата начала регистрации устройства.|
 |enrollmentType|[windowsAutopilotEnrollmentType](../resources/intune-troubleshooting-windowsautopilotenrollmenttype.md)|Тип регистрации. Возможные значения: `unknown`, `azureADJoinedWithAutopilotProfile`, `offlineDomainJoined`, `azureADJoinedUsingDeviceAuthWithAutopilotProfile`, `azureADJoinedUsingDeviceAuthWithoutAutopilotProfile`, `azureADJoinedWithOfflineAutopilotProfile`, `azureADJoinedWithWhiteGlove`, `offlineDomainJoinedWithWhiteGlove`, `offlineDomainJoinedWithOfflineAutopilotProfile`.|
-|девицесериалнумбер|Строка|Серийный номер устройства.|
+|девицесериалнумбер|String|Серийный номер устройства.|
 |managedDeviceName|String|Управляемое имя устройства.|
 |userPrincipalName|String|Имя участника пользователя, используемое для регистрации устройства.|
-|виндовсаутопилотдеплойментпрофиледисплайнаме|Строка|Имя профиля для автопилота.|
+|виндовсаутопилотдеплойментпрофиледисплайнаме|String|Имя профиля для автопилота.|
 |енроллментстате|[енроллментстате](../resources/intune-shared-enrollmentstate.md)|Не удалось зарегистрировать состояние регистрации, например "зарегистрировано". Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|windows10EnrollmentCompletionPageConfigurationDisplayName|Строка|Имя профиля страницы состояния регистрации|
+|windows10EnrollmentCompletionPageConfigurationDisplayName|String|Имя профиля страницы состояния регистрации|
 |деплойментстате|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Состояние развертывания, например успешное выполнение, сбой, выполнение, Сукцессвистимеаут. Возможные значения: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`.|
-|osVersion|Строка|Версия операционной системы устройства.|
+|osVersion|String|Версия операционной системы устройства.|
 |деплойментдуратион|Длительность|Длительность развертывания с автопилотной версией, включая регистрацию.|
 |деплойменттоталдуратион|Длительность|Общее время развертывания с экрана регистрации на рабочем столе.|
 |девицепрепаратиондуратион|Длительность|Время, затраченное на регистрацию устройств.|
@@ -56,10 +55,12 @@ ms.locfileid: "42523396"
 |деплойментенддатетиме|DateTimeOffset|Время окончания развертывания.|
 |таржетедаппкаунт|Int32|Количество целевых приложений.|
 |таржетедполицикаунт|Int32|Количество целевых политик.|
-|енроллментфаилуредетаилс|Строка|Сведения о сбоях при регистрации.|
+|енроллментфаилуредетаилс|String|Сведения о сбоях при регистрации.|
 
 ## <a name="relationships"></a>Связи
-Нет
+|Связь|Тип|Описание|
+|:---|:---|:---|
+|полицистатусдетаилс|Коллекция [девицеманажементаутопилотполицистатусдетаил](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md)|Сведения о политике и состоянии приложения для этого устройства.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -73,6 +74,7 @@ ms.locfileid: "42523396"
 {
   "@odata.type": "#microsoft.graph.deviceManagementAutopilotEvent",
   "id": "String (identifier)",
+  "deviceId": "String",
   "eventDateTime": "String (timestamp)",
   "deviceRegisteredDateTime": "String (timestamp)",
   "enrollmentStartDateTime": "String (timestamp)",

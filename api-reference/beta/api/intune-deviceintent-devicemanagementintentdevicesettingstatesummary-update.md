@@ -1,20 +1,18 @@
 ---
 title: Обновление Девицеманажементинтентдевицесеттингстатесуммари
 description: Обновление свойств объекта Девицеманажементинтентдевицесеттингстатесуммари.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bcf05f6906d15eadbba9b8eba82b21667707222a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 875fef3c6dcf6b14725896949f5b19a0a9e8698b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42471010"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42766982"
 ---
 # <a name="update-devicemanagementintentdevicesettingstatesummary"></a>Обновление Девицеманажементинтентдевицесеттингстатесуммари
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42471010"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -107,7 +105,6 @@ Content-Length: 329
   "remediatedCount": 15
 }
 ```
-
 
 
 
