@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Девицеманажементдериведкредентиалнотификатионтипе
 description: Поддерживаемые значения для используемого типа уведомления.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1e32756e0d1e68397e0ca7bc843a956492ac46c3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 417c01a12d2880d003bd2c3b5f0fedf96c1ca81b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523923"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42774185"
 ---
 # <a name="devicemanagementderivedcredentialnotificationtype-enum-type"></a>тип перечисления Девицеманажементдериведкредентиалнотификатионтипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -25,9 +23,9 @@ ms.locfileid: "42523923"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|нет|нуль|Отсутствует|
-|компанипортал|1 |Корпоративный портал|
-|email|2 |Электронная почта|
+|none|нуль|Отсутствует|
+|компанипортал|1,1|Корпоративный портал|
+|email|2|Электронная почта|
 
 
 

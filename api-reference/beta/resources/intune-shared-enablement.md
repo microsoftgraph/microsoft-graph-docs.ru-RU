@@ -1,20 +1,18 @@
 ---
 title: тип перечисления включения
 description: Возможные значения свойства
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e9840d453ea3273859ac6e2d6409a83300e611fe
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 532dc96c1317c02bf15da9c0a6ced9208ff86d53
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523690"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42770454"
 ---
 # <a name="enablement-enum-type"></a>тип перечисления включения
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42523690"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Значение по умолчанию для устройства, без намерения.|
-|enabled|1 |Включает параметр на устройстве.|
-|активирован|2 |Отключает параметр на устройстве.|
+|enabled|1,1|Включает параметр на устройстве.|
+|активирован|2|Отключает параметр на устройстве.|
 
 
 

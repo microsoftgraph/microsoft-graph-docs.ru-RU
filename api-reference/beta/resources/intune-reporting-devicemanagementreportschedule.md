@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицеманажементрепортсчедуле
 description: Сущность, представляющая расписание доставки отчетов
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3ce3f9a54c3be73f089b0ddf99a1f96fd114aff9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8a7b97b0c81e0c7da87c8e91170548de22cda19d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523788"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42772316"
 ---
 # <a name="devicemanagementreportschedule-resource-type"></a>Тип ресурса Девицеманажементрепортсчедуле
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

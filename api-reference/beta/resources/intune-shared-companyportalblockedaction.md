@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Компанипорталблоккедактион
 description: Заблокированные действия на корпоративном портале в соответствии с типами владения платформой и устройствами
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 15460de0c53b1b7b383095b7bee50af0192b3462
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ac1bebe15948c0088ee2d4d9355650fc435a1eb9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527486"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42771672"
 ---
 # <a name="companyportalblockedaction-resource-type"></a>Тип ресурса Компанипорталблоккедактион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

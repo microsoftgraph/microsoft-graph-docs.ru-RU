@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Девицеманажементрепортфилеформат
 description: Возможные значения для формата файла отчета
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 35c41d230322716cff18da9cb6e9cc92e7685fdd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f32afaadfff2bde53843452c4d098820c8d39606
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523802"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42772477"
 ---
 # <a name="devicemanagementreportfileformat-enum-type"></a>тип перечисления Девицеманажементрепортфилеформат
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,7 +24,7 @@ ms.locfileid: "42523802"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |расширения|нуль|Значения, разделенные запятыми|
-|pdf|1 |Формат PDF|
+|pdf|1,1|Формат PDF|
 
 
 

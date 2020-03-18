@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса allDevicesAssignmentTarget
 description: Представляет ресурс, назначенный всем управляемым устройствам в клиенте.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 813f7e67ce9456733187426083f3920cf05cc94d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0c472cf0166631b3db2b4270be62cfdd6d43f8ca
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527497"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42772232"
 ---
 # <a name="alldevicesassignmenttarget-resource-type"></a>Тип ресурса allDevicesAssignmentTarget
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

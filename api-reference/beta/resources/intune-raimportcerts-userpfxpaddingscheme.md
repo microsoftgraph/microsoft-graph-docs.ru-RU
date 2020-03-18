@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Усерпфкспаддингсчеме
 description: Поддерживаемые значения для схемы заполнения, используемой поставщиком шифрования.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f1d2b51ce966caf923e15e39694db616b639c441
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 73cd96dcc01a99df657ca7f538046c7e5e7ed4a6
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523930"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42774227"
 ---
 # <a name="userpfxpaddingscheme-enum-type"></a>тип перечисления Усерпфкспаддингсчеме
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -25,10 +23,10 @@ ms.locfileid: "42523930"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|нет|нуль|Неизвестная схема заполнения.|
-|pkcs1|1 |Pkcs1 больше не поддерживается|
-|oaepSha1|2 |OaepSha1 больше не поддерживается|
-|oaepSha256|3 |Используйте заполнение OAEP SHA – 256.|
+|none|нуль|Неизвестная схема заполнения.|
+|pkcs1|1,1|Pkcs1 больше не поддерживается|
+|oaepSha1|2|OaepSha1 больше не поддерживается|
+|oaepSha256|4|Используйте заполнение OAEP SHA – 256.|
 |oaepSha384|4 |Используйте заполнение OAEP SHA – 384.|
 |oaepSha512|5 |Используйте заполнение OAEP SHA – 512.|
 

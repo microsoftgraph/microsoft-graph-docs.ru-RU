@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Девицеманажементрепортстатус
 description: Возможные состояния, связанные с созданным отчетом
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e549e2ca96e272930c13aa07f0e35e2143e96c2d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c5578c11ae322fd1745cb5ed5d2f74091997be65
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527513"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42772309"
 ---
 # <a name="devicemanagementreportstatus-enum-type"></a>тип перечисления Девицеманажементрепортстатус
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42527513"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Состояние создания отчета неизвестно|
-|notStarted|1 |Создание отчета не начато|
-|inProgress|2 |Идет создание отчета|
-|готовы|3 |Создание отчета завершено|
+|notStarted|1,1|Создание отчета не начато|
+|inProgress|2|Идет создание отчета|
+|готовы|4|Создание отчета завершено|
 |сбоев|4 |Не удалось создать отчет|
 
 

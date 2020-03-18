@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса resourceOperation
 description: Описывает ресурс resourceOperation (Entity) API Microsoft Graph (REST), который поддерживает рабочие процессы Intune, связанные с управлением доступом на основе ролей (RBAC).
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: eb92fdb1f4607d705a3d883a4ce824a852b3aad9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 460e189aa5c6ab698fdc8bcad65cb3bd3bb48f71
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523902"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42773338"
 ---
 # <a name="resourceoperation-resource-type"></a>Тип ресурса resourceOperation
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

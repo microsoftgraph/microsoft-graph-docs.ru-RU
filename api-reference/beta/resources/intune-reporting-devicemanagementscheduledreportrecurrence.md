@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Девицеманажементсчедуледрепортрекурренце
 description: Возможные значения для повторения запланированного отчета
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d10c5bb9d76b96d910ede61bdc98bd0f4a745769
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b0ecdb4fc6616ab82d5a41f7d6ad7d1987cb59a9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523781"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42772267"
 ---
 # <a name="devicemanagementscheduledreportrecurrence-enum-type"></a>тип перечисления Девицеманажементсчедуледрепортрекурренце
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -25,10 +23,10 @@ ms.locfileid: "42523781"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|нет|нуль|Значение по умолчанию, указывает один экземпляр|
-|ежедневно|1 |Ежедневное|
-|Табель|2 |Еженедельное|
-|ежемесячно|3 |Monthly|
+|none|нуль|Значение по умолчанию, указывает один экземпляр|
+|ежедневно|1,1|Ежедневное|
+|Табель|2|Еженедельное|
+|ежемесячно|4|Monthly|
 
 
 

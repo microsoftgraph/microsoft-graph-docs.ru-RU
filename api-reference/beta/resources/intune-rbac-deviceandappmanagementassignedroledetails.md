@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицеандаппманажементассигнедроледетаилс
 description: Набор определений ролей и назначений ролей, назначенных пользователю.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 17a2313b60d4cf843e5b048821a58748c8eb27ca
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f1590470f436dac6572ebf9d0430d144060f9b7f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523916"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42773947"
 ---
 # <a name="deviceandappmanagementassignedroledetails-resource-type"></a>Тип ресурса Девицеандаппманажементассигнедроледетаилс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
