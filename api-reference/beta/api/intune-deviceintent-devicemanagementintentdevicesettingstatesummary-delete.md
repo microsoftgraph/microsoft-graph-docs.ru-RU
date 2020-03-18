@@ -10,7 +10,7 @@ ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/18/2020
-ms.locfileid: "42767276"
+ms.locfileid: "42815298"
 ---
 # <a name="delete-devicemanagementintentdevicesettingstatesummary"></a>Удаление Девицеманажементинтентдевицесеттингстатесуммари
 
