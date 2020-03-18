@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Усеремаилсаурце
 description: Возможные значения для источника имени пользователя или источника электронной почты.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 984882a2e4edc20b8c7baafb05512a9052e0a881
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d5cc2f678fc0baa97cb88f8fe5043fd2f4dcb063
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529348"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787441"
 ---
 # <a name="useremailsource-enum-type"></a>тип перечисления Усеремаилсаурце
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,7 +24,7 @@ ms.locfileid: "42529348"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |userPrincipalName|нуль|Имя участника пользователя.|
-|primarySmtpAddress|1 |Основной SMTP-адрес.|
+|primarySmtpAddress|1,1|Основной SMTP-адрес.|
 
 
 

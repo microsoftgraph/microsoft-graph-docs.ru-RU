@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Мдмаппконфигкэйтипе
 description: Типы ключей конфигурации приложений.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 31bc1c4651484a4cdb1d74fee29449a00a02f6a8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 982423e7215cf2311542d4d6c0b0526667f7d8ce
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42492126"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797897"
 ---
 # <a name="mdmappconfigkeytype-enum-type"></a>тип перечисления Мдмаппконфигкэйтипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42492126"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |стрингтипе|нуль|Пока не задокументировано.|
-|интежертипе|1 |Пока не задокументировано.|
-|реалтипе|2 |Пока не задокументировано.|
-|булеантипе|3 |Пока не задокументировано.|
+|интежертипе|1,1|Пока не задокументировано.|
+|реалтипе|2|Пока не задокументировано.|
+|булеантипе|4|Пока не задокументировано.|
 |токентипе|4 |Пока не задокументировано.|
 
 

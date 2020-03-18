@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Макосминимумоператингсистем
 description: Минимальная операционная система, необходимая для приложения MacOS.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b2661ebf7d9921fda2af9a4f07559865065a18cd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 10761cc10189608ac7bd7bce52a199c355f3a807
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42493120"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42798023"
 ---
 # <a name="macosminimumoperatingsystem-resource-type"></a>Тип ресурса Макосминимумоператингсистем
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

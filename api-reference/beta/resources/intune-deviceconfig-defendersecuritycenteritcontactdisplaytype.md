@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Дефендерсекуритицентеритконтактдисплайтипе
 description: Возможные значения для Дефендерсекуритицентеритконтактдисплай
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ff93946acfd1681dd03d94a742926be1653f543e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 772144cff07e1e35b22a36cf9ad602c20edb353d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526854"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42794433"
 ---
 # <a name="defendersecuritycenteritcontactdisplaytype-enum-type"></a>тип перечисления Дефендерсекуритицентеритконтактдисплайтипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42526854"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Not Configured|
-|дисплайинаппандиннотификатионс|1 |Отображение в приложении и в уведомлениях|
-|дисплайонлинапп|2 |Отображение только в приложении|
-|дисплайонлиннотификатионс|3 |Отображение только в уведомлениях|
+|дисплайинаппандиннотификатионс|1,1|Отображение в приложении и в уведомлениях|
+|дисплайонлинапп|2|Отображение только в приложении|
+|дисплайонлиннотификатионс|4|Отображение только в уведомлениях|
 
 
 

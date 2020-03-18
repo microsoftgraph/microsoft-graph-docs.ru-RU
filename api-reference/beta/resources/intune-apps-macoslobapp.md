@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Макослобапп
 description: Содержит свойства и наследуемые свойства для бизнес-приложения MacOS.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 094d8a0f41d22bd79d5b30036b32491f06786720
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9167700da0884d50618943e6632b5acd0d3e721e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42493183"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42798051"
 ---
 # <a name="macoslobapp-resource-type"></a>Тип ресурса Макослобапп
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

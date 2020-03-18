@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Андроидфорворкниневоркеасконфигуратион
 description: Предоставляя конфигурации в этом профиле, вы можете указать девять рабочих почтовых клиентов на Android для работы с сервером Exchange и получать электронную почту, контакты, календарь, задачи и заметки. Кроме того, вы также можете указать, какой объем электронной почты необходимо синхронизировать, и как часто устройство должно синхронизироваться.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 76da94f065945d1db19806c7de5f83a27eb1d2a2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a841a096461deb8131dd0dbae19ed299fc4c5a56
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42484696"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796834"
 ---
 # <a name="androidforworknineworkeasconfiguration-resource-type"></a>Тип ресурса Андроидфорворкниневоркеасконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

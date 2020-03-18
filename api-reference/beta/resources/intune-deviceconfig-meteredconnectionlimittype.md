@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Метередконнектионлимиттипе
 description: Параметры ограничения лимитного подключения.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ae979859b9e6802e91602c96e42cafb1104f6eeb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b1bb6334a90f61d14ad4b58876ef4de545d30fd5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526015"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788543"
 ---
 # <a name="meteredconnectionlimittype-enum-type"></a>тип перечисления Метередконнектионлимиттипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42526015"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unrestricted|нуль|Unrestricted|
-|стандарт|1 |ИСПРАВЛЕНО|
-|переменная|2 |Переменная|
+|стандарт|1,1|ИСПРАВЛЕНО|
+|переменная|2|Переменная|
 
 
 

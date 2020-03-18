@@ -1,20 +1,18 @@
 ---
 title: тип перечисления subjectAlternativeNameType
 description: Варианты альтернативного имени субъекта.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ba8f6c35cb5588820339a23ada1c432bf621b023
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7837c1027a6711a0614c0329c46c5a9e41b9f265
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525826"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787476"
 ---
 # <a name="subjectalternativenametype-enum-type"></a>тип перечисления subjectAlternativeNameType
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -25,9 +23,9 @@ ms.locfileid: "42525826"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|нет|нуль|Нет альтернативного имени субъекта.|
-|emailAddress|1 |Адрес электронной почты.|
-|userPrincipalName|2 |Имя участника-пользователя (UPN).|
+|none|нуль|Нет альтернативного имени субъекта.|
+|emailAddress|1,1|Адрес электронной почты.|
+|userPrincipalName|2|Имя участника-пользователя (UPN).|
 |кустомазуреадаттрибуте|4 |Настраиваемый атрибут Azure AD.|
 |домаиннамесервице|8 |Служба доменных имен (DNS).|
 

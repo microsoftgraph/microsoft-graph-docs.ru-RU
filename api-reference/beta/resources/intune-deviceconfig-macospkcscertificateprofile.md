@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Макоспкксцертификатепрофиле
 description: Профиль сертификата PKCS MacOS.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 47cf0e9fcb109785ae0a82f87d8397caef4ed1b8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 192a22b50da7850ca119fb84931cc19f4f2804fa
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526092"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42789201"
 ---
 # <a name="macospkcscertificateprofile-resource-type"></a>Тип ресурса Макоспкксцертификатепрофиле
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

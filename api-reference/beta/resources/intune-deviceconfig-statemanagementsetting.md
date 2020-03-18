@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Статеманажементсеттинг
 description: Параметр управления состоянием.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 603d2a282602f40a1804b4f317dd2d35e58e7b91
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3c415bc3166044c0690e152dbdc1a624a179d020
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529367"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787483"
 ---
 # <a name="statemanagementsetting-enum-type"></a>тип перечисления Статеманажементсеттинг
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42529367"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
-|заблокированных|1 |Заблокированных.|
-|разрешенных|2 |Разрешенных.|
+|заблокированных|1,1|Заблокированных.|
+|разрешенных|2|Разрешенных.|
 
 
 

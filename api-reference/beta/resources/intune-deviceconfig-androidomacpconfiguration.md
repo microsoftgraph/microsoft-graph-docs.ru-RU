@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Андроидомакпконфигуратион
 description: Если вы предоставляете конфигурацию в этом профиле, вы можете настроить устройства Android, поддерживающие OMA — CP.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 77705fcebbd0642e682552026d29d3253eaf754e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0987a9b264a9e4fe7e6bc31b7e714f3d514d771e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527315"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796750"
 ---
 # <a name="androidomacpconfiguration-resource-type"></a>Тип ресурса Андроидомакпконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

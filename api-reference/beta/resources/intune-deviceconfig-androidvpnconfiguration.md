@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Андроидвпнконфигуратион
 description: Предоставляя конфигурации в этом профиле, вы можете указать устройству Android подключаться к необходимой конечной точке VPN. Указав способ проверки подлинности и типы безопасности, ожидаемые конечной точкой VPN, вы можете сделать VPN-подключение неполноценным для конечного пользователя.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a768e8b86c870168b9d28bcab16ff0d0ea02aa2e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6a315db709e5ee7ba0c14b35f952b049826e6d2b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527275"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796708"
 ---
 # <a name="androidvpnconfiguration-resource-type"></a>Тип ресурса Андроидвпнконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

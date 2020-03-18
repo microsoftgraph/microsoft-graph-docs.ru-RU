@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Андроидманажедстореаккаунтаппсинкстатус
 description: Состояние синхронизации клиента с помощью API Google EMM
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1817d9593d63c7343ed612e7dc82f8388d34c345
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 857100f71e71c20e301304d9100cf40cafd59d1f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42494704"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799370"
 ---
 # <a name="androidmanagedstoreaccountappsyncstatus-enum-type"></a>тип перечисления Андроидманажедстореаккаунтаппсинкстатус
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,11 +24,11 @@ ms.locfileid: "42494704"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |success|нуль|Пока не задокументировано.|
-|кредентиалснотвалид|1 |Пока не задокументировано.|
-|андроидфорворкапиеррор|2 |Пока не задокументировано.|
-|манажементсервицееррор|3 |Пока не задокументировано.|
+|кредентиалснотвалид|1,1|Пока не задокументировано.|
+|андроидфорворкапиеррор|2|Пока не задокументировано.|
+|манажементсервицееррор|4|Пока не задокументировано.|
 |ункновнеррор|4 |Пока не задокументировано.|
-|нет|5 |Пока не задокументировано.|
+|none|5 |Пока не задокументировано.|
 
 
 

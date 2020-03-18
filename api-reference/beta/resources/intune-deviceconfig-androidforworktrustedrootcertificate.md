@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Андроидфорворктрустедрутцертификате
 description: Профиль конфигурации доверенного корневого сертификата Android для Android
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4f501e0d1d8629459533e2b311fe061670151d6f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1c9b92be3d8d7ba93ecb857dc520777702a7c48b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42484367"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796806"
 ---
 # <a name="androidforworktrustedrootcertificate-resource-type"></a>Тип ресурса Андроидфорворктрустедрутцертификате
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

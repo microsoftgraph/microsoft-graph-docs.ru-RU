@@ -4,16 +4,16 @@ description: Список API Microsoft Graph для конечных точек
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: b75ea23fcde73349efb857df50e8df71bd34c2d8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 18958c1ff3789a2a8cdea35d51d605c09331b745
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42487468"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797243"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -39,6 +39,8 @@ ms.locfileid: "42487468"
 - [Тип подходящего управления для совместного управления](intune-devices-comanagementeligibletype.md)
 - [Состояние соответствия требованиям](intune-devices-compliancestate.md)
 - [Действие диспетчера конфигураций](intune-devices-configurationmanageraction.md)
+- [Состояние доставки действий Configuration Manager](intune-devices-configurationmanageractiondeliverystatus.md)
+- [Результат действия диспетчера конфигураций](intune-devices-configurationmanageractionresult.md)
 - [Тип действия диспетчера конфигураций](intune-devices-configurationmanageractiontype.md)
 - [Функции с поддержкой клиента Configuration Manager](intune-devices-configurationmanagerclientenabledfeatures.md)
 - [Состояние работоспособности клиента Configuration Manager](intune-devices-configurationmanagerclienthealthstate.md)
@@ -49,6 +51,7 @@ ms.locfileid: "42487468"
 - [Удаление пользователя из результата действия над общим устройством Apple](intune-devices-deleteuserfromsharedappledeviceactionresult.md)
 - [Обнаруженное приложение](intune-devices-detectedapp.md)
 - [Результат действия над устройством](intune-devices-deviceactionresult.md)
+- [Тип фильтра назначения управления устройствами и приложениями](intune-esim-deviceandappmanagementassignmentfiltertype.md)
 - [Причина сбоя регистрации устройства](intune-troubleshooting-deviceenrollmentfailurereason.md)
 - [Сводка по состоянию доступа к Exchange для устройств](intune-devices-deviceexchangeaccessstatesummary.md)
 - [Геолокация устройств](intune-devices-devicegeolocation.md)
@@ -59,10 +62,14 @@ ms.locfileid: "42487468"
 - [Сценарий работоспособности устройства](intune-devices-devicehealthscript.md)
 - [Назначение сценария работоспособности устройства](intune-devices-devicehealthscriptassignment.md)
 - [Состояние устройства сценария работоспособности устройства](intune-devices-devicehealthscriptdevicestate.md)
+- [Сводка по исправлению сценариев работоспособности устройств](intune-devices-devicehealthscriptremediationsummary.md)
 - [Сводка по запуску сценария работоспособности устройства](intune-devices-devicehealthscriptrunsummary.md)
 - [Определение абстрактного сложного параметра управления устройствами](intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md)
 - [Экземпляр абстрактного сложного параметра управления устройствами](intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md)
 - [Событие автопилота управления устройствами](intune-troubleshooting-devicemanagementautopilotevent.md)
+- [Состояние соответствия политике для автопилота управления устройствами](intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md)
+- [Сведения о состоянии политики автопилотного управления устройствами](intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md)
+- [Тип политики автопилотного управления устройствами](intune-troubleshooting-devicemanagementautopilotpolicytype.md)
 - [Экземпляр логического параметра управления устройствами](intune-deviceintent-devicemanagementbooleansettinginstance.md)
 - [Определение параметра коллекции управления устройствами](intune-deviceintent-devicemanagementcollectionsettingdefinition.md)
 - [Экземпляр параметра коллекции управления устройствами](intune-deviceintent-devicemanagementcollectionsettinginstance.md)
@@ -103,6 +110,7 @@ ms.locfileid: "42487468"
 - [Ограничение профиля для установки управления устройствами](intune-deviceintent-devicemanagementsettingprofileconstraint.md)
 - [Регулярное выражение ограничения параметра управления устройствами](intune-deviceintent-devicemanagementsettingregexconstraint.md)
 - [Обязательное ограничение для параметра управления устройствами](intune-deviceintent-devicemanagementsettingrequiredconstraint.md)
+- [Ограничение SDDL для параметров управления устройствами](intune-deviceintent-devicemanagementsettingsddlconstraint.md)
 - [Длина строки ограничения параметра управления устройствами](intune-deviceintent-devicemanagementsettingstringlengthconstraint.md)
 - [XML-ограничение параметра управления устройствами](intune-deviceintent-devicemanagementsettingxmlconstraint.md)
 - [Экземпляр параметра строки управления устройствами](intune-deviceintent-devicemanagementstringsettinginstance.md)

@@ -1,20 +1,18 @@
 ---
 title: тип перечисления nonEapAuthenticationMethodForPeap
 description: Методы, отличные от EAP, для проверки подлинности, когда PEAP — выбранный тип EAP.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6b8474c224b8ddd36c023179f0aa8320dc7054f8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d23178670c881f41d09427b039707319ef617566
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525994"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788501"
 ---
 # <a name="noneapauthenticationmethodforpeap-enum-type"></a>тип перечисления nonEapAuthenticationMethodForPeap
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -25,8 +23,8 @@ ms.locfileid: "42525994"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|нет|нуль|Нет.|
-|микрософтчапверсионтво|1 |Microsoft CHAP версии 2 (MS-CHAP v2).|
+|none|нуль|Нет.|
+|микрософтчапверсионтво|1,1|Microsoft CHAP версии 2 (MS-CHAP v2).|
 
 
 

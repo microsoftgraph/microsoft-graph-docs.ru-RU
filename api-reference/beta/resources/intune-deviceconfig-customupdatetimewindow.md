@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Кустомупдатетимевиндов
 description: Настраиваемое окно времени обновления
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6aa5ac1dfe78f2eb05ddee236689a1707f87389f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f56cf571b24c2bcee52e82100f5c087772c336e5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526932"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42795647"
 ---
 # <a name="customupdatetimewindow-resource-type"></a>Тип ресурса Кустомупдатетимевиндов
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

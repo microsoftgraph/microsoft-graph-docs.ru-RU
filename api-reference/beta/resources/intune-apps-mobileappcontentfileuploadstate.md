@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Мобилеаппконтентфилеуплоадстате
 description: Содержит свойства для состояний запроса на отправку.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 28b89119acb17ecbc94e081122f69c27e0357c45
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5bcf54beeb8155a865c2360018d29b40599b2918
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42491769"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797834"
 ---
 # <a name="mobileappcontentfileuploadstate-enum-type"></a>тип перечисления Мобилеаппконтентфилеуплоадстате
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42491769"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |success|нуль|Пока не задокументировано.|
-|трансиентеррор|1 |Пока не задокументировано.|
-|error|2 |Пока не задокументировано.|
-|unknown|3 |Пока не задокументировано.|
+|трансиентеррор|1,1|Пока не задокументировано.|
+|error|2|Пока не задокументировано.|
+|unknown|4|Пока не задокументировано.|
 |азуресторажеурирекуестсукцесс|100|Пока не задокументировано.|
 |азуресторажеурирекуестпендинг|101|Пока не задокументировано.|
 |азуресторажеурирекуестфаилед|102|Пока не задокументировано.|

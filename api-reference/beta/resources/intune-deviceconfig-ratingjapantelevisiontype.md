@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Ратингжапантелевисионтипе
 description: Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Японии
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: dcb649cbdff5fa0bc13d432d80506e1993ccc7d8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2a9b421a80cb2b8f93385d097db2849091123ca1
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525917"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787679"
 ---
 # <a name="ratingjapantelevisiontype-enum-type"></a>тип перечисления Ратингжапантелевисионтипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42525917"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |аллалловед|нуль|Значение по умолчанию, разрешить все показы контента|
-|аллблоккед|1 |Не разрешать показ контента|
-|експлиЦиталловед|2 |Все ТЕЛЕВИЗИОНные материалы явно разрешены|
+|аллблоккед|1,1|Не разрешать показ контента|
+|експлиЦиталловед|2|Все ТЕЛЕВИЗИОНные материалы явно разрешены|
 
 
 

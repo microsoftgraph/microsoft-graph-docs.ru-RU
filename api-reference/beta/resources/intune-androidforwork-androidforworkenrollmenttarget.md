@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Андроидфорворкенроллменттаржет
 description: Тип нацеленности управления рабочими устройствами Android для учетной записи
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b46884cd6eaf9a1e656841a2c71e5a24c501d036
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8e18b97c62e86a5b729d732298826ea3f77b2779
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42494907"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799391"
 ---
 # <a name="androidforworkenrollmenttarget-enum-type"></a>тип перечисления Андроидфорворкенроллменттаржет
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -25,10 +23,10 @@ ms.locfileid: "42494907"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|нет|нуль|Пока не задокументировано.|
-|ко|1 |Пока не задокументировано.|
-|Целевой|2 |Пока не задокументировано.|
-|таржетедасенроллментрестриктионс|3 |Пока не задокументировано.|
+|none|нуль|Пока не задокументировано.|
+|ко|1,1|Пока не задокументировано.|
+|Целевой|2|Пока не задокументировано.|
+|таржетедасенроллментрестриктионс|4|Пока не задокументировано.|
 
 
 

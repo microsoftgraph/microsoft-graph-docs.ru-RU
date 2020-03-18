@@ -1,20 +1,18 @@
 ---
 title: Удаление Девицеманажементаутопилотевент
 description: Удаляет объект Девицеманажементаутопилотевент.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b92fbeb95e044a4e2c345c9ae839a35e6dd46b04
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bfc494c8538426eceb4f5b4d5d3395847b643de0
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457729"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800258"
 ---
 # <a name="delete-devicemanagementautopilotevent"></a>Удаление Девицеманажементаутопилотевент
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42457729"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/autopilotEvents/{device
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

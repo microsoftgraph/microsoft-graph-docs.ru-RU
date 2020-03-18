@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Дефендераттакксурфацетипе
 description: Возможные значения правил уменьшения зоны атак защитника
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 92d7cf37a89bdd263cae5f9c0d7434d07c36b5d1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6f160cdd8cbaa5abf7adf8180d8077d99e4a07d3
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526909"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42795621"
 ---
 # <a name="defenderattacksurfacetype-enum-type"></a>тип перечисления Дефендераттакксурфацетипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42526909"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Значение по умолчанию для устройства, без намерения.|
-|блок|1 |Функциональная возможность блока.|
-|аудитмоде|2 |Не изменяет функциональность, но создает журналы.|
+|блок|1,1|Функциональная возможность блока.|
+|аудитмоде|2|Не изменяет функциональность, но создает журналы.|
 
 
 

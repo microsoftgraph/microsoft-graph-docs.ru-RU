@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Еджеопеноптионс
 description: Возможные значения параметра Еджеопенсвис.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6a8d9181a1e6c8589f01212eacb459758947c0ee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0073ca9b1c7e6c01adcb6354e11becc6246dbe70
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526502"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791872"
 ---
 # <a name="edgeopenoptions-enum-type"></a>тип перечисления Еджеопеноптионс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42526502"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
-|startPage|1 |StartPage.|
-|невтабпаже|2 |Невтабпаже.|
-|превиауспажес|3 |Превиауспажес.|
+|startPage|1,1|StartPage.|
+|невтабпаже|2|Невтабпаже.|
+|превиауспажес|4|Превиауспажес.|
 |спеЦификпажес|4 |СпеЦификпажес.|
 
 

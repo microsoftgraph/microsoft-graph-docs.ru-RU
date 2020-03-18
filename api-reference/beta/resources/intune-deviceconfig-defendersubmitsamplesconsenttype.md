@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Дефендерсубмитсамплесконсенттипе
 description: Возможные значения для Дефендерсубмитсамплесконсенттипе
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: df739744ddb25d0351f49bb38a37ed6b59f47c35
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5fc146fb2bc65a44161a02b90e87ac805d1cb7f8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526836"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42794419"
 ---
 # <a name="defendersubmitsamplesconsenttype-enum-type"></a>тип перечисления Дефендерсубмитсамплесконсенттипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42526836"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |сендсафесамплесаутоматикалли|нуль|Автоматическая отправка надежных образцов|
-|алвайспромпт|1 |Всегда запрашивать|
-|неверсенд|2 |Никогда не отправлять|
-|сендаллсамплесаутоматикалли|3 |Автоматическая отправка всех примеров|
+|алвайспромпт|1,1|Всегда запрашивать|
+|неверсенд|2|Никогда не отправлять|
+|сендаллсамплесаутоматикалли|4|Автоматическая отправка всех примеров|
 
 
 

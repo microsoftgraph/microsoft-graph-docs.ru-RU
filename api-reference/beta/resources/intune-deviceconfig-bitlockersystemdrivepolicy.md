@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Bitlockersystemdrivepolicy.
 description: Основные политики шифрования BitLocker.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a09ae1045dfa7f7418205e3aa39948dc9e5b67b0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 313def2a64fdb1a2af57461ba58860361e0de1f2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527012"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42795731"
 ---
 # <a name="bitlockersystemdrivepolicy-resource-type"></a>Тип ресурса Bitlockersystemdrivepolicy.
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

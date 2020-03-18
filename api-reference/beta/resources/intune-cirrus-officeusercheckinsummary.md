@@ -2,19 +2,17 @@
 title: Тип ресурса Оффицеусерчеккинсуммари
 description: Сущность, описывающая статистику по возврату клиента.
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f3daa7fd8691fe6c6894a2305e9f5c1533f597b5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9ef202194c8817e500d27a96ae3dbf4e5e1a8359
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42488070"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797299"
 ---
 # <a name="officeusercheckinsummary-resource-type"></a>Тип ресурса Оффицеусерчеккинсуммари
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

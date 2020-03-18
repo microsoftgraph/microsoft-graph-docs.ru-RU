@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Андроидентерприсеалвайсонвпнпаккажетипе
 description: Пока не задокументировано.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6471aee5a287a9977800f273c438719b1e9daadc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 696313766965836adc5567794716b631dbe962af
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42485739"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796918"
 ---
 # <a name="androidenterprisealwaysonvpnpackagetype-enum-type"></a>тип перечисления Андроидентерприсеалвайсонвпнпаккажетипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42485739"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен; Это значение игнорируется.|
-|собственный|1 |Имя настраиваемого пакета, ИТ-специалистов может предоставить имя пакета VPN-клиента, который необходимо использовать.|
-|Цискоаниконнект|2 |Cisco Аниконнект.|
-|f5Access|3 |Клавиша F5 доступ.|
+|собственный|1,1|Имя настраиваемого пакета, ИТ-специалистов может предоставить имя пакета VPN-клиента, который необходимо использовать.|
+|Цискоаниконнект|2|Cisco Аниконнект.|
+|f5Access|4|Клавиша F5 доступ.|
 |палоалтонетворксглобалпротект|4 |Palo Alto сети Глобалпротект.|
 |пулсесекуре|5 |Безопасный импульс.|
 

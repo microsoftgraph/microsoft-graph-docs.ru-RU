@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса windows10VpnProxyServer
 description: VPN-прокси-сервер.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fa927bbc78419956e9b9cc8b330fc724f8e3c432
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7c346fa236589c060679f77f923a4d043ca6a06f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529154"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786616"
 ---
 # <a name="windows10vpnproxyserver-resource-type"></a>Тип ресурса windows10VpnProxyServer
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

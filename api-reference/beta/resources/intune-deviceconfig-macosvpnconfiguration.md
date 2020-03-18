@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Макосвпнконфигуратион
 description: Предоставляя конфигурации в этом профиле, вы можете указать Mac-устройству подключаться к необходимой конечной точке VPN. Указав способ проверки подлинности и типы безопасности, ожидаемые конечной точкой VPN, вы можете сделать VPN-подключение неполноценным для конечного пользователя.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6bd48eb64a1cfe7382d552fdaa1d95a6bc72c933
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1efde2477569579eb7a1acb5078a418bf5e7e46a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529665"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42789166"
 ---
 # <a name="macosvpnconfiguration-resource-type"></a>Тип ресурса Макосвпнконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

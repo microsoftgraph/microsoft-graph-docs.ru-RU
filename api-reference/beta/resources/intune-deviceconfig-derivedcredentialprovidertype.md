@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Дериведкредентиалпровидертипе
 description: Тип поставщика для производных учетных данных.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ab592c6e8e50def1b2064225d5e6bef108bed4c5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 54c8c90c000688e5de254a4192c17146055cf91d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526735"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42793375"
 ---
 # <a name="derivedcredentialprovidertype-enum-type"></a>тип перечисления Дериведкредентиалпровидертипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42526735"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен производный поставщик учетных данных.|
-|ентрустдатакард|1 |Ентруст.|
-|пуребред|2 |Агентство по оборонным информационным системам пуребред.|
-|кстек|3 |Кстек — Аусенткс.|
+|ентрустдатакард|1,1|Ентруст.|
+|пуребред|2|Агентство по оборонным информационным системам пуребред.|
+|кстек|4|Кстек — Аусенткс.|
 |интерцеде|4 |Интерцеде.|
 
 

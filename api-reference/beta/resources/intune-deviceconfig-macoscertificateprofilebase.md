@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Макосцертификатепрофилебасе
 description: Профиль сертификата Mac OS.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6cc2658ce242420b038dd33a8bf50cd3105297fa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6da9202855078476b14a087369006666c1343f6d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529741"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790316"
 ---
 # <a name="macoscertificateprofilebase-resource-type"></a>Тип ресурса Макосцертификатепрофилебасе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

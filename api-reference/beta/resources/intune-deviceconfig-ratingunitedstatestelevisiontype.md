@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Ратингунитедстатестелевисионтипе
 description: Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Соединенных Штатах
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 00e85b175552adf08dc518307950820fab22f753
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8503ff7db3ff7e1b3d4ba742e694032632054ae1
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525896"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787637"
 ---
 # <a name="ratingunitedstatestelevisiontype-enum-type"></a>тип перечисления Ратингунитедстатестелевисионтипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42525896"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |аллалловед|нуль|Значение по умолчанию, разрешить все показы контента|
-|аллблоккед|1 |Не разрешать показ контента|
-|чилдреналл|2 |ТВ-Y, все дочерние элементы|
-|childrenAbove7|3 |ТВ-Y7, детей от 7 лет и выше|
+|аллблоккед|1,1|Не разрешать показ контента|
+|чилдреналл|2|ТВ-Y, все дочерние элементы|
+|childrenAbove7|4|ТВ-Y7, детей от 7 лет и выше|
 |обобщен|4 |Телевидение (TV-G), пригодный для всех лет|
 |паренталгуиданце|5 |TV-PG, родительский совет|
 |childrenAbove14|6 |TV-14, детей от 14 лет и выше|

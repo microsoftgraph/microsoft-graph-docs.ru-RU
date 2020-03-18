@@ -1,20 +1,18 @@
 ---
 title: тип перечисления win32LobAppRegistryDetectionType
 description: Содержит все поддерживаемые типы обнаружения данных в реестре.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b3324b0e2bc8833e9c5b5e2167174a839c3942e2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 44e3f0ebba23b899a4a31f2a8f982de08640411f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42490457"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797579"
 ---
 # <a name="win32lobappregistrydetectiontype-enum-type"></a>тип перечисления win32LobAppRegistryDetectionType
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42490457"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
-|Существует|1 |Указанный раздел или значение реестра существуют.|
-|доеснотексист|2 |Указанный раздел реестра или значение не существует.|
-|строка|3 |Тип строкового значения.|
+|Существует|1,1|Указанный раздел или значение реестра существуют.|
+|доеснотексист|2|Указанный раздел реестра или значение не существует.|
+|string|4|Тип строкового значения.|
 |целое|4 |Тип значения Integer.|
 |version|5 |Тип значения Version.|
 

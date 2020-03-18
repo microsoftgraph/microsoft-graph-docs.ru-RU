@@ -1,20 +1,18 @@
 ---
 title: тип перечисления windows10VpnConnectionType
 description: Типы VPN-подключений.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e464f8136c069edd94d7ebacf9946d6648028dc6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3a5e514b5cbaecd2272c4bb94e2f21356633e8fb
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529161"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786630"
 ---
 # <a name="windows10vpnconnectiontype-enum-type"></a>тип перечисления windows10VpnConnectionType
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42529161"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |пулсесекуре|нуль|Безопасный импульс.|
-|f5EdgeClient|1 |Пограничный клиент F5.|
-|деллсоникваллмобилеконнект|2 |Мобильное подключение Dell Сониквалл.|
-|чеккпоинткапсулевпн|3 |Проверка покапсулы VPN.|
+|f5EdgeClient|1,1|Пограничный клиент F5.|
+|деллсоникваллмобилеконнект|2|Мобильное подключение Dell Сониквалл.|
+|чеккпоинткапсулевпн|4|Проверка покапсулы VPN.|
 |Автоматически|4 |Автоматически.|
 |Клиентских|5 |Клиентских.|
 |L2TP|6 |L2TP.|

@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Шаредпкалловедаккаунттипе
 description: Тип учетных записей, которым разрешено предоставлять общий доступ к компьютеру.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a511250567202fa40a81ef451f12be3bd75ce0ee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9a30a7ac093245e90ec0f05a6d2bc64cb2a5e229
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525861"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787532"
 ---
 # <a name="sharedpcallowedaccounttype-enum-type"></a>тип перечисления Шаредпкалловедаккаунттипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42525861"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен. Значение по умолчанию.|
-|книге|1 |Только учетные записи гостя.|
-|domain|2 |Только учетные записи, присоединенные к домену.|
+|книге|1,1|Только учетные записи гостя.|
+|domain|2|Только учетные записи, присоединенные к домену.|
 
 
 

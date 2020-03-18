@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Макоссинглесигнонекстенсион
 description: Абстрактный базовый класс для всех типов расширения единого входа, относящихся к macOS.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a9a76915bd068116beb8da7f30c4fa1fe1dccf5f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7a2e04ea80bb325538bda7461b48f96ca3d5d22d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529670"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42789180"
 ---
 # <a name="macossinglesignonextension-resource-type"></a>Тип ресурса Макоссинглесигнонекстенсион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

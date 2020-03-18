@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса win32LobAppFileSystemRequirement
 description: Содержит путь к файлу или папке для обнаружения приложения Win32
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: aa42d12dca0c019febaa35ca70aebfb37d6c7597
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d95f33c850927d8d54e3423dc320d2101d309013
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42490709"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797634"
 ---
 # <a name="win32lobappfilesystemrequirement-resource-type"></a>Тип ресурса win32LobAppFileSystemRequirement
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

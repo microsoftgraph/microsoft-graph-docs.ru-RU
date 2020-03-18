@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Андроидворкпрофилекустомконфигуратион
 description: Настраиваемая конфигурация профиля рабочей работы Android
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6ab30d33a60e355c7e6ad9a72f120a4dfd3890ba
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f0560ea89303ed4068459c803b2a3e8b10d757da
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527224"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796659"
 ---
 # <a name="androidworkprofilecustomconfiguration-resource-type"></a>Тип ресурса Андроидворкпрофилекустомконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

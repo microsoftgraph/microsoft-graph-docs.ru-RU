@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицеманажементаппликабилитируледевицемоде
 description: Пока не задокументировано.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 040cf91d9733f0abca8c3d97a8955c915aa28bc4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 099f6081366187e240bf8510fca30a548fea4fe3
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526610"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42792040"
 ---
 # <a name="devicemanagementapplicabilityruledevicemode-resource-type"></a>Тип ресурса Девицеманажементаппликабилитируледевицемоде
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

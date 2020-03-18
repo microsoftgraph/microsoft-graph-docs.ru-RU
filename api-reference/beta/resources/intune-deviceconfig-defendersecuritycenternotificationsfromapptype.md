@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Дефендерсекуритицентернотификатионсфромапптипе
 description: Возможные значения для Дефендерсекуритицентернотификатионсфромапп
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e5522e375e08605bf7e42d6853bc6775f5e41ab3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4799ec2ad8fa9f0b4b3c629b87cf8e6b7240ef16
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526848"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42794426"
 ---
 # <a name="defendersecuritycenternotificationsfromapptype-enum-type"></a>тип перечисления Дефендерсекуритицентернотификатионсфромапптипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42526848"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Not Configured|
-|блоккнонкритикалнотификатионс|1 |Блокировать некритические уведомления|
-|блоккаллнотификатионс|2 |Блокировать все уведомления|
+|блоккнонкритикалнотификатионс|1,1|Блокировать некритические уведомления|
+|блоккаллнотификатионс|2|Блокировать все уведомления|
 
 
 

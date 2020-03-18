@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Интернетситесекуритилевел
 description: Возможные значения для уровня безопасности Интернет-сайта.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c4418d97b5db20bc8be9508cd19ac2c8d61ebf02
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c70c86dde8bc7d62292770d41b1490ae38969107
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526418"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791704"
 ---
 # <a name="internetsitesecuritylevel-enum-type"></a>тип перечисления Интернетситесекуритилевел
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42526418"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|medium|1 |Средний.|
-|медиумхигх|2 |Умеренно высокий.|
-|высокоуровневых|3 |Высокоуровневых.|
+|medium|1,1|Средний.|
+|медиумхигх|2|Умеренно высокий.|
+|высокоуровневых|4|Высокоуровневых.|
 
 
 

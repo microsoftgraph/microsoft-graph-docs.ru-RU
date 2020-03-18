@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Дефендерпротектионтипе
 description: Возможные значения защиты Пуа защитника
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7e20a340fa07dd32e948cf8eb00df5622b1481b5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e485cc311a0f4d5da84b78b6b8659ff033adb444
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526876"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42794454"
 ---
 # <a name="defenderprotectiontype-enum-type"></a>тип перечисления Дефендерпротектионтипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42526876"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Значение по умолчанию для устройства, без намерения.|
-|подключить|1 |Функциональная возможность блока.|
-|аудитмоде|2 |Разрешите функциональные возможности, но Создайте журналы.|
+|подключить|1,1|Функциональная возможность блока.|
+|аудитмоде|2|Разрешите функциональные возможности, но Создайте журналы.|
 
 
 

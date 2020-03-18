@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Иоседуцертификатесеттингс
 description: Доверенные корневые сертификаты и сертификаты PFX для iOS EDU.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 503d2b1d0f4fa94e95d20882b10a0c30d968680e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f772ee8f484b2b8bc42a6ed48298dc5a17016afc
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529929"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791620"
 ---
 # <a name="ioseducertificatesettings-resource-type"></a>Тип ресурса Иоседуцертификатесеттингс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

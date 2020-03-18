@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Макосвиреднетворкконфигуратион
 description: Профиль конфигурации проводной сети MacOS.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9b9f98f3b1d696f5d6b4dbfe3ab0b8eb46a064d4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 487a592424572e71dac177123fd4ab9ed5bd2948
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529652"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788648"
 ---
 # <a name="macoswirednetworkconfiguration-resource-type"></a>Тип ресурса Макосвиреднетворкконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

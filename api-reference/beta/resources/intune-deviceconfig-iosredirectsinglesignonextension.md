@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Иосредиректсинглесигнонекстенсион
 description: Представляет профиль расширения единого входа с перенаправлением для устройств с iOS.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b0e59f1a223ed0f7e16431a55cb1305c58bc045b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0bcff1697c8d41889736cbe74039f8c43d53d680
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526320"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790561"
 ---
 # <a name="iosredirectsinglesignonextension-resource-type"></a>Тип ресурса Иосредиректсинглесигнонекстенсион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Андроидфорворкмобилеаппконфигуратион
 description: Содержит свойства, унаследованные свойства и действия для конфигураций мобильного приложения АФВ.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 672c838720301dcad1a4dd3c5de00c95992669b4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3e278fa85055697aa352d4796240cab185d21370
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42494403"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799306"
 ---
 # <a name="androidforworkmobileappconfiguration-resource-type"></a>Тип ресурса Андроидфорворкмобилеаппконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

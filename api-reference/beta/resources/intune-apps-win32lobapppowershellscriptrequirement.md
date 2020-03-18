@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса win32LobAppPowerShellScriptRequirement
 description: Содержит свойства скрипта PowerShell для обнаружения приложения Win32
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6f7826f23746c5579212ef1ba4dc67f22d299272
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ef7eaa00605214b10438b8c28ba3752903d26bc7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42490562"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797600"
 ---
 # <a name="win32lobapppowershellscriptrequirement-resource-type"></a>Тип ресурса win32LobAppPowerShellScriptRequirement
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

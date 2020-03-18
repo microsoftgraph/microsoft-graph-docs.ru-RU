@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса deviceManagementSettings
 description: Пока не задокументировано.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f3c6e3f718cb7b3915daecc700e55b733947530c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b3e622c5231bd985a6834e9b6b1d908860385245
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526592"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42792012"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>Тип ресурса deviceManagementSettings
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -33,6 +31,7 @@ ms.locfileid: "42526592"
 |дериведкредентиалпровидер|[дериведкредентиалпровидертипе](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|Производный поставщик учетных данных, который будет использоваться для этой учетной записи. Возможные значения: `notConfigured`, `entrustDataCard`, `purebred`, `xTec`, `intercede`.|
 |дериведкредентиалурл|String|URI самообслуживания поставщика производных учетных данных.|
 |андроиддевицеадминистраторенроллментенаблед|Логический|Свойство, определяющее, включена ли регистрация администратора устройств Android для этой учетной записи.|
+|игноредевицесфорунсуппортедсеттингсенаблед|Логический|Свойство, определяющее, следует ли игнорировать неподдерживаемые параметры соответствия для определенных моделей устройств.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -54,7 +53,8 @@ ms.locfileid: "42526592"
   "deviceInactivityBeforeRetirementInDay": 1024,
   "derivedCredentialProvider": "String",
   "derivedCredentialUrl": "String",
-  "androidDeviceAdministratorEnrollmentEnabled": true
+  "androidDeviceAdministratorEnrollmentEnabled": true,
+  "ignoreDevicesForUnsupportedSettingsEnabled": true
 }
 ```
 

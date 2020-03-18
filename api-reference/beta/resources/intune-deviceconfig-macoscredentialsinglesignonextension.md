@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Макоскредентиалсинглесигнонекстенсион
 description: Представляет профиль расширения единого входа с типом учетных данных для устройств macOS.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 20e0e4ea5d7152553f7de690ec693d5d0a1d30d1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ec152f59cba88c2bb3e02e5fc90aba2a8c6f94a2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529730"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790302"
 ---
 # <a name="macoscredentialsinglesignonextension-resource-type"></a>Тип ресурса Макоскредентиалсинглесигнонекстенсион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса iosEducationDeviceConfiguration
 description: профиль конфигурации iOS для iOS
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e0740d7617af9c9ce52b8488251d4e80d7a6f43a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 313b73ffa08b5e9268a96b18636bcca76d2e0bdd
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526383"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791627"
 ---
 # <a name="ioseducationdeviceconfiguration-resource-type"></a>Тип ресурса iosEducationDeviceConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

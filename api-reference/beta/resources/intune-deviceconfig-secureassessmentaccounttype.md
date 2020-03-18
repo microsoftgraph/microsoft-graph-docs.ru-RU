@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Секуреассессментаккаунттипе
 description: Тип учетных записей, разрешенных для Windows10SecureAssessment Конфигуратионаккаунт.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0b40a60024aaee5521eaeefd096a2a237a8e1d7e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7a459e086b0b6ec44e625ca8a0932ea96422699a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529426"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787581"
 ---
 # <a name="secureassessmentaccounttype-enum-type"></a>тип перечисления Секуреассессментаккаунттипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42529426"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |азуреадаккаунт|нуль|Указывает учетную запись Azure AD в формате AzureAD\username@tenant.com.|
-|домаинаккаунт|1 |Указывает учетную запись домена в формате домен \ пользователь или user@domain.com.|
-|локалаккаунт|2 |Указывает локальную учетную запись в формате имени пользователя.|
-|локалгуестаккаунт|3 |Указывает локальную гостевую учетную запись в формате имени теста.|
+|домаинаккаунт|1,1|Указывает учетную запись домена в формате домен \ пользователь или user@domain.com.|
+|локалаккаунт|2|Указывает локальную учетную запись в формате имени пользователя.|
+|локалгуестаккаунт|4|Указывает локальную гостевую учетную запись в формате имени теста.|
 
 
 

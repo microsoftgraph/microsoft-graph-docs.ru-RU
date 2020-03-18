@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Андроидманажедстореаппконфигуратионсчемаитем
 description: Один элемент конфигурации внутри настраиваемой схемы конфигурации приложения Android.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3f3dc6d00c2d5b579b99a8fe17cca5d3e54482aa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6db7a9958599cbc073fa17eef542559a65af2b8e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42494599"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799334"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitem-resource-type"></a>Тип ресурса Андроидманажедстореаппконфигуратионсчемаитем
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

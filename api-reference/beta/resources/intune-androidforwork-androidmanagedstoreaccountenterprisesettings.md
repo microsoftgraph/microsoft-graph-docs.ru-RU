@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса ресурса androidmanagedstoreaccountenterprisesettings
 description: Корпоративные параметры для учетной записи управляемого хранилища Android.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 07b41a68ef7a32da27934c629a08f7cd9a701136
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ff82591c549eb167c45f6a80f2dc3fd34e9ce30a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42494620"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799349"
 ---
 # <a name="androidmanagedstoreaccountenterprisesettings-resource-type"></a>Тип ресурса ресурса androidmanagedstoreaccountenterprisesettings
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

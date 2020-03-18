@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Ндесконнектор
 description: Сущность, представляющая локальный Соединитель NDES.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1894e9e91f74fdfec2c1531a908b2237d382f8a5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 513ec5d7daf9448fe425852d8a388f6806d6c22f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526008"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788529"
 ---
 # <a name="ndesconnector-resource-type"></a>Тип ресурса Ндесконнектор
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

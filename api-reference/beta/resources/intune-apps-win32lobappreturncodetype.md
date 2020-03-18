@@ -1,20 +1,18 @@
 ---
 title: тип перечисления win32LobAppReturnCodeType
 description: Указывает тип кода возврата.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d97896382ef5b596cdded326f3579f746d9b09b4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0e0f35d48ade6a005ad37879e5eaeb237421da58
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42490261"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797544"
 ---
 # <a name="win32lobappreturncodetype-enum-type"></a>тип перечисления win32LobAppReturnCodeType
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42490261"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |сбоев|нуль|Сбоев.|
-|success|1 |Выполнено.|
-|софтребут|2 |Требуется программная перезагрузка.|
-|хардребут|3 |Необходима аппаратная перезагрузка.|
+|success|1,1|Успешно.|
+|софтребут|2|Требуется программная перезагрузка.|
+|хардребут|4|Необходима аппаратная перезагрузка.|
 |Retry|4 |Повторите попытку.|
 
 

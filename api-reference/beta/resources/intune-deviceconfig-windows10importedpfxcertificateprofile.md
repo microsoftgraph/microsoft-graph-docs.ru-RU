@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса windows10ImportedPFXCertificateProfile
 description: Профиль импорта сертификатов Windows 10 для настольных ПК и мобильных устройств PFX
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5f02d4e905820ea2de9f5db3bafaffca63611bcf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c33c1befc164b419067fa484f649397c0a5dba23
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529195"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786700"
 ---
 # <a name="windows10importedpfxcertificateprofile-resource-type"></a>Тип ресурса windows10ImportedPFXCertificateProfile
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

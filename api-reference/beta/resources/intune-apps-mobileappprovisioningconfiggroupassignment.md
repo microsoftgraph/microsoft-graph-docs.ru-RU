@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса К mobileappprovisioningconfiggroupassignment.
 description: Содержит свойства, используемые для назначения конфигурации подготовки приложений группе.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2b912c55b6b0f526246938356bc913da9e8717b3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 67939ed672b2ead92494e63dae0ca44e6cdc7719
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42491479"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797799"
 ---
 # <a name="mobileappprovisioningconfiggroupassignment-resource-type"></a>Тип ресурса К mobileappprovisioningconfiggroupassignment.
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

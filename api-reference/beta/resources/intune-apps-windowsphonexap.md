@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Виндовсфонексап
 description: Содержит свойства и наследуемые свойства для бизнес-приложений Windows Phone XAP.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 774d5696199e6e39680a746eb3691fd792915328
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 09504955add166ee3394580a09a9b7c828dfbb6d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42489771"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797467"
 ---
 # <a name="windowsphonexap-resource-type"></a>Тип ресурса Виндовсфонексап
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

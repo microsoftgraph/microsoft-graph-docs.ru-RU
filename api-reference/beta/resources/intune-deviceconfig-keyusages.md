@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Кэйусажес
 description: Параметры использования ключа.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 60fb80319d2012672bb22df98d553d02e36afe95
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e3fc6e48d2f1c6a2438f84e29a105bd0584b7110
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529776"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790393"
 ---
 # <a name="keyusages-enum-type"></a>тип перечисления Кэйусажес
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -25,8 +23,8 @@ ms.locfileid: "42529776"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|кэйенЦифермент|1 |Использование шифрования ключей.|
-|дигиталсигнатуре|2 |Использование цифровой подписи.|
+|кэйенЦифермент|1,1|Использование шифрования ключей.|
+|дигиталсигнатуре|2|Использование цифровой подписи.|
 
 
 

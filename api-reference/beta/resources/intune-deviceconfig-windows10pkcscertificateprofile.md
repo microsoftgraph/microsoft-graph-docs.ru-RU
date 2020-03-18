@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса windows10PkcsCertificateProfile
 description: Профиль Windows 10 для настольных ПК и мобильных устройств с сертификатом PKCS
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c28a00052266babb56f93e98468b5c7425ba5da6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 944a37423394cc3c21f4d6e303e7c2d6dd062c86
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525637"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786665"
 ---
 # <a name="windows10pkcscertificateprofile-resource-type"></a>Тип ресурса windows10PkcsCertificateProfile
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

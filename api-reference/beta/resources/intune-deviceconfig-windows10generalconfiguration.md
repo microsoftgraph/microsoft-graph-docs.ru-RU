@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса windows10GeneralConfiguration
 description: В этой статье описаны объявляемые методы, свойства и связи, которые предоставляются ресурсом windows10GeneralConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cc426e59e7baeb2670411904d806f6d776b8165b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6f68a4fdf2ecfbcc3e2728e652f1da8fee4916c9
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525658"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786707"
 ---
 # <a name="windows10generalconfiguration-resource-type"></a>Тип ресурса windows10GeneralConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -91,6 +89,7 @@ ms.locfileid: "42525658"
 |searchDisableIndexingRemovableDrive|Логический|Указывает, могут ли пользователи добавлять расположения на съемных дисках в библиотеки и для индексирования.|
 |searchEnableAutomaticIndexSizeManangement|Логический|Указывает минимальный объем памяти на жестком диске с индексом до остановки индексирования.|
 |сеарчблокквебресултс|Логический|Указывает, следует ли запретить Поиск в Интернете.|
+|финдмифилес|[Включение](../resources/intune-shared-enablement.md)|Определяет, может ли пользователь настроить поиск в режиме "Мои файлы", который выполняет поиск файлов на дополнительных жестких дисках, а также вне профиля пользователя. "Найти мои файлы" не позволяет пользователям искать файлы и расположения, к которым у них нет доступа. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |секуритиблокказуреаджоинеддевицесаутоенкриптион|Логический|Укажите, следует ли разрешить автоматическое шифрование устройства во время OOBE, когда устройство присоединяется к Azure AD (только для настольных компьютеров).|
 |diagnosticsDataSubmissionMode|[диагностикдатасубмиссионмоде](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|Возвращает или задает значение, позволяющее устройству отправлять данные диагностики и телеметрии использования, такие как Watson. Возможные значения: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
 |oneDriveDisableFileSync|Логический|Возвращает или задает значение, позволяющее ИТ-администраторам запретить работу приложений и функций с файлами в OneDrive.|
@@ -114,9 +113,9 @@ ms.locfileid: "42525658"
 |edgeBlockDeveloperTools|Логический|Указывает, следует ли заблокировать средства разработчика в браузере Edge.|
 |edgeBlockSendingDoNotTrackHeader|Логический|Указывает, следует ли запретить пользователю отправлять заголовок DNT.|
 |edgeBlockExtensions|Логический|Указывает, следует ли заблокировать расширения в браузере Edge.|
-|edgeBlockInPrivateBrowsing|Логический|Указывает, следует ли заблокировать просмотр InPrivate в корпоративных сетях в браузере Edge.|
+|edgeBlockInPrivateBrowsing|Boolean|Указывает, следует ли заблокировать просмотр InPrivate в корпоративных сетях в браузере Edge.|
 |edgeBlockJavaScript|Логический|Указывает, следует ли запретить использовать JavaScript.|
-|edgeBlockPasswordManager|Boolean|Указывает, следует ли заблокировать диспетчер паролей.|
+|edgeBlockPasswordManager|Логический|Указывает, следует ли заблокировать диспетчер паролей.|
 |edgeBlockAddressBarDropdown|Логический|Позволяет заблокировать раскрывающийся список адресной строки в Microsoft Edge. Отключите этот параметр, чтобы уменьшить количество сетевых подключений Microsoft Edge к службам Майкрософт.|
 |edgeBlockCompatibilityList|Логический|Позволяет заблокировать список совместимости Майкрософт в Microsoft Edge. Этот список помогает Edge правильно отображать сайты с известными проблемами совместимости.|
 |edgeClearBrowsingDataOnExit|Логический|Указывает, следует ли удалять данные просмотра при выходе из Microsoft Edge.|
@@ -143,8 +142,8 @@ ms.locfileid: "42525658"
 |еджепревентцертификатирророверриде|Логический|Разрешить или запретить пользователям переопределять ошибки сертификатов.|
 |еджекиоскмодерестриктион|[edgeKioskModeRestrictionType](../resources/intune-deviceconfig-edgekioskmoderestrictiontype.md)|Управляет ограничениями параметров Microsoft EDGE в зависимости от режима настройки киоска. Возможные значения: `notConfigured`, `digitalSignage`, `normalMode`, `publicBrowsingSingleApp`, `publicBrowsingMultiApp`.|
 |еджекиоскресетафтеридлетимеинминутес|Int32|Задает время (в минутах) от последнего действия пользователя до сброса Microsoft Edge киоска.  Допустимые значения: 0-1440. Значение по умолчанию равно 5. 0 указывает на отсутствие сброса. Допустимые значения — от 0 до 1440|
-|cellularBlockDataWhenRoaming|Логический|Указывает, следует ли запретить использовать мобильные данные в роуминге.|
-|cellularBlockVpn|Boolean|Указывает, следует ли запретить использовать VPN по сотовой сети.|
+|cellularBlockDataWhenRoaming|Boolean|Указывает, следует ли запретить использовать мобильные данные в роуминге.|
+|cellularBlockVpn|Логический|Указывает, следует ли запретить использовать VPN по сотовой сети.|
 |cellularBlockVpnWhenRoaming|Логический|Указывает, следует ли запретить использовать VPN по сотовой сети в роуминге.|
 |целлулардата|[конфигуратионусаже](../resources/intune-deviceconfig-configurationusage.md)|Указывает, следует ли разрешить канал сотовой связи на устройстве. Если этот параметр не задан, канал передачи данных разрешен и пользователь может его отключить. Возможные значения: `blocked`, `required`, `allowed`.|
 |defenderBlockEndUserAccess|Логический|Указывает, следует ли заблокировать доступ пользователей к Защитнику.|
@@ -195,16 +194,17 @@ ms.locfileid: "42525658"
 |passwordMinimumCharacterSetCount|Int32|Количество наборов символов, которые требуются для пароля.|
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, повторное использование которых необходимо запретить. Допустимые значения: от 0 до 50.|
 |passwordRequired|Логический|Указывает, обязательно ли использовать пароль.|
-|passwordRequireWhenResumeFromIdleState|Логический|Указывает, следует ли запрашивать пароль при выходе из состояния простоя.|
+|passwordRequireWhenResumeFromIdleState|Boolean|Указывает, следует ли запрашивать пароль при выходе из состояния простоя.|
 |passwordRequiredType|[рекуиредпассвордтипе](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Количество неудачных попыток входа до восстановления заводских настроек. Допустимые значения: от 0 до 999.|
 |пассвордминимумажеиндайс|Int32|Этот параметр безопасности определяет период времени (в днях), в течение которого необходимо использовать пароль, прежде чем пользователь сможет его изменить. Допустимые значения — от 0 до 998|
 |privacyAdvertisingId|[статеманажементсеттинг](../resources/intune-deviceconfig-statemanagementsetting.md)|Указывает, можно ли использовать идентификатор рекламы. Добавлено в Windows 10 версии 1607. Возможные значения: `notConfigured`, `blocked`, `allowed`.|
-|privacyAutoAcceptPairingAndConsentPrompts|Boolean|Указывает, следует ли запретить автоматическое принятие примечаний о связывании и конфиденциальности при запуске приложений.|
+|privacyAutoAcceptPairingAndConsentPrompts|Логический|Указывает, следует ли запретить автоматическое принятие примечаний о связывании и конфиденциальности при запуске приложений.|
 |привацидисаблелаунчекспериенце|Логический|Эта политика запрещает запуск службы конфиденциальности при входе пользователя для новых и обновленных пользователей.|
 |privacyBlockInputPersonalization|Логический|Указывает, следует ли запретить использовать облачные службы распознавания речи для приложений "Кортана", "Диктофон" или Store.|
 |привациблоккпублишусерактивитиес|Логический|Блокирует общий доступ/обнаружение недавно использовавшихся ресурсов в переключателе задач и т. д.|
 |привациблоккактивитифид|Логический|Блокирует использование облачных голосовых служб для Кортаны, диктовки или хранения приложений.|
+|активатеаппсвисвоице|[Включение](../resources/intune-shared-enablement.md)|Указывает, можно ли активировать приложения Windows с помощью голосовых вызовов. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |startBlockUnpinningAppsFromTaskbar|Логический|Указывает, следует ли запретить пользователю откреплять приложения с панели задач.|
 |startMenuAppListVisibility|[виндовсстартменуапплиствисибилититипе](../resources/intune-deviceconfig-windowsstartmenuapplistvisibilitytype.md)|Эта политика позволяет свернуть список приложений, полностью удалить этот список или отключить соответствующий переключатель в приложении "Параметры". Возможные значения: `userDefined`, `collapse`, `remove`, `disableSettingsApp`.|
 |startMenuHideChangeAccountSettings|Логический|Эта политика позволяет скрыть параметр для смены учетной записи на плитке пользователя в меню "Пуск".|
@@ -260,7 +260,7 @@ ms.locfileid: "42525658"
 |accountsBlockAddingNonMicrosoftAccountEmail|Логический|Указывает, следует ли запретить пользователю добавлять учетные записи электронной почты на устройства, не связанные с учетной записью Майкрософт.|
 |antiTheftModeBlocked|Boolean|Указывает, следует ли запретить пользователю выбирать режим AntiTheft (только для Windows 10 Mobile).|
 |bluetoothBlocked|Логический|Указывает, следует ли запретить использовать Bluetooth.|
-|cameraBlocked|Boolean|Определяет, следует ли запретить доступ к камере устройства.|
+|cameraBlocked|Логический|Определяет, следует ли запретить доступ к камере устройства.|
 |connectedDevicesServiceBlocked|Логический|Указывает, следует ли блокировать службу подключенных устройств, которая позволяет находить другие устройства и подключаться к ним, удаленно обмениваться сообщениями и работать с приложениями, а также выполнять другие действия.|
 |certificatesBlockManualRootCertificateInstallation|Логический|Указывает, следует ли запретить пользователю вручную устанавливать корневой сертификат.|
 |copyPasteBlocked|Логический|Указывает, следует ли запретить пользователю копировать данные.|
@@ -289,10 +289,10 @@ ms.locfileid: "42525658"
 |settingsBlockEditDeviceName|Логический|Указывает, следует ли запретить пользователю изменять имя устройства.|
 |settingsBlockChangeRegion|Логический|Указывает, следует ли запретить пользователю изменять региональные стандарты.|
 |settingsBlockChangeLanguage|Логический|Указывает, следует ли запретить пользователю изменять параметры языка.|
-|settingsBlockChangePowerSleep|Логический|Указывает, следует ли запретить пользователю изменять параметры питания и спящего режима.|
+|settingsBlockChangePowerSleep|Boolean|Указывает, следует ли запретить пользователю изменять параметры питания и спящего режима.|
 |locationServicesBlocked|Логический|Указывает, следует ли запретить использовать службы определения местоположения.|
 |microsoftAccountBlocked|Логический|Указывает, следует ли запретить использовать учетную запись Майкрософт.|
-|microsoftAccountBlockSettingsSync|Boolean|Указывает, следует ли запретить синхронизировать настройки учетной записи Майкрософт.|
+|microsoftAccountBlockSettingsSync|Логический|Указывает, следует ли запретить синхронизировать настройки учетной записи Майкрософт.|
 |nfcBlocked|Логический|Указывает, следует ли запретить использовать NFC.|
 |resetProtectionModeBlocked|Логический|Указывает, следует ли запретить пользователю сбрасывать режим защиты.|
 |screenCaptureBlocked|Логический|Указывает, следует ли запретить пользователю делать снимки экрана.|
@@ -327,6 +327,7 @@ ms.locfileid: "42525658"
 |датапротектионблоккдиректмеморякцесс|Логический|Этот параметр политики позволяет заблокировать прямой доступ к памяти (DMA) для всех подключенных портов PCI, подключенных к горячему подключению, пока пользователь не войдет в систему Windows.|
 |аппманажементпаккажефамилинаместолаунчафтерлогон|Коллекция String|Список имен семейств пакетов для приложений Windows, разделенных точкой с запятой. Перечисленные приложения Windows будут запущены после входа в систему.|
 |uninstallBuiltInApps|Boolean|Указывает, следует ли удалить фиксированный список встроенных приложений Windows.|
+|конфигуретимезоне|String|Указывает часовой пояс, применяемый к устройству. Это стандартное имя Windows для целевого часового пояса.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -436,6 +437,7 @@ ms.locfileid: "42525658"
   "searchDisableIndexingRemovableDrive": true,
   "searchEnableAutomaticIndexSizeManangement": true,
   "searchBlockWebResults": true,
+  "findMyFiles": "String",
   "securityBlockAzureADJoinedDevicesAutoEncryption": true,
   "diagnosticsDataSubmissionMode": "String",
   "oneDriveDisableFileSync": true,
@@ -568,6 +570,7 @@ ms.locfileid: "42525658"
   "privacyBlockInputPersonalization": true,
   "privacyBlockPublishUserActivities": true,
   "privacyBlockActivityFeed": true,
+  "activateAppsWithVoice": "String",
   "startBlockUnpinningAppsFromTaskbar": true,
   "startMenuAppListVisibility": "String",
   "startMenuHideChangeAccountSettings": true,
@@ -702,7 +705,8 @@ ms.locfileid: "42525658"
   "appManagementPackageFamilyNamesToLaunchAfterLogOn": [
     "String"
   ],
-  "uninstallBuiltInApps": true
+  "uninstallBuiltInApps": true,
+  "configureTimeZone": "String"
 }
 ```
 

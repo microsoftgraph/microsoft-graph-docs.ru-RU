@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Иосимпортедпфксцертификатепрофиле
 description: профиль импорта сертификата для iOS PFX
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 299cbc4d3fef034b412e0432ff5629f59a0c4b34
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6aac4954595e1eab0466073065f344330eeb4b50
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529896"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790610"
 ---
 # <a name="iosimportedpfxcertificateprofile-resource-type"></a>Тип ресурса Иосимпортедпфксцертификатепрофиле
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Ратингжапанмовиестипе
 description: Метки оценок фильмов в Японии
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b5bda09fdb335cf4826f85315808c5efb7809074
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 77505958c39d3d76468b6ca353d8344d939cda0e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529487"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787686"
 ---
 # <a name="ratingjapanmoviestype-enum-type"></a>тип перечисления Ратингжапанмовиестипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42529487"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |аллалловед|нуль|Значение по умолчанию, разрешить все содержимое фильмов|
-|аллблоккед|1 |Не разрешать никакие видеоролики|
-|обобщен|2 |Подходит для всех возраста|
-|паренталгуиданце|3 |Классификация стр – 12 запрашивает разрешения родителей для пользователей в течение 12|
+|аллблоккед|1,1|Не разрешать никакие видеоролики|
+|обобщен|2|Подходит для всех возраста|
+|паренталгуиданце|4|Классификация стр – 12 запрашивает разрешения родителей для пользователей в течение 12|
 |agesAbove15|4 |R15 + Classification подходит для зрителей от 15 или более ранних версий|
 |agesAbove18|5 |R18 + Classification подходит для зрителей от 18 лет и старше|
 

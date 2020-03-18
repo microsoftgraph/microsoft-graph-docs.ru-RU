@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Андроидворкпрофилесцепцертификатепрофиле
 description: Профиль сертификата SCEP для рабочего профиля для Android
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f30ee487e20521c4ee67f2e0143474d7da658e5e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 84a823b5efc47e4d65183ed95dfafdc4f8fbd6a1
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527192"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796126"
 ---
 # <a name="androidworkprofilescepcertificateprofile-resource-type"></a>Тип ресурса Андроидворкпрофилесцепцертификатепрофиле
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

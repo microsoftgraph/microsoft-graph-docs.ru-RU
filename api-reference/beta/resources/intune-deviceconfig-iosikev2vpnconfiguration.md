@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса iosikEv2VpnConfiguration
 description: Предоставляя конфигурации в этом профиле, вы можете указать устройству iOS подключаться к необходимой конечной точке VPN VPN.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9972c9da752be20521b85e3e83ccc858e3d9a197
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 742f764444b76da29981c34eb730750a9acd1407
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526348"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790617"
 ---
 # <a name="iosikev2vpnconfiguration-resource-type"></a>Тип ресурса iosikEv2VpnConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,20 +1,18 @@
 ---
 title: Обновление Интунебрандингпрофиле
 description: Обновление свойств объекта Интунебрандингпрофиле.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1a2bb95404c3976b8702e752b5d9d17ad3872191
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: caaac4d731181efe19731eed6b0340e8d08b98ed
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457428"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799711"
 ---
 # <a name="update-intunebrandingprofile"></a>Обновление Интунебрандингпрофиле
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42457428"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -220,7 +218,6 @@ Content-Length: 1964
   ]
 }
 ```
-
 
 
 

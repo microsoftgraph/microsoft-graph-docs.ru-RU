@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Девицетипес
 description: Тип устройства.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 8a12d0bbc71987325f1fa3f0444a332b6578cfaa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9e5f1b21ae78a30a77c60cd16917195220d598e1
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526583"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791984"
 ---
 # <a name="devicetypes-enum-type"></a>тип перечисления Девицетипес
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42526583"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |системной|нуль|Системной.|
-|виндовсрт|1 |Виндовсрт.|
-|winMO6|2 |WinMO6.|
-|Nokia|3 |Nokia.|
+|виндовсрт|1,1|Виндовсрт.|
+|winMO6|2|WinMO6.|
+|Nokia|4|Nokia.|
 |windowsPhone|4 |Windows Phone.|
 |mac|5 |OS.|
 |winCE|6 |WinCE.|
@@ -36,8 +34,8 @@ ms.locfileid: "42526583"
 |iPhone|8 |iPhone.|
 |iPad|9 |iPad.|
 |iPod|10 |Иподтауч.|
-|ОС|11 |ОС.|
-|исокконсумер|12 |Исокконсумер.|
+|ОС|-11:00|ОС.|
+|исокконсумер|12|Исокконсумер.|
 |формате|13 |Формате.|
 |макмдм|14 |Клиент Mac OS X, использующий встроенный агент MDM.|
 |holoLens|15 |Представляет собой затейливого Windows 10 гогглес.|

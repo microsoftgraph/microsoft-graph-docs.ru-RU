@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Еджекиоскмодерестриктионтипе
 description: Укажите, как параметры Microsoft Edge будут ограничены в зависимости от режима киоска.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 929e74097d329f2d6932ae3aadaa001258dbd2fc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 402feb76fbb95664f5b4fe8190dfb71504db0abf
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530056"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791879"
 ---
 # <a name="edgekioskmoderestrictiontype-enum-type"></a>тип перечисления Еджекиоскмодерестриктионтипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42530056"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроено (не ограничено).|
-|дигиталсигнаже|1 |Интерактивная и цифровая подпись в режиме одного приложения.|
-|нормалмоде|2 |В обычном режиме (полная версия Microsoft EDGE).|
-|публикбровсингсинглеапп|3 |Общедоступный обзор в режиме одного приложения.|
+|дигиталсигнаже|1,1|Интерактивная и цифровая подпись в режиме одного приложения.|
+|нормалмоде|2|В обычном режиме (полная версия Microsoft EDGE).|
+|публикбровсингсинглеапп|4|Общедоступный обзор в режиме одного приложения.|
 |публикбровсингмултиапп|4 |Общедоступный обзор (InPrivate) в режиме нескольких приложений.|
 
 

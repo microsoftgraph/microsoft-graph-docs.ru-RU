@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Андроидфорворкбиндстатус
 description: Состояние BIND клиента с помощью API Google EMM
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: efdd760df98674081687d475b067075679255142
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7cbdd8813b7bf4a6594b43aaba101e5d4170c58a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42494985"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799405"
 ---
 # <a name="androidforworkbindstatus-enum-type"></a>тип перечисления Андроидфорворкбиндстатус
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42494985"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |нотбаунд|нуль|Пока не задокументировано.|
-|свободного|1 |Пока не задокументировано.|
-|баундандвалидатед|2 |Пока не задокументировано.|
-|Отмена привязки|3 |Пока не задокументировано.|
+|свободного|1,1|Пока не задокументировано.|
+|баундандвалидатед|2|Пока не задокументировано.|
+|Отмена привязки|4|Пока не задокументировано.|
 
 
 

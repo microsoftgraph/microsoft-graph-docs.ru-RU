@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Велкомескринмитингинформатион
 description: Возможные значения для сведений о собрании на экране приветствия.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4286120cadec4d69aedf632333815e79986156c7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3b7e386aa7501d2253d1f042c21b058cfe807bf2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529257"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787259"
 ---
 # <a name="welcomescreenmeetinginformation-enum-type"></a>тип перечисления Велкомескринмитингинформатион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42529257"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|шоворганизерандтимеонли|1 |Показывать только организатор и время.|
-|шоворганизерандтимеандсубжект|2 |Отображение организатора, времени и темы (тема скрыта для частных собраний).|
+|шоворганизерандтимеонли|1,1|Показывать только организатор и время.|
+|шоворганизерандтимеандсубжект|2|Отображение организатора, времени и темы (тема скрыта для частных собраний).|
 
 
 

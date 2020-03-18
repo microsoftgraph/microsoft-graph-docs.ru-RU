@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Впнондемандрулеконнектиондомаинактион
 description: Действие домена подключения к VPN-запросу с правилом.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5aa538196a18cb45572340e7f6a5a0a3ffa2112f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cf4aa54b83ab6d99d4a1f32c32e810c4b994a62d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525763"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787343"
 ---
 # <a name="vpnondemandruleconnectiondomainaction-enum-type"></a>тип перечисления Впнондемандрулеконнектиондомаинактион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,7 +24,7 @@ ms.locfileid: "42525763"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |коннектифнидед|нуль|При необходимости подключаться.|
-|неверконнект|1 |Никогда не подключаться.|
+|неверконнект|1,1|Никогда не подключаться.|
 
 
 

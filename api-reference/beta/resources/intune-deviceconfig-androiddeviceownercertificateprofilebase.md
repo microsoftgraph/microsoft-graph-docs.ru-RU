@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Андроиддевицеовнерцертификатепрофилебасе
 description: База профиля сертификата владельца устройства Android.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1a1bf82e64bd2b5999d96a255817cce438600821
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ffb58b2a4aab21ede08b9b3e11ca1ef7dc41790d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42487083"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797166"
 ---
 # <a name="androiddeviceownercertificateprofilebase-resource-type"></a>Тип ресурса Андроиддевицеовнерцертификатепрофилебасе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

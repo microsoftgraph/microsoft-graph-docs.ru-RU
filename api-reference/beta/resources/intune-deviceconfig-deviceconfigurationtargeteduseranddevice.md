@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Девицеконфигуратионтаржетедусеранддевице
 description: Сводка по конфликтам для набора политик конфигурации устройств.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d202c50c22cb287f91c18ab6b779d48e971f672c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6e373dfd4cae79fad4877195544091d054560873
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530149"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42793235"
 ---
 # <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a>Тип ресурса Девицеконфигуратионтаржетедусеранддевице
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

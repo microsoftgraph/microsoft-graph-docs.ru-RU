@@ -2,19 +2,17 @@
 title: Тип ресурса Оффицеклиентчеккинстатус
 description: Сущность, описывающая статистику по возврату клиента.
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9b5509fed7c7dba43a9070695982c120f007f097
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 66087cd47fa70352f8051fc220820ea355805f19
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42488546"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797341"
 ---
 # <a name="officeclientcheckinstatus-resource-type"></a>Тип ресурса Оффицеклиентчеккинстатус
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса omaSettingInteger
 description: Определение целого числа параметра OMA.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c5c6f4c79092b04e749a4625cfa590578058a2ef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 829f73ec2d5eb205e6cacdb46ee209760334cb3a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529554"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788445"
 ---
 # <a name="omasettinginteger-resource-type"></a>Тип ресурса omaSettingInteger
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

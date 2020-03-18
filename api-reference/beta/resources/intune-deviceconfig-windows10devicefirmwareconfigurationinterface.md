@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса windows10DeviceFirmwareConfigurationInterface
 description: 'Свойства Graph для интерфейса настройки встроенного по устройства '
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6f75edc126a8a4ae611da41d45af4d028b4e0ae6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f4544a572a8b62043550d2b78974cf8c09f811a1
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525686"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787181"
 ---
 # <a name="windows10devicefirmwareconfigurationinterface-resource-type"></a>Тип ресурса windows10DeviceFirmwareConfigurationInterface
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Синглесигнонекстенсион
 description: Представляет расширение единого входа Apple.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 623f8beddc55aacdcb22f5ca61c3c2b9d11e59fd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d1a6186a8838dd007018dba2635dc9559078c550
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529384"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787511"
 ---
 # <a name="singlesignonextension-resource-type"></a>Тип ресурса Синглесигнонекстенсион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

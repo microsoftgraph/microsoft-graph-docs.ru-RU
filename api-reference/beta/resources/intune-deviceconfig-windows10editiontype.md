@@ -1,20 +1,18 @@
 ---
 title: тип перечисления windows10EditionType
 description: Тип выпуска Windows 10.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0908a7a5ad9e5eb2bde70cd514fe8304b8ba0ce3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e1bc9f191211a2018eadd5fe19846bc9e63059e7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529205"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786728"
 ---
 # <a name="windows10editiontype-enum-type"></a>тип перечисления windows10EditionType
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -25,10 +23,10 @@ ms.locfileid: "42529205"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|windows10Enterprise|нуль|Windows 10 Корпоративная|
-|windows10EnterpriseN|1 |Windows 10 Ентерприсен|
-|windows10Education|2 |Windows 10 для образовательных учреждений|
-|windows10EducationN|3 |Windows 10 Едукатионн|
+|windows10Enterprise|нуль|Windows 10 Корпоративная|
+|windows10EnterpriseN|1,1|Windows 10 Ентерприсен|
+|windows10Education|2|Windows 10 для образовательных учреждений|
+|windows10EducationN|4|Windows 10 Едукатионн|
 |windows10MobileEnterprise|4 |Windows 10 Mobile корпоративный|
 |windows10HolographicEnterprise|5 |Windows 10 holographic Корпоративная|
 |windows10Professional|6 |Windows 10 профессиональная|
@@ -36,8 +34,8 @@ ms.locfileid: "42529205"
 |windows10ProfessionalEducation|8 |Windows 10 профессиональная образование|
 |windows10ProfessionalEducationN|9 |Windows 10 профессиональная Едукатионн|
 |windows10ProfessionalWorkstation|10 |Windows 10 профессиональная для рабочих станций|
-|windows10ProfessionalWorkstationN|11 |Windows 10 профессиональная для рабочих станций N|
-|notConfigured|12 |NotConfigured|
+|windows10ProfessionalWorkstationN|-11:00|Windows 10 профессиональная для рабочих станций N|
+|notConfigured|12|NotConfigured|
 |windows10Home|13 |Windows 10 Домашняя|
 |windows10HomeChina|14 |Windows 10 домашняя (Китай)|
 |windows10HomeN|15 |Windows 10 Домашняя N|

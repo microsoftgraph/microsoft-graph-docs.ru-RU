@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Микрософтсторефорбусинесслиценсетипе
 description: Пока не задокументировано.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: f47fc1a3ac8e147464e9ff6027f03c1ba67f1273
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f5a032b6ce244d7c2bd82c2d5ff5cfaa98c1d8f0
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42492014"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797869"
 ---
 # <a name="microsoftstoreforbusinesslicensetype-enum-type"></a>тип перечисления Микрософтсторефорбусинесслиценсетипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,7 +24,7 @@ ms.locfileid: "42492014"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |содержание|нуль|Пока не задокументировано.|
-|Онлайн|1 |Пока не задокументировано.|
+|Онлайн|1,1|Пока не задокументировано.|
 
 
 

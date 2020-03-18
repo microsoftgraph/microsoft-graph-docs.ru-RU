@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Рестриктедаппсстате
 description: Состояние ограниченных приложений
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b4928f16d25da8a78d6c2c08641d32e3bc669ac7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9771903e2e519995223cd3db09b67eb30f22a5bd
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529452"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787616"
 ---
 # <a name="restrictedappsstate-enum-type"></a>тип перечисления Рестриктедаппсстате
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,7 +24,7 @@ ms.locfileid: "42529452"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |прохибитедаппс|нуль|Запрещенные приложения|
-|нотаппроведаппс|1 |Неутвержденные приложения|
+|нотаппроведаппс|1,1|Неутвержденные приложения|
 
 
 

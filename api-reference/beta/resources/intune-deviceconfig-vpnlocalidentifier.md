@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Впнлокалидентифиер
 description: Тип локального идентификатора VPN
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: dc409ed705b8937f30d31e955a89eb8f874581e7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0f6854b2cfaf2e501ca5c19b32d0bff0dd7d82cd
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529314"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787371"
 ---
 # <a name="vpnlocalidentifier-enum-type"></a>тип перечисления Впнлокалидентифиер
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42529314"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |девицефкдн|нуль|Полное доменное имя устройства|
-|empty|1 |переменная Empty|
-|клиентцертификатесубжектнаме|2 |Имя субъекта сертификата клиента|
+|empty|1,1|переменная Empty|
+|клиентцертификатесубжектнаме|2|Имя субъекта сертификата клиента|
 
 
 

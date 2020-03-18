@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Деливерйоптимизатионрестриктпирселектионбйоптионс
 description: Значения, с помощью которых можно ограничить выбор однорангового узла.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b836765b4b89762e91a9d47c5133e8221912e9a5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5eb1efe72e70051f84502df19957def98020b26f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526743"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42793382"
 ---
 # <a name="deliveryoptimizationrestrictpeerselectionbyoptions-enum-type"></a>тип перечисления Деливерйоптимизатионрестриктпирселектионбйоптионс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,7 +24,7 @@ ms.locfileid: "42526743"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
-|Сети|1 |Маска подсети.|
+|Сети|1,1|Маска подсети.|
 
 
 

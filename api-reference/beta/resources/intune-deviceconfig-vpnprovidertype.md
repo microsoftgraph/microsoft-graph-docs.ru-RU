@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Впнпровидертипе
 description: Тип поставщика для VPN каждого приложения.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7455e6a3f3d9887a36dd49e9c66a207da950c785
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4b064c86413d84a06884de9728ccfa9cb83d61d2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529301"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787350"
 ---
 # <a name="vpnprovidertype-enum-type"></a>тип перечисления Впнпровидертипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42529301"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Туннельный трафик не настраивается явным образом.|
-|апппрокси|1 |Трафик туннеля на уровне приложения.|
-|паккеттуннел|2 |Трафик туннеля на уровне IP.|
+|апппрокси|1,1|Трафик туннеля на уровне приложения.|
+|паккеттуннел|2|Трафик туннеля на уровне IP.|
 
 
 

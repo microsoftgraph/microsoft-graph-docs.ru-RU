@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Оператингсистемверсионранже
 description: Диапазон версий операционной системы.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 20a52b813de13b51fcf94a93fa440337e7123f02
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1de8618d20151d079e3f2fdcbadf3658db2b73ef
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525959"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788424"
 ---
 # <a name="operatingsystemversionrange-resource-type"></a>Тип ресурса Оператингсистемверсионранже
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

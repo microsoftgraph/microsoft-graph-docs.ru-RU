@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса windowsPhone81AppXBundle
 description: Содержит свойства и унаследованные свойства для бизнес-приложений пакета Windows Phone 8,1 AppX.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6a59cf349671eb57f9a2b2fb3a4f3b8259817995
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 24777b30e151d4c7bed9b9174c55d80982bd530c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42489806"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797481"
 ---
 # <a name="windowsphone81appxbundle-resource-type"></a>Тип ресурса windowsPhone81AppXBundle
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

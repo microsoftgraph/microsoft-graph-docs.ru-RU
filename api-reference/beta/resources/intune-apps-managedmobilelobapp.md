@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса managedMobileLobApp
 description: Абстрактный базовый класс, содержащий свойства для всех управляемых мобильных бизнес-приложений.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5e1bb81217324708596a58ded6e9547d75d565bb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: eee191762fbbe59a6b9d45afc5af68b2e3811efa
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42492224"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797904"
 ---
 # <a name="managedmobilelobapp-resource-type"></a>Тип ресурса managedMobileLobApp
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

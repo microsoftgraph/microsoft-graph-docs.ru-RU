@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Инкакцесссеттинг
 description: Значения параметра Инкворкспацеакцесс.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 26adf853ac56167b0778e742302ec96e491c72a4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cf5fb6e91d21d66ae36ef7e0427cbaa7f55991a1
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529979"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791725"
 ---
 # <a name="inkaccesssetting-enum-type"></a>тип перечисления Инкакцесссеттинг
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42529979"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
-|enabled|1 |Доступ.|
-|активирован|2 |Активирован.|
+|enabled|1,1|Доступ.|
+|активирован|2|Активирован.|
 
 
 

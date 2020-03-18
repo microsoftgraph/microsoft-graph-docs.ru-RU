@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Иострустедрутцертификате
 description: профиль конфигурации доверенного корневого сертификата iOS.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d0004c156b7a5d3fc8db1cbb0d4ab42145c20c38
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d7870d6a03093c7702d8f1ad800ffb79e283c985
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529852"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790526"
 ---
 # <a name="iostrustedrootcertificate-resource-type"></a>Тип ресурса Иострустедрутцертификате
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Иосвебконтентфилтербасе
 description: Представляет базовый тип параметра фильтра веб-содержимого iOS. Пустой и абстрактный базовый. Вызывающий абонент должен использовать один из производных типов для конфигураций.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8db21c6f82f9a4b9393111c1fb51e8d47851fc36
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3675e08e8401de2e5115e060694a5ea7a9981319
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529805"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790470"
 ---
 # <a name="ioswebcontentfilterbase-resource-type"></a>Тип ресурса Иосвебконтентфилтербасе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

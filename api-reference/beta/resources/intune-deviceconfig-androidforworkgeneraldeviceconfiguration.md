@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса androidForWorkGeneralDeviceConfiguration
 description: Настройка общих устройств Android для рабочих устройств.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c156af71ddbd3e9aed36db2e697a101e433350ff
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c1d759082c84555ad2025eec8f77d22a3bda718d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42484899"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796855"
 ---
 # <a name="androidforworkgeneraldeviceconfiguration-resource-type"></a>Тип ресурса androidForWorkGeneralDeviceConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

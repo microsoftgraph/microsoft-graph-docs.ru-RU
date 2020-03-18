@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса windows10NetworkBoundaryConfiguration
 description: Конфигурация границы сети Windows10
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0b7be5864da5c86a4c02477afef44d7d61f8341d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 356251376215c01ce0a92a6d3eddf6aff94a720c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529184"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786686"
 ---
 # <a name="windows10networkboundaryconfiguration-resource-type"></a>Тип ресурса windows10NetworkBoundaryConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

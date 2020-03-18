@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Оффицепродуктид
 description: Перечисление для указания ProductId Office365, представляющих SKU набора Office365.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c43faf49ab6fc1fc3015dbd42f33e5bd1e377b75
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 610e05fa0daf7db0eff56f705235321e114d3c18
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42491248"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797747"
 ---
 # <a name="officeproductid-enum-type"></a>тип перечисления Оффицепродуктид
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42491248"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |o365ProPlusRetail|нуль|Пока не задокументировано.|
-|o365BusinessRetail|1 |Пока не задокументировано.|
-|висиопроретаил|2 |Пока не задокументировано.|
-|прожектпроретаил|3 |Пока не задокументировано.|
+|o365BusinessRetail|1,1|Пока не задокументировано.|
+|висиопроретаил|2|Пока не задокументировано.|
+|прожектпроретаил|4|Пока не задокументировано.|
 
 
 

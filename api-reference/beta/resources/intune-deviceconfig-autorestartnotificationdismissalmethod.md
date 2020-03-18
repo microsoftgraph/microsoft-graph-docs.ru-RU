@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Ауторестартнотификатиондисмиссалмесод
 description: Метод увольнения уведомления о необходимости автоматического перезапуска
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 27a94e59814588511f6eae6c8a6ecff3f64144b4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 69178d88d1a82686cba29f56dc8c22a24da58a78
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527066"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42795900"
 ---
 # <a name="autorestartnotificationdismissalmethod-enum-type"></a>тип перечисления Ауторестартнотификатиондисмиссалмесод
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42527066"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроено|
-|Автоматически|1 |Автоматическое закрытие|
-|user|2 |Увольнение пользователей|
+|Автоматически|1,1|Автоматическое закрытие|
+|user|2|Увольнение пользователей|
 
 
 

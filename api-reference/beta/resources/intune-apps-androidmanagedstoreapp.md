@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Андроидманажедстореапп
 description: Содержит свойства и унаследованные свойства для приложений с управляемым хранилищем Android.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d3eab5b4ee2be9c9a60b5e06b8a468e0ee9beb3b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a97bb1fcec1e1d4ba6b53a7d8c110299705365c2
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42494340"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799292"
 ---
 # <a name="androidmanagedstoreapp-resource-type"></a>Тип ресурса Андроидманажедстореапп
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

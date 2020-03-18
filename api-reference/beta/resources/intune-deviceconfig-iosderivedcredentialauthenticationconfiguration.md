@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Иосдериведкредентиалаусентикатионконфигуратион
 description: Профиль производных учетных данных iOS.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0e444a76e66082521b6be5a43d7efc2c3265ca33
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7210c8bff0ed72ba7bb10b3d202d972bb80a65eb
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529945"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791648"
 ---
 # <a name="iosderivedcredentialauthenticationconfiguration-resource-type"></a>Тип ресурса Иосдериведкредентиалаусентикатионконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

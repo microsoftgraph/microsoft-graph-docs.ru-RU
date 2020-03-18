@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Иоскербероссинглесигнонекстенсион
 description: Представляет профиль расширения единого входа Kerberos для устройств с iOS.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e4d20aac5a72936c189a792ba4f3544ed9e96eb9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 07b51e3d9fc7fe184f8cbf120f34c7ef3cbdb754
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526341"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790603"
 ---
 # <a name="ioskerberossinglesignonextension-resource-type"></a>Тип ресурса Иоскербероссинглесигнонекстенсион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

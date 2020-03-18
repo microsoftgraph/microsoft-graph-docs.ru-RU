@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Цертификатеревокатионстатус
 description: Состояние отзыва сертификата.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 870cf8a59dc2f7a8ae26f3e7a76dd49249b0e008
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f0e0342924faf166e6daf0a66149e841b88d6d0c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526981"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42795696"
 ---
 # <a name="certificaterevocationstatus-enum-type"></a>тип перечисления Цертификатеревокатионстатус
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -25,10 +23,10 @@ ms.locfileid: "42526981"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|нет|нуль|Не отозван.|
-|закончен|1 |Отзыв ожидается.|
-|опубликован|2 |Выдана команда отзыва.|
-|сбоев|3 |Не удалось выполнить отзыв.|
+|none|нуль|Не отозван.|
+|закончен|1,1|Отзыв ожидается.|
+|опубликован|2|Выдана команда отзыва.|
+|сбоев|4|Не удалось выполнить отзыв.|
 |отозван|4 |Отозван.|
 
 

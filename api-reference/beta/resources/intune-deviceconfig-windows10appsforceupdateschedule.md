@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса windows10AppsForceUpdateSchedule
 description: Расписание принудительного обновления Windows 10 для приложений
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f5c1e1c832e961b00161ef0a3d98cd8c278dc97e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 980503e9316e5ae1d0083f2226519004fa802afd
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529243"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787231"
 ---
 # <a name="windows10appsforceupdateschedule-resource-type"></a>Тип ресурса windows10AppsForceUpdateSchedule
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

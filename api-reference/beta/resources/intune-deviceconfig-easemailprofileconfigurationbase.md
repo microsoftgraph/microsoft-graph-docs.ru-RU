@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Еасемаилпрофилеконфигуратионбасе
 description: Профиль конфигурации функций устройства Apple.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a913da440d650078af67f4c9f7013e5666baaafd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d71247b1f2019e18952ba40d5079bbcd5eda48e4
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530085"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791935"
 ---
 # <a name="easemailprofileconfigurationbase-resource-type"></a>Тип ресурса Еасемаилпрофилеконфигуратионбасе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

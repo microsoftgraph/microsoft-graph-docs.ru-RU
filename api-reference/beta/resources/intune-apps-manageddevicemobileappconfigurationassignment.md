@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса managedDeviceMobileAppConfigurationAssignment
 description: Содержит свойства, используемые для назначения конфигурации приложения MDM группе.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: aee372912eb0ed655cdfc2fde7db11ec958c4dfe
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a5e67c6399c2f7782c9edbaeeb73d5e5bab0c00f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42492539"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797953"
 ---
 # <a name="manageddevicemobileappconfigurationassignment-resource-type"></a>Тип ресурса managedDeviceMobileAppConfigurationAssignment
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

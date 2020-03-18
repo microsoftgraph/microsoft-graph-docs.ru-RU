@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Впнднсруле
 description: Определение правила DNS для VPN.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f110538f61dc16110956b05cdf42a9af85e9e542
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4ffc8c01aadfe77bd3d92d9f7618a5846cf7c855
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525784"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787392"
 ---
 # <a name="vpndnsrule-resource-type"></a>Тип ресурса Впнднсруле
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

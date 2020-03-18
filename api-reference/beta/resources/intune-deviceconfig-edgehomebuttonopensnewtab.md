@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Еджехомебуттонопенсневтаб
 description: Отображение кнопки "домой"; Нажатие кнопки "домой" загружает новую страницу вкладки.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f957c239907950f8c2181be4e9a45c734effd075
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7563a4b4da723356cff4951a0c0545258a3c9de8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526513"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791886"
 ---
 # <a name="edgehomebuttonopensnewtab-resource-type"></a>Тип ресурса Еджехомебуттонопенсневтаб
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,20 +1,18 @@
 ---
 title: тип перечисления windows10AppType
 description: Тип приложения Windows 10.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a5d1503dee28726160896e9ae11e29b85b37cd9e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4ec84116944f5c5a2580b0aaef0554055f9ea003
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529236"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787216"
 ---
 # <a name="windows10apptype-enum-type"></a>тип перечисления windows10AppType
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,7 +24,7 @@ ms.locfileid: "42529236"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |системной|нуль|Системной.|
-|Гринвич|1 |Гринвич.|
+|Гринвич|1,1|Гринвич.|
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Создание Виндовсдефендераппликатионконтролсупплементалполици
 description: Создание нового объекта Виндовсдефендераппликатионконтролсупплементалполици.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3ec672a7942e338297489a347f51532ffb42305a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d207aaced3212111cc40c78576fffe3ceb9d21ad
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457582"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800076"
 ---
 # <a name="create-windowsdefenderapplicationcontrolsupplementalpolicy"></a>Создание Виндовсдефендераппликатионконтролсупплементалполици
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42457582"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -113,7 +111,6 @@ Content-Length: 517
   ]
 }
 ```
-
 
 
 

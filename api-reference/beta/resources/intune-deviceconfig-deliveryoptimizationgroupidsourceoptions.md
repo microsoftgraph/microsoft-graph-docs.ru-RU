@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Деливерйоптимизатионграупидсаурцеоптионс
 description: Тип параметров идентификатора группы
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 741b39245c26858d4cae46923d1078f568cf6945
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 052b2e658af7e2eaabb1700b64da3687dd9cc91a
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526768"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42793410"
 ---
 # <a name="deliveryoptimizationgroupidsourceoptions-resource-type"></a>Тип ресурса Деливерйоптимизатионграупидсаурцеоптионс
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

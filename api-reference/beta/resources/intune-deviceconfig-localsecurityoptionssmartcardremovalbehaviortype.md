@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Локалсекуритйоптионссмарткардремовалбехавиортипе
 description: Возможные значения для Локалсекуритйоптионссмарткардремовалбехавиортипе
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 653a0e7bef7355c432297613bfa88a82a467c863
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1b54aa37d7bbe78f1d8a8b308e7377e50a46389f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529743"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790337"
 ---
 # <a name="localsecurityoptionssmartcardremovalbehaviortype-enum-type"></a>тип перечисления Локалсекуритйоптионссмарткардремовалбехавиортипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42529743"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |локкворкстатион|нуль|Без действий|
-|noAction|1 |Блокировка рабочей станции|
-|форцелогофф|2 |Принудительный выход|
-|дисконнектремотедесктопсессион|3 |Отключение при удаленном сеансе служб удаленных рабочих столов|
+|noAction|1,1|Блокировка рабочей станции|
+|форцелогофф|2|Принудительный выход|
+|дисконнектремотедесктопсессион|4|Отключение при удаленном сеансе служб удаленных рабочих столов|
 
 
 

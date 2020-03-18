@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса windows10CertificateProfileBase
 description: Базовый класс для профиля сертификата Windows 10.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 22e436545d67f1e2bb2eb7e8e3412bb4879266f9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1d0fe04b0414298a5ad08a962f326d489f694543
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529231"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787202"
 ---
 # <a name="windows10certificateprofilebase-resource-type"></a>Тип ресурса windows10CertificateProfileBase
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

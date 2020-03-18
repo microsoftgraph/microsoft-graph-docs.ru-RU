@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Кэйтипедвалуепаир
 description: Значение типа "ключ — значение" со строковым ключом и типизированным значением.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3c31286234cad1856b35f6acd7559dd878662c73
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f46ea5712c6ab96a4e3678d329e9e2f6cc283fc1
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526250"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790400"
 ---
 # <a name="keytypedvaluepair-resource-type"></a>Тип ресурса Кэйтипедвалуепаир
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

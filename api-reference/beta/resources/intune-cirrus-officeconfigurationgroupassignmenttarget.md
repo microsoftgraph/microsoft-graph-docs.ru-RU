@@ -2,19 +2,17 @@
 title: Тип ресурса Оффицеконфигуратионграупассигнменттаржет
 description: Целевой объект назначения группы AAD для группы клиентов Office.
 localization_priority: Normal
-author: rolyon
+author: davidmu1
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e844f54486e26a6e41fdb40b1fba2be08bac10fe
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b27ecf9284dcf4ddf52502dab524e5d77d346f1f
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42488140"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797306"
 ---
 # <a name="officeconfigurationgroupassignmenttarget-resource-type"></a>Тип ресурса Оффицеконфигуратионграупассигнменттаржет
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

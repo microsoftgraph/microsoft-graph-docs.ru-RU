@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Ланманажераусентикатионлевел
 description: Возможные значения для Ланманажераусентикатионлевел
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 8b979c66469ac29339045dd9d1341f85839084bf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 670cb0bec6915b79102eae227a261f26eb052413
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529762"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790379"
 ---
 # <a name="lanmanagerauthenticationlevel-enum-type"></a>тип перечисления Ланманажераусентикатионлевел
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42529762"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |лманднлтм|нуль|Отправка ответов LM & NTLM|
-|lmNtlmAndNtlmV2|1 |Отправлять LM & NTLM — использовать сеансовую безопасность NTLMv2 при согласовании|
-|лманднтлмонли|2 |Отправлять только LM & NTLM ответы|
-|lmAndNtlmV2|3 |Отправлять только LM & только ответы NTLMv2.|
+|lmNtlmAndNtlmV2|1,1|Отправлять LM & NTLM — использовать сеансовую безопасность NTLMv2 при согласовании|
+|лманднтлмонли|2|Отправлять только LM & NTLM ответы|
+|lmAndNtlmV2|4|Отправлять только LM & только ответы NTLMv2.|
 |lmNtlmV2AndNotLm|4 |Отправлять только LM & NTLMv2 ответы. Отклонять LM|
 |lmNtlmV2AndNotLmOrNtm|5 |Отправлять только LM & NTLMv2 ответы. Отклонять LM & NTLM|
 

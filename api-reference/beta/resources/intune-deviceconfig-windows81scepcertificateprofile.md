@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса windows81SCEPCertificateProfile
 description: Профиль сертификата SCEP для Windows 8.1 и SCEP
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e85714246c1b1f358a360fbad3d8bc7aaa71ba3e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cf102effd83862d7643a626c8981b81c539b364b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529138"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786588"
 ---
 # <a name="windows81scepcertificateprofile-resource-type"></a>Тип ресурса windows81SCEPCertificateProfile
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

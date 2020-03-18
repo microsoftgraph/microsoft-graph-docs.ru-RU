@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Деливерйоптимизатионбандвидсабсолуте
 description: Пределы пропускной способности в килобайтах в секунду.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 536ba80fbc1ae0cee8bbef9933d6366a05284c33
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a8313f742c407eb6ca7b4dffeaf6dba86a631843
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526820"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42794398"
 ---
 # <a name="deliveryoptimizationbandwidthabsolute-resource-type"></a>Тип ресурса Деливерйоптимизатионбандвидсабсолуте
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

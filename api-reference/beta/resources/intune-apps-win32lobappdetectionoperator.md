@@ -1,20 +1,18 @@
 ---
 title: тип перечисления win32LobAppDetectionOperator
 description: Содержит свойства для оператора обнаружения.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ebd053ba143503bba94e7dce785c1650b1fb062f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8768affd78b03f4e2e25f041568ca3b4ecb074a8
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42490905"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797663"
 ---
 # <a name="win32lobappdetectionoperator-enum-type"></a>тип перечисления win32LobAppDetectionOperator
-
-Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42490905"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
-|одинаков|1 |Оператор Equals.|
-|notEqual|2 |Оператор Not Equal.|
+|одинаков|1,1|Оператор Equals.|
+|notEqual|2|Оператор Not Equal.|
 |greaterThan|4 |Оператор "больше чем".|
 |греатерсанорекуал|5 |Оператор "больше или равно".|
 |лесссан|8 |Оператор "меньше чем".|

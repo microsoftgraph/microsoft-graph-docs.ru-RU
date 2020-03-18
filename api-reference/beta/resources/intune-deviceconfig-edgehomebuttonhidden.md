@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Еджехомебуттонхидден
 description: Скрыть кнопку "домой".
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 377321381e29be9e94c06180b9eba3fe3119ec82
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9b45b35797e11584483d46ed74fbb164c6a0acbb
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530077"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791907"
 ---
 # <a name="edgehomebuttonhidden-resource-type"></a>Тип ресурса Еджехомебуттонхидден
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

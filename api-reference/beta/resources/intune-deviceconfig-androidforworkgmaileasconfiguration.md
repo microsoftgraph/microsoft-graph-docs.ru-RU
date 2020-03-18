@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Андроидфорворкгмаилеасконфигуратион
 description: Предоставляя конфигурации в этом профиле, вы можете указать почтовые клиенты Gmail на Android для работы с сервером Exchange и получать электронную почту, контакты, календарь, задачи и заметки. Кроме того, вы также можете указать, какой объем электронной почты необходимо синхронизировать, и как часто устройство должно синхронизироваться.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8779efe62dbe3609fe96bb42f647caf300a6a811
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 95a257c94143c14dbd9261d0a4210a47f7693a61
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42484871"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796848"
 ---
 # <a name="androidforworkgmaileasconfiguration-resource-type"></a>Тип ресурса Андроидфорворкгмаилеасконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

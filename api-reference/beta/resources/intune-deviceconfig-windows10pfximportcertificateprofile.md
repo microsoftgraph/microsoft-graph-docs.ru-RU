@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса windows10PFXImportCertificateProfile
 description: Deprecated
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f02ca18b6132445d76abbf425f5b834bbb11bd69
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d577b06cdba812e48c52d2de9c759c413ef1c586
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529181"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42786672"
 ---
 # <a name="windows10pfximportcertificateprofile-resource-type"></a>Тип ресурса windows10PFXImportCertificateProfile
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

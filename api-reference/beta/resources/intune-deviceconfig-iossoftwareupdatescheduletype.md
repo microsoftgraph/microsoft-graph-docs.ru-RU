@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Иоссофтвареупдатесчедулетипе
 description: Обновление типа расписания обновлений программного обеспечения для iOS.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 58a59e32fd75a99c9585d9c22115620b8a4aad20
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2e07b8426f9f1156cf8e6f4195309d64c8b13338
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526306"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790533"
 ---
 # <a name="iossoftwareupdatescheduletype-enum-type"></a>тип перечисления Иоссофтвареупдатесчедулетипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42526306"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |упдатеаутсидеофактивехаурс|нуль|Обновление вне периода активности.|
-|алвайсупдате|1 |Всегда обновлять.|
-|упдатедурингтимевиндовс|2 |Обновление в течение времени Windows.|
-|упдатеаутсидеофтимевиндовс|3 |Обновление в нерабочее время.|
+|алвайсупдате|1,1|Всегда обновлять.|
+|упдатедурингтимевиндовс|2|Обновление в течение времени Windows.|
+|упдатеаутсидеофтимевиндовс|4|Обновление в нерабочее время.|
 
 
 

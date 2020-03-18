@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса auditActor
 description: Класс, содержащий свойства субъекта аудита.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 40aa3d256da1d7a1c50fc898c6755a82185897ac
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1d54d34081c931df442afa6d6d0e569de75fb652
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42489491"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797439"
 ---
 # <a name="auditactor-resource-type"></a>Тип ресурса auditActor
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса macOSScepCertificateProfile
 description: Профиль сертификата SCEP для Mac OS.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 490c5337d03319157882186c027ae2dc9c20db7b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7b54d8ee5263d9c2accb70df90b8c56bb063976d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526085"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42789187"
 ---
 # <a name="macosscepcertificateprofile-resource-type"></a>Тип ресурса macOSScepCertificateProfile
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Миракастчаннел
 description: Возможные значения для канала Miracast.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d0c280f5c4c1db74d1323375006a839ea422397e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e3cca2c5a91c88e7bf7890ab8f35c4948986faca
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529602"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788536"
 ---
 # <a name="miracastchannel-enum-type"></a>тип перечисления Миракастчаннел
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42529602"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|one|1 |Один.|
-|two|2 |2.|
-|three|3 |Трёх.|
+|one|1,1|Один.|
+|two|2|2.|
+|three|4|Трёх.|
 |four|4 |Четыре.|
 |five|5 |Следующих.|
 |шест|6 |Шест.|
@@ -36,7 +34,7 @@ ms.locfileid: "42529602"
 |Основными|8 |Основными.|
 |9|9 |9.|
 |раз|10 |Раз.|
-|Eleven|11 |Eleven.|
+|Eleven|-11:00|Eleven.|
 |сиртисикс|36|36.|
 |40|40|40.|
 |фортифаур|44|44.|

@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Андроидманажедстореаппконфигуратионсчемаитемдататипе
 description: Тип данных элемента конфигурации в пользовательской схеме конфигурации приложения Android
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ed78c7a3fb8f9ea8c873263dc0d9bbe7756d8abc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 36780972fba710e626d1d025a7c4e782a2a3599d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42494508"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799327"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitemdatatype-enum-type"></a>тип перечисления Андроидманажедстореаппконфигуратионсчемаитемдататипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42494508"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |логический|нуль|Пока не задокументировано.|
-|целое|1 |Пока не задокументировано.|
-|строка|2 |Пока не задокументировано.|
-|повторяюще|3 |Пока не задокументировано.|
+|целое|1,1|Пока не задокументировано.|
+|string|2|Пока не задокументировано.|
+|повторяюще|4|Пока не задокументировано.|
 |MultiSelect|4 |Пока не задокументировано.|
 |bundle|5 |Пока не задокументировано.|
 |бундлеаррай|6 |Пока не задокументировано.|

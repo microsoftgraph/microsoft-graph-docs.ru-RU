@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Чанжеуефисеттингспермиссион
 description: Определяет уровень разрешений, назначенный пользователям, чтобы включить их изменение параметров UEFI
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b491859060de5e22ad1edb0be6130eef078fe837
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 21843d9ac18dfe4f5aa4e26486c72a7ab34e35e0
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526960"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42795675"
 ---
 # <a name="changeuefisettingspermission-enum-type"></a>тип перечисления Чанжеуефисеттингспермиссион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,7 +24,7 @@ ms.locfileid: "42526960"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |нотконфигуредонли|нуль|Значение по умолчанию для устройства, без намерения.|
-|нет|1 |Запретить изменение разрешения для параметра UEFI|
+|none|1,1|Запретить изменение разрешения для параметра UEFI|
 
 
 

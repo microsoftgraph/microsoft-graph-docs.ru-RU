@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Макослаунчитем
 description: Представляет приложение в списке элементов запуска macOS
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: dbdec2156c135544a6ce36887fcd7c911217dff5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 378b2e3f510d8d0db082e3843ea2588e5a5e161d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529682"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42789208"
 ---
 # <a name="macoslaunchitem-resource-type"></a>Тип ресурса Макослаунчитем
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

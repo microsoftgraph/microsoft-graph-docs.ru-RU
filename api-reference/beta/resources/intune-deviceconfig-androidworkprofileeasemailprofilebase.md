@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Андроидворкпрофилиасемаилпрофилебасе
 description: Основа для профилей электронной почты для профиля работы Android
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e904dd6137d500ec83a91d676997c533289e8727
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5aa70a15aa7a6801f212bc1654ee561f2a973940
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527213"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796175"
 ---
 # <a name="androidworkprofileeasemailprofilebase-resource-type"></a>Тип ресурса Андроидворкпрофилиасемаилпрофилебасе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

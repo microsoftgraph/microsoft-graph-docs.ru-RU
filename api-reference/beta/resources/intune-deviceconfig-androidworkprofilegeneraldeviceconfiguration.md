@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса androidWorkProfileGeneralDeviceConfiguration
 description: Рабочий профиль Android Общая конфигурация устройства.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 56b4e83e65aba438920a3c0569ccec8b19b673d8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cff6ff55ae54cba706d92dea72f805cefd6f80bd
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42483947"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796161"
 ---
 # <a name="androidworkprofilegeneraldeviceconfiguration-resource-type"></a>Тип ресурса androidWorkProfileGeneralDeviceConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

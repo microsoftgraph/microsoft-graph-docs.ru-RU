@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Администраторконфигуреддевицекомплианцестате
 description: Перечисление состояния соответствия устройства, настроенного администратором
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c3abe146cf0cc773f19d882027575edeaa122081
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 99c697f0c8a9acf819c880781d139d37a658826e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42487461"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797236"
 ---
 # <a name="administratorconfigureddevicecompliancestate-enum-type"></a>тип перечисления Администраторконфигуреддевицекомплианцестате
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,7 +24,7 @@ ms.locfileid: "42487461"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |баседондевицекомплианцеполици|нуль|Задание состояния соответствия на основе других политик соответствия требованиям|
-|Несоответствующих|1 |Установка соответствия несоответствующим требованиям|
+|Несоответствующих|1,1|Установка соответствия несоответствующим требованиям|
 
 
 

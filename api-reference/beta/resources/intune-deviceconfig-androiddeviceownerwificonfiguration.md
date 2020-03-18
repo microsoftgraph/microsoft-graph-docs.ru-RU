@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Андроиддевицеовнервификонфигуратион
 description: Предоставляя конфигурации в этом профиле, вы можете указать устройству Android подключаться к желаемой конечной точке Wi/Fi. Указав способ проверки подлинности и типы безопасности, ожидаемые конечной точкой Wi/Fi, можно легко установить соединение Wi/Fi для конечного пользователя. Этот профиль предоставляет ограниченные и простые типы безопасности, чем Корпоративный профиль Wi/Fi.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5010bd713ef4979c6b673cfeeff7440462f08cd8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 96c92c865f7283eb2eb056a939c878040fe458f5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42485865"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796946"
 ---
 # <a name="androiddeviceownerwificonfiguration-resource-type"></a>Тип ресурса Андроиддевицеовнервификонфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Едитионупграделиценсетипе
 description: Тип лицензии на обновление выпуска
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7d1c6e63f3cd933442bbe56f7ff5e74e8eb859b4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4329f20d5f109e8dfedb85a8e9ca3dd078ed3728
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42530027"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791823"
 ---
 # <a name="editionupgradelicensetype-enum-type"></a>тип перечисления Едитионупграделиценсетипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42530027"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |productKey|нуль|Тип ключа продукта|
-|лиценсефиле|1 |Тип файла лицензии|
-|notConfigured|2 |NotConfigured|
+|лиценсефиле|1,1|Тип файла лицензии|
+|notConfigured|2|NotConfigured|
 
 
 

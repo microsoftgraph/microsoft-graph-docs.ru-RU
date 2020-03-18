@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса androidForWorkAppConfigurationSchema
 description: Схема, описывающая пользовательские конфигурации приложения Android for Work.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: eb4b210d1469ba93fdbfe771431b1616e6bc677f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: de969bf4a5826bc7b5e70e37fab8284e077dc3dc
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42495160"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42799669"
 ---
 # <a name="androidforworkappconfigurationschema-resource-type"></a>Тип ресурса androidForWorkAppConfigurationSchema
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

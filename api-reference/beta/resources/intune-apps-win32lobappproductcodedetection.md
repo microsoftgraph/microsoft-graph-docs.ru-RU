@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса win32LobAppProductCodeDetection
 description: Содержит код продукта и свойства версии для обнаружения приложения Win32
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c9cccd7dd1e5963b495503286a8f6985b8e359dc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 98d510d2a42666924adbdb9c2a2e05d9f3b60762
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42490499"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797593"
 ---
 # <a name="win32lobappproductcodedetection-resource-type"></a>Тип ресурса win32LobAppProductCodeDetection
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

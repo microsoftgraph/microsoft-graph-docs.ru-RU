@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Андроиддевицеовнерглобалпроксидирект
 description: Глобальный прокси-сервер владельца устройств Android Direct.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 58e95490fa3fd7adaec6e6b8f01c43566b1c289a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cc2b960b85fd7fac506423af4d3a380247fb4892
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42486551"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797009"
 ---
 # <a name="androiddeviceownerglobalproxydirect-resource-type"></a>Тип ресурса Андроиддевицеовнерглобалпроксидирект
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

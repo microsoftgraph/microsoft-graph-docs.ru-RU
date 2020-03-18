@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса windowsPhone81StoreApp
 description: Содержит свойства и наследуемые свойства для приложений Магазина Windows Phone 8,1.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c2b4d22cd33ec2d82031226e1a5cac3745146943
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c133810fa28506a3ddc8d40d8f68ec21eab71949
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42489778"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797474"
 ---
 # <a name="windowsphone81storeapp-resource-type"></a>Тип ресурса windowsPhone81StoreApp
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

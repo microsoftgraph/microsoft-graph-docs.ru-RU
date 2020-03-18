@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Локалсекуритйоптионсстандардусерелеватионпромптбехавиортипе
 description: Возможные значения для Локалсекуритйоптионсстандардусерелеватионпромптбехавиор
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d0d3cd598721ea9d08adfc8ee81c534018b78bf8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 293637986f2c42753c2db4c7b7f4e8c3c037e938
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526215"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790330"
 ---
 # <a name="localsecurityoptionsstandarduserelevationpromptbehaviortype-enum-type"></a>тип перечисления Локалсекуритйоптионсстандардусерелеватионпромптбехавиортипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42526215"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Not Configured|
-|аутоматикаллиденелеватионрекуестс|1 |Автоматическое отклонение запросов на повышение прав|
-|промптфоркредентиалсонсесекуредесктоп|2 |Запрос учетных данных на безопасном рабочем столе|
-|промптфоркредентиалс|3 |Запрос учетных данных|
+|аутоматикаллиденелеватионрекуестс|1,1|Автоматическое отклонение запросов на повышение прав|
+|промптфоркредентиалсонсесекуредесктоп|2|Запрос учетных данных на безопасном рабочем столе|
+|промптфоркредентиалс|4|Запрос учетных данных|
 
 
 

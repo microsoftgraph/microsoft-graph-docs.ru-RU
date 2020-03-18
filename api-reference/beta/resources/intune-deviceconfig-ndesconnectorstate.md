@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Ндесконнекторстате
 description: Текущее состояние соединителя NDES Connector.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d1f430b659a1ab2057a069cb2ede7997aab2613f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5710045de53a8da1dcda81469f4cb5dc7eb2f737
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529595"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788522"
 ---
 # <a name="ndesconnectorstate-enum-type"></a>тип перечисления Ндесконнекторстате
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -25,9 +23,9 @@ ms.locfileid: "42529595"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|нет|нуль|Для этого соединителя пока недоступно состояние.|
-|ASP|1 |Соединитель NDES Connector недавно подключился|
-|отсутств|2 |Нет недавних действий для соединителя NDES Connector|
+|none|нуль|Для этого соединителя пока недоступно состояние.|
+|ASP|1,1|Соединитель NDES Connector недавно подключился|
+|отсутств|2|Нет недавних действий для соединителя NDES Connector|
 
 
 

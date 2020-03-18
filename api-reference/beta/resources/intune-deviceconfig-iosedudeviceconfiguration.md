@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Иоседудевицеконфигуратион
 description: Конфигурация устройства iOS для iOS
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 731b8227d5441977a1ca3d3174c6b98ec3f70b8b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b8eb239d65170fb293967d9a35dbd5fdacde592b
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526376"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791613"
 ---
 # <a name="iosedudeviceconfiguration-resource-type"></a>Тип ресурса Иоседудевицеконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

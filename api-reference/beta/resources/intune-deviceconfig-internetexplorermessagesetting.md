@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Интернетексплорермессажесеттинг
 description: Сообщение, которое будет отображаться на границе перед переключением в Internet Explorer.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 927184dc3e2cc341180a36060d5e41045c5ac086
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a7f1875e758ba815786a7941678367980f3db3d0
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529972"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42791711"
 ---
 # <a name="internetexplorermessagesetting-enum-type"></a>тип перечисления Интернетексплорермессажесеттинг
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42529972"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
-|активирован|1 |Активирован.|
-|enabled|2 |Доступ.|
-|кипгоинг|3 |Кипгоинг.|
+|активирован|1,1|Активирован.|
+|enabled|2|Доступ.|
+|кипгоинг|4|Кипгоинг.|
 
 
 

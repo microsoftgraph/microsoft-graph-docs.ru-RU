@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Поверактионтипе
 description: Типы действий по питанию
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9db6e404722c0de1f65f43d0ecfd5feff5852b60
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6352809006b196ecafc05be817af81cffb47797e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529546"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42788417"
 ---
 # <a name="poweractiontype-enum-type"></a>тип перечисления Поверактионтипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42529546"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроено|
-|noAction|1 |Нет действий|
-|спящий режим|2 |Перевод устройства в состояние сна|
-|режим гибернации|3 |Перевод устройства в спящий режим|
+|noAction|1,1|Нет действий|
+|спящий режим|2|Перевод устройства в состояние сна|
+|режим гибернации|4|Перевод устройства в спящий режим|
 |запланирован|4 |Устройство завершения работы|
 
 

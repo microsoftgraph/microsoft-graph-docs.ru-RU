@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Апплесубжектнамеформат
 description: Параметры формата имени субъекта для устройств Apple.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: cfbdaf6a8498641059f32cbd0509e5e68fedbbcc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e1317c6cd0b02ea899db94389dcf314c61801d01
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527144"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796077"
 ---
 # <a name="applesubjectnameformat-enum-type"></a>тип перечисления Апплесубжектнамеформат
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42527144"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |коммоннаме|нуль|Общее имя.|
-|коммоннамеасемаил|1 |Общее имя как электронная почта.|
-|собственный|2 |Настраиваемый формат имени субъекта.|
-|коммоннамеинклудинжемаил|3 |Общее имя, включая электронную почту.|
+|коммоннамеасемаил|1,1|Общее имя как электронная почта.|
+|собственный|2|Настраиваемый формат имени субъекта.|
+|коммоннамеинклудинжемаил|4|Общее имя, включая электронную почту.|
 |коммоннамеасимеи|5 |Общее имя в виде IMEI.|
 |коммоннамеассериалнумбер|6 |Общее имя в виде порядкового номера.|
 

@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Vpnserver.
 description: Определение VPN-сервера.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 836e37bbd7d82b2d591d08819b1713bb7f03a7c1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 577b606ee4dc46cd5ed8f93c351f5b41e73fe973
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525749"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787322"
 ---
 # <a name="vpnserver-resource-type"></a>Тип ресурса Vpnserver.
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

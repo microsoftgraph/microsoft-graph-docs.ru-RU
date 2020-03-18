@@ -1,20 +1,18 @@
 ---
 title: Удаление Виндовсфеатуреупдатепрофилеассигнмент
 description: Удаляет объект Виндовсфеатуреупдатепрофилеассигнмент.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f8870fdb1bff82f297d2d142bb632a57241ed839
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 829212b727b7f0b6171d6df70c35f3257736904d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457848"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42800363"
 ---
 # <a name="delete-windowsfeatureupdateprofileassignment"></a>Удаление Виндовсфеатуреупдатепрофилеассигнмент
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +27,7 @@ ms.locfileid: "42457848"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -65,7 +63,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/windowsFeatureUpdatePro
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса appListItem
 description: Представляет приложение в списке управляемых приложений
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: eb861ad99aa3d8d73fd096af33377722c74feace
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7cde9f58fd7deb66fb30f871d1ff7d0968835a40
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527093"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42795928"
 ---
 # <a name="applistitem-resource-type"></a>Тип ресурса appListItem
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

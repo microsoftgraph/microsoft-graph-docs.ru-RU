@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Впнклиентаусентикатионтипе
 description: Тип проверки подлинности VPN-клиента
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ce19c67689e12889b91597066593572a13fc8313
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bb9f0e306292b744204c066575d25e98e23a464d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529334"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787413"
 ---
 # <a name="vpnclientauthenticationtype-enum-type"></a>тип перечисления Впнклиентаусентикатионтипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,7 +24,7 @@ ms.locfileid: "42529334"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |усераусентикатион|нуль|Проверка подлинности пользователя|
-|девицеаусентикатион|1 |Проверка подлинности устройства|
+|девицеаусентикатион|1,1|Проверка подлинности устройства|
 
 
 

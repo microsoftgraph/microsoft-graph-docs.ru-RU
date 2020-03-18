@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Androidforworkvpnconnectiontype.
 description: Тип VPN-подключения Android для работы.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 618fa6ddb53c114f4ee8f4078d80499cc8a97572
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5acac7a7966efb703337162bb736f48c55b9f756
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42484108"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796785"
 ---
 # <a name="androidforworkvpnconnectiontype-enum-type"></a>тип перечисления Androidforworkvpnconnectiontype.
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42484108"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Цискоаниконнект|нуль|Cisco Аниконнект.|
-|пулсесекуре|1 |Безопасный импульс.|
-|f5EdgeClient|2 |Пограничный клиент F5.|
-|деллсоникваллмобилеконнект|3 |Мобильное подключение Dell Сониквалл.|
+|пулсесекуре|1,1|Безопасный импульс.|
+|f5EdgeClient|2|Пограничный клиент F5.|
+|деллсоникваллмобилеконнект|4|Мобильное подключение Dell Сониквалл.|
 |чеккпоинткапсулевпн|4 |Проверка покапсулы VPN.|
 |клиентов|5 |Клиентов|
 

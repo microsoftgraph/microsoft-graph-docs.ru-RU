@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Апплевпналвайсонконфигуратион
 description: Конфигурация Always on VPN для MacOS и iOS IKEv2
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3b963556254766cff951faeed707e5c6aceed05f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 10facf24c8fd56786c2706e1fa8ee999f48e2ed7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527145"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796070"
 ---
 # <a name="applevpnalwaysonconfiguration-resource-type"></a>Тип ресурса Апплевпналвайсонконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

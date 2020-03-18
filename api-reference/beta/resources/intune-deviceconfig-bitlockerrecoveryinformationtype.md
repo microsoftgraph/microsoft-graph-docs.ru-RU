@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Битлоккеррековеринформатионтипе
 description: Типы Битлоккеррековеринформатионтипе
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 3a902087fc41a1be9144b02f77c4b599ac9df76a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e34d91ec138771f05e71520bbea2c736c12d3328
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527042"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42795859"
 ---
 # <a name="bitlockerrecoveryinformationtype-enum-type"></a>тип перечисления Битлоккеррековеринформатионтипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -25,8 +23,8 @@ ms.locfileid: "42527042"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|пассвордандкэй|1 |Хранение паролей восстановления и пакетов ключевых ключей.|
-|пассвордонли|2 |Сохранять только пароли восстановления.|
+|пассвордандкэй|1,1|Хранение паролей восстановления и пакетов ключевых ключей.|
+|пассвордонли|2|Сохранять только пароли восстановления.|
 
 
 

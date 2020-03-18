@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Микрософтеджечаннел
 description: Перечисление, указывающее каналы для приложений Microsoft Edge.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 2cc769f0cff4f280ecd2adaa009a7433e13c3727
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d5fe032781b34110678be52b3ca40967d57c32ea
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42492112"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797890"
 ---
 # <a name="microsoftedgechannel-enum-type"></a>тип перечисления Микрософтеджечаннел
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +24,8 @@ ms.locfileid: "42492112"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |цикл|нуль|Пока не задокументировано.|
-|Бета|1 |Пока не задокументировано.|
-|строг|2 |Пока не задокументировано.|
+|Бета|1,1|Пока не задокументировано.|
+|строг|2|Пока не задокументировано.|
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Макосфиреваллаппликатион
 description: Представляет приложение в списке приложений брандмауэра macOS
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 872c01facb5fe6d5caa613799b8c12c2f5a384c0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2536d87af63f574d75428472dc338a2afc4288bf
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529707"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42789466"
 ---
 # <a name="macosfirewallapplication-resource-type"></a>Тип ресурса Макосфиреваллаппликатион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -4,16 +4,16 @@ description: Список API Microsoft Graph для конечных точек
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 3ba5df73946b6d0c279be38b86e63f93623248c2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 40229752dacbdd18213653966ca40ccc00587c57
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42487545"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797250"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Настройка устройств в Microsoft Intune
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -233,6 +233,7 @@ ms.locfileid: "42487545"
 - [Тип метода для добавления пакетов брандмауэра в список](intune-deviceconfig-firewallpacketqueueingmethodtype.md)
 - [Тип метода кодировки общего ключа в брандмауэре](intune-deviceconfig-firewallpresharedkeyencodingmethodtype.md)
 - [Тип защиты папок](intune-deviceconfig-folderprotectiontype.md)
+- [Категория групповой политики](intune-grouppolicy-grouppolicycategory.md)
 - [Настройка политики группы](intune-grouppolicy-grouppolicyconfiguration.md)
 - [Назначение конфигурации политики группы](intune-grouppolicy-grouppolicyconfigurationassignment.md)
 - [Тип конфигурации политики группы](intune-grouppolicy-grouppolicyconfigurationtype.md)
@@ -259,6 +260,7 @@ ms.locfileid: "42487545"
 - [Многозначное тестовое значение представления групповой политики](intune-grouppolicy-grouppolicypresentationvaluemultitext.md)
 - [Текст значения представления групповой политики](intune-grouppolicy-grouppolicypresentationvaluetext.md)
 - [Тип групповой политики](intune-grouppolicy-grouppolicytype.md)
+- [Категория, отправленная групповой политикой](intune-grouppolicy-grouppolicyuploadedcategory.md)
 - [Определение загруженной групповой политики](intune-grouppolicy-grouppolicyuploadeddefinition.md)
 - [Групповая политика, отправленная в презентацию](intune-grouppolicy-grouppolicyuploadedpresentation.md)
 - [Хэш-алгоритмы](intune-deviceconfig-hashalgorithms.md)
@@ -266,6 +268,7 @@ ms.locfileid: "42487545"
 - [Первоначальная цель](intune-deviceconfig-intendedpurpose.md)
 - [Параметр сообщения Internet Explorer](intune-deviceconfig-internetexplorermessagesetting.md)
 - [Уровень безопасности сайта в Интернете](intune-deviceconfig-internetsitesecuritylevel.md)
+- [расширение единого входа для iOS Azure AD](intune-deviceconfig-iosazureadsinglesignonextension.md)
 - [Закладка iOS](intune-deviceconfig-iosbookmark.md)
 - [Профиль сертификатов для iOS](intune-deviceconfig-ioscertificateprofile.md)
 - [Базовый профиль сертификатов для iOS](intune-deviceconfig-ioscertificateprofilebase.md)
@@ -327,6 +330,7 @@ ms.locfileid: "42487545"
 - [Локальные параметры безопасности: муровень безопасности сессии](intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)
 - [Локальные параметры безопасности: поведение при извлечении смарт-карты](intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype.md)
 - [Локальные параметры безопасности: режим отображения запроса для повышения прав стандартного пользователя](intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md)
+- [macOS связанные домены ключей и значений](intune-deviceconfig-macosassociateddomainskeyvaluepair.md)
 - [База профилей сертификатов для macOS](intune-deviceconfig-macoscertificateprofilebase.md)
 - [Политика соответствия macOS](intune-deviceconfig-macoscompliancepolicy.md)
 - [расширение единого входа для учетных данных macOS](intune-deviceconfig-macoscredentialsinglesignonextension.md)

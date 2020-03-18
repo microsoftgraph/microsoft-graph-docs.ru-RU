@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Макосвппапп
 description: Содержит свойства и наследуемые свойства для приложений MacOS Program (VPP), которые были приобретены.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 26d91da8aac490aa72a1431850320a76ba6a3c9e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 87be40eddde8fd5b8ef8e454e3105c69a90ffb76
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42492952"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42798009"
 ---
 # <a name="macosvppapp-resource-type"></a>Тип ресурса Макосвппапп
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

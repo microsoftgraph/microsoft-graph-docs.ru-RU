@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса androidDeviceOwnerGeneralDeviceConfiguration
 description: В этом разделе описаны объявляемые методы, свойства и связи, предоставляемые ресурсом androidDeviceOwnerGeneralDeviceConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b7fed93978c98adc88acd1682238e816ed7d2057
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c2dd5e3b30ae4af67a3205effc435a1082df3c8e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42486740"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797138"
 ---
 # <a name="androiddeviceownergeneraldeviceconfiguration-resource-type"></a>Тип ресурса androidDeviceOwnerGeneralDeviceConfiguration
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

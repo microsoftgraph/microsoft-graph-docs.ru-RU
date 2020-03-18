@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса auditResource
 description: Класс, содержащий свойства ресурса аудита.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9372c69d977be434bc963325f8ec93e68defca50
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ac2aa3f39f88635f403a0b5dbccd8b366fc1683e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42489393"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797418"
 ---
 # <a name="auditresource-resource-type"></a>Тип ресурса auditResource
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

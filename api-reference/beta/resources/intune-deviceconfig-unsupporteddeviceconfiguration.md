@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Унсуппортеддевицеконфигуратион
 description: Унсуппортеддевицеконфигуратион используется, когда сущность не может быть сопоставлена с другим подтипом, совместимым с моделью deviceConfiguration.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 293533e66c3f67e46ac5f06463fc5a644da4ba65
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5d2e60c67e8717049a6336017f25506c6a5fcfa7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42525819"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787462"
 ---
 # <a name="unsupporteddeviceconfiguration-resource-type"></a>Тип ресурса Унсуппортеддевицеконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -49,7 +47,7 @@ ms.locfileid: "42525819"
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |оригиналентититипенаме|String|Тип сущности, возвращаемой в противном случае.|
-|подробности|Коллекция [унсуппортеддевицеконфигуратиондетаил](../resources/intune-deviceconfig-unsupporteddeviceconfigurationdetail.md)|Сведения о том, почему сущность не поддерживается. Эта коллекция может содержать не более 1000 элементов.|
+|details|Коллекция [унсуппортеддевицеконфигуратиондетаил](../resources/intune-deviceconfig-unsupporteddeviceconfigurationdetail.md)|Сведения о том, почему сущность не поддерживается. Эта коллекция может содержать не более 1000 элементов.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

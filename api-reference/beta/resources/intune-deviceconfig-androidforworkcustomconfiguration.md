@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Андроидфорворккустомконфигуратион
 description: Настраиваемая конфигурация Android для работы
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1018b36794f0b2010a727f45200956158a713a2f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 62b05c662349b85b101a9d2584bf33027806a7ac
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42485109"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796883"
 ---
 # <a name="androidforworkcustomconfiguration-resource-type"></a>Тип ресурса Андроидфорворккустомконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

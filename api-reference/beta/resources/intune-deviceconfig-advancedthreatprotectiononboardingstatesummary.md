@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Адванцедсреатпротектиононбоардингстатесуммари
 description: Сводка по состоянию Advanced Threat Protection в Защитнике Windows по всей учетной записи.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ec8ce4a680fd959db38a19a2cd36b13a6b018be6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c3b3d28826f2d26674b8ab24898e68164e635e01
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42487370"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797215"
 ---
 # <a name="advancedthreatprotectiononboardingstatesummary-resource-type"></a>Тип ресурса Адванцедсреатпротектиононбоардингстатесуммари
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

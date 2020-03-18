@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса androidScepCertificateProfile
 description: Профиль сертификата SCEP для Android
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 73e1450dbe6b9ac4a133812cdc36b22b140d4de2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 23ebd472f76bc6c31bbf361ed1d8b148e6810b9d
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527297"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796729"
 ---
 # <a name="androidscepcertificateprofile-resource-type"></a>Тип ресурса androidScepCertificateProfile
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

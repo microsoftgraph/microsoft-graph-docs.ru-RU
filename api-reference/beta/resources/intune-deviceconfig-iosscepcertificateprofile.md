@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса iosScepCertificateProfile
 description: Профиль сертификата SCEP для iOS.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c95ab2390dadc592eb93fa3146db6855f52f35eb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: af3e32e644c82489ac15ae8f55659646880916fb
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529868"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790554"
 ---
 # <a name="iosscepcertificateprofile-resource-type"></a>Тип ресурса iosScepCertificateProfile
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

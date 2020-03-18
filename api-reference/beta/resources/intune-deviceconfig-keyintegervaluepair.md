@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Кэйинтежервалуепаир
 description: Значение типа "ключ — значение" с ключом строки и целым значением.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d399c7b9b0dae17beb6928682e88460ba9999b16
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0f2a3f4201956db2cbca001f8d94f6ae6ecc90d7
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529797"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790435"
 ---
 # <a name="keyintegervaluepair-resource-type"></a>Тип ресурса Кэйинтежервалуепаир
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

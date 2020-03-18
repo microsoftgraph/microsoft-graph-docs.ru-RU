@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса КарттоклассассоЦиатион
 description: КарттоклассассоЦиатион для связывания корзин устройств с аудиториями.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9588efefeb08233827b0570bc981fba007004a0e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4741cc04399572e69ad28b4217bc669b2dbcd480
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527002"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42795717"
 ---
 # <a name="carttoclassassociation-resource-type"></a>Тип ресурса КарттоклассассоЦиатион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

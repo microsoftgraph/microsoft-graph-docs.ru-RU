@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Макосимпортедпфксцертификатепрофиле
 description: Профиль импорта PFX-сертификата MacOS PFX
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0055faf8b30031667146c606467c18d589329e3f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9ca3f441c94b7ba4db105841b692010466dbb054
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526106"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42789445"
 ---
 # <a name="macosimportedpfxcertificateprofile-resource-type"></a>Тип ресурса Макосимпортедпфксцертификатепрофиле
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

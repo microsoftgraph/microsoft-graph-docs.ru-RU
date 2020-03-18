@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Иосвппаппревокелиценсесактионресулт
 description: Определяет результаты действий в приложениях для iOS VPP, содержит унаследованные свойства для Актионресулт.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fbc7ea19fb2a644b889ac1a6a00f5a3fba503f93
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ebb4af4c9cd6b9f58a3e0ee341b7e43192094d29
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42493225"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42798058"
 ---
 # <a name="iosvppapprevokelicensesactionresult-resource-type"></a>Тип ресурса Иосвппаппревокелиценсесактионресулт
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

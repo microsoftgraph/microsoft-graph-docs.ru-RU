@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Андроидворкпрофилениневоркеасконфигуратион
 description: Предоставляя конфигурации в этом профиле, вы можете указать, что на устройствах с рабочими профилями Android для связи с сервером Exchange и получать сообщения электронной почты, контакты, календарь, задачи и заметки. Кроме того, вы также можете указать, какой объем электронной почты необходимо синхронизировать, и как часто устройство должно синхронизироваться.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 44ca866abe3a5d586488a245b6c227bc72c6ad6a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f9ab5a1df1ea14068188ddc21ca7316ef9911fb1
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42483933"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796147"
 ---
 # <a name="androidworkprofilenineworkeasconfiguration-resource-type"></a>Тип ресурса Андроидворкпрофилениневоркеасконфигуратион
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

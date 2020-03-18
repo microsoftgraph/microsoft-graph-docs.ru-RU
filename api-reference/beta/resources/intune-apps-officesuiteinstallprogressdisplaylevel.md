@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Оффицесуитеинсталлпрогрессдисплайлевел
 description: Перечисление, указывающее уровень отображения пользовательского интерфейса установки хода установки на устройстве.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6bf15435a4f5b1d2eb0efe8935ca09ae0d4959b1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c1e6ff53175cfdd6a56e50e368c545c97a83f0f4
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42491213"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797733"
 ---
 # <a name="officesuiteinstallprogressdisplaylevel-enum-type"></a>тип перечисления Оффицесуитеинсталлпрогрессдисплайлевел
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -25,8 +23,8 @@ ms.locfileid: "42491213"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|нет|нуль|Пока не задокументировано.|
-|полный|1 |Пока не задокументировано.|
+|none|нуль|Пока не задокументировано.|
+|полный|1,1|Пока не задокументировано.|
 
 
 

@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса androidForWorkPkcsCertificateProfile
 description: Профиль сертификата для Android для работы в формате PKCS
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 62650c758252a2928ec36a696c356b2818b71caf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aca54a887f51e3cb31b08bdcb31eb29b541410d5
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42484654"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796827"
 ---
 # <a name="androidforworkpkcscertificateprofile-resource-type"></a>Тип ресурса androidForWorkPkcsCertificateProfile
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

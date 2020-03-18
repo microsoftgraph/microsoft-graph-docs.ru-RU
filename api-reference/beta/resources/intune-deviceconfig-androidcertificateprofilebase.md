@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Андроидцертификатепрофилебасе
 description: База профиля сертификата Android.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d59540fa4d11d1f3153c6138ada70371d2066a83
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6d68242d482cef71884567cd70d02dd4411b9501
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42487356"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797201"
 ---
 # <a name="androidcertificateprofilebase-resource-type"></a>Тип ресурса Андроидцертификатепрофилебасе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Андроиддевицеовнердефаултапппермиссионполицитипе
 description: Тип политики разрешений для приложений владельца устройств Android по умолчанию.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 8a0ca2180433c63626c8f4bd8870e637de1cb6a5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e6770cbf0003558fce62d4a1a9160c837a91f58c
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42486999"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42797152"
 ---
 # <a name="androiddeviceownerdefaultapppermissionpolicytype-enum-type"></a>тип перечисления Андроиддевицеовнердефаултапппермиссионполицитипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42486999"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
-|Подсказка|1 |Появляется.|
-|автопредоставление|2 |Автоматическое предоставление.|
-|автозапрет|3 |Автоматическое отклонение.|
+|Подсказка|1,1|Появляется.|
+|автопредоставление|2|Автоматическое предоставление.|
+|автозапрет|4|Автоматическое отклонение.|
 
 
 

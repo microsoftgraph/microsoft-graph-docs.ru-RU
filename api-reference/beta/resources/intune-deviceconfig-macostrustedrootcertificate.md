@@ -1,20 +1,18 @@
 ---
 title: Тип ресурса Макострустедрутцертификате
 description: Профиль конфигурации доверенного корневого сертификата OS X.
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2ad53ec22b9eaaaee242be082b2659a83bf1dd2c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1a0d0045b2faaf8eda6f92bf1d627843841a60cb
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526078"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42789173"
 ---
 # <a name="macostrustedrootcertificate-resource-type"></a>Тип ресурса Макострустедрутцертификате
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

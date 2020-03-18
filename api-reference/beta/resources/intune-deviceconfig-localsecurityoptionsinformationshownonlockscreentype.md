@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Локалсекуритйоптионсинформатионшовнонлоккскринтипе
 description: Возможные значения для Локалсекуритйоптионсинформатионшовнонлоккскринтипе
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4d3af6756ec1ddbde2fdd8cc6603af17bca0184c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cd9380313bb3201d86c53c4f14d66bbbe99c7de3
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42526229"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42790351"
 ---
 # <a name="localsecurityoptionsinformationshownonlockscreentype-enum-type"></a>тип перечисления Локалсекуритйоптионсинформатионшовнонлоккскринтипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42526229"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Not Configured|
-|усердисплайнамедомаинусер|1 |Отображаемое имя пользователя, имена доменов и пользователей|
-|усердисплайнамеонли|2 |Только отображаемое имя пользователя|
-|донотдисплайусер|3 |Не отображать сведения о пользователе|
+|усердисплайнамедомаинусер|1,1|Отображаемое имя пользователя, имена доменов и пользователей|
+|усердисплайнамеонли|2|Только отображаемое имя пользователя|
+|донотдисплайусер|4|Не отображать сведения о пользователе|
 
 
 

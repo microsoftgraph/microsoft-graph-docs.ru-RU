@@ -1,20 +1,18 @@
 ---
 title: тип перечисления Впнсерверцертификатетипе
 description: Тип сертификата, который VPN-сервер будет предоставлять VPN-клиенту для проверки подлинности
-author: rolyon
+author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ed0fec3f4d530756386f9966ab0aee7d3be60603
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 307def5845b4c2af2ab6c032fcda40466883be0e
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42529285"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42787315"
 ---
 # <a name="vpnservercertificatetype-enum-type"></a>тип перечисления Впнсерверцертификатетипе
-
-Пространство имен: Microsoft. Graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,9 +24,9 @@ ms.locfileid: "42529285"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |алгоритм|нуль|АЛГОРИТМ|
-|ecdsa256|1 |ECDSA256|
-|ecdsa384|2 |ECDSA384|
-|ecdsa521|3 |ECDSA521|
+|ecdsa256|1,1|ECDSA256|
+|ecdsa384|2|ECDSA384|
+|ecdsa521|4|ECDSA521|
 
 
 
