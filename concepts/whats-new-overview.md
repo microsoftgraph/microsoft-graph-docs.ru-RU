@@ -3,55 +3,74 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 5e56d74e35bf55caade6c0137619d0d24ecc7323
-ms.sourcegitcommit: cea768f767cf27a938b72bb26892d70e3dedaf2e
+ms.openlocfilehash: 88cb0ba1570cd0f90fe4cc199eee3ce550c17781
+ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41865853"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42729033"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
-В этой статье представлен обзор новых возможностей Microsoft Graph и способов [поделиться своими идеями](#want-to-stay-in-the-loop). Полный список обновлений API см. в [декабрьском](changelog.md#december-2019) и [ноябрьском](changelog.md#november-2019) разделах журнала изменений API. 
+В этой статье представлен обзор новых возможностей Microsoft Graph и способов [поделиться своими идеями](#want-to-stay-in-the-loop). Полный список обновлений API см. в разделе [Март](changelog.md#march-2020) и [Февраль](changelog.md#february-2020) журнала изменений API. 
 
 > [!IMPORTANT]
 > Функции в состоянии _предварительной версии_, в том числе API и средства, могут меняться без предварительного уведомления, а некоторые из них, возможно, никогда не будут повышены до общедоступного (GA) состояния. Не используйте функции предварительной версии в рабочих приложениях.
+
+## <a name="march-2020-new-and-generally-available"></a>Март 2020: новый и общедоступный
+
+### <a name="reports"></a>Отчеты
+Используйте Администратор службы Teams и Администратор связи Teams в качестве принятых ролей пользователя, чтобы приложения могли читать отчеты об использовании службы Office 365 от имени пользователя в качестве [форм делегированной пользователем авторизации](reportroot-authorization.md). 
+
+## <a name="march-2020-new-in-preview-only"></a>Март 2020: Новое только в превью
+
+### <a name="calendar"></a>Календарь
+- Используйте свойство **calendarGroupId**, чтобы получить группу [календаря](/graph/api/resources/calendargroup?view=graph-rest-beta), в которой создан [календарь](/graph/api/resources/calendar?view=graph-rest-beta).
+- Используйте свойство **в черновике**, чтобы идентифицировать [событие](/graph/api/resources/event?view=graph-rest-beta) как собрание, которое пользователь обновил в Outlook, но не отправил для обновления участников.
+
+### <a name="identity-and-access"></a>Удостоверение и доступ
+Используйте разрешение на уровне приложения `PrivilegedAccess.Read.AzureResources` для [управления привилегированными удостоверениями (PIM) ресурсов Azure](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta), чтобы настроить рабочий процесс доступа «точно в срок» для ролей инфраструктуры Azure на уровне группы управления, подписки, группы ресурсов или ресурса.
+
+### <a name="teamwork"></a>Командная работа
+Используйте разрешение на уровне приложения `ChannelMessage.Read.All` для чтения экземпляров [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) в каналах без зарегистрированного пользователя.
 
 ## <a name="february-2020-new-and-generally-available"></a>2020 февраля: новая и общедоступная
 
 ### <a name="calendar"></a>Календарь
 Просмотрите пример [создания события в общем или делегированном календаре](outlook-create-event-in-shared-delegated-calendar.md), а также действия и свойства, доступные для делегата, приглашенных и владельца календаря во время этого процесса.
 
-### <a name="security"></a>Безопасность
-Чтобы повысить безопасность при подписке на [уведомления об изменениях пользовательских данных](webhooks.md), [установите Transport Layer Security (TLS) 1.2](https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2) или выше на клиентах и серверах сайтов, используемых в процессе уведомления. Новое требование вводится поэтапно, начиная с 15 февраля 2020 года. К 15 мая 2020 года все конечные точки уведомления должны соответствовать новому требованию TLS. [Узнайте о стадиях развертывания](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) и при необходимости воспользуйтесь новым свойством **latestSupportedTlsVersion** в качестве временного решения, чтобы избежать сбоев подписки до выполнения обновления TLS.
+### <a name="identity-and-access"></a>Удостоверение и доступ
+- Чтобы повысить безопасность при подписке на [уведомления об изменениях пользовательских данных](webhooks.md), [установите Transport Layer Security (TLS) 1.2](https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2) или выше на клиентах и серверах сайтов, используемых в процессе уведомления. Новое требование вводится поэтапно, начиная с 15 февраля 2020 года. К 15 мая 2020 года все конечные точки уведомления должны соответствовать новому требованию TLS. [Узнайте о стадиях развертывания](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) и при необходимости воспользуйтесь новым свойством **latestSupportedTlsVersion** в качестве временного решения, чтобы избежать сбоев подписки до выполнения обновления TLS.
+- Используйте соответствующие типы [запроса оценки угроз](/graph/api/resources/threatAssessmentRequest?view=graph-rest-1.0) для отслеживания угроз от [почты](/graph/api/resources/mailassessmentrequest?view=graph-rest-1.0), [файла сообщения электронной почты](/graph/api/resources/emailfileassessmentrequest?view=graph-rest-1.0) (. EML-файл), [файлов вложений электронной почты](/graph/api/resources/fileassessmentrequest?view=graph-rest-1.0) (текстовых файлов, файлов Word и двоичных файлов) и [URL-адреса](/graph/api/resources/urlassessmentrequest?view=graph-rest-1.0).
 
-## <a name="february-2020-new-in-preview"></a>Февраль 2020: новое в предварительной версии
+### <a name="users"></a>Пользователи
+[Повторная обработка](/graph/api/user-reprocesslicenseassignment?view=graph-rest-1.0) всех назначений лицензий на основе группы для [пользователя](/graph/api/resources/user?view=graph-rest-1.0).
+
+
+## <a name="february-2020-new-in-preview-only"></a>Февраль 2020: новое только в предварительном просмотре
 
 ### <a name="calendar"></a>Календарь
 Просмотрите [задачи, поддерживаемые API-интерфейсами предварительного просмотра, которые управляют совместным использованием и делегированием календаря](outlook-share-or-delegate-calendar.md).
 
+### <a name="cloud-communications"></a>Коммуникации из облака
 
-## <a name="january-2020-new-and-generally-available"></a>Январь 2020 г.: новые и общедоступные возможности
-
-### <a name="security"></a>Безопасность
-В рамках управления оповещениями используйте метод [обновления оповещений](/graph/api/alert-update?view=graph-rest-1.0) и обновляйте поле **комментариев** как `Closed in IPC` или `Closed in MCAS`.
-
-### <a name="teamwork"></a>Командная работа
-Используйте свойство навигации **primaryChannel** [группы](/graph/api/resources/team?view=graph-rest-1.0) для доступа к каналу по умолчанию **General**.
-
-### <a name="users"></a>Пользователи
-Чтобы получить доступ к одному или нескольким удостоверениям, которые [пользователь](/graph/api/resources/user?view=graph-rest-1.0) может использовать для входа в учетную запись пользователя Azure AD, используйте свойство **удостоверения **. Удостоверения могут предоставляться поставщиками услуг Майкрософт, организаций или социальных удостоверений, таких как Facebook, Google или Microsoft. Это свойство позволяет пользователю входить в учетную запись пользователя с помощью любого из этих удостоверений.
-
-## <a name="january-2020-new-in-preview"></a>Январь 2020: Новое в предварительной версии
+- Используйте новую [запись вызова ](/graph/api/resources/callrecord?view=graph-rest-beta) ресурс, чтобы получить метаданные звонков и собрания по сети в Microsoft Teams и Skype для бизнеса в Организации.
+- Для участника собрания используйте свойство **инициатора**, чтобы получить идентификационную информацию инициатора [записи](/graph/api/resources/recordinginfo?view=graph-rest-beta), если таковая имеется.
 
 ### <a name="devices-and-apps"></a>Устройства и приложения
-Обновления Intune за [Январь](changelog.md#january-2020).
+Обновления Intune за [Февраль](changelog.md#february-2020)
 
-<!--
-### Identity and access
-Access specific types of [policies for an organization](/graph/api/resources/policy-overview?view=graph-rest-beta) using the `/policies` URL segment and specifying the policy type. For example, an organization can enforce a policy to automatically sign a user out from a web session after a period of inactivity; see CRUD operations for instances of [activityBasedTimeoutPolicy](/graph/api/resources/activitybasedtimeoutpolicy?view=graph-rest-beta). This is a [breaking change](https://developer.microsoft.com/identity/blogs/breaking-changes-policy-api-microsoft-graph-beta/) to make it easier to discover all policies, by grouping all typed policies under the `/policies` segment. Access other typed policies in a similar approach: [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta), [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-beta), and [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta).
--->
+### <a name="groups"></a>Группы
+Используйте метод [assignLicense](/graph/api/group-assignlicense?view=graph-rest-beta), чтобы назначить лицензии для продуктов, таких как Office 365 или Enterprise Mobility + Security, группе. Поскольку Azure AD обеспечивает назначение лицензий членам группы, для участников, вступающих в группу или покидающих ее, больше не требуется управление лицензиями на индивидуальном уровне.
 
+### <a name="identity-and-access"></a>Удостоверение и доступ
+- Установите параметры запроса, утверждения и проверки при создании [политики назначения пакетов доступа](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta).
+- Получите доступ к определенным типам [политик для организации](/graph/api/resources/policy-overview?view=graph-rest-beta), используя `/policies`сегмент URL и указав тип политики. Например, организация может применить политику для автоматического выхода пользователя из веб-сеанса после периода бездействия; см. операции CRUD для экземпляров [activityBasedTimeoutPolicy](/graph/api/resources/activitybasedtimeoutpolicy?view=graph-rest-beta). Это [серьезное изменение](https://developer.microsoft.com/identity/blogs/breaking-changes-policy-api-microsoft-graph-beta/), упрощающее обнаружение всех политик путем группировки всех типизированных политик в сегменте `/policies`. Доступ к другим типизированным политикам осуществляется аналогичным образом: [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta), [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-beta), [tokenLifetimePolicy](/graph/api/resources/tokenlifetimepolicy?view=graph-rest-beta) и [tokenIssuancePolicy](/graph/api/resources/tokenissuancetimepolicy?view=graph-rest-beta). 
+- Используйте уровень приложения и делегированное `Policy.ReadWrite.ApplicationConfiguration`разрешение для операций чтения и записи в [политиках](/graph/api/resources/policy-overview?view=graph-rest-beta) конфигурации приложений, упомянутых в предыдущем пункте.
+
+### <a name="teamwork"></a>Командная работа
+- Используйте [уведомления об изменениях,](/graph/api/resources/webhooks?view=graph-rest-beta) всех сообщений канала или всех сообщений в Организации.
+- [Отклоните](/graph/api/swapshiftschangerequest-decline?view=graph-rest-beta) [запрос на замену смен](/graph/api/resources/swapshiftschangerequest?view=graph-rest-beta) другим пользователем в [группе](/graph/api/resources/team?view=graph-rest-beta).
 
 ## <a name="want-to-stay-in-the-loop"></a>Хотите получать актуальную информацию?
 
