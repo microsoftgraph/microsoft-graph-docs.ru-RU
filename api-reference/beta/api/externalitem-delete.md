@@ -1,24 +1,24 @@
 ---
 title: Удаление Екстерналитем
-description: Удаление Екстерналитем или Екстерналфиле.
+description: Удаление Екстерналитем.
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 6d5cf833b6f91a76c8fee63c81bd6dd6db32d548
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 263d04ed1b254a52d9eacab19997e40cdac4dc67
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42422014"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892544"
 ---
 # <a name="delete-externalitem"></a>Удаление Екстерналитем
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [екстерналитем](../resources/externalitem.md) или [екстерналфиле](../resources/externalfile.md).
+Удаление [екстерналитем](../resources/externalitem.md).
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -30,7 +30,7 @@ ms.locfileid: "42422014"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | ExternalItem.ReadWrite.All |
+| Для приложения                            | ExternalItem.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,8 +44,8 @@ DELETE /external/connections/{connection-id}/items/{item-id}
 
 | Параметр     | Тип   | Описание                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| ИД подключения | строка | `id` Свойство содержащего [екстерналконнектион](../resources/externalconnection.md) |
-| item-id       | строка | Предоставляемое `id` разработчиком свойство [екстерналитем](../resources/externalitem.md) или [екстерналфиле](../resources/externalfile.md). |
+| ИД подключения | string | `id` Свойство содержащего [екстерналконнектион](../resources/externalconnection.md) |
+| item-id       | string | Предоставляемое `id` разработчиком свойство [екстерналитем](../resources/externalitem.md). |
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -53,7 +53,7 @@ DELETE /external/connections/{connection-id}/items/{item-id}
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

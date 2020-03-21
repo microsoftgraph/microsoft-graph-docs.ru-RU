@@ -5,20 +5,20 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8144a681f93df45827c8b304d507eea820adcca2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a65b3fd02f3cc9b0f0e6049fcf99133292c8d6d2
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520599"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892606"
 ---
 # <a name="signinactivity-resource-type"></a>Тип ресурса Сигнинактивити
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Предоставляет дату последнего входа для определенного пользователя.
+Предоставляет дату последнего входа для определенного [пользователя](user.md).
 
 ## <a name="properties"></a>Свойства
 

@@ -5,16 +5,16 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 3780c4b01fc6dc81418034931f37e84d1e295b41
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 70005abbe8eaf0e9680f106f59caf091aa2495d2
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522703"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892585"
 ---
 # <a name="mention-resource-type"></a>Тип ресурса "упоминание"
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -64,11 +64,11 @@ ms.locfileid: "42522703"
 |createdDateTime  |DateTimeOffset |Дата и время создания упоминания в клиенте. |
 |Прямой | String | Глубокая веб-ссылка на контекст упоминания в экземпляре ресурса. Необязательное свойство. Не используется и по умолчанию задано значение NULL для **сообщения**. |
 |id | String| Уникальный идентификатор упоминания в экземпляре ресурса.|
-|котором | [emailAddress](../resources/emailaddress.md) | Сведения электронной почты упомянутого человека. Обязательное. |
+|котором | [emailAddress](../resources/emailaddress.md) | Сведения электронной почты упомянутого человека. Обязательный. |
 |ментионтекст | String | Необязательный параметр. Не используется и по умолчанию задано значение NULL для **сообщения**. Чтобы получить упоминание в сообщении, ознакомьтесь со свойством **бодипревиев** этого сообщения. |
 |серверкреатеддатетиме | DateTimeOffset | Дата и время создания упоминания на сервере. Необязательное свойство. Не используется и по умолчанию задано значение NULL для **сообщения**. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 
@@ -79,7 +79,7 @@ ms.locfileid: "42522703"
 |[POST](../api/user-sendmail.md#request-2) и Send | Нет | Создание и отправка упоминаний в виде части нового сообщения.|
 |[Публикация](../api/user-post-messages.md#request-2) в новом черновике | [сообщение](../resources/message.md) , которое содержит один или несколько объектов **упоминаются** . | Создайте черновик нового сообщения и добавьте в него один или несколько **упомянутых** объектов.|
 |[Получение](../api/user-list-messages.md#request-2) сообщений с упоминанием меня | Коллекция [message](../resources/message.md) | Получение всех сообщений в почтовом ящике вошедшего пользователя, который содержит **упоминание** этого пользователя.|
-|[Получение](../api/message-get.md#request-2) сообщения и его упоминаний | Коллекция [message](../resources/message.md) | Получите сообщение и разверните сведения о каждом **упоминании** в сообщении.|
+|[Получение](../api/message-get.md#example-2) сообщения и его упоминаний | Коллекция [message](../resources/message.md) | Получите сообщение и разверните сведения о каждом **упоминании** в сообщении.|
 |[Удаление](../api/message-delete.md#request-2) упоминания | Нет |Удаляет указанное упоминание из указанного сообщения в почтовом ящике вошедшего пользователя. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
