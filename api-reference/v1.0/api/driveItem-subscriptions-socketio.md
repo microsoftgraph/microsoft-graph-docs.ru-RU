@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Позволяет получать уведомления об изменении почти в режиме реального времени для диска с помощью socket.io.
 doc_type: apiPageType
-ms.openlocfilehash: a1343cb1dcab4ea1fda9ffc13ba14f7402f3dca2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ca15c21ecd08b2a74700d2b729e23632e427a72f
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517799"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892655"
 ---
 # <a name="get-websocket-endpoint"></a>Получение конечной точки WebSocket
 
@@ -93,8 +93,6 @@ Content-type: application/json
 ```
 
 `notificationUrl` Возвращаемый параметр является URL-адресом конечной точки Socket.IO.
-Чтобы использовать его с клиентом socket.io, разделите строку на `/callback?` маркере.
-Часть строки Before `/callback?` является URL-адресом конечной точки Socket.IO, а часть строки After — непрозрачной строкой запроса, которую необходимо присвоить библиотеке.
 
 В приведенном ниже примере показано, `notificationUrl` как использовать with Socket.IO в JavaScript.
 
@@ -102,11 +100,8 @@ Content-type: application/json
 // this is the notificationUrl returned from this API
 var notificationUrl = "https://f3hb0mpua.svc.ms/zbaehwg/callback?snthgk=1ff3-2345672zz831837523";
 
-// after the split, split[0] will be everything leading up to '/callback?' and split[1] will be everything after.
-var split = notificationUrl.split("/callback?");
-
 // 'io' comes from the socket.io client library
-var socket = io(split[0], { query: split[1] });
+var socket = io(notificationUrl);
 
 // these examples log to the console.
 // your app would provide its own callbacks

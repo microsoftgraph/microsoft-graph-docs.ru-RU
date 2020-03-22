@@ -5,18 +5,18 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0d7690c0db76c7087ff747397eb48e6f014720fb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 29a83493884ffab11b10e8d48f051a45be1f1364
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516817"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892617"
 ---
 # <a name="update-a-group-setting"></a>Обновление параметра группы
 
 Пространство имен: microsoft.graph
 
-Обновление свойств для указанных объектов параметров группы.
+Обновление свойств объекта [groupSetting](../resources/groupsetting.md) для параметров [группы](../resources/group.md) на уровне клиента или определенного параметра группы.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,12 +27,12 @@ ms.locfileid: "42516817"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.ReadWrite.All |
+|Для приложения | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 
-Обновление параметра на уровне клиента или отдельной группы.
+
 
 ```http
 PATCH /groupSettings/{id}
@@ -41,7 +41,7 @@ PATCH /groups/{id}/settings/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя | Описание |
 |:-----------|:-----------|
-| Authorization  | {Token}. Обязательный элемент. |
+| Авторизация  | {Token}. Обязательный элемент. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
@@ -49,36 +49,43 @@ PATCH /groups/{id}/settings/{id}
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-| values | Коллекция settingValue | Обновленный набор значений.  ПРИМЕЧАНИЕ. Необходимо предоставить весь набор коллекции. Вы не можете обновить отдельный набор значений. |
+| values | Коллекция [settingValue](../resources/settingvalue.md) | Обновленный набор значений. Необходимо включить весь набор семейств. Невозможно обновить один набор значений. |
 
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
+
+### <a name="example-1-update-a-tenant-wide-group-setting"></a>Пример 1: Обновление параметра группы на уровне клиента
+
+В этом примере `{id}` — это идентификатор объекта groupSetting на уровне клиента.
+
 #### <a name="request"></a>Запрос
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_groupsetting"
+  "name": "update_tenant_setting"
 }-->
 ```http
 PATCH https://graph.microsoft.com/v1.0/groupSettings/{id}
 Content-type: application/json
-Content-length: 173
 
 {
-  "displayName": "displayName-value",
-  "templateId": "templateId-value",
+  "displayName": "Group.Unified",
+  "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
   "values": [
+    {
+      "name": "EnableMIPLabels",
+      "value": "false"
+    },
     {
       "name": "CustomBlockedWordsList",
       "value": ""
     },
     {
       "name": "EnableMSStandardBlockedWords",
-      "value": "False"
+      "value": "false"
     },
     {
       "name": "ClassificationDescriptions",
@@ -94,11 +101,11 @@ Content-length: 173
     },
     {
       "name": "AllowGuestsToBeGroupOwner",
-      "value": "False"
+      "value": "false"
     },
     {
       "name": "AllowGuestsToAccessGroups",
-      "value": "True"
+      "value": "true"
     },
     {
       "name": "GuestUsageGuidelinesUrl",
@@ -106,11 +113,11 @@ Content-length: 173
     },
     {
       "name": "GroupCreationAllowedGroupId",
-      "value": "62e90394-69f5-4237-9190-012177145e10"
+      "value": ""
     },
     {
       "name": "AllowToAddGuests",
-      "value": "True"
+      "value": "true"
     },
     {
       "name": "UsageGuidelinesUrl",
@@ -122,29 +129,47 @@ Content-length: 173
     },
     {
       "name": "EnableGroupCreation",
-      "value": "True"
+      "value": "true"
     }
   ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-groupsetting-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-groupsetting-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### <a name="response"></a>Отклик
 
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-groupsetting-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+<!-- {
+  "blockType": "response",
+  "truncated": false
+} -->
+```http
+HTTP/1.1 204 No Content
+```
 
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-groupsetting-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+### <a name="example-2-update-a-specific-group-setting"></a>Пример 2: обновление определенной групповой настройки
 
----
+В этом примере первым `{id}` в запросе является идентификатор группы, а вторым `{id}` — идентификатор объекта groupSetting.
 
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "update_groupsetting"
+}-->
+```http
+PATCH https://graph.microsoft.com/v1.0/groups/{id}/settings/{id}
+Content-type: application/json
+
+{
+  "displayName": "GroupSettings",
+  "templateId": "08d542b9-071f-4e16-94b0-74abb372e3d9",
+  "values": [
+    {
+            "name": "AllowToAddGuests",
+            "value": "false"
+    }
+  ]
+}
+```
 
 #### <a name="response"></a>Отклик
 

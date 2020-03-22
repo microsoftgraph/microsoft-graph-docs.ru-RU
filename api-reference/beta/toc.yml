@@ -311,7 +311,7 @@
                   href: api/mailfolder-list-messagerules.md
                 - name: Отправка почты
                   href: api/user-sendmail.md
-            - name: Notes
+            - name: Примечания
               href: resources/onenote.md
               items:
                 - name: Создание записной книжки
@@ -9229,7 +9229,14 @@
                       href: api/tokenlifetimepolicy-delete.md
                     - name: Список субъектов-служб и приложений
                       href: api/tokenlifetimepolicy-list-appliesto.md
-            - name: Управление привилегированными пользователями (PIM)
+                - name: Политика безопасности по умолчанию
+                  href: resources/identitysecuritydefaultsenforcementpolicy.md
+                  items:
+                    - name: Получение
+                      href: api/identitysecuritydefaultsenforcementpolicy-get.md
+                    - name: Обновление
+                      href: api/identitysecuritydefaultsenforcementpolicy-update.md
+            - name: Управление привилегированными пользователями
               items:
                 - name: Управление привилегированными пользователями
                   href: resources/privilegedidentitymanagement-root.md
@@ -10092,6 +10099,121 @@
                       href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                     - name: Получение многозначного свойства
                       href: api/multivaluelegacyextendedproperty-get.md
+        - name: Универсальная печать
+          items:
+            - name: Печать
+              href: resources/print.md
+            - name: Соединители
+              href: resources/printconnector.md
+              items:
+                - name: Перечисление
+                  href: api/print-list-connectors.md
+                - name: Получение
+                  href: api/printconnector-get.md
+                - name: Обновление
+                  href: api/printconnector-update.md
+                - name: Delete
+                  href: api/printconnector-delete.md
+            - name: Задания печати
+              href: resources/printjob.md
+              items:
+                - name: Создание
+                  href: api/printer-post-jobs.md
+                - name: Получение
+                  href: api/printjob-get.md
+                - name: Начало
+                  href: api/printjob-startprintjob.md
+                - name: Отменить
+                  href: api/printjob-cancelprintjob.md
+            - name: Принтеры
+              href: resources/printer.md
+              items:
+                - name: Перечисление
+                  href: api/print-list-printers.md
+                - name: Получение
+                  href: api/printer-get.md
+                - name: Удаление
+                  href: api/printer-delete.md
+                - name: Получение возможностей
+                  href: api/printer-getcapabilities.md
+                - name: Список соединителей
+                  href: api/printer-list-connectors.md
+                - name: Список заданий печати
+                  href: api/printer-list-jobs.md
+                - name: Создание задания печати
+                  href: api/printer-post-jobs.md
+                - name: Список разрешенных пользователей
+                  href: api/printer-list-allowedusers.md
+                - name: Список Алловедграупс
+                  href: api/printer-list-allowedgroups.md
+                - name: Добавить разрешенную группу
+                  href: api/printer-post-allowedgroups.md
+                - name: Добавление разрешенного пользователя
+                  href: api/printer-post-allowedusers.md
+                - name: Удаление разрешенной группы
+                  href: api/printer-delete-allowedgroup.md
+                - name: Удаление разрешенного пользователя
+                  href: api/printer-delete-alloweduser.md
+                - name: Сброс значений по умолчанию
+                  href: api/printer-resetdefaults.md
+            - name: Общие принтеры
+              href: resources/printershare.md
+              items:
+                - name: Список
+                  href: api/print-list-printershares.md
+                - name: Создание
+                  href: api/print-post-printershares.md
+                - name: Получение
+                  href: api/printershare-get.md
+                - name: Обновление
+                  href: api/printershare-update.md
+                - name: Delete
+                  href: api/printershare-delete.md
+            - name: Отчеты
+              items:
+                - name: Упорядочено по принтерам
+                  items:
+                    - name: Получение
+                      href: api/printusagesummarybyprinter-get.md
+                    - name: Список архивных заданий печати принтера
+                      href: api/reports-getprinterarchivedprintjobs.md
+                    - name: Вывод списка ежедневных отчетов по принтерам
+                      href: api/reportroot-list-dailyprintusagesummariesbyprinter.md
+                    - name: Вывод списка ежемесячных отчетов по принтерам
+                      href: api/reportroot-list-monthlyprintusagesummariesbyprinter.md
+                - name: Организуется по пользователю или группе
+                  items:
+                    - name: Получение
+                      href: api/printusagesummarybyuser-get.md
+                    - name: Вывод списка архивных заданий печати пользователя
+                      href: api/reports-getuserarchivedprintjobs.md
+                    - name: Список архивных заданий печати группы
+                      href: api/reports-getgrouparchivedprintjobs.md
+                    - name: Вывод списка ежедневных отчетов по пользователям
+                      href: api/reportroot-list-dailyprintusagesummariesbyuser.md
+                    - name: Перечисление ежемесячных отчетов по пользователям
+                      href: api/reportroot-list-monthlyprintusagesummariesbyuser.md
+            - name: Службы
+              href: resources/printservice.md
+              items:
+                - name: Перечисление
+                  href: api/print-list-services.md
+                - name: Получение
+                  href: api/printservice-get.md
+                - name: Endpoint
+                  href: resources/printserviceendpoint.md
+                  items:
+                    - name: Получение конечной точки
+                      href: api/printserviceendpoint-get.md
+                    - name: Перечисление конечных точек службы
+                      href: api/printservice-list-endpoints.md
+            - name: Параметры
+              href: resources/printsettings.md
+              items:
+                - name: Получение
+                  href: api/print-get-settings.md
+                - name: Обновление
+                  href: api/print-update-settings.md
         - name: Отчеты
           items:
             - name: Отчеты об удостоверениях и доступе
@@ -10382,16 +10504,6 @@
                     - name: Обновление внешнего элемента
                       href: api/externalitem-update.md
                     - name: Удаление внешнего элемента
-                      href: api/externalitem-delete.md
-                - name: Внешний файл
-                  items:
-                    - name: Внешний файл
-                      href: resources/externalfile.md
-                    - name: Создание внешнего файла
-                      href: api/externalconnection-put-items.md
-                    - name: Обновление внешнего файла
-                      href: api/externalitem-update.md
-                    - name: Удаление внешнего файла
                       href: api/externalitem-delete.md
         - name: Безопасность
           displayname: 'Security API, Microsoft Graph Security API'
@@ -11023,7 +11135,7 @@
             - name: Группа задач Outlook
               href: resources/outlooktaskgroup.md
               items:
-                - name: Список
+                - name: Перечисление
                   href: api/outlookuser-list-taskgroups.md
                 - name: Создание
                   href: api/outlookuser-post-taskgroups.md
@@ -11110,7 +11222,7 @@
             - name: Комментарии к книге
               href: resources/workbookcomment.md
               items:
-                - name: Перечисление
+                - name: Список
                   href: api/workbook-list-comments.md
                 - name: Получение
                   href: api/workbookcomment-get.md
