@@ -5,12 +5,12 @@ author: matt-steele
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: graphiamtop20
-ms.openlocfilehash: 3b680e906b6adacb0e737b34d50f69d2ad36675f
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 81ebe8a7eadf86ee5bf7cf74fe337f446c13c376
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618858"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892683"
 ---
 # <a name="authentication-and-authorization-basics-for-microsoft-graph"></a>Основные сведения о проверке подлинности и авторизации для Microsoft Graph
 
@@ -31,10 +31,9 @@ EwAoA8l6BAAU7p9QDpi/D7xJLwsTgCg3TskyTaQAAXu71AU9f4aS4rOK5xoO/SU5HZKSXtCsDe0Pj7uS
 Чтобы вызвать Microsoft Graph, необходимо вложить маркер доступа (в качестве токена носителя) в заголовок авторизации HTTP-запроса. Например, следующий вызов возвращает данные профиля вошедшего пользователя (для удобства маркер доступа сокращен).
 
 ```http
-HTTP/1.1
+GET https://graph.microsoft.com/v1.0/me/ HTTP/1.1
+Host: graph.microsoft.com
 Authorization: Bearer EwAoA8l6BAAU ... 7PqHGsykYj7A0XqHCjbKKgWSkcAg==
-Host: graph.microsoft.com`
-GET https://graph.microsoft.com/v1.0/me/
 ```
 
 ## <a name="register-your-app-with-the-microsoft-identity-platform"></a>Регистрация приложения с помощью платформы удостоверений Майкрософт
