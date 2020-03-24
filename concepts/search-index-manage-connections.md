@@ -5,44 +5,42 @@ localization_priority: Priority
 author: snlraju-msft
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: 9f2d09cbd82a21874cf870c3214100115b225a1f
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 99f0ab4591caa6c311f2771f1c6a0772a8f16087
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38704381"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892802"
 ---
-# <a name="create-update-and-delete-connections-to-the-microsoft-search-service"></a><span data-ttu-id="c4d7e-103">Создание, обновление и удаление подключений к службе "Поиск (Майкрософт)"</span><span class="sxs-lookup"><span data-stu-id="c4d7e-103">Create, update, and delete connections to the Microsoft Search service</span></span>
+# <a name="create-update-and-delete-connections-to-the-microsoft-search-service"></a><span data-ttu-id="c46e6-103">Создание, обновление и удаление подключений к службе "Поиск (Майкрософт)"</span><span class="sxs-lookup"><span data-stu-id="c46e6-103">Create, update, and delete connections to the Microsoft Search service</span></span>
 
-<span data-ttu-id="c4d7e-104">Подключения внешних служб к службе "Поиск (Майкрософт)" представляются ресурсом [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta) в Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="c4d7e-104">Connections from external services to the Microsoft Search service are represented by the [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta) resource in Microsoft Graph.</span></span>
+<span data-ttu-id="c46e6-104">Подключения внешних служб к службе "Поиск (Майкрософт)" представляются ресурсом [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta) в Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="c46e6-104">Connections from external services to the Microsoft Search service are represented by the [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta) resource in Microsoft Graph.</span></span>
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
-<span data-ttu-id="c4d7e-105">Подключение позволяет приложению [определить схему](/graph/api/externalconnection-post-schema?view=graph-rest-beta) для индексируемых элементов, а также предоставляет службе конечную точку для [добавления, обновления и удаления элементов индекса](search-index-manage-items.md).</span><span class="sxs-lookup"><span data-stu-id="c4d7e-105">A connection allows your application to [define a schema](/graph/api/externalconnection-post-schema?view=graph-rest-beta) for items that will be indexed, and provides an endpoint for your service to [add, update, or delete items from the index](search-index-manage-items.md).</span></span> <span data-ttu-id="c4d7e-106">Создание подключения — первый шаг приложения к добавлению элементов в индекс поиска.</span><span class="sxs-lookup"><span data-stu-id="c4d7e-106">Creating a connection is the first step for an application to add items to the search index.</span></span>
+<span data-ttu-id="c46e6-105">Подключение позволяет приложению [определить схему](/graph/api/externalconnection-post-schema?view=graph-rest-beta) для индексируемых элементов, а также предоставляет службе конечную точку для [добавления, обновления и удаления элементов индекса](search-index-manage-items.md).</span><span class="sxs-lookup"><span data-stu-id="c46e6-105">A connection allows your application to [define a schema](/graph/api/externalconnection-post-schema?view=graph-rest-beta) for items that will be indexed, and provides an endpoint for your service to [add, update, or delete items from the index](search-index-manage-items.md).</span></span> <span data-ttu-id="c46e6-106">Создание подключения — первый шаг приложения к добавлению элементов в индекс поиска.</span><span class="sxs-lookup"><span data-stu-id="c46e6-106">Creating a connection is the first step for an application to add items to the search index.</span></span>
 
-## <a name="create-a-connection"></a><span data-ttu-id="c4d7e-107">Создание подключения</span><span class="sxs-lookup"><span data-stu-id="c4d7e-107">Create a connection</span></span>
+## <a name="create-a-connection"></a><span data-ttu-id="c46e6-107">Создание подключения</span><span class="sxs-lookup"><span data-stu-id="c46e6-107">Create a connection</span></span>
 
-<span data-ttu-id="c4d7e-108">Чтобы приложение могло добавлять элементы в индекс поиска, ему необходимо создать и настроить подключение, выполнив указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="c4d7e-108">Before an application can add items to the search index, it must create and configure a connection using the following steps.</span></span>
+<span data-ttu-id="c46e6-108">Чтобы приложение могло добавлять элементы в индекс поиска, ему необходимо создать и настроить подключение, выполнив указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="c46e6-108">Before an application can add items to the search index, it must create and configure a connection using the following steps.</span></span>
 
-- <span data-ttu-id="c4d7e-109">[Создание подключения](/graph/api/external-post-connections?view=graph-rest-beta) с уникальным идентификатором, отображаемым именем и описанием.</span><span class="sxs-lookup"><span data-stu-id="c4d7e-109">[Create a connection](/graph/api/external-post-connections?view=graph-rest-beta) with a unique ID, display name, and description.</span></span>
-- <span data-ttu-id="c4d7e-110">[Регистрация схемы](/graph/api/externalconnection-post-schema?view=graph-rest-beta).</span><span class="sxs-lookup"><span data-stu-id="c4d7e-110">[Registering a schema](/graph/api/externalconnection-post-schema?view=graph-rest-beta).</span></span>
-  - <span data-ttu-id="c4d7e-111">Для пользовательских элементов (например, обращений в службу технической поддержки, записей базы данных инвентаризации и т. д.) необходимо определить поля, включенные в индекс.</span><span class="sxs-lookup"><span data-stu-id="c4d7e-111">For custom items (such as heldesk tickets or inventory database entries, etc.), define the fields that will be included in the index.</span></span>
-  - <span data-ttu-id="c4d7e-112">Для внешних файлов следует задать тип `microsoft.graph.externalFile`.</span><span class="sxs-lookup"><span data-stu-id="c4d7e-112">For external files, specify the `microsoft.graph.externalFile` type.</span></span>
+- <span data-ttu-id="c46e6-109">[Создание подключения](/graph/api/external-post-connections?view=graph-rest-beta) с уникальным идентификатором, отображаемым именем и описанием.</span><span class="sxs-lookup"><span data-stu-id="c46e6-109">[Create a connection](/graph/api/external-post-connections?view=graph-rest-beta) with a unique ID, display name, and description.</span></span>
+- <span data-ttu-id="c46e6-110">[Зарегистрируйте схему](/graph/api/externalconnection-post-schema?view=graph-rest-beta), чтобы определить поля, которые будут включены в индекс.</span><span class="sxs-lookup"><span data-stu-id="c46e6-110">[Register a schema](/graph/api/externalconnection-post-schema?view=graph-rest-beta) to define the fields that will be included in the index.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="c4d7e-113">После регистрации схемы ее невозможно изменить для существующего подключения.</span><span class="sxs-lookup"><span data-stu-id="c4d7e-113">Once a schema has been registered, it cannot be changed for an existing connection.</span></span>
+> <span data-ttu-id="c46e6-111">После регистрации схемы ее невозможно изменить для существующего подключения.</span><span class="sxs-lookup"><span data-stu-id="c46e6-111">Once a schema has been registered, it cannot be changed for an existing connection.</span></span>
 
-## <a name="update-a-connection"></a><span data-ttu-id="c4d7e-114">Обновление подключения</span><span class="sxs-lookup"><span data-stu-id="c4d7e-114">Update a connection</span></span>
+## <a name="update-a-connection"></a><span data-ttu-id="c46e6-112">Обновление подключения</span><span class="sxs-lookup"><span data-stu-id="c46e6-112">Update a connection</span></span>
 
-<span data-ttu-id="c4d7e-115">Вы можете изменить отображаемое имя или описание существующего подключения, [обновив подключение](/graph/api/externalconnection-update?view=graph-rest-beta).</span><span class="sxs-lookup"><span data-stu-id="c4d7e-115">You can change the display name or description of an existing connection by [updating the connection](/graph/api/externalconnection-update?view=graph-rest-beta).</span></span>
+<span data-ttu-id="c46e6-113">Вы можете изменить отображаемое имя или описание существующего подключения, [обновив подключение](/graph/api/externalconnection-update?view=graph-rest-beta).</span><span class="sxs-lookup"><span data-stu-id="c46e6-113">You can change the display name or description of an existing connection by [updating the connection](/graph/api/externalconnection-update?view=graph-rest-beta).</span></span>
 
-## <a name="delete-a-connection"></a><span data-ttu-id="c4d7e-116">Удаление подключения</span><span class="sxs-lookup"><span data-stu-id="c4d7e-116">Delete a connection</span></span>
+## <a name="delete-a-connection"></a><span data-ttu-id="c46e6-114">Удаление подключения</span><span class="sxs-lookup"><span data-stu-id="c46e6-114">Delete a connection</span></span>
 
-<span data-ttu-id="c4d7e-117">Вы можете [удалить подключение](/graph/api/externalconnection-delete?view=graph-rest-beta) и удалить все элементы, индексированные через него.</span><span class="sxs-lookup"><span data-stu-id="c4d7e-117">You can [delete a connection](/graph/api/externalconnection-delete?view=graph-rest-beta), and remove all items that were indexed via that connection.</span></span>
+<span data-ttu-id="c46e6-115">Вы можете [удалить подключение](/graph/api/externalconnection-delete?view=graph-rest-beta) и удалить все элементы, индексированные через него.</span><span class="sxs-lookup"><span data-stu-id="c46e6-115">You can [delete a connection](/graph/api/externalconnection-delete?view=graph-rest-beta), and remove all items that were indexed via that connection.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="c4d7e-118">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="c4d7e-118">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="c46e6-116">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="c46e6-116">Next steps</span></span>
 
-- [<span data-ttu-id="c4d7e-119">Зачем использовать API Поиска (Майкрософт)?</span><span class="sxs-lookup"><span data-stu-id="c4d7e-119">Why use the Microsoft Search API?</span></span>](search-concept-overview.md#why-use-the-microsoft-search-api)
-- [<span data-ttu-id="c4d7e-120">Использование API Поиска (Майкрософт) для индексирования данных</span><span class="sxs-lookup"><span data-stu-id="c4d7e-120">Use the Microsoft Search API to index data</span></span>](/graph/api/resources/indexing-api-overview?view=graph-rest-beta)
-- [<span data-ttu-id="c4d7e-121">Обзор соединителей Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="c4d7e-121">Overview for Microsoft Graph Connectors</span></span>](/microsoftsearch/connectors-overview)
-- <span data-ttu-id="c4d7e-122">Скачайте [образец соединителя поиска](https://github.com/microsoftgraph/msgraph-search-connector-sample) с сайта GitHub.</span><span class="sxs-lookup"><span data-stu-id="c4d7e-122">Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub</span></span>
+- [<span data-ttu-id="c46e6-117">Зачем использовать API Поиска (Майкрософт)?</span><span class="sxs-lookup"><span data-stu-id="c46e6-117">Why use the Microsoft Search API?</span></span>](search-concept-overview.md#why-use-the-microsoft-search-api)
+- [<span data-ttu-id="c46e6-118">Обзор индексирования справочных материалов по API</span><span class="sxs-lookup"><span data-stu-id="c46e6-118">Review the Indexing API reference</span></span>](/graph/api/resources/indexing-api-overview?view=graph-rest-beta)
+- [<span data-ttu-id="c46e6-119">Обзор соединителей Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="c46e6-119">Overview for Microsoft Graph Connectors</span></span>](/microsoftsearch/connectors-overview)
+- <span data-ttu-id="c46e6-120">Скачайте [образец соединителя поиска](https://github.com/microsoftgraph/msgraph-search-connector-sample) с сайта GitHub.</span><span class="sxs-lookup"><span data-stu-id="c46e6-120">Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub</span></span>
