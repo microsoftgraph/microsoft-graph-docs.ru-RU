@@ -318,6 +318,10 @@ items:
             href: teams-protected-apis.md
           - name: Отправка упреждающих сообщений с помощью бота
             href: teams-proactive-messaging.md
+      - name: Универсальная печать
+        items:
+          - name: Обзор
+            href: universal-print-concept-overview.md
       - name: Книги и диаграммы
         displayName: Excel
         items:
