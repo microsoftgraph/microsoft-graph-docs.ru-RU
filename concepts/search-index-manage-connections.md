@@ -5,12 +5,12 @@ localization_priority: Priority
 author: snlraju-msft
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: 9f2d09cbd82a21874cf870c3214100115b225a1f
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 99f0ab4591caa6c311f2771f1c6a0772a8f16087
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "38704381"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892802"
 ---
 # <a name="create-update-and-delete-connections-to-the-microsoft-search-service"></a>Создание, обновление и удаление подключений к службе "Поиск (Майкрософт)"
 
@@ -25,9 +25,7 @@ ms.locfileid: "38704381"
 Чтобы приложение могло добавлять элементы в индекс поиска, ему необходимо создать и настроить подключение, выполнив указанные ниже действия.
 
 - [Создание подключения](/graph/api/external-post-connections?view=graph-rest-beta) с уникальным идентификатором, отображаемым именем и описанием.
-- [Регистрация схемы](/graph/api/externalconnection-post-schema?view=graph-rest-beta).
-  - Для пользовательских элементов (например, обращений в службу технической поддержки, записей базы данных инвентаризации и т. д.) необходимо определить поля, включенные в индекс.
-  - Для внешних файлов следует задать тип `microsoft.graph.externalFile`.
+- [Зарегистрируйте схему](/graph/api/externalconnection-post-schema?view=graph-rest-beta), чтобы определить поля, которые будут включены в индекс.
 
 > [!IMPORTANT]
 > После регистрации схемы ее невозможно изменить для существующего подключения.
@@ -43,6 +41,6 @@ ms.locfileid: "38704381"
 ## <a name="next-steps"></a>Дальнейшие действия
 
 - [Зачем использовать API Поиска (Майкрософт)?](search-concept-overview.md#why-use-the-microsoft-search-api)
-- [Использование API Поиска (Майкрософт) для индексирования данных](/graph/api/resources/indexing-api-overview?view=graph-rest-beta)
+- [Обзор индексирования справочных материалов по API](/graph/api/resources/indexing-api-overview?view=graph-rest-beta)
 - [Обзор соединителей Microsoft Graph](/microsoftsearch/connectors-overview)
 - Скачайте [образец соединителя поиска](https://github.com/microsoftgraph/msgraph-search-connector-sample) с сайта GitHub.

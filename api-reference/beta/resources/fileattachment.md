@@ -5,20 +5,20 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: angelgolfer-ms
-ms.openlocfilehash: c77f5294a191b827673e52ee60c132713b16e490
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e14b98c5ee3302d5b19bc7ad92187112b6d8c80b
+ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42498303"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42926801"
 ---
 # <a name="fileattachment-resource-type"></a>Тип ресурса fileAttachment
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Файл (например, текстовый файл или документ Word), присоединенный к пользовательскому [событию](../resources/event.md), [сообщению](../resources/message.md), [задаче Outlook](../resources/outlooktask.md)или [POST](../resources/post.md). Свойство **contentBytes** включает содержимое файла в кодировке Base 64.  
+Файл (например, текстовый файл или документ Word), присоединенный к пользовательскому [событию](../resources/event.md), [сообщению](../resources/message.md), [задаче Outlook](../resources/outlooktask.md)или [POST](../resources/post.md). 
 
 При создании вложенного файла включите в текст запроса следующее:
 
@@ -26,6 +26,9 @@ ms.locfileid: "42498303"
 * Обязательные свойства **name** и **contentBytes**.
 
 Производный от типа [attachment](attachment.md).
+
+> [!NOTE]
+> Перед назначением файла в **contentBytes**необходимо закодировать его в кодировке Base64.
 
 ## <a name="methods"></a>Методы
 

@@ -5,16 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 93e3f45cc52af1e6e4c72be0d22a5bfcef376c5a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c914c5921548d6fa297ce0b859f1c7c85c0f07cb
+ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454887"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42926794"
 ---
 # <a name="list-provisioningobjectsummary"></a>Список Провисионингобжектсуммари
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,11 +40,13 @@ GET /auditLogs/provisioning
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает следующий параметр запроса OData для настройки ответа. Обратите внимание, что все фильтры, кроме состояния, зависят от регистра. 
+Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Обратите внимание, что все фильтры, кроме состояния, зависят от регистра. 
 
 |Имя     |Описание                            |Пример|
 |:--------------------|----------------|------------------------------------------------------------------------|
 |[$filter](/graph/query-parameters#filter-parameter)|Фильтрует результаты (строки). |/`auditLogs/provisioning?$filter=id eq '74c3b0ae-9cc5-850e-e0a5-7r6a4231de87'`
+|[$top](/graph/query-parameters#top-parameter)|Задает размер страницы результатов.|`/auditLogs/provisioning?$top=20`|
+|[$skiptoken](/graph/query-parameters#skiptoken-parameter)|Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц. Для создания маркера необходимо передать верхний фильтр в запросе. Невозможно указать число результатов, которые необходимо пропустить.|`/auditLogs/provisioning?$top=20&$skiptoken=g822a72df43b19c8ce94b71d153981b680a08800bc3e35f239dffb378ff72c25"`|
 
 Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query_parameters).
 
