@@ -4,12 +4,12 @@ description: Регулирование позволяет ограничить 
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 36a20e88e8755a6a38140759f3cac568efbdf18c
-ms.sourcegitcommit: f51ba08d604d93f5f6af9ee8979cbf76baa285ce
+ms.openlocfilehash: 50b187209d722252e11df6a5cfc20ea5b796b875
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42108471"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892781"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Руководство по регулированию Microsoft Graph
 
@@ -59,12 +59,13 @@ ms.locfileid: "42108471"
 - [групповые чаты](/graph/api/resources/conversation?view=graph-rest-1.0);
 - [люди и социальные медиа](/graph/api/resources/social-overview?view=graph-rest-beta);
 - [хранилище (OneDrive)](/graph/api/resources/drive?view=graph-rest-1.0).
+- [внешний элемент (Поиск Майкрософт)](/graph/api/resources/externalitem?view=graph-rest-beta)
 
 Развернутое описание регулирования в Microsoft Cloud см. в [этой статье](https://docs.microsoft.com/azure/architecture/patterns/throttling).
 
 > [!NOTE]
-> Если в ответе не предоставляется заголовок `Retry-After`, рекомендуем реализовать политику повторения экспоненциальной задержки. Вы также можете реализовать [более сложные шаблоны](https://docs.microsoft.com/azure/architecture/patterns/category/resiliency) при создании крупномасштабных приложений. 
-> 
+> Если в ответе не предоставляется заголовок `Retry-After`, рекомендуем реализовать политику повторения экспоненциальной задержки. Вы также можете реализовать [более сложные шаблоны](https://docs.microsoft.com/azure/architecture/patterns/category/resiliency) при создании крупномасштабных приложений.
+>
 > В пакетах SDK Microsoft Graph уже реализованы обработчики, основанные на заголовке `Retry-After` или (по умолчанию) на политике повторения экспоненциальной задержки.
 
 ## <a name="service-specific-limits"></a>Ограничения для отдельных служб
