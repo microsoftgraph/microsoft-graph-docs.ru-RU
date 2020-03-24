@@ -4,12 +4,12 @@ description: Разностный запрос позволяет запраши
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 32c4a6b88cecd858751c5732416577def407ab30
-ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+ms.openlocfilehash: 0f91b33218ad07d140b910e061bdf3a76d676573
+ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42394602"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892662"
 ---
 # <a name="get-incremental-changes-for-groups"></a>Получение добавочных изменений для групп
 
@@ -238,7 +238,7 @@ Content-type: application/json
 
 - Свойство `members@delta` содержит все изменения членства.
 
-  - Первый пользователь в списке был удален из группы путем удаления членства или самого объекта пользователя. Это описывается свойством `@removed`.
+  - Первый пользователь в списке был удален из группы путем удаления членства или самого объекта пользователя. Это описывается свойством `@removed`. Только пользователи, которые были удалены без возможности восстановления, удаляются из групп. Пользователи, которые были удалены временно, сохраняют членство в группах и не будут отображаться в разностном результате до окончательного удаления. Дополнительные сведения см. в статье [Каталог (удаленные элементы)](/graph/api/resources/directory?view=graph-rest-1.0).
 
   - Второй пользователь был добавлен в группу.
 
