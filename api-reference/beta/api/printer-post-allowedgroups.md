@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 58fdb75eb7e4f8e87691f7f11eaf7b65d9a06b91
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 4271d1a621f11ead23347ededf43c1bb4d021714
+ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42896248"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42947834"
 ---
 # <a name="create-allowedgroup"></a>Создание Алловедграуп
 
@@ -42,7 +42,7 @@ POST /print/printers/{id}/allowedGroups/$ref
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте ссылку на объект Group с помощью `@odata.id` формата, как показано в следующем примере.
 
 ## <a name="response"></a>Ответ
@@ -51,6 +51,8 @@ POST /print/printers/{id}/allowedGroups/$ref
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_allowedgroup_from_printers"
@@ -64,6 +66,20 @@ Content-length: 67
   "@odata.id": "https://graph.microsoft.com/beta/groups/{id}"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-allowedgroup-from-printers-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-allowedgroup-from-printers-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-allowedgroup-from-printers-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 В теле запроса добавьте ссылку на объект Group, указав URI Microsoft Graph в `@odata.id` поле тела JSON.
 
 ##### <a name="response"></a>Отклик

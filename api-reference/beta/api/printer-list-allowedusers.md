@@ -1,18 +1,18 @@
 ---
-title: Список Алловедусерс
+title: Список allowedUsers
 description: Получение списка пользователей, которым предоставлен доступ к отправку заданий печати на связанный принтер.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: d998c7d0fd382be653fab368e8c4e42148246828
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 6857b20f872a7e868175910c84a0d54c11b7b6f0
+ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42896257"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42947906"
 ---
-# <a name="list-allowedusers"></a>Список Алловедусерс
+# <a name="list-allowedusers"></a>Список allowedUsers
 
 Пространство имен: microsoft.graph
 
@@ -49,13 +49,29 @@ GET /print/printers/{id}/allowedUsers
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_allowedUsers"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/printers/{id}/allowedUsers
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-allowedusers-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-allowedusers-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-allowedusers-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

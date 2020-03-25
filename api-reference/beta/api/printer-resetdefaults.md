@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 603eb46033b13ff0794dfea3ddf23f75a4c42c3f
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: d3e2f28e15d12e2a332f995b5b6d8d3e94856228
+ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42896236"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42947758"
 ---
 # <a name="printer-resetdefaults"></a>принтер: Ресетдефаултс
 
@@ -50,6 +50,8 @@ POST /print/printers/{id}/resetDefaults
 В приведенном ниже примере показано, как вызывать этот API.
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printer-resetdefaults"
@@ -57,8 +59,22 @@ POST /print/printers/{id}/resetDefaults
 ```http
 POST https://graph.microsoft.com/beta/print/printers/{id}/resetDefaults
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/printer-resetdefaults-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### <a name="response"></a>Ответ
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/printer-resetdefaults-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/printer-resetdefaults-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. 
 <!-- {
   "blockType": "response",

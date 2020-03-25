@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 675b82605f4bde04b92702204693c3c81b4bd603
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: d3ed6f5f57bc528abaec2661d7bd8d88cba7d75e
+ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42896281"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42947982"
 ---
 # <a name="printer-getcapabilities"></a>принтер: Capabilities
 
@@ -50,6 +50,8 @@ POST /print/printers/{id}/getCapabilities
 В приведенном ниже примере показано, как вызывать этот API.
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printer-getCapabilities"
@@ -57,6 +59,20 @@ POST /print/printers/{id}/getCapabilities
 ```http
 POST https://graph.microsoft.com/beta/print/printers/{id}/getCapabilities
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/printer-getcapabilities-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/printer-getcapabilities-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/printer-getcapabilities-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.

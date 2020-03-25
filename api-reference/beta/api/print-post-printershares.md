@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: f4a1263f9deffe35eed89b7d7840038948ce409d
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 8846f43b61e370260571174313d4c2a07adf4cec
+ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42896345"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42948235"
 ---
 # <a name="create-printershare"></a>Создание Принтершаре
 
@@ -42,7 +42,7 @@ POST /print/printerShares
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [принтершаре](../resources/printershare.md) в формате JSON.
 
 Свойства **ID** и **createdDateTime** для общего ресурса принтера задаются автоматически при создании ресурса, но имя общего ресурса и связанный принтер должны быть включены в запрос.
@@ -55,6 +55,8 @@ POST /print/printerShares
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_printershare_from_print"
@@ -69,6 +71,20 @@ Content-length: 114
   "printer@odata.bind": "https://graph.microsoft.com/beta/print/printers/{id}"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-printershare-from-print-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-printershare-from-print-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-printershare-from-print-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

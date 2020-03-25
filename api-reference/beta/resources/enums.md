@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 3218bf404665e9e4889fae77e5b1efbbd6f2dc9f
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 67b55dc01cbbc9ae5188e93a5bf24248e2ded483
+ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42619038"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42948389"
 ---
 # <a name="enum-values"></a>Значения перечисления
 
@@ -204,7 +204,7 @@ ms.locfileid: "42619038"
 
 | Member
 |:-------------------------
-| активирован
+| отключено
 | Alwaysenabled приложение
 | scheduled
 
@@ -535,7 +535,7 @@ ms.locfileid: "42619038"
 | Member
 |:---------------------
 | Неизвестно
-| OneDrive
+| OneDrive;
 | онедривефорбусинесс
 | онпремонедривефорбусинесс
 
@@ -1040,8 +1040,8 @@ Enum для типов значений реестра, определенных
 
 |Member|
 |:---|
-|enabled|
-|активирован|
+|включено|
+|отключено|
 
 ### <a name="conditionalaccessclientapp"></a>кондитионалакцессклиентапп
 
@@ -1179,3 +1179,18 @@ Enum для типов значений реестра, определенных
 |:-----------------------------|:------|:-----------------------------------------------------------------------|
 | среаткатегори               | 1,1     | Агрегировать запрос на `threatCategory`оценку угроз.               |
 | маилдестинатионраутингреасон | 2     | Агрегировать запрос на `mailDestinationRoutingReason`оценку угроз. |
+
+### <a name="riskeventtypes-values"></a>значения Рискевенттипес
+
+| Member
+|:-------------------------
+| унликелитравел
+| анонимизедипаддресс
+| малиЦиаусипаддресс
+| унфамилиарфеатурес
+| малвареинфектедипаддресс
+| суспиЦиаусипаддресс
+| леакедкредентиалс
+| инвестигатионссреатинтеллиженце
+| шаблонов
+| unknownFutureValue
