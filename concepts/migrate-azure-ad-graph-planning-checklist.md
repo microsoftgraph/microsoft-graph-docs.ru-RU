@@ -4,12 +4,12 @@ description: Контрольный список для переноса при�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 905a692e6a4fddf71b6488e1695957cba5b182ae
-ms.sourcegitcommit: 9cee9d8229fc84dd7ef97670ff27c145e1a78408
+ms.openlocfilehash: 59114221b91f6dc1800f9f1601cb2e2c06709ff8
+ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35778266"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42926787"
 ---
 # <a name="app-migration-planning-checklist"></a>Контрольный список планирования миграции приложений
 
@@ -24,7 +24,7 @@ ms.locfileid: "35778266"
 В частности, ищите различия в следующих областях:
 
 - [Синтаксис запроса на вызов](migrate-azure-ad-graph-request-differences.md) между двумя службами
-- [Различия](migrate-azure-ad-graph-feature-differences.md)в функциях, такие как расширения каталогов, пакетная обработка, разностные запросы и т. д.
+- [Различия в функциях](migrate-azure-ad-graph-feature-differences.md), такие как расширения каталогов, пакетная обработка, разностные запросы и т. д.
 - [Имена ресурсов сущностей](migrate-azure-ad-graph-resource-differences.md) и их типы
 - [Свойства](migrate-azure-ad-graph-property-differences.md) объектов Request и Response
 - [Методы](migrate-azure-ad-graph-method-differences.md), включая параметры и типы
@@ -42,8 +42,8 @@ ms.locfileid: "35778266"
 ## <a name="step-3-review-app-details"></a>Шаг 3: Просмотр сведений о приложении
 
 - Изменения регистрации и согласия [приложения](migrate-azure-ad-graph-app-registration.md) (не должно быть None).
-- Получение маркеров и [библиотек проверки](migrate-azure-ad-graph-authentication-library.md)подлинности.
-- Для приложений .NET используйте клиентские [библиотеки](migrate-azure-ad-graph-client-libraries.md).
+- Получение маркеров и [библиотек проверки подлинности](migrate-azure-ad-graph-authentication-library.md).
+- Для приложений .NET используйте [клиентские библиотеки](migrate-azure-ad-graph-client-libraries.md).
 
 ## <a name="step-4-deploy-test-and-extend-your-app"></a>Шаг 4: развертывание, тестирование и расширение приложения
 
@@ -58,4 +58,4 @@ ms.locfileid: "35778266"
 - Сведения о [синтаксисе вызова рескуест](migrate-azure-ad-graph-request-differences.md) для начала действия 1: обзор различий API.
 - Ознакомьтесь с основными понятиями и рекомендациями [Microsoft Graph](/graph/overview) .
 - Поэкспериментируйте с Microsoft Graph с помощью [проводника диаграмм](https://aka.ms/ge) .
-- Чтобы узнать больше об обновлениях хода выполнения и временных шкалах, ознакомьтесь со статьей [Microsoft Graph или Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) в центре разработчиков Office.
+- Дополнительные сведения об обновлениях хода выполнения и временных шкалах можно найти в [статье Microsoft Graph или Azure AD Graph](https://developer.microsoft.com/en-us/graph/blogs/microsoft-graph-or-azure-ad-graph/).

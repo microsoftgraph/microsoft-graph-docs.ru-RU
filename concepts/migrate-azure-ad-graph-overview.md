@@ -4,12 +4,12 @@ description: Описывается перенос приложений API Azur
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e9a817e7fbc056994d98fa32ec945d8e9c2deda5
-ms.sourcegitcommit: 0536ab327c8b8bf215b726e0d4c25e8f6e8996f9
+ms.openlocfilehash: 311bc8c800d7415e7e2d192f5b11aed971faafa4
+ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "41234056"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42926780"
 ---
 # <a name="migrate-azure-ad-graph-apps-to-microsoft-graph"></a>Перенос приложений Azure AD Graph в Microsoft Graph
 
@@ -43,4 +43,4 @@ Microsoft Graph предоставляет доступ к большому ко
 - Изучите [Контрольный список миграции приложений](migrate-azure-ad-graph-planning-checklist.md) , чтобы помочь вам спланировать перемещение.
 - Ознакомьтесь с основными понятиями и рекомендациями [Microsoft Graph](/graph/overview) .
 - Поэкспериментируйте с Microsoft Graph с помощью [проводника диаграмм](https://aka.ms/ge) .
-- Чтобы узнать больше об обновлениях хода выполнения и временных шкалах, ознакомьтесь со статьей [Microsoft Graph или Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) в центре разработчиков Office.
+- Дополнительные сведения об обновлениях хода выполнения и временных шкалах можно найти в [статье Microsoft Graph или Azure AD Graph](https://developer.microsoft.com/graph/blogs/microsoft-graph-or-azure-ad-graph/).
