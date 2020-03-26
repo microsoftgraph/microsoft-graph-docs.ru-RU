@@ -311,7 +311,7 @@
                   href: api/mailfolder-list-messagerules.md
                 - name: Отправка почты
                   href: api/user-sendmail.md
-            - name: Примечания
+            - name: Заметки
               href: resources/onenote.md
               items:
                 - name: Создание записной книжки
@@ -919,6 +919,8 @@
                   href: api/onlinemeeting-get.md
                 - name: Удаление
                   href: api/onlinemeeting-delete.md
+                - name: Создание или получение
+                  href: api/onlinemeeting-createorget.md
             - name: Присутствие
               href: resources/presence.md
               items:
@@ -9695,7 +9697,7 @@
                       href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                     - name: Получение многозначного свойства
                       href: api/multivaluelegacyextendedproperty-get.md
-        - name: Примечания
+        - name: Заметки
           displayName: OneNote
           items:
             - name: Обзор
@@ -10144,7 +10146,7 @@
                   href: api/printer-post-jobs.md
                 - name: Список разрешенных пользователей
                   href: api/printer-list-allowedusers.md
-                - name: Список Алловедграупс
+                - name: Список allowedGroups
                   href: api/printer-list-allowedgroups.md
                 - name: Добавить разрешенную группу
                   href: api/printer-post-allowedgroups.md
