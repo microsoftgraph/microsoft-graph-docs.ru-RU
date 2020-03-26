@@ -4,12 +4,12 @@ description: Вы можете сделать так, чтобы приложе�
 localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 7d47af5472a7c4bff8b8fae05c0cb87cc079cc29
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: a051b4011ab2efef7179680bb5bcbab1e717d8cc
+ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969533"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42926668"
 ---
 # <a name="call-office-365-services-in-visual-studio-2017-with-the-microsoft-graph-api"></a>Вызов служб Office 365 в Visual Studio 2017 с помощью API Microsoft Graph
 
@@ -21,7 +21,7 @@ ms.locfileid: "37969533"
 
 - Скачайте [предварительную версию Visual Studio 2017](https://www.visualstudio.com/vs/preview/). Предварительную версию Visual Studio 2017 можно использовать параллельно с более ранней версией Visual Studio.
 
-- Оформите подписку на Office 365. Чтобы получить бесплатную пробную версию, зарегистрируйтесь в [программе разработчиков Office 365](https://dev.office.com/devprogram).
+- Оформите подписку на Microsoft 365. Чтобы получить бесплатную пробную версию, зарегистрируйтесь в [Программе для разработчиков Microsoft 365](https://developer.microsoft.com/microsoft-365/dev-program).
 
 ## <a name="get-the-starter-project"></a>Получение исходного проекта
 
