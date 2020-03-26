@@ -5,16 +5,16 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: b6e0848b88427cf0929030f07b163204842c3cd7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 888b5d7d60a72ed95cb3e3f6cbb1b6e5407919ab
+ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522258"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42962368"
 ---
 # <a name="onlinemeeting-resource-type"></a>Тип ресурса Онлинемитинг
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,6 +26,7 @@ ms.locfileid: "42522258"
 |:---------------|:--------|:----------|
 | [Создание объекта onlineMeeting](../api/application-post-onlineMeetings.md) | [onlineMeeting](onlinemeeting.md) | Создайте собрание по сети. |
 | [Получение Онлинемитинг](../api/onlinemeeting-get.md) | [onlineMeeting](onlinemeeting.md) | Чтение свойств и связей объекта **онлинемитинг** . |
+| [Создание или получение Онлинемитинг](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Создайте собрание по сети с пользовательским внешним ИДЕНТИФИКАТОРом. Если собрание уже существует, извлеките его значение. |
 
 ## <a name="properties"></a>Свойства
 
@@ -41,8 +42,9 @@ ms.locfileid: "42522258"
 | жоинвебурл                   | String                                                 | URL-адрес присоединения к собранию по сети. Только для чтения.|
 | participants              | [митингпартиЦипантс](meetingparticipants.md)          | Участники, связанные с собранием по сети.  Сюда входят Организатор и участники. |
 | subject                   | String                                                 | Тема собрания по сети. |
-| capabilities              | Коллекция String                                      | Список возможностей собрания. Возможные значения: `questionAndAnswer`. |
+| capabilities              | Коллекция строк                                      | Список возможностей собрания. Возможные значения: `questionAndAnswer`. |
 | видеотелеконференцеид     | String                                                 | Идентификатор видеоконференций для видеоконференций. Только для чтения. |
+| externalId                | String                                                 | Внешний идентификатор. Настраиваемый идентификатор. Необязательный параметр. |
 
 ### <a name="autoadmittedusers-values"></a>значения Аутоадмиттедусерс
 | Значение | Описание  |
@@ -59,7 +61,7 @@ ms.locfileid: "42522258"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+  "externalId"
   ],
   "@odata.type": "microsoft.graph.onlineMeeting"
 }-->

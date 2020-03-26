@@ -2,16 +2,20 @@
 title: Значения перечисления
 description: Значения перечисления Microsoft Graph.
 localization_priority: Normal
-author: ''
-ms.prod: ''
+ms.prod: non-product-specific
+author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 575cb3aacbcc507fb2659a7097dfedce828603e3
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: a28fa0cc9a53b6f9108a587c13efd8ab83a28bbf
+ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618725"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42948396"
 ---
+# <a name="enum-values"></a>Значения перечисления
+
+Пространство имен: microsoft.graph
+
 ### <a name="contactrelationship-values"></a>значения Контактрелатионшип
 
 |Элемент|Значение|Описание|
@@ -67,7 +71,7 @@ ms.locfileid: "42618725"
 
 | Member
 |:-------------------------
-| активирован
+| отключено
 | Alwaysenabled приложение
 | scheduled
 
@@ -372,7 +376,7 @@ ms.locfileid: "42618725"
 | Member
 |:---------------------
 | Неизвестно
-| OneDrive
+| OneDrive;
 | онедривефорбусинесс
 | онпремонедривефорбусинесс
 
@@ -631,6 +635,26 @@ Enum для типов значений реестра, определенных
 | инвестигатионссреатинтеллиженце
 | шаблонов
 | unknownFutureValue
+
+### <a name="riskeventtype-values"></a>значения Рискевенттипе
+
+|Member|
+|:---|
+|унликелитравел|
+|анонимизедипаддресс|
+|малиЦиаусипаддресс|
+|унфамилиарфеатурес|
+|малвареинфектедипаддресс|
+|суспиЦиаусипаддресс|
+|леакедкредентиалс|
+|инвестигатионссреатинтеллиженце|
+|шаблонов|
+|админконфирмедусеркомпромисед|
+|мкасимпоссиблетравел|
+|мкассуспиЦиаусинбоксманипулатионрулес|
+|инвестигатионссреатинтеллиженцесигнинлинкед|
+|малиЦиаусипаддрессвалидкредентиалсблоккедип|
+|unknownFutureValue|
 
 ### <a name="risklevel-values"></a>значения Рисклевел
 

@@ -5,16 +5,18 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 120cb02837ee30bc67ce315e158d4d4361a8be42
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6f3a129d8ed9d96393eae38e26860648f016323d
+ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517077"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42926855"
 ---
 # <a name="list-memberof"></a>Список memberOf
 
-Пространство имен: microsoft.graph. Получение групп, непосредственным участником которых является данная группа. 
+Пространство имен: microsoft.graph
+
+Получение групп, непосредственным членом которых является данная группа. 
 
 Эта операция не является транзитивной. В отличие от аналогичной операции для функции "Группы Office 365", эта операция возвращает группы всех типов, а не только группы Office 365.
 

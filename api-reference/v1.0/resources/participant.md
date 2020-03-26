@@ -1,22 +1,22 @@
 ---
 title: Тип ресурса участника
-description: Тип участника.
+description: Представляет тип участника.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: e6711a771d0c10112850f2d05943f4e8752ebbdf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 82a8cdd51cc7dd8c3be1e06c24ff61b19a9b86ac
+ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534085"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42962340"
 ---
 # <a name="participant-resource-type"></a>Тип ресурса участника
 
 Пространство имен: microsoft.graph
 
-Тип участника.
+Представляет тип участника.
 
 ## <a name="methods"></a>Методы
 
@@ -30,13 +30,14 @@ ms.locfileid: "42534085"
 
 | Свойство             | Тип                                     | Описание                                                  |
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
-| id                   | Строка                                   | Идентификатор участника.                                          |
+| id                   | String                                   | Идентификатор участника.                                          |
 | info                 | [participantInfo](participantinfo.md)    | Участник участника.                          |
 | исинлобби            | Boolean                                  | `true`Если участник находится в "зале ожидания".                          |
 | Автозвук              | Boolean                                  | `true`Если участник отключен (клиент или сервер выключен).    |
 | медиастреамс         | Коллекция [медиастреам](mediastream.md) | Список потоков мультимедиа.                                   |
+| рекордингинфо        | [рекордингинфо](recordinginfo.md)        | Сведения о том, имеет ли участник возможность записи. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

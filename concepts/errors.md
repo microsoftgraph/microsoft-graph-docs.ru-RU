@@ -2,12 +2,12 @@
 title: Сообщения об ошибках и типы ресурсов Microsoft Graph
 description: "  "
 localization_priority: Priority
-ms.openlocfilehash: eb7ce8d2d0a7836842469406768ce8a6eb81e94c
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 684c00dfc8618378800faf9aad064370215e7ccd
+ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969796"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42926682"
 ---
 # <a name="microsoft-graph-error-responses-and-resource-types"></a>Сообщения об ошибках и типы ресурсов Microsoft Graph
 
@@ -199,10 +199,6 @@ public bool IsError(string expectedErrorCode)
 | **virusSuspicious**                | Этот документ подозрительный и может содержать вирус.
 | **zeroOrFewerResultsRequested**    | Запрошено ноль или меньше результатов.
 
-<!-- ##Additional Resources##
-
-- [Microsoft Graph API release notes and known issues](microsoft-graph-api-release-notes-known-issues.md )
-- [Hands on lab: Deep dive into the Microsoft Graph API](https://dev.office.com/hands-on-labs/4585) -->
 
 <!-- {
   "type": "#page.annotation",
