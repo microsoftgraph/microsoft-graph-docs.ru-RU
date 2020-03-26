@@ -4,12 +4,12 @@ description: Регулирование позволяет ограничить 
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 50b187209d722252e11df6a5cfc20ea5b796b875
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: db87dfa7c855ba96b7cd7924b4f7829a6fd05a26
+ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892781"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42962361"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Руководство по регулированию Microsoft Graph
 
@@ -125,3 +125,25 @@ Microsoft Graph позволяет получать доступ к данным
 - [outlookTaskGroup](/graph/api/resources/outlooktaskgroup)
 - [outlookCategory](/graph/api/resources/outlookcategory)
 - [attachment](/graph/api/resources/attachment)
+
+#### <a name="microsoft-teams-service-limits"></a>Ограничения службы Microsoft Teams
+
+Ограничения выражаются в виде запросов в секунду (RPS).
+
+| Тип запроса Teams                                   | Лимит на приложение на одного арендатора        | Ограничение на приложение для всех арендаторов      |
+|------------------------------------------------------|---------------------------------|------------|
+| Любой API Graph призывает Microsoft Teams              | 15000 запросов каждые 10 секунд | н/д |
+| ПОЛУЧИТЬ команду, канал, вкладку, установленные приложения, каталог приложений   | 60 запросов в секунду                          | 600 запросов в секунду |
+| Канал POST / PUT, вкладка, установленные приложения, каталог приложений    |  30 запросов в секунду                         | 300 запросов в секунду  |
+| PATCH команда, канал, вкладка, установленные приложения, каталог приложений |  30 запросов в секунду                         | 300 запросов в секунду  |
+| УДАЛИТЬ канал, вкладку, установленные приложения, каталог приложений      |  15 запросов в секунду                         | 150 запросов в секунду  |
+| Получить /teams/```{team-id}```, joinedTeams              |  30 запросов в секунду                         | 300 запросов в секунду  |
+| POST /teams/```{team-id}```, PUT /groups/```{team-id}```/team, клон | 6 запросов в секунду | 150 запросов в секунду  | 
+| ПОЛУЧИТЬ сообщение канала  | 5 запросов в секунду | 100 запросов в секунду |
+| ПОЛУЧИТЬ 1: 1 / сообщение группового чата  | 3 запроса в секунду | 30 запросов в секунду |
+| Сообщение POST канала | 2 запроса в секунду | 20 запросов в секунду |
+| POST 1: 1 / сообщение в групповом чате | 2 запроса в секунду | 20 запросов в секунду |
+
+Максимально 4 запроса в секунду на приложение могут быть отправлены для данной команды или канала.
+
+См. Также [ограничения Microsoft Teams](/graph/api/resources/teams-api-overview#microsoft-teams-limits) и [требования к опросу](/graph/api/resources/teams-api-overview#polling-requirements).
