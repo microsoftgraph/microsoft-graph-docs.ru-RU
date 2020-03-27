@@ -6,16 +6,16 @@ title: RemoteItem
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: eb4d937d7b2feab6589ddd965eb6a6524162b7fe
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0b672f917487719b8994d8c99aad8be8c8d24190
+ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521168"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "42986098"
 ---
 # <a name="remoteitem-resource-type"></a>Тип ресурса RemoteItem
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,6 +40,7 @@ ms.locfileid: "42521168"
   "file": { "@odata.type": "microsoft.graph.file" },
   "fileSystemInfo": { "@odata.type": "microsoft.graph.fileSystemInfo" },
   "folder": { "@odata.type": "microsoft.graph.folder" },
+  "image" : { "@odata.type": "microsoft.graph.image" },
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "timestamp",
   "name": "string",
@@ -48,6 +49,7 @@ ms.locfileid: "42521168"
   "shared": { "@odata.type": "microsoft.graph.shared" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "size": 1024,
+  "video": { "@odata.type": "microsoft.graph.video" },
   "webDavUrl": "url",
   "webUrl": "url"
 }
@@ -63,6 +65,7 @@ ms.locfileid: "42521168"
 | fileSystemInfo       | [FileSystemInfo](filesysteminfo.md) | Сведения об удаленном элементе из локальной файловой системы. Только для чтения.                                                                                          |
 | folder               | [Folder](folder.md)                 | Указывает, что удаленный элемент является папкой. Только для чтения.                                                                                                            |
 | id                   | Строка                              | Уникальный идентификатор для удаленного элемента на его диске. Только для чтения.                                                                                                    |
+| image                | [Image](image.md)                   | Метаданные изображения, если в роли элемента выступает изображение. Только для чтения.                                                                                               |
 | lastModifiedBy       | [IdentitySet](identityset.md)       | Идентификатор пользователя, устройства или приложения, внесшего последние изменения в элемент. Только для чтения.                                                                            |
 | lastModifiedDateTime | Timestamp                           | Дата и время последнего изменения элемента. Только для чтения.                                                                                                              |
 | name                 | String                              | Необязательное свойство. Имя файла удаленного элемента. Только для чтения.                                                                                                                 |
@@ -71,6 +74,7 @@ ms.locfileid: "42521168"
 | общие               | [shared](shared.md)                 | Указывает, что к элементу был предоставлен общий доступ для других пользователей, и предоставляет сведения о состоянии совместного использования элемента. Только для чтения.                                       |
 | sharepointIds        | [SharepointIds](sharepointids.md)   | Обеспечивает взаимодействие между элементами в OneDrive для бизнеса и SharePoint с использованием полного набора идентификаторов элемента. Только для чтения.                                          |
 | size                 | Int64                               | Размер удаленного элемента. Только для чтения.                                                                                                                               |
+| video                | [Video](video.md)                   | Метаданные видео, если в роли элемента выступает видео. Только для чтения.                                                                                                    |
 | webDavUrl            | Url                                 | URL-адрес, совместимый с протоколом DAV, для элемента.                                                                                                                                  |
 | webUrl               | URL-адрес                                 | URL-адрес для отображения ресурса в браузере. Только для чтения.                                                                                                         |
 

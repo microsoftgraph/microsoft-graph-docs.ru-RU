@@ -1,22 +1,28 @@
 ---
 title: Тип ресурса orgContact
-description: Ниже показано представление JSON ресурса.
+description: Ниже представлено описание ресурса в формате JSON.
 localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 42a02cce980af57cf0bac7e1a97eb7cf77c91918
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c160c3e65c6905eec15bccccb10cabb086b57e39
+ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522118"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "42986119"
 ---
 # <a name="orgcontact-resource-type"></a>Тип ресурса orgContact
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Представляет организационный контакт. Организационные контакты управляются администраторами Организации и отличаются от [личных контактов](contact.md). Кроме того, контакты организации синхронизируются из локальных каталогов или из Exchange Online и доступны только для чтения.
+
+Наследуется от [directoryObject](directoryobject.md).
+
+Этот ресурс поддерживает отслеживание добавлений, удалений и обновлений с помощью [разностного запроса](/graph/delta-query-overview) с функцией [delta](../api/orgcontact-delta.md).
 
 ## <a name="methods"></a>Методы
 
@@ -25,7 +31,7 @@ ms.locfileid: "42522118"
 |[Получение orgContact](../api/orgcontact-get.md) | [orgContact](orgcontact.md) |Чтение свойств и связей объекта orgContact.|
 |[Получение имени руководителя](../api/orgcontact-get-manager.md) |[directoryObject](directoryobject.md)| Получение руководителя контакта.|
 |[Список directReports](../api/orgcontact-list-directreports.md) |Коллекция [directoryObject](directoryobject.md)| Перечислите непосредственные отчеты контакта.|
-|[Перечисление memberOf](../api/orgcontact-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Получение коллекции memberOf Objects.|
+|[Список memberOf](../api/orgcontact-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Получение коллекции memberOf Objects.|
 |[удаление](../api/orgcontact-delete.md); | Нет |Удаление объекта orgContact. |
 |[checkMemberGroups](../api/orgcontact-checkmembergroups.md)|Коллекция String| Проверьте принадлежность к группе. |
 |[getMemberGroups](../api/orgcontact-getmembergroups.md)|Коллекция String| Возврат всех групп, членом которых является указанный контакт. |
@@ -46,12 +52,12 @@ ms.locfileid: "42522118"
 | mailNickname                 | String                                                     | Псевдоним электронной почты (часть адреса электронной почты, предварительно заданная в параметре @ Symbol) для этого контакта в Организации.                                                                                                                                                                                                                                                                                |
 | onPremisesLastSyncDateTime   | DateTimeOffset                                             | Дата и время последней синхронизации этого контакта в организации из локальной службы AD. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z".   |
 | onPremisesProvisioningErrors |Коллекция [onPremisesProvisioningError](onpremisesprovisioningerror.md)       | Список всех ошибок подготовки синхронизации для данного контакта Организации.                                                                                                                                                                                                                                                                                                |
-|onPremisesSyncEnabled|Логический|**значение true** , если объект синхронизирован из локального каталога; **false** , если этот объект изначально был синхронизирован из локального каталога, но больше не синхронизируется и не выполняется в Exchange. **значение NULL** , если объект никогда не был синхронизирован из локального каталога (по умолчанию).|
+|onPremisesSyncEnabled|Boolean|**значение true** , если объект синхронизирован из локального каталога; **false** , если этот объект изначально был синхронизирован из локального каталога, но больше не синхронизируется и не выполняется в Exchange. **значение NULL** , если объект никогда не был синхронизирован из локального каталога (по умолчанию).|
 | phones                       | Коллекция [phone](phone.md)                            | Список телефонов для этого контакта в Организации. Типы телефонов могут быть мобильными, рабочими и Бусинессфакс. В коллекции всегда может присутствовать только один из этих типов.                                                                                                                       |
 | proxyAddresses               | Коллекция String                                         | Пример: "SMTP: bob@contoso.com", "SMTP: bob@sales.contoso.com". Для выражений фильтра в случае многозначных свойств требуется оператор **any**. Поддерживает \$фильтр.                                                                                                                                                                               |
 | surname                      | String                                                     | Фамилия для этого организационного контакта.                          |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
