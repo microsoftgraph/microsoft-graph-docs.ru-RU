@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: 0e07a4e658486d0075e34911cad4daaf17a07401
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 3771a9e62a317e292b8d2a821ecb21e6b354d8af
+ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866534"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42962333"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Работа с Microsoft Teams при помощи API Microsoft Graph
 
@@ -36,6 +36,15 @@ Microsoft Teams — это рабочее пространство с чатам
 |[timeOff](/graph/api/resources/timeoff?view=graph-rest-beta) (предварительная версия)| [Создание](/graph/api/schedule-post-timesoff?view=graph-rest-beta), [список](/graph/api/schedule-list-timesoff?view=graph-rest-beta), [получение](/graph/api/timeoff-get?view=graph-rest-beta), [замена](/graph/api/timeoff-put?view=graph-rest-beta), [удаление](/graph/api/timeoff-delete?view=graph-rest-beta) |
 |[timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta) (предварительная версия)| [Создание](/graph/api/schedule-post-timeoffreasons?view=graph-rest-beta), [список](/graph/api/schedule-list-timeoffreasons?view=graph-rest-beta), [получение](/graph/api/timeoffreason-get?view=graph-rest-beta), [замена](/graph/api/timeoffreason-put?view=graph-rest-beta), [удаление](/graph/api/timeoffreason-delete?view=graph-rest-beta) |
 
+## <a name="microsoft-teams-limits"></a>Ограничения Microsoft Teams
+
+Протестированные ограничения производительности (мощности) Microsoft Teams описаны в статье [Ограничения и спецификации для Microsoft Teams](/microsoftteams/limits-specifications-teams).
+Эти ограничения применяются при непосредственном использовании Microsoft Teams или с помощью API Microsoft Graph.
+Так как у каждой команды есть соответствующая группа, а каждая группа является объектом каталога, ограничение [количества групп](/microsoft-365/admin/create-groups/office-365-groups#group-limits) и [количества объектов каталога ("ресурсов")](/azure/active-directory/users-groups-roles/directory-service-limits-restrictions) может также оказывать влияние. 
+
+Файлы в каналах хранятся в SharePoint; при этом применяются [ограничения SharePoint Online](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits).
+
+См. также [Ограничения регулирования для служб Microsoft Teams](/graph/throttling).
 
 ## <a name="teams-and-groups"></a>Команды и группы
 
@@ -95,6 +104,16 @@ Microsoft Teams — это рабочее пространство с чатам
 
 > [!Note]
 > Гости клиента всегда обрабатываются с помощью медленного пути.
+
+## <a name="polling-requirements"></a>Требования к опросу
+
+Если приложение опрашивает вас на предмет изменения ресурса, это можно делать раз в день. ([teamsAsyncOperation](teamsasyncoperation.md) является исключением из общего правила, так как опрашивается часто.) Если нужно узнавать об изменениях чаще, [создайте подписку](../api/subscription-post-subscriptions.md) на этот ресурс и получайте уведомления об изменениях (веб-перехватчики). Если вы не нашли поддержку для нужного типа подписки, рекомендуем оставить свой отзыв с помощью [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359626). 
+
+При опросе на предмет новых сообщений необходимо определить диапазон дат, в котором поддерживается опрос. Дополнительные сведения см. в статье [Получение изменившихся данных о сообщениях в каналах](/graph/api/chatmessage-delta?view=graph-rest-beta).
+
+При опросе для ресурса раз за разом выполняется операция GET, чтобы проверить, не изменился ли он. Операцию GET разрешается выполнять на одном и том же ресурсе несколько раз в день, пока не проводится опрос. Например, хорошо выполнять операцию GET на /me/joinedTeams каждый раз, когда пользователь посещает или обновляет вашу веб-страницу, но было бы неправильно выполнять GET на /me/joinedTeams в цикле каждые 30 секунд, чтобы обновлять эту веб-страницу.
+
+Если приложения не удовлетворяют требованиям опроса, это будет рассматриваться как нарушение [условий использования API Майкрософт](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use). Такое нарушение может привести к дополнительному [регулированию](/graph/throttling), а также приостановке или прекращению использования API Майкрософт.
 
 ## <a name="see-also"></a>См. также
 
