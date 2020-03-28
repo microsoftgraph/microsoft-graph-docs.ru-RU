@@ -311,7 +311,7 @@
                   href: api/mailfolder-list-messagerules.md
                 - name: Отправка почты
                   href: api/user-sendmail.md
-            - name: Заметки
+            - name: Примечания
               href: resources/onenote.md
               items:
                 - name: Создание записной книжки
@@ -9125,17 +9125,16 @@
             - name: Контакты организации
               href: resources/orgcontact.md
               items:
-                - name: Контакт
-                  href: resources/orgcontact.md
-                  items:
-                    - name: Вывод списка контактов организации
-                      href: api/orgcontact-list.md
-                    - name: Вывод контакта организации
-                      href: api/orgcontact-get.md
-                    - name: Обновление контакта организации
-                      href: api/orgcontact-update.md
-                    - name: Удаление контакта организации
-                      href: api/orgcontact-delete.md
+                - name: Вывод списка контактов организации
+                  href: api/orgcontact-list.md
+                - name: Вывод контакта организации
+                  href: api/orgcontact-get.md
+                - name: Обновление контакта организации
+                  href: api/orgcontact-update.md
+                - name: Удаление контакта организации
+                  href: api/orgcontact-delete.md
+                - name: Получение Дельта контакта для Организации
+                  href: api/orgcontact-delta.md
                 - name: Группы
                   href: resources/group.md
                   items:
@@ -9150,9 +9149,10 @@
                   items:
                     - name: Список подчиненных
                       href: api/orgcontact-list-directreports.md
-                - name: Объект каталога
-                  href: resources/directoryobject.md
-                  items:
+                    - name: Список memberOf
+                      href: api/orgcontact-list-memberof.md
+                    - name: Получение имени руководителя
+                      href: api/orgcontact-get-manager.md
                     - name: Вывод объектов членства
                       href: api/orgcontact-getmemberobjects.md
             - name: Политика
@@ -9697,7 +9697,7 @@
                       href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                     - name: Получение многозначного свойства
                       href: api/multivaluelegacyextendedproperty-get.md
-        - name: Заметки
+        - name: Примечания
           displayName: OneNote
           items:
             - name: Обзор

@@ -303,7 +303,7 @@
                   href: api/mailfolder-list-messagerules.md
                 - name: Отправка почты
                   href: api/user-sendmail.md
-            - name: Заметки
+            - name: Примечания
               href: resources/onenote.md
               items:
                 - name: Создание записной книжки
@@ -3523,12 +3523,28 @@
                   href: api/orgcontact-list.md
                 - name: Вывод контакта организации
                   href: api/orgcontact-get.md
-                - name: Список подчиненных
-                  href: api/orgcontact-list-directreports.md
-                - name: Список memberOf
-                  href: api/orgcontact-list-memberof.md
-                - name: Получение имени руководителя
-                  href: api/orgcontact-get-manager.md
+                - name: Получение Дельта контакта для Организации
+                  href: api/orgcontact-delta.md
+                - name: Группы
+                  href: resources/group.md
+                  items:
+                    - name: Вывод свойства memberOf
+                      href: api/orgcontact-list-memberof.md
+                    - name: Вывод групп членов
+                      href: api/orgcontact-getmembergroups.md
+                    - name: Проверка членства в группах
+                      href: api/orgcontact-checkmembergroups.md
+                - name: Организационная иерархия
+                  href: resources/directoryobject.md
+                  items:
+                    - name: Список подчиненных
+                      href: api/orgcontact-list-directreports.md
+                    - name: Список memberOf
+                      href: api/orgcontact-list-memberof.md
+                    - name: Получение имени руководителя
+                      href: api/orgcontact-get-manager.md
+                    - name: Вывод объектов членства
+                      href: api/orgcontact-getmemberobjects.md
             - name: Подписанная единица SKU
               href: resources/subscribedsku.md
               items:
@@ -3697,7 +3713,7 @@
                       href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                     - name: Получение многозначного свойства
                       href: api/multivaluelegacyextendedproperty-get.md
-        - name: Заметки
+        - name: Примечания
           displayName: OneNote
           items:
             - name: Обзор
