@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: davidmu1
 ms.prod: microsoft-identitiy-platform
-ms.openlocfilehash: 019c9e20af4cea4ad88b0c9311f4a737618ac639
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: 576c75e88bf882d8836a0731457fc37b337b0037
+ms.sourcegitcommit: d93fcc2212491567f8322b1cc0c02d37829b6051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639837"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43034771"
 ---
 # <a name="cancel-governanceroleassignmentrequest"></a>Отмена governanceRoleAssignmentRequest
 
@@ -23,7 +23,7 @@ ms.locfileid: "42639837"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Permissions              |
+|Тип разрешения      | Разрешения              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
@@ -41,7 +41,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {code}|
+| Авторизация  | Bearer {токен}. Обязательный.|
 | Content-Type  | application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -52,13 +52,13 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 
 ## <a name="error-codes"></a>Коды ошибок
 Этот API соответствует стандартным кодам протокола HTTP. Кроме того, коды настраиваемых ошибок указаны ниже.
-|Код ошибки     | Сообщение об ошибке              | Сведения |
-|:--------------------| :---------------------|:--------------------|
-| 400 Бадрекуест | ролеассигнментрекуестнотфаунд | GovernanceRoleAssignmentRequest не существует в системе.
-| 400 Бадрекуест | рекуестканнотбеканцеллед    | Только те запросы, которые `Granted`находятся `PendingApproval`в `PendingApprovalProvisioning` состоянии `PendingAdminDecision` , и могут быть отменены.
+| Код ошибки | Сообщение об ошибке | Сведения |
+|:---------- |:------------- |:------- |
+| 400 Бадрекуест | ролеассигнментрекуестнотфаунд | GovernanceRoleAssignmentRequest не существует в системе. |
+| 400 Бадрекуест | рекуестканнотбеканцеллед | Только те запросы, которые `Granted`находятся `PendingApproval`в `PendingApprovalProvisioning` состоянии `PendingAdminDecision` , и могут быть отменены. |
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -84,7 +84,7 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 ---
 
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "truncated": false,

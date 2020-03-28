@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 64a6cece52e76e7ca5ae5f376913901a8a185e42
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f310a1b2b83effda2af1a2a73406325f78a06f3d
+ms.sourcegitcommit: d93fcc2212491567f8322b1cc0c02d37829b6051
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814339"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43034757"
 ---
 # <a name="create-deviceshellscript"></a>Создание Девицешеллскрипт
 
@@ -51,6 +51,9 @@ POST /deviceManagement/deviceShellScripts
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
+|ексекутионфрекуенци|Длительность|Интервал для запуска скрипта. Если он не определен, сценарий выполняется один раз.|
+|ретрикаунт|Int32| Количество повторных попыток выполнения скрипта в случае сбоя. |
+|блоккексекутионнотификатионс|Boolean|Указывает, уведомлен ли пользователь о выполнении скрипта.|
 |id|Строка|Уникальный идентификатор для сценария управления устройствами.|
 |displayName|Строка|Имя скрипта управления устройствами.|
 |description|String|Необязательное описание скрипта управления устройствами.|
@@ -58,7 +61,7 @@ POST /deviceManagement/deviceShellScripts
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения скрипта управления устройствами. Это свойство доступно только для чтения.|
 |runAsAccount|[рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|fileName|String|Имя файла сценария.|
+|fileName|String|Имя файла скрипта.|
 |roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого экземпляра Повершеллскрипт.|
 
 
@@ -73,10 +76,13 @@ POST /deviceManagement/deviceShellScripts
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts
 Content-type: application/json
-Content-length: 305
+Content-length: 409
 
 {
   "@odata.type": "#microsoft.graph.deviceShellScript",
+  "executionFrequency": "PT2M43.444327S",
+  "retryCount": 10,
+  "blockExecutionNotifications": true,
   "displayName": "Display Name value",
   "description": "Description value",
   "scriptContent": "c2NyaXB0Q29udGVudA==",
@@ -93,10 +99,13 @@ Content-length: 305
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 477
+Content-Length: 581
 
 {
   "@odata.type": "#microsoft.graph.deviceShellScript",
+  "executionFrequency": "PT2M43.444327S",
+  "retryCount": 10,
+  "blockExecutionNotifications": true,
   "id": "ca9e0ad8-0ad8-ca9e-d80a-9ecad80a9eca",
   "displayName": "Display Name value",
   "description": "Description value",
@@ -110,7 +119,6 @@ Content-Length: 477
   ]
 }
 ```
-
 
 
 
