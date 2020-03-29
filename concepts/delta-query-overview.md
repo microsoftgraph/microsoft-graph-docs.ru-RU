@@ -4,12 +4,12 @@ description: Запросы изменений позволяют приложе
 author: baywet
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 6b66d2b6028e0b625c47f301c7d7087e12dfd150
-ms.sourcegitcommit: ec6aa498067c9df6139a469e694a89447b155a1e
+ms.openlocfilehash: d1b72356e38404c300bd1380fb1047ae04ac37ca
+ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42331208"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "42986015"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Отслеживание изменений в данных Microsoft Graph с помощью разностного запроса
 
@@ -115,6 +115,7 @@ https://graph.microsoft.com/beta/groups/delta/?$filter=id eq '477e9fc6-5de7-4406
 | Группы                                                         | Функция [delta](/graph/api/group-delta?view=graph-rest-1.0) ресурса [group](/graph/api/resources/group?view=graph-rest-1.0)                                                   |
 | Папки почты                                                   | Функция [delta](/graph/api/mailfolder-delta?view=graph-rest-1.0) ресурса [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0)                                    |
 | Сообщения в папке                                           | Функция [delta](/graph/api/message-delta?view=graph-rest-1.0) ресурса [message](/graph/api/resources/message?view=graph-rest-1.0)                                             |
+| Контакты организации | функция[delta](/graph/api/orgcontact-delta?view=graph-rest-1.0) ресурса [orgContact](/graph/api/resources/orgcontact?view=graph-rest-1.0) |
 | Папки личных контактов                                       | Функция [delta](/graph/api/contactfolder-delta?view=graph-rest-1.0) ресурса [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0)                           |
 | Личные контакты в папке                                  | Функция [delta](/graph/api/contact-delta?view=graph-rest-1.0) ресурса [contact](/graph/api/resources/contact?view=graph-rest-1.0)    
 | Элементы Planner\*\* (предварительная версия)                                    | Функция [delta](/graph/api/planneruser-list-delta?view=graph-rest-beta) всего сегмента ресурса [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) (предварительный просмотр)|                                         |
@@ -180,9 +181,9 @@ Content-type: application/json
 
 ### <a name="token-duration"></a>Длительность маркера
 
-Токены изменений действительны только в течение определенного периода, прежде чем клиентскому приложению потребуется снова выполнить полную синхронизацию. Для объектов удостоверений (**directoryObject**, **directoryRole**, **Группа**, **Пользователь**), ограничение составляет 30 дней.
+Токены изменений действительны только в течение определенного периода, прежде чем клиентскому приложению потребуется снова выполнить полную синхронизацию. Ограничение для объектов удостоверений (**directoryObject**, **directoryRole**, **Группа**, **orgContac**, **Пользователь**) составляет 30 дней.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 
 Выполнение разностных запросов для определенного ресурса требует тех же [разрешений](./permissions-reference.md), что и его чтение.
 
