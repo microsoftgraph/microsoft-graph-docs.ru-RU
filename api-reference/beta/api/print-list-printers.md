@@ -5,57 +5,57 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 1e0c9e97904df35c5d8383d77a1b37441a96abb5
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: c399e5e375ccd0890c2b8e31663d39d952467c09
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42948326"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062142"
 ---
-# <a name="list-printers"></a><span data-ttu-id="1bab9-103">Список принтеров</span><span class="sxs-lookup"><span data-stu-id="1bab9-103">List printers</span></span>
+# <a name="list-printers"></a><span data-ttu-id="a3cc2-103">Список принтеров</span><span class="sxs-lookup"><span data-stu-id="a3cc2-103">List printers</span></span>
 
-<span data-ttu-id="1bab9-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1bab9-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a3cc2-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a3cc2-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1bab9-105">Получение списка **принтеров** , зарегистрированных в клиенте.</span><span class="sxs-lookup"><span data-stu-id="1bab9-105">Retrieve the list of **printers** that are registered in the tenant.</span></span>
+<span data-ttu-id="a3cc2-105">Получение списка **принтеров** , зарегистрированных в клиенте.</span><span class="sxs-lookup"><span data-stu-id="a3cc2-105">Retrieve the list of **printers** that are registered in the tenant.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1bab9-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1bab9-106">Permissions</span></span>
-<span data-ttu-id="1bab9-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1bab9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a3cc2-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a3cc2-106">Permissions</span></span>
+<span data-ttu-id="a3cc2-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a3cc2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1bab9-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1bab9-109">Permission type</span></span> | <span data-ttu-id="1bab9-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1bab9-110">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="a3cc2-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a3cc2-109">Permission type</span></span> | <span data-ttu-id="a3cc2-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a3cc2-110">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="1bab9-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1bab9-111">Delegated (work or school account)</span></span>| <span data-ttu-id="1bab9-112">Users. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="1bab9-112">Users.Read.All</span></span> |
-|<span data-ttu-id="1bab9-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1bab9-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1bab9-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1bab9-114">Not Supported.</span></span>|
-|<span data-ttu-id="1bab9-115">Для приложения</span><span class="sxs-lookup"><span data-stu-id="1bab9-115">Application</span></span>|<span data-ttu-id="1bab9-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1bab9-116">Not Supported.</span></span>|
+|<span data-ttu-id="a3cc2-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a3cc2-111">Delegated (work or school account)</span></span>| <span data-ttu-id="a3cc2-112">Users. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="a3cc2-112">Users.Read.All</span></span> |
+|<span data-ttu-id="a3cc2-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a3cc2-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a3cc2-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a3cc2-114">Not Supported.</span></span>|
+|<span data-ttu-id="a3cc2-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="a3cc2-115">Application</span></span>|<span data-ttu-id="a3cc2-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a3cc2-116">Not Supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="1bab9-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1bab9-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a3cc2-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a3cc2-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /print/printers
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="1bab9-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="1bab9-118">Optional query parameters</span></span>
-<span data-ttu-id="1bab9-119">Этот метод поддерживает некоторые параметры запроса OData для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="1bab9-119">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="1bab9-120">Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="1bab9-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="a3cc2-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="a3cc2-118">Optional query parameters</span></span>
+<span data-ttu-id="a3cc2-119">Этот метод поддерживает некоторые параметры запроса OData для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="a3cc2-119">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="a3cc2-120">Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="a3cc2-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-### <a name="exceptions"></a><span data-ttu-id="1bab9-121">Исключения</span><span class="sxs-lookup"><span data-stu-id="1bab9-121">Exceptions</span></span>
-* <span data-ttu-id="1bab9-122">Операторы `$expand` and `select` поддерживаются для свойства `share` навигации, но не для `jobs`.</span><span class="sxs-lookup"><span data-stu-id="1bab9-122">The `$expand` and `select` operators are supported for the `share` navigation property, but not for `jobs`.</span></span>
-* <span data-ttu-id="1bab9-123">`$count` Оператор не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1bab9-123">The `$count` operator is not supported.</span></span>
+### <a name="exceptions"></a><span data-ttu-id="a3cc2-121">Исключения</span><span class="sxs-lookup"><span data-stu-id="a3cc2-121">Exceptions</span></span>
+* <span data-ttu-id="a3cc2-122">Операторы `$expand` and `select` поддерживаются для свойства `share` навигации, но не для `jobs`.</span><span class="sxs-lookup"><span data-stu-id="a3cc2-122">The `$expand` and `select` operators are supported for the `share` navigation property, but not for `jobs`.</span></span>
+* <span data-ttu-id="a3cc2-123">`$count` Оператор не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a3cc2-123">The `$count` operator is not supported.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="1bab9-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1bab9-124">Request headers</span></span>
-| <span data-ttu-id="1bab9-125">Имя</span><span class="sxs-lookup"><span data-stu-id="1bab9-125">Name</span></span>      |<span data-ttu-id="1bab9-126">Описание</span><span class="sxs-lookup"><span data-stu-id="1bab9-126">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a3cc2-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a3cc2-124">Request headers</span></span>
+| <span data-ttu-id="a3cc2-125">Имя</span><span class="sxs-lookup"><span data-stu-id="a3cc2-125">Name</span></span>      |<span data-ttu-id="a3cc2-126">Описание</span><span class="sxs-lookup"><span data-stu-id="a3cc2-126">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="1bab9-127">Авторизация</span><span class="sxs-lookup"><span data-stu-id="1bab9-127">Authorization</span></span> | <span data-ttu-id="1bab9-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1bab9-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a3cc2-127">Авторизация</span><span class="sxs-lookup"><span data-stu-id="a3cc2-127">Authorization</span></span> | <span data-ttu-id="a3cc2-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a3cc2-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1bab9-130">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="1bab9-130">Request body</span></span>
-<span data-ttu-id="1bab9-131">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="1bab9-131">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="1bab9-132">Ответ</span><span class="sxs-lookup"><span data-stu-id="1bab9-132">Response</span></span>
-<span data-ttu-id="1bab9-133">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Printer](../resources/printer.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="1bab9-133">If successful, this method returns a `200 OK` response code and a collection of [printer](../resources/printer.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="1bab9-134">Пример</span><span class="sxs-lookup"><span data-stu-id="1bab9-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="1bab9-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="1bab9-135">Request</span></span>
-<span data-ttu-id="1bab9-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1bab9-136">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a3cc2-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="a3cc2-130">Request body</span></span>
+<span data-ttu-id="a3cc2-131">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="a3cc2-131">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="a3cc2-132">Ответ</span><span class="sxs-lookup"><span data-stu-id="a3cc2-132">Response</span></span>
+<span data-ttu-id="a3cc2-133">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Printer](../resources/printer.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="a3cc2-133">If successful, this method returns a `200 OK` response code and a collection of [printer](../resources/printer.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="a3cc2-134">Пример</span><span class="sxs-lookup"><span data-stu-id="a3cc2-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="a3cc2-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="a3cc2-135">Request</span></span>
+<span data-ttu-id="a3cc2-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a3cc2-136">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="1bab9-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="1bab9-137">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a3cc2-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="a3cc2-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_printers"
@@ -63,23 +63,23 @@ GET /print/printers
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/printers
 ```
-# <a name="c"></a>[<span data-ttu-id="1bab9-138">C#</span><span class="sxs-lookup"><span data-stu-id="1bab9-138">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a3cc2-138">C#</span><span class="sxs-lookup"><span data-stu-id="a3cc2-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-printers-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="1bab9-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1bab9-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a3cc2-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a3cc2-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-printers-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="1bab9-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1bab9-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a3cc2-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a3cc2-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-printers-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="1bab9-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="1bab9-141">Response</span></span>
-<span data-ttu-id="1bab9-142">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="1bab9-142">The following is an example of the response.</span></span>
-><span data-ttu-id="1bab9-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1bab9-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="a3cc2-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="a3cc2-141">Response</span></span>
+<span data-ttu-id="a3cc2-142">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="a3cc2-142">The following is an example of the response.</span></span>
+><span data-ttu-id="a3cc2-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="a3cc2-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -102,7 +102,6 @@ Content-length: 1526
       "isShared": true,
       "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
       "acceptingJobs": true,
-      "registeredBy": {},
       "status": {
         "processingState": "stopped",
         "processingStateReasons": ["disconnected"],

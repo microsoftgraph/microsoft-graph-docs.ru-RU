@@ -28,7 +28,8 @@
           href: /graph/paging?context=graph/api/1.0
         - name: Использование параметров запроса
           href: /graph/query-parameters?context=graph/api/1.0
-        - name: Пакетные запросы
+        - name: Совмещение
+          displayName: Batch requests
           href: /graph/json-batching?context=graph/api/1.0
         - name: Регулирование
           href: /graph/throttling?context=graph/api/1.0
@@ -42,7 +43,7 @@
             - name: Отсутствие уведомлений в Outlook (предварительная версия)
               href: /graph/webhooks-outlook-authz?context=graph/api/1.0
         - name: Отслеживание изменений
-          displayname: 'Delta query, Outlook calendar, Groups, Outlook mail, Users'
+          displayname: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
           items:
             - name: Обзор
               href: /graph/delta-query-overview?context=graph/api/1.0
@@ -2140,7 +2141,7 @@
                 - name: Общая конфигурация Windows 10 для совместной работы
                   href: resources/intune-deviceconfig-windows10teamgeneralconfiguration.md
                   items:
-                    - name: Список
+                    - name: Перечисление
                       href: api/intune-deviceconfig-windows10teamgeneralconfiguration-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-windows10teamgeneralconfiguration-get.md
@@ -2153,7 +2154,7 @@
                 - name: Политика соответствия для Windows 8.1
                   href: resources/intune-deviceconfig-windows81compliancepolicy.md
                   items:
-                    - name: Перечисление
+                    - name: Список
                       href: api/intune-deviceconfig-windows81compliancepolicy-list.md
                     - name: Получение
                       href: api/intune-deviceconfig-windows81compliancepolicy-get.md
