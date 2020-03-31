@@ -5,16 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8687d16ad59829dc021fbb4313407d684aa89c0d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aa5b594930e3550fef89a3c25fd5fa434ca894f5
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437891"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062418"
 ---
 # <a name="list-policies"></a>Список политик
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,14 +28,14 @@ ms.locfileid: "42437891"
 |:--------------------------------------|:----------------------------------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Policy.Read.All |
+|Приложение                            | Policy.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /conditionalAccess/policies
+GET /identity/conditionalAccess/policies
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -46,7 +46,7 @@ GET /conditionalAccess/policies
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -69,7 +69,7 @@ GET /conditionalAccess/policies
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/conditionalAccess/policies?$filter=displayName eq 'SimplePolicy1' or displayName eq 'SimplePolicy2'
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/policies?$filter=displayName eq 'SimplePolicy1' or displayName eq 'SimplePolicy2'
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-policies-csharp-snippets.md)]

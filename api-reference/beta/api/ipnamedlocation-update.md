@@ -5,16 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 02bf3e4fd86662d551f0d403322d9877c0ed5ad0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 50ae9a0e1523a625b2deaf971e9031a1e2ea1bb1
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457323"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062279"
 ---
 # <a name="update-ipnamedlocation"></a>Обновление Ипнамедлокатион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "42457323"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /conditionalAccess/namedLocations/{id}
+PATCH /identity/conditionalAccess/namedLocations/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -53,7 +53,7 @@ PATCH /conditionalAccess/namedLocations/{id}
 |:-------------|:------------|:------------|
 |displayName|String|Удобное для человека имя расположения.|
 |ипранжес|Коллекция объектов [ipRange](../resources/iprange.md)|Список диапазонов IP-адресов в формате IPv4 CIDR (1.2.3.4/32) или любом допустимом формате IPv6 из IETF RFC5962.|
-|Доверять|Логический|Значение, `true` если это расположение явно доверенное.|
+|Доверять|Boolean|Значение, `true` если это расположение явно доверенное.|
 
 ## <a name="response"></a>Отклик
 
@@ -72,7 +72,7 @@ PATCH /conditionalAccess/namedLocations/{id}
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/conditionalAccess/namedLocations/0854951d-5fc0-4eb1-b392-9b2c9d7949c2
+PATCH https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations/0854951d-5fc0-4eb1-b392-9b2c9d7949c2
 Content-type: application/json
 
 {

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 1e0c9e97904df35c5d8383d77a1b37441a96abb5
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: c399e5e375ccd0890c2b8e31663d39d952467c09
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42948326"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062142"
 ---
 # <a name="list-printers"></a>Список принтеров
 
@@ -27,7 +27,7 @@ ms.locfileid: "42948326"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Users. Read. ALL |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|Не поддерживается.|
+|Приложение|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ GET /print/printers
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Printer](../resources/printer.md) в тексте отклика.
@@ -102,7 +102,6 @@ Content-length: 1526
       "isShared": true,
       "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
       "acceptingJobs": true,
-      "registeredBy": {},
       "status": {
         "processingState": "stopped",
         "processingStateReasons": ["disconnected"],

@@ -5,16 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d26ce5ad8b4584a3f289d8d1fae6c24b17619349
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6924dfd6cf01a12d423f02d9276d73271fba342f
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436155"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43061954"
 ---
 # <a name="get-countrynamedlocation"></a>Получение Каунтринамедлокатион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,14 +28,14 @@ ms.locfileid: "42436155"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy.Read.All |
+| Приложение                            | Policy.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /conditionalAccess/namedLocations/{id}
+GET /identity/conditionalAccess/namedLocations/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -69,7 +69,7 @@ GET /conditionalAccess/namedLocations/{id}
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/conditionalAccess/namedLocations/1c4427fd-0885-4a3d-8b23-09a899ffa959
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations/1c4427fd-0885-4a3d-8b23-09a899ffa959
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-countrynamedlocation-csharp-snippets.md)]

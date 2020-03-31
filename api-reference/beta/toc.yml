@@ -28,7 +28,8 @@
           href: /graph/paging?context=graph/api/beta
         - name: Использование параметров запроса
           href: /graph/query-parameters?context=graph/api/beta
-        - name: Пакетные запросы
+        - name: Совмещение
+          displayName: Batch requests
           href: /graph/json-batching?context=graph/api/beta
         - name: Регулирование
           href: /graph/throttling?context=graph/api/beta
@@ -44,7 +45,7 @@
             - name: Уведомления с данными ресурсов (предварительная версия)
               href: /graph/webhooks-with-resource-data?context=graph/api/beta
         - name: Отслеживание изменений
-          displayname: 'Delta query, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD'
+          displayname: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD'
           items:
             - name: Обзор
               href: /graph/delta-query-overview?context=graph/api/beta
@@ -904,7 +905,7 @@
                       href: api/call-post-audioroutinggroups.md
                     - name: Получение
                       href: api/audioroutinggroup-get.md
-                    - name: Update
+                    - name: Обновление
                       href: api/audioroutinggroup-update.md
                     - name: Delete
                       href: api/audioroutinggroup-delete.md
@@ -984,7 +985,7 @@
                   href: api/bookingbusiness-post-bookingbusinesses.md
                 - name: Получение
                   href: api/bookingbusiness-get.md
-                - name: Update
+                - name: Обновление
                   href: api/bookingbusiness-update.md
                 - name: Delete
                   href: api/bookingbusiness-delete.md
@@ -1025,7 +1026,7 @@
                   href: api/bookingbusiness-post-customers.md
                 - name: Получение
                   href: api/bookingcustomer-get.md
-                - name: Update
+                - name: Обновление
                   href: api/bookingcustomer-update.md
                 - name: Delete
                   href: api/bookingcustomer-delete.md
@@ -1038,7 +1039,7 @@
                   href: api/bookingbusiness-post-services.md
                 - name: Получение
                   href: api/bookingservice-get.md
-                - name: Update
+                - name: Обновление
                   href: api/bookingservice-update.md
                 - name: Delete
                   href: api/bookingservice-delete.md
@@ -1051,7 +1052,7 @@
                   href: api/bookingbusiness-post-staffmembers.md
                 - name: Получение
                   href: api/bookingstaffmember-get.md
-                - name: Update
+                - name: Обновление
                   href: api/bookingstaffmember-update.md
                 - name: Delete
                   href: api/bookingstaffmember-delete.md
@@ -3411,7 +3412,7 @@
                   items:
                     - name: Получение
                       href: api/intune-deviceconfig-devicecompliancedeviceoverview-get.md
-                    - name: Update
+                    - name: Обновление
                       href: api/intune-deviceconfig-devicecompliancedeviceoverview-update.md
                 - name: 'Состояние устройств, касающееся соответствия устройств требованиям'
                   href: resources/intune-deviceconfig-devicecompliancedevicestatus.md

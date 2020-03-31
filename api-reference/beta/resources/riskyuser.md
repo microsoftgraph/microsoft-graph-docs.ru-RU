@@ -5,22 +5,22 @@ author: cloudhandler
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5cb1087323287f3c8e752810b1c37365c8268a19
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7759a9c42ca9178dc95266ffa4630ef891832ecd
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521063"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062639"
 ---
 # <a name="riskyuser-resource-type"></a>Тип ресурса Рискюсер
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет пользователей Azure AD, которые находятся под угрозой. Azure AD постоянно оценивает риск пользователя на основе различных сигналов и машинного обучения. Этот API предоставляет программный доступ ко всем пользователям с рисками в Azure AD.
 
-Для получения дополнительных сведений о событиях риска обратитесь к разделу [Защита удостоверений Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/).
+Для получения дополнительных сведений о событиях риска обратитесь к разделу [Защита удостоверений Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/).
 
 >**Примечание:** Для использования API riskyUsers требуется лицензия Azure AD Premium P2.
 
@@ -49,14 +49,13 @@ ms.locfileid: "42521063"
 |`userDisplayName`|`string`|Опасное отображаемое имя пользователя|
 |`userPrincipalName`|`string`|Рискованное имя участника пользователя|
 
-## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
-|:---------------|:--------|:----------|
-|лист|Коллекция [рискюсерхисторитем](riskyuserhistoryitem.md)|Представляет историю риска пользователя Azure AD, определенная службой защиты удостоверений Azure AD. |
+## <a name="relationships"></a>Отношения
 
-## <a name="json-representation"></a>Представление JSON
+Отсутствуют.
 
-Ниже представлено описание ресурса в формате JSON.
+## <a name="json-representation"></a>Представление в формате JSON
+
+Ниже указано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",

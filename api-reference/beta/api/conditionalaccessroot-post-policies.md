@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e49181cffed3b8217822ab7e80ebcae0508a885b
-ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
+ms.openlocfilehash: 859c4ef3f6dab28b708946e3251ecb27dba84f3b
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42926731"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062366"
 ---
 # <a name="create-conditionalaccesspolicy"></a>Создание Кондитионалакцессполици
 
@@ -38,7 +38,7 @@ ms.locfileid: "42926731"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /conditionalAccess/policies
+POST /identity/conditionalAccess/policies
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -48,7 +48,7 @@ POST /conditionalAccess/policies
 | Авторизация | Bearer {токен}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
 В тексте запроса добавьте представление объекта [кондитионалакцессполици](../resources/conditionalaccesspolicy.md) в формате JSON.
 
@@ -75,7 +75,7 @@ POST /conditionalAccess/policies
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/conditionalAccess/policies
+POST https://graph.microsoft.com/beta/identity/conditionalAccess/policies
 Content-type: application/json
 
 {
@@ -205,7 +205,7 @@ Content-type: application/json
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/conditionalAccess/policies
+POST https://graph.microsoft.com/beta/identity/conditionalAccess/policies
 Content-type: application/json
 
 {
@@ -320,7 +320,7 @@ Content-type: application/json
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/conditionalAccess/policies
+POST https://graph.microsoft.com/beta/identity/conditionalAccess/policies
 Content-type: application/json
 
 {

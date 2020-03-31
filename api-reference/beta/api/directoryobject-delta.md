@@ -5,20 +5,20 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 96b3597be4a9027d1aa787f76ee52e39aa5f1107
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f2b6b5d1e3ee8d92627320c88e5589cface41350
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42434977"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062023"
 ---
 # <a name="directoryobject-delta"></a>directoryObject: Delta
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение новых, обновленных или удаленных объектов каталога для следующих типов: [User](../resources/user.md), [Group](../resources/group.md) и [Contact Contact](../resources/orgcontact.md)в едином разностном запросе. Дополнительные сведения см. в статье [Отслеживание изменений](/graph/delta-query-overview).
+Получение новых, обновленных или удаленных объектов каталога для следующих типов: [User](../resources/user.md), [Group](../resources/group.md) и [Contact Contact](../resources/orgcontact.md)в едином разностном запросе. Подробные сведения можно найти в разделе [Отслеживание изменений](/graph/delta-query-overview) .
 
 ## <a name="permissions"></a>Разрешения
 

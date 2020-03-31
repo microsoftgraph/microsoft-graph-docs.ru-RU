@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 8a23bbd8eddd055cb7177f0b3f9c3348ab1054f2
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: 7b4a9a0b74969877ca1336facda8e63462919b6b
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42948122"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062128"
 ---
 # <a name="update-printconnector"></a>Обновление Принтконнектор
 
@@ -29,7 +29,7 @@ ms.locfileid: "42948122"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Users. Read. ALL |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|Не поддерживается.|
+|Приложение|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +51,7 @@ PATCH /print/connectors/{id}
 |fullyQualifiedDomainName|String|Имя узла для соединителя.|
 |operatingSystem|String|Версия операционной системы на соединителе компьютера.|
 |аппверсион|String|Версия соединителя.|
-|location|[принтерлокатион](../resources/printerlocation.md)|Физическое и/или организационное расположение соединителя.|
+|расположение;|[принтерлокатион](../resources/printerlocation.md)|Физическое и/или организационное расположение соединителя.|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [принтконнектор](../resources/printConnector.md) в тексте отклика.
@@ -143,8 +143,7 @@ Content-length: 406
         "Red West"
     ],
     "stateOrProvince": "Washington"
-  },
-  "registeredBy": {}
+  }
 }
 ```
 

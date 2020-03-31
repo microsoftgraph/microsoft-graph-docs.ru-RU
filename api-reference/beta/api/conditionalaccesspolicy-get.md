@@ -5,16 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 660ad2f45ba91173863ff7ab158b6478983fe349
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f3f55bf81988d492d0dc065cd513f453cfdb08f1
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42437996"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062492"
 ---
 # <a name="get-conditionalaccesspolicy"></a>Получение Кондитионалакцессполици
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,14 +28,14 @@ ms.locfileid: "42437996"
 |:--------------------------------------|:----------------------------------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Policy.Read.All |
+|Приложение                            | Policy.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /conditionalAccess/policies/{id}
+GET /identity/conditionalAccess/policies/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -46,7 +46,7 @@ GET /conditionalAccess/policies/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -69,7 +69,7 @@ GET /conditionalAccess/policies/{id}
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/conditionalAccess/policies/{id}
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/policies/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-conditionalaccesspolicy-csharp-snippets.md)]

@@ -1,18 +1,18 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 3508d341e888c325a981d46611dcbc4920a8e8da
-ms.sourcegitcommit: 62507617292d5ad8598e83a8a253c986d9bac787
+ms.openlocfilehash: b540f24a739817190c1328c46a85b03628720e36
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "37936752"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062486"
 ---
 ```objc
 
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/conditionalAccess/policies/{id}"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/identity/conditionalAccess/policies/{id}"]]];
 [urlRequest setHTTPMethod:@"GET"];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 

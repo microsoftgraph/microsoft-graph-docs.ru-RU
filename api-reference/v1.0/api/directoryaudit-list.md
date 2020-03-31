@@ -5,18 +5,18 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 15d48ae22ca838af2c1fd6d09b4bc2b4eac68ae6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8543663094d914069d2dfef7e34247d91dd2646f
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518023"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062037"
 ---
 # <a name="list-directoryaudits"></a>Перечисление directoryAudits
 
 Пространство имен: microsoft.graph
 
-Получение списка журналов аудита, созданных Azure Active Directory. К ним относятся журналы аудита, созданные различными службами в Azure AD, в том числе Управление пользователями, приложениями, устройствами и группами, управление правами на доступ к данным, обзоры доступа, условия использования, защиту удостоверений, управление паролями (самостоятельная служба и администратор Сброс паролей) и самостоятельное управление группами и т. д.
+Получение списка журналов аудита, созданных Azure Active Directory. К ним относятся журналы аудита, созданные различными службами в Azure AD, в том числе Управление пользователями, приложениями, устройствами и группами, управление правами на доступ к данным, проверки доступа, условия использования, защиту учетных записей, управление паролями (сброс паролей самообслуживания и администратора) и самостоятельное управление группами и т. д.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -57,7 +57,7 @@ GET /auditLogs/directoryaudits
 | initiatedBy/user/displayName                                 | eq                  |
 | initiatedBy/user/userPrincipalName                           | eq, startswith      |
 | initiatedBy/app/appId                                        | eq                  |
-| initiatedBy/app/appDisplayName                               | eq                  |
+| Инитиатедби/App/displayName                                  | eq                  |
 | Таржетресаурцес/Any (t: t/ID EQ ' {значение} ')                    | eq                  |
 | Таржетресаурцес/Any (t: t/displayName EQ ' {значение} ')            | eq                  |
 | Таржетресаурцес/Any (x: StartsWith (x/displayName, ' {значение} ')) | startswith          |

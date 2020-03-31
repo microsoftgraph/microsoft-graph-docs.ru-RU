@@ -5,16 +5,16 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2e76c84d7a8b9aa093f78ca8328a703ac9f0e969
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 49ba8d1c9ce6f4217d0177141c76bbbbd8fbc27a
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436134"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062003"
 ---
 # <a name="update-countrynamedlocation"></a>Обновление Каунтринамедлокатион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "42436134"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /conditionalAccess/namedLocations/{id}
+PATCH /identity/conditionalAccess/namedLocations/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -53,7 +53,7 @@ PATCH /conditionalAccess/namedLocations/{id}
 |:-------------|:------------|:------------|
 |каунтриесандрегионс|Коллекция String|Список стран и/или регионов в формате из двух букв, заданных в стандарте ISO 3166-2.|
 |displayName|String|Удобное для человека имя расположения.|
-|инклудеункновнкаунтриесандрегионс|Логический|Значение, `true` если IP-адреса, которые не сопоставляются со страной или регионом, должны быть включены в именованное расположение.|
+|инклудеункновнкаунтриесандрегионс|Boolean|Значение, `true` если IP-адреса, которые не сопоставляются со страной или регионом, должны быть включены в именованное расположение.|
 
 ## <a name="response"></a>Отклик
 
@@ -72,7 +72,7 @@ PATCH /conditionalAccess/namedLocations/{id}
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/conditionalAccess/namedLocations/1c4427fd-0885-4a3d-8b23-09a899ffa959
+PATCH https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations/1c4427fd-0885-4a3d-8b23-09a899ffa959
 Content-type: application/json
 
 {

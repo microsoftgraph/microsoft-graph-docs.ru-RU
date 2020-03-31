@@ -5,20 +5,20 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6aa1fb420eccdccfd25ad9fcc6b982e257f87d2c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 85b7afb4446303b9a009d5b4021ccd8215df37fd
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452015"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062072"
 ---
 # <a name="user-delta"></a>user: delta
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создавайте, обновляйте или удаляйте пользователей без необходимости полного чтения всей коллекции пользователей. Дополнительные сведения см. в статье [Отслеживание изменений](/graph/delta-query-overview).
+Создавайте, обновляйте или удаляйте пользователей без необходимости полного чтения всей коллекции пользователей. Подробные сведения можно найти в разделе [Отслеживание изменений](/graph/delta-query-overview) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "42452015"
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.  |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.  |
 |Для приложений | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -68,10 +68,10 @@ GET /users/delta
 | Content-Type  | application/json |
 | Prefer | return=minimal <br><br>Указание этого заголовка с запросом, использующим параметр `deltaLink`, приведет к возвращению только свойств объекта, измененных с момента последнего цикла. Необязательно. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции [user](../resources/user.md) в тексте отклика. Оклик также содержит URL-адрес `nextLink` или `deltaLink`.
 

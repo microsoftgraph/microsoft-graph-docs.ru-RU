@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 555d5fb7a758474bee6dded03dccc27763b05f63
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: eaf7b1a13b48a145a770cc94214846f69119b083
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42947869"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062100"
 ---
 # <a name="list-connectors"></a>Список соединителей
 
@@ -29,7 +29,7 @@ ms.locfileid: "42947869"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Users. Read. ALL |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|Не поддерживается.|
+|Приложение|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ GET /print/printers/{id}/connectors
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [принтконнектор](../resources/printconnector.md) в тексте отклика.
@@ -99,7 +99,6 @@ Content-length: 1373
         "lastConnectionTime": "2020-02-04T07:00:00.0000000"
       },
       "registeredDateTime": "2020-02-04T07:00:00.0000000",
-      "registeredBy": {},
       "location": {
         "latitude": 1.1,
         "longitude": 2.2,

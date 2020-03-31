@@ -5,12 +5,12 @@ author: davidmu1
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6377d80f923de289c90cbf56762f78bc303e3e22
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7ec2609c17259dcfb04e06aa115be0fe99e33c20
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42814598"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062065"
 ---
 # <a name="update-devicehealthscript"></a>Обновление Девицехеалсскрипт
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,9 +51,8 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор сценария работоспособности устройства|
+|id|Строка|Уникальный идентификатор сценария работоспособности устройства|
 |publisher|String|Имя издателя сценария работоспособности устройства|
-|version|String|Версия сценария работоспособности устройства|
 |displayName|Строка|Имя сценария работоспособности устройства|
 |description|String|Описание сценария работоспособности устройства|
 |детектионскриптконтент|Binary|Весь контент скрипта обнаружения PowerShell|
@@ -61,11 +60,9 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 |createdDateTime|DateTimeOffset|Метка времени создания сценария работоспособности устройства. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Метка времени изменения сценария работоспособности устройства. Это свойство доступно только для чтения.|
 |runAsAccount|[рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|Свойства enforcesignaturecheck|Логический|Указывает, нужно ли проверять подпись скрипта|
-|runAs32Bit|Логический|Указывает, следует ли выполнять скрипты PowerShell как 32-разрядные|
+|Свойства enforcesignaturecheck|Boolean|Указывает, нужно ли проверять подпись скрипта|
+|runAs32Bit|Boolean|Указывает, следует ли выполнять скрипты PowerShell как 32-разрядные|
 |roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для сценария работоспособности устройства|
-|исглобалскрипт|Логический|Определяет, является ли этот сценарий фирменным (Майкрософт). Специальные сценарии доступны только для чтения|
-|хигхеставаилаблеверсион|String|Самая высокая доступная версия для собственного сценария Майкрософт|
 
 
 
@@ -84,7 +81,6 @@ Content-length: 575
 {
   "@odata.type": "#microsoft.graph.deviceHealthScript",
   "publisher": "Publisher value",
-  "version": "Version value",
   "displayName": "Display Name value",
   "description": "Description value",
   "detectionScriptContent": "ZGV0ZWN0aW9uU2NyaXB0Q29udGVudA==",
@@ -94,10 +90,8 @@ Content-length: 575
   "runAs32Bit": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ],
-  "isGlobalScript": true,
-  "highestAvailableVersion": "Highest Available Version value"
-}
+  ]
+ }
 ```
 
 ### <a name="response"></a>Отклик

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c511598e200b7583b98e6fba1f7d07fa9f9d98dd
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: d23b016bb383903f35d370c9d4afb623518e5bfd
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42947729"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062098"
 ---
 # <a name="update-printer"></a>Обновление принтера
 
@@ -29,7 +29,7 @@ ms.locfileid: "42947729"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Users. Read. ALL |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|Не поддерживается.|
+|Приложение|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ PATCH /print/printers/{id}
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 В тексте запроса укажите значения для соответствующих полей [принтера](../resources/printer.md) , которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
 | Свойство     | Тип        | Описание |
@@ -111,7 +111,6 @@ Content-length: 1313
   "isShared": true,
   "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
   "acceptingJobs": true,
-  "registeredBy": {},
   "status": {
     "processingState": "idle",
     "processingStateReasons": [],

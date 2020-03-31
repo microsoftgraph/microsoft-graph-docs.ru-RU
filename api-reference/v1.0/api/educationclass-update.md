@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 4e6aba0c4d712febeee1273738a0c2cbd2bc2dff
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ce3dd12343574455c6afb55cf509fbfd2583b588
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517553"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062625"
 ---
 # <a name="update-educationclass-properties"></a>Обновление свойств educationclass
 
@@ -25,7 +25,7 @@ ms.locfileid: "42517553"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
-|Для приложений | EduRoster.ReadWrite.All | 
+|Приложение | EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -46,8 +46,10 @@ PATCH /education/classes/{id}
 |description|String| Описание курса.|
 |displayName|Строка| Название курса.|
 |mailNickname|String| Почтовый псевдоним для отправки электронных сообщений всем пользователям, если это возможно. |
-<!-- Please verify the revised description here. -->
-Свойство classCode типа String представляет собой код курса, используемый учебным заведением. Свойство externalId типа String представляет собой идентификатор курса из системы синхронизации. Свойство externalName типа String представляет собой название курса в системе синхронизации. Свойство externalSource типа String представляет собой способ создания курса. Возможные значения: `sis`, `manual`, `enum_sentinel`. |
+|classCode|String| Код класса, используемый учебным заведением.|
+|externalId|String| Идентификатор курса из системы синхронизации. |
+|externalName|String|Название курса в системе синхронизации.|
+|externalSource|string| Способ создания этого курса. Допустимые значения: `sis`, `manual`, `enum_sentinel`.|
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвратит код отклика `200 OK` и обновленный объект [educationClass](../resources/educationclass.md) в теле отклика.
@@ -108,11 +110,11 @@ Content-length: 224
   "description": "World History Level 1",
   "classCode": "301",
   "createdBy": {
-        "user": {
-          "displayName": "Susana Rocha",
-          "id": "14012",
-        }
-      },
+    "user": {
+      "displayName": "Susana Rocha",
+      "id": "14012"
+    }
+  },
   "displayName": "History - World History 1",
   "externalId": "301",
   "externalName": "World History Level 1",

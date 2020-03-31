@@ -5,18 +5,18 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e72d4f262f4d11d97e136e6c95d061184c330a87
-ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
+ms.openlocfilehash: daff06b3e0d8ab35a3041eea4dc96f9c169ef561
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "42986274"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062548"
 ---
 # <a name="orgcontact-delta"></a>orgContact: Delta
 
 Пространство имен: microsoft.graph
 
-Получите только что созданные, обновленные или удаленные организационные контакты, не требуя полного чтения всей коллекции. Дополнительные сведения см. в статье [Отслеживание изменений](/graph/delta-query-overview).
+Получите только что созданные, обновленные или удаленные организационные контакты, не требуя полного чтения всей коллекции. Подробные сведения можно найти в разделе [Отслеживание изменений](/graph/delta-query-overview) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -49,7 +49,7 @@ GET /contacts/delta
 | Параметр запроса      | Тип   |Описание|
 |:---------------|:--------|:----------|
 | $deltatoken | string | [Токен состояния](/graph/delta-query-overview) возвращается в `deltaLink` URL-адресе предыдущего вызова функции **Delta** для той же коллекции контактов Организации, что указывает на завершение этого круга отслеживания изменений. Сохраните и примените весь `deltaLink` URL-адрес, включая этот маркер, в первом запросе следующего цикла отслеживания изменений для этой коллекции.|
-| $skiptoken | string | [Маркер состояния](/graph/delta-query-overview) возвращается в `nextLink` URL-адресе предыдущего вызова функции **Delta** , указывая на то, что в коллекции контактов организации имеются дальнейшие изменения, которые необходимо отслеживать. |
+| $skiptoken | строка | [Маркер состояния](/graph/delta-query-overview) возвращается в `nextLink` URL-адресе предыдущего вызова функции **Delta** , указывая на то, что в коллекции контактов организации имеются дальнейшие изменения, которые необходимо отслеживать. |
 
 ### <a name="odata-query-parameters"></a>Параметры запросов OData
 
@@ -62,7 +62,7 @@ GET /contacts/delta
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Носитель &lt;токен&gt;. Обязательный.|
+| Авторизация  | Носитель &lt;токен&gt;. Обязательный.|
 | Prefer | return=minimal <br><br>Указание этого заголовка с запросом, использующим параметр `deltaLink`, приведет к возвращению только свойств объекта, измененных с момента последнего цикла. Необязательно. |
 
 ## <a name="request-body"></a>Текст запроса
