@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: e556f3691ca5cc152d58678a12827a053964dc90
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 36e3e84a0cb6d96545df9c97234c74305afbd6a1
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815826"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43061918"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -1255,7 +1255,7 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 * _Policy.Read.All_. Чтение политик инфраструктуры доверия в организации (`GET /beta/trustFramework/policies`)
 * _Policy.Read.All_. Чтение политик развертывания функций в организации (`GET /beta/directory/featureRolloutPolicies`)
 * _Policy.ReadWrite.ApplicationConfiguration. Чтение и запись политик настройки приложений в организации (`POST /beta/policies/tokenLifetimePolicies`)
-* _Policy.ReadWrite.ConditionalAccess_. Чтение и запись политик условного доступа в организации (`POST /beta/conditionalAccess/policies`)
+* _Policy.ReadWrite.ConditionalAccess_. Чтение и запись политик условного доступа в организации (`POST /beta/identity/conditionalAccess/policies`)
 * _Policy.ReadWrite.FeatureRollout_. Чтение и запись политик развертывания функций в организации (`POST /beta/directory/featureRolloutPolicies`)
 * _Policy.ReadWrite.TrustFramework_. Чтение и запись политик инфраструктуры доверия в организации (`POST /beta/trustFramework/policies`)
 
