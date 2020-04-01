@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: def5f50f2e247ce8d66f798b8ba300a4732f51fc
-ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
+ms.openlocfilehash: c3bd3331a9dacf3d2b2959f961a2e7f744d78898
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "42986116"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43061848"
 ---
 # <a name="create-group"></a>Создание группы
 
@@ -54,6 +54,7 @@ POST /groups
 | Свойство | Тип | Описание|
 |:---------------|:--------|:----------|
 | displayName | string | Имя, которое следует отобразить в адресной книге для группы. Обязательный. |
+| description | строка | Описание группы. Максимальная длина: 1024 символа. Необязательно. |
 | mailEnabled | boolean | Установите значение **true** для групп, поддерживающих почту. Обязательно. |
 | mailNickname | string | Почтовый псевдоним для группы. Обязательный. |
 | securityEnabled | boolean | Значение **true** для защищенных групп, включая группы Office 365. Обязательно. |

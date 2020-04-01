@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 5414537eadfd21de28d1e4b8d60613249a8991a0
-ms.sourcegitcommit: d93fcc2212491567f8322b1cc0c02d37829b6051
+ms.openlocfilehash: 3ee6c013ebb60ead77e2b1b8c043f0f7421048a2
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43034785"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062612"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -29,15 +29,15 @@ ms.locfileid: "43034785"
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 |:----------------|:------------|:-----------------------------------------|
-| Дополнение | Бета | Добавлена поддержка [разностных запросов для orgContact](/graph/api/orgcontact-delta.md??view=graph-rest-beta).|
-| Добавление | 1.0 | Добавлена поддержка [разностных запросов для orgContact](/graph/api/orgcontact-delta.md??view=graph-rest-1.0).|
+| Дополнение | Бета | Добавлена поддержка [разностных запросов для orgContact](/graph/api/orgcontact-delta?view=graph-rest-beta).|
+| Добавление | 1.0 | Добавлена поддержка [разностных запросов для orgContact](/graph/api/orgcontact-delta?view=graph-rest-1.0).|
 
 ### <a name="cloud-communications"></a>Облачные коммуникации
 
 | **Тип изменения** | **Версия** | **Описание** |
 |:---|:---|:---|
 |Дополнение|Бета|Добавлена функция [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality) в коллекции [вызовов](/graph/api/resources/call).|
-|Дополнение|Бета|Добавлено свойство **callChainId** к объекту [вызова](/graph/api/resources/call.md).|
+|Дополнение|Бета|Добавлено свойство **callChainId** к объекту [вызова](/graph/api/resources/call?view=graph-rest-beta).|
 |Добавление|Бета|Добавлены новые сложные типы:<br/>[teleconferenceDeviceQuality](/graph/api/resources/teleconferencedevicequality)<br/>[teleconferenceDeviceMediaQuality](/graph/api/resources/teleconferencedevicemediaquality)<br/>[teleconferenceDeviceAudioQuality](/graph/api/resources/teleconferencedeviceaudioquality)<br/>[teleconferenceDeviceVideoQuality](/graph/api/resources/teleconferencedevicevideoquality)<br/>[teleconferenceDeviceScreenSharingQuality](/graph/api/resources/teleconferencedevicescreensharingquality).|
 | Добавление | Бета | Добавлен метод [onlineMeeting: createOrGet](/graph/api/onlinemeeting-createorget).|
 | Добавление | Бета | Добавлено необязательное свойство **externalId**. |
@@ -114,6 +114,12 @@ ms.locfileid: "43034785"
 | Добавление | бета | Добавлен [API identitySecurityDefaultsEnforcementPolicy](/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-beta), который представляет политику параметров безопасности по умолчанию Azure Active Directory.|
 | Добавление | Бета | Добавлена поддержка `$top` и `$skiptoken` фильтров для обеспечения разбивки на страницы [Списка provisioningObjectSummary](/api-reference/beta/api/provisioningobjectsummary-list.md). |
 
+### <a name="identity-and-access-azure-ad--conditional-access"></a>Удостоверение и доступ (Azure AD) | Условный доступ
+
+| **Тип изменения** | **Версия** | **Описание**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Изменение | Бета | Обновлены API условного доступа для использования сегмента /identity/; например, /beta/identity/conditionalAccess/policies.|
+
 ### <a name="reports--office-365-usage-reports"></a>Отчеты | Отчеты об использовании Office 365
 
 | **Тип изменения** | **Версия** | **Описание**                  |
@@ -132,7 +138,8 @@ ms.locfileid: "43034785"
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Дополнение | бета | Добавлена поддержка ChannelMessage.Read.All в API для чтения [chatMessages](/graph/api/resources/chatmessage?view=graph-rest-beta) в каналах. |
+| Дополнение | Бета-версия | Добавлена поддержка ChannelMessage.Read.All в API для чтения [chatMessages](/graph/api/resources/chatmessage?view=graph-rest-beta) в каналах. |
+
 
 ### <a name="universal-print"></a>Универсальная печать
 
@@ -1459,7 +1466,7 @@ ms.locfileid: "43034785"
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | Добавлено свойство навигации **subscriptions** для объекта [driveItem](/graph/api/resources/driveItem?view=graph-rest-1.0) |
-| Дополнение        | Бета-версия        | Добавлено свойство **expirationDateTime** для типа DateTimeOffset [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta). |
+| Дополнение        | бета        | Добавлено свойство **expirationDateTime** для типа DateTimeOffset [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta). |
 | Дополнение        | бета        | Добавлено свойство **password** для строкового типа [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta). |
 
 ### <a name="financials-dynamics-365-business-central"></a>Финансовые показатели (Dynamics 365 Business Central)
@@ -2747,7 +2754,7 @@ ms.locfileid: "43034785"
 
 ## <a name="january-2018"></a>Январь 2018 г.
 
-### <a name="batch-requests"></a>Пакетные запросы
+### <a name="batching"></a>Пакетная обработка
 
 |Тип изменения|Версия|Описание|
 |:---|:---|:---|
@@ -3526,7 +3533,7 @@ ms.locfileid: "43034785"
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Изменение          | Бета        | Тип свойства roleMemberInfo объекта [scopedRoleMembership](/graph/api/resources/scopedrolemembership?view=graph-rest-beta) изменен на [identity](/graph/api/resources/identity?view=graph-rest-1.0). |
-| Изменение          | Бета        | Свойство навигации scopedAdministratorOf объекта [user](/graph/api/resources/user?view=graph-rest-beta) заменено на scopedRoleMemberOf. |
+| Изменение          | Бета-версия        | Свойство навигации scopedAdministratorOf объекта [user](/graph/api/resources/user?view=graph-rest-beta) заменено на scopedRoleMemberOf. |
 | Изменение          | Бета        | Свойство навигации scopedAdministrators объекта [administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-beta) заменено на scopedRoleMembers. |
 | Изменение          | Бета        | Свойство навигации scopedAdministrators объекта [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-beta) заменено на scopedMembers. |
 

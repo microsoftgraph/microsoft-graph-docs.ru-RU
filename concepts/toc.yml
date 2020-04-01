@@ -368,7 +368,8 @@ items:
             href: paging.md
           - name: Использование параметров запроса
             href: query-parameters.md
-          - name: Пакетные запросы
+          - name: Пакетная обработка
+            displayName: Batch requests
             href: json-batching.md
           - name: Регулирование
             href: throttling.md
@@ -384,7 +385,7 @@ items:
               - name: Уведомления с данными ресурсов (предварительная версия)
                 href: webhooks-with-resource-data.md
           - name: Отслеживание изменений
-            displayName: 'Delta query, Outlook calendar, Groups, Outlook mail, Users'
+            displayName: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
             items:
               - name: Обзор
                 href: delta-query-overview.md

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: ac261be0012cc4d76fc0c41a6389b30c3c05cc73
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 7a35c68acc3fd5d3d4f1750b9c3f2d80c3ed1985
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42894385"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43061925"
 ---
 # <a name="universal-print-api-overview"></a>Обзор API универсальной печати
 
@@ -69,4 +69,5 @@ ms.locfileid: "42894385"
 
 ## <a name="see-also"></a>См. также
 
-* Мы будем рады узнать ваше мнение об API универсальной печати через [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)!
+- [Что такое универсальная печать](https://docs.microsoft.com/universal-print/fundamentals/universal-print-whatis)
+- Мы будем рады узнать ваше мнение об API универсальной печати через [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests)!
