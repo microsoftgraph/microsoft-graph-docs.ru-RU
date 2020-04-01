@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: ebe9baf44acb273513bb8047740880ec04c205e5
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 60849d6d00dfb390eee9e2122e007194a9a28468
+ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892767"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062614"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -18,6 +18,18 @@ ms.locfileid: "42892767"
 > Функции в состоянии _предварительной версии_, в том числе API и средства, могут меняться без предварительного уведомления, а некоторые из них, возможно, никогда не будут повышены до общедоступного (GA) состояния. Не используйте функции предварительной версии в рабочих приложениях.
 
 ## <a name="march-2020-new-and-generally-available"></a>Март 2020: новый и общедоступный
+
+### <a name="change-notifications"></a>Уведомления об изменениях
+[Отслеживайте изменения](/graph/api/orgcontact-delta?view=graph-rest-1.0) в [контактах организации](/graph/api/resources/orgcontact?view=graph-rest-1.0).
+
+### <a name="cloud-communications"></a>Облачные коммуникации
+- Получите функцию маршрутизации вызовов и контекст входящих [вызовов](/graph/api/resources/call?view=graph-rest-1.0).
+- Приложение может [обновлять состояние записи](/graph/api/call-updaterecordingstatus?view=graph-rest-1.0) звонка.
+- Может указывать информацию о записи для [участника](/graph/api/resources/participant?view=graph-rest-1.0), в том числе инициатора и состояние записи.
+- Может определять как часть [participantInfo](/graph/api/resources/participantinfo?view=graph-rest-1.0) код страны и тип конечной точки (например, Skype для бизнеса или Skype для бизнеса VoIP) участника.
+
+### <a name="files"></a>Файлы
+[Удаленные элементы](/graph/api/resources/remoteitem?view=graph-rest-1.0), к которым пользователю предоставлен общий доступ, добавленные в хранилище OneDrive пользователя или возвращенные как результаты поиска, могут содержать метаданные для изображения или видео.
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 Используйте делегированное разрешение `User.ManageIdentities.All`, чтобы разрешить приложению считывать, обновлять и удалять удостоверения, связанные с учетной записью пользователя, к которой имеет доступ зарегистрированный пользователь. Используйте это разрешение на уровне приложения без зарегистрированного пользователя. Это позволяет приложению [определить](/graph/api/user-update?view=graph-rest-1.0), с помощью каких удостоверений пользователь может войти.
@@ -34,6 +46,8 @@ ms.locfileid: "42892767"
 ### <a name="cloud-communications"></a>Облачные коммуникации
 - Сторонние партнеры в области устройств видеоконференцсвязи (VTC) могут регистрировать и предоставлять сведения о качестве связи для своих устройств через бот Cloud Video Interop (CVI) с помощью функции [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality?view=graph-rest-beta). Качество связи определяется данными открытого типа о [звуке](/graph/api/resources/teleconferencedeviceaudioquality?view=graph-rest-beta), [видео](/graph/api/resources/teleconferencedevicevideoquality?view=graph-rest-beta) и [демонстрации экрана](/graph/api/resources/teleconferencedevicescreensharingquality?view=graph-rest-beta).
 - Для уникальной идентификации участников конференции или [звонка](/graph/api/resources/call?view=graph-rest-beta) от участника к участнику используйте свойство **callChainId**.
+- Используйте [createOrGet](/graph/api/onlinemeeting-createorget?view=graph-rest-beta), чтобы получить экземпляр [онлайн-собрания](/graph/api/resources/onlinemeeting?view=graph-rest-beta) с помощью внешнего настраиваемого идентификатора или создать его, если он не существует.
+- Используйте необязательный заголовок HTTP-запроса `Accept-Language`, чтобы [создать](/graph/api/application-post-onlinemeetings?view=graph-rest-beta) или [получить](/graph/api/onlinemeeting-get?view=graph-rest-beta) экземпляр онлайн-собрания. При успешном выполнении операции отображается содержимое свойства **joinInformation** на указанном языке и вариант локали.
 
 ### <a name="devices-and-apps"></a>Устройства и приложения
 Обновления Intune за [март](changelog.md#march-2020).
@@ -49,6 +63,11 @@ ms.locfileid: "42892767"
 
 ### <a name="teamwork"></a>Командная работа
 Используйте разрешение на уровне приложения `ChannelMessage.Read.All` для чтения экземпляров [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) в каналах без зарегистрированного пользователя.
+
+### <a name="universal-print"></a>Универсальная печать
+Появление [API универсальной печати](universal-print-concept-overview.md), позволяющего пользователям печатать в Интернете или из приложения. API позволяет ИТ-администраторам управлять доступом пользователей и групп к принтерам в облаке Microsoft 365, а также удаленным общим доступом к принтерам для поддерживания доступности, отслеживать состояние принтеров и создавать отчеты о заархивированных заданиях печати и использовании. 
+
+Обратите внимание, что с марта 2020 г. _служба_ универсальной печати доступна в закрытой предварительной версии. Дополнительные сведения об участии см. в статье [Представляем универсальную печать: облачное решение для печати](https://aka.ms/announcinguniversalprint).
 
 ## <a name="february-2020-new-and-generally-available"></a>2020 февраля: новая и общедоступная
 
