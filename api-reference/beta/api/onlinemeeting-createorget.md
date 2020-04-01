@@ -5,68 +5,68 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: abaa9f48af1884b2fbba60899a2ed8e52c76b42f
-ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
+ms.openlocfilehash: cf54ccf3f2ef0ef72682f42bbc2a781df65a69f6
+ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42962594"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43082386"
 ---
-# <a name="onlinemeeting-createorget"></a><span data-ttu-id="edb2e-104">Онлинемитинг: Креатеоржет</span><span class="sxs-lookup"><span data-stu-id="edb2e-104">onlineMeeting: createOrGet</span></span>
+# <a name="onlinemeeting-createorget"></a><span data-ttu-id="f71d3-104">Онлинемитинг: Креатеоржет</span><span class="sxs-lookup"><span data-stu-id="f71d3-104">onlineMeeting: createOrGet</span></span>
 
-<span data-ttu-id="edb2e-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="edb2e-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f71d3-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f71d3-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="edb2e-106">Создание объекта [онлинемитинг](../resources/onlinemeeting.md) с настраиваемым указанным внешним идентификатором.</span><span class="sxs-lookup"><span data-stu-id="edb2e-106">Create an [onlineMeeting](../resources/onlinemeeting.md) object with a custom specified external ID.</span></span> <span data-ttu-id="edb2e-107">Если внешний идентификатор уже существует, этот API возвратит объект [онлинемитинг](../resources/onlinemeeting.md) с этим внешним идентификатором.</span><span class="sxs-lookup"><span data-stu-id="edb2e-107">If the external ID already exists, this API will return the [onlineMeeting](../resources/onlinemeeting.md) object with that external ID.</span></span> 
+<span data-ttu-id="f71d3-106">Создание объекта [онлинемитинг](../resources/onlinemeeting.md) с настраиваемым указанным внешним идентификатором.</span><span class="sxs-lookup"><span data-stu-id="f71d3-106">Create an [onlineMeeting](../resources/onlinemeeting.md) object with a custom specified external ID.</span></span> <span data-ttu-id="f71d3-107">Если внешний идентификатор уже существует, этот API возвратит объект [онлинемитинг](../resources/onlinemeeting.md) с этим внешним идентификатором.</span><span class="sxs-lookup"><span data-stu-id="f71d3-107">If the external ID already exists, this API will return the [onlineMeeting](../resources/onlinemeeting.md) object with that external ID.</span></span> 
 
-> <span data-ttu-id="edb2e-108">**Примечание.** Собрание не отображается в календаре пользователя.</span><span class="sxs-lookup"><span data-stu-id="edb2e-108">**Note**: The meeting does not show on the user's calendar.</span></span>
+> <span data-ttu-id="f71d3-108">**Примечание.** Собрание не отображается в календаре пользователя.</span><span class="sxs-lookup"><span data-stu-id="f71d3-108">**Note**: The meeting does not show on the user's calendar.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="edb2e-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="edb2e-109">Permissions</span></span>
-<span data-ttu-id="edb2e-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="edb2e-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f71d3-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f71d3-109">Permissions</span></span>
+<span data-ttu-id="f71d3-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f71d3-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="edb2e-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="edb2e-112">Permission type</span></span>                        | <span data-ttu-id="edb2e-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="edb2e-113">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="f71d3-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f71d3-112">Permission type</span></span>                        | <span data-ttu-id="f71d3-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f71d3-113">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="edb2e-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="edb2e-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="edb2e-115">OnlineMeetings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="edb2e-115">OnlineMeetings.ReadWrite</span></span>                    |
-| <span data-ttu-id="edb2e-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="edb2e-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="edb2e-117">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="edb2e-117">Not Supported</span></span>                               |
-| <span data-ttu-id="edb2e-118">Приложение</span><span class="sxs-lookup"><span data-stu-id="edb2e-118">Application</span></span>                            | <span data-ttu-id="edb2e-119">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="edb2e-119">Not Supported</span></span>                |
+| <span data-ttu-id="f71d3-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f71d3-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="f71d3-115">OnlineMeetings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f71d3-115">OnlineMeetings.ReadWrite</span></span>                    |
+| <span data-ttu-id="f71d3-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f71d3-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f71d3-117">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="f71d3-117">Not Supported</span></span>                               |
+| <span data-ttu-id="f71d3-118">Приложение</span><span class="sxs-lookup"><span data-stu-id="f71d3-118">Application</span></span>                            | <span data-ttu-id="f71d3-119">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="f71d3-119">Not Supported</span></span>                |
 
-## <a name="http-request"></a><span data-ttu-id="edb2e-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="edb2e-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f71d3-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f71d3-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings/createOrGet
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="edb2e-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="edb2e-121">Request headers</span></span>
-| <span data-ttu-id="edb2e-122">Имя</span><span class="sxs-lookup"><span data-stu-id="edb2e-122">Name</span></span>          | <span data-ttu-id="edb2e-123">Описание</span><span class="sxs-lookup"><span data-stu-id="edb2e-123">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="f71d3-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f71d3-121">Request headers</span></span>
+| <span data-ttu-id="f71d3-122">Имя</span><span class="sxs-lookup"><span data-stu-id="f71d3-122">Name</span></span>          | <span data-ttu-id="f71d3-123">Описание</span><span class="sxs-lookup"><span data-stu-id="f71d3-123">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="edb2e-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="edb2e-124">Authorization</span></span> | <span data-ttu-id="edb2e-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="edb2e-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="edb2e-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="edb2e-127">Content-type</span></span>  | <span data-ttu-id="edb2e-p105">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="edb2e-p105">application/json. Required.</span></span> |
+| <span data-ttu-id="f71d3-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f71d3-124">Authorization</span></span> | <span data-ttu-id="f71d3-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f71d3-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f71d3-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f71d3-127">Content-type</span></span>  | <span data-ttu-id="f71d3-p105">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f71d3-p105">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="edb2e-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="edb2e-130">Request body</span></span>
-<span data-ttu-id="edb2e-131">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="edb2e-131">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f71d3-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f71d3-130">Request body</span></span>
+<span data-ttu-id="f71d3-131">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="f71d3-131">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="edb2e-132">Параметр</span><span class="sxs-lookup"><span data-stu-id="edb2e-132">Parameter</span></span>        | <span data-ttu-id="edb2e-133">Тип</span><span class="sxs-lookup"><span data-stu-id="edb2e-133">Type</span></span>                                     |<span data-ttu-id="edb2e-134">Описание</span><span class="sxs-lookup"><span data-stu-id="edb2e-134">Description</span></span>                                                                                                                                    |
+| <span data-ttu-id="f71d3-132">Параметр</span><span class="sxs-lookup"><span data-stu-id="f71d3-132">Parameter</span></span>        | <span data-ttu-id="f71d3-133">Тип</span><span class="sxs-lookup"><span data-stu-id="f71d3-133">Type</span></span>                                     |<span data-ttu-id="f71d3-134">Описание</span><span class="sxs-lookup"><span data-stu-id="f71d3-134">Description</span></span>                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:--------------------------------------------------------------------------|
-| <span data-ttu-id="edb2e-135">chatInfo</span><span class="sxs-lookup"><span data-stu-id="edb2e-135">chatInfo</span></span>         |[<span data-ttu-id="edb2e-136">chatInfo</span><span class="sxs-lookup"><span data-stu-id="edb2e-136">chatInfo</span></span>](../resources/chatinfo.md)                   |<span data-ttu-id="edb2e-137">Сведения о чате, связанные с этим собранием по сети.</span><span class="sxs-lookup"><span data-stu-id="edb2e-137">The chat information associated with this online meeting.</span></span>|
-| <span data-ttu-id="edb2e-138">endDateTime</span><span class="sxs-lookup"><span data-stu-id="edb2e-138">endDateTime</span></span>      | <span data-ttu-id="edb2e-139">DateTime</span><span class="sxs-lookup"><span data-stu-id="edb2e-139">DateTime</span></span>                                 | <span data-ttu-id="edb2e-140">Время окончания собрания в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="edb2e-140">The meeting end time in UTC.</span></span> |
-| <span data-ttu-id="edb2e-141">externalId</span><span class="sxs-lookup"><span data-stu-id="edb2e-141">externalId</span></span>       | <span data-ttu-id="edb2e-142">String</span><span class="sxs-lookup"><span data-stu-id="edb2e-142">String</span></span>                                   | <span data-ttu-id="edb2e-143">Внешний идентификатор.</span><span class="sxs-lookup"><span data-stu-id="edb2e-143">The external ID.</span></span> <span data-ttu-id="edb2e-144">Настраиваемый идентификатор.</span><span class="sxs-lookup"><span data-stu-id="edb2e-144">A custom ID.</span></span> <span data-ttu-id="edb2e-145">Потребоваться</span><span class="sxs-lookup"><span data-stu-id="edb2e-145">(Required)</span></span> |
-| <span data-ttu-id="edb2e-146">participants</span><span class="sxs-lookup"><span data-stu-id="edb2e-146">participants</span></span>     | [<span data-ttu-id="edb2e-147">митингпартиЦипантс</span><span class="sxs-lookup"><span data-stu-id="edb2e-147">meetingParticipants</span></span>](../resources/meetingparticipants.md)          | <span data-ttu-id="edb2e-148">Участники, связанные с собранием по сети.</span><span class="sxs-lookup"><span data-stu-id="edb2e-148">The participants associated with the online meeting.</span></span>  <span data-ttu-id="edb2e-149">Сюда входят Организатор и участники.</span><span class="sxs-lookup"><span data-stu-id="edb2e-149">This includes the organizer and the attendees.</span></span> |
-| <span data-ttu-id="edb2e-150">startDateTime</span><span class="sxs-lookup"><span data-stu-id="edb2e-150">startDateTime</span></span>    | <span data-ttu-id="edb2e-151">DateTime</span><span class="sxs-lookup"><span data-stu-id="edb2e-151">DateTime</span></span>                                 | <span data-ttu-id="edb2e-152">Время начала собрания в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="edb2e-152">The meeting start time in UTC.</span></span> |
-| <span data-ttu-id="edb2e-153">subject</span><span class="sxs-lookup"><span data-stu-id="edb2e-153">subject</span></span>          | <span data-ttu-id="edb2e-154">String</span><span class="sxs-lookup"><span data-stu-id="edb2e-154">String</span></span>                                   | <span data-ttu-id="edb2e-155">Тема собрания по сети.</span><span class="sxs-lookup"><span data-stu-id="edb2e-155">The subject of the online meeting.</span></span> |
+| <span data-ttu-id="f71d3-135">chatInfo</span><span class="sxs-lookup"><span data-stu-id="f71d3-135">chatInfo</span></span>         |[<span data-ttu-id="f71d3-136">chatInfo</span><span class="sxs-lookup"><span data-stu-id="f71d3-136">chatInfo</span></span>](../resources/chatinfo.md)                   |<span data-ttu-id="f71d3-137">Сведения о чате, связанные с этим собранием по сети.</span><span class="sxs-lookup"><span data-stu-id="f71d3-137">The chat information associated with this online meeting.</span></span>|
+| <span data-ttu-id="f71d3-138">endDateTime</span><span class="sxs-lookup"><span data-stu-id="f71d3-138">endDateTime</span></span>      | <span data-ttu-id="f71d3-139">DateTime</span><span class="sxs-lookup"><span data-stu-id="f71d3-139">DateTime</span></span>                                 | <span data-ttu-id="f71d3-140">Время окончания собрания в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="f71d3-140">The meeting end time in UTC.</span></span> |
+| <span data-ttu-id="f71d3-141">externalId</span><span class="sxs-lookup"><span data-stu-id="f71d3-141">externalId</span></span>       | <span data-ttu-id="f71d3-142">String</span><span class="sxs-lookup"><span data-stu-id="f71d3-142">String</span></span>                                   | <span data-ttu-id="f71d3-143">Внешний идентификатор.</span><span class="sxs-lookup"><span data-stu-id="f71d3-143">The external ID.</span></span> <span data-ttu-id="f71d3-144">Настраиваемый идентификатор.</span><span class="sxs-lookup"><span data-stu-id="f71d3-144">A custom ID.</span></span> <span data-ttu-id="f71d3-145">Потребоваться</span><span class="sxs-lookup"><span data-stu-id="f71d3-145">(Required)</span></span> |
+| <span data-ttu-id="f71d3-146">participants</span><span class="sxs-lookup"><span data-stu-id="f71d3-146">participants</span></span>     | [<span data-ttu-id="f71d3-147">митингпартиЦипантс</span><span class="sxs-lookup"><span data-stu-id="f71d3-147">meetingParticipants</span></span>](../resources/meetingparticipants.md)          | <span data-ttu-id="f71d3-148">Участники, связанные с собранием по сети.</span><span class="sxs-lookup"><span data-stu-id="f71d3-148">The participants associated with the online meeting.</span></span>  <span data-ttu-id="f71d3-149">Сюда входят Организатор и участники.</span><span class="sxs-lookup"><span data-stu-id="f71d3-149">This includes the organizer and the attendees.</span></span> |
+| <span data-ttu-id="f71d3-150">startDateTime</span><span class="sxs-lookup"><span data-stu-id="f71d3-150">startDateTime</span></span>    | <span data-ttu-id="f71d3-151">DateTime</span><span class="sxs-lookup"><span data-stu-id="f71d3-151">DateTime</span></span>                                 | <span data-ttu-id="f71d3-152">Время начала собрания в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="f71d3-152">The meeting start time in UTC.</span></span> |
+| <span data-ttu-id="f71d3-153">subject</span><span class="sxs-lookup"><span data-stu-id="f71d3-153">subject</span></span>          | <span data-ttu-id="f71d3-154">String</span><span class="sxs-lookup"><span data-stu-id="f71d3-154">String</span></span>                                   | <span data-ttu-id="f71d3-155">Тема собрания по сети.</span><span class="sxs-lookup"><span data-stu-id="f71d3-155">The subject of the online meeting.</span></span> |
 
-><span data-ttu-id="edb2e-156">**Примечание:** Если "startDateTime" и "endDateTime" не указаны, значения по умолчанию будут иметь значение даты и времени по умолчанию для системы.</span><span class="sxs-lookup"><span data-stu-id="edb2e-156">**Note:** If the 'startDateTime' and 'endDateTime' are not provided, the values will default to the datetime value that is default to the system.</span></span> <span data-ttu-id="edb2e-157">В C# это значение равно "01/01/0001"</span><span class="sxs-lookup"><span data-stu-id="edb2e-157">In C#, that value is  "01/01/0001"</span></span>
+><span data-ttu-id="f71d3-156">**Примечание:** Если "startDateTime" и "endDateTime" не указаны, значения по умолчанию будут иметь значение даты и времени по умолчанию для системы.</span><span class="sxs-lookup"><span data-stu-id="f71d3-156">**Note:** If the 'startDateTime' and 'endDateTime' are not provided, the values will default to the datetime value that is default to the system.</span></span> <span data-ttu-id="f71d3-157">В C# это значение равно "01/01/0001"</span><span class="sxs-lookup"><span data-stu-id="f71d3-157">In C#, that value is  "01/01/0001"</span></span>
 
-## <a name="response"></a><span data-ttu-id="edb2e-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="edb2e-158">Response</span></span>
-<span data-ttu-id="edb2e-159">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [onlineMeeting](../resources/onlinemeeting.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="edb2e-159">If successful, this method returns a `200 OK` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f71d3-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="f71d3-158">Response</span></span>
+<span data-ttu-id="f71d3-159">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [onlineMeeting](../resources/onlinemeeting.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="f71d3-159">If successful, this method returns a `200 OK` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="edb2e-160">Примеры</span><span class="sxs-lookup"><span data-stu-id="edb2e-160">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="f71d3-160">Примеры</span><span class="sxs-lookup"><span data-stu-id="f71d3-160">Examples</span></span>
 
-<span data-ttu-id="edb2e-161">В приведенном ниже примере показано, как создать или получить собрание по сети с внешним ИДЕНТИФИКАТОРом.</span><span class="sxs-lookup"><span data-stu-id="edb2e-161">The following example shows how to create or get an online meeting with an external ID.</span></span>
+<span data-ttu-id="f71d3-161">В приведенном ниже примере показано, как создать или получить собрание по сети с внешним ИДЕНТИФИКАТОРом.</span><span class="sxs-lookup"><span data-stu-id="f71d3-161">The following example shows how to create or get an online meeting with an external ID.</span></span>
 
-### <a name="request"></a><span data-ttu-id="edb2e-162">Запрос</span><span class="sxs-lookup"><span data-stu-id="edb2e-162">Request</span></span>
+### <a name="request"></a><span data-ttu-id="f71d3-162">Запрос</span><span class="sxs-lookup"><span data-stu-id="f71d3-162">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="edb2e-163">HTTP</span><span class="sxs-lookup"><span data-stu-id="edb2e-163">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f71d3-163">HTTP</span><span class="sxs-lookup"><span data-stu-id="f71d3-163">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-or-get-onlinemeeting"
@@ -108,10 +108,24 @@ Content-Type: application/json
   "subject":"Create a meeting with customId provided"
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="f71d3-164">C#</span><span class="sxs-lookup"><span data-stu-id="f71d3-164">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-or-get-onlinemeeting-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="edb2e-164">Отклик</span><span class="sxs-lookup"><span data-stu-id="edb2e-164">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="f71d3-165">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f71d3-165">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-or-get-onlinemeeting-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-><span data-ttu-id="edb2e-165">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="edb2e-165">**Note:** The response object shown here might be shortened for readability.</span></span> 
+# <a name="objective-c"></a>[<span data-ttu-id="f71d3-166">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f71d3-166">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-or-get-onlinemeeting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="f71d3-167">Отклик</span><span class="sxs-lookup"><span data-stu-id="f71d3-167">Response</span></span>
+
+><span data-ttu-id="f71d3-168">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="f71d3-168">**Note:** The response object shown here might be shortened for readability.</span></span> 
 
 <!-- {
   "blockType": "response",

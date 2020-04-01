@@ -1,40 +1,40 @@
 ---
 title: 'Call: Логтелеконференцедевицекуалити'
-description: Запись данных качества видеоконференций для видеоконференций.
+description: Запись в журнал данных о качестве устройств для видеоконференций.
 localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 664c86f7aee5d5e720f428b0f5ca502b0445c605
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ad5b5496d4d80428cace4617fd4295f48cb3932b
+ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42729988"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43082324"
 ---
-# <a name="call-logteleconferencedevicequality"></a><span data-ttu-id="809e0-103">Call: Логтелеконференцедевицекуалити</span><span class="sxs-lookup"><span data-stu-id="809e0-103">call: logTeleconferenceDeviceQuality</span></span>
+# <a name="call-logteleconferencedevicequality"></a><span data-ttu-id="cbefa-103">Call: Логтелеконференцедевицекуалити</span><span class="sxs-lookup"><span data-stu-id="cbefa-103">call: logTeleconferenceDeviceQuality</span></span>
 
-<span data-ttu-id="809e0-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="809e0-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="cbefa-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cbefa-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="809e0-105">Запись данных качества видеоконференций для видеоконференций.</span><span class="sxs-lookup"><span data-stu-id="809e0-105">Log video teleconferencing device quality data.</span></span>
+<span data-ttu-id="cbefa-105">Запись в журнал данных о качестве устройств для видеоконференций.</span><span class="sxs-lookup"><span data-stu-id="cbefa-105">Log video teleconferencing device quality data.</span></span>
 
-<span data-ttu-id="809e0-106">Bot-канал видеоконференций (КВИ) представляет устройства видеоконференций (VTC) и выступает в роли фонового агента для устройства VTC в конференц-связи.</span><span class="sxs-lookup"><span data-stu-id="809e0-106">The Cloud Video Interop (CVI) bot represents video teleconferencing (VTC) devices and acts as a back-to-back agent for a VTC device in a conference call.</span></span> <span data-ttu-id="809e0-107">Так как Кви Bot находится в центре инфраструктуры VTC и Microsoft Teams в качестве прокси-сервера VTC, у него есть два носителя.</span><span class="sxs-lookup"><span data-stu-id="809e0-107">Because a CVI bot is in the middle of the VTC and Microsoft Teams infrastructure as a VTC proxy, it has two media legs.</span></span> <span data-ttu-id="809e0-108">Одна из сторон является одной из сторон ленты Кви и Teams, например сервера конференц-связи Teams или клиента Teams.</span><span class="sxs-lookup"><span data-stu-id="809e0-108">One media leg is between the CVI bot and Teams infrastructure, such as Teams conference server or a Teams client.</span></span> <span data-ttu-id="809e0-109">Остальные стороны между носителями находятся между Кви Bot и устройством VTC.</span><span class="sxs-lookup"><span data-stu-id="809e0-109">The other media leg is between the CVI bot and the VTC device.</span></span> 
+<span data-ttu-id="cbefa-106">Bot-канал видеоконференций (КВИ) представляет устройства видеоконференций (VTC) и выступает в роли фонового агента для устройства VTC в конференц-связи.</span><span class="sxs-lookup"><span data-stu-id="cbefa-106">The Cloud Video Interop (CVI) bot represents video teleconferencing (VTC) devices and acts as a back-to-back agent for a VTC device in a conference call.</span></span> <span data-ttu-id="cbefa-107">Так как Кви Bot находится в центре инфраструктуры VTC и Microsoft Teams в качестве прокси-сервера VTC, у него есть два носителя.</span><span class="sxs-lookup"><span data-stu-id="cbefa-107">Because a CVI bot is in the middle of the VTC and Microsoft Teams infrastructure as a VTC proxy, it has two media legs.</span></span> <span data-ttu-id="cbefa-108">Одна из сторон является одной из сторон ленты Кви и Teams, например сервера конференц-связи Teams или клиента Teams.</span><span class="sxs-lookup"><span data-stu-id="cbefa-108">One media leg is between the CVI bot and Teams infrastructure, such as Teams conference server or a Teams client.</span></span> <span data-ttu-id="cbefa-109">Остальные стороны между носителями находятся между Кви Bot и устройством VTC.</span><span class="sxs-lookup"><span data-stu-id="cbefa-109">The other media leg is between the CVI bot and the VTC device.</span></span> 
 
-<span data-ttu-id="809e0-110">Сторонние партнеры владеют VTCом, а инфраструктура Teams не может получить доступ к данным о качестве стороннего абонента.</span><span class="sxs-lookup"><span data-stu-id="809e0-110">The third-party partners own the VTC media leg and the Teams infrastructure cannot access the quality data of the third-party call leg.</span></span>  <span data-ttu-id="809e0-111">Этот метод предназначен только для партнеров Кви для предоставления данных о качестве их качества мультимедиа.</span><span class="sxs-lookup"><span data-stu-id="809e0-111">This method is only for the CVI partners to provide their media quality data.</span></span>
+<span data-ttu-id="cbefa-110">Сторонние партнеры владеют VTCом, а инфраструктура Teams не может получить доступ к данным о качестве стороннего абонента.</span><span class="sxs-lookup"><span data-stu-id="cbefa-110">The third-party partners own the VTC media leg and the Teams infrastructure cannot access the quality data of the third-party call leg.</span></span>  <span data-ttu-id="cbefa-111">Этот метод предназначен только для партнеров Кви для предоставления данных о качестве их качества мультимедиа.</span><span class="sxs-lookup"><span data-stu-id="cbefa-111">This method is only for the CVI partners to provide their media quality data.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="809e0-112">Разрешения</span><span class="sxs-lookup"><span data-stu-id="809e0-112">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="cbefa-112">Разрешения</span><span class="sxs-lookup"><span data-stu-id="cbefa-112">Permissions</span></span>
 
-<span data-ttu-id="809e0-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="809e0-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="cbefa-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cbefa-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="809e0-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="809e0-115">Permission type</span></span>                        | <span data-ttu-id="809e0-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="809e0-116">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="cbefa-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="cbefa-115">Permission type</span></span>                        | <span data-ttu-id="cbefa-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="cbefa-116">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="809e0-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="809e0-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="809e0-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="809e0-118">Not supported.</span></span> |
-| <span data-ttu-id="809e0-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="809e0-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="809e0-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="809e0-120">Not supported.</span></span> |
-| <span data-ttu-id="809e0-121">Приложение</span><span class="sxs-lookup"><span data-stu-id="809e0-121">Application</span></span>                            | <span data-ttu-id="809e0-122">Calls.AccessMedia.All</span><span class="sxs-lookup"><span data-stu-id="809e0-122">Calls.AccessMedia.All</span></span> |
+| <span data-ttu-id="cbefa-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="cbefa-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="cbefa-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cbefa-118">Not supported.</span></span> |
+| <span data-ttu-id="cbefa-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="cbefa-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cbefa-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cbefa-120">Not supported.</span></span> |
+| <span data-ttu-id="cbefa-121">Для приложений</span><span class="sxs-lookup"><span data-stu-id="cbefa-121">Application</span></span>                            | <span data-ttu-id="cbefa-122">Calls.AccessMedia.All</span><span class="sxs-lookup"><span data-stu-id="cbefa-122">Calls.AccessMedia.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="809e0-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="809e0-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cbefa-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="cbefa-123">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -42,39 +42,39 @@ ms.locfileid: "42729988"
 POST /communications/calls/logTeleconferenceDeviceQuality
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="809e0-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="809e0-124">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="cbefa-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="cbefa-124">Request headers</span></span>
 
-| <span data-ttu-id="809e0-125">Имя</span><span class="sxs-lookup"><span data-stu-id="809e0-125">Name</span></span>          | <span data-ttu-id="809e0-126">Описание</span><span class="sxs-lookup"><span data-stu-id="809e0-126">Description</span></span>   |
+| <span data-ttu-id="cbefa-125">Имя</span><span class="sxs-lookup"><span data-stu-id="cbefa-125">Name</span></span>          | <span data-ttu-id="cbefa-126">Описание</span><span class="sxs-lookup"><span data-stu-id="cbefa-126">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="809e0-127">Авторизация</span><span class="sxs-lookup"><span data-stu-id="809e0-127">Authorization</span></span> | <span data-ttu-id="809e0-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="809e0-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="809e0-130">User — Agent</span><span class="sxs-lookup"><span data-stu-id="809e0-130">User-Agent</span></span>    | <span data-ttu-id="809e0-131">Описывает имя и версию вызывающего приложения.</span><span class="sxs-lookup"><span data-stu-id="809e0-131">Describes the name and version of the calling application.</span></span> <span data-ttu-id="809e0-132">Подробные сведения отображаются в Azure Information Protection Analytics.</span><span class="sxs-lookup"><span data-stu-id="809e0-132">Details will surface in Azure Information Protection Analytics.</span></span> <span data-ttu-id="809e0-133">Рекомендуемый формат — ApplicationName/Version.</span><span class="sxs-lookup"><span data-stu-id="809e0-133">Suggested format is ApplicationName/Version.</span></span> <span data-ttu-id="809e0-134">Обязательный элемент.</span><span class="sxs-lookup"><span data-stu-id="809e0-134">Required.</span></span>|
+| <span data-ttu-id="cbefa-127">Авторизация</span><span class="sxs-lookup"><span data-stu-id="cbefa-127">Authorization</span></span> | <span data-ttu-id="cbefa-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="cbefa-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="cbefa-130">User — Agent</span><span class="sxs-lookup"><span data-stu-id="cbefa-130">User-Agent</span></span>    | <span data-ttu-id="cbefa-131">Описывает имя и версию вызывающего приложения.</span><span class="sxs-lookup"><span data-stu-id="cbefa-131">Describes the name and version of the calling application.</span></span> <span data-ttu-id="cbefa-132">Подробные сведения отображаются в Azure Information Protection Analytics.</span><span class="sxs-lookup"><span data-stu-id="cbefa-132">Details will surface in Azure Information Protection Analytics.</span></span> <span data-ttu-id="cbefa-133">Рекомендуемый формат — ApplicationName/Version.</span><span class="sxs-lookup"><span data-stu-id="cbefa-133">Suggested format is ApplicationName/Version.</span></span> <span data-ttu-id="cbefa-134">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="cbefa-134">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="809e0-135">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="809e0-135">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="cbefa-135">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="cbefa-135">Request body</span></span>
 
-<span data-ttu-id="809e0-136">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="809e0-136">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="cbefa-136">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="cbefa-136">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="809e0-137">Параметр</span><span class="sxs-lookup"><span data-stu-id="809e0-137">Parameter</span></span>    | <span data-ttu-id="809e0-138">Тип</span><span class="sxs-lookup"><span data-stu-id="809e0-138">Type</span></span>        | <span data-ttu-id="809e0-139">Описание</span><span class="sxs-lookup"><span data-stu-id="809e0-139">Description</span></span> |
+| <span data-ttu-id="cbefa-137">Параметр</span><span class="sxs-lookup"><span data-stu-id="cbefa-137">Parameter</span></span>    | <span data-ttu-id="cbefa-138">Тип</span><span class="sxs-lookup"><span data-stu-id="cbefa-138">Type</span></span>        | <span data-ttu-id="cbefa-139">Описание</span><span class="sxs-lookup"><span data-stu-id="cbefa-139">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="809e0-140">отображения</span><span class="sxs-lookup"><span data-stu-id="809e0-140">quality</span></span>|[<span data-ttu-id="809e0-141">телеконференцедевицекуалити</span><span class="sxs-lookup"><span data-stu-id="809e0-141">teleconferenceDeviceQuality</span></span>](../resources/teleconferencedevicequality.md)|<span data-ttu-id="809e0-142">Данные о качестве VTCной стороны носителя.</span><span class="sxs-lookup"><span data-stu-id="809e0-142">Quality data of VTC media leg.</span></span>|
+|<span data-ttu-id="cbefa-140">отображения</span><span class="sxs-lookup"><span data-stu-id="cbefa-140">quality</span></span>|[<span data-ttu-id="cbefa-141">teleconferenceDeviceQuality</span><span class="sxs-lookup"><span data-stu-id="cbefa-141">teleconferenceDeviceQuality</span></span>](../resources/teleconferencedevicequality.md)|<span data-ttu-id="cbefa-142">Данные о качестве VTCной стороны носителя.</span><span class="sxs-lookup"><span data-stu-id="cbefa-142">Quality data of VTC media leg.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="809e0-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="809e0-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="cbefa-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="cbefa-143">Response</span></span>
 
-<span data-ttu-id="809e0-p106">При успешном выполнении этот метод возвращает код отклика `200 OK`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="809e0-p106">If successful, this method returns a `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="cbefa-p106">При успешном выполнении этот метод возвращает код отклика `200 OK`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="cbefa-p106">If successful, this method returns a `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="809e0-146">Примеры</span><span class="sxs-lookup"><span data-stu-id="809e0-146">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="cbefa-146">Примеры</span><span class="sxs-lookup"><span data-stu-id="cbefa-146">Examples</span></span>
 
-<span data-ttu-id="809e0-147">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="809e0-147">The following example shows how to call this API.</span></span>
+<span data-ttu-id="cbefa-147">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="cbefa-147">The following example shows how to call this API.</span></span>
 
-### <a name="request"></a><span data-ttu-id="809e0-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="809e0-148">Request</span></span>
+### <a name="request"></a><span data-ttu-id="cbefa-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="cbefa-148">Request</span></span>
 
-<span data-ttu-id="809e0-149">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="809e0-149">The following is an example of the request.</span></span>
+<span data-ttu-id="cbefa-149">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="cbefa-149">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "call_logteleconferencedevicequality"
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/app/calls/logTeleconferenceDeviceQuality
+POST https://graph.microsoft.com/beta/communications/calls/logTeleconferenceDeviceQuality
 Content-type: application/json
 
 {
@@ -163,9 +163,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="809e0-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="809e0-150">Response</span></span>
+### <a name="response"></a><span data-ttu-id="cbefa-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="cbefa-150">Response</span></span>
 
-<span data-ttu-id="809e0-151">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="809e0-151">The following is an example of the response.</span></span>
+<span data-ttu-id="cbefa-151">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="cbefa-151">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
