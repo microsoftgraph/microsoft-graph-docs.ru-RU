@@ -5,16 +5,18 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c6b9fc09f21dca5b12c4e46101183eb28233d168
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c79460c1098d6c4def65fcf53211e8583b868f6c
+ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517021"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43082359"
 ---
 # <a name="list-groups"></a>Список групп
 
-Пространство имен: microsoft.graph. Список всех групп в организации, в том числе групп Office 365. 
+Пространство имен: microsoft.graph
+
+Список всех групп в организации, в том числе групп Office 365. 
 
 Эта операция по умолчанию возвращает только подмножество свойств для каждой группы. Эти свойства по умолчанию указаны в разделе [Свойства](../resources/group.md#properties). Чтобы получить свойства, которые _не_ возвращаются по умолчанию, выполните операцию [GET](group-get.md) и укажите их в параметре `$select` запроса OData. Свойство **hasMembersWithLicenseErrors** является исключением и не возвращается в запросе `$select`.
 

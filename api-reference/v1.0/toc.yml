@@ -803,6 +803,8 @@
                   href: api/call-mute.md
                 - name: Обновление состояния записи
                   href: api/call-updaterecordingstatus.md
+                - name: Запись данных качества устройства видеотелеконференцией
+                  href: api/call-logteleconferencedevicequality.md
             - name: Собрание по сети
               href: resources/onlinemeeting.md
               items:
