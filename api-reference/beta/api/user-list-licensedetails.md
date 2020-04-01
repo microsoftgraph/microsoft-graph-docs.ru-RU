@@ -5,20 +5,20 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ea8887f3347a20df2f1a122460ac28bbf960fb53
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 48c2a6ce218b5e71fc58d5529f9301ba18265797
+ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451835"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43082415"
 ---
 # <a name="list-licensedetails"></a>Перечисление licenseDetails
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов licenseDetails.
+Получение списка объектов **licenseDetails** для корпоративных пользователей.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,7 +41,7 @@ GET /users/{id}/licenseDetails
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | &lt;Код носителя&gt;|
+| Авторизация  | &lt;Код носителя&gt;|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
