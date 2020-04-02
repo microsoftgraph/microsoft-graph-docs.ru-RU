@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 3ee6c013ebb60ead77e2b1b8c043f0f7421048a2
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 413496c585cdb13b77ddedab997eb64629572660
+ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062612"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43082334"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -17,6 +17,14 @@ ms.locfileid: "43062612"
 Дополнительные сведения об известных проблемах с API Microsoft Graph см. в статье [Известные проблемы](known-issues.md).
 
 ## <a name="march-2020"></a>Март 2020 г.
+
+### <a name="cloud-communications"></a>Облачные коммуникации
+
+| **Тип изменения** | **Версия** | **Описание** |
+|:---|:---|:---|
+|Дополнение|1.0|Добавлена функция [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality) в коллекции [вызовов](/graph/api/resources/call).|
+|Дополнение|1.0|Добавлено свойство **callChainId** к объекту [вызова](/graph/api/resources/call.md).|
+|Дополнение|1.0|Добавлены новые сложные типы:<br/>[teleconferenceDeviceQuality](/graph/api/resources/teleconferencedevicequality)<br/>[teleconferenceDeviceMediaQuality](/graph/api/resources/teleconferencedevicemediaquality)<br/>[teleconferenceDeviceAudioQuality](/graph/api/resources/teleconferencedeviceaudioquality)<br/>[teleconferenceDeviceVideoQuality](/graph/api/resources/teleconferencedevicevideoquality)<br/>[teleconferenceDeviceScreenSharingQuality](/graph/api/resources/teleconferencedevicescreensharingquality).|
 
 ### <a name="calendar"></a>Календарь
 
@@ -1682,7 +1690,7 @@ ms.locfileid: "43062612"
 | **Тип изменения** | **Версия** | **Описание**              |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | бета        | Представлен новый сложный тип [complianceInformation](/graph/api/complianceInformation/team?view=graph-rest-beta).|
-| Дополнение        | Бета        | Представлен новый сложный тип [certificationControl](/graph/api/certificationControl/team?view=graph-rest-beta).|
+| Дополнение        | бета        | Представлен новый сложный тип [certificationControl](/graph/api/certificationControl/team?view=graph-rest-beta).|
 
 ### <a name="teamwork-microsoft-teams"></a>Работа в команде (Microsoft Teams)
 
@@ -2066,7 +2074,7 @@ ms.locfileid: "43062612"
 |Дополнение|бета|Добавлено свойство **restrictedApps** для объекта [iosCompliancePolicy](/graph/api/resources/intune-deviceconfig-ioscompliancepolicy?view=graph-rest-beta)|
 |Дополнение|бета|Добавлены свойства **certificateStore** и **customSubjectAlternativeNames** для объекта [iosScepCertificateProfile](/graph/api/resources/intune-deviceconfig-iosscepcertificateprofile?view=graph-rest-beta)|
 |Дополнение|бета|Добавлено свойство **enforcedSoftwareUpdateDelayInDays** для объекта [iosUpdateConfiguration](/graph/api/resources/intune-deviceconfig-iosupdateconfiguration?view=graph-rest-beta)|
-|Дополнение|Бета|Добавлены свойства **providerType**, **userDomain**, **strictEnforcement**, **cloudName** и **excludeList** для объекта [iosVpnConfiguration](/graph/api/resources/intune-deviceconfig-iosvpnconfiguration?view=graph-rest-beta)|
+|Дополнение|бета|Добавлены свойства **providerType**, **userDomain**, **strictEnforcement**, **cloudName** и **excludeList** для объекта [iosVpnConfiguration](/graph/api/resources/intune-deviceconfig-iosvpnconfiguration?view=graph-rest-beta)|
 |Дополнение|бета|Добавлены свойства **safariBlockAutofill**, **cameraBlocked**, **iTunesBlockMusicService**, **spotlightBlockInternetResults**, **keyboardBlockDictation**, **definitionLookupBlocked**, **appleWatchBlockAutoUnlock**, **iTunesBlockFileSharing**, **iCloudBlockDocumentSync**, **iCloudBlockMail**, **iCloudBlockAddressBook**, **iCloudBlockCalendar**, **iCloudBlockReminders**, **iCloudBlockBookmarks**, **iCloudBlockNotes**, **airDropBlocked**, **passwordBlockModification** и **passwordBlockFingerprintUnlock** для объекта [macOSGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-macosgeneraldeviceconfiguration?view=graph-rest-beta)|
 |Дополнение|бета|Добавлены свойства **roleScopeTagIds**, **windowsActiveMalwareCount**, **windowsRemediatedMalwareCount**, **notes** и **configurationManagerClientHealthState** для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta)|
 |Дополнение|бета|Добавлено свойство **installStateDetail** для объекта [mobileAppInstallStatus](/graph/api/resources/intune-apps-mobileappinstallstatus?view=graph-rest-beta)|
@@ -3752,7 +3760,7 @@ ms.locfileid: "43062612"
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Изменение          | Бета        | Обновления API административных единиц будут предоставлены в бета-версиях. Первый набор изменений будет применен 3 мая 2017 г. Изменения включают в себя следующие переименования:<br />сложный тип - **roleMemberInfo** для объекта scopedRoleMembership теперь зовется **identity**;<br />свойство навигации - **scopedAdministratorOf** для объекта user теперь зовется **scopedRoleMemberOf**;<br />свойство навигации - **scopedAdministrators** для объекта administrativeUnit теперь зовется **scopedRoleMembers**;<br />свойство навигации - **scopedAdministrators** для объекта directoryRole теперь зовется **scopedMembers**. |
+| Изменение          | бета        | Обновления API административных единиц будут предоставлены в бета-версиях. Первый набор изменений будет применен 3 мая 2017 г. Изменения включают в себя следующие переименования:<br />сложный тип - **roleMemberInfo** для объекта scopedRoleMembership теперь зовется **identity**;<br />свойство навигации - **scopedAdministratorOf** для объекта user теперь зовется **scopedRoleMemberOf**;<br />свойство навигации - **scopedAdministrators** для объекта administrativeUnit теперь зовется **scopedRoleMembers**;<br />свойство навигации - **scopedAdministrators** для объекта directoryRole теперь зовется **scopedMembers**. |
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 
