@@ -2,63 +2,63 @@
 title: Получение руководителя
 description: Получение руководителя пользователя. Возвращает пользователя или контакт, назначенный в качестве руководителя пользователя.
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: fa902da0ce46243fad4697ed5e5549c9f6a2722e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c12a20015b9da46d47cc8798fbfc5b4a02e50a32
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451805"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107635"
 ---
-# <a name="list-manager"></a><span data-ttu-id="97126-104">Получение руководителя</span><span class="sxs-lookup"><span data-stu-id="97126-104">List manager</span></span>
+# <a name="list-manager"></a><span data-ttu-id="f483e-104">Получение руководителя</span><span class="sxs-lookup"><span data-stu-id="f483e-104">List manager</span></span>
 
-<span data-ttu-id="97126-105">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="97126-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f483e-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f483e-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="97126-106">Получение руководителя пользователя.</span><span class="sxs-lookup"><span data-stu-id="97126-106">Get user's manager.</span></span> <span data-ttu-id="97126-107">Возвращает пользователя или контакт, назначенный в качестве руководителя пользователя.</span><span class="sxs-lookup"><span data-stu-id="97126-107">Returns the user or contact assigned as the user's manager.</span></span>
-## <a name="permissions"></a><span data-ttu-id="97126-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="97126-108">Permissions</span></span>
-<span data-ttu-id="97126-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="97126-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f483e-106">Получение руководителя пользователя.</span><span class="sxs-lookup"><span data-stu-id="f483e-106">Get user's manager.</span></span> <span data-ttu-id="f483e-107">Возвращает пользователя или контакт, назначенный в качестве руководителя пользователя.</span><span class="sxs-lookup"><span data-stu-id="f483e-107">Returns the user or contact assigned as the user's manager.</span></span>
+## <a name="permissions"></a><span data-ttu-id="f483e-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f483e-108">Permissions</span></span>
+<span data-ttu-id="f483e-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f483e-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="97126-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="97126-111">Permission type</span></span>      | <span data-ttu-id="97126-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="97126-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f483e-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f483e-111">Permission type</span></span>      | <span data-ttu-id="f483e-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f483e-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="97126-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="97126-113">Delegated (work or school account)</span></span> | <span data-ttu-id="97126-114">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="97126-114">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="97126-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="97126-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="97126-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="97126-116">Not supported.</span></span>    |
-|<span data-ttu-id="97126-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="97126-117">Application</span></span> | <span data-ttu-id="97126-118">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="97126-118">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="f483e-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f483e-113">Delegated (work or school account)</span></span> | <span data-ttu-id="f483e-114">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="f483e-114">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="f483e-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f483e-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f483e-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f483e-116">Not supported.</span></span>    |
+|<span data-ttu-id="f483e-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f483e-117">Application</span></span> | <span data-ttu-id="f483e-118">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f483e-118">User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
-## <a name="http-request"></a><span data-ttu-id="97126-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="97126-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f483e-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f483e-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/manager
 GET /users/{id | userPrincipalName}/manager
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="97126-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="97126-120">Optional query parameters</span></span>
-<span data-ttu-id="97126-121">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="97126-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="97126-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="97126-122">Request headers</span></span>
-| <span data-ttu-id="97126-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="97126-123">Header</span></span>       | <span data-ttu-id="97126-124">Значение</span><span class="sxs-lookup"><span data-stu-id="97126-124">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="f483e-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="f483e-120">Optional query parameters</span></span>
+<span data-ttu-id="f483e-121">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="f483e-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f483e-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f483e-122">Request headers</span></span>
+| <span data-ttu-id="f483e-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="f483e-123">Header</span></span>       | <span data-ttu-id="f483e-124">Значение</span><span class="sxs-lookup"><span data-stu-id="f483e-124">Value</span></span>|
 |:-----------|:------|
-| <span data-ttu-id="97126-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="97126-125">Authorization</span></span>  | <span data-ttu-id="97126-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="97126-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="97126-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="97126-128">Content-Type</span></span>   | <span data-ttu-id="97126-129">application/json</span><span class="sxs-lookup"><span data-stu-id="97126-129">application/json</span></span>  |
+| <span data-ttu-id="f483e-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f483e-125">Authorization</span></span>  | <span data-ttu-id="f483e-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f483e-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="f483e-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f483e-128">Content-Type</span></span>   | <span data-ttu-id="f483e-129">application/json</span><span class="sxs-lookup"><span data-stu-id="f483e-129">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="97126-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="97126-130">Request body</span></span>
-<span data-ttu-id="97126-131">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="97126-131">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f483e-130">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="f483e-130">Request body</span></span>
+<span data-ttu-id="f483e-131">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="f483e-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="97126-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="97126-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f483e-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="f483e-132">Response</span></span>
 
-<span data-ttu-id="97126-133">В случае успеха этот метод возвращает код отклика `200 OK` и объект [directoryObject](../resources/directoryobject.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="97126-133">If successful, this method returns a `200 OK` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="97126-134">Пример</span><span class="sxs-lookup"><span data-stu-id="97126-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="97126-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="97126-135">Request</span></span>
-<span data-ttu-id="97126-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="97126-136">Here is an example of the request.</span></span>
+<span data-ttu-id="f483e-133">В случае успеха этот метод возвращает код отклика `200 OK` и объект [directoryObject](../resources/directoryobject.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="f483e-133">If successful, this method returns a `200 OK` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="f483e-134">Пример</span><span class="sxs-lookup"><span data-stu-id="f483e-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="f483e-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="f483e-135">Request</span></span>
+<span data-ttu-id="f483e-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f483e-136">Here is an example of the request.</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/manager
 ```
-##### <a name="response"></a><span data-ttu-id="97126-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="97126-137">Response</span></span>
-<span data-ttu-id="97126-138">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="97126-138">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="f483e-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="f483e-137">Response</span></span>
+<span data-ttu-id="f483e-138">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="f483e-138">Here is an example of the response.</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
