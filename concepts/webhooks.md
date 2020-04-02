@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 4833bb30239e5ea30022617c2cf5adfa8b2d0544
-ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
+ms.openlocfilehash: fda8f362d3554f535012bc058ae4a0c7d5ddcfc7
+ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "42986163"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43082352"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Настройка уведомлений об изменениях в пользовательских данных
 
@@ -73,6 +73,8 @@ API Microsoft Graph использует механизм веб-перехва�
 - Клиенты Azure AD B2C не поддерживаются.
 
 - Уведомления для сущностей пользователей не поддерживаются для личных учетных записей Майкрософт.
+
+- В подписках пользователей существует [известная проблема](graph/concepts/known-issues#change-notifications).
 
 ### <a name="outlook-resource-limitations"></a>Ограничения ресурсов Outlook
 

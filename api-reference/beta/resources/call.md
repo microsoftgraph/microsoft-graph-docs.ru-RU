@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 20536e700a471aae159cc8db7b6cb1aa084a0624
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fb0767e0dab914f63051524ba6ce2860ae577d6b
+ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799506"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43082345"
 ---
 # <a name="call-resource-type"></a>Тип ресурса call
 
@@ -66,6 +66,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | [ChangeScreenSharingRole](../api/call-changescreensharingrole.md)  | Нет                                                        | Начало и прекращение демонстрации экрана в звонке.                                      |
 | **Запись операций**                                           |                                                             |                                              |
 | [UpdateRecordingStatus](../api/call-updaterecordingstatus.md)      | [updateRecordingStatusOperation](updateRecordingStatusOperation.md)               | Обновление состояния записи.                      |
+| **Операции ведения журнала**                                           |                                                             |                                              |
 | [Запись в журнал данных о качестве устройств](../api/call-logteleconferencedevicequality.md)| [teleconferenceDeviceQuality](teleconferencedevicequality.md) | Запись в журнал данных о качестве устройств для видеоконференций.|
 
 ## <a name="properties"></a>Свойства

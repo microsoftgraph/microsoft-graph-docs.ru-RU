@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph. Сведения о последних обновлениях см. в журнале изменений Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: a76dc8ee7b7253a792d7722a9f8455f40581c023
-ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
+ms.openlocfilehash: 743245f7f64ce0a3b31ca2f3dfadfb4b22d629aa
+ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42926675"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43082338"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -81,6 +81,12 @@ GET /me/calendars/{id}/events
 В настоящее время свойство **onlineMeetingUrl** ресурса [event](/graph/api/resources/event?view=graph-rest-1.0) для собрания Skype означает URL-адрес для собрания по сети. Однако для ресурса event собрания в Microsoft Teams задано значение NULL.
 
 В бета-версии предлагается обходное решение, позволяющее использовать свойство **onlineMeetingProvider** ресурса [event](/graph/api/resources/event?view=graph-rest-beta) с целью убедиться, что поставщиком является Microsoft Teams. С помощью свойства **onlineMeeting** ресурса **event** вы можете получить доступ к объекту **joinUrl**.
+
+## <a name="change-notifications"></a>Уведомления об изменениях
+
+### <a name="additional-notifications-for-users"></a>Дополнительные изменения для пользователей
+
+В [подписки](/graph/api/resources/subscription) на изменения для **пользователей** с параметром **changeType**, имеющим значение **updated**, также будут поступать уведомления **changeType**: **updated** при создании и удалении пользователей.
 
 ## <a name="cloud-communications"></a>Облачные коммуникации 
 
