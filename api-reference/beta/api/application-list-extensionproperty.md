@@ -2,19 +2,19 @@
 title: Список Екстенсионпропертиес
 description: Получение списка объектов екстенсионпроперти.
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4affac01ce4f0ff3ea3d4a6428c3ecc1e20ec591
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fccabed52311a14c898af2ba9c2b219e91d1dbdc
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441517"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107180"
 ---
 # <a name="list-extensionproperties"></a>Список Екстенсионпропертиес
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +48,7 @@ GET /applications/{id}/extensionProperties
 |:-----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

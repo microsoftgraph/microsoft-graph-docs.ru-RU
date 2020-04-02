@@ -6,16 +6,16 @@ title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: fb6f3c92972255dc459263da1bb161de22e3f5b7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8a5d4c8f45baaa980e2c8bc3f32c348182b13bc1
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42505569"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43109056"
 ---
 # <a name="driveitem-resource-type"></a>Тип ресурса driveItem
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -196,6 +196,8 @@ URL-адрес будет доступен в течение короткого 
 | [Копирование элемента](../api/driveitem-copy.md)                    | `POST /drive/items/{item-id}/copy`
 | [Поиск элементов](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
 | [Перечисление изменений на диске](../api/driveitem-delta.md)     | `GET /drive/root/delta`
+| [Отслеживание элемента](../api/driveitem-follow.md)                | `POST /drives/{drive-id}/items/{item-id}/follow`
+| [Отмена отслеживания элемента](../api/driveitem-unfollow.md)            | `POST /drives/{drive-id}/items/{item-id}/unfollow`
 | [Перечисление эскизов](../api/driveitem-list-thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
 | [Создание ссылки совместного доступа](../api/driveitem-createlink.md)    | `POST /drive/items/{item-id}/createLink`
 | [Добавление разрешений](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
@@ -222,7 +224,7 @@ URL-адрес будет доступен в течение короткого 
 [folder]: folder.md
 [получение предыдущих версий]: ../api/driveitem-list-versions.md
 [получение эскизов]: ../api/driveitem-list-thumbnails.md
-[getWebSocket]: ../api/driveitem-subscriptions-socketio.md
+[getWebSocket]: ../api/subscriptions-socketio.md
 [identitySet]: identityset.md
 [image]: image.md
 [itemActivity]: itemactivity.md

@@ -2,19 +2,19 @@
 title: 'Пользователь: Експортперсоналдата'
 description: Передает запрос операции политики данных, сделанный администратором компании для экспорта данных пользователя организации.
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 9b453899973f9a296d333abb62e48093412f0b93
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: afd5ba023d78fa969936915bb28187bb5fd17f1f
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451989"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107880"
 ---
 # <a name="user-exportpersonaldata"></a>Пользователь: Експортперсоналдата
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Отправка запроса операции политики данных, направленного администратором компании для экспорта данных пользователя организации.
 
@@ -24,7 +24,7 @@ ms.locfileid: "42451989"
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  User. Export. ALL и User. Read. ALL  |
-|Делегированные (личная учетная запись Майкрософт) |  Неприменимо  |
+|Делегированное (личная учетная запись Майкрософт) |  Неприменимо  |
 |Для приложений | User. Export. ALL и User. Read. ALL |
 
 >**Примечание:** Экспорт может выполняться только администратором компании при использовании делегированного разрешения.
@@ -40,7 +40,7 @@ POST /users/{id}/exportPersonalData
 |:---------------|:----------|
 | Authorization  | Bearer {token}|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание |

@@ -1,20 +1,20 @@
 ---
 title: Список Скопедадминистратороф
 description: Получение списка Scopedrolemembership изменен для пользователя.
-author: dkershaw10
+author: krbain
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 0303425884d3ae7b622c5e20a7ed1909feb99850
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 48b8412b8646cb6daa9d802bd48a966e7d12c58a
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451772"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107579"
 ---
 # <a name="list-scopedadministratorof"></a>Список Скопедадминистратороф
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,7 +44,7 @@ GET /users/{id}/scopedAdministratorOf
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

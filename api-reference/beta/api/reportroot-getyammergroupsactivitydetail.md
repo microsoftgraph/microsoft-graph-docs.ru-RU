@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: af2af01363a18ef5158a3c178ee2a1c1a2f7f333
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 19d62a35688d25ed265cb3cb5c3284be2e5b9f2e
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42590321"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108209"
 ---
 # <a name="reportroot-getyammergroupsactivitydetail"></a>reportRoot: getYammerGroupsActivityDetail
 
@@ -83,7 +83,8 @@ CSV-файл содержит столбцы со следующими заго�
 - Posted Count (количество опубликованных сообщений)
 - Read Count (количество прочитанных сообщений)
 - Liked Count (количество понравившихся сообщений)
-- Report Period (отчетный период)
+- Сетевое отображаемое имя
+- "Report Period" (Отчетный период).
 
 ### <a name="json"></a>JSON
 
@@ -136,7 +137,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Activity Date,Group Type,Office 365 Connected,Member Count,Posted Count,Read Count,Liked Count,Report Period
+Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Activity Date,Group Type,Office 365 Connected,Member Count,Posted Count,Read Count,Liked Count,Network Display Name,Report Period
 ```
 
 ### <a name="json"></a>JSON
@@ -189,7 +190,8 @@ Content-Length: 441
       "memberCount": 176, 
       "postedCount": 15, 
       "readCount": 24, 
-      "likedCount": 3, 
+      "likedCount": 3,
+      "networkDisplayName": "networkDisplayName-value",
       "reportPeriod": "7"
     }
   ]

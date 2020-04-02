@@ -1,20 +1,20 @@
 ---
 title: Удаление пользователя — API Microsoft Graph
 description: Описан метод удаления ресурса (объекта) user из API Microsoft Graph (REST).
-author: dkershaw10
+author: krbain
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 11ff422af53a841d37e6cefe5eaed96b4ecb66d1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2eb2a971ebca944c11379d0250fb89786a80fa4c
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452003"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107908"
 ---
 # <a name="delete-a-user"></a>Удалить пользователя
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

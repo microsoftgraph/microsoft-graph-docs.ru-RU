@@ -6,16 +6,16 @@ title: List
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: a7e59cf2e81371428e3816acc6e89c4a102ca40e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 861e3c0b90c68ebf7a4a554e94097f790182727e
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522962"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43109049"
 ---
 # <a name="list-resource"></a>Ресурс List
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +48,7 @@ ms.locfileid: "42522962"
 [Удаление элемента списка]: ../api/listitem-delete.md
 [Создание элемента в списке]: ../api/listitem-create.md
 [Получение последних действий]: ../api/activities-list.md
-[Получение канала WebSocket]: ../api/driveitem-subscriptions-socketio.md
+[Получение канала WebSocket]: ../api/subscriptions-socketio.md
 
 ## <a name="json-representation"></a>Представление в формате JSON
 

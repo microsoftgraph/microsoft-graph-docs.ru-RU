@@ -2,15 +2,15 @@
 title: 'user: findRooms'
 description: 'Получение всех помещений для собраний в клиенте пользователя или определенном списке помещений. '
 localization_priority: Priority
-author: angelgolfer-ms
-ms.prod: microsoft-identity-platform
+author: vrod9429
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c3621b59e619d9152519926525edacdc1086ccbf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2688645faa99e6ff2d25cf4e3536d0b2948ae1b6
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451975"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107859"
 ---
 # <a name="user-findrooms"></a>user: findRooms
 

@@ -1,20 +1,20 @@
 ---
 title: Создание пользователя
 description: Создание пользователя.
-author: dkershaw10
+author: krbain
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 9f95d1b2264e6a09b8ab2a33345d09ba00e62604
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4329429d0927b2d97fb606891870d850b4807b93
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451674"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107411"
 ---
 # <a name="create-user"></a>Создание пользователя
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,7 +54,7 @@ POST /users
 
 | Параметр | Тип | Описание|
 |:---------------|:--------|:----------|
-|accountEnabled |Логический |Значение true, если учетная запись включена; в противном случае — false.|
+|accountEnabled |Boolean |Значение true, если учетная запись включена; в противном случае — false.|
 |displayName |строка |Имя, которое следует отобразить в адресной книге для пользователя.|
 |onPremisesImmutableId |string |Необходимо указывать только при создании учетной записи пользователя, если вы используете федеративный домен для свойства userPrincipalName (UPN) этого пользователя.|
 |mailNickname |string |Почтовый псевдоним для пользователя.|

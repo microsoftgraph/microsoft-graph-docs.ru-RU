@@ -1,20 +1,20 @@
 ---
 title: 'Пользователь: служебное invalidateallrefreshtokens'
-description: Делает недействительными все маркеры обновления пользователя, выданные приложениям (а также файлам cookie сеанса в браузере пользователя), путем сброса свойства пользователя **refreshtokensvalidfromdatetime и указывая** к текущей дате и времени. Как правило, эта операция выполняется (пользователем или администратором), если пользователь имеет утерянное или украденное устройство.  Эта операция запрещает доступ к данным в Организации, доступ к которым осуществляется через приложения на устройстве, без необходимости первого входа пользователя в систему. В действительности эта операция приведет к принудительному входу пользователя в систему для всех приложений, для которых они ранее были отправлены, независимо от устройства.
+description: Делает недействительными все маркеры обновления пользователя, выданные приложениям и файлам cookie сеанса в браузере пользователя.
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 6f6eae0438acecf204b2b3076522548cf4035a43
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 37b6ecb26a6141ff3ac9d49c67f2911e6c84c749
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451933"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107789"
 ---
 # <a name="user-invalidateallrefreshtokens"></a>Пользователь: служебное invalidateallrefreshtokens
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +39,7 @@ POST /users/{id | userPrincipalName}/invalidateAllRefreshTokens
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В этой операции нет содержимого запроса.
 
 ## <a name="response"></a>Отклик

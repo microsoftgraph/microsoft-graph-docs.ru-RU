@@ -1,16 +1,16 @@
 ---
 title: Список приложений
 description: Получение списка приложений в организации.
-author: davidmu1
+author: sureshja
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 410fcf0984858f0f70fd910449af221ac8af1b4c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2655cfe15589d7df22fb4c41339696e8a6266fa5
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441496"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107187"
 ---
 # <a name="list-applications"></a>Список приложений
 

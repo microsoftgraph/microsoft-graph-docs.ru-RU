@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0764a7a4e5ca7845033f5f31a440ec183528da4d
-ms.sourcegitcommit: 115890bc7e7a54db8a2befeb8f720a9ca94f42b5
+ms.openlocfilehash: 4f5878c85adc65b5ec2ff0b71d1ceda6e28fb7ca
+ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42962319"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43082114"
 ---
 # <a name="call-resource-type"></a>Тип ресурса call
 
@@ -57,12 +57,15 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | [ChangeScreenSharingRole](../api/call-changescreensharingrole.md)  | Нет                                                        | Начало и прекращение демонстрации экрана в звонке.                                      |
 | **Запись операций**                                           |                                                             |                                              |
 | [UpdateRecordingStatus](../api/call-updaterecordingstatus.md)      | [updateRecordingStatusOperation](updateRecordingStatusOperation.md)               | Обновление состояния записи.                      |
+| **Операции ведения журнала**                                           |                                                             |                                              |
+| [Запись в журнал данных о качестве устройств](../api/call-logteleconferencedevicequality.md)| [teleconferenceDeviceQuality](teleconferencedevicequality.md) | Запись в журнал данных о качестве устройств для видеоконференций.|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство            | Тип                                                                                                   | Описание                                                                                                                                                                                         |
 | :------------------ | :------------------------------------------------------------------------------------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | callbackUri         | String                                                                                                 | URL-адрес обратного вызова, на который направляются обратные вызовы. Должно быть задано значение `https`.                                                                                                                               |
+| callChainId         | String                                                                                                 | Уникальный идентификатор всех звонков участника конференции или уникальный идентификатор двух звонков участника в звонке P2P.  Необходимо скопировать из `Microsoft.Graph.Call.CallChainId`. |
 | callRoutes         | Коллекция [callRoute](callRoute.md)                                                                                                 | Сведения маршрутизации о том, как был перенаправлен вызов. Только для чтения.                                                                                                                |
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | Сведения о чате. Сведения, необходимые для присоединения к собранию.                                                                                                                              |
 | direction           | String                                                                                                 | Направление вызова. Возможные значения: `incoming` или `outgoing`. Только для чтения.                                                                                            |
@@ -94,6 +97,7 @@ incomingContext            | [incomingContext](incomingContext.md)              
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+    "callChainId",
     "chatInfo",
     "direction",
     "id",
@@ -115,6 +119,7 @@ incomingContext            | [incomingContext](incomingContext.md)              
 ```json
 {
   "callbackUri": "String",
+  "callChainId": "String",
   "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
   "direction": "incoming | outgoing",
   "id": "String (identifier)",

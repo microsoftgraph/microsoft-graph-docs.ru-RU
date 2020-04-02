@@ -2,19 +2,19 @@
 title: Получение Аппликатионсигниндетаиледсуммари
 description: Получение свойств и связей объекта Аппликатионсигниндетаилсуммари.
 localization_priority: Normal
-author: davidmu1
+author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f0a086ba83b82fbfd0a0ae5c9f5d702abb0ef0aa
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a18a2742c49db6a57bf5a710c3f7d5563c329393
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441419"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107014"
 ---
 # <a name="get-applicationsignindetailedsummary"></a>Получение Аппликатионсигниндетаиледсуммари
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,7 +26,7 @@ ms.locfileid: "42441419"
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | Report. Read. ALL |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос

@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса user
 description: Представляет учетную запись пользователя Azure AD. Наследуется от directoryObject.
-author: dkershaw10
+author: krbain
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 38c82eff5d079651f0fbdaebfa3cf0bd1fbc2328
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cd430b633629726ebb46e43aa0c0048a5f107b93
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519563"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108440"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -18,7 +18,7 @@ ms.locfileid: "42519563"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет учетную запись пользователя для Azure AD. Наследуется от [directoryObject](directoryobject.md).
+Представляет учетную запись пользователя Azure AD. Наследуется от [directoryObject](directoryobject.md).
 
 Чтобы повысить производительность, операции [create](../api/user-post-users.md), [get](../api/user-get.md) и [list](../api/user-list.md) возвращают только подмножество часто используемых свойств по умолчанию. Эти свойства по умолчанию указаны в разделе [Свойства](#properties). Чтобы получить любые свойства, которые не возвращаются по умолчанию, укажите их в параметре запроса OData `$select`.
 

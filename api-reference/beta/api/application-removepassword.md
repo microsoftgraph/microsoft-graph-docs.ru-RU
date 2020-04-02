@@ -2,19 +2,19 @@
 title: 'Приложение: Ремовепассворд'
 description: Удаление пароля из приложения
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bac7ed6bd5ee15cd917c8467d3b12ef696bbdf51
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c39e9849c8e1120cf9b9867c9f5c03310ad41831
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441447"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107040"
 ---
 # <a name="application-removepassword"></a>Приложение: Ремовепассворд
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,20 +1,20 @@
 ---
 title: 'user: reminderView'
 description: 'Возвращает список напоминаний календаря за указанный период времени. '
-author: dkershaw10
+author: harini84
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fb947dd0b7e08167b109d1a38baa537b74015f37
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4b349e499c975032fe0ea54910d05ca64ee19f4b
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451660"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107397"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -50,7 +50,7 @@ GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-val
 | Content-Type   | application/json |
 | Prefer | {Часовой пояс}. Необязательный. Если параметр не указан, по умолчанию используется формат UTC.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

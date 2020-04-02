@@ -2,15 +2,15 @@
 title: 'user: delta'
 description: Создавайте, обновляйте или удаляйте пользователей без необходимости полного чтения всей коллекции пользователей.
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 85b7afb4446303b9a009d5b4021ccd8215df37fd
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 9856ab64f7af09a0c920fe044737f063c1385a58
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062072"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107922"
 ---
 # <a name="user-delta"></a>user: delta
 
@@ -18,7 +18,7 @@ ms.locfileid: "43062072"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создавайте, обновляйте или удаляйте пользователей без необходимости полного чтения всей коллекции пользователей. Подробные сведения можно найти в разделе [Отслеживание изменений](/graph/delta-query-overview) .
+Создавайте, обновляйте или удаляйте пользователей без необходимости полного чтения всей коллекции пользователей. Дополнительные сведения см. в статье [Отслеживание изменений](/graph/delta-query-overview).
 
 ## <a name="permissions"></a>Разрешения
 

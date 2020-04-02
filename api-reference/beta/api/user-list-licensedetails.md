@@ -1,16 +1,16 @@
 ---
 title: Перечисление licenseDetails
 description: Получение списка объектов licenseDetails.
-author: dkershaw10
+author: krbain
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 48c2a6ce218b5e71fc58d5529f9301ba18265797
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: 967aff8006b5c40db059d8531cc943fd0458b7d2
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082415"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43107656"
 ---
 # <a name="list-licensedetails"></a>Перечисление licenseDetails
 
@@ -41,9 +41,9 @@ GET /users/{id}/licenseDetails
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | &lt;Код носителя&gt;|
+| Authorization  | &lt;Код носителя&gt;|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
