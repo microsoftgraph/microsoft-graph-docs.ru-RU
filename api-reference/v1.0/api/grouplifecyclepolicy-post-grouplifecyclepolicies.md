@@ -1,60 +1,60 @@
 ---
 title: Создание groupLifecyclePolicy
 description: Создает объект groupLifecyclePolicy.
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 390e170f306cb28d0b676efe4933ba204b23e16f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0067b503439bae1bb1cf4b7d943efbeaca2d5f16
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516867"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124723"
 ---
-# <a name="create-grouplifecyclepolicy"></a><span data-ttu-id="539d1-103">Создание groupLifecyclePolicy</span><span class="sxs-lookup"><span data-stu-id="539d1-103">Create groupLifecyclePolicy</span></span>
+# <a name="create-grouplifecyclepolicy"></a><span data-ttu-id="d2e0c-103">Создание groupLifecyclePolicy</span><span class="sxs-lookup"><span data-stu-id="d2e0c-103">Create groupLifecyclePolicy</span></span>
 
-<span data-ttu-id="539d1-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="539d1-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d2e0c-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d2e0c-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="539d1-105">Создает объект [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).</span><span class="sxs-lookup"><span data-stu-id="539d1-105">Creates a new [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).</span></span>
+<span data-ttu-id="d2e0c-105">Создает объект [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).</span><span class="sxs-lookup"><span data-stu-id="d2e0c-105">Creates a new [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="539d1-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="539d1-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="d2e0c-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d2e0c-106">Permissions</span></span>
 
-<span data-ttu-id="539d1-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="539d1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d2e0c-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d2e0c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="539d1-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="539d1-109">Permission type</span></span>      | <span data-ttu-id="539d1-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="539d1-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d2e0c-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d2e0c-109">Permission type</span></span>      | <span data-ttu-id="d2e0c-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d2e0c-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="539d1-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="539d1-111">Delegated (work or school account)</span></span> | <span data-ttu-id="539d1-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="539d1-112">Directory.ReadWrite.All</span></span>    |
-|<span data-ttu-id="539d1-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="539d1-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="539d1-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="539d1-114">Not supported.</span></span>    |
-|<span data-ttu-id="539d1-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="539d1-115">Application</span></span> | <span data-ttu-id="539d1-116">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="539d1-116">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="d2e0c-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d2e0c-111">Delegated (work or school account)</span></span> | <span data-ttu-id="d2e0c-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d2e0c-112">Directory.ReadWrite.All</span></span>    |
+|<span data-ttu-id="d2e0c-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d2e0c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d2e0c-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d2e0c-114">Not supported.</span></span>    |
+|<span data-ttu-id="d2e0c-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d2e0c-115">Application</span></span> | <span data-ttu-id="d2e0c-116">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d2e0c-116">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="539d1-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="539d1-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d2e0c-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d2e0c-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groupLifecyclePolicies
 
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="539d1-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="539d1-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d2e0c-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d2e0c-118">Request headers</span></span>
 
-| <span data-ttu-id="539d1-119">Имя</span><span class="sxs-lookup"><span data-stu-id="539d1-119">Name</span></span> | <span data-ttu-id="539d1-120">Описание</span><span class="sxs-lookup"><span data-stu-id="539d1-120">Description</span></span> |
+| <span data-ttu-id="d2e0c-119">Имя</span><span class="sxs-lookup"><span data-stu-id="d2e0c-119">Name</span></span> | <span data-ttu-id="d2e0c-120">Описание</span><span class="sxs-lookup"><span data-stu-id="d2e0c-120">Description</span></span> |
 |:---------------|:----------|
-| <span data-ttu-id="539d1-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="539d1-121">Authorization</span></span> | <span data-ttu-id="539d1-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="539d1-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="539d1-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="539d1-124">Content-Type</span></span>  | <span data-ttu-id="539d1-125">application/json</span><span class="sxs-lookup"><span data-stu-id="539d1-125">application/json</span></span> |
+| <span data-ttu-id="d2e0c-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="d2e0c-121">Authorization</span></span> | <span data-ttu-id="d2e0c-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d2e0c-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d2e0c-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="d2e0c-124">Content-Type</span></span>  | <span data-ttu-id="d2e0c-125">application/json</span><span class="sxs-lookup"><span data-stu-id="d2e0c-125">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="539d1-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="539d1-126">Request body</span></span>
-<span data-ttu-id="539d1-127">В теле запроса предоставьте описание объекта [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="539d1-127">In the request body, supply a JSON representation of [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d2e0c-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="d2e0c-126">Request body</span></span>
+<span data-ttu-id="d2e0c-127">В теле запроса предоставьте описание объекта [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d2e0c-127">In the request body, supply a JSON representation of [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="539d1-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="539d1-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d2e0c-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="d2e0c-128">Response</span></span>
 
-<span data-ttu-id="539d1-129">При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="539d1-129">If successful, this method returns `201 Created` response code and [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) object in the response body.</span></span>
+<span data-ttu-id="d2e0c-129">При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="d2e0c-129">If successful, this method returns `201 Created` response code and [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="539d1-130">Пример</span><span class="sxs-lookup"><span data-stu-id="539d1-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d2e0c-130">Пример</span><span class="sxs-lookup"><span data-stu-id="d2e0c-130">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="539d1-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="539d1-131">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="d2e0c-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="d2e0c-131">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="539d1-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="539d1-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="d2e0c-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="d2e0c-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_grouplifecyclepolicy_from_group"
@@ -70,28 +70,28 @@ Content-length: 125
   "alternateNotificationEmails": "admin@contoso.com"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="539d1-133">C#</span><span class="sxs-lookup"><span data-stu-id="539d1-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="d2e0c-133">C#</span><span class="sxs-lookup"><span data-stu-id="d2e0c-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-grouplifecyclepolicy-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="539d1-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="539d1-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="d2e0c-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d2e0c-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-grouplifecyclepolicy-from-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="539d1-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="539d1-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="d2e0c-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d2e0c-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-grouplifecyclepolicy-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="539d1-136">Java</span><span class="sxs-lookup"><span data-stu-id="539d1-136">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="d2e0c-136">Java</span><span class="sxs-lookup"><span data-stu-id="d2e0c-136">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-grouplifecyclepolicy-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="539d1-137">В теле запроса предоставьте описание объекта [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="539d1-137">In the request body, supply a JSON representation of [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="539d1-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="539d1-138">Response</span></span>
+<span data-ttu-id="d2e0c-137">В теле запроса предоставьте описание объекта [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d2e0c-137">In the request body, supply a JSON representation of [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="d2e0c-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="d2e0c-138">Response</span></span>
 
-<span data-ttu-id="539d1-p103">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="539d1-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="d2e0c-p103">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d2e0c-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -2,68 +2,68 @@
 title: 'groupLifecyclePolicy: Реневграуп'
 description: Обновляет срок действия группы. Когда группа обновляется, срок ее действия продляется на количество дней, определенное политикой.
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2c1328778c9b2feba197fd403e9821da2f64872d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 09776750c3c3bba64b81c75ee0f32af395a3f6b1
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446587"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123953"
 ---
-# <a name="grouplifecyclepolicy-renewgroup"></a><span data-ttu-id="f9d44-104">groupLifecyclePolicy: Реневграуп</span><span class="sxs-lookup"><span data-stu-id="f9d44-104">groupLifecyclePolicy: renewGroup</span></span>
+# <a name="grouplifecyclepolicy-renewgroup"></a><span data-ttu-id="f80ca-104">groupLifecyclePolicy: Реневграуп</span><span class="sxs-lookup"><span data-stu-id="f80ca-104">groupLifecyclePolicy: renewGroup</span></span>
 
-<span data-ttu-id="f9d44-105">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="f9d44-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f80ca-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f80ca-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f9d44-106">Обновляет срок действия группы.</span><span class="sxs-lookup"><span data-stu-id="f9d44-106">Renews a group's expiration.</span></span> <span data-ttu-id="f9d44-107">Когда группа обновляется, срок ее действия продляется на количество дней, определенное политикой.</span><span class="sxs-lookup"><span data-stu-id="f9d44-107">When a group is renewed, the group expiration is extended by the number of days defined in the policy.</span></span>
+<span data-ttu-id="f80ca-106">Обновляет срок действия группы.</span><span class="sxs-lookup"><span data-stu-id="f80ca-106">Renews a group's expiration.</span></span> <span data-ttu-id="f80ca-107">Когда группа обновляется, срок ее действия продляется на количество дней, определенное политикой.</span><span class="sxs-lookup"><span data-stu-id="f80ca-107">When a group is renewed, the group expiration is extended by the number of days defined in the policy.</span></span>
 
-> <span data-ttu-id="f9d44-108">**Примечание:** В версии 1.0 [Используйте ресурс Group, чтобы выполнить обновление запросов](/graph/api/group-renew?view=graph-rest-1.0).</span><span class="sxs-lookup"><span data-stu-id="f9d44-108">**Note:** In V1.0, [use the group resource to make renew requests](/graph/api/group-renew?view=graph-rest-1.0).</span></span>
+> <span data-ttu-id="f80ca-108">**Примечание:** В версии 1.0 [Используйте ресурс Group, чтобы выполнить обновление запросов](/graph/api/group-renew?view=graph-rest-1.0).</span><span class="sxs-lookup"><span data-stu-id="f80ca-108">**Note:** In V1.0, [use the group resource to make renew requests](/graph/api/group-renew?view=graph-rest-1.0).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f9d44-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f9d44-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f80ca-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f80ca-109">Permissions</span></span>
 
-<span data-ttu-id="f9d44-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f9d44-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f80ca-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f80ca-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
  
 
-|<span data-ttu-id="f9d44-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f9d44-112">Permission type</span></span>      | <span data-ttu-id="f9d44-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f9d44-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f80ca-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f80ca-112">Permission type</span></span>      | <span data-ttu-id="f80ca-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f80ca-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f9d44-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f9d44-114">Delegated (work or school account)</span></span> | <span data-ttu-id="f9d44-115">Group.ReadWrite.All или Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f9d44-115">Group.ReadWrite.All or Directory.ReadWrite.All</span></span>    |
-|<span data-ttu-id="f9d44-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f9d44-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f9d44-117">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="f9d44-117">Not supported</span></span> |
-|<span data-ttu-id="f9d44-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f9d44-118">Application</span></span> | <span data-ttu-id="f9d44-119">Group.ReadWrite.All или Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f9d44-119">Group.ReadWrite.All or Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="f80ca-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f80ca-114">Delegated (work or school account)</span></span> | <span data-ttu-id="f80ca-115">Group.ReadWrite.All или Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f80ca-115">Group.ReadWrite.All or Directory.ReadWrite.All</span></span>    |
+|<span data-ttu-id="f80ca-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f80ca-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f80ca-117">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="f80ca-117">Not supported</span></span> |
+|<span data-ttu-id="f80ca-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f80ca-118">Application</span></span> | <span data-ttu-id="f80ca-119">Group.ReadWrite.All или Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f80ca-119">Group.ReadWrite.All or Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f9d44-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f9d44-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f80ca-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f80ca-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groupLifecyclePolicies/renewGroup
 
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f9d44-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f9d44-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f80ca-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f80ca-121">Request headers</span></span>
 
-| <span data-ttu-id="f9d44-122">Имя</span><span class="sxs-lookup"><span data-stu-id="f9d44-122">Name</span></span> | <span data-ttu-id="f9d44-123">Описание</span><span class="sxs-lookup"><span data-stu-id="f9d44-123">Description</span></span> |
+| <span data-ttu-id="f80ca-122">Имя</span><span class="sxs-lookup"><span data-stu-id="f80ca-122">Name</span></span> | <span data-ttu-id="f80ca-123">Описание</span><span class="sxs-lookup"><span data-stu-id="f80ca-123">Description</span></span> |
 |:---------------|:----------|
-| <span data-ttu-id="f9d44-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f9d44-124">Authorization</span></span> | <span data-ttu-id="f9d44-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f9d44-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="f9d44-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f9d44-127">Content-Type</span></span>  | <span data-ttu-id="f9d44-128">application/json</span><span class="sxs-lookup"><span data-stu-id="f9d44-128">application/json</span></span> |
+| <span data-ttu-id="f80ca-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f80ca-124">Authorization</span></span> | <span data-ttu-id="f80ca-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f80ca-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="f80ca-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f80ca-127">Content-Type</span></span>  | <span data-ttu-id="f80ca-128">application/json</span><span class="sxs-lookup"><span data-stu-id="f80ca-128">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f9d44-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f9d44-129">Request body</span></span>
-<span data-ttu-id="f9d44-130">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="f9d44-130">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f80ca-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f80ca-129">Request body</span></span>
+<span data-ttu-id="f80ca-130">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="f80ca-130">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="f9d44-131">Параметр</span><span class="sxs-lookup"><span data-stu-id="f9d44-131">Parameter</span></span> | <span data-ttu-id="f9d44-132">Тип</span><span class="sxs-lookup"><span data-stu-id="f9d44-132">Type</span></span> | <span data-ttu-id="f9d44-133">Описание</span><span class="sxs-lookup"><span data-stu-id="f9d44-133">Description</span></span> |
+| <span data-ttu-id="f80ca-131">Параметр</span><span class="sxs-lookup"><span data-stu-id="f80ca-131">Parameter</span></span> | <span data-ttu-id="f80ca-132">Тип</span><span class="sxs-lookup"><span data-stu-id="f80ca-132">Type</span></span> | <span data-ttu-id="f80ca-133">Описание</span><span class="sxs-lookup"><span data-stu-id="f80ca-133">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f9d44-134">groupId</span><span class="sxs-lookup"><span data-stu-id="f9d44-134">groupId</span></span>|<span data-ttu-id="f9d44-135">GUID</span><span class="sxs-lookup"><span data-stu-id="f9d44-135">Guid</span></span>| <span data-ttu-id="f9d44-136">Идентификатор группы, которую требуется обновить.</span><span class="sxs-lookup"><span data-stu-id="f9d44-136">The id of the group to renew.</span></span> |
+|<span data-ttu-id="f80ca-134">groupId</span><span class="sxs-lookup"><span data-stu-id="f80ca-134">groupId</span></span>|<span data-ttu-id="f80ca-135">GUID</span><span class="sxs-lookup"><span data-stu-id="f80ca-135">Guid</span></span>| <span data-ttu-id="f80ca-136">Идентификатор группы, которую требуется обновить.</span><span class="sxs-lookup"><span data-stu-id="f80ca-136">The id of the group to renew.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="f9d44-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="f9d44-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f80ca-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="f80ca-137">Response</span></span>
 
-<span data-ttu-id="f9d44-p105">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="f9d44-p105">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="f80ca-p105">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="f80ca-p105">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f9d44-140">Пример</span><span class="sxs-lookup"><span data-stu-id="f9d44-140">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f80ca-140">Пример</span><span class="sxs-lookup"><span data-stu-id="f80ca-140">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="f9d44-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="f9d44-141">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="f80ca-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="f80ca-141">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="f9d44-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="f9d44-142">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f80ca-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="f80ca-142">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "grouplifecyclepolicy_renewgroup"
@@ -77,22 +77,22 @@ Content-length: 57
   "groupId": "ffffffff-ffff-ffff-ffff-ffffffffffff"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="f9d44-143">C#</span><span class="sxs-lookup"><span data-stu-id="f9d44-143">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="f80ca-143">C#</span><span class="sxs-lookup"><span data-stu-id="f80ca-143">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/grouplifecyclepolicy-renewgroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="f9d44-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f9d44-144">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="f80ca-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f80ca-144">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/grouplifecyclepolicy-renewgroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="f9d44-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f9d44-145">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="f80ca-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f80ca-145">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/grouplifecyclepolicy-renewgroup-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="f9d44-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="f9d44-146">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="f80ca-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="f80ca-146">Response</span></span>
 
 <!-- {
   "blockType": "response",

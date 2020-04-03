@@ -2,59 +2,59 @@
 title: 'group: renew'
 description: Обновляет срок действия группы. Когда группа обновляется, срок ее действия продляется на количество дней, определенное политикой.
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f64460378188ec4376a615857c78ea9d538920fc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8e1e9403acf31df4544c5e894895aa17a1e86e2a
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516951"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124128"
 ---
-# <a name="group-renew"></a><span data-ttu-id="1e2c3-104">group: renew</span><span class="sxs-lookup"><span data-stu-id="1e2c3-104">group: renew</span></span>
+# <a name="group-renew"></a><span data-ttu-id="52a17-104">group: renew</span><span class="sxs-lookup"><span data-stu-id="52a17-104">group: renew</span></span>
 
-<span data-ttu-id="1e2c3-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1e2c3-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="52a17-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="52a17-105">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="1e2c3-106">Обновляет срок действия группы.</span><span class="sxs-lookup"><span data-stu-id="1e2c3-106">Renews a group's expiration.</span></span> <span data-ttu-id="1e2c3-107">Когда группа обновляется, срок ее действия продляется на количество дней, определенное политикой.</span><span class="sxs-lookup"><span data-stu-id="1e2c3-107">When a group is renewed, the group expiration is extended by the number of days defined in the policy.</span></span>
+<span data-ttu-id="52a17-106">Обновляет срок действия группы.</span><span class="sxs-lookup"><span data-stu-id="52a17-106">Renews a group's expiration.</span></span> <span data-ttu-id="52a17-107">Когда группа обновляется, срок ее действия продляется на количество дней, определенное политикой.</span><span class="sxs-lookup"><span data-stu-id="52a17-107">When a group is renewed, the group expiration is extended by the number of days defined in the policy.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1e2c3-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1e2c3-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="52a17-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="52a17-108">Permissions</span></span>
 
-<span data-ttu-id="1e2c3-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1e2c3-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="52a17-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="52a17-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
  
 
-|<span data-ttu-id="1e2c3-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1e2c3-111">Permission type</span></span>      | <span data-ttu-id="1e2c3-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1e2c3-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="52a17-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="52a17-111">Permission type</span></span>      | <span data-ttu-id="52a17-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="52a17-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1e2c3-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1e2c3-113">Delegated (work or school account)</span></span> | <span data-ttu-id="1e2c3-114">Group.ReadWrite.All или Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1e2c3-114">Group.ReadWrite.All or Directory.ReadWrite.All</span></span>    |
-|<span data-ttu-id="1e2c3-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1e2c3-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1e2c3-116">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="1e2c3-116">Not supported</span></span> |
-|<span data-ttu-id="1e2c3-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1e2c3-117">Application</span></span> | <span data-ttu-id="1e2c3-118">Group.ReadWrite.All или Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1e2c3-118">Group.ReadWrite.All or Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="52a17-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="52a17-113">Delegated (work or school account)</span></span> | <span data-ttu-id="52a17-114">Group.ReadWrite.All или Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="52a17-114">Group.ReadWrite.All or Directory.ReadWrite.All</span></span>    |
+|<span data-ttu-id="52a17-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="52a17-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="52a17-116">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="52a17-116">Not supported</span></span> |
+|<span data-ttu-id="52a17-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="52a17-117">Application</span></span> | <span data-ttu-id="52a17-118">Group.ReadWrite.All или Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="52a17-118">Group.ReadWrite.All or Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1e2c3-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1e2c3-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="52a17-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="52a17-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/renew
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1e2c3-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1e2c3-120">Request headers</span></span>
-| <span data-ttu-id="1e2c3-121">Имя</span><span class="sxs-lookup"><span data-stu-id="1e2c3-121">Name</span></span>       | <span data-ttu-id="1e2c3-122">Описание</span><span class="sxs-lookup"><span data-stu-id="1e2c3-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="52a17-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="52a17-120">Request headers</span></span>
+| <span data-ttu-id="52a17-121">Имя</span><span class="sxs-lookup"><span data-stu-id="52a17-121">Name</span></span>       | <span data-ttu-id="52a17-122">Описание</span><span class="sxs-lookup"><span data-stu-id="52a17-122">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="1e2c3-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="1e2c3-123">Authorization</span></span>  | <span data-ttu-id="1e2c3-124">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="1e2c3-124">Bearer {token}</span></span> |
+| <span data-ttu-id="52a17-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="52a17-123">Authorization</span></span>  | <span data-ttu-id="52a17-124">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="52a17-124">Bearer {token}</span></span> |
 
 
-## <a name="request-body"></a><span data-ttu-id="1e2c3-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="1e2c3-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="52a17-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="52a17-125">Request body</span></span>
 
-<span data-ttu-id="1e2c3-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="1e2c3-126">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="52a17-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="52a17-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1e2c3-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="1e2c3-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="52a17-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="52a17-127">Response</span></span>
 
-<span data-ttu-id="1e2c3-p104">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="1e2c3-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="52a17-p104">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="52a17-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1e2c3-130">Пример</span><span class="sxs-lookup"><span data-stu-id="1e2c3-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="52a17-130">Пример</span><span class="sxs-lookup"><span data-stu-id="52a17-130">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="1e2c3-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="1e2c3-131">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="52a17-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="52a17-131">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="1e2c3-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="1e2c3-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="52a17-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="52a17-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_renew"
@@ -62,27 +62,27 @@ POST /groups/{id}/renew
 ```http
 POST https://graph.microsoft.com/v1.0/groups/{id}/renew
 ```
-# <a name="c"></a>[<span data-ttu-id="1e2c3-133">C#</span><span class="sxs-lookup"><span data-stu-id="1e2c3-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="52a17-133">C#</span><span class="sxs-lookup"><span data-stu-id="52a17-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-renew-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="1e2c3-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1e2c3-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="52a17-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="52a17-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-renew-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="1e2c3-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1e2c3-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="52a17-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="52a17-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-renew-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="1e2c3-136">Java</span><span class="sxs-lookup"><span data-stu-id="1e2c3-136">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="52a17-136">Java</span><span class="sxs-lookup"><span data-stu-id="52a17-136">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/group-renew-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="1e2c3-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="1e2c3-137">Response</span></span>
-<span data-ttu-id="1e2c3-p105">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1e2c3-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="52a17-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="52a17-137">Response</span></span>
+<span data-ttu-id="52a17-p105">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="52a17-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
