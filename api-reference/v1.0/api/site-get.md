@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Получение свойств и отношений ресурса site.
 doc_type: apiPageType
-ms.openlocfilehash: af50b2eae0287ad31e75c6373b6dedb4c67bd42b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d01ea89091bb718cf98680253f7b80c1c64ebb8c
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509803"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108944"
 ---
 # <a name="get-a-site-resource"></a>Получение ресурса site
 
@@ -20,18 +20,7 @@ ms.locfileid: "42509803"
 
 Получение свойств и отношений ресурса [site][]. Ресурс **site** представляет сайт группы в SharePoint.
 
-[сайта]: ../resources/site.md
-
-Для обращения к ресурсу **site** используется уникальный идентификатор, при создании которого используются указанные ниже значения.
-
-* имя узла семейства веб-сайтов (contoso.sharepoint.com);
-* уникальный идентификатор семейства веб-сайтов (GUID);
-* уникальный идентификатор сайта (GUID).
-
-Кроме того, существует зарезервированный идентификатор сайта `root`, который всегда ссылается на корневой сайт указанного целевого объекта, как показано ниже.
-
-* `/sites/root`. Корневой сайт клиента.
-* `/groups/{group-id}/sites/root`. Сайт группы для ресурса group.
+[site]: ../resources/site.md
 
 ## <a name="permissions"></a>Разрешения
 

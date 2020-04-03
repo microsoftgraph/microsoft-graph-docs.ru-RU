@@ -2,15 +2,15 @@
 title: Тип ресурса group
 description: Представляет группу Azure Active Directory (Azure AD), которая может быть группой Office 365, командой в Microsoft Teams или группой безопасности.
 localization_priority: Priority
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 84706a54b9628ef142d75804b1950f531bc18282
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4d9a9cc75214bc3dcbcc765d3a1797eb266ff26b
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497149"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124912"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 

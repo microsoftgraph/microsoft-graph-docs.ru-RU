@@ -1,16 +1,16 @@
 ---
 title: Создание объекта Contact
 description: Добавление контакта в корневую папку с контактами или конечную точку контактов другой папки с контактами.
-author: dkershaw10
+author: kevinbellinger
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3490708c1953a7e9d583b1a6bef79d72482317c1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 497206bd7174aa9fd7d32bd574366ca9e1bb44e3
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508991"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43109014"
 ---
 # <a name="create-contact"></a>Создание объекта Contact
 

@@ -2,15 +2,15 @@
 title: Создание объекта Message
 description: С помощью этого API можно создать черновик нового сообщения. Черновики можно создавать в любой папке и при необходимости изменять перед отправкой. Для сохранения в папке "Черновики" используйте ярлык /messages.
 localization_priority: Priority
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: svpsiva
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1746f6a824f530379d1d6636d3c3b9a93d06d20b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: eb97265376c0a61ccf7f31d4c0131111ae9accf4
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508963"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108293"
 ---
 # <a name="create-message"></a>Создание объекта Message
 

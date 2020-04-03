@@ -2,15 +2,15 @@
 title: Обзор API журнала аудита Azure AD
 description: Azure Active Directory (Azure AD) отслеживает действия пользователя, регистрирует показатели входа и создает отчеты журнала аудита, помогающие понять, как пользователи переходят к службам Azure AD и используют их.
 localization_priority: Priority
-author: dhanyahk
+author: kholtz
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 0391d250d109731da43fc86f5b67c50dadc52373
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f2841b950096ca43f72f387a50a39b632e53ab62
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532018"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124219"
 ---
 # <a name="azure-ad-audit-log-api-overview"></a>Обзор API журнала аудита Azure AD
 

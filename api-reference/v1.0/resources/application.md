@@ -2,15 +2,15 @@
 title: Тип ресурса application
 description: Представляет приложение.
 localization_priority: Priority
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 2cc58e1db1dd76aec5920396bd49b596cb528e7d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 98b081acc3569af7c8c1e8ef89a9bd8b1a71234c
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533150"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108531"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 

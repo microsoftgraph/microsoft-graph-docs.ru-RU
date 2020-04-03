@@ -2,15 +2,15 @@
 title: Список календарей
 description: 'Получение всех календарей пользователя (свойство навигации `/calendars`), календарей из группы календарей по умолчанию или из указанной группы календарей. '
 localization_priority: Priority
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: harini84
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c27092d16c4402ca20e38933ad9c6284cf60e747
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ae92d8d4c40ddd2419053554dd7aaa23c1906229
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509145"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108916"
 ---
 # <a name="list-calendars"></a>Список календарей
 

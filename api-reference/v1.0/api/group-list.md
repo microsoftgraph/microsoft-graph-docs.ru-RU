@@ -2,15 +2,15 @@
 title: Список групп
 description: Список всех групп, доступных в организации, в том числе Групп Office 365.
 localization_priority: Priority
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c79460c1098d6c4def65fcf53211e8583b868f6c
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: fefccee51195adafb1bb3881b6a39336059d7857
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082359"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43125143"
 ---
 # <a name="list-groups"></a>Список групп
 
