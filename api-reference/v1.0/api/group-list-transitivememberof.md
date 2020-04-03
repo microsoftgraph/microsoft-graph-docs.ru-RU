@@ -1,16 +1,16 @@
 ---
 title: Список транзитивных групп memberOf
 description: Получение групп, членом которых является группа.  Эта операция является транзитивным и также включает все группы, в которых вложены эти группы. В отличие от извлечения групп Office 365 пользователя, возвращаются все типы групп, а не только группы Office 365.
-author: anchanda
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a02dd7e4ae4c65132decc6f9f2887bfd91c6d9e7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6e887543fe02f79d20da83dd8bd3593aa147ca22
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517035"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43125157"
 ---
 # <a name="list-group-transitive-memberof"></a>Список транзитивных групп memberOf
 

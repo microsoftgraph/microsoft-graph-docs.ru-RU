@@ -2,15 +2,15 @@
 title: Список Провисионингобжектсуммари
 description: Получение всех событий подготовки, произошедших в клиенте.
 localization_priority: Normal
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c914c5921548d6fa297ce0b859f1c7c85c0f07cb
-ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
+ms.openlocfilehash: 51375b2f83eeeb5755e3685a159a2338c34fa3fd
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42926794"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123110"
 ---
 # <a name="list-provisioningobjectsummary"></a>Список Провисионингобжектсуммари
 
@@ -24,7 +24,7 @@ ms.locfileid: "42926794"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|Тип разрешения | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Аудитлог. Read. ALL и Directory. Read. ALL |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |

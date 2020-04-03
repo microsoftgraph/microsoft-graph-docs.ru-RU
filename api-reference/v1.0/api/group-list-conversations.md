@@ -1,16 +1,16 @@
 ---
 title: Список бесед
 description: Получение списка бесед в этой группе.
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 80b33bbb6f97f1c3cc820d46be21f3cea71365e8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a82a3e9132ba01d9643fe8a6ec712a8cec1c4631
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517098"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43125269"
 ---
 # <a name="list-conversations"></a>Список бесед
 

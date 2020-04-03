@@ -1,20 +1,20 @@
 ---
 title: Список Scopedadministrators
 description: Получение списка ресурсов Scopedrolemembership изменен.
-author: davidmu1
+author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2d8e30378e5a23222b6861bb5e1b31750d053b97
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fbcdecdc227477dc53c137547c0e78b46b92107d
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441719"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123358"
 ---
 # <a name="list-scopedrolemembers"></a>Список Scopedadministrators
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

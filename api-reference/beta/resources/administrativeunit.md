@@ -1,20 +1,20 @@
 ---
 title: Тип ресурса administrativeUnit
-description: Административное устройство предоставляет концептуальный контейнер для объектов каталога пользователей и групп. С помощью административных единиц администратор компании может делегировать административные обязанности для управления пользователями и группами, которые находятся в административной единице или в области действия, на региональном или подразделенном администраторе.
+description: Административное устройство предоставляет концептуальный контейнер для объектов каталога пользователей и групп.
 localization_priority: Normal
-author: davidmu1
+author: anandyadavMSFT
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d279bcfd605df8d53331cc217d7b5fdb76510659
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c351ac7f06867cc7e8160352babb5e4fca5fe381
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508396"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124961"
 ---
 # <a name="administrativeunit-resource-type"></a>Тип ресурса administrativeUnit
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "42508396"
 |[Обновление Админстративеунит](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)  |Обновление объекта administrativeUnit. |
 |[Удаление Админстративеунит](../api/administrativeunit-delete.md) | Нет |Удаление объекта administrativeUnit. |
 |[Добавить участника](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| Добавление члена (пользователя или группы).|
-|[Список членов](../api/administrativeunit-list-members.md) |Коллекция [directoryObject](directoryobject.md)| Получение списка участников (пользователей и групп).|
+|[Перечисление участников](../api/administrativeunit-list-members.md) |Коллекция [directoryObject](directoryobject.md)| Получение списка участников (пользователей и групп).|
 |[Получение члена](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| Получение определенного участника.|
 |[Удаление члена](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| Удаление члена.|
 |[Добавление роли члена с областью](../api/administrativeunit-post-scopedrolemembers.md) |[Scopedrolemembership изменен](scopedrolemembership.md)| Добавление члена с областью ролей.|
@@ -54,14 +54,14 @@ ms.locfileid: "42508396"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |description|string|Необязательное описание административной единицы.|
-|displayName|строка|Отображаемое имя административной единицы.|
+|displayName|string|Отображаемое имя административной единицы.|
 |id|строка|Уникальный идентификатор административной единицы. Только для чтения.|
 |visibility|string|Определяет, является ли модуль админстративе и его элементы скрытыми или общедоступными. Может быть задано значение значение hiddenmembership или public. Если не задано, то поведение по умолчанию — Public. Если задано значение значение hiddenmembership, только члены административной единицы могут перечислить других членов единицы админстративе.|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для данной административной единицы. Допускается значение null.|
+|extensions|Коллекция объектов [extension](extension.md)|Коллекция открытых расширений, определенных для данной административной единицы. Допускается значение null.|
 |members|Коллекция [directoryObject](directoryobject.md)|Пользователи и группы, являющиеся членами этого Админситративе подразделения. Методы HTTP: GET (List Members), POST (Add Members), DELETE (удалить участников).|
 |Scopedadministrators|Коллекция [scopedRoleMembership](scopedrolemembership.md)| Члены роли с областью действия этой административной единицы.  Методы HTTP: GET (List Скопедролемембершипс), POST (Add Scopedrolemembership изменен), DELETE (удалить Scopedrolemembership изменен). |
 

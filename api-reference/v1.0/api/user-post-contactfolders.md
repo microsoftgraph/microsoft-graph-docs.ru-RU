@@ -2,15 +2,15 @@
 title: Создание объекта ContactFolder
 description: Создание объекта contactFolder в стандартной папке контактов пользователя.
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: kevinbellinger
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7a0729bc61881606106340dffbc765040386d0e6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7835f71ce1ae33cc2c70ef1389de7e048104d35e
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508998"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43109063"
 ---
 # <a name="create-contactfolder"></a>Создание объекта ContactFolder
 

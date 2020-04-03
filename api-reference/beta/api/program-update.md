@@ -3,18 +3,18 @@ title: Программа обновления
 description: В функции проверки доступа Azure AD обновите существующий объект программы.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 43ff1f8881e358a6476539d81cddc55a49a6f88c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: markwahl-msft
+ms.openlocfilehash: 79c95007bc87c6a54eb3fce16ea20510d832c530
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454978"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123118"
 ---
 # <a name="update-program"></a>Программа обновления
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +40,7 @@ PATCH /programs('{programId}')
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [программы](../resources/program.md) в формате JSON.
 
 В следующей таблице приведены свойства, которые можно указать при обновлении программы.

@@ -2,19 +2,19 @@
 title: Применение Акцессревиев
 description: 'В функции проверок доступа Azure AD примените решения завершенной Акцессревиев.  Целевой объект может быть либо одноразовой проверкой доступом, либо экземпляром повторяющейся проверки доступа.  '
 localization_priority: Normal
-author: davidmu1
+author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dd24db15accc6a969097504224166f13a19f3865
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8b1866737ede1159fc955496eb1d2ceef6d650ad
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441923"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123568"
 ---
 # <a name="apply-accessreview"></a>Применение Акцессревиев
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

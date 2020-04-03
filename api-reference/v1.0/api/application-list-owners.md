@@ -1,16 +1,16 @@
 ---
 title: Список владельцев
 description: Получение списка владельцев (объектов directoryObject) для приложения.
-author: davidmu1
+author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: af5ed0ea7360c5e40f6a472992af4ea08eecc6e4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9160c42e2c042f5a0c6bb84f5069714aacc3048e
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518905"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108678"
 ---
 # <a name="list-owners"></a>Список владельцев
 

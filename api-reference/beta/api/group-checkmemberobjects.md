@@ -2,19 +2,19 @@
 title: 'Группа: Чеккмемберобжектс'
 description: Проверка членства в списке групп, ролей каталогов или административных единиц для указанного объекта Group.
 localization_priority: Normal
-author: davidmu1
-ms.prod: microsoft-identity-platform
+author: yyuank
+ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 736c46ab52d9f8aff3ba014f5bcfae60f0d2ce09
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 38c362c8ef06ae230b1a4dfbf6a5d5436abf016d
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42420586"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123911"
 ---
 # <a name="group-checkmemberobjects"></a>Группа: Чеккмемберобжектс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -2,19 +2,19 @@
 title: Получение dataPolicyOperation
 description: Получение свойств объекта dataPolicyOperation.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2ce26de4e8dadd58d7a3a337b1c8217d3db1d5eb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 08cfbf935a1a37be83349d2d75631bc8767ec8d8
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436120"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123687"
 ---
 # <a name="get-datapolicyoperation"></a>Получение dataPolicyOperation
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Получение свойств объекта dataPolicyOperation.
 

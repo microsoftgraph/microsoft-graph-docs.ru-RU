@@ -2,19 +2,19 @@
 title: 'groupLifecyclePolicy: Реневграуп'
 description: Обновляет срок действия группы. Когда группа обновляется, срок ее действия продляется на количество дней, определенное политикой.
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2c1328778c9b2feba197fd403e9821da2f64872d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 09776750c3c3bba64b81c75ee0f32af395a3f6b1
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446587"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123953"
 ---
 # <a name="grouplifecyclepolicy-renewgroup"></a>groupLifecyclePolicy: Реневграуп
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

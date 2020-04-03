@@ -2,19 +2,19 @@
 title: Создание Акцессревиев
 description: В средстве проверки доступа Azure AD создайте новый объект Акцессревиев.
 localization_priority: Normal
-author: davidmu1
+author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fbda7226bcfb52370385d58598bc6fda14bd13d2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ca2fcc1aa0fe7f61c757d2de6a29af52d51709d8
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441916"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123519"
 ---
 # <a name="create-accessreview"></a>Создание Акцессревиев
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +48,7 @@ POST /accessReviews
 | Authorization | Носитель \{токен\}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [акцессревиев](../resources/accessreview.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Акцессревиев.

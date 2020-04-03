@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 25fa9ea7fa275b62639a445775939fad56bebad4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e817407a840541b083072b8536b4fb22b5dbf33f
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508669"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108405"
 ---
 # <a name="list-names"></a>Перечисление имен
 
@@ -29,7 +29,7 @@ ms.locfileid: "42508669"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets({id|name})/names
+GET /workbook/worksheets/{id|name}/names
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.

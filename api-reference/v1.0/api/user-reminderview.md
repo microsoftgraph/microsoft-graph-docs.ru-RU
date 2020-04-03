@@ -1,16 +1,16 @@
 ---
 title: 'user: reminderView'
 description: 'Возвращает список напоминаний календаря за указанный период времени. '
-author: dkershaw10
+author: harini84
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b02143e6317a10aea9b101e4f6d6c62eb3cc5a58
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5def572e5d3a76b6d919cf5b5c13edb72bb6d12d
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508949"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108258"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 

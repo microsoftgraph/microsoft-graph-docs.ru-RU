@@ -2,15 +2,15 @@
 title: Тип ресурса Акцессревиев
 description: 'В функции проверки доступа Azure AD — это `accessReview` представление доступа.  '
 localization_priority: Normal
-author: davidmu1
+author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e1666b6074700fb8fbbd52c7655581f8bf98d102
-ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
+ms.openlocfilehash: 6ccabbfdbc63e1300ef27b3310a0b2444c99055e
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42926848"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124954"
 ---
 # <a name="accessreview-resource-type"></a>Тип ресурса Акцессревиев
 
@@ -57,7 +57,7 @@ ms.locfileid: "42926848"
 
 
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 
 

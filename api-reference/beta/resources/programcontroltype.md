@@ -3,18 +3,18 @@ title: Тип ресурса Програмконтролтипе
 description: 'В функции рецензирования Access в Azure AD при сопоставлении элемента управления с программой используется тип элемента управления Program, чтобы указать тип проверки доступа, для которой предназначен элемент управления.  '
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 0e6f8f13e72374278212b0f1389d38b018099099
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: markwahl-msft
+ms.openlocfilehash: 7321e4394e5e2a87d4ff51f71bc1589b5e1688cb
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521441"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43125304"
 ---
 # <a name="programcontroltype-resource-type"></a>Тип ресурса Програмконтролтипе
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -3,14 +3,14 @@ title: Создание Програмконтрол
 description: В средстве проверки доступа Azure AD создайте новый объект Програмконтрол.  При этом будет связана проверка доступа к программе.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 6f752a3fb9bfb302a0d3c63b3edec2ef93735510
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: markwahl-msft
+ms.openlocfilehash: 17c25df842975c324ab827fc071283df7a5d44cd
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454985"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123097"
 ---
 # <a name="create-programcontrol"></a>Создание Програмконтрол
 
@@ -48,7 +48,7 @@ POST /programControls
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [програмконтрол](../resources/programcontrol.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании программного элемента управления.

@@ -3,14 +3,14 @@ title: Получение объекта signIn
 doc_type: apiPageType
 description: Получение объекта SignIn, содержащего все входные сведения о клиенте Azure Active Directory.
 localization_priority: Normal
-author: davidmu1
+author: kholtz
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4265807cc72794f3611fdda64d405138931b7df3
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: c5cc845408d5aa3077d5150dee5a1ed560065a25
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42947324"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123108"
 ---
 # <a name="get-signin"></a>Получение объекта signIn
 
@@ -28,7 +28,7 @@ ms.locfileid: "42947324"
 |:--------------------|:---------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись) | Аудитлог. Read. ALL, Directory. Read. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-| Для приложения | Аудитлог. Read. ALL, Directory. Read. ALL | 
+| Для приложений | Аудитлог. Read. ALL, Directory. Read. ALL | 
 
 Кроме того, приложения должны быть [правильно зарегистрированы](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) в Azure AD.
 
@@ -49,7 +49,7 @@ GET /auditLogs/signIns/{id}
 |:----------|:----------|
 | Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

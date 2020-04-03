@@ -2,19 +2,19 @@
 title: Список решений Акцессревиев
 description: В функции проверок доступа Azure AD извлекаются решения объекта Акцессревиев.
 localization_priority: Normal
-author: davidmu1
+author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 00bc58377b68f3654ebff10ed985cbbcf63e8ed8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7042210e9a3e3b6686e5c1bc4529a06d210a34d8
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441902"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123526"
 ---
 # <a name="list-accessreview-decisions"></a>Список решений Акцессревиев
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +43,7 @@ GET /accessReviews/{reviewId}/decisions
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 Не следует предоставлять текст запроса.
 
 ## <a name="response"></a>Отклик

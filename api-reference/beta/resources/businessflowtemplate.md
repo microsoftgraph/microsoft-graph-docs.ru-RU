@@ -3,18 +3,18 @@ title: Тип ресурса Бусинессфловтемплате
 description: В функции рецензирования Access в Azure AD объект `businesFlowTemplate` представляет шаблон рабочего процесса Azure AD. Идентификатор шаблона, например, для проверки гостевых участников группы, предоставляется вызывающим абонентом при создании проверки доступа.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: 00075813d011f6c6e66e0c853bfad6545bbc8c97
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a8f2d7a876c389d86373f608187f310c515f9cd1
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507861"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124429"
 ---
 # <a name="businessflowtemplate-resource-type"></a>Тип ресурса Бусинессфловтемплате
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

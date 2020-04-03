@@ -2,19 +2,19 @@
 title: 'Группа: Ассигнлиценсе'
 description: Добавление и удаление лицензий для группы. Лицензии, назначенные группе, будут назначены всем пользователям в группе.
 localization_priority: Normal
-author: davidmu1
-ms.prod: microsoft-identity-platform
+author: yyuank
+ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 32fb8562d9635b936b41a126f3e37e37b57890d9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0f92c4dae40548cab9b4e1ded3352194f68056ae
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42420607"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123960"
 ---
 # <a name="group-assignlicense"></a>Группа: Ассигнлиценсе
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -3,18 +3,18 @@ title: Создание программы
 description: В функции рецензирования Access Azure AD создайте объект программы.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: f7d51254d9ecf67861eb93f45c1db6a868b6ad33
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: markwahl-msft
+ms.openlocfilehash: 33b55ddec6da5351d59c1c5cda32a156e8b0a3e2
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455020"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123195"
 ---
 # <a name="create-program"></a>Создание программы
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +40,7 @@ POST /programs
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [программы](../resources/program.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании программы.

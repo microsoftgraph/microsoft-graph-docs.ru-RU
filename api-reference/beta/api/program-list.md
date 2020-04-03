@@ -3,18 +3,18 @@ title: Список программ
 description: В функции проверки доступа Azure AD перечислите все объекты программы.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 9998fbc123d38e478a00d64d8e78f0f734914632
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: markwahl-msft
+ms.openlocfilehash: eab96053d43634cd4280e2e633b1de5da8ff5a17
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454992"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123064"
 ---
 # <a name="list-programs"></a>Список программ
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +40,7 @@ GET /programs
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 Не следует предоставлять текст запроса.
 
 ## <a name="response"></a>Отклик

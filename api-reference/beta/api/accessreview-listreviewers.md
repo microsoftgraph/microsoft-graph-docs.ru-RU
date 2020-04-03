@@ -2,19 +2,19 @@
 title: Список рецензентов Акцессревиев
 description: В функции рецензирования Access в Azure AD извлеките проверяющих объект Акцессревиев.
 localization_priority: Normal
-author: davidmu1
+author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 114a59e0d5e96983a30afcf31d8452c979f2f486
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 268744f1e742cdfbbbb3a5be7727ff6c1ddceaa5
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441881"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123547"
 ---
 # <a name="list-accessreview-reviewers"></a>Список рецензентов Акцессревиев
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,7 +41,7 @@ GET /accessReviews/{reviewId}/reviewers
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 Не следует предоставлять текст запроса.
 
 ## <a name="response"></a>Отклик

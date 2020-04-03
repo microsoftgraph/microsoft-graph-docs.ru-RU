@@ -4,7 +4,7 @@
       href: /graph/overview
     - name: Получение маркеров аутентификации
       items:
-        - name: Обзор
+        - name: Общие сведения
           href: /graph/auth/index?context=graph/api/1.0
         - name: Основы
           href: /graph/auth/auth-concepts?context=graph/api/1.0
@@ -22,13 +22,13 @@
           href: /graph/auth-limit-mailbox-access?context=graph/api/1.0
     - name: Использование API
       items:
-        - name: Обзор
+        - name: Общие сведения
           href: /graph/use-the-api?context=graph/api/1.0
         - name: Разбиение на страницы
           href: /graph/paging?context=graph/api/1.0
         - name: Использование параметров запроса
           href: /graph/query-parameters?context=graph/api/1.0
-        - name: Совмещение
+        - name: Пакетная обработка
           displayName: Batch requests
           href: /graph/json-batching?context=graph/api/1.0
         - name: Регулирование
@@ -58,7 +58,7 @@
         - name: Добавление пользовательских данных
           displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: /graph/extensibility-overview?context=graph/api/1.0
             - name: Использование открытых расширений (пример)
               href: /graph/extensibility-open-users?context=graph/api/1.0
@@ -159,11 +159,11 @@
     - name: Справочник по версии 1.0
       expanded: true
       items:
-        - name: Обзор
+        - name: Общие сведения
           href: overview.md
         - name: Пользователи
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/users.md
             - name: Пользователь
               href: resources/user.md
@@ -304,7 +304,7 @@
                   href: api/mailfolder-list-messagerules.md
                 - name: Отправка почты
                   href: api/user-sendmail.md
-            - name: Примечания
+            - name: Notes
               href: resources/onenote.md
               items:
                 - name: Создание записной книжки
@@ -360,7 +360,7 @@
                   href: api/planneruser-list-tasks.md
         - name: Группы
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/groups-overview.md
             - name: Группа
               href: resources/group.md
@@ -843,7 +843,7 @@
         - name: Устройства и приложения
           displayName: Intune
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/intune-graph-overview.md
             - name: Управление приложениями
               href: resources/intune-app-conceptual.md
@@ -3205,7 +3205,7 @@
         - name: Файлы
           displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/onedrive.md
             - name: Диски
               href: resources/drive.md
@@ -3222,6 +3222,8 @@
                   href: api/drive-sharedwithme.md
                 - name: Получение специальной папки
                   href: api/drive-get-specialfolder.md
+                - name: Список отслеживаемых элементов
+                  href: api/drive-list-following.md
             - name: Элементы на диске
               href: resources/driveitem.md
               items:
@@ -3255,7 +3257,11 @@
                   href: api/driveitem-delta.md
                 - name: Список версий
                   href: api/driveitem-list-versions.md
-                - name: Элемент предварительного просмотра
+                - name: Отслеживание элемента
+                  href: api/driveitem-follow.md
+                - name: Отмена отслеживания элемента
+                  href: api/driveitem-unfollow.md
+                - name: Предварительный просмотр элемента
                   href: api/driveitem-preview.md
                 - name: Получение аналитических данных об элементе
                   href: api/itemanalytics-get.md
@@ -3266,6 +3272,8 @@
                   href: api/driveitem-createlink.md
                 - name: Использование ссылок совместного доступа
                   href: api/shares-get.md
+                - name: Добавление пользователей в ссылку для общего доступа
+                  href: api/permission-grant.md
                 - name: Разрешения списка
                   href: api/driveitem-list-permissions.md
                 - name: Добавление разрешений
@@ -3279,7 +3287,7 @@
         - name: Удостоверения и доступ
           displayName: 'Azure AD, Microsoft identity platform'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/azure-ad-overview.md
             - name: Приложение
               href: resources/application.md
@@ -3489,7 +3497,7 @@
               items:
                 - name: Оценка угроз
                   items:
-                    - name: Обзор
+                    - name: Общие сведения
                       href: resources/threatassessment-api-overview.md
                     - name: Запрос оценки угроз
                       href: resources/threatassessmentrequest.md
@@ -3719,7 +3727,7 @@
         - name: Примечания
           displayName: OneNote
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/onenote-api-overview.md
             - name: Заметки
               href: resources/onenote.md
@@ -4115,7 +4123,7 @@
         - name: Безопасность
           displayname: 'Security API, Microsoft Intelligent Security Graph'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/security-api-overview.md
             - name: Оповещения
               href: resources/alert.md
@@ -4147,7 +4155,7 @@
         - name: Сайты и списки
           displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/sharepoint.md
             - name: Сайты
               href: resources/site.md
@@ -4160,6 +4168,10 @@
                   href: api/site-list-subsites.md
                 - name: Получение аналитических данных об элементе
                   href: api/itemanalytics-get.md
+                - name: Отслеживание сайта
+                  href: api/site-follow.md
+                - name: Прекращение отслеживания сайта
+                  href: api/site-unfollow.md
             - name: Списки
               href: resources/list.md
               items:
@@ -4187,7 +4199,7 @@
         - name: Задачи и планы
           displayName: Planner
           items:
-            - name: Обзор
+            - name: Общие сведения
               href: resources/planner-overview.md
             - name: План
               href: resources/plannerplan.md

@@ -1,16 +1,16 @@
 ---
 title: Параметры группы списка
 description: Получение списка объектов параметров групп.
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e1fbb56a660c2f111d1e16de549430bde31eec6f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: eb540d0e1b4819abe18d6fa374e1b553eb0297b7
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516831"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124513"
 ---
 # <a name="list-group-settings"></a>Параметры группы списка
 

@@ -1,20 +1,20 @@
 ---
 title: Удаление участника
 description: Используйте этот API для удаления члена (пользователя или группы) из административной единицы.
-author: davidmu1
+author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 508471509cfc8b25c29da6cb1d73cc76816ca899
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3774df54f73c7e08456b3412a65378cfb51cefcf
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441776"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123344"
 ---
 # <a name="remove-a-member"></a>Удаление участника
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

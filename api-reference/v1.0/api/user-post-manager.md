@@ -2,15 +2,15 @@
 title: Назначение руководителя
 description: Назначение руководителя пользователя.
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 2bebf1943fb5c34f6718887f3449afb3ea5c94db
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cc9b4547e3b2e62a59f8827a88ba1e58a693aa10
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508970"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108300"
 ---
 # <a name="assign-manager"></a>Назначение руководителя
 
@@ -40,7 +40,7 @@ PUT /users/{id}/manager/$ref
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type   | application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [directoryObject](../resources/directoryobject.md), [пользователя](../resources/user.md)или [контакта Организации](../resources/orgcontact.md) в формате JSON.
 
 ## <a name="response"></a>Отклик

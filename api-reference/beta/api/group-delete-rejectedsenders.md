@@ -1,20 +1,20 @@
 ---
 title: Удаление объекта rejectedSender
 description: Удаление пользователя или группы из списка отклоненных отправителей.
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 41ffc56b6b30d8b3e0d6231027c265d6540d462e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2aa50367dafbbd7ecde6ada9bd42844ba7db9479
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42420187"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123841"
 ---
 # <a name="remove-rejectedsender"></a>Удаление объекта rejectedSender
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

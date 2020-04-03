@@ -2,15 +2,15 @@
 title: 'Пользователь: Експортперсоналдата'
 description: Передает запрос операции политики данных, сделанный администратором компании для экспорта данных пользователя организации.
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: c47384ff4e78a6dd7cc79a0928c2444e0b24a9a5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 826c0699f5d3e2b98cf056816dec7d7ce4b1c6b7
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509211"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43109021"
 ---
 # <a name="user-exportpersonaldata"></a>Пользователь: Експортперсоналдата
 

@@ -1,16 +1,16 @@
 ---
 title: 'Пользователь: подсказки'
 description: Получение подсказок одного или нескольких получателей, доступных пользователю, вошедшего в систему.
-author: dkershaw10
+author: svpsiva
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 28f4dead5edab55f30c80b524d0f124473d2acd2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 809e1fb1dc23a1b6324d2a07c092dc83fbac8df7
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509183"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108335"
 ---
 # <a name="user-getmailtips"></a>Пользователь: подсказки
 
@@ -48,7 +48,7 @@ POST /users/{id|userPrincipalName}/getMailTips
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|EmailAddresses|Коллекция String|Коллекция SMTP-адресов получателей, для которых требуется получить подсказки.|
+|EmailAddresses|Коллекция строк|Коллекция SMTP-адресов получателей, для которых требуется получить подсказки.|
 |маилтипсоптионс|Строка|Перечисление флагов, представляющих запрашиваемые подсказки. Возможные `automaticReplies`значения:, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`и. `totalMemberCount`|
 
 ## <a name="response"></a>Отклик

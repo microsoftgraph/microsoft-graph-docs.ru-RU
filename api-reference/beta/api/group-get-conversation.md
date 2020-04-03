@@ -1,20 +1,20 @@
 ---
 title: Получение беседы
 description: Удаление объекта conversation.
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c1b2fc4378f8dc6353ccda5ce8572c27f9122fec
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7064cc1c4d6149fac50cb4b9f27458645d11fb53
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42419935"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123764"
 ---
 # <a name="get-conversation"></a>Получение беседы
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

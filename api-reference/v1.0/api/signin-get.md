@@ -2,15 +2,15 @@
 title: Получение объекта signIn
 description: Описывает метод Get ресурса SignIn (Entity) из API Microsoft Graph.
 localization_priority: Normal
-author: dhanyahk
+author: kholtz
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: afb548196be5d4bb4b0b9b918825d3ddc039be18
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: 99d9b152ae8b83f7e92b977fbc2fdc3b1e341f58
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42948410"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124317"
 ---
 # <a name="get-signin"></a>Получение объекта signIn
 
@@ -26,7 +26,7 @@ ms.locfileid: "42948410"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Аудитлог. Read. ALL и Directory. Read. ALL |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
-|Для приложения | Аудитлог. Read. ALL и Directory. Read. ALL |
+|Для приложений | Аудитлог. Read. ALL и Directory. Read. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 

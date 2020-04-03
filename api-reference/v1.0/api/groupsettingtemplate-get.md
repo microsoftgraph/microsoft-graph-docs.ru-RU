@@ -1,16 +1,16 @@
 ---
 title: Получение шаблона параметров группы
-description: Шаблон параметров группы представляет шаблон параметров, параметры которых могут создаваться в клиенте. Эта операция позволяет получать свойства объекта groupSettingTemplate, включая доступные параметры и их значения по умолчанию.
+description: Получение шаблона параметров группы, представляющего шаблон параметров, параметры которых могут создаваться в клиенте.
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: yyuank
+ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 61833289845d3474e1c1a07880f26975bcce95a8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 019f948a9c540670e485128c1093c1374fc47d87
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516810"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124534"
 ---
 # <a name="get-a-group-setting-template"></a>Получение шаблона параметров группы
 

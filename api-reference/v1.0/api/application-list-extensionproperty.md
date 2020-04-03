@@ -2,15 +2,15 @@
 title: Список Екстенсионпропертиес
 description: Получение списка объектов екстенсионпроперти.
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e0c2af0d25b65f2f89e38e66971349248357744d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7cb9df5a746b451fb3e0dce31c9a2ad75859be48
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518912"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108391"
 ---
 # <a name="list-extensionproperties"></a>Список Екстенсионпропертиес
 

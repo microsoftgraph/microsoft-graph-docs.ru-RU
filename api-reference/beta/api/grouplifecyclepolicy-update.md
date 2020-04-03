@@ -1,20 +1,20 @@
 ---
 title: Update groupLifecyclePolicy
 description: Обновляет свойства объекта groupLifecyclePolicyтип ресурса groupLifecyclePolicy.
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 5cd4b45ec35531f1f6596fc3cc54230160bee027
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 32d26a167f52ab57835a1c37acf6f2054c1ce91e
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446578"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123946"
 ---
 # <a name="update-grouplifecyclepolicy"></a>Update groupLifecyclePolicy
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +48,7 @@ PATCH /groupLifecyclePolicies/{id}
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|alternateNotificationEmails|String| Список адресов электронной почты для отправки уведомлений о группах без владельцев. Можно указать несколько адресов электронной почты, разделив их точкой с запятой. |
+|alternateNotificationEmails|Строка| Список адресов электронной почты для отправки уведомлений о группах без владельцев. Можно указать несколько адресов электронной почты, разделив их точкой с запятой. |
 |groupLifetimeInDays|Int32| Количество дней до истечения срока действия группы. После продления группа будет оставаться активной в течение указанного количества дней. |
 |managedGroupTypes|String| Тип группы, к которому применяется политика истечения срока действия. Возможные значения — **All**, **Selected** и **None**. |
 

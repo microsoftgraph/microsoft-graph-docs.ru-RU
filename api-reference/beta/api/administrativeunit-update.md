@@ -1,20 +1,20 @@
 ---
 title: Обновление administrativeunit
 description: Обновление свойств объекта administrativeUnit.
-author: davidmu1
+author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 30d8470c16e2d7556b65ea797b2298025cfc74d3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a373789cb566653956aa9dad2732d1fac226f441
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441692"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123309"
 ---
 # <a name="update-administrativeunit"></a>Обновление administrativeunit
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,7 +47,7 @@ PATCH /administrativeUnits/{id}
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|description|строка|Описание административной единицы.|
+|description|string|Описание административной единицы.|
 |displayName|string|Отображаемое имя административной единицы.|
 |visibility|string|Видимость административной единицы. Если не задано, то значение по умолчанию — "общедоступный". Может иметь значение "значение hiddenmembership", которое скрывает членство в группах, не являющихся участниками.|
 

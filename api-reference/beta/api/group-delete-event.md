@@ -1,20 +1,20 @@
 ---
 title: Удаление события
 description: Удаление объекта event.
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 23efd70ad5bee60e8b07ddec2a0a52b20502655c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9a0a76dc07db13476957d1bad31aacfb2ec76bf4
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42420467"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123869"
 ---
 # <a name="delete-event"></a>Удаление события
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

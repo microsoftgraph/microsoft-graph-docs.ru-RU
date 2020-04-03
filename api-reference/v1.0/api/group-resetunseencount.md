@@ -1,16 +1,16 @@
 ---
 title: 'group: resetUnseenCount'
 description: Сброс unseenCount всех записей, которые текущий пользователь не просматривал со времени своего предыдущего посещения. Поддерживается только для групп Office 365.
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 66c0f6009e5f25529d2dcb787457a45df8281d1f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0dbc405c1f41b635dc5a28c00c09156d17d58bec
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516944"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124079"
 ---
 # <a name="group-resetunseencount"></a>group: resetUnseenCount
 
@@ -34,7 +34,7 @@ POST /groups/{id}/resetUnseenCount
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
-| Prefer | return=minimal. Если заголовок минимального отклика включен в заголовок запроса, то в отклике об успешном выполнении возвращается код `204 No Content`. Необязательный параметр.  | 
+| Prefer | return=minimal. Если заголовок минимального отклика включен в заголовок запроса, то в отклике об успешном выполнении возвращается код `204 No Content`. Необязательно.  | 
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

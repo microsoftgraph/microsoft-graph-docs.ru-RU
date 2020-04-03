@@ -1,20 +1,20 @@
 ---
 title: 'groupLifecyclePolicy: addGroup'
 description: Добавляет группу к политике жизненного цикла.
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 07ad966a3fbbfd6a44fc5a744366d8e7d754e5be
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2bea2b06f4d016859a4fb482dfb32dd8a1365eca
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446613"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123715"
 ---
 # <a name="grouplifecyclepolicy-addgroup"></a>groupLifecyclePolicy: addGroup
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,20 +1,20 @@
 ---
 title: 'group: checkMemberGroups'
 description: Проверка членства в указанном списке групп. Возвращает из списка те группы, в которых
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d080a1808abbda7c64228185144246e33fd04195
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 10014a613ec1a30b0c1321eda35a2e2b43871c80
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42420593"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123925"
 ---
 # <a name="group-checkmembergroups"></a>group: checkMemberGroups
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -30,7 +30,7 @@ ms.locfileid: "42420593"
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                              |
-| Для приложения                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                             |
+| Приложение                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                             |
 
 ## <a name="http-request"></a>HTTP-запрос
 

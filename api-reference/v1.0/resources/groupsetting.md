@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса groupSetting
 description: Параметры группы, такие как заблокированные списки слов для отображаемых имен группы или, могут ли гостевые пользователи быть владельцами групп.
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: dabede2f21d7ed81bd32eee084e044c00382c447
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5e8e890e03a3af81a7fcdbdf5c86e203ae702e81
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532919"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43125010"
 ---
 # <a name="groupsetting-resource-type"></a>Тип ресурса groupSetting
 
@@ -28,7 +28,7 @@ ms.locfileid: "42532919"
 |[Получение параметра](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Считывание свойств определенного объекта параметра. |
 |[Перечисление параметров](../api/groupsetting-list.md) | Коллекция объектов [groupSetting](groupsetting.md) | Перечисление свойств всех объектов параметра. |
 |[Обновление параметра](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | Обновление объекта groupsetting. |
-|[Удаление параметра](../api/groupsetting-delete.md) | Нет | Удаление объекта параметра. |
+|[Удаление параметра](../api/groupsetting-delete.md) | Нет | Удаление объекта setting. |
 
 ## <a name="properties"></a>Свойства
 

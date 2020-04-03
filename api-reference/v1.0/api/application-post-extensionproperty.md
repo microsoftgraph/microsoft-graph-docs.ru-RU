@@ -2,15 +2,15 @@
 title: Создание Екстенсионпроперти
 description: Создание нового Екстенсионпроперти.
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6773a7c33d65c92cb82c0f9289d077a361b4808c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8bab4265486847e5d2e8cbafabe47ca9f706efac
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518877"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108602"
 ---
 # <a name="create-extensionproperty"></a>Создание Екстенсионпроперти
 
@@ -42,7 +42,7 @@ POST /applications/{id}/extensionProperties
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса укажите объект [екстенсионпроперти](../resources/extensionproperty.md) со следующими свойствами.
 
@@ -51,7 +51,7 @@ POST /applications/{id}/extensionProperties
 |:-------------|:------------|:------------|
 |dataType|String| Задает тип данных значения, которое может содержать свойство Extension. Поддерживаются следующие значения: Значение null не допускается. <ul><li>`Binary`– 256 байт (максимум)</li><li>`Boolean`</li><li>`DateTime`-Должен быть указан в формате ISO 8601. Данные времени будут храниться в формате UTC.</li><li>`Integer`— значение 32 — бит.</li><li>`LargeInteger`— значение 64 — бит.</li><li>`String`– 256 символов максимум</li></ul>|
 |name|String| Имя свойства расширения. Значение null не допускается. |
-|таржетобжектс|Коллекция String| Поддерживаются следующие значения: Значение null не допускается. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
+|таржетобжектс|Коллекция строк| Поддерживаются следующие значения: Значение null не допускается. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 
 ## <a name="response"></a>Отклик

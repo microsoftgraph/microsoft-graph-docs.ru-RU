@@ -2,15 +2,15 @@
 title: 'Пользователь: Чеккмемберобжектс'
 description: Проверка членства в списке ролей группы или каталога для указанного объекта пользователя.
 localization_priority: Normal
-author: davidmu1
-ms.prod: microsoft-identity-platform
+author: krbain
+ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 3b79ce9c9b36213e7a289ab4e2e21fa6f3929b9e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a33da99187ba8d8bbc64ea119dd3c3a13491a92e
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509232"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108412"
 ---
 # <a name="user-checkmemberobjects"></a>Пользователь: Чеккмемберобжектс
 

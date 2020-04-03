@@ -2,15 +2,15 @@
 title: 'group: unsubscribeByMail'
 description: 'С помощью этого метода можно заблокировать для текущего пользователя получение уведомлений электронной почты о новых записях, событиях и файлах в этой группе. Поддерживается только для групп Office 365. '
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: cc0375efe70482c248fa5f9d3168e2562f9416a2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8b3eac903bee65832ca933bb09abb152bdee504e
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516930"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123974"
 ---
 # <a name="group-unsubscribebymail"></a>group: unsubscribeByMail
 
@@ -34,7 +34,7 @@ POST /groups/{id}/unsubscribeByMail
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
-| Prefer | return=minimal. Если заголовок минимального отклика включен в заголовок запроса, то в отклике об успешном выполнении возвращается код `204 No Content`. Необязательный параметр.  | 
+| Prefer | return=minimal. Если заголовок минимального отклика включен в заголовок запроса, то в отклике об успешном выполнении возвращается код `204 No Content`. Необязательно.  | 
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

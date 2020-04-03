@@ -2,19 +2,19 @@
 title: Добавление элемента Скопедролемембер
 description: Добавление нового Scopedrolemembership изменен. Примечание. в настоящее время поддерживаются только роли администраторов *учетных записей* и *администраторов службы технической поддержки* для членства в пределах ролей.
 localization_priority: Normal
-author: davidmu1
+author: anandyadavMSFT
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6fe72ec5158eb055b6f4309089aa8dc0327571a7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2888e50142a77d5f669e9090aecf6b50aeaeb02e
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441716"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123330"
 ---
 # <a name="add-a-scopedrolemember"></a>Добавление элемента Скопедролемембер
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

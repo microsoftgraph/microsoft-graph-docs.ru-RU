@@ -1,16 +1,16 @@
 ---
 title: Создание параметра группы
-description: Используйте этот API, чтобы создать новый параметр на основе шаблонов, доступных в Граупсеттингтемплатес. Эти параметры могут быть на уровне клиента или на уровне группы. Запрос на создание должен предоставлять Сеттингвалуес для всех параметров, определенных в шаблоне. Для параметров, относящихся к группе, можно задать только параметр, определяющий, могут ли участники группы приглашать гостевых пользователей. Это поведение будет управляться после того, как возможность добавлять гостей в группу является общедоступной.
+description: Создайте новый параметр на основе шаблонов, доступных в Граупсеттингтемплатес.
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: yyuank
+ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 06b63deba03bee7646c4d0e0f0323b3720d6073b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9379ade9de508affa2ade5ba23f325617b9b314b
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516824"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124506"
 ---
 # <a name="create-a-group-setting"></a>Создание параметра группы
 

@@ -1,20 +1,20 @@
 ---
 title: Удаление administrativeUnit
 description: Удаление administrativeUnit.
-author: davidmu1
+author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 518b3545450a2aa6a3676d3cae19dccf06750b79
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cb6d649f3572f903de44b280aa692d10062d7110
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441769"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123379"
 ---
 # <a name="delete-administrativeunit"></a>Удаление administrativeUnit
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

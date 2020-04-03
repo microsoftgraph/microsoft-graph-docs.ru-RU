@@ -3,18 +3,18 @@ title: Список Програмконтролтипес
 description: В функции проверок доступа Azure AD перечислите все объекты Програмконтролтипе.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: ea8bb0572d5536a2b6a43d39f67535cfd4e97d3b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: markwahl-msft
+ms.openlocfilehash: 32a5fcbf793570168f87a8b2501a8ff6dd9061c1
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454950"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123120"
 ---
 # <a name="list-programcontroltypes"></a>Список Програмконтролтипес
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +40,7 @@ GET /programControlTypes
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 Не следует предоставлять текст запроса.
 
 ## <a name="response"></a>Отклик

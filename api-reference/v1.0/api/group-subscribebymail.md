@@ -2,15 +2,15 @@
 title: 'group: subscribeByMail'
 description: Вызов этого метода позволит текущему пользователю получать уведомления электронной почты о новых записях, событиях и файлах в этой группе. Поддерживается только для групп Office 365.
 localization_priority: Normal
-author: dkershaw10
+author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fc2cef21766cd4abb1abcd238ec20fce8b512e02
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3616a5125eca206e7f1cb3a5b62ee60098924db1
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516937"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43124086"
 ---
 # <a name="group-subscribebymail"></a>group: subscribeByMail
 
@@ -34,7 +34,7 @@ POST /groups/{id}/subscribeByMail
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
-| Prefer | return=minimal. Если заголовок минимального отклика включен в заголовок запроса, то в отклике об успешном выполнении возвращается код `204 No Content`. Необязательный параметр.  | 
+| Prefer | return=minimal. Если заголовок минимального отклика включен в заголовок запроса, то в отклике об успешном выполнении возвращается код `204 No Content`. Необязательно.  | 
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

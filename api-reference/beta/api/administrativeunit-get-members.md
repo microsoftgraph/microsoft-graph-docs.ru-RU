@@ -1,20 +1,20 @@
 ---
 title: Получение члена
 description: Используйте этот API для получения определенного элемента (пользователя или группы) в административной единице.
-author: davidmu1
+author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a40542dff19460bf166753dcfbeb401bb22b0b53
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8cd63ed6f7ad8cdd40e42da130c4b1eb2f3fb6aa
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441755"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43123351"
 ---
 # <a name="get-a-member"></a>Получение члена
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
