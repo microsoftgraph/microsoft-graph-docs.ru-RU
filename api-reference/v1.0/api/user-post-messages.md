@@ -2,34 +2,34 @@
 title: Создание объекта Message
 description: С помощью этого API можно создать черновик нового сообщения. Черновики можно создавать в любой папке и при необходимости изменять перед отправкой. Для сохранения в папке "Черновики" используйте ярлык /messages.
 localization_priority: Priority
-author: dkershaw10
-ms.prod: microsoft-identity-platform
+author: svpsiva
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1746f6a824f530379d1d6636d3c3b9a93d06d20b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: eb97265376c0a61ccf7f31d4c0131111ae9accf4
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508963"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108293"
 ---
-# <a name="create-message"></a><span data-ttu-id="e9a48-105">Создание объекта Message</span><span class="sxs-lookup"><span data-stu-id="e9a48-105">Create Message</span></span>
+# <a name="create-message"></a><span data-ttu-id="32a10-105">Создание объекта Message</span><span class="sxs-lookup"><span data-stu-id="32a10-105">Create Message</span></span>
 
-<span data-ttu-id="e9a48-106">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e9a48-106">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="32a10-106">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="32a10-106">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="e9a48-p102">С помощью этого API можно создать черновик нового сообщения. Черновики можно создавать в любой папке и при необходимости изменять перед отправкой. Для сохранения в папке "Черновики" используйте ярлык /messages.</span><span class="sxs-lookup"><span data-stu-id="e9a48-p102">Use this API to create a draft of a new message. Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut.</span></span>
+<span data-ttu-id="32a10-p102">С помощью этого API можно создать черновик нового сообщения. Черновики можно создавать в любой папке и при необходимости изменять перед отправкой. Для сохранения в папке "Черновики" используйте ярлык /messages.</span><span class="sxs-lookup"><span data-stu-id="32a10-p102">Use this API to create a draft of a new message. Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut.</span></span>
 
-<span data-ttu-id="e9a48-110">Создавая черновик, в тот же **POST**-запрос вы можете включить [attachment](../resources/attachment.md).</span><span class="sxs-lookup"><span data-stu-id="e9a48-110">While creating the draft in the same **POST** call, you can include an [attachment](../resources/attachment.md).</span></span>
+<span data-ttu-id="32a10-110">Создавая черновик, в тот же **POST**-запрос вы можете включить [attachment](../resources/attachment.md).</span><span class="sxs-lookup"><span data-stu-id="32a10-110">While creating the draft in the same **POST** call, you can include an [attachment](../resources/attachment.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e9a48-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e9a48-111">Permissions</span></span>
-<span data-ttu-id="e9a48-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e9a48-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="32a10-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="32a10-111">Permissions</span></span>
+<span data-ttu-id="32a10-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="32a10-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e9a48-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e9a48-114">Permission type</span></span>      | <span data-ttu-id="e9a48-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e9a48-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="32a10-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="32a10-114">Permission type</span></span>      | <span data-ttu-id="32a10-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="32a10-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e9a48-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e9a48-116">Delegated (work or school account)</span></span> | <span data-ttu-id="e9a48-117">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e9a48-117">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="e9a48-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e9a48-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e9a48-119">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e9a48-119">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="e9a48-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e9a48-120">Application</span></span> | <span data-ttu-id="e9a48-121">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e9a48-121">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="32a10-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="32a10-116">Delegated (work or school account)</span></span> | <span data-ttu-id="32a10-117">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="32a10-117">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="32a10-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="32a10-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="32a10-119">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="32a10-119">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="32a10-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="32a10-120">Application</span></span> | <span data-ttu-id="32a10-121">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="32a10-121">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e9a48-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e9a48-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="32a10-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="32a10-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages
@@ -37,26 +37,26 @@ POST /users/{id|userPrincipalName}/messages
 POST /me/mailFolders/{id}/messages
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
-## <a name="request-headers"></a><span data-ttu-id="e9a48-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e9a48-123">Request headers</span></span>
-| <span data-ttu-id="e9a48-124">Заголовок</span><span class="sxs-lookup"><span data-stu-id="e9a48-124">Header</span></span>       | <span data-ttu-id="e9a48-125">Значение</span><span class="sxs-lookup"><span data-stu-id="e9a48-125">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="32a10-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="32a10-123">Request headers</span></span>
+| <span data-ttu-id="32a10-124">Заголовок</span><span class="sxs-lookup"><span data-stu-id="32a10-124">Header</span></span>       | <span data-ttu-id="32a10-125">Значение</span><span class="sxs-lookup"><span data-stu-id="32a10-125">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="e9a48-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e9a48-126">Authorization</span></span>  | <span data-ttu-id="e9a48-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e9a48-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="e9a48-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e9a48-129">Content-Type</span></span>  | <span data-ttu-id="e9a48-130">application/json</span><span class="sxs-lookup"><span data-stu-id="e9a48-130">application/json</span></span>  |
+| <span data-ttu-id="32a10-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="32a10-126">Authorization</span></span>  | <span data-ttu-id="32a10-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="32a10-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="32a10-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="32a10-129">Content-Type</span></span>  | <span data-ttu-id="32a10-130">application/json</span><span class="sxs-lookup"><span data-stu-id="32a10-130">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="e9a48-131">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="e9a48-131">Request body</span></span>
-<span data-ttu-id="e9a48-132">Предоставьте в теле запроса описание объекта [message](../resources/message.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e9a48-132">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="32a10-131">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="32a10-131">Request body</span></span>
+<span data-ttu-id="32a10-132">Предоставьте в теле запроса описание объекта [message](../resources/message.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="32a10-132">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
 
-<span data-ttu-id="e9a48-133">Так как ресурс **message** поддерживает [расширения](/graph/extensibility-overview), с помощью операции `POST` можно добавлять настраиваемые свойства с собственными данными в сообщение при его создании.</span><span class="sxs-lookup"><span data-stu-id="e9a48-133">Since the **message** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the message while creating it.</span></span>
+<span data-ttu-id="32a10-133">Так как ресурс **message** поддерживает [расширения](/graph/extensibility-overview), с помощью операции `POST` можно добавлять настраиваемые свойства с собственными данными в сообщение при его создании.</span><span class="sxs-lookup"><span data-stu-id="32a10-133">Since the **message** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the message while creating it.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e9a48-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="e9a48-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="32a10-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="32a10-134">Response</span></span>
 
-<span data-ttu-id="e9a48-135">В случае успеха этот метод возвращает код отклика `201 Created` и объект [message](../resources/message.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="e9a48-135">If successful, this method returns `201 Created` response code and [message](../resources/message.md) object in the response body.</span></span>
+<span data-ttu-id="32a10-135">В случае успеха этот метод возвращает код отклика `201 Created` и объект [message](../resources/message.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="32a10-135">If successful, this method returns `201 Created` response code and [message](../resources/message.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e9a48-136">Пример</span><span class="sxs-lookup"><span data-stu-id="e9a48-136">Example</span></span>
-##### <a name="request-1"></a><span data-ttu-id="e9a48-137">Запрос 1</span><span class="sxs-lookup"><span data-stu-id="e9a48-137">Request 1</span></span>
-<span data-ttu-id="e9a48-138">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e9a48-138">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="32a10-136">Пример</span><span class="sxs-lookup"><span data-stu-id="32a10-136">Example</span></span>
+##### <a name="request-1"></a><span data-ttu-id="32a10-137">Запрос 1</span><span class="sxs-lookup"><span data-stu-id="32a10-137">Request 1</span></span>
+<span data-ttu-id="32a10-138">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="32a10-138">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="e9a48-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="e9a48-139">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="32a10-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="32a10-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_message_from_user"
@@ -81,27 +81,27 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="e9a48-140">C#</span><span class="sxs-lookup"><span data-stu-id="e9a48-140">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="32a10-140">C#</span><span class="sxs-lookup"><span data-stu-id="32a10-140">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-message-from-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e9a48-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e9a48-141">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="32a10-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="32a10-141">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-message-from-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="e9a48-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e9a48-142">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="32a10-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="32a10-142">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-message-from-user-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="e9a48-143">Java</span><span class="sxs-lookup"><span data-stu-id="e9a48-143">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="32a10-143">Java</span><span class="sxs-lookup"><span data-stu-id="32a10-143">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-message-from-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="e9a48-144">Предоставьте в теле запроса описание объекта [message](../resources/message.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e9a48-144">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
-##### <a name="response-1"></a><span data-ttu-id="e9a48-145">Отклик 1</span><span class="sxs-lookup"><span data-stu-id="e9a48-145">Response 1</span></span>
-<span data-ttu-id="e9a48-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="e9a48-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="32a10-144">Предоставьте в теле запроса описание объекта [message](../resources/message.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="32a10-144">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
+##### <a name="response-1"></a><span data-ttu-id="32a10-145">Отклик 1</span><span class="sxs-lookup"><span data-stu-id="32a10-145">Response 1</span></span>
+<span data-ttu-id="32a10-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="32a10-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_message_from_user",
@@ -162,10 +162,10 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request-2"></a><span data-ttu-id="e9a48-149">Запрос 2</span><span class="sxs-lookup"><span data-stu-id="e9a48-149">Request 2</span></span>
-<span data-ttu-id="e9a48-150">В следующем примере добавляется пара пользовательских заголовков сообщений Интернета при создании черновика сообщения.</span><span class="sxs-lookup"><span data-stu-id="e9a48-150">The next example adds a couple of customer Internet message headers when creating the message draft.</span></span>
+##### <a name="request-2"></a><span data-ttu-id="32a10-149">Запрос 2</span><span class="sxs-lookup"><span data-stu-id="32a10-149">Request 2</span></span>
+<span data-ttu-id="32a10-150">В следующем примере добавляется пара пользовательских заголовков сообщений Интернета при создании черновика сообщения.</span><span class="sxs-lookup"><span data-stu-id="32a10-150">The next example adds a couple of customer Internet message headers when creating the message draft.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="e9a48-151">HTTP</span><span class="sxs-lookup"><span data-stu-id="e9a48-151">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="32a10-151">HTTP</span><span class="sxs-lookup"><span data-stu-id="32a10-151">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_message_with_headers_from_user"
@@ -199,27 +199,27 @@ Content-type: application/json
     ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="e9a48-152">C#</span><span class="sxs-lookup"><span data-stu-id="e9a48-152">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="32a10-152">C#</span><span class="sxs-lookup"><span data-stu-id="32a10-152">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-message-with-headers-from-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e9a48-153">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e9a48-153">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="32a10-153">JavaScript</span><span class="sxs-lookup"><span data-stu-id="32a10-153">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-message-with-headers-from-user-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="e9a48-154">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e9a48-154">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="32a10-154">Objective-C</span><span class="sxs-lookup"><span data-stu-id="32a10-154">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-message-with-headers-from-user-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="e9a48-155">Java</span><span class="sxs-lookup"><span data-stu-id="e9a48-155">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="32a10-155">Java</span><span class="sxs-lookup"><span data-stu-id="32a10-155">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-message-with-headers-from-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-<span data-ttu-id="e9a48-156">Предоставьте в теле запроса описание объекта [message](../resources/message.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e9a48-156">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
-##### <a name="response-2"></a><span data-ttu-id="e9a48-157">Отклик 2</span><span class="sxs-lookup"><span data-stu-id="e9a48-157">Response 2</span></span>
-<span data-ttu-id="e9a48-158">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="e9a48-158">Here is an example of the response.</span></span> <span data-ttu-id="e9a48-159">Примечание. Заголовки сообщений Интернета не возвращаются по умолчанию в ответе POST.</span><span class="sxs-lookup"><span data-stu-id="e9a48-159">Note: Internet message headers are not returned by default in a POST response.</span></span> <span data-ttu-id="e9a48-160">Примечание. Представленный здесь объект отклика также может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="e9a48-160">The response object shown here may also be truncated for brevity.</span></span> <span data-ttu-id="e9a48-161">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="e9a48-161">All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="32a10-156">Предоставьте в теле запроса описание объекта [message](../resources/message.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="32a10-156">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
+##### <a name="response-2"></a><span data-ttu-id="32a10-157">Отклик 2</span><span class="sxs-lookup"><span data-stu-id="32a10-157">Response 2</span></span>
+<span data-ttu-id="32a10-158">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="32a10-158">Here is an example of the response.</span></span> <span data-ttu-id="32a10-159">Примечание. Заголовки сообщений Интернета не возвращаются по умолчанию в ответе POST.</span><span class="sxs-lookup"><span data-stu-id="32a10-159">Note: Internet message headers are not returned by default in a POST response.</span></span> <span data-ttu-id="32a10-160">Примечание. Представленный здесь объект отклика также может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="32a10-160">The response object shown here may also be truncated for brevity.</span></span> <span data-ttu-id="32a10-161">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="32a10-161">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_message_with_headers_from_user",
@@ -282,10 +282,10 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="e9a48-162">См. также</span><span class="sxs-lookup"><span data-stu-id="e9a48-162">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="32a10-162">См. также</span><span class="sxs-lookup"><span data-stu-id="32a10-162">See also</span></span>
 
-- [<span data-ttu-id="e9a48-163">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="e9a48-163">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="e9a48-164">Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="e9a48-164">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="32a10-163">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="32a10-163">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="32a10-164">Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="32a10-164">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
 <!--
 - [Add custom data to groups using schema extensions (preview)](/graph/extensibility-schema-groups)
 -->

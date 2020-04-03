@@ -1,65 +1,65 @@
 ---
 title: Отправка почты
 description: Отправка сообщения, указанного в теле запроса. Сообщение сохраняется в папке "Отправленные" по умолчанию.
-author: dkershaw10
+author: svpsiva
 localization_priority: Priority
-ms.prod: microsoft-identity-platform
+ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 66de4ab4feeee32a7f836d3b575c6ddadd434f7c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 037e503c2b25fb9711ade29941679236d23a2204
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508928"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108237"
 ---
-# <a name="send-mail"></a><span data-ttu-id="85ee8-104">Отправка почты</span><span class="sxs-lookup"><span data-stu-id="85ee8-104">Send mail</span></span>
+# <a name="send-mail"></a><span data-ttu-id="18158-104">Отправка почты</span><span class="sxs-lookup"><span data-stu-id="18158-104">Send mail</span></span>
 
-<span data-ttu-id="85ee8-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="85ee8-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="18158-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="18158-105">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="85ee8-p102">Отправка сообщения, указанного в теле запроса. Сообщение сохраняется в папке "Отправленные" по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="85ee8-p102">Send the message specified in the request body. The message is saved in the Sent Items folder by default.</span></span>
+<span data-ttu-id="18158-p102">Отправка сообщения, указанного в теле запроса. Сообщение сохраняется в папке "Отправленные" по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="18158-p102">Send the message specified in the request body. The message is saved in the Sent Items folder by default.</span></span>
 
-<span data-ttu-id="85ee8-108">Вы можете включить [вложенный файл](../resources/fileattachment.md) при вызове действия **sendMail**.</span><span class="sxs-lookup"><span data-stu-id="85ee8-108">You can include a [file attachment](../resources/fileattachment.md) in the same **sendMail** action call.</span></span>
+<span data-ttu-id="18158-108">Вы можете включить [вложенный файл](../resources/fileattachment.md) при вызове действия **sendMail**.</span><span class="sxs-lookup"><span data-stu-id="18158-108">You can include a [file attachment](../resources/fileattachment.md) in the same **sendMail** action call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="85ee8-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="85ee8-109">Permissions</span></span>
-<span data-ttu-id="85ee8-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="85ee8-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="18158-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="18158-109">Permissions</span></span>
+<span data-ttu-id="18158-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="18158-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="85ee8-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="85ee8-112">Permission type</span></span>      | <span data-ttu-id="85ee8-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="85ee8-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="18158-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="18158-112">Permission type</span></span>      | <span data-ttu-id="18158-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="18158-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="85ee8-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="85ee8-114">Delegated (work or school account)</span></span> | <span data-ttu-id="85ee8-115">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="85ee8-115">Mail.Send</span></span>    |
-|<span data-ttu-id="85ee8-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="85ee8-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="85ee8-117">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="85ee8-117">Mail.Send</span></span>    |
-|<span data-ttu-id="85ee8-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="85ee8-118">Application</span></span> | <span data-ttu-id="85ee8-119">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="85ee8-119">Mail.Send</span></span> |
+|<span data-ttu-id="18158-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="18158-114">Delegated (work or school account)</span></span> | <span data-ttu-id="18158-115">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="18158-115">Mail.Send</span></span>    |
+|<span data-ttu-id="18158-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="18158-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="18158-117">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="18158-117">Mail.Send</span></span>    |
+|<span data-ttu-id="18158-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="18158-118">Application</span></span> | <span data-ttu-id="18158-119">Mail.Send</span><span class="sxs-lookup"><span data-stu-id="18158-119">Mail.Send</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="85ee8-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="85ee8-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="18158-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="18158-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/sendMail
 POST /users/{id | userPrincipalName}/sendMail
 ```
-## <a name="request-headers"></a><span data-ttu-id="85ee8-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="85ee8-121">Request headers</span></span>
-| <span data-ttu-id="85ee8-122">Заголовок</span><span class="sxs-lookup"><span data-stu-id="85ee8-122">Header</span></span>       | <span data-ttu-id="85ee8-123">Значение</span><span class="sxs-lookup"><span data-stu-id="85ee8-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="18158-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="18158-121">Request headers</span></span>
+| <span data-ttu-id="18158-122">Заголовок</span><span class="sxs-lookup"><span data-stu-id="18158-122">Header</span></span>       | <span data-ttu-id="18158-123">Значение</span><span class="sxs-lookup"><span data-stu-id="18158-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="85ee8-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="85ee8-124">Authorization</span></span>  | <span data-ttu-id="85ee8-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="85ee8-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="85ee8-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="85ee8-127">Content-Type</span></span>  | <span data-ttu-id="85ee8-128">application/json</span><span class="sxs-lookup"><span data-stu-id="85ee8-128">application/json</span></span>  |
+| <span data-ttu-id="18158-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="18158-124">Authorization</span></span>  | <span data-ttu-id="18158-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="18158-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="18158-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="18158-127">Content-Type</span></span>  | <span data-ttu-id="18158-128">application/json</span><span class="sxs-lookup"><span data-stu-id="18158-128">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="85ee8-129">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="85ee8-129">Request body</span></span>
-<span data-ttu-id="85ee8-130">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="85ee8-130">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="18158-129">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="18158-129">Request body</span></span>
+<span data-ttu-id="18158-130">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="18158-130">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="85ee8-131">Параметр</span><span class="sxs-lookup"><span data-stu-id="85ee8-131">Parameter</span></span>    | <span data-ttu-id="85ee8-132">Тип</span><span class="sxs-lookup"><span data-stu-id="85ee8-132">Type</span></span>   |<span data-ttu-id="85ee8-133">Описание</span><span class="sxs-lookup"><span data-stu-id="85ee8-133">Description</span></span>|
+| <span data-ttu-id="18158-131">Параметр</span><span class="sxs-lookup"><span data-stu-id="18158-131">Parameter</span></span>    | <span data-ttu-id="18158-132">Тип</span><span class="sxs-lookup"><span data-stu-id="18158-132">Type</span></span>   |<span data-ttu-id="18158-133">Описание</span><span class="sxs-lookup"><span data-stu-id="18158-133">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="85ee8-134">message</span><span class="sxs-lookup"><span data-stu-id="85ee8-134">message</span></span>|[<span data-ttu-id="85ee8-135">Message</span><span class="sxs-lookup"><span data-stu-id="85ee8-135">Message</span></span>](../resources/message.md)|<span data-ttu-id="85ee8-p105">Отправляемое сообщение. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="85ee8-p105">The message to send. Required.</span></span>|
-|<span data-ttu-id="85ee8-138">saveToSentItems</span><span class="sxs-lookup"><span data-stu-id="85ee8-138">saveToSentItems</span></span>|<span data-ttu-id="85ee8-139">Boolean</span><span class="sxs-lookup"><span data-stu-id="85ee8-139">Boolean</span></span>|<span data-ttu-id="85ee8-p106">Указывает, нужно ли сохранять сообщение в папке "Отправленные". Указывайте этот параметр, если задано значение false (по умолчанию используется true).  Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="85ee8-p106">Indicates whether to save the message in Sent Items. Specify it only if the parameter is false; default is true.  Optional.</span></span> |
+|<span data-ttu-id="18158-134">message</span><span class="sxs-lookup"><span data-stu-id="18158-134">message</span></span>|[<span data-ttu-id="18158-135">Message</span><span class="sxs-lookup"><span data-stu-id="18158-135">Message</span></span>](../resources/message.md)|<span data-ttu-id="18158-p105">Отправляемое сообщение. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="18158-p105">The message to send. Required.</span></span>|
+|<span data-ttu-id="18158-138">saveToSentItems</span><span class="sxs-lookup"><span data-stu-id="18158-138">saveToSentItems</span></span>|<span data-ttu-id="18158-139">Boolean</span><span class="sxs-lookup"><span data-stu-id="18158-139">Boolean</span></span>|<span data-ttu-id="18158-p106">Указывает, нужно ли сохранять сообщение в папке "Отправленные". Указывайте этот параметр, если задано значение false (по умолчанию используется true).  Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="18158-p106">Indicates whether to save the message in Sent Items. Specify it only if the parameter is false; default is true.  Optional.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="85ee8-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="85ee8-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="18158-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="18158-143">Response</span></span>
 
-<span data-ttu-id="85ee8-p107">В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="85ee8-p107">If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="18158-p107">В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="18158-p107">If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="85ee8-146">Пример</span><span class="sxs-lookup"><span data-stu-id="85ee8-146">Example</span></span>
-<span data-ttu-id="85ee8-147">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="85ee8-147">Here is an example of how to call this API.</span></span>
-##### <a name="request-1"></a><span data-ttu-id="85ee8-148">Запрос 1</span><span class="sxs-lookup"><span data-stu-id="85ee8-148">Request 1</span></span>
-<span data-ttu-id="85ee8-149">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="85ee8-149">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="18158-146">Пример</span><span class="sxs-lookup"><span data-stu-id="18158-146">Example</span></span>
+<span data-ttu-id="18158-147">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="18158-147">Here is an example of how to call this API.</span></span>
+##### <a name="request-1"></a><span data-ttu-id="18158-148">Запрос 1</span><span class="sxs-lookup"><span data-stu-id="18158-148">Request 1</span></span>
+<span data-ttu-id="18158-149">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="18158-149">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="85ee8-150">HTTP</span><span class="sxs-lookup"><span data-stu-id="85ee8-150">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="18158-150">HTTP</span><span class="sxs-lookup"><span data-stu-id="18158-150">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_sendmail"
@@ -93,27 +93,27 @@ Content-type: application/json
   "saveToSentItems": "false"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="85ee8-151">C#</span><span class="sxs-lookup"><span data-stu-id="85ee8-151">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="18158-151">C#</span><span class="sxs-lookup"><span data-stu-id="18158-151">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-sendmail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="85ee8-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="85ee8-152">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="18158-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="18158-152">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-sendmail-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="85ee8-153">Objective-C</span><span class="sxs-lookup"><span data-stu-id="85ee8-153">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="18158-153">Objective-C</span><span class="sxs-lookup"><span data-stu-id="18158-153">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-sendmail-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="85ee8-154">Java</span><span class="sxs-lookup"><span data-stu-id="85ee8-154">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="18158-154">Java</span><span class="sxs-lookup"><span data-stu-id="18158-154">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-sendmail-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response-1"></a><span data-ttu-id="85ee8-155">Отклик 1</span><span class="sxs-lookup"><span data-stu-id="85ee8-155">Response 1</span></span>
-<span data-ttu-id="85ee8-156">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="85ee8-156">Here is an example of the response.</span></span>
+##### <a name="response-1"></a><span data-ttu-id="18158-155">Отклик 1</span><span class="sxs-lookup"><span data-stu-id="18158-155">Response 1</span></span>
+<span data-ttu-id="18158-156">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="18158-156">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -122,10 +122,10 @@ Content-type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="request-2"></a><span data-ttu-id="85ee8-157">Запрос 2</span><span class="sxs-lookup"><span data-stu-id="85ee8-157">Request 2</span></span>
-<span data-ttu-id="85ee8-158">В следующем примере создается сообщение с использованием настраиваемых заголовков сообщений Интернета и выполняется его отправка.</span><span class="sxs-lookup"><span data-stu-id="85ee8-158">The next example creates a message with custom Internet message headers and sends the message.</span></span>
+##### <a name="request-2"></a><span data-ttu-id="18158-157">Запрос 2</span><span class="sxs-lookup"><span data-stu-id="18158-157">Request 2</span></span>
+<span data-ttu-id="18158-158">В следующем примере создается сообщение с использованием настраиваемых заголовков сообщений Интернета и выполняется его отправка.</span><span class="sxs-lookup"><span data-stu-id="18158-158">The next example creates a message with custom Internet message headers and sends the message.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="85ee8-159">HTTP</span><span class="sxs-lookup"><span data-stu-id="85ee8-159">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="18158-159">HTTP</span><span class="sxs-lookup"><span data-stu-id="18158-159">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_headers"
@@ -161,27 +161,27 @@ Content-type: application/json
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="85ee8-160">C#</span><span class="sxs-lookup"><span data-stu-id="85ee8-160">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="18158-160">C#</span><span class="sxs-lookup"><span data-stu-id="18158-160">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-sendmail-with-headers-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="85ee8-161">JavaScript</span><span class="sxs-lookup"><span data-stu-id="85ee8-161">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="18158-161">JavaScript</span><span class="sxs-lookup"><span data-stu-id="18158-161">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-sendmail-with-headers-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="85ee8-162">Objective-C</span><span class="sxs-lookup"><span data-stu-id="85ee8-162">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="18158-162">Objective-C</span><span class="sxs-lookup"><span data-stu-id="18158-162">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-sendmail-with-headers-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="85ee8-163">Java</span><span class="sxs-lookup"><span data-stu-id="85ee8-163">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="18158-163">Java</span><span class="sxs-lookup"><span data-stu-id="18158-163">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-sendmail-with-headers-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response-2"></a><span data-ttu-id="85ee8-164">Отклик 2</span><span class="sxs-lookup"><span data-stu-id="85ee8-164">Response 2</span></span>
-<span data-ttu-id="85ee8-165">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="85ee8-165">Here is an example of the response.</span></span>
+##### <a name="response-2"></a><span data-ttu-id="18158-164">Отклик 2</span><span class="sxs-lookup"><span data-stu-id="18158-164">Response 2</span></span>
+<span data-ttu-id="18158-165">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="18158-165">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -190,12 +190,12 @@ Content-type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="request-3"></a><span data-ttu-id="85ee8-166">Запрос 3</span><span class="sxs-lookup"><span data-stu-id="85ee8-166">Request 3</span></span>
+##### <a name="request-3"></a><span data-ttu-id="18158-166">Запрос 3</span><span class="sxs-lookup"><span data-stu-id="18158-166">Request 3</span></span>
 
-<span data-ttu-id="85ee8-167">В следующем примере создается сообщение с вложением файла и отправляется сообщение.</span><span class="sxs-lookup"><span data-stu-id="85ee8-167">The next example creates a message with a file attachment and sends the message.</span></span>
+<span data-ttu-id="18158-167">В следующем примере создается сообщение с вложением файла и отправляется сообщение.</span><span class="sxs-lookup"><span data-stu-id="18158-167">The next example creates a message with a file attachment and sends the message.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="85ee8-168">HTTP</span><span class="sxs-lookup"><span data-stu-id="85ee8-168">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="18158-168">HTTP</span><span class="sxs-lookup"><span data-stu-id="18158-168">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_attachment"
@@ -230,28 +230,28 @@ Content-type: application/json
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="85ee8-169">C#</span><span class="sxs-lookup"><span data-stu-id="85ee8-169">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="18158-169">C#</span><span class="sxs-lookup"><span data-stu-id="18158-169">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-sendmail-with-attachment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="85ee8-170">JavaScript</span><span class="sxs-lookup"><span data-stu-id="85ee8-170">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="18158-170">JavaScript</span><span class="sxs-lookup"><span data-stu-id="18158-170">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-sendmail-with-attachment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="85ee8-171">Objective-C</span><span class="sxs-lookup"><span data-stu-id="85ee8-171">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="18158-171">Objective-C</span><span class="sxs-lookup"><span data-stu-id="18158-171">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-sendmail-with-attachment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="85ee8-172">Java</span><span class="sxs-lookup"><span data-stu-id="85ee8-172">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="18158-172">Java</span><span class="sxs-lookup"><span data-stu-id="18158-172">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-sendmail-with-attachment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response-3"></a><span data-ttu-id="85ee8-173">Отклик 3</span><span class="sxs-lookup"><span data-stu-id="85ee8-173">Response 3</span></span>
+##### <a name="response-3"></a><span data-ttu-id="18158-173">Отклик 3</span><span class="sxs-lookup"><span data-stu-id="18158-173">Response 3</span></span>
 
-<span data-ttu-id="85ee8-174">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="85ee8-174">Here is an example of the response.</span></span>
+<span data-ttu-id="18158-174">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="18158-174">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
