@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 31982cb502ac21808d32048bebf5fc724a9501d9
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: 195eeb9171c476fb20eeb354458c38efbb6a4566
+ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38302873"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43127225"
 ---
 ```csharp
 
@@ -16,7 +16,7 @@ var driveItem = new DriveItem
     Name = "My Day at the Beach",
     AdditionalData = new Dictionary<string, object>()
     {
-        {"@name.conflictBehavior","rename"}
+        {"@microsoft.graph.conflictBehavior","rename"}
     },
     Bundle = new Bundle
     {
