@@ -5,30 +5,33 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d426d69b42c0f75b2e52abf8a835f3deb170c778
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 04ec124393bb5925c4f1f8c4596c6320de3c1f7b
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42423261"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144228"
 ---
-# <a name="delete-event"></a><span data-ttu-id="ebb49-103">Удаление события</span><span class="sxs-lookup"><span data-stu-id="ebb49-103">Delete event</span></span>
+# <a name="delete-event"></a><span data-ttu-id="b840e-103">Удаление события</span><span class="sxs-lookup"><span data-stu-id="b840e-103">Delete event</span></span>
 
-<span data-ttu-id="ebb49-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="ebb49-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b840e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b840e-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ebb49-105">Удаление события.</span><span class="sxs-lookup"><span data-stu-id="ebb49-105">Delete event.</span></span>
-## <a name="permissions"></a><span data-ttu-id="ebb49-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ebb49-106">Permissions</span></span>
-<span data-ttu-id="ebb49-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ebb49-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b840e-105">Удаляет указанное [событие](../resources/event.md) из содержащегося календаря.</span><span class="sxs-lookup"><span data-stu-id="b840e-105">Removes the specified [event](../resources/event.md) from the containing calendar.</span></span> 
 
-|<span data-ttu-id="ebb49-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ebb49-109">Permission type</span></span>      | <span data-ttu-id="ebb49-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ebb49-110">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="b840e-106">Если событие является собранием, удаление события в календаре организатора отправляет сообщение об отмене участникам собрания.</span><span class="sxs-lookup"><span data-stu-id="b840e-106">If the event is a meeting, deleting the event on the organizer's calendar sends a cancellation message to the meeting attendees.</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="b840e-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b840e-107">Permissions</span></span>
+<span data-ttu-id="b840e-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b840e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="b840e-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b840e-110">Permission type</span></span>      | <span data-ttu-id="b840e-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b840e-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ebb49-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ebb49-111">Delegated (work or school account)</span></span> | <span data-ttu-id="ebb49-112">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ebb49-112">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="ebb49-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ebb49-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ebb49-114">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ebb49-114">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="ebb49-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ebb49-115">Application</span></span> | <span data-ttu-id="ebb49-116">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ebb49-116">Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="b840e-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b840e-112">Delegated (work or school account)</span></span> | <span data-ttu-id="b840e-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b840e-113">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="b840e-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b840e-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b840e-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b840e-115">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="b840e-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b840e-116">Application</span></span> | <span data-ttu-id="b840e-117">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b840e-117">Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ebb49-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ebb49-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b840e-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b840e-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/events/{id}
@@ -48,23 +51,23 @@ DELETE /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
 DELETE /me/calendargroups/{id}/calendars/{id}/events/{id}
 DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="ebb49-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ebb49-118">Request headers</span></span>
-| <span data-ttu-id="ebb49-119">Имя</span><span class="sxs-lookup"><span data-stu-id="ebb49-119">Name</span></span>       | <span data-ttu-id="ebb49-120">Тип</span><span class="sxs-lookup"><span data-stu-id="ebb49-120">Type</span></span> | <span data-ttu-id="ebb49-121">Описание</span><span class="sxs-lookup"><span data-stu-id="ebb49-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b840e-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b840e-119">Request headers</span></span>
+| <span data-ttu-id="b840e-120">Имя</span><span class="sxs-lookup"><span data-stu-id="b840e-120">Name</span></span>       | <span data-ttu-id="b840e-121">Тип</span><span class="sxs-lookup"><span data-stu-id="b840e-121">Type</span></span> | <span data-ttu-id="b840e-122">Описание</span><span class="sxs-lookup"><span data-stu-id="b840e-122">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="ebb49-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="ebb49-122">Authorization</span></span>  | <span data-ttu-id="ebb49-123">string</span><span class="sxs-lookup"><span data-stu-id="ebb49-123">string</span></span>  | <span data-ttu-id="ebb49-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ebb49-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b840e-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="b840e-123">Authorization</span></span>  | <span data-ttu-id="b840e-124">string</span><span class="sxs-lookup"><span data-stu-id="b840e-124">string</span></span>  | <span data-ttu-id="b840e-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b840e-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ebb49-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ebb49-126">Request body</span></span>
-<span data-ttu-id="ebb49-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="ebb49-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b840e-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b840e-127">Request body</span></span>
+<span data-ttu-id="b840e-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="b840e-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ebb49-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="ebb49-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b840e-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="b840e-129">Response</span></span>
 
-<span data-ttu-id="ebb49-p103">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="ebb49-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="b840e-p103">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="b840e-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ebb49-131">Пример</span><span class="sxs-lookup"><span data-stu-id="ebb49-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ebb49-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="ebb49-132">Request</span></span>
-<span data-ttu-id="ebb49-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ebb49-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="b840e-132">Пример</span><span class="sxs-lookup"><span data-stu-id="b840e-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="b840e-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="b840e-133">Request</span></span>
+<span data-ttu-id="b840e-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b840e-134">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="ebb49-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="ebb49-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b840e-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="b840e-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_event"
@@ -72,22 +75,22 @@ DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 ```http
 DELETE https://graph.microsoft.com/beta/me/events/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="ebb49-135">C#</span><span class="sxs-lookup"><span data-stu-id="ebb49-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b840e-136">C#</span><span class="sxs-lookup"><span data-stu-id="b840e-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-event-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ebb49-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ebb49-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b840e-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b840e-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-event-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ebb49-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ebb49-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b840e-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b840e-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-event-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="ebb49-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="ebb49-138">Response</span></span>
-<span data-ttu-id="ebb49-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="ebb49-139">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="b840e-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="b840e-139">Response</span></span>
+<span data-ttu-id="b840e-140">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="b840e-140">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
