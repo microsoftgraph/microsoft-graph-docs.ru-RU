@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Ресурс Drive — объект верхнего уровня, представляющий хранилище OneDrive пользователя или библиотеку документов в SharePoint.
 doc_type: resourcePageType
-ms.openlocfilehash: 3b3d7d2d82ab2a6539ace2fa143ceaad55722336
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ba048773d49c2fdea3896f3200a3c9112af0969e
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531564"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108384"
 ---
 # <a name="drive-resource-type"></a>Тип ресурса Drive
 
@@ -57,6 +57,7 @@ ms.locfileid: "42531564"
   "createdDateTime": "string (timestamp)",
   "description": "string",
   "driveType": "personal | business | documentLibrary",
+  "following": [{"@odata.type": "microsoft.graph.driveItem"}],
   "items": [ { "@odata.type": "microsoft.graph.driveItem" } ],
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "string (timestamp)",
@@ -97,6 +98,7 @@ ms.locfileid: "42531564"
 
 | Связь | Тип                                 | Описание
 |:-------------|:-------------------------------------|:-----------------------
+| following    | Коллекция [DriveItem](driveitem.md) | Список элементов, которые отслеживает пользователь. Только в OneDrive для бизнеса.
 | items        | Коллекция [DriveItem](driveitem.md) | Все элементы, содержащиеся на диске. Только для чтения. Допускается значение null.
 | root         | [DriveItem](driveitem.md)            | Корневая папка на диске. Только для чтения.
 | special      | Коллекция [DriveItem](driveitem.md) | Коллекция общих папок, доступных в OneDrive. Только для чтения. Допускается значение null.
@@ -110,6 +112,7 @@ ms.locfileid: "42531564"
 | [Получение корневой папки для ресурса Drive по умолчанию пользователя][item-get]       | `GET /drive/root`           |
 | [Получение списка дочерних элементов ресурса Drive][item-children]             | `GET /drive/root/children`  |
 | [Получение списка изменений для всех элементов в ресурсе Drive][item-changes]    | `GET /drive/root/delta`     |
+| [Получение списка отслеживаемых объектов driveItems пользователя][drive-following]         | `Get /drive/followed`       |
 | [Поиск элементов в ресурсе Drive][item-search]               | `GET /drive/root/search`    |
 | [Доступ к специальной папке](../api/drive-get-specialfolder.md) | `GET /drive/special/{name}` |
 
@@ -124,6 +127,7 @@ ms.locfileid: "42531564"
 [item-changes]: ../api/driveitem-delta.md
 [item-search]: ../api/driveitem-search.md
 [item-children]: ../api/driveitem-list-children.md
+[drive-following]: ../api/drive-list-following.md
 
 
 <!-- {

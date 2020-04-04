@@ -5,12 +5,12 @@ localization_priority: Priority
 author: baywet
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: b825101cc3b32ea3ab562bd317c7dc511cc00079
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d8f8c8450f568917e5211048c164e02ad503e869
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533402"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108195"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Получение уведомлений об изменениях с помощью API Microsoft Graph 
 
@@ -30,8 +30,9 @@ REST API Microsoft Graph использует механизм веб-перех
 | Групповой [чат][] Office 365  | Изменения в разговорах группы:<br>`groups/{id}/conversations` | Нет |
 | [driveItem][]на OneDrive (личный) | Изменения содержимого в иерархии _любой папки_:<br>`/users/{id}/drive/root` | Нет |
 | [driveItem][]на OneDrive для бизнеса | Изменения содержимого в иерархии _корневой папки_:<br>`/drives/{id}/root`<br> `/users/{id}/drive/root` | Нет |
+| [список][] на [сайте][] SharePoint | Изменения содержимого в _списке_: <br>`/sites/{id}/lists/{id}` | Нет |
 | [Оповещение][] безопасности | Изменения в конкретном предупреждении:<br>`/security/alerts/{id}` <br>Изменения в отфильтрованных оповещениях:<br> `/security/alerts/?$filter`| Нет |
-| [chatMessage](/graph/api/resources/subscription?view=graph-rest-beta) Teams | Изменения в сообщениях чата во всех каналах во всех командах:<br>`/teams/allMessages` <br>Изменения в сообщениях чата на определенном канале:<br>`/teams/{id}/channels/{id}/messages`<br>Изменения в сообщениях чата во всех чатах:<br>`/chats/allMessages` <br>Изменения в сообщениях чата в конкретном чате:<br>`/chats/{id}/messages` | Да |
+| [chatMessage](/graph/api/resources/subscription?view=graph-rest-v1.0) Teams | Изменения в сообщениях чата во всех каналах во всех командах:<br>`/teams/allMessages` <br>Изменения в сообщениях чата на определенном канале:<br>`/teams/{id}/channels/{id}/messages`<br>Изменения в сообщениях чата во всех чатах:<br>`/chats/allMessages` <br>Изменения в сообщениях чата в конкретном чате:<br>`/chats/{id}/messages` | Да |
 
 > **Примечание**. Любой путь ресурса, начинающийся с `/users/{id}`, может принимать `/me` для указания вошедшего пользователя.
 
@@ -41,9 +42,9 @@ REST API Microsoft Graph использует механизм веб-перех
 
 | Тип разрешения                        | Поддерживаемые типы ресурсов                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Делегированное — рабочая или учебная учетная запись     | [alert][], [contact][], [conversation][], [driveItem][], [event][], [group][], [message][], [user][]|
-| Делегированное — личная учетная запись Майкрософт | [contact][], [driveItem][], [event][], [message][]                                        |
-| Для приложений                            | [alert][], [contact][], [driveItem][], [event][], [group][], [message][], [user][]|
+| Делегированное — рабочая или учебная учетная запись     | [alert][], [contact][], [conversation][], [driveItem][], [list][], [event][], [group][], [message][], [user][]|
+| Делегированное — личная учетная запись Майкрософт | [contact][], [driveItem][], [list][], [event][], [message][]                                        |
+| Для приложения                            | [alert][], [contact][], [list][], [driveItem][], [event][], [group][], [message][], [user][]|
 
 
 ## <a name="see-also"></a>См. также
@@ -58,6 +59,8 @@ REST API Microsoft Graph использует механизм веб-перех
 [contact]: ./contact.md
 [conversation]: ./conversation.md
 [driveItem]: ./driveitem.md
+[list]: ./list.md
+[site]: ./site.md
 [event]: ./event.md
 [group]: ./group.md
 [message]: ./message.md

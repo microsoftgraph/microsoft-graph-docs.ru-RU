@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Ресурс list представляет список на сайте.
 doc_type: resourcePageType
-ms.openlocfilehash: af970267f4aebcac986659324a30238a8510c010
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a63f4bdbf3ef8290a9295bc0ecb9abdee5452b45
+ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447586"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43108447"
 ---
 # <a name="list-resource"></a>Ресурс List
 
@@ -37,6 +37,7 @@ ms.locfileid: "42447586"
 | [Обновление элемента списка][]      | PATCH /lists/{list-id}/items/{item-id}
 | [Удаление элемента списка][]      | DELETE /lists/{list-id}/items/{item-id}
 | [Создание элемента в списке][]      | POST /lists/{list-id}
+| [Получение канала WebSocket][] | GET /lists/{list-id}/subscriptions/socketIo
 
 [Получение списка]: ../api/list-get.md
 [Создание списка]: ../api/list-create.md
@@ -44,8 +45,9 @@ ms.locfileid: "42447586"
 [Обновление элемента списка]: ../api/listitem-update.md
 [Удаление элемента списка]: ../api/listitem-delete.md
 [Создание элемента в списке]: ../api/listitem-create.md
+[Получение канала WebSocket]: ../api/subscriptions-socketio.md
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление ресурса **list** в формате JSON.
 
@@ -73,6 +75,7 @@ ms.locfileid: "42447586"
     "template": "documentLibrary | genericList | survey | links | announcements | contacts | accessRequest ..."
   },
   "system": false,
+  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
 
   /* inherited from baseItem */
   "id": "string",
@@ -125,6 +128,7 @@ ms.locfileid: "42447586"
 | **items**         | Коллекция ([listItem][])         | Все элементы, содержащиеся в списке.
 | **columns**       | Коллекция ([columnDefinition][]) | Коллекция определений полей для данного списка.
 | **contentTypes**  | Коллекция ([contentType][])      | Коллекция типов контента в данном списке.
+| **subscriptions** | Коллекция ([subscription][])     | Набор подписок на список.
 
 [baseItem]: baseitem.md
 [contentType]: contenttype.md
@@ -138,6 +142,7 @@ ms.locfileid: "42447586"
 [sharepointIds]: sharepointids.md
 [site]: site.md
 [systemFacet]: systemfacet.md
+[subscription]: subscription.md
 
 <!-- {
   "type": "#page.annotation",
