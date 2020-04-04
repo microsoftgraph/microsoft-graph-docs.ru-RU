@@ -5,16 +5,18 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0dbc405c1f41b635dc5a28c00c09156d17d58bec
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: d0b6207eaa0329a1f664298955a57f2d6fbb1e9a
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124079"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144256"
 ---
 # <a name="group-resetunseencount"></a>group: resetUnseenCount
 
-Пространство имен: Microsoft. Graph сброс значений unseencount всех сообщений, которые текущий пользователь не видел с момента последнего посещения. Поддерживается только для групп Office 365.
+Пространство имен: microsoft.graph
+
+Сброс unseenCount всех записей, которые текущий пользователь не просматривал со времени своего предыдущего посещения. Поддерживается только для групп Office 365.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

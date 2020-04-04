@@ -3,12 +3,12 @@ title: Шаблоны в наборе инструментов Microsoft Graph
 description: Используйте настраиваемые шаблоны для изменения содержимого компонента.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: a69460b788a2e3ef7558ba8e0f0630557943d463
-ms.sourcegitcommit: 1a84f80798692fc0381b1acecfe023b3ce6ab02c
+ms.openlocfilehash: 46a1f9b771f358de6099bf1266c10c4c1ebe0cb0
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41953601"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144263"
 ---
 # <a name="templates-in-the-microsoft-graph-toolkit"></a>Шаблоны в наборе инструментов Microsoft Graph
 
@@ -122,47 +122,87 @@ ms.locfileid: "41953601"
 </template>
 ```
 
-## <a name="converters"></a>Типов
+## <a name="templatecontext"></a>темплатеконтекст
 
-Во многих случаях может потребоваться преобразовать данные перед их представлением в шаблоне. Например, вам может потребоваться правильно отформатировать дату перед отображением. В таких случаях может потребоваться использование конвертера шаблонов.
-
-Чтобы использовать конвертер шаблонов, сначала необходимо определить функцию, которая будет выполнять преобразование. Например, вы можете определить функцию для форматирования даты.
+Каждый компонент в наборе инструментов Microsoft Graph определяет `templateContext` свойство, которое можно использовать для передачи дополнительных данных в любой шаблон компонента. 
 
 ```ts
-getTimeRange(event) {
-  // TODO: format a string from the event object as you wish
-  // timeRange = ...
+document.querySelector('mgt-agenda').templateContext = {
 
-  return timeRange;
+  someObject: {},
+  formatDate: (date: Date) => { /* format date and return */ },
+  someEventHandler: (e) => { /* handleEvent */  }
+
 }
 ```
 
-Затем определите новый конвертер для элемента и присвойте ему имя по своему усмотрению.
+Теперь свойства `templateContext` объекта станут доступны для использования в выражениях привязки в шаблоне.
+
+Это может быть полезен во многих сценариях, таких как преобразование данных в привязки или привязывание к событиям. 
+
+### <a name="converters"></a>Типов
+
+Во многих случаях может потребоваться преобразовать данные перед их представлением в шаблоне. Например, вам может потребоваться правильно отформатировать дату перед отображением. В таких случаях может потребоваться использование конвертера шаблонов.
+
+Чтобы использовать конвертер шаблонов, сначала необходимо определить функцию, которая будет выполнять преобразование. Например, вы можете определить функцию для преобразования объекта события в отформатированный диапазон времени.
 
 ```ts
-let agenda = document.querySelector('mgt-agenda');
-agenda.templateConverters["myConverter"] = getTimeRange;
+document.querySelector('mgt-agenda').templateContext = {
+
+  getTimeRange: (event) => {
+    // TODO: format a string from the event object as you wish
+    // timeRange = ...
+
+    return timeRange;
+  }
+
+}
 ```
 
-Чтобы использовать конвертер в шаблоне, используйте тройные фигурные скобки.
+Чтобы использовать конвертер в шаблоне, используйте его, как если бы вы использовали функцию в коде программной части.
 
 ```html
 <template data-type="event">
-  <div>{{{ myConverter(event) }}}</div>
+  <div>{{ getTimeRange(event) }}</div>
 </template>
 ```
 
-Вы также можете использовать встроенные функции, не определяя Конвертер шаблонов.
+### <a name="event-or-property-binding"></a>Привязка события или свойства
+
+`data-props` Атрибут позволяет добавить прослушиватель событий или задать значение свойства непосредственно в шаблонах. 
 
 ```html
-<template data-type="event">
-  <div>{{{ event.subject.toUpperCase() }}}</div>
+<template>
+    <button data-props="{{@click: myEvent, myProp: value}}"></button>
 </template>
 ```
+
+Свойства Data/PROPS принимают строку с разделителями запятыми для каждого свойства или обработчика событий, который может потребоваться задать. 
+
+Чтобы добавить обработчик событий, добавьте к имени события префикс `@`. Обработчик события должен быть доступен в `templateContext` элементе.
+
+```ts
+document.querySelector('mgt-agenda').templateContext = {
+
+  someEventHandler: (e, context, root) => { /* handleEvent */  }
+
+}
+```
+
+```html
+<template>
+    <button data-props="{{@click: someEventHandler}}"></button>
+</template>
+```
+
+Аргументы события, контекст данных и корневой элемент шаблона передаются обработчику событий в качестве параметров.
+
 
 ## <a name="template-rendered-event"></a>Событие, отображаемое в шаблоне
 
-В некоторых случаях может потребоваться получить ссылку на визуализированный элемент. Это может быть удобно для добавления прослушивателей событий в элементы шаблона. В этом случае вы можете использовать `templateRendered` событие.
+В некоторых случаях может потребоваться получить ссылку на визуализированный элемент. Это может быть удобно, если вы хотите самостоятельно обработать отображение контента или изменить отображаемый элемент.
+
+В этом сценарии можно использовать `templateRendered` событие, которое срабатывает после отображения шаблона.
 
 ```ts
 let agenda = document.querySelector('mgt-agenda');

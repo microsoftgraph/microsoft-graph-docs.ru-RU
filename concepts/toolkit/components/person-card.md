@@ -3,12 +3,12 @@ title: Компонент Person Card в наборе инструментов M
 description: Компонент Person-Card является компонентом для отображения дополнительных сведений, относящихся к пользователю.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 336e6beabc227a2574e41cf6a658d38fdabfcdcf
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: 3d440f1340f9ee3f40c37538b1befcacd9867dc1
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639928"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144291"
 ---
 # <a name="person-card-component-in-the-microsoft-graph-toolkit"></a>Компонент Person Card в наборе инструментов Microsoft Graph
 
@@ -23,6 +23,21 @@ ms.locfileid: "42639928"
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-card--person-card-hover&source=docs" height="400"></iframe>
 
 [Откройте этот пример в меню упр. dev.](https://mgt.dev/?path=/story/components-mgt-person-card--person-card-hover&source=docs)
+
+## <a name="setup-for-teams-integrations"></a>Настройка интеграции с Teams
+
+Компонент Person Card позволяет пользователю обращаться к конечному человеку, в том числе через чат Teams. Если вы используете компонент в приложении "Вкладка Teams", вы можете убедиться, что компонент детально передается непосредственно в чат, а не открывает `microsoftTeamsLib` окно `TeamsProvider`браузера, задав значение in.
+
+Если компоненту Person Card не удается обнаружить lib Teams, компонент будет пытаться открыть веб-клиент Teams.
+
+```ts
+import * as MicrosoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
+import {TeamsHelper} from '@microsoft/mgt';
+
+TeamsHelper.microsoftTeamsLib = MicrosoftTeams;
+```
+
+Для получения дополнительных сведений о `TeamsProvider` поставщике обратитесь к разделу [поставщик Microsoft Teams](../providers/teams.md).
 
 ## <a name="properties"></a>Свойства
 
@@ -40,9 +55,12 @@ ms.locfileid: "42639928"
 Компонент Person Card использует [шаблоны](../templates.md) , позволяющие добавлять или заменять части компонента. Чтобы указать шаблон, включите `<template>` элемент в компонент и задайте для него `data-type` одно из следующих значений.
 
 | Тип данных | Контекст данных | Описание |
-| --- | --- | --- |
+| - | - | - |
+| нет данных | null | Шаблон, используемый, если данные недоступны.
 | умолчани | `person`: Объект сведений о лице <br> `personImage`: URL-адрес изображения | Шаблон по умолчанию заменяет весь компонент своим собственным. |
-| Дополнительные сведения | `person`: Объект сведений о лице <br> `personImage`: URL-адрес изображения | Шаблон, используемый для добавления в карточку дополнительного контента. |
+| Person — сведения | `person`: Объект сведений о лице | Шаблон, используемый для отображения верхней части карточки Person. |
+| Contact — сведения | `person`: Объект сведений о лице | Шаблон, используемый для переопределения части сведений о контакте для контейнера дополнительных сведений. |
+| Дополнительные сведения | `person`: Объект сведений о лице <br> `personImage`: URL-адрес изображения | Шаблон, используемый для добавления настраиваемого контента в контейнер дополнительных сведений. |
 
 Например, вы можете использовать шаблон для настройки компонента, присоединенного к `mgt-person` компоненту, и шаблона, чтобы добавить дополнительные сведения в карточку. 
 
@@ -66,14 +84,21 @@ ms.locfileid: "42639928"
 
 ## <a name="css-custom-properties"></a>Настраиваемые свойства CSS
 
-`mgt-person-card` Компонент определяет следующие НАСТРАИВАЕМЫЕ свойства CSS.
+`mgt-person-card` Компонент определяет следующие НАСТРАИВАЕМЫЕ свойства CSS. Чтобы использовать эти свойства, необходимо определить селектор в качестве родительского `mgt-person` элемента. 
 
 ```css
-mgt-person-card {
-  --font-size: 14px;
-  --font-weight: 600;
-  --height: '100%';
-  --background-color: transparent;
+mgt-person {
+  --person-card-display-name-font-size: 40px;
+  --person-card-display-name-color: #ffffff;
+  --person-card-title-font-size: 20px;
+  --person-card-title-color: #ffffff;
+  --person-card-subtitle-font-size: 10px;
+  --person-card-subtitle-color: #ffffff;
+  --person-card-details-title-font-size: 10px;
+  --person-card-details-title-color: #b3bf0a;
+  --person-card-details-item-font-size: 20px;
+  --person-card-details-item-color: #3abf0a;
+  --person-card-background-color: #000000;
 }
 ```
 
@@ -86,3 +111,22 @@ mgt-person-card {
 ## <a name="authentication"></a>Проверка подлинности
 
 В элементе управления Person Card используется глобальный поставщик проверки подлинности, описанный в [документации по проверке подлинности](./../providers.md). 
+
+## <a name="extend-for-more-control"></a>Расширение для дополнительных элементов управления
+
+Для более сложных сценариев или для действительно настраиваемого пользовательского интерфейса этот компонент предоставляет `protected render*` несколько способов переопределения в расширениях компонентов.
+
+| Метод | Описание |
+| - | - |
+| рендернодата | Отображает состояние, если данные о пользователях недоступны. | 
+| рендерперсондетаилс | Отрисовывает основной текст карточки пользователя (изображение, имя, значки). |
+| рендерперсонимаже | Отрисовывает часть изображения сведений о лице. |
+| рендерперсоннаме | Отрисовывает часть имени сведений о лице. |
+| рендерперсонтитле | Отрисовывает часть заголовка сведений о лице. |
+| рендерперсонсубтитле | Отрисовывает часть сведений о лице в подзаголовках. |
+| рендерконтактиконс | Отрисовывает значки контактов, которые входят в сведения о лице. |
+| рендерекспандеддетаилсбуттон | Отрисовывает кнопку, чтобы Показать расширенные сведения. |
+| рендерекспандеддетаилс | Отрисовывает содержимое в контейнере расширенных сведений. |
+| рендерконтактдетаилс | Отрисовывает часть расширенных сведений о контакте. |
+| рендераддитионалдетаилс | Отрисовывает дополнительную информацию в части расширенных сведений. |
+

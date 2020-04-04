@@ -5,18 +5,20 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 75074f6602ac3c7b633a734dcf0ff3dc5c68ab1d
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 758e8ac28680a6d6625f3a5f0d14c70ee0f9596a
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125171"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144137"
 ---
 # <a name="list-threads"></a>Список цепочек
 
-Пространство имен: Microsoft. Graph — получение всех потоков группы.
+Пространство имен: microsoft.graph
 
->Примечание. Вы также можете [получить все цепочки беседы](conversation-list-threads.md).
+Получение всех цепочек группы.
+
+>**Примечание:** Вы также можете [получить все потоки беседы](conversation-list-threads.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

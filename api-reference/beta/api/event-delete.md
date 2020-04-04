@@ -5,20 +5,23 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d426d69b42c0f75b2e52abf8a835f3deb170c778
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 04ec124393bb5925c4f1f8c4596c6320de3c1f7b
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42423261"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144228"
 ---
 # <a name="delete-event"></a>Удаление события
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление события.
+Удаляет указанное [событие](../resources/event.md) из содержащегося календаря. 
+
+Если событие является собранием, удаление события в календаре организатора отправляет сообщение об отмене участникам собрания.
+
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 

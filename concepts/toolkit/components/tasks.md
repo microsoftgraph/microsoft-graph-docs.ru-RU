@@ -3,12 +3,12 @@ title: Компонент Tasks в наборе инструментов Microso
 description: Компонент Tasks позволяет пользователю просматривать, добавлять, удалять, выполнять или изменять задачи. Она работает с любой из задач в планировщике (Майкрософт) или в Microsoft.
 localization_priority: Normal
 author: benotter
-ms.openlocfilehash: 80da5522b73051df4d5c264e5289845b9521058f
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: cfd248ca7cb240cd724b8df863383b308121db4b
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639921"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144277"
 ---
 # <a name="tasks-component-in-the-microsoft-graph-toolkit"></a>Компонент Tasks в наборе инструментов Microsoft Graph
 
@@ -31,6 +31,7 @@ ms.locfileid: "42639921"
 | Data-Source = "TODO/Planner" | Данных | Перечисление для настройки источника данных задач — либо задачи Майкрософт, либо планировщика (Майкрософт). Значение по умолчанию: `planner`. |
 | только для чтения | Статического | Логическое значение, указывающее, что интерфейс задачи должен быть доступен только для чтения (Добавление или удаление задач не выполняется). Значение по умолчанию: `false`. |
 | скрыть — заголовок | хидехеадер | Логическое значение для отображения или скрытия заголовка компонента. Значение по умолчанию: `false`. |
+| Параметры скрытия | хидеоптионс | Логическое значение для отображения или скрытия параметров в разделе "задачи". Значение по умолчанию: `false`.
 | Initial-ID = "planner_id/folder_id" | инитиалид | Строковое значение, чтобы задать для первоначально отображаемого планировщика или папки предоставленный идентификатор. |
 | Initial — сегмент — ID = "bucket_id" | инитиалбуккетид | Строковый идентификатор для установки начального сегмента (только для источника данных с планировщиком) на предоставленный идентификатор. |
 | Target-ID = "planner_id/folder_id"| targetId | Идентификатор строки, чтобы заблокировать интерфейс Tasks до указанного планировщика или идентификатора папки. |
@@ -102,10 +103,23 @@ mgt-tasks {
 --task-complete-header-color
 --task-complete-detail-color
 --task-complete-detail-icon-color
+
+--task-icon-background-completed
+--task-icon-background
+
+--task-icon-border-completed
+--task-icon-border
+
+--task-icon-color
+--task-icon-color-completed
+
+--task-icon-border-radius
+
+--task-icon-alignment: flex-start (default) | center | flex-end
 }
 ````
 
-## <a name="events"></a>События
+## <a name="events"></a>Мероприятия
 | Событие | Detail (Сведения) | Описание |
 | --- | --- | --- |
 | тасккликк | Сведения содержит соответствующий `task` объект | Возникает, когда пользователь щелкает или нажимает задачу. |
@@ -138,7 +152,7 @@ mgt-tasks {
 
 Этот элемент управления использует указанные ниже API и разрешения Microsoft Graph.
 
-| Resource | Разрешение |
+| Ресурс | Разрешение |
 | - | - |
 | /ме/планнер/планс | Group.Read.All |
 | /Планнер/Планс/$ {ID} | Group.Read.All, Group.ReadWrite.All |
