@@ -6,12 +6,12 @@ description: ресурс Permission, представляющий разреш�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: c35134e39618121f9aa7b29c490a6d8427b4a373
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 4a7eaa3b075e6a5c8a7b234e721c5d224bd489f9
+ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108202"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43146375"
 ---
 # <a name="permission-resource-type"></a>Тип ресурса разрешения
 
@@ -77,7 +77,7 @@ ms.locfileid: "43108202"
 | expirationDateTime  | DateTimeOffset              | Формат YYYY – MM – ДДВчч: mm: ССЧП of DateTimeOffset указывает срок действия разрешения. DateTime. MinValue указывает, что для этого разрешения не задано действие срока действия. Необязательно.
 | hasPassword         | Boolean                     | Указывает, задан ли для этого разрешения пароль, который отображается в ответе. Необязательный и только для чтения и только для OneDrive персональный.
 
-### <a name="roles-enumeration-values"></a>Значения перечислений ролей
+### <a name="roles-property-values"></a>Значения свойств ролей
 
 | Значение        | Сведения                                                                        |
 |:------------|:-------------------------------------------------------------------------------|
@@ -145,9 +145,9 @@ ms.locfileid: "43108202"
 }
 ```
 
-### <a name="existing-access-link"></a>Существующая ссылка доступа
+### <a name="existing-access-link"></a>Существующая ссылка для доступа
 
-Эта ссылка не предоставляет пользователю никаких дополнительных привилегий.
+Эта ссылка не предоставляет пользователю никаких дополнительных прав.
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-existing-link" } -->
 
@@ -248,8 +248,8 @@ ms.locfileid: "43108202"
 | [Создание ссылки][createLink]                                | `POST /drive/items/{item-id}/createLink`
 | [Приглашение участников][invite]                                  | `POST /drive/items/{item-id}/invite`
 | [Обновление](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
-| [Удаление](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
-| [Добавление пользователей в ссылку для общего доступа](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
+| [удаление](../api/permission-delete.md);                    | `DELETE /drive/items/{item-id}/permissions/{id}`
+| [Добавление пользователей в ссылку совместного доступа](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
 
 
 [createLink]: ../api/driveitem-createlink.md

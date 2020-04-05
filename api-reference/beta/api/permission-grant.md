@@ -6,16 +6,16 @@ description: Предоставление доступа к списку пол�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: c7679c07be231e9127686a1abf15fe4d9a80482a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 901b5c7b7e67b0d45a0d4891b239fa950d864119
+ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455948"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43146396"
 ---
-# <a name="grant-permission"></a>Предоставление разрешения
+# <a name="permission-grant"></a>разрешение: Grant
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +43,7 @@ POST /shares/{encoded-sharing-url}/permission/grant
 
 | Имя          | Описание  |
 |:------------- |:------------ |
-| Authorization | Носитель \{токен\}. Обязательный элемент. |
+| Authorization | Носитель \{токен\}. Обязательно. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -65,7 +65,7 @@ POST /shares/{encoded-sharing-url}/permission/grant
 | recipients         | Коллекция ([driveRecipient][]) | Коллекция получателей, которые будут получать доступ.
 | roles              | Collection(String)             | Если ссылка является ссылкой "существующий доступ", указывает роли, которые будут предоставляться пользователям. В противном случае он должен быть сопоставлен с ролью ссылки.
 
-Список доступных ролей см. в таблице [Перечисление ролей](../resources/permission.md#roles-enumeration-values).
+Список доступных ролей приведен в разделе [значения свойств Roles](../resources/permission.md#roles-property-values).
 
 ## <a name="response"></a>Отклик
 

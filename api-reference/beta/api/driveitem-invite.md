@@ -6,16 +6,16 @@ title: Отправка приглашения на доступ к элемен
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 1b9d704b1375bc0bc3f4239572e3cfd80fb954a4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 594df009c38ff1d7384207e7486392f24d7a8dbd
+ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432574"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43146403"
 ---
 # <a name="send-a-sharing-invitation"></a>Отправка приглашения к совместному использованию
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -222,7 +222,7 @@ Content-type: application/json
 ## <a name="remarks"></a>Примечания
 
 * [Дискам](../resources/drive.md), у которых параметр **driveType** имеет значение `personal` (OneDrive персональный), не удастся создать или изменить разрешения в корневой папке ресурса DriveItem.
-* Список доступных ролей см. в таблице [Перечисление ролей](../resources/permission.md#roles-enumeration-values).
+* Список доступных ролей приведен в разделе [значения свойств Roles](../resources/permission.md#roles-property-values).
 
 ## <a name="error-responses"></a>Ответы с ошибками
 
