@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Отправляет приглашение к совместному использованию ресурса DriveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 16924f6bd09b0f6e1a5918e002456ce8201571cb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 129cbeaf43c9c409b645a7a94b8b4a3371329a8b
+ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517736"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43146424"
 ---
 # <a name="send-a-sharing-invitation"></a>Отправка приглашения к совместному использованию
 
@@ -151,7 +151,7 @@ Content-type: application/json
 ## <a name="remarks"></a>Примечания
 
 * [Дискам](../resources/drive.md), у которых параметр **driveType** имеет значение `personal` (OneDrive персональный), не удастся создать или изменить разрешения в корневой папке ресурса DriveItem.
-* Список доступных ролей см. в таблице [Перечисление ролей](../resources/permission.md#roles-enumeration).
+* Список доступных ролей приведен в разделе [значения свойств Roles](../resources/permission.md#roles-property-values).
 
 ## <a name="error-responses"></a>Ответы с ошибками
 
