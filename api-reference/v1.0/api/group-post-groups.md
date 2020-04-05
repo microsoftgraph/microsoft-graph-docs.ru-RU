@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6ba8b5808819358d31aa41e71251beefc71c92b6
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 1734f4b848ca3ba5a1f816649a2587d878f9e9c3
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124485"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144116"
 ---
 # <a name="create-group"></a>Создание группы
 
@@ -53,13 +53,14 @@ POST /groups
 
 | Свойство | Тип | Описание|
 |:---------------|:--------|:----------|
-| displayName | string | Имя, которое следует отобразить в адресной книге для группы. Обязательный. |
+| displayName | string | Имя, которое следует отобразить в адресной книге для группы. Максимальная длина: 256 символов. Обязательный. |
 | description | строка | Описание группы. Максимальная длина: 1024 символа. Необязательно. |
 | mailEnabled | boolean | Установите значение **true** для групп, поддерживающих почту. Обязательно. |
-| mailNickname | string | Почтовый псевдоним для группы. Обязательный. |
+| mailNickname | string | Почтовый псевдоним для группы. Максимальная длина: 64 символа. Обязательный. |
 | securityEnabled | boolean | Значение **true** для защищенных групп, включая группы Office 365. Обязательно. |
 | owners | string collection | Это свойство представляет владельцев группы на момент создания. Необязательный параметр. |
-| members | string collection | Это свойство представляет участников группы на момент создания. Необязательный параметр. |
+| members | string collection | Это свойство представляет участников группы на момент создания. Необязательно. |
+|visibility|String|Определяет видимость группы Office 365. Возможные значения: `Private`, `Public`, `HiddenMembership` или пустое значение (обрабатывается как `Public`).|
 
 > **Примечание.** В группах, созданных с помощью портала Microsoft Azure, для свойства **securityEnabled** всегда устанавливается значение `true`.
 

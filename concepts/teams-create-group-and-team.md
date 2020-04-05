@@ -1,95 +1,147 @@
 ---
-title: Создание группы с помощью команды Microsoft Teams
-description: 'Создание группы, которая включает команду, состоит из двух этапов: '
-author: nkramer
+title: Создание команд и управление участниками с помощью Microsoft Graph
+description: 'Создание группы, включающей команду, состоит из следующих действий: '
+author: hachandr
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 06b25a6da159030407c904622ffebde09c704d98
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3eb6871cbe4b68addf3924b3641cf5559a78374f
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549022"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144343"
 ---
-# <a name="creating-a-group-with-a-microsoft-teams-team"></a>Создание группы с помощью команды Microsoft Teams
+# <a name="creating-teams-and-managing-members-using-microsoft-graph"></a>Создание команд и управление участниками с помощью Microsoft Graph
 
-Создание [группы](/graph/api/resources/group?view=graph-rest-beta), которая включает [команду](/graph/api/resources/team?view=graph-rest-beta), состоит из двух этапов: 
+Вы можете использовать API Microsoft Teams и Microsoft Graph, чтобы создавать команды разными способами. В этой статье описан рекомендуемый подход для достижения наилучших результатов.
 
-- [Создание группы](/graph/api/group-post-groups?view=graph-rest-beta) с правильными свойствами.
-- [Добавление команды](/graph/api/team-put-teams?view=graph-rest-beta) в группу.
 
-## <a name="create-a-group"></a>Создание группы
+## <a name="initial-team-creation"></a>Исходное создание команды
 
-Чтобы добавить группу, вам необходимо настроить указанные ниже значения свойств, как показано в приведенном ниже примере:
+Все команды дублируются группами Office 365. Самый быстрый способ начать работу при создании команд с помощью Microsoft Graph — настроить новую группу Office 365, всех ее владельцев и участников, а затем преобразовать ее в команду.
 
-- **groupTypes** = { "Unified" } 
-- **mailEnabled** = true
-- **securityEnabled** = false
+1. Создайте [группу Office 365](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) с помощью операции [создания группы](/graph/api/group-post-groups?view=graph-rest-beta). Если вы пытаетесь настроить команду класса, используйте операцию [создания educationClass](/graph/api/educationroot-post-classes?view=graph-rest-beta). Вы можете указать владельцев и участников. Убедитесь в использовании соответствующих владельцев для создаваемой команды, как описано в шаге 2.
 
-```http
-POST /groups
-{
-    "displayName":"Flight 157",
-    "mailNickname":"flight157",
-    "description":"Everything about flight 157",
-    "visibility":"Private",
-    "groupTypes":["Unified"],
-    "mailEnabled":true,
-    "securityEnabled":false,
-    "members@odata.bind":[
-        "https://graph.microsoft.com/v1.0/users/bec05f3d-a818-4b58-8c2e-2b4e74b0246d",
-        "https://graph.microsoft.com/v1.0/users/ae67a4f4-2308-4522-9021-9f402ff0fba8",
-        "https://graph.microsoft.com/v1.0/users/eab978dd-35d0-4885-8c46-891b7d618783",
-        "https://graph.microsoft.com/v1.0/users/6a1272b5-f6fc-45c4-95fe-fe7c5a676133"
-    ],
-    "owners@odata.bind":[
-        "https://graph.microsoft.com/v1.0/users/6a1272b5-f6fc-45c4-95fe-fe7c5a676133",
-        "https://graph.microsoft.com/v1.0/users/eab978dd-35d0-4885-8c46-891b7d618783"
-    ]
-}
-```
+    Чтобы добавить команду, вам необходимо настроить следующие значения свойств, как показано ниже:
 
-Ниже показан пример ответа. 
+    - **groupTypes** = { "Unified" } 
+    - **mailEnabled** = true
+    - **securityEnabled** = false
 
->**Примечание.** Показанный объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+    ```http
+    POST /groups
+    {
+        "displayName":"Flight 157",
+        "mailNickname":"flight157",
+        "description":"Everything about flight 157",
+        "visibility":"Private",
+        "groupTypes":["Unified"],
+        "mailEnabled":true,
+        "securityEnabled":false,
+        "members@odata.bind":[
+            "https://graph.microsoft.com/v1.0/users/bec05f3d-a818-4b58-8c2e-2b4e74b0246d",
+            "https://graph.microsoft.com/v1.0/users/ae67a4f4-2308-4522-9021-9f402ff0fba8",
+            "https://graph.microsoft.com/v1.0/users/eab978dd-35d0-4885-8c46-891b7d618783",
+            "https://graph.microsoft.com/v1.0/users/6a1272b5-f6fc-45c4-95fe-fe7c5a676133"
+        ],
+        "owners@odata.bind":[
+            "https://graph.microsoft.com/v1.0/users/6a1272b5-f6fc-45c4-95fe-fe7c5a676133",
+            "https://graph.microsoft.com/v1.0/users/eab978dd-35d0-4885-8c46-891b7d618783"
+        ]
+    }
+    ```
 
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: xxx
-{
-    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
-    "id":"b7f968af-ca51-42f6-a77e-82c7147bc8f2"
-}
-```
+    Ниже показан пример отклика. 
 
-## <a name="add-a-team-to-the-group"></a>Добавление команды в группу
+    >**Примечание.** Показанный объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
-Добавьте команду в группу, как показано.
+    ```http
+    HTTP/1.1 200 OK
+    Content-type: application/json
+    Content-length: xxx
+    {
+        "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups/$entity",
+        "id":"b7f968af-ca51-42f6-a77e-82c7147bc8f2"
+    }
+    ```
 
-```http
-PUT /groups/{id}/team
-{ }
-```
+2. Обеспечьте для команды наличие двух или более владельцев. Это можно сделать с помощью операции [добавления владельца](/graph/api/group-post-owners?view=graph-rest-beta). Они должны быть реальными учетными записями пользователей, а не учетными записями служб. Наличие двух владельцев помогает обслуживать сценарии, когда один владелец покидает компанию или недоступен для выполнения операций управления командой.
 
-Ниже показан пример ответа. 
+3. Добавьте всех участников (и гостей, если это необходимо) в группу с помощью операции [добавления участника](/graph/api/group-post-members?view=graph-rest-beta), если это не сделано на шаге 1.
 
->**Примечание.** Показанный объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+4. После успешного создания группы, что может занять до 15 минут после выполнения шага 1, создайте команду Microsoft Teams с помощью операции [создания команды из группы](/graph/api/team-put-teams?view=graph-rest-beta). Если вы столкнулись с ошибкой, процесс создания группы, возможно, не завершен. Попробуйте подождать несколько минут.
 
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: xxx
-{
-    "@odata.context" : "https://graph.microsoft.com/v1.0/$metadata#teams/$entity",
-    "id" : "b7f968af-ca51-42f6-a77e-82c7147bc8f2",
-    "webUrl" : "https://example.com",
-    "isArchived" : null,
-    "memberSettings" : { },
-    "guestSettings" : { },
-    "messagingSettings" : { },
-    "funSettings" : {}
-}
-```
+    ```http
+    PUT /groups/{id}/team
+    { }
+    ```
 
-Идентификатор созданной команды такой же, как и идентификатор группы.
+    Ниже показан пример отклика. 
+
+    >**Примечание.** Показанный объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+    ```http
+    HTTP/1.1 200 OK
+    Content-type: application/json
+    Content-length: xxx
+    {
+        "@odata.context" : "https://graph.microsoft.com/v1.0/$metadata#teams/$entity",
+        "id" : "b7f968af-ca51-42f6-a77e-82c7147bc8f2",
+        "webUrl" : "https://example.com",
+        "isArchived" : null,
+        "memberSettings" : { },
+        "guestSettings" : { },
+        "messagingSettings" : { },
+        "funSettings" : {}
+    }
+    ```
+
+    Идентификатор созданной команды такой же, как и идентификатор группы.
+
+5. После завершения этого процесса все владельцы и участники должны увидеть созданную команду в клиенте Teams.
+
+## <a name="adding-or-managing-members"></a>Добавление участников и управление ими
+
+Чтобы добавить участников после создания команды, используйте операцию [добавления участника](/graph/api/group-post-members?view=graph-rest-beta). Учитывайте следующее касательно изменений участия:
+
+1. Изменения участия, внесенные в группу Office 365, синхронизируются с Teams с помощью фонового механизма синхронизации, который обычно занимает 24 часа (или больше в некоторых случаях).
+
+2. Фоновый процесс запускается, если один или несколько пользователей команды (владелец или участник) активны в классическом клиенте Teams. Активность заключается в запуске приложения Teams и/или его работе, пользователю не требуется специально посещать команду, которая изменяется.
+
+    >**Примечание.** Мобильные клиенты Teams не запускают синхронизацию участия. По крайней мере один пользователь должен находиться в классическом клиенте, чтобы обеспечить правильное выполнение фонового процесса.
+
+## <a name="checklist-for-validation"></a>Контрольный список для проверки
+
+После создания команды вы можете воспользоваться следующим контрольным списком, чтобы проверить успешность создания команды.
+
+### <a name="validate-team-creation"></a>Проверка создания команды
+
+1. Убедитесь, что создана группа Office 365, дублирующая команду, с помощью Центров администрирования Azure AD или Microsoft 365.
+
+2. Убедитесь, что команда успешно создана, в портале администрирования Teams.
+
+3. Проверьте, что у команды есть соответствующие владельцы и участники, с помощью портала администрирования Teams.
+
+4. Убедитесь, что владельцы команды видят команду после входа в классический или веб-клиент Teams.
+
+5. Убедитесь, что участники видят команду после входа в классический или веб-клиент Teams.
+
+### <a name="validate-addition-of-members"></a>Проверка добавления участников
+
+1. Проверьте, что новые участники отображаются в группе, с помощью Центра администрирования Azure AD или Microsoft 365.
+
+2. Убедитесь, что добавленные участники видят команду после входа в классический или веб-клиент Teams.
+
+
+
+## <a name="how-office-365-group-membership-changes-are-synchronized-to-microsoft-teams"></a>Как изменения участия в группе в Office 365 синхронизируются с Microsoft Teams
+
+Изменения участия в группе Office 365, дублирующей команду, внесенные с помощью API Microsoft Graph или портала администрирования (за пределами клиента Teams), должны синхронизироваться со службой Teams, чтобы добавленные пользователи могли видеть команду и участвовать в ней. Непосредственные изменения участия в группе синхронизируются со службой Teams с помощью фонового процесса. Фоновый процесс работает в службе Teams и запускается действиями пользователей в классическом и веб-клиенте Teams.
+
+Чтобы процесс запустился, у текущего владельца или участника команды (пользователь, который может просматривать команду в клиенте Teams) должен быть открыт классический (идеальный вариант) или веб-клиент Teams. Мобильные клиенты не запускают синхронизацию.
+
+Текущее соглашение об уровне обслуживания для синхронизации с Teams изменений участия, внесенных в группы, составляет до 24 часов после запуска синхронизации действиями клиента. При определенных обстоятельствах это может занять больше времени (например, из-за загрузки службы).
+
+
+![Процесс синхронизации состава.](images/teams-roster-sync.png)
+

@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 862316ba98cab7ccbbaa1c6f7cc909924e400d59
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b05dfe80d4131a75f01a3c588ed1c2e33c3df833
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533418"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144095"
 ---
 # <a name="usersettings-resource-type"></a>Тип ресурса userSettings
 
@@ -23,6 +23,9 @@ ms.locfileid: "42533418"
 
 - Проверку участия пользователя и организации пользователя в поиске содержимого.
 - Включение и отключение поиска содержимого для конкретных пользователей. При этом также отключаются документы в Office Delve.
+
+> [!NOTE]
+> Эта конечная точка работает только с пользователями. Вы не можете использовать эту конечную точку с контактами.
 
 ## <a name="methods"></a>Методы
 | Метод       | Возвращаемый тип  |Описание|

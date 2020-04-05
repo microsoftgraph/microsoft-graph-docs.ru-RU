@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 8dd6ac12419af35e361b39c34017d18943315cee
-ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
+ms.openlocfilehash: 3df2bb5775da4042920474890a5c115fe2466de5
+ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "42986039"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43144242"
 ---
 # <a name="create-onlinemeeting"></a>Создание объекта onlineMeeting
 
@@ -31,7 +31,7 @@ ms.locfileid: "42986039"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
 | Для приложений                            | OnlineMeetings.ReadWrite.All*  |
 
-> \* **Примечание.** Поддержка разрешений приложений прекращается, и они будут удалены в апреле 2020 г.
+> \* **Примечание.** Поддержка разрешений приложений прекращается, и они будут удалены в июле 2020 г.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -64,7 +64,7 @@ POST /me/onlineMeetings
 #### <a name="request"></a>Запрос
 
 > [!Note]
-> Создание собрания по сети с помощью маркера приложения является устаревшим способом, и его поддержка будет прекращена в апреле 2020 г. В дальнейшем используйте путь /me с маркером пользователя, чтобы создавать собрания по сети.
+> Создание собрания по сети с помощью маркера приложения является устаревшим способом, и его поддержка будет прекращена в июле 2020 г. В дальнейшем используйте путь /me с маркером пользователя, чтобы создавать собрания по сети.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
