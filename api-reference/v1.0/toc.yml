@@ -4,7 +4,7 @@
       href: /graph/overview
     - name: Получение маркеров аутентификации
       items:
-        - name: Общие сведения
+        - name: Обзор
           href: /graph/auth/index?context=graph/api/1.0
         - name: Основы
           href: /graph/auth/auth-concepts?context=graph/api/1.0
@@ -22,7 +22,7 @@
           href: /graph/auth-limit-mailbox-access?context=graph/api/1.0
     - name: Использование API
       items:
-        - name: Общие сведения
+        - name: Обзор
           href: /graph/use-the-api?context=graph/api/1.0
         - name: Разбиение на страницы
           href: /graph/paging?context=graph/api/1.0
@@ -58,7 +58,7 @@
         - name: Добавление пользовательских данных
           displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: /graph/extensibility-overview?context=graph/api/1.0
             - name: Использование открытых расширений (пример)
               href: /graph/extensibility-open-users?context=graph/api/1.0
@@ -159,11 +159,11 @@
     - name: Справочник по версии 1.0
       expanded: true
       items:
-        - name: Общие сведения
+        - name: Обзор
           href: overview.md
         - name: Пользователи
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/users.md
             - name: Пользователь
               href: resources/user.md
@@ -360,7 +360,7 @@
                   href: api/planneruser-list-tasks.md
         - name: Группы
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/groups-overview.md
             - name: Группа
               href: resources/group.md
@@ -843,7 +843,7 @@
         - name: Устройства и приложения
           displayName: Intune
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/intune-graph-overview.md
             - name: Управление приложениями
               href: resources/intune-app-conceptual.md
@@ -3205,7 +3205,7 @@
         - name: Файлы
           displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/onedrive.md
             - name: Диски
               href: resources/drive.md
@@ -3272,7 +3272,7 @@
                   href: api/driveitem-createlink.md
                 - name: Использование ссылок совместного доступа
                   href: api/shares-get.md
-                - name: Добавление пользователей в ссылку для общего доступа
+                - name: Предоставление доступа к ссылке для общего доступа
                   href: api/permission-grant.md
                 - name: Разрешения списка
                   href: api/driveitem-list-permissions.md
@@ -3287,7 +3287,7 @@
         - name: Удостоверения и доступ
           displayName: 'Azure AD, Microsoft identity platform'
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/azure-ad-overview.md
             - name: Приложение
               href: resources/application.md
@@ -3497,7 +3497,7 @@
               items:
                 - name: Оценка угроз
                   items:
-                    - name: Общие сведения
+                    - name: Обзор
                       href: resources/threatassessment-api-overview.md
                     - name: Запрос оценки угроз
                       href: resources/threatassessmentrequest.md
@@ -3727,7 +3727,7 @@
         - name: Примечания
           displayName: OneNote
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/onenote-api-overview.md
             - name: Заметки
               href: resources/onenote.md
@@ -4123,7 +4123,7 @@
         - name: Безопасность
           displayname: 'Security API, Microsoft Intelligent Security Graph'
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/security-api-overview.md
             - name: Оповещения
               href: resources/alert.md
@@ -4155,7 +4155,7 @@
         - name: Сайты и списки
           displayName: 'SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal'
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/sharepoint.md
             - name: Сайты
               href: resources/site.md
@@ -4199,7 +4199,7 @@
         - name: Задачи и планы
           displayName: Planner
           items:
-            - name: Общие сведения
+            - name: Обзор
               href: resources/planner-overview.md
             - name: План
               href: resources/plannerplan.md
