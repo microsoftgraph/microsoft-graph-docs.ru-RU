@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 864a38bd5133d471ab0c56d220dc8c2e9fe51ffc
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 126fc15aafb1f6c24aefa5976800fbb1f1008bb6
+ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43109000"
+ms.lasthandoff: 04/04/2020
+ms.locfileid: "43146354"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -17,20 +17,6 @@ ms.locfileid: "43109000"
 Дополнительные сведения об известных проблемах с API Microsoft Graph см. в статье [Известные проблемы](known-issues.md).
 
 ## <a name="march-2020"></a>Март 2020 г.
-
-### <a name="reports-apis"></a>API отчетов
-
-| **Тип изменения** | **Версия** | **Описание**                  |
-|:----------------|:------------|:-----------------------------------------|
-| Дополнение        | бета  | Добавлено свойство **networkDisplayName** для объекта [yammerGroupsActivityDetail](/graph/api/resources/yammerGroupsActivityDetail?view=graph-rest-beta).|
-
-### <a name="cloud-communications"></a>Облачные коммуникации
-
-| **Тип изменения** | **Версия** | **Описание** |
-|:---|:---|:---|
-|Дополнение|1.0|Добавлена функция [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality) в коллекции [вызовов](/graph/api/resources/call).|
-|Дополнение|1.0|Добавлено свойство **callChainId** к объекту [вызова](/graph/api/resources/call.md).|
-|Дополнение|1.0|Добавлены новые сложные типы:<br/>[teleconferenceDeviceQuality](/graph/api/resources/teleconferencedevicequality)<br/>[teleconferenceDeviceMediaQuality](/graph/api/resources/teleconferencedevicemediaquality)<br/>[teleconferenceDeviceAudioQuality](/graph/api/resources/teleconferencedeviceaudioquality)<br/>[teleconferenceDeviceVideoQuality](/graph/api/resources/teleconferencedevicevideoquality)<br/>[teleconferenceDeviceScreenSharingQuality](/graph/api/resources/teleconferencedevicescreensharingquality).|
 
 ### <a name="calendar"></a>Календарь
 
@@ -45,17 +31,6 @@ ms.locfileid: "43109000"
 |:----------------|:------------|:-----------------------------------------|
 | Дополнение | Бета | Добавлена поддержка [разностных запросов для orgContact](/graph/api/orgcontact-delta?view=graph-rest-beta).|
 | Добавление | 1.0 | Добавлена поддержка [разностных запросов для orgContact](/graph/api/orgcontact-delta?view=graph-rest-1.0).|
-
-### <a name="cloud-communications"></a>Облачные коммуникации
-
-| **Тип изменения** | **Версия** | **Описание** |
-|:---|:---|:---|
-|Дополнение|Бета|Добавлена функция [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality) в коллекции [вызовов](/graph/api/resources/call).|
-|Дополнение|Бета|Добавлено свойство **callChainId** к объекту [вызова](/graph/api/resources/call?view=graph-rest-beta).|
-|Добавление|Бета|Добавлены новые сложные типы:<br/>[teleconferenceDeviceQuality](/graph/api/resources/teleconferencedevicequality)<br/>[teleconferenceDeviceMediaQuality](/graph/api/resources/teleconferencedevicemediaquality)<br/>[teleconferenceDeviceAudioQuality](/graph/api/resources/teleconferencedeviceaudioquality)<br/>[teleconferenceDeviceVideoQuality](/graph/api/resources/teleconferencedevicevideoquality)<br/>[teleconferenceDeviceScreenSharingQuality](/graph/api/resources/teleconferencedevicescreensharingquality).|
-| Добавление | Бета | Добавлен метод [onlineMeeting: createOrGet](/graph/api/onlinemeeting-createorget).|
-| Добавление | Бета | Добавлено необязательное свойство **externalId**. |
-|Добавление|Бета|Добавлен необязательный заголовок `Accept-Language` для [собраний по сети](/graph/api/resources/onlinemeeting).
 
 ### <a name="cloud-communications--call"></a>Облачные коммуникации | Вызов
 
@@ -77,6 +52,17 @@ ms.locfileid: "43109000"
 |Добавление|1.0|Добавлено новое свойство **final**в сложный тип [callRoute](/graph/api/resources/callroute?view=graph-rest-1.0).
 |Добавление|1.0|Добавлено новое свойство **original**в сложный тип [callRoute](/graph/api/resources/callroute?view=graph-rest-1.0).
 |Добавление|1.0|Добавлено новое свойство **routingType**в сложный тип [callRoute](/graph/api/resources/callroute?view=graph-rest-1.0).
+|Дополнение|Бета-версия и версия 1.0|Добавлена функция [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality) в коллекции [вызовов](/graph/api/resources/call).|
+|Дополнение|Бета-версия и версия 1.0|Добавлено свойство **callChainId** к объекту [вызова](/graph/api/resources/call).|
+|Дополнение|Бета-версия и версия 1.0|Добавлены новые сложные типы:<br/>[teleconferenceDeviceQuality](/graph/api/resources/teleconferencedevicequality)<br/>[teleconferenceDeviceMediaQuality](/graph/api/resources/teleconferencedevicemediaquality)<br/>[teleconferenceDeviceAudioQuality](/graph/api/resources/teleconferencedeviceaudioquality)<br/>[teleconferenceDeviceVideoQuality](/graph/api/resources/teleconferencedevicevideoquality)<br/>[teleconferenceDeviceScreenSharingQuality](/graph/api/resources/teleconferencedevicescreensharingquality).|
+
+### <a name="cloud-communications--online-meeting"></a>Облачные коммуникации | Онлайн-собрание
+
+| **Тип изменения** | **Версия** | **Описание** |
+|:---|:---|:---|
+| Дополнение | Бета | Добавлен метод [onlineMeeting: createOrGet](/graph/api/onlinemeeting-createorget).|
+| Добавление | Бета | Необязательное свойство **externalId** добавлено к [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta). |
+|Дополнение|Бета|Добавлен необязательный заголовок `Accept-Language` для [собраний по сети](/graph/api/resources/onlinemeeting?view=graph-rest-beta).
 
 ### <a name="devices-and-apps-microsoft-intune"></a>Устройства и приложения (Microsoft Intune)
 
@@ -116,7 +102,7 @@ ms.locfileid: "43109000"
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | Бета-версия и версия 1.0 | Добавлены свойства **image** и **video** ресурса [remoteItem](/graph/api/resources/remoteitem?view=graph-rest-1.0). С помощью этих свойств можно получать эскизы типа мультимедиа при использовании с функцией развертывания.  |
-| Дополнение | 1.0 | Добавлено действие **grant** для объекта [permission](/graph/api/resources/permission?view=graph-rest-v1.0). |
+| Дополнение | 1.0 | Добавлено действие **grant** для объекта [permission](/graph/api/resources/permission?view=graph-rest-1.0). |
 | Дополнение        | 1.0        | Добавлено свойство навигации **following** для объекта [drive](/graph/api/resources/drive?view=graph-rest-v1.0). |
 | Дополнение        | 1.0        | Добавлено действие [follow](/graph/api/driveitem-follow?view=graph-rest-v1.0) для объекта [driveItem](/graph/api/resources/driveitem?view=graph-rest-v1.0). |
 | Дополнение        | 1.0        | Добавлено действие [unfollow](/graph/api/driveitem-unfollow?view=graph-rest-v1.0) для объекта [driveItem](/graph/api/resources/driveitem?view=graph-rest-v1.0). |
@@ -131,7 +117,7 @@ ms.locfileid: "43109000"
 | Добавление | Бета | Добавлено разрешение приложений PrivilegedAccess.Read.AzureResources для [Privileged Identity Management — ресурсов Azure](/graph/api/resources/privilegedidentitymanagement-resources?view=graph-rest-beta).|
 | Добавление | бета | Добавлено разрешение [Auditlogs.Read.All](/graph/permissions-reference#user-permissions) для создания списка действий пользователя при входе в учетную запись.|
 | Добавление | бета | Добавлен [API identitySecurityDefaultsEnforcementPolicy](/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-beta), который представляет политику параметров безопасности по умолчанию Azure Active Directory.|
-| Добавление | Бета | Добавлена поддержка `$top` и `$skiptoken` фильтров для обеспечения разбивки на страницы [Списка provisioningObjectSummary](/api-reference/beta/api/provisioningobjectsummary-list.md). |
+| Добавление | Бета | Добавлена поддержка `$top` и `$skiptoken` фильтров для обеспечения разбивки на страницы [Списка provisioningObjectSummary](/api-reference/beta/api/provisioningobjectsummary-list). |
 
 ### <a name="identity-and-access-azure-ad--conditional-access"></a>Удостоверение и доступ (Azure AD) | Условный доступ
 
@@ -144,6 +130,7 @@ ms.locfileid: "43109000"
 | **Тип изменения** | **Версия** | **Описание**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Изменение          | Бета-версия и версия 1.0  | Для делегированных разрешений, позволяющих приложениям читать отчеты об использовании службы Office 365 от имени пользователя, добавлены Администратор службы Teams и Администратор связи Teams в качестве принятых ролей пользователя. Дополнительные сведения см. в статье [Авторизация для API с целью чтения отчетов об использовании Office 365](reportroot-authorization.md).|
+| Дополнение        | бета  | Добавлено свойство **networkDisplayName** для объекта [yammerGroupsActivityDetail](/graph/api/resources/yammerGroupsActivityDetail?view=graph-rest-beta).|
 
 ### <a name="search"></a>Поиск
 
@@ -160,11 +147,7 @@ ms.locfileid: "43109000"
 | :-------------- | :---------- | :-------------------------------------- |
 | Дополнение        | 1.0        | Добавлено свойство навигации [followSite](/graph/api/follow-site?view=graph-rest-1.0) для набора объектов [user](/graph/api/resources/user?view=graph-rest-1.0). |
 | Дополнение        | 1.0        | Добавлено свойство навигации [unfollowSite](/graph/api/unfollow-site?view=graph-rest-1.0) для набора объектов [user](/graph/api/resources/user?view=graph-rest-1.0). |
-
-### <a name="teamwork-microsoft-teams"></a>Работа в команде (Microsoft Teams)
-| **Тип изменения** | **Версия** | **Описание**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-| Дополнение        | 1.0       | Добавлено свойство навигации **subscriptions** для объекта [list](/graph/api/resources/list?view=graph-rest-v1.0). |
+| Дополнение        | 1.0       | Добавлено свойство навигации **subscriptions** для объекта [list](/graph/api/resources/list?view=graph-rest-1.0). |
 
 ### <a name="teamwork-microsoft-teams"></a>Работа в команде (Microsoft Teams)
 
@@ -1706,7 +1689,7 @@ ms.locfileid: "43109000"
 | Дополнение | Бета | Добавлено новое действие [регистрация ресурсов](/graph/api/governanceresource-register?view=graph-rest-beta).|
 | Удаление | бета | Удалено свойство`isPermanent` для объекта [governanceRoleAssignment](/graph/api/resources/governanceroleassignment?view=graph-rest-beta).|
 | Удаление | бета | Удалено свойство `roleAssignmentStartDateTime` для объекта [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta).|
-| Удаление | бета | Удалено свойство `roleAssignmentEndDateTime` для объекта [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta).|
+| Удаление | Бета | Удалено свойство `roleAssignmentEndDateTime` для объекта [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta).|
 
 ### <a name="security"></a>Безопасность
 
