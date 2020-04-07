@@ -3,18 +3,26 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 126fc15aafb1f6c24aefa5976800fbb1f1008bb6
-ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
+ms.openlocfilehash: c66a1d38f9f63136c202a675608c58bf4b8ec57f
+ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43146354"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43160291"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
 Этот журнал содержит сведения об изменениях API Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 
 Дополнительные сведения об известных проблемах с API Microsoft Graph см. в статье [Известные проблемы](known-issues.md).
+
+## <a name="april-2020"></a>Апрель 2020 г.
+
+### <a name="identity-and-access-azure-ad"></a>Удостоверение и доступ (Azure AD)
+
+| **Тип изменения** | **Версия**   | **Описание** |
+|:---|:---|:---|
+| Дополнение | бета | Добавлены объекты [unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-beta), [rbacApplicationMultiple](/graph/api/resources/rbacapplicationmultiple?view=graph-rest-beta), [appScope](/graph/api/resources/appscope?view=graph-rest-beta) и следующие действия:<br><li>[Перечисление объектов unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-list?view=graph-rest-beta)</li><li>[Получение unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-get?view=graph-rest-beta)</li><li>[Создание unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple-post?view=graph-rest-beta)</li><li>[Обновление unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-update?view=graph-rest-beta)</li><li>[Удаление unifiedRoleAssignmentMultiple](/graph/api/unifiedroleassignmentmultiple-delete?view=graph-rest-beta)</li>. |
 
 ## <a name="march-2020"></a>Март 2020 г.
 
@@ -1689,7 +1697,7 @@ ms.locfileid: "43146354"
 | Дополнение | Бета | Добавлено новое действие [регистрация ресурсов](/graph/api/governanceresource-register?view=graph-rest-beta).|
 | Удаление | бета | Удалено свойство`isPermanent` для объекта [governanceRoleAssignment](/graph/api/resources/governanceroleassignment?view=graph-rest-beta).|
 | Удаление | бета | Удалено свойство `roleAssignmentStartDateTime` для объекта [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta).|
-| Удаление | Бета | Удалено свойство `roleAssignmentEndDateTime` для объекта [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta).|
+| Удаление | бета | Удалено свойство `roleAssignmentEndDateTime` для объекта [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta).|
 
 ### <a name="security"></a>Безопасность
 
@@ -3912,7 +3920,7 @@ ms.locfileid: "43146354"
 | Изменение      | бета    | Добавлено свойство **identityName** к объекту [windowsPhone81AppX](/graph/api/resources/intune-apps-windowsphone81appx?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Изменен тип следующих свойств объекта [windowsPhone81AppX](/graph/api/resources/intune-apps-windowsphone81appx?view=graph-rest-beta):<br/>**applicableArchitectures** теперь относится не к [windowsArchitecture](/graph/api/resources/windowsarchitecture?view=graph-rest-beta), а к String.<br/> |
 | Изменение      | Бета-версия    | Добавлены свойства **identityName**, **identityPublisherHash** и **identityResourceIdentifier** к объекту [windowsUniversalAppX](/graph/api/resources/intune-apps-windowsuniversalappx?view=graph-rest-beta). |
-| Изменение      | Бета-версия    | Изменен тип следующих свойств объекта [windowsUniversalAppX](/graph/api/resources/intune-apps-windowsuniversalappx?view=graph-rest-beta):<br/>**applicableArchitectures** теперь относится не к [windowsArchitecture](/graph/api/resources/windowsarchitecture?view=graph-rest-beta), а к String;<br/>**applicableDeviceTypes** теперь относится не к [windowsDeviceType](/graph/api/resources/windowsdevicetype?view=graph-rest-beta), а к String.<br/> |
+| Изменение      | бета    | Изменен тип следующих свойств объекта [windowsUniversalAppX](/graph/api/resources/intune-apps-windowsuniversalappx?view=graph-rest-beta):<br/>**applicableArchitectures** теперь относится не к [windowsArchitecture](/graph/api/resources/windowsarchitecture?view=graph-rest-beta), а к String;<br/>**applicableDeviceTypes** теперь относится не к [windowsDeviceType](/graph/api/resources/windowsdevicetype?view=graph-rest-beta), а к String.<br/> |
 | Изменить      | Бета-версия    | Добавлено свойство **restartMode** к объекту [windowsUpdateForBusinessConfiguration](/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Добавлено свойство навигации **managedDeviceCertificateStates** к объекту [androidForWorkScepCertificateProfile](/graph/api/resources/intune-deviceconfig-androidforworkscepcertificateprofile?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Добавлено свойство навигации **managedDeviceCertificateStates** к объекту [androidScepCertificateProfile](/graph/api/resources/intune-deviceconfig-androidscepcertificateprofile?view=graph-rest-beta). |

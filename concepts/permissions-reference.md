@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 36e3e84a0cb6d96545df9c97234c74305afbd6a1
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 002221d8520fb2e379588e71bb7eccfb43475708
+ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43061918"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43160305"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -700,6 +700,8 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 Для разрешений приложения действуют некоторые ограничения на поддерживаемые API. Дополнительные сведения см. в статье, посвященной [известным проблемам](known-issues.md).
 
 В некоторых случаях, чтобы приложение могло считывать некоторые свойства группы, такие как `member` и `memberOf`, требуются [разрешения для каталогов](#directory-permissions). Например, если среди членов группы есть один или несколько объектов [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta), то приложению потребуются действующие разрешения на чтение субъектов-служб, предоставленные с помощью разрешений _Directory.\*_. В противном случае Microsoft Graph возвращает ошибку. (В случае делегированных разрешений вошедшему пользователю также необходимы права на чтение субъектов-служб в организации.) Это относится и к свойству `memberOf`, которое может возвращать объекты [administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-beta).
+
+Чтобы настроить атрибут **preferredDataLocation** группы Office 365, приложению требуются разрешения для каталогов. Когда пользователь в среде с поддержкой нескольких регионов создает группу Office 365, значению **preferredDataLocation** группы автоматически присваивается значение, соответствующее этому значению пользователя. Дополнительные сведения о предпочтительном расположении данных групп см. в статье [Создание группы Office 365 с определенным предпочтительным расположением данных (PDL)](https://docs.microsoft.com/office365/enterprise/multi-geo-add-group-with-pdl).
 
 Разрешения группы позволяют управлять доступом к API и ресурсам [Microsoft Teams](/graph/api/resources/teams-api-overview). Личные учетные записи Майкрософт не поддерживаются.
 
