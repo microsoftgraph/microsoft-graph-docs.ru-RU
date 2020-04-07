@@ -312,7 +312,7 @@
                   href: api/mailfolder-list-messagerules.md
                 - name: Отправка почты
                   href: api/user-sendmail.md
-            - name: Notes
+            - name: Примечания
               href: resources/onenote.md
               items:
                 - name: Создание записной книжки
@@ -905,7 +905,7 @@
                       href: api/call-post-audioroutinggroups.md
                     - name: Получение
                       href: api/audioroutinggroup-get.md
-                    - name: Обновление
+                    - name: Update
                       href: api/audioroutinggroup-update.md
                     - name: Delete
                       href: api/audioroutinggroup-delete.md
@@ -985,7 +985,7 @@
                   href: api/bookingbusiness-post-bookingbusinesses.md
                 - name: Получение
                   href: api/bookingbusiness-get.md
-                - name: Обновление
+                - name: Update
                   href: api/bookingbusiness-update.md
                 - name: Delete
                   href: api/bookingbusiness-delete.md
@@ -1026,7 +1026,7 @@
                   href: api/bookingbusiness-post-customers.md
                 - name: Получение
                   href: api/bookingcustomer-get.md
-                - name: Обновление
+                - name: Update
                   href: api/bookingcustomer-update.md
                 - name: Delete
                   href: api/bookingcustomer-delete.md
@@ -1039,7 +1039,7 @@
                   href: api/bookingbusiness-post-services.md
                 - name: Получение
                   href: api/bookingservice-get.md
-                - name: Обновление
+                - name: Update
                   href: api/bookingservice-update.md
                 - name: Удаление
                   href: api/bookingservice-delete.md
@@ -1052,7 +1052,7 @@
                   href: api/bookingbusiness-post-staffmembers.md
                 - name: Получение
                   href: api/bookingstaffmember-get.md
-                - name: Обновление
+                - name: Update
                   href: api/bookingstaffmember-update.md
                 - name: Delete
                   href: api/bookingstaffmember-delete.md
@@ -3412,7 +3412,7 @@
                   items:
                     - name: Получение
                       href: api/intune-deviceconfig-devicecompliancedeviceoverview-get.md
-                    - name: Обновление
+                    - name: Update
                       href: api/intune-deviceconfig-devicecompliancedeviceoverview-update.md
                 - name: 'Состояние устройств, касающееся соответствия устройств требованиям'
                   href: resources/intune-deviceconfig-devicecompliancedevicestatus.md
@@ -9386,6 +9386,19 @@
                       href: api/unifiedroleassignment-get.md
                     - name: Удаление назначения ролей
                       href: api/unifiedroleassignment-delete.md
+                - name: Несколько назначений ролей
+                  href: resources/unifiedroleassignmentmultiple.md
+                  items:
+                    - name: Список
+                      href: api/unifiedroleassignmentmultiple-list.md
+                    - name: Создание
+                      href: api/unifiedroleassignmentmultiple-post.md
+                    - name: Получение
+                      href: api/unifiedroleassignmentmultiple-get.md
+                    - name: Обновление
+                      href: api/unifiedroleassignmentmultiple-delete.md
+                    - name: Удаление
+                      href: api/unifiedroleassignmentmultiple-delete.md
             - name: Субъект-служба
               href: resources/serviceprincipal.md
               items:
@@ -10466,7 +10479,7 @@
                   href: resources/search-api-overview.md
                 - name: Данные запроса
                   href: api/search-query.md
-            - name: Index
+            - name: Индекс
               items:
                 - name: Обзор
                   href: resources/indexing-api-overview.md
