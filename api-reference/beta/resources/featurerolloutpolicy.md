@@ -2,19 +2,19 @@
 title: Тип ресурса Феатурероллаутполици
 description: Представляет политику развертывания компонентов, связанную с объектом каталога.
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a5ebc5884b0fd1ccf52fca961247e610b1c8cad5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 27e421283c9908c648769ccbe652f990f2728fce
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42498485"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181724"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>Тип ресурса Феатурероллаутполици
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -66,7 +66,7 @@ ms.locfileid: "42498485"
 |исапплиедтурганизатион|Логический|Указывает, следует ли применять эту политику развертывания функций ко всей Организации.|
 |isEnabled|Boolean|Указывает, включен ли выпуск компонентов.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|

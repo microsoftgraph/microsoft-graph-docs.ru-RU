@@ -3,18 +3,18 @@ title: Тип ресурса Идентитирискевент
 description: 'Событие риска, обнаруженное защитой удостоверений Azure Active Directory. Это базовый тип для каждого конкретного типа событий риска:'
 author: cloudhandler
 localization_priority: Normal
-ms.prod: security
+ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 079f02b37304a17d370bb3b93fe1cdbda1f4a42c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fa8fef43c462559d5c4420637b635b5371ef90ab
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496616"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181731"
 ---
 # <a name="identityriskevent-resource-type"></a>Тип ресурса Идентитирискевент
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,14 +47,14 @@ ms.locfileid: "42496616"
 |createdDateTime|dateTimeOffset| Дата и время создания события риска. Он всегда больше или равен значению DateTime самого события риска. Это правильное свойство, используемое в качестве фильтра при запросе событий риска.|
 |id|string| Только для чтения|
 |рискевентдатетиме|dateTimeOffset| Дата и время возникновения события риска|
-|рискевентстатус|строка| Возможные значения: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
+|рискевентстатус|string| Возможные значения: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
 |riskLevel|string| Возможные значения: `low`, `medium`, `high`.|
-|рискевенттипе|строка| Тип риска|
-|userDisplayName|строка| Имя пользователя под угрозой|
+|рискевенттипе|string| Тип риска|
+|userDisplayName|string| Имя пользователя под угрозой|
 |userId|строка| Идентификатор пользователя, который подвергается риску|
 |userPrincipalName|string| Имя участника пользователя, который подвергается риску|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |импактедусер|[user](user.md)| Только для чтения. Допускается значение null.|

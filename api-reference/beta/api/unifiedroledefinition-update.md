@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e9ff2d3f61e1ce6e2809ae38fccbc4029ab49852
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: 8b9c6ddb7910ed4f70695c7b585453cb22f4eb38
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43160263"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181583"
 ---
 # <a name="update-unifiedroledefinition"></a>Обновление Унифиедроледефинитион
 
@@ -52,12 +52,12 @@ PATCH /roleManagement/directory/roleDefinitions/{id}
 |:-------------|:------------|:------------|
 |description|String| Описание определения роли. Только для чтения, если для Builtin задано значение true. |
 |displayName|Строка| Отображаемое имя определения роли. Только для чтения, если для Builtin задано значение true. Обязательный.|
-|id|Строка| Уникальный идентификатор для определения роли. Key, не допускающая значение null, только для чтения. |
+|id|String| Уникальный идентификатор для определения роли. Key, не допускающая значение null, только для чтения. |
 |isBuiltIn|Логический| Флаг, указывающий, является ли определение роли частью набора по умолчанию, входящего в состав продукта или настраиваемого. Только для чтения. |
 |isEnabled|Boolean| Флаг, указывающий, включена ли роль для назначения. Если значение false, роль недоступна для назначения. Только для чтения, если для Builtin задано значение true. |
 |resourceScopes|Коллекция String| Список разрешений областей, к которым применяется определение роли. В настоящее время поддерживается только "/". Только для чтения, если для Builtin задано значение true. **НЕ ИСПОЛЬЗУЙТЕ. Это свойство будет нерекомендуемым в ближайшее время. Присоединение области к назначению ролей.**|
 |rolePermissions|Коллекция [унифиедролепермиссион](../resources/unifiedrolepermission.md)| Список разрешений, включенных в роль. Только для чтения, если для Builtin задано значение true. Обязательно. |
-|templateId|Строка| Настраиваемый идентификатор шаблона, который можно задать, если параметру Builtin присвоено значение false. Этот идентификатор обычно используется, если необходимо, чтобы один идентификатор совпадал для разных каталогов. Только для чтения, если для Builtin задано значение true. |
+|templateId|String| Настраиваемый идентификатор шаблона, который можно задать, если параметру Builtin присвоено значение false. Этот идентификатор обычно используется, если необходимо, чтобы один идентификатор совпадал для разных каталогов. Только для чтения, если для Builtin задано значение true. |
 |version|String| Указывает версию определения роли. Только для чтения, если для Builtin задано значение true.|
 
 ## <a name="response"></a>Отклик
@@ -70,6 +70,8 @@ PATCH /roleManagement/directory/roleDefinitions/{id}
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_unifiedroledefinition"
@@ -93,6 +95,20 @@ Content-type: application/json
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-unifiedroledefinition-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-unifiedroledefinition-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-unifiedroledefinition-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

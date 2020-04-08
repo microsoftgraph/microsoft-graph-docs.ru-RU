@@ -1,20 +1,20 @@
 ---
 title: Тип ресурса Домаинднссрврекорд
-description: Представляет запись SRV, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта DomainDnsRecord.
-author: davidmu1
+description: Представляет запись SRV, добавленную в файл зоны DNS определенного домена в клиенте.
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9f3b4e9b1b65a473492b42322d81c2ef6f6e172c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dca3f890ec3fa741f43711deee9381ed1088b39f
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42505947"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181710"
 ---
 # <a name="domaindnssrvrecord-resource-type"></a>Тип ресурса Домаинднссрврекорд
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "42505947"
 |используем|Int32| Значение, используемое при настройке свойства срока *жизни (TTL)* записи SRV на узле DNS. Не допускает значение null |
 |weight|Int32| Значение, используемое при настройке свойства *Weight* записи SRV на узле DNS. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

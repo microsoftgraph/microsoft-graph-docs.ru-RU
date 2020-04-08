@@ -3,18 +3,18 @@ title: Список Унфамилиарлокатионрискевентс
 description: Получение списка объектов унфамилиарлокатионрискевент.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 386abbdf8b0e39a66ebd72f36a159b302687e7eb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: cloudhandler
+ms.openlocfilehash: 7fe24b9b96fd1a36f40ed0e78fe23612962e279b
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452098"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181492"
 ---
 # <a name="list-unfamiliarlocationriskevents"></a>Список Унфамилиарлокатионрискевентс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -3,18 +3,18 @@ title: Получение объекта anonymousIpRiskEvent
 description: Получение свойств и связей объекта анонимаусиприскевент.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 287442307ae3a2bd526289b7c1949be834a531ce
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: cloudhandler
+ms.openlocfilehash: 2fb493c35d6d26f3b1a7b4212cbe242da0062ba3
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441594"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43178966"
 ---
 # <a name="get-anonymousipriskevent"></a>Получение объекта anonymousIpRiskEvent
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

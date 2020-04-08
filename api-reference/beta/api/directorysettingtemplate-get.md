@@ -1,24 +1,24 @@
 ---
 title: Получение шаблона параметров каталога
-description: Шаблон параметров каталога представляет шаблон параметров, параметры которых могут создаваться в клиенте. Эта операция позволяет получать свойства объекта Директорисеттингтемплате, включая доступные параметры и их значения по умолчанию.
+description: Позволяет получать свойства объекта Директорисеттингтемплате, включая доступные параметры и их значения по умолчанию.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8c648064f182453c3ffeccad885b7cba44ebb6de
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: df5474d839d8cd1374d00710538025a9d03330da
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42433841"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180167"
 ---
 # <a name="get-a-directory-setting-template"></a>Получение шаблона параметров каталога
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Шаблон параметров каталога представляет шаблон параметров, параметры которых могут создаваться в клиенте. Эта операция позволяет получать свойства объекта Директорисеттингтемплате, включая доступные параметры и их значения по умолчанию.
+Шаблон параметров каталога представляет шаблон параметров, параметры которых могут создаваться в клиенте. Эта операция позволяет получать свойства объекта **директорисеттингтемплате** , включая доступные параметры и их значения по умолчанию.
 
 > **Note**: версия/Beta этого API применяется только к группам. Версия/v1.0 этого API была переименована, чтобы *получить groupSettingTemplate*.
 
@@ -37,7 +37,7 @@ ms.locfileid: "42433841"
 GET /directorySettingTemplates/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|

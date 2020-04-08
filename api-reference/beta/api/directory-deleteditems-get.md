@@ -1,20 +1,20 @@
 ---
 title: Получение удаленного элемента
 description: Получение свойств недавно удаленного элемента.
-author: davidmu1
+author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 02e56eac0d0e3ac8b2b0132f321098f0ea45b0de
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 36d93cb91efe7bbd696fbd90c0a1de4640e67f62
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42435453"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181030"
 ---
 # <a name="get-deleted-item"></a>Получение удаленных элементов
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -2,15 +2,15 @@
 title: Тип ресурса directoryObject
 description: Представляет объект Azure Active Directory. Тип **directoryObject** является базовым типом для многих других типов объектов каталогов.
 localization_priority: Priority
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b90e81a9337cef51af4bfded50eaaf494e4ebca7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 43fd850274006d763535ad30b2de58f634375541
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507032"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181696"
 ---
 # <a name="directoryobject-resource-type"></a>Тип ресурса directoryObject
 

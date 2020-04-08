@@ -1,20 +1,20 @@
 ---
 title: Тип ресурса Домаинднсткстрекорд
-description: Представляет запись TXT, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта DomainDnsRecord.
-author: davidmu1
+description: Представляет запись TXT, добавленную в файл зоны DNS определенного домена в клиенте.
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5555fa6f02e0639f1e126112918c39168b445945
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bd5bbe5f4167142821eea4bc72b53f6c0202fcd4
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42505849"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181890"
 ---
 # <a name="domaindnstxtrecord-resource-type"></a>Тип ресурса Домаинднсткстрекорд
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "42505849"
 |текст|String| Значение, используемое при настройке свойства *Text* на узле DNS. |
 |используем|Int32| Значение, используемое при настройке свойства срока *жизни (TTL)* записи MX на узле DNS. Не допускает значение null |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

@@ -1,20 +1,20 @@
 ---
 title: Список verificationDnsRecords
 description: Получение списка объектов domainDnsRecord.
-author: davidmu1
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8ab5b1a3d3825028bc0a094f20e5685eeb326552
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bae7f86ac588428d6413c1d26798389dbac25a97
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42433582"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180034"
 ---
 # <a name="list-verificationdnsrecords"></a>Список verificationDnsRecords
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -3,18 +3,18 @@ title: Получение объекта suspiciousIpRiskEvent
 description: Получение свойств и связей объекта суспиЦиаусиприскевент.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 358f83996eeced51694816290579a800d6209aae
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: cloudhandler
+ms.openlocfilehash: 4e1610f71280a96d3829f7043aa2232ea9569f1f
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453088"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181310"
 ---
 # <a name="get-suspiciousipriskevent"></a>Получение объекта suspiciousIpRiskEvent
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,24 +1,24 @@
 ---
 title: Список Директорисеттингтемплатес
-description: Шаблоны параметров каталога представляют собой набор шаблонов параметров каталогов, из которых можно создавать и использовать параметры каталогов в клиенте.  Эта операция извлекает список доступных объектов Директорисеттингтемплатес.
+description: Эта операция извлекает список доступных объектов Директорисеттингтемплатес.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3ff5c102652d0c04bf37c3545b50fe320071be07
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 09afd3ff60f9f9d12a94ad52c8a7e6dcf34935cf
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42433834"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180160"
 ---
 # <a name="list-directorysettingtemplates"></a>Список Директорисеттингтемплатес
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Шаблоны параметров каталога представляют собой набор шаблонов параметров каталогов, из которых можно создавать и использовать параметры каталогов в клиенте.  Эта операция извлекает список доступных объектов Директорисеттингтемплатес.
+Шаблоны параметров каталога представляют собой набор шаблонов параметров каталогов, из которых можно создавать и использовать параметры каталогов в клиенте.  Эта операция извлекает список доступных объектов **директорисеттингтемплатес** .
 
 > **Note**: версия/Beta этого API применяется только к группам. Версия/v1.0 этого API была переименована в *List groupSettingTemplate*.
 
@@ -37,7 +37,7 @@ ms.locfileid: "42433834"
 GET /directorySettingTemplates
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|

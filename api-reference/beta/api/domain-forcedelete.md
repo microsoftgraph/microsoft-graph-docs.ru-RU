@@ -1,20 +1,20 @@
 ---
 title: 'домен: Форцеделете'
 description: Удаляет домен, используя асинхронную операцию.
-author: davidmu1
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 341e80864d6d0ac09f51c22a09cdec78fcea023f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4daff04db42782a5d9b611d454a5cfb2c12953b1
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42433694"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180104"
 ---
 # <a name="domain-forcedelete"></a>домен: Форцеделете
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

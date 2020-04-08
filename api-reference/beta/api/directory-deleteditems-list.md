@@ -1,20 +1,20 @@
 ---
 title: Перечисление удаленных элементов
 description: Получение списка недавно удаленных элементов.
-author: davidmu1
+author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8c9aea77ca7f1fd088d1bfdb0efdb1fd5b86176c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a018854eb5f9574f327d86808bf2b2fd13607c50
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42435446"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181023"
 ---
 # <a name="list-deleted-items"></a>Перечисление удаленных элементов
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

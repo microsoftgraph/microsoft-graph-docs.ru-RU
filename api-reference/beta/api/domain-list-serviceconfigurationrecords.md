@@ -1,20 +1,20 @@
 ---
 title: Список serviceConfigurationRecords
 description: Получает список объектов domainDnsRecord, необходимых для включения служб для домена.
-author: davidmu1
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 950a7d06d255367ae69481d8c0efb28c264992c7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 655f653c7edb679417fa4496f8dbbfceccfbad0f
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42433568"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180055"
 ---
 # <a name="list-serviceconfigurationrecords"></a>Список serviceConfigurationRecords
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

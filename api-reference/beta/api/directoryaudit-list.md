@@ -2,15 +2,15 @@
 title: Перечисление directoryAudits
 description: Описывает метод List ресурса Директоряудит (Entity) из API Microsoft Graph (бета-версия).
 localization_priority: Normal
-author: davidmu1
+author: cloudhandler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2205f35470a9c99f16719624e7d99538c92050c1
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 6de6196406b27f786fc996fe8a95c08472486a8c
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43061983"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180986"
 ---
 # <a name="list-directoryaudits"></a>Перечисление directoryAudits
 
@@ -18,7 +18,7 @@ ms.locfileid: "43061983"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка журналов аудита, созданных Azure Active Directory. К ним относятся журналы аудита, созданные различными службами в Azure AD, в том числе Управление пользователями, приложениями, устройствами и группами, управление правами на доступ к данным, проверки доступа, условия использования, защиту удостоверения, управление паролями (SSPR и пароль администратора RESETS) и управление самосервисными группами.
+Получение списка журналов аудита, созданных Azure Active Directory. Сюда входят журналы аудита, созданные различными службами в Azure AD, в том числе Управление пользователями, приложениями, устройствами и группами, управление правами на доступ к данным, проверки доступа, условия использования, защиту удостоверений, управление паролями (сброс паролей SSPR и администрирование паролей), а также Управление группами самообслуживания.
 
 ## <a name="permissions"></a>Разрешения
 

@@ -2,23 +2,23 @@
 title: Получение directoryAudit
 description: Описывает метод Get ресурса Директоряудит (Entity) из API Microsoft Graph (бета-версия).
 localization_priority: Normal
-author: davidmu1
+author: cloudhandler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4af18bd6bc2f45350d1f7cf0f332c4d7be6d8bb5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5446be0c88dbd7512d6a80501327a451ca6b9881
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42435180"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180988"
 ---
 # <a name="get-directoryaudit"></a>Получение directoryAudit
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение конкретного элемента журнала аудита Azure Active Directory. Сюда входит элемент журнала аудита, созданный различными службами в Azure Active Directory, такими как пользователь, приложение, Управление устройствами и группами, управление правами на доступ к данным, обзоры доступа, условия использования, защита удостоверений, управление паролями ( самообслуживания и сброс паролей администратора), самостоятельное управление группами и т. д.
+Получение конкретного элемента журнала аудита Azure Active Directory. Сюда входит элемент журнала аудита, созданный различными службами в Azure Active Directory, такими как пользователь, приложение, Управление устройствами и группами, управление правами на доступ к данным, проверки доступа, условия использования, защита удостоверений, управление паролями (сброс паролей самообслуживания и администратора), Управление группами самообслуживания и т. д.
 
 ## <a name="permissions"></a>Разрешения
 

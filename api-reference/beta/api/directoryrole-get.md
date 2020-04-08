@@ -1,20 +1,20 @@
 ---
 title: Получение directoryRole
 description: Получение свойств объекта directoryRole.
-author: davidmu1
+author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 87c781f0f7edefbebc525d4b461ec3422bc002c2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fcb10ffda65a81fdc572f8a1340218fbab4b535a
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42434499"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180904"
 ---
 # <a name="get-directoryrole"></a>Получение directoryRole
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

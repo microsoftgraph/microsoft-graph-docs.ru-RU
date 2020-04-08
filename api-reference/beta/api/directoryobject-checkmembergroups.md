@@ -2,19 +2,19 @@
 title: Проверка групп элементов
 description: Проверяет членство в указанном списке групп и возвращает из этого списка эти группы.
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2650bfb80fdb4da4b65afbd13566d3bde2b8c367
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0e5a86cca24b5c804a5a1ba61d7d6bc514f4a6ea
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42435054"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180974"
 ---
 # <a name="check-member-groups"></a>Проверка членства в группах
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

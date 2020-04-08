@@ -1,20 +1,20 @@
 ---
 title: Добавление участника роли каталога
 description: С помощью этого API можно создать участника роли каталога.
-author: davidmu1
+author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a5989d6883625c2c9687c42b8135ab24223a9e42
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 53474c5a1791be3213091150b04fea5e1d9aff2f
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42434268"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180867"
 ---
 # <a name="add-directory-role-member"></a>Добавление участника роли каталога
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

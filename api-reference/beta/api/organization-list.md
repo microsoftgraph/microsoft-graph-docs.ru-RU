@@ -2,19 +2,19 @@
 title: Список организаций
 description: Получение списка объектов организаций.
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f2753fcc26fa7a8f3ca05d575c555f2e0fd9cba0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 808a7f9042cc124c2633378d49e2655491ce5949
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456322"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181226"
 ---
 # <a name="list-organization"></a>Список организаций
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

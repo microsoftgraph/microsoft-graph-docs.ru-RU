@@ -2,19 +2,19 @@
 title: Создание Феатурероллаутполици
 description: Создание нового объекта Феатурероллаутполици.
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dc2ed04abef450415cc4ee9802cceed687dc324b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0f6cd81e6a2299e3bfcb7c318d17b5f28fb01049
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42435201"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180995"
 ---
 # <a name="create-featurerolloutpolicy"></a>Создание Феатурероллаутполици
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,7 +54,7 @@ POST /directory/featureRolloutPolicies
 |:---------------|:--------|:----------|
 |displayName |string |Отображаемое имя для этой политики развертывания компонента.|
 |состав |стажедфеатуренаме |Компонент, который будет выполнен с помощью этой политики.|
-|isEnabled |строка |Указывает, включен ли выпуск компонентов.|
+|isEnabled |string |Указывает, включен ли выпуск компонентов.|
 
 ## <a name="response"></a>Отклик
 

@@ -3,18 +3,18 @@ title: Список Леакедкредентиалсрискевентс
 description: Получение списка объектов леакедкредентиалсрискевент.
 localization_priority: Normal
 doc_type: apiPageType
-author: ''
-ms.prod: ''
-ms.openlocfilehash: 37e26b86fdb708f4799535fb6b8610a0cc91b564
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: cloudhandler
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 05d5ef51e702efcbc7f445c113691c69a951393e
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457162"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181233"
 ---
 # <a name="list-leakedcredentialsriskevents"></a>Список Леакедкредентиалсрискевентс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

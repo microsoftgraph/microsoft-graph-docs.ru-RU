@@ -2,19 +2,19 @@
 title: Назначение appliesTo
 description: Назначение directoryObject для развертывания компонентов.
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8a9e68ed790fa388ac19b4a8e8504c680042ae80
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0cd64b45d1a3a285eb4fd53908ff6e3d364bb502
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42421727"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181110"
 ---
 # <a name="assign-appliesto"></a>Назначение appliesTo
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

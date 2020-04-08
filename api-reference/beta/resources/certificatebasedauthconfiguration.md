@@ -2,19 +2,19 @@
 title: Тип ресурса Цертификатебаседаусконфигуратион
 description: Представляет коллекцию центров сертификации.
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4eb11db10bb904be9dbe689aedc4a1f250754340
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b834de13ccfeb59cd88fae093406a380c9aa5b58
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507770"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181794"
 ---
 # <a name="certificatebasedauthconfiguration-resource-type"></a>Тип ресурса Цертификатебаседаусконфигуратион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

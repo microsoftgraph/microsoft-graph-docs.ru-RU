@@ -2,19 +2,19 @@
 title: Создание Цертификатебаседаусконфигуратион
 description: Используйте этот API для создания нового Цертификатебаседаусконфигуратион.
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f7d0aa5b6470fd606885069e72a3490bd917969f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fa599f06ad3c78a3eb1f0a1caf3e148587b963a4
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440516"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181044"
 ---
 # <a name="create-certificatebasedauthconfiguration"></a>Создание Цертификатебаседаусконфигуратион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

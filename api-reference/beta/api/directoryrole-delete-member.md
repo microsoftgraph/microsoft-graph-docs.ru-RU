@@ -1,20 +1,20 @@
 ---
 title: Удаление элемента роли каталога
 description: Удаление элемента из объекта directoryRole.
-author: davidmu1
+author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f17f3fe1bb79a2d151e23bd4ee8172278e98b64d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b36846ff68f83219dda8f479fa1ceb224a567d2d
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42434548"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180918"
 ---
 # <a name="remove-directory-role-member"></a>Удаление элемента роли каталога
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

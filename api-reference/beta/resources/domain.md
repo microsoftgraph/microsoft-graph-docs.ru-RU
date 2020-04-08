@@ -1,20 +1,20 @@
 ---
 title: Тип ресурса domain
 description: Представляет домен, связанный с клиентом.
-author: davidmu1
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fda10c7b8640a174aa911177aef23ec6ab64d72b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cd1cc0e199848243fd9957f0741f609e052af6e6
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42506444"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43178958"
 ---
 # <a name="domain-resource-type"></a>Тип ресурса domain
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -62,10 +62,10 @@ ms.locfileid: "42506444"
 |Проверка|Логический| True, если домен выполнил проверку владения доменом. Не допускает значение null |
 |пассворднотификатионвиндовиндайс|Int32|Указывает количество дней до того, как пользователь получит уведомление о том, что срок действия пароля не истечет. Если свойство не задано, будет использоваться значение по умолчанию (14 дней).|
 |пассвордвалидитипериодиндайс|Int32| Указывает период времени, в течение которого пароль должен быть действителен до его изменения. Если свойство не задано, будет использоваться значение по умолчанию (90 дней). |
-|суппортедсервицес|Коллекция String| Возможности, назначенные для домена.<br><br>Может содержать 0, 1 или более следующих значений: *Email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*<br><br> При использовании Graph API можно добавить или удалить следующие значения: *Email*, *OfficeCommunicationsOnline*, *Yammer*<br>Не допускает значение null|
+|суппортедсервицес|Коллекция строк| Возможности, назначенные для домена.<br><br>Может содержать 0, 1 или более следующих значений: *Email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*<br><br> При использовании Graph API можно добавить или удалить следующие значения: *Email*, *OfficeCommunicationsOnline*, *Yammer*<br>Не допускает значение null|
 |state|[домаинстате](domainstate.md)| Состояние асинхронных операций, запланированных для домена. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отношения между доменом и другими объектами в каталоге, такими как записи проверки и записи конфигурации службы, предоставляются через свойства навигации. Эти отношения можно прочитать, нацеливания эти свойства навигации в запросах.
 

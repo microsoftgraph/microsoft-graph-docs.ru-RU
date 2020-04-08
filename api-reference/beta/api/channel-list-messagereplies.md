@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6dd782e937e4709a899a22f9bbc49af0f0ed6548
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 1d1fc22e939e15353a033b7bae2691fc2d375a50
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42619011"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43179012"
 ---
 # <a name="list-channel-message-replies"></a>Список ответов на сообщения канала
 
@@ -53,7 +53,7 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [chatmessage](../resources/channel.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [chatmessage](../resources/chatmessage.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 В этом примере указанное сообщение имеет два ответа. Каждый ответ содержит один или несколько объектов [чатмессажементион](../resources/chatmessagemention.md) .

@@ -2,19 +2,19 @@
 title: Тип ресурса directoryRole
 description: Представляет роль каталога Azure AD. Роли каталога Azure AD также известны как *роли администратора*.
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3c7dc55553c67d717afbd1b6633c94eef514438d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f4b462f2f597f777befd643004d918e5b2044620
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42506906"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181815"
 ---
 # <a name="directoryrole-resource-type"></a>Тип ресурса directoryRole
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

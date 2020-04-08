@@ -1,20 +1,20 @@
 ---
 title: Удаление параметра каталога
 description: Удаление параметра каталога.
-author: davidmu1
+author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 16add1a6545740a068895c3af8c8a0afd3c66beb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 27eb77aebf0dac6eac352f370088d8729952ff96
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42434100"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180846"
 ---
 # <a name="delete-a-directory-setting"></a>Удаление параметра каталога
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

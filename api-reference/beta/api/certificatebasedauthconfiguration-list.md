@@ -2,19 +2,19 @@
 title: Список Цертификатебаседаусконфигуратионс
 description: Получение списка объектов цертификатебаседаусконфигуратион.
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3a4fb6035ffb145f7aaaa3378f7212a9759a92af
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2c52f2a144802a548dddc9b1f40c80f8daf3d493
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440523"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181051"
 ---
 # <a name="list-certificatebasedauthconfigurations"></a>Список Цертификатебаседаусконфигуратионс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

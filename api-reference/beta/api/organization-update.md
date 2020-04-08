@@ -2,19 +2,19 @@
 title: Обновление организации
 description: Обновление свойств объекта organization, для которого выполнена проверка подлинности.
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c1d162f3511e49ab3d5462dfca2c033a75c56342
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ad330d5b4db44550512c48d52ff80f4ec76e74d8
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456339"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181387"
 ---
 # <a name="update-organization"></a>Обновление организации
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,7 +52,7 @@ PATCH /organization/{id}
 
 | Свойство  | Тип |Описание|
 |:---------------|:--------|:----------|
-|marketingNotificationEmails|Коллекция String|                                        **Примечание.** Значение NULL не допускается.            |
+|marketingNotificationEmails|Коллекция строк|                                        **Примечание.** Значение NULL не допускается.            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|Профиль конфиденциальности организации (заданные свойства statementUrl и contactEmail).            |
 |securityComplianceNotificationMails|Коллекция String||
 |securityComplianceNotificationPhones|Коллекция String||

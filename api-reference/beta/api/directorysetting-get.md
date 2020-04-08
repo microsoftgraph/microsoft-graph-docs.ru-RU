@@ -1,20 +1,20 @@
 ---
 title: Получение параметра каталога
 description: Получение свойств определенного объекта параметров каталога.
-author: davidmu1
+author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: df98499099bb26cc0d50564ecaf4a9aa556313f6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d3c75ac850c77c9980bb798d751a5ed342b612a4
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42434002"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43180839"
 ---
 # <a name="get-a-directory-setting"></a>Получение параметра каталога
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

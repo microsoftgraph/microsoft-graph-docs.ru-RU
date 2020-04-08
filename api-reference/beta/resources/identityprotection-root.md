@@ -3,18 +3,18 @@ title: Использование API-интерфейсов для защиты
 description: С помощью Microsoft Graph вы можете запросить API защиты удостоверений для получения сведений о риске, обнаруженном службой Azure AD Identity Protection.
 author: cloudhandler
 localization_priority: Normal
-ms.prod: security
+ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 9f2e1dbdd20645768a4cb3e14c2de9f9d9a98b7e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 43fbfb8f0645d4d7d9a58135f2cd6fe986c62643
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496763"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181738"
 ---
 # <a name="use-the-azure-ad-identity-protection-api-preview"></a>Использование API защиты удостоверений Azure AD (Предварительная версия)
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
