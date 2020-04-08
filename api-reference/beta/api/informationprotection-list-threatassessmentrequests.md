@@ -6,15 +6,15 @@ author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
 ms.openlocfilehash: a87828e1700a8813caae64f01d1e970f8a1f7939
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
+ms.lasthandoff: 04/07/2020
 ms.locfileid: "42446389"
 ---
 # <a name="list-threatassessmentrequests"></a>Список Среатассессментрекуестс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ ms.locfileid: "42446389"
 
 Запрос на оценку угроз может иметь один из следующих типов:
 
-* [почта](../resources/mailAssessmentRequest.md);
+* [Почта](../resources/mailAssessmentRequest.md)
 * [Файл электронной почты](../resources/emailFileAssessmentRequest.md)
 * [Файл](../resources/fileAssessmentRequest.md)
 * [URL](../resources/urlAssessmentRequest.md)
@@ -51,7 +51,7 @@ GET /informationProtection/threatAssessmentRequests
 
 |Имя            |Значение    |Описание                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|$filter         |строка   |Разрешает отклик только на те объекты, которые содержат заданные условия.                                                                                             |
+|$filter         |string   |Разрешает отклик только на те объекты, которые содержат заданные условия.                                                                                             |
 |$orderby        |строка   |По умолчанию объекты в отклике сортируются по убыванию по значению **createdDateTime** .                                                                          |
 |$select         |string   |Список разделенных запятыми свойств, которые необходимо включить в отклик. Для оптимизации производительности выбирайте только необходимые свойства.                                        |
 |$skipToken      |string   |Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц.                                                                                               |
