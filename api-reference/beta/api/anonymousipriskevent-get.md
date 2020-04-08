@@ -3,55 +3,55 @@ title: Получение объекта anonymousIpRiskEvent
 description: Получение свойств и связей объекта анонимаусиприскевент.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 287442307ae3a2bd526289b7c1949be834a531ce
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: cloudhandler
+ms.openlocfilehash: 2fb493c35d6d26f3b1a7b4212cbe242da0062ba3
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441594"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43178966"
 ---
-# <a name="get-anonymousipriskevent"></a><span data-ttu-id="502e0-103">Получение объекта anonymousIpRiskEvent</span><span class="sxs-lookup"><span data-stu-id="502e0-103">Get anonymousIpRiskEvent</span></span>
+# <a name="get-anonymousipriskevent"></a><span data-ttu-id="d7f56-103">Получение объекта anonymousIpRiskEvent</span><span class="sxs-lookup"><span data-stu-id="d7f56-103">Get anonymousIpRiskEvent</span></span>
 
-<span data-ttu-id="502e0-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="502e0-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d7f56-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d7f56-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]
-><span data-ttu-id="502e0-105">API **идентитирискевентс** устарел и не возвращает данные на 10 января 2020.</span><span class="sxs-lookup"><span data-stu-id="502e0-105">The **identityRiskEvents** API is deprecated and will stop returning data on January 10, 2020.</span></span> <span data-ttu-id="502e0-106">Дополнительные сведения см. [в разделе устаревшее API идентитирискевентс](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).</span><span class="sxs-lookup"><span data-stu-id="502e0-106">For details, see [Deprecation of the IdentityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).</span></span>
+><span data-ttu-id="d7f56-105">API **идентитирискевентс** устарел и не возвращает данные на 10 января 2020.</span><span class="sxs-lookup"><span data-stu-id="d7f56-105">The **identityRiskEvents** API is deprecated and will stop returning data on January 10, 2020.</span></span> <span data-ttu-id="d7f56-106">Дополнительные сведения см. [в разделе устаревшее API идентитирискевентс](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).</span><span class="sxs-lookup"><span data-stu-id="d7f56-106">For details, see [Deprecation of the IdentityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).</span></span>
 
-<span data-ttu-id="502e0-107">Получение свойств и связей объекта анонимаусиприскевент.</span><span class="sxs-lookup"><span data-stu-id="502e0-107">Retrieve the properties and relationships of an anonymousipriskevent object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="502e0-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="502e0-108">Permissions</span></span>
-<span data-ttu-id="502e0-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="502e0-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d7f56-107">Получение свойств и связей объекта анонимаусиприскевент.</span><span class="sxs-lookup"><span data-stu-id="d7f56-107">Retrieve the properties and relationships of an anonymousipriskevent object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="d7f56-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d7f56-108">Permissions</span></span>
+<span data-ttu-id="d7f56-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d7f56-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="502e0-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="502e0-111">Permission type</span></span>      | <span data-ttu-id="502e0-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="502e0-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d7f56-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d7f56-111">Permission type</span></span>      | <span data-ttu-id="d7f56-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d7f56-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="502e0-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="502e0-113">Delegated (work or school account)</span></span> | <span data-ttu-id="502e0-114">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="502e0-114">IdentityRiskEvent.Read.All</span></span>    |
-|<span data-ttu-id="502e0-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="502e0-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="502e0-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="502e0-116">Not supported.</span></span>    |
-|<span data-ttu-id="502e0-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="502e0-117">Application</span></span> | <span data-ttu-id="502e0-118">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="502e0-118">IdentityRiskEvent.Read.All</span></span> |
+|<span data-ttu-id="d7f56-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d7f56-113">Delegated (work or school account)</span></span> | <span data-ttu-id="d7f56-114">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="d7f56-114">IdentityRiskEvent.Read.All</span></span>    |
+|<span data-ttu-id="d7f56-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d7f56-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d7f56-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d7f56-116">Not supported.</span></span>    |
+|<span data-ttu-id="d7f56-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d7f56-117">Application</span></span> | <span data-ttu-id="d7f56-118">IdentityRiskEvent.Read.All</span><span class="sxs-lookup"><span data-stu-id="d7f56-118">IdentityRiskEvent.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="502e0-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="502e0-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d7f56-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d7f56-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /anonymousIpRiskEvents/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="502e0-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="502e0-120">Request headers</span></span>
-| <span data-ttu-id="502e0-121">Имя</span><span class="sxs-lookup"><span data-stu-id="502e0-121">Name</span></span>      |<span data-ttu-id="502e0-122">Описание</span><span class="sxs-lookup"><span data-stu-id="502e0-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d7f56-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d7f56-120">Request headers</span></span>
+| <span data-ttu-id="d7f56-121">Имя</span><span class="sxs-lookup"><span data-stu-id="d7f56-121">Name</span></span>      |<span data-ttu-id="d7f56-122">Описание</span><span class="sxs-lookup"><span data-stu-id="d7f56-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="502e0-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="502e0-123">Authorization</span></span>  | <span data-ttu-id="502e0-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="502e0-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="502e0-126">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="502e0-126">Workbook-Session-Id</span></span>  | <span data-ttu-id="502e0-p104">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="502e0-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="d7f56-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="d7f56-123">Authorization</span></span>  | <span data-ttu-id="d7f56-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d7f56-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d7f56-126">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="d7f56-126">Workbook-Session-Id</span></span>  | <span data-ttu-id="d7f56-p104">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="d7f56-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="502e0-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="502e0-129">Request body</span></span>
-<span data-ttu-id="502e0-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="502e0-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d7f56-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="d7f56-129">Request body</span></span>
+<span data-ttu-id="d7f56-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="d7f56-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="502e0-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="502e0-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d7f56-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="d7f56-131">Response</span></span>
 
-<span data-ttu-id="502e0-132">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [анонимаусиприскевент](../resources/anonymousipriskevent.md) в значении тела отклика.</span><span class="sxs-lookup"><span data-stu-id="502e0-132">If successful, this method returns a `200 OK` response code and [anonymousIpRiskEvent](../resources/anonymousipriskevent.md) object in the value of response body.</span></span>
-## <a name="example"></a><span data-ttu-id="502e0-133">Пример</span><span class="sxs-lookup"><span data-stu-id="502e0-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="502e0-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="502e0-134">Request</span></span>
-<span data-ttu-id="502e0-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="502e0-135">Here is an example of the request.</span></span>
+<span data-ttu-id="d7f56-132">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [анонимаусиприскевент](../resources/anonymousipriskevent.md) в значении тела отклика.</span><span class="sxs-lookup"><span data-stu-id="d7f56-132">If successful, this method returns a `200 OK` response code and [anonymousIpRiskEvent](../resources/anonymousipriskevent.md) object in the value of response body.</span></span>
+## <a name="example"></a><span data-ttu-id="d7f56-133">Пример</span><span class="sxs-lookup"><span data-stu-id="d7f56-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="d7f56-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="d7f56-134">Request</span></span>
+<span data-ttu-id="d7f56-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d7f56-135">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_anonymousipriskevent"
@@ -59,8 +59,8 @@ GET /anonymousIpRiskEvents/{id}
 ```http
 GET https://graph.microsoft.com/v1.0/anonymousIpRiskEvents/2016-01-29T00:00:56.22556656a56d0b2-3c51-7c5e-bc1a-1ccdb3bd9c71
 ```
-##### <a name="response"></a><span data-ttu-id="502e0-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="502e0-136">Response</span></span>
-<span data-ttu-id="502e0-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="502e0-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="d7f56-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="d7f56-136">Response</span></span>
+<span data-ttu-id="d7f56-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d7f56-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
