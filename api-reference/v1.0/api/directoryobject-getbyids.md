@@ -1,16 +1,16 @@
 ---
 title: Получение объектов каталога из списка идентификаторов
 description: Параметр запроса select недоступен для этой операции.
-author: davidmu1
+author: keylimesoda
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cf525e7251f39ca1a5a67458f4ea5e371f2601ad
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8ff81002804a445ab102b3df0bac2b57332fec2b
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517995"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181932"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>Получение объектов каталога из списка идентификаторов
 

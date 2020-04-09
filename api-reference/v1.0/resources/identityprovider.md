@@ -2,15 +2,15 @@
 title: Тип ресурса identityProvider
 description: Представляет поставщика удостоверений Azure Active Directory (Azure AD).
 localization_priority: Priority
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 29a0459e27f27f4563101d8100675046ca2731b1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6b59e5d703e9f10de43e87703ba853e13c69d74a
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532894"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43200273"
 ---
 # <a name="identityprovider-resource-type"></a>Тип ресурса identityProvider
 

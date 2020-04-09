@@ -2,15 +2,15 @@
 title: Тип ресурса invitation
 description: Представляет приглашение, используемое для добавления внешних пользователей в организацию.
 localization_priority: Priority
-author: davidmu1
+author: elisolMS
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 29dcf476dc7d26f87c04a6fd8d075c4ed0d77bd5
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 95978c18ac047394adfd2a18c2dd6538900c8116
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062555"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43200301"
 ---
 # <a name="invitation-resource-type"></a>Тип ресурса invitation
 

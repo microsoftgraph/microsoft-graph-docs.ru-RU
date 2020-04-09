@@ -2,15 +2,15 @@
 title: Удаление identityProvider
 description: Удаление существующего объекта identityProvider
 localization_priority: Priority
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: deb255656748a43af87a219e3a094b7cc897273d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 03936b6702b20440e672716dfcd73f50bba51984
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516782"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199899"
 ---
 # <a name="delete-identityprovider"></a>Удаление identityProvider
 

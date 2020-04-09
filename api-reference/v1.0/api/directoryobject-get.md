@@ -1,16 +1,16 @@
 ---
 title: Получение объекта DirectoryObject
 description: Получение свойств и связей объекта directoryObject.
-author: davidmu1
+author: keylimesoda
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a6d83651edd9b218adca153650273e550ae74e21
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8bd9ba445bb3da40163cc23451aadfd01973de40
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518002"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181939"
 ---
 # <a name="get-directoryobject"></a>Получение объекта DirectoryObject
 

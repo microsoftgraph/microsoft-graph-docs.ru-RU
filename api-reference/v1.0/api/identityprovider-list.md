@@ -2,15 +2,15 @@
 title: Перечисление объектов identityProvider
 description: Получение всех объектов identityProvider
 localization_priority: Priority
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bd1c9e0f329093beeffd0d046eaad5d72621117a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 37415dbaef870af14104db19006c7a8d74cea5a7
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516768"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199892"
 ---
 # <a name="list-identityproviders"></a>Перечисление объектов identityProvider
 
