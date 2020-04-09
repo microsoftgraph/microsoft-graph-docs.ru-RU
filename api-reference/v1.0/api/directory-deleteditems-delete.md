@@ -1,16 +1,16 @@
 ---
 title: Окончательное удаление элемента из удаленных элементов
 description: Окончательное удаление элемента из контейнера для удаленных элементов.
-author: davidmu1
+author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 130d4723043f9f49d9e218987c5ac0e6b25c698a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: da214ef7cdaf1291bd85ecf0fcdf4a4290d56259
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518065"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181780"
 ---
 # <a name="permanently-delete-item"></a>Удаление элемента без возможности восстановления
 

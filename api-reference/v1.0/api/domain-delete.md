@@ -1,16 +1,16 @@
 ---
 title: Удаление домена
 description: Удаление домена из клиента.
-author: davidmu1
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 52e3365aeedb7c984bd496a9c0d5474342b87c0b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 03bc5e121d8ef3c6c0271db206849376e0764899
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517904"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181352"
 ---
 # <a name="delete-domain"></a>Удаление домена
 

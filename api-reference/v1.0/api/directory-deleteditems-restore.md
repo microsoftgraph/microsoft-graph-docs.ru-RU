@@ -1,16 +1,16 @@
 ---
 title: Восстановление удаленного элемента
 description: 'Восстановление недавно удаленного элемента из контейнера для удаленных элементов. '
-author: davidmu1
+author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ee4585fd4465c8457826be84af7ab672d53825b1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 69594e7118e8159575b8dace0fe570a98e0d4379
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518044"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181787"
 ---
 # <a name="restore-deleted-item"></a>Восстановление удаленного элемента
 

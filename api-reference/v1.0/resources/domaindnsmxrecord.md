@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Домаинднсмксрекорд
-description: Представляет запись MX, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта DomainDnsRecord.
-author: davidmu1
+description: Представляет запись MX, добавленную в файл зоны DNS определенного домена в клиенте.
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d0c7324f5c0760ff62cb3b835f7e011dd8a0a5a2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: af95edfde834e04449398b1a9b306fe29529a15d
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531607"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181653"
 ---
 # <a name="domaindnsmxrecord-resource-type"></a>Тип ресурса Домаинднсмксрекорд
 
@@ -24,16 +24,16 @@ ms.locfileid: "42531607"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|Строка| Уникальный идентификатор, назначенный этой сущности. Не допускает значения NULL и только для чтения.|
-|Переключатель|Boolean| Если задано значение false, запись MX должна быть настроена клиентом на узле DNS для правильной работы Microsoft Online Services с доменом. |
-|label|Строка| Значение, используемое при настройке свойства *Alias/Host/Name* для записи MX на узле DNS. |
-|маилексчанже|Строка| Значение, используемое при настройке *ответа/назначения/значения* для записи MX на узле DNS.|
+|id|String| Уникальный идентификатор, назначенный этой сущности. Не допускает значения NULL и только для чтения.|
+|Переключатель|Логический| Если задано значение false, запись MX должна быть настроена клиентом на узле DNS для правильной работы Microsoft Online Services с доменом. |
+|label|String| Значение, используемое при настройке свойства *Alias/Host/Name* для записи MX на узле DNS. |
+|маилексчанже|String| Значение, используемое при настройке *ответа/назначения/значения* для записи MX на узле DNS.|
 |параметров|Int32| Значение, используемое при настройке свойства *предпочтения/приоритета* записи MX на узле DNS. |
-|recordType|Строка| Тип записи DNS. Значение — это всегда *MX*. Key |
-|суппортедсервице|Строка| Служба или компонент Microsoft Online, который имеет зависимость от этой записи MX.</br></br>Может принимать одно из следующих значений: **null**, *Email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
+|recordType|String| Тип записи DNS. Значение — это всегда *MX*. Key |
+|суппортедсервице|String| Служба или компонент Microsoft Online, который имеет зависимость от этой записи MX.</br></br>Может принимать одно из следующих значений: **null**, *Email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
 |используем|Int32| Значение, используемое при настройке свойства срока *жизни (TTL)* записи MX на узле DNS. Не допускает значение null |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

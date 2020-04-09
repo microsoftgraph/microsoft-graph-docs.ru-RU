@@ -2,15 +2,15 @@
 title: 'directoryObject: Валидатепропертиес'
 description: Проверка соответствия отображаемого имени или почтового псевдонима группы Office 365 политикам именования.
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bcee27c646831f414fdba18c67176073a7b61d48
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 38943c87509c99f2287729ea3d3f688731b46f24
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517974"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181911"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject: Валидатепропертиес
 
@@ -52,7 +52,7 @@ POST /directoryObjects/validateProperties
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Сущности|Строка| Group — единственный поддерживаемый тип объекта. |
+|Сущности|String| Group — единственный поддерживаемый тип объекта. |
 |displayName|Строка| Отображаемое имя группы, которую требуется проверить. Свойство не обязательно должно быть обязательным. Однако необходимо указать по крайней мере одно свойство (**DisplayName** или **mailNickname**). |
 |mailNickname|String| Псевдоним почты для группы, которую требуется проверить. Свойство не обязательно должно быть обязательным. Однако необходимо указать по крайней мере одно свойство (**DisplayName** или **mailNickname**). |
 |онбехалфофусерид|GUID| Идентификатор пользователя, который олицетворяет при вызове API. Результаты проверки предназначены для атрибутов и ролей **онбехалфофусерид** . |

@@ -1,16 +1,16 @@
 ---
 title: Список directoryRoleTemplate
 description: Получение списка объектов directoryRoleTemplate.
-author: davidmu1
+author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2e15d24a36cebc254988e3ff8c3055bd294dd2f1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 888d2a8ca68c462f3cc80c176b78e47188ca3949
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517911"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181359"
 ---
 # <a name="list-directoryroletemplates"></a>Список directoryRoleTemplate
 

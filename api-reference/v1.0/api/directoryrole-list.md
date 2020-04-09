@@ -1,16 +1,16 @@
 ---
 title: Перечисление объектов directoryRole
 description: Перечисление ролей каталога, активированных в клиенте.
-author: davidmu1
+author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9c6f5233ae5563963974a7bc1d544a260fd78c99
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7f4a8f8838d77c9a947c304ee18898832c1d5428
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517939"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181401"
 ---
 # <a name="list-directoryroles"></a>Перечисление объектов directoryRole
 

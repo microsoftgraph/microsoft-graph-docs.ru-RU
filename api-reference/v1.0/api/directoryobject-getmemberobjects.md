@@ -2,15 +2,15 @@
 title: Вывод объектов элементов
 description: " Возвращает все группы и роли каталога, участником которых является пользователь, группа или объект каталога. Это транзитивная функция. "
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fb16a8901d89240ca3b6edea0311075fbd0d07ee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 66a7ebebe219e52a0d1581b65a1aa937c49ba533
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517981"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181918"
 ---
 # <a name="get-member-objects"></a>Вывод объектов членства
 

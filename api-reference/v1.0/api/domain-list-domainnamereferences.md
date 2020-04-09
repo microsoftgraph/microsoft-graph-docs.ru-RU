@@ -1,16 +1,16 @@
 ---
 title: Список Домаиннамереференцес
-description: Получение списка directoryObject со ссылкой на домен. Возвращаемый список будет содержать все объекты каталога с зависимостью от домена.
-author: davidmu1
+description: Получение списка directoryObject со ссылкой на домен.
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 513c36432c828720e90ac015a2bc38a69aecbf0a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: db09904e99eb892a5ee09acd43dde1967ce3ea39
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517890"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43179446"
 ---
 # <a name="list-domainnamereferences"></a>Список Домаиннамереференцес
 

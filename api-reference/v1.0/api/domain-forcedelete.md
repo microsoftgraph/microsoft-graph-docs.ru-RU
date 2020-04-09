@@ -1,16 +1,16 @@
 ---
 title: Принудительное удаление домена
 description: Удаляет домен с помощью асинхронной длительной операции.
-author: davidmu1
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 98be54b7eb97a18572f44c9be61ea8a4485ec081
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b50957082fe4f2e1e0a87d24cf36a7a7fc6eed16
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517897"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181345"
 ---
 # <a name="force-domain-deletion"></a>Принудительное удаление домена
 

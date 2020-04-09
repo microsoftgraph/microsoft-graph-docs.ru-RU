@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса domainDnsRecord
-description: Для каждого домена в клиенте может потребоваться добавить записи DNS в файл зоны DNS домена, чтобы домен можно было использовать в Microsoft Online Services. Объект **DomainDnsRecord** используется для представления таких DNS-записей. Базовый объект для сущностей Домаинднскнамерекорд, Домаинднсмксрекорд, Домаинднссрврекорд и Домаинднсткстрекорд.
+description: Объект DomainDnsRecord используется для представления записей DNS.
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9402ec0785da87236fa94a9749f8b400f3164e1e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6e2b64a15f49e31384045adcfe85758af06e1e92
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531603"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181646"
 ---
 # <a name="domaindnsrecord-resource-type"></a>Тип ресурса domainDnsRecord
 
@@ -24,14 +24,14 @@ ms.locfileid: "42531603"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|Строка| Уникальный идентификатор, назначенный этой сущности. Не допускает значения NULL и только для чтения.|
-|Переключатель|Boolean| Если задано значение false, эта запись должна быть настроена клиентом на узле DNS для правильной работы Microsoft Online Services с доменом. |
-|label|Строка| Значение, используемое при настройке имени DNS-записи на узле DNS. |
-|recordType|Строка| Указывает, какой тип записи DNS представляет эта сущность.</br></br>Может принимать одно из следующих значений: *CNAME*, *MX*, *SRV*, *txt* .</br></br>Key |
-|суппортедсервице|Строка| Служба или компонент Microsoft Online, зависящие от этой записи DNS.</br></br>Может принимать одно из следующих значений: **null**, *Email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*|
+|id|String| Уникальный идентификатор, назначенный этой сущности. Не допускает значения NULL и только для чтения.|
+|Переключатель|Логический| Если задано значение false, эта запись должна быть настроена клиентом на узле DNS для правильной работы Microsoft Online Services с доменом. |
+|label|String| Значение, используемое при настройке имени DNS-записи на узле DNS. |
+|recordType|String| Указывает, какой тип записи DNS представляет эта сущность.</br></br>Может принимать одно из следующих значений: *CNAME*, *MX*, *SRV*, *txt* .</br></br>Key |
+|суппортедсервице|String| Служба или компонент Microsoft Online, зависящие от этой записи DNS.</br></br>Может принимать одно из следующих значений: **null**, *Email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*|
 |используем|Int32| Значение, используемое при настройке свойства срока жизни (TTL) записи DNS на узле DNS. Не допускает значение null |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

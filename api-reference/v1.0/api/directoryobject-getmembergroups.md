@@ -2,15 +2,15 @@
 title: Вывод групп элементов
 description: Возвращает все группы, в которых состоит указанный пользователь, группа или объект каталога. Это транзитивная функция.
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fb3c58925aafe3b454863b2160b30db5be2a8242
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 60d21aefcf1d2abac66e7797624984570bd132bf
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517988"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181925"
 ---
 # <a name="get-member-groups"></a>Вывод групп пользователя
 

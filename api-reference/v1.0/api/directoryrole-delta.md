@@ -2,15 +2,15 @@
 title: 'directoryRole: Delta'
 description: Получение только что созданных, обновленных или удаленных ролей каталогов без выполнения полного чтения всей коллекции ресурсов. Сведения об использовании запроса изменений см.
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1a8c755fbdadca7926c9f7bce9179e4ce74953e3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bfd98c1415381e4daf1e8a551dc9050df122ff49
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517960"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181422"
 ---
 # <a name="directoryrole-delta"></a>directoryRole: Delta
 
@@ -70,7 +70,7 @@ GET /directoryRoles/delta
 
 ### <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект коллекции [directoryRole](../resources/directoryrole.md) в тексте отклика. Отклик также содержит URL-адрес `nextLink` или `deltaLink`.
+В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект коллекции [directoryRole](../resources/directoryrole.md) в тексте отклика. Оклик также содержит URL-адрес `nextLink` или `deltaLink`.
 
 - Если возвращается URL-адрес `nextLink`, это означает, что во время сеанса получены не все страницы данных. Приложение продолжает отправлять запросы, используя URL-адрес `nextLink`, пока в ответ не будет включен URL-адрес `deltaLink`.
 

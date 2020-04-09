@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Домаинднсткстрекорд
-description: Представляет запись TXT, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта DomainDnsRecord.
-author: davidmu1
+description: Представляет запись TXT, добавленную в файл зоны DNS определенного домена в клиенте.
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 6a2899081dcc171feb2ae937ae1a742093c5133f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c45845d984220997123f12e7558bf8ab300e679e
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531590"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181632"
 ---
 # <a name="domaindnstxtrecord-resource-type"></a>Тип ресурса Домаинднсткстрекорд
 
@@ -24,15 +24,15 @@ ms.locfileid: "42531590"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|Строка| Уникальный идентификатор, назначенный этой сущности. Не допускает значения NULL и только для чтения. |
-|Переключатель|Boolean| Если этот параметр имеет значение false, запись TXT должна быть настроена клиентом на узле DNS для правильной работы Microsoft Online Services с доменом. |
-|label|Строка| Значение, используемое при настройке свойства *Name* записи TXT на узле DNS.|
-|recordType|Строка| Тип записи DNS. Значение всегда является *txt*. Key |
-|суппортедсервице|Строка| Служба или компонент Microsoft Online, зависящие от этой записи TXT.</br></br>Может принимать одно из следующих значений: **null**, *Email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
-|текст|Строка| Значение, используемое при настройке свойства *Text* на узле DNS. |
+|id|String| Уникальный идентификатор, назначенный этой сущности. Не допускает значения NULL и только для чтения. |
+|Переключатель|Логический| Если этот параметр имеет значение false, запись TXT должна быть настроена клиентом на узле DNS для правильной работы Microsoft Online Services с доменом. |
+|label|String| Значение, используемое при настройке свойства *Name* записи TXT на узле DNS.|
+|recordType|String| Тип записи DNS. Значение всегда является *txt*. Key |
+|суппортедсервице|String| Служба или компонент Microsoft Online, зависящие от этой записи TXT.</br></br>Может принимать одно из следующих значений: **null**, *Email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
+|текст|String| Значение, используемое при настройке свойства *Text* на узле DNS. |
 |используем|Int32| Значение, используемое при настройке свойства срока *жизни (TTL)* записи MX на узле DNS. Не допускает значение null |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

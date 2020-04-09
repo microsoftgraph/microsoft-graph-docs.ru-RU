@@ -2,21 +2,21 @@
 title: Получение directoryAudit
 description: Описывает метод Get ресурса Директоряудит (Entity) из API Microsoft Graph.
 localization_priority: Normal
-author: dhanyahk
+author: cloudhandler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 82a395224cd9230e3f5c6bdd1d13f087aec0d178
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8bf36db27c6ba21bc8799977baa881bf1b8c6fee
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518030"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43179460"
 ---
 # <a name="get-directoryaudit"></a>Получение directoryAudit
 
 Пространство имен: microsoft.graph
 
-Получение конкретного элемента журнала аудита Azure Active Directory. Сюда входит элемент журнала аудита, созданный различными службами в Azure Active Directory, такими как пользователь, приложение, Управление устройствами и группами, управление правами на доступ к данным, обзоры доступа, условия использования, защита удостоверений, управление паролями ( самообслуживания и сброс паролей администратора), самостоятельное управление группами и т. д.
+Получение конкретного элемента журнала аудита Azure Active Directory. Сюда входит элемент журнала аудита, созданный различными службами в Azure Active Directory, такими как пользователь, приложение, Управление устройствами и группами, управление правами на доступ к данным, проверки доступа, условия использования, защита удостоверений, управление паролями (сброс паролей самообслуживания и администратора), Управление группами самообслуживания и т. д.
 
 ## <a name="permissions"></a>Разрешения
 

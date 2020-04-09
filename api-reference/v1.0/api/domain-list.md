@@ -1,16 +1,16 @@
 ---
 title: Список доменов
 description: Получение списка объектов Domain.
-author: davidmu1
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e336b3c30507bbf8bb4bdd3dc761ba8cdcfae04c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 834eb0259a54ed1d5ea984496e4c7150daebee5f
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517862"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43179425"
 ---
 # <a name="list-domains"></a>Список доменов
 

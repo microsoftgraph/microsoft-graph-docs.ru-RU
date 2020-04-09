@@ -2,15 +2,15 @@
 title: Создание Цертификатебаседаусконфигуратион
 description: Используйте этот API для создания нового Цертификатебаседаусконфигуратион.
 localization_priority: Normal
-author: davidmu1
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dc6cea4d88404e70267046c882cacf8471d1cd9f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f0101f7937b89df9d15b8b836dd241aa09d8e857
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518625"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181247"
 ---
 # <a name="create-certificatebasedauthconfiguration"></a>Создание Цертификатебаседаусконфигуратион
 
@@ -46,7 +46,7 @@ POST /organization/{id}/certificateBasedAuthConfiguration
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 Для создания объекта [цертификатебаседаусконфигуратион](../resources/certificatebasedauthconfiguration.md) требуются следующие свойства:
 
