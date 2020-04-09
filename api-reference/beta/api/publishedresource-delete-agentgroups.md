@@ -2,19 +2,19 @@
 title: Удаление Публишедресаурце из Онпремисесажентграуп
 description: Удаление объекта [публишедресаурце](../resources/publishedresource.md) из объекта [онпремисесажентграуп](../resources/onpremisesagentgroup.md) .
 localization_priority: Normal
-author: davidmu1
+author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6c8945712a3b8685155a4c3c66e7403f9027c83c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3e300f57d58dcb0d9b32f17fa603b50df9aeb4c1
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454852"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43200189"
 ---
 # <a name="remove-publishedresource-from-an-onpremisesagentgroup"></a>Удаление Публишедресаурце из Онпремисесажентграуп
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

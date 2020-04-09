@@ -2,19 +2,19 @@
 title: Тип ресурса Онпремисеспублишинг
 description: Ниже представлено описание ресурса в формате JSON.
 localization_priority: Normal
-author: davidmu1
+author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: db81ef2c61142edb0d3ca58a67b34c7da34e71f9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9395a2d51628ed6ffc8ed0049f73595e2c98ba7a
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522216"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43200056"
 ---
 # <a name="onpremisespublishing-resource-type"></a>Тип ресурса Онпремисеспублишинг
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

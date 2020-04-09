@@ -2,19 +2,19 @@
 title: Обновление Онпремисесажентграуп
 description: Обновление свойств объекта **онпремисесажентграуп** .
 localization_priority: Normal
-author: davidmu1
+author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 507caa0d0d738c2d3d85ed4220ab71203c57fa13
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 58d452bea88c58de944cdb4f48bf482025abb2ba
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456455"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43200239"
 ---
 # <a name="update-onpremisesagentgroup"></a>Обновление Онпремисесажентграуп
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

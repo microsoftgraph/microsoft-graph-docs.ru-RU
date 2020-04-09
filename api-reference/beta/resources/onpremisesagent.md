@@ -2,19 +2,19 @@
 title: Тип ресурса Онпремисесажент
 description: Тип ресурса Онпремисесажент.
 localization_priority: Normal
-author: davidmu1
+author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ff30f427c2aac754ba3cfda4082d590e95f5edd3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fdc6355b33539899ab51a4a6881a8109cb8d87a6
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522244"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199755"
 ---
 # <a name="onpremisesagent-resource-type"></a>Тип ресурса Онпремисесажент
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,9 +37,9 @@ ms.locfileid: "42522244"
 |id|Строка| Идентификатор объекта Онпремисесажент. Только для чтения.|
 |ИмяКомпьютера|String|Имя компьютера, на котором выполняется агжент. Только для чтения|
 |status|string| Возможные значения: `active`, `inactive`.|
-|публишингтипе|строка| Возможные значения: `appProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
+|публишингтипе|string| Возможные значения: `appProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|

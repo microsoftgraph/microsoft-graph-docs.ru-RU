@@ -1,20 +1,20 @@
 ---
 title: Получение Едукатионалактивити
-description: Получение свойств и связей объекта едукатионалактивити.
+description: Получение свойств и связей объекта Едукатионалактивити.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: e9b4784a2dc757e5a28371065ce0bc66916554c8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 35d927664013775c6bb470d5118427d3bc6c45ae
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42427867"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199545"
 ---
 # <a name="get-educationalactivity"></a>Получение Едукатионалактивити
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -52,9 +52,9 @@ GET /me/profile/educationalActivities/{id}
 
 ## <a name="request-headers"></a>Заголовки запроса
 
-| Имя           |Описание                  |
+|Имя            |Описание                  |
 |:---------------|:----------------------------|
-| Авторизация  | Bearer {токен}. Обязательный.   |
+|Авторизация   |Bearer {токен}. Обязательный.    |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -71,6 +71,7 @@ GET /me/profile/educationalActivities/{id}
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_educationalactivity"
@@ -80,19 +81,21 @@ GET /me/profile/educationalActivities/{id}
 GET https://graph.microsoft.com/beta/me/profile/educationalActivities/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationalactivity-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationalactivity-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationalactivity-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### <a name="response"></a>Отклик
 

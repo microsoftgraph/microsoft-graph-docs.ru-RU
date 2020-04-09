@@ -3,18 +3,18 @@ title: Обновление identityProvider
 description: Обновление свойств в существующей identityProvider.
 localization_priority: Normal
 doc_type: apiPageType
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2d0217bf395a37b361e83818e653a2ad23220eef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1925e71e365d6a5f632176c62afc43ee30e829ee
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446491"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199573"
 ---
 # <a name="update-identityprovider"></a>Обновление identityProvider
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

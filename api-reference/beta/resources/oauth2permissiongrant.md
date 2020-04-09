@@ -3,18 +3,18 @@ title: Тип ресурса oAuth2PermissionGrant
 description: Представляет области OAuth 2,0 (делегированные разрешения), которые были предоставлены приложению (представленному субъектом-службой) в рамках процесса разрешения пользователя или администратора.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: e43866c73b8ad92e56a6e907c5ef8c660ef56e22
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: psignoret
+ms.openlocfilehash: 9a403ac53d50c31a41a65c47db7423439a5befd0
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522535"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43200133"
 ---
 # <a name="oauth2permissiongrant-resource-type"></a>Тип ресурса oAuth2PermissionGrant
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -57,7 +57,7 @@ ms.locfileid: "42522535"
 |scope|String| Указывает значение утверждения [области](/graph/permissions-reference) , которое должно ожидать приложение ресурсов в маркере доступа OAuth 2,0. Например, *User. Read* |
 |startTime|DateTimeOffset| В настоящее время значение времени начала игнорируется. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

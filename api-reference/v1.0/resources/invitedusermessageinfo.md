@@ -2,19 +2,19 @@
 title: Настройка сообщения с приглашением
 description: Объект invitedUserMessageInfo позволяет настроить сообщение с приглашением.
 localization_priority: Normal
-author: ''
-ms.prod: ''
+author: elisolMS
+ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 324ce713354fc8f27ef926ef1ee0bbf538ee4b0a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5bdcc08721a56d379790b83d70aae216d169c6af
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447705"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43200294"
 ---
 # <a name="configuring-the-invitation-message"></a>Настройка сообщения с приглашением
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Объект invitedUserMessageInfo позволяет настроить сообщение с [приглашением](invitation.md) .
 

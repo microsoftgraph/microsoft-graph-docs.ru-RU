@@ -2,19 +2,19 @@
 title: Создание Публишедресаурце
 description: Создание нового объекта **публишедресаурце** .
 localization_priority: Normal
-author: davidmu1
+author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3e55322614d7ec92ea56386dab22bd4ccab2a457
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3ff80a2e88c9b5aa63d8e504d8ed4ee19fcb93bd
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454835"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43200315"
 ---
 # <a name="create-publishedresource"></a>Создание Публишедресаурце
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

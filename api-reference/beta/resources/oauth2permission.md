@@ -3,18 +3,18 @@ title: Тип ресурса oAuth2Permission
 description: Представляет область делегированного разрешения OAuth 2,0. Указанные делегированные области разрешений OAuth 2,0 могут запрашиваться клиентскими приложениями (через коллекцию **рекуиредресаурцеакцесс** для объекта Application) при вызове приложения-ресурса. Свойство **appRoles** объекта servicePrincipal и сущности приложения является коллекцией **oAuth2Permission**.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: d17834e3cbfcc1d22c9531befe7baa29215f8c4f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: psignoret
+ms.openlocfilehash: 6acbf07ae6212a68519cbbf44a2730ac3b90e4b9
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522542"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43200147"
 ---
 # <a name="oauth2permission-resource-type"></a>Тип ресурса oAuth2Permission
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

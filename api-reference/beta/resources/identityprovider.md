@@ -3,18 +3,18 @@ title: Тип ресурса identityProvider
 description: Представляет поставщика удостоверений Azure Active Directory (Azure AD). Поставщик удостоверений может иметь значение Microsoft, Google, Facebook, Amazon или LinkedIn.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 30e9451d67a5438a8739879747e301d016e0520a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: Nickgmicrosoft
+ms.openlocfilehash: 91eb55c35a17393de623e2c9c5f99c7d3f43386a
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496665"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199748"
 ---
 # <a name="identityprovider-resource-type"></a>Тип ресурса identityProvider
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,11 +41,11 @@ ms.locfileid: "42496665"
 
 |Свойство|Тип|Обязательное|Допускается значение null|Описание|
 |:---------------|:--------|:--------|:--------|:----------|
-|clientId|Строка|Да|Нет|Идентификатор клиента для приложения. Это идентификатор клиента, полученный при регистрации приложения с помощью поставщика удостоверений.|
+|clientId|String|Да|Нет|Идентификатор клиента для приложения. Это идентификатор клиента, полученный при регистрации приложения с помощью поставщика удостоверений.|
 |clientSecret|String|Да|Нет|Секрет клиента для приложения. Это секрет клиента, полученный при регистрации приложения с помощью поставщика удостоверений. Только для записи. Операция чтения возвращает "\*\*\*\*".|
 |id|Строка|Нет|Нет|Идентификатор поставщика удостоверений.|
 |name|String|Нет|Нет|Отображаемое имя поставщика удостоверений.|
-|type|Строка|Да|Нет|Тип поставщика удостоверений Он должен иметь одно из следующих значений: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
+|type|String|Да|Нет|Тип поставщика удостоверений Он должен иметь одно из следующих значений: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
 
 ### <a name="where-to-get-the-client-id-and-secret"></a>Где взять идентификатор и секрет клиента
 

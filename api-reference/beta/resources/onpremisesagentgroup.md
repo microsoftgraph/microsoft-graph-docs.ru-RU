@@ -2,19 +2,19 @@
 title: Тип ресурса Онпремисесажентграуп
 description: Тип ресурса Онпремисесажентграуп.
 localization_priority: Normal
-author: davidmu1
+author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 203d914098d6b7cb0b03715accac4958bcf53870
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a211fb4245e8f4e4ef23158c0f553876303ea9c9
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522237"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199720"
 ---
 # <a name="onpremisesagentgroup-resource-type"></a>Тип ресурса Онпремисесажентграуп
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,9 +37,9 @@ ms.locfileid: "42522237"
 |displayName|Строка|Отображаемое имя **онпремисесажентграуп**.|
 |id|String| Идентификатор объекта **онпремисесажентграуп**. Только для чтения.|
 |isDefault|Boolean|Указывает, является ли **онпремисесажентграуп** группой агентов по умолчанию. Только одна группа агентов может быть **онпремисесажентграуп** по умолчанию и задается системой.|
-|публишингтипе|строка| Возможные значения: `appProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
+|публишингтипе|string| Возможные значения: `appProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|

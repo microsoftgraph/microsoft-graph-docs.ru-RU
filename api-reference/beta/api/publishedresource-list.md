@@ -2,19 +2,19 @@
 title: Список Публишедресаурцес
 description: Получение списка объектов Публишедресаурце.
 localization_priority: Normal
-author: davidmu1
+author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 370a13906e931e20eaea1a4dbd2fb1bc17a2ea50
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d820e23e48eac46feb82e1304e5dffcf83e5d032
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454845"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43200287"
 ---
 # <a name="list-publishedresources"></a>Список Публишедресаурцес
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

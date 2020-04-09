@@ -2,19 +2,19 @@
 title: Получение Публишедресаурце
 description: Получение свойств и связей объекта [публишедресаурце](../resources/publishedresource.md) .
 localization_priority: Normal
-author: davidmu1
+author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: def49c80a2c1529d02b643bdc6f97b8fdd5d959d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1555adb5603d734534437037a52527313eaeac24
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454877"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43199775"
 ---
 # <a name="get-publishedresource"></a>Получение Публишедресаурце
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

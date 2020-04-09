@@ -2,19 +2,19 @@
 title: Назначение Публишедресаурце для Онпремисесажентграуп
 description: Назначьте объект **публишедресаурце** объекту **онпремисесажентграуп** .
 localization_priority: Normal
-author: davidmu1
+author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ba2c351ffb511ecb83d87d7b4d151da1528a2387
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 12a30d04b27b0ed098fd12c71fabed90fa321cf8
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454838"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43200000"
 ---
 # <a name="assign-publishedresource-to-onpremisesagentgroup"></a>Назначение Публишедресаурце для Онпремисесажентграуп
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
