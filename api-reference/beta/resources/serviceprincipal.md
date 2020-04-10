@@ -4,13 +4,13 @@ description: Представляет экземпляр приложения в
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 25d3df65537eccdbcb4f59fe3c70306a51af0ab9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: sureshja
+ms.openlocfilehash: 9f08f4ce177c3c1034f0a9ac633f7f963632b7ae
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520775"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219195"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
