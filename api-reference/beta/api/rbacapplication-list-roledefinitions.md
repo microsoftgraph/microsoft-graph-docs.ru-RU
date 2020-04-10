@@ -2,35 +2,35 @@
 title: Список Унифиедроледефинитионс
 description: Получение списка объектов Унифиедроледефинитион.
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9402d4543cecf51a1c689c6f47ee9f7358fd0800
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 779a8dfcc582b37118b975914141d0508860f9a5
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181198"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216766"
 ---
-# <a name="list-unifiedroledefinitions"></a><span data-ttu-id="c6305-103">Список Унифиедроледефинитионс</span><span class="sxs-lookup"><span data-stu-id="c6305-103">List unifiedRoleDefinitions</span></span>
+# <a name="list-unifiedroledefinitions"></a><span data-ttu-id="0b417-103">Список Унифиедроледефинитионс</span><span class="sxs-lookup"><span data-stu-id="0b417-103">List unifiedRoleDefinitions</span></span>
 
-<span data-ttu-id="c6305-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c6305-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="0b417-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0b417-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c6305-105">Получение списка объектов [унифиедроледефинитион](../resources/unifiedroledefinition.md) для поставщика.</span><span class="sxs-lookup"><span data-stu-id="c6305-105">Get a list of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) objects for the provider.</span></span>
+<span data-ttu-id="0b417-105">Получение списка объектов [унифиедроледефинитион](../resources/unifiedroledefinition.md) для поставщика.</span><span class="sxs-lookup"><span data-stu-id="0b417-105">Get a list of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) objects for the provider.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c6305-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c6305-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="0b417-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="0b417-106">Permissions</span></span>
 
-<span data-ttu-id="c6305-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c6305-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0b417-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0b417-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c6305-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c6305-109">Permission type</span></span>      | <span data-ttu-id="c6305-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c6305-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0b417-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0b417-109">Permission type</span></span>      | <span data-ttu-id="0b417-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="0b417-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c6305-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c6305-111">Delegated (work or school account)</span></span> | <span data-ttu-id="c6305-112">Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="c6305-112">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="c6305-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c6305-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c6305-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c6305-114">Not supported.</span></span>    |
-|<span data-ttu-id="c6305-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c6305-115">Application</span></span> | <span data-ttu-id="c6305-116">Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="c6305-116">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="0b417-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0b417-111">Delegated (work or school account)</span></span> | <span data-ttu-id="0b417-112">Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="0b417-112">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="0b417-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0b417-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0b417-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0b417-114">Not supported.</span></span>    |
+|<span data-ttu-id="0b417-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="0b417-115">Application</span></span> | <span data-ttu-id="0b417-116">Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="0b417-116">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c6305-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c6305-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0b417-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0b417-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,31 +38,31 @@ ms.locfileid: "43181198"
 GET /roleManagement/directory/roleDefinitions
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="c6305-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="c6305-118">Optional query parameters</span></span>
-<span data-ttu-id="c6305-119">Этот метод поддерживает `$filter` `id`, `displayName`и `isBuiltIn`.</span><span class="sxs-lookup"><span data-stu-id="c6305-119">This method supports `$filter` on `id`, `displayName`, and `isBuiltIn`.</span></span> <span data-ttu-id="c6305-120">Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="c6305-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="0b417-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="0b417-118">Optional query parameters</span></span>
+<span data-ttu-id="0b417-119">Этот метод поддерживает `$filter` `id`, `displayName`и `isBuiltIn`.</span><span class="sxs-lookup"><span data-stu-id="0b417-119">This method supports `$filter` on `id`, `displayName`, and `isBuiltIn`.</span></span> <span data-ttu-id="0b417-120">Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="0b417-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="c6305-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c6305-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="0b417-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0b417-121">Request headers</span></span>
 
-| <span data-ttu-id="c6305-122">Имя</span><span class="sxs-lookup"><span data-stu-id="c6305-122">Name</span></span>      |<span data-ttu-id="c6305-123">Описание</span><span class="sxs-lookup"><span data-stu-id="c6305-123">Description</span></span>|
+| <span data-ttu-id="0b417-122">Имя</span><span class="sxs-lookup"><span data-stu-id="0b417-122">Name</span></span>      |<span data-ttu-id="0b417-123">Описание</span><span class="sxs-lookup"><span data-stu-id="0b417-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="c6305-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="c6305-124">Authorization</span></span> | <span data-ttu-id="c6305-125">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="c6305-125">Bearer {token}</span></span> |
+| <span data-ttu-id="0b417-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="0b417-124">Authorization</span></span> | <span data-ttu-id="0b417-125">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="0b417-125">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c6305-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="c6305-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="0b417-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="0b417-126">Request body</span></span>
 
-<span data-ttu-id="c6305-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="c6305-127">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="0b417-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="0b417-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c6305-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="c6305-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0b417-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="0b417-128">Response</span></span>
 
-<span data-ttu-id="c6305-129">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [унифиедроледефинитион](../resources/unifiedroledefinition.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="c6305-129">If successful, this method returns a `200 OK` response code and a collection of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) objects in the response body.</span></span>
+<span data-ttu-id="0b417-129">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [унифиедроледефинитион](../resources/unifiedroledefinition.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="0b417-129">If successful, this method returns a `200 OK` response code and a collection of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c6305-130">Пример</span><span class="sxs-lookup"><span data-stu-id="c6305-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0b417-130">Пример</span><span class="sxs-lookup"><span data-stu-id="0b417-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="c6305-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="c6305-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="0b417-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="0b417-131">Request</span></span>
 
-<span data-ttu-id="c6305-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c6305-132">The following is an example of the request.</span></span>
+<span data-ttu-id="0b417-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="0b417-132">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="c6305-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="c6305-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="0b417-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="0b417-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_roledefinitions"
@@ -71,26 +71,26 @@ GET /roleManagement/directory/roleDefinitions
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions
 ```
-# <a name="c"></a>[<span data-ttu-id="c6305-134">C#</span><span class="sxs-lookup"><span data-stu-id="c6305-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="0b417-134">C#</span><span class="sxs-lookup"><span data-stu-id="0b417-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-roledefinitions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="c6305-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c6305-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="0b417-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0b417-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-roledefinitions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="c6305-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c6305-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="0b417-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0b417-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-roledefinitions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="c6305-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="c6305-137">Response</span></span>
+### <a name="response"></a><span data-ttu-id="0b417-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="0b417-137">Response</span></span>
 
-<span data-ttu-id="c6305-138">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="c6305-138">The following is an example of the response.</span></span>
+<span data-ttu-id="0b417-138">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="0b417-138">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="c6305-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c6305-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="0b417-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="0b417-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

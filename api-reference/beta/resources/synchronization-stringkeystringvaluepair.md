@@ -3,32 +3,32 @@ title: Тип ресурса Стрингкэйстрингвалуепаир
 description: Представляет собой ключ-значение, в котором ключ является строкой, а значение является строкой.
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 67bd7d5ae3c4528589633a89376f5c8de0b5dd30
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 03bcea7786b5790ad9936d7068d5b89ef3214088
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520088"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217558"
 ---
-# <a name="stringkeystringvaluepair-resource-type"></a><span data-ttu-id="b582f-103">Тип ресурса Стрингкэйстрингвалуепаир</span><span class="sxs-lookup"><span data-stu-id="b582f-103">stringKeyStringValuePair resource type</span></span>
+# <a name="stringkeystringvaluepair-resource-type"></a><span data-ttu-id="f3c10-103">Тип ресурса Стрингкэйстрингвалуепаир</span><span class="sxs-lookup"><span data-stu-id="f3c10-103">stringKeyStringValuePair resource type</span></span>
 
-<span data-ttu-id="b582f-104">Пространство имен: Microsoft. Graph</span><span class="sxs-lookup"><span data-stu-id="b582f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f3c10-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f3c10-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b582f-105">Представляет собой ключ-значение, в котором ключ является строкой, а значение является строкой.</span><span class="sxs-lookup"><span data-stu-id="b582f-105">Represents a key-value pair where the key is a string and the value is a string.</span></span>
+<span data-ttu-id="f3c10-105">Представляет собой ключ-значение, в котором ключ является строкой, а значение является строкой.</span><span class="sxs-lookup"><span data-stu-id="f3c10-105">Represents a key-value pair where the key is a string and the value is a string.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="b582f-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="b582f-106">Properties</span></span>
-| <span data-ttu-id="b582f-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="b582f-107">Property</span></span>     | <span data-ttu-id="b582f-108">Тип</span><span class="sxs-lookup"><span data-stu-id="b582f-108">Type</span></span>   |<span data-ttu-id="b582f-109">Описание</span><span class="sxs-lookup"><span data-stu-id="b582f-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="f3c10-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="f3c10-106">Properties</span></span>
+| <span data-ttu-id="f3c10-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="f3c10-107">Property</span></span>     | <span data-ttu-id="f3c10-108">Тип</span><span class="sxs-lookup"><span data-stu-id="f3c10-108">Type</span></span>   |<span data-ttu-id="f3c10-109">Описание</span><span class="sxs-lookup"><span data-stu-id="f3c10-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="b582f-110">ключа</span><span class="sxs-lookup"><span data-stu-id="b582f-110">key</span></span>|<span data-ttu-id="b582f-111">String</span><span class="sxs-lookup"><span data-stu-id="b582f-111">String</span></span>|<span data-ttu-id="b582f-112">Ключ.</span><span class="sxs-lookup"><span data-stu-id="b582f-112">Key.</span></span>|
-|<span data-ttu-id="b582f-113">value</span><span class="sxs-lookup"><span data-stu-id="b582f-113">value</span></span>|<span data-ttu-id="b582f-114">String</span><span class="sxs-lookup"><span data-stu-id="b582f-114">String</span></span>|<span data-ttu-id="b582f-115">Значение</span><span class="sxs-lookup"><span data-stu-id="b582f-115">Value.</span></span>|
+|<span data-ttu-id="f3c10-110">ключа</span><span class="sxs-lookup"><span data-stu-id="f3c10-110">key</span></span>|<span data-ttu-id="f3c10-111">Строка</span><span class="sxs-lookup"><span data-stu-id="f3c10-111">String</span></span>|<span data-ttu-id="f3c10-112">Ключ.</span><span class="sxs-lookup"><span data-stu-id="f3c10-112">Key.</span></span>|
+|<span data-ttu-id="f3c10-113">value</span><span class="sxs-lookup"><span data-stu-id="f3c10-113">value</span></span>|<span data-ttu-id="f3c10-114">String</span><span class="sxs-lookup"><span data-stu-id="f3c10-114">String</span></span>|<span data-ttu-id="f3c10-115">Значение</span><span class="sxs-lookup"><span data-stu-id="f3c10-115">Value.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="b582f-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="b582f-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f3c10-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="f3c10-116">JSON representation</span></span>
 
-<span data-ttu-id="b582f-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b582f-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="f3c10-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f3c10-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

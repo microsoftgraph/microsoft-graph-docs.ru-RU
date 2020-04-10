@@ -2,35 +2,35 @@
 title: Список appliesTo
 description: Получение списка объектов directoryObject, к которым был применен объект Хомереалмдисковериполици.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a687bff4095c94bc8785ba9bc0a04c2ebc1546d3
-ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
+ms.openlocfilehash: 69948b2c30a16b5764573712b29ce51b98fa849d
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "42562663"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218515"
 ---
-# <a name="list-appliesto"></a><span data-ttu-id="091fb-103">Список appliesTo</span><span class="sxs-lookup"><span data-stu-id="091fb-103">List appliesTo</span></span>
+# <a name="list-appliesto"></a><span data-ttu-id="82ed5-103">Список appliesTo</span><span class="sxs-lookup"><span data-stu-id="82ed5-103">List appliesTo</span></span>
 
-<span data-ttu-id="091fb-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="091fb-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="82ed5-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="82ed5-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="091fb-105">Получение списка объектов [directoryObject](../resources/directoryObject.md) , к которым был применен объект [хомереалмдисковериполици](../resources/homerealmdiscoverypolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="091fb-105">Get a list of [directoryObject](../resources/directoryObject.md) objects that a [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) object has been applied to.</span></span> <span data-ttu-id="091fb-106">Хомереалмдисковериполици можно применять только к ресурсам [servicePrincipal](../resources/serviceprincipal.md) .</span><span class="sxs-lookup"><span data-stu-id="091fb-106">The homeRealmDiscoveryPolicy can only be applied to [servicePrincipal](../resources/serviceprincipal.md) resources.</span></span>
+<span data-ttu-id="82ed5-105">Получение списка объектов [directoryObject](../resources/directoryObject.md) , к которым был применен объект [хомереалмдисковериполици](../resources/homerealmdiscoverypolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="82ed5-105">Get a list of [directoryObject](../resources/directoryObject.md) objects that a [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) object has been applied to.</span></span> <span data-ttu-id="82ed5-106">Хомереалмдисковериполици можно применять только к ресурсам [servicePrincipal](../resources/serviceprincipal.md) .</span><span class="sxs-lookup"><span data-stu-id="82ed5-106">The homeRealmDiscoveryPolicy can only be applied to [servicePrincipal](../resources/serviceprincipal.md) resources.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="091fb-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="091fb-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="82ed5-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="82ed5-107">Permissions</span></span>
 
-<span data-ttu-id="091fb-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="091fb-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="82ed5-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="82ed5-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="091fb-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="091fb-110">Permission type</span></span>                        | <span data-ttu-id="091fb-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="091fb-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="82ed5-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="82ed5-110">Permission type</span></span>                        | <span data-ttu-id="82ed5-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="82ed5-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="091fb-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="091fb-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="091fb-113">Policy. Read. ALL и Application. Read. ALL, Policy. ReadWrite. Аппликатионконфигуратион и Application. Read. ALL, Directory. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="091fb-113">Policy.Read.All and Application.Read.All, Policy.ReadWrite.ApplicationConfiguration and Application.Read.All, Directory.Read.All</span></span> |
-| <span data-ttu-id="091fb-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="091fb-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="091fb-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="091fb-115">Not supported.</span></span> |
-| <span data-ttu-id="091fb-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="091fb-116">Application</span></span>                            | <span data-ttu-id="091fb-117">Policy. Read. ALL и Application. Read. ALL, Policy. ReadWrite. Аппликатионконфигуратион и Application. Read. ALL, Directory. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="091fb-117">Policy.Read.All and Application.Read.All, Policy.ReadWrite.ApplicationConfiguration and Application.Read.All, Directory.Read.All</span></span> |
+| <span data-ttu-id="82ed5-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="82ed5-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="82ed5-113">Policy. Read. ALL и Application. Read. ALL, Policy. ReadWrite. Аппликатионконфигуратион и Application. Read. ALL, Directory. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="82ed5-113">Policy.Read.All and Application.Read.All, Policy.ReadWrite.ApplicationConfiguration and Application.Read.All, Directory.Read.All</span></span> |
+| <span data-ttu-id="82ed5-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="82ed5-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="82ed5-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="82ed5-115">Not supported.</span></span> |
+| <span data-ttu-id="82ed5-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="82ed5-116">Application</span></span>                            | <span data-ttu-id="82ed5-117">Policy. Read. ALL и Application. Read. ALL, Policy. ReadWrite. Аппликатионконфигуратион и Application. Read. ALL, Directory. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="82ed5-117">Policy.Read.All and Application.Read.All, Policy.ReadWrite.ApplicationConfiguration and Application.Read.All, Directory.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="091fb-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="091fb-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="82ed5-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="82ed5-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,29 +38,29 @@ ms.locfileid: "42562663"
 GET /policies/homeRealmDiscoveryPolicies/{id}/appliesTo
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="091fb-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="091fb-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="82ed5-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="82ed5-119">Optional query parameters</span></span>
 
-<span data-ttu-id="091fb-120">Этот метод поддерживает параметры `$select` запросов `$top` OData и для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="091fb-120">This method supports the `$select` and `$top` OData query parameters to help customize the response.</span></span> <span data-ttu-id="091fb-121">Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="091fb-121">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="82ed5-120">Этот метод поддерживает параметры `$select` запросов `$top` OData и для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="82ed5-120">This method supports the `$select` and `$top` OData query parameters to help customize the response.</span></span> <span data-ttu-id="82ed5-121">Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="82ed5-121">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="091fb-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="091fb-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="82ed5-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="82ed5-122">Request headers</span></span>
 
-| <span data-ttu-id="091fb-123">Имя</span><span class="sxs-lookup"><span data-stu-id="091fb-123">Name</span></span>      |<span data-ttu-id="091fb-124">Описание</span><span class="sxs-lookup"><span data-stu-id="091fb-124">Description</span></span>|
+| <span data-ttu-id="82ed5-123">Имя</span><span class="sxs-lookup"><span data-stu-id="82ed5-123">Name</span></span>      |<span data-ttu-id="82ed5-124">Описание</span><span class="sxs-lookup"><span data-stu-id="82ed5-124">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="091fb-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="091fb-125">Authorization</span></span> | <span data-ttu-id="091fb-126">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="091fb-126">Bearer {token}</span></span> |
+| <span data-ttu-id="82ed5-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="82ed5-125">Authorization</span></span> | <span data-ttu-id="82ed5-126">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="82ed5-126">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="091fb-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="091fb-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="82ed5-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="82ed5-127">Request body</span></span>
 
-<span data-ttu-id="091fb-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="091fb-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="82ed5-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="82ed5-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="091fb-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="091fb-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="82ed5-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="82ed5-129">Response</span></span>
 
-<span data-ttu-id="091fb-130">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="091fb-130">If successful, this method returns a `200 OK` response code and a collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+<span data-ttu-id="82ed5-130">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="82ed5-130">If successful, this method returns a `200 OK` response code and a collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="091fb-131">Примеры</span><span class="sxs-lookup"><span data-stu-id="091fb-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="82ed5-131">Примеры</span><span class="sxs-lookup"><span data-stu-id="82ed5-131">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="091fb-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="091fb-132">Request</span></span>
+### <a name="request"></a><span data-ttu-id="82ed5-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="82ed5-132">Request</span></span>
 
-<span data-ttu-id="091fb-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="091fb-133">The following is an example of the request.</span></span>
+<span data-ttu-id="82ed5-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="82ed5-133">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_appliesto"
@@ -70,11 +70,11 @@ GET /policies/homeRealmDiscoveryPolicies/{id}/appliesTo
 GET https://graph.microsoft.com/beta/homeRealmDiscoveryPolicies/{id}/appliesTo
 ```
 
-### <a name="response"></a><span data-ttu-id="091fb-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="091fb-134">Response</span></span>
+### <a name="response"></a><span data-ttu-id="82ed5-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="82ed5-134">Response</span></span>
 
-<span data-ttu-id="091fb-135">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="091fb-135">The following is an example of the response.</span></span>
+<span data-ttu-id="82ed5-135">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="82ed5-135">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="091fb-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="091fb-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="82ed5-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="82ed5-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
