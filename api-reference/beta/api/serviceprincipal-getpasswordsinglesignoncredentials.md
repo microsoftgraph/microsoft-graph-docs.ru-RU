@@ -2,19 +2,19 @@
 title: 'servicePrincipal: Жетпассвордсинглесигнонкредентиалс'
 description: Получение списка учетных данных единого входа с помощью пароля пользователя или группы.
 localization_priority: Normal
-author: bharathramh92
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 854c9650ff2adb0cc9bbae34f0bdd7ba143aec2d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e865024416cea97e61c1a8ee35b1bee83976407b
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453452"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219097"
 ---
 # <a name="serviceprincipal-getpasswordsinglesignoncredentials"></a>servicePrincipal: Жетпассвордсинглесигнонкредентиалс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,7 +54,7 @@ POST /servicePrincipals/{id}/getPasswordSingleSignOnCredentials
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String|Идентификатор пользователя или группы, к которой принадлежит этот набор учетных данных.|
+|id|Строка|Идентификатор пользователя или группы, к которой принадлежит этот набор учетных данных.|
 
 ## <a name="response"></a>Отклик
 

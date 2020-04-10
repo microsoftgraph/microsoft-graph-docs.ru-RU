@@ -3,14 +3,14 @@ title: Получение Говернанцероледефинитион
 description: Получение свойств и связей объекта Говернанцероледефинитион.
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
-ms.prod: microsoft-identitiy-platform
-ms.openlocfilehash: 89c1165431b87768fafa9553d688ca9331f9e470
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: 55dbc8933c9adeda1bcd2d40c5ed9c54de7dd55a
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639802"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218859"
 ---
 # <a name="get-governanceroledefinition"></a>Получение Говернанцероледефинитион
 
@@ -23,11 +23,11 @@ ms.locfileid: "42639802"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Permissions              |
+|Тип разрешения      | Разрешения              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Привилежедакцесс. Read. Азурересаурцес |
+|Для приложений | Привилежедакцесс. Read. Азурересаурцес |
 
 Кроме области разрешений, этот API требует, чтобы запрашивающий был иметь по крайней мере одно назначение роли для ресурса, к которому относится [говернанцероледефинитион](../resources/governanceroledefinition.md) .
 

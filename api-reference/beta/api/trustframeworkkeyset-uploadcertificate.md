@@ -2,19 +2,19 @@
 title: 'Трустфрамеворккэйсет: Уплоадцертификате'
 description: Отправьте сертификат в набор ключей.
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: febe9f7c6e742a2d48d2242b9a447a778efa3246
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0342565ca8c7e652118c525a3c51c4700840d718
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452129"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43215905"
 ---
 # <a name="trustframeworkkeyset-uploadcertificate"></a>Трустфрамеворккэйсет: Уплоадцертификате
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,7 +51,7 @@ POST /trustFramework/keySets/{id}/uploadCertificate
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|key|String| Это поле для отправки контента сертификата. Значение должно представлять собой версию фактического содержимого сертификата в кодировке Base 64. |
+|key|Строка| Это поле для отправки контента сертификата. Значение должно представлять собой версию фактического содержимого сертификата в кодировке Base 64. |
 
 ## <a name="response"></a>Отклик
 

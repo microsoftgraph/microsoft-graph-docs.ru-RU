@@ -3,18 +3,18 @@ title: Тип ресурса Филтероперанд
 description: Содержит коллекцию значений для операнда.
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 26aab36386f8d3468555974e56ad91fcd55bc413
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c66ebc2ef5033b57c46bef0ebb831b4f2087a0b3
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520179"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218424"
 ---
 # <a name="filteroperand-resource-type"></a>Тип ресурса Филтероперанд
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

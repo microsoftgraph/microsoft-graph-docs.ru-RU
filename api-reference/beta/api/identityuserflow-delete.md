@@ -2,19 +2,19 @@
 title: Удаление Усерфлов
 description: Удаление Усерфлов.
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d7a46184eef4a38ee13b961bc6cdbbaea15a888d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b9caa40d37cc04f9b248fc273c9c75488b8e63bd
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446459"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218838"
 ---
 # <a name="delete-userflow"></a>Удаление Усерфлов
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -2,15 +2,15 @@
 title: Получение unifiedRoleAssignmentMultiple
 description: Получение свойств и связей объекта Унифиедролеассигнментмултипле.
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 376e4826057e9e474c0fa6e5061a8a8d4f56a979
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 01f59e08a298fd5bf3e630de1cb562bc6de810a4
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181512"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43215835"
 ---
 # <a name="get-unifiedroleassignmentmultiple"></a>Получение unifiedRoleAssignmentMultiple
 

@@ -2,15 +2,15 @@
 title: Список Унифиедроледефинитионс
 description: Получение списка объектов Унифиедроледефинитион.
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9402d4543cecf51a1c689c6f47ee9f7358fd0800
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 779a8dfcc582b37118b975914141d0508860f9a5
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181198"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216766"
 ---
 # <a name="list-unifiedroledefinitions"></a>Список Унифиедроледефинитионс
 

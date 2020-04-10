@@ -2,19 +2,19 @@
 title: 'servicePrincipal: Упдатепассвордсинглесигнонкредентиалс'
 description: Обновление учетных данных единого входа с помощью пароля пользователя или группы.
 localization_priority: Normal
-author: bharathramh92
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7b64d948a59fa52b193d787c850cdab86d34275b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ab8a6d256c3f90dbaaa7197f87dec4fd230c73d0
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453321"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218593"
 ---
 # <a name="serviceprincipal-updatepasswordsinglesignoncredentials"></a>servicePrincipal: Упдатепассвордсинглесигнонкредентиалс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,7 +54,7 @@ POST /servicePrincipals/{id}/updatePasswordSingleSignOnCredentials
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String|Идентификатор пользователя или группы, к которой принадлежит этот набор учетных данных.|
+|id|Строка|Идентификатор пользователя или группы, к которой принадлежит этот набор учетных данных.|
 |записей|Коллекция [учетных данных](../resources/credential.md)|Список объектов учетных данных, определяющих полный вход.|
 
 ## <a name="response"></a>Отклик

@@ -2,15 +2,15 @@
 title: Назначение типа ресурса claimsMappingPolicy
 description: Назначьте Клаимсмаппингполици участнику службы.
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7742908d0aec8dbdfa1d3d145dcb330138541bae
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 476e2cff0c2fe519ce99b1157df5a27c013b6a04
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42589330"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218635"
 ---
 # <a name="assign-claimsmappingpolicy"></a>Назначение типа ресурса claimsMappingPolicy
 

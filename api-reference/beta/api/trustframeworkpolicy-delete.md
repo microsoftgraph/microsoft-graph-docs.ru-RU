@@ -2,19 +2,19 @@
 title: Удаление Трустфрамеворкполици
 description: Эта операция удаляет существующий объект Трустфрамеворкполици из клиента Azure AD B2C.
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 08f96b0321b8b50973254b7c6cdf1a024e6ccd42
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8d3d790126acab48b716694e281b94afa8228b9b
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452108"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219006"
 ---
 # <a name="delete-trustframeworkpolicy"></a>Удаление Трустфрамеворкполици
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 

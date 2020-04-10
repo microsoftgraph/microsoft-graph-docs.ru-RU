@@ -2,15 +2,15 @@
 title: Список appliesTo
 description: Получение списка объектов directoryObject, к которым был применен объект Токениссуанцеполици.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5a9ae1a6b7dfe56dbc2331240d9003d8b68f068d
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 2cbf8a86ba113c1f1d36091a129c767e70c34984
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42591693"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219258"
 ---
 # <a name="list-appliesto"></a>Список appliesTo
 

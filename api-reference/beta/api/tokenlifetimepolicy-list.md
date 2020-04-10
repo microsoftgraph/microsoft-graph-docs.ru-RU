@@ -2,15 +2,15 @@
 title: Перечисление типов ресурсов tokenLifetimePolicy
 description: Получение списка объектов Токенлифетимеполици.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5867316e2887f9ee87d802ca4f997e441af60c5a
-ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
+ms.openlocfilehash: ecec201123c2275545d6b32302048ef72bf35f03
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "42562845"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216325"
 ---
 # <a name="list-tokenlifetimepolicies"></a>Перечисление типов ресурсов tokenLifetimePolicy
 

@@ -2,19 +2,19 @@
 title: Список Усерфловс
 description: Получение списка объектов Усерфлов.
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 169e0783603cb0015832e59123599f306d853d0f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9943331d6230ad657c02d30f6d36cc17b4b64fbb
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446438"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218831"
 ---
 # <a name="list-userflows"></a>Список Усерфловс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

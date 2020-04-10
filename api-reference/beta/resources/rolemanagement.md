@@ -2,19 +2,19 @@
 title: Тип ресурса Ролеманажемент
 description: Ресурс управления ролями RBAC
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 91aad7dc635884631700fe8b9b9b6d44f214b68e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 71c9a12cec6fa58d60f71fe1adcf1af3715da1de
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521049"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43215780"
 ---
 # <a name="rolemanagement-resource-type"></a>Тип ресурса Ролеманажемент
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42521049"
 
 Нет
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|

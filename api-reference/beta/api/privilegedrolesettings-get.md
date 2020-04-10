@@ -3,18 +3,18 @@ title: Получение privilegedRoleSettings
 description: Получение параметров роли для заданной роли. Будет возвращен объект Привилежедролесеттингс.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: eba7da6ce8d4345512257992c07abe5f13f84995
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: e9ed04d61be01f98a6ec413637c65be449892baa
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455279"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218663"
 ---
 # <a name="get-privilegedrolesettings"></a>Получение privilegedRoleSettings
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

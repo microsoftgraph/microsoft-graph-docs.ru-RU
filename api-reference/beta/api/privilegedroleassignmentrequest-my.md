@@ -3,18 +3,18 @@ title: 'Привилежедролеассигнментрекуест: My'
 description: Получение запросов на назначение привилегированных ролей инициатора запроса.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: a597e5724122950cd5e66ffa3b383bf0c38e57fc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: daff07214fb8c9346d15fd1ebbb8151189cbef0d
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455314"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218677"
 ---
 # <a name="privilegedroleassignmentrequest-my"></a>Привилежедролеассигнментрекуест: My
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

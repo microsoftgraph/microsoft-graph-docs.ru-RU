@@ -2,19 +2,19 @@
 title: 'Трустфрамеворккэйсет: Женератекэй'
 description: Автоматически создает ключ и секрет в наборе ключей.
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4ee3a8de38a568cb0df29beaaab220be91714dc1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f8c3385a06c8807ce82169efb5a02f1999223cd4
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452170"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43215940"
 ---
 # <a name="trustframeworkkeyset-generatekey"></a>Трустфрамеворккэйсет: Женератекэй
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,8 +51,8 @@ POST /trustFramework/keySets/{id}/generateKey
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Используйте | строка | Аналогично свойству **use** объекта **трустфрамеворккэй**. |
-| кти | строка | Аналогично свойству **КТИ** объекта **трустфрамеворккэй**. |
+| Используйте | string | Аналогично свойству **use** объекта **трустфрамеворккэй**. |
+| кти | string | Аналогично свойству **КТИ** объекта **трустфрамеворккэй**. |
 | nbf | int | Аналогично **NBF** для свойства **трустфрамеворккэй**. |
 | exp | int | Аналогично свойству **exp** объекта **трустфрамеворккэй**. |
 

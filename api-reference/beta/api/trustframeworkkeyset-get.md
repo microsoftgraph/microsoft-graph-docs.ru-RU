@@ -2,19 +2,19 @@
 title: Получение Трустфрамеворккэйсет
 description: Получение свойств и связей объекта трустфрамеворккэйсет.
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a6b9fd69b1de7ece70cd405b18c95c5cb3131d2d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cca2be5e3cde48fd17df9fe9fe4eb72f76c43ac1
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452178"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219027"
 ---
 # <a name="get-trustframeworkkeyset"></a>Получение Трустфрамеворккэйсет
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

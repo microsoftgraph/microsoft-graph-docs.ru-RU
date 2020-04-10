@@ -2,19 +2,19 @@
 title: Обновление Трустфрамеворккэйсет
 description: Обновление свойств объекта **трустфрамеворккэйсет** .
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dc82602e82b1c98fdde2398a576124b563b3c039
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 956e05500dc47e5667ac63065480a84777414871
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452143"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219020"
 ---
 # <a name="update-trustframeworkkeyset"></a>Обновление Трустфрамеворккэйсет
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

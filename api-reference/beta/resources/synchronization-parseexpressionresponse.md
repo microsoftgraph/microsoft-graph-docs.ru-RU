@@ -1,20 +1,20 @@
 ---
 title: Тип ресурса Парсикспрессионреспонсе
-description: 'Представляет отклик от действия [синчронизатионсчема: парсикспрессион](../api/synchronization_synchronizationschema_parseexpression.md) .'
+description: 'Представляет отклик от действия Синчронизатионсчема: Парсикспрессион.'
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c752d5c021418dd4a3154a539a61c6ab3bae8a61
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0ef96bda8e9e28c655c4bbcf0153ea83ef5b0c8e
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520137"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217607"
 ---
 # <a name="parseexpressionresponse-resource-type"></a>Тип ресурса Парсикспрессионреспонсе
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,9 +25,9 @@ ms.locfileid: "42520137"
 |:---------------|:--------|:----------|
 |error|публицеррор|Сведения об ошибке, если вычисление выражений привело к ошибке.|
 |евалуатионресулт|Коллекция String|Коллекция значений, полученных при оценке выражения.|
-|евалуатионсукцеедед|Логический|`true`, если оценка выполнена успешно.|
+|евалуатионсукцеедед|Boolean|`true`, если оценка выполнена успешно.|
 |парседекспрессион|[аттрибутемаппингсаурце](synchronization-attributemappingsource.md)|Объект [аттрибутемаппингсаурце](synchronization-attributemappingsource.md) , представляющий проанализированное выражение.|
-|парсингсукцеедед|Логический|`true`, если выражение было успешно проанализировано.|
+|парсингсукцеедед|Boolean|`true`, если выражение было успешно проанализировано.|
 
 ## <a name="json-representation"></a>Представление JSON
 

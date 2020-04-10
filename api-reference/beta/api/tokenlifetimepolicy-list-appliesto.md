@@ -2,15 +2,15 @@
 title: Список appliesTo
 description: Получение списка объектов directoryObject, к которым был применен объект Токенлифетимеполици.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e711d91d08d989fd3535c9a203a642b6a48e8d80
-ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
+ms.openlocfilehash: 91f92a58c6e6f0c04c667e0f46e7497f102a79eb
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "42562838"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216332"
 ---
 # <a name="list-appliesto"></a>Список appliesTo
 

@@ -2,15 +2,15 @@
 title: Общие сведения об API политики
 description: Azure Active Directory использует политики для управления поведением компонентов Azure AD в вашей организации.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: baaa23331b9c259b95c2c053167414a5e7b5427b
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 79f4039834131be244d9881dff579513b22a9d63
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892620"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43215758"
 ---
 # <a name="azure-ad-policy-overview"></a>Общие сведения о политике Azure AD
 

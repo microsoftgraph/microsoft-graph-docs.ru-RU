@@ -2,15 +2,15 @@
 title: Назначение типа ресурса homeRealmDiscoveryPolicy
 description: Назначьте Хомереалмдисковериполици участнику службы.
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 49483db94f77151364932869c4ae58861530ce2f
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: cd6642ddce672302920338a2e1bad0c650f1c04b
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42590246"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218628"
 ---
 # <a name="assign-homerealmdiscoverypolicy"></a>Назначение типа ресурса homeRealmDiscoveryPolicy
 

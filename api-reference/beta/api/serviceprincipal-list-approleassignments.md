@@ -3,18 +3,18 @@ title: 'servicePrincipal: List Аппролеассигнментс'
 description: Получение списка объектов аппролеассигнмент.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: ee03911dce685ec7df8465343b56c4b6b9375c4b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: sureshja
+ms.openlocfilehash: e9e4780b6a0a0743a0d89c0eb5d076a65864f1b8
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453445"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219279"
 ---
 # <a name="serviceprincipal-list-approleassignments"></a>servicePrincipal: List Аппролеассигнментс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

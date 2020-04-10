@@ -3,18 +3,18 @@ title: 'servicePrincipal: Чеккмемберграупс'
 description: Для вызова этого API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье Разрешения.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 63bf38ca44f75781bb501c0871a45e642799748c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: sureshja
+ms.openlocfilehash: 120cd98ea22a452593e41f93637211151d1d1f2b
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453543"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219342"
 ---
 # <a name="serviceprincipal-checkmembergroups"></a>servicePrincipal: Чеккмемберграупс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

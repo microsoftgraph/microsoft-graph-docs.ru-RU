@@ -3,18 +3,18 @@ title: 'Привилежедаппровал: Мирекуестс'
 description: Получение запросов утверждения запрашивающей стороны.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 28d203daac2ad4027aed05add21c331dfa9d8d13
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: 8be41edff2c2c9163f26238ef0dd23bb61ea5170
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455426"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218803"
 ---
 # <a name="privilegedapproval-myrequests"></a>Привилежедаппровал: Мирекуестс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

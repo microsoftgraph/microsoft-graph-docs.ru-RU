@@ -3,18 +3,18 @@ title: Тип ресурса Метадатаентри
 description: Метаданные для данного объекта.
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 13e1277dfd4a9fc3042369632919d9c58c99f260
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b9dc39021e297882bf92b9a314f342297d86d9ed
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520165"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218417"
 ---
 # <a name="metadataentry-resource-type"></a>Тип ресурса Метадатаентри
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +23,7 @@ ms.locfileid: "42520165"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|key|String|Имя свойства метаданных.|
+|key|Строка|Имя свойства метаданных.|
 |value|String|Значение свойства метаданных.|
 
 ## <a name="json-representation"></a>Представление JSON

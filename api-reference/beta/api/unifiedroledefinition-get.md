@@ -2,15 +2,15 @@
 title: Получение Унифиедроледефинитион
 description: Получение свойств и связей объекта Унифиедроледефинитион.
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c211c1e632538bb7e703baeb2eabd6398e5ae875
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 91b9097fffc8951c20c568fbe976e372655d671b
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181142"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218950"
 ---
 # <a name="get-unifiedroledefinition"></a>Получение Унифиедроледефинитион
 

@@ -1,20 +1,20 @@
 ---
 title: Тип ресурса Filter
-description: Определяет, какие объекты должны быть подготовлены для приложения. Например, вам может потребоваться предоставить только пользователей, которые находятся в США. При наличии фильтра областей объекты, которые не соответствуют фильтру, будут пропущены во время синхронизации.
+description: Определяет, какие объекты должны быть подготовлены для приложения.
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9e7e4cfc629cb8586c1fd1cf2e32474b0bc6b6cf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 82c52e1feac3dd837eb239279523a7a214f97e6b
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520200"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218438"
 ---
 # <a name="filter-resource-type"></a>Тип ресурса Filter
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

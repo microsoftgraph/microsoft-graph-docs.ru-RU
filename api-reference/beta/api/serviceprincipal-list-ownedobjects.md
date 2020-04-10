@@ -3,18 +3,18 @@ title: 'СервицепринЦипалс: List ownedObjects'
 description: Получение списка объектов, принадлежащих servicePrincipal.  Это могут быть приложения или группы.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 15a38536905d57abb64eedfe8568ed359b19a4f9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: sureshja
+ms.openlocfilehash: 52ad61baddd38e49bc57755daadb8553823ac2ca
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453389"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219055"
 ---
 # <a name="serviceprincipals-list-ownedobjects"></a>СервицепринЦипалс: List ownedObjects
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

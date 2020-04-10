@@ -3,18 +3,18 @@ title: Обновление serviceprincipal
 description: Обновление свойств объекта serviceprincipal.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: b48477c319aaaa72a4427b31f23bf4624c869b38
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: sureshja
+ms.openlocfilehash: 072351ebc95d8610bc069055aacb0b193e1ca626
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453340"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218607"
 ---
 # <a name="update-serviceprincipal"></a>Обновление serviceprincipal
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,22 +44,22 @@ PATCH /servicePrincipals/{id}
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |accountEnabled|Логический|                Значение **true**, если учетная запись субъекта-службы включена. В противном случае используется значение **false**.            |
-|appDisplayName|String|Отображаемое имя, предоставляемое связанным приложением.|
-|appId|String|Уникальный идентификатор для связанного приложения (его свойство **appId**).|
+|appDisplayName|Строка|Отображаемое имя, предоставляемое связанным приложением.|
+|appId|Строка|Уникальный идентификатор для связанного приложения (его свойство **appId**).|
 |appRoleAssignmentRequired|Boolean|Указывает, требуется ли объект **appRoleAssignment** для пользователя или группы, перед тем как Azure AD выпустит маркер пользователя или доступа для приложения.                            **Примечания**: требуется версия 1,5 или более новая, не допускающая значение null.            |
 |appRoles|аппроле|Роли приложения, предоставляемые связанным приложением. Дополнительные сведения см. в описании свойства **appRoles** для объекта Application **Notes**: требуется версия 1,5 или более новая, не допускающая значение null.            |
 |displayName|Строка|Отображаемое имя для субъекта-службы.|
-|errorUrl|String|            |
-|homepage|String|URL-адрес домашней страницы связанного приложения.|
+|errorUrl|Строка|            |
+|homepage|Строка|URL-адрес домашней страницы связанного приложения.|
 |keyCredentials|кэйкредентиал|Коллекция ключевых учетных данных, связанных с субъектом-службой.                            **Примечание.** Значение null не допускается.            |
-|logoutUrl|String| Указывает URL-адрес, используемый службой проверки подлинности корпорации Майкрософт для выхода пользователя с помощью [основного канала](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [обратного канала](https://openid.net/specs/openid-connect-backchannel-1_0.html) или протоколов выхода SAML. |
+|logoutUrl|Строка| Указывает URL-адрес, используемый службой проверки подлинности корпорации Майкрософт для выхода пользователя с помощью [основного канала](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [обратного канала](https://openid.net/specs/openid-connect-backchannel-1_0.html) или протоколов выхода SAML. |
 |oauth2Permissions|oAuth2Permission|Разрешения OAuth 2.0, предоставляемые связанным приложением. Дополнительные сведения см. в определении свойства **oauth2Permissions** для объекта application.                            **Примечания**: требуется версия 1,5 или более новая, не допускающая значение null.            |
 |passwordCredentials|passwordCredential|Коллекция учетных данных паролей, связанных с субъектом-службой.                            **Примечание.** Значение null не допускается.            |
 |preferredTokenSigningKeyThumbprint|String|Зарезервировано только для внутреннего использования. Не записывайте и не используйте иным образом это свойство. Может быть удалено в будущих версиях.                            **Примечания**: требуется версия 1,5 или более поздняя.            |
-|publisherName|String|Отображаемое имя клиента, в котором указано связанное приложение.|
-|replyUrls|String|URL-адреса, которым отправляются маркеры пользователей для входа с помощью связанного приложения, или URI перенаправления, которым отправляются коды авторизации OAuth 2.0 и маркеры доступа для связанного приложения.                            **Примечание.** Значение null не допускается.            |
+|publisherName|Строка|Отображаемое имя клиента, в котором указано связанное приложение.|
+|replyUrls|Строка|URL-адреса, которым отправляются маркеры пользователей для входа с помощью связанного приложения, или URI перенаправления, которым отправляются коды авторизации OAuth 2.0 и маркеры доступа для связанного приложения.                            **Примечание.** Значение null не допускается.            |
 |samlMetadataUrl|String|            |
-|ServicePrincipalNames|String|URI, определяющие связанное приложение. Дополнительные сведения см. в статье [Объекты приложения и субъекта-службы](https://msdn.microsoft.com/library/azure/dn132633.aspx).                            **Notes**: not Nullable, оператор **ANY** необходим для выражений фильтров в многозначных свойствах; Дополнительные сведения см в разделе [Поддерживаемые запросы, фильтры и параметры разбиения по страницам](https://msdn.microsoft.com/library/azure/dn727074.aspx).            |
+|ServicePrincipalNames|Строка|URI, определяющие связанное приложение. Дополнительные сведения см. в статье [Объекты приложения и субъекта-службы](https://msdn.microsoft.com/library/azure/dn132633.aspx).                            **Notes**: not Nullable, оператор **ANY** необходим для выражений фильтров в многозначных свойствах; Дополнительные сведения см в разделе [Поддерживаемые запросы, фильтры и параметры разбиения по страницам](https://msdn.microsoft.com/library/azure/dn727074.aspx).            |
 |tags|String|                                        **Примечание.** Значение null не допускается.            |
 
 ## <a name="response"></a>Отклик

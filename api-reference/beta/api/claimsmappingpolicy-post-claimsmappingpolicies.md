@@ -2,15 +2,15 @@
 title: Создание Клаимсмаппингполици
 description: Создание нового Клаимсмаппингполици.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b9062b87b61c2c0c65c3d6c00181e487e0e230ef
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: c647e8202153d46fe4610735cb01b5817ff15c2d
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42589800"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216868"
 ---
 # <a name="create-claimsmappingpolicy"></a>Создание Клаимсмаппингполици
 

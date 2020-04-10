@@ -3,18 +3,18 @@ title: Отмена Привилежедролеассигнментрекуес
 description: Отмена объекта Привилежедролеассигнментрекуест.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: b03b866f69e3fb4a9249a3081f57295d2cee3b88
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: 674b89cc122c51a4532d445ff8499a4194aa63ab
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455300"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218691"
 ---
 # <a name="cancel-privilegedroleassignmentrequest"></a>Отмена Привилежедролеассигнментрекуест
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

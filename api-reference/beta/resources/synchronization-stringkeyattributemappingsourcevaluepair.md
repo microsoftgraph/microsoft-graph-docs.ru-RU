@@ -3,18 +3,18 @@ title: Тип ресурса Стрингкэйаттрибутемаппинг�
 description: Представляет собой комбинацию "ключ-значение", в которой ключ является строкой, а значение — Аттрибутемаппингсаурце.
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f28b58b5f6bdadf33412a125a841d1c614285557
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 88dd652e12a8ba7d5d866e2817685e0ad3a732eb
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520109"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217579"
 ---
 # <a name="stringkeyattributemappingsourcevaluepair-resource-type"></a>Тип ресурса Стрингкэйаттрибутемаппингсаурцевалуепаир
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +23,7 @@ ms.locfileid: "42520109"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|key|String|Имя параметра.|
+|key|Строка|Имя параметра.|
 |значение|[аттрибутемаппингсаурце](synchronization-attributemappingsource.md)|Значение параметра.|
 
 ## <a name="json-representation"></a>Представление JSON

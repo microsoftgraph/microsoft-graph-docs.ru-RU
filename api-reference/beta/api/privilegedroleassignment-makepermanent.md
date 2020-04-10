@@ -1,24 +1,24 @@
 ---
 title: 'Привилежедролеассигнмент: Макеперманент'
-description: Выполнение назначения ролей как бессрочного.
+description: Сделайте назначение роли постоянным.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: b17cb3d7bb1248be06d34078f0f0bc897870c684
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: c2c041cc23bfe9118d9a4745a69796239952bac8
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455335"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218712"
 ---
 # <a name="privilegedroleassignment-makepermanent"></a>Привилежедролеассигнмент: Макеперманент
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Выполнение назначения ролей как бессрочного.
+Сделайте назначение роли постоянным.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -48,9 +48,9 @@ POST /privilegedRoleAssignments/{id}/makePermanent
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|reason|string|Необязательный параметр. Причина для совершения звонка.|
-|тиккетнумбер|string|Необязательный параметр. Регистрационный номер, связанный с этим действием.|
-|тиккетсистем|string|Необязательный параметр. Система билетов.|
+|reason|string|Необязательно. Причина для совершения звонка.|
+|тиккетнумбер|string|Необязательно. Регистрационный номер, связанный с этим действием.|
+|тиккетсистем|string|Необязательно. Система билетов.|
 
 ## <a name="response"></a>Отклик
 

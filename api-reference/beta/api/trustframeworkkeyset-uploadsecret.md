@@ -2,19 +2,19 @@
 title: 'Трустфрамеворккэйсет: Уплоадсекрет'
 description: Отправьте секрет в набор ключей.
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0323e861e1ffa83eb3bedf2e850f8580f858d642
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9f05281b34adfbabe2e740cf1211c9c25de1c711
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452115"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43215870"
 ---
 # <a name="trustframeworkkeyset-uploadsecret"></a>Трустфрамеворккэйсет: Уплоадсекрет
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,8 +51,8 @@ POST /trustFramework/keySets/{id}/uploadSecret
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|Используйте|String|Аналогично свойству **use** объекта **трустфрамеворккэй**.|
-|звонить|String|Аналогично свойству **k** объекта **трустфрамеворккэй**. Это поле, используемое для отправки секрета.|
+|Используйте|Строка|Аналогично свойству **use** объекта **трустфрамеворккэй**.|
+|звонить|Строка|Аналогично свойству **k** объекта **трустфрамеворккэй**. Это поле, используемое для отправки секрета.|
 |nbf|Int64|Аналогично свойству **NBF** объекта **трустфрамеворккэй**.|
 |exp|Int64|Аналогично свойству **exp** объекта **трустфрамеворккэй**.|
 

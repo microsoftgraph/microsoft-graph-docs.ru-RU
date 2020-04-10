@@ -2,15 +2,15 @@
 title: Обновление токенлифетимеполици
 description: Обновление свойств объекта Токенлифетимеполици.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 39c3db7c77b3fdaeb2a77ca135b1b8454fb611e5
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 949a2d0a1f06e25c4c5323f45164bbc915009cc0
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42589267"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216010"
 ---
 # <a name="update-tokenlifetimepolicy"></a>Обновление токенлифетимеполици
 
@@ -51,9 +51,9 @@ PATCH /policies/tokenLifetimePolicies/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|RDLC|Коллекция строк| Коллекция String, содержащая строку JSON, определяющую правила и параметры для этой политики.  Обязательный атрибут.|
+|RDLC|Коллекция String| Коллекция String, содержащая строку JSON, определяющую правила и параметры для этой политики.  Обязательный атрибут.|
 |description|String| Описание для этой политики.|
-|displayName|Строка| Отображаемое имя для этой политики. Обязательно.|
+|displayName|Строка| Отображаемое имя для этой политики. Обязательный атрибут.|
 |исорганизатиондефаулт|Boolean|Если задано значение true, активируется эта политика. Для одного и того же типа политики может быть задано несколько политик, но только одна из них может быть активирована в качестве организации по умолчанию. Необязательное значение по умолчанию — false.|
 
 ## <a name="response"></a>Отклик

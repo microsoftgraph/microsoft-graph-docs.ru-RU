@@ -3,18 +3,18 @@ title: Обновление соглашения
 description: Обновление свойств объекта договора.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 96835b74e0eea03f9b593a9848bc7946eb23554f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: raprakasMSFT
+ms.openlocfilehash: e729400d27bee48a83079b95ea27bed072bc33c2
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441643"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217990"
 ---
 # <a name="update-agreement"></a>Обновление соглашения
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,8 +43,8 @@ PATCH /agreements/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|String|Отображаемое имя соглашения.|
-|исвиевингбефореакцептанцерекуиред|Логический|Следует ли пользователю разворачивать и просматривать соглашение перед принятием.|
+|displayName|Строка|Отображаемое имя соглашения.|
+|исвиевингбефореакцептанцерекуиред|Boolean|Следует ли пользователю разворачивать и просматривать соглашение перед принятием.|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [Agreement](../resources/agreement.md) в тексте отклика.

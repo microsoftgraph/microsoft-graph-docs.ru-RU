@@ -3,18 +3,18 @@ title: Тип ресурса Стрингкэйлонгвалуепаир
 description: Представляет собой комбинацию "ключ-значение", в которой ключ является строкой, и значением является Int64.
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5b040634f473a236af69d3c6963e1a24f4c25450
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7a726b1aa3aa122422cd43003366996c479461e0
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520102"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217572"
 ---
 # <a name="stringkeylongvaluepair-resource-type"></a>Тип ресурса Стрингкэйлонгвалуепаир
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,7 +23,7 @@ ms.locfileid: "42520102"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|ключа|String|Ключ.|
+|ключа|Строка|Ключ.|
 |значение|Int64|Значение|
 
 ## <a name="json-representation"></a>Представление JSON

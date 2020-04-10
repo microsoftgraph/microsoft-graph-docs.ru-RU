@@ -2,15 +2,15 @@
 title: Обновление unifiedRoleAssignmentMultiple
 description: Обновление нового объекта Унифиедролеассигнментмултипле.
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e6901065e07fc286ace312b1ad558ba4e7e6a882
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 5a30e9378cceb5c1dd533f62bc28be097660536f
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181330"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218964"
 ---
 # <a name="update-unifiedroleassignmentmultiple"></a>Обновление unifiedRoleAssignmentMultiple
 

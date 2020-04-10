@@ -2,15 +2,15 @@
 title: Тип ресурса Унифиедролеассигнмент
 description: Назначение роли — это связь между определением роли и участником в определенной области для предоставления доступа.
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 76055128876ab2c4340b55c43c4065f3aac73e4d
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: 683a6daf510e10c53cf44ec64d93ce2398212ce4
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43160235"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218039"
 ---
 # <a name="unifiedroleassignment-resource-type"></a>Тип ресурса Унифиедролеассигнмент
 

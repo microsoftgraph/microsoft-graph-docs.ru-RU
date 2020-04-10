@@ -3,18 +3,18 @@ title: Тип ресурса Директоридефинитион
 description: Предоставляет сведения о модуле синхронизации для каталога и его объектов.
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ac64ef16eea584ec2a6360a0c2b0f3c4eb5397ea
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b18c34a316f9c1f0c91617d7170c5050630af235
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520214"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219146"
 ---
 # <a name="directorydefinition-resource-type"></a>Тип ресурса Директоридефинитион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "42520214"
 |см        |Коллекция [обжектдефинитион](synchronization-objectdefinition.md)    |Коллекция объектов, поддерживаемая каталогом.|
 |version|String|Значение только для чтения, которое указывает обнаруженную версию. Значение null, если обнаружение еще не выполнялось.|
 |дисковеридатетиме|DateTimeOffset| Представляет дату и время обнаружения с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|дисковерабилитиес|строка| Значение только для чтения, указывающее тип обнаружения, поддерживаемый приложением. Возможные значения: `AttributeDataTypes`, `AttributeNames`, `AttributeReadOnly`, `None`, `ReferenceAttributes`, `UnknownFutureValue`.| 
+|дисковерабилитиес|string| Значение только для чтения, указывающее тип обнаружения, поддерживаемый приложением. Возможные значения: `AttributeDataTypes`, `AttributeNames`, `AttributeReadOnly`, `None`, `ReferenceAttributes`, `UnknownFutureValue`.| 
 
 ## <a name="json-representation"></a>Представление JSON
 

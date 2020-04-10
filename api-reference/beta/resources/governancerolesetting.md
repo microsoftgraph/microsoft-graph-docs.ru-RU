@@ -1,20 +1,20 @@
 ---
 title: Тип ресурса Говернанцеролесеттинг
-description: " и т. д."
+description: Представляет набор конфигураций для каждого определения роли, которые необходимо оценить при создании или изменении назначений ролей.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 9cf027969fb6ae988fd3e57da9d6c3002a4b4da9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: 1f6bbd544e65bf5781b8ec77201980e5602bbf11
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497330"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217920"
 ---
 # <a name="governancerolesetting-resource-type"></a>Тип ресурса Говернанцеролесеттинг
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,14 +26,14 @@ ms.locfileid: "42497330"
 |:---------------|:--------|:--------|
 |[List](../api/governancerolesetting-list.md) | Коллекция [говернанцеролесеттинг](../resources/governancerolesetting.md)|Перечисление коллекции параметров роли для ресурса.|
 |[получение](../api/governancerolesetting-get.md); |  [governanceRoleSetting](../resources/governancerolesetting.md) |Чтение свойств и связей параметра Role.|
-|[обновление](../api/governancerolesetting-update.md). | [governanceRoleSetting](../resources/governancerolesetting.md)  |Обновление объекта параметров роли. |
+|[Update](../api/governancerolesetting-update.md) | [governanceRoleSetting](../resources/governancerolesetting.md)  |Обновление объекта параметров роли. |
 
 ## <a name="properties"></a>Свойства
 |Свойство               |Тип                                      |Описание|
 |:--------------------|:---------------------------------------|:----------|
 |id                   |Строка                                  |Идентификатор Ролесеттинг.|
 |resourceId           |String                                  |Обязательный. Идентификатор ресурса, с которым связана Настройка роли.|
-|роледефинитионид     |String                                  |Обязательный. Идентификатор определения роли, с которым связана Настройка роли.|
+|роледефинитионид     |Строка                                  |Обязательный. Идентификатор определения роли, с которым связана Настройка роли.|
 |isDefault            |Boolean                                 |Только для чтения. Указывает, является ли Ролесеттинг Ролесеттинг по умолчанию|
 |lastUpdatedDateTime  |DateTimeOffset                          |Только для чтения. Время последнего обновления параметра роли. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |ластупдатедби        |String                                  |Только для чтения. Отображаемое имя администратора, который последним обновил Ролесеттинг.|
@@ -42,7 +42,7 @@ ms.locfileid: "42497330"
 |усерелигиблесеттингс |Коллекция [говернанцерулесеттинг](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются, когда пользователь пытается добавить подходящего назначения роли. Этот параметр не поддерживается в данный момент.|
 |усермемберсеттингс   |Коллекция [говернанцерулесеттинг](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются, когда пользователь пытается активировать назначение роли.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |resource|[governanceResource](../resources/governanceresource.md)|Только для чтения. Связанный ресурс для этого параметра Role.|

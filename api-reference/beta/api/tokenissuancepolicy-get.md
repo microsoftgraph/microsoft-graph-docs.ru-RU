@@ -2,15 +2,15 @@
 title: Получение Токениссуанцеполици
 description: Получение свойств и связей объекта Токениссуанцеполици.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b07e68f1b9519b35ea5578bff9fd1a7993078532
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 9c49e2c4f479431cbe78def584c8200b3b569d24
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42591714"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219265"
 ---
 # <a name="get-tokenissuancepolicy"></a>Получение Токениссуанцеполици
 

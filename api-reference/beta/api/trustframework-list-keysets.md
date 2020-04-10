@@ -2,19 +2,19 @@
 title: Список Кэйсетс
 description: Получение списка объектов трустфрамеворккэйсет.
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d93da5c97be055b96f02bcddcc0a99e751084fa4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: de87e7a790d2669642a0e7171d9862bc4eb8f7f2
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452206"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216003"
 ---
 # <a name="list-keysets"></a>Список Кэйсетс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

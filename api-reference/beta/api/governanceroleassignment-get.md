@@ -3,14 +3,14 @@ title: Получение governanceRoleAssignment
 description: Получение свойств и связей объекта governanceRoleAssignment.
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
-ms.prod: microsoft-identitiy-platform
-ms.openlocfilehash: 038189ac8bda4b51588532cbddc022e83db9ffbf
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: 74701c9e0567735dc4f34ec2f4044e8514a54d1d
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639851"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218901"
 ---
 # <a name="get-governanceroleassignment"></a>Получение governanceRoleAssignment
 
@@ -23,11 +23,11 @@ ms.locfileid: "42639851"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Permissions              |
+|Тип разрешения      | Разрешения              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Привилежедакцесс. Read. Азурересаурцес |
+|Для приложений | Привилежедакцесс. Read. Азурересаурцес |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

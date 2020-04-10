@@ -2,19 +2,19 @@
 title: 'Трустфрамеворккэйсет: uploadPkcs12'
 description: Отправьте ключ формата PKCS 12 (PFX) в набор ключей.
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cff1579b30d70a82885fede9fe3b967fe0c3a798
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 64d5b2d2c10194156a1b577437d1e7a90773b80a
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452122"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219013"
 ---
 # <a name="trustframeworkkeyset-uploadpkcs12"></a>Трустфрамеворккэйсет: uploadPkcs12
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,7 +51,7 @@ POST /trustFramework/keySets/{id}/uploadPkcs12
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|key|String|Это поле для отправки PFX-содержимого. Значение должно представлять собой версию фактического содержимого сертификата в кодировке Base 64.|
+|key|Строка|Это поле для отправки PFX-содержимого. Значение должно представлять собой версию фактического содержимого сертификата в кодировке Base 64.|
 |password|Строка|Это поле для отправки пароля в PFX-контент.|
 
 ## <a name="response"></a>Отклик

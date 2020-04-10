@@ -2,15 +2,15 @@
 title: Список appliesTo
 description: Получение списка объектов directoryObject, к которым был применен объект Клаимсмаппингполици.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a485e069c194f0759675e7d0cac4fc5445d6bbcb
-ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
+ms.openlocfilehash: 5d6f0b99694b2799c924a57592b8e844acf51188
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "42562684"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43216897"
 ---
 # <a name="list-appliesto"></a>Список appliesTo
 

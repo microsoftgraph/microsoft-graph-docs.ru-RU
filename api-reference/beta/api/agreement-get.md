@@ -3,18 +3,18 @@ title: Получение соглашения
 description: Получение свойств и связей объекта Agreement.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: a8f52c9c3bbc23583bd513bd92d792fae4af426d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: raprakasMSFT
+ms.openlocfilehash: 3ed5925410f71acefecad4409f317d681c2db97a
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441662"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218011"
 ---
 # <a name="get-agreement"></a>Получение соглашения
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

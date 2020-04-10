@@ -2,19 +2,19 @@
 title: Удаление Унифиедроледефинитион
 description: Удаление объекта Унифиедроледефинитион.
 localization_priority: Normal
-author: davidmu1
+author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 877dacd0ce3109270d18947052a77c7b05cee201
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cf4461c4de9b8fb3880e051ee01d1c2e5bcf9a06
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452082"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218957"
 ---
 # <a name="delete-unifiedroledefinition"></a>Удаление Унифиедроледефинитион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

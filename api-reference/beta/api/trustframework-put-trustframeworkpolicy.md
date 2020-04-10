@@ -2,19 +2,19 @@
 title: Обновление Трустфрамеворкполици
 description: 'Эта операция обновляет существующий объект Трустфрамеворкполици или, если таковой не существует, создает его. '
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f018ae555990f4d5ba8eefe564ddb2230ae84dc6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: de1df6c258794165e37d3572d4bee5da84316c83
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452136"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43215912"
 ---
 # <a name="update-or-create-trustframeworkpolicy"></a>Обновление или создание Трустфрамеворкполици
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 >**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -45,7 +45,7 @@ PUT /trustFramework/policies/{id}/$value
 |Имя|Описание|
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
-|Content-Type|Application/XML. Обязательный элемент.|
+|Content-Type|Application/XML. Обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 

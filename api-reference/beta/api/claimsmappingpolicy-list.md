@@ -2,15 +2,15 @@
 title: Перечисление типов ресурсов claimsMappingPolicy
 description: Получение списка объектов Клаимсмаппингполици.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d946669588cc9ed2f5187d941c83692ca4735e4d
-ms.sourcegitcommit: 435d80cfa71574c06d24780c591d4303a5cd9636
+ms.openlocfilehash: aa808cc42c5880d62ef50952434fd5e444adf6b9
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "42562677"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217976"
 ---
 # <a name="list-claimsmappingpolicies"></a>Перечисление типов ресурсов claimsMappingPolicy
 

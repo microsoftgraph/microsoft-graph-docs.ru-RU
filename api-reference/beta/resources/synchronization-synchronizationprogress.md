@@ -3,18 +3,18 @@ title: Тип ресурса Синчронизатионпрогресс
 description: Представляет ход выполнения Синчронизатионжоб в сторону завершения.
 localization_priority: Normal
 doc_type: resourcePageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4fb5fb9482a9b8523f1967928a4243a5b104f6a0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c9a9ea8b5bd9d2a0fbfbcb1a64381b46e2f96283
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520060"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217404"
 ---
 # <a name="synchronizationprogress-resource-type"></a>Тип ресурса Синчронизатионпрогресс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ ms.locfileid: "42520060"
 |комплетедунитс|Int32|Числитель коэффициента выполнения; количество единиц изменений, которые уже обработаны.|
 |прогрессобсерватиондатетиме|DateTimeOffset|Время отслеживания хода выполнения как смещение в минутах от времени в формате UTC.|
 |тоталунитс|Int32|Знаменатель коэффициента выполнения; количество единиц изменений, которые необходимо обработать для выполнения синхронизации.|
-|продукции|String|Необязательное описание единиц измерения.|
+|продукции|Строка|Необязательное описание единиц измерения.|
 
 <!-- The troubleshootingUrl property is missing a description -->
 

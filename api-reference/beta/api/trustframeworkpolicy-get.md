@@ -2,19 +2,19 @@
 title: Получение Трустфрамеворкполици
 description: Эта операция возвращает существующий контент Трустфрамеворкполици из клиента Azure AD B2C.
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b8a7c2a9d38d5da3ef38d2a724b3fa1b015a4efd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a8d7354175c9f49d7c39c1e16115fdcbadb3ba98
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452070"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43215863"
 ---
 # <a name="get-trustframeworkpolicy"></a>Получение Трустфрамеворкполици
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 >**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 

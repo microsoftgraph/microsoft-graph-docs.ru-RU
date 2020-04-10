@@ -3,18 +3,18 @@ title: Тип ресурса Говернанцероледефинитион
 description: Представляет определения ролей. Для ресурсов Azure он может представлять роли Azure RBAC, такие как Owner, Reader, корреспондент и т. д.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 985e674c0e8e79f7b929097dd5c61dfa15917a93
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: b6ff2edcfd1725b31051d1fc73c04539acf73e56
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497393"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43217927"
 ---
 # <a name="governanceroledefinition-resource-type"></a>Тип ресурса Говернанцероледефинитион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -38,9 +38,9 @@ ms.locfileid: "42497393"
 |resourceId |String     |Обязательный. Идентификатор ресурса, связанного с определением роли. |
 |externalId   |String     |Внешний идентификатор определения роли.|
 |displayName|Строка     |Отображаемое имя определения роли.|
-|templateId | String | |
+|templateId | Строка | |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |resource|[governanceResource](../resources/governanceresource.md)|Только для чтения. Связанный ресурс для определения роли.|

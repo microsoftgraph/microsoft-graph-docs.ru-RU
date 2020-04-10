@@ -3,18 +3,18 @@ title: 'governanceResource: Register'
 description: Регистрация объекта governanceResource в PIM.
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9edd34e7d8bd0fc2bd94f7d6afc0f038d8a250fb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: shauliu
+ms.openlocfilehash: d92b061dd726dcbcacf18213a303fac8f415c46e
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42421349"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218915"
 ---
 # <a name="governanceresource-register"></a>governanceResource: Register
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,7 +41,7 @@ POST /privilegedAccess/azureResources/resources/register
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод **** поддерживает `$select` `$expand` только [Параметры запроса OData](/graph/query-parameters) для настройки ответа.
+Этот метод **only** поддерживает `$select` `$expand` только [Параметры запроса OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 

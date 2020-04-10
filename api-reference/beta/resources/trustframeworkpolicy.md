@@ -2,19 +2,19 @@
 title: трустфрамеворкполици
 description: В политике Azure AD B2C Trust Framework называются пользовательскими политиками. В этом разделе описываются операции, доступные в объекте Трустфрамеворкполици для клиента.
 localization_priority: Normal
-author: valnav
+author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 2cda564b353675d54305db5c0e6eaaa64682a7ef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 553463811f74a536cd3be5317718e00f91c95260
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519640"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218046"
 ---
 # <a name="trustframeworkpolicy-resource-type"></a>Тип ресурса Трустфрамеворкполици
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -41,7 +41,7 @@ ms.locfileid: "42519640"
 
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
-|id|String|Идентификатор политики.|
+|id|Строка|Идентификатор политики.|
 
 ## <a name="json-representation"></a>Представление JSON
 
