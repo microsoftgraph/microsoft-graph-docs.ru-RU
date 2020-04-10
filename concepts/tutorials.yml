@@ -8,12 +8,12 @@ metadata:
   author: jasonjoh
   ms.author: jasonjoh
   ms.date: 04/02/2020
-  ms.openlocfilehash: a897fedd643d95d54b4883e041b5d2c66e6b90ae
-  ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+  ms.openlocfilehash: c761e8a9438eac3b9034ed019b4baf46c0500cdc
+  ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 04/04/2020
-  ms.locfileid: "43144395"
+  ms.lasthandoff: 04/09/2020
+  ms.locfileid: "43199979"
 landingContent:
 - title: Создание первого серверного приложения
   linkLists:
@@ -66,6 +66,6 @@ landingContent:
     - text: Уведомления об изменениях и запрос изменений
       url: /learn/modules/msgraph-changenotifications-trackchanges
     - text: Оптимизация использования данных с помощью параметров запроса
-      url: learn/modules/optimize-data-usage
+      url: /learn/modules/optimize-data-usage
     - text: Оптимизация сетевого трафика
-      url: learn/modules/optimize-data-usage/2-microsoft-graph-query-parameters
+      url: /learn/modules/optimize-network-traffic
