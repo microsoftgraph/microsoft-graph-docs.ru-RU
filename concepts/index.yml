@@ -11,12 +11,12 @@ metadata:
   ms.date: 02/28/2020
   featureFlags:
   - clicktale
-  ms.openlocfilehash: 550a74bb18bc7604824c87fe7520a56a8a8c3a81
-  ms.sourcegitcommit: d3b6e4d11012e6b4c775afcec4fe5444e3a99bd3
+  ms.openlocfilehash: d0c510c9f3706f1db0539f53fc986f2054220d1c
+  ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 03/03/2020
-  ms.locfileid: "42394500"
+  ms.lasthandoff: 04/09/2020
+  ms.locfileid: "43199727"
 highlightedContent:
   items:
   - title: Обзор Microsoft Graph
@@ -28,9 +28,9 @@ highlightedContent:
   - title: Песочница Graph
     itemType: deploy
     url: https://developer.microsoft.com/graph/graph-explorer/
-  - title: Использование API
+  - title: Новые возможности Microsoft Graph
     itemType: overview
-    url: /graph/use-the-api
+    url: /graph/whats-new-overview
   - title: REST API Microsoft Graph версии 1.0
     itemType: reference
     url: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-1.0
@@ -41,9 +41,6 @@ conceptualContent:
   items:
   - title: Обзор
     links:
-    - url: /graph/whats-new-overview
-      itemType: overview
-      text: Новые возможности Microsoft Graph
     - url: /graph/users-you-can-reach
       itemType: concept
       text: Пользователи, с которыми вы можете связаться
@@ -55,7 +52,7 @@ conceptualContent:
       text: Quickstarts
     - url: /graph/tutorials
       itemType: tutorial
-      text: Учебные материалы
+      text: Учебники
   - title: Узнать
     links:
     - url: /graph/azuread-users-concept-overview
@@ -66,7 +63,7 @@ conceptualContent:
       text: Командная работа
     - url: /graph/onedrive-concept-overview
       itemType: overview
-      text: Файлы
+      text: Files
     - url: /graph/outlook-calendar-concept-overview
       itemType: overview
       text: Календарь
