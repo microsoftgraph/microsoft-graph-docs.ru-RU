@@ -3,18 +3,18 @@ title: Обновление привилежедаппровал
 description: Обновление свойств объекта привилежедаппровал.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: ec30559cf24edc5ba8e35077cd8af868aacc42ca
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: d3871704a30dda2a9d07098b7b8307c987a64dc9
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455412"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218789"
 ---
 # <a name="update-privilegedapproval"></a>Обновление привилежедаппровал
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,12 +45,12 @@ PATCH /privilegedApproval/{id}
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |аппровалдуратион|Длительность||
-|аппровалстате|строка| Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
-|аппровалтипе|String||
-|аппроверреасон|String||
+|аппровалстате|string| Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
+|аппровалтипе|Строка||
+|аппроверреасон|Строка||
 |endDateTime|DateTimeOffset||
-|рекуесторреасон|String||
-|roleId|String||
+|рекуесторреасон|Строка||
+|roleId|Строка||
 |startDateTime|DateTimeOffset||
 |userId|String||
 

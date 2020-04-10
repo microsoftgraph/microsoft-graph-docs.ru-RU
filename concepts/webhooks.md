@@ -5,12 +5,12 @@ author: baywet
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: fda8f362d3554f535012bc058ae4a0c7d5ddcfc7
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: 977211f9e2e77250201fe2c346a04153cf3a0cdf
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082352"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43200224"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Настройка уведомлений об изменениях в пользовательских данных
 
@@ -42,6 +42,7 @@ API Microsoft Graph использует механизм веб-перехва�
 - Контент внутри иерархии _корневой папки_ [driveItem][] на персональном хранилище OneDrive для бизнеса
 - [Оповещение][] безопасности
 - Teams [callRecord][] (предварительная версия)
+- Teams [chatMessage][] (предварительная версия)
 
 Например, вы можете создать подписку на определенную папку Outlook, например, папку Входящие: `me/mailFolders('inbox')/messages`
 
@@ -74,7 +75,7 @@ API Microsoft Graph использует механизм веб-перехва�
 
 - Уведомления для сущностей пользователей не поддерживаются для личных учетных записей Майкрософт.
 
-- В подписках пользователей существует [известная проблема](graph/concepts/known-issues#change-notifications).
+- В подписках пользователей и групп существует [известная проблема](known-issues.md#change-notifications).
 
 ### <a name="outlook-resource-limitations"></a>Ограничения ресурсов Outlook
 
@@ -267,9 +268,9 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 Указанные ниже примеры кода доступны на сайте GitHub.
 
 - [Обучающий модуль по Microsoft Graph: использование уведомлений об изменениях и отслеживание изменений с помощью Microsoft Graph](https://github.com/microsoftgraph/msgraph-training-changenotifications)
-- [Пример веб-перехватчиков Microsoft Graph для Node.js](https://github.com/OfficeDev/Microsoft-Graph-Nodejs-Webhooks)
-- [Пример веб-перехватчиков Microsoft Graph для ASP.NET](https://github.com/OfficeDev/Microsoft-Graph-ASPNET-Webhooks)
-- [Пример веб-перехватчиков Microsoft Graph для WebJobs SDK](https://github.com/microsoftgraph/webjobs-webhooks-sample)
+- [Пример веб-перехватчиков Microsoft Graph для Node.js](https://github.com/microsoftgraph/nodejs-webhooks-rest-sample)
+- [Пример веб-перехватчиков Microsoft Graph для ASP.NET Core](https://github.com/microsoftgraph/aspnetcore-webhooks-sample)
+- [Пример веб-перехватчиков Microsoft Graph для Java Spring](https://github.com/microsoftgraph/java-spring-webhooks-sample)
 
 ## <a name="see-also"></a>См. также
 
@@ -287,4 +288,5 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 [message]: /graph/api/resources/message?view=graph-rest-1.0
 [user]: /graph/api/resources/user?view=graph-rest-1.0
 [alert]: /graph/api/resources/alert?view=graph-rest-1.0
-[callRecord]: /graph/api/resources/callrecords-callrecord?view=graph-rest-beta
+[callRecord]: /graph/api/resources/callrecords-callrecord
+[chatMessage]: /graph/api/resources/chatmessage

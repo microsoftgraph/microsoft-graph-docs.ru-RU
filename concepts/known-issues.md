@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph. Сведения о последних обновлениях см. в журнале изменений Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 743245f7f64ce0a3b31ca2f3dfadfb4b22d629aa
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: 6a62de57a5fe18438807f817f67a17bcf0a731dd
+ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082338"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43200308"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -84,9 +84,13 @@ GET /me/calendars/{id}/events
 
 ## <a name="change-notifications"></a>Уведомления об изменениях
 
-### <a name="additional-notifications-for-users"></a>Дополнительные изменения для пользователей
+### <a name="additional-notifications-for-users"></a>Дополнительные уведомления для пользователей
 
 В [подписки](/graph/api/resources/subscription) на изменения для **пользователей** с параметром **changeType**, имеющим значение **updated**, также будут поступать уведомления **changeType**: **updated** при создании и удалении пользователей.
+
+### <a name="additional-notifications-for-groups"></a>Дополнительные уведомления для групп
+
+В [подписки](/graph/api/resources/subscription) на изменения для **групп** с параметром **changeType**, имеющим значение **updated**, также будут поступать уведомления **changeType**: **updated** при создании и удалении групп.
 
 ## <a name="cloud-communications"></a>Облачные коммуникации 
 

@@ -3,18 +3,18 @@ title: Перечисление privilegedApproval
 description: Получение списка объектов привилежедаппровал.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 0c21c9aea66ffe6ee3a7282659b35c7d403f3920
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: shauliu
+ms.openlocfilehash: b63670598715d66e7c358a06f84ccb4a13bddafd
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455454"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43218810"
 ---
 # <a name="list-privilegedapproval"></a>Перечисление privilegedApproval
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

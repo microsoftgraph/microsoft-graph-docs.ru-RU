@@ -3,18 +3,18 @@ title: Список servicePrincipal memberOf
 description: Получение групп и ролей каталогов, непосредственным участником которых является данный участник службы. Эта операция не является транзитивной.
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ''
-author: ''
-ms.openlocfilehash: 9adea17e76ddc67dd67066c30e3836f3157abf48
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.prod: microsoft-identity-platform
+author: sureshja
+ms.openlocfilehash: 50b5e26d9deb461ac672b7529450e092055824fd
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453417"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219069"
 ---
 # <a name="list-serviceprincipal-memberof"></a>Список servicePrincipal memberOf
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
