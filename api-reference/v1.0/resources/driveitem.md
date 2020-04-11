@@ -6,12 +6,12 @@ description: Элемент — это основная модель данны�
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 15dfedfda092f2c4a742699f40359de51d9ffc0e
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 60ca96d7c29bd5c0a31412d8016cc2d17d6515b8
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108566"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229495"
 ---
 # <a name="driveitem-resource-type"></a>Тип ресурса driveItem
 
@@ -203,6 +203,8 @@ URL-адрес будет доступен в течение короткого 
 | [Удаление разрешения](../api/permission-delete.md)         | Содержимое отсутствует | Удаляет разрешение из ресурса driveItem.
 | [Получение канала WebSocket][getWebSocket]                    | [subscription][] | Получает уведомления об изменениях почти в режиме реального времени для диска с использованием socket.io.
 | [Предварительный просмотр элемента][item-preview]                             | объект JSON | Получение внедряемых URL-адресов с небольшим сроком действия для элемента, чтобы создать временный предварительный просмотр.
+| [Регистрация](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
+| [Выписка](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
 
 [item-preview]: ../api/driveitem-preview.md
 [Получение аналитики]: ../api/itemanalytics-get.md

@@ -3,31 +3,35 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 7a0d15bbcee4aa7402ba5ce0933328a829c3296f
-ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
+ms.openlocfilehash: 2bf38135898675d16464b110951bada83f631548
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43146347"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43215751"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
-В этой статье представлен обзор новых возможностей Microsoft Graph и способов [поделиться своими идеями](#want-to-stay-in-the-loop). Полный список обновлений API см. в разделе [Март](changelog.md#march-2020) журнала изменений API. 
+В этой статье представлен обзор новых возможностей Microsoft Graph и способов [поделиться своими идеями](#want-to-stay-in-the-loop). Полный список обновлений API см. в разделах [Апрель](changelog.md#april-2020) и [Март](changelog.md#march-2020) журнала изменений API. 
 
 > [!IMPORTANT]
 > Функции в состоянии _предварительной версии_, в том числе API и средства, могут меняться без предварительного уведомления, а некоторые из них, возможно, никогда не будут повышены до общедоступного (GA) состояния. Не используйте функции предварительной версии в рабочих приложениях.
 
-## <a name="march-2020-new-and-generally-available"></a>Март 2020: новый и общедоступный
 
-### <a name="change-notifications"></a>Уведомления об изменениях
-[Отслеживайте изменения](/graph/api/orgcontact-delta?view=graph-rest-1.0) в [контактах организации](/graph/api/resources/orgcontact?view=graph-rest-1.0).
+## <a name="april-2020-new-in-preview-only"></a>Апрель 2020 г.: новые возможности только в предварительной версии
+
+### <a name="identity-and-access"></a>Удостоверение и доступ
+Чтобы управлять ролями и назначать доступ к ресурсам в провайдерах управления доступом на основе ролей (RBAC), таких как Microsoft Intune, используйте [unifiedRoleAssignmentMultiple](/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-beta). Ресурс **unifiedRoleAssignmentMultiple** поддерживает определение одной роли в массиве областей и назначение роли для нескольких субъектов (например, пользователей). 
+
+
+## <a name="march-2020-new-and-generally-available"></a>Март 2020 г.: новые и общедоступные возможности
 
 ### <a name="cloud-communications"></a>Облачные коммуникации
 - Получите функцию маршрутизации вызовов и контекст входящих [вызовов](/graph/api/resources/call?view=graph-rest-1.0).
-- Приложение может [обновлять состояние записи](/graph/api/call-updaterecordingstatus?view=graph-rest-1.0) звонка.
-- Может указывать информацию о записи для [участника](/graph/api/resources/participant?view=graph-rest-1.0), в том числе инициатора и состояние записи.
+- [Обновите состояние записи](/graph/api/call-updaterecordingstatus?view=graph-rest-1.0) звонка.
+- Укажите информацию о записи для [участника](/graph/api/resources/participant?view=graph-rest-1.0), включая инициатора и состояние записи.
 - Для уникальной идентификации участников конференции или [звонка](/graph/api/resources/call?view=graph-rest-1.0) от участника к участнику используйте свойство **callChainId**.
-- Может определять как часть [participantInfo](/graph/api/resources/participantinfo?view=graph-rest-1.0) код страны и тип конечной точки (например, Skype для бизнеса или Skype для бизнеса VoIP) участника.
+- Определите как часть [participantInfo](/graph/api/resources/participantinfo?view=graph-rest-1.0) код страны и тип конечной точки (например, Skype для бизнеса или Skype для бизнеса VoIP) участника.
 - Сторонние партнеры в области устройств видеоконференцсвязи (VTC) могут регистрировать и предоставлять сведения о качестве связи для своих устройств через бот Cloud Video Interop (CVI) с помощью функции [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality?view=graph-rest-1.0). Качество связи определяется данными открытого типа о [звуке](/graph/api/resources/teleconferencedeviceaudioquality?view=graph-rest-1.0), [видео](/graph/api/resources/teleconferencedevicevideoquality?view=graph-rest-1.0) и [демонстрации экрана](/graph/api/resources/teleconferencedevicescreensharingquality?view=graph-rest-1.0).
 
 ### <a name="files"></a>Файлы
@@ -36,6 +40,7 @@ ms.locfileid: "43146347"
 - [Предоставьте](/graph/api/permission-grant?view=graph-rest-1.0) пользователям разрешение на доступ к ссылке для общего доступа, чтобы поделиться соответствующим элементом диска.
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
+- [Отслеживайте изменения](/graph/api/orgcontact-delta?view=graph-rest-1.0) в [контактах организации](/graph/api/resources/orgcontact?view=graph-rest-1.0).
 - Используйте свойство **riskEventTypes_v2**, чтобы получить типы событий риска, связанные с [входом](/graph/api/resources/signin?view=graph-rest-1.0).
 - Используйте делегированное разрешение `User.ManageIdentities.All`, чтобы разрешить приложению считывать, обновлять и удалять удостоверения, связанные с учетной записью пользователя, к которой имеет доступ зарегистрированный пользователь. Используйте это разрешение на уровне приложения без зарегистрированного пользователя. Это позволяет приложению [определить](/graph/api/user-update?view=graph-rest-1.0), с помощью каких удостоверений пользователь может войти.
 
@@ -44,7 +49,7 @@ ms.locfileid: "43146347"
 
 ### <a name="sites"></a>Сайты
 - Предоставляйте пользователям возможность [отслеживать](/graph/api/site-follow?view=graph-rest-1.0) или [прекращать отслеживание](/graph/api/site-unfollow?view=graph-rest-1.0) сайтов SharePoint. 
-- Используйте свойство навигации **subscriptions**, чтобы получить [подписки на уведомления о внесении изменений](/graph/api/resources/subscription?view=graph-rest-1.0) в [список](/graph/api/resources/list?view=graph-rest-1.0) SharePoint.
+- [Подпишитесь на уведомления об изменениях](/graph/api/resources/subscription?view=graph-rest-1.0) в [списке](/graph/api/resources/list?view=graph-rest-1.0) SharePoint.
 
 ## <a name="march-2020-new-in-preview-only"></a>Март 2020: Новое только в превью
 
@@ -70,7 +75,7 @@ ms.locfileid: "43146347"
 
 ### <a name="search"></a>Поиск
 - Чтобы добавить данные в файле к результатам поиска, просто индексируйте данные как [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta). Тип **externalFile** не рекомендуется.
-- Теперь вы можете [обновить](/graph/api/externalitem-update?view=graph-rest-beta) [элемент в индексе](/graph/api/resources/externalitem?view=graph-rest-beta), обновив представление элемента в виде обычного текста (представленное свойством **content**) или контейнер свойств элемента (представленный свойством **properties**). При обновлении любого свойства в контейнере свойств перезаписывается весь контейнер свойств, поэтому убедитесь, что все свойства элемента явным образом включены в обновление.
+- [Обновите](/graph/api/externalitem-update?view=graph-rest-beta) [элемент в индексе](/graph/api/resources/externalitem?view=graph-rest-beta), обновив представление элемента в виде обычного текста (представленное свойством **content**) или контейнер свойств элемента (представленный свойством **properties**). При обновлении любого свойства в контейнере свойств перезаписывается весь контейнер свойств, поэтому убедитесь, что все свойства элемента явным образом включены в обновление.
 - Проверьте наличие `HTTP 429` и заголовка ответа `Retry-After` после вызова операции [создания](/graph/api/externalconnection-put-items?view=graph-rest-beta), [обновления](/graph/api/externalitem-update?view=graph-rest-beta) или [удаления](/graph/api/externalitem-delete?view=graph-rest-beta) элемента **externalItem**. Самый быстрый способ выполнить восстановление после [регулирования](throttling.md#best-practices-to-handle-throttling) — отложить запросы с помощью задержки `Retry-After`.
 
 ### <a name="teamwork"></a>Командная работа

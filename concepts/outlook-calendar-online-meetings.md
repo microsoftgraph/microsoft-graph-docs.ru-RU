@@ -4,16 +4,16 @@ description: В Outlook организатор собрания может ра�
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: b1d3a4d5d4f68e3ac28a695d7e832dfed6f1a4d7
-ms.sourcegitcommit: fc9edd17aebed91768e31416e1c1ee0b64d5ce06
+ms.openlocfilehash: 6243e7d8458a7497ea2f01ad16ee67a9fc094dcb
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "39621623"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229516"
 ---
-# <a name="use-outlook-to-organize-or-attend-meetings-online-preview"></a>Организация и посещение собраний по сети с помощью Outlook (предварительная версия)
+# <a name="use-outlook-to-organize-or-attend-meetings-online"></a>Используйте Outlook для организации или посещения собраний в Интернете
 
-В организации, которая поддерживает поставщиков собраний по сети, администраторы могут настроить календари Outlook для поддержки собраний, использующих этих поставщиков, при этом один из них является поставщиком по умолчанию. Вы можете [создать](#create-and-enable-a-meeting-online) или [обновить](#update-a-meeting-to-enable-it-online) [событие](/graph/api/resources/event?view=graph-rest-beta) в Outlook и разрешить участникам присоединиться к собранию по сети, используя поддерживаемого поставщика. Вы можете легко [получить сведения о собрании по сети](#get-information-to-join-meeting-online) в связи с **событием**, в том числе URL-адрес для присоединения к собранию. 
+В организации, которая поддерживает поставщиков собраний по сети, администраторы могут настроить календари Outlook для поддержки собраний, использующих этих поставщиков, при этом один из них является поставщиком по умолчанию. Вы можете [создать](#create-and-enable-a-meeting-online) или [обновить](#update-a-meeting-to-enable-it-online) [событие](/graph/api/resources/event) в Outlook и разрешить участникам присоединиться к собранию по сети, используя поддерживаемого поставщика. Вы можете легко [получить сведения о собрании по сети](#get-information-to-join-meeting-online) в связи с **событием**, в том числе URL-адрес для присоединения к собранию. 
 
 ## <a name="calendars-and-online-meeting-providers"></a>Календари и поставщики собраний по сети
 
@@ -23,13 +23,13 @@ ms.locfileid: "39621623"
 - Skype
 - Skype для бизнеса
 
-Найдите свойства **allowedOnlineMeetingProviders** и **defaultOnlineMeetingProvider**, чтобы проверить, поддерживает ли [календарь](/graph/api/resources/calendar?view=graph-rest-beta) Outlook поставщика собраний по сети. В приведенном ниже примере календарь по умолчанию выполнившего вход пользователя поддерживает двух поставщиков, Microsoft Teams и Skype для бизнеса, и использует Microsoft Teams в качестве поставщика собраний по сети по умолчанию. 
+Найдите свойства **allowedOnlineMeetingProviders** и **defaultOnlineMeetingProvider**, чтобы проверить, поддерживает ли [календарь](/graph/api/resources/calendar) Outlook поставщика собраний по сети. В приведенном ниже примере календарь по умолчанию выполнившего вход пользователя поддерживает двух поставщиков, Microsoft Teams и Skype для бизнеса, и использует Microsoft Teams в качестве поставщика собраний по сети по умолчанию. 
 
 ### <a name="example-find-whether-a-calendar-supports-any-online-meeting-provider"></a>Пример. Узнайте, поддерживает ли календарь поставщика собраний по сети.
 
 #### <a name="request"></a>Запрос
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_calendar_support_for_online_meeting_providers"
@@ -38,15 +38,15 @@ ms.locfileid: "39621623"
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/calendar
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-calendar-support-for-online-meeting-providers-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-calendar-support-for-online-meeting-providers-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-calendar-support-for-online-meeting-providers-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -102,7 +102,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_meeting_enable_online"
@@ -144,15 +144,15 @@ Content-type: application/json
   "onlineMeetingProvider": "teamsForBusiness"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-meeting-enable-online-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-meeting-enable-online-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-meeting-enable-online-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -260,7 +260,7 @@ Content-type: application/json
 
 ## <a name="get-information-to-join-meeting-online"></a>Сведения о присоединении к собранию по сети
 
-Участники и организаторы могут использовать свойство **isOnlineMeeting**, чтобы проверить, включено ли [событие](/graph/api/resources/event?view=graph-rest-beta) для онлайн-участия. Они могут использовать свойство **onlineMeetingProvider** для определения поставщика собрания, а **onlineMeeting** — для получения сведений о подключении, в том числе **joinUrl**. 
+Участники и организаторы могут использовать свойство **isOnlineMeeting**, чтобы проверить, включено ли [событие](/graph/api/resources/event) для онлайн-участия. Они могут использовать свойство **onlineMeetingProvider** для определения поставщика собрания, а **onlineMeeting** — для получения сведений о подключении, в том числе **joinUrl**. 
 
 > [!IMPORTANT]
 > Чтобы получить доступ к URL-адресу и присоединиться к собранию, используйте **joinUrl**, который предоставляется через свойство **события** **onlineMeeting**. В дальнейшем не рекомендуется использовать свойство **события** **onlineMeetingUrl** (свойство **onlineMeetingUrl** устарело).
@@ -269,7 +269,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_event_online_meeting_info"
@@ -278,15 +278,15 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events/AAMkADAGu0AABIGYDZAAA=?$select=isOnlineMeeting,onlineMeetingProvider,onlineMeeting
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-event-online-meeting-info-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-event-online-meeting-info-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-event-online-meeting-info-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -329,7 +329,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-# <a name="httptabhttp"></a>[HTTP](#tab/http)
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_meeting_online"
@@ -343,15 +343,15 @@ PATCH https://graph.microsoft.com/beta/me/events/AAMkADAGu0AABIGYDaAAA=
   "onlineMeetingProvider": "teamsForBusiness"
 }
 ```
-# <a name="ctabcsharp"></a>[C#](#tab/csharp)
+# <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-meeting-online-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascripttabjavascript"></a>[JavaScript](#tab/javascript)
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-meeting-online-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-ctabobjc"></a>[Objective-C](#tab/objc)
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-meeting-online-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
