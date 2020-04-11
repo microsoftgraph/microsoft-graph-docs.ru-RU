@@ -5,67 +5,67 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ae92d8d4c40ddd2419053554dd7aaa23c1906229
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: ddf0056b9ffdd47009e21595dcaf292027ec547f
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108916"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229635"
 ---
-# <a name="list-calendars"></a><span data-ttu-id="6df20-103">Список календарей</span><span class="sxs-lookup"><span data-stu-id="6df20-103">List calendars</span></span>
+# <a name="list-calendars"></a><span data-ttu-id="b85c1-103">Список календарей</span><span class="sxs-lookup"><span data-stu-id="b85c1-103">List calendars</span></span>
 
-<span data-ttu-id="6df20-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6df20-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b85c1-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b85c1-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="6df20-105">Получение всех календарей пользователя (свойство навигации `/calendars`), календарей из группы календарей по умолчанию или из указанной группы календарей.</span><span class="sxs-lookup"><span data-stu-id="6df20-105">Get all the user's calendars (`/calendars` navigation property), get the calendars from the default calendar group or from a specific calendar group.</span></span> 
-## <a name="permissions"></a><span data-ttu-id="6df20-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="6df20-106">Permissions</span></span>
-<span data-ttu-id="6df20-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6df20-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b85c1-105">Получение всех календарей пользователя (свойство навигации `/calendars`), календарей из группы календарей по умолчанию или из указанной группы календарей.</span><span class="sxs-lookup"><span data-stu-id="b85c1-105">Get all the user's calendars (`/calendars` navigation property), get the calendars from the default calendar group or from a specific calendar group.</span></span> 
+## <a name="permissions"></a><span data-ttu-id="b85c1-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b85c1-106">Permissions</span></span>
+<span data-ttu-id="b85c1-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b85c1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6df20-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="6df20-109">Permission type</span></span>      | <span data-ttu-id="6df20-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="6df20-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b85c1-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b85c1-109">Permission type</span></span>      | <span data-ttu-id="b85c1-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b85c1-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6df20-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="6df20-111">Delegated (work or school account)</span></span> | <span data-ttu-id="6df20-112">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6df20-112">Calendars.Read, Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="6df20-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="6df20-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6df20-114">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6df20-114">Calendars.Read, Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="6df20-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="6df20-115">Application</span></span> | <span data-ttu-id="6df20-116">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6df20-116">Calendars.Read, Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="b85c1-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b85c1-111">Delegated (work or school account)</span></span> | <span data-ttu-id="b85c1-112">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b85c1-112">Calendars.Read, Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="b85c1-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b85c1-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b85c1-114">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b85c1-114">Calendars.Read, Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="b85c1-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b85c1-115">Application</span></span> | <span data-ttu-id="b85c1-116">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b85c1-116">Calendars.Read, Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6df20-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="6df20-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b85c1-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b85c1-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 
-<span data-ttu-id="6df20-118">Все календари пользователя.</span><span class="sxs-lookup"><span data-stu-id="6df20-118">All the user's calendars.</span></span>
+<span data-ttu-id="b85c1-118">Все календари пользователя.</span><span class="sxs-lookup"><span data-stu-id="b85c1-118">All the user's calendars.</span></span>
 ```http
 GET /me/calendars
 GET /users/{id | userPrincipalName}/calendars
 ```
 
-<span data-ttu-id="6df20-119">Календари пользователя в объекте [calendarGroup](../resources/calendargroup.md) по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="6df20-119">The user's calendars in the default [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="b85c1-119">Календари пользователя в объекте [calendarGroup](../resources/calendargroup.md) по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="b85c1-119">The user's calendars in the default [calendarGroup](../resources/calendargroup.md).</span></span>
 ```http
 GET /me/calendargroups/{calendar_group_id}/calendars
 GET /users/{id | userPrincipalName}/calendarGroup/calendars
 ```
 
-<span data-ttu-id="6df20-120">Календари пользователя в указанном объекте [calendarGroup](../resources/calendargroup.md).</span><span class="sxs-lookup"><span data-stu-id="6df20-120">The user's calendars in a specific [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="b85c1-120">Календари пользователя в указанном объекте [calendarGroup](../resources/calendargroup.md).</span><span class="sxs-lookup"><span data-stu-id="b85c1-120">The user's calendars in a specific [calendarGroup](../resources/calendargroup.md).</span></span>
 ```http
 GET /me/calendarGroups/{calendar_group_id}/calendars
 GET /users/{id | userPrincipalName}/calendarGroups/{calendar_group_id}/calendars
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="6df20-121">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="6df20-121">Optional query parameters</span></span>
-<span data-ttu-id="6df20-122">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="6df20-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="6df20-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="6df20-123">Request headers</span></span>
-| <span data-ttu-id="6df20-124">Заголовок</span><span class="sxs-lookup"><span data-stu-id="6df20-124">Header</span></span>       | <span data-ttu-id="6df20-125">Значение</span><span class="sxs-lookup"><span data-stu-id="6df20-125">Value</span></span> |
+## <a name="optional-query-parameters"></a><span data-ttu-id="b85c1-121">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="b85c1-121">Optional query parameters</span></span>
+<span data-ttu-id="b85c1-122">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="b85c1-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b85c1-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b85c1-123">Request headers</span></span>
+| <span data-ttu-id="b85c1-124">Заголовок</span><span class="sxs-lookup"><span data-stu-id="b85c1-124">Header</span></span>       | <span data-ttu-id="b85c1-125">Значение</span><span class="sxs-lookup"><span data-stu-id="b85c1-125">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="6df20-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="6df20-126">Authorization</span></span>  | <span data-ttu-id="6df20-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="6df20-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="6df20-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6df20-129">Content-Type</span></span>   | <span data-ttu-id="6df20-130">application/json</span><span class="sxs-lookup"><span data-stu-id="6df20-130">application/json</span></span> |
+| <span data-ttu-id="b85c1-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="b85c1-126">Authorization</span></span>  | <span data-ttu-id="b85c1-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b85c1-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="b85c1-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b85c1-129">Content-Type</span></span>   | <span data-ttu-id="b85c1-130">application/json</span><span class="sxs-lookup"><span data-stu-id="b85c1-130">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="6df20-131">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="6df20-131">Request body</span></span>
-<span data-ttu-id="6df20-132">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="6df20-132">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b85c1-131">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b85c1-131">Request body</span></span>
+<span data-ttu-id="b85c1-132">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="b85c1-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6df20-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="6df20-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b85c1-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="b85c1-133">Response</span></span>
 
-<span data-ttu-id="6df20-134">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Calendar](../resources/calendar.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="6df20-134">If successful, this method returns a `200 OK` response code and collection of [Calendar](../resources/calendar.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="6df20-135">Пример</span><span class="sxs-lookup"><span data-stu-id="6df20-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="6df20-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="6df20-136">Request</span></span>
-<span data-ttu-id="6df20-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6df20-137">Here is an example of the request.</span></span>
+<span data-ttu-id="b85c1-134">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Calendar](../resources/calendar.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="b85c1-134">If successful, this method returns a `200 OK` response code and collection of [Calendar](../resources/calendar.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="b85c1-135">Пример</span><span class="sxs-lookup"><span data-stu-id="b85c1-135">Example</span></span>
+### <a name="request"></a><span data-ttu-id="b85c1-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="b85c1-136">Request</span></span>
+<span data-ttu-id="b85c1-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b85c1-137">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="6df20-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="6df20-138">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b85c1-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="b85c1-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_get_calendars"
@@ -73,26 +73,26 @@ GET /users/{id | userPrincipalName}/calendarGroups/{calendar_group_id}/calendars
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/calendars
 ```
-# <a name="c"></a>[<span data-ttu-id="6df20-139">C#</span><span class="sxs-lookup"><span data-stu-id="6df20-139">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b85c1-139">C#</span><span class="sxs-lookup"><span data-stu-id="b85c1-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-get-calendars-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="6df20-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6df20-140">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b85c1-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b85c1-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-get-calendars-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="6df20-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6df20-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b85c1-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b85c1-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-get-calendars-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="6df20-142">Java</span><span class="sxs-lookup"><span data-stu-id="6df20-142">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="b85c1-142">Java</span><span class="sxs-lookup"><span data-stu-id="b85c1-142">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/user-get-calendars-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="6df20-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="6df20-143">Response</span></span>
-<span data-ttu-id="6df20-p103">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="6df20-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="b85c1-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="b85c1-143">Response</span></span>
+<span data-ttu-id="b85c1-p103">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="b85c1-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -115,6 +115,12 @@ Content-type: application/json
             "canShare":true,
             "canViewPrivateItems":true,
             "canEdit":true,
+            "allowedOnlineMeetingProviders": [
+                "teamsForBusiness"
+            ],
+            "defaultOnlineMeetingProvider": "teamsForBusiness",
+            "isTallyingResponses": true,
+            "isRemovable": false,
             "owner":{
                 "name":"Samantha Booth",
                 "address":"samanthab@adatum.onmicrosoft.com"
