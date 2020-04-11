@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1734f4b848ca3ba5a1f816649a2587d878f9e9c3
-ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+ms.openlocfilehash: 782e8835ae7532a0f9a2bbad1732b0e9fb002fdd
+ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43144116"
+ms.lasthandoff: 04/10/2020
+ms.locfileid: "43219125"
 ---
 # <a name="create-group"></a>Создание группы
 
@@ -179,7 +179,7 @@ Content-type: application/json
 
 ### <a name="example-2-create-a-group-with-owners-and-members"></a>Пример 2. Создание группы с владельцами и участниками
 
-В приведенном ниже примере создается группа Office 365 с указанным владельцем и участниками.
+В следующем примере создается группа Office 365 с указанным владельцем и участниками. Обратите внимание на то, что в рамках создания группы можно добавить не более 20 отношений, например владельцев и участников. Позже вы можете добавить дополнительных участников с помощью API [добавления участников](group-post-members.md) или пакетной обработки JSON.
 
 #### <a name="request"></a>Запрос
 

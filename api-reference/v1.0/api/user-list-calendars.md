@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ae92d8d4c40ddd2419053554dd7aaa23c1906229
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: ddf0056b9ffdd47009e21595dcaf292027ec547f
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108916"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229635"
 ---
 # <a name="list-calendars"></a>Список календарей
 
@@ -62,7 +62,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{calendar_group_id}/calendars
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Calendar](../resources/calendar.md) в тексте отклика.
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/me/calendars
 
 ---
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -115,6 +115,12 @@ Content-type: application/json
             "canShare":true,
             "canViewPrivateItems":true,
             "canEdit":true,
+            "allowedOnlineMeetingProviders": [
+                "teamsForBusiness"
+            ],
+            "defaultOnlineMeetingProvider": "teamsForBusiness",
+            "isTallyingResponses": true,
+            "isRemovable": false,
             "owner":{
                 "name":"Samantha Booth",
                 "address":"samanthab@adatum.onmicrosoft.com"

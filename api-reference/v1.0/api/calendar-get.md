@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a5eb3a10ae5452149de9167ac063a16b69cb39fc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3b09049c2e1d7c225806b3c1531b96ed3a6b7c3a
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518821"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43228854"
 ---
 # <a name="get-calendar"></a>Вывод календаря
 
@@ -67,7 +67,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [calendar](../resources/calendar.md) в тексте отклика.
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 В приведенном ниже примере описывается вывод календаря по умолчанию для пользователя, находящегося в системе. 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/v1.0/me/calendar
 
 ---
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -117,6 +117,12 @@ Content-type: application/json
     "canShare":true,
     "canViewPrivateItems":true,
     "canEdit":true,
+    "allowedOnlineMeetingProviders": [
+                "teamsForBusiness"
+            ],
+    "defaultOnlineMeetingProvider": "teamsForBusiness",
+    "isTallyingResponses": true,
+    "isRemovable": false,
     "owner":{
         "name":"Samantha Booth",
         "address":"samanthab@adatum.onmicrosoft.com"
