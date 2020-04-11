@@ -5,16 +5,14 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 27e728e172ec8870082f6b7d668f1f19f29f22dc
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: ec0326889cb55ce878d543dd88304925b6fdfd39
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42591483"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229558"
 ---
 # <a name="urlassessmentrequest-resource-type"></a>Тип ресурса Урлассессментрекуест
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Используется для создания и извлечения средства оценки угроз URL-адресов, производного от [среатассессментрекуест](threatAssessmentRequest.md).
 

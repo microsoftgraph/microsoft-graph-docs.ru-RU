@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 088b1f1d6f575cc96029f282ae6608cdeff6b3fb
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 20065f593312839d8f0fd05718b120817a1dbbc0
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618720"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229614"
 ---
 # <a name="update-user-mailbox-settings"></a>Обновление параметров почтового ящика пользователя
 
@@ -20,6 +20,7 @@ ms.locfileid: "42618720"
 
 - [автоматические ответы](../resources/automaticrepliessetting.md) (автоматическое уведомление пользователей при получении их почты);
 - dateFormat
+- делегатемитингмессажеделиверйоптионс
 - [языковой стандарт](../resources/localeinfo.md) (язык и страну или регион);
 - тимеформат
 - часовой пояс;
@@ -60,9 +61,10 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Параметры конфигурации для автоматического уведомления отправителя о входящем письме с помощью сообщения от пользователя, вошедшего в систему. Вы можете настроить такие уведомления только для диапазона дат в будущем.|
-|dateFormat|строка|Формат даты для почтового ящика пользователя.|
+|dateFormat|string|Формат даты для почтового ящика пользователя.|
+|делегатемитингмессажеделиверйоптионс|делегатемитингмессажеделиверйоптионс| Если у пользователя есть представитель календаря, этот параметр указывает, будут ли представитель, владелец почтового ящика или и то, и другое, получать сообщения о собраниях и ответы на приглашения. Возможные значения: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`.|
 |language|[localeInfo](../resources/localeinfo.md)|Сведения о языковом стандарте пользователя, в том числе о предпочитаемом языке и стране или регионе.|
-|тимеформат|строка|Формат времени для почтового ящика пользователя.|
+|тимеформат|string|Формат времени для почтового ящика пользователя.|
 |timeZone|string|Часовой пояс, используемый по умолчанию, для почтового ящика пользователя.|
 |workingHours|[workingHours](../resources/workinghours.md)|Часы, дни недели и часовой пояс работы пользователя.|
 
@@ -132,7 +134,7 @@ Content-Type: application/json
 
 
 #### <a name="response"></a>Отклик
-Ответ включает обновленные параметры автоматических ответов. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ответ включает обновленные параметры автоматических ответов. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "name": "update_mailboxsettings_1",

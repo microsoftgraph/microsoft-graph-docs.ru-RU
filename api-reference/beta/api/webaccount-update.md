@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 2a51b252c2fa75695fd62b2d05710a48ce71503c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bf31a230d9e77a64905bf04b2ee26215bb47375f
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451527"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229061"
 ---
 # <a name="update-webaccount"></a>Обновление учетной записи
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -55,7 +55,7 @@ PATCH /me/profile/webAccounts/{id}
 |description   |String                                                   | Содержит описание, предоставленное пользователем для учетной записи службы, на которую выполняется ссылка. |
 |service       |[сервицеинформатион](../resources/serviceinformation.md) | Представляет основные описательные данные об облачной службе, предоставленной пользователем.                   |
 |статусмессаже |String                                                   | Содержит сообщение о состоянии от облачной службы, если оно предоставлено или синхронизировано.                   |
-|userId        |String                                                   | Имя пользователя, отображаемое для учетной записи Account (например, @kevinb).                                       |
+|userId        |String                                                   | Имя пользователя, отображаемое для учетной записи Account (например, @kevinb).                             |
 |webUrl        |String                                                   | Содержит ссылку на профиль пользователя в облачной службе, если она существует.                        |
 
 ## <a name="response"></a>Отклик

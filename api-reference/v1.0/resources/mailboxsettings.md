@@ -5,16 +5,16 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 99097c026ef219e82a34a6c7b043cf70d36c965d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c2fb1cb6f45b91843b7c57aa66f6c136d24db2c2
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447509"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229054"
 ---
 # <a name="mailboxsettings-resource-type"></a>Тип ресурса mailboxSettings
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 Параметры основного почтового ящика [пользователя](user.md).
 
@@ -24,11 +24,12 @@ ms.locfileid: "42447509"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|archiveFolder|строка|Идентификатор архивной папки пользователя.|
+|archiveFolder|string|Идентификатор архивной папки пользователя.|
 |automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|Параметры конфигурации для автоматического уведомления отправителя о входящем письме с помощью сообщения от пользователя, вошедшего в систему.|
-|dateFormat|строка|Формат даты для почтового ящика пользователя.|
+|dateFormat|string|Формат даты для почтового ящика пользователя.|
+|делегатемитингмессажеделиверйоптионс|делегатемитингмессажеделиверйоптионс| Если у пользователя есть представитель календаря, этот параметр указывает, будут ли представитель, владелец почтового ящика или и то, и другое, получать сообщения о собраниях и ответы на приглашения. Возможные значения: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`.|
 |language|[localeInfo](localeinfo.md)|Сведения о языковом стандарте пользователя, в том числе о предпочитаемом языке и стране или регионе.|
-|тимеформат|строка|Формат времени для почтового ящика пользователя.|
+|тимеформат|string|Формат времени для почтового ящика пользователя.|
 |timeZone|string|Часовой пояс, используемый по умолчанию, для почтового ящика пользователя.|
 |workingHours|[workingHours](workinghours.md)|Дни недели и часы работы пользователя в определенном часовом поясе.|
 
@@ -49,6 +50,7 @@ ms.locfileid: "42447509"
   "archiveFolder": "string",
   "automaticRepliesSetting": {"@odata.type": "microsoft.graph.automaticRepliesSetting"},
   "dateFormat": "string",
+  "delegateMeetingMessageDeliveryOptions": "String",
   "language": {"@odata.type": "microsoft.graph.localeInfo"},
   "timeFormat": "string",
   "timeZone": "string",

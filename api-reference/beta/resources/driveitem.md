@@ -6,12 +6,12 @@ title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 8a5d4c8f45baaa980e2c8bc3f32c348182b13bc1
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 68fa883e7383c0f064aeece1d61a1788fed49ed6
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43109056"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43227745"
 ---
 # <a name="driveitem-resource-type"></a>Тип ресурса driveItem
 
@@ -196,8 +196,8 @@ URL-адрес будет доступен в течение короткого 
 | [Копирование элемента](../api/driveitem-copy.md)                    | `POST /drive/items/{item-id}/copy`
 | [Поиск элементов](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
 | [Перечисление изменений на диске](../api/driveitem-delta.md)     | `GET /drive/root/delta`
-| [Отслеживание элемента](../api/driveitem-follow.md)                | `POST /drives/{drive-id}/items/{item-id}/follow`
-| [Отмена отслеживания элемента](../api/driveitem-unfollow.md)            | `POST /drives/{drive-id}/items/{item-id}/unfollow`
+| [Подписаться на элемент](../api/driveitem-follow.md)                | `POST /drives/{drive-id}/items/{item-id}/follow`
+| [Отписаться от элемента](../api/driveitem-unfollow.md)            | `POST /drives/{drive-id}/items/{item-id}/unfollow`
 | [Перечисление эскизов](../api/driveitem-list-thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
 | [Создание ссылки совместного доступа](../api/driveitem-createlink.md)    | `POST /drive/items/{item-id}/createLink`
 | [Добавление разрешений](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
@@ -205,6 +205,8 @@ URL-адрес будет доступен в течение короткого 
 | [Удаление разрешения](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
 | [Получение канала WebSocket][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
 | [Предварительный просмотр элемента][item-preview]                             | `POST /drive/items/{item-id}/preview`
+| [Зарегистрируйся](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
+| [Извлечь](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
 
 [item-preview]: ../api/driveitem-preview.md
 [Получение аналитики]: ../api/itemanalytics-get.md

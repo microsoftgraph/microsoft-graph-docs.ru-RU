@@ -1,16 +1,16 @@
 ---
 title: Получение Итемфоне
-description: Получение свойств и связей объекта итемфоне.
+description: Получение свойств и связей объекта Итемфоне.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 94d474b5607ae91ac14d3aff806e0e67c69e710d
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: efd61f9c8654c43d6171dd02a1a76e0174a5233d
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200245"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229026"
 ---
 # <a name="get-itemphonenumber"></a>Получение Итемфоненумбер
 
@@ -28,7 +28,7 @@ ms.locfileid: "43200245"
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Для приложений                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
+| Приложение                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 

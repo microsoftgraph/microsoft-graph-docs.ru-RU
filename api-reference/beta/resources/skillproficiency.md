@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 6662ab205e390ae72d283d5015aa346c4b6fc2b3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7c8b5a3711c7abdbbdd8ddba8f7a36c85978718b
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520508"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43228875"
 ---
 # <a name="skillproficiency-resource-type"></a>Тип ресурса СкиллпрофиЦиенци
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,19 +24,19 @@ ms.locfileid: "42520508"
 
 ## <a name="methods"></a>Методы
  
-| Метод                                                 | Возвращаемый тип                             | Описание                                                   |
-|:-------------------------------------------------------|:----------------------------------------|:--------------------------------------------------------------|
-| [Получение СкиллпрофиЦиенци](../api/skillproficiency-get.md) | [скиллпрофиЦиенци](skillproficiency.md) | Чтение свойств и связей объекта **скиллпрофиЦиенци** . |
-| [Обновление СкиллпрофиЦиенци](../api/skillproficiency-update.md)            | [скиллпрофиЦиенци](skillproficiency.md) | Обновление объекта **скиллпрофиЦиенци** .                               |
-| [Удаление СкиллпрофиЦиенци](../api/skillproficiency-delete.md)            | Нет                                    | Удаление объекта **скиллпрофиЦиенци** .                               |
+| Метод                                                         | Возвращаемый тип                             | Описание                                                             |
+|:---------------------------------------------------------------|:----------------------------------------|:------------------------------------------------------------------------|
+| [Получение СкиллпрофиЦиенци](../api/skillproficiency-get.md)         | [скиллпрофиЦиенци](skillproficiency.md) | Чтение свойств и связей объекта **скиллпрофиЦиенци** . |
+| [Обновление СкиллпрофиЦиенци](../api/skillproficiency-update.md)   | [скиллпрофиЦиенци](skillproficiency.md) | Обновление объекта **скиллпрофиЦиенци** .                                   |
+| [Удаление СкиллпрофиЦиенци](../api/skillproficiency-delete.md)   | Нет                                    | Удаление объекта **скиллпрофиЦиенци** .                                   |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип             | Описание                                                                                                                        |
 |:-------------|:-----------------|:-----------------------------------------------------------------------------------------------------------------------------------|
-|categories    |Коллекция String | Содержит категории, связанные с навыком пользователя (например, персональный, профессиональный, увлеченный).                                       |
-|displayName   |Строка            | Содержит понятное имя для навыка.                                                                                            |      
-|навыки   |строка            | Возможные значения: `elementary`, `limitedWorking`, `generalProfessional`, `advancedProfessional`, `expert`, `unknownFutureValue`.|
+|categories    |Коллекция String | Содержит категории, связанные с навыком пользователя (например, персональный, профессиональный, увлеченный).                             |
+|displayName   |Строка            | Содержит понятное имя для навыка.                                                                                            |
+|навыки   |string            | Возможные значения: `elementary`, `limitedWorking`, `generalProfessional`, `advancedProfessional`, `expert`, `unknownFutureValue`.|
 |webUrl        |String            | Содержит ссылку на источник информации о навыке.                                                                          |
 
 ## <a name="relationships"></a>Связи

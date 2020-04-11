@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: c66a1d38f9f63136c202a675608c58bf4b8ec57f
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: 2da57e4779760cfb3dd0a9c124c2058327822de1
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43160291"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181689"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -45,7 +45,7 @@ ms.locfileid: "43160291"
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Дополнение|1.0|Добавлен новое свойство **инициатор** в сложный тип [recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-1.0).
-|Добавление|1.0|Добавлены новые сложные типы:<br/>[recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-1.0)<br/>[callRoutes](/graph/api/resources/callRoutes?view=graph-rest-1.0)<br/>[incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-1.0)
+|Добавление|1.0|Добавлены новые сложные типы:<br/>[recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-1.0)<br/>[callRoute](/graph/api/resources/callRoute?view=graph-rest-1.0)<br/>[incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-1.0)
 |Добавление|1.0|Добавлено новое свойство **recordingInfo**для объекта [участника](/graph/api/resources/participant?view=graph-rest-1.0).
 |Добавление|1.0|Добавлено новое свойство **recordingStatus**для сложного типа [recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-1.0).
 |Добавление|1.0|Добавлено новое действие [updateRecordingStatus](/graph/api/call-updaterecordingstatus?view=graph-rest-1.0) для объекта [вызова](/graph/api/resources/call?view=graph-rest-1.0).
@@ -56,8 +56,8 @@ ms.locfileid: "43160291"
 |Добавление|1.0|Добавлено новое свойство **observedParticipantId**в сложный тип [incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-1.0).
 |Добавление|1.0|Добавлено новое свойство **onBehalfOf**в сложный тип [incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-1.0).
 |Добавление|1.0|Добавлено новое свойство **transferor**в сложный тип [incomingContext](/graph/api/resources/incomingcontext?view=graph-rest-1.0).
-|Добавление|1.0|Добавлено новое свойство **callRoute**для объекта [вызова](/graph/api/resources/call?view=graph-rest-1.0).
-|Добавление|1.0|Добавлено новое свойство **final**в сложный тип [callRoute](/graph/api/resources/callroute?view=graph-rest-1.0).
+|Добавление|1.0|Добавлено новое свойство **CallRoutes** для объекта [call](/graph/api/resources/call?view=graph-rest-1.0).
+|Дополнение|1.0|Добавлено новое свойство **final**в сложный тип [callRoute](/graph/api/resources/callroute?view=graph-rest-1.0).
 |Добавление|1.0|Добавлено новое свойство **original**в сложный тип [callRoute](/graph/api/resources/callroute?view=graph-rest-1.0).
 |Добавление|1.0|Добавлено новое свойство **routingType**в сложный тип [callRoute](/graph/api/resources/callroute?view=graph-rest-1.0).
 |Дополнение|Бета-версия и версия 1.0|Добавлена функция [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality) в коллекции [вызовов](/graph/api/resources/call).|
@@ -1071,7 +1071,7 @@ ms.locfileid: "43160291"
 |Дополнение|Бета|Добавлено свойство **windowsKioskForceUpdateSchedule** для объекта [windowsKioskConfiguration](/graph/api/resources/intune-deviceconfig-windowskioskconfiguration?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлено свойство навигации **deviceConfigurationsAllManagedDeviceCertificateStates** для объекта [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta)|
 |Удаление|Бета|Удалено свойство навигации **importedWindowsAutopilotDeviceIdentityUploads** из объекта [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta)|
-|Дополнение|Бета|Добавлено свойство навигации **deviceUpdateStates** для объекта [windowsUpdateForBusinessConfiguration](/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-beta)|
+|Дополнение|бета|Добавлено свойство навигации **deviceUpdateStates** для объекта [windowsUpdateForBusinessConfiguration](/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлены свойства **index** и **parentIndex** для сложного типа [androidManagedStoreAppConfigurationSchemaItem](/graph/api/resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлено свойство **androidDeviceAdministratorEnrollmentEnabled** для сложного типа [deviceManagementSettings](/graph/api/resources/intune-deviceconfig-devicemanagementsettings?view=graph-rest-beta)|
 |Дополнение|Бета|Добавлено свойство **edgeTraversal** для сложного типа [windowsFirewallRule](/graph/api/resources/intune-deviceconfig-windowsfirewallrule?view=graph-rest-beta)|
@@ -2276,7 +2276,7 @@ ms.locfileid: "43160291"
 |Дополнение|Бета|Для сущности [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) добавлено свойство **userPfxCertificates**|
 |Дополнение|Бета|Для сущности [iosVppApp](/graph/api/resources/intune-apps-iosvppapp?view=graph-rest-beta) добавлено свойство навигации **assignedLicenses**|
 |Дополнение|Бета|Для сущности [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta) добавлено свойство навигации **managedDeviceMobileAppConfigurationStates**|
-|Дополнение|Бета|Для сложного типа [iosWebContentFilterSpecificWebsitesAccess](/graph/api/resources/intune-deviceconfig-ioswebcontentfilterspecificwebsitesaccess?view=graph-rest-beta) добавлено свойство **websiteList**|
+|Дополнение|бета|Для сложного типа [iosWebContentFilterSpecificWebsitesAccess](/graph/api/resources/intune-deviceconfig-ioswebcontentfilterspecificwebsitesaccess?view=graph-rest-beta) добавлено свойство **websiteList**|
 |Дополнение|Бета|Для типа перечисления [devicePlatformType](/graph/api/resources/intune-deviceconfig-deviceplatformtype?view=graph-rest-beta) добавлен участник **androidWorkProfile**|
 |Дополнение|Бета|Для типа перечисления [editionUpgradeLicenseType](/graph/api/resources/intune-deviceconfig-editionupgradelicensetype?view=graph-rest-beta) добавлен участник **notConfigured**|
 |Дополнение|Бета|Для типа перечисления [iosUpdatesInstallStatus](/graph/api/resources/intune-deviceconfig-iosupdatesinstallstatus?view=graph-rest-beta) добавлен участник **unknown**|
@@ -3920,7 +3920,7 @@ ms.locfileid: "43160291"
 | Изменение      | бета    | Добавлено свойство **identityName** к объекту [windowsPhone81AppX](/graph/api/resources/intune-apps-windowsphone81appx?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Изменен тип следующих свойств объекта [windowsPhone81AppX](/graph/api/resources/intune-apps-windowsphone81appx?view=graph-rest-beta):<br/>**applicableArchitectures** теперь относится не к [windowsArchitecture](/graph/api/resources/windowsarchitecture?view=graph-rest-beta), а к String.<br/> |
 | Изменение      | Бета-версия    | Добавлены свойства **identityName**, **identityPublisherHash** и **identityResourceIdentifier** к объекту [windowsUniversalAppX](/graph/api/resources/intune-apps-windowsuniversalappx?view=graph-rest-beta). |
-| Изменение      | бета    | Изменен тип следующих свойств объекта [windowsUniversalAppX](/graph/api/resources/intune-apps-windowsuniversalappx?view=graph-rest-beta):<br/>**applicableArchitectures** теперь относится не к [windowsArchitecture](/graph/api/resources/windowsarchitecture?view=graph-rest-beta), а к String;<br/>**applicableDeviceTypes** теперь относится не к [windowsDeviceType](/graph/api/resources/windowsdevicetype?view=graph-rest-beta), а к String.<br/> |
+| Изменение      | Бета-версия    | Изменен тип следующих свойств объекта [windowsUniversalAppX](/graph/api/resources/intune-apps-windowsuniversalappx?view=graph-rest-beta):<br/>**applicableArchitectures** теперь относится не к [windowsArchitecture](/graph/api/resources/windowsarchitecture?view=graph-rest-beta), а к String;<br/>**applicableDeviceTypes** теперь относится не к [windowsDeviceType](/graph/api/resources/windowsdevicetype?view=graph-rest-beta), а к String.<br/> |
 | Изменить      | Бета-версия    | Добавлено свойство **restartMode** к объекту [windowsUpdateForBusinessConfiguration](/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Добавлено свойство навигации **managedDeviceCertificateStates** к объекту [androidForWorkScepCertificateProfile](/graph/api/resources/intune-deviceconfig-androidforworkscepcertificateprofile?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Добавлено свойство навигации **managedDeviceCertificateStates** к объекту [androidScepCertificateProfile](/graph/api/resources/intune-deviceconfig-androidscepcertificateprofile?view=graph-rest-beta). |

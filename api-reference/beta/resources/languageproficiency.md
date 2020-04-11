@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 0934ea66c15e090a4f9ba9bcaa62a6c7eb900cd5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 48a9e26bde5d06b834c542cbb987a2faff9fc23c
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522997"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229397"
 ---
 # <a name="languageproficiency-resource-type"></a>Тип ресурса ЛангуажепрофиЦиенци
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,19 +24,19 @@ ms.locfileid: "42522997"
 
 ## <a name="methods"></a>Методы
 
-| Метод                                                       | Возвращаемый тип                                   | Описание                                                      | 
-|:-------------------------------------------------------------|:----------------------------------------------|:-----------------------------------------------------------------|
-| [Получение ЛангуажепрофиЦиенци](../api/languageproficiency-get.md) | [лангуажепрофиЦиенци](languageproficiency.md) | Чтение свойств и связей объекта **лангуажепрофиЦиенци** . |
-| [Обновление ЛангуажепрофиЦиенци](../api/languageproficiency-update.md)               | [лангуажепрофиЦиенци](languageproficiency.md) | Обновление объекта **лангуажепрофиЦиенци** .                               |
-| [Удаление ЛангуажепрофиЦиенци](../api/languageproficiency-delete.md)               | Нет                                          | Удаление объекта **лангуажепрофиЦиенци** .                               |
+| Метод                                                              | Возвращаемый тип                                   | Описание                                                                |
+|:--------------------------------------------------------------------|:----------------------------------------------|:---------------------------------------------------------------------------|
+| [Получение ЛангуажепрофиЦиенци](../api/languageproficiency-get.md)        | [лангуажепрофиЦиенци](languageproficiency.md) | Чтение свойств и связей объекта **лангуажепрофиЦиенци** . |
+| [Обновление ЛангуажепрофиЦиенци](../api/languageproficiency-update.md)  | [лангуажепрофиЦиенци](languageproficiency.md) | Обновление объекта **лангуажепрофиЦиенци** .                                   |
+| [Удаление ЛангуажепрофиЦиенци](../api/languageproficiency-delete.md)  | Нет                                          | Удаление объекта **лангуажепрофиЦиенци** .                                   |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание                                                                                                                                                 |
 |:-------------|:------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|displayName   |String       | Содержит имя языка в длинном формате.                                                                                                   |
-|навыки   |строка       | Возможные значения: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.|
-|tag           |String       | Содержит четырехзначный BCP47 Name для языка (EN-US, No-NetBIOS, en-AU).                                                                                  |
+|displayName   |String       | Содержит имя языка в длинном формате.                                                                                                               |
+|навыки   |string       | Возможные значения: `elementary`, `conversational`, `limitedWorking`, `professionalWorking`, `fullProfessional`, `nativeOrBilingual`, `unknownFutureValue`.|
+|tag           |String       | Содержит четырехзначный BCP47 Name для языка (EN-US, No-NetBIOS, en-AU).                                                                              |
 
 ## <a name="relationships"></a>Связи
 
@@ -44,7 +44,7 @@ ms.locfileid: "42522997"
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
-Ниже указано представление ресурса в формате JSON. 
+Ниже указано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",

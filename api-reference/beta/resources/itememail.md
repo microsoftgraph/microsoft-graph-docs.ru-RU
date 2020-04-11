@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: a18d72fb44f373b6cee1047cc2eed5f0c18a1d0e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aaf58bd7e20caeb418946814daa7ca8f7bb9bfa3
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523081"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229418"
 ---
 # <a name="itememail-resource-type"></a>Тип ресурса Итемемаил
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,11 +22,11 @@ ms.locfileid: "42523081"
 
 ## <a name="methods"></a>Методы
 
-| Метод                                   | Возвращаемый тип               | Описание                                            |
-|:-----------------------------------------|:--------------------------|:-------------------------------------------------------|
-| [получение](../api/itememail-get.md); | [итемемаил](itememail.md) | Чтение свойств и связей объекта **итемемаил** . |
-| [обновление](../api/itememail-update.md).     | [итемемаил](itememail.md) | Обновление объекта **итемемаил** .                               |
-| [удаление](../api/itememail-delete.md);     | Нет                      | Удаление объекта **итемемаил** .                               |
+| Метод                                   | Возвращаемый тип               | Описание                                                      |
+|:-----------------------------------------|:--------------------------|:-----------------------------------------------------------------|
+| [получение](../api/itememail-get.md);           | [итемемаил](itememail.md) | Чтение свойств и связей объекта **итемемаил** .    |
+| [Обновление](../api/itememail-update.md)     | [итемемаил](itememail.md) | Обновление объекта **итемемаил** .                                  |
+| [Удаление](../api/itememail-delete.md)     | Нет                      | Удаление объекта **итемемаил** .                                  |
 
 ## <a name="properties"></a>Свойства
 

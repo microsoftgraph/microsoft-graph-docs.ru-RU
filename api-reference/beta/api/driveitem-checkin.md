@@ -1,25 +1,24 @@
 ---
 author: JeremyKelley
-description: В этой статье рассказывается, как возвратить извлеченный ресурс DriveItem, чтобы сделать версию документа доступной другим пользователям.
-ms.date: 09/10/2017
-title: Возврат файлов
+description: Возврат извлеченного ресурса DriveItem, который делает версию документа доступной другим пользователям.
+title: 'driveItem: checkin'
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: ee6a711d1b065784a93a2a2363cfdc6ffbede1a9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8cc008e18bd70acfed0bb6b951d3694f3cc9593d
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42433022"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43227584"
 ---
-# <a name="check-in-changes-to-a-driveitem-resource"></a>Возврат изменений в ресурсе DriveItem
+# <a name="driveitem-checkin"></a>driveItem: checkin
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В этой статье рассказывается, как возвратить извлеченный ресурс DriveItem, чтобы сделать версию документа доступной другим пользователям.
+Возврат извлеченного ресурса **driveItem** , который делает версию документа доступной другим пользователям.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -50,7 +49,7 @@ POST /users/{userId}/drive/items/{itemId}/checkin
 
 |   Имя    | Значение  |                                                Описание                                                |
 | :-------- | :----- | :-------------------------------------------------------------------------------------------------------- |
-| checkInAs | string | Необязательный параметр. Желаемое состояние документа после завершения операции возврата. Может иметь значение `published` либо значение может быть не указано. |
+| checkInAs | string | Необязательно. Состояние документа после завершения операции возврата. Может иметь значение `published` либо значение может быть не указано. |
 | comment   | string | Комментарий к возврату, сопоставленный с версией.                                                   |
 
 ## <a name="example"></a>Пример

@@ -4,12 +4,12 @@ description: 'Создание группы, включающей команду
 author: hachandr
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 80779619006da786652fa02f9d041975e4909e27
-ms.sourcegitcommit: fadf83089455674ee721c22d59f7d54758d21896
+ms.openlocfilehash: 6f23efe2146c52bf53ab54ea1600d0aa7b6aa0ae
+ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2020
-ms.locfileid: "43148261"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43181897"
 ---
 # <a name="creating-teams-and-managing-members-using-microsoft-graph"></a>Создание команд и управление участниками с помощью Microsoft Graph
 

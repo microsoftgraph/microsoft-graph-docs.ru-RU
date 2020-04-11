@@ -1,25 +1,24 @@
 ---
 author: JeremyKelley
-description: Вы можете получить ресурс driveItem для изменения, чтобы другие пользователи не могли редактировать документ, а внесенные вами изменения не отображались, пока документ не будет записан после изменения.
-ms.date: 09/10/2017
-title: Извлечение файлов
+description: Извлеките ресурс driveItem, чтобы другие пользователи не могли редактировать документ, а ваши изменения будут видны, пока они не будут возвращены.
+title: 'driveItem: Checkout'
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 4159882b29dc69429a7b99bb89d1e8051d6e9c03
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 69f01b949d38d76be24834151c10581589b75e2e
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432945"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43227591"
 ---
-# <a name="check-out-a-driveitem-resource"></a>Получение ресурса DriveItem для изменения
+# <a name="driveitem-checkout"></a>driveItem: Checkout
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Вы можете получить ресурс driveItem для изменения, чтобы другие пользователи не могли редактировать документ, а внесенные вами изменения не отображались, пока документ не будет [записан после изменения](driveitem-checkin.md).
+Извлеките ресурс **driveItem** , чтобы другие пользователи не могли редактировать документ, и не допускают изменения, пока не будет [возвращено](driveitem-checkin.md)задокументированное значение.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -75,7 +74,7 @@ POST /drives/{drive-id}/items/{item-id}/checkout
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении вызова API возвращается отклик `204 No content`.
+В случае успеха вызов API возвращает `204 No content`.
 
 <!-- { "blockType": "response" } -->
 

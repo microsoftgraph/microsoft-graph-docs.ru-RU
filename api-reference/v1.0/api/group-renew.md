@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8e1e9403acf31df4544c5e894895aa17a1e86e2a
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: dc1b4d7b49871d8e178efe10201b8fcbb8e27023
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124128"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229376"
 ---
 # <a name="group-renew"></a>group: renew
 
@@ -27,7 +27,7 @@ ms.locfileid: "43124128"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All или Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-|Для приложений | Group.ReadWrite.All или Directory.ReadWrite.All |
+|Приложение | Group.ReadWrite.All или Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ POST /groups/{id}/renew
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Bearer {token} |
+| Авторизация  | Bearer {токен}. Обязательный. |
 
 
 ## <a name="request-body"></a>Текст запроса

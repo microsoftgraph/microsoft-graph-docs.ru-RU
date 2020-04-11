@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: a28fa0cc9a53b6f9108a587c13efd8ab83a28bbf
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: e78f4226b2b2a2a100c4e3dedfa096d1120c91b8
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42948396"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229488"
 ---
 # <a name="enum-values"></a>Значения перечисления
 
@@ -269,14 +269,14 @@ ms.locfileid: "42948396"
 | NotStarted
 | Работает
 | Completed
-| Не выполнено
+| Failed
 
 
 ### <a name="onenotepatchactiontype-values"></a>значения Оненотепатчактионтипе
 
 | Member
 |:-------------------------
-| Заменить
+| Replace
 | Error
 | Удалить
 | Вставка
@@ -375,7 +375,7 @@ ms.locfileid: "42948396"
 ### <a name="onenotesourceservice-values"></a>значения Оненотесаурцесервице
 | Member
 |:---------------------
-| Неизвестно
+| Unknown
 | OneDrive;
 | онедривефорбусинесс
 | онпремонедривефорбусинесс
@@ -689,11 +689,41 @@ Enum для типов значений реестра, определенных
 |рестид|
 |рестиммутаблинтрид|
 
+### <a name="onlinemeetingprovidertype-values"></a>значения Онлинемитингпровидертипе
+
+|Member|
+|:---|
+|unknown|
+|skypeForBusiness|
+|скипефорконсумер|
+|теамсфорбусинесс|
+
+### <a name="delegatemeetingmessagedeliveryoptions-values"></a>значения Делегатемитингмессажеделиверйоптионс
+
+|Member|
+|:---|
+|сендтоделегатеандинформатионтопринЦипал|
+|сендтоделегатеандпринЦипал|
+|сендтоделегатеонли|
+
+### <a name="calendarroletype-values"></a>значения Календарролетипе
+
+|Member|
+|:---|
+|нет|
+|фрибусиреад|
+|лимитедреад|
+|прочитан|
+|понижен|
+|делегатевисаутпривативентакцесс|
+|делегатевиспривативентакцесс|
+|собственный|
+
 ### <a name="threatassessmentcontenttype-values"></a>значения Среатассессментконтенттипе
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| mail;   | 1,1     | Почтовые угрозы.            |
+| mail   | 1,1     | Почтовые угрозы.            |
 | url    | 2     | Угроза URL-адресов.             |
 | file   | 4     | Угроза файла вложения. |
 
@@ -756,3 +786,4 @@ Enum для типов значений реестра, определенных
 | нотжунк               | 13     | Разрешить из-за отсутствия нежелательной почты.              |
 | почты                  | 14     | Заблокировано из-за нежелательной почты.                |
 | unknownFutureValue    | 15     | Элемент Sentinel.                  |
+

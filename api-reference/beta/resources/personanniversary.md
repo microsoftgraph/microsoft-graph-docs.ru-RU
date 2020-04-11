@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 7dad5536eb78b2d7119ace63eb0f7ce16880e85f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c8ea4e9bf7db268c5ec6bffad1c7d43cbbdd2439
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521927"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43227733"
 ---
 # <a name="personanniversary-resource-type"></a>Тип ресурса Персонанниверсари
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,17 +24,17 @@ ms.locfileid: "42521927"
 
 ## <a name="methods"></a>Методы
 
-| Метод                                                   | Возвращаемый тип                               | Описание                                                    |
-|:---------------------------------------------------------|:------------------------------------------|:---------------------------------------------------------------|
+| Метод                                                   | Возвращаемый тип                               | Описание                                                              |
+|:---------------------------------------------------------|:------------------------------------------|:-------------------------------------------------------------------------|
 | [Получение Персонанниверсари](../api/personanniversary-get.md) | [персонанниверсари](personanniversary.md) | Чтение свойств и связей объекта **персонанниверсари** . |
-| [обновление](../api/personanniversary-update.md).             | [персонанниверсари](personanniversary.md) | Обновление объекта **персонанниверсари** .                               |
-| [удаление](../api/personanniversary-delete.md);             | Нет                                      | Удаление объекта **персонанниверсари** .                               |
+| [Обновление](../api/personanniversary-update.md)             | [персонанниверсари](personanniversary.md) | Обновление объекта **персонанниверсари** .                                   |
+| [Удаление](../api/personanniversary-delete.md)             | Нет                                      | Удаление объекта **персонанниверсари** .                                   |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание                                                      |
 |:-------------|:------------|:-----------------------------------------------------------------|
-|date          |Date         | Содержит дату, связанную с типом юбилея.         |
+|date          |Date         | Содержит дату, связанную с типом юбилея.          |
 |type          |string       | Возможные значения: `birthday`, `wedding`, `unknownFutureValue`.|
 
 ## <a name="relationships"></a>Связи
@@ -43,7 +43,7 @@ ms.locfileid: "42521927"
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
-Ниже указано представление ресурса в формате JSON. 
+Ниже указано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5077d98d1cda1f40f3cd9c3886b607458c700ec3
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: ecdfca25da3f231e5b5603343c70409e97f805e8
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618717"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229649"
 ---
 # <a name="get-user-mailbox-settings"></a>Получение параметров почтового ящика пользователя
 
@@ -22,6 +22,7 @@ ms.locfileid: "42618717"
 
 - [автоматические ответы](../resources/automaticrepliessetting.md) (автоматическое уведомление пользователей при получении их почты);
 - формат даты;
+- делегатемитингмессажеделиверйоптионс
 - [языковой стандарт](../resources/localeinfo.md) (язык и страну или регион);
 - формат времени;
 - часовой пояс;
@@ -59,6 +60,9 @@ GET /users/{id|userPrincipalName}/mailboxSettings/automaticRepliesSetting
 GET /me/mailboxSettings/dateFormat
 GET /users/{id|userPrincipalName}/mailboxSettings/dateFormat
 
+GET /me/mailboxSettings/delegateMeetingMessageDeliveryOptions
+GET /users/{id|userPrincipalName}/mailboxSettings/delegateMeetingMessageDeliveryOptions
+
 GET /me/mailboxSettings/language
 GET /users/{id|userPrincipalName}/mailboxSettings/language
 
@@ -88,6 +92,7 @@ GET /users/{id|userPrincipalName}/mailboxSettings/workingHours
 - Объект [mailboxSettings](../resources/mailboxsettings.md).
 - Объект [automaticRepliesSetting](../resources/automaticrepliessetting.md).
 - Строка (для параметра **dateFormat**).
+- строка (для **делегатемитингмессажеделиверйоптионс**)
 - Объект [localeInfo](../resources/localeinfo.md).
 - Строка (для параметра **timeFormat**).
 - Строка (для параметра **timeZone**).
@@ -156,7 +161,8 @@ Content-type: application/json
         }
     },
     "dateFormat": "MM/dd/yyyy",
-    "timeFormat": "hh:mm tt"
+    "timeFormat": "hh:mm tt",
+    "delegateMeetingMessageDeliveryOptions": "sendToDelegateOnly"
 }
 ```
 

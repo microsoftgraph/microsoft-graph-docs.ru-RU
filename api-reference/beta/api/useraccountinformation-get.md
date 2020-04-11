@@ -1,20 +1,20 @@
 ---
 title: Получение Усераккаунтинформатион
-description: Получение свойств и связей объекта усераккаунтинформатион.
+description: Получение свойств и связей объекта Усераккаунтинформатион.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: Profile
 doc_type: apiPageType
-ms.openlocfilehash: 5d9f276b0fd3677318eb6d9a6701fc77903ba69f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5f56163db9ea7a13cc03d7199f371cdc070891fd
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451576"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43228361"
 ---
 # <a name="get-useraccountinformation"></a>Получение Усераккаунтинформатион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -26,9 +26,9 @@ ms.locfileid: "42451576"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается. |
+| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Для приложений                            | Не поддерживается.                              |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,8 +44,8 @@ GET /user/profile/account
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| Имя      |Описание|
-|:----------|:----------|
+| Имя          |Описание                |
+|:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса

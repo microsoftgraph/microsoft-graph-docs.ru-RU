@@ -1,20 +1,20 @@
 ---
 title: Обновление итемфоне
-description: Обновление свойств объекта итемфоне.
+description: Обновление свойств объекта Итемфоне.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: a7959b4233323b8987a36f67fb3b4eb13a384972
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4b1dd50e9448c4b6aa06b8e29609327678cae228
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457233"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229019"
 ---
 # <a name="update-itemphonenumber"></a>Обновление итемфоненумбер
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "42457233"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /me/profile/phones/{id} 
+PATCH /me/profile/phones/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -94,7 +94,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### <a name="response"></a>Отклик
 

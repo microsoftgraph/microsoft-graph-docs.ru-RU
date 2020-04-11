@@ -5,16 +5,16 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: efd4977872dfefc5a0e5be9b10ad1fa196fa20a4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0ae0568ff5f07eacc4ea0143f79baab55b46e83b
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523074"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229411"
 ---
 # <a name="itemfacet-resource-type"></a>Тип ресурса Итемфацет
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,14 +22,14 @@ ms.locfileid: "42523074"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство             | Тип                            | Описание |
-|:---------------------|:--------------------------------|:------------|
-|алловедаудиенцес      |строка                           | Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.  |
-|createdBy             |[identitySet](identityset.md)    | При первоначальном создании объекта.   |
+| Свойство             | Тип                            | Описание                                                                                                                                                                                    |
+|:---------------------|:--------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|алловедаудиенцес      |string                           | Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.                                                   |
+|createdBy             |[identitySet](identityset.md)    | При первоначальном создании объекта.                                                                                                                                                        |
 |createdDateTime       |DateTimeOffset                   |Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|id                    |String                           | Только для чтения.|
-|выводов             |[инференцедата](inferencedata.md)| Содержит сведения о выводе, если объект определен. |
-|lastModifiedBy        |[identitySet](identityset.md)    | Идентификатор партнера или пользователя, который последним изменил объект. |
+|id                    |String                           | Только для чтения.                                                                                                                                                                                     |
+|выводов             |[инференцедата](inferencedata.md)| Содержит сведения о выводе, если объект определен.                                                                                                                                           |
+|lastModifiedBy        |[identitySet](identityset.md)    | Идентификатор партнера или пользователя, который последним изменил объект.                                                                                                                                |
 |lastModifiedDateTime  |DateTimeOffset                   |Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 
 ## <a name="relationships"></a>Связи

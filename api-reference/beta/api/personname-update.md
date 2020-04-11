@@ -1,20 +1,20 @@
 ---
 title: Обновление personName
-description: Обновление свойств объекта PersonName.
+description: Обновление свойств объекта personName.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: ef65c81830c219d988159753be3528d37609c531
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 26989c4eb5b7af987ab9a50555d3abdf07e3a16a
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455892"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43228697"
 ---
 # <a name="update-personname"></a>Обновление PersonName
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -49,7 +49,7 @@ PATCH /me/profile/names/{id}
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-| Свойство     | Тип                                            | Описание                                                                             | 
+| Свойство     | Тип                                            | Описание                                                                             |
 |:-------------|:------------------------------------------------|:----------------------------------------------------------------------------------------|
 |displayName   |Строка                                           | Предоставляет упорядоченную визуализацию имени и фамилии.                              |
 |первыми         |String                                           | Имя пользователя.                                                                 |
@@ -105,7 +105,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### <a name="response"></a>Отклик
 
