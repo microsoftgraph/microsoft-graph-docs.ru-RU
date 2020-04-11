@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 2bf38135898675d16464b110951bada83f631548
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 0742ac1f35e10cfbed09ca164d4cb2af6a1c8484
+ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215751"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43229369"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -17,6 +17,16 @@ ms.locfileid: "43215751"
 > [!IMPORTANT]
 > Функции в состоянии _предварительной версии_, в том числе API и средства, могут меняться без предварительного уведомления, а некоторые из них, возможно, никогда не будут повышены до общедоступного (GA) состояния. Не используйте функции предварительной версии в рабочих приложениях.
 
+## <a name="april-2020-new-and-generally-available"></a>Апрель 2020 г.: новые и общедоступные возможности
+
+### <a name="calendar"></a>Календарь
+- [Делитесь календарями или делегируйте их](outlook-share-or-delegate-calendar.md) программным способом, соответствующим пользовательскому интерфейсу Outlook. Поддерживается отслеживание разрешений текущего пользователя и состояния общего доступа к календарю, а также следующие возможности:
+  - Для каждого [календаря](/graph/api/resources/calendar?view=graph-rest-1.0) теперь можно управлять [разрешениями](/graph/api/resources/calendarpermission?view=graph-rest-1.0) каждого пользователя, которому предоставлен доступ к календарю. 
+  - Для каждого [почтового ящика](/graph/api/resources/mailboxsettings?view=graph-rest-1.0) теперь можно указать, кто получает сообщения о собраниях и ответы на эти сообщения: делегат, владелец почтового ящика или и тот, и другой. 
+- [Создание или обновление события в виде собрания по сети](outlook-calendar-online-meetings.md):
+  - В каждом **календаре** можно указать разрешенных и используемых по умолчанию поставщиков собраний по сети.
+  - Можно создать или обновить [мероприятие](/graph/api/resources/event?view=graph-rest-1.0), доступное по сети, и предоставить участникам сведения для присоединения к собранию по сети. 
+  - В частности, можно использовать **onlineMeetingProvider** и **onlineMeeting** — это новые свойства **мероприятий**, с помощью которых можно задать или указать Microsoft Teams в качестве поставщика собраний по сети. Это временное решение [известной проблемы](known-issues.md#onlinemeetingurl-property-support-for-microsoft-teams) со свойством **onlineMeetingUrl**.
 
 ## <a name="april-2020-new-in-preview-only"></a>Апрель 2020 г.: новые возможности только в предварительной версии
 
