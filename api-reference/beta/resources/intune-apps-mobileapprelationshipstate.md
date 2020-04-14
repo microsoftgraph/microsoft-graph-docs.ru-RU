@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Мобилеаппрелатионшипстате
 description: Описывает сведения о состоянии установки дочернего приложения в контексте имени участника-пользователя и идентификатора устройства.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 72c1142609c388ba7a246fe716402729a9495400
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 31c96fc196de529a15c5ce69f9587dcff21d0e99
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797778"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462577"
 ---
 # <a name="mobileapprelationshipstate-resource-type"></a>Тип ресурса Мобилеаппрелатионшипстате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -32,7 +34,7 @@ ms.locfileid: "42797778"
 |errorCode|Int32|Код ошибки для установки или удаления сбоев конечного приложения.|
 |таржетластсинкдатетиме|DateTimeOffset|Время последней синхронизации конечного приложения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

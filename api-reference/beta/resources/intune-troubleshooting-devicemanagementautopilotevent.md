@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Девицеманажементаутопилотевент
 description: Представляет событие процесса автопилота.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a70f87915e5ec886d33031f7c19a6417fafa7794
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fd5d9b262587471ee8168a03cab753ad6bcf37a3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42765988"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462327"
 ---
 # <a name="devicemanagementautopilotevent-resource-type"></a>Тип ресурса Девицеманажементаутопилотевент
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -57,7 +59,7 @@ ms.locfileid: "42765988"
 |таржетедполицикаунт|Int32|Количество целевых политик.|
 |енроллментфаилуредетаилс|String|Сведения о сбоях при регистрации.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |полицистатусдетаилс|Коллекция [девицеманажементаутопилотполицистатусдетаил](../resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md)|Сведения о политике и состоянии приложения для этого устройства.|

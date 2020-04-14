@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Апплогуплоадстате
 description: апплогуплоадстатус
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 193344351f5654ea09c0246e06d1d3abf0d54039
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0e3f03f988f03a2e9728d9ef705283cb4d28956b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785135"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43465197"
 ---
 # <a name="apploguploadstate-enum-type"></a>тип перечисления Апплогуплоадстате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Макосвппаппассигнментсеттингс
 description: Содержит свойства, используемые для назначения мобильному приложению Mac VPP группе.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d1b4ecb5f2dbbca6d3f9fe8eebc3771347739e77
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4ddd69a94880c97ad389150eb66a429496d36335
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42769068"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466259"
 ---
 # <a name="macosvppappassignmentsettings-resource-type"></a>Тип ресурса Макосвппаппассигнментсеттингс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -28,7 +30,7 @@ ms.locfileid: "42769068"
 |:---|:---|:---|
 |useDeviceLicensing|Boolean|Указывает, используется ли лицензирование устройств.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

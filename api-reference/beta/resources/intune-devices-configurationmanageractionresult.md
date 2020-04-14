@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Конфигуратионманажерактионресулт
 description: Результат действия Конфигуратионманажер
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: de187585e7e8dd74f4495d7143030e30acf46c4a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5c5450eb4178181d7bbf2c76bd978e91cbdf0cb2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785086"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43465084"
 ---
 # <a name="configurationmanageractionresult-resource-type"></a>Тип ресурса Конфигуратионманажерактионресулт
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -30,10 +32,10 @@ ms.locfileid: "42785086"
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Состояние действия, унаследованного от [deviceActionResult](../resources/intune-devices-deviceactionresult.md). Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Время начала действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
 |lastUpdatedDateTime|DateTimeOffset|Время последнего обновления действия. Наследуется от [deviceActionResult](../resources/intune-devices-deviceactionresult.md).|
-|актионделиверистатус|[конфигуратионманажерактионделиверистатус](../resources/intune-devices-configurationmanageractiondeliverystatus.md)|Состояние действия, которое доставляется на локальный сервер. Возможные значения: `unknown`, `pendingDelivery`, `deliveredToConnectorService`, `failedToDeliverToConnectorService`, `deliveredToOnPremisesServer`.|
+|актионделиверистатус|[configurationManagerActionDeliveryStatus](../resources/intune-devices-configurationmanageractiondeliverystatus.md)|Состояние действия, которое доставляется на локальный сервер. Возможные значения: `unknown`, `pendingDelivery`, `deliveredToConnectorService`, `failedToDeliverToConnectorService`, `deliveredToOnPremisesServer`.|
 |errorCode|Int32|Код ошибки действия Configuration Manager от клиента|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

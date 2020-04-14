@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Усерекспериенцеаналитиксрегрессионсуммари
 description: Сводка по регрессии аналитики взаимодействия с пользователем.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3fb7dace9f691808d4ec1b54211cb633ed4e93dd
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 68cef211ab0f37d2220a38ff3052583ccf84478e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783762"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464965"
 ---
 # <a name="userexperienceanalyticsregressionsummary-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксрегрессионсуммари
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -32,7 +34,7 @@ ms.locfileid: "42783762"
 |:---|:---|:---|
 |id|String|Уникальный идентификатор сводки по регрессии аналитики взаимодействия с пользователем.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |моделрегрессион|Коллекция [усерекспериенцеаналитиксметрик](../resources/intune-devices-userexperienceanalyticsmetric.md)|Значения метрик для регрессии модели аналитики взаимодействия с пользователем.|

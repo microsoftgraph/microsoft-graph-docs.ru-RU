@@ -2,17 +2,19 @@
 title: Тип ресурса Оффицеусерчеккинсуммари
 description: Сущность, описывающая статистику по возврату клиента.
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9ef202194c8817e500d27a96ae3dbf4e5e1a8359
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8564f7d0d2fb06218b141b7e9369f2096bdec982
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797299"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462521"
 ---
 # <a name="officeusercheckinsummary-resource-type"></a>Тип ресурса Оффицеусерчеккинсуммари
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,7 +28,7 @@ ms.locfileid: "42797299"
 |сукцеедедусеркаунт|Int32|Общее количество успешных проверок пользователей за последние 3 месяца.|
 |failedUserCount|Int32|Общее число неудачных проверок пользователей за последние 3 месяца.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

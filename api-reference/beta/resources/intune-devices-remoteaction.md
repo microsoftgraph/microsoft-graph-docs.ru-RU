@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Ремотеактион
 description: Поддерживаемые удаленные действия Intune.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 914d2b7717be151adeb43c9585af39ab3383482c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 33978f4a8d073876621fcc4cb2c0f4e0bdc065e8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783909"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466765"
 ---
 # <a name="remoteaction-enum-type"></a>тип перечисления Ремотеактион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

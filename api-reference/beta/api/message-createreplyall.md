@@ -2,19 +2,19 @@
 title: 'message: createReplyAll'
 description: 'Создание черновика сообщения "ответить всем" для включения комментария или обновления любых свойств сообщения '
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fc4e92aa39ba93bdba6de7412e5a3a94156b7a3e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6280c3f8272ef3150f0f44836fafda8e560189ac
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456959"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466459"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

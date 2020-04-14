@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Конфигуратионманажерклиентстате
 description: Состояние клиента Configuration Manager
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 74ef4d21529420c4d5bc57bbea5b47ab1bc2baa2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 364a79c23c5f7223accf9828089a9ffd7c0de30a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785051"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43465017"
 ---
 # <a name="configurationmanagerclientstate-enum-type"></a>тип перечисления Конфигуратионманажерклиентстате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

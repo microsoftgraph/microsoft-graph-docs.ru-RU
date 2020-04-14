@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Девицетипес
 description: Тип устройства.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9e5f1b21ae78a30a77c60cd16917195220d598e1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1e821245cca794f0f0f2cf9aad3eb6d38d95e3c3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791984"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469196"
 ---
 # <a name="devicetypes-enum-type"></a>тип перечисления Девицетипес
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

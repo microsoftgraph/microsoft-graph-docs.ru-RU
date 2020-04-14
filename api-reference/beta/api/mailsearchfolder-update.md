@@ -2,19 +2,19 @@
 title: Обновление Маилсеарчфолдер
 description: Обновление свойств, доступных для записи, объекта Маилсеарчфолдер.
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 08a4ad5a7a846689e70f2da4bdd50f8d16218f85
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0f99c4125cd64f02421df01692b1dc19ee7c6605
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456994"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464248"
 ---
 # <a name="update-mailsearchfolder"></a>Обновление Маилсеарчфолдер
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +48,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 | displayName | String | Отображаемое имя [mailFolder](../resources/mailfolder.md).|
-| инклуденестедфолдерс | Логический | Способ обхода иерархии папок почтовых ящиков. `true`означает, что следует выполнить глубокий поиск, а `false` это означает, что вместо этого следует выполнить неглубокий Поиск. |
+| инклуденестедфолдерс | Boolean | Способ обхода иерархии папок почтовых ящиков. `true`означает, что следует выполнить глубокий поиск, а `false` это означает, что вместо этого следует выполнить неглубокий Поиск. |
 | саурцефолдеридс | Коллекция String | Папки почтовых ящиков, которые должны быть mined. |
 | филтеркуери | String | Запрос OData для фильтрации сообщений. |
 

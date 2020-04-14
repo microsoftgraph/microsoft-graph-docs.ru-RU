@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса iPv4Range
 description: Определение диапазона IPv4.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1bed3b43af7203a6c1ee081156708679337e94e0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3615c08c99d9d8f9220abd96f0ef5aff90b4a451
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42769285"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463332"
 ---
 # <a name="ipv4range-resource-type"></a>Тип ресурса iPv4Range
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -29,7 +31,7 @@ ms.locfileid: "42769285"
 |lowerAddress|String|Адрес нижнего уровня.|
 |upperAddress|String|Верхний адрес.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

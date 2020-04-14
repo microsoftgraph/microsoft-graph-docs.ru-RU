@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Девицеманажементсубскриптионстате
 description: Состояние подписки на управление мобильными устройствами для клиента.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 15b0e4a47db81ae8f66f6991c38441f1c2f3a17a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3068047a586ea6a6ea78bba59076a61d9458ff2c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42784228"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460955"
 ---
 # <a name="devicemanagementsubscriptionstate-enum-type"></a>тип перечисления Девицеманажементсубскриптионстате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,7 +28,7 @@ ms.locfileid: "42784228"
 |закончен|нуль|Pending|
 |ASP|1,1|Активное|
 |warning|2|Предупреждение|
-|активирован|4|Отключено|
+|отключено|4|Отключено|
 |deleted|4 |Deleted|
 |заблокированных|5 |Заблокировано|
 |Блокировка|8 |Блокировка|

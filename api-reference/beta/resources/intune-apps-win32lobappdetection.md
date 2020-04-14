@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса win32LobAppDetection
 description: Базовый класс для обнаружения приложения Win32
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 18f851cb510b4e4497d8d26518492a0aefd54b76
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f49518d016c6b4b1ba82e87f741c0fc7d9406b71
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797670"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460186"
 ---
 # <a name="win32lobappdetection-resource-type"></a>Тип ресурса win32LobAppDetection
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -24,7 +26,7 @@ ms.locfileid: "42797670"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Андроидфорворксинкстатус
 description: Состояние синхронизации клиента с помощью API Google EMM
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: fb99cda1a32592f9f6fb2ed854004efdc28bef03
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0eef101b3d151bda19b2934b2fd06461068f3c6e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799377"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459195"
 ---
 # <a name="androidforworksyncstatus-enum-type"></a>тип перечисления Андроидфорворксинкстатус
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -28,7 +30,7 @@ ms.locfileid: "42799377"
 |андроидфорворкапиеррор|2|Пока не задокументировано.|
 |манажементсервицееррор|4|Пока не задокументировано.|
 |ункновнеррор|4 |Пока не задокументировано.|
-|none|5 |Пока не задокументировано.|
+|нет|5 |Пока не задокументировано.|
 
 
 

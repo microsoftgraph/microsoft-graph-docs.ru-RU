@@ -1,18 +1,20 @@
 ---
 title: тип перечисления win32LobAppDeliveryOptimizationPriority
 description: Содержит значение приоритета оптимизации доставки.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5b87634f4a2792deafe85ed30fbbb972fee54629
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1daf05249bfbd223c1038b4f145ec3caa0ec695b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797677"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460209"
 ---
 # <a name="win32lobappdeliveryoptimizationpriority-enum-type"></a>тип перечисления win32LobAppDeliveryOptimizationPriority
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

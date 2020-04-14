@@ -4,13 +4,13 @@ description: Файл (например, текстовый файл или до
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
-author: angelgolfer-ms
-ms.openlocfilehash: e14b98c5ee3302d5b19bc7ad92187112b6d8c80b
-ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
+author: svpsiva
+ms.openlocfilehash: 9eb0d5e3a40c27e4f7b7b6662d7ae0b8e3bcef93
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42926801"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460233"
 ---
 # <a name="fileattachment-resource-type"></a>Тип ресурса fileAttachment
 
@@ -28,14 +28,14 @@ ms.locfileid: "42926801"
 Производный от типа [attachment](attachment.md).
 
 > [!NOTE]
-> Перед назначением файла в **contentBytes**необходимо закодировать его в кодировке Base64.
+> Не забудьте закодировать содержимое файла в base64 перед назначением его **contentBytes**.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
 |[Получение](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Чтение свойств, связей или необработанного содержимого объекта fileAttachment.|
-|[удаление](../api/attachment-delete.md); | Нет |Удаление объекта fileAttachment. |
+|[Удаление](../api/attachment-delete.md) | Нет |Удаление объекта fileAttachment. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|

@@ -2,19 +2,19 @@
 title: Тип ресурса инициатора
 description: Указывает, кто инициировал событие подготовки.
 localization_priority: Normal
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 909849775e5bf35c9a29902efbbc3975177956d1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6d279ce00855cb8125085e48bddf63f1b8f0e5e2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496014"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461729"
 ---
 # <a name="initiator-resource-type"></a>Тип ресурса инициатора
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

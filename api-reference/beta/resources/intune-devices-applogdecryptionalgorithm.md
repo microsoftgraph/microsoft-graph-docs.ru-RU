@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Апплогдекриптионалгорисм
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 708b9e8c6b85af653949e037e43978c7a9653d6d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5e6cfe2bc623b539a1cb3917a5bddb3dbb78c57d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785219"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43465212"
 ---
 # <a name="applogdecryptionalgorithm-enum-type"></a>тип перечисления Апплогдекриптионалгорисм
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

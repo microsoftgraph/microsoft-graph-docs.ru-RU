@@ -2,19 +2,19 @@
 title: Тип ресурса Сигнинфрекуенцисессионконтрол
 description: Управление сеансами для применения частоты входа.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e13a5d46b6dfcd24b24f93e9e9870fbe89f2ee84
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 282c96bb9030f066aadbf0515ec0466da62c502f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520592"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466041"
 ---
 # <a name="signinfrequencysessioncontrol-resource-type"></a>Тип ресурса Сигнинфрекуенцисессионконтрол
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "42520592"
 |type          |String       | Возможные значения: `days`, `hours`.|
 |value         |Int32        | Количество `days` или `hours`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

@@ -4,12 +4,12 @@ description: Список API Microsoft Graph для конечных точек
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 40229752dacbdd18213653966ca40ccc00587c57
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3b97f69f16fef9b39213b30942049300450a8155
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797250"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463517"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Настройка устройств в Microsoft Intune
 
@@ -36,6 +36,7 @@ ms.locfileid: "42797250"
 - [База профиля сертификата владельца устройства Android](intune-deviceconfig-androiddeviceownercertificateprofilebase.md)
 - [Политика соответствия требованиям владельца устройства Android](intune-deviceconfig-androiddeviceownercompliancepolicy.md)
 - [Тип политики разрешений приложения по умолчанию для владельца устройства с Android](intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)
+- [Конфигурация проверки подлинности производных учетных данных владельца устройств Android](intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md)
 - [Конфигурация Wi/Fi для владельца устройств Android Enterprise](intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md)
 - [Общая конфигурация устройств для владельца устройства с Android](intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)
 - [Глобальный прокси-сервер владельца устройства Android](intune-deviceconfig-androiddeviceownerglobalproxy.md)
@@ -107,7 +108,9 @@ ms.locfileid: "42797250"
 - [Элемент списка приложений](intune-deviceconfig-applistitem.md)
 - [Тип списка приложений](intune-deviceconfig-applisttype.md)
 - [Тип управления для приложения AppLocker](intune-deviceconfig-applockerapplicationcontroltype.md)
+- [Элемент списка приложений Apple](intune-deviceconfig-appleapplistitem.md)
 - [База конфигураций функций для устройств Apple](intune-deviceconfig-appledevicefeaturesconfigurationbase.md)
+- [База конфигурации для ускоренного возврата Apple](intune-deviceconfig-appleexpeditedcheckinconfigurationbase.md)
 - [Формат имени субъекта Apple](intune-deviceconfig-applesubjectnameformat.md)
 - [Конфигурация "VPN VPN" всегда включена](intune-deviceconfig-applevpnalwaysonconfiguration.md)
 - [Конфигурация VPN для Apple](intune-deviceconfig-applevpnconfiguration.md)
@@ -241,6 +244,9 @@ ms.locfileid: "42797250"
 - [Тип класса определение политики группы](intune-grouppolicy-grouppolicydefinitionclasstype.md)
 - [Файл определения политики группы](intune-grouppolicy-grouppolicydefinitionfile.md)
 - [Значение определения политики группы](intune-grouppolicy-grouppolicydefinitionvalue.md)
+- [Операция групповой политики](intune-grouppolicy-grouppolicyoperation.md)
+- [Состояние операции групповой политики](intune-grouppolicy-grouppolicyoperationstatus.md)
+- [Тип операции групповой политики](intune-grouppolicy-grouppolicyoperationtype.md)
 - [Представление групповой политики](intune-grouppolicy-grouppolicypresentation.md)
 - [Флажок представление групповой политики](intune-grouppolicy-grouppolicypresentationcheckbox.md)
 - [Поле со списком для представления групповой политики](intune-grouppolicy-grouppolicypresentationcombobox.md)
@@ -262,6 +268,9 @@ ms.locfileid: "42797250"
 - [Тип групповой политики](intune-grouppolicy-grouppolicytype.md)
 - [Категория, отправленная групповой политикой](intune-grouppolicy-grouppolicyuploadedcategory.md)
 - [Определение загруженной групповой политики](intune-grouppolicy-grouppolicyuploadeddefinition.md)
+- [Файл определения загруженной групповой политики](intune-grouppolicy-grouppolicyuploadeddefinitionfile.md)
+- [Групповая политика загрузила состояние файла определения](intune-grouppolicy-grouppolicyuploadeddefinitionfilestatus.md)
+- [Языковой файл, отправленный в групповой политике](intune-grouppolicy-grouppolicyuploadedlanguagefile.md)
 - [Групповая политика, отправленная в презентацию](intune-grouppolicy-grouppolicyuploadedpresentation.md)
 - [Хэш-алгоритмы](intune-deviceconfig-hashalgorithms.md)
 - [Параметр доступа к рукописному вводу](intune-deviceconfig-inkaccesssetting.md)
@@ -282,6 +291,7 @@ ms.locfileid: "42797250"
 - [Конфигурация устройств с iOS EDU](intune-deviceconfig-iosedudeviceconfiguration.md)
 - [Конфигурация устройств с iOS для образования](intune-deviceconfig-ioseducationdeviceconfiguration.md)
 - [Конфигурация Wi-Fi для iOS на корпоративных устройствах](intune-deviceconfig-iosenterprisewificonfiguration.md)
+- [Конфигурация ускоренной записи iOS](intune-deviceconfig-iosexpeditedcheckinconfiguration.md)
 - [Общая конфигурация устройства с iOS](intune-deviceconfig-iosgeneraldeviceconfiguration.md)
 - [Приложение начального экрана iOS](intune-deviceconfig-ioshomescreenapp.md)
 - [Папка начального экрана iOS](intune-deviceconfig-ioshomescreenfolder.md)

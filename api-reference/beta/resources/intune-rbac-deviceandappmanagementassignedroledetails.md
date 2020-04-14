@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Девицеандаппманажементассигнедроледетаилс
 description: Набор определений ролей и назначений ролей, назначенных пользователю.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f1590470f436dac6572ebf9d0430d144060f9b7f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 061929eadd3b636ab8fcc4d89a45489bacfa9aae
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42773947"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467698"
 ---
 # <a name="deviceandappmanagementassignedroledetails-resource-type"></a>Тип ресурса Девицеандаппманажементассигнедроледетаилс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,7 +28,7 @@ ms.locfileid: "42773947"
 |роледефинитионидс|Коллекция String|Идентификаторы определений ролей для определений ролей частности, назначенных пользователю.|
 |ролеассигнментидс|Коллекция String|Идентификаторы назначения ролей для назначений ролей частности, назначенных пользователю.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

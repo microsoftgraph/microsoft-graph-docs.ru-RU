@@ -2,19 +2,19 @@
 title: Тип ресурса Аттачментитем
 description: Представляет атрибуты элемента, который необходимо присоединить.
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: fa739af74f00142405ecb536346639d3a2ca9f60
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7402a22665fec8716156395f4a783c804a42febb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508159"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43461025"
 ---
 # <a name="attachmentitem-resource-type"></a>Тип ресурса Аттачментитем
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ ms.locfileid: "42508159"
 |attachmentType|String| Тип вложения. Возможные значения: `file`, `item`, `reference`. Обязательное.|
 |contentType|String|Характер данных во вложении. Необязательное свойство.|
 |isInline|Boolean|Значение `true`, если вложение является встроенным. В противном случае — значение `false`. Необязательное свойство.|
-|name|String|Отображаемое имя вложения. Это может быть строка с описанием и не обязательно должно быть фактическим именем файла. Обязательное.|
+|name|String|Отображаемое имя вложения. Это может быть строка с описанием и не обязательно должно быть фактическим именем файла. Обязательно.|
 |size|Int64|Размер вложения в байтах. Обязательный элемент.|
 
 ## <a name="json-representation"></a>Представление JSON

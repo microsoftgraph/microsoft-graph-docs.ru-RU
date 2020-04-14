@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Девицеманажементаппликабилитирулетипе
 description: Поддерживаемые типы правил применимости для конфигурации устройств
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 35014436834d55ec8479becd7fec05570ca6efce
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 816b9feb63200a4fde8670b365bd816dd638ae52
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42792026"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469262"
 ---
 # <a name="devicemanagementapplicabilityruletype-enum-type"></a>тип перечисления Девицеманажементаппликабилитирулетипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -2,19 +2,19 @@
 title: Тип ресурса Модифиедпроперти
 description: Описывает изменения, выполненные в целевой системе.
 localization_priority: Normal
-author: davidmu1
+author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5ae34932d2c08d472f27167c02993b2ef916faae
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 78b2447c1bdeab986382ec2d7c5d20787c1f15e2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522626"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459799"
 ---
 # <a name="modifiedproperty-resource-type"></a>Тип ресурса Модифиедпроперти
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

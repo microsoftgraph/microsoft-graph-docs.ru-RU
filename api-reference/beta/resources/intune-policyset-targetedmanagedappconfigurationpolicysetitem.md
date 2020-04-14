@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Таржетедманажедаппконфигуратионполицисетитем
 description: Класс, содержащий свойства, которые используются для целевой Полицисетитем конфигурации управляемого приложения.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: dd76257c9c9eba8390d417798ca528cd12aa42da
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bc75e0bd3f32bb8a08fe5b8c214909bf9df11da0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42775039"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463354"
 ---
 # <a name="targetedmanagedappconfigurationpolicysetitem-resource-type"></a>Тип ресурса Таржетедманажедаппконфигуратионполицисетитем
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -45,7 +47,7 @@ ms.locfileid: "42775039"
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Код ошибки (при возникновении ошибки). Наследуется от [полицисетитем](../resources/intune-policyset-policysetitem.md). Возможные значения: `noError`, `unauthorized`, `notFound`, `deleted`.|
 |гуидеддеплойменттагс|Коллекция String|Теги управляемого развертывания, унаследованные от [полицисетитем](../resources/intune-policyset-policysetitem.md)|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

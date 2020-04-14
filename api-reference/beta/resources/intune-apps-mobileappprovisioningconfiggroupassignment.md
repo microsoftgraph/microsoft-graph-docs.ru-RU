@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса К mobileappprovisioningconfiggroupassignment.
 description: Содержит свойства, используемые для назначения конфигурации подготовки приложений группе.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 67939ed672b2ead92494e63dae0ca44e6cdc7719
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e316cc0d6cc366de539e5139b0b2231bc8e5ddd6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797799"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463540"
 ---
 # <a name="mobileappprovisioningconfiggroupassignment-resource-type"></a>Тип ресурса К mobileappprovisioningconfiggroupassignment.
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -35,7 +37,7 @@ ms.locfileid: "42797799"
 |таржетграупид|String|Идентификатор группы AAD, в которой нацелена конфигурация подготовки приложений.|
 |id|String|Ключ объекта.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

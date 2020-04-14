@@ -2,17 +2,19 @@
 title: Тип ресурса report
 description: Описывает ресурс отчета API Microsoft Graph для Intune, который поддерживает несколько рабочих процессов.
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d321b5a2dadc4a459194a24224805f7443592532
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1e521979060d2892d8a4e135ca52a94fb195d527
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42768011"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466072"
 ---
 # <a name="report-resource-type"></a>Тип ресурса report
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -28,7 +30,7 @@ ms.locfileid: "42768011"
 |:---|:---|:---|
 |содержимое|Поток|Содержимое отчета; сведения зависят от типа отчета.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

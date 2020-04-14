@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Вифипроксисеттинг
 description: Параметры прокси-сервера Wi-Fi.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0382075d68b3b9ca4ef6ffb72ed1e83ad0ac6aba
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: cdbae03ce00e2effcb803540f534724f3a54ad3e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787245"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466372"
 ---
 # <a name="wifiproxysetting-enum-type"></a>тип перечисления Вифипроксисеттинг
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -23,7 +25,7 @@ ms.locfileid: "42787245"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Нет прокси-сервера.|
+|нет|нуль|Нет прокси-сервера.|
 |Вручную|1,1|Параметры прокси-сервера вручную через адрес и порт.|
 |Автоматически|2|Параметры автоматического прокси-сервера с помощью URL-адреса.|
 

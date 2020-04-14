@@ -1,20 +1,20 @@
 ---
 title: 'message: createReply'
 description: 'Создание черновика ответного сообщения для включения комментария или обновления любого свойства сообщения '
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6a5d9923b087310a3dd89792516593c51166da71
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e835188df2c88caca5def9957f42d50694496e29
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456956"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467055"
 ---
 # <a name="message-createreply"></a>message: createReply
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

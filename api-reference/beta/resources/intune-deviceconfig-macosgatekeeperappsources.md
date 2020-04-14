@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Макосгатекипераппсаурцес
 description: Параметры источника приложения для привратника macOS.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4cd02a8d4844b5a7ac0db799841fe03f528e062e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 53e98d727f2c90d830b66106d3376564e6c89116
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42789459"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464137"
 ---
 # <a name="macosgatekeeperappsources-enum-type"></a>тип перечисления Макосгатекипераппсаурцес
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

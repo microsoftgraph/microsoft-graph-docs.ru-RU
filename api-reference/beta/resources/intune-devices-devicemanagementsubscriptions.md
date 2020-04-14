@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Девицеманажементсубскриптионс
 description: Подписки управления мобильными устройствами клиентов.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 94d6c29a2c23d364681abaf4cd42f4330f5389f6
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f1368780cf6e2cca446c65e4b701886b33a2c061
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42784271"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459850"
 ---
 # <a name="devicemanagementsubscriptions-enum-type"></a>тип перечисления Девицеманажементсубскриптионс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -23,7 +25,7 @@ ms.locfileid: "42784271"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Отсутствует|
+|нет|нуль|Отсутствует|
 |корпоративного|1,1|Подписка на Microsoft Intune|
 |Office365|2|Подписка на Office365|
 |интунепремиум|4 |Подписка на Microsoft Intune Premium|

@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Виндовскиосксинглеувпапп
 description: Класс, используемый для определения сведений о приложении UWP для конфигурации киоска
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1ae650af23985c26b00f99513ecfa4b3f691e14b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 168317587a7e20fabd3754a96c3b65ebefef963c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786357"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464068"
 ---
 # <a name="windowskiosksingleuwpapp-resource-type"></a>Тип ресурса Виндовскиосксинглеувпапп
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

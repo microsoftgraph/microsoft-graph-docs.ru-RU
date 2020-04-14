@@ -1,20 +1,20 @@
 ---
 title: Обновление mailFolder
 description: Обновление свойств объекта mailFolder.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8b7119e010f2fe16a60c848adb8c988c2444e8fd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4e6349c66c69969d6496103b525b99912564246c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457008"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467083"
 ---
 # <a name="update-mailfolder"></a>Обновление mailFolder
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

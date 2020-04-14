@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса orgContact
-description: Ниже представлено описание ресурса в формате JSON.
+description: Ниже показано представление JSON ресурса.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c160c3e65c6905eec15bccccb10cabb086b57e39
-ms.sourcegitcommit: 2ac179fb774a15c9e9c01502e59c76efb57803a6
+ms.openlocfilehash: c8d6c1b675b5638ba58e7845f98ef9f66a314c79
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "42986119"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463318"
 ---
 # <a name="orgcontact-resource-type"></a>Тип ресурса orgContact
 
@@ -31,8 +31,8 @@ ms.locfileid: "42986119"
 |[Получение orgContact](../api/orgcontact-get.md) | [orgContact](orgcontact.md) |Чтение свойств и связей объекта orgContact.|
 |[Получение имени руководителя](../api/orgcontact-get-manager.md) |[directoryObject](directoryobject.md)| Получение руководителя контакта.|
 |[Список directReports](../api/orgcontact-list-directreports.md) |Коллекция [directoryObject](directoryobject.md)| Перечислите непосредственные отчеты контакта.|
-|[Список memberOf](../api/orgcontact-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Получение коллекции memberOf Objects.|
-|[удаление](../api/orgcontact-delete.md); | Нет |Удаление объекта orgContact. |
+|[Перечисление memberOf](../api/orgcontact-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Получение коллекции memberOf Objects.|
+|[Удаление](../api/orgcontact-delete.md) | Нет |Удаление объекта orgContact. |
 |[checkMemberGroups](../api/orgcontact-checkmembergroups.md)|Коллекция String| Проверьте принадлежность к группе. |
 |[getMemberGroups](../api/orgcontact-getmembergroups.md)|Коллекция String| Возврат всех групп, членом которых является указанный контакт. |
 |[getMemberObjects](../api/orgcontact-getmemberobjects.md)|Коллекция String| Возвращает список Директорйобжектс, членом которых является контакт. |

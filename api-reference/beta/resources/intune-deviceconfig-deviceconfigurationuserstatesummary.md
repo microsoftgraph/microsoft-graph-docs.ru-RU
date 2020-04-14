@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Девицеконфигуратионусерстатесуммари
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b9f97e620130fbb3dabfae4b8b8dc61bd1760343
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 14986bbfa19e8ccc4ae8853ac1c95233ba528727
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42793221"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469323"
 ---
 # <a name="deviceconfigurationuserstatesummary-resource-type"></a>Тип ресурса Девицеконфигуратионусерстатесуммари
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -38,7 +40,7 @@ ms.locfileid: "42793221"
 |errorUserCount|Int32|Количество пользователей с ошибками|
 |conflictUserCount|Int32|Количество конфликтующих пользователей|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

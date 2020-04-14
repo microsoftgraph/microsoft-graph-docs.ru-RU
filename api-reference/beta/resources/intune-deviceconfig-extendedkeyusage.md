@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Екстендедкэйусаже
 description: Настраиваемое определение расширенного использования ключа
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 19cf790f692d624d926485fdc26feed1f69c73b7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c4fe1818aca19053242882e45edd1da5bbc544e8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791774"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460037"
 ---
 # <a name="extendedkeyusage-resource-type"></a>Тип ресурса Екстендедкэйусаже
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,7 +28,7 @@ ms.locfileid: "42791774"
 |name|String|Имя расширенного использования ключа|
 |обжектидентифиер|String|Идентификатор объекта расширенного использования ключа|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

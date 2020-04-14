@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Виндовскиоскаутологон
 description: Класс, используемый для определения конфигурации киоска с автовходом
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7d417dacb5a45a1fb864daeb6f962bd816a4afa4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 66693407bb1498e0e4419f2afbdb699889e4220a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786427"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466810"
 ---
 # <a name="windowskioskautologon-resource-type"></a>Тип ресурса Виндовскиоскаутологон
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42786427"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

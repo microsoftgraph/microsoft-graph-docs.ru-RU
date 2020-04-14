@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Енкриптионрепортполицидетаилс
 description: Сведения о политике для отчета о шифровании
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bd802c6a13789f9179d4f2940bc78a80f1ff15d0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c8a92037429908af4ff53ea45b9b5f9b65a5a436
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791788"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460067"
 ---
 # <a name="encryptionreportpolicydetails-resource-type"></a>Тип ресурса Енкриптионрепортполицидетаилс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,7 +28,7 @@ ms.locfileid: "42791788"
 |полициид|String|Идентификатор политики для отчета о шифровании|
 |policyName|String|Имя политики для отчета о шифровании|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

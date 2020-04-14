@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Граупполицитипе
 description: Тип файла или определения групповой политики.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c7eb2e11b080daf29bdc9cedf985e42ccb639335
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1a8024741e2ea9f4a2af774598bed7d2c214af29
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42782792"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459829"
 ---
 # <a name="grouppolicytype-enum-type"></a>тип перечисления Граупполицитипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

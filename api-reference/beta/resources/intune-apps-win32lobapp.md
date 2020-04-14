@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса win32LobApp
 description: Содержит свойства и наследуемые свойства для приложений Win32.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 16a0fa913ae01130a02414a73ae7796b1da9175d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 90759c222b4e4941c07a54553948da4b74d9c1cb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797684"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460216"
 ---
 # <a name="win32lobapp-resource-type"></a>Тип ресурса win32LobApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -72,7 +74,7 @@ ms.locfileid: "42797684"
 |сетупфилепас|String|Относительный путь к файлу установки в зашифрованном пакете Win32LobApp.|
 |installLanguage|String|Н/Д|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |categories|Коллекция [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|

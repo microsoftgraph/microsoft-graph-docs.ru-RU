@@ -2,19 +2,19 @@
 title: Тип ресурса Кондитионалакцессусерс
 description: Представляет пользователей, группы и роли, включенные в область политики и исключенные из нее.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 269fe0552c69773fa62b97cf9803b3e0127f655b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 99fa682b787a164896cb638060798cddee07b255
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507508"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467938"
 ---
 # <a name="conditionalaccessusers-resource-type"></a>Тип ресурса Кондитионалакцессусерс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "42507508"
 | инклудеролес | Коллекция String | Идентификаторы ролей в области применения политики, если они явно `All`не исключены, или. |
 | ексклудеролес | Коллекция String | Идентификаторы ролей, исключенные из области применения политики. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

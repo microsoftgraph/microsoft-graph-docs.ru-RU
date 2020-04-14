@@ -2,19 +2,19 @@
 title: Список Таскфолдерс
 description: Получение всех папок задач Outlook в почтовом ящике пользователя.
 localization_priority: Normal
-author: angelgolfer-ms
+author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c671ffccbf6631a03fe3867ccecc4e54e91f8a3a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7ef91997e37e356de5b6bad59226b6d316c95c87
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456084"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43467997"
 ---
 # <a name="list-taskfolders"></a>Список Таскфолдерс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -42,7 +42,7 @@ GET /users/{id|userPrincipalName}/outlook/taskFolders
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ

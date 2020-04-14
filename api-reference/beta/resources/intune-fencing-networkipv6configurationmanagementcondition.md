@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса networkIPv6ConfigurationManagementCondition
 description: Можно определить условия управления на основе конфигурации IPv6, которые будут вызываться, когда устройство обнаружит определенные параметры IP-сети. Условие управления IP-конфигурацией считается ИСТИНным, только если сетевое подключение активно. Адреса DHCP-серверов IPv6 могут быть несогласованными. Это связано с тем, что Windows (цирка Редстоне) не предоставляет эту информацию в службу естественной проверки подлинности.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ca8c907d09a742b237483144fa849da27e4f9ae8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 49687e09b21c4a7d7a816b652ff5338347a3c2af
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783209"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463383"
 ---
 # <a name="networkipv6configurationmanagementcondition-resource-type"></a>Тип ресурса networkIPv6ConfigurationManagementCondition
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -49,7 +51,7 @@ ms.locfileid: "42783209"
 |ipV6DNSServerList|Коллекция String|DNS-серверы IPv6, настроенные для адаптера.|
 |днссуффикслист|Коллекция String|Допустимые DNS-суффиксы для текущей сети. Например, seattle.contoso.com|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |манажементкондитионстатементс|Коллекция [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md)|Операторы условия управления, связанные с условием управления. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|

@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Пфксусерцертификате
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 46e46a28a558cfe98decf66d90c3a5ed8c2fac3c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 21db7de4cb249cb0a263ee2ed98303b7708b32c5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42774682"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462410"
 ---
 # <a name="pfxusercertificate-resource-type"></a>Тип ресурса Пфксусерцертификате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -50,7 +52,7 @@ ms.locfileid: "42774682"
 |lastModifiedTime|DateTimeOffset|Пока не задокументировано.|
 |eTag|String|Пока не задокументировано.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

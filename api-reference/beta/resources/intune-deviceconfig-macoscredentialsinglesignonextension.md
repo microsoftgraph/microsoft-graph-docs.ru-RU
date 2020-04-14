@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Макоскредентиалсинглесигнонекстенсион
 description: Представляет профиль расширения единого входа с типом учетных данных для устройств macOS.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ec152f59cba88c2bb3e02e5fc90aba2a8c6f94a2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 00466b80c1ab94f5984641b34a0a00f97e764773
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790302"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464188"
 ---
 # <a name="macoscredentialsinglesignonextension-resource-type"></a>Тип ресурса Макоскредентиалсинглесигнонекстенсион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -32,7 +34,7 @@ ms.locfileid: "42790302"
 |область|String|Получает или задает имя области для этого профиля, заданное с учетом регистра.|
 |построения|Коллекция [кэйтипедвалуепаир](../resources/intune-deviceconfig-keytypedvaluepair.md)|Получает или задает список типизированных пар "ключ — значение", используемых для настройки профилей типа учетных данных. Эта коллекция может содержать не более 500 элементов.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Виндовсаутопилотдеплойментпрофилеассигнмент
 description: Назначение профиля развертывания Windows для автопилотной группы группе AAD.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b11c464e3a1e69b7580f2458277abe77d593af75
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: eb1c9cf2f69182c13121907696547464150ec7e6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783398"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460680"
 ---
 # <a name="windowsautopilotdeploymentprofileassignment-resource-type"></a>Тип ресурса Виндовсаутопилотдеплойментпрофилеассигнмент
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -37,7 +39,7 @@ ms.locfileid: "42783398"
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Тип ресурса, используемого для развертывания в группу, Direct или в упаковке/набор политик. Возможные значения: `direct`, `policySets`.|
 |Идентификатор|String|Идентификатор ресурса, используемого для развертывания в группе|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Outofboxexperiencesettings.
 description: Настройка "нет на месте"
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6ff9a13168287cbbff1bbe34346f684d65a9609c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 82bfd9a7126298958d35ad121b22115bb1f71241
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783412"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460709"
 ---
 # <a name="outofboxexperiencesettings-resource-type"></a>Тип ресурса Outofboxexperiencesettings.
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -23,14 +25,14 @@ ms.locfileid: "42783412"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|хидепривацисеттингс|Логический|Отображение или скрытие параметров конфиденциальности для пользователя|
-|хидиула|Логический|Отображение или скрытие лицензионного соглашения для пользователя|
+|хидепривацисеттингс|Boolean|Отображение или скрытие параметров конфиденциальности для пользователя|
+|хидиула|Boolean|Отображение или скрытие лицензионного соглашения для пользователя|
 |userType|[виндовсусертипе](../resources/intune-enrollment-windowsusertype.md)|Тип пользователя. Возможные значения: `administrator`, `standard`.|
 |deviceUsageType|[windowsDeviceUsageType](../resources/intune-enrollment-windowsdeviceusagetype.md).|Тип проверки подлинности присоединения AAD. Возможные значения: `singleUser`, `shared`.|
-|скипкэйбоардселектионпаже|Логический|Если задано, пропускать страницу "Выбор клавиатуры", если задан язык и регион|
-|хидискапелинк|Логический|Если задано значение true, пользователь не сможет начать с другой учетной записи, при входе в компанию|
+|скипкэйбоардселектионпаже|Boolean|Если задано, пропускать страницу "Выбор клавиатуры", если задан язык и регион|
+|хидискапелинк|Boolean|Если задано значение true, пользователь не сможет начать с другой учетной записи, при входе в компанию|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

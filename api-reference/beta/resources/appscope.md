@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Аппскопе
-description: 'Область назначения роли определяет набор ресурсов, доступ к которым предоставлен участнику. Область приложения — это область, определенная и понятная определенному приложению. Другой тип области — область действия каталога. Области каталогов — это общие области, которые хранятся в каталоге, который понимается несколькими приложениями. '
+description: Область приложения — это область, определенная и понятная определенному приложению.
 localization_priority: Normal
-author: davidmu1
+author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4a996b219df124ac0c287ed4ed32658584acb6ac
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: 23a3d18a8a712ddff8470d91a677f3d0f18dabf2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43160426"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459337"
 ---
 # <a name="appscope-resource-type"></a>Тип ресурса Аппскопе
 

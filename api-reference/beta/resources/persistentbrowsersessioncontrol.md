@@ -2,23 +2,23 @@
 title: Тип ресурса Персистентбровсерсессионконтрол
 description: Элемент управления сеансом, чтобы определить, следует ли сохранять файлы cookie.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d46ffa5cc3f0eee423b4800ee13f19677bf7c41f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 151259c98330c1319e71c8d9b9d44b1e9183f7b3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521948"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469061"
 ---
 # <a name="persistentbrowsersessioncontrol-resource-type"></a>Тип ресурса Персистентбровсерсессионконтрол
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Элемент управления сеансом, чтобы определить, следует ли сохранять файлы cookie. Инехритс из [управления сеансом условного доступа](conditionalaccesssessioncontrol.md).
+Элемент управления сеансом, чтобы определить, следует ли сохранять файлы cookie. Наследуется от [управления сеансом условного доступа](conditionalaccesssessioncontrol.md).
 
 ## <a name="properties"></a>Свойства
 
@@ -27,7 +27,7 @@ ms.locfileid: "42521948"
 |isEnabled     |Boolean      | Указывает, включен ли элемент управления сеансом. |
 |mode|String| Возможные значения: `always`, `never`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 

@@ -1,18 +1,20 @@
 ---
 title: Создание Девицеманажементдомаинжоинконнектор
 description: Создание нового объекта Девицеманажементдомаинжоинконнектор.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 787bbde0438b9a8f8a28e42c591436cc70f1f406
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 13b6e4dd2c2aff14b4c1003cf354e126d37ab75e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42803114"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462647"
 ---
 # <a name="create-devicemanagementdomainjoinconnector"></a>Создание Девицеманажементдомаинжоинконнектор
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42803114"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +46,7 @@ POST /deviceManagement/domainJoinConnectors
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Девицеманажементдомаинжоинконнектор в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицеманажементдомаинжоинконнектор.
@@ -96,7 +98,6 @@ Content-Length: 284
   "version": "Version value"
 }
 ```
-
 
 
 

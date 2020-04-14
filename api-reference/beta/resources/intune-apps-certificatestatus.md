@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Цертификатестатус
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0044141f3538002bb5c2983cb569639f6fa9b93d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7d5280a314d442cf08161e389cccd549fce108d8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42798156"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43459122"
 ---
 # <a name="certificatestatus-enum-type"></a>тип перечисления Цертификатестатус
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

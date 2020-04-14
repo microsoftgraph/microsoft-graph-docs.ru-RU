@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Девицеманажементаппликабилитирулеоседитион
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c6222c6f672ce8401790acdeebff1db45ae17c63
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 754d70f3f383bb90c7de83931b99a90902bf7ba2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42792033"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469316"
 ---
 # <a name="devicemanagementapplicabilityruleosedition-resource-type"></a>Тип ресурса Девицеманажементаппликабилитирулеоседитион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42792033"
 |name|String|Имя объекта.|
 |ruleType|[deviceManagementApplicabilityRuleType](../resources/intune-deviceconfig-devicemanagementapplicabilityruletype.md)|Тип правила применимости. Возможные значения: `include`, `exclude`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

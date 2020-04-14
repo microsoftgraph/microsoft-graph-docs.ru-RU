@@ -1,18 +1,20 @@
 ---
 title: Создание roleDefinition
 description: Создание объекта roleDefinition.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c833132bb1fcccb08b16a87d034f04d6119afcef
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 484b9f3d7dc3a7786764211e69f3ba6e35b9de7c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801651"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43468184"
 ---
 # <a name="create-roledefinition"></a>Создание roleDefinition
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42801651"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementRBAC.ReadWrite.All|
+|Для приложений|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +46,7 @@ POST /deviceManagement/roleDefinitions
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта roleDefinition в формате JSON.
 
 В приведенной ниже таблице показаны свойства, которые необходимо указывать при создании объекта roleDefinition.
@@ -181,7 +183,6 @@ Content-Length: 1256
   ]
 }
 ```
-
 
 
 

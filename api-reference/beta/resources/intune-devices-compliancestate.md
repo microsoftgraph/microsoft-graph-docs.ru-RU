@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Комплианцестате
 description: Состояние соответствия требованиям.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1b0ba44c95a49d7646008ac4664926e257c02a19
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c088f3a0fc3a4bd4b01f29da5f228920f00a398f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785107"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43465145"
 ---
 # <a name="compliancestate-enum-type"></a>тип перечисления Комплианцестате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

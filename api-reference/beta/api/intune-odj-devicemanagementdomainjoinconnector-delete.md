@@ -1,18 +1,20 @@
 ---
 title: Удаление Девицеманажементдомаинжоинконнектор
 description: Удаляет объект Девицеманажементдомаинжоинконнектор.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8dd8dd22f475c9dfe993450cda75def534a77314
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f84d0d38c7b52d3d9261468d87476b16c3596ba0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42803107"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462640"
 ---
 # <a name="delete-devicemanagementdomainjoinconnector"></a>Удаление Девицеманажементдомаинжоинконнектор
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42803107"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,7 +46,7 @@ DELETE /deviceManagement/domainJoinConnectors/{deviceManagementDomainJoinConnect
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/domainJoinConnectors/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

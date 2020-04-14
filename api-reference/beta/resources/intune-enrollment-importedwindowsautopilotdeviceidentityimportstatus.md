@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Импортедвиндовсаутопилотдевицеидентитимпортстатус
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b527016cb8c242b3c07df13422bad26d0cdca0c8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: cd2f09c008c7c29e48e310a8d26443ee3ab1f6be
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783447"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43460800"
 ---
 # <a name="importedwindowsautopilotdeviceidentityimportstatus-enum-type"></a>тип перечисления Импортедвиндовсаутопилотдевицеидентитимпортстатус
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

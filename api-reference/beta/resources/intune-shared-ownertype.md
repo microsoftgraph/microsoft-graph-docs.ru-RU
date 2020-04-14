@@ -1,18 +1,20 @@
 ---
 title: ownerType тип enum
 description: Тип владельца устройства.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1c16c47ecdba026558be889a3817aa79b7c0bd0b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4a5c1774ed090817a3128e05f02e10f67241f338
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42768165"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43466117"
 ---
 # <a name="ownertype-enum-type"></a>ownerType тип enum
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

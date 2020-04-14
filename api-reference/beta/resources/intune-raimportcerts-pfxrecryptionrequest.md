@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Пфксрекриптионрекуест
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6b4ed465767f74c1ed84210f8270d47bda87beac
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3b05aa91e1c265bdcf384163c9a2787eb39149cd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42774710"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462417"
 ---
 # <a name="pfxrecryptionrequest-resource-type"></a>Тип ресурса Пфксрекриптионрекуест
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -45,7 +47,7 @@ ms.locfileid: "42774710"
 |isDeleted|Boolean|Пока не задокументировано|
 |eTag|String|Пока не задокументировано.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

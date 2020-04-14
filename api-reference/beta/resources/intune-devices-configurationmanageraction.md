@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Конфигуратионманажерактион
 description: Параметр для действия Тригжерконфигуратионманажерактион
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 04d78d751f6cdd2978aa9cc65942acf312482202
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 978049100f365786299035511e8795833631a9e0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785100"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43465138"
 ---
 # <a name="configurationmanageraction-resource-type"></a>Тип ресурса Конфигуратионманажерактион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -25,7 +27,7 @@ ms.locfileid: "42785100"
 |:---|:---|:---|
 |action|[configurationManagerActionType](../resources/intune-devices-configurationmanageractiontype.md)|Тип действия для триггера в клиенте Configuration Manager. Возможные значения: `refreshMachinePolicy`, `refreshUserPolicy`, `wakeUpClient`, `appEvaluation`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

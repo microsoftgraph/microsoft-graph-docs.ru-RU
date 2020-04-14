@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Мобилеаппрелатионшип
 description: Описывает связь для дочернего мобильного приложения с родительским мобильным приложением.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 98a758d6aee6e916430235d6ca39445292313a54
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 80cf0fd5897d0ff3d1b3b3adc5343ad4c059442e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797785"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462584"
 ---
 # <a name="mobileapprelationship-resource-type"></a>Тип ресурса Мобилеаппрелатионшип
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -33,7 +35,7 @@ ms.locfileid: "42797785"
 |targetId|String|Идентификатор приложения целевого дочернего мобильного приложения.|
 |таржетдисплайнаме|String|Отображаемое имя целевого дочернего мобильного приложения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

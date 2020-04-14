@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Девицеманажементаутопилотполицикомплианцестатус
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: d1d34167392f0ff239c3b7e0eaaa90d704842ce6
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9cf4f8b60f87b10a7bed456c5119909dc0c4824f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42765785"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43462304"
 ---
 # <a name="devicemanagementautopilotpolicycompliancestatus-enum-type"></a>тип перечисления Девицеманажементаутопилотполицикомплианцестатус
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Полицисетассигнмент
 description: Класс, содержащий свойства, которые используются для назначения политик.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ee8343c3e2a9aa336343150b0719821cb3b89ce4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 14789c8c57b766dae61dfc467514ba6d095b764f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42775186"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463369"
 ---
 # <a name="policysetassignment-resource-type"></a>Тип ресурса Полицисетассигнмент
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -36,7 +38,7 @@ ms.locfileid: "42775186"
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения Полицисетассигнмент.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Целевая группа Полицисетассигнмент|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

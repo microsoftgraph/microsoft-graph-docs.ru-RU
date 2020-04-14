@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Макосфиреваллаппликатион
 description: Представляет приложение в списке приложений брандмауэра macOS
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2536d87af63f574d75428472dc338a2afc4288bf
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bac45dfa350dc293fcb7957e45a2698e7f179bfb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42789466"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43464152"
 ---
 # <a name="macosfirewallapplication-resource-type"></a>Тип ресурса Макосфиреваллаппликатион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -24,9 +26,9 @@ ms.locfileid: "42789466"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |bundleId|String|Свойства bundleid приложения.|
-|алловсинкомингконнектионс|Логический|Разрешены ли входящие подключения.|
+|алловсинкомингконнектионс|Boolean|Разрешены ли входящие подключения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

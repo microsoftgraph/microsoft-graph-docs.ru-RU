@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса message
 description: Сообщение в папке почтового ящика.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 02ab3eb62d173897d3456e3f28144e0db48de609
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a70e3a51ac33a640e1b5e2b3a6597fb2f2963deb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522682"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446616"
 ---
 # <a name="message-resource-type"></a>Тип ресурса message
 

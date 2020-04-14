@@ -4,17 +4,17 @@ description: Представляет область делегированно�
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-author: davidmu1
-ms.openlocfilehash: 684f08be52b453922d58919e589a7888007deefb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+author: psignoret
+ms.openlocfilehash: 725fe0c65fd05752cd6f862291efcffbcf3d22c5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521955"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43469068"
 ---
 # <a name="permissionscope-resource-type"></a>Тип ресурса permissionScope
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

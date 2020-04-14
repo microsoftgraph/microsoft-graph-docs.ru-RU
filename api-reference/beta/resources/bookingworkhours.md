@@ -2,19 +2,19 @@
 title: Тип ресурса Букингворкхаурс
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: resourcePageType
-ms.openlocfilehash: cfc15d65e840d7634c5c9134c5fc36a244f73286
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fab0282e3ce380b8aa4283bd9a783fe8b2fc3390
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507889"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43463602"
 ---
 # <a name="bookingworkhours-resource-type"></a>Тип ресурса Букингворкхаурс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
