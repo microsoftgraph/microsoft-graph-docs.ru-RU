@@ -1,18 +1,20 @@
 ---
 title: Удаление Макосвппапп
 description: Удаляет объект Макосвппапп.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c3692816859ea39f4accb5b6fd06a9cdcaa7c8dc
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 046d026d1593cc817daccd7f8879b8e6f0233c4a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761673"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43409934"
 ---
 # <a name="delete-macosvppapp"></a>Удаление Макосвппапп
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

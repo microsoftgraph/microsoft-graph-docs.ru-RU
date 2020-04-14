@@ -1,18 +1,20 @@
 ---
 title: Update iosVppApp
 description: Обновление свойств объекта iosVppApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 47ca8252f6eeb026e49109086721f39d34ad7ff9
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f7d3f27c4304fa7b2becd5ed3db4801b80a3c963
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761932"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43416732"
 ---
 # <a name="update-iosvppapp"></a>Update iosVppApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -229,7 +231,6 @@ Content-Length: 2171
   ]
 }
 ```
-
 
 
 

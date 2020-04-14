@@ -1,18 +1,20 @@
 ---
 title: Get userInstallStateSummary
 description: Чтение свойств и связей объекта userInstallStateSummary.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 76b2cff4e5ae21a055159e829fb38690bbbcd176
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 376e42cd9340fcdb8802d8d3f1847e48da91b57b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760335"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43414036"
 ---
 # <a name="get-userinstallstatesummary"></a>Get userInstallStateSummary
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -79,7 +81,6 @@ Content-Length: 269
   }
 }
 ```
-
 
 
 

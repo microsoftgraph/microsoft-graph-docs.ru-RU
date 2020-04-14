@@ -1,18 +1,20 @@
 ---
 title: Перечисление объектов managedIOSLobApp
 description: Список свойств и связей объектов managedIOSLobApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2fe70b6c33a26f681f2910fde49b51e38ecc7fac
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 93c3041829b81503f11b0c6259a1e6521eb6e0a3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815403"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43415643"
 ---
 # <a name="list-managedioslobapps"></a>Перечисление объектов managedIOSLobApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -121,7 +123,6 @@ Content-Length: 1890
   ]
 }
 ```
-
 
 
 

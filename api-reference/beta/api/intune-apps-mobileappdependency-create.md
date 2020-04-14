@@ -1,18 +1,20 @@
 ---
 title: Создание Мобилеаппдепенденци
 description: Создание нового объекта Мобилеаппдепенденци.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bdb73e562081e1de14e20392d8f3e2a6e16a073a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 16931384fb343c21b4d6f8c64c19464411ecde1d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761274"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43415372"
 ---
 # <a name="create-mobileappdependency"></a>Создание Мобилеаппдепенденци
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -96,7 +98,6 @@ Content-Length: 260
   "dependentAppCount": 1
 }
 ```
-
 
 
 

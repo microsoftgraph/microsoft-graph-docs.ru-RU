@@ -1,18 +1,20 @@
 ---
 title: Создание windowsPhone81AppX
 description: Создание нового объекта windowsPhone81AppX.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ed5fe456f13e30030acd6e6858d31fc13aac528
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 692fae83210f4fd0fbc42177b0d1b158a6f6d18a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760853"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43409446"
 ---
 # <a name="create-windowsphone81appx"></a>Создание windowsPhone81AppX
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -200,7 +202,6 @@ Content-Length: 1685
   "identityVersion": "Identity Version value"
 }
 ```
-
 
 
 

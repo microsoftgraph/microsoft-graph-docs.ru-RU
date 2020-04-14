@@ -1,18 +1,20 @@
 ---
 title: Список Иосвппаппассигнедлиценсес
 description: Список свойств и связей объектов Иосвппаппассигнедлиценсе.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7a3f20fb5a1854df9e912c43db687ffc19717a71
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: cc1e0371634d6c48f54666d608c91b9101718676
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761868"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43416618"
 ---
 # <a name="list-iosvppappassignedlicenses"></a>Список Иосвппаппассигнедлиценсес
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -78,7 +80,6 @@ Content-Length: 340
   ]
 }
 ```
-
 
 
 

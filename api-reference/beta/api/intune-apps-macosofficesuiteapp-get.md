@@ -1,18 +1,20 @@
 ---
 title: Get macOSOfficeSuiteApp
 description: Чтение свойств и связей объекта macOSOfficeSuiteApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9fb45707e22e9caa2f43ef030d2abba11b73162a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c1c79435f154ee1162fac2057caa379e7959f3c2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761701"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43416175"
 ---
 # <a name="get-macosofficesuiteapp"></a>Get macOSOfficeSuiteApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -100,7 +102,6 @@ Content-Length: 959
   }
 }
 ```
-
 
 
 

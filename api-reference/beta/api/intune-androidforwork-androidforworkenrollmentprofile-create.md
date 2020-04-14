@@ -1,18 +1,20 @@
 ---
 title: Create androidForWorkEnrollmentProfile
 description: Создание объекта androidForWorkEnrollmentProfile.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0aafa6b7eaf3f3d3e5d54d5102e56d62b4e15846
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0356f5fb7fd7adb32d4a4bf696375813331636cb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815735"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43418285"
 ---
 # <a name="create-androidforworkenrollmentprofile"></a>Create androidForWorkEnrollmentProfile
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -120,7 +122,6 @@ Content-Length: 668
   }
 }
 ```
-
 
 
 

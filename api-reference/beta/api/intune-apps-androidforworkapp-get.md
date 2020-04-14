@@ -1,18 +1,20 @@
 ---
 title: Получение Андроидфорворкапп
 description: Чтение свойств и связей объекта Андроидфорворкапп.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 135c0e2a12b556135f93f1aaac01450d3c5d21fe
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 47dfe49a8695191eaad0999e2c21ef8a56a4e89b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762387"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43417813"
 ---
 # <a name="get-androidforworkapp"></a>Получение Андроидфорворкапп
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -105,7 +107,6 @@ Content-Length: 1154
   }
 }
 ```
-
 
 
 

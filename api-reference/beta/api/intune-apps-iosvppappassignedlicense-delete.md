@@ -1,18 +1,20 @@
 ---
 title: Удаление Иосвппаппассигнедлиценсе
 description: Удаляет объект Иосвппаппассигнедлиценсе.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f4aa816687856bc5712731f7d9dbd57de05cf7d4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fc7c4227ef7f51af60b6ae54432ae59914038e38
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761870"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43416672"
 ---
 # <a name="delete-iosvppappassignedlicense"></a>Удаление Иосвппаппассигнедлиценсе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса iosLobAppAssignmentSettings
 description: Содержит свойства, используемые при назначении бизнес-приложения для iOS группе.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 71dc0ff85b5b6c978a03099e863962321372f420
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fe57b72e2e656d3653cfb2c2d7b2f62361c29b5e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42770006"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43407594"
 ---
 # <a name="ioslobappassignmentsettings-resource-type"></a>Тип ресурса iosLobAppAssignmentSettings
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -28,7 +30,7 @@ ms.locfileid: "42770006"
 |:---|:---|:---|
 |vpnConfigurationId|String|ИД конфигурации VPN, применяемой к этому приложению.|
 |**Приложения**|
-|унинсталлондевицеремовал|Логический|Указывает, следует ли удалить приложение, когда устройство удалено из Intune.|
+|унинсталлондевицеремовал|Логическое|Указывает, следует ли удалить приложение, когда устройство удалено из Intune.|
 
 ## <a name="relationships"></a>Связи
 Нет

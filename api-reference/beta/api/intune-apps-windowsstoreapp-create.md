@@ -1,18 +1,20 @@
 ---
 title: Создание Виндовсстореапп
 description: Создание нового объекта Виндовсстореапп.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b42b2376b84d1b18e63aa5cc4cfdb1419217e3e0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 313383a23540d06451b401d7dd0732d9769271c6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760713"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43409042"
 ---
 # <a name="create-windowsstoreapp"></a>Создание Виндовсстореапп
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -148,7 +150,6 @@ Content-Length: 940
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
-
 
 
 

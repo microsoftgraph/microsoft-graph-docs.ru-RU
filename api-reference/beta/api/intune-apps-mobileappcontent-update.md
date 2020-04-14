@@ -1,18 +1,20 @@
 ---
 title: Обновление объекта mobileAppContent
 description: Обновление свойств объекта mobileAppContent.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: edf11e64c7e5f21f6de528353a2e33175b61e968
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6a5ee651cc363756a4d9508eb4c772ee530b16ed
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761330"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43415636"
 ---
 # <a name="update-mobileappcontent"></a>Обновление объекта mobileAppContent
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -86,7 +88,6 @@ Content-Length: 107
   "id": "fe0bb9a9-b9a9-fe0b-a9b9-0bfea9b90bfe"
 }
 ```
-
 
 
 

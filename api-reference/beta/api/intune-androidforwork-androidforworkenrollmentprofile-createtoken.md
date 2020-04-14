@@ -1,18 +1,20 @@
 ---
 title: Действие createToken
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b39c8934762be91491267283c15c60068c74d57a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8c31e3acbf62a70a91bdc50b1bca4ed7b6711c84
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815728"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43418262"
 ---
 # <a name="createtoken-action"></a>Действие createToken
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -78,7 +80,6 @@ Content-length: 35
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

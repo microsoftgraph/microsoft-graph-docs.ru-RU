@@ -1,18 +1,20 @@
 ---
 title: Создание объекта androidStoreApp
 description: Создание объекта androidStoreApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f7f3fc0cf0a4b6d6e2314f164c644d779fc20d0b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8ad7da84a59c5992c3b1f92d71e8394da901752e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762191"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43417269"
 ---
 # <a name="create-androidstoreapp"></a>Создание объекта androidStoreApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -189,7 +191,6 @@ Content-Length: 1402
   }
 }
 ```
-
 
 
 

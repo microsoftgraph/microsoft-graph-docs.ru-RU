@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса deviceEnrollmentLimitConfiguration
 description: Настройка регистрации устройств, которая ограничит число устройств, которые может регистрировать пользователь
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4b388020b8f3b883e390783a50da36bdf40c78da
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 956bb4593bd6efc9a08e1ae2ee077c8770cf0615
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42779655"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43418923"
 ---
 # <a name="deviceenrollmentlimitconfiguration-resource-type"></a>Тип ресурса deviceEnrollmentLimitConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,18 +1,20 @@
 ---
 title: Перечисление объектов iosVppApp
 description: Список свойств и связей объектов iosVppApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e433ecd9e9665e2391746eb5056547cb2bbe3deb
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fb7f3093b52f4ea25ed4d45cfd9308a46a13968c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761960"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43416882"
 ---
 # <a name="list-iosvppapps"></a>Перечисление объектов iosVppApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -132,7 +134,6 @@ Content-Length: 2444
   ]
 }
 ```
-
 
 
 

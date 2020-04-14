@@ -1,18 +1,20 @@
 ---
 title: Update iosStoreApp
 description: Обновление свойств объекта iosStoreApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 275ffb3c505bc33230b7e95d160164dba0b75879
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5e3b67af96512faea18a8b731fd10b2bc0b6f7b5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761988"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43416905"
 ---
 # <a name="update-iosstoreapp"></a>Update iosStoreApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -183,7 +185,6 @@ Content-Length: 1332
   }
 }
 ```
-
 
 
 

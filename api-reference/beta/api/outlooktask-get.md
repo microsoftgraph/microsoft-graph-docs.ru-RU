@@ -2,15 +2,15 @@
 title: Получение outlookTask
 description: Получение свойств и связей задачи Outlook в почтовом ящике пользователя.
 localization_priority: Normal
-author: angelgolfer-ms
+author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c355803ef243fb5a23d18ff8fecfd66260e7a9b2
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: 89b790ee480fc6c92aff5652fc2c165d6eb828e0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42619027"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413777"
 ---
 # <a name="get-outlooktask"></a>Получение outlookTask
 
@@ -50,7 +50,7 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}
 | Имя                     | Описание                                       |
 |:-------------------------|:--------------------------------------------------|
 | Авторизация            | Bearer {токен}. Обязательный.                         |
-| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательный параметр. |
+| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательно. |
 
 ## <a name="request-body"></a>Текст запроса
 

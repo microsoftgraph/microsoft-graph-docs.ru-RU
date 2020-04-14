@@ -1,18 +1,20 @@
 ---
 title: Get webApp
 description: Чтение свойств и связей объекта webApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8873f0a4d4d63322ca9850597291421263d2f606
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1346766a022de2d9450b85cceb7a91166ee6f4c1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761014"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43409586"
 ---
 # <a name="get-webapp"></a>Get webApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -102,7 +104,6 @@ Content-Length: 1024
   }
 }
 ```
-
 
 
 

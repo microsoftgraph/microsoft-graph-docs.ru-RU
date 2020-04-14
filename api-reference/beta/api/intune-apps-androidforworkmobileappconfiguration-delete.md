@@ -1,18 +1,20 @@
 ---
 title: Удаление Андроидфорворкмобилеаппконфигуратион
 description: Удаляет объект Андроидфорворкмобилеаппконфигуратион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: aa04ce0b3d386bd9dfe05e84b13d5822510e1cec
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: cb6e708f531fea26bb9d7ba7feed63dbbaa7209e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762359"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43417759"
 ---
 # <a name="delete-androidforworkmobileappconfiguration"></a>Удаление Андроидфорворкмобилеаппконфигуратион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurati
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Комплианцеманажементпартнер
 description: Партнер по управлению соответствием для всех платформ
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b9141d40aaaea00e2d181b7e38f595c3241ebe82
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8acd32a4fbb664e40ead3ac125ad1ef1b4f29168
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42779851"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43419008"
 ---
 # <a name="compliancemanagementpartner-resource-type"></a>Тип ресурса Комплианцеманажементпартнер
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -36,10 +38,10 @@ ms.locfileid: "42779851"
 |lastHeartbeatDateTime|DateTimeOffset|Метка времени последнего пакета пульса после того, как администратор направил соответствие партнеру управления соответствием|
 |partnerState|[девицеманажементпартнертенантстате](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера этого клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |displayName|Строка|Отображаемое имя партнера|
-|макосонбоардед|Логический|Партнер, подключенный к устройствам Mac.|
-|виндовсонбоардед|Логический|Партнер, направленный на устройства с Windows.|
-|андроидонбоардед|Логический|Партнер, направленный на устройства с Android.|
-|иосонбоардед|Логический|Партнер, подключенный к устройствам iOS.|
+|макосонбоардед|Логическое|Партнер, подключенный к устройствам Mac.|
+|виндовсонбоардед|Логическое|Партнер, направленный на устройства с Windows.|
+|андроидонбоардед|Логическое|Партнер, направленный на устройства с Android.|
+|иосонбоардед|Логическое|Партнер, подключенный к устройствам iOS.|
 |макосенроллментассигнментс|Коллекция [комплианцеманажементпартнерассигнмент](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрируют устройства Mac через партнера.|
 |виндовсенроллментассигнментс|Коллекция [комплианцеманажементпартнерассигнмент](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрируют устройства Windows с помощью партнера.|
 |андроиденроллментассигнментс|Коллекция [комплианцеманажементпартнерассигнмент](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрируют устройства с Android через партнера.|

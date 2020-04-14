@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Впнднсруле
 description: Определение правила DNS для VPN.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4ffc8c01aadfe77bd3d92d9f7618a5846cf7c855
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ac7b87442dc2fda2df5e342981def579457bae3d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787392"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43412233"
 ---
 # <a name="vpndnsrule-resource-type"></a>Тип ресурса Впнднсруле
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,8 +28,8 @@ ms.locfileid: "42787392"
 |name|String|Расширением.|
 |серверами|Коллекция String|Серверами.|
 |проксисерверури|String|URI прокси-сервера.|
-|автотриггер|Логический|Автоматически подключаться к виртуальной частной сети, когда устройство подключается к этому домену: значение по умолчанию — false.|
-|сохраняемого|Логический|Оставить это правило активным, даже если VPN-подключение не подключено: по умолчанию используется значение false.|
+|автотриггер|Логическое|Автоматически подключаться к виртуальной частной сети, когда устройство подключается к этому домену: значение по умолчанию — false.|
+|сохраняемого|Логическое|Оставить это правило активным, даже если VPN-подключение не подключено: по умолчанию используется значение false.|
 
 ## <a name="relationships"></a>Связи
 Нет

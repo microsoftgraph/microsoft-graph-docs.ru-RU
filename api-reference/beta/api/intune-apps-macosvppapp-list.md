@@ -1,18 +1,20 @@
 ---
 title: Список Макосвппаппс
 description: Список свойств и связей объектов Макосвппапп.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 238afcc37d49bb76957204b4482a4035cb4f54c5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 53cff93ac80fc3840c140a6a05c5056d5426f954
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761659"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43409784"
 ---
 # <a name="list-macosvppapps"></a>Список Макосвппаппс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -127,7 +129,6 @@ Content-Length: 2294
   ]
 }
 ```
-
 
 
 

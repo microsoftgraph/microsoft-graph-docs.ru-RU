@@ -1,18 +1,20 @@
 ---
 title: Список Андроидманажедсторевебаппс
 description: Список свойств и связей объектов Андроидманажедсторевебапп.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ce78db057b67d52081135130fed713e849a19245
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 642e91a5c2071002a60ab254c2954199342da555
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762227"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43417387"
 ---
 # <a name="list-androidmanagedstorewebapps"></a>Список Андроидманажедсторевебаппс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -63,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1324
+Content-Length: 1536
 
 {
   "value": [
@@ -100,12 +102,18 @@ Content-Length: 1324
       "appStoreUrl": "https://example.com/appStoreUrl/",
       "isPrivate": true,
       "isSystemApp": true,
+      "appTracks": [
+        {
+          "@odata.type": "microsoft.graph.androidManagedStoreAppTrack",
+          "trackId": "Track Id value",
+          "trackAlias": "Track Alias value"
+        }
+      ],
       "supportsOemConfig": true
     }
   ]
 }
 ```
-
 
 
 

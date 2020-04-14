@@ -1,18 +1,20 @@
 ---
 title: Удаление К mobileappprovisioningconfiggroupassignment.
 description: Удаляет объект К mobileappprovisioningconfiggroupassignment..
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8dad8de288a9b16df817f54589556f0c1c10a66c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ab8f6aa2f24b3a3194143e72a3093a5d58455d0e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761183"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43414729"
 ---
 # <a name="delete-mobileappprovisioningconfiggroupassignment"></a>Удаление К mobileappprovisioningconfiggroupassignment.
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisionin
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

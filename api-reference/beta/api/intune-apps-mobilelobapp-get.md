@@ -1,18 +1,20 @@
 ---
 title: Get mobileLobApp
 description: Чтение свойств и связей объекта mobileLobApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 77b3b77ceebe9ebf21858dbc7026db98c56c2324
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 664ef8a7bb90989e6f0e82e9888123d08935a0f5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761127"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43414449"
 ---
 # <a name="get-mobilelobapp"></a>Get mobileLobApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -103,7 +105,6 @@ Content-Length: 1071
   }
 }
 ```
-
 
 
 

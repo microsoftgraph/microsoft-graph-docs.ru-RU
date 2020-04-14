@@ -1,18 +1,20 @@
 ---
 title: Update managedAndroidLobApp
 description: Обновление свойств объекта managedAndroidLobApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1904f24195f39505ff9eefaf38e964516387531d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0c1c29bcd318d1f3a089397ed4ef65e637ab00d9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761582"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43409754"
 ---
 # <a name="update-managedandroidlobapp"></a>Update managedAndroidLobApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -212,7 +214,6 @@ Content-Length: 1663
   "identityVersion": "Identity Version value"
 }
 ```
-
 
 
 

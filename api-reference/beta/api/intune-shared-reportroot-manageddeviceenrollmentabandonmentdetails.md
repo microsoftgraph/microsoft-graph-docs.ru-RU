@@ -1,18 +1,20 @@
 ---
 title: Функция Манажеддевицеенроллментабандонментдетаилс
 description: Метаданные для отчета о прекращении регистрации
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3652904e9b8b3bb1e2e46228a1b8ff5f7f5ca58b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b8d11c01ca9bee9c895947d4966b59f4690353f1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800699"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43408459"
 ---
 # <a name="manageddeviceenrollmentabandonmentdetails-function"></a>Функция Манажеддевицеенроллментабандонментдетаилс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -82,7 +84,6 @@ Content-Length: 123
   }
 }
 ```
-
 
 
 

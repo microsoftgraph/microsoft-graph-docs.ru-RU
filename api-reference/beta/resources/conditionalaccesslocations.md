@@ -2,19 +2,19 @@
 title: Тип ресурса Кондитионалакцесслокатионс
 description: Представляет расположения, включенные в область политики и исключенные из нее.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5a3b6affa1dccdf9065061bec855fb8a2000d387
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 09440c789ae98ae2d5eb46de26f56b32bf0ce578
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507543"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413410"
 ---
 # <a name="conditionalaccesslocations-resource-type"></a>Тип ресурса Кондитионалакцесслокатионс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

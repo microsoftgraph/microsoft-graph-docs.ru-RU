@@ -2,15 +2,15 @@
 title: Тип ресурса Кондитионалакцессгрантконтролс
 description: Представляет элементы управления предоставлением, которые должны быть выполнены для передачи политики.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b91afb44cc43c3c6ac4970afc36914abcb08c4c9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9746bfb37dd3887def0f070256d90e46efecbdb6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507550"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413433"
 ---
 # <a name="conditionalaccessgrantcontrols-resource-type"></a>Тип ресурса Кондитионалакцессгрантконтролс
 
@@ -24,7 +24,7 @@ ms.locfileid: "42507550"
 
 | Свойство | Тип | Описание |
 |:-------- |:---- |:----------- |
-| operator | Строка | Определяет связь элементов управления предоставлением. Возможные значения: `AND`, `OR`. |
+| operator | String | Определяет связь элементов управления предоставлением. Возможные значения: `AND`, `OR`. |
 | буилтинконтролс | Коллекция String | Список значений встроенных элементов управления, необходимых для политики. Возможные значения: `Block`, `Mfa`, `CompliantDevice`, `DomainJoinedDevice`, `ApprovedApplication`,`CompliantApplication` |
 | кустомаусентикатионфакторс | Коллекция String | Список идентификаторов настраиваемых элементов управления, необходимых для политики. Дополнительные сведения о настраиваемых элементах управления:https://docs.microsoft.com/azure/active-directory/conditional-access/controls#custom-controls-preview |
 | термсофусе | Коллекция String | Список [условий использования](agreement.md) идентификаторов, необходимых для политики. |

@@ -1,18 +1,20 @@
 ---
 title: Обновление Мобилеаппинсталлсуммари
 description: Обновление свойств объекта Мобилеаппинсталлсуммари.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2c83ea8fe14b9f9e0283becba7ef103c26b359a1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fab58b772d9cb9111c7676a08703dd7868d7d4cb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761197"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43414791"
 ---
 # <a name="update-mobileappinstallsummary"></a>Обновление Мобилеаппинсталлсуммари
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -114,7 +116,6 @@ Content-Length: 423
   "pendingInstallUserCount": 7
 }
 ```
-
 
 
 

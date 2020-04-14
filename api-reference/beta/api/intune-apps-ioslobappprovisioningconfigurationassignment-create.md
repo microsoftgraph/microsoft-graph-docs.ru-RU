@@ -1,18 +1,20 @@
 ---
 title: Создание Иослобапппровисионингконфигуратионассигнмент
 description: Создание нового объекта Иослобапппровисионингконфигуратионассигнмент.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 10cfd80131079b8e53f9374f65e5de1d6e734205
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 49812ddba2f3da4ab374e34532dd6cbf1cd762ca
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762086"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43416988"
 ---
 # <a name="create-ioslobappprovisioningconfigurationassignment"></a>Создание Иослобапппровисионингконфигуратионассигнмент
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -91,7 +93,6 @@ Content-Length: 233
   }
 }
 ```
-
 
 
 

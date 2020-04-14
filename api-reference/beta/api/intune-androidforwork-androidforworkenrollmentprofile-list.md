@@ -1,18 +1,20 @@
 ---
 title: Перечисление объектов androidForWorkEnrollmentProfile
 description: Список свойств и связей объектов androidForWorkEnrollmentProfile.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a007978bd6055d1939f741705f995c26bf2001b4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f1ea54fab0528f91a91431db813f3e87309f99a6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815707"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43418168"
 ---
 # <a name="list-androidforworkenrollmentprofiles"></a>Перечисление объектов androidForWorkEnrollmentProfile
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -88,7 +90,6 @@ Content-Length: 765
   ]
 }
 ```
-
 
 
 

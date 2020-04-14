@@ -2,19 +2,19 @@
 title: Тип ресурса Кондитионалакцессплатформс
 description: Платформы, включенные в область политики и исключенные из нее.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 2612b352f512d1177bc9137603b6ecda1ad96f66
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5907e7162093b7d0d9fb796f61fc0cf110350417
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507536"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413355"
 ---
 # <a name="conditionalaccessplatforms-resource-type"></a>Тип ресурса Кондитионалакцессплатформс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

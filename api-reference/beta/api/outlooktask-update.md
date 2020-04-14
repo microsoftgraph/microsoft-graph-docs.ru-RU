@@ -1,20 +1,20 @@
 ---
 title: Обновление outlooktask
 description: Изменение свойств для записи в задаче Outlook.
-author: angelgolfer-ms
+author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 1e11cbafef89333c48491f1e0143b6d8fb19393d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cc311b0e95e33dd189908d7bbec8fa9d57fd0282
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456175"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413596"
 ---
 # <a name="update-outlooktask"></a>Обновление outlooktask
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -48,7 +48,7 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 | Имя       | Описание|
 |:-----------|:-----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательное свойство.|
+| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 

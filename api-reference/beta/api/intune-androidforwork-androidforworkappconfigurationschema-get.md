@@ -1,18 +1,20 @@
 ---
 title: Get androidForWorkAppConfigurationSchema
 description: Чтение свойств и связей объекта androidForWorkAppConfigurationSchema.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c9dd7fd5e52b21398a90f8c3a53989f2eb644608
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5b92c06c71171338fbe13e1d20f52d1f67f5804e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815756"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43418410"
 ---
 # <a name="get-androidforworkappconfigurationschema"></a>Get androidForWorkAppConfigurationSchema
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -98,7 +100,6 @@ Content-Length: 913
   }
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Удаление Мобилеаппдепенденци
 description: Удаляет объект Мобилеаппдепенденци.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0297f592beb66b77280b1a5e06db361c6e48266f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1d2addde9a8f77cf8675bbb6e985bad989751658
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761267"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43415340"
 ---
 # <a name="delete-mobileappdependency"></a>Удаление Мобилеаппдепенденци
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Получение Иослобапппровисионингконфигуратионассигнмент
 description: Чтение свойств и связей объекта Иослобапппровисионингконфигуратионассигнмент.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 943f34bd43e0e0611950d461f81c6407af635d40
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 914d654816dbab9233650b86745377ab37796e3c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762072"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43416942"
 ---
 # <a name="get-ioslobappprovisioningconfigurationassignment"></a>Получение Иослобапппровисионингконфигуратионассигнмент
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -78,7 +80,6 @@ Content-Length: 262
   }
 }
 ```
-
 
 
 

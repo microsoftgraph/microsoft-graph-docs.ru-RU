@@ -1,20 +1,20 @@
 ---
 title: Создание вложения
 description: Используйте этот API, чтобы добавить вложение в объект outlookTask.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9d81c0c9b3c59e41c1df42f2af446a61d7bb1a34
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5cc6bf02fceef6467f7d32232c873517c797bd3c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456182"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413619"
 ---
 # <a name="create-attachment"></a>Создание вложения
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -44,7 +44,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Content-Type | Строка, представляющая тип данных в теле объекта. Обязательный элемент. |
+| Content-Type | Строка, представляющая тип данных в теле объекта. Обязательно. |
 
 ## <a name="request-body"></a>Текст запроса
 

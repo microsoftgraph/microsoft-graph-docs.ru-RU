@@ -1,18 +1,20 @@
 ---
 title: Получение Андроидманажедстореаппконфигуратион
 description: Чтение свойств и связей объекта Андроидманажедстореаппконфигуратион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b309e70bf1774ba118a78d74d264d077a4b056bf
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2289f6115cf7f626582e9f483e12411f213a3fbc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762247"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43417517"
 ---
 # <a name="get-androidmanagedstoreappconfiguration"></a>Получение Андроидманажедстореаппконфигуратион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -66,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 829
+Content-Length: 880
 
 {
   "value": {
@@ -92,11 +94,11 @@ Content-Length: 829
         "action": "autoGrant"
       }
     ],
-    "appSupportsOemConfig": true
+    "appSupportsOemConfig": true,
+    "profileApplicability": "androidWorkProfile"
   }
 }
 ```
-
 
 
 

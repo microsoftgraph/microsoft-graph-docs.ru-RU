@@ -1,18 +1,20 @@
 ---
 title: Обновление Андроидманажедстореапп
 description: Обновление свойств объекта Андроидманажедстореапп.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 14b7a857ada444f6f4fefdf6d1a147323c2357df
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 16497de0efe0f2bc5832aa22aa00705f83bb06fc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762275"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43417643"
 ---
 # <a name="update-androidmanagedstoreapp"></a>Обновление Андроидманажедстореапп
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -76,9 +78,10 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |usedLicenseCount|Int32|Количество используемых лицензий VPP.|
 |totalLicenseCount|Int32|Общее количество лицензий VPP.|
 |appStoreUrl|String|URL-адрес приложения для рабочего хранилища.|
-|Частный|Логический|Указывает, доступно ли приложение только для указанных пользователей предприятия.|
-|иссистемапп|Логический|Указывает, является ли приложение предустановленным системным приложением.|
-|суппортсоемконфиг|Логический|Поддерживает ли это приложение политику Оемконфиг.|
+|Частный|Логическое|Указывает, доступно ли приложение только для указанных пользователей предприятия.|
+|иссистемапп|Логическое|Указывает, является ли приложение предустановленным системным приложением.|
+|апптраккс|Коллекция [андроидманажедстореапптракк](../resources/intune-apps-androidmanagedstoreapptrack.md)|Дорожки, которые видимы для этого предприятия.|
+|суппортсоемконфиг|Логическое|Поддерживает ли это приложение политику Оемконфиг.|
 
 
 
@@ -92,7 +95,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 984
+Content-length: 1168
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreApp",
@@ -124,6 +127,13 @@ Content-length: 984
   "appStoreUrl": "https://example.com/appStoreUrl/",
   "isPrivate": true,
   "isSystemApp": true,
+  "appTracks": [
+    {
+      "@odata.type": "microsoft.graph.androidManagedStoreAppTrack",
+      "trackId": "Track Id value",
+      "trackAlias": "Track Alias value"
+    }
+  ],
   "supportsOemConfig": true
 }
 ```
@@ -133,7 +143,7 @@ Content-length: 984
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1156
+Content-Length: 1340
 
 {
   "@odata.type": "#microsoft.graph.androidManagedStoreApp",
@@ -168,10 +178,16 @@ Content-Length: 1156
   "appStoreUrl": "https://example.com/appStoreUrl/",
   "isPrivate": true,
   "isSystemApp": true,
+  "appTracks": [
+    {
+      "@odata.type": "microsoft.graph.androidManagedStoreAppTrack",
+      "trackId": "Track Id value",
+      "trackAlias": "Track Alias value"
+    }
+  ],
   "supportsOemConfig": true
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса deviceManagement
-description: 'Ресурс deviceManagement представляет контейнер, содержимое которого зависит от рабочего процесса, в том числе:  '
+description: Ресурс deviceManagement представляет контейнер, содержимое которого зависит от рабочего процесса.
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2a0ff2de2f35df0c49dbfc9b847034c75c2f49c7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: af184fd7716208ecd7c0ef1673fe6761c65f1977
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42771105"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43408012"
 ---
 # <a name="devicemanagement-resource-type"></a>Тип ресурса deviceManagement
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -65,7 +67,7 @@ ms.locfileid: "42771105"
 |id|String|Уникальный идентификатор, связанный с устройством.|
 |**Конфигурация устройства**|
 |интунеаккаунтид|GUID|Идентификатор учетной записи Intune для данного клиента|
-|легаципкмананжементенаблед|Логический|Свойство, позволяющее управлять устаревшим управлением устаревших ПК для этой учетной записи. Это свойство доступно только для чтения.|
+|легаципкмананжементенаблед|Логическое|Свойство, позволяющее управлять устаревшим управлением устаревших ПК для этой учетной записи. Это свойство доступно только для чтения.|
 |максимумдептокенс|Int32|Максимальное число маркеров DEP, разрешенных для каждого клиента.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Параметры уровня учетной записи.|
 |**Управление устройствами**|
@@ -76,6 +78,8 @@ ms.locfileid: "42771105"
 |subscriptionState|[девицеманажементсубскриптионстате](../resources/intune-devices-devicemanagementsubscriptionstate.md)|Состояние подписки на управление мобильными устройствами для клиента. Возможные значения: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
 |subscriptions|[девицеманажементсубскриптионс](../resources/intune-devices-devicemanagementsubscriptions.md)|Подписка клиента. Возможные значения: `none`, `intune`, `office365`, `intunePremium`, `intune_EDU`, `intune_SMB`.|
 |windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|Обзор вредоносных программ для устройств с Windows.|
+|**Аналитика групповой политики**|
+|граупполициобжектфилес|Коллекция [граупполициобжектфиле](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md)|Список загруженных файлов объектов групповой политики.|
 |**Адаптация**|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|Ресурс intuneBrand содержит данные, которые используются для настройки внешнего вида приложения "Корпоративный портал" и веб-портала пользователя.|
 |**одж**|
@@ -130,15 +134,14 @@ ms.locfileid: "42771105"
 |ремотеактионаудитс|Коллекция [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)|Список аудитов удаленных действий устройств с клиентом.|
 |windowsMalwareInformation|Коллекция [windowsMalwareInformation](../resources/intune-devices-windowsmalwareinformation.md)|Список уязвимых вредоносных программ в клиенте.|
 |мобилеапптраублешутинжевентс|Коллекция [мобилеапптраублешутинжевент](../resources/intune-shared-mobileapptroubleshootingevent.md)|Свойство Collection объекта Мобилеапптраублешутинжевент.|
-|userExperienceAnalyticsOverview|[userExperienceAnalyticsOverview](../resources/intune-devices-userexperienceanalyticsoverview.md)|Обзор анализа пользовательского интерфейса|
-|усерекспериенцеаналитиксбаселинес|Коллекция [усерекспериенцеаналитиксбаселине](../resources/intune-devices-userexperienceanalyticsbaseline.md)|Шаблоны аналитики взаимодействия с пользователем|
-|усерекспериенцеаналитикскатегориес|Коллекция [усерекспериенцеаналитикскатегори](../resources/intune-devices-userexperienceanalyticscategory.md)|Категории аналитики взаимодействия с пользователем|
-|userExperienceAnalyticsDevicePerformance|Коллекция [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md)|Производительность устройства аналитики взаимодействия с пользователем|
-|userExperienceAnalyticsRegressionSummary|[userExperienceAnalyticsRegressionSummary](../resources/intune-devices-userexperienceanalyticsregressionsummary.md)|Сводка по регрессии аналитики взаимодействия с пользователем|
-|userExperienceAnalyticsDeviceStartupHistory|Коллекция [усерекспериенцеаналитиксдевицестартуфистори](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md)|Журнал запуска устройства Analytics User Experience|
-|усерекспериенцеаналитиксдевицестартуппроцессес|Коллекция [усерекспериенцеаналитиксдевицестартуппроцесс](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md)|Процессы запуска устройства Analytics User Experience|
-|userExperienceAnalyticsDeviceStartupProcessPerformance|Коллекция [усерекспериенцеаналитиксдевицестартуппроцессперформанце](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md)|Производительность процесса запуска устройства Analytics User Experience|
-|userExperienceAnalyticsStartupScoreHistory|Коллекция [усерекспериенцеаналитиксстартупскорехистори](../resources/intune-devices-userexperienceanalyticsstartupscorehistory.md)|Журнал оценки запуска устройства Analytics User Experience|
+|userExperienceAnalyticsOverview|userExperienceAnalyticsOverview|Обзор анализа пользовательского интерфейса|
+|усерекспериенцеаналитиксбаселинес|Коллекция Усерекспериенцеаналитиксбаселине|Шаблоны аналитики взаимодействия с пользователем|
+|усерекспериенцеаналитикскатегориес|Коллекция Усерекспериенцеаналитикскатегори|Категории аналитики взаимодействия с пользователем|
+|userExperienceAnalyticsDevicePerformance|Коллекция Усерекспериенцеаналитиксдевицеперформанце|Производительность устройства аналитики взаимодействия с пользователем|
+|userExperienceAnalyticsRegressionSummary|userExperienceAnalyticsRegressionSummary|Сводка по регрессии аналитики взаимодействия с пользователем|
+|userExperienceAnalyticsDeviceStartupHistory|Коллекция Усерекспериенцеаналитиксдевицестартуфистори|Журнал запуска устройства Analytics User Experience|
+|усерекспериенцеаналитиксдевицестартуппроцессес|Коллекция Усерекспериенцеаналитиксдевицестартуппроцесс|Процессы запуска устройства Analytics User Experience|
+|userExperienceAnalyticsDeviceStartupProcessPerformance|Коллекция Усерекспериенцеаналитиксдевицестартуппроцессперформанце|Производительность процесса запуска устройства Analytics User Experience|
 |**Регистрации**|
 |depOnboardingSettings|Коллекция [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Эти коллекции нескольких маркеров DEP для каждого клиента.|
 |импортеддевицеидентитиес|Коллекция [импортеддевицеидентити](../resources/intune-enrollment-importeddeviceidentity.md)|Импортированные удостоверения устройств.|
@@ -174,8 +177,6 @@ ms.locfileid: "42771105"
 |дериведкредентиалс|Коллекция [девицеманажементдериведкредентиалсеттингс](../resources/intune-shared-devicemanagementderivedcredentialsettings.md)|Коллекция параметров производных учетных данных, связанных с учетной записью.|
 |**Удаленный доступ**|
 |усерпфксцертификатес|Коллекция [усерпфксцертификате](../resources/intune-raimportcerts-userpfxcertificate.md)|Коллекция сертификатов PFX, связанных с пользователем.|
-|**Удаленная помощь**|
-|remoteAssistancePartners|Коллекция [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md)|Партнеры по удаленной помощи.|
 |**Управление доступом на основе ролей (RBAC)**|
 |resourceOperations|Коллекция [resourceOperation](../resources/intune-rbac-resourceoperation.md)|Операции с ресурсами.|
 |roleAssignments|Коллекция [deviceAndAppManagementRoleAssignment](../resources/intune-rbac-deviceandappmanagementroleassignment.md)|Назначения ролей.|

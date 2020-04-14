@@ -1,18 +1,20 @@
 ---
 title: Обновление Макосвппапп
 description: Обновление свойств объекта Макосвппапп.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a17d3a3eb37c824cc29c99a7fec4d6d864d0039
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: adfd344cd2f43397b50a5f3f345d8e88810a5cf0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761652"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43416096"
 ---
 # <a name="update-macosvppapp"></a>Обновление Макосвппапп
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -218,7 +220,6 @@ Content-Length: 2041
   ]
 }
 ```
-
 
 
 

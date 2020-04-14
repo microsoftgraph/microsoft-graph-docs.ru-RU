@@ -1,18 +1,20 @@
 ---
 title: Обновление Виндовсфонексап
 description: Обновление свойств объекта Виндовсфонексап.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1b0d4b9a101d67409d967999c5f4c956f906e5ca
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1f5dcecd676e12ab51c4a651b1393e51775a8090
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760720"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43409073"
 ---
 # <a name="update-windowsphonexap"></a>Обновление Виндовсфонексап
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -187,7 +189,6 @@ Content-Length: 1409
   "identityVersion": "Identity Version value"
 }
 ```
-
 
 
 

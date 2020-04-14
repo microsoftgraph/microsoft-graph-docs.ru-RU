@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Впнондемандруле
 description: Определение правила VPN по запросу.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cb1274dd966553ecde0514e0603619b6ed803c77
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: dd5724e4c2c1cfb5ca185dd8420011853812305a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787364"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43412149"
 ---
 # <a name="vpnondemandrule-resource-type"></a>Тип ресурса Впнондемандруле
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

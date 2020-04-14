@@ -1,18 +1,20 @@
 ---
 title: Обновление Усераппинсталлстатус
 description: Обновление свойств объекта Усераппинсталлстатус.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 70592860aff6ce68b37af123208cc2ee18f605b3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f8a0ffa1c1f4a9f44ef86f723ed1b0c470aeeba7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761035"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43414230"
 ---
 # <a name="update-userappinstallstatus"></a>Обновление Усераппинсталлстатус
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -99,7 +101,6 @@ Content-Length: 288
   "notInstalledDeviceCount": 7
 }
 ```
-
 
 
 

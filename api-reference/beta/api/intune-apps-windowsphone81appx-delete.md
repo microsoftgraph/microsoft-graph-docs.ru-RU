@@ -1,18 +1,20 @@
 ---
 title: Удаление windowsPhone81AppX
 description: Удаляет объект windowsPhone81AppX.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 6c5c0f805f61ca6466f3c68c26629b96410a225b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 711f008d30c8210797f257800c2ec2d9885cd505
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760846"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43409439"
 ---
 # <a name="delete-windowsphone81appx"></a>Удаление windowsPhone81AppX
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

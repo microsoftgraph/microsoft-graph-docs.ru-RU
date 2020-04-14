@@ -1,18 +1,20 @@
 ---
 title: Перечисление объектов androidForWorkAppConfigurationSchema
 description: Список свойств и связей объектов androidForWorkAppConfigurationSchema.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 21e9af6691bc6d07da815ac8b4a0e96b4dc7dad4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a040aceb93e561cca26dc6bdb8eed4405612f2d4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815749"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43418371"
 ---
 # <a name="list-androidforworkappconfigurationschemas"></a>Перечисление объектов androidForWorkAppConfigurationSchema
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -97,7 +99,6 @@ Content-Length: 977
   ]
 }
 ```
-
 
 
 

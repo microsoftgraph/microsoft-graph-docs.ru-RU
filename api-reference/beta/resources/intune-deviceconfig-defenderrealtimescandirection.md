@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Дефендерреалтимескандиректион
 description: Возможные значения для отслеживания действий с файлами.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c7568470ec57e25ab3f8562629273d26f2ee0381
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b4df7541cc1c3822ddd659d266d152d0edfe67b6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42794447"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413083"
 ---
 # <a name="defenderrealtimescandirection-enum-type"></a>тип перечисления Дефендерреалтимескандиректион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

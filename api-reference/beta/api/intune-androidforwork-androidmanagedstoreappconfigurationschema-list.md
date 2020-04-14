@@ -1,18 +1,20 @@
 ---
 title: Список Андроидманажедстореаппконфигуратионсчемас
 description: Список свойств и связей объектов Андроидманажедстореаппконфигуратионсчема.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d4195927eced6b2d8720ab26b591cc0525090cb1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 77d1f2d183ec3c0ccd0a5f336db92d8ecadefbd5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762415"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43417875"
 ---
 # <a name="list-androidmanagedstoreappconfigurationschemas"></a>Список Андроидманажедстореаппконфигуратионсчемас
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -123,7 +125,6 @@ Content-Length: 1871
   ]
 }
 ```
-
 
 
 

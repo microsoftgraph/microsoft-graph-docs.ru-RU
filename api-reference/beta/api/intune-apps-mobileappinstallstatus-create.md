@@ -1,18 +1,20 @@
 ---
 title: Создание mobileAppInstallStatus
 description: Создание нового объекта mobileAppInstallStatus.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 48218f2a1f793f231d65aefe1f51e11171a85a1a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2cf896807b1bce39b8f83a956ead7531a7c0d0b3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761239"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43414969"
 ---
 # <a name="create-mobileappinstallstatus"></a>Создание mobileAppInstallStatus
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -121,7 +123,6 @@ Content-Length: 604
   "displayVersion": "Display Version value"
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Создание windowsPhone81AppXBundle
 description: Создание нового объекта windowsPhone81AppXBundle.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ba52356610120cb4364784ae45d717c326402fb4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b727c08d71e9ca6e9efd54b040fe7cac8f96e85d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760818"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43409275"
 ---
 # <a name="create-windowsphone81appxbundle"></a>Создание windowsPhone81AppXBundle
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -247,7 +249,6 @@ Content-Length: 2483
   ]
 }
 ```
-
 
 
 

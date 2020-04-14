@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Упдатеклассификатион
 description: Возможные значения для автоматической классификации обновлений.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ff2283b0f54b139ffb017c033bf7d1ddbfe429d8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ea68b46ce1efce950c20cca94bad87b66b475c62
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787448"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43412633"
 ---
 # <a name="updateclassification-enum-type"></a>тип перечисления Упдатеклассификатион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,7 +28,7 @@ ms.locfileid: "42787448"
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
 |рекоммендедандимпортант|1,1|Рекомендуемые и важные.|
 |внимание|2|Внимание.|
-|none|4|Нет.|
+|нет|4|Нет.|
 
 
 

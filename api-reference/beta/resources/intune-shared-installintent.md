@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Инсталлинтент
 description: Возможные значения для способа установки, выбранного администратором.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 734c65ae867b7a0b6debae00e172b637c1e0aa66
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8ecb0184b4a5e93bd01b1e67d6c189293d947310
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42770062"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43407633"
 ---
 # <a name="installintent-enum-type"></a>тип перечисления Инсталлинтент
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

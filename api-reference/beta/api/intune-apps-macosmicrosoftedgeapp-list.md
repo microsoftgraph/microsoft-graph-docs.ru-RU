@@ -1,18 +1,20 @@
 ---
 title: Список Макосмикрософтеджеаппс
 description: Список свойств и связей объектов Макосмикрософтеджеапп.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2499b431de98a4130122c5cfdf30a0d80334a658
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 426b651f315240939b635a12910b6656d6e1ae3a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761750"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43416291"
 ---
 # <a name="list-macosmicrosoftedgeapps"></a>Список Макосмикрософтеджеаппс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -98,7 +100,6 @@ Content-Length: 1051
   ]
 }
 ```
-
 
 
 

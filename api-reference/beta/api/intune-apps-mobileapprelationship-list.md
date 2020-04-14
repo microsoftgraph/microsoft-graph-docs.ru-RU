@@ -1,18 +1,20 @@
 ---
 title: Список Мобилеаппрелатионшипс
 description: Список свойств и связей объектов Мобилеаппрелатионшип.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: de399a0a18c882d79c27ae47e7f9d8d26c0cda94
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 59777414cbde781bb522a2aa588e2d2728dae2eb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761148"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43414478"
 ---
 # <a name="list-mobileapprelationships"></a>Список Мобилеаппрелатионшипс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -76,7 +78,6 @@ Content-Length: 248
   ]
 }
 ```
-
 
 
 

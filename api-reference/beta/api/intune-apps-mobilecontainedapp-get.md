@@ -1,18 +1,20 @@
 ---
 title: Получение Мобилеконтаинедапп
 description: Чтение свойств и связей объекта Мобилеконтаинедапп.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 724782b7e94db374fb912aa2543daa26a90379e6
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8d474f591810f0308719211ed8087dfd90d54a9d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761141"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43414471"
 ---
 # <a name="get-mobilecontainedapp"></a>Получение Мобилеконтаинедапп
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -77,7 +79,6 @@ Content-Length: 132
   }
 }
 ```
-
 
 
 

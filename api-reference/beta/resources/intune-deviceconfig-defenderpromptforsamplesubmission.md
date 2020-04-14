@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Дефендерпромптфорсамплесубмиссион
 description: Возможные значения для подтверждения пользователя при отправке образцов.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7787dc018862a5311f37866957c6df4d968f910a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6f346797813e2589bf35e9e9c45243192fe16ac8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42794461"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413113"
 ---
 # <a name="defenderpromptforsamplesubmission-enum-type"></a>тип перечисления Дефендерпромптфорсамплесубмиссион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

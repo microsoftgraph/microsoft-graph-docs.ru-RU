@@ -2,19 +2,19 @@
 title: Тип ресурса Статусбасе
 description: Описывает состояние сводного события подготовки.
 localization_priority: Normal
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5b63290442f4faddf4bcd9e25c01ab564a7fcc94
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3afd7ea4e48c3f4c12a211c32278affea5d64b6b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520326"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43411907"
 ---
 # <a name="statusbase-resource-type"></a>Тип ресурса Статусбасе
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

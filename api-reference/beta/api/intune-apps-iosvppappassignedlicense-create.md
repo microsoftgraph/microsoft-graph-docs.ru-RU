@@ -1,18 +1,20 @@
 ---
 title: Создание Иосвппаппассигнедлиценсе
 description: Создание нового объекта Иосвппаппассигнедлиценсе.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 35aba9ad216f5f8e70352578daba8ccfbec5e65b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 00df430528128938c0ff9c5838d903d975dab961
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761890"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43416679"
 ---
 # <a name="create-iosvppappassignedlicense"></a>Создание Иосвппаппассигнедлиценсе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -96,7 +98,6 @@ Content-Length: 283
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

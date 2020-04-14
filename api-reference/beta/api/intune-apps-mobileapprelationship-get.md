@@ -1,18 +1,20 @@
 ---
 title: Получение Мобилеаппрелатионшип
 description: Чтение свойств и связей объекта Мобилеаппрелатионшип.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2c4505e8902301128e74faac8e35e814638e7a61
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c394444753cab4e715bb4ff79b9b49dd951a8045
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761155"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43414533"
 ---
 # <a name="get-mobileapprelationship"></a>Получение Мобилеаппрелатионшип
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -77,7 +79,6 @@ Content-Length: 226
   }
 }
 ```
-
 
 
 

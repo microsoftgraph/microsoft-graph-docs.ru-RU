@@ -1,18 +1,20 @@
 ---
 title: Обновление Макосмикрософтеджеапп
 description: Обновление свойств объекта Макосмикрософтеджеапп.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 058b38b6ef10ca55a313fae808b15cc5748e0320
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d71b21c2b2f7a580055648d9630820d40310764c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761722"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43416284"
 ---
 # <a name="update-macosmicrosoftedgeapp"></a>Обновление Макосмикрософтеджеапп
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -150,7 +152,6 @@ Content-Length: 914
   "channel": "beta"
 }
 ```
-
 
 
 

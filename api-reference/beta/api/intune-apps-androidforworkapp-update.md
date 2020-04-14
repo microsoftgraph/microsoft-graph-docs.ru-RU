@@ -1,18 +1,20 @@
 ---
 title: Обновление Андроидфорворкапп
 description: Обновление свойств объекта Андроидфорворкапп.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 43aee40395ab9ca4c9f5b4f575e0611e432fc029
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 90b162629711ff6fa120552dde36dc0447f93321
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762373"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43417766"
 ---
 # <a name="update-androidforworkapp"></a>Обновление Андроидфорворкапп
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -162,7 +164,6 @@ Content-Length: 1075
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
-
 
 
 

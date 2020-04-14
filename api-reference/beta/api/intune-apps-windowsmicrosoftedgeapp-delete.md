@@ -1,18 +1,20 @@
 ---
 title: Удаление Виндовсмикрософтеджеапп
 description: Удаляет объект Виндовсмикрософтеджеапп.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 04c8af08114ff9787a12e7f3270b353efc9a624c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e1f28bb96bfa1c9e05272f0ba6e23a5e7752a2ba
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760916"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43409509"
 ---
 # <a name="delete-windowsmicrosoftedgeapp"></a>Удаление Виндовсмикрософтеджеапп
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

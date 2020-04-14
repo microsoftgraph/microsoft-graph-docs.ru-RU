@@ -1,18 +1,20 @@
 ---
 title: Создание Виндовсфонексап
 description: Создание нового объекта Виндовсфонексап.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b67c2bbda8ddff855ea68a327697a0a019624569
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 11b9d63756a12ce23e5e8f8a347cdfc8f788226e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760748"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43409229"
 ---
 # <a name="create-windowsphonexap"></a>Создание Виндовсфонексап
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -185,7 +187,6 @@ Content-Length: 1409
   "identityVersion": "Identity Version value"
 }
 ```
-
 
 
 

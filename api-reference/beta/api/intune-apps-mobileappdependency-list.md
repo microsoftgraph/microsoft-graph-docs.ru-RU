@@ -1,18 +1,20 @@
 ---
 title: Список МобилеаппдепенденЦиес
 description: Список свойств и связей объектов Мобилеаппдепенденци.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4a82523f6bfae49500e9d56ae09f815d72410d65
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 85da4798bc3cc7d7c1f63e9ff63bd4ecde4c52d6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761253"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43415023"
 ---
 # <a name="list-mobileappdependencies"></a>Список МобилеаппдепенденЦиес
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -78,7 +80,6 @@ Content-Length: 317
   ]
 }
 ```
-
 
 
 

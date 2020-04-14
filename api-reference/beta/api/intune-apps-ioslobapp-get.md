@@ -1,18 +1,20 @@
 ---
 title: Get iosLobApp
 description: Чтение свойств и связей объекта iosLobApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e5dceb0e4659d0dca9e76bda77c3414e8b31d2f1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b25b826c08dc6bcf5b907019346532c0af0eca2b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762100"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43417182"
 ---
 # <a name="get-ioslobapp"></a>Get iosLobApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -122,7 +124,6 @@ Content-Length: 1696
   }
 }
 ```
-
 
 
 

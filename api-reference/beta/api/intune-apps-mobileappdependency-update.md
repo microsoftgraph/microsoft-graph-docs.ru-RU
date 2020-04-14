@@ -1,18 +1,20 @@
 ---
 title: Обновление Мобилеаппдепенденци
 description: Обновление свойств объекта Мобилеаппдепенденци.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 026194d2bf4bf6de2b657acd386a813915adae95
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 69b64cf579d54937095fcf86f1c66cfb6d99c938
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761246"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43414984"
 ---
 # <a name="update-mobileappdependency"></a>Обновление Мобилеаппдепенденци
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -96,7 +98,6 @@ Content-Length: 260
   "dependentAppCount": 1
 }
 ```
-
 
 
 

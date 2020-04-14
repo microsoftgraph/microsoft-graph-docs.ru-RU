@@ -1,18 +1,20 @@
 ---
 title: Удаление Андроидманажедсторевебапп
 description: Удаляет объект Андроидманажедсторевебапп.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7aee7b691461b8763e335fdf2d8c011687bfa1ef
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 85b297fdc4d4f5aed3bbcf605d9c7f850c76274d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762219"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43417409"
 ---
 # <a name="delete-androidmanagedstorewebapp"></a>Удаление Андроидманажедсторевебапп
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

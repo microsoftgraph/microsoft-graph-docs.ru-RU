@@ -1,18 +1,20 @@
 ---
 title: Список Виндовсфонексапс
 description: Список свойств и связей объектов Виндовсфонексап.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f70a340c4409452aade86f803bfd6d1dd984095
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 32861156d6db106139c8f6e798de6781ea5d14b8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760727"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43409120"
 ---
 # <a name="list-windowsphonexaps"></a>Список Виндовсфонексапс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -114,7 +116,6 @@ Content-Length: 1610
   ]
 }
 ```
-
 
 
 

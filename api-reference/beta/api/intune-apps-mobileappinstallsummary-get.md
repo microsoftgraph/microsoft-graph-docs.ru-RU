@@ -1,18 +1,20 @@
 ---
 title: Получение Мобилеаппинсталлсуммари
 description: Чтение свойств и связей объекта Мобилеаппинсталлсуммари.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5997856e3bd1b10d81d352044a3478a4d8153d60
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5e208e467acf95499c9a1a531f3f98737b583341
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761204"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43414798"
 ---
 # <a name="get-mobileappinstallsummary"></a>Получение Мобилеаппинсталлсуммари
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -85,7 +87,6 @@ Content-Length: 466
   }
 }
 ```
-
 
 
 

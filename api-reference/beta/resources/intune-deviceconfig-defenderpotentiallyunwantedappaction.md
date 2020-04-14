@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Дефендерпотентиаллюнвантедаппактион
 description: Действие защитника, которое будет принимать участие в обнаруженном потенциально нежелательном приложении (ПУА).
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0c99cf04b217239fb1a06b2a6c26dcacc6c61cf7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 11517fc4089913541fd40d48be188c81fb57bf4f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42794468"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43413128"
 ---
 # <a name="defenderpotentiallyunwantedappaction-enum-type"></a>тип перечисления Дефендерпотентиаллюнвантедаппактион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

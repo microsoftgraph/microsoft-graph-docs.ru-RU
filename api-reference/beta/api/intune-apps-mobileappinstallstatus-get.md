@@ -1,18 +1,20 @@
 ---
 title: Получение mobileAppInstallStatus
 description: Чтение свойств и связей объекта mobileAppInstallStatus.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 333f622821f44fcf5387eb243ada4f3287b01f53
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 540f8ecabd8579b7763be721fb092740e6ac5077
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761225"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43414899"
 ---
 # <a name="get-mobileappinstallstatus"></a>Получение mobileAppInstallStatus
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -88,7 +90,6 @@ Content-Length: 651
   }
 }
 ```
-
 
 
 

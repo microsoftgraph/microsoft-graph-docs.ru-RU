@@ -1,18 +1,20 @@
 ---
 title: Список Макосмдатпаппс
 description: Список свойств и связей объектов Макосмдатпапп.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 09629da1ab9b3f57918ab82ea2499e3a3107fae1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9fac6879be62aa9e07c0692eafde2fa6e10de1d0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761764"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43416392"
 ---
 # <a name="list-macosmdatpapps"></a>Список Макосмдатпаппс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -97,7 +99,6 @@ Content-Length: 1017
   ]
 }
 ```
-
 
 
 

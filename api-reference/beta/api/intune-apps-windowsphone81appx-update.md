@@ -1,18 +1,20 @@
 ---
 title: Обновление windowsPhone81AppX
 description: Обновление свойств объекта windowsPhone81AppX.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 60fc55f9ca97766ecb732cc2b1af03da693e8604
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 562df1bb46ad7ea0a82a43de5b21c65aade0ae50
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760825"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43409282"
 ---
 # <a name="update-windowsphone81appx"></a>Обновление windowsPhone81AppX
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -202,7 +204,6 @@ Content-Length: 1685
   "identityVersion": "Identity Version value"
 }
 ```
-
 
 
 

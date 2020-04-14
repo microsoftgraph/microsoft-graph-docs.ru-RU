@@ -1,18 +1,20 @@
 ---
 title: Перечисление объектов userInstallStateSummary
 description: Список свойств и связей объектов userInstallStateSummary.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9d08e63e63b6d40eaa3ca99211d56e8c73799402
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 08488731aab0b7f38b1e586bd06d7792ba602432
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760328"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43414021"
 ---
 # <a name="list-userinstallstatesummaries"></a>Перечисление объектов userInstallStateSummary
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -78,7 +80,6 @@ Content-Length: 295
   ]
 }
 ```
-
 
 
 

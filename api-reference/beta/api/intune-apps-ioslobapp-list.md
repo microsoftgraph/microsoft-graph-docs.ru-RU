@@ -1,18 +1,20 @@
 ---
 title: Перечисление объектов iosLobApp
 description: Список свойств и связей объектов iosLobApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bd1ba7d0b84549adf8588c441c9b6d1d07d2f80b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f5fac312bfa65c7efed2411ce374d65753c6f72c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42762114"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43417175"
 ---
 # <a name="list-ioslobapps"></a>Перечисление объектов iosLobApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -119,7 +121,6 @@ Content-Length: 1804
   ]
 }
 ```
-
 
 
 

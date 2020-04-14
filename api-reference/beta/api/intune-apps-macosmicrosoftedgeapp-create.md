@@ -1,18 +1,20 @@
 ---
 title: Создание Макосмикрософтеджеапп
 description: Создание нового объекта Макосмикрософтеджеапп.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d0f33fea4bd2d549f791640546cd271fd2c92100
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c8285e6d4d694644a207f7ccf65a57f2b3deaf3d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761735"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43416360"
 ---
 # <a name="create-macosmicrosoftedgeapp"></a>Создание Макосмикрософтеджеапп
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -148,7 +150,6 @@ Content-Length: 914
   "channel": "beta"
 }
 ```
-
 
 
 

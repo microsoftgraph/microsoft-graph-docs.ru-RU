@@ -1,18 +1,20 @@
 ---
 title: Список Манажедебуккатегориес
 description: Список свойств и связей объектов Манажедебуккатегори.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 218a5a87c3e2291c1bf28be81482fa162e192f4c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: be41882b438f2533bd7b97ce3ce65e75d61ad72a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760363"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43414152"
 ---
 # <a name="list-managedebookcategories"></a>Список Манажедебуккатегориес
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -77,7 +79,6 @@ Content-Length: 264
   ]
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Список Виндовсуниверсалаппксконтаинедаппс
 description: Список свойств и связей объектов Виндовсуниверсалаппксконтаинедапп.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f428ff1d57c82147d3b80af682576a99fd40947f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 21aa69095185dd32e5da4920740639c13047349b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760629"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43408838"
 ---
 # <a name="list-windowsuniversalappxcontainedapps"></a>Список Виндовсуниверсалаппксконтаинедаппс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -77,7 +79,6 @@ Content-Length: 216
   ]
 }
 ```
-
 
 
 

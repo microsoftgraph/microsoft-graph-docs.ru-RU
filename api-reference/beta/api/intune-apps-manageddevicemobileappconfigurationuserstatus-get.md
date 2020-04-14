@@ -1,18 +1,20 @@
 ---
 title: Get managedDeviceMobileAppConfigurationUserStatus
 description: Чтение свойств и связей объекта managedDeviceMobileAppConfigurationUserStatus.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b6db94dc59edd871ba406950eafa76000e7669d8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 12107acfeeb7dcc8cefbb74c6d86d28406c598e1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815461"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43415971"
 ---
 # <a name="get-manageddevicemobileappconfigurationuserstatus"></a>Get managedDeviceMobileAppConfigurationUserStatus
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -81,7 +83,6 @@ Content-Length: 388
   }
 }
 ```
-
 
 
 

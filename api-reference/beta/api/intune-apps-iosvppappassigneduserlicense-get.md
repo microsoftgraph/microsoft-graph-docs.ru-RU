@@ -1,18 +1,20 @@
 ---
 title: Получение Иосвппаппассигнедусерлиценсе
 description: Чтение свойств и связей объекта Иосвппаппассигнедусерлиценсе.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1235dbb30186ba741506d70dc48cebf83e0b96d3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1643e80de8bf570870045627cf4ae55ccec6df44
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42761820"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43416478"
 ---
 # <a name="get-iosvppappassigneduserlicense"></a>Получение Иосвппаппассигнедусерлиценсе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -79,7 +81,6 @@ Content-Length: 318
   }
 }
 ```
-
 
 
 
