@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса remoteActionAudit
 description: Отчет о удаленных действиях, запущенных на устройствах, относящихся к определенному клиенту.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4d741afd11d180224cc0be8940a3b76903299a35
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ab0ada68ca9d11b4c2a1c9ec7962a34f5cc665eb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783902"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446958"
 ---
 # <a name="remoteactionaudit-resource-type"></a>Тип ресурса remoteActionAudit
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

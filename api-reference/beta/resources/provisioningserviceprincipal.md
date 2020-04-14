@@ -2,15 +2,15 @@
 title: Тип ресурса ПровисионингсервицепринЦипал
 description: Представляет участника службы, используемого для подготовки.
 localization_priority: Normal
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fde8f4d41c7e2788c306fe0e0591b9ddb8ba031d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e163be94269ee6a75f148b460f728a36e8945645
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521336"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446578"
 ---
 # <a name="provisioningserviceprincipal-resource-type"></a>Тип ресурса ПровисионингсервицепринЦипал
 

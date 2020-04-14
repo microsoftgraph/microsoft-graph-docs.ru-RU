@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Впптокенревокелиценсесактионресулт
 description: Состояние действия отзыва лицензий, выполняемого в токене Apple Volume Purchase Program.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d2ec896504435c644767af1ff04a74f4eaf4aa17
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e4033342cfb1b08563b53a00ea1314209cc1db49
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42777504"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446832"
 ---
 # <a name="vpptokenrevokelicensesactionresult-resource-type"></a>Тип ресурса Впптокенревокелиценсесактионресулт
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

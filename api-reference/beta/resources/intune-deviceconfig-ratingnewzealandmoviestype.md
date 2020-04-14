@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Ратингневзеаландмовиестипе
 description: Метки рейтинга фильмов в Новой Зеландии
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c3d820e517c6705759b289c0bd981480eadbc1ab
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5ac2acd28f0114b69f7f9c508cb3538ebf36fa81
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787672"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445014"
 ---
 # <a name="ratingnewzealandmoviestype-enum-type"></a>тип перечисления Ратингневзеаландмовиестипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

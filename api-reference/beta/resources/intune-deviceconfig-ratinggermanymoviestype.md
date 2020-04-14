@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Ратингжерманимовиестипе
 description: Метки оценок фильмов в Германии
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1c9ff1a7fc9550aff24f768b4e0eeeb59690bd53
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d45b1328f3a08adb5925e2b582707b24fd1d7be4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787714"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445088"
 ---
 # <a name="ratinggermanymoviestype-enum-type"></a>тип перечисления Ратингжерманимовиестипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Ратингжапантелевисионтипе
 description: Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Японии
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 2a9b421a80cb2b8f93385d097db2849091123ca1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ac6d056edce19ce6485e11b9efa44ea7a814e586
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787679"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445029"
 ---
 # <a name="ratingjapantelevisiontype-enum-type"></a>тип перечисления Ратингжапантелевисионтипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

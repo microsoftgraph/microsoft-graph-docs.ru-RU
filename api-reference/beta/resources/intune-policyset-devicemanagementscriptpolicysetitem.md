@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Девицеманажементскриптполицисетитем
 description: Класс, содержащий свойства, которые используются для Полицисетитем скриптов управления устройствами.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4c0305fe60dea60b033af623b0fad8b93b08d13d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 26e2eea0acab63d3f99cf355d8987d6786d556e2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42776230"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446623"
 ---
 # <a name="devicemanagementscriptpolicysetitem-resource-type"></a>Тип ресурса Девицеманажементскриптполицисетитем
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

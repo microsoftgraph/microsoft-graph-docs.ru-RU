@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Счедуледретирестате
 description: 'Отмена или подтверждение запланированного снятия с учета '
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 801b4e6343dc68cbe29c29f4ad38ebf9059e13d1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3e574a2ccbfecf3665fd160379f09533b4986c5b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787588"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444864"
 ---
 # <a name="scheduledretirestate-enum-type"></a>тип перечисления Счедуледретирестате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

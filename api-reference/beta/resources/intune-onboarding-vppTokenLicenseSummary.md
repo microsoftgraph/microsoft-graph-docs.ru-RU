@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Впптокенлиценсесуммари
 description: Сводка по лицензии для определенного приложения в маркере.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 20d7c24c887ca97f3a5a9890f5089b745130055e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f6eea44907cc71977cff6c53351ef5dd8155e817
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42777877"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446869"
 ---
 # <a name="vpptokenlicensesummary-resource-type"></a>Тип ресурса Впптокенлиценсесуммари
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

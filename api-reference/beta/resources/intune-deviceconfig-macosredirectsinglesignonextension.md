@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Макосредиректсинглесигнонекстенсион
 description: Представляет профиль расширения единого входа с перенаправлением для устройств macOS.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8ffdd54d736999f740263455b0781f7cf7ba5514
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c5cca8702dfe821c7e1e73e02170afba49d88e50
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42789194"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43447026"
 ---
 # <a name="macosredirectsinglesignonextension-resource-type"></a>Тип ресурса Макосредиректсинглесигнонекстенсион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

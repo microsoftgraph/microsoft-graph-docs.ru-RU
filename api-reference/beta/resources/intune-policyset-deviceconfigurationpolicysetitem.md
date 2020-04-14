@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Девицеконфигуратионполицисетитем
 description: Класс, содержащий свойства, которые используются для настройки устройств Полицисетитем.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5fd9da900b45a43b41229aad98e41a8e9868128d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: be9b5c10c92dac804b4cc1408f90c5506ec78288
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42776244"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446638"
 ---
 # <a name="deviceconfigurationpolicysetitem-resource-type"></a>Тип ресурса Девицеконфигуратионполицисетитем
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

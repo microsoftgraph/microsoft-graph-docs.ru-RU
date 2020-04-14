@@ -2,19 +2,19 @@
 title: Тип ресурса Провисионингстеп
 description: 'Описывает действия, предпринимаемые для выполнения действия. '
 localization_priority: Normal
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4275730cfd7c9c9c58496b674062ffedb5d7a6cc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b0ae3d280d6d9dfc8877739b1003ae0c51f6acd6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521329"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446563"
 ---
 # <a name="provisioningstep-resource-type"></a>Тип ресурса Провисионингстеп
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -25,7 +25,7 @@ ms.locfileid: "42521329"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |description|String|Сводка действий, произошедших на этапе.|
-|подробности|[detailsInfo](detailsinfo.md)|Сведения о том, что произошло на этапе.|
+|details|[detailsInfo](detailsinfo.md)|Сведения о том, что произошло на этапе.|
 |name|String|Имя этапа.|
 |провисионингстептипе|String| Тип этапа. Возможные значения: `import`, `scoping`, `matching`, `processing`, `referenceResolution`, `export`, `unknownFutureValue`.|
 |status|String| Состояние этапа. Возможные значения: `success`, `failure`, `skipped`, `unknownFutureValue`.|

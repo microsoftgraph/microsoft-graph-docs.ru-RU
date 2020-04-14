@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Ратингиреландмовиестипе
 description: Метки оценок фильмов в Ирландии
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a5df4010ba503d2b3dbe0519c3bc25db52b96b96
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9cbe34d7aad77dc1ef9926f5e84c862527c07321
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787700"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43445074"
 ---
 # <a name="ratingirelandmoviestype-enum-type"></a>тип перечисления Ратингиреландмовиестипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

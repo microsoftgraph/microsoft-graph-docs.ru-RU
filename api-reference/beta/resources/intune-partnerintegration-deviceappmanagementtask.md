@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Девицеаппманажементтаск
 description: Задача управления приложениями для устройств.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f51f72823e7f353018cd3edc97155c418a767b1b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 76ec2531f5c7697e65727efe8847b8021a1ccf7d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42776769"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446697"
 ---
 # <a name="deviceappmanagementtask-resource-type"></a>Тип ресурса Девицеаппманажементтаск
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

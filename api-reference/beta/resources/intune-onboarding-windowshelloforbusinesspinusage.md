@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Виндовшеллофорбусинесспинусаже
 description: Параметры использования ПИН-кода Windows Hello для бизнеса
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e6024a230eff77492b6468225c078c8c12a74dea
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3cde7bfe0c0567dd342e9552b180ca48c1952ef5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42777231"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43446772"
 ---
 # <a name="windowshelloforbusinesspinusage-enum-type"></a>тип перечисления Виндовшеллофорбусинесспинусаже
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

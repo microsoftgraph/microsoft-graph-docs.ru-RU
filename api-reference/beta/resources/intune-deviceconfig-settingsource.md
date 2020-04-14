@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса settingSource
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9268e9f68bd8203a613d21851fa252c6390b8ddf
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 258633dc9e9893335e3859ec62bee4b5aa3b24c3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787560"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444827"
 ---
 # <a name="settingsource-resource-type"></a>Тип ресурса settingSource
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Секуреассессментаккаунттипе
 description: Тип учетных записей, разрешенных для Windows10SecureAssessment Конфигуратионаккаунт.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7a459e086b0b6ec44e625ca8a0932ea96422699a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6eae52aade876f7097838b476c0865dba7986e68
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787581"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444841"
 ---
 # <a name="secureassessmentaccounttype-enum-type"></a>тип перечисления Секуреассессментаккаунттипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Ретиресчедуледманажеддевице
 description: ManagedDevices, для которых запланировано снятие с учета
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9557780ffbf2d82edecdcdcaa747fe3cbd1bf8c3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 326961826e76350cf63a886b946d23eb7444bab1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787602"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444890"
 ---
 # <a name="retirescheduledmanageddevice-resource-type"></a>Тип ресурса Ретиресчедуледманажеддевице
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

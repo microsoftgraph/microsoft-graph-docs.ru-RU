@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Макослаунчитем
 description: Представляет приложение в списке элементов запуска macOS
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 378b2e3f510d8d0db082e3843ea2588e5a5e161d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 40d1631264f1aaaab5483cecd08222bb969c8a48
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42789208"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43447047"
 ---
 # <a name="macoslaunchitem-resource-type"></a>Тип ресурса Макослаунчитем
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -24,7 +26,7 @@ ms.locfileid: "42789208"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |path|String|Путь к запускаемому элементу.|
-|скрытых|Логический|Указывает, следует ли скрыть элемент в списке "пользователи и группы".|
+|скрытых|Логическое|Указывает, следует ли скрыть элемент в списке "пользователи и группы".|
 
 ## <a name="relationships"></a>Связи
 Нет
