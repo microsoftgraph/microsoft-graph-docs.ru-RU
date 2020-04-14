@@ -1,32 +1,34 @@
 ---
 title: тип перечисления Упдатеклассификатион
 description: Возможные значения для автоматической классификации обновлений.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ff2283b0f54b139ffb017c033bf7d1ddbfe429d8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ea68b46ce1efce950c20cca94bad87b66b475c62
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787448"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43412633"
 ---
-# <a name="updateclassification-enum-type"></a><span data-ttu-id="f0e32-103">тип перечисления Упдатеклассификатион</span><span class="sxs-lookup"><span data-stu-id="f0e32-103">updateClassification enum type</span></span>
+# <a name="updateclassification-enum-type"></a><span data-ttu-id="b882a-103">тип перечисления Упдатеклассификатион</span><span class="sxs-lookup"><span data-stu-id="b882a-103">updateClassification enum type</span></span>
 
-> <span data-ttu-id="f0e32-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f0e32-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="b882a-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b882a-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="f0e32-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="f0e32-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="b882a-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b882a-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="f0e32-106">Возможные значения для автоматической классификации обновлений.</span><span class="sxs-lookup"><span data-stu-id="f0e32-106">Possible values for automatic update classification.</span></span>
+> <span data-ttu-id="b882a-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="b882a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="f0e32-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="f0e32-107">Members</span></span>
-|<span data-ttu-id="f0e32-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="f0e32-108">Member</span></span>|<span data-ttu-id="f0e32-109">Значение</span><span class="sxs-lookup"><span data-stu-id="f0e32-109">Value</span></span>|<span data-ttu-id="f0e32-110">Описание</span><span class="sxs-lookup"><span data-stu-id="f0e32-110">Description</span></span>|
+<span data-ttu-id="b882a-107">Возможные значения для автоматической классификации обновлений.</span><span class="sxs-lookup"><span data-stu-id="b882a-107">Possible values for automatic update classification.</span></span>
+
+## <a name="members"></a><span data-ttu-id="b882a-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="b882a-108">Members</span></span>
+|<span data-ttu-id="b882a-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="b882a-109">Member</span></span>|<span data-ttu-id="b882a-110">Значение</span><span class="sxs-lookup"><span data-stu-id="b882a-110">Value</span></span>|<span data-ttu-id="b882a-111">Описание</span><span class="sxs-lookup"><span data-stu-id="b882a-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="f0e32-111">UserDefined типа</span><span class="sxs-lookup"><span data-stu-id="f0e32-111">userDefined</span></span>|<span data-ttu-id="f0e32-112">нуль</span><span class="sxs-lookup"><span data-stu-id="f0e32-112">0</span></span>|<span data-ttu-id="f0e32-113">Пользователь определен, значение по умолчанию, без намерения.</span><span class="sxs-lookup"><span data-stu-id="f0e32-113">User Defined, default value, no intent.</span></span>|
-|<span data-ttu-id="f0e32-114">рекоммендедандимпортант</span><span class="sxs-lookup"><span data-stu-id="f0e32-114">recommendedAndImportant</span></span>|<span data-ttu-id="f0e32-115">1,1</span><span class="sxs-lookup"><span data-stu-id="f0e32-115">1</span></span>|<span data-ttu-id="f0e32-116">Рекомендуемые и важные.</span><span class="sxs-lookup"><span data-stu-id="f0e32-116">Recommended and important.</span></span>|
-|<span data-ttu-id="f0e32-117">внимание</span><span class="sxs-lookup"><span data-stu-id="f0e32-117">important</span></span>|<span data-ttu-id="f0e32-118">2</span><span class="sxs-lookup"><span data-stu-id="f0e32-118">2</span></span>|<span data-ttu-id="f0e32-119">Внимание.</span><span class="sxs-lookup"><span data-stu-id="f0e32-119">Important.</span></span>|
-|<span data-ttu-id="f0e32-120">none</span><span class="sxs-lookup"><span data-stu-id="f0e32-120">none</span></span>|<span data-ttu-id="f0e32-121">4</span><span class="sxs-lookup"><span data-stu-id="f0e32-121">3</span></span>|<span data-ttu-id="f0e32-122">Нет.</span><span class="sxs-lookup"><span data-stu-id="f0e32-122">None.</span></span>|
+|<span data-ttu-id="b882a-112">UserDefined типа</span><span class="sxs-lookup"><span data-stu-id="b882a-112">userDefined</span></span>|<span data-ttu-id="b882a-113">нуль</span><span class="sxs-lookup"><span data-stu-id="b882a-113">0</span></span>|<span data-ttu-id="b882a-114">Пользователь определен, значение по умолчанию, без намерения.</span><span class="sxs-lookup"><span data-stu-id="b882a-114">User Defined, default value, no intent.</span></span>|
+|<span data-ttu-id="b882a-115">рекоммендедандимпортант</span><span class="sxs-lookup"><span data-stu-id="b882a-115">recommendedAndImportant</span></span>|<span data-ttu-id="b882a-116">1,1</span><span class="sxs-lookup"><span data-stu-id="b882a-116">1</span></span>|<span data-ttu-id="b882a-117">Рекомендуемые и важные.</span><span class="sxs-lookup"><span data-stu-id="b882a-117">Recommended and important.</span></span>|
+|<span data-ttu-id="b882a-118">внимание</span><span class="sxs-lookup"><span data-stu-id="b882a-118">important</span></span>|<span data-ttu-id="b882a-119">2</span><span class="sxs-lookup"><span data-stu-id="b882a-119">2</span></span>|<span data-ttu-id="b882a-120">Внимание.</span><span class="sxs-lookup"><span data-stu-id="b882a-120">Important.</span></span>|
+|<span data-ttu-id="b882a-121">нет</span><span class="sxs-lookup"><span data-stu-id="b882a-121">none</span></span>|<span data-ttu-id="b882a-122">4</span><span class="sxs-lookup"><span data-stu-id="b882a-122">3</span></span>|<span data-ttu-id="b882a-123">Нет.</span><span class="sxs-lookup"><span data-stu-id="b882a-123">None.</span></span>|
 
 
 

@@ -1,32 +1,34 @@
 ---
 title: тип перечисления Впндеадпирдетектионрате
 description: Определяет, как часто следует проверять активность однорангового подключения.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 003cccc6c1a1f9a5745bc4add5edc2a3b71e32c8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 047d4f51767a180d89ee8a4eeb121978981d9d22
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787399"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43412296"
 ---
-# <a name="vpndeadpeerdetectionrate-enum-type"></a><span data-ttu-id="9ed0e-103">тип перечисления Впндеадпирдетектионрате</span><span class="sxs-lookup"><span data-stu-id="9ed0e-103">vpnDeadPeerDetectionRate enum type</span></span>
+# <a name="vpndeadpeerdetectionrate-enum-type"></a><span data-ttu-id="d8fa5-103">тип перечисления Впндеадпирдетектионрате</span><span class="sxs-lookup"><span data-stu-id="d8fa5-103">vpnDeadPeerDetectionRate enum type</span></span>
 
-> <span data-ttu-id="9ed0e-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9ed0e-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="d8fa5-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d8fa5-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="9ed0e-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="9ed0e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="d8fa5-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d8fa5-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="9ed0e-106">Определяет, как часто следует проверять активность однорангового подключения.</span><span class="sxs-lookup"><span data-stu-id="9ed0e-106">Determines how often to check if a peer connection is still alive</span></span>
+> <span data-ttu-id="d8fa5-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="d8fa5-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="9ed0e-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="9ed0e-107">Members</span></span>
-|<span data-ttu-id="9ed0e-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="9ed0e-108">Member</span></span>|<span data-ttu-id="9ed0e-109">Значение</span><span class="sxs-lookup"><span data-stu-id="9ed0e-109">Value</span></span>|<span data-ttu-id="9ed0e-110">Описание</span><span class="sxs-lookup"><span data-stu-id="9ed0e-110">Description</span></span>|
+<span data-ttu-id="d8fa5-107">Определяет, как часто следует проверять активность однорангового подключения.</span><span class="sxs-lookup"><span data-stu-id="d8fa5-107">Determines how often to check if a peer connection is still alive</span></span>
+
+## <a name="members"></a><span data-ttu-id="d8fa5-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="d8fa5-108">Members</span></span>
+|<span data-ttu-id="d8fa5-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="d8fa5-109">Member</span></span>|<span data-ttu-id="d8fa5-110">Значение</span><span class="sxs-lookup"><span data-stu-id="d8fa5-110">Value</span></span>|<span data-ttu-id="d8fa5-111">Описание</span><span class="sxs-lookup"><span data-stu-id="d8fa5-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9ed0e-111">medium</span><span class="sxs-lookup"><span data-stu-id="9ed0e-111">medium</span></span>|<span data-ttu-id="9ed0e-112">нуль</span><span class="sxs-lookup"><span data-stu-id="9ed0e-112">0</span></span>|<span data-ttu-id="9ed0e-113">Средняя</span><span class="sxs-lookup"><span data-stu-id="9ed0e-113">Medium</span></span>|
-|<span data-ttu-id="9ed0e-114">none</span><span class="sxs-lookup"><span data-stu-id="9ed0e-114">none</span></span>|<span data-ttu-id="9ed0e-115">1,1</span><span class="sxs-lookup"><span data-stu-id="9ed0e-115">1</span></span>|<span data-ttu-id="9ed0e-116">Нет</span><span class="sxs-lookup"><span data-stu-id="9ed0e-116">None</span></span>|
-|<span data-ttu-id="9ed0e-117">потребление</span><span class="sxs-lookup"><span data-stu-id="9ed0e-117">low</span></span>|<span data-ttu-id="9ed0e-118">2</span><span class="sxs-lookup"><span data-stu-id="9ed0e-118">2</span></span>|<span data-ttu-id="9ed0e-119">Низкая</span><span class="sxs-lookup"><span data-stu-id="9ed0e-119">Low</span></span>|
-|<span data-ttu-id="9ed0e-120">высокоуровневых</span><span class="sxs-lookup"><span data-stu-id="9ed0e-120">high</span></span>|<span data-ttu-id="9ed0e-121">4</span><span class="sxs-lookup"><span data-stu-id="9ed0e-121">3</span></span>|<span data-ttu-id="9ed0e-122">Высокая</span><span class="sxs-lookup"><span data-stu-id="9ed0e-122">High</span></span>|
+|<span data-ttu-id="d8fa5-112">medium</span><span class="sxs-lookup"><span data-stu-id="d8fa5-112">medium</span></span>|<span data-ttu-id="d8fa5-113">нуль</span><span class="sxs-lookup"><span data-stu-id="d8fa5-113">0</span></span>|<span data-ttu-id="d8fa5-114">Средняя</span><span class="sxs-lookup"><span data-stu-id="d8fa5-114">Medium</span></span>|
+|<span data-ttu-id="d8fa5-115">нет</span><span class="sxs-lookup"><span data-stu-id="d8fa5-115">none</span></span>|<span data-ttu-id="d8fa5-116">1,1</span><span class="sxs-lookup"><span data-stu-id="d8fa5-116">1</span></span>|<span data-ttu-id="d8fa5-117">Нет</span><span class="sxs-lookup"><span data-stu-id="d8fa5-117">None</span></span>|
+|<span data-ttu-id="d8fa5-118">потребление</span><span class="sxs-lookup"><span data-stu-id="d8fa5-118">low</span></span>|<span data-ttu-id="d8fa5-119">2</span><span class="sxs-lookup"><span data-stu-id="d8fa5-119">2</span></span>|<span data-ttu-id="d8fa5-120">Низкая</span><span class="sxs-lookup"><span data-stu-id="d8fa5-120">Low</span></span>|
+|<span data-ttu-id="d8fa5-121">высокоуровневых</span><span class="sxs-lookup"><span data-stu-id="d8fa5-121">high</span></span>|<span data-ttu-id="d8fa5-122">4</span><span class="sxs-lookup"><span data-stu-id="d8fa5-122">3</span></span>|<span data-ttu-id="d8fa5-123">Высокая</span><span class="sxs-lookup"><span data-stu-id="d8fa5-123">High</span></span>|
 
 
 

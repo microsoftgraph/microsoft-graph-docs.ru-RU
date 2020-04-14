@@ -1,35 +1,37 @@
 ---
 title: Create androidForWorkEnrollmentProfile
 description: Создание объекта androidForWorkEnrollmentProfile.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0aafa6b7eaf3f3d3e5d54d5102e56d62b4e15846
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0356f5fb7fd7adb32d4a4bf696375813331636cb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42815735"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43418285"
 ---
-# <a name="create-androidforworkenrollmentprofile"></a><span data-ttu-id="398be-103">Create androidForWorkEnrollmentProfile</span><span class="sxs-lookup"><span data-stu-id="398be-103">Create androidForWorkEnrollmentProfile</span></span>
+# <a name="create-androidforworkenrollmentprofile"></a><span data-ttu-id="d63d8-103">Create androidForWorkEnrollmentProfile</span><span class="sxs-lookup"><span data-stu-id="d63d8-103">Create androidForWorkEnrollmentProfile</span></span>
 
-> <span data-ttu-id="398be-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="398be-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="d63d8-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d63d8-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="398be-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="398be-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="d63d8-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d63d8-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="398be-106">Создание объекта [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md).</span><span class="sxs-lookup"><span data-stu-id="398be-106">Create a new [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) object.</span></span>
+> <span data-ttu-id="d63d8-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="d63d8-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="398be-107">Необходимые разрешения</span><span class="sxs-lookup"><span data-stu-id="398be-107">Prerequisites</span></span>
-<span data-ttu-id="398be-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="398be-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d63d8-107">Создание объекта [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md).</span><span class="sxs-lookup"><span data-stu-id="d63d8-107">Create a new [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) object.</span></span>
 
-|<span data-ttu-id="398be-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="398be-110">Permission type</span></span>|<span data-ttu-id="398be-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="398be-111">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="d63d8-108">Необходимые разрешения</span><span class="sxs-lookup"><span data-stu-id="d63d8-108">Prerequisites</span></span>
+<span data-ttu-id="d63d8-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d63d8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="d63d8-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d63d8-111">Permission type</span></span>|<span data-ttu-id="d63d8-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="d63d8-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="398be-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="398be-112">Delegated (work or school account)</span></span>|<span data-ttu-id="398be-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="398be-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="398be-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="398be-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="398be-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="398be-115">Not supported.</span></span>|
-|<span data-ttu-id="398be-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="398be-116">Application</span></span>|<span data-ttu-id="398be-117">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="398be-117">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="d63d8-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d63d8-113">Delegated (work or school account)</span></span>|<span data-ttu-id="d63d8-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d63d8-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="d63d8-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d63d8-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d63d8-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d63d8-116">Not supported.</span></span>|
+|<span data-ttu-id="d63d8-117">Приложение</span><span class="sxs-lookup"><span data-stu-id="d63d8-117">Application</span></span>|<span data-ttu-id="d63d8-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d63d8-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="398be-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="398be-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d63d8-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d63d8-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,40 +40,40 @@ ms.locfileid: "42815735"
 POST /deviceManagement/androidForWorkEnrollmentProfiles
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="398be-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="398be-119">Request headers</span></span>
-|<span data-ttu-id="398be-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="398be-120">Header</span></span>|<span data-ttu-id="398be-121">Значение</span><span class="sxs-lookup"><span data-stu-id="398be-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d63d8-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="d63d8-120">Request headers</span></span>
+|<span data-ttu-id="d63d8-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="d63d8-121">Header</span></span>|<span data-ttu-id="d63d8-122">Значение</span><span class="sxs-lookup"><span data-stu-id="d63d8-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="398be-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="398be-122">Authorization</span></span>|<span data-ttu-id="398be-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="398be-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="398be-124">Accept</span><span class="sxs-lookup"><span data-stu-id="398be-124">Accept</span></span>|<span data-ttu-id="398be-125">application/json</span><span class="sxs-lookup"><span data-stu-id="398be-125">application/json</span></span>|
+|<span data-ttu-id="d63d8-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="d63d8-123">Authorization</span></span>|<span data-ttu-id="d63d8-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d63d8-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="d63d8-125">Accept</span><span class="sxs-lookup"><span data-stu-id="d63d8-125">Accept</span></span>|<span data-ttu-id="d63d8-126">application/json</span><span class="sxs-lookup"><span data-stu-id="d63d8-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="398be-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="398be-126">Request body</span></span>
-<span data-ttu-id="398be-127">В тексте запроса добавьте представление объекта androidForWorkEnrollmentProfile в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="398be-127">In the request body, supply a JSON representation for the androidForWorkEnrollmentProfile object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d63d8-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="d63d8-127">Request body</span></span>
+<span data-ttu-id="d63d8-128">В тексте запроса добавьте представление объекта androidForWorkEnrollmentProfile в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d63d8-128">In the request body, supply a JSON representation for the androidForWorkEnrollmentProfile object.</span></span>
 
-<span data-ttu-id="398be-128">В приведенной ниже таблице показаны свойства, которые необходимо указывать при создании объекта androidForWorkEnrollmentProfile.</span><span class="sxs-lookup"><span data-stu-id="398be-128">The following table shows the properties that are required when you create the androidForWorkEnrollmentProfile.</span></span>
+<span data-ttu-id="d63d8-129">В приведенной ниже таблице показаны свойства, которые необходимо указывать при создании объекта androidForWorkEnrollmentProfile.</span><span class="sxs-lookup"><span data-stu-id="d63d8-129">The following table shows the properties that are required when you create the androidForWorkEnrollmentProfile.</span></span>
 
-|<span data-ttu-id="398be-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="398be-129">Property</span></span>|<span data-ttu-id="398be-130">Тип</span><span class="sxs-lookup"><span data-stu-id="398be-130">Type</span></span>|<span data-ttu-id="398be-131">Описание</span><span class="sxs-lookup"><span data-stu-id="398be-131">Description</span></span>|
+|<span data-ttu-id="d63d8-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="d63d8-130">Property</span></span>|<span data-ttu-id="d63d8-131">Тип</span><span class="sxs-lookup"><span data-stu-id="d63d8-131">Type</span></span>|<span data-ttu-id="d63d8-132">Описание</span><span class="sxs-lookup"><span data-stu-id="d63d8-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="398be-132">accountId</span><span class="sxs-lookup"><span data-stu-id="398be-132">accountId</span></span>|<span data-ttu-id="398be-133">String</span><span class="sxs-lookup"><span data-stu-id="398be-133">String</span></span>|<span data-ttu-id="398be-134">GUID клиента, которому принадлежит профиль регистрации.</span><span class="sxs-lookup"><span data-stu-id="398be-134">Tenant GUID the enrollment profile belongs to.</span></span>|
-|<span data-ttu-id="398be-135">id</span><span class="sxs-lookup"><span data-stu-id="398be-135">id</span></span>|<span data-ttu-id="398be-136">Строка</span><span class="sxs-lookup"><span data-stu-id="398be-136">String</span></span>|<span data-ttu-id="398be-137">Уникальный GUID профиля регистрации.</span><span class="sxs-lookup"><span data-stu-id="398be-137">Unique GUID for the enrollment profile.</span></span>|
-|<span data-ttu-id="398be-138">displayName</span><span class="sxs-lookup"><span data-stu-id="398be-138">displayName</span></span>|<span data-ttu-id="398be-139">Строка</span><span class="sxs-lookup"><span data-stu-id="398be-139">String</span></span>|<span data-ttu-id="398be-140">Отображаемое имя для профиля регистрации.</span><span class="sxs-lookup"><span data-stu-id="398be-140">Display name for the enrollment profile.</span></span>|
-|<span data-ttu-id="398be-141">description</span><span class="sxs-lookup"><span data-stu-id="398be-141">description</span></span>|<span data-ttu-id="398be-142">String</span><span class="sxs-lookup"><span data-stu-id="398be-142">String</span></span>|<span data-ttu-id="398be-143">Описание профиля регистрации.</span><span class="sxs-lookup"><span data-stu-id="398be-143">Description for the enrollment profile.</span></span>|
-|<span data-ttu-id="398be-144">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="398be-144">createdDateTime</span></span>|<span data-ttu-id="398be-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="398be-145">DateTimeOffset</span></span>|<span data-ttu-id="398be-146">Дата и время создания профиля регистрации.</span><span class="sxs-lookup"><span data-stu-id="398be-146">Date time the enrollment profile was created.</span></span>|
-|<span data-ttu-id="398be-147">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="398be-147">lastModifiedDateTime</span></span>|<span data-ttu-id="398be-148">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="398be-148">DateTimeOffset</span></span>|<span data-ttu-id="398be-149">Дата и время последнего изменения профиля регистрации.</span><span class="sxs-lookup"><span data-stu-id="398be-149">Date time the enrollment profile was last modified.</span></span>|
-|<span data-ttu-id="398be-150">tokenValue</span><span class="sxs-lookup"><span data-stu-id="398be-150">tokenValue</span></span>|<span data-ttu-id="398be-151">String</span><span class="sxs-lookup"><span data-stu-id="398be-151">String</span></span>|<span data-ttu-id="398be-152">Значение последнего созданного маркера для этого профиля регистрации.</span><span class="sxs-lookup"><span data-stu-id="398be-152">Value of the most recently created token for this enrollment profile.</span></span>|
-|<span data-ttu-id="398be-153">tokenExpirationDateTime</span><span class="sxs-lookup"><span data-stu-id="398be-153">tokenExpirationDateTime</span></span>|<span data-ttu-id="398be-154">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="398be-154">DateTimeOffset</span></span>|<span data-ttu-id="398be-155">Дата и время, когда истекает срок действия последнего созданного маркера.</span><span class="sxs-lookup"><span data-stu-id="398be-155">Date time the most recently created token will expire.</span></span>|
-|<span data-ttu-id="398be-156">enrolledDeviceCount</span><span class="sxs-lookup"><span data-stu-id="398be-156">enrolledDeviceCount</span></span>|<span data-ttu-id="398be-157">Int32</span><span class="sxs-lookup"><span data-stu-id="398be-157">Int32</span></span>|<span data-ttu-id="398be-158">Общее количество устройств с Android, зарегистрированных через этот профиль регистрации.</span><span class="sxs-lookup"><span data-stu-id="398be-158">Total number of Android devices that have enrolled using this enrollment profile.</span></span>|
-|<span data-ttu-id="398be-159">qrCodeContent</span><span class="sxs-lookup"><span data-stu-id="398be-159">qrCodeContent</span></span>|<span data-ttu-id="398be-160">String</span><span class="sxs-lookup"><span data-stu-id="398be-160">String</span></span>|<span data-ttu-id="398be-161">Строка, используемая для создания QR-кода маркера.</span><span class="sxs-lookup"><span data-stu-id="398be-161">String used to generate a QR code for the token.</span></span>|
-|<span data-ttu-id="398be-162">qrCodeImage</span><span class="sxs-lookup"><span data-stu-id="398be-162">qrCodeImage</span></span>|[<span data-ttu-id="398be-163">mimeContent</span><span class="sxs-lookup"><span data-stu-id="398be-163">mimeContent</span></span>](../resources/intune-shared-mimecontent.md)|<span data-ttu-id="398be-164">Строка, используемая для создания QR-кода маркера.</span><span class="sxs-lookup"><span data-stu-id="398be-164">String used to generate a QR code for the token.</span></span>|
+|<span data-ttu-id="d63d8-133">accountId</span><span class="sxs-lookup"><span data-stu-id="d63d8-133">accountId</span></span>|<span data-ttu-id="d63d8-134">String</span><span class="sxs-lookup"><span data-stu-id="d63d8-134">String</span></span>|<span data-ttu-id="d63d8-135">GUID клиента, которому принадлежит профиль регистрации.</span><span class="sxs-lookup"><span data-stu-id="d63d8-135">Tenant GUID the enrollment profile belongs to.</span></span>|
+|<span data-ttu-id="d63d8-136">id</span><span class="sxs-lookup"><span data-stu-id="d63d8-136">id</span></span>|<span data-ttu-id="d63d8-137">Строка</span><span class="sxs-lookup"><span data-stu-id="d63d8-137">String</span></span>|<span data-ttu-id="d63d8-138">Уникальный GUID профиля регистрации.</span><span class="sxs-lookup"><span data-stu-id="d63d8-138">Unique GUID for the enrollment profile.</span></span>|
+|<span data-ttu-id="d63d8-139">displayName</span><span class="sxs-lookup"><span data-stu-id="d63d8-139">displayName</span></span>|<span data-ttu-id="d63d8-140">Строка</span><span class="sxs-lookup"><span data-stu-id="d63d8-140">String</span></span>|<span data-ttu-id="d63d8-141">Отображаемое имя для профиля регистрации.</span><span class="sxs-lookup"><span data-stu-id="d63d8-141">Display name for the enrollment profile.</span></span>|
+|<span data-ttu-id="d63d8-142">description</span><span class="sxs-lookup"><span data-stu-id="d63d8-142">description</span></span>|<span data-ttu-id="d63d8-143">String</span><span class="sxs-lookup"><span data-stu-id="d63d8-143">String</span></span>|<span data-ttu-id="d63d8-144">Описание профиля регистрации.</span><span class="sxs-lookup"><span data-stu-id="d63d8-144">Description for the enrollment profile.</span></span>|
+|<span data-ttu-id="d63d8-145">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="d63d8-145">createdDateTime</span></span>|<span data-ttu-id="d63d8-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d63d8-146">DateTimeOffset</span></span>|<span data-ttu-id="d63d8-147">Дата и время создания профиля регистрации.</span><span class="sxs-lookup"><span data-stu-id="d63d8-147">Date time the enrollment profile was created.</span></span>|
+|<span data-ttu-id="d63d8-148">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="d63d8-148">lastModifiedDateTime</span></span>|<span data-ttu-id="d63d8-149">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d63d8-149">DateTimeOffset</span></span>|<span data-ttu-id="d63d8-150">Дата и время последнего изменения профиля регистрации.</span><span class="sxs-lookup"><span data-stu-id="d63d8-150">Date time the enrollment profile was last modified.</span></span>|
+|<span data-ttu-id="d63d8-151">tokenValue</span><span class="sxs-lookup"><span data-stu-id="d63d8-151">tokenValue</span></span>|<span data-ttu-id="d63d8-152">String</span><span class="sxs-lookup"><span data-stu-id="d63d8-152">String</span></span>|<span data-ttu-id="d63d8-153">Значение последнего созданного маркера для этого профиля регистрации.</span><span class="sxs-lookup"><span data-stu-id="d63d8-153">Value of the most recently created token for this enrollment profile.</span></span>|
+|<span data-ttu-id="d63d8-154">tokenExpirationDateTime</span><span class="sxs-lookup"><span data-stu-id="d63d8-154">tokenExpirationDateTime</span></span>|<span data-ttu-id="d63d8-155">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d63d8-155">DateTimeOffset</span></span>|<span data-ttu-id="d63d8-156">Дата и время, когда истекает срок действия последнего созданного маркера.</span><span class="sxs-lookup"><span data-stu-id="d63d8-156">Date time the most recently created token will expire.</span></span>|
+|<span data-ttu-id="d63d8-157">enrolledDeviceCount</span><span class="sxs-lookup"><span data-stu-id="d63d8-157">enrolledDeviceCount</span></span>|<span data-ttu-id="d63d8-158">Int32</span><span class="sxs-lookup"><span data-stu-id="d63d8-158">Int32</span></span>|<span data-ttu-id="d63d8-159">Общее количество устройств с Android, зарегистрированных через этот профиль регистрации.</span><span class="sxs-lookup"><span data-stu-id="d63d8-159">Total number of Android devices that have enrolled using this enrollment profile.</span></span>|
+|<span data-ttu-id="d63d8-160">qrCodeContent</span><span class="sxs-lookup"><span data-stu-id="d63d8-160">qrCodeContent</span></span>|<span data-ttu-id="d63d8-161">String</span><span class="sxs-lookup"><span data-stu-id="d63d8-161">String</span></span>|<span data-ttu-id="d63d8-162">Строка, используемая для создания QR-кода маркера.</span><span class="sxs-lookup"><span data-stu-id="d63d8-162">String used to generate a QR code for the token.</span></span>|
+|<span data-ttu-id="d63d8-163">qrCodeImage</span><span class="sxs-lookup"><span data-stu-id="d63d8-163">qrCodeImage</span></span>|[<span data-ttu-id="d63d8-164">mimeContent</span><span class="sxs-lookup"><span data-stu-id="d63d8-164">mimeContent</span></span>](../resources/intune-shared-mimecontent.md)|<span data-ttu-id="d63d8-165">Строка, используемая для создания QR-кода маркера.</span><span class="sxs-lookup"><span data-stu-id="d63d8-165">String used to generate a QR code for the token.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="398be-165">Ответ</span><span class="sxs-lookup"><span data-stu-id="398be-165">Response</span></span>
-<span data-ttu-id="398be-166">В случае успешного выполнения этот метод возвращает код ответа `201 Created` и объект [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="398be-166">If successful, this method returns a `201 Created` response code and a [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="d63d8-166">Ответ</span><span class="sxs-lookup"><span data-stu-id="d63d8-166">Response</span></span>
+<span data-ttu-id="d63d8-167">В случае успешного выполнения этот метод возвращает код ответа `201 Created` и объект [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="d63d8-167">If successful, this method returns a `201 Created` response code and a [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="398be-167">Пример</span><span class="sxs-lookup"><span data-stu-id="398be-167">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d63d8-168">Пример</span><span class="sxs-lookup"><span data-stu-id="d63d8-168">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="398be-168">Запрос</span><span class="sxs-lookup"><span data-stu-id="398be-168">Request</span></span>
-<span data-ttu-id="398be-169">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="398be-169">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="d63d8-169">Запрос</span><span class="sxs-lookup"><span data-stu-id="d63d8-169">Request</span></span>
+<span data-ttu-id="d63d8-170">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d63d8-170">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/androidForWorkEnrollmentProfiles
 Content-type: application/json
@@ -94,8 +96,8 @@ Content-length: 496
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="398be-170">Отклик</span><span class="sxs-lookup"><span data-stu-id="398be-170">Response</span></span>
-<span data-ttu-id="398be-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="398be-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="d63d8-171">Отклик</span><span class="sxs-lookup"><span data-stu-id="d63d8-171">Response</span></span>
+<span data-ttu-id="d63d8-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d63d8-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -120,7 +122,6 @@ Content-Length: 668
   }
 }
 ```
-
 
 
 
