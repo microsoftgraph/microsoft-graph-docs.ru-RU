@@ -2,17 +2,19 @@
 title: Получение Виндовсоффицеклиентсекуритиконфигуратион
 description: Получение определенного объекта политики безопасности Виндовсоффицеклиентсекуритиконфигуратион.
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9634f41e84458c1a534168922c4e06830eb49ed3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e4e1e46c22e5fbeb8356844897c6d007633a307b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760202"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436656"
 ---
 # <a name="get-windowsofficeclientsecurityconfiguration"></a>Получение Виндовсоффицеклиентсекуритиконфигуратион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -39,7 +41,7 @@ GET /officeConfiguration/clientConfigurations/{key}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
@@ -101,7 +103,6 @@ Content-Length: 1152
   }
 }
 ```
-
 
 
 

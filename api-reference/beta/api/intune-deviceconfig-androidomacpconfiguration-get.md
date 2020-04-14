@@ -1,18 +1,20 @@
 ---
 title: Получение Андроидомакпконфигуратион
 description: Чтение свойств и связей объекта Андроидомакпконфигуратион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3d3a477989524ce89d13ed2fad29d8d32444b27d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 906feccb7ef0359575b9dbf6c4e1df1b0f011c56
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42758933"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43435617"
 ---
 # <a name="get-androidomacpconfiguration"></a>Получение Андроидомакпконфигуратион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -108,7 +110,6 @@ Content-Length: 1336
   }
 }
 ```
-
 
 
 

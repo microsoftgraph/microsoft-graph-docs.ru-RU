@@ -1,18 +1,20 @@
 ---
 title: Обновление объекта termsAndConditionsAcceptanceStatus
 description: Обновление свойств объекта termsAndConditionsAcceptanceStatus.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a888767b3ee8d027d6ef7cde22778505dd818360
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 23d368e6b7389c7a2e297fd9b5886b11ad66e3dd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760118"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436474"
 ---
 # <a name="update-termsandconditionsacceptancestatus"></a>Обновление объекта termsAndConditionsAcceptanceStatus
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -96,7 +98,6 @@ Content-Length: 313
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

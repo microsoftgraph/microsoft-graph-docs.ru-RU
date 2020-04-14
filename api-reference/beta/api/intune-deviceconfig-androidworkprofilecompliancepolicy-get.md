@@ -1,18 +1,20 @@
 ---
 title: Получение androidWorkProfileCompliancePolicy
 description: Чтение свойств и связей объекта androidWorkProfileCompliancePolicy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 92c3e5a437a4f0e561f403b726003169499638c6
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fcc4bf69460531e0240fd19067aacf27d4ec4b41
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42758595"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43435281"
 ---
 # <a name="get-androidworkprofilecompliancepolicy"></a>Получение androidWorkProfileCompliancePolicy
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -106,7 +108,6 @@ Content-Length: 1607
   }
 }
 ```
-
 
 
 

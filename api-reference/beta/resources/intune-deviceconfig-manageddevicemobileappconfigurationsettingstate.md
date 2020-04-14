@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Манажеддевицемобилеаппконфигуратионсеттингстате
 description: Состояние параметров конфигурации мобильных приложений для управляемых устройств для данного устройства.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 740d2fe591810829080ed6da78e9c6fcc68e7d52
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9f5fbdae9a59b19216db0db0f460402ce3ba374a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42788620"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437294"
 ---
 # <a name="manageddevicemobileappconfigurationsettingstate-resource-type"></a>Тип ресурса Манажеддевицемобилеаппконфигуратионсеттингстате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -35,6 +37,7 @@ ms.locfileid: "42788620"
 |userPrincipalName|Строка|Имя участника-пользователя.|
 |sources|Коллекция [settingSource](../resources/intune-deviceconfig-settingsource.md)|Соответствующие политики|
 |currentValue|String|Текущее значение параметра на устройстве|
+|сеттингинстанцеид|String|сеттингинстанцеид|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -66,7 +69,8 @@ ms.locfileid: "42788620"
       "displayName": "String"
     }
   ],
-  "currentValue": "String"
+  "currentValue": "String",
+  "settingInstanceId": "String"
 }
 ```
 

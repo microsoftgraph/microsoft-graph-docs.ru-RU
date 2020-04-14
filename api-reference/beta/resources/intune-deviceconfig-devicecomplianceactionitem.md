@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса deviceComplianceActionItem
 description: Конфигурация запланированного действия
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e4b8f3e58579f6cbed7c07db2b67c52ef6962e71
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: cde85db4e580e7cb91c77428c0d4728e5d096628
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42793368"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437401"
 ---
 # <a name="devicecomplianceactionitem-resource-type"></a>Тип ресурса deviceComplianceActionItem
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

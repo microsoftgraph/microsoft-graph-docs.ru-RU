@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса win32LobAppAssignmentSettings
 description: Содержит свойства, используемые для назначения бизнес-приложения Win32 для группы.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 340dc21cce7b52ebc55c13488f7340c7b66f9e26
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 199a2444a814e989d1567830c400762556f7a6fe
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42767045"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436970"
 ---
 # <a name="win32lobappassignmentsettings-resource-type"></a>Тип ресурса win32LobAppAssignmentSettings
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

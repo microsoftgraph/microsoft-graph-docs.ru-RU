@@ -1,18 +1,20 @@
 ---
 title: Создание объекта termsAndConditionsAssignment
 description: Создание объекта termsAndConditionsAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 329bd5b227600dff42c96d54a6a0497f8b978af3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 109e382e5e0f9c8e27c662775d5a043a76a6a5e9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760111"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436451"
 ---
 # <a name="create-termsandconditionsassignment"></a>Создание объекта termsAndConditionsAssignment
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -91,7 +93,6 @@ Content-Length: 217
   }
 }
 ```
-
 
 
 

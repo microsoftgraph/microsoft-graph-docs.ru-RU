@@ -1,18 +1,20 @@
 ---
 title: Создание Адванцедсреатпротектиононбоардингдевицесеттингстате
 description: Создание нового объекта Адванцедсреатпротектиононбоардингдевицесеттингстате.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 89f9494e906122b3419115366e45e3f5816d04fa
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 35e3d747bb818269da07f200917db939dd3f7684
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760041"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436300"
 ---
 # <a name="create-advancedthreatprotectiononboardingdevicesettingstate"></a>Создание Адванцедсреатпротектиононбоардингдевицесеттингстате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -120,7 +122,6 @@ Content-Length: 622
   "complianceGracePeriodExpirationDateTime": "2016-12-31T23:56:44.951111-08:00"
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: тип перечисления deviceComplianceActionType
 description: Перечисление типов запланированных действий
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4ebf4df22787d19e5718ebd2099cd81af3925271
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f0a5a3b4ab73bc0d97b5b47619cdcabb401400f2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42793361"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437394"
 ---
 # <a name="devicecomplianceactiontype-enum-type"></a>тип перечисления deviceComplianceActionType
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

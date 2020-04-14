@@ -2,17 +2,19 @@
 title: Список Оффицеклиентконфигуратионассигнментс
 description: Список свойств и связей объектов Оффицеклиентконфигуратионассигнмент.
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7995dcc882c486ce8cafff38a98966edac39f80f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b93e6d431a41b67fe2eb75233c4dfb0e7982ad38
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760265"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436759"
 ---
 # <a name="list-officeclientconfigurationassignments"></a>Список Оффицеклиентконфигуратионассигнментс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -77,7 +79,6 @@ Content-Length: 274
   ]
 }
 ```
-
 
 
 

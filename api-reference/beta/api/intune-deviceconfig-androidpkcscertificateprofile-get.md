@@ -1,18 +1,20 @@
 ---
 title: Получение androidPkcsCertificateProfile
 description: Чтение свойств и связей объекта androidPkcsCertificateProfile.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b88bf68db16319fd7b8c5cee9b54de317a3f328e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 343ef0dcfb7e89a50230a5f2b8205af31c9b8605
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42758849"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43435566"
 ---
 # <a name="get-androidpkcscertificateprofile"></a>Получение androidPkcsCertificateProfile
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -123,7 +125,6 @@ Content-Length: 2018
   }
 }
 ```
-
 
 
 

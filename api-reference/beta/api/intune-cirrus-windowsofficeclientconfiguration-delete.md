@@ -2,17 +2,19 @@
 title: Удаление Виндовсоффицеклиентконфигуратион
 description: Удаление определенной политики, не относящейся к безопасности.
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d64c1bbc62988623212a100cdcf6c0c88e29b4e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2827d8eec3d8b83b6e69243f9cd6b18a6a0a4f32
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760244"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436881"
 ---
 # <a name="delete-windowsofficeclientconfiguration"></a>Удаление Виндовсоффицеклиентконфигуратион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations
 ``` http
 HTTP/1.1 200 OK
 ```
-
 
 
 

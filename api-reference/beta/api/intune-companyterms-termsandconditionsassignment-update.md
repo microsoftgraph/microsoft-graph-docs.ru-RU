@@ -1,18 +1,20 @@
 ---
 title: Обновление объекта termsAndConditionsAssignment
 description: Удаление свойств объекта termsAndConditionsAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7263b3efda52aec08ef7e9b1014a0d0ed1206442
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 83a718a635a607113bfda037e50e8c944bcb3306
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760083"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436406"
 ---
 # <a name="update-termsandconditionsassignment"></a>Обновление объекта termsAndConditionsAssignment
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -91,7 +93,6 @@ Content-Length: 217
   }
 }
 ```
-
 
 
 

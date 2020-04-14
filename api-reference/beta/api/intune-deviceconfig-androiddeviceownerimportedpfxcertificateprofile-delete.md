@@ -1,18 +1,20 @@
 ---
 title: Удаление Андроиддевицеовнеримпортедпфксцертификатепрофиле
 description: Удаляет объект Андроиддевицеовнеримпортедпфксцертификатепрофиле.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 53cf309e0bd2e2532fb931fcfe43d590c831e45f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f68b5c18a004fd355fe965b1c7c3fb1b6ae0af1a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42759782"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436204"
 ---
 # <a name="delete-androiddeviceownerimportedpfxcertificateprofile"></a>Удаление Андроиддевицеовнеримпортедпфксцертификатепрофиле
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

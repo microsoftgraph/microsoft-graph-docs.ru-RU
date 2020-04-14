@@ -1,18 +1,20 @@
 ---
 title: Получение Андроиддевицеовнеримпортедпфксцертификатепрофиле
 description: Чтение свойств и связей объекта Андроиддевицеовнеримпортедпфксцертификатепрофиле.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 00dcfe9d2aed7d50852174305718e55f4dacad86
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0e0a6214e3c7c4c6ce1c7b71a5fd0e3f5944981e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42759775"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436197"
 ---
 # <a name="get-androiddeviceownerimportedpfxcertificateprofile"></a>Получение Андроиддевицеовнеримпортедпфксцертификатепрофиле
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -120,7 +122,6 @@ Content-Length: 1784
   }
 }
 ```
-
 
 
 

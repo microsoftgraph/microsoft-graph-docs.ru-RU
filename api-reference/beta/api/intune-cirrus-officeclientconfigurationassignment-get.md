@@ -2,17 +2,19 @@
 title: Получение Оффицеклиентконфигуратионассигнмент
 description: Чтение свойств и связей объекта Оффицеклиентконфигуратионассигнмент.
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0d0fd8828bf68e86295ef034580fb7af4396f780
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e515ba043846fead0b162329305c1c2f25915c90
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760272"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436782"
 ---
 # <a name="get-officeclientconfigurationassignment"></a>Получение Оффицеклиентконфигуратионассигнмент
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -39,7 +41,7 @@ GET /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assi
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/en-us/graph/docs/overview/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
@@ -78,7 +80,6 @@ Content-Length: 250
   }
 }
 ```
-
 
 
 

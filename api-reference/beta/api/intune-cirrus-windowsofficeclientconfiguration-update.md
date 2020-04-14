@@ -2,17 +2,19 @@
 title: Обновление Виндовсоффицеклиентконфигуратион
 description: Обновление определенных полезных данных политики, не связанных с безопасностью.
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 002db1e869df1af5b91bb73717eee7d1fe4756ac
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 81d75e24cd6e6687b081ed77a7195ab6bad08c2d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760223"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436693"
 ---
 # <a name="update-windowsofficeclientconfiguration"></a>Обновление Виндовсоффицеклиентконфигуратион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -142,7 +144,6 @@ Content-Length: 1069
   ]
 }
 ```
-
 
 
 

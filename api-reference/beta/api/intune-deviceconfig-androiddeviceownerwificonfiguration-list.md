@@ -1,18 +1,20 @@
 ---
 title: Список Андроиддевицеовнервификонфигуратионс
 description: Список свойств и связей объектов Андроиддевицеовнервификонфигуратион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0627bc5584dff8c1df9c170376ea5a12090de071
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a3aaab638f2e70281591b52e8951601a3f5f4593
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42759628"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436010"
 ---
 # <a name="list-androiddeviceownerwificonfigurations"></a>Список Андроиддевицеовнервификонфигуратионс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -112,7 +114,6 @@ Content-Length: 1643
   ]
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Получение Адванцедсреатпротектиононбоардингдевицесеттингстате
 description: Чтение свойств и связей объекта Адванцедсреатпротектиононбоардингдевицесеттингстате.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 311bf610d652e09e290421070265bad4621556dd
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3eb3cb9e1fabc095bb3c01d039c80a21557277fb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760027"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436286"
 ---
 # <a name="get-advancedthreatprotectiononboardingdevicesettingstate"></a>Получение Адванцедсреатпротектиононбоардингдевицесеттингстате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -87,7 +89,6 @@ Content-Length: 669
   }
 }
 ```
-
 
 
 

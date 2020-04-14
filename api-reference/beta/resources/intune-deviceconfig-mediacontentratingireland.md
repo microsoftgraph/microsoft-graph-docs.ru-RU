@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса mediaContentRatingIreland
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5b6e6dc939672d855b2fd25b47a54ea3f62d4280
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d569690ffef3b1e01cd4c01f3c52a98805fcec09
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42788578"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437210"
 ---
 # <a name="mediacontentratingireland-resource-type"></a>Тип ресурса mediaContentRatingIreland
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

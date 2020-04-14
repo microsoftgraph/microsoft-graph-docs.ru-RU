@@ -1,18 +1,20 @@
 ---
 title: Получение Андроиддевицеовнервпнконфигуратион
 description: Чтение свойств и связей объекта Андроиддевицеовнервпнконфигуратион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: dd607bc44aeac4c68118f237767bb3c054ccc42b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1e3285de7db1190d0c6e43c022286c6b0e6eca72
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42759670"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436068"
 ---
 # <a name="get-androiddeviceownervpnconfiguration"></a>Получение Андроиддевицеовнервпнконфигуратион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -120,7 +122,6 @@ Content-Length: 1698
   }
 }
 ```
-
 
 
 

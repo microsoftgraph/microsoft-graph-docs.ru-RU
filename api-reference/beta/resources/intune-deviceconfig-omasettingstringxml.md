@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса omaSettingStringXml
 description: Определение строки параметра OMA в формате XML.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 37c8996eb59186d8b8d5c0c486d40a7b06ce2dc5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2ef4b46f375757419f63f11e0178ed4ab9ea5e11
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42788431"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437075"
 ---
 # <a name="omasettingstringxml-resource-type"></a>Тип ресурса omaSettingStringXml
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

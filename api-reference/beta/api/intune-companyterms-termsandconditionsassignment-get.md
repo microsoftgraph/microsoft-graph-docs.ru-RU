@@ -1,18 +1,20 @@
 ---
 title: Получение объекта termsAndConditionsAssignment
 description: Чтение свойств и связей объекта termsAndConditionsAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 64d08c25b2bedd350b685f7a43249b7e01bb857e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0763fc314a0251e9d848b37e439ee1979b39aa16
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760097"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436436"
 ---
 # <a name="get-termsandconditionsassignment"></a>Получение объекта termsAndConditionsAssignment
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -78,7 +80,6 @@ Content-Length: 246
   }
 }
 ```
-
 
 
 

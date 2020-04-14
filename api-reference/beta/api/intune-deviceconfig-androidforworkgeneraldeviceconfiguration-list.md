@@ -1,18 +1,20 @@
 ---
 title: Список Андроидфорворкженералдевицеконфигуратионс
 description: Список свойств и связей объектов androidForWorkGeneralDeviceConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a67f9a5c2a659be42e5342b6fd216b367527a874
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 222097a7bbc2bd0670e303c536bff8df12749b87
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42759318"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436003"
 ---
 # <a name="list-androidforworkgeneraldeviceconfigurations"></a>Список Андроидфорворкженералдевицеконфигуратионс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -143,7 +145,6 @@ Content-Length: 3398
   ]
 }
 ```
-
 
 
 

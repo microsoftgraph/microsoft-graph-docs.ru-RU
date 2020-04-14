@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Миракастчаннел
 description: Возможные значения для канала Miracast.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: e3cca2c5a91c88e7bf7890ab8f35c4948986faca
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8492496b9c76b60a59d0c318df288123306c92e8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42788536"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437120"
 ---
 # <a name="miracastchannel-enum-type"></a>тип перечисления Миракастчаннел
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

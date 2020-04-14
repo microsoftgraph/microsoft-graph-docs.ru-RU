@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Ратингаустралиамовиестипе
 description: Метки оценки фильмов в Австралии
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 317f158de6bcadcf42ab750fec44c9d893eba9af
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c12fe15691e740263f3f42707a4a12a47743afc6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42788396"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437007"
 ---
 # <a name="ratingaustraliamoviestype-enum-type"></a>тип перечисления Ратингаустралиамовиестипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

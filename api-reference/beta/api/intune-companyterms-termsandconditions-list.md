@@ -1,18 +1,20 @@
 ---
 title: Перечисление объектов termsAndConditions
 description: Список свойств и связей объектов termsAndConditions.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 91cca4059b49e12e8e0ae043952b70213468c416
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 48834deb61dddfcc4bc40e5de22f762b849dbb3e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760160"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436540"
 ---
 # <a name="list-termsandconditionses"></a>Перечисление объектов termsAndConditions
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -86,7 +88,6 @@ Content-Length: 656
   ]
 }
 ```
-
 
 
 

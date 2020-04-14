@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Ратингаппстипе
 description: Оценка приложений как в мультимедийном контенте
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 0717f97da5c9cb84ced53a67c70255fe1d183b04
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 891dd5c6a17a5363060658c019c6a19b483a8f41
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42788403"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437014"
 ---
 # <a name="ratingappstype-enum-type"></a>тип перечисления Ратингаппстипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,18 +1,20 @@
 ---
 title: Update termsAndConditions
 description: Обновление свойств объекта termsAndConditions.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a866b17861c3c11047607f4af6691fc810648142
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 229443f5979808b7ae14b6b62e5766e699e2f258
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760153"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436533"
 ---
 # <a name="update-termsandconditions"></a>Update termsAndConditions
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -117,7 +119,6 @@ Content-Length: 567
   ]
 }
 ```
-
 
 
 

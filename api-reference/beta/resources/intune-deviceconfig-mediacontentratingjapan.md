@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса mediaContentRatingJapan
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8c659cfc0fb4528c7ed94025c0b1927a3bd67e4b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 52df25bb4a6a6e7615acb535741edfe70c122415
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42788571"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437195"
 ---
 # <a name="mediacontentratingjapan-resource-type"></a>Тип ресурса mediaContentRatingJapan
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

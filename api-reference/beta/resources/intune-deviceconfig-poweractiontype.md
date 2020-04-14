@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Поверактионтипе
 description: Типы действий по питанию
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 6352809006b196ecafc05be817af81cffb47797e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a65f5f59ad4f598152145313481b537fa3035bd5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42788417"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437068"
 ---
 # <a name="poweractiontype-enum-type"></a>тип перечисления Поверактионтипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

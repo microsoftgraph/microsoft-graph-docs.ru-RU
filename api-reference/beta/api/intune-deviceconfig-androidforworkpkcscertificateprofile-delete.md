@@ -1,18 +1,20 @@
 ---
 title: Удаление androidForWorkPkcsCertificateProfile
 description: Удаляет объект androidForWorkPkcsCertificateProfile.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 705e30418ac7aa6e1c12201e154cc2f072d49f6e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a18db0861bb69fd05e6b17c0741e4492b438a6ab
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42759192"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43435865"
 ---
 # <a name="delete-androidforworkpkcscertificateprofile"></a>Удаление androidForWorkPkcsCertificateProfile
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

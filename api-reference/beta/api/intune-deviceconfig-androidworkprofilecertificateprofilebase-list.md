@@ -1,18 +1,20 @@
 ---
 title: Список Андроидворкпрофилецертификатепрофилебасес
 description: Список свойств и связей объектов Андроидворкпрофилецертификатепрофилебасе.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f8d29d1445c3ef1e97bc8c04e681ac7fbd49afde
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d4ff9305fdb8582feb8c729ac4b4685cef0abbad
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42758616"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43435326"
 ---
 # <a name="list-androidworkprofilecertificateprofilebases"></a>Список Андроидворкпрофилецертификатепрофилебасес
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -117,7 +119,6 @@ Content-Length: 1836
   ]
 }
 ```
-
 
 
 

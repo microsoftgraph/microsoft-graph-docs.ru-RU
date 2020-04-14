@@ -1,18 +1,20 @@
 ---
 title: Список Термсандкондитионсграупассигнментс
 description: Список свойств и связей объектов Термсандкондитионсграупассигнмент.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ff1e5b05ee99c3cef59699384d02a5179340a970
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a239ea7c7e2c046dde7d2d92f0b9a4c421f2fc14
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760055"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436338"
 ---
 # <a name="list-termsandconditionsgroupassignments"></a>Список Термсандкондитионсграупассигнментс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -75,7 +77,6 @@ Content-Length: 214
   ]
 }
 ```
-
 
 
 

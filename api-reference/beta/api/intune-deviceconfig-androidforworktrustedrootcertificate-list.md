@@ -1,18 +1,20 @@
 ---
 title: Список Андроидфорворктрустедрутцертификатес
 description: Список свойств и связей объектов Андроидфорворктрустедрутцертификате.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 115275c73a132e48fba5d69ce16646502a91a422
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 76dc5b80d69ad4c50e81ed12e248939c5b325284
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42759108"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43435752"
 ---
 # <a name="list-androidforworktrustedrootcertificates"></a>Список Андроидфорворктрустедрутцертификатес
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -107,7 +109,6 @@ Content-Length: 1488
   ]
 }
 ```
-
 
 
 

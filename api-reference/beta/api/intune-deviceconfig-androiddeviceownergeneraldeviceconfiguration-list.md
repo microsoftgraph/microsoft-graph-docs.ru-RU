@@ -1,18 +1,20 @@
 ---
 title: Список Андроиддевицеовнерженералдевицеконфигуратионс
 description: Список свойств и связей объектов androidDeviceOwnerGeneralDeviceConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bdee42ce1282568ffa95fc341e52460c45608b47
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0a25e42023a2532704fa081b8466bbb877c94a4e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42759803"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436265"
 ---
 # <a name="list-androiddeviceownergeneraldeviceconfigurations"></a>Список Андроиддевицеовнерженералдевицеконфигуратионс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -190,7 +192,6 @@ Content-Length: 5047
   ]
 }
 ```
-
 
 
 

@@ -2,17 +2,19 @@
 title: Обновление Оффицеклиентконфигуратионассигнмент
 description: Обновление свойств объекта Оффицеклиентконфигуратионассигнмент.
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 9e2701a5b7a3dbc51ec3a7efaa08493f4d6512d4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1125ab17915aaf56f5c5a334bd1775c1acf5be8a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760258"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436752"
 ---
 # <a name="update-officeclientconfigurationassignment"></a>Обновление Оффицеклиентконфигуратионассигнмент
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -90,7 +92,6 @@ Content-Length: 221
   }
 }
 ```
-
 
 
 

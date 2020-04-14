@@ -1,18 +1,20 @@
 ---
 title: Получение androidForWorkScepCertificateProfile
 description: Чтение свойств и связей объекта androidForWorkScepCertificateProfile.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c0dd35d9fc9cc7d542aa5f7d93806ea27b951707
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d87d38ac45632dd42b5421d8081cffcb6c5d8834
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42759150"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43435789"
 ---
 # <a name="get-androidforworkscepcertificateprofile"></a>Получение androidForWorkScepCertificateProfile
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -135,7 +137,6 @@ Content-Length: 2289
   }
 }
 ```
-
 
 
 

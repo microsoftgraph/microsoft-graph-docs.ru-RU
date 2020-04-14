@@ -1,18 +1,20 @@
 ---
 title: Создание объекта termsAndConditionsAcceptanceStatus
 description: Создание объекта termsAndConditionsAcceptanceStatus.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 755fd3e3c518ca0b30f660bdd7275e09f5ab9ce4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 507fb1c9a558a017baa4fd05f28585bcac4c4e81
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760146"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436526"
 ---
 # <a name="create-termsandconditionsacceptancestatus"></a>Создание объекта termsAndConditionsAcceptanceStatus
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -96,7 +98,6 @@ Content-Length: 313
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

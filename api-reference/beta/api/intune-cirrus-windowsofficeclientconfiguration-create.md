@@ -2,17 +2,19 @@
 title: Создание Виндовсоффицеклиентконфигуратион
 description: Создайте новую политику, не являющуюся политикой безопасности, с целевыми группами.
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 0348d2b83b553004a9c40a3d95a6ad2ee8d38f46
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6ceaed75ed861ef066e85fb54cd0b55b38e8fd48
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760251"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43436745"
 ---
 # <a name="create-windowsofficeclientconfiguration"></a>Создание Виндовсоффицеклиентконфигуратион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -145,7 +147,6 @@ Content-Length: 1069
   ]
 }
 ```
-
 
 
 

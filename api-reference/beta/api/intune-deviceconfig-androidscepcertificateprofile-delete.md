@@ -1,18 +1,20 @@
 ---
 title: Удаление androidScepCertificateProfile
 description: Удаляет объект androidScepCertificateProfile.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 43227c2def5c3bc0e03ea986951080ea682b9815
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9bf8a4f9830487fe2fff41658f3032b229e8e10b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42758821"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43435490"
 ---
 # <a name="delete-androidscepcertificateprofile"></a>Удаление androidScepCertificateProfile
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

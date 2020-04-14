@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса mediaContentRatingGermany
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f32a6ed59861dce47f5c38f7259b78879bf1681c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e146adc4b2d2e550701a6f152efcdefb41758644
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42788585"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437217"
 ---
 # <a name="mediacontentratinggermany-resource-type"></a>Тип ресурса mediaContentRatingGermany
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

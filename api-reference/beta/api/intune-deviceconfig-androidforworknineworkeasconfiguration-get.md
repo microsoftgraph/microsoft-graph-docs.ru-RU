@@ -1,18 +1,20 @@
 ---
 title: Получение Андроидфорворкниневоркеасконфигуратион
 description: Чтение свойств и связей объекта Андроидфорворкниневоркеасконфигуратион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2955b714b7d47e9dc62723ad0a825f5dbe8aadf7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d0d296baa8a800b2c38dffecebacc2047e5c54b9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42759220"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43435927"
 ---
 # <a name="get-androidforworknineworkeasconfiguration"></a>Получение Андроидфорворкниневоркеасконфигуратион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -116,7 +118,6 @@ Content-Length: 1612
   }
 }
 ```
-
 
 
 
