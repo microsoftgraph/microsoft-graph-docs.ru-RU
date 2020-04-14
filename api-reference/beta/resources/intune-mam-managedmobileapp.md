@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса managedMobileApp
 description: Идентификатор для развертывания приложения.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: dec43cce448ae38260d1ba27e7993939fb28837e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f87ccf755ee79d69e0b01e074685db2f182a4272
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42781307"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43371691"
 ---
 # <a name="managedmobileapp-resource-type"></a>Тип ресурса managedMobileApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

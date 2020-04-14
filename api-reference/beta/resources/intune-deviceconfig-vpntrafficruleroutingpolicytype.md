@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Впнтраффикрулераутингполицитипе
 description: Задает политику маршрутизации для правила трафика VPN.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 577408b34b7483ebc313f761dfaf47e0e09cdd90
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f7e28ef548ec11f14db4913020f1b17fc25f5c6e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787287"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43358996"
 ---
 # <a name="vpntrafficruleroutingpolicytype-enum-type"></a>тип перечисления Впнтраффикрулераутингполицитипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -23,7 +25,7 @@ ms.locfileid: "42787287"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Политика маршрутизации не указана.|
+|нет|нуль|Политика маршрутизации не указана.|
 |сплиттуннел|1,1|Сетевой трафик для указанного приложения будет перенаправлен через VPN.|
 |форцетуннел|2|Весь сетевой трафик будет маршрутизироваться через VPN.|
 

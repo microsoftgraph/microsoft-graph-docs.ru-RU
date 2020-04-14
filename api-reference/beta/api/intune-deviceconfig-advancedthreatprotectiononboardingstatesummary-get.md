@@ -1,18 +1,20 @@
 ---
 title: Получение Адванцедсреатпротектиононбоардингстатесуммари
 description: Чтение свойств и связей объекта Адванцедсреатпротектиононбоардингстатесуммари.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4bb19dfc9be8d6d10eaff86fc0905184b814bb02
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 171cf76de7424eb57ce19380c9c11d291e0420fe
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42760006"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43353429"
 ---
 # <a name="get-advancedthreatprotectiononboardingstatesummary"></a>Получение Адванцедсреатпротектиононбоардингстатесуммари
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42760006"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -83,7 +85,6 @@ Content-Length: 419
   }
 }
 ```
-
 
 
 

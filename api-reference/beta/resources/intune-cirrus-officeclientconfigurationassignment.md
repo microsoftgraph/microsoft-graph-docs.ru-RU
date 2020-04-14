@@ -2,17 +2,19 @@
 title: Тип ресурса Оффицеклиентконфигуратионассигнмент
 description: Назначение конфигурации клиента Office.
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 274c8b3e656b7bc0fafa3f214cc5592161a7fb5e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 360988d80af473819f4bf25ac72d6f0d817eadbc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797327"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43362745"
 ---
 # <a name="officeclientconfigurationassignment-resource-type"></a>Тип ресурса Оффицеклиентконфигуратионассигнмент
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

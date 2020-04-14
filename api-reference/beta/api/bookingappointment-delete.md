@@ -2,19 +2,19 @@
 title: Удаление Букингаппоинтмент
 description: Удаление объекта Букингаппоинтмент в указанном букингбусинесс.
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: b0a1179311139e75bf60699d1ef77d3fbaf7b55c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 531b2008cb5be2b94e22f3d7a7d4f947f4d9db8d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441304"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43367630"
 ---
 # <a name="delete-bookingappointment"></a>Удаление Букингаппоинтмент
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

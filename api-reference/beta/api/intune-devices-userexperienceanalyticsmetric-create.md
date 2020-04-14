@@ -1,18 +1,20 @@
 ---
 title: Создание Усерекспериенцеаналитиксметрик
 description: Создание нового объекта Усерекспериенцеаналитиксметрик.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d6d7fe337c379555ce982d8c29c1913e48429f84
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2ef1a4a8e27d3ef86bf86a8e3e060f01630698c4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813847"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43379422"
 ---
 # <a name="create-userexperienceanalyticsmetric"></a>Создание Усерекспериенцеаналитиксметрик
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42813847"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложения|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -93,7 +95,6 @@ Content-Length: 196
   "unit": "Unit value"
 }
 ```
-
 
 
 

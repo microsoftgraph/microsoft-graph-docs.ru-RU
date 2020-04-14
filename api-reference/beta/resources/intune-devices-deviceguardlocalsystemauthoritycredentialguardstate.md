@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Девицегуардлокалсистемаусоритикредентиалгуардстате
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 14c6841d3683bd9b101cfb89d1fb9cc92bd027b2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4cb1811a636c25c8109c0e314c339e277aae9996
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42784995"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43362459"
 ---
 # <a name="deviceguardlocalsystemauthoritycredentialguardstate-enum-type"></a>тип перечисления Девицегуардлокалсистемаусоритикредентиалгуардстате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

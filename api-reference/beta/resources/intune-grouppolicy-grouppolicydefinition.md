@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Граупполицидефинитион
 description: Сущность описывает все сведения об одной групповой политике.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8e99b32687c0a93673cdbf8889b05e6423cc73c3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 05021b93dfae495941d13b3f18cb01d7e7c0a706
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783025"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376997"
 ---
 # <a name="grouppolicydefinition-resource-type"></a>Тип ресурса Граупполицидефинитион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -43,7 +45,7 @@ ms.locfileid: "42783025"
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |дефинитионфиле|[граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|Файл групповой политики, связанный с определением.|
-|category|[граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md)|Категория групповой политики, связанная с определением.|
+|category|[groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|Категория групповой политики, связанная с определением.|
 |материалы|Коллекция [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|Презентации групповой политики, связанные с определением.|
 
 ## <a name="json-representation"></a>Представление JSON

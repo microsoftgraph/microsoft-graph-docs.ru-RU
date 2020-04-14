@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Граупполицикатегори
 description: Сущность Category сохраняет категорию определения групповой политики
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0b754020cc4a7c4f7e9fdf7cc35f74d9dcc4c4c1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3b81a102bd5864d4f11f787e15bb2d709f0203cf
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783125"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43377193"
 ---
 # <a name="grouppolicycategory-resource-type"></a>Тип ресурса Граупполицикатегори
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -23,21 +25,21 @@ ms.locfileid: "42783125"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Получение Граупполицикатегори](../api/intune-grouppolicy-grouppolicycategory-get.md)|[граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md)|Чтение свойств и связей объекта [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md) .|
-|[Обновление Граупполицикатегори](../api/intune-grouppolicy-grouppolicycategory-update.md)|[граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md)|Обновление свойств объекта [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md) .|
+|[Получение Граупполицикатегори](../api/intune-grouppolicy-grouppolicycategory-get.md)|[groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|Чтение свойств и связей объекта [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md) .|
+|[Обновление Граупполицикатегори](../api/intune-grouppolicy-grouppolicycategory-update.md)|[groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|Обновление свойств объекта [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|Строка|Идентификатор строки отображаемого имени категории|
-|Корень|Логический|Определяет, является ли категория корневой категорией|
+|Корень|Логическое|Определяет, является ли категория корневой категорией|
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|верхнего|[граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md)|Родительская категория|
+|верхнего|[groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|Родительская категория|
 |children|Коллекция [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md)|Категории дочерних элементов|
 |определения|Коллекция [граупполицидефинитион](../resources/intune-grouppolicy-grouppolicydefinition.md)|Непосредственный дочерний элемент Граупполицидефинитион в категории|
 |дефинитионфиле|[граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|Идентификатор файла определения, из которого получена Категория|

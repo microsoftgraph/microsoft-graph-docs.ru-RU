@@ -2,25 +2,25 @@
 title: Создание Букингбусинесс
 description: Создайте новую бизнес-деятельность Майкрософт в клиенте.
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 5275171d54cb9c7276fd9e177c0d63e1e66dda11
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 05c39a802ad320c56a7a910f3dfac67196e04f43
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441195"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43366521"
 ---
 # <a name="create-bookingbusiness"></a>Создание Букингбусинесс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Создайте новую бизнес-деятельность Майкрософт в клиенте.
 
-Это первый шаг при настройке учета для бизнеса, в котором необходимо указать отображаемое имя. Вы можете включить другие сведения, такие как рабочий адрес, адрес веб-сайта и политика планирования, или задать эту информацию позже [](bookingbusiness-update.md) , обновив **букингбусинесс**.
+Это первый шаг при настройке учета для бизнеса, в котором необходимо указать отображаемое имя. Вы можете включить другие сведения, такие как рабочий адрес, адрес веб-сайта и политика планирования, или задать эту информацию позже [updating](bookingbusiness-update.md) , обновив **букингбусинесс**.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 

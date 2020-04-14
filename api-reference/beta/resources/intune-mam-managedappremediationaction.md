@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Манажедаппремедиатионактион
 description: Действие, инициированное администратором, для применения в управляемом приложении.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7c625ecde045860f49f06acff4513698fd82b474
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f6def057a694971d74089b5a9bde821d9d98ae0f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42781490"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43371971"
 ---
 # <a name="managedappremediationaction-enum-type"></a>тип перечисления Манажедаппремедиатионактион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

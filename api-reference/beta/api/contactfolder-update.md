@@ -1,20 +1,20 @@
 ---
 title: Обновление объекта contactFolder
 description: Обновление свойств объекта contactFolder.
-author: angelgolfer-ms
+author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4380fafe842af304b8dfd99b86cae3d499669b03
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0cc54c66b9c3df97c97b783f1ae3f8639e7bb71a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436806"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43375905"
 ---
 # <a name="update-contactfolder"></a>Обновление объекта contactFolder
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,7 +47,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}
 |:---------------|:--------|:----------|
 |displayName|String|Отображаемое имя папки.|
 |parentFolderId|String|Идентификатор родительской папки для папки.|
-|wellKnownName|строка|Имя папки, если она является распознаваемой папкой. В `contacts` настоящее время это единственная распознанная папка контактов.|
+|wellKnownName|string|Имя папки, если она является распознаваемой папкой. В `contacts` настоящее время это единственная распознанная папка контактов.|
 
 ## <a name="response"></a>Отклик
 

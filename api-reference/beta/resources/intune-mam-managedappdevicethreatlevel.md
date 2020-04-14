@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Манажедаппдевицесреатлевел
 description: Уровень угроз максиум, разрешенный для приложения в соответствии с требованиями.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 63fa79d3ce378c64a870bb40f2491402fee34e99
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bbecc5777380d69fd1b8ca64c84637d8d5490007
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42781952"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43373078"
 ---
 # <a name="managedappdevicethreatlevel-enum-type"></a>тип перечисления Манажедаппдевицесреатлевел
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

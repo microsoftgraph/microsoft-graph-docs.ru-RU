@@ -1,16 +1,16 @@
 ---
 title: Создание события
 description: С помощью этого API можно создать событие в календаре по умолчанию или указанном календаре.
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6838fa64501a8187ca0486598ac3c6e4d35ab268
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: c9dfdaaba6f9fb611a5ff5fe2db171b911bc344d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639587"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376044"
 ---
 # <a name="create-event"></a>Создание события
 
@@ -65,7 +65,7 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-create-an-event-in-a-specific-calendar"></a>Пример 1: создание события в определенном календаре
+### <a name="example-1-create-an-event-in-a-specific-calendar"></a>Пример 1. Создание события в определенном календаре
 
 #### <a name="request"></a>Запрос
 В следующем примере показано, как создать событие в определенном календаре и назначить ему необязательное значение **трансактионид** .
@@ -224,7 +224,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-and-enable-an-event-as-an-online-meeting"></a>Пример 2: создание и включение события в качестве собрания по сети
+### <a name="example-2-create-and-enable-an-event-as-an-online-meeting"></a>Пример 2. Создание и включение события в качестве собрания по сети
 
 #### <a name="request"></a>Запрос
 В следующем примере показано создание события в указанном календаре пользователя, выполнившего вход, и включение его в качестве собрания по сети.

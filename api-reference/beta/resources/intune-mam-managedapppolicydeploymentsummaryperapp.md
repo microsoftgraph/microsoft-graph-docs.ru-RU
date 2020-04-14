@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса managedAppPolicyDeploymentSummaryPerApp
 description: Представляет сводку по развертыванию политик для приложений.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7d17dfb7cc288edb37f82587dfe76b65ebe15efd
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 32013dc3504b3106681fe8cf9d3f4d702cbb8b03
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42781581"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43372274"
 ---
 # <a name="managedapppolicydeploymentsummaryperapp-resource-type"></a>Тип ресурса managedAppPolicyDeploymentSummaryPerApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

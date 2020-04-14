@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Виндовсстореапп
 description: Содержит свойства и наследуемые свойства для приложений Магазина Windows.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d2dc37c0e2a6e09fccf07284a7c9400f41b9fd4b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c5fd48fff685b7dd19eccd89d00f4f460e22d402
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797460"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43359982"
 ---
 # <a name="windowsstoreapp-resource-type"></a>Тип ресурса Виндовсстореапп
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Граупполицидефинитионкласстипе
 description: Тип класса определения групповой политики.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 891101862d27087c36236aef40a900b155495279
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 870ca9ca3f668698a10ac2adad6ab7f7181b270a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783018"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376976"
 ---
 # <a name="grouppolicydefinitionclasstype-enum-type"></a>тип перечисления Граупполицидефинитионкласстипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

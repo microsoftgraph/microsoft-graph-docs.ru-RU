@@ -1,18 +1,20 @@
 ---
 title: Обновление windowsManagementApp
 description: Обновление свойств объекта windowsManagementApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b3364080e38e36fa344d71d6a0b9d8fa0d48ffea
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6d28de562a46828764d29ca0c0c453bf229d43d6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813630"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43378378"
 ---
 # <a name="update-windowsmanagementapp"></a>Обновление windowsManagementApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42813630"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложения|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -87,7 +89,6 @@ Content-Length: 161
   "availableVersion": "Available Version value"
 }
 ```
-
 
 
 

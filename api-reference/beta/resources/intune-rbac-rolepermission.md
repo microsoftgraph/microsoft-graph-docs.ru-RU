@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса rolePermission
 description: Содержит набор Ресаурцеактионс, определяющих разрешения "разрешено" и "не разрешено" для каждой роли.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c4d5ea66fcae364044e05b2ffd176ddcf5f0c914
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 85370ad155d769d74f29dec80a03d3203feac8fa
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42773219"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43356862"
 ---
 # <a name="rolepermission-resource-type"></a>Тип ресурса rolePermission
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

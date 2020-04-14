@@ -1,16 +1,16 @@
 ---
 title: Delete Group — API Microsoft Graph
-description: Описывает метод Delete ресурса Group (Entity) API Microsoft Graph (REST).
+description: Удаление ресурса группы.
 author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6eec50e07253bd380c6253f2aad7105f29ee7474
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: a600d5eb07a9b128901e748e2de25261db9d147e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123799"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43364013"
 ---
 # <a name="delete-group"></a>Delete group
 

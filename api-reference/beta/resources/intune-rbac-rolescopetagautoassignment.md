@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Ролескопетагаутоассигнмент
 description: Содержит свойства для автоматического назначения тега области роли группе, которая будет применена к устройствам.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 63a6800281731b4c96fef0524658d7aca6171e37
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 77d563f9ef99f9e8d6cce9577ec60a4c289f4a8f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42773135"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43356780"
 ---
 # <a name="rolescopetagautoassignment-resource-type"></a>Тип ресурса Ролескопетагаутоассигнмент
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

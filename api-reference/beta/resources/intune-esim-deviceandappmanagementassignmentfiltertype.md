@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Девицеандаппманажементассигнментфилтертипе
 description: Представляет тип фильтра назначений.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 29b79504dd327d70bec6d973cd08a3f265fb1ab1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4e1febcc506de1248f519be5cd1c2d40fca9dc15
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783328"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43358104"
 ---
 # <a name="deviceandappmanagementassignmentfiltertype-enum-type"></a>тип перечисления Девицеандаппманажементассигнментфилтертипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -23,7 +25,7 @@ ms.locfileid: "42783328"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Значение по умолчанию. Не следует использовать.|
+|нет|нуль|Значение по умолчанию. Не следует использовать.|
 |предусмотрен|1,1|Указывает, что в фильтре при сопоставлении правил будут предложены полезные данные для устройств.|
 |Отличающ|2|Указывает исходящие фильтры, при сопоставлении правил не будут предложены полезные данные для устройств.|
 

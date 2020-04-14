@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Виндовсарчитектуре
 description: Содержит свойства для архитектуры Windows.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 34f3d887d5839f87d07876084baa1439aca7a46a
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 169d343d9b7799aabeb16ca506508456d9f4d841
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797530"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43360508"
 ---
 # <a name="windowsarchitecture-enum-type"></a>тип перечисления Виндовсарчитектуре
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -23,7 +25,7 @@ ms.locfileid: "42797530"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Флаги не заданы.|
+|нет|нуль|Флаги не заданы.|
 |платформы|1,1|Поддерживается ли тип архитектуры x86 Windows.|
 |x|2|Поддерживается ли тип архитектуры Windows x64.|
 |руки|4 |Поддерживается ли тип архитектуры Windows ARM.|

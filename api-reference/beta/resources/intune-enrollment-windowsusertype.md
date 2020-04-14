@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Виндовсусертипе
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 4ed17a91b6baed1b7de87a9f035c858fdddfe69f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b472f74ad1ea88398a19cda9101e93e4ec53cb66
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783335"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43358118"
 ---
 # <a name="windowsusertype-enum-type"></a>тип перечисления Виндовсусертипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

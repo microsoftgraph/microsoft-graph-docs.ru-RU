@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Манажементкондитионекспрессионстринг
 description: Строка выражения условия управления — это строковое представление выражения условия управления.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2a89da3e4ea3557ed71cd50f2c42695c2d06b174
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9f5a17a7057888d02decb20dc5f611e7d5e1ebd9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783230"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43357848"
 ---
 # <a name="managementconditionexpressionstring-resource-type"></a>Тип ресурса Манажементкондитионекспрессионстринг
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

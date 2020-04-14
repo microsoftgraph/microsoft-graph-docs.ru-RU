@@ -2,15 +2,15 @@
 title: Получение шаблона параметров каталога
 description: Позволяет получать свойства объекта Директорисеттингтемплате, включая доступные параметры и их значения по умолчанию.
 localization_priority: Normal
-author: dkershaw10
+author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: df5474d839d8cd1374d00710538025a9d03330da
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 11a5331e5ca554e972d88a59c73eeae4bcf75988
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180167"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43375569"
 ---
 # <a name="get-a-directory-setting-template"></a>Получение шаблона параметров каталога
 

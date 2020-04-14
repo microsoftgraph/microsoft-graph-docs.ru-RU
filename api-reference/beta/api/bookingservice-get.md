@@ -2,19 +2,19 @@
 title: Получение Букингсервице
 description: Получение свойств и связей объекта Букингсервице в указанном букингбусинесс.
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: f0bf4dc757a7d7b1a8206cbcc730e48ad23ed0e2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 53145c7b99cb0789ab7a1b1f2355981079b8b483
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441090"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376381"
 ---
 # <a name="get-bookingservice"></a>Получение Букингсервице
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

@@ -1,18 +1,20 @@
 ---
 title: Список Таржетедманажедаппконфигуратионполицисетитемс
 description: Список свойств и связей объектов Таржетедманажедаппконфигуратионполицисетитем.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: aed08ee0d03297896f33cb2210567997b99d2ec3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e96da6c7c808c5dc7c077a79a8cd888e17c79aed
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802036"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43375147"
 ---
 # <a name="list-targetedmanagedappconfigurationpolicysetitems"></a>Список Таржетедманажедаппконфигуратионполицисетитемс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42802036"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -84,7 +86,6 @@ Content-Length: 579
   ]
 }
 ```
-
 
 
 

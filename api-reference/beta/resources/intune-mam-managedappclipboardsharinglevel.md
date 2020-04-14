@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Манажедаппклипбоардшаринглевел
 description: Представляет уровень, к которому может быть предоставлен общий доступ к буферу обмена устройства между приложениями
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 5f6153eeb4b76af9d8974b715b7c6342c646ba6e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f854a18bfcfac3f937c976180bbc4a423abbae0d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42782246"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43374039"
 ---
 # <a name="managedappclipboardsharinglevel-enum-type"></a>тип перечисления Манажедаппклипбоардшаринглевел
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

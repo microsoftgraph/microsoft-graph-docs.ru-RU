@@ -1,18 +1,20 @@
 ---
 title: Перечисление объектов WindowsInformationProtectionPolicy
 description: Перечисление свойств и связей объектов windowsInformationProtectionPolicy.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: cb658244df20e17ce1c767d7ec436ec722c0b320
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: dae0ec7ea1527b1d4cf64b4a3d20f83ade8472f1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42803241"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43363207"
 ---
 # <a name="list-windowsinformationprotectionpolicies"></a>Перечисление объектов WindowsInformationProtectionPolicy
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42803241"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -212,7 +214,6 @@ Content-Length: 5232
   ]
 }
 ```
-
 
 
 

@@ -2,19 +2,19 @@
 title: 'Букингбусинесс: Отмена публикации'
 description: Сделайте страницу планирования этого бизнеса недоступной для внешних клиентов.
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 8d84d2b11895cd29b997a9049b31035956535426
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 406954ede0d32e6897b1d86477d603c560780fd9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441153"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376693"
 ---
 # <a name="bookingbusiness-unpublish"></a>Букингбусинесс: Отмена публикации
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

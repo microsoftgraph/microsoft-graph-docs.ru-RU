@@ -1,16 +1,16 @@
 ---
 title: Удаление события
 description: Удаление события.
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 04ec124393bb5925c4f1f8c4596c6320de3c1f7b
-ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+ms.openlocfilehash: 519ade0d94fa6830cd3b0d99e5c8f968f5df6b4d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43144228"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43365713"
 ---
 # <a name="delete-event"></a>Удаление события
 
@@ -18,9 +18,9 @@ ms.locfileid: "43144228"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаляет указанное [событие](../resources/event.md) из содержащегося календаря. 
+Удаляет указанное [событие](../resources/event.md) из содержащего его календаря. 
 
-Если событие является собранием, удаление события в календаре организатора отправляет сообщение об отмене участникам собрания.
+Если событием является собрание, при удалении события в календаре организатора сообщение об отмене отправляется участникам собрания.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

@@ -1,18 +1,20 @@
 ---
 title: Удаление Манажементкондитионстатемент
 description: Удаляет объект Манажементкондитионстатемент.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c01f30d568b15fad3d5700ac8026083e1d34572e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b07aa92bdb727f44c38f6c9bca3669ca3b0d6348
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42804767"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43363934"
 ---
 # <a name="delete-managementconditionstatement"></a>Удаление Манажементкондитионстатемент
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42804767"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -64,7 +66,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/managementConditionStat
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

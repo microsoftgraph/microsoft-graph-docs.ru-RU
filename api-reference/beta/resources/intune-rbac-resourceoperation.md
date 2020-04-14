@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса resourceOperation
 description: Описывает ресурс resourceOperation (Entity) API Microsoft Graph (REST), который поддерживает рабочие процессы Intune, связанные с управлением доступом на основе ролей (RBAC).
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 460e189aa5c6ab698fdc8bcad65cb3bd3bb48f71
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d8fefba58bc26494e2dabbff24ab6ec9756c2f15
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42773338"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43357454"
 ---
 # <a name="resourceoperation-resource-type"></a>Тип ресурса resourceOperation
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -38,7 +40,7 @@ ms.locfileid: "42773338"
 |resourceName|String|Имя ресурса, с которым выполняется эта операция.|
 |actionName|String|Тип действия, которое выполнит эта операция. Свойство actionName должно быть максимально краткое (максимум несколько слов).|
 |description|String|Описание операции с ресурсом. Используется в тексте, который отображается над операцией при наведении указателя мыши на портале Azure.|
-|енабледфорскопевалидатион|Логический|Определяет, является ли разрешение проверенным для областей, определенных для назначения ролей.|
+|енабледфорскопевалидатион|Логическое|Определяет, является ли разрешение проверенным для областей, определенных для назначения ролей.|
 
 ## <a name="relationships"></a>Связи
 Нет

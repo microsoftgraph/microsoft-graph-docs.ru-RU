@@ -1,20 +1,20 @@
 ---
 title: 'event: dismissReminder'
 description: Отклонить напоминание, запущенное для события в календаре пользователя.
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d24657ac8657ceac891d645fc429d9bb34bfac0d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: db13f64b5df6ab3caa31775ba67757af954f4a3c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42423163"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43365655"
 ---
 # <a name="event-dismissreminder"></a>event: dismissReminder
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

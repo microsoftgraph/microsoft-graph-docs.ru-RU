@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Андроидманажедаппсафетинетдевицеаттестатионтипе
 description: Для управляемого приложения требуется, чтобы администратор применяет SafetyNet аттестации устройств Android.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 93d65431cfcdfc952231237f2646eee79e331ef3
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0ef06b8f3cc3a2e53a053f0169e5921bc02fb822
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42782701"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43374356"
 ---
 # <a name="androidmanagedappsafetynetdeviceattestationtype-enum-type"></a>тип перечисления Андроидманажедаппсафетинетдевицеаттестатионтипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -23,7 +25,7 @@ ms.locfileid: "42782701"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|нет набора требований|
+|нет|нуль|нет набора требований|
 |басиЦинтегрити|1,1|требовать, чтобы устройство Android продавало базовую проверку целостности SafetyNet|
 |басиЦинтегритянддевицецертификатион|2|требовать, чтобы устройство Android продавало базовую целостность SafetyNet и проверки сертификации устройств|
 

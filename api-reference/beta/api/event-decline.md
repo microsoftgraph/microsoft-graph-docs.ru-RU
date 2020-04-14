@@ -1,20 +1,20 @@
 ---
 title: 'event: decline'
 description: Отклонение приглашения на указанное событие в календаре пользователя.
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 343322decb240d174030f76469c605fa562edc78
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fbcdc5cc20b35a7458d24c12407680c45ff454f2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42423373"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43365845"
 ---
 # <a name="event-decline"></a>event: decline
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -70,7 +70,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 |:---------------|:--------|:----------|
 |comment|String|Текст, включенный в ответ. Необязательный.|
 |sendResponse|Логическое|Значение `true` указывает, что организатору должен быть отправлен ответ. В противном случае используется значение `false`. Необязательный. Значение по умолчанию: `true`.|
-|пропоседневтиме|[timeSlot](../resources/timeslot.md)|Альтернативная дата/время, предлагаемые приглашению на собрание для начала и завершения. Действует только для событий, которые допускают новые предложения времени. Для установки этого параметра необходимо **** задать для `true`параметра сендреспонсе значение. Необязательный параметр.|
+|пропоседневтиме|[timeSlot](../resources/timeslot.md)|Альтернативная дата/время, предлагаемые приглашению на собрание для начала и завершения. Действует только для событий, которые допускают новые предложения времени. Для установки этого параметра необходимо **sendResponse** задать для `true`параметра сендреспонсе значение. Необязательный параметр.|
 
 ## <a name="response"></a>Отклик
 

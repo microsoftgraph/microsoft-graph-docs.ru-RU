@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса ГраупполиципресентатионвалуедеЦимал
 description: Сущность представляет целое число без знака для представления десятичного текстового поля в определении политики.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5fceec1a61cdc1f36e3dd2cea472cd0893952d92
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 83f1bd185d4aa7fb94f2cd89ecd637892c0c3748
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42782906"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376872"
 ---
 # <a name="grouppolicypresentationvaluedecimal-resource-type"></a>Тип ресурса ГраупполиципресентатионвалуедеЦимал
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

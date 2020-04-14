@@ -3,18 +3,18 @@ title: Получение вложения
 description: Считывание свойств и связей вложений, вложенных в событие, сообщение, задачу Outlook или POST.
 localization_priority: Normal
 doc_type: apiPageType
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
-ms.openlocfilehash: f9a6eb580d7a4873cf9e909308243f22ac2b935a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 30c81b14782d0186a8dc5f94b9556b9a7ace2cb9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441349"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43367722"
 ---
 # <a name="get-attachment"></a>Получение вложения
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -459,7 +459,7 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=/$value
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 Ниже приведен пример отклика. Фактический текст ответа содержит необработанные байты вложенного файла, которые кратко описаны ниже.
 
 <!-- {
@@ -490,7 +490,7 @@ HTTP/1.1 200 OK
 GET https://graph.microsoft.com/beta/me/messages/AAMkADI5MAAGjk2PxAAA=/attachments/AAMkADI5MAAGjk2PxAAABEgAQACEJqrbJZBNIlr3pGFvd9K8=/$value
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 Ниже приведен пример отклика. 
 
 <!-- {
@@ -539,7 +539,7 @@ END:VCARD
 GET https://graph.microsoft.com/beta/me/messages/AAMkADVIOAAA=/attachments/AAMkADVIOAAABEgAQACvkutl6c4FMifPyS6NvXsM=/$value
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 Ниже приведен пример отклика. 
 
 <!-- {

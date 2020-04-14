@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Виндовсаутопилотсинкстатус
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 39c96172722249de84796a160a48cff1e0e3b481
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2e6b54afcf76f861f64f50ffbdb33fbdff0e2608
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783356"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43358204"
 ---
 # <a name="windowsautopilotsyncstatus-enum-type"></a>тип перечисления Виндовсаутопилотсинкстатус
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

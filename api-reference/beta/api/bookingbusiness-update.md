@@ -2,19 +2,19 @@
 title: Обновление букингбусинесс
 description: Обновление свойств объекта Букингбусинесс.
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: b150db37b78bb4c09bbaa1f1b91f569db754b352
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b820d65a50b2a07bd1c3e95936bc6ee304f20d96
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441146"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376606"
 ---
 # <a name="update-bookingbusiness"></a>Обновление букингбусинесс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

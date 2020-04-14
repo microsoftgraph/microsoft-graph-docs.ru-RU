@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Граупполициконфигуратион
 description: Объект конфигурации групповой политики содержит настроенные значения для одного или нескольких определений групповой политики.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 81c6937fca0c51b18d86ccf3b0dbedd58b71971b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6e2d017b7bbd8f76d59f7862fbb943c455c78fbe
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783118"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43377082"
 ---
 # <a name="grouppolicyconfiguration-resource-type"></a>Тип ресурса Граупполициконфигуратион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

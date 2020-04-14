@@ -2,15 +2,15 @@
 title: Вывод календаря
 description: 'Получение свойств и связей объекта calendar. Это может быть календарь для ресурса user '
 localization_priority: Normal
-author: angelgolfer-ms
+author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bb323f06765a1a1bc432f1740fd1ce8ba3fb8125
-ms.sourcegitcommit: f2dffaca3e1c5b74a01b59e1b76dba1592a6a5d1
+ms.openlocfilehash: 6d1573ca89abf845f49a9ca817c4d82b2aa80090
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639634"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376098"
 ---
 # <a name="get-calendar"></a>Вывод календаря
 

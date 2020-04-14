@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Девицеманажементекспортжоб
 description: Сущность, представляющая задание для экспорта отчета
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: e44057e786126003802cada7320329167a3c97fe
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a66072a2bd87cfb279f6b9d39027228f6c9f4b5c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42772554"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43356573"
 ---
 # <a name="devicemanagementexportjob-resource-type"></a>Тип ресурса Девицеманажементекспортжоб
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

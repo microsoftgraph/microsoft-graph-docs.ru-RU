@@ -1,20 +1,20 @@
 ---
 title: Список вложений
 description: Получение списка объектов attachment, вложенных в событие.
-author: angelgolfer-ms
+author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e0b036cbfb0978ae347a8bbbdc6c01ceb7bda026
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 744ba1c0ab88afa2acf38f93b58cd01592504af4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42422854"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43365448"
 ---
 # <a name="list-attachments"></a>Список вложений
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -47,7 +47,7 @@ GET /groups/{id}/events/{id}/attachments
 
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
-В частности, параметр `$expand` запроса можно использовать для включения всех вложений в события, встроенных в остальные свойства события. Например:
+В частности, параметр `$expand` запроса можно использовать для включения всех вложений в события, встроенных в остальные свойства события. Пример:
 
 ```http
 GET https://graph.microsoft.com/beta/me/events/{id}?$expand=attachments

@@ -2,19 +2,19 @@
 title: Список Стаффмемберс
 description: Получение списка объектов Букингстаффмембер в указанном букингбусинесс.
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: e85965bf647342750f7ce6b94917d415c0faa877
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1be740ecd5696b7653b8aa10d058f148cbcbf157
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441244"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43366677"
 ---
 # <a name="list-staffmembers"></a>Список Стаффмемберс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

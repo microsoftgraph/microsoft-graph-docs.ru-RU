@@ -2,19 +2,19 @@
 title: Обновление букингсервице
 description: Обновление свойств объекта Букингсервице в указанном букингбусинесс.
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: a218ee14aaa0a27118e9d4dfd05b074937a50118
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9c64dc057963bdaed34ecab70792fdd5df526406
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441083"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43376358"
 ---
 # <a name="update-bookingservice"></a>Обновление букингсервице
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -54,13 +54,13 @@ PATCH /bookingBusinesses/{id}/services/{id}
 |дефаултдуратион|Длительность|Длина службы по умолчанию, представленная в виде числа дней, часов, минут и секунд. Например, P11D23H59M 59.999999999999 S. |
 |defaultLocation|[location](../resources/location.md)|Физическое расположение службы по умолчанию.|
 |дефаултприце|Двойное с плавающей точкой|Денежная Цена по умолчанию для службы.|
-|дефаултприцетипе|строка|Способ оплаты службы по умолчанию. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
+|дефаултприцетипе|string|Способ оплаты службы по умолчанию. Возможные значения: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
 |дефаултреминдерс|Коллекция [букингреминдер](../resources/bookingreminder.md)|Набор напоминаний по умолчанию для встречи этой службы. Значение этого свойства доступно только при чтении этого **букингсервице** с помощью идентификатора.|
 |description|String|Текстовое описание службы.|
 |displayName|Строка|Имя службы.|
 |emailAddress|String|Адрес электронной почты|
 |id|String| Только для чтения.|
-|ишидденфромкустомерс|Логический|Значение true означает, что эта служба недоступна клиентам для резервирования.|
+|ишидденфромкустомерс|Логическое|Значение true означает, что эта служба недоступна клиентам для резервирования.|
 |notes|String|Дополнительные сведения об этой службе.|
 |Буфер буфера|Длительность|Время, в течение которого помещается в буфер после встречи для этой службы и до того, как может быть зарезервирована Следующая встреча покупателя.|
 |пребуфер|Длительность|Время, в течение которого будет помещено в буфер, прежде чем можно будет запустить встречу для этой службы.|

@@ -1,20 +1,20 @@
 ---
 title: 'event: tentativelyAccept'
 description: Принятие под вопросом указанного события в календаре пользователя.
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b3e9f5510499e1ab6d015cd58e1e97a8eabac995
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ca017eaef42d1a686f5f3ddbc28b297c943c3c2e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42422686"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43364814"
 ---
 # <a name="event-tentativelyaccept"></a>event: tentativelyAccept
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -62,7 +62,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 |:---------------|:--------|:----------|
 |comment|String|Текст, включенный в ответ. Необязательный.|
 |sendResponse|Логическое|Значение `true` указывает, что организатору должен быть отправлен ответ. В противном случае используется значение `false`. Необязательный. Значение по умолчанию: `true`.|
-|пропоседневтиме|[timeSlot](../resources/timeslot.md)|Альтернативная дата/время, предлагаемые приглашению на собрание для начала и завершения. Действует только для событий, которые допускают новые предложения времени. Для установки этого параметра необходимо **** задать для `true`параметра сендреспонсе значение. Необязательный параметр.|
+|пропоседневтиме|[timeSlot](../resources/timeslot.md)|Альтернативная дата/время, предлагаемые приглашению на собрание для начала и завершения. Действует только для событий, которые допускают новые предложения времени. Для установки этого параметра необходимо **sendResponse** задать для `true`параметра сендреспонсе значение. Необязательный параметр.|
 
 ## <a name="response"></a>Отклик
 

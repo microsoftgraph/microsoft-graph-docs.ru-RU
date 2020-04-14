@@ -2,19 +2,19 @@
 title: Получение Букингбусинесс
 description: Получение свойств и связей объекта Букингбусинесс.
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: cb6dcc9fc1b31d9f07fb2bd8ad8d7cffcbc7416f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3b31f51b2e0c6e963cbef0cc9d3fd7c82c0c5b11
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441293"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43367386"
 ---
 # <a name="get-bookingbusiness"></a>Получение Букингбусинесс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

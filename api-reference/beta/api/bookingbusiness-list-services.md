@@ -2,19 +2,19 @@
 title: Список служб
 description: Получение списка объектов Букингсервице в указанном букингбусинесс.
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: ce5eb2394d65bf8fd915618f3ce81a0431acb5e2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ccd8962ca1d34b62b60b6e2f50662e5a520b716f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441251"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43366762"
 ---
 # <a name="list-services"></a>Список служб
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

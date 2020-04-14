@@ -1,18 +1,20 @@
 ---
 title: Создание Усерекспериенцеаналитиксдевицестартуппроцесс
 description: Создание нового объекта Усерекспериенцеаналитиксдевицестартуппроцесс.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e81e4066e280070e3b520ef08bd7728dcca020bd
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: acc938625a34c05f1f18a5434c5c682791421a50
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813918"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43379508"
 ---
 # <a name="create-userexperienceanalyticsdevicestartupprocess"></a>Создание Усерекспериенцеаналитиксдевицестартуппроцесс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42813918"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложения|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -99,7 +101,6 @@ Content-Length: 325
   "startupImpactInMs": 1
 }
 ```
-
 
 
 

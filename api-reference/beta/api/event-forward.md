@@ -1,20 +1,20 @@
 ---
 title: 'событие: Forwarded'
 description: 'Это действие позволяет Организатору или участнику события "собрание" пересылать '
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 139d88c083269d92077da57eca1a730dfe314081
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4d333aab5240b7ff6ae391800e448fe9a36837a3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42422981"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43365648"
 ---
 # <a name="event-forward"></a>событие: Forwarded
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

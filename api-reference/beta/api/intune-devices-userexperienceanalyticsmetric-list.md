@@ -1,18 +1,20 @@
 ---
 title: Список Усерекспериенцеаналитиксметрикс
 description: Список свойств и связей объектов Усерекспериенцеаналитиксметрик.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3aaa73fc9f7045c47f43c8efeda8ef92c884f909
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b58745bf81d365c16333f0d0472cff13522fa70c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813826"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43379281"
 ---
 # <a name="list-userexperienceanalyticsmetrics"></a>Список Усерекспериенцеаналитиксметрикс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42813826"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Для приложения|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -79,7 +81,6 @@ Content-Length: 245
   ]
 }
 ```
-
 
 
 

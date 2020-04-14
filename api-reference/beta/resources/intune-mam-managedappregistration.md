@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса managedAppRegistration
 description: ManagedAppEntity — это базовый тип для всех остальных типов объектов в рабочем процессе управления приложениями. Ресурс ManagedAppRegistration представляет собой сведения об управляемом приложении, используемом членом организации.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: b776c28f3249b53ad6d428ece7002b3eed8cb9f6
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a909c50e6ac7f40c43f4d573f1966f9bb35a3fa6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42781511"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43371996"
 ---
 # <a name="managedappregistration-resource-type"></a>Тип ресурса managedAppRegistration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

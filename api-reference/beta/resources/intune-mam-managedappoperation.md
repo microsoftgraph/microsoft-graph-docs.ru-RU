@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса managedAppOperation
 description: Представляет операцию, примененную к регистрации приложения.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: f601bff074aa741072da3aaa94a6e2d247f71bbd
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 717bd983120b54eeeb8e47c3d421dafbb94f56dc
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42781721"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43372754"
 ---
 # <a name="managedappoperation-resource-type"></a>Тип ресурса managedAppOperation
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

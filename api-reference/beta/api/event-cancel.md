@@ -1,20 +1,20 @@
 ---
 title: 'событие: Cancel (Отмена)'
 description: 'Это действие позволяет организатору собрания отправить сообщение об отмене и отменить событие. '
-author: angelgolfer-ms
+author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0558bc37421391cd565e197e76365840aa8a97a0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e1bd159392c42c2f83668396bb467854f4bee886
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42423394"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43366319"
 ---
 # <a name="event-cancel"></a>событие: Cancel (Отмена)
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

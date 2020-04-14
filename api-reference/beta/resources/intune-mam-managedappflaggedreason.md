@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Манажедаппфлагжедреасон
 description: Причина, по которой пользователю был применен флаг
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 7c295fca92a3f9e7ba4836e96714e8b576784dca
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 40a9d347a86df672f80ffe9b7aeda7f7f2750283
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42781917"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43372933"
 ---
 # <a name="managedappflaggedreason-enum-type"></a>тип перечисления Манажедаппфлагжедреасон
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -23,7 +25,7 @@ ms.locfileid: "42781917"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Нет ошибок.|
+|нет|нуль|Нет ошибок.|
 |рутеддевице|1,1|Регистрация приложения выполняется на корневом/незаблокированном устройстве.|
 |андроидбутлоадерунлоккед|2|Регистрация приложения выполняется на устройстве с Android, на котором разблокирован загрузчик.|
 |андроидфакторироммодифиед|4|Регистрация приложения выполняется на устройстве с Android, на котором было изменено фабричное ПЗУ.|

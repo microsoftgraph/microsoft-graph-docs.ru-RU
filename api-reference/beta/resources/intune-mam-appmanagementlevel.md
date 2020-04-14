@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Аппманажементлевел
 description: Уровни управления для приложений
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: df598acd3882df96eeb226f75b3754056c48a80f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3318e4e4c68c08eb24f0e3dd03a8efa8eba50469
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42782582"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43374254"
 ---
 # <a name="appmanagementlevel-enum-type"></a>тип перечисления Аппманажементлевел
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

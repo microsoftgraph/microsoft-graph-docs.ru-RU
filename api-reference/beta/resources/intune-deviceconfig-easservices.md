@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Еассервицес
 description: Службы Exchange Active Sync.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 85c1bf633fe300f3ddf2efb06345e077d60aa3fc
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1286b53a534891b7282b03ade10c6bedaf85c9eb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791928"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43359396"
 ---
 # <a name="easservices-enum-type"></a>тип перечисления Еассервицес
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -23,7 +25,7 @@ ms.locfileid: "42791928"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Пока не задокументировано.|
+|нет|нуль|Пока не задокументировано.|
 |calendars|1,1|Включает синхронизацию календарей.|
 |contacts|2|Включает синхронизацию контактов.|
 |email|4 |Включает синхронизацию электронной почты.|

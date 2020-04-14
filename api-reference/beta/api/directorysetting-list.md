@@ -1,16 +1,16 @@
 ---
 title: Параметры каталога списка
 description: Получение списка объектов параметров каталога.
-author: dkershaw10
+author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 46765047bfa5e24bb8ccd14b95986f9c3878909e
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: e0b105d5bd4c5178b3a9f62aeda781bdb74eae3a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180786"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43375638"
 ---
 # <a name="list-directory-settings"></a>Параметры каталога списка
 

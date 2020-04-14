@@ -2,15 +2,15 @@
 title: Удаление Каунтринамедлокатион
 description: Удаление объекта Каунтринамедлокатион.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5ea99659b8257a6d93ddd28fdc45f8221e78fecd
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 3043e1caa24ef7ad3da94b6a7cf5c3162f656ddd
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43061967"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43375827"
 ---
 # <a name="delete-countrynamedlocation"></a>Удаление Каунтринамедлокатион
 

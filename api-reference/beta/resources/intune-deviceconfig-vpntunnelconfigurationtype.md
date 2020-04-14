@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Впнтуннелконфигуратионтипе
 description: Тип туннелей, которые будут представлены VPN-клиенту для настройки
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: c54f54e07b6a6e94bdad35511f2aa9d50a37a49e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d60d8fdd812fe18a5010683ddc0d1ef6cd8fbf06
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42787280"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43358932"
 ---
 # <a name="vpntunnelconfigurationtype-enum-type"></a>тип перечисления Впнтуннелконфигуратионтипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

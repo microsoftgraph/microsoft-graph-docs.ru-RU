@@ -1,18 +1,20 @@
 ---
 title: Удаление Активедиректоривиндовсаутопилотдеплойментпрофиле
 description: Удаляет объект Активедиректоривиндовсаутопилотдеплойментпрофиле.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ffe8d8170c84df28490f313e4a2274c31e125c0c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 69e407121223048c03060626051c452db888c927
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813567"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43378116"
 ---
 # <a name="delete-activedirectorywindowsautopilotdeploymentprofile"></a>Удаление Активедиректоривиндовсаутопилотдеплойментпрофиле
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42813567"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Для приложения|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeploym
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса vppLicensingType
 description: Содержит свойства для корпоративного лицензирования приложений iOS (VPP).
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c04e3fbc7da2a355dc8d5b1e69ad90a6f333a9cf
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f31388de57835ea91ae3dc9fd104dd3b74b0ae32
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797698"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43362767"
 ---
 # <a name="vpplicensingtype-resource-type"></a>Тип ресурса vppLicensingType
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -23,9 +25,9 @@ ms.locfileid: "42797698"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|суппортусерлиценсинг|Логический|Указывает, поддерживает ли программа тип лицензирования пользователя.|
+|суппортусерлиценсинг|Логическое|Указывает, поддерживает ли программа тип лицензирования пользователя.|
 |суппортдевицелиценсинг|Boolean|Указывает, поддерживает ли программа тип лицензирования устройства.|
-|supportsUserLicensing|Логический|Указывает, поддерживает ли программа тип лицензирования пользователя.|
+|supportsUserLicensing|Логическое|Указывает, поддерживает ли программа тип лицензирования пользователя.|
 |supportsDeviceLicensing|Boolean|Указывает, поддерживает ли программа тип лицензирования устройства.|
 
 ## <a name="relationships"></a>Связи

@@ -2,19 +2,19 @@
 title: Список Букингбусинессес
 description: Получение коллекции объектов букингбусинесс, созданных для клиента.
 localization_priority: Normal
-author: angelgolfer-ms
+author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: fade418332f3e914a2a24d0e17bca515b77c9f6b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c71ef053941b82b436bd453f8c3927af4222caf7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441226"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43366628"
 ---
 # <a name="list-bookingbusinesses"></a>Список Букингбусинессес
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
