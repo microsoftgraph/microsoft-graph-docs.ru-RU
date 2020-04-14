@@ -1,18 +1,20 @@
 ---
 title: Получение объекта macOSDeviceFeaturesConfiguration
 description: Чтение свойств и связей объекта macOSDeviceFeaturesConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4ad8e7ffd3eefd11d791dfef7c5f7d22700a1019
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 49ead2a6543ae14aa604d624cdb78f7a735ab584
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42746971"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43438141"
 ---
 # <a name="get-macosdevicefeaturesconfiguration"></a>Получение объекта macOSDeviceFeaturesConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -153,7 +155,6 @@ Content-Length: 2815
   }
 }
 ```
-
 
 
 

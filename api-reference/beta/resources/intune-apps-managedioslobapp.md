@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса managedIOSLobApp
 description: Содержит свойства, в том числе унаследованные, для управляемых бизнес-приложений iOS.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 655bfa7db693ea99719d1a2f21db26a7d6aee21f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 15babb9d76c14f9bc24c09a4254b5376ee64c7b7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797918"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440458"
 ---
 # <a name="managedioslobapp-resource-type"></a>Тип ресурса managedIOSLobApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

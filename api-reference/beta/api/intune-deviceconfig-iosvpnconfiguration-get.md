@@ -1,18 +1,20 @@
 ---
 title: Получение Иосвпнконфигуратион
 description: Чтение свойств и связей объекта Иосвпнконфигуратион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 650f3783aecb06fd376e8140117e1f358504116d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1ddb6d9b2679e8fb69ba3806bc48a4fb426f28ad
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42748480"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43438483"
 ---
 # <a name="get-iosvpnconfiguration"></a>Получение Иосвпнконфигуратион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -171,7 +173,6 @@ Content-Length: 3198
   }
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Кэйреалвалуепаир
 description: Значение типа "ключ-значение" с ключом строки и реальным значением (с плавающей запятой).
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6b90c7faa0bb3ffabe5b057d03503745801af8c8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 7b5b9860cb4ef161cc057013db889fd1bb626be6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790428"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439968"
 ---
 # <a name="keyrealvaluepair-resource-type"></a>Тип ресурса Кэйреалвалуепаир
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

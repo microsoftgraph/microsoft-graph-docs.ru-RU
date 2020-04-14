@@ -1,18 +1,20 @@
 ---
 title: Получение iosikEv2VpnConfiguration
 description: Чтение свойств и связей объекта iosikEv2VpnConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: beac4ab203af9a8bf6368d048e3290bfaaeea101
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fa4c3a02bb52921c331ebb09e6076ab87ca2ca11
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42750441"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43438969"
 ---
 # <a name="get-iosikev2vpnconfiguration"></a>Получение iosikEv2VpnConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -222,7 +224,6 @@ Content-Length: 5469
   }
 }
 ```
-
 
 
 

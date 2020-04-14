@@ -1,18 +1,20 @@
 ---
 title: Обновление Виндовсаутопилотдеплойментпрофилеполицисетитем
 description: Обновление свойств объекта Виндовсаутопилотдеплойментпрофилеполицисетитем.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 092d9552b8d8c01f6381acf3e3f7504ad5b40cbc
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bf52e7b5819fa12b0b4b40962f86bc8bef1e2b1b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801959"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437893"
 ---
 # <a name="update-windowsautopilotdeploymentprofilepolicysetitem"></a>Обновление Виндовсаутопилотдеплойментпрофилеполицисетитем
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -110,7 +112,6 @@ Content-Length: 500
   ]
 }
 ```
-
 
 
 

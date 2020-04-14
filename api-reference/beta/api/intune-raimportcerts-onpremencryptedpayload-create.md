@@ -1,18 +1,20 @@
 ---
 title: Создание Онпременкриптедпайлоад
 description: Создание нового объекта Онпременкриптедпайлоад.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 14e18210dc4ea362a8fcf0e685a8f1d272ad1773
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4c9baa176521ef1fcc92fe72d18406f0551ebe07
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801952"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437886"
 ---
 # <a name="create-onpremencryptedpayload"></a>Создание Онпременкриптедпайлоад
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -130,7 +132,6 @@ Content-Length: 781
   "isDeleted": true
 }
 ```
-
 
 
 

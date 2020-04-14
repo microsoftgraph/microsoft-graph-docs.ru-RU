@@ -1,18 +1,20 @@
 ---
 title: Перечисление объектов mobileApp
 description: Список свойств и связей объектов mobileApp.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d3052bf2d59a6dfc0fcd8246fa73ddb3641ef02d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 98be3baefcbf41203efed3ffaf9d936efb3879ef
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800769"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441267"
 ---
 # <a name="list-mobileapps"></a>Перечисление объектов mobileApp
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -101,7 +103,6 @@ Content-Length: 1013
   ]
 }
 ```
-
 
 
 

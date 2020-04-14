@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Манажементстате
 description: Состояние управления для устройства в Microsoft Intune.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: fd0a4616f6f35c91ae6ce6269d452a00d3275bc5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 88aef8765229a573818267c78e653000e3160dd3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783930"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443872"
 ---
 # <a name="managementstate-enum-type"></a>тип перечисления Манажементстате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

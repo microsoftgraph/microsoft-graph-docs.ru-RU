@@ -1,18 +1,20 @@
 ---
 title: Список iosikEv2VpnConfigurations
 description: Список свойств и связей объектов iosikEv2VpnConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a2429048d4fe1d2542dc7f6ab00705b211575981
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6b705df6bc42ec79512701eba1d567260b470293
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42750378"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43438930"
 ---
 # <a name="list-iosikev2vpnconfigurations"></a>Список iosikEv2VpnConfigurations
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -220,7 +222,6 @@ Content-Length: 5777
   ]
 }
 ```
-
 
 
 

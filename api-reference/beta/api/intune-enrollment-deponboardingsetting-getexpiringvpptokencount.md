@@ -1,18 +1,20 @@
 ---
 title: Функция Жетекспирингвпптокенкаунт
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 064c9879bba4ea4d1f47fca19b462867f4ef07a0
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e1fb4390ef6ece1a181bb8b05a85db72f568a19e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813248"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444746"
 ---
 # <a name="getexpiringvpptokencount-function"></a>Функция Жетекспирингвпптокенкаунт
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -76,7 +78,6 @@ Content-Length: 18
   "value": 8
 }
 ```
-
 
 
 

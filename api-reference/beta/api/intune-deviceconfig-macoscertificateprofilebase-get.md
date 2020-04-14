@@ -1,18 +1,20 @@
 ---
 title: Получение Макосцертификатепрофилебасе
 description: Чтение свойств и связей объекта Макосцертификатепрофилебасе.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 29ac3b68d78c197e4cb09979ae611f1004b8a054
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c2f121eeb13e1ace4befa8b24a1fe0d6745ac1eb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42747961"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43438402"
 ---
 # <a name="get-macoscertificateprofilebase"></a>Получение Макосцертификатепрофилебасе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -113,7 +115,6 @@ Content-Length: 1514
   }
 }
 ```
-
 
 
 

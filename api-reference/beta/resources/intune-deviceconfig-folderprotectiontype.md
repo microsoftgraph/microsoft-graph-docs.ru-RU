@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Фолдерпротектионтипе
 description: Возможные значения защиты папок
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a8242f361f68ec7e295950ea29e7478de414ad6b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ded583dfe44d393a2ae1c8f56f9952feb85cf857
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791739"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444290"
 ---
 # <a name="folderprotectiontype-enum-type"></a>тип перечисления Фолдерпротектионтипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

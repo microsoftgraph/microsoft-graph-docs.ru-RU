@@ -1,18 +1,20 @@
 ---
 title: Получение Девицеманажементаутопилотполицистатусдетаил
 description: Чтение свойств и связей объекта Девицеманажементаутопилотполицистатусдетаил.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 31f16bcfda34de6bf483300060772f5b00a87480
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4103f34951ef939be945f34b2d67da63a7280ee0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800216"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443404"
 ---
 # <a name="get-devicemanagementautopilotpolicystatusdetail"></a>Получение Девицеманажементаутопилотполицистатусдетаил
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -80,7 +82,6 @@ Content-Length: 377
   }
 }
 ```
-
 
 
 

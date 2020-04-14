@@ -1,18 +1,20 @@
 ---
 title: Get macOSCustomConfiguration
 description: Чтение свойств и связей объекта macOSCustomConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ffc9b4eb2c5df9fd20c3f6837399b6642fba553d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 44838e42996c2bbf0726bfec0679f5e27cdc5c55
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42747230"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43438208"
 ---
 # <a name="get-macoscustomconfiguration"></a>Get macOSCustomConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -110,7 +112,6 @@ Content-Length: 1407
   }
 }
 ```
-
 
 
 

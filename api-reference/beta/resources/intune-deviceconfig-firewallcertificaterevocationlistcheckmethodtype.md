@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Фиреваллцертификатеревокатионлистчеккмесодтипе
 description: Возможные значения для Фиреваллцертификатеревокатионлистчеккмесод
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 2ef4a78a7e61f18b52b322b4053ebfbfa7e54e05
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f220d5e592544ec3527c16c425d4b22fe0266d4c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791760"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444311"
 ---
 # <a name="firewallcertificaterevocationlistcheckmethodtype-enum-type"></a>тип перечисления Фиреваллцертификатеревокатионлистчеккмесодтипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -24,7 +26,7 @@ ms.locfileid: "42791760"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |девицедефаулт|нуль|Значение не настроено Intune, не переопределять значение устройства по умолчанию, настроенное пользователем|
-|none|1,1|Не проверять список отзыва сертификатов|
+|нет|1,1|Не проверять список отзыва сертификатов|
 |произошл|2|Проверка списка отзыва сертификатов и предоставление сертификата только в том случае, если сертификат подтвержден подтверждением|
 |необходимость|4|Требовать успешную проверку списка отзыва сертификатов перед предоставлением сертификата|
 

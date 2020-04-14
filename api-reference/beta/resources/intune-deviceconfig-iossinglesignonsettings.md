@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Иоссинглесигнонсеттингс
 description: Параметры проверки подлинности Kerberos для iOS для единого входа
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cd959b3019a6bd4ce553b53a70042fffd5c9b277
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2f43f5feea67f9f94a8aa5f9179add26deb84ee6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790540"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440191"
 ---
 # <a name="iossinglesignonsettings-resource-type"></a>Тип ресурса Иоссинглесигнонсеттингс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

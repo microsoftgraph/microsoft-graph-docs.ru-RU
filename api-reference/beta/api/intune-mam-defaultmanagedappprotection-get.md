@@ -1,18 +1,20 @@
 ---
 title: Get defaultManagedAppProtection
 description: Чтение свойств и связей объекта defaultManagedAppProtection.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d5b0f7179d20b86c2c2a866cbd96ac9891252309
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9cacdefe6f9f4ec93ddbafb03026fc7078afd8d8
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42803661"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444566"
 ---
 # <a name="get-defaultmanagedappprotection"></a>Get defaultManagedAppProtection
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -181,7 +183,6 @@ Content-Length: 4930
   }
 }
 ```
-
 
 
 

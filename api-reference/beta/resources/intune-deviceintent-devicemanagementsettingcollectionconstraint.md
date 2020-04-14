@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Девицеманажементсеттингколлектионконстраинт
 description: Ограничение, которое устанавливает максимальное количество элементов в коллекции
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 180d199997f288945ba9be282ebd7c2bdbee31ec
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: dc3b3d9a8c03c323f142186baab01e34a71ce4aa
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785360"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443277"
 ---
 # <a name="devicemanagementsettingcollectionconstraint-resource-type"></a>Тип ресурса Девицеманажементсеттингколлектионконстраинт
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

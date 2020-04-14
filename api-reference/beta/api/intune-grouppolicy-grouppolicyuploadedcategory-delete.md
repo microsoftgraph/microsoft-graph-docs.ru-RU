@@ -1,18 +1,20 @@
 ---
 title: Удаление Граупполициуплоадедкатегори
 description: Удаляет объект Граупполициуплоадедкатегори.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d887be38edfc5312ca141ad88e7fe60d1aae0464
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6013d0f825956b08dd85ce1bfde7370ecc980932
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42803794"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444693"
 ---
 # <a name="delete-grouppolicyuploadedcategory"></a>Удаление Граупполициуплоадедкатегори
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -25,9 +27,9 @@ ms.locfileid: "42803794"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -66,7 +68,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/groupPolicyCategories/{
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

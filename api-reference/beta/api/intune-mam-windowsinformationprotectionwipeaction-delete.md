@@ -1,18 +1,20 @@
 ---
 title: Удаление Виндовсинформатионпротектионвипеактион
 description: Удаляет объект Виндовсинформатионпротектионвипеактион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4b28a33f3921f16099fb678c41f8f955c9eda387
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a507754c8688905485e646c24d1e3076bbf21559
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42803220"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440765"
 ---
 # <a name="delete-windowsinformationprotectionwipeaction"></a>Удаление Виндовсинформатионпротектионвипеактион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/windowsInformationPr
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

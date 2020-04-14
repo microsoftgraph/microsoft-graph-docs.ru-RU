@@ -1,18 +1,20 @@
 ---
 title: Перечисление объектов macOSCustomConfiguration
 description: Список свойств и связей объектов macOSCustomConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2e329fddcd6f2523950e46022c898ff7af5ed556
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 79c987779e9b09e66b183db3f13f2bb0a5f4bd3b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42747153"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43438177"
 ---
 # <a name="list-macoscustomconfigurations"></a>Перечисление объектов macOSCustomConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -108,7 +110,6 @@ Content-Length: 1491
   ]
 }
 ```
-
 
 
 

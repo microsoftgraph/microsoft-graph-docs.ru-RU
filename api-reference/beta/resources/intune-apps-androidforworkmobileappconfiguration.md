@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Андроидфорворкмобилеаппконфигуратион
 description: Содержит свойства, унаследованные свойства и действия для конфигураций мобильного приложения АФВ.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3e278fa85055697aa352d4796240cab185d21370
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9a33c0392852b30f90f414421f743439107625f9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799306"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437461"
 ---
 # <a name="androidforworkmobileappconfiguration-resource-type"></a>Тип ресурса Андроидфорворкмобилеаппконфигуратион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -46,6 +48,7 @@ ms.locfileid: "42799306"
 |packageId|String|Идентификатор пакета конфигурации приложения Android для рабочего приложения.|
 |пайлоаджсон|String|Полезные данные JSON конфигурации приложения для Android для рабочего приложения.|
 |пермиссионактионс|Коллекция [андроидпермиссионактион](../resources/intune-apps-androidpermissionaction.md)|Список разрешений приложений для Android и соответствующие действия с разрешениями.|
+|профилеаппликабилити|[андроидпрофилеаппликабилити](../resources/intune-apps-androidprofileapplicability.md)|Применимость профиля предприятия Android (Андроидворкпрофиле, Девицеовнер или Default (применяется к обоим). Возможные значения: `default`, `androidWorkProfile`, `androidDeviceOwner`.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -87,7 +90,8 @@ ms.locfileid: "42799306"
       "permission": "String",
       "action": "String"
     }
-  ]
+  ],
+  "profileApplicability": "String"
 }
 ```
 

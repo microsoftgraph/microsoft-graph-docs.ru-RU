@@ -1,18 +1,20 @@
 ---
 title: Функция Жетлиценсесфорапп
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 42b26bcd7e93a285a3ab4169787d9b230132bd00
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bf039af8d499de281d0230872e86be6be6edf29e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802680"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441357"
 ---
 # <a name="getlicensesforapp-function"></a>Функция Жетлиценсесфорапп
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -85,7 +87,6 @@ Content-Length: 298
   ]
 }
 ```
-
 
 
 

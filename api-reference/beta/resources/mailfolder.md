@@ -2,19 +2,19 @@
 title: Тип ресурса mailFolder
 description: Почтовая папка в почтовом ящике пользователя, например "Входящие" или "Черновики". Почтовые папки могут содержать сообщения, другие элементы Outlook и дочерние почтовые папки.
 localization_priority: Normal
-author: angelgolfer-ms
+author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 9f80f49c193192f4a7ef63c51b20f6693fabc403
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bbce8afa1926444af025b0b57d857f94a296e852
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522829"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443100"
 ---
 # <a name="mailfolder-resource-type"></a>Тип ресурса mailFolder
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -61,7 +61,7 @@ GET /me/mailFolders/drafts
 |[Создание объекта MailFolder](../api/mailfolder-post-childfolders.md) |[mailFolder](mailfolder.md)| Создание объекта mailFolder в текущем объекте путем публикации в коллекции элементов childFolders.|
 |[Вывод списка объектов childFolder](../api/mailfolder-list-childfolders.md) |Коллекция [mailFolder](mailfolder.md)| Получение коллекции папок в указанной папке. С помощью ярлыка `.../me/MailFolders` вы можете получить коллекцию папок верхнего уровня и перейти к другой папке.|
 |[Создание сообщения](../api/mailfolder-post-messages.md) |[message](message.md)| Создание сообщения в текущем элементе mailFolder путем его публикации в коллекции сообщений.|
-|[Список сообщений](../api/mailfolder-list-messages.md) |Коллекция [message](message.md)| Получение всех сообщений в почтовом ящике пользователя, вошедшего в систему, или в указанной папке почтового ящика.|
+|[Вывод списка сообщений](../api/mailfolder-list-messages.md) |Коллекция [message](message.md)| Получение всех сообщений в почтовом ящике пользователя, вошедшего в систему, или в указанной папке почтового ящика.|
 |[Обновление](../api/mailfolder-update.md) | [mailFolder](mailfolder.md)|Обновление указанного объекта mailFolder. |
 |[Удаление](../api/mailfolder-delete.md) | Нет |Удаление указанного объекта mailFolder. |
 |[copy](../api/mailfolder-copy.md)|[mailFolder](mailfolder.md)|Копирование элемента mailFolder и его содержимого в другой элемент mailFolder.|
@@ -79,7 +79,7 @@ GET /me/mailFolders/drafts
 |:---------|:-----|:------------|
 |childFolderCount|Int32|Количество непосредственных дочерних элементов mailFolder в текущем элементе mailFolder.|
 |displayName|Строка|Отображаемое имя элемента mailFolder.|
-|id|String|Уникальный идентификатор элемента mailFolder.|
+|id|Строка|Уникальный идентификатор элемента mailFolder.|
 |parentFolderId|Строка|Уникальный идентификатор родительского элемента mailFolder для элемента mailFolder.|
 |totalItemCount|Int32|Количество элементов в элементе mailFolder.|
 |unreadItemCount|Int32|Количество элементов, помеченных как непрочитанные, в элементе mailFolder.|

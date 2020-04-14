@@ -1,18 +1,20 @@
 ---
 title: действие Хаспайлоадлинкс
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d55d0a8909aa735d1f0f97865b6c9316be586b26
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 188a53eff4cf00181d157e69aad5c6ea9caa2ad5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800776"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441274"
 ---
 # <a name="haspayloadlinks-action"></a>действие Хаспайлоадлинкс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -98,7 +100,6 @@ Content-Length: 249
   ]
 }
 ```
-
 
 
 

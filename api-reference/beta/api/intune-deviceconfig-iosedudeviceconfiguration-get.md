@@ -1,18 +1,20 @@
 ---
 title: Получение Иоседудевицеконфигуратион
 description: Чтение свойств и связей объекта Иоседудевицеконфигуратион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ba63fca7432428c1ab16866f7e5b81e0346934e4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 59fa97fa1f7f73a85e567b56c562eb5bdf69ca29
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42751218"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439237"
 ---
 # <a name="get-iosedudeviceconfiguration"></a>Получение Иоседудевицеконфигуратион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -140,7 +142,6 @@ Content-Length: 3004
   }
 }
 ```
-
 
 
 

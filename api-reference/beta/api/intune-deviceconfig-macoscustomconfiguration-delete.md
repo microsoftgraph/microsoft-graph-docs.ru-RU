@@ -1,18 +1,20 @@
 ---
 title: Delete macOSCustomConfiguration
 description: Удаляет объект macOSCustomConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c95ff631d2ffbe00ef359bba9ff370f6d4e5091
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 72c01dd12485badcacc5b7e82ab07004c725d1ae
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42747293"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43438215"
 ---
 # <a name="delete-macoscustomconfiguration"></a>Delete macOSCustomConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

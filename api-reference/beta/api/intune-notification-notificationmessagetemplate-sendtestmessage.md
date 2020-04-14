@@ -1,18 +1,20 @@
 ---
 title: Действие sendTestMessage
 description: Отправляет проверочное сообщение, используя указанный объект notificationMessageTemplate в языковом стандарте по умолчанию.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 134be704337b6c99db09b704e592f31776058dc8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 29473ee728589b80f8d4599f27d424a9050567ab
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42803128"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444537"
 ---
 # <a name="sendtestmessage-action"></a>Действие sendTestMessage
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -63,7 +65,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/notificationMessageTempla
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

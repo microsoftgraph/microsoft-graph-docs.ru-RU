@@ -1,18 +1,20 @@
 ---
 title: Список Иоседукатиондевицеконфигуратионс
 description: Список свойств и связей объектов iosEducationDeviceConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 09924369208a92527444174a8f5ac59c2589d2fc
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 43e957b522a752cf943c3eded5afc84e70270337
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42751344"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439281"
 ---
 # <a name="list-ioseducationdeviceconfigurations"></a>Список Иоседукатиондевицеконфигуратионс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -105,7 +107,6 @@ Content-Length: 1367
   ]
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса ИосвпнсекуритяссоЦиатионпараметерс
 description: Параметры сопоставления безопасности VPN
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d3da905a68222b60bef7225f34afc2b4a0b39a50
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f52d4d05945a29a1eaa44823d13b41eb560f688a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790498"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440102"
 ---
 # <a name="iosvpnsecurityassociationparameters-resource-type"></a>Тип ресурса ИосвпнсекуритяссоЦиатионпараметерс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

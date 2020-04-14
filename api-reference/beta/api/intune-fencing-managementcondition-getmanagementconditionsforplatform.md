@@ -1,18 +1,20 @@
 ---
 title: Функция Жетманажементкондитионсфорплатформ
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 777c7288abb4b5650fc6253967448502660b8fe1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 12056b8a1bde39ebd77d8ab4a08fab125d2833a5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42804788"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441469"
 ---
 # <a name="getmanagementconditionsforplatform-function"></a>Функция Жетманажементкондитионсфорплатформ
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -91,7 +93,6 @@ Content-Length: 504
   ]
 }
 ```
-
 
 
 

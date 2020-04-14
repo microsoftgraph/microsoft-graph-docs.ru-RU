@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса mobileAppContentFile
 description: Содержит свойства для одного файла установщика, связанного с заданной версией mobileAppContent.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ebb51c5c5c19cfeefd849861f800c817d481d0c8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3bce88846edac696cc2a751f19c36d06a0afb8be
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797841"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440424"
 ---
 # <a name="mobileappcontentfile-resource-type"></a>Тип ресурса mobileAppContentFile
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -44,8 +46,8 @@ ms.locfileid: "42797841"
 |azureStorageUriExpirationDateTime|DateTimeOffset|Время, когда заканчивается срок действия URI для службы хранилища Azure.|
 |manifest|Binary|Данные манифеста.|
 |uploadState|[мобилеаппконтентфилеуплоадстате](../resources/intune-apps-mobileappcontentfileuploadstate.md)|Состояние текущего запроса на отправку. Возможные значения: `success`, `transientError`, `error`, `unknown`, `azureStorageUriRequestSuccess`, `azureStorageUriRequestPending`, `azureStorageUriRequestFailed`, `azureStorageUriRequestTimedOut`, `azureStorageUriRenewalSuccess`, `azureStorageUriRenewalPending`, `azureStorageUriRenewalFailed`, `azureStorageUriRenewalTimedOut`, `commitFileSuccess`, `commitFilePending`, `commitFileFailed`, `commitFileTimedOut`.|
-|исфрамеворкфиле|Логический|Значение, указывающее, является ли файл файлом платформы.|
-|Dependency|Логический|Является ли файл содержимого зависимостью от основного файла содержимого.|
+|исфрамеворкфиле|Логическое|Значение, указывающее, является ли файл файлом платформы.|
+|Dependency|Логическое|Является ли файл содержимого зависимостью от основного файла содержимого.|
 
 ## <a name="relationships"></a>Связи
 Нет

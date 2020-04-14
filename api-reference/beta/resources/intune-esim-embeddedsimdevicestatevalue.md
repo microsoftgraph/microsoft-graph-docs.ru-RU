@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Ембеддедсимдевицестатевалуе
 description: Описывает различные состояния для встроенного кода активации SIM-карты.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 12e6b53230a46aaaade658de093312a518649345
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d3fa616afc725542ff5d115c3edbcc09cb9b5983
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783293"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442777"
 ---
 # <a name="embeddedsimdevicestatevalue-enum-type"></a>тип перечисления Ембеддедсимдевицестатевалуе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

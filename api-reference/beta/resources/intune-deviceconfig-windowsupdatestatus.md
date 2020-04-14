@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Виндовсупдатестатус
 description: Состояния устройств конфигурации центра обновления Windows для бизнеса
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: ac34352ff19bcb9273e638223e87e7f46aad6777
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ac307aae8f43cd423c41c1a20ccbc7b9928452d3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786160"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441095"
 ---
 # <a name="windowsupdatestatus-enum-type"></a>тип перечисления Виндовсупдатестатус
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

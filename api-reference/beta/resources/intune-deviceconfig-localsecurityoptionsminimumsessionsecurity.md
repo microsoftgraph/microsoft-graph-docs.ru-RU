@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Локалсекуритйоптионсминимумсессионсекурити
 description: Возможные значения для Локалсекуритйоптионсминимумсессионсекурити
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: da31ca3cecc74e1c74270bd34bdad14df35cc1b1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f5d7e052d5b814bb10d3c0851683deccdf9f9f5f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790344"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439975"
 ---
 # <a name="localsecurityoptionsminimumsessionsecurity-enum-type"></a>тип перечисления Локалсекуритйоптионсминимумсессионсекурити
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -23,7 +25,7 @@ ms.locfileid: "42790344"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Отправка ответов LM & NTLM|
+|нет|нуль|Отправка ответов LM & NTLM|
 |requireNtmlV2SessionSecurity|1,1|Отправлять LM & NTLM — использовать сеансовую безопасность NTLMv2 при согласовании|
 |require128BitEncryption|2|Отправлять только LM & NTLM ответы|
 |ntlmV2And128BitEncryption|4|Отправлять только LM & только ответы NTLMv2.|

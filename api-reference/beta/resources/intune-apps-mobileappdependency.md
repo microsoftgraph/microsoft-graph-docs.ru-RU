@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Мобилеаппдепенденци
 description: Описывает тип зависимости между двумя мобильными приложениями.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5440a7c9729ca0990021df9c0c89065b672b0ff2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 42f87c57f7df7c60e75070ed9ac0a579cb436f91
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797827"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440394"
 ---
 # <a name="mobileappdependency-resource-type"></a>Тип ресурса Мобилеаппдепенденци
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

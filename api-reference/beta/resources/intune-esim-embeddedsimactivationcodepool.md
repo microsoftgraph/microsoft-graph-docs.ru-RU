@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Ембеддедсимактиватионкодепул
 description: Пул представляет группу встроенных кодов активации SIM-карты.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 61ee61870eca7ffcde8bd00e2a12f3220b906eff
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f2ea2c94e4a5b65443c14b03dfc9bdea0624e121
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783314"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442822"
 ---
 # <a name="embeddedsimactivationcodepool-resource-type"></a>Тип ресурса Ембеддедсимактиватионкодепул
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

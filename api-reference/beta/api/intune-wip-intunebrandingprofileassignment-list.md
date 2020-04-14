@@ -1,18 +1,20 @@
 ---
 title: Список Интунебрандингпрофилеассигнментс
 description: Список свойств и связей объектов Интунебрандингпрофилеассигнмент.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d75a9317b721122486313edeb33f6b85c3cc60a8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b6beb833148b3589089cab48d68775ff4778cfb5
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799683"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442216"
 ---
 # <a name="list-intunebrandingprofileassignments"></a>Список Интунебрандингпрофилеассигнментс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -77,7 +79,6 @@ Content-Length: 273
   ]
 }
 ```
-
 
 
 

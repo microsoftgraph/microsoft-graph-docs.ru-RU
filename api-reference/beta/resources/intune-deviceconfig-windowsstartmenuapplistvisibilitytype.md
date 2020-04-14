@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Виндовсстартменуапплиствисибилититипе
 description: Тип отображения списка приложений меню "Пуск".
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: dd517d9fa660136df39dff6ab96c455ca280b61e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 18d538409ba83e065187f7201264ff9e6fc7eaf6
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786223"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444007"
 ---
 # <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>тип перечисления Виндовсстартменуапплиствисибилититипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

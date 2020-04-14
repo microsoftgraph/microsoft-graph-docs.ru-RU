@@ -1,18 +1,20 @@
 ---
 title: Удаление iosikEv2VpnConfiguration
 description: Удаляет объект iosikEv2VpnConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: bdd96b4818cb7b8ac87e3d671df70fc86486b098
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 09492f9db4fc29f7cabdaf00f502088927037591
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42750448"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43438983"
 ---
 # <a name="delete-iosikev2vpnconfiguration"></a>Удаление iosikEv2VpnConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

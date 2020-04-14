@@ -1,18 +1,20 @@
 ---
 title: Создание Девицеманажементаутопилотполицистатусдетаил
 description: Создание нового объекта Девицеманажементаутопилотполицистатусдетаил.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 11b7f197a69022c9de547cb998fb14c8d6e9f2d1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: db4e90778d137b23d6e34d5503df15e137297814
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800230"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443426"
 ---
 # <a name="create-devicemanagementautopilotpolicystatusdetail"></a>Создание Девицеманажементаутопилотполицистатусдетаил
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -53,9 +55,9 @@ POST /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policy
 |:---|:---|:---|
 |id|String|UUID объекта.|
 |displayName|Строка|Понятное имя политики.|
-|полицитипе|[девицеманажементаутопилотполицитипе](../resources/intune-troubleshooting-devicemanagementautopilotpolicytype.md)|Тип политики. Возможные значения: `unknown`, `application`, `appModel`, `configurationPolicy`.|
-|комплианцестатус|[девицеманажементаутопилотполицикомплианцестатус](../resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md)|Состояние соответствия политике. Возможные значения: `unknown`, `compliant`, `installed`, `notCompliant`, `notInstalled`, `error`.|
-|траккедоненроллментстатус|Логический|Указывает, была ли эта пролици зарегистрирована в рамках сеанса синхронизации автоматической загрузки для автоматической пилотной установки|
+|полицитипе|[deviceManagementAutopilotPolicyType](../resources/intune-troubleshooting-devicemanagementautopilotpolicytype.md)|Тип политики. Возможные значения: `unknown`, `application`, `appModel`, `configurationPolicy`.|
+|комплианцестатус|[deviceManagementAutopilotPolicyComplianceStatus](../resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md)|Состояние соответствия политике. Возможные значения: `unknown`, `compliant`, `installed`, `notCompliant`, `notInstalled`, `error`.|
+|траккедоненроллментстатус|Логическое|Указывает, была ли эта пролици зарегистрирована в рамках сеанса синхронизации автоматической загрузки для автоматической пилотной установки|
 |lastReportedDateTime|DateTimeOffset|Метка времени для отчета о состоянии политики|
 
 
@@ -99,7 +101,6 @@ Content-Length: 344
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
-
 
 
 

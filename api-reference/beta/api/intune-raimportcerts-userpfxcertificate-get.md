@@ -1,18 +1,20 @@
 ---
 title: Получение Усерпфксцертификате
 description: Чтение свойств и связей объекта Усерпфксцертификате.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 7a82bb8de3ce1c50d190348ec5d61830a73e2ae5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 16a408db1df0f2d8832d81b1674804330984c9c1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801833"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437645"
 ---
 # <a name="get-userpfxcertificate"></a>Получение Усерпфксцертификате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -87,7 +89,6 @@ Content-Length: 742
   }
 }
 ```
-
 
 
 

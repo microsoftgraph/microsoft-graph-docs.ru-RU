@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса iosNetworkUsageRule
 description: Благодаря правилам использования сети предприятия могут определять, как управляемые приложения используют сети, например мобильные сети.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 26e62ee0d470d178b15a849c16f4e1678cc0152e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 422600c9bffd6b1e7849cabc30229645cab486e7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790589"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440475"
 ---
 # <a name="iosnetworkusagerule-resource-type"></a>Тип ресурса iosNetworkUsageRule
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -24,7 +26,7 @@ ms.locfileid: "42790589"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |managedApps|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Сведения об управляемых приложениях, к которым применяется это правило. Эта коллекция может содержать не более 500 элементов.|
-|cellularDataBlockWhenRoaming|Логический|Если задано значение true, соответствующим управляемым приложениям запрещается использовать мобильные данные в роуминге.|
+|cellularDataBlockWhenRoaming|Логическое|Если задано значение true, соответствующим управляемым приложениям запрещается использовать мобильные данные в роуминге.|
 |cellularDataBlocked|Boolean|Если задано значение true, соответствующим управляемым приложениям запрещается использовать мобильные данные в любое время.|
 
 ## <a name="relationships"></a>Связи

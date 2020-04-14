@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Иоскредентиалсинглесигнонекстенсион
 description: Представляет профиль расширения единого входа с использованием учетных данных для устройств с iOS.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: cf6f3202abb5fce499a842a03aae189fc1572141
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4a8956fb879bf51bf33f3b682826279fd702f127
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791662"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444141"
 ---
 # <a name="ioscredentialsinglesignonextension-resource-type"></a>Тип ресурса Иоскредентиалсинглесигнонекстенсион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -2,19 +2,19 @@
 title: Тип ресурса Хибридажентупдатерконфигуратион
 description: Тип ресурса Хибридажентупдатерконфигуратион.
 localization_priority: Normal
-author: davidmu1
+author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c10173d099ac7c2ad9714b0240f306e783fdd6da
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5054ab7c22cb35a846df29ea058e0d3c02c5e7e4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496812"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440514"
 ---
 # <a name="hybridagentupdaterconfiguration-resource-type"></a>Тип ресурса Хибридажентупдатерконфигуратион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "42496812"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|алловупдатеконфигуратионоверриде|Логический|Указывает, будет ли пропущена Конфигурация обновления, и агент будет получать обновление при наличии следующей версии агента.|
+|алловупдатеконфигуратионоверриде|Логическое|Указывает, будет ли пропущена Конфигурация обновления, и агент будет получать обновление при наличии следующей версии агента.|
 |деферупдатедатетиме|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |упдатевиндов|[упдатевиндов](updatewindow.md)||
 

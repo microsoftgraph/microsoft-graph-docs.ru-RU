@@ -1,18 +1,20 @@
 ---
 title: Перечисление объектов managedAppProtection
 description: Список свойств и связей объектов managedAppProtection.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d16f47dadf7b184ac7f43acb56ebe9f343c0a4b9
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4b2275b42fc98b313d73f53af1a1a1914d5b9e20
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42803535"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441439"
 ---
 # <a name="list-managedappprotections"></a>Перечисление объектов managedAppProtection
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -128,7 +130,6 @@ Content-Length: 2589
   ]
 }
 ```
-
 
 
 

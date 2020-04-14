@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Андроидманажедстореапп
 description: Содержит свойства и унаследованные свойства для приложений с управляемым хранилищем Android.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: a97bb1fcec1e1d4ba6b53a7d8c110299705365c2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 4f4628e60f62b6a36c72f543e2309c35b1c97b86
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799292"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437431"
 ---
 # <a name="androidmanagedstoreapp-resource-type"></a>Тип ресурса Андроидманажедстореапп
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -58,9 +60,10 @@ ms.locfileid: "42799292"
 |usedLicenseCount|Int32|Количество используемых лицензий VPP.|
 |totalLicenseCount|Int32|Общее количество лицензий VPP.|
 |appStoreUrl|String|URL-адрес приложения для рабочего хранилища.|
-|Частный|Логический|Указывает, доступно ли приложение только для указанных пользователей предприятия.|
-|иссистемапп|Логический|Указывает, является ли приложение предустановленным системным приложением.|
-|суппортсоемконфиг|Логический|Поддерживает ли это приложение политику Оемконфиг.|
+|Частный|Логическое|Указывает, доступно ли приложение только для указанных пользователей предприятия.|
+|иссистемапп|Логическое|Указывает, является ли приложение предустановленным системным приложением.|
+|апптраккс|Коллекция [андроидманажедстореапптракк](../resources/intune-apps-androidmanagedstoreapptrack.md)|Дорожки, которые видимы для этого предприятия.|
+|суппортсоемконфиг|Логическое|Поддерживает ли это приложение политику Оемконфиг.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -114,6 +117,13 @@ ms.locfileid: "42799292"
   "appStoreUrl": "String",
   "isPrivate": true,
   "isSystemApp": true,
+  "appTracks": [
+    {
+      "@odata.type": "microsoft.graph.androidManagedStoreAppTrack",
+      "trackId": "String",
+      "trackAlias": "String"
+    }
+  ],
   "supportsOemConfig": true
 }
 ```

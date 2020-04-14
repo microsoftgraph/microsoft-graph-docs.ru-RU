@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Девицеманажементсеттингкатегори
 description: Сущность, представляющая категорию параметров
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4d32812cd3ae60f9113fb3fba842024cd291a0eb
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fe3e2d1877548232df5da92bdee85408d462e281
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785367"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443284"
 ---
 # <a name="devicemanagementsettingcategory-resource-type"></a>Тип ресурса Девицеманажементсеттингкатегори
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -34,7 +36,7 @@ ms.locfileid: "42785367"
 |:---|:---|:---|
 |id|String|Идентификатор категории|
 |displayName|Строка|Имя категории|
-|хасрекуиредсеттинг|Логический|Категория содержит параметры, необходимые для верхнего уровня|
+|хасрекуиредсеттинг|Логическое|Категория содержит параметры, необходимые для верхнего уровня|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|

@@ -1,18 +1,20 @@
 ---
 title: Создание Пфксрекриптионрекуест
 description: Создание нового объекта Пфксрекриптионрекуест.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: d03cdd29fec84457ad736623b1feb2d389acf3c9
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8d671a41f482407f082f11c104b8346f50769fde
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801917"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437789"
 ---
 # <a name="create-pfxrecryptionrequest"></a>Создание Пфксрекриптионрекуест
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -118,7 +120,6 @@ Content-Length: 574
   "eTag": "ETag value"
 }
 ```
-
 
 
 

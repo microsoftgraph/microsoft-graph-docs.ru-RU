@@ -1,18 +1,20 @@
 ---
 title: Функция Хаскустомролескопетаг
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 00d3425a8f34b6d1cd09384f7ed7062d31da978b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a34f986559f7ba81465f51b0858577ee92a5c6da
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801581"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437611"
 ---
 # <a name="hascustomrolescopetag-function"></a>Функция Хаскустомролескопетаг
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -70,7 +72,6 @@ Content-Length: 21
   "value": true
 }
 ```
-
 
 
 

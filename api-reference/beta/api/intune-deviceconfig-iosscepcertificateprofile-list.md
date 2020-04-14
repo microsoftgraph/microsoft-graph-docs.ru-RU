@@ -1,18 +1,20 @@
 ---
 title: Список Иоссцепцертификатепрофилес
 description: Список свойств и связей объектов iosScepCertificateProfile.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f82c026ba15265fcd41819ad845ddc766f66b5c7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d9014669c1f44d1c85e522a1bece11636c66507e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42749545"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43438744"
 ---
 # <a name="list-iosscepcertificateprofiles"></a>Список Иоссцепцертификатепрофилес
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -132,7 +134,6 @@ Content-Length: 2373
   ]
 }
 ```
-
 
 
 

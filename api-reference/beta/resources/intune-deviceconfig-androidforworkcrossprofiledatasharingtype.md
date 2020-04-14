@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Андроидфорворккросспрофиледаташарингтипе
 description: Тип общего доступа к данным для Android для работы с несколькими профилями.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: a7a88dd0a08a87ca4616ca291699e3695fa8a08f
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 89d20cb06cedb69132f96143d73dbc67b8fc6c0e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42796890"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442916"
 ---
 # <a name="androidforworkcrossprofiledatasharingtype-enum-type"></a>тип перечисления Андроидфорворккросспрофиледаташарингтипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

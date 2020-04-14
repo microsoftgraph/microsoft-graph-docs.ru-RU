@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса МакосассоЦиатеддомаинскэйвалуепаир
 description: Комбинация "ключ — значение" для связанных доменов
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 08a59f0566da2e2dffa64c059cc913923ec5cf58
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: ebf62a01d4a97fde51974ea2e7984b97c39dc5d4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790323"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439724"
 ---
 # <a name="macosassociateddomainskeyvaluepair-resource-type"></a>Тип ресурса МакосассоЦиатеддомаинскэйвалуепаир
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

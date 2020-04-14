@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса ИосвебконтентфилтерспеЦификвебситесакцесс
 description: Представляет тип параметра фильтра веб-содержимого iOS, который устанавливает закладки URL-адресов в встроенный браузер iOS. Пример сценария — это аудитория, в которой преподаватели хотели бы перемещаться по веб-сайтам с помощью закладок браузера, настроенных на устройствах iOS, и без доступа к другим сайтам.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: db8e5bea69fb7369d6d7af9429ec163b87b65df2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: f6e68fecd5bed0f51f89d15714ac3f2c95516396
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790463"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440042"
 ---
 # <a name="ioswebcontentfilterspecificwebsitesaccess-resource-type"></a>Тип ресурса ИосвебконтентфилтерспеЦификвебситесакцесс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

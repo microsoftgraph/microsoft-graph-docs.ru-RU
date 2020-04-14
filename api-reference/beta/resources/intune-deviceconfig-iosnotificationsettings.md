@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса iosNotificationSettings
 description: Элемент, описывающий параметры уведомлений.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c748c0ba5d21674438af0c7a60883ab8c9832e09
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a14233ef8f74aa0aeeb7e21be3fc819aec985a4d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790575"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440250"
 ---
 # <a name="iosnotificationsettings-resource-type"></a>Тип ресурса iosNotificationSettings
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,11 +28,11 @@ ms.locfileid: "42790575"
 |bundleID|String|Идентификатор пакета для приложения, к которому необходимо применить эти параметры уведомлений.|
 |appName|String|Имя приложения, которое нужно связать со свойством bundleID.|
 |publisher|String|Издатель, которого нужно связать со свойством bundleID.|
-|enabled|Логический|Указывает, разрешены ли уведомления для этого приложения.|
-|showInNotificationCenter|Логический|Указывает, можно ли отображать уведомления в центре уведомлений.|
-|showOnLockScreen|Логический|Указывает, можно ли отображать уведомления на экране блокировки.|
+|enabled|Логическое|Указывает, разрешены ли уведомления для этого приложения.|
+|showInNotificationCenter|Логическое|Указывает, можно ли отображать уведомления в центре уведомлений.|
+|showOnLockScreen|Логическое|Указывает, можно ли отображать уведомления на экране блокировки.|
 |alertType|[иоснотификатионалерттипе](../resources/intune-deviceconfig-iosnotificationalerttype.md)|Определяет тип оповещения для уведомлений, связанных с этим приложением. Возможные значения: `deviceDefault`, `banner`, `modal`, `none`.|
-|badgesEnabled|Логический|Указывает, разрешены ли эмблемы для этого приложения.|
+|badgesEnabled|Логическое|Указывает, разрешены ли эмблемы для этого приложения.|
 |soundsEnabled|Boolean|Указывает, разрешены ли звуковые сигналы для этого приложения.|
 
 ## <a name="relationships"></a>Связи

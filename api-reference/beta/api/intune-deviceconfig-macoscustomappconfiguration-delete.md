@@ -1,18 +1,20 @@
 ---
 title: Удаление Макоскустомаппконфигуратион
 description: Удаляет объект Макоскустомаппконфигуратион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a235c40b8021ca58b2e2519425f12cdbbc80248c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9208237d13a44bad50d2f316145a50cb87f31bf7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42747583"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43438274"
 ---
 # <a name="delete-macoscustomappconfiguration"></a>Удаление Макоскустомаппконфигуратион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -4,12 +4,12 @@ description: Перечисляет API Microsoft Graph для конечных 
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: ecb082762fae148b2c947362a8099a9bc380e2f9
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 9f609132a455e605996facc5d0b26c3c0af75b28
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799320"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437483"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -43,14 +43,17 @@ ms.locfileid: "42799320"
 - [Цель регистрации учетной записи управляемого магазина Android](intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)
 - [Корпоративные параметры учетной записи управляемого магазина Android](intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)
 - [Управляемое приложение из магазина для Android](intune-apps-androidmanagedstoreapp.md)
+- [Параметры назначения приложений с управляемым хранилищем Android](intune-apps-androidmanagedstoreappassignmentsettings.md)
 - [Конфигурация управляемого приложения магазина для Android](intune-apps-androidmanagedstoreappconfiguration.md)
 - [Схема конфигурации управляемого приложения магазина для Android](intune-androidforwork-androidmanagedstoreappconfigurationschema.md)
 - [Элемент схемы конфигурации управляемого приложения магазина Android](intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)
 - [Тип данных для элемента схемы конфигурации управляемого приложения магазина Android](intune-androidforwork-androidmanagedstoreappconfigurationschemaitemdatatype.md)
+- [Отслеживание приложения управляемого хранилища Android](intune-apps-androidmanagedstoreapptrack.md)
 - [Веб-приложение с управляемым хранилищем Android](intune-apps-androidmanagedstorewebapp.md)
 - [Минимальная версия операционной системы Android](intune-apps-androidminimumoperatingsystem.md)
 - [Действие разрешения Android](intune-apps-androidpermissionaction.md)
 - [Тип действия разрешения Android](intune-apps-androidpermissionactiontype.md)
+- [Применимость профилей Android](intune-apps-androidprofileapplicability.md)
 - [Приложение из магазина Android](intune-apps-androidstoreapp.md)
 - [Элемент параметра конфигурации приложения](intune-apps-appconfigurationsettingitem.md)
 - [Состояние сертификата](intune-apps-certificatestatus.md)

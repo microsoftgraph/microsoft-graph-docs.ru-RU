@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Андроидфорворкапп
 description: Содержит свойства и унаследованные свойства для приложений Android для работы (АФВ).
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9d543581c7577e6222c4e08d95ba52012688dceb
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 05fe3dc41f7f901b559c0fc7282ca1045fa07e65
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799313"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437468"
 ---
 # <a name="androidforworkapp-resource-type"></a>Тип ресурса Андроидфорворкапп
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

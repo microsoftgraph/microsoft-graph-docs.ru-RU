@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Манажеддевицеклеанупсеттингс
 description: Определите правило, когда администратор хочет очистить устройства.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 86003dfd0121b6d4056377e8cf340497f41ccbd9
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: e37b45c61bdc96b47b0b8ca29dd5bc44689addc9
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783965"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443963"
 ---
 # <a name="manageddevicecleanupsettings-resource-type"></a>Тип ресурса Манажеддевицеклеанупсеттингс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

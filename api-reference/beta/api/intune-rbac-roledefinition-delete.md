@@ -1,18 +1,20 @@
 ---
 title: Удаление roleDefinition
 description: Удаление объекта roleDefinition.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 8b6872a4e9e6e344d349886f45b026c5253b7eba
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8f8396349cc48e6c4413993b58ebb8e3ddc4864e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801644"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444515"
 ---
 # <a name="delete-roledefinition"></a>Удаление roleDefinition
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -64,7 +66,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{roleDe
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

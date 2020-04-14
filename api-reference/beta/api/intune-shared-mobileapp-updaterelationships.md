@@ -1,18 +1,20 @@
 ---
 title: действие Упдатерелатионшипс
 description: Пока не задокументировано.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4a2f36130013e901c033d2e07379684442b89e51
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0fd30dda8c61cf32a5d2c9263d3791d17c3083f2
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800762"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441236"
 ---
 # <a name="updaterelationships-action"></a>действие Упдатерелатионшипс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -89,7 +91,6 @@ Content-length: 256
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

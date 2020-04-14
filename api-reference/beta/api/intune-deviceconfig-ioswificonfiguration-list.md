@@ -1,18 +1,20 @@
 ---
 title: Список Иосвификонфигуратионс
 description: Список свойств и связей объектов iosWiFiConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 1421e7273e76772f17e475e48cbf622e45156d94
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 3e7716d72633a434deac6c9041d7d16d3c5981cf
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42748024"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43438416"
 ---
 # <a name="list-ioswificonfigurations"></a>Список Иосвификонфигуратионс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -115,7 +117,6 @@ Content-Length: 1821
   ]
 }
 ```
-
 
 
 

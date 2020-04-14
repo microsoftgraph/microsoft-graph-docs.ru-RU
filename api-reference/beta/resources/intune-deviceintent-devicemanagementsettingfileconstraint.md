@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Девицеманажементсеттингфилеконстраинт
 description: Ограничение, обеспечивающее расширение файла, приемлемо для данного параметра
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9a9e5a3f4ce8cec54dbdd0f1a690b039b2da0524
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6864d70c31096147a51ff4b3e67a7053d93ed27b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42785325"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443248"
 ---
 # <a name="devicemanagementsettingfileconstraint-resource-type"></a>Тип ресурса Девицеманажементсеттингфилеконстраинт
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

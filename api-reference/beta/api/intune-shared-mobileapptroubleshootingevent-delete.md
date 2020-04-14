@@ -2,17 +2,19 @@
 title: Удаление Мобилеапптраублешутинжевент
 description: Описывает метод Delete Мобилеапптраублешутинжевент API Microsoft Graph для Intune, который поддерживает несколько рабочих процессов.
 localization_priority: Normal
-author: davidmu1
+author: dougeby
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a072c0f6ef4d0c2c6ff7ffb716b9e602a2b36561
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 31eeff7ce526efd1512b52b529e18c744a06b638
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42800748"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442247"
 ---
 # <a name="delete-mobileapptroubleshootingevent"></a>Удаление Мобилеапптраублешутинжевент
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
@@ -68,7 +70,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/mobileAppTroubleshootin
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

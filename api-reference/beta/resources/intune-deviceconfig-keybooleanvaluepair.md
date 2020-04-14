@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Кэйбулеанвалуепаир
 description: Значение типа "ключ — значение" с ключом строки и логическим значением.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6e06d58e1eca3c4f562ab83854dd721162941bc9
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 20362eadb79f94fab1d7fc7c454995710a0ab9ab
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790442"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439989"
 ---
 # <a name="keybooleanvaluepair-resource-type"></a>Тип ресурса Кэйбулеанвалуепаир
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

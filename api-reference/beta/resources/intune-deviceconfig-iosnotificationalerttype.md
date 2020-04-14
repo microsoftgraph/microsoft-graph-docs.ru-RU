@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Иоснотификатионалерттипе
 description: Тип оповещения о параметрах уведомлений.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: fa282710be26baef233f00d8714bcf5cce0abd13
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c87faac434433b3be7057f4574015b2e14fca5c4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790582"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440257"
 ---
 # <a name="iosnotificationalerttype-enum-type"></a>тип перечисления Иоснотификатионалерттипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -26,7 +28,7 @@ ms.locfileid: "42790582"
 |девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
 |заголовок|1,1|Заголовок.|
 |модаль|2|Модаль.|
-|none|4|Нет.|
+|нет|4|Нет.|
 
 
 

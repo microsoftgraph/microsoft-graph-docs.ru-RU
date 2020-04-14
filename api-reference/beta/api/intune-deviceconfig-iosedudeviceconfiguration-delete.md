@@ -1,18 +1,20 @@
 ---
 title: Удаление Иоседудевицеконфигуратион
 description: Удаляет объект Иоседудевицеконфигуратион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 315648ef0bbbac86a46679cea28d4e3312197524
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c3258690fb40e516a7479b4a829a1c26e28fa617
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42751267"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439244"
 ---
 # <a name="delete-iosedudeviceconfiguration"></a>Удаление Иоседудевицеконфигуратион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

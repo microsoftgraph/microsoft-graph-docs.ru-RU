@@ -1,18 +1,20 @@
 ---
 title: Получение iosWiFiConfiguration
 description: Чтение свойств и связей объекта iosWiFiConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f150e904456ed27c01438d7a94cff939b44fb5b5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8330d15217e99e26bdf81a726271e3face0f1f94
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42748130"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43438423"
 ---
 # <a name="get-ioswificonfiguration"></a>Получение iosWiFiConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -117,7 +119,6 @@ Content-Length: 1723
   }
 }
 ```
-
 
 
 

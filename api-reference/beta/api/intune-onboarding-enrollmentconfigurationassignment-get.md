@@ -1,18 +1,20 @@
 ---
 title: Get enrollmentConfigurationAssignment
 description: Чтение свойств и связей объекта enrollmentConfigurationAssignment.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 822972a179e49f5136e26b56f38ebab2bb1663a8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 637a561addace7f04e2cbaf635a75a5a40842f53
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802834"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441372"
 ---
 # <a name="get-enrollmentconfigurationassignment"></a>Get enrollmentConfigurationAssignment
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -80,7 +82,6 @@ Content-Length: 316
   }
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Виндовсупдатефорбусинессупдатевикс
 description: Установка обновления запланирована на недели месяца
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 9e2fd73e4bd9c1586c984b2c16b6b7d4aa65bf7c
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b0e0149cc25757ebcb45b50c3d58ad3c7c54fd2b
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42786195"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43441147"
 ---
 # <a name="windowsupdateforbusinessupdateweeks-enum-type"></a>тип перечисления Виндовсупдатефорбусинессупдатевикс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

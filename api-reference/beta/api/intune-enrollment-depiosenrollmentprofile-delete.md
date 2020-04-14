@@ -1,18 +1,20 @@
 ---
 title: Удаление Депиосенроллментпрофиле
 description: Удаляет объект Депиосенроллментпрофиле.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ad7a487daa8348c132e11325b5c4d98eb14fc3d7
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 172934dcd8fef8bb38218b6cb678461d3bd215fb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813364"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442283"
 ---
 # <a name="delete-depiosenrollmentprofile"></a>Удаление Депиосенроллментпрофиле
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

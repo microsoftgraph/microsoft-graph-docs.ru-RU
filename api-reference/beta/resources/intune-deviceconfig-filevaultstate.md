@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Филеваултстате
 description: Состояние Филеваулт
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 1efe284a4d6bad3685c6fbf9c4003153a3aca913
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2d7f69413ac7fd4be1e857951b2a70aac0fe7bc3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42791767"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43444318"
 ---
 # <a name="filevaultstate-enum-type"></a>тип перечисления Филеваултстате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

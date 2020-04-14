@@ -1,18 +1,20 @@
 ---
 title: Обновление Мдмвиндовсинформатионпротектионполициполицисетитем
 description: Обновление свойств объекта Мдмвиндовсинформатионпротектионполициполицисетитем.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: e5fe56566b4426c80fa12d736be0ca8c857d6a92
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 77f627527b4b4dc753a28f7400aab4274c9a32f7
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802190"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440720"
 ---
 # <a name="update-mdmwindowsinformationprotectionpolicypolicysetitem"></a>Обновление Мдмвиндовсинформатионпротектионполициполицисетитем
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -110,7 +112,6 @@ Content-Length: 504
   ]
 }
 ```
-
 
 
 

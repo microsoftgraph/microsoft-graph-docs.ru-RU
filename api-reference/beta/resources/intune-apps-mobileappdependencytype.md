@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Мобилеаппдепенденцитипе
 description: Указывает тип зависимости, связанный с отношением между двумя мобильными приложениями.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 64603e4d39713a366b542c6322ac06c193e43c7b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 1a892b472d47765e9d570ad8096f771eee79e1a3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42797820"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440387"
 ---
 # <a name="mobileappdependencytype-enum-type"></a>тип перечисления Мобилеаппдепенденцитипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

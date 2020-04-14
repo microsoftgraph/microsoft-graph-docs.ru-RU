@@ -1,18 +1,20 @@
 ---
 title: Создание Ролескопетагаутоассигнмент
 description: Создание нового объекта Ролескопетагаутоассигнмент.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 46f6e41fb9cdd461ad5fcfe6cd55552618f004ed
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b18b5e5af1f3a65485c633145cd5288c4bf7c070
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801560"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437580"
 ---
 # <a name="create-rolescopetagautoassignment"></a>Создание Ролескопетагаутоассигнмент
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -91,7 +93,6 @@ Content-Length: 215
   }
 }
 ```
-
 
 
 

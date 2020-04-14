@@ -1,18 +1,20 @@
 ---
 title: Список Мобилеаппполицисетитемс
 description: Список свойств и связей объектов Мобилеаппполицисетитем.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: c8da03f5a68f2c7db8f0c682f24900bd00dfbfb2
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8bdc3508e06bd52b4c447d94dc233d5c26d6d5cb
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802162"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440692"
 ---
 # <a name="list-mobileapppolicysetitems"></a>Список Мобилеаппполицисетитемс
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -88,7 +90,6 @@ Content-Length: 687
   ]
 }
 ```
-
 
 
 

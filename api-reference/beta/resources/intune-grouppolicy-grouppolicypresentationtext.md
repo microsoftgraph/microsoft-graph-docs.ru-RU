@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Граупполиципресентатионтекст
 description: Представляет элемент текста ADMX.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 14680f7fd98e0e05c3aafdf8eaf1636a500f1c82
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: c8df0774abd90986f86ab870d40d0fec94ebd554
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42782934"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43443821"
 ---
 # <a name="grouppolicypresentationtext-resource-type"></a>Тип ресурса Граупполиципресентатионтекст
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,18 +1,20 @@
 ---
 title: Удаление iosEducationDeviceConfiguration
 description: Удаляет объект iosEducationDeviceConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: b7a283b4d621be851071c4290818615d712b28ab
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 6c2498bcf4f3b39e2362bae02e22137f76e6ccb4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42751393"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439300"
 ---
 # <a name="delete-ioseducationdeviceconfiguration"></a>Удаление iosEducationDeviceConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

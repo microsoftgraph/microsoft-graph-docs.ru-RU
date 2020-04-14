@@ -1,18 +1,20 @@
 ---
 title: Получение Онпременкриптедпайлоад
 description: Чтение свойств и связей объекта Онпременкриптедпайлоад.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ba6ad43f3c119d8eb2b9b7df7974661d91abbb5
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 152b1b0b72606cb5cb17c2e4c470a07fa4534a5a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801938"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437818"
 ---
 # <a name="get-onpremencryptedpayload"></a>Получение Онпременкриптедпайлоад
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -90,7 +92,6 @@ Content-Length: 834
   }
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Delete iosGeneralDeviceConfiguration
 description: Удаляет объект iosGeneralDeviceConfiguration.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4708afda3546f70bb47ff9c8847acca7e7a4a696
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 2b12d5c3a332daeafe9c90e727d2deb206c4adc1
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42750686"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439043"
 ---
 # <a name="delete-iosgeneraldeviceconfiguration"></a>Delete iosGeneralDeviceConfiguration
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -65,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Ембеддедсимдевицестате
 description: Описание встроенного состояния развертывания кода активации SIM-карты для устройства.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0d10c6a179e783235e0b6bf79226b8ba1a7e2cb1
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b88fe5ada325e77b03bc83f2dcec5bb099c2f7d0
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783300"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442788"
 ---
 # <a name="embeddedsimdevicestate-resource-type"></a>Тип ресурса Ембеддедсимдевицестате
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

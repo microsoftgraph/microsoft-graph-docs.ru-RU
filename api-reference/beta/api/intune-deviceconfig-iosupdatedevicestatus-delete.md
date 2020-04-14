@@ -1,18 +1,20 @@
 ---
 title: Удаление объекта iosUpdateDeviceStatus
 description: Удаляет объект iosUpdateDeviceStatus.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: a70adf747fe5d3b4159c91e9c4dd1c63183c7526
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: fe0cc59f6881d9bd1d00dbecb2c684d662ea5775
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42748880"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43438581"
 ---
 # <a name="delete-iosupdatedevicestatus"></a>Удаление объекта iosUpdateDeviceStatus
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/iosUpdateStatuses/{iosU
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

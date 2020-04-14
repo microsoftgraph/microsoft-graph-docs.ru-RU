@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Андроидеаптипе
 description: Типы конфигурации протокола EAP (Extensible Authentication Protocol).
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 584691d5dfef4cd1f5771d91844de21cd020870e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: d74a14e22634a2f8c41115b4954b5abd2e9abb55
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42796932"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43442949"
 ---
 # <a name="androideaptype-enum-type"></a>тип перечисления Андроидеаптипе
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

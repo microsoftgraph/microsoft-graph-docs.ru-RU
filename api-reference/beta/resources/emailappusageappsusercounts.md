@@ -2,19 +2,19 @@
 title: Тип ресурса Емаилаппусажеаппсусеркаунтс
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
-author: angelgolfer-ms
+author: pranoychaudhuri
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: d34ceaf4450a66f07c0678e55db344adc20bb0b1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fb06e9dfe56edb0e7882d0cdce8ee4564375ed93
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42499500"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440564"
 ---
 # <a name="emailappusageappsusercounts-resource-type"></a>Тип ресурса Емаилаппусажеаппсусеркаунтс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 ## <a name="properties"></a>Свойства
 

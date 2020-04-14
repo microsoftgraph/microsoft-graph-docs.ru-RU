@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Андроидманажедстореаппконфигуратион
 description: Содержит свойства, унаследованные свойства и действия для конфигураций мобильного приложения Android Enterprise.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: bf9f0aae1fddb3f8d4fd0eaf8df9670384a8cbf8
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 861bc63134db857accb21ff1840e460583657f78
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42799285"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440640"
 ---
 # <a name="androidmanagedstoreappconfiguration-resource-type"></a>Тип ресурса Андроидманажедстореаппконфигуратион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -46,7 +48,8 @@ ms.locfileid: "42799285"
 |packageId|String|Идентификатор пакета конфигурации корпоративных приложений Android.|
 |пайлоаджсон|String|Полезные данные JSON конфигурации корпоративных приложений Android.|
 |пермиссионактионс|Коллекция [андроидпермиссионактион](../resources/intune-apps-androidpermissionaction.md)|Список разрешений приложений для Android и соответствующие действия с разрешениями.|
-|аппсуппортсоемконфиг|Логический|Указывает, является ли Аппконфиг политикой Оемконфиг.|
+|аппсуппортсоемконфиг|Логическое|Указывает, является ли Аппконфиг политикой Оемконфиг.|
+|профилеаппликабилити|[андроидпрофилеаппликабилити](../resources/intune-apps-androidprofileapplicability.md)|Применимость профиля предприятия Android (Андроидворкпрофиле, Девицеовнер или Default (применяется к обоим). Возможные значения: `default`, `androidWorkProfile`, `androidDeviceOwner`.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -89,7 +92,8 @@ ms.locfileid: "42799285"
       "action": "String"
     }
   ],
-  "appSupportsOemConfig": true
+  "appSupportsOemConfig": true,
+  "profileApplicability": "String"
 }
 ```
 

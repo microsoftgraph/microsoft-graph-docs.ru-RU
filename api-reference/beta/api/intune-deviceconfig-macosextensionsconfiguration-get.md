@@ -1,18 +1,20 @@
 ---
 title: Получение Макосекстенсионсконфигуратион
 description: Чтение свойств и связей объекта Макосекстенсионсконфигуратион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: da686d2efaa729bdce6d85546948424b3d4a441e
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: b46c8958a82c02145ef7107333f52a22a0a2848c
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42746145"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437954"
 ---
 # <a name="get-macosextensionsconfiguration"></a>Получение Макосекстенсионсконфигуратион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -118,7 +120,6 @@ Content-Length: 1660
   }
 }
 ```
-
 
 
 

@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Иоссинглесигнонекстенсион
 description: Абстрактный базовый класс для всех типов расширений единого входа, относящихся к iOS.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: d1109f864cc01133ca3b2c7fc43732b858302743
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 18f06e0e57cbe6ee774df9c10d226ad5ee5c986d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42790547"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440206"
 ---
 # <a name="iossinglesignonextension-resource-type"></a>Тип ресурса Иоссинглесигнонекстенсион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

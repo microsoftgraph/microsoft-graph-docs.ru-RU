@@ -1,18 +1,20 @@
 ---
 title: Получение Манажедапппротектионполицисетитем
 description: Чтение свойств и связей объекта Манажедапппротектионполицисетитем.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: ff57549170741b0ae8d5582592f713e44a27094d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 404f01f982fce4a4e4ffc177f49b544cea4bb84f
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42802274"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440751"
 ---
 # <a name="get-managedappprotectionpolicysetitem"></a>Получение Манажедапппротектионполицисетитем
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -86,7 +88,6 @@ Content-Length: 606
   }
 }
 ```
-
 
 
 

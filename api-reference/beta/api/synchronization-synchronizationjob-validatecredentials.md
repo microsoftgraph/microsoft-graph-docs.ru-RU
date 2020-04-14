@@ -3,18 +3,18 @@ title: 'Синчронизатионжоб: Валидатекредентиал
 description: Убедитесь, что учетные данные действительны в клиенте.
 localization_priority: Normal
 doc_type: apiPageType
-author: davidmu1
+author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4fbbace2c81ec55002743f978a5b2987db175779
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cc61dd5eb9d5e012f0fce672eac4f330eb460df3
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452965"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437514"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>Синчронизатионжоб: Валидатекредентиалс
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,7 +45,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|усесаведкредентиалс|Логический|Когда `true` `credentials` параметр будет игнорироваться и будут проверены ранее сохраненные учетные данные (если они есть). |
+|усесаведкредентиалс|Логическое|Когда `true` `credentials` параметр будет игнорироваться и будут проверены ранее сохраненные учетные данные (если они есть). |
 |записей|Коллекция [синчронизатионсекреткэйстрингвалуепаир](../resources/synchronization-secretkeystringvaluepair.md)|Учетные данные для проверки. Игнорируется, `useSavedCredentials` если параметр `true`имеет значение.|
 
 ## <a name="response"></a>Отклик

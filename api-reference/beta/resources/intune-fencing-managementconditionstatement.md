@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Манажементкондитионстатемент
 description: Оператор условия управления — это группа условий управления, которые позволяют включать и отключать конфигурации устройств и приложений при выполнении всех включенных условий управления.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: ec0966cf1b43f4e8614e848164911a6d5c8ddd4b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bd52a4c78873a55c6b7635538cac11c2c5168542
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783223"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43439712"
 ---
 # <a name="managementconditionstatement-resource-type"></a>Тип ресурса Манажементкондитионстатемент
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

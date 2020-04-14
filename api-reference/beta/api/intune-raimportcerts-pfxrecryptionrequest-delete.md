@@ -1,18 +1,20 @@
 ---
 title: Удаление Пфксрекриптионрекуест
 description: Удаляет объект Пфксрекриптионрекуест.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 3dad805b208ff574edd9195c0e60132294f12a1b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 8bb3b9c755ad05445fabff24bd44d50eea30628e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42801910"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43437782"
 ---
 # <a name="delete-pfxrecryptionrequest"></a>Удаление Пфксрекриптионрекуест
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -63,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/pfxRecryptionRequests/{pfxRecryptionRequ
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

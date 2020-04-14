@@ -1,18 +1,20 @@
 ---
 title: Получение Депмакосенроллментпрофиле
 description: Чтение свойств и связей объекта Депмакосенроллментпрофиле.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 73e931df51dbe15305518f9da65da4e1cb96012d
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 77d0b4108237990340f95dc3203fe1c3b14f0ede
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42813322"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440969"
 ---
 # <a name="get-depmacosenrollmentprofile"></a>Получение Депмакосенроллментпрофиле
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -107,7 +109,6 @@ Content-Length: 1396
   }
 }
 ```
-
 
 
 

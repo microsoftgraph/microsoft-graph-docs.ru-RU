@@ -1,18 +1,20 @@
 ---
 title: Получение Виндовсинформатионпротектионвипеактион
 description: Чтение свойств и связей объекта Виндовсинформатионпротектионвипеактион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: df3bdbb696aa1baf249c6a9a9ef1543b77d0b411
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0e983d64d46a140451078d97bfac07b3bd4369a4
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42803212"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43440758"
 ---
 # <a name="get-windowsinformationprotectionwipeaction"></a>Получение Виндовсинформатионпротектионвипеактион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -81,7 +83,6 @@ Content-Length: 496
   }
 }
 ```
-
 
 
 
