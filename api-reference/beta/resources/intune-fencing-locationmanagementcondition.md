@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Локатионманажементкондитион
 description: Содержит сведения, определяющие условие управления размещением, область интересов для мониторинга.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 56e9c10d8d9d53a9e0009b6a70210da6d7873065
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 0f49359a9c3e527e30944030a8c0969c7c12ce9e
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783258"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43382733"
 ---
 # <a name="locationmanagementcondition-resource-type"></a>Тип ресурса Локатионманажементкондитион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

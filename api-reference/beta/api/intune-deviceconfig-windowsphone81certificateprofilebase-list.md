@@ -1,18 +1,20 @@
 ---
 title: Список windowsPhone81CertificateProfileBases
 description: Список свойств и связей объектов windowsPhone81CertificateProfileBase.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: 4e5f6bf95f858f986d3d1b885663075d82271437
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 100807caedfe5e17253309a6118cb32427960afa
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42734829"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43334819"
 ---
 # <a name="list-windowsphone81certificateprofilebases"></a>Список windowsPhone81CertificateProfileBases
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42734829"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -118,7 +120,6 @@ Content-Length: 1887
   ]
 }
 ```
-
 
 
 

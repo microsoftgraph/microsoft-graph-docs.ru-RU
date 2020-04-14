@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса resetPasscodeActionResult
 description: Результат действия "Сброс секретного кода"
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: c30c204699f7fdc277aab56848fb109a32ab8ec4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 65ec840aaab89ee3558ee2882c5c3ed048f4c65a
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783888"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43383184"
 ---
 # <a name="resetpasscodeactionresult-resource-type"></a>Тип ресурса resetPasscodeActionResult
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

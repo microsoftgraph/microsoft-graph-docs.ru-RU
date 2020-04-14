@@ -1,18 +1,20 @@
 ---
 title: Создание Виндовскиоскконфигуратион
 description: Создание нового объекта Виндовскиоскконфигуратион.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: apiPageType
-ms.openlocfilehash: f159decfd00f39af2d619613a6419acfdd532494
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: bbf0366942793996e570c0924b8e5458eeb3e572
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42735144"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43335268"
 ---
 # <a name="create-windowskioskconfiguration"></a>Создание Виндовскиоскконфигуратион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -27,7 +29,7 @@ ms.locfileid: "42735144"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,7 +57,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|суппортсскопетагс|Логический|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|суппортсскопетагс|Логическое|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -65,13 +67,13 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |киоскпрофилес|Коллекция [виндовскиоскпрофиле](../resources/intune-deviceconfig-windowskioskprofile.md)|Этот параметр политики позволяет определить список профилей киоска для конфигурации киоска. Эта коллекция может содержать не более 3 элементов.|
 |киоскбровсердефаултурл|String|Укажите URL-адрес по умолчанию, на который должен переходить браузер при запуске.|
-|киоскбровсеренаблехомебуттон|Логический|Включите кнопку Главная в браузере киоска. По умолчанию кнопка "домой" отключена.|
-|киоскбровсеренабленавигатионбуттонс|Логический|Включение кнопок навигации в браузере киосков (вперед и назад). По умолчанию кнопки навигации отключены.|
-|киоскбровсеренаблиндсессионбуттон|Логический|Включите кнопку End Session (завершить сеанс) в обозревателе киосков. По умолчанию кнопка End Session отключена.|
+|киоскбровсеренаблехомебуттон|Логическое|Включите кнопку Главная в браузере киоска. По умолчанию кнопка "домой" отключена.|
+|киоскбровсеренабленавигатионбуттонс|Логическое|Включение кнопок навигации в браузере киосков (вперед и назад). По умолчанию кнопки навигации отключены.|
+|киоскбровсеренаблиндсессионбуттон|Логическое|Включите кнопку End Session (завершить сеанс) в обозревателе киосков. По умолчанию кнопка End Session отключена.|
 |киоскбровсеррестартонидлетимеинминутес|Int32|Укажите время в минутах, в течение которого сеанс простаивает до тех пор, пока обозреватель киоска не перезапустится в обновленном состоянии.  Допустимые значения: 1-1440. Допустимые значения — от 1 до 1440|
 |киоскбровсерблоккедурлс|Коллекция String|Указание URL-адресов, к которым не должны переходить браузеры киоска|
 |киоскбровсерблоккедурлексцептионс|Коллекция String|Указание URL-адресов, на которые может перейти браузер с киоском|
-|еджекиоскенаблепубликбровсинг|Логический|Включение режима "общедоступный" в режиме киоска браузера для браузера Microsoft Edge. Значение по умолчанию — false.|
+|еджекиоскенаблепубликбровсинг|Логическое|Включение режима "общедоступный" в режиме киоска браузера для браузера Microsoft Edge. Значение по умолчанию — false.|
 |windowsKioskForceUpdateSchedule|[windowsKioskForceUpdateSchedule](../resources/intune-deviceconfig-windowskioskforceupdateschedule.md)|принудительное обновление расписания для устройств киоска.|
 
 
@@ -265,7 +267,6 @@ Content-Length: 3001
   }
 }
 ```
-
 
 
 

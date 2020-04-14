@@ -2,19 +2,19 @@
 title: Тип ресурса Ипнамедлокатион
 description: Представляет Azure Active Directory с именем Location, заданным диапазонами IP-адресов. Именованные расположения — это настраиваемые правила, определяющие сетевые расположения, которые можно использовать в политике условного доступа.
 localization_priority: Normal
-author: davidmu1
+author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e32d6c51ae09601bc752ed2a352dc50a4285f7c2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 067c77c6bc8a17d84252568548b44a3a44cd8f35
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42523165"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43382530"
 ---
 # <a name="ipnamedlocation-resource-type"></a>Тип ресурса Ипнамедлокатион
 
-Пространство имен: Microsoft. Graph
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "42523165"
 |displayName|Строка|Удобное для человека имя расположения.|
 |id|String|Идентификатор объекта Намедлокатион. Только для чтения. Наследуется от [намедлокатион](../resources/namedLocation.md).|
 |ипранжес|Коллекция объектов [ipRange](iprange.md)|Список диапазонов IP-адресов в формате CIDR IPv4 (например, 1.2.3.4/32) или любом допустимом формате IPv6 из IETF RFC596.|
-|Доверять|Логический|Значение true, если данное расположение явно является доверенным.|
+|Доверять|Логическое|Значение true, если данное расположение явно является доверенным.|
 |modifiedDateTime|DateTimeOffset|Тип timestamp представляет дату и время последнего изменения расположения с использованием формата ISO 8601, которое всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. Наследуется от [намедлокатион](../resources/namedLocation.md).|
 
 ## <a name="relationships"></a>Связи

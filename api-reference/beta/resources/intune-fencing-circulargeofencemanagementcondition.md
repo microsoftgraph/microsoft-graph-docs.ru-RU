@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Циркуларжеофенцеманажементкондитион
 description: Содержит сведения о том, как определить циклическое условие управления для геоограждения, интересующее область мониторинга.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: 83a8bad4de835ed793e38f125c6dd0382ec0d800
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 597438dc3b6bb2772f2c28bb2a64d84d5fba8d61
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783265"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43382740"
 ---
 # <a name="circulargeofencemanagementcondition-resource-type"></a>Тип ресурса Циркуларжеофенцеманажементкондитион
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

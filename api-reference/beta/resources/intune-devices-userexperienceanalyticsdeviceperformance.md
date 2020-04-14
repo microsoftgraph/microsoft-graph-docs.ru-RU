@@ -1,18 +1,20 @@
 ---
 title: Тип ресурса Усерекспериенцеаналитиксдевицеперформанце
 description: Объект производительности устройства аналитики взаимодействия с пользователем содержит сведения о быстродействии при загрузке устройства.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: resourcePageType
-ms.openlocfilehash: fcb0305469e4cd3d51933a60741ff6da0cb70ef4
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: a3dd901a24ee8ae521838640aa31a3bd5b9b719d
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42783832"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43382832"
 ---
 # <a name="userexperienceanalyticsdeviceperformance-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксдевицеперформанце
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 

@@ -1,18 +1,20 @@
 ---
 title: тип перечисления Макосфилеваултрековерикэйтипес
 description: Типы ключей восстановления для macOS Филеваулт
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: b53726b04dcecd1411caa1cee2f6e03638e30007
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 77fe5f115fec13498d0dbd034d87872f65bfc211
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42789473"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43383456"
 ---
 # <a name="macosfilevaultrecoverykeytypes-enum-type"></a>тип перечисления Макосфилеваултрековерикэйтипес
+
+Пространство имен: microsoft.graph
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
