@@ -1,31 +1,33 @@
 ---
 title: тип перечисления Девицеманажементдериведкредентиалнотификатионтипе
 description: Поддерживаемые значения для используемого типа уведомления.
-author: davidmu1
+author: dougeby
 localization_priority: Normal
 ms.prod: Intune
 doc_type: enumPageType
-ms.openlocfilehash: 417c01a12d2880d003bd2c3b5f0fedf96c1ca81b
-ms.sourcegitcommit: b38fd4c8c734243f6f82448045a1f6bf63311ec9
+ms.openlocfilehash: 5b7719f208667f4ee9fdc9d8ebd328196cbec064
+ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42774185"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43389144"
 ---
-# <a name="devicemanagementderivedcredentialnotificationtype-enum-type"></a><span data-ttu-id="60c5d-103">тип перечисления Девицеманажементдериведкредентиалнотификатионтипе</span><span class="sxs-lookup"><span data-stu-id="60c5d-103">deviceManagementDerivedCredentialNotificationType enum type</span></span>
+# <a name="devicemanagementderivedcredentialnotificationtype-enum-type"></a><span data-ttu-id="67f68-103">тип перечисления Девицеманажементдериведкредентиалнотификатионтипе</span><span class="sxs-lookup"><span data-stu-id="67f68-103">deviceManagementDerivedCredentialNotificationType enum type</span></span>
 
-> <span data-ttu-id="60c5d-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="60c5d-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+<span data-ttu-id="67f68-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="67f68-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="60c5d-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="60c5d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="67f68-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="67f68-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-<span data-ttu-id="60c5d-106">Поддерживаемые значения для используемого типа уведомления.</span><span class="sxs-lookup"><span data-stu-id="60c5d-106">Supported values for the notification type to use.</span></span>
+> <span data-ttu-id="67f68-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="67f68-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-## <a name="members"></a><span data-ttu-id="60c5d-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="60c5d-107">Members</span></span>
-|<span data-ttu-id="60c5d-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="60c5d-108">Member</span></span>|<span data-ttu-id="60c5d-109">Значение</span><span class="sxs-lookup"><span data-stu-id="60c5d-109">Value</span></span>|<span data-ttu-id="60c5d-110">Описание</span><span class="sxs-lookup"><span data-stu-id="60c5d-110">Description</span></span>|
+<span data-ttu-id="67f68-107">Поддерживаемые значения для используемого типа уведомления.</span><span class="sxs-lookup"><span data-stu-id="67f68-107">Supported values for the notification type to use.</span></span>
+
+## <a name="members"></a><span data-ttu-id="67f68-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="67f68-108">Members</span></span>
+|<span data-ttu-id="67f68-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="67f68-109">Member</span></span>|<span data-ttu-id="67f68-110">Значение</span><span class="sxs-lookup"><span data-stu-id="67f68-110">Value</span></span>|<span data-ttu-id="67f68-111">Описание</span><span class="sxs-lookup"><span data-stu-id="67f68-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="60c5d-111">none</span><span class="sxs-lookup"><span data-stu-id="60c5d-111">none</span></span>|<span data-ttu-id="60c5d-112">нуль</span><span class="sxs-lookup"><span data-stu-id="60c5d-112">0</span></span>|<span data-ttu-id="60c5d-113">Отсутствует</span><span class="sxs-lookup"><span data-stu-id="60c5d-113">None</span></span>|
-|<span data-ttu-id="60c5d-114">компанипортал</span><span class="sxs-lookup"><span data-stu-id="60c5d-114">companyPortal</span></span>|<span data-ttu-id="60c5d-115">1,1</span><span class="sxs-lookup"><span data-stu-id="60c5d-115">1</span></span>|<span data-ttu-id="60c5d-116">Корпоративный портал</span><span class="sxs-lookup"><span data-stu-id="60c5d-116">Company Portal</span></span>|
-|<span data-ttu-id="60c5d-117">email</span><span class="sxs-lookup"><span data-stu-id="60c5d-117">email</span></span>|<span data-ttu-id="60c5d-118">2</span><span class="sxs-lookup"><span data-stu-id="60c5d-118">2</span></span>|<span data-ttu-id="60c5d-119">Электронная почта</span><span class="sxs-lookup"><span data-stu-id="60c5d-119">Email</span></span>|
+|<span data-ttu-id="67f68-112">нет</span><span class="sxs-lookup"><span data-stu-id="67f68-112">none</span></span>|<span data-ttu-id="67f68-113">нуль</span><span class="sxs-lookup"><span data-stu-id="67f68-113">0</span></span>|<span data-ttu-id="67f68-114">Отсутствует</span><span class="sxs-lookup"><span data-stu-id="67f68-114">None</span></span>|
+|<span data-ttu-id="67f68-115">компанипортал</span><span class="sxs-lookup"><span data-stu-id="67f68-115">companyPortal</span></span>|<span data-ttu-id="67f68-116">1,1</span><span class="sxs-lookup"><span data-stu-id="67f68-116">1</span></span>|<span data-ttu-id="67f68-117">Корпоративный портал</span><span class="sxs-lookup"><span data-stu-id="67f68-117">Company Portal</span></span>|
+|<span data-ttu-id="67f68-118">email</span><span class="sxs-lookup"><span data-stu-id="67f68-118">email</span></span>|<span data-ttu-id="67f68-119">2</span><span class="sxs-lookup"><span data-stu-id="67f68-119">2</span></span>|<span data-ttu-id="67f68-120">Электронная почта</span><span class="sxs-lookup"><span data-stu-id="67f68-120">Email</span></span>|
 
 
 
